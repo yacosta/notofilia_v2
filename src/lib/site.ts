@@ -1,4 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
+import { catalogNoteSlugs, dedicatedCatalogPaths } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
 
@@ -18,6 +19,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of milestones) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
+  for (const slug of catalogNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -234,8 +236,8 @@ export const collections = [
   },
   {
     href: '/coleccion/filipinas/',
-    es: { title: 'Filipinas', description: 'Certificados del Tesoro y Victory Series No. 66.' },
-    en: { title: 'Philippines', description: 'Treasury Certificates and Victory Series No. 66.' },
+    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 5 y 20 pesos.' },
+    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 5, and 20 pesos.' },
   },
   {
     href: '/coleccion/polimero-mundial/',
@@ -263,7 +265,19 @@ export type NewsItem = ArticleItem & {
   sourceUrl: string;
 };
 
-export const milestones: MilestoneItem[] = [];
+export const milestones: MilestoneItem[] = [
+  {
+    href: '/coleccion/filipinas/',
+    es: {
+      title: 'Filipinas · Serie Victory n.º 66',
+      description: 'Primera vitrina del catálogo: 1, 5 y 20 pesos del Commonwealth, alineados por denominación.',
+    },
+    en: {
+      title: 'Philippines · Victory Series No. 66',
+      description: 'First catalog case: Commonwealth 1, 5, and 20 pesos, lined up by denomination.',
+    },
+  },
+];
 
 export const articles: ArticleItem[] = [];
 
@@ -271,6 +285,7 @@ export const news: NewsItem[] = [];
 
 export const footerExplore = [
   { href: '/coleccion/colombia/', es: 'Colombia', en: 'Colombia' },
+  { href: '/coleccion/filipinas/', es: 'Filipinas', en: 'Philippines' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -297,7 +312,6 @@ export const stubPages = [
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
-  { path: 'coleccion/filipinas', es: 'Filipinas', en: 'Philippines' },
   { path: 'coleccion/polimero-mundial', es: 'Billetes de polímero', en: 'Polymer banknotes' },
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
@@ -308,5 +322,7 @@ export const stubPages = [
   { path: 'buscar', es: 'Buscar', en: 'Search' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
+
+export { dedicatedCatalogPaths };
 
 export const STATS = collectionStats();

@@ -3,6 +3,7 @@ import StubPage from '../components/StubPage.astro';
 import {
   articles,
   collections,
+  dedicatedCatalogPaths,
   milestones,
   news,
   stubPages,
@@ -27,10 +28,12 @@ export function getStaticPaths() {
     titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es, en: item.en });
   }
 
-  return [...titles.entries()].map(([slug, title]) => ({
-    params: { slug },
-    props: { title },
-  }));
+  return [...titles.entries()]
+    .filter(([slug]) => !dedicatedCatalogPaths.has(slug))
+    .map(([slug, title]) => ({
+      params: { slug },
+      props: { title },
+    }));
 }
 
 const { slug } = Astro.params;

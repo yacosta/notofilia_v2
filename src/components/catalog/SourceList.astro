@@ -1,0 +1,36 @@
+---
+import NewWindowHint from '../NewWindowHint.astro';
+import type { CatalogSource } from '../../data/philippines-victory-66';
+import type { Locale } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+  sources: CatalogSource[];
+  heading: string;
+}
+
+const { locale, sources, heading } = Astro.props;
+---
+
+<section class="border-t border-line pt-12" aria-labelledby="sources-heading">
+  <h2 id="sources-heading" class="mb-4 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+    {heading}
+  </h2>
+  <ul class="m-0 list-none space-y-2 p-0">
+    {
+      sources.map((source) => (
+        <li>
+          <a
+            href={source.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+          >
+            {source[locale]}
+            <NewWindowHint locale={locale} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
