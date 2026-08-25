@@ -1,20 +1,48 @@
+import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
+
 export type Locale = 'es' | 'en';
 
 export const SITE_URL = 'https://notofilia.com';
 
-export const STATS = {
-  banknotes: 224,
-  coins: 9,
-  countries: 36,
-  catalog: 124,
-  pages: 156,
-} as const;
+/** Unique content slugs (stubPages) present when BASELINE.pages was seeded. */
+const SEED_CONTENT_SLUGS = 16;
+/** Non-404 Astro page modules present at seed: index, en/index, [...slug], en/[...slug]. */
+const SEED_ASTRO_PAGE_FILES = 4;
+
+const astroPageFiles = import.meta.glob('../pages/**/*.astro');
+
+function uniqueContentSlugs(): Set<string> {
+  const slugs = new Set<string>();
+  for (const page of stubPages) slugs.add(page.path);
+  for (const item of collections) slugs.add(item.href.replace(/^\/|\/$/g, ''));
+  for (const item of milestones) slugs.add(item.href.replace(/^\/|\/$/g, ''));
+  for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
+  for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
+  return slugs;
+}
+
+function extraAstroPageFiles(): number {
+  const countable = Object.keys(astroPageFiles).filter((file) => !file.endsWith('404.astro'));
+  return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
+}
+
+function publicPageCount(): number {
+  return BASELINE.pages + Math.max(0, uniqueContentSlugs().size - SEED_CONTENT_SLUGS) + extraAstroPageFiles();
+}
+
+/** Live collection totals derived from holdings baseline + additions. */
+export function collectionStats() {
+  return holdingsStats(publicPageCount());
+}
 
 export function statsLine(locale: Locale): string {
+  const stats = collectionStats();
   return locale === 'en'
-    ? `${STATS.banknotes} banknotes · ${STATS.coins} coins · ${STATS.countries} countries · ${STATS.catalog} catalog entries · ${STATS.pages} pages`
-    : `${STATS.banknotes} billetes · ${STATS.coins} monedas · ${STATS.countries} países · ${STATS.catalog} fichas · ${STATS.pages} páginas`;
+    ? `${stats.banknotes} banknotes · ${stats.coins} coins · ${stats.countries} countries · ${stats.catalog} catalog entries · ${stats.pages} pages`
+    : `${stats.banknotes} billetes · ${stats.coins} monedas · ${stats.countries} países · ${stats.catalog} fichas · ${stats.pages} páginas`;
 }
+
+const seedHoldings = holdingsStats();
 
 export function localizePath(path: string, locale: Locale): string {
   if (path.startsWith('http')) return path;
@@ -42,8 +70,7 @@ export const copy = {
     menu: 'Menú',
     closeMenu: 'Cerrar menú',
     metaTitle: 'Notofilia: Billetes y Numismática | Catálogo y Guías',
-    metaDescription:
-      'Notafilia y numismática: 224 billetes y 9 monedas de 36 países. Catálogos y guías en español.',
+    metaDescription: `Notafilia y numismática: ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países. Catálogos y guías en español.`,
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
@@ -108,8 +135,7 @@ export const copy = {
     menu: 'Menu',
     closeMenu: 'Close menu',
     metaTitle: 'Notofilia: Banknotes and Numismatics | Catalog and Guides',
-    metaDescription:
-      'Notaphily and numismatics: 224 banknotes and 9 coins from 36 countries. Catalogs and guides in English.',
+    metaDescription: `Notaphily and numismatics: ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries. Catalogs and guides in English.`,
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
@@ -263,6 +289,7 @@ export const footerAbout = [
   { href: '/contacto/?motivo=error', es: 'Reportar un error', en: 'Report an error' },
 ] as const;
 
+/** Public content routes. Adding a row increments páginas in statsLine (see SEED_CONTENT_SLUGS). */
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
@@ -281,3 +308,5 @@ export const stubPages = [
   { path: 'buscar', es: 'Buscar', en: 'Search' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
+
+export const STATS = collectionStats();
