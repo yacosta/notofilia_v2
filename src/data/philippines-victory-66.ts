@@ -317,6 +317,8 @@ export const seriesCopy = {
       'Catálogo de Certificados del Tesoro de la Serie Victory n.º 66: 1, 5 y 20 pesos de la Commonwealth de Filipinas, con historia, imágenes y fuentes.',
     kicker: 'Filipinas · Commonwealth',
     title: 'Serie Victory n.º 66',
+    heroAlt:
+      'Mapa en relieve tridimensional de estilo vintage del archipiélago filipino, con islas verdes, edificios y ornamentos cartográficos antiguos',
     intro: [
       'Los Certificados del Tesoro de la Serie Victory n.º 66 fueron el último papel moneda impreso bajo la administración de Estados Unidos en Filipinas. Los grabó el Bureau of Engraving and Printing en pliegos de diez sujetos, con reemplazos marcados por una estrella al estilo estadounidense.',
       'Según el BEP, el «n.º 66» se eligió porque era la edad atribuida al presidente Manuel L. Quezon al morir. Quezon nació el 19 de agosto de 1878 y murió el 1 de agosto de 1944, a los 65 años —meses antes de la liberación—, de modo que el número conmemora una edad que no llegó a cumplir. El 20 de octubre de 1944, al desembarcar las fuerzas de Douglas MacArthur en Leyte, llegaron cajas de estos certificados, puestos en circulación ese mismo día. El total emitido de la serie fue de ₱1.019.544.000.',
@@ -338,6 +340,8 @@ export const seriesCopy = {
       'Catalog of Victory Series No. 66 Treasury Certificates: 1, 5, and 20 pesos of the Philippine Commonwealth, with history, images, and sources.',
     kicker: 'Philippines · Commonwealth',
     title: 'Victory Series No. 66',
+    heroAlt:
+      'Vintage three-dimensional relief map of the Philippine archipelago, with green islands, buildings, and old cartographic ornaments',
     intro: [
       'Victory Series No. 66 Treasury Certificates were the last paper money printed under United States administration in the Philippines. The U.S. Bureau of Engraving and Printing produced them in 10-subject sheets, with star replacements in the American manner.',
       'According to the BEP, “No. 66” was chosen as President Manuel L. Quezon’s age at death. Quezon was born on 19 August 1878 and died on 1 August 1944 at 65 — months before liberation — so the series number commemorates an age he did not reach. When Douglas MacArthur’s forces landed on Leyte on 20 October 1944, they brought crates of these certificates and issued them that same day. The series totaled ₱1,019,544,000.',

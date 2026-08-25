@@ -20,7 +20,43 @@ const pathname = seriesPath(locale);
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
-  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
+      <img
+        class="absolute inset-0 h-full w-full object-cover object-[50%_12%] [filter:contrast(1.08)_brightness(0.88)_saturate(1.05)]"
+        src="/images/catalog/philippines/hero-map.jpg"
+        alt={t.heroAlt}
+        width="1168"
+        height="784"
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div
+        class="absolute inset-0"
+        style="background:radial-gradient(ellipse 88% 70% at 50% 58%, rgba(10,10,9,0.18) 0%, rgba(10,10,9,0.55) 58%, rgba(6,6,5,0.9) 100%);"
+      >
+      </div>
+      <div
+        class="absolute inset-0"
+        style="background:linear-gradient(180deg, rgba(6,6,5,0.22) 0%, rgba(6,6,5,0.08) 18%, rgba(6,6,5,0.12) 48%, rgba(6,6,5,0.72) 78%, rgba(6,6,5,0.94) 100%);"
+      >
+      </div>
+      <div
+        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-20 md:min-h-[64vh] md:pb-16"
+      >
+        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
+          {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
+        </p>
+        <h1
+          id="series-heading"
+          class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]"
+        >
+          <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.kicker}</span>
+          <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.title}</span>
+        </h1>
+      </div>
+    </section>
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
@@ -33,13 +69,6 @@ const pathname = seriesPath(locale);
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-        {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
-      </p>
-      <h1 class="mb-8 mt-3 font-display font-normal leading-[1.12] text-cream-dim">
-        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)]">{t.kicker}</span>
-        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)] text-cream">{t.title}</span>
-      </h1>
 
       <div class="max-w-[46rem] space-y-5 text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="m-0">{paragraph}</p>)}

@@ -16,24 +16,24 @@ const searchAction = localizePath('/buscar/', locale);
 
 <header class="sticky top-0 z-50 border-b border-line bg-bg/72 backdrop-blur-[10px]">
   <nav
-    class="mx-auto grid w-full max-w-none grid-cols-[1fr_auto] items-center gap-3 px-[var(--chrome-gutter)] min-h-[68px] lg:grid-cols-[auto_1fr_auto]"
+    class="mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-1 px-[var(--chrome-gutter)] min-h-[68px] lg:grid-cols-[minmax(min-content,1fr)_minmax(0,auto)_auto]"
     aria-label={t.navLabel}
   >
     <a
       href={home}
-      class="flex min-h-11 min-w-[1em] flex-col justify-center text-cream-dim no-underline"
+      class="flex min-h-11 min-w-min flex-col justify-center text-cream-dim no-underline"
     >
-      <span class="font-display text-[22px] tracking-[0.1em] md:text-[28px]">NOTOFILIA</span>
-      <span class="hidden font-sans text-[12px] italic tracking-[0.08em] text-cream-dim md:block">{t.brandTag}</span>
+      <span class="whitespace-nowrap font-display text-[22px] tracking-[0.1em] md:text-[28px]">NOTOFILIA</span>
+      <span class="hidden whitespace-nowrap font-sans text-[12px] italic tracking-[0.08em] text-cream-dim md:block">{t.brandTag}</span>
     </a>
 
-    <ul class="hidden list-none m-0 p-0 items-center justify-end gap-x-1 lg:flex">
+    <ul class="hidden min-w-0 list-none m-0 p-0 flex-wrap items-center justify-end gap-x-0 gap-y-0 lg:flex">
       {
         primaryNav.map((item) => (
-          <li>
+          <li class="shrink">
             <a
               href={localizePath(item.href, locale)}
-              class="inline-flex items-center min-h-11 px-2.5 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-cream no-underline hover:text-cream-dim"
+              class="inline-flex items-center min-h-11 px-1.5 font-sans text-[12px] font-semibold uppercase tracking-[0.06em] text-cream no-underline hover:text-cream-dim xl:px-2 xl:text-[13px] xl:tracking-[0.08em]"
             >
               {item[locale]}
             </a>
@@ -50,7 +50,7 @@ const searchAction = localizePath('/buscar/', locale);
           name="q"
           type="search"
           placeholder={t.searchPlaceholder}
-          class="box-border min-h-11 w-[13rem] rounded-[6px] border border-line-input bg-bg/40 px-3 font-sans text-[14px] text-cream placeholder:text-muted"
+          class="box-border min-h-11 w-[10rem] rounded-[6px] border border-line-input bg-bg/40 px-3 font-sans text-[14px] text-cream placeholder:text-muted xl:w-[13rem]"
         />
       </form>
 
