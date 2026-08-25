@@ -1,5 +1,137 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Montenegrin Gothic One";
+  src: url("/fonts/MontenegrinGothicOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3-Variable-Latin.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #0a0a09;
+  --color-panel: #1c1a15;
+  --color-ink: #332e22;
+  --color-cream: #e7ddc4;
+  --color-cream-dim: #d8d2cd;
+  --color-muted: #b7ab8a;
+  --color-cream-soft: #d8cfb8a6;
+  --color-cream-faint: #e7dec98c;
+  --color-gold: #8a6d3b;
+  --color-gold-deep: #6b521f;
+  --color-gold-dark: #5c4e33;
+  --color-gold-light: #cbbf9d;
+  --color-line: #e7dec924;
+  --color-line-strong: #e7dec940;
+  --color-line-input: #e7dec959;
+
+  --font-display: "Montenegrin Gothic One", Georgia, serif;
+  --font-serif: "Source Sans 3", system-ui, sans-serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+
+  --radius-card: 6px;
+  --max-width-content: 75rem;
+}
+
+:root {
+  --page-gutter: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-cream);
+}
+
+::selection {
+  background: var(--color-cream);
+  color: var(--color-bg);
+}
+
+:is(a, button, input, summary):focus-visible {
+  outline: 2px solid var(--color-cream);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 200;
+  background: var(--color-cream-dim);
+  color: var(--color-bg);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding: 12px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  outline: 2px solid var(--color-cream);
+  outline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cream);
+  outline-offset: 2px;
+}
+
+@keyframes heart-pulse {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+.footer-heart svg {
+  transform-origin: 50%;
+  animation: 1.5s ease-in infinite alternate heart-pulse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-heart svg {
+    animation: none;
+    transform: scale(0.7);
+  }
+}
+
+header details > summary {
+  list-style: none;
+}
+
+header details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.guilloche {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-gold-light) 55%, transparent) 20%,
+    var(--color-cream-faint) 50%,
+    color-mix(in srgb, var(--color-gold-light) 55%, transparent) 80%,
+    transparent 100%
+  );
 }

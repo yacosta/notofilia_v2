@@ -1,0 +1,10 @@
+---
+interface Props {
+  locale?: 'es' | 'en';
+}
+
+const { locale = 'es' } = Astro.props;
+const text = locale === 'en' ? 'opens in a new tab' : 'se abre en una pestaña nueva';
+---
+
+<span class="italic font-normal tracking-[0.01em]"> ({text})</span>

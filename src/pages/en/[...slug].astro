@@ -1,0 +1,41 @@
+---
+import StubPage from '../../components/StubPage.astro';
+import {
+  articles,
+  collections,
+  milestones,
+  news,
+  stubPages,
+} from '../../lib/site';
+
+export function getStaticPaths() {
+  const titles = new Map<string, { es: string; en: string }>();
+
+  for (const page of stubPages) {
+    titles.set(page.path, { es: page.es, en: page.en });
+  }
+  for (const item of collections) {
+    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es.title, en: item.en.title });
+  }
+  for (const item of milestones) {
+    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es.title, en: item.en.title });
+  }
+  for (const item of articles) {
+    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es, en: item.en });
+  }
+  for (const item of news) {
+    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es, en: item.en });
+  }
+
+  return [...titles.entries()].map(([slug, title]) => ({
+    params: { slug },
+    props: { title },
+  }));
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props as { title: { es: string; en: string } };
+const pathname = `/en/${slug}/`;
+---
+
+<StubPage locale="en" pathname={pathname} title={title.en} />
