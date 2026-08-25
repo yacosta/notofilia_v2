@@ -24,7 +24,9 @@ function uniqueContentSlugs(): Set<string> {
 }
 
 function extraAstroPageFiles(): number {
-  const countable = Object.keys(astroPageFiles).filter((file) => !file.endsWith('404.astro'));
+  const countable = Object.keys(astroPageFiles).filter(
+    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/'),
+  );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
 
