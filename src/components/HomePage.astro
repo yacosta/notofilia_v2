@@ -114,24 +114,28 @@ const heroAlt =
         {t.milestonesTitle}
       </h2>
       <p class="mx-auto mb-8 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.milestonesIntro}</p>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          milestones.map((item) => (
-            <li>
-              <a
-                href={localizePath(item.href, locale)}
-                class="group block h-full min-h-11 rounded-[6px] border border-paper-300 bg-paper-50 p-5 text-inherit no-underline hover:border-brand-800"
-              >
-                <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900 group-hover:text-brand-800">
-                  {item[locale].title}
-                </h3>
-                <p class="mb-3 mt-0 font-serif text-[15px]/6 text-ink-600">{item[locale].description}</p>
-                <span class="font-sans text-[15px] text-brand-800">{t.viewCatalog}</span>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      {
+        milestones.length > 0 ? (
+          <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
+            {milestones.map((item) => (
+              <li>
+                <a
+                  href={localizePath(item.href, locale)}
+                  class="group block h-full min-h-11 rounded-[6px] border border-paper-300 bg-paper-50 p-5 text-inherit no-underline hover:border-brand-800"
+                >
+                  <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900 group-hover:text-brand-800">
+                    {item[locale].title}
+                  </h3>
+                  <p class="mb-3 mt-0 font-serif text-[15px]/6 text-ink-600">{item[locale].description}</p>
+                  <span class="font-sans text-[15px] text-brand-800">{t.viewCatalog}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="mx-auto mb-0 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.emptyMilestones}</p>
+        )
+      }
       <p class="mt-10 text-center">
         <a
           href={localizePath('/coleccion/colombia/', locale)}
@@ -148,28 +152,32 @@ const heroAlt =
       <h2 id="articles-heading" class="mb-8 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.articlesTitle}
       </h2>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
-        {
-          articles.map((item) => (
-            <li>
-              <article class="h-full rounded-[6px] border border-paper-300 bg-paper-100 p-5">
-                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
-                  {locale === 'en' ? item.dateEn : item.dateEs} · Notofilia
-                </p>
-                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
-                  {item[locale]}
-                </h3>
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
-                >
-                  {t.readMore}
-                </a>
-              </article>
-            </li>
-          ))
-        }
-      </ul>
+      {
+        articles.length > 0 ? (
+          <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
+            {articles.map((item) => (
+              <li>
+                <article class="h-full rounded-[6px] border border-paper-300 bg-paper-100 p-5">
+                  <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
+                    {locale === 'en' ? item.dateEn : item.dateEs} · Notofilia
+                  </p>
+                  <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
+                    {item[locale]}
+                  </h3>
+                  <a
+                    href={localizePath(item.href, locale)}
+                    class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
+                  >
+                    {t.readMore}
+                  </a>
+                </article>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="mx-auto mb-0 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.emptyArticles}</p>
+        )
+      }
       <p class="mt-10 text-center">
         <a
           href={localizePath('/blog/', locale)}
@@ -186,40 +194,44 @@ const heroAlt =
       <h2 id="news-heading" class="mb-8 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.newsTitle}
       </h2>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
-        {
-          news.map((item) => (
-            <li>
-              <article class="h-full rounded-[6px] border border-paper-300 bg-paper-50 p-5">
-                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
-                  {locale === 'en' ? item.dateEn : item.dateEs}
-                </p>
-                <p class="mb-0 mt-2 font-sans text-[14px]/5 text-ink-600">
-                  {t.source}:{' '}
+      {
+        news.length > 0 ? (
+          <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
+            {news.map((item) => (
+              <li>
+                <article class="h-full rounded-[6px] border border-paper-300 bg-paper-50 p-5">
+                  <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
+                    {locale === 'en' ? item.dateEn : item.dateEs}
+                  </p>
+                  <p class="mb-0 mt-2 font-sans text-[14px]/5 text-ink-600">
+                    {t.source}:{' '}
+                    <a
+                      href={item.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-brand-800 underline decoration-paper-300 hover:text-brand-600"
+                    >
+                      {item.source}
+                      <NewWindowHint locale={locale} />
+                    </a>
+                  </p>
+                  <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
+                    {item[locale]}
+                  </h3>
                   <a
-                    href={item.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-brand-800 underline decoration-paper-300 hover:text-brand-600"
+                    href={localizePath(item.href, locale)}
+                    class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
                   >
-                    {item.source}
-                    <NewWindowHint locale={locale} />
+                    {t.readMore}
                   </a>
-                </p>
-                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
-                  {item[locale]}
-                </h3>
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
-                >
-                  {t.readMore}
-                </a>
-              </article>
-            </li>
-          ))
-        }
-      </ul>
+                </article>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="mx-auto mb-0 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.emptyNews}</p>
+        )
+      }
       <p class="mt-10 text-center">
         <a
           href={localizePath('/noticias/', locale)}
