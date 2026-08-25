@@ -8,6 +8,7 @@ export type CatalogSource = {
   href: string;
   es: string;
   en: string;
+  note?: LocalizedText;
 };
 
 export const seriesSources: CatalogSource[] = [
@@ -15,6 +16,10 @@ export const seriesSources: CatalogSource[] = [
     href: 'https://www.bsp.gov.ph/SitePages/CoinsAndNotes/EnglishSeries.aspx',
     es: 'Bangko Sentral ng Pilipinas — Serie inglesa y billetes desmonetizados',
     en: 'Bangko Sentral ng Pilipinas — English Series / demonetized notes',
+    note: {
+      es: 'La Serie Victory n.º 66 llegó en 1944; sobrecarga CBP; curso legal hasta el 30 de julio de 1964.',
+      en: 'Victory Series No. 66 arrived in 1944; CBP overprint; legal tender until 30 July 1964.',
+    },
   },
   {
     href: 'https://www.bsp.gov.ph/Pages/CoinsAndNotes/HistoryOfPhilippineMoney/HistoryOfPhilippineMoney.aspx',
@@ -37,7 +42,7 @@ export const seriesSources: CatalogSource[] = [
     en: 'numismatics.ph — Victory Series No. 66 Treasury Certificate Catalog',
   },
   {
-    href: 'http://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL.htm',
+    href: 'http://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-PITC.htm',
     es: 'Bank Note Museum — Filipinas (Pick 94–101 y 117+)',
     en: 'Bank Note Museum — Philippines (Pick 94–101 and 117+)',
   },
@@ -55,6 +60,10 @@ export const seriesSources: CatalogSource[] = [
     href: 'https://www.officialgazette.gov.ph/1944/11/18/executive-order-no-25-s-1944/',
     es: 'Orden Ejecutiva n.º 25, s. 1944 (18 de noviembre de 1944)',
     en: 'Executive Order No. 25, s. 1944 (18 November 1944)',
+    note: {
+      es: 'Reconocimiento de los Victory Pesos como moneda de curso legal.',
+      en: 'Recognition of Victory Pesos as legal tender.',
+    },
   },
 ];
 
@@ -315,7 +324,8 @@ export const seriesCopy = {
       'En 1949, al crearse el Central Bank of the Philippines, parte de la serie recibió en el reverso la sobrecarga «CENTRAL BANK OF THE PHILIPPINES» (Pick 117 y siguientes). Los 500 pesos se retiraron antes, por las leyes de la República 1191 y 1516. El resto, por la Circular n.º 156 de 1963 del banco central, fue de curso legal hasta el 30 de julio de 1964 y pudo canjearse hasta el 30 de julio de 1967. El Bangko Sentral ng Pilipinas sitúa la llegada de la serie en 1944 y confirma que las sobrecargas CBP siguieron siendo de curso legal hasta esa fecha de 1964.',
     ],
     holdingsTitle: 'Piezas de la colección',
-    holdingsIntro: 'Tres certificados únicos, en la misma fila: 1, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
+    holdingsIntro:
+      'Tres certificados únicos, en la misma fila de izquierda a derecha por denominación: 1, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
     viewNote: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
     pickLabel: 'Pick',
@@ -336,7 +346,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'Three unique certificates in one row: 1, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
+      'Three unique certificates in one row, left to right by denomination: 1, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
     viewNote: 'Open the note page',
     sourcesTitle: 'Sources',
     pickLabel: 'Pick',

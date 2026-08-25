@@ -29,6 +29,7 @@ const { locale, sources, heading } = Astro.props;
             {source[locale]}
             <NewWindowHint locale={locale} />
           </a>
+          {source.note ? <p class="mb-2 mt-0 font-sans text-[15px]/6 text-muted">{source.note[locale]}</p> : null}
         </li>
       ))
     }
