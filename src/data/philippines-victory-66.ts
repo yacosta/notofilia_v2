@@ -1,6 +1,6 @@
 export const SERIES_PATH = '/coleccion/filipinas/';
 
-export type VictoryNoteId = '1-peso' | '5-pesos' | '20-pesos';
+export type VictoryNoteId = '1-peso' | '2-pesos' | '5-pesos' | '20-pesos';
 
 export type LocalizedText = { es: string; en: string };
 
@@ -165,6 +165,78 @@ export const victoryNotes: VictoryNote[] = [
     ],
   },
   {
+    id: '2-pesos',
+    path: '/coleccion/filipinas/2-pesos/',
+    pick: 'P#95a',
+    serial: 'F13317943',
+    signatures: {
+      es: 'Sergio Osmeña (presidente) y Jaime Hernandez (auditor general)',
+      en: 'Sergio Osmeña (President) and Jaime Hernandez (Auditor General)',
+    },
+    printed: {
+      es: '16.231.272 ejemplares (P#95a, Numista / numismatics.ph)',
+      en: '16,231,272 notes (P#95a, Numista / numismatics.ph)',
+    },
+    images: {
+      composite: '/images/catalog/philippines/2-pesos-composite.jpg',
+      front: '/images/catalog/philippines/2-pesos-front.jpg',
+      back: '/images/catalog/philippines/2-pesos-back.jpg',
+    },
+    title: {
+      es: '2 pesos · Serie Victory n.º 66',
+      en: '2 Pesos · Victory Series No. 66',
+    },
+    kicker: {
+      es: 'Filipinas · Commonwealth · Certificado del Tesoro',
+      en: 'Philippines · Commonwealth · Treasury Certificate',
+    },
+    lead: {
+      es: 'Anverso con José Rizal; reverso azul con la sobrecarga VICTORY. Impreso por el Bureau of Engraving and Printing de Estados Unidos.',
+      en: 'Obverse with José Rizal; blue reverse with the VICTORY overprint. Printed by the U.S. Bureau of Engraving and Printing.',
+    },
+    description: {
+      es: 'El certificado de 2 pesos (P#95a) muestra a José Rizal a la izquierda y el sello azul del Commonwealth of the Philippines a la derecha. El texto certifica un depósito en el Tesoro de Filipinas, pagadero al portador en pesos de plata o en moneda de curso legal de Estados Unidos de valor equivalente. «Victory Series No. 66» sustituye a la fecha (ND 1944). El reverso, en azul, lleva la gran sobrecarga negra VICTORY. Esta pieza de la colección, sin encapsular, mide unos 161,9 × 67,4 mm, lleva el número de serie F13317943 y las firmas de Osmeña y Hernandez (auditor general). El serial cae en el tramo F00000001–F16575000 que numismatics.ph asigna a P#95a, no a la variedad más escasa Roxas–Guevara (P#95b). No lleva la sobrecarga posterior del Central Bank of the Philippines (Pick 117+).',
+      en: 'The 2-peso Treasury Certificate (P#95a) shows José Rizal at left and the blue Commonwealth of the Philippines seal at right. The text certifies a deposit in the Treasury of the Philippines, payable to the bearer in silver pesos or in legal-tender currency of the United States of equivalent value. “Victory Series No. 66” stands in place of a date (ND 1944). The blue back carries the large black VICTORY overprint. This collection piece, unslabbed, measures about 161.9 × 67.4 mm, is serial F13317943, and has Osmeña–Hernandez (Auditor General) signatures. The serial falls in the F00000001–F16575000 range that numismatics.ph assigns to P#95a, not the scarcer Roxas–Guevara variety (P#95b). It does not carry the later Central Bank of the Philippines overprint (Pick 117+).',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 pesos, serie F13317943: Rizal a la izquierda y sello azul del Commonwealth.',
+      en: 'Face of the 2-peso note, serial F13317943: Rizal at left and the blue Commonwealth seal.',
+    },
+    backCaption: {
+      es: 'Reverso azul del 2 pesos con la sobrecarga negra VICTORY.',
+      en: 'Blue back of the 2-peso note with the black VICTORY overprint.',
+    },
+    scarcity: {
+      es: 'Numista y numismatics.ph coinciden en 16.231.272 ejemplares impresos para P#95a (Osmeña–Hernandez), series F00000001–F16575000. La variedad P#95b (Roxas–Guevara) se cita en 2.347.728 ejemplares (F16575001–F18975000) y es más escasa. Los reemplazos con estrella y los especímenes son mucho más raros. El 1 peso de la misma serie (P#94a) tuvo 61.192.000 ejemplares.',
+      en: 'Numista and numismatics.ph both record 16,231,272 notes printed for P#95a (Osmeña–Hernandez), serials F00000001–F16575000. The P#95b Roxas–Guevara variety is cited at 2,347,728 notes (F16575001–F18975000) and is scarcer. Star replacements and specimens are much rarer. The companion 1-peso Victory note (P#94a) had 61,192,000 printed.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.numismatics.ph/banknotes/victory-series/2-pesos-osmena-hernandez.html',
+        es: 'numismatics.ph — 2 pesos Osmeña–Hernandez',
+        en: 'numismatics.ph — 2 Pesos Osmeña–Hernandez',
+      },
+      {
+        href: 'https://en.numista.com/203356',
+        es: 'Numista — 2 Pesos (Victory), P#95a',
+        en: 'Numista — 2 Pesos (Victory), P#95a',
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL0095.htm',
+        es: 'Bank Note Museum — Filipinas P-95',
+        en: 'Bank Note Museum — Philippines P-95',
+      },
+    ],
+  },
+  {
     id: '5-pesos',
     path: '/coleccion/filipinas/5-pesos/',
     pick: 'P#96a',
@@ -314,7 +386,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Filipinas · Commonwealth · Serie Victory n.º 66 | Notofilia',
     metaDescription:
-      'Catálogo de Certificados del Tesoro de la Serie Victory n.º 66: 1, 5 y 20 pesos de la Commonwealth de Filipinas, con historia, imágenes y fuentes.',
+      'Catálogo de Certificados del Tesoro de la Serie Victory n.º 66: 1, 2, 5 y 20 pesos de la Commonwealth de Filipinas, con historia, imágenes y fuentes.',
     kicker: 'Filipinas · Commonwealth',
     title: 'Serie Victory n.º 66',
     heroAlt:
@@ -327,7 +399,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Tres certificados únicos, en la misma fila de izquierda a derecha por denominación: 1, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
+      'Cuatro certificados únicos, en la misma fila de izquierda a derecha por denominación: 1, 2, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
     viewNote: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
     pickLabel: 'Pick',
@@ -337,7 +409,7 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Philippines · Commonwealth · Victory Series No. 66 | Notofilia',
     metaDescription:
-      'Catalog of Victory Series No. 66 Treasury Certificates: 1, 5, and 20 pesos of the Philippine Commonwealth, with history, images, and sources.',
+      'Catalog of Victory Series No. 66 Treasury Certificates: 1, 2, 5, and 20 pesos of the Philippine Commonwealth, with history, images, and sources.',
     kicker: 'Philippines · Commonwealth',
     title: 'Victory Series No. 66',
     heroAlt:
@@ -350,7 +422,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'Three unique certificates in one row, left to right by denomination: 1, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
+      'Four unique certificates in one row, left to right by denomination: 1, 2, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
     viewNote: 'Open the note page',
     sourcesTitle: 'Sources',
     pickLabel: 'Pick',

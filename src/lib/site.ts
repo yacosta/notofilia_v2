@@ -208,8 +208,8 @@ export const primaryNav = [
 export const collections = [
   {
     href: SERIES_PATH,
-    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 5 y 20 pesos.' },
-    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 5, and 20 pesos.' },
+    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.' },
+    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
   },
   {
     href: '/coleccion/numismatica/',
@@ -272,11 +272,11 @@ export const milestones: MilestoneItem[] = [
     href: SERIES_PATH,
     es: {
       title: 'Filipinas · Serie Victory n.º 66',
-      description: 'Primera vitrina del catálogo: 1, 5 y 20 pesos del Commonwealth, alineados por denominación.',
+      description: 'Primera vitrina del catálogo: 1, 2, 5 y 20 pesos del Commonwealth, alineados por denominación.',
     },
     en: {
       title: 'Philippines · Victory Series No. 66',
-      description: 'First catalog case: Commonwealth 1, 5, and 20 pesos, lined up by denomination.',
+      description: 'First catalog case: Commonwealth 1, 2, 5, and 20 pesos, lined up by denomination.',
     },
   },
 ];
