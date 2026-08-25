@@ -16,18 +16,18 @@ const searchAction = localizePath('/buscar/', locale);
 
 <header class="sticky top-0 z-50 border-b border-line bg-bg/72 backdrop-blur-[10px]">
   <nav
-    class="mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-1 px-[var(--chrome-gutter)] min-h-[68px] lg:grid-cols-[minmax(min-content,1fr)_minmax(0,auto)_auto]"
+    class="mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto] items-center gap-x-6 gap-y-1 px-[var(--chrome-gutter)] min-h-[68px] lg:grid-cols-[minmax(min-content,1.25fr)_minmax(0,1fr)_auto]"
     aria-label={t.navLabel}
   >
     <a
       href={home}
-      class="flex min-h-11 min-w-min flex-col justify-center text-cream-dim no-underline"
+      class="flex min-h-11 min-w-min flex-col justify-center pr-4 text-cream-dim no-underline"
     >
       <span class="whitespace-nowrap font-display text-[22px] tracking-[0.1em] md:text-[28px]">NOTOFILIA</span>
       <span class="hidden whitespace-nowrap font-sans text-[12px] italic tracking-[0.08em] text-cream-dim md:block">{t.brandTag}</span>
     </a>
 
-    <ul class="hidden min-w-0 list-none m-0 p-0 flex-wrap items-center justify-end gap-x-0 gap-y-0 lg:flex">
+    <ul class="hidden min-w-0 w-full list-none m-0 p-0 flex-wrap items-center justify-end gap-x-0 gap-y-0 lg:flex">
       {
         primaryNav.map((item) => (
           <li class="shrink">
