@@ -43,7 +43,8 @@
 
 :root {
   --page-gutter: clamp(1.25rem, 5vw, 2.5rem);
-  --chrome-gutter: clamp(1.25rem, 2.5vw, 2rem);
+  /* Tight side inset so the wordmark and nav share more of the viewport. */
+  --chrome-gutter: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 html,
