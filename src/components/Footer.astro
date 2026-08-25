@@ -16,101 +16,87 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = copy[locale];
+const linkClass =
+  'inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600';
 ---
 
-<footer class="relative z-[1] mx-auto max-w-content px-[var(--page-gutter)] pb-10 pt-[72px]">
-  <nav aria-label={t.footerNav}>
-    <div class="mb-10 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-7">
-      <div>
-        <p class="mb-2.5 mt-0 font-serif text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{t.explore}</p>
-        <ul class="m-0 list-none p-0">
-          {
-            footerExplore.map((item) => (
+<footer class="bg-brand-950 text-paper-50">
+  <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-10 pt-16">
+    <nav aria-label={t.footerNav}>
+      <div class="mb-10 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-7">
+        <div>
+          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.explore}</p>
+          <ul class="m-0 list-none p-0">
+            {footerExplore.map((item) => (
               <li>
-                <a
-                  class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream focus-visible:outline-offset-[3px]"
-                  href={localizePath(item.href, locale)}
-                >
+                <a class={linkClass} href={localizePath(item.href, locale)}>
                   {item[locale]}
                 </a>
               </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div>
-        <p class="mb-2.5 mt-0 font-serif text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{t.resources}</p>
-        <ul class="m-0 list-none p-0">
-          {
-            footerResources.map((item) => (
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.resources}</p>
+          <ul class="m-0 list-none p-0">
+            {footerResources.map((item) => (
               <li>
-                <a
-                  class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream focus-visible:outline-offset-[3px]"
-                  href={localizePath(item.href, locale)}
-                >
+                <a class={linkClass} href={localizePath(item.href, locale)}>
                   {item[locale]}
                 </a>
               </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div>
-        <p class="mb-2.5 mt-0 font-serif text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{t.about}</p>
-        <ul class="m-0 list-none p-0">
-          {
-            footerAbout.map((item) => (
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.about}</p>
+          <ul class="m-0 list-none p-0">
+            {footerAbout.map((item) => (
               <li>
-                <a
-                  class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream focus-visible:outline-offset-[3px]"
-                  href={localizePath(item.href, locale)}
-                >
+                <a class={linkClass} href={localizePath(item.href, locale)}>
                   {item[locale]}
                 </a>
               </li>
-            ))
-          }
-        </ul>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.legal}</p>
+          <ul class="m-0 list-none p-0">
+            <li>
+              <a class={linkClass} href={localizePath('/politica-privacidad-cookies/', locale)}>
+                {locale === 'en' ? 'Privacy and cookie policy' : 'Política de privacidad y cookies'}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p class="mb-2.5 mt-0 font-serif text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{t.legal}</p>
-        <ul class="m-0 list-none p-0">
-          <li>
-            <a
-              class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream focus-visible:outline-offset-[3px]"
-              href={localizePath('/politica-privacidad-cookies/', locale)}
-            >
-              {locale === 'en' ? 'Privacy and cookie policy' : 'Política de privacidad y cookies'}
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="flex flex-col items-center gap-2 text-center">
-    <span class="font-serif text-[13px] uppercase tracking-[0.18em] text-muted">{t.copyright}</span>
-    <span class="max-w-full font-serif italic text-[14px] text-cream-soft">{t.ownership}</span>
-    <p class="m-0 mt-2 max-w-full text-center font-serif text-[13px] tracking-[0.1em] text-muted">
-      <strong class="font-bold text-gold-light">{t.virtual}</strong>
-      <span> {statsLine(locale)}</span>
-    </p>
-    <p class="m-0 mt-2 text-center font-serif text-[13px] tracking-[0.04em] text-muted">
-      <span>{t.designedBy}</span>
-      <a
-        href="https://cybercon-solutions.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-cream underline [text-decoration-color:rgba(231,222,201,0.35)] hover:text-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream focus-visible:outline-offset-[3px]"
-      >
-        CYBERCON SOLUTIONS<NewWindowHint locale={locale} />
-      </a>
-      <span> {t.withLove} </span>
-      <span class="footer-heart inline-flex align-[-0.35em]" role="img" aria-label={t.love}>
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
-          <path fill="#e07a6a" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-        </svg>
-      </span>
-    </p>
+    <div class="flex flex-col items-center gap-3 border-t border-white/10 pt-8 text-center">
+      <span class="font-sans text-[13px] text-brand-100">{t.copyright}</span>
+      <span class="max-w-[46rem] font-serif text-[16px] italic leading-7 text-paper-50">{t.ownership}</span>
+      <p class="m-0 font-mono text-[14px] leading-5 text-brand-100">
+        <strong class="font-medium text-paper-50">{t.virtual}</strong>
+        <span> {statsLine(locale)}</span>
+      </p>
+      <p class="m-0 font-sans text-[13px] text-brand-100">
+        <span>{t.designedBy} </span>
+        <a
+          href="https://cybercon-solutions.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-paper-50 underline decoration-gold-500/50 hover:text-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+        >
+          CYBERCON SOLUTIONS<NewWindowHint locale={locale} />
+        </a>
+        <span> {t.withLove} </span>
+        <span class="footer-heart inline-flex align-[-0.35em]" role="img" aria-label={t.love}>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+            <path fill="#EBDCA8" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+          </svg>
+        </span>
+      </p>
+    </div>
   </div>
 </footer>
