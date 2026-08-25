@@ -1,0 +1,11 @@
+---
+import { copy, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+---
+
+<a href="#main-content" class="skip-link">{copy[locale].skip}</a>

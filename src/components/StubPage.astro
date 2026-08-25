@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { copy, localizePath, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+  title: string;
+}
+
+const { locale, pathname, title } = Astro.props;
+const t = copy[locale];
+---
+
+<Layout title={`${title} · Notofilia`} description={t.comingSoon} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-[720px] px-[var(--page-gutter)] py-24 outline-none">
+    <h1 class="mt-0 mb-4 font-display text-[clamp(28px,4vw,42px)] font-normal text-cream-dim">{title}</h1>
+    <p class="m-0 text-[18px] leading-[1.7] text-cream-soft">{t.comingSoon}</p>
+    <p class="mt-8">
+      <a
+        href={localizePath('/', locale)}
+        class="inline-flex min-h-11 items-center text-cream underline [text-decoration-color:rgba(231,222,201,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-cream"
+      >
+        {t.backHome}
+      </a>
+    </p>
+  </main>
+</Layout>

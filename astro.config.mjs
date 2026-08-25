@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://notofilia.com',
+  trailingSlash: 'always',
+  compressHTML: false,
   vite: {
     plugins: [tailwindcss()],
   },

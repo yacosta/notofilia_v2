@@ -1,11 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { copy } from '../lib/site';
+
+const t = copy.es;
 ---
 
-<Layout title="Not found · Notofilia">
-  <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center gap-4 px-6 text-center">
-    <h1 class="text-4xl font-bold">404</h1>
-    <p class="text-slate-600 dark:text-slate-400">That page doesn't exist.</p>
-    <a href="/" class="underline underline-offset-4">Back home</a>
+<Layout title={`${t.notFoundTitle} · Notofilia`} description={t.notFoundBody} locale="es" pathname="/404">
+  <main id="main-content" tabindex="-1" class="mx-auto flex min-h-[60vh] max-w-[720px] flex-col justify-center px-[var(--page-gutter)] py-24 outline-none">
+    <h1 class="mt-0 mb-4 font-display text-[clamp(28px,4vw,42px)] font-normal text-cream-dim">{t.notFoundTitle}</h1>
+    <p class="m-0 text-[18px] leading-[1.7] text-cream-soft">{t.notFoundBody}</p>
+    <p class="mt-8">
+      <a
+        href="/"
+        class="inline-flex min-h-11 items-center text-cream underline [text-decoration-color:rgba(231,222,201,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-cream"
+      >
+        {t.backHome}
+      </a>
+    </p>
   </main>
 </Layout>
