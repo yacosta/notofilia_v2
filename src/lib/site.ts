@@ -4,9 +4,9 @@ export type Locale = 'es' | 'en';
 
 export const SITE_URL = 'https://notofilia.com';
 
-/** Unique content slugs (stubPages) present when BASELINE.pages was seeded. */
+/** Empty-site content slugs already listed in stubPages/collections. New routes increment pages from 0. */
 const SEED_CONTENT_SLUGS = 16;
-/** Non-404 Astro page modules present at seed: index, en/index, [...slug], en/[...slug]. */
+/** Non-404 Astro page modules on the empty site: index, en/index, [...slug], en/[...slug]. */
 const SEED_ASTRO_PAGE_FILES = 4;
 
 const astroPageFiles = import.meta.glob('../pages/**/*.astro');

@@ -18,8 +18,9 @@
  * src/pages/*.astro files except 404. Pass the live count into
  * collectionStats(pageCount) from site.ts.
  *
- * BASELINE keeps the live-site totals (224 / 9 / 36 / 124 / 156) until
- * individual records are migrated. Do not edit HomePage or Footer to change counts.
+ * BASELINE starts at zero — nothing is uploaded yet. Future rows in
+ * additions / catalogAdditions increment from that empty floor.
+ * Do not edit HomePage or Footer to change counts.
  */
 
 export type PieceKind = 'banknote' | 'coin';
@@ -36,55 +37,18 @@ export type CatalogEntry = {
 };
 
 export const BASELINE = {
-  banknotes: 224,
-  coins: 9,
-  countries: 36,
-  fichas: 124,
-  pages: 156,
+  banknotes: 0,
+  coins: 0,
+  countries: 0,
+  fichas: 0,
+  pages: 0,
 } as const;
 
 /**
  * Country codes already represented in the baseline collection.
- * Length must stay 36 so the seeded country total remains correct.
+ * Empty while the collection has no uploaded pieces.
  */
-export const BASELINE_COUNTRIES = [
-  'CO',
-  'US',
-  'ES',
-  'PR',
-  'EC',
-  'PH',
-  'GT',
-  'MX',
-  'AR',
-  'BR',
-  'PE',
-  'CL',
-  'VE',
-  'BO',
-  'UY',
-  'PY',
-  'PA',
-  'CR',
-  'NI',
-  'HN',
-  'SV',
-  'CU',
-  'DO',
-  'HT',
-  'JM',
-  'CA',
-  'GB',
-  'FR',
-  'DE',
-  'IT',
-  'PT',
-  'CN',
-  'JP',
-  'AU',
-  'IN',
-  'ZA',
-] as const;
+export const BASELINE_COUNTRIES = [] as const;
 
 const baselineCountrySet = new Set<string>(BASELINE_COUNTRIES);
 
