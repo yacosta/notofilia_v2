@@ -1,5 +1,5 @@
 ---
-import StubPage from '../../components/StubPage.astro';
+import Layout from '../../layouts/Layout.astro';
 import {
   articles,
   collections,
@@ -38,4 +38,17 @@ const { title } = Astro.props as { title: { es: string; en: string } };
 const pathname = `/en/${slug}/`;
 ---
 
-<StubPage locale="en" pathname={pathname} title={title.en} />
+<Layout title={`${title.en} · Notofilia`} description="This section is being migrated to Notofilia v2." locale="en" pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-[720px] px-[var(--page-gutter)] py-24 outline-none">
+    <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">{title.en}</h1>
+    <p class="m-0 text-[17px]/7 text-muted">This section is being migrated to Notofilia v2.</p>
+    <p class="mt-8">
+      <a
+        href="/en/"
+        class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+      >
+        Back to the homepage
+      </a>
+    </p>
+  </main>
+</Layout>

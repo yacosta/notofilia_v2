@@ -20,7 +20,7 @@
  *
  * BASELINE starts at zero — nothing is uploaded yet. Future rows in
  * additions / catalogAdditions increment from that empty floor.
- * Do not edit HomePage or Footer to change counts.
+ * Do not edit the homepage or Footer to change counts.
  */
 
 export type PieceKind = 'banknote' | 'coin';

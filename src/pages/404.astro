@@ -1,5 +1,18 @@
 ---
-import NotFound from '../components/NotFound.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<NotFound locale="es" />
+<Layout title="Página no encontrada · Notofilia" description="Esa dirección no existe en el catálogo." locale="es" pathname="/404">
+  <main id="main-content" tabindex="-1" class="mx-auto flex min-h-[60vh] max-w-[720px] flex-col justify-center px-[var(--page-gutter)] py-24 outline-none">
+    <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">Página no encontrada</h1>
+    <p class="m-0 text-[17px]/7 text-muted">Esa dirección no existe en el catálogo.</p>
+    <p class="mt-8">
+      <a
+        href="/"
+        class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+      >
+        Volver al inicio
+      </a>
+    </p>
+  </main>
+</Layout>
