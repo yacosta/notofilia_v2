@@ -1,9 +1,10 @@
 @import "tailwindcss";
 @import "@fontsource-variable/fraunces/wght.css";
+@import "@fontsource-variable/fraunces/wght-italic.css";
 @import "@fontsource-variable/source-serif-4/wght.css";
+@import "@fontsource-variable/source-serif-4/wght-italic.css";
 @import "@fontsource-variable/inter/wght.css";
 @import "@fontsource/ibm-plex-mono/400.css";
-@import "@fontsource/ibm-plex-mono/500.css";
 
 @theme {
   --color-brand-950: #0b2e1f;
@@ -24,9 +25,9 @@
 
   --color-seal-700: #9b2c2c;
 
-  --font-display: "Fraunces Variable", Fraunces, Georgia, serif;
-  --font-serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, serif;
-  --font-sans: "Inter Variable", Inter, system-ui, sans-serif;
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --radius-card: 6px;
@@ -34,7 +35,7 @@
 }
 
 :root {
-  --page-gutter: clamp(20px, 5vw, 48px);
+  --page-gutter: clamp(1.25rem, 5vw, 2.5rem);
 }
 
 html,
@@ -44,7 +45,13 @@ body {
 }
 
 ::selection {
-  background: #deefe6;
+  background: var(--color-brand-100);
+  color: var(--color-brand-950);
+}
+
+:is(a, button, input, summary):focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 3px;
 }
 
 .skip-link {
@@ -60,7 +67,6 @@ body {
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 15px;
-  letter-spacing: 0.05em;
   padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
@@ -72,16 +78,12 @@ body {
   width: auto;
   height: auto;
   outline: 2px solid var(--color-brand-600);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
-.guilloche {
-  height: 10px;
-  width: min(220px, 50%);
-  margin-inline: auto;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 10' fill='none'%3E%3Cpath d='M1 5c18-6 36 6 54 0s36 6 54 0 36 6 54 0 36 6 54 0' stroke='%23C9A227' stroke-opacity='.55' stroke-width='1'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
+:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 2px;
 }
 
 @keyframes heart-pulse {
@@ -111,4 +113,17 @@ header details > summary {
 
 header details > summary::-webkit-details-marker {
   display: none;
+}
+
+.guilloche {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-gold-500) 55%, transparent) 20%,
+    var(--color-paper-300) 50%,
+    color-mix(in srgb, var(--color-gold-500) 55%, transparent) 80%,
+    transparent 100%
+  );
 }

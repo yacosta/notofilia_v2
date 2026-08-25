@@ -14,20 +14,26 @@ const esHref = locale === 'es' ? pathname : otherLocalePath(pathname, 'en');
 const searchAction = localizePath('/buscar/', locale);
 ---
 
-<header class="sticky top-0 z-50 border-b border-paper-300 bg-paper-50">
-  <nav class="mx-auto flex max-w-content flex-wrap items-center gap-3 px-[var(--page-gutter)] min-h-[72px]" aria-label={t.navLabel}>
-    <a href={home} class="mr-auto flex min-h-11 flex-col justify-center no-underline text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600">
-      <span class="font-display text-[26px] leading-none tracking-tight md:text-[30px]">NOTOFILIA</span>
+<header class="sticky top-0 z-50 border-b border-paper-300 bg-paper-50/95 backdrop-blur-[10px]">
+  <nav
+    class="mx-auto grid max-w-content grid-cols-[1fr_auto] items-center gap-3 px-[var(--page-gutter)] min-h-[68px] lg:grid-cols-[auto_1fr_auto]"
+    aria-label={t.navLabel}
+  >
+    <a
+      href={home}
+      class="flex min-h-11 min-w-[1em] flex-col justify-center text-ink-900 no-underline"
+    >
+      <span class="font-display text-[22px] tracking-[0.04em] md:text-[28px]">NOTOFILIA</span>
       <span class="hidden font-sans text-[12px] tracking-[0.08em] text-ink-600 md:block">{t.brandTag}</span>
     </a>
 
-    <ul class="hidden list-none m-0 p-0 items-center gap-x-1 lg:flex">
+    <ul class="hidden list-none m-0 p-0 items-center justify-end gap-x-1 lg:flex">
       {
         primaryNav.map((item) => (
           <li>
             <a
               href={localizePath(item.href, locale)}
-              class="inline-flex items-center min-h-11 px-2 font-sans text-[13px] font-medium text-ink-900 no-underline hover:text-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+              class="inline-flex items-center min-h-11 px-2.5 font-sans text-[13px] font-medium tracking-[0.08em] text-ink-900 no-underline hover:text-brand-800"
             >
               {item[locale]}
             </a>
@@ -36,43 +42,37 @@ const searchAction = localizePath('/buscar/', locale);
       }
     </ul>
 
-    <form class="hidden min-w-[14rem] flex-1 max-w-xs items-center gap-2 md:flex" action={searchAction} method="get" role="search">
-      <label class="sr-only" for="site-search">{t.searchLabel}</label>
-      <input
-        id="site-search"
-        name="q"
-        type="search"
-        placeholder={t.searchPlaceholder}
-        class="min-h-11 w-full rounded-[6px] border border-paper-300 bg-paper-100 px-3 font-sans text-[14px] text-ink-900 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
-      />
-      <button
-        type="submit"
-        class="min-h-11 cursor-pointer rounded-[6px] border-0 bg-brand-800 px-3 font-sans text-[13px] font-semibold text-paper-50 hover:bg-brand-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
-      >
-        {t.searchSubmit}
-      </button>
-    </form>
+    <div class="flex items-center gap-2 justify-self-end">
+      <form action={searchAction} method="get" class="hidden md:block" role="search">
+        <label class="sr-only" for="site-search">{t.searchLabel}</label>
+        <input
+          id="site-search"
+          name="q"
+          type="search"
+          placeholder={t.searchPlaceholder}
+          class="box-border min-h-11 w-[13rem] rounded-[6px] border border-paper-300 bg-paper-50 px-3 font-sans text-[14px] text-ink-900 placeholder:text-ink-600"
+        />
+      </form>
 
-    <div class="flex items-center gap-2">
-      <div class="flex items-center rounded-[6px] border border-paper-300 p-[3px]" role="group" aria-label={t.langLabel}>
+      <div class="flex items-center rounded-[6px] border border-paper-300 bg-paper-100 p-[3px]" role="group" aria-label={t.langLabel}>
         {
           locale === 'es' ? (
-            <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[4px] bg-brand-800 px-3 font-sans text-[13px] font-semibold text-paper-50" aria-current="page" lang="es">
+            <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[6px] bg-brand-800 px-3 font-sans text-[13px] font-semibold tracking-[0.08em] text-paper-50" aria-current="page" lang="es">
               ES<span class="sr-only"> — Español</span>
             </span>
           ) : (
-            <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[4px] px-3 font-sans text-[13px] font-semibold text-ink-900 no-underline hover:text-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600" href={esHref} hreflang="es" lang="es">
+            <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[6px] px-3 font-sans text-[13px] font-semibold tracking-[0.08em] text-ink-900 no-underline" href={esHref} hreflang="es" lang="es">
               ES<span class="sr-only"> — Spanish</span>
             </a>
           )
         }
         {
           locale === 'en' ? (
-            <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[4px] bg-brand-800 px-3 font-sans text-[13px] font-semibold text-paper-50" aria-current="page" lang="en">
+            <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[6px] bg-brand-800 px-3 font-sans text-[13px] font-semibold tracking-[0.08em] text-paper-50" aria-current="page" lang="en">
               EN<span class="sr-only"> — English</span>
             </span>
           ) : (
-            <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[4px] px-3 font-sans text-[13px] font-semibold text-ink-900 no-underline hover:text-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600" href={enHref} hreflang="en" lang="en">
+            <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[6px] px-3 font-sans text-[13px] font-semibold tracking-[0.08em] text-ink-900 no-underline" href={enHref} hreflang="en" lang="en">
               EN<span class="sr-only"> — English</span>
             </a>
           )
@@ -80,25 +80,22 @@ const searchAction = localizePath('/buscar/', locale);
       </div>
 
       <details class="relative lg:hidden">
-        <summary class="flex min-h-11 min-w-11 cursor-pointer list-none flex-col items-center justify-center gap-[5px] text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600">
+        <summary class="flex min-h-11 min-w-11 cursor-pointer list-none flex-col items-center justify-center gap-[5px] text-ink-900">
           <span class="sr-only">{t.menu}</span>
           <span class="block h-[1.5px] w-[22px] bg-ink-900" aria-hidden="true"></span>
           <span class="block h-[1.5px] w-[22px] bg-ink-900" aria-hidden="true"></span>
           <span class="mr-[7px] block h-[1.5px] w-[15px] self-end bg-ink-900" aria-hidden="true"></span>
         </summary>
-        <div class="absolute right-0 top-full z-50 mt-2 w-[min(92vw,22rem)] rounded-[6px] border border-paper-300 bg-paper-50 shadow-[0_16px_40px_rgba(28,26,21,0.12)]">
-          <form class="flex gap-2 border-b border-paper-300 p-4" action={searchAction} method="get" role="search">
+        <div class="absolute right-0 top-full z-50 mt-2 w-[min(92vw,22rem)] rounded-[6px] border border-paper-300 bg-paper-50 text-ink-900 shadow-[0_16px_32px_rgba(28,26,21,0.12)]">
+          <form action={searchAction} method="get" class="border-b border-paper-300 p-4" role="search">
             <label class="sr-only" for="site-search-mobile">{t.searchLabel}</label>
             <input
               id="site-search-mobile"
               name="q"
               type="search"
               placeholder={t.searchPlaceholder}
-              class="min-h-11 w-full rounded-[6px] border border-paper-300 bg-paper-100 px-3 font-sans text-[14px] text-ink-900"
+              class="box-border min-h-11 w-full rounded-[6px] border border-paper-300 bg-paper-50 px-3 font-sans text-[14px] text-ink-900"
             />
-            <button type="submit" class="min-h-11 rounded-[6px] bg-brand-800 px-3 font-sans text-[13px] font-semibold text-paper-50">
-              {t.searchSubmit}
-            </button>
           </form>
           <ul class="m-0 list-none p-0">
             {
@@ -106,7 +103,7 @@ const searchAction = localizePath('/buscar/', locale);
                 <li>
                   <a
                     href={localizePath(item.href, locale)}
-                    class="flex min-h-11 items-center border-b border-paper-300 px-5 font-sans text-[15px] text-ink-900 no-underline hover:text-brand-800"
+                    class="flex min-h-11 items-center border-b border-paper-300 px-6 font-sans text-[15px] text-brand-800 no-underline hover:text-brand-600"
                   >
                     {item[locale]}
                   </a>

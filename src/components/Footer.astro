@@ -16,56 +16,80 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = copy[locale];
-const linkClass =
-  'inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600';
 ---
 
 <footer class="bg-brand-950 text-paper-50">
-  <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-10 pt-16">
+  <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-10 pt-[72px]">
     <nav aria-label={t.footerNav}>
       <div class="mb-10 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-7">
         <div>
           <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.explore}</p>
           <ul class="m-0 list-none p-0">
-            {footerExplore.map((item) => (
-              <li>
-                <a class={linkClass} href={localizePath(item.href, locale)}>
-                  {item[locale]}
-                </a>
-              </li>
-            ))}
+            {
+              footerExplore.map((item) => (
+                <li>
+                  <a
+                    class="inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200"
+                    href={localizePath(item.href, locale)}
+                  >
+                    {item[locale]}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div>
           <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.resources}</p>
           <ul class="m-0 list-none p-0">
-            {footerResources.map((item) => (
-              <li>
-                <a class={linkClass} href={localizePath(item.href, locale)}>
-                  {item[locale]}
-                </a>
-              </li>
-            ))}
+            {
+              footerResources.map((item) => (
+                <li>
+                  <a
+                    class="inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200"
+                    href={localizePath(item.href, locale)}
+                  >
+                    {item[locale]}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div>
           <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.about}</p>
           <ul class="m-0 list-none p-0">
-            {footerAbout.map((item) => (
-              <li>
-                <a class={linkClass} href={localizePath(item.href, locale)}>
-                  {item[locale]}
-                </a>
-              </li>
-            ))}
+            {
+              footerAbout.map((item) => (
+                <li>
+                  <a
+                    class="inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200"
+                    href={localizePath(item.href, locale)}
+                  >
+                    {item[locale]}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div>
           <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-200">{t.legal}</p>
           <ul class="m-0 list-none p-0">
             <li>
-              <a class={linkClass} href={localizePath('/politica-privacidad-cookies/', locale)}>
+              <a
+                class="inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200"
+                href={localizePath('/politica-privacidad-cookies/', locale)}
+              >
                 {locale === 'en' ? 'Privacy and cookie policy' : 'Política de privacidad y cookies'}
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex min-h-11 items-center text-paper-50 no-underline hover:text-gold-200"
+                href={localizePath('/contacto/', locale)}
+              >
+                {t.reportError}
               </a>
             </li>
           </ul>
@@ -73,22 +97,22 @@ const linkClass =
       </div>
     </nav>
 
-    <div class="flex flex-col items-center gap-3 border-t border-white/10 pt-8 text-center">
-      <span class="font-sans text-[13px] text-brand-100">{t.copyright}</span>
-      <span class="max-w-[46rem] font-serif text-[16px] italic leading-7 text-paper-50">{t.ownership}</span>
-      <p class="m-0 font-mono text-[14px] leading-5 text-brand-100">
-        <strong class="font-medium text-paper-50">{t.virtual}</strong>
+    <div class="flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
+      <span class="font-sans text-[13px] tracking-[0.04em] text-paper-50/80">{t.copyright}</span>
+      <span class="max-w-full font-serif italic text-[15px] text-paper-50">{t.ownership}</span>
+      <p class="m-0 mt-2 max-w-full text-center font-mono text-[14px]/5 text-paper-50/80">
+        <strong class="font-sans font-semibold text-gold-200">{t.virtual}</strong>
         <span> {statsLine(locale)}</span>
       </p>
-      <p class="m-0 font-sans text-[13px] text-brand-100">
+      <p class="m-0 mt-2 text-center font-sans text-[13px] text-paper-50/80">
         <span>{t.designedBy} </span>
         <a
           href="https://cybercon-solutions.com"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-paper-50 underline decoration-gold-500/50 hover:text-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="text-paper-50 underline decoration-gold-500/50 hover:text-gold-200"
         >
-          CYBERCON SOLUTIONS<NewWindowHint locale={locale} />
+          Cybercon Solutions<NewWindowHint locale={locale} />
         </a>
         <span> {t.withLove} </span>
         <span class="footer-heart inline-flex align-[-0.35em]" role="img" aria-label={t.love}>

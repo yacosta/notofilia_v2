@@ -19,14 +19,14 @@ const { locale } = Astro.props;
 const t = copy[locale];
 const heroAlt =
   locale === 'en'
-    ? 'Macro engraving detail of a Guatemala 5-quetzal banknote, with the quetzal bird'
-    : 'Detalle de grabado de un billete de 5 quetzales de Guatemala, con el ave quetzal';
+    ? 'Close-up of a Guatemala 5-quetzal banknote with the quetzal bird, in a notaphily style'
+    : 'Primer plano de un billete de 5 quetzales de Guatemala, con el ave quetzal, estilo numismática y notafilia';
 ---
 
 <main id="main-content" tabindex="-1" class="relative w-full bg-paper-50 outline-none">
-  <section class="relative overflow-hidden bg-brand-950" aria-labelledby="hero-heading">
+  <section class="relative min-h-[72vh] w-full bg-brand-950" aria-labelledby="hero-heading">
     <img
-      class="absolute inset-0 h-full w-full object-cover object-[50%_40%] opacity-40 [filter:contrast(1.15)_saturate(0.85)]"
+      class="absolute inset-0 h-full w-full object-cover object-[50%_40%] [filter:contrast(1.15)_brightness(0.78)_saturate(1.05)]"
       src="/images/hero-slide.jpg"
       alt={heroAlt}
       width="768"
@@ -34,33 +34,41 @@ const heroAlt =
       fetchpriority="high"
       decoding="async"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/55 to-brand-950"></div>
+    <div
+      class="absolute inset-0"
+      style="background:radial-gradient(ellipse 90% 75% at 50% 42%, rgba(11,46,31,0.28) 0%, rgba(11,46,31,0.72) 62%, rgba(11,46,31,0.94) 100%);"
+    >
+    </div>
+    <div
+      class="absolute inset-0"
+      style="background:linear-gradient(180deg, rgba(11,46,31,0.55) 0%, rgba(11,46,31,0.12) 24%, rgba(11,46,31,0.2) 78%, rgba(11,46,31,0.75) 100%);"
+    >
+    </div>
 
-    <div class="relative z-[1] mx-auto flex min-h-[72vh] max-w-content flex-col items-center justify-center px-[var(--page-gutter)] py-20 text-center">
-      <p class="m-0 font-sans text-[13px] font-medium uppercase tracking-[0.08em] text-gold-200">{t.heroKicker}</p>
-      <p class="mb-0 mt-4 font-display text-[clamp(40px,7vw,72px)] font-normal leading-none tracking-tight text-paper-50">
+    <div class="relative z-[1] mx-auto flex min-h-[72vh] max-w-content flex-col items-center justify-center px-[var(--page-gutter)] py-16 text-center">
+      <p class="m-0 font-display text-[clamp(2.75rem,8vw,4.5rem)] font-normal leading-[1.18] tracking-[-0.02em] text-paper-50">
         NOTOFILIA
       </p>
-      <div class="guilloche my-5" aria-hidden="true"></div>
-      <h1 id="hero-heading" class="m-0 max-w-[22ch] font-display text-[clamp(28px,3.4vw,44px)] font-normal leading-[1.18] text-paper-50">
+      <hr class="guilloche my-6 w-40" />
+      <h1 id="hero-heading" class="m-0 max-w-[40rem] font-serif text-[clamp(1.5rem,2.6vw,2.75rem)] font-normal leading-[1.3] text-paper-50">
         {t.heroTitle}
       </h1>
-      <p class="mb-0 mt-4 max-w-[40rem] font-serif text-[17px] leading-7 text-brand-100">
+      <p class="mb-0 mt-4 max-w-[42rem] font-serif text-[17px]/7 text-paper-50/90">
         {t.heroLead}
       </p>
-      <p class="mb-0 mt-5 font-mono text-[14px] leading-5 text-gold-200">
+      <p class="mb-0 mt-4 font-mono text-[14px]/5 tracking-wide text-gold-200">
         {statsLine(locale)}
       </p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
         <a
           href={localizePath('/coleccion/colombia/', locale)}
-          class="inline-flex min-h-12 items-center justify-center rounded-[6px] bg-brand-800 px-6 py-3 font-sans text-[15px] font-semibold text-paper-50 no-underline hover:bg-brand-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="inline-flex min-h-12 items-center justify-center rounded-[6px] bg-brand-800 px-7 py-3 font-sans text-[15px] text-paper-50 no-underline hover:bg-brand-900"
         >
           {t.heroPrimary}
         </a>
         <a
           href={localizePath('/coleccion/colombia/', locale)}
-          class="inline-flex min-h-12 items-center justify-center rounded-[6px] border border-paper-50 px-6 py-3 font-sans text-[15px] font-semibold text-paper-50 no-underline hover:bg-paper-50/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="inline-flex min-h-12 items-center justify-center rounded-[6px] border border-paper-50 px-7 py-3 font-sans text-[15px] text-paper-50 no-underline hover:bg-paper-50/10"
         >
           {t.heroSecondary}
         </a>
@@ -70,28 +78,28 @@ const heroAlt =
 
   <section class="border-b border-paper-300 bg-paper-100" aria-label={t.statsLabel}>
     <div class="mx-auto max-w-content px-[var(--page-gutter)] py-8 text-center">
-      <p class="m-0 font-mono text-[14px] leading-5 text-ink-600">{statsLine(locale)}</p>
+      <p class="m-0 font-mono text-[14px]/5 text-ink-600">{statsLine(locale)}</p>
     </div>
   </section>
 
-  <section class="px-[var(--page-gutter)] py-16" aria-labelledby="browse-heading">
+  <section class="px-[var(--page-gutter)] py-[72px]" aria-labelledby="browse-heading">
     <div class="mx-auto max-w-content">
-      <h2 id="browse-heading" class="mb-3 mt-0 text-center font-display text-[32px] leading-10 text-brand-900">
+      <h2 id="browse-heading" class="mb-3 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.browseTitle}
       </h2>
-      <p class="mx-auto mb-10 mt-0 max-w-[40rem] text-center font-serif text-[17px] leading-7 text-ink-600">{t.browseIntro}</p>
+      <p class="mx-auto mb-8 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.browseIntro}</p>
       <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
         {
           collections.map((item) => (
             <li>
               <a
                 href={localizePath(item.href, locale)}
-                class="group block min-h-11 rounded-[6px] border border-paper-300 bg-paper-100 p-5 text-inherit no-underline hover:border-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+                class="group block h-full min-h-11 rounded-[6px] border border-paper-300 bg-paper-100 p-5 text-inherit no-underline hover:border-brand-800"
               >
-                <span class="mb-2 block font-display text-[24px] leading-8 text-brand-900 group-hover:text-brand-800">
+                <span class="mb-2 block font-display text-[1.5rem]/8 text-brand-900 group-hover:text-brand-800">
                   {item[locale].title}
                 </span>
-                <span class="block font-serif text-[16px] leading-7 text-ink-600">{item[locale].description}</span>
+                <span class="block font-serif text-[15px]/6 text-ink-600">{item[locale].description}</span>
               </a>
             </li>
           ))
@@ -100,28 +108,25 @@ const heroAlt =
     </div>
   </section>
 
-  <section class="bg-paper-100 px-[var(--page-gutter)] py-16" aria-labelledby="milestones-heading">
+  <section class="bg-paper-100 px-[var(--page-gutter)] py-[72px]" aria-labelledby="milestones-heading">
     <div class="mx-auto max-w-content">
-      <p class="mb-2 mt-0 text-center font-sans text-[12px] font-semibold uppercase tracking-[0.08em] text-gold-700">
-        {locale === 'en' ? 'This month' : 'Este mes'}
-      </p>
-      <h2 id="milestones-heading" class="mb-3 mt-0 text-center font-display text-[32px] leading-10 text-brand-900">
+      <h2 id="milestones-heading" class="mb-3 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.milestonesTitle}
       </h2>
-      <p class="mx-auto mb-10 mt-0 max-w-[40rem] text-center font-serif text-[17px] leading-7 text-ink-600">{t.milestonesIntro}</p>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2 lg:grid-cols-4">
+      <p class="mx-auto mb-8 mt-0 max-w-[40rem] text-center text-[17px]/7 text-ink-600">{t.milestonesIntro}</p>
+      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
         {
           milestones.map((item) => (
             <li>
               <a
                 href={localizePath(item.href, locale)}
-                class="group flex h-full min-h-11 flex-col rounded-[6px] border border-paper-300 bg-paper-50 p-5 text-inherit no-underline hover:border-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+                class="group block h-full min-h-11 rounded-[6px] border border-paper-300 bg-paper-50 p-5 text-inherit no-underline hover:border-brand-800"
               >
-                <h3 class="mb-2 mt-0 font-display text-[20px] leading-7 text-brand-900 group-hover:text-brand-800">
+                <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900 group-hover:text-brand-800">
                   {item[locale].title}
                 </h3>
-                <p class="mb-4 mt-0 flex-1 font-serif text-[16px] leading-7 text-ink-600">{item[locale].description}</p>
-                <span class="font-sans text-[15px] font-medium text-brand-800">{t.viewCatalog}</span>
+                <p class="mb-3 mt-0 font-serif text-[15px]/6 text-ink-600">{item[locale].description}</p>
+                <span class="font-sans text-[15px] text-brand-800">{t.viewCatalog}</span>
               </a>
             </li>
           ))
@@ -130,7 +135,7 @@ const heroAlt =
       <p class="mt-10 text-center">
         <a
           href={localizePath('/coleccion/colombia/', locale)}
-          class="inline-flex min-h-11 items-center font-sans text-[15px] font-semibold text-brand-800 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
         >
           {t.heroSecondary}
         </a>
@@ -138,23 +143,25 @@ const heroAlt =
     </div>
   </section>
 
-  <section class="px-[var(--page-gutter)] py-16" aria-labelledby="articles-heading">
+  <section class="px-[var(--page-gutter)] py-[72px]" aria-labelledby="articles-heading">
     <div class="mx-auto max-w-content">
-      <h2 id="articles-heading" class="mb-10 mt-0 text-center font-display text-[32px] leading-10 text-brand-900">
+      <h2 id="articles-heading" class="mb-8 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.articlesTitle}
       </h2>
       <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {
           articles.map((item) => (
             <li>
-              <article class="rounded-[6px] border border-paper-300 bg-paper-100 p-5">
-                <p class="m-0 font-mono text-[14px] leading-5 text-ink-600">
+              <article class="h-full rounded-[6px] border border-paper-300 bg-paper-100 p-5">
+                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
                   {locale === 'en' ? item.dateEn : item.dateEs} · Notofilia
                 </p>
-                <h3 class="mb-3 mt-2 font-display text-[24px] leading-8 text-brand-900">{item[locale]}</h3>
+                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
+                  {item[locale]}
+                </h3>
                 <a
                   href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] font-medium text-brand-800 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
                 >
                   {t.readMore}
                 </a>
@@ -166,7 +173,7 @@ const heroAlt =
       <p class="mt-10 text-center">
         <a
           href={localizePath('/blog/', locale)}
-          class="inline-flex min-h-11 items-center font-sans text-[15px] font-semibold text-brand-800 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
         >
           {t.allBlog}
         </a>
@@ -174,35 +181,37 @@ const heroAlt =
     </div>
   </section>
 
-  <section class="bg-paper-100 px-[var(--page-gutter)] py-16" aria-labelledby="news-heading">
+  <section class="bg-paper-100 px-[var(--page-gutter)] py-[72px]" aria-labelledby="news-heading">
     <div class="mx-auto max-w-content">
-      <h2 id="news-heading" class="mb-10 mt-0 text-center font-display text-[32px] leading-10 text-brand-900">
+      <h2 id="news-heading" class="mb-8 mt-0 text-center font-display text-[2rem]/10 font-normal text-brand-900">
         {t.newsTitle}
       </h2>
       <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {
           news.map((item) => (
             <li>
-              <article class="rounded-[6px] border border-paper-300 bg-paper-50 p-5">
-                <p class="m-0 font-mono text-[14px] leading-5 text-ink-600">
+              <article class="h-full rounded-[6px] border border-paper-300 bg-paper-50 p-5">
+                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-ink-600">
                   {locale === 'en' ? item.dateEn : item.dateEs}
                 </p>
-                <p class="mb-0 mt-2 font-sans text-[14px] text-ink-600">
+                <p class="mb-0 mt-2 font-sans text-[14px]/5 text-ink-600">
                   {t.source}:{' '}
                   <a
                     href={item.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-brand-800 underline decoration-brand-100 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+                    class="text-brand-800 underline decoration-paper-300 hover:text-brand-600"
                   >
                     {item.source}
                     <NewWindowHint locale={locale} />
                   </a>
                 </p>
-                <h3 class="mb-3 mt-2 font-display text-[24px] leading-8 text-brand-900">{item[locale]}</h3>
+                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-brand-900">
+                  {item[locale]}
+                </h3>
                 <a
                   href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] font-medium text-brand-800 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
                 >
                   {t.readMore}
                 </a>
@@ -214,7 +223,7 @@ const heroAlt =
       <p class="mt-10 text-center">
         <a
           href={localizePath('/noticias/', locale)}
-          class="inline-flex min-h-11 items-center font-sans text-[15px] font-semibold text-brand-800 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-brand-800 hover:text-brand-600"
         >
           {t.allNews}
         </a>
@@ -222,23 +231,23 @@ const heroAlt =
     </div>
   </section>
 
-  <section class="px-[var(--page-gutter)] py-16" aria-labelledby="definitions-heading">
-    <div class="mx-auto grid max-w-content gap-8 lg:grid-cols-2">
+  <section class="px-[var(--page-gutter)] py-[72px]" aria-labelledby="definitions-heading">
+    <div class="mx-auto grid max-w-content gap-10 lg:grid-cols-2">
       <h2 id="definitions-heading" class="sr-only">{locale === 'en' ? 'Definitions' : 'Definiciones'}</h2>
-      <div class="rounded-[6px] border border-paper-300 bg-paper-100 p-6">
-        <h3 class="mb-3 mt-0 font-display text-[24px] leading-8 text-brand-900">{t.numismaticsTitle}</h3>
-        <p class="m-0 font-serif text-[17px] leading-7 text-ink-900">{t.numismaticsBody}</p>
+      <div>
+        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900">{t.numismaticsTitle}</h3>
+        <p class="m-0 text-[17px]/7 text-ink-900">{t.numismaticsBody}</p>
       </div>
-      <div class="rounded-[6px] border border-paper-300 bg-paper-100 p-6">
-        <h3 class="mb-3 mt-0 font-display text-[24px] leading-8 text-brand-900">{t.notaphilyTitle}</h3>
-        <p class="m-0 font-serif text-[17px] leading-7 text-ink-900">{t.notaphilyBody}</p>
+      <div>
+        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900">{t.notaphilyTitle}</h3>
+        <p class="m-0 text-[17px]/7 text-ink-900">{t.notaphilyBody}</p>
       </div>
-      <div class="rounded-[6px] border border-paper-300 bg-brand-100 p-8 lg:col-span-2">
-        <h3 class="mb-3 mt-0 font-display text-[24px] leading-8 text-brand-900">{t.newsletterTitle}</h3>
-        <p class="mb-6 mt-0 font-serif text-[17px] leading-7 text-ink-900">{t.newsletterBody}</p>
+      <div class="rounded-[6px] border border-paper-300 bg-paper-100 p-8 lg:col-span-2">
+        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-brand-900">{t.newsletterTitle}</h3>
+        <p class="mb-6 mt-0 text-[17px]/7 text-ink-600">{t.newsletterBody}</p>
         <form class="flex flex-col gap-3 sm:flex-row sm:items-end" action={localizePath('/contacto/', locale)} method="get">
           <div class="min-w-0 flex-1">
-            <label class="mb-2 block font-sans text-[13px] font-semibold tracking-[0.08em] text-ink-600" for="newsletter-email">
+            <label class="mb-2 block font-sans text-[13px] font-medium tracking-[0.08em] text-ink-600" for="newsletter-email">
               {t.emailLabel}
             </label>
             <input
@@ -248,12 +257,12 @@ const heroAlt =
               required
               autocomplete="email"
               placeholder={t.emailPlaceholder}
-              class="box-border w-full min-h-12 rounded-[6px] border border-paper-300 bg-paper-50 px-4 font-sans text-[16px] text-ink-900 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+              class="box-border w-full min-h-12 rounded-[6px] border border-paper-300 bg-paper-50 px-4 font-sans text-[16px] text-ink-900"
             />
           </div>
           <button
             type="submit"
-            class="min-h-12 cursor-pointer rounded-[6px] border-0 bg-brand-800 px-7 font-sans text-[15px] font-semibold text-paper-50 hover:bg-brand-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-brand-600"
+            class="min-h-12 cursor-pointer rounded-[6px] border-0 bg-brand-800 px-7 font-sans text-[15px] text-paper-50 hover:bg-brand-900"
           >
             {t.subscribe}
           </button>

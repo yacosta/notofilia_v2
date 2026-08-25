@@ -32,18 +32,18 @@ const enUrl = pathname.startsWith('/en')
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content="max-image-preview:large" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="es" href={esUrl} />
     <link rel="alternate" hreflang="en" href={enUrl} />
     <link rel="alternate" hreflang="x-default" href={esUrl} />
-    <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'es_ES'} />
-    <meta property="og:locale:alternate" content={locale === 'en' ? 'es_ES' : 'en_US'} />
+    <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'es'} />
+    <meta property="og:locale:alternate" content={locale === 'en' ? 'es' : 'en_US'} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="m-0 min-h-full bg-paper-50 font-serif text-ink-900">
+  <body class="m-0 min-h-full bg-paper-50 font-serif text-[17px]/7 text-ink-900">
     <SkipLink locale={locale} />
     <Header locale={locale} pathname={pathname} />
     <slot />

@@ -34,6 +34,7 @@ export const copy = {
   es: {
     skip: 'Saltar al contenido principal',
     brandTag: 'Numismática y Notafilia',
+    searchLabel: 'Buscar en la colección',
     navLabel: 'Navegación principal',
     langLabel: 'Idioma',
     langEs: 'ES — Español',
@@ -73,7 +74,6 @@ export const copy = {
     emailLabel: 'Correo electrónico',
     emailPlaceholder: 'su@correo.com',
     subscribe: 'Suscríbase',
-    searchLabel: 'Buscar en la colección',
     searchPlaceholder: 'Buscar billetes, monedas, guías…',
     searchSubmit: 'Buscar',
     reportError: 'Reportar un error',
@@ -96,7 +96,8 @@ export const copy = {
   },
   en: {
     skip: 'Skip to main content',
-    brandTag: 'Banknotes and Numismatics',
+    brandTag: 'Numismatics and Notaphily',
+    searchLabel: 'Search the collection',
     navLabel: 'Primary navigation',
     langLabel: 'Language',
     langEs: 'ES — Spanish',
@@ -136,7 +137,6 @@ export const copy = {
     emailLabel: 'Email address',
     emailPlaceholder: 'you@email.com',
     subscribe: 'Subscribe',
-    searchLabel: 'Search the collection',
     searchPlaceholder: 'Search banknotes, coins, guides…',
     searchSubmit: 'Search',
     reportError: 'Report an error',
