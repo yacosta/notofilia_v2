@@ -17,32 +17,44 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
+const hero =
+  locale === 'en'
+    ? {
+        src: '/images/catalog/philippines/hero-philippines.jpg',
+        width: 1168,
+        height: 784,
+      }
+    : {
+        src: '/images/catalog/philippines/hero-filipinas.jpg',
+        width: 1712,
+        height: 1152,
+      };
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_12%] [filter:contrast(1.08)_brightness(0.88)_saturate(1.05)]"
-        src="/images/catalog/philippines/hero-map.jpg"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        src={hero.src}
         alt={t.heroAlt}
-        width="1168"
-        height="784"
+        width={hero.width}
+        height={hero.height}
         fetchpriority="high"
         decoding="async"
       />
       <div
         class="absolute inset-0"
-        style="background:radial-gradient(ellipse 88% 70% at 50% 58%, rgba(10,10,9,0.18) 0%, rgba(10,10,9,0.55) 58%, rgba(6,6,5,0.9) 100%);"
+        style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
       >
       </div>
       <div
         class="absolute inset-0"
-        style="background:linear-gradient(180deg, rgba(6,6,5,0.22) 0%, rgba(6,6,5,0.08) 18%, rgba(6,6,5,0.12) 48%, rgba(6,6,5,0.72) 78%, rgba(6,6,5,0.94) 100%);"
+        style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
       >
       </div>
       <div
-        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-20 md:min-h-[64vh] md:pb-16"
+        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(42vh,22rem)] md:min-h-[64vh] md:pb-16"
       >
         <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
           {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
