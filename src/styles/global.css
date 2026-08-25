@@ -43,6 +43,7 @@
 
 :root {
   --page-gutter: clamp(1.25rem, 5vw, 2.5rem);
+  --chrome-gutter: clamp(1.25rem, 2.5vw, 2rem);
 }
 
 html,

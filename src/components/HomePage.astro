@@ -7,6 +7,7 @@ import {
   localizePath,
   milestones,
   news,
+  SERIES_PATH,
   statsLine,
   type Locale,
 } from '../lib/site';
@@ -70,13 +71,13 @@ const heroAlt =
       </p>
       <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
         <a
-          href={localizePath('/coleccion/colombia/', locale)}
+          href={localizePath(SERIES_PATH, locale)}
           class="inline-flex min-h-12 items-center justify-center rounded-[2px] bg-[#e7ddc4] px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-[#0a0a09] no-underline hover:bg-[#d8d2cd]"
         >
           {t.heroPrimary}
         </a>
         <a
-          href={localizePath('/coleccion/colombia/', locale)}
+          href={localizePath(SERIES_PATH, locale)}
           class="inline-flex min-h-12 items-center justify-center rounded-[2px] border border-[#e7ddc4] px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-[#e7ddc4] no-underline hover:bg-[#e7ddc41a]"
         >
           {t.heroSecondary}
@@ -143,7 +144,7 @@ const heroAlt =
       </ul>
       <p class="mt-10 text-center">
         <a
-          href={localizePath('/coleccion/colombia/', locale)}
+          href={localizePath(SERIES_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
           {t.heroSecondary}

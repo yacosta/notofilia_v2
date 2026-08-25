@@ -1,5 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
-import { catalogNoteSlugs, dedicatedCatalogPaths } from '../data/philippines-victory-66';
+import { catalogNoteSlugs, dedicatedCatalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
 
@@ -78,8 +78,8 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
-      'Imágenes detalladas, referencias de catálogo e historias monetarias de Colombia, Estados Unidos, Puerto Rico y el mundo.',
-    heroPrimary: 'Ver la colección de Colombia',
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, Colombia, Estados Unidos, Puerto Rico y el mundo.',
+    heroPrimary: 'Ver el catálogo de Filipinas',
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
     browseTitle: 'Explorar Colección Virtual',
@@ -143,8 +143,8 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
-      'Detailed images, catalog references, and monetary histories from around the world.',
-    heroPrimary: 'See the Colombia collection',
+      'Detailed images, catalog references, and monetary histories from the Philippines, Colombia, the United States, Puerto Rico, and beyond.',
+    heroPrimary: 'See the Philippines catalog',
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
     browseTitle: 'Explore Virtual Collection',
@@ -196,7 +196,7 @@ export const copy = {
 } as const;
 
 export const primaryNav = [
-  { href: '/coleccion/colombia/', es: 'Colección', en: 'Collection' },
+  { href: SERIES_PATH, es: 'Colección', en: 'Collection' },
   { href: '/blog/', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { href: '/noticias/', es: 'Noticias numismáticas', en: 'Numismatic news' },
   { href: '/glosario/', es: 'Glosario', en: 'Glossary' },
@@ -206,6 +206,11 @@ export const primaryNav = [
 ] as const;
 
 export const collections = [
+  {
+    href: SERIES_PATH,
+    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 5 y 20 pesos.' },
+    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 5, and 20 pesos.' },
+  },
   {
     href: '/coleccion/numismatica/',
     es: { title: 'Numismática', description: 'Catálogo de monedas: oro colonial, cobres de necesidad y piezas de comercio.' },
@@ -237,11 +242,6 @@ export const collections = [
     en: { title: 'Ecuador', description: 'Documented sucres from the virtual collection.' },
   },
   {
-    href: '/coleccion/filipinas/',
-    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 5 y 20 pesos.' },
-    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 5, and 20 pesos.' },
-  },
-  {
     href: '/coleccion/polimero-mundial/',
     es: { title: 'Billetes de polímero', description: 'Catálogo mundial de sustratos Guardian, Safeguard e híbridos.' },
     en: { title: 'Polymer banknotes', description: 'World catalog of Guardian, Safeguard, and hybrid substrates.' },
@@ -269,7 +269,7 @@ export type NewsItem = ArticleItem & {
 
 export const milestones: MilestoneItem[] = [
   {
-    href: '/coleccion/filipinas/',
+    href: SERIES_PATH,
     es: {
       title: 'Filipinas · Serie Victory n.º 66',
       description: 'Primera vitrina del catálogo: 1, 5 y 20 pesos del Commonwealth, alineados por denominación.',
@@ -286,8 +286,8 @@ export const articles: ArticleItem[] = [];
 export const news: NewsItem[] = [];
 
 export const footerExplore = [
+  { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: '/coleccion/colombia/', es: 'Colombia', en: 'Colombia' },
-  { href: '/coleccion/filipinas/', es: 'Filipinas', en: 'Philippines' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -325,6 +325,6 @@ export const stubPages = [
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
-export { dedicatedCatalogPaths };
+export { dedicatedCatalogPaths, SERIES_PATH };
 
 export const STATS = collectionStats();

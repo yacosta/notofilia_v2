@@ -4,6 +4,7 @@ import { localizePath, type Locale } from '../../lib/site';
 import {
   seriesCopy,
   seriesSources,
+  seriesPath,
   victoryNotes,
   notePath,
 } from '../../data/philippines-victory-66';
@@ -15,12 +16,23 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
-const pathname = locale === 'en' ? '/en/coleccion/filipinas/' : '/coleccion/filipinas/';
+const pathname = seriesPath(locale);
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+              {locale === 'en' ? 'Home' : 'Inicio'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
+        </ol>
+      </nav>
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
       </p>

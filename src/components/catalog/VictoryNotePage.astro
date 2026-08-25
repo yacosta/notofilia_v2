@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import { localizePath, SERIES_PATH, type Locale } from '../../lib/site';
 import {
   notePageCopy,
   seriesCopy,
@@ -33,7 +33,7 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
           <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/coleccion/filipinas/', locale)}>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(SERIES_PATH, locale)}>
               {t.collectionLink}
             </a>
           </li>
