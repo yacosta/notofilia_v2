@@ -1,0 +1,9 @@
+---
+import VictoryNotePage from '../../../../components/catalog/VictoryNotePage.astro';
+import { noteById } from '../../../../data/philippines-victory-66';
+
+const note = noteById('2-pesos');
+if (!note) throw new Error('Missing 2-pesos catalog note');
+---
+
+<VictoryNotePage locale="es" note={note} />
