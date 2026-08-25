@@ -1,31 +1,31 @@
-# Notofilia brand identity
+# Notofilia visual system (v2 homepage)
 
-Source of truth for the Astro + Tailwind rebuild. Adapted from Notofilia Brand Identity v1.0 (August 2026).
+Source of truth for the current Astro + Tailwind homepage. This pass tracks the **live notofilia.com** museum-case palette, not Brand Identity v1.0.
 
-## Essence
+## Current direction
 
-**El archivo vivo del papel moneda.** One word: Curatorial.
+v2 currently matches the live site: dark case, cream type, gold-light accents. The paper / intaglio-green identity (warm ivory grounds, `brand-950` `#0B2E1F`, Fraunces / Source Serif 4 / Inter / IBM Plex Mono) is **deferred**.
 
-Spanish first. Nothing is for sale. The interface stays quiet so the artifacts carry the color.
-
-## Tokens
+## Live tokens
 
 Use the Tailwind v4 theme in `src/styles/global.css`:
 
-- Intaglio green: `brand-950` `#0B2E1F` · `brand-800` `#175239` (primary) · `brand-100` `#DEEFE6`
-- Escudo gold: `gold-700` `#8C6A1D` (text on light) · `gold-500` `#C9A227` (decorative only)
-- Paper & ink: `paper-50` `#FAF7F0` · `paper-100` `#F2EDE0` · `paper-300` `#DDD4BF` · `ink-900` `#1C1A15` · `ink-600` `#5C574B`
-- Seal red: `seal-700` `#9B2C2C` (errors / specimen emphasis)
+- Ground: `bg` `#0A0A09` · `panel` `#1C1A15` · `ink` `#332E22`
+- Type: `cream` `#E7DDC4` · `cream-dim` `#D8D2CD` · `muted` `#B7AB8A`
+- Soft / line: `cream-soft` `#D8CFB8A6` · `cream-faint` `#E7DEC98C` · `line` `#E7DEC924` · `line-strong` `#E7DEC940` · `line-input` `#E7DEC959`
+- Gold: `gold` `#8A6D3B` · `gold-deep` `#6B521F` · `gold-dark` `#5C4E33` · `gold-light` `#CBBF9D`
 
-Type: Fraunces (display), Source Serif 4 (body), Inter (UI), IBM Plex Mono (stats, catalog data).
+Type: Montenegrin Gothic One (display wordmark and titles), Source Sans 3 (body and UI). Local WOFF2 files live in `public/fonts/`.
 
 ## Wordmark
 
-**NOTOFILIA** in the display serif. Running text: Notofilia. Discipline: *notafilia*. Lockup: NOTOFILIA — Numismática y Notafilia.
+**NOTOFILIA** in Montenegrin Gothic One. Running text: Notofilia. Discipline: *notafilia*. Lockup: NOTOFILIA — Numismática y Notafilia.
 
 ## Do / don’t
 
-- Warm ivory backgrounds, never pure white or cold gray.
-- Mono + middle dots for the signature stat line.
-- Gold-500 never as text on light.
+- Dark page and footer. Cream / cream-dim / gold-light on dark — not gold-500 yellow as body text.
+- Primary actions: cream fill, dark (`bg`) text. Secondary: cream outline on dark.
+- Header: translucent dark bar, cream nav, cream/ES–EN pill (active pill is cream on dark text).
+- Footer stays on `bg` with cream-soft links — not brand-950 green.
+- Mono + middle dots may still appear in the signature stat line, but the UI stack is Source Sans 3, not IBM Plex Mono.
 - Non-commercial disclaimer in every footer.

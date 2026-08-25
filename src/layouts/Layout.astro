@@ -34,6 +34,8 @@ const enUrl = pathname.startsWith('/en')
     <meta name="description" content={description} />
     <meta name="robots" content="max-image-preview:large" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/MontenegrinGothicOne-Regular.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSans3-Variable-Latin.woff2" crossorigin />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="es" href={esUrl} />
     <link rel="alternate" hreflang="en" href={enUrl} />
@@ -43,7 +45,7 @@ const enUrl = pathname.startsWith('/en')
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="m-0 min-h-full bg-paper-50 font-serif text-[17px]/7 text-ink-900">
+  <body class="m-0 min-h-full bg-bg font-serif text-[17px]/7 text-cream">
     <SkipLink locale={locale} />
     <Header locale={locale} pathname={pathname} />
     <slot />
