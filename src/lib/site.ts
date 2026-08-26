@@ -1,4 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
+import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -116,7 +117,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
-      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, Colombia, Estados Unidos, Puerto Rico y el mundo.',
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, Colombia, Estados Unidos, Puerto Rico y el mundo.',
     heroPrimary: 'Ver el catálogo de Filipinas',
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
@@ -188,7 +189,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
-      'Detailed images, catalog references, and monetary histories from the Philippines, Colombia, the United States, Puerto Rico, and beyond.',
+      'Detailed images, catalog references, and monetary histories from the Philippines, China, Colombia, the United States, Puerto Rico, and beyond.',
     heroPrimary: 'See the Philippines catalog',
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
@@ -247,6 +248,11 @@ export const collections = [
     href: SERIES_PATH,
     es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.' },
     en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
+  },
+  {
+    href: CHINA_PATH,
+    es: { title: 'China', description: 'Del jiaozi Song al renminbi: historia del papel y los conmemorativos de polímero.' },
+    en: { title: 'China', description: 'From Song jiaozi to the renminbi: paper history and polymer commemoratives.' },
   },
   {
     href: '/coleccion/numismatica/',
@@ -349,6 +355,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Fourth catalog case: colonial and nineteenth-century transition issues.',
     },
   },
+  {
+    href: CHINA_PATH,
+    es: {
+      title: 'China · Del jiaozi al polímero',
+      description: 'Quinta vitrina del catálogo: invención del papel moneda, emisiones Qing y republicanas, renminbi y polímero.',
+    },
+    en: {
+      title: 'China · From jiaozi to polymer',
+      description: 'Fifth catalog case: the invention of paper money, Qing and Republican issues, the renminbi, and polymer.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -357,6 +374,7 @@ export const news: NewsItem[] = [];
 
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
+  { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
@@ -380,6 +398,7 @@ export const footerAbout = [
 /** Public content routes. Adding a row increments páginas in statsLine (see SEED_CONTENT_SLUGS). */
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
+  { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
@@ -402,6 +421,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
+  CHINA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

@@ -1,3 +1,4 @@
+import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
 import { SERIES_PATH } from '../data/philippines-victory-66';
@@ -49,6 +50,18 @@ export const megaNav: NavNode[] = [
         es: 'Filipinas',
         en: 'Philippines',
         href: SERIES_PATH,
+      },
+      {
+        id: 'china',
+        es: 'China',
+        en: 'China',
+        href: CHINA_PATH,
+        children: [
+          { id: 'china-jiaozi', es: 'Papel moneda histórico', en: 'Historical paper money', href: `${CHINA_PATH}#jiaozi` },
+          { id: 'china-imperio', es: 'Ming, Qing y República', en: 'Ming, Qing, and the Republic', href: `${CHINA_PATH}#imperio-republica` },
+          { id: 'china-renminbi', es: 'Renminbi', en: 'Renminbi', href: `${CHINA_PATH}#renminbi` },
+          { id: 'china-polimero', es: 'Polímero', en: 'Polymer', href: `${CHINA_PATH}#polimero` },
+        ],
       },
       {
         id: 'puerto-rico',

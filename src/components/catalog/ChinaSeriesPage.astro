@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, type Locale } from '../../lib/site';
+import {
+  chapterHref,
+  chinaChapters,
+  seriesCopy,
+  seriesPath,
+  seriesSources,
+} from '../../data/china';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = seriesCopy[locale];
+const pathname = seriesPath(locale);
+const hero = {
+  src: '/images/catalog/china/hero-china.jpg',
+  width: 1168,
+  height: 784,
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
+      <img
+        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        src={hero.src}
+        alt={t.heroAlt}
+        width={hero.width}
+        height={hero.height}
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div
+        class="absolute inset-0"
+        style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
+      >
+      </div>
+      <div
+        class="absolute inset-0"
+        style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
+      >
+      </div>
+      <div
+        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(42vh,22rem)] md:min-h-[64vh] md:pb-16"
+      >
+        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
+          {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
+        </p>
+        <h1
+          id="series-heading"
+          class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]"
+        >
+          <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.kicker}</span>
+          <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.title}</span>
+        </h1>
+      </div>
+    </section>
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+              {locale === 'en' ? 'Home' : 'Inicio'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
+        </ol>
+      </nav>
+
+      <div class="w-full text-[17px]/7 text-cream">
+        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <section class="mt-16" aria-labelledby="holdings-heading">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
+          aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
+        >
+          {
+            chinaChapters.map((chapter) => (
+              <li class="min-w-0">
+                <a
+                  href={chapterHref(chapter.id)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                      {chapter.years[locale]}
+                    </span>
+                  </div>
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {chapter.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.eraLabel} · {chapter.years[locale]}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <div class="mt-16 space-y-12">
+        {
+          chinaChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={localizePath('/', locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
