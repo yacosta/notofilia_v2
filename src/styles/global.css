@@ -172,7 +172,7 @@ body.mega-drawer-lock {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 8px;
+  padding: 10px 28px 10px 8px;
   color: inherit;
   text-decoration: none;
   text-align: center;
@@ -180,11 +180,12 @@ body.mega-drawer-lock {
 
 .mega-item-title {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1;
+  letter-spacing: 0.05em;
+  line-height: 1.25;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 .mega-item-toggle {
@@ -286,164 +287,63 @@ body.mega-drawer-lock {
 }
 
 .mega-panel-inner {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  gap: 0;
-  min-height: 280px;
-  padding: 12px;
+  display: block;
+  min-height: 0;
+  padding: 12px 20px 20px;
 }
 
-.mega-card-list {
-  display: flex;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
+.mega-tree {
   list-style: none;
   margin: 0;
   padding: 0;
-  min-width: 0;
+  columns: 2;
+  column-gap: 2.5rem;
 }
 
-.mega-card {
-  position: relative;
-  width: 33.33%;
-  min-height: 228px;
-  padding: 10px 16px;
-  text-align: center;
+.mega-tree--2,
+.mega-tree--3 {
+  columns: 1;
+  margin: 0 0 8px 12px;
+  padding-left: 12px;
+  border-left: 1px solid color-mix(in srgb, var(--color-bg) 16%, transparent);
 }
 
-.mega-card:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  border-right: 1px solid color-mix(in srgb, var(--color-bg) 16%, transparent);
+.mega-tree-item {
+  break-inside: avoid;
 }
 
-.mega-card--small {
-  width: 33.33%;
-  min-height: 114px;
+.mega-tree-row {
   display: flex;
   align-items: center;
-  text-align: left;
-}
-
-.mega-card-link {
-  display: flex;
-  height: 100%;
   min-height: 44px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  color: inherit;
-  text-decoration: none;
+  gap: 4px;
 }
 
-.mega-card--small .mega-card-link {
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 100%;
-}
-
-.mega-card-media {
-  display: block;
-  width: 100%;
-  max-width: 220px;
-  height: 132px;
-  overflow: hidden;
-}
-
-.mega-card:has(.mega-card-links) {
-  min-height: 280px;
-}
-
-.mega-card:has(.mega-card-links) .mega-card-media {
-  height: 96px;
-}
-
-.mega-card--small .mega-card-media {
-  width: 72px;
-  height: 72px;
-  flex: none;
-}
-
-.mega-card-media img,
-.mega-banner img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.mega-card-title {
-  display: block;
-  margin-top: 10px;
+.mega-tree-label {
+  flex: 1 1 auto;
   font-family: var(--font-sans);
   font-size: 15px;
   font-weight: 700;
   line-height: 1.3;
+  color: inherit;
 }
 
-.mega-card-links {
-  list-style: none;
-  margin: 8px 0 0;
-  padding: 0;
-  text-align: center;
-}
-
-.mega-card-links a {
-  display: inline-flex;
-  min-height: 32px;
-  align-items: center;
-  color: var(--color-gold-deep);
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 600;
+.mega-tree-label--link {
   text-decoration: none;
 }
 
-.mega-card-links a:hover {
-  color: var(--color-bg);
+.mega-tree-label--link:hover,
+.mega-tree-label--link:focus-visible {
   text-decoration: underline;
 }
 
-.mega-banner {
-  position: relative;
-  display: block;
-  flex: 0 0 248px;
-  width: 248px;
-  min-height: 228px;
-  margin: 10px 10px 10px 0;
-  overflow: hidden;
-  color: var(--color-cream);
-  text-decoration: none;
+.mega-tree-toggle {
+  position: static;
+  transform: none;
 }
 
-.mega-banner-copy {
-  position: absolute;
-  inset: auto 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 16px;
-  background: linear-gradient(180deg, transparent, rgba(10, 10, 9, 0.88));
-}
-
-.mega-banner-title {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  line-height: 1.25;
-}
-
-.mega-banner-cta {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.mega-branch-panel {
+  color: inherit;
 }
 
 .mega-backdrop {
@@ -575,54 +475,19 @@ body.mega-drawer-lock {
     letter-spacing: 0.08em;
   }
 
-  .mega-card-list {
-    display: block;
+  .mega-tree {
+    columns: 1;
   }
 
-  .mega-card,
-  .mega-card--small {
-    width: 100%;
-    min-height: 0;
+  .mega-tree--2,
+  .mega-tree--3 {
+    margin-left: 0;
+    border-left-color: var(--color-line);
+  }
+
+  .mega-tree-row {
     padding: 0 16px;
-    text-align: left;
-  }
-
-  .mega-card:not(:last-child)::after {
-    content: none;
-  }
-
-  .mega-card-link {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 12px;
-    min-height: 72px;
-    padding: 12px 0;
     border-bottom: 1px solid var(--color-line);
-  }
-
-  .mega-card-media,
-  .mega-card--small .mega-card-media {
-    width: 64px;
-    height: 64px;
-    flex: none;
-  }
-
-  .mega-card-title {
-    margin-top: 0;
-    color: var(--color-cream);
-  }
-
-  .mega-card-links {
-    text-align: left;
-    padding-bottom: 8px;
-  }
-
-  .mega-card-links a {
-    color: var(--color-gold-light);
-  }
-
-  .mega-banner {
-    display: none;
   }
 
   .mega-drawer-search {

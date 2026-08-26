@@ -211,7 +211,7 @@ export const copy = {
   },
 } as const;
 
-export { megaNav, primaryNav, type MegaItem } from './mega-nav';
+export { megaNav, primaryNav, type NavNode } from './mega-nav';
 
 export const collections = [
   {

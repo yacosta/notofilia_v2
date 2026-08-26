@@ -1,0 +1,60 @@
+---
+import { localizePath, type Locale } from '../lib/site';
+import type { NavNode } from '../lib/mega-nav';
+
+interface Props {
+  nodes: NavNode[];
+  locale: Locale;
+  openSubmenu: string;
+  depth?: number;
+}
+
+const { nodes, locale, openSubmenu, depth = 1 } = Astro.props;
+
+function hrefFor(node: NavNode) {
+  if (!node.href) return undefined;
+  return localizePath(node.href, locale);
+}
+---
+
+<ul class:list={['mega-tree', `mega-tree--${depth}`]}>
+  {
+    nodes.map((node) => {
+      const label = node[locale];
+      const href = hrefFor(node);
+      const panelId = `mega-branch-${node.id}`;
+      const nested = node.children && node.children.length > 0;
+      return (
+        <li class:list={['mega-tree-item', nested && 'has-branch']} data-mega-branch={nested ? '' : undefined}>
+          <div class="mega-tree-row">
+            {href ? (
+              <a class="mega-tree-label mega-tree-label--link" href={href}>
+                {label}
+              </a>
+            ) : (
+              <span class="mega-tree-label">{label}</span>
+            )}
+            {nested && (
+              <button
+                type="button"
+                class="mega-item-toggle mega-tree-toggle"
+                data-mega-submenu-toggle
+                data-menu-title={label}
+                aria-expanded="false"
+                aria-controls={panelId}
+                aria-label={openSubmenu.replace('{menuTitle}', label)}
+              >
+                <span class="mega-item-chevron" aria-hidden="true"></span>
+              </button>
+            )}
+          </div>
+          {nested && (
+            <div class="mega-branch-panel" id={panelId} data-mega-panel hidden>
+              <Astro.self nodes={node.children!} locale={locale} openSubmenu={openSubmenu} depth={depth + 1} />
+            </div>
+          )}
+        </li>
+      );
+    })
+  }
+</ul>
