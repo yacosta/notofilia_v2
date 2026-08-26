@@ -14,6 +14,9 @@ export const CONTACT_URL = `${SITE_URL}/contacto/`;
 export const CREDIT = 'Notofilia';
 export const CREATOR = 'Yezid Acosta';
 
+/** Mid-range of the 30–50% signature guidance: readable, not a veil over the piece. */
+export const SIGNATURE_OPACITY = 0.4;
+
 export function copyrightYear(now = new Date()) {
   return now.getUTCFullYear();
 }
@@ -27,26 +30,28 @@ export function imageDescription(relativePath) {
 }
 
 /**
- * Diagonal repeating mark so a corner crop does not remove it.
- * Dual-tone text stays visible on both white studio grounds and dark notes.
+ * Subtle bottom-right text signature at SIGNATURE_OPACITY.
+ * Masters stay in catalog-src/; only this web-sized copy is published.
  */
-export function watermarkSvg({ width, height, mark = `${CREDIT.toUpperCase()} · notofilia.com` }) {
+export function watermarkSvg({
+  width,
+  height,
+  mark = `${CREDIT} · notofilia.com`,
+  opacity = SIGNATURE_OPACITY,
+}) {
   const shortest = Math.min(width, height);
-  const fontSize = Math.max(16, Math.round(shortest * 0.042));
-  const tileW = Math.max(320, Math.round(fontSize * mark.length * 0.64));
-  const tileH = Math.max(96, Math.round(fontSize * 3.4));
-  const baseline = Math.round(tileH * 0.62);
+  const fontSize = Math.max(12, Math.min(22, Math.round(shortest * 0.028)));
+  const pad = Math.max(10, Math.round(shortest * 0.025));
+  const x = width - pad;
+  const y = height - pad;
   const escaped = escapeXml(mark);
   const font = 'DejaVu Sans, Liberation Sans, Arial, sans-serif';
+  const fillA = opacity.toFixed(2);
+  const strokeA = Math.min(0.5, opacity * 0.85).toFixed(2);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-  <defs>
-    <pattern id="notafilia-wm" patternUnits="userSpaceOnUse" width="${tileW}" height="${tileH}" patternTransform="rotate(-32)">
-      <text x="10" y="${baseline}" font-family="${font}" font-size="${fontSize}" font-weight="600" fill="rgba(10,10,9,0.22)" stroke="rgba(231,221,196,0.2)" stroke-width="0.8">${escaped}</text>
-    </pattern>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#notafilia-wm)"/>
+  <text x="${x}" y="${y}" text-anchor="end" font-family="${font}" font-size="${fontSize}" font-weight="600" fill="rgba(10,10,9,${fillA})" stroke="rgba(231,221,196,${strokeA})" stroke-width="0.6">${escaped}</text>
 </svg>`;
 }
 

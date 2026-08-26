@@ -6,6 +6,7 @@ import { describe, it } from 'node:test';
 import sharp from 'sharp';
 import {
   CREATOR,
+  SIGNATURE_OPACITY,
   collectImages,
   copyrightNotice,
   imageDescription,
@@ -21,11 +22,16 @@ describe('catalog watermark helpers', () => {
     assert.deepEqual(outputDimensions(3600, 1800, 1800), { width: 1800, height: 900 });
   });
 
-  it('embeds rights text in the SVG tile and XMP packet', () => {
+  it('places a bottom-right signature at 30–50% opacity and embeds XMP rights', () => {
     const svg = watermarkSvg({ width: 400, height: 200 });
-    assert.match(svg, /NOTOFILIA/);
+    assert.ok(SIGNATURE_OPACITY >= 0.3 && SIGNATURE_OPACITY <= 0.5);
+    assert.match(svg, /Notofilia/);
     assert.match(svg, /notofilia\.com/);
-    assert.match(svg, /patternTransform="rotate\(-32\)"/);
+    assert.match(svg, /text-anchor="end"/);
+    assert.match(svg, new RegExp(`rgba\\(10,10,9,${SIGNATURE_OPACITY.toFixed(2)}\\)`));
+    assert.match(svg, /x="390"/);
+    assert.match(svg, /y="190"/);
+    assert.doesNotMatch(svg, /patternTransform/);
 
     const xmp = rightsXmp({ relativePath: 'philippines/1-peso-front.jpg', year: 2026 });
     assert.match(xmp, new RegExp(CREATOR));
@@ -96,8 +102,12 @@ describe('processCatalogImage', () => {
       assert.match(xmpText, /Iptc4xmpCore/);
       assert.match(xmpText, /fixtures\/note\.jpg/);
 
-      const [srcStat, destStat] = await Promise.all([sharp(src).stats(), sharp(dest).stats()]);
-      assert.notEqual(srcStat.channels[0].mean, destStat.channels[0].mean);
+      const region = { left: 1600, top: 820, width: 180, height: 70 };
+      const [srcCorner, destCorner] = await Promise.all([
+        sharp(src).resize(1800, 900).extract(region).raw().toBuffer(),
+        sharp(dest).extract(region).raw().toBuffer(),
+      ]);
+      assert.notEqual(Buffer.compare(srcCorner, destCorner), 0);
     } finally {
       await rm(dir, { recursive: true, force: true });
     }
