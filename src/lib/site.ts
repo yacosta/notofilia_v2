@@ -2,7 +2,7 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
-import { catalogNoteSlugs as puertoRicoNoteSlugs, dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 
 export type Locale = 'es' | 'en';
 
@@ -23,7 +23,6 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of philippinesNoteSlugs) slugs.add(slug);
-  for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -305,11 +304,11 @@ export const milestones: MilestoneItem[] = [
     href: PUERTO_RICO_PATH,
     es: {
       title: 'Puerto Rico · Emisiones coloniales y de transición',
-      description: 'Tercera vitrina del catálogo: vale de 1813, Junta Central de 1869 y Billete de Canje de 1895.',
+      description: 'Tercera vitrina del catálogo: emisiones coloniales y de transición del siglo XIX.',
     },
     en: {
       title: 'Puerto Rico · Colonial and transition issues',
-      description: 'Third catalog case: the 1813 vale, the 1869 Central Junta, and the 1895 exchange note.',
+      description: 'Third catalog case: colonial and nineteenth-century transition issues.',
     },
   },
 ];

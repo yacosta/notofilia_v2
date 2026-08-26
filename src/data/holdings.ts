@@ -64,10 +64,6 @@ export const additions: Holding[] = [
   { id: 'ph-1944-2-pesos-f13317943', kind: 'banknote', country: 'PH' },
   { id: 'ph-1944-5-pesos-f00618071', kind: 'banknote', country: 'PH' },
   { id: 'ph-1944-20-pesos-f04661756', kind: 'banknote', country: 'PH' },
-  { id: 'pr-1813-25-pesos-21', kind: 'banknote', country: 'PR' },
-  { id: 'pr-1869-1500-pesos-32', kind: 'banknote', country: 'PR' },
-  { id: 'pr-1869-1-peso-13085', kind: 'banknote', country: 'PR' },
-  { id: 'pr-1895-1-peso-4546454', kind: 'banknote', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -76,10 +72,6 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'ph-victory-66-2-pesos-p95a' },
   { id: 'ph-victory-66-5-pesos-p96a' },
   { id: 'ph-victory-66-20-pesos-p98a' },
-  { id: 'pr-tesoreria-25-pesos-1813' },
-  { id: 'pr-junta-central-1500-pesos-1869' },
-  { id: 'pr-republica-cuba-1-peso-1869' },
-  { id: 'pr-billete-canje-1-peso-1895' },
 ];
 
 export type CollectionStats = {

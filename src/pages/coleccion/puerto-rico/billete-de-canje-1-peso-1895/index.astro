@@ -1,9 +1,0 @@
----
-import PuertoRicoNotePage from '../../../../components/catalog/PuertoRicoNotePage.astro';
-import { noteById } from '../../../../data/puerto-rico';
-
-const note = noteById('1-peso-1895');
-if (!note) throw new Error('Missing 1-peso-1895 catalog note');
----
-
-<PuertoRicoNotePage locale="es" note={note} />

@@ -53,32 +53,6 @@ export const megaNav: NavNode[] = [
         es: 'Puerto Rico',
         en: 'Puerto Rico',
         href: PUERTO_RICO_PATH,
-        children: [
-          {
-            id: 'pr-1813',
-            es: 'Tesorería Nacional',
-            en: 'National Treasury',
-            href: `${PUERTO_RICO_PATH}tesoreria-nacional-25-pesos-1813/`,
-          },
-          {
-            id: 'pr-1869-junta',
-            es: 'Junta Central',
-            en: 'Republican Junta',
-            href: `${PUERTO_RICO_PATH}junta-central-cuba-1869/`,
-          },
-          {
-            id: 'pr-1869-peso',
-            es: 'República de Cuba',
-            en: 'Republic of Cuba',
-            href: `${PUERTO_RICO_PATH}republica-de-cuba-1-peso-1869/`,
-          },
-          {
-            id: 'pr-1895',
-            es: 'Billete de Canje',
-            en: 'Exchange note',
-            href: `${PUERTO_RICO_PATH}billete-de-canje-1-peso-1895/`,
-          },
-        ],
       },
       { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },
       { id: 'polimero', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
