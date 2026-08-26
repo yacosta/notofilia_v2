@@ -65,6 +65,7 @@ export const additions: Holding[] = [
   { id: 'ph-1944-5-pesos-f00618071', kind: 'banknote', country: 'PH' },
   { id: 'ph-1944-20-pesos-f04661756', kind: 'banknote', country: 'PH' },
   { id: 'nl-1761-ducat-utrecht-4685927-012', kind: 'coin', country: 'NL' },
+  { id: 'cn-2000-100-yuan-j04445744', kind: 'banknote', country: 'CN' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -74,6 +75,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'ph-victory-66-5-pesos-p96a' },
   { id: 'ph-victory-66-20-pesos-p98a' },
   { id: 'nl-1761-ducat-utrecht-km7-4' },
+  { id: 'cn-2000-100-yuan-p902' },
 ];
 
 export type CollectionStats = {

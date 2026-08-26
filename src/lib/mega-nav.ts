@@ -1,3 +1,4 @@
+import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
@@ -50,6 +51,15 @@ export const megaNav: NavNode[] = [
         es: 'Filipinas',
         en: 'Philippines',
         href: SERIES_PATH,
+      },
+      {
+        id: 'china',
+        es: 'China',
+        en: 'China',
+        href: CHINA_PATH,
+        children: [
+          { id: 'china-100-yuan', es: '100 yuan · Milenio', en: '100 yuan · Millennium', href: `${CHINA_PATH}100-yuan/` },
+        ],
       },
       {
         id: 'puerto-rico',
