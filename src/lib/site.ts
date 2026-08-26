@@ -344,7 +344,7 @@ export const footerAbout = [
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
-  { path: 'coleccion/numismatica/colombia', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },

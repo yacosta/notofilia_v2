@@ -1,6 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 
-export const COLOMBIA_COINAGE_PATH = '/coleccion/numismatica/colombia/';
+export const COLOMBIA_COINAGE_PATH = '/coleccion/colombia-numismatica/';
 
 export type ColombiaCoinageChapterId = 'santa-fe' | 'independencia' | 'nueva-granada' | 'republica';
 
