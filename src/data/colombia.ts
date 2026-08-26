@@ -147,12 +147,7 @@ export const seriesCopy = {
       'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional. Hacia 1886–1887 el gobierno impuso el curso forzoso y apagó la emisión privada. Astrid Romero sitúa la liquidación del instituto en 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel y una inflación devastadora. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro.',
       'La Ley 25 de 1923, fruto de la Misión Kemmerer contratada por Pedro Nel Ospina, creó el Banco de la República con el monopolio de emitir la moneda legal. Los primeros billetes oficiales los grabó la American Bank Note Company. La convertibilidad en oro se perdió en 1931. Desde entonces el peso es emisión centralizada: series de circulación, especímenes y —en esta colección— errores de corte.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: Independencia, banca libre, Banco Nacional y Banco de la República. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
-    viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -170,12 +165,7 @@ export const seriesCopy = {
       'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born. Around 1886–1887 the government imposed forced legal tender and ended private issues. Astrid Romero places the institute’s liquidation in 1896. The Thousand Days’ War (1899–1902) set off another surge of paper and a devastating inflation. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso.',
       'Law 25 of 1923, the fruit of the Kemmerer Mission hired by Pedro Nel Ospina, created the Banco de la República with the monopoly of legal-tender issue. The first official notes were engraved by the American Bank Note Company. Gold convertibility ended in 1931. Since then the peso has been a centralized issue: circulation series, specimens, and — in this collection — cutting errors.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Four chapters in one row, left to right by period: Independence, free banking, Banco Nacional, and Banco de la República. Individual note pages will be published as they are documented, as in the Philippines case.',
-    viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },
@@ -183,8 +173,4 @@ export const seriesCopy = {
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${COLOMBIA_PATH}` : COLOMBIA_PATH;
-}
-
-export function chapterHref(id: ColombiaChapterId): string {
-  return `#${id}`;
 }

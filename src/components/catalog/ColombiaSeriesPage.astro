@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
-  chapterHref,
   colombiaChapters,
   seriesCopy,
   seriesPath,
@@ -90,42 +89,6 @@ const hero = {
           {t.coinageLink}
         </a>
       </p>
-
-      <section class="mt-16" aria-labelledby="holdings-heading">
-        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.holdingsTitle}
-        </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
-        >
-          {
-            colombiaChapters.map((chapter) => (
-              <li class="min-w-0">
-                <a
-                  href={chapterHref(chapter.id)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {chapter.years[locale]}
-                    </span>
-                  </div>
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {chapter.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {chapter.years[locale]}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
-      </section>
 
       <div class="mt-16 space-y-12">
         {
