@@ -1,12 +1,10 @@
 const desktopQuery = window.matchMedia('(min-width: 1024px)');
 
-/** Pause before opening so crossing the bar or list does not snap panels open. */
-const OPEN_DELAY_MS = 160;
-/** Extra pause for nested branches so you can move to a sibling option. */
-const NESTED_OPEN_DELAY_MS = 360;
+/** Pause before opening so crossing the bar does not snap panels open. */
+const OPEN_DELAY_MS = 140;
 /** Keep the open panel long enough to reach it, scroll it, or change items. */
-const CLOSE_DELAY_MS = 450;
-/** Faster swap once another item at the same level is already open. */
+const CLOSE_DELAY_MS = 700;
+/** Faster swap once another top-level item is already open. */
 const SWITCH_DELAY_MS = 80;
 
 function isDesktop() {
@@ -103,12 +101,13 @@ export function initMegaMenu(header: HTMLElement) {
     }, wait);
   }
 
-  function scheduleClose(item: HTMLElement) {
+  function scheduleCloseAll() {
     clearHoverTimer();
     hoverTimer = window.setTimeout(() => {
       hoverTimer = 0;
-      if (item.contains(document.activeElement)) return;
-      closeGroup([item]);
+      const openItemEl = topItems.find((item) => item.classList.contains('is-open'));
+      if (openItemEl?.contains(document.activeElement)) return;
+      closeAllMenus();
     }, CLOSE_DELAY_MS);
   }
 
@@ -154,14 +153,20 @@ export function initMegaMenu(header: HTMLElement) {
       item.addEventListener('pointerenter', () => {
         if (isDesktop() && panel) scheduleOpen(item, openDelay);
       });
-      item.addEventListener('pointerleave', () => {
-        if (isDesktop()) scheduleClose(item);
-      });
     }
   }
 
   for (const item of topItems) bindItem(item, true, OPEN_DELAY_MS);
-  for (const branch of branches) bindItem(branch, true, NESTED_OPEN_DELAY_MS);
+  // Nested branches stay collapsed until the chevron is clicked, so the
+  // list does not jump while you move or scroll to another option.
+  for (const branch of branches) bindItem(branch, false, OPEN_DELAY_MS);
+
+  header.addEventListener('pointerenter', () => {
+    if (isDesktop()) clearHoverTimer();
+  });
+  header.addEventListener('pointerleave', () => {
+    if (isDesktop()) scheduleCloseAll();
+  });
 
   drawerToggle.addEventListener('click', () => {
     setDrawer(!header.classList.contains('is-drawer-open'));

@@ -218,8 +218,9 @@ body.mega-drawer-lock {
   transform: rotate(45deg) translateY(-2px);
 }
 
-.mega-item.is-open .mega-item-chevron,
-.mega-item:hover .mega-item-chevron {
+.mega-item.is-open > .mega-item-chrome .mega-item-chevron,
+.mega-item:hover > .mega-item-chrome .mega-item-chevron,
+.mega-tree-item.is-open > .mega-tree-row .mega-item-chevron {
   transform: rotate(225deg) translateY(-2px);
 }
 
