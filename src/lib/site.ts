@@ -2,7 +2,7 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
-import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
+import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH, netherlandsCoinSlugs } from '../data/netherlands-coinage';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
@@ -24,6 +24,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of catalogNoteSlugs) slugs.add(slug);
+  for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -381,6 +382,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_COINAGE_PATH.replace(/^\/|\/$/g, ''),
+  ...netherlandsCoinSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

@@ -106,6 +106,12 @@ export const megaNav: NavNode[] = [
             href: `${NETHERLANDS_COINAGE_PATH}#ducado-comercial`,
           },
           {
+            id: 'nl-ducado-1761',
+            es: 'Ducado de Utrecht, 1761',
+            en: 'Utrecht ducat, 1761',
+            href: `${NETHERLANDS_COINAGE_PATH}ducado-utrecht-1761/`,
+          },
+          {
             id: 'nl-decimal',
             es: 'El gulden decimal',
             en: 'The decimal gulden',

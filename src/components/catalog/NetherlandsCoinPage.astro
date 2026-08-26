@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, type Locale } from '../../lib/site';
+import {
+  coinPageCopy,
+  coinagePath,
+  NUMISMATICS_PATH,
+  seriesCopy,
+  seriesSources,
+  type NetherlandsCoin,
+} from '../../data/netherlands-coinage';
+import SourceList from './SourceList.astro';
+import NoteImageLightbox from './NoteImageLightbox.astro';
+
+interface Props {
+  locale: Locale;
+  coin: NetherlandsCoin;
+}
+
+const { locale, coin } = Astro.props;
+const t = coinPageCopy[locale];
+const series = seriesCopy[locale];
+const pathname = locale === 'en' ? `/en${coin.path}` : coin.path;
+const sources = [
+  ...coin.sources,
+  ...seriesSources.filter((source) => !coin.sources.some((own) => own.href === source.href)),
+];
+---
+
+<Layout title={`${coin.title[locale]} | Notofilia`} description={coin.lead[locale]} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+          <li>
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
+              href={localizePath(NUMISMATICS_PATH, locale)}
+            >
+              {t.collectionLink}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={coinagePath(locale)}>
+              {t.seriesLink}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{coin.title[locale]}</li>
+        </ol>
+      </nav>
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+        {coin.kicker[locale]}
+      </p>
+      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {coin.title[locale]}
+      </h1>
+      <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{coin.lead[locale]}</p>
+
+      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+        <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.yearLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.year}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.mintLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.mint[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.denominationLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.denomination[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.compositionLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.composition[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.weightLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.weight[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.diameterLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.diameter[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.edgeLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.edge[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.grade[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.certificateLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.certificate}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.referencesLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{coin.references}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <figure class="m-0">
+        <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {locale === 'en' ? 'Obverse and reverse' : 'Anverso y reverso'}
+        </h2>
+        <NoteImageLightbox
+          src={coin.images.composite}
+          alt={`${coin.frontCaption[locale]} ${coin.backCaption[locale]}`}
+          expandLabel={t.expandImage}
+          closeLabel={t.closeLightbox}
+          width={coin.images.width}
+          height={coin.images.height}
+        />
+        <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">
+          <span class="block">{coin.frontCaption[locale]}</span>
+          <span class="mt-2 block">{coin.backCaption[locale]}</span>
+        </figcaption>
+      </figure>
+
+      <section class="mt-14 max-w-[46rem]" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.aboutHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{coin.description[locale]}</p>
+      </section>
+
+      <section class="mt-12 max-w-[46rem]" aria-labelledby="legends-heading">
+        <h2 id="legends-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.legendsHeading}
+        </h2>
+        <dl class="m-0 space-y-4">
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.frontHeading}</dt>
+            <dd class="m-0 mt-1 text-[17px]/7 text-cream">{coin.obverseLegend[locale]}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.backHeading}</dt>
+            <dd class="m-0 mt-1 text-[17px]/7 text-cream">{coin.reverseLegend[locale]}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="mt-12 max-w-[46rem]" aria-labelledby="history-heading">
+        <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.historyHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{coin.history[locale]}</p>
+      </section>
+
+      <section class="mt-12 max-w-[46rem]" aria-labelledby="scarcity-heading">
+        <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.scarcityHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{coin.scarcity[locale]}</p>
+      </section>
+
+      <section class="mt-12 max-w-[46rem]" aria-labelledby="certification-heading">
+        <h2 id="certification-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.certificationHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{coin.certification[locale]}</p>
+      </section>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={coinagePath(locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {series.title}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

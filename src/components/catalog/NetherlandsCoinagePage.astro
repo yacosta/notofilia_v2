@@ -3,10 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
   chapterHref,
+  coinPageCopy,
   coinagePath,
+  coinPath,
   NETHERLANDS_PATH,
   NUMISMATICS_PATH,
   netherlandsCoinageChapters,
+  netherlandsCoins,
   seriesCopy,
   seriesSources,
 } from '../../data/netherlands-coinage';
@@ -18,6 +21,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
+const pieces = coinPageCopy[locale];
 const pathname = coinagePath(locale);
 const hero =
   locale === 'en'
@@ -105,6 +109,45 @@ const hero =
           {t.notesLink} →
         </a>
       </p>
+
+      <section class="mt-16" aria-labelledby="pieces-heading">
+        <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {pieces.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{pieces.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+          aria-label={locale === 'en' ? 'Coins in the collection' : 'Monedas de la colección'}
+        >
+          {
+            netherlandsCoins.map((coin) => (
+              <li class="min-w-0">
+                <a
+                  href={coinPath(coin, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <img
+                    src={coin.images.composite}
+                    alt={coin.frontCaption[locale]}
+                    width={coin.images.width}
+                    height={coin.images.height}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.95rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {coin.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {coin.year} · {coin.grade[locale]} · {coin.certificate}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{pieces.viewCoin} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
 
       <section class="mt-16" aria-labelledby="holdings-heading">
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">

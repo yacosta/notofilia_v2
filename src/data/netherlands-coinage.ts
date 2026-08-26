@@ -155,7 +155,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: el gulden medieval, el ducado comercial, el gulden decimal y el paso al euro. Las fichas de cada pieza —empezando por el ducado de Utrecht de 1761— se publicarán a medida que se documenten.',
+      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: el gulden medieval, el ducado comercial, el gulden decimal y el paso al euro. Debajo, la ficha del ducado de Utrecht de 1761 documentado en esta colección.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -178,7 +178,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters in one row, left to right by period: the medieval gulden, the trade ducat, the decimal gulden, and the changeover to the euro. Individual coin pages — beginning with the 1761 Utrecht ducat — will be published as they are documented.',
+      'Four chapters in one row, left to right by period: the medieval gulden, the trade ducat, the decimal gulden, and the changeover to the euro. Below, the ficha of the 1761 Utrecht ducat recorded in this collection.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -231,5 +231,257 @@ export function coinagePath(locale: 'es' | 'en'): string {
 export function chapterHref(id: NetherlandsCoinageChapterId): string {
   return `#${id}`;
 }
+
+export type NetherlandsCoinId = 'ducado-utrecht-1761';
+
+export type NetherlandsCoin = {
+  id: NetherlandsCoinId;
+  path: string;
+  year: string;
+  mint: LocalizedText;
+  denomination: LocalizedText;
+  composition: LocalizedText;
+  weight: LocalizedText;
+  diameter: LocalizedText;
+  edge: LocalizedText;
+  references: string;
+  grade: LocalizedText;
+  certificate: string;
+  images: {
+    composite: string;
+    width: number;
+    height: number;
+  };
+  title: LocalizedText;
+  kicker: LocalizedText;
+  lead: LocalizedText;
+  description: LocalizedText;
+  history: LocalizedText;
+  obverseLegend: LocalizedText;
+  reverseLegend: LocalizedText;
+  frontCaption: LocalizedText;
+  backCaption: LocalizedText;
+  scarcity: LocalizedText;
+  certification: LocalizedText;
+  sources: CatalogSource[];
+};
+
+export const netherlandsCoins: NetherlandsCoin[] = [
+  {
+    id: 'ducado-utrecht-1761',
+    path: '/coleccion/numismatica/paises-bajos/ducado-utrecht-1761/',
+    year: '1761',
+    mint: {
+      es: 'Utrecht (TRA · Traiectum)',
+      en: 'Utrecht (TRA · Traiectum)',
+    },
+    denomination: {
+      es: '1 ducado (6 gulden)',
+      en: '1 ducat (6 gulden)',
+    },
+    composition: {
+      es: 'Oro .986',
+      en: 'Gold .986',
+    },
+    weight: {
+      es: '3,47 g (0,110 oz de oro fino, Numista)',
+      en: '3.47 g (0.110 oz AGW, Numista)',
+    },
+    diameter: {
+      es: '21,7 mm',
+      en: '21.7 mm',
+    },
+    edge: {
+      es: 'Cordonado o liso (Numista)',
+      en: 'Cabled or plain (Numista)',
+    },
+    references: 'KM# 7.4 · Fr# 285 · Delmonte G# 965 · Ver# 98.4 · HPM# Ut 27 · Numista N# 323147',
+    grade: {
+      es: 'NGC AU Details · Edge Filing',
+      en: 'NGC AU Details · Edge Filing',
+    },
+    certificate: '4685927-012',
+    images: {
+      composite: '/images/catalog/netherlands/1761-ducat-utrecht-ngc.png',
+      width: 1536,
+      height: 1024,
+    },
+    title: {
+      es: 'Ducado de oro · Utrecht 1761',
+      en: 'Gold ducat · Utrecht 1761',
+    },
+    kicker: {
+      es: 'Provincias Unidas · Ceca de Utrecht',
+      en: 'United Provinces · Utrecht mint',
+    },
+    lead: {
+      es: 'Ducado comercial de oro .986, encapsulado NGC AU Details (Edge Filing), certificado 4685927-012. Caballero con haz de siete flechas y tablilla MO. ORD. PROVIN.',
+      en: 'Trade ducat in .986 gold, slabbed NGC AU Details (Edge Filing), certificate 4685927-012. Knight with a bundle of seven arrows and the MO. ORD. PROVIN. tablet.',
+    },
+    description: {
+      es: 'Esta pieza de 1761 se acuñó en la ceca provincial de Utrecht, en la República de las Provincias Unidas. El anverso muestra un caballero armado a la derecha, con casco y coraza, espada alzada y un haz de flechas —las siete provincias—; la fecha se parte a ambos lados de las piernas (17–61). La leyenda CONCORDIA RES PAR. CRES. TRA. abrevia Concordia res parvae crescunt Traiectum: «Con la concordia, las cosas pequeñas crecen · Utrecht». El escudo de Utrecht cierra la leyenda como marca de ceca. El reverso lleva, en una tablilla cuadrada con roleos, MO. ORD. / PROVIN. / FOEDER. / BELG. AD / LEG. IMP. — Moneta ordinum provinciarum foederatarum Belgicarum ad legem imperii: «Moneda de las Provincias Unidas de los Países Bajos, conforme a la ley del Imperio». Numista clasifica este anverso tardío como KM# 7.4, Fr# 285 y Delmonte G# 965, tipo de Utrecht de 1739–1794: oro .986, 3,47 g, 21,7 mm y alineación de medalla. El canto puede ser cordonado o liso. En cuenta, un ducado equivalía a 6 gulden.',
+      en: 'This 1761 piece was struck at the provincial mint of Utrecht, in the Republic of the United Provinces. The obverse shows an armored knight to the right, helmeted, sword raised and a bundle of arrows — the seven provinces — with the date split beside the legs (17–61). The legend CONCORDIA RES PAR. CRES. TRA. abbreviates Concordia res parvae crescunt Traiectum: “Through concord little things grow · Utrecht.” The Utrecht shield closes the legend as the mint mark. The reverse carries, on a square tablet with scrollwork, MO. ORD. / PROVIN. / FOEDER. / BELG. AD / LEG. IMP. — Moneta ordinum provinciarum foederatarum Belgicarum ad legem imperii: “Coin of the United Provinces of the Netherlands, in accordance with the law of the Empire.” Numista classifies this late obverse as KM# 7.4, Fr# 285, and Delmonte G# 965, a Utrecht type of 1739–1794: gold .986, 3.47 g, 21.7 mm, medal alignment. The edge may be cabled or plain. In account, one ducat equaled 6 gulden.',
+    },
+    history: {
+      es: 'El ducado de oro es uno de los tipos comerciales más longevos de Europa. La Koninklijke Nederlandse Munt sitúa su inscripción en la ley monetaria el 4 de agosto de 1586: caballero, espada, haz de flechas y CONCORDIA RES PARVAE CRESCUNT. El peso y la ley fijos —unas 3,5 g de oro .986— lo hicieron aceptable desde el Báltico hasta Asia; la Compañía Neerlandesa de las Indias Orientales (VOC) lo usó en el comercio de ultramar, y Rusia y los Estados alemanes llegaron a imitarlo. El 19 de noviembre de 1800, la Proclamación del gobernador Philip Gidley King en Nueva Gales del Sur tasó un ducado en 9 chelines y 6 peniques para retener el circulante en la colonia, por lo que el tipo también entra en las «proclamation coins» australianas. La ceca real sigue acuñando el ducado de oro como pieza de colección, con el mismo esquema de caballero y tablilla.',
+      en: 'The gold ducat is one of Europe’s longest-lived trade types. The Royal Dutch Mint places its entry in the mint act on 4 August 1586: knight, sword, bundle of arrows, and CONCORDIA RES PARVAE CRESCUNT. Fixed weight and fineness — about 3.5 g of .986 gold — made it welcome from the Baltic to Asia; the Dutch East India Company (VOC) used it in overseas trade, and Russia and the German states even imitated it. On 19 November 1800 Governor Philip Gidley King’s New South Wales Proclamation valued a ducat at 9 shillings and 6 pence to keep coin in the colony, so the type also belongs among Australian proclamation coins. The royal mint still strikes the gold ducat as a collector piece, with the same knight-and-tablet scheme.',
+    },
+    obverseLegend: {
+      es: 'CONCORDIA RES PAR. CRES. TRA. — Concordia res parvae crescunt Traiectum: «Con la concordia, las cosas pequeñas crecen · Utrecht».',
+      en: 'CONCORDIA RES PAR. CRES. TRA. — Concordia res parvae crescunt Traiectum: “Through concord little things grow · Utrecht.”',
+    },
+    reverseLegend: {
+      es: 'MO. ORD. PROVIN. FOEDER. BELG. AD LEG. IMP. — Moneta ordinum provinciarum foederatarum Belgicarum ad legem imperii: «Moneda de las Provincias Unidas de los Países Bajos, conforme a la ley del Imperio».',
+      en: 'MO. ORD. PROVIN. FOEDER. BELG. AD LEG. IMP. — Moneta ordinum provinciarum foederatarum Belgicarum ad legem imperii: “Coin of the United Provinces of the Netherlands, in accordance with the law of the Empire.”',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado: caballero a la derecha, fecha 17–61 y leyenda CONCORDIA RES PAR. CRES. TRA. Etiqueta NGC 1761 NETHERLAND DUCAT UTRECHT, AU DETAILS, EDGE FILING, 4685927-012.',
+      en: 'Slabbed obverse: knight facing right, date 17–61, and CONCORDIA RES PAR. CRES. TRA. NGC label 1761 NETHERLAND DUCAT UTRECHT, AU DETAILS, EDGE FILING, 4685927-012.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado: tablilla de cinco líneas MO. ORD. PROVIN. FOEDER. BELG. AD LEG. IMP., con el holograma de verificación de NGC.',
+      en: 'Slabbed reverse: five-line tablet MO. ORD. PROVIN. FOEDER. BELG. AD LEG. IMP., with the NGC verification hologram.',
+    },
+    scarcity: {
+      es: 'Numista da al tipo (1739–1794) un índice de rareza 84 entre sus socios: no es una fecha única, pero el ducado de oro provincial se busca como moneda de comercio, no como vellón de circulación local. El limado de canto —raspar oro del borde— es un daño habitual en ducados que circularon; NGC lo anota como Details y retira la nota numérica. No se cita aquí un censo de población de 1761 en AU Details; se documenta este certificado.',
+      en: 'Numista gives the type (1739–1794) a rarity index of 84 among its members: 1761 is not a unique date, but the provincial gold ducat is collected as a trade coin, not as local billon. Edge filing — scraping gold from the rim — is common on ducats that circulated; NGC records it as Details and withholds a numeric grade. A 1761 AU Details population census is not independently verified here; this page records this certificate.',
+    },
+    certification: {
+      es: 'NGC autentica la pieza y describe el desgaste como About Uncirculated, pero la designación Details por Edge Filing impide una nota numérica. El certificado 4685927-012 identifica este encapsulado. El limado del canto es, a menudo, huella de uso real: se extraía un poco de oro sin agujerear la moneda. Limita el valor de mercado frente a ejemplares con grado numérico.',
+      en: 'NGC authenticates the coin and describes the wear as About Uncirculated, but the Details designation for Edge Filing withholds a numeric grade. Certificate 4685927-012 identifies this holder. Edge filing is often a mark of real use: a little gold was scraped off without piercing the coin. It limits market value against numerically graded examples.',
+    },
+    sources: [
+      {
+        href: 'https://www.ngccoin.com/certlookup/4685927-012/',
+        es: 'NGC — Verificación del certificado 4685927-012',
+        en: 'NGC — Certificate lookup 4685927-012',
+      },
+      {
+        href: 'https://en.numista.com/catalogue/pieces323147.html',
+        es: 'Numista — 1 Ducat, Utrecht, tipo tardío (N# 323147)',
+        en: 'Numista — 1 Ducat, Utrecht, late type (N# 323147)',
+        note: {
+          es: 'KM# 7.4, Fr# 285, Delmonte G# 965, Ver# 98.4, HPM# Ut 27; oro .986; 3,47 g; 21,7 mm; años 1739–1794; valor 1 ducado (6 gulden).',
+          en: 'KM# 7.4, Fr# 285, Delmonte G# 965, Ver# 98.4, HPM# Ut 27; gold .986; 3.47 g; 21.7 mm; years 1739–1794; value 1 ducat (6 gulden).',
+        },
+      },
+      {
+        href: 'https://www.royaldutchmint.com/dutch-coins/specials/golden-ducats',
+        es: 'Royal Dutch Mint — Ducados de oro',
+        en: 'Royal Dutch Mint — Golden ducats',
+        note: {
+          es: 'Inscrito en la ley monetaria el 4 de agosto de 1586; caballero, flechas y CONCORDIA RES PARVAE CRESCUNT.',
+          en: 'Entered in the mint act on 4 August 1586; knight, arrows, and CONCORDIA RES PARVAE CRESCUNT.',
+        },
+      },
+      {
+        href: 'https://www.downies.com/blogs/news/the-currency-proclamation-of-1800',
+        es: 'Downies — The Currency Proclamation of 1800',
+        en: 'Downies — The Currency Proclamation of 1800',
+        note: {
+          es: '19 de noviembre de 1800: un ducado = 9 chelines y 6 peniques en Nueva Gales del Sur.',
+          en: '19 November 1800: a ducat = 9 shillings and 6 pence in New South Wales.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Utrecht_1761_ducat_Fr-285',
+        es: 'CoinVarieties — Utrecht 1761 ducat Fr-285',
+        en: 'CoinVarieties — Utrecht 1761 ducat Fr-285',
+        note: {
+          es: 'Fecha 1761; Fr# 285; KM# 7.4; tipo 3,50 g, oro .986.',
+          en: '1761 date; Fr# 285; KM# 7.4; type 3.50 g, gold .986.',
+        },
+      },
+      {
+        href: 'https://coinweek.com/world-coins-history-netherlands-gold-ducat-began/',
+        es: 'CoinWeek — A History of the Netherlands Gold Ducat',
+        en: 'CoinWeek — A History of the Netherlands Gold Ducat',
+        note: {
+          es: 'Origen en 1586, uso en el comercio de la VOC y continuidad del tipo del caballero.',
+          en: 'Origin in 1586, use in VOC trade, and continuity of the standing-knight type.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Ducat',
+        es: 'Wikipedia — Ducat',
+        en: 'Wikipedia — Ducat',
+        note: {
+          es: 'Tipo comercial europeo de peso y ley fijos; el ducado neerlandés como sucesor del modelo veneciano.',
+          en: 'European trade type of fixed weight and fineness; the Dutch ducat as a successor of the Venetian model.',
+        },
+      },
+    ],
+  },
+];
+
+export const coinPageCopy = {
+  es: {
+    collectionLink: 'Numismática',
+    seriesLink: 'Países Bajos · Numismática',
+    frontHeading: 'Anverso',
+    backHeading: 'Reverso',
+    aboutHeading: 'La pieza',
+    historyHeading: 'Historia',
+    legendsHeading: 'Leyendas',
+    scarcityHeading: 'Rareza y tipo',
+    certificationHeading: 'Certificación',
+    factsHeading: 'Datos de catálogo',
+    sourcesHeading: 'Fuentes',
+    yearLabel: 'Año',
+    mintLabel: 'Ceca',
+    denominationLabel: 'Denominación',
+    compositionLabel: 'Composición',
+    weightLabel: 'Peso',
+    diameterLabel: 'Diámetro',
+    edgeLabel: 'Canto',
+    referencesLabel: 'Referencias',
+    gradeLabel: 'Conservación',
+    certificateLabel: 'Certificado NGC',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
+    viewCoin: 'Ver la ficha',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsIntro:
+      'Un ducado de oro de Utrecht de 1761, encapsulado por NGC. Las demás fichas se publicarán a medida que se documenten.',
+  },
+  en: {
+    collectionLink: 'Numismatics',
+    seriesLink: 'Netherlands · Numismatics',
+    frontHeading: 'Obverse',
+    backHeading: 'Reverse',
+    aboutHeading: 'The coin',
+    historyHeading: 'History',
+    legendsHeading: 'Legends',
+    scarcityHeading: 'Scarcity and type',
+    certificationHeading: 'Certification',
+    factsHeading: 'Catalog facts',
+    sourcesHeading: 'Sources',
+    yearLabel: 'Year',
+    mintLabel: 'Mint',
+    denominationLabel: 'Denomination',
+    compositionLabel: 'Composition',
+    weightLabel: 'Weight',
+    diameterLabel: 'Diameter',
+    edgeLabel: 'Edge',
+    referencesLabel: 'References',
+    gradeLabel: 'Condition',
+    certificateLabel: 'NGC certificate',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
+    viewCoin: 'Open the coin page',
+    holdingsTitle: 'Coins in the collection',
+    holdingsIntro: 'One 1761 Utrecht gold ducat, slabbed by NGC. Further coin pages will be published as they are documented.',
+  },
+} as const;
+
+export function coinById(id: string): NetherlandsCoin | undefined {
+  return netherlandsCoins.find((coin) => coin.id === id);
+}
+
+export function coinPath(coin: NetherlandsCoin, locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${coin.path}` : coin.path;
+}
+
+export const netherlandsCoinSlugs = netherlandsCoins.map((coin) => coin.path.replace(/^\/|\/$/g, ''));
 
 export { NETHERLANDS_PATH };
