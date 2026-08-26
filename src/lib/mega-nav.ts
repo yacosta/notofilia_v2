@@ -2,6 +2,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
+import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 
 export type NavNode = {
   id: string;
@@ -50,7 +51,12 @@ export const megaNav: NavNode[] = [
         en: 'Philippines',
         href: SERIES_PATH,
       },
-      { id: 'puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
+      {
+        id: 'puerto-rico',
+        es: 'Puerto Rico',
+        en: 'Puerto Rico',
+        href: PUERTO_RICO_PATH,
+      },
       { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },
       { id: 'polimero', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
     ],

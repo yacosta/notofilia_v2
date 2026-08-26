@@ -11,7 +11,8 @@ import {
   netherlandsCoinageDedicatedSlugs,
   netherlandsCoins,
 } from '../data/netherlands-coinage';
-import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 
 export type Locale = 'es' | 'en';
 
@@ -31,7 +32,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of milestones) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
-  for (const slug of catalogNoteSlugs) slugs.add(slug);
+  for (const slug of philippinesNoteSlugs) slugs.add(slug);
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   return slugs;
 }
@@ -305,7 +306,7 @@ export const collections = [
     en: { title: 'Spain', description: 'Colonial gold of the Santa Fe de Bogotá mint.' },
   },
   {
-    href: '/coleccion/puerto-rico/',
+    href: PUERTO_RICO_PATH,
     es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX.' },
     en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues.' },
   },
@@ -375,6 +376,17 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: PUERTO_RICO_PATH,
+    es: {
+      title: 'Puerto Rico · Emisiones coloniales y de transición',
+      description: 'Cuarta vitrina del catálogo: emisiones coloniales y de transición del siglo XIX.',
+    },
+    en: {
+      title: 'Puerto Rico · Colonial and transition issues',
+      description: 'Fourth catalog case: colonial and nineteenth-century transition issues.',
+    },
+  },
+  {
     href: NETHERLANDS_COINAGE_PATH,
     es: {
       title: 'Países Bajos · Historia de la acuñación',
@@ -394,6 +406,7 @@ export const news: NewsItem[] = [];
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
+  { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
@@ -434,6 +447,7 @@ export const stubPages = [
 
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
+  ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
@@ -444,6 +458,6 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...glossaryTermSlugs,
 ]);
 
-export { SERIES_PATH };
+export { SERIES_PATH, PUERTO_RICO_PATH };
 
 export const STATS = collectionStats();
