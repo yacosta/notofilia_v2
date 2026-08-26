@@ -1,6 +1,7 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 
 export const USA_PATH = '/coleccion/estados-unidos/';
+export const USA_PATH_EN = '/coleccion/united-states/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -233,7 +234,7 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${USA_PATH}` : USA_PATH;
+  return locale === 'en' ? `/en${USA_PATH_EN}` : USA_PATH;
 }
 
 export function chapterHref(id: UnitedStatesChapterId): string {
