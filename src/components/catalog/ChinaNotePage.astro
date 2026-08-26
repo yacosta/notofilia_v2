@@ -5,10 +5,10 @@ import {
   CHINA_PATH,
   notePageCopy,
   seriesCopy,
-  seriesPath,
   seriesSources,
   type ChinaNote,
 } from '../../data/china';
+import { POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -35,14 +35,14 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
           <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(CHINA_PATH, locale)}>
-              {t.collectionLink}
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(POLIMERO_MUNDIAL_PATH, locale)}>
+              {t.seriesLink}
             </a>
           </li>
           <li aria-hidden="true">·</li>
           <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={seriesPath(locale)}>
-              {t.seriesLink}
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(CHINA_PATH, locale)}>
+              {t.collectionLink}
             </a>
           </li>
           <li aria-hidden="true">·</li>

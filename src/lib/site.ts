@@ -18,6 +18,7 @@ import {
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 
 export type Locale = 'es' | 'en';
@@ -331,7 +332,7 @@ export const collections = [
     en: { title: 'Ecuador', description: 'Documented sucres from the virtual collection.' },
   },
   {
-    href: '/coleccion/polimero-mundial/',
+    href: POLIMERO_MUNDIAL_PATH,
     es: { title: 'Billetes de polímero', description: 'Catálogo mundial de sustratos Guardian, Safeguard e híbridos.' },
     en: { title: 'Polymer banknotes', description: 'World catalog of Guardian, Safeguard, and hybrid substrates.' },
   },
@@ -483,7 +484,7 @@ export const footerExplore = [
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
   { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
-  { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
+  { href: POLIMERO_MUNDIAL_PATH, es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
 
@@ -538,6 +539,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
+  POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   'blog',
