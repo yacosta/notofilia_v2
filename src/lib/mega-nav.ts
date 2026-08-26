@@ -1,4 +1,6 @@
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { NUMISMATICA_PATH } from '../data/numismatica';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 
 export type NavNode = {
@@ -56,6 +58,21 @@ export const megaNav: NavNode[] = [
     id: 'coleccion-numismatica',
     es: 'Colección Virtual Numismática',
     en: 'Virtual Numismatics Collection',
+    href: NUMISMATICA_PATH,
+    children: [
+      {
+        id: 'num-colombia',
+        es: 'Colombia',
+        en: 'Colombia',
+        href: COLOMBIA_COINAGE_PATH,
+        children: [
+          { id: 'num-colombia-santa-fe', es: 'Santa Fe colonial', en: 'Colonial Santa Fe', href: `${COLOMBIA_COINAGE_PATH}#santa-fe` },
+          { id: 'num-colombia-independencia', es: 'Independencia', en: 'Independence', href: `${COLOMBIA_COINAGE_PATH}#independencia` },
+          { id: 'num-colombia-nueva-granada', es: 'Nueva Granada', en: 'New Granada', href: `${COLOMBIA_COINAGE_PATH}#nueva-granada` },
+          { id: 'num-colombia-republica', es: 'República y Fábrica', en: 'Republic and mint', href: `${COLOMBIA_COINAGE_PATH}#republica` },
+        ],
+      },
+    ],
   },
   {
     id: 'recursos',

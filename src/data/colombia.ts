@@ -153,6 +153,8 @@ export const seriesCopy = {
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
+    coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
+    coinageLink: 'Colombia · Casa de Moneda de Santa Fe y el peso',
   },
   en: {
     metaTitle: 'Colombia · Free banking and the Banco de la República | Notofilia',
@@ -174,6 +176,8 @@ export const seriesCopy = {
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
+    coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
+    coinageLink: 'Colombia · The Santa Fe mint and the peso',
   },
 } as const;
 

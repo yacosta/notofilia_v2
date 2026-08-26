@@ -1,5 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -221,9 +223,9 @@ export const collections = [
     en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
   },
   {
-    href: '/coleccion/numismatica/',
-    es: { title: 'Numismática', description: 'Catálogo de monedas: oro colonial, cobres de necesidad y piezas de comercio.' },
-    en: { title: 'Numismatics', description: 'Coin catalog: colonial gold, necessity copper, and trade pieces.' },
+    href: NUMISMATICA_PATH,
+    es: { title: 'Numismática', description: 'Moneda metálica: Santa Fe, independencia, decimalización y el peso actual.' },
+    en: { title: 'Numismatics', description: 'Coinage: Santa Fe, independence, decimalization, and the modern peso.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -299,6 +301,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: COLOMBIA_COINAGE_PATH,
+    es: {
+      title: 'Colombia · Casa de Moneda de Santa Fe',
+      description: 'Primera vitrina de numismática: macuquinas, cecas de la Independencia, la reforma de 1847 y la Fábrica de Ibagué.',
+    },
+    en: {
+      title: 'Colombia · The Santa Fe mint',
+      description: 'First numismatics case: cobs, independence mints, the 1847 reform, and the Ibagué factory.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -308,7 +321,8 @@ export const news: NewsItem[] = [];
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
-  { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
+  { href: NUMISMATICA_PATH, es: 'Monedas', en: 'Coins' },
+  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia · monedas', en: 'Colombia · coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -330,6 +344,7 @@ export const footerAbout = [
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
+  { path: 'coleccion/numismatica/colombia', es: 'Colombia · Numismática', en: 'Colombia · Numismatics' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
@@ -348,6 +363,8 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
+  COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

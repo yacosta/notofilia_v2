@@ -1,14 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
+import { COLOMBIA_PATH } from '../../data/colombia';
 import {
-  chapterHref,
-  colombiaChapters,
-  seriesCopy,
-  seriesPath,
-  seriesSources,
-} from '../../data/colombia';
-import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+  coinageChapterHref,
+  coinageCopy,
+  coinagePath,
+  coinageSources,
+  colombiaCoinageChapters,
+} from '../../data/colombia-coinage';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -16,12 +17,12 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const t = seriesCopy[locale];
-const pathname = seriesPath(locale);
+const t = coinageCopy[locale];
+const pathname = coinagePath(locale);
 const hero = {
-  src: '/images/catalog/colombia/hero-colombia.jpg',
-  width: 1168,
-  height: 784,
+  src: '/images/catalog/numismatica/hero-bogota.jpg',
+  width: 2128,
+  height: 912,
 };
 ---
 
@@ -29,7 +30,7 @@ const hero = {
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_32%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -72,6 +73,15 @@ const hero = {
             </a>
           </li>
           <li aria-hidden="true">·</li>
+          <li>
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
+              href={localizePath(NUMISMATICA_PATH, locale)}
+            >
+              {locale === 'en' ? 'Numismatics' : 'Numismática'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>
@@ -81,13 +91,13 @@ const hero = {
       </div>
 
       <p class="mt-6 mb-0 text-[17px]/7 text-muted">
-        {t.coinageLead}
+        {t.notaphilyLead}
         {' '}
         <a
           class="text-gold-light underline decoration-line-strong hover:text-cream"
-          href={localizePath(COLOMBIA_COINAGE_PATH, locale)}
+          href={localizePath(COLOMBIA_PATH, locale)}
         >
-          {t.coinageLink}
+          {t.notaphilyLink}
         </a>
       </p>
 
@@ -102,10 +112,10 @@ const hero = {
           aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
         >
           {
-            colombiaChapters.map((chapter) => (
+            colombiaCoinageChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
-                  href={chapterHref(chapter.id)}
+                  href={coinageChapterHref(chapter.id)}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
                   <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
@@ -129,7 +139,7 @@ const hero = {
 
       <div class="mt-16 space-y-12">
         {
-          colombiaChapters.map((chapter) => (
+          colombiaCoinageChapters.map((chapter) => (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -148,15 +158,15 @@ const hero = {
       </div>
 
       <div class="mt-16">
-        <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
+        <SourceList locale={locale} sources={coinageSources} heading={t.sourcesTitle} />
       </div>
 
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(NUMISMATICA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to the numismatics catalog' : 'Volver al catálogo de numismática'}
         </a>
       </p>
     </article>
