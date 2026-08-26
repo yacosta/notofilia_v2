@@ -1,3 +1,4 @@
+import { COLOMBIA_PATH } from '../data/colombia';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 
 export type NavNode = {
@@ -18,11 +19,12 @@ export const megaNav: NavNode[] = [
         id: 'colombia',
         es: 'Colombia',
         en: 'Colombia',
+        href: COLOMBIA_PATH,
         children: [
-          { id: 'colombia-siglo-pasado', es: 'Siglo pasado', en: 'Last century' },
-          { id: 'colombia-banca-libre', es: 'Banca libre', en: 'Free banking' },
-          { id: 'colombia-banco-republica', es: 'Banco de la República', en: 'Banco de la República' },
-          { id: 'colombia-errores', es: 'Errores', en: 'Errors' },
+          { id: 'colombia-siglo-pasado', es: 'Siglo pasado', en: 'Last century', href: `${COLOMBIA_PATH}#independencia` },
+          { id: 'colombia-banca-libre', es: 'Banca libre', en: 'Free banking', href: `${COLOMBIA_PATH}#banca-libre` },
+          { id: 'colombia-banco-republica', es: 'Banco de la República', en: 'Banco de la República', href: `${COLOMBIA_PATH}#banco-de-la-republica` },
+          { id: 'colombia-errores', es: 'Errores', en: 'Errors', href: `${COLOMBIA_PATH}#banco-de-la-republica` },
         ],
       },
       {
