@@ -447,6 +447,8 @@ export const notePageCopy = {
     serialLabel: 'Número de serie',
     pickLabel: 'Referencia Pick',
     gradeLabel: 'Conservación',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
   },
   en: {
     seriesLink: 'Victory Series No. 66',
@@ -463,6 +465,8 @@ export const notePageCopy = {
     serialLabel: 'Serial number',
     pickLabel: 'Pick reference',
     gradeLabel: 'Condition',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
   },
 } as const;
 

@@ -9,6 +9,7 @@ import {
   type VictoryNote,
 } from '../../data/philippines-victory-66';
 import SourceList from './SourceList.astro';
+import NoteImageLightbox from './NoteImageLightbox.astro';
 
 interface Props {
   locale: Locale;
@@ -87,25 +88,21 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <div class="grid gap-10 lg:grid-cols-2">
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-          <img
+          <NoteImageLightbox
             src={note.images.front}
             alt={note.frontCaption[locale]}
-            width="1800"
-            height="900"
-            class="w-full rounded-[2px] border border-line bg-panel object-contain"
-            decoding="async"
+            expandLabel={t.expandImage}
+            closeLabel={t.closeLightbox}
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
-          <img
+          <NoteImageLightbox
             src={note.images.back}
             alt={note.backCaption[locale]}
-            width="1800"
-            height="900"
-            class="w-full rounded-[2px] border border-line bg-panel object-contain"
-            decoding="async"
+            expandLabel={t.expandImage}
+            closeLabel={t.closeLightbox}
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
         </figure>
