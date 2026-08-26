@@ -21,6 +21,9 @@ interface Props {
 const { locale } = Astro.props;
 const t = coinageCopy[locale];
 const pathname = coinagePath(locale);
+const piecesByChapter = Object.fromEntries(
+  colombiaCoinagePieces.map((piece) => [piece.chapterId, piece]),
+) as Partial<Record<(typeof colombiaCoinageChapters)[number]['id'], (typeof colombiaCoinagePieces)[number]>>;
 const hero = {
   src: '/images/catalog/numismatica/hero-bogota.jpg',
   width: 2128,
@@ -114,27 +117,48 @@ const hero = {
           aria-label={locale === 'en' ? 'Cases lined up left to right' : 'Vitrinas alineadas de izquierda a derecha'}
         >
           {
-            colombiaCoinageChapters.map((chapter) => (
+            colombiaCoinageChapters.map((chapter) => {
+              const piece = piecesByChapter[chapter.id];
+              return (
               <li class="min-w-0">
                 <a
                   href={coinageChapterHref(chapter.id)}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {chapter.years[locale]}
-                    </span>
-                  </div>
+                  {
+                    piece ? (
+                      <img
+                        src={piece.images.composite}
+                        alt={piece.title[locale]}
+                        width="1536"
+                        height="1024"
+                        class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                        <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                          {chapter.years[locale]}
+                        </span>
+                      </div>
+                    )
+                  }
                   <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
                     {chapter.title[locale]}
                   </h3>
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
                     {t.eraLabel} · {chapter.years[locale]}
                   </p>
+                  {
+                    piece ? (
+                      <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">{piece.title[locale]}</p>
+                    ) : null
+                  }
                   <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
                 </a>
               </li>
-            ))
+              );
+            })
           }
           {
             colombiaCoinageExtraCases.map((item) => (
@@ -162,48 +186,11 @@ const hero = {
         </ol>
       </section>
 
-      <section class="mt-16" aria-labelledby="pieces-heading">
-        <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.piecesTitle}
-        </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.piecesIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
-          aria-label={locale === 'en' ? 'Coins exhibited in this case' : 'Monedas exhibidas en esta vitrina'}
-        >
-          {
-            colombiaCoinagePieces.map((piece) => (
-              <li class="min-w-0">
-                <a
-                  href={coinagePiecePath(piece, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <img
-                    src={piece.images.composite}
-                    alt={piece.title[locale]}
-                    width="1536"
-                    height="1024"
-                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    decoding="async"
-                  />
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {piece.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {piece.reference.split(' · ')[0]} · {piece.year}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewPiece} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
-      </section>
-
       <div class="mt-16 space-y-12">
         {
-          colombiaCoinageChapters.map((chapter) => (
+          colombiaCoinageChapters.map((chapter) => {
+            const piece = piecesByChapter[chapter.id];
+            return (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -216,8 +203,33 @@ const hero = {
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                piece ? (
+                  <a
+                    href={coinagePiecePath(piece, locale)}
+                    class="group mt-8 flex flex-col rounded-[6px] border border-line-strong bg-panel p-3 text-inherit no-underline hover:border-gold-light sm:flex-row sm:items-center sm:gap-6 sm:p-4"
+                  >
+                    <img
+                      src={piece.images.composite}
+                      alt={piece.title[locale]}
+                      width="1536"
+                      height="1024"
+                      class="mb-4 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-0 sm:max-w-[16rem]"
+                      decoding="async"
+                    />
+                    <div class="min-w-0">
+                      <h3 class="mb-2 mt-0 font-display text-[1.35rem]/7 font-normal text-cream-dim group-hover:text-cream">
+                        {piece.title[locale]}
+                      </h3>
+                      <p class="mb-3 mt-0 font-sans text-[14px]/5 text-muted">{piece.lead[locale]}</p>
+                      <span class="font-sans text-[15px] text-gold-light">{t.viewPiece} →</span>
+                    </div>
+                  </a>
+                ) : null
+              }
             </section>
-          ))
+            );
+          })
         }
       </div>
 
