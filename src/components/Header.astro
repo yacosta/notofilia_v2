@@ -1,7 +1,7 @@
 ---
-import NavIcon from './NavIcon.astro';
+import NavTree from './NavTree.astro';
 import { copy, localizePath, otherLocalePath, type Locale } from '../lib/site';
-import { megaNav } from '../lib/mega-nav';
+import { megaNav, type NavNode } from '../lib/mega-nav';
 
 interface Props {
   locale: Locale;
@@ -15,16 +15,16 @@ const enHref = locale === 'en' ? pathname : otherLocalePath(pathname, 'es');
 const esHref = locale === 'es' ? pathname : otherLocalePath(pathname, 'en');
 const searchAction = localizePath('/buscar/', locale);
 
-function currentPath(href: string) {
-  if (href.startsWith('/#')) return localizePath('/', locale) + href.slice(1);
-  return localizePath(href, locale);
-}
-
-function isCurrent(href: string) {
-  if (href.startsWith('/#')) return false;
+function isCurrent(href?: string) {
+  if (!href) return false;
   const localized = localizePath(href, locale);
   if (localized === home) return pathname === home;
   return pathname === localized || pathname.startsWith(localized);
+}
+
+function nodeIsCurrent(node: NavNode): boolean {
+  if (isCurrent(node.href)) return true;
+  return node.children?.some(nodeIsCurrent) ?? false;
 }
 ---
 
@@ -112,22 +112,24 @@ function isCurrent(href: string) {
     <ul class="mega-list" aria-describedby="mega-nav-help">
       {
         megaNav.map((item) => {
-          const href = currentPath(item.href);
           const panelId = `mega-panel-${item.id}`;
           const label = item[locale];
-          const current = isCurrent(item.href);
+          const current = nodeIsCurrent(item);
+          const nested = Boolean(item.children?.length);
+          const href = item.href ? localizePath(item.href, locale) : undefined;
           return (
             <li class:list={['mega-item', current && 'is-current']} data-mega-item>
               <div class="mega-item-chrome">
-                <a
-                  href={href}
-                  class="mega-item-link"
-                  aria-current={current ? 'page' : undefined}
-                >
-                  <NavIcon name={item.icon} />
-                  <span class="mega-item-title">{label}</span>
-                </a>
-                {item.panel && (
+                {href ? (
+                  <a href={href} class="mega-item-link" aria-current={current ? 'page' : undefined}>
+                    <span class="mega-item-title">{label}</span>
+                  </a>
+                ) : (
+                  <span class="mega-item-link">
+                    <span class="mega-item-title">{label}</span>
+                  </span>
+                )}
+                {nested && (
                   <button
                     type="button"
                     class="mega-item-toggle"
@@ -142,7 +144,7 @@ function isCurrent(href: string) {
                 )}
               </div>
 
-              {item.panel && (
+              {nested && (
                 <div class="mega-panel" id={panelId} data-mega-panel hidden>
                   <div class="mega-panel-inner">
                     <div class="mega-subhead lg:hidden">
@@ -151,54 +153,7 @@ function isCurrent(href: string) {
                       </button>
                       <p class="mega-subhead-title">{label}</p>
                     </div>
-
-                    <ul class="mega-card-list">
-                      {item.panel.cards.map((card) => (
-                        <li class:list={['mega-card', `mega-card--${card.size}`]}>
-                          <a class="mega-card-link" href={currentPath(card.href)}>
-                            {card.image && (
-                              <span class="mega-card-media">
-                                <img
-                                  src={card.image.src}
-                                  alt={card.image.alt[locale]}
-                                  width={card.image.width}
-                                  height={card.image.height}
-                                  loading="lazy"
-                                  decoding="async"
-                                />
-                              </span>
-                            )}
-                            <span class="mega-card-title">{card.title[locale]}</span>
-                          </a>
-                          {card.links && card.links.length > 0 && (
-                            <ul class="mega-card-links">
-                              {card.links.map((link) => (
-                                <li>
-                                  <a href={currentPath(link.href)}>{link[locale]}</a>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-
-                    {item.panel.banner && (
-                      <a class="mega-banner" href={currentPath(item.panel.banner.href)}>
-                        <img
-                          src={item.panel.banner.image.src}
-                          alt={item.panel.banner.image.alt[locale]}
-                          width={item.panel.banner.image.width}
-                          height={item.panel.banner.image.height}
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        <span class="mega-banner-copy">
-                          <span class="mega-banner-title">{item.panel.banner.title[locale]}</span>
-                          <span class="mega-banner-cta">{item.panel.banner.cta[locale]}</span>
-                        </span>
-                      </a>
-                    )}
+                    <NavTree nodes={item.children!} locale={locale} openSubmenu={t.openSubmenu} />
                   </div>
                 </div>
               )}
