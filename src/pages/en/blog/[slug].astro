@@ -1,0 +1,15 @@
+---
+import EditorialArticlePage from '../../../components/editorial/EditorialArticlePage.astro';
+import { blogArticles } from '../../../data/editorial';
+
+export function getStaticPaths() {
+  return blogArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+---
+
+<EditorialArticlePage locale="en" kind="blog" article={article} />

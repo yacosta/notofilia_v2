@@ -18,6 +18,7 @@ import {
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 
 export type Locale = 'es' | 'en';
 
@@ -50,6 +51,8 @@ function extraAstroPageFiles(): number {
       !file.endsWith('404.astro') &&
       !file.includes('/coleccion/') &&
       !file.includes('/glosario/') &&
+      !file.includes('/blog/') &&
+      !file.includes('/noticias/') &&
       !file.includes('/paises-bajos-numismatica/') &&
       !file.includes('/netherlands-numismatica/'),
   );
@@ -346,6 +349,9 @@ export type ArticleItem = {
   dateEn: string;
   es: string;
   en: string;
+  image?: string;
+  imageAlt?: { es: string; en: string };
+  dek?: { es: string; en: string };
 };
 
 export type NewsItem = ArticleItem & {
@@ -444,9 +450,29 @@ export const milestones: MilestoneItem[] = [
   },
 ];
 
-export const articles: ArticleItem[] = [];
+export const articles: ArticleItem[] = blogArticles.map((item) => ({
+  href: item.href,
+  dateEs: item.dateEs,
+  dateEn: item.dateEn,
+  es: item.title.es,
+  en: item.title.en,
+  image: item.image,
+  imageAlt: item.imageAlt,
+  dek: item.dek,
+}));
 
-export const news: NewsItem[] = [];
+export const news: NewsItem[] = newsArticles.map((item) => ({
+  href: item.href,
+  dateEs: item.dateEs,
+  dateEn: item.dateEn,
+  es: item.title.es,
+  en: item.title.en,
+  image: item.image,
+  imageAlt: item.imageAlt,
+  dek: item.dek,
+  source: item.sourceName ?? '',
+  sourceUrl: item.sourceUrl ?? '',
+}));
 
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
@@ -514,6 +540,10 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...chinaNoteSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
+  'blog',
+  'noticias',
+  ...blogSlugs,
+  ...newsSlugs,
 ]);
 
 export { SERIES_PATH, PUERTO_RICO_PATH };

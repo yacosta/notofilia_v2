@@ -18,6 +18,8 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = copy[locale];
+const featuredArticles = articles.slice(0, 4);
+const featuredNews = news.slice(0, 4);
 const heroAlt =
   locale === 'en'
     ? 'Close-up of a Guatemala 5-quetzal banknote with the quetzal bird, in a notaphily style'
@@ -160,21 +162,36 @@ const heroAlt =
       </h2>
       <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {
-          articles.map((item) => (
+          featuredArticles.map((item) => (
             <li>
-              <article class="h-full rounded-[6px] border border-line-strong bg-panel p-5">
-                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
-                  {locale === 'en' ? item.dateEn : item.dateEs} · Notofilia
-                </p>
-                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-                  {item[locale]}
-                </h3>
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-                >
-                  {t.readMore}
-                </a>
+              <article class="h-full overflow-hidden rounded-[6px] border border-line-strong bg-panel">
+                {item.image ? (
+                  <a href={localizePath(item.href, locale)} class="block no-underline">
+                    <img
+                      src={item.image}
+                      alt={item.imageAlt?.[locale] ?? ''}
+                      width="1200"
+                      height="675"
+                      class="aspect-video w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                ) : null}
+                <div class="p-5">
+                  <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
+                    {locale === 'en' ? item.dateEn : item.dateEs} · Notofilia
+                  </p>
+                  <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                    {item[locale]}
+                  </h3>
+                  <a
+                    href={localizePath(item.href, locale)}
+                    class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                  >
+                    {t.readMore}
+                  </a>
+                </div>
               </article>
             </li>
           ))
@@ -198,33 +215,48 @@ const heroAlt =
       </h2>
       <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {
-          news.map((item) => (
+          featuredNews.map((item) => (
             <li>
-              <article class="h-full rounded-[6px] border border-line-strong bg-bg p-5">
-                <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
-                  {locale === 'en' ? item.dateEn : item.dateEs}
-                </p>
-                <p class="mb-0 mt-2 font-sans text-[14px]/5 text-muted">
-                  {t.source}:{' '}
-                  <a
-                    href={item.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-gold-light underline decoration-line-strong hover:text-cream"
-                  >
-                    {item.source}
-                    <NewWindowHint locale={locale} />
+              <article class="h-full overflow-hidden rounded-[6px] border border-line-strong bg-bg">
+                {item.image ? (
+                  <a href={localizePath(item.href, locale)} class="block no-underline">
+                    <img
+                      src={item.image}
+                      alt={item.imageAlt?.[locale] ?? ''}
+                      width="1200"
+                      height="675"
+                      class="aspect-video w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
-                </p>
-                <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-                  {item[locale]}
-                </h3>
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-                >
-                  {t.readMore}
-                </a>
+                ) : null}
+                <div class="p-5">
+                  <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
+                    {locale === 'en' ? item.dateEn : item.dateEs}
+                  </p>
+                  <p class="mb-0 mt-2 font-sans text-[14px]/5 text-muted">
+                    {t.source}:{' '}
+                    <a
+                      href={item.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                    >
+                      {item.source}
+                      <NewWindowHint locale={locale} />
+                    </a>
+                  </p>
+                  <h3 class="mb-3 mt-2 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                    {item[locale]}
+                  </h3>
+                  <a
+                    href={localizePath(item.href, locale)}
+                    class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                  >
+                    {t.readMore}
+                  </a>
+                </div>
               </article>
             </li>
           ))

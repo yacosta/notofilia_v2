@@ -1,0 +1,245 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import {
+  articlePath,
+  blogPath,
+  editorialCopy,
+  enhanceProseHtml,
+  newsPath,
+  type EditorialArticle,
+} from '../../data/editorial';
+
+interface Props {
+  locale: Locale;
+  kind: 'blog' | 'news';
+  article: EditorialArticle;
+}
+
+const { locale, kind, article } = Astro.props;
+const t = editorialCopy[locale];
+const pathname = articlePath(kind, article.slug, locale);
+const indexPath = kind === 'blog' ? blogPath(locale) : newsPath(locale);
+const sectionLabel = kind === 'blog' ? t.blog : t.news;
+const backLabel = kind === 'blog' ? t.backToBlog : t.backToNews;
+const title = article.title[locale];
+const dek = article.dek[locale];
+const description = article.description[locale];
+const body = enhanceProseHtml(article.bodyHtml[locale] || article.bodyHtml.es, locale);
+const claim = article.claim;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': kind === 'blog' ? 'BlogPosting' : 'NewsArticle',
+  headline: title,
+  description,
+  datePublished: article.published,
+  dateModified: article.updated || article.published,
+  inLanguage: locale,
+  image: new URL(article.image, SITE_URL).href,
+  url: new URL(pathname, SITE_URL).href,
+  author: { '@type': 'Organization', name: 'Notofilia' },
+  publisher: { '@type': 'Organization', name: 'Notofilia', url: SITE_URL },
+};
+---
+
+<Layout title={`${title} · Notofilia`} description={description} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
+              {t.home}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={indexPath}>
+              {sectionLabel}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{title}</li>
+        </ol>
+      </nav>
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">
+          {t.published}{' '}
+          <time datetime={article.published}>{locale === 'en' ? article.dateEn : article.dateEs}</time>
+        </p>
+        {
+          article.sourceName && article.sourceUrl ? (
+            <p class="mb-3 mt-0 flex flex-wrap items-center gap-x-1.5 font-sans text-[13px] tracking-[0.04em] text-muted">
+              <span>{t.source}:</span>
+              <a
+                href={article.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex min-h-11 items-center text-cream underline decoration-line-strong hover:text-gold-light"
+              >
+                {article.sourceName}
+                <NewWindowHint locale={locale} />
+              </a>
+            </p>
+          ) : null
+        }
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {title}
+        </h1>
+        <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{dek}</p>
+        <dl class="mb-9 mt-0 grid gap-1 font-sans text-[14px] tracking-[0.02em] text-muted">
+          {
+            article.reviewer ? (
+              <div class="flex flex-wrap gap-x-2">
+                <dt class="m-0 font-semibold text-cream-soft">{t.reviewedBy}</dt>
+                <dd class="m-0">
+                  <a class="text-muted hover:text-cream" href={localizePath('/editorial/', locale)}>
+                    {article.reviewer}
+                  </a>
+                </dd>
+              </div>
+            ) : null
+          }
+          {
+            article.updated ? (
+              <div class="flex flex-wrap gap-x-2">
+                <dt class="m-0 font-semibold text-cream-soft">{t.updated}</dt>
+                <dd class="m-0">
+                  <time datetime={article.updated}>{locale === 'en' ? article.updatedEn : article.updatedEs}</time>
+                </dd>
+              </div>
+            ) : null
+          }
+        </dl>
+      </header>
+
+      <figure class="mb-10 mt-0">
+        <img
+          src={article.image}
+          alt={article.imageAlt[locale]}
+          width="1200"
+          height="675"
+          class="aspect-video w-full bg-panel object-cover"
+          fetchpriority="high"
+          decoding="async"
+        />
+        {
+          article.caption[locale] ? (
+            <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{article.caption[locale]}</figcaption>
+          ) : null
+        }
+      </figure>
+
+      {
+        claim ? (
+          <aside class="mb-10 mt-8 border border-[rgba(138,109,59,0.35)] bg-[rgba(138,109,59,0.08)] px-5 py-5 sm:px-6" aria-labelledby="claim-callout-heading">
+            <h2 id="claim-callout-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+              {t.aboutFigure}
+            </h2>
+            <p class="mb-3 mt-0 font-sans text-[15px] uppercase tracking-[0.06em] text-gold-light">
+              {t.figureType} <span class="font-semibold normal-case tracking-normal text-cream">{locale === 'en' ? claim.kindEn : claim.kindEs}</span>
+            </p>
+            <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">
+              {locale === 'en' ? claim.noteEn || claim.noteEs : claim.noteEs}
+            </p>
+            <dl class="mt-4 grid gap-2 font-sans text-[15px] text-cream-dim">
+              {claim.currency ? (
+                <div class="flex flex-wrap gap-x-2">
+                  <dt class="m-0 font-semibold text-cream">{t.currency}</dt>
+                  <dd class="m-0">{claim.currency}</dd>
+                </div>
+              ) : null}
+              {claim.valueIso ? (
+                <div class="flex flex-wrap gap-x-2">
+                  <dt class="m-0 font-semibold text-cream">{t.valuationDate}</dt>
+                  <dd class="m-0">
+                    <time datetime={claim.valueIso}>{locale === 'en' ? claim.valueEn : claim.valueEs}</time>
+                  </dd>
+                </div>
+              ) : null}
+              {claim.evidenceHref ? (
+                <div class="flex flex-wrap gap-x-2">
+                  <dt class="m-0 font-semibold text-cream">{t.evidence}</dt>
+                  <dd class="m-0">
+                    <a
+                      href={claim.evidenceHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-cream underline decoration-line-strong hover:text-gold-light"
+                    >
+                      {locale === 'en' ? claim.evidenceLabelEn || claim.evidenceLabelEs : claim.evidenceLabelEs}
+                      <NewWindowHint locale={locale} />
+                    </a>
+                  </dd>
+                </div>
+              ) : null}
+            </dl>
+            <p class="mb-0 mt-4 font-sans text-[15px] text-muted">
+              <a class="text-muted underline decoration-line-strong hover:text-cream" href={localizePath('/editorial/', locale)}>
+                {t.editorialPolicy}
+              </a>
+            </p>
+          </aside>
+        ) : null
+      }
+
+      <div class="prose-notofilia" set:html={body} />
+
+      {
+        article.sourceName && article.sourceUrl ? (
+          <p class="mt-10 flex flex-wrap items-center gap-x-1.5 border-t border-line pt-6 font-sans text-[16px] text-muted">
+            <span class="font-semibold text-cream-soft">{t.source}:</span>
+            <a
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex min-h-11 items-center text-cream underline decoration-line-strong hover:text-gold-light"
+            >
+              {article.sourceName}
+              <NewWindowHint locale={locale} />
+            </a>
+          </p>
+        ) : null
+      }
+
+      {
+        article.related.length ? (
+          <aside class="mt-12 rounded-[4px] border border-line px-6 py-6" aria-labelledby="related-heading">
+            <h2 id="related-heading" class="mb-4 mt-0 font-display text-[24px] font-normal text-cream">
+              {t.keepExploring}
+            </h2>
+            <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+              {article.related.map((related) => (
+                <li>
+                  <a class="font-semibold text-cream no-underline hover:text-gold-light" href={localizePath(related.href, locale)}>
+                    {related.title}
+                  </a>
+                  {related.dek ? <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{related.dek}</p> : null}
+                </li>
+              ))}
+            </ul>
+          </aside>
+        ) : null
+      }
+
+      <p class="mt-6 font-sans text-[14px] text-muted">
+        <a class="text-muted underline decoration-line-strong hover:text-cream" href={localizePath('/editorial/', locale)}>
+          {t.editorialPolicy}
+        </a>
+      </p>
+
+      <p class="mt-10">
+        <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={indexPath}>
+          ← {backLabel}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
