@@ -291,6 +291,7 @@ body.mega-drawer-lock {
     max-height: min(32rem, calc(100dvh - 10rem));
     overflow-y: auto;
     overscroll-behavior: contain;
+    scrollbar-gutter: stable;
   }
 }
 
