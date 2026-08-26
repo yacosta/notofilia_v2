@@ -68,7 +68,14 @@ export const megaNav: NavNode[] = [
         href: PUERTO_RICO_PATH,
       },
       { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },
-      { id: 'polimero', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
+      {
+        id: 'polimero',
+        es: 'Billetes de polímero mundial',
+        en: 'World polymer banknotes',
+        children: [
+          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH },
+        ],
+      },
     ],
   },
   {
