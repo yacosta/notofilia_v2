@@ -38,9 +38,9 @@ const hero =
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <section class="relative min-h-[80vh] w-full bg-[#0a0a09] md:min-h-[90vh]" aria-labelledby="series-heading">
+    <section class="relative min-h-[82vh] w-full bg-[#0a0a09] md:min-h-[92vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-x-0 bottom-0 top-[4.25rem] h-[calc(100%-4.25rem)] w-full object-cover object-top [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)] md:top-[8.75rem] md:h-[calc(100%-8.75rem)]"
+        class="absolute inset-0 h-full w-full object-contain object-top pt-[4.25rem] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)] md:pt-[8.75rem]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -59,7 +59,7 @@ const hero =
       >
       </div>
       <div
-        class="relative z-[1] mx-auto flex min-h-[80vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(58vh,32rem)] md:min-h-[90vh] md:pb-16"
+        class="relative z-[1] mx-auto flex min-h-[82vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(60vh,34rem)] md:min-h-[92vh] md:pb-16"
       >
         <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
           {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
