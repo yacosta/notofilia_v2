@@ -1,5 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { ECUADOR_PATH } from '../data/ecuador';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -246,9 +247,9 @@ export const collections = [
     en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues.' },
   },
   {
-    href: '/coleccion/ecuador/',
-    es: { title: 'Ecuador', description: 'Sucres documentados de la colección virtual.' },
-    en: { title: 'Ecuador', description: 'Documented sucres from the virtual collection.' },
+    href: ECUADOR_PATH,
+    es: { title: 'Ecuador', description: 'Banca privada, Banco Central del Ecuador y dolarización del sucre.' },
+    en: { title: 'Ecuador', description: 'Private banks, the Central Bank of Ecuador, and dollarization of the sucre.' },
   },
   {
     href: '/coleccion/polimero-mundial/',
@@ -299,6 +300,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: ECUADOR_PATH,
+    es: {
+      title: 'Ecuador · Sucres de la banca privada al Banco Central',
+      description: 'Tercera vitrina del catálogo: primeros bancos, banca privada, Banco Central del Ecuador y dolarización.',
+    },
+    en: {
+      title: 'Ecuador · Sucres from private banks to the Central Bank',
+      description: 'Third catalog case: early banks, private issues, the Central Bank of Ecuador, and dollarization.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -308,6 +320,7 @@ export const news: NewsItem[] = [];
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
+  { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -348,6 +361,7 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  ECUADOR_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
