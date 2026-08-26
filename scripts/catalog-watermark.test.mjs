@@ -33,6 +33,11 @@ describe('catalog watermark helpers', () => {
     assert.match(svg, /y="190"/);
     assert.doesNotMatch(svg, /patternTransform/);
 
+    const tile = watermarkSvg({ width: 400, height: 200, style: 'tile' });
+    assert.match(tile, /patternTransform="rotate\(-32\)"/);
+    assert.match(tile, /notafilia-wm/);
+    assert.doesNotMatch(tile, /text-anchor="end"/);
+
     const xmp = rightsXmp({ relativePath: 'philippines/1-peso-front.jpg', year: 2026 });
     assert.match(xmp, new RegExp(CREATOR));
     assert.match(xmp, /Copyright 2026/);

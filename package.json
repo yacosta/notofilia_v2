@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "images": "node scripts/watermark-catalog.mjs",
+    "images:preview": "node scripts/preview-watermarks.mjs",
     "predev": "node scripts/watermark-catalog.mjs",
     "dev": "astro dev",
     "prebuild": "node scripts/watermark-catalog.mjs",

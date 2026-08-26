@@ -17,6 +17,10 @@ export const CREATOR = 'Yezid Acosta';
 /** Mid-range of the 30–50% signature guidance: readable, not a veil over the piece. */
 export const SIGNATURE_OPACITY = 0.4;
 
+/** Light repeating mark: readable on white grounds, not a veil over the piece. */
+export const TILE_FILL_OPACITY = 0.16;
+export const TILE_STROKE_OPACITY = 0.12;
+
 export function copyrightYear(now = new Date()) {
   return now.getUTCFullYear();
 }
@@ -30,22 +34,40 @@ export function imageDescription(relativePath) {
 }
 
 /**
- * Subtle bottom-right text signature at SIGNATURE_OPACITY.
- * Masters stay in catalog-src/; only this web-sized copy is published.
+ * `corner`: bottom-right signature. `tile`: light diagonal repeat (harder to crop).
+ * Masters stay in catalog-src/; only the web-sized copy is published.
  */
 export function watermarkSvg({
   width,
   height,
+  style = 'corner',
   mark = `${CREDIT} · notofilia.com`,
   opacity = SIGNATURE_OPACITY,
 }) {
   const shortest = Math.min(width, height);
+  const escaped = escapeXml(mark);
+  const font = 'DejaVu Sans, Liberation Sans, Arial, sans-serif';
+
+  if (style === 'tile') {
+    const fontSize = Math.max(14, Math.round(shortest * 0.034));
+    const tileW = Math.max(360, Math.round(fontSize * mark.length * 0.7));
+    const tileH = Math.max(120, Math.round(fontSize * 4.2));
+    const baseline = Math.round(tileH * 0.58);
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+  <defs>
+    <pattern id="notafilia-wm" patternUnits="userSpaceOnUse" width="${tileW}" height="${tileH}" patternTransform="rotate(-32)">
+      <text x="12" y="${baseline}" font-family="${font}" font-size="${fontSize}" font-weight="600" fill="rgba(10,10,9,${TILE_FILL_OPACITY})" stroke="rgba(231,221,196,${TILE_STROKE_OPACITY})" stroke-width="0.6">${escaped}</text>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#notafilia-wm)"/>
+</svg>`;
+  }
+
   const fontSize = Math.max(12, Math.min(22, Math.round(shortest * 0.028)));
   const pad = Math.max(10, Math.round(shortest * 0.025));
   const x = width - pad;
   const y = height - pad;
-  const escaped = escapeXml(mark);
-  const font = 'DejaVu Sans, Liberation Sans, Arial, sans-serif';
   const fillA = opacity.toFixed(2);
   const strokeA = Math.min(0.5, opacity * 0.85).toFixed(2);
 
@@ -127,7 +149,7 @@ export async function collectImages(rootDir) {
   return found;
 }
 
-export async function processCatalogImage(srcPath, destPath, relativePath) {
+export async function processCatalogImage(srcPath, destPath, relativePath, { style = 'corner' } = {}) {
   const meta = await sharp(srcPath).metadata();
   const srcWidth = meta.autoOrient?.width ?? meta.width;
   const srcHeight = meta.autoOrient?.height ?? meta.height;
@@ -150,7 +172,7 @@ export async function processCatalogImage(srcPath, destPath, relativePath) {
 
   pipeline = pipeline.composite([
     {
-      input: Buffer.from(watermarkSvg({ width, height })),
+      input: Buffer.from(watermarkSvg({ width, height, style })),
       blend: 'over',
     },
   ]);
@@ -178,14 +200,14 @@ export async function processCatalogImage(srcPath, destPath, relativePath) {
   await pipeline.toFile(destPath);
 }
 
-export async function watermarkCatalog({ sourceRoot, destRoot }) {
+export async function watermarkCatalog({ sourceRoot, destRoot, style = 'corner' }) {
   const sources = await collectImages(sourceRoot);
   const results = [];
 
   for (const srcPath of sources) {
     const relativePath = path.relative(sourceRoot, srcPath);
     const destPath = path.join(destRoot, relativePath);
-    await processCatalogImage(srcPath, destPath, relativePath);
+    await processCatalogImage(srcPath, destPath, relativePath, { style });
     results.push({ relativePath, destPath });
   }
 
