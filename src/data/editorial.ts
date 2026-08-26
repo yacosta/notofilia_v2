@@ -175,3 +175,16 @@ export function enhanceProseHtml(html: string, locale: Locale): string {
 export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArticle[] {
   return (kind === 'blog' ? blogArticles : newsArticles).slice(0, limit);
 }
+
+export function resolveRelated(related: RelatedLink[], locale: Locale): RelatedLink[] {
+  return related.map((item) => {
+    const slug = item.href.replace(/^\/+|\/+$/g, '').split('/').pop() ?? '';
+    const target = findNewsArticle(slug) ?? findBlogArticle(slug);
+    if (!target) return item;
+    return {
+      href: item.href,
+      title: target.title[locale],
+      dek: locale === 'en' ? target.dek.en : item.dek || target.dek.es,
+    };
+  });
+}

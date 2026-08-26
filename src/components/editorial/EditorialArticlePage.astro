@@ -8,6 +8,7 @@ import {
   editorialCopy,
   enhanceProseHtml,
   newsPath,
+  resolveRelated,
   type EditorialArticle,
 } from '../../data/editorial';
 
@@ -26,7 +27,10 @@ const backLabel = kind === 'blog' ? t.backToBlog : t.backToNews;
 const title = article.title[locale];
 const dek = article.dek[locale];
 const description = article.description[locale];
-const body = enhanceProseHtml(article.bodyHtml[locale] || article.bodyHtml.es, locale);
+const rawBody = article.bodyHtml[locale] || article.bodyHtml.es;
+const bodyIsFallback = locale === 'en' && rawBody === article.bodyHtml.es;
+const body = enhanceProseHtml(rawBody, locale);
+const related = resolveRelated(article.related, locale);
 const claim = article.claim;
 
 const jsonLd = {
@@ -190,7 +194,7 @@ const jsonLd = {
         ) : null
       }
 
-      <div class="prose-notofilia" set:html={body} />
+      <div class="prose-notofilia" lang={bodyIsFallback ? 'es' : locale} set:html={body} />
 
       {
         article.sourceName && article.sourceUrl ? (
@@ -210,23 +214,23 @@ const jsonLd = {
       }
 
       {
-        article.related.length ? (
+        related.length ? (
           <aside class="mt-12 rounded-[4px] border border-line px-6 py-6" aria-labelledby="related-heading">
             <h2 id="related-heading" class="mb-4 mt-0 font-display text-[24px] font-normal text-cream">
               {t.keepExploring}
             </h2>
             <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
-              {article.related.map((related) => (
+              {related.map((item) => (
                 <li>
-                  <a class="font-semibold text-cream no-underline hover:text-gold-light" href={localizePath(related.href, locale)}>
-                    {related.title}
+                  <a class="font-semibold text-cream no-underline hover:text-gold-light" href={localizePath(item.href, locale)}>
+                    {item.title}
                   </a>
-                  {related.dek ? <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{related.dek}</p> : null}
+                  {item.dek ? <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{item.dek}</p> : null}
                 </li>
               ))}
             </ul>
           </aside>
-        ) : null
+        ) : null}
       }
 
       <p class="mt-6 font-sans text-[14px] text-muted">
