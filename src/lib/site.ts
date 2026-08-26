@@ -2,6 +2,7 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { POLYMER_PATH } from '../data/polymer-mundial';
 
 export type Locale = 'es' | 'en';
 
@@ -251,7 +252,7 @@ export const collections = [
     en: { title: 'Ecuador', description: 'Documented sucres from the virtual collection.' },
   },
   {
-    href: '/coleccion/polimero-mundial/',
+    href: POLYMER_PATH,
     es: { title: 'Billetes de polímero', description: 'Catálogo mundial de sustratos Guardian, Safeguard e híbridos.' },
     en: { title: 'Polymer banknotes', description: 'World catalog of Guardian, Safeguard, and hybrid substrates.' },
   },
@@ -299,6 +300,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: POLYMER_PATH,
+    es: {
+      title: 'Billetes de polímero mundial',
+      description: 'Tercera vitrina del catálogo: 29 emisores en Guardian, Safeguard, Tyvek e híbridos, por región.',
+    },
+    en: {
+      title: 'World polymer banknotes',
+      description: 'Third catalog case: 29 issuers on Guardian, Safeguard, Tyvek, and hybrids, by region.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -309,7 +321,7 @@ export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
-  { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
+  { href: POLYMER_PATH, es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
 ] as const;
 
@@ -348,10 +360,11 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  POLYMER_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
 
-export { SERIES_PATH };
+export { SERIES_PATH, POLYMER_PATH };
 
 export const STATS = collectionStats();

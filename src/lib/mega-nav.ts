@@ -1,5 +1,6 @@
 import { COLOMBIA_PATH } from '../data/colombia';
 import { SERIES_PATH } from '../data/philippines-victory-66';
+import { POLYMER_PATH } from '../data/polymer-mundial';
 
 export type NavNode = {
   id: string;
@@ -49,7 +50,23 @@ export const megaNav: NavNode[] = [
       },
       { id: 'puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
       { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },
-      { id: 'polimero', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
+      {
+        id: 'polimero',
+        es: 'Billetes de polímero mundial',
+        en: 'World polymer banknotes',
+        href: POLYMER_PATH,
+        children: [
+          { id: 'polimero-americas', es: 'Américas', en: 'Americas', href: `${POLYMER_PATH}#americas` },
+          { id: 'polimero-asia', es: 'Asia-Pacífico', en: 'Asia-Pacific', href: `${POLYMER_PATH}#asia-pacifico` },
+          { id: 'polimero-africa', es: 'África', en: 'Africa', href: `${POLYMER_PATH}#africa` },
+          {
+            id: 'polimero-europa',
+            es: 'Europa y Oriente Medio',
+            en: 'Europe and the Middle East',
+            href: `${POLYMER_PATH}#europa-oriente-medio`,
+          },
+        ],
+      },
     ],
   },
   {
