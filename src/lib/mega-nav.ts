@@ -1,6 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
+import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 
@@ -74,6 +75,47 @@ export const megaNav: NavNode[] = [
     id: 'coleccion-numismatica',
     es: 'Colección Virtual Numismática',
     en: 'Virtual Numismatics Collection',
+    href: NUMISMATICS_PATH,
+    children: [
+      {
+        id: 'nl-monedas',
+        es: 'Países Bajos',
+        en: 'Netherlands',
+        href: NETHERLANDS_COINAGE_PATH,
+        children: [
+          {
+            id: 'nl-medieval',
+            es: 'Del penique al gulden',
+            en: 'From penny to gulden',
+            href: `${NETHERLANDS_COINAGE_PATH}#medieval`,
+          },
+          {
+            id: 'nl-ducado',
+            es: 'Cecas provinciales y ducado',
+            en: 'Provincial mints and the ducat',
+            href: `${NETHERLANDS_COINAGE_PATH}#ducado-comercial`,
+          },
+          {
+            id: 'nl-ducado-1761',
+            es: 'Ducado de Utrecht, 1761',
+            en: 'Utrecht ducat, 1761',
+            href: `${NETHERLANDS_COINAGE_PATH}ducado-utrecht-1761/`,
+          },
+          {
+            id: 'nl-decimal',
+            es: 'El gulden decimal',
+            en: 'The decimal gulden',
+            href: `${NETHERLANDS_COINAGE_PATH}#gulden-decimal`,
+          },
+          {
+            id: 'nl-euro-monedas',
+            es: 'Cinc, posguerra y euro',
+            en: 'Zinc, postwar, and the euro',
+            href: `${NETHERLANDS_COINAGE_PATH}#ocupacion-euro`,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'recursos',
