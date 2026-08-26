@@ -9,6 +9,7 @@ export default defineConfig({
   redirects: {
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
     '/en/coleccion/numismatica/colombia': '/en/coleccion/colombia-numismatica/',
+    '/en/coleccion/estados-unidos': '/en/coleccion/united-states/',
   },
   vite: {
     plugins: [tailwindcss()],

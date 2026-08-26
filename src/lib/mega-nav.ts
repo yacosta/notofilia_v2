@@ -1,5 +1,6 @@
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { USA_PATH } from '../data/estados-unidos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -33,14 +34,15 @@ export const megaNav: NavNode[] = [
         id: 'estados-unidos',
         es: 'Estados Unidos',
         en: 'United States',
+        href: USA_PATH,
         children: [
-          { id: 'us-colonial', es: 'Moneda colonial', en: 'Colonial coinage' },
-          { id: 'us-obsoleto', es: 'Billete obsoleto', en: 'Obsolete notes' },
-          { id: 'us-notes', es: 'United States Notes', en: 'United States Notes' },
-          { id: 'us-pop-art', es: 'Pop art', en: 'Pop art' },
-          { id: 'us-gold', es: 'Gold Certificates', en: 'Gold Certificates' },
-          { id: 'us-silver', es: 'Silver Certificates', en: 'Silver Certificates' },
-          { id: 'us-frb', es: 'Federal Reserve Bank', en: 'Federal Reserve Bank' },
+          { id: 'us-colonial', es: 'Moneda colonial', en: 'Colonial coinage', href: `${USA_PATH}#us-colonial` },
+          { id: 'us-obsoleto', es: 'Billete obsoleto', en: 'Obsolete notes', href: `${USA_PATH}#us-obsoleto` },
+          { id: 'us-notes', es: 'United States Notes', en: 'United States Notes', href: `${USA_PATH}#us-notes` },
+          { id: 'us-gold', es: 'Gold Certificates', en: 'Gold Certificates', href: `${USA_PATH}#us-gold` },
+          { id: 'us-silver', es: 'Silver Certificates', en: 'Silver Certificates', href: `${USA_PATH}#us-silver` },
+          { id: 'us-frb', es: 'Federal Reserve Bank', en: 'Federal Reserve Bank', href: `${USA_PATH}#us-frb` },
+          { id: 'us-pop-art', es: 'Pop art', en: 'Pop art', href: `${USA_PATH}#us-pop-art` },
         ],
       },
       {
