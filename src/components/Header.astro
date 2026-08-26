@@ -1,5 +1,7 @@
 ---
-import { copy, localizePath, otherLocalePath, primaryNav, type Locale } from '../lib/site';
+import NavIcon from './NavIcon.astro';
+import { copy, localizePath, otherLocalePath, type Locale } from '../lib/site';
+import { megaNav } from '../lib/mega-nav';
 
 interface Props {
   locale: Locale;
@@ -12,37 +14,35 @@ const home = localizePath('/', locale);
 const enHref = locale === 'en' ? pathname : otherLocalePath(pathname, 'es');
 const esHref = locale === 'es' ? pathname : otherLocalePath(pathname, 'en');
 const searchAction = localizePath('/buscar/', locale);
+
+function currentPath(href: string) {
+  if (href.startsWith('/#')) return localizePath('/', locale) + href.slice(1);
+  return localizePath(href, locale);
+}
+
+function isCurrent(href: string) {
+  if (href.startsWith('/#')) return false;
+  const localized = localizePath(href, locale);
+  if (localized === home) return pathname === home;
+  return pathname === localized || pathname.startsWith(localized);
+}
 ---
 
-<header class="sticky top-0 z-50 border-b border-line bg-bg/72 backdrop-blur-[10px]">
-  <nav
-    class="mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto] items-center gap-x-6 gap-y-1 px-[var(--chrome-gutter)] min-h-[68px] lg:grid-cols-[minmax(min-content,1.25fr)_minmax(0,1fr)_auto]"
-    aria-label={t.navLabel}
-  >
-    <a
-      href={home}
-      class="flex min-h-11 min-w-min flex-col justify-center pr-4 text-cream-dim no-underline"
-    >
+<header
+  class="mega-header sticky top-0 z-50 border-b border-line bg-bg/92 backdrop-blur-[10px]"
+  data-mega-header
+  data-open-submenu={t.openSubmenu}
+  data-close-named-submenu={t.closeNamedSubmenu}
+>
+  <div class="mega-utility mx-auto flex min-h-[68px] w-full items-center justify-between gap-4 px-[var(--chrome-gutter)]">
+    <a href={home} class="flex min-h-11 min-w-min flex-col justify-center text-cream-dim no-underline">
       <span class="whitespace-nowrap font-display text-[22px] tracking-[0.1em] md:text-[28px]">NOTOFILIA</span>
-      <span class="hidden whitespace-nowrap font-sans text-[12px] italic tracking-[0.08em] text-cream-dim md:block">{t.brandTag}</span>
+      <span class="hidden whitespace-nowrap font-sans text-[12px] italic tracking-[0.08em] text-cream-dim md:block">
+        {t.brandTag}
+      </span>
     </a>
 
-    <ul class="hidden min-w-0 w-full list-none m-0 p-0 flex-wrap items-center justify-end gap-x-0 gap-y-0 lg:flex">
-      {
-        primaryNav.map((item) => (
-          <li class="shrink">
-            <a
-              href={localizePath(item.href, locale)}
-              class="inline-flex items-center min-h-11 px-1.5 font-sans text-[12px] font-semibold uppercase tracking-[0.06em] text-cream no-underline hover:text-cream-dim xl:px-2 xl:text-[13px] xl:tracking-[0.08em]"
-            >
-              {item[locale]}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-
-    <div class="flex items-center gap-2 justify-self-end">
+    <div class="flex items-center gap-2">
       <form action={searchAction} method="get" class="hidden md:block" role="search">
         <label class="sr-only" for="site-search">{t.searchLabel}</label>
         <input
@@ -79,40 +79,161 @@ const searchAction = localizePath('/buscar/', locale);
         }
       </div>
 
-      <details class="relative lg:hidden">
-        <summary class="flex min-h-11 min-w-11 cursor-pointer list-none flex-col items-center justify-center gap-[5px] text-cream">
-          <span class="sr-only">{t.menu}</span>
-          <span class="block h-[1.5px] w-[22px] bg-cream" aria-hidden="true"></span>
-          <span class="block h-[1.5px] w-[22px] bg-cream" aria-hidden="true"></span>
-          <span class="mr-[7px] block h-[1.5px] w-[15px] self-end bg-cream" aria-hidden="true"></span>
-        </summary>
-        <div class="absolute right-0 top-full z-50 mt-2 w-[min(92vw,22rem)] rounded-[6px] border border-line-strong bg-panel text-cream shadow-[0_16px_32px_rgba(0,0,0,0.45)]">
-          <form action={searchAction} method="get" class="border-b border-line p-4" role="search">
-            <label class="sr-only" for="site-search-mobile">{t.searchLabel}</label>
-            <input
-              id="site-search-mobile"
-              name="q"
-              type="search"
-              placeholder={t.searchPlaceholder}
-              class="box-border min-h-11 w-full rounded-[6px] border border-line-input bg-bg px-3 font-sans text-[14px] text-cream"
-            />
-          </form>
-          <ul class="m-0 list-none p-0">
-            {
-              primaryNav.map((item) => (
-                <li>
-                  <a
-                    href={localizePath(item.href, locale)}
-                    class="flex min-h-11 items-center border-b border-line px-6 font-sans text-[15px] text-cream no-underline hover:text-cream-dim"
-                  >
-                    {item[locale]}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-      </details>
+      <button
+        type="button"
+        class="mega-drawer-toggle inline-flex min-h-11 min-w-11 flex-col items-center justify-center gap-[5px] border-0 bg-transparent p-0 text-cream lg:hidden"
+        data-mega-drawer-toggle
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span class="sr-only">{t.menu}</span>
+        <span class="block h-[1.5px] w-[22px] bg-cream" aria-hidden="true"></span>
+        <span class="block h-[1.5px] w-[22px] bg-cream" aria-hidden="true"></span>
+        <span class="mr-[7px] block h-[1.5px] w-[15px] self-end bg-cream" aria-hidden="true"></span>
+      </button>
     </div>
+  </div>
+
+  <nav class="mega-bar" aria-label={t.navLabel} data-mega-nav id="site-menu">
+    <div class="mega-drawer-toolbar lg:hidden">
+      <p class="m-0 font-display text-[18px] tracking-[0.12em] text-cream">NOTOFILIA</p>
+      <button
+        type="button"
+        class="inline-flex min-h-11 min-w-11 items-center justify-center border-0 bg-transparent p-0 font-sans text-[13px] font-semibold uppercase tracking-[0.08em] text-cream"
+        data-mega-drawer-close
+      >
+        {t.closeMenu}
+      </button>
+    </div>
+
+    <p class="sr-only" id="mega-nav-help">{t.navHelp}</p>
+    <p class="sr-only">{t.navOnMenu}</p>
+
+    <ul class="mega-list" aria-describedby="mega-nav-help">
+      {
+        megaNav.map((item) => {
+          const href = currentPath(item.href);
+          const panelId = `mega-panel-${item.id}`;
+          const label = item[locale];
+          const current = isCurrent(item.href);
+          return (
+            <li class:list={['mega-item', current && 'is-current']} data-mega-item>
+              <div class="mega-item-chrome">
+                <a
+                  href={href}
+                  class="mega-item-link"
+                  aria-current={current ? 'page' : undefined}
+                >
+                  <NavIcon name={item.icon} />
+                  <span class="mega-item-title">{label}</span>
+                </a>
+                {item.panel && (
+                  <button
+                    type="button"
+                    class="mega-item-toggle"
+                    data-mega-submenu-toggle
+                    data-menu-title={label}
+                    aria-expanded="false"
+                    aria-controls={panelId}
+                    aria-label={t.openSubmenu.replace('{menuTitle}', label)}
+                  >
+                    <span class="mega-item-chevron" aria-hidden="true"></span>
+                  </button>
+                )}
+              </div>
+
+              {item.panel && (
+                <div class="mega-panel" id={panelId} data-mega-panel hidden>
+                  <div class="mega-panel-inner">
+                    <div class="mega-subhead lg:hidden">
+                      <button type="button" class="mega-sub-back" data-mega-sub-back>
+                        {t.backToMenu}
+                      </button>
+                      <p class="mega-subhead-title">{label}</p>
+                    </div>
+
+                    <ul class="mega-card-list">
+                      {item.panel.cards.map((card) => (
+                        <li class:list={['mega-card', `mega-card--${card.size}`]}>
+                          <a class="mega-card-link" href={currentPath(card.href)}>
+                            {card.image && (
+                              <span class="mega-card-media">
+                                <img
+                                  src={card.image.src}
+                                  alt={card.image.alt[locale]}
+                                  width={card.image.width}
+                                  height={card.image.height}
+                                  loading="lazy"
+                                  decoding="async"
+                                />
+                              </span>
+                            )}
+                            <span class="mega-card-title">{card.title[locale]}</span>
+                          </a>
+                          {card.links && card.links.length > 0 && (
+                            <ul class="mega-card-links">
+                              {card.links.map((link) => (
+                                <li>
+                                  <a href={currentPath(link.href)}>{link[locale]}</a>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {item.panel.banner && (
+                      <a class="mega-banner" href={currentPath(item.panel.banner.href)}>
+                        <img
+                          src={item.panel.banner.image.src}
+                          alt={item.panel.banner.image.alt[locale]}
+                          width={item.panel.banner.image.width}
+                          height={item.panel.banner.image.height}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <span class="mega-banner-copy">
+                          <span class="mega-banner-title">{item.panel.banner.title[locale]}</span>
+                          <span class="mega-banner-cta">{item.panel.banner.cta[locale]}</span>
+                        </span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              )}
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <form action={searchAction} method="get" class="mega-drawer-search lg:hidden" role="search">
+      <label class="sr-only" for="site-search-mobile">{t.searchLabel}</label>
+      <input
+        id="site-search-mobile"
+        name="q"
+        type="search"
+        placeholder={t.searchPlaceholder}
+        class="box-border min-h-11 w-full rounded-[6px] border border-line-input bg-bg px-3 font-sans text-[14px] text-cream"
+      />
+    </form>
   </nav>
+
+  <div class="mega-backdrop" data-mega-backdrop hidden></div>
 </header>
+
+<script>
+  import { initMegaMenu } from '../scripts/mega-menu';
+
+  function bind() {
+    const header = document.querySelector<HTMLElement>('[data-mega-header]');
+    if (header && !header.dataset.megaBound) {
+      header.dataset.megaBound = 'true';
+      initMegaMenu(header);
+    }
+  }
+
+  bind();
+  document.addEventListener('astro:page-load', bind);
+</script>
