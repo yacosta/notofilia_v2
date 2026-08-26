@@ -1,5 +1,12 @@
 const desktopQuery = window.matchMedia('(min-width: 1024px)');
 
+/** Pause before opening so crossing the bar does not snap panels open. */
+const OPEN_DELAY_MS = 140;
+/** Keep the open panel long enough to reach it, scroll it, or change items. */
+const CLOSE_DELAY_MS = 700;
+/** Faster swap once another top-level item is already open. */
+const SWITCH_DELAY_MS = 80;
+
 function isDesktop() {
   return desktopQuery.matches;
 }
@@ -24,6 +31,11 @@ function itemToggle(item: HTMLElement) {
   return item.querySelector<HTMLButtonElement>(':scope > .mega-item-chrome [data-mega-submenu-toggle], :scope > .mega-tree-row [data-mega-submenu-toggle]');
 }
 
+function hasOpenSibling(item: HTMLElement) {
+  const siblings = item.parentElement?.querySelectorAll<HTMLElement>(':scope > .is-open') ?? [];
+  return [...siblings].some((sibling) => sibling !== item);
+}
+
 export function initMegaMenu(header: HTMLElement) {
   const nav = header.querySelector<HTMLElement>('[data-mega-nav]');
   const backdrop = header.querySelector<HTMLElement>('[data-mega-backdrop]');
@@ -34,6 +46,12 @@ export function initMegaMenu(header: HTMLElement) {
   if (!nav || !drawerToggle) return;
 
   let lastFocus: HTMLElement | null = null;
+  let hoverTimer = 0;
+
+  function clearHoverTimer() {
+    window.clearTimeout(hoverTimer);
+    hoverTimer = 0;
+  }
 
   function setExpanded(item: HTMLElement, open: boolean) {
     const panel = itemPanel(item);
@@ -69,7 +87,28 @@ export function initMegaMenu(header: HTMLElement) {
   }
 
   function closeAllMenus() {
+    clearHoverTimer();
     closeGroup(topItems);
+  }
+
+  function scheduleOpen(item: HTMLElement, delay: number) {
+    clearHoverTimer();
+    if (item.classList.contains('is-open')) return;
+    const wait = hasOpenSibling(item) ? SWITCH_DELAY_MS : delay;
+    hoverTimer = window.setTimeout(() => {
+      hoverTimer = 0;
+      openItem(item);
+    }, wait);
+  }
+
+  function scheduleCloseAll() {
+    clearHoverTimer();
+    hoverTimer = window.setTimeout(() => {
+      hoverTimer = 0;
+      const openItemEl = topItems.find((item) => item.classList.contains('is-open'));
+      if (openItemEl?.contains(document.activeElement)) return;
+      closeAllMenus();
+    }, CLOSE_DELAY_MS);
   }
 
   function setDrawer(open: boolean) {
@@ -87,7 +126,7 @@ export function initMegaMenu(header: HTMLElement) {
     }
   }
 
-  function bindItem(item: HTMLElement, hoverOpens: boolean) {
+  function bindItem(item: HTMLElement, hoverOpens: boolean, openDelay: number) {
     const panel = itemPanel(item);
     const button = itemToggle(item);
     const back = item.querySelector<HTMLButtonElement>(':scope > [data-mega-panel] > .mega-panel-inner > .mega-subhead [data-mega-sub-back], :scope > [data-mega-panel] [data-mega-sub-back]');
@@ -96,6 +135,7 @@ export function initMegaMenu(header: HTMLElement) {
     button?.addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
+      clearHoverTimer();
       toggleItem(item);
       if (!isDesktop() && item.classList.contains('is-open')) {
         panel?.querySelector<HTMLElement>('a, button')?.focus();
@@ -104,28 +144,29 @@ export function initMegaMenu(header: HTMLElement) {
 
     back?.addEventListener('click', (event) => {
       event.preventDefault();
+      clearHoverTimer();
       closeGroup([item]);
       button?.focus();
     });
 
     if (hoverOpens) {
       item.addEventListener('pointerenter', () => {
-        if (isDesktop() && panel) openItem(item);
-      });
-      item.addEventListener('mouseenter', () => {
-        if (isDesktop() && panel) openItem(item);
-      });
-      item.addEventListener('pointerleave', () => {
-        if (isDesktop()) closeGroup([item]);
-      });
-      item.addEventListener('mouseleave', () => {
-        if (isDesktop()) closeGroup([item]);
+        if (isDesktop() && panel) scheduleOpen(item, openDelay);
       });
     }
   }
 
-  for (const item of topItems) bindItem(item, true);
-  for (const branch of branches) bindItem(branch, true);
+  for (const item of topItems) bindItem(item, true, OPEN_DELAY_MS);
+  // Nested branches stay collapsed until the chevron is clicked, so the
+  // list does not jump while you move or scroll to another option.
+  for (const branch of branches) bindItem(branch, false, OPEN_DELAY_MS);
+
+  header.addEventListener('pointerenter', () => {
+    if (isDesktop()) clearHoverTimer();
+  });
+  header.addEventListener('pointerleave', () => {
+    if (isDesktop()) scheduleCloseAll();
+  });
 
   drawerToggle.addEventListener('click', () => {
     setDrawer(!header.classList.contains('is-drawer-open'));
@@ -140,6 +181,7 @@ export function initMegaMenu(header: HTMLElement) {
     if (event.key !== 'Escape') return;
     const openNested = branches.find((item) => item.classList.contains('is-open'));
     if (openNested) {
+      clearHoverTimer();
       closeGroup([openNested]);
       itemToggle(openNested)?.focus();
       event.preventDefault();

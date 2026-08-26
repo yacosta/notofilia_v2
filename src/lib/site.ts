@@ -1,5 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
 import {
@@ -65,51 +66,66 @@ export function statsLine(locale: Locale): string {
 
 const seedHoldings = holdingsStats();
 
-const localePathAliases = [
-  { es: NETHERLANDS_COINAGE_PATH, en: NETHERLANDS_COINAGE_PATH_EN },
-  ...netherlandsCoins.map((coin) => ({ es: coin.path, en: coin.pathEn })),
-] as const;
-
-function splitHash(path: string): { base: string; hash: string } {
-  const hashIndex = path.indexOf('#');
-  if (hashIndex === -1) return { base: path, hash: '' };
-  return { base: path.slice(0, hashIndex), hash: path.slice(hashIndex) };
+function stripEnPrefix(path: string): string {
+  return path.replace(/^\/en(?=\/|$)/, '') || '/';
 }
 
-function withTrailingSlash(path: string): string {
-  if (path === '/' || path.endsWith('/')) return path;
-  return `${path}/`;
+function stripTrailingSlash(path: string): string {
+  return path.replace(/\/$/, '') || '/';
 }
 
-function aliasedPath(path: string, target: Locale): string | undefined {
-  const { base, hash } = splitHash(path);
-  const normalized = withTrailingSlash(base);
-  for (const alias of localePathAliases) {
-    if (normalized === alias.es || normalized === alias.en) {
-      return `${target === 'en' ? alias.en : alias.es}${hash}`;
-    }
-  }
-  return undefined;
+function addLocalePair(
+  pairs: Record<string, { es: string; en: string }>,
+  esPath: string,
+  enPath: string,
+) {
+  const es = stripTrailingSlash(stripEnPrefix(esPath));
+  const en = stripTrailingSlash(stripEnPrefix(enPath));
+  const pair = { es, en };
+  pairs[es] = pair;
+  pairs[en] = pair;
+}
+
+/** Collection slugs that differ by language (Spanish filename vs English filename). */
+const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {};
+addLocalePair(localizedCollectionSlugs, USA_PATH, USA_PATH_EN);
+addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
+for (const coin of netherlandsCoins) {
+  addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
+}
+
+function splitHash(path: string): { pathname: string; hash: string } {
+  const index = path.indexOf('#');
+  if (index === -1) return { pathname: path, hash: '' };
+  return { pathname: path.slice(0, index), hash: path.slice(index) };
+}
+
+function rewriteCollectionSlug(pathname: string, locale: Locale): string {
+  const slash = pathname.endsWith('/') ? '/' : '';
+  const core = pathname.replace(/\/$/, '') || '/';
+  const pair = localizedCollectionSlugs[core];
+  if (!pair) return pathname;
+  return `${pair[locale]}${slash || '/'}`;
 }
 
 export function localizePath(path: string, locale: Locale): string {
   if (path.startsWith('http')) return path;
-  const aliased = aliasedPath(path, locale);
-  if (aliased) return aliased;
-  if (locale === 'es') return path;
-  if (path === '/') return '/en/';
-  if (path === '/en' || path.startsWith('/en/')) return path === '/en' ? '/en/' : path;
-  return `/en${path}`;
+  const { pathname, hash } = splitHash(path);
+  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+  const rewritten = rewriteCollectionSlug(unprefixed, locale);
+  if (locale === 'es') return `${rewritten}${hash}`;
+  if (rewritten === '/') return `/en/${hash}`;
+  return `/en${rewritten}${hash}`;
 }
 
 export function otherLocalePath(path: string, locale: Locale): string {
-  const target = locale === 'es' ? 'en' : 'es';
-  const aliased = aliasedPath(path, target);
-  if (aliased) return aliased;
-  if (locale === 'es') {
-    return path === '/' ? '/en/' : `/en${path}`;
-  }
-  return path.replace(/^\/en(?=\/|$)/, '') || '/';
+  const target: Locale = locale === 'es' ? 'en' : 'es';
+  const { pathname, hash } = splitHash(path);
+  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+  const rewritten = rewriteCollectionSlug(unprefixed, target);
+  if (target === 'es') return `${rewritten}${hash}`;
+  if (rewritten === '/') return `/en/${hash}`;
+  return `/en${rewritten}${hash}`;
 }
 
 export const copy = {
@@ -284,7 +300,7 @@ export const collections = [
     en: { title: 'Netherlands', description: 'De Nederlandsche Bank, the guilder, and the changeover to the euro.' },
   },
   {
-    href: '/coleccion/estados-unidos/',
+    href: USA_PATH,
     es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
     en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
   },
@@ -353,14 +369,25 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: USA_PATH,
+    es: {
+      title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
+      description: 'Tercera vitrina del catálogo: colonial, obsoleto, United States Notes, oro, plata, Reserva Federal y pop art.',
+    },
+    en: {
+      title: 'United States · From colonial paper to the Federal Reserve',
+      description: 'Third catalog case: colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
+    },
+  },
+  {
     href: NETHERLANDS_PATH,
     es: {
       title: 'Países Bajos · De Nederlandsche Bank y el gulden',
-      description: 'Tercera vitrina del catálogo: Wisselbank, el banco de 1814, ocupación y el paso al euro.',
+      description: 'Cuarta vitrina del catálogo: Wisselbank, el banco de 1814, ocupación y el paso al euro.',
     },
     en: {
       title: 'Netherlands · De Nederlandsche Bank and the guilder',
-      description: 'Third catalog case: the Wisselbank, the 1814 bank, occupation, and the changeover to the euro.',
+      description: 'Fourth catalog case: the Wisselbank, the 1814 bank, occupation, and the changeover to the euro.',
     },
   },
   {
@@ -386,7 +413,7 @@ export const footerExplore = [
   { href: NETHERLANDS_PATH, es: 'Países Bajos', en: 'Netherlands' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
-  { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
+  { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
 
 export const footerResources = [
@@ -427,6 +454,8 @@ export const dedicatedCatalogPaths = new Set<string>([
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,
+  USA_PATH.replace(/^\/|\/$/g, ''),
+  USA_PATH_EN.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

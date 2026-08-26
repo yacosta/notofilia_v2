@@ -20,8 +20,10 @@ const {
 } = Astro.props;
 
 const canonical = new URL(pathname, SITE_URL).href;
-const esUrl = new URL(locale === 'es' ? pathname : otherLocalePath(pathname, 'en'), SITE_URL).href;
-const enUrl = new URL(locale === 'en' ? pathname : otherLocalePath(pathname, 'es'), SITE_URL).href;
+const esPath = locale === 'es' ? pathname : otherLocalePath(pathname, locale);
+const enPath = locale === 'en' ? pathname : otherLocalePath(pathname, locale);
+const esUrl = new URL(esPath, SITE_URL).href;
+const enUrl = new URL(enPath, SITE_URL).href;
 ---
 
 <!doctype html>
