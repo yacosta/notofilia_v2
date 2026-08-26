@@ -1,9 +1,14 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
 import { USA_PATH } from '../data/estados-unidos';
+import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
+
+const santaMarta1820 = colombiaCoinagePieces[0];
 
 export type NavNode = {
   id: string;
@@ -84,6 +89,31 @@ export const megaNav: NavNode[] = [
     en: 'World Numismatics',
     href: NUMISMATICS_PATH,
     children: [
+      {
+        id: 'num-colombia',
+        es: 'Colombia-Numismática',
+        en: 'Colombia-Numismatics',
+        href: COLOMBIA_COINAGE_PATH,
+        children: [
+          { id: 'num-colombia-santa-fe', es: 'Santa Fe colonial', en: 'Colonial Santa Fe', href: `${COLOMBIA_COINAGE_PATH}#santa-fe` },
+          { id: 'num-colombia-independencia', es: 'Independencia', en: 'Independence', href: `${COLOMBIA_COINAGE_PATH}#independencia` },
+          { id: 'num-colombia-santa-marta-1820', es: '1/4 real Santa Marta, 1820', en: '1/4 real Santa Marta, 1820', href: santaMarta1820.path },
+          { id: 'num-colombia-nueva-granada', es: 'Nueva Granada', en: 'New Granada', href: `${COLOMBIA_COINAGE_PATH}#nueva-granada` },
+          { id: 'num-colombia-republica', es: 'República y Fábrica', en: 'Republic and mint', href: `${COLOMBIA_COINAGE_PATH}#republica` },
+        ],
+      },
+      {
+        id: 'num-lazarettos',
+        es: 'Lazarettos',
+        en: 'Lazarettos',
+        href: LAZARETTOS_PATH,
+        children: [
+          { id: 'num-lazarettos-ragusa', es: 'Ragusa, 1377–1642', en: 'Ragusa, 1377–1642', href: `${LAZARETTOS_PATH}#ragusa` },
+          { id: 'num-lazarettos-venecia', es: 'Venecia, desde 1423', en: 'Venice, from 1423', href: `${LAZARETTOS_PATH}#venecia` },
+          { id: 'num-lazarettos-malta', es: 'Malta, 1643–1970', en: 'Malta, 1643–1970', href: `${LAZARETTOS_PATH}#malta` },
+          { id: 'num-lazarettos-mediterraneo', es: 'Mediterráneo, 1650–1850', en: 'Mediterranean, 1650–1850', href: `${LAZARETTOS_PATH}#mediterraneo` },
+        ],
+      },
       {
         id: 'nl-monedas',
         es: 'Países Bajos',

@@ -1,7 +1,11 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
+import { LAZARETTOS_PATH } from '../data/lazarettos';
+import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
 import {
@@ -34,6 +38,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of philippinesNoteSlugs) slugs.add(slug);
+  for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   return slugs;
@@ -294,8 +299,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Catálogo de monedas: Países Bajos, oro colonial y piezas de comercio.' },
-    en: { title: 'Numismatics', description: 'Coin catalog: the Netherlands, colonial gold, and trade pieces.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Países Bajos y lazaretos del Mediterráneo.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, the Netherlands, and the Mediterranean lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -372,6 +377,28 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: COLOMBIA_COINAGE_PATH,
+    es: {
+      title: 'Colombia-Numismática',
+      description: 'Primera vitrina de numismática: macuquinas, cecas de la Independencia, la reforma de 1847 y la Fábrica de Ibagué.',
+    },
+    en: {
+      title: 'Colombia-Numismatics',
+      description: 'First numismatics case: cobs, independence mints, the 1847 reform, and the Ibagué factory.',
+    },
+  },
+  {
+    href: LAZARETTOS_PATH,
+    es: {
+      title: 'Lazarettos',
+      description: 'Segunda vitrina de numismática: cuarentena de Ragusa, Venecia, Malta y las fichas de la red mediterránea.',
+    },
+    en: {
+      title: 'Lazarettos',
+      description: 'Second numismatics case: Ragusa’s quarantine, Venice, Malta, and the tokens of the Mediterranean network.',
+    },
+  },
+  {
     href: USA_PATH,
     es: {
       title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
@@ -408,11 +435,11 @@ export const milestones: MilestoneItem[] = [
     href: NETHERLANDS_COINAGE_PATH,
     es: {
       title: 'Países Bajos · Historia de la acuñación',
-      description: 'Primera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
+      description: 'Tercera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
     },
     en: {
       title: 'Netherlands · History of the coinage',
-      description: 'First numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
+      description: 'Third numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
     },
   },
 ];
@@ -427,6 +454,9 @@ export const footerExplore = [
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
+  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
+  { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -449,6 +479,8 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
+  { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
@@ -469,6 +501,10 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
+  COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
+  ...colombiaCoinagePieceSlugs,
+  LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,

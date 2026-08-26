@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, type Locale } from '../../lib/site';
+import { numismaticaCopy, numismaticaCountries, numismaticaPath } from '../../data/numismatica';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = numismaticaCopy[locale];
+const pathname = numismaticaPath(locale);
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+              {locale === 'en' ? 'Home' : 'Inicio'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.title}</li>
+        </ol>
+      </nav>
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+      <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
+        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
+        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.subtitle}</span>
+      </h1>
+
+      <div class="mt-10 w-full text-[17px]/7 text-cream">
+        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <section class="mt-16" aria-labelledby="holdings-heading">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
+          aria-label={locale === 'en' ? 'Cases in the coin catalog' : 'Vitrinas del catálogo de monedas'}
+        >
+          {
+            numismaticaCountries.map((country) => (
+              <li class="min-w-0">
+                <a
+                  href={localizePath(country.href, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                      {country.years[locale]}
+                    </span>
+                  </div>
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {country.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.eraLabel} · {country.years[locale]}
+                  </p>
+                  <p class="mb-3 mt-0 hidden font-sans text-[14px]/5 text-muted sm:block">{country.lead[locale]}</p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCountry} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <p class="mt-12">
+        <a
+          href={localizePath('/', locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
