@@ -2,6 +2,7 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
+import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
@@ -251,8 +252,8 @@ export const collections = [
   },
   {
     href: NUMISMATICA_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Santa Fe, independencia, decimalización y el peso actual.' },
-    en: { title: 'Numismatics', description: 'Coinage: Santa Fe, independence, decimalization, and the modern peso.' },
+    es: { title: 'Numismática', description: 'Moneda metálica y exonumia: Santa Fe, el peso y los lazaretos del Mediterráneo.' },
+    en: { title: 'Numismatics', description: 'Coinage and exonumia: Santa Fe, the peso, and the Mediterranean lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -340,6 +341,17 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: LAZARETTOS_PATH,
+    es: {
+      title: 'Lazarettos',
+      description: 'Segunda vitrina de numismática: cuarentena de Ragusa, Venecia, Malta y las fichas de la red mediterránea.',
+    },
+    en: {
+      title: 'Lazarettos',
+      description: 'Second numismatics case: Ragusa’s quarantine, Venice, Malta, and the tokens of the Mediterranean network.',
+    },
+  },
+  {
     href: USA_PATH,
     es: {
       title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
@@ -361,6 +373,7 @@ export const footerExplore = [
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: NUMISMATICA_PATH, es: 'Monedas', en: 'Coins' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -383,6 +396,7 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
@@ -403,6 +417,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
+  LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),

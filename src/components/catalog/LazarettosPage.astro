@@ -1,15 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
-import { numismaticaCopy, numismaticaCountries, numismaticaPath } from '../../data/numismatica';
+import {
+  lazarettosChapterHref,
+  lazarettosChapters,
+  lazarettosCopy,
+  lazarettosPath,
+  lazarettosSources,
+} from '../../data/lazarettos';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import SourceList from './SourceList.astro';
 
 interface Props {
   locale: Locale;
 }
 
 const { locale } = Astro.props;
-const t = numismaticaCopy[locale];
-const pathname = numismaticaPath(locale);
+const t = lazarettosCopy[locale];
+const pathname = lazarettosPath(locale);
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
@@ -23,6 +31,15 @@ const pathname = numismaticaPath(locale);
             </a>
           </li>
           <li aria-hidden="true">·</li>
+          <li>
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
+              href={localizePath(NUMISMATICA_PATH, locale)}
+            >
+              {locale === 'en' ? 'Numismatics' : 'Numismática'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.title}</li>
         </ol>
       </nav>
@@ -30,7 +47,6 @@ const pathname = numismaticaPath(locale);
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
       <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
         <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
-        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.subtitle}</span>
       </h1>
 
       <div class="mt-10 w-full text-[17px]/7 text-cream">
@@ -44,29 +60,28 @@ const pathname = numismaticaPath(locale);
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
-          aria-label={locale === 'en' ? 'Cases in the coin catalog' : 'Vitrinas del catálogo de monedas'}
+          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+          aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
         >
           {
-            numismaticaCountries.map((country) => (
+            lazarettosChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
-                  href={localizePath(country.href, locale)}
+                  href={lazarettosChapterHref(chapter.id)}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
                   <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
                     <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {country.years[locale]}
+                      {chapter.years[locale]}
                     </span>
                   </div>
                   <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {country.title[locale]}
+                    {chapter.title[locale]}
                   </h3>
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {country.years[locale]}
+                    {t.eraLabel} · {chapter.years[locale]}
                   </p>
-                  <p class="mb-3 mt-0 hidden font-sans text-[14px]/5 text-muted sm:block">{country.lead[locale]}</p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCountry} →</span>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
                 </a>
               </li>
             ))
@@ -74,12 +89,36 @@ const pathname = numismaticaPath(locale);
         </ol>
       </section>
 
+      <div class="mt-16 space-y-12">
+        {
+          lazarettosChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={lazarettosSources} heading={t.sourcesTitle} />
+      </div>
+
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(NUMISMATICA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to the numismatics catalog' : 'Volver al catálogo de numismática'}
         </a>
       </p>
     </article>
