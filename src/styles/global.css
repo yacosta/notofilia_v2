@@ -280,9 +280,16 @@ body.mega-drawer-lock {
 }
 
 @media (min-width: 1024px) {
-  .mega-item:hover .mega-panel[hidden],
+  /* JS hover-intent owns open/close. CSS hover is only a no-JS fallback. */
+  .mega-header:not([data-mega-bound]) .mega-item:hover .mega-panel[hidden],
   .mega-item.is-open .mega-panel[hidden] {
     display: block !important;
+  }
+
+  .mega-panel {
+    max-height: min(32rem, calc(100dvh - 10rem));
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 }
 
