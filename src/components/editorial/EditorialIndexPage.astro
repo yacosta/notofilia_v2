@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import {
+  blogArticles,
+  blogPath,
+  editorialCopy,
+  newsArticles,
+  newsPath,
+  type EditorialArticle,
+} from '../../data/editorial';
+
+interface Props {
+  locale: Locale;
+  kind: 'blog' | 'news';
+}
+
+const { locale, kind } = Astro.props;
+const t = editorialCopy[locale];
+const items: EditorialArticle[] = kind === 'blog' ? blogArticles : newsArticles;
+const pathname = kind === 'blog' ? blogPath(locale) : newsPath(locale);
+const title = kind === 'blog' ? t.blogTitle : t.newsTitle;
+const dek = kind === 'blog' ? t.blogDek : t.newsDek;
+const metaTitle = kind === 'blog' ? t.blogMetaTitle : t.newsMetaTitle;
+const metaDescription = kind === 'blog' ? t.blogMetaDescription : t.newsMetaDescription;
+const sectionLabel = kind === 'blog' ? t.blog : t.news;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description: metaDescription,
+  url: new URL(pathname, SITE_URL).href,
+  inLanguage: locale,
+};
+---
+
+<Layout title={metaTitle} description={metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
+              {t.home}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{sectionLabel}</li>
+        </ol>
+      </nav>
+
+      <header class="mb-12 max-w-[46rem]">
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{dek}</p>
+      </header>
+
+      <ul class="m-0 grid list-none grid-cols-1 gap-8 p-0 md:grid-cols-2">
+        {
+          items.map((item) => (
+            <li>
+              <article class="flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel">
+                <a
+                  href={localizePath(item.href, locale)}
+                  class="block overflow-hidden no-underline"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt[locale]}
+                    width="1200"
+                    height="675"
+                    class="aspect-video w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <div class="flex flex-1 flex-col p-5">
+                  <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
+                    {locale === 'en' ? item.dateEn : item.dateEs}
+                    {kind === 'blog' ? ` · ${t.byline}` : ''}
+                  </p>
+                  {
+                    item.sourceName && item.sourceUrl ? (
+                      <p class="mb-0 mt-2 font-sans text-[14px]/5 text-muted">
+                        {t.source}:{' '}
+                        <a
+                          href={item.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-gold-light underline decoration-line-strong hover:text-cream"
+                        >
+                          {item.sourceName}
+                          <NewWindowHint locale={locale} />
+                        </a>
+                      </p>
+                    ) : null
+                  }
+                  <h2 class="mb-3 mt-3 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                    <a
+                      href={localizePath(item.href, locale)}
+                      class="text-inherit no-underline hover:text-cream"
+                    >
+                      {item.title[locale]}
+                    </a>
+                  </h2>
+                  <p class="mb-4 mt-0 flex-1 font-sans text-[15px]/6 text-muted">{item.dek[locale]}</p>
+                  <a
+                    href={localizePath(item.href, locale)}
+                    class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                  >
+                    {locale === 'en' ? 'Read more →' : 'Leer más →'}
+                  </a>
+                </div>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </main>
+</Layout>

@@ -73,9 +73,9 @@ export const megaNav: NavNode[] = [
     es: 'Recursos',
     en: 'Resources',
     children: [
-      { id: 'guias', es: 'Guías', en: 'Guides' },
+      { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/' },
-      { id: 'noticias', es: 'Noticias', en: 'News' },
+      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/' },
     ],
   },
   {
