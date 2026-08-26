@@ -1,6 +1,6 @@
 ---
-import NewsArticlePage from '../../../components/news/NewsArticlePage.astro';
-import { newsArticles } from '../../../data/news';
+import EditorialArticlePage from '../../../components/editorial/EditorialArticlePage.astro';
+import { newsArticles } from '../../../data/editorial';
 
 export function getStaticPaths() {
   return newsArticles.map((article) => ({
@@ -12,4 +12,4 @@ export function getStaticPaths() {
 const { article } = Astro.props;
 ---
 
-<NewsArticlePage locale="en" article={article} />
+<EditorialArticlePage locale="en" kind="news" article={article} />
