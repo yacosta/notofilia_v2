@@ -1,6 +1,5 @@
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
-import { NETHERLANDS_PATH } from '../data/netherlands';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -50,33 +49,6 @@ export const megaNav: NavNode[] = [
         es: 'Filipinas',
         en: 'Philippines',
         href: SERIES_PATH,
-      },
-      {
-        id: 'paises-bajos',
-        es: 'Países Bajos',
-        en: 'Netherlands',
-        href: NETHERLANDS_PATH,
-        children: [
-          { id: 'nl-wisselbank', es: 'Wisselbank', en: 'Wisselbank', href: `${NETHERLANDS_PATH}#wisselbank` },
-          {
-            id: 'nl-dnb',
-            es: 'De Nederlandsche Bank',
-            en: 'De Nederlandsche Bank',
-            href: `${NETHERLANDS_PATH}#nederlandsche-bank`,
-          },
-          {
-            id: 'nl-ocupacion',
-            es: 'Ocupación y liberación',
-            en: 'Occupation and liberation',
-            href: `${NETHERLANDS_PATH}#ocupacion`,
-          },
-          {
-            id: 'nl-euro',
-            es: 'Del gulden al euro',
-            en: 'From guilder to euro',
-            href: `${NETHERLANDS_PATH}#gulden-euro`,
-          },
-        ],
       },
       { id: 'puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
       { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },

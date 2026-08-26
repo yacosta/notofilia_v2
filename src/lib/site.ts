@@ -295,11 +295,6 @@ export const collections = [
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
-    href: NETHERLANDS_PATH,
-    es: { title: 'Países Bajos', description: 'De Nederlandsche Bank, el gulden y el paso al euro.' },
-    en: { title: 'Netherlands', description: 'De Nederlandsche Bank, the guilder, and the changeover to the euro.' },
-  },
-  {
     href: USA_PATH,
     es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
     en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
@@ -380,17 +375,6 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
-    href: NETHERLANDS_PATH,
-    es: {
-      title: 'Países Bajos · De Nederlandsche Bank y el gulden',
-      description: 'Cuarta vitrina del catálogo: Wisselbank, el banco de 1814, ocupación y el paso al euro.',
-    },
-    en: {
-      title: 'Netherlands · De Nederlandsche Bank and the guilder',
-      description: 'Fourth catalog case: the Wisselbank, the 1814 bank, occupation, and the changeover to the euro.',
-    },
-  },
-  {
     href: NETHERLANDS_COINAGE_PATH,
     es: {
       title: 'Países Bajos · Historia de la acuñación',
@@ -410,7 +394,6 @@ export const news: NewsItem[] = [];
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
-  { href: NETHERLANDS_PATH, es: 'Países Bajos', en: 'Netherlands' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
@@ -433,6 +416,7 @@ export const footerAbout = [
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
+  { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },

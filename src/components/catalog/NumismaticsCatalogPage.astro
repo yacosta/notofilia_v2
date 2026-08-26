@@ -3,7 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
   coinagePath,
-  NETHERLANDS_PATH,
   numismaticsCopy,
   numismaticsPath,
 } from '../../data/netherlands-coinage';
@@ -77,14 +76,6 @@ const netherlands = {
         </ol>
       </section>
 
-      <p class="mt-12">
-        <a
-          href={localizePath(NETHERLANDS_PATH, locale)}
-          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-        >
-          {t.notesLink} →
-        </a>
-      </p>
     </article>
   </main>
 </Layout>

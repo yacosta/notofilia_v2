@@ -6,7 +6,6 @@ import {
   coinPageCopy,
   coinagePath,
   coinPath,
-  NETHERLANDS_PATH,
   NUMISMATICS_PATH,
   netherlandsCoinageChapters,
   netherlandsCoins,
@@ -100,15 +99,6 @@ const hero =
       <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
-
-      <p class="mt-6">
-        <a
-          href={localizePath(NETHERLANDS_PATH, locale)}
-          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-        >
-          {t.notesLink} →
-        </a>
-      </p>
 
       <section class="mt-16" aria-labelledby="pieces-heading">
         <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
