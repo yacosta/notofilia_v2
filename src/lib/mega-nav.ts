@@ -79,9 +79,9 @@ export const megaNav: NavNode[] = [
     ],
   },
   {
-    id: 'coleccion-numismatica',
-    es: 'Colección Virtual Numismática',
-    en: 'Virtual Numismatics Collection',
+    id: 'numismatica-mundial',
+    es: 'Numismática Mundial',
+    en: 'World Numismatics',
     href: NUMISMATICS_PATH,
     children: [
       {
