@@ -1,14 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
-import { NETHERLANDS_COINAGE_PATH } from '../../data/netherlands-coinage';
 import {
   chapterHref,
-  netherlandsChapters,
+  coinagePath,
+  NETHERLANDS_PATH,
+  NUMISMATICS_PATH,
+  netherlandsCoinageChapters,
   seriesCopy,
-  seriesPath,
   seriesSources,
-} from '../../data/netherlands';
+} from '../../data/netherlands-coinage';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,7 +18,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
-const pathname = seriesPath(locale);
+const pathname = coinagePath(locale);
 const hero =
   locale === 'en'
     ? {
@@ -79,6 +80,15 @@ const hero =
             </a>
           </li>
           <li aria-hidden="true">·</li>
+          <li>
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
+              href={localizePath(NUMISMATICS_PATH, locale)}
+            >
+              {t.parentLink}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>
@@ -89,10 +99,10 @@ const hero =
 
       <p class="mt-6">
         <a
-          href={localizePath(NETHERLANDS_COINAGE_PATH, locale)}
+          href={localizePath(NETHERLANDS_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {t.coinsLink} →
+          {t.notesLink} →
         </a>
       </p>
 
@@ -107,7 +117,7 @@ const hero =
           aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
         >
           {
-            netherlandsChapters.map((chapter) => (
+            netherlandsCoinageChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
                   href={chapterHref(chapter.id)}
@@ -134,7 +144,7 @@ const hero =
 
       <div class="mt-16 space-y-12">
         {
-          netherlandsChapters.map((chapter) => (
+          netherlandsCoinageChapters.map((chapter) => (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -158,10 +168,10 @@ const hero =
 
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(NUMISMATICS_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to Numismatics' : 'Volver a Numismática'}
         </a>
       </p>
     </article>

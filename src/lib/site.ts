@@ -2,6 +2,7 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
+import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
@@ -222,9 +223,9 @@ export const collections = [
     en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
   },
   {
-    href: '/coleccion/numismatica/',
-    es: { title: 'Numismática', description: 'Catálogo de monedas: oro colonial, cobres de necesidad y piezas de comercio.' },
-    en: { title: 'Numismatics', description: 'Coin catalog: colonial gold, necessity copper, and trade pieces.' },
+    href: NUMISMATICS_PATH,
+    es: { title: 'Numismática', description: 'Catálogo de monedas: Países Bajos, oro colonial y piezas de comercio.' },
+    en: { title: 'Numismatics', description: 'Coin catalog: the Netherlands, colonial gold, and trade pieces.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -316,6 +317,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Third catalog case: the Wisselbank, the 1814 bank, occupation, and the changeover to the euro.',
     },
   },
+  {
+    href: NETHERLANDS_COINAGE_PATH,
+    es: {
+      title: 'Países Bajos · Historia de la acuñación',
+      description: 'Primera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
+    },
+    en: {
+      title: 'Netherlands · History of the coinage',
+      description: 'First numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -326,7 +338,7 @@ export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: NETHERLANDS_PATH, es: 'Países Bajos', en: 'Netherlands' },
-  { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
+  { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -367,6 +379,8 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
+  NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
+  NETHERLANDS_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

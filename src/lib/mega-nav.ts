@@ -1,5 +1,6 @@
 import { COLOMBIA_PATH } from '../data/colombia';
 import { NETHERLANDS_PATH } from '../data/netherlands';
+import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 
 export type NavNode = {
@@ -84,6 +85,41 @@ export const megaNav: NavNode[] = [
     id: 'coleccion-numismatica',
     es: 'Colección Virtual Numismática',
     en: 'Virtual Numismatics Collection',
+    href: NUMISMATICS_PATH,
+    children: [
+      {
+        id: 'nl-monedas',
+        es: 'Países Bajos',
+        en: 'Netherlands',
+        href: NETHERLANDS_COINAGE_PATH,
+        children: [
+          {
+            id: 'nl-medieval',
+            es: 'Del penique al gulden',
+            en: 'From penny to gulden',
+            href: `${NETHERLANDS_COINAGE_PATH}#medieval`,
+          },
+          {
+            id: 'nl-ducado',
+            es: 'Cecas provinciales y ducado',
+            en: 'Provincial mints and the ducat',
+            href: `${NETHERLANDS_COINAGE_PATH}#ducado-comercial`,
+          },
+          {
+            id: 'nl-decimal',
+            es: 'El gulden decimal',
+            en: 'The decimal gulden',
+            href: `${NETHERLANDS_COINAGE_PATH}#gulden-decimal`,
+          },
+          {
+            id: 'nl-euro-monedas',
+            es: 'Cinc, posguerra y euro',
+            en: 'Zinc, postwar, and the euro',
+            href: `${NETHERLANDS_COINAGE_PATH}#ocupacion-euro`,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'recursos',

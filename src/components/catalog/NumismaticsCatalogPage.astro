@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, type Locale } from '../../lib/site';
+import {
+  NETHERLANDS_COINAGE_PATH,
+  NETHERLANDS_PATH,
+  numismaticsCopy,
+  numismaticsPath,
+} from '../../data/netherlands-coinage';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = numismaticsCopy[locale];
+const pathname = numismaticsPath(locale);
+const netherlands = {
+  href: NETHERLANDS_COINAGE_PATH,
+  years: { es: 's. IX–2002', en: '9th c.–2002' },
+  title: { es: 'Países Bajos', en: 'Netherlands' },
+  lead: {
+    es: 'Del gulden de 1434 al ducado de Utrecht, el gulden decimal y el euro.',
+    en: 'From the 1434 gulden to the Utrecht ducat, the decimal gulden, and the euro.',
+  },
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+              {locale === 'en' ? 'Home' : 'Inicio'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.title}</li>
+        </ol>
+      </nav>
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+        {t.kicker}
+      </p>
+      <h1 id="catalog-heading" class="mb-6 mt-3 font-display text-[clamp(2rem,4vw,3rem)] font-normal leading-[1.12] text-cream-dim">
+        {t.title}
+      </h1>
+
+      <div class="w-full text-[17px]/7 text-cream">
+        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <section class="mt-16" aria-labelledby="holdings-heading">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+
+        <ol class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+          <li class="min-w-0">
+            <a
+              href={localizePath(netherlands.href, locale)}
+              class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-4 text-inherit no-underline hover:border-gold-light sm:p-5"
+            >
+              <p class="mb-2 mt-0 font-sans text-[13px] font-semibold uppercase tracking-[0.16em] text-gold-light">
+                {netherlands.years[locale]}
+              </p>
+              <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
+                {netherlands.title[locale]}
+              </h3>
+              <p class="mb-4 mt-0 font-sans text-[15px]/6 text-muted">{netherlands.lead[locale]}</p>
+              <span class="font-sans text-[15px] text-gold-light">{t.viewChapter} →</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <p class="mt-12">
+        <a
+          href={localizePath(NETHERLANDS_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.notesLink} →
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

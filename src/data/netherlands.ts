@@ -171,6 +171,7 @@ export const seriesCopy = {
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
+    coinsLink: 'Ver la historia de la acuñación en Numismática',
   },
   en: {
     metaTitle: 'Netherlands · De Nederlandsche Bank and the guilder | Notofilia',
@@ -192,6 +193,7 @@ export const seriesCopy = {
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
+    coinsLink: 'See the coinage history in Numismatics',
   },
 } as const;
 
