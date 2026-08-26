@@ -1,15 +1,10 @@
+import type { CatalogSource, LocalizedText } from './catalog';
+
+export type { CatalogSource, LocalizedText };
+
 export const SERIES_PATH = '/coleccion/filipinas/';
 
 export type VictoryNoteId = '1-peso' | '2-pesos' | '5-pesos' | '20-pesos';
-
-export type LocalizedText = { es: string; en: string };
-
-export type CatalogSource = {
-  href: string;
-  es: string;
-  en: string;
-  note?: LocalizedText;
-};
 
 export const seriesSources: CatalogSource[] = [
   {

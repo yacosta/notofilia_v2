@@ -1,4 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
+import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -225,7 +226,7 @@ export const collections = [
     en: { title: 'Numismatics', description: 'Coin catalog: colonial gold, necessity copper, and trade pieces.' },
   },
   {
-    href: '/coleccion/colombia/',
+    href: COLOMBIA_PATH,
     es: { title: 'Colombia', description: 'Banca libre, Banco de la República, specimens y errores.' },
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
@@ -287,6 +288,17 @@ export const milestones: MilestoneItem[] = [
       description: 'First catalog case: Commonwealth 1, 2, 5, and 20 pesos, lined up by denomination.',
     },
   },
+  {
+    href: COLOMBIA_PATH,
+    es: {
+      title: 'Colombia · Banca libre y Banco de la República',
+      description: 'Segunda vitrina del catálogo: independencia, banca libre, Banco Nacional y el banco central.',
+    },
+    en: {
+      title: 'Colombia · Free banking and the Banco de la República',
+      description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -295,7 +307,7 @@ export const news: NewsItem[] = [];
 
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
-  { href: '/coleccion/colombia/', es: 'Colombia', en: 'Colombia' },
+  { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -335,6 +347,7 @@ export const stubPages = [
 
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
+  COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
