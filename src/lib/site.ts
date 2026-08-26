@@ -1,6 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
+import { NETHERLANDS_PATH } from '../data/netherlands';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
@@ -88,7 +89,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
-      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, Colombia, Estados Unidos, Puerto Rico y el mundo.',
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, Colombia, los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
     heroPrimary: 'Ver el catálogo de Filipinas',
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
@@ -160,7 +161,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
-      'Detailed images, catalog references, and monetary histories from the Philippines, Colombia, the United States, Puerto Rico, and beyond.',
+      'Detailed images, catalog references, and monetary histories from the Philippines, Colombia, the Netherlands, the United States, Puerto Rico, and beyond.',
     heroPrimary: 'See the Philippines catalog',
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
@@ -231,6 +232,11 @@ export const collections = [
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
+    href: NETHERLANDS_PATH,
+    es: { title: 'Países Bajos', description: 'De Nederlandsche Bank, el gulden y el paso al euro.' },
+    en: { title: 'Netherlands', description: 'De Nederlandsche Bank, the guilder, and the changeover to the euro.' },
+  },
+  {
     href: '/coleccion/estados-unidos/',
     es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
     en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
@@ -299,6 +305,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: NETHERLANDS_PATH,
+    es: {
+      title: 'Países Bajos · De Nederlandsche Bank y el gulden',
+      description: 'Tercera vitrina del catálogo: Wisselbank, el banco de 1814, ocupación y el paso al euro.',
+    },
+    en: {
+      title: 'Netherlands · De Nederlandsche Bank and the guilder',
+      description: 'Third catalog case: the Wisselbank, the 1814 bank, occupation, and the changeover to the euro.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -308,6 +325,7 @@ export const news: NewsItem[] = [];
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
+  { href: NETHERLANDS_PATH, es: 'Países Bajos', en: 'Netherlands' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -348,6 +366,7 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
