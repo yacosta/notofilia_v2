@@ -35,31 +35,12 @@ export const megaNav: NavNode[] = [
         es: 'Estados Unidos',
         en: 'United States',
         href: USA_PATH,
-        children: [
-          { id: 'us-colonial', es: 'Moneda colonial', en: 'Colonial coinage', href: `${USA_PATH}#us-colonial` },
-          { id: 'us-obsoleto', es: 'Billete obsoleto', en: 'Obsolete notes', href: `${USA_PATH}#us-obsoleto` },
-          { id: 'us-notes', es: 'United States Notes', en: 'United States Notes', href: `${USA_PATH}#us-notes` },
-          { id: 'us-gold', es: 'Gold Certificates', en: 'Gold Certificates', href: `${USA_PATH}#us-gold` },
-          { id: 'us-silver', es: 'Silver Certificates', en: 'Silver Certificates', href: `${USA_PATH}#us-silver` },
-          { id: 'us-frb', es: 'Federal Reserve Bank', en: 'Federal Reserve Bank', href: `${USA_PATH}#us-frb` },
-          { id: 'us-mpc', es: 'US Military Payment Certificate', en: 'US Military Payment Certificate', href: SERIES_PATH },
-          { id: 'us-pop-art', es: 'Pop art', en: 'Pop art', href: `${USA_PATH}#us-pop-art` },
-        ],
       },
       {
         id: 'filipinas',
         es: 'Filipinas',
         en: 'Philippines',
         href: SERIES_PATH,
-      },
-      {
-        id: 'china',
-        es: 'China',
-        en: 'China',
-        href: CHINA_PATH,
-        children: [
-          { id: 'china-100-yuan', es: '100 yuan · Milenio', en: '100 yuan · Millennium', href: `${CHINA_PATH}100-yuan/` },
-        ],
       },
       {
         id: 'puerto-rico',
