@@ -287,6 +287,8 @@ body.mega-drawer-lock {
 
 .mega-panel-inner {
   display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
   gap: 0;
   min-height: 280px;
   padding: 12px;
