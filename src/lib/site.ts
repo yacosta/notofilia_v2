@@ -2,7 +2,14 @@ import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
-import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH, netherlandsCoinSlugs } from '../data/netherlands-coinage';
+import {
+  NETHERLANDS_COINAGE_PATH,
+  NETHERLANDS_COINAGE_PATH_EN,
+  NUMISMATICS_PATH,
+  netherlandsCoinSlugs,
+  netherlandsCoinageDedicatedSlugs,
+  netherlandsCoins,
+} from '../data/netherlands-coinage';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
@@ -30,7 +37,12 @@ function uniqueContentSlugs(): Set<string> {
 
 function extraAstroPageFiles(): number {
   const countable = Object.keys(astroPageFiles).filter(
-    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/') && !file.includes('/glosario/'),
+    (file) =>
+      !file.endsWith('404.astro') &&
+      !file.includes('/coleccion/') &&
+      !file.includes('/glosario/') &&
+      !file.includes('/paises-bajos-numismatica/') &&
+      !file.includes('/netherlands-numismatica/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -53,14 +65,47 @@ export function statsLine(locale: Locale): string {
 
 const seedHoldings = holdingsStats();
 
+const localePathAliases = [
+  { es: NETHERLANDS_COINAGE_PATH, en: NETHERLANDS_COINAGE_PATH_EN },
+  ...netherlandsCoins.map((coin) => ({ es: coin.path, en: coin.pathEn })),
+] as const;
+
+function splitHash(path: string): { base: string; hash: string } {
+  const hashIndex = path.indexOf('#');
+  if (hashIndex === -1) return { base: path, hash: '' };
+  return { base: path.slice(0, hashIndex), hash: path.slice(hashIndex) };
+}
+
+function withTrailingSlash(path: string): string {
+  if (path === '/' || path.endsWith('/')) return path;
+  return `${path}/`;
+}
+
+function aliasedPath(path: string, target: Locale): string | undefined {
+  const { base, hash } = splitHash(path);
+  const normalized = withTrailingSlash(base);
+  for (const alias of localePathAliases) {
+    if (normalized === alias.es || normalized === alias.en) {
+      return `${target === 'en' ? alias.en : alias.es}${hash}`;
+    }
+  }
+  return undefined;
+}
+
 export function localizePath(path: string, locale: Locale): string {
   if (path.startsWith('http')) return path;
+  const aliased = aliasedPath(path, locale);
+  if (aliased) return aliased;
   if (locale === 'es') return path;
   if (path === '/') return '/en/';
+  if (path === '/en' || path.startsWith('/en/')) return path === '/en' ? '/en/' : path;
   return `/en${path}`;
 }
 
 export function otherLocalePath(path: string, locale: Locale): string {
+  const target = locale === 'es' ? 'en' : 'es';
+  const aliased = aliasedPath(path, target);
+  if (aliased) return aliased;
   if (locale === 'es') {
     return path === '/' ? '/en/' : `/en${path}`;
   }
@@ -381,8 +426,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
-  NETHERLANDS_COINAGE_PATH.replace(/^\/|\/$/g, ''),
-  ...netherlandsCoinSlugs,
+  ...netherlandsCoinageDedicatedSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
-  NETHERLANDS_COINAGE_PATH,
+  coinagePath,
   NETHERLANDS_PATH,
   numismaticsCopy,
   numismaticsPath,
@@ -16,7 +16,7 @@ const { locale } = Astro.props;
 const t = numismaticsCopy[locale];
 const pathname = numismaticsPath(locale);
 const netherlands = {
-  href: NETHERLANDS_COINAGE_PATH,
+  href: coinagePath(locale),
   years: { es: 's. IX–2002', en: '9th c.–2002' },
   title: { es: 'Países Bajos', en: 'Netherlands' },
   lead: {

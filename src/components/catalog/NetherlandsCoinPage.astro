@@ -4,6 +4,7 @@ import { localizePath, type Locale } from '../../lib/site';
 import {
   coinPageCopy,
   coinagePath,
+  coinPath,
   NUMISMATICS_PATH,
   seriesCopy,
   seriesSources,
@@ -20,7 +21,7 @@ interface Props {
 const { locale, coin } = Astro.props;
 const t = coinPageCopy[locale];
 const series = seriesCopy[locale];
-const pathname = locale === 'en' ? `/en${coin.path}` : coin.path;
+const pathname = coinPath(coin, locale);
 const sources = [
   ...coin.sources,
   ...seriesSources.filter((source) => !coin.sources.some((own) => own.href === source.href)),

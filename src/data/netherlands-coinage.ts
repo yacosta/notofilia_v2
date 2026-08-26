@@ -2,7 +2,8 @@ import type { CatalogSource, LocalizedText } from './catalog';
 import { NETHERLANDS_PATH } from './netherlands';
 
 export const NUMISMATICS_PATH = '/coleccion/numismatica/';
-export const NETHERLANDS_COINAGE_PATH = '/coleccion/numismatica/paises-bajos/';
+export const NETHERLANDS_COINAGE_PATH = '/paises-bajos-numismatica/';
+export const NETHERLANDS_COINAGE_PATH_EN = '/en/netherlands-numismatica/';
 
 export type NetherlandsCoinageChapterId = 'medieval' | 'ducado-comercial' | 'gulden-decimal' | 'ocupacion-euro';
 
@@ -225,7 +226,7 @@ export function numismaticsPath(locale: 'es' | 'en'): string {
 }
 
 export function coinagePath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${NETHERLANDS_COINAGE_PATH}` : NETHERLANDS_COINAGE_PATH;
+  return locale === 'en' ? NETHERLANDS_COINAGE_PATH_EN : NETHERLANDS_COINAGE_PATH;
 }
 
 export function chapterHref(id: NetherlandsCoinageChapterId): string {
@@ -237,6 +238,7 @@ export type NetherlandsCoinId = 'ducado-utrecht-1761';
 export type NetherlandsCoin = {
   id: NetherlandsCoinId;
   path: string;
+  pathEn: string;
   year: string;
   mint: LocalizedText;
   denomination: LocalizedText;
@@ -269,7 +271,8 @@ export type NetherlandsCoin = {
 export const netherlandsCoins: NetherlandsCoin[] = [
   {
     id: 'ducado-utrecht-1761',
-    path: '/coleccion/numismatica/paises-bajos/ducado-utrecht-1761/',
+    path: '/paises-bajos-numismatica/ducado-utrecht-1761/',
+    pathEn: '/en/netherlands-numismatica/ducado-utrecht-1761/',
     year: '1761',
     mint: {
       es: 'Utrecht (TRA · Traiectum)',
@@ -479,9 +482,15 @@ export function coinById(id: string): NetherlandsCoin | undefined {
 }
 
 export function coinPath(coin: NetherlandsCoin, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${coin.path}` : coin.path;
+  return locale === 'en' ? coin.pathEn : coin.path;
 }
 
 export const netherlandsCoinSlugs = netherlandsCoins.map((coin) => coin.path.replace(/^\/|\/$/g, ''));
+
+export const netherlandsCoinageDedicatedSlugs = [
+  NETHERLANDS_COINAGE_PATH,
+  NETHERLANDS_COINAGE_PATH_EN,
+  ...netherlandsCoins.flatMap((coin) => [coin.path, coin.pathEn]),
+].map((path) => path.replace(/^\/en(?=\/)/, '').replace(/^\/|\/$/g, ''));
 
 export { NETHERLANDS_PATH };
