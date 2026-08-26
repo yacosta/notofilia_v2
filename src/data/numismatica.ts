@@ -14,7 +14,7 @@ export const numismaticaCountries: NumismaticaCountry[] = [
   {
     href: COLOMBIA_COINAGE_PATH,
     years: { es: 'desde 1620', en: 'from 1620' },
-    title: { es: 'Colombia', en: 'Colombia' },
+    title: { es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
     lead: {
       es: 'Casa de Moneda de Santa Fe, cecas de la Independencia, reforma decimal y la Fábrica de Ibagué.',
       en: 'The Santa Fe mint, independence issues, the decimal reform, and the Ibagué factory.',

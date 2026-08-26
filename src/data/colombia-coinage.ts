@@ -138,10 +138,10 @@ export const coinageSources: CatalogSource[] = [
 
 export const coinageCopy = {
   es: {
-    metaTitle: 'Colombia · Casa de Moneda de Santa Fe | Notofilia',
+    metaTitle: 'Colombia-Numismática | Notofilia',
     metaDescription:
       'Historia de la moneda metálica colombiana: macuquinas de Santa Fe, cecas de la Independencia, reforma decimal de 1847 y la Fábrica de Moneda de Ibagué.',
-    kicker: 'Colombia · Numismática',
+    kicker: 'Colombia-Numismática',
     title: 'Casa de Moneda de Santa Fe y el peso',
     heroAlt:
       'Ilustración vintage en relieve de Bogotá sobre pergamino, con la Plaza de Bolívar, La Candelaria, Monserrate, el río Bogotá y el título Bogotá',
@@ -161,10 +161,10 @@ export const coinageCopy = {
     notaphilyLink: 'Colombia · Banca libre y Banco de la República',
   },
   en: {
-    metaTitle: 'Colombia · The Santa Fe mint | Notofilia',
+    metaTitle: 'Colombia-Numismatics | Notofilia',
     metaDescription:
       'History of Colombian coinage: Santa Fe cobs, independence mints, the 1847 decimal reform, and the Ibagué coin factory.',
-    kicker: 'Colombia · Numismatics',
+    kicker: 'Colombia-Numismatics',
     title: 'The Santa Fe mint and the peso',
     heroAlt:
       'Vintage relief illustration of Bogotá on parchment, with Plaza de Bolívar, La Candelaria, Monserrate, the Bogotá River, and the title Bogotá',

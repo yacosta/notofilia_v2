@@ -304,11 +304,11 @@ export const milestones: MilestoneItem[] = [
   {
     href: COLOMBIA_COINAGE_PATH,
     es: {
-      title: 'Colombia · Casa de Moneda de Santa Fe',
+      title: 'Colombia-Numismática',
       description: 'Primera vitrina de numismática: macuquinas, cecas de la Independencia, la reforma de 1847 y la Fábrica de Ibagué.',
     },
     en: {
-      title: 'Colombia · The Santa Fe mint',
+      title: 'Colombia-Numismatics',
       description: 'First numismatics case: cobs, independence mints, the 1847 reform, and the Ibagué factory.',
     },
   },
@@ -322,7 +322,7 @@ export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: NUMISMATICA_PATH, es: 'Monedas', en: 'Coins' },
-  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia · monedas', en: 'Colombia · coins' },
+  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -344,7 +344,7 @@ export const footerAbout = [
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
-  { path: 'coleccion/numismatica/colombia', es: 'Colombia · Numismática', en: 'Colombia · Numismatics' },
+  { path: 'coleccion/numismatica/colombia', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },

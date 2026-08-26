@@ -62,8 +62,8 @@ export const megaNav: NavNode[] = [
     children: [
       {
         id: 'num-colombia',
-        es: 'Colombia',
-        en: 'Colombia',
+        es: 'Colombia-Numismática',
+        en: 'Colombia-Numismatics',
         href: COLOMBIA_COINAGE_PATH,
         children: [
           { id: 'num-colombia-santa-fe', es: 'Santa Fe colonial', en: 'Colonial Santa Fe', href: `${COLOMBIA_COINAGE_PATH}#santa-fe` },
