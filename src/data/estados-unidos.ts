@@ -225,7 +225,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Seven chapters in one row, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, and pop art. Individual note pages will be published as they are documented, as in the Philippines case.',
+      'Seven chapters, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, and pop art. Individual note pages will be published as they are documented, as in the Philippines case.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
