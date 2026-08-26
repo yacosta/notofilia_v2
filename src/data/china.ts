@@ -168,10 +168,13 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Esta vitrina exhibe solo los billetes de polímero. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
+      'Esta vitrina exhibe solo los billetes de polímero. Por ahora, el 100 yuan del milenio (Pick 902). Las demás piezas se publicarán como en Filipinas, a medida que se documenten.',
+    viewNote: 'Ver la ficha',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
   },
   en: {
     metaTitle: 'China · Historical paper money and polymer notes | Notofilia',
@@ -189,15 +192,163 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'This case exhibits only the polymer notes. Individual note pages will be published as they are documented, as in the Philippines case.',
+      'This case exhibits only the polymer notes. For now, the millennium 100-yuan (Pick 902). Further pieces will be published as they are documented, as in the Philippines case.',
+    viewNote: 'Open the note page',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+  },
+} as const;
+
+export type ChinaNoteId = '100-yuan';
+
+export type ChinaNote = {
+  id: ChinaNoteId;
+  path: string;
+  pick: string;
+  serial: string;
+  signatures: LocalizedText;
+  printed: LocalizedText;
+  images: {
+    composite: string;
+    front: string;
+    back: string;
+  };
+  title: LocalizedText;
+  kicker: LocalizedText;
+  lead: LocalizedText;
+  description: LocalizedText;
+  frontCaption: LocalizedText;
+  backCaption: LocalizedText;
+  scarcity: LocalizedText;
+  population: LocalizedText;
+  grade: LocalizedText;
+  sources: CatalogSource[];
+};
+
+export const chinaNotes: ChinaNote[] = [
+  {
+    id: '100-yuan',
+    path: '/coleccion/china/100-yuan/',
+    pick: 'P#902',
+    serial: 'J04445744',
+    signatures: {
+      es: 'Sin firmas (emisión conmemorativa del Banco Popular)',
+      en: 'No signatures (People’s Bank commemorative issue)',
+    },
+    printed: {
+      es: 'Unos 10 millones de ejemplares (Pick 902; prefijo J de circulación y reemplazos I)',
+      en: 'About 10 million notes (Pick 902; circulating J prefix and I replacements)',
+    },
+    images: {
+      composite: '/images/catalog/china/100-yuan-2000-composite.jpg',
+      front: '/images/catalog/china/100-yuan-2000-front.jpg',
+      back: '/images/catalog/china/100-yuan-2000-back.jpg',
+    },
+    title: {
+      es: '100 yuan · Milenio 2000',
+      en: '100 Yuan · Millennium 2000',
+    },
+    kicker: {
+      es: 'China · Banco Popular · Polímero conmemorativo',
+      en: 'China · People’s Bank · Commemorative polymer',
+    },
+    lead: {
+      es: 'Primer billete de polímero de la República Popular: dragón del Muro de los Nueve Dragones y, al reverso, el Monumento del Milenio. Serie J04445744.',
+      en: 'First polymer note of the People’s Republic: Nine Dragons Wall dragon and, on the back, the China Millennium Monument. Serial J04445744.',
+    },
+    description: {
+      es: 'El 100 yuan del milenio (Pick 902) se emitió el 28 de noviembre de 2000. El anverso, naranja, muestra el dragón del Muro de los Nueve Dragones persiguiendo la perla; a la izquierda, una ventana transparente con el Templo del Cielo y, arriba a la derecha, un dispositivo ópticamente variable con el carácter 千年. El texto «迎接新世纪纪念钞» lo marca como conmemorativo. El reverso lleva el Monumento del Milenio de China, apsaras y el emblema nacional. El sustrato Guardian se desarrolló con el Reserve Bank of Australia y UCB. Esta pieza de la colección, en funda y sin encapsular, lleva el número de serie J04445744.',
+      en: 'The millennium 100-yuan (Pick 902) was issued on 28 November 2000. The orange face shows the Nine Dragons Wall dragon chasing the pearl; at left, a clear window with the Temple of Heaven and, at upper right, an optically variable device with the characters 千年. The legend “迎接新世纪纪念钞” marks it as a commemorative. The back shows the China Millennium Monument, apsaras, and the national emblem. The Guardian substrate was developed with the Reserve Bank of Australia and UCB. This collection piece, sleeved and unslabbed, is serial J04445744.',
+    },
+    frontCaption: {
+      es: 'Anverso del 100 yuan, serie J04445744: dragón, ventana del Templo del Cielo y sello del milenio.',
+      en: 'Face of the 100-yuan note, serial J04445744: dragon, Temple of Heaven window, and millennium seal.',
+    },
+    backCaption: {
+      es: 'Reverso del 100 yuan: Monumento del Milenio de China, apsaras y emblema nacional.',
+      en: 'Back of the 100-yuan note: China Millennium Monument, apsaras, and the national emblem.',
+    },
+    scarcity: {
+      es: 'PMG sitúa la tirada en unos diez millones: alrededor de 9,1 millones con prefijo J y reemplazos con prefijo I. Es el primer —y, hasta 2021, único— polímero de circulación conmemorativa del Banco Popular. El 10 yuan olímpico de 2008 (Pick 908) es papel.',
+      en: 'PMG places the printage at about ten million: around 9.1 million with prefix J and I-prefix replacements. It is the first — and, until 2021, only — commemorative polymer note of the People’s Bank. The 2008 Olympic 10-yuan (Pick 908) is paper.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, sleeved, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda (colección privada)',
+      en: 'Unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.pmgnotes.com/news/article/4311/',
+        es: 'PMG — 100 yuan del milenio (Pick 902)',
+        en: 'PMG — Millennium 100-yuan (Pick 902)',
+      },
+      {
+        href: 'https://www.banknoteworld.org/china-people-s-republic-100-yuan-2000-p-902.html',
+        es: 'Banknote World — China 100 yuan 2000, P-902',
+        en: 'Banknote World — China 100 Yuan 2000, P-902',
+      },
+    ],
+  },
+];
+
+export const notePageCopy = {
+  es: {
+    seriesLink: 'Billetes de polímero',
+    collectionLink: 'China',
+    frontHeading: 'Anverso',
+    backHeading: 'Reverso',
+    aboutHeading: 'La pieza',
+    scarcityHeading: 'Rareza e impresión',
+    populationHeading: 'Población',
+    factsHeading: 'Datos de catálogo',
+    sourcesHeading: 'Fuentes',
+    printedLabel: 'Impresión',
+    signaturesLabel: 'Firmas',
+    serialLabel: 'Número de serie',
+    pickLabel: 'Referencia Pick',
+    gradeLabel: 'Conservación',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
+  },
+  en: {
+    seriesLink: 'Polymer banknotes',
+    collectionLink: 'China',
+    frontHeading: 'Face',
+    backHeading: 'Back',
+    aboutHeading: 'The note',
+    scarcityHeading: 'Scarcity and printage',
+    populationHeading: 'Population',
+    factsHeading: 'Catalog facts',
+    sourcesHeading: 'Sources',
+    printedLabel: 'Printage',
+    signaturesLabel: 'Signatures',
+    serialLabel: 'Serial number',
+    pickLabel: 'Pick reference',
+    gradeLabel: 'Condition',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
   },
 } as const;
 
 /** Only polymer notes are on exhibit; the other chapters stay as page history. */
 export const catalogChapters = chinaChapters.filter((chapter) => chapter.id === 'polimero');
+
+export function noteById(id: string): ChinaNote | undefined {
+  return chinaNotes.find((note) => note.id === id);
+}
+
+export function notePath(note: ChinaNote, locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${note.path}` : note.path;
+}
+
+export const chinaNoteSlugs = chinaNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${CHINA_PATH}` : CHINA_PATH;

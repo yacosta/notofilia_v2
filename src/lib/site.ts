@@ -1,5 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
-import { CHINA_PATH } from '../data/china';
+import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -25,6 +25,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of philippinesNoteSlugs) slugs.add(slug);
+  for (const slug of chinaNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -422,6 +423,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   CHINA_PATH.replace(/^\/|\/$/g, ''),
+  ...chinaNoteSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);

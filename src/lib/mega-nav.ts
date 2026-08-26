@@ -57,7 +57,7 @@ export const megaNav: NavNode[] = [
         en: 'China',
         href: CHINA_PATH,
         children: [
-          { id: 'china-polimero', es: 'Billetes de polímero', en: 'Polymer banknotes', href: `${CHINA_PATH}#polimero` },
+          { id: 'china-100-yuan', es: '100 yuan · Milenio', en: '100 yuan · Millennium', href: `${CHINA_PATH}100-yuan/` },
         ],
       },
       {
