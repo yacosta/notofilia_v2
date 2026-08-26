@@ -1,4 +1,5 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
+import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
@@ -6,7 +7,17 @@ import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
-import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { NETHERLANDS_PATH } from '../data/netherlands';
+import {
+  NETHERLANDS_COINAGE_PATH,
+  NETHERLANDS_COINAGE_PATH_EN,
+  NUMISMATICS_PATH,
+  netherlandsCoinSlugs,
+  netherlandsCoinageDedicatedSlugs,
+  netherlandsCoins,
+} from '../data/netherlands-coinage';
+import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 
 export type Locale = 'es' | 'en';
 
@@ -26,14 +37,21 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of milestones) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
-  for (const slug of catalogNoteSlugs) slugs.add(slug);
+  for (const slug of philippinesNoteSlugs) slugs.add(slug);
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
+  for (const slug of netherlandsCoinSlugs) slugs.add(slug);
+  for (const slug of chinaNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
 function extraAstroPageFiles(): number {
   const countable = Object.keys(astroPageFiles).filter(
-    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/') && !file.includes('/glosario/'),
+    (file) =>
+      !file.endsWith('404.astro') &&
+      !file.includes('/coleccion/') &&
+      !file.includes('/glosario/') &&
+      !file.includes('/paises-bajos-numismatica/') &&
+      !file.includes('/netherlands-numismatica/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -56,11 +74,33 @@ export function statsLine(locale: Locale): string {
 
 const seedHoldings = holdingsStats();
 
+function stripEnPrefix(path: string): string {
+  return path.replace(/^\/en(?=\/|$)/, '') || '/';
+}
+
+function stripTrailingSlash(path: string): string {
+  return path.replace(/\/$/, '') || '/';
+}
+
+function addLocalePair(
+  pairs: Record<string, { es: string; en: string }>,
+  esPath: string,
+  enPath: string,
+) {
+  const es = stripTrailingSlash(stripEnPrefix(esPath));
+  const en = stripTrailingSlash(stripEnPrefix(enPath));
+  const pair = { es, en };
+  pairs[es] = pair;
+  pairs[en] = pair;
+}
+
 /** Collection slugs that differ by language (Spanish filename vs English filename). */
-const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {
-  '/coleccion/estados-unidos': { es: '/coleccion/estados-unidos', en: '/coleccion/united-states' },
-  '/coleccion/united-states': { es: '/coleccion/estados-unidos', en: '/coleccion/united-states' },
-};
+const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {};
+addLocalePair(localizedCollectionSlugs, USA_PATH, USA_PATH_EN);
+addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
+for (const coin of netherlandsCoins) {
+  addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
+}
 
 function splitHash(path: string): { pathname: string; hash: string } {
   const index = path.indexOf('#');
@@ -120,7 +160,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
-      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, Colombia, Estados Unidos, Puerto Rico y el mundo.',
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, Colombia, los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
     heroPrimary: 'Ver el catálogo de Filipinas',
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
@@ -192,7 +232,7 @@ export const copy = {
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
-      'Detailed images, catalog references, and monetary histories from the Philippines, Colombia, the United States, Puerto Rico, and beyond.',
+      'Detailed images, catalog references, and monetary histories from the Philippines, China, Colombia, the Netherlands, the United States, Puerto Rico, and beyond.',
     heroPrimary: 'See the Philippines catalog',
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
@@ -253,9 +293,14 @@ export const collections = [
     en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
   },
   {
-    href: NUMISMATICA_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica y exonumia: Santa Fe, el peso y los lazaretos del Mediterráneo.' },
-    en: { title: 'Numismatics', description: 'Coinage and exonumia: Santa Fe, the peso, and the Mediterranean lazarettos.' },
+    href: CHINA_PATH,
+    es: { title: 'China', description: 'Historia del papel moneda y vitrina de los billetes de polímero.' },
+    en: { title: 'China', description: 'Paper-money history and a case of polymer commemoratives.' },
+  },
+  {
+    href: NUMISMATICS_PATH,
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Países Bajos y lazaretos del Mediterráneo.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, the Netherlands, and the Mediterranean lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -273,7 +318,7 @@ export const collections = [
     en: { title: 'Spain', description: 'Colonial gold of the Santa Fe de Bogotá mint.' },
   },
   {
-    href: '/coleccion/puerto-rico/',
+    href: PUERTO_RICO_PATH,
     es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX.' },
     en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues.' },
   },
@@ -364,6 +409,39 @@ export const milestones: MilestoneItem[] = [
       description: 'Third catalog case: colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
     },
   },
+  {
+    href: PUERTO_RICO_PATH,
+    es: {
+      title: 'Puerto Rico · Emisiones coloniales y de transición',
+      description: 'Cuarta vitrina del catálogo: emisiones coloniales y de transición del siglo XIX.',
+    },
+    en: {
+      title: 'Puerto Rico · Colonial and transition issues',
+      description: 'Fourth catalog case: colonial and nineteenth-century transition issues.',
+    },
+  },
+  {
+    href: CHINA_PATH,
+    es: {
+      title: 'China · Del jiaozi al polímero',
+      description: 'Quinta vitrina: historia del papel moneda y exhibición de los billetes de polímero.',
+    },
+    en: {
+      title: 'China · From jiaozi to polymer',
+      description: 'Fifth catalog case: paper-money history and the polymer notes on exhibit.',
+    },
+  },
+  {
+    href: NETHERLANDS_COINAGE_PATH,
+    es: {
+      title: 'Países Bajos · Historia de la acuñación',
+      description: 'Tercera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
+    },
+    en: {
+      title: 'Netherlands · History of the coinage',
+      description: 'Third numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -372,10 +450,13 @@ export const news: NewsItem[] = [];
 
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
+  { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
-  { href: NUMISMATICA_PATH, es: 'Monedas', en: 'Coins' },
+  { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
+  { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
+  { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
@@ -396,9 +477,11 @@ export const footerAbout = [
 /** Public content routes. Adding a row increments páginas in statsLine (see SEED_CONTENT_SLUGS). */
 export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
+  { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
+  { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
@@ -416,17 +499,23 @@ export const stubPages = [
 
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
+  ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
+  NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
+  NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
+  ...netherlandsCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
+  CHINA_PATH.replace(/^\/|\/$/g, ''),
+  ...chinaNoteSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
 
-export { SERIES_PATH };
+export { SERIES_PATH, PUERTO_RICO_PATH };
 
 export const STATS = collectionStats();

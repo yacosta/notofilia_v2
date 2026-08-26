@@ -3,12 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
   chapterHref,
-  colombiaChapters,
+  coinPageCopy,
+  coinagePath,
+  coinPath,
+  NUMISMATICS_PATH,
+  netherlandsCoinageChapters,
+  netherlandsCoins,
   seriesCopy,
-  seriesPath,
   seriesSources,
-} from '../../data/colombia';
-import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+} from '../../data/netherlands-coinage';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,17 +20,25 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
-const pathname = seriesPath(locale);
-const hero = {
-  src: '/images/catalog/colombia/hero-colombia.jpg',
-  width: 1168,
-  height: 784,
-};
+const pieces = coinPageCopy[locale];
+const pathname = coinagePath(locale);
+const hero =
+  locale === 'en'
+    ? {
+        src: '/images/catalog/netherlands/hero-netherlands.jpg',
+        width: 1168,
+        height: 784,
+      }
+    : {
+        src: '/images/catalog/netherlands/hero-paises-bajos.jpg',
+        width: 1712,
+        height: 1152,
+      };
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <section class="relative min-h-[68vh] w-full bg-[#0a0a09] md:min-h-[76vh]" aria-labelledby="series-heading">
+    <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
       <img
         class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
@@ -48,7 +59,7 @@ const hero = {
       >
       </div>
       <div
-        class="relative z-[1] mx-auto flex min-h-[68vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(52vh,28rem)] md:min-h-[76vh] md:pb-16"
+        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(42vh,22rem)] md:min-h-[64vh] md:pb-16"
       >
         <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
           {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
@@ -72,6 +83,15 @@ const hero = {
             </a>
           </li>
           <li aria-hidden="true">·</li>
+          <li>
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
+              href={localizePath(NUMISMATICS_PATH, locale)}
+            >
+              {t.parentLink}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>
@@ -80,16 +100,44 @@ const hero = {
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
 
-      <p class="mt-6 mb-0 text-[17px]/7 text-muted">
-        {t.coinageLead}
-        {' '}
-        <a
-          class="text-gold-light underline decoration-line-strong hover:text-cream"
-          href={localizePath(COLOMBIA_COINAGE_PATH, locale)}
+      <section class="mt-16" aria-labelledby="pieces-heading">
+        <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {pieces.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{pieces.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+          aria-label={locale === 'en' ? 'Coins in the collection' : 'Monedas de la colección'}
         >
-          {t.coinageLink}
-        </a>
-      </p>
+          {
+            netherlandsCoins.map((coin) => (
+              <li class="min-w-0">
+                <a
+                  href={coinPath(coin, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <img
+                    src={coin.images.composite}
+                    alt={coin.frontCaption[locale]}
+                    width={coin.images.width}
+                    height={coin.images.height}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.95rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {coin.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {coin.year} · {coin.grade[locale]} · {coin.certificate}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{pieces.viewCoin} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
 
       <section class="mt-16" aria-labelledby="holdings-heading">
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
@@ -102,7 +150,7 @@ const hero = {
           aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
         >
           {
-            colombiaChapters.map((chapter) => (
+            netherlandsCoinageChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
                   href={chapterHref(chapter.id)}
@@ -129,7 +177,7 @@ const hero = {
 
       <div class="mt-16 space-y-12">
         {
-          colombiaChapters.map((chapter) => (
+          netherlandsCoinageChapters.map((chapter) => (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -153,10 +201,10 @@ const hero = {
 
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(NUMISMATICS_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to Numismatics' : 'Volver a Numismática'}
         </a>
       </p>
     </article>

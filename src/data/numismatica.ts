@@ -1,5 +1,6 @@
 import { COLOMBIA_COINAGE_PATH } from './colombia-coinage';
 import { LAZARETTOS_PATH } from './lazarettos';
+import { NETHERLANDS_COINAGE_PATH } from './netherlands-coinage';
 import type { LocalizedText } from './catalog';
 
 export const NUMISMATICA_PATH = '/coleccion/numismatica/';
@@ -30,38 +31,47 @@ export const numismaticaCountries: NumismaticaCountry[] = [
       en: 'Ragusa’s quarantine, the Lazzaretto Vecchio, Manoel Island, and the Mediterranean network of tokens and marks.',
     },
   },
+  {
+    href: NETHERLANDS_COINAGE_PATH,
+    years: { es: 's. IX–2002', en: '9th c.–2002' },
+    title: { es: 'Países Bajos', en: 'Netherlands' },
+    lead: {
+      es: 'Del gulden de 1434 al ducado de Utrecht, el gulden decimal y el euro.',
+      en: 'From the 1434 gulden to the Utrecht ducat, the decimal gulden, and the euro.',
+    },
+  },
 ];
 
 export const numismaticaCopy = {
   es: {
     metaTitle: 'Numismática · Catálogo de moneda metálica | Notofilia',
     metaDescription:
-      'Catálogo de numismática de Notofilia: moneda metálica de Colombia y lazaretos — cuarentena, fichas y marcas sanitarias del Mediterráneo.',
+      'Catálogo de numismática de Notofilia: moneda metálica de Colombia, Países Bajos y lazaretos — cuarentena, fichas y marcas sanitarias del Mediterráneo.',
     kicker: 'Colección virtual',
     title: 'Numismática',
     subtitle: 'Moneda metálica',
     intro: [
       'La numismática en esta colección es el estudio de la moneda acuñada: oro y plata coloniales, cobres de necesidad, pesos decimales y las series que aún circulan. No sustituye a la notafilia; la acompaña. El papel de cada país tiene su propia vitrina.',
-      'Abren dos casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué— y Lazarettos —la exonumia de la cuarentena, de Ragusa a Malta—. Otras se irán sumando como en el catálogo de billetes.',
+      'Abren tres casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué—, Lazarettos —la exonumia de la cuarentena, de Ragusa a Malta— y Países Bajos —del gulden al euro—. Otras se irán sumando como en el catálogo de billetes.',
     ],
     holdingsTitle: 'El catálogo',
-    holdingsIntro: 'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática y Lazarettos.',
+    holdingsIntro: 'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, Lazarettos y Países Bajos.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
   en: {
     metaTitle: 'Numismatics · Coin catalog | Notofilia',
     metaDescription:
-      'Notofilia’s coin catalog: Colombian coinage and lazarettos — quarantine, tokens, and sanitary marks of the Mediterranean.',
+      'Notofilia’s coin catalog: Colombian coinage, the Netherlands, and lazarettos — quarantine, tokens, and sanitary marks of the Mediterranean.',
     kicker: 'Virtual collection',
     title: 'Numismatics',
     subtitle: 'Coinage',
     intro: [
       'Numismatics in this collection is the study of struck coin: colonial gold and silver, necessity coppers, decimal pesos, and the series still in the pocket. It does not replace notaphily; it stands beside it. Each country’s paper has its own case.',
-      'Two houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — and Lazarettos — the exonumia of quarantine, from Ragusa to Malta. Others will follow as they do in the note catalog.',
+      'Three houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — Lazarettos — the exonumia of quarantine, from Ragusa to Malta — and the Netherlands — from the gulden to the euro. Others will follow as they do in the note catalog.',
     ],
     holdingsTitle: 'The catalog',
-    holdingsIntro: 'One case to a card, left to right as each is documented. Colombia-Numismatics and Lazarettos open the row.',
+    holdingsIntro: 'One case to a card, left to right as each is documented. Colombia-Numismatics, Lazarettos, and the Netherlands open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },

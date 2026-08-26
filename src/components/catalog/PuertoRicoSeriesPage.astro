@@ -1,13 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
-import {
-  seriesCopy,
-  seriesSources,
-  seriesPath,
-  victoryNotes,
-  notePath,
-} from '../../data/philippines-victory-66';
+import { seriesCopy, seriesSources, seriesPath } from '../../data/puerto-rico';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,25 +11,18 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/philippines/hero-philippines.jpg',
-        width: 1168,
-        height: 784,
-      }
-    : {
-        src: '/images/catalog/philippines/hero-filipinas.jpg',
-        width: 1712,
-        height: 1152,
-      };
+const hero = {
+  src: '/images/catalog/puerto-rico/hero-puerto-rico.jpg',
+  width: 2128,
+  height: 912,
+};
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[68vh] w-full bg-[#0a0a09] md:min-h-[76vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_42%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -90,41 +77,7 @@ const hero =
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
           {t.holdingsTitle}
         </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Notes lined up left to right by denomination' : 'Billetes alineados de izquierda a derecha por denominación'}
-        >
-          {
-            [...victoryNotes]
-              .sort((a, b) => Number.parseInt(a.id, 10) - Number.parseInt(b.id, 10))
-              .map((note) => (
-              <li class="min-w-0">
-                <a
-                  href={notePath(note, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <img
-                    src={note.images.front}
-                    alt={note.frontCaption[locale]}
-                    width="2400"
-                    height="800"
-                    class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    decoding="async"
-                  />
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {note.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
       </section>
 
       <div class="mt-16">

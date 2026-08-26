@@ -1,0 +1,9 @@
+---
+import ChinaNotePage from '../../../../components/catalog/ChinaNotePage.astro';
+import { noteById } from '../../../../data/china';
+
+const note = noteById('100-yuan');
+if (!note) throw new Error('Missing 100-yuan catalog note');
+---
+
+<ChinaNotePage locale="es" note={note} />

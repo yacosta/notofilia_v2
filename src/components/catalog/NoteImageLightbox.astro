@@ -4,9 +4,11 @@ interface Props {
   alt: string;
   expandLabel: string;
   closeLabel: string;
+  width?: number;
+  height?: number;
 }
 
-const { src, alt, expandLabel, closeLabel } = Astro.props;
+const { src, alt, expandLabel, closeLabel, width = 1800, height = 900 } = Astro.props;
 const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 ---
 
@@ -21,8 +23,8 @@ const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-
     <img
       src={src}
       alt={alt}
-      width="1800"
-      height="900"
+      width={width}
+      height={height}
       class="w-full rounded-[2px] border border-line bg-panel object-contain"
       decoding="async"
     />
@@ -61,8 +63,8 @@ const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-
           <img
             src={src}
             alt={alt}
-            width="1800"
-            height="900"
+            width={width}
+            height={height}
             class="max-h-[min(78vh,48rem)] w-auto max-w-full object-contain"
             decoding="async"
           />

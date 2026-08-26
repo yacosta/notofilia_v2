@@ -2,12 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
-  seriesCopy,
-  seriesSources,
-  seriesPath,
-  victoryNotes,
+  chinaNotes,
   notePath,
-} from '../../data/philippines-victory-66';
+  seriesCopy,
+  seriesPath,
+  seriesSources,
+} from '../../data/china';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,23 +17,16 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/philippines/hero-philippines.jpg',
-        width: 1168,
-        height: 784,
-      }
-    : {
-        src: '/images/catalog/philippines/hero-filipinas.jpg',
-        width: 1712,
-        height: 1152,
-      };
+const hero = {
+  src: '/images/catalog/china/hero-china.jpg',
+  width: 1168,
+  height: 784,
+};
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <section class="relative min-h-[68vh] w-full bg-[#0a0a09] md:min-h-[76vh]" aria-labelledby="series-heading">
+    <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
       <img
         class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
@@ -54,7 +47,7 @@ const hero =
       >
       </div>
       <div
-        class="relative z-[1] mx-auto flex min-h-[68vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(52vh,28rem)] md:min-h-[76vh] md:pb-16"
+        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(42vh,22rem)] md:min-h-[64vh] md:pb-16"
       >
         <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
           {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
@@ -94,12 +87,10 @@ const hero =
 
         <ol
           class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Notes lined up left to right by denomination' : 'Billetes alineados de izquierda a derecha por denominación'}
+          aria-label={locale === 'en' ? 'Polymer notes lined up by denomination' : 'Billetes de polímero alineados por denominación'}
         >
           {
-            [...victoryNotes]
-              .sort((a, b) => Number.parseInt(a.id, 10) - Number.parseInt(b.id, 10))
-              .map((note) => (
+            chinaNotes.map((note) => (
               <li class="min-w-0">
                 <a
                   href={notePath(note, locale)}
@@ -108,8 +99,8 @@ const hero =
                   <img
                     src={note.images.front}
                     alt={note.frontCaption[locale]}
-                    width="2400"
-                    height="800"
+                    width="1800"
+                    height="600"
                     class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
                     decoding="async"
                   />
