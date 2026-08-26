@@ -3,3 +3,6 @@ dist/
 .astro/
 .wrangler/
 .DS_Store
+
+# Generated from catalog-src/catalog/ by `npm run images`
+public/images/catalog/
