@@ -1,15 +1,10 @@
+import type { CatalogSource, LocalizedText } from './catalog';
+
+export type { CatalogSource, LocalizedText };
+
 export const SERIES_PATH = '/coleccion/filipinas/';
 
 export type VictoryNoteId = '1-peso' | '2-pesos' | '5-pesos' | '20-pesos';
-
-export type LocalizedText = { es: string; en: string };
-
-export type CatalogSource = {
-  href: string;
-  es: string;
-  en: string;
-  note?: LocalizedText;
-};
 
 export const seriesSources: CatalogSource[] = [
   {
@@ -447,6 +442,8 @@ export const notePageCopy = {
     serialLabel: 'Número de serie',
     pickLabel: 'Referencia Pick',
     gradeLabel: 'Conservación',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
   },
   en: {
     seriesLink: 'Victory Series No. 66',
@@ -463,6 +460,8 @@ export const notePageCopy = {
     serialLabel: 'Serial number',
     pickLabel: 'Pick reference',
     gradeLabel: 'Condition',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
   },
 } as const;
 

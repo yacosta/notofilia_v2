@@ -1,5 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
-import { catalogNoteSlugs, dedicatedCatalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { COLOMBIA_PATH } from '../data/colombia';
+import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
+import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
 
@@ -25,7 +27,7 @@ function uniqueContentSlugs(): Set<string> {
 
 function extraAstroPageFiles(): number {
   const countable = Object.keys(astroPageFiles).filter(
-    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/'),
+    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/') && !file.includes('/glosario/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -73,6 +75,14 @@ export const copy = {
     langEn: 'EN — English',
     menu: 'Menú',
     closeMenu: 'Cerrar menú',
+    closeSubmenu: 'Cerrar submenú',
+    openSubmenu: 'Abrir el submenú {menuTitle}',
+    closeNamedSubmenu: 'Cerrar el submenú {menuTitle}',
+    navHelp:
+      'Puede abrir un submenú, si existe, con el botón situado después del enlace.',
+    navOnMenu: 'Está en el menú de navegación',
+    backToMenu: 'Volver al menú',
+    megaBannerCta: 'Ver el catálogo',
     metaTitle: 'Notofilia: Billetes y Numismática | Catálogo y Guías',
     metaDescription: `Notafilia y numismática: ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países. Catálogos y guías en español.`,
     heroKicker: 'Notofilia.com',
@@ -138,6 +148,13 @@ export const copy = {
     langEn: 'EN — English',
     menu: 'Menu',
     closeMenu: 'Close menu',
+    closeSubmenu: 'Close sub menu',
+    openSubmenu: 'Open {menuTitle} submenu',
+    closeNamedSubmenu: 'Close {menuTitle} submenu',
+    navHelp: 'You can open a sub-menu, if it exists, with the button located after the link.',
+    navOnMenu: 'You are on the navigation menu',
+    backToMenu: 'Back to menu',
+    megaBannerCta: 'See the catalog',
     metaTitle: 'Notofilia: Banknotes and Numismatics | Catalog and Guides',
     metaDescription: `Notaphily and numismatics: ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries. Catalogs and guides in English.`,
     heroKicker: 'Notofilia.com',
@@ -195,15 +212,7 @@ export const copy = {
   },
 } as const;
 
-export const primaryNav = [
-  { href: SERIES_PATH, es: 'Colección', en: 'Collection' },
-  { href: '/blog/', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
-  { href: '/noticias/', es: 'Noticias numismáticas', en: 'Numismatic news' },
-  { href: '/glosario/', es: 'Glosario', en: 'Glossary' },
-  { href: '/nosotros/', es: 'Sobre Notofilia', en: 'About' },
-  { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
-  { href: '/contacto/', es: 'Contacto', en: 'Contact' },
-] as const;
+export { megaNav, primaryNav, type NavNode } from './mega-nav';
 
 export const collections = [
   {
@@ -217,7 +226,7 @@ export const collections = [
     en: { title: 'Numismatics', description: 'Coin catalog: colonial gold, necessity copper, and trade pieces.' },
   },
   {
-    href: '/coleccion/colombia/',
+    href: COLOMBIA_PATH,
     es: { title: 'Colombia', description: 'Banca libre, Banco de la República, specimens y errores.' },
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
@@ -279,6 +288,17 @@ export const milestones: MilestoneItem[] = [
       description: 'First catalog case: Commonwealth 1, 2, 5, and 20 pesos, lined up by denomination.',
     },
   },
+  {
+    href: COLOMBIA_PATH,
+    es: {
+      title: 'Colombia · Banca libre y Banco de la República',
+      description: 'Segunda vitrina del catálogo: independencia, banca libre, Banco Nacional y el banco central.',
+    },
+    en: {
+      title: 'Colombia · Free banking and the Banco de la República',
+      description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -287,7 +307,7 @@ export const news: NewsItem[] = [];
 
 export const footerExplore = [
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
-  { href: '/coleccion/colombia/', es: 'Colombia', en: 'Colombia' },
+  { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
@@ -325,6 +345,13 @@ export const stubPages = [
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
-export { dedicatedCatalogPaths, SERIES_PATH };
+export const dedicatedCatalogPaths = new Set<string>([
+  ...catalogPaths,
+  COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
+  ...glossaryTermSlugs,
+]);
+
+export { SERIES_PATH };
 
 export const STATS = collectionStats();

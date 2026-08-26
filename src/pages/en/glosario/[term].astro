@@ -1,0 +1,15 @@
+---
+import GlossaryTermPage from '../../../components/glossary/GlossaryTermPage.astro';
+import { glossaryTerms } from '../../../data/glossary';
+
+export function getStaticPaths() {
+  return glossaryTerms.map((term) => ({
+    params: { term: term.slug },
+    props: { term },
+  }));
+}
+
+const { term } = Astro.props;
+---
+
+<GlossaryTermPage locale="en" term={term} />
