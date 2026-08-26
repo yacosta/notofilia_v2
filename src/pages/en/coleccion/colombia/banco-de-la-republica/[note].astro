@@ -1,0 +1,15 @@
+---
+import BanrepNotePage from '../../../../../components/catalog/BanrepNotePage.astro';
+import { banrepNotes } from '../../../../../data/banco-de-la-republica';
+
+export function getStaticPaths() {
+  return banrepNotes.map((note) => ({
+    params: { note: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+---
+
+<BanrepNotePage locale="en" note={note} />

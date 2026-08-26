@@ -1,7 +1,13 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
-import { COLOMBIA_PATH } from '../data/colombia';
+import { BANREP_PATH, COLOMBIA_PATH } from '../data/colombia';
+import {
+  catalogNoteSlugs as banrepNoteSlugs,
+  dedicatedCatalogPaths as banrepPaths,
+} from '../data/banco-de-la-republica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
-import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { catalogNoteSlugs as filipinasNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+
+const catalogNoteSlugs = [...filipinasNoteSlugs, ...banrepNoteSlugs];
 
 export type Locale = 'es' | 'en';
 
@@ -227,7 +233,7 @@ export const collections = [
   },
   {
     href: COLOMBIA_PATH,
-    es: { title: 'Colombia', description: 'Banca libre, Banco de la República, specimens y errores.' },
+    es: { title: 'Colombia', description: 'Banca libre, Banco de la República, especímenes y errores.' },
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
@@ -299,6 +305,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: BANREP_PATH,
+    es: {
+      title: 'Banco de la República · desde 1923',
+      description: 'Tercera vitrina: series ABNC, especímenes, pruebas de Débora Arango y errores de corte.',
+    },
+    en: {
+      title: 'Banco de la República · from 1923',
+      description: 'Third catalog case: ABNC series, specimens, Débora Arango proofs, and cutting errors.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -347,6 +364,7 @@ export const stubPages = [
 
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
+  ...banrepPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,

@@ -1,14 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
+import { COLOMBIA_PATH } from '../../data/colombia';
 import {
-  BANREP_PATH,
-  chapterHref,
-  colombiaChapters,
+  catalogHoldings,
+  errorHoldings,
+  notePath,
   seriesCopy,
   seriesPath,
   seriesSources,
-} from '../../data/colombia';
+} from '../../data/banco-de-la-republica';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -18,15 +19,10 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-
-function chapterLink(id: (typeof colombiaChapters)[number]['id']) {
-  const href = chapterHref(id);
-  return href.startsWith('#') ? href : localizePath(href, locale);
-}
 const hero = {
-  src: '/images/catalog/colombia/hero-colombia.jpg',
-  width: 1168,
-  height: 784,
+  src: '/images/catalog/colombia/hero-banco-de-la-republica.jpg',
+  width: 2128,
+  height: 912,
 };
 ---
 
@@ -34,7 +30,7 @@ const hero = {
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_32%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -77,7 +73,13 @@ const hero = {
             </a>
           </li>
           <li aria-hidden="true">·</li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(COLOMBIA_PATH, locale)}>
+              {locale === 'en' ? 'Colombia' : 'Colombia'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.title}</li>
         </ol>
       </nav>
 
@@ -92,28 +94,31 @@ const hero = {
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
+          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+          aria-label={locale === 'en' ? 'Notes lined up by denomination' : 'Billetes alineados por denominación'}
         >
           {
-            colombiaChapters.map((chapter) => (
+            catalogHoldings.map((note) => (
               <li class="min-w-0">
                 <a
-                  href={chapterLink(chapter.id)}
+                  href={notePath(note, locale)}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {chapter.years[locale]}
-                    </span>
-                  </div>
+                  <img
+                    src={note.images[0].src}
+                    alt={note.cardCaption[locale]}
+                    width="1800"
+                    height="1200"
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
                   <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {chapter.title[locale]}
+                    {note.title[locale]}
                   </h3>
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {chapter.years[locale]}
+                    {t.pickLabel} {note.pick} · {t.kinds[note.kind]}
                   </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                 </a>
               </li>
             ))
@@ -121,37 +126,44 @@ const hero = {
         </ol>
       </section>
 
-      <div class="mt-16 space-y-12">
-        {
-          colombiaChapters.map((chapter) => (
-            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
-              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-                {chapter.years[locale]}
-              </p>
-              <h2
-                id={`${chapter.id}-heading`}
-                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
-              >
-                {chapter.title[locale]}
-              </h2>
-              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
-              {
-                chapter.id === 'banco-de-la-republica' ? (
-                  <p class="mb-0 mt-5">
-                    <a
-                      href={localizePath(BANREP_PATH, locale)}
-                      class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-                    >
-                      {t.viewBanrep} →
-                    </a>
+      <section id="errores" class="mt-16 scroll-mt-28" aria-labelledby="errors-heading">
+        <h2 id="errors-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.errorsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.errorsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+          aria-label={locale === 'en' ? 'Cutting and printing errors' : 'Errores de corte e impresión'}
+        >
+          {
+            errorHoldings.map((note) => (
+              <li class="min-w-0">
+                <a
+                  href={notePath(note, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <img
+                    src={note.images[0].src}
+                    alt={note.cardCaption[locale]}
+                    width="1800"
+                    height="1200"
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {note.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.pickLabel} {note.pick} · {t.kinds[note.kind]}
                   </p>
-                ) : null
-              }
-            </section>
-          ))
-        }
-      </div>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
 
       <div class="mt-16">
         <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
@@ -159,10 +171,10 @@ const hero = {
 
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(COLOMBIA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to Colombia' : 'Volver a Colombia'}
         </a>
       </p>
     </article>
