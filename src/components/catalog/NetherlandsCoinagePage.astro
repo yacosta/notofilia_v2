@@ -38,9 +38,9 @@ const hero =
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <section class="relative min-h-[58vh] w-full bg-[#0a0a09] md:min-h-[64vh]" aria-labelledby="series-heading">
+    <section class="relative w-full bg-[#0a0a09] pt-[5.5rem] md:pt-[10.5rem]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        class="relative z-0 block h-auto w-full [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -59,7 +59,7 @@ const hero =
       >
       </div>
       <div
-        class="relative z-[1] mx-auto flex min-h-[58vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(42vh,22rem)] md:min-h-[64vh] md:pb-16"
+        class="absolute inset-x-0 bottom-0 z-[1] mx-auto flex max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 md:pb-16"
       >
         <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
           {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
