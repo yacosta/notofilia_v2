@@ -168,7 +168,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: invención del papel, imperio y República, renminbi y polímero. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
+      'Esta vitrina exhibe solo los billetes de polímero. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -189,12 +189,15 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters in one row, left to right by period: the invention of paper, empire and Republic, the renminbi, and polymer. Individual note pages will be published as they are documented, as in the Philippines case.',
+      'This case exhibits only the polymer notes. Individual note pages will be published as they are documented, as in the Philippines case.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
   },
 } as const;
+
+/** Only polymer notes are on exhibit; the other chapters stay as page history. */
+export const catalogChapters = chinaChapters.filter((chapter) => chapter.id === 'polimero');
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${CHINA_PATH}` : CHINA_PATH;

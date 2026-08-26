@@ -2,8 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
+  catalogChapters,
   chapterHref,
-  chinaChapters,
   seriesCopy,
   seriesPath,
   seriesSources,
@@ -86,11 +86,11 @@ const hero = {
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Chapters lined up left to right by period' : 'Capítulos alineados de izquierda a derecha por época'}
+          class="m-0 grid list-none grid-cols-1 gap-2 p-0 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4"
+          aria-label={locale === 'en' ? 'Polymer notes on exhibit' : 'Billetes de polímero en exhibición'}
         >
           {
-            chinaChapters.map((chapter) => (
+            catalogChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
                   href={chapterHref(chapter.id)}
@@ -117,7 +117,7 @@ const hero = {
 
       <div class="mt-16 space-y-12">
         {
-          chinaChapters.map((chapter) => (
+            catalogChapters.map((chapter) => (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}

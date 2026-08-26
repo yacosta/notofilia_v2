@@ -57,10 +57,7 @@ export const megaNav: NavNode[] = [
         en: 'China',
         href: CHINA_PATH,
         children: [
-          { id: 'china-jiaozi', es: 'Papel moneda histórico', en: 'Historical paper money', href: `${CHINA_PATH}#jiaozi` },
-          { id: 'china-imperio', es: 'Ming, Qing y República', en: 'Ming, Qing, and the Republic', href: `${CHINA_PATH}#imperio-republica` },
-          { id: 'china-renminbi', es: 'Renminbi', en: 'Renminbi', href: `${CHINA_PATH}#renminbi` },
-          { id: 'china-polimero', es: 'Polímero', en: 'Polymer', href: `${CHINA_PATH}#polimero` },
+          { id: 'china-polimero', es: 'Billetes de polímero', en: 'Polymer banknotes', href: `${CHINA_PATH}#polimero` },
         ],
       },
       {

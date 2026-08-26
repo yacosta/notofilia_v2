@@ -251,8 +251,8 @@ export const collections = [
   },
   {
     href: CHINA_PATH,
-    es: { title: 'China', description: 'Del jiaozi Song al renminbi: historia del papel y los conmemorativos de polímero.' },
-    en: { title: 'China', description: 'From Song jiaozi to the renminbi: paper history and polymer commemoratives.' },
+    es: { title: 'China', description: 'Historia del papel moneda y vitrina de los billetes de polímero.' },
+    en: { title: 'China', description: 'Paper-money history and a case of polymer commemoratives.' },
   },
   {
     href: '/coleccion/numismatica/',
@@ -359,11 +359,11 @@ export const milestones: MilestoneItem[] = [
     href: CHINA_PATH,
     es: {
       title: 'China · Del jiaozi al polímero',
-      description: 'Quinta vitrina del catálogo: invención del papel moneda, emisiones Qing y republicanas, renminbi y polímero.',
+      description: 'Quinta vitrina: historia del papel moneda y exhibición de los billetes de polímero.',
     },
     en: {
       title: 'China · From jiaozi to polymer',
-      description: 'Fifth catalog case: the invention of paper money, Qing and Republican issues, the renminbi, and polymer.',
+      description: 'Fifth catalog case: paper-money history and the polymer notes on exhibit.',
     },
   },
 ];
