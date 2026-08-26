@@ -157,6 +157,10 @@ export const coinageCopy = {
       'Cinco vitrinas, en la misma fila de izquierda a derecha: Santa Fe colonial, Independencia y Gran Colombia, Nueva Granada, la República y Lazarettos. Las fichas de cada tipo se publicarán como en Filipinas y en el papel colombiano, a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
     viewCase: 'Leer el catálogo',
+    piecesTitle: 'Piezas de la colección',
+    piecesIntro:
+      'Primera ficha: el cuartillo de cobre de Santa Marta, 1820 — moneda de sitio realista del capítulo de Independencia.',
+    viewPiece: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     notaphilyLead: 'El papel moneda de estas mismas épocas se documenta en la vitrina de notafilia.',
@@ -181,6 +185,10 @@ export const coinageCopy = {
       'Five cases in one row, left to right: colonial Santa Fe, Independence and Gran Colombia, New Granada, the Republic, and Lazarettos. Individual type pages will be published as they are documented, as in the Philippines case and the Colombian paper case.',
     viewChapter: 'Read the chapter',
     viewCase: 'Read the catalog',
+    piecesTitle: 'Pieces in the collection',
+    piecesIntro:
+      'First record: the copper cuartillo of Santa Marta, 1820 — a royalist siege coin from the Independence chapter.',
+    viewPiece: 'Open the piece',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     notaphilyLead: 'Paper money from the same periods is documented in the notaphily case.',

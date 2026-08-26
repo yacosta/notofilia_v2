@@ -1,6 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
@@ -26,6 +27,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of catalogNoteSlugs) slugs.add(slug);
+  for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -417,6 +419,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
+  ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),

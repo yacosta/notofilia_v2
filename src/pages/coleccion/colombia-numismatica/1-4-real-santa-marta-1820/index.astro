@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('1-4-real-santa-marta-1820');
+if (!piece) throw new Error('Missing Santa Marta 1820 1/4 real');
+---
+
+<ColombiaCoinPage locale="es" piece={piece} />

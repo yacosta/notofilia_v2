@@ -10,6 +10,7 @@ import {
   colombiaCoinageChapters,
   colombiaCoinageExtraCases,
 } from '../../data/colombia-coinage';
+import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import SourceList from './SourceList.astro';
 
@@ -154,6 +155,45 @@ const hero = {
                     {t.eraLabel} · {item.years[locale]}
                   </p>
                   <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCase} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section class="mt-16" aria-labelledby="pieces-heading">
+        <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.piecesTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.piecesIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
+          aria-label={locale === 'en' ? 'Coins exhibited in this case' : 'Monedas exhibidas en esta vitrina'}
+        >
+          {
+            colombiaCoinagePieces.map((piece) => (
+              <li class="min-w-0">
+                <a
+                  href={coinagePiecePath(piece, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <img
+                    src={piece.images.composite}
+                    alt={piece.lead[locale]}
+                    width="1536"
+                    height="1024"
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {piece.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {piece.reference.split(' · ')[0]} · {piece.year}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewPiece} →</span>
                 </a>
               </li>
             ))

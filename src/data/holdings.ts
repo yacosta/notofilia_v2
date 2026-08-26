@@ -64,6 +64,7 @@ export const additions: Holding[] = [
   { id: 'ph-1944-2-pesos-f13317943', kind: 'banknote', country: 'PH' },
   { id: 'ph-1944-5-pesos-f00618071', kind: 'banknote', country: 'PH' },
   { id: 'ph-1944-20-pesos-f04661756', kind: 'banknote', country: 'PH' },
+  { id: 'co-1820-1-4-real-santa-marta', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -72,6 +73,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'ph-victory-66-2-pesos-p95a' },
   { id: 'ph-victory-66-5-pesos-p96a' },
   { id: 'ph-victory-66-20-pesos-p98a' },
+  { id: 'co-1820-santa-marta-1-4-real-km-b4' },
 ];
 
 export type CollectionStats = {
