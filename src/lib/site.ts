@@ -1,5 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -50,18 +51,44 @@ export function statsLine(locale: Locale): string {
 
 const seedHoldings = holdingsStats();
 
+/** Collection slugs that differ by language (Spanish filename vs English filename). */
+const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {
+  '/coleccion/estados-unidos': { es: '/coleccion/estados-unidos', en: '/coleccion/united-states' },
+  '/coleccion/united-states': { es: '/coleccion/estados-unidos', en: '/coleccion/united-states' },
+};
+
+function splitHash(path: string): { pathname: string; hash: string } {
+  const index = path.indexOf('#');
+  if (index === -1) return { pathname: path, hash: '' };
+  return { pathname: path.slice(0, index), hash: path.slice(index) };
+}
+
+function rewriteCollectionSlug(pathname: string, locale: Locale): string {
+  const slash = pathname.endsWith('/') ? '/' : '';
+  const core = pathname.replace(/\/$/, '') || '/';
+  const pair = localizedCollectionSlugs[core];
+  if (!pair) return pathname;
+  return `${pair[locale]}${slash || '/'}`;
+}
+
 export function localizePath(path: string, locale: Locale): string {
   if (path.startsWith('http')) return path;
-  if (locale === 'es') return path;
-  if (path === '/') return '/en/';
-  return `/en${path}`;
+  const { pathname, hash } = splitHash(path);
+  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+  const rewritten = rewriteCollectionSlug(unprefixed, locale);
+  if (locale === 'es') return `${rewritten}${hash}`;
+  if (rewritten === '/') return `/en/${hash}`;
+  return `/en${rewritten}${hash}`;
 }
 
 export function otherLocalePath(path: string, locale: Locale): string {
-  if (locale === 'es') {
-    return path === '/' ? '/en/' : `/en${path}`;
-  }
-  return path.replace(/^\/en(?=\/|$)/, '') || '/';
+  const target: Locale = locale === 'es' ? 'en' : 'es';
+  const { pathname, hash } = splitHash(path);
+  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+  const rewritten = rewriteCollectionSlug(unprefixed, target);
+  if (target === 'es') return `${rewritten}${hash}`;
+  if (rewritten === '/') return `/en/${hash}`;
+  return `/en${rewritten}${hash}`;
 }
 
 export const copy = {
@@ -231,7 +258,7 @@ export const collections = [
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
-    href: '/coleccion/estados-unidos/',
+    href: USA_PATH,
     es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
     en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
   },
@@ -299,6 +326,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: USA_PATH,
+    es: {
+      title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
+      description: 'Tercera vitrina del catálogo: colonial, obsoleto, United States Notes, oro, plata, Reserva Federal y pop art.',
+    },
+    en: {
+      title: 'United States · From colonial paper to the Federal Reserve',
+      description: 'Third catalog case: colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -310,7 +348,7 @@ export const footerExplore = [
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
-  { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
+  { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
 
 export const footerResources = [
@@ -348,6 +386,8 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  USA_PATH.replace(/^\/|\/$/g, ''),
+  USA_PATH_EN.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
