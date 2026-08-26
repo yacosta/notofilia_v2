@@ -44,6 +44,7 @@ const enUrl = pathname.startsWith('/en')
     <meta property="og:locale:alternate" content={locale === 'en' ? 'es' : 'en_US'} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <slot name="head" />
   </head>
   <body class="m-0 min-h-full bg-bg font-serif text-[17px]/7 text-cream">
     <SkipLink locale={locale} />

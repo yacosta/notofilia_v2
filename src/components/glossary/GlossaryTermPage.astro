@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, type Locale } from '../../lib/site';
+import {
+  glossaryCategories,
+  glossaryCopy,
+  glossaryPath,
+  glossaryTermBySlug,
+  glossaryTermPath,
+  type GlossaryTerm,
+} from '../../data/glossary';
+
+interface Props {
+  locale: Locale;
+  term: GlossaryTerm;
+}
+
+const { locale, term } = Astro.props;
+const t = glossaryCopy[locale];
+const pathname = glossaryTermPath(term.slug, locale);
+const otherLang: Locale = locale === 'en' ? 'es' : 'en';
+const categoryLabel = glossaryCategories.find((category) => category.id === term.category)?.[locale] ?? term.category;
+const related = term.seeAlso
+  .map((slug) => glossaryTermBySlug(slug))
+  .filter((item): item is GlossaryTerm => Boolean(item));
+---
+
+<Layout title={t.termTitle(term.title[locale])} description={term.definition[locale]} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <nav class="mb-5 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
+              {t.home}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={glossaryPath(locale)}>
+              {t.glossary}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{term.title[locale]}</li>
+        </ol>
+      </nav>
+
+      <p class="m-0 mb-3 font-sans text-[13px] uppercase tracking-[0.14em] text-muted">{categoryLabel}</p>
+      <h1 id="term" class="mb-2 mt-0 font-display text-[clamp(28px,4.5vw,42px)] font-normal leading-[1.12] text-cream">
+        {term.title[locale]}
+      </h1>
+      <p lang={otherLang} class="mb-8 mt-0 text-[clamp(18px,2.2vw,22px)] leading-[1.5] text-cream-dim italic">
+        {term.title[otherLang]}
+      </p>
+
+      <div class="glossary-card rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim px-[clamp(20px,4vw,40px)] py-8">
+        {
+          locale === 'es' ? (
+            <>
+              <p class="m-0 mb-4 text-[19px] leading-[1.7] text-ink">{term.definition.es}</p>
+              <p lang="en" class="m-0 text-[16px] leading-[1.6] text-gold-dark italic">
+                {term.definition.en}
+              </p>
+            </>
+          ) : (
+            <p class="m-0 text-[19px] leading-[1.7] text-ink">{term.definition.en}</p>
+          )
+        }
+        {
+          related.length > 0 ? (
+            <p class="mb-0 mt-5 font-sans text-[15px] text-gold-dark">
+              <span>{t.seeAlso}</span>{' '}
+              {related.map((item, index) => (
+                <>
+                  {index > 0 ? <span>, </span> : null}
+                  <a
+                    href={glossaryTermPath(item.slug, locale)}
+                    class="underline [text-decoration-color:rgba(51,46,34,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-deep"
+                  >
+                    {item.title[locale]}
+                  </a>
+                </>
+              ))}
+            </p>
+          ) : null
+        }
+      </div>
+
+      <p class="mb-0 mt-8">
+        <a
+          href={glossaryPath(locale)}
+          class="inline-flex min-h-11 items-center text-cream underline [text-decoration-color:rgba(231,222,201,0.35)] hover:text-gold-light"
+        >
+          {t.back}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

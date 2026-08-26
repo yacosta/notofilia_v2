@@ -1,5 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
-import { catalogNoteSlugs, dedicatedCatalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
+import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
 export type Locale = 'es' | 'en';
 
@@ -25,7 +26,7 @@ function uniqueContentSlugs(): Set<string> {
 
 function extraAstroPageFiles(): number {
   const countable = Object.keys(astroPageFiles).filter(
-    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/'),
+    (file) => !file.endsWith('404.astro') && !file.includes('/coleccion/') && !file.includes('/glosario/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -325,6 +326,12 @@ export const stubPages = [
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
-export { dedicatedCatalogPaths, SERIES_PATH };
+export const dedicatedCatalogPaths = new Set<string>([
+  ...catalogPaths,
+  GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
+  ...glossaryTermSlugs,
+]);
+
+export { SERIES_PATH };
 
 export const STATS = collectionStats();
