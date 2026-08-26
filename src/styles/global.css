@@ -121,8 +121,9 @@ body.mega-drawer-lock {
   overflow: hidden;
 }
 
-.mega-header {
-  isolation: isolate;
+.mega-utility {
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(10px);
 }
 
 .mega-bar {
@@ -199,6 +200,15 @@ body.mega-drawer-lock {
   cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+  .mega-item-toggle {
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .mega-item-chevron {
   width: 8px;
   height: 8px;
@@ -271,7 +281,7 @@ body.mega-drawer-lock {
 .mega-panel-inner {
   display: flex;
   gap: 0;
-  min-height: 248px;
+  min-height: 280px;
   padding: 12px;
 }
 
@@ -334,6 +344,14 @@ body.mega-drawer-lock {
   max-width: 220px;
   height: 132px;
   overflow: hidden;
+}
+
+.mega-card:has(.mega-card-links) {
+  min-height: 280px;
+}
+
+.mega-card:has(.mega-card-links) .mega-card-media {
+  height: 96px;
 }
 
 .mega-card--small .mega-card-media {
@@ -422,7 +440,7 @@ body.mega-drawer-lock {
 .mega-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 30;
+  z-index: 70;
   background: rgba(10, 10, 9, 0.45);
 }
 
@@ -441,9 +459,9 @@ body.mega-drawer-lock {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    z-index: 60;
-    width: min(26rem, calc(100% - 3rem));
+    z-index: 80;
+    width: min(26rem, calc(100vw - 3rem));
+    height: 100dvh;
     overflow: hidden;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
