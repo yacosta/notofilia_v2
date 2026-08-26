@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { SERIES_PATH } from './philippines-victory-66';
 
 export const USA_PATH = '/coleccion/estados-unidos/';
 export const USA_PATH_EN = '/coleccion/united-states/';
@@ -113,8 +114,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Esta vitrina reunirá el 100 dólares FRBN de Minneapolis de 1929, los 10 dólares de 1934 de varios distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) y los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. This case will gather the 1929 Minneapolis $100 FRBN, the 1934 $10 notes of several districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Military Payment Certificates and USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Esta vitrina reunirá el 100 dólares FRBN de Minneapolis de 1929, los 10 dólares de 1934 de varios distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) —el papel de las bases en ultramar, de 1946 a 1973— tienen su propia tarjeta en este catálogo y abren la vitrina de Filipinas, donde está el papel estadounidense de la liberación.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. This case will gather the 1929 Minneapolis $100 FRBN, the 1934 $10 notes of several districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Military Payment Certificates — the paper of overseas bases, from 1946 to 1973 — have their own card in this catalog and open the Philippines case, where the United States paper of the liberation is documented.',
     },
   },
   {
@@ -201,12 +202,17 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal: United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878).',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se fotografíen. Los certificados de pago militar (MPC) abren esa vitrina: el papel que el BEP imprimió para la liberación. Caben también cupones USDA y notas de prueba.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Siete capítulos, de izquierda a derecha por época: moneda colonial, billete obsoleto, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank y pop art. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
+      'Ocho tarjetas, de izquierda a derecha por época: moneda colonial, billete obsoleto, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, pop art y Military Payment Certificates —esta última abre el catálogo de Filipinas. Las fichas de cada pieza se publicarán a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
+    viewPhilippines: 'Ver el catálogo de Filipinas',
+    mpcHeading: 'Military Payment Certificates',
+    mpcBody:
+      'Los Military Payment Certificates fueron el papel de las bases estadounidenses en ultramar, de 1946 a 1973: series que se canjeaban de un día para otro para cortar el mercado negro. El papel que el BEP imprimió para las tropas en el Pacífico —los Certificados del Tesoro de la Serie Victory n.º 66— está documentado en la vitrina de Filipinas.',
+    mpcLink: 'Abrir el catálogo de Filipinas: Serie Victory n.º 66',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
   },
@@ -222,12 +228,17 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time: United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878).',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. Individual note pages will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. Individual note pages will be published as they are photographed, as in the Philippines case. Military Payment Certificates open that case: the paper the BEP printed for the liberation. USDA food coupons and test notes belong here as well.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Seven chapters, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, and pop art. Individual note pages will be published as they are documented, as in the Philippines case.',
+      'Eight cards, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, pop art, and Military Payment Certificates — that last card opens the Philippines catalog. Individual note pages will be published as they are documented.',
     viewChapter: 'Read the chapter',
+    viewPhilippines: 'Open the Philippines catalog',
+    mpcHeading: 'Military Payment Certificates',
+    mpcBody:
+      'Military Payment Certificates were the paper of United States bases overseas, from 1946 to 1973: series exchanged overnight to cut the black market. The paper the BEP printed for troops in the Pacific — Victory Series No. 66 Treasury Certificates — is documented in the Philippines case.',
+    mpcLink: 'Open the Philippines catalog: Victory Series No. 66',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
   },
@@ -240,3 +251,12 @@ export function seriesPath(locale: 'es' | 'en'): string {
 export function chapterHref(id: UnitedStatesChapterId): string {
   return `#${id}`;
 }
+
+/** Extra catalog card after the seven United States chapters — opens Filipinas. */
+export const unitedStatesExtraCases = [
+  {
+    href: SERIES_PATH,
+    years: { es: '1946–1973', en: '1946–1973' },
+    title: { es: 'Military Payment Certificates', en: 'Military Payment Certificates' },
+  },
+] as const;

@@ -49,6 +49,7 @@ export const megaNav: NavNode[] = [
           { id: 'us-silver', es: 'Silver Certificates', en: 'Silver Certificates', href: `${USA_PATH}#us-silver` },
           { id: 'us-frb', es: 'Federal Reserve Bank', en: 'Federal Reserve Bank', href: `${USA_PATH}#us-frb` },
           { id: 'us-pop-art', es: 'Pop art', en: 'Pop art', href: `${USA_PATH}#us-pop-art` },
+          { id: 'us-mpc', es: 'Military Payment Certificates', en: 'Military Payment Certificates', href: SERIES_PATH },
         ],
       },
       {
