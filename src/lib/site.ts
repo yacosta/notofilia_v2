@@ -74,6 +74,14 @@ export const copy = {
     langEn: 'EN — English',
     menu: 'Menú',
     closeMenu: 'Cerrar menú',
+    closeSubmenu: 'Cerrar submenú',
+    openSubmenu: 'Abrir el submenú {menuTitle}',
+    closeNamedSubmenu: 'Cerrar el submenú {menuTitle}',
+    navHelp:
+      'Puede abrir un submenú, si existe, con el botón situado después del enlace.',
+    navOnMenu: 'Está en el menú de navegación',
+    backToMenu: 'Volver al menú',
+    megaBannerCta: 'Ver el catálogo',
     metaTitle: 'Notofilia: Billetes y Numismática | Catálogo y Guías',
     metaDescription: `Notafilia y numismática: ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países. Catálogos y guías en español.`,
     heroKicker: 'Notofilia.com',
@@ -139,6 +147,13 @@ export const copy = {
     langEn: 'EN — English',
     menu: 'Menu',
     closeMenu: 'Close menu',
+    closeSubmenu: 'Close sub menu',
+    openSubmenu: 'Open {menuTitle} submenu',
+    closeNamedSubmenu: 'Close {menuTitle} submenu',
+    navHelp: 'You can open a sub-menu, if it exists, with the button located after the link.',
+    navOnMenu: 'You are on the navigation menu',
+    backToMenu: 'Back to menu',
+    megaBannerCta: 'See the catalog',
     metaTitle: 'Notofilia: Banknotes and Numismatics | Catalog and Guides',
     metaDescription: `Notaphily and numismatics: ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries. Catalogs and guides in English.`,
     heroKicker: 'Notofilia.com',
@@ -196,15 +211,7 @@ export const copy = {
   },
 } as const;
 
-export const primaryNav = [
-  { href: SERIES_PATH, es: 'Colección', en: 'Collection' },
-  { href: '/blog/', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
-  { href: '/noticias/', es: 'Noticias numismáticas', en: 'Numismatic news' },
-  { href: '/glosario/', es: 'Glosario', en: 'Glossary' },
-  { href: '/nosotros/', es: 'Sobre Notofilia', en: 'About' },
-  { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
-  { href: '/contacto/', es: 'Contacto', en: 'Contact' },
-] as const;
+export { megaNav, primaryNav, type MegaItem } from './mega-nav';
 
 export const collections = [
   {
