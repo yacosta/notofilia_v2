@@ -1,0 +1,323 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import {
+  glossaryCategories,
+  glossaryCopy,
+  glossaryPath,
+  glossarySearchText,
+  glossaryTermBySlug,
+  glossaryTermPath,
+  glossaryTermsForLocale,
+} from '../../data/glossary';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = glossaryCopy[locale];
+const pathname = glossaryPath(locale);
+const terms = glossaryTermsForLocale(locale);
+const otherLang: Locale = locale === 'en' ? 'es' : 'en';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Notofilia',
+          item: new URL(localizePath('/', locale), SITE_URL).href,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t.glossary,
+          item: new URL(pathname, SITE_URL).href,
+        },
+      ],
+    },
+    {
+      '@type': 'DefinedTermSet',
+      '@id': `${new URL(pathname, SITE_URL).href}#glossary`,
+      name: t.title,
+      url: new URL(pathname, SITE_URL).href,
+      inLanguage: locale,
+      hasDefinedTerm: terms.map((term) => ({
+        '@type': 'DefinedTerm',
+        '@id': `${new URL(glossaryTermPath(term.slug, locale), SITE_URL).href}#term`,
+        name: term.title[locale],
+        alternateName: term.title[otherLang],
+        description: term.definition[locale],
+        url: new URL(glossaryTermPath(term.slug, locale), SITE_URL).href,
+        inDefinedTermSet: `${new URL(pathname, SITE_URL).href}#glossary`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <div id="glossary-index" class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <nav class="mb-5 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
+              {t.home}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.glossary}</li>
+        </ol>
+      </nav>
+
+      <header class="mx-auto mb-10 max-w-none text-center">
+        <p class="m-0 mb-3.5 font-sans text-[14px] uppercase tracking-[0.22em] text-muted">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(28px,4vw,44px)] font-normal leading-[1.08] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[clamp(18px,2.2vw,20px)] leading-[1.6] text-cream-dim">{t.lead}</p>
+      </header>
+
+      <div class="mx-auto mb-7 max-w-none">
+        <label for="glossary-search" class="mb-2.5 block text-center font-sans text-[13px] uppercase tracking-[0.14em] text-muted">
+          {t.searchLabel}
+        </label>
+        <div class="relative">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" class="pointer-events-none absolute top-1/2 left-5 -translate-y-1/2">
+            <circle cx="11" cy="11" r="7" stroke="#6b521f" stroke-width="2"></circle>
+            <line x1="16.4" y1="16.4" x2="21" y2="21" stroke="#6b521f" stroke-width="2" stroke-linecap="round"></line>
+          </svg>
+          <input
+            id="glossary-search"
+            type="search"
+            placeholder={t.searchPlaceholder}
+            autocomplete="off"
+            aria-describedby="glossary-search-status"
+            class="box-border min-h-14 w-full rounded-full border-2 border-[rgba(10,10,9,0.12)] bg-[#f2ede2] py-3.5 pr-[52px] pl-[54px] font-serif text-[19px] text-ink shadow-[0_10px_26px_rgba(0,0,0,0.28)] outline-none focus-visible:border-gold-deep focus-visible:shadow-[0_10px_26px_rgba(0,0,0,0.28),0_0_0_4px_rgba(138,109,59,0.22)]"
+          />
+          <button
+            type="button"
+            id="glossary-clear"
+            hidden
+            aria-label={t.clearSearch}
+            class="absolute top-1/2 right-2.5 flex h-9 w-9 min-h-11 min-w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border-0 bg-[rgba(10,10,9,0.08)] text-[20px] leading-none text-gold-dark hover:bg-[rgba(10,10,9,0.15)] hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-gold-deep"
+          >
+            ×
+          </button>
+        </div>
+        <p id="glossary-search-status" aria-live="polite" class="mb-0 mt-3 text-center font-sans text-[14px] text-muted">
+          {t.showingAll(terms.length)}
+        </p>
+      </div>
+
+      <div class="mb-12 flex flex-wrap justify-center gap-2.5" role="group" aria-label={t.filterLabel}>
+        <button
+          type="button"
+          data-glossary-category=""
+          aria-pressed="true"
+          class="glossary-chip min-h-11 cursor-pointer rounded-full border border-transparent bg-cream-dim px-3.5 py-[7px] font-serif text-[13px] uppercase tracking-[0.08em] text-gold-dark aria-[pressed=true]:border-gold-deep aria-[pressed=true]:text-ink"
+        >
+          {t.all}
+        </button>
+        {
+          glossaryCategories.map((category) => (
+            <button
+              type="button"
+              data-glossary-category={category.id}
+              aria-pressed="false"
+              class="glossary-chip min-h-11 cursor-pointer rounded-full border border-transparent bg-cream-dim px-3.5 py-[7px] font-serif text-[13px] uppercase tracking-[0.08em] text-gold-dark aria-[pressed=true]:border-gold-deep aria-[pressed=true]:text-ink"
+            >
+              {category[locale]}
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="flex flex-col gap-0">
+        {
+          terms.map((term) => {
+            const related = term.seeAlso
+              .map((slug) => glossaryTermBySlug(slug))
+              .filter((item): item is NonNullable<typeof item> => Boolean(item));
+            return (
+              <article
+                id={term.id}
+                data-glossary-term
+                data-glossary-cat={term.category}
+                data-glossary-search={glossarySearchText(term)}
+                class="glossary-card mb-[18px] scroll-mt-[90px] rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim px-[clamp(20px,4vw,40px)] py-7"
+              >
+                <div class="mb-2.5 flex flex-wrap items-baseline gap-2.5">
+                  <h2 class="m-0 font-display text-[22px] font-normal text-bg">
+                    <a
+                      href={glossaryTermPath(term.slug, locale)}
+                      class="text-inherit no-underline hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-deep"
+                    >
+                      {term.title[locale]}
+                    </a>
+                  </h2>
+                  <span lang={otherLang} class="text-[17px] italic text-gold-dark">
+                    {term.title[otherLang]}
+                  </span>
+                  <span class="ml-auto rounded-full border border-[rgba(138,109,59,0.35)] px-2.5 py-[3px] font-sans text-[11px] uppercase tracking-[0.1em] text-gold-deep">
+                    {glossaryCategories.find((category) => category.id === term.category)?.[locale]}
+                  </span>
+                </div>
+                {
+                  locale === 'es' ? (
+                    <>
+                      <p class="m-0 mb-1.5 text-[18px] leading-[1.6] text-ink">{term.definition.es}</p>
+                      <p lang="en" class="m-0 text-[15px] leading-[1.55] text-gold-dark italic">
+                        {term.definition.en}
+                      </p>
+                    </>
+                  ) : (
+                    <p class="m-0 text-[18px] leading-[1.6] text-ink">{term.definition.en}</p>
+                  )
+                }
+                {
+                  related.length > 0 ? (
+                    <p class="mb-0 mt-2.5 font-sans text-[14px] text-gold-dark">
+                      <span>{t.seeAlso}</span>{' '}
+                      {related.map((item, index) => (
+                        <>
+                          {index > 0 ? <span>, </span> : null}
+                          <a
+                            href={glossaryTermPath(item.slug, locale)}
+                            class="underline [text-decoration-color:rgba(51,46,34,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-deep"
+                          >
+                            {item.title[locale]}
+                          </a>
+                        </>
+                      ))}
+                    </p>
+                  ) : null
+                }
+              </article>
+            );
+          })
+        }
+      </div>
+
+      <div id="glossary-empty" hidden class="mt-4 text-center">
+        <p class="m-0 text-[17px] text-cream-dim">
+          {t.empty}{locale === 'en' ? ' “' : ' «'}<span id="glossary-empty-query"></span>{locale === 'en' ? '”.' : '».'}
+        </p>
+        <p class="mb-0 mt-4">
+          <button
+            type="button"
+            id="glossary-reset"
+            class="inline-flex min-h-11 cursor-pointer items-center border-0 bg-transparent p-0 font-sans text-[15px] text-gold-light underline decoration-line-strong hover:text-cream"
+          >
+            {t.reset}
+          </button>
+        </p>
+      </div>
+
+      <p class="mb-0 mt-8 text-center font-sans text-[14px] text-muted">{t.footnote}</p>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const root = document.getElementById('glossary-index');
+  if (root) {
+    const search = document.getElementById('glossary-search') as HTMLInputElement | null;
+    const clear = document.getElementById('glossary-clear');
+    const status = document.getElementById('glossary-search-status');
+    const empty = document.getElementById('glossary-empty');
+    const emptyQuery = document.getElementById('glossary-empty-query');
+    const reset = document.getElementById('glossary-reset');
+    const cards = Array.from(root.querySelectorAll<HTMLElement>('[data-glossary-term]'));
+    const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-glossary-category]'));
+    const isEnglish = document.documentElement.lang === 'en';
+    let category = '';
+
+    const setHidden = (el: HTMLElement | null, hidden: boolean) => {
+      if (!el) return;
+      if (hidden) el.setAttribute('hidden', '');
+      else el.removeAttribute('hidden');
+    };
+
+    const fold = (value: string) =>
+      (value || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+
+    const update = () => {
+      const raw = search?.value ?? '';
+      const query = fold(raw.trim());
+      let visible = 0;
+
+      for (const card of cards) {
+        const haystack = card.getAttribute('data-glossary-search') || '';
+        const cardCategory = card.getAttribute('data-glossary-cat') || '';
+        const match = (!query || haystack.includes(query)) && (!category || cardCategory === category);
+        card.hidden = !match;
+        if (match) visible += 1;
+      }
+
+      setHidden(clear, query.length === 0);
+      setHidden(empty, visible !== 0);
+      if (emptyQuery) emptyQuery.textContent = raw.trim();
+
+      if (!status) return;
+      if (!query && !category) {
+        status.textContent = isEnglish
+          ? `Showing all ${cards.length} glossary terms.`
+          : `Mostrando los ${cards.length} términos del glosario.`;
+        return;
+      }
+
+      const quoted = raw.trim();
+      if (visible === 1) {
+        status.textContent = isEnglish
+          ? `1 result${quoted ? ` for “${quoted}”.` : '.'}`
+          : `1 resultado${quoted ? ` para «${quoted}».` : '.'}`;
+        return;
+      }
+
+      status.textContent = isEnglish
+        ? `${visible} results${quoted ? ` for “${quoted}”.` : '.'}`
+        : `${visible} resultados${quoted ? ` para «${quoted}».` : '.'}`;
+    };
+
+    search?.addEventListener('input', update);
+    clear?.addEventListener('click', () => {
+      if (search) {
+        search.value = '';
+        search.focus();
+      }
+      update();
+    });
+    reset?.addEventListener('click', () => {
+      if (search) search.value = '';
+      category = '';
+      for (const chip of chips) {
+        chip.setAttribute('aria-pressed', (chip.getAttribute('data-glossary-category') || '') === '' ? 'true' : 'false');
+      }
+      update();
+      search?.focus();
+    });
+    for (const chip of chips) {
+      chip.addEventListener('click', () => {
+        category = chip.getAttribute('data-glossary-category') || '';
+        for (const other of chips) {
+          other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
+        }
+        update();
+      });
+    }
+  }
+</script>

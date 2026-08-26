@@ -125,6 +125,16 @@ header details > summary::-webkit-details-marker {
   display: none;
 }
 
+.glossary-card a {
+  color: var(--color-ink);
+}
+
+.glossary-card :is(h1, h2) a,
+.glossary-card a:hover,
+.glossary-card a:focus-visible {
+  color: var(--color-bg);
+}
+
 .guilloche {
   height: 1px;
   border: 0;

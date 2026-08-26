@@ -245,11 +245,19 @@ const heroAlt =
     <div class="mx-auto grid max-w-content gap-10 lg:grid-cols-2">
       <h2 id="definitions-heading" class="sr-only">{locale === 'en' ? 'Definitions' : 'Definiciones'}</h2>
       <div>
-        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.numismaticsTitle}</h3>
+        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          <a class="text-inherit no-underline hover:text-cream" href={localizePath('/glosario/numismatica/', locale)}>
+            {t.numismaticsTitle}
+          </a>
+        </h3>
         <p class="m-0 text-[17px]/7 text-cream">{t.numismaticsBody}</p>
       </div>
       <div>
-        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.notaphilyTitle}</h3>
+        <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          <a class="text-inherit no-underline hover:text-cream" href={localizePath('/glosario/notafilia/', locale)}>
+            {t.notaphilyTitle}
+          </a>
+        </h3>
         <p class="m-0 text-[17px]/7 text-cream">{t.notaphilyBody}</p>
       </div>
       <div class="rounded-[6px] border border-line-strong bg-panel p-8 lg:col-span-2">
