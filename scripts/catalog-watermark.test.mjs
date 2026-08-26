@@ -113,6 +113,15 @@ describe('processCatalogImage', () => {
         sharp(dest).extract(region).raw().toBuffer(),
       ]);
       assert.notEqual(Buffer.compare(srcCorner, destCorner), 0);
+
+      const tiled = path.join(dir, 'out', 'note-tile.jpg');
+      await processCatalogImage(src, tiled, 'fixtures/note.jpg', { style: 'tile' });
+      const mid = { left: 800, top: 400, width: 200, height: 80 };
+      const [cornerMid, tileMid] = await Promise.all([
+        sharp(dest).extract(mid).raw().toBuffer(),
+        sharp(tiled).extract(mid).raw().toBuffer(),
+      ]);
+      assert.notEqual(Buffer.compare(cornerMid, tileMid), 0);
     } finally {
       await rm(dir, { recursive: true, force: true });
     }

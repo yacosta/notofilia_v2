@@ -4,11 +4,14 @@ import { watermarkCatalog } from './lib/catalog-watermark.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceRoot = path.join(root, 'catalog-src', 'catalog');
-const destRoot = path.join(root, 'public', 'images', 'catalog');
+const displayRoot = path.join(root, 'public', 'images', 'catalog');
+const downloadRoot = path.join(root, 'public', 'images', 'catalog-download');
 
-const results = await watermarkCatalog({ sourceRoot, destRoot });
+const display = await watermarkCatalog({ sourceRoot, destRoot: displayRoot, style: 'corner' });
+const download = await watermarkCatalog({ sourceRoot, destRoot: downloadRoot, style: 'tile' });
 
-console.log(`Watermarked ${results.length} catalog image${results.length === 1 ? '' : 's'} → public/images/catalog/`);
-for (const item of results) {
+console.log(`Display (corner): ${display.length} → public/images/catalog/`);
+console.log(`Download (tile): ${download.length} → public/images/catalog-download/`);
+for (const item of display) {
   console.log(`  ${item.relativePath}`);
 }

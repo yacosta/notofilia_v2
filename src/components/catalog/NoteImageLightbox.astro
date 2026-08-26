@@ -1,15 +1,26 @@
 ---
+import {
+  catalogDownloadFilename,
+  catalogDownloadLabel,
+  catalogDownloadSrc,
+} from '../../lib/catalog-media';
+import type { Locale } from '../../lib/site';
+
 interface Props {
   src: string;
   alt: string;
   expandLabel: string;
   closeLabel: string;
+  locale: Locale;
   width?: number;
   height?: number;
 }
 
-const { src, alt, expandLabel, closeLabel, width = 1800, height = 900 } = Astro.props;
+const { src, alt, expandLabel, closeLabel, locale, width = 1800, height = 900 } = Astro.props;
 const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+const downloadHref = catalogDownloadSrc(src);
+const downloadName = catalogDownloadFilename(src);
+const downloadLabel = catalogDownloadLabel(src, locale);
 ---
 
 <div class="note-lightbox-root" data-note-lightbox>
@@ -36,6 +47,16 @@ const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-
     </span>
   </button>
 
+  <p class="mb-0 mt-3">
+    <a
+      class="inline-flex min-h-11 items-center font-sans text-[14px] font-semibold text-gold-light underline decoration-gold-light/50 hover:text-cream"
+      href={downloadHref}
+      download={downloadName}
+    >
+      {downloadLabel}
+    </a>
+  </p>
+
   <dialog
     id={dialogId}
     class="note-lightbox m-0 h-full max-h-none w-full max-w-none border-0 bg-transparent p-0 text-cream"
@@ -51,13 +72,22 @@ const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-
           <p id={`${dialogId}-title`} class="m-0 min-w-0 truncate font-sans text-[14px] text-cream-dim">
             {alt}
           </p>
-          <button
-            type="button"
-            class="inline-flex min-h-11 shrink-0 items-center rounded-[6px] border border-line-input bg-cream px-4 font-sans text-[14px] font-semibold text-bg hover:bg-cream-dim"
-            data-note-lightbox-close
-          >
-            {closeLabel}
-          </button>
+          <div class="flex shrink-0 flex-wrap items-center justify-end gap-2">
+            <a
+              class="inline-flex min-h-11 items-center rounded-[6px] border border-line-strong bg-transparent px-4 font-sans text-[14px] font-semibold text-cream hover:bg-ink"
+              href={downloadHref}
+              download={downloadName}
+            >
+              {downloadLabel}
+            </a>
+            <button
+              type="button"
+              class="inline-flex min-h-11 items-center rounded-[6px] border border-line-input bg-cream px-4 font-sans text-[14px] font-semibold text-bg hover:bg-cream-dim"
+              data-note-lightbox-close
+            >
+              {closeLabel}
+            </button>
+          </div>
         </div>
         <div class="flex min-h-0 flex-1 items-center justify-center overflow-auto bg-bg p-3 md:p-5">
           <img

@@ -6,4 +6,5 @@ dist/
 
 # Generated from catalog-src/catalog/ by `npm run images`
 public/images/catalog/
+public/images/catalog-download/
 public/watermark-preview/
