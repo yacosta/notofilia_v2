@@ -66,10 +66,10 @@ export type PuertoRicoNote = {
   serial: string;
   signatures: LocalizedText;
   printed: LocalizedText;
-  images: {
-    composite: string;
-    front: string;
-    back: string;
+  images?: {
+    composite?: string;
+    front?: string;
+    back?: string;
   };
   title: LocalizedText;
   kicker: LocalizedText;
@@ -97,11 +97,6 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
     printed: {
       es: 'Vale de tesorería de 1813, no una papeleta de circulación; las papeletas provinciales llegaron a 500.000 pesos',
       en: '1813 treasury vale, not a circulating papeleta; provincial papeletas reached 500,000 pesos',
-    },
-    images: {
-      composite: '/images/catalog/puerto-rico/25-pesos-1813-composite.jpg',
-      front: '/images/catalog/puerto-rico/25-pesos-1813-front.jpg',
-      back: '/images/catalog/puerto-rico/25-pesos-1813-back.jpg',
     },
     title: {
       es: '25 pesos · Tesorería Nacional · 1813',
@@ -166,11 +161,6 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       es: 'Recibo interno de contribución; fuera del catálogo Pick de papel moneda',
       en: 'Internal contribution receipt; outside the Pick paper-money catalog',
     },
-    images: {
-      composite: '/images/catalog/puerto-rico/1500-pesos-1869-composite.jpg',
-      front: '/images/catalog/puerto-rico/1500-pesos-1869-front.jpg',
-      back: '/images/catalog/puerto-rico/1500-pesos-1869-back.jpg',
-    },
     title: {
       es: '1.500 pesos · Junta Central · 1869',
       en: '1,500 Pesos · Central Junta · 1869',
@@ -229,11 +219,6 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       es: 'Billete de deuda de la emisión de Nueva York, 17 de agosto de 1869; empréstito de 20 millones de pesos',
       en: 'Debt note of the New York issue, 17 August 1869; 20-million-peso loan',
     },
-    images: {
-      composite: '/images/catalog/puerto-rico/1-peso-1869-composite.jpg',
-      front: '/images/catalog/puerto-rico/1-peso-1869-front.jpg',
-      back: '/images/catalog/puerto-rico/1-peso-1869-back.jpg',
-    },
     title: {
       es: '1 peso · República de Cuba · 1869',
       en: '1 Peso · Republic of Cuba · 1869',
@@ -291,11 +276,6 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
     printed: {
       es: 'Unos 5.000.000 de billetes (Ministerio de Ultramar; Wikipedia / literatura de la serie)',
       en: 'About 5,000,000 notes (Overseas Ministry; Wikipedia / series literature)',
-    },
-    images: {
-      composite: '/images/catalog/puerto-rico/1-peso-1895-composite.jpg',
-      front: '/images/catalog/puerto-rico/1-peso-1895-front.jpg',
-      back: '/images/catalog/puerto-rico/1-peso-1895-back.jpg',
     },
     title: {
       es: '1 peso · Billete de Canje · 1895',

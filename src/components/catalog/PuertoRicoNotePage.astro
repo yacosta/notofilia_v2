@@ -86,28 +86,40 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
         </dl>
       </section>
 
-      <div class="grid gap-10 lg:grid-cols-2">
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-          <NoteImageLightbox
-            src={note.images.front}
-            alt={note.frontCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
-        </figure>
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
-          <NoteImageLightbox
-            src={note.images.back}
-            alt={note.backCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
-        </figure>
-      </div>
+      {
+        note.images?.front || note.images?.back ? (
+          <div class="grid gap-10 lg:grid-cols-2">
+            {
+              note.images?.front ? (
+                <figure class="m-0">
+                  <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
+                  <NoteImageLightbox
+                    src={note.images.front}
+                    alt={note.frontCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
+                </figure>
+              ) : null
+            }
+            {
+              note.images?.back ? (
+                <figure class="m-0">
+                  <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
+                  <NoteImageLightbox
+                    src={note.images.back}
+                    alt={note.backCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
+                </figure>
+              ) : null
+            }
+          </div>
+        ) : null
+      }
 
       <section class="mt-14 max-w-[46rem]" aria-labelledby="about-heading">
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
