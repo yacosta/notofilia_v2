@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { LAZARETTOS_PATH } from './lazarettos';
 
 export const COLOMBIA_COINAGE_PATH = '/coleccion/colombia-numismatica/';
 
@@ -153,8 +154,9 @@ export const coinageCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: Santa Fe colonial, Independencia y Gran Colombia, Nueva Granada y la República. Las fichas de cada tipo se publicarán como en Filipinas y en el papel colombiano, a medida que se documenten.',
+      'Cinco vitrinas, en la misma fila de izquierda a derecha: Santa Fe colonial, Independencia y Gran Colombia, Nueva Granada, la República y Lazarettos. Las fichas de cada tipo se publicarán como en Filipinas y en el papel colombiano, a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
+    viewCase: 'Leer el catálogo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     notaphilyLead: 'El papel moneda de estas mismas épocas se documenta en la vitrina de notafilia.',
@@ -176,8 +178,9 @@ export const coinageCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters in one row, left to right by period: colonial Santa Fe, Independence and Gran Colombia, New Granada, and the Republic. Individual type pages will be published as they are documented, as in the Philippines case and the Colombian paper case.',
+      'Five cases in one row, left to right: colonial Santa Fe, Independence and Gran Colombia, New Granada, the Republic, and Lazarettos. Individual type pages will be published as they are documented, as in the Philippines case and the Colombian paper case.',
     viewChapter: 'Read the chapter',
+    viewCase: 'Read the catalog',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     notaphilyLead: 'Paper money from the same periods is documented in the notaphily case.',
@@ -192,3 +195,12 @@ export function coinagePath(locale: 'es' | 'en'): string {
 export function coinageChapterHref(id: ColombiaCoinageChapterId): string {
   return `#${id}`;
 }
+
+/** Extra catalog cards after the four Colombia chapters — same row, not in-page essays. */
+export const colombiaCoinageExtraCases = [
+  {
+    href: LAZARETTOS_PATH,
+    years: { es: 'desde 1377', en: 'from 1377' },
+    title: { es: 'Lazarettos', en: 'Lazarettos' },
+  },
+] as const;
