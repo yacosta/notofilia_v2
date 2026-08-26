@@ -54,12 +54,6 @@ export const megaNav: NavNode[] = [
         es: 'Ecuador',
         en: 'Ecuador',
         href: ECUADOR_PATH,
-        children: [
-          { id: 'ecuador-primeros-bancos', es: 'Primeros bancos', en: 'Early banks', href: `${ECUADOR_PATH}#primeros-bancos` },
-          { id: 'ecuador-banca-privada', es: 'Banca privada', en: 'Private banks', href: `${ECUADOR_PATH}#banca-privada` },
-          { id: 'ecuador-banco-central', es: 'Banco Central', en: 'Central Bank', href: `${ECUADOR_PATH}#banco-central` },
-          { id: 'ecuador-dolarizacion', es: 'Dolarización', en: 'Dollarization', href: `${ECUADOR_PATH}#dolarizacion` },
-        ],
       },
       { id: 'polimero', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
     ],
