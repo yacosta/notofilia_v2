@@ -1,5 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { USA_PATH } from '../data/estados-unidos';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { catalogNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 
@@ -231,7 +232,7 @@ export const collections = [
     en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
-    href: '/coleccion/estados-unidos/',
+    href: USA_PATH,
     es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
     en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
   },
@@ -299,6 +300,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
     },
   },
+  {
+    href: USA_PATH,
+    es: {
+      title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
+      description: 'Tercera vitrina del catálogo: colonial, obsoleto, United States Notes, oro, plata, Reserva Federal y pop art.',
+    },
+    en: {
+      title: 'United States · From colonial paper to the Federal Reserve',
+      description: 'Third catalog case: colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = [];
@@ -310,7 +322,7 @@ export const footerExplore = [
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: '/coleccion/numismatica/', es: 'Monedas', en: 'Coins' },
   { href: '/coleccion/polimero-mundial/', es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
-  { href: '/coleccion/estados-unidos/', es: 'Estados Unidos', en: 'United States' },
+  { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
 ] as const;
 
 export const footerResources = [
@@ -348,6 +360,7 @@ export const stubPages = [
 export const dedicatedCatalogPaths = new Set<string>([
   ...catalogPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  USA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
 ]);
