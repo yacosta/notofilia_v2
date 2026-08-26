@@ -278,6 +278,13 @@ body.mega-drawer-lock {
   color: var(--color-bg);
 }
 
+@media (min-width: 1024px) {
+  .mega-item:hover .mega-panel[hidden],
+  .mega-item.is-open .mega-panel[hidden] {
+    display: block !important;
+  }
+}
+
 .mega-panel-inner {
   display: flex;
   gap: 0;

@@ -1,12 +1,7 @@
 const desktopQuery = window.matchMedia('(min-width: 1024px)');
-const hoverQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
 
 function isDesktop() {
   return desktopQuery.matches;
-}
-
-function canHover() {
-  return isDesktop() && hoverQuery.matches;
 }
 
 function menuCopy(header: HTMLElement, key: string, title = '') {
@@ -97,12 +92,16 @@ export function initMegaMenu(header: HTMLElement) {
       button?.focus();
     });
 
-    item.addEventListener('pointerenter', () => {
-      if (canHover() && panel) openPanel(item);
-    });
-    item.addEventListener('pointerleave', () => {
-      if (canHover()) closePanels();
-    });
+    const openIfDesktop = () => {
+      if (isDesktop() && panel) openPanel(item);
+    };
+    const closeIfDesktop = () => {
+      if (isDesktop()) closePanels();
+    };
+    item.addEventListener('pointerenter', openIfDesktop);
+    item.addEventListener('mouseenter', openIfDesktop);
+    item.addEventListener('pointerleave', closeIfDesktop);
+    item.addEventListener('mouseleave', closeIfDesktop);
   }
 
   drawerToggle.addEventListener('click', () => {
