@@ -55,8 +55,8 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'mpc-vietnam',
-            es: 'MPC · Vietnam',
-            en: 'MPC · Vietnam',
+            es: 'MPC - Guerra de Vietnam (1955-1975)',
+            en: 'MPC - Vietnam War (1955-1975)',
             href: USA_MPC_PATH,
             flag: 'vn',
           },
