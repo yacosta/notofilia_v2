@@ -1,6 +1,7 @@
 import type { LocalizedText } from './catalog';
 import { COLOMBIA_PATH } from './colombia';
 import { ECUADOR_PATH } from './ecuador';
+import { GUATEMALA_PATH } from './guatemala';
 import { USA_PATH } from './estados-unidos';
 import { SERIES_PATH } from './philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from './polimero-mundial';
@@ -62,6 +63,15 @@ export const notafiliaCountries: NotafiliaCountry[] = [
     },
   },
   {
+    href: GUATEMALA_PATH,
+    years: { es: '1834–1948', en: '1834–1948' },
+    title: { es: 'Guatemala', en: 'Guatemala' },
+    lead: {
+      es: 'Impresión de billetes, banca privada y El Banco Colombiano (1878–1901).',
+      en: 'Banknote printing, private banks of issue, and El Banco Colombiano (1878–1901).',
+    },
+  },
+  {
     href: POLIMERO_MUNDIAL_PATH,
     years: { es: 'desde 1988', en: 'from 1988' },
     title: { es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
@@ -76,34 +86,34 @@ export const notafiliaCopy = {
   es: {
     metaTitle: 'Colección Virtual Notafilia | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda de Notofilia: Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador y los billetes de polímero mundial.',
+      'Catálogo de papel moneda de Notofilia: Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador, Guatemala y los billetes de polímero mundial.',
     kicker: 'Colección virtual',
     title: 'Colección Virtual Notafilia',
     subtitle: 'Papel moneda',
     intro: [
       'La notafilia en esta colección es el estudio del papel moneda: emisiones de independencia, banca libre, series de bancos centrales, especímenes, errores y numeración especial. No sustituye a la numismática; la acompaña. La moneda acuñada tiene su propia vitrina.',
-      'Abren seis casas: Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador y el catálogo de polímero mundial. Otras se irán sumando a medida que se documenten las piezas.',
+      'Abren siete casas: Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador, Guatemala y el catálogo de polímero mundial. Otras se irán sumando a medida que se documenten las piezas.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador y el polímero mundial.',
+      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador, Guatemala y el polímero mundial.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
   en: {
     metaTitle: 'Virtual Notaphily Collection | Notofilia',
     metaDescription:
-      'Notofilia’s paper-money catalog: Colombia, the United States, the Philippines, Puerto Rico, Ecuador, and world polymer banknotes.',
+      'Notofilia’s paper-money catalog: Colombia, the United States, the Philippines, Puerto Rico, Ecuador, Guatemala, and world polymer banknotes.',
     kicker: 'Virtual collection',
     title: 'Virtual Notaphily Collection',
     subtitle: 'Paper money',
     intro: [
       'Notaphily in this collection is the study of paper money: independence issues, free banking, central-bank series, specimens, errors, and fancy serials. It does not replace numismatics; it stands beside it. Struck coin has its own case.',
-      'Six houses are open: Colombia, the United States, the Philippines, Puerto Rico, Ecuador, and the world polymer catalog. Others will follow as pieces are documented.',
+      'Seven houses are open: Colombia, the United States, the Philippines, Puerto Rico, Ecuador, Guatemala, and the world polymer catalog. Others will follow as pieces are documented.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'One case to a card, left to right as each is documented. Colombia, the United States, the Philippines, Puerto Rico, Ecuador, and world polymer open the row.',
+      'One case to a card, left to right as each is documented. Colombia, the United States, the Philippines, Puerto Rico, Ecuador, Guatemala, and world polymer open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },
