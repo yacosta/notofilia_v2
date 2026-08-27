@@ -1,6 +1,4 @@
-type Env = {
-  ASSETS: Fetcher;
-};
+import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 
 function isNonIndexableHost(hostname: string): boolean {
   return hostname.endsWith('.workers.dev') || hostname === 'dev.notofilia.com' || hostname.endsWith('.pages.dev');
@@ -14,8 +12,12 @@ function shouldNoindex(url: URL): boolean {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    const asset = await env.ASSETS.fetch(request);
     const url = new URL(request.url);
+    if (url.pathname.startsWith('/api/')) {
+      return handleCommentsRequest(request, env);
+    }
+
+    const asset = await env.ASSETS.fetch(request);
     if (!shouldNoindex(url)) return asset;
 
     const headers = new Headers(asset.headers);
@@ -27,3 +29,5 @@ export default {
     });
   },
 };
+
+export { COMMENTS_API_PATTERN };

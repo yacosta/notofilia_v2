@@ -152,7 +152,7 @@ const newWindowHint = {
 
 function localizeInternalHref(href: string, locale: Locale): string {
   if (href.startsWith('http')) return href;
-  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto|buscar|politica-privacidad-cookies)\//.test(href) || href === '/') {
+  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto|contact|buscar|politica-privacidad-cookies)\//.test(href) || href === '/') {
     return localizePath(href, locale);
   }
   return href;

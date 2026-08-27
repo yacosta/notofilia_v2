@@ -1,0 +1,210 @@
+---
+import type { Locale } from '../lib/site';
+
+export interface Props {
+  slug: string;
+  locale?: Locale;
+}
+
+const { slug, locale = 'es' } = Astro.props;
+// Turnstile site keys are intentionally public; the secret stays in Cloudflare.
+const siteKey = '0x4AAAAAAD40VfPOxkjwgdld';
+
+const copy = {
+  es: {
+    heading: 'Comentarios',
+    intro: 'Comparte tu opinión. Los comentarios se publican después de ser revisados.',
+    loading: 'Cargando comentarios…',
+    name: 'Nombre',
+    comment: 'Comentario',
+    submit: 'Enviar comentario',
+    unavailable: 'Los comentarios estarán disponibles próximamente.',
+  },
+  en: {
+    heading: 'Comments',
+    intro: 'Share your view. Comments appear after they are reviewed.',
+    loading: 'Loading comments…',
+    name: 'Name',
+    comment: 'Comment',
+    submit: 'Send comment',
+    unavailable: 'Comments will be available soon.',
+  },
+} as const;
+
+const t = copy[locale];
+---
+
+<section class="mt-16 border-t border-line pt-10" aria-labelledby="comments-heading" data-comments-root>
+  <h2 id="comments-heading" class="mb-3 mt-0 font-display text-[clamp(25px,3.5vw,34px)] font-normal text-cream">
+    {t.heading}
+  </h2>
+  <p class="mb-8 mt-0 text-[16px] text-muted">{t.intro}</p>
+
+  <div data-comments-list aria-live="polite" aria-busy="true">
+    <p class="text-[16px] text-muted">{t.loading}</p>
+  </div>
+
+  <form data-comment-form class="mt-10 grid gap-5" hidden={!siteKey}>
+    <div>
+      <label for={`comment-name-${slug}`} class="mb-2 block text-[15px] text-cream">{t.name}</label>
+      <input
+        id={`comment-name-${slug}`}
+        name="name"
+        type="text"
+        minlength="2"
+        maxlength="60"
+        autocomplete="name"
+        required
+        class="min-h-[48px] w-full rounded-[4px] border border-line-input bg-panel px-4 py-3 font-serif text-[17px] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+      />
+    </div>
+
+    <div>
+      <label for={`comment-body-${slug}`} class="mb-2 block text-[15px] text-cream">{t.comment}</label>
+      <textarea
+        id={`comment-body-${slug}`}
+        name="comment"
+        minlength="3"
+        maxlength="1500"
+        rows="5"
+        required
+        class="w-full resize-y rounded-[4px] border border-line-input bg-panel px-4 py-3 font-serif text-[17px] leading-[1.5] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+      ></textarea>
+    </div>
+
+    <div class="cf-turnstile min-h-[65px]" data-sitekey={siteKey} data-theme="dark" data-size="flexible" data-action="comment">
+    </div>
+
+    <div>
+      <button
+        type="submit"
+        class="min-h-[48px] cursor-pointer rounded-full border border-cream bg-cream px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.08em] text-bg disabled:cursor-wait disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+      >
+        {t.submit}
+      </button>
+    </div>
+    <p data-comment-status class="mt-0 text-[15px]" role="status" aria-live="polite"></p>
+  </form>
+
+  {!siteKey && <p class="text-[15px] text-muted">{t.unavailable}</p>}
+</section>
+
+{siteKey && <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>}
+
+<script define:vars={{ slug }} is:inline>
+  const root = document.querySelector('[data-comments-root]');
+  const list = root?.querySelector('[data-comments-list]');
+  const form = root?.querySelector('[data-comment-form]');
+  const status = root?.querySelector('[data-comment-status]');
+  const endpoint = `/api/comments/${encodeURIComponent(slug)}`;
+
+  const copy = {
+    es: {
+      empty: 'Aún no hay comentarios publicados.',
+      loadFail: 'No se pudieron cargar los comentarios.',
+      sending: 'Enviando…',
+      sendFail: 'No se pudo enviar el comentario.',
+    },
+    en: {
+      empty: 'No comments have been published yet.',
+      loadFail: 'Comments could not be loaded.',
+      sending: 'Sending…',
+      sendFail: 'The comment could not be sent.',
+    },
+  };
+  function isEn() {
+    return (
+      document.documentElement.getAttribute('data-page-locale') === 'en' || document.documentElement.lang === 'en'
+    );
+  }
+  function langCopy() {
+    return isEn() ? copy.en : copy.es;
+  }
+  function dateLocale() {
+    return isEn() ? 'en' : 'es';
+  }
+
+  const renderComments = (comments) => {
+    if (!list) return;
+    list.replaceChildren();
+    list.setAttribute('aria-busy', 'false');
+
+    if (!comments.length) {
+      const empty = document.createElement('p');
+      empty.className = 'text-[16px] text-muted';
+      empty.textContent = langCopy().empty;
+      list.append(empty);
+      return;
+    }
+
+    const items = document.createElement('ol');
+    items.className = 'm-0 grid list-none gap-6 p-0';
+    comments.forEach((comment) => {
+      const item = document.createElement('li');
+      item.className = 'border-l-2 border-line pl-5';
+
+      const meta = document.createElement('p');
+      meta.className = 'mb-2 mt-0 text-[14px] text-muted';
+      const date = new Intl.DateTimeFormat(dateLocale(), { dateStyle: 'long' }).format(new Date(comment.createdAt));
+      meta.textContent = `${comment.authorName} · ${date}`;
+
+      const body = document.createElement('p');
+      body.className = 'mb-0 mt-0 whitespace-pre-wrap text-[17px] text-cream-dim';
+      body.textContent = comment.body;
+      item.append(meta, body);
+      items.append(item);
+    });
+    list.append(items);
+  };
+
+  const loadComments = async () => {
+    try {
+      const response = await fetch(endpoint, { headers: { accept: 'application/json' } });
+      if (!response.ok) throw new Error('Comments request failed');
+      const data = await response.json();
+      renderComments(data.comments || []);
+    } catch {
+      if (!list) return;
+      list.setAttribute('aria-busy', 'false');
+      list.innerHTML = '<p class="text-[16px] text-muted">' + langCopy().loadFail + '</p>';
+    }
+  };
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const submit = form.querySelector('button[type="submit"]');
+    const data = new FormData(form);
+    const turnstileToken = data.get('cf-turnstile-response');
+
+    submit.disabled = true;
+    status.textContent = langCopy().sending;
+    status.className = 'mt-0 text-[15px] text-muted';
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
+        body: JSON.stringify({
+          name: data.get('name'),
+          comment: data.get('comment'),
+          turnstileToken,
+        }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || langCopy().sendFail);
+
+      form.reset();
+      if (window.turnstile) window.turnstile.reset();
+      status.textContent = result.message;
+      status.className = 'mt-0 text-[15px] text-cream';
+    } catch (error) {
+      status.textContent = error.message || langCopy().sendFail;
+      status.className = 'mt-0 text-[15px] text-[#ffb4a8]';
+      if (window.turnstile) window.turnstile.reset();
+    } finally {
+      submit.disabled = false;
+    }
+  });
+
+  loadComments();
+</script>

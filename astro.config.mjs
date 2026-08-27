@@ -32,6 +32,7 @@ export default defineConfig({
     '/en/sobre-mi': '/en/about/',
     '/en/acerca-de': '/en/about/',
     '/about': '/en/about/',
+    '/contact': '/en/contact/',
     ...generated,
   },
   vite: {

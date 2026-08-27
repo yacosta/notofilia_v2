@@ -9,6 +9,8 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notafilia/');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
+    assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
+    assert.equal(otherLocalePath('/en/contact/?motivo=error', 'en'), '/contacto/?motivo=error');
     assert.equal(localizePath('/coleccion/polimero-mundial/', 'en'), '/en/collection/world-polymer/');
     assert.equal(localizePath('/coleccion/notafilia/', 'en'), '/en/collection/notaphily/');
     assert.equal(localizePath('/coleccion/espana/', 'en'), '/en/collection/spain/');

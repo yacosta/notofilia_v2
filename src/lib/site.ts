@@ -7,7 +7,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
-import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs, mpcVietnamNotes } from '../data/mpc-vietnam';
+import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -18,13 +18,13 @@ import {
   NUMISMATICS_PATH,
   netherlandsCoinSlugs,
   netherlandsCoinageDedicatedSlugs,
-  netherlandsCoins,
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
+import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 
 export type { Locale } from './locale-paths';
@@ -68,7 +68,9 @@ function extraAstroPageFiles(): number {
       !file.includes('/netherlands-numismatica/') &&
       !file.includes('/netherlands-numismatics/') &&
       !file.includes('/acerca-de/') &&
-      !file.includes('/about/'),
+      !file.includes('/about/') &&
+      !file.includes('/contacto/') &&
+      !file.includes('/contact/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -93,14 +95,8 @@ const seedHoldings = holdingsStats();
 
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
-for (const note of mpcVietnamNotes) {
-  addLocalePair(note.path, note.pathEn);
-}
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
-for (const coin of netherlandsCoins) {
-  addLocalePair(coin.path, coin.pathEn);
-}
 
 export const copy = {
   es: {
@@ -555,6 +551,7 @@ const dedicatedEs = [
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
+  ...contactDedicatedSlugs,
   'coleccion',
   'blog',
   'noticias',

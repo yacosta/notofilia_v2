@@ -9,6 +9,14 @@
     "binding": "ASSETS",
     "run_worker_first": true
   },
+  "d1_databases": [
+    {
+      "binding": "COMMENTS_DB",
+      "database_name": "comments_db",
+      "database_id": "bb538083-227c-4c27-bd35-034e6ac0ee07",
+      "migrations_dir": "migrations"
+    }
+  ],
   "observability": {
     "enabled": true
   }
