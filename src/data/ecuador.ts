@@ -146,6 +146,7 @@ export const seriesCopy = {
     eraLabel: 'Época',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
+    parentLink: 'Colección Virtual Notafilia',
   },
   en: {
     metaTitle: 'Ecuador · From the sucre to dollarization | Notofilia',
@@ -169,6 +170,7 @@ export const seriesCopy = {
     eraLabel: 'Period',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
+    parentLink: 'Virtual Notaphily Collection',
   },
 } as const;
 
@@ -275,6 +277,7 @@ export const ecuadorNotes: EcuadorNote[] = [
 export const notePageCopy = {
   es: {
     collectionLink: 'Ecuador',
+    parentLink: 'Colección Virtual Notafilia',
     frontHeading: 'Anverso y reverso',
     aboutHeading: 'La pieza',
     scarcityHeading: 'Rareza e impresión',
@@ -291,6 +294,7 @@ export const notePageCopy = {
   },
   en: {
     collectionLink: 'Ecuador',
+    parentLink: 'Virtual Notaphily Collection',
     frontHeading: 'Face and back',
     aboutHeading: 'The note',
     scarcityHeading: 'Scarcity and printage',

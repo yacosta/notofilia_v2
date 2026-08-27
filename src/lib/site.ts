@@ -1,6 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { ECUADOR_PATH, ecuadorNoteSlugs } from '../data/ecuador';
+import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
@@ -489,6 +490,7 @@ export const news: NewsItem[] = newsArticles.map((item) => ({
 }));
 
 export const footerExplore = [
+  { href: NOTAFILIA_PATH, es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
@@ -520,6 +522,7 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
+  { path: 'coleccion/notafilia', es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
@@ -543,6 +546,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
+  NOTAFILIA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),

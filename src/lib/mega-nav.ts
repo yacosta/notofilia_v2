@@ -7,6 +7,7 @@ import { SERIES_PATH } from '../data/philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
+import { NOTAFILIA_PATH } from '../data/notafilia';
 
 export type NavNode = {
   id: string;
@@ -21,6 +22,7 @@ export const megaNav: NavNode[] = [
     id: 'coleccion-notofilia',
     es: 'Colección Virtual Notafilia',
     en: 'Virtual Notaphily Collection',
+    href: NOTAFILIA_PATH,
     children: [
       {
         id: 'colombia',
