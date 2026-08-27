@@ -161,12 +161,15 @@ export const seriesCopy = {
       'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
       'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
       'En Vietnam el programa tuvo teatro propio. La serie 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí. La 661 trajo el 20 dólares. La 681 cubrió 1969–1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea, no en Vietnam.',
-      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se fotografíen.',
+      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. El 10 dólares de la serie 641, J15149964J, es la primera ficha; las demás se publicarán como en Filipinas, a medida que se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
     usLead: 'El resto del papel federal, colonial y obsoleto se documenta en la vitrina de Estados Unidos.',
     usLink: 'Estados Unidos',
     sourcesTitle: 'Fuentes',
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
   },
   en: {
     metaTitle: 'United States · Vietnam War MPCs | Notofilia',
@@ -181,17 +184,186 @@ export const seriesCopy = {
       'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
       'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
       'In Vietnam the program had its own theater. Series 641, 31 August 1965 to 21 October 1968, was the first used only there. Series 661 brought the $20. Series 681 covered 1969–1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and Korea, not in Vietnam.',
-      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Individual note pages will be published as they are photographed, as in the Philippines case.',
+      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. The Series 641 $10, serial J15149964J, is the first note page; further pieces will be published as they are photographed, as in the Philippines case.',
     ],
     parentLink: 'United States',
     usLead: 'The rest of the federal, colonial, and obsolete paper is documented in the United States case.',
     usLink: 'United States',
     sourcesTitle: 'Sources',
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
   },
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_MPC_PATH_EN}` : USA_MPC_PATH;
 }
+
+export type MpcVietnamNoteId = '10-dolares-serie-641';
+
+export type MpcVietnamNote = {
+  id: MpcVietnamNoteId;
+  chapterId: MpcVietnamChapterId;
+  path: string;
+  pathEn: string;
+  pick: string;
+  serial: string;
+  signatures: LocalizedText;
+  printed: LocalizedText;
+  images: {
+    composite: string;
+    front: string;
+    back: string;
+  };
+  title: LocalizedText;
+  kicker: LocalizedText;
+  lead: LocalizedText;
+  description: LocalizedText;
+  frontCaption: LocalizedText;
+  backCaption: LocalizedText;
+  scarcity: LocalizedText;
+  population: LocalizedText;
+  grade: LocalizedText;
+  sources: CatalogSource[];
+};
+
+export const mpcVietnamNotes: MpcVietnamNote[] = [
+  {
+    id: '10-dolares-serie-641',
+    chapterId: 'serie-641',
+    path: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
+    pathEn: '/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
+    pick: 'P#M63 · Schwan 887',
+    serial: 'J15149964J',
+    signatures: {
+      es: 'Sin firmas (emisión militar; el texto de uso sustituye al firmante)',
+      en: 'No signatures (military issue; the use legend stands in place of a signer)',
+    },
+    printed: {
+      es: 'Se citan 20.400.000 ejemplares del 10 dólares de la serie 641',
+      en: '20,400,000 notes are cited for the Series 641 $10',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/mpc-641-10-composite.jpg',
+      front: '/images/catalog/estados-unidos/mpc-641-10-front.jpg',
+      back: '/images/catalog/estados-unidos/mpc-641-10-back.jpg',
+    },
+    title: {
+      es: '10 dólares · Serie 641',
+      en: '$10 · Series 641',
+    },
+    kicker: {
+      es: 'Estados Unidos · MPC · Vietnam',
+      en: 'United States · MPC · Vietnam',
+    },
+    lead: {
+      es: 'Anverso con retrato de mujer a la derecha; reverso con la cabeza de la Estatua de la Libertad. Posición 44. Serie J15149964J.',
+      en: 'Face with a woman’s profile to the right; back with the head of the Statue of Liberty. Position 44. Serial J15149964J.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 641 (Pick M63, Schwan 887) es la denominación alta de la primera serie usada solo en Vietnam. El anverso, en sepia con sobrecargas rojas, lleva un retrato de mujer en medallón —grabado de Marcus Baldwin, tomado de la alegoría del 2 dólares Educational Series de 1896— y, en las cuatro esquinas, el 10. «SERIES 641» aparece dos veces; el 44 es el número de posición en el pliego. El reverso muestra la cabeza de la Libertad, grabado de Richard M. Bower, con TEN en rojo a ambos lados. El texto restringe el uso a establecimientos militares y personal autorizado. Esta pieza de la colección, sin encapsular, lleva el serial J15149964J.',
+      en: 'The Series 641 $10 (Pick M63, Schwan 887) is the high denomination of the first series used only in Vietnam. The sepia face with red overprints carries a woman’s portrait in a medallion — a Marcus Baldwin engraving taken from the allegory on the 1896 $2 Educational Series — and 10s in all four corners. “SERIES 641” appears twice; 44 is the sheet position number. The back shows Liberty’s head, engraved by Richard M. Bower, with TEN in red at both sides. The legend restricts use to military establishments and authorized personnel. This collection piece, unslabbed, is serial J15149964J.',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 641, serial J15149964J: retrato de mujer y sobrecargas rojas del 10.',
+      en: 'Face of the Series 641 $10, serial J15149964J: woman’s portrait and red 10 overprints.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 641: cabeza de la Estatua de la Libertad y TEN en rojo.',
+      en: 'Back of the Series 641 $10: head of the Statue of Liberty and TEN in red.',
+    },
+    scarcity: {
+      es: 'La ANA describe la serie 641 como una de las más comunes del programa. Se citan 20.400.000 ejemplares de este 10 dólares; el valor facial total de la serie superó los 283 millones. Los fraccionarios son más fáciles; el 10 dólares de 641 sigue siendo asequible en estados medios.',
+      en: 'The ANA calls Series 641 one of the most common in the program. 20,400,000 notes are cited for this $10; the series’ total face value exceeded $283 million. Fractionals are easier; the Series 641 $10 remains affordable in mid grades.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://art-hanoi.com/mpc/usa/mpc-series-641',
+        es: 'Art-Hanoi — MPC serie 641 (P-M57 a P-M63)',
+        en: 'Art-Hanoi — MPC Series 641 (P-M57 to P-M63)',
+        note: {
+          es: 'El 10 dólares es P-M63 / Schwan 887: retrato de mujer al anverso y Libertad al reverso.',
+          en: 'The $10 is P-M63 / Schwan 887: woman’s portrait on the face and Liberty on the back.',
+        },
+      },
+      {
+        href: 'https://www.worldbanknotescoins.com/2014/11/us-military-payment-certificate-10-dollars-mpc-series-641.html',
+        es: 'World Banknotes & Coins — 10 dólares MPC serie 641',
+        en: 'World Banknotes & Coins — Series 641 $10 MPC',
+        note: {
+          es: 'Cita 20.400.000 ejemplares; grabados de Baldwin (anverso) y Bower (reverso).',
+          en: 'Cites 20,400,000 notes; Baldwin face engraving and Bower back.',
+        },
+      },
+    ],
+  },
+];
+
+export const notePageCopy = {
+  es: {
+    seriesLink: 'MPC · Vietnam',
+    collectionLink: 'Estados Unidos',
+    frontHeading: 'Anverso',
+    backHeading: 'Reverso',
+    aboutHeading: 'La pieza',
+    scarcityHeading: 'Rareza e impresión',
+    populationHeading: 'Población',
+    factsHeading: 'Datos de catálogo',
+    sourcesHeading: 'Fuentes',
+    printedLabel: 'Impresión',
+    signaturesLabel: 'Firmas',
+    serialLabel: 'Número de serie',
+    pickLabel: 'Referencia Pick',
+    gradeLabel: 'Conservación',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
+  },
+  en: {
+    seriesLink: 'MPC · Vietnam',
+    collectionLink: 'United States',
+    frontHeading: 'Face',
+    backHeading: 'Back',
+    aboutHeading: 'The note',
+    scarcityHeading: 'Scarcity and printage',
+    populationHeading: 'Population',
+    factsHeading: 'Catalog facts',
+    sourcesHeading: 'Sources',
+    printedLabel: 'Printage',
+    signaturesLabel: 'Signatures',
+    serialLabel: 'Serial number',
+    pickLabel: 'Pick reference',
+    gradeLabel: 'Condition',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
+  },
+} as const;
+
+export function noteById(id: string): MpcVietnamNote | undefined {
+  return mpcVietnamNotes.find((note) => note.id === id);
+}
+
+export function notePath(note: MpcVietnamNote, locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${note.pathEn}` : note.path;
+}
+
+export function notesForChapter(chapterId: MpcVietnamChapterId): MpcVietnamNote[] {
+  return mpcVietnamNotes.filter((note) => note.chapterId === chapterId);
+}
+
+export const mpcVietnamNoteSlugs = mpcVietnamNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
+
+export const mpcVietnamNoteDedicatedSlugs = mpcVietnamNotes.flatMap((note) => [
+  note.path.replace(/^\/|\/$/g, ''),
+  note.pathEn.replace(/^\/|\/$/g, ''),
+]);
 
 export { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH };

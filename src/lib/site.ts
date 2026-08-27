@@ -6,6 +6,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
+import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs, mpcVietnamNotes } from '../data/mpc-vietnam';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -45,6 +46,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
+  for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -104,6 +106,9 @@ function addLocalePair(
 const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {};
 addLocalePair(localizedCollectionSlugs, USA_PATH, USA_PATH_EN);
 addLocalePair(localizedCollectionSlugs, USA_MPC_PATH, USA_MPC_PATH_EN);
+for (const note of mpcVietnamNotes) {
+  addLocalePair(localizedCollectionSlugs, note.path, note.pathEn);
+}
 addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 for (const coin of netherlandsCoins) {
   addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
@@ -570,6 +575,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
+  ...mpcVietnamNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
