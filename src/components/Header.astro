@@ -1,7 +1,6 @@
 ---
 import NavTree from './NavTree.astro';
 import { copy, localizePath, otherLocalePath, type Locale } from '../lib/site';
-import CountryFlag from './CountryFlag.astro';
 import { megaNav, navColumns, type NavNode } from '../lib/mega-nav';
 
 interface Props {
@@ -168,17 +167,15 @@ function nodeIsCurrent(node: NavNode): boolean {
                               <div class="mega-aside-group">
                                 {groupHref ? (
                                   <a class="mega-aside-heading mega-aside-heading--link" href={groupHref}>
-                                    <CountryFlag code={group.flag} />
                                     <span class="mega-tree-label-text">{groupLabel}</span>
                                   </a>
                                 ) : (
                                   <p class="mega-aside-heading">
-                                    <CountryFlag code={group.flag} />
                                     <span class="mega-tree-label-text">{groupLabel}</span>
                                   </p>
                                 )}
                                 {group.children && group.children.length > 0 && (
-                                  <NavTree nodes={group.children} locale={locale} openSubmenu={t.openSubmenu} />
+                                  <NavTree nodes={group.children} locale={locale} openSubmenu={t.openSubmenu} depth={2} />
                                 )}
                               </div>
                             );

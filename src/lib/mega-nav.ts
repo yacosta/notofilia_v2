@@ -21,11 +21,7 @@ export type NavNode = {
   children?: NavNode[];
 };
 
-export function navColumns(nodes: NavNode[]) {
-  const main = nodes.filter((node) => node.column !== 'aside');
-  const aside = nodes.filter((node) => node.column === 'aside');
-  return { main, aside };
-}
+export { navColumns } from './nav-columns';
 
 export const megaNav: NavNode[] = [
   {

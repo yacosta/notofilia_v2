@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
-    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs",
+    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs src/lib/mega-nav.test.mjs",
     "astro": "astro"
   },
   "dependencies": {
