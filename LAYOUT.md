@@ -69,6 +69,7 @@ The post-image narrative cap is removed on:
 - `VictoryNotePage.astro`
 - `ChinaNotePage.astro`
 - `ColombiaCoinPage.astro`
+- `ColombiaNotePage.astro`
 - `NetherlandsCoinPage.astro`
 
 Keep `max-w-[46rem]` on each page’s lead. Series index pages already use `max-w-content` without a second cap. Leave about, editorial articles, and stubs on a reading column.
