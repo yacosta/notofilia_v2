@@ -342,13 +342,19 @@ body.mega-drawer-lock {
 
 @media (min-width: 1024px) {
   .mega-columns--split {
-    grid-template-columns: minmax(18rem, 1fr) minmax(16rem, 24rem);
+    display: flex;
     align-items: start;
-    gap: 0 2rem;
+    gap: 0 2.5rem;
+  }
+
+  .mega-column {
+    flex: 0 1 auto;
+    min-width: 16rem;
+    max-width: 28rem;
   }
 
   .mega-column--aside {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     border-left: 1px solid color-mix(in srgb, var(--color-bg) 16%, transparent);
   }
 }
