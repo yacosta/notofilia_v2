@@ -301,7 +301,15 @@ export const copy = {
   },
 } as const;
 
-export { megaNav, primaryNav, type NavNode } from './mega-nav';
+export {
+  footerNotafilia,
+  footerNumismatica,
+  footerResources,
+  megaNav,
+  primaryNav,
+  type FooterLink,
+  type NavNode,
+} from './mega-nav';
 
 export const collections = [
   {
@@ -526,33 +534,18 @@ export const news: NewsItem[] = newsArticles.map((item) => ({
   sourceUrl: item.sourceUrl ?? '',
 }));
 
-export const footerExplore = [
-  { href: NOTAFILIA_PATH, es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
-  { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
-  { href: CHINA_PATH, es: 'China', en: 'China' },
-  { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
-  { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
-  { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
-  { href: GUATEMALA_PATH, es: 'Guatemala', en: 'Guatemala' },
-  { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
-  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
-  { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
-  { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
-  { href: POLIMERO_MUNDIAL_PATH, es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
-  { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
-  { href: USA_MPC_PATH, es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
-] as const;
-
-export const footerResources = [
-  { href: '/blog/', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
-  { href: '/noticias/', es: 'Noticias', en: 'News' },
-  { href: '/glosario/', es: 'Glosario', en: 'Glossary' },
-] as const;
-
 export const footerAbout = [
   { href: ABOUT_PATH, es: 'Sobre Notofilia', en: 'About Notofilia' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
   { href: '/contacto/', es: 'Contacto', en: 'Contact' },
+] as const;
+
+export const footerLegal = [
+  {
+    href: '/politica-privacidad-cookies/',
+    es: 'Política de privacidad y cookies',
+    en: 'Privacy and cookie policy',
+  },
   { href: '/contacto/?motivo=error', es: 'Reportar un error', en: 'Report an error' },
 ] as const;
 

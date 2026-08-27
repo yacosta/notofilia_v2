@@ -3,10 +3,14 @@ import NewWindowHint from './NewWindowHint.astro';
 import {
   copy,
   footerAbout,
-  footerExplore,
+  footerLegal,
+  footerNotafilia,
+  footerNumismatica,
   footerResources,
   localizePath,
+  megaNav,
   statsLine,
+  type FooterLink,
   type Locale,
 } from '../lib/site';
 
@@ -16,46 +20,44 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = copy[locale];
+const [navNotafilia, navNumismatica, navRecursos] = megaNav;
+
+const catalogColumns = [
+  { id: 'notafilia', title: navNotafilia[locale], items: footerNotafilia },
+  { id: 'numismatica', title: navNumismatica[locale], items: footerNumismatica },
+  { id: 'recursos', title: navRecursos[locale], items: footerResources },
+];
+
+function itemLabel(item: FooterLink) {
+  return item[locale];
+}
 ---
 
 <footer class="bg-bg text-cream">
   <div class="mx-auto w-full max-w-none px-[var(--chrome-gutter)] pb-10 pt-[72px]">
     <nav aria-label={t.footerNav}>
       <div class="mb-10 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-8 gap-y-7">
-        <div>
-          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.explore}</p>
-          <ul class="m-0 list-none p-0">
-            {
-              footerExplore.map((item) => (
-                <li>
-                  <a
-                    class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                    href={localizePath(item.href, locale)}
-                  >
-                    {item[locale]}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <div>
-          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.resources}</p>
-          <ul class="m-0 list-none p-0">
-            {
-              footerResources.map((item) => (
-                <li>
-                  <a
-                    class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                    href={localizePath(item.href, locale)}
-                  >
-                    {item[locale]}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
+        {
+          catalogColumns.map((column) => (
+            <div>
+              <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
+                {column.title}
+              </p>
+              <ul class="m-0 list-none p-0">
+                {column.items.map((item) => (
+                  <li>
+                    <a
+                      class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
+                      href={localizePath(item.href, locale)}
+                    >
+                      {itemLabel(item)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
         <div>
           <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.about}</p>
           <ul class="m-0 list-none p-0">
@@ -72,26 +74,20 @@ const t = copy[locale];
               ))
             }
           </ul>
-        </div>
-        <div>
-          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.legal}</p>
+          <p class="mb-2.5 mt-7 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.legal}</p>
           <ul class="m-0 list-none p-0">
-            <li>
-              <a
-                class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                href={localizePath('/politica-privacidad-cookies/', locale)}
-              >
-                {locale === 'en' ? 'Privacy and cookie policy' : 'Política de privacidad y cookies'}
-              </a>
-            </li>
-            <li>
-              <a
-                class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                href={localizePath('/contacto/', locale)}
-              >
-                {t.reportError}
-              </a>
-            </li>
+            {
+              footerLegal.map((item) => (
+                <li>
+                  <a
+                    class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
+                    href={localizePath(item.href, locale)}
+                  >
+                    {item[locale]}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
