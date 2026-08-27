@@ -13,6 +13,11 @@ type PathPair = {
 /** Longest-prefix pairs. Trailing slashes required. */
 export const PATH_PREFIX_PAIRS: PathPair[] = [
   {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
+    en: '/collection/united-states/10-dollars-series-1934-chicago/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934-chicago/'],
+  },
+  {
     es: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     en: '/collection/united-states/mpc-vietnam/20-dollars-series-692/',
     aliases: ['/coleccion/united-states/mpc-vietnam/20-dollars-series-692/'],
@@ -141,7 +146,9 @@ export function englishRedirects(): Record<string, string> {
   };
 
   const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
+    '/en/coleccion/united-states/10-dollars-series-1934-chicago/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
     '/en/coleccion/estados-unidos/mpc-vietnam/',

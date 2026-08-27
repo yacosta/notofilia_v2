@@ -17,6 +17,10 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/paises-bajos-numismatica/', 'en'), '/en/netherlands-numismatica/');
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
+      '/en/collection/united-states/10-dollars-series-1934-chicago/',
+    );
   });
 
   it('keeps hreflang pairs reciprocal', () => {
@@ -43,5 +47,9 @@ describe('locale path mapping', () => {
     assert.equal(redirects['/en/noticias/'], '/en/news/');
     assert.equal(redirects['/en/contacto/'], '/en/contact/');
     assert.equal(redirects['/en/coleccion/united-states/'], '/en/collection/united-states/');
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/'],
+      '/en/collection/united-states/10-dollars-series-1934-chicago/',
+    );
   });
 });
