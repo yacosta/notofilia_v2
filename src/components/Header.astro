@@ -1,7 +1,8 @@
 ---
 import NavTree from './NavTree.astro';
 import { copy, localizePath, otherLocalePath, type Locale } from '../lib/site';
-import { megaNav, type NavNode } from '../lib/mega-nav';
+import CountryFlag from './CountryFlag.astro';
+import { megaNav, navColumns, type NavNode } from '../lib/mega-nav';
 
 interface Props {
   locale: Locale;
@@ -117,6 +118,7 @@ function nodeIsCurrent(node: NavNode): boolean {
           const current = nodeIsCurrent(item);
           const nested = Boolean(item.children?.length);
           const href = item.href ? localizePath(item.href, locale) : undefined;
+          const { main, aside } = navColumns(item.children ?? []);
           return (
             <li class:list={['mega-item', current && 'is-current']} data-mega-item>
               <div class="mega-item-chrome">
@@ -153,7 +155,37 @@ function nodeIsCurrent(node: NavNode): boolean {
                       </button>
                       <p class="mega-subhead-title">{label}</p>
                     </div>
-                    <NavTree nodes={item.children!} locale={locale} openSubmenu={t.openSubmenu} />
+                    <div class:list={['mega-columns', aside.length > 0 && 'mega-columns--split']}>
+                      <div class="mega-column">
+                        <NavTree nodes={main} locale={locale} openSubmenu={t.openSubmenu} />
+                      </div>
+                      {aside.length > 0 && (
+                        <div class="mega-column mega-column--aside">
+                          {aside.map((group) => {
+                            const groupHref = group.href ? localizePath(group.href, locale) : undefined;
+                            const groupLabel = group[locale];
+                            return (
+                              <div class="mega-aside-group">
+                                {groupHref ? (
+                                  <a class="mega-aside-heading mega-aside-heading--link" href={groupHref}>
+                                    <CountryFlag code={group.flag} />
+                                    <span class="mega-tree-label-text">{groupLabel}</span>
+                                  </a>
+                                ) : (
+                                  <p class="mega-aside-heading">
+                                    <CountryFlag code={group.flag} />
+                                    <span class="mega-tree-label-text">{groupLabel}</span>
+                                  </p>
+                                )}
+                                {group.children && group.children.length > 0 && (
+                                  <NavTree nodes={group.children} locale={locale} openSubmenu={t.openSubmenu} />
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               )}

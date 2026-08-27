@@ -16,8 +16,16 @@ export type NavNode = {
   href?: string;
   /** ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag. */
   flag?: string;
+  /** Place this node in a second mega-menu column with its children always visible. */
+  column?: 'main' | 'aside';
   children?: NavNode[];
 };
+
+export function navColumns(nodes: NavNode[]) {
+  const main = nodes.filter((node) => node.column !== 'aside');
+  const aside = nodes.filter((node) => node.column === 'aside');
+  return { main, aside };
+}
 
 export const megaNav: NavNode[] = [
   {
@@ -75,6 +83,7 @@ export const megaNav: NavNode[] = [
         es: 'Billetes de polímero mundial',
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
+        column: 'aside',
         children: [
           { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
         ],
