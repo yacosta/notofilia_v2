@@ -65,19 +65,17 @@ const hero = {
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
               {locale === 'en' ? 'Home' : 'Inicio'}
             </a>
           </li>
-          <li aria-hidden="true">·</li>
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(POLIMERO_MUNDIAL_PATH, locale)}>
               {t.parentLink}
             </a>
           </li>
-          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>

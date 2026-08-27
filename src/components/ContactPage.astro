@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { copy, localizePath, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = copy[locale];
+const pathname = localizePath('/contacto/', locale);
+const title = locale === 'en' ? 'Contact' : 'Contacto';
+const description =
+  locale === 'en'
+    ? 'Write to Notofilia about the catalogue, sources, or a correction.'
+    : 'Escriba a Notofilia sobre el catálogo, las fuentes o una corrección.';
+const reason = Astro.url.searchParams.get('motivo');
+const emailPrefill = Astro.url.searchParams.get('email') ?? '';
+---
+
+<Layout title={`${title} · Notofilia`} description={description} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-[720px] px-[var(--page-gutter)] py-24 outline-none">
+    <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
+      <ol class="breadcrumb m-0 flex list-none flex-wrap items-center p-0 font-sans text-[14px] text-muted">
+        <li>
+          <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+            {locale === 'en' ? 'Home' : 'Inicio'}
+          </a>
+        </li>
+        <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{title}</li>
+      </ol>
+    </nav>
+    <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">{title}</h1>
+    <p class="m-0 mb-8 text-[17px]/7 text-muted">{description}</p>
+    <form id="contact-form" class="grid gap-4" action={pathname} method="get" novalidate>
+      <input type="hidden" name="motivo" value={reason ?? 'contacto'} />
+      <div>
+        <label class="mb-2 block font-sans text-[13px] font-medium tracking-[0.08em] text-muted" for="contact-email">
+          {t.emailLabel}
+        </label>
+        <input
+          id="contact-email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          value={emailPrefill}
+          class="box-border w-full min-h-12 rounded-[6px] border border-line-input bg-bg px-4 font-sans text-[16px] text-cream"
+          aria-describedby="contact-email-error"
+        />
+        <p id="contact-email-error" class="mb-0 mt-2 hidden font-sans text-[14px] text-[#f3c6b4]" role="alert"></p>
+      </div>
+      <div>
+        <label class="mb-2 block font-sans text-[13px] font-medium tracking-[0.08em] text-muted" for="contact-message">
+          {locale === 'en' ? 'Message' : 'Mensaje'}
+        </label>
+        <textarea
+          id="contact-message"
+          name="mensaje"
+          required
+          rows="6"
+          class="box-border w-full rounded-[6px] border border-line-input bg-bg px-4 py-3 font-sans text-[16px] text-cream"
+          aria-describedby="contact-message-error"
+        ></textarea>
+        <p id="contact-message-error" class="mb-0 mt-2 hidden font-sans text-[14px] text-[#f3c6b4]" role="alert"></p>
+      </div>
+      <button
+        type="submit"
+        class="min-h-12 cursor-pointer rounded-[2px] border-0 bg-cream px-7 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-bg hover:bg-cream-dim"
+      >
+        {locale === 'en' ? 'Send' : 'Enviar'}
+      </button>
+    </form>
+    <script is:inline>
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', (event) => {
+          const email = form.querySelector('#contact-email');
+          const message = form.querySelector('#contact-message');
+          const emailError = form.querySelector('#contact-email-error');
+          const messageError = form.querySelector('#contact-message-error');
+          let valid = true;
+          if (email instanceof HTMLInputElement && emailError) {
+            emailError.textContent = email.validationMessage;
+            emailError.classList.toggle('hidden', email.checkValidity());
+            valid = valid && email.checkValidity();
+          }
+          if (message instanceof HTMLTextAreaElement && messageError) {
+            messageError.textContent = message.validationMessage;
+            messageError.classList.toggle('hidden', message.checkValidity());
+            valid = valid && message.checkValidity();
+          }
+          if (!valid) event.preventDefault();
+        });
+      }
+    </script>
+  </main>
+</Layout>

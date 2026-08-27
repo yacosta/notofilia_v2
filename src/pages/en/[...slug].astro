@@ -1,5 +1,6 @@
 ---
 import StubPage from '../../components/StubPage.astro';
+import { englishContentSlug } from '../../lib/locale-paths';
 import {
   articles,
   collections,
@@ -29,9 +30,9 @@ export function getStaticPaths() {
   }
 
   return [...titles.entries()]
-    .filter(([slug]) => !dedicatedCatalogPaths.has(slug))
+    .filter(([slug]) => !dedicatedCatalogPaths.has(slug) && !dedicatedCatalogPaths.has(englishContentSlug(slug)))
     .map(([slug, title]) => ({
-      params: { slug },
+      params: { slug: englishContentSlug(slug) },
       props: { title },
     }));
 }

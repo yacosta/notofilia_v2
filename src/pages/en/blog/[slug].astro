@@ -1,10 +1,10 @@
 ---
 import EditorialArticlePage from '../../../components/editorial/EditorialArticlePage.astro';
-import { blogArticles } from '../../../data/editorial';
+import { articleSlugParam, blogArticles } from '../../../data/editorial';
 
 export function getStaticPaths() {
   return blogArticles.map((article) => ({
-    params: { slug: article.slug },
+    params: { slug: articleSlugParam('blog', article.slug, 'en') },
     props: { article },
   }));
 }

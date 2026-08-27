@@ -104,5 +104,5 @@ export const seriesCopy = {
 } as const;
 
 export function polymerWorldPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${POLIMERO_MUNDIAL_PATH}` : POLIMERO_MUNDIAL_PATH;
+  return locale === 'en' ? '/en/collection/world-polymer/' : POLIMERO_MUNDIAL_PATH;
 }

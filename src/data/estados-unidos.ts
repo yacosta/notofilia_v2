@@ -1,9 +1,10 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath } from '../lib/locale-paths';
 
 export const USA_PATH = '/coleccion/estados-unidos/';
-export const USA_PATH_EN = '/coleccion/united-states/';
+export const USA_PATH_EN = '/collection/united-states/';
 export const USA_MPC_PATH = '/coleccion/estados-unidos/mpc-vietnam/';
-export const USA_MPC_PATH_EN = '/coleccion/united-states/mpc-vietnam/';
+export const USA_MPC_PATH_EN = '/collection/united-states/mpc-vietnam/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -259,7 +260,7 @@ export const unitedStatesMpcCard = {
 };
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${USA_PATH_EN}` : USA_PATH;
+  return localizePath(USA_PATH, locale);
 }
 
 export function chapterHref(id: UnitedStatesChapterId): string {

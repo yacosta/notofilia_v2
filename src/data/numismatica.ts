@@ -78,5 +78,5 @@ export const numismaticaCopy = {
 } as const;
 
 export function numismaticaPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${NUMISMATICA_PATH}` : NUMISMATICA_PATH;
+  return locale === 'en' ? '/en/collection/numismatics/' : NUMISMATICA_PATH;
 }
