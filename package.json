@@ -4,10 +4,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "images": "node scripts/watermark-catalog.mjs",
+    "images:preview": "node scripts/preview-watermarks.mjs",
+    "predev": "node scripts/watermark-catalog.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/watermark-catalog.mjs",
     "build": "astro build",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
+    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -15,7 +20,8 @@
     "@fontsource-variable/inter": "^5.3.0",
     "@fontsource-variable/source-serif-4": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.3.0",
-    "astro": "^7.2.6"
+    "astro": "^7.2.6",
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
