@@ -18,6 +18,8 @@ export type NavNode = {
   flag?: string;
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
+  /** Lay out this item's child links in a single desktop row (Recursos). */
+  layout?: 'horizontal';
   children?: NavNode[];
 };
 
@@ -112,6 +114,7 @@ export const megaNav: NavNode[] = [
     id: 'recursos',
     es: 'Recursos',
     en: 'Resources',
+    layout: 'horizontal',
     children: [
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/' },

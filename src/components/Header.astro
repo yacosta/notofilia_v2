@@ -156,7 +156,7 @@ function nodeIsCurrent(node: NavNode): boolean {
                     </div>
                     <div class:list={['mega-columns', aside.length > 0 && 'mega-columns--split']}>
                       <div class="mega-column">
-                        <NavTree nodes={main} locale={locale} openSubmenu={t.openSubmenu} />
+                        <NavTree nodes={main} locale={locale} openSubmenu={t.openSubmenu} layout={item.layout} />
                       </div>
                       {aside.length > 0 && (
                         <div class="mega-column mega-column--aside">

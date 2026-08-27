@@ -8,9 +8,10 @@ interface Props {
   locale: Locale;
   openSubmenu: string;
   depth?: number;
+  layout?: 'horizontal';
 }
 
-const { nodes, locale, openSubmenu, depth = 1 } = Astro.props;
+const { nodes, locale, openSubmenu, depth = 1, layout } = Astro.props;
 
 function hrefFor(node: NavNode) {
   if (!node.href) return undefined;
@@ -18,7 +19,7 @@ function hrefFor(node: NavNode) {
 }
 ---
 
-<ul class:list={['mega-tree', `mega-tree--${depth}`]}>
+<ul class:list={['mega-tree', `mega-tree--${depth}`, layout === 'horizontal' && 'mega-tree--horizontal']}>
   {
     nodes.map((node) => {
       const label = node[locale];

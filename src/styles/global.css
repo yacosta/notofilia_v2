@@ -366,6 +366,29 @@ body.mega-drawer-lock {
   max-width: 42rem;
 }
 
+@media (min-width: 1024px) {
+  .mega-tree--horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0 1.75rem;
+    max-width: none;
+  }
+
+  .mega-tree--horizontal .mega-tree-item {
+    flex: 0 0 auto;
+  }
+
+  .mega-tree--horizontal .mega-tree-label {
+    flex: 0 0 auto;
+  }
+
+  .mega-columns:has(.mega-tree--horizontal) .mega-column {
+    max-width: none;
+  }
+}
+
 .mega-tree--2,
 .mega-tree--3 {
   columns: 1;
