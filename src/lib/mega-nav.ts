@@ -6,6 +6,8 @@ import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { ECUADOR_PATH } from '../data/ecuador';
+import { NOTAFILIA_PATH } from '../data/notafilia';
 
 export type NavNode = {
   id: string;
@@ -20,6 +22,7 @@ export const megaNav: NavNode[] = [
     id: 'coleccion-notofilia',
     es: 'Colección Virtual Notafilia',
     en: 'Virtual Notaphily Collection',
+    href: NOTAFILIA_PATH,
     children: [
       {
         id: 'colombia',
@@ -45,7 +48,12 @@ export const megaNav: NavNode[] = [
         en: 'Puerto Rico',
         href: PUERTO_RICO_PATH,
       },
-      { id: 'ecuador', es: 'Ecuador', en: 'Ecuador' },
+      {
+        id: 'ecuador',
+        es: 'Ecuador',
+        en: 'Ecuador',
+        href: ECUADOR_PATH,
+      },
       {
         id: 'polimero',
         es: 'Billetes de polímero mundial',
