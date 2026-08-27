@@ -1,7 +1,6 @@
 import blogArticlesJson from './blog-articles.json';
 import newsArticlesJson from './news-articles.json';
-
-type Locale = 'es' | 'en';
+import { localizePath, type Locale } from '../lib/locale-paths';
 
 export type LocalizedText = { es: string; en: string };
 
@@ -118,16 +117,21 @@ export const editorialCopy = {
 } as const;
 
 export function blogPath(locale: Locale): string {
-  return locale === 'en' ? '/en/blog/' : BLOG_PATH;
+  return localizePath(BLOG_PATH, locale);
 }
 
 export function newsPath(locale: Locale): string {
-  return locale === 'en' ? '/en/noticias/' : NEWS_PATH;
+  return localizePath(NEWS_PATH, locale);
 }
 
 export function articlePath(kind: 'blog' | 'news', slug: string, locale: Locale): string {
   const base = kind === 'blog' ? `/blog/${slug}/` : `/noticias/${slug}/`;
-  return locale === 'en' ? `/en${base}` : base;
+  return localizePath(base, locale);
+}
+
+export function articleSlugParam(kind: 'blog' | 'news', slug: string, locale: Locale): string {
+  const path = articlePath(kind, slug, locale);
+  return path.replace(/\/$/, '').split('/').pop() ?? slug;
 }
 
 export function findBlogArticle(slug: string): EditorialArticle | undefined {
@@ -147,12 +151,9 @@ const newWindowHint = {
 };
 
 function localizeInternalHref(href: string, locale: Locale): string {
-  if (locale !== 'en') return href;
-  if (href.startsWith('/contacto/')) {
-    return `/en${href.replace(/^\/contacto\//, '/contact/')}`;
-  }
-  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contact)\//.test(href) || href === '/') {
-    return `/en${href === '/' ? '/' : href}`;
+  if (href.startsWith('http')) return href;
+  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto|contact|buscar|politica-privacidad-cookies)\//.test(href) || href === '/') {
+    return localizePath(href, locale);
   }
   return href;
 }

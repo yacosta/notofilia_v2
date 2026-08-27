@@ -23,14 +23,13 @@ import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as cata
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
-import { ABOUT_PATH, aboutDedicatedSlugs } from '../data/about';
+import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { contactDedicatedSlugs } from '../data/contact';
-import { localizePath, otherLocalePath, type Locale } from './locale-path';
+import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 
-export type { Locale };
-export { localizePath, otherLocalePath };
-
-export const SITE_URL = 'https://notofilia.com';
+export type { Locale } from './locale-paths';
+export { localizePath, otherLocalePath, SITE_AUTHOR, DEFAULT_OG_IMAGE } from './locale-paths';
+export { SITE_URL } from './site-url';
 
 /** Empty-site content slugs already listed in stubPages/collections. New routes increment pages from 0. */
 const SEED_CONTENT_SLUGS = 16;
@@ -59,11 +58,15 @@ function extraAstroPageFiles(): number {
     (file) =>
       !file.endsWith('404.astro') &&
       !file.includes('/coleccion/') &&
+      !file.includes('/collection/') &&
       !file.includes('/glosario/') &&
+      !file.includes('/glossary/') &&
       !file.includes('/blog/') &&
       !file.includes('/noticias/') &&
+      !file.includes('/news/') &&
       !file.includes('/paises-bajos-numismatica/') &&
       !file.includes('/netherlands-numismatica/') &&
+      !file.includes('/netherlands-numismatics/') &&
       !file.includes('/acerca-de/') &&
       !file.includes('/about/') &&
       !file.includes('/contacto/') &&
@@ -89,6 +92,11 @@ export function statsLine(locale: Locale): string {
 }
 
 const seedHoldings = holdingsStats();
+
+addLocalePair(USA_PATH, USA_PATH_EN);
+addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
+addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
+addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export const copy = {
   es: {
@@ -518,7 +526,7 @@ export const stubPages = [
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
-export const dedicatedCatalogPaths = new Set<string>([
+const dedicatedEs = [
   ...catalogPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
@@ -544,12 +552,19 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
   ...contactDedicatedSlugs,
+  'coleccion',
   'blog',
   'noticias',
+  'contacto',
   ...blogSlugs,
   ...newsSlugs,
+];
+
+export const dedicatedCatalogPaths = new Set<string>([
+  ...dedicatedEs,
+  ...dedicatedEs.map((slug) => englishContentSlug(slug)),
 ]);
 
-export { SERIES_PATH, PUERTO_RICO_PATH };
+export { SERIES_PATH, PUERTO_RICO_PATH, NOTAFILIA_PATH };
 
 export const STATS = collectionStats();

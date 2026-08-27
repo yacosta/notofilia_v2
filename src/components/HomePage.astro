@@ -1,5 +1,6 @@
 ---
 import NewWindowHint from './NewWindowHint.astro';
+import CardImage from './CardImage.astro';
 import {
   articles,
   collections,
@@ -7,10 +8,12 @@ import {
   localizePath,
   milestones,
   news,
+  NOTAFILIA_PATH,
   SERIES_PATH,
   statsLine,
   type Locale,
 } from '../lib/site';
+import { cardImageSrc, heroSrcset } from '../lib/images';
 
 interface Props {
   locale: Locale;
@@ -30,7 +33,9 @@ const heroAlt =
   <section class="relative min-h-[72vh] w-full bg-[#0a0a09]" aria-labelledby="hero-heading">
     <img
       class="absolute inset-0 h-full w-full object-cover object-[50%_40%] [filter:contrast(1.2)_brightness(0.85)_saturate(1.1)]"
-      src="/images/hero-slide.jpg"
+      src={cardImageSrc('/images/hero-slide.jpg')}
+      srcset={heroSrcset('/images/hero-slide.jpg')}
+      sizes="100vw"
       alt={heroAlt}
       width="768"
       height="284"
@@ -79,7 +84,7 @@ const heroAlt =
           {t.heroPrimary}
         </a>
         <a
-          href={localizePath(SERIES_PATH, locale)}
+          href={localizePath(NOTAFILIA_PATH, locale)}
           class="inline-flex min-h-12 items-center justify-center rounded-[2px] border border-[#e7ddc4] px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-[#e7ddc4] no-underline hover:bg-[#e7ddc41a]"
         >
           {t.heroSecondary}
@@ -138,7 +143,10 @@ const heroAlt =
                   {item[locale].title}
                 </h3>
                 <p class="mb-3 mt-0 font-sans text-[15px]/6 text-muted">{item[locale].description}</p>
-                <span class="font-sans text-[15px] text-gold-light">{t.viewCatalog}</span>
+                <span class="font-sans text-[15px] text-gold-light">
+                  {t.viewCatalog}
+                  <span class="sr-only"> {item[locale].title}</span>
+                </span>
               </a>
             </li>
           ))
@@ -146,7 +154,7 @@ const heroAlt =
       </ul>
       <p class="mt-10 text-center">
         <a
-          href={localizePath(SERIES_PATH, locale)}
+          href={localizePath(NOTAFILIA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
           {t.heroSecondary}
@@ -167,15 +175,7 @@ const heroAlt =
               <article class="h-full overflow-hidden rounded-[6px] border border-line-strong bg-panel">
                 {item.image ? (
                   <a href={localizePath(item.href, locale)} class="block no-underline">
-                    <img
-                      src={item.image}
-                      alt={item.imageAlt?.[locale] ?? ''}
-                      width="1200"
-                      height="675"
-                      class="aspect-video w-full object-cover"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <CardImage src={item.image} alt={item.imageAlt?.[locale] ?? ''} />
                   </a>
                 ) : null}
                 <div class="p-5">
@@ -190,6 +190,7 @@ const heroAlt =
                     class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
                   >
                     {t.readMore}
+                    <span class="sr-only"> {item[locale]}</span>
                   </a>
                 </div>
               </article>
@@ -220,15 +221,7 @@ const heroAlt =
               <article class="h-full overflow-hidden rounded-[6px] border border-line-strong bg-bg">
                 {item.image ? (
                   <a href={localizePath(item.href, locale)} class="block no-underline">
-                    <img
-                      src={item.image}
-                      alt={item.imageAlt?.[locale] ?? ''}
-                      width="1200"
-                      height="675"
-                      class="aspect-video w-full object-cover"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <CardImage src={item.image} alt={item.imageAlt?.[locale] ?? ''} />
                   </a>
                 ) : null}
                 <div class="p-5">
@@ -255,6 +248,7 @@ const heroAlt =
                     class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
                   >
                     {t.readMore}
+                    <span class="sr-only"> {item[locale]}</span>
                   </a>
                 </div>
               </article>

@@ -198,7 +198,7 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${NETHERLANDS_PATH}` : NETHERLANDS_PATH;
+  return locale === 'en' ? '/en/collection/netherlands/' : NETHERLANDS_PATH;
 }
 
 export function chapterHref(id: NetherlandsChapterId): string {

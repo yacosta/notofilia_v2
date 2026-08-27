@@ -1,3 +1,5 @@
+import { localizePath } from '../lib/locale-paths';
+
 export const GLOSSARY_PATH = '/glosario/';
 
 type Locale = 'es' | 'en';
@@ -808,7 +810,7 @@ export function glossaryTermBySlug(slug: string): GlossaryTerm | undefined {
 }
 
 export function glossaryPath(locale: Locale): string {
-  return locale === 'en' ? `/en${GLOSSARY_PATH}` : GLOSSARY_PATH;
+  return localizePath(GLOSSARY_PATH, locale);
 }
 
 export function glossaryTermPath(slug: string, locale: Locale): string {

@@ -143,7 +143,7 @@ export function coinagePieceById(id: string): ColombiaCoinagePiece | undefined {
 }
 
 export function coinagePiecePath(piece: ColombiaCoinagePiece, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${piece.path}` : piece.path;
+  return locale === 'en' ? piece.path.replace('/coleccion/', '/en/collection/').replace('colombia-numismatica', 'colombia-numismatics') : piece.path;
 }
 
 export const colombiaCoinagePieceSlugs = colombiaCoinagePieces.map((piece) =>

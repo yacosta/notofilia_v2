@@ -278,5 +278,5 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${GUATEMALA_PATH}` : GUATEMALA_PATH;
+  return locale === 'en' ? '/en/collection/guatemala/' : GUATEMALA_PATH;
 }

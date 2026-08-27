@@ -8,6 +8,7 @@ export const COMMENTS_API_PATTERN = /^\/api\/comments\/([^/]+)\/?$/;
 export type CommentsEnv = {
   TURNSTILE_SECRET_KEY?: string;
   COMMENTS_DB: D1Database;
+  ASSETS?: Fetcher;
 };
 
 export const json = (body: unknown, init: ResponseInit = {}) =>

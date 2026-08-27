@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath } from '../lib/locale-paths';
 
 export type { CatalogSource, LocalizedText };
 
@@ -470,11 +471,11 @@ export function noteById(id: string): VictoryNote | undefined {
 }
 
 export function notePath(note: VictoryNote, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${note.path}` : note.path;
+  return localizePath(note.path, locale);
 }
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${SERIES_PATH}` : SERIES_PATH;
+  return localizePath(SERIES_PATH, locale);
 }
 
 export const catalogNoteSlugs = victoryNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));

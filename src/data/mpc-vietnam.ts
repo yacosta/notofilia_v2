@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath } from '../lib/locale-paths';
 import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH } from './estados-unidos';
 
 export type MpcVietnamChapterId =
@@ -197,7 +198,7 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${USA_MPC_PATH_EN}` : USA_MPC_PATH;
+  return localizePath(USA_MPC_PATH, locale);
 }
 
 export type MpcVietnamNoteId = '10-dolares-serie-641' | '1-dolar-serie-681' | '20-dolares-serie-692';
@@ -233,7 +234,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
     id: '10-dolares-serie-641',
     chapterId: 'serie-641',
     path: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
-    pathEn: '/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
+    pathEn: '/collection/united-states/mpc-vietnam/10-dollars-series-641/',
     pick: 'P#M63 · Schwan 887',
     serial: 'J15149964J',
     signatures: {
@@ -310,7 +311,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
     id: '1-dolar-serie-681',
     chapterId: 'serie-681',
     path: '/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
-    pathEn: '/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    pathEn: '/collection/united-states/mpc-vietnam/1-dollar-series-681/',
     pick: 'P#M79 · Schwan 915',
     serial: 'C10102847C',
     signatures: {
@@ -396,7 +397,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
     id: '20-dolares-serie-692',
     chapterId: 'serie-692',
     path: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
-    pathEn: '/coleccion/united-states/mpc-vietnam/20-dollars-series-692/',
+    pathEn: '/collection/united-states/mpc-vietnam/20-dollars-series-692/',
     pick: 'P#M98 · Schwan 938',
     serial: 'E05725119E',
     signatures: {
@@ -524,7 +525,7 @@ export function noteById(id: string): MpcVietnamNote | undefined {
 }
 
 export function notePath(note: MpcVietnamNote, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${note.pathEn}` : note.path;
+  return localizePath(note.path, locale);
 }
 
 export function notesForChapter(chapterId: MpcVietnamChapterId): MpcVietnamNote[] {

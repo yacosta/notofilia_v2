@@ -191,7 +191,7 @@ export const coinageCopy = {
 } as const;
 
 export function coinagePath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${COLOMBIA_COINAGE_PATH}` : COLOMBIA_COINAGE_PATH;
+  return locale === 'en' ? '/en/collection/colombia-numismatics/' : COLOMBIA_COINAGE_PATH;
 }
 
 export function coinageChapterHref(id: ColombiaCoinageChapterId): string {

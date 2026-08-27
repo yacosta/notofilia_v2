@@ -81,4 +81,17 @@ describe('footer links from mega-nav', () => {
       [{ href: '/blog/', es: 'Guías', en: 'Guides' }],
     );
   });
+
+  it('lists Guatemala only once when the country also sits under Colombian issues abroad', () => {
+    const links = footerLinksFromNav([
+      {
+        es: 'Colombia',
+        en: 'Colombia',
+        href: '/coleccion/colombia/',
+        children: [{ es: 'Guatemala', en: 'Guatemala', href: '/coleccion/guatemala/' }],
+      },
+      { es: 'Guatemala', en: 'Guatemala', href: '/coleccion/guatemala/' },
+    ]);
+    assert.equal(links.filter((item) => item.href === '/coleccion/guatemala/').length, 1);
+  });
 });

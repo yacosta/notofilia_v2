@@ -160,7 +160,7 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${ECUADOR_PATH}` : ECUADOR_PATH;
+  return locale === 'en' ? '/en/collection/ecuador/' : ECUADOR_PATH;
 }
 
 export function chapterHref(id: EcuadorChapterId): string {

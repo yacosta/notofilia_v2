@@ -77,7 +77,7 @@ export const seriesCopy = {
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${PUERTO_RICO_PATH}` : PUERTO_RICO_PATH;
+  return locale === 'en' ? '/en/collection/puerto-rico/' : PUERTO_RICO_PATH;
 }
 
 export const dedicatedCatalogPaths = new Set<string>(['coleccion/puerto-rico']);

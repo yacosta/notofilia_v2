@@ -44,13 +44,12 @@ const jsonLd = {
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
               {t.home}
             </a>
           </li>
-          <li aria-hidden="true">/</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{sectionLabel}</li>
         </ol>
       </nav>
@@ -116,6 +115,7 @@ const jsonLd = {
                     class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
                   >
                     {locale === 'en' ? 'Read more →' : 'Leer más →'}
+                    <span class="sr-only"> {item.title[locale]}</span>
                   </a>
                 </div>
               </article>

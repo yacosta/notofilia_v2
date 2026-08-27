@@ -120,5 +120,5 @@ export const notafiliaCopy = {
 } as const;
 
 export function notafiliaPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${NOTAFILIA_PATH}` : NOTAFILIA_PATH;
+  return locale === 'en' ? '/en/collection/notaphily/' : NOTAFILIA_PATH;
 }

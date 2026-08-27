@@ -84,6 +84,12 @@ body {
   text-decoration: none;
 }
 
+.crumbs > li:not(:last-child)::after {
+  content: "·";
+  margin-inline: 0.5em;
+  color: var(--color-muted);
+}
+
 .skip-link:focus {
   left: 16px;
   top: 16px;
@@ -686,6 +692,17 @@ body.mega-drawer-lock {
 
 .prose-notofilia li::marker {
   color: var(--color-gold-light);
+}
+
+.breadcrumb {
+  list-style: none;
+}
+
+.breadcrumb > li:not(:last-child)::after {
+  content: "/";
+  margin-inline: 0.5rem;
+  color: inherit;
+  pointer-events: none;
 }
 
 .guilloche {

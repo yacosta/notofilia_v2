@@ -1,0 +1,38 @@
+---
+import type { Locale } from '../lib/locale-paths';
+
+export type Crumb = {
+  href?: string;
+  label: string;
+};
+
+interface Props {
+  locale: Locale;
+  items: Crumb[];
+  label?: string;
+}
+
+const { locale, items, label } = Astro.props;
+const aria = label ?? (locale === 'en' ? 'Breadcrumb' : 'Migas de pan');
+---
+
+<nav aria-label={aria} class="mb-8">
+  <ol class="crumbs m-0 flex list-none flex-wrap items-center p-0 font-sans text-[14px] text-muted">
+    {
+      items.map((item, index) => {
+        const current = index === items.length - 1;
+        return (
+          <li class:list={[current && 'inline-flex min-h-11 items-center text-cream-dim']}>
+            {item.href && !current ? (
+              <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <span aria-current={current ? 'page' : undefined}>{item.label}</span>
+            )}
+          </li>
+        );
+      })
+    }
+  </ol>
+</nav>

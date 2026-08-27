@@ -1,0 +1,209 @@
+export type Locale = 'es' | 'en';
+
+export const SITE_AUTHOR = 'Yezid Acosta';
+export const DEFAULT_OG_IMAGE = '/images/hero-slide.jpg';
+
+type PathPair = {
+  es: string;
+  en: string;
+  /** Other unprefixed paths that resolve to the same pair (legacy EN-under-/coleccion/). */
+  aliases?: string[];
+};
+
+/** Longest-prefix pairs. Trailing slashes required. */
+export const PATH_PREFIX_PAIRS: PathPair[] = [
+  {
+    es: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
+    en: '/collection/united-states/mpc-vietnam/20-dollars-series-692/',
+    aliases: ['/coleccion/united-states/mpc-vietnam/20-dollars-series-692/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
+    en: '/collection/united-states/mpc-vietnam/10-dollars-series-641/',
+    aliases: ['/coleccion/united-states/mpc-vietnam/10-dollars-series-641/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    en: '/collection/united-states/mpc-vietnam/1-dollar-series-681/',
+    aliases: ['/coleccion/united-states/mpc-vietnam/1-dollar-series-681/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/mpc-vietnam/',
+    en: '/collection/united-states/mpc-vietnam/',
+    aliases: ['/coleccion/united-states/mpc-vietnam/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/',
+    en: '/collection/united-states/',
+    aliases: ['/coleccion/united-states/'],
+  },
+  { es: '/coleccion/filipinas/', en: '/collection/philippines/' },
+  { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
+  { es: '/coleccion/polimero-mundial/', en: '/collection/world-polymer/' },
+  { es: '/coleccion/paises-bajos/', en: '/collection/netherlands/' },
+  { es: '/coleccion/numismatica/', en: '/collection/numismatics/' },
+  { es: '/coleccion/notafilia/', en: '/collection/notaphily/' },
+  { es: '/coleccion/espana/', en: '/collection/spain/' },
+  { es: '/coleccion/', en: '/collection/' },
+  {
+    es: '/paises-bajos-numismatica/ducado-utrecht-1761/',
+    en: '/netherlands-numismatica/ducado-utrecht-1761/',
+  },
+  {
+    es: '/paises-bajos-numismatica/',
+    en: '/netherlands-numismatica/',
+  },
+  { es: '/glosario/', en: '/glossary/' },
+  { es: '/noticias/', en: '/news/' },
+  { es: '/contacto/', en: '/contact/' },
+  { es: '/acerca-de/', en: '/about/' },
+  { es: '/buscar/', en: '/search/' },
+  { es: '/politica-privacidad-cookies/', en: '/privacy-cookies/' },
+  { es: '/blog/mylar-si-plastico-no-como-guardar-billetes/', en: '/blog/mylar-yes-plastic-no-how-to-store-banknotes/' },
+  { es: '/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/', en: '/blog/three-imprints-colombian-banknote-printer/' },
+  { es: '/blog/como-empezar-coleccion-billetes/', en: '/blog/how-to-start-a-banknote-collection/' },
+  { es: '/blog/como-identificar-billetes-falsos/', en: '/blog/how-to-identify-counterfeit-banknotes/' },
+  { es: '/blog/diferencia-numismatica-notafilia/', en: '/blog/difference-between-numismatics-and-notaphily/' },
+  { es: '/blog/numeros-serie-especiales-billetes/', en: '/blog/special-serial-numbers-on-banknotes/' },
+  { es: '/blog/origenes-banca-comercial-colombia-banca-libre/', en: '/blog/origins-of-commercial-banking-colombia-free-banking/' },
+  { es: '/blog/origenes-banca-comercial-puerto-rico/', en: '/blog/origins-of-commercial-banking-puerto-rico/' },
+  { es: '/blog/personajes-billetes-colombia/', en: '/blog/figures-on-colombian-banknotes/' },
+];
+
+const PAIRS_BY_LENGTH = [...PATH_PREFIX_PAIRS].sort(
+  (a, b) => Math.max(b.es.length, b.en.length) - Math.max(a.es.length, a.en.length),
+);
+
+export function stripEnPrefix(path: string): string {
+  return path.replace(/^\/en(?=\/|$)/, '') || '/';
+}
+
+export function ensureTrailingSlash(path: string): string {
+  if (path === '/') return '/';
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
+function splitHash(path: string): { pathname: string; hash: string; search: string } {
+  const hashIndex = path.indexOf('#');
+  const withHash = hashIndex === -1 ? path : path.slice(0, hashIndex);
+  const hash = hashIndex === -1 ? '' : path.slice(hashIndex);
+  const searchIndex = withHash.indexOf('?');
+  if (searchIndex === -1) return { pathname: withHash, hash, search: '' };
+  return { pathname: withHash.slice(0, searchIndex), search: withHash.slice(searchIndex), hash };
+}
+
+export function rewriteUnprefixedPath(pathname: string, locale: Locale): string {
+  if (pathname === '/' || pathname === '') return '/';
+  const slashed = ensureTrailingSlash(pathname.startsWith('/') ? pathname : `/${pathname}`);
+
+  for (const { es, en, aliases = [] } of PAIRS_BY_LENGTH) {
+    if (slashed === es || slashed.startsWith(es)) {
+      return locale === 'en' ? `${en}${slashed.slice(es.length)}` : slashed;
+    }
+    if (slashed === en || slashed.startsWith(en)) {
+      return locale === 'es' ? `${es}${slashed.slice(en.length)}` : slashed;
+    }
+    for (const alias of aliases) {
+      if (slashed === alias || slashed.startsWith(alias)) {
+        const rest = slashed.slice(alias.length);
+        return locale === 'en' ? `${en}${rest}` : `${es}${rest}`;
+      }
+    }
+  }
+
+  return slashed;
+}
+
+export function localizePath(path: string, locale: Locale): string {
+  if (path.startsWith('http')) return path;
+  const { pathname, hash, search } = splitHash(path);
+  const unprefixed = stripEnPrefix(pathname);
+  const rewritten = rewriteUnprefixedPath(unprefixed, locale);
+  const suffix = `${search}${hash}`;
+  if (locale === 'es') return `${rewritten}${suffix}`;
+  if (rewritten === '/') return `/en/${suffix}`;
+  return `/en${rewritten}${suffix}`;
+}
+
+export function otherLocalePath(path: string, locale: Locale): string {
+  return localizePath(path, locale === 'es' ? 'en' : 'es');
+}
+
+/** Legacy English URLs that must 301 to the translated tree. */
+export function englishRedirects(): Record<string, string> {
+  const redirects: Record<string, string> = {};
+  const seen = new Set<string>();
+
+  const add = (from: string, to: string) => {
+    if (from === to || seen.has(from)) return;
+    seen.add(from);
+    redirects[from] = to;
+  };
+
+  const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
+    '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
+    '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    '/en/coleccion/estados-unidos/mpc-vietnam/',
+    '/en/coleccion/estados-unidos/',
+    '/en/coleccion/united-states/mpc-vietnam/20-dollars-series-692/',
+    '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
+    '/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    '/en/coleccion/united-states/mpc-vietnam/',
+    '/en/coleccion/united-states/',
+    '/en/coleccion/filipinas/1-peso/',
+    '/en/coleccion/filipinas/2-pesos/',
+    '/en/coleccion/filipinas/5-pesos/',
+    '/en/coleccion/filipinas/20-pesos/',
+    '/en/coleccion/filipinas/',
+    '/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',
+    '/en/coleccion/colombia-numismatica/',
+    '/en/coleccion/polimero-mundial/',
+    '/en/coleccion/paises-bajos/',
+    '/en/coleccion/numismatica/',
+    '/en/coleccion/notafilia/',
+    '/en/coleccion/espana/',
+    '/en/coleccion/china/100-yuan/',
+    '/en/coleccion/china/',
+    '/en/coleccion/colombia/',
+    '/en/coleccion/ecuador/',
+    '/en/coleccion/guatemala/',
+    '/en/coleccion/lazarettos/',
+    '/en/coleccion/puerto-rico/',
+    '/en/coleccion/',
+    '/en/glosario/',
+    '/en/noticias/',
+    '/en/contacto/',
+    '/en/acerca-de/',
+    '/en/buscar/',
+    '/en/politica-privacidad-cookies/',
+    '/en/paises-bajos-numismatica/ducado-utrecht-1761/',
+    '/en/paises-bajos-numismatica/',
+    '/en/blog/mylar-si-plastico-no-como-guardar-billetes/',
+    '/en/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/',
+    '/en/blog/como-empezar-coleccion-billetes/',
+    '/en/blog/como-identificar-billetes-falsos/',
+    '/en/blog/diferencia-numismatica-notafilia/',
+    '/en/blog/numeros-serie-especiales-billetes/',
+    '/en/blog/origenes-banca-comercial-colombia-banca-libre/',
+    '/en/blog/origenes-banca-comercial-puerto-rico/',
+    '/en/blog/personajes-billetes-colombia/',
+  ];
+
+  for (const from of legacyEnglishPrefixes) {
+    add(from, localizePath(from, 'en'));
+  }
+
+  return redirects;
+}
+
+/** Kept so data modules can register extra exact pairs without a circular import. */
+export function addLocalePair(_esPath: string, _enPath: string) {
+  // Prefix pairs above already cover USA, About, MPC notes, and Netherlands coinage.
+}
+
+export function englishContentSlug(esSlug: string): string {
+  return localizePath(`/${esSlug.replace(/^\/|\/$/g, '')}/`, 'en')
+    .replace(/^\/en\/?/, '')
+    .replace(/\/$/, '');
+}

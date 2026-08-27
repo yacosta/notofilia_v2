@@ -6,7 +6,8 @@
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   "d1_databases": [
     {
@@ -15,5 +16,8 @@
       "database_id": "bb538083-227c-4c27-bd35-034e6ac0ee07",
       "migrations_dir": "migrations"
     }
-  ]
+  ],
+  "observability": {
+    "enabled": true
+  }
 }

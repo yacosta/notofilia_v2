@@ -222,7 +222,7 @@ export const numismaticsCopy = {
 } as const;
 
 export function numismaticsPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${NUMISMATICS_PATH}` : NUMISMATICS_PATH;
+  return locale === 'en' ? '/en/collection/numismatics/' : NUMISMATICS_PATH;
 }
 
 export function coinagePath(locale: 'es' | 'en'): string {
