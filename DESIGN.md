@@ -17,6 +17,8 @@ Use the Tailwind v4 theme in `src/styles/global.css`:
 
 Type: Montenegrin Gothic One (display wordmark and titles), Source Sans 3 (body and UI). Local WOFF2 files live in `public/fonts/`.
 
+Content width and page gutters: see `LAYOUT.md`. Do not recap catalog narrative at `46rem` after a full-width facts card or image pair.
+
 ## Wordmark
 
 **NOTOFILIA** in Montenegrin Gothic One. Running text: Notofilia. Discipline: *notafilia*. Lockup: NOTOFILIA — Numismática y Notafilia.
