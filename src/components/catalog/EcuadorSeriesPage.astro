@@ -4,8 +4,6 @@ import { localizePath, type Locale } from '../../lib/site';
 import {
   chapterHref,
   ecuadorChapters,
-  ecuadorNotes,
-  notePath,
   seriesCopy,
   seriesPath,
   seriesSources,
@@ -95,39 +93,7 @@ const hero = {
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
           {t.holdingsTitle}
         </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
-          aria-label={locale === 'en' ? 'Notes in the collection' : 'Billetes de la colección'}
-        >
-          {
-            ecuadorNotes.map((note) => (
-              <li class="min-w-0">
-                <a
-                  href={notePath(note, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <img
-                    src={note.images.composite}
-                    alt={note.frontCaption[locale]}
-                    width={note.images.width}
-                    height={note.images.height}
-                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    decoding="async"
-                  />
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.95rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {note.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
       </section>
 
       <section class="mt-16" aria-labelledby="chapters-heading">

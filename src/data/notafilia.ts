@@ -57,8 +57,8 @@ export const notafiliaCountries: NotafiliaCountry[] = [
     years: { es: '1884–2000', en: '1884–2000' },
     title: { es: 'Ecuador', en: 'Ecuador' },
     lead: {
-      es: 'Del sucre de 1884 a la dolarización, con un 100 sucres de 1993 de serie 00000003.',
-      en: 'From the 1884 sucre to dollarization, with a 1993 100-sucre note serial 00000003.',
+      es: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.',
+      en: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.',
     },
   },
   {
