@@ -99,13 +99,6 @@ export const megaNav: NavNode[] = [
         flag: 'ec',
       },
       {
-        id: 'guatemala',
-        es: 'Guatemala',
-        en: 'Guatemala',
-        href: GUATEMALA_PATH,
-        flag: 'gt',
-      },
-      {
         id: 'polimero',
         es: 'Billetes de polímero mundial',
         en: 'World polymer banknotes',
