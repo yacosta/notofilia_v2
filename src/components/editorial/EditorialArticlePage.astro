@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Comments from '../Comments.astro';
 import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import {
@@ -238,6 +239,8 @@ const jsonLd = {
           {t.editorialPolicy}
         </a>
       </p>
+
+      {kind === 'news' ? <Comments slug={article.slug} locale={locale} /> : null}
 
       <p class="mt-10">
         <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={indexPath}>

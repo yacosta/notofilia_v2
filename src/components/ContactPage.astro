@@ -1,0 +1,300 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import {
+  CONTACT_TURNSTILE_SITE_KEY,
+  WEB3FORMS_ACCESS_KEY,
+  contactCopy,
+  contactPath,
+} from '../data/contact';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = contactCopy[locale];
+const pathname = contactPath(locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Notofilia', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: t.nav, item: `${SITE_URL}${pathname}` },
+      ],
+    },
+    {
+      '@type': 'ContactPage',
+      name: t.title,
+      url: `${SITE_URL}${pathname}`,
+      inLanguage: locale,
+      isPartOf: { '@type': 'WebSite', name: 'Notofilia', url: SITE_URL },
+    },
+  ],
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-[75rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
+        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
+              {t.home}
+            </a>
+          </li>
+          <li aria-hidden="true">/</li>
+          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.nav}</li>
+        </ol>
+      </nav>
+
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div class="flex min-h-[280px] items-center justify-center">
+          <picture>
+            <source
+              srcset="/uploads/doblones-coloniales-oro-360.webp 360w, /uploads/doblones-coloniales-oro.webp 511w"
+              type="image/webp"
+              sizes="(max-width: 700px) 70vw, 360px"
+            />
+            <source
+              srcset="/uploads/doblones-coloniales-oro-360.png 360w, /uploads/doblones-coloniales-oro.png 511w"
+              type="image/png"
+              sizes="(max-width: 700px) 70vw, 360px"
+            />
+            <img
+              src="/uploads/doblones-coloniales-oro.png"
+              alt={t.imageAlt}
+              width="511"
+              height="511"
+              class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div data-contact-root>
+          <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+            {t.title}
+          </h1>
+          <p class="mb-8 mt-0 text-[18px] leading-[1.6] text-muted">{t.intro}</p>
+
+          <form
+            id="web3forms-contact-form"
+            name="web3forms-contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            data-contact-form
+            class="grid gap-4"
+          >
+            <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+            <input type="hidden" name="subject" value={t.subject} />
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="cf-name" class="mb-2 block font-sans text-[13px] font-medium uppercase tracking-[0.14em] text-muted">
+                  {t.name} <span aria-hidden="true" class="text-gold-deep">*</span>
+                  <span class="sr-only">({t.required})</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="cf-name"
+                  required
+                  autocomplete="name"
+                  class="box-border min-h-11 w-full rounded-[2px] border border-line-input bg-panel px-3.5 py-3 font-serif text-[17px] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                />
+              </div>
+              <div>
+                <label for="cf-email" class="mb-2 block font-sans text-[13px] font-medium uppercase tracking-[0.14em] text-muted">
+                  {t.email} <span aria-hidden="true" class="text-gold-deep">*</span>
+                  <span class="sr-only">({t.required})</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="cf-email"
+                  required
+                  autocomplete="email"
+                  class="box-border min-h-11 w-full rounded-[2px] border border-line-input bg-panel px-3.5 py-3 font-serif text-[17px] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="cf-country" class="mb-2 block font-sans text-[13px] font-medium uppercase tracking-[0.14em] text-muted">
+                {t.country}
+              </label>
+              <input
+                type="text"
+                name="country"
+                id="cf-country"
+                autocomplete="country-name"
+                class="box-border min-h-11 w-full rounded-[2px] border border-line-input bg-panel px-3.5 py-3 font-serif text-[17px] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+              />
+            </div>
+
+            <div>
+              <label for="cf-message" class="mb-2 block font-sans text-[13px] font-medium uppercase tracking-[0.14em] text-muted">
+                {t.message} <span aria-hidden="true" class="text-gold-deep">*</span>
+                <span class="sr-only">({t.required})</span>
+              </label>
+              <textarea
+                name="message"
+                id="cf-message"
+                required
+                rows="6"
+                class="box-border w-full resize-y rounded-[2px] border border-line-input bg-panel px-3.5 py-3 font-serif text-[17px] text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+              ></textarea>
+            </div>
+
+            <div
+              class="cf-turnstile flex min-h-[65px] justify-center"
+              data-sitekey={CONTACT_TURNSTILE_SITE_KEY}
+              data-theme="dark"
+              data-size="flexible"
+              data-action="contact"
+            >
+            </div>
+
+            <p data-contact-status role="status" aria-live="polite" class="hidden m-0 text-center text-[16px] leading-[1.5]"></p>
+
+            <div>
+              <button
+                type="submit"
+                data-contact-submit
+                class="min-h-11 cursor-pointer rounded-full border border-cream bg-cream px-10 py-3.5 font-sans text-[16px] font-semibold uppercase tracking-[0.14em] text-bg disabled:cursor-wait disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-cream"
+              >
+                {t.submit}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>
+  <script is:inline>
+    (function () {
+      const root = document.querySelector('[data-contact-root]');
+      const form = root && root.querySelector('[data-contact-form]');
+      const status = root && root.querySelector('[data-contact-status]');
+      const submit = root && root.querySelector('[data-contact-submit]');
+      if (!form || !status || !submit) return;
+
+      (function prefillFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        const ficha = params.get('ficha');
+        const pageUrl = params.get('url');
+        const motivo = params.get('motivo');
+        const email = params.get('email');
+        const emailInput = form.querySelector('#cf-email');
+        if (email && emailInput && !emailInput.value) emailInput.value = email;
+        const message = form.querySelector('#cf-message');
+        if (!message || message.value.trim()) return;
+        const isEn = document.documentElement.lang === 'en';
+        const lines = [];
+        if (motivo === 'error') {
+          lines.push(
+            isEn
+              ? 'I want to report an error or add information.'
+              : 'Quiero reportar un error o aportar información.',
+          );
+        }
+        if (ficha) lines.push((isEn ? 'Record: ' : 'Ficha: ') + ficha);
+        if (pageUrl) lines.push('URL: ' + pageUrl);
+        if (lines.length) {
+          lines.push(
+            '',
+            isEn ? 'Describe the error or the additional information:' : 'Describa el error o la información adicional:',
+            '',
+          );
+          message.value = lines.join('\n');
+        }
+      })();
+
+      const copy = {
+        es: {
+          sending: 'Enviando…',
+          success: '¡Gracias! Tu mensaje fue enviado correctamente.',
+          error: 'Hubo un error al enviar el formulario. Inténtalo de nuevo.',
+          turnstile: 'Por favor completa la verificación de seguridad.',
+        },
+        en: {
+          sending: 'Sending…',
+          success: 'Thank you! Your message was sent.',
+          error: 'There was an error sending the form. Please try again.',
+          turnstile: 'Please complete the security check.',
+        },
+      };
+
+      function langCopy() {
+        const lang =
+          document.documentElement.getAttribute('data-page-locale') === 'en' ||
+          document.documentElement.lang === 'en'
+            ? 'en'
+            : 'es';
+        return copy[lang];
+      }
+
+      function showStatus(kind, message) {
+        status.hidden = false;
+        status.classList.remove('hidden');
+        status.textContent = message;
+        status.className =
+          kind === 'success'
+            ? 'm-0 mb-5 text-center text-[16px] leading-[1.5] text-[#7fbf82]'
+            : kind === 'info'
+              ? 'm-0 mb-5 text-center text-[16px] leading-[1.5] text-muted'
+              : 'm-0 mb-5 text-center text-[16px] leading-[1.5] text-[#e08a8a]';
+      }
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const data = new FormData(form);
+        if (data.get('botcheck')) return;
+        if (!data.get('cf-turnstile-response')) {
+          showStatus('error', langCopy().turnstile);
+          return;
+        }
+        submit.disabled = true;
+        const idleLabel = submit.textContent;
+        const current = langCopy();
+        submit.textContent = current.sending;
+        showStatus('info', current.sending);
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { Accept: 'application/json' },
+            body: data,
+          });
+          const json = await res.json();
+          if (json && json.success) {
+            showStatus('success', langCopy().success);
+            form.reset();
+            if (window.turnstile) window.turnstile.reset();
+          } else {
+            showStatus('error', langCopy().error);
+            if (window.turnstile) window.turnstile.reset();
+          }
+        } catch (err) {
+          showStatus('error', langCopy().error);
+          if (window.turnstile) window.turnstile.reset();
+        } finally {
+          submit.disabled = false;
+          submit.textContent = idleLabel;
+        }
+      });
+    })();
+  </script>
+</Layout>

@@ -7,7 +7,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
-import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs, mpcVietnamNotes } from '../data/mpc-vietnam';
+import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -18,15 +18,17 @@ import {
   NUMISMATICS_PATH,
   netherlandsCoinSlugs,
   netherlandsCoinageDedicatedSlugs,
-  netherlandsCoins,
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
-import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
+import { ABOUT_PATH, aboutDedicatedSlugs } from '../data/about';
+import { contactDedicatedSlugs } from '../data/contact';
+import { localizePath, otherLocalePath, type Locale } from './locale-path';
 
-export type Locale = 'es' | 'en';
+export type { Locale };
+export { localizePath, otherLocalePath };
 
 export const SITE_URL = 'https://notofilia.com';
 
@@ -63,7 +65,9 @@ function extraAstroPageFiles(): number {
       !file.includes('/paises-bajos-numismatica/') &&
       !file.includes('/netherlands-numismatica/') &&
       !file.includes('/acerca-de/') &&
-      !file.includes('/about/'),
+      !file.includes('/about/') &&
+      !file.includes('/contacto/') &&
+      !file.includes('/contact/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -85,73 +89,6 @@ export function statsLine(locale: Locale): string {
 }
 
 const seedHoldings = holdingsStats();
-
-function stripEnPrefix(path: string): string {
-  return path.replace(/^\/en(?=\/|$)/, '') || '/';
-}
-
-function stripTrailingSlash(path: string): string {
-  return path.replace(/\/$/, '') || '/';
-}
-
-function addLocalePair(
-  pairs: Record<string, { es: string; en: string }>,
-  esPath: string,
-  enPath: string,
-) {
-  const es = stripTrailingSlash(stripEnPrefix(esPath));
-  const en = stripTrailingSlash(stripEnPrefix(enPath));
-  const pair = { es, en };
-  pairs[es] = pair;
-  pairs[en] = pair;
-}
-
-/** Collection slugs that differ by language (Spanish filename vs English filename). */
-const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {};
-addLocalePair(localizedCollectionSlugs, USA_PATH, USA_PATH_EN);
-addLocalePair(localizedCollectionSlugs, USA_MPC_PATH, USA_MPC_PATH_EN);
-for (const note of mpcVietnamNotes) {
-  addLocalePair(localizedCollectionSlugs, note.path, note.pathEn);
-}
-addLocalePair(localizedCollectionSlugs, ABOUT_PATH, ABOUT_PATH_EN);
-addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
-for (const coin of netherlandsCoins) {
-  addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
-}
-
-function splitHash(path: string): { pathname: string; hash: string } {
-  const index = path.indexOf('#');
-  if (index === -1) return { pathname: path, hash: '' };
-  return { pathname: path.slice(0, index), hash: path.slice(index) };
-}
-
-function rewriteCollectionSlug(pathname: string, locale: Locale): string {
-  const slash = pathname.endsWith('/') ? '/' : '';
-  const core = pathname.replace(/\/$/, '') || '/';
-  const pair = localizedCollectionSlugs[core];
-  if (!pair) return pathname;
-  return `${pair[locale]}${slash || '/'}`;
-}
-
-export function localizePath(path: string, locale: Locale): string {
-  if (path.startsWith('http')) return path;
-  const { pathname, hash } = splitHash(path);
-  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
-  const rewritten = rewriteCollectionSlug(unprefixed, locale);
-  if (locale === 'es') return `${rewritten}${hash}`;
-  if (rewritten === '/') return `/en/${hash}`;
-  return `/en${rewritten}${hash}`;
-}
-
-export function otherLocalePath(path: string, locale: Locale): string {
-  const target: Locale = locale === 'es' ? 'en' : 'es';
-  const { pathname, hash } = splitHash(path);
-  const unprefixed = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
-  const rewritten = rewriteCollectionSlug(unprefixed, target);
-  if (target === 'es') return `${rewritten}${hash}`;
-  if (rewritten === '/') return `/en/${hash}`;
-  return `/en${rewritten}${hash}`;
-}
 
 export const copy = {
   es: {
@@ -606,6 +543,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
+  ...contactDedicatedSlugs,
   'blog',
   'noticias',
   ...blogSlugs,

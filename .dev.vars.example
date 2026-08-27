@@ -1,0 +1,8 @@
+# Server-only Cloudflare Turnstile secret. Set the real value locally in .dev.vars
+# (never commit that file) and in production with:
+#   npx wrangler secret put TURNSTILE_SECRET_KEY
+TURNSTILE_SECRET_KEY=
+
+# Local comments database (after cloning):
+#   npx wrangler d1 migrations apply comments_db --local
+

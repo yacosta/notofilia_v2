@@ -26,6 +26,8 @@ export default defineConfig({
     '/en/sobre-mi': '/en/about/',
     '/en/acerca-de': '/en/about/',
     '/about': '/en/about/',
+    '/en/contacto': '/en/contact/',
+    '/contact': '/en/contact/',
   },
   vite: {
     plugins: [tailwindcss()],

@@ -148,7 +148,10 @@ const newWindowHint = {
 
 function localizeInternalHref(href: string, locale: Locale): string {
   if (locale !== 'en') return href;
-  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto)\//.test(href) || href === '/') {
+  if (href.startsWith('/contacto/')) {
+    return `/en${href.replace(/^\/contacto\//, '/contact/')}`;
+  }
+  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contact)\//.test(href) || href === '/') {
     return `/en${href === '/' ? '/' : href}`;
   }
   return href;
