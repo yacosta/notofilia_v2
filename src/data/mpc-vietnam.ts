@@ -161,7 +161,7 @@ export const seriesCopy = {
       'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
       'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
       'En Vietnam el programa tuvo teatro propio. La serie 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí. La 661 trajo el 20 dólares. La 681 cubrió 1969–1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea, no en Vietnam.',
-      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. El 10 dólares de la serie 641, J15149964J, es la primera ficha; las demás se publicarán como en Filipinas, a medida que se fotografíen.',
+      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J15149964J, y el 1 dólar de la serie 681, C10102847C; las demás se publicarán como en Filipinas, a medida que se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
     usLead: 'El resto del papel federal, colonial y obsoleto se documenta en la vitrina de Estados Unidos.',
@@ -184,7 +184,7 @@ export const seriesCopy = {
       'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
       'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
       'In Vietnam the program had its own theater. Series 641, 31 August 1965 to 21 October 1968, was the first used only there. Series 661 brought the $20. Series 681 covered 1969–1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and Korea, not in Vietnam.',
-      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. The Series 641 $10, serial J15149964J, is the first note page; further pieces will be published as they are photographed, as in the Philippines case.',
+      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J15149964J, and the Series 681 $1, serial C10102847C; further pieces will be published as they are photographed, as in the Philippines case.',
     ],
     parentLink: 'United States',
     usLead: 'The rest of the federal, colonial, and obsolete paper is documented in the United States case.',
@@ -200,7 +200,7 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_MPC_PATH_EN}` : USA_MPC_PATH;
 }
 
-export type MpcVietnamNoteId = '10-dolares-serie-641';
+export type MpcVietnamNoteId = '10-dolares-serie-641' | '1-dolar-serie-681';
 
 export type MpcVietnamNote = {
   id: MpcVietnamNoteId;
@@ -302,6 +302,92 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
         note: {
           es: 'Cita 20.400.000 ejemplares; grabados de Baldwin (anverso) y Bower (reverso).',
           en: 'Cites 20,400,000 notes; Baldwin face engraving and Bower back.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-serie-681',
+    chapterId: 'serie-681',
+    path: '/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    pathEn: '/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    pick: 'P#M79 · Schwan 915',
+    serial: 'C10102847C',
+    signatures: {
+      es: 'Sin firmas (emisión militar; el texto de uso sustituye al firmante)',
+      en: 'No signatures (military issue; the use legend stands in place of a signer)',
+    },
+    printed: {
+      es: 'Se citan 22.400.000 ejemplares del 1 dólar de la serie 681',
+      en: '22,400,000 notes are cited for the Series 681 $1',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/mpc-681-1-composite.jpg',
+      front: '/images/catalog/estados-unidos/mpc-681-1-front.jpg',
+      back: '/images/catalog/estados-unidos/mpc-681-1-back.jpg',
+    },
+    title: {
+      es: '1 dólar · Serie 681',
+      en: '$1 · Series 681',
+    },
+    kicker: {
+      es: 'Estados Unidos · MPC · Vietnam',
+      en: 'United States · MPC · Vietnam',
+    },
+    lead: {
+      es: 'Anverso violeta con piloto de casco a la derecha; reverso con cuatro F-100 Super Sabre en naranja. Posición 3. Serie C10102847C.',
+      en: 'Violet face with a helmeted pilot to the right; back with four orange F-100 Super Sabres. Position 3. Serial C10102847C.',
+    },
+    description: {
+      es: 'El 1 dólar de la serie 681 (Pick M79, Schwan 915) es el valor de un dólar de la penúltima conversión en Vietnam: del 11 de agosto de 1969 al 7 de octubre de 1970. El anverso, en violeta sobre guilloché naranja, lleva a la derecha un piloto con casco y gafas alzadas —tema de Fuerza Aérea— y, en las cuatro esquinas, el 1. «SERIES 681» aparece dos veces; el 3 es el número de posición en el pliego. El reverso, en púrpura con naranjas, muestra cuatro F-100 Super Sabre en formación —los Thunderbirds, según CoinWeek y PMG—. El texto restringe el uso a establecimientos militares y personal autorizado. Esta pieza de la colección, sin encapsular, lleva el serial C10102847C.',
+      en: 'The Series 681 $1 (Pick M79, Schwan 915) is the dollar denomination of the penultimate conversion in Vietnam: 11 August 1969 to 7 October 1970. The violet face on orange guilloché carries a helmeted pilot with goggles raised — an Air Force theme — and 1s in all four corners. “SERIES 681” appears twice; 3 is the sheet position number. The back shows four F-100 Super Sabres in formation — the Thunderbirds, per CoinWeek and PMG — in orange on purple. The legend restricts use to military establishments and authorized personnel. This collection piece, unslabbed, is serial C10102847C.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar, serie 681, serial C10102847C: piloto con casco y sobrecargas violetas del 1.',
+      en: 'Face of the Series 681 $1, serial C10102847C: helmeted pilot and violet 1 overprints.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 dólar, serie 681: cuatro F-100 Super Sabre en formación y ONE DOLLAR.',
+      en: 'Back of the Series 681 $1: four F-100 Super Sabres in formation and ONE DOLLAR.',
+    },
+    scarcity: {
+      es: 'El 1 dólar de 681 se cita como uno de los MPC más comunes: 22.400.000 ejemplares; el valor facial total de la serie superó los 214 millones. Los fraccionarios y este 1 dólar siguen asequibles en estados medios; los reemplazos del 5 y del 20 dólares son los difíciles.',
+      en: 'The Series 681 $1 is cited as one of the most common MPCs: 22,400,000 notes; the series’ total face value exceeded $214 million. Fractionals and this $1 remain affordable in mid grades; the $5 and $20 replacements are the hard ones.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://art-hanoi.com/mpc/usa/mpc-series-681',
+        es: 'Art-Hanoi — MPC serie 681 (P-M75 a P-M82)',
+        en: 'Art-Hanoi — MPC Series 681 (P-M75 to P-M82)',
+        note: {
+          es: 'El 1 dólar es P-M79 / Schwan 915: piloto de la Fuerza Aérea al anverso y cuatro F-100 Super Sabre al reverso.',
+          en: 'The $1 is P-M79 / Schwan 915: Air Force pilot on the face and four F-100 Super Sabres on the back.',
+        },
+      },
+      {
+        href: 'https://www.worldbanknotescoins.com/2014/11/us-military-payment-certificate-one-dollar-mpc-series-681.html',
+        es: 'World Banknotes & Coins — 1 dólar MPC serie 681',
+        en: 'World Banknotes & Coins — Series 681 $1 MPC',
+        note: {
+          es: 'Cita 22.400.000 ejemplares y 214 millones de valor facial para la serie; piloto al anverso y Super Sabre al reverso.',
+          en: 'Cites 22,400,000 notes and $214 million face value for the series; pilot on the face and Super Sabres on the back.',
+        },
+      },
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-MIL/USAM0079.htm',
+        es: 'Bank Note Museum — P-M79, 1 dólar serie 681',
+        en: 'Bank Note Museum — P-M79, Series 681 $1',
+        note: {
+          es: 'Confirma M79: piloto al anverso y F-100 Super Sabre en formación al reverso.',
+          en: 'Confirms M79: Air Force pilot on the face and F-100 Super Sabres in formation on the back.',
         },
       },
     ],

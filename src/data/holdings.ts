@@ -68,6 +68,7 @@ export const additions: Holding[] = [
   { id: 'nl-1761-ducat-utrecht-4685927-012', kind: 'coin', country: 'NL' },
   { id: 'cn-2000-100-yuan-j04445744', kind: 'banknote', country: 'CN' },
   { id: 'us-mpc-641-10-j15149964', kind: 'banknote', country: 'US' },
+  { id: 'us-mpc-681-1-c10102847', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -80,6 +81,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'nl-1761-ducat-utrecht-km7-4' },
   { id: 'cn-2000-100-yuan-p902' },
   { id: 'us-mpc-641-10-m63' },
+  { id: 'us-mpc-681-1-m79' },
 ];
 
 export type CollectionStats = {

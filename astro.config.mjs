@@ -16,6 +16,7 @@ export default defineConfig({
     '/en/coleccion/estados-unidos': '/en/coleccion/united-states/',
     '/en/coleccion/estados-unidos/mpc-vietnam': '/en/coleccion/united-states/mpc-vietnam/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641': '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
+    '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681': '/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
     '/coleccion/ecuador/100-sucres-1993': '/coleccion/ecuador/',
     '/en/coleccion/ecuador/100-sucres-1993': '/en/coleccion/ecuador/',
   },
