@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import SkipLink from '../components/SkipLink.astro';
+import SiteNotice from '../components/SiteNotice.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_URL, otherLocalePath, type Locale } from '../lib/site';
@@ -48,7 +49,10 @@ const enUrl = new URL(enPath, SITE_URL).href;
   </head>
   <body class="m-0 min-h-full bg-bg font-serif text-[17px]/7 text-cream">
     <SkipLink locale={locale} />
-    <Header locale={locale} pathname={pathname} />
+    <div class="sticky top-0 z-[60]">
+      <SiteNotice locale={locale} />
+      <Header locale={locale} pathname={pathname} />
+    </div>
     <slot />
     <Footer locale={locale} />
   </body>
