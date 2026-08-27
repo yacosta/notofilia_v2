@@ -10,17 +10,17 @@ const t = copy[locale];
 ---
 
 <div
-  class="site-notice flex w-full items-center justify-center gap-2.5 bg-alert px-[var(--chrome-gutter)] py-3 text-center"
+  class="site-notice flex w-full flex-nowrap items-center justify-center gap-1.5 bg-alert px-2 py-1.5 text-center"
   role="region"
   aria-label={t.siteNoticeLabel}
 >
   <span
-    class="site-notice-icon inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white font-sans text-[13px] font-bold leading-none text-alert"
+    class="site-notice-icon inline-flex h-[1.125rem] w-[1.125rem] shrink-0 items-center justify-center rounded-full bg-white font-sans text-[12px] font-bold leading-none text-alert"
     aria-hidden="true"
   >
     !
   </span>
-  <p class="site-notice-text m-0 max-w-content text-pretty font-sans text-[15px]/5 text-alert-ink">
+  <p class="site-notice-text font-sans text-alert-ink">
     {t.siteNotice}
   </p>
 </div>
