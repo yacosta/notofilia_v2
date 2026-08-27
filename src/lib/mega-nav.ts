@@ -40,6 +40,22 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_PATH,
         flag: 'co',
+        children: [
+          {
+            id: 'emisiones-colombianas-extranjero',
+            es: 'Emisiones Colombianas en el Extranjero',
+            en: 'Colombian Issues Abroad',
+            children: [
+              {
+                id: 'emisiones-extranjero-guatemala',
+                es: 'Guatemala',
+                en: 'Guatemala',
+                href: GUATEMALA_PATH,
+                flag: 'gt',
+              },
+            ],
+          },
+        ],
       },
       {
         id: 'estados-unidos',
