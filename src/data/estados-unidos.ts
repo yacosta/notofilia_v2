@@ -1,9 +1,9 @@
 import type { CatalogSource, LocalizedText } from './catalog';
-import { SERIES_PATH } from './philippines-victory-66';
 
 export const USA_PATH = '/coleccion/estados-unidos/';
 export const USA_PATH_EN = '/coleccion/united-states/';
-export const USA_MPC_PATH = SERIES_PATH;
+export const USA_MPC_PATH = '/coleccion/estados-unidos/mpc-vietnam/';
+export const USA_MPC_PATH_EN = '/coleccion/united-states/mpc-vietnam/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -115,8 +115,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Esta vitrina reunirá el 100 dólares FRBN de Minneapolis de 1929, los 10 dólares de 1934 de varios distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) se documentan en la vitrina de Filipinas. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. This case will gather the 1929 Minneapolis $100 FRBN, the 1934 $10 notes of several districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Military Payment Certificates are documented in the Philippines case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Esta vitrina reunirá el 100 dólares FRBN de Minneapolis de 1929, los 10 dólares de 1934 de varios distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. This case will gather the 1929 Minneapolis $100 FRBN, the 1934 $10 notes of several districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -207,10 +207,10 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Ocho entradas, de izquierda a derecha por época: moneda colonial, billete obsoleto, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate y pop art. El certificado de pago militar abre la vitrina de Filipinas. Las fichas de cada pieza se publicarán a medida que se documenten.',
+      'Ocho entradas, de izquierda a derecha por época: moneda colonial, billete obsoleto, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate y pop art. El certificado de pago militar abre la vitrina de Vietnam. Las fichas de cada pieza se publicarán a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
-    viewPhilippines: 'Ver Filipinas',
-    philippinesLabel: 'Filipinas',
+    viewMpc: 'Ver los MPC de Vietnam',
+    mpcLabel: 'Vietnam',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
   },
@@ -230,10 +230,10 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Eight entries, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate, and pop art. The military payment certificate opens the Philippines case. Individual note pages will be published as they are documented.',
+      'Eight entries, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate, and pop art. The military payment certificate opens the Vietnam case. Individual note pages will be published as they are documented.',
     viewChapter: 'Read the chapter',
-    viewPhilippines: 'View the Philippines collection',
-    philippinesLabel: 'Philippines',
+    viewMpc: 'View the Vietnam MPCs',
+    mpcLabel: 'Vietnam',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
   },
@@ -249,7 +249,7 @@ export type UnitedStatesCatalogItem = {
 
 export const unitedStatesMpcCard = {
   id: 'us-mpc',
-  years: { es: '1946–1973', en: '1946–1973' },
+  years: { es: '1965–1973', en: '1965–1973' },
   title: {
     es: 'US Military Payment Certificate',
     en: 'US Military Payment Certificate',

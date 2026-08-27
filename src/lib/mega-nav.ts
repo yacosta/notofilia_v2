@@ -1,7 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
-import { USA_PATH } from '../data/estados-unidos';
+import { USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
@@ -32,6 +32,14 @@ export const megaNav: NavNode[] = [
         es: 'Estados Unidos',
         en: 'United States',
         href: USA_PATH,
+        children: [
+          {
+            id: 'mpc-vietnam',
+            es: 'MPC · Vietnam',
+            en: 'MPC · Vietnam',
+            href: USA_MPC_PATH,
+          },
+        ],
       },
       {
         id: 'filipinas',

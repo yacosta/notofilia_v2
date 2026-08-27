@@ -3,7 +3,7 @@ import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
-import { USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
+import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -101,6 +101,7 @@ function addLocalePair(
 /** Collection slugs that differ by language (Spanish filename vs English filename). */
 const localizedCollectionSlugs: Record<string, { es: string; en: string }> = {};
 addLocalePair(localizedCollectionSlugs, USA_PATH, USA_PATH_EN);
+addLocalePair(localizedCollectionSlugs, USA_MPC_PATH, USA_MPC_PATH_EN);
 addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 for (const coin of netherlandsCoins) {
   addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
@@ -417,6 +418,17 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: USA_MPC_PATH,
+    es: {
+      title: 'Estados Unidos · MPC de la guerra de Vietnam',
+      description: 'Vitrina de certificados de pago militar: series 641, 661, 681 y 692 usadas en Vietnam.',
+    },
+    en: {
+      title: 'United States · Vietnam War MPCs',
+      description: 'Military Payment Certificate case: Series 641, 661, 681, and 692 used in Vietnam.',
+    },
+  },
+  {
     href: PUERTO_RICO_PATH,
     es: {
       title: 'Puerto Rico · Emisiones coloniales y de transición',
@@ -486,6 +498,7 @@ export const footerExplore = [
   { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
   { href: POLIMERO_MUNDIAL_PATH, es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
+  { href: USA_MPC_PATH, es: 'MPC · Vietnam', en: 'MPC · Vietnam' },
 ] as const;
 
 export const footerResources = [
@@ -510,6 +523,7 @@ export const stubPages = [
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
+  { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC · Vietnam', en: 'MPC · Vietnam' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
@@ -537,6 +551,8 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...netherlandsCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_MPC_PATH.replace(/^\/|\/$/g, ''),
+  USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),

@@ -149,7 +149,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "C-Day", en: "Conversion Day" },
     definition: { es: "Día de conversión del programa MPC: las bases se cerraban sin aviso y las tropas canjeaban la serie vigente por la nueva. La serie saliente quedaba sin valor de la noche a la mañana, de modo que nadie —ni el mercado negro— pudiera acumularla.", en: "A Military Payment Certificate conversion day: bases closed without notice and troops exchanged the current series for the new one. The outgoing series became worthless overnight, so neither personnel nor the black market could stockpile it." },
-    seeAlso: ["desmonetizado"],
+    seeAlso: ["desmonetizado", "mpc"],
   },
   {
     slug: "friedberg",
@@ -470,6 +470,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Monedas antiguas", en: "Ancients" },
     definition: { es: "Clasificación general para las monedas históricas del mundo acuñadas desde aproximadamente el año 600 a. C. hasta el fin de la Antigüedad, hacia el 450 d. C.", en: "A general classification for historical world coins struck from approximately 600 B.C. through the fall of antiquity around 450 A.D." },
     seeAlso: [],
+  },
+  {
+    slug: "mpc",
+    id: "mpc",
+    category: "Emisión",
+    title: { es: "MPC (certificado de pago militar)", en: "MPC (Military Payment Certificate)" },
+    definition: { es: "Papel en dólares emitido por las fuerzas armadas de Estados Unidos entre 1946 y 1973 para pagar al personal en bases de ultramar. No era curso legal; un C-Day secreto invalidaba la serie vigente. En Vietnam circularon las series 641, 661, 681 y 692.", en: "Dollar-denominated paper issued by the U.S. armed forces from 1946 to 1973 to pay personnel on overseas bases. It was not legal tender; a secret C-Day voided the current series. In Vietnam the circulating series were 641, 661, 681, and 692." },
+    seeAlso: ["c-day", "desmonetizado"],
   },
   {
     slug: "notafilia",

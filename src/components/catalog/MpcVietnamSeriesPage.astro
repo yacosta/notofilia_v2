@@ -2,12 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
+  mpcVietnamChapters,
   seriesCopy,
   seriesPath,
   seriesSources,
-  unitedStatesCatalogItems,
-  unitedStatesChapters,
-} from '../../data/estados-unidos';
+  USA_PATH,
+} from '../../data/mpc-vietnam';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,26 +17,18 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-const catalogItems = unitedStatesCatalogItems();
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/united-states.jpg',
-        width: 2128,
-        height: 912,
-      }
-    : {
-        src: '/images/catalog/estados-unidos.jpg',
-        width: 2128,
-        height: 912,
-      };
+const hero = {
+  src: '/images/catalog/estados-unidos/hero-mpc-vietnam.jpg',
+  width: 1536,
+  height: 1024,
+};
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_28%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_18%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -79,6 +71,12 @@ const hero =
             </a>
           </li>
           <li aria-hidden="true">·</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(USA_PATH, locale)}>
+              {t.parentLink}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
         </ol>
       </nav>
@@ -87,49 +85,20 @@ const hero =
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
 
-      <section class="mt-16" aria-labelledby="holdings-heading">
-        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.holdingsTitle}
-        </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
-          aria-label={locale === 'en' ? 'Catalog entries lined up left to right by period' : 'Entradas del catálogo alineadas de izquierda a derecha por época'}
+      <p class="mt-6 mb-0 text-[17px]/7 text-muted">
+        {t.usLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_PATH, locale)}
         >
-          {
-            catalogItems.map((item) => (
-              <li class="min-w-0">
-                <a
-                  href={item.kind === 'collection' ? localizePath(item.href, locale) : item.href}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {item.years[locale]}
-                    </span>
-                  </div>
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {item.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {item.kind === 'collection'
-                      ? `${t.mpcLabel} · ${item.years[locale]}`
-                      : `${t.eraLabel} · ${item.years[locale]}`}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">
-                    {item.kind === 'collection' ? t.viewMpc : t.viewChapter} →
-                  </span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
-      </section>
+          {t.usLink}
+        </a>
+      </p>
 
       <div class="mt-16 space-y-12">
         {
-          unitedStatesChapters.map((chapter) => (
+          mpcVietnamChapters.map((chapter) => (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -153,10 +122,10 @@ const hero =
 
       <p class="mt-12">
         <a
-          href={localizePath('/', locale)}
+          href={localizePath(USA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {locale === 'en' ? 'Back to the United States collection' : 'Volver a Estados Unidos'}
         </a>
       </p>
     </article>
