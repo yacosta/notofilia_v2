@@ -170,6 +170,8 @@ export const lazarettosCopy = {
       'Catálogo de lazaretos colombianos: Caño de Loro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
     kicker: 'Numismática',
     title: 'Lazarettos',
+    heroAlt:
+      'Póster ilustrado vintage de Agua de Dios, Cundinamarca, Ciudad de la Esperanza: pueblo colonial isométrico, catedral, río Bogotá, puente, Los Chorros y sello de Colombia Correos',
     intro: [
       'Un lazareto no es una ceca. En Colombia fue la casa donde el Estado detenía a los enfermos de Hansen: Caño de Loro en Tierrabomba, Contratación a orillas del Suárez y Agua de Dios en el Alto Magdalena. El nombre viene de Lázaro. El Hospital de San Lázaro de Cartagena abrió en 1598; de allí salió el primer lazareto de la costa. En el siglo XX, para que el papel nacional no cruzara el cordón, Bogotá acuñó una moneda exclusiva: la coscoja.',
       'Esta vitrina reúne esa exonumia del aislamiento. No sustituye a las monedas de Santa Fe ni al papel de la banca libre: las acompaña. Las fichas de cada tipo se publicarán como en Filipinas y en Colombia-Numismática, a medida que se documenten.',
@@ -185,6 +187,8 @@ export const lazarettosCopy = {
       'Catalog of Colombian lazarettos: Caño de Loro, Contratación, Agua de Dios, and the coscoja, the exclusive coin of the sanitary cordon.',
     kicker: 'Numismatics',
     title: 'Lazarettos',
+    heroAlt:
+      'Vintage illustrated poster of Agua de Dios, Cundinamarca, City of Hope: isometric colonial town, cathedral, Bogotá River, bridge, Los Chorros, and a Colombia Correos stamp',
     intro: [
       'A lazaretto is not a mint. In Colombia it was the house where the State held those with Hansen’s disease: Caño de Loro on Tierrabomba, Contratación on the Suárez, and Agua de Dios in the Alto Magdalena. The name comes from Lazarus. Cartagena’s Hospital of San Lázaro opened in 1598; from it came the first lazaretto on the coast. In the twentieth century, so that national paper would not cross the cordon, Bogotá struck an exclusive coin: the coscoja.',
       'This case gathers that exonumia of isolation. It does not replace the coins of Santa Fe or free-banking paper: it stands beside them. Individual type pages will be published as they are documented, as in the Philippines case and Colombia-Numismatics.',

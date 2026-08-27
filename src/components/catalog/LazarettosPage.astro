@@ -17,10 +17,51 @@ interface Props {
 const { locale } = Astro.props;
 const t = lazarettosCopy[locale];
 const pathname = lazarettosPath(locale);
+const hero = {
+  src: '/images/catalog/lazarettos/hero-agua-de-dios.jpg',
+  width: 819,
+  height: 550,
+};
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="series-heading">
+      <img
+        class="absolute inset-0 h-full w-full object-cover object-[50%_42%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+        src={hero.src}
+        alt={t.heroAlt}
+        width={hero.width}
+        height={hero.height}
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div
+        class="absolute inset-0"
+        style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
+      >
+      </div>
+      <div
+        class="absolute inset-0"
+        style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
+      >
+      </div>
+      <div
+        class="relative z-[1] mx-auto flex min-h-[86vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(68vh,38rem)] md:min-h-[94vh] md:pb-16"
+      >
+        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
+          {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
+        </p>
+        <h1
+          id="series-heading"
+          class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]"
+        >
+          <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.kicker}</span>
+          <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.title}</span>
+        </h1>
+      </div>
+    </section>
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
@@ -43,12 +84,7 @@ const pathname = lazarettosPath(locale);
         </ol>
       </nav>
 
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
-      <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
-        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
-      </h1>
-
-      <div class="mt-10 w-full text-[17px]/7 text-cream">
+      <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
 
