@@ -10,6 +10,10 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
+import { footerLinksFromNav } from './footer-nav';
+
+export type { FooterLink } from './footer-nav';
+export { footerLinksFromNav } from './footer-nav';
 
 export type NavNode = {
   id: string;
@@ -143,3 +147,9 @@ export const primaryNav = megaNav.map(({ href, es, en }) => ({
   es,
   en,
 }));
+
+const [navNotafilia, navNumismatica, navRecursos] = megaNav;
+
+export const footerNotafilia = footerLinksFromNav(navNotafilia?.children);
+export const footerNumismatica = footerLinksFromNav(navNumismatica?.children);
+export const footerResources = footerLinksFromNav(navRecursos?.children);

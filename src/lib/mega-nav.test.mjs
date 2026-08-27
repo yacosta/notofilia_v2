@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
 describe('mega-nav columns', () => {
@@ -40,5 +41,44 @@ describe('mega-nav columns', () => {
     const { main, aside } = navColumns(nodes);
     assert.equal(aside.length, 0);
     assert.equal(main.length, nodes.length);
+  });
+});
+
+describe('footer links from mega-nav', () => {
+  it('includes nested submenu links in document order and skips headings without href', () => {
+    assert.deepEqual(
+      footerLinksFromNav([
+        { es: 'Colombia', en: 'Colombia', href: '/coleccion/colombia/' },
+        {
+          es: 'Estados Unidos',
+          en: 'United States',
+          href: '/coleccion/estados-unidos/',
+          children: [
+            { es: 'Filipinas', en: 'Philippines', href: '/coleccion/filipinas/' },
+            { es: 'MPC', en: 'MPC', href: '/coleccion/estados-unidos/mpc-vietnam/' },
+          ],
+        },
+        {
+          es: 'Billetes de polímero mundial',
+          en: 'World polymer banknotes',
+          href: '/coleccion/polimero-mundial/',
+          children: [{ es: 'China', en: 'China', href: '/coleccion/china/' }],
+        },
+      ]).map((item) => item.href),
+      [
+        '/coleccion/colombia/',
+        '/coleccion/estados-unidos/',
+        '/coleccion/filipinas/',
+        '/coleccion/estados-unidos/mpc-vietnam/',
+        '/coleccion/polimero-mundial/',
+        '/coleccion/china/',
+      ],
+    );
+    assert.deepEqual(
+      footerLinksFromNav([
+        { es: 'Recursos', en: 'Resources', children: [{ es: 'Guías', en: 'Guides', href: '/blog/' }] },
+      ]),
+      [{ href: '/blog/', es: 'Guías', en: 'Guides' }],
+    );
   });
 });
