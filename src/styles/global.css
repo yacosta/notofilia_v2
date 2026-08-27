@@ -305,7 +305,7 @@ body.mega-drawer-lock {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: 36rem;
+  max-width: 42rem;
 }
 
 .mega-tree--2,
@@ -347,6 +347,10 @@ body.mega-drawer-lock {
 .mega-tree-label--link:hover .mega-tree-label-text,
 .mega-tree-label--link:focus-visible .mega-tree-label-text {
   text-decoration: underline;
+}
+
+.mega-tree-label-text {
+  min-width: 0;
 }
 
 .mega-flag {

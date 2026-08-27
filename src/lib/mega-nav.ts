@@ -41,6 +41,13 @@ export const megaNav: NavNode[] = [
         flag: 'us',
         children: [
           {
+            id: 'filipinas',
+            es: 'Commonwealth de Filipinas (1935 - 1945)',
+            en: 'Commonwealth of the Philippines (1935 - 1945)',
+            href: SERIES_PATH,
+            flag: 'ph',
+          },
+          {
             id: 'mpc-vietnam',
             es: 'MPC · Vietnam',
             en: 'MPC · Vietnam',
@@ -48,13 +55,6 @@ export const megaNav: NavNode[] = [
             flag: 'vn',
           },
         ],
-      },
-      {
-        id: 'filipinas',
-        es: 'Filipinas',
-        en: 'Philippines',
-        href: SERIES_PATH,
-        flag: 'ph',
       },
       {
         id: 'puerto-rico',
