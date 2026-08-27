@@ -26,6 +26,20 @@ const related = term.seeAlso
 ---
 
 <Layout title={t.termTitle(term.title[locale])} description={term.definition[locale]} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTerm',
+        name: term.title[locale],
+        alternateName: term.title[otherLang],
+        description: term.definition[locale],
+        url: new URL(pathname, 'https://notofilia.com').href,
+        inLanguage: locale,
+      })}
+    />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <nav class="mb-5 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>

@@ -32,6 +32,30 @@ const hero =
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname} ogImage={hero.src}>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: locale === 'en' ? 'Home' : 'Inicio', item: new URL(localizePath('/', locale), 'https://notofilia.com').href },
+              { '@type': 'ListItem', position: 2, name: t.kicker, item: new URL(pathname, 'https://notofilia.com').href },
+            ],
+          },
+          {
+            '@type': 'CollectionPage',
+            name: t.title,
+            description: t.metaDescription,
+            url: new URL(pathname, 'https://notofilia.com').href,
+            inLanguage: locale,
+          },
+        ],
+      })}
+    />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="series-heading">
       <img
