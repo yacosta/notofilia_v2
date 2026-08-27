@@ -161,7 +161,7 @@ export const seriesCopy = {
       'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
       'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
       'En Vietnam el programa tuvo teatro propio. La serie 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí. La 661 trajo el 20 dólares. La 681 cubrió 1969–1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea, no en Vietnam.',
-      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J15149964J, y el 1 dólar de la serie 681, C10102847C; las demás se publicarán como en Filipinas, a medida que se fotografíen.',
+      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J15149964J; el 1 dólar de la serie 681, C10102847C; y el 20 dólares de la serie 692, E05725119E. Las demás se publicarán como en Filipinas, a medida que se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
     usLead: 'El resto del papel federal, colonial y obsoleto se documenta en la vitrina de Estados Unidos.',
@@ -184,7 +184,7 @@ export const seriesCopy = {
       'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
       'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
       'In Vietnam the program had its own theater. Series 641, 31 August 1965 to 21 October 1968, was the first used only there. Series 661 brought the $20. Series 681 covered 1969–1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and Korea, not in Vietnam.',
-      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J15149964J, and the Series 681 $1, serial C10102847C; further pieces will be published as they are photographed, as in the Philippines case.',
+      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J15149964J; the Series 681 $1, serial C10102847C; and the Series 692 $20, serial E05725119E. Further pieces will be published as they are photographed, as in the Philippines case.',
     ],
     parentLink: 'United States',
     usLead: 'The rest of the federal, colonial, and obsolete paper is documented in the United States case.',
@@ -200,7 +200,7 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_MPC_PATH_EN}` : USA_MPC_PATH;
 }
 
-export type MpcVietnamNoteId = '10-dolares-serie-641' | '1-dolar-serie-681';
+export type MpcVietnamNoteId = '10-dolares-serie-641' | '1-dolar-serie-681' | '20-dolares-serie-692';
 
 export type MpcVietnamNote = {
   id: MpcVietnamNoteId;
@@ -388,6 +388,92 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
         note: {
           es: 'Confirma M79: piloto al anverso y F-100 Super Sabre en formación al reverso.',
           en: 'Confirms M79: Air Force pilot on the face and F-100 Super Sabres in formation on the back.',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-dolares-serie-692',
+    chapterId: 'serie-692',
+    path: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
+    pathEn: '/coleccion/united-states/mpc-vietnam/20-dollars-series-692/',
+    pick: 'P#M98 · Schwan 938',
+    serial: 'E05725119E',
+    signatures: {
+      es: 'Sin firmas (emisión militar; el texto de uso sustituye al firmante)',
+      en: 'No signatures (military issue; the use legend stands in place of a signer)',
+    },
+    printed: {
+      es: 'Se citan 6.400.000 ejemplares del 20 dólares de la serie 692',
+      en: '6,400,000 notes are cited for the Series 692 $20',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/mpc-692-20-composite.jpg',
+      front: '/images/catalog/estados-unidos/mpc-692-20-front.jpg',
+      back: '/images/catalog/estados-unidos/mpc-692-20-back.jpg',
+    },
+    title: {
+      es: '20 dólares · Serie 692',
+      en: '$20 · Series 692',
+    },
+    kicker: {
+      es: 'Estados Unidos · MPC · Vietnam',
+      en: 'United States · MPC · Vietnam',
+    },
+    lead: {
+      es: 'Anverso púrpura y naranja con el retrato del jefe Ouray; reverso con un águila de alas abiertas. Posición 16. Serie E05725119E.',
+      en: 'Purple and orange face with the portrait of Chief Ouray; back with a spread-winged eagle. Position 16. Serial E05725119E.',
+    },
+    description: {
+      es: 'El 20 dólares de la serie 692 (Pick M98, Schwan 938) es la denominación alta de la última serie del programa, emitida el 7 de octubre de 1970 y retirada el 15 de marzo de 1973. El anverso, en púrpura sobre guilloché naranja, lleva al centro el retrato del jefe uta Ouray —grabado de F. H. Noyes, hacia 1880— y, a la izquierda, un 20 hueco en naranja tras el texto de uso. «SERIES 692» aparece a la derecha; el 16 es el número de posición en el pliego. El reverso, en violeta, muestra un águila con las alas abiertas, 20 y TWENTY a ambos lados. El serial E05725119E cae en la segunda impresión (E04800001E–E06400000E). Esta pieza de la colección, sin encapsular, no es un reemplazo: el bloque E abre y cierra el número.',
+      en: 'The Series 692 $20 (Pick M98, Schwan 938) is the high denomination of the last series of the program, issued 7 October 1970 and withdrawn 15 March 1973. The purple face on orange guilloché carries a central portrait of Ute chief Ouray — an F. H. Noyes engraving, circa 1880 — and, at left, a hollow orange 20 behind the use legend. “SERIES 692” sits at the right; 16 is the sheet position number. The violet back shows a spread-winged eagle, with 20 and TWENTY at both sides. Serial E05725119E falls in the second printing (E04800001E–E06400000E). This collection piece, unslabbed, is not a replacement: the E block opens and closes the number.',
+    },
+    frontCaption: {
+      es: 'Anverso del 20 dólares, serie 692, serial E05725119E: retrato del jefe Ouray y 20 en naranja.',
+      en: 'Face of the Series 692 $20, serial E05725119E: portrait of Chief Ouray and orange 20.',
+    },
+    backCaption: {
+      es: 'Reverso del 20 dólares, serie 692: águila de alas abiertas y 20 DOLLARS.',
+      en: 'Back of the Series 692 $20: spread-winged eagle and 20 DOLLARS.',
+    },
+    scarcity: {
+      es: 'La 692 fue la última serie y, para la ANA, una de las de tema más estadounidense: indígenas, bisontes, águilas. Se citan 6.400.000 ejemplares de este 20 dólares; el valor facial total de la serie superó los 214 millones. Los 10 y 20 dólares son los más buscados de la emisión; el reemplazo del 10 dólares es la clave si se dejan a un lado las variedades de impresión.',
+      en: 'Series 692 was the last issue and, for the ANA, among the most American in theme: Native portraits, bison, eagles. 6,400,000 notes are cited for this $20; the series’ total face value exceeded $214 million. The $10 and $20 are the most sought of the issue; the $10 replacement is the key if printing-run varieties are set aside.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.worldbanknotescoins.com/2014/11/us-military-payment-certificate-20-dollars-mpc-series-692.html',
+        es: 'World Banknotes & Coins — 20 dólares MPC serie 692',
+        en: 'World Banknotes & Coins — Series 692 $20 MPC',
+        note: {
+          es: 'Cita 6.400.000 ejemplares; Ouray al anverso; emisión del 7 de octubre de 1970 al 15 de marzo de 1973.',
+          en: 'Cites 6,400,000 notes; Ouray on the face; issued 7 October 1970 to 15 March 1973.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyforum.com/post/original-bep-engravings-used-on-mpc-9449738',
+        es: 'Paper Money Forum — grabados del BEP en los MPC',
+        en: 'Paper Money Forum — BEP engravings used on MPCs',
+        note: {
+          es: 'Identifica el retrato del 20 dólares de 692 como el jefe Ouray, grabado de F. H. Noyes hacia 1880 (tarjeta FM-13).',
+          en: 'Identifies the Series 692 $20 portrait as Chief Ouray, engraved by F. H. Noyes circa 1880 (card FM-13).',
+        },
+      },
+      {
+        href: 'https://art-hanoi.com/mpc/usa/mpc-series-692',
+        es: 'Art-Hanoi — MPC serie 692 (P-M83 a P-M89; Schwan 931–937)',
+        en: 'Art-Hanoi — MPC Series 692 (P-M83 to P-M89; Schwan 931–937)',
+        note: {
+          es: 'Lista los valores de 5 centavos a 10 dólares. El 20 dólares es Schwan 938 (PMG S938); el Bank Note Museum lo numera M98.',
+          en: 'Lists the 5-cent through $10 values. The $20 is Schwan 938 (PMG S938); the Bank Note Museum numbers it M98.',
         },
       },
     ],
