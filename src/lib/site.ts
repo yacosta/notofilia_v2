@@ -1,5 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
+import { ECUADOR_PATH } from '../data/ecuador';
+import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
@@ -328,9 +330,9 @@ export const collections = [
     en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues.' },
   },
   {
-    href: '/coleccion/ecuador/',
-    es: { title: 'Ecuador', description: 'Sucres documentados de la colección virtual.' },
-    en: { title: 'Ecuador', description: 'Documented sucres from the virtual collection.' },
+    href: ECUADOR_PATH,
+    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.' },
+    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
   },
   {
     href: POLIMERO_MUNDIAL_PATH,
@@ -451,6 +453,17 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: ECUADOR_PATH,
+    es: {
+      title: 'Ecuador · Del sucre a la dolarización',
+      description: 'Sexta vitrina: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización.',
+    },
+    en: {
+      title: 'Ecuador · From the sucre to dollarization',
+      description: 'Sixth catalog case: the 1884 sucre, private banks, the 1927 Central Bank, and dollarization.',
+    },
+  },
+  {
     href: NETHERLANDS_COINAGE_PATH,
     es: {
       title: 'Países Bajos · Historia de la acuñación',
@@ -488,10 +501,12 @@ export const news: NewsItem[] = newsArticles.map((item) => ({
 }));
 
 export const footerExplore = [
+  { href: NOTAFILIA_PATH, es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
   { href: SERIES_PATH, es: 'Filipinas', en: 'Philippines' },
   { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
+  { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
@@ -519,6 +534,7 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
+  { path: 'coleccion/notafilia', es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
@@ -543,6 +559,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
+  NOTAFILIA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
@@ -556,6 +573,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
+  ECUADOR_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   'blog',
