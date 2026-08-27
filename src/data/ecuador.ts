@@ -57,8 +57,8 @@ export const ecuadorChapters: EcuadorChapter[] = [
       en: 'The Kemmerer Mission, the Organic Law of 1927, and seventy years of centralized sucre notes.',
     },
     body: {
-      es: 'Edwin W. Kemmerer —el mismo que había asesorado a Colombia en 1923— desembarcó en Salinas el 17 de octubre de 1926. El 11 de febrero de 1927 entregó el proyecto de Ley Orgánica del Banco Central; Isidro Ayora la firmó el 4 de marzo (Decreto Supremo 253). La escritura de constitución es del 9 de julio; el banco abrió el 10 de agosto de 1927, fecha que el propio BCE toma como fundación. La Ley de Monedas del 19 de marzo fijó el patrón oro a cinco sucres por dólar. Desde entonces el retrato de próceres —Sucre, Bolívar, Rocafuerte, Alfaro— ocupó el anverso de las series de circulación, grabadas sobre todo por Thomas De La Rue. Esta vitrina documenta, de esa época tardía, un 100 sucres de 1993 con número de serie 00000003.',
-      en: 'Edwin W. Kemmerer — the same adviser Colombia had hired in 1923 — landed at Salinas on 17 October 1926. On 11 February 1927 he delivered the draft Organic Law of the Central Bank; Isidro Ayora signed it on 4 March (Supreme Decree 253). The deed of incorporation is dated 9 July; the bank opened on 10 August 1927, the foundation date the BCE itself uses. The Monetary Law of 19 March set the gold standard at five sucres to the dollar. From then on portraits of national figures — Sucre, Bolívar, Rocafuerte, Alfaro — occupied the face of circulating series, engraved chiefly by Thomas De La Rue. This case records, from that late period, a 1993 100-sucre note with serial 00000003.',
+      es: 'Edwin W. Kemmerer —el mismo que había asesorado a Colombia en 1923— desembarcó en Salinas el 17 de octubre de 1926. El 11 de febrero de 1927 entregó el proyecto de Ley Orgánica del Banco Central; Isidro Ayora la firmó el 4 de marzo (Decreto Supremo 253). La escritura de constitución es del 9 de julio; el banco abrió el 10 de agosto de 1927, fecha que el propio BCE toma como fundación. La Ley de Monedas del 19 de marzo fijó el patrón oro a cinco sucres por dólar. Desde entonces el retrato de próceres —Sucre, Bolívar, Rocafuerte, Alfaro— ocupó el anverso de las series de circulación, grabadas sobre todo por Thomas De La Rue. Las fichas de esa época se publicarán a medida que se documenten las piezas.',
+      en: 'Edwin W. Kemmerer — the same adviser Colombia had hired in 1923 — landed at Salinas on 17 October 1926. On 11 February 1927 he delivered the draft Organic Law of the Central Bank; Isidro Ayora signed it on 4 March (Supreme Decree 253). The deed of incorporation is dated 9 July; the bank opened on 10 August 1927, the foundation date the BCE itself uses. The Monetary Law of 19 March set the gold standard at five sucres to the dollar. From then on portraits of national figures — Sucre, Bolívar, Rocafuerte, Alfaro — occupied the face of circulating series, engraved chiefly by Thomas De La Rue. Note pages from that period will be published as pieces are documented.',
     },
   },
   {
@@ -112,22 +112,13 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bank Note Museum — Ecuador (bancos privados y Banco Central)',
     en: 'Bank Note Museum — Ecuador (private banks and the Central Bank)',
   },
-  {
-    href: 'https://en.numista.com/209287',
-    es: 'Numista — 100 sucres (P#123Ab, 20 de agosto de 1993)',
-    en: 'Numista — 100 sucres (P#123Ab, 20 August 1993)',
-    note: {
-      es: 'Retrato de Simón Bolívar; seriales azules; serie WF de 1993.',
-      en: 'Portrait of Simón Bolívar; blue serials; 1993 series WF.',
-    },
-  },
 ];
 
 export const seriesCopy = {
   es: {
     metaTitle: 'Ecuador · Del sucre a la dolarización | Notofilia',
     metaDescription:
-      'Investigación del papel moneda ecuatoriano: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización de 2000. Incluye un 100 sucres de 1993 con serie 00000003.',
+      'Investigación del papel moneda ecuatoriano: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización de 2000. Las fichas se publicarán a medida que se documenten.',
     kicker: 'Ecuador · Notafilia',
     title: 'Del sucre a la dolarización',
     heroAlt:
@@ -135,23 +126,20 @@ export const seriesCopy = {
     intro: [
       'El papel moneda en Ecuador nació de la banca privada, no de un instituto emisor. El 22 de marzo de 1884 una ley monetaria sustituyó el peso por el sucre, en honor de Antonio José de Sucre. Durante más de sesenta años las casas de Guayaquil y Quito —el Banco del Ecuador (1868), el Comercial y Agrícola, el de Quito— pagaron el comercio con planchas grabadas en Nueva York y Londres, a cambio de una convertibilidad que las crisis de 1914 y de los años veinte pusieron en duda.',
       'La Revolución Juliana de 1925 y la Misión Kemmerer de 1926–1927 cerraron ese capítulo. Isidro Ayora firmó la Ley Orgánica del Banco Central el 4 de marzo de 1927; el banco abrió el 10 de agosto. El patrón oro quedó en cinco sucres por dólar. Desde entonces el retrato de próceres ocupó el anverso de las series de Thomas De La Rue: Sucre, Bolívar, Rocafuerte, Alfaro.',
-      'El 9 de enero de 2000, tras la crisis bancaria de 1999, el dólar sustituyó al sucre a 25.000 por 1. El canje de billetes terminó en junio de 2001. Esta vitrina investiga esa trayectoria y documenta, de la última década del sucre, un 100 sucres del 20 de agosto de 1993 con el número de serie 00000003.',
+      'El 9 de enero de 2000, tras la crisis bancaria de 1999, el dólar sustituyó al sucre a 25.000 por 1. El canje de billetes terminó en junio de 2001. Esta vitrina investiga esa trayectoria. Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Por ahora, un 100 sucres de 1993 (Pick 123Ab) con numeración especialmente baja. Las demás fichas se publicarán como en Filipinas, a medida que se documenten.',
-    viewNote: 'Ver la ficha',
+      'Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
-    pickLabel: 'Pick',
-    serialLabel: 'Serie',
     parentLink: 'Colección Virtual Notafilia',
   },
   en: {
     metaTitle: 'Ecuador · From the sucre to dollarization | Notofilia',
     metaDescription:
-      'An investigation of Ecuadorian paper money: the 1884 sucre, private banks of issue, the 1927 Central Bank, and dollarization in 2000. Includes a 1993 100-sucre note with serial 00000003.',
+      'An investigation of Ecuadorian paper money: the 1884 sucre, private banks of issue, the 1927 Central Bank, and dollarization in 2000. Individual note pages will be published as they are documented.',
     kicker: 'Ecuador · Notaphily',
     title: 'From the sucre to dollarization',
     heroAlt:
@@ -159,167 +147,17 @@ export const seriesCopy = {
     intro: [
       'Paper money in Ecuador was born of private banking, not of a state issuer. On 22 March 1884 a monetary law replaced the peso with the sucre, named for Antonio José de Sucre. For more than sixty years houses in Guayaquil and Quito — the Banco del Ecuador (1868), the Comercial y Agrícola, the Banco de Quito — paid for trade with plates engraved in New York and London, against a convertibility that the crises of 1914 and the 1920s put in doubt.',
       'The July Revolution of 1925 and the Kemmerer Mission of 1926–1927 closed that chapter. Isidro Ayora signed the Organic Law of the Central Bank on 4 March 1927; the bank opened on 10 August. The gold standard was set at five sucres to the dollar. From then on portraits of national figures occupied the face of Thomas De La Rue series: Sucre, Bolívar, Rocafuerte, Alfaro.',
-      'On 9 January 2000, after the 1999 banking crisis, the dollar replaced the sucre at 25,000 to 1. Note exchange ended in June 2001. This case investigates that trajectory and records, from the sucre’s last decade, a 100-sucre note of 20 August 1993 with serial number 00000003.',
+      'On 9 January 2000, after the 1999 banking crisis, the dollar replaced the sucre at 25,000 to 1. Note exchange ended in June 2001. This case investigates that trajectory. Individual note pages will be published as they are documented, as in the Philippines case.',
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'For now, a 1993 100-sucre note (Pick 123Ab) with an especially low serial. Further note pages will be published as they are documented, as in the Philippines case.',
-    viewNote: 'Open the note page',
+      'Individual note pages will be published as they are documented, as in the Philippines case.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
-    pickLabel: 'Pick',
-    serialLabel: 'Serial',
     parentLink: 'Virtual Notaphily Collection',
   },
 } as const;
-
-export type EcuadorNoteId = '100-sucres-1993';
-
-export type EcuadorNote = {
-  id: EcuadorNoteId;
-  path: string;
-  pick: string;
-  serial: string;
-  signatures: LocalizedText;
-  printed: LocalizedText;
-  images: {
-    composite: string;
-    width: number;
-    height: number;
-  };
-  title: LocalizedText;
-  kicker: LocalizedText;
-  lead: LocalizedText;
-  description: LocalizedText;
-  frontCaption: LocalizedText;
-  backCaption: LocalizedText;
-  scarcity: LocalizedText;
-  population: LocalizedText;
-  grade: LocalizedText;
-  sources: CatalogSource[];
-};
-
-export const ecuadorNotes: EcuadorNote[] = [
-  {
-    id: '100-sucres-1993',
-    path: '/coleccion/ecuador/100-sucres-1993/',
-    pick: 'P#123Ab',
-    serial: 'WF 00000003',
-    signatures: {
-      es: 'Presidente del Directorio y Gerente General del Banco Central (emisión del 20 de agosto de 1993)',
-      en: 'Chair of the Board and General Manager of the Central Bank (issue of 20 August 1993)',
-    },
-    printed: {
-      es: 'Thomas De La Rue & Company, sin impronta; 156 × 67 mm; seriales azules de la serie WF',
-      en: 'Thomas De La Rue & Company, without imprint; 156 × 67 mm; blue serials of series WF',
-    },
-    images: {
-      composite: '/images/catalog/ecuador/100-sucres-1993-composite.jpg',
-      width: 564,
-      height: 482,
-    },
-    title: {
-      es: '100 sucres · 20 de agosto de 1993',
-      en: '100 sucres · 20 August 1993',
-    },
-    kicker: {
-      es: 'Ecuador · Banco Central · Numeración especial',
-      en: 'Ecuador · Central Bank · Fancy serial',
-    },
-    lead: {
-      es: 'Cien sucres de la última década de la moneda nacional: Simón Bolívar al anverso, el escudo al reverso, y el número de serie 00000003.',
-      en: 'One hundred sucres from the national currency’s last decade: Simón Bolívar on the face, the arms on the back, and serial number 00000003.',
-    },
-    description: {
-      es: 'El 100 sucres Pick 123Ab, fechado en Quito el 20 de agosto de 1993, pertenece a la emisión 1984–1993 del Banco Central sin nombre de impresor ni la leyenda «Sociedad Anónima». El anverso, en gris verdoso, lleva el retrato de Simón Bolívar de uniforme y la leyenda CIEN SUCRES; el reverso, en violeta, reproduce el escudo nacional —el cóndor, el Chimborazo y el vapor Guayas—. Thomas De La Rue grabó el tipo. Esta pieza de la colección, serie WF, lleva el serial azul 00000003: uno de los primeros números de la tirada, el mismo que ilustra la guía de Notofilia sobre numeración especial.',
-      en: 'The 100-sucre Pick 123Ab, dated at Quito 20 August 1993, belongs to the Central Bank’s 1984–1993 issue without a printer’s name or the legend “Sociedad Anónima.” The grey-green face shows Simón Bolívar in uniform and the legend CIEN SUCRES; the violet back reproduces the national arms — the condor, Chimborazo, and the steamer Guayas. Thomas De La Rue engraved the type. This collection piece, series WF, carries the blue serial 00000003: one of the first numbers of the run, the same note that illustrates Notofilia’s guide to fancy serials.',
-    },
-    frontCaption: {
-      es: 'Anverso del 100 sucres, serie WF, serial 00000003: Simón Bolívar, Quito, 20 de agosto de 1993.',
-      en: 'Face of the 100-sucre note, series WF, serial 00000003: Simón Bolívar, Quito, 20 August 1993.',
-    },
-    backCaption: {
-      es: 'Reverso del 100 sucres: escudo del Ecuador, CIEN SUCRES y denominación 100.',
-      en: 'Back of the 100-sucre note: arms of Ecuador, CIEN SUCRES, and denomination 100.',
-    },
-    scarcity: {
-      es: 'El tipo P#123Ab es común en estado sin circular; Numista lo registra con seriales azules para el 20 de agosto de 1993. Lo excepcional de esta pieza no es el diseño, sino el serial 00000003: una serie baja, de las primeras de la plancha WF, buscada por coleccionistas de numeración especial.',
-      en: 'Type P#123Ab is common in uncirculated grade; Numista records blue serials for 20 August 1993. What is exceptional here is not the design but serial 00000003: a low number, among the first of plate WF, sought by fancy-serial collectors.',
-    },
-    population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, en funda, sin encapsular.',
-      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, sleeved, unslabbed condition.',
-    },
-    grade: {
-      es: 'Sin encapsular, en funda (colección privada)',
-      en: 'Unslabbed, in a sleeve (private collection)',
-    },
-    sources: [
-      {
-        href: 'https://en.numista.com/209287',
-        es: 'Numista — 100 sucres (P#123Ab)',
-        en: 'Numista — 100 sucres (P#123Ab)',
-      },
-      {
-        href: 'https://www.cosio.uk/ecuador-p-123ab-100-sucres-1993-unc/',
-        es: 'Cosio — Ecuador P-123Ab / 100 sucres 1993',
-        en: 'Cosio — Ecuador P-123Ab / 100 sucres 1993',
-        note: {
-          es: 'Impresor TDLR; 156 × 68 mm; anverso Bolívar, reverso escudo.',
-          en: 'Printer TDLR; 156 × 68 mm; Bolívar on the face, arms on the back.',
-        },
-      },
-    ],
-  },
-];
-
-export const notePageCopy = {
-  es: {
-    collectionLink: 'Ecuador',
-    parentLink: 'Colección Virtual Notafilia',
-    frontHeading: 'Anverso y reverso',
-    aboutHeading: 'La pieza',
-    scarcityHeading: 'Rareza e impresión',
-    populationHeading: 'Población',
-    factsHeading: 'Datos de catálogo',
-    sourcesHeading: 'Fuentes',
-    printedLabel: 'Impresión',
-    signaturesLabel: 'Firmas',
-    serialLabel: 'Número de serie',
-    pickLabel: 'Referencia Pick',
-    gradeLabel: 'Conservación',
-    expandImage: 'Ampliar imagen',
-    closeLightbox: 'Cerrar',
-  },
-  en: {
-    collectionLink: 'Ecuador',
-    parentLink: 'Virtual Notaphily Collection',
-    frontHeading: 'Face and back',
-    aboutHeading: 'The note',
-    scarcityHeading: 'Scarcity and printage',
-    populationHeading: 'Population',
-    factsHeading: 'Catalog facts',
-    sourcesHeading: 'Sources',
-    printedLabel: 'Printage',
-    signaturesLabel: 'Signatures',
-    serialLabel: 'Serial number',
-    pickLabel: 'Pick reference',
-    gradeLabel: 'Condition',
-    expandImage: 'Enlarge image',
-    closeLightbox: 'Close',
-  },
-} as const;
-
-export function noteById(id: string): EcuadorNote | undefined {
-  return ecuadorNotes.find((note) => note.id === id);
-}
-
-export function notePath(note: EcuadorNote, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${note.path}` : note.path;
-}
-
-export const ecuadorNoteSlugs = ecuadorNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${ECUADOR_PATH}` : ECUADOR_PATH;
@@ -329,4 +167,4 @@ export function chapterHref(id: EcuadorChapterId): string {
   return `#${id}`;
 }
 
-export const dedicatedCatalogPaths = new Set<string>(['coleccion/ecuador', ...ecuadorNoteSlugs]);
+export const dedicatedCatalogPaths = new Set<string>(['coleccion/ecuador']);

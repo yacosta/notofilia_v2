@@ -1,6 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
-import { ECUADOR_PATH, ecuadorNoteSlugs } from '../data/ecuador';
+import { ECUADOR_PATH } from '../data/ecuador';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
@@ -45,7 +45,6 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
-  for (const slug of ecuadorNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -331,8 +330,8 @@ export const collections = [
   },
   {
     href: ECUADOR_PATH,
-    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización: sucres documentados de la colección virtual.' },
-    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization: documented sucres from the virtual collection.' },
+    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.' },
+    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
   },
   {
     href: POLIMERO_MUNDIAL_PATH,
@@ -445,11 +444,11 @@ export const milestones: MilestoneItem[] = [
     href: ECUADOR_PATH,
     es: {
       title: 'Ecuador · Del sucre a la dolarización',
-      description: 'Sexta vitrina: bancos privados, Banco Central de 1927 y un 100 sucres de 1993 con serie 00000003.',
+      description: 'Sexta vitrina: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización.',
     },
     en: {
       title: 'Ecuador · From the sucre to dollarization',
-      description: 'Sixth catalog case: private banks, the 1927 Central Bank, and a 1993 100-sucre note with serial 00000003.',
+      description: 'Sixth catalog case: the 1884 sucre, private banks, the 1927 Central Bank, and dollarization.',
     },
   },
   {
@@ -559,7 +558,6 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
   ECUADOR_PATH.replace(/^\/|\/$/g, ''),
-  ...ecuadorNoteSlugs,
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   'blog',
