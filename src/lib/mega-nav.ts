@@ -1,5 +1,6 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
@@ -60,6 +61,12 @@ export const megaNav: NavNode[] = [
     en: 'Virtual Collection - Numismatics',
     href: NUMISMATICS_PATH,
     children: [
+      {
+        id: 'colombia-monedas',
+        es: 'Colombia',
+        en: 'Colombia',
+        href: COLOMBIA_COINAGE_PATH,
+      },
       {
         id: 'nl-monedas',
         es: 'Países Bajos',
