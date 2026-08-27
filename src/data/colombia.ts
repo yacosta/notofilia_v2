@@ -41,8 +41,8 @@ export const colombiaChapters: ColombiaChapter[] = [
       en: 'Regional private banks, metallic convertibility, and plates engraved in New York and London.',
     },
     body: {
-      es: 'Hasta mediados del siglo XIX el comercio siguió en oro, plata y moneda extranjera. El billete moderno llegó con la banca libre: el Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Le siguieron, entre otros, los bancos de Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte y el Cauca. La Enciclopedia Banrepcultural señala que los bancos más importantes encargaron la impresión a Inglaterra o Estados Unidos; el sistema exigía convertibilidad en metálico y competencia entre emisores. En esta colección caben pruebas, especímenes y emisiones regionales de esa década.',
-      en: 'Until the mid-nineteenth century, trade still ran on gold, silver, and foreign coin. Modern notes arrived with free banking: the Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Banks of Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, and the Cauca followed. Banrepcultural’s encyclopedia notes that the leading banks ordered printing in England or the United States; the system required metallic convertibility and competing issuers. Proofs, specimens, and regional issues from that decade belong in this collection.',
+      es: 'Hasta mediados del siglo XIX el comercio siguió en oro, plata y moneda extranjera. El billete moderno llegó con la banca libre: el Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Le siguieron, entre otros, los bancos de Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca y Rio Hacha, en la Guajira. La Enciclopedia Banrepcultural señala que los bancos más importantes encargaron la impresión a Inglaterra o Estados Unidos; el sistema exigía convertibilidad en metálico y competencia entre emisores. En esta colección caben pruebas, especímenes y emisiones regionales de esa década.',
+      en: 'Until the mid-nineteenth century, trade still ran on gold, silver, and foreign coin. Modern notes arrived with free banking: the Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Banks of Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, and Rio Hacha on the Guajira followed. Banrepcultural’s encyclopedia notes that the leading banks ordered printing in England or the United States; the system required metallic convertibility and competing issuers. Proofs, specimens, and regional issues from that decade belong in this collection.',
     },
   },
   {
@@ -143,11 +143,19 @@ export const seriesCopy = {
       'Mapa vintage en relieve 3D de Colombia sobre pergamino, con el Castillo San Felipe, Monserrate, el Eje Cafetero, el Amazonas, un pasaporte y el título Colombia',
     intro: [
       'El papel moneda en Colombia nació de la urgencia de la Independencia, no de un banco central. En 1813 el Estado de Cartagena emitió billetes de un real en papel común, firmados a mano. La Enciclopedia Banrepcultural identifica el 1 real de Gutiérrez de Piñeres; Cundinamarca siguió al año siguiente con vales de tesorería. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
-      'El billete moderno llegó en la década de 1870, con la banca libre. El Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Decenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca— encargaron planchas a Nueva York y Londres, con convertibilidad en metálico. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina.',
+      'El billete moderno llegó en la década de 1870, con la banca libre. El Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Decenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, Rio Hacha— encargaron planchas a Nueva York y Londres, con convertibilidad en metálico. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La primera ficha documentada es el par de pruebas ABNC del 5 pesos de Rio Hacha, 1883.',
       'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional. Hacia 1886–1887 el gobierno impuso el curso forzoso y apagó la emisión privada. Astrid Romero sitúa la liquidación del instituto en 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel y una inflación devastadora. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro.',
       'La Ley 25 de 1923, fruto de la Misión Kemmerer contratada por Pedro Nel Ospina, creó el Banco de la República con el monopolio de emitir la moneda legal. Los primeros billetes oficiales los grabó la American Bank Note Company. La convertibilidad en oro se perdió en 1931. Desde entonces el peso es emisión centralizada: series de circulación, especímenes y —en esta colección— errores de corte.',
     ],
+    holdingsTitle: 'El catálogo',
+    holdingsIntro:
+      'Las fichas se publican a medida que se documentan las piezas. Por ahora abre la banca libre con las pruebas ABNC del 5 pesos del Banco de Rio Hacha (1883).',
+    viewChapter: 'Leer el capítulo',
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
+    eraLabel: 'Época',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -161,11 +169,19 @@ export const seriesCopy = {
       'Vintage 3D relief map of Colombia on parchment, with Castillo San Felipe, Monserrate, the Coffee Axis, the Amazon, a passport, and the title Colombia',
     intro: [
       'Paper money in Colombia was born from the urgency of independence, not from a central bank. In 1813 the State of Cartagena issued 1-real notes on ordinary paper, signed by hand. Banrepcultural’s encyclopedia identifies the Gutiérrez de Piñeres 1-real; Cundinamarca followed the next year with treasury vales. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
-      'The modern note arrived in the 1870s with free banking. The Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Dozens of regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca — ordered plates in New York and London, with metallic convertibility. Those issues, with proofs and specimens, are the historical core of this case.',
+      'The modern note arrived in the 1870s with free banking. The Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Dozens of regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, Rio Hacha — ordered plates in New York and London, with metallic convertibility. Those issues, with proofs and specimens, are the historical core of this case. The first documented note page is the pair of ABNC proofs of the Rio Hacha 5 pesos, 1883.',
       'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born. Around 1886–1887 the government imposed forced legal tender and ended private issues. Astrid Romero places the institute’s liquidation in 1896. The Thousand Days’ War (1899–1902) set off another surge of paper and a devastating inflation. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso.',
       'Law 25 of 1923, the fruit of the Kemmerer Mission hired by Pedro Nel Ospina, created the Banco de la República with the monopoly of legal-tender issue. The first official notes were engraved by the American Bank Note Company. Gold convertibility ended in 1931. Since then the peso has been a centralized issue: circulation series, specimens, and — in this collection — cutting errors.',
     ],
+    holdingsTitle: 'The catalog',
+    holdingsIntro:
+      'Note pages are published as pieces are documented. For now free banking opens with the ABNC proofs of the Banco de Rio Hacha 5 pesos (1883).',
+    viewChapter: 'Read the chapter',
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
     sourcesTitle: 'Sources',
+    eraLabel: 'Period',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },
@@ -173,4 +189,26 @@ export const seriesCopy = {
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/colombia/' : COLOMBIA_PATH;
+}
+
+export function chapterHref(id: ColombiaChapterId): string {
+  return `#${id}`;
+}
+
+export type ColombiaCatalogItem = {
+  id: string;
+  years: LocalizedText;
+  title: LocalizedText;
+  href: string;
+  kind: 'chapter';
+};
+
+export function colombiaCatalogItems(): ColombiaCatalogItem[] {
+  return colombiaChapters.map((chapter) => ({
+    id: chapter.id,
+    years: chapter.years,
+    title: chapter.title,
+    href: chapterHref(chapter.id),
+    kind: 'chapter' as const,
+  }));
 }

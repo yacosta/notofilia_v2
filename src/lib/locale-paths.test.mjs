@@ -21,6 +21,10 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
+    assert.equal(
+      localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
+      '/en/collection/colombia/5-pesos-rio-hacha-1883/',
+    );
   });
 
   it('keeps hreflang pairs reciprocal', () => {

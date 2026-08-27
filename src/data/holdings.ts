@@ -71,6 +71,8 @@ export const additions: Holding[] = [
   { id: 'us-mpc-681-1-c10102847', kind: 'banknote', country: 'US' },
   { id: 'us-mpc-692-20-e05725119', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934-10-chicago-g30986728', kind: 'banknote', country: 'US' },
+  { id: 'co-1883-5-pesos-rio-hacha-s819p1', kind: 'banknote', country: 'CO' },
+  { id: 'co-1883-5-pesos-rio-hacha-s819p2', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -86,6 +88,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-mpc-681-1-m79' },
   { id: 'us-mpc-692-20-m98' },
   { id: 'us-frn-1934-10-chicago-fr2004g' },
+  { id: 'co-1883-rio-hacha-5-pesos-s819p' },
 ];
 
 export type CollectionStats = {
