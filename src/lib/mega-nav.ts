@@ -8,6 +8,7 @@ import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { NOTAFILIA_PATH } from '../data/notafilia';
+import { ABOUT_PATH } from '../data/about';
 
 export type NavNode = {
   id: string;
@@ -125,6 +126,7 @@ export const megaNav: NavNode[] = [
     id: 'sobre',
     es: 'Sobre Notofilia',
     en: 'About Notofilia',
+    href: ABOUT_PATH,
   },
 ];
 
