@@ -7,7 +7,6 @@ import {
   seriesCopy,
   seriesPath,
   seriesSources,
-  type GuatemalaChapter,
 } from '../../data/guatemala';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import { NOTAFILIA_PATH } from '../../data/notafilia';
@@ -25,25 +24,6 @@ const hero = {
   width: 1168,
   height: 784,
 };
-
-function chapterBlock(chapter: GuatemalaChapter, heading: 'h2' | 'h3') {
-  const Heading = heading;
-  return (
-    <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-        {chapter.years[locale]}
-      </p>
-      <Heading
-        id={`${chapter.id}-heading`}
-        class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
-      >
-        {chapter.title[locale]}
-      </Heading>
-      <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-      <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
-    </section>
-  );
-}
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
@@ -129,7 +109,23 @@ function chapterBlock(chapter: GuatemalaChapter, heading: 'h2' | 'h3') {
       </section>
 
       <div class="mt-16 space-y-12">
-        {printingChapters.map((chapter) => chapterBlock(chapter, 'h2'))}
+        {
+          printingChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+            </section>
+          ))
+        }
       </div>
 
       <section class="mt-16 border-t border-line pt-16" aria-labelledby="banco-colombiano-heading">
@@ -138,7 +134,23 @@ function chapterBlock(chapter: GuatemalaChapter, heading: 'h2' | 'h3') {
         </h2>
         <p class="mb-12 mt-0 text-[17px]/7 text-muted">{t.bancoIntro}</p>
         <div class="space-y-12">
-          {bancoColombianoChapters.map((chapter) => chapterBlock(chapter, 'h3'))}
+          {
+            bancoColombianoChapters.map((chapter) => (
+              <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+                <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                  {chapter.years[locale]}
+                </p>
+                <h3
+                  id={`${chapter.id}-heading`}
+                  class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+                >
+                  {chapter.title[locale]}
+                </h3>
+                <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+                <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              </section>
+            ))
+          }
         </div>
       </section>
 
