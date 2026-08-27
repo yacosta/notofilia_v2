@@ -14,6 +14,8 @@ export type NavNode = {
   es: string;
   en: string;
   href?: string;
+  /** ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag. */
+  flag?: string;
   children?: NavNode[];
 };
 
@@ -29,18 +31,21 @@ export const megaNav: NavNode[] = [
         es: 'Colombia',
         en: 'Colombia',
         href: COLOMBIA_PATH,
+        flag: 'co',
       },
       {
         id: 'estados-unidos',
         es: 'Estados Unidos',
         en: 'United States',
         href: USA_PATH,
+        flag: 'us',
         children: [
           {
             id: 'mpc-vietnam',
             es: 'MPC · Vietnam',
             en: 'MPC · Vietnam',
             href: USA_MPC_PATH,
+            flag: 'vn',
           },
         ],
       },
@@ -49,18 +54,21 @@ export const megaNav: NavNode[] = [
         es: 'Filipinas',
         en: 'Philippines',
         href: SERIES_PATH,
+        flag: 'ph',
       },
       {
         id: 'puerto-rico',
         es: 'Puerto Rico',
         en: 'Puerto Rico',
         href: PUERTO_RICO_PATH,
+        flag: 'pr',
       },
       {
         id: 'ecuador',
         es: 'Ecuador',
         en: 'Ecuador',
         href: ECUADOR_PATH,
+        flag: 'ec',
       },
       {
         id: 'polimero',
@@ -68,7 +76,7 @@ export const megaNav: NavNode[] = [
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
         children: [
-          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH },
+          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
         ],
       },
     ],
@@ -84,12 +92,14 @@ export const megaNav: NavNode[] = [
         es: 'Colombia',
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
+        flag: 'co',
       },
       {
         id: 'nl-monedas',
         es: 'Países Bajos',
         en: 'Netherlands',
         href: NETHERLANDS_COINAGE_PATH,
+        flag: 'nl',
       },
     ],
   },

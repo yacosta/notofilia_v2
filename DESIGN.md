@@ -26,7 +26,7 @@ Type: Montenegrin Gothic One (display wordmark and titles), Source Sans 3 (body 
 - Dark page and footer. Cream / cream-dim / gold-light on dark — not gold-500 yellow as body text.
 - Primary actions: cream fill, dark (`bg`) text. Secondary: cream outline on dark.
 - Header: two-tier sticky chrome. Utility row (wordmark, search, ES–EN pill) on translucent dark; equal-width text nav on `#11110e`, cream labels, hairline separators. Hover / open inverts the cell to cream on dark text.
-- Mega menu: text-only nested IA (Colección Virtual Notafilia, Recursos). No images in the bar or panels. Only Filipinas and Glosario are live links; other labels are placeholders. Mobile is a left drawer with accordion submenus.
+- Mega menu: nested IA (Colección Virtual Notafilia, Numismática, Recursos). Country rows in the panels show a decorative [flag-icons](https://github.com/lipis/flag-icons) flag beside the name; the top bar stays text-only. Mobile is a left drawer with accordion submenus.
 - Footer stays on `bg` with cream-soft links — not brand-950 green.
 - Mono + middle dots may still appear in the signature stat line, but the UI stack is Source Sans 3, not IBM Plex Mono.
 - Non-commercial disclaimer in every footer.
