@@ -94,8 +94,8 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
-            width={1536}
-            height={512}
+            width={note.images.width}
+            height={note.images.height}
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
@@ -107,8 +107,8 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
-            width={1536}
-            height={512}
+            width={note.images.width}
+            height={note.images.height}
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
         </figure>
