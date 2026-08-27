@@ -202,7 +202,7 @@ export function coinageChapterHref(id: ColombiaCoinageChapterId): string {
 export const colombiaCoinageExtraCases = [
   {
     href: LAZARETTOS_PATH,
-    years: { es: 'desde 1377', en: 'from 1377' },
+    years: { es: 'desde 1598', en: 'from 1598' },
     title: { es: 'Lazarettos', en: 'Lazarettos' },
   },
 ] as const;

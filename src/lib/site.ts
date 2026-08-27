@@ -302,8 +302,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Países Bajos y lazaretos del Mediterráneo.' },
-    en: { title: 'Numismatics', description: 'Coinage: Colombia, the Netherlands, and the Mediterranean lazarettos.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Países Bajos y lazaretos colombianos.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, the Netherlands, and the Colombian lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -397,11 +397,11 @@ export const milestones: MilestoneItem[] = [
     href: LAZARETTOS_PATH,
     es: {
       title: 'Lazarettos',
-      description: 'Segunda vitrina de numismática: cuarentena de Ragusa, Venecia, Malta y las fichas de la red mediterránea.',
+      description: 'Segunda vitrina de numismática: Caño de Loro, Contratación, Agua de Dios y la coscoja.',
     },
     en: {
       title: 'Lazarettos',
-      description: 'Second numismatics case: Ragusa’s quarantine, Venice, Malta, and the tokens of the Mediterranean network.',
+      description: 'Second numismatics case: Caño de Loro, Contratación, Agua de Dios, and the coscoja.',
     },
   },
   {
