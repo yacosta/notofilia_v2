@@ -1,0 +1,28 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { collections, copy, localizePath } from '../../../lib/site';
+
+const t = copy.en;
+---
+
+<Layout title={`${t.browseTitle} · Notofilia`} description={t.browseIntro} locale="en" pathname="/en/collection/">
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-content px-[var(--page-gutter)] py-16 outline-none">
+    <h1 class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">{t.browseTitle}</h1>
+    <p class="mb-8 mt-0 max-w-[40rem] text-[17px]/7 text-muted">{t.browseIntro}</p>
+    <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+      {
+        collections.map((item) => (
+          <li>
+            <a
+              href={localizePath(item.href, 'en')}
+              class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-panel p-5 text-inherit no-underline hover:border-gold-light"
+            >
+              <span class="mb-2 block font-display text-[1.5rem]/8 text-cream-dim group-hover:text-cream">{item.en.title}</span>
+              <span class="block font-sans text-[15px]/6 text-muted">{item.en.description}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>

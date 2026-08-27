@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
+import { cardImageSrc, imageSrcset } from '../../lib/images';
 import {
   articlePath,
   blogPath,
@@ -43,12 +45,21 @@ const jsonLd = {
   inLanguage: locale,
   image: new URL(article.image, SITE_URL).href,
   url: new URL(pathname, SITE_URL).href,
-  author: { '@type': 'Organization', name: 'Notofilia' },
-  publisher: { '@type': 'Organization', name: 'Notofilia', url: SITE_URL },
+  author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  ...(kind === 'news' && article.sourceName && article.sourceUrl
+    ? {
+        isBasedOn: {
+          '@type': 'CreativeWork',
+          name: article.sourceName,
+          url: article.sourceUrl,
+        },
+      }
+    : {}),
 };
 ---
 
-<Layout title={`${title} · Notofilia`} description={description} locale={locale} pathname={pathname}>
+<Layout title={`${title} · Notofilia`} description={description} locale={locale} pathname={pathname} ogImage={article.image} ogType="article">
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
@@ -56,19 +67,17 @@ const jsonLd = {
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
+        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
               {t.home}
             </a>
           </li>
-          <li aria-hidden="true">/</li>
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={indexPath}>
               {sectionLabel}
             </a>
           </li>
-          <li aria-hidden="true">/</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{title}</li>
         </ol>
       </nav>
@@ -126,7 +135,9 @@ const jsonLd = {
 
       <figure class="mb-10 mt-0">
         <img
-          src={article.image}
+          src={cardImageSrc(article.image)}
+          srcset={imageSrcset(article.image)}
+          sizes="(max-width: 768px) 100vw, 46rem"
           alt={article.imageAlt[locale]}
           width="1200"
           height="675"

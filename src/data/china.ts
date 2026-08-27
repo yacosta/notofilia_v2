@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath } from '../lib/locale-paths';
 
 export const CHINA_PATH = '/coleccion/china/';
 
@@ -347,13 +348,13 @@ export function noteById(id: string): ChinaNote | undefined {
 }
 
 export function notePath(note: ChinaNote, locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${note.path}` : note.path;
+  return localizePath(note.path, locale);
 }
 
 export const chinaNoteSlugs = chinaNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
 
 export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${CHINA_PATH}` : CHINA_PATH;
+  return localizePath(CHINA_PATH, locale);
 }
 
 export function chapterHref(id: ChinaChapterId): string {

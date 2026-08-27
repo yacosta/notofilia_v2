@@ -210,5 +210,5 @@ export const lazarettosCopy = {
 } as const;
 
 export function lazarettosPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? `/en${LAZARETTOS_PATH}` : LAZARETTOS_PATH;
+  return locale === 'en' ? '/en/collection/lazarettos/' : LAZARETTOS_PATH;
 }

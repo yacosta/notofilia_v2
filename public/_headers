@@ -1,0 +1,5 @@
+https://:name.:account.workers.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:name.:account.workers.dev/*
+  X-Robots-Tag: noindex

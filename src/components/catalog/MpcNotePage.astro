@@ -34,19 +34,17 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
+        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(USA_PATH, locale)}>
               {t.collectionLink}
             </a>
           </li>
-          <li aria-hidden="true">·</li>
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={seriesPath(locale)}>
               {t.seriesLink}
             </a>
           </li>
-          <li aria-hidden="true">·</li>
           <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{note.title[locale]}</li>
         </ol>
       </nav>
