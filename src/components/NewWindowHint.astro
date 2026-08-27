@@ -1,10 +1,22 @@
 ---
 interface Props {
   locale?: 'es' | 'en';
+  visuallyHidden?: boolean;
 }
 
-const { locale = 'es' } = Astro.props;
+const { locale = 'es', visuallyHidden = false } = Astro.props;
 const text = locale === 'en' ? 'opens in a new tab' : 'se abre en una pestaña nueva';
+const visibleClass = 'italic font-normal tracking-[0.01em]';
 ---
 
-<span class="italic font-normal tracking-[0.01em]"> ({text})</span>
+<span class={visuallyHidden ? 'new-window-hint-hidden' : visibleClass}> ({text})</span>
+
+<style>
+  .new-window-hint-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>
