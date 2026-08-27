@@ -60,17 +60,18 @@ Text-only pages keep a reading column:
 </article>
 ```
 
-## Still to apply
+## Applied on piece pages
 
-These templates still cap the post-image narrative at `46rem`. Remove that class from each `section` (keep it on the lead):
+The post-image narrative cap is removed on:
 
-- `src/components/catalog/MpcNotePage.astro`
-- `src/components/catalog/VictoryNotePage.astro`
-- `src/components/catalog/ChinaNotePage.astro`
-- `src/components/catalog/ColombiaCoinPage.astro`
-- `src/components/catalog/NetherlandsCoinPage.astro`
+- `UnitedStatesNotePage.astro`
+- `MpcNotePage.astro`
+- `VictoryNotePage.astro`
+- `ChinaNotePage.astro`
+- `ColombiaCoinPage.astro`
+- `NetherlandsCoinPage.astro`
 
-Series index pages already use `max-w-content` without a second cap. Leave them.
+Keep `max-w-[46rem]` on each page’s lead. Series index pages already use `max-w-content` without a second cap. Leave about, editorial articles, and stubs on a reading column.
 
 ## Check
 
