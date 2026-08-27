@@ -7,6 +7,7 @@ import { SERIES_PATH } from '../data/philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
+import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
 
@@ -76,6 +77,12 @@ export const megaNav: NavNode[] = [
         en: 'Ecuador',
         href: ECUADOR_PATH,
         flag: 'ec',
+      },
+      {
+        id: 'guatemala',
+        es: 'Guatemala',
+        en: 'Guatemala',
+        href: GUATEMALA_PATH,
       },
       {
         id: 'polimero',

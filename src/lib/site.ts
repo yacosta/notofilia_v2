@@ -1,6 +1,7 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { ECUADOR_PATH } from '../data/ecuador';
+import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
@@ -344,6 +345,11 @@ export const collections = [
     en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
   },
   {
+    href: GUATEMALA_PATH,
+    es: { title: 'Guatemala', description: 'Impresión de billetes, banca privada y El Banco Colombiano (1878–1901).' },
+    en: { title: 'Guatemala', description: 'Banknote printing, private banks of issue, and El Banco Colombiano (1878–1901).' },
+  },
+  {
     href: POLIMERO_MUNDIAL_PATH,
     es: { title: 'Billetes de polímero', description: 'Catálogo mundial de sustratos Guardian, Safeguard e híbridos.' },
     en: { title: 'Polymer banknotes', description: 'World catalog of Guardian, Safeguard, and hybrid substrates.' },
@@ -473,6 +479,17 @@ export const milestones: MilestoneItem[] = [
     },
   },
   {
+    href: GUATEMALA_PATH,
+    es: {
+      title: 'Guatemala · Impresión de billetes y El Banco Colombiano',
+      description: 'Séptima vitrina: planchas de Nueva York y Londres, banca privada y la emisión antioqueña en Guatemala (1878–1901).',
+    },
+    en: {
+      title: 'Guatemala · Banknote printing and El Banco Colombiano',
+      description: 'Seventh catalog case: New York and London plates, private banks, and the Antioquian issue in Guatemala (1878–1901).',
+    },
+  },
+  {
     href: NETHERLANDS_COINAGE_PATH,
     es: {
       title: 'Países Bajos · Historia de la acuñación',
@@ -516,6 +533,7 @@ export const footerExplore = [
   { href: COLOMBIA_PATH, es: 'Colombia', en: 'Colombia' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
   { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
+  { href: GUATEMALA_PATH, es: 'Guatemala', en: 'Guatemala' },
   { href: NUMISMATICS_PATH, es: 'Monedas', en: 'Coins' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
@@ -552,6 +570,7 @@ export const stubPages = [
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
+  { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
   { path: 'coleccion/polimero-mundial', es: 'Billetes de polímero', en: 'Polymer banknotes' },
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
@@ -584,6 +603,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
   ECUADOR_PATH.replace(/^\/|\/$/g, ''),
+  GUATEMALA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
