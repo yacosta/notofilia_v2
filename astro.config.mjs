@@ -20,6 +20,12 @@ export default defineConfig({
     '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692': '/en/coleccion/united-states/mpc-vietnam/20-dollars-series-692/',
     '/coleccion/ecuador/100-sucres-1993': '/coleccion/ecuador/',
     '/en/coleccion/ecuador/100-sucres-1993': '/en/coleccion/ecuador/',
+    '/nosotros': '/acerca-de/',
+    '/en/nosotros': '/en/about/',
+    '/sobre-mi': '/acerca-de/',
+    '/en/sobre-mi': '/en/about/',
+    '/en/acerca-de': '/en/about/',
+    '/about': '/en/about/',
   },
   vite: {
     plugins: [tailwindcss()],

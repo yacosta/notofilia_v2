@@ -23,6 +23,7 @@ import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as cata
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
+import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 
 export type Locale = 'es' | 'en';
 
@@ -59,7 +60,9 @@ function extraAstroPageFiles(): number {
       !file.includes('/blog/') &&
       !file.includes('/noticias/') &&
       !file.includes('/paises-bajos-numismatica/') &&
-      !file.includes('/netherlands-numismatica/'),
+      !file.includes('/netherlands-numismatica/') &&
+      !file.includes('/acerca-de/') &&
+      !file.includes('/about/'),
   );
   return Math.max(0, countable.length - SEED_ASTRO_PAGE_FILES);
 }
@@ -109,6 +112,7 @@ addLocalePair(localizedCollectionSlugs, USA_MPC_PATH, USA_MPC_PATH_EN);
 for (const note of mpcVietnamNotes) {
   addLocalePair(localizedCollectionSlugs, note.path, note.pathEn);
 }
+addLocalePair(localizedCollectionSlugs, ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(localizedCollectionSlugs, NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 for (const coin of netherlandsCoins) {
   addLocalePair(localizedCollectionSlugs, coin.path, coin.pathEn);
@@ -518,7 +522,7 @@ export const footerExplore = [
   { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos · Monedas', en: 'Netherlands · Coins' },
   { href: POLIMERO_MUNDIAL_PATH, es: 'Billetes de polímero mundial', en: 'World polymer banknotes' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
-  { href: USA_MPC_PATH, es: 'MPC · Vietnam', en: 'MPC · Vietnam' },
+  { href: USA_MPC_PATH, es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
 ] as const;
 
 export const footerResources = [
@@ -528,7 +532,7 @@ export const footerResources = [
 ] as const;
 
 export const footerAbout = [
-  { href: '/nosotros/', es: 'Sobre Notofilia', en: 'About Notofilia' },
+  { href: ABOUT_PATH, es: 'Sobre Notofilia', en: 'About Notofilia' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
   { href: '/contacto/', es: 'Contacto', en: 'Contact' },
   { href: '/contacto/?motivo=error', es: 'Reportar un error', en: 'Report an error' },
@@ -544,7 +548,7 @@ export const stubPages = [
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
-  { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC · Vietnam', en: 'MPC · Vietnam' },
+  { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
@@ -552,7 +556,7 @@ export const stubPages = [
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
   { path: 'glosario', es: 'Glosario', en: 'Glossary' },
-  { path: 'nosotros', es: 'Sobre Notofilia', en: 'About Notofilia' },
+  { path: 'acerca-de', es: 'Sobre Notofilia', en: 'About Notofilia' },
   { path: 'editorial', es: 'Política editorial y valoración', en: 'Editorial policy' },
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
@@ -582,6 +586,7 @@ export const dedicatedCatalogPaths = new Set<string>([
   ECUADOR_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
+  ...aboutDedicatedSlugs,
   'blog',
   'noticias',
   ...blogSlugs,

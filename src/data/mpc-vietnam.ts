@@ -154,7 +154,7 @@ export const seriesCopy = {
       'Catálogo de Military Payment Certificates usados en Vietnam: series 641, 661, 681 y 692, C-Day y el fin del programa en 1973.',
     kicker: 'Estados Unidos · MPC',
     title: 'Certificados de pago militar en Vietnam',
-    breadcrumbCurrent: 'MPC · Vietnam',
+    breadcrumbCurrent: 'MPC - Guerra de Vietnam (1955-1975)',
     heroAlt:
       'Mapa vintage en relieve 3D de Vietnam sobre pergamino, con el delta del Río Rojo, Huế, Đà Nẵng, Saigón, el paralelo 17, sellos y el título Vietnam 1955–1975',
     intro: [
@@ -177,7 +177,7 @@ export const seriesCopy = {
       'Catalog of Military Payment Certificates used in Vietnam: Series 641, 661, 681, and 692, C-Day, and the end of the program in 1973.',
     kicker: 'United States · MPC',
     title: 'Military Payment Certificates in Vietnam',
-    breadcrumbCurrent: 'MPC · Vietnam',
+    breadcrumbCurrent: 'MPC - Vietnam War (1955-1975)',
     heroAlt:
       'Vintage 3D relief map of Vietnam on parchment, with the Red River Delta, Huế, Da Nang, Saigon, the 17th parallel, postage stamps, and the title Vietnam 1955–1975',
     intro: [
@@ -482,7 +482,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
 
 export const notePageCopy = {
   es: {
-    seriesLink: 'MPC · Vietnam',
+    seriesLink: 'MPC - Guerra de Vietnam (1955-1975)',
     collectionLink: 'Estados Unidos',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
@@ -500,7 +500,7 @@ export const notePageCopy = {
     closeLightbox: 'Cerrar',
   },
   en: {
-    seriesLink: 'MPC · Vietnam',
+    seriesLink: 'MPC - Vietnam War (1955-1975)',
     collectionLink: 'United States',
     frontHeading: 'Face',
     backHeading: 'Back',

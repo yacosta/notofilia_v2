@@ -1,0 +1,30 @@
+---
+import cn from 'flag-icons/flags/4x3/cn.svg?url';
+import co from 'flag-icons/flags/4x3/co.svg?url';
+import ec from 'flag-icons/flags/4x3/ec.svg?url';
+import nl from 'flag-icons/flags/4x3/nl.svg?url';
+import ph from 'flag-icons/flags/4x3/ph.svg?url';
+import pr from 'flag-icons/flags/4x3/pr.svg?url';
+import us from 'flag-icons/flags/4x3/us.svg?url';
+import vn from 'flag-icons/flags/4x3/vn.svg?url';
+
+const FLAG_SRC = { cn, co, ec, nl, ph, pr, us, vn } as const;
+
+type FlagCode = keyof typeof FLAG_SRC;
+
+interface Props {
+  /** ISO 3166-1 alpha-2 code used by flag-icons. */
+  code?: string;
+}
+
+const { code } = Astro.props;
+const src = code ? FLAG_SRC[code.toLowerCase() as FlagCode] : undefined;
+---
+
+{
+  src && (
+    <span class="mega-flag" aria-hidden="true">
+      <img class="mega-flag-img" src={src} alt="" width="20" height="15" decoding="async" />
+    </span>
+  )
+}

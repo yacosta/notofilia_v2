@@ -1,4 +1,5 @@
 ---
+import CountryFlag from './CountryFlag.astro';
 import { localizePath, type Locale } from '../lib/site';
 import type { NavNode } from '../lib/mega-nav';
 
@@ -7,9 +8,10 @@ interface Props {
   locale: Locale;
   openSubmenu: string;
   depth?: number;
+  layout?: 'horizontal';
 }
 
-const { nodes, locale, openSubmenu, depth = 1 } = Astro.props;
+const { nodes, locale, openSubmenu, depth = 1, layout } = Astro.props;
 
 function hrefFor(node: NavNode) {
   if (!node.href) return undefined;
@@ -17,7 +19,7 @@ function hrefFor(node: NavNode) {
 }
 ---
 
-<ul class:list={['mega-tree', `mega-tree--${depth}`]}>
+<ul class:list={['mega-tree', `mega-tree--${depth}`, layout === 'horizontal' && 'mega-tree--horizontal']}>
   {
     nodes.map((node) => {
       const label = node[locale];
@@ -29,10 +31,14 @@ function hrefFor(node: NavNode) {
           <div class="mega-tree-row">
             {href ? (
               <a class="mega-tree-label mega-tree-label--link" href={href}>
-                {label}
+                <CountryFlag code={node.flag} />
+                <span class="mega-tree-label-text">{label}</span>
               </a>
             ) : (
-              <span class="mega-tree-label">{label}</span>
+              <span class="mega-tree-label">
+                <CountryFlag code={node.flag} />
+                <span class="mega-tree-label-text">{label}</span>
+              </span>
             )}
             {nested && (
               <button
