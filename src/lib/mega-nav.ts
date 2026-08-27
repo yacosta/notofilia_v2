@@ -83,6 +83,7 @@ export const megaNav: NavNode[] = [
         es: 'Guatemala',
         en: 'Guatemala',
         href: GUATEMALA_PATH,
+        flag: 'gt',
       },
       {
         id: 'polimero',
