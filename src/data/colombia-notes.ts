@@ -18,6 +18,12 @@ export type ColombiaNote = {
     front: string;
     back: string;
   };
+  hero?: {
+    src: string;
+    width: number;
+    height: number;
+  };
+  heroAlt?: LocalizedText;
   title: LocalizedText;
   kicker: LocalizedText;
   lead: LocalizedText;
@@ -49,6 +55,15 @@ export const colombiaNotes: ColombiaNote[] = [
       composite: '/images/catalog/colombia/5-pesos-rio-hacha-1883-composite.jpg',
       front: '/images/catalog/colombia/5-pesos-rio-hacha-1883-front.jpg',
       back: '/images/catalog/colombia/5-pesos-rio-hacha-1883-back.jpg',
+    },
+    hero: {
+      src: '/images/catalog/colombia/hero-rio-hacha.jpg',
+      width: 2128,
+      height: 912,
+    },
+    heroAlt: {
+      es: 'Mapa ilustrado vintage de Riohacha sobre pergamino, con la catedral, el muelle, el mar Caribe, La Guajira, un pasaporte y el título Riohacha',
+      en: 'Vintage illustrated map of Riohacha on parchment, with the cathedral, the pier, the Caribbean Sea, La Guajira, a passport, and the title Riohacha',
     },
     title: {
       es: '5 pesos · Banco de Rio Hacha · 1883',

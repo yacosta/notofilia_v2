@@ -19,6 +19,7 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const pathname = notePath(note, locale);
 const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const hero = note.hero;
 ---
 
 <Layout
@@ -44,7 +45,42 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       })}
     />
   </Fragment>
-  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+  <main id="main-content" tabindex="-1" class:list={['bg-bg outline-none', hero && 'relative w-full']}>
+    {
+      hero ? (
+        <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="note-heading">
+          <img
+            class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
+            src={hero.src}
+            alt={note.heroAlt?.[locale] ?? ''}
+            width={hero.width}
+            height={hero.height}
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div
+            class="absolute inset-0"
+            style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
+          />
+          <div
+            class="absolute inset-0"
+            style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
+          />
+          <div class="relative z-[1] mx-auto flex min-h-[86vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(68vh,38rem)] md:min-h-[94vh] md:pb-16">
+            <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
+              {note.kicker[locale]}
+            </p>
+            <h1
+              id="note-heading"
+              class="mb-0 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]"
+            >
+              {note.title[locale]}
+            </h1>
+          </div>
+        </section>
+      ) : null
+    }
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
@@ -62,12 +98,18 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
         </ol>
       </nav>
 
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-        {note.kicker[locale]}
-      </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {note.title[locale]}
-      </h1>
+      {
+        hero ? null : (
+          <>
+            <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+              {note.kicker[locale]}
+            </p>
+            <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+              {note.title[locale]}
+            </h1>
+          </>
+        )
+      }
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
