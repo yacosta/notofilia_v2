@@ -22,10 +22,9 @@ function hrefFor(node: NavNode) {
     nodes.map((node) => {
       const label = node[locale];
       const href = hrefFor(node);
-      const panelId = `mega-branch-${node.id}`;
-      const nested = node.children && node.children.length > 0;
+      const nested = Boolean(node.children?.length);
       return (
-        <li class:list={['mega-tree-item', nested && 'has-branch']} data-mega-branch={nested ? '' : undefined}>
+        <li class:list={['mega-tree-item', nested && 'has-branch']}>
           <div class="mega-tree-row">
             {href ? (
               <a class="mega-tree-label mega-tree-label--link" href={href}>
@@ -34,24 +33,9 @@ function hrefFor(node: NavNode) {
             ) : (
               <span class="mega-tree-label">{label}</span>
             )}
-            {nested && (
-              <button
-                type="button"
-                class="mega-item-toggle mega-tree-toggle"
-                data-mega-submenu-toggle
-                data-menu-title={label}
-                aria-expanded="false"
-                aria-controls={panelId}
-                aria-label={openSubmenu.replace('{menuTitle}', label)}
-              >
-                <span class="mega-item-chevron" aria-hidden="true"></span>
-              </button>
-            )}
           </div>
           {nested && (
-            <div class="mega-branch-panel" id={panelId} data-mega-panel hidden>
-              <Astro.self nodes={node.children!} locale={locale} openSubmenu={openSubmenu} depth={depth + 1} />
-            </div>
+            <Astro.self nodes={node.children!} locale={locale} openSubmenu={openSubmenu} depth={depth + 1} />
           )}
         </li>
       );

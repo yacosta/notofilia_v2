@@ -157,8 +157,8 @@ export function initMegaMenu(header: HTMLElement) {
   }
 
   for (const item of topItems) bindItem(item, true, OPEN_DELAY_MS);
-  // Nested branches stay collapsed until the chevron is clicked, so the
-  // list does not jump while you move or scroll to another option.
+  // Nested country/series children render inline in the panel. Bind leftover
+  // branch toggles only if a tree still uses the accordion markup.
   for (const branch of branches) bindItem(branch, false, OPEN_DELAY_MS);
 
   header.addEventListener('pointerenter', () => {
