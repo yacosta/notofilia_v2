@@ -17,48 +17,48 @@ export const lazarettosChapters: LazarettosChapter[] = [
     id: 'cano-de-loro',
     years: { es: '1598–mediados del s. XX', en: '1598–mid-20th c.' },
     title: {
-      es: 'Caño de Loro · Tierrabomba',
-      en: 'Caño de Loro · Tierrabomba',
+      es: 'Caño del Loro · Bolívar',
+      en: 'Caño del Loro · Bolívar',
     },
     lead: {
-      es: 'El Hospital de San Lázaro de Cartagena, el traslado a la isla y el primer lazareto de la costa.',
-      en: 'Cartagena’s Hospital of San Lázaro, the move to the island, and the first lazaretto on the coast.',
+      es: 'Cerca de Cartagena, en Bolívar: el lazareto creado para atender a los enfermos del norte del país.',
+      en: 'Near Cartagena, in Bolívar: the lazaretto created to care for the sick of the north of the country.',
     },
     body: {
-      es: 'Señal Memoria sitúa la construcción del Hospital de San Lázaro de Cartagena en 1592 y su apertura en 1598: allí reunieron a los enfermos llegados de España. El Archivo General de la Nación coloca ese hospital entre 1610 y 1640, y su traslado a la isla de Tierrabomba. En 1742 el ingeniero Antonio de Arévalo recomendó mover el leprocomio a Caño del Loro, en Cantera Vieja; en 1772 había 104 internos. Fue el más antiguo de los tres lazaretos que perdurarían. Trataron con aceite de chaulmoogra; las condiciones fueron precarias. El recinto desapareció a mediados del siglo XX.',
-      en: 'Señal Memoria dates the Hospital of San Lázaro in Cartagena to a 1592 start of works and an opening in 1598: there the authorities gathered the sick who had arrived from Spain. The Archivo General de la Nación places that hospital between 1610 and 1640, and its transfer to the island of Tierrabomba. In 1742 the engineer Antonio de Arévalo recommended moving the leprosarium to Caño del Loro, at Cantera Vieja; in 1772 it held 104 interned patients. It was the oldest of the three lazarettos that would last. They treated with chaulmoogra oil; conditions were poor. The compound vanished in the mid-twentieth century.',
+      es: 'Ubicado cerca de Cartagena, Caño del Loro fue creado para atender a los enfermos del norte del país. Señal Memoria sitúa la construcción del Hospital de San Lázaro de Cartagena en 1592 y su apertura en 1598: allí reunieron a los enfermos llegados de España. El Archivo General de la Nación coloca ese hospital entre 1610 y 1640, y su traslado a la isla de Tierrabomba. En 1742 el ingeniero Antonio de Arévalo recomendó mover el leprocomio a Caño del Loro, en Cantera Vieja; en 1772 había 104 internos. Fue el más antiguo de los tres lazaretos que perdurarían. Trataron con aceite de chaulmoogra; las condiciones fueron precarias. El recinto desapareció a mediados del siglo XX.',
+      en: 'Near Cartagena, Caño del Loro was created to care for the sick of the north of the country. Señal Memoria dates the Hospital of San Lázaro in Cartagena to a 1592 start of works and an opening in 1598: there the authorities gathered the sick who had arrived from Spain. The Archivo General de la Nación places that hospital between 1610 and 1640, and its transfer to the island of Tierrabomba. In 1742 the engineer Antonio de Arévalo recommended moving the leprosarium to Caño del Loro, at Cantera Vieja; in 1772 it held 104 interned patients. It was the oldest of the three lazarettos that would last. They treated with chaulmoogra oil; conditions were poor. The compound vanished in the mid-twentieth century.',
     },
   },
   {
     id: 'contratacion',
     years: { es: 'desde 1812', en: 'from 1812' },
     title: {
-      es: 'Contratación · río Suárez',
-      en: 'Contratación · the Suárez River',
+      es: 'Contratación · Santander',
+      en: 'Contratación · Santander',
     },
     lead: {
-      es: 'Los enfermos de El Curo, las dieciocho casas de Santander y el sanatorio que aún funciona.',
-      en: 'The sick of El Curo, Santander’s eighteen houses, and the sanatorium that still works.',
+      es: 'Del antiguo leprocomio de El Curo: zona de reclusión para la región central y oriental.',
+      en: 'From the old leprosarium of El Curo: a confinement zone for the central and eastern region.',
     },
     body: {
-      es: 'En 1812, a petición de los leprosos de El Curo, se fundó un lazareto en lo que hoy es Contratación, Santander. En 1822, por disposición de Francisco de Paula Santander, se alzaron dieciocho casas a orillas del río Suárez; de ese asiento nació el municipio. Rodríguez Salazar y Arévalo Hernández sitúan la organización republicana del recinto en 1861. Hasta 1910 no se fijaron los límites territoriales —lo mismo en Caño de Loro y en Agua de Dios—. Hubo juzgado, notaría y registro. El lugar acuñó su propia moneda. Hoy sigue funcionando un sanatorio.',
-      en: 'In 1812, at the request of the lepers of El Curo, a lazaretto was founded in what is now Contratación, Santander. In 1822, by order of Francisco de Paula Santander, eighteen houses went up on the banks of the Suárez River; the municipality grew from that settlement. Rodríguez Salazar and Arévalo Hernández place the republican organization of the compound in 1861. Territorial limits were not fixed until 1910 — the same at Caño de Loro and Agua de Dios. There was a court, a notary, and a registry. The place struck its own coin. A sanatorium still operates there.',
+      es: 'Contratación, en Santander, se originó en el antiguo leprocomio de El Curo y funcionó como zona de reclusión para la región central y oriental. En 1812, a petición de los leprosos de aquel recinto, se fundó el lazareto en lo que hoy es el municipio. En 1822, por disposición de Francisco de Paula Santander, se alzaron dieciocho casas a orillas del río Suárez; de ese asiento nació el municipio. Rodríguez Salazar y Arévalo Hernández sitúan la organización republicana del recinto en 1861. Hasta 1910 no se fijaron los límites territoriales —lo mismo en Caño de Loro y en Agua de Dios—. Hubo juzgado, notaría y registro. El lugar acuñó su propia moneda. Hoy sigue funcionando un sanatorio.',
+      en: 'Contratación, in Santander, grew out of the old leprosarium of El Curo and served as a confinement zone for the central and eastern region. In 1812, at the request of the lepers of that compound, the lazaretto was founded in what is now the municipality. In 1822, by order of Francisco de Paula Santander, eighteen houses went up on the banks of the Suárez River; the municipality grew from that settlement. Rodríguez Salazar and Arévalo Hernández place the republican organization of the compound in 1861. Territorial limits were not fixed until 1910 — the same at Caño de Loro and Agua de Dios. There was a court, a notary, and a registry. The place struck its own coin. A sanatorium still operates there.',
     },
   },
   {
     id: 'agua-de-dios',
     years: { es: 'desde 1870', en: 'from 1870' },
     title: {
-      es: 'Agua de Dios · Alto Magdalena',
-      en: 'Agua de Dios · Alto Magdalena',
+      es: 'Agua de Dios · Cundinamarca',
+      en: 'Agua de Dios · Cundinamarca',
     },
     lead: {
-      es: 'El sanatorio del 10 de agosto de 1870, el Puente de los Suspiros y el cordón de alambre.',
-      en: 'The sanatorium of 10 August 1870, the Bridge of Sighs, and the barbed-wire cordon.',
+      es: 'Fundado el 10 de agosto de 1870: el más poblado, grande e importante del país. Hoy es un municipio.',
+      en: 'Founded on 10 August 1870: the most populous, largest, and most important in the country. Today it is a municipality.',
     },
     body: {
-      es: 'El 10 de agosto de 1870 se creó el Sanatorio de Agua de Dios, a 115 kilómetros de Bogotá, en el paso colonial hacia el suroccidente de Cundinamarca. El nombre viene de las aguas termales de Los Chorros, en la vereda San José de Tocaima. En 1872 se tendió el Puente de los Suspiros sobre el río Bogotá: por allí se entraba y, para muchos, no se volvía. El 16 de noviembre de 1881 nació el municipio; el reconocimiento legal llegó el 29 de noviembre de 1963. La Ley 104 de 1890 impuso el aislamiento total. Desde 1890 no podía entrar ningún sano, ni un familiar; los enfermos no salían sin permiso. En 1901 el asentamiento se cercó con alambre de púas y lo vigiló una Policía Nacional Interna formada por los mismos pacientes. El Decreto 14 de 1905 declaró «medida de urgente necesidad» el aislamiento o la secuestración, previo examen médico. En 1913 un cordón sanitario aisló los tres lazaretos. El decreto departamental 159 de 1907 mandó desinfectar la correspondencia que salía del recinto. La Ley 148 de 1961 abolió el aislamiento obligatorio. Ocho predios del sanatorio son Patrimonio Histórico de la Nación por la Ley 1435 de 2011.',
-      en: 'On 10 August 1870 the Sanatorium of Agua de Dios was created, 115 kilometres from Bogotá, on the colonial road toward southwestern Cundinamarca. The name comes from the hot springs of Los Chorros, in the San José hamlet of Tocaima. In 1872 the Bridge of Sighs was thrown over the Bogotá River: one entered there and, for many, did not return. The municipality was born on 16 November 1881; legal recognition came on 29 November 1963. Law 104 of 1890 imposed total isolation. From 1890 no healthy person could enter, not even a relative; the sick did not leave without leave. In 1901 the settlement was ringed with barbed wire and watched by an Internal National Police formed of the patients themselves. Decree 14 of 1905 declared isolation or sequestration, after a medical examination, “a measure of urgent necessity.” In 1913 a sanitary cordon isolated all three lazarettos. Departmental decree 159 of 1907 ordered the disinfection of mail leaving the compound. Law 148 of 1961 abolished compulsory isolation. Eight properties of the sanatorium are National Historic Heritage under Law 1435 of 2011.',
+      es: 'El 10 de agosto de 1870 se fundó el Sanatorio de Agua de Dios, en Cundinamarca. Fue el más poblado, grande e importante del país; hoy es un municipio. Se alzó a 115 kilómetros de Bogotá, en el paso colonial hacia el suroccidente. El nombre viene de las aguas termales de Los Chorros, en la vereda San José de Tocaima. En 1872 se tendió el Puente de los Suspiros sobre el río Bogotá: por allí se entraba y, para muchos, no se volvía. El 16 de noviembre de 1881 nació el municipio; el reconocimiento legal llegó el 29 de noviembre de 1963. La Ley 104 de 1890 impuso el aislamiento total. Desde 1890 no podía entrar ningún sano, ni un familiar; los enfermos no salían sin permiso. En 1901 el asentamiento se cercó con alambre de púas y lo vigiló una Policía Nacional Interna formada por los mismos pacientes. El Decreto 14 de 1905 declaró «medida de urgente necesidad» el aislamiento o la secuestración, previo examen médico. En 1913 un cordón sanitario aisló los tres lazaretos. El decreto departamental 159 de 1907 mandó desinfectar la correspondencia que salía del recinto. La Ley 148 de 1961 abolió el aislamiento obligatorio. Ocho predios del sanatorio son Patrimonio Histórico de la Nación por la Ley 1435 de 2011.',
+      en: 'On 10 August 1870 the Sanatorium of Agua de Dios was founded in Cundinamarca. It was the most populous, largest, and most important in the country; today it is a municipality. It stood 115 kilometres from Bogotá, on the colonial road toward the southwest. The name comes from the hot springs of Los Chorros, in the San José hamlet of Tocaima. In 1872 the Bridge of Sighs was thrown over the Bogotá River: one entered there and, for many, did not return. The municipality was born on 16 November 1881; legal recognition came on 29 November 1963. Law 104 of 1890 imposed total isolation. From 1890 no healthy person could enter, not even a relative; the sick did not leave without leave. In 1901 the settlement was ringed with barbed wire and watched by an Internal National Police formed of the patients themselves. Decree 14 of 1905 declared isolation or sequestration, after a medical examination, “a measure of urgent necessity.” In 1913 a sanitary cordon isolated all three lazarettos. Departmental decree 159 of 1907 ordered the disinfection of mail leaving the compound. Law 148 of 1961 abolished compulsory isolation. Eight properties of the sanatorium are National Historic Heritage under Law 1435 of 2011.',
     },
   },
   {
@@ -167,13 +167,13 @@ export const lazarettosCopy = {
   es: {
     metaTitle: 'Lazarettos | Notofilia',
     metaDescription:
-      'Catálogo de lazaretos colombianos: Caño de Loro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
+      'Catálogo de lazaretos colombianos: Caño del Loro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
     kicker: 'Numismática',
     title: 'Lazarettos',
     heroAlt:
       'Póster ilustrado vintage de Agua de Dios, Cundinamarca, Ciudad de la Esperanza: pueblo colonial isométrico, catedral, río Bogotá, puente, Los Chorros y sello de Colombia Correos',
     intro: [
-      'Un lazareto no es una ceca. En Colombia fue la casa donde el Estado detenía a los enfermos de Hansen: Caño de Loro en Tierrabomba, Contratación a orillas del Suárez y Agua de Dios en el Alto Magdalena. El nombre viene de Lázaro. El Hospital de San Lázaro de Cartagena abrió en 1598; de allí salió el primer lazareto de la costa. En el siglo XX, para que el papel nacional no cruzara el cordón, Bogotá acuñó una moneda exclusiva: la coscoja.',
+      'Un lazareto no es una ceca. En Colombia fue la casa donde el Estado detenía a los enfermos de Hansen: Caño del Loro, cerca de Cartagena, para el norte; Contratación, nacida de El Curo, para el centro y el oriente; y Agua de Dios, el más poblado, grande e importante del país, hoy municipio de Cundinamarca. El nombre viene de Lázaro. El Hospital de San Lázaro de Cartagena abrió en 1598; de allí salió el primer lazareto de la costa. En el siglo XX, para que el papel nacional no cruzara el cordón, Bogotá acuñó una moneda exclusiva: la coscoja.',
       'Esta vitrina reúne esa exonumia del aislamiento. No sustituye a las monedas de Santa Fe ni al papel de la banca libre: las acompaña. Las fichas de cada tipo se publicarán como en Filipinas y en Colombia-Numismática, a medida que se documenten.',
     ],
     holdingsTitle: 'El catálogo',
@@ -184,13 +184,13 @@ export const lazarettosCopy = {
   en: {
     metaTitle: 'Lazarettos | Notofilia',
     metaDescription:
-      'Catalog of Colombian lazarettos: Caño de Loro, Contratación, Agua de Dios, and the coscoja, the exclusive coin of the sanitary cordon.',
+      'Catalog of Colombian lazarettos: Caño del Loro, Contratación, Agua de Dios, and the coscoja, the exclusive coin of the sanitary cordon.',
     kicker: 'Numismatics',
     title: 'Lazarettos',
     heroAlt:
       'Vintage illustrated poster of Agua de Dios, Cundinamarca, City of Hope: isometric colonial town, cathedral, Bogotá River, bridge, Los Chorros, and a Colombia Correos stamp',
     intro: [
-      'A lazaretto is not a mint. In Colombia it was the house where the State held those with Hansen’s disease: Caño de Loro on Tierrabomba, Contratación on the Suárez, and Agua de Dios in the Alto Magdalena. The name comes from Lazarus. Cartagena’s Hospital of San Lázaro opened in 1598; from it came the first lazaretto on the coast. In the twentieth century, so that national paper would not cross the cordon, Bogotá struck an exclusive coin: the coscoja.',
+      'A lazaretto is not a mint. In Colombia it was the house where the State held those with Hansen’s disease: Caño del Loro, near Cartagena, for the north; Contratación, born of El Curo, for the centre and the east; and Agua de Dios, the most populous, largest, and most important in the country, today a municipality in Cundinamarca. The name comes from Lazarus. Cartagena’s Hospital of San Lázaro opened in 1598; from it came the first lazaretto on the coast. In the twentieth century, so that national paper would not cross the cordon, Bogotá struck an exclusive coin: the coscoja.',
       'This case gathers that exonumia of isolation. It does not replace the coins of Santa Fe or free-banking paper: it stands beside them. Individual type pages will be published as they are documented, as in the Philippines case and Colombia-Numismatics.',
     ],
     holdingsTitle: 'The catalog',
