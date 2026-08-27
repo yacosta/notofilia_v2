@@ -1,0 +1,16 @@
+---
+import { copy, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = copy[locale];
+---
+
+<div class="site-notice w-full bg-alert px-[var(--chrome-gutter)] py-2.5 text-center" role="region" aria-label={t.siteNoticeLabel}>
+  <p class="site-notice-text m-0 mx-auto max-w-content text-pretty font-sans text-[14px]/5 text-alert-ink">
+    {t.siteNotice}
+  </p>
+</div>
