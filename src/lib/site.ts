@@ -6,7 +6,14 @@ import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
-import { USA_MPC_PATH, USA_MPC_PATH_EN, USA_PATH, USA_PATH_EN } from '../data/estados-unidos';
+import {
+  USA_MPC_PATH,
+  USA_MPC_PATH_EN,
+  USA_PATH,
+  USA_PATH_EN,
+  unitedStatesNoteDedicatedSlugs,
+  unitedStatesNoteSlugs,
+} from '../data/estados-unidos';
 import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
@@ -50,6 +57,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
+  for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
 }
 
@@ -543,6 +551,7 @@ const dedicatedEs = [
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
+  ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
