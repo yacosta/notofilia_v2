@@ -175,6 +175,7 @@ export const seriesCopy = {
     eraLabel: 'Época',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
+    parentLink: 'Billetes de polímero',
   },
   en: {
     metaTitle: 'China · Historical paper money and polymer notes | Notofilia',
@@ -199,6 +200,7 @@ export const seriesCopy = {
     eraLabel: 'Period',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
+    parentLink: 'Polymer banknotes',
   },
 } as const;
 
@@ -300,7 +302,7 @@ export const chinaNotes: ChinaNote[] = [
 
 export const notePageCopy = {
   es: {
-    seriesLink: 'Billetes de polímero',
+    seriesLink: 'Billetes de polímero mundial',
     collectionLink: 'China',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
@@ -318,7 +320,7 @@ export const notePageCopy = {
     closeLightbox: 'Cerrar',
   },
   en: {
-    seriesLink: 'Polymer banknotes',
+    seriesLink: 'World polymer banknotes',
     collectionLink: 'China',
     frontHeading: 'Face',
     backHeading: 'Back',

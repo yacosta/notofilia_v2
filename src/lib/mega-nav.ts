@@ -3,6 +3,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
+import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 
 export type NavNode = {
@@ -48,6 +49,7 @@ export const megaNav: NavNode[] = [
         id: 'polimero',
         es: 'Billetes de polímero mundial',
         en: 'World polymer banknotes',
+        href: POLIMERO_MUNDIAL_PATH,
         children: [
           { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH },
         ],

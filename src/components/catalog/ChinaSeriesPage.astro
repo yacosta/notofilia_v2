@@ -8,6 +8,7 @@ import {
   seriesPath,
   seriesSources,
 } from '../../data/china';
+import { POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -68,6 +69,12 @@ const hero = {
           <li>
             <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
               {locale === 'en' ? 'Home' : 'Inicio'}
+            </a>
+          </li>
+          <li aria-hidden="true">·</li>
+          <li>
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(POLIMERO_MUNDIAL_PATH, locale)}>
+              {t.parentLink}
             </a>
           </li>
           <li aria-hidden="true">·</li>
