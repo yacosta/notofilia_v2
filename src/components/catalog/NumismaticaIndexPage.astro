@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import Breadcrumb from '../Breadcrumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { collectionPageJsonLd } from '../../lib/json-ld';
 import { numismaticaCopy, numismaticaCountries, numismaticaPath } from '../../data/numismatica';
 
 interface Props {
@@ -10,21 +12,31 @@ interface Props {
 const { locale } = Astro.props;
 const t = numismaticaCopy[locale];
 const pathname = numismaticaPath(locale);
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.title, path: pathname },
+  ],
+});
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
-              {locale === 'en' ? 'Home' : 'Inicio'}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.title}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { label: t.title },
+        ]}
+      />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
       <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
@@ -44,7 +56,7 @@ const pathname = numismaticaPath(locale);
 
         <ol
           class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
-          aria-label={locale === 'en' ? 'Cases in the coin catalog' : 'Vitrinas del catálogo de monedas'}
+          aria-label={copy[locale].coinCases}
         >
           {
             numismaticaCountries.map((country) => (
@@ -78,7 +90,7 @@ const pathname = numismaticaPath(locale);
           href={localizePath('/', locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the homepage' : 'Volver al inicio'}
+          {copy[locale].backHome}
         </a>
       </p>
     </article>
