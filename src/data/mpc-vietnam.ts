@@ -30,8 +30,8 @@ export const mpcVietnamChapters: MpcVietnamChapter[] = [
       en: 'Dollar-denominated paper for overseas bases: not legal tender, and a secret C-Day could void it overnight.',
     },
     body: {
-      es: 'En julio de 1946 el Departamento de Guerra y el Tesoro probaron un sistema de pago militar; en septiembre salió la serie 461. El certificado de pago militar (Military Payment Certificate, MPC) circulaba solo entre personal autorizado, en instalaciones de las fuerzas armadas. No era curso legal estadounidense ni moneda local: servía en el economato, el correo y los servicios de la base, y se convertía en moneda del país, nunca al revés. El C-Day —Conversion Day— cerraba las bases a civiles y canjeaba la serie vigente; la saliente quedaba sin valor, para que el mercado negro no pudiera atesorarla. Trece series circularon; dos más se imprimieron y no se emitieron. Tudor Press y Forbes Lithograph, en Boston, grabaron las primeras; el Bureau of Engraving and Printing asumió desde la serie 611. A diferencia del intaglio de los Federal Reserve Notes, el MPC se imprimió en offset, con planchetas de color en el papel.',
-      en: 'In July 1946 the War Department and the Treasury tried a military payment system; Series 461 followed in September. Military Payment Certificates circulated only among authorized personnel, on armed-forces installations. They were neither U.S. legal tender nor local currency: they paid the PX, the post office, and base services, and could be changed into the host country’s money, never the reverse. C-Day — Conversion Day — closed bases to civilians and exchanged the current series; the outgoing notes became worthless so the black market could not hoard them. Thirteen series circulated; two more were printed and never issued. Tudor Press and Forbes Lithograph, in Boston, produced the early series; the Bureau of Engraving and Printing took over from Series 611. Unlike the intaglio of Federal Reserve Notes, MPCs were offset-printed on paper with colored planchettes.',
+      es: 'En julio de 1946 el Departamento de Guerra y el Tesoro probaron un sistema de pago militar; en septiembre salió la serie 461. El certificado de pago militar (Military Payment Certificate, MPC) era un instrumento de las fuerzas armadas —no un billete del Tesoro—: circulaba solo entre personal autorizado, en instalaciones de la base. No era curso legal estadounidense ni moneda local. Poseerlo fuera de ese círculo, en particular un civil vietnamita, estaba prohibido. Servía en el economato, el correo y los servicios de la base, y se convertía en moneda del país, nunca al revés: así el dólar federal no alimentaba el mercado negro ni depreciaba el đồng de Vietnam del Sur, la piastra del habla militar. El C-Day —Conversion Day— se clasificaba y se ejecutaba sin aviso. Ese día las tropas quedaban confinadas; había una ventana breve para canjear la serie vigente. La saliente amanecía sin valor, para que el acaparador no pudiera atesorarla. Se imprimieron quince series; trece circularon y dos nunca se emitieron. Tudor Press y Forbes Lithograph, en Boston, grabaron las primeras; el Bureau of Engraving and Printing asumió desde la serie 611. A diferencia del intaglio de los Federal Reserve Notes, el MPC se imprimió en litografía offset —barata y muy colorida: cuatro tintas al anverso y dos al reverso—, con planchetas de color en el papel, y no lleva el sello del Tesoro.',
+      en: 'In July 1946 the War Department and the Treasury tried a military payment system; Series 461 followed in September. Military Payment Certificates were an armed-forces instrument — not a Treasury note — and circulated only among authorized personnel, on base. They were neither U.S. legal tender nor local currency. Possession outside that circle, especially by a Vietnamese civilian, was forbidden. They paid the PX, the post office, and base services, and could be changed into the host country’s money, never the reverse: that kept federal dollars from feeding the black market or depreciating South Vietnam’s đồng, the piaster of military speech. C-Day — Conversion Day — was classified and unannounced. Troops were confined to base; a short window exchanged the current series. The outgoing notes woke up worthless so hoarders could not stockpile them. Fifteen series were printed; thirteen circulated and two were never issued. Tudor Press and Forbes Lithograph, in Boston, produced the early series; the Bureau of Engraving and Printing took over from Series 611. Unlike the intaglio of Federal Reserve Notes, MPCs were offset-lithographed — cheap and highly colorful: four inks on the face and two on the back — on paper with colored planchettes, and they carry no Treasury seal.',
     },
   },
   {
@@ -90,12 +90,12 @@ export const mpcVietnamChapters: MpcVietnamChapter[] = [
       en: 'Series 692',
     },
     lead: {
-      es: 'Última serie del programa: fraccionarios hasta el 1 de junio de 1971; dólares hasta el 15 de marzo de 1973.',
-      en: 'Last series of the program: fractionals until 1 June 1971; dollar notes until 15 March 1973.',
+      es: 'Última serie del programa: bisonte en el 1 dólar, Ouray en el 20; fraccionarios hasta el 1 de junio de 1971 y dólares hasta el 15 de marzo de 1973.',
+      en: 'Last series of the program: bison on the $1, Ouray on the $20; fractionals until 1 June 1971 and dollar notes until 15 March 1973.',
     },
     body: {
-      es: 'La 692 —segunda serie diseñada en 1969, porque la 691 no llegó a circular— se emitió el 7 de octubre de 1970. El 1 de junio de 1971 se retiraron los 5, 10, 25 y 50 centavos: las monedas estadounidenses bastaban en la base. Los 1, 5, 10 y 20 dólares siguieron hasta el 15 de marzo de 1973, último C-Day del programa. Una serie 701, pensada para Vietnam, se imprimió y no se puso en circulación. El MPC dejó de usarse; el programa no se canceló de forma formal hasta 2003. Esta vitrina reunirá, a medida que se fotografíen, las series vietnamitas de la colección, con referencias Schwan o Pick cuando existan.',
-      en: 'Series 692 — the second series designed in 1969, because 691 never circulated — was issued on 7 October 1970. On 1 June 1971 the 5-, 10-, 25-, and 50-cent notes were withdrawn: U.S. coins sufficed on base. The $1, $5, $10, and $20 continued until 15 March 1973, the program’s last C-Day. A Series 701, intended for Vietnam, was printed and never released. MPCs ceased to be used; the program was not formally cancelled until 2003. This case will gather, as they are photographed, the Vietnam series in the collection, with Schwan or Pick references when they exist.',
+      es: 'La 692 —segunda serie diseñada en 1969, porque la 691 no llegó a circular— se emitió el 7 de octubre de 1970. El 1 de junio de 1971 se retiraron los 5, 10, 25 y 50 centavos: las monedas estadounidenses bastaban en la base. Los 1, 5, 10 y 20 dólares siguieron hasta el 15 de marzo de 1973, último C-Day del programa. El BEP la vestió de temas estadounidenses: el 1 dólar lleva al reverso el bisonte Pablo —el mismo grabado del Legal Tender de 10 dólares de 1901—; el 10 dólares, al jefe lakota Hollow Horn Bear; el 20 dólares, al jefe uta Ouray. Una serie 701, pensada para Vietnam, se imprimió y no se puso en circulación al acelerarse la retirada. El MPC dejó de usarse; el programa no se canceló de forma formal hasta 2003. Esta vitrina reunirá, a medida que se fotografíen, las series vietnamitas de la colección, con referencias Schwan o Pick cuando existan.',
+      en: 'Series 692 — the second series designed in 1969, because 691 never circulated — was issued on 7 October 1970. On 1 June 1971 the 5-, 10-, 25-, and 50-cent notes were withdrawn: U.S. coins sufficed on base. The $1, $5, $10, and $20 continued until 15 March 1973, the program’s last C-Day. The BEP dressed it in American themes: the $1 carries on its back Pablo the bison — the same engraving as the 1901 $10 Legal Tender; the $10, Lakota chief Hollow Horn Bear; the $20, Ute chief Ouray. A Series 701, intended for Vietnam, was printed and never released as withdrawal accelerated. MPCs ceased to be used; the program was not formally cancelled until 2003. This case will gather, as they are photographed, the Vietnam series in the collection, with Schwan or Pick references when they exist.',
     },
   },
 ];
@@ -115,8 +115,8 @@ export const seriesSources: CatalogSource[] = [
     es: 'CoinWeek — Money of Necessity: U.S. Military Payment Certificates',
     en: 'CoinWeek — Money of Necessity: U.S. Military Payment Certificates',
     note: {
-      es: 'Origen en 1946, C-Day, offset frente a intaglio, planchetas, impresores de Boston y el BEP desde la serie 611.',
-      en: '1946 origin, C-Day, offset versus intaglio, planchettes, the Boston printers, and the BEP from Series 611.',
+      es: 'Origen en 1946, uso solo por personal autorizado, C-Day con bases cerradas, litografía offset a cuatro y dos tintas, planchetas, impresores de Boston y el BEP desde la serie 611; quince series impresas, trece emitidas.',
+      en: '1946 origin, use only by authorized personnel, C-Day with bases closed, four- and two-color offset lithography, planchettes, the Boston printers, and the BEP from Series 611; fifteen series printed, thirteen issued.',
     },
   },
   {
@@ -146,6 +146,15 @@ export const seriesSources: CatalogSource[] = [
       en: 'Timeline of the Vietnam series and the split withdrawal of Series 692 (fractionals / dollars).',
     },
   },
+  {
+    href: 'https://art-hanoi.com/mpc/usa/mpc-series-692',
+    es: 'Art-Hanoi — MPC serie 692 (P-M83 a P-M89)',
+    en: 'Art-Hanoi — MPC Series 692 (P-M83 to P-M89)',
+    note: {
+      es: 'Identifica el bisonte al reverso del 1 dólar, Hollow Horn Bear en el 10 dólares y el retiro de los fraccionarios el 1 de junio de 1971.',
+      en: 'Identifies the bison on the $1 back, Hollow Horn Bear on the $10, and the 1 June 1971 withdrawal of the fractionals.',
+    },
+  },
 ];
 
 export const seriesCopy = {
@@ -159,14 +168,24 @@ export const seriesCopy = {
     heroAlt:
       'Mapa vintage en relieve 3D de Vietnam sobre pergamino, con Hanói, Huế, el palacio de la Independencia, el delta del Mekong, el paralelo 17, sellos, un billete de Air Vietnam, un pasaporte y el título Vietnam 1955–1975',
     intro: [
-      'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
-      'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
-      'En Vietnam el programa tuvo teatro propio. La serie 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí. La 661 trajo el 20 dólares. La 681 cubrió 1969–1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea, no en Vietnam.',
+      'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos, y poseer MPC sin autorización estaba prohibido. Así se cortaba el mercado negro y se evitaba depreciar el đồng de Vietnam del Sur —la piastra del habla militar— con greenbacks.',
+      'El arma del sistema era el C-Day, clasificado y sin fecha anunciada. Ese día las tropas quedaban confinadas a la base y tenían una ventana breve para canjear la serie vigente. La saliente amanecía sin valor: el papel del acaparador se convertía en dinero de juguete. Se imprimieron quince series entre 1946 y 1973; trece circularon. Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en litografía offset —cuatro tintas al anverso, dos al reverso, planchetas de color—, no en el intaglio de los Federal Reserve Notes, y sin el sello del Tesoro.',
+      'En Vietnam el programa tuvo teatro propio y cuatro series. La 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí: 5, 10, 25 y 50 centavos y 1, 5 y 10 dólares. La 661, del 21 de octubre de 1968 al 11 de agosto de 1969, trajo el 20 dólares. La 681 cubrió del 11 de agosto de 1969 al 7 de octubre de 1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea del Sur, no en Vietnam; la 701 se imprimió para este teatro y no se emitió.',
       'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J01130273J; el 5 dólares de la serie 661, B03327560B; el 1 dólar de la serie 681, C10102847C; y el 20 dólares de la serie 692, E05725119E. Las demás se publicarán como en Filipinas, a medida que se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
     usLead: 'El resto del papel federal, colonial y obsoleto se documenta en la vitrina de Estados Unidos.',
     usLink: 'Estados Unidos',
+    factsHeading: 'El teatro vietnamita',
+    denominationsLabel: 'Denominaciones',
+    denominationsValue: 'Fraccionarios: 5, 10, 25 y 50 centavos. Dólares: 1, 5 y 10; el 20 desde la serie 661.',
+    printingLabel: 'Impresión',
+    printingValue: 'Litografía offset a color, planchetas; sin sello del Tesoro.',
+    authorityLabel: 'Autoridad',
+    authorityValue: 'Instrumento de las fuerzas armadas (Departamento de Guerra, luego Defensa); no es un billete del Tesoro.',
+    seriesTableLabel: 'Series usadas en Vietnam',
+    notVietnamNote:
+      'La 651 (28 de abril de 1969) circuló en Japón, Libia y Corea del Sur. La 701 se imprimió para Vietnam y no se emitió.',
     sourcesTitle: 'Fuentes',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -182,20 +201,81 @@ export const seriesCopy = {
     heroAlt:
       'Vintage 3D relief map of Vietnam on parchment, with Hanoi, Huế, Independence Palace, the Mekong Delta, the 17th parallel, postage stamps, an Air Vietnam ticket, a passport, and the title Vietnam 1955–1975',
     intro: [
-      'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
-      'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
-      'In Vietnam the program had its own theater. Series 641, 31 August 1965 to 21 October 1968, was the first used only there. Series 661 brought the $20. Series 681 covered 1969–1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and Korea, not in Vietnam.',
+      'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back, and unauthorized possession of MPC was forbidden. That cut the black market and kept federal greenbacks from depreciating South Vietnam’s đồng — the piaster of military speech.',
+      'The system’s weapon was C-Day, classified and unannounced. That day troops were confined to base and had a short window to exchange the current series. The outgoing notes woke up worthless: the hoarder’s paper became play money. Fifteen series were printed from 1946 to 1973; thirteen circulated. Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset lithography — four inks on the face, two on the back, colored planchettes — not the intaglio of Federal Reserve Notes, and without a Treasury seal.',
+      'In Vietnam the program had its own theater and four series. Series 641, 31 August 1965 to 21 October 1968, was the first used only there: 5¢, 10¢, 25¢, and 50¢ and $1, $5, and $10. Series 661, 21 October 1968 to 11 August 1969, brought the $20. Series 681 ran from 11 August 1969 to 7 October 1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and South Korea, not in Vietnam; Series 701 was printed for this theater and never issued.',
       'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J01130273J; the Series 661 $5, serial B03327560B; the Series 681 $1, serial C10102847C; and the Series 692 $20, serial E05725119E. Further pieces will be published as they are photographed, as in the Philippines case.',
     ],
     parentLink: 'United States',
     usLead: 'The rest of the federal, colonial, and obsolete paper is documented in the United States case.',
     usLink: 'United States',
+    factsHeading: 'The Vietnam theater',
+    denominationsLabel: 'Denominations',
+    denominationsValue: 'Fractionals: 5¢, 10¢, 25¢, and 50¢. Dollars: $1, $5, and $10; the $20 from Series 661.',
+    printingLabel: 'Printing',
+    printingValue: 'Color offset lithography, planchettes; no Treasury seal.',
+    authorityLabel: 'Authority',
+    authorityValue: 'An armed-forces instrument (War Department, later Defense); not a Treasury note.',
+    seriesTableLabel: 'Series used in Vietnam',
+    notVietnamNote:
+      'Series 651 (28 April 1969) circulated in Japan, Libya, and South Korea. Series 701 was printed for Vietnam and never issued.',
     sourcesTitle: 'Sources',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
   },
 } as const;
+
+export const vietnamTheaterSeries = [
+  {
+    id: 'serie-641',
+    name: { es: 'Serie 641', en: 'Series 641' },
+    dates: {
+      es: '31 de agosto de 1965 – 21 de octubre de 1968',
+      en: '31 August 1965 – 21 October 1968',
+    },
+    note: {
+      es: 'Primera serie confinada a Vietnam. Siete valores; aún no había 20 dólares.',
+      en: 'First series confined to Vietnam. Seven values; no $20 yet.',
+    },
+  },
+  {
+    id: 'serie-661',
+    name: { es: 'Serie 661', en: 'Series 661' },
+    dates: {
+      es: '21 de octubre de 1968 – 11 de agosto de 1969',
+      en: '21 October 1968 – 11 August 1969',
+    },
+    note: {
+      es: 'Primera serie vietnamita con el 20 dólares.',
+      en: 'First Vietnam series with the $20.',
+    },
+  },
+  {
+    id: 'serie-681',
+    name: { es: 'Serie 681', en: 'Series 681' },
+    dates: {
+      es: '11 de agosto de 1969 – 7 de octubre de 1970',
+      en: '11 August 1969 – 7 October 1970',
+    },
+    note: {
+      es: 'Ocho denominaciones ya habituales.',
+      en: 'The eight denominations then standard.',
+    },
+  },
+  {
+    id: 'serie-692',
+    name: { es: 'Serie 692', en: 'Series 692' },
+    dates: {
+      es: '7 de octubre de 1970 – 15 de marzo de 1973',
+      en: '7 October 1970 – 15 March 1973',
+    },
+    note: {
+      es: 'Última serie. Bisonte en el 1 dólar; Ouray en el 20. Fraccionarios hasta el 1 de junio de 1971.',
+      en: 'Last series. Bison on the $1; Ouray on the $20. Fractionals until 1 June 1971.',
+    },
+  },
+] as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_MPC_PATH, locale);
