@@ -1,7 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { breadcrumbList } from '../lib/json-ld';
+import { cfImage } from '../lib/images';
 import {
+  CONTACT_IMAGE,
   CONTACT_TURNSTILE_SITE_KEY,
   WEB3FORMS_ACCESS_KEY,
   contactCopy,
@@ -15,17 +19,27 @@ interface Props {
 const { locale } = Astro.props;
 const t = contactCopy[locale];
 const pathname = contactPath(locale);
+const homePath = localizePath('/', locale);
+const formCopy = {
+  sending: t.sending,
+  success: t.success,
+  error: t.error,
+  turnstile: t.turnstile,
+  reportLead: t.reportLead,
+  recordLabel: t.recordLabel,
+  describePrompt: t.describePrompt,
+};
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Notofilia', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: t.nav, item: `${SITE_URL}${pathname}` },
+    breadcrumbList(
+      [
+        { name: 'Notofilia', path: '/' },
+        { name: t.nav, path: pathname },
       ],
-    },
+      locale,
+    ),
     {
       '@type': 'ContactPage',
       name: t.title,
@@ -43,42 +57,29 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
-    <article class="mx-auto max-w-[75rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
-      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
-              {t.home}
-            </a>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.nav}</li>
-        </ol>
-      </nav>
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: homePath, label: t.home },
+          { label: t.nav },
+        ]}
+      />
 
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div class="flex min-h-[280px] items-center justify-center">
-          <picture>
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.webp 360w, /uploads/doblones-coloniales-oro.webp 511w"
-              type="image/webp"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.png 360w, /uploads/doblones-coloniales-oro.png 511w"
-              type="image/png"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <img
-              src="/uploads/doblones-coloniales-oro.png"
-              alt={t.imageAlt}
-              width="511"
-              height="511"
-              class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
+          <img
+            src={cfImage(CONTACT_IMAGE, { width: 511, quality: 80 })}
+            srcset={[360, 511, 800].map((width) => `${cfImage(CONTACT_IMAGE, { width })} ${width}w`).join(', ')}
+            sizes="(max-width: 700px) 70vw, 360px"
+            alt={t.imageAlt}
+            width="511"
+            height="511"
+            class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div data-contact-root>
@@ -87,6 +88,7 @@ const jsonLd = {
           </h1>
           <p class="mb-8 mt-0 text-[18px] leading-[1.6] text-muted">{t.intro}</p>
 
+          <script type="application/json" data-contact-copy set:html={JSON.stringify(formCopy)} />
           <form
             id="web3forms-contact-form"
             name="web3forms-contact-form"
@@ -190,7 +192,15 @@ const jsonLd = {
       const form = root && root.querySelector('[data-contact-form]');
       const status = root && root.querySelector('[data-contact-status]');
       const submit = root && root.querySelector('[data-contact-submit]');
-      if (!form || !status || !submit) return;
+      const copyNode = root && root.querySelector('[data-contact-copy]');
+      if (!form || !status || !submit || !copyNode) return;
+
+      let copy = {};
+      try {
+        copy = JSON.parse(copyNode.textContent || '{}');
+      } catch (err) {
+        copy = {};
+      }
 
       (function prefillFromQuery() {
         const params = new URLSearchParams(window.location.search);
@@ -202,50 +212,15 @@ const jsonLd = {
         if (email && emailInput && !emailInput.value) emailInput.value = email;
         const message = form.querySelector('#cf-message');
         if (!message || message.value.trim()) return;
-        const isEn = document.documentElement.lang === 'en';
         const lines = [];
-        if (motivo === 'error') {
-          lines.push(
-            isEn
-              ? 'I want to report an error or add information.'
-              : 'Quiero reportar un error o aportar información.',
-          );
-        }
-        if (ficha) lines.push((isEn ? 'Record: ' : 'Ficha: ') + ficha);
+        if (motivo === 'error') lines.push(copy.reportLead || '');
+        if (ficha) lines.push((copy.recordLabel || '') + ficha);
         if (pageUrl) lines.push('URL: ' + pageUrl);
         if (lines.length) {
-          lines.push(
-            '',
-            isEn ? 'Describe the error or the additional information:' : 'Describa el error o la información adicional:',
-            '',
-          );
+          lines.push('', copy.describePrompt || '', '');
           message.value = lines.join('\n');
         }
       })();
-
-      const copy = {
-        es: {
-          sending: 'Enviando…',
-          success: '¡Gracias! Tu mensaje fue enviado correctamente.',
-          error: 'Hubo un error al enviar el formulario. Inténtalo de nuevo.',
-          turnstile: 'Por favor completa la verificación de seguridad.',
-        },
-        en: {
-          sending: 'Sending…',
-          success: 'Thank you! Your message was sent.',
-          error: 'There was an error sending the form. Please try again.',
-          turnstile: 'Please complete the security check.',
-        },
-      };
-
-      function langCopy() {
-        const lang =
-          document.documentElement.getAttribute('data-page-locale') === 'en' ||
-          document.documentElement.lang === 'en'
-            ? 'en'
-            : 'es';
-        return copy[lang];
-      }
 
       function showStatus(kind, message) {
         status.hidden = false;
@@ -264,14 +239,13 @@ const jsonLd = {
         const data = new FormData(form);
         if (data.get('botcheck')) return;
         if (!data.get('cf-turnstile-response')) {
-          showStatus('error', langCopy().turnstile);
+          showStatus('error', copy.turnstile);
           return;
         }
         submit.disabled = true;
         const idleLabel = submit.textContent;
-        const current = langCopy();
-        submit.textContent = current.sending;
-        showStatus('info', current.sending);
+        submit.textContent = copy.sending;
+        showStatus('info', copy.sending);
         try {
           const res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -280,15 +254,15 @@ const jsonLd = {
           });
           const json = await res.json();
           if (json && json.success) {
-            showStatus('success', langCopy().success);
+            showStatus('success', copy.success);
             form.reset();
             if (window.turnstile) window.turnstile.reset();
           } else {
-            showStatus('error', langCopy().error);
+            showStatus('error', copy.error);
             if (window.turnstile) window.turnstile.reset();
           }
         } catch (err) {
-          showStatus('error', langCopy().error);
+          showStatus('error', copy.error);
           if (window.turnstile) window.turnstile.reset();
         } finally {
           submit.disabled = false;

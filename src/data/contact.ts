@@ -5,6 +5,8 @@ export const CONTACT_PATH_EN = '/contact/';
 export const CONTACT_TURNSTILE_SITE_KEY = '0x4AAAAAADvt7AgpnTMnMZh6';
 export const WEB3FORMS_ACCESS_KEY = 'ca9bc7d8-b852-43ba-829b-db452413852d';
 
+export const CONTACT_IMAGE = '/uploads/doblones-coloniales-oro.png';
+
 export const contactCopy = {
   es: {
     nav: 'Contacto',
@@ -23,6 +25,13 @@ export const contactCopy = {
     subject: 'Nuevo mensaje de contacto — Notofilia.com',
     imageAlt: 'Doblones de oro coloniales españoles, moneda macuquina de 8 y 4 escudos',
     required: 'obligatorio',
+    sending: 'Enviando…',
+    success: '¡Gracias! Tu mensaje fue enviado correctamente.',
+    error: 'Hubo un error al enviar el formulario. Inténtalo de nuevo.',
+    turnstile: 'Por favor completa la verificación de seguridad.',
+    reportLead: 'Quiero reportar un error o aportar información.',
+    recordLabel: 'Ficha: ',
+    describePrompt: 'Describa el error o la información adicional:',
   },
   en: {
     nav: 'Contact',
@@ -39,8 +48,15 @@ export const contactCopy = {
     message: 'Message',
     submit: 'Send message',
     subject: 'New contact message — Notofilia.com',
-    imageAlt: 'Spanish colonial gold doubloons, cob coinage of 8 and 4 escudos',
+    imageAlt: 'Spanish colonial gold doubloons, cob coins of 8 and 4 escudos',
     required: 'required',
+    sending: 'Sending…',
+    success: 'Thank you! Your message was sent.',
+    error: 'There was an error sending the form. Please try again.',
+    turnstile: 'Please complete the security check.',
+    reportLead: 'I want to report an error or add information.',
+    recordLabel: 'Record: ',
+    describePrompt: 'Describe the error or the additional information:',
   },
 } as const;
 

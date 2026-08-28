@@ -15,3 +15,4 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 - Colombia: https://notofilia.com/coleccion/colombia/ · https://notofilia.com/en/collection/colombia/
 - Editorial policy: https://notofilia.com/editorial/ · https://notofilia.com/en/editorial/
 - About: https://notofilia.com/acerca-de/ · https://notofilia.com/en/about/
+- Contact / Contacto: https://notofilia.com/contacto/ · https://notofilia.com/en/contact/
