@@ -29,6 +29,14 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
       '/en/collection/colombia/5-pesos-rio-hacha-1883/',
     );
+    assert.equal(
+      localizePath('/coleccion/colombia/10-pesos-oro-1943-anverso/', 'en'),
+      '/en/collection/colombia/10-pesos-oro-1943-anverso/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/10-pesos-oro-1943-reverso/', 'en'),
+      '/en/collection/colombia/10-pesos-oro-1943-reverso/',
+    );
   });
 
   it('keeps hreflang pairs reciprocal', () => {
