@@ -171,9 +171,6 @@ export const seriesCopy = {
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
-    holdingsTitle: 'Piezas de la colección',
-    holdingsIntro:
-      'Cada serie ocupa su propia fila. En cada fila, de izquierda a derecha, de la denominación más baja a la más alta.',
   },
   en: {
     metaTitle: 'United States · Vietnam War MPCs | Notofilia',
@@ -197,9 +194,6 @@ export const seriesCopy = {
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
-    holdingsTitle: 'Notes in the collection',
-    holdingsIntro:
-      'Each series keeps to its own row. In each row, left to right, from the lowest denomination to the highest.',
   },
 } as const;
 
