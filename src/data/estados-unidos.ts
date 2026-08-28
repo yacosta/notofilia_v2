@@ -65,12 +65,12 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Confederate States',
     },
     lead: {
-      es: 'Graybacks del Tesoro de Richmond: siete series, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
-      en: 'Treasury graybacks from Richmond: seven series, unbacked by specie, through the act of 17 February 1864.',
+      es: 'Graybacks del Tesoro: de Montgomery a Richmond, sin oro ni reconocimiento, hasta la reforma de 1864.',
+      en: 'Treasury graybacks: from Montgomery to Richmond, without gold or recognition, through the 1864 reform.',
     },
     body: {
-      es: 'El dólar de los Estados Confederados —grayback, para distinguirlo del greenback federal— se emitió desde abril de 1861 como letra de crédito: una promesa de pago tras un tratado de paz, no un canje en oro. Wikipedia resume siete series autorizadas por el Congreso confederado, por un total de 1.700 millones de dólares, y 72 tipos Criswell. Keatinge & Ball, primero en Richmond y luego en Columbia, Carolina del Sur, grabó la mayor parte de la última emisión. La ley del 17 de febrero de 1864, la séptima, autorizó 200 millones en papel pagadero dos años después de la paz e intentó retirar emisiones anteriores. Al terminar la guerra el papel perdió todo valor de curso. En esta vitrina abre el 20 dólares T-67 de esa fecha, serial 74523.',
-      en: 'The Confederate States dollar — a grayback, to distinguish it from the federal greenback — was issued from April 1861 as a bill of credit: a promise to pay after a treaty of peace, not a redemption in gold. Wikipedia summarizes seven series authorized by the Confederate Congress, totaling $1.7 billion, and 72 Criswell types. Keatinge & Ball, first in Richmond and later in Columbia, South Carolina, engraved most of the last issue. The act of 17 February 1864, the seventh series, authorized $200 million in paper payable two years after peace and tried to retire earlier issues. When the war ended the paper lost all value as currency. This case opens with the T-67 $20 of that date, serial 74523.',
+      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina abre el 20 dólares T-67 de febrero de 1864, serial 74523.',
+      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case opens with the T-67 $20 of February 1864, serial 74523.',
     },
   },
   {
@@ -293,7 +293,7 @@ export type UnitedStatesNote = {
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
-  history?: LocalizedText;
+  history?: LocalizedText | LocalizedText[];
   historyHeading?: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
@@ -494,10 +494,24 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       es: 'El 20 dólares del 17 de febrero de 1864 (Pick 69, Criswell y Fricke T-67, Numista N#202478) es el veinte de la última emisión del Tesoro de los Estados Confederados. El anverso, en negro sobre papel crema, lleva al centro el Capitolio de Tennessee en Nashville —columnata y cúpula— y, a la derecha, el retrato oval de Alexander H. Stephens, vicepresidente de la Confederación. Los medallones superiores leen la cláusula de redención: «TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE» y «THE CONFEDERATE STATES AND THE UNITED STATES OF AMERICA». Bajo la viñeta, «THE CONFEDERATE STATES OF AMERICA» promete pagar TWENTY DOLLARS al portador a la vista; la fecha impresa es «Richmond, February 17th 1864». El flanco izquierdo lleva TWENTY en vertical; arriba a la derecha, un 20 en marco festoneado. El serial manuscrito 74523 se repite a ambos lados; la letra de plancha es A. Las firmas son las de los amanuenses «for Register» y «for Treasurer». El pie de imprenta es Keatinge & Ball, Columbia, S.C. El reverso, en azul, muestra TWENTY sobre un campo de guilloches y un 20 en cada esquina. En el margen superior derecho de este ejemplar hay una anotación manuscrita «Joseph». La pieza de la colección, circulada y sin encapsular, se presenta en funda.',
       en: 'The $20 of 17 February 1864 (Pick 69, Criswell and Fricke T-67, Numista N#202478) is the twenty of the Confederate Treasury’s last issue. The black face on cream paper carries the Tennessee State Capitol in Nashville — colonnade and cupola — at center and, at right, an oval portrait of Alexander H. Stephens, vice president of the Confederacy. The upper medallions read the redemption clause: “TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE” and “THE CONFEDERATE STATES AND THE UNITED STATES OF AMERICA.” Beneath the vignette, “THE CONFEDERATE STATES OF AMERICA” promises to pay TWENTY DOLLARS to the bearer on demand; the printed date is “Richmond, February 17th 1864.” TWENTY runs vertically at left; a scalloped 20 sits at upper right. Manuscript serial 74523 is written twice; the plate letter is A. The signatures are those of clerks “for Register” and “for Treasurer.” The imprint is Keatinge & Ball, Columbia, S.C. The blue back shows TWENTY on a guilloche field and a 20 in each corner. The upper-right margin of this piece carries a manuscript annotation “Joseph.” The collection note, circulated and unslabbed, is shown in a sleeve.',
     },
-    history: {
-      es: 'La ley del 17 de febrero de 1864 —séptima y última serie del dólar confederado— autorizó 200 millones de dólares en papel pagadero dos años después de un tratado de paz e intentó retirar emisiones anteriores. Wikipedia resume las siete series desde 1861 (1.700 millones en total) y 72 tipos Criswell; sitúa el grabado de T-67 en Keatinge & Ball, de Columbia, Carolina del Sur. Edward Keatinge había grabado retratos para la Southern Bank Note Company; la casa se trasladó de Richmond a Columbia en 1862. El grayback no tenía respaldo metálico: era una letra de crédito sobre la independencia del Sur. El Capitolio de Nashville, viñeta central de este veinte, había caído en manos de la Unión en febrero de 1862. Las firmas manuscritas de escribientes —el Tesoro llegó a contratar hasta doscientos por cada cargo— eran la norma en los enteros; solo el medio dólar llevó firmas impresas. Tras 1865 el papel perdió todo valor de curso.',
-      en: 'The act of 17 February 1864 — the seventh and last series of the Confederate dollar — authorized $200 million in paper payable two years after a treaty of peace and tried to retire earlier issues. Wikipedia summarizes the seven series from 1861 ($1.7 billion in all) and 72 Criswell types; it places the engraving of T-67 with Keatinge & Ball of Columbia, South Carolina. Edward Keatinge had engraved portraits for the Southern Bank Note Company; the firm moved from Richmond to Columbia in 1862. The grayback had no metallic backing: it was a bill of credit on Southern independence. The Nashville Capitol, the central vignette of this twenty, had fallen to the Union in February 1862. Manuscript signatures by clerks — the Treasury eventually hired as many as two hundred for each office — were the rule on whole-dollar notes; only the 50-cent issue carried printed signatures. After 1865 the paper lost all value as currency.',
-    },
+    history: [
+      {
+        es: 'El Tesoro confederado nació casi vacío. La riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal; el bloqueo unionista cortó las exportaciones de algodón que habrían podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, Alabama, antes de que la capital pasara a Richmond. Christopher G. Memminger, secretario del Tesoro, recurrió a la prensa: los impuestos y los bonos cubrían solo una fracción de la guerra. El grayback no era un canje en oro. Era una promesa de pago si el Sur ganaba.',
+        en: 'The Confederate Treasury opened almost empty. Southern wealth sat in land and enslaved people, not in coin; the Union blockade cut off the cotton exports that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, Alabama, before the capital moved to Richmond. Christopher G. Memminger, secretary of the Treasury, turned to the press: taxes and bonds covered only a fraction of the war. The grayback was not a redemption in gold. It was a promise to pay if the South won.',
+      },
+      {
+        es: 'Casi todos los grabadores y las planchas de banco estaban en Nueva York y Filadelfia. Wikipedia registra las primeras planchas de la National Bank Note Company y de su sucursal de Nueva Orleans, la Southern Bank Note Company, hasta que esa vía se cerró. Entonces imprimieron Hoyer & Ludwig en Richmond, Keatinge & Ball —Edward Keatinge había grabado retratos para la Southern Bank Note Company; la casa pasó de Richmond a Columbia en 1862— y Archer & Daly, a menudo en litografía, con papeles y planchas desiguales por el bloqueo. El resultado se copiaba con facilidad. Samuel C. Upham, de Filadelfia, vendió desde 1862 «fac-simile Confederate notes» como recuerdos; los contrabandistas recortaban el pie y los hacían circular en el Sur.',
+        en: 'Almost all the engravers and bank plates sat in New York and Philadelphia. Wikipedia records the first plates of the National Bank Note Company and of its New Orleans branch, the Southern Bank Note Company, until that route closed. Then Hoyer & Ludwig printed in Richmond, Keatinge & Ball — Edward Keatinge had engraved portraits for the Southern Bank Note Company; the firm moved from Richmond to Columbia in 1862 — and Archer & Daly, often by lithography, on uneven paper and plates under the blockade. The result was easy to copy. Samuel C. Upham of Philadelphia sold “fac-simile Confederate notes” as souvenirs from 1862; smugglers trimmed the imprint and passed them in the South.',
+      },
+      {
+        es: 'Los anversos llevaron a Jefferson Davis, Alexander H. Stephens, Memminger y Judah P. Benjamin, alegorías clásicas y escenas del comercio y de la esclavitud. Wikipedia cuenta que, de 72 tipos, cinco mostraron personas esclavizadas. Este veinte es el de Stephens y el Capitolio de Nashville, ya en manos de la Unión desde febrero de 1862. Las firmas manuscritas de escribientes —el Tesoro llegó a contratar hasta doscientos por cada cargo, a menudo mujeres— eran la norma en los enteros; solo el medio dólar llevó firmas impresas. Las primeras series prometían el pago seis meses después de un tratado de paz. La cláusula de 1864, la de esta pieza, dilató el canje a dos años.',
+        en: 'The faces carried Jefferson Davis, Alexander H. Stephens, Memminger, and Judah P. Benjamin, classical allegories, and scenes of Southern commerce and slavery. Wikipedia notes that five of the 72 types depicted enslaved people. This twenty is Stephens’s, with the Nashville Capitol, already in Union hands since February 1862. Manuscript signatures by clerks — the Treasury eventually hired as many as two hundred for each office, often women — were the rule on whole-dollar notes; only the 50-cent issue carried printed signatures. Early series promised payment six months after a treaty of peace. The 1864 clause, the one on this note, stretched redemption to two years.',
+      },
+      {
+        es: 'Entre 1861 y 1864 hubo siete series. Wikipedia cifra el total autorizado en 1.700 millones de dólares. Sin respaldo metálico, el grayback se hundió con las malas noticias: a finales de 1863 valía unos seis centavos de oro; en septiembre de 1864, tres. La ley del 17 de febrero de 1864 —la de este T-67— autorizó 200 millones en papel nuevo e intentó forzar el canje de los billetes viejos a descuento. No restauró la confianza. Tras Appomattox el papel perdió todo valor de curso. La Sección 4 de la Decimocuarta Enmienda declara ilegales y nulas las deudas contraídas en ayuda de la rebelión: ni los Estados Unidos ni ningún estado pueden asumirlas.',
+        en: 'Between 1861 and 1864 there were seven series. Wikipedia puts the authorized total at $1.7 billion. Unbacked by specie, the grayback sank with the bad news: by the end of 1863 it was worth about six cents in gold; by September 1864, three. The act of 17 February 1864 — the act behind this T-67 — authorized $200 million in new paper and tried to force the exchange of old notes at a discount. It did not restore trust. After Appomattox the paper lost all value as currency. Section 4 of the Fourteenth Amendment holds debts incurred in aid of rebellion illegal and void: neither the United States nor any state may assume them.',
+      },
+    ],
     historyHeading: {
       es: 'La emisión',
       en: 'The issue',
@@ -511,8 +525,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Blue back of the Confederate T-67 $20: TWENTY on guilloches and 20 in the four corners. Manuscript annotation “Joseph.”',
     },
     scarcity: {
-      es: 'Wikipedia cifra T-67 en unos 4.150.000 ejemplares. Es el veinte más común de la Confederación y, a menudo, el primer grayback de una colección de tipos. El Bank Note Museum lo numera P-69, sin separar las series impresas ni las letras de plancha. El mercado trata el tipo circulado como frecuente; las claves están en los estados altos, los márgenes completos y la ausencia de cortes de cancelación. Esta ficha no inventa una tirada por serie ni por letra.',
-      en: 'Wikipedia puts T-67 at about 4,150,000 notes. It is the most common Confederate twenty and often a collector’s first grayback in a type set. The Bank Note Museum numbers it P-69, without splitting printed series or plate letters. The market treats circulated examples as common; the keys are high grades, full margins, and the absence of cut cancels. This record does not invent a printage by series or letter.',
+      es: 'Wikipedia cifra T-67 en unos 4.150.000 ejemplares. Las emisiones tardías de 1864 —este veinte entre ellas— sobrevivieron a montones en desvanes y cajas; las de Montgomery de 1861 son otra escala. Es el veinte más común de la Confederación y, a menudo, el primer grayback de una colección de tipos. El Bank Note Museum lo numera P-69, sin separar las series impresas ni las letras de plancha. El mercado trata el tipo circulado como frecuente; las claves están en los estados altos, los márgenes completos y la ausencia de cortes de cancelación. Esta ficha no inventa una tirada por serie ni por letra.',
+      en: 'Wikipedia puts T-67 at about 4,150,000 notes. The late 1864 issues — this twenty among them — survived in attics and boxes by the million; the Montgomery notes of 1861 are another scale. It is the most common Confederate twenty and often a collector’s first grayback in a type set. The Bank Note Museum numbers it P-69, without splitting printed series or plate letters. The market treats circulated examples as common; the keys are high grades, full margins, and the absence of cut cancels. This record does not invent a printage by series or letter.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 74523. La pieza se presenta en funda, circulada, sin encapsular.',
@@ -546,8 +560,26 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Wikipedia — Confederate States dollar',
         en: 'Wikipedia — Confederate States dollar',
         note: {
-          es: 'Ley del 17 de febrero de 1864: 200 millones; T-67, Keatinge & Ball, unos 4.150.000; firmas de escribientes.',
-          en: 'Act of 17 February 1864: $200 million; T-67, Keatinge & Ball, about 4,150,000; clerk signatures.',
+          es: 'Montgomery 1861; siete series y 1.700 millones; litografía y planchas del Norte; cláusula de paz; inflación a seis y tres centavos de oro; T-67, Keatinge & Ball, unos 4.150.000.',
+          en: 'Montgomery 1861; seven series and $1.7 billion; lithography and Northern plates; peace clause; inflation to six and three cents in gold; T-67, Keatinge & Ball, about 4,150,000.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Samuel_Curtis_Upham',
+        es: 'Wikipedia — Samuel C. Upham',
+        en: 'Wikipedia — Samuel C. Upham',
+        note: {
+          es: 'Facsímiles vendidos en Filadelfia desde 1862; el pie se recortaba y el papel circulaba en el Sur.',
+          en: 'Facsimiles sold in Philadelphia from 1862; the imprint was trimmed and the paper circulated in the South.',
+        },
+      },
+      {
+        href: 'https://constitution.congress.gov/browse/amendment-14/section-4/',
+        es: 'Constitution Annotated — Decimocuarta Enmienda, Sección 4',
+        en: 'Constitution Annotated — Fourteenth Amendment, Section 4',
+        note: {
+          es: 'Ni los Estados Unidos ni ningún estado asumirán deudas contraídas en ayuda de la rebelión; tales deudas son ilegales y nulas.',
+          en: 'Neither the United States nor any state shall assume debts incurred in aid of rebellion; such debts are illegal and void.',
         },
       },
       {
