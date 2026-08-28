@@ -69,8 +69,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Treasury graybacks: from Montgomery to Richmond, without gold or recognition, through the 1864 reform.',
     },
     body: {
-      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina abre el 20 dólares T-67 de febrero de 1864, serial 74523.',
-      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case opens with the T-67 $20 of February 1864, serial 74523.',
+      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina están el 5 dólares T-69, serial 6164, y el 20 dólares T-67, serial 74523, ambos de febrero de 1864.',
+      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case holds the T-69 $5, serial 6164, and the T-67 $20, serial 74523, both of February 1864.',
     },
   },
   {
@@ -230,7 +230,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 20 dólares confederado T-67 de 1864, serial 74523, y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -249,7 +249,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-67 $20, serial 74523, and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -264,6 +264,7 @@ export function seriesPath(locale: 'es' | 'en'): string {
 
 export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
+  | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
   | '10-dolares-serie-1934-chicago';
 
@@ -440,6 +441,155 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Cierre el 31 de marzo de 1877 a la una de la tarde; los oficiales se negaron a dar un estado de cuentas.',
           en: 'Closed on 31 March 1877 at one in the afternoon; the officers refused to issue a statement.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-dolares-confederados-1864',
+    chapterId: 'us-confederado',
+    path: '/coleccion/estados-unidos/5-dolares-confederados-1864/',
+    pathEn: '/collection/united-states/5-dollars-confederate-1864/',
+    pick: 'P#67 · T-69 · N#226718',
+    serial: '6164 · 3 · A',
+    signatures: {
+      es: 'Howell («for Register») y Allen («for Treasurer»)',
+      en: 'Howell (“for Register”) and Allen (“for Treasurer”)',
+    },
+    printed: {
+      es: 'Keatinge & Ball, Columbia, S.C.; litografía de Evans & Cogswell. Wikipedia cifra el tipo T-69 en unos 5.526.100 ejemplares. La ley del 17 de febrero de 1864 autorizó 200 millones de dólares en todas las denominaciones.',
+      en: 'Keatinge & Ball, Columbia, S.C.; lithographed by Evans & Cogswell. Wikipedia puts T-69 at about 5,526,100 notes. The act of 17 February 1864 authorized $200 million across all denominations.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/csa-1864-5-composite.jpg',
+      front: '/images/catalog/estados-unidos/csa-1864-5-front.jpg',
+      back: '/images/catalog/estados-unidos/csa-1864-5-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    hero: {
+      src: {
+        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+      },
+      width: 2128,
+      height: 912,
+    },
+    heroAlt: {
+      es: 'Ilustración vintage de Richmond sobre pergamino, con el Capitolio, Main Street Station, Church Hill, las Tredegar Iron Works y el título Richmond',
+      en: 'Vintage illustration of Richmond on parchment, with the Capitol, Main Street Station, Church Hill, Tredegar Iron Works, and the title Richmond',
+    },
+    title: {
+      es: '5 dólares · Estados Confederados · 1864',
+      en: '$5 · Confederate States · 1864',
+    },
+    kicker: {
+      es: 'Estados Unidos · Estados Confederados',
+      en: 'United States · Confederate States',
+    },
+    lead: {
+      es: 'Anverso rosa con el Capitolio de Virginia y C. G. Memminger; reverso azul con FIVE. Richmond, 17 de febrero de 1864. Serial 6164, 3.ª serie, plancha A.',
+      en: 'Pink face with the Virginia State Capitol and C. G. Memminger; blue back with FIVE. Richmond, 17 February 1864. Serial 6164, 3rd series, plate A.',
+    },
+    description: {
+      es: 'El 5 dólares del 17 de febrero de 1864 (Pick 67, Criswell y Fricke T-69, Numista N#226718) es el cinco de la última emisión del Tesoro de los Estados Confederados. El anverso, en negro sobre un tinte rosa, lleva al centro el Capitolio de Virginia en Richmond —frontón y columnata entre árboles— y, abajo a la derecha, el retrato oval de Christopher G. Memminger, primer secretario del Tesoro. El arco superior lee la cláusula de redención: «TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE BETWEEN THE CONFEDERATE STATES & THE UNITED STATES». Bajo la viñeta, «The Confederate States of America» promete pagar FIVE DOLLARS al portador; la fecha impresa es «Richmond, February 17th 1864». El flanco izquierdo lleva FIVE en vertical; arriba a la derecha, un 5 en marco festoneado. El serial manuscrito 6164 va en tinta oscura junto al 5; la pieza es de la 3.ª serie, plancha A. Las firmas son las de Howell («for Register») y Allen («for Treasurer»). El pie de grabado es Keatinge & Ball, Columbia, S.C.; el Bank Note Museum y el Smithsonian anotan también la litografía de Evans & Cogswell. El reverso, en azul, muestra FIVE sobre un campo de guilloches y un 5 en cada esquina. La pieza de la colección, circulada y sin encapsular, se presenta en funda.',
+      en: 'The $5 of 17 February 1864 (Pick 67, Criswell and Fricke T-69, Numista N#226718) is the five of the Confederate Treasury’s last issue. The black face on a pink tint carries the Virginia State Capitol in Richmond — pediment and colonnade among trees — at center and, at lower right, an oval portrait of Christopher G. Memminger, first secretary of the Treasury. The upper arc reads the redemption clause: “TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE BETWEEN THE CONFEDERATE STATES & THE UNITED STATES.” Beneath the vignette, “The Confederate States of America” promises to pay FIVE DOLLARS to the bearer; the printed date is “Richmond, February 17th 1864.” FIVE runs vertically at left; a scalloped 5 sits at upper right. Manuscript serial 6164 sits in dark ink beside the 5; the piece is 3rd series, plate A. The signatures are Howell (“for Register”) and Allen (“for Treasurer”). The engraving imprint is Keatinge & Ball, Columbia, S.C.; the Bank Note Museum and the Smithsonian also note Evans & Cogswell’s lithography. The blue back shows FIVE on a guilloche field and a 5 in each corner. The collection note, circulated and unslabbed, is shown in a sleeve.',
+    },
+    history: [
+      {
+        es: 'El Tesoro confederado nació casi vacío. La riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal; el bloqueo unionista cortó las exportaciones de algodón que habrían podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, Alabama, antes de que la capital pasara a Richmond. Christopher G. Memminger, el retrato de este cinco, fue el primer secretario del Tesoro y el que recurrió a la prensa: los impuestos y los bonos cubrían solo una fracción de la guerra. El grayback no era un canje en oro. Era una promesa de pago si el Sur ganaba.',
+        en: 'The Confederate Treasury opened almost empty. Southern wealth sat in land and enslaved people, not in coin; the Union blockade cut off the cotton exports that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, Alabama, before the capital moved to Richmond. Christopher G. Memminger, the portrait on this five, was the first secretary of the Treasury and the man who turned to the press: taxes and bonds covered only a fraction of the war. The grayback was not a redemption in gold. It was a promise to pay if the South won.',
+      },
+      {
+        es: 'Casi todos los grabadores y las planchas de banco estaban en Nueva York y Filadelfia. Wikipedia registra las primeras planchas de la National Bank Note Company y de su sucursal de Nueva Orleans, la Southern Bank Note Company, hasta que esa vía se cerró. Este cinco lo grabó Keatinge & Ball en Columbia y lo litografió Evans & Cogswell: el Bank Note Museum y el Smithsonian lo anotan así. Hoyer & Ludwig y Archer & Daly cubrieron otras denominaciones, a menudo en litografía, con papeles y planchas desiguales por el bloqueo. El resultado se copiaba con facilidad. Samuel C. Upham, de Filadelfia, vendió desde 1862 «fac-simile Confederate notes» como recuerdos; los contrabandistas recortaban el pie y los hacían circular en el Sur.',
+        en: 'Almost all the engravers and bank plates sat in New York and Philadelphia. Wikipedia records the first plates of the National Bank Note Company and of its New Orleans branch, the Southern Bank Note Company, until that route closed. Keatinge & Ball engraved this five in Columbia and Evans & Cogswell lithographed it: the Bank Note Museum and the Smithsonian record both imprints. Hoyer & Ludwig and Archer & Daly covered other denominations, often by lithography, on uneven paper and plates under the blockade. The result was easy to copy. Samuel C. Upham of Philadelphia sold “fac-simile Confederate notes” as souvenirs from 1862; smugglers trimmed the imprint and passed them in the South.',
+      },
+      {
+        es: 'El anverso de este T-69 es el de la capital que aún tenía la Confederación: el Capitolio de Virginia, en Richmond, no el de Nashville que ya había caído en 1862. Memminger —el retrato de la derecha— dimitió en 1864, el mismo año de esta ley. Las firmas manuscritas de escribientes —el Tesoro llegó a contratar hasta doscientos por cada cargo, a menudo mujeres— eran la norma en los enteros; solo el medio dólar llevó firmas impresas. Las primeras series prometían el pago seis meses después de un tratado de paz. La cláusula de 1864, la de esta pieza, dilató el canje a dos años.',
+        en: 'The face of this T-69 is the capital the Confederacy still held: the Virginia State Capitol in Richmond, not the Nashville building that had fallen in 1862. Memminger — the portrait at right — resigned in 1864, the same year as this act. Manuscript signatures by clerks — the Treasury eventually hired as many as two hundred for each office, often women — were the rule on whole-dollar notes; only the 50-cent issue carried printed signatures. Early series promised payment six months after a treaty of peace. The 1864 clause, the one on this note, stretched redemption to two years.',
+      },
+      {
+        es: 'Entre 1861 y 1864 hubo siete series. Wikipedia cifra el total autorizado en 1.700 millones de dólares y T-69 en unos 5.526.100 ejemplares. Sin respaldo metálico, el grayback se hundió con las malas noticias: a finales de 1863 valía unos seis centavos de oro; en septiembre de 1864, tres. La ley del 17 de febrero de 1864 —la de este cinco— autorizó 200 millones en papel nuevo e intentó forzar el canje de los billetes viejos a descuento. No restauró la confianza. Tras Appomattox el papel perdió todo valor de curso. La Sección 4 de la Decimocuarta Enmienda declara ilegales y nulas las deudas contraídas en ayuda de la rebelión: ni los Estados Unidos ni ningún estado pueden asumirlas.',
+        en: 'Between 1861 and 1864 there were seven series. Wikipedia puts the authorized total at $1.7 billion and T-69 at about 5,526,100 notes. Unbacked by specie, the grayback sank with the bad news: by the end of 1863 it was worth about six cents in gold; by September 1864, three. The act of 17 February 1864 — the act behind this five — authorized $200 million in new paper and tried to force the exchange of old notes at a discount. It did not restore trust. After Appomattox the paper lost all value as currency. Section 4 of the Fourteenth Amendment holds debts incurred in aid of rebellion illegal and void: neither the United States nor any state may assume them.',
+      },
+    ],
+    historyHeading: {
+      es: 'La emisión',
+      en: 'The issue',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 dólares confederado, T-69, 17 de febrero de 1864, serial 6164, 3.ª serie, plancha A: Capitolio de Virginia y Memminger.',
+      en: 'Face of the Confederate $5, T-69, 17 February 1864, serial 6164, 3rd series, plate A: the Virginia Capitol and Memminger.',
+    },
+    backCaption: {
+      es: 'Reverso azul del 5 dólares confederado T-69: FIVE sobre guilloches y 5 en las cuatro esquinas.',
+      en: 'Blue back of the Confederate T-69 $5: FIVE on guilloches and 5 in the four corners.',
+    },
+    scarcity: {
+      es: 'Wikipedia cifra T-69 en unos 5.526.100 ejemplares. Es el cinco más común de 1864 y, con el T-67, el grayback de entrada de muchas colecciones de tipos. El Bank Note Museum lo numera P-67 y anota a Evans & Cogswell junto a Keatinge & Ball. El mercado trata el tipo circulado como frecuente; las claves están en los estados altos, los márgenes completos y la ausencia de cortes de cancelación. Esta ficha no inventa una tirada por serie ni por letra.',
+      en: 'Wikipedia puts T-69 at about 5,526,100 notes. It is the most common 1864 five and, with T-67, the entry grayback of many type sets. The Bank Note Museum numbers it P-67 and records Evans & Cogswell with Keatinge & Ball. The market treats circulated examples as common; the keys are high grades, full margins, and the absence of cut cancels. This record does not invent a printage by series or letter.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 6164. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 6164 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/CSA/CSA0067.htm',
+        es: 'Bank Note Museum — P-67, 5 dólares, 17 de febrero de 1864',
+        en: 'Bank Note Museum — P-67, $5, 17 February 1864',
+        note: {
+          es: 'Capitolio de Richmond y Christopher G. Memminger; Keatinge & Ball y Evans & Cogswell.',
+          en: 'Richmond Capitol and Christopher G. Memminger; Keatinge & Ball and Evans & Cogswell.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note226718.html',
+        es: 'Numista — 5 Dollars, Confederate States (N#226718)',
+        en: 'Numista — 5 Dollars, Confederate States (N#226718)',
+        note: {
+          es: 'Capitolio de Richmond y Memminger; Keatinge & Ball; 180 × 80 mm; desmonetizado.',
+          en: 'Richmond Capitol and Memminger; Keatinge & Ball; 180 × 80 mm; demonetized.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Confederate_States_dollar',
+        es: 'Wikipedia — Confederate States dollar',
+        en: 'Wikipedia — Confederate States dollar',
+        note: {
+          es: 'T-69, Keatinge & Ball, unos 5.526.100; siete series y 1.700 millones; cláusula de paz a dos años.',
+          en: 'T-69, Keatinge & Ball, about 5,526,100; seven series and $1.7 billion; two-year peace clause.',
+        },
+      },
+      {
+        href: 'https://nmaahc.si.edu/object/nmaahc_2017.108.9.5',
+        es: 'Smithsonian NMAAHC — Confederate States of America five dollar bill',
+        en: 'Smithsonian NMAAHC — Confederate States of America five dollar bill',
+        note: {
+          es: 'Capitolio de Virginia, cláusula de paz a dos años, Keatinge & Ball y Evans & Cogswell; reverso azul.',
+          en: 'Virginia Capitol, two-year peace clause, Keatinge & Ball and Evans & Cogswell; blue back.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Samuel_Curtis_Upham',
+        es: 'Wikipedia — Samuel C. Upham',
+        en: 'Wikipedia — Samuel C. Upham',
+        note: {
+          es: 'Facsímiles vendidos en Filadelfia desde 1862; el pie se recortaba y el papel circulaba en el Sur.',
+          en: 'Facsimiles sold in Philadelphia from 1862; the imprint was trimmed and the paper circulated in the South.',
+        },
+      },
+      {
+        href: 'https://constitution.congress.gov/browse/amendment-14/section-4/',
+        es: 'Constitution Annotated — Decimocuarta Enmienda, Sección 4',
+        en: 'Constitution Annotated — Fourteenth Amendment, Section 4',
+        note: {
+          es: 'Ni los Estados Unidos ni ningún estado asumirán deudas contraídas en ayuda de la rebelión; tales deudas son ilegales y nulas.',
+          en: 'Neither the United States nor any state shall assume debts incurred in aid of rebellion; such debts are illegal and void.',
         },
       },
     ],
