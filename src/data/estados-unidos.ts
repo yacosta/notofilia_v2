@@ -466,6 +466,18 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       width: 1440,
       height: 960,
     },
+    hero: {
+      src: {
+        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+      },
+      width: 2128,
+      height: 912,
+    },
+    heroAlt: {
+      es: 'Ilustración vintage de Richmond sobre pergamino, con el Capitolio, Main Street Station, Church Hill, las Tredegar Iron Works y el título Richmond',
+      en: 'Vintage illustration of Richmond on parchment, with the Capitol, Main Street Station, Church Hill, Tredegar Iron Works, and the title Richmond',
+    },
     title: {
       es: '20 dólares · Estados Confederados · 1864',
       en: '$20 · Confederate States · 1864',
