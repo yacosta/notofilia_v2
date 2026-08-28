@@ -10,6 +10,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
+import { CONTACT_PATH } from '../data/contact';
 import { footerLinksFromNav } from './footer-nav';
 
 export type { FooterLink } from './footer-nav';
@@ -141,6 +142,12 @@ export const megaNav: NavNode[] = [
     es: 'Sobre Notofilia',
     en: 'About Notofilia',
     href: ABOUT_PATH,
+  },
+  {
+    id: 'contacto',
+    es: 'Contacto',
+    en: 'Contact',
+    href: CONTACT_PATH,
   },
 ];
 

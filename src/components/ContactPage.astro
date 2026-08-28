@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { breadcrumbList } from '../lib/json-ld';
 import { cfImage, imageSrcset } from '../lib/images';
 import { contactClientCopy } from '../i18n/contact';
 import {
+  CONTACT_IMAGE,
   CONTACT_TURNSTILE_SITE_KEY,
   WEB3FORMS_ACCESS_KEY,
   contactCopy,
@@ -18,17 +20,18 @@ interface Props {
 const { locale } = Astro.props;
 const t = contactCopy[locale];
 const pathname = contactPath(locale);
+const homePath = localizePath('/', locale);
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Notofilia', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: t.nav, item: `${SITE_URL}${pathname}` },
+    breadcrumbList(
+      [
+        { name: 'Notofilia', path: '/' },
+        { name: t.nav, path: pathname },
       ],
-    },
+      locale,
+    ),
     {
       '@type': 'ContactPage',
       name: t.title,
@@ -46,11 +49,12 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
-    <article class="mx-auto max-w-[75rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <Breadcrumb
         locale={locale}
+        label={t.breadcrumb}
         items={[
-          { href: localizePath('/', locale), label: t.home },
+          { href: homePath, label: t.home },
           { label: t.nav },
         ]}
       />
@@ -58,8 +62,8 @@ const jsonLd = {
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div class="flex min-h-[280px] items-center justify-center">
           <img
-            src={cfImage('/uploads/doblones-coloniales-oro.png', { width: 511 })}
-            srcset={imageSrcset('/uploads/doblones-coloniales-oro.png', [400, 800])}
+            src={cfImage(CONTACT_IMAGE, { width: 511 })}
+            srcset={imageSrcset(CONTACT_IMAGE, [400, 800])}
             sizes="(max-width: 700px) 70vw, 360px"
             alt={t.imageAlt}
             width="511"

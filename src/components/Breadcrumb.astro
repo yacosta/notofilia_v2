@@ -22,13 +22,15 @@ const aria = label ?? copy[locale].breadcrumb;
       items.map((item, index) => {
         const current = index === items.length - 1;
         return (
-          <li class:list={[current && 'inline-flex min-h-11 items-center text-cream-dim']}>
+          <li class="inline-flex min-h-11 items-center">
             {item.href && !current ? (
               <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={item.href}>
                 {item.label}
               </a>
             ) : (
-              <span aria-current={current ? 'page' : undefined}>{item.label}</span>
+              <span class="text-cream-dim" aria-current={current ? 'page' : undefined}>
+                {item.label}
+              </span>
             )}
           </li>
         );
