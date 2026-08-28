@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../data/colombia-notes';
+
+const note = noteById('5-pesos-banco-hipotecario-1881');
+if (!note) throw new Error('Missing Banco Hipotecario 5 pesos 1881 catalog note');
+---
+
+<ColombiaNotePage locale="es" note={note} />
