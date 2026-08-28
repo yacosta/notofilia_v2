@@ -86,6 +86,10 @@ export const colombiaNotes: ColombiaNote[] = [
       es: 'El Banco Hipotecario se estableció en Bogotá el 1.º de octubre de 1881 —la misma fecha que lleva el anverso—. EL TIEMPO sitúa ahí la fundación y una vigencia de diez años desde el registro de las escrituras. En junio de 1882 el Poder Ejecutivo del Estado aprobó los estatutos y lo declaró en posesión de las concesiones de las leyes de 14 de enero de 1873 y 17 de noviembre de 1875 a los bancos hipotecarios; el texto se publicó en julio de 1882. El Standard Catalog of World Paper Money — Specialized Issues, vía el índice de Numismondo, numera la serie S511–S515: cinco a cien pesos de 1881. Esta ficha es el cinco pesos. El anverso, en negro sobre fondo ocre, promete pagar al portador a la vista cinco pesos; a la izquierda, una alegoría agrícola sentada junto a gavillas; a la derecha, un labrador con arado y caballos; arriba, un óvalo con campo y caserío; abajo, un 5 en medallón. El serial rojo es 00000; tres perforaciones de cancelación cortan el margen inferior. El montaje de Nueva York lleva «February 1883» y, en vertical, «Serie Y». Las casillas del gerente y del presidente del consejo están en blanco. El reverso, en sepia, es un marco de guilloches con «EL BANCO» y «HIPOTECARIO» y las cifras 5 a ambos flancos. No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. No debe confundirse con el Banco Hipotecario de la Mutualidad (S516 y siguientes) ni con el del Pacífico. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',
       en: 'The Banco Hipotecario was established in Bogotá on 1 October 1881 — the same date printed on the face. EL TIEMPO places the founding there, with a ten-year term from the registration of the deeds. In June 1882 the State Executive approved the statutes and declared the bank in possession of the concessions that the laws of 14 January 1873 and 17 November 1875 granted to mortgage banks; the text was published in July 1882. The Standard Catalog of World Paper Money — Specialized Issues, through Numismondo’s index, numbers the series S511–S515: five to one hundred pesos of 1881. This record is the five-peso. The face, black on an ochre underprint, promises to pay the bearer on sight five pesos; at left, a seated agricultural allegory beside sheaves; at right, a ploughman with horses; above, an oval of field and homestead; below, a 5 in a medallion. The red serial is 00000; three cancellation punches cut the lower margin. The New York mount reads “February 1883” and, vertically, “Serie Y.” The spaces for the manager and the president of the board are blank. The sepia back is a guilloche frame with “EL BANCO” and “HIPOTECARIO” and the figures 5 at each flank. There are no signatures: these are plate proofs, not a note placed in circulation. It should not be confused with the Banco Hipotecario de la Mutualidad (S516 and later) or with the Pacífico bank. This record gathers the collection’s two PMG holders — face and back, separately slabbed.',
     },
+    history: {
+      es: 'En la banca libre, el gobierno autorizó bancos privados que emitían billetes respaldados en metálico. El Hipotecario de Bogotá nació el 1.º de octubre de 1881, con diez años de vigencia desde el registro de las escrituras, como banco de propiedad raíz: crédito hipotecario a terratenientes, comerciantes y élite urbana de la capital. Las leyes de 14 de enero de 1873 y 17 de noviembre de 1875 otorgaban concesiones a esos bancos —exención de contribución, ejecuciones privilegiadas—; en junio de 1882 el Poder Ejecutivo del Estado aprobó los estatutos y lo declaró en posesión de ellas. La serie de 1881 promete pagar al portador a la vista, en Bogotá. Numismondo numera S511–S515, de cinco a cien pesos; la colección Eldorado, en Stack’s Bowers (enero de 2018), ofreció pruebas de archivo del 5, 10, 50 y 100 pesos (S511p, S512p, S514p y S515p). Esta ficha es el cinco pesos. La Regeneración de Rafael Núñez y el Banco Nacional, establecido en 1881, centralizaron la emisión: hacia 1886–1887 el curso forzoso y las leyes que monopolizaron el papel quitaron a los particulares el derecho de imprimir. Sin esa facultad, y obligados a recibir el papel nacional en depreciación, los bancos privados de Bogotá —incluido el Hipotecario— perdieron una fuente de rentabilidad y de independencia operativa.',
+      en: 'Under free banking the government authorized private banks to issue notes backed by metal. Bogotá’s Banco Hipotecario was established on 1 October 1881, with a ten-year term from the registration of the deeds, as a bank of propiedad raíz: mortgage credit to landowners, merchants, and the capital’s urban elite. The laws of 14 January 1873 and 17 November 1875 granted concessions to those banks — tax exemption, privileged foreclosure; in June 1882 the State Executive approved the statutes and declared the bank in possession of them. The 1881 series promises to pay the bearer on sight, in Bogotá. Numismondo numbers S511–S515, five to one hundred pesos; the Eldorado collection, at Stack’s Bowers (January 2018), offered archival proofs of the 5, 10, 50, and 100 pesos (S511p, S512p, S514p, and S515p). This record is the five-peso. Rafael Núñez’s Regeneración and the Banco Nacional, established in 1881, centralized issue: around 1886–1887 forced legal tender and laws that monopolized paper stripped private banks of the right to print. Without that faculty, and forced to take depreciating national paper, Bogotá’s private banks — including the Hipotecario — lost a source of profit and operational independence.',
+    },
     frontCaption: {
       es: 'Prueba de anverso, Pick S511p1, encapsulada PMG 61 Uncirculated: alegorías agrícolas, serial Y 00000 y montaje fechado febrero de 1883.',
       en: 'Face proof, Pick S511p1, slabbed PMG 61 Uncirculated: agricultural allegories, serial Y 00000, and a mount dated February 1883.',
@@ -95,8 +99,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Back proof, Pick S511p2, slabbed PMG 61 Uncirculated: a sepia ornamental frame, the figures 5, and the legends EL BANCO / HIPOTECARIO.',
     },
     scarcity: {
-      es: 'Numismondo registra S511–S515 como la serie de 1881 del Banco Hipotecario y marca las imágenes como pendientes. El mercado de este banco bogotano ve sobre todo planchas de Nueva York: pruebas montadas, perforadas y con seriales de ceros. Esta ficha no inventa una tirada de circulación.',
-      en: 'Numismondo records S511–S515 as the 1881 Banco Hipotecario series and flags the images as needed. The market for this Bogotá bank mostly sees New York plates: mounted, punch-cancelled proofs with zero serials. This record does not invent a circulating printage.',
+      es: 'Numismondo registra S511–S515 como la serie de 1881 del Banco Hipotecario y marca las imágenes como pendientes. El mercado de este banco bogotano ve sobre todo planchas de Nueva York: pruebas montadas, perforadas y con seriales de ceros, a veces pares sin cortar. La colección Eldorado ofreció pruebas de archivo del 5 al 100 pesos. Los supervivientes —pruebas, especímenes y esos pares— son piezas de vitrina en la notafilia colombiana. Esta ficha no inventa una tirada de circulación.',
+      en: 'Numismondo records S511–S515 as the 1881 Banco Hipotecario series and flags the images as needed. The market for this Bogotá bank mostly sees New York plates: mounted, punch-cancelled proofs with zero serials, sometimes uncut pairs. The Eldorado collection offered archival proofs from 5 to 100 pesos. Survivors — proofs, specimens, and those pairs — are showcase pieces in Colombian notaphily. This record does not invent a circulating printage.',
     },
     population: {
       es: 'Las dos piezas de esta ficha están encapsuladas por PMG como 61 Uncirculated: el anverso S511p1 y el reverso S511p2. No se ha verificado de forma independiente un censo de población para estos números de cápsula.',
@@ -132,6 +136,33 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Resolución del 19 de junio de 1882: estatutos aprobados y concesiones de las leyes de 1873 y 1875.',
           en: 'Resolution of 19 June 1882: statutes approved and the concessions of the 1873 and 1875 laws.',
+        },
+      },
+      {
+        href: 'https://doi.org/10.19053/16923936.v16.n32.2018.9766',
+        es: 'Pedro José Lesmes — La banca privada, 1870–1923 (Derecho y Realidad, 2018)',
+        en: 'Pedro José Lesmes — Private banking, 1870–1923 (Derecho y Realidad, 2018)',
+        note: {
+          es: 'Banca libre, emisión privada y el cierre bajo la Regeneración; el artículo trata también el crédito y la propiedad raíz.',
+          en: 'Free banking, private issue, and the close under the Regeneración; the article also treats credit and landed property.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/2343/category/62846?v=1',
+        es: 'Stack’s Bowers — Colección Eldorado, enero de 2018 (NumisBids)',
+        en: 'Stack’s Bowers — Eldorado Collection, January 2018 (NumisBids)',
+        note: {
+          es: 'Pruebas de archivo del Banco Hipotecario, 1.º de octubre de 1881: S511p, S512p, S514p y S515p (5, 10, 50 y 100 pesos).',
+          en: 'Archival proofs of the Banco Hipotecario, 1 October 1881: S511p, S512p, S514p, and S515p (5, 10, 50, and 100 pesos).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: 'Catálogo de referencia de la notafilia colombiana; Numismondo lo cita también como Billetes del Siglo Antepasado, 1813–1915.',
+          en: 'A standard Colombian notaphily catalog; Numismondo also cites Hernández as Billetes del Siglo Antepasado, 1813–1915.',
         },
       },
     ],
