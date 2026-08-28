@@ -204,7 +204,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal: United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878).',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Ya tiene ficha el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a) y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -223,7 +223,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time: United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878).',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. The Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already has a note page. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a) and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -236,7 +236,7 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_PATH, locale);
 }
 
-export type UnitedStatesNoteId = '10-dolares-serie-1934-chicago';
+export type UnitedStatesNoteId = '1-dolar-state-bank-new-brunswick' | '10-dolares-serie-1934-chicago';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -251,11 +251,14 @@ export type UnitedStatesNote = {
     composite: string;
     front: string;
     back: string;
+    width?: number;
+    height?: number;
   };
   title: LocalizedText;
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
+  history?: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
   scarcity: LocalizedText;
@@ -265,6 +268,134 @@ export type UnitedStatesNote = {
 };
 
 export const unitedStatesNotes: UnitedStatesNote[] = [
+  {
+    id: '1-dolar-state-bank-new-brunswick',
+    chapterId: 'us-obsoleto',
+    path: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
+    pathEn: '/collection/united-states/1-dollar-state-bank-new-brunswick/',
+    pick: 'Haxby NJ-350 G16a · N#334975',
+    serial: '9890 · B',
+    signatures: {
+      es: 'Cajero manuscrito; presidente en blanco (remainder)',
+      en: 'Manuscript cashier; president blank (remainder)',
+    },
+    printed: {
+      es: 'National Bank Note Company, Nueva York. Remainder de las planchas de los años 1860 (patente del 23 de abril de 1860). No se publica una tirada de circulación para este tipo.',
+      en: 'National Bank Note Company, New York. A remainder from the 1860s plates (patent of 23 April 1860). No circulating printage is published for this type.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/nj-350-1-dollar-new-brunswick-composite.jpg',
+      front: '/images/catalog/estados-unidos/nj-350-1-dollar-new-brunswick-front.jpg',
+      back: '/images/catalog/estados-unidos/nj-350-1-dollar-new-brunswick-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '1 dólar · State Bank at New Brunswick',
+      en: '$1 · State Bank at New Brunswick',
+    },
+    kicker: {
+      es: 'Estados Unidos · Billete obsoleto · Nueva Jersey',
+      en: 'United States · Obsolete note · New Jersey',
+    },
+    lead: {
+      es: 'Remainder de 1 dólar del State Bank at New Brunswick: serial rojo 9890, plancha B, fecha 18__ incompleta y reverso verde de la National Bank Note Company.',
+      en: 'A $1 remainder of the State Bank at New Brunswick: red serial 9890, plate B, an incomplete 18__ date, and the National Bank Note Company’s green back.',
+    },
+    description: {
+      es: 'El 1 dólar Haxby NJ-350 G16a (Numista N#334975) es un obsolete note del State Bank at New Brunswick, Nueva Jersey. El anverso, en negro sobre tintas verdes, se titula «The State Bank at New Brunswick» y promete pagar un dólar al portador a la vista. Arriba, en cuerpo menudo, se lee el registro ante el interventor del estado. En el centro, un óvalo con una figura femenina y un haz de grano, fábrica al fondo, va orlado de unos; a la izquierda, una locomotora sobre un puente de arcos y una barca; a la derecha, la cosecha —guadaña, gavilla y calabazas—. Los medallones de las esquinas repiten ONE alrededor del 1. El serial 9890 va en rojo a la izquierda, junto a la plancha B. La fecha impresa queda en 18__, sin el año manuscrito. Hay firma en la línea del cajero y la del presidente (PREST.) está en blanco: es un remainder, no un ejemplar puesto en circulación. El pie de imprenta es el de la National Bank Note Company. El reverso, en verde, lleva el escudo de Estados Unidos entre dos medallones con el 1 y la palabra ONE; Numista transcribe también «PATENTED APRIL 23rd 1860». Ese dorso de guilloches es el de la NBNC, de la misma familia técnica que el reverso de 1 dólar de los National Bank Notes del First Charter, no un billete nacional de esta plaza. No debe confundirse con el State Bank of New Jersey at New Brunswick (Haxby NJ-345), que en 1864 se convirtió en el National Bank of New Jersey, charter 587, ni con el Bank of New Brunswick canadiense.',
+      en: 'The $1 Haxby NJ-350 G16a (Numista N#334975) is an obsolete note of the State Bank at New Brunswick, New Jersey. The face, black on green tints, is titled “The State Bank at New Brunswick” and promises to pay one dollar to the bearer on demand. A fine line at the top records registration at the state comptroller’s office. At center a female figure with a sheaf of grain, a factory behind her, sits in an oval ringed with 1s; at left a locomotive crosses an arched bridge above a boat; at right a harvest — scythe, sheaf, and squash. Corner medallions repeat ONE around the figure 1. Serial 9890 is stamped in red at left, beside plate letter B. The printed date stops at 18__, with no manuscript year. A signature sits on the cashier’s line and the president’s (PREST.) line is blank: this is a remainder, not a note placed in circulation. The imprint is the National Bank Note Company’s. The green back carries the United States shield between two medallions with 1 and the word ONE; Numista also transcribes “PATENTED APRIL 23rd 1860.” That guilloche back is NBNC’s, of the same technical family as the First Charter $1 National Bank Note reverse, not a national note of this town. It should not be confused with the State Bank of New Jersey at New Brunswick (Haxby NJ-345), which in 1864 became the National Bank of New Jersey, charter 587, or with the Canadian Bank of New Brunswick.',
+    },
+    history: {
+      es: 'El 28 de enero de 1812 la legislatura de Nueva Jersey autorizó seis State Banks —Camden, Trenton, New Brunswick, Elizabeth, Newark y Morris— al vencer la carta del First Bank of the United States. George R. Prowell fecha el acto; el finding aid de la Library Company of Philadelphia y el inventario de Sylla y Wright sitúan el capital autorizado de New Brunswick en 400.000 dólares, a la par de Newark y por debajo de Camden. El emisor de esta ficha es The State Bank at New Brunswick (Haxby NJ-350), no el State Bank of New Jersey at New Brunswick (NJ-345), que en 1864 se nacionalizó como el National Bank of New Jersey, charter 587. En el término de septiembre de 1874, el Court of Oyer and Terminer del condado de Middlesex juzgó a Robert N. Woodworth por conspiración para defraudar al banco; el sumario impreso en New Brunswick nombra a Greenleaf W. Appleton como «late cashier, now a fugitive from justice». El 31 de marzo de 1877 el banco cerró a la una de la tarde; The New York Times lo publicó al día siguiente y anotó que los oficiales se negaron a dar un estado de cuentas. Haxby lo da por cerrado. El impuesto del 10 % sobre el papel estatal (1865–1866) y ese cierre explican por qué sobreviven tantos remainders de estas planchas de la National Bank Note Company.',
+      en: 'On 28 January 1812 the New Jersey legislature authorized six State Banks — Camden, Trenton, New Brunswick, Elizabeth, Newark, and Morris — after the First Bank of the United States lost its charter. George R. Prowell dates the act; the Library Company of Philadelphia finding aid and Sylla and Wright’s inventory place New Brunswick’s authorized capital at $400,000, level with Newark and below Camden. The issuer of this record is The State Bank at New Brunswick (Haxby NJ-350), not the State Bank of New Jersey at New Brunswick (NJ-345), which in 1864 became the National Bank of New Jersey, charter 587. In the September 1874 term the Middlesex County Court of Oyer and Terminer tried Robert N. Woodworth for conspiracy to defraud the bank; the New Brunswick pamphlet names Greenleaf W. Appleton as “late cashier, now a fugitive from justice.” On 31 March 1877 the bank closed at one in the afternoon; The New York Times reported it the next day and noted that the officers refused to issue a statement. Haxby lists the bank as closed. The 10 percent tax on state-bank paper (1865–1866) and that closure explain why so many remainders of these National Bank Note Company plates survive.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar remainder, Haxby NJ-350 G16a, serial 9890, plancha B: locomotora, alegoría agrícola y serial rojo.',
+      en: 'Face of the $1 remainder, Haxby NJ-350 G16a, serial 9890, plate B: locomotive, agricultural allegory, and the red serial.',
+    },
+    backCaption: {
+      es: 'Reverso verde de la National Bank Note Company: escudo de Estados Unidos entre medallones con el 1. Patente del 23 de abril de 1860.',
+      en: 'National Bank Note Company green back: the United States shield between medallions with the figure 1. Patent of 23 April 1860.',
+    },
+    scarcity: {
+      es: 'Los 1 dólar G16a del mercado son casi todos remainders: fecha 18__, a menudo una sola firma o ninguna, serial rojo y reverso verde. Las piezas plenamente emitidas —fecha completa y las dos firmas de circulación— son mucho más escasas. Numista marca el tipo como remainder sin fecha (1860–1877) y le da un índice de rareza 87 entre sus socios, una medida de presencia en colecciones, no de existencias en subasta. Heritage y los comerciantes de obsolete notes tratan el remainder como tipo común en estados altos; el banco cerró en 1877 y las planchas de la NBNC quedaron sin terminar de firmar.',
+      en: 'Almost all G16a $1 notes on the market are remainders: an 18__ date, often one signature or none, a red serial, and the green back. Fully issued pieces — a completed date and both circulating signatures — are far scarcer. Numista flags the type as an undated remainder (1860–1877) and gives it a rarity index of 87 among its members, a measure of presence in collections, not of auction supply. Heritage and obsolete-note dealers treat the remainder as a common type in high grades; the bank closed in 1877 and the NBNC plates were left unsigned.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 9890. La pieza se presenta en funda, sin encapsular, como remainder original.',
+      en: 'A PMG or PCGS census for serial 9890 has not been independently verified. The note is shown in a sleeve, unslabbed, as an original remainder.',
+    },
+    grade: {
+      es: 'Remainder, sin encapsular (colección privada)',
+      en: 'Remainder, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note334975.html',
+        es: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+        en: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+        note: {
+          es: 'Haxby NJ-350; imprenta National Bank Note Company; reverso con escudo y «PATENTED APRIL 23rd 1860»; remainder sin fecha, 1860–1877.',
+          en: 'Haxby NJ-350; National Bank Note Company imprint; shield back and “PATENTED APRIL 23rd 1860”; undated remainder, 1860–1877.',
+        },
+      },
+      {
+        href: 'https://beastcoins.com/Banknotes/Obsolete/NewJersey/NewJersey.htm',
+        es: 'Beast Coins — Obsolete notes de Nueva Jersey, NJ-350',
+        en: 'Beast Coins — New Jersey obsolete notes, NJ-350',
+        note: {
+          es: 'State Bank at New Brunswick, c. 1814–1877; 1 dólar Haxby NJ-350 G16a, National Bank Note Company; destino: cerrado.',
+          en: 'State Bank at New Brunswick, c. 1814–1877; $1 Haxby NJ-350 G16a, National Bank Note Company; fate: closed.',
+        },
+      },
+      {
+        href: 'https://www.usgenwebsites.org/NJCamden/history_of_camden_county/4_banks_and_banking.html',
+        es: 'George R. Prowell — History of Camden County, capítulo de banca (NJGenWeb)',
+        en: 'George R. Prowell — History of Camden County, banking chapter (NJGenWeb)',
+        note: {
+          es: 'Acto del 28 de enero de 1812: State Banks en Camden, Trenton, New Brunswick, Elizabeth, Newark y Morris.',
+          en: 'Act of 28 January 1812: State Banks at Camden, Trenton, New Brunswick, Elizabeth, Newark, and Morris.',
+        },
+      },
+      {
+        href: 'https://www.librarycompany.org/mcallister/pdf/camden.pdf',
+        es: 'Library Company of Philadelphia — McAllister, State Bank at Camden (McA MSS 014)',
+        en: 'Library Company of Philadelphia — McAllister, State Bank at Camden (McA MSS 014)',
+        note: {
+          es: 'El mismo acto de 1812; capital autorizado de New Brunswick y Newark, 400.000 dólares cada uno.',
+          en: 'The same 1812 act; authorized capital of New Brunswick and Newark, $400,000 each.',
+        },
+      },
+      {
+        href: 'https://www.ineteconomics.org/uploads/papers/WP_224-SyllaWrightwithdata.pdf',
+        es: 'Richard Sylla y Robert E. Wright — inventario de corporaciones estadounidenses, 1790–1860 (INET, WP 224)',
+        en: 'Richard Sylla and Robert E. Wright — U.S. corporate census, 1790–1860 (INET, WP 224)',
+        note: {
+          es: 'State Bank at New Brunswick, 1812, Nueva Jersey; capital 400.000 dólares.',
+          en: 'State Bank at New Brunswick, 1812, New Jersey; capital $400,000.',
+        },
+      },
+      {
+        href: 'https://findit.library.nd.edu/Record/ndlaw-in00002495040',
+        es: 'Trial of Robert N. Woodworth (New Brunswick, 1874) — catálogo, University of Notre Dame',
+        en: 'Trial of Robert N. Woodworth (New Brunswick, 1874) — University of Notre Dame catalog',
+        note: {
+          es: 'Middlesex County, término de septiembre de 1874: Woodworth juzgado con Greenleaf W. Appleton, «late cashier, now a fugitive», por conspiración para defraudar al State Bank at New Brunswick.',
+          en: 'Middlesex County, September term 1874: Woodworth tried with Greenleaf W. Appleton, “late cashier, now a fugitive,” for conspiracy to defraud the State Bank at New Brunswick.',
+        },
+      },
+      {
+        href: 'https://www.nytimes.com/1877/04/01/archives/a-newjersey-bank-suspends-the-state-bank-of-newbrunswick-closes-its.html',
+        es: 'The New York Times — A New-Jersey Bank Suspends, 1 de abril de 1877',
+        en: 'The New York Times — A New-Jersey Bank Suspends, 1 April 1877',
+        note: {
+          es: 'Cierre el 31 de marzo de 1877 a la una de la tarde; los oficiales se negaron a dar un estado de cuentas.',
+          en: 'Closed on 31 March 1877 at one in the afternoon; the officers refused to issue a statement.',
+        },
+      },
+    ],
+  },
   {
     id: '10-dolares-serie-1934-chicago',
     chapterId: 'us-frb',
@@ -360,6 +491,7 @@ export const notePageCopy = {
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
+    historyHeading: 'El banco',
     scarcityHeading: 'Rareza e impresión',
     populationHeading: 'Población',
     factsHeading: 'Datos de catálogo',
@@ -378,6 +510,7 @@ export const notePageCopy = {
     frontHeading: 'Face',
     backHeading: 'Back',
     aboutHeading: 'The note',
+    historyHeading: 'The bank',
     scarcityHeading: 'Scarcity and printage',
     populationHeading: 'Population',
     factsHeading: 'Catalog facts',
