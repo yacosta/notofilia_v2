@@ -1,11 +1,13 @@
 ---
+import { copy, type Locale } from '../lib/site';
+
 interface Props {
-  locale?: 'es' | 'en';
+  locale?: Locale;
   visuallyHidden?: boolean;
 }
 
 const { locale = 'es', visuallyHidden = false } = Astro.props;
-const text = locale === 'en' ? 'opens in a new tab' : 'se abre en una pestaña nueva';
+const text = copy[locale].newWindow;
 const visibleClass = 'italic font-normal tracking-[0.01em]';
 ---
 

@@ -1,0 +1,33 @@
+---
+import { cfImage, imageSrcset } from '../../lib/images';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  sizes?: string;
+}
+
+const {
+  src,
+  alt,
+  width = 800,
+  height = 400,
+  class: className = 'mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4',
+  sizes = '(max-width: 640px) 50vw, 280px',
+} = Astro.props;
+---
+
+<img
+  src={cfImage(src, { width: 800 })}
+  srcset={imageSrcset(src)}
+  sizes={sizes}
+  alt={alt}
+  width={width}
+  height={height}
+  class={className}
+  loading="lazy"
+  decoding="async"
+/>

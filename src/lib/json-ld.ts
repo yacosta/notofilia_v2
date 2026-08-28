@@ -35,6 +35,28 @@ export function siteGraph() {
   };
 }
 
+export function collectionPageJsonLd(options: {
+  locale: Locale;
+  pathname: string;
+  name: string;
+  description: string;
+  crumbs: BreadcrumbCrumb[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbList(options.crumbs, options.locale),
+      {
+        '@type': 'CollectionPage',
+        name: options.name,
+        description: options.description,
+        url: absoluteUrl(options.pathname),
+        inLanguage: options.locale,
+      },
+    ],
+  };
+}
+
 export function breadcrumbList(crumbs: BreadcrumbCrumb[], locale: Locale) {
   return {
     '@type': 'BreadcrumbList',
