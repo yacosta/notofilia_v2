@@ -32,6 +32,7 @@ export type ColombiaNote = {
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
+  history?: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
   scarcity: LocalizedText;
@@ -179,6 +180,10 @@ export const colombiaNotes: ColombiaNote[] = [
       es: 'El Banco de Rio Hacha —hoy Riohacha, en la Guajira— dejó estatutos impresos en 1882, en la Imprenta de Padilla. Al año siguiente encargó a la American Bank Note Company de Nueva York el papel de cinco pesos. El Standard Catalog of World Paper Money — Specialized Issues lo numera S819p: negro sobre fondo pardo, escudo a la izquierda, Simón Bolívar al centro y, a la derecha, una alegoría femenina apoyada en una rueda. La serie es C. El montaje de estas pruebas lleva la fecha «February 1883». El anverso promete pagar en la oficina, a la vista y al portador, cinco pesos en moneda corriente; el serial rojo es 00000 y tres perforaciones de cancelación cortan el margen inferior. El reverso, en sepia, es un marco de roleos con el 5 en ambos flancos y el pie «AMERICAN BANK NOTE COMPANY, NEW YORK». No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',
       en: 'The Banco de Rio Hacha — today’s Riohacha, on the Guajira — left printed statutes in 1882, from the Imprenta de Padilla. The next year it ordered five-peso paper from the American Bank Note Company in New York. The Standard Catalog of World Paper Money — Specialized Issues numbers it S819p: black on a brown underprint, arms at left, Simón Bolívar at center, and at right a female allegory leaning on a wheel. The series is C. The mount of these proofs is dated “February 1883.” The face promises to pay at the office, on sight and to the bearer, five pesos in current money; the red serial is 00000 and three cancellation punches cut the lower margin. The sepia back is a scrollwork frame with a 5 at each flank and the imprint “AMERICAN BANK NOTE COMPANY, NEW YORK.” There are no signatures: these are plate proofs, not a note placed in circulation. This record gathers the collection’s two PMG holders — face and back, separately slabbed.',
     },
+    history: {
+      es: 'Entre 1870 y finales de los ochenta Colombia no tenía un único banco central: era la banca libre. El gobierno autorizó bancos privados regionales que emitían billetes respaldados en sus propias reservas de oro y plata. En esa ventana, Riohacha era un puerto de frontera en la Guajira, nudo de comerciantes con el Caribe, Europa y el interior. El transporte de especie metálica era peligroso; el crédito local lo evitaba. Los estatutos de 1882, impresos en la Imprenta de Padilla, fijan la constitución del banco por comerciantes locales y extranjeros. Adolfo Meisel sitúa el inicio de operaciones en 1885, con un capital autorizado de 150.000 pesos, y la liquidación en 1888. Los catálogos de notafilia colombiana —Hernández, y las series especializadas— registran una emisión principal de 1, 5, 10, 20 y 50 pesos, y un fraccionario de 20 centavos, serie Y, fechado hacia diciembre de 1885. Este cinco pesos de 1883 lleva pie de la American Bank Note Company de Nueva York; de otros valores no se publica aquí la imprenta. La Regeneración de Rafael Núñez centralizó el poder político y económico. El Banco Nacional se estableció en 1881; hacia 1886–1887 el curso forzoso y las leyes que monopolizaron la emisión quitaron a los bancos particulares el derecho de imprimir. Sin esa facultad, y obligados a recibir el papel nacional en depreciación, la mayoría de los emisores regionales —incluido el de Riohacha— se liquidaron. Cerró así, en pocos años, la independencia financiera de este puerto del Caribe colombiano.',
+      en: 'From 1870 into the late 1880s Colombia had no single central bank: that was free banking. The government authorized private regional banks to issue notes backed by their own gold and silver reserves. In that window Riohacha was a frontier port on the Guajira, a merchants’ hinge with the Caribbean, Europe, and the interior. Moving metallic specie was dangerous; local credit avoided it. The 1882 statutes, printed at the Imprenta de Padilla, fix the bank’s constitution by local and foreign merchants. Adolfo Meisel places the start of operations in 1885, with an authorized capital of 150,000 pesos, and liquidation in 1888. Colombian notaphily catalogs — Hernández, and the specialized series — record a main issue of 1, 5, 10, 20, and 50 pesos, and a fractional 20-centavo note, Series Y, dated around December 1885. This 1883 five-peso carries the American Bank Note Company imprint from New York; printers for the other values are not published here. Rafael Núñez’s Regeneración centralized political and economic power. The Banco Nacional was established in 1881; around 1886–1887 forced legal tender and laws that monopolized issue stripped private banks of the right to print. Without that faculty, and forced to take depreciating national paper, most regional issuers — including Riohacha’s — went into liquidation. In a few years the financial independence of this Colombian Caribbean port was over.',
+    },
     frontCaption: {
       es: 'Prueba de anverso, Pick S819p1, encapsulada PMG 64 Choice Uncirculated EPQ: Bolívar, escudo, alegoría de la industria y serial C 00000.',
       en: 'Face proof, Pick S819p1, slabbed PMG 64 Choice Uncirculated EPQ: Bolívar, the arms, an allegory of industry, and serial C 00000.',
@@ -188,8 +193,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Back proof, Pick S819p2, slabbed PMG 62 Uncirculated: a sepia ornamental frame, the figures 5, and the American Bank Note Company imprint.',
     },
     scarcity: {
-      es: 'RealBanknotes describe el tipo S819p como prueba de imprenta de 1883, no como emisión de caja. Un lote de la colección Eldorado, citado por PMG, era también una prueba S819p. Los ejemplares de circulación de este banco costeño son de extrema rareza; el mercado ve sobre todo planchas de Nueva York, a menudo montadas, perforadas y con seriales de ceros. Esta ficha no inventa una tirada.',
-      en: 'RealBanknotes describes type S819p as an 1883 printer’s proof, not a till issue. A lot from the Eldorado collection, cited by PMG, was likewise an S819p proof. Circulating notes of this coastal bank are extremely rare; the market mostly sees New York plates, often mounted, punch-cancelled, and with zero serials. This record does not invent a printage.',
+      es: 'RealBanknotes describe el tipo S819p como prueba de imprenta de 1883, no como emisión de caja. Un lote de la colección Eldorado, citado por PMG, era también una prueba S819p. Los billetes de circulación recorrieron una frontera accidentada y, al liquidarse el banco, se retiraron: los supervivientes son de extrema rareza y de los más buscados de la notafilia colombiana. El mercado ve sobre todo planchas de Nueva York, a menudo montadas, perforadas y con seriales de ceros. Esta ficha no inventa una tirada.',
+      en: 'RealBanknotes describes type S819p as an 1883 printer’s proof, not a till issue. A lot from the Eldorado collection, cited by PMG, was likewise an S819p proof. Circulating notes traveled a rugged frontier and, when the bank was wound up, were recalled: survivors are extremely rare and among the most sought-after pieces in Colombian notaphily. The market mostly sees New York plates, often mounted, punch-cancelled, and with zero serials. This record does not invent a printage.',
     },
     population: {
       es: 'Las dos piezas de esta ficha están encapsuladas por PMG: el anverso como 64 Choice Uncirculated EPQ (S819p1) y el reverso como 62 Uncirculated (S819p2). No se ha verificado de forma independiente un censo de población para estos números de cápsula.',
@@ -225,6 +230,33 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '32 páginas, Riohacha, Imprenta de Padilla: el banco existía el año anterior a estas planchas.',
           en: '32 pages, Riohacha, Imprenta de Padilla: the bank existed the year before these plates.',
+        },
+      },
+      {
+        href: 'https://repositorio.banrep.gov.co/bitstreams/b82e02f1-24fd-41fa-bc0f-bbe70a0d1671/download',
+        es: 'Adolfo Meisel Roca — Los bancos comerciales en la era de la banca libre, 1871–1923',
+        en: 'Adolfo Meisel Roca — Commercial banks in the free-banking era, 1871–1923',
+        note: {
+          es: 'Cuadro 6, Costa Atlántica: Banco de Riohacha, fundación 1885, capital 150.000 pesos, liquidación 1888.',
+          en: 'Table 6, Atlantic coast: Banco de Riohacha, founded 1885, capital 150,000 pesos, liquidated 1888.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COLS0819.htm',
+        es: 'Bank Note Museum — Colombia S819, 5 pesos del Banco de Rio Hacha',
+        en: 'Bank Note Museum — Colombia S819, Banco de Rio Hacha 5 pesos',
+        note: {
+          es: 'Fecha 1.º de enero de 1883; American Bank Note Company, Nueva York; anota que solo se conocen especímenes.',
+          en: 'Date 1 January 1883; American Bank Note Company, New York; notes that only specimens are known.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: 'Catálogo de referencia de la notafilia colombiana; Numismondo lo cita también como Billetes del Siglo Antepasado, 1813–1915.',
+          en: 'A standard Colombian notaphily catalog; Numismondo also cites Hernández as Billetes del Siglo Antepasado, 1813–1915.',
         },
       },
     ],
@@ -390,6 +422,7 @@ export const notePageCopy = {
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
+    historyHeading: 'El banco',
     scarcityHeading: 'Rareza e impresión',
     populationHeading: 'Población',
     factsHeading: 'Datos de catálogo',
@@ -408,6 +441,7 @@ export const notePageCopy = {
     frontHeading: 'Face',
     backHeading: 'Back',
     aboutHeading: 'The note',
+    historyHeading: 'The bank',
     scarcityHeading: 'Scarcity and printage',
     populationHeading: 'Population',
     factsHeading: 'Catalog facts',
