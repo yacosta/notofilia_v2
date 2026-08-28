@@ -56,6 +56,15 @@ export const colombiaNotes: ColombiaNote[] = [
       front: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
       back: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-back.jpg',
     },
+    hero: {
+      src: '/images/catalog/colombia/hero-banco-hipotecario.jpg',
+      width: 1024,
+      height: 436,
+    },
+    heroAlt: {
+      es: 'Panorámica ilustrada vintage de Bogotá sobre pergamino, con el edificio neoclásico del Banco Hipotecario rotulado 1910 en la obra y el título Bogotá',
+      en: 'Vintage illustrated panoramic of Bogotá on parchment, with the neoclassical Banco Hipotecario building captioned 1910 in the artwork and the title Bogotá',
+    },
     title: {
       es: '5 pesos · Banco Hipotecario · 1881',
       en: '5 pesos · Banco Hipotecario · 1881',
