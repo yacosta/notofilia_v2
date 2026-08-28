@@ -41,7 +41,8 @@ const jsonLd = collectionPageJsonLd({
   description: t.metaDescription,
   crumbs: [
     { name: copy[locale].home, path: '/' },
-    { name: t.title, path: pathname },
+    { name: copy[locale].numismaticsNav, path: NUMISMATICA_PATH },
+    { name: t.kicker, path: pathname },
   ],
 });
 

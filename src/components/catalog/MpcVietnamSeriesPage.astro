@@ -36,7 +36,8 @@ const jsonLd = collectionPageJsonLd({
   description: t.metaDescription,
   crumbs: [
     { name: copy[locale].home, path: '/' },
-    { name: t.title, path: pathname },
+    { name: t.parentLink, path: USA_PATH },
+    { name: t.breadcrumbCurrent, path: pathname },
   ],
 });
 
