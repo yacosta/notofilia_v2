@@ -157,7 +157,7 @@ export const seriesCopy = {
     title: 'Certificados de pago militar en Vietnam',
     breadcrumbCurrent: 'MPC - Guerra de Vietnam (1955-1975)',
     heroAlt:
-      'Mapa vintage en relieve 3D de Vietnam sobre pergamino, con el delta del Río Rojo, Huế, Đà Nẵng, Saigón, el paralelo 17, sellos y el título Vietnam 1955–1975',
+      'Mapa vintage en relieve 3D de Vietnam sobre pergamino, con Hanói, Huế, el palacio de la Independencia, el delta del Mekong, el paralelo 17, sellos, un billete de Air Vietnam, un pasaporte y el título Vietnam 1955–1975',
     intro: [
       'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
       'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
@@ -183,7 +183,7 @@ export const seriesCopy = {
     title: 'Military Payment Certificates in Vietnam',
     breadcrumbCurrent: 'MPC - Vietnam War (1955-1975)',
     heroAlt:
-      'Vintage 3D relief map of Vietnam on parchment, with the Red River Delta, Huế, Da Nang, Saigon, the 17th parallel, postage stamps, and the title Vietnam 1955–1975',
+      'Vintage 3D relief map of Vietnam on parchment, with Hanoi, Huế, Independence Palace, the Mekong Delta, the 17th parallel, postage stamps, an Air Vietnam ticket, a passport, and the title Vietnam 1955–1975',
     intro: [
       'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
       'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
