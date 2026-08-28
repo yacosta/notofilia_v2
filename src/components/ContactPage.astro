@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
 import { breadcrumbList } from '../lib/json-ld';
-import { cfImage } from '../lib/images';
 import {
   CONTACT_IMAGE,
   CONTACT_TURNSTILE_SITE_KEY,
@@ -69,17 +68,27 @@ const jsonLd = {
 
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div class="flex min-h-[280px] items-center justify-center">
-          <img
-            src={cfImage(CONTACT_IMAGE, { width: 511, quality: 80 })}
-            srcset={[360, 511, 800].map((width) => `${cfImage(CONTACT_IMAGE, { width })} ${width}w`).join(', ')}
-            sizes="(max-width: 700px) 70vw, 360px"
-            alt={t.imageAlt}
-            width="511"
-            height="511"
-            class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source
+              srcset="/uploads/doblones-coloniales-oro-360.webp 360w, /uploads/doblones-coloniales-oro.webp 511w"
+              type="image/webp"
+              sizes="(max-width: 700px) 70vw, 360px"
+            />
+            <source
+              srcset="/uploads/doblones-coloniales-oro-360.png 360w, /uploads/doblones-coloniales-oro.png 511w"
+              type="image/png"
+              sizes="(max-width: 700px) 70vw, 360px"
+            />
+            <img
+              src={CONTACT_IMAGE}
+              alt={t.imageAlt}
+              width="511"
+              height="511"
+              class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
 
         <div data-contact-root>

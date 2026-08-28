@@ -64,6 +64,18 @@ export function contactPath(locale: ContactLocale): string {
   return locale === 'en' ? `/en${CONTACT_PATH_EN}` : CONTACT_PATH;
 }
 
+/** First-project Dreamweaver / .dc URLs. */
+export const CONTACT_LEGACY_REDIRECTS: Record<string, string> = {
+  '/contacto.dc': CONTACT_PATH,
+  '/contacto.dc.html': CONTACT_PATH,
+  '/en/contact.dc': `/en${CONTACT_PATH_EN}`,
+  '/en/contact.dc.html': `/en${CONTACT_PATH_EN}`,
+};
+
+export function contactLegacyRedirect(pathname: string): string | undefined {
+  return CONTACT_LEGACY_REDIRECTS[pathname] ?? CONTACT_LEGACY_REDIRECTS[pathname.replace(/\/$/, '') || '/'];
+}
+
 export const contactDedicatedSlugs = [
   CONTACT_PATH.replace(/^\/|\/$/g, ''),
   CONTACT_PATH_EN.replace(/^\/|\/$/g, ''),

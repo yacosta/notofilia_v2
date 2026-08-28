@@ -1,3 +1,4 @@
+import { contactLegacyRedirect } from './data/contact';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 
 function isNonIndexableHost(hostname: string): boolean {
@@ -13,6 +14,10 @@ function shouldNoindex(url: URL): boolean {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    const legacy = contactLegacyRedirect(url.pathname);
+    if (legacy) {
+      return Response.redirect(new URL(legacy, url).href, 301);
+    }
     if (url.pathname.startsWith('/api/')) {
       return handleCommentsRequest(request, env);
     }

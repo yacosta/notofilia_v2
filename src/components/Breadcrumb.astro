@@ -23,7 +23,6 @@ const aria = label ?? (locale === 'en' ? 'Breadcrumb' : 'Migas de pan');
         const current = index === items.length - 1;
         return (
           <li class="inline-flex min-h-11 items-center">
-            {index > 0 ? <span aria-hidden="true" class="px-2">/</span> : null}
             {item.href && !current ? (
               <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={item.href}>
                 {item.label}
