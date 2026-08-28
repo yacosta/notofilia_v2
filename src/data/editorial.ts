@@ -30,6 +30,7 @@ export type EditorialArticle = {
   title: LocalizedText;
   dek: LocalizedText;
   description: LocalizedText;
+  seoTitle?: LocalizedText;
   published: string;
   updated?: string | null;
   dateEs: string;

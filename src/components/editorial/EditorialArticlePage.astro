@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Comments from '../Comments.astro';
 import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
-import { PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
+import { breadcrumbJsonLd, PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
 import { cardImageSrc, imageSrcset } from '../../lib/images';
 import {
   articlePath,
@@ -28,6 +28,7 @@ const indexPath = kind === 'blog' ? blogPath(locale) : newsPath(locale);
 const sectionLabel = kind === 'blog' ? t.blog : t.news;
 const backLabel = kind === 'blog' ? t.backToBlog : t.backToNews;
 const title = article.title[locale];
+const seoTitle = article.seoTitle?.[locale] || title;
 const dek = article.dek[locale];
 const description = article.description[locale];
 const rawBody = article.bodyHtml[locale] || article.bodyHtml.es;
@@ -36,31 +37,58 @@ const body = enhanceProseHtml(rawBody, locale);
 const related = resolveRelated(article.related, locale);
 const claim = article.claim;
 
+const pageUrl = new URL(pathname, SITE_URL).href;
+const imageUrl = new URL(article.image, SITE_URL).href;
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': kind === 'blog' ? 'BlogPosting' : 'NewsArticle',
-  headline: title,
-  description,
-  datePublished: article.published,
-  dateModified: article.updated || article.published,
-  inLanguage: locale,
-  image: new URL(article.image, SITE_URL).href,
-  url: new URL(pathname, SITE_URL).href,
-  author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
-  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-  ...(kind === 'news' && article.sourceName && article.sourceUrl
-    ? {
-        isBasedOn: {
-          '@type': 'CreativeWork',
-          name: article.sourceName,
-          url: article.sourceUrl,
-        },
-      }
-    : {}),
+  '@graph': [
+    {
+      '@type': kind === 'blog' ? 'BlogPosting' : 'NewsArticle',
+      headline: title,
+      alternativeHeadline: seoTitle !== title ? seoTitle : undefined,
+      description,
+      datePublished: article.published,
+      dateModified: article.updated || article.published,
+      inLanguage: locale,
+      image: {
+        '@type': 'ImageObject',
+        url: imageUrl,
+        caption: article.caption[locale],
+      },
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      articleSection: sectionLabel,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      ...(kind === 'news' && article.sourceName && article.sourceUrl
+        ? {
+            isBasedOn: {
+              '@type': 'CreativeWork',
+              name: article.sourceName,
+              url: article.sourceUrl,
+            },
+          }
+        : {}),
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: sectionLabel, item: indexPath },
+      { name: title, item: pathname },
+    ]),
+  ],
 };
 ---
 
-<Layout title={`${title} · Notofilia`} description={description} locale={locale} pathname={pathname} ogImage={article.image} ogType="article">
+<Layout
+  title={`${seoTitle} · Notofilia`}
+  description={description}
+  locale={locale}
+  pathname={pathname}
+  ogImage={article.image}
+  ogImageAlt={article.imageAlt[locale]}
+  ogType="article"
+  publishedTime={article.published}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
