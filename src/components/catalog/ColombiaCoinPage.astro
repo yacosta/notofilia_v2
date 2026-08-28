@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
   coinagePieceCopy,
@@ -33,7 +34,8 @@ const pathname = coinagePiecePath(piece, locale);
           name: piece.title[locale],
           description: piece.lead[locale],
           url: pathname,
-          image: piece.images.composite,
+          image: piece.images.front,
+          imageBack: piece.images.back,
           locale,
           artform: 'Coin',
         }),
@@ -93,7 +95,7 @@ const pathname = coinagePiecePath(piece, locale);
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           <NoteImageLightbox
             src={piece.images.front}
-            alt={piece.frontCaption[locale]}
+            alt={catalogScanAlt(locale, { title: piece.title[locale], pick: piece.reference, side: 'front' })}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -104,7 +106,7 @@ const pathname = coinagePiecePath(piece, locale);
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           <NoteImageLightbox
             src={piece.images.back}
-            alt={piece.backCaption[locale]}
+            alt={catalogScanAlt(locale, { title: piece.title[locale], pick: piece.reference, side: 'back' })}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

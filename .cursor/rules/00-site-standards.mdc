@@ -44,7 +44,8 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 
 - Register every public HTML route in `src/pages/sitemap.xml.ts` (via `dedicatedCatalogPaths`, stubs, or an explicit extra). Include both locales and xhtml hreflang.
 - Page-type JSON-LD is required as listed in `10-page-types.mdc`. Sitewide `WebSite` JSON-LD in `Layout` does not replace page JSON-LD.
-- Keep URLs and canonicals stable when refactoring. Add redirects in `astro.config.mjs` for retired slugs.
+- Published URLs are permanent. A rename or retirement ships a 301 in the same PR (`src/lib/legacy-redirects.ts`, which feeds the Worker and `astro.config.mjs`). Do not re-slug a live catalogue piece without the redirect.
+- Keep URLs and canonicals stable when refactoring. Hub redirects are only for pieces that are truly gone; prefer item-to-item 301s.
 
 ## Layout widths (`LAYOUT.md`)
 

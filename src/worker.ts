@@ -1,4 +1,4 @@
-import { contactLegacyRedirect } from './data/contact';
+import { seoRedirectTarget } from './lib/legacy-redirects';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 
 function isNonIndexableHost(hostname: string): boolean {
@@ -14,7 +14,7 @@ function shouldNoindex(url: URL): boolean {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    const legacy = contactLegacyRedirect(url.pathname);
+    const legacy = seoRedirectTarget(url.pathname);
     if (legacy) {
       return Response.redirect(new URL(legacy, url).href, 301);
     }

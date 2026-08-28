@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
   chapterHref,
@@ -102,7 +103,7 @@ const jsonLd = collectionPageJsonLd({
                 >
                   <CatalogThumb
                     src={coin.images.composite}
-                    alt={coin.frontCaption[locale]}
+                    alt={catalogScanAlt(locale, { title: coin.title[locale], pick: coin.references, side: 'front' })}
                     width={coin.images.width}
                     height={coin.images.height}
                     class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"

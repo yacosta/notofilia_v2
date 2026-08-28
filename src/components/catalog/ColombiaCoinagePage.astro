@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import {
@@ -113,7 +114,7 @@ const jsonLd = collectionPageJsonLd({
                     piece ? (
                       <CatalogThumb
                     src={piece.images.composite}
-                    alt={piece.title[locale]}
+                    alt={catalogScanAlt(locale, { title: piece.title[locale], pick: piece.reference, side: 'front' })}
                     width={1536}
                     height={1024}
                     class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
@@ -194,7 +195,7 @@ const jsonLd = collectionPageJsonLd({
                   >
                     <CatalogThumb
                     src={piece.images.composite}
-                    alt={piece.title[locale]}
+                    alt={catalogScanAlt(locale, { title: piece.title[locale], pick: piece.reference, side: 'front' })}
                     width={1536}
                     height={1024}
                     class="mb-4 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-0 sm:max-w-[16rem]"

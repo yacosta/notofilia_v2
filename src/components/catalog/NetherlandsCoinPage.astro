@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import {
   coinPageCopy,
   coinagePath,
@@ -121,7 +122,7 @@ const sources = [
         </h2>
         <NoteImageLightbox
           src={coin.images.composite}
-          alt={`${coin.frontCaption[locale]} ${coin.backCaption[locale]}`}
+          alt={`${catalogScanAlt(locale, { title: coin.title[locale], pick: coin.references, side: 'front' })} ${catalogScanAlt(locale, { title: coin.title[locale], pick: coin.references, side: 'back' })}`}
           expandLabel={t.expandImage}
           closeLabel={t.closeLightbox}
           locale={locale}

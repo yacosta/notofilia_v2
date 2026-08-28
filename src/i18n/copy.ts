@@ -1,7 +1,3 @@
-import { collectionStats as holdingsStats } from '../data/holdings';
-
-const seedHoldings = holdingsStats();
-
 /** Site chrome copy. Page-specific catalog copy stays in src/data. */
 export const copy = {
   es: {
@@ -25,8 +21,9 @@ export const copy = {
     navOnMenu: 'Está en el menú de navegación',
     backToMenu: 'Volver al menú',
     megaBannerCta: 'Ver el catálogo',
-    metaTitle: 'Notofilia: Billetes y Numismática | Catálogo y Guías',
-    metaDescription: `Notafilia y numismática: ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países. Catálogos y guías en español.`,
+    metaTitle: 'Notafilia y numismática · Notofilia',
+    metaDescription:
+      'Catálogo comentado de billetes y monedas históricas de Colombia y América Latina, con guías para coleccionistas.',
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     virtualCollection: 'Colección virtual',
@@ -123,8 +120,9 @@ export const copy = {
     navOnMenu: 'You are on the navigation menu',
     backToMenu: 'Back to menu',
     megaBannerCta: 'See the catalog',
-    metaTitle: 'Notofilia: Banknotes and Numismatics | Catalog and Guides',
-    metaDescription: `Notaphily and numismatics: ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries. Catalogs and guides in English.`,
+    metaTitle: 'Notaphily and numismatics · Notofilia',
+    metaDescription:
+      'An annotated catalogue of historical banknotes and coins from Colombia and Latin America, with guides for collectors.',
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     virtualCollection: 'Virtual collection',

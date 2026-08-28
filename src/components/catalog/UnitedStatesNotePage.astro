@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import {
   notePageCopy,
   notePath,
@@ -35,14 +37,15 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'VisualArtwork',
-        name: note.title[locale],
-        description: note.lead[locale],
-        url: new URL(pathname, 'https://notofilia.com').href,
-        image: new URL(note.images.front, 'https://notofilia.com').href,
-        artform: 'Banknote',
-        author: { '@type': 'Person', name: 'Yezid Acosta' },
-        creator: { '@type': 'Person', name: 'Yezid Acosta' },
+        ...visualArtworkJsonLd({
+          name: note.title[locale],
+          description: note.lead[locale],
+          url: pathname,
+          image: note.images.front,
+          imageBack: note.images.back,
+          locale,
+          artform: 'Banknote',
+        }),
       })}
     />
   </Fragment>
@@ -98,7 +101,7 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           <NoteImageLightbox
             src={note.images.front}
-            alt={note.frontCaption[locale]}
+            alt={catalogScanAlt(locale, { title: note.title[locale], pick: note.pick, side: 'front' })}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -111,7 +114,7 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           <NoteImageLightbox
             src={note.images.back}
-            alt={note.backCaption[locale]}
+            alt={catalogScanAlt(locale, { title: note.title[locale], pick: note.pick, side: 'back' })}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

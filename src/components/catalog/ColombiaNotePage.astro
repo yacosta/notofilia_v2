@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { catalogScanAlt } from '../../lib/catalog-alt';
 import { seriesPath, seriesSources } from '../../data/colombia';
 import {
   notePageCopy,
@@ -34,9 +35,12 @@ const jsonLd = visualArtworkJsonLd({
   description: note.lead[locale],
   url: pathname,
   image: note.images.front,
+  imageBack: note.images.back,
   locale,
   artform: 'Banknote',
 });
+const frontAlt = catalogScanAlt(locale, { title: note.title[locale], pick: note.pick, side: 'front' });
+const backAlt = catalogScanAlt(locale, { title: note.title[locale], pick: note.pick, side: 'back' });
 ---
 
 <Layout
@@ -121,7 +125,7 @@ const jsonLd = visualArtworkJsonLd({
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           <NoteImageLightbox
             src={note.images.front}
-            alt={note.frontCaption[locale]}
+            alt={frontAlt}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -134,7 +138,7 @@ const jsonLd = visualArtworkJsonLd({
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           <NoteImageLightbox
             src={note.images.back}
-            alt={note.backCaption[locale]}
+            alt={backAlt}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

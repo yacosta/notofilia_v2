@@ -22,3 +22,16 @@ describe('llms.txt and grading-guide SEO copy', () => {
     );
   });
 });
+
+describe('catalog artwork schema', () => {
+  it('credits ImageObject on VisualArtwork and never emits Product', () => {
+    assert.match(seoSource, /@type': 'VisualArtwork'/);
+    assert.match(seoSource, /@type': 'ImageObject'/);
+    assert.match(seoSource, /creditText/);
+    assert.doesNotMatch(seoSource, /Product|Offer/);
+    const jsonLd = readFileSync(new URL('./json-ld.ts', import.meta.url), 'utf8');
+    assert.match(jsonLd, /ImageObject/);
+    assert.match(jsonLd, /creditText/);
+    assert.doesNotMatch(jsonLd, /'@type': 'Product'/);
+  });
+});

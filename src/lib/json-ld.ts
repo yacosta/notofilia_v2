@@ -69,23 +69,37 @@ export function breadcrumbList(crumbs: BreadcrumbCrumb[], locale: Locale) {
   };
 }
 
+export function catalogImageObject(src: string) {
+  return {
+    '@type': 'ImageObject' as const,
+    contentUrl: absoluteUrl(src),
+    url: absoluteUrl(src),
+    creditText: `${SITE_AUTHOR} / Notofilia`,
+    license: absoluteUrl('/politica-privacidad-cookies/'),
+    copyrightNotice: SITE_AUTHOR,
+  };
+}
+
 export function visualArtworkJsonLd(options: {
   name: string;
   description: string;
   url: string;
   image?: string;
+  imageBack?: string;
   locale: Locale;
   artform: 'Banknote' | 'Coin' | 'CreativeWork';
 }) {
   const type = options.artform === 'CreativeWork' ? 'CreativeWork' : 'VisualArtwork';
+  const images = [options.image, options.imageBack].filter((src): src is string => Boolean(src)).map(catalogImageObject);
   return {
     '@type': type,
     name: options.name,
     description: options.description,
     url: absoluteUrl(options.url),
     inLanguage: options.locale,
-    image: options.image ? absoluteUrl(options.image) : undefined,
+    image: images.length === 1 ? images[0] : images.length > 1 ? images : undefined,
     artform: type === 'VisualArtwork' ? options.artform : undefined,
+    creditText: `${SITE_AUTHOR} / Notofilia`,
     author: { '@id': `${SITE_URL}/#yezid-acosta` },
     creator: { '@id': `${SITE_URL}/#yezid-acosta` },
     isPartOf: { '@id': `${SITE_URL}/#website` },
