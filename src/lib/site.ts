@@ -242,11 +242,11 @@ export const milestones: MilestoneItem[] = [
     href: USA_PATH,
     es: {
       title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
-      description: 'Tercera vitrina del catálogo: colonial, obsoleto, United States Notes, oro, plata, Reserva Federal y pop art.',
+      description: 'Tercera vitrina del catálogo: colonial, obsoleto, Estados Confederados, United States Notes, oro, plata, Reserva Federal y pop art.',
     },
     en: {
       title: 'United States · From colonial paper to the Federal Reserve',
-      description: 'Third catalog case: colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
+      description: 'Third catalog case: colonial, obsolete, Confederate States, United States Notes, gold, silver, the Federal Reserve, and pop art.',
     },
   },
   {

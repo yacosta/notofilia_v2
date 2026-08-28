@@ -31,6 +31,7 @@ const heroAlt = note.heroAlt?.[locale];
 if (hero && !heroAlt) {
   throw new Error(`Missing heroAlt for ${note.id} (${locale})`);
 }
+const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? note.history : [note.history];
 ---
 
 <Layout
@@ -161,12 +162,14 @@ if (hero && !heroAlt) {
       </section>
 
       {
-        note.history ? (
+        historyParagraphs.length > 0 ? (
           <section class="mt-12" aria-labelledby="history-heading">
             <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-              {t.historyHeading}
+              {note.historyHeading?.[locale] ?? t.historyHeading}
             </h2>
-            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+            {historyParagraphs.map((paragraph) => (
+              <p class="mb-5 mt-0 text-[17px]/7 text-cream last:mb-0">{paragraph[locale]}</p>
+            ))}
           </section>
         ) : null
       }
