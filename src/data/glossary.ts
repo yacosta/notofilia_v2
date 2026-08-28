@@ -839,7 +839,7 @@ export const glossaryCopy = {
       'Glosario bilingüe de más de 90 términos de numismática y notafilia: monedas, billetes, diseño, producción y coleccionismo.',
     kicker: 'Recurso para coleccionistas',
     title: 'Glosario de Numismática y Notafilia',
-    lead: '95 términos de monedas y billetes —diseño, producción, emisión, conservación y coleccionismo— que aparecen a lo largo del catálogo de Notofilia, con su equivalente en inglés y una breve definición.',
+    lead: '95 términos de monedas y billetes: diseño, producción, emisión, conservación y coleccionismo, que aparecen a lo largo del catálogo de Notofilia, con su equivalente en inglés y una breve definición.',
     searchLabel: 'Buscar en el glosario',
     searchPlaceholder: 'Ej. specimen, viñeta, cospel…',
     clearSearch: 'Borrar búsqueda',
@@ -854,7 +854,7 @@ export const glossaryCopy = {
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     glossary: 'Glosario',
-    termTitle: (name: string) => `${name} — Glosario · Notofilia`,
+    termTitle: (name: string) => `${name} · Glosario · Notofilia`,
   },
   en: {
     metaTitle: 'Glossary of Numismatics and Notaphily · Notofilia',
@@ -862,7 +862,7 @@ export const glossaryCopy = {
       'Bilingual glossary of 90+ numismatics and notaphily terms: coins, banknotes, design, production, and collecting.',
     kicker: 'A resource for collectors',
     title: 'Glossary of Numismatics and Notaphily',
-    lead: '95 coin and banknote terms — design, production, issuing, conservation, and collecting — that appear throughout the Notofilia catalog, with the Spanish equivalent and a short definition.',
+    lead: '95 coin and banknote terms: design, production, issuing, conservation, and collecting. They appear throughout the Notofilia catalog, with the Spanish equivalent and a short definition.',
     searchLabel: 'Search the glossary',
     searchPlaceholder: 'E.g. specimen, vignette, planchet…',
     clearSearch: 'Clear search',
@@ -877,7 +877,7 @@ export const glossaryCopy = {
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     glossary: 'Glossary',
-    termTitle: (name: string) => `${name} — Glossary · Notofilia`,
+    termTitle: (name: string) => `${name} · Glossary · Notofilia`,
   },
 } as const;
 
