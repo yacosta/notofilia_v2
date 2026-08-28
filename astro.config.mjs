@@ -33,6 +33,12 @@ export default defineConfig({
     '/en/acerca-de': '/en/about/',
     '/about': '/en/about/',
     '/contact': '/en/contact/',
+    '/coleccion/colombia/10-pesos-oro-1943-anverso': '/coleccion/colombia/10-pesos-oro-1943/',
+    '/coleccion/colombia/10-pesos-oro-1943-reverso': '/coleccion/colombia/10-pesos-oro-1943/',
+    '/en/collection/colombia/10-pesos-oro-1943-anverso': '/en/collection/colombia/10-pesos-oro-1943/',
+    '/en/collection/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
+    '/en/coleccion/colombia/10-pesos-oro-1943-anverso': '/en/collection/colombia/10-pesos-oro-1943/',
+    '/en/coleccion/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
     ...generated,
   },
   vite: {

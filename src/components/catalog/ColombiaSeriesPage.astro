@@ -9,7 +9,7 @@ import {
   seriesSources,
 } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
-import { noteCardImage, notePath, notesForChapter } from '../../data/colombia-notes';
+import { notePath, notesForChapter } from '../../data/colombia-notes';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -151,19 +151,17 @@ const hero = {
                     class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
                     aria-label={chapter.title[locale]}
                   >
-                    {notesForChapter(chapter.id).map((note) => {
-                      const card = noteCardImage(note);
-                      return (
+                    {notesForChapter(chapter.id).map((note) => (
                       <li class="min-w-0">
                         <a
                           href={notePath(note, locale)}
                           class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                         >
                           <img
-                            src={card.src}
-                            alt={card.alt[locale]}
-                            width={note.imageWidth ?? 1440}
-                            height={note.imageHeight ?? 960}
+                            src={note.images.front}
+                            alt={note.frontCaption[locale]}
+                            width="1440"
+                            height="960"
                             class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
                             decoding="async"
                           />
@@ -176,8 +174,7 @@ const hero = {
                           <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                         </a>
                       </li>
-                      );
-                    })}
+                    ))}
                   </ol>
                 ) : null
               }

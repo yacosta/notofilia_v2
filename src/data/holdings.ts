@@ -92,8 +92,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-mpc-692-20-m98' },
   { id: 'us-frn-1934-10-chicago-fr2004g' },
   { id: 'co-1883-rio-hacha-5-pesos-s819p' },
-  { id: 'co-1943-10-pesos-oro-p389b-anverso' },
-  { id: 'co-1943-10-pesos-oro-p389b-reverso' },
+  { id: 'co-1943-10-pesos-oro-p389b' },
 ];
 
 export type CollectionStats = {
