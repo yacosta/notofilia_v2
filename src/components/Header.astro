@@ -58,22 +58,22 @@ function nodeIsCurrent(node: NavNode): boolean {
         {
           locale === 'es' ? (
             <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-cream px-3 font-sans text-[13px] font-semibold tracking-[0.14em] text-bg" aria-current="page" lang="es">
-              ES<span class="sr-only"> — Español</span>
+              ES<span class="sr-only"> ({t.langEsName})</span>
             </span>
           ) : (
             <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 font-sans text-[13px] font-semibold tracking-[0.14em] text-cream no-underline" href={esHref} hreflang="es" lang="es">
-              ES<span class="sr-only"> — Spanish</span>
+              ES<span class="sr-only"> ({t.langEsName})</span>
             </a>
           )
         }
         {
           locale === 'en' ? (
             <span class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-cream px-3 font-sans text-[13px] font-semibold tracking-[0.14em] text-bg" aria-current="page" lang="en">
-              EN<span class="sr-only"> — English</span>
+              EN<span class="sr-only"> ({t.langEnName})</span>
             </span>
           ) : (
             <a class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 font-sans text-[13px] font-semibold tracking-[0.14em] text-cream no-underline" href={enHref} hreflang="en" lang="en">
-              EN<span class="sr-only"> — English</span>
+              EN<span class="sr-only"> ({t.langEnName})</span>
             </a>
           )
         }

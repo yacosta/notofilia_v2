@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
-import { localizePath, SERIES_PATH, type Locale } from '../../lib/site';
+import { copy, localizePath, SERIES_PATH, type Locale } from '../../lib/site';
 import {
   notePageCopy,
   notePath,
@@ -53,6 +53,7 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <Breadcrumb
         locale={locale}
         items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(SERIES_PATH, locale), label: t.collectionLink },
           { href: seriesPath(locale), label: t.seriesLink },
           { label: note.title[locale] },

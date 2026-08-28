@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import { copy, localizePath, type Locale } from '../../lib/site';
 import { visualArtworkJsonLd } from '../../lib/json-ld';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
@@ -45,6 +45,7 @@ const pathname = coinagePiecePath(piece, locale);
       <Breadcrumb
         locale={locale}
         items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(COLOMBIA_COINAGE_PATH, locale), label: t.collectionLink },
           { href: `${coinagePath(locale)}#independencia`, label: t.chapterLink },
           { label: piece.title[locale] },
