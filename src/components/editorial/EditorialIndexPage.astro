@@ -1,7 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import CardImage from '../CardImage.astro';
 import NewWindowHint from '../NewWindowHint.astro';
-import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
 import {
   blogArticles,
   blogPath,
@@ -43,16 +45,13 @@ const jsonLd = {
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
-      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
-              {t.home}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{sectionLabel}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: sectionLabel },
+        ]}
+      />
 
       <header class="mb-12 max-w-[46rem]">
         <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
@@ -70,15 +69,7 @@ const jsonLd = {
                   href={localizePath(item.href, locale)}
                   class="block overflow-hidden no-underline"
                 >
-                  <img
-                    src={item.image}
-                    alt={item.imageAlt[locale]}
-                    width="1200"
-                    height="675"
-                    class="aspect-video w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <CardImage src={item.image} alt={item.imageAlt[locale]} />
                 </a>
                 <div class="flex flex-1 flex-col p-5">
                   <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
@@ -114,7 +105,7 @@ const jsonLd = {
                     href={localizePath(item.href, locale)}
                     class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
                   >
-                    {locale === 'en' ? 'Read more →' : 'Leer más →'}
+                    {copy[locale].readMore}
                     <span class="sr-only"> {item.title[locale]}</span>
                   </a>
                 </div>
