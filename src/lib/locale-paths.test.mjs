@@ -22,6 +22,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/', 'en'),
+      '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
       '/en/collection/colombia/5-pesos-rio-hacha-1883/',
     );
@@ -52,8 +56,8 @@ describe('locale path mapping', () => {
     assert.equal(redirects['/en/contacto/'], '/en/contact/');
     assert.equal(redirects['/en/coleccion/united-states/'], '/en/collection/united-states/');
     assert.equal(
-      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/'],
-      '/en/collection/united-states/10-dollars-series-1934-chicago/',
+      redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
+      '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
     );
   });
 });

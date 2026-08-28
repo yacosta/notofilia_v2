@@ -162,7 +162,7 @@ export const seriesCopy = {
       'El dólar de curso legal no debía inundar Saigón. Desde 1946 el Ejército pagaba a su gente en Military Payment Certificates: papel en dólares que solo valía en la base. Quien salía al mercado local los cambiaba en la ventanilla; el civil no podía devolverlos. Así se cortaba el mercado negro y se evitaba inflar la moneda del país anfitrión.',
       'El arma del sistema era el C-Day. Sin aviso, las puertas se cerraban a civiles y las tropas canjeaban la serie vigente por otra. La saliente amanecía sin valor. Trece series circularon entre 1946 y 1973; Tudor Press y Forbes Lithograph las imprimieron al principio, el Bureau of Engraving and Printing desde la 611, siempre en offset con planchetas de color, no en el intaglio de los Federal Reserve Notes.',
       'En Vietnam el programa tuvo teatro propio. La serie 641, del 31 de agosto de 1965 al 21 de octubre de 1968, fue la primera usada solo allí. La 661 trajo el 20 dólares. La 681 cubrió 1969–1970. La 692, última de todas, perdió los fraccionarios el 1 de junio de 1971 y los dólares el 15 de marzo de 1973. La 651, pese al número vecino, se usó en Japón, Libia y Corea, no en Vietnam.',
-      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J01130273J; el 1 dólar de la serie 681, C10102847C; y el 20 dólares de la serie 692, E05725119E. Las demás se publicarán como en Filipinas, a medida que se fotografíen.',
+      'Esta vitrina no es el catálogo completo de Schwan: es el inventario de los ejemplares vietnamitas que se documentarán aquí. Ya tienen ficha el 10 dólares de la serie 641, J01130273J; el 5 dólares de la serie 661, B03327560B; el 1 dólar de la serie 681, C10102847C; y el 20 dólares de la serie 692, E05725119E. Las demás se publicarán como en Filipinas, a medida que se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
     usLead: 'El resto del papel federal, colonial y obsoleto se documenta en la vitrina de Estados Unidos.',
@@ -185,7 +185,7 @@ export const seriesCopy = {
       'Legal-tender dollars were not meant to flood Saigon. From 1946 the Army paid its people in Military Payment Certificates: dollar paper that was good only on base. Anyone going to the local market changed them at the window; a civilian could not change them back. That cut the black market and kept from inflating the host currency.',
       'The system’s weapon was C-Day. Without notice, gates closed to civilians and troops exchanged the current series for another. The outgoing notes woke up worthless. Thirteen series circulated from 1946 to 1973; Tudor Press and Forbes Lithograph printed the early ones, the Bureau of Engraving and Printing from Series 611, always in offset with colored planchettes, not the intaglio of Federal Reserve Notes.',
       'In Vietnam the program had its own theater. Series 641, 31 August 1965 to 21 October 1968, was the first used only there. Series 661 brought the $20. Series 681 covered 1969–1970. Series 692, last of all, lost its fractionals on 1 June 1971 and its dollar notes on 15 March 1973. Series 651, despite the neighboring number, was used in Japan, Libya, and Korea, not in Vietnam.',
-      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J01130273J; the Series 681 $1, serial C10102847C; and the Series 692 $20, serial E05725119E. Further pieces will be published as they are photographed, as in the Philippines case.',
+      'This case is not Schwan’s complete catalog: it is the inventory of the Vietnam pieces that will be documented here. Note pages are already up for the Series 641 $10, serial J01130273J; the Series 661 $5, serial B03327560B; the Series 681 $1, serial C10102847C; and the Series 692 $20, serial E05725119E. Further pieces will be published as they are photographed, as in the Philippines case.',
     ],
     parentLink: 'United States',
     usLead: 'The rest of the federal, colonial, and obsolete paper is documented in the United States case.',
@@ -201,7 +201,11 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_MPC_PATH, locale);
 }
 
-export type MpcVietnamNoteId = '10-dolares-serie-641' | '1-dolar-serie-681' | '20-dolares-serie-692';
+export type MpcVietnamNoteId =
+  | '10-dolares-serie-641'
+  | '5-dolares-serie-661'
+  | '1-dolar-serie-681'
+  | '20-dolares-serie-692';
 
 export type MpcVietnamNote = {
   id: MpcVietnamNoteId;
@@ -307,6 +311,94 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
         note: {
           es: 'Cita 20.400.000 ejemplares; grabados de Baldwin (anverso) y Bower (reverso).',
           en: 'Cites 20,400,000 notes; Baldwin face engraving and Bower back.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-dolares-serie-661',
+    chapterId: 'serie-661',
+    path: '/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/',
+    pathEn: '/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    pick: 'P#M69 · Schwan 906-1',
+    serial: 'B03327560B',
+    signatures: {
+      es: 'Sin firmas (emisión militar; el texto de uso sustituye al firmante)',
+      en: 'No signatures (military issue; the use legend stands in place of a signer)',
+    },
+    printed: {
+      es: 'No se ha verificado aquí un recuento de impresión del 5 dólares; se cita un valor facial de unos 289 millones para toda la serie 661',
+      en: 'A printage for this $5 has not been independently verified here; about $289 million in face value is cited for Series 661 as a whole',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/mpc-661-5-composite.jpg',
+      front: '/images/catalog/estados-unidos/mpc-661-5-front.jpg',
+      back: '/images/catalog/estados-unidos/mpc-661-5-back.jpg',
+      width: 1600,
+      height: 1067,
+    },
+    title: {
+      es: '5 dólares · Serie 661',
+      en: '$5 · Series 661',
+    },
+    kicker: {
+      es: 'Estados Unidos · MPC · Vietnam',
+      en: 'United States · MPC · Vietnam',
+    },
+    lead: {
+      es: 'Anverso verde y rosa con retrato de mujer y una V ornamental; reverso burdeos con el rostro de una niña. Encapsulado PMG 66 EPQ, certificado 2108364-011, serie B03327560B.',
+      en: 'Green and pink face with a woman’s portrait and an ornamental V; burgundy back with a girl’s head. PMG 66 EPQ, certificate 2108364-011, serial B03327560B.',
+    },
+    description: {
+      es: 'El 5 dólares de la serie 661 (Pick M69, Schwan 906-1) es el valor de cinco dólares de la primera serie vietnamita que llevó también el 20 dólares: del 21 de octubre de 1968 al 11 de agosto de 1969. El anverso, en verde sobre guilloché rosa, lleva al centro un retrato de mujer hacia la derecha, a la izquierda una V ornamental —el cinco romano— y, en las cuatro esquinas, el 5; a la derecha, FIVE DOLLARS sobre un sol. «SERIES 661» aparece en rojo; el 16 es el número de posición en el pliego. El reverso, en burdeos, muestra en medallón el rostro de una niña, FIVE a ambos lados. El texto restringe el uso a establecimientos militares y personal autorizado. Esta pieza está encapsulada por PMG como Gem Uncirculated 66 EPQ, primera impresión; el certificado 2108364-011 identifica el serial B03327560B y la posición 16. El bloque B abre y cierra el número: no es un reemplazo.',
+      en: 'The Series 661 $5 (Pick M69, Schwan 906-1) is the five-dollar denomination of the first Vietnam series that also carried a $20: 21 October 1968 to 11 August 1969. The green face on pink guilloché carries a central woman’s portrait facing right, an ornamental V — the Roman five — at left, and 5s in all four corners; FIVE DOLLARS sits on a sunburst at right. “SERIES 661” appears in red; 16 is the sheet position number. The burgundy back shows a girl’s head in a medallion, with FIVE at both sides. The legend restricts use to military establishments and authorized personnel. This example is slabbed by PMG as Gem Uncirculated 66 EPQ, first printing; certificate 2108364-011 records serial B03327560B and position 16. The B block opens and closes the number: it is not a replacement.',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado del 5 dólares, serie 661, PMG 66 EPQ, serial B03327560B: retrato de mujer, V ornamental y FIVE DOLLARS.',
+      en: 'Slabbed face of the Series 661 $5, PMG 66 EPQ, serial B03327560B: woman’s portrait, ornamental V, and FIVE DOLLARS.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado del 5 dólares, serie 661, certificado PMG 2108364-011: rostro de niña y FIVE en burdeos.',
+      en: 'Slabbed back of the Series 661 $5, PMG certificate 2108364-011: girl’s head and FIVE in burgundy.',
+    },
+    scarcity: {
+      es: 'La ANA describe la serie 661 como atractiva y asequible en los valores bajos; los 10 y 20 dólares son, en cambio, claramente más escasos. Se cita un valor facial de unos 289 millones para toda la emisión, concentrado en menos de diez meses. Los reemplazos del 5, 10 y 20 dólares son las claves; esta pieza, con sufijo B, es emisión regular de primera impresión.',
+      en: 'The ANA calls Series 661 attractive and affordable in the low values; the $10 and $20, by contrast, are clearly scarcer. About $289 million in face value is cited for the whole issue, concentrated in less than ten months. Replacements of the $5, $10, and $20 are the keys; this piece, with a B suffix, is a regular first-printing note.',
+    },
+    population: {
+      es: 'PMG publica informes de población de Military Payment Certificates, pero el recuento concreto de Schwan 906-1 en 66 EPQ no se ha verificado aquí de forma independiente (el informe en línea requiere cuenta). Se documenta el certificado 2108364-011 y el grado impreso en el encapsulado, no un censo.',
+      en: 'PMG publishes Military Payment Certificate population reports, but the specific Schwan 906-1 grade-66 EPQ headcount has not been independently verified here (the online report requires an account). This page records certificate 2108364-011 and the grade printed on the holder, not a census total.',
+    },
+    grade: {
+      es: 'PMG 66 EPQ · certificado 2108364-011',
+      en: 'PMG 66 EPQ · certificate 2108364-011',
+    },
+    sources: [
+      {
+        href: 'https://art-hanoi.com/mpc/usa/mpc-series-661',
+        es: 'Art-Hanoi — MPC serie 661 (P-M64 a P-M71)',
+        en: 'Art-Hanoi — MPC Series 661 (P-M64 to P-M71)',
+        note: {
+          es: 'El 5 dólares es P-M69 / Schwan 906: retrato de mujer al anverso y rostro de mujer o niña al reverso.',
+          en: 'The $5 is P-M69 / Schwan 906: woman’s portrait on the face and a woman’s or girl’s head on the back.',
+        },
+      },
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-MIL/USAM0069.htm',
+        es: 'Bank Note Museum — P-M69, 5 dólares serie 661',
+        en: 'Bank Note Museum — P-M69, Series 661 $5',
+        note: {
+          es: 'Confirma M69: mujer al anverso y niña al reverso; ND (1968), serie 661.',
+          en: 'Confirms M69: woman on the face and girl on the back; ND (1968), Series 661.',
+        },
+      },
+      {
+        href: 'https://antiquemoney.com/military-payment-certificate-values/series-661-military-payment-certificate-value/',
+        es: 'Antique Money — valores de la serie 661',
+        en: 'Antique Money — Series 661 values',
+        note: {
+          es: 'Cita unos 289 millones de valor facial; los reemplazos de esta serie no terminan en B.',
+          en: 'Cites about $289 million in face value; replacements in this series do not end in B.',
         },
       },
     ],
