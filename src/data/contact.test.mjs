@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { readFileSync } from 'node:fs';
 import { CONTACT_IMAGE, contactCopy, contactLegacyRedirect, contactPath } from './contact.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 
@@ -11,6 +12,13 @@ describe('contact page copy and paths', () => {
     assert.equal(localizePath('/', 'en'), '/en/');
     assert.equal(contactLegacyRedirect('/contacto.dc.html'), '/contacto/');
     assert.equal(contactLegacyRedirect('/en/contact.dc/'), '/en/contact/');
+  });
+
+  it('is wired as its own top-level mega-nav button', () => {
+    const source = readFileSync(new URL('../lib/mega-nav.ts', import.meta.url), 'utf8');
+    assert.match(source, /id: 'contacto'/);
+    assert.match(source, /href: CONTACT_PATH/);
+    assert.doesNotMatch(source, /id: 'contacto'[\s\S]*children:/);
   });
 
   it('keeps first-project field labels and status strings', () => {
