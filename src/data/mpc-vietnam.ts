@@ -183,7 +183,6 @@ export const seriesCopy = {
     printingValue: 'Litografía offset a color, planchetas; sin sello del Tesoro.',
     authorityLabel: 'Autoridad',
     authorityValue: 'Instrumento de las fuerzas armadas (Departamento de Guerra, luego Defensa); no es un billete del Tesoro.',
-    seriesTableLabel: 'Series usadas en Vietnam',
     notVietnamNote:
       'La 651 (28 de abril de 1969) circuló en Japón, Libia y Corea del Sur. La 701 se imprimió para Vietnam y no se emitió.',
     sourcesTitle: 'Fuentes',
@@ -216,7 +215,6 @@ export const seriesCopy = {
     printingValue: 'Color offset lithography, planchettes; no Treasury seal.',
     authorityLabel: 'Authority',
     authorityValue: 'An armed-forces instrument (War Department, later Defense); not a Treasury note.',
-    seriesTableLabel: 'Series used in Vietnam',
     notVietnamNote:
       'Series 651 (28 April 1969) circulated in Japan, Libya, and South Korea. Series 701 was printed for Vietnam and never issued.',
     sourcesTitle: 'Sources',
@@ -225,57 +223,6 @@ export const seriesCopy = {
     serialLabel: 'Serial',
   },
 } as const;
-
-export const vietnamTheaterSeries = [
-  {
-    id: 'serie-641',
-    name: { es: 'Serie 641', en: 'Series 641' },
-    dates: {
-      es: '31 de agosto de 1965 – 21 de octubre de 1968',
-      en: '31 August 1965 – 21 October 1968',
-    },
-    note: {
-      es: 'Primera serie confinada a Vietnam. Siete valores; aún no había 20 dólares.',
-      en: 'First series confined to Vietnam. Seven values; no $20 yet.',
-    },
-  },
-  {
-    id: 'serie-661',
-    name: { es: 'Serie 661', en: 'Series 661' },
-    dates: {
-      es: '21 de octubre de 1968 – 11 de agosto de 1969',
-      en: '21 October 1968 – 11 August 1969',
-    },
-    note: {
-      es: 'Primera serie vietnamita con el 20 dólares.',
-      en: 'First Vietnam series with the $20.',
-    },
-  },
-  {
-    id: 'serie-681',
-    name: { es: 'Serie 681', en: 'Series 681' },
-    dates: {
-      es: '11 de agosto de 1969 – 7 de octubre de 1970',
-      en: '11 August 1969 – 7 October 1970',
-    },
-    note: {
-      es: 'Ocho denominaciones ya habituales.',
-      en: 'The eight denominations then standard.',
-    },
-  },
-  {
-    id: 'serie-692',
-    name: { es: 'Serie 692', en: 'Series 692' },
-    dates: {
-      es: '7 de octubre de 1970 – 15 de marzo de 1973',
-      en: '7 October 1970 – 15 March 1973',
-    },
-    note: {
-      es: 'Última serie. Bisonte en el 1 dólar; Ouray en el 20. Fraccionarios hasta el 1 de junio de 1971.',
-      en: 'Last series. Bison on the $1; Ouray on the $20. Fractionals until 1 June 1971.',
-    },
-  },
-] as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_MPC_PATH, locale);
