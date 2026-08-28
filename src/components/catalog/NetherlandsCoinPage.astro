@@ -52,6 +52,7 @@ const sources = [
       <Breadcrumb
         locale={locale}
         items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(NUMISMATICS_PATH, locale), label: t.collectionLink },
           { href: coinagePath(locale), label: t.seriesLink },
           { label: coin.title[locale] },

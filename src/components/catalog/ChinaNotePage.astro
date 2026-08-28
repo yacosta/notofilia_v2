@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import { copy, localizePath, type Locale } from '../../lib/site';
 import { visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   CHINA_PATH,
@@ -54,6 +54,7 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <Breadcrumb
         locale={locale}
         items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(POLIMERO_MUNDIAL_PATH, locale), label: t.seriesLink },
           { href: localizePath(CHINA_PATH, locale), label: t.collectionLink },
           { label: note.title[locale] },
