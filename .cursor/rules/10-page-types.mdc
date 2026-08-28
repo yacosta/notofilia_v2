@@ -63,7 +63,8 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 4. Add JSON-LD for the type.
 5. Register both locales in the sitemap (`dedicatedCatalogPaths` or equivalent).
 6. Put strings in `src/i18n` or the feature’s `src/data` module.
-7. Run audit prompt B on the result.
+7. If the type is `piece` (or any new holding), run the serial/cert duplicate checks in `30-catalogue-duplicates.mdc` **before** creating files. Use `/new-catalog-item`.
+8. Run audit prompt B on the result.
 
 ## Migration (prompt D)
 
