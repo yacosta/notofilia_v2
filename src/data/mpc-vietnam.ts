@@ -171,6 +171,9 @@ export const seriesCopy = {
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsIntro:
+      'Cada serie ocupa su propia fila. En cada fila, de izquierda a derecha, de la denominación más baja a la más alta.',
   },
   en: {
     metaTitle: 'United States · Vietnam War MPCs | Notofilia',
@@ -194,6 +197,9 @@ export const seriesCopy = {
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
+    holdingsTitle: 'Notes in the collection',
+    holdingsIntro:
+      'Each series keeps to its own row. In each row, left to right, from the lowest denomination to the highest.',
   },
 } as const;
 
@@ -210,6 +216,8 @@ export type MpcVietnamNoteId =
 export type MpcVietnamNote = {
   id: MpcVietnamNoteId;
   chapterId: MpcVietnamChapterId;
+  /** Face value in U.S. cents, used to line notes left to right within a series. */
+  valueCents: number;
   path: string;
   pathEn: string;
   pick: string;
@@ -239,6 +247,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
   {
     id: '10-dolares-serie-641',
     chapterId: 'serie-641',
+    valueCents: 1000,
     path: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     pathEn: '/collection/united-states/mpc-vietnam/10-dollars-series-641/',
     pick: 'P#M63 · Schwan 887-1',
@@ -318,6 +327,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
   {
     id: '5-dolares-serie-661',
     chapterId: 'serie-661',
+    valueCents: 500,
     path: '/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/',
     pathEn: '/collection/united-states/mpc-vietnam/5-dollars-series-661/',
     pick: 'P#M69 · Schwan 906-1',
@@ -406,6 +416,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
   {
     id: '1-dolar-serie-681',
     chapterId: 'serie-681',
+    valueCents: 100,
     path: '/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
     pathEn: '/collection/united-states/mpc-vietnam/1-dollar-series-681/',
     pick: 'P#M79 · Schwan 915',
@@ -494,6 +505,7 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
   {
     id: '20-dolares-serie-692',
     chapterId: 'serie-692',
+    valueCents: 2000,
     path: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     pathEn: '/collection/united-states/mpc-vietnam/20-dollars-series-692/',
     pick: 'P#M98 · Schwan 938',
@@ -629,7 +641,9 @@ export function notePath(note: MpcVietnamNote, locale: 'es' | 'en'): string {
 }
 
 export function notesForChapter(chapterId: MpcVietnamChapterId): MpcVietnamNote[] {
-  return mpcVietnamNotes.filter((note) => note.chapterId === chapterId);
+  return mpcVietnamNotes
+    .filter((note) => note.chapterId === chapterId)
+    .sort((a, b) => a.valueCents - b.valueCents || a.id.localeCompare(b.id));
 }
 
 export const mpcVietnamNoteSlugs = mpcVietnamNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));

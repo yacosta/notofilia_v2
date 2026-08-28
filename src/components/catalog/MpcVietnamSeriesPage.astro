@@ -96,27 +96,36 @@ const hero = {
         </a>
       </p>
 
-      <div class="mt-16 space-y-12">
-        {
-          mpcVietnamChapters.map((chapter) => (
-            <div class="space-y-8">
-              <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
-                <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-                  {chapter.years[locale]}
-                </p>
-                <h2
-                  id={`${chapter.id}-heading`}
-                  class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
-                >
-                  {chapter.title[locale]}
-                </h2>
-                <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-                <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
-              </section>
-              {
-                notesForChapter(chapter.id).length > 0 ? (
-                  <ol class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2" aria-label={chapter.title[locale]}>
-                    {notesForChapter(chapter.id).map((note) => (
+      <section class="mt-16" aria-labelledby="holdings-heading">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <div class="space-y-10">
+          {
+            mpcVietnamChapters.map((chapter) => {
+              const notes = notesForChapter(chapter.id);
+              if (notes.length === 0) return null;
+              return (
+                <div>
+                  <h3
+                    id={`${chapter.id}-holdings`}
+                    class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+                  >
+                    {chapter.title[locale]}
+                    <span class="ml-3 font-sans text-[14px] font-semibold uppercase tracking-[0.16em] text-gold-light">
+                      {chapter.years[locale]}
+                    </span>
+                  </h3>
+                  <ol
+                    class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+                    aria-label={`${chapter.title[locale]} · ${
+                      locale === 'en'
+                        ? 'left to right by denomination, lowest to highest'
+                        : 'de izquierda a derecha por denominación, de menor a mayor'
+                    }`}
+                  >
+                    {notes.map((note) => (
                       <li class="min-w-0">
                         <a
                           href={notePath(note, locale)}
@@ -127,13 +136,12 @@ const hero = {
                             alt={note.frontCaption[locale]}
                             width={note.images.width}
                             height={note.images.height}
-                            class="mb-3 w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                            style={`aspect-ratio: ${note.images.width} / ${note.images.height}`}
+                            class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
                             decoding="async"
                           />
-                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                          <h4 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
                             {note.title[locale]}
-                          </h3>
+                          </h4>
                           <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
                             {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
                           </p>
@@ -142,9 +150,29 @@ const hero = {
                       </li>
                     ))}
                   </ol>
-                ) : null
-              }
-            </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </section>
+
+      <div class="mt-16 space-y-12">
+        {
+          mpcVietnamChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+            </section>
           ))
         }
       </div>
