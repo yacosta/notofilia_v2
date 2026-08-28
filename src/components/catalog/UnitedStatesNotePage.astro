@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
   notePageCopy,
@@ -23,6 +24,13 @@ const pathname = notePath(note, locale);
 const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
 const imageWidth = note.images.width ?? 1800;
 const imageHeight = note.images.height ?? 600;
+const hero = note.hero
+  ? { src: note.hero.src[locale], width: note.hero.width, height: note.hero.height }
+  : undefined;
+const heroAlt = note.heroAlt?.[locale];
+if (hero && !heroAlt) {
+  throw new Error(`Missing heroAlt for ${note.id} (${locale})`);
+}
 ---
 
 <Layout
@@ -30,7 +38,7 @@ const imageHeight = note.images.height ?? 600;
   description={note.lead[locale]}
   locale={locale}
   pathname={pathname}
-  ogImage={note.images.front}
+  ogImage={hero?.src ?? note.images.front}
 >
   <Fragment slot="head">
     <script
@@ -48,7 +56,22 @@ const imageHeight = note.images.height ?? 600;
       })}
     />
   </Fragment>
-  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+  <main id="main-content" tabindex="-1" class:list={['bg-bg outline-none', hero && 'relative w-full']}>
+    {
+      hero ? (
+        <SeriesHero
+          src={hero.src}
+          alt={heroAlt as string}
+          width={hero.width}
+          height={hero.height}
+          headingId="note-heading"
+          eyebrow={note.kicker[locale]}
+          title={note.title[locale]}
+          imageClass="object-[50%_28%]"
+        />
+      ) : null
+    }
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <Breadcrumb
         locale={locale}
@@ -59,12 +82,18 @@ const imageHeight = note.images.height ?? 600;
         ]}
       />
 
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-        {note.kicker[locale]}
-      </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {note.title[locale]}
-      </h1>
+      {
+        hero ? null : (
+          <>
+            <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+              {note.kicker[locale]}
+            </p>
+            <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+              {note.title[locale]}
+            </h1>
+          </>
+        )
+      }
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">

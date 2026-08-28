@@ -254,6 +254,12 @@ export type UnitedStatesNote = {
     width?: number;
     height?: number;
   };
+  hero?: {
+    src: LocalizedText;
+    width: number;
+    height: number;
+  };
+  heroAlt?: LocalizedText;
   title: LocalizedText;
   kicker: LocalizedText;
   lead: LocalizedText;
@@ -289,6 +295,18 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       back: '/images/catalog/estados-unidos/nj-350-1-dollar-new-brunswick-back.jpg',
       width: 1440,
       height: 960,
+    },
+    hero: {
+      src: {
+        es: '/images/catalog/estados-unidos/hero-new-brunswick.jpg',
+        en: '/images/catalog/estados-unidos/hero-new-brunswick-en.jpg',
+      },
+      width: 2128,
+      height: 912,
+    },
+    heroAlt: {
+      es: 'Mapa vintage en relieve 3D de Nueva Jersey sobre pergamino, con el Banco Estatal de New Brunswick, un billete obsoleto, un pasaporte y el título Nueva Jersey',
+      en: 'Vintage 3D relief map of New Jersey on parchment, with the State Bank at New Brunswick, an obsolete banknote, a passport, and the title New Jersey',
     },
     title: {
       es: '1 dólar · State Bank at New Brunswick',
