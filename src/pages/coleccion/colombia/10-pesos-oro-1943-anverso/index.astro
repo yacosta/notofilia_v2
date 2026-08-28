@@ -1,9 +1,0 @@
----
-import ColombiaNotePage from '../../../../components/catalog/ColombiaNotePage.astro';
-import { noteById } from '../../../../data/colombia-notes';
-
-const note = noteById('10-pesos-oro-1943-anverso');
-if (!note) throw new Error('Missing Banco de la República 10 pesos oro 1943 face catalog note');
----
-
-<ColombiaNotePage locale="es" note={note} />

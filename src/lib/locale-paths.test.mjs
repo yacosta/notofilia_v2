@@ -30,12 +30,8 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/5-pesos-rio-hacha-1883/',
     );
     assert.equal(
-      localizePath('/coleccion/colombia/10-pesos-oro-1943-anverso/', 'en'),
-      '/en/collection/colombia/10-pesos-oro-1943-anverso/',
-    );
-    assert.equal(
-      localizePath('/coleccion/colombia/10-pesos-oro-1943-reverso/', 'en'),
-      '/en/collection/colombia/10-pesos-oro-1943-reverso/',
+      localizePath('/coleccion/colombia/10-pesos-oro-1943/', 'en'),
+      '/en/collection/colombia/10-pesos-oro-1943/',
     );
   });
 
