@@ -26,6 +26,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/', 'en'),
+      '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/', 'en'),
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
     );
@@ -90,6 +94,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],
+      '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
     );
   });
 });
