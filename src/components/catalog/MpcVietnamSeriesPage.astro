@@ -13,7 +13,6 @@ import {
   seriesPath,
   seriesSources,
   USA_PATH,
-  vietnamTheaterSeries,
 } from '../../data/mpc-vietnam';
 import SourceList from './SourceList.astro';
 
@@ -98,23 +97,6 @@ const jsonLd = collectionPageJsonLd({
             <dd class="m-0 mt-1 text-cream">{t.authorityValue}</dd>
           </div>
         </dl>
-        <h3 class="mb-3 mt-8 font-display text-[1.25rem]/7 font-normal text-cream-dim">{t.seriesTableLabel}</h3>
-        <ol class="m-0 grid list-none gap-4 p-0 sm:grid-cols-2">
-          {
-            vietnamTheaterSeries.map((row) => (
-              <li class="min-w-0 border-t border-line pt-3">
-                <a
-                  href={`#${row.id}`}
-                  class="font-display text-[1.05rem] text-gold-light no-underline hover:text-cream"
-                >
-                  {row.name[locale]}
-                </a>
-                <p class="mb-1 mt-1 font-sans text-[14px]/5 text-muted">{row.dates[locale]}</p>
-                <p class="m-0 text-[15px]/6 text-cream">{row.note[locale]}</p>
-              </li>
-            ))
-          }
-        </ol>
         <p class="mb-0 mt-6 text-[15px]/6 text-muted">{t.notVietnamNote}</p>
       </section>
 
