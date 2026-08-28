@@ -22,15 +22,16 @@ const pathname = seriesPath(locale);
 const hero = {
   src: '/images/catalog/estados-unidos/hero-mpc-vietnam.jpg',
   width: 2128,
-  height: 964,
+  height: 912,
 };
+const catalogNotes = mpcVietnamChapters.flatMap((chapter) => notesForChapter(chapter.id));
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="series-heading">
       <img
-        class="absolute inset-x-0 bottom-0 top-8 h-[calc(100%-2rem)] w-full object-cover object-[50%_0%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)] md:top-10 md:h-[calc(100%-2.5rem)]"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_8%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]"
         src={hero.src}
         alt={t.heroAlt}
         width={hero.width}
@@ -101,60 +102,42 @@ const hero = {
           {t.holdingsTitle}
         </h2>
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-        <div class="space-y-10">
-          {
-            mpcVietnamChapters.map((chapter) => {
-              const notes = notesForChapter(chapter.id);
-              if (notes.length === 0) return null;
-              return (
-                <div>
-                  <h3
-                    id={`${chapter.id}-holdings`}
-                    class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
-                  >
-                    {chapter.title[locale]}
-                    <span class="ml-3 font-sans text-[14px] font-semibold uppercase tracking-[0.16em] text-gold-light">
-                      {chapter.years[locale]}
-                    </span>
-                  </h3>
-                  <ol
-                    class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
-                    aria-label={`${chapter.title[locale]} · ${
-                      locale === 'en'
-                        ? 'left to right by denomination, lowest to highest'
-                        : 'de izquierda a derecha por denominación, de menor a mayor'
-                    }`}
-                  >
-                    {notes.map((note) => (
-                      <li class="min-w-0">
-                        <a
-                          href={notePath(note, locale)}
-                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                        >
-                          <img
-                            src={note.images.front}
-                            alt={note.frontCaption[locale]}
-                            width={note.images.width}
-                            height={note.images.height}
-                            class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                            decoding="async"
-                          />
-                          <h4 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                            {note.title[locale]}
-                          </h4>
-                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                            {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
-                          </p>
-                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              );
-            })
+
+        <ol
+          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+          aria-label={
+            locale === 'en'
+              ? 'Notes lined up by series, then by denomination from lowest to highest'
+              : 'Billetes alineados por serie y, en cada serie, de menor a mayor denominación'
           }
-        </div>
+        >
+          {
+            catalogNotes.map((note) => (
+              <li class="min-w-0">
+                <a
+                  href={notePath(note, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <img
+                    src={note.images.front}
+                    alt={note.frontCaption[locale]}
+                    width={note.images.width}
+                    height={note.images.height}
+                    class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    decoding="async"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {note.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
       </section>
 
       <div class="mt-16 space-y-12">
@@ -172,6 +155,39 @@ const hero = {
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                notesForChapter(chapter.id).length > 0 ? (
+                  <ol
+                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+                    aria-label={chapter.title[locale]}
+                  >
+                    {notesForChapter(chapter.id).map((note) => (
+                      <li class="min-w-0">
+                        <a
+                          href={notePath(note, locale)}
+                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                        >
+                          <img
+                            src={note.images.front}
+                            alt={note.frontCaption[locale]}
+                            width={note.images.width}
+                            height={note.images.height}
+                            class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                            decoding="async"
+                          />
+                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                            {note.title[locale]}
+                          </h3>
+                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                            {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                          </p>
+                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                ) : null
+              }
             </section>
           ))
         }
