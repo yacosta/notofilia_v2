@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
 import { breadcrumbList } from '../lib/json-ld';
+import { cfImage, imageSrcset } from '../lib/images';
+import { contactClientCopy } from '../i18n/contact';
 import {
   CONTACT_IMAGE,
   CONTACT_TURNSTILE_SITE_KEY,
@@ -19,15 +21,6 @@ const { locale } = Astro.props;
 const t = contactCopy[locale];
 const pathname = contactPath(locale);
 const homePath = localizePath('/', locale);
-const formCopy = {
-  sending: t.sending,
-  success: t.success,
-  error: t.error,
-  turnstile: t.turnstile,
-  reportLead: t.reportLead,
-  recordLabel: t.recordLabel,
-  describePrompt: t.describePrompt,
-};
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -68,27 +61,17 @@ const jsonLd = {
 
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div class="flex min-h-[280px] items-center justify-center">
-          <picture>
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.webp 360w, /uploads/doblones-coloniales-oro.webp 511w"
-              type="image/webp"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.png 360w, /uploads/doblones-coloniales-oro.png 511w"
-              type="image/png"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <img
-              src={CONTACT_IMAGE}
-              alt={t.imageAlt}
-              width="511"
-              height="511"
-              class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
+          <img
+            src={cfImage(CONTACT_IMAGE, { width: 511 })}
+            srcset={imageSrcset(CONTACT_IMAGE, [400, 800])}
+            sizes="(max-width: 700px) 70vw, 360px"
+            alt={t.imageAlt}
+            width="511"
+            height="511"
+            class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div data-contact-root>
@@ -97,7 +80,6 @@ const jsonLd = {
           </h1>
           <p class="mb-8 mt-0 text-[18px] leading-[1.6] text-muted">{t.intro}</p>
 
-          <script type="application/json" data-contact-copy set:html={JSON.stringify(formCopy)} />
           <form
             id="web3forms-contact-form"
             name="web3forms-contact-form"
@@ -195,20 +177,21 @@ const jsonLd = {
   </main>
 
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>
-  <script is:inline>
+  <script define:vars={{ contactClientCopy }} is:inline>
     (function () {
       const root = document.querySelector('[data-contact-root]');
       const form = root && root.querySelector('[data-contact-form]');
       const status = root && root.querySelector('[data-contact-status]');
       const submit = root && root.querySelector('[data-contact-submit]');
-      const copyNode = root && root.querySelector('[data-contact-copy]');
-      if (!form || !status || !submit || !copyNode) return;
+      if (!form || !status || !submit) return;
 
-      let copy = {};
-      try {
-        copy = JSON.parse(copyNode.textContent || '{}');
-      } catch (err) {
-        copy = {};
+      function langCopy() {
+        const lang =
+          document.documentElement.getAttribute('data-page-locale') === 'en' ||
+          document.documentElement.lang === 'en'
+            ? 'en'
+            : 'es';
+        return contactClientCopy[lang];
       }
 
       (function prefillFromQuery() {
@@ -221,12 +204,15 @@ const jsonLd = {
         if (email && emailInput && !emailInput.value) emailInput.value = email;
         const message = form.querySelector('#cf-message');
         if (!message || message.value.trim()) return;
+        const current = langCopy();
         const lines = [];
-        if (motivo === 'error') lines.push(copy.reportLead || '');
-        if (ficha) lines.push((copy.recordLabel || '') + ficha);
+        if (motivo === 'error') {
+          lines.push(current.reportLead);
+        }
+        if (ficha) lines.push(current.recordLabel + ficha);
         if (pageUrl) lines.push('URL: ' + pageUrl);
         if (lines.length) {
-          lines.push('', copy.describePrompt || '', '');
+          lines.push('', current.describe, '');
           message.value = lines.join('\n');
         }
       })();
@@ -248,13 +234,14 @@ const jsonLd = {
         const data = new FormData(form);
         if (data.get('botcheck')) return;
         if (!data.get('cf-turnstile-response')) {
-          showStatus('error', copy.turnstile);
+          showStatus('error', langCopy().turnstile);
           return;
         }
         submit.disabled = true;
         const idleLabel = submit.textContent;
-        submit.textContent = copy.sending;
-        showStatus('info', copy.sending);
+        const current = langCopy();
+        submit.textContent = current.sending;
+        showStatus('info', current.sending);
         try {
           const res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -263,15 +250,15 @@ const jsonLd = {
           });
           const json = await res.json();
           if (json && json.success) {
-            showStatus('success', copy.success);
+            showStatus('success', langCopy().success);
             form.reset();
             if (window.turnstile) window.turnstile.reset();
           } else {
-            showStatus('error', copy.error);
+            showStatus('error', langCopy().error);
             if (window.turnstile) window.turnstile.reset();
           }
         } catch (err) {
-          showStatus('error', copy.error);
+          showStatus('error', langCopy().error);
           if (window.turnstile) window.turnstile.reset();
         } finally {
           submit.disabled = false;

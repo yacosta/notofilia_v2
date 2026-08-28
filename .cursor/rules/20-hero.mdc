@@ -1,0 +1,55 @@
+---
+description: Hero patterns for home, series, and piece pages
+globs:
+  - src/components/HomePage.astro
+  - src/components/catalog/**/*.astro
+  - src/components/editorial/**/*.astro
+alwaysApply: false
+---
+
+# Heroes
+
+Three visual patterns. Do not invent a fourth without updating this file.
+
+## 1. Home (cinematic, centered)
+
+- `section` `min-h-[72vh]`, `aria-labelledby` pointing at the `h1`.
+- Full-bleed `<img>`: `object-cover`, `fetchpriority="high"`, `decoding="async"`.
+- `src` / `srcset` from `cardImageSrc` + `heroSrcset` (`/cdn-cgi/image/…`). `sizes="100vw"`.
+- Intrinsic `width`/`height` must match the asset aspect (not a collapsed placeholder).
+- Overlays: radial + linear dark gradients so cream type stays readable.
+- Stack: kicker rules → `NOTOFILIA` wordmark (display) → diamond divider → `h1` (title, not the wordmark) → lead → optional **single** stats line → primary + secondary CTAs.
+- Stats: at most one of (hero line, stats band). See `00-site-standards.mdc`.
+- Alt from i18n, both locales.
+
+## 2. Series (bottom-anchored full-bleed)
+
+Used by country/series indexes (`*SeriesPage`, `*CoinagePage`, `LazarettosPage`). Polymer world is a documented **text-header** exception (discipline-like), not a third photo hero.
+
+- `section` `min-h-[86vh] md:min-h-[94vh]`, `aria-labelledby` on the `h1`.
+- Full-bleed photo with `object-cover` and an explicit `object-position`.
+- Image **must** use `heroSrcset` / `cfImage` plus `sizes="100vw"`. Raw `/images/…` is a FAIL.
+- `fetchpriority="high"`, real `width`/`height`, meaningful `alt` from series copy.
+- Bottom-weighted radial + linear scrim. Type sits in the lower third (`justify-end`, `pt-[min(68vh,38rem)]`).
+- Kicker: “Colección virtual” / “Virtual collection” from i18n (not a component literal).
+- `h1`: stacked kicker + title spans, display face, text-shadow.
+- Breadcrumbs go **below** the hero, inside the `article` case (`max-w-content`).
+
+## 3. Piece (optional series hero, else text-first)
+
+- If the piece has `hero`: reuse the series photo pattern (CDN URL, high fetch priority, alt).
+- If not: no full-bleed section. Start with breadcrumbs + `h1` + lead (`max-w-[46rem]`).
+- Catalog scans (anverso/reverso) use `NoteImageLightbox` at full resolution — not a hero.
+
+## Types with no photo hero
+
+`about`, `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `stub`, `error`.
+
+`editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `imageSrcset`. That is not a hero.
+
+## Do not
+
+- Ship a series/home LCP image without `/cdn-cgi/image/`.
+- Duplicate the homepage stats line under the hero.
+- Put breadcrumbs or a facts card on top of the photo.
+- Recap the hero `h1` with a second page title immediately below unless the hero is decorative-only (it is not).

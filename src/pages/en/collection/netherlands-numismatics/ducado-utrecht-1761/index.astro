@@ -1,6 +1,6 @@
 ---
-import NetherlandsCoinPage from '../../../../components/catalog/NetherlandsCoinPage.astro';
-import { coinById } from '../../../../data/netherlands-coinage';
+import NetherlandsCoinPage from '../../../../../components/catalog/NetherlandsCoinPage.astro';
+import { coinById } from '../../../../../data/netherlands-coinage';
 
 const coin = coinById('ducado-utrecht-1761');
 if (!coin) throw new Error('Missing Utrecht 1761 ducat catalog coin');

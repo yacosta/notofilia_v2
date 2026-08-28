@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '../lib/site';
+import { commentsCopy } from '../i18n/comments';
 
 export interface Props {
   slug: string;
@@ -10,28 +11,13 @@ const { slug, locale = 'es' } = Astro.props;
 // Turnstile site keys are intentionally public; the secret stays in Cloudflare.
 const siteKey = '0x4AAAAAAD40VfPOxkjwgdld';
 
-const copy = {
-  es: {
-    heading: 'Comentarios',
-    intro: 'Comparte tu opinión. Los comentarios se publican después de ser revisados.',
-    loading: 'Cargando comentarios…',
-    name: 'Nombre',
-    comment: 'Comentario',
-    submit: 'Enviar comentario',
-    unavailable: 'Los comentarios estarán disponibles próximamente.',
-  },
-  en: {
-    heading: 'Comments',
-    intro: 'Share your view. Comments appear after they are reviewed.',
-    loading: 'Loading comments…',
-    name: 'Name',
-    comment: 'Comment',
-    submit: 'Send comment',
-    unavailable: 'Comments will be available soon.',
-  },
-} as const;
-
-const t = copy[locale];
+const t = commentsCopy[locale];
+const clientCopy = {
+  empty: t.empty,
+  loadFail: t.loadFail,
+  sending: t.sending,
+  sendFail: t.sendFail,
+};
 ---
 
 <section class="mt-16 border-t border-line pt-10" aria-labelledby="comments-heading" data-comments-root>
@@ -91,37 +77,18 @@ const t = copy[locale];
 
 {siteKey && <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>}
 
-<script define:vars={{ slug }} is:inline>
+<script define:vars={{ slug, clientCopy, locale }} is:inline>
   const root = document.querySelector('[data-comments-root]');
   const list = root?.querySelector('[data-comments-list]');
   const form = root?.querySelector('[data-comment-form]');
   const status = root?.querySelector('[data-comment-status]');
   const endpoint = `/api/comments/${encodeURIComponent(slug)}`;
 
-  const copy = {
-    es: {
-      empty: 'Aún no hay comentarios publicados.',
-      loadFail: 'No se pudieron cargar los comentarios.',
-      sending: 'Enviando…',
-      sendFail: 'No se pudo enviar el comentario.',
-    },
-    en: {
-      empty: 'No comments have been published yet.',
-      loadFail: 'Comments could not be loaded.',
-      sending: 'Sending…',
-      sendFail: 'The comment could not be sent.',
-    },
-  };
-  function isEn() {
-    return (
-      document.documentElement.getAttribute('data-page-locale') === 'en' || document.documentElement.lang === 'en'
-    );
-  }
   function langCopy() {
-    return isEn() ? copy.en : copy.es;
+    return clientCopy;
   }
   function dateLocale() {
-    return isEn() ? 'en' : 'es';
+    return locale === 'en' ? 'en' : 'es';
   }
 
   const renderComments = (comments) => {

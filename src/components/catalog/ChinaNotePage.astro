@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
 import { localizePath, type Locale } from '../../lib/site';
+import { visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   CHINA_PATH,
   notePageCopy,
@@ -29,24 +31,34 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
   description={note.lead[locale]}
   locale={locale}
   pathname={pathname}
+  ogImage={note.images.front}
 >
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        ...visualArtworkJsonLd({
+          name: note.title[locale],
+          description: note.lead[locale],
+          url: pathname,
+          image: note.images.front,
+          locale,
+          artform: 'Banknote',
+        }),
+      })}
+    />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(POLIMERO_MUNDIAL_PATH, locale)}>
-              {t.seriesLink}
-            </a>
-          </li>
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(CHINA_PATH, locale)}>
-              {t.collectionLink}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{note.title[locale]}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath(POLIMERO_MUNDIAL_PATH, locale), label: t.seriesLink },
+          { href: localizePath(CHINA_PATH, locale), label: t.collectionLink },
+          { label: note.title[locale] },
+        ]}
+      />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {note.kicker[locale]}

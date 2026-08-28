@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import Breadcrumb from '../Breadcrumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   coinPageCopy,
   coinagePath,
@@ -28,27 +30,33 @@ const sources = [
 ];
 ---
 
-<Layout title={`${coin.title[locale]} | Notofilia`} description={coin.lead[locale]} locale={locale} pathname={pathname}>
+<Layout title={`${coin.title[locale]} | Notofilia`} description={coin.lead[locale]} locale={locale} pathname={pathname} ogImage={coin.images.composite}>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        ...visualArtworkJsonLd({
+          name: coin.title[locale],
+          description: coin.lead[locale],
+          url: pathname,
+          image: coin.images.composite,
+          locale,
+          artform: 'Coin',
+        }),
+      })}
+    />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
-          <li>
-            <a
-              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
-              href={localizePath(NUMISMATICS_PATH, locale)}
-            >
-              {t.collectionLink}
-            </a>
-          </li>
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={coinagePath(locale)}>
-              {t.seriesLink}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{coin.title[locale]}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath(NUMISMATICS_PATH, locale), label: t.collectionLink },
+          { href: coinagePath(locale), label: t.seriesLink },
+          { label: coin.title[locale] },
+        ]}
+      />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {coin.kicker[locale]}
@@ -108,7 +116,7 @@ const sources = [
 
       <figure class="m-0">
         <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-          {locale === 'en' ? 'Obverse and reverse' : 'Anverso y reverso'}
+          {copy[locale].obverseReverse}
         </h2>
         <NoteImageLightbox
           src={coin.images.composite}

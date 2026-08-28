@@ -1,5 +1,5 @@
 ---
-import type { Locale } from '../lib/locale-paths';
+import { copy, type Locale } from '../lib/site';
 
 export type Crumb = {
   href?: string;
@@ -13,18 +13,18 @@ interface Props {
 }
 
 const { locale, items, label } = Astro.props;
-const aria = label ?? (locale === 'en' ? 'Breadcrumb' : 'Migas de pan');
+const aria = label ?? copy[locale].breadcrumb;
 ---
 
-<nav aria-label={aria} class="mb-6">
-  <ol class="crumbs m-0 flex list-none flex-wrap items-center p-0 font-sans text-[14px] tracking-[0.06em] text-muted">
+<nav aria-label={aria} class="mb-8">
+  <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
     {
       items.map((item, index) => {
         const current = index === items.length - 1;
         return (
           <li class="inline-flex min-h-11 items-center">
             {item.href && !current ? (
-              <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={item.href}>
+              <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={item.href}>
                 {item.label}
               </a>
             ) : (

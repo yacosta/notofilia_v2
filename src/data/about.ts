@@ -22,6 +22,13 @@ export const aboutCopy = {
     aboutMe: 'Sobre mí',
     closing: 'Gracias por pasar por aquí. Ojalá algo de lo que encuentres te haga mirar dos veces.',
     brandLabel: 'mi propia marca',
+    bio: [
+      'Soy <strong>Yezid Acosta</strong>. Colecciono billetes desde que tenía unos cinco años.',
+      'Me acuerdo exactamente de lo que me atrapó. Alguien me pasó un billete, y ahí impresa estaba la fecha de mi cumpleaños. Me quedé asombrado — tenía en las manos algo que se había hecho cuando yo nací, algo que llevaba en el mundo exactamente el mismo tiempo que yo. Súmale a eso un niño que ya amaba la historia, y fue la combinación perfecta. Tantos años después sigo en esto, ahora sobre todo detrás de billetes colombianos, incluyendo algunas piezas del siglo XIX de bancos que dejaron de existir hace más de cien años — el Banco de Río Hacha, el Banco Hipotecario — además de monedas que se remontan aún más atrás.',
+      'Y esto es lo que me sigue moviendo: cada una de estas piezas fue dinero alguna vez. Alguien se lo ganó, lo gastó, se preocupó por él. Pasó por mercados, bolsillos, guerras y malas economías, y de alguna manera sobrevivió lo suficiente para llegar a mis manos. Esa es la parte que casi todo el mundo pasa por alto cuando piensa en monedas y billetes: la historia. Notofilia es mi manera de compartirla, en español y en inglés, una pieza a la vez.',
+    ],
+    bioBrandBefore: '¿El resto de mi vida? Trabajo en tecnología. Soy esposo y papá de dos hermosos gemelos. Y disfruto de un buen cigarro — tanto que tengo ',
+    bioBrandAfter: '.',
   },
   en: {
     nav: 'About Notofilia',
@@ -39,6 +46,14 @@ export const aboutCopy = {
     aboutMe: 'About Me',
     closing: 'Thanks for stopping by. I hope something here makes you look twice.',
     brandLabel: 'my own brand',
+    bio: [
+      'I’m <strong>Yezid Acosta</strong>. I’ve been collecting banknotes since I was about five years old.',
+      'I remember exactly what hooked me. Someone handed me a banknote, and printed right there on it was my birthday. I stood there in awe — I was holding something that had been made when I was born, something that had been out in the world exactly as long as I had. Add that to a kid who already loved history, and it was a perfect match. All these years later I’m still at it, mostly chasing Colombian banknotes now, including some 19th-century pieces from banks that stopped existing more than a century ago — the Banco de Río Hacha, the Banco Hipotecario — plus coins that go back even further.',
+      'Here’s the thing that keeps me going: every one of these pieces was money once. Somebody earned it, spent it, worried about it. It passed through markets and pockets and wars and bad economies, and somehow it survived long enough to end up in my hands. That’s the part most people miss when they think about coins and banknotes — the history. Notofilia is my way of sharing it, in Spanish and in English, one piece at a time.',
+    ],
+    bioBrandBefore:
+      'The rest of my life? I work in technology, and I once wrote a children’s book. But some part of me is still that five-year-old, holding a banknote up to the light.',
+    bioBrandAfter: '',
   },
 } as const;
 
