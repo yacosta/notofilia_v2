@@ -158,7 +158,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "c-day",
     category: "Emisión",
     title: { es: "C-Day", en: "Conversion Day" },
-    definition: { es: "Día de conversión del programa MPC: las bases se cerraban sin aviso y las tropas canjeaban la serie vigente por la nueva. La serie saliente quedaba sin valor de la noche a la mañana, de modo que nadie —ni el mercado negro— pudiera acumularla.", en: "A Military Payment Certificate conversion day: bases closed without notice and troops exchanged the current series for the new one. The outgoing series became worthless overnight, so neither personnel nor the black market could stockpile it." },
+    definition: { es: "Día de conversión del programa MPC: se clasificaba, las bases se cerraban sin aviso, las tropas quedaban confinadas y canjeaban la serie vigente por la nueva en una ventana breve. La serie saliente quedaba sin valor de la noche a la mañana, de modo que nadie —ni el mercado negro— pudiera acumularla.", en: "A Military Payment Certificate conversion day: classified, bases closed without notice, troops confined, and the current series exchanged for the new one in a short window. The outgoing series became worthless overnight, so neither personnel nor the black market could stockpile it." },
     seeAlso: ["desmonetizado", "mpc"],
   },
   {
