@@ -178,6 +178,17 @@ const seriesLabel = noteSeriesLabel(note, locale);
         <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
       </section>
 
+      {
+        note.history ? (
+          <section class="mt-12" aria-labelledby="history-heading">
+            <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+              {t.historyHeading}
+            </h2>
+            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+          </section>
+        ) : null
+      }
+
       <section class="mt-12" aria-labelledby="scarcity-heading">
         <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.scarcityHeading}
