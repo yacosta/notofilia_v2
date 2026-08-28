@@ -69,12 +69,12 @@ export const colombiaChapters: ColombiaChapter[] = [
       en: 'Banco de la República',
     },
     lead: {
-      es: 'Ley 25 de 1923, Misión Kemmerer, series de la American Bank Note Company, especímenes y errores.',
-      en: 'Law 25 of 1923, the Kemmerer Mission, American Bank Note Company series, specimens, and errors.',
+      es: 'Ley 25 de 1923, Misión Kemmerer, provisionales de 1923, ABNC, De La Rue e Imprenta de Billetes.',
+      en: 'Law 25 of 1923, the Kemmerer Mission, 1923 provisionals, ABNC, De La Rue, and the Imprenta de Billetes.',
     },
     body: {
-      es: 'En marzo de 1923, el gobierno de Pedro Nel Ospina contrató a Edwin W. Kemmerer. La Ley 25 de 1923 creó el Banco de la República como sociedad anónima con 10 millones de pesos oro de capital y el monopolio de emitir la moneda legal. Los primeros billetes oficiales se encargaron a la American Bank Note Company —tras provisionales sobreimpresos de la Casa de Moneda de Medellín—. La convertibilidad en oro se perdió en 1931, cuando el banco asumió el control del metal. Desde entonces el peso es emisión centralizada. Esta vitrina reunirá series de circulación, especímenes y errores de corte documentados en la colección.',
-      en: 'In March 1923, Pedro Nel Ospina’s government hired Edwin W. Kemmerer. Law 25 of 1923 created the Banco de la República as a stock company with 10 million gold pesos of capital and the exclusive right to issue legal tender. The first official notes were ordered from the American Bank Note Company — after provisional overprints of the Medellín mint. Gold convertibility ended in 1931, when the bank took control of the metal. Since then the peso has been a centralized issue. This case will gather circulation series, specimens, and documented cutting errors from the collection.',
+      es: 'En marzo de 1923, el gobierno de Pedro Nel Ospina contrató a Edwin W. Kemmerer. La Ley 25 de 1923 creó el Banco de la República como sociedad de capital mixto —gobierno y bancos comerciales— con 10 millones de pesos oro y el monopolio de emitir la moneda legal. Debía abrir en enero de 1924; la corrida contra el Banco López adelantó la puerta al 23 de julio de 1923. El presidente Ospina hizo traer de la Casa de Moneda de Medellín certificados de oro grabados por la American Bank Note Company y se resellaron como «BANCO DE LA REPÚBLICA — BILLETE PROVISIONAL». La serie regular de pesos oro siguió en Nueva York. En 1931 el banco asumió el control del metal y se perdió la convertibilidad. A mediados de siglo Thomas De La Rue imprimió junto a la ABNC. El 23 de octubre de 1959 abrió en Bogotá la Imprenta de Billetes; su primer trabajo fue el 1 peso (Pick 404). En 1973 el Estado adquirió casi todas las acciones privadas (Ley 7.ª). La Constitución de 1991 le dio autonomía institucional, ajena al Ejecutivo, con mandato de preservar el poder adquisitivo; desde 1993 el papel deja de llamarse peso oro. Esta vitrina documenta el 10 pesos oro de 1943 (Pick 389b) y el espécimen de 2.000 pesos oro de 1983 (Pick 430as), de De La Rue.',
+      en: 'In March 1923, Pedro Nel Ospina’s government hired Edwin W. Kemmerer. Law 25 of 1923 created the Banco de la República as a mixed-capital company — government and commercial banks — with 10 million gold pesos and the exclusive right to issue legal tender. It was to open in January 1924; a run on the Banco López brought the doors forward to 23 July 1923. President Ospina had gold certificates engraved by the American Bank Note Company flown from the Medellín mint and overstamped “BANCO DE LA REPÚBLICA — BILLETE PROVISIONAL.” The regular pesos-oro series followed from New York. In 1931 the bank took control of the metal and convertibility ended. Mid-century Thomas De La Rue printed alongside ABNC. On 23 October 1959 the Imprenta de Billetes opened in Bogotá; its first job was the 1-peso (Pick 404). In 1973 the state bought nearly all private shares (Law 7). The 1991 Constitution gave the bank institutional autonomy from the executive, with a mandate to preserve purchasing power; from 1993 the paper dropped the word oro. This case documents the 1943 10 pesos oro (Pick 389b) and the 1983 2,000 pesos oro specimen (Pick 430as), by De La Rue.',
     },
   },
 ];
@@ -103,8 +103,44 @@ export const seriesSources: CatalogSource[] = [
     es: 'Banco de la República — Historia del Banco',
     en: 'Banco de la República — History of the Bank',
     note: {
-      es: 'Ley 25 de 1923: capital de 10 millones de pesos oro y monopolio de emisión.',
-      en: 'Law 25 of 1923: 10 million gold pesos of capital and the monopoly of issue.',
+      es: 'Ley 25 de 1923, capital mixto, monopolio de emisión y apertura adelantada el 23 de julio.',
+      en: 'Law 25 of 1923, mixed capital, monopoly of issue, and the early opening on 23 July.',
+    },
+  },
+  {
+    href: 'https://www.banrep.gov.co/es/banco/historia/reforma-1973',
+    es: 'Banco de la República — Reforma de 1973',
+    en: 'Banco de la República — 1973 reform',
+    note: {
+      es: 'Ley 7.ª y Decreto 2617: el Estado adquirió casi todas las acciones privadas.',
+      en: 'Law 7 and Decree 2617: the state acquired nearly all private shares.',
+    },
+  },
+  {
+    href: 'https://www.banrep.gov.co/es/node/51381',
+    es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+    en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+    note: {
+      es: '23 de octubre de 1959; primer trabajo: el 1 peso impreso en Bogotá.',
+      en: '23 October 1959; first job: the 1-peso printed in Bogotá.',
+    },
+  },
+  {
+    href: 'https://www.banrep.gov.co/es/publicaciones-investigaciones/libros/banrep-antecedentes-evolucion-estructura',
+    es: 'Banco de la República — Antecedentes, evolución y estructura (Meisel y cols.)',
+    en: 'Banco de la República — Background, evolution, and structure (Meisel et al.)',
+    note: {
+      es: 'Misión Kemmerer, apertura de 1923 y el paso de la banca libre al banco central.',
+      en: 'The Kemmerer Mission, the 1923 opening, and the shift from free banking to a central bank.',
+    },
+  },
+  {
+    href: 'https://en.numista.com/L100183',
+    es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+    en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+    note: {
+      es: 'Catálogo de referencia de las emisiones del Banco de la República y de los impresores ABNC, TDLR e IBB.',
+      en: 'A standard catalog of Banco de la República issues and of the ABNC, TDLR, and IBB printers.',
     },
   },
   {
@@ -130,6 +166,15 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bank Note Museum — Colombia (estados, República y Banco de la República)',
     en: 'Bank Note Museum — Colombia (states, Republic, and Banco de la República)',
   },
+  {
+    href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL-BDR.htm',
+    es: 'Bank Note Museum — Colombia, Banco de la República',
+    en: 'Bank Note Museum — Colombia, Banco de la República',
+    note: {
+      es: 'Índice Pick: provisionales de 1923, pesos oro y la serie de 1959 (P-404).',
+      en: 'Pick index: 1923 provisionals, pesos oro, and the 1959 series (P-404).',
+    },
+  },
 ];
 
 export const seriesCopy = {
@@ -145,7 +190,7 @@ export const seriesCopy = {
       'El papel moneda en Colombia nació de la urgencia de la Independencia, no de un banco central. En 1813 el Estado de Cartagena emitió billetes de un real en papel común, firmados a mano. La Enciclopedia Banrepcultural identifica el 1 real de Gutiérrez de Piñeres; Cundinamarca siguió al año siguiente con vales de tesorería. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
       'El billete moderno llegó en la década de 1870, con la banca libre. El Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Decenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, Rio Hacha— encargaron planchas a Nueva York y Londres, con convertibilidad en metálico. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La banca libre abre con las pruebas ABNC del Banco Hipotecario de Bogotá (1881) y del 5 pesos de Rio Hacha (1883).',
       'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional. Hacia 1886–1887 el gobierno impuso el curso forzoso y apagó la emisión privada. Astrid Romero sitúa la liquidación del instituto en 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel y una inflación devastadora. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro.',
-      'La Ley 25 de 1923, fruto de la Misión Kemmerer contratada por Pedro Nel Ospina, creó el Banco de la República con el monopolio de emitir la moneda legal. Los primeros billetes oficiales los grabó la American Bank Note Company. La convertibilidad en oro se perdió en 1931. Desde entonces el peso es emisión centralizada. Esta vitrina documenta el 10 pesos oro de 1943 (Pick 389b) y el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue.',
+      'La Ley 25 de 1923, fruto de la Misión Kemmerer contratada por Pedro Nel Ospina, creó el Banco de la República con capital mixto y el monopolio de emitir la moneda legal. La corrida contra el Banco López adelantó la apertura al 23 de julio de 1923: se resellaron certificados de oro de la Casa de Moneda de Medellín como billetes provisionales. Los primeros regulares los grabó la American Bank Note Company; la convertibilidad en oro se perdió en 1931. Thomas De La Rue imprimió a mediados de siglo. El 23 de octubre de 1959 abrió la Imprenta de Billetes en Bogotá, con el 1 peso (Pick 404). En 1973 el Estado nacionalizó casi todo el capital; la Constitución de 1991 fijó la autonomía del banco, y desde 1993 el papel deja de llamarse peso oro. Esta vitrina documenta el 10 pesos oro de 1943 (Pick 389b) y el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
@@ -171,7 +216,7 @@ export const seriesCopy = {
       'Paper money in Colombia was born from the urgency of independence, not from a central bank. In 1813 the State of Cartagena issued 1-real notes on ordinary paper, signed by hand. Banrepcultural’s encyclopedia identifies the Gutiérrez de Piñeres 1-real; Cundinamarca followed the next year with treasury vales. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
       'The modern note arrived in the 1870s with free banking. The Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Dozens of regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, Rio Hacha — ordered plates in New York and London, with metallic convertibility. Those issues, with proofs and specimens, are the historical core of this case. Free banking opens with the ABNC proofs of the Banco Hipotecario of Bogotá (1881) and the Rio Hacha 5 pesos (1883).',
       'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born. Around 1886–1887 the government imposed forced legal tender and ended private issues. Astrid Romero places the institute’s liquidation in 1896. The Thousand Days’ War (1899–1902) set off another surge of paper and a devastating inflation. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso.',
-      'Law 25 of 1923, the fruit of the Kemmerer Mission hired by Pedro Nel Ospina, created the Banco de la República with the monopoly of legal-tender issue. The first official notes were engraved by the American Bank Note Company. Gold convertibility ended in 1931. Since then the peso has been a centralized issue. This case documents the 1943 10 pesos oro (Pick 389b) and the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue.',
+      'Law 25 of 1923, the fruit of the Kemmerer Mission hired by Pedro Nel Ospina, created the Banco de la República with mixed capital and the monopoly of legal-tender issue. A run on the Banco López brought the opening forward to 23 July 1923: gold certificates from the Medellín mint were overstamped as provisional notes. The first regular issues were engraved by the American Bank Note Company; gold convertibility ended in 1931. Thomas De La Rue printed at mid-century. On 23 October 1959 the Imprenta de Billetes opened in Bogotá, with the 1-peso (Pick 404). In 1973 the state nationalized nearly all the capital; the 1991 Constitution fixed the bank’s autonomy, and from 1993 the paper dropped the word oro. This case documents the 1943 10 pesos oro (Pick 389b) and the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
