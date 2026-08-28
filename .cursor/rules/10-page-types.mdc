@@ -1,0 +1,70 @@
+---
+description: Notofilia page types, required blocks, and type layouts
+globs:
+  - src/pages/**/*.astro
+  - src/components/**/*Page.astro
+alwaysApply: false
+---
+
+# Page types
+
+Every file under `src/pages/**/*.astro` must map to one row. Route files stay thin: import the type layout, pass `locale` (and data). Do not fork ES/EN markup.
+
+`Layout.astro` is the chrome shell only. The **type layout** is the `*Page.astro` named below.
+
+| Type | Type layout | ES routes | EN routes |
+| --- | --- | --- | --- |
+| `home` | `HomePage.astro` | `/` | `/en/` |
+| `about` | `AboutPage.astro` | `/acerca-de/` | `/en/about/` |
+| `contact` | `ContactPage.astro` | `/contacto/` | `/en/contact/` |
+| `collection-hub` | `CollectionHubPage.astro` | `/coleccion/` | `/en/collection/` |
+| `discipline-index` | `NotafiliaIndexPage.astro` / `NumismaticaIndexPage.astro` | `/coleccion/notafilia/`, `/coleccion/numismatica/` | `/en/collection/notaphily/`, `/en/collection/numismatics/` |
+| `series-index` | `{Country}SeriesPage.astro`, `{Country}CoinagePage.astro`, `LazarettosPage.astro`, `PolymerWorldPage.astro` | `/coleccion/{pais}/`, plus `/paises-bajos-numismatica/` | `/en/collection/{country}/`, plus `/en/netherlands-numismatica/` |
+| `piece` | `{Country}NotePage.astro` / `{Country}CoinPage.astro` | piece slug under the series | translated piece slug |
+| `editorial-index` | `EditorialIndexPage.astro` | `/blog/`, `/noticias/` | `/en/blog/`, `/en/news/` |
+| `editorial-article` | `EditorialArticlePage.astro` | `/blog/[slug]/`, `/noticias/[slug]/` | `/en/blog/[slug]/`, `/en/news/[slug]/` |
+| `glossary-index` | `GlossaryPage.astro` | `/glosario/` | `/en/glossary/` |
+| `glossary-term` | `GlossaryTermPage.astro` | `/glosario/[term]/` | `/en/glossary/[term]/` |
+| `stub` | `StubPage.astro` | catch-all `[...slug].astro` | `en/[...slug].astro` |
+| `error` | `404.astro` (both locales) | `/404` | `/en/404` (or locale-aware 404) |
+
+Non-page endpoints (`sitemap.xml.ts`, `llms.txt.ts`) are not page types. Flag any other `.astro` page that does not fit a row.
+
+## Required blocks by type
+
+All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tabindex="-1">`, canonical + hreflang, sitemap entry, copy from i18n/data (no literals in the component).
+
+| Type | Breadcrumbs | Hero (`20-hero.mdc`) | Body | JSON-LD |
+| --- | --- | --- | --- | --- |
+| `home` | none | cinematic home hero | browse, milestones, articles, news, definitions, newsletter | sitewide `WebSite` only |
+| `about` | Home → About | none (text column) | bio | `AboutPage` + `Person` |
+| `contact` | Home → Contact | none | image + form | `BreadcrumbList` + `ContactPage` |
+| `collection-hub` | Home → Colección | none (text header) | collection cards | `CollectionPage` + `BreadcrumbList` |
+| `discipline-index` | Home → discipline | text header (kicker + stacked H1), no full-bleed photo | intro + country/case grid | `CollectionPage` + `BreadcrumbList` |
+| `series-index` | Home → (discipline) → series | full-bleed series hero | intro, holdings/chapters, sources | `CollectionPage` + `BreadcrumbList` |
+| `piece` | Home → series ancestors → title | optional series-style hero; else text-first | lead `max-w-[46rem]`, facts card, anverso/reverso, narrative (full case width), sources | `VisualArtwork` |
+| `editorial-index` | Home → Blog/News | none | card grid | `CollectionPage` |
+| `editorial-article` | Home → index → title | in-flow figure, not full-bleed | dek, claim, prose, related, comments | `BlogPosting` or `NewsArticle` |
+| `glossary-index` | Home → Glossary | none | search, filters, terms | `DefinedTermSet` + `BreadcrumbList` |
+| `glossary-term` | Home → Glossary → term | none | definition + related | `DefinedTerm` |
+| `stub` | optional | none | coming-soon copy | none |
+| `error` | none | none | title, body, home link | none |
+
+## Breadcrumbs
+
+- Prefer `src/components/Breadcrumb.astro`. Labels from i18n (`Migas de pan` / `Breadcrumb`, `Inicio` / `Home`).
+- Last crumb `aria-current="page"`. Do not mark decorative separators as links.
+
+## New page checklist (prompt C)
+
+1. Pick a type from the table. Use that type layout (create it only if the type is new).
+2. ES route + EN `/en/<translated-route>` via `localizePath` / `PATH_PREFIX_PAIRS`.
+3. Populate every required block. Wire breadcrumbs and hreflang (`Layout` pathname).
+4. Add JSON-LD for the type.
+5. Register both locales in the sitemap (`dedicatedCatalogPaths` or equivalent).
+6. Put strings in `src/i18n` or the feature’s `src/data` module.
+7. Run audit prompt B on the result.
+
+## Migration (prompt D)
+
+A page is “on template” when the route file only imports the type layout and does not inline a one-off `<main>`. Inline hubs (collection index) and unused layouts (`NumismaticsCatalogPage.astro`) are migration targets. Keep URLs and canonicals unchanged. After each type, ES and EN DOM trees (inside `<main>`) must match aside from text and `href`/`lang`.
