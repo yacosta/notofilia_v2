@@ -45,7 +45,7 @@ export const seriesCopy = {
     kicker: 'Puerto Rico · Siglo XIX',
     title: 'Emisiones coloniales y de transición',
     heroAlt:
-      'Mapa vintage panorámico en relieve 3D de Puerto Rico sobre pergamino, con El Morro, el Capitolio, una laguna turquesa, un coquí, una rosa de los vientos y el título Puerto Rico',
+      'Mapa vintage panorámico en relieve 3D de Puerto Rico sobre pergamino, con El Morro, Viejo San Juan, un coquí, una rosa de los vientos y el título Puerto Rico',
     intro: [
       'Puerto Rico fue, en 1766, la primera provincia de ultramar española que imprimió papeletas de 8 reales. Durante siglos el situado mexicano sostuvo las arcas de la isla; cuando las independencias americanas cortaron ese subsidio, el gobernador Salvador Meléndez Bruna autorizó, el 31 de agosto de 1812, una moneda provincial de papel. En 1813 la emisión de papeletas llegó a 500.000 pesos. El intendente Alejandro Ramírez, llegado el 11 de febrero de 1813, las amortizó hacia 1816.',
       'El descrédito de aquel papel detuvo nuevas emisiones durante décadas. El papel volvió con la Guerra de los Diez Años. En Nueva York, la Junta Central Republicana de Cuba y Puerto Rico —presidida por José Morales Lemus, con el eco de Betances y Hostos— recaudó fondos para ambas islas. El 1 de junio de 1869 la República de Cuba en Armas autorizó un empréstito de veinte millones de pesos.',
@@ -63,7 +63,7 @@ export const seriesCopy = {
     kicker: 'Puerto Rico · Nineteenth century',
     title: 'Colonial and transition issues',
     heroAlt:
-      'Vintage panoramic 3D relief map of Puerto Rico on parchment, with El Morro, the Capitol, a turquoise lagoon, a coquí, a compass rose, and the title Puerto Rico',
+      'Vintage panoramic 3D relief map of Puerto Rico on parchment, with El Morro, Old San Juan, a coquí, a compass rose, and the title Puerto Rico',
     intro: [
       'In 1766 Puerto Rico became the first Spanish overseas province to print 8-real papeletas. For centuries the Mexican situado propped up the island treasury; when Spanish American independence cut that subsidy, Governor Salvador Meléndez Bruna authorized provincial paper on 31 August 1812. By 1813 the papeleta issue reached 500,000 pesos. Intendant Alejandro Ramírez, who arrived on 11 February 1813, amortized it by 1816.',
       'The disgrace of that paper stopped new issues for decades. Paper returned with the Ten Years’ War. In New York the Central Republican Board of Cuba and Puerto Rico — chaired by José Morales Lemus, with Betances and Hostos in the same orbit — raised funds for both islands. On 1 June 1869 the Republic of Cuba in Arms authorized a twenty-million-peso loan.',
