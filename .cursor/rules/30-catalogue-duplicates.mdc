@@ -1,0 +1,103 @@
+---
+description: Duplicate-prevention rules for banknote (and coin) catalogue entries on Notofilia.com. Apply on every feature that adds, imports, or edits a catalogue item.
+globs:
+  - src/content/**
+  - src/data/**
+  - src/components/catalog/**
+  - src/pages/**/*.astro
+  - catalog-src/**
+  - public/images/catalog/**
+  - public/images/catalogue/**
+alwaysApply: true
+---
+
+# Notofilia — No Duplicate Banknotes
+
+Every banknote in the Notofilia catalogue is a physical, unique object. The serial number is its identity. **Never add a banknote whose serial number already exists in the catalogue.** Checking is mandatory, not optional, and happens *before* any file is created or edited.
+
+This rule applies to every feature branch and Cursor cloud agent working on Notofilia.com. Catalogue data lives in `src/data/` (country modules and `*.ts` piece records), generated images under `public/images/catalog/` (uncommitted), and masters under `catalog-src/catalog/`. There is no `src/content/` collection yet; still search it if it appears.
+
+## 1. Before adding any banknote
+
+Run these checks in order and report the results in your response before writing anything.
+
+### 1.1 Normalize the serial number
+
+Serials arrive in inconsistent forms (`A 1234567`, `A-1234567`, `a1234567`, `Nº 1234567`). Normalize before comparing:
+
+- Uppercase everything.
+- Strip spaces, hyphens, dots, `Nº`, `No.`, `#`, and other punctuation.
+- Keep prefix letters, digits, and suffix letters together (`A1234567B`).
+- Do **not** strip leading zeros (`0012345` ≠ `12345`).
+- If the note has two serials (left/right, or prefix + counter), record both, and compare both.
+
+Compare only normalized-to-normalized.
+
+### 1.2 Search the whole catalogue for the serial
+
+Search every place a serial can live — content collections, data files, and image filenames — in both the Spanish root tree and the `/en/` tree:
+
+```bash
+# exact normalized serial (adjust the pattern to the normalized value)
+rg -i --no-heading "A1234567" src/ public/ docs/ catalog-src/
+
+# loose match: same digits with any separators between characters
+rg -i --no-heading "A[ .-]?1[ .-]?2[ .-]?3[ .-]?4[ .-]?5[ .-]?6[ .-]?7" src/ public/ docs/ catalog-src/
+```
+
+Also grep the frontmatter/data field directly if the collection has one:
+
+```bash
+rg -i "serial(_number|_display)?:\s*.*1234567" src/content/ src/data/
+```
+
+A hit in **any** file — Spanish page, English page, JSON/YAML/TS data, image name, draft, or archived entry — means the note already exists. Stop and go to §3.
+
+Hits only in editorial copy (`src/data/blog-articles.json`, `src/data/news-articles.json`) are not catalogue holdings unless they cite a collection serial that already lives in a country module. Treat a match in a country module (`src/data/*.ts`) as a definite duplicate.
+
+### 1.3 Secondary fingerprint check (serial unreadable or missing)
+
+If the serial is illegible, absent (proofs, specimens, essays, some 19th‑century private-bank issues), or the user could not supply it, fall back to the combined fingerprint. Two entries match if **all** of these agree:
+
+- Issuer / bank (e.g. Banco de la República, Banco de Río Hacha)
+- Denomination and currency
+- Date printed on the note (exact date, not just year, when present)
+- Pick / catalogue number (Pick, PMG/NGC cert number, or Notofilia internal ID)
+- Signature combination
+- Certification number (PMG / NGC / PCGS) when the note is graded — a cert number is as unique as a serial; treat a cert-number match as a definite duplicate
+
+When you must rely on the fingerprint, say so explicitly in your response and ask the user to confirm the serial or cert number before creating the entry.
+
+### 1.4 Check the bilingual pair
+
+Every catalogue item has a Spanish page and an English page (hreflang pair). A duplicate check that only searches one language tree is incomplete. If the serial exists in one language only, that is a **missing translation**, not a new note — add the missing pair, don't create a second item.
+
+This site stores one data record per piece in `src/data/` and thin ES/EN routes that share a `*Page.astro` type layout. A missing pair is a missing route or `PATH_PREFIX_PAIRS` entry, not a second object in the data module.
+
+## 2. When creating the entry
+
+- Store the serial in a dedicated frontmatter/data field (`serial`), in normalized form, plus `serial_display` for the exact printed form if they differ.
+- Store `cert_number` and `cert_grader` for graded notes.
+- Give the item one stable internal ID shared by both language pages, so the dedup check can key on it later.
+- Name image files with the internal ID or normalized serial, never with a generic name (`billete-5-pesos.jpg` invites duplicates; `NF-0421-A1234567-front.jpg` does not). Masters go in `catalog-src/catalog/` using the public path pattern (`philippines/1-peso-front.jpg`).
+- Finish your response with a one-line dedup statement, e.g.:
+  `Dedup: searched src/, public/, docs/, catalog-src/ for A1234567 (and loose variants) — 0 matches. Cert 8071234-001 — 0 matches.`
+
+## 3. When a duplicate is found
+
+Do **not** create a new entry. Instead:
+
+1. Show the user the existing file path(s) and the matching serial / cert / fingerprint.
+2. Ask whether they want to (a) update the existing entry with the new information or images, (b) add the missing language pair, or (c) confirm it is a different note (e.g. a re-used serial across series — rare, but possible; require the user's explicit confirmation and record why in the entry).
+3. Never silently overwrite, rename, or merge entries.
+
+## 4. Bulk imports (CSV, spreadsheet, batch of images)
+
+- First dedup the import against **itself** (same serial appearing twice in the batch).
+- Then dedup the batch against the catalogue.
+- Produce a table before writing anything: `serial | status (new / exists / missing pair / needs review) | existing path`.
+- Only write the rows marked `new` and `missing pair`; hold everything else for the user.
+
+## 5. Periodic audit
+
+When asked to audit the catalogue, list any serial or cert number that appears in more than one item, any item missing a serial without a `no_serial_reason` field, and any bilingual pair where only one language exists. Report — don't fix — unless the user asks.
