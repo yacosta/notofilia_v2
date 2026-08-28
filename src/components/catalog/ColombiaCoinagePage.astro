@@ -1,6 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { localizePath, type Locale } from '../../lib/site';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import {
   coinageChapterHref,
@@ -29,65 +33,46 @@ const hero = {
   width: 2128,
   height: 912,
 };
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.title, path: pathname },
+  ],
+});
+
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby="series-heading">
-      <img
-        class="absolute inset-0 h-full w-full object-cover object-[50%_18%] [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)] md:object-[50%_28%]"
-        src={hero.src}
-        alt={t.heroAlt}
-        width={hero.width}
-        height={hero.height}
-        fetchpriority="high"
-        decoding="async"
-      />
-      <div
-        class="absolute inset-0"
-        style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
-      >
-      </div>
-      <div
-        class="absolute inset-0"
-        style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
-      >
-      </div>
-      <div
-        class="relative z-[1] mx-auto flex min-h-[86vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(68vh,38rem)] md:min-h-[94vh] md:pb-16"
-      >
-        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
-          {locale === 'en' ? 'Virtual collection' : 'Colección virtual'}
-        </p>
-        <h1
-          id="series-heading"
-          class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]"
-        >
-          <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.kicker}</span>
-          <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.title}</span>
-        </h1>
-      </div>
-    </section>
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+  imageClass="object-[50%_18%] md:object-[50%_28%]"
+    />
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
-              {locale === 'en' ? 'Home' : 'Inicio'}
-            </a>
-          </li>
-          <li>
-            <a
-              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
-              href={localizePath(NUMISMATICA_PATH, locale)}
-            >
-              {locale === 'en' ? 'Numismatics' : 'Numismática'}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.kicker}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(NUMISMATICA_PATH, locale), label: copy[locale].numismaticsNav },
+          { label: t.kicker },
+        ]}
+      />
 
       <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
@@ -112,7 +97,7 @@ const hero = {
 
         <ol
           class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5"
-          aria-label={locale === 'en' ? 'Cases lined up left to right' : 'Vitrinas alineadas de izquierda a derecha'}
+          aria-label={copy[locale].casesLinedUp}
         >
           {
             colombiaCoinageChapters.map((chapter) => {
@@ -125,14 +110,13 @@ const hero = {
                 >
                   {
                     piece ? (
-                      <img
-                        src={piece.images.composite}
-                        alt={piece.title[locale]}
-                        width="1536"
-                        height="1024"
-                        class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                        decoding="async"
-                      />
+                      <CatalogThumb
+                    src={piece.images.composite}
+                    alt={piece.title[locale]}
+                    width={1536}
+                    height={1024}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
                     ) : (
                       <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
                         <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
@@ -207,14 +191,13 @@ const hero = {
                     href={coinagePiecePath(piece, locale)}
                     class="group mt-8 flex flex-col rounded-[6px] border border-line-strong bg-panel p-3 text-inherit no-underline hover:border-gold-light sm:flex-row sm:items-center sm:gap-6 sm:p-4"
                   >
-                    <img
-                      src={piece.images.composite}
-                      alt={piece.title[locale]}
-                      width="1536"
-                      height="1024"
-                      class="mb-4 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-0 sm:max-w-[16rem]"
-                      decoding="async"
-                    />
+                    <CatalogThumb
+                    src={piece.images.composite}
+                    alt={piece.title[locale]}
+                    width={1536}
+                    height={1024}
+                    class="mb-4 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-0 sm:max-w-[16rem]"
+                  />
                     <div class="min-w-0">
                       <h3 class="mb-2 mt-0 font-display text-[1.35rem]/7 font-normal text-cream-dim group-hover:text-cream">
                         {piece.title[locale]}
@@ -240,7 +223,7 @@ const hero = {
           href={localizePath(NUMISMATICA_PATH, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          {locale === 'en' ? 'Back to the numismatics catalog' : 'Volver al catálogo de numismática'}
+          {copy[locale].backNumismatics}
         </a>
       </p>
     </article>
