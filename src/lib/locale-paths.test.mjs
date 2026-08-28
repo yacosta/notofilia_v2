@@ -115,9 +115,5 @@ describe('locale path mapping', () => {
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );
-    assert.equal(
-      redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
-      '/en/collection/united-states/5-dollars-confederate-1864/',
-    );
   });
 });
