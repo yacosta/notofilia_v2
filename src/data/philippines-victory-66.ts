@@ -395,7 +395,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro certificados únicos, en la misma fila de izquierda a derecha por denominación: 1, 2, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
+      'Cuatro certificados únicos, de izquierda a derecha por denominación: 1, 2, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
     viewNote: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
     pickLabel: 'Pick',
@@ -418,7 +418,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'Four unique certificates in one row, left to right by denomination: 1, 2, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
+      'Four unique certificates, left to right by denomination: 1, 2, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
     viewNote: 'Open the note page',
     sourcesTitle: 'Sources',
     pickLabel: 'Pick',
