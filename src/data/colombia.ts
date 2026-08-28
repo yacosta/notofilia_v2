@@ -31,18 +31,18 @@ export const colombiaChapters: ColombiaChapter[] = [
   },
   {
     id: 'banca-libre',
-    years: { es: '1870–1886', en: '1870–1886' },
+    years: { es: '1870–1887', en: '1870–1887' },
     title: {
       es: 'Banca libre',
       en: 'Free banking',
     },
     lead: {
-      es: 'Bancos privados regionales con convertibilidad en metálico y planchas grabadas en Nueva York y Londres.',
-      en: 'Regional private banks, metallic convertibility, and plates engraved in New York and London.',
+      es: 'Ley 35 de 1865, Banco de Bogotá (1870) y decenas de emisores regionales convertibles en metálico.',
+      en: 'Law 35 of 1865, the Banco de Bogotá (1870), and dozens of regional issuers convertible into metal.',
     },
     body: {
-      es: 'Hasta mediados del siglo XIX el comercio siguió en oro, plata y moneda extranjera. El billete moderno llegó con la banca libre: el Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Le siguieron, entre otros, los bancos de Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca y Rio Hacha, en la Guajira. La Enciclopedia Banrepcultural señala que los bancos más importantes encargaron la impresión a Inglaterra o Estados Unidos; el sistema exigía convertibilidad en metálico y competencia entre emisores. En esta colección caben pruebas, especímenes y emisiones regionales de esa década.',
-      en: 'Until the mid-nineteenth century, trade still ran on gold, silver, and foreign coin. Modern notes arrived with free banking: the Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Banks of Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, and Rio Hacha on the Guajira followed. Banrepcultural’s encyclopedia notes that the leading banks ordered printing in England or the United States; the system required metallic convertibility and competing issuers. Proofs, specimens, and regional issues from that decade belong in this collection.',
+      es: 'Hasta mediados del siglo XIX el comercio siguió en oro, plata y moneda extranjera. La Ley 35 de 1865 abrió la emisión privada convertible. El Banco de Bogotá se constituyó el 15 de noviembre de 1870 —comerciantes y políticos, escritura en la Notaría Segunda— y fue el primer emisor privado que el comercio aceptó de forma amplia: sus estatutos ataban el billete al metálico en caja. Mover especie por un relieve accidentado era caro y peligroso; los bancos regionales cubrieron el crédito local —comercio, agricultura, infraestructura— con papel propio, fraccionarios incluidos. Entre 1870 y 1886 se fundaron más de tres docenas. Le siguieron, entre otros, los de Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, el Hipotecario de Bogotá y Rio Hacha, en la Guajira. La Enciclopedia Banrepcultural señala que los bancos más importantes encargaron la impresión a Inglaterra o Estados Unidos. En esta colección caben pruebas, especímenes y emisiones regionales de esa década.',
+      en: 'Until the mid-nineteenth century, trade still ran on gold, silver, and foreign coin. Law 35 of 1865 opened private convertible issue. The Banco de Bogotá was constituted on 15 November 1870 — merchants and politicians, a deed at the Second Notary — and was the first private issuer the market broadly accepted: its statutes tied the note to metal in the till. Moving specie across broken country was costly and dangerous; regional banks covered local credit — trade, agriculture, infrastructure — with their own paper, fractionals included. Between 1870 and 1886 more than three dozen were founded. Banks of Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, the Hipotecario of Bogotá, and Rio Hacha on the Guajira followed. Banrepcultural’s encyclopedia notes that the leading banks ordered printing in England or the United States. Proofs, specimens, and regional issues from that decade belong in this collection.',
     },
   },
   {
@@ -57,8 +57,8 @@ export const colombiaChapters: ColombiaChapter[] = [
       en: 'La Regeneración, forced legal tender, and the paper of the Thousand Days’ War.',
     },
     body: {
-      es: 'En marzo de 1880 se propuso un Banco Nacional; quedó establecido en 1881 como pieza de la Regeneración de Rafael Núñez y Miguel Antonio Caro. Al principio convivió con la emisión privada; hacia 1886–1887 el gobierno impuso el curso forzoso y apagó el derecho de los bancos particulares. Astrid Romero sitúa la liquidación del instituto en 1896, tras unos quince años. La Guerra de los Mil Días (1899–1902) disparó de nuevo la impresión de papel y una de las inflaciones más graves del país. En 1909 la Junta de Conversión fijó 100 pesos de papel por 1 peso oro, paso previo al banco central.',
-      en: 'A Banco Nacional was proposed in March 1880 and established in 1881 as part of Rafael Núñez and Miguel Antonio Caro’s Regeneración. At first it coexisted with private issues; around 1886–1887 the government imposed forced legal tender and ended private banks’ right to issue. Astrid Romero places the institute’s liquidation in 1896, after about fifteen years. The Thousand Days’ War (1899–1902) set off another surge of paper and one of the country’s worst inflations. In 1909 the Conversion Board set 100 paper pesos to 1 gold peso — a step toward the later central bank.',
+      es: 'En marzo de 1880 se propuso un Banco Nacional; la Ley 39 de 1880 y su establecimiento en 1881 lo hicieron pieza de la Regeneración de Rafael Núñez y Miguel Antonio Caro. Al principio convivió con la emisión privada. La Ley 57 de 1887 reglamentó la banca en todo el país y suspendió el derecho de los particulares a emitir mientras el Nacional tuviera el privilegio exclusivo; el curso forzoso apagó el resto. Astrid Romero sitúa la liquidación del instituto en 1896, tras unos quince años. La Guerra de los Mil Días (1899–1902) disparó de nuevo la impresión de papel y una de las inflaciones más graves del país. En 1909 la Junta de Conversión fijó 100 pesos de papel por 1 peso oro, paso previo al banco central.',
+      en: 'A Banco Nacional was proposed in March 1880; Law 39 of 1880 and its establishment in 1881 made it part of Rafael Núñez and Miguel Antonio Caro’s Regeneración. At first it coexisted with private issues. Law 57 of 1887 regulated banking nationwide and suspended private banks’ right to issue while the Nacional held the exclusive privilege; forced legal tender finished the rest. Astrid Romero places the institute’s liquidation in 1896, after about fifteen years. The Thousand Days’ War (1899–1902) set off another surge of paper and one of the country’s worst inflations. In 1909 the Conversion Board set 100 paper pesos to 1 gold peso — a step toward the later central bank.',
     },
   },
   {
@@ -139,8 +139,8 @@ export const seriesSources: CatalogSource[] = [
     es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
     en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
     note: {
-      es: 'Catálogo de referencia de las emisiones del Banco de la República y de los impresores ABNC, TDLR e IBB.',
-      en: 'A standard catalog of Banco de la República issues and of the ABNC, TDLR, and IBB printers.',
+      es: 'Catálogo de referencia de la notafilia colombiana: banca libre, Banco Nacional y Banco de la República.',
+      en: 'A standard catalog of Colombian notaphily: free banking, the Banco Nacional, and the Banco de la República.',
     },
   },
   {
@@ -150,6 +150,24 @@ export const seriesSources: CatalogSource[] = [
     note: {
       es: 'Establecido en 1881; liquidación definitiva en 1896.',
       en: 'Established in 1881; final liquidation in 1896.',
+    },
+  },
+  {
+    href: 'https://www.bancodebogota.com/nuestra-organizacion-2/nuestro-banco',
+    es: 'Banco de Bogotá — Nuestro Banco',
+    en: 'Banco de Bogotá — Our Bank',
+    note: {
+      es: 'Fundación el 15 de noviembre de 1870; primer banco comercial del país.',
+      en: 'Founded 15 November 1870; the country’s first commercial bank.',
+    },
+  },
+  {
+    href: 'https://www.portafolio.co/economia/finanzas/banco-bogota-nacio-facultad-especial-billetes-408564',
+    es: 'Portafolio — El Banco de Bogotá nació con la facultad de hacer billetes',
+    en: 'Portafolio — The Banco de Bogotá was born with the right to issue notes',
+    note: {
+      es: '15 de noviembre de 1870; estatutos: billetes al portador en razón del metálico en caja.',
+      en: '15 November 1870; statutes: bearer notes in proportion to metal in the till.',
     },
   },
   {
@@ -188,8 +206,8 @@ export const seriesCopy = {
       'Mapa vintage en relieve 3D de Colombia sobre pergamino, con el Castillo San Felipe, Monserrate, el Eje Cafetero, el Amazonas, un pasaporte y el título Colombia',
     intro: [
       'El papel moneda en Colombia nació de la urgencia de la Independencia, no de un banco central. En 1813 el Estado de Cartagena emitió billetes de un real en papel común, firmados a mano. La Enciclopedia Banrepcultural identifica el 1 real de Gutiérrez de Piñeres; Cundinamarca siguió al año siguiente con vales de tesorería. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
-      'El billete moderno llegó en la década de 1870, con la banca libre. El Banco de Bogotá (1870) fue el primer emisor privado que el comercio aceptó de forma amplia. Decenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, Rio Hacha— encargaron planchas a Nueva York y Londres, con convertibilidad en metálico. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La banca libre abre con las pruebas ABNC del Banco Hipotecario de Bogotá (1881) y del 5 pesos de Rio Hacha (1883).',
-      'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional. Hacia 1886–1887 el gobierno impuso el curso forzoso y apagó la emisión privada. Astrid Romero sitúa la liquidación del instituto en 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel y una inflación devastadora. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro.',
+      'El billete moderno llegó en la década de 1870, con la banca libre. La Ley 35 de 1865 abrió la emisión convertible. El Banco de Bogotá se constituyó el 15 de noviembre de 1870 y fue el primer emisor privado que el comercio aceptó de forma amplia. Mover especie por el relieve era caro y peligroso; más de tres docenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, el Hipotecario, Rio Hacha— cubrieron el crédito local con papel propio, fraccionarios incluidos, grabado en Nueva York y Londres. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La banca libre abre con las pruebas ABNC del Banco Hipotecario de Bogotá (1881) y del 5 pesos de Rio Hacha (1883).',
+      'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional (Ley 39 de 1880). Al principio convivió con la emisión privada. La Ley 57 de 1887 suspendió el derecho de los particulares a emitir mientras el Nacional tuviera el privilegio exclusivo; el curso forzoso apagó el resto. Astrid Romero sitúa la liquidación del instituto en 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel y una inflación devastadora. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro.',
       'La Ley 25 de 1923, fruto de la Misión Kemmerer contratada por Pedro Nel Ospina, creó el Banco de la República con capital mixto y el monopolio de emitir la moneda legal. La corrida contra el Banco López adelantó la apertura al 23 de julio de 1923: se resellaron certificados de oro de la Casa de Moneda de Medellín como billetes provisionales. Los primeros regulares los grabó la American Bank Note Company; la convertibilidad en oro se perdió en 1931. Thomas De La Rue imprimió a mediados de siglo. El 23 de octubre de 1959 abrió la Imprenta de Billetes en Bogotá, con el 1 peso (Pick 404). En 1973 el Estado nacionalizó casi todo el capital; la Constitución de 1991 fijó la autonomía del banco, y desde 1993 el papel deja de llamarse peso oro. Esta vitrina documenta el 10 pesos oro de 1943 (Pick 389b) y el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue.',
     ],
     holdingsTitle: 'El catálogo',
@@ -214,8 +232,8 @@ export const seriesCopy = {
       'Vintage 3D relief map of Colombia on parchment, with Castillo San Felipe, Monserrate, the Coffee Axis, the Amazon, a passport, and the title Colombia',
     intro: [
       'Paper money in Colombia was born from the urgency of independence, not from a central bank. In 1813 the State of Cartagena issued 1-real notes on ordinary paper, signed by hand. Banrepcultural’s encyclopedia identifies the Gutiérrez de Piñeres 1-real; Cundinamarca followed the next year with treasury vales. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
-      'The modern note arrived in the 1870s with free banking. The Banco de Bogotá (1870) was the first private issuer the market broadly accepted. Dozens of regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, Rio Hacha — ordered plates in New York and London, with metallic convertibility. Those issues, with proofs and specimens, are the historical core of this case. Free banking opens with the ABNC proofs of the Banco Hipotecario of Bogotá (1881) and the Rio Hacha 5 pesos (1883).',
-      'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born. Around 1886–1887 the government imposed forced legal tender and ended private issues. Astrid Romero places the institute’s liquidation in 1896. The Thousand Days’ War (1899–1902) set off another surge of paper and a devastating inflation. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso.',
+      'The modern note arrived in the 1870s with free banking. Law 35 of 1865 opened convertible issue. The Banco de Bogotá was constituted on 15 November 1870 and was the first private issuer the market broadly accepted. Moving specie across the highlands was costly and dangerous; more than three dozen regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, the Hipotecario, Rio Hacha — covered local credit with their own paper, fractionals included, engraved in New York and London. Those issues, with proofs and specimens, are the historical core of this case. Free banking opens with the ABNC proofs of the Banco Hipotecario of Bogotá (1881) and the Rio Hacha 5 pesos (1883).',
+      'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born (Law 39 of 1880). At first it coexisted with private issues. Law 57 of 1887 suspended private banks’ right to issue while the Nacional held the exclusive privilege; forced legal tender finished the rest. Astrid Romero places the institute’s liquidation in 1896. The Thousand Days’ War (1899–1902) set off another surge of paper and a devastating inflation. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso.',
       'Law 25 of 1923, the fruit of the Kemmerer Mission hired by Pedro Nel Ospina, created the Banco de la República with mixed capital and the monopoly of legal-tender issue. A run on the Banco López brought the opening forward to 23 July 1923: gold certificates from the Medellín mint were overstamped as provisional notes. The first regular issues were engraved by the American Bank Note Company; gold convertibility ended in 1931. Thomas De La Rue printed at mid-century. On 23 October 1959 the Imprenta de Billetes opened in Bogotá, with the 1-peso (Pick 404). In 1973 the state nationalized nearly all the capital; the 1991 Constitution fixed the bank’s autonomy, and from 1993 the paper dropped the word oro. This case documents the 1943 10 pesos oro (Pick 389b) and the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue.',
     ],
     holdingsTitle: 'The catalog',
