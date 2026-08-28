@@ -45,7 +45,31 @@ export default defineConfig({
     ...generated,
   },
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+      {
+        name: 'cf-image-dev-passthrough',
+        configureServer(server) {
+          server.middlewares.use((req, _res, next) => {
+            const url = req.url ?? '';
+            if (!url.startsWith('/cdn-cgi/image/')) {
+              next();
+              return;
+            }
+            const q = url.indexOf('?');
+            const pathOnly = q === -1 ? url : url.slice(0, q);
+            const search = q === -1 ? '' : url.slice(q);
+            const slash = pathOnly.indexOf('/', '/cdn-cgi/image/'.length);
+            if (slash === -1) {
+              next();
+              return;
+            }
+            req.url = `${pathOnly.slice(slash)}${search}`;
+            next();
+          });
+        },
+      },
+    ],
     build: {
       assetsInlineLimit: 0,
     },
