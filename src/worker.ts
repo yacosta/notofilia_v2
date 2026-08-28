@@ -17,7 +17,19 @@ export default {
       return handleCommentsRequest(request, env);
     }
 
-    const asset = await env.ASSETS.fetch(request);
+    let asset = await env.ASSETS.fetch(request);
+    if (
+      asset.status === 404 &&
+      (url.pathname === '/en' || url.pathname.startsWith('/en/')) &&
+      !url.pathname.startsWith('/en/404')
+    ) {
+      const notFound = await env.ASSETS.fetch(new URL('/en/404/', url.origin));
+      asset = new Response(notFound.body, {
+        status: 404,
+        statusText: 'Not Found',
+        headers: notFound.headers,
+      });
+    }
     if (!shouldNoindex(url)) return asset;
 
     const headers = new Headers(asset.headers);
