@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
 import { localizePath, type Locale } from '../../lib/site';
+import { visualArtworkJsonLd } from '../../lib/json-ld';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
   coinagePieceCopy,
@@ -21,30 +23,33 @@ const series = coinageCopy[locale];
 const pathname = coinagePiecePath(piece, locale);
 ---
 
-<Layout title={`${piece.title[locale]} | Notofilia`} description={piece.lead[locale]} locale={locale} pathname={pathname}>
+<Layout title={`${piece.title[locale]} | Notofilia`} description={piece.lead[locale]} locale={locale} pathname={pathname} ogImage={piece.images.composite}>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        ...visualArtworkJsonLd({
+          name: piece.title[locale],
+          description: piece.lead[locale],
+          url: pathname,
+          image: piece.images.composite,
+          locale,
+          artform: 'Coin',
+        }),
+      })}
+    />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
-          <li>
-            <a
-              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
-              href={localizePath(COLOMBIA_COINAGE_PATH, locale)}
-            >
-              {t.collectionLink}
-            </a>
-          </li>
-          <li>
-            <a
-              class="inline-flex min-h-11 items-center text-gold-light hover:text-cream"
-              href={`${coinagePath(locale)}#independencia`}
-            >
-              {t.chapterLink}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{piece.title[locale]}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath(COLOMBIA_COINAGE_PATH, locale), label: t.collectionLink },
+          { href: `${coinagePath(locale)}#independencia`, label: t.chapterLink },
+          { label: piece.title[locale] },
+        ]}
+      />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {piece.kicker[locale]}
