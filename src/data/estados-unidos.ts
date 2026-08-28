@@ -206,17 +206,10 @@ export const seriesCopy = {
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
       'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Ya tiene ficha el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Ocho entradas, de izquierda a derecha por época: moneda colonial, billete obsoleto, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate y pop art. El capítulo de la Reserva Federal abre con el 10 dólares de 1934 de Chicago. El certificado de pago militar abre la vitrina de Vietnam.',
-    viewChapter: 'Leer el capítulo',
-    viewMpc: 'Ver los MPC de Vietnam',
     viewNote: 'Ver la ficha',
-    mpcLabel: 'Vietnam',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
   },
   en: {
     metaTitle: 'United States · Federal, colonial, and obsolete | Notofilia',
@@ -232,62 +225,15 @@ export const seriesCopy = {
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
       'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. The Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already has a note page. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Eight entries, left to right by period: colonial coinage, obsolete notes, United States Notes, Gold Certificates, Silver Certificates, Federal Reserve Bank, US Military Payment Certificate, and pop art. The Federal Reserve chapter opens with the 1934 Chicago $10. The military payment certificate opens the Vietnam case.',
-    viewChapter: 'Read the chapter',
-    viewMpc: 'View the Vietnam MPCs',
     viewNote: 'Open the note page',
-    mpcLabel: 'Vietnam',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
   },
 } as const;
 
-export type UnitedStatesCatalogItem = {
-  id: string;
-  years: LocalizedText;
-  title: LocalizedText;
-  href: string;
-  kind: 'chapter' | 'collection';
-};
-
-export const unitedStatesMpcCard = {
-  id: 'us-mpc',
-  years: { es: '1965–1973', en: '1965–1973' },
-  title: {
-    es: 'US Military Payment Certificate',
-    en: 'US Military Payment Certificate',
-  },
-  href: USA_MPC_PATH,
-  kind: 'collection' as const,
-};
-
 export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_PATH, locale);
-}
-
-export function chapterHref(id: UnitedStatesChapterId): string {
-  return `#${id}`;
-}
-
-export function unitedStatesCatalogItems(): UnitedStatesCatalogItem[] {
-  const items: UnitedStatesCatalogItem[] = [];
-  for (const chapter of unitedStatesChapters) {
-    items.push({
-      id: chapter.id,
-      years: chapter.years,
-      title: chapter.title,
-      href: chapterHref(chapter.id),
-      kind: 'chapter',
-    });
-    if (chapter.id === 'us-frb') {
-      items.push(unitedStatesMpcCard);
-    }
-  }
-  return items;
 }
 
 export type UnitedStatesNoteId = '10-dolares-serie-1934-chicago';
