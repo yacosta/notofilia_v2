@@ -1,0 +1,53 @@
+---
+description: Site-wide standards for Notofilia (Astro + Cloudflare Workers)
+alwaysApply: true
+---
+
+# Site standards
+
+Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the default locale (unprefixed URLs). English lives under `/en/` with translated path segments. Visual tokens and type live in `DESIGN.md`. Column widths live in `LAYOUT.md`.
+
+## Shell (every HTML page)
+
+- `astro.config.mjs`: `compressHTML: false` (empty `alt=""` must survive minify), `trailingSlash: 'always'`.
+- One chrome layout: `src/layouts/Layout.astro`.
+- First focusable in `<body>`: `SkipLink` → `href="#main-content"`. Hide with classic clip (`left: -10000px`), not Tailwind `sr-only`.
+- Landmark: `<main id="main-content" tabindex="-1">` on every page including 404.
+- `<html lang>` matches the page locale (`es` | `en`).
+- Canonical + `hreflang` `es`, `en`, and `x-default` (x-default = Spanish URL).
+- Every `target="_blank"`: `rel="noopener noreferrer"` plus `NewWindowHint` in the accessible name. Hint language matches the page.
+- Do not invent `aria-label` that omits or contradicts visible text (WCAG 2.5.3).
+- Worker name stays as deployed. Do not rename the production Worker.
+
+## Locales and copy
+
+- Pair every public content route ES ↔ EN. Endpoints (`sitemap.xml`, `llms.txt`) are locale-agnostic.
+- 404 must exist for both locales (or one 404 that detects locale). Do not hard-code `locale="es"` only.
+- Shared UI strings belong in `src/i18n/` (create the module if missing). Until then, `copy` in `src/lib/site.ts` and `{ es, en }` objects in `src/data/` are the only allowed stores.
+- **No Spanish (or English) literals in components** for chrome, breadcrumbs, CTAs, `aria-label`, or alts. Catalog facts stay in `src/data/*`.
+- Thin route files under `src/pages/` pass `locale` into a `*Page.astro` type layout. Do not duplicate markup per locale.
+
+## Images and LCP
+
+- Raster images that appear in the viewport or in cards go through `src/lib/images.ts` (`cfImage`, `heroSrcset`, `cardImageSrc`, `imageSrcset`) so the URL is `/cdn-cgi/image/…`.
+- Exceptions: decorative SVG flags (`CountryFlag`), and full-resolution catalog scans inside `NoteImageLightbox` (detail viewing). Series heroes and editorial cards are **not** exceptions.
+- LCP hero: `fetchpriority="high"`, real `width`/`height` matching the file, `sizes` when `srcset` is present. Do not use a tiny intrinsic size on a full-viewport image.
+- Generated catalog files stay uncommitted (`public/images/catalog/`, `catalog-download/`).
+
+## Stats line
+
+- `statsLine(locale)` from `src/lib/site.ts` may render **once** in chrome: the footer signature (`Colección Virtual:` / `Virtual Collection:`).
+- The homepage may show the line in **either** the hero **or** the stats band, not both, and not in addition to a second in-page repeat. Footer still counts as a render — do not also put the line in the hero *and* the band.
+- Do not render the stats line on inner pages.
+
+## SEO
+
+- Register every public HTML route in `src/pages/sitemap.xml.ts` (via `dedicatedCatalogPaths`, stubs, or an explicit extra). Include both locales and xhtml hreflang.
+- Page-type JSON-LD is required as listed in `10-page-types.mdc`. Sitewide `WebSite` JSON-LD in `Layout` does not replace page JSON-LD.
+- Keep URLs and canonicals stable when refactoring. Add redirects in `astro.config.mjs` for retired slugs.
+
+## Layout widths (`LAYOUT.md`)
+
+- Museum case: `article` / bands use `mx-auto max-w-content px-[var(--page-gutter)]`.
+- After a facts card or anverso/reverso grid, do **not** recap narrative at `max-w-[46rem]`.
+- `max-w-[46rem]` is for a short lead under the `h1`, or for text-only pages (about, editorial article).
