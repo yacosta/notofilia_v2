@@ -1,12 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { localizePath, SERIES_PATH, type Locale } from '../../lib/site';
+import { localizePath, type Locale } from '../../lib/site';
+import { seriesPath, seriesSources } from '../../data/philippines';
 import {
   notePageCopy,
   notePath,
-  seriesCopy,
-  seriesPath,
-  seriesSources,
   type VictoryNote,
 } from '../../data/philippines-victory-66';
 import SourceList from './SourceList.astro';
@@ -19,7 +17,6 @@ interface Props {
 
 const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
-const series = seriesCopy[locale];
 const pathname = notePath(note, locale);
 const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
 ---
@@ -52,8 +49,8 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       <nav aria-label={locale === 'en' ? 'Breadcrumb' : 'Migas de pan'} class="mb-8">
         <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0 font-sans text-[14px] text-muted">
           <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath(SERIES_PATH, locale)}>
-              {t.collectionLink}
+            <a class="inline-flex min-h-11 items-center text-gold-light hover:text-cream" href={localizePath('/', locale)}>
+              {locale === 'en' ? 'Home' : 'Inicio'}
             </a>
           </li>
           <li>
@@ -153,10 +150,10 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
 
       <p class="mt-12">
         <a
-          href={seriesPath(locale)}
+          href={`${seriesPath(locale)}#${note.chapterId}`}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          ← {series.title}
+          ← {t.seriesLink}
         </a>
       </p>
     </article>

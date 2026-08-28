@@ -27,7 +27,8 @@ import {
   netherlandsCoinSlugs,
   netherlandsCoinageDedicatedSlugs,
 } from '../data/netherlands-coinage';
-import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths } from '../data/philippines-victory-66';
+import { SERIES_PATH } from '../data/philippines';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
@@ -275,8 +276,8 @@ export {
 export const collections = [
   {
     href: SERIES_PATH,
-    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.' },
-    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
+    es: { title: 'Filipinas', description: 'Colonia española, Commonwealth, ocupación japonesa y el Banco Central.' },
+    en: { title: 'Philippines', description: 'Spanish colony, Commonwealth, Japanese occupation, and the Central Bank.' },
   },
   {
     href: CHINA_PATH,
@@ -351,12 +352,12 @@ export const milestones: MilestoneItem[] = [
   {
     href: SERIES_PATH,
     es: {
-      title: 'Filipinas · Serie Victory n.º 66',
-      description: 'Primera vitrina del catálogo: 1, 2, 5 y 20 pesos del Commonwealth, alineados por denominación.',
+      title: 'Filipinas · Del peso fuerte al Banco Central',
+      description: 'Vitrina de papel filipino: colonia, Revolución, Commonwealth —con la Serie Victory n.º 66—, ocupación japonesa y banco central.',
     },
     en: {
-      title: 'Philippines · Victory Series No. 66',
-      description: 'First catalog case: Commonwealth 1, 2, 5, and 20 pesos, lined up by denomination.',
+      title: 'Philippines · From the peso fuerte to the Central Bank',
+      description: 'Philippine paper-money case: colony, Revolution, Commonwealth — with Victory Series No. 66 — Japanese occupation, and the central bank.',
     },
   },
   {

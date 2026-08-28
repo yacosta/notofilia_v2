@@ -3,7 +3,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
-import { SERIES_PATH } from '../data/philippines-victory-66';
+import { SERIES_PATH } from '../data/philippines';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
@@ -69,13 +69,6 @@ export const megaNav: NavNode[] = [
         flag: 'us',
         children: [
           {
-            id: 'filipinas',
-            es: 'Commonwealth de Filipinas (1935 - 1945)',
-            en: 'Commonwealth of the Philippines (1935 - 1945)',
-            href: SERIES_PATH,
-            flag: 'ph',
-          },
-          {
             id: 'mpc-vietnam',
             es: 'MPC - Guerra de Vietnam (1955-1975)',
             en: 'MPC - Vietnam War (1955-1975)',
@@ -83,6 +76,13 @@ export const megaNav: NavNode[] = [
             flag: 'vn',
           },
         ],
+      },
+      {
+        id: 'filipinas',
+        es: 'Filipinas',
+        en: 'Philippines',
+        href: SERIES_PATH,
+        flag: 'ph',
       },
       {
         id: 'puerto-rico',

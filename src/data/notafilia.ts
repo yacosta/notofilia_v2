@@ -3,7 +3,7 @@ import { COLOMBIA_PATH } from './colombia';
 import { ECUADOR_PATH } from './ecuador';
 import { GUATEMALA_PATH } from './guatemala';
 import { USA_PATH } from './estados-unidos';
-import { SERIES_PATH } from './philippines-victory-66';
+import { SERIES_PATH } from './philippines';
 import { POLIMERO_MUNDIAL_PATH } from './polimero-mundial';
 import { PUERTO_RICO_PATH } from './puerto-rico';
 
@@ -37,11 +37,11 @@ export const notafiliaCountries: NotafiliaCountry[] = [
   },
   {
     href: SERIES_PATH,
-    years: { es: '1944', en: '1944' },
+    years: { es: 'desde 1852', en: 'from 1852' },
     title: { es: 'Filipinas', en: 'Philippines' },
     lead: {
-      es: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.',
-      en: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.',
+      es: 'Colonia española, Revolución, Commonwealth, ocupación japonesa y el Banco Central.',
+      en: 'Spanish colony, Revolution, Commonwealth, Japanese occupation, and the Central Bank.',
     },
   },
   {

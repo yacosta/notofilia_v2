@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import {
+  philippinesCatalogItems,
+  philippinesChapters,
   seriesCopy,
-  seriesSources,
   seriesPath,
-  victoryNotes,
-  notePath,
-} from '../../data/philippines-victory-66';
+  seriesSources,
+} from '../../data/philippines';
+import { notePath, notesForChapter } from '../../data/philippines-victory-66';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
+const catalogItems = philippinesCatalogItems();
 const hero =
   locale === 'en'
     ? {
@@ -116,39 +118,89 @@ const hero =
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
-          aria-label={locale === 'en' ? 'Notes lined up left to right by denomination' : 'Billetes alineados de izquierda a derecha por denominación'}
+          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
+          aria-label={locale === 'en' ? 'Catalog entries lined up left to right by period' : 'Entradas del catálogo alineadas de izquierda a derecha por época'}
         >
           {
-            [...victoryNotes]
-              .sort((a, b) => Number.parseInt(a.id, 10) - Number.parseInt(b.id, 10))
-              .map((note) => (
+            catalogItems.map((item) => (
               <li class="min-w-0">
                 <a
-                  href={notePath(note, locale)}
+                  href={item.href}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
-                  <img
-                    src={note.images.front}
-                    alt={note.frontCaption[locale]}
-                    width="2400"
-                    height="800"
-                    class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    decoding="async"
-                  />
+                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                      {item.years[locale]}
+                    </span>
+                  </div>
                   <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {note.title[locale]}
+                    {item.title[locale]}
                   </h3>
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                    {t.eraLabel} · {item.years[locale]}
                   </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">
+                    {t.viewChapter} →
+                  </span>
                 </a>
               </li>
             ))
           }
         </ol>
       </section>
+
+      <div class="mt-16 space-y-12">
+        {
+          philippinesChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                notesForChapter(chapter.id).length > 0 ? (
+                  <ol
+                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+                    aria-label={chapter.title[locale]}
+                  >
+                    {notesForChapter(chapter.id).map((note) => (
+                      <li class="min-w-0">
+                        <a
+                          href={notePath(note, locale)}
+                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                        >
+                          <img
+                            src={note.images.front}
+                            alt={note.frontCaption[locale]}
+                            width="2400"
+                            height="800"
+                            class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                            decoding="async"
+                          />
+                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                            {note.title[locale]}
+                          </h3>
+                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                            {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                          </p>
+                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                ) : null
+              }
+            </section>
+          ))
+        }
+      </div>
 
       <div class="mt-16">
         <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
