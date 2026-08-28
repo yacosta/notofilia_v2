@@ -77,6 +77,7 @@ export const additions: Holding[] = [
   { id: 'co-1881-5-pesos-banco-hipotecario-s511p1', kind: 'banknote', country: 'CO' },
   { id: 'co-1881-5-pesos-banco-hipotecario-s511p2', kind: 'banknote', country: 'CO' },
   { id: 'co-1943-10-pesos-oro-n6813011', kind: 'banknote', country: 'CO' },
+  { id: 'co-1983-2000-pesos-oro-specimen-030', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -96,6 +97,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1883-rio-hacha-5-pesos-s819p' },
   { id: 'co-1881-banco-hipotecario-5-pesos-s511p' },
   { id: 'co-1943-10-pesos-oro-p389b' },
+  { id: 'co-1983-2000-pesos-oro-p430as' },
 ];
 
 export type CollectionStats = {

@@ -3,7 +3,11 @@ import type { ColombiaChapterId } from './colombia';
 import { COLOMBIA_PATH, colombiaChapters } from './colombia';
 import { localizePath } from '../lib/locale-paths';
 
-export type ColombiaNoteId = '5-pesos-banco-hipotecario-1881' | '5-pesos-rio-hacha-1883' | '10-pesos-oro-1943';
+export type ColombiaNoteId =
+  | '5-pesos-banco-hipotecario-1881'
+  | '5-pesos-rio-hacha-1883'
+  | '10-pesos-oro-1943'
+  | '2000-pesos-oro-1983';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -297,6 +301,82 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
           en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2000-pesos-oro-1983',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}2000-pesos-oro-1983/`,
+    pick: 'P# 430as',
+    serial: '00000000 · SPECIMEN Nº 030',
+    signatures: {
+      es: 'Hugo Palacios Mejía (gerente) y Francisco José Ortega (secretario)',
+      en: 'Hugo Palacios Mejía (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Thomas De La Rue & Co., Londres. Espécimen de la fecha 24 de julio de 1983; formato publicado 140 × 70 mm. El Bank Note Museum sitúa el tipo Pick 430 en 1983–1986 (TDLR) y remite las fechas posteriores a la Imprenta de Billetes (Pick 433 y 433A). No se publica aquí una tirada.',
+      en: 'Thomas De La Rue & Co., London. Specimen of the 24 July 1983 date; published size 140 × 70 mm. The Bank Note Museum places Pick 430 in 1983–1986 (TDLR) and sends later dates to the Imprenta de Billetes (Pick 433 and 433A). No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2000-pesos-oro-1983-composite.jpg',
+      front: '/images/catalog/colombia/2000-pesos-oro-1983-front.jpg',
+      back: '/images/catalog/colombia/2000-pesos-oro-1983-back.jpg',
+    },
+    title: {
+      es: '2.000 pesos oro · 1983',
+      en: '2,000 pesos oro · 1983',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Espécimen TDLR',
+      en: 'Colombia · Banco de la República · TDLR specimen',
+    },
+    lead: {
+      es: 'Dos mil pesos oro, espécimen Pick 430as: encapsulado PCGS 64 Very Choice New. Fecha 24 de julio de 1983, serial de ceros y SPECIMEN Nº 030. Esta ficha reúne anverso y reverso de la misma cápsula.',
+      en: 'A two-thousand-peso oro specimen, Pick 430as: slabbed PCGS 64 Very Choice New. Date 24 July 1983, zero serials and SPECIMEN Nº 030. This record gathers the face and back of the same holder.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a Thomas De La Rue, de Londres, las primeras fechas de este dos mil pesos oro. El Bank Note Museum numera el tipo Pick 430 en 1983–1986 y lo distingue de las emisiones posteriores de la Imprenta de Billetes (Pick 433 y 433A). Esta pieza es un espécimen de la primera fecha: 24 de julio de 1983. La cápsula PCGS lo cataloga SCWPM# 430as; Numista registra el espécimen de 1983 como P# 430s / TBB B971as. El anverso, en marrón y naranja, lleva a la izquierda el retrato de Simón Bolívar y, junto a él, una escena menor; al centro, la promesa de pagar al portador dos mil pesos oro. La fecha impresa es «BOGOTÁ D.E., 24 DE JULIO DE 1983». Los seriales son ceros (00000000); en rojo van «SPECIMEN Nº 030», la palabra SPECIMEN en diagonal y los óvalos De La Rue «SPECIMEN / NO VALUE». Dos perforaciones de cancelación cortan el papel. Las firmas son las de Hugo Palacios Mejía (gerente) y Francisco José Ortega (secretario), las que Numista asigna a esa fecha (HPM, FJO₁). El reverso reproduce el «Paso del Páramo de Pisba» de Francisco Antonio Cano, con el sello del banco y las cifras 2000. El certificado PCGS 59068295 lo califica 64 Very Choice New, con las notas «Hole Punch Cancelled» y «Minor Mounting Remnants on Back». No debe confundirse con las fechas de 1985–1986 del mismo diseño ni con las impresiones bogotanas de Pick 433. Esta ficha reúne las dos caras de la misma cápsula.',
+      en: 'The Banco de la República ordered the first dates of this two-thousand-peso oro from Thomas De La Rue of London. The Bank Note Museum numbers Pick 430 in 1983–1986 and distinguishes it from later Imprenta de Billetes issues (Pick 433 and 433A). This piece is a specimen of the first date: 24 July 1983. The PCGS holder catalogs it as SCWPM# 430as; Numista records the 1983 specimen as P# 430s / TBB B971as. The face, in brown and orange, carries Simón Bolívar’s portrait at left with a smaller scene beside it, and at center the promise to pay the bearer two thousand gold pesos. The printed date is “BOGOTÁ D.E., 24 DE JULIO DE 1983.” The serials are zeros (00000000); in red are “SPECIMEN Nº 030,” a diagonal SPECIMEN, and De La Rue ovals reading “SPECIMEN / NO VALUE.” Two cancellation punches cut the paper. The signatures are those of Hugo Palacios Mejía (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to that date (HPM, FJO₁). The back reproduces Francisco Antonio Cano’s “Paso del Páramo de Pisba,” with the bank seal and the figures 2000. PCGS certificate 59068295 grades it 64 Very Choice New, with the comments “Hole Punch Cancelled” and “Minor Mounting Remnants on Back.” It should not be confused with the 1985–1986 dates of the same design or with the Bogotá printings of Pick 433. This record gathers both sides of the same holder.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2.000 pesos oro, Pick 430as, encapsulado PCGS 64 Very Choice New: Bolívar, serial 00000000, SPECIMEN Nº 030 y fecha 24 de julio de 1983.',
+      en: 'Face of the 2,000 pesos oro, Pick 430as, slabbed PCGS 64 Very Choice New: Bolívar, serial 00000000, SPECIMEN Nº 030, and the date 24 July 1983.',
+    },
+    backCaption: {
+      es: 'Reverso del 2.000 pesos oro, Pick 430as, encapsulado PCGS 64 Very Choice New: Paso del Páramo de Pisba de F. A. Cano, óvalos De La Rue y certificado 59068295.',
+      en: 'Back of the 2,000 pesos oro, Pick 430as, slabbed PCGS 64 Very Choice New: F. A. Cano’s Paso del Páramo de Pisba, De La Rue ovals, and certificate 59068295.',
+    },
+    scarcity: {
+      es: 'Numista agrupa circulación y especímenes del diseño en N# 236486, con índice de rareza 32, y marca la frecuencia del espécimen de 1983 en 0 % entre quienes poseen el tipo. El Bank Note Museum describe 430a como la fecha 24.07.1983, impresa por Thomas De La Rue. Esta ficha no inventa una tirada de especímenes.',
+      en: 'Numista groups circulating notes and specimens of the design under N# 236486, with a rarity index of 32, and marks the 1983 specimen’s frequency at 0% among owners of the type. The Bank Note Museum describes 430a as the 24.07.1983 date, printed by Thomas De La Rue. This record does not invent a specimen printage.',
+    },
+    population: {
+      es: 'La pieza está encapsulada por PCGS Currency como 64 Very Choice New, certificado 59068295, con las notas Hole Punch Cancelled y Minor Mounting Remnants on Back. No se ha verificado de forma independiente un censo de población para ese número de cápsula.',
+      en: 'The note is slabbed by PCGS Currency as 64 Very Choice New, certification 59068295, with the comments Hole Punch Cancelled and Minor Mounting Remnants on Back. A population census for that holder number has not been independently verified.',
+    },
+    grade: {
+      es: 'PCGS 64 Very Choice New · Hole Punch Cancelled',
+      en: 'PCGS 64 Very Choice New · Hole Punch Cancelled',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0430.htm',
+        es: 'Bank Note Museum — Colombia P-430, 2.000 pesos oro (1983–1986)',
+        en: 'Bank Note Museum — Colombia P-430, 2,000 pesos oro (1983–1986)',
+        note: {
+          es: '430a: 24.07.1983; anverso Bolívar, reverso Paso del Páramo de Pisba (F. A. Cano); impresor Thomas De La Rue, Londres.',
+          en: '430a: 24.07.1983; Bolívar on the face, Paso del Páramo de Pisba (F. A. Cano) on the back; printer Thomas De La Rue, London.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/236486',
+        es: 'Numista — Colombia 2.000 pesos oro, N# 236486',
+        en: 'Numista — Colombia 2,000 pesos oro, N# 236486',
+        note: {
+          es: 'Espécimen 24.07.1983: P# 430s / TBB B971as; firmas HPM y FJO₁; 140 × 70 mm; frecuencia 0 % en el tipo.',
+          en: '24.07.1983 specimen: P# 430s / TBB B971as; signatures HPM and FJO₁; 140 × 70 mm; 0% frequency within the type.',
         },
       },
     ],
