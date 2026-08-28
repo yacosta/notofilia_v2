@@ -2,8 +2,8 @@ import type { CatalogSource, LocalizedText } from './catalog';
 import { NETHERLANDS_PATH } from './netherlands';
 
 export const NUMISMATICS_PATH = '/coleccion/numismatica/';
-export const NETHERLANDS_COINAGE_PATH = '/paises-bajos-numismatica/';
-export const NETHERLANDS_COINAGE_PATH_EN = '/en/netherlands-numismatica/';
+export const NETHERLANDS_COINAGE_PATH = '/coleccion/paises-bajos-numismatica/';
+export const NETHERLANDS_COINAGE_PATH_EN = '/en/collection/netherlands-numismatics/';
 
 export type NetherlandsCoinageChapterId = 'medieval' | 'ducado-comercial' | 'gulden-decimal' | 'ocupacion-euro';
 
@@ -271,8 +271,8 @@ export type NetherlandsCoin = {
 export const netherlandsCoins: NetherlandsCoin[] = [
   {
     id: 'ducado-utrecht-1761',
-    path: '/paises-bajos-numismatica/ducado-utrecht-1761/',
-    pathEn: '/en/netherlands-numismatica/ducado-utrecht-1761/',
+    path: '/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/',
+    pathEn: '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     year: '1761',
     mint: {
       es: 'Utrecht (TRA · Traiectum)',

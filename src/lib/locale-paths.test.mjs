@@ -14,7 +14,11 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/coleccion/polimero-mundial/', 'en'), '/en/collection/world-polymer/');
     assert.equal(localizePath('/coleccion/notafilia/', 'en'), '/en/collection/notaphily/');
     assert.equal(localizePath('/coleccion/espana/', 'en'), '/en/collection/spain/');
-    assert.equal(localizePath('/paises-bajos-numismatica/', 'en'), '/en/netherlands-numismatica/');
+    assert.equal(localizePath('/coleccion/paises-bajos-numismatica/', 'en'), '/en/collection/netherlands-numismatics/');
+    assert.equal(
+      localizePath('/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/', 'en'),
+      '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
+    );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
@@ -67,6 +71,10 @@ describe('locale path mapping', () => {
     assert.equal(redirects['/en/noticias/'], '/en/news/');
     assert.equal(redirects['/en/contacto/'], '/en/contact/');
     assert.equal(redirects['/en/coleccion/united-states/'], '/en/collection/united-states/');
+    assert.equal(
+      redirects['/en/coleccion/paises-bajos-numismatica/'],
+      '/en/collection/netherlands-numismatics/',
+    );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',

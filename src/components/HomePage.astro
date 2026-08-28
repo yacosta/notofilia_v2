@@ -10,7 +10,6 @@ import {
   news,
   NOTAFILIA_PATH,
   SERIES_PATH,
-  statsLine,
   type Locale,
 } from '../lib/site';
 import { cardImageSrc, heroSrcset } from '../lib/images';
@@ -23,10 +22,6 @@ const { locale } = Astro.props;
 const t = copy[locale];
 const featuredArticles = articles.slice(0, 4);
 const featuredNews = news.slice(0, 4);
-const heroAlt =
-  locale === 'en'
-    ? 'Close-up of a Guatemala 5-quetzal banknote with the quetzal bird, in a notaphily style'
-    : 'Primer plano de un billete de 5 quetzales de Guatemala, con el ave quetzal, estilo numismática y notafilia';
 ---
 
 <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
@@ -36,7 +31,7 @@ const heroAlt =
       src={cardImageSrc('/images/hero-slide.jpg')}
       srcset={heroSrcset('/images/hero-slide.jpg')}
       sizes="100vw"
-      alt={heroAlt}
+      alt={t.heroAlt}
       width="768"
       height="284"
       fetchpriority="high"
@@ -73,9 +68,6 @@ const heroAlt =
       <p class="mb-0 mt-4 max-w-[42rem] font-sans text-[17px]/7 text-[#d8d2cd]">
         {t.heroLead}
       </p>
-      <p class="mb-0 mt-4 font-sans text-[14px]/5 tracking-[0.06em] text-[#cbbf9d]">
-        {statsLine(locale)}
-      </p>
       <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
         <a
           href={localizePath(SERIES_PATH, locale)}
@@ -90,12 +82,6 @@ const heroAlt =
           {t.heroSecondary}
         </a>
       </div>
-    </div>
-  </section>
-
-  <section class="border-b border-line bg-panel" aria-label={t.statsLabel}>
-    <div class="mx-auto max-w-content px-[var(--page-gutter)] py-8 text-center">
-      <p class="m-0 font-sans text-[14px]/5 text-gold-light">{statsLine(locale)}</p>
     </div>
   </section>
 
@@ -269,7 +255,7 @@ const heroAlt =
 
   <section class="px-[var(--page-gutter)] py-[72px]" aria-labelledby="definitions-heading">
     <div class="mx-auto grid max-w-content gap-10 lg:grid-cols-2">
-      <h2 id="definitions-heading" class="sr-only">{locale === 'en' ? 'Definitions' : 'Definiciones'}</h2>
+      <h2 id="definitions-heading" class="sr-only">{t.definitions}</h2>
       <div>
         <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
           <a class="text-inherit no-underline hover:text-cream" href={localizePath('/glosario/numismatica/', locale)}>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import Breadcrumb from './Breadcrumb.astro';
+import { copy, localizePath, SITE_URL, type Locale } from '../lib/site';
 import { aboutCopy, aboutPath } from '../data/about';
 
 interface Props {
@@ -29,7 +30,7 @@ const jsonLd = {
       '@id': `${SITE_URL}/#yezid-acosta`,
       name: 'Yezid Acosta',
       url: new URL(pathname, SITE_URL).href,
-      jobTitle: locale === 'en' ? 'Collector and technologist' : 'Coleccionista y tecnólogo',
+      jobTitle: copy[locale].collectorJobTitle,
     },
   ],
 };
@@ -42,16 +43,13 @@ const jsonLd = {
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
-      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
-              {t.home}
-            </a>
-          </li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.nav}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
 
       <header class="mb-2">
         <h1 class="mb-6 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
@@ -64,58 +62,16 @@ const jsonLd = {
 
         <h2 id="sobre-mi">{t.aboutMe}</h2>
 
+        {t.bio.map((paragraph) => <p set:html={paragraph} />)}
         {
-          locale === 'es' ? (
-            <>
-              <p>
-                Soy <strong>Yezid Acosta</strong>. Colecciono billetes desde que tenía unos cinco años.
-              </p>
-              <p>
-                Me acuerdo exactamente de lo que me atrapó. Alguien me pasó un billete, y ahí impresa estaba la fecha de
-                mi cumpleaños. Me quedé asombrado — tenía en las manos algo que se había hecho cuando yo nací, algo que
-                llevaba en el mundo exactamente el mismo tiempo que yo. Súmale a eso un niño que ya amaba la historia, y
-                fue la combinación perfecta. Tantos años después sigo en esto, ahora sobre todo detrás de billetes
-                colombianos, incluyendo algunas piezas del siglo XIX de bancos que dejaron de existir hace más de cien
-                años — el Banco de Río Hacha, el Banco Hipotecario — además de monedas que se remontan aún más atrás.
-              </p>
-              <p>
-                Y esto es lo que me sigue moviendo: cada una de estas piezas fue dinero alguna vez. Alguien se lo ganó,
-                lo gastó, se preocupó por él. Pasó por mercados, bolsillos, guerras y malas economías, y de alguna manera
-                sobrevivió lo suficiente para llegar a mis manos. Esa es la parte que casi todo el mundo pasa por alto
-                cuando piensa en monedas y billetes: la historia. Notofilia es mi manera de compartirla, en español y en
-                inglés, una pieza a la vez.
-              </p>
-              <p>
-                ¿El resto de mi vida? Trabajo en tecnología. Soy esposo y papá de dos hermosos gemelos. Y disfruto de un
-                buen cigarro — tanto que tengo{' '}
-                <a href={brandHref}>{t.brandLabel}</a>.
-              </p>
-            </>
+          t.bioBrandAfter ? (
+            <p>
+              {t.bioBrandBefore}
+              <a href={brandHref}>{t.brandLabel}</a>
+              {t.bioBrandAfter}
+            </p>
           ) : (
-            <>
-              <p>
-                I’m <strong>Yezid Acosta</strong>. I’ve been collecting banknotes since I was about five years old.
-              </p>
-              <p>
-                I remember exactly what hooked me. Someone handed me a banknote, and printed right there on it was my
-                birthday. I stood there in awe — I was holding something that had been made when I was born, something
-                that had been out in the world exactly as long as I had. Add that to a kid who already loved history, and
-                it was a perfect match. All these years later I’m still at it, mostly chasing Colombian banknotes now,
-                including some 19th-century pieces from banks that stopped existing more than a century ago — the Banco
-                de Río Hacha, the Banco Hipotecario — plus coins that go back even further.
-              </p>
-              <p>
-                Here’s the thing that keeps me going: every one of these pieces was money once. Somebody earned it, spent
-                it, worried about it. It passed through markets and pockets and wars and bad economies, and somehow it
-                survived long enough to end up in my hands. That’s the part most people miss when they think about coins
-                and banknotes — the history. Notofilia is my way of sharing it, in Spanish and in English, one piece at a
-                time.
-              </p>
-              <p>
-                The rest of my life? I work in technology, and I once wrote a children’s book. But some part of me is
-                still that five-year-old, holding a banknote up to the light.
-              </p>
-            </>
+            <p>{t.bioBrandBefore}</p>
           )
         }
 

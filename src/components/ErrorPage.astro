@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { copy, localizePath, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = copy[locale];
+const pathname = locale === 'en' ? '/en/404/' : '/404';
+---
+
+<Layout title={`${t.notFoundTitle} · Notofilia`} description={t.notFoundBody} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="mx-auto flex min-h-[60vh] max-w-[720px] flex-col justify-center px-[var(--page-gutter)] py-24 outline-none">
+    <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">{t.notFoundTitle}</h1>
+    <p class="m-0 text-[17px]/7 text-muted">{t.notFoundBody}</p>
+    <p class="mt-8">
+      <a
+        href={localizePath('/', locale)}
+        class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+      >
+        {t.backHome}
+      </a>
+    </p>
+  </main>
+</Layout>

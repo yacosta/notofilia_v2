@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { cfImage, imageSrcset } from '../lib/images';
+import { contactClientCopy } from '../i18n/contact';
 import {
   CONTACT_TURNSTILE_SITE_KEY,
   WEB3FORMS_ACCESS_KEY,
@@ -44,41 +47,27 @@ const jsonLd = {
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
     <article class="mx-auto max-w-[75rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
-      <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
-        <ol class="m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
-          <li>
-            <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/', locale)}>
-              {t.home}
-            </a>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li class="inline-flex min-h-11 items-center text-cream-dim" aria-current="page">{t.nav}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
 
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div class="flex min-h-[280px] items-center justify-center">
-          <picture>
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.webp 360w, /uploads/doblones-coloniales-oro.webp 511w"
-              type="image/webp"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <source
-              srcset="/uploads/doblones-coloniales-oro-360.png 360w, /uploads/doblones-coloniales-oro.png 511w"
-              type="image/png"
-              sizes="(max-width: 700px) 70vw, 360px"
-            />
-            <img
-              src="/uploads/doblones-coloniales-oro.png"
-              alt={t.imageAlt}
-              width="511"
-              height="511"
-              class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
+          <img
+            src={cfImage('/uploads/doblones-coloniales-oro.png', { width: 511 })}
+            srcset={imageSrcset('/uploads/doblones-coloniales-oro.png', [400, 800])}
+            sizes="(max-width: 700px) 70vw, 360px"
+            alt={t.imageAlt}
+            width="511"
+            height="511"
+            class="block h-auto w-full max-w-[360px] drop-shadow-[0_18px_30px_rgba(0,0,0,0.55)]"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div data-contact-root>
@@ -184,13 +173,22 @@ const jsonLd = {
   </main>
 
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>
-  <script is:inline>
+  <script define:vars={{ contactClientCopy }} is:inline>
     (function () {
       const root = document.querySelector('[data-contact-root]');
       const form = root && root.querySelector('[data-contact-form]');
       const status = root && root.querySelector('[data-contact-status]');
       const submit = root && root.querySelector('[data-contact-submit]');
       if (!form || !status || !submit) return;
+
+      function langCopy() {
+        const lang =
+          document.documentElement.getAttribute('data-page-locale') === 'en' ||
+          document.documentElement.lang === 'en'
+            ? 'en'
+            : 'es';
+        return contactClientCopy[lang];
+      }
 
       (function prefillFromQuery() {
         const params = new URLSearchParams(window.location.search);
@@ -202,50 +200,18 @@ const jsonLd = {
         if (email && emailInput && !emailInput.value) emailInput.value = email;
         const message = form.querySelector('#cf-message');
         if (!message || message.value.trim()) return;
-        const isEn = document.documentElement.lang === 'en';
+        const current = langCopy();
         const lines = [];
         if (motivo === 'error') {
-          lines.push(
-            isEn
-              ? 'I want to report an error or add information.'
-              : 'Quiero reportar un error o aportar información.',
-          );
+          lines.push(current.reportLead);
         }
-        if (ficha) lines.push((isEn ? 'Record: ' : 'Ficha: ') + ficha);
+        if (ficha) lines.push(current.recordLabel + ficha);
         if (pageUrl) lines.push('URL: ' + pageUrl);
         if (lines.length) {
-          lines.push(
-            '',
-            isEn ? 'Describe the error or the additional information:' : 'Describa el error o la información adicional:',
-            '',
-          );
+          lines.push('', current.describe, '');
           message.value = lines.join('\n');
         }
       })();
-
-      const copy = {
-        es: {
-          sending: 'Enviando…',
-          success: '¡Gracias! Tu mensaje fue enviado correctamente.',
-          error: 'Hubo un error al enviar el formulario. Inténtalo de nuevo.',
-          turnstile: 'Por favor completa la verificación de seguridad.',
-        },
-        en: {
-          sending: 'Sending…',
-          success: 'Thank you! Your message was sent.',
-          error: 'There was an error sending the form. Please try again.',
-          turnstile: 'Please complete the security check.',
-        },
-      };
-
-      function langCopy() {
-        const lang =
-          document.documentElement.getAttribute('data-page-locale') === 'en' ||
-          document.documentElement.lang === 'en'
-            ? 'en'
-            : 'es';
-        return copy[lang];
-      }
 
       function showStatus(kind, message) {
         status.hidden = false;
