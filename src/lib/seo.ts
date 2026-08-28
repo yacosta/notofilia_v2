@@ -1,3 +1,4 @@
+import { articlePath, blogArticles } from '../data/editorial';
 import { collectionStats } from '../data/holdings';
 import { SITE_URL, type Locale } from './site-url';
 
@@ -123,5 +124,15 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 - [Editorial policy](${SITE_URL}/editorial/): ${SITE_URL}/en/editorial/
 - [About / Acerca de](${SITE_URL}/acerca-de/): ${SITE_URL}/en/about/
 - [Contact / Contacto](${SITE_URL}/contacto/): ${SITE_URL}/en/contact/
+
+## Guides / Guías
+
+${blogArticles
+  .map((article) => {
+    const es = `${SITE_URL}${articlePath('blog', article.slug, 'es')}`;
+    const en = `${SITE_URL}${articlePath('blog', article.slug, 'en')}`;
+    return `- [${article.title.es} / ${article.title.en}](${es}): ${en}`;
+  })
+  .join('\n')}
 `;
 }

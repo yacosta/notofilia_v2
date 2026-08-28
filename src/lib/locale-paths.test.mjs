@@ -59,12 +59,24 @@ describe('locale path mapping', () => {
       localizePath('/blog/como-empezar-coleccion-billetes/', 'en'),
       '/en/blog/how-to-start-a-banknote-collection/',
     );
+    assert.equal(
+      localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
+      '/en/blog/best-coin-and-banknote-grading-companies/',
+    );
+    assert.equal(
+      otherLocalePath('/en/blog/best-coin-and-banknote-grading-companies/', 'en'),
+      '/blog/mejores-empresas-certificacion-monedas-billetes/',
+    );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
     assert.equal(englishContentSlug('noticias'), 'news');
   });
 
   it('redirects old English Spanish slugs', () => {
     const redirects = englishRedirects();
+    assert.equal(
+      redirects['/en/blog/mejores-empresas-certificacion-monedas-billetes/'],
+      '/en/blog/best-coin-and-banknote-grading-companies/',
+    );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');
     assert.equal(redirects['/en/glosario/'], '/en/glossary/');
