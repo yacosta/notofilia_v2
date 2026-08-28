@@ -74,6 +74,8 @@ export const additions: Holding[] = [
   { id: 'us-frn-1934-10-chicago-g30986728', kind: 'banknote', country: 'US' },
   { id: 'co-1883-5-pesos-rio-hacha-s819p1', kind: 'banknote', country: 'CO' },
   { id: 'co-1883-5-pesos-rio-hacha-s819p2', kind: 'banknote', country: 'CO' },
+  { id: 'co-1881-5-pesos-banco-hipotecario-s511p1', kind: 'banknote', country: 'CO' },
+  { id: 'co-1881-5-pesos-banco-hipotecario-s511p2', kind: 'banknote', country: 'CO' },
   { id: 'co-1943-10-pesos-oro-n6813011', kind: 'banknote', country: 'CO' },
 ];
 
@@ -92,6 +94,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-mpc-692-20-m98' },
   { id: 'us-frn-1934-10-chicago-fr2004g' },
   { id: 'co-1883-rio-hacha-5-pesos-s819p' },
+  { id: 'co-1881-banco-hipotecario-5-pesos-s511p' },
   { id: 'co-1943-10-pesos-oro-p389b' },
 ];
 

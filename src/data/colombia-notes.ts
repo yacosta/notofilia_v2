@@ -3,7 +3,7 @@ import type { ColombiaChapterId } from './colombia';
 import { COLOMBIA_PATH, colombiaChapters } from './colombia';
 import { localizePath } from '../lib/locale-paths';
 
-export type ColombiaNoteId = '5-pesos-rio-hacha-1883' | '10-pesos-oro-1943';
+export type ColombiaNoteId = '5-pesos-banco-hipotecario-1881' | '5-pesos-rio-hacha-1883' | '10-pesos-oro-1943';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -37,6 +37,91 @@ export type ColombiaNote = {
 };
 
 export const colombiaNotes: ColombiaNote[] = [
+  {
+    id: '5-pesos-banco-hipotecario-1881',
+    chapterId: 'banca-libre',
+    path: `${COLOMBIA_PATH}5-pesos-banco-hipotecario-1881/`,
+    pick: 'P# S511p1 / S511p2',
+    serial: 'Y 00000',
+    signatures: {
+      es: 'Sin firmas (pruebas de imprenta)',
+      en: 'Unsigned (printer’s proofs)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Montaje de imprenta fechado febrero de 1883; serie Y. Fecha impresa en el anverso: Bogotá, 1.º de octubre de 1881. No se publica una tirada de circulación.',
+      en: 'American Bank Note Company, New York. Printer’s mount dated February 1883; Series Y. Date printed on the face: Bogotá, 1 October 1881. No circulating printage is published.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-composite.jpg',
+      front: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
+      back: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-back.jpg',
+    },
+    title: {
+      es: '5 pesos · Banco Hipotecario · 1881',
+      en: '5 pesos · Banco Hipotecario · 1881',
+    },
+    kicker: {
+      es: 'Colombia · Banca libre · Pruebas ABNC',
+      en: 'Colombia · Free banking · ABNC proofs',
+    },
+    lead: {
+      es: 'Par de pruebas de la American Bank Note Company: anverso S511p1 y reverso S511p2, ambos encapsulados PMG 61 Uncirculated. Serie Y, serial 00000.',
+      en: 'A pair of American Bank Note Company proofs: face S511p1 and back S511p2, both slabbed PMG 61 Uncirculated. Series Y, serial 00000.',
+    },
+    description: {
+      es: 'El Banco Hipotecario se estableció en Bogotá el 1.º de octubre de 1881 —la misma fecha que lleva el anverso—. EL TIEMPO sitúa ahí la fundación y una vigencia de diez años desde el registro de las escrituras. En junio de 1882 el Poder Ejecutivo del Estado aprobó los estatutos y lo declaró en posesión de las concesiones de las leyes de 14 de enero de 1873 y 17 de noviembre de 1875 a los bancos hipotecarios; el texto se publicó en julio de 1882. El Standard Catalog of World Paper Money — Specialized Issues, vía el índice de Numismondo, numera la serie S511–S515: cinco a cien pesos de 1881. Esta ficha es el cinco pesos. El anverso, en negro sobre fondo ocre, promete pagar al portador a la vista cinco pesos; a la izquierda, una alegoría agrícola sentada junto a gavillas; a la derecha, un labrador con arado y caballos; arriba, un óvalo con campo y caserío; abajo, un 5 en medallón. El serial rojo es 00000; tres perforaciones de cancelación cortan el margen inferior. El montaje de Nueva York lleva «February 1883» y, en vertical, «Serie Y». Las casillas del gerente y del presidente del consejo están en blanco. El reverso, en sepia, es un marco de guilloches con «EL BANCO» y «HIPOTECARIO» y las cifras 5 a ambos flancos. No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. No debe confundirse con el Banco Hipotecario de la Mutualidad (S516 y siguientes) ni con el del Pacífico. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',
+      en: 'The Banco Hipotecario was established in Bogotá on 1 October 1881 — the same date printed on the face. EL TIEMPO places the founding there, with a ten-year term from the registration of the deeds. In June 1882 the State Executive approved the statutes and declared the bank in possession of the concessions that the laws of 14 January 1873 and 17 November 1875 granted to mortgage banks; the text was published in July 1882. The Standard Catalog of World Paper Money — Specialized Issues, through Numismondo’s index, numbers the series S511–S515: five to one hundred pesos of 1881. This record is the five-peso. The face, black on an ochre underprint, promises to pay the bearer on sight five pesos; at left, a seated agricultural allegory beside sheaves; at right, a ploughman with horses; above, an oval of field and homestead; below, a 5 in a medallion. The red serial is 00000; three cancellation punches cut the lower margin. The New York mount reads “February 1883” and, vertically, “Serie Y.” The spaces for the manager and the president of the board are blank. The sepia back is a guilloche frame with “EL BANCO” and “HIPOTECARIO” and the figures 5 at each flank. There are no signatures: these are plate proofs, not a note placed in circulation. It should not be confused with the Banco Hipotecario de la Mutualidad (S516 and later) or with the Pacífico bank. This record gathers the collection’s two PMG holders — face and back, separately slabbed.',
+    },
+    frontCaption: {
+      es: 'Prueba de anverso, Pick S511p1, encapsulada PMG 61 Uncirculated: alegorías agrícolas, serial Y 00000 y montaje fechado febrero de 1883.',
+      en: 'Face proof, Pick S511p1, slabbed PMG 61 Uncirculated: agricultural allegories, serial Y 00000, and a mount dated February 1883.',
+    },
+    backCaption: {
+      es: 'Prueba de reverso, Pick S511p2, encapsulada PMG 61 Uncirculated: marco ornamental en sepia, cifras 5 y leyendas EL BANCO / HIPOTECARIO.',
+      en: 'Back proof, Pick S511p2, slabbed PMG 61 Uncirculated: a sepia ornamental frame, the figures 5, and the legends EL BANCO / HIPOTECARIO.',
+    },
+    scarcity: {
+      es: 'Numismondo registra S511–S515 como la serie de 1881 del Banco Hipotecario y marca las imágenes como pendientes. El mercado de este banco bogotano ve sobre todo planchas de Nueva York: pruebas montadas, perforadas y con seriales de ceros. Esta ficha no inventa una tirada de circulación.',
+      en: 'Numismondo records S511–S515 as the 1881 Banco Hipotecario series and flags the images as needed. The market for this Bogotá bank mostly sees New York plates: mounted, punch-cancelled proofs with zero serials. This record does not invent a circulating printage.',
+    },
+    population: {
+      es: 'Las dos piezas de esta ficha están encapsuladas por PMG como 61 Uncirculated: el anverso S511p1 y el reverso S511p2. No se ha verificado de forma independiente un censo de población para estos números de cápsula.',
+      en: 'The two pieces in this record are slabbed by PMG as 61 Uncirculated: the face S511p1 and the back S511p2. A population census for these holder numbers has not been independently verified.',
+    },
+    grade: {
+      es: 'Anverso PMG 61 Uncirculated · Reverso PMG 61 Uncirculated',
+      en: 'Face PMG 61 Uncirculated · Back PMG 61 Uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.numismondo.net/pm/col/',
+        es: 'Numismondo — Índice de papel moneda de Colombia, S511–S515',
+        en: 'Numismondo — Colombia paper-money index, S511–S515',
+        note: {
+          es: 'Banco Hipotecario, 5 a 100 pesos, 1881; Specialized Issues P.S511–P.S515.',
+          en: 'Banco Hipotecario, 5 to 100 pesos, 1881; Specialized Issues P.S511–P.S515.',
+        },
+      },
+      {
+        href: 'https://www.eltiempo.com/cultura/musica-y-libros/coleccion-de-billetes-el-tiempo-entrega-enero-29-de-2020-456432',
+        es: 'EL TIEMPO — Historia del Banco Hipotecario (2020)',
+        en: 'EL TIEMPO — History of the Banco Hipotecario (2020)',
+        note: {
+          es: 'Fundación en Bogotá el 1.º de octubre de 1881; vigencia de diez años desde el registro de las escrituras.',
+          en: 'Founded in Bogotá on 1 October 1881; a ten-year term from the registration of the deeds.',
+        },
+      },
+      {
+        href: 'https://www.cervantesvirtual.com/obra/banco-hipotecario-julio-de-1882-851759/',
+        es: 'Cervantes Virtual — Banco hipotecario, julio de 1882',
+        en: 'Cervantes Virtual — Banco hipotecario, July 1882',
+        note: {
+          es: 'Resolución del 19 de junio de 1882: estatutos aprobados y concesiones de las leyes de 1873 y 1875.',
+          en: 'Resolution of 19 June 1882: statutes approved and the concessions of the 1873 and 1875 laws.',
+        },
+      },
+    ],
+  },
   {
     id: '5-pesos-rio-hacha-1883',
     chapterId: 'banca-libre',
