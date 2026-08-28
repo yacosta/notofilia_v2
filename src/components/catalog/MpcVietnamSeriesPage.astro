@@ -24,7 +24,6 @@ const hero = {
   width: 2128,
   height: 912,
 };
-const catalogNotes = mpcVietnamChapters.flatMap((chapter) => notesForChapter(chapter.id));
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
@@ -96,49 +95,6 @@ const catalogNotes = mpcVietnamChapters.flatMap((chapter) => notesForChapter(cha
           {t.usLink}
         </a>
       </p>
-
-      <section class="mt-16" aria-labelledby="holdings-heading">
-        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.holdingsTitle}
-        </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4 sm:gap-4"
-          aria-label={
-            locale === 'en'
-              ? 'Notes lined up by series, then by denomination from lowest to highest'
-              : 'Billetes alineados por serie y, en cada serie, de menor a mayor denominación'
-          }
-        >
-          {
-            catalogNotes.map((note) => (
-              <li class="min-w-0">
-                <a
-                  href={notePath(note, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <img
-                    src={note.images.front}
-                    alt={note.frontCaption[locale]}
-                    width={note.images.width}
-                    height={note.images.height}
-                    class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    decoding="async"
-                  />
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {note.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
-      </section>
 
       <div class="mt-16 space-y-12">
         {
