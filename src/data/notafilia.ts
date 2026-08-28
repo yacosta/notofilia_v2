@@ -31,8 +31,8 @@ export const notafiliaCountries: NotafiliaCountry[] = [
     years: { es: 'desde 1690', en: 'from 1690' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Colonial, obsoleto, United States Notes, oro, plata, Reserva Federal y pop art.',
-      en: 'Colonial, obsolete, United States Notes, gold, silver, the Federal Reserve, and pop art.',
+      es: 'Colonial, obsoleto, Estados Confederados, United States Notes, oro, plata, Reserva Federal y pop art.',
+      en: 'Colonial, obsolete, Confederate States, United States Notes, gold, silver, the Federal Reserve, and pop art.',
     },
   },
   {

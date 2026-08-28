@@ -9,6 +9,7 @@ export const USA_MPC_PATH_EN = '/collection/united-states/mpc-vietnam/';
 export type UnitedStatesChapterId =
   | 'us-colonial'
   | 'us-obsoleto'
+  | 'us-confederado'
   | 'us-notes'
   | 'us-gold'
   | 'us-silver'
@@ -54,6 +55,22 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
     body: {
       es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. En esta colección caben bancos como el Citizens Bank of Louisiana, el State Bank of New Brunswick, el City Bank of New Haven y el Hagerstown Bank de Maryland.',
       en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. Banks such as the Citizens Bank of Louisiana, the State Bank of New Brunswick, the City Bank of New Haven, and the Hagerstown Bank of Maryland belong here.',
+    },
+  },
+  {
+    id: 'us-confederado',
+    years: { es: '1861–1864', en: '1861–1864' },
+    title: {
+      es: 'Estados Confederados',
+      en: 'Confederate States',
+    },
+    lead: {
+      es: 'Graybacks del Tesoro de Richmond: siete series, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
+      en: 'Treasury graybacks from Richmond: seven series, unbacked by specie, through the act of 17 February 1864.',
+    },
+    body: {
+      es: 'El dólar de los Estados Confederados —grayback, para distinguirlo del greenback federal— se emitió desde abril de 1861 como letra de crédito: una promesa de pago tras un tratado de paz, no un canje en oro. Wikipedia resume siete series autorizadas por el Congreso confederado, por un total de 1.700 millones de dólares, y 72 tipos Criswell. Keatinge & Ball, primero en Richmond y luego en Columbia, Carolina del Sur, grabó la mayor parte de la última emisión. La ley del 17 de febrero de 1864, la séptima, autorizó 200 millones en papel pagadero dos años después de la paz e intentó retirar emisiones anteriores. Al terminar la guerra el papel perdió todo valor de curso. En esta vitrina abre el 20 dólares T-67 de esa fecha, serial 74523.',
+      en: 'The Confederate States dollar — a grayback, to distinguish it from the federal greenback — was issued from April 1861 as a bill of credit: a promise to pay after a treaty of peace, not a redemption in gold. Wikipedia summarizes seven series authorized by the Confederate Congress, totaling $1.7 billion, and 72 Criswell types. Keatinge & Ball, first in Richmond and later in Columbia, South Carolina, engraved most of the last issue. The act of 17 February 1864, the seventh series, authorized $200 million in paper payable two years after peace and tried to retire earlier issues. When the war ended the paper lost all value as currency. This case opens with the T-67 $20 of that date, serial 74523.',
     },
   },
   {
@@ -189,22 +206,31 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bank Note Museum — Estados Unidos',
     en: 'Bank Note Museum — United States',
   },
+  {
+    href: 'http://www.banknote.ws/COLLECTION/countries/AME/CSA/CSA.htm',
+    es: 'Bank Note Museum — Estados Confederados de América',
+    en: 'Bank Note Museum — Confederate States of America',
+    note: {
+      es: 'Emisión de febrero de 1864: Pick 64–73, incluido el 20 dólares P-69.',
+      en: 'February 1864 issue: Pick 64–73, including the $20 P-69.',
+    },
+  },
 ];
 
 export const seriesCopy = {
   es: {
-    metaTitle: 'Estados Unidos · Federal, colonial y obsoleto | Notofilia',
+    metaTitle: 'Estados Unidos · Federal, colonial, confederado y obsoleto | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, United States Notes, certificados de oro y plata, Reserva Federal y pop art.',
+      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, Estados Confederados, United States Notes, certificados de oro y plata, Reserva Federal y pop art.',
     kicker: 'Estados Unidos · Notafilia',
     title: 'Del papel colonial a la Reserva Federal',
     heroAlt:
       'Mapa vintage en relieve 3D de Estados Unidos sobre pergamino, con las Rocosas, el Golden Gate, la Estatua de la Libertad, el Capitolio, un pasaporte y el título Estados Unidos',
     intro: [
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
-      'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal: United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878).',
+      'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a) y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 20 dólares confederado T-67 de 1864, serial 74523, y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -212,18 +238,18 @@ export const seriesCopy = {
     sourcesTitle: 'Fuentes',
   },
   en: {
-    metaTitle: 'United States · Federal, colonial, and obsolete | Notofilia',
+    metaTitle: 'United States · Federal, colonial, Confederate, and obsolete | Notofilia',
     metaDescription:
-      'Catalog of United States paper money: colonial issues, obsolete notes, United States Notes, gold and silver certificates, the Federal Reserve, and pop art.',
+      'Catalog of United States paper money: colonial issues, obsolete notes, Confederate States, United States Notes, gold and silver certificates, the Federal Reserve, and pop art.',
     kicker: 'United States · Notaphily',
     title: 'From colonial paper to the Federal Reserve',
     heroAlt:
       'Vintage 3D relief map of the United States on parchment, with the Rockies, the Golden Gate, the Statue of Liberty, the Capitol, a passport, and the title United States',
     intro: [
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
-      'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time: United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878).',
+      'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a) and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-67 $20, serial 74523, and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -236,7 +262,10 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_PATH, locale);
 }
 
-export type UnitedStatesNoteId = '1-dolar-state-bank-new-brunswick' | '10-dolares-serie-1934-chicago';
+export type UnitedStatesNoteId =
+  | '1-dolar-state-bank-new-brunswick'
+  | '20-dolares-confederados-1864'
+  | '10-dolares-serie-1934-chicago';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -265,6 +294,7 @@ export type UnitedStatesNote = {
   lead: LocalizedText;
   description: LocalizedText;
   history?: LocalizedText;
+  historyHeading?: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
   scarcity: LocalizedText;
@@ -410,6 +440,111 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Cierre el 31 de marzo de 1877 a la una de la tarde; los oficiales se negaron a dar un estado de cuentas.',
           en: 'Closed on 31 March 1877 at one in the afternoon; the officers refused to issue a statement.',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-dolares-confederados-1864',
+    chapterId: 'us-confederado',
+    path: '/coleccion/estados-unidos/20-dolares-confederados-1864/',
+    pathEn: '/collection/united-states/20-dollars-confederate-1864/',
+    pick: 'P#69 · T-67 · N#202478',
+    serial: '74523 · A',
+    signatures: {
+      es: 'Amanuenses manuscritos «for Register» y «for Treasurer»',
+      en: 'Manuscript clerks “for Register” and “for Treasurer”',
+    },
+    printed: {
+      es: 'Keatinge & Ball, Columbia, S.C. Wikipedia cifra el tipo T-67 en unos 4.150.000 ejemplares. La ley del 17 de febrero de 1864 autorizó 200 millones de dólares en todas las denominaciones.',
+      en: 'Keatinge & Ball, Columbia, S.C. Wikipedia puts T-67 at about 4,150,000 notes. The act of 17 February 1864 authorized $200 million across all denominations.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/csa-1864-20-composite.jpg',
+      front: '/images/catalog/estados-unidos/csa-1864-20-front.jpg',
+      back: '/images/catalog/estados-unidos/csa-1864-20-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '20 dólares · Estados Confederados · 1864',
+      en: '$20 · Confederate States · 1864',
+    },
+    kicker: {
+      es: 'Estados Unidos · Estados Confederados',
+      en: 'United States · Confederate States',
+    },
+    lead: {
+      es: 'Anverso con el Capitolio de Tennessee y Alexander H. Stephens; reverso azul con TWENTY. Richmond, 17 de febrero de 1864. Serial 74523, plancha A.',
+      en: 'Face with the Tennessee State Capitol and Alexander H. Stephens; blue back with TWENTY. Richmond, 17 February 1864. Serial 74523, plate A.',
+    },
+    description: {
+      es: 'El 20 dólares del 17 de febrero de 1864 (Pick 69, Criswell y Fricke T-67, Numista N#202478) es el veinte de la última emisión del Tesoro de los Estados Confederados. El anverso, en negro sobre papel crema, lleva al centro el Capitolio de Tennessee en Nashville —columnata y cúpula— y, a la derecha, el retrato oval de Alexander H. Stephens, vicepresidente de la Confederación. Los medallones superiores leen la cláusula de redención: «TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE» y «THE CONFEDERATE STATES AND THE UNITED STATES OF AMERICA». Bajo la viñeta, «THE CONFEDERATE STATES OF AMERICA» promete pagar TWENTY DOLLARS al portador a la vista; la fecha impresa es «Richmond, February 17th 1864». El flanco izquierdo lleva TWENTY en vertical; arriba a la derecha, un 20 en marco festoneado. El serial manuscrito 74523 se repite a ambos lados; la letra de plancha es A. Las firmas son las de los amanuenses «for Register» y «for Treasurer». El pie de imprenta es Keatinge & Ball, Columbia, S.C. El reverso, en azul, muestra TWENTY sobre un campo de guilloches y un 20 en cada esquina. En el margen superior derecho de este ejemplar hay una anotación manuscrita «Joseph». La pieza de la colección, circulada y sin encapsular, se presenta en funda.',
+      en: 'The $20 of 17 February 1864 (Pick 69, Criswell and Fricke T-67, Numista N#202478) is the twenty of the Confederate Treasury’s last issue. The black face on cream paper carries the Tennessee State Capitol in Nashville — colonnade and cupola — at center and, at right, an oval portrait of Alexander H. Stephens, vice president of the Confederacy. The upper medallions read the redemption clause: “TWO YEARS AFTER THE RATIFICATION OF A TREATY OF PEACE” and “THE CONFEDERATE STATES AND THE UNITED STATES OF AMERICA.” Beneath the vignette, “THE CONFEDERATE STATES OF AMERICA” promises to pay TWENTY DOLLARS to the bearer on demand; the printed date is “Richmond, February 17th 1864.” TWENTY runs vertically at left; a scalloped 20 sits at upper right. Manuscript serial 74523 is written twice; the plate letter is A. The signatures are those of clerks “for Register” and “for Treasurer.” The imprint is Keatinge & Ball, Columbia, S.C. The blue back shows TWENTY on a guilloche field and a 20 in each corner. The upper-right margin of this piece carries a manuscript annotation “Joseph.” The collection note, circulated and unslabbed, is shown in a sleeve.',
+    },
+    history: {
+      es: 'La ley del 17 de febrero de 1864 —séptima y última serie del dólar confederado— autorizó 200 millones de dólares en papel pagadero dos años después de un tratado de paz e intentó retirar emisiones anteriores. Wikipedia resume las siete series desde 1861 (1.700 millones en total) y 72 tipos Criswell; sitúa el grabado de T-67 en Keatinge & Ball, de Columbia, Carolina del Sur. Edward Keatinge había grabado retratos para la Southern Bank Note Company; la casa se trasladó de Richmond a Columbia en 1862. El grayback no tenía respaldo metálico: era una letra de crédito sobre la independencia del Sur. El Capitolio de Nashville, viñeta central de este veinte, había caído en manos de la Unión en febrero de 1862. Las firmas manuscritas de escribientes —el Tesoro llegó a contratar hasta doscientos por cada cargo— eran la norma en los enteros; solo el medio dólar llevó firmas impresas. Tras 1865 el papel perdió todo valor de curso.',
+      en: 'The act of 17 February 1864 — the seventh and last series of the Confederate dollar — authorized $200 million in paper payable two years after a treaty of peace and tried to retire earlier issues. Wikipedia summarizes the seven series from 1861 ($1.7 billion in all) and 72 Criswell types; it places the engraving of T-67 with Keatinge & Ball of Columbia, South Carolina. Edward Keatinge had engraved portraits for the Southern Bank Note Company; the firm moved from Richmond to Columbia in 1862. The grayback had no metallic backing: it was a bill of credit on Southern independence. The Nashville Capitol, the central vignette of this twenty, had fallen to the Union in February 1862. Manuscript signatures by clerks — the Treasury eventually hired as many as two hundred for each office — were the rule on whole-dollar notes; only the 50-cent issue carried printed signatures. After 1865 the paper lost all value as currency.',
+    },
+    historyHeading: {
+      es: 'La emisión',
+      en: 'The issue',
+    },
+    frontCaption: {
+      es: 'Anverso del 20 dólares confederado, T-67, 17 de febrero de 1864, serial 74523, plancha A: Capitolio de Tennessee y Stephens.',
+      en: 'Face of the Confederate $20, T-67, 17 February 1864, serial 74523, plate A: the Tennessee Capitol and Stephens.',
+    },
+    backCaption: {
+      es: 'Reverso azul del 20 dólares confederado T-67: TWENTY sobre guilloches y 20 en las cuatro esquinas. Anotación manuscrita «Joseph».',
+      en: 'Blue back of the Confederate T-67 $20: TWENTY on guilloches and 20 in the four corners. Manuscript annotation “Joseph.”',
+    },
+    scarcity: {
+      es: 'Wikipedia cifra T-67 en unos 4.150.000 ejemplares. Es el veinte más común de la Confederación y, a menudo, el primer grayback de una colección de tipos. El Bank Note Museum lo numera P-69, sin separar las series impresas ni las letras de plancha. El mercado trata el tipo circulado como frecuente; las claves están en los estados altos, los márgenes completos y la ausencia de cortes de cancelación. Esta ficha no inventa una tirada por serie ni por letra.',
+      en: 'Wikipedia puts T-67 at about 4,150,000 notes. It is the most common Confederate twenty and often a collector’s first grayback in a type set. The Bank Note Museum numbers it P-69, without splitting printed series or plate letters. The market treats circulated examples as common; the keys are high grades, full margins, and the absence of cut cancels. This record does not invent a printage by series or letter.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 74523. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 74523 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/CSA/CSA0069.htm',
+        es: 'Bank Note Museum — P-69, 20 dólares, 17 de febrero de 1864',
+        en: 'Bank Note Museum — P-69, $20, 17 February 1864',
+        note: {
+          es: 'Capitolio de Nashville y Alexander H. Stephens; Tesoro de los Estados Confederados.',
+          en: 'Nashville Capitol and Alexander H. Stephens; Treasury of the Confederate States.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202478.html',
+        es: 'Numista — 20 Dollars, Confederate States (N#202478)',
+        en: 'Numista — 20 Dollars, Confederate States (N#202478)',
+        note: {
+          es: 'P#69; Fricke T.67; serie de 1864; 177 × 76 mm; desmonetizado.',
+          en: 'P#69; Fricke T.67; Series of 1864; 177 × 76 mm; demonetized.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Confederate_States_dollar',
+        es: 'Wikipedia — Confederate States dollar',
+        en: 'Wikipedia — Confederate States dollar',
+        note: {
+          es: 'Ley del 17 de febrero de 1864: 200 millones; T-67, Keatinge & Ball, unos 4.150.000; firmas de escribientes.',
+          en: 'Act of 17 February 1864: $200 million; T-67, Keatinge & Ball, about 4,150,000; clerk signatures.',
+        },
+      },
+      {
+        href: 'https://nmaahc.si.edu/object/nmaahc_2017.108.9.16',
+        es: 'Smithsonian NMAAHC — Confederate States of America twenty dollar bill',
+        en: 'Smithsonian NMAAHC — Confederate States of America twenty dollar bill',
+        note: {
+          es: 'Descripción del anverso: Capitolio de Tennessee, cláusula de paz a dos años, Keatinge & Ball; reverso azul.',
+          en: 'Face description: Tennessee Capitol, two-year peace clause, Keatinge & Ball; blue back.',
         },
       },
     ],
