@@ -1,0 +1,11 @@
+{
+  "name": "Notofilia v2",
+  "install": "npm ci && npx wrangler d1 migrations apply comments_db --local && { [ -f .dev.vars ] || printf 'TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA\\n' > .dev.vars; }",
+  "terminals": [
+    {
+      "name": "astro-dev",
+      "command": "npm run dev -- --host 0.0.0.0 --port 4321"
+    }
+  ],
+  "ports": [{ "name": "astro dev", "port": 4321 }]
+}
