@@ -1,5 +1,3 @@
-import { localizePath } from '../lib/locale-paths';
-
 export type AboutLocale = 'es' | 'en';
 
 export const ABOUT_PATH = '/acerca-de/';
@@ -91,7 +89,7 @@ export const aboutCopy = {
 } as const;
 
 export function aboutPath(locale: AboutLocale): string {
-  return localizePath(ABOUT_PATH, locale);
+  return locale === 'en' ? `/en${ABOUT_PATH_EN}` : ABOUT_PATH;
 }
 
 export const aboutDedicatedSlugs = [
