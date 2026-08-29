@@ -8,8 +8,10 @@ import { seriesPath, seriesSources } from '../../data/colombia';
 import {
   notePageCopy,
   notePath,
+  notePieces,
   noteSeriesLabel,
   type ColombiaNote,
+  type ColombiaNotePiece,
 } from '../../data/colombia-notes';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
@@ -22,7 +24,13 @@ interface Props {
 const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const pathname = notePath(note, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const pieces = notePieces(note);
+const multi = pieces.length > 1;
+const factsTag = multi ? 'h3' : 'h2';
+const pieceSources = pieces.flatMap((piece) => piece.sources);
+const sources = [...pieceSources, ...seriesSources].filter(
+  (source, index, list) => list.findIndex((entry) => entry.href === source.href) === index,
+);
 const hero = note.hero;
 const heroAlt = note.heroAlt?.[locale];
 if (hero && !heroAlt) {
@@ -37,6 +45,10 @@ const jsonLd = visualArtworkJsonLd({
   locale,
   artform: 'Banknote',
 });
+
+function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
+  return `${piece.id}-${slot}`;
+}
 ---
 
 <Layout
@@ -88,94 +100,115 @@ const jsonLd = visualArtworkJsonLd({
       }
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
-      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
-        <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-          {t.factsHeading}
-        </h2>
-        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-          <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.pick}</dd>
-          </div>
-          <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.serial}</dd>
-          </div>
-          <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.signatures[locale]}</dd>
-          </div>
-          <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.grade[locale]}</dd>
-          </div>
-          <div class="sm:col-span-2">
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.printed[locale]}</dd>
-          </div>
-        </dl>
-      </section>
-
-      <div class="grid gap-10 lg:grid-cols-2">
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-          <NoteImageLightbox
-            src={note.images.front}
-            alt={note.frontCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={1440}
-            height={960}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
-        </figure>
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
-          <NoteImageLightbox
-            src={note.images.back}
-            alt={note.backCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={1440}
-            height={960}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
-        </figure>
-      </div>
-
-      <section class="mt-14" aria-labelledby="about-heading">
-        <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-          {t.aboutHeading}
-        </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
-      </section>
-
       {
-        note.history ? (
-          <section class="mt-12" aria-labelledby="history-heading">
-            <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-              {t.historyHeading}
-            </h2>
-            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
-          </section>
-        ) : null
+        pieces.map((piece, index) => {
+          const FactsHeading = factsTag;
+          const NarrativeHeading = factsTag;
+          return (
+            <div id={piece.id} class:list={['scroll-mt-28', multi && index > 0 && 'mt-14 border-t border-line-strong pt-14']}>
+              {
+                multi ? (
+                  <>
+                    <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {piece.title[locale]}
+                    </h2>
+                    <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
+                  </>
+                ) : null
+              }
+
+              <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby={pieceHeadingId(piece, 'facts')}>
+                <FactsHeading id={pieceHeadingId(piece, 'facts')} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                  {t.factsHeading}
+                </FactsHeading>
+                <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+                  <div>
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{piece.pick}</dd>
+                  </div>
+                  <div>
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{piece.serial}</dd>
+                  </div>
+                  <div>
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{piece.signatures[locale]}</dd>
+                  </div>
+                  <div>
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{piece.grade[locale]}</dd>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{piece.printed[locale]}</dd>
+                  </div>
+                </dl>
+              </section>
+
+              <div class="grid gap-10 lg:grid-cols-2">
+                <figure class="m-0">
+                  <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</FactsHeading>
+                  <NoteImageLightbox
+                    src={piece.images.front}
+                    alt={piece.frontCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                    locale={locale}
+                    width={1440}
+                    height={960}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.frontCaption[locale]}</figcaption>
+                </figure>
+                <figure class="m-0">
+                  <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</FactsHeading>
+                  <NoteImageLightbox
+                    src={piece.images.back}
+                    alt={piece.backCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                    locale={locale}
+                    width={1440}
+                    height={960}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.backCaption[locale]}</figcaption>
+                </figure>
+              </div>
+
+              <section class="mt-14" aria-labelledby={pieceHeadingId(piece, 'about')}>
+                <NarrativeHeading id={pieceHeadingId(piece, 'about')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                  {t.aboutHeading}
+                </NarrativeHeading>
+                <p class="m-0 text-[17px]/7 text-cream">{piece.description[locale]}</p>
+              </section>
+
+              {
+                !multi && note.history ? (
+                  <section class="mt-12" aria-labelledby="history-heading">
+                    <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {t.historyHeading}
+                    </h2>
+                    <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+                  </section>
+                ) : null
+              }
+
+              <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'scarcity')}>
+                <NarrativeHeading id={pieceHeadingId(piece, 'scarcity')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                  {t.scarcityHeading}
+                </NarrativeHeading>
+                <p class="m-0 text-[17px]/7 text-cream">{piece.scarcity[locale]}</p>
+              </section>
+
+              <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'population')}>
+                <NarrativeHeading id={pieceHeadingId(piece, 'population')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                  {t.populationHeading}
+                </NarrativeHeading>
+                <p class="m-0 text-[17px]/7 text-cream">{piece.population[locale]}</p>
+              </section>
+            </div>
+          );
+        })
       }
-
-      <section class="mt-12" aria-labelledby="scarcity-heading">
-        <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-          {t.scarcityHeading}
-        </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.scarcity[locale]}</p>
-      </section>
-
-      <section class="mt-12" aria-labelledby="population-heading">
-        <h2 id="population-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-          {t.populationHeading}
-        </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.population[locale]}</p>
-      </section>
 
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
