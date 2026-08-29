@@ -128,6 +128,15 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://repositorio.banrep.gov.co/items/2665c571-b38b-4e59-b644-60ce22a41d78',
+    es: 'Guillermo Torres García — Historia de la moneda en Colombia (Banco de la República, 1945; ed. digital 2023)',
+    en: 'Guillermo Torres García — Historia de la moneda en Colombia (Banco de la República, 1945; digital ed. 2023)',
+    note: {
+      es: 'Historia legal y monetaria de la moneda colombiana desde el Congreso de Cúcuta (1821) hasta la devaluación de 1935-1938: unificación, patrones metálicos, el curso forzoso del Banco Nacional y la fundación del Banco de la República. Narrativa histórica, no un catálogo de tipos ni de tiradas.',
+      en: 'Legal and monetary history of Colombian currency from the 1821 Congreso de Cúcuta to the 1935-1938 devaluation: unification, metallic standards, the Banco Nacional fiat era, and the founding of the Banco de la República. Historical narrative, not a type or printage catalog.',
+    },
+  },
+  {
     href: 'https://enciclopedia.banrepcultural.org/Financiaci%C3%B3n_de_la_independencia',
     es: 'Enciclopedia Banrepcultural — Financiación de la independencia',
     en: 'Banrepcultural Encyclopedia — Financing independence',
