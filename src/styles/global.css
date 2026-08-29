@@ -244,8 +244,19 @@ body.mega-drawer-lock {
   transform: rotate(225deg) translateY(-2px);
 }
 
+.mega-nav-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .mega-icon {
   display: block;
+  width: 1.25rem;
+  height: 1.25rem;
   color: currentColor;
 }
 

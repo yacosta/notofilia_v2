@@ -8,7 +8,8 @@ export type ColombiaChapterId =
   | 'banco-nacional'
   | 'banco-central'
   | 'banco-de-la-republica'
-  | 'familias-modernas';
+  | 'familias-modernas'
+  | 'errores';
 
 export type ColombiaChapter = {
   id: ColombiaChapterId;
@@ -313,7 +314,7 @@ export const seriesCopy = {
     kicker: 'Colombia · Notafilia',
     title: 'Banca libre y Banco de la República',
     heroAlt:
-      'Mapa vintage en relieve 3D de Colombia sobre pergamino, con el Castillo San Felipe, Monserrate, el Eje Cafetero, el Amazonas, un pasaporte y el título Colombia',
+      'Mapa vintage en relieve 3D de Colombia sobre pergamino, con Sierra Nevada, Santa Marta, Riohacha, Medellín y Bogotá, sellos, pasaporte y el título Colombia',
     intro: [
       'El papel moneda en Colombia nació de la urgencia de la Independencia, no de un banco central. Hernández (8.ª ed., 2023) lista primero un 2 reales de 1812 impreso en Mompós —único ejemplar que registra— y luego el 1 real de 1813; la Enciclopedia Banrepcultural identifica ese 1 real de Gutiérrez de Piñeres, firmado a mano en papel común. Cundinamarca siguió al año siguiente con vales de tesorería. Las libranzas de la Gran Colombia, grabadas por Peter Maverick en Nueva York, nunca se emitieron. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
       'El billete moderno llegó en la década de 1870, con la banca libre. La Ley 35 de 1865 abrió la emisión convertible. El Banco de Bogotá se constituyó el 15 de noviembre de 1870 y fue el primer emisor privado que el comercio aceptó de forma amplia. Mover especie por el relieve era caro y peligroso; más de tres docenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, el Hipotecario, Rio Hacha— cubrieron el crédito local con papel propio, fraccionarios incluidos, grabado en Nueva York y Londres. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La banca libre abre con las pruebas ABNC del Banco Hipotecario de Bogotá (1881) y del 5 pesos de Rio Hacha (1883).',
@@ -330,6 +331,11 @@ export const seriesCopy = {
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
+    errorsTitle: 'Errores',
+    errorsIntro:
+      'Maculaturas y errores de impresión del Banco de la República y de emisiones anteriores, agrupados por año y denominación. Las fichas se publican a medida que se documentan las piezas.',
+    errorsEmpty:
+      'Aún no hay errores publicados en esta vitrina. Cuando se documente una pieza, aparecerá aquí ordenada por año y denominación.',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -340,7 +346,7 @@ export const seriesCopy = {
     kicker: 'Colombia · Notaphily',
     title: 'Free banking and the Banco de la República',
     heroAlt:
-      'Vintage 3D relief map of Colombia on parchment, with Castillo San Felipe, Monserrate, the Coffee Axis, the Amazon, a passport, and the title Colombia',
+      'Vintage 3D relief map of Colombia on parchment, with Sierra Nevada, Santa Marta, Riohacha, Medellín and Bogotá, postage stamps, a passport, and the title Colombia',
     intro: [
       'Paper money in Colombia was born from the urgency of independence, not from a central bank. Hernández (8th ed., 2023) lists first a 2-reales of 1812 printed at Mompós — the only example he records — then the 1-real of 1813; Banrepcultural’s encyclopedia identifies that Gutiérrez de Piñeres 1-real, signed by hand on ordinary paper. Cundinamarca followed the next year with treasury vales. Gran Colombia’s drafts, engraved by Peter Maverick in New York, were never issued. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
       'The modern note arrived in the 1870s with free banking. Law 35 of 1865 opened convertible issue. The Banco de Bogotá was constituted on 15 November 1870 and was the first private issuer the market broadly accepted. Moving specie across the highlands was costly and dangerous; more than three dozen regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, the Hipotecario, Rio Hacha — covered local credit with their own paper, fractionals included, engraved in New York and London. Those issues, with proofs and specimens, are the historical core of this case. Free banking opens with the ABNC proofs of the Banco Hipotecario of Bogotá (1881) and the Rio Hacha 5 pesos (1883).',
@@ -357,6 +363,11 @@ export const seriesCopy = {
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
+    errorsTitle: 'Errors',
+    errorsIntro:
+      'Maculatures and printing errors from the Banco de la República and earlier issues, grouped by year and denomination. Note pages are published as pieces are documented.',
+    errorsEmpty:
+      'No error notes are published in this case yet. When a piece is documented, it will appear here sorted by year and denomination.',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },

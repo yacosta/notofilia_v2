@@ -2,6 +2,15 @@
 
 export type ImageWidth = 400 | 640 | 800 | 1200 | 1600 | 2400;
 
+/** Bump when series hero masters change so CDN/browser caches pick up new art at the same path. */
+export const CATALOG_HERO_VERSION = '20260829';
+
+export function catalogAssetSrc(src: string, version: string = CATALOG_HERO_VERSION): string {
+  if (!version || !src.startsWith('/')) return src;
+  const sep = src.includes('?') ? '&' : '?';
+  return `${src}${sep}v=${version}`;
+}
+
 export function cfImage(
   src: string,
   options: { width: number; quality?: number; fit?: 'scale-down' | 'cover' } = { width: 800 },

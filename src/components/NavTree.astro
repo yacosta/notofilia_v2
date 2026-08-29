@@ -1,5 +1,6 @@
 ---
 import CountryFlag from './CountryFlag.astro';
+import NavIcon from './NavIcon.astro';
 import { localizePath, type Locale } from '../lib/site';
 import type { NavNode } from '../lib/mega-nav';
 
@@ -32,11 +33,13 @@ function hrefFor(node: NavNode) {
             {href ? (
               <a class="mega-tree-label mega-tree-label--link" href={href}>
                 <CountryFlag code={node.flag} />
+                <NavIcon name={node.icon} />
                 <span class="mega-tree-label-text">{label}</span>
               </a>
             ) : (
               <span class="mega-tree-label">
                 <CountryFlag code={node.flag} />
+                <NavIcon name={node.icon} />
                 <span class="mega-tree-label-text">{label}</span>
               </span>
             )}
