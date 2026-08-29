@@ -50,6 +50,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/10-pesos-oro-1943/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/10-pesos-oro-1976/', 'en'),
+      '/en/collection/colombia/10-pesos-oro-1976/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/2000-pesos-oro-1983/', 'en'),
       '/en/collection/colombia/2000-pesos-oro-1983/',
     );

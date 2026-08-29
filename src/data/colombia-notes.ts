@@ -7,6 +7,7 @@ export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
   | '10-pesos-oro-1943'
+  | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983';
 
 export type ColombiaNote = {
@@ -364,6 +365,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
           en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-pesos-oro-1976',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}10-pesos-oro-1976/`,
+    pick: 'P# 407f · TBB B950kr',
+    serial: '00142533',
+    signatures: {
+      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1976. El Bank Note Museum agrupa el tipo 407f en las fechas 20.07.1974, 01.01.1975, 20.07.1976 y 01.01.1978, sin hilo de seguridad. Formato publicado: 140 × 70 mm. Esta pieza es la variedad de reposición (TBB B950kr; Hernández 199/201). No se publica aquí una tirada oficial.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 20 July 1976. The Bank Note Museum groups type 407f under 20.07.1974, 01.01.1975, 20.07.1976, and 01.01.1978, without a security thread. Published size: 140 × 70 mm. This piece is the replacement variety (TBB B950kr; Hernández 199/201). No official printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/10-pesos-oro-1976-composite.jpg',
+      front: '/images/catalog/colombia/10-pesos-oro-1976-front.jpg',
+      back: '/images/catalog/colombia/10-pesos-oro-1976-back.jpg',
+    },
+    title: {
+      es: '10 pesos oro · reposición · 1976',
+      en: '10 pesos oro · replacement · 1976',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Reposición',
+      en: 'Colombia · Banco de la República · Replacement',
+    },
+    lead: {
+      es: 'Diez pesos oro de reposición, fecha 20 de julio de 1976: Pick 407f / TBB B950kr. Serial 00142533. El asterisco entre GERENTE y SECRETARIO identifica la variedad. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A replacement ten-peso oro dated 20 July 1976: Pick 407f / TBB B950kr. Serial 00142533. The asterisk between GERENTE and SECRETARIO identifies the variety. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este diez pesos oro de la familia Pick 407 (1963–1980). El anverso, en lila y azul pizarra sobre fondo verde y policromía, lleva a la izquierda el retrato de Antonio Nariño —con el nombre bajo el óvalo— y a la derecha un cóndor andino posado sobre una roca. Al centro, la promesa de pagar al portador diez pesos oro. Los seriales van en rojo: 00142533, una vez a media altura a la izquierda y otra arriba a la derecha. La fecha impresa es «JULIO 20 DE 1976» sobre «BOGOTA, COLOMBIA». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario), el par que Numista asigna a esta fecha (GBR"₂, AJG). El diagnóstico de la reposición no está en el serial: es el asterisco negro, de seis puntas, entre los títulos GERENTE y SECRETARIO. Los catálogos colombianos describen así la variedad del 20 de julio de 1976. El Pick numera el tipo ordinario como 407f; las reposiciones de esa fecha las listan The Banknote Book (B950kr) y Hernández (199/201). El reverso muestra las estatuas precolombinas del Parque Arqueológico de San Agustín, el sello del banco con la Libertad y las cifras 10. El tipo 407f, según el Bank Note Museum, carece de hilo de seguridad. Esta pieza de la colección se presenta en funda, sin encapsular. No debe confundirse con la emisión ordinaria de la misma fecha (TBB B950k; Hernández 198/200), que no lleva el asterisco entre los títulos.',
+      en: 'The Banco de la República ordered this ten-peso oro of the Pick 407 family (1963–1980) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, lilac and slate blue on a green and multicolour underprint, carries Antonio Nariño’s portrait at left — named under the oval — and an Andean condor on a rock at right. At center is the promise to pay the bearer ten gold pesos. The serials are in red: 00142533, once at mid-left and once at upper right. The printed date is “JULIO 20 DE 1976” over “BOGOTA, COLOMBIA.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario), the pair Numista assigns to this date (GBR"₂, AJG). The replacement diagnostic is not in the serial: it is the small six-pointed black asterisk between the titles GERENTE and SECRETARIO. Colombian catalogs describe the 20 July 1976 variety that way. Pick numbers the ordinary type as 407f; replacements of that date are listed by The Banknote Book (B950kr) and Hernández (199/201). The back shows the pre-Columbian statues of the San Agustín Archaeological Park, the bank’s Liberty seal, and the figures 10. Type 407f, per the Bank Note Museum, has no security thread. This collection piece is shown in a sleeve, unslabbed. It should not be confused with the ordinary issue of the same date (TBB B950k; Hernández 198/200), which does not carry the asterisk between the titles.',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 pesos oro de reposición, 20 de julio de 1976: Nariño, cóndor, serial 00142533 y asterisco entre GERENTE y SECRETARIO.',
+      en: 'Face of the 20 July 1976 replacement 10 pesos oro: Nariño, the condor, serial 00142533, and the asterisk between GERENTE and SECRETARIO.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 pesos oro de reposición, 20 de julio de 1976: estatuas del Parque Arqueológico de San Agustín y sello del Banco de la República.',
+      en: 'Back of the 20 July 1976 replacement 10 pesos oro: statues of the San Agustín Archaeological Park and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'La reposición del 20 de julio de 1976 es una variedad reconocida y sustancialmente más escasa que la emisión ordinaria de esa fecha. Numista estima la reposición en unos 0,2 % de los ejemplares registrados del tipo Pick 407; esa cifra es una estimación de población de catálogo, no una tirada oficial. El Pick no lista las reposiciones por separado. Esta ficha no inventa una tirada.',
+      en: 'The 20 July 1976 replacement is a recognized variety and substantially scarcer than the ordinary issue of that date. Numista estimates the replacement at about 0.2% of recorded examples of Pick 407; that figure is a catalog-population estimate, not an official printage. Pick does not list replacements separately. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00142533. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 00142533 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note203973.html',
+        es: 'Numista — Colombia 10 pesos oro, N# 203973',
+        en: 'Numista — Colombia 10 pesos oro, N# 203973',
+        note: {
+          es: '20.07.1976, reposición: TBB B950kr; Hernández 199/201; asterisco en el anverso, entre los títulos; frecuencia 0,2 %. Firmas GBR"₂ y AJG. Impresora: Imprenta de Billetes, Bogotá. 140 × 70 mm.',
+          en: '20.07.1976 replacement: TBB B950kr; Hernández 199/201; asterisk on the face, between the titles; 0.2% frequency. Signatures GBR"₂ and AJG. Printer: Imprenta de Billetes, Bogotá. 140 × 70 mm.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0407.htm',
+        es: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        en: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        note: {
+          es: '407f: 20.07.1974, 01.01.1975, 20.07.1976 y 01.01.1978, sin hilo de seguridad; anverso Nariño y cóndor, reverso San Agustín.',
+          en: '407f: 20.07.1974, 01.01.1975, 20.07.1976, and 01.01.1978, without a security thread; Nariño and condor on the face, San Agustín on the back.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-10-pesos-oro-1974-p-407f-1.html',
+        es: 'Banknote World — Colombia 10 pesos oro 1974, P-407f.1',
+        en: 'Banknote World — Colombia 10 pesos oro 1974, P-407f.1',
+        note: {
+          es: 'Mismo letra 407f: Imprenta de Billetes, Bogotá; 140 × 70 mm; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
+          en: 'Same 407f letter: Imprenta de Billetes, Bogotá; 140 × 70 mm; no thread; Germán Botero de los Ríos and Antonio José Gutiérrez.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: 'Catálogo de referencia; Numista cita Hernández 199 y 201 para la reposición del 20 de julio de 1976.',
+          en: 'A standard catalog; Numista cites Hernández 199 and 201 for the 20 July 1976 replacement.',
         },
       },
     ],
