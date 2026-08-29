@@ -10,7 +10,7 @@ rule → PASS / FAIL / N/A → file:line evidence → proposed fix.
 
 Flag any page that does not map to a type, any page whose ES and EN markup diverge, any image not served through `/cdn-cgi/image/`, any hard-coded Spanish string in a component, and any place the site stats line renders more than once.
 
-For catalogue holdings (`piece` type and `src/data/` country modules), also report — do not fix unless asked — any serial or cert number on more than one item, any item missing a serial without `no_serial_reason`, and any bilingual pair where only one language exists (`30-catalogue-duplicates.mdc` §5).
+For catalogue holdings (`piece` type and `src/data/` country modules), also report — do not fix unless asked — any serial or cert number on more than one item, any item missing a serial without `no_serial_reason`, any bilingual pair where only one language exists, and holdings with low or fancy serials (`30-catalogue-duplicates.mdc` §1.5 and §5).
 
 Do NOT modify files.
 

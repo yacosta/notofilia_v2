@@ -15,6 +15,8 @@ alwaysApply: true
 
 Every banknote in the Notofilia catalogue is a physical, unique object. The serial number is its identity. **Never add a banknote whose serial number already exists in the catalogue.** Checking is mandatory, not optional, and happens *before* any file is created or edited.
 
+Uniqueness is unchanged: one serial → one record. When comparing, ranking, or processing a batch, **prioritize low serial numbers and fancy serial numbers** (§1.5). That priority is an extra check, not a second identity and not a reason to skip the full serial/cert search.
+
 This rule applies to every feature branch and Cursor cloud agent working on Notofilia.com. Catalogue data lives in `src/data/` (country modules and `*.ts` piece records), generated images under `public/images/catalog/` (uncommitted), and masters under `catalog-src/catalog/`. There is no `src/content/` collection yet; still search it if it appears.
 
 ## 1. Before adding any banknote
@@ -74,14 +76,44 @@ Every catalogue item has a Spanish page and an English page (hreflang pair). A d
 
 This site stores one data record per piece in `src/data/` and thin ES/EN routes that share a `*Page.astro` type layout. A missing pair is a missing route or `PATH_PREFIX_PAIRS` entry, not a second object in the data module.
 
+### 1.5 Prioritize low serials and fancy serials
+
+After normalizing (§1.1), classify the numeric serial (ignore prefix/suffix letters for the pattern; keep leading zeros). Report the class in the pre-write search results. This does **not** replace the exact-serial search (§1.2) or uniqueness: two notes with different serials are different objects even if they share Pick, date, and type.
+
+**Low serials** (treat as high priority):
+
+- First-of-issue and run-start numbers: `00000001`, `0000001`, `1`, or the documented first number of a series/range.
+- Very low counters: numeric value **1–100** on the printed width (e.g. `00000042`, `00000100`). Do not strip leading zeros when comparing, but do interpret the integer value for this class.
+- Replacement or star/asterisk lows when the printed counter is in that same 1–100 band.
+
+**Fancy serials** (treat as high priority). A serial may match more than one class (e.g. `10000001` is binary and a radar/palindrome):
+
+- Radar / palindrome: the digit string reads the same forwards and backwards (`10000001`, `12344321`).
+- Binary: digits are only `0` and `1` (`10000001`, `10101010`).
+- Solid / solid-plus: all digits the same (`88888888`), or one digit with a single exception.
+- Ladder (ascending or descending): consecutive digits such as `12345678`, `87654321`, `01234567`.
+- Repeater / rotator: a short block that repeats (`12121212`, `12312312`) or a two-block repeat (`12341234`).
+- Bookend / radar-related patterns: matching digit groups at both ends (`12xx21`) when the rest is not a full palindrome.
+- Million / round: a `1` followed by all zeros on the printed width (`10000000`, `01000000`) — still search the exact serial; do not conflate with `10000001`.
+
+**How to use the class when deduping:**
+
+1. Run the same full-catalogue search for every serial. Do not skip ordinary serials.
+2. **Look at low and fancy hits first** in the report: they are the holdings most likely to already exist, to be cited in editorial copy, or to be confused with a type-level (Pick + date) match.
+3. A Pick / date / denomination match **without** a matching serial or cert is **not** a duplicate. If the catalogue already has a low or fancy note of that type, name it in the report so the new serial is not silently treated as “the same note.”
+4. In bulk imports (§4), sort the status table so `low` and `fancy` rows appear above `ordinary`. Resolve those rows first. Same-serial rows are still `exists` regardless of class.
+5. When the user supplies a type but no serial, search existing lows and fancies of that issuer/denomination/date **before** scaffolding, and ask for the serial. Do not invent a low or fancy serial.
+6. When creating a holding, record the class in copy or a data field if the module already has one (`serial_kind`, `fancy`, notes). Do not add a second catalogue object for the pattern.
+
 ## 2. When creating the entry
 
 - Store the serial in a dedicated frontmatter/data field (`serial`), in normalized form, plus `serial_display` for the exact printed form if they differ.
 - Store `cert_number` and `cert_grader` for graded notes.
 - Give the item one stable internal ID shared by both language pages, so the dedup check can key on it later.
 - Name image files with the internal ID or normalized serial, never with a generic name (`billete-5-pesos.jpg` invites duplicates; `NF-0421-A1234567-front.jpg` does not). Masters go in `catalog-src/catalog/` using the public path pattern (`philippines/1-peso-front.jpg`).
-- Finish your response with a one-line dedup statement, e.g.:
-  `Dedup: searched src/, public/, docs/, catalog-src/ for A1234567 (and loose variants) — 0 matches. Cert 8071234-001 — 0 matches.`
+- Finish your response with a one-line dedup statement that includes serial class (§1.5), e.g.:
+  `Dedup: searched src/, public/, docs/, catalog-src/ for A1234567 (ordinary) (and loose variants) — 0 matches. Cert 8071234-001 — 0 matches.`
+  `Dedup: searched src/, public/, docs/, catalog-src/ for 10000001 (fancy: binary radar) — 0 matches.`
 
 ## 3. When a duplicate is found
 
@@ -95,9 +127,10 @@ Do **not** create a new entry. Instead:
 
 - First dedup the import against **itself** (same serial appearing twice in the batch).
 - Then dedup the batch against the catalogue.
-- Produce a table before writing anything: `serial | status (new / exists / missing pair / needs review) | existing path`.
-- Only write the rows marked `new` and `missing pair`; hold everything else for the user.
+- Classify each serial as `low`, `fancy`, `low+fancy`, or `ordinary` (§1.5).
+- Produce a table before writing anything: `serial | class | status (new / exists / missing pair / needs review) | existing path`. List `low` / `fancy` / `low+fancy` rows first.
+- Only write the rows marked `new` and `missing pair`; hold everything else for the user. Among rows you will write, process low and fancy serials first.
 
 ## 5. Periodic audit
 
-When asked to audit the catalogue, list any serial or cert number that appears in more than one item, any item missing a serial without a `no_serial_reason` field, and any bilingual pair where only one language exists. Report — don't fix — unless the user asks.
+When asked to audit the catalogue, list any serial or cert number that appears in more than one item, any item missing a serial without a `no_serial_reason` field, and any bilingual pair where only one language exists. Also list holdings whose serials classify as low or fancy (§1.5) so those identities stay obvious in the report. Report — don't fix — unless the user asks.
