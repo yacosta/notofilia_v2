@@ -28,6 +28,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/', 'en'),
+      '/en/collection/united-states/1-dollar-silver-certificate-1957b/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/', 'en'),
       '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
     );

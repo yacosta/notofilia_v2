@@ -13,6 +13,11 @@ type PathPair = {
 /** Longest-prefix pairs. Trailing slashes required. */
 export const PATH_PREFIX_PAIRS: PathPair[] = [
   {
+    es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
+    en: '/collection/united-states/1-dollar-silver-certificate-1957b/',
+    aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1957b/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     en: '/collection/united-states/1-dollar-state-bank-new-brunswick/',
     aliases: ['/coleccion/united-states/1-dollar-state-bank-new-brunswick/'],
@@ -165,6 +170,8 @@ export function englishRedirects(): Record<string, string> {
   };
 
   const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
+    '/en/coleccion/united-states/1-dollar-silver-certificate-1957b/',
     '/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
