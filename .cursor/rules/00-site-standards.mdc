@@ -27,6 +27,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 - Store `serial` (normalized), `serial_display` when needed, `cert_number` / `cert_grader` when graded, and one internal ID shared by ES and EN routes.
 - Colombia printage/mintage: BanRep tables in `docs/sources/banrep/` (`40-banrep-production.mdc`). Do not invent a Pick-level tirada from a denomination-year total.
 - Colombia BanRep types 1923–2019: González White 7ª ed. 2019 in `docs/sources/gonzalez-white/` (`41-gonzalez-white.mdc`). Cite BG#; do not publish plates or price columns. Coin varieties and C&C *NumisNotas*: `docs/sources/gonzalez-white/essays/` and `docs/sources/c-and-c/`.
+- Colombia auction photos / banca libre / specimens: Heritage sold-archive extract in `docs/sources/heritage/` (`42-heritage-colombia.mdc`). Lots are comparables, not holdings; do not import them or republish realized prices.
 
 ## Locales and copy
 
