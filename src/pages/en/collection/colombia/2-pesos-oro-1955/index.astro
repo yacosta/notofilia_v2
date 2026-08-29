@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('2-pesos-oro-1955');
+if (!note) throw new Error('Missing Banco de la República 2 pesos oro 1955 catalog note');
+---
+
+<ColombiaNotePage locale="en" note={note} />

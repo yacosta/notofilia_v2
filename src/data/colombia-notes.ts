@@ -8,6 +8,7 @@ export type ColombiaNoteId =
   | '5-pesos-rio-hacha-1883'
   | '10-pesos-oro-1943'
   | '2-pesos-oro-1944'
+  | '2-pesos-oro-1955'
   | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983';
 
@@ -460,6 +461,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Catálogo de referencia; Numista cita Hernández 91 para el 20 de julio de 1944.',
           en: 'A standard catalog; Numista cites Hernández 91 for 20 July 1944.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-pesos-oro-1955',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}2-pesos-oro-1955/`,
+    pick: 'P# 390d · TBB B923g',
+    serial: 'GG 10739101',
+    signatures: {
+      es: 'Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario)',
+      en: 'Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1955. El Bank Note Museum numera el tipo 390d en esa fecha. Formato publicado: 140 × 70 mm. Numista distingue, en serie GG, seriales de siete dígitos (Hernández 95) y de ocho (Hernández 96); esta pieza es de ocho. No se publica aquí una tirada.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 January 1955. The Bank Note Museum numbers type 390d on that date. Published size: 140 × 70 mm. Numista distinguishes, in Series GG, seven-digit serials (Hernández 95) and eight-digit ones (Hernández 96); this piece is eight digits. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2-pesos-oro-1955-composite.jpg',
+      front: '/images/catalog/colombia/2-pesos-oro-1955-front.jpg',
+      back: '/images/catalog/colombia/2-pesos-oro-1955-back.jpg',
+    },
+    title: {
+      es: '2 pesos oro · Banco de la República · 1955',
+      en: '2 pesos oro · Banco de la República · 1955',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Dos pesos oro de circulación, Pick 390d: serie GG, serial de ocho dígitos 10739101, 1.º de enero de 1955. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A circulating two-peso oro, Pick 390d: Series GG, eight-digit serial 10739101, 1 January 1955. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República cerró con esta fecha la familia Pick 390 de dos pesos oro, grabada por la American Bank Note Company de Nueva York. El anverso, en verde oliva sobre fondo policromado, lleva al centro el retrato de Camilo Torres Tenorio y la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: Nº 10739101, a ambos flancos del retrato. La leyenda «SERIE GG» aparece dos veces en negro. La fecha impresa es «BOGOTÁ, COLOMBIA. / 1° DE ENERO DE 1955». Las firmas son las de Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario), el par que Numista asigna a 1955 (LAA₂, EAR). El serial de ocho dígitos es la variedad que Hernández numera 96; no es el GG de siete dígitos (Hernández 95) ni el GG de 1950 con Jaime Londoño (Pick 390c). El reverso, en violeta, muestra la cabeza de la Libertad con gorro frigio en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 2 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». Es el mismo diseño que el 2 pesos oro de 1944 de esta colección (serie I, Pick 390b), no un espécimen: el reverso no lleva serial. Esta pieza se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República closed the Pick 390 two-peso oro family on this date, engraved by the American Bank Note Company in New York. The face, olive green on a multicolour underprint, carries at center the portrait of Camilo Torres Tenorio and the promise to pay the bearer two gold pesos. The serials are in red: No. 10739101, at both flanks of the portrait. The legend “SERIE GG” appears twice in black. The printed date is “BOGOTÁ, COLOMBIA. / 1° DE ENERO DE 1955.” The signatures are those of Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario), the pair Numista assigns to 1955 (LAA₂, EAR). The eight-digit serial is the variety Hernández numbers 96; it is not the seven-digit GG (Hernández 95) or the 1950 GG with Jaime Londoño (Pick 390c). The violet back shows Liberty’s head in a Phrygian cap, in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 2 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” It is the same design as this collection’s 1944 2 pesos oro (Series I, Pick 390b), not a specimen: the back does not carry a serial. This piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 pesos oro, Pick 390d: Torres, serie GG, serial de ocho dígitos 10739101 y fecha 1.º de enero de 1955.',
+      en: 'Face of the 2 pesos oro, Pick 390d: Torres, Series GG, eight-digit serial 10739101, and the date 1 January 1955.',
+    },
+    backCaption: {
+      es: 'Reverso del 2 pesos oro, Pick 390d: Libertad en medallón violeta, cifras 2 y pie de la American Bank Note Company.',
+      en: 'Back of the 2 pesos oro, Pick 390d: Liberty in a violet medallion, the figures 2, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'El Bank Note Museum describe el Pick 390d como la fecha 01.01.1955 del 2 pesos oro. Numista agrupa circulación y variedades del diseño en N# 232681, con índice de rareza 48, y marca la frecuencia del GG de ocho dígitos en un 17 % entre quienes poseen el tipo, frente a un 60 % del GG de siete dígitos. No es prueba ni espécimen. Esta ficha no inventa una tirada.',
+      en: 'The Bank Note Museum describes Pick 390d as the 01.01.1955 date of the 2 pesos oro. Numista groups circulating notes and varieties of the design under N# 232681, with a rarity index of 48, and marks the eight-digit GG’s frequency at 17% among owners of the type, against 60% for the seven-digit GG. It is neither a proof nor a specimen. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 10739101. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 10739101 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0390.htm',
+        es: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+        en: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+        note: {
+          es: '390d: 01.01.1955; anverso Camilo Torres, reverso Libertad; ABNC.',
+          en: '390d: 01.01.1955; Camilo Torres on the face, Liberty on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note232681.html',
+        es: 'Numista — Colombia 2 pesos oro, N# 232681',
+        en: 'Numista — Colombia 2 pesos oro, N# 232681',
+        note: {
+          es: '01.01.1955, serie GG de ocho dígitos: P# 390d / TBB B923g; Hernández 96; firmas LAA₂ y EAR; 140 × 70 mm; frecuencia 17 % en el tipo.',
+          en: '01.01.1955, eight-digit Series GG: P# 390d / TBB B923g; Hernández 96; signatures LAA₂ and EAR; 140 × 70 mm; 17% frequency within the type.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1955-p-390d.html',
+        es: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
+        en: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
+        note: {
+          es: 'Fecha 01.01.1955; ABNC; 140 × 70 mm; anverso Torres, reverso Libertad.',
+          en: 'Date 01.01.1955; ABNC; 140 × 70 mm; Torres on the face, Liberty on the back.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: 'Catálogo de referencia; Numista cita Hernández 96 para el GG de ocho dígitos de 1955.',
+          en: 'A standard catalog; Numista cites Hernández 96 for the 1955 eight-digit GG.',
         },
       },
     ],
