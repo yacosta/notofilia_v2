@@ -53,7 +53,7 @@ rg -i "serial(_number|_display)?:\s*.*1234567" src/content/ src/data/
 
 A hit in **any** file — Spanish page, English page, JSON/YAML/TS data, image name, draft, or archived entry — means the note already exists. Stop and go to §3.
 
-Hits only in editorial copy (`src/data/blog-articles.json`, `src/data/news-articles.json`) are not catalogue holdings unless they cite a collection serial that already lives in a country module. Treat a match in a country module (`src/data/*.ts`) as a definite duplicate.
+Hits only in editorial copy (`src/data/blog-articles.json`, `src/data/news-articles.json`) are not catalogue holdings unless they cite a collection serial that already lives in a country module. Hits only in `docs/sources/heritage/` are Heritage auction lots (comparables), not Notofilia holdings — even when Pick and date match a collection type. Treat a match in a country module (`src/data/*.ts`) as a definite duplicate.
 
 ### 1.3 Secondary fingerprint check (serial unreadable or missing)
 

@@ -91,6 +91,15 @@ export const coinageSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+    es: 'Banco de la República — Producción y circulación de billetes y monedas',
+    en: 'Banco de la República — Banknote and coin production and circulation',
+    note: {
+      es: 'Estadísticas anuales de producción de monedas por denominación (desde 1987; acuñación nacional e importada, más conmemorativas). Un total por año y valor facial no es la tirada de un solo tipo.',
+      en: 'Annual coin production by denomination (from 1987; domestic and imported strikes, plus commemoratives). A year-and-face-value total is not the mintage of a single type.',
+    },
+  },
+  {
     href: 'https://www.banrepcultural.org/noticias/el-banco-de-la-republica-celebra-sus-100-anos-con-la-reapertura-del-museo-casa-de-moneda',
     es: 'Banrepcultural — Reapertura del Museo Casa de Moneda',
     en: 'Banrepcultural — Reopening of the Casa de Moneda Museum',

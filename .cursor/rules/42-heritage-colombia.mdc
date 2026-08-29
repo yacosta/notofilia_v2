@@ -1,0 +1,24 @@
+---
+description: Heritage Auctions Colombia sold-archive extract — identification and comparables, not holdings
+globs:
+  - src/data/colombia*
+  - src/data/colombia-notes.ts
+  - docs/sources/heritage/**
+alwaysApply: false
+---
+
+# Heritage Auctions (Colombia paper)
+
+When identifying Colombian notes — especially banca libre, Banco Nacional, independence issues, specimens, remainders, errors, and fancy serials — search `docs/sources/heritage/lots.txt` (and the HTML viewer if needed) **in addition to** González White and BanRep tables.
+
+| Source | Role |
+| --- | --- |
+| `docs/sources/heritage/lots.txt` | Heritage sold lots (Pick, title, lot URL). Compiled 19 Aug 2026 from the World Paper Money archive search *Colombia*. |
+| `docs/sources/gonzalez-white/` | BanRep types 1923–2019: BG# and emisión |
+| `docs/sources/banrep/` | Issuer totals by face value and year |
+
+Read `docs/sources/heritage/README.md` before treating a Heritage headline as a type description.
+
+**Not holdings.** Do not add a Heritage lot to `src/data/`. A serial that appears only in this extract is not a Notofilia duplicate. Confirm photographs and cert numbers on the live lot URL.
+
+**Public site:** do not republish realized prices or hotlink Heritage images. Linking a lot URL is allowed. The archive search includes non-Colombian bleed (mixed lots, foreign “Banco Colombiano”).

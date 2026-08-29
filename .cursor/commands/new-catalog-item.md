@@ -14,6 +14,7 @@ Follow `.cursor/rules/30-catalogue-duplicates.mdc` before creating or editing an
 6. Name masters under `catalog-src/catalog/` with the internal ID or normalized serial, not a generic denomination filename.
 7. Register both locales in the sitemap. Place copy in the feature’s `src/data` module (no chrome literals).
 8. End with a one-line dedup statement.
-9. Run audit prompt B (`.cursor/commands/audit-pr.md`) on the result.
+9. Colombian notes or coins: if the copy mentions printage/tirada/mintage, consult `docs/sources/banrep/` (`40-banrep-production.mdc`) before saying no official figure exists. Banco de la República types 1923–2019: also look up **BG#** in `docs/sources/gonzalez-white/` (`41-gonzalez-white.mdc`). Coin varieties and C&C notes: `docs/sources/gonzalez-white/essays/` and `docs/sources/c-and-c/`.
+10. Run audit prompt B (`.cursor/commands/audit-pr.md`) on the result.
 
 Replace serial, issuer, denomination, and routes from the user message. If the serial is missing, ask before scaffolding.
