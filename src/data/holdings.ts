@@ -81,6 +81,7 @@ export const additions: Holding[] = [
   { id: 'co-1881-5-pesos-banco-hipotecario-s511p2', kind: 'banknote', country: 'CO' },
   { id: 'co-1943-10-pesos-oro-n6813011', kind: 'banknote', country: 'CO' },
   { id: 'co-1944-2-pesos-oro-i12527403', kind: 'banknote', country: 'CO' },
+  { id: 'co-1955-2-pesos-oro-gg10739101', kind: 'banknote', country: 'CO' },
   { id: 'co-1976-10-pesos-oro-00142533', kind: 'banknote', country: 'CO' },
   { id: 'co-1983-2000-pesos-oro-specimen-030', kind: 'banknote', country: 'CO' },
 ];
@@ -106,6 +107,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1881-banco-hipotecario-5-pesos-s511p' },
   { id: 'co-1943-10-pesos-oro-p389b' },
   { id: 'co-1944-2-pesos-oro-p390b' },
+  { id: 'co-1955-2-pesos-oro-p390d' },
   { id: 'co-1976-10-pesos-oro-p407f-b950kr' },
   { id: 'co-1983-2000-pesos-oro-p430as' },
 ];

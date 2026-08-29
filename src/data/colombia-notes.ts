@@ -6,8 +6,8 @@ import { localizePath } from '../lib/locale-paths';
 export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
-  | '10-pesos-oro-1943'
   | '2-pesos-oro-1944'
+  | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983';
 
@@ -35,6 +35,30 @@ export type ColombiaNote = {
   lead: LocalizedText;
   description: LocalizedText;
   history?: LocalizedText;
+  frontCaption: LocalizedText;
+  backCaption: LocalizedText;
+  scarcity: LocalizedText;
+  population: LocalizedText;
+  grade: LocalizedText;
+  sources: CatalogSource[];
+  /** Same-type holdings documented on this piece page (each with its own catalog block). */
+  pieces?: ColombiaNotePiece[];
+};
+
+export type ColombiaNotePiece = {
+  id: string;
+  pick: string;
+  serial: string;
+  signatures: LocalizedText;
+  printed: LocalizedText;
+  images: {
+    composite: string;
+    front: string;
+    back: string;
+  };
+  title: LocalizedText;
+  lead: LocalizedText;
+  description: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
   scarcity: LocalizedText;
@@ -295,6 +319,278 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '2-pesos-oro-1944',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}2-pesos-oro-1944/`,
+    pick: 'P# 390b · TBB B923c',
+    serial: 'I 12527403',
+    signatures: {
+      es: 'Julio Caro (gerente) y Luis Ángel Arango (secretario)',
+      en: 'Julio Caro (gerente) and Luis Ángel Arango (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1944. El Bank Note Museum agrupa el tipo 390b en las fechas 20.07.1944, 01.01.1945 y 07.08.1947. Formato publicado: 140 × 70 mm. Numista marca esta fecha como serie I en oliva (Hernández 91). No se publica aquí una tirada.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1944. The Bank Note Museum groups type 390b under 20.07.1944, 01.01.1945, and 07.08.1947. Published size: 140 × 70 mm. Numista marks this date as Series I in olive (Hernández 91). No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2-pesos-oro-1944-composite.jpg',
+      front: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
+      back: '/images/catalog/colombia/2-pesos-oro-1944-back.jpg',
+    },
+    title: {
+      es: '2 pesos oro · Banco de la República · 1944 y 1955',
+      en: '2 pesos oro · Banco de la República · 1944 and 1955',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Dos ejemplares de la familia Pick 390 (Camilo Torres): serie I del 20 de julio de 1944 (Pick 390b) y serie GG del 1.º de enero de 1955 (Pick 390d). Cada uno tiene en esta página sus datos de catálogo, la pieza, rareza e impresión, y población.',
+      en: 'Two notes of the Pick 390 family (Camilo Torres): Series I of 20 July 1944 (Pick 390b) and Series GG of 1 January 1955 (Pick 390d). Each has its own catalog facts, note, scarcity and printage, and population on this page.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este dos pesos oro de la familia Pick 390 (1942–1955). El anverso, en verde oliva sobre fondo policromado, lleva al centro el retrato de Camilo Torres Tenorio, con el nombre «TORRES» bajo el óvalo, y la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: Nº 12527403, a ambos flancos del retrato. La leyenda «SERIE I» aparece dos veces, en oliva, no en el rojo de las fechas 1942–1943 del mismo tipo. La fecha impresa es «BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944». Las firmas son las de Julio Caro (gerente) y Luis Ángel Arango (secretario), el par que Numista asigna a esta fecha (JC, LAA₁) y el que Banknote World registra también en el 390a de 1942. El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 2 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 390b, según el Bank Note Museum, cubre tres fechas (1944, 1945 y 1947). El GG de 1950 (Pick 390c) es otra fecha; el cierre de 1955 (Pick 390d) se documenta en esta misma ficha. No es el 10 pesos oro de Nariño (Pick 389). Esta pieza de la colección se presenta en funda, circulada, sin encapsular.',
+      en: 'The Banco de la República ordered this two-peso oro of the Pick 390 family (1942–1955) from the American Bank Note Company in New York. The face, olive green on a multicolour underprint, carries at center the portrait of Camilo Torres Tenorio, named “TORRES” under the oval, and the promise to pay the bearer two gold pesos. The serials are in red: No. 12527403, at both flanks of the portrait. The legend “SERIE I” appears twice, in olive, not in the red of the 1942–1943 dates of the same type. The printed date is “BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944.” The signatures are those of Julio Caro (gerente) and Luis Ángel Arango (secretario), the pair Numista assigns to this date (JC, LAA₁) and the pair Banknote World also records on the 1942 390a. The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 2 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 390b, per the Bank Note Museum, covers three dates (1944, 1945, and 1947). The 1950 GG (Pick 390c) is another date; the 1955 close (Pick 390d) is documented on this same page. It is not the Nariño 10 pesos oro (Pick 389). This collection piece is shown in a sleeve, circulated, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 pesos oro, Pick 390b: Torres, serie I, serial 12527403 y fecha 20 de julio de 1944.',
+      en: 'Face of the 2 pesos oro, Pick 390b: Torres, Series I, serial 12527403, and the date 20 July 1944.',
+    },
+    backCaption: {
+      es: 'Reverso del 2 pesos oro, Pick 390b: Libertad en medallón, cifras 2 y pie de la American Bank Note Company.',
+      en: 'Back of the 2 pesos oro, Pick 390b: Liberty in a medallion, the figures 2, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'El Bank Note Museum describe el Pick 390 como emisión de circulación de 2 pesos oro, 1942–1955, grabada por la American Bank Note Company: Torres al anverso y la Libertad al reverso. El letra b agrupa tres fechas (1944, 1945 y 1947); Numista sitúa la de 20 de julio de 1944 en unos 5 % de los ejemplares registrados del tipo y marca la serie I en oliva. Numista da al conjunto un índice de rareza 48. No es prueba ni espécimen. Esta ficha no inventa una tirada por fecha.',
+      en: 'The Bank Note Museum describes Pick 390 as a circulating 2-peso oro issue of 1942–1955, engraved by the American Bank Note Company: Torres on the face and Liberty on the back. Letter b groups three dates (1944, 1945, and 1947); Numista places the 20 July 1944 date at about 5% of recorded examples of the type and marks Series I in olive. Numista gives the type a rarity index of 48. It is neither a proof nor a specimen. This record does not invent a printage by date.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 12527403. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 12527403 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0390.htm',
+        es: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+        en: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+        note: {
+          es: '390b: 20.07.1944, 01.01.1945 y 07.08.1947; anverso Camilo Torres, reverso Libertad; ABNC.',
+          en: '390b: 20.07.1944, 01.01.1945, and 07.08.1947; Camilo Torres on the face, Liberty on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note232681.html',
+        es: 'Numista — Colombia 2 pesos oro, N# 232681',
+        en: 'Numista — Colombia 2 pesos oro, N# 232681',
+        note: {
+          es: '20.07.1944: P# 390b / TBB B923c; Hernández 91; serie I en oliva; firmas JC y LAA₁; 140 × 70 mm; frecuencia 5 % en el tipo.',
+          en: '20.07.1944: P# 390b / TBB B923c; Hernández 91; Series I in olive; signatures JC and LAA₁; 140 × 70 mm; 5% frequency within the type.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1942-p-390a-1.html',
+        es: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
+        en: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
+        note: {
+          es: 'Mismo diseño ABNC: Camilo Torres y Libertad; 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en 1942.',
+          en: 'Same ABNC design: Camilo Torres and Liberty; 140 × 70 mm; Julio Caro and Luis Ángel Arango on 1942.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: 'Catálogo de referencia; Numista cita Hernández 91 para el 20 de julio de 1944.',
+          en: 'A standard catalog; Numista cites Hernández 91 for 20 July 1944.',
+        },
+      },
+    ],
+    pieces: [
+      {
+        id: '2-pesos-oro-1944',
+        pick: 'P# 390b · TBB B923c',
+        serial: 'I 12527403',
+        signatures: {
+          es: 'Julio Caro (gerente) y Luis Ángel Arango (secretario)',
+          en: 'Julio Caro (gerente) and Luis Ángel Arango (secretario)',
+        },
+        printed: {
+          es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1944. El Bank Note Museum agrupa el tipo 390b en las fechas 20.07.1944, 01.01.1945 y 07.08.1947. Formato publicado: 140 × 70 mm. Numista marca esta fecha como serie I en oliva (Hernández 91). No se publica aquí una tirada.',
+          en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1944. The Bank Note Museum groups type 390b under 20.07.1944, 01.01.1945, and 07.08.1947. Published size: 140 × 70 mm. Numista marks this date as Series I in olive (Hernández 91). No printage is published here.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/2-pesos-oro-1944-composite.jpg',
+          front: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
+          back: '/images/catalog/colombia/2-pesos-oro-1944-back.jpg',
+        },
+        title: {
+          es: '2 pesos oro · Banco de la República · 1944',
+          en: '2 pesos oro · Banco de la República · 1944',
+        },
+        lead: {
+          es: 'Dos pesos oro de circulación, Pick 390b: serie I, serial 12527403, 20 de julio de 1944. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+          en: 'A circulating two-peso oro, Pick 390b: Series I, serial 12527403, 20 July 1944. This record gathers the face and back of the same unslabbed note.',
+        },
+        description: {
+          es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este dos pesos oro de la familia Pick 390 (1942–1955). El anverso, en verde oliva sobre fondo policromado, lleva al centro el retrato de Camilo Torres Tenorio, con el nombre «TORRES» bajo el óvalo, y la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: Nº 12527403, a ambos flancos del retrato. La leyenda «SERIE I» aparece dos veces, en oliva, no en el rojo de las fechas 1942–1943 del mismo tipo. La fecha impresa es «BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944». Las firmas son las de Julio Caro (gerente) y Luis Ángel Arango (secretario), el par que Numista asigna a esta fecha (JC, LAA₁) y el que Banknote World registra también en el 390a de 1942. El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 2 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 390b, según el Bank Note Museum, cubre tres fechas (1944, 1945 y 1947). El GG de 1950 (Pick 390c) es otra fecha; el cierre de 1955 (Pick 390d) se documenta en esta misma ficha. No es el 10 pesos oro de Nariño (Pick 389). Esta pieza de la colección se presenta en funda, circulada, sin encapsular.',
+          en: 'The Banco de la República ordered this two-peso oro of the Pick 390 family (1942–1955) from the American Bank Note Company in New York. The face, olive green on a multicolour underprint, carries at center the portrait of Camilo Torres Tenorio, named “TORRES” under the oval, and the promise to pay the bearer two gold pesos. The serials are in red: No. 12527403, at both flanks of the portrait. The legend “SERIE I” appears twice in olive, not in the red of the 1942–1943 dates of the same type. The printed date is “BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944.” The signatures are those of Julio Caro (gerente) and Luis Ángel Arango (secretario), the pair Numista assigns to this date (JC, LAA₁) and the pair Banknote World also records on the 1942 390a. The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 2 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 390b, per the Bank Note Museum, covers three dates (1944, 1945, and 1947). The 1950 GG (Pick 390c) is another date; the 1955 close (Pick 390d) is documented on this same page. It is not the Nariño 10 pesos oro (Pick 389). This collection piece is shown in a sleeve, circulated, unslabbed.',
+        },
+        frontCaption: {
+          es: 'Anverso del 2 pesos oro, Pick 390b: Torres, serie I, serial 12527403 y fecha 20 de julio de 1944.',
+          en: 'Face of the 2 pesos oro, Pick 390b: Torres, Series I, serial 12527403, and the date 20 July 1944.',
+        },
+        backCaption: {
+          es: 'Reverso del 2 pesos oro, Pick 390b: Libertad en medallón, cifras 2 y pie de la American Bank Note Company.',
+          en: 'Back of the 2 pesos oro, Pick 390b: Liberty in a medallion, the figures 2, and the American Bank Note Company imprint.',
+        },
+        scarcity: {
+          es: 'El Bank Note Museum describe el Pick 390 como emisión de circulación de 2 pesos oro, 1942–1955, grabada por la American Bank Note Company: Torres al anverso y la Libertad al reverso. El letra b agrupa tres fechas (1944, 1945 y 1947); Numista sitúa la de 20 de julio de 1944 en unos 5 % de los ejemplares registrados del tipo y marca la serie I en oliva. Numista da al conjunto un índice de rareza 48. No es prueba ni espécimen. Esta ficha no inventa una tirada por fecha.',
+          en: 'The Bank Note Museum describes Pick 390 as a circulating 2-peso oro issue of 1942–1955, engraved by the American Bank Note Company: Torres on the face and Liberty on the back. Letter b groups three dates (1944, 1945, and 1947); Numista places the 20 July 1944 date at about 5% of recorded examples of the type and marks Series I in olive. Numista gives the type a rarity index of 48. It is neither a proof nor a specimen. This record does not invent a printage by date.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 12527403. La pieza se presenta en funda, circulada, sin encapsular.',
+          en: 'A PMG or PCGS census for serial 12527403 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+        },
+        grade: {
+          es: 'Circulada, sin encapsular (colección privada)',
+          en: 'Circulated, unslabbed (private collection)',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0390.htm',
+            es: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+            en: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+            note: {
+              es: '390b: 20.07.1944, 01.01.1945 y 07.08.1947; anverso Camilo Torres, reverso Libertad; ABNC.',
+              en: '390b: 20.07.1944, 01.01.1945, and 07.08.1947; Camilo Torres on the face, Liberty on the back; ABNC.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/catalogue/note232681.html',
+            es: 'Numista — Colombia 2 pesos oro, N# 232681',
+            en: 'Numista — Colombia 2 pesos oro, N# 232681',
+            note: {
+              es: '20.07.1944: P# 390b / TBB B923c; Hernández 91; serie I en oliva; firmas JC y LAA₁; 140 × 70 mm; frecuencia 5 % en el tipo.',
+              en: '20.07.1944: P# 390b / TBB B923c; Hernández 91; Series I in olive; signatures JC and LAA₁; 140 × 70 mm; 5% frequency within the type.',
+            },
+          },
+          {
+            href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1942-p-390a-1.html',
+            es: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
+            en: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
+            note: {
+              es: 'Mismo diseño ABNC: Camilo Torres y Libertad; 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en 1942.',
+              en: 'Same ABNC design: Camilo Torres and Liberty; 140 × 70 mm; Julio Caro and Luis Ángel Arango on 1942.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/L100183',
+            es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+            en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+            note: {
+              es: 'Catálogo de referencia; Numista cita Hernández 91 para el 20 de julio de 1944.',
+              en: 'A standard catalog; Numista cites Hernández 91 for 20 July 1944.',
+            },
+          },
+        ],
+      },
+      {
+        id: '2-pesos-oro-1955',
+        pick: 'P# 390d · TBB B923g',
+        serial: 'GG 10739101',
+        signatures: {
+          es: 'Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario)',
+          en: 'Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario)',
+        },
+        printed: {
+          es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1955. El Bank Note Museum numera el tipo 390d en esa fecha. Formato publicado: 140 × 70 mm. Numista distingue, en serie GG, seriales de siete dígitos (Hernández 95) y de ocho (Hernández 96); esta pieza es de ocho. No se publica aquí una tirada.',
+          en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 January 1955. The Bank Note Museum numbers type 390d on that date. Published size: 140 × 70 mm. Numista distinguishes, in Series GG, seven-digit serials (Hernández 95) and eight-digit ones (Hernández 96); this piece is eight digits. No printage is published here.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/2-pesos-oro-1955-composite.jpg',
+          front: '/images/catalog/colombia/2-pesos-oro-1955-front.jpg',
+          back: '/images/catalog/colombia/2-pesos-oro-1955-back.jpg',
+        },
+        title: {
+          es: '2 pesos oro · Banco de la República · 1955',
+          en: '2 pesos oro · Banco de la República · 1955',
+        },
+        lead: {
+          es: 'Dos pesos oro de circulación, Pick 390d: serie GG, serial de ocho dígitos 10739101, 1.º de enero de 1955. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+          en: 'A circulating two-peso oro, Pick 390d: Series GG, eight-digit serial 10739101, 1 January 1955. This record gathers the face and back of the same unslabbed note.',
+        },
+        description: {
+          es: 'El Banco de la República cerró con esta fecha la familia Pick 390 de dos pesos oro, grabada por la American Bank Note Company de Nueva York. El anverso, en verde oliva sobre fondo policromado, lleva al centro el retrato de Camilo Torres Tenorio y la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: Nº 10739101, a ambos flancos del retrato. La leyenda «SERIE GG» aparece dos veces en negro. La fecha impresa es «BOGOTÁ, COLOMBIA. / 1° DE ENERO DE 1955». Las firmas son las de Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario), el par que Numista asigna a 1955 (LAA₂, EAR). El serial de ocho dígitos es la variedad que Hernández numera 96; no es el GG de siete dígitos (Hernández 95) ni el GG de 1950 con Jaime Londoño (Pick 390c). El reverso, en violeta, muestra la cabeza de la Libertad con gorro frigio en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 2 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». Es el mismo diseño que el 2 pesos oro de 1944 de esta ficha (serie I, Pick 390b), no un espécimen: el reverso no lleva serial. Esta pieza se presenta en funda, sin encapsular.',
+          en: 'The Banco de la República closed the Pick 390 two-peso oro family on this date, engraved by the American Bank Note Company in New York. The face, olive green on a multicolour underprint, carries at center the portrait of Camilo Torres Tenorio and the promise to pay the bearer two gold pesos. The serials are in red: No. 10739101, at both flanks of the portrait. The legend “SERIE GG” appears twice in black. The printed date is “BOGOTÁ, COLOMBIA. / 1° DE ENERO DE 1955.” The signatures are those of Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario), the pair Numista assigns to 1955 (LAA₂, EAR). The eight-digit serial is the variety Hernández numbers 96; it is not the seven-digit GG (Hernández 95) or the 1950 GG with Jaime Londoño (Pick 390c). The violet back shows Liberty’s head in a Phrygian cap, in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 2 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” It is the same design as this page’s 1944 2 pesos oro (Series I, Pick 390b), not a specimen: the back does not carry a serial. This piece is shown in a sleeve, unslabbed.',
+        },
+        frontCaption: {
+          es: 'Anverso del 2 pesos oro, Pick 390d: Torres, serie GG, serial de ocho dígitos 10739101 y fecha 1.º de enero de 1955.',
+          en: 'Face of the 2 pesos oro, Pick 390d: Torres, Series GG, eight-digit serial 10739101, and the date 1 January 1955.',
+        },
+        backCaption: {
+          es: 'Reverso del 2 pesos oro, Pick 390d: Libertad en medallón violeta, cifras 2 y pie de la American Bank Note Company.',
+          en: 'Back of the 2 pesos oro, Pick 390d: Liberty in a violet medallion, the figures 2, and the American Bank Note Company imprint.',
+        },
+        scarcity: {
+          es: 'El Bank Note Museum describe el Pick 390d como la fecha 01.01.1955 del 2 pesos oro. Numista agrupa circulación y variedades del diseño en N# 232681, con índice de rareza 48, y marca la frecuencia del GG de ocho dígitos en un 17 % entre quienes poseen el tipo, frente a un 60 % del GG de siete dígitos. No es prueba ni espécimen. Esta ficha no inventa una tirada.',
+          en: 'The Bank Note Museum describes Pick 390d as the 01.01.1955 date of the 2 pesos oro. Numista groups circulating notes and varieties of the design under N# 232681, with a rarity index of 48, and marks the eight-digit GG’s frequency at 17% among owners of the type, against 60% for the seven-digit GG. It is neither a proof nor a specimen. This record does not invent a printage.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 10739101. La pieza se presenta en funda, sin encapsular.',
+          en: 'A PMG or PCGS census for serial 10739101 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+        },
+        grade: {
+          es: 'Sin encapsular (colección privada)',
+          en: 'Unslabbed (private collection)',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0390.htm',
+            es: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+            en: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
+            note: {
+              es: '390d: 01.01.1955; anverso Camilo Torres, reverso Libertad; ABNC.',
+              en: '390d: 01.01.1955; Camilo Torres on the face, Liberty on the back; ABNC.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/catalogue/note232681.html',
+            es: 'Numista — Colombia 2 pesos oro, N# 232681',
+            en: 'Numista — Colombia 2 pesos oro, N# 232681',
+            note: {
+              es: '01.01.1955, serie GG de ocho dígitos: P# 390d / TBB B923g; Hernández 96; firmas LAA₂ y EAR; 140 × 70 mm; frecuencia 17 % en el tipo.',
+              en: '01.01.1955, eight-digit Series GG: P# 390d / TBB B923g; Hernández 96; signatures LAA₂ and EAR; 140 × 70 mm; 17% frequency within the type.',
+            },
+          },
+          {
+            href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1955-p-390d.html',
+            es: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
+            en: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
+            note: {
+              es: 'Fecha 01.01.1955; ABNC; 140 × 70 mm; anverso Torres, reverso Libertad.',
+              en: 'Date 01.01.1955; ABNC; 140 × 70 mm; Torres on the face, Liberty on the back.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/L100183',
+            es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+            en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+            note: {
+              es: 'Catálogo de referencia; Numista cita Hernández 96 para el GG de ocho dígitos de 1955.',
+              en: 'A standard catalog; Numista cites Hernández 96 for the 1955 eight-digit GG.',
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: '10-pesos-oro-1943',
     chapterId: 'banco-de-la-republica',
     path: `${COLOMBIA_PATH}10-pesos-oro-1943/`,
@@ -366,100 +662,6 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
           en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
-        },
-      },
-    ],
-  },
-  {
-    id: '2-pesos-oro-1944',
-    chapterId: 'banco-de-la-republica',
-    path: `${COLOMBIA_PATH}2-pesos-oro-1944/`,
-    pick: 'P# 390b · TBB B923c',
-    serial: 'I 12527403',
-    signatures: {
-      es: 'Julio Caro (gerente) y Luis Ángel Arango (secretario)',
-      en: 'Julio Caro (gerente) and Luis Ángel Arango (secretario)',
-    },
-    printed: {
-      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1944. El Bank Note Museum agrupa el tipo 390b en las fechas 20.07.1944, 01.01.1945 y 07.08.1947. Formato publicado: 140 × 70 mm. Numista marca esta fecha como serie I en oliva (Hernández 91). No se publica aquí una tirada.',
-      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1944. The Bank Note Museum groups type 390b under 20.07.1944, 01.01.1945, and 07.08.1947. Published size: 140 × 70 mm. Numista marks this date as Series I in olive (Hernández 91). No printage is published here.',
-    },
-    images: {
-      composite: '/images/catalog/colombia/2-pesos-oro-1944-composite.jpg',
-      front: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
-      back: '/images/catalog/colombia/2-pesos-oro-1944-back.jpg',
-    },
-    title: {
-      es: '2 pesos oro · Banco de la República · 1944',
-      en: '2 pesos oro · Banco de la República · 1944',
-    },
-    kicker: {
-      es: 'Colombia · Banco de la República · ABNC',
-      en: 'Colombia · Banco de la República · ABNC',
-    },
-    lead: {
-      es: 'Dos pesos oro de circulación, Pick 390b: serie I, serial 12527403, 20 de julio de 1944. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
-      en: 'A circulating two-peso oro, Pick 390b: Series I, serial 12527403, 20 July 1944. This record gathers the face and back of the same unslabbed note.',
-    },
-    description: {
-      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este dos pesos oro de la familia Pick 390 (1942–1955). El anverso, en verde oliva sobre fondo policromado, lleva al centro el retrato de Camilo Torres Tenorio, con el nombre «TORRES» bajo el óvalo, y la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: Nº 12527403, a ambos flancos del retrato. La leyenda «SERIE I» aparece dos veces, en oliva, no en el rojo de las fechas 1942–1943 del mismo tipo. La fecha impresa es «BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944». Las firmas son las de Julio Caro (gerente) y Luis Ángel Arango (secretario), el par que Numista asigna a esta fecha (JC, LAA₁) y el que Banknote World registra también en el 390a de 1942. El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 2 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 390b, según el Bank Note Museum, cubre tres fechas (1944, 1945 y 1947). No debe confundirse con las series GG de 1950 y 1955 (Pick 390c y 390d) ni con el 10 pesos oro de Nariño de la misma imprenta (Pick 389). Esta pieza de la colección se presenta en funda, circulada, sin encapsular.',
-      en: 'The Banco de la República ordered this two-peso oro of the Pick 390 family (1942–1955) from the American Bank Note Company in New York. The face, olive green on a multicolour underprint, carries at center the portrait of Camilo Torres Tenorio, named “TORRES” under the oval, and the promise to pay the bearer two gold pesos. The serials are in red: No. 12527403, at both flanks of the portrait. The legend “SERIE I” appears twice, in olive, not in the red of the 1942–1943 dates of the same type. The printed date is “BOGOTA, COLOMBIA. / 20 DE JULIO DE 1944.” The signatures are those of Julio Caro (gerente) and Luis Ángel Arango (secretario), the pair Numista assigns to this date (JC, LAA₁) and the pair Banknote World also records on the 1942 390a. The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 2 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 390b, per the Bank Note Museum, covers three dates (1944, 1945, and 1947). It should not be confused with the GG series of 1950 and 1955 (Pick 390c and 390d) or with the Nariño 10 pesos oro from the same printer (Pick 389). This collection piece is shown in a sleeve, circulated, unslabbed.',
-    },
-    frontCaption: {
-      es: 'Anverso del 2 pesos oro, Pick 390b: Torres, serie I, serial 12527403 y fecha 20 de julio de 1944.',
-      en: 'Face of the 2 pesos oro, Pick 390b: Torres, Series I, serial 12527403, and the date 20 July 1944.',
-    },
-    backCaption: {
-      es: 'Reverso del 2 pesos oro, Pick 390b: Libertad en medallón, cifras 2 y pie de la American Bank Note Company.',
-      en: 'Back of the 2 pesos oro, Pick 390b: Liberty in a medallion, the figures 2, and the American Bank Note Company imprint.',
-    },
-    scarcity: {
-      es: 'El Bank Note Museum describe el Pick 390 como emisión de circulación de 2 pesos oro, 1942–1955, grabada por la American Bank Note Company: Torres al anverso y la Libertad al reverso. El letra b agrupa tres fechas (1944, 1945 y 1947); Numista sitúa la de 20 de julio de 1944 en unos 5 % de los ejemplares registrados del tipo y marca la serie I en oliva. Numista da al conjunto un índice de rareza 48. No es prueba ni espécimen. Esta ficha no inventa una tirada por fecha.',
-      en: 'The Bank Note Museum describes Pick 390 as a circulating 2-peso oro issue of 1942–1955, engraved by the American Bank Note Company: Torres on the face and Liberty on the back. Letter b groups three dates (1944, 1945, and 1947); Numista places the 20 July 1944 date at about 5% of recorded examples of the type and marks Series I in olive. Numista gives the type a rarity index of 48. It is neither a proof nor a specimen. This record does not invent a printage by date.',
-    },
-    population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 12527403. La pieza se presenta en funda, circulada, sin encapsular.',
-      en: 'A PMG or PCGS census for serial 12527403 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
-    },
-    grade: {
-      es: 'Circulada, sin encapsular (colección privada)',
-      en: 'Circulated, unslabbed (private collection)',
-    },
-    sources: [
-      {
-        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0390.htm',
-        es: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
-        en: 'Bank Note Museum — Colombia P-390, 2 pesos oro (1942–1955)',
-        note: {
-          es: '390b: 20.07.1944, 01.01.1945 y 07.08.1947; anverso Camilo Torres, reverso Libertad; ABNC.',
-          en: '390b: 20.07.1944, 01.01.1945, and 07.08.1947; Camilo Torres on the face, Liberty on the back; ABNC.',
-        },
-      },
-      {
-        href: 'https://en.numista.com/catalogue/note232681.html',
-        es: 'Numista — Colombia 2 pesos oro, N# 232681',
-        en: 'Numista — Colombia 2 pesos oro, N# 232681',
-        note: {
-          es: '20.07.1944: P# 390b / TBB B923c; Hernández 91; serie I en oliva; firmas JC y LAA₁; 140 × 70 mm; frecuencia 5 % en el tipo.',
-          en: '20.07.1944: P# 390b / TBB B923c; Hernández 91; Series I in olive; signatures JC and LAA₁; 140 × 70 mm; 5% frequency within the type.',
-        },
-      },
-      {
-        href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1942-p-390a-1.html',
-        es: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
-        en: 'Banknote World — Colombia 2 pesos oro 1942, P-390a.1',
-        note: {
-          es: 'Mismo diseño ABNC: Camilo Torres y Libertad; 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en 1942.',
-          en: 'Same ABNC design: Camilo Torres and Liberty; 140 × 70 mm; Julio Caro and Luis Ángel Arango on 1942.',
-        },
-      },
-      {
-        href: 'https://en.numista.com/L100183',
-        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
-        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
-        note: {
-          es: 'Catálogo de referencia; Numista cita Hernández 91 para el 20 de julio de 1944.',
-          en: 'A standard catalog; Numista cites Hernández 91 for 20 July 1944.',
         },
       },
     ],
@@ -679,6 +881,29 @@ export const notePageCopy = {
 
 export function noteById(id: string): ColombiaNote | undefined {
   return colombiaNotes.find((note) => note.id === id);
+}
+
+export function notePieces(note: ColombiaNote): ColombiaNotePiece[] {
+  if (note.pieces?.length) return note.pieces;
+  return [
+    {
+      id: note.id,
+      pick: note.pick,
+      serial: note.serial,
+      signatures: note.signatures,
+      printed: note.printed,
+      images: note.images,
+      title: note.title,
+      lead: note.lead,
+      description: note.description,
+      frontCaption: note.frontCaption,
+      backCaption: note.backCaption,
+      scarcity: note.scarcity,
+      population: note.population,
+      grade: note.grade,
+      sources: note.sources,
+    },
+  ];
 }
 
 export function notePath(note: ColombiaNote, locale: 'es' | 'en'): string {
