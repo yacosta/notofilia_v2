@@ -8,6 +8,8 @@ import { colombiaNoteSlugs } from '../data/colombia-notes';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import {
+  USA_MISC_PATH,
+  USA_MISC_PATH_EN,
   USA_MPC_PATH,
   USA_MPC_PATH_EN,
   USA_PATH,
@@ -103,6 +105,7 @@ export function statsLine(locale: Locale): string {
 
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
+addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
@@ -367,6 +370,7 @@ export const stubPages = [
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
+  { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },

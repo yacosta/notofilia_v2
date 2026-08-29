@@ -42,6 +42,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/', 'en'),
+      '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
       '/en/collection/colombia/5-pesos-rio-hacha-1883/',
     );
@@ -110,6 +114,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/'],
+      '/en/collection/united-states/miscellaneous/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],

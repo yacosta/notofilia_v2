@@ -5,6 +5,8 @@ export const USA_PATH = '/coleccion/estados-unidos/';
 export const USA_PATH_EN = '/collection/united-states/';
 export const USA_MPC_PATH = '/coleccion/estados-unidos/mpc-vietnam/';
 export const USA_MPC_PATH_EN = '/collection/united-states/mpc-vietnam/';
+export const USA_MISC_PATH = '/coleccion/estados-unidos/miscelaneos/';
+export const USA_MISC_PATH_EN = '/collection/united-states/miscellaneous/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
