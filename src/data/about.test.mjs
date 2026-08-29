@@ -35,14 +35,11 @@ describe('about page copy and paths', () => {
     assert.match(pageSource, /id="main-content"/);
   });
 
-  it('uses the museum-case type and palette, not the paper-red mock', () => {
+  it('uses a live-token color-block hero, not Archivo or a fabricated portrait', () => {
+    assert.match(pageSource, /bg-alert/);
+    assert.match(pageSource, /text-alert-ink/);
     assert.match(pageSource, /font-display/);
-    assert.match(pageSource, /text-gold-light/);
-    assert.match(pageSource, /text-cream/);
-    assert.match(pageSource, /bg-bg/);
     assert.match(pageSource, /personMonogram/);
-    assert.doesNotMatch(pageSource, /bg-alert/);
-    assert.doesNotMatch(pageSource, /text-alert-ink/);
     assert.doesNotMatch(pageSource, /Archivo/);
     assert.doesNotMatch(pageSource, /curador\.webp/);
   });
