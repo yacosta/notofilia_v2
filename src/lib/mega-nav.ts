@@ -35,8 +35,8 @@ export { navColumns } from './nav-columns';
 export const megaNav: NavNode[] = [
   {
     id: 'coleccion-notofilia',
-    es: 'Colección Virtual Notafilia',
-    en: 'Virtual Notaphily Collection',
+    es: 'Colección Virtual - Notafilia',
+    en: 'Virtual Collection - Notaphily',
     href: NOTAFILIA_PATH,
     children: [
       {
