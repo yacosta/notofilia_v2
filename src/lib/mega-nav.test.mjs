@@ -79,6 +79,16 @@ describe('United States submenu', () => {
   });
 });
 
+describe('Recursos submenu', () => {
+  it('marks each resource link with a decorative icon', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
+    assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
+    assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
+    assert.match(recursos, /id: 'noticias',[\s\S]*?icon: 'news'/);
+  });
+});
+
 describe('footer links from mega-nav', () => {
   it('includes nested submenu links in document order and skips headings without href', () => {
     assert.deepEqual(
