@@ -2,6 +2,9 @@ export type AboutLocale = 'es' | 'en';
 
 export const ABOUT_PATH = '/acerca-de/';
 export const ABOUT_PATH_EN = '/about/';
+export const ABOUT_PORTRAIT = '/uploads/yezid-acosta.webp';
+export const ABOUT_PORTRAIT_WIDTH = 1440;
+export const ABOUT_PORTRAIT_HEIGHT = 1440;
 
 export const aboutCopy = {
   es: {
@@ -33,7 +36,7 @@ export const aboutCopy = {
       '¿El resto de mi vida? Trabajo en tecnología. Soy esposo y papá de dos hermosos gemelos. Y disfruto de un buen cigarro —tanto que tengo ',
     bioBrandAfter: '.',
     personName: 'Yezid Acosta',
-    personMonogram: 'YA',
+    portraitAlt: 'Retrato de Yezid Acosta',
     collectorSince: 'Coleccionista desde los cinco años',
     statsBanknotes: 'Billetes',
     statsCoins: 'Monedas',
@@ -74,7 +77,7 @@ export const aboutCopy = {
       'The rest of my life? I work in technology, and I once wrote a children’s book. But some part of me is still that five-year-old, holding a banknote up to the light.',
     bioBrandAfter: '',
     personName: 'Yezid Acosta',
-    personMonogram: 'YA',
+    portraitAlt: 'Portrait of Yezid Acosta',
     collectorSince: 'Collector since the age of five',
     statsBanknotes: 'Banknotes',
     statsCoins: 'Coins',

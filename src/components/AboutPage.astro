@@ -2,8 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { collectionStats, copy, localizePath, SITE_URL, type Locale } from '../lib/site';
-import { aboutCopy, aboutPath } from '../data/about';
+import { ABOUT_PORTRAIT, ABOUT_PORTRAIT_HEIGHT, ABOUT_PORTRAIT_WIDTH, aboutCopy, aboutPath } from '../data/about';
 import { contactPath } from '../data/contact';
+import { cfImage, imageSrcset } from '../lib/images';
 
 interface Props {
   locale: Locale;
@@ -41,6 +42,7 @@ const jsonLd = {
       name: t.personName,
       url: new URL(pathname, SITE_URL).href,
       jobTitle: copy[locale].collectorJobTitle,
+      image: new URL(ABOUT_PORTRAIT, SITE_URL).href,
     },
   ],
 };
@@ -125,10 +127,18 @@ const jsonLd = {
         </div>
 
         <aside class="border border-line-strong bg-panel" aria-labelledby="collector-name">
-          <div class="flex aspect-square items-end border-b border-line-strong bg-bg p-6">
-            <p class="m-0 font-display text-[clamp(2.5rem,6vw,4rem)] leading-none text-gold-light" aria-hidden="true">
-              {t.personMonogram}
-            </p>
+          <div class="aspect-square overflow-hidden border-b border-line-strong bg-bg">
+            <img
+              src={cfImage(ABOUT_PORTRAIT, { width: 800, fit: 'cover' })}
+              srcset={imageSrcset(ABOUT_PORTRAIT, [400, 800, 1200])}
+              sizes="(min-width: 1024px) 18.5rem, calc(100vw - 2 * var(--page-gutter))"
+              alt={t.portraitAlt}
+              width={ABOUT_PORTRAIT_WIDTH}
+              height={ABOUT_PORTRAIT_HEIGHT}
+              class="h-full w-full object-cover contrast-125 grayscale"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="px-6 py-[22px]">
             <h2 id="collector-name" class="m-0 font-display text-[21px] font-normal leading-tight text-cream">

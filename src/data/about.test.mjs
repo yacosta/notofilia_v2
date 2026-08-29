@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { aboutCopy, aboutPath } from './about.ts';
+import {
+  ABOUT_PORTRAIT,
+  ABOUT_PORTRAIT_HEIGHT,
+  ABOUT_PORTRAIT_WIDTH,
+  aboutCopy,
+  aboutPath,
+} from './about.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 
 const pageSource = readFileSync(new URL('../components/AboutPage.astro', import.meta.url), 'utf8');
@@ -39,10 +45,28 @@ describe('about page copy and paths', () => {
     assert.match(pageSource, /font-display/);
     assert.match(pageSource, /text-gold-light/);
     assert.match(pageSource, /text-cream/);
-    assert.match(pageSource, /personMonogram/);
+    assert.doesNotMatch(pageSource, /personMonogram/);
     assert.doesNotMatch(pageSource, /bg-alert/);
     assert.doesNotMatch(pageSource, /text-alert-ink/);
     assert.doesNotMatch(pageSource, /Archivo/);
     assert.doesNotMatch(pageSource, /curador\.webp/);
+  });
+
+  it('serves the collector portrait through cfImage and bilingual alts', () => {
+    assert.equal(ABOUT_PORTRAIT, '/uploads/yezid-acosta.webp');
+    assert.equal(ABOUT_PORTRAIT_WIDTH, 1440);
+    assert.equal(ABOUT_PORTRAIT_HEIGHT, 1440);
+    assert.equal(aboutCopy.es.portraitAlt, 'Retrato de Yezid Acosta');
+    assert.equal(aboutCopy.en.portraitAlt, 'Portrait of Yezid Acosta');
+    assert.ok(existsSync(new URL('../../public/uploads/yezid-acosta.webp', import.meta.url)));
+    assert.match(pageSource, /cfImage\(ABOUT_PORTRAIT/);
+    assert.match(pageSource, /imageSrcset\(ABOUT_PORTRAIT/);
+    assert.match(pageSource, /alt=\{t\.portraitAlt\}/);
+    assert.match(pageSource, /width=\{ABOUT_PORTRAIT_WIDTH\}/);
+    assert.match(pageSource, /height=\{ABOUT_PORTRAIT_HEIGHT\}/);
+    const imgTags = pageSource.match(/<img\b/g) ?? [];
+    assert.equal(imgTags.length, 1);
+    assert.doesNotMatch(pageSource, /curador\.webp/);
+    assert.doesNotMatch(pageSource, /aria-label=\{t\.portraitAlt\}/);
   });
 });
