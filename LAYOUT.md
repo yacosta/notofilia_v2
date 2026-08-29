@@ -34,12 +34,12 @@ Once a page opens the full content column (facts card, image pair, chapter grid)
 - **Do** keep the one- or two-sentence lead under the `h1` at `max-w-[46rem]`. That line sits *above* the case objects.
 - **Do not** put `max-w-[46rem]` on a section that follows a facts card or a note/coin image grid. That recuts the margin and the page looks stepped.
 - **Do not** add extra `px-*` on those prose sections to “match” the facts card. The card’s `p-6` is inner padding of the panel, not the page gutter. Align section headings with the card’s *outer* edge and with “Anverso” / “Reverso”.
-- **Do not** use `46rem` as a page wrapper on a collection object page. That is for text-only pieces (editorial article). About uses the museum case (`max-w-content`) because the collector aside and pull quote are full-width objects; keep the hero lead and bio hook at `max-w-[40rem]` / `max-w-[46rem]`.
+- **Do not** use `46rem` as a page wrapper on a collection object page. That is for a short dek or a text-only editorial article.
 
-Text-only pages keep a reading column:
+Text-only and mixed pages:
 
+- `AboutPage.astro`: full-bleed color-block hero; lead inside the hero ~`640px` / `40rem`. After the hero, breadcrumbs, two-column body, aside, pull-quote, and closing use the museum case (`max-w-content` + `--page-gutter`). Do not wrap the whole about page in `max-w-[46rem]`.
 - `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
-- `AboutPage.astro`: `max-w-content` on the article; the hero lead stays narrower.
 - `EditorialIndexPage.astro`: a `46rem` header above a wider index is fine.
 - Stubs and the 404 page may stay at `720px`.
 
@@ -73,7 +73,7 @@ The post-image narrative cap is removed on:
 - `ColombiaNotePage.astro`
 - `NetherlandsCoinPage.astro`
 
-Keep `max-w-[46rem]` on each page’s lead. Series index pages already use `max-w-content` without a second cap. Editorial articles and stubs stay on a reading column; about uses the museum case.
+Keep `max-w-[46rem]` on each piece page’s lead. Series index pages already use `max-w-content` without a second cap. About uses `max-w-content` after the color-block hero (hero lead ~`640px`). Leave editorial articles and stubs on a reading column.
 
 ## Check
 

@@ -55,9 +55,7 @@ Used only by `AboutPage.astro` (`/acerca-de/`, `/en/about/`).
 
 ## Types with no photo hero
 
-`about` uses pattern 4 (color-block). `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `search`, `stub`, `error` have no photo hero.
-
-`about` uses the same **text-header** family as discipline indexes: gold-light kicker, stacked Montenegrin Gothic One `h1`, cream-dim lead, then the museum case. It is not a fourth photo hero and must not use a color-block outside the live tokens (`bg`, `cream`, `gold-light`).
+`about` uses pattern 4 (color-block, live `--color-alert` / `--color-alert-ink`). `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `search`, `stub`, `error` have no photo hero.
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `imageSrcset`. That is not a hero.
 

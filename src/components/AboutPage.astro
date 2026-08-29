@@ -52,7 +52,26 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+    <section class="bg-alert text-alert-ink" aria-labelledby="about-heading">
+      <div class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-12 md:pb-[4.75rem] md:pt-16">
+        <p class="mb-5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.22em] text-alert-ink/85 md:text-[14px]">
+          {t.kicker}
+        </p>
+        <h1
+          id="about-heading"
+          class="mb-0 mt-0 font-display text-[clamp(2.75rem,11vw,7.375rem)] font-normal leading-[0.88] tracking-[-0.04em] text-alert-ink"
+        >
+          {t.titleLines.map((line) => (
+            <span class="block">{line}</span>
+          ))}
+        </h1>
+        <p class="mb-0 mt-8 max-w-[40rem] font-sans text-[clamp(1.05rem,2vw,1.3125rem)] leading-[1.4] text-alert-ink [text-wrap:pretty] md:mt-[2.125rem]">
+          {t.lead}
+        </p>
+      </div>
+    </section>
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-10 md:pb-24 md:pt-12">
       <Breadcrumb
         locale={locale}
         label={t.breadcrumb}
@@ -62,22 +81,7 @@ const jsonLd = {
         ]}
       />
 
-      <header class="border-b border-line-strong pb-12 md:pb-16">
-        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
-        <h1
-          id="about-heading"
-          class="mb-0 mt-5 font-display text-[clamp(2.35rem,8vw,5.5rem)] font-normal leading-[0.92] tracking-[-0.02em] text-cream"
-        >
-          {t.titleLines.map((line) => (
-            <span class="block">{line}</span>
-          ))}
-        </h1>
-        <p class="mb-0 mt-8 max-w-[40rem] font-sans text-[clamp(1.05rem,2vw,1.25rem)] leading-[1.5] text-cream-dim [text-wrap:pretty]">
-          {t.lead}
-        </p>
-      </header>
-
-      <div class="mt-12 grid items-start gap-12 lg:mt-16 lg:grid-cols-[minmax(0,1fr)_18.5rem] lg:gap-16">
+      <div class="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,23.25rem)] lg:gap-16">
         <div>
           <section aria-labelledby="about-site-heading">
             <h2
@@ -87,7 +91,9 @@ const jsonLd = {
               {t.theSite}
             </h2>
             {t.site.map((paragraph) => (
-              <p class="mb-5 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">{paragraph}</p>
+              <p class="mb-5 mt-0 font-sans text-[18px] leading-[1.62] text-cream [text-wrap:pretty] last:mb-0">
+                {paragraph}
+              </p>
             ))}
           </section>
 
@@ -100,54 +106,56 @@ const jsonLd = {
             >
               {t.aboutMe}
             </h2>
-            <p class="mb-5 mt-0 max-w-[46rem] font-display text-[clamp(1.35rem,2.6vw,1.85rem)] font-normal leading-[1.2] text-cream [text-wrap:pretty]">
+            <p class="mb-5 mt-0 font-display text-[clamp(1.45rem,3vw,1.8125rem)] font-normal leading-[1.2] tracking-[-0.018em] text-cream [text-wrap:pretty]">
               {t.bioLead}
             </p>
             {t.bio.map((paragraph) => (
-              <p class="mb-5 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty]">{paragraph}</p>
+              <p class="mb-5 mt-0 font-sans text-[18px] leading-[1.62] text-cream [text-wrap:pretty]">{paragraph}</p>
             ))}
-            {t.bioBrandAfter ? (
-              <p class="mb-0 mt-0 font-sans text-[17px]/7 text-muted [text-wrap:pretty]">
-                {t.bioBrandBefore}
-                <a class="text-cream underline decoration-line-strong underline-offset-4 hover:text-gold-light" href={brandHref}>
-                  {t.brandLabel}
-                </a>
-                {t.bioBrandAfter}
-              </p>
-            ) : (
-              <p class="mb-0 mt-0 font-sans text-[17px]/7 text-muted [text-wrap:pretty]">{t.bioBrandBefore}</p>
-            )}
+            {
+              t.bioBrandAfter ? (
+                <p class="mb-0 mt-0 font-sans text-[18px] leading-[1.62] text-cream-dim [text-wrap:pretty]">
+                  {t.bioBrandBefore}
+                  <a class="text-gold-light underline decoration-line-strong underline-offset-[3px] hover:text-cream" href={brandHref}>
+                    {t.brandLabel}
+                  </a>
+                  {t.bioBrandAfter}
+                </p>
+              ) : (
+                <p class="mb-0 mt-0 font-sans text-[18px] leading-[1.62] text-cream-dim [text-wrap:pretty]">{t.bioBrandBefore}</p>
+              )
+            }
           </section>
         </div>
 
-        <aside class="border border-line-strong bg-panel" aria-labelledby="collector-name">
-          <div class="flex aspect-square items-end border-b border-line-strong bg-bg p-6">
+        <aside class="border-2 border-line-strong bg-panel" aria-labelledby="collector-name">
+          <div class="flex aspect-square max-h-[23.25rem] items-end border-b-2 border-line-strong bg-bg p-6">
             <p class="m-0 font-display text-[clamp(2.5rem,6vw,4rem)] leading-none text-gold-light" aria-hidden="true">
               {t.personMonogram}
             </p>
           </div>
-          <div class="p-6">
-            <h2 id="collector-name" class="m-0 font-display text-[1.35rem] font-normal leading-tight text-cream">
+          <div class="px-6 py-[22px]">
+            <h2 id="collector-name" class="m-0 font-display text-[21px] font-normal leading-tight text-cream">
               {t.personName}
             </h2>
-            <p class="mb-0 mt-2 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
+            <p class="mb-0 mt-1 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
               {t.collectorSince}
             </p>
-            <dl class="mb-0 mt-5 border-t border-line">
+            <dl class="mb-0 mt-5 border-t border-line-strong">
               {statRows.map((row, index) => (
                 <div
                   class:list={[
                     'flex items-center justify-between py-2.5 font-sans text-[13px]',
-                    index < statRows.length - 1 ? 'border-b border-line' : '',
+                    index < statRows.length - 1 ? 'border-b border-line-strong' : '',
                   ]}
                 >
                   <dt class="m-0 text-muted">{row.label}</dt>
-                  <dd class="m-0 font-sans text-[15px] font-semibold tabular-nums text-cream">{row.value}</dd>
+                  <dd class="m-0 font-display text-[15px] font-normal tabular-nums text-cream">{row.value}</dd>
                 </div>
               ))}
             </dl>
             <a
-              class="mt-5 inline-flex min-h-12 w-full items-center justify-start rounded-[2px] bg-cream px-4 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-bg no-underline hover:bg-cream-dim"
+              class="mt-4 inline-flex min-h-11 w-full items-center justify-start rounded-[2px] bg-cream px-3.5 py-2.5 font-sans text-[14px] font-semibold uppercase tracking-[0.1em] text-bg no-underline hover:bg-cream-dim"
               href={collectionHref}
             >
               {t.collectionCta}
@@ -156,17 +164,17 @@ const jsonLd = {
         </aside>
       </div>
 
-      <blockquote class="mb-0 mt-16 border-y border-line-strong py-10 md:py-12">
-        <p class="mb-0 mt-0 max-w-[56rem] font-display text-[clamp(1.45rem,3vw,2.15rem)] font-normal leading-[1.18] tracking-[-0.015em] text-cream [text-wrap:pretty]">
+      <blockquote class="mb-0 mt-16 border-y-2 border-line-strong py-11">
+        <p class="mb-0 mt-0 max-w-[56.25rem] font-display text-[clamp(1.5rem,3.4vw,2.25rem)] font-normal leading-[1.14] tracking-[-0.02em] text-cream [text-wrap:pretty]">
           {t.pullQuote}
           <span class="text-gold-light">{t.pullQuoteAccent}</span>
         </p>
       </blockquote>
 
-      <div class="mt-12 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-        <p class="mb-0 mt-0 max-w-[30rem] font-sans text-[17px]/7 text-cream-dim">{t.closing}</p>
+      <div class="mt-12 flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-end">
+        <p class="mb-0 mt-0 max-w-[30rem] font-sans text-[18px] leading-[1.6] text-cream">{t.closing}</p>
         <a
-          class="inline-flex min-h-12 shrink-0 items-center justify-center rounded-[2px] border border-cream px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-cream no-underline hover:bg-cream/10"
+          class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-[2px] border border-cream px-5 py-2.5 font-sans text-[14px] font-semibold uppercase tracking-[0.1em] text-cream no-underline hover:bg-cream/10"
           href={contactHref}
         >
           {t.contactCta}
