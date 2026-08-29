@@ -4,6 +4,18 @@ import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
+describe('top-level collection labels', () => {
+  it('separates collection and discipline with a dash', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const notafilia = source.split("id: 'coleccion-notofilia'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    assert.match(notafilia, /es: 'Colección Virtual - Notafilia'/);
+    assert.match(notafilia, /en: 'Virtual Collection - Notaphily'/);
+    assert.match(numismatica, /es: 'Colección Virtual - Numismática'/);
+    assert.match(numismatica, /en: 'Virtual Collection - Numismatics'/);
+  });
+});
+
 describe('mega-nav columns', () => {
   it('keeps country rows on the main side and polymer in the aside', () => {
     const { main, aside } = navColumns([
