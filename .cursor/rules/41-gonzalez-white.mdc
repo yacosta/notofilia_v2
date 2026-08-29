@@ -1,0 +1,20 @@
+---
+description: González White 2019 BanRep catalogue — consult for Colombian types, dates, replacements
+globs:
+  - src/data/colombia*
+  - src/data/colombia-notes.ts
+  - docs/sources/gonzalez-white/**
+alwaysApply: false
+---
+
+# González White 2019 (Colombia BanRep notes)
+
+When identifying, dating, or stating printage for a **Banco de la República** note (1923–2019), read `docs/sources/gonzalez-white/README.md` and search `docs/sources/gonzalez-white/catalogo-billetes-banrep-2019-7ed.txt`, then confirm the row in the PDF.
+
+Cite **BG#** and the page. Use that row’s emisión, series, digit count, printer, and replacement flag. Do not republish `ESTIMADO $` or plates.
+
+Replacements (`asterisco`, `R`, `estrella`) are their own BG# rows. BanRep year totals in `docs/sources/banrep/` are not a substitute for a BG# emisión.
+
+This book does not list banca libre / Banco Nacional / independence paper — do not look those up here.
+
+Do not link the repo PDF on the public site.
