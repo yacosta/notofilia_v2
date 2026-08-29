@@ -119,8 +119,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. Esta vitrina abrirá con ese 1 dólar de África del Norte.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. This case will open with that North Africa $1.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. Esta vitrina abre con el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y seguirá con el de África del Norte de sello amarillo.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. This case opens with the Series 1957-B $1 Silver Certificate, serial S35513454A, and will add that North Africa yellow-seal $1.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, y el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -251,7 +251,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, and the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -268,7 +268,8 @@ export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
-  | '10-dolares-serie-1934-chicago';
+  | '10-dolares-serie-1934-chicago'
+  | '1-dolar-certificado-plata-1957b';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -827,6 +828,103 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
           en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-certificado-plata-1957b',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
+    pathEn: '/collection/united-states/1-dollar-silver-certificate-1957b/',
+    pick: 'P#419b · Fr. 1621',
+    serial: 'S35513454A',
+    signatures: {
+      es: 'Kathryn O\'Hay Granahan (tesorera) y C. Douglas Dillon (secretario del Tesoro)',
+      en: 'Kathryn O\'Hay Granahan (Treasurer) and C. Douglas Dillon (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1957 B; el Greysheet cita unos 718.400.000 ejemplares de Fr. 1621. Fue una de las últimas emisiones de certificados de plata antes de que el BEP dejara de imprimirlos.',
+      en: 'Series 1957 B; Greysheet cites about 718,400,000 notes for Fr. 1621. It was among the last silver-certificate issues before the BEP stopped printing them.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/sc-1957b-1-dollar-composite.jpg',
+      front: '/images/catalog/estados-unidos/sc-1957b-1-dollar-front.jpg',
+      back: '/images/catalog/estados-unidos/sc-1957b-1-dollar-back.jpg',
+      width: 1800,
+      height: 600,
+    },
+    title: {
+      es: '1 dólar · Certificado de plata · Serie 1957 B',
+      en: '$1 · Silver Certificate · Series 1957 B',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata',
+      en: 'United States · Silver Certificate',
+    },
+    lead: {
+      es: 'Anverso con Washington, sello azul del Tesoro y seriales azules; reverso con el Gran Sello y el lema IN GOD WE TRUST. Serie 1957 B, serial S35513454A.',
+      en: 'Face with Washington, a blue Treasury seal, and blue serials; back with the Great Seal and the motto IN GOD WE TRUST. Series 1957 B, serial S35513454A.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata serie 1957 B (Pick 419b, Friedberg 1621) es uno de los últimos billetes de esta clase que imprimió el Bureau of Engraving and Printing antes de que el dólar pasara por completo a Federal Reserve Notes con sello verde. El anverso, en negro con sello y seriales azules, lleva el retrato de George Washington en óvalo y la leyenda SILVER CERTIFICATE en el arco superior. El texto promete un depósito en plata en el Tesoro y el pago de ONE DOLLAR en plata al portador; abajo a la izquierda recuerda que el certificado es curso legal. El sello circular azul del Tesoro va a la derecha, sobre WASHINGTON, D.C. Las firmas son las de Kathryn O\'Hay Granahan y C. Douglas Dillon; la serie impresa, 1957 B, queda junto al secretario. Los seriales azules S35513454A se repiten arriba a la derecha y abajo a la izquierda (bloque SA). Las posiciones de plancha H2 y H751 figuran en los márgenes superior izquierdo e inferior derecho. El reverso, en verde, muestra el ONE central con IN GOD WE TRUST encima, el Gran Sello de Estados Unidos en los medallones laterales —pirámide inacabada a la izquierda, águila a la derecha— y la leyenda ONE DOLLAR abajo; la plancha de reverso 418 queda impresa abajo a la derecha. Esta pieza de la colección, en estado about uncirculated y sin encapsular, se presenta en funda.',
+      en: 'The Series 1957-B $1 Silver Certificate (Pick 419b, Friedberg 1621) is one of the last notes of this class the Bureau of Engraving and Printing produced before the dollar moved entirely to green-seal Federal Reserve Notes. The black face with blue seal and serials carries George Washington in an oval and the legend SILVER CERTIFICATE in the upper arc. The text promises a deposit of silver in the Treasury and payment of ONE DOLLAR in silver to the bearer; at lower left it notes that the certificate is legal tender. The blue circular Treasury seal sits at right, over WASHINGTON, D.C. The signatures are Kathryn O\'Hay Granahan and C. Douglas Dillon; the printed series, 1957 B, sits beside the Secretary. Blue serials S35513454A repeat at upper right and lower left (SA block). Plate positions H2 and H751 appear at the upper-left and lower-right margins. The green back shows the central ONE with IN GOD WE TRUST above, the Great Seal of the United States in the side medallions — the unfinished pyramid at left, the eagle at right — and ONE DOLLAR below; reverse plate 418 is printed at lower right. This collection piece, in about-uncirculated condition and unslabbed, is shown in a sleeve.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar certificado de plata serie 1957 B, serial S35513454A: Washington, sello azul del Tesoro y planchas H2 / H751.',
+      en: 'Face of the Series 1957-B $1 Silver Certificate, serial S35513454A: Washington, the blue Treasury seal, and plate positions H2 / H751.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 dólar certificado de plata serie 1957 B: ONE, IN GOD WE TRUST y el Gran Sello. Plancha de reverso 418.',
+      en: 'Back of the Series 1957-B $1 Silver Certificate: ONE, IN GOD WE TRUST, and the Great Seal. Reverse plate 418.',
+    },
+    scarcity: {
+      es: 'La subserie 1957 B (Pick 419b, Fr. 1621) es común: el Greysheet cita unos 718 millones de ejemplares. Es el cierre de los certificados de plata de un dólar; el mercado trata el tipo circulado como frecuente y reserva prima a los estados altos, a las estrellas de reemplazo y a los bloques raros. Esta ficha no inventa una tirada por bloque de serie.',
+      en: 'The 1957-B sub-series (Pick 419b, Fr. 1621) is common: Greysheet cites about 718 million notes. It closes the $1 silver-certificate line; the market treats circulated examples as plentiful and reserves premiums for high grades, star replacements, and scarce blocks. This record does not invent a printage by serial block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial S35513454A. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial S35513454A has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'About uncirculated, sin encapsular (colección privada)',
+      en: 'About uncirculated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-SILVER/USA0419.htm',
+        es: 'Bank Note Museum — P-419, certificado de plata de 1 dólar, series 1957–1957B',
+        en: 'Bank Note Museum — P-419, $1 Silver Certificate, Series 1957–1957B',
+        note: {
+          es: '419b: serie 1957 B, firmas Granahan y Dillon; sello y seriales azules.',
+          en: '419b: Series 1957 B, Granahan and Dillon signatures; blue seal and serials.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-1621-1957b-one-dollar-silver-certificate-small/gsid/64167',
+        es: 'Greysheet — Fr. 1621, 1957B $1 Silver Certificate',
+        en: 'Greysheet — Fr. 1621, 1957B $1 Silver Certificate',
+        note: {
+          es: 'Tipo de tamaño pequeño; unos 718.400.000 ejemplares citados.',
+          en: 'Small-size type; about 718,400,000 notes cited.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Certificados de plata desde 1878; canje en plata hasta 1968.',
+          en: 'Silver certificates from 1878; redemption in silver until 1968.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Silver Certificates desde 1878; el Gran Sello completo en el 1 dólar de 1935.',
+          en: 'Silver Certificates from 1878; the full Great Seal on the 1935 $1.',
         },
       },
     ],
