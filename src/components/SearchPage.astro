@@ -272,6 +272,17 @@ const ui = {
       return parseFilter(filterInput?.value ?? 'all');
     }
 
+    const params = new URLSearchParams(window.location.search);
+    if (input && !input.value && params.has('q')) input.value = params.get('q') ?? '';
+    if (sort && params.has('orden')) sort.value = parseSort(params.get('orden'));
+    if (filterInput && params.has('filtro')) {
+      const next = parseFilter(params.get('filtro'));
+      filterInput.value = next;
+      for (const chip of chips) {
+        chip.setAttribute('aria-pressed', chip.dataset.searchFilter === next ? 'true' : 'false');
+      }
+    }
+
     function apply(updateUrl = true) {
       const query = input?.value ?? '';
       const filter = currentFilter();
