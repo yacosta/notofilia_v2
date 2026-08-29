@@ -1,37 +1,21 @@
-import { existsSync, readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import type { CatalogSource, LocalizedText } from './catalog';
-import { COLOMBIA_PATH } from './colombia';
-import { colombiaNotes, notePath, notePieces } from './colombia-notes';
-import { colombiaErrorNotes } from './colombia-errors';
-import { localizePath, type Locale } from '../lib/locale-paths';
+import type { CatalogSource, LocalizedText } from './catalog.ts';
+import { COLOMBIA_PATH } from './colombia.ts';
+import { colombiaNotes, notePath, notePieces } from './colombia-notes.ts';
+import { colombiaErrorNotes } from './colombia-errors.ts';
+import { localizePath, type Locale } from '../lib/locale-paths.ts';
 import {
-  displayDenomination,
-  displayIssuer,
   normalizePickToken,
-  parseHeritageLots,
   pickTokens,
   type TypeCatalogDocument,
   type TypeCatalogEra,
   type TypeCatalogFilter,
   type TypeCatalogFlag,
-} from '../lib/type-catalog';
+} from '../lib/type-catalog.ts';
 
 export const COLOMBIA_NOTES_CATALOG_PATH = `${COLOMBIA_PATH}catalogo/`;
 
-function heritageLotsPath(): string {
-  const fromCwd = join(process.cwd(), 'docs/sources/heritage/lots.txt');
-  if (existsSync(fromCwd)) return fromCwd;
-  return join(dirname(fileURLToPath(import.meta.url)), '../../docs/sources/heritage/lots.txt');
-}
-
-/** Manual image tags for types that are not yet a piece page. Holdings overlay these. */
-export const colombiaNoteTypeImages: Record<string, { image: string; alt?: LocalizedText }> = {};
-
 export const noteCatalogFilters: TypeCatalogFilter[] = [
   'all',
-  'holding',
   'pending',
   'specimen',
   'remainder',
@@ -49,20 +33,20 @@ export const noteCatalogCopy = {
   es: {
     metaTitle: 'Catálogo visual de billetes de Colombia | Notofilia',
     metaDescription:
-      'Tipos de papel moneda colombiano con buscador: independencia, banca libre, Banco Nacional y Banco de la República. Sin precios. Las imágenes se añaden a medida que se documentan.',
+      'Billetes colombianos de la colección: independencia, banca libre, Banco Nacional y Banco de la República. Sin precios. La vitrina crece a medida que se documentan las piezas.',
     kicker: 'Colombia · Notafilia',
     title: 'Catálogo visual de billetes',
-    dek: 'Tipos colombianos —Pick, emisor, año— en una sola vitrina. Cuatro por fila, sin precios. Las fichas de la colección llevan foto; el resto queda listo para etiquetar cuando se fotografíe.',
+    dek: 'La colección actual, pieza por pieza. Cuatro por fila, sin precios. Cuando se documenta un billete nuevo, aparece en esta vitrina en la siguiente publicación.',
     nav: 'Catálogo visual',
-    searchLabel: 'Buscar tipos de billetes',
-    searchPlaceholder: 'Pick, banco, denominación, año…',
+    searchLabel: 'Buscar billetes',
+    searchPlaceholder: 'Pick, banco, denominación, serial, año…',
     searchSubmit: 'Buscar',
-    sortLabel: 'Ordenar tipos',
-    filterLabel: 'Filtrar tipos',
-    statusLabel: 'Tipos visibles',
-    emptyQuery: 'Todos los tipos. Escribe un término o elige un filtro.',
-    noResults: 'No hay tipos para esta búsqueda.',
-    resultCount: (count: number) => (count === 1 ? '1 tipo' : `${count} tipos`),
+    sortLabel: 'Ordenar billetes',
+    filterLabel: 'Filtrar billetes',
+    statusLabel: 'Billetes visibles',
+    emptyQuery: 'Toda la colección. Escribe un término o elige un filtro.',
+    noResults: 'No hay billetes para esta búsqueda.',
+    resultCount: (count: number) => (count === 1 ? '1 billete' : `${count} billetes`),
     needsJs: 'La búsqueda en vivo necesita JavaScript. El formulario sigue disponible.',
     pendingImage: 'Imagen pendiente',
     inCollection: 'En la colección',
@@ -73,7 +57,7 @@ export const noteCatalogCopy = {
     coinageLead: 'El catálogo visual de monedas es una vitrina aparte.',
     coinageLink: 'Catálogo visual de monedas',
     sourcesTitle: 'Fuentes',
-    statTypes: 'Tipos',
+    statTypes: 'Billetes',
     statHoldings: 'En la colección',
     statImages: 'Con imagen',
     statYears: 'Años',
@@ -85,7 +69,6 @@ export const noteCatalogCopy = {
     },
     filters: {
       all: 'Todos',
-      holding: 'En la colección',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -102,20 +85,20 @@ export const noteCatalogCopy = {
   en: {
     metaTitle: 'Visual catalog of Colombian banknotes | Notofilia',
     metaDescription:
-      'Colombian paper-money types with search: independence, free banking, Banco Nacional, and Banco de la República. No prices. Images are added as notes are documented.',
+      'Colombian banknotes in the collection: independence, free banking, Banco Nacional, and Banco de la República. No prices. The case grows as pieces are documented.',
     kicker: 'Colombia · Notaphily',
     title: 'Visual banknote catalog',
-    dek: 'Colombian types — Pick, issuer, year — in one case. Four to a row, no prices. Collection holdings show a photograph; the rest stay ready to tag when they are shot.',
+    dek: 'The current collection, one card per piece. Four to a row, no prices. When a new note is documented, it appears in this case on the next build.',
     nav: 'Visual catalog',
-    searchLabel: 'Search banknote types',
-    searchPlaceholder: 'Pick, bank, denomination, year…',
+    searchLabel: 'Search banknotes',
+    searchPlaceholder: 'Pick, bank, denomination, serial, year…',
     searchSubmit: 'Search',
-    sortLabel: 'Sort types',
-    filterLabel: 'Filter types',
-    statusLabel: 'Visible types',
-    emptyQuery: 'All types. Type a term or choose a filter.',
-    noResults: 'No types for this search.',
-    resultCount: (count: number) => (count === 1 ? '1 type' : `${count} types`),
+    sortLabel: 'Sort banknotes',
+    filterLabel: 'Filter banknotes',
+    statusLabel: 'Visible banknotes',
+    emptyQuery: 'The whole collection. Type a term or choose a filter.',
+    noResults: 'No banknotes for this search.',
+    resultCount: (count: number) => (count === 1 ? '1 banknote' : `${count} banknotes`),
     needsJs: 'Live search needs JavaScript. The form still works.',
     pendingImage: 'Image pending',
     inCollection: 'In the collection',
@@ -126,7 +109,7 @@ export const noteCatalogCopy = {
     coinageLead: 'The visual coin catalog is a separate case.',
     coinageLink: 'Visual coin catalog',
     sourcesTitle: 'Sources',
-    statTypes: 'Types',
+    statTypes: 'Banknotes',
     statHoldings: 'In the collection',
     statImages: 'With image',
     statYears: 'Years',
@@ -138,7 +121,6 @@ export const noteCatalogCopy = {
     },
     filters: {
       all: 'All',
-      holding: 'In the collection',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',
@@ -160,8 +142,8 @@ export const noteCatalogSources: CatalogSource[] = [
     es: 'Bank Note Museum — Colombia',
     en: 'Bank Note Museum — Colombia',
     note: {
-      es: 'Índice Pick de emisores colombianos. Esta vitrina numera tipos, no ejemplares de subasta.',
-      en: 'Pick index of Colombian issuers. This case numbers types, not auction lots.',
+      es: 'Índice Pick de emisores colombianos. Esta vitrina muestra las piezas de la colección, no un censo de tipos.',
+      en: 'Pick index of Colombian issuers. This case shows collection pieces, not a type census.',
     },
   },
   {
@@ -187,13 +169,14 @@ export const noteCatalogSources: CatalogSource[] = [
     es: 'Heritage Auctions — archivo vendido de papel mundial (búsqueda Colombia)',
     en: 'Heritage Auctions — World Paper Money sold archive (Colombia search)',
     note: {
-      es: 'Índice de tipos vistos en subasta. No se republican precios ni se enlazan fotografías de Heritage.',
-      en: 'An index of types seen at auction. Realized prices are not republished, and Heritage photographs are not hotlinked.',
+      es: 'Comparables para identificar tipos. No se republican precios ni se enlazan fotografías de Heritage. Los lotes no son fichas de esta vitrina.',
+      en: 'Comparables for type identification. Realized prices are not republished, and Heritage photographs are not hotlinked. Lots are not holdings in this case.',
     },
   },
 ];
 
 type HoldingOverlay = {
+  id: string;
   tokens: string[];
   href: string;
   title: LocalizedText;
@@ -201,7 +184,9 @@ type HoldingOverlay = {
   image: string;
   imageAlt: LocalizedText;
   pick: string;
+  serial: string;
   issuer: LocalizedText;
+  denomination: LocalizedText;
   year: string;
   flags: TypeCatalogFlag[];
   era: TypeCatalogEra;
@@ -210,6 +195,13 @@ type HoldingOverlay = {
 function yearFromPrinted(printed: LocalizedText): string {
   const match = printed.es.match(/(1[789]\d{2}|20\d{2})/);
   return match?.[1] ?? '';
+}
+
+function denominationFromTitle(title: LocalizedText): LocalizedText {
+  return {
+    es: title.es.split('·')[0]?.trim() ?? '',
+    en: title.en.split('·')[0]?.trim() ?? '',
+  };
 }
 
 function holdingOverlays(): HoldingOverlay[] {
@@ -223,7 +215,9 @@ function holdingOverlays(): HoldingOverlay[] {
       if (/prueba|proof/i.test(blob)) flags.push('proof');
       if (/remainder/i.test(blob)) flags.push('remainder');
       if (note.chapterId === 'errores' || /error|maculatura/i.test(blob)) flags.push('error');
+      if (!piece.images.front) flags.push('pending');
       overlays.push({
+        id: `note:${note.id}:${piece.id}`,
         tokens,
         href: `${notePath(note, 'es')}${piece.id !== note.id ? `#${piece.id}` : ''}`,
         title: piece.title,
@@ -231,7 +225,9 @@ function holdingOverlays(): HoldingOverlay[] {
         image: piece.images.front,
         imageAlt: piece.frontCaption,
         pick: piece.pick,
+        serial: piece.serial,
         issuer: note.kicker,
+        denomination: denominationFromTitle(piece.title),
         year: yearFromPrinted(piece.printed),
         flags,
         era: note.chapterId === 'errores' ? 'errores' : note.chapterId,
@@ -241,82 +237,42 @@ function holdingOverlays(): HoldingOverlay[] {
   return overlays;
 }
 
-function findOverlay(pick: string, overlays: HoldingOverlay[]): HoldingOverlay | undefined {
-  const token = normalizePickToken(pick);
-  if (!token) return undefined;
-  return overlays.find((overlay) => overlay.tokens.includes(token));
-}
-
-let heritageSeedsCache: ReturnType<typeof parseHeritageLots> | undefined;
-
-export function heritageNoteTypeSeeds() {
-  heritageSeedsCache ??= parseHeritageLots(readFileSync(heritageLotsPath(), 'utf8'));
-  return heritageSeedsCache;
-}
-
+/** One document per collection piece. New notes in colombiaNotes / colombiaErrorNotes appear on the next build. */
 export function colombiaNoteTypeDocuments(locale: Locale): TypeCatalogDocument[] {
-  const overlays = holdingOverlays();
-  const used = new Set<HoldingOverlay>();
-  const documents: TypeCatalogDocument[] = [];
-
-  for (const seed of heritageNoteTypeSeeds()) {
-    const overlay = findOverlay(seed.pick, overlays);
-    if (overlay) used.add(overlay);
-    const tag = colombiaNoteTypeImages[normalizePickToken(seed.pick)];
-    const issuer = overlay ? overlay.issuer[locale] : displayIssuer(seed.issuer, locale);
-    const denomination = displayDenomination(seed.denomination, locale);
-    const title = overlay
-      ? overlay.title[locale]
-      : [issuer, denomination, seed.year].filter(Boolean).join(' · ');
-    const pick = overlay?.pick ?? (seed.pick ? `P# ${seed.pick}` : '');
-    const image = overlay?.image ?? tag?.image;
-    const flags = [...new Set([...(overlay?.flags ?? []), ...seed.flags, ...(image ? [] : (['pending'] as const))])];
-    const era = overlay?.era ?? seed.era;
-    const dek = overlay
-      ? overlay.dek[locale]
-      : [pick, issuer, seed.year].filter(Boolean).join(' · ');
-    documents.push({
-      id: `note:${seed.id}`,
-      href: overlay ? localizePath(overlay.href, locale) : '',
+  return holdingOverlays().map((overlay) => {
+    const title = overlay.title[locale];
+    const dek = overlay.dek[locale];
+    const issuer = overlay.issuer[locale];
+    const denomination = overlay.denomination[locale];
+    return {
+      id: overlay.id,
+      href: localizePath(overlay.href, locale),
       title,
       dek,
-      pick,
+      pick: overlay.pick,
       issuer,
       denomination,
-      year: overlay?.year || seed.year,
-      era,
-      flags,
-      image,
-      imageAlt: overlay?.imageAlt[locale] ?? tag?.alt?.[locale] ?? title,
-      searchText: [title, dek, pick, normalizePickToken(pick), issuer, denomination, seed.year, era, flags.join(' ')].join(
-        ' ',
-      ),
-      inCollection: Boolean(overlay),
-    });
-  }
-
-  for (const overlay of overlays) {
-    if (used.has(overlay)) continue;
-    const id = overlay.tokens[0] || normalizePickToken(overlay.pick) || overlay.href;
-    documents.push({
-      id: `note-holding:${id}`,
-      href: localizePath(overlay.href, locale),
-      title: overlay.title[locale],
-      dek: overlay.dek[locale],
-      pick: overlay.pick,
-      issuer: overlay.issuer[locale],
-      denomination: '',
       year: overlay.year,
       era: overlay.era,
       flags: overlay.flags,
-      image: overlay.image,
+      image: overlay.image || undefined,
       imageAlt: overlay.imageAlt[locale],
-      searchText: [overlay.title[locale], overlay.dek[locale], overlay.pick, overlay.year].join(' '),
+      searchText: [
+        title,
+        dek,
+        overlay.pick,
+        normalizePickToken(overlay.pick),
+        overlay.tokens.join(' '),
+        overlay.serial,
+        issuer,
+        denomination,
+        overlay.year,
+        overlay.era,
+        overlay.flags.join(' '),
+      ].join(' '),
       inCollection: true,
-    });
-  }
-
-  return documents;
+    };
+  });
 }
 
 export function noteCatalogPath(locale: Locale): string {

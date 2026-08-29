@@ -14,6 +14,9 @@ import {
   runTypeCatalogSearch,
   typeCatalogStats,
 } from './type-catalog.ts';
+import { colombiaErrorNotes } from '../data/colombia-errors.ts';
+import { colombiaNotes, notePieces } from '../data/colombia-notes.ts';
+import { colombiaNoteTypeDocuments } from '../data/colombia-type-catalog.ts';
 
 const lots = readFileSync(new URL('../../docs/sources/heritage/lots.txt', import.meta.url), 'utf8');
 const noteCatalogSource = readFileSync(new URL('../data/colombia-type-catalog.ts', import.meta.url), 'utf8');
@@ -129,12 +132,30 @@ describe('type catalog search', () => {
 });
 
 describe('Colombia visual catalog data files', () => {
-  it('tag images by Pick and do not store prices', () => {
-    assert.match(noteCatalogSource, /colombiaNoteTypeImages/);
-    assert.match(noteCatalogSource, /Heritage Auctions/);
+  it('keeps the notes catalog collection-only and does not store prices', () => {
+    assert.match(noteCatalogSource, /colombiaNotes/);
+    assert.match(noteCatalogSource, /colombiaErrorNotes/);
+    assert.match(noteCatalogSource, /notePieces/);
+    assert.doesNotMatch(noteCatalogSource, /heritageLotsPath|heritageNoteTypeSeeds|colombiaNoteTypeImages|parseHeritageLots/);
     assert.doesNotMatch(noteCatalogSource, /\b(price|precio|realized):/i);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /5000-pesos-santa-laura-2015/);
     assert.doesNotMatch(coinCatalogSource, /\b(price|precio|realized):/i);
+  });
+
+  it('emits one document per collection piece and no prices', () => {
+    const expected = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
+    const documents = colombiaNoteTypeDocuments('es');
+    assert.equal(documents.length, expected.length);
+    assert.ok(documents.length > 0);
+    assert.ok(documents.every((doc) => doc.inCollection));
+    assert.ok(documents.every((doc) => Boolean(doc.href)));
+    assert.ok(documents.every((doc) => !hasPriceField(doc)));
+    assert.ok(documents.every((doc) => !/\b(price|precio|realized)\b/i.test(`${doc.title} ${doc.dek} ${doc.searchText}`)));
+    const ids = documents.map((doc) => doc.id);
+    assert.equal(new Set(ids).size, ids.length);
+    assert.ok(documents.every((doc) => doc.id.startsWith('note:')));
+    const english = colombiaNoteTypeDocuments('en');
+    assert.equal(english.length, documents.length);
   });
 });

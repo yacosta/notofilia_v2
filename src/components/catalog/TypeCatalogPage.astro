@@ -53,6 +53,18 @@ const initialFilter = parseTypeFilter(Astro.url.searchParams.get('filtro'), filt
 const initialSort = parseTypeSort(Astro.url.searchParams.get('orden'));
 const initialHits = runTypeCatalogSearch(documents, engine, initialQuery, initialFilter, initialSort);
 const stats = typeCatalogStats(documents);
+const statItems = isNotes
+  ? [
+      { value: stats.types.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statTypes },
+      { value: stats.images.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statImages },
+      { value: stats.years, label: t.statYears },
+    ]
+  : [
+      { value: stats.types.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statTypes },
+      { value: stats.holdings.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statHoldings },
+      { value: stats.images.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statImages },
+      { value: stats.years, label: t.statYears },
+    ];
 const relatedCatalogHref = isNotes
   ? localizePath(COLOMBIA_COIN_CATALOG_PATH, locale)
   : localizePath(COLOMBIA_NOTES_CATALOG_PATH, locale);
@@ -86,10 +98,15 @@ const ui = {
   inCollection: t.inCollection,
   viewNote: t.viewNote,
   pickLabel: t.pickLabel,
-  resultCount: {
-    one: locale === 'en' ? '1 type' : '1 tipo',
-    other: locale === 'en' ? '{n} types' : '{n} tipos',
-  },
+  resultCount: isNotes
+    ? {
+        one: locale === 'en' ? '1 banknote' : '1 billete',
+        other: locale === 'en' ? '{n} banknotes' : '{n} billetes',
+      }
+    : {
+        one: locale === 'en' ? '1 type' : '1 tipo',
+        other: locale === 'en' ? '{n} types' : '{n} tipos',
+      },
 };
 
 function crumbItems() {
@@ -130,23 +147,21 @@ function cardMeta(hit: TypeCatalogDocument): string {
         <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
       </header>
 
-      <ul class="mb-10 mt-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-4" aria-label={t.statusLabel}>
-        <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
-          <p class="m-0 font-display text-[1.5rem]/7 text-cream">{stats.types.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO')}</p>
-          <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{t.statTypes}</p>
-        </li>
-        <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
-          <p class="m-0 font-display text-[1.5rem]/7 text-cream">{stats.holdings.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO')}</p>
-          <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{t.statHoldings}</p>
-        </li>
-        <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
-          <p class="m-0 font-display text-[1.5rem]/7 text-cream">{stats.images.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO')}</p>
-          <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{t.statImages}</p>
-        </li>
-        <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
-          <p class="m-0 font-display text-[1.5rem]/7 text-cream">{stats.years}</p>
-          <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{t.statYears}</p>
-        </li>
+      <ul
+        class:list={[
+          'mb-10 mt-0 grid list-none grid-cols-2 gap-3 p-0',
+          isNotes ? 'sm:grid-cols-3' : 'sm:grid-cols-4',
+        ]}
+        aria-label={t.statusLabel}
+      >
+        {
+          statItems.map((item) => (
+            <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
+              <p class="m-0 font-display text-[1.5rem]/7 text-cream">{item.value}</p>
+              <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{item.label}</p>
+            </li>
+          ))
+        }
       </ul>
 
       <form action={pathname} method="get" role="search" class="mb-8" data-catalog-form>

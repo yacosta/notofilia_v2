@@ -338,7 +338,7 @@ export const seriesCopy = {
       'Aún no hay errores publicados en esta vitrina. Cuando se documente una pieza, aparecerá aquí ordenada por año y denominación.',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
-    visualCatalogLead: 'El catálogo visual reúne los tipos con buscador, cuatro por fila, sin precios.',
+    visualCatalogLead: 'El catálogo visual muestra los billetes de la colección, con buscador, cuatro por fila, sin precios.',
     visualCatalogLink: 'Catálogo visual de billetes',
   },
   en: {
@@ -372,7 +372,7 @@ export const seriesCopy = {
       'No error notes are published in this case yet. When a piece is documented, it will appear here sorted by year and denomination.',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
-    visualCatalogLead: 'The visual catalog gathers the types with search, four to a row, and no prices.',
+    visualCatalogLead: 'The visual catalog shows the banknotes in the collection, with search, four to a row, and no prices.',
     visualCatalogLink: 'Visual banknote catalog',
   },
 } as const;
