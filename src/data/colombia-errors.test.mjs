@@ -4,20 +4,32 @@ import { describe, it } from 'node:test';
 import { seriesCopy } from './colombia.ts';
 
 const errorsSource = readFileSync(new URL('./colombia-errors.ts', import.meta.url), 'utf8');
+const notesSource = readFileSync(new URL('./colombia-notes.ts', import.meta.url), 'utf8');
 const pageSource = readFileSync(
   new URL('../components/catalog/ColombiaSeriesPage.astro', import.meta.url),
   'utf8',
 );
 
 describe('colombia-errors', () => {
-  it('starts with an empty published error-notes list', () => {
-    assert.match(errorsSource, /export const colombiaErrorNotes[^=]*=\s*\[\]/);
+  it('publishes the Gaitán fold-over from the errores chapter', () => {
+    assert.match(errorsSource, /chapterId === 'errores'/);
     assert.match(errorsSource, /export function hasErrorNotes\(\)/);
+    assert.match(notesSource, /id: '1000-pesos-error-2011'/);
+    assert.match(notesSource, /chapterId: 'errores'/);
+    assert.match(notesSource, /serial: '11508701'/);
+    assert.match(notesSource, /P# 456n \/ TBB B986n/);
   });
 
   it('groups error notes by year and denomination in the module', () => {
     assert.match(errorsSource, /export function errorGroups\(\)/);
     assert.match(errorsSource, /a\.year - b\.year \|\| a\.denomination - b\.denomination/);
+  });
+
+  it('labels error-note breadcrumbs from the Errores copy', () => {
+    assert.match(notesSource, /note\.chapterId === 'errores'/);
+    assert.match(notesSource, /seriesCopy\[locale\]\.errorsTitle/);
+    assert.equal(seriesCopy.es.errorsTitle, 'Errores');
+    assert.equal(seriesCopy.en.errorsTitle, 'Errors');
   });
 
   it('exposes bilingual copy for the errors section', () => {

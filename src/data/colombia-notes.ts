@@ -1,6 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import type { ColombiaChapterId } from './colombia';
-import { COLOMBIA_PATH, colombiaChapters } from './colombia';
+import { COLOMBIA_PATH, colombiaChapters, seriesCopy } from './colombia';
 import { localizePath } from '../lib/locale-paths';
 
 export type ColombiaNoteId =
@@ -12,7 +12,8 @@ export type ColombiaNoteId =
   | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983'
   | '2000-pesos-2008'
-  | '20000-pesos-2017';
+  | '20000-pesos-2017'
+  | '1000-pesos-error-2011';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -1120,6 +1121,95 @@ export const colombiaNotes: ColombiaNote[] = [
       },
     ],
   },
+  {
+    id: '1000-pesos-error-2011',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}1000-pesos-error-2011/`,
+    pick: 'P# 456n / TBB B986n',
+    serial: '11508701',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y José Tolosa Buitrago (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and José Tolosa Buitrago (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso: 10 de junio de 2011. Formato publicado 130 × 65 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Esta pieza conserva, además, una solapa del margen de pliego que sobresale del rectángulo. González White 2019 numera la fecha BG# 439-r/14 (p. 112). El Bank Note Museum lista 10.06.2011 como Pick 456n. Numista asigna TBB B986n y sitúa la puesta en circulación el 27 de febrero de 2012. La producción BanRep de 1.000 pesos en 2011 es 196,1 millones de piezas, y la entrega a Tesorería del mismo año coincide: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face: 10 June 2011. Published size 130 × 65 mm; eight digits, no series letter; both serials on the face. This piece also keeps a sheet-margin flap that extends beyond the rectangle. González White 2019 numbers the date BG# 439-r/14 (p. 112). The Bank Note Museum lists 10.06.2011 as Pick 456n. Numista assigns TBB B986n and places the note into circulation on 27 February 2012. BanRep’s 2011 production of 1,000-peso notes is 196.1 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1000-pesos-error-2011-11508701-composite.jpg',
+      front: '/images/catalog/colombia/1000-pesos-error-2011-11508701-front.jpg',
+      back: '/images/catalog/colombia/1000-pesos-error-2011-11508701-back.jpg',
+    },
+    title: {
+      es: '1.000 pesos · error mariposa · 2011',
+      en: '1,000 pesos · butterfly-cut error · 2011',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Mariposa',
+      en: 'Colombia · Errors · Butterfly cut',
+    },
+    lead: {
+      es: 'Mil pesos de Gaitán, Pick 456n / TBB B986n: fecha 10 de junio de 2011 y serial 11508701, con un error de corte en solapa —mariposa— que conserva las barras de color y las casillas A, B y C del margen de pliego. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A Gaitán one-thousand-peso note, Pick 456n / TBB B986n: date 10 June 2011 and serial 11508701, with a butterfly-cut fold-over that retains the sheet-margin color bars and the A, B, and C boxes. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r; esta pieza lleva «10 DE JUNIO DE 2011», BG# 439-r/14, que el Bank Note Museum marca 456n. Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista asigna a esa fecha (TBB B986n; Hernández# 453 en esa ficha). El serial 11508701 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie «IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA». Lo que distingue esta pieza no es el tipo sino el error: una solapa trapezoidal del margen de pliego quedó unida a la esquina superior derecha del anverso —la superior izquierda del reverso—. En esa solapa se leen las barras de color de control y las casillas A, B y C con una marca circular de registro: material que el corte de fábrica debía desechar. En la notafilia colombiana Hernández llama mariposa a ese ala de papel; el pliegue de fábrica que la dejó unida es un error de producción, no una variedad de diseño. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con las fechas 11.06.2011 (456o) y 12.06.2011 (456p), ni con 27.08.2014, 19.08.2015 o 02.08.2016. Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r; this piece carries “10 DE JUNIO DE 2011,” BG# 439-r/14, which the Bank Note Museum marks 456n. The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista assigns to that date (TBB B986n; Hernández# 453 on that record). Serial 11508701 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the imprint “IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA.” What distinguishes this piece is the error, not the type: a trapezoidal flap of sheet margin remained attached to the upper-right corner of the face — the upper-left of the back. That flap carries the control color bars and the A, B, and C boxes with a circular registration mark: material the factory cut was meant to discard. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly); the as-made fold that left it attached is a production error, not a design variety. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with dates 11.06.2011 (456o) and 12.06.2011 (456p), or with 27.08.2014, 19.08.2015, or 02.08.2016. This record gathers both sides of the same unslabbed note.',
+    },
+    history: {
+      es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. En 2005–2006 el banco redujo el formato a 130 × 65 mm, renovó la marca de agua y siguió imprimiendo en la Imprenta de Billetes. El anverso toma la multitud desde un balcón del Hotel Nutibara; el reverso, el saludo de candidato del 23 de septiembre de 1945. Numista data la circulación de esta fecha, 10 de junio de 2011, el 27 de febrero de 2012. El tipo siguió hasta 2016; no se conocen reposiciones. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el margen de pliego aún unido.',
+      en: 'Jorge Eliécer Gaitán (1903–1948) has occupied the Banco de la República one-thousand since the first date, 7 August 2001, put into circulation in 2002 at 140 × 70 mm. In 2005–2006 the bank cut the format to 130 × 65 mm, renewed the watermark, and kept printing at the Imprenta de Billetes. The face takes the crowd from a balcony of the Hotel Nutibara; the back, the candidate’s greeting of 23 September 1945. Numista dates this printed date, 10 June 2011, into circulation on 27 February 2012. The type ran through 2016; no replacements are recorded. This record does not document an ordinary circulating example: it documents a maculature that escaped the cut with the sheet margin still attached.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 pesos, Pick 456n: Gaitán, fecha 10 de junio de 2011, serial 11508701 y solapa mariposa con barras de color y casillas A, B y C.',
+      en: 'Face of the 1,000 pesos, Pick 456n: Gaitán, the date 10 June 2011, serial 11508701, and a butterfly flap with color bars and the A, B, and C boxes.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 pesos, Pick 456n: Gaitán saludando, las dos citas y la misma solapa del margen, vista desde el canto superior izquierdo.',
+      en: 'Back of the 1,000 pesos, Pick 456n: Gaitán waving, the two quotations, and the same margin flap, seen from the upper-left edge.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 439-r/14, p. 112) no publica cifra de emisión para el 10 de junio de 2011. El Bank Note Museum describe Pick 456 como el tipo 2005–2016 de 130 × 65 mm y marca 456n esa fecha. Numista agrupa el diseño bajo N# 205282 y marca la frecuencia de 10.06.2011 en 6 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 196,1 millones de piezas a todos los 1.000 pesos de 2011, y la de entregas a Tesorería el mismo total: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Un billete mariposa con barras de color del pliego es una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# 439-r/14, p. 112) publishes no emisión figure for 10 June 2011. The Bank Note Museum describes Pick 456 as the 2005–2016 130 × 65 mm type and marks 456n for that date. Numista groups the design under N# 205282 and marks the 10.06.2011 date’s frequency at 6% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 196.1 million pieces to every 1,000-peso note of 2011, and the Tesorería delivery table the same total: that is not the printage of one date, signature pair, or cutting error. A butterfly note that still carries the sheet’s color bars is a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 11508701. La pieza se presenta sin encapsular, aparentemente sin circular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serial 11508701 has not been independently verified. The note is shown unslabbed, apparently uncirculated. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
+      en: 'Unslabbed · apparently uncirculated · butterfly-cut error',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0456.htm',
+        es: 'Bank Note Museum — Colombia P-456, 1.000 pesos (2005–2016)',
+        en: 'Bank Note Museum — Colombia P-456, 1,000 pesos (2005–2016)',
+        note: {
+          es: 'Tipo reducido, Imprenta de Billetes; anverso y reverso Gaitán. Esta pieza es 10.06.2011 (456n). El catálogo marca 456p como 12.06.2011 y corrige un 13.06.2011 inexistente.',
+          en: 'Reduced type, Imprenta de Billetes; Gaitán on face and back. This piece is 10.06.2011 (456n). The catalogue marks 456p as 12.06.2011 and corrects a non-existent 13.06.2011.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/205282',
+        es: 'Numista — Colombia 1.000 pesos (formato reducido), N# 205282',
+        en: 'Numista — Colombia 1,000 pesos (reduced format), N# 205282',
+        note: {
+          es: 'Fecha 10.06.2011: P# 456n, TBB B986n, Hernández# 453; firmas JDUE y JTB; circulación 27 de febrero de 2012; frecuencia 6 % en el tipo. No se publican columnas de precio.',
+          en: '10.06.2011 date: P# 456n, TBB B986n, Hernández# 453; signatures JDUE and JTB; circulation 27 February 2012; 6% frequency within the type. Price columns are not published here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2011 de 1.000 pesos: 196,1 millones de piezas. Entregas a Tesorería del mismo año: 196,1 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+          en: '2011 production of 1,000-peso notes: 196.1 million pieces. Tesorería deliveries that year: 196.1 million (denomination totals for the year, not one Pick date or error).',
+        },
+      },
+    ],
+  },
 ];
 
 export const notePageCopy = {
@@ -1195,6 +1285,7 @@ export function notePath(note: ColombiaNote, locale: 'es' | 'en'): string {
 }
 
 export function notesForChapter(chapterId: ColombiaChapterId): ColombiaNote[] {
+  if (chapterId === 'errores') return [];
   return colombiaNotes.filter((note) => note.chapterId === chapterId);
 }
 
@@ -1227,6 +1318,9 @@ export function seriesCardsForChapter(chapterId: ColombiaChapterId): ColombiaSer
 }
 
 export function noteSeriesLabel(note: ColombiaNote, locale: 'es' | 'en'): string {
+  if (note.chapterId === 'errores') {
+    return `Colombia · ${seriesCopy[locale].errorsTitle}`;
+  }
   const chapter = colombiaChapters.find((entry) => entry.id === note.chapterId);
   const era = chapter?.title[locale] ?? 'Colombia';
   return `Colombia · ${era}`;
