@@ -314,7 +314,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Las fichas se publican a medida que se documentan las piezas. La banca libre abre con las pruebas ABNC del Banco Hipotecario (1881) y del Banco de Rio Hacha (1883). El Banco de la República, con el 10 pesos oro de 1943, el 2 pesos oro de 1944 y el de 1955, la reposición de 10 pesos oro de 1976, el espécimen de 2.000 pesos oro de 1983 y el 2.000 pesos de 2008 (serial capicúa binario 10000001). El Banco Central de 1905 y las familias modernas se cuentan en los capítulos; aún no tienen ficha aparte.',
+      'Las fichas se publican a medida que se documentan las piezas. La banca libre abre con las pruebas ABNC del Banco Hipotecario (1881) y del Banco de Rio Hacha (1883). El Banco de la República, con el 10 pesos oro de 1943, el 2 pesos oro de 1944 y el de 1955, la reposición de 10 pesos oro de 1976, el espécimen de 2.000 pesos oro de 1983 y el 2.000 pesos de 2008 (serial capicúa binario 10000001). Las familias modernas, con el 20.000 pesos de 2017 (serial AF51355141). El Banco Central de 1905 se cuenta en los capítulos; aún no tiene ficha.',
     viewChapter: 'Leer el capítulo',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -341,7 +341,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Note pages are published as pieces are documented. Free banking opens with the ABNC proofs of the Banco Hipotecario (1881) and the Banco de Rio Hacha (1883). The Banco de la República chapter holds the 1943 10 pesos oro, the 1944 2 pesos oro, the 1955 2 pesos oro, the 1976 10 pesos oro replacement, the 1983 2,000 pesos oro specimen, and the 2008 2,000 pesos (binary radar serial 10000001). The 1905 Banco Central and the modern families are told in the chapters; they do not yet have a note page of their own.',
+      'Note pages are published as pieces are documented. Free banking opens with the ABNC proofs of the Banco Hipotecario (1881) and the Banco de Rio Hacha (1883). The Banco de la República chapter holds the 1943 10 pesos oro, the 1944 2 pesos oro, the 1955 2 pesos oro, the 1976 10 pesos oro replacement, the 1983 2,000 pesos oro specimen, and the 2008 2,000 pesos (binary radar serial 10000001). The modern families chapter holds the 2017 20,000 pesos, serial AF51355141. The 1905 Banco Central is told in the chapters; it does not yet have a note page.',
     viewChapter: 'Read the chapter',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',

@@ -10,7 +10,8 @@ export type ColombiaNoteId =
   | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983'
-  | '2000-pesos-2008';
+  | '2000-pesos-2008'
+  | '20000-pesos-2017';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -913,6 +914,95 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Producción 2008 de 2.000 pesos: 280,4 millones de piezas (total de la denominación ese año, no de una fecha Pick).',
           en: '2008 production of 2,000-peso notes: 280.4 million pieces (the denomination total that year, not one Pick date).',
+        },
+      },
+    ],
+  },
+  {
+    id: '20000-pesos-2017',
+    chapterId: 'familias-modernas',
+    path: `${COLOMBIA_PATH}20000-pesos-2017/`,
+    pick: 'P# 461 / TBB B996c',
+    serial: 'AF51355141',
+    signatures: {
+      es: 'Juan José Echavarría Soto (gerente general) y Marcela Ocampo Duque (gerente ejecutiva)',
+      en: 'Juan José Echavarría Soto (gerente general) and Marcela Ocampo Duque (gerente ejecutiva)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el reverso: 29 de agosto de 2017. Formato publicado 143 × 66 mm; serial de dos letras y ocho dígitos, serie AF. González White 2019 numera esta fecha BG# NF20-6 (p. 151) y marca ¿? la emisión; el Bank Note Museum lista el tipo Pick 461 (2015–) y anota el 29.08.2017 como fecha no recogida en el Standard Catalog. Numista asigna a esa fecha TBB B996c. La producción BanRep de 20.000 pesos en 2017 es 122,1 millones de piezas, y la entrega a Tesorería de la familia T (2016) es 112,89 millones: son totales de la denominación ese año, no la tirada de esta fecha ni de esta serie. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the back: 29 August 2017. Published size 143 × 66 mm; two-letter prefix and eight digits, series AF. González White 2019 numbers this date BG# NF20-6 (p. 151) and marks emisión ¿?; the Bank Note Museum lists type Pick 461 (2015–) and flags 29.08.2017 as a date not in the Standard Catalog. Numista assigns TBB B996c to that date. BanRep’s 2017 production of 20,000-peso notes is 122.1 million pieces, and Tesorería delivery of the 2016 T family is 112.89 million: those are denomination totals for the year, not the printage of this date or this series. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/20000-pesos-2017-AF51355141-composite.jpg',
+      front: '/images/catalog/colombia/20000-pesos-2017-AF51355141-front.jpg',
+      back: '/images/catalog/colombia/20000-pesos-2017-AF51355141-back.jpg',
+    },
+    title: {
+      es: '20.000 pesos · 2017 · serial AF51355141',
+      en: '20,000 pesos · 2017 · serial AF51355141',
+    },
+    kicker: {
+      es: 'Colombia · Familias modernas · Familia de 2016',
+      en: 'Colombia · Modern families · 2016 family',
+    },
+    lead: {
+      es: 'Veinte mil pesos de la familia de 2016, Pick 461 / TBB B996c: fecha 29 de agosto de 2017, serie AF y serial AF51355141, impreso dos veces en el anverso. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A twenty-thousand-peso note of the 2016 family, Pick 461 / TBB B996c: date 29 August 2017, series AF, and serial AF51355141, printed twice on the face. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'En 2016 el Banco de la República puso en circulación una familia nueva —de 2.000 a 100.000— con formato por denominación, marcas táctiles y un programa iconográfico que sale de los próceres de la independencia. El veinte mil rinde homenaje a Alfonso López Michelsen en cumplimiento de la Ley 1599 de 2012, y al sombrero vueltiao —tejeduría zenú, denominación de origen— en cumplimiento de la Ley 908 de 2004. González White numera el tipo de 143 × 66 mm en las fichas NF20; el Bank Note Museum, Pick 461, impreso por la Imprenta de Billetes. Esta pieza lleva la fecha «29 DE AGOSTO DE 2017» en el canto derecho del reverso y el pie «IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA». Las firmas son las de Juan José Echavarría Soto, gerente general, y Marcela Ocampo Duque, gerente ejecutiva: el par que Numista y González White asignan a esa fecha (BG# NF20-6, serie AF). El anverso, en naranja y ocre, muestra a López Michelsen de cuerpo entero al centro, con sombrero en la mano, y un primer plano a la derecha; a la izquierda, el anón (Annona squamosa) en tinta ópticamente variable. El serial AF51355141 va en negro arriba a la izquierda y abajo a la derecha. El reverso lleva al campesino zenú con caña flecha, el sombrero vueltiao, el sistema hidráulico prehispánico de La Mojana y un fragmento del poema de Benjamín Puche Villadiego. No debe confundirse con el 20.000 de Julio Garavito de la familia anterior, ni con fechas posteriores del mismo Pick 461 (2018–) ni con el par de firmas Uribe–Tolosa de 2015–2016. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'In 2016 the Banco de la República put a new family into circulation — 2,000 to 100,000 — with a size per denomination, tactile marks, and an iconographic program that moves beyond independence heroes. The twenty-thousand honours Alfonso López Michelsen under Law 1599 of 2012, and the sombrero vueltiao — Zenú weaving, a protected designation of origin — under Law 908 of 2004. González White numbers the 143 × 66 mm type as the NF20 listings; the Bank Note Museum, Pick 461, printed by the Imprenta de Billetes. This piece carries the date “29 DE AGOSTO DE 2017” on the right edge of the back and the imprint “IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA.” The signatures are those of Juan José Echavarría Soto, general manager, and Marcela Ocampo Duque, executive manager: the pair Numista and González White assign to that date (BG# NF20-6, series AF). The face, in orange and ochre, shows López Michelsen standing at centre with his hat in hand and a close-up at right; at left, the sugar-apple (Annona squamosa) in optically variable ink. Serial AF51355141 appears in black at upper left and lower right. The back carries a Zenú farmer with caña flecha, the sombrero vueltiao, the pre-Hispanic hydraulic system of La Mojana, and a fragment of Benjamín Puche Villadiego’s poem. It should not be confused with the Julio Garavito 20,000 of the previous family, with later dates of the same Pick 461 (2018–), or with the Uribe–Tolosa pair of 2015–2016. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Alfonso Antonio Lázaro López Michelsen (Bogotá, 1913–2007) presidió la República entre 1974 y 1978 por el Partido Liberal; era hijo de Alfonso López Pumarejo. La familia de 2016 lo coloca en el veinte mil junto a la cultura zenú de la Costa Caribe: el sombrero vueltiao, la orejera y los canales de La Mojana. El tipo salió a circulación el 30 de junio de 2016, con la primera fecha 19 de agosto de 2015 y las firmas de José Darío Uribe Escobar y José Tolosa Buitrago. En 2017 cambiaron las firmas: Echavarría y Ocampo. González White sitúa la puesta en circulación de la fecha 29 de agosto de 2017 (BG# NF20-6, serie AF) el 21 de noviembre de 2018. Esta ficha documenta un ejemplar de esa emisión, en funda.',
+      en: 'Alfonso Antonio Lázaro López Michelsen (Bogotá, 1913–2007) was president of the Republic from 1974 to 1978 for the Liberal Party; he was the son of Alfonso López Pumarejo. The 2016 family places him on the twenty-thousand beside Zenú culture of the Caribbean coast: the sombrero vueltiao, the ear ornament, and the canals of La Mojana. The type entered circulation on 30 June 2016, with the first date 19 August 2015 and the signatures of José Darío Uribe Escobar and José Tolosa Buitrago. In 2017 the signatures changed: Echavarría and Ocampo. González White dates the release of the 29 August 2017 note (BG# NF20-6, series AF) to 21 November 2018. This record documents a piece of that issue, in a sleeve.',
+    },
+    frontCaption: {
+      es: 'Anverso del 20.000 pesos, Pick 461 / TBB B996c: López Michelsen, anón SPARK, fecha 29 de agosto de 2017 y serial AF51355141.',
+      en: 'Face of the 20,000 pesos, Pick 461 / TBB B996c: López Michelsen, SPARK sugar-apple, the date 29 August 2017, and serial AF51355141.',
+    },
+    backCaption: {
+      es: 'Reverso del 20.000 pesos, Pick 461 / TBB B996c: campesino zenú, sombrero vueltiao, sistema hidráulico de La Mojana y pie de la Imprenta de Billetes.',
+      en: 'Back of the 20,000 pesos, Pick 461 / TBB B996c: a Zenú farmer, the sombrero vueltiao, the La Mojana hydraulic system, and the Imprenta de Billetes imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# NF20-6, p. 151) no publica cifra de emisión para el 29 de agosto de 2017 (¿?). El Bank Note Museum describe Pick 461 como el tipo 2015– de 20.000 pesos de la familia nueva. La tabla BanRep de producción anual atribuye 122,1 millones de piezas a todos los 20.000 pesos de 2017, y la de entregas a Tesorería 112,89 millones a la familia T: no es la tirada de una fecha, de un par de firmas ni de la serie AF. Numista agrupa el diseño bajo N# 208154, con índice de rareza 17, y marca la frecuencia de la fecha 29.08.2017 en 8 % entre quienes poseen el tipo. Esta ficha no inventa una tirada.',
+      en: 'González White 2019 (BG# NF20-6, p. 151) publishes no emisión figure for 29 August 2017 (¿?). The Bank Note Museum describes Pick 461 as the 2015– 20,000-peso type of the new family. BanRep’s annual production table assigns 122.1 million pieces to every 20,000-peso note of 2017, and the Tesorería delivery table 112.89 million to the T family: that is not the printage of one date, signature pair, or series AF. Numista groups the design under N# 208154, with a rarity index of 17, and marks the 29.08.2017 date’s frequency at 8% among owners of the type. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial AF51355141. La pieza se presenta en funda, aparentemente sin circular, sin encapsular.',
+      en: 'A PMG or PCGS census for serial AF51355141 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0461.htm',
+        es: 'Bank Note Museum — Colombia P-461, 20.000 pesos (2015–)',
+        en: 'Bank Note Museum — Colombia P-461, 20,000 pesos (2015–)',
+        note: {
+          es: 'Anverso López Michelsen y anón; reverso zenú, sombrero vueltiao y canales de La Mojana. Fecha 29.08.2017 anotada como no listada en el catálogo estándar.',
+          en: 'López Michelsen and sugar-apple on the face; Zenú farmer, sombrero vueltiao, and La Mojana canals on the back. Date 29.08.2017 flagged as not listed in the standard catalog.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/208154',
+        es: 'Numista — Colombia 20.000 pesos, N# 208154',
+        en: 'Numista — Colombia 20,000 pesos, N# 208154',
+        note: {
+          es: 'Fecha 29.08.2017: TBB B996c; firmas JJES y MOD; frecuencia 8 % en el tipo; índice de rareza 17.',
+          en: '29.08.2017 date: TBB B996c; signatures JJES and MOD; 8% frequency within the type; rarity index 17.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2017 de 20.000 pesos: 122,1 millones de piezas. Entregas a Tesorería de 20.000 pesos T (familia 2016): 112,89 millones (totales de la denominación ese año, no de una fecha Pick).',
+          en: '2017 production of 20,000-peso notes: 122.1 million pieces. Tesorería deliveries of 20,000-peso T notes (2016 family): 112.89 million (denomination totals that year, not one Pick date).',
         },
       },
     ],
