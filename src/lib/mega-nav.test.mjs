@@ -69,8 +69,10 @@ describe('polymer submenu', () => {
 });
 
 describe('Colombia visual catalogs', () => {
-  it('lists visual catalog children under Colombia notes and coins', () => {
+  it('lists the collection-wide catalog and Colombia children', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    assert.match(source, /id: 'catalogo-billetes'/);
+    assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
     assert.match(source, /id: 'colombia-catalogo'/);
     assert.match(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
     assert.match(source, /id: 'colombia-monedas-catalogo'/);

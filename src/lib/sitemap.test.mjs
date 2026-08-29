@@ -9,6 +9,7 @@ const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url),
 
 describe('sitemap coverage for Colombia visual catalogs', () => {
   it('registers both locale pairs through dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/notafilia/catalogo/', 'en'), '/en/collection/notaphily/catalog/');
     assert.equal(localizePath('/coleccion/colombia/catalogo/', 'en'), '/en/collection/colombia/catalog/');
     assert.equal(
       localizePath('/coleccion/colombia-numismatica/catalogo/', 'en'),

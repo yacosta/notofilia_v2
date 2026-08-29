@@ -4,6 +4,7 @@ import { colombiaNotes, notePieces } from '../data/colombia-notes';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
 import { COLOMBIA_NOTES_CATALOG_PATH, noteCatalogCopy } from '../data/colombia-type-catalog';
 import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-coin-type-catalog';
+import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
 import { unitedStatesNotes } from '../data/estados-unidos';
 import { glossaryTermPath, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -244,6 +245,11 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
   const docs: SearchDocument[] = pieceSeeds().map((seed) => pieceDocument(seed, locale));
 
   for (const catalog of [
+    {
+      href: NOTAFILIA_NOTES_CATALOG_PATH,
+      title: { es: collectionNoteCatalogCopy.es.title, en: collectionNoteCatalogCopy.en.title },
+      dek: { es: collectionNoteCatalogCopy.es.dek, en: collectionNoteCatalogCopy.en.dek },
+    },
     {
       href: COLOMBIA_NOTES_CATALOG_PATH,
       title: { es: noteCatalogCopy.es.title, en: noteCatalogCopy.en.title },

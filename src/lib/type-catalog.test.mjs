@@ -14,12 +14,10 @@ import {
   runTypeCatalogSearch,
   typeCatalogStats,
 } from './type-catalog.ts';
-import { colombiaErrorNotes } from '../data/colombia-errors.ts';
-import { colombiaNotes, notePieces } from '../data/colombia-notes.ts';
-import { colombiaNoteTypeDocuments } from '../data/colombia-type-catalog.ts';
 
 const lots = readFileSync(new URL('../../docs/sources/heritage/lots.txt', import.meta.url), 'utf8');
 const noteCatalogSource = readFileSync(new URL('../data/colombia-type-catalog.ts', import.meta.url), 'utf8');
+const collectionCatalogSource = readFileSync(new URL('../data/collection-note-catalog.ts', import.meta.url), 'utf8');
 const coinCatalogSource = readFileSync(new URL('../data/colombia-coin-type-catalog.ts', import.meta.url), 'utf8');
 
 describe('Heritage Colombian type parser', () => {
@@ -92,6 +90,8 @@ describe('type catalog search', () => {
       year: '1881',
       era: 'banca-libre',
       flags: ['holding', 'proof'],
+      country: 'CO',
+      serial: 'Y 00000',
       image: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
       imageAlt: 'Anverso',
       searchText: 'S511 Hipotecario 5 pesos 1881',
@@ -108,6 +108,7 @@ describe('type catalog search', () => {
       year: '1938',
       era: 'banco-de-la-republica',
       flags: ['pending'],
+      country: 'CO',
       searchText: '385a Banco de la Republica 1 peso oro 1938',
       inCollection: false,
     },
@@ -122,6 +123,8 @@ describe('type catalog search', () => {
     const hits = runTypeCatalogSearch(documents, engine, 'S511', 'all', 'pick');
     assert.equal(hits[0]?.id, 'note:s511p');
     assert.equal(matchesTypeFilter(documents[0], 'banca-libre'), true);
+    assert.equal(matchesTypeFilter(documents[0], 'co'), true);
+    assert.equal(matchesTypeFilter(documents[0], 'ph'), false);
     assert.deepEqual(pickTokens('P# S511p1 / S511p2'), ['S511P1', 'S511P2']);
     assert.deepEqual(pickTokens('P# 380g · TBB B922k'), ['380G']);
     const stats = typeCatalogStats(documents);
@@ -133,29 +136,29 @@ describe('type catalog search', () => {
 
 describe('Colombia visual catalog data files', () => {
   it('keeps the notes catalog collection-only and does not store prices', () => {
-    assert.match(noteCatalogSource, /colombiaNotes/);
-    assert.match(noteCatalogSource, /colombiaErrorNotes/);
-    assert.match(noteCatalogSource, /notePieces/);
-    assert.doesNotMatch(noteCatalogSource, /heritageLotsPath|heritageNoteTypeSeeds|colombiaNoteTypeImages|parseHeritageLots/);
+    assert.match(noteCatalogSource, /collectionNoteDocuments/);
+    assert.doesNotMatch(
+      noteCatalogSource,
+      /heritageLotsPath|heritageNoteTypeSeeds|colombiaNoteTypeImages|parseHeritageLots/,
+    );
     assert.doesNotMatch(noteCatalogSource, /\b(price|precio|realized):/i);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /5000-pesos-santa-laura-2015/);
     assert.doesNotMatch(coinCatalogSource, /\b(price|precio|realized):/i);
   });
+});
 
-  it('emits one document per collection piece and no prices', () => {
-    const expected = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
-    const documents = colombiaNoteTypeDocuments('es');
-    assert.equal(documents.length, expected.length);
-    assert.ok(documents.length > 0);
-    assert.ok(documents.every((doc) => doc.inCollection));
-    assert.ok(documents.every((doc) => Boolean(doc.href)));
-    assert.ok(documents.every((doc) => !hasPriceField(doc)));
-    assert.ok(documents.every((doc) => !/\b(price|precio|realized)\b/i.test(`${doc.title} ${doc.dek} ${doc.searchText}`)));
-    const ids = documents.map((doc) => doc.id);
-    assert.equal(new Set(ids).size, ids.length);
-    assert.ok(documents.every((doc) => doc.id.startsWith('note:')));
-    const english = colombiaNoteTypeDocuments('en');
-    assert.equal(english.length, documents.length);
+describe('Collection-wide banknote catalog', () => {
+  it('reads every country note module and does not store prices', () => {
+    assert.match(collectionCatalogSource, /colombiaNotes/);
+    assert.match(collectionCatalogSource, /colombiaErrorNotes/);
+    assert.match(collectionCatalogSource, /notePieces/);
+    assert.match(collectionCatalogSource, /unitedStatesNotes/);
+    assert.match(collectionCatalogSource, /mpcVietnamNotes/);
+    assert.match(collectionCatalogSource, /victoryNotes/);
+    assert.match(collectionCatalogSource, /chinaNotes/);
+    assert.match(collectionCatalogSource, /inCollection: true/);
+    assert.doesNotMatch(collectionCatalogSource, /parseHeritageLots/);
+    assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
   });
 });

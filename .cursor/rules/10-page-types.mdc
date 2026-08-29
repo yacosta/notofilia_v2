@@ -26,7 +26,7 @@ Every file under `src/pages/**/*.astro` must map to one row. Route files stay th
 | `glossary-index` | `GlossaryPage.astro` | `/glosario/` | `/en/glossary/` |
 | `glossary-term` | `GlossaryTermPage.astro` | `/glosario/[term]/` | `/en/glossary/[term]/` |
 | `search` | `SearchPage.astro` | `/buscar/` | `/en/search/` |
-| `visual-catalog` | `TypeCatalogPage.astro` | `/coleccion/colombia/catalogo/`, `/coleccion/colombia-numismatica/catalogo/` | `/en/collection/colombia/catalog/`, `/en/collection/colombia-numismatics/catalog/` |
+| `visual-catalog` | `TypeCatalogPage.astro` | `/coleccion/notafilia/catalogo/`, `/coleccion/colombia/catalogo/`, `/coleccion/colombia-numismatica/catalogo/` | `/en/collection/notaphily/catalog/`, `/en/collection/colombia/catalog/`, `/en/collection/colombia-numismatics/catalog/` |
 | `stub` | `StubPage.astro` | catch-all `[...slug].astro` | `en/[...slug].astro` |
 | `error` | `404.astro` (both locales) | `/404` | `/en/404` (or locale-aware 404) |
 

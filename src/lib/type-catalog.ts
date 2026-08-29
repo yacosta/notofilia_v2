@@ -23,7 +23,9 @@ export type TypeCatalogEra =
 
 export type TypeCatalogFlag = 'holding' | 'pending' | 'specimen' | 'remainder' | 'proof' | 'error';
 
-export type TypeCatalogFilter = 'all' | TypeCatalogFlag | TypeCatalogEra;
+export type TypeCatalogCountry = 'CO' | 'US' | 'PH' | 'CN';
+
+export type TypeCatalogFilter = 'all' | TypeCatalogFlag | TypeCatalogEra | Lowercase<TypeCatalogCountry>;
 
 export type TypeCatalogSort = 'collection' | 'pick' | 'title-asc' | 'year';
 
@@ -38,6 +40,8 @@ export type TypeCatalogDocument = {
   year: string;
   era: TypeCatalogEra;
   flags: TypeCatalogFlag[];
+  country?: TypeCatalogCountry | '';
+  serial?: string;
   image?: string;
   imageAlt?: string;
   searchText: string;
@@ -246,10 +250,15 @@ export function parseHeritageLots(text: string): HeritageTypeSeed[] {
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 }
 
+const COUNTRY_FILTERS = new Set<TypeCatalogFilter>(['co', 'us', 'ph', 'cn']);
+
 export function matchesTypeFilter(doc: TypeCatalogDocument, filter: TypeCatalogFilter): boolean {
   if (filter === 'all') return true;
   if (filter === 'holding') return doc.inCollection;
   if (filter === 'pending') return !doc.image;
+  if (COUNTRY_FILTERS.has(filter)) {
+    return (doc.country || '').toLowerCase() === filter;
+  }
   if (
     filter === 'specimen' ||
     filter === 'remainder' ||
@@ -282,6 +291,8 @@ function sortDocuments(docs: TypeCatalogDocument[], sort: TypeCatalogSort): Type
     if (sort === 'collection') {
       if (a.inCollection !== b.inCollection) return a.inCollection ? -1 : 1;
       if (Boolean(a.image) !== Boolean(b.image)) return a.image ? -1 : 1;
+      const country = (a.country || '').localeCompare(b.country || '');
+      if (country) return country;
     }
     if (sort === 'title-asc') return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
     if (sort === 'year') return yearValue(a.year) - yearValue(b.year) || a.title.localeCompare(b.title);
@@ -292,7 +303,7 @@ function sortDocuments(docs: TypeCatalogDocument[], sort: TypeCatalogSort): Type
 
 export function createTypeCatalogEngine(documents: TypeCatalogDocument[]): MiniSearch<TypeCatalogDocument> {
   const engine = new MiniSearch<TypeCatalogDocument>({
-    fields: ['title', 'pick', 'issuer', 'denomination', 'year', 'searchText'],
+    fields: ['title', 'pick', 'issuer', 'denomination', 'year', 'serial', 'searchText'],
     storeFields: [
       'id',
       'href',
@@ -304,12 +315,14 @@ export function createTypeCatalogEngine(documents: TypeCatalogDocument[]): MiniS
       'year',
       'era',
       'flags',
+      'country',
+      'serial',
       'image',
       'imageAlt',
       'inCollection',
     ],
     searchOptions: {
-      boost: { pick: 8, title: 4, issuer: 3, denomination: 2, year: 2, searchText: 1 },
+      boost: { pick: 8, title: 4, serial: 6, issuer: 3, denomination: 2, year: 2, searchText: 1 },
       prefix: true,
       combineWith: 'AND',
     },

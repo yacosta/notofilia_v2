@@ -1,16 +1,8 @@
-import type { CatalogSource, LocalizedText } from './catalog.ts';
+import type { CatalogSource } from './catalog.ts';
 import { COLOMBIA_PATH } from './colombia.ts';
-import { colombiaNotes, notePath, notePieces } from './colombia-notes.ts';
-import { colombiaErrorNotes } from './colombia-errors.ts';
+import { collectionNoteDocuments } from './collection-note-catalog.ts';
 import { localizePath, type Locale } from '../lib/locale-paths.ts';
-import {
-  normalizePickToken,
-  pickTokens,
-  type TypeCatalogDocument,
-  type TypeCatalogEra,
-  type TypeCatalogFilter,
-  type TypeCatalogFlag,
-} from '../lib/type-catalog.ts';
+import type { TypeCatalogDocument, TypeCatalogFilter } from '../lib/type-catalog.ts';
 
 export const COLOMBIA_NOTES_CATALOG_PATH = `${COLOMBIA_PATH}catalogo/`;
 
@@ -54,8 +46,8 @@ export const noteCatalogCopy = {
     pickLabel: 'Pick',
     seriesLead: 'La historia por épocas sigue en la vitrina de Colombia.',
     seriesLink: 'Colombia · Banca libre y Banco de la República',
-    coinageLead: 'El catálogo visual de monedas es una vitrina aparte.',
-    coinageLink: 'Catálogo visual de monedas',
+    coinageLead: 'Todos los billetes de la colección, no solo Colombia, están en el catálogo visual de notafilia.',
+    coinageLink: 'Catálogo visual de todos los billetes',
     sourcesTitle: 'Fuentes',
     statTypes: 'Billetes',
     statHoldings: 'En la colección',
@@ -106,8 +98,8 @@ export const noteCatalogCopy = {
     pickLabel: 'Pick',
     seriesLead: 'The period essays remain on the Colombia case.',
     seriesLink: 'Colombia · Free banking and the Banco de la República',
-    coinageLead: 'The visual coin catalog is a separate case.',
-    coinageLink: 'Visual coin catalog',
+    coinageLead: 'Every banknote in the collection, not only Colombia, lives in the notaphily visual catalog.',
+    coinageLink: 'Visual catalog of every banknote',
     sourcesTitle: 'Sources',
     statTypes: 'Banknotes',
     statHoldings: 'In the collection',
@@ -175,104 +167,9 @@ export const noteCatalogSources: CatalogSource[] = [
   },
 ];
 
-type HoldingOverlay = {
-  id: string;
-  tokens: string[];
-  href: string;
-  title: LocalizedText;
-  dek: LocalizedText;
-  image: string;
-  imageAlt: LocalizedText;
-  pick: string;
-  serial: string;
-  issuer: LocalizedText;
-  denomination: LocalizedText;
-  year: string;
-  flags: TypeCatalogFlag[];
-  era: TypeCatalogEra;
-};
-
-function yearFromPrinted(printed: LocalizedText): string {
-  const match = printed.es.match(/(1[789]\d{2}|20\d{2})/);
-  return match?.[1] ?? '';
-}
-
-function denominationFromTitle(title: LocalizedText): LocalizedText {
-  return {
-    es: title.es.split('·')[0]?.trim() ?? '',
-    en: title.en.split('·')[0]?.trim() ?? '',
-  };
-}
-
-function holdingOverlays(): HoldingOverlay[] {
-  const overlays: HoldingOverlay[] = [];
-  for (const note of [...colombiaNotes, ...colombiaErrorNotes]) {
-    for (const piece of notePieces(note)) {
-      const tokens = pickTokens(piece.pick);
-      const flags: TypeCatalogFlag[] = ['holding'];
-      const blob = `${piece.title.es} ${note.kicker.es} ${piece.pick}`;
-      if (/specimen|espécimen|especimen/i.test(blob)) flags.push('specimen');
-      if (/prueba|proof/i.test(blob)) flags.push('proof');
-      if (/remainder/i.test(blob)) flags.push('remainder');
-      if (note.chapterId === 'errores' || /error|maculatura/i.test(blob)) flags.push('error');
-      if (!piece.images.front) flags.push('pending');
-      overlays.push({
-        id: `note:${note.id}:${piece.id}`,
-        tokens,
-        href: `${notePath(note, 'es')}${piece.id !== note.id ? `#${piece.id}` : ''}`,
-        title: piece.title,
-        dek: piece.lead,
-        image: piece.images.front,
-        imageAlt: piece.frontCaption,
-        pick: piece.pick,
-        serial: piece.serial,
-        issuer: note.kicker,
-        denomination: denominationFromTitle(piece.title),
-        year: yearFromPrinted(piece.printed),
-        flags,
-        era: note.chapterId === 'errores' ? 'errores' : note.chapterId,
-      });
-    }
-  }
-  return overlays;
-}
-
-/** One document per collection piece. New notes in colombiaNotes / colombiaErrorNotes appear on the next build. */
+/** Colombia holdings only. The all-country catalog lives under notafilia. */
 export function colombiaNoteTypeDocuments(locale: Locale): TypeCatalogDocument[] {
-  return holdingOverlays().map((overlay) => {
-    const title = overlay.title[locale];
-    const dek = overlay.dek[locale];
-    const issuer = overlay.issuer[locale];
-    const denomination = overlay.denomination[locale];
-    return {
-      id: overlay.id,
-      href: localizePath(overlay.href, locale),
-      title,
-      dek,
-      pick: overlay.pick,
-      issuer,
-      denomination,
-      year: overlay.year,
-      era: overlay.era,
-      flags: overlay.flags,
-      image: overlay.image || undefined,
-      imageAlt: overlay.imageAlt[locale],
-      searchText: [
-        title,
-        dek,
-        overlay.pick,
-        normalizePickToken(overlay.pick),
-        overlay.tokens.join(' '),
-        overlay.serial,
-        issuer,
-        denomination,
-        overlay.year,
-        overlay.era,
-        overlay.flags.join(' '),
-      ].join(' '),
-      inCollection: true,
-    };
-  });
+  return collectionNoteDocuments(locale, 'CO');
 }
 
 export function noteCatalogPath(locale: Locale): string {

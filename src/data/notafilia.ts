@@ -99,6 +99,8 @@ export const notafiliaCopy = {
       'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia, Estados Unidos, Filipinas, Puerto Rico, Ecuador, Guatemala y el polímero mundial.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
+    visualCatalogLead: 'Todos los billetes documentados, de cualquier país, están en el catálogo visual. Se actualiza al añadir cada ficha.',
+    visualCatalogLink: 'Catálogo visual de billetes',
   },
   en: {
     metaTitle: 'Virtual Notaphily Collection | Notofilia',
@@ -116,6 +118,8 @@ export const notafiliaCopy = {
       'One case to a card, left to right as each is documented. Colombia, the United States, the Philippines, Puerto Rico, Ecuador, Guatemala, and world polymer open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
+    visualCatalogLead: 'Every documented banknote, from any country, is in the visual catalog. It updates as each record is added.',
+    visualCatalogLink: 'Visual banknote catalog',
   },
 } as const;
 

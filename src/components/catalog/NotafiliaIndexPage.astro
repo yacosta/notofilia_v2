@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { notafiliaCopy, notafiliaCountries, notafiliaPath } from '../../data/notafilia';
+import { NOTAFILIA_NOTES_CATALOG_PATH } from '../../data/collection-note-catalog';
 
 interface Props {
   locale: Locale;
@@ -53,6 +54,13 @@ const jsonLd = collectionPageJsonLd({
           {t.holdingsTitle}
         </h2>
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">
+          {t.visualCatalogLead}
+          {' '}
+          <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale)}>
+            {t.visualCatalogLink}
+          </a>
+        </p>
 
         <ol
           class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"

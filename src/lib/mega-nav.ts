@@ -1,6 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
+import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
@@ -42,6 +43,12 @@ export const megaNav: NavNode[] = [
     href: NOTAFILIA_PATH,
     children: [
       {
+        id: 'catalogo-billetes',
+        es: 'Catálogo visual de billetes',
+        en: 'Visual banknote catalog',
+        href: NOTAFILIA_NOTES_CATALOG_PATH,
+      },
+      {
         id: 'colombia',
         es: 'Colombia',
         en: 'Colombia',
@@ -50,8 +57,8 @@ export const megaNav: NavNode[] = [
         children: [
           {
             id: 'colombia-catalogo',
-            es: 'Catálogo visual de billetes',
-            en: 'Visual banknote catalog',
+            es: 'Catálogo visual · Colombia',
+            en: 'Visual catalog · Colombia',
             href: COLOMBIA_NOTES_CATALOG_PATH,
           },
           {

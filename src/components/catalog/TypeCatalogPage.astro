@@ -7,6 +7,7 @@ import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import { NOTAFILIA_PATH } from '../../data/notafilia';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import {
   COLOMBIA_COIN_CATALOG_PATH,
@@ -16,6 +17,16 @@ import {
   coinCatalogSources,
   colombiaCoinTypeDocuments,
 } from '../../data/colombia-coin-type-catalog';
+import {
+  collectionNoteCatalogCopy,
+  collectionNoteCatalogPath,
+  collectionNoteCountryCount,
+  collectionNoteDocuments,
+  collectionNoteFilters,
+  collectionNoteSources,
+  COUNTRY_LABELS,
+  NOTAFILIA_NOTES_CATALOG_PATH,
+} from '../../data/collection-note-catalog';
 import {
   COLOMBIA_NOTES_CATALOG_PATH,
   colombiaNoteTypeDocuments,
@@ -30,6 +41,7 @@ import {
   parseTypeSort,
   runTypeCatalogSearch,
   typeCatalogStats,
+  type TypeCatalogCountry,
   type TypeCatalogDocument,
   type TypeCatalogFilter,
   type TypeCatalogKind,
@@ -38,50 +50,82 @@ import {
 interface Props {
   locale: Locale;
   kind: TypeCatalogKind;
+  country?: TypeCatalogCountry;
 }
 
-const { locale, kind } = Astro.props;
+const { locale, kind, country } = Astro.props;
 const isNotes = kind === 'banknotes';
-const t = isNotes ? noteCatalogCopy[locale] : coinCatalogCopy[locale];
-const filters = isNotes ? noteCatalogFilters : coinCatalogFilters;
-const sources = isNotes ? noteCatalogSources : coinCatalogSources;
-const pathname = isNotes ? noteCatalogPath(locale) : coinCatalogPath(locale);
-const documents = isNotes ? colombiaNoteTypeDocuments(locale) : colombiaCoinTypeDocuments(locale);
+const isAllNotes = isNotes && !country;
+const t = isNotes
+  ? isAllNotes
+    ? collectionNoteCatalogCopy[locale]
+    : noteCatalogCopy[locale]
+  : coinCatalogCopy[locale];
+const filters = isNotes ? (isAllNotes ? collectionNoteFilters : noteCatalogFilters) : coinCatalogFilters;
+const sources = isNotes ? (isAllNotes ? collectionNoteSources : noteCatalogSources) : coinCatalogSources;
+const pathname = isNotes
+  ? isAllNotes
+    ? collectionNoteCatalogPath(locale)
+    : noteCatalogPath(locale)
+  : coinCatalogPath(locale);
+const documents = isNotes
+  ? isAllNotes
+    ? collectionNoteDocuments(locale)
+    : colombiaNoteTypeDocuments(locale)
+  : colombiaCoinTypeDocuments(locale);
 const engine = createTypeCatalogEngine(documents);
 const initialQuery = Astro.url.searchParams.get('q') ?? '';
 const initialFilter = parseTypeFilter(Astro.url.searchParams.get('filtro'), filters);
 const initialSort = parseTypeSort(Astro.url.searchParams.get('orden'));
 const initialHits = runTypeCatalogSearch(documents, engine, initialQuery, initialFilter, initialSort);
 const stats = typeCatalogStats(documents);
-const statItems = isNotes
+const localeTag = locale === 'en' ? 'en-US' : 'es-CO';
+const statItems = isAllNotes
   ? [
-      { value: stats.types.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statTypes },
-      { value: stats.images.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statImages },
+      { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+      { value: collectionNoteCountryCount(documents).toLocaleString(localeTag), label: t.statHoldings },
+      { value: stats.images.toLocaleString(localeTag), label: t.statImages },
       { value: stats.years, label: t.statYears },
     ]
-  : [
-      { value: stats.types.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statTypes },
-      { value: stats.holdings.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statHoldings },
-      { value: stats.images.toLocaleString(locale === 'en' ? 'en-US' : 'es-CO'), label: t.statImages },
-      { value: stats.years, label: t.statYears },
-    ];
-const relatedCatalogHref = isNotes
+  : isNotes
+    ? [
+        { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+        { value: stats.images.toLocaleString(localeTag), label: t.statImages },
+        { value: stats.years, label: t.statYears },
+      ]
+    : [
+        { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+        { value: stats.holdings.toLocaleString(localeTag), label: t.statHoldings },
+        { value: stats.images.toLocaleString(localeTag), label: t.statImages },
+        { value: stats.years, label: t.statYears },
+      ];
+const relatedCatalogHref = isAllNotes
   ? localizePath(COLOMBIA_COIN_CATALOG_PATH, locale)
-  : localizePath(COLOMBIA_NOTES_CATALOG_PATH, locale);
-const seriesHref = isNotes ? localizePath(COLOMBIA_PATH, locale) : localizePath(COLOMBIA_COINAGE_PATH, locale);
+  : localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale);
+const seriesHref = isAllNotes
+  ? localizePath(NOTAFILIA_PATH, locale)
+  : isNotes
+    ? localizePath(COLOMBIA_PATH, locale)
+    : localizePath(COLOMBIA_COINAGE_PATH, locale);
 
-const crumbs = isNotes
+const crumbs = isAllNotes
   ? [
       { name: copy[locale].home, path: '/' },
-      { name: t.kicker, path: COLOMBIA_PATH },
-      { name: t.nav, path: COLOMBIA_NOTES_CATALOG_PATH },
+      { name: t.kicker, path: NOTAFILIA_PATH },
+      { name: t.nav, path: NOTAFILIA_NOTES_CATALOG_PATH },
     ]
-  : [
-      { name: copy[locale].home, path: '/' },
-      { name: copy[locale].numismaticsNav, path: NUMISMATICA_PATH },
-      { name: t.kicker, path: COLOMBIA_COINAGE_PATH },
-      { name: t.nav, path: COLOMBIA_COIN_CATALOG_PATH },
-    ];
+  : isNotes
+    ? [
+        { name: copy[locale].home, path: '/' },
+        { name: t.kicker, path: COLOMBIA_PATH },
+        { name: t.nav, path: COLOMBIA_NOTES_CATALOG_PATH },
+      ]
+    : [
+        { name: copy[locale].home, path: '/' },
+        { name: copy[locale].numismaticsNav, path: NUMISMATICA_PATH },
+        { name: t.kicker, path: COLOMBIA_COINAGE_PATH },
+        { name: t.nav, path: COLOMBIA_COIN_CATALOG_PATH },
+      ];
 
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -98,18 +142,27 @@ const ui = {
   inCollection: t.inCollection,
   viewNote: t.viewNote,
   pickLabel: t.pickLabel,
-  resultCount: isNotes
-    ? {
-        one: locale === 'en' ? '1 banknote' : '1 billete',
-        other: locale === 'en' ? '{n} banknotes' : '{n} billetes',
-      }
-    : {
-        one: locale === 'en' ? '1 type' : '1 tipo',
-        other: locale === 'en' ? '{n} types' : '{n} tipos',
-      },
+  showCountry: isAllNotes,
+  countries: {
+    CO: COUNTRY_LABELS.CO[locale],
+    US: COUNTRY_LABELS.US[locale],
+    PH: COUNTRY_LABELS.PH[locale],
+    CN: COUNTRY_LABELS.CN[locale],
+  },
+  resultCount: {
+    one: t.resultCount(1),
+    other: t.resultCount(2).replace('2', '{n}'),
+  },
 };
 
 function crumbItems() {
+  if (isAllNotes) {
+    return [
+      { href: localizePath('/', locale), label: copy[locale].home },
+      { href: localizePath(NOTAFILIA_PATH, locale), label: t.kicker },
+      { label: t.nav },
+    ];
+  }
   if (isNotes) {
     return [
       { href: localizePath('/', locale), label: copy[locale].home },
@@ -126,7 +179,8 @@ function crumbItems() {
 }
 
 function cardMeta(hit: TypeCatalogDocument): string {
-  return [hit.pick, hit.year].filter(Boolean).join(' · ');
+  const countryLabel = hit.country ? COUNTRY_LABELS[hit.country][locale] : '';
+  return [isAllNotes ? countryLabel : '', hit.pick, hit.serial, hit.year].filter(Boolean).join(' · ');
 }
 ---
 
@@ -150,7 +204,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
       <ul
         class:list={[
           'mb-10 mt-0 grid list-none grid-cols-2 gap-3 p-0',
-          isNotes ? 'sm:grid-cols-3' : 'sm:grid-cols-4',
+          isNotes && !isAllNotes ? 'sm:grid-cols-3' : 'sm:grid-cols-4',
         ]}
         aria-label={t.statusLabel}
       >
@@ -334,6 +388,8 @@ function cardMeta(hit: TypeCatalogDocument): string {
     inCollection: string;
     viewNote: string;
     pickLabel: string;
+    showCountry?: boolean;
+    countries?: Record<string, string>;
     resultCount: { one: string; other: string };
   };
 
@@ -364,7 +420,8 @@ function cardMeta(hit: TypeCatalogDocument): string {
     }
 
     function cardMeta(hit: TypeCatalogDocument): string {
-      return [hit.pick, hit.year].filter(Boolean).join(' · ');
+      const countryLabel = hit.country && ui.countries ? ui.countries[hit.country] : '';
+      return [ui.showCountry ? countryLabel : '', hit.pick, hit.serial, hit.year].filter(Boolean).join(' · ');
     }
 
     function media(hit: TypeCatalogDocument): HTMLElement {

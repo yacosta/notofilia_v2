@@ -243,7 +243,7 @@ export const coinCatalogCopy = {
     pickLabel: 'Referencia',
     seriesLead: 'La historia por épocas sigue en la vitrina de Colombia-Numismática.',
     seriesLink: 'Colombia-Numismática',
-    coinageLead: 'El catálogo visual de billetes es una vitrina aparte.',
+    coinageLead: 'El catálogo visual de todos los billetes de la colección es una vitrina aparte.',
     coinageLink: 'Catálogo visual de billetes',
     sourcesTitle: 'Fuentes',
     statTypes: 'Tipos',
@@ -290,7 +290,7 @@ export const coinCatalogCopy = {
     pickLabel: 'Reference',
     seriesLead: 'The period essays remain on the Colombia-Numismatics case.',
     seriesLink: 'Colombia-Numismatics',
-    coinageLead: 'The visual banknote catalog is a separate case.',
+    coinageLead: 'The visual catalog of every banknote in the collection is a separate case.',
     coinageLink: 'Visual banknote catalog',
     sourcesTitle: 'Sources',
     statTypes: 'Types',
@@ -371,6 +371,8 @@ export function colombiaCoinTypeDocuments(locale: Locale): TypeCatalogDocument[]
       image,
       imageAlt: holding?.frontCaption[locale] ?? type.imageAlt?.[locale] ?? title,
       searchText: [title, pick, type.issuer[locale], type.denomination[locale], type.year, type.dek[locale]].join(' '),
+      country: 'CO',
+      serial: '',
       inCollection: Boolean(holding),
     };
   });
