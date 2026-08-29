@@ -12,6 +12,7 @@ This is **not** a Notofilia holdings list. Each row is someone else’s auction 
 | --- | --- |
 | `lots.txt` | Tab-separated index for `rg` (Pick, lot, sale date, grade, title, URL) |
 | `colombian-banknotes-catalog.html` | Original offline viewer (1 566 lots). Open locally; search in-page |
+| `colombian-banknotes-catalog-blank.html` | Same layout and search UI with blank scan placeholders — scaffold for new rows |
 
 `lots.json` is not stored; parse `lots.txt` or the `const DATA=` array in the HTML if you need structured fields. The HTML `DATA` tuples are: title, path, item id, auction-lot, sale date, realized USD, Pick, grade string.
 

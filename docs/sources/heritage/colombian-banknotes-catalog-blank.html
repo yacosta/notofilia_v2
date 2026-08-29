@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colombian Banknotes — Catalog Template</title>
+<style>
+:root{
+  --bg:#f6f4ef; --surface:#ffffff; --ink:#1f2328; --ink-2:#57606a; --ink-3:#8b949e;
+  --line:#e3ded4; --accent:#8a6d1f; --accent-ink:#6e5510; --chip:#efe9dc; --chip-on:#1f2328;
+  --shadow:0 1px 2px rgba(31,35,40,.06),0 4px 14px rgba(31,35,40,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15171a; --surface:#1e2126; --ink:#e6e4df; --ink-2:#a8a49b; --ink-3:#6f6c65;
+    --line:#2c3036; --accent:#d0b25a; --accent-ink:#e2c979; --chip:#272b31; --chip-on:#e6e4df;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Georgia",ui-serif,serif}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{padding:36px 24px 8px;max-width:1240px;margin:0 auto}
+h1{font-size:30px;margin:0 0 6px;font-weight:600;letter-spacing:.2px}
+.sub{color:var(--ink-2);margin:0 0 20px;font-size:14.5px}
+.sub a{color:var(--accent-ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;max-width:1240px;margin:0 auto;padding:0 24px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;box-shadow:var(--shadow)}
+.tile .v{font-size:22px;font-weight:650;font-variant-numeric:tabular-nums}
+.tile .k{font-size:12px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.6px;margin-top:2px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;max-width:1240px;margin:18px auto 6px;padding:0 24px}
+.controls input[type=search]{flex:1 1 260px;min-width:200px;padding:9px 13px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:14px}
+.controls select{padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;max-width:1240px;margin:6px auto 2px;padding:0 24px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink-2);border-radius:999px;padding:5px 13px;font-size:13px;cursor:pointer;user-select:none}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{max-width:1240px;margin:10px auto 4px;padding:0 24px;color:var(--ink-2);font-size:13.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;max-width:1240px;margin:10px auto 40px;padding:0 24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.imgwrap{background:#0e0f11;display:flex;align-items:center;justify-content:center;height:190px;overflow:hidden}
+@media (prefers-color-scheme: light){.imgwrap{background:#23262b}}
+.imgwrap img{max-width:100%;max-height:100%;object-fit:contain}
+.noimg,.ph-note{color:#777;font-size:12px;letter-spacing:.5px;text-transform:uppercase}
+.ph-note{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:72%;height:72%;border:1px dashed #555;border-radius:8px;color:#8b949e;font-size:11px;text-transform:none;letter-spacing:.04em;text-align:center;padding:12px}
+.ph-note strong{display:block;font-size:12px;color:#a8a49b;text-transform:uppercase;letter-spacing:.5px}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.title{font-size:14px;line-height:1.4;margin:0}
+.title a,.title span.title-text{color:var(--ink);text-decoration:none}
+.title a:hover{color:var(--accent-ink);text-decoration:underline}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.badge{font-size:11.5px;padding:2px 8px;border-radius:6px;background:var(--chip);color:var(--ink-2);border:1px solid var(--line)}
+.badge.pick{color:var(--accent-ink);border-color:var(--accent);background:transparent;font-weight:600}
+.row2{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);margin-top:8px;padding-top:8px}
+.price{font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.date{color:var(--ink-3);font-size:12px}
+.more{display:block;margin:0 auto 60px;padding:10px 26px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;font-size:14px;cursor:pointer}
+.more:hover{border-color:var(--accent)}
+footer{max-width:1240px;margin:0 auto 40px;padding:0 24px;color:var(--ink-3);font-size:12.5px}
+footer a{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Colombian Banknotes</h1>
+  <p class="sub">Blank catalog template with <span id="totN"></span> placeholder rows. Replace each card with a holding title, Pick, scan, and metadata. Layout and search follow the <a href="colombian-banknotes-catalog.html">Heritage archive viewer</a>.</p>
+</header>
+
+<div class="tiles sans" id="tiles"></div>
+
+<div class="controls sans">
+  <input type="search" id="q" placeholder="Search title, Pick number, bank, year…" aria-label="Search catalog">
+  <select id="sort" aria-label="Sort results">
+    <option value="pd">Price: high → low</option>
+    <option value="pa">Price: low → high</option>
+    <option value="dd">Sale date: newest</option>
+    <option value="da">Sale date: oldest</option>
+    <option value="t">Title A → Z</option>
+  </select>
+</div>
+<div class="chips sans" id="chips"></div>
+<div class="count sans" id="count"></div>
+<div class="grid" id="grid"></div>
+<button class="more sans" id="more" type="button" hidden>Show more</button>
+
+<footer class="sans">
+  Template scaffold only — no auction data or external images. Each row uses the same tuple shape as the Heritage extract: title, path, image id, lot id, date, price, Pick, grade. Swap placeholders for collection scans and Notofilia catalogue fields when you populate the grid.
+</footer>
+
+<script>
+const DATA=[
+ ["Colombia Banco de la República 1000 Pesos Oro 2011 — placeholder","", "", "PL-0001", "Aug 29, 2026", 0, "436", ""],
+ ["Colombia Banco de la República 20000 Pesos 2017 — placeholder","", "", "PL-0002", "Aug 29, 2026", 0, "461", "PMG 65 EPQ"],
+ ["Colombia Banco de la República 5000 Pesos 1993 — placeholder","", "", "PL-0003", "Aug 29, 2026", 0, "404", ""],
+ ["Colombia Banco de Bogotá 5 Pesos 1881 — placeholder","", "", "PL-0004", "Aug 29, 2026", 0, "S762", "PMG Choice VF 35"],
+ ["Colombia Banco Popular de Bolívar 5 Pesos 1883 Remainder — placeholder","", "", "PL-0005", "Aug 29, 2026", 0, "S762r", ""],
+ ["Colombia Banco Nacional 1 Peso 1886 Specimen — placeholder","", "", "PL-0006", "Aug 29, 2026", 0, "S120", "Specimen"],
+ ["Colombia Banco de la República 100 Pesos 1954 Proof — placeholder","", "", "PL-0007", "Aug 29, 2026", 0, "213", "Proof"],
+ ["Colombia Confederación Granadina 10 Pesos 1859 — placeholder","", "", "PL-0008", "Aug 29, 2026", 0, "S198", ""],
+ ["Colombia Banco de Cartagena 50 Pesos 1880 — placeholder","", "", "PL-0009", "Aug 29, 2026", 0, "S410", ""],
+ ["Colombia Banco de Medellín 10 Pesos 1898 — placeholder","", "", "PL-0010", "Aug 29, 2026", 0, "S512", "PCGS 40"],
+ ["Colombia Banco de la República 2000 Pesos 2008 — placeholder","", "", "PL-0011", "Aug 29, 2026", 0, "453", ""],
+ ["Colombia Banco de la República 50000 Pesos 2016 — placeholder","", "", "PL-0012", "Aug 29, 2026", 0, "458", ""],
+ ["Colombia Banco de Barranquilla 20 Pesos 1884 — placeholder","", "", "PL-0013", "Aug 29, 2026", 0, "S301", ""],
+ ["Colombia Banco de la República 10000 Pesos 1995 — placeholder","", "", "PL-0014", "Aug 29, 2026", 0, "408", ""],
+ ["Colombia Banco de la República assorted notes Total: 4 — placeholder","", "", "PL-0015", "Aug 29, 2026", 0, "", "Group lot"],
+ ["Colombia Banco de la República 1 Peso Oro 1954 — placeholder","", "", "PL-0016", "Aug 29, 2026", 0, "214", ""],
+ ["Colombia Banco de la República 20 Pesos Oro 1943 — placeholder","", "", "PL-0017", "Aug 29, 2026", 0, "215", ""],
+ ["Colombia Banco de la República 1000 Pesos 2011 Error — placeholder","", "", "PL-0018", "Aug 29, 2026", 0, "436a", "Error note"]
+];
+
+// DATA rows: [title, urlPath, imgId, lotId, dateStr, price, pick, grade]
+const $=s=>document.querySelector(s);
+const fmt$=n=>n>0?'$'+n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0}):'—';
+const items=DATA.map((r,i)=>({t:r[0],u:r[1],img:r[2],al:r[3],d:r[4],ts:Date.parse(r[4]),pr:r[5],pick:r[6],g:r[7],i}));
+
+const total=items.reduce((s,x)=>s+x.pr,0);
+const prices=items.map(x=>x.pr).filter(x=>x>0).sort((a,b)=>a-b);
+const years=items.map(x=>new Date(x.ts).getFullYear()).filter(y=>!Number.isNaN(y));
+$('#totN').textContent=items.length.toLocaleString();
+const tiles=[
+ [items.length.toLocaleString(),'Placeholders'],
+ [prices.length?fmt$(total):'—','Total value'],
+ [prices.length?fmt$(prices[prices.length-1]):'—','Top value'],
+ [prices.length?fmt$(prices[Math.floor(prices.length/2)]):'—','Median value'],
+ [years.length?Math.min(...years)+'–'+Math.max(...years):'—','Date span']
+];
+$('#tiles').innerHTML=tiles.map(t=>`<div class="tile"><div class="v">${t[0]}</div><div class="k">${t[1]}</div></div>`).join('');
+
+const FILTERS=[
+ ['all','All'],
+ ['graded','Graded (PMG/PCGS)'],
+ ['specimen','Specimens'],
+ ['proof','Proofs'],
+ ['remainder','Remainders'],
+ ['group','Group lots'],
+ ['single','Single notes']
+];
+let activeF='all';
+$('#chips').innerHTML=FILTERS.map(f=>`<span class="chip${f[0]==='all'?' on':''}" data-f="${f[0]}">${f[1]}</span>`).join('');
+$('#chips').addEventListener('click',e=>{
+  const c=e.target.closest('.chip'); if(!c)return;
+  activeF=c.dataset.f;
+  document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===c));
+  render(true);
+});
+
+function passF(x){
+  const t=x.t.toLowerCase();
+  switch(activeF){
+    case 'graded': return !!x.g && !/specimen|proof|remainder|group lot|error/i.test(x.g);
+    case 'specimen': return t.includes('specimen') || /specimen/i.test(x.g);
+    case 'proof': return t.includes('proof') || /proof/i.test(x.g);
+    case 'remainder': return t.includes('remainder');
+    case 'group': return x.t.includes('Total:');
+    case 'single': return !x.t.includes('Total:');
+    default: return true;
+  }
+}
+
+const SORTS={pd:(a,b)=>b.pr-a.pr,pa:(a,b)=>a.pr-b.pr,dd:(a,b)=>b.ts-a.ts,da:(a,b)=>a.ts-b.ts,t:(a,b)=>a.t.localeCompare(b.t)};
+let shown=0; const PAGE=120; let current=[];
+
+function placeholderImage(label){
+  return `<span class="ph-note sans" aria-hidden="true"><strong>Scan placeholder</strong>${esc(label)}</span>`;
+}
+
+function card(x){
+  const titleHtml=x.u
+    ? `<a href="https://currency.ha.com/itm/${esc(x.u)}.s" target="_blank" rel="noopener">${esc(x.t)}</a>`
+    : `<span class="title-text">${esc(x.t)}</span>`;
+  const pickB=x.pick?`<span class="badge pick sans">Pick ${esc(x.pick)}</span>`:'';
+  const gB=x.g?`<span class="badge sans">${esc(x.g)}</span>`:'';
+  return `<article class="card">
+    <div class="imgwrap">${placeholderImage(x.al)}</div>
+    <div class="body">
+      <p class="title">${titleHtml}</p>
+      <div class="meta">${pickB}${gB}</div>
+      <div class="row2 sans">
+        <span class="price">${fmt$(x.pr)}</span>
+        <span class="date">${esc(x.d)} · ${esc(x.al)}</span>
+      </div>
+    </div>
+  </article>`;
+}
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+function render(reset){
+  if(reset) shown=0;
+  const q=$('#q').value.trim().toLowerCase();
+  const terms=q.split(/\s+/).filter(Boolean);
+  current=items.filter(x=>passF(x)&&terms.every(w=>
+    x.t.toLowerCase().includes(w)
+    ||('pick '+x.pick.toLowerCase()).includes(w)
+    ||x.al.toLowerCase().includes(w)
+    ||x.g.toLowerCase().includes(w)
+  ));
+  current.sort(SORTS[$('#sort').value]);
+  const sum=current.reduce((s,x)=>s+x.pr,0);
+  const priced=current.filter(x=>x.pr>0).length;
+  $('#count').textContent=priced
+    ? `${current.length.toLocaleString()} row${current.length===1?'':'s'} · ${fmt$(sum)} total value`
+    : `${current.length.toLocaleString()} row${current.length===1?'':'s'} · placeholder data`;
+  shown=Math.min(current.length, shown||PAGE);
+  $('#grid').innerHTML=current.slice(0,shown).map(card).join('');
+  $('#more').hidden=shown>=current.length;
+  $('#more').textContent=`Show more (${(current.length-shown).toLocaleString()} remaining)`;
+}
+
+$('#q').addEventListener('input',()=>render(true));
+$('#sort').addEventListener('change',()=>render(true));
+$('#more').addEventListener('click',()=>{shown+=PAGE;render(false)});
+render(true);
+</script>
+</body>
+</html>
