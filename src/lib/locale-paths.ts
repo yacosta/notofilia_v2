@@ -18,6 +18,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1957b/'],
   },
   {
+    es: '/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
+    en: '/collection/united-states/1-dollar-series-2003-atlanta/',
+    aliases: ['/coleccion/united-states/1-dollar-series-2003-atlanta/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     en: '/collection/united-states/1-dollar-state-bank-new-brunswick/',
     aliases: ['/coleccion/united-states/1-dollar-state-bank-new-brunswick/'],
@@ -172,10 +177,12 @@ export function englishRedirects(): Record<string, string> {
   const legacyEnglishPrefixes = [
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1957b/',
+    '/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
     '/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
+    '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
     '/en/coleccion/united-states/1-dollar-state-bank-new-brunswick/',
     '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     '/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/',
@@ -218,6 +225,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/2000-pesos-oro-1983/',
     '/en/coleccion/colombia/2000-pesos-2008/',
     '/en/coleccion/colombia/20000-pesos-2017/',
+    '/en/coleccion/colombia/1000-pesos-error-2011/',
     '/en/coleccion/colombia/',
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',

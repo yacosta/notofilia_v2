@@ -24,6 +24,10 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/', 'en'),
+      '/en/collection/united-states/1-dollar-series-2003-atlanta/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
@@ -88,6 +92,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/20000-pesos-2017/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/1000-pesos-error-2011/', 'en'),
+      '/en/collection/colombia/1000-pesos-error-2011/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/5-pesos-banco-hipotecario-1881/', 'en'),
       '/en/collection/colombia/5-pesos-banco-hipotecario-1881/',
     );
@@ -140,6 +148,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/'],
       '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/'],
+      '/en/collection/united-states/1-dollar-series-2003-atlanta/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],

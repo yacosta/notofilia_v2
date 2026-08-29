@@ -1,9 +1,11 @@
 import type { LocalizedText } from './catalog.ts';
 import type { ColombiaNote, ColombiaNotePiece } from './colombia-notes.ts';
-import { holdingSortKey, notePieces } from './colombia-notes.ts';
+import { colombiaNotes, holdingSortKey, notePieces } from './colombia-notes.ts';
 
 /** Error-note holdings for the Colombia series page (not a historical chapter). */
-export const colombiaErrorNotes: ColombiaNote[] = [];
+export const colombiaErrorNotes: ColombiaNote[] = colombiaNotes.filter(
+  (note) => note.chapterId === 'errores',
+);
 
 export type ColombiaErrorCard = {
   note: ColombiaNote;
