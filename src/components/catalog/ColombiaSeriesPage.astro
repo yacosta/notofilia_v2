@@ -13,7 +13,7 @@ import {
   seriesSources,
 } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
-import { notePath, notePieces, notesForChapter } from '../../data/colombia-notes';
+import { notePath, notesForChapter, seriesCardsForChapter } from '../../data/colombia-notes';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -139,13 +139,15 @@ const jsonLd = collectionPageJsonLd({
               {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+                    class:list={[
+                      'mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2',
+                      chapter.id === 'banco-de-la-republica' && 'lg:grid-cols-4',
+                    ]}
                     aria-label={chapter.title[locale]}
                   >
-                    {notesForChapter(chapter.id).flatMap((note) => {
-                      const pieces = notePieces(note);
-                      const multi = pieces.length > 1;
-                      return pieces.map((piece) => (
+                    {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
+                      const multi = (note.pieces?.length ?? 1) > 1;
+                      return (
                       <li class="min-w-0">
                         <a
                           href={multi ? `${notePath(note, locale)}#${piece.id}` : notePath(note, locale)}
@@ -167,7 +169,7 @@ const jsonLd = collectionPageJsonLd({
                           <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                         </a>
                       </li>
-                      ));
+                      );
                     })}
                   </ol>
                 ) : null

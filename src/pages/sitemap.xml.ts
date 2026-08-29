@@ -11,6 +11,7 @@ const extra = [
   '/glosario/',
   '/acerca-de/',
   '/contacto/',
+  '/buscar/',
   '/coleccion/filipinas/',
   '/coleccion/filipinas/1-peso/',
   '/coleccion/filipinas/2-pesos/',

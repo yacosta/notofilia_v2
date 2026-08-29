@@ -995,6 +995,34 @@ export function notesForChapter(chapterId: ColombiaChapterId): ColombiaNote[] {
   return colombiaNotes.filter((note) => note.chapterId === chapterId);
 }
 
+const HOLDING_SORT_ID = /^(\d+)-pesos(?:-[a-z0-9]+)*-(\d{4})$/i;
+
+export function holdingSortKey(id: string): { denomination: number; year: number } {
+  const match = id.match(HOLDING_SORT_ID);
+  if (!match) {
+    return { denomination: Number.MAX_SAFE_INTEGER, year: 0 };
+  }
+  return { denomination: Number(match[1]), year: Number(match[2]) };
+}
+
+export type ColombiaSeriesCard = {
+  note: ColombiaNote;
+  piece: ColombiaNotePiece;
+  denomination: number;
+  year: number;
+};
+
+export function seriesCardsForChapter(chapterId: ColombiaChapterId): ColombiaSeriesCard[] {
+  const cards = notesForChapter(chapterId).flatMap((note) =>
+    notePieces(note).map((piece) => {
+      const key = holdingSortKey(piece.id);
+      return { note, piece, denomination: key.denomination, year: key.year };
+    }),
+  );
+  cards.sort((a, b) => a.denomination - b.denomination || a.year - b.year);
+  return cards;
+}
+
 export function noteSeriesLabel(note: ColombiaNote, locale: 'es' | 'en'): string {
   const chapter = colombiaChapters.find((entry) => entry.id === note.chapterId);
   const era = chapter?.title[locale] ?? 'Colombia';

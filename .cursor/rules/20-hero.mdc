@@ -43,7 +43,7 @@ Used by country/series indexes (`*SeriesPage`, `*CoinagePage`, `LazarettosPage`)
 
 ## Types with no photo hero
 
-`about`, `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `stub`, `error`.
+`about`, `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `search`, `stub`, `error`.
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `imageSrcset`. That is not a hero.
 

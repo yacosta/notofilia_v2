@@ -20,6 +20,8 @@ describe('locale path mapping', () => {
       '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
+    assert.equal(localizePath('/buscar/', 'en'), '/en/search/');
+    assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
@@ -40,6 +42,10 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/', 'en'),
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/', 'en'),
+      '/en/collection/united-states/miscellaneous/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
@@ -114,6 +120,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/'],
+      '/en/collection/united-states/miscellaneous/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],
