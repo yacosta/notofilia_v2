@@ -1,0 +1,26 @@
+---
+description: Torres García, Historia de la moneda en Colombia (1945; BanRep 2023) — historical context for Colombian monetary regimes, not a type catalogue
+globs:
+  - src/data/colombia*
+  - src/data/colombia-notes.ts
+  - src/data/colombia-coinage*
+  - docs/sources/torres-garcia/**
+alwaysApply: false
+---
+
+# Torres García — Historia de la moneda en Colombia
+
+When writing **historical or legal context** for Colombian money — banca libre, Banco Nacional, the *curso forzoso* (fiat) era, independence paper, the metallic-standard changes, or the 1923 founding of the Banco de la República — read `docs/sources/torres-garcia/README.md` and search `historia-moneda-colombia-2023-2ed.txt`, then confirm the passage in the PDF.
+
+Cite it as **Torres García, *Historia de la moneda en Colombia* (Banco de la República, 1945; ed. digital 2023), cap. N**. Link the BanRep landing page (`https://repositorio.banrep.gov.co/items/2665c571-b38b-4e59-b644-60ce22a41d78`), never a repo path.
+
+## Scope and limits
+
+- Narrative history from the 1821 Congreso de Cúcuta to the 1935–1938 devaluation. Use it for **why** a regime changed, not for identifying a note.
+- **No Pick numbers, no BG#, no serial ranges, no per-type printage, no plates.** For dated types and *emisión* figures use `docs/sources/gonzalez-white/`; for issuer totals use `docs/sources/banrep/`; for photographs of banca-libre / Banco Nacional / independence paper use `docs/sources/heritage/`.
+- An amount a law authorized (an emission ceiling) is **not** the printage of a note. Present it as the legal authorization and pair type-level facts with González White or BanRep.
+- Written in the 1940s: do not cite it for anything after the 1938 devaluation.
+
+## Public site
+
+Do not republish long passages, scans, or the statistical tables wholesale. A short cited fact plus a link to the BanRep landing page is fine. This book has no serials or holdings, so it cannot create or resolve a catalogue duplicate.
