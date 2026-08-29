@@ -120,6 +120,7 @@ describe('type catalog search', () => {
     assert.equal(hits[0]?.id, 'note:s511p');
     assert.equal(matchesTypeFilter(documents[0], 'banca-libre'), true);
     assert.deepEqual(pickTokens('P# S511p1 / S511p2'), ['S511P1', 'S511P2']);
+    assert.deepEqual(pickTokens('P# 380g · TBB B922k'), ['380G']);
     const stats = typeCatalogStats(documents);
     assert.equal(stats.types, 2);
     assert.equal(stats.holdings, 1);

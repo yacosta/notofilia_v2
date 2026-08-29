@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { CatalogSource, LocalizedText } from './catalog';
@@ -20,10 +20,11 @@ import {
 
 export const COLOMBIA_NOTES_CATALOG_PATH = `${COLOMBIA_PATH}catalogo/`;
 
-const LOTS_PATH = join(
-  dirname(fileURLToPath(import.meta.url)),
-  '../../docs/sources/heritage/lots.txt',
-);
+function heritageLotsPath(): string {
+  const fromCwd = join(process.cwd(), 'docs/sources/heritage/lots.txt');
+  if (existsSync(fromCwd)) return fromCwd;
+  return join(dirname(fileURLToPath(import.meta.url)), '../../docs/sources/heritage/lots.txt');
+}
 
 /** Manual image tags for types that are not yet a piece page. Holdings overlay these. */
 export const colombiaNoteTypeImages: Record<string, { image: string; alt?: LocalizedText }> = {};
@@ -243,17 +244,13 @@ function holdingOverlays(): HoldingOverlay[] {
 function findOverlay(pick: string, overlays: HoldingOverlay[]): HoldingOverlay | undefined {
   const token = normalizePickToken(pick);
   if (!token) return undefined;
-  return overlays.find(
-    (overlay) =>
-      overlay.tokens.includes(token) ||
-      overlay.tokens.some((item) => item.startsWith(token) || token.startsWith(item)),
-  );
+  return overlays.find((overlay) => overlay.tokens.includes(token));
 }
 
 let heritageSeedsCache: ReturnType<typeof parseHeritageLots> | undefined;
 
 export function heritageNoteTypeSeeds() {
-  heritageSeedsCache ??= parseHeritageLots(readFileSync(LOTS_PATH, 'utf8'));
+  heritageSeedsCache ??= parseHeritageLots(readFileSync(heritageLotsPath(), 'utf8'));
   return heritageSeedsCache;
 }
 
