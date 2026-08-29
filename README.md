@@ -18,7 +18,7 @@ Page-type and chrome rules live in `.cursor/rules/` (`00-site-standards`, `10-pa
 - `/audit-site` — full sweep once a quarter. Do not modify files. Latest write-up: `.cursor/audits/2026-08-site-sweep.md`.
 - `/audit-pr` — before each pull request, against changed files. Include Lighthouse **mobile** scores from `npm run build && npx astro preview` for each affected route in both locales.
 - `/new-page` and `/migrate-templates` — checklists when adding or converting a page type.
-- `/new-catalog-item` — add a banknote or coin only after serial/cert duplicate checks (`30-catalogue-duplicates.mdc`). Every feature that touches holdings must follow this.
+- `/new-catalog-item` — add a banknote or coin only after serial/cert duplicate checks (`30-catalogue-duplicates.mdc`). When deduping, prioritize low and fancy serials without creating a second record for the same serial. Every feature that touches holdings must follow this.
 
 Research copies (not public pages) live in `docs/sources/`: BanRep tables (`banrep/`), González White 2019 plus essays (`gonzalez-white/`), and C&C *NumisNotas* (`c-and-c/`). Cite the bank’s statistics page or the printed work on the site; do not republish plates or prices.
 
