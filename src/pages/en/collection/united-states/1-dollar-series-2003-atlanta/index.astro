@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../data/estados-unidos';
+
+const note = noteById('1-dolar-serie-2003-atlanta');
+if (!note) throw new Error('Missing Series 2003 Atlanta $1 catalog note');
+---
+
+<UnitedStatesNotePage locale="en" note={note} />
