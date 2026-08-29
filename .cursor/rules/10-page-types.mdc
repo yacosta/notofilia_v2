@@ -38,7 +38,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | Type | Breadcrumbs | Hero (`20-hero.mdc`) | Body | JSON-LD |
 | --- | --- | --- | --- | --- |
 | `home` | none | cinematic home hero | browse, milestones, articles, news, definitions, newsletter | sitewide `WebSite` only |
-| `about` | Home → About | none (text column) | bio | `AboutPage` + `Person` |
+| `about` | Home → About | none (text header: gold kicker + stacked display H1 + lead; no photo) | two-column bio + collector aside, pull quote, contact CTA | `AboutPage` + `Person` |
 | `contact` | Home → Contact | none | image + form | `BreadcrumbList` + `ContactPage` |
 | `collection-hub` | Home → Colección | none (text header) | collection cards | `CollectionPage` + `BreadcrumbList` |
 | `discipline-index` | Home → discipline | text header (kicker + stacked H1), no full-bleed photo | intro + country/case grid | `CollectionPage` + `BreadcrumbList` |

@@ -34,11 +34,12 @@ Once a page opens the full content column (facts card, image pair, chapter grid)
 - **Do** keep the one- or two-sentence lead under the `h1` at `max-w-[46rem]`. That line sits *above* the case objects.
 - **Do not** put `max-w-[46rem]` on a section that follows a facts card or a note/coin image grid. That recuts the margin and the page looks stepped.
 - **Do not** add extra `px-*` on those prose sections to “match” the facts card. The card’s `p-6` is inner padding of the panel, not the page gutter. Align section headings with the card’s *outer* edge and with “Anverso” / “Reverso”.
-- **Do not** use `46rem` as a page wrapper on a collection object page. That is for text-only pieces (about, editorial article).
+- **Do not** use `46rem` as a page wrapper on a collection object page. That is for text-only pieces (editorial article). About uses the museum case (`max-w-content`) because the collector aside and pull quote are full-width objects; keep the hero lead and bio hook at `max-w-[40rem]` / `max-w-[46rem]`.
 
 Text-only pages keep a reading column:
 
-- `AboutPage.astro` and `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
+- `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
+- `AboutPage.astro`: `max-w-content` on the article; the hero lead stays narrower.
 - `EditorialIndexPage.astro`: a `46rem` header above a wider index is fine.
 - Stubs and the 404 page may stay at `720px`.
 
@@ -72,7 +73,7 @@ The post-image narrative cap is removed on:
 - `ColombiaNotePage.astro`
 - `NetherlandsCoinPage.astro`
 
-Keep `max-w-[46rem]` on each page’s lead. Series index pages already use `max-w-content` without a second cap. Leave about, editorial articles, and stubs on a reading column.
+Keep `max-w-[46rem]` on each page’s lead. Series index pages already use `max-w-content` without a second cap. Editorial articles and stubs stay on a reading column; about uses the museum case.
 
 ## Check
 
