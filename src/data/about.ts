@@ -45,8 +45,8 @@ export const aboutCopy = {
     collectionCta: 'Ver la colección',
     contactCta: 'Escribirme →',
     pullQuote:
-      'Cada una de estas piezas fue dinero alguna vez. Pasó por mercados, bolsillos, guerras y malas economías, y sobrevivió lo suficiente para llegar a mis manos. ',
-    pullQuoteAccent: 'Esa es la parte que casi todo el mundo pasa por alto: la historia.',
+      '«Cada una de estas piezas fue dinero alguna vez. Pasó por mercados, bolsillos, guerras, malas economías y personas que cambiaron la historia, y sobrevivió lo suficiente para llegar a mis manos. ',
+    pullQuoteAccent: 'Esa es la parte que casi todo el mundo pasa por alto: la historia.»',
   },
   en: {
     nav: 'About Notofilia',
@@ -86,8 +86,8 @@ export const aboutCopy = {
     collectionCta: 'View the collection',
     contactCta: 'Write to me →',
     pullQuote:
-      'Every one of these pieces was money once. It passed through markets and pockets and wars and bad economies, and it survived long enough to end up in my hands. ',
-    pullQuoteAccent: 'That’s the part most people miss: the history.',
+      '“Every one of these pieces was money once. It passed through markets, pockets, wars, bad economies, and people who changed history, and it survived long enough to end up in my hands. ',
+    pullQuoteAccent: 'That’s the part most people miss: the history.”',
   },
 } as const;
 

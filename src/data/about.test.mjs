@@ -19,6 +19,28 @@ describe('about page copy and paths', () => {
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
   });
 
+  it('wraps the pull quote in locale typographic quotes and accents the last sentence', () => {
+    assert.equal(
+      aboutCopy.es.pullQuote,
+      '«Cada una de estas piezas fue dinero alguna vez. Pasó por mercados, bolsillos, guerras, malas economías y personas que cambiaron la historia, y sobrevivió lo suficiente para llegar a mis manos. ',
+    );
+    assert.equal(
+      aboutCopy.es.pullQuoteAccent,
+      'Esa es la parte que casi todo el mundo pasa por alto: la historia.»',
+    );
+    assert.equal(
+      aboutCopy.en.pullQuote,
+      '“Every one of these pieces was money once. It passed through markets, pockets, wars, bad economies, and people who changed history, and it survived long enough to end up in my hands. ',
+    );
+    assert.equal(
+      aboutCopy.en.pullQuoteAccent,
+      'That’s the part most people miss: the history.”',
+    );
+    assert.match(pageSource, /\{t\.pullQuote\}/);
+    assert.match(pageSource, /class="text-gold-light">\{t\.pullQuoteAccent\}/);
+    assert.doesNotMatch(pageSource, /personas que cambiaron la historia/);
+  });
+
   it('keeps a stacked display title and hero lead in both locales', () => {
     assert.deepEqual([...aboutCopy.es.titleLines], ['Mirar', 'el dinero', 'dos veces']);
     assert.deepEqual([...aboutCopy.en.titleLines], ['Look', 'at money', 'twice']);
