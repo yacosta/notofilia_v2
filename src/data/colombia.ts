@@ -164,6 +164,15 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+    es: 'Banco de la República — Producción y circulación de billetes y monedas',
+    en: 'Banco de la República — Banknote and coin production and circulation',
+    note: {
+      es: 'Tablas oficiales: producción anual de billetes por denominación (1960–2022), entregas de la Imprenta a Tesorería (2010–2022) y producción de monedas. Un total por año y valor facial no es la tirada de un tipo Pick, fecha o variedad.',
+      en: 'Official tables: annual banknote production by denomination (1960–2022), Imprenta deliveries to Tesorería (2010–2022), and coin production. A year-and-face-value total is not the printage of one Pick type, date, or variety.',
+    },
+  },
+  {
     href: 'https://www.banrep.gov.co/es/publicaciones-investigaciones/libros/banrep-antecedentes-evolucion-estructura',
     es: 'Banco de la República — Antecedentes, evolución y estructura (Meisel y cols.)',
     en: 'Banco de la República — Background, evolution, and structure (Meisel et al.)',

@@ -20,6 +20,8 @@ Page-type and chrome rules live in `.cursor/rules/` (`00-site-standards`, `10-pa
 - `/new-page` and `/migrate-templates` — checklists when adding or converting a page type.
 - `/new-catalog-item` — add a banknote or coin only after serial/cert duplicate checks (`30-catalogue-duplicates.mdc`). Every feature that touches holdings must follow this.
 
+Banco de la República production and delivery tables (research copies, not public pages) live in `docs/sources/banrep/`. Use them for Colombian printage/mintage; cite the bank’s statistics page on the site. See `.cursor/rules/40-banrep-production.mdc`.
+
 ## Deploy
 
 Pushing to `main` triggers a Cloudflare Workers build:

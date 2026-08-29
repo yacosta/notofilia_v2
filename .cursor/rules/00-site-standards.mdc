@@ -25,6 +25,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 - Before adding, importing, or editing a holding, search `src/`, `public/`, `docs/`, and `catalog-src/` for the normalized serial and any cert number. Report results before writing files.
 - A hit in a country module is an existing item — update, add the missing locale pair, or stop. Never create a second record for the same serial.
 - Store `serial` (normalized), `serial_display` when needed, `cert_number` / `cert_grader` when graded, and one internal ID shared by ES and EN routes.
+- Colombia printage/mintage: BanRep tables in `docs/sources/banrep/` (`40-banrep-production.mdc`). Do not invent a Pick-level tirada from a denomination-year total.
 
 ## Locales and copy
 

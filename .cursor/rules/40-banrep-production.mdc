@@ -1,0 +1,23 @@
+---
+description: BanRep Colombia printage and coin mintage tables — consult before inventing tiradas
+globs:
+  - src/data/colombia*
+  - src/data/colombia-notes.ts
+  - src/data/colombia-coinage*
+  - docs/sources/banrep/**
+alwaysApply: false
+---
+
+# Banco de la República production tables
+
+When writing or editing Colombian banknote or coin copy (printage, tirada, scarcity, mintage), read `docs/sources/banrep/README.md` and the CSVs there **before** stating that no official figure exists or inventing a run from Pick/Numista.
+
+| Use | File |
+| --- | --- |
+| Notes by year and denomination, 1960–2022 (millions of pieces) | `docs/sources/banrep/produccion-acumulada-diciembre-2022.csv` |
+| Notes delivered to Tesorería, 2010–2022, old vs 2016 family | `docs/sources/banrep/billetes_entregados-2010-2022.csv` |
+| Coins by year and denomination, 1987–2025 | `docs/sources/banrep/dye_mon_produccion.csv` |
+
+Public citation on the site: `https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion` (EN twin on the BanRep English stats page). Do not link repo file paths.
+
+**Do not** treat a denomination-year total as the printage of one Pick type, date, signature, printer, or replacement. Say what the table measures. If the year mixes types, keep the piece-level printage unpublished or qualify the BanRep total as all notes/coins of that face value that year.
