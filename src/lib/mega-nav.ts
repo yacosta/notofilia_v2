@@ -1,6 +1,8 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
@@ -46,6 +48,12 @@ export const megaNav: NavNode[] = [
         href: COLOMBIA_PATH,
         flag: 'co',
         children: [
+          {
+            id: 'colombia-catalogo',
+            es: 'Catálogo visual de billetes',
+            en: 'Visual banknote catalog',
+            href: COLOMBIA_NOTES_CATALOG_PATH,
+          },
           {
             id: 'emisiones-extranjero-guatemala',
             es: 'Guatemala (Emisiones en el Extranjero)',
@@ -129,6 +137,14 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
+        children: [
+          {
+            id: 'colombia-monedas-catalogo',
+            es: 'Catálogo visual de monedas',
+            en: 'Visual coin catalog',
+            href: COLOMBIA_COIN_CATALOG_PATH,
+          },
+        ],
       },
       {
         id: 'nl-monedas',

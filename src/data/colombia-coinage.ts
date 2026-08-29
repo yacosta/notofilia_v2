@@ -189,6 +189,8 @@ export const coinageCopy = {
     eraLabel: 'Época',
     notaphilyLead: 'El papel moneda de estas mismas épocas se documenta en la vitrina de notafilia.',
     notaphilyLink: 'Colombia · Banca libre y Banco de la República',
+    visualCatalogLead: 'El catálogo visual reúne los tipos con buscador, cuatro por fila, sin precios.',
+    visualCatalogLink: 'Catálogo visual de monedas',
   },
   en: {
     metaTitle: 'Colombia-Numismatics | Notofilia',
@@ -214,6 +216,8 @@ export const coinageCopy = {
     eraLabel: 'Period',
     notaphilyLead: 'Paper money from the same periods is documented in the notaphily case.',
     notaphilyLink: 'Colombia · Free banking and the Banco de la República',
+    visualCatalogLead: 'The visual catalog gathers the types with search, four to a row, and no prices.',
+    visualCatalogLink: 'Visual coin catalog',
   },
 } as const;
 

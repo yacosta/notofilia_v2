@@ -5,7 +5,9 @@ import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { colombiaNoteSlugs } from '../data/colombia-notes';
+import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import {
   USA_MISC_PATH,
@@ -58,6 +60,8 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of philippinesNoteSlugs) slugs.add(slug);
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of colombiaNoteSlugs) slugs.add(slug);
+  slugs.add(COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
+  slugs.add(COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
@@ -390,10 +394,12 @@ const dedicatedEs = [
   ...catalogPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,
   NUMISMATICA_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
+  COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),

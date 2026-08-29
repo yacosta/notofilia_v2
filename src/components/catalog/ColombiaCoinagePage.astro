@@ -6,6 +6,7 @@ import CatalogThumb from './CatalogThumb.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { COLOMBIA_PATH } from '../../data/colombia';
+import { COLOMBIA_COIN_CATALOG_PATH } from '../../data/colombia-coin-type-catalog';
 import {
   coinageChapterHref,
   coinageCopy,
@@ -87,6 +88,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(COLOMBIA_PATH, locale)}
         >
           {t.notaphilyLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.visualCatalogLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(COLOMBIA_COIN_CATALOG_PATH, locale)}
+        >
+          {t.visualCatalogLink}
         </a>
       </p>
 

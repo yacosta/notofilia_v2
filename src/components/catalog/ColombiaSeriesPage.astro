@@ -13,6 +13,7 @@ import {
   seriesSources,
 } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import { COLOMBIA_NOTES_CATALOG_PATH } from '../../data/colombia-type-catalog';
 import { errorGroups, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardsForChapter } from '../../data/colombia-notes';
 import { catalogAssetSrc } from '../../lib/images';
@@ -91,6 +92,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(COLOMBIA_COINAGE_PATH, locale)}
         >
           {t.coinageLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.visualCatalogLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(COLOMBIA_NOTES_CATALOG_PATH, locale)}
+        >
+          {t.visualCatalogLink}
         </a>
       </p>
 
