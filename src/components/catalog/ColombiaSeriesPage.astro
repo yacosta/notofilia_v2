@@ -43,14 +43,7 @@ const jsonLd = collectionPageJsonLd({
 
 ---
 
-<Layout
-      title={t.metaTitle}
-      description={t.metaDescription}
-      locale={locale}
-      pathname={pathname}
-      ogImage={hero.src}
-      ogImageAlt={t.heroAlt}
-    >
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
@@ -64,7 +57,6 @@ const jsonLd = collectionPageJsonLd({
       eyebrow={copy[locale].virtualCollection}
       title={t.kicker}
       subtitle={t.title}
-      imageClass="object-[50%_28%]"
     />
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
