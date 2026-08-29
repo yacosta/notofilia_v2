@@ -1,0 +1,313 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
+import CardImage from './CardImage.astro';
+import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { searchDocuments } from '../lib/search-index';
+import { createSearchEngine, parseFilter, parseSort, runSearch } from '../lib/search';
+import { searchCopy, searchFilters, searchPath } from '../data/search';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = searchCopy[locale];
+const pathname = searchPath(locale);
+const documents = searchDocuments(locale);
+const engine = createSearchEngine(documents);
+const initialQuery = Astro.url.searchParams.get('q') ?? '';
+const initialFilter = parseFilter(Astro.url.searchParams.get('filtro'));
+const initialSort = parseSort(Astro.url.searchParams.get('orden'));
+const initialHits = runSearch(documents, engine, initialQuery, initialFilter, initialSort);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: t.home,
+          item: new URL(localizePath('/', locale), SITE_URL).href,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t.nav,
+          item: new URL(pathname, SITE_URL).href,
+        },
+      ],
+    },
+    {
+      '@type': 'SearchResultsPage',
+      name: t.title,
+      description: t.metaDescription,
+      url: new URL(pathname, SITE_URL).href,
+      inLanguage: locale,
+    },
+  ],
+};
+
+const ui = {
+  emptyQuery: t.emptyQuery,
+  noResults: t.noResults,
+  resultCount: {
+    one: locale === 'en' ? '1 result' : '1 resultado',
+    other: locale === 'en' ? '{n} results' : '{n} resultados',
+  },
+  kinds: t.kinds,
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16" data-site-search>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
+
+      <header class="mb-8 max-w-[46rem]">
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
+      </header>
+
+      <form action={pathname} method="get" role="search" class="mb-10" data-search-form>
+        <div class="flex flex-col gap-3 md:flex-row md:items-stretch">
+          <div class="min-w-0 flex-1">
+            <label class="sr-only" for="collection-search">{t.searchLabel}</label>
+            <input
+              id="collection-search"
+              name="q"
+              type="search"
+              value={initialQuery}
+              placeholder={t.searchPlaceholder}
+              autocomplete="off"
+              class="box-border min-h-12 w-full rounded-[8px] border border-line-input bg-[#f4efe4] px-4 font-sans text-[16px] text-ink placeholder:text-[#7a705c]"
+            />
+          </div>
+          <div class="md:w-[16rem]">
+            <label class="sr-only" for="collection-sort">{t.sortLabel}</label>
+            <select
+              id="collection-sort"
+              name="orden"
+              class="box-border min-h-12 w-full rounded-[8px] border border-gold-light bg-panel px-3 font-sans text-[15px] text-cream"
+            >
+              {
+                (['relevance', 'title-asc', 'title-desc'] as const).map((value) => (
+                  <option value={value} selected={initialSort === value}>
+                    {t.sorts[value]}
+                  </option>
+                ))
+              }
+            </select>
+          </div>
+          <button
+            type="submit"
+            class="inline-flex min-h-12 items-center justify-center rounded-[8px] bg-cream px-5 font-sans text-[15px] font-semibold text-bg hover:bg-cream-dim md:hidden"
+          >
+            {t.searchSubmit}
+          </button>
+        </div>
+        <input type="hidden" name="filtro" value={initialFilter} data-search-filter-input />
+
+        <div class="mt-4 flex flex-wrap gap-2" role="group" aria-label={t.filterLabel}>
+          {
+            searchFilters.map((filter) => (
+              <button
+                type="submit"
+                name="filtro"
+                value={filter}
+                data-search-filter={filter}
+                aria-pressed={initialFilter === filter ? 'true' : 'false'}
+                class="search-chip min-h-11 cursor-pointer rounded-full border border-line-strong bg-panel px-3.5 py-[7px] font-sans text-[13px] text-cream-dim aria-[pressed=true]:border-transparent aria-[pressed=true]:bg-cream aria-[pressed=true]:text-bg"
+              >
+                {t.filters[filter]}
+              </button>
+            ))
+          }
+        </div>
+      </form>
+
+      <p id="search-status" class="mb-6 mt-0 font-sans text-[14px] text-muted" aria-live="polite" data-search-status>
+        {
+          initialQuery || initialFilter !== 'all'
+            ? initialHits.length === 1
+              ? t.resultCount(1)
+              : t.resultCount(initialHits.length)
+            : t.emptyQuery
+        }
+      </p>
+      <p class="sr-only">{t.statusLabel}</p>
+      <noscript>
+        <p class="mb-6 font-sans text-[14px] text-muted">{t.needsJs}</p>
+      </noscript>
+
+      <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2" data-search-results>
+        {
+          (initialQuery || initialFilter !== 'all' ? initialHits : []).map((hit) => (
+            <li data-search-hit>
+              <article class="flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel">
+                {hit.image ? (
+                  <a href={hit.href} class="block overflow-hidden no-underline">
+                    <CardImage src={hit.image} alt={hit.imageAlt || ''} />
+                  </a>
+                ) : null}
+                <div class="flex flex-1 flex-col p-5">
+                  <p class="m-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">{t.kinds[hit.kind]}</p>
+                  <h2 class="mb-2 mt-2 font-display text-[1.25rem]/7 font-normal text-cream">
+                    <a href={hit.href} class="text-inherit no-underline hover:text-gold-light">
+                      {hit.title}
+                    </a>
+                  </h2>
+                  <p class="m-0 text-[15px]/6 text-cream-dim">{hit.dek}</p>
+                </div>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+  </main>
+</Layout>
+
+<script define:vars={{ documents, ui }}>
+  window.__NOTOFILIA_SEARCH__ = { documents, ui };
+</script>
+<script>
+  import { cardImageSrc } from '../lib/images';
+  import { createSearchEngine, parseFilter, parseSort, runSearch, type SearchDocument } from '../lib/search';
+
+  type SearchUi = {
+    emptyQuery: string;
+    noResults: string;
+    resultCount: { one: string; other: string };
+    kinds: Record<string, string>;
+  };
+
+  const payload = (window as unknown as { __NOTOFILIA_SEARCH__?: { documents: SearchDocument[]; ui: SearchUi } })
+    .__NOTOFILIA_SEARCH__;
+  const root = document.querySelector('[data-site-search]');
+  if (payload && root instanceof HTMLElement) {
+    const documents = payload.documents;
+    const ui = payload.ui;
+    const engine = createSearchEngine(documents);
+    const form = root.querySelector('[data-search-form]');
+    const input = root.querySelector<HTMLInputElement>('#collection-search');
+    const sort = root.querySelector<HTMLSelectElement>('#collection-sort');
+    const filterInput = root.querySelector<HTMLInputElement>('[data-search-filter-input]');
+    const status = root.querySelector<HTMLElement>('[data-search-status]');
+    const list = root.querySelector<HTMLElement>('[data-search-results]');
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-search-filter]')];
+
+    function countLabel(count: number): string {
+      if (count === 1) return ui.resultCount.one;
+      return ui.resultCount.other.replace('{n}', String(count));
+    }
+
+    function render(hits: SearchDocument[], query: string, filter: string) {
+      if (!list || !status) return;
+      if (!query.trim() && filter === 'all') {
+        status.textContent = ui.emptyQuery;
+        list.replaceChildren();
+        return;
+      }
+      status.textContent = hits.length ? countLabel(hits.length) : ui.noResults;
+      const fragment = document.createDocumentFragment();
+      for (const hit of hits) {
+        const li = document.createElement('li');
+        const article = document.createElement('article');
+        article.className = 'flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel';
+        if (hit.image) {
+          const media = document.createElement('a');
+          media.href = hit.href;
+          media.className = 'block overflow-hidden no-underline';
+          const img = document.createElement('img');
+          img.src = cardImageSrc(hit.image);
+          img.alt = hit.imageAlt || '';
+          img.width = 1200;
+          img.height = 675;
+          img.loading = 'lazy';
+          img.decoding = 'async';
+          img.className = 'aspect-video w-full object-cover';
+          media.append(img);
+          article.append(media);
+        }
+        const body = document.createElement('div');
+        body.className = 'flex flex-1 flex-col p-5';
+        const kind = document.createElement('p');
+        kind.className = 'm-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted';
+        kind.textContent = ui.kinds[hit.kind] ?? hit.kind;
+        const heading = document.createElement('h2');
+        heading.className = 'mb-2 mt-2 font-display text-[1.25rem]/7 font-normal text-cream';
+        const link = document.createElement('a');
+        link.href = hit.href;
+        link.className = 'text-inherit no-underline hover:text-gold-light';
+        link.textContent = hit.title;
+        heading.append(link);
+        const dek = document.createElement('p');
+        dek.className = 'm-0 text-[15px]/6 text-cream-dim';
+        dek.textContent = hit.dek;
+        body.append(kind, heading, dek);
+        article.append(body);
+        li.append(article);
+        fragment.append(li);
+      }
+      list.replaceChildren(fragment);
+    }
+
+    function currentFilter(): ReturnType<typeof parseFilter> {
+      return parseFilter(filterInput?.value ?? 'all');
+    }
+
+    function apply(updateUrl = true) {
+      const query = input?.value ?? '';
+      const filter = currentFilter();
+      const orden = parseSort(sort?.value ?? 'relevance');
+      const hits = runSearch(documents, engine, query, filter, orden);
+      render(hits, query, filter);
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (query.trim()) url.searchParams.set('q', query);
+        else url.searchParams.delete('q');
+        if (filter !== 'all') url.searchParams.set('filtro', filter);
+        else url.searchParams.delete('filtro');
+        if (orden !== 'relevance') url.searchParams.set('orden', orden);
+        else url.searchParams.delete('orden');
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      apply();
+    });
+    input?.addEventListener('input', () => apply());
+    sort?.addEventListener('change', () => apply());
+    for (const chip of chips) {
+      chip.addEventListener('click', (event) => {
+        event.preventDefault();
+        const next = parseFilter(chip.dataset.searchFilter ?? 'all');
+        if (filterInput) filterInput.value = next;
+        for (const other of chips) {
+          other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
+        }
+        apply();
+      });
+    }
+
+    apply(false);
+  }
+</script>

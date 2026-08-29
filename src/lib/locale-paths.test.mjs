@@ -20,6 +20,8 @@ describe('locale path mapping', () => {
       '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
+    assert.equal(localizePath('/buscar/', 'en'), '/en/search/');
+    assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
