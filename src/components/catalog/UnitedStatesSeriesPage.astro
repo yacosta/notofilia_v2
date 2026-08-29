@@ -13,6 +13,7 @@ import {
   seriesSources,
   unitedStatesChapters,
 } from '../../data/estados-unidos';
+import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -48,7 +49,14 @@ const jsonLd = collectionPageJsonLd({
 
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={catalogAssetSrc(hero.src)}
+  ogImageAlt={t.heroAlt}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>

@@ -15,6 +15,7 @@ import {
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorGroups, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardsForChapter } from '../../data/colombia-notes';
+import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -50,7 +51,7 @@ const jsonLd = collectionPageJsonLd({
       description={t.metaDescription}
       locale={locale}
       pathname={pathname}
-      ogImage={hero.src}
+      ogImage={catalogAssetSrc(hero.src)}
       ogImageAlt={t.heroAlt}
     >
   <Fragment slot="head">
