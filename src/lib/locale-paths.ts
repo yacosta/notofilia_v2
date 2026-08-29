@@ -203,6 +203,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/china/',
     '/en/coleccion/colombia/5-pesos-rio-hacha-1883/',
     '/en/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
+    '/en/coleccion/colombia/1-peso-oro-1954/',
     '/en/coleccion/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/2-pesos-oro-1944/',
     '/en/coleccion/colombia/2-pesos-oro-1955/',
