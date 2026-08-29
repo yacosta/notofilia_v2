@@ -1,0 +1,30 @@
+---
+description: González White 2019 BanRep catalogue — consult for Colombian types, dates, replacements
+globs:
+  - src/data/colombia*
+  - src/data/colombia-notes.ts
+  - src/data/colombia-coinage*
+  - docs/sources/gonzalez-white/**
+  - docs/sources/c-and-c/**
+alwaysApply: false
+---
+
+# González White and C&C (Colombia)
+
+## 2019 catalogue (notes 1923–2019)
+
+When identifying, dating, or stating printage for a **Banco de la República** note, read `docs/sources/gonzalez-white/README.md` and search `catalogo-billetes-banrep-2019-7ed.txt`, then confirm the row in the PDF.
+
+Cite **BG#** and the page. Replacements are their own rows. BanRep year totals in `docs/sources/banrep/` are not a substitute for a BG# emisión.
+
+The book does not list banca libre / Banco Nacional / independence paper.
+
+## Essays (coins, $1.000 Gaitán, philately)
+
+`docs/sources/gonzalez-white/essays/README.md` — $50 / $200 / $500 mintage-and-variety tables (2012), Santa Laura $5.000 (2015), Gaitán $1.000 design note, LANSA 1950 FDC, Miss Universo stamps. Prefer BanRep spreadsheets for later year totals; prefer the essays for varieties the spreadsheet does not split.
+
+## NumisNotas 137 (Aug 2013)
+
+`docs/sources/c-and-c/` — Espinosa as the painter behind many independence portraits on notes and coins; Antioquia 1813 seal. Not a type catalogue.
+
+Do not link repo files or republish plates, prices, or dealer ads on the public site.

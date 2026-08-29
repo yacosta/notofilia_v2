@@ -20,6 +20,8 @@ Page-type and chrome rules live in `.cursor/rules/` (`00-site-standards`, `10-pa
 - `/new-page` and `/migrate-templates` — checklists when adding or converting a page type.
 - `/new-catalog-item` — add a banknote or coin only after serial/cert duplicate checks (`30-catalogue-duplicates.mdc`). Every feature that touches holdings must follow this.
 
+Research copies (not public pages) live in `docs/sources/`: BanRep tables (`banrep/`), González White 2019 plus essays (`gonzalez-white/`), and C&C *NumisNotas* (`c-and-c/`). Cite the bank’s statistics page or the printed work on the site; do not republish plates or prices.
+
 ## Deploy
 
 Pushing to `main` triggers a Cloudflare Workers build:
