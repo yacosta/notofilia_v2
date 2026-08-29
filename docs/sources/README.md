@@ -4,7 +4,7 @@ Working copies for catalogue copy. Cite the issuer or the printed work on the si
 
 | Directory | What |
 | --- | --- |
-| `banrep/` | Banco de la República production tables, Tesorería deliveries, and the 1996 Museo Casa de Moneda exhibition booklet |
+| `banrep/` | Banco de la República production tables, Tesorería deliveries, the 1996 Museo Casa de Moneda exhibition booklet, and a 2020 classroom presentation on the house |
 | `gonzalez-white/` | *Catálogo de Billetes…* 7ª ed. 2019 (BG#) and later `essays/` |
 | `c-and-c/` | Asociación C&C *NumisNotas* (issue 137, Aug 2013) |
 | `heritage/` | Heritage Auctions World Paper Money sold archive (*Colombia* search, Aug 2026). Comparables only — not holdings. |
