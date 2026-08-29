@@ -8,7 +8,8 @@ export type ColombiaChapterId =
   | 'banco-nacional'
   | 'banco-central'
   | 'banco-de-la-republica'
-  | 'familias-modernas';
+  | 'familias-modernas'
+  | 'errores';
 
 export type ColombiaChapter = {
   id: ColombiaChapterId;
@@ -330,6 +331,11 @@ export const seriesCopy = {
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
+    errorsTitle: 'Errores',
+    errorsIntro:
+      'Maculaturas y errores de impresión del Banco de la República y de emisiones anteriores, agrupados por año y denominación. Las fichas se publican a medida que se documentan las piezas.',
+    errorsEmpty:
+      'Aún no hay errores publicados en esta vitrina. Cuando se documente una pieza, aparecerá aquí ordenada por año y denominación.',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -357,6 +363,11 @@ export const seriesCopy = {
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
+    errorsTitle: 'Errors',
+    errorsIntro:
+      'Maculatures and printing errors from the Banco de la República and earlier issues, grouped by year and denomination. Note pages are published as pieces are documented.',
+    errorsEmpty:
+      'No error notes are published in this case yet. When a piece is documented, it will appear here sorted by year and denomination.',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },
