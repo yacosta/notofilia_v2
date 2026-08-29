@@ -84,8 +84,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         es: 'Numista — ¼ real de Santa Marta, 1820 (N#18073)',
         en: 'Numista — Santa Marta ¼ real, 1820 (N#18073)',
         note: {
-          es: 'KM# B4, Restrepo 104, Hernández 11; cobre de sitio; leyenda S M = Santa Marta.',
-          en: 'KM# B4, Restrepo 104, Hernández 11; copper siege issue; S M = Santa Marta.',
+          es: 'KM# B4, Restrepo 104, Hernández 11 (Cód. 11 en la 8.ª ed. 2023); cobre de sitio; leyenda S M = Santa Marta.',
+          en: 'KM# B4, Restrepo 104, Hernández 11 (Cód. 11 in the 8th ed. 2023); copper siege issue; S M = Santa Marta.',
         },
       },
       {
@@ -95,6 +95,15 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Emisión realista de cobre; la plaza cayó en 1821 y la circulación fue breve.',
           en: 'Royalist copper issue; the town fell in 1821 and circulation was brief.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Cód. 11: cuarto de real de cobre de Santa Marta, 1820, con SM y cruz. No se publican precios.',
+          en: 'Cód. 11: Santa Marta copper quarter-real, 1820, with SM and a cross. Prices are not published here.',
         },
       },
     ],

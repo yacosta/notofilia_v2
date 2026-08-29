@@ -17,6 +17,8 @@ When writing or editing Colombian banknote or coin copy (printage, tirada, scarc
 | Notes by year and denomination, 1960–2022 (millions of pieces) | `docs/sources/banrep/produccion-acumulada-diciembre-2022.csv` |
 | Notes delivered to Tesorería, 2010–2022, old vs 2016 family | `docs/sources/banrep/billetes_entregados-2010-2022.csv` |
 | Coins by year and denomination, 1987–2025 | `docs/sources/banrep/dye_mon_produccion.csv` |
+| Museo Casa de Moneda exhibition booklet (1996 script; 2003 PDF) | `docs/sources/banrep/coleccion-numismatica-museo-casa-de-moneda.txt` |
+| 2020 classroom slides on the Casa de Moneda (secondary) | `docs/sources/banrep/presentacion-casa-de-la-moneda-2020.txt` |
 
 Public citation on the site: `https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion` (EN twin on the BanRep English stats page). Do not link repo file paths.
 

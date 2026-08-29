@@ -1,0 +1,22 @@
+---
+description: Hernández 2023 Colombian coins and notes catalogue — consult for independence and free-banking paper
+globs:
+  - src/data/colombia.ts
+  - src/data/colombia-notes.ts
+  - src/data/colombia-coinage-pieces.ts
+  - docs/sources/hernandez/**
+alwaysApply: false
+---
+
+# Hernández, *Monedas y Billetes de Colombia* (8ª ed., 2023)
+
+Read `docs/sources/hernandez/README.md` before adding independence, banca libre, or Banco Nacional facts from this compiler.
+
+- Public cite: Numista **[L100183](https://en.numista.com/catalogue/literature.php?id=100183)**. Do not link the repo OCR.
+- This edition uses **Cód.** (e.g. **11** Santa Marta 1820 ¼ real; **1109** Riohacha 5 pesos 1 Jan 1883 circulating; **1134** Hipotecario 5 pesos ABNC). Older Notofilia H# (91, 95, 96, 199/201) follow **Numista**; do not overwrite them with 2023 Cód. unless Numista is updated.
+- Keep Banrepcultural’s **1813** Cartagena 1-real in parallel with Hernández’s **1812** Mompós 2-reales listing.
+- A Cód. circulating row is **not** the same object as an ABNC proof holding (Riohacha S819p vs Cód. 1109).
+- Plate serials in the book are **not** Notofilia holdings (e.g. 20.000 pesos **AE** / **AC53513901** vs collection **AF51355141**).
+- **Do not** republish `$` / `US $` columns, dealer ads, or plates.
+
+Related: González White (`41-gonzalez-white.mdc`) for BanRep 1923–2019; Heritage (`42-heritage-colombia.mdc`) for auction comparables.
