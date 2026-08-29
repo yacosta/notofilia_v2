@@ -418,6 +418,7 @@ const dedicatedEs = [
   'blog',
   'noticias',
   'contacto',
+  'buscar',
   ...blogSlugs,
   ...newsSlugs,
 ];
