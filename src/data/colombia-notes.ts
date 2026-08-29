@@ -6,6 +6,7 @@ import { localizePath } from '../lib/locale-paths';
 export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
+  | '1-peso-oro-1954'
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
@@ -316,6 +317,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023: banco fundado en 1885 y liquidado en 1888; Cód. 1109 es el cinco pesos de circulación del 1.º de enero de 1883 (Bolívar al centro, ABNC). Esta ficha es el par de pruebas S819p.',
           en: '8th ed. 2023: bank founded in 1885 and liquidated in 1888; Cód. 1109 is the circulating five-peso of 1 January 1883 (Bolívar at center, ABNC). This record is the S819p proof pair.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-peso-oro-1954',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1-peso-oro-1954/`,
+    pick: 'P# 380g · TBB B922k',
+    serial: 'HH 52170492',
+    signatures: {
+      es: 'Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario)',
+      en: 'Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1954. Formato publicado: 140 × 70 mm. Serie HH, serial de ocho dígitos. González White 2019 numera esta fecha BG# 044 (p. 36): emisión 50.000.000, seriales 30.000.001–80.000.000. El Bank Note Museum numera el tipo 380g en esa fecha. Numista cita Hernández 38. El serial 52170492 cae en ese tramo. Las tablas BanRep de producción anual de billetes empiezan en 1960; no hay un total de denominación para 1954.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 January 1954. Published size: 140 × 70 mm. Series HH, eight-digit serial. González White 2019 numbers this date BG# 044 (p. 36): emisión 50,000,000, serials 30,000,001–80,000,000. The Bank Note Museum numbers type 380g on that date. Numista cites Hernández 38. Serial 52170492 falls in that range. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1954.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1-peso-oro-1954-52170492-composite.jpg',
+      front: '/images/catalog/colombia/1-peso-oro-1954-52170492-front.jpg',
+      back: '/images/catalog/colombia/1-peso-oro-1954-52170492-back.jpg',
+    },
+    title: {
+      es: '1 peso oro · Banco de la República · 1954',
+      en: '1 peso oro · Banco de la República · 1954',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Un peso oro de circulación, Pick 380g: serie HH, serial de ocho dígitos 52170492, 1.º de enero de 1954. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A circulating one-peso oro, Pick 380g: Series HH, eight-digit serial 52170492, 1 January 1954. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este un peso oro de la familia Pick 380 (1929–1954). El anverso, en azul sobre fondo policromado naranja y verde, lleva a la izquierda el retrato de Francisco de Paula Santander y una figura alegórica de pie, al centro el 1 con la leyenda «UN PESO ORO», y a la derecha el busto de Simón Bolívar, con el nombre «BOLIVAR» bajo el óvalo. Los seriales van en rojo: 52170492, una vez arriba a la derecha y otra abajo a la izquierda. La leyenda «SERIE HH» aparece dos veces en negro, a ambos flancos del 1 central. La fecha impresa es «BOGOTÁ, COLOMBIA. / 1º DE ENERO DE 1954». Las firmas son las de Luis Ángel Arango (gerente) y Eduardo Arias Robledo (secretario), el par que Numista asigna a 1954 (LAA₂, EAR). El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 1 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 380g, según el Bank Note Museum, cubre solo esa fecha; las HH de 1950 (Pick 380f) son otra emisión, de siete u ocho dígitos. No es el 1 peso conmemorativo de Boyacá de 1953 (Waterlow) ni el 1 peso azul de la Imprenta de Billetes (Pick 404). Esta pieza de la colección se presenta en funda, circulada, sin encapsular.',
+      en: 'The Banco de la República ordered this one-peso oro of the Pick 380 family (1929–1954) from the American Bank Note Company in New York. The face, blue on an orange and green multicolour underprint, carries at left the portrait of Francisco de Paula Santander and a standing allegorical figure, at center the figure 1 with the legend “UN PESO ORO,” and at right the bust of Simón Bolívar, named “BOLIVAR” under the oval. The serials are in red: 52170492, once at upper right and once at lower left. The legend “SERIE HH” appears twice in black, flanking the central 1. The printed date is “BOGOTÁ, COLOMBIA. / 1º DE ENERO DE 1954.” The signatures are those of Luis Ángel Arango (gerente) and Eduardo Arias Robledo (secretario), the pair Numista assigns to 1954 (LAA₂, EAR). The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 1 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 380g, per the Bank Note Museum, covers that date only; the 1950 HH notes (Pick 380f) are another issue, in seven- or eight-digit serials. It is not the 1953 Boyacá commemorative 1-peso (Waterlow) or the Imprenta de Billetes blue 1-peso (Pick 404). This collection piece is shown in a sleeve, circulated, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 peso oro, Pick 380g: Santander, Bolívar, serie HH, serial 52170492 y fecha 1.º de enero de 1954.',
+      en: 'Face of the 1 peso oro, Pick 380g: Santander, Bolívar, Series HH, serial 52170492, and the date 1 January 1954.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 peso oro, Pick 380g: Libertad en medallón azul, cifras 1 y pie de la American Bank Note Company.',
+      en: 'Back of the 1 peso oro, Pick 380g: Liberty in a blue medallion, the figures 1, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 044, p. 36) publica 50.000.000 de ejemplares para el 1.º de enero de 1954, serie HH de ocho dígitos, seriales 30.000.001–80.000.000. El Bank Note Museum describe el Pick 380g como esa fecha del 1 peso oro ABNC: Santander y Bolívar al anverso, la Libertad al reverso. Numista agrupa el diseño 1929–1954 bajo N# 207727 y marca la frecuencia de la fecha 01.01.1954, serie HH, en un 45 % entre quienes poseen el tipo. No es prueba ni espécimen. Esta ficha no sustituye esa emisión BG# por un total BanRep de denominación-año.',
+      en: 'González White 2019 (BG# 044, p. 36) publishes 50,000,000 notes for 1 January 1954, eight-digit Series HH, serials 30,000,001–80,000,000. The Bank Note Museum describes Pick 380g as that date of the ABNC 1 peso oro: Santander and Bolívar on the face, Liberty on the back. Numista groups the 1929–1954 design under N# 207727 and marks the 01.01.1954 Series HH date’s frequency at 45% among owners of the type. It is neither a proof nor a specimen. This record does not replace that BG# emisión with a BanRep denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 52170492. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 52170492 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0380.htm',
+        es: 'Bank Note Museum — Colombia P-380, 1 peso oro (1929–1954)',
+        en: 'Bank Note Museum — Colombia P-380, 1 peso oro (1929–1954)',
+        note: {
+          es: '380g: 01.01.1954; anverso Santander, figura alegórica y Bolívar; reverso Libertad; ABNC.',
+          en: '380g: 01.01.1954; Santander, an allegorical figure, and Bolívar on the face; Liberty on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note207727.html',
+        es: 'Numista — Colombia 1 peso oro, N# 207727',
+        en: 'Numista — Colombia 1 peso oro, N# 207727',
+        note: {
+          es: '01.01.1954: P# 380g / TBB B922k; Hernández 38; serie HH; firmas LAA₂ y EAR; 140 × 70 mm; frecuencia 45 % en el tipo.',
+          en: '01.01.1954: P# 380g / TBB B922k; Hernández 38; Series HH; signatures LAA₂ and EAR; 140 × 70 mm; 45% frequency within the type.',
+        },
+      },
+      {
+        href: 'https://www.realbanknotes.com/banknote/16851-Colombia-p380g-1-Peso-Oro-from-1954',
+        es: 'RealBanknotes — Colombia P-380g, 1 peso oro de 1954',
+        en: 'RealBanknotes — Colombia P-380g, 1 peso oro of 1954',
+        note: {
+          es: '1.1.1954; ABNC; serie HH; anverso Santander y Bolívar, reverso Libertad.',
+          en: '1.1.1954; ABNC; Series HH; Santander and Bolívar on the face, Liberty on the back.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 38 para el 1.º de enero de 1954; ese H# no se sustituye por el Cód. de 2023.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 38 for 1 January 1954; that H# is not replaced by a 2023 Cód.',
         },
       },
     ],
@@ -1103,7 +1198,7 @@ export function notesForChapter(chapterId: ColombiaChapterId): ColombiaNote[] {
   return colombiaNotes.filter((note) => note.chapterId === chapterId);
 }
 
-const HOLDING_SORT_ID = /^(\d+)-pesos(?:-[a-z0-9]+)*-(\d{4})$/i;
+const HOLDING_SORT_ID = /^(\d+)-pesos?(?:-[a-z0-9]+)*-(\d{4})$/i;
 
 export function holdingSortKey(id: string): { denomination: number; year: number } {
   const match = id.match(HOLDING_SORT_ID);
