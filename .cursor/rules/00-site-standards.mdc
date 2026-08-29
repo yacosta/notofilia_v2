@@ -62,4 +62,4 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 
 - Museum case: `article` / bands use `mx-auto max-w-content px-[var(--page-gutter)]`.
 - After a facts card or anverso/reverso grid, do **not** recap narrative at `max-w-[46rem]`.
-- `max-w-[46rem]` is for a short lead under the `h1`, or for text-only pages (about, editorial article).
+- `max-w-[46rem]` is for a short lead under the `h1`, or for text-only pages (editorial article). About uses a color-block hero plus `max-w-content` after it; the hero lead may stay ~`640px`.

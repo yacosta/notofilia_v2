@@ -1,7 +1,8 @@
 ---
-description: Hero patterns for home, series, and piece pages
+description: Hero patterns for home, series, piece, and about pages
 globs:
   - src/components/HomePage.astro
+  - src/components/AboutPage.astro
   - src/components/catalog/**/*.astro
   - src/components/editorial/**/*.astro
 alwaysApply: false
@@ -9,7 +10,7 @@ alwaysApply: false
 
 # Heroes
 
-Three visual patterns. Do not invent a fourth without updating this file.
+Four visual patterns. Do not invent a fifth without updating this file.
 
 ## 1. Home (cinematic, centered)
 
@@ -41,9 +42,20 @@ Used by country/series indexes (`*SeriesPage`, `*CoinagePage`, `LazarettosPage`)
 - If not: no full-bleed section. Start with breadcrumbs + `h1` + lead (`max-w-[46rem]`).
 - Catalog scans (anverso/reverso) use `NoteImageLightbox` at full resolution — not a hero.
 
+## 4. About (color-block, no photo)
+
+Used only by `AboutPage.astro` (`/acerca-de/`, `/en/about/`).
+
+- Full-bleed `section` with `bg-alert` / `text-alert-ink` (`#d61f26` + white). No photograph and no fake LCP image.
+- Inner case: `max-w-content` + `--page-gutter`. Lead stays about `40rem` / `640px`.
+- Stack: uppercase kicker → stacked display `h1` (one line per `titleLines` span) → lead paragraph.
+- `h1` size is clamped for mobile; the mock’s ~118px is desktop only.
+- Breadcrumbs go **below** the red field, inside the `article` case (`max-w-content`). Do not place crumbs on the alert ground.
+- Do not render `statsLine()` here. Live collection counts belong in the collector aside via `collectionStats()`.
+
 ## Types with no photo hero
 
-`about`, `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `search`, `stub`, `error`.
+`about` uses pattern 4 (color-block, live `--color-alert` / `--color-alert-ink`). `contact`, `collection-hub`, `discipline-index`, `editorial-index`, `glossary-*`, `search`, `stub`, `error` have no photo hero.
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `imageSrcset`. That is not a hero.
 
