@@ -839,7 +839,7 @@ export const colombiaNotes: ColombiaNote[] = [
   },
   {
     id: '2000-pesos-2008',
-    chapterId: 'familias-modernas',
+    chapterId: 'banco-de-la-republica',
     path: `${COLOMBIA_PATH}2000-pesos-2008/`,
     pick: 'P# 457',
     serial: '10000001',
@@ -857,12 +857,12 @@ export const colombiaNotes: ColombiaNote[] = [
       back: '/images/catalog/colombia/2000-pesos-2008-10000001-back.jpg',
     },
     title: {
-      es: '2.000 pesos · 2008 · serial 10000001',
-      en: '2,000 pesos · 2008 · serial 10000001',
+      es: '2.000 pesos · 2008',
+      en: '2,000 pesos · 2008',
     },
     kicker: {
-      es: 'Colombia · Familias modernas · Serial capicúa binario',
-      en: 'Colombia · Modern families · Binary radar serial',
+      es: 'Colombia · Banco de la República · Serial capicúa binario',
+      en: 'Colombia · Banco de la República · Binary radar serial',
     },
     lead: {
       es: 'Dos mil pesos de la familia reducida Pick 457: fecha 20 de agosto de 2008 y serial capicúa binario 10000001, impreso dos veces en el reverso. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
