@@ -9,7 +9,7 @@ Research copy of Bernardo González White, *Catálogo de Billetes Banco de la Re
 
 © 2019 Bernardo González White / Asociación C&C. This is a working copy for Notofilia research. **Do not** put plates, price columns (`ESTIMADO $`), or auction results on the public site. Cite the printed book (`BG#`, page), not a repo path.
 
-The catalogue does **not** cover banca libre, Banco Nacional, or independence issues. Those stay with Hernández, Banrepcultural, Bank Note Museum, and the Heritage sold-archive extract (`../heritage/`).
+The catalogue does **not** cover banca libre, Banco Nacional, or independence issues. Those stay with Hernández (`../hernandez/`), Banrepcultural, Bank Note Museum, and the Heritage sold-archive extract (`../heritage/`).
 
 ## How to use
 

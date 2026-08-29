@@ -303,7 +303,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Error de impresión", en: "Printing error" },
     definition: { es: "Billete que salió de la imprenta con un defecto no intencional —corte descentrado, doblez de papel, color faltante— y que suele valorarse más que un ejemplar normal. En taller se llama también maculatura.", en: "A note that left the printer with an unintentional defect — off-center cut, paper fold, missing color — usually valued above a normal example. In the print shop it is also called a maculature or error note." },
-    seeAlso: ["maculatura", "billete-de-reemplazo-estrella"],
+    seeAlso: ["maculatura", "billete-de-reemplazo-estrella", "mariposa"],
   },
   {
     slug: "escala-sheldon",
@@ -334,8 +334,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "specimen",
     category: "Coleccionismo",
     title: { es: "Espécimen", en: "Specimen" },
-    definition: { es: "Ejemplar de muestra enviado a bancos centrales y fuerzas de seguridad para familiarizarlos con un diseño nuevo. Suele llevar la palabra SPECIMEN perforada o estampada y numeración en ceros (p. ej. 0000000); no entra en circulación.", en: "A sample note distributed to central banks and law enforcement to familiarize them with a new design. It usually bears perforated or stamped SPECIMEN text and all-zero serials (e.g. 0000000), and never enters circulation." },
-    seeAlso: ["banco-emisor", "prueba-ensayo"],
+    definition: { es: "Ejemplar de muestra enviado a bancos centrales y fuerzas de seguridad para familiarizarlos con un diseño nuevo. Suele llevar la palabra SPECIMEN perforada o estampada y numeración en ceros (p. ej. 0000000); no entra en circulación. En el catálogo de Hernández, los ceros distinguen el espécimen de la prueba.", en: "A sample note distributed to central banks and law enforcement to familiarize them with a new design. It usually bears perforated or stamped SPECIMEN text and all-zero serials (e.g. 0000000), and never enters circulation. In Hernández’s catalog, zeros distinguish a specimen from a proof." },
+    seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa"],
   },
   {
     slug: "estado-basal",
@@ -504,6 +504,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Marcas de funda de álbum", en: "Album Slide Marks" },
     definition: { es: "Líneas, con frecuencia paralelas, causadas en la superficie de una moneda por la fricción de una funda plástica dentro de un álbum de almacenamiento.", en: "Lines, frequently parallel, imparted to a coin's surface by the friction of a plastic slide inside a storage album." },
     seeAlso: [],
+  },
+  {
+    slug: "mariposa",
+    id: "mariposa",
+    category: "Producción",
+    title: { es: "Mariposa", en: "Butterfly cut" },
+    definition: { es: "Error de corte: al contorno del billete le sobra un fragmento de papel en forma de ala. En la notafilia colombiana Hernández llama a esa pieza billete mariposa; no es un espécimen ni una prueba.", en: "A cutting error: a wing-shaped scrap of paper remains attached to the note’s edge. In Colombian notaphily Hernández calls that piece a butterfly note (mariposa); it is neither a specimen nor a proof." },
+    seeAlso: ["error-de-impresion", "specimen", "prueba-ensayo"],
   },
   {
     slug: "foxing",
@@ -686,8 +694,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "prueba-ensayo",
     category: "Producción",
     title: { es: "Prueba / ensayo", en: "Proof / essay" },
-    definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color." },
-    seeAlso: ["specimen", "intaglio"],
+    definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color. Hernández anota que las pruebas no llevan ceros y a menudo son unifaces, a diferencia del espécimen.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color. Hernández notes that proofs do not carry zeros and are often uniface, unlike a specimen." },
+    seeAlso: ["specimen", "intaglio", "mariposa"],
   },
   {
     slug: "quetzal",
