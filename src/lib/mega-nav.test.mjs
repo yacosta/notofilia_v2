@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
@@ -41,6 +42,17 @@ describe('mega-nav columns', () => {
     const { main, aside } = navColumns(nodes);
     assert.equal(aside.length, 0);
     assert.equal(main.length, nodes.length);
+  });
+});
+
+describe('United States submenu', () => {
+  it('includes the Misceláneos placeholder under Estados Unidos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    assert.match(usa, /id: 'miscelaneos'/);
+    assert.match(usa, /es: 'Misceláneos'/);
+    assert.match(usa, /en: 'Miscellaneous'/);
+    assert.match(usa, /href: USA_MISC_PATH/);
   });
 });
 
