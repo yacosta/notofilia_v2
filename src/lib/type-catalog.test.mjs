@@ -14,6 +14,8 @@ import {
   runTypeCatalogSearch,
   typeCatalogStats,
 } from './type-catalog.ts';
+import { colombiaErrorNotes } from '../data/colombia-errors.ts';
+import { colombiaNotes, notePieces } from '../data/colombia-notes.ts';
 
 const lots = readFileSync(new URL('../../docs/sources/heritage/lots.txt', import.meta.url), 'utf8');
 const noteCatalogSource = readFileSync(new URL('../data/colombia-type-catalog.ts', import.meta.url), 'utf8');
@@ -145,6 +147,17 @@ describe('Colombia visual catalog data files', () => {
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /5000-pesos-santa-laura-2015/);
     assert.doesNotMatch(coinCatalogSource, /\b(price|precio|realized):/i);
+  });
+
+  it('emits one document per collection piece and no prices', () => {
+    const expected = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
+    assert.ok(expected.length > 0);
+    assert.match(noteCatalogSource, /collectionNoteDocuments\(locale, 'CO'\)/);
+    assert.match(collectionCatalogSource, /\[\.\.\.colombiaNotes, \.\.\.colombiaErrorNotes\]/);
+    assert.match(collectionCatalogSource, /notePieces\(note\)/);
+    assert.match(collectionCatalogSource, /inCollection: true/);
+    assert.doesNotMatch(noteCatalogSource, /\b(price|precio|realized):/i);
+    assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
   });
 });
 
