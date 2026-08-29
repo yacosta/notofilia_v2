@@ -145,15 +145,10 @@ const jsonLd = collectionPageJsonLd({
                     ]}
                     aria-label={chapter.title[locale]}
                   >
-                    {seriesCardsForChapter(chapter.id).map(({ note, piece, startDenominationRow }) => {
+                    {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
                       const multi = (note.pieces?.length ?? 1) > 1;
                       return (
-                      <li
-                        class:list={[
-                          'min-w-0',
-                          chapter.id === 'banco-de-la-republica' && startDenominationRow && 'col-start-1',
-                        ]}
-                      >
+                      <li class="min-w-0">
                         <a
                           href={multi ? `${notePath(note, locale)}#${piece.id}` : notePath(note, locale)}
                           class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"

@@ -929,22 +929,16 @@ export type ColombiaSeriesCard = {
   piece: ColombiaNotePiece;
   denomination: number;
   year: number;
-  startDenominationRow: boolean;
 };
 
 export function seriesCardsForChapter(chapterId: ColombiaChapterId): ColombiaSeriesCard[] {
   const cards = notesForChapter(chapterId).flatMap((note) =>
     notePieces(note).map((piece) => {
       const key = holdingSortKey(piece.id);
-      return { note, piece, denomination: key.denomination, year: key.year, startDenominationRow: false };
+      return { note, piece, denomination: key.denomination, year: key.year };
     }),
   );
   cards.sort((a, b) => a.denomination - b.denomination || a.year - b.year);
-  let previousDenomination: number | undefined;
-  for (const card of cards) {
-    card.startDenominationRow = card.denomination !== previousDenomination;
-    previousDenomination = card.denomination;
-  }
   return cards;
 }
 
