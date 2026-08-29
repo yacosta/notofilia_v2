@@ -74,6 +74,10 @@ Confirm in the PDF before changing published copy.
 | 10 pesos oro replacement, 20 July 1976, asterisk, IBB (Pick 407f / TBB B950kr) | p. 68, several **JULIO 20 1976** rows (ordinary runs and `Reposición asterisco` with known serial bands). 8 digits, no series letter except the A–Z variety on the same spread. Match the holding to the asterisk row, not the 50/100 million ordinary counts. |
 | 2.000 pesos oro specimen, 24 July 1983, TDLR (Pick 430as) | **BG# 440**, p. 113–114, is the **circulation** first date: 50.000.000, serials 00.000.001–50.000.000, 8 digits, no series, no replacement (`NO`). The book does not give a specimen printage on that spread. |
 
+## Essays (2012–2015)
+
+Shorter BEGOW notes — $50 / $200 / $500 coins, Santa Laura $5.000, $1.000 Gaitán, plus two philatelic memos — are in `essays/`. See `essays/README.md`.
+
 ## Dedup
 
 A serial that appears only as a replacement **range** in this book is not a Notofilia holding. A hit in `src/data/colombia-notes.ts` is the catalogue object.
