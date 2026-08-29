@@ -22,18 +22,11 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/united-states.jpg',
-        width: 2128,
-        height: 912,
-      }
-    : {
-        src: '/images/catalog/estados-unidos.jpg',
-        width: 2128,
-        height: 912,
-      };
+const hero = {
+  src: '/images/catalog/estados-unidos/hero-estados-unidos.jpg',
+  width: 2128,
+  height: 912,
+};
 
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -48,7 +41,14 @@ const jsonLd = collectionPageJsonLd({
 
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={hero.src}
+  ogImageAlt={t.heroAlt}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
@@ -62,7 +62,7 @@ const jsonLd = collectionPageJsonLd({
       eyebrow={copy[locale].virtualCollection}
       title={t.kicker}
       subtitle={t.title}
-  imageClass="object-[50%_28%]"
+      imageClass="object-[50%_18%]"
     />
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
