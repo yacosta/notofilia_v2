@@ -6,8 +6,8 @@ import { localizePath } from '../lib/locale-paths';
 export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
-  | '10-pesos-oro-1943'
   | '2-pesos-oro-1944'
+  | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
   | '2000-pesos-oro-1983';
 
@@ -41,6 +41,8 @@ export type ColombiaNote = {
   population: LocalizedText;
   grade: LocalizedText;
   sources: CatalogSource[];
+  /** Series-index grid: `full` occupies the whole row (two columns from `sm` up). */
+  seriesRow?: 'full';
 };
 
 export const colombiaNotes: ColombiaNote[] = [
@@ -295,85 +297,10 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
-    id: '10-pesos-oro-1943',
-    chapterId: 'banco-de-la-republica',
-    path: `${COLOMBIA_PATH}10-pesos-oro-1943/`,
-    pick: 'P# 389b',
-    serial: 'N 6813011',
-    signatures: {
-      es: 'Julio Caro (gerente) y Luis Ángel Arango (secretario)',
-      en: 'Julio Caro (gerente) and Luis Ángel Arango (secretario)',
-    },
-    printed: {
-      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1943. El Bank Note Museum agrupa el tipo 389b en las fechas 20.07.1943, 20.07.1944 y 07.08.1947. Formato publicado: 140 × 70 mm. No se publica aquí una tirada.',
-      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1943. The Bank Note Museum groups type 389b under 20.07.1943, 20.07.1944, and 07.08.1947. Published size: 140 × 70 mm. No printage is published here.',
-    },
-    images: {
-      composite: '/images/catalog/colombia/10-pesos-oro-1943-composite.jpg',
-      front: '/images/catalog/colombia/10-pesos-oro-1943-front.jpg',
-      back: '/images/catalog/colombia/10-pesos-oro-1943-back.jpg',
-    },
-    title: {
-      es: '10 pesos oro · Banco de la República · 1943',
-      en: '10 pesos oro · Banco de la República · 1943',
-    },
-    kicker: {
-      es: 'Colombia · Banco de la República · ABNC',
-      en: 'Colombia · Banco de la República · ABNC',
-    },
-    lead: {
-      es: 'Diez pesos oro de circulación, Pick 389b: encapsulado PMG 50 About Uncirculated EPQ. Serie N, serial 6813011, 20 de julio de 1943. Esta ficha reúne anverso y reverso de la misma cápsula.',
-      en: 'A circulating ten-peso oro, Pick 389b: slabbed PMG 50 About Uncirculated EPQ. Series N, serial 6813011, 20 July 1943. This record gathers the face and back of the same holder.',
-    },
-    description: {
-      es: 'El Banco de la República, creado por la Ley 25 de 1923, encargó a la American Bank Note Company las planchas de sus primeros billetes de circulación. Este diez pesos oro —Pick 389; el Bank Note Museum lo sitúa en 1941–1963— lleva a la derecha el retrato de Antonio Nariño, con el nombre bajo el óvalo, y al centro la promesa de pagar al portador diez pesos oro. El fondo pasa del verde al naranja; los seriales y la leyenda «SERIE N» van en rojo. La fecha impresa es «BOGOTA, COLOMBIA / 20 DE JULIO DE 1943». El tipo 389b cubre tres fechas de los años cuarenta; esta pieza es la primera de ese grupo. Las firmas del gerente Julio Caro y del secretario Luis Ángel Arango son las que Banknote World registra para el 389b fechado el 20 de julio de 1944, la emisión inmediata del mismo letra. El reverso, en verde, muestra la cabeza de la Libertad con gorro frigio en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA •», las cifras 10 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». Esta ficha reúne las dos caras de la cápsula PMG 8011911-013.',
-      en: 'The Banco de la República, created by Law 25 of 1923, ordered plates for its first circulating notes from the American Bank Note Company. This ten-peso oro — Pick 389; the Bank Note Museum places the type in 1941–1963 — carries Antonio Nariño’s portrait at right, named under the oval, and at center the promise to pay the bearer ten gold pesos. The underprint runs from green into orange; the serials and the legend “SERIE N” are in red. The printed date is “BOGOTA, COLOMBIA / 20 DE JULIO DE 1943.” Type 389b covers three 1940s dates; this piece is the first of that group. The signatures of gerente Julio Caro and secretario Luis Ángel Arango are those Banknote World records for the 389b dated 20 July 1944, the next issue of the same letter. The green back shows Liberty’s head in a Phrygian cap, in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA •,” the figures 10 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” This record gathers both sides of PMG holder 8011911-013.',
-    },
-    frontCaption: {
-      es: 'Anverso del 10 pesos oro, Pick 389b, encapsulado PMG 50 About Uncirculated EPQ: Nariño, serie N, serial 6813011 y fecha 20 de julio de 1943.',
-      en: 'Face of the 10 pesos oro, Pick 389b, slabbed PMG 50 About Uncirculated EPQ: Nariño, Series N, serial 6813011, and the date 20 July 1943.',
-    },
-    backCaption: {
-      es: 'Reverso del 10 pesos oro, Pick 389b, encapsulado PMG 50 About Uncirculated EPQ: Libertad con gorro frigio, cifras 10 y pie de la American Bank Note Company.',
-      en: 'Back of the 10 pesos oro, Pick 389b, slabbed PMG 50 About Uncirculated EPQ: Liberty in a Phrygian cap, the figures 10, and the American Bank Note Company imprint.',
-    },
-    scarcity: {
-      es: 'El Bank Note Museum describe el Pick 389 como emisión de circulación de 10 pesos oro, 1941–1963, grabada por la American Bank Note Company: Nariño al anverso y la Libertad al reverso. El letra b agrupa tres fechas (1943, 1944 y 1947). No es prueba ni espécimen. Esta ficha no inventa una tirada por fecha.',
-      en: 'The Bank Note Museum describes Pick 389 as a circulating 10-peso oro issue of 1941–1963, engraved by the American Bank Note Company: Nariño on the face and Liberty on the back. Letter b groups three dates (1943, 1944, and 1947). It is neither a proof nor a specimen. This record does not invent a printage by date.',
-    },
-    population: {
-      es: 'La pieza está encapsulada por PMG como 50 About Uncirculated EPQ, certificado 8011911-013. No se ha verificado de forma independiente un censo de población para ese número de cápsula.',
-      en: 'The note is slabbed by PMG as 50 About Uncirculated EPQ, certification 8011911-013. A population census for that holder number has not been independently verified.',
-    },
-    grade: {
-      es: 'PMG 50 About Uncirculated EPQ',
-      en: 'PMG 50 About Uncirculated EPQ',
-    },
-    sources: [
-      {
-        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0389.htm',
-        es: 'Bank Note Museum — Colombia P-389, 10 pesos oro (1941–1963)',
-        en: 'Bank Note Museum — Colombia P-389, 10 pesos oro (1941–1963)',
-        note: {
-          es: '389b: 20.07.1943, 20.07.1944 y 07.08.1947; anverso Nariño, reverso Libertad; ABNC.',
-          en: '389b: 20.07.1943, 20.07.1944, and 07.08.1947; Nariño on the face, Liberty on the back; ABNC.',
-        },
-      },
-      {
-        href: 'https://www.banknoteworld.org/colombia-10-pesos-oro-1944-p-389b-2.html',
-        es: 'Banknote World — Colombia 10 pesos oro 1944, P-389b.2',
-        en: 'Banknote World — Colombia 10 pesos oro 1944, P-389b.2',
-        note: {
-          es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
-          en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
-        },
-      },
-    ],
-  },
-  {
     id: '2-pesos-oro-1944',
     chapterId: 'banco-de-la-republica',
     path: `${COLOMBIA_PATH}2-pesos-oro-1944/`,
+    seriesRow: 'full',
     pick: 'P# 390b · TBB B923c',
     serial: 'I 12527403',
     signatures: {
@@ -460,6 +387,82 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Catálogo de referencia; Numista cita Hernández 91 para el 20 de julio de 1944.',
           en: 'A standard catalog; Numista cites Hernández 91 for 20 July 1944.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-pesos-oro-1943',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}10-pesos-oro-1943/`,
+    pick: 'P# 389b',
+    serial: 'N 6813011',
+    signatures: {
+      es: 'Julio Caro (gerente) y Luis Ángel Arango (secretario)',
+      en: 'Julio Caro (gerente) and Luis Ángel Arango (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1943. El Bank Note Museum agrupa el tipo 389b en las fechas 20.07.1943, 20.07.1944 y 07.08.1947. Formato publicado: 140 × 70 mm. No se publica aquí una tirada.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1943. The Bank Note Museum groups type 389b under 20.07.1943, 20.07.1944, and 07.08.1947. Published size: 140 × 70 mm. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/10-pesos-oro-1943-composite.jpg',
+      front: '/images/catalog/colombia/10-pesos-oro-1943-front.jpg',
+      back: '/images/catalog/colombia/10-pesos-oro-1943-back.jpg',
+    },
+    title: {
+      es: '10 pesos oro · Banco de la República · 1943',
+      en: '10 pesos oro · Banco de la República · 1943',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Diez pesos oro de circulación, Pick 389b: encapsulado PMG 50 About Uncirculated EPQ. Serie N, serial 6813011, 20 de julio de 1943. Esta ficha reúne anverso y reverso de la misma cápsula.',
+      en: 'A circulating ten-peso oro, Pick 389b: slabbed PMG 50 About Uncirculated EPQ. Series N, serial 6813011, 20 July 1943. This record gathers the face and back of the same holder.',
+    },
+    description: {
+      es: 'El Banco de la República, creado por la Ley 25 de 1923, encargó a la American Bank Note Company las planchas de sus primeros billetes de circulación. Este diez pesos oro —Pick 389; el Bank Note Museum lo sitúa en 1941–1963— lleva a la derecha el retrato de Antonio Nariño, con el nombre bajo el óvalo, y al centro la promesa de pagar al portador diez pesos oro. El fondo pasa del verde al naranja; los seriales y la leyenda «SERIE N» van en rojo. La fecha impresa es «BOGOTA, COLOMBIA / 20 DE JULIO DE 1943». El tipo 389b cubre tres fechas de los años cuarenta; esta pieza es la primera de ese grupo. Las firmas del gerente Julio Caro y del secretario Luis Ángel Arango son las que Banknote World registra para el 389b fechado el 20 de julio de 1944, la emisión inmediata del mismo letra. El reverso, en verde, muestra la cabeza de la Libertad con gorro frigio en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA •», las cifras 10 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». Esta ficha reúne las dos caras de la cápsula PMG 8011911-013.',
+      en: 'The Banco de la República, created by Law 25 of 1923, ordered plates for its first circulating notes from the American Bank Note Company. This ten-peso oro — Pick 389; the Bank Note Museum places the type in 1941–1963 — carries Antonio Nariño’s portrait at right, named under the oval, and at center the promise to pay the bearer ten gold pesos. The underprint runs from green into orange; the serials and the legend “SERIE N” are in red. The printed date is “BOGOTA, COLOMBIA / 20 DE JULIO DE 1943.” Type 389b covers three 1940s dates; this piece is the first of that group. The signatures of gerente Julio Caro and secretario Luis Ángel Arango are those Banknote World records for the 389b dated 20 July 1944, the next issue of the same letter. The green back shows Liberty’s head in a Phrygian cap, in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA •,” the figures 10 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” This record gathers both sides of PMG holder 8011911-013.',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 pesos oro, Pick 389b, encapsulado PMG 50 About Uncirculated EPQ: Nariño, serie N, serial 6813011 y fecha 20 de julio de 1943.',
+      en: 'Face of the 10 pesos oro, Pick 389b, slabbed PMG 50 About Uncirculated EPQ: Nariño, Series N, serial 6813011, and the date 20 July 1943.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 pesos oro, Pick 389b, encapsulado PMG 50 About Uncirculated EPQ: Libertad con gorro frigio, cifras 10 y pie de la American Bank Note Company.',
+      en: 'Back of the 10 pesos oro, Pick 389b, slabbed PMG 50 About Uncirculated EPQ: Liberty in a Phrygian cap, the figures 10, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'El Bank Note Museum describe el Pick 389 como emisión de circulación de 10 pesos oro, 1941–1963, grabada por la American Bank Note Company: Nariño al anverso y la Libertad al reverso. El letra b agrupa tres fechas (1943, 1944 y 1947). No es prueba ni espécimen. Esta ficha no inventa una tirada por fecha.',
+      en: 'The Bank Note Museum describes Pick 389 as a circulating 10-peso oro issue of 1941–1963, engraved by the American Bank Note Company: Nariño on the face and Liberty on the back. Letter b groups three dates (1943, 1944, and 1947). It is neither a proof nor a specimen. This record does not invent a printage by date.',
+    },
+    population: {
+      es: 'La pieza está encapsulada por PMG como 50 About Uncirculated EPQ, certificado 8011911-013. No se ha verificado de forma independiente un censo de población para ese número de cápsula.',
+      en: 'The note is slabbed by PMG as 50 About Uncirculated EPQ, certification 8011911-013. A population census for that holder number has not been independently verified.',
+    },
+    grade: {
+      es: 'PMG 50 About Uncirculated EPQ',
+      en: 'PMG 50 About Uncirculated EPQ',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0389.htm',
+        es: 'Bank Note Museum — Colombia P-389, 10 pesos oro (1941–1963)',
+        en: 'Bank Note Museum — Colombia P-389, 10 pesos oro (1941–1963)',
+        note: {
+          es: '389b: 20.07.1943, 20.07.1944 y 07.08.1947; anverso Nariño, reverso Libertad; ABNC.',
+          en: '389b: 20.07.1943, 20.07.1944, and 07.08.1947; Nariño on the face, Liberty on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-10-pesos-oro-1944-p-389b-2.html',
+        es: 'Banknote World — Colombia 10 pesos oro 1944, P-389b.2',
+        en: 'Banknote World — Colombia 10 pesos oro 1944, P-389b.2',
+        note: {
+          es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
+          en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
         },
       },
     ],
