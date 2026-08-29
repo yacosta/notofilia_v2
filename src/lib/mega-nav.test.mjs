@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
@@ -15,7 +16,14 @@ describe('mega-nav columns', () => {
         es: 'Billetes de polímero mundial',
         en: 'World polymer banknotes',
         column: 'aside',
-        children: [{ id: 'polimero-china', es: 'China', en: 'China', flag: 'cn' }],
+        children: [
+          {
+            id: 'polimero-asia',
+            es: 'Asia',
+            en: 'Asia',
+            children: [{ id: 'polimero-china', es: 'China', en: 'China', flag: 'cn' }],
+          },
+        ],
       },
     ]);
     assert.deepEqual(
@@ -28,8 +36,11 @@ describe('mega-nav columns', () => {
     );
     assert.equal(aside[0]?.flag, undefined);
     assert.deepEqual(
-      aside[0]?.children?.map((node) => ({ id: node.id, flag: node.flag })),
-      [{ id: 'polimero-china', flag: 'cn' }],
+      aside[0]?.children?.map((node) => ({
+        id: node.id,
+        children: node.children?.map((child) => ({ id: child.id, flag: child.flag })),
+      })),
+      [{ id: 'polimero-asia', children: [{ id: 'polimero-china', flag: 'cn' }] }],
     );
   });
 
@@ -41,6 +52,30 @@ describe('mega-nav columns', () => {
     const { main, aside } = navColumns(nodes);
     assert.equal(aside.length, 0);
     assert.equal(main.length, nodes.length);
+  });
+});
+
+describe('polymer submenu', () => {
+  it('nests China under Asia and does not keep a sibling China link', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    assert.match(polymer, /id: 'polimero-asia'/);
+    assert.match(polymer, /es: 'Asia'/);
+    assert.match(polymer, /id: 'polimero-china'/);
+    const chinaBlocks = polymer.split("id: 'polimero-china'");
+    assert.equal(chinaBlocks.length, 2);
+    assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-china'/);
+  });
+});
+
+describe('United States submenu', () => {
+  it('includes the Misceláneos placeholder under Estados Unidos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    assert.match(usa, /id: 'miscelaneos'/);
+    assert.match(usa, /es: 'Misceláneos'/);
+    assert.match(usa, /en: 'Miscellaneous'/);
+    assert.match(usa, /href: USA_MISC_PATH/);
   });
 });
 
@@ -62,7 +97,13 @@ describe('footer links from mega-nav', () => {
           es: 'Billetes de polímero mundial',
           en: 'World polymer banknotes',
           href: '/coleccion/polimero-mundial/',
-          children: [{ es: 'China', en: 'China', href: '/coleccion/china/' }],
+          children: [
+            {
+              es: 'Asia',
+              en: 'Asia',
+              children: [{ es: 'China', en: 'China', href: '/coleccion/china/' }],
+            },
+          ],
         },
       ]).map((item) => item.href),
       [

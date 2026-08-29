@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
-    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs src/lib/mega-nav.test.mjs src/lib/locale-paths.test.mjs src/lib/footer-nav.test.mjs src/lib/staging-headers.test.mjs src/lib/seo.test.mjs src/lib/sitemap.test.mjs src/worker/comments.test.mjs src/data/contact.test.mjs",
+    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs src/lib/mega-nav.test.mjs src/lib/locale-paths.test.mjs src/lib/footer-nav.test.mjs src/lib/staging-headers.test.mjs src/lib/seo.test.mjs src/lib/sitemap.test.mjs src/lib/search.test.mjs src/worker/comments.test.mjs src/data/contact.test.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "@fontsource/ibm-plex-mono": "^5.3.0",
     "astro": "^7.2.6",
     "flag-icons": "^7.5.0",
+    "minisearch": "^7.2.0",
     "sharp": "^0.35.4"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
-import { USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
+import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
@@ -76,6 +76,12 @@ export const megaNav: NavNode[] = [
             href: USA_MPC_PATH,
             flag: 'vn',
           },
+          {
+            id: 'miscelaneos',
+            es: 'Misceláneos',
+            en: 'Miscellaneous',
+            href: USA_MISC_PATH,
+          },
         ],
       },
       {
@@ -99,7 +105,14 @@ export const megaNav: NavNode[] = [
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
         children: [
-          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+          {
+            id: 'polimero-asia',
+            es: 'Asia',
+            en: 'Asia',
+            children: [
+              { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+            ],
+          },
         ],
       },
     ],
