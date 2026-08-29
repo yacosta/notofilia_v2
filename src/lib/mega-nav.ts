@@ -105,7 +105,14 @@ export const megaNav: NavNode[] = [
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
         children: [
-          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+          {
+            id: 'polimero-asia',
+            es: 'Asia',
+            en: 'Asia',
+            children: [
+              { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+            ],
+          },
         ],
       },
     ],
