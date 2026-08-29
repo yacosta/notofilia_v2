@@ -9,7 +9,8 @@ export type ColombiaNoteId =
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
-  | '2000-pesos-oro-1983';
+  | '2000-pesos-oro-1983'
+  | '2000-pesos-2008';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -832,6 +833,86 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Espécimen 24.07.1983: P# 430s / TBB B971as; firmas HPM y FJO₁; 140 × 70 mm; frecuencia 0 % en el tipo.',
           en: '24.07.1983 specimen: P# 430s / TBB B971as; signatures HPM and FJO₁; 140 × 70 mm; 0% frequency within the type.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2000-pesos-2008',
+    chapterId: 'familias-modernas',
+    path: `${COLOMBIA_PATH}2000-pesos-2008/`,
+    pick: 'P# 457',
+    serial: '10000001',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso: 20 de agosto de 2008. Formato publicado 130 × 65 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el reverso. González White 2019 numera el tipo reducido BG# 490 (pp. 121–123) y marca N.D. la emisión de las fechas de agosto de 2008; el Bank Note Museum lista 29.08.2008 (457i) y 30.08.2008 (457j) como las fechas de 2008 de Pick 457, y 20.08.2009 como 457l. La producción BanRep de 2.000 pesos en 2008 es 280,4 millones de piezas: es el total de esa denominación ese año, no la tirada de esta fecha ni de este serial. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face: 20 August 2008. Published size 130 × 65 mm; eight digits, no series letter; both serials on the back. González White 2019 numbers the reduced type BG# 490 (pp. 121–123) and marks the August 2008 dates N.D. for emisión; the Bank Note Museum lists 29.08.2008 (457i) and 30.08.2008 (457j) as Pick 457’s 2008 dates, and 20.08.2009 as 457l. BanRep’s 2008 production of 2,000-peso notes is 280.4 million pieces: that is every note of that face value that year, not the printage of this date or this serial. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2000-pesos-2008-10000001-composite.jpg',
+      front: '/images/catalog/colombia/2000-pesos-2008-10000001-front.jpg',
+      back: '/images/catalog/colombia/2000-pesos-2008-10000001-back.jpg',
+    },
+    title: {
+      es: '2.000 pesos · 2008 · serial 10000001',
+      en: '2,000 pesos · 2008 · serial 10000001',
+    },
+    kicker: {
+      es: 'Colombia · Familias modernas · Serial capicúa binario',
+      en: 'Colombia · Modern families · Binary radar serial',
+    },
+    lead: {
+      es: 'Dos mil pesos de la familia reducida Pick 457: fecha 20 de agosto de 2008 y serial capicúa binario 10000001, impreso dos veces en el reverso. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A two-thousand-peso note of the reduced Pick 457 family: date 20 August 2008 and binary radar serial 10000001, printed twice on the back. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'Tras el robo de Valledupar de 1994 el Banco de la República sustituyó, en 1995–1996, los 2.000, 5.000 y 10.000 pesos. El dos mil de esa familia lleva a Francisco de Paula Santander y, en el reverso, el portal de la Casa de Moneda de Bogotá. En 2005 el banco redujo el formato de 140 × 70 mm a 130 × 65 mm, añadió el nombre «SANTANDER» junto al retrato y dejó las dos numeraciones —ocho dígitos, sin serie— solo en el reverso, en distinto tipo, tamaño y color. González White numera ese tipo reducido BG# 490; el Bank Note Museum, Pick 457 (2005–2014), impreso por la Imprenta de Billetes. Esta pieza lleva la fecha «20 DE AGOSTO DE 2008». Las firmas son las de José Darío Uribe Escobar, gerente general desde enero de 2005, y Gerardo Hernández Correa, gerente ejecutivo: el par de las fechas de 2008, antes del cambio a José Tolosa. El pie del reverso lee «IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA». El serial 10000001 aparece en negro a la izquierda y en verde a la derecha: es un capicúa (radar) y un binario —solo ceros y unos—. No es una serie baja de emisión (00000001); es un patrón de colección sobre un serial de ocho cifras. No debe confundirse con el 2.000 pesos oro de Bolívar (Pick 430/433), ni con el 2.000 grande de 1996–2005 (Pick 445/451), ni con el 2.000 de la familia de 2016. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'After the 1994 Valledupar robbery the Banco de la República replaced, in 1995–1996, the 2,000, 5,000, and 10,000 peso notes. The two-thousand of that family carries Francisco de Paula Santander and, on the back, the portal of Bogotá’s Casa de Moneda. In 2005 the bank cut the format from 140 × 70 mm to 130 × 65 mm, added the name “SANTANDER” beside the portrait, and left both serials — eight digits, no series letter — on the back only, in different type, size, and colour. González White numbers that reduced type BG# 490; the Bank Note Museum, Pick 457 (2005–2014), printed by the Imprenta de Billetes. This piece carries the date “20 DE AGOSTO DE 2008.” The signatures are those of José Darío Uribe Escobar, general manager from January 2005, and Gerardo Hernández Correa, executive manager: the pair on the 2008 dates, before the change to José Tolosa. The back imprint reads “IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA.” Serial 10000001 appears in black at left and in green at right: it is a palindrome (radar) and a binary — only zeros and ones. It is not a first-of-issue low serial (00000001); it is a collector pattern on an eight-digit number. It should not be confused with the Bolívar 2,000 pesos oro (Pick 430/433), the large 1996–2005 2,000 (Pick 445/451), or the 2,000 of the 2016 family. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Desde 1993 los billetes del Banco de la República dejaron de llevar «pesos oro». El 16–17 de octubre de 1994 el «robo del siglo» vació la bóveda de Valledupar: unos 24.072 millones de pesos en 2.000, 5.000 y 10.000, buena parte aún sin emitir. El banco publicó rangos de seriales, abrió un canje y, en 1995–1996, rediseñó esas tres denominaciones. El dos mil de Santander y la Casa de Moneda nació en ese recambio. En noviembre de 2006 el banco puso en circulación el formato reducido (BG# 490 / Pick 457): nuevas coloraciones, marca de agua distinta y las numeraciones solo en el reverso. La familia de 2016 lo sustituyó en circulación ordinaria; esta ficha documenta un ejemplar de 2008 con serial de colección.',
+      en: 'From 1993 Banco de la República notes dropped the legend “pesos oro.” On 16–17 October 1994 the “robo del siglo” emptied the Valledupar vault: some 24.072 billion pesos in 2,000, 5,000, and 10,000 notes, much of it still unissued. The bank published serial ranges, opened an exchange, and in 1995–1996 redesigned those three denominations. The Santander and Casa de Moneda two-thousand was born in that replacement. In November 2006 the bank put the reduced format into circulation (BG# 490 / Pick 457): new colouring, a different watermark, and serials on the back only. The 2016 family replaced it in ordinary circulation; this record documents a 2008 piece with a collector serial.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2.000 pesos, Pick 457: Santander, fecha 20 de agosto de 2008 y leyenda DOS MIL PESOS. Los seriales van en el reverso.',
+      en: 'Face of the 2,000 pesos, Pick 457: Santander, the date 20 August 2008, and the legend DOS MIL PESOS. The serials are on the back.',
+    },
+    backCaption: {
+      es: 'Reverso del 2.000 pesos, Pick 457: portal de la Casa de Moneda y serial capicúa binario 10000001, en negro y en verde.',
+      en: 'Back of the 2,000 pesos, Pick 457: the Casa de Moneda portal and binary radar serial 10000001, in black and in green.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 490, pp. 121–123) no publica cifra de emisión para las fechas de agosto de 2008 (N.D.). El Bank Note Museum describe Pick 457 como el tipo 2005–2014 de 130 × 65 mm. La tabla BanRep de producción anual atribuye 280,4 millones de piezas a todos los 2.000 pesos de 2008: no es la tirada de una fecha, de un par de firmas ni de un serial. Un capicúa binario de ocho dígitos es un patrón de colección; esta ficha no inventa una población de ese patrón.',
+      en: 'González White 2019 (BG# 490, pp. 121–123) publishes no emisión figure for the August 2008 dates (N.D.). The Bank Note Museum describes Pick 457 as the 2005–2014 130 × 65 mm type. BanRep’s annual production table assigns 280.4 million pieces to every 2,000-peso note of 2008: that is not the printage of one date, signature pair, or serial. An eight-digit binary radar is a collector pattern; this record does not invent a population for that pattern.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 10000001. La pieza se presenta en funda, aparentemente sin circular, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 10000001 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0457.htm',
+        es: 'Bank Note Museum — Colombia P-457, 2.000 pesos (2005–2014)',
+        en: 'Bank Note Museum — Colombia P-457, 2,000 pesos (2005–2014)',
+        note: {
+          es: 'Tipo reducido, Imprenta de Billetes; anverso Santander, reverso Casa de Moneda. Fechas de 2008 listadas: 29.08.2008 (457i) y 30.08.2008 (457j).',
+          en: 'Reduced type, Imprenta de Billetes; Santander on the face, Casa de Moneda on the back. 2008 dates listed: 29.08.2008 (457i) and 30.08.2008 (457j).',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2008 de 2.000 pesos: 280,4 millones de piezas (total de la denominación ese año, no de una fecha Pick).',
+          en: '2008 production of 2,000-peso notes: 280.4 million pieces (the denomination total that year, not one Pick date).',
         },
       },
     ],
