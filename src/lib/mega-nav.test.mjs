@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
@@ -100,6 +100,37 @@ describe('polymer submenu', () => {
     assert.equal(englandBlocks.length, 2);
     assert.match(polymer, /id: 'polimero-europa'[\s\S]*id: 'polimero-inglaterra'/);
     assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-europa'/);
+    assert.match(polymer, /id: 'polimero-inglaterra'[\s\S]*?flag: 'gb'/);
+  });
+
+  it('gives every polymer country child a flag code', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    assert.match(polymer, /id: 'polimero-china'[\s\S]*?flag: 'cn'/);
+    assert.match(polymer, /id: 'polimero-inglaterra'[\s\S]*?flag: 'gb'/);
+    const countryIds = [...polymer.matchAll(/id: '(polimero-[^']+)'/g)].map((match) => match[1]);
+    for (const id of countryIds) {
+      const block = polymer.split(`id: '${id}'`)[1]?.split(/id: '/)[0] ?? '';
+      if (!/href:/.test(block)) continue;
+      assert.match(block, /flag: '[a-z]{2}'/, `${id} needs a flag-icons ISO code`);
+    }
+  });
+});
+
+describe('country flags', () => {
+  it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
+    const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2})'/g)].map((match) => match[1]);
+    assert.ok(flags.includes('gb'), 'England must use flag: gb');
+    const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
+    const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
+    for (const code of new Set(flags)) {
+      assert.match(allow, new RegExp(`'${code}'`), `${code} must be in CountryFlag FLAG_CODES`);
+      assert.ok(
+        existsSync(new URL(`../../public/flags/${code}.svg`, import.meta.url)),
+        `public/flags/${code}.svg is required for flag: '${code}'`,
+      );
+    }
   });
 });
 
