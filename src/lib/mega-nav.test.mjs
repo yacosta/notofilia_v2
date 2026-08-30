@@ -78,6 +78,18 @@ describe('polymer submenu', () => {
   });
 });
 
+describe('Colombia visual catalogs', () => {
+  it('lists the collection-wide catalog and Colombia children', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    assert.match(source, /id: 'catalogo-billetes'/);
+    assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
+    assert.match(source, /id: 'colombia-catalogo'/);
+    assert.match(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
+    assert.match(source, /id: 'colombia-monedas-catalogo'/);
+    assert.match(source, /href: COLOMBIA_COIN_CATALOG_PATH/);
+  });
+});
+
 describe('United States submenu', () => {
   it('includes the Misceláneos placeholder under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');

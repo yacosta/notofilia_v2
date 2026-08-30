@@ -1,0 +1,532 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import SourceList from './SourceList.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { COLOMBIA_PATH } from '../../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import { NOTAFILIA_PATH } from '../../data/notafilia';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import {
+  COLOMBIA_COIN_CATALOG_PATH,
+  coinCatalogCopy,
+  coinCatalogFilters,
+  coinCatalogPath,
+  coinCatalogSources,
+  colombiaCoinTypeDocuments,
+} from '../../data/colombia-coin-type-catalog';
+import {
+  collectionNoteCatalogCopy,
+  collectionNoteCatalogPath,
+  collectionNoteCountryCount,
+  collectionNoteDocuments,
+  collectionNoteFilters,
+  collectionNoteSources,
+  COUNTRY_LABELS,
+  NOTAFILIA_NOTES_CATALOG_PATH,
+} from '../../data/collection-note-catalog';
+import {
+  COLOMBIA_NOTES_CATALOG_PATH,
+  colombiaNoteTypeDocuments,
+  noteCatalogCopy,
+  noteCatalogFilters,
+  noteCatalogPath,
+  noteCatalogSources,
+} from '../../data/colombia-type-catalog';
+import {
+  createTypeCatalogEngine,
+  parseTypeFilter,
+  parseTypeSort,
+  runTypeCatalogSearch,
+  typeCatalogStats,
+  type TypeCatalogCountry,
+  type TypeCatalogDocument,
+  type TypeCatalogFilter,
+  type TypeCatalogKind,
+} from '../../lib/type-catalog';
+
+interface Props {
+  locale: Locale;
+  kind: TypeCatalogKind;
+  country?: TypeCatalogCountry;
+}
+
+const { locale, kind, country } = Astro.props;
+const isNotes = kind === 'banknotes';
+const isAllNotes = isNotes && !country;
+const t = isNotes
+  ? isAllNotes
+    ? collectionNoteCatalogCopy[locale]
+    : noteCatalogCopy[locale]
+  : coinCatalogCopy[locale];
+const filters = isNotes ? (isAllNotes ? collectionNoteFilters : noteCatalogFilters) : coinCatalogFilters;
+const sources = isNotes ? (isAllNotes ? collectionNoteSources : noteCatalogSources) : coinCatalogSources;
+const pathname = isNotes
+  ? isAllNotes
+    ? collectionNoteCatalogPath(locale)
+    : noteCatalogPath(locale)
+  : coinCatalogPath(locale);
+const documents = isNotes
+  ? isAllNotes
+    ? collectionNoteDocuments(locale)
+    : colombiaNoteTypeDocuments(locale)
+  : colombiaCoinTypeDocuments(locale);
+const engine = createTypeCatalogEngine(documents);
+const initialQuery = Astro.url.searchParams.get('q') ?? '';
+const initialFilter = parseTypeFilter(Astro.url.searchParams.get('filtro'), filters);
+const initialSort = parseTypeSort(Astro.url.searchParams.get('orden'));
+const initialHits = runTypeCatalogSearch(documents, engine, initialQuery, initialFilter, initialSort);
+const stats = typeCatalogStats(documents);
+const localeTag = locale === 'en' ? 'en-US' : 'es-CO';
+const statItems = isAllNotes
+  ? [
+      { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+      { value: collectionNoteCountryCount(documents).toLocaleString(localeTag), label: t.statHoldings },
+      { value: stats.images.toLocaleString(localeTag), label: t.statImages },
+      { value: stats.years, label: t.statYears },
+    ]
+  : isNotes
+    ? [
+        { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+        { value: stats.images.toLocaleString(localeTag), label: t.statImages },
+        { value: stats.years, label: t.statYears },
+      ]
+    : [
+        { value: stats.types.toLocaleString(localeTag), label: t.statTypes },
+        { value: stats.holdings.toLocaleString(localeTag), label: t.statHoldings },
+        { value: stats.images.toLocaleString(localeTag), label: t.statImages },
+        { value: stats.years, label: t.statYears },
+      ];
+const relatedCatalogHref = isAllNotes
+  ? localizePath(COLOMBIA_COIN_CATALOG_PATH, locale)
+  : localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale);
+const seriesHref = isAllNotes
+  ? localizePath(NOTAFILIA_PATH, locale)
+  : isNotes
+    ? localizePath(COLOMBIA_PATH, locale)
+    : localizePath(COLOMBIA_COINAGE_PATH, locale);
+
+const crumbs = isAllNotes
+  ? [
+      { name: copy[locale].home, path: '/' },
+      { name: t.kicker, path: NOTAFILIA_PATH },
+      { name: t.nav, path: NOTAFILIA_NOTES_CATALOG_PATH },
+    ]
+  : isNotes
+    ? [
+        { name: copy[locale].home, path: '/' },
+        { name: t.kicker, path: COLOMBIA_PATH },
+        { name: t.nav, path: COLOMBIA_NOTES_CATALOG_PATH },
+      ]
+    : [
+        { name: copy[locale].home, path: '/' },
+        { name: copy[locale].numismaticsNav, path: NUMISMATICA_PATH },
+        { name: t.kicker, path: COLOMBIA_COINAGE_PATH },
+        { name: t.nav, path: COLOMBIA_COIN_CATALOG_PATH },
+      ];
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs,
+});
+
+const ui = {
+  emptyQuery: t.emptyQuery,
+  noResults: t.noResults,
+  pendingImage: t.pendingImage,
+  inCollection: t.inCollection,
+  viewNote: t.viewNote,
+  pickLabel: t.pickLabel,
+  showCountry: isAllNotes,
+  countries: {
+    CO: COUNTRY_LABELS.CO[locale],
+    US: COUNTRY_LABELS.US[locale],
+    PH: COUNTRY_LABELS.PH[locale],
+    CN: COUNTRY_LABELS.CN[locale],
+  },
+  resultCount: {
+    one: t.resultCount(1),
+    other: t.resultCount(2).replace('2', '{n}'),
+  },
+};
+
+function crumbItems() {
+  if (isAllNotes) {
+    return [
+      { href: localizePath('/', locale), label: copy[locale].home },
+      { href: localizePath(NOTAFILIA_PATH, locale), label: t.kicker },
+      { label: t.nav },
+    ];
+  }
+  if (isNotes) {
+    return [
+      { href: localizePath('/', locale), label: copy[locale].home },
+      { href: localizePath(COLOMBIA_PATH, locale), label: t.kicker },
+      { label: t.nav },
+    ];
+  }
+  return [
+    { href: localizePath('/', locale), label: copy[locale].home },
+    { href: localizePath(NUMISMATICA_PATH, locale), label: copy[locale].numismaticsNav },
+    { href: localizePath(COLOMBIA_COINAGE_PATH, locale), label: t.kicker },
+    { label: t.nav },
+  ];
+}
+
+function cardMeta(hit: TypeCatalogDocument): string {
+  const countryLabel = hit.country ? COUNTRY_LABELS[hit.country][locale] : '';
+  return [isAllNotes ? countryLabel : '', hit.pick, hit.serial, hit.year].filter(Boolean).join(' · ');
+}
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16" data-type-catalog>
+      <Breadcrumb locale={locale} items={crumbItems()} />
+
+      <header class="mb-8 max-w-[46rem]">
+        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-2 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
+      </header>
+
+      <ul
+        class:list={[
+          'mb-10 mt-0 grid list-none grid-cols-2 gap-3 p-0',
+          isNotes && !isAllNotes ? 'sm:grid-cols-3' : 'sm:grid-cols-4',
+        ]}
+        aria-label={t.statusLabel}
+      >
+        {
+          statItems.map((item) => (
+            <li class="rounded-[6px] border border-line-strong bg-panel px-3 py-3">
+              <p class="m-0 font-display text-[1.5rem]/7 text-cream">{item.value}</p>
+              <p class="mb-0 mt-1 font-sans text-[13px] text-muted">{item.label}</p>
+            </li>
+          ))
+        }
+      </ul>
+
+      <form action={pathname} method="get" role="search" class="mb-8" data-catalog-form>
+        <div class="flex flex-col gap-3 md:flex-row md:items-stretch">
+          <div class="min-w-0 flex-1">
+            <label class="sr-only" for="type-catalog-search">{t.searchLabel}</label>
+            <input
+              id="type-catalog-search"
+              name="q"
+              type="search"
+              value={initialQuery}
+              placeholder={t.searchPlaceholder}
+              autocomplete="off"
+              class="box-border min-h-12 w-full rounded-[8px] border border-line-input bg-[#f4efe4] px-4 font-sans text-[16px] text-ink placeholder:text-[#7a705c]"
+            />
+          </div>
+          <div class="md:w-[16rem]">
+            <label class="sr-only" for="type-catalog-sort">{t.sortLabel}</label>
+            <select
+              id="type-catalog-sort"
+              name="orden"
+              class="box-border min-h-12 w-full rounded-[8px] border border-gold-light bg-panel px-3 font-sans text-[15px] text-cream"
+            >
+              {
+                (['collection', 'pick', 'title-asc', 'year'] as const).map((value) => (
+                  <option value={value} selected={initialSort === value}>
+                    {t.sorts[value]}
+                  </option>
+                ))
+              }
+            </select>
+          </div>
+          <button
+            type="submit"
+            class="inline-flex min-h-12 items-center justify-center rounded-[8px] bg-cream px-5 font-sans text-[15px] font-semibold text-bg hover:bg-cream-dim md:hidden"
+          >
+            {t.searchSubmit}
+          </button>
+        </div>
+        <input type="hidden" name="filtro" value={initialFilter} data-catalog-filter-input />
+
+        <div class="mt-4 flex flex-wrap gap-2" role="group" aria-label={t.filterLabel}>
+          {
+            filters.map((filter) => (
+              <button
+                type="submit"
+                name="filtro"
+                value={filter}
+                data-catalog-filter={filter}
+                aria-pressed={initialFilter === filter ? 'true' : 'false'}
+                class="search-chip min-h-11 cursor-pointer rounded-full border border-line-strong bg-panel px-3.5 py-[7px] font-sans text-[13px] text-cream-dim aria-[pressed=true]:border-transparent aria-[pressed=true]:bg-cream aria-[pressed=true]:text-bg"
+              >
+                {t.filters[filter as keyof typeof t.filters]}
+              </button>
+            ))
+          }
+        </div>
+      </form>
+
+      <p class="mb-6 mt-0 font-sans text-[14px] text-muted" aria-live="polite" data-catalog-status>
+        {initialHits.length === 1 ? t.resultCount(1) : t.resultCount(initialHits.length)}
+      </p>
+      <p class="sr-only">{t.statusLabel}</p>
+      <noscript>
+        <p class="mb-6 font-sans text-[14px] text-muted">{t.needsJs}</p>
+      </noscript>
+
+      <ul
+        class="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-4 sm:gap-4"
+        data-catalog-results
+        aria-label={t.title}
+      >
+        {
+          initialHits.map((hit) => (
+            <li data-catalog-hit class="min-w-0">
+              {hit.href ? (
+                <a
+                  href={hit.href}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-3"
+                >
+                  {hit.image ? (
+                    <CatalogThumb
+                      src={hit.image}
+                      alt={hit.imageAlt || ''}
+                      width={isNotes ? 1440 : 1024}
+                      height={isNotes ? 960 : 1024}
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain"
+                      sizes="(max-width: 640px) 50vw, 25vw"
+                    />
+                  ) : (
+                    <div class="mb-3 flex aspect-[3/2] w-full flex-col items-center justify-center rounded-[2px] bg-bg px-2 text-center">
+                      <span class="font-display text-[1rem] text-gold-light">{hit.pick || hit.year}</span>
+                      <span class="mt-1 font-sans text-[12px] text-muted">{t.pendingImage}</span>
+                    </div>
+                  )}
+                  <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,1.8vw,1.15rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {hit.title}
+                  </h2>
+                  <p class="mb-2 mt-0 font-sans text-[12px]/5 text-muted">{cardMeta(hit)}</p>
+                  <span class="mt-auto font-sans text-[13px] text-gold-light">{t.viewNote} →</span>
+                </a>
+              ) : (
+                <article class="flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 sm:p-3">
+                  {hit.image ? (
+                    <CatalogThumb
+                      src={hit.image}
+                      alt={hit.imageAlt || ''}
+                      width={isNotes ? 1440 : 1024}
+                      height={isNotes ? 960 : 1024}
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain"
+                      sizes="(max-width: 640px) 50vw, 25vw"
+                    />
+                  ) : (
+                    <div class="mb-3 flex aspect-[3/2] w-full flex-col items-center justify-center rounded-[2px] bg-bg px-2 text-center">
+                      <span class="font-display text-[1rem] text-gold-light">{hit.pick || hit.year}</span>
+                      <span class="mt-1 font-sans text-[12px] text-muted">{t.pendingImage}</span>
+                    </div>
+                  )}
+                  <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,1.8vw,1.15rem)] leading-tight font-normal text-cream-dim">
+                    {hit.title}
+                  </h2>
+                  <p class="mb-0 mt-0 font-sans text-[12px]/5 text-muted">{cardMeta(hit)}</p>
+                </article>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="mt-10 mb-0 text-[17px]/7 text-muted">
+        {t.seriesLead}
+        {' '}
+        <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={seriesHref}>
+          {t.seriesLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.coinageLead}
+        {' '}
+        <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={relatedCatalogHref}>
+          {t.coinageLink}
+        </a>
+      </p>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={sources} heading={t.sourcesTitle} />
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<script define:vars={{ documents, ui, filters }}>
+  window.__NOTOFILIA_TYPE_CATALOG__ = { documents, ui, filters };
+</script>
+<script>
+  import { cfImage } from '../../lib/images';
+  import {
+    createTypeCatalogEngine,
+    parseTypeFilter,
+    parseTypeSort,
+    runTypeCatalogSearch,
+    type TypeCatalogDocument,
+    type TypeCatalogFilter,
+  } from '../../lib/type-catalog';
+
+  type CatalogUi = {
+    emptyQuery: string;
+    noResults: string;
+    pendingImage: string;
+    inCollection: string;
+    viewNote: string;
+    pickLabel: string;
+    showCountry?: boolean;
+    countries?: Record<string, string>;
+    resultCount: { one: string; other: string };
+  };
+
+  const payload = (
+    window as unknown as {
+      __NOTOFILIA_TYPE_CATALOG__?: {
+        documents: TypeCatalogDocument[];
+        ui: CatalogUi;
+        filters: TypeCatalogFilter[];
+      };
+    }
+  ).__NOTOFILIA_TYPE_CATALOG__;
+  const root = document.querySelector('[data-type-catalog]');
+  if (payload && root instanceof HTMLElement) {
+    const { documents, ui, filters } = payload;
+    const engine = createTypeCatalogEngine(documents);
+    const form = root.querySelector('[data-catalog-form]');
+    const input = root.querySelector<HTMLInputElement>('#type-catalog-search');
+    const sort = root.querySelector<HTMLSelectElement>('#type-catalog-sort');
+    const filterInput = root.querySelector<HTMLInputElement>('[data-catalog-filter-input]');
+    const status = root.querySelector<HTMLElement>('[data-catalog-status]');
+    const list = root.querySelector<HTMLElement>('[data-catalog-results]');
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-catalog-filter]')];
+
+    function countLabel(count: number): string {
+      if (count === 1) return ui.resultCount.one;
+      return ui.resultCount.other.replace('{n}', String(count));
+    }
+
+    function cardMeta(hit: TypeCatalogDocument): string {
+      const countryLabel = hit.country && ui.countries ? ui.countries[hit.country] : '';
+      return [ui.showCountry ? countryLabel : '', hit.pick, hit.serial, hit.year].filter(Boolean).join(' · ');
+    }
+
+    function media(hit: TypeCatalogDocument): HTMLElement {
+      if (hit.image) {
+        const img = document.createElement('img');
+        img.src = cfImage(hit.image, { width: 800 });
+        img.alt = hit.imageAlt || '';
+        img.width = 1440;
+        img.height = 960;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.className = 'mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain';
+        return img;
+      }
+      const placeholder = document.createElement('div');
+      placeholder.className =
+        'mb-3 flex aspect-[3/2] w-full flex-col items-center justify-center rounded-[2px] bg-bg px-2 text-center';
+      const pick = document.createElement('span');
+      pick.className = 'font-display text-[1rem] text-gold-light';
+      pick.textContent = hit.pick || hit.year;
+      const pending = document.createElement('span');
+      pending.className = 'mt-1 font-sans text-[12px] text-muted';
+      pending.textContent = ui.pendingImage;
+      placeholder.append(pick, pending);
+      return placeholder;
+    }
+
+    function render(hits: TypeCatalogDocument[]) {
+      if (!list || !status) return;
+      status.textContent = hits.length ? countLabel(hits.length) : ui.noResults;
+      const fragment = document.createDocumentFragment();
+      for (const hit of hits) {
+        const li = document.createElement('li');
+        li.className = 'min-w-0';
+        const heading = document.createElement('h2');
+        heading.className =
+          'mb-2 mt-0 font-display text-[clamp(0.85rem,1.8vw,1.15rem)] leading-tight font-normal text-cream-dim';
+        heading.textContent = hit.title;
+        const meta = document.createElement('p');
+        meta.className = 'mb-2 mt-0 font-sans text-[12px]/5 text-muted';
+        meta.textContent = cardMeta(hit);
+        if (hit.href) {
+          const link = document.createElement('a');
+          link.href = hit.href;
+          link.className =
+            'group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-3';
+          heading.classList.add('group-hover:text-cream');
+          const cta = document.createElement('span');
+          cta.className = 'mt-auto font-sans text-[13px] text-gold-light';
+          cta.textContent = `${ui.viewNote} →`;
+          link.append(media(hit), heading, meta, cta);
+          li.append(link);
+        } else {
+          const article = document.createElement('article');
+          article.className =
+            'flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 sm:p-3';
+          meta.classList.replace('mb-2', 'mb-0');
+          article.append(media(hit), heading, meta);
+          li.append(article);
+        }
+        fragment.append(li);
+      }
+      list.replaceChildren(fragment);
+    }
+
+    function currentFilter(): TypeCatalogFilter {
+      return parseTypeFilter(filterInput?.value ?? 'all', filters);
+    }
+
+    function apply(updateUrl = true) {
+      const query = input?.value ?? '';
+      const filter = currentFilter();
+      const orden = parseTypeSort(sort?.value ?? 'collection');
+      const hits = runTypeCatalogSearch(documents, engine, query, filter, orden);
+      render(hits);
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (query.trim()) url.searchParams.set('q', query);
+        else url.searchParams.delete('q');
+        if (filter !== 'all') url.searchParams.set('filtro', filter);
+        else url.searchParams.delete('filtro');
+        if (orden !== 'collection') url.searchParams.set('orden', orden);
+        else url.searchParams.delete('orden');
+        window.history.replaceState({}, '', url);
+      }
+    }
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      apply();
+    });
+    input?.addEventListener('input', () => apply());
+    sort?.addEventListener('change', () => apply());
+    for (const chip of chips) {
+      chip.addEventListener('click', (event) => {
+        event.preventDefault();
+        const next = parseTypeFilter(chip.dataset.catalogFilter ?? 'all', filters);
+        if (filterInput) filterInput.value = next;
+        for (const other of chips) {
+          other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
+        }
+        apply();
+      });
+    }
+
+    apply(false);
+  }
+</script>

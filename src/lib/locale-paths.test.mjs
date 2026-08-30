@@ -103,6 +103,14 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/colombia/5-pesos-banco-hipotecario-1881/', 'en'),
       '/en/collection/colombia/5-pesos-banco-hipotecario-1881/',
     );
+    assert.equal(localizePath('/coleccion/notafilia/catalogo/', 'en'), '/en/collection/notaphily/catalog/');
+    assert.equal(localizePath('/en/collection/notaphily/catalog/', 'es'), '/coleccion/notafilia/catalogo/');
+    assert.equal(localizePath('/coleccion/colombia/catalogo/', 'en'), '/en/collection/colombia/catalog/');
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/catalogo/', 'en'),
+      '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.equal(localizePath('/en/collection/colombia/catalog/', 'es'), '/coleccion/colombia/catalogo/');
   });
 
   it('keeps hreflang pairs reciprocal', () => {
@@ -137,6 +145,12 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');
+    assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
+    assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/catalogo/'],
+      '/en/collection/colombia-numismatics/catalog/',
+    );
     assert.equal(redirects['/en/glosario/'], '/en/glossary/');
     assert.equal(redirects['/en/noticias/'], '/en/news/');
     assert.equal(redirects['/en/contacto/'], '/en/contact/');

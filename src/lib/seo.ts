@@ -120,6 +120,9 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 - [News / Noticias](${SITE_URL}/noticias/): ${SITE_URL}/en/news/
 - [Philippines / Filipinas](${SITE_URL}/coleccion/filipinas/): ${SITE_URL}/en/collection/philippines/
 - [Colombia](${SITE_URL}/coleccion/colombia/): ${SITE_URL}/en/collection/colombia/
+- [Visual banknote catalog](${SITE_URL}/coleccion/notafilia/catalogo/): ${SITE_URL}/en/collection/notaphily/catalog/
+- [Colombia visual banknote catalog](${SITE_URL}/coleccion/colombia/catalogo/): ${SITE_URL}/en/collection/colombia/catalog/
+- [Colombia visual coin catalog](${SITE_URL}/coleccion/colombia-numismatica/catalogo/): ${SITE_URL}/en/collection/colombia-numismatics/catalog/
 - [United States / Estados Unidos](${SITE_URL}/coleccion/estados-unidos/): ${SITE_URL}/en/collection/united-states/
 - [Editorial policy](${SITE_URL}/editorial/): ${SITE_URL}/en/editorial/
 - [About / Acerca de](${SITE_URL}/acerca-de/): ${SITE_URL}/en/about/

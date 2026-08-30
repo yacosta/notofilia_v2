@@ -2,6 +2,9 @@ import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { chinaNotes } from '../data/china';
 import { colombiaNotes, notePieces } from '../data/colombia-notes';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
+import { COLOMBIA_NOTES_CATALOG_PATH, noteCatalogCopy } from '../data/colombia-type-catalog';
+import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-coin-type-catalog';
+import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
 import { unitedStatesNotes } from '../data/estados-unidos';
 import { glossaryTermPath, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -240,6 +243,38 @@ function pieceSeeds(): PieceSeed[] {
 
 export function searchDocuments(locale: Locale): SearchDocument[] {
   const docs: SearchDocument[] = pieceSeeds().map((seed) => pieceDocument(seed, locale));
+
+  for (const catalog of [
+    {
+      href: NOTAFILIA_NOTES_CATALOG_PATH,
+      title: { es: collectionNoteCatalogCopy.es.title, en: collectionNoteCatalogCopy.en.title },
+      dek: { es: collectionNoteCatalogCopy.es.dek, en: collectionNoteCatalogCopy.en.dek },
+    },
+    {
+      href: COLOMBIA_NOTES_CATALOG_PATH,
+      title: { es: noteCatalogCopy.es.title, en: noteCatalogCopy.en.title },
+      dek: { es: noteCatalogCopy.es.dek, en: noteCatalogCopy.en.dek },
+    },
+    {
+      href: COLOMBIA_COIN_CATALOG_PATH,
+      title: { es: coinCatalogCopy.es.title, en: coinCatalogCopy.en.title },
+      dek: { es: coinCatalogCopy.es.dek, en: coinCatalogCopy.en.dek },
+    },
+  ]) {
+    docs.push({
+      id: `series:${catalog.href}:${locale}`,
+      kind: 'series',
+      href: localizePath(catalog.href, locale),
+      title: catalog.title[locale],
+      dek: catalog.dek[locale],
+      pick: '',
+      serial: '',
+      serialNormalized: '',
+      cert: '',
+      flags: ['series'],
+      searchText: `${catalog.title.es} ${catalog.title.en} ${catalog.dek[locale]}`,
+    });
+  }
 
   for (const item of collections) {
     if (item.href.includes('/espana/')) continue;

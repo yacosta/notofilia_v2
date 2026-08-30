@@ -7,6 +7,18 @@ const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.met
 const indexSource = readFileSync(new URL('../pages/sitemap-index.xml.ts', import.meta.url), 'utf8');
 const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url), 'utf8');
 
+describe('sitemap coverage for Colombia visual catalogs', () => {
+  it('registers both locale pairs through dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/notafilia/catalogo/', 'en'), '/en/collection/notaphily/catalog/');
+    assert.equal(localizePath('/coleccion/colombia/catalogo/', 'en'), '/en/collection/colombia/catalog/');
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/catalogo/', 'en'),
+      '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the grading guide', () => {
   it('builds lastmod from blog articles and is linked from sitemap-index / robots', () => {
     assert.match(sitemapSource, /blogArticles/);

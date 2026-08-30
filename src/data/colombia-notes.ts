@@ -1,7 +1,7 @@
-import type { CatalogSource, LocalizedText } from './catalog';
-import type { ColombiaChapterId } from './colombia';
-import { COLOMBIA_PATH, colombiaChapters, seriesCopy } from './colombia';
-import { localizePath } from '../lib/locale-paths';
+import type { CatalogSource, LocalizedText } from './catalog.ts';
+import type { ColombiaChapterId } from './colombia.ts';
+import { COLOMBIA_PATH, colombiaChapters, seriesCopy } from './colombia.ts';
+import { localizePath } from '../lib/locale-paths.ts';
 
 export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
