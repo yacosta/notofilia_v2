@@ -135,8 +135,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -251,7 +251,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 2003 Atlanta $1 star replacement F05033622★, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 2003 Atlanta $1 star replacement F05033622★, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -270,6 +270,7 @@ export type UnitedStatesNoteId =
   | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
   | '10-dolares-serie-1934-chicago'
+  | '10-dolares-serie-1934a-chicago'
   | '1-dolar-certificado-plata-1957b';
 
 export type UnitedStatesNote = {
@@ -822,6 +823,117 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Cinco series (1934–1934D), sellos LGS y DGS, y la emisión de emergencia HAWAII.',
           en: 'Five series (1934–1934D), LGS and DGS seals, and the HAWAII emergency issue.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/10',
+        es: 'U.S. Currency Education Program — 10 dólares',
+        en: 'U.S. Currency Education Program — $10',
+        note: {
+          es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
+          en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-serie-1934a-chicago',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
+    pathEn: '/collection/united-states/10-dollars-series-1934a-chicago/',
+    pick: 'P#430Da · Fr. 2006-G',
+    serial: 'G74025286A',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Tipo común del distrito de Chicago. La serie 1934 A es la segunda de las cinco emisiones 1934–1934D; esta ficha no inventa una tirada por bloque de serie.',
+      en: 'A common Chicago-district type. Series 1934A is the second of the five 1934–1934D issues; this record does not invent a printage by serial block.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934a-10-chicago-g74025286-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934a-10-chicago-g74025286-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934a-10-chicago-g74025286-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '10 dólares · Serie 1934 A · Chicago',
+      en: '$10 · Series 1934A · Chicago',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Hamilton y sello verde del Tesoro; reverso con el edificio del Tesoro. Distrito G / 7. Serie 1934 A, serial G74025286A.',
+      en: 'Face with Hamilton and a green Treasury seal; back with the Treasury building. District G / 7. Series 1934A, serial G74025286A.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1934 A (Pick 430Da, Friedberg 2006-G) es un Federal Reserve Note de tamaño pequeño del distrito de Chicago: sello circular con la G, el 7 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF CHICAGO ILLINOIS». El anverso, en negro con sello y seriales verdes, lleva el retrato de Alexander Hamilton en óvalo y, a la derecha, el sello del Tesoro sobre la palabra TEN. Las firmas son las de W. A. Julian y Henry Morgenthau Jr., las mismas de la serie 1934 sin letra. El texto de curso legal aún promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. La plancha de anverso J118, en cuerpo macro, queda abajo a la derecha. El reverso, en verde, muestra el edificio del Tesoro en Washington, D.C., con un automóvil de entreguerras frente a la fachada. Esta pieza de la colección, circulada y sin encapsular, se presenta en funda y lleva el serial G74025286A (bloque GA). No lleva la sobrecarga HAWAII ni el lema «IN GOD WE TRUST». No es el 10 dólares de 1934 (sin A) del mismo distrito, serial G30986728A, que ya tiene ficha propia.',
+      en: 'The Series 1934A $10 (Pick 430Da, Friedberg 2006-G) is a small-size Federal Reserve Note of the Chicago district: a circular seal with G, 7s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF CHICAGO ILLINOIS.” The black face with green seal and serials carries Alexander Hamilton in an oval and, at right, the Treasury seal over TEN. The signatures are W. A. Julian and Henry Morgenthau Jr., the same pair as on Series 1934 without a letter. The legal-tender clause still promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. Face plate J118, in macro size, sits at lower right. The green back shows the Treasury building in Washington, D.C., with an interwar automobile before the façade. This collection piece, circulated and unslabbed, is shown in a sleeve and is serial G74025286A (GA block). It has neither the HAWAII overprint nor the motto “IN GOD WE TRUST.” It is not the Series 1934 (no letter) $10 of the same district, serial G30986728A, which already has its own note page.',
+    },
+    history: [
+      {
+        es: 'La serie 1934 A del 10 dólares conserva las firmas Julian–Morgenthau y el mismo grabado de Hamilton. El cambio que la distingue de la serie 1934 es tipográfico: los números de plancha pasan de micro a macro. The Paper Money Project sitúa esa transición en la 1934 A; un mule nace cuando una cara macro se casa con un reverso micro, o al revés. Las 1934 A llevan sello verde oscuro (DGS / BGS), no el amarillo-verde claro de las primeras 1934.',
+        en: 'Series 1934A $10 notes keep the Julian–Morgenthau signatures and the same Hamilton engraving. What sets them apart from Series 1934 is typographic: plate numbers grow from micro to macro. The Paper Money Project places that change on 1934A; a mule is a macro face paired with a micro back, or the reverse. Series 1934A notes carry the dark (blue-green) seal, not the yellow-green of the earliest 1934 printings.',
+      },
+      {
+        es: 'La producción de la 1934 A cubrió los años de la guerra. El Bank Note Museum la numera P-430Da dentro del grupo de sello oscuro. Chicago es el distrito G / 7. Esta pieza, bloque GA, no es un reemplazo con estrella ni un HAWAII. El lema «IN GOD WE TRUST» aún no figura en el reverso.',
+        en: '1934A production ran through the war years. The Bank Note Museum numbers the type P-430Da in the dark-seal group. Chicago is district G / 7. This GA-block piece is neither a star replacement nor a HAWAII note. The motto “IN GOD WE TRUST” is not yet on the back.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 A',
+      en: 'Series 1934A',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 1934 A, distrito de Chicago, serial G74025286A: Hamilton, sello verde del Tesoro y plancha J118.',
+      en: 'Face of the Series 1934A $10, Chicago district, serial G74025286A: Hamilton, the green Treasury seal, and plate J118.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 1934 A: edificio del Tesoro y TEN DOLLARS. Sin lema IN GOD WE TRUST.',
+      en: 'Back of the Series 1934A $10: the Treasury building and TEN DOLLARS. No IN GOD WE TRUST motto.',
+    },
+    scarcity: {
+      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-G cubre Chicago. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-G is Chicago. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial G74025286A. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial G74025286A has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular, en funda (colección privada)',
+      en: 'Circulated, unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0430D2.htm',
+        es: 'Bank Note Museum — P-430D, 10 dólares Federal Reserve Note, series 1934–1934D',
+        en: 'Bank Note Museum — P-430D, Series 1934–1934D $10 Federal Reserve Note',
+        note: {
+          es: '430Da: serie 1934 A, firmas Julian y Morgenthau; distrito G = Chicago; sello verde oscuro.',
+          en: '430Da: Series 1934A, Julian and Morgenthau signatures; district G = Chicago; dark-green seal.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn',
+        es: 'The Paper Money Project — Federal Reserve Notes de 10 dólares, serie 1934',
+        en: 'The Paper Money Project — Series 1934 $10 Federal Reserve Notes',
+        note: {
+          es: 'Cinco series (1934–1934D); la 1934 A introduce planchas macro y sello verde oscuro; mulas micro/macro.',
+          en: 'Five series (1934–1934D); 1934A introduces macro plates and the dark-green seal; micro/macro mules.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-2006g-1934a-ten-dollar-federal-reserve-note-small-size/gsid/63233',
+        es: 'Greysheet — Fr. 2006G, 1934A $10 Federal Reserve Note, Chicago',
+        en: 'Greysheet — Fr. 2006G, 1934A $10 Federal Reserve Note, Chicago',
+        note: {
+          es: 'Tipo de tamaño pequeño, sello verde oscuro, distrito de Chicago.',
+          en: 'Small-size type, dark-green seal, Chicago district.',
         },
       },
       {

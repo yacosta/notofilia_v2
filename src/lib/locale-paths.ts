@@ -33,6 +33,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/10-dollars-series-1934-chicago/'],
   },
   {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
+    en: '/collection/united-states/10-dollars-series-1934a-chicago/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934a-chicago/'],
+  },
+  {
     es: '/coleccion/estados-unidos/20-dolares-confederados-1864/',
     en: '/collection/united-states/20-dollars-confederate-1864/',
     aliases: ['/coleccion/united-states/20-dollars-confederate-1864/'],
@@ -180,6 +185,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
     '/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
     '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
@@ -187,6 +193,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     '/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/',
     '/en/coleccion/united-states/10-dollars-series-1934-chicago/',
+    '/en/coleccion/united-states/10-dollars-series-1934a-chicago/',
     '/en/coleccion/united-states/20-dollars-confederate-1864/',
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
