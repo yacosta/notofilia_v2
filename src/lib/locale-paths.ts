@@ -43,6 +43,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/10-dollars-series-1934a-cleveland/'],
   },
   {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
+    en: '/collection/united-states/10-dollars-series-1934d-richmond/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934d-richmond/'],
+  },
+  {
     es: '/coleccion/estados-unidos/20-dolares-confederados-1864/',
     en: '/collection/united-states/20-dollars-confederate-1864/',
     aliases: ['/coleccion/united-states/20-dollars-confederate-1864/'],
@@ -195,6 +200,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/',
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
     '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
@@ -204,6 +210,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/10-dollars-series-1934-chicago/',
     '/en/coleccion/united-states/10-dollars-series-1934a-chicago/',
     '/en/coleccion/united-states/10-dollars-series-1934a-cleveland/',
+    '/en/coleccion/united-states/10-dollars-series-1934d-richmond/',
     '/en/coleccion/united-states/20-dollars-confederate-1864/',
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',

@@ -40,6 +40,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/', 'en'),
+      '/en/collection/united-states/10-dollars-series-1934d-richmond/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/', 'en'),
       '/en/collection/united-states/1-dollar-silver-certificate-1957b/',
     );
@@ -186,6 +190,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/'],
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/'],
+      '/en/collection/united-states/10-dollars-series-1934d-richmond/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/'],
