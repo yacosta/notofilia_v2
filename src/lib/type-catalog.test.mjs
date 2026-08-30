@@ -213,7 +213,7 @@ describe('Collection-wide banknote catalog', () => {
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
 
-    assert.equal(colombiaPieces.length, 12);
+    assert.equal(colombiaPieces.length, 13);
     assert.equal(usaNotes, 6);
     assert.equal(mpcNotes, 4);
     assert.equal(polymerNotes.length, 1);
