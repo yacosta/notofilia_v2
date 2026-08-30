@@ -16,7 +16,8 @@ export type UnitedStatesChapterId =
   | 'us-gold'
   | 'us-silver'
   | 'us-frb'
-  | 'us-pop-art';
+  | 'us-pop-art'
+  | 'us-miscelaneos';
 
 export type UnitedStatesChapter = {
   id: UnitedStatesChapterId;
@@ -151,8 +152,24 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Contemporary interventions on genuine $2 notes, not official BEP redesigns.',
     },
     body: {
-      es: 'El 2 dólares de la Reserva Federal volvió a emitirse en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de 2 dólares se detuviera en 1966. Sobre ese soporte legal, artistas contemporáneos —en esta colección, sobre todo Rency Art— imprimen serigrafías y estampados que convierten el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP: son piezas de arte sobre papel de curso legal. La vitrina reunirá series como Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé. Junto a ellas caben otras emisiones no circulantes de la colección: notas de prueba Giori y scrip conmemorativo.',
-      en: 'The Federal Reserve $2 returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the $2 United States Note had been halted in 1966. On that legal substrate, contemporary artists — in this collection, chiefly Rency Art — screen and stamp designs that turn the note into pop art. These are not Treasury or BEP issues: they are art objects on legal-tender paper. The case will gather series such as Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé. Other non-circulating pieces in the collection — Giori test notes and commemorative scrip — belong beside them.',
+      es: 'El 2 dólares de la Reserva Federal volvió a emitirse en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de 2 dólares se detuviera en 1966. Sobre ese soporte legal, artistas contemporáneos —en esta colección, sobre todo Rency Art— imprimen serigrafías y estampados que convierten el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP: son piezas de arte sobre papel de curso legal. La vitrina reunirá series como Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé.',
+      en: 'The Federal Reserve $2 returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the $2 United States Note had been halted in 1966. On that legal substrate, contemporary artists — in this collection, chiefly Rency Art — screen and stamp designs that turn the note into pop art. These are not Treasury or BEP issues: they are art objects on legal-tender paper. The case will gather series such as Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé.',
+    },
+  },
+  {
+    id: 'us-miscelaneos',
+    years: { es: 's. XX–XXI', en: '20th–21st c.' },
+    title: {
+      es: 'Misceláneos',
+      en: 'Miscellaneous',
+    },
+    lead: {
+      es: 'Notas de prueba, scrip conmemorativo y otras emisiones que no caben en las series federales ni en el pop art.',
+      en: 'Test notes, commemorative scrip, and other issues that sit outside the federal series and pop art.',
+    },
+    body: {
+      es: 'Fuera del papel de curso legal y de las intervenciones contemporáneas sobre el 2 dólares, la colección reúne piezas que no forman una serie propia: notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. No son moneda de circulación ni arte sobre FRN: son documentos de imprenta, recuerdo o propaganda. Las fichas se publicarán aquí a medida que se fotografíen.',
+      en: 'Outside circulating paper and the contemporary interventions on the $2, the collection holds pieces that do not form a series of their own: BEP Giori test notes, commemorative scrip, and promotional issues. They are not circulating currency and not art on FRNs: they are printing documents, souvenirs, or advertising. Note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -223,7 +240,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Federal, colonial, confederado y obsoleto | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, Estados Confederados, United States Notes, certificados de oro y plata, Reserva Federal y pop art.',
+      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, Estados Confederados, United States Notes, certificados de oro y plata, Reserva Federal, pop art y misceláneos.',
     kicker: 'Estados Unidos · Notafilia',
     title: 'Del papel colonial a la Reserva Federal',
     heroAlt:
@@ -242,7 +259,7 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Federal, colonial, Confederate, and obsolete | Notofilia',
     metaDescription:
-      'Catalog of United States paper money: colonial issues, obsolete notes, Confederate States, United States Notes, gold and silver certificates, the Federal Reserve, and pop art.',
+      'Catalog of United States paper money: colonial issues, obsolete notes, Confederate States, United States Notes, gold and silver certificates, the Federal Reserve, pop art, and miscellaneous issues.',
     kicker: 'United States · Notaphily',
     title: 'From colonial paper to the Federal Reserve',
     heroAlt:
