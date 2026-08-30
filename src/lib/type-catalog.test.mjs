@@ -23,6 +23,7 @@ const coinCatalogSource = readFileSync(new URL('../data/colombia-coin-type-catal
 const usaNotesSource = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
 const mpcNotesSource = readFileSync(new URL('../data/mpc-vietnam.ts', import.meta.url), 'utf8');
 const chinaNotesSource = readFileSync(new URL('../data/china.ts', import.meta.url), 'utf8');
+const englandNotesSource = readFileSync(new URL('../data/england-polymer.ts', import.meta.url), 'utf8');
 const allNotesCatalogHtml = new URL(
   '../../dist/coleccion/notafilia/catalogo/index.html',
   import.meta.url,
@@ -202,6 +203,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /mpcVietnamNotes/);
     assert.match(collectionCatalogSource, /victoryNotes/);
     assert.match(collectionCatalogSource, /chinaNotes/);
+    assert.match(collectionCatalogSource, /englandNotes/);
     assert.match(collectionCatalogSource, /inCollection: true/);
     assert.doesNotMatch(collectionCatalogSource, /parseHeritageLots/);
     assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
@@ -212,12 +214,15 @@ describe('Collection-wide banknote catalog', () => {
     const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
+    const englandNotes = (extractExportArrayBlock(englandNotesSource, 'englandNotes').match(/^    serial: '/gm) || []).length;
 
     assert.equal(colombiaPieces.length, 13);
     assert.equal(usaNotes, 9);
     assert.equal(mpcNotes, 4);
     assert.equal(polymerNotes.length, 1);
     assert.match(polymerNotes[0], /serial: 'J04445744'/);
+    assert.equal(englandNotes, 1);
+    assert.match(englandNotesSource, /serial: 'AC04879241'/);
 
     if (!existsSync(allNotesCatalogHtml)) return;
 
@@ -233,10 +238,13 @@ describe('Collection-wide banknote catalog', () => {
     assert.equal(byCountry.CO, colombiaPieces.length);
     assert.equal(byCountry.US, usaNotes + mpcNotes);
     assert.equal(byCountry.CN, polymerNotes.length);
+    if (byCountry.GB) {
+      assert.equal(byCountry.GB, englandNotes);
+    }
     assert.equal(
       documents.length,
-      colombiaPieces.length + usaNotes + mpcNotes + polymerNotes.length + 4,
-      'includes Philippines victory notes in the full catalog',
+      colombiaPieces.length + usaNotes + mpcNotes + polymerNotes.length + (byCountry.GB || 0) + 4,
+      'includes Philippines victory notes and, after rebuild, the England polymer holding',
     );
   });
 });

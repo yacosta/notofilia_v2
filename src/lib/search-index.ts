@@ -1,5 +1,6 @@
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { chinaNotes } from '../data/china';
+import { englandNotes } from '../data/england-polymer';
 import { colombiaNotes, notePieces } from '../data/colombia-notes';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
 import { COLOMBIA_NOTES_CATALOG_PATH, noteCatalogCopy } from '../data/colombia-type-catalog';
@@ -157,6 +158,24 @@ function pieceSeeds(): PieceSeed[] {
       path: note.path,
       pick: note.pick,
       serial: note.serial,
+      title: note.title,
+      dek: note.lead,
+      kicker: note.kicker,
+      signatures: note.signatures,
+      grade: note.grade,
+      description: note.description,
+      image: note.images.composite,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of englandNotes) {
+    seeds.push({
+      id: `gb-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      serial: note.serial_display,
       title: note.title,
       dek: note.lead,
       kicker: note.kicker,

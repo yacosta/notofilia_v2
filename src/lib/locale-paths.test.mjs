@@ -24,6 +24,14 @@ describe('locale path mapping', () => {
       localizePath('/en/collection/world-polymer/europe/england/', 'es'),
       '/coleccion/polimero-mundial/europa/inglaterra/',
     );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/', 'en'),
+      '/en/collection/world-polymer/europe/england/5-pounds-churchill/',
+    );
+    assert.equal(
+      localizePath('/en/collection/world-polymer/europe/england/5-pounds-churchill/', 'es'),
+      '/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
+    );
     assert.equal(localizePath('/coleccion/notafilia/', 'en'), '/en/collection/notaphily/');
     assert.equal(localizePath('/coleccion/espana/', 'en'), '/en/collection/spain/');
     assert.equal(localizePath('/coleccion/paises-bajos-numismatica/', 'en'), '/en/collection/netherlands-numismatics/');
@@ -178,6 +186,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/polimero-mundial/europa/inglaterra/'],
       '/en/collection/world-polymer/europe/england/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/'],
+      '/en/collection/world-polymer/europe/england/5-pounds-churchill/',
     );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');

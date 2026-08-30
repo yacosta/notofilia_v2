@@ -1,5 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import { chinaNotes, notePath as chinaNotePath } from './china';
+import { englandNotes, notePath as englandNotePath } from './england-polymer';
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
@@ -21,6 +22,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   US: { es: 'Estados Unidos', en: 'United States' },
   PH: { es: 'Filipinas', en: 'Philippines' },
   CN: { es: 'China', en: 'China' },
+  GB: { es: 'Inglaterra', en: 'England' },
 };
 
 type CollectionSeed = {
@@ -154,6 +156,24 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of englandNotes) {
+    seeds.push({
+      id: `gb-${note.id}`,
+      country: 'GB',
+      href: englandNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '2016',
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   return seeds;
 }
 
@@ -205,6 +225,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'us',
   'ph',
   'cn',
+  'gb',
   'pending',
   'specimen',
   'remainder',
@@ -255,6 +276,7 @@ export const collectionNoteCatalogCopy = {
       us: 'Estados Unidos',
       ph: 'Filipinas',
       cn: 'China',
+      gb: 'Inglaterra',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -304,6 +326,7 @@ export const collectionNoteCatalogCopy = {
       us: 'United States',
       ph: 'Philippines',
       cn: 'China',
+      gb: 'England',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',
