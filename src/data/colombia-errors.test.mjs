@@ -38,15 +38,18 @@ describe('colombia-errors', () => {
   it('exposes bilingual copy for the errors section', () => {
     assert.equal(seriesCopy.es.errorsTitle, 'Errores');
     assert.equal(seriesCopy.en.errorsTitle, 'Errors');
-    assert.match(seriesCopy.es.errorsIntro, /año y denominación/);
-    assert.match(seriesCopy.en.errorsIntro, /year and denomination/);
+    assert.match(seriesCopy.es.errorsIntro, /ordenados por año y denominación/);
+    assert.match(seriesCopy.en.errorsIntro, /sorted by year and denomination/);
   });
 
-  it('renders the errors section above sources on the series page', () => {
+  it('renders error notes in one grid above sources on the series page', () => {
+    assert.match(errorsSource, /export function errorNoteCards\(\)/);
     assert.match(pageSource, /id="errores"/);
+    assert.match(pageSource, /errorNoteCards/);
     assert.match(pageSource, /t\.errorsTitle/);
     assert.match(pageSource, /t\.sourcesTitle/);
     assert.match(pageSource, /lg:grid-cols-4/);
+    assert.doesNotMatch(pageSource, /errores-\$\{group\.year\}-\$\{group\.denomination\}-heading/);
     const erroresIndex = pageSource.indexOf('id="errores"');
     const sourcesIndex = pageSource.indexOf('t.sourcesTitle');
     assert.ok(erroresIndex > -1 && sourcesIndex > -1 && erroresIndex < sourcesIndex);

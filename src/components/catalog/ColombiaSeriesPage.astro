@@ -13,7 +13,7 @@ import {
   seriesSources,
 } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
-import { errorGroups, hasErrorNotes } from '../../data/colombia-errors';
+import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardsForChapter } from '../../data/colombia-notes';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
@@ -26,7 +26,7 @@ const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
 const catalogItems = colombiaCatalogItems();
-const errorNoteGroups = errorGroups();
+const errorNotes = errorNoteCards();
 const hero = {
   src: '/images/catalog/colombia/hero-colombia.jpg',
   width: 2128,
@@ -200,49 +200,37 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.errorsIntro}</p>
         {
           hasErrorNotes() ? (
-            <div class="space-y-10">
-              {errorNoteGroups.map((group) => (
-                <div aria-labelledby={`errores-${group.year}-${group.denomination}-heading`}>
-                  <h3
-                    id={`errores-${group.year}-${group.denomination}-heading`}
-                    class="mb-4 mt-0 font-display text-[1.35rem]/8 font-normal text-cream-dim"
-                  >
-                    {group.heading[locale]}
-                  </h3>
-                  <ol
-                    class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
-                    aria-label={group.heading[locale]}
-                  >
-                    {group.cards.map(({ note, piece }) => {
-                      const multi = (note.pieces?.length ?? 1) > 1;
-                      return (
-                        <li class="min-w-0">
-                          <a
-                            href={multi ? `${notePath(note, locale)}#${piece.id}` : notePath(note, locale)}
-                            class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                          >
-                            <CatalogThumb
-                              src={piece.images.front}
-                              alt={piece.frontCaption[locale]}
-                              width={1440}
-                              height={960}
-                              class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                            />
-                            <h4 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                              {piece.title[locale]}
-                            </h4>
-                            <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                              {t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
-                            </p>
-                            <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ol>
-                </div>
-              ))}
-            </div>
+            <ol
+              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
+              aria-label={t.errorsTitle}
+            >
+              {errorNotes.map(({ note, piece }) => {
+                const multi = (note.pieces?.length ?? 1) > 1;
+                return (
+                  <li class="min-w-0">
+                    <a
+                      href={multi ? `${notePath(note, locale)}#${piece.id}` : notePath(note, locale)}
+                      class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                    >
+                      <CatalogThumb
+                        src={piece.images.front}
+                        alt={piece.frontCaption[locale]}
+                        width={1440}
+                        height={960}
+                        class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                      />
+                      <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                        {piece.title[locale]}
+                      </h3>
+                      <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                        {t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
+                      </p>
+                      <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ol>
           ) : (
             <p class="m-0 text-[17px]/7 text-muted">{t.errorsEmpty}</p>
           )
