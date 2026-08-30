@@ -7,7 +7,7 @@ import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
-import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
+import { POLIMERO_INGLATERRA_PATH, POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
@@ -128,6 +128,20 @@ export const megaNav: NavNode[] = [
             en: 'Asia',
             children: [
               { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+            ],
+          },
+          {
+            id: 'polimero-europa',
+            es: 'Europa',
+            en: 'Europe',
+            children: [
+              {
+                id: 'polimero-inglaterra',
+                es: 'Inglaterra',
+                en: 'England',
+                href: POLIMERO_INGLATERRA_PATH,
+                flag: 'gb',
+              },
             ],
           },
         ],

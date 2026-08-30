@@ -12,6 +12,18 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
     assert.equal(otherLocalePath('/en/contact/?motivo=error', 'en'), '/contacto/?motivo=error');
     assert.equal(localizePath('/coleccion/polimero-mundial/', 'en'), '/en/collection/world-polymer/');
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/europa/', 'en'),
+      '/en/collection/world-polymer/europe/',
+    );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/europa/inglaterra/', 'en'),
+      '/en/collection/world-polymer/europe/england/',
+    );
+    assert.equal(
+      localizePath('/en/collection/world-polymer/europe/england/', 'es'),
+      '/coleccion/polimero-mundial/europa/inglaterra/',
+    );
     assert.equal(localizePath('/coleccion/notafilia/', 'en'), '/en/collection/notaphily/');
     assert.equal(localizePath('/coleccion/espana/', 'en'), '/en/collection/spain/');
     assert.equal(localizePath('/coleccion/paises-bajos-numismatica/', 'en'), '/en/collection/netherlands-numismatics/');
@@ -146,6 +158,10 @@ describe('locale path mapping', () => {
       '/blog/mejores-empresas-certificacion-monedas-billetes/',
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
+    assert.equal(
+      englishContentSlug('coleccion/polimero-mundial/europa/inglaterra'),
+      'collection/world-polymer/europe/england',
+    );
     assert.equal(englishContentSlug('noticias'), 'news');
   });
 
@@ -154,6 +170,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/blog/mejores-empresas-certificacion-monedas-billetes/'],
       '/en/blog/best-coin-and-banknote-grading-companies/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/polimero-mundial/europa/inglaterra/'],
+      '/en/collection/world-polymer/europe/england/',
     );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');

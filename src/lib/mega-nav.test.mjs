@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
+import { footerNotafilia } from './mega-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
 describe('collection menu labels', () => {
@@ -33,6 +34,12 @@ describe('mega-nav columns', () => {
             en: 'Asia',
             children: [{ id: 'polimero-china', es: 'China', en: 'China', flag: 'cn' }],
           },
+          {
+            id: 'polimero-europa',
+            es: 'Europa',
+            en: 'Europe',
+            children: [{ id: 'polimero-inglaterra', es: 'Inglaterra', en: 'England', flag: 'gb' }],
+          },
         ],
       },
     ]);
@@ -50,7 +57,10 @@ describe('mega-nav columns', () => {
         id: node.id,
         children: node.children?.map((child) => ({ id: child.id, flag: child.flag })),
       })),
-      [{ id: 'polimero-asia', children: [{ id: 'polimero-china', flag: 'cn' }] }],
+      [
+        { id: 'polimero-asia', children: [{ id: 'polimero-china', flag: 'cn' }] },
+        { id: 'polimero-europa', children: [{ id: 'polimero-inglaterra', flag: 'gb' }] },
+      ],
     );
   });
 
@@ -75,6 +85,22 @@ describe('polymer submenu', () => {
     const chinaBlocks = polymer.split("id: 'polimero-china'");
     assert.equal(chinaBlocks.length, 2);
     assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-china'/);
+  });
+
+  it('nests England under Europe in both locales and does not keep a sibling England link', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    assert.match(polymer, /id: 'polimero-europa'/);
+    assert.match(polymer, /es: 'Europa'/);
+    assert.match(polymer, /en: 'Europe'/);
+    assert.match(polymer, /id: 'polimero-inglaterra'/);
+    assert.match(polymer, /es: 'Inglaterra'/);
+    assert.match(polymer, /en: 'England'/);
+    assert.match(polymer, /href: POLIMERO_INGLATERRA_PATH/);
+    const englandBlocks = polymer.split("id: 'polimero-inglaterra'");
+    assert.equal(englandBlocks.length, 2);
+    assert.match(polymer, /id: 'polimero-europa'[\s\S]*id: 'polimero-inglaterra'/);
+    assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-europa'/);
   });
 });
 
@@ -135,6 +161,17 @@ describe('footer links from mega-nav', () => {
               en: 'Asia',
               children: [{ es: 'China', en: 'China', href: '/coleccion/china/' }],
             },
+            {
+              es: 'Europa',
+              en: 'Europe',
+              children: [
+                {
+                  es: 'Inglaterra',
+                  en: 'England',
+                  href: '/coleccion/polimero-mundial/europa/inglaterra/',
+                },
+              ],
+            },
           ],
         },
       ]).map((item) => item.href),
@@ -145,6 +182,7 @@ describe('footer links from mega-nav', () => {
         '/coleccion/estados-unidos/mpc-vietnam/',
         '/coleccion/polimero-mundial/',
         '/coleccion/china/',
+        '/coleccion/polimero-mundial/europa/inglaterra/',
       ],
     );
     assert.deepEqual(
@@ -152,6 +190,51 @@ describe('footer links from mega-nav', () => {
         { es: 'Recursos', en: 'Resources', children: [{ es: 'Guías', en: 'Guides', href: '/blog/' }] },
       ]),
       [{ href: '/blog/', es: 'Guías', en: 'Guides' }],
+    );
+  });
+
+  it('lists England once from the live polymer Europe branch', () => {
+    const england = footerNotafilia.filter(
+      (item) => item.href === '/coleccion/polimero-mundial/europa/inglaterra/',
+    );
+    assert.equal(england.length, 1);
+    assert.equal(england[0]?.es, 'Inglaterra');
+    assert.equal(england[0]?.en, 'England');
+    assert.equal(
+      footerNotafilia.filter((item) => item.href === '/coleccion/china/').length,
+      1,
+    );
+  });
+
+  it('lists England only once when it sits under polymer Europe', () => {
+    const links = footerLinksFromNav([
+      {
+        es: 'Billetes de polímero mundial',
+        en: 'World polymer banknotes',
+        href: '/coleccion/polimero-mundial/',
+        children: [
+          {
+            es: 'Europa',
+            en: 'Europe',
+            children: [
+              {
+                es: 'Inglaterra',
+                en: 'England',
+                href: '/coleccion/polimero-mundial/europa/inglaterra/',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        es: 'Inglaterra',
+        en: 'England',
+        href: '/coleccion/polimero-mundial/europa/inglaterra/',
+      },
+    ]);
+    assert.equal(
+      links.filter((item) => item.href === '/coleccion/polimero-mundial/europa/inglaterra/').length,
+      1,
     );
   });
 
