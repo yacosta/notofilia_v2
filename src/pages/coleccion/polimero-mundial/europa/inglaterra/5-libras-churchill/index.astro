@@ -1,0 +1,9 @@
+---
+import PolymerEnglandNotePage from '../../../../../../components/catalog/PolymerEnglandNotePage.astro';
+import { noteById } from '../../../../../../data/england-polymer';
+
+const note = noteById('5-libras-churchill');
+if (!note) throw new Error('Missing England polymer 5-libras-churchill catalog note');
+---
+
+<PolymerEnglandNotePage locale="es" note={note} />

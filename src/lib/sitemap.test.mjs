@@ -13,6 +13,10 @@ describe('sitemap coverage for polymer England', () => {
       localizePath('/coleccion/polimero-mundial/europa/inglaterra/', 'en'),
       '/en/collection/world-polymer/europe/england/',
     );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/', 'en'),
+      '/en/collection/world-polymer/europe/england/5-pounds-churchill/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
     assert.match(sitemapSource, /stubPages/);
   });

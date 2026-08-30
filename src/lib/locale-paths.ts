@@ -92,6 +92,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
   { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
+  {
+    es: '/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
+    en: '/collection/world-polymer/europe/england/5-pounds-churchill/',
+  },
   { es: '/coleccion/polimero-mundial/europa/inglaterra/', en: '/collection/world-polymer/europe/england/' },
   { es: '/coleccion/polimero-mundial/europa/', en: '/collection/world-polymer/europe/' },
   { es: '/coleccion/polimero-mundial/', en: '/collection/world-polymer/' },
@@ -229,6 +233,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',
     '/en/coleccion/colombia/catalogo/',
+    '/en/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
     '/en/coleccion/polimero-mundial/europa/inglaterra/',
     '/en/coleccion/polimero-mundial/europa/',
     '/en/coleccion/polimero-mundial/',
