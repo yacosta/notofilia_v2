@@ -13,6 +13,7 @@ export type ColombiaNoteId =
   | '2000-pesos-oro-1983'
   | '2000-pesos-2008'
   | '20000-pesos-2017'
+  | '1000-pesos-error-2008'
   | '1000-pesos-error-2011';
 
 export type ColombiaNote = {
@@ -1117,6 +1118,95 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Contexto público del validador. La fuente de esta ficha es la tarjeta de identidad CashFlowSCN83, SOFTWARE BILL SET, uso interno, variante 523334446, Colombia (COP). Indexa COP 20000 (CA) como COP_000020000_C_A_D_C, «Series 2015» en esa tabla (familia de 2016), distinto de COP 20000 (BA). No es certificado PMG: no trae serial, grado, Pick ni censo. No se enlazan imágenes privadas ni las rutas de escaneo faltantes.',
           en: 'Public product context for the validator. The source used here is the CashFlowSCN83 identity card, SOFTWARE BILL SET, internal use, variant 523334446, Colombia (COP). It indexes COP 20000 (CA) as COP_000020000_C_A_D_C, “Series 2015” on that table (2016 family), distinct from COP 20000 (BA). It is not a PMG certificate: no serial, grade, Pick, or census. Private cert images and the card’s missing scan paths are not linked.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1000-pesos-error-2008',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}1000-pesos-error-2008/`,
+    pick: 'P# 456 / TBB B986',
+    serial: '23085962',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha leída en el anverso, desplazada al canto superior izquierdo por el error de corte: 18 de agosto de 2008. Formato publicado 130 × 65 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. González White 2019 numera las fechas reducidas BG# 439-r (pp. 111–112) y lista, para 2008, el 27 y el 28 de agosto (439-r/10 y 439-r/11); el 18 de agosto lo publica en 2009 (439-r/12). El Bank Note Museum marca 27.08.2008 como 456j, 28.08.2008 como 456k y 18.08.2009 como 456l: no hay letra Pick para un 18.08.2008. Numista agrupa el tipo bajo N# 205282 y asigna a esas tres fechas el par JDUE / GHC. La producción BanRep de 1.000 pesos en 2008 es 280,4 millones de piezas: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date read on the face, shifted to the upper-left edge by the cutting error: 18 August 2008. Published size 130 × 65 mm; eight digits, no series letter; both serials on the face. González White 2019 numbers the reduced dates BG# 439-r (pp. 111–112) and lists, for 2008, 27 and 28 August (439-r/10 and 439-r/11); 18 August is published as 2009 (439-r/12). The Bank Note Museum marks 27.08.2008 as 456j, 28.08.2008 as 456k, and 18.08.2009 as 456l: there is no Pick letter for an 18.08.2008. Numista groups the type under N# 205282 and assigns the JDUE / GHC pair to those three dates. BanRep’s 2008 production of 1,000-peso notes is 280.4 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1000-pesos-error-2008-23085962-composite.jpg',
+      front: '/images/catalog/colombia/1000-pesos-error-2008-23085962-front.jpg',
+      back: '/images/catalog/colombia/1000-pesos-error-2008-23085962-back.jpg',
+    },
+    title: {
+      es: '1.000 pesos · error de corte · 2008',
+      en: '1,000 pesos · cutting error · 2008',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Corte descentrado',
+      en: 'Colombia · Errors · Off-center cut',
+    },
+    lead: {
+      es: 'Mil pesos de Gaitán, Pick 456 / TBB B986: fecha 18 de agosto de 2008 y serial 23085962, con un error de corte vertical que deja la fecha en el canto superior izquierdo —donde no debería estar— y recorta el pie bajo las firmas. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A Gaitán one-thousand-peso note, Pick 456 / TBB B986: date 18 August 2008 and serial 23085962, with a vertical cutting error that leaves the date on the upper-left edge — where it should not be — and crops the foot under the signatures. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r. En el anverso de esta pieza se lee «18 DE AGOSTO DE 2008», no al pie de las firmas sino en una franja del canto superior izquierdo: el corte de fábrica desplazó el diseño hacia abajo y capturó el margen inferior del billete impreso encima en el pliego. Las firmas son las de José Darío Uribe Escobar, gerente general desde enero de 2005, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2008 y al 18.08.2009, antes del cambio a José Tolosa. El serial 23085962 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie de imprenta. El mismo desplazamiento deja en el canto superior del reverso una tira del pie del ejemplar vecino —la fecha de tipo «BOGOTÁ, 1.º DE NOVIEMBRE DE 2005» vive en el reverso de esta familia, distinta de la fecha de plancha del anverso— y recorta el margen inferior. No es una mariposa: no conserva solapa del margen de pliego ni las barras de color. Es un corte descentrado, una maculatura de guillotina. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con las fechas catalogadas 27.08.2008 (456j) y 28.08.2008 (456k), ni con el 18.08.2009 (456l), ni con la mariposa de 10.06.2011 (serial 11508701) de esta misma vitrina. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r. On the face of this piece the line “18 DE AGOSTO DE 2008” is read not under the signatures but in a strip along the upper-left edge: the factory cut shifted the design downward and captured the lower margin of the note printed above it on the sheet. The signatures are those of José Darío Uribe Escobar, general manager from January 2005, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2008 dates and to 18.08.2009, before the change to José Tolosa. Serial 23085962 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the printer’s imprint. The same shift leaves on the back’s upper edge a strip from the neighbouring note’s foot — the type date “BOGOTÁ, 1.º DE NOVIEMBRE DE 2005” lives on the back of this family, distinct from the face plate date — and crops the lower margin. It is not a butterfly: it keeps no sheet-margin flap and no color bars. It is an off-center cut, a guillotine maculature. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with the catalogued dates 27.08.2008 (456j) and 28.08.2008 (456k), with 18.08.2009 (456l), or with this case’s 10.06.2011 butterfly (serial 11508701). This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. En 2005–2006 el banco redujo el formato a 130 × 65 mm, renovó la marca de agua y siguió imprimiendo en la Imprenta de Billetes. El anverso toma la multitud desde un balcón del Hotel Nutibara; el reverso, el saludo de candidato del 23 de septiembre de 1945. González White anota que el tipo reducido circuló desde el 17 de noviembre de 2006. El tipo siguió hasta 2016; no se conocen reposiciones. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el diseño corrido respecto del papel.',
+      en: 'Jorge Eliécer Gaitán (1903–1948) has occupied the Banco de la República one-thousand since the first date, 7 August 2001, put into circulation in 2002 at 140 × 70 mm. In 2005–2006 the bank cut the format to 130 × 65 mm, renewed the watermark, and kept printing at the Imprenta de Billetes. The face takes the crowd from a balcony of the Hotel Nutibara; the back, the candidate’s greeting of 23 September 1945. González White notes that the reduced type circulated from 17 November 2006. The type ran through 2016; no replacements are recorded. This record does not document an ordinary circulating example: it documents a maculature that escaped the cut with the design shifted on the paper.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 pesos, Pick 456: Gaitán, serial 23085962 y la fecha 18 de agosto de 2008 en el canto superior izquierdo, fuera de su sitio bajo las firmas.',
+      en: 'Face of the 1,000 pesos, Pick 456: Gaitán, serial 23085962, and the date 18 August 2008 on the upper-left edge, off its place under the signatures.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 pesos, Pick 456: Gaitán saludando, las dos citas y, en el canto superior, la tira del pie del ejemplar vecino del pliego.',
+      en: 'Back of the 1,000 pesos, Pick 456: Gaitán waving, the two quotations, and, on the upper edge, the strip from the neighbouring note’s foot on the sheet.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 439-r, pp. 111–112) no publica cifra de emisión para las fechas de agosto de 2008 (las filas 439-r/10 y 439-r/11 remiten a N.D.). El 18 de agosto lo lista en 2009 (439-r/12), no en 2008. El Bank Note Museum describe Pick 456 como el tipo 2005–2016 de 130 × 65 mm y no asigna letra a un 18.08.2008. Numista agrupa el diseño bajo N# 205282; las frecuencias que marca para 27.08.2008, 28.08.2008 y 18.08.2009 son de esas fechas ordinarias, no de las maculaturas. La tabla BanRep de producción anual atribuye 280,4 millones de piezas a todos los 1.000 pesos de 2008: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Un corte descentrado que arrastra la fecha al canto opuesto es una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# 439-r, pp. 111–112) publishes no emisión figure for the August 2008 dates (rows 439-r/10 and 439-r/11 point back to N.D.). It lists 18 August as 2009 (439-r/12), not 2008. The Bank Note Museum describes Pick 456 as the 2005–2016 130 × 65 mm type and assigns no letter to an 18.08.2008. Numista groups the design under N# 205282; the frequencies it marks for 27.08.2008, 28.08.2008, and 18.08.2009 are for those ordinary dates, not for maculatures. BanRep’s annual production table assigns 280.4 million pieces to every 1,000-peso note of 2008: that is not the printage of one date, signature pair, or cutting error. An off-center cut that carries the date to the opposite edge is a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 23085962. La pieza se presenta en funda, aparentemente sin circular, sin encapsular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serial 23085962 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular · error de corte (descentrado)',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated · off-center cutting error',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0456.htm',
+        es: 'Bank Note Museum — Colombia P-456, 1.000 pesos (2005–2016)',
+        en: 'Bank Note Museum — Colombia P-456, 1,000 pesos (2005–2016)',
+        note: {
+          es: 'Tipo reducido, Imprenta de Billetes; anverso y reverso Gaitán. El catálogo marca 456j = 27.08.2008, 456k = 28.08.2008 y 456l = 18.08.2009. Esta pieza lleva 18.08.2008 en el canto; no se le asigna aquí una letra Pick.',
+          en: 'Reduced type, Imprenta de Billetes; Gaitán on face and back. The catalogue marks 456j = 27.08.2008, 456k = 28.08.2008, and 456l = 18.08.2009. This piece carries 18.08.2008 on the edge; no Pick letter is assigned here.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/205282',
+        es: 'Numista — Colombia 1.000 pesos (formato reducido), N# 205282',
+        en: 'Numista — Colombia 1,000 pesos (reduced format), N# 205282',
+        note: {
+          es: 'Tipo 2005–2016, 130 × 65 mm; firmas JDUE y GHC en las fechas de 2008 y en 18.08.2009. No se publican columnas de precio. La fecha 18.08.2008 no tiene fila propia en esa tabla.',
+          en: '2005–2016 type, 130 × 65 mm; signatures JDUE and GHC on the 2008 dates and on 18.08.2009. Price columns are not published here. The 18.08.2008 date has no row of its own on that table.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2008 de 1.000 pesos: 280,4 millones de piezas (total de la denominación ese año, no de una fecha Pick ni de un error). La tabla de entregas a Tesorería comienza en 2010.',
+          en: '2008 production of 1,000-peso notes: 280.4 million pieces (the denomination total for that year, not one Pick date or error). The Tesorería delivery table begins in 2010.',
         },
       },
     ],
