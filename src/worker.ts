@@ -11,6 +11,13 @@ function shouldNoindex(url: URL): boolean {
   return false;
 }
 
+/** Strip `/cdn-cgi/image/<options>` when local preview lacks Image Resizing. */
+function cfImageFallbackPath(pathname: string): string | null {
+  if (!pathname.startsWith('/cdn-cgi/image/')) return null;
+  const slash = pathname.indexOf('/', '/cdn-cgi/image/'.length);
+  return slash === -1 ? null : pathname.slice(slash);
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -23,6 +30,12 @@ export default {
     }
 
     let asset = await env.ASSETS.fetch(request);
+    if (asset.status === 404) {
+      const fallbackPath = cfImageFallbackPath(url.pathname);
+      if (fallbackPath) {
+        asset = await env.ASSETS.fetch(new Request(new URL(`${fallbackPath}${url.search}`, url.origin), request));
+      }
+    }
     if (
       asset.status === 404 &&
       (url.pathname === '/en' || url.pathname.startsWith('/en/')) &&

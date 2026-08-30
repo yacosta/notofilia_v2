@@ -437,6 +437,6 @@ export const dedicatedCatalogPaths = new Set<string>([
   ...dedicatedEs.map((slug) => englishContentSlug(slug)),
 ]);
 
-export { SERIES_PATH, PUERTO_RICO_PATH, NOTAFILIA_PATH };
+export { SERIES_PATH, PUERTO_RICO_PATH, NOTAFILIA_PATH, NOTAFILIA_NOTES_CATALOG_PATH };
 
 export const STATS = collectionStats();
