@@ -7,6 +7,17 @@ const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.met
 const indexSource = readFileSync(new URL('../pages/sitemap-index.xml.ts', import.meta.url), 'utf8');
 const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url), 'utf8');
 
+describe('sitemap coverage for polymer England', () => {
+  it('maps the England stub through the polymer locale pair', () => {
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/europa/inglaterra/', 'en'),
+      '/en/collection/world-polymer/europe/england/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    assert.match(sitemapSource, /stubPages/);
+  });
+});
+
 describe('sitemap coverage for Colombia visual catalogs', () => {
   it('registers both locale pairs through dedicated catalog paths', () => {
     assert.equal(localizePath('/coleccion/notafilia/catalogo/', 'en'), '/en/collection/notaphily/catalog/');

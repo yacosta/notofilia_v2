@@ -2,6 +2,8 @@ import type { CatalogSource, LocalizedText } from './catalog';
 import { CHINA_PATH, chinaNotes, chinaChapters } from './china';
 
 export const POLIMERO_MUNDIAL_PATH = '/coleccion/polimero-mundial/';
+export const POLIMERO_EUROPA_PATH = '/coleccion/polimero-mundial/europa/';
+export const POLIMERO_INGLATERRA_PATH = '/coleccion/polimero-mundial/europa/inglaterra/';
 
 const chinaPolymer = chinaChapters.find((chapter) => chapter.id === 'polimero');
 const chinaExhibit = chinaNotes[0];
@@ -106,3 +108,37 @@ export const seriesCopy = {
 export function polymerWorldPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/world-polymer/' : POLIMERO_MUNDIAL_PATH;
 }
+
+export function polymerEnglandPath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? '/en/collection/world-polymer/europe/england/' : POLIMERO_INGLATERRA_PATH;
+}
+
+/** Empty England polymer case — no holdings yet. Do not add a row to polymerCountries until pieces are documented. */
+export const englandCopy = {
+  es: {
+    metaTitle: 'Inglaterra · Billetes de polímero | Notofilia',
+    metaDescription:
+      'Vitrina de los billetes de polímero de Inglaterra en la colección de Notofilia. Las piezas se publicarán a medida que se documenten.',
+    kicker: 'Europa',
+    title: 'Inglaterra',
+    subtitle: 'Billetes de polímero',
+    intro:
+      'Esta vitrina de polímero de Inglaterra se publicará cuando las piezas de la colección estén documentadas.',
+    holdingsTitle: 'El catálogo',
+    holdingsIntro: 'Aún no hay piezas de polímero de Inglaterra documentadas en la colección.',
+    backToPolymer: 'Volver a polímero mundial',
+  },
+  en: {
+    metaTitle: 'England · Polymer banknotes | Notofilia',
+    metaDescription:
+      'England polymer banknotes in the Notofilia collection. Pieces will be published as they are documented.',
+    kicker: 'Europe',
+    title: 'England',
+    subtitle: 'Polymer banknotes',
+    intro:
+      'This England polymer case will be published when pieces in the collection are documented.',
+    holdingsTitle: 'The catalog',
+    holdingsIntro: 'No England polymer notes are documented in the collection yet.',
+    backToPolymer: 'Back to world polymer',
+  },
+} as const;

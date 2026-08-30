@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import {
+  englandCopy,
+  polymerEnglandPath,
+  polymerWorldPath,
+  seriesCopy,
+} from '../../data/polimero-mundial';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = englandCopy[locale];
+const polymer = seriesCopy[locale];
+const pathname = polymerEnglandPath(locale);
+const polymerHref = polymerWorldPath(locale);
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: polymer.title, path: polymerHref },
+    { name: t.title, path: pathname },
+  ],
+});
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: polymerHref, label: polymer.title },
+          { label: t.title },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+      <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
+        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
+        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.subtitle}</span>
+      </h1>
+
+      <p class="mt-10 mb-0 w-full max-w-[46rem] text-[17px]/7 text-cream">{t.intro}</p>
+
+      <section class="mt-16" aria-labelledby="holdings-heading" id="catalogo">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+      </section>
+
+      <p class="mt-12">
+        <a
+          href={polymerHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.backToPolymer}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
