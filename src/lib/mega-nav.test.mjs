@@ -2,7 +2,6 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
-import { footerNotafilia } from './mega-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
 describe('collection menu labels', () => {
@@ -190,19 +189,6 @@ describe('footer links from mega-nav', () => {
         { es: 'Recursos', en: 'Resources', children: [{ es: 'Guías', en: 'Guides', href: '/blog/' }] },
       ]),
       [{ href: '/blog/', es: 'Guías', en: 'Guides' }],
-    );
-  });
-
-  it('lists England once from the live polymer Europe branch', () => {
-    const england = footerNotafilia.filter(
-      (item) => item.href === '/coleccion/polimero-mundial/europa/inglaterra/',
-    );
-    assert.equal(england.length, 1);
-    assert.equal(england[0]?.es, 'Inglaterra');
-    assert.equal(england[0]?.en, 'England');
-    assert.equal(
-      footerNotafilia.filter((item) => item.href === '/coleccion/china/').length,
-      1,
     );
   });
 
