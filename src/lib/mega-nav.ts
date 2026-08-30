@@ -24,7 +24,12 @@ export type NavNode = {
   es: string;
   en: string;
   href?: string;
-  /** ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag. */
+  /**
+   * ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag.
+   * Required on country rows under Notafilia, Numismática, and polymer country children
+   * (China `cn`, England `gb`, …). Continent headings and catalog/misc links omit it.
+   * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (flag-icons 4x3).
+   */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos). */
   icon?: 'guides' | 'glossary' | 'news';
@@ -121,6 +126,7 @@ export const megaNav: NavNode[] = [
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
+        // Country children set `flag` (China `cn`, England `gb`). Continents (Asia, Europe) do not.
         children: [
           {
             id: 'polimero-asia',
