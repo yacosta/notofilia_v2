@@ -214,7 +214,7 @@ describe('Collection-wide banknote catalog', () => {
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
 
     assert.equal(colombiaPieces.length, 13);
-    assert.equal(usaNotes, 6);
+    assert.equal(usaNotes, 7);
     assert.equal(mpcNotes, 4);
     assert.equal(polymerNotes.length, 1);
     assert.match(polymerNotes[0], /serial: 'J04445744'/);
