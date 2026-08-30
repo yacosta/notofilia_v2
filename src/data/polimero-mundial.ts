@@ -1,5 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import { CHINA_PATH, chinaNotes, chinaChapters } from './china';
+import { englandNotes } from './england-polymer';
 
 export const POLIMERO_MUNDIAL_PATH = '/coleccion/polimero-mundial/';
 export const POLIMERO_EUROPA_PATH = '/coleccion/polimero-mundial/europa/';
@@ -7,9 +8,14 @@ export const POLIMERO_INGLATERRA_PATH = '/coleccion/polimero-mundial/europa/ingl
 
 const chinaPolymer = chinaChapters.find((chapter) => chapter.id === 'polimero');
 const chinaExhibit = chinaNotes[0];
+const englandExhibit = englandNotes[0];
 
 if (!chinaPolymer || !chinaExhibit) {
   throw new Error('China polymer exhibit is missing from the catalog data.');
+}
+
+if (!englandExhibit) {
+  throw new Error('England polymer exhibit is missing from the catalog data.');
 }
 
 export type PolymerCountry = {
@@ -30,6 +36,17 @@ export const polymerCountries: PolymerCountry[] = [
     lead: chinaPolymer.lead,
     image: chinaExhibit.images.front,
     imageAlt: chinaExhibit.frontCaption,
+  },
+  {
+    href: POLIMERO_INGLATERRA_PATH,
+    years: { es: 'desde 2016', en: 'from 2016' },
+    title: { es: 'Inglaterra', en: 'England' },
+    lead: {
+      es: 'El primer polímero del Banco de Inglaterra: el 5 libras de Churchill, 2016.',
+      en: 'The Bank of England’s first polymer note: the Churchill £5, 2016.',
+    },
+    image: englandExhibit.images.front,
+    imageAlt: englandExhibit.frontCaption,
   },
 ];
 
@@ -75,11 +92,11 @@ export const seriesCopy = {
       'El polímero de los billetes modernos es, en lo esencial, una película de polipropileno biaxialmente orientado. Se imprime como el papel, pero admite una ventana transparente y resiste mejor el agua, la suciedad y el uso. El motivo de su invención no fue el coleccionismo: fue la falsificación. Tras la decimalización australiana de 1966, el Reserve Bank of Australia pidió a la CSIRO un sustrato que no se pudiera fotocopiar ni simular con los papeles de entonces.',
       'Los primeros plásticos de circulación no fueron ese polímero. En los años ochenta, la American Bank Note Company imprimió ensayos en Tyvek —polietileno no tejido— para Haití, Costa Rica y la Isla de Man. El material se arrugaba, las tintas se desprendían y la experiencia no se generalizó. El salto técnico llegó en enero de 1988, cuando Australia puso en circulación un 10 dólares conmemorativo del Bicentenario: el primer billete de polímero del mundo, con un dispositivo ópticamente variable de James Cook en una ventana clara, fruto de dos décadas de trabajo conjunto entre el banco y la CSIRO.',
       'Entre 1992 y 1996 Australia sustituyó toda su serie decimal por polímero: fue el primer país en abandonar el papel en la circulación ordinaria. En 1996 el banco y UCB Films crearon Securency para vender el sustrato Guardian. De La Rue respondió más tarde con Safeguard. Otros emisores eligieron híbridos —algodón con ventanas de plástico—. Desde entonces decenas de bancos centrales han adoptado uno u otro sistema, unos para toda la serie y otros solo para conmemorativos.',
-      'Esta vitrina no es un recuento de todos los polímeros del mundo. Reúne solo los países cuyas piezas de polímero están documentadas en la colección. Hoy abre China: el Banco Popular no ha pasado la circulación ordinaria al plástico; sus polímeros —el 100 yuan del milenio (2000) y el 20 yuan de los deportes de hielo (2021)— son conmemorativos.',
+      'Esta vitrina no es un recuento de todos los polímeros del mundo. Reúne solo los países cuyas piezas de polímero están documentadas en la colección. Abren China —el Banco Popular no ha pasado la circulación ordinaria al plástico; sus polímeros son conmemorativos— e Inglaterra, donde el Banco de Inglaterra sí llevó el 5 libras cotidiano al polímero en 2016.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una tarjeta por país, a medida que se documenten las piezas. Por ahora, China.',
+      'Una tarjeta por país, a medida que se documenten las piezas. Hoy, China e Inglaterra.',
     viewCountry: 'Leer el catálogo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -95,10 +112,10 @@ export const seriesCopy = {
       'The polymer of modern banknotes is, in essence, a film of biaxially oriented polypropylene. It prints like paper, but it can carry a clear window and stands up better to water, dirt, and wear. It was invented against counterfeiting, not for collectors. After Australia’s decimal changeover in 1966, the Reserve Bank of Australia asked CSIRO for a substrate that could not be photocopied or faked with the papers of the day.',
       'The first circulating plastics were not that polymer. In the 1980s the American Bank Note Company printed Tyvek trials — a non-woven polyethylene — for Haiti, Costa Rica, and the Isle of Man. The stock wrinkled, the inks lifted, and the experiment did not spread. The technical leap came in January 1988, when Australia issued a $10 note for the Bicentenary: the world’s first polymer banknote, with an optically variable device of James Cook in a clear window, the fruit of two decades of work between the Bank and CSIRO.',
       'Between 1992 and 1996 Australia replaced its entire decimal series with polymer: the first country to leave paper in ordinary circulation. In 1996 the Bank and UCB Films formed Securency to sell the Guardian substrate. De La Rue later answered with Safeguard. Other issuers chose hybrids — cotton with plastic windows. Since then dozens of central banks have taken up one system or the other, some for a whole series and others only for commemoratives.',
-      'This case is not a census of every polymer note in the world. It gathers only the countries whose polymer pieces are documented in the collection. China opens the row today: the People’s Bank has not moved ordinary circulation onto plastic; its polymer notes — the millennium 100-yuan (2000) and the ice-sports 20-yuan (2021) — are commemoratives.',
+      'This case is not a census of every polymer note in the world. It gathers only the countries whose polymer pieces are documented in the collection. China opens the row — the People’s Bank has not moved ordinary circulation onto plastic; its polymer notes are commemoratives — and England, where the Bank of England did move the everyday £5 onto polymer in 2016.',
     ],
     holdingsTitle: 'The catalog',
-    holdingsIntro: 'One card to a country, as pieces are documented. For now, China.',
+    holdingsIntro: 'One card to a country, as pieces are documented. Today, China and England.',
     viewCountry: 'Read the catalog',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -113,32 +130,39 @@ export function polymerEnglandPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/world-polymer/europe/england/' : POLIMERO_INGLATERRA_PATH;
 }
 
-/** Empty England polymer case — no holdings yet. Do not add a row to polymerCountries until pieces are documented. */
 export const englandCopy = {
   es: {
     metaTitle: 'Inglaterra · Billetes de polímero | Notofilia',
     metaDescription:
-      'Vitrina de los billetes de polímero de Inglaterra en la colección de Notofilia. Las piezas se publicarán a medida que se documenten.',
+      'Billetes de polímero de Inglaterra en la colección de Notofilia: el 5 libras de Churchill del Banco de Inglaterra (2016), serie AC04 879241.',
     kicker: 'Europa',
     title: 'Inglaterra',
     subtitle: 'Billetes de polímero',
     intro:
-      'Esta vitrina de polímero de Inglaterra se publicará cuando las piezas de la colección estén documentadas.',
+      'El Banco de Inglaterra pasó el 5 libras cotidiano al polímero el 13 de septiembre de 2016: Isabel II en la cara de la promesa y Winston Churchill al reverso. Esta vitrina reúne las piezas de esa serie documentadas en la colección.',
     holdingsTitle: 'El catálogo',
-    holdingsIntro: 'Aún no hay piezas de polímero de Inglaterra documentadas en la colección.',
+    holdingsIntro: 'Por ahora, el 5 libras de Churchill (Pick 394), serie AC04 879241.',
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
     backToPolymer: 'Volver a polímero mundial',
+    sourcesTitle: 'Fuentes',
   },
   en: {
     metaTitle: 'England · Polymer banknotes | Notofilia',
     metaDescription:
-      'England polymer banknotes in the Notofilia collection. Pieces will be published as they are documented.',
+      'England polymer banknotes in the Notofilia collection: the Bank of England Churchill £5 (2016), serial AC04 879241.',
     kicker: 'Europe',
     title: 'England',
     subtitle: 'Polymer banknotes',
     intro:
-      'This England polymer case will be published when pieces in the collection are documented.',
+      'The Bank of England moved the everyday £5 onto polymer on 13 September 2016: Elizabeth II on the promise face and Winston Churchill on the reverse. This case gathers the pieces of that series documented in the collection.',
     holdingsTitle: 'The catalog',
-    holdingsIntro: 'No England polymer notes are documented in the collection yet.',
+    holdingsIntro: 'For now, the Churchill £5 (Pick 394), serial AC04 879241.',
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
     backToPolymer: 'Back to world polymer',
+    sourcesTitle: 'Sources',
   },
 } as const;

@@ -95,6 +95,7 @@ export const additions: Holding[] = [
   { id: 'co-2017-20000-pesos-af51355141', kind: 'banknote', country: 'CO' },
   { id: 'co-2008-1000-pesos-error-23085962', kind: 'banknote', country: 'CO' },
   { id: 'co-2011-1000-pesos-error-11508701', kind: 'banknote', country: 'CO' },
+  { id: 'gb-2016-5-pounds-ac04879241', kind: 'banknote', country: 'GB' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -132,6 +133,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2017-20000-pesos-p461-nf20-6' },
   { id: 'co-2008-1000-pesos-error-p456' },
   { id: 'co-2011-1000-pesos-error-p456n' },
+  { id: 'gb-2016-5-pounds-p394-b203a' },
 ];
 
 export type CollectionStats = {
