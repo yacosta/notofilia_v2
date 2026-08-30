@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import {
   createTypeCatalogEngine,
@@ -21,6 +21,40 @@ const lots = readFileSync(new URL('../../docs/sources/heritage/lots.txt', import
 const noteCatalogSource = readFileSync(new URL('../data/colombia-type-catalog.ts', import.meta.url), 'utf8');
 const collectionCatalogSource = readFileSync(new URL('../data/collection-note-catalog.ts', import.meta.url), 'utf8');
 const coinCatalogSource = readFileSync(new URL('../data/colombia-coin-type-catalog.ts', import.meta.url), 'utf8');
+const usaNotesSource = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
+const mpcNotesSource = readFileSync(new URL('../data/mpc-vietnam.ts', import.meta.url), 'utf8');
+const chinaNotesSource = readFileSync(new URL('../data/china.ts', import.meta.url), 'utf8');
+const allNotesCatalogHtml = new URL(
+  '../../dist/coleccion/notafilia/catalogo/index.html',
+  import.meta.url,
+);
+
+function extractExportArrayBlock(source, exportName) {
+  const start = source.indexOf(`export const ${exportName}`);
+  assert.ok(start >= 0, `missing export const ${exportName}`);
+  const assign = source.indexOf('= [', start);
+  assert.ok(assign >= 0, `missing array initializer for ${exportName}`);
+  const bracket = assign + 2;
+  let depth = 0;
+  for (let i = bracket; i < source.length; i += 1) {
+    if (source[i] === '[') depth += 1;
+    if (source[i] === ']') {
+      depth -= 1;
+      if (depth === 0) return source.slice(bracket + 1, i);
+    }
+  }
+  throw new Error(`unclosed array for ${exportName}`);
+}
+
+function countTopLevelSerials(arrayBlock) {
+  return (arrayBlock.match(/^    serial: '/gm) || []).length;
+}
+
+function polymerChinaNotes(source) {
+  const block = extractExportArrayBlock(source, 'chinaNotes');
+  const entries = block.split(/^  \{/m).slice(1);
+  return entries.filter((entry) => /pol[ií]mero|polymer|塑料钞/i.test(entry));
+}
 
 describe('Heritage Colombian type parser', () => {
   it('keeps Colombian paper and drops bleed or group lots', () => {
@@ -173,5 +207,38 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /inCollection: true/);
     assert.doesNotMatch(collectionCatalogSource, /parseHeritageLots/);
     assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
+  });
+
+  it('keeps Colombia, US, and polymer holdings aligned with the data modules', () => {
+    const colombiaPieces = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
+    const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
+    const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
+    const polymerNotes = polymerChinaNotes(chinaNotesSource);
+
+    assert.equal(colombiaPieces.length, 10);
+    assert.equal(usaNotes, 5);
+    assert.equal(mpcNotes, 4);
+    assert.equal(polymerNotes.length, 1);
+    assert.match(polymerNotes[0], /serial: 'J04445744'/);
+
+    if (!existsSync(allNotesCatalogHtml)) return;
+
+    const html = readFileSync(allNotesCatalogHtml, 'utf8');
+    const match = html.match(/const documents = (\[.*?\]);/s);
+    assert.ok(match, 'built all-notes catalog embeds documents JSON');
+    const documents = JSON.parse(match[1]);
+    const byCountry = documents.reduce((counts, doc) => {
+      counts[doc.country] = (counts[doc.country] || 0) + 1;
+      return counts;
+    }, {});
+
+    assert.equal(byCountry.CO, colombiaPieces.length);
+    assert.equal(byCountry.US, usaNotes + mpcNotes);
+    assert.equal(byCountry.CN, polymerNotes.length);
+    assert.equal(
+      documents.length,
+      colombiaPieces.length + usaNotes + mpcNotes + polymerNotes.length + 4,
+      'includes Philippines victory notes in the full catalog',
+    );
   });
 });
