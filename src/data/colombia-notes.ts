@@ -6,6 +6,7 @@ import { localizePath } from '../lib/locale-paths.ts';
 export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
+  | '1-peso-tolima-1901'
   | '1-peso-oro-1954'
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
@@ -319,6 +320,113 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023: banco fundado en 1885 y liquidado en 1888; Cód. 1109 es el cinco pesos de circulación del 1.º de enero de 1883 (Bolívar al centro, ABNC). Esta ficha es el par de pruebas S819p.',
           en: '8th ed. 2023: bank founded in 1885 and liquidated in 1888; Cód. 1109 is the circulating five-peso of 1 January 1883 (Bolívar at center, ABNC). This record is the S819p proof pair.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-peso-tolima-1901',
+    chapterId: 'banco-nacional',
+    path: `${COLOMBIA_PATH}1-peso-tolima-1901/`,
+    pick: 'Cód. 1242',
+    serial: '060.416',
+    signatures: {
+      es: 'Sin firmas impresas',
+      en: 'No printed signatures',
+    },
+    printed: {
+      es: 'Tipografía local, Departamento del Tolima. Fecha impresa: Ibagué, septiembre de 1901. Serie D. Serial impreso N.º 060.416 (060416 normalizado; se conservan los ceros a la izquierda). No se publica una tirada: no es un tipo del Banco de la República (1923–2019) y las tablas BanRep de producción anual de billetes empiezan en 1960.',
+      en: 'Local typesetting, Departamento del Tolima. Printed date: Ibagué, September 1901. Series D. Printed serial N.º 060.416 (normalized 060416; leading zeros are kept). No printage is published: this is not a Banco de la República type (1923–2019), and BanRep’s annual banknote production tables begin in 1960.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1-peso-tolima-1901-060416-composite.jpg',
+      front: '/images/catalog/colombia/1-peso-tolima-1901-060416-front.jpg',
+      back: '/images/catalog/colombia/1-peso-tolima-1901-060416-back.jpg',
+    },
+    title: {
+      es: '1 peso · Departamento del Tolima · 1901',
+      en: '1 peso · Departamento del Tolima · 1901',
+    },
+    kicker: {
+      es: 'Colombia · Banco Nacional · Cédula departamental',
+      en: 'Colombia · Banco Nacional · Departmental cédula',
+    },
+    lead: {
+      es: 'Cédula representativa de un peso del Departamento del Tolima: República de Colombia, Ibagué, septiembre de 1901, Serie D, serial N.º 060.416. Hernández (8.ª ed., 2023) numera el un peso tipográfico del departamento —solo texto en el anverso— como Cód. 1242. Esta ficha es el ejemplar 060416, en funda, sin encapsular.',
+      en: 'A one-peso cédula representativa of the Departamento del Tolima: Republic of Colombia, Ibagué, September 1901, Series D, serial N.º 060.416. Hernández (8th ed., 2023) numbers the department’s typeset one-peso — text only on the face — as Cód. 1242. This record is serial 060416, in a sleeve, unslabbed.',
+    },
+    description: {
+      es: 'En la Guerra de los Mil Días (1899–1902) las tesorerías departamentales emitieron papel propio cuando el enlace con Bogotá se cortó. El Boletín Numismático 114 de José Arcelio Gómez (15 de agosto de 2012) sitúa las emisiones del Tolima entre 1900 y 1902, impresas en papeles comunes y a una sola tinta: diez, veinte y cincuenta centavos, y un peso. Hernández (8.ª ed., 2023) lista el papel tipográfico del departamento como Cód. 1239–1243; el un peso —«solo texto en el anverso»— es Cód. 1242. Las filas vecinas de esa tabla llevan fechas de julio de 1900; la fecha impresa en esta pieza es «Ibagué, Septiembre de 1901.» No se asigna aquí un Pick único: Gómez cita para el un peso del Tolima los números 1169, 1173, 1181 y 1191, sin emparejar esta Serie D ni este serial a uno de ellos. Numismondo agrupa las emisiones departamentales bajo P.S1050 y siguientes, con imágenes pendientes. Numista no lista un billete del Estado o Departamento del Tolima —solo un ensayo de 2 centavos de 1890 (N# 281840)—. El extracto de Heritage de esta colección no registra lotes del Tolima. El anverso, en negro sobre papel tostado, lee «REPUBLICA DE COLOMBIA» y «DEPARTAMENTO DEL TOLIMA», el tipo «Cédula representativa.», el valor «VALE UN PESO» y, abajo, «Ibagué, Septiembre de 1901.» El serial «N.º 060.416» va arriba a la izquierda; «Serie D», arriba a la derecha. El marco ornamental repite «UNPESO». Un sello circular rojizo, ya pálido, cubre en parte el encabezado. El reverso es papel tan envejecido con un gran sello circular rojo, manchas, pliegues y un manuscrito tenue a la izquierda. No hay firmas impresas ni pie de imprenta. No debe confundirse con el Banco del Tolima de Neiva (hacia 1881–1882), ni con las cédulas hipotecarias de bancos privados, ni con el un peso de tesorería de Antioquia (Pick S1065 y afines). Esta ficha reúne las dos caras de la misma pieza, en funda transparente, muy circulada, sin encapsular.',
+      en: 'In the Thousand Days’ War (1899–1902) departmental treasuries issued their own paper when the link to Bogotá failed. José Arcelio Gómez’s Boletín Numismático 114 (15 August 2012) places Tolima’s issues between 1900 and 1902, printed on ordinary papers in a single ink: ten, twenty, and fifty centavos, and one peso. Hernández (8th ed., 2023) lists the department’s typeset paper as Cód. 1239–1243; the one-peso — “text only on the face” — is Cód. 1242. Neighbouring rows in that table carry July 1900 dates; the date printed on this piece is “Ibagué, Septiembre de 1901.” No unique Pick is assigned here: Gómez cites 1169, 1173, 1181, and 1191 for Tolima one-peso issues, without matching this Series D or this serial to one of them. Numismondo groups departmental issues under P.S1050 and later, with images still needed. Numista lists no banknote for the State or Departamento del Tolima — only an 1890 2-centavo pattern (N# 281840). This collection’s Heritage extract records no Tolima lots. The face, black on browned paper, reads “REPUBLICA DE COLOMBIA” and “DEPARTAMENTO DEL TOLIMA,” the type “Cédula representativa.,” the value “VALE UN PESO,” and, below, “Ibagué, Septiembre de 1901.” Serial “N.º 060.416” sits at upper left; “Serie D” at upper right. The ornamental frame repeats “UNPESO.” A faded reddish circular stamp partly covers the heading. The back is aged tan paper with a large bright-red circular seal, stains, fold lines, and faint manuscript at left. There are no printed signatures and no printer’s imprint. It should not be confused with the Banco del Tolima of Neiva (about 1881–1882), with private-bank mortgage cédulas, or with Antioquia treasury one-peso notes (Pick S1065 and kin). This record gathers both sides of the same heavily circulated note, in a clear sleeve, unslabbed.',
+    },
+    history: {
+      es: 'Tras liquidarse el Banco Nacional (Ley 70 de 1894; cierre que Astrid Romero sitúa el 1.º de enero de 1896), la Guerra de los Mil Días volvió a llenar el país de papel sin respaldo. El gobierno y los mandos regionales imprimieron; el Museo Casa de Moneda registra billetes del Gobierno Provisional de Ocaña (1900) y resellos del Nacional sobre papel privado. El Tolima, aislado en el centro del país, recurrió a su tesorería: Gómez describe esas cédulas como emisiones locales, raras, de una sola tinta. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro. Esta pieza —un peso, Serie D, serial 060416, Ibagué, septiembre de 1901— es un superviviente de esa inflación, no un billete del Banco de la República ni de la banca libre de los años 1870–1880.',
+      en: 'After the Banco Nacional was wound up (Law 70 of 1894; a closure Astrid Romero places on 1 January 1896), the Thousand Days’ War again filled the country with unbacked paper. The government and regional commanders printed; the Casa de Moneda Museum records Gobierno Provisional notes from Ocaña (1900) and Nacional overstamps on private paper. Tolima, isolated in the centre of the country, turned to its treasury: Gómez describes those cédulas as local, scarce, single-ink issues. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso. This piece — one peso, Series D, serial 060416, Ibagué, September 1901 — is a survivor of that inflation, not a Banco de la República note and not free-banking paper of the 1870s–1880s.',
+    },
+    frontCaption: {
+      es: 'Anverso de la cédula representativa de un peso, Cód. 1242: República de Colombia, Departamento del Tolima, VALE UN PESO, Ibagué septiembre de 1901, N.º 060.416, Serie D.',
+      en: 'Face of the one-peso cédula representativa, Cód. 1242: Republic of Colombia, Departamento del Tolima, VALE UN PESO, Ibagué September 1901, N.º 060.416, Series D.',
+    },
+    backCaption: {
+      es: 'Reverso de la misma pieza: papel tostado, sello circular rojo, manchas, pliegues y manuscrito tenue; en funda, sin encapsular.',
+      en: 'Back of the same piece: browned paper, a red circular seal, stains, folds, and faint manuscript; in a sleeve, unslabbed.',
+    },
+    scarcity: {
+      es: 'Gómez (2012) llama bastante raros a los ejemplares del Tolima de 1900–1902 y no publica tiradas. Hernández numera el un peso tipográfico como Cód. 1242; no se reproducen aquí columnas de precios ni láminas. Numista no tiene ficha de billete para este emisor. El extracto de Heritage no aporta lotes comparables del Tolima. Esta ficha no inventa una tirada.',
+      en: 'Gómez (2012) calls Tolima’s 1900–1902 pieces quite rare and publishes no printages. Hernández numbers the typeset one-peso as Cód. 1242; price columns and plates are not republished here. Numista has no banknote record for this issuer. The Heritage extract supplies no Tolima comparables. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 060416. La pieza no está encapsulada.',
+      en: 'A PMG or PCGS census for serial 060416 has not been independently verified. The note is unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · muy circulada (manchas, pliegues, foxing)',
+      en: 'Unslabbed · in a sleeve · heavily circulated (stains, folds, foxing)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023: Departamento del Tolima, Cód. 1239–1243; el un peso tipográfico («solo texto en el anverso») es Cód. 1242. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023: Departamento del Tolima, Cód. 1239–1243; the typeset one-peso (“text only on the face”) is Cód. 1242. Price columns and plates are not published here.',
+        },
+      },
+      {
+        href: 'https://www.mascoleccionismo.com/publicaciones/JAG/JAG-114.pdf',
+        es: 'José Arcelio Gómez — Boletín Numismático 114 (15 de agosto de 2012)',
+        en: 'José Arcelio Gómez — Boletín Numismático 114 (15 August 2012)',
+        note: {
+          es: 'Emisiones departamentales del Tolima, 1900–1902: 10, 20 y 50 centavos y un peso (cita Pick 1169, 1173, 1181 y 1191 para el peso). Impresión local, una tinta. No se asigna aquí uno de esos números a esta Serie D.',
+          en: 'Tolima departmental issues, 1900–1902: 10, 20, and 50 centavos and one peso (cites Pick 1169, 1173, 1181, and 1191 for the peso). Local printing, one ink. None of those numbers is assigned here to this Series D.',
+        },
+      },
+      {
+        href: 'http://www.numismondo.net/pm/col/',
+        es: 'Numismondo — Índice de papel moneda de Colombia, emisiones departamentales',
+        en: 'Numismondo — Colombia paper-money index, departmental issues',
+        note: {
+          es: 'P.S1050 y siguientes (1893–1900), imágenes pendientes. No hay una ficha ilustrada del Tolima 1901.',
+          en: 'P.S1050 and later (1893–1900), images needed. There is no illustrated Tolima 1901 card.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Papel_moneda_en_Colombia',
+        es: 'Enciclopedia Banrepcultural — Papel moneda en Colombia',
+        en: 'Banrepcultural Encyclopedia — Paper money in Colombia',
+        note: {
+          es: 'Guerra de los Mil Días: impresión de papel sin respaldo por el gobierno y mandos regionales.',
+          en: 'Thousand Days’ War: unbacked paper from the government and regional commanders.',
+        },
+      },
+      {
+        href: 'https://es.numista.com/catalogue/tolima_state-1.html',
+        es: 'Numista — Estado de Tolima',
+        en: 'Numista — State of Tolima',
+        note: {
+          es: 'Sin billetes listados. El único objeto es el ensayo de 2 centavos de 1890 (N# 281840), no esta cédula.',
+          en: 'No banknotes listed. The only object is the 1890 2-centavo pattern (N# 281840), not this cédula.',
         },
       },
     ],
