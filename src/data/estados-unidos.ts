@@ -135,8 +135,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -251,7 +251,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 2003 Atlanta $1 star replacement F05033622★, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -272,6 +272,7 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934-chicago'
   | '10-dolares-serie-1934a-chicago'
   | '10-dolares-serie-1934a-cleveland'
+  | '10-dolares-serie-1934d-richmond'
   | '1-dolar-certificado-plata-1957b';
 
 export type UnitedStatesNote = {
@@ -1046,6 +1047,117 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Tipo de tamaño pequeño, sello verde oscuro, distrito de Cleveland.',
           en: 'Small-size type, dark-green seal, Cleveland district.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/10',
+        es: 'U.S. Currency Education Program — 10 dólares',
+        en: 'U.S. Currency Education Program — $10',
+        note: {
+          es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
+          en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-serie-1934d-richmond',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
+    pathEn: '/collection/united-states/10-dollars-series-1934d-richmond/',
+    pick: 'P#430Dd · Fr. 2009-E',
+    serial: 'E60822246B',
+    signatures: {
+      es: 'Georgia Neese Clark (tesorera) y John W. Snyder (secretario del Tesoro)',
+      en: 'Georgia Neese Clark (Treasurer) and John W. Snyder (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Tipo común del distrito de Richmond. La serie 1934 D es la quinta de las cinco emisiones 1934–1934D; esta ficha no inventa una tirada por bloque de serie.',
+      en: 'A common Richmond-district type. Series 1934D is the fifth of the five 1934–1934D issues; this record does not invent a printage by serial block.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '10 dólares · Serie 1934 D · Richmond',
+      en: '$10 · Series 1934D · Richmond',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Hamilton y sello verde del Tesoro; reverso con el edificio del Tesoro. Distrito E / 5. Serie 1934 D, serial E60822246B.',
+      en: 'Face with Hamilton and a green Treasury seal; back with the Treasury building. District E / 5. Series 1934D, serial E60822246B.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1934 D (Pick 430Dd, Friedberg 2009-E) es un Federal Reserve Note de tamaño pequeño del distrito de Richmond: sello circular con la E, el 5 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF RICHMOND VIRGINIA». El anverso, en negro con sello y seriales verdes, lleva el retrato de Alexander Hamilton en óvalo y, a la derecha, el sello del Tesoro sobre la palabra TEN. Las firmas son las de Georgia Neese Clark y John W. Snyder, distintas de las Julian–Morgenthau de las series 1934 y 1934 A. El texto de curso legal aún promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. La plancha de anverso F155 queda abajo a la derecha; la letra de control F se lee encima del sello de la Reserva. El reverso, en verde, muestra el edificio del Tesoro en Washington, D.C., con un automóvil de entreguerras frente a la fachada; el número de plancha 1297 queda abajo a la derecha de la viñeta. Esta pieza de la colección, circulada y sin encapsular, se presenta en funda y lleva el serial E60822246B (bloque EB). No lleva la sobrecarga HAWAII ni el lema «IN GOD WE TRUST». No es el 10 dólares de 1934 (sin letra) de Chicago, serial G30986728A, ni el 10 dólares de 1934 A de ese distrito, serial G74025286A, ni el 10 dólares de 1934 A de Cleveland, serial D78652996A: los distinguen la letra de serie D, el distrito E / 5, las firmas Clark–Snyder y este serial.',
+      en: 'The Series 1934D $10 (Pick 430Dd, Friedberg 2009-E) is a small-size Federal Reserve Note of the Richmond district: a circular seal with E, 5s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF RICHMOND VIRGINIA.” The black face with green seal and serials carries Alexander Hamilton in an oval and, at right, the Treasury seal over TEN. The signatures are Georgia Neese Clark and John W. Snyder, not the Julian–Morgenthau pair of Series 1934 and 1934A. The legal-tender clause still promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. Face plate F155 sits at lower right; check letter F sits above the Reserve seal. The green back shows the Treasury building in Washington, D.C., with an interwar automobile before the façade; plate number 1297 sits at the lower right of the vignette. This collection piece, circulated and unslabbed, is shown in a sleeve and is serial E60822246B (EB block). It has neither the HAWAII overprint nor the motto “IN GOD WE TRUST.” It is not the Series 1934 (no letter) Chicago $10, serial G30986728A, nor the Series 1934A $10 of that district, serial G74025286A, nor the Series 1934A Cleveland $10, serial D78652996A: the series letter D, district E / 5, Clark–Snyder signatures, and this serial distinguish it.',
+    },
+    history: [
+      {
+        es: 'La serie 1934 D cierra las cinco emisiones 1934–1934D del 10 dólares. El Bank Note Museum la numera P-430Dd: firmas Clark y Snyder, sello verde oscuro. Georgia Neese Clark, tesorera desde 1949, sustituye a W. A. Julian; Snyder permanece como secretario. The Paper Money Project sitúa la 1934 D en el grupo de planchas macro y, en muchos distritos, en el formato estrecho. Esta ficha no inventa una tirada por bloque.',
+        en: 'Series 1934D closes the five 1934–1934D $10 issues. The Bank Note Museum numbers it P-430Dd: Clark and Snyder signatures, dark-green seal. Georgia Neese Clark, Treasurer from 1949, replaces W. A. Julian; Snyder remains Secretary. The Paper Money Project places 1934D in the macro-plate group and, in many districts, on the narrow format. This record does not invent a printage by block.',
+      },
+      {
+        es: 'Richmond es el distrito E / 5. Esta pieza, bloque EB, no es un reemplazo con estrella ni un HAWAII. El lema «IN GOD WE TRUST» aún no figura en el reverso. La plancha de anverso es F155; la del reverso, 1297.',
+        en: 'Richmond is district E / 5. This EB-block piece is neither a star replacement nor a HAWAII note. The motto “IN GOD WE TRUST” is not yet on the back. The face plate is F155; the back plate is 1297.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 D',
+      en: 'Series 1934D',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 1934 D, distrito de Richmond, serial E60822246B: Hamilton, sello verde del Tesoro y plancha F155.',
+      en: 'Face of the Series 1934D $10, Richmond district, serial E60822246B: Hamilton, the green Treasury seal, and plate F155.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 1934 D: edificio del Tesoro y TEN DOLLARS. Plancha 1297. Sin lema IN GOD WE TRUST.',
+      en: 'Back of the Series 1934D $10: the Treasury building and TEN DOLLARS. Plate 1297. No IN GOD WE TRUST motto.',
+    },
+    scarcity: {
+      es: 'La serie 1934 D del 10 dólares —firmas Clark–Snyder, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva de la posguerra. El Bank Note Museum la numera P-430Dd. Fr. 2009-E cubre Richmond. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934D $10 notes — Clark–Snyder signatures, dark-green seal, all twelve districts — were everyday Reserve paper after the war. The Bank Note Museum numbers the type P-430Dd. Fr. 2009-E is Richmond. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial E60822246B. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial E60822246B has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular, en funda (colección privada)',
+      en: 'Circulated, unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0430D2.htm',
+        es: 'Bank Note Museum — P-430D, 10 dólares Federal Reserve Note, series 1934–1934D',
+        en: 'Bank Note Museum — P-430D, Series 1934–1934D $10 Federal Reserve Note',
+        note: {
+          es: '430Dd: serie 1934 D, firmas Clark y Snyder; distrito E = Richmond; sello verde oscuro.',
+          en: '430Dd: Series 1934D, Clark and Snyder signatures; district E = Richmond; dark-green seal.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn',
+        es: 'The Paper Money Project — Federal Reserve Notes de 10 dólares, serie 1934',
+        en: 'The Paper Money Project — Series 1934 $10 Federal Reserve Notes',
+        note: {
+          es: 'Cinco series (1934–1934D); la 1934 D cierra el grupo con firmas Clark–Snyder y planchas macro.',
+          en: 'Five series (1934–1934D); 1934D closes the group with Clark–Snyder signatures and macro plates.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-2009e-1934d-ten-dollar-federal-reserve-note-small-size/gsid/63560',
+        es: 'Greysheet — Fr. 2009E, 1934D $10 Federal Reserve Note, Richmond',
+        en: 'Greysheet — Fr. 2009E, 1934D $10 Federal Reserve Note, Richmond',
+        note: {
+          es: 'Tipo de tamaño pequeño, sello verde oscuro, distrito de Richmond.',
+          en: 'Small-size type, dark-green seal, Richmond district.',
         },
       },
       {
