@@ -76,3 +76,8 @@ export function errorGroups(): ColombiaErrorGroup[] {
 export function hasErrorNotes(): boolean {
   return colombiaErrorNotes.length > 0;
 }
+
+/** Flat list of error cards in year/denomination order for the series grid. */
+export function errorNoteCards(): ColombiaErrorCard[] {
+  return errorGroups().flatMap((group) => group.cards);
+}
