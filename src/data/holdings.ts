@@ -72,6 +72,7 @@ export const additions: Holding[] = [
   { id: 'us-mpc-681-1-c10102847', kind: 'banknote', country: 'US' },
   { id: 'us-mpc-692-20-e05725119', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934-10-chicago-g30986728', kind: 'banknote', country: 'US' },
+  { id: 'us-frn-2003-1-atlanta-f05033622', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1957b-s35513454a', kind: 'banknote', country: 'US' },
   { id: 'us-nj-350-1-new-brunswick-9890', kind: 'banknote', country: 'US' },
   { id: 'us-csa-1864-20-74523', kind: 'banknote', country: 'US' },
@@ -88,6 +89,8 @@ export const additions: Holding[] = [
   { id: 'co-1983-2000-pesos-oro-specimen-030', kind: 'banknote', country: 'CO' },
   { id: 'co-2008-2000-pesos-10000001', kind: 'banknote', country: 'CO' },
   { id: 'co-2017-20000-pesos-af51355141', kind: 'banknote', country: 'CO' },
+  { id: 'co-2008-1000-pesos-error-23085962', kind: 'banknote', country: 'CO' },
+  { id: 'co-2011-1000-pesos-error-11508701', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -104,6 +107,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-mpc-681-1-m79' },
   { id: 'us-mpc-692-20-m98' },
   { id: 'us-frn-1934-10-chicago-fr2004g' },
+  { id: 'us-frn-2003-1-atlanta-fr1929f' },
   { id: 'us-sc-1957b-fr1621' },
   { id: 'us-nj-350-1-new-brunswick-g16a' },
   { id: 'us-csa-1864-20-t67-p69' },
@@ -118,6 +122,8 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1983-2000-pesos-oro-p430as' },
   { id: 'co-2008-2000-pesos-p457' },
   { id: 'co-2017-20000-pesos-p461-nf20-6' },
+  { id: 'co-2008-1000-pesos-error-p456' },
+  { id: 'co-2011-1000-pesos-error-p456n' },
 ];
 
 export type CollectionStats = {

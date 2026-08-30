@@ -1,6 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import { chinaNotes, notePath as chinaNotePath } from './china';
-import { colombiaErrorNotes } from './colombia-errors';
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
@@ -61,7 +60,7 @@ function flagsFrom(...parts: string[]): TypeCatalogFlag[] {
 function collectionSeeds(): CollectionSeed[] {
   const seeds: CollectionSeed[] = [];
 
-  for (const note of [...colombiaNotes, ...colombiaErrorNotes]) {
+  for (const note of colombiaNotes) {
     for (const piece of notePieces(note)) {
       const hash = piece.id !== note.id ? `#${piece.id}` : '';
       const era = (note.chapterId === 'errores' ? 'errores' : note.chapterId) as TypeCatalogEra;

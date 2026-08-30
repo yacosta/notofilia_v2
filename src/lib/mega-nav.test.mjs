@@ -4,6 +4,16 @@ import { readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
 
+describe('collection menu labels', () => {
+  it('uses a dash between Colección Virtual and the discipline name', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    assert.match(source, /es: 'Colección Virtual - Notafilia'/);
+    assert.match(source, /en: 'Virtual Collection - Notaphily'/);
+    assert.match(source, /es: 'Colección Virtual - Numismática'/);
+    assert.match(source, /en: 'Virtual Collection - Numismatics'/);
+  });
+});
+
 describe('mega-nav columns', () => {
   it('keeps country rows on the main side and polymer in the aside', () => {
     const { main, aside } = navColumns([
@@ -88,6 +98,16 @@ describe('United States submenu', () => {
     assert.match(usa, /es: 'Misceláneos'/);
     assert.match(usa, /en: 'Miscellaneous'/);
     assert.match(usa, /href: USA_MISC_PATH/);
+  });
+});
+
+describe('Recursos submenu', () => {
+  it('marks each resource link with a decorative icon', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
+    assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
+    assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
+    assert.match(recursos, /id: 'noticias',[\s\S]*?icon: 'news'/);
   });
 });
 

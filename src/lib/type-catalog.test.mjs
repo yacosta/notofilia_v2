@@ -14,7 +14,6 @@ import {
   runTypeCatalogSearch,
   typeCatalogStats,
 } from './type-catalog.ts';
-import { colombiaErrorNotes } from '../data/colombia-errors.ts';
 import { colombiaNotes, notePieces } from '../data/colombia-notes.ts';
 
 const lots = readFileSync(new URL('../../docs/sources/heritage/lots.txt', import.meta.url), 'utf8');
@@ -184,10 +183,10 @@ describe('Colombia visual catalog data files', () => {
   });
 
   it('emits one document per collection piece and no prices', () => {
-    const expected = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
+    const expected = colombiaNotes.flatMap((note) => notePieces(note));
     assert.ok(expected.length > 0);
     assert.match(noteCatalogSource, /collectionNoteDocuments\(locale, 'CO'\)/);
-    assert.match(collectionCatalogSource, /\[\.\.\.colombiaNotes, \.\.\.colombiaErrorNotes\]/);
+    assert.match(collectionCatalogSource, /for \(const note of colombiaNotes\)/);
     assert.match(collectionCatalogSource, /notePieces\(note\)/);
     assert.match(collectionCatalogSource, /inCollection: true/);
     assert.doesNotMatch(noteCatalogSource, /\b(price|precio|realized):/i);
@@ -198,7 +197,6 @@ describe('Colombia visual catalog data files', () => {
 describe('Collection-wide banknote catalog', () => {
   it('reads every country note module and does not store prices', () => {
     assert.match(collectionCatalogSource, /colombiaNotes/);
-    assert.match(collectionCatalogSource, /colombiaErrorNotes/);
     assert.match(collectionCatalogSource, /notePieces/);
     assert.match(collectionCatalogSource, /unitedStatesNotes/);
     assert.match(collectionCatalogSource, /mpcVietnamNotes/);
@@ -210,13 +208,13 @@ describe('Collection-wide banknote catalog', () => {
   });
 
   it('keeps Colombia, US, and polymer holdings aligned with the data modules', () => {
-    const colombiaPieces = [...colombiaNotes, ...colombiaErrorNotes].flatMap((note) => notePieces(note));
+    const colombiaPieces = colombiaNotes.flatMap((note) => notePieces(note));
     const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
 
-    assert.equal(colombiaPieces.length, 10);
-    assert.equal(usaNotes, 5);
+    assert.equal(colombiaPieces.length, 12);
+    assert.equal(usaNotes, 6);
     assert.equal(mpcNotes, 4);
     assert.equal(polymerNotes.length, 1);
     assert.match(polymerNotes[0], /serial: 'J04445744'/);

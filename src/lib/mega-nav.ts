@@ -26,6 +26,8 @@ export type NavNode = {
   href?: string;
   /** ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag. */
   flag?: string;
+  /** Decorative mark for non-country panel links (Recursos). */
+  icon?: 'guides' | 'glossary' | 'news';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -38,8 +40,8 @@ export { navColumns } from './nav-columns';
 export const megaNav: NavNode[] = [
   {
     id: 'coleccion-notofilia',
-    es: 'Colección Virtual Notafilia',
-    en: 'Virtual Notaphily Collection',
+    es: 'Colección Virtual - Notafilia',
+    en: 'Virtual Collection - Notaphily',
     href: NOTAFILIA_PATH,
     children: [
       {
@@ -168,9 +170,9 @@ export const megaNav: NavNode[] = [
     en: 'Resources',
     layout: 'horizontal',
     children: [
-      { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/' },
-      { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/' },
-      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/' },
+      { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
+      { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
+      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
     ],
   },
   {
