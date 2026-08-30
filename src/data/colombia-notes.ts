@@ -329,7 +329,7 @@ export const colombiaNotes: ColombiaNote[] = [
     chapterId: 'banco-nacional',
     path: `${COLOMBIA_PATH}1-peso-tolima-1901/`,
     pick: 'Cód. 1242',
-    serial: 'N.º 060.416',
+    serial: '060.416',
     signatures: {
       es: 'Sin firmas impresas',
       en: 'No printed signatures',
