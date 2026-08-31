@@ -7,7 +7,7 @@ export const POLIMERO_MUNDIAL_PATH = '/coleccion/polimero-mundial/';
 export const POLIMERO_EUROPA_PATH = '/coleccion/polimero-mundial/europa/';
 export const POLIMERO_INGLATERRA_PATH = '/coleccion/polimero-mundial/europa/inglaterra/';
 export const POLIMERO_AMERICA_DEL_NORTE_PATH = '/coleccion/polimero-mundial/america-del-norte/';
-export const POLIMERO_CANADA_PATH = '/coleccion/polimero-mundial/america-del-norte/canada/';
+export const POLIMERO_CANADA_PATH = '/coleccion/polimero-mundial/Canada/';
 
 const chinaPolymer = chinaChapters.find((chapter) => chapter.id === 'polimero');
 const chinaExhibit = chinaNotes[0];
@@ -150,7 +150,7 @@ export function polymerEnglandPath(locale: 'es' | 'en'): string {
 }
 
 export function polymerCanadaPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? '/en/collection/world-polymer/north-america/canada/' : POLIMERO_CANADA_PATH;
+  return locale === 'en' ? '/en/collection/world-polymer/Canada/' : POLIMERO_CANADA_PATH;
 }
 
 export const englandCopy = {
