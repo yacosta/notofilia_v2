@@ -60,7 +60,7 @@ describe('US Renci Pelé holding', () => {
     assert.match(data, /chapterId: 'us-pop-art'/);
     assert.match(data, /serial: 'F71235101A'/);
     assert.match(data, /Renci · 5\/200/);
-    assert.match(data, /no es Rency Punnoose/);
+    assert.match(data, /No debe confundirse con Rency Punnoose/);
     assert.match(data, /This is not Rency Punnoose/);
     assert.match(data, /Banksy/);
     assert.match(seriesPage, /viewRencyCase/);
