@@ -76,6 +76,13 @@ describe('US Rency pop-art case', () => {
     assert.match(rencyPage, /notesForChapter\('us-pop-art'\)/);
     assert.match(rencyPage, /t\.emptyHoldings/);
     assert.match(rencyPage, /id="main-content"/);
+    assert.match(rencyPage, /\/images\/catalog\/estados-unidos\/hero-rency\.jpg/);
+    assert.doesNotMatch(rencyPage, /united-states\.jpg/);
+    assert.doesNotMatch(rencyPage, /estados-unidos\.jpg/);
+    assert.match(data, /Siete latas LIFE SPRAY de pop art de Rency/);
+    assert.match(data, /Seven Rency LIFE SPRAY pop-art cans/);
+    assert.match(data, /firma RENCY/);
+    assert.match(data, /RENCY signature/);
     assert.match(seriesPage, /USA_RENCY_PATH/);
     assert.match(seriesPage, /t\.viewRencyCase/);
   });

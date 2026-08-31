@@ -477,7 +477,7 @@ export const rencySeriesCopy = {
     breadcrumbCurrent: 'Rency',
     parentLink: 'Estados Unidos',
     heroAlt:
-      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+      'Siete latas LIFE SPRAY de pop art de Rency sobre un billete de Estados Unidos, con la leyenda de neón «life is beautiful», el serial F 71235101 A y la firma RENCY',
     intro: [
       'Rency —de currency; en las piezas suele firmar en mayúsculas RENCY— es un artista de pop y street art estadounidense que interviene billetes auténticos. Trabaja de forma anónima. Las comparaciones con Banksy que aparecen en fichas de dealers son marketing, no un hecho documentado. No es Rency Punnoose, diseñador de otro oficio.',
       'El soporte es papel de curso legal, no un rediseño del BEP ni una emisión del Tesoro: sobre todo el 1 y el 2 dólares de la Reserva Federal. El 2 dólares FRN volvió en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de esa denominación se detuviera en 1966.',
@@ -502,7 +502,7 @@ export const rencySeriesCopy = {
     breadcrumbCurrent: 'Rency',
     parentLink: 'United States',
     heroAlt:
-      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+      'Seven Rency LIFE SPRAY pop-art cans on a United States note, with neon “life is beautiful” lettering, serial F 71235101 A, and the RENCY signature',
     intro: [
       'Rency — from currency; on these pieces the artist often signs in capitals RENCY — is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is marketing, not a documented fact. This is not Rency Punnoose, a designer in another field.',
       'The substrate is legal-tender paper, not a BEP redesign or a Treasury issue: chiefly the Federal Reserve $1 and $2. The $2 FRN returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the United States Note of that denomination had been halted in 1966.',
