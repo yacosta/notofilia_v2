@@ -10,14 +10,19 @@ const t = copy[locale];
 const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
 ---
 
-<div class="flex min-h-11 w-full justify-center">
-  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale}></div>
-  <noscript>
-    <a
-      href={deeplink}
-      class="inline-flex min-h-11 items-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
-    >
-      {t.preferredSource}
-    </a>
-  </noscript>
+<div class="flex w-full flex-col items-center gap-2">
+  <p class="m-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
+    {t.preferredSourceHeading}
+  </p>
+  <div class="flex min-h-11 w-full justify-center">
+    <div google-add-preferred-source-btn data-theme="dark" data-lang={locale}></div>
+    <noscript>
+      <a
+        href={deeplink}
+        class="inline-flex min-h-11 items-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
+      >
+        {t.preferredSource}
+      </a>
+    </noscript>
+  </div>
 </div>
