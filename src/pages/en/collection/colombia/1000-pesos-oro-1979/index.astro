@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('1000-pesos-oro-1979');
+if (!note) throw new Error('Missing Banco de la República 1,000 pesos oro 1979 catalog note');
+---
+
+<ColombiaNotePage locale="en" note={note} />
