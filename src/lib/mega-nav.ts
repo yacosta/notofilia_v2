@@ -36,8 +36,8 @@ export type NavNode = {
    * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (flag-icons 4x3).
    */
   flag?: string;
-  /** Decorative mark for non-country panel links (Recursos). */
-  icon?: 'guides' | 'glossary' | 'news';
+  /** Decorative mark for non-country panel links (Recursos and polymer continents). */
+  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -131,12 +131,13 @@ export const megaNav: NavNode[] = [
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
-        // Country children set `flag` (China `cn`, Malaysia `my`, England `gb`, Canada `ca`). Continents (Asia, Europe, North America) do not.
+        // Country children set `flag` (China `cn`, Malaysia `my`, England `gb`, Canada `ca`). Continents use a silhouette `icon` (asia, europe, north-america).
         children: [
           {
             id: 'polimero-asia',
             es: 'Asia',
             en: 'Asia',
+            icon: 'asia',
             children: [
               { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
               {
@@ -152,6 +153,7 @@ export const megaNav: NavNode[] = [
             id: 'polimero-europa',
             es: 'Europa',
             en: 'Europe',
+            icon: 'europe',
             children: [
               {
                 id: 'polimero-inglaterra',
@@ -166,6 +168,7 @@ export const megaNav: NavNode[] = [
             id: 'polimero-norteamerica',
             es: 'América del Norte',
             en: 'North America',
+            icon: 'north-america',
             children: [
               {
                 id: 'polimero-canada',
