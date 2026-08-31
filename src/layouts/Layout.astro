@@ -72,6 +72,7 @@ const siteJsonLd = websiteJsonLd(locale);
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify(siteJsonLd)} />
+    <script async is:inline src="https://news.google.com/swg/js/v1/publisher.js"></script>
     <slot name="head" />
   </head>
   <body class="m-0 min-h-full bg-bg font-serif text-[17px]/7 text-cream">

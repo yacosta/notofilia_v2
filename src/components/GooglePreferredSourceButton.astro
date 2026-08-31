@@ -1,0 +1,110 @@
+---
+import { copy, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = copy[locale];
+const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
+---
+
+<div class="google-preferred-source">
+  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale}></div>
+  <noscript>
+    <a
+      href={deeplink}
+      class="inline-flex min-h-11 items-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
+    >
+      {t.preferredSource}
+    </a>
+  </noscript>
+</div>
+
+<style>
+  /*
+    publisher.js sets the host to width:100% and the iframe to position:absolute
+    filling that host. The official pill is inline-flex at the left of the iframe
+    document, so a stretched iframe looks left-aligned in the footer. Keep the
+    official iframe, take it out of stretch mode, and size it to the measured
+    badge (es 246px / en 234px) so the pill and copyright share a center.
+  */
+  .google-preferred-source {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-preferred-source :global([google-add-preferred-source-btn]) {
+    display: flex !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    min-height: 60px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+  }
+
+  .google-preferred-source :global(iframe) {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    display: block !important;
+    max-width: 100% !important;
+    height: 60px !important;
+    margin-inline: auto !important;
+    border: 0 !important;
+  }
+
+  .google-preferred-source :global([data-lang='es'] iframe) {
+    width: min(100%, 246px) !important;
+  }
+
+  .google-preferred-source :global([data-lang='en'] iframe) {
+    width: min(100%, 234px) !important;
+  }
+</style>
+
+<script>
+  const iframeWidthByLang: Record<string, string> = {
+    es: '246px',
+    en: '234px',
+  };
+
+  function lockPreferredSourceFrame(root: Element) {
+    const host = root.querySelector('[google-add-preferred-source-btn]');
+    if (!(host instanceof HTMLElement)) return;
+
+    const apply = () => {
+      host.style.setProperty('width', 'max-content', 'important');
+      host.style.setProperty('max-width', '100%', 'important');
+      host.style.setProperty('margin-inline', 'auto', 'important');
+
+      const iframe = host.querySelector('iframe');
+      if (!(iframe instanceof HTMLIFrameElement)) return;
+      const lang = host.getAttribute('data-lang') || 'es';
+      const width = iframeWidthByLang[lang] ?? iframeWidthByLang.es;
+      iframe.style.setProperty('position', 'relative', 'important');
+      iframe.style.setProperty('inset', 'auto', 'important');
+      iframe.style.setProperty('top', 'auto', 'important');
+      iframe.style.setProperty('right', 'auto', 'important');
+      iframe.style.setProperty('bottom', 'auto', 'important');
+      iframe.style.setProperty('left', 'auto', 'important');
+      iframe.style.setProperty('display', 'block', 'important');
+      iframe.style.setProperty('width', `min(100%, ${width})`, 'important');
+      iframe.style.setProperty('height', '60px', 'important');
+      iframe.style.setProperty('margin-inline', 'auto', 'important');
+    };
+
+    apply();
+    new MutationObserver(apply).observe(host, { childList: true, subtree: true, attributes: true });
+  }
+
+  document.querySelectorAll('.google-preferred-source').forEach(lockPreferredSourceFrame);
+</script>

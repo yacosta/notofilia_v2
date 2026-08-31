@@ -1,5 +1,6 @@
 ---
 import NewWindowHint from './NewWindowHint.astro';
+import GooglePreferredSourceButton from './GooglePreferredSourceButton.astro';
 import {
   copy,
   footerAbout,
@@ -94,6 +95,7 @@ function itemLabel(item: FooterLink) {
     </nav>
 
     <div class="flex flex-col items-center gap-2 border-t border-line pt-8 text-center">
+      <GooglePreferredSourceButton locale={locale} />
       <span class="font-sans text-[13px] tracking-[0.04em] text-cream-soft">{t.copyright}</span>
       <span class="max-w-full font-sans italic text-[15px] text-cream-dim">{t.ownership}</span>
       <p class="m-0 mt-2 max-w-full text-center font-sans text-[14px]/5 text-cream-soft">
