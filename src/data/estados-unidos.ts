@@ -2138,6 +2138,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       },
     ],
   },
+  {
     id: 'renci-trump-never-surrender',
     chapterId: 'us-pop-art',
     path: '/coleccion/estados-unidos/rency/trump-never-surrender/',
