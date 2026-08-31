@@ -5,7 +5,6 @@ import { englandNotes } from '../data/england-polymer';
 import { malaysiaNotes } from '../data/malaysia-polymer';
 import { colombiaNotes, notePieces } from '../data/colombia-notes';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
-import { COLOMBIA_NOTES_CATALOG_PATH, noteCatalogCopy } from '../data/colombia-type-catalog';
 import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-coin-type-catalog';
 import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
 import { unitedStatesNotes } from '../data/estados-unidos';
@@ -306,11 +305,6 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: NOTAFILIA_NOTES_CATALOG_PATH,
       title: { es: collectionNoteCatalogCopy.es.title, en: collectionNoteCatalogCopy.en.title },
       dek: { es: collectionNoteCatalogCopy.es.dek, en: collectionNoteCatalogCopy.en.dek },
-    },
-    {
-      href: COLOMBIA_NOTES_CATALOG_PATH,
-      title: { es: noteCatalogCopy.es.title, en: noteCatalogCopy.en.title },
-      dek: { es: noteCatalogCopy.es.dek, en: noteCatalogCopy.en.dek },
     },
     {
       href: COLOMBIA_COIN_CATALOG_PATH,

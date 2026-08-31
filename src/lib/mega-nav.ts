@@ -1,6 +1,5 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
-import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
@@ -67,12 +66,6 @@ export const megaNav: NavNode[] = [
         href: COLOMBIA_PATH,
         flag: 'co',
         children: [
-          {
-            id: 'colombia-catalogo',
-            es: 'Catálogo visual · Colombia',
-            en: 'Visual catalog · Colombia',
-            href: COLOMBIA_NOTES_CATALOG_PATH,
-          },
           {
             id: 'emisiones-extranjero-guatemala',
             es: 'Guatemala (Emisiones en el Extranjero)',
