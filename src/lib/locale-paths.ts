@@ -83,6 +83,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/mpc-vietnam/'],
   },
   {
+    es: '/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
+    en: '/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
+    aliases: ['/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/'],
+  },
+  {
     es: '/coleccion/estados-unidos/miscelaneos/',
     en: '/collection/united-states/miscellaneous/',
     aliases: ['/coleccion/united-states/miscellaneous/'],
@@ -221,6 +226,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     '/en/coleccion/estados-unidos/miscelaneos/',
     '/en/coleccion/estados-unidos/mpc-vietnam/',
     '/en/coleccion/estados-unidos/',
@@ -228,6 +234,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/',
     '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
     '/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     '/en/coleccion/united-states/miscellaneous/',
     '/en/coleccion/united-states/mpc-vietnam/',
     '/en/coleccion/united-states/',

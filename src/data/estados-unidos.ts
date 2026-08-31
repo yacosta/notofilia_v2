@@ -164,12 +164,12 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Miscellaneous',
     },
     lead: {
-      es: 'Notas de prueba, scrip conmemorativo y otras emisiones que no caben en las series federales ni en el pop art.',
-      en: 'Test notes, commemorative scrip, and other issues that sit outside the federal series and pop art.',
+      es: 'Papel marcado en circulación, notas de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
+      en: 'Marked circulating paper, test notes, commemorative scrip, and other pieces that sit outside the federal series and pop art.',
     },
     body: {
-      es: 'Fuera del papel de curso legal y de las intervenciones contemporáneas sobre el 2 dólares, la colección reúne piezas que no forman una serie propia: notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. No son moneda de circulación ni arte sobre FRN: son documentos de imprenta, recuerdo o propaganda. Las fichas se publicarán aquí a medida que se fotografíen.',
-      en: 'Outside circulating paper and the contemporary interventions on the $2, the collection holds pieces that do not form a series of their own: BEP Giori test notes, commemorative scrip, and promotional issues. They are not circulating currency and not art on FRNs: they are printing documents, souvenirs, or advertising. Note pages will be published here as they are photographed.',
+      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 2 dólares, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para Where’s George?, notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. El 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, ya tiene ficha: sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $2, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for Where’s George?, BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C, already has a note page: it remains legal tender, but the red stamps document it as a circulation-tracking object, not as a type FRN. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -249,7 +249,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, y el 1 dólar certificado de plata serie 1957 B, serial S35513454A. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -268,7 +268,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, and the Series 1957-B $1 Silver Certificate, serial S35513454A, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -281,6 +281,94 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_PATH, locale);
 }
 
+export function miscSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_MISC_PATH, locale);
+}
+
+export const miscSeriesCopy = {
+  es: {
+    metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
+    metaDescription:
+      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C, y otras piezas fuera de las series federales.',
+    kicker: 'Estados Unidos · Misceláneos',
+    title: 'Fuera de las series federales',
+    breadcrumbCurrent: 'Misceláneos',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 2 dólares: un Federal Reserve Note marcado para un seguimiento de circulación, y más adelante notas de prueba, scrip y emisiones promocionales.',
+      'Where’s George? es un sitio web que registra el recorrido geográfico del papel moneda de Estados Unidos. Lo lanzó Hank Eskin el 23 de diciembre de 1998. El nombre apunta al retrato de George Washington en el 1 dólar. Quien tiene un billete anota la denominación, la serie, el número de serie y el código postal. Si otra persona vuelve a introducir el mismo serial, el sitio registra un «hit»: ciudad, distancia y tiempo de viaje. El propio FAQ dice que existe «por diversión y porque nadie lo había hecho». Las reglas piden circulación natural: gastar el billete en la vida cotidiana, no enviarlo por correo ni pasarlo a conocidos para fabricar hits.',
+      'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Las demás piezas se publicarán a medida que se fotografíen.',
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Fuentes',
+    holdingsLabel: 'En esta vitrina',
+  },
+  en: {
+    metaTitle: 'United States · Miscellaneous | Notofilia',
+    metaDescription:
+      'United States miscellaneous case: the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and other pieces outside the federal series.',
+    kicker: 'United States · Miscellaneous',
+    title: 'Outside the federal series',
+    breadcrumbCurrent: 'Miscellaneous',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'This case holds United States paper that does not belong in the federal series or in pop art on the $2: a Federal Reserve Note marked for circulation tracking, and later test notes, scrip, and promotional issues.',
+      'Where’s George? is a website that records the geographic path of United States paper money. Hank Eskin launched it on 23 December 1998. The name points to George Washington’s portrait on the $1. Anyone holding a note enters the denomination, series, serial number, and ZIP code. When someone else later enters the same serial, the site logs a “hit”: city, distance, and travel time. The FAQ says the site exists “for fun and because it had not been done yet.” The rules ask for natural circulation: spend the note in everyday life; do not mail it or pass it to acquaintances in order to manufacture hits.',
+      'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Further pieces will be published as they are photographed.',
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Sources',
+    holdingsLabel: 'In this case',
+  },
+} as const;
+
+export const miscSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://www.wheresgeorge.com/',
+    es: 'Where’s George? — sitio oficial',
+    en: 'Where’s George? — official site',
+    note: {
+      es: 'Seguimiento de serial y código postal; un hit es una reentrada posterior del mismo billete.',
+      en: 'Serial and ZIP tracking; a hit is a later re-entry of the same note.',
+    },
+  },
+  {
+    href: 'https://www.wheresgeorge.com/faq-rules-privacy.php',
+    es: 'Where’s George? — FAQ y reglas',
+    en: 'Where’s George? — FAQ and rules',
+    note: {
+      es: 'Lanzamiento el 23 de diciembre de 1998; circulación natural; el sitio existe «por diversión y porque nadie lo había hecho».',
+      en: 'Launched 23 December 1998; natural circulation; the site exists “for fun and because it had not been done yet.”',
+    },
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Where%27s_George%3F',
+    es: 'Wikipedia — Where’s George?',
+    en: 'Wikipedia — Where’s George?',
+    note: {
+      es: 'Hank Eskin; el 1 dólar es la denominación más registrada; los datos se han usado para estudiar la movilidad.',
+      en: 'Hank Eskin; the $1 is the most recorded denomination; the data have been used to study mobility.',
+    },
+  },
+  {
+    href: 'https://www.nature.com/articles/nature04292',
+    es: 'Brockmann, Hufnagel y Geisel — The scaling laws of human travel (Nature, 2006)',
+    en: 'Brockmann, Hufnagel and Geisel — The scaling laws of human travel (Nature, 2006)',
+    note: {
+      es: 'Usan el registro de Where’s George? como proxy del desplazamiento humano en Estados Unidos.',
+      en: 'Uses the Where’s George? register as a proxy for human travel in the United States.',
+    },
+  },
+];
+
 export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
@@ -290,7 +378,8 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934a-chicago'
   | '10-dolares-serie-1934a-cleveland'
   | '10-dolares-serie-1934d-richmond'
-  | '1-dolar-certificado-plata-1957b';
+  | '1-dolar-certificado-plata-1957b'
+  | '1-dolar-serie-2006-dallas-wheres-george';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -1382,11 +1471,150 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       },
     ],
   },
+  {
+    id: '1-dolar-serie-2006-dallas-wheres-george',
+    chapterId: 'us-miscelaneos',
+    path: '/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
+    pathEn: '/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
+    pick: 'P#523a · Fr. 1933-K',
+    serial: 'K46602688C',
+    signatures: {
+      es: 'Anna Escobedo Cabral (tesorera) y Henry M. Paulson, Jr. (secretario del Tesoro)',
+      en: 'Anna Escobedo Cabral (Treasurer) and Henry M. Paulson, Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'BEP. USPaperMoney.Info sitúa la serie 2006 del 1 dólar entre marzo de 2007 y noviembre de 2010 (firmas Cabral–Paulson). Dallas imprimió 569.600.000 notas ordinarias en seis bloques. El serial K46602688C (bloque KC) cae en la producción de marzo de 2008 de ese distrito. Esta ficha no inventa una tirada solo para el bloque KC.',
+      en: 'BEP. USPaperMoney.Info places Series 2006 $1 notes from March 2007 through November 2010 (Cabral–Paulson signatures). Dallas printed 569,600,000 regular notes in six blocks. Serial K46602688C (KC block) falls in that district’s March 2008 production. This record does not invent a printage for the KC block alone.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-2006-1-dallas-k46602688-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-2006-1-dallas-k46602688-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-2006-1-dallas-k46602688-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '1 dólar · Serie 2006 · Dallas · Where’s George?',
+      en: '$1 · Series 2006 · Dallas · Where’s George?',
+    },
+    kicker: {
+      es: 'Estados Unidos · Misceláneos · Where’s George?',
+      en: 'United States · Miscellaneous · Where’s George?',
+    },
+    lead: {
+      es: 'Federal Reserve Note de 1 dólar, serie 2006, distrito de Dallas (K / 11), serial K46602688C, con sellos rojos de Where’s George? para seguir su circulación.',
+      en: 'A Series 2006 $1 Federal Reserve Note of the Dallas district (K / 11), serial K46602688C, with red Where’s George? stamps that ask finders to track its circulation.',
+    },
+    description: {
+      es: 'El 1 dólar de la serie 2006 (Pick 523a, Friedberg 1933-K) es un Federal Reserve Note de tamaño pequeño del distrito de Dallas: sello negro con la K, el 11 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF DALLAS TEXAS». El anverso, en negro con sello y seriales verdes, lleva el retrato de George Washington en óvalo y, a la derecha, el sello del Tesoro sobre ONE. Las firmas son las de Anna Escobedo Cabral y Henry M. Paulson, Jr.; la serie impresa, 2006, queda junto al secretario. Los seriales K 46602688 C se repiten abajo a la izquierda y arriba a la derecha (bloque KC). El reverso, en verde, muestra ambas caras del Gran Sello —la pirámide y el águila— flanqueando ONE, con IN GOD WE TRUST encima. Sobre ese tipo cotidiano, un tenedor anterior aplicó sellos en tinta roja que no son del BEP ni del Tesoro: a la derecha del retrato, un sello circular «Track this bill» / www.wheresgeorge.com; junto a él, «Currency Circulation Study / FM B 70»; a la izquierda, un pictograma de pavo; en los márgenes del reverso, «FOLLOW MY JOURNEY AT» y www.WHERESGEORGE.com en vertical. Esta pieza de la colección, circulada y sin encapsular, se presenta en funda, con manchas de foxing en los bordes. No es el 1 dólar de 2003 de Atlanta con estrella, serial F05033622★: los distinguen la serie 2006, el distrito K / 11, las firmas Cabral–Paulson, este serial y los sellos.',
+      en: 'The Series 2006 $1 (Pick 523a, Friedberg 1933-K) is a small-size Federal Reserve Note of the Dallas district: a black seal with K, 11s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF DALLAS TEXAS.” The black face with green seal and serials carries George Washington in an oval and, at right, the Treasury seal over ONE. The signatures are Anna Escobedo Cabral and Henry M. Paulson, Jr.; the printed series, 2006, sits beside the Secretary. Serials K 46602688 C repeat at lower left and upper right (KC block). The green back shows both faces of the Great Seal — the pyramid and the eagle — flanking ONE, with IN GOD WE TRUST above. On that everyday type a previous holder applied red-ink stamps that are neither BEP nor Treasury work: to the right of the portrait, a circular “Track this bill” / www.wheresgeorge.com stamp; beside it, “Currency Circulation Study / FM B 70”; at left, a turkey pictogram; on the back margins, vertical “FOLLOW MY JOURNEY AT” and www.WHERESGEORGE.com. This collection piece, circulated and unslabbed, is shown in a sleeve, with foxing along the edges. It is not the Series 2003 Atlanta star $1, serial F05033622★: Series 2006, district K / 11, Cabral–Paulson signatures, this serial, and the stamps distinguish it.',
+    },
+    history: [
+      {
+        es: 'Where’s George? es un proyecto web que sigue el recorrido geográfico del papel moneda de Estados Unidos. Hank Eskin, consultor de bases de datos en Brookline, Massachusetts, lo puso en marcha el 23 de diciembre de 1998. El nombre apunta a Washington en el 1 dólar, aunque el sitio acepta también 2, 5, 10, 20, 50 y 100 dólares; el 1 concentra la mayor parte de las entradas. El mecanismo es deliberadamente simple: se anotan denominación, serie, número de serie y código postal. Si más adelante otra persona introduce el mismo serial, el sitio registra un hit —ciudad, distancia y tiempo de viaje—. El FAQ oficial responde a «¿por qué existe este sitio?» con «por diversión y porque nadie lo había hecho».',
+        en: 'Where’s George? is a web project that follows the geographic path of United States paper money. Hank Eskin, a database consultant in Brookline, Massachusetts, launched it on 23 December 1998. The name points to Washington on the $1, though the site also accepts $2, $5, $10, $20, $50, and $100 notes; the $1 accounts for most entries. The mechanism is deliberately simple: enter denomination, series, serial number, and ZIP code. If someone later enters the same serial, the site logs a hit — city, distance, and travel time. The official FAQ answers “Why does this site exist?” with “for fun and because it had not been done yet.”',
+      },
+      {
+        es: 'El punto del sitio es documentar la circulación natural, no fabricar recorridos. Las reglas piden gastar el billete en la vida cotidiana y prohíben enviarlo por correo o pasarlo a conocidos para generar hits. Los sellos y la escritura en el papel —como los de esta pieza— son el reclamo para que el siguiente tenedor visite wheresgeorge.com e introduzca el serial. En 2006, Dirk Brockmann, Lars Hufnagel y Theo Geisel usaron ese registro en Nature como proxy del desplazamiento humano en Estados Unidos. Esta ficha describe el objeto físico y el proyecto; no republica el mapa de hits del serial K46602688C.',
+        en: 'The point of the site is to document natural circulation, not to manufacture itineraries. The rules ask users to spend the note in everyday life and forbid mailing it or passing it to acquaintances in order to generate hits. Stamps and writing on the paper — as on this piece — are the prompt for the next holder to visit wheresgeorge.com and enter the serial. In 2006 Dirk Brockmann, Lars Hufnagel, and Theo Geisel used that register in Nature as a proxy for human travel in the United States. This record describes the physical object and the project; it does not republish the hit map for serial K46602688C.',
+      },
+    ],
+    historyHeading: {
+      es: 'Where’s George?',
+      en: 'Where’s George?',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar, serie 2006, distrito de Dallas, serial K46602688C: Washington, sello verde del Tesoro y sellos rojos de Where’s George?.',
+      en: 'Face of the Series 2006 $1, Dallas district, serial K46602688C: Washington, the green Treasury seal, and red Where’s George? stamps.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 dólar, serie 2006: el Gran Sello y, en los márgenes, FOLLOW MY JOURNEY AT / www.WHERESGEORGE.com.',
+      en: 'Back of the Series 2006 $1: the Great Seal and, in the margins, FOLLOW MY JOURNEY AT / www.WHERESGEORGE.com.',
+    },
+    scarcity: {
+      es: 'La serie 2006 del 1 dólar —firmas Cabral–Paulson, los doce distritos— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-523a. Fr. 1933-K cubre Dallas. El tipo es común; Dallas imprimió 569.600.000 notas ordinarias en esa serie. El interés de esta pieza no es la rareza del FRN, sino los sellos de Where’s George? sobre un serial ordinario. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 2006 $1 notes — Cabral–Paulson signatures, all twelve districts — were everyday Reserve paper. The Bank Note Museum numbers the type P-523a. Fr. 1933-K is Dallas. The type is common; Dallas printed 569,600,000 regular notes in the series. This piece’s interest is not FRN scarcity but the Where’s George? stamps on an ordinary serial. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial K46602688C. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial K46602688C has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular, en funda (colección privada)',
+      en: 'Circulated, unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.wheresgeorge.com/',
+        es: 'Where’s George? — sitio oficial',
+        en: 'Where’s George? — official site',
+        note: {
+          es: 'Introducir denominación, serie, serial y código postal; un hit es una reentrada posterior.',
+          en: 'Enter denomination, series, serial, and ZIP code; a hit is a later re-entry.',
+        },
+      },
+      {
+        href: 'https://www.wheresgeorge.com/faq-rules-privacy.php',
+        es: 'Where’s George? — FAQ y reglas',
+        en: 'Where’s George? — FAQ and rules',
+        note: {
+          es: '23 de diciembre de 1998; circulación natural; «por diversión y porque nadie lo había hecho».',
+          en: '23 December 1998; natural circulation; “for fun and because it had not been done yet.”',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Where%27s_George%3F',
+        es: 'Wikipedia — Where’s George?',
+        en: 'Wikipedia — Where’s George?',
+        note: {
+          es: 'Hank Eskin; el 1 dólar concentra la mayoría de las entradas.',
+          en: 'Hank Eskin; the $1 accounts for most entries.',
+        },
+      },
+      {
+        href: 'https://www.nature.com/articles/nature04292',
+        es: 'Brockmann, Hufnagel y Geisel — The scaling laws of human travel (Nature, 2006)',
+        en: 'Brockmann, Hufnagel and Geisel — The scaling laws of human travel (Nature, 2006)',
+        note: {
+          es: 'El registro de Where’s George? como proxy del desplazamiento humano.',
+          en: 'The Where’s George? register as a proxy for human travel.',
+        },
+      },
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0523.htm',
+        es: 'Bank Note Museum — P-523, 1 dólar Federal Reserve Note, serie 2006',
+        en: 'Bank Note Museum — P-523, Series 2006 $1 Federal Reserve Note',
+        note: {
+          es: 'P-523a: serie 2006, firmas Cabral y Paulson; distrito K = Dallas.',
+          en: 'P-523a: Series 2006, Cabral and Paulson signatures; district K = Dallas.',
+        },
+      },
+      {
+        href: 'https://www.uspapermoney.info/serials/f2006_s.html',
+        es: 'USPaperMoney.Info — Series 2006 $1, rangos de serial',
+        en: 'USPaperMoney.Info — Series 2006 $1 serial ranges',
+        note: {
+          es: 'Dallas: 569.600.000 ordinarias en seis bloques. Marzo de 2008 incluye el bloque KC.',
+          en: 'Dallas: 569,600,000 regular notes in six blocks. March 2008 includes the KC block.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/1',
+        es: 'U.S. Currency Education Program — 1 dólar',
+        en: 'U.S. Currency Education Program — $1',
+        note: {
+          es: 'Washington en el 1 dólar desde 1869; ambas caras del Gran Sello en el reverso desde 1935.',
+          en: 'Washington on the $1 since 1869; both faces of the Great Seal on the back since 1935.',
+        },
+      },
+    ],
+  },
 ];
 
 export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
+    miscLink: 'Misceláneos',
     collectionLink: 'Estados Unidos',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
@@ -1406,6 +1634,7 @@ export const notePageCopy = {
   },
   en: {
     seriesLink: 'United States',
+    miscLink: 'Miscellaneous',
     collectionLink: 'United States',
     frontHeading: 'Face',
     backHeading: 'Back',
@@ -1431,6 +1660,11 @@ export function noteById(id: string): UnitedStatesNote | undefined {
 
 export function notePath(note: UnitedStatesNote, locale: 'es' | 'en'): string {
   return localizePath(note.path, locale);
+}
+
+export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): string {
+  if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
+  return `${seriesPath(locale)}#${note.chapterId}`;
 }
 
 export function notesForChapter(chapterId: UnitedStatesChapterId): UnitedStatesNote[] {

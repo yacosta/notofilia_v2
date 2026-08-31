@@ -6,8 +6,10 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import {
   notePageCopy,
   notePath,
+  noteSeriesHref,
   seriesPath,
   seriesSources,
+  USA_MISC_PATH,
   type UnitedStatesNote,
 } from '../../data/estados-unidos';
 import SourceList from './SourceList.astro';
@@ -79,6 +81,9 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
         items={[
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: seriesPath(locale), label: t.seriesLink },
+          ...(note.chapterId === 'us-miscelaneos'
+            ? [{ href: localizePath(USA_MISC_PATH, locale), label: t.miscLink }]
+            : []),
           { label: note.title[locale] },
         ]}
       />
@@ -194,10 +199,10 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
 
       <p class="mt-12">
         <a
-          href={`${seriesPath(locale)}#${note.chapterId}`}
+          href={noteSeriesHref(note, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          ← {t.seriesLink}
+          ← {note.chapterId === 'us-miscelaneos' ? t.miscLink : t.seriesLink}
         </a>
       </p>
     </article>
