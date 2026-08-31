@@ -83,6 +83,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/mpc-vietnam/'],
   },
   {
+    es: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    en: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+    aliases: ['/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/'],
+  },
+  {
     es: '/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     en: '/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     aliases: ['/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/'],
@@ -226,6 +231,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     '/en/coleccion/estados-unidos/miscelaneos/',
     '/en/coleccion/estados-unidos/mpc-vietnam/',
@@ -234,6 +240,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/',
     '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
     '/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     '/en/coleccion/united-states/miscellaneous/',
     '/en/coleccion/united-states/mpc-vietnam/',
