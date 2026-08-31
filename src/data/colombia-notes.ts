@@ -11,6 +11,7 @@ export type ColombiaNoteId =
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
   | '10-pesos-oro-1976'
+  | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '2000-pesos-2008'
   | '20000-pesos-2017'
@@ -964,6 +965,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 199 y 201 para la reposición del 20 de julio de 1976; esos H# no se sustituyen por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 199 and 201 for the 20 July 1976 replacement; those H# are not replaced by 2023 Cód. numbers.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1000-pesos-oro-1979',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1000-pesos-oro-1979/`,
+    pick: 'P# 421a · TBB B963a',
+    serial: '067682258',
+    signatures: {
+      es: 'Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario)',
+      en: 'Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 1.º de abril de 1979. Formato publicado: 140 × 70 mm. Nueve dígitos, sin letra de serie; González White 2019 anota que solo se usaron ocho y que las numeraciones ordinarias empiezan por uno o dos ceros. Numera esta fecha BG# 411 (p. 105): emisión 70.000.000. El serial 067682258 cae en ese tramo y no lleva el prefijo R de la reposición BG# 412. Las tablas BanRep de 1979 no publican un total de 1.000 pesos (esa columna empieza en 1988); el total de 254,75 millones de ese año cubre 5, 10 y 20 pesos. Esta ficha no sustituye la emisión BG# por ese total de denominación-año.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 April 1979. Published size: 140 × 70 mm. Nine digits, no series letter; González White 2019 notes that only eight were used and that ordinary numbers start with one or two zeros. He numbers this date BG# 411 (p. 105): emisión 70,000,000. Serial 067682258 falls in that range and does not carry the R prefix of replacement BG# 412. BanRep’s 1979 tables publish no 1,000-peso total (that column begins in 1988); the year’s 254.75 million covers 5-, 10-, and 20-peso notes. This record does not replace the BG# emisión with that denomination-year total.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-composite.jpg',
+      front: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-front.jpg',
+      back: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-back.jpg',
+    },
+    title: {
+      es: '1.000 pesos oro · Banco de la República · 1979',
+      en: '1,000 pesos oro · Banco de la República · 1979',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Mil pesos oro de circulación, Pick 421a: primera fecha de la denominación, 1.º de abril de 1979, serial de nueve dígitos 067682258. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A circulating one-thousand-peso oro, Pick 421a: first date of the denomination, 1 April 1979, nine-digit serial 067682258. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York el primer mil pesos oro de su historia. González White 2019 sitúa esa novedad en 1979: retrato del comunero José Antonio Galán al anverso y el Palacio de Nariño al reverso. El Bank Note Museum numera el tipo Pick 421 en la sola fecha 01.04.1979; Numista, N# 237007 (P# 421a / TBB B963a; Hernández 408). El anverso, en marrón y verde sobre fondo policromado, lleva a la derecha el retrato de Galán —con el nombre bajo el óvalo— y a la izquierda el recuadro de marca de agua. Al centro, la promesa de pagar al portador mil pesos oro. Los seriales van en negro: 067682258, una vez a media altura a la izquierda y otra sobre el pecho del retrato. Nueve cifras, con cero inicial: el catálogo colombiano advierte que las ordinarias empiezan por uno o dos ceros y que las reposiciones llevan R y tres ceros. La fecha impresa es «1° DE ABRIL DE 1979» bajo «COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). El reverso, en gris y negro sobre fondo claro, muestra el Palacio de Nariño, el sello del banco con la Libertad y el pie «AMERICAN BANK NOTE COMPANY.». González White describe el papel casi blanco, fallas técnicas y un retiro temprano; no debe confundirse con el mil de Bolívar de Thomas De La Rue (Pick 424), ni con el Gaitán posterior, ni con la reposición R (Pick 421r / TBB B963az; Hernández 409; BG# 412). Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República ordered from the American Bank Note Company in New York the first one-thousand-peso oro in its history. González White 2019 places that novelty in 1979: the Comunero José Antonio Galán on the face and the Palacio de Nariño on the back. The Bank Note Museum numbers Pick 421 on the single date 01.04.1979; Numista, N# 237007 (P# 421a / TBB B963a; Hernández 408). The face, brown and green on a multicolour underprint, carries Galán’s portrait at right — named under the oval — and the watermark panel at left. At center is the promise to pay the bearer one thousand gold pesos. The serials are in black: 067682258, once at mid-left and once across the portrait. Nine digits, with a leading zero: the Colombian catalogue notes that ordinary numbers start with one or two zeros and that replacements carry R and three zeros. The printed date is “1° DE ABRIL DE 1979” under “COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). The back, grey and black on a pale ground, shows the Palacio de Nariño, the bank’s Liberty seal, and the imprint “AMERICAN BANK NOTE COMPANY.” González White describes the nearly white paper, technical faults, and an early withdrawal; it should not be confused with Thomas De La Rue’s Bolívar 1,000 (Pick 424), with the later Gaitán type, or with the R replacement (Pick 421r / TBB B963az; Hernández 409; BG# 412). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 pesos oro, Pick 421a: José Antonio Galán, serial 067682258 y fecha 1.º de abril de 1979.',
+      en: 'Face of the 1,000 pesos oro, Pick 421a: José Antonio Galán, serial 067682258, and the date 1 April 1979.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 pesos oro, Pick 421a: Palacio de Nariño, sello del banco y pie de la American Bank Note Company.',
+      en: 'Back of the 1,000 pesos oro, Pick 421a: Palacio de Nariño, the bank seal, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 411, p. 105) publica 70.000.000 de ejemplares para el 1.º de abril de 1979, nueve dígitos sin serie, y marca ¿? la reposición R (BG# 412). El Bank Note Museum describe el Pick 421 como esa fecha del mil pesos oro ABNC: Galán al anverso, Palacio de Nariño al reverso. Numista agrupa el diseño bajo N# 237007, índice de rareza 48, y marca la frecuencia del ejemplar de circulación en un 94 % entre quienes poseen el tipo; la reposición aparece en 0 %. No es prueba ni espécimen. Esta ficha no sustituye esa emisión BG# por un total BanRep de denominación-año.',
+      en: 'González White 2019 (BG# 411, p. 105) publishes 70,000,000 notes for 1 April 1979, nine digits with no series letter, and marks the R replacement (BG# 412) ¿?. The Bank Note Museum describes Pick 421 as that date of the ABNC 1,000 pesos oro: Galán on the face, Palacio de Nariño on the back. Numista groups the design under N# 237007, rarity index 48, and marks the circulating note’s frequency at 94% among owners of the type; the replacement appears at 0%. It is neither a proof nor a specimen. This record does not replace that BG# emisión with a BanRep denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 067682258. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 067682258 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0421.htm',
+        es: 'Bank Note Museum — Colombia P-421, 1.000 pesos oro (01.04.1979)',
+        en: 'Bank Note Museum — Colombia P-421, 1,000 pesos oro (01.04.1979)',
+        note: {
+          es: '421a: 01.04.1979; anverso José Antonio Galán, reverso Palacio de Nariño; ABNC.',
+          en: '421a: 01.04.1979; José Antonio Galán on the face, Palacio de Nariño on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note237007.html',
+        es: 'Numista — Colombia 1.000 pesos oro, N# 237007',
+        en: 'Numista — Colombia 1,000 pesos oro, N# 237007',
+        note: {
+          es: '01.04.1979: P# 421a / TBB B963a; Hernández 408; firmas RGQ y FJO; 140 × 70 mm; frecuencia 94 % en el tipo.',
+          en: '01.04.1979: P# 421a / TBB B963a; Hernández 408; signatures RGQ and FJO; 140 × 70 mm; 94% frequency within the type.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-1-000-pesos-oro-1979-p-421a.html',
+        es: 'Banknote World — Colombia 1.000 pesos oro 1979, P-421a',
+        en: 'Banknote World — Colombia 1,000 pesos oro 1979, P-421a',
+        note: {
+          es: '01.04.1979; ABNC; 140 × 70 mm; hilo de seguridad BRC; Galán y Palacio de Nariño.',
+          en: '01.04.1979; ABNC; 140 × 70 mm; BRC security thread; Galán and Palacio de Nariño.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 408 para el ejemplar de circulación del 1.º de abril de 1979; ese H# no se sustituye por el Cód. de 2023.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 408 for the 1 April 1979 circulating note; that H# is not replaced by a 2023 Cód.',
         },
       },
     ],
