@@ -136,6 +136,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/', 'en'),
+      '/en/collection/united-states/rency/life-is-beautiful-life-spray/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/rency/trump-never-surrender/', 'en'),
       '/en/collection/united-states/rency/trump-never-surrender/',
     );
@@ -334,6 +338,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/'],
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/'],
+      '/en/collection/united-states/rency/life-is-beautiful-life-spray/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/trump-never-surrender/'],
