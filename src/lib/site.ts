@@ -415,6 +415,8 @@ const dedicatedEs = [
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_MISC_PATH.replace(/^\/|\/$/g, ''),
+  USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),

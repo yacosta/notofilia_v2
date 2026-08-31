@@ -124,6 +124,7 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 - [Colombia visual banknote catalog](${SITE_URL}/coleccion/colombia/catalogo/): ${SITE_URL}/en/collection/colombia/catalog/
 - [Colombia visual coin catalog](${SITE_URL}/coleccion/colombia-numismatica/catalogo/): ${SITE_URL}/en/collection/colombia-numismatics/catalog/
 - [United States / Estados Unidos](${SITE_URL}/coleccion/estados-unidos/): ${SITE_URL}/en/collection/united-states/
+- [United States miscellaneous / Misceláneos](${SITE_URL}/coleccion/estados-unidos/miscelaneos/): ${SITE_URL}/en/collection/united-states/miscellaneous/
 - [Editorial policy](${SITE_URL}/editorial/): ${SITE_URL}/en/editorial/
 - [About / Acerca de](${SITE_URL}/acerca-de/): ${SITE_URL}/en/about/
 - [Contact / Contacto](${SITE_URL}/contacto/): ${SITE_URL}/en/contact/
