@@ -2,6 +2,7 @@ import type { CatalogSource, LocalizedText } from './catalog';
 import { chinaNotes, notePath as chinaNotePath } from './china';
 import { canadaNotes, notePath as canadaNotePath } from './canada-polymer';
 import { englandNotes, notePath as englandNotePath } from './england-polymer';
+import { malaysiaNotes, notePath as malaysiaNotePath } from './malaysia-polymer';
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
@@ -23,6 +24,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   US: { es: 'Estados Unidos', en: 'United States' },
   PH: { es: 'Filipinas', en: 'Philippines' },
   CN: { es: 'China', en: 'China' },
+  MY: { es: 'Malasia', en: 'Malaysia' },
   GB: { es: 'Inglaterra', en: 'England' },
   CA: { es: 'Canadá', en: 'Canada' },
 };
@@ -194,6 +196,24 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of malaysiaNotes) {
+    seeds.push({
+      id: `my-${note.id}`,
+      country: 'MY',
+      href: malaysiaNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '2012',
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   return seeds;
 }
 
@@ -245,6 +265,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'us',
   'ph',
   'cn',
+  'my',
   'gb',
   'ca',
   'pending',
@@ -297,6 +318,7 @@ export const collectionNoteCatalogCopy = {
       us: 'Estados Unidos',
       ph: 'Filipinas',
       cn: 'China',
+      my: 'Malasia',
       gb: 'Inglaterra',
       ca: 'Canadá',
       pending: 'Sin imagen',
@@ -348,6 +370,7 @@ export const collectionNoteCatalogCopy = {
       us: 'United States',
       ph: 'Philippines',
       cn: 'China',
+      my: 'Malaysia',
       gb: 'England',
       ca: 'Canada',
       pending: 'No image',

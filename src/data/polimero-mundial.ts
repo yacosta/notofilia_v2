@@ -2,8 +2,11 @@ import type { CatalogSource, LocalizedText } from './catalog';
 import { CHINA_PATH, chinaNotes, chinaChapters } from './china';
 import { canadaNotes } from './canada-polymer';
 import { englandNotes } from './england-polymer';
+import { malaysiaNotes } from './malaysia-polymer';
 
 export const POLIMERO_MUNDIAL_PATH = '/coleccion/polimero-mundial/';
+export const POLIMERO_ASIA_PATH = '/coleccion/polimero-mundial/asia/';
+export const POLIMERO_MALASIA_PATH = '/coleccion/polimero-mundial/asia/malasia/';
 export const POLIMERO_EUROPA_PATH = '/coleccion/polimero-mundial/europa/';
 export const POLIMERO_INGLATERRA_PATH = '/coleccion/polimero-mundial/europa/inglaterra/';
 export const POLIMERO_AMERICA_DEL_NORTE_PATH = '/coleccion/polimero-mundial/america-del-norte/';
@@ -11,11 +14,16 @@ export const POLIMERO_CANADA_PATH = '/coleccion/polimero-mundial/Canada/';
 
 const chinaPolymer = chinaChapters.find((chapter) => chapter.id === 'polimero');
 const chinaExhibit = chinaNotes[0];
+const malaysiaExhibit = malaysiaNotes[0];
 const englandExhibit = englandNotes[0];
 const canadaExhibit = canadaNotes[0];
 
 if (!chinaPolymer || !chinaExhibit) {
   throw new Error('China polymer exhibit is missing from the catalog data.');
+}
+
+if (!malaysiaExhibit) {
+  throw new Error('Malaysia polymer exhibit is missing from the catalog data.');
 }
 
 if (!englandExhibit) {
@@ -44,6 +52,17 @@ export const polymerCountries: PolymerCountry[] = [
     lead: chinaPolymer.lead,
     image: chinaExhibit.images.front,
     imageAlt: chinaExhibit.frontCaption,
+  },
+  {
+    href: POLIMERO_MALASIA_PATH,
+    years: { es: 'desde 2012', en: 'from 2012' },
+    title: { es: 'Malasia', en: 'Malaysia' },
+    lead: {
+      es: 'El 5 ringgit de polímero de Bank Negara Malaysia: Abdul Rahman y los cálaos, 2012.',
+      en: 'Bank Negara Malaysia’s polymer RM5: Abdul Rahman and the hornbills, 2012.',
+    },
+    image: malaysiaExhibit.images.front,
+    imageAlt: malaysiaExhibit.frontCaption,
   },
   {
     href: POLIMERO_INGLATERRA_PATH,
@@ -111,11 +130,11 @@ export const seriesCopy = {
       'El polímero de los billetes modernos es, en lo esencial, una película de polipropileno biaxialmente orientado. Se imprime como el papel, pero admite una ventana transparente y resiste mejor el agua, la suciedad y el uso. El motivo de su invención no fue el coleccionismo: fue la falsificación. Tras la decimalización australiana de 1966, el Reserve Bank of Australia pidió a la CSIRO un sustrato que no se pudiera fotocopiar ni simular con los papeles de entonces.',
       'Los primeros plásticos de circulación no fueron ese polímero. En los años ochenta, la American Bank Note Company imprimió ensayos en Tyvek —polietileno no tejido— para Haití, Costa Rica y la Isla de Man. El material se arrugaba, las tintas se desprendían y la experiencia no se generalizó. El salto técnico llegó en enero de 1988, cuando Australia puso en circulación un 10 dólares conmemorativo del Bicentenario: el primer billete de polímero del mundo, con un dispositivo ópticamente variable de James Cook en una ventana clara, fruto de dos décadas de trabajo conjunto entre el banco y la CSIRO.',
       'Entre 1992 y 1996 Australia sustituyó toda su serie decimal por polímero: fue el primer país en abandonar el papel en la circulación ordinaria. En 1996 el banco y UCB Films crearon Securency para vender el sustrato Guardian. De La Rue respondió más tarde con Safeguard. Otros emisores eligieron híbridos —algodón con ventanas de plástico—. Desde entonces decenas de bancos centrales han adoptado uno u otro sistema, unos para toda la serie y otros solo para conmemorativos.',
-      'Esta vitrina no es un recuento de todos los polímeros del mundo. Reúne solo los países cuyas piezas de polímero están documentadas en la colección. Abren China —el Banco Popular no ha pasado la circulación ordinaria al plástico; sus polímeros son conmemorativos—, Inglaterra, donde el Banco de Inglaterra llevó el 5 libras cotidiano al polímero en 2016, y Canadá, donde el Banco de Canadá cerró la serie Frontiers con el 5 dólares de Laurier en 2013.',
+      'Esta vitrina no es un recuento de todos los polímeros del mundo. Reúne solo los países cuyas piezas de polímero están documentadas en la colección. Abren China —el Banco Popular no ha pasado la circulación ordinaria al plástico; sus polímeros son conmemorativos—, Malasia, donde Bank Negara Malaysia llevó el 5 ringgit cotidiano al polímero en 2012, Inglaterra, donde el Banco de Inglaterra llevó el 5 libras cotidiano al polímero en 2016, y Canadá, donde el Banco de Canadá cerró la serie Frontiers con el 5 dólares de Laurier en 2013.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una tarjeta por país, a medida que se documenten las piezas. Hoy, China, Inglaterra y Canadá.',
+      'Una tarjeta por país, a medida que se documenten las piezas. Hoy, China, Malasia, Inglaterra y Canadá.',
     viewCountry: 'Leer el catálogo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -131,10 +150,10 @@ export const seriesCopy = {
       'The polymer of modern banknotes is, in essence, a film of biaxially oriented polypropylene. It prints like paper, but it can carry a clear window and stands up better to water, dirt, and wear. It was invented against counterfeiting, not for collectors. After Australia’s decimal changeover in 1966, the Reserve Bank of Australia asked CSIRO for a substrate that could not be photocopied or faked with the papers of the day.',
       'The first circulating plastics were not that polymer. In the 1980s the American Bank Note Company printed Tyvek trials — a non-woven polyethylene — for Haiti, Costa Rica, and the Isle of Man. The stock wrinkled, the inks lifted, and the experiment did not spread. The technical leap came in January 1988, when Australia issued a $10 note for the Bicentenary: the world’s first polymer banknote, with an optically variable device of James Cook in a clear window, the fruit of two decades of work between the Bank and CSIRO.',
       'Between 1992 and 1996 Australia replaced its entire decimal series with polymer: the first country to leave paper in ordinary circulation. In 1996 the Bank and UCB Films formed Securency to sell the Guardian substrate. De La Rue later answered with Safeguard. Other issuers chose hybrids — cotton with plastic windows. Since then dozens of central banks have taken up one system or the other, some for a whole series and others only for commemoratives.',
-      'This case is not a census of every polymer note in the world. It gathers only the countries whose polymer pieces are documented in the collection. China opens the row — the People’s Bank has not moved ordinary circulation onto plastic; its polymer notes are commemoratives — then England, where the Bank of England moved the everyday £5 onto polymer in 2016, and Canada, where the Bank of Canada completed the Frontiers series with the Laurier $5 in 2013.',
+      'This case is not a census of every polymer note in the world. It gathers only the countries whose polymer pieces are documented in the collection. China opens the row — the People’s Bank has not moved ordinary circulation onto plastic; its polymer notes are commemoratives — then Malaysia, where Bank Negara Malaysia moved the everyday RM5 onto polymer in 2012, England, where the Bank of England moved the everyday £5 onto polymer in 2016, and Canada, where the Bank of Canada completed the Frontiers series with the Laurier $5 in 2013.',
     ],
     holdingsTitle: 'The catalog',
-    holdingsIntro: 'One card to a country, as pieces are documented. Today, China, England, and Canada.',
+    holdingsIntro: 'One card to a country, as pieces are documented. Today, China, Malaysia, England, and Canada.',
     viewCountry: 'Read the catalog',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -145,6 +164,10 @@ export function polymerWorldPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/world-polymer/' : POLIMERO_MUNDIAL_PATH;
 }
 
+export function polymerMalaysiaPath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? '/en/collection/world-polymer/asia/malaysia/' : POLIMERO_MALASIA_PATH;
+}
+
 export function polymerEnglandPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/world-polymer/europe/england/' : POLIMERO_INGLATERRA_PATH;
 }
@@ -152,6 +175,43 @@ export function polymerEnglandPath(locale: 'es' | 'en'): string {
 export function polymerCanadaPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/world-polymer/Canada/' : POLIMERO_CANADA_PATH;
 }
+
+export const malaysiaCopy = {
+  es: {
+    metaTitle: 'Malasia · Billetes de polímero | Notofilia',
+    metaDescription:
+      'Billetes de polímero de Malasia en la colección de Notofilia: el 5 ringgit de Abdul Rahman de Bank Negara Malaysia (2012), serie AA 1955984.',
+    kicker: 'Asia',
+    title: 'Malasia',
+    subtitle: 'Billetes de polímero',
+    intro:
+      'Bank Negara Malaysia puso el 5 ringgit cotidiano en polímero en 2012: Tuanku Abdul Rahman en el anverso y dos cálaos rinoceronte al reverso. Esta vitrina reúne las piezas de esa serie documentadas en la colección.',
+    holdingsTitle: 'El catálogo',
+    holdingsIntro: 'Por ahora, el 5 ringgit de Abdul Rahman (Pick 52a), serie AA 1955984.',
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
+    backToPolymer: 'Volver a polímero mundial',
+    sourcesTitle: 'Fuentes',
+  },
+  en: {
+    metaTitle: 'Malaysia · Polymer banknotes | Notofilia',
+    metaDescription:
+      'Malaysia polymer banknotes in the Notofilia collection: the Bank Negara Malaysia Abdul Rahman RM5 (2012), serial AA 1955984.',
+    kicker: 'Asia',
+    title: 'Malaysia',
+    subtitle: 'Polymer banknotes',
+    intro:
+      'Bank Negara Malaysia moved the everyday RM5 onto polymer in 2012: Tuanku Abdul Rahman on the face and two rhinoceros hornbills on the reverse. This case gathers the pieces of that series documented in the collection.',
+    holdingsTitle: 'The catalog',
+    holdingsIntro: 'For now, the Abdul Rahman RM5 (Pick 52a), serial AA 1955984.',
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+    backToPolymer: 'Back to world polymer',
+    sourcesTitle: 'Sources',
+  },
+} as const;
 
 export const englandCopy = {
   es: {

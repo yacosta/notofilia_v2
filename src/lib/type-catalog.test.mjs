@@ -25,6 +25,7 @@ const mpcNotesSource = readFileSync(new URL('../data/mpc-vietnam.ts', import.met
 const chinaNotesSource = readFileSync(new URL('../data/china.ts', import.meta.url), 'utf8');
 const englandNotesSource = readFileSync(new URL('../data/england-polymer.ts', import.meta.url), 'utf8');
 const canadaNotesSource = readFileSync(new URL('../data/canada-polymer.ts', import.meta.url), 'utf8');
+const malaysiaNotesSource = readFileSync(new URL('../data/malaysia-polymer.ts', import.meta.url), 'utf8');
 const allNotesCatalogHtml = new URL(
   '../../dist/coleccion/notafilia/catalogo/index.html',
   import.meta.url,
@@ -206,6 +207,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /chinaNotes/);
     assert.match(collectionCatalogSource, /englandNotes/);
     assert.match(collectionCatalogSource, /canadaNotes/);
+    assert.match(collectionCatalogSource, /malaysiaNotes/);
     assert.match(collectionCatalogSource, /inCollection: true/);
     assert.doesNotMatch(collectionCatalogSource, /parseHeritageLots/);
     assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
@@ -218,6 +220,7 @@ describe('Collection-wide banknote catalog', () => {
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
     const englandNotes = (extractExportArrayBlock(englandNotesSource, 'englandNotes').match(/^    serial: '/gm) || []).length;
     const canadaNotes = (extractExportArrayBlock(canadaNotesSource, 'canadaNotes').match(/^    serial: '/gm) || []).length;
+    const malaysiaNotes = (extractExportArrayBlock(malaysiaNotesSource, 'malaysiaNotes').match(/^    serial: '/gm) || []).length;
 
     assert.equal(colombiaPieces.length, 13);
     assert.equal(usaNotes, 11);
@@ -228,6 +231,8 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(englandNotesSource, /serial: 'AC04879241'/);
     assert.equal(canadaNotes, 1);
     assert.match(canadaNotesSource, /serial: 'HBM0828003'/);
+    assert.equal(malaysiaNotes, 1);
+    assert.match(malaysiaNotesSource, /serial: 'AA1955984'/);
 
     if (!existsSync(allNotesCatalogHtml)) return;
 
@@ -249,10 +254,20 @@ describe('Collection-wide banknote catalog', () => {
     if (byCountry.CA) {
       assert.equal(byCountry.CA, canadaNotes);
     }
+    if (byCountry.MY) {
+      assert.equal(byCountry.MY, malaysiaNotes);
+    }
     assert.equal(
       documents.length,
-      colombiaPieces.length + usaNotes + mpcNotes + polymerNotes.length + (byCountry.GB || 0) + (byCountry.CA || 0) + 4,
-      'includes Philippines victory notes and, after rebuild, England and Canada polymer holdings',
+      colombiaPieces.length +
+        usaNotes +
+        mpcNotes +
+        polymerNotes.length +
+        (byCountry.GB || 0) +
+        (byCountry.CA || 0) +
+        (byCountry.MY || 0) +
+        4,
+      'includes Philippines victory notes and, after rebuild, England, Canada, and Malaysia polymer holdings',
     );
   });
 });
