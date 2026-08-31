@@ -168,8 +168,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Marked circulating paper, test notes, commemorative scrip, and other pieces that sit outside the federal series and pop art.',
     },
     body: {
-      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 2 dólares, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para Where’s George?, notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. El 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, ya tiene ficha: sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $2, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for Where’s George?, BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C, already has a note page: it remains legal tender, but the red stamps document it as a circulation-tracking object, not as a type FRN. Further note pages will be published here as they are photographed.',
+      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 2 dólares, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para Where’s George?, notas de prueba Giori, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $2, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for Where’s George?, Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -249,7 +249,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -268,7 +268,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -289,7 +289,7 @@ export const miscSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
     metaDescription:
-      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C, y otras piezas fuera de las series federales.',
+      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C, y la nota de prueba Giori del Lincoln Memorial, hacia los años 1970.',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Fuera de las series federales',
     breadcrumbCurrent: 'Misceláneos',
@@ -297,9 +297,9 @@ export const miscSeriesCopy = {
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 2 dólares: un Federal Reserve Note marcado para un seguimiento de circulación, y más adelante notas de prueba, scrip y emisiones promocionales.',
+      'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 2 dólares: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y más adelante scrip y emisiones promocionales.',
       'Where’s George? es un sitio web que registra el recorrido geográfico del papel moneda de Estados Unidos. Lo lanzó Hank Eskin el 23 de diciembre de 1998. El nombre apunta al retrato de George Washington en el 1 dólar. Quien tiene un billete anota la denominación, la serie, el número de serie y el código postal. Si otra persona vuelve a introducir el mismo serial, el sitio registra un «hit»: ciudad, distancia y tiempo de viaje. El propio FAQ dice que existe «por diversión y porque nadie lo había hecho». Las reglas piden circulación natural: gastar el billete en la vida cotidiana, no enviarlo por correo ni pasarlo a conocidos para fabricar hits.',
-      'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Las demás piezas se publicarán a medida que se fotografíen.',
+      'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. Las demás piezas se publicarán a medida que se fotografíen.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -310,7 +310,7 @@ export const miscSeriesCopy = {
   en: {
     metaTitle: 'United States · Miscellaneous | Notofilia',
     metaDescription:
-      'United States miscellaneous case: the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and other pieces outside the federal series.',
+      'United States miscellaneous case: the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and the Giori Lincoln Memorial test note, ca. 1970s.',
     kicker: 'United States · Miscellaneous',
     title: 'Outside the federal series',
     breadcrumbCurrent: 'Miscellaneous',
@@ -318,9 +318,9 @@ export const miscSeriesCopy = {
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'This case holds United States paper that does not belong in the federal series or in pop art on the $2: a Federal Reserve Note marked for circulation tracking, and later test notes, scrip, and promotional issues.',
+      'This case holds United States paper that does not belong in the federal series or in pop art on the $2: a Federal Reserve Note marked for circulation tracking, a Giori test note, and later scrip and promotional issues.',
       'Where’s George? is a website that records the geographic path of United States paper money. Hank Eskin launched it on 23 December 1998. The name points to George Washington’s portrait on the $1. Anyone holding a note enters the denomination, series, serial number, and ZIP code. When someone else later enters the same serial, the site logs a “hit”: city, distance, and travel time. The FAQ says the site exists “for fun and because it had not been done yet.” The rules ask for natural circulation: spend the note in everyday life; do not mail it or pass it to acquaintances in order to manufacture hits.',
-      'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Further pieces will be published as they are photographed.',
+      'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. Further pieces will be published as they are photographed.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -367,6 +367,15 @@ export const miscSeriesSources: CatalogSource[] = [
       en: 'Uses the Where’s George? register as a proxy for human travel in the United States.',
     },
   },
+  {
+    href: 'https://www.coinbooks.org/esylum_v15n53a10.html',
+    es: 'The E-Sylum — American Can Company and the Giori test notes (vol. 15, n.º 53)',
+    en: 'The E-Sylum — American Can Company and the Giori test notes (vol. 15, no. 53)',
+    note: {
+      es: 'Gualtiero Giori; pruebas de Ginebra (Nueva York) hacia los años 1970; planchas «nonsense» del BEP; la posesión privada se legalizó más tarde.',
+      en: 'Gualtiero Giori; Geneva, New York trials in the 1970s; BEP nonsense plates; private ownership later made legal.',
+    },
+  },
 ];
 
 export type UnitedStatesNoteId =
@@ -379,7 +388,8 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934a-cleveland'
   | '10-dolares-serie-1934d-richmond'
   | '1-dolar-certificado-plata-1957b'
-  | '1-dolar-serie-2006-dallas-wheres-george';
+  | '1-dolar-serie-2006-dallas-wheres-george'
+  | 'nota-prueba-giori-lincoln-memorial';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -388,6 +398,8 @@ export type UnitedStatesNote = {
   pathEn: string;
   pick: string;
   serial: string;
+  /** Required when no serial was printed (proofs, uniface tests). */
+  no_serial_reason?: string;
   signatures: LocalizedText;
   printed: LocalizedText;
   images: {
@@ -1605,6 +1617,119 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Washington en el 1 dólar desde 1869; ambas caras del Gran Sello en el reverso desde 1935.',
           en: 'Washington on the $1 since 1869; both faces of the Great Seal on the back since 1935.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'nota-prueba-giori-lincoln-memorial',
+    chapterId: 'us-miscelaneos',
+    path: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    pathEn: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+    pick: 'Giori · Lincoln Memorial (uniface)',
+    serial: '—',
+    no_serial_reason:
+      'Uniface Giori press test: no serials, Treasury seal, or Federal Reserve seal were printed.',
+    signatures: {
+      es: 'Ninguna (nota de prueba uniface)',
+      en: 'None (uniface test note)',
+    },
+    printed: {
+      es: 'Prensa Giori (Gualtiero Giori). Hacia los años 1970. The E-Sylum sitúa pruebas con planchas «nonsense» del BEP en Ginebra, Nueva York, en esa década; otras tiradas de ensayo se atribuyen a evaluaciones de la prensa en Alemania. Esta ficha no inventa una tirada para el tipo ni para este ejemplar.',
+      en: 'Giori press (Gualtiero Giori). Ca. 1970s. The E-Sylum places trials with BEP “nonsense” plates at Geneva, New York, in that decade; other test runs are attributed to press evaluations in Germany. This record does not invent a printage for the type or for this piece.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/giori-lincoln-memorial-composite.jpg',
+      front: '/images/catalog/estados-unidos/giori-lincoln-memorial-front.jpg',
+      back: '/images/catalog/estados-unidos/giori-lincoln-memorial-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: 'Nota de prueba Giori · Lincoln Memorial · ca. 1970',
+      en: 'Giori test note · Lincoln Memorial · ca. 1970s',
+    },
+    kicker: {
+      es: 'Estados Unidos · Misceláneos · Prueba Giori',
+      en: 'United States · Miscellaneous · Giori proof',
+    },
+    lead: {
+      es: 'Nota de prueba uniface de la prensa Giori, hacia los años 1970: anverso verde con el Lincoln Memorial y elementos del 1 dólar; reverso en blanco; sin seriales ni sellos. No es curso legal.',
+      en: 'A uniface Giori press test note, ca. 1970s: a green face with the Lincoln Memorial and $1 design elements; a blank back; no serials or seals. It is not legal tender.',
+    },
+    description: {
+      es: 'Esta pieza es una prueba de prensa, no un Federal Reserve Note. El anverso, en una sola tinta verde hierba sobre papel crema, reúne fragmentos de planchas de curso legal: al centro, el grabado del Lincoln Memorial que el BEP usa en el reverso del 5 dólares; en las esquinas superiores, el 1 con ONE inscrito en vertical, tomado del reverso del 1 dólar; abajo, THE UNITED STATES OF AMERICA en letras con sombra; a la derecha, WASHINGTON. D.C. y ONE en vertical. Un arco fino cruza el memorial; a la izquierda hay bloques de patrón festoneado. No hay seriales, sello del Tesoro, sello de distrito ni firmas: el BEP ensayó la prensa Giori con planchas canceladas o «nonsense» para no entregar una plancha completa de circulación. El reverso de este ejemplar está en blanco: es uniface. No es el reverso verde del 5 dólares de circulación —le faltan el memorial en contexto de FIVE DOLLARS y lleva, en cambio, los 1 del 1 dólar— ni las pruebas Giori de dos caras con Jefferson al centro. Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'This piece is a press test, not a Federal Reserve Note. The face, in a single grass-green ink on cream paper, gathers fragments of circulating plates: at center, the Lincoln Memorial engraving the BEP uses on the back of the $5; in the upper corners, the 1 with ONE set vertically, taken from the back of the $1; below, THE UNITED STATES OF AMERICA in shadowed capitals; at right, WASHINGTON. D.C. and a tall ONE. A thin arch spans the memorial; scalloped pattern blocks sit at left. There are no serials, Treasury seal, district seal, or signatures: the BEP tried the Giori press with cancelled or “nonsense” plates so that a complete circulating plate would not leave the bureau. The back of this example is blank: it is uniface. It is not the green back of a circulating $5 — it lacks the FIVE DOLLARS setting of that memorial and instead carries the $1 corner 1s — nor the two-sided Giori tests with Jefferson at center. This collection piece is shown in a sleeve, unslabbed.',
+    },
+    history: [
+      {
+        es: 'Al terminar la Segunda Guerra Mundial, el italiano Gualtiero Giori ideó una prensa de calcografía capaz de aplicar dos o tres colores en una sola pasada, con rodillos de caucho recortados que entintaban zonas distintas de la misma plancha. The E-Sylum resume ese salto: más rápido que las máquinas anteriores del Bureau of Engraving and Printing. El BEP encargó evaluaciones de la prensa; para probarla sin comprometer la seguridad de las planchas de circulación, envió segmentos cancelados de tipos entonces en uso.',
+        en: 'At the end of the Second World War the Italian Gualtiero Giori devised an intaglio press that could lay two or three colours in a single pass, with cut rubber rollers inking different areas of the same plate. The E-Sylum summarises that leap: faster than the Bureau of Engraving and Printing’s earlier machines. The BEP commissioned evaluations of the press; to test it without releasing a complete circulating plate, it sent cancelled segments of types then in use.',
+      },
+      {
+        es: 'The E-Sylum (2012) recoge el llamado tesoro Pigman: Edgar L. Pigman, ingeniero de la American Can Company en Ginebra, Nueva York, diseñó y ensayó prensas Giori como subcontratista de la American Bank Note Company para el BEP, hacia los años 1970. Las planchas «nonsense» mezclaban viñetas —Washington del 1, Lincoln del 5, Grant del 50— en pliegos de 32. Esas pruebas no eran curso legal; durante años el BEP consideró ilegal poseerlas porque se parecían al papel auténtico. Un cambio de política posterior permitió el comercio entre coleccionistas. Otras pruebas Giori de dos caras, a menudo con Jefferson al centro, se atribuyen a ensayos en Alemania. Esta ficha describe el objeto físico; no afirma que el ejemplar proceda del tesoro Pigman.',
+        en: 'The E-Sylum (2012) records the so-called Pigman hoard: Edgar L. Pigman, an American Can Company engineer in Geneva, New York, designed and tested Giori presses as an American Bank Note Company subcontractor for the BEP, in the 1970s. The “nonsense” plates mixed vignettes — Washington from the $1, Lincoln from the $5, Grant from the $50 — on sheets of 32. Those tests were not legal tender; for years the BEP treated private ownership as unlawful because the paper resembled genuine currency. A later policy change allowed collector trade. Other two-sided Giori tests, often with Jefferson at center, are attributed to trials in Germany. This record describes the physical object; it does not claim that this example comes from the Pigman hoard.',
+      },
+    ],
+    historyHeading: {
+      es: 'La prensa Giori',
+      en: 'The Giori press',
+    },
+    frontCaption: {
+      es: 'Anverso uniface de la nota de prueba Giori, hacia los años 1970: Lincoln Memorial en verde, THE UNITED STATES OF AMERICA y 1 de las esquinas del 1 dólar, sin serial.',
+      en: 'Uniface face of the Giori test note, ca. 1970s: Lincoln Memorial in green, THE UNITED STATES OF AMERICA and the $1 corner 1s, with no serial.',
+    },
+    backCaption: {
+      es: 'Reverso en blanco de la misma nota de prueba Giori, en funda: sin tinta, grabado ni serial.',
+      en: 'Blank back of the same Giori test note, in a sleeve: no ink, engraving, or serial.',
+    },
+    scarcity: {
+      es: 'Las notas de prueba Giori no fueron emisión de circulación. The E-Sylum indica que los pliegos de ensayo debían destruirse o quedaron al margen; algunos sobrevivieron y, una vez levantada la restricción del BEP, entraron en el mercado de coleccionistas. No hay Pick ni Friedberg para este collage uniface del Lincoln Memorial. Esta ficha no inventa una tirada ni un censo.',
+      en: 'Giori test notes were not a circulating issue. The E-Sylum notes that trial sheets were meant to be destroyed or otherwise kept aside; some survived and, once the BEP restriction was lifted, entered the collector market. There is no Pick or Friedberg number for this uniface Lincoln Memorial collage. This record does not invent a printage or a census.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este ejemplar. La pieza se presenta en funda, sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for this example has not been independently verified. The note is shown in a sleeve, unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda (colección privada)',
+      en: 'Unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.coinbooks.org/esylum_v15n53a10.html',
+        es: 'The E-Sylum — American Can Company and the Giori test notes (vol. 15, n.º 53, 23 de diciembre de 2012)',
+        en: 'The E-Sylum — American Can Company and the Giori test notes (vol. 15, no. 53, 23 December 2012)',
+        note: {
+          es: 'Gualtiero Giori; American Can / Edgar L. Pigman en Ginebra, N.Y.; planchas nonsense del BEP; posesión privada legalizada después.',
+          en: 'Gualtiero Giori; American Can / Edgar L. Pigman in Geneva, N.Y.; BEP nonsense plates; private ownership later made legal.',
+        },
+      },
+      {
+        href: 'http://www.coins.calkinsc.com/us_notes_test.html',
+        es: 'Calkins — United States test notes',
+        en: 'Calkins — United States test notes',
+        note: {
+          es: 'Tipos Giori: Jefferson de dos caras y pruebas uniface verdes sin serial (tesoro Pigman).',
+          en: 'Giori types: two-sided Jefferson notes and green uniface tests without serials (Pigman hoard).',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Gualtiero_Giori',
+        es: 'Wikipedia — Gualtiero Giori',
+        en: 'Wikipedia — Gualtiero Giori',
+        note: {
+          es: 'Inventor de la prensa de calcografía en varios colores; origen de las pruebas que llevan su nombre.',
+          en: 'Inventor of the multi-colour intaglio press; origin of the tests that bear his name.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Contexto de la imprenta federal; estas pruebas no son una serie de circulación del BEP.',
+          en: 'Context for the federal printer; these tests are not a BEP circulating series.',
         },
       },
     ],

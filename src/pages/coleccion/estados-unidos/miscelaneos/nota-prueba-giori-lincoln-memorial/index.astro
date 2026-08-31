@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../data/estados-unidos';
+
+const note = noteById('nota-prueba-giori-lincoln-memorial');
+if (!note) throw new Error('Missing Giori Lincoln Memorial test note catalog record');
+---
+
+<UnitedStatesNotePage locale="es" note={note} />
