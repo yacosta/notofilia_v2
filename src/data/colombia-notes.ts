@@ -15,7 +15,8 @@ export type ColombiaNoteId =
   | '2000-pesos-2008'
   | '20000-pesos-2017'
   | '1000-pesos-error-2008'
-  | '1000-pesos-error-2011';
+  | '1000-pesos-error-2011'
+  | '50000-pesos-error-2015';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -1404,6 +1405,104 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Producción 2011 de 1.000 pesos: 196,1 millones de piezas. Entregas a Tesorería del mismo año: 196,1 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
           en: '2011 production of 1,000-peso notes: 196.1 million pieces. Tesorería deliveries that year: 196.1 million (denomination totals for the year, not one Pick date or error).',
+        },
+      },
+    ],
+  },
+  {
+    id: '50000-pesos-error-2015',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}50000-pesos-error-2015/`,
+    pick: 'P# 462a / TBB B997a',
+    serial: 'AB69350427',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y José Tolosa Buitrago (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and José Tolosa Buitrago (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Impreso en tintas sobre papel. Fecha impresa en el canto derecho del reverso: 19 de agosto de 2015. Formato 148 × 66 mm; serial de dos letras y ocho dígitos, serie AB. González White 2019 numera esta fecha y serie BG# NF50-2 (p. 152): firmas Uribe / Tolosa, emisión ¿?; sitúa la circulación de la serie AB el 18 de noviembre de 2016. El comunicado BanRep del 19 de agosto de 2016 pone en circulación el tipo —el tercero de la Nueva Familia— ese mismo día. El Bank Note Museum marca 19.08.2015 como Pick 462a. Numista asigna TBB B997a y el prefijo AA–AD a esa fecha. La producción BanRep de 50.000 pesos en 2015 es 250,4 millones de piezas (total de la denominación ese año; la familia de García Márquez aún no circulaba). En 2016 la producción de todos los 50.000 es 259,2 millones y la entrega a Tesorería de la familia S (2016) es 115,786 millones: no son la tirada de esta fecha, de esta serie ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the right edge of the back: 19 August 2015. Size 148 × 66 mm; two-letter prefix and eight digits, series AB. González White 2019 numbers this date and series BG# NF50-2 (p. 152): signatures Uribe / Tolosa, emisión ¿?; it places series AB into circulation on 18 November 2016. BanRep’s 19 August 2016 communiqué puts the type — the third note of the New Family — into circulation that day. The Bank Note Museum marks 19.08.2015 as Pick 462a. Numista assigns TBB B997a and prefixes AA–AD to that date. BanRep’s 2015 production of 50,000-peso notes is 250.4 million pieces (the denomination total that year; the García Márquez family had not yet circulated). In 2016 production of every 50,000 is 259.2 million, and Tesorería delivery of the 2016 S family is 115.786 million: those are not the printage of this date, this series, or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-composite.jpg',
+      front: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-front.jpg',
+      back: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-back.jpg',
+    },
+    title: {
+      es: '50.000 pesos · error de numeración · 2015',
+      en: '50,000 pesos · numbering error · 2015',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Numeración',
+      en: 'Colombia · Errors · Numbering',
+    },
+    lead: {
+      es: 'Cincuenta mil pesos de García Márquez, Pick 462a / TBB B997a: fecha 19 de agosto de 2015, serie AB y serial AB69350427, con un error de numeración —entintado excesivo— que tapa ambas series del anverso en bloques negros. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A García Márquez fifty-thousand-peso note, Pick 462a / TBB B997a: date 19 August 2015, series AB, and serial AB69350427, with a numbering error — heavy over-inking — that fills both face serials with black blocks. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'En 2016 el Banco de la República puso en circulación una familia nueva —de 2.000 a 100.000— con formato por denominación y un programa iconográfico que sale de los próceres de la independencia. El 19 de agosto de 2016 el cincuenta mil fue el tercero de esa Nueva Familia: circularía a la vez que el 50.000 de Jorge Isaacs. El homenaje a Gabriel García Márquez cumple el artículo 5.º de la Ley 1741 de 2014; el mismo diseño exalta la Ciudad Perdida, la Sierra Nevada de Santa Marta, el colibrí piquicorto y el burgao. González White numera el tipo de 148 × 66 mm en las fichas NF50; el Bank Note Museum, Pick 462 (2015–2022), impreso por la Imprenta de Billetes en tintas sobre papel. Esta pieza lleva la fecha «19 DE AGOSTO DE 2015» en el canto derecho del reverso —la primera fecha, 462a— y el pie «IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA». Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista y González White asignan a esa fecha (BG# NF50-2, serie AB; TBB B997a). El anverso, en violeta y azul, muestra a García Márquez de cuerpo entero al centro, con las mariposas, y un primer plano a la derecha; a la izquierda, el colibrí piquicorto (Ramphomicron dorsale) en tinta ópticamente variable y el burgao como registro. El serial AB69350427 va dos veces en negro, arriba a la izquierda y abajo a la derecha: no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). Lo que distingue esta pieza es el error, no el tipo: las dos numeraciones salieron de la máquina con un entintado excesivo. Cada carácter —las letras AB y los ocho dígitos— queda tapado por un bloque rectangular de tinta negra, de grano espeso; se lee el serial, pero no como cifra limpia sobre el fondo. Es una maculatura de numeración, no una variedad de diseño. El reverso lleva a dos indígenas de la Sierra Nevada, las terrazas de Ciudad Perdida, un fragmento del discurso «La soledad de América Latina» y el sello de Libertad. No debe confundirse con el 50.000 de Isaacs (Pick 455), ni con las fechas 02.08.2016 (462b), 29.08.2017, 24.07.2018 o posteriores, ni con las series AA o AE–AH de las mismas fechas. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'In 2016 the Banco de la República put a new family into circulation — 2,000 to 100,000 — with a size per denomination and an iconographic program that moves beyond independence heroes. On 19 August 2016 the fifty-thousand was the third note of that New Family: it would circulate alongside the Jorge Isaacs 50,000. The homage to Gabriel García Márquez fulfils article 5 of Law 1741 of 2014; the same design exalts Ciudad Perdida, the Sierra Nevada de Santa Marta, the short-billed hummingbird, and the burgao snail. González White numbers the 148 × 66 mm type as the NF50 listings; the Bank Note Museum, Pick 462 (2015–2022), printed by the Imprenta de Billetes in inks on paper. This piece carries the date “19 DE AGOSTO DE 2015” on the right edge of the back — the first date, 462a — and the imprint “IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA.” The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista and González White assign to that date (BG# NF50-2, series AB; TBB B997a). The face, in violet and blue, shows García Márquez standing at centre with the butterflies and a close-up at right; at left, the short-billed hummingbird (Ramphomicron dorsale) in optically variable ink and the burgao as a registration device. Serial AB69350427 appears twice in black, at upper left and lower right: it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). What distinguishes this piece is the error, not the type: both numberings left the machine heavily over-inked. Each character — the letters AB and the eight digits — is filled by a rectangular block of thick black ink; the serial can be read, but not as a clean figure on the ground. It is a numbering maculature, not a design variety. The back carries two indigenous people of the Sierra Nevada, the terraces of Ciudad Perdida, a fragment of the speech “La soledad de América Latina,” and the Liberty seal. It should not be confused with the Isaacs 50,000 (Pick 455), with dates 02.08.2016 (462b), 29.08.2017, 24.07.2018 or later, or with series AA or AE–AH of the same dates. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Gabriel José de la Concordia García Márquez (Aracataca, 1927 – Ciudad de México, 2014) preside el cincuenta mil de la familia de 2016. El Congreso mandó el retrato (art. 5.º, Ley 1741 de 2014). El comunicado BanRep del 19 de agosto de 2016 lo pone en circulación ese día en Santa Marta, el tercero de la Nueva Familia, conviviendo con el 50.000 de Isaacs; el Banco Agrario de Aracataca fue el primero en recibirlo. González White anota, para la serie AB de esta fecha impresa, la circulación el 18 de noviembre de 2016 (BG# NF50-2). El Bank Note Museum data las fechas impresas del Pick 462 de 2015 a 2022: esta pieza es la primera, 19.08.2015 (462a), con las firmas de Uribe y Tolosa. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura de numeración que escapó con ambas series tapadas.',
+      en: 'Gabriel José de la Concordia García Márquez (Aracataca, 1927 – Mexico City, 2014) occupies the fifty-thousand of the 2016 family. Congress required the portrait (art. 5, Law 1741 of 2014). BanRep’s 19 August 2016 communiqué puts it into circulation that day in Santa Marta, the third note of the New Family, running alongside the Isaacs 50,000; the Banco Agrario in Aracataca was the first to receive it. González White records, for series AB of this printed date, circulation on 18 November 2016 (BG# NF50-2). The Bank Note Museum dates Pick 462 printed dates from 2015 to 2022: this piece is the first, 19.08.2015 (462a), with the signatures of Uribe and Tolosa. This record does not document an ordinary circulating example: it documents a numbering maculature that escaped with both serials filled.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50.000 pesos, Pick 462a: García Márquez, fecha 19 de agosto de 2015 y serial AB69350427, con ambas numeraciones tapadas por bloques de tinta.',
+      en: 'Face of the 50,000 pesos, Pick 462a: García Márquez, the date 19 August 2015, and serial AB69350427, with both numberings filled by ink blocks.',
+    },
+    backCaption: {
+      es: 'Reverso del 50.000 pesos, Pick 462a: indígenas de la Sierra Nevada, Ciudad Perdida, el discurso del Nobel y la fecha 19 de agosto de 2015 en el canto derecho.',
+      en: 'Back of the 50,000 pesos, Pick 462a: indigenous people of the Sierra Nevada, Ciudad Perdida, the Nobel speech, and the date 19 August 2015 on the right edge.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# NF50-2, p. 152) no publica cifra de emisión para el 19 de agosto de 2015, serie AB (¿?). El Bank Note Museum describe Pick 462 como el tipo 2015–2022 y marca 462a esa fecha. Numista agrupa el diseño bajo N# 205124, con índice de rareza 21, y marca la frecuencia de 19.08.2015 en 21 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 250,4 millones de piezas a todos los 50.000 pesos de 2015 —año en que esta familia aún no circulaba— y 259,2 millones a los de 2016; la de entregas a Tesorería de 2016 asigna 115,786 millones a la familia S: no es la tirada de una fecha, de un par de firmas, de la serie AB ni de un error de numeración. Un serial tapado en ambas posiciones es una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# NF50-2, p. 152) publishes no emisión figure for 19 August 2015, series AB (¿?). The Bank Note Museum describes Pick 462 as the 2015–2022 type and marks 462a for that date. Numista groups the design under N# 205124, with a rarity index of 21, and marks the 19.08.2015 date’s frequency at 21% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 250.4 million pieces to every 50,000-peso note of 2015 — a year when this family had not yet circulated — and 259.2 million to those of 2016; the 2016 Tesorería delivery table assigns 115.786 million to the S family: that is not the printage of one date, signature pair, series AB, or numbering error. A serial filled in both positions is a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial AB69350427. La pieza se presenta en funda, aparentemente sin circular, sin encapsular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serial AB69350427 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular · error de numeración (entintado excesivo)',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated · numbering error (over-inking)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0462.htm',
+        es: 'Bank Note Museum — Colombia P-462, 50.000 pesos (2015–2022)',
+        en: 'Bank Note Museum — Colombia P-462, 50,000 pesos (2015–2022)',
+        note: {
+          es: 'Tipo 2015–2022, Imprenta de Billetes; anverso García Márquez, reverso Ciudad Perdida. Esta pieza es 19.08.2015 (462a). El catálogo marca 462b como 02.08.2016 y lista fechas posteriores sin letra en el Standard Catalog.',
+          en: '2015–2022 type, Imprenta de Billetes; García Márquez on the face, Ciudad Perdida on the back. This piece is 19.08.2015 (462a). The catalogue marks 462b as 02.08.2016 and lists later dates unlettered in the Standard Catalog.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/205124',
+        es: 'Numista — Colombia 50.000 pesos, N# 205124',
+        en: 'Numista — Colombia 50,000 pesos, N# 205124',
+        note: {
+          es: 'Fecha 19.08.2015: P# 462a, TBB B997a; firmas JDUE y JTB; prefijo AA–AD; circulación del tipo 19 de agosto de 2016; frecuencia 21 % en el tipo; índice de rareza 21. No se publican columnas de precio.',
+          en: '19.08.2015 date: P# 462a, TBB B997a; signatures JDUE and JTB; prefixes AA–AD; type issued 19 August 2016; 21% frequency within the type; rarity index 21. Price columns are not published here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/comunicado-19-08-2016',
+        es: 'Banco de la República — Comunicado: el billete de 50 mil pesos entra en circulación (19 de agosto de 2016)',
+        en: 'Banco de la República — Communiqué: the 50,000-peso note enters circulation (19 August 2016)',
+        note: {
+          es: 'Tercero de la Nueva Familia; homenaje a García Márquez por la Ley 1741 de 2014; circularía a la vez que el 50.000 de Isaacs. No nombra esta fecha impresa, esta serie ni este serial.',
+          en: 'Third note of the New Family; homage to García Márquez under Law 1741 of 2014; it would circulate alongside the Isaacs 50,000. It does not name this printed date, this series, or this serial.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2015 de 50.000 pesos: 250,4 millones de piezas. Producción 2016: 259,2 millones. Entregas a Tesorería de 50.000 pesos S (familia 2016) en 2016: 115,786 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+          en: '2015 production of 50,000-peso notes: 250.4 million pieces. 2016 production: 259.2 million. Tesorería deliveries of 50,000-peso S notes (2016 family) in 2016: 115.786 million (denomination totals that year, not one Pick date or error).',
         },
       },
     ],
