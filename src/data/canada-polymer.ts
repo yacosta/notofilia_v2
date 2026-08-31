@@ -32,7 +32,7 @@ export type CanadaNote = {
 export const canadaNotes: CanadaNote[] = [
   {
     id: '5-dolares-laurier',
-    path: '/coleccion/polimero-mundial/america-del-norte/canada/5-dolares-laurier/',
+    path: '/coleccion/polimero-mundial/Canada/5-dolares-laurier/',
     pick: 'P#106b · Charlton BC-69',
     serial: 'HBM0828003',
     serial_display: 'HBM0828003',
@@ -186,5 +186,5 @@ export function notePath(note: CanadaNote, locale: 'es' | 'en'): string {
 export const canadaNoteSlugs = canadaNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
 
 export function canadaSeriesPath(locale: 'es' | 'en'): string {
-  return localizePath('/coleccion/polimero-mundial/america-del-norte/canada/', locale);
+  return localizePath('/coleccion/polimero-mundial/Canada/', locale);
 }
