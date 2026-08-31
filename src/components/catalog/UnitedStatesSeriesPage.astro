@@ -13,6 +13,7 @@ import {
   seriesPath,
   seriesSources,
   unitedStatesChapters,
+  USA_RENCY_PATH,
 } from '../../data/estados-unidos';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
@@ -142,6 +143,18 @@ const jsonLd = collectionPageJsonLd({
                       </li>
                     ))}
                   </ol>
+                ) : null
+              }
+              {
+                chapter.id === 'us-pop-art' ? (
+                  <p class={notesForChapter(chapter.id).length > 0 ? 'mt-6' : 'mt-8'}>
+                    <a
+                      href={localizePath(USA_RENCY_PATH, locale)}
+                      class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                    >
+                      {t.viewRencyCase} →
+                    </a>
+                  </p>
                 ) : null
               }
             </section>

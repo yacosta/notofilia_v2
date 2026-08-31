@@ -7,7 +7,7 @@ import { colombiaNotes, notePieces } from '../data/colombia-notes';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces';
 import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-coin-type-catalog';
 import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
-import { unitedStatesNotes } from '../data/estados-unidos';
+import { unitedStatesNotes, USA_RENCY_PATH, rencySeriesCopy } from '../data/estados-unidos';
 import { glossaryTermPath, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
@@ -310,6 +310,11 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: COLOMBIA_COIN_CATALOG_PATH,
       title: { es: coinCatalogCopy.es.title, en: coinCatalogCopy.en.title },
       dek: { es: coinCatalogCopy.es.dek, en: coinCatalogCopy.en.dek },
+    },
+    {
+      href: USA_RENCY_PATH,
+      title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
+      dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
     },
   ]) {
     docs.push({

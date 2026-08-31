@@ -3,7 +3,7 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
-import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
+import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH, USA_RENCY_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -95,6 +95,12 @@ export const megaNav: NavNode[] = [
             en: 'MPC - Vietnam War (1955-1975)',
             href: USA_MPC_PATH,
             flag: 'vn',
+          },
+          {
+            id: 'rency',
+            es: 'Renci',
+            en: 'Renci',
+            href: USA_RENCY_PATH,
           },
           {
             id: 'miscelaneos',

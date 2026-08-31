@@ -17,6 +17,8 @@ import {
   USA_MPC_PATH_EN,
   USA_PATH,
   USA_PATH_EN,
+  USA_RENCY_PATH,
+  USA_RENCY_PATH_EN,
   unitedStatesNoteDedicatedSlugs,
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
@@ -123,6 +125,7 @@ export function statsLine(locale: Locale): string {
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
+addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
@@ -388,6 +391,7 @@ export const stubPages = [
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
+  { path: 'coleccion/estados-unidos/rency', es: 'Renci', en: 'Renci' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
@@ -428,6 +432,8 @@ const dedicatedEs = [
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_RENCY_PATH.replace(/^\/|\/$/g, ''),
+  USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
