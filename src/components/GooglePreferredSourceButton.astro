@@ -10,8 +10,8 @@ const t = copy[locale];
 const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
 ---
 
-<div class="mx-auto mb-1 flex w-[min(100%,17.5rem)] justify-center">
-  <div google-add-preferred-source-btn class="w-full" data-theme="dark" data-lang={locale}></div>
+<div class="google-preferred-source">
+  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale}></div>
   <noscript>
     <a
       href={deeplink}
@@ -21,3 +21,69 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     </a>
   </noscript>
 </div>
+
+<style>
+  /*
+    publisher.js sets the host to width:100% and the iframe to position:absolute;
+    left/right:0. The pill inside the iframe is inline-flex and sits on the left,
+    so a full-width host looks left-aligned in the footer. Beat those inline
+    styles with !important and center a badge-sized iframe.
+  */
+  .google-preferred-source {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-preferred-source :global([google-add-preferred-source-btn]) {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 60px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .google-preferred-source :global(iframe) {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    display: block !important;
+    width: min(100%, 20rem) !important;
+    height: 60px !important;
+    margin-inline: auto !important;
+    border: 0 !important;
+  }
+</style>
+
+<script>
+  function lockPreferredSourceFrame(root: Element) {
+    const host = root.querySelector('[google-add-preferred-source-btn]');
+    if (!(host instanceof HTMLElement)) return;
+
+    const apply = () => {
+      const iframe = host.querySelector('iframe');
+      if (!(iframe instanceof HTMLIFrameElement)) return;
+      iframe.style.setProperty('position', 'relative', 'important');
+      iframe.style.setProperty('inset', 'auto', 'important');
+      iframe.style.setProperty('top', 'auto', 'important');
+      iframe.style.setProperty('right', 'auto', 'important');
+      iframe.style.setProperty('bottom', 'auto', 'important');
+      iframe.style.setProperty('left', 'auto', 'important');
+      iframe.style.setProperty('display', 'block', 'important');
+      iframe.style.setProperty('width', 'min(100%, 20rem)', 'important');
+      iframe.style.setProperty('height', '60px', 'important');
+      iframe.style.setProperty('margin-inline', 'auto', 'important');
+    };
+
+    apply();
+    new MutationObserver(apply).observe(host, { childList: true, subtree: true, attributes: true });
+  }
+
+  document.querySelectorAll('.google-preferred-source').forEach(lockPreferredSourceFrame);
+</script>
