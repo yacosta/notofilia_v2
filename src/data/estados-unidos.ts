@@ -17,8 +17,8 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. El 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, ya tiene ficha: sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C, already has a note page: it remains legal tender, but the red stamps document it as a circulation-tracking object, not as a type FRN. Further note pages will be published here as they are photographed.',
+      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -314,8 +314,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, y más adelante notas de prueba, scrip y emisiones promocionales.',
-        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, and later test notes, scrip, and promotional issues.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y más adelante scrip y emisiones promocionales.',
+        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and later scrip and promotional issues.',
       },
     },
   ],
@@ -334,8 +334,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Las demás piezas se publicarán a medida que se fotografíen.',
-        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Further pieces will be published as they are photographed.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. Further pieces will be published as they are photographed.',
       },
     },
   ],
