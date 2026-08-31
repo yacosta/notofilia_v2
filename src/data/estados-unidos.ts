@@ -2296,8 +2296,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Pop-art face on a genuine $1, serial F 71235101 A: eight LIFE SPRAY cans, neon “life is beautiful,” and vertical Rency.',
     },
     backCaption: {
-      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 52, con firma manuscrita RENCY y edición 5/200.',
-      en: 'Back of an FRN $2 (Declaration of Independence), plate 52, with manuscript RENCY and edition 5/200.',
+      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), con firma manuscrita RENCY y edición 5/200.',
+      en: 'Back of an FRN $2 (Declaration of Independence), with manuscript RENCY and edition 5/200.',
     },
     scarcity: {
       es: 'El artista numeró esta pieza 5/200. Esa fracción es una declaración de edición sobre el papel, no un censo PMG o PCGS ni una tirada del BEP. No se publica aquí un recuento independiente de ejemplares supervivientes. Las ocho latas LIFE SPRAY distinguen el objeto del híbrido Pelé / The Beautiful Game, también 5/200 con el mismo serial impreso, y de Warhol y Basquiat / Life Is Beautiful, el 2 dólares intervenido por ambas caras, sin fracción de edición.',
