@@ -7,7 +7,7 @@ export const WHERES_GEORGE_HREF = 'https://www.wheresgeorge.com';
 const miscChapterBodyParts: CatalogProsePart[] = [
   {
     text: {
-      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 1 dólares, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para ',
+      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 1 dólar, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para ',
       en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $1, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for ',
     },
   },
@@ -314,7 +314,7 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólares: un Federal Reserve Note marcado para un seguimiento de circulación, y más adelante notas de prueba, scrip y emisiones promocionales.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, y más adelante notas de prueba, scrip y emisiones promocionales.',
         en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, and later test notes, scrip, and promotional issues.',
       },
     },

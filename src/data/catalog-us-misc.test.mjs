@@ -25,10 +25,10 @@ describe('US miscellaneous Where’s George copy', () => {
   it('uses the requested 1-dollar opening in Spanish and English', () => {
     assert.match(
       data,
-      /Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 1 dólares,/,
+      /Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 1 dólar,/,
     );
     assert.match(data, /contemporary interventions on the \$1/);
-    assert.match(data, /pop art sobre el 1 dólares/);
+    assert.match(data, /pop art sobre el 1 dólar/);
     assert.match(data, /pop art on the \$1/);
     assert.doesNotMatch(
       data,
