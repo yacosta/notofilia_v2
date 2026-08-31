@@ -34,8 +34,9 @@ import {
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { canadaNoteSlugs } from '../data/canada-polymer';
 import { englandNoteSlugs } from '../data/england-polymer';
-import { POLIMERO_INGLATERRA_PATH, POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
+import { POLIMERO_CANADA_PATH, POLIMERO_INGLATERRA_PATH, POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { contactDedicatedSlugs } from '../data/contact';
@@ -68,6 +69,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of englandNoteSlugs) slugs.add(slug);
+  for (const slug of canadaNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
@@ -385,6 +387,7 @@ export const stubPages = [
   { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
   { path: 'coleccion/polimero-mundial', es: 'Billetes de polímero', en: 'Polymer banknotes' },
   { path: 'coleccion/polimero-mundial/europa/inglaterra', es: 'Inglaterra', en: 'England' },
+  { path: 'coleccion/polimero-mundial/Canada', es: 'Canadá', en: 'Canada' },
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
   { path: 'glosario', es: 'Glosario', en: 'Glossary' },
@@ -423,7 +426,9 @@ const dedicatedEs = [
   ...chinaNoteSlugs,
   POLIMERO_MUNDIAL_PATH.replace(/^\/|\/$/g, ''),
   POLIMERO_INGLATERRA_PATH.replace(/^\/|\/$/g, ''),
+  POLIMERO_CANADA_PATH.replace(/^\/|\/$/g, ''),
   ...englandNoteSlugs,
+  ...canadaNoteSlugs,
   ECUADOR_PATH.replace(/^\/|\/$/g, ''),
   GUATEMALA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),

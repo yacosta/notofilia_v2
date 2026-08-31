@@ -23,7 +23,7 @@ export type TypeCatalogEra =
 
 export type TypeCatalogFlag = 'holding' | 'pending' | 'specimen' | 'remainder' | 'proof' | 'error';
 
-export type TypeCatalogCountry = 'CO' | 'US' | 'PH' | 'CN' | 'GB';
+export type TypeCatalogCountry = 'CO' | 'US' | 'PH' | 'CN' | 'GB' | 'CA';
 
 export type TypeCatalogFilter = 'all' | TypeCatalogFlag | TypeCatalogEra | Lowercase<TypeCatalogCountry>;
 

@@ -39,6 +39,12 @@ describe('mega-nav columns', () => {
             en: 'Europe',
             children: [{ id: 'polimero-inglaterra', es: 'Inglaterra', en: 'England', flag: 'gb' }],
           },
+          {
+            id: 'polimero-norteamerica',
+            es: 'América del Norte',
+            en: 'North America',
+            children: [{ id: 'polimero-canada', es: 'Canadá', en: 'Canada', flag: 'ca' }],
+          },
         ],
       },
     ]);
@@ -59,6 +65,7 @@ describe('mega-nav columns', () => {
       [
         { id: 'polimero-asia', children: [{ id: 'polimero-china', flag: 'cn' }] },
         { id: 'polimero-europa', children: [{ id: 'polimero-inglaterra', flag: 'gb' }] },
+        { id: 'polimero-norteamerica', children: [{ id: 'polimero-canada', flag: 'ca' }] },
       ],
     );
   });
@@ -103,11 +110,29 @@ describe('polymer submenu', () => {
     assert.match(polymer, /id: 'polimero-inglaterra'[\s\S]*?flag: 'gb'/);
   });
 
+  it('nests Canada under North America in both locales and does not keep a sibling Canada link', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    assert.match(polymer, /id: 'polimero-norteamerica'/);
+    assert.match(polymer, /es: 'América del Norte'/);
+    assert.match(polymer, /en: 'North America'/);
+    assert.match(polymer, /id: 'polimero-canada'/);
+    assert.match(polymer, /es: 'Canadá'/);
+    assert.match(polymer, /en: 'Canada'/);
+    assert.match(polymer, /href: POLIMERO_CANADA_PATH/);
+    const canadaBlocks = polymer.split("id: 'polimero-canada'");
+    assert.equal(canadaBlocks.length, 2);
+    assert.match(polymer, /id: 'polimero-norteamerica'[\s\S]*id: 'polimero-canada'/);
+    assert.match(polymer, /id: 'polimero-europa'[\s\S]*id: 'polimero-norteamerica'/);
+    assert.match(polymer, /id: 'polimero-canada'[\s\S]*?flag: 'ca'/);
+  });
+
   it('gives every polymer country child a flag code', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
     assert.match(polymer, /id: 'polimero-china'[\s\S]*?flag: 'cn'/);
     assert.match(polymer, /id: 'polimero-inglaterra'[\s\S]*?flag: 'gb'/);
+    assert.match(polymer, /id: 'polimero-canada'[\s\S]*?flag: 'ca'/);
     const countryIds = [...polymer.matchAll(/id: '(polimero-[^']+)'/g)].map((match) => match[1]);
     for (const id of countryIds) {
       const block = polymer.split(`id: '${id}'`)[1]?.split(/id: '/)[0] ?? '';
@@ -122,6 +147,7 @@ describe('country flags', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const flags = [...nav.matchAll(/flag:\s*'([a-z]{2})'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
+    assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
