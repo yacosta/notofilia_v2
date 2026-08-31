@@ -128,6 +128,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/miscellaneous/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/rency/', 'en'),
+      '/en/collection/united-states/rency/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'en'),
       '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
@@ -298,6 +302,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/'],
       '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/rency/'],
+      '/en/collection/united-states/rency/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/'],

@@ -29,6 +29,8 @@ export const USA_MPC_PATH = '/coleccion/estados-unidos/mpc-vietnam/';
 export const USA_MPC_PATH_EN = '/collection/united-states/mpc-vietnam/';
 export const USA_MISC_PATH = '/coleccion/estados-unidos/miscelaneos/';
 export const USA_MISC_PATH_EN = '/collection/united-states/miscellaneous/';
+export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
+export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -176,8 +178,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Contemporary interventions on genuine $2 notes, not official BEP redesigns.',
     },
     body: {
-      es: 'El 2 dólares de la Reserva Federal volvió a emitirse en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de 2 dólares se detuviera en 1966. Sobre ese soporte legal, artistas contemporáneos —en esta colección, sobre todo Rency Art— imprimen serigrafías y estampados que convierten el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP: son piezas de arte sobre papel de curso legal. La vitrina reunirá series como Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé.',
-      en: 'The Federal Reserve $2 returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the $2 United States Note had been halted in 1966. On that legal substrate, contemporary artists — in this collection, chiefly Rency Art — screen and stamp designs that turn the note into pop art. These are not Treasury or BEP issues: they are art objects on legal-tender paper. The case will gather series such as Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé.',
+      es: 'El 2 dólares de la Reserva Federal volvió a emitirse en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de 2 dólares se detuviera en 1966. Sobre ese soporte legal, artistas contemporáneos —en esta colección, sobre todo Rency Art— imprimen serigrafías y estampados que convierten el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP: son piezas de arte sobre papel de curso legal. Las fichas de Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé se publicarán en la vitrina de Rency a medida que se fotografíen.',
+      en: 'The Federal Reserve $2 returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the $2 United States Note had been halted in 1966. On that legal substrate, contemporary artists — in this collection, chiefly Rency Art — screen and stamp designs that turn the note into pop art. These are not Treasury or BEP issues: they are art objects on legal-tender paper. Note pages for Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé will be published in the Rency case as they are photographed.',
     },
   },
   {
@@ -277,6 +279,7 @@ export const seriesCopy = {
       'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
+    viewRencyCase: 'Abrir la vitrina de Rency',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
@@ -296,6 +299,7 @@ export const seriesCopy = {
       'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
+    viewRencyCase: 'Open the Rency case',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
@@ -308,6 +312,10 @@ export function seriesPath(locale: 'es' | 'en'): string {
 
 export function miscSeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_MISC_PATH, locale);
+}
+
+export function rencySeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_RENCY_PATH, locale);
 }
 
 export const miscSeriesIntro: CatalogProsePart[][] = [
@@ -455,6 +463,89 @@ export const miscSeriesSources: CatalogSource[] = [
     note: {
       es: 'Gualtiero Giori; pruebas de Ginebra (Nueva York) hacia los años 1970; planchas «nonsense» del BEP; la posesión privada se legalizó más tarde.',
       en: 'Gualtiero Giori; Geneva, New York trials in the 1970s; BEP nonsense plates; private ownership later made legal.',
+    },
+  },
+];
+
+export const rencySeriesCopy = {
+  es: {
+    metaTitle: 'Estados Unidos · Rency Art | Notofilia',
+    metaDescription:
+      'Vitrina de pop art sobre billetes auténticos de 2 dólares de Rency Art. Las fichas se publicarán a medida que se fotografíen.',
+    kicker: 'Estados Unidos · Pop art',
+    title: 'Rency Art sobre el 2 dólares',
+    breadcrumbCurrent: 'Rency',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'El 2 dólares de la Reserva Federal volvió a emitirse en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de esa denominación se detuviera en 1966. Sigue siendo curso legal. Sobre ese papel, no sobre un rediseño del BEP, artistas contemporáneos imprimen serigrafías y estampados que convierten el billete en objeto de pop art.',
+      'En esta colección esa intervención es, sobre todo, Rency Art. El nombre del artista —Rency, a veces escrito Renci— viene de currency: el soporte es un Federal Reserve Note auténtico, no una emisión del Tesoro. Las series que se documentarán aquí incluyen Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé.',
+      'Esta vitrina está lista para las fichas. Cada pieza tendrá su propia página, con anverso, reverso y el serial del 2 dólares subyacente, cuando se suban las imágenes.',
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Fuentes',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsIntro:
+      'Las fichas de cada pieza se publicarán a medida que se fotografíen, como en Filipinas.',
+    emptyHoldings:
+      'Aún no hay fichas en esta vitrina. Life Is Beautiful, Lionel Messi, Warhol–Basquiat, el mugshot de Trump y The King Pelé se documentarán aquí cuando se suban las imágenes.',
+  },
+  en: {
+    metaTitle: 'United States · Rency Art | Notofilia',
+    metaDescription:
+      'Case for Rency Art pop interventions on genuine $2 notes. Individual note pages will be published as they are photographed.',
+    kicker: 'United States · Pop art',
+    title: 'Rency Art on the $2',
+    breadcrumbCurrent: 'Rency',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'The Federal Reserve $2 returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the United States Note of that denomination had been halted in 1966. It remains legal tender. On that paper — not on a BEP redesign — contemporary artists screen and stamp designs that turn the note into pop art.',
+      'In this collection that intervention is chiefly Rency Art. The artist’s name — Rency, sometimes spelled Renci — comes from currency: the substrate is a genuine Federal Reserve Note, not a Treasury issue. Series to be documented here include Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé.',
+      'This case is ready for the note pages. Each piece will have its own record, with face, back, and the serial of the underlying $2, when the images are uploaded.',
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Sources',
+    holdingsTitle: 'Notes in the collection',
+    holdingsIntro:
+      'Individual note pages will be published as they are photographed, as in the Philippines case.',
+    emptyHoldings:
+      'There are no note pages in this case yet. Life Is Beautiful, Lionel Messi, Warhol–Basquiat, the Trump mugshot, and The King Pelé will be documented here when the images are uploaded.',
+  },
+} as const;
+
+export const rencySeriesSources: CatalogSource[] = [
+  {
+    href: 'https://www.uscurrency.gov/denominations/2',
+    es: 'U.S. Currency Education Program — 2-dollar note',
+    en: 'U.S. Currency Education Program — 2-dollar note',
+    note: {
+      es: 'El FRN de 2 dólares se reanudó en 1976, en el 233.º aniversario de Jefferson.',
+      en: 'The $2 FRN resumed in 1976, on the 233rd anniversary of Jefferson’s birth.',
+    },
+  },
+  {
+    href: 'https://www.bep.gov/currency/history',
+    es: 'Bureau of Engraving and Printing — History',
+    en: 'Bureau of Engraving and Printing — History',
+    note: {
+      es: 'Contexto de la imprenta federal; las intervenciones de Rency no son emisiones del BEP.',
+      en: 'Context for the federal printer; Rency interventions are not BEP issues.',
+    },
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/United_States_two-dollar_bill',
+    es: 'Wikipedia — United States two-dollar bill',
+    en: 'Wikipedia — United States two-dollar bill',
+    note: {
+      es: 'United States Note de 2 dólares hasta 1966; FRN desde 1976 con el reverso de Trumbull.',
+      en: 'United States Note $2 through 1966; FRN from 1976 with the Trumbull reverse.',
     },
   },
 ];
@@ -1812,6 +1903,7 @@ export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
     miscLink: 'Misceláneos',
+    rencyLink: 'Rency',
     collectionLink: 'Estados Unidos',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
@@ -1832,6 +1924,7 @@ export const notePageCopy = {
   en: {
     seriesLink: 'United States',
     miscLink: 'Miscellaneous',
+    rencyLink: 'Rency',
     collectionLink: 'United States',
     frontHeading: 'Face',
     backHeading: 'Back',
@@ -1861,6 +1954,7 @@ export function notePath(note: UnitedStatesNote, locale: 'es' | 'en'): string {
 
 export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): string {
   if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
+  if (note.chapterId === 'us-pop-art') return rencySeriesPath(locale);
   return `${seriesPath(locale)}#${note.chapterId}`;
 }
 

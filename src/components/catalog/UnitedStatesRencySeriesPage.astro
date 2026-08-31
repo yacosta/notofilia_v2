@@ -1,0 +1,153 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import {
+  notePath,
+  notesForChapter,
+  rencySeriesCopy,
+  rencySeriesPath,
+  rencySeriesSources,
+  seriesSources,
+  USA_PATH,
+} from '../../data/estados-unidos';
+import { catalogAssetSrc } from '../../lib/images';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = rencySeriesCopy[locale];
+const pathname = rencySeriesPath(locale);
+const notes = notesForChapter('us-pop-art');
+const sources = [
+  ...rencySeriesSources,
+  ...seriesSources.filter((source) => !rencySeriesSources.some((own) => own.href === source.href)),
+];
+const hero =
+  locale === 'en'
+    ? {
+        src: '/images/catalog/united-states.jpg',
+        width: 2128,
+        height: 912,
+      }
+    : {
+        src: '/images/catalog/estados-unidos.jpg',
+        width: 2128,
+        height: 912,
+      };
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: USA_PATH },
+    { name: t.breadcrumbCurrent, path: pathname },
+  ],
+});
+---
+
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={catalogAssetSrc(hero.src)}
+  ogImageAlt={t.heroAlt}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_28%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(USA_PATH, locale), label: t.parentLink },
+          { label: t.breadcrumbCurrent },
+        ]}
+      />
+
+      <div class="w-full text-[17px]/7 text-cream">
+        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <section class="mt-16" aria-labelledby="rency-holdings-heading">
+        <h2 id="rency-holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        {
+          notes.length > 0 ? (
+            <ol
+              class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+              aria-label={t.holdingsTitle}
+            >
+              {notes.map((note) => (
+                <li class="min-w-0">
+                  <a
+                    href={notePath(note, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                  >
+                    <CatalogThumb
+                      src={note.images.front}
+                      alt={note.frontCaption[locale]}
+                      width={note.images.width ?? 1800}
+                      height={note.images.height ?? 600}
+                      class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    />
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {note.title[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                    </p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <div class="mt-8 rounded-[6px] border border-dashed border-line-strong bg-panel px-6 py-10">
+              <p class="m-0 text-[17px]/7 text-muted">{t.emptyHoldings}</p>
+            </div>
+          )
+        }
+      </section>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={sources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={localizePath(USA_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {copy[locale].backUnitedStates}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

@@ -62,6 +62,10 @@ export default defineConfig({
     '/en/coleccion/polimero-mundial/canada': '/en/collection/world-polymer/Canada/',
     '/en/coleccion/polimero-mundial/Canada': '/en/collection/world-polymer/Canada/',
     '/en/coleccion/polimero-mundial/america-del-norte/canada': '/en/collection/world-polymer/Canada/',
+    '/coleccion/estados-unidos/renci': '/coleccion/estados-unidos/rency/',
+    '/en/collection/united-states/renci': '/en/collection/united-states/rency/',
+    '/en/coleccion/estados-unidos/renci': '/en/collection/united-states/rency/',
+    '/en/coleccion/estados-unidos/rency': '/en/collection/united-states/rency/',
     ...generated,
   },
   vite: {
