@@ -11,16 +11,19 @@ const pageSource = readFileSync(
 );
 
 describe('colombia-errors', () => {
-  it('publishes the Gaitán miscut and fold-over from the errores chapter', () => {
+  it('publishes the Gaitán miscut, fold-over, and García Márquez numbering error from the errores chapter', () => {
     assert.match(errorsSource, /chapterId === 'errores'/);
     assert.match(errorsSource, /export function hasErrorNotes\(\)/);
     assert.match(notesSource, /id: '1000-pesos-error-2008'/);
     assert.match(notesSource, /id: '1000-pesos-error-2011'/);
+    assert.match(notesSource, /id: '50000-pesos-error-2015'/);
     assert.match(notesSource, /chapterId: 'errores'/);
     assert.match(notesSource, /serial: '23085962'/);
     assert.match(notesSource, /serial: '11508701'/);
+    assert.match(notesSource, /serial: 'AB69350427'/);
     assert.match(notesSource, /P# 456 \/ TBB B986/);
     assert.match(notesSource, /P# 456n \/ TBB B986n/);
+    assert.match(notesSource, /P# 462a \/ TBB B997a/);
   });
 
   it('groups error notes by year and denomination in the module', () => {

@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('50000-pesos-error-2015');
+if (!note) throw new Error('Missing Banco de la República 50000 pesos 2015 error catalog note');
+---
+
+<ColombiaNotePage locale="en" note={note} />
