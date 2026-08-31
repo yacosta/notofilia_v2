@@ -85,7 +85,11 @@ describe('sitemap coverage stays derived from catalog data', () => {
     assert.match(sitemapSource, /const extra = \['\/'\]/);
   });
 
-  it('maps the Colombia 50,000-peso error pair used in the sitemap', () => {
+  it('maps the Colombia 50,000-peso error pairs used in the sitemap', () => {
+    assert.equal(
+      localizePath('/coleccion/colombia/50000-pesos-error-2008/', 'en'),
+      '/en/collection/colombia/50000-pesos-error-2008/',
+    );
     assert.equal(
       localizePath('/coleccion/colombia/50000-pesos-error-2015/', 'en'),
       '/en/collection/colombia/50000-pesos-error-2015/',

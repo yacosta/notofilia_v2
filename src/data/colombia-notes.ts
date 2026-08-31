@@ -17,6 +17,7 @@ export type ColombiaNoteId =
   | '20000-pesos-2017'
   | '1000-pesos-error-2008'
   | '1000-pesos-error-2011'
+  | '50000-pesos-error-2008'
   | '50000-pesos-error-2015';
 
 export type ColombiaNote = {
@@ -1416,6 +1417,104 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '50000-pesos-error-2008',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}50000-pesos-error-2008/`,
+    pick: 'P# 455l / TBB B992l',
+    serial: '72461316 / 72411316',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Impreso en tintas sobre papel. Fecha impresa en el anverso, bajo las firmas: 5 de septiembre de 2008. Formato 140 × 70 mm; ocho dígitos, sin letra de serie. González White 2019 lista esa fecha entre los 50.000 de Jorge Isaacs (pp. 138–139) y marca la emisión N.D. El Bank Note Museum numera 05.09.2008 como Pick 455l. Numista asigna TBB B992l, Hernández# 657 y el par JDUE / GHC. La producción BanRep de 50.000 pesos en 2008 es 171 millones de piezas: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the face, under the signatures: 5 September 2008. Size 140 × 70 mm; eight digits, no series letter. González White 2019 lists that date among the Jorge Isaacs 50,000s (pp. 138–139) and marks the emisión N.D. The Bank Note Museum numbers 05.09.2008 as Pick 455l. Numista assigns TBB B992l, Hernández# 657, and the JDUE / GHC pair. BanRep’s 2008 production of 50,000-peso notes is 171 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-composite.jpg',
+      front: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-front.jpg',
+      back: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-back.jpg',
+    },
+    title: {
+      es: '50.000 pesos · error de numeración · 2008',
+      en: '50,000 pesos · numbering error · 2008',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Seriales distintos',
+      en: 'Colombia · Errors · Mismatched serials',
+    },
+    lead: {
+      es: 'Cincuenta mil pesos de Jorge Isaacs, Pick 455l / TBB B992l: fecha 5 de septiembre de 2008, con un error de numeración —las dos series del anverso no coinciden—. Arriba a la izquierda, en negro, 72461316; abajo a la izquierda, en rojo, 72411316. El cuarto dígito cambia de 6 a 1. Esta ficha reúne anverso y reverso de la misma pieza, en funda, circulada, sin encapsular.',
+      en: 'A Jorge Isaacs fifty-thousand-peso note, Pick 455l / TBB B992l: date 5 September 2008, with a numbering error — the two face serials do not match. At upper left, in black, 72461316; at lower left, in red, 72411316. The fourth digit changes from 6 to 1. This record gathers the face and back of the same circulated, unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El cincuenta mil de Jorge Isaacs, en formato vertical de 140 × 70 mm, es el Pick 455 (2001–2014) / TBB B992, impreso por la Imprenta de Billetes. González White numera el tipo en las fichas de 50.000 Isaacs. El primer diseño, del 7 de agosto de 2000, es Pick 449, con la leyenda Santa Fe de Bogotá; desde el 1.º de mayo de 2001 el lugar de impresión deja de figurar y el Standard Catalog pasa a 455. Esta pieza lleva en el anverso «5 DE SEPTIEMBRE DE 2008» bajo las firmas —455l— y el pie de la Imprenta de Billetes. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2008, antes del cambio a José Tolosa en 2011. El anverso, en verdes, violetas y ocres, muestra a María arriba, el libro abierto, y a Isaacs abajo; a la izquierda, las dos numeraciones verticales. En un ejemplar ordinario esas dos series son idénticas: ocho dígitos, sin prefijo. Aquí no lo son. La superior, en tinta negra, lee 72461316; la inferior, en tinta roja, lee 72411316. Solo cambia el cuarto dígito (6 frente a 1). Ninguna de las dos es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera): lo que distingue la pieza es el error, no el tipo. Es una maculatura de numeración —dos cabezales que no coincidieron—, no una variedad de diseño ni un entintado excesivo. El reverso lleva el excerpto de María, las palmas, la Hacienda El Paraíso y el sello de Libertad. No debe confundirse con el 50.000 de García Márquez (Pick 462), ni con la fecha hermana 04.09.2008 (455k), ni con el error de numeración de 2015 (serial AB69350427) de esta misma vitrina, cuyas dos series coinciden y salieron tapadas de tinta. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'The Jorge Isaacs fifty-thousand, in the vertical 140 × 70 mm format, is Pick 455 (2001–2014) / TBB B992, printed by the Imprenta de Billetes. González White numbers the type in the Isaacs 50,000 listings. The first design, 7 August 2000, is Pick 449, with the legend Santa Fe de Bogotá; from 1 May 2001 the place of printing drops off and the Standard Catalog moves to 455. This piece carries “5 DE SEPTIEMBRE DE 2008” on the face under the signatures — 455l — and the Imprenta de Billetes imprint. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2008 dates, before the change to José Tolosa in 2011. The face, in greens, violets, and ochres, shows María above, the open book, and Isaacs below; at left, the two vertical numberings. On an ordinary example those two serials are identical: eight digits, no prefix. Here they are not. The upper one, in black ink, reads 72461316; the lower one, in red ink, reads 72411316. Only the fourth digit changes (6 versus 1). Neither is a low serial or a collector pattern (radar, binary, solid, or ladder): what distinguishes the piece is the error, not the type. It is a numbering maculature — two numbering heads that did not agree — not a design variety and not over-inking. The back carries the excerpt from María, the palms, Hacienda El Paraíso, and the Liberty seal. It should not be confused with the García Márquez 50,000 (Pick 462), with the sister date 04.09.2008 (455k), or with this case’s 2015 numbering error (serial AB69350427), whose two serials match and left the press filled with ink. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Jorge Isaacs (Cali, 1837 – Ibagué, 1895), autor de María (1867), preside el cincuenta mil del Banco de la República desde la primera fecha, 7 de agosto de 2000, puesta en circulación el 1.º de diciembre de 2000. El anverso combina su retrato con la figura de María; el reverso, la Hacienda El Paraíso —escenario de la novela— y un fragmento del texto. Óscar Muñoz firmó los motivos. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 50.000 de García Márquez. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura de numeración que escapó con las dos series distintas.',
+      en: 'Jorge Isaacs (Cali, 1837 – Ibagué, 1895), author of María (1867), has occupied the Banco de la República fifty-thousand since the first date, 7 August 2000, put into circulation on 1 December 2000. The face pairs his portrait with the figure of María; the back, Hacienda El Paraíso — the novel’s setting — and a fragment of the text. Óscar Muñoz designed the motifs. The type ran through 2014; in 2016 the García Márquez 50,000 joined it, and later replaced it in circulation. This record does not document an ordinary circulating example: it documents a numbering maculature that escaped with the two serials different.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50.000 pesos, Pick 455l: Isaacs, María, la fecha 5 de septiembre de 2008 y las series 72461316 (negro) y 72411316 (rojo), que no coinciden.',
+      en: 'Face of the 50,000 pesos, Pick 455l: Isaacs, María, the date 5 September 2008, and serials 72461316 (black) and 72411316 (red), which do not match.',
+    },
+    backCaption: {
+      es: 'Reverso del 50.000 pesos, Pick 455l: un fragmento de María, las palmas, la Hacienda El Paraíso y el sello del Banco de la República.',
+      en: 'Back of the 50,000 pesos, Pick 455l: the excerpt from María, the palms, Hacienda El Paraíso, and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 138–139) no publica cifra de emisión para el 5 de septiembre de 2008 (N.D.). El Bank Note Museum describe Pick 455 como el tipo 2001–2014 de 140 × 70 mm y marca 455l esa fecha. Numista agrupa el diseño bajo N# 208162, con índice de rareza 26, y marca la frecuencia de 05.09.2008 en 0,3 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 171 millones de piezas a todos los 50.000 pesos de 2008: no es la tirada de una fecha, de un par de firmas ni de un error de numeración. Dos series que no coinciden son una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (pp. 138–139) publishes no emisión figure for 5 September 2008 (N.D.). The Bank Note Museum describes Pick 455 as the 2001–2014 140 × 70 mm type and marks 455l for that date. Numista groups the design under N# 208162, with a rarity index of 26, and marks the 05.09.2008 date’s frequency at 0.3% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 171 million pieces to every 50,000-peso note of 2008: that is not the printage of one date, signature pair, or numbering error. Two serials that do not match are a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para los seriales 72461316 / 72411316. La pieza se presenta en funda, circulada, con un pliegue horizontal, sin encapsular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serials 72461316 / 72411316 has not been independently verified. The note is shown in a sleeve, circulated, with a horizontal fold, unslabbed. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · circulado · error de numeración (seriales distintos)',
+      en: 'Unslabbed · in a sleeve · circulated · numbering error (mismatched serials)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0455.htm',
+        es: 'Bank Note Museum — Colombia P-455, 50.000 pesos (2001–2014)',
+        en: 'Bank Note Museum — Colombia P-455, 50,000 pesos (2001–2014)',
+        note: {
+          es: 'Tipo 2001–2014, Imprenta de Billetes; anverso Isaacs y María, reverso Hacienda El Paraíso. Esta pieza es 05.09.2008 (455l). El catálogo marca 455k como 04.09.2008.',
+          en: '2001–2014 type, Imprenta de Billetes; Isaacs and María on the face, Hacienda El Paraíso on the back. This piece is 05.09.2008 (455l). The catalogue marks 455k as 04.09.2008.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/208162',
+        es: 'Numista — Colombia 50.000 pesos, N# 208162',
+        en: 'Numista — Colombia 50,000 pesos, N# 208162',
+        note: {
+          es: 'Fecha 05.09.2008: P# 455l, TBB B992l, Hernández# 657; firmas JDUE y GHC; frecuencia 0,3 % en el tipo; índice de rareza 26. No se publican columnas de precio.',
+          en: '05.09.2008 date: P# 455l, TBB B992l, Hernández# 657; signatures JDUE and GHC; 0.3% frequency within the type; rarity index 26. Price columns are not published here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/billete-50000-pesos-edicion-conmemorativa-jorge-isaacs',
+        es: 'Banco de la República — Billete de 50.000 pesos, edición Jorge Isaacs',
+        en: 'Banco de la República — 50,000-peso note, Jorge Isaacs issue',
+        note: {
+          es: 'Homenaje a Isaacs y a María; motivos de Óscar Muñoz; Hacienda El Paraíso. No nombra esta fecha impresa ni estos seriales.',
+          en: 'Homage to Isaacs and María; motifs by Óscar Muñoz; Hacienda El Paraíso. It does not name this printed date or these serials.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2008 de 50.000 pesos: 171 millones de piezas (total de la denominación ese año, no de una fecha Pick ni de un error). La tabla de entregas a Tesorería comienza en 2010.',
+          en: '2008 production of 50,000-peso notes: 171 million pieces (the denomination total for that year, not one Pick date or error). The Tesorería delivery table begins in 2010.',
+        },
+      },
+    ],
+  },
+  {
     id: '1000-pesos-error-2011',
     chapterId: 'errores',
     path: `${COLOMBIA_PATH}1000-pesos-error-2011/`,
@@ -1536,8 +1635,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A García Márquez fifty-thousand-peso note, Pick 462a / TBB B997a: date 19 August 2015, series AB, and serial AB69350427, with a numbering error — heavy over-inking — that fills both face serials with black blocks. This record gathers the face and back of the same unslabbed note, in a sleeve.',
     },
     description: {
-      es: 'En 2016 el Banco de la República puso en circulación una familia nueva —de 2.000 a 100.000— con formato por denominación y un programa iconográfico que sale de los próceres de la independencia. El 19 de agosto de 2016 el cincuenta mil fue el tercero de esa Nueva Familia: circularía a la vez que el 50.000 de Jorge Isaacs. El homenaje a Gabriel García Márquez cumple el artículo 5.º de la Ley 1741 de 2014; el mismo diseño exalta la Ciudad Perdida, la Sierra Nevada de Santa Marta, el colibrí piquicorto y el burgao. González White numera el tipo de 148 × 66 mm en las fichas NF50; el Bank Note Museum, Pick 462 (2015–2022), impreso por la Imprenta de Billetes en tintas sobre papel. Esta pieza lleva la fecha «19 DE AGOSTO DE 2015» en el canto derecho del reverso —la primera fecha, 462a— y el pie «IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA». Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista y González White asignan a esa fecha (BG# NF50-2, serie AB; TBB B997a). El anverso, en violeta y azul, muestra a García Márquez de cuerpo entero al centro, con las mariposas, y un primer plano a la derecha; a la izquierda, el colibrí piquicorto (Ramphomicron dorsale) en tinta ópticamente variable y el burgao como registro. El serial AB69350427 va dos veces en negro, arriba a la izquierda y abajo a la derecha: no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). Lo que distingue esta pieza es el error, no el tipo: las dos numeraciones salieron de la máquina con un entintado excesivo. Cada carácter —las letras AB y los ocho dígitos— queda tapado por un bloque rectangular de tinta negra, de grano espeso; se lee el serial, pero no como cifra limpia sobre el fondo. Es una maculatura de numeración, no una variedad de diseño. El reverso lleva a dos indígenas de la Sierra Nevada, las terrazas de Ciudad Perdida, un fragmento del discurso «La soledad de América Latina» y el sello de Libertad. No debe confundirse con el 50.000 de Isaacs (Pick 455), ni con las fechas 02.08.2016 (462b), 29.08.2017, 24.07.2018 o posteriores, ni con las series AA o AE–AH de las mismas fechas. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
-      en: 'In 2016 the Banco de la República put a new family into circulation — 2,000 to 100,000 — with a size per denomination and an iconographic program that moves beyond independence heroes. On 19 August 2016 the fifty-thousand was the third note of that New Family: it would circulate alongside the Jorge Isaacs 50,000. The homage to Gabriel García Márquez fulfils article 5 of Law 1741 of 2014; the same design exalts Ciudad Perdida, the Sierra Nevada de Santa Marta, the short-billed hummingbird, and the burgao snail. González White numbers the 148 × 66 mm type as the NF50 listings; the Bank Note Museum, Pick 462 (2015–2022), printed by the Imprenta de Billetes in inks on paper. This piece carries the date “19 DE AGOSTO DE 2015” on the right edge of the back — the first date, 462a — and the imprint “IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA.” The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista and González White assign to that date (BG# NF50-2, series AB; TBB B997a). The face, in violet and blue, shows García Márquez standing at centre with the butterflies and a close-up at right; at left, the short-billed hummingbird (Ramphomicron dorsale) in optically variable ink and the burgao as a registration device. Serial AB69350427 appears twice in black, at upper left and lower right: it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). What distinguishes this piece is the error, not the type: both numberings left the machine heavily over-inked. Each character — the letters AB and the eight digits — is filled by a rectangular block of thick black ink; the serial can be read, but not as a clean figure on the ground. It is a numbering maculature, not a design variety. The back carries two indigenous people of the Sierra Nevada, the terraces of Ciudad Perdida, a fragment of the speech “La soledad de América Latina,” and the Liberty seal. It should not be confused with the Isaacs 50,000 (Pick 455), with dates 02.08.2016 (462b), 29.08.2017, 24.07.2018 or later, or with series AA or AE–AH of the same dates. This record gathers both sides of the same unslabbed note, in a sleeve.',
+      es: 'En 2016 el Banco de la República puso en circulación una familia nueva —de 2.000 a 100.000— con formato por denominación y un programa iconográfico que sale de los próceres de la independencia. El 19 de agosto de 2016 el cincuenta mil fue el tercero de esa Nueva Familia: circularía a la vez que el 50.000 de Jorge Isaacs. El homenaje a Gabriel García Márquez cumple el artículo 5.º de la Ley 1741 de 2014; el mismo diseño exalta la Ciudad Perdida, la Sierra Nevada de Santa Marta, el colibrí piquicorto y el burgao. González White numera el tipo de 148 × 66 mm en las fichas NF50; el Bank Note Museum, Pick 462 (2015–2022), impreso por la Imprenta de Billetes en tintas sobre papel. Esta pieza lleva la fecha «19 DE AGOSTO DE 2015» en el canto derecho del reverso —la primera fecha, 462a— y el pie «IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA». Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista y González White asignan a esa fecha (BG# NF50-2, serie AB; TBB B997a). El anverso, en violeta y azul, muestra a García Márquez de cuerpo entero al centro, con las mariposas, y un primer plano a la derecha; a la izquierda, el colibrí piquicorto (Ramphomicron dorsale) en tinta ópticamente variable y el burgao como registro. El serial AB69350427 va dos veces en negro, arriba a la izquierda y abajo a la derecha: no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). Lo que distingue esta pieza es el error, no el tipo: las dos numeraciones salieron de la máquina con un entintado excesivo. Cada carácter —las letras AB y los ocho dígitos— queda tapado por un bloque rectangular de tinta negra, de grano espeso; se lee el serial, pero no como cifra limpia sobre el fondo. Es una maculatura de numeración, no una variedad de diseño. El reverso lleva a dos indígenas de la Sierra Nevada, las terrazas de Ciudad Perdida, un fragmento del discurso «La soledad de América Latina» y el sello de Libertad. No debe confundirse con el 50.000 de Isaacs (Pick 455), ni con el error de seriales discordantes de 2008 de esta misma vitrina (72461316 / 72411316), ni con las fechas 02.08.2016 (462b), 29.08.2017, 24.07.2018 o posteriores, ni con las series AA o AE–AH de las mismas fechas. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'In 2016 the Banco de la República put a new family into circulation — 2,000 to 100,000 — with a size per denomination and an iconographic program that moves beyond independence heroes. On 19 August 2016 the fifty-thousand was the third note of that New Family: it would circulate alongside the Jorge Isaacs 50,000. The homage to Gabriel García Márquez fulfils article 5 of Law 1741 of 2014; the same design exalts Ciudad Perdida, the Sierra Nevada de Santa Marta, the short-billed hummingbird, and the burgao snail. González White numbers the 148 × 66 mm type as the NF50 listings; the Bank Note Museum, Pick 462 (2015–2022), printed by the Imprenta de Billetes in inks on paper. This piece carries the date “19 DE AGOSTO DE 2015” on the right edge of the back — the first date, 462a — and the imprint “IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA.” The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista and González White assign to that date (BG# NF50-2, series AB; TBB B997a). The face, in violet and blue, shows García Márquez standing at centre with the butterflies and a close-up at right; at left, the short-billed hummingbird (Ramphomicron dorsale) in optically variable ink and the burgao as a registration device. Serial AB69350427 appears twice in black, at upper left and lower right: it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). What distinguishes this piece is the error, not the type: both numberings left the machine heavily over-inked. Each character — the letters AB and the eight digits — is filled by a rectangular block of thick black ink; the serial can be read, but not as a clean figure on the ground. It is a numbering maculature, not a design variety. The back carries two indigenous people of the Sierra Nevada, the terraces of Ciudad Perdida, a fragment of the speech “La soledad de América Latina,” and the Liberty seal. It should not be confused with the Isaacs 50,000 (Pick 455), with this case’s 2008 mismatched-serial error (72461316 / 72411316), with dates 02.08.2016 (462b), 29.08.2017, 24.07.2018 or later, or with series AA or AE–AH of the same dates. This record gathers both sides of the same unslabbed note, in a sleeve.',
     },
     history: {
       es: 'Gabriel José de la Concordia García Márquez (Aracataca, 1927 – Ciudad de México, 2014) preside el cincuenta mil de la familia de 2016. El Congreso mandó el retrato (art. 5.º, Ley 1741 de 2014). El comunicado BanRep del 19 de agosto de 2016 lo pone en circulación ese día en Santa Marta, el tercero de la Nueva Familia, conviviendo con el 50.000 de Isaacs; el Banco Agrario de Aracataca fue el primero en recibirlo. González White anota, para la serie AB de esta fecha impresa, la circulación el 18 de noviembre de 2016 (BG# NF50-2). El Bank Note Museum data las fechas impresas del Pick 462 de 2015 a 2022: esta pieza es la primera, 19.08.2015 (462a), con las firmas de Uribe y Tolosa. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura de numeración que escapó con ambas series tapadas.',

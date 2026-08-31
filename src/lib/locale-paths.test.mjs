@@ -188,6 +188,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/1000-pesos-error-2011/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/50000-pesos-error-2008/', 'en'),
+      '/en/collection/colombia/50000-pesos-error-2008/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/50000-pesos-error-2015/', 'en'),
       '/en/collection/colombia/50000-pesos-error-2015/',
     );
