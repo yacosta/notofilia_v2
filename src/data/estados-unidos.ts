@@ -1,5 +1,27 @@
-import type { CatalogSource, LocalizedText } from './catalog';
+import type { CatalogProsePart, CatalogSource, LocalizedText } from './catalog';
+import { catalogProseText } from './catalog';
 import { localizePath } from '../lib/locale-paths';
+
+export const WHERES_GEORGE_HREF = 'https://www.wheresgeorge.com';
+
+const miscChapterBodyParts: CatalogProsePart[] = [
+  {
+    text: {
+      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 1 dólar, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para ',
+      en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $1, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for ',
+    },
+  },
+  {
+    href: WHERES_GEORGE_HREF,
+    label: { es: 'Where’s George?', en: 'Where’s George?' },
+  },
+  {
+    text: {
+      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further note pages will be published here as they are photographed.',
+    },
+  },
+];
 
 export const USA_PATH = '/coleccion/estados-unidos/';
 export const USA_PATH_EN = '/collection/united-states/';
@@ -25,6 +47,8 @@ export type UnitedStatesChapter = {
   title: LocalizedText;
   lead: LocalizedText;
   body: LocalizedText;
+  /** When set, the series page renders this as inline markup (real `<a>` tags), not a plain string. */
+  bodyParts?: CatalogProsePart[];
 };
 
 export const unitedStatesChapters: UnitedStatesChapter[] = [
@@ -167,9 +191,10 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       es: 'Papel marcado en circulación, notas de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
       en: 'Marked circulating paper, test notes, commemorative scrip, and other pieces that sit outside the federal series and pop art.',
     },
+    bodyParts: miscChapterBodyParts,
     body: {
-      es: 'Fuera del papel de curso legal «limpio» y de las intervenciones contemporáneas sobre el 2 dólares, esta vitrina reúne piezas que no forman una serie propia: un Federal Reserve Note estampado para Where’s George?, notas de prueba Giori, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: 'Outside “clean” legal-tender paper and the contemporary interventions on the $2, this case holds pieces that do not form a series of their own: a Federal Reserve Note stamped for Where’s George?, Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further note pages will be published here as they are photographed.',
+      es: catalogProseText(miscChapterBodyParts, 'es'),
+      en: catalogProseText(miscChapterBodyParts, 'en'),
     },
   },
 ];
@@ -285,6 +310,70 @@ export function miscSeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_MISC_PATH, locale);
 }
 
+export const miscSeriesIntro: CatalogProsePart[][] = [
+  [
+    {
+      text: {
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y más adelante scrip y emisiones promocionales.',
+        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and later scrip and promotional issues.',
+      },
+    },
+  ],
+  [
+    {
+      href: WHERES_GEORGE_HREF,
+      label: { es: 'Where’s George?', en: 'Where’s George?' },
+    },
+    {
+      text: {
+        es: ' es un sitio web que registra el recorrido geográfico del papel moneda de Estados Unidos. Lo lanzó Hank Eskin el 23 de diciembre de 1998. El nombre apunta al retrato de George Washington en el 1 dólar. Quien tiene un billete anota la denominación, la serie, el número de serie y el código postal. Si otra persona vuelve a introducir el mismo serial, el sitio registra un «hit»: ciudad, distancia y tiempo de viaje. El propio FAQ dice que existe «por diversión y porque nadie lo había hecho». Las reglas piden circulación natural: gastar el billete en la vida cotidiana, no enviarlo por correo ni pasarlo a conocidos para fabricar hits.',
+        en: ' is a website that records the geographic path of United States paper money. Hank Eskin launched it on 23 December 1998. The name points to George Washington’s portrait on the $1. Anyone holding a note enters the denomination, series, serial number, and ZIP code. When someone else later enters the same serial, the site logs a “hit”: city, distance, and travel time. The FAQ says the site exists “for fun and because it had not been done yet.” The rules ask for natural circulation: spend the note in everyday life; do not mail it or pass it to acquaintances in order to manufacture hits.',
+      },
+    },
+  ],
+  [
+    {
+      text: {
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. Further pieces will be published as they are photographed.',
+      },
+    },
+  ],
+];
+
+const whereGeorgeHistory: CatalogProsePart[][] = [
+  [
+    {
+      href: WHERES_GEORGE_HREF,
+      label: { es: 'Where’s George?', en: 'Where’s George?' },
+    },
+    {
+      text: {
+        es: ' es un proyecto web que sigue el recorrido geográfico del papel moneda de Estados Unidos. Hank Eskin, consultor de bases de datos en Brookline, Massachusetts, lo puso en marcha el 23 de diciembre de 1998. El nombre apunta a Washington en el 1 dólar, aunque el sitio acepta también 2, 5, 10, 20, 50 y 100 dólares; el 1 concentra la mayor parte de las entradas. El mecanismo es deliberadamente simple: se anotan denominación, serie, número de serie y código postal. Si más adelante otra persona introduce el mismo serial, el sitio registra un hit —ciudad, distancia y tiempo de viaje—. El FAQ oficial responde a «¿por qué existe este sitio?» con «por diversión y porque nadie lo había hecho».',
+        en: ' is a web project that follows the geographic path of United States paper money. Hank Eskin, a database consultant in Brookline, Massachusetts, launched it on 23 December 1998. The name points to Washington on the $1, though the site also accepts $2, $5, $10, $20, $50, and $100 notes; the $1 accounts for most entries. The mechanism is deliberately simple: enter denomination, series, serial number, and ZIP code. If someone later enters the same serial, the site logs a hit — city, distance, and travel time. The official FAQ answers “Why does this site exist?” with “for fun and because it had not been done yet.”',
+      },
+    },
+  ],
+  [
+    {
+      text: {
+        es: 'El punto del sitio es documentar la circulación natural, no fabricar recorridos. Las reglas piden gastar el billete en la vida cotidiana y prohíben enviarlo por correo o pasarlo a conocidos para generar hits. Los sellos y la escritura en el papel —como los de esta pieza— son el reclamo para que el siguiente tenedor visite ',
+        en: 'The point of the site is to document natural circulation, not to manufacture itineraries. The rules ask users to spend the note in everyday life and forbid mailing it or passing it to acquaintances in order to generate hits. Stamps and writing on the paper — as on this piece — are the prompt for the next holder to visit ',
+      },
+    },
+    {
+      href: WHERES_GEORGE_HREF,
+      label: { es: 'www.wheresgeorge.com', en: 'www.wheresgeorge.com' },
+    },
+    {
+      text: {
+        es: ' e introduzca el serial. En 2006, Dirk Brockmann, Lars Hufnagel y Theo Geisel usaron ese registro en Nature como proxy del desplazamiento humano en Estados Unidos. Esta ficha describe el objeto físico y el proyecto; no republica el mapa de hits del serial K46602688C.',
+        en: ' and enter the serial. In 2006 Dirk Brockmann, Lars Hufnagel, and Theo Geisel used that register in Nature as a proxy for human travel in the United States. This record describes the physical object and the project; it does not republish the hit map for serial K46602688C.',
+      },
+    },
+  ],
+];
+
 export const miscSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
@@ -296,11 +385,7 @@ export const miscSeriesCopy = {
     parentLink: 'Estados Unidos',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
-    intro: [
-      'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 2 dólares: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y más adelante scrip y emisiones promocionales.',
-      'Where’s George? es un sitio web que registra el recorrido geográfico del papel moneda de Estados Unidos. Lo lanzó Hank Eskin el 23 de diciembre de 1998. El nombre apunta al retrato de George Washington en el 1 dólar. Quien tiene un billete anota la denominación, la serie, el número de serie y el código postal. Si otra persona vuelve a introducir el mismo serial, el sitio registra un «hit»: ciudad, distancia y tiempo de viaje. El propio FAQ dice que existe «por diversión y porque nadie lo había hecho». Las reglas piden circulación natural: gastar el billete en la vida cotidiana, no enviarlo por correo ni pasarlo a conocidos para fabricar hits.',
-      'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. Las demás piezas se publicarán a medida que se fotografíen.',
-    ],
+    intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'es')),
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
@@ -317,11 +402,7 @@ export const miscSeriesCopy = {
     parentLink: 'United States',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
-    intro: [
-      'This case holds United States paper that does not belong in the federal series or in pop art on the $2: a Federal Reserve Note marked for circulation tracking, a Giori test note, and later scrip and promotional issues.',
-      'Where’s George? is a website that records the geographic path of United States paper money. Hank Eskin launched it on 23 December 1998. The name points to George Washington’s portrait on the $1. Anyone holding a note enters the denomination, series, serial number, and ZIP code. When someone else later enters the same serial, the site logs a “hit”: city, distance, and travel time. The FAQ says the site exists “for fun and because it had not been done yet.” The rules ask for natural circulation: spend the note in everyday life; do not mail it or pass it to acquaintances in order to manufacture hits.',
-      'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. Further pieces will be published as they are photographed.',
-    ],
+    intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'en')),
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
@@ -419,7 +500,7 @@ export type UnitedStatesNote = {
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
-  history?: LocalizedText | LocalizedText[];
+  history?: LocalizedText | LocalizedText[] | CatalogProsePart[][];
   historyHeading?: LocalizedText;
   frontCaption: LocalizedText;
   backCaption: LocalizedText;
@@ -1521,16 +1602,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       es: 'El 1 dólar de la serie 2006 (Pick 523a, Friedberg 1933-K) es un Federal Reserve Note de tamaño pequeño del distrito de Dallas: sello negro con la K, el 11 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF DALLAS TEXAS». El anverso, en negro con sello y seriales verdes, lleva el retrato de George Washington en óvalo y, a la derecha, el sello del Tesoro sobre ONE. Las firmas son las de Anna Escobedo Cabral y Henry M. Paulson, Jr.; la serie impresa, 2006, queda junto al secretario. Los seriales K 46602688 C se repiten abajo a la izquierda y arriba a la derecha (bloque KC). El reverso, en verde, muestra ambas caras del Gran Sello —la pirámide y el águila— flanqueando ONE, con IN GOD WE TRUST encima. Sobre ese tipo cotidiano, un tenedor anterior aplicó sellos en tinta roja que no son del BEP ni del Tesoro: a la derecha del retrato, un sello circular «Track this bill» / www.wheresgeorge.com; junto a él, «Currency Circulation Study / FM B 70»; a la izquierda, un pictograma de pavo; en los márgenes del reverso, «FOLLOW MY JOURNEY AT» y www.WHERESGEORGE.com en vertical. Esta pieza de la colección, circulada y sin encapsular, se presenta en funda, con manchas de foxing en los bordes. No es el 1 dólar de 2003 de Atlanta con estrella, serial F05033622★: los distinguen la serie 2006, el distrito K / 11, las firmas Cabral–Paulson, este serial y los sellos.',
       en: 'The Series 2006 $1 (Pick 523a, Friedberg 1933-K) is a small-size Federal Reserve Note of the Dallas district: a black seal with K, 11s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF DALLAS TEXAS.” The black face with green seal and serials carries George Washington in an oval and, at right, the Treasury seal over ONE. The signatures are Anna Escobedo Cabral and Henry M. Paulson, Jr.; the printed series, 2006, sits beside the Secretary. Serials K 46602688 C repeat at lower left and upper right (KC block). The green back shows both faces of the Great Seal — the pyramid and the eagle — flanking ONE, with IN GOD WE TRUST above. On that everyday type a previous holder applied red-ink stamps that are neither BEP nor Treasury work: to the right of the portrait, a circular “Track this bill” / www.wheresgeorge.com stamp; beside it, “Currency Circulation Study / FM B 70”; at left, a turkey pictogram; on the back margins, vertical “FOLLOW MY JOURNEY AT” and www.WHERESGEORGE.com. This collection piece, circulated and unslabbed, is shown in a sleeve, with foxing along the edges. It is not the Series 2003 Atlanta star $1, serial F05033622★: Series 2006, district K / 11, Cabral–Paulson signatures, this serial, and the stamps distinguish it.',
     },
-    history: [
-      {
-        es: 'Where’s George? es un proyecto web que sigue el recorrido geográfico del papel moneda de Estados Unidos. Hank Eskin, consultor de bases de datos en Brookline, Massachusetts, lo puso en marcha el 23 de diciembre de 1998. El nombre apunta a Washington en el 1 dólar, aunque el sitio acepta también 2, 5, 10, 20, 50 y 100 dólares; el 1 concentra la mayor parte de las entradas. El mecanismo es deliberadamente simple: se anotan denominación, serie, número de serie y código postal. Si más adelante otra persona introduce el mismo serial, el sitio registra un hit —ciudad, distancia y tiempo de viaje—. El FAQ oficial responde a «¿por qué existe este sitio?» con «por diversión y porque nadie lo había hecho».',
-        en: 'Where’s George? is a web project that follows the geographic path of United States paper money. Hank Eskin, a database consultant in Brookline, Massachusetts, launched it on 23 December 1998. The name points to Washington on the $1, though the site also accepts $2, $5, $10, $20, $50, and $100 notes; the $1 accounts for most entries. The mechanism is deliberately simple: enter denomination, series, serial number, and ZIP code. If someone later enters the same serial, the site logs a hit — city, distance, and travel time. The official FAQ answers “Why does this site exist?” with “for fun and because it had not been done yet.”',
-      },
-      {
-        es: 'El punto del sitio es documentar la circulación natural, no fabricar recorridos. Las reglas piden gastar el billete en la vida cotidiana y prohíben enviarlo por correo o pasarlo a conocidos para generar hits. Los sellos y la escritura en el papel —como los de esta pieza— son el reclamo para que el siguiente tenedor visite wheresgeorge.com e introduzca el serial. En 2006, Dirk Brockmann, Lars Hufnagel y Theo Geisel usaron ese registro en Nature como proxy del desplazamiento humano en Estados Unidos. Esta ficha describe el objeto físico y el proyecto; no republica el mapa de hits del serial K46602688C.',
-        en: 'The point of the site is to document natural circulation, not to manufacture itineraries. The rules ask users to spend the note in everyday life and forbid mailing it or passing it to acquaintances in order to generate hits. Stamps and writing on the paper — as on this piece — are the prompt for the next holder to visit wheresgeorge.com and enter the serial. In 2006 Dirk Brockmann, Lars Hufnagel, and Theo Geisel used that register in Nature as a proxy for human travel in the United States. This record describes the physical object and the project; it does not republish the hit map for serial K46602688C.',
-      },
-    ],
+    history: whereGeorgeHistory,
     historyHeading: {
       es: 'Where’s George?',
       en: 'Where’s George?',

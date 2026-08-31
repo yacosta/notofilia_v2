@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import CatalogProseParagraph from './CatalogProseParagraph.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
@@ -100,7 +101,17 @@ const jsonLd = collectionPageJsonLd({
                 {chapter.title[locale]}
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                chapter.bodyParts ? (
+                  <CatalogProseParagraph
+                    locale={locale}
+                    parts={chapter.bodyParts}
+                    class="m-0 text-[17px]/7 text-cream"
+                  />
+                ) : (
+                  <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+                )
+              }
               {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol

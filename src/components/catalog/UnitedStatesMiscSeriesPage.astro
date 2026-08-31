@@ -3,10 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import CatalogProseParagraph from './CatalogProseParagraph.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
   miscSeriesCopy,
+  miscSeriesIntro,
   miscSeriesPath,
   miscSeriesSources,
   notePath,
@@ -90,7 +92,9 @@ const jsonLd = collectionPageJsonLd({
       />
 
       <div class="w-full text-[17px]/7 text-cream">
-        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        {miscSeriesIntro.map((paragraph) => (
+          <CatalogProseParagraph locale={locale} parts={paragraph} class="mb-5 mt-0 last:mb-0" />
+        ))}
       </div>
 
       {

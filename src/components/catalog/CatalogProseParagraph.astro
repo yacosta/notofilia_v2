@@ -1,0 +1,33 @@
+---
+import NewWindowHint from '../NewWindowHint.astro';
+import type { CatalogProsePart } from '../../data/catalog';
+import type { Locale } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+  parts: CatalogProsePart[];
+  class?: string;
+}
+
+const { locale, parts, class: className } = Astro.props;
+---
+
+<p class={className}>
+  {
+    parts.map((part) =>
+      'href' in part ? (
+        <a
+          href={part.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+        >
+          {part.label[locale]}
+          <NewWindowHint locale={locale} />
+        </a>
+      ) : (
+        part.text[locale]
+      ),
+    )
+  }
+</p>
