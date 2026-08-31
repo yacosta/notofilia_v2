@@ -178,8 +178,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Contemporary interventions on genuine United States notes, not official BEP redesigns.',
     },
     body: {
-      es: 'Sobre papel de curso legal —sobre todo el 1 y el 2 dólares de la Reserva Federal—, artistas contemporáneos imprimen, estampan o dibujan hasta convertir el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP. En esta colección esa intervención es, sobre todo, Renci (firma RENCI; en el mercado también Rency). Ya tiene ficha Pelé / The Beautiful Game, edición 5/200, serial F71235101A. Life Is Beautiful, Lionel Messi, Warhol–Basquiat y el mugshot de Trump se documentarán en la vitrina de Renci a medida que se fotografíen.',
-      en: 'On legal-tender paper — chiefly the Federal Reserve $1 and $2 — contemporary artists print, stamp, or draw until the note becomes a pop-art object. These are not Treasury or BEP issues. In this collection that intervention is chiefly Renci (signed RENCI; also marketed as Rency). Pelé / The Beautiful Game, edition 5/200, serial F71235101A, already has a note page. Life Is Beautiful, Lionel Messi, Warhol–Basquiat, and the Trump mugshot will be documented in the Renci case as they are photographed.',
+      es: 'Sobre papel de curso legal —sobre todo el 1 y el 2 dólares de la Reserva Federal—, artistas contemporáneos imprimen, estampan o dibujan hasta convertir el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP. En esta colección esa intervención es, sobre todo, Renci (firma RENCI; en el mercado también Rency). Ya tienen ficha Pelé / The Beautiful Game, edición 5/200, y Warhol y Basquiat / Life Is Beautiful; ambas muestran el serial impreso F71235101A y son objetos distintos. Lionel Messi, una pieza Life Is Beautiful aparte y el mugshot de Trump se documentarán en la vitrina de Renci a medida que se fotografíen.',
+      en: 'On legal-tender paper — chiefly the Federal Reserve $1 and $2 — contemporary artists print, stamp, or draw until the note becomes a pop-art object. These are not Treasury or BEP issues. In this collection that intervention is chiefly Renci (signed RENCI; also marketed as Rency). Pelé / The Beautiful Game, edition 5/200, and Warhol & Basquiat / Life Is Beautiful already have note pages; both show printed serial F71235101A and are distinct objects. Lionel Messi, a separate Life Is Beautiful piece, and the Trump mugshot will be documented in the Renci case as they are photographed.',
     },
   },
   {
@@ -471,7 +471,7 @@ export const rencySeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Renci | Notofilia',
     metaDescription:
-      'Vitrina de pop art de Renci sobre billetes auténticos de Estados Unidos: Pelé / The Beautiful Game, edición 5/200, serial F71235101A.',
+      'Vitrina de pop art de Renci sobre billetes auténticos de Estados Unidos: Pelé / The Beautiful Game, edición 5/200, y Warhol y Basquiat / Life Is Beautiful.',
     kicker: 'Estados Unidos · Pop art',
     title: 'Renci sobre papel de curso legal',
     breadcrumbCurrent: 'Renci',
@@ -481,7 +481,7 @@ export const rencySeriesCopy = {
     intro: [
       'Renci —así firma estas piezas, en mayúsculas RENCI; en el mercado también se vende como Rency, de currency— es un artista de pop y street art estadounidense que interviene billetes auténticos. Trabaja de forma anónima. Las comparaciones con Banksy que aparecen en fichas de dealers son marketing, no un hecho documentado. No es Rency Punnoose, diseñador de otro oficio.',
       'El soporte es papel de curso legal, no un rediseño del BEP ni una emisión del Tesoro: sobre todo el 1 y el 2 dólares de la Reserva Federal. El 2 dólares FRN volvió en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de esa denominación se detuviera en 1966.',
-      'Abre la vitrina Pelé / The Beautiful Game, edición 5/200: anverso de un 1 dólar con superposición pop (serial F71235101A) y reverso de un 2 dólares (Declaración de Independencia), plancha 52, con firma manuscrita Renci. Life Is Beautiful, Lionel Messi, Warhol–Basquiat y el mugshot de Trump se documentarán aquí a medida que se fotografíen.',
+      'La vitrina reúne Pelé / The Beautiful Game, edición 5/200 —anverso de un 1 dólar con superposición pop y reverso de un 2 dólares, plancha 52— y Warhol y Basquiat / Life Is Beautiful, un 2 dólares intervenido por ambas caras, plancha 23, con firma manuscrita Renci y sin fracción de edición. Las dos piezas muestran el serial impreso F71235101A; no son el mismo objeto. Lionel Messi, una pieza Life Is Beautiful aparte y el mugshot de Trump se documentarán aquí a medida que se fotografíen.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -496,7 +496,7 @@ export const rencySeriesCopy = {
   en: {
     metaTitle: 'United States · Renci | Notofilia',
     metaDescription:
-      'Renci pop-art case on genuine United States notes: Pelé / The Beautiful Game, edition 5/200, serial F71235101A.',
+      'Renci pop-art case on genuine United States notes: Pelé / The Beautiful Game, edition 5/200, and Warhol & Basquiat / Life Is Beautiful.',
     kicker: 'United States · Pop art',
     title: 'Renci on legal-tender paper',
     breadcrumbCurrent: 'Renci',
@@ -506,7 +506,7 @@ export const rencySeriesCopy = {
     intro: [
       'Renci — the signature on these pieces, in capitals RENCI; also marketed as Rency, from currency — is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is marketing, not a documented fact. This is not Rency Punnoose, a designer in another field.',
       'The substrate is legal-tender paper, not a BEP redesign or a Treasury issue: chiefly the Federal Reserve $1 and $2. The $2 FRN returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the United States Note of that denomination had been halted in 1966.',
-      'The case opens with Pelé / The Beautiful Game, edition 5/200: the face of a $1 with a pop overlay (serial F71235101A) and the back of a $2 (Declaration of Independence), plate 52, with a manuscript Renci signature. Life Is Beautiful, Lionel Messi, Warhol–Basquiat, and the Trump mugshot will be documented here as they are photographed.',
+      'The case holds Pelé / The Beautiful Game, edition 5/200 — a $1 face with a pop overlay and a $2 reverse, plate 52 — and Warhol & Basquiat / Life Is Beautiful, a $2 intervened on both faces, plate 23, with a manuscript Renci signature and no edition fraction. Both pieces show printed serial F71235101A; they are not the same object. Lionel Messi, a separate Life Is Beautiful piece, and the Trump mugshot will be documented here as they are photographed.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -535,8 +535,8 @@ export const rencySeriesSources: CatalogSource[] = [
     es: 'U.S. Currency Education Program — 2-dollar note',
     en: 'U.S. Currency Education Program — 2-dollar note',
     note: {
-      es: 'El FRN de 2 dólares se reanudó en 1976, en el 233.º aniversario de Jefferson.',
-      en: 'The $2 FRN resumed in 1976, on the 233rd anniversary of Jefferson’s birth.',
+      es: 'El FRN de 2 dólares se reanudó en 1976; Warhol y Basquiat / Life Is Beautiful usa anverso y reverso de este tipo.',
+      en: 'The $2 FRN resumed in 1976; Warhol & Basquiat / Life Is Beautiful uses both faces of this type.',
     },
   },
   {
@@ -571,7 +571,8 @@ export type UnitedStatesNoteId =
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
   | 'nota-prueba-giori-lincoln-memorial'
-  | 'renci-pele-the-beautiful-game';
+  | 'renci-pele-the-beautiful-game'
+  | 'renci-warhol-basquiat-life-is-beautiful';
 
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
@@ -1962,8 +1963,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of an FRN $2 (Declaration of Independence), plate 52, with manuscript Renci and edition 5/200.',
     },
     scarcity: {
-      es: 'El artista numeró esta pieza 5/200. Esa fracción es una declaración de edición sobre el papel, no un censo PMG o PCGS ni una tirada del BEP. No se publica aquí un recuento independiente de ejemplares supervivientes. El híbrido 1 dólar / 2 dólares distingue el objeto de un 2 dólares intervenido por ambas caras.',
-      en: 'The artist numbered this piece 5/200. That fraction is an edition statement on the paper, not a PMG or PCGS census and not a BEP printage. This record does not publish an independent count of surviving examples. The $1 / $2 hybrid sets the object apart from a $2 intervened on both faces.',
+      es: 'El artista numeró esta pieza 5/200. Esa fracción es una declaración de edición sobre el papel, no un censo PMG o PCGS ni una tirada del BEP. No se publica aquí un recuento independiente de ejemplares supervivientes. El híbrido 1 dólar / 2 dólares distingue el objeto de Warhol y Basquiat / Life Is Beautiful, el 2 dólares de esta vitrina intervenido por ambas caras, que muestra el mismo serial impreso F71235101A.',
+      en: 'The artist numbered this piece 5/200. That fraction is an edition statement on the paper, not a PMG or PCGS census and not a BEP printage. This record does not publish an independent count of surviving examples. The $1 / $2 hybrid sets the object apart from Warhol & Basquiat / Life Is Beautiful, the $2 in this case intervened on both faces, which shows the same printed serial F71235101A.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial F71235101A ni para la edición 5/200. La pieza se presenta sin encapsular.',
@@ -2008,6 +2009,120 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Edson Arantes do Nascimento (1940–2022); motivo de la superposición.',
           en: 'Edson Arantes do Nascimento (1940–2022); subject of the overlay.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Contexto de la imprenta federal; la superposición no es una emisión del BEP.',
+          en: 'Context for the federal printer; the overlay is not a BEP issue.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'renci-warhol-basquiat-life-is-beautiful',
+    chapterId: 'us-pop-art',
+    path: '/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
+    pathEn: '/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
+    pick: 'Renci',
+    serial: 'F71235101A',
+    signatures: {
+      es: 'Firma manuscrita Renci (reverso); las firmas del Tesoro del 2 dólares quedan bajo la superposición',
+      en: 'Manuscript Renci (back); the $2 Treasury signatures sit under the overlay',
+    },
+    printed: {
+      es: 'Papel de la Reserva Federal (BEP) de 2 dólares con intervención de Renci en anverso y reverso. No hay fracción de edición manuscrita. Esta ficha no inventa una tirada del BEP para el tipo.',
+      en: 'Federal Reserve $2 paper (BEP) with a Renci intervention on both faces. There is no manuscript edition fraction. This record does not invent a BEP printage for the type.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/renci-warhol-basquiat-life-is-beautiful-composite.jpg',
+      front: '/images/catalog/estados-unidos/renci-warhol-basquiat-life-is-beautiful-front.jpg',
+      back: '/images/catalog/estados-unidos/renci-warhol-basquiat-life-is-beautiful-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: 'Warhol y Basquiat / Life Is Beautiful',
+      en: 'Warhol & Basquiat / Life Is Beautiful',
+    },
+    kicker: {
+      es: 'Estados Unidos · Pop art · Renci',
+      en: 'United States · Pop art · Renci',
+    },
+    lead: {
+      es: 'Una sola pieza: anverso pop sobre un 2 dólares auténtico, serial F 71235101 A, y reverso de Trumbull con firma manuscrita Renci y plancha 23.',
+      en: 'One object: a pop-art face on a genuine $2, serial F 71235101 A, and Trumbull’s reverse with a manuscript Renci signature and plate 23.',
+    },
+    description: {
+      es: 'El anverso parte de un Federal Reserve Note de 2 dólares: numeral 2 en las esquinas y seriales verdes F 71235101 A. Sobre ese grabado, Renci superpone a Andy Warhol (izquierda: cabello blanco, cuello de tortuga negro) y Jean-Michel Basquiat (derecha: chaqueta estampada) espalda contra espalda, una lata Campbell’s Tomato Soup a la izquierda, una calavera al estilo Basquiat a la derecha y la corona de tres picos en el centro superior. Las leyendas incluyen «SAMO LIVES», «WORLD FAMOUS», «TOMATO SOUP», «CURRENCY», «NEW YORK CITY», «LIFE IS BEAUTIFUL», «THIS ART WILL LAST FOREVER», «STUDIO 54» y «FOLLOW YOUR DREAMS», con salpicaduras de pintura. El reverso es el del 2 dólares FRN: la Declaración de Independencia de Trumbull, el número de plancha 23 junto al grabado y, a mano en rotulador negro, «Renci». No hay fracción de edición. Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP. El serial impreso F71235101A también aparece en Pelé / The Beautiful Game de esta vitrina; son dos objetos físicos distintos (híbrido 1/2 dólares frente a este 2 dólares por ambas caras).',
+      en: 'The face starts from a $2 Federal Reserve Note: corner 2s and green serials F 71235101 A. Over that engraving Renci overlays Andy Warhol (left: white hair, black turtleneck) and Jean-Michel Basquiat (right: patterned jacket) back to back, a Campbell’s Tomato Soup can at left, a Basquiat-style skull at right, and the three-pointed crown at top center. The legends include “SAMO LIVES,” “WORLD FAMOUS,” “TOMATO SOUP,” “CURRENCY,” “NEW YORK CITY,” “LIFE IS BEAUTIFUL,” “THIS ART WILL LAST FOREVER,” “STUDIO 54,” and “FOLLOW YOUR DREAMS,” with paint splatters. The back is the FRN $2 reverse: Trumbull’s Declaration of Independence, plate 23 beside the engraving, and, in black marker, “Renci.” There is no edition fraction. It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue. Printed serial F71235101A also appears on Pelé / The Beautiful Game in this case; they are two distinct physical objects (a $1/$2 hybrid versus this $2 on both faces).',
+    },
+    historyHeading: {
+      es: 'El artista',
+      en: 'The artist',
+    },
+    history: {
+      es: 'Renci firma estas piezas RENCI. En el comercio de arte sobre currency también se usa Rency, de currency. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. Andy Warhol (1928–1987) y Jean-Michel Basquiat (1960–1988) son el motivo: la lata Campbell’s y el retrato de Warhol citan la Factory; la corona, la calavera y «SAMO LIVES» citan a Basquiat; «STUDIO 54» y «NEW YORK CITY» sitúan la escena. Esta ficha describe el objeto físico; no tasamos la intervención ni republicamos precios de subasta.',
+      en: 'Renci signs these pieces RENCI. In the trade in art on currency the name Rency — from currency — is also used. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. Andy Warhol (1928–1987) and Jean-Michel Basquiat (1960–1988) are the subject: the Campbell’s can and Warhol’s portrait cite the Factory; the crown, skull, and “SAMO LIVES” cite Basquiat; “STUDIO 54” and “NEW YORK CITY” place the scene. This record describes the physical object; it does not value the intervention or republish auction prices.',
+    },
+    frontCaption: {
+      es: 'Anverso pop sobre un 2 dólares auténtico, serial F 71235101 A: Warhol y Basquiat, lata Campbell’s, calavera, corona y leyendas que incluyen «LIFE IS BEAUTIFUL» y «SAMO LIVES».',
+      en: 'Pop-art face on a genuine $2, serial F 71235101 A: Warhol and Basquiat, Campbell’s can, skull, crown, and legends including “LIFE IS BEAUTIFUL” and “SAMO LIVES.”',
+    },
+    backCaption: {
+      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 23, con firma manuscrita Renci en rotulador negro. Sin fracción de edición.',
+      en: 'Back of an FRN $2 (Declaration of Independence), plate 23, with a manuscript Renci in black marker. No edition fraction.',
+    },
+    scarcity: {
+      es: 'El reverso lleva la firma manuscrita Renci y el número de plancha 23; no hay fracción de edición. Esa ausencia no se interpreta aquí como tirada abierta ni como censo. El 2 dólares intervenido por ambas caras distingue el objeto del híbrido Pelé / The Beautiful Game, edición 5/200, que muestra el mismo serial impreso.',
+      en: 'The back carries a manuscript Renci and plate 23; there is no edition fraction. That absence is not read here as an open edition or as a census. The $2 intervened on both faces sets the object apart from the Pelé / The Beautiful Game hybrid, edition 5/200, which shows the same printed serial.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este objeto. El serial impreso F71235101A coincide con el de Pelé / The Beautiful Game; la coincidencia se registra y no fusiona las fichas. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for this object has not been independently verified. Printed serial F71235101A matches Pelé / The Beautiful Game; the match is recorded and does not merge the records. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.uscurrency.gov/denominations/2',
+        es: 'U.S. Currency Education Program — 2-dollar note',
+        en: 'U.S. Currency Education Program — $2 note',
+        note: {
+          es: 'Tipo de 2 dólares de la Reserva Federal: Jefferson y el reverso de Trumbull; esta pieza usa ambas caras de ese tipo bajo la superposición.',
+          en: 'Federal Reserve $2 type: Jefferson and Trumbull’s reverse; this piece uses both faces of that type under the overlay.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Andy_Warhol',
+        es: 'Wikipedia — Andy Warhol',
+        en: 'Wikipedia — Andy Warhol',
+        note: {
+          es: 'Andrew Warhola (1928–1987); retrato y lata Campbell’s en la superposición.',
+          en: 'Andrew Warhola (1928–1987); portrait and Campbell’s can in the overlay.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Jean-Michel_Basquiat',
+        es: 'Wikipedia — Jean-Michel Basquiat',
+        en: 'Wikipedia — Jean-Michel Basquiat',
+        note: {
+          es: 'Jean-Michel Basquiat (1960–1988); retrato, corona, calavera y «SAMO LIVES».',
+          en: 'Jean-Michel Basquiat (1960–1988); portrait, crown, skull, and “SAMO LIVES.”',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/United_States_two-dollar_bill',
+        es: 'Wikipedia — United States two-dollar bill',
+        en: 'Wikipedia — United States two-dollar bill',
+        note: {
+          es: 'United States Note de 2 dólares hasta 1966; FRN desde 1976 con el reverso de Trumbull.',
+          en: 'United States Note $2 through 1966; FRN from 1976 with the Trumbull reverse.',
         },
       },
       {

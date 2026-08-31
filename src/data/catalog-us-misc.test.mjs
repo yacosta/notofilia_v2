@@ -67,3 +67,16 @@ describe('US Renci Pelé holding', () => {
     assert.match(seriesPage, /USA_RENCY_PATH/);
   });
 });
+
+describe('US Renci Warhol & Basquiat holding', () => {
+  it('records Warhol y Basquiat / Life Is Beautiful as a second pop-art object', () => {
+    assert.match(data, /id: 'renci-warhol-basquiat-life-is-beautiful'/);
+    assert.match(data, /Warhol y Basquiat \/ Life Is Beautiful/);
+    assert.match(data, /Warhol & Basquiat \/ Life Is Beautiful/);
+    assert.match(data, /plancha 23/);
+    assert.match(data, /plate 23/);
+    assert.match(data, /SAMO LIVES/);
+    assert.match(data, /no fusiona las fichas/);
+    assert.match(data, /does not merge the records/);
+  });
+});

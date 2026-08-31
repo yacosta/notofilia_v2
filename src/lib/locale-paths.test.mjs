@@ -136,6 +136,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/', 'en'),
+      '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'en'),
       '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
@@ -314,6 +318,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/'],
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/'],
+      '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/'],

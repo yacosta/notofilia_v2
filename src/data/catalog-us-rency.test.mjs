@@ -27,6 +27,14 @@ const enNote = readFileSync(
   new URL('../pages/en/collection/united-states/rency/pele-the-beautiful-game/index.astro', import.meta.url),
   'utf8',
 );
+const esWarhol = readFileSync(
+  new URL('../pages/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/index.astro', import.meta.url),
+  'utf8',
+);
+const enWarhol = readFileSync(
+  new URL('../pages/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/index.astro', import.meta.url),
+  'utf8',
+);
 
 describe('US Renci pop-art case', () => {
   it('has bilingual series copy and keeps an empty-state fallback', () => {
@@ -45,6 +53,8 @@ describe('US Renci pop-art case', () => {
     assert.match(enRoute, /locale="en"/);
     assert.match(esNote, /renci-pele-the-beautiful-game/);
     assert.match(enNote, /renci-pele-the-beautiful-game/);
+    assert.match(esWarhol, /renci-warhol-basquiat-life-is-beautiful/);
+    assert.match(enWarhol, /renci-warhol-basquiat-life-is-beautiful/);
     assert.match(rencyPage, /notesForChapter\('us-pop-art'\)/);
     assert.match(rencyPage, /t\.emptyHoldings/);
     assert.match(rencyPage, /id="main-content"/);
