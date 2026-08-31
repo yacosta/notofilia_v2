@@ -31,18 +31,21 @@ describe('mega-nav columns', () => {
             id: 'polimero-asia',
             es: 'Asia',
             en: 'Asia',
+            icon: 'asia',
             children: [{ id: 'polimero-china', es: 'China', en: 'China', flag: 'cn' }],
           },
           {
             id: 'polimero-europa',
             es: 'Europa',
             en: 'Europe',
+            icon: 'europe',
             children: [{ id: 'polimero-inglaterra', es: 'Inglaterra', en: 'England', flag: 'gb' }],
           },
           {
             id: 'polimero-norteamerica',
             es: 'América del Norte',
             en: 'North America',
+            icon: 'north-america',
             children: [{ id: 'polimero-canada', es: 'Canadá', en: 'Canada', flag: 'ca' }],
           },
         ],
@@ -60,12 +63,17 @@ describe('mega-nav columns', () => {
     assert.deepEqual(
       aside[0]?.children?.map((node) => ({
         id: node.id,
+        icon: node.icon,
         children: node.children?.map((child) => ({ id: child.id, flag: child.flag })),
       })),
       [
-        { id: 'polimero-asia', children: [{ id: 'polimero-china', flag: 'cn' }] },
-        { id: 'polimero-europa', children: [{ id: 'polimero-inglaterra', flag: 'gb' }] },
-        { id: 'polimero-norteamerica', children: [{ id: 'polimero-canada', flag: 'ca' }] },
+        { id: 'polimero-asia', icon: 'asia', children: [{ id: 'polimero-china', flag: 'cn' }] },
+        { id: 'polimero-europa', icon: 'europe', children: [{ id: 'polimero-inglaterra', flag: 'gb' }] },
+        {
+          id: 'polimero-norteamerica',
+          icon: 'north-america',
+          children: [{ id: 'polimero-canada', flag: 'ca' }],
+        },
       ],
     );
   });
@@ -139,6 +147,21 @@ describe('polymer submenu', () => {
       if (!/href:/.test(block)) continue;
       assert.match(block, /flag: '[a-z]{2}'/, `${id} needs a flag-icons ISO code`);
     }
+  });
+
+  it('marks each polymer continent heading with a continent silhouette', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
+    assert.match(polymer, /id: 'polimero-asia',[\s\S]*?icon: 'asia'/);
+    assert.match(polymer, /id: 'polimero-europa',[\s\S]*?icon: 'europe'/);
+    assert.match(polymer, /id: 'polimero-norteamerica',[\s\S]*?icon: 'north-america'/);
+    const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
+    assert.match(icons, /'asia'/);
+    assert.match(icons, /'europe'/);
+    assert.match(icons, /'north-america'/);
+    assert.match(icons, /icon === 'asia'/);
+    assert.match(icons, /icon === 'europe'/);
+    assert.match(icons, /icon === 'north-america'/);
   });
 });
 
