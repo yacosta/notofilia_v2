@@ -80,3 +80,17 @@ describe('US Renci Warhol & Basquiat holding', () => {
     assert.match(data, /does not merge the records/);
   });
 });
+
+describe('US Renci Trump / Never Surrender holding', () => {
+  it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
+    assert.match(data, /id: 'renci-trump-never-surrender'/);
+    assert.match(data, /Trump \/ Never Surrender/);
+    assert.match(data, /NEVER SURRENDER/);
+    assert.match(data, /STAND UP FOR AMERICA/);
+    assert.match(data, /WITCH HUNT/);
+    assert.match(data, /Fulton County/);
+    assert.match(data, /no se asigna aquí el serial F71235101A/);
+    assert.match(data, /does not assign serial F71235101A/);
+    assert.match(data, /Pop overlay covers the Federal Reserve face/);
+  });
+});

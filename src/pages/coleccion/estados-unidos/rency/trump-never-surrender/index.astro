@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../data/estados-unidos';
+
+const note = noteById('renci-trump-never-surrender');
+if (!note) throw new Error('Missing Renci Trump / Never Surrender catalog note');
+---
+
+<UnitedStatesNotePage locale="es" note={note} />

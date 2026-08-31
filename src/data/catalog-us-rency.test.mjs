@@ -35,6 +35,14 @@ const enWarhol = readFileSync(
   new URL('../pages/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/index.astro', import.meta.url),
   'utf8',
 );
+const esTrump = readFileSync(
+  new URL('../pages/coleccion/estados-unidos/rency/trump-never-surrender/index.astro', import.meta.url),
+  'utf8',
+);
+const enTrump = readFileSync(
+  new URL('../pages/en/collection/united-states/rency/trump-never-surrender/index.astro', import.meta.url),
+  'utf8',
+);
 
 describe('US Renci pop-art case', () => {
   it('has bilingual series copy and keeps an empty-state fallback', () => {
@@ -55,6 +63,8 @@ describe('US Renci pop-art case', () => {
     assert.match(enNote, /renci-pele-the-beautiful-game/);
     assert.match(esWarhol, /renci-warhol-basquiat-life-is-beautiful/);
     assert.match(enWarhol, /renci-warhol-basquiat-life-is-beautiful/);
+    assert.match(esTrump, /renci-trump-never-surrender/);
+    assert.match(enTrump, /renci-trump-never-surrender/);
     assert.match(rencyPage, /notesForChapter\('us-pop-art'\)/);
     assert.match(rencyPage, /t\.emptyHoldings/);
     assert.match(rencyPage, /id="main-content"/);

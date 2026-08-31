@@ -136,6 +136,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/rency/trump-never-surrender/', 'en'),
+      '/en/collection/united-states/rency/trump-never-surrender/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/', 'en'),
       '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
     );
@@ -318,6 +322,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/'],
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/rency/trump-never-surrender/'],
+      '/en/collection/united-states/rency/trump-never-surrender/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/'],
