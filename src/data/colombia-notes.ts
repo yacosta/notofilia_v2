@@ -1322,6 +1322,104 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '50000-pesos-error-2008',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}50000-pesos-error-2008/`,
+    pick: 'P# 455l / TBB B992l',
+    serial: '72461316 / 72411316',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Impreso en tintas sobre papel. Fecha impresa en el anverso, bajo las firmas: 5 de septiembre de 2008. Formato 140 × 70 mm; ocho dígitos, sin letra de serie. González White 2019 lista esa fecha entre los 50.000 de Jorge Isaacs (pp. 138–139) y marca la emisión N.D. El Bank Note Museum numera 05.09.2008 como Pick 455l. Numista asigna TBB B992l, Hernández# 657 y el par JDUE / GHC. La producción BanRep de 50.000 pesos en 2008 es 171 millones de piezas: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the face, under the signatures: 5 September 2008. Size 140 × 70 mm; eight digits, no series letter. González White 2019 lists that date among the Jorge Isaacs 50,000s (pp. 138–139) and marks the emisión N.D. The Bank Note Museum numbers 05.09.2008 as Pick 455l. Numista assigns TBB B992l, Hernández# 657, and the JDUE / GHC pair. BanRep’s 2008 production of 50,000-peso notes is 171 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-composite.jpg',
+      front: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-front.jpg',
+      back: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-back.jpg',
+    },
+    title: {
+      es: '50.000 pesos · error de numeración · 2008',
+      en: '50,000 pesos · numbering error · 2008',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Seriales distintos',
+      en: 'Colombia · Errors · Mismatched serials',
+    },
+    lead: {
+      es: 'Cincuenta mil pesos de Jorge Isaacs, Pick 455l / TBB B992l: fecha 5 de septiembre de 2008, con un error de numeración —las dos series del anverso no coinciden—. Arriba a la izquierda, en negro, 72461316; abajo a la izquierda, en rojo, 72411316. El cuarto dígito cambia de 6 a 1. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A Jorge Isaacs fifty-thousand-peso note, Pick 455l / TBB B992l: date 5 September 2008, with a numbering error — the two face serials do not match. At upper left, in black, 72461316; at lower left, in red, 72411316. The fourth digit changes from 6 to 1. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El cincuenta mil de Jorge Isaacs, en formato vertical de 140 × 70 mm, es el Pick 455 (2001–2014) / TBB B992, impreso por la Imprenta de Billetes. González White numera el tipo en las fichas de 50.000 Isaacs. El primer diseño, del 7 de agosto de 2000, es Pick 449, con la leyenda Santa Fe de Bogotá; desde el 1.º de mayo de 2001 el lugar de impresión deja de figurar y el Standard Catalog pasa a 455. Esta pieza lleva en el anverso «5 DE SEPTIEMBRE DE 2008» bajo las firmas —455l— y el pie de la Imprenta de Billetes. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2008, antes del cambio a José Tolosa en 2011. El anverso, en verdes, violetas y ocres, muestra a María arriba, el libro abierto, y a Isaacs abajo; a la izquierda, las dos numeraciones verticales. En un ejemplar ordinario esas dos series son idénticas: ocho dígitos, sin prefijo. Aquí no lo son. La superior, en tinta negra, lee 72461316; la inferior, en tinta roja, lee 72411316. Solo cambia el cuarto dígito (6 frente a 1). Ninguna de las dos es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera): lo que distingue la pieza es el error, no el tipo. Es una maculatura de numeración —dos cabezales que no coincidieron—, no una variedad de diseño ni un entintado excesivo. El reverso lleva el excerpto de María, las palmas, la Hacienda El Paraíso y el sello de Libertad. No debe confundirse con el 50.000 de García Márquez (Pick 462), ni con la fecha hermana 04.09.2008 (455k), ni con el error de numeración de 2015 (serial AB69350427) de esta misma vitrina, cuyas dos series coinciden y salieron tapadas de tinta. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'The Jorge Isaacs fifty-thousand, in the vertical 140 × 70 mm format, is Pick 455 (2001–2014) / TBB B992, printed by the Imprenta de Billetes. González White numbers the type in the Isaacs 50,000 listings. The first design, 7 August 2000, is Pick 449, with the legend Santa Fe de Bogotá; from 1 May 2001 the place of printing drops off and the Standard Catalog moves to 455. This piece carries “5 DE SEPTIEMBRE DE 2008” on the face under the signatures — 455l — and the Imprenta de Billetes imprint. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2008 dates, before the change to José Tolosa in 2011. The face, in greens, violets, and ochres, shows María above, the open book, and Isaacs below; at left, the two vertical numberings. On an ordinary example those two serials are identical: eight digits, no prefix. Here they are not. The upper one, in black ink, reads 72461316; the lower one, in red ink, reads 72411316. Only the fourth digit changes (6 versus 1). Neither is a low serial or a collector pattern (radar, binary, solid, or ladder): what distinguishes the piece is the error, not the type. It is a numbering maculature — two numbering heads that did not agree — not a design variety and not over-inking. The back carries the excerpt from María, the palms, Hacienda El Paraíso, and the Liberty seal. It should not be confused with the García Márquez 50,000 (Pick 462), with the sister date 04.09.2008 (455k), or with this case’s 2015 numbering error (serial AB69350427), whose two serials match and left the press filled with ink. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Jorge Isaacs (Cali, 1837 – Ibagué, 1895), autor de María (1867), preside el cincuenta mil del Banco de la República desde la primera fecha, 7 de agosto de 2000, puesta en circulación el 1.º de diciembre de 2000. El anverso combina su retrato con la figura de María; el reverso, la Hacienda El Paraíso —escenario de la novela— y un fragmento del texto. Óscar Muñoz firmó los motivos. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 50.000 de García Márquez. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura de numeración que escapó con las dos series distintas.',
+      en: 'Jorge Isaacs (Cali, 1837 – Ibagué, 1895), author of María (1867), has occupied the Banco de la República fifty-thousand since the first date, 7 August 2000, put into circulation on 1 December 2000. The face pairs his portrait with the figure of María; the back, Hacienda El Paraíso — the novel’s setting — and a fragment of the text. Óscar Muñoz designed the motifs. The type ran through 2014; in 2016 the García Márquez 50,000 joined it, and later replaced it in circulation. This record does not document an ordinary circulating example: it documents a numbering maculature that escaped with the two serials different.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50.000 pesos, Pick 455l: Isaacs, María, la fecha 5 de septiembre de 2008 y las series 72461316 (negro) y 72411316 (rojo), que no coinciden.',
+      en: 'Face of the 50,000 pesos, Pick 455l: Isaacs, María, the date 5 September 2008, and serials 72461316 (black) and 72411316 (red), which do not match.',
+    },
+    backCaption: {
+      es: 'Reverso del 50.000 pesos, Pick 455l: excerpto de María, las palmas, la Hacienda El Paraíso y el sello del Banco de la República.',
+      en: 'Back of the 50,000 pesos, Pick 455l: the excerpt from María, the palms, Hacienda El Paraíso, and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 138–139) no publica cifra de emisión para el 5 de septiembre de 2008 (N.D.). El Bank Note Museum describe Pick 455 como el tipo 2001–2014 de 140 × 70 mm y marca 455l esa fecha. Numista agrupa el diseño bajo N# 208162, con índice de rareza 26, y marca la frecuencia de 05.09.2008 en 0,3 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 171 millones de piezas a todos los 50.000 pesos de 2008: no es la tirada de una fecha, de un par de firmas ni de un error de numeración. Dos series que no coinciden son una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (pp. 138–139) publishes no emisión figure for 5 September 2008 (N.D.). The Bank Note Museum describes Pick 455 as the 2001–2014 140 × 70 mm type and marks 455l for that date. Numista groups the design under N# 208162, with a rarity index of 26, and marks the 05.09.2008 date’s frequency at 0.3% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 171 million pieces to every 50,000-peso note of 2008: that is not the printage of one date, signature pair, or numbering error. Two serials that do not match are a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para los seriales 72461316 / 72411316. La pieza se presenta en funda, circulada, con un pliegue horizontal, sin encapsular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serials 72461316 / 72411316 has not been independently verified. The note is shown in a sleeve, circulated, with a horizontal fold, unslabbed. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · circulado · error de numeración (seriales distintos)',
+      en: 'Unslabbed · in a sleeve · circulated · numbering error (mismatched serials)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0455.htm',
+        es: 'Bank Note Museum — Colombia P-455, 50.000 pesos (2001–2014)',
+        en: 'Bank Note Museum — Colombia P-455, 50,000 pesos (2001–2014)',
+        note: {
+          es: 'Tipo 2001–2014, Imprenta de Billetes; anverso Isaacs y María, reverso Hacienda El Paraíso. Esta pieza es 05.09.2008 (455l). El catálogo marca 455k como 04.09.2008.',
+          en: '2001–2014 type, Imprenta de Billetes; Isaacs and María on the face, Hacienda El Paraíso on the back. This piece is 05.09.2008 (455l). The catalogue marks 455k as 04.09.2008.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/208162',
+        es: 'Numista — Colombia 50.000 pesos, N# 208162',
+        en: 'Numista — Colombia 50,000 pesos, N# 208162',
+        note: {
+          es: 'Fecha 05.09.2008: P# 455l, TBB B992l, Hernández# 657; firmas JDUE y GHC; frecuencia 0,3 % en el tipo; índice de rareza 26. No se publican columnas de precio.',
+          en: '05.09.2008 date: P# 455l, TBB B992l, Hernández# 657; signatures JDUE and GHC; 0.3% frequency within the type; rarity index 26. Price columns are not published here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/billete-50000-pesos-edicion-conmemorativa-jorge-isaacs',
+        es: 'Banco de la República — Billete de 50.000 pesos, edición Jorge Isaacs',
+        en: 'Banco de la República — 50,000-peso note, Jorge Isaacs issue',
+        note: {
+          es: 'Homenaje a Isaacs y a María; motivos de Óscar Muñoz; Hacienda El Paraíso. No nombra esta fecha impresa ni estos seriales.',
+          en: 'Homage to Isaacs and María; motifs by Óscar Muñoz; Hacienda El Paraíso. It does not name this printed date or these serials.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2008 de 50.000 pesos: 171 millones de piezas (total de la denominación ese año, no de una fecha Pick ni de un error). La tabla de entregas a Tesorería comienza en 2010.',
+          en: '2008 production of 50,000-peso notes: 171 million pieces (the denomination total for that year, not one Pick date or error). The Tesorería delivery table begins in 2010.',
+        },
+      },
+    ],
+  },
+  {
     id: '1000-pesos-error-2011',
     chapterId: 'errores',
     path: `${COLOMBIA_PATH}1000-pesos-error-2011/`,
@@ -1406,95 +1504,6 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Producción 2011 de 1.000 pesos: 196,1 millones de piezas. Entregas a Tesorería del mismo año: 196,1 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
           en: '2011 production of 1,000-peso notes: 196.1 million pieces. Tesorería deliveries that year: 196.1 million (denomination totals for the year, not one Pick date or error).',
-        },
-      },
-    ],
-  },
-  {
-    id: '50000-pesos-error-2008',
-    chapterId: 'errores',
-    path: `${COLOMBIA_PATH}50000-pesos-error-2008/`,
-    pick: 'P# 455l / TBB B992l',
-    serial: '72461316 / 72411316',
-    signatures: {
-      es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
-      en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
-    },
-    printed: {
-      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha leída en el anverso: 5 de septiembre de 2008. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso, verticales a la izquierda. González White 2019 numera el 50.000 de Isaacs BG# 802–827 (pp. 136–138) y lista el 5 de septiembre de 2008 como BG# 812, emisión N.D. El Bank Note Museum marca 05.09.2008 como Pick 455l. Numista asigna TBB B992l y el par JDUE / GHC a esa fecha (N# 208162; Hernández# 657 en esa ficha). La primera fecha del retrato, 7 de agosto de 2000, es Pick 449 / TBB B992a, no esta pieza. La producción BanRep de 50.000 pesos en 2008 es 171 millones de piezas: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
-      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date read on the face: 5 September 2008. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face, vertical at left. González White 2019 numbers the Isaacs 50,000 as BG# 802–827 (pp. 136–138) and lists 5 September 2008 as BG# 812, emisión N.D. The Bank Note Museum marks 05.09.2008 as Pick 455l. Numista assigns TBB B992l and the JDUE / GHC pair to that date (N# 208162; Hernández# 657 on that record). The portrait’s first date, 7 August 2000, is Pick 449 / TBB B992a, not this piece. BanRep’s 2008 production of 50,000-peso notes is 171 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
-    },
-    images: {
-      composite: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-composite.jpg',
-      front: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-front.jpg',
-      back: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-back.jpg',
-    },
-    title: {
-      es: '50.000 pesos · seriales discordantes · 2008',
-      en: '50,000 pesos · mismatched serials · 2008',
-    },
-    kicker: {
-      es: 'Colombia · Errores · Numeración',
-      en: 'Colombia · Errors · Numbering',
-    },
-    lead: {
-      es: 'Cincuenta mil pesos de Jorge Isaacs, Pick 455l / TBB B992l: fecha 5 de septiembre de 2008 y seriales 72461316 (negro, arriba a la izquierda) y 72411316 (rojo, abajo a la izquierda), que no coinciden en el cuarto dígito. Esta ficha reúne anverso y reverso de la misma pieza, en funda, circulada, sin encapsular.',
-      en: 'A Jorge Isaacs fifty-thousand-peso note, Pick 455l / TBB B992l: date 5 September 2008 and serials 72461316 (black, upper left) and 72411316 (red, lower left), which disagree at the fourth digit. This record gathers the face and back of the same circulated, unslabbed note, in a sleeve.',
-    },
-    description: {
-      es: 'El cincuenta mil de Jorge Isaacs, en formato vertical de 140 × 70 mm, es el Pick 455 (2001–2014) / TBB B992, impreso por la Imprenta de Billetes. González White numera el tipo BG# 802 y siguientes (pp. 136–138). En el anverso de esta pieza se lee «5 DE SEPTIEMBRE DE 2008», que el Bank Note Museum marca 455l y Numista TBB B992l. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de septiembre de 2008, antes del cambio a José Tolosa. El anverso, en violeta, verde y ocre, muestra a María sentada en la mitad superior y a Isaacs en la inferior; a la derecha, el 50 mil pesos en vertical. Lo que distingue esta pieza es el error, no el tipo: las dos numeraciones del anverso no coinciden. Arriba a la izquierda, en negro y en vertical, se lee 72461316; abajo a la izquierda, en rojo, 72411316. El desajuste está en el cuarto dígito —6 frente a 1—; el resto de la cifra es el mismo. No es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). Es una maculatura de numeración: las dos ruedas o cabezas numeradoras no imprimieron el mismo contador. No es un entintado excesivo que tape las cifras. El reverso lleva la hacienda El Paraíso, el samán, las palmas, un fragmento de la novela María y el sello de Libertad. No debe confundirse con el 50.000 de García Márquez (Pick 462), ni con la primera fecha del retrato (7 de agosto de 2000, Pick 449), ni con el 4 de septiembre de 2008 (455k), ni con un Isaacs de seriales coincidentes. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
-      en: 'The Jorge Isaacs fifty-thousand in the vertical 140 × 70 mm format is Pick 455 (2001–2014) / TBB B992, printed by the Imprenta de Billetes. González White numbers the type from BG# 802 (pp. 136–138). On the face of this piece the line “5 DE SEPTIEMBRE DE 2008” is read, which the Bank Note Museum marks 455l and Numista TBB B992l. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the September 2008 dates, before the change to José Tolosa. The face, in violet, green, and ochre, shows María seated in the upper half and Isaacs in the lower; at right, 50 mil pesos running vertically. What distinguishes this piece is the error, not the type: the two face serials do not match. At upper left, in black and vertical, 72461316; at lower left, in red, 72411316. The mismatch is the fourth digit — 6 versus 1 —; the rest of the figure is the same. It is not a low serial and not a collector pattern (radar, binary, solid, or ladder). It is a numbering maculature: the two numbering heads did not print the same counter. It is not heavy over-inking that fills the figures. The back carries Hacienda El Paraíso, the samán tree, the palms, a fragment of the novel María, and the Liberty seal. It should not be confused with the García Márquez 50,000 (Pick 462), with the portrait’s first date (7 August 2000, Pick 449), with 4 September 2008 (455k), or with an Isaacs note whose serials match. This record gathers both sides of the same unslabbed note, in a sleeve.',
-    },
-    history: {
-      es: 'Jorge Enrique Isaacs Ferrer (Cali, 1837–1895) preside el cincuenta mil del Banco de la República desde la primera fecha, 7 de agosto de 2000 (Pick 449), puesta en circulación el 1.º de mayo de 2001 en 140 × 70 mm. El anverso toma a María y al autor; el reverso, la hacienda El Paraíso, escenario de la novela. González White anota el tipo en las fichas BG# 802 y siguientes. El Bank Note Museum data las fechas impresas del Pick 455 de 2001 a 2014: esta pieza es el 5.09.2008 (455l), con las firmas de Uribe y Hernández Correa. En 2016 el banco puso en circulación el 50.000 de García Márquez, que convivió con el de Isaacs. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura de numeración que escapó con los dos seriales distintos.',
-      en: 'Jorge Enrique Isaacs Ferrer (Cali, 1837–1895) has occupied the Banco de la República fifty-thousand since the first date, 7 August 2000 (Pick 449), put into circulation on 1 May 2001 at 140 × 70 mm. The face takes María and the author; the back, Hacienda El Paraíso, the setting of the novel. González White records the type from BG# 802. The Bank Note Museum dates Pick 455 printed dates from 2001 to 2014: this piece is 5 September 2008 (455l), with the signatures of Uribe and Hernández Correa. In 2016 the bank put the García Márquez 50,000 into circulation, running alongside the Isaacs note. This record does not document an ordinary circulating example: it documents a numbering maculature that escaped with two different serials.',
-    },
-    frontCaption: {
-      es: 'Anverso del 50.000 pesos, Pick 455l: Isaacs, fecha 5 de septiembre de 2008 y seriales discordantes 72461316 (negro) y 72411316 (rojo).',
-      en: 'Face of the 50,000 pesos, Pick 455l: Isaacs, the date 5 September 2008, and mismatched serials 72461316 (black) and 72411316 (red).',
-    },
-    backCaption: {
-      es: 'Reverso del 50.000 pesos, Pick 455l: hacienda El Paraíso, el samán y un fragmento de María; el pliegue central de circulación se ve a través de la funda.',
-      en: 'Back of the 50,000 pesos, Pick 455l: Hacienda El Paraíso, the samán tree, and a fragment of María; the circulating centre fold shows through the sleeve.',
-    },
-    scarcity: {
-      es: 'González White 2019 (BG# 812, pp. 136–138) no publica cifra de emisión para el 5 de septiembre de 2008 (N.D.). El Bank Note Museum describe Pick 455 como el tipo 2001–2014 de 140 × 70 mm y marca 455l esa fecha. Numista agrupa el diseño bajo N# 208162, con índice de rareza 26, y marca la frecuencia de 05.09.2008 en 0,3 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 171 millones de piezas a todos los 50.000 pesos de 2008: no es la tirada de una fecha, de un par de firmas ni de un error de numeración. Los lotes Heritage de Pick 455 son comparables de archivo, no esta pieza. Un par de seriales que no coinciden es una pieza de vitrina; esta ficha no inventa una población de ese error.',
-      en: 'González White 2019 (BG# 812, pp. 136–138) publishes no emisión figure for 5 September 2008 (N.D.). The Bank Note Museum describes Pick 455 as the 2001–2014 140 × 70 mm type and marks 455l for that date. Numista groups the design under N# 208162, with a rarity index of 26, and marks the 05.09.2008 date’s frequency at 0.3% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 171 million pieces to every 50,000-peso note of 2008: that is not the printage of one date, signature pair, or numbering error. Heritage Pick 455 lots are archive comparables, not this piece. A pair of serials that do not match is a showcase piece; this record does not invent a population for that error.',
-    },
-    population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para los seriales 72461316 y 72411316. La pieza se presenta en funda, circulada —con un pliegue horizontal al centro—, sin encapsular. El error es de producción, no un certificado de grado.',
-      en: 'A PMG or PCGS census for serials 72461316 and 72411316 has not been independently verified. The note is shown in a sleeve, circulated — with a horizontal centre fold — unslabbed. The error is a production fault, not a grading certificate.',
-    },
-    grade: {
-      es: 'Sin encapsular · en funda · circulado (pliegue central) · error de numeración (seriales discordantes)',
-      en: 'Unslabbed · in a sleeve · circulated (centre fold) · numbering error (mismatched serials)',
-    },
-    sources: [
-      {
-        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0455.htm',
-        es: 'Bank Note Museum — Colombia P-455, 50.000 pesos (2001–2014)',
-        en: 'Bank Note Museum — Colombia P-455, 50,000 pesos (2001–2014)',
-        note: {
-          es: 'Tipo vertical, Imprenta de Billetes; anverso Isaacs y María, reverso hacienda El Paraíso. Esta pieza es 05.09.2008 (455l). El catálogo marca 455k como 04.09.2008. La primera fecha del retrato (07.08.2000) vive en COL0449, no en esta ficha.',
-          en: 'Vertical type, Imprenta de Billetes; Isaacs and María on the face, Hacienda El Paraíso on the back. This piece is 05.09.2008 (455l). The catalogue marks 455k as 04.09.2008. The portrait’s first date (07.08.2000) lives on COL0449, not on this record.',
-        },
-      },
-      {
-        href: 'https://en.numista.com/208162',
-        es: 'Numista — Colombia 50.000 pesos (Isaacs), N# 208162',
-        en: 'Numista — Colombia 50,000 pesos (Isaacs), N# 208162',
-        note: {
-          es: 'Fecha 05.09.2008: P# 455l, TBB B992l, Hernández# 657; firmas JDUE y GHC; 140 × 70 mm. La frecuencia 0,3 % y el índice de rareza 26 son del tipo y de esa fecha ordinaria, no de las maculaturas. No se publican columnas de precio.',
-          en: '05.09.2008 date: P# 455l, TBB B992l, Hernández# 657; signatures JDUE and GHC; 140 × 70 mm. The 0.3% frequency and rarity index 26 are for the type and that ordinary date, not for maculatures. Price columns are not published here.',
-        },
-      },
-      {
-        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
-        es: 'Banco de la República — Producción y circulación de billetes y monedas',
-        en: 'Banco de la República — Banknote and coin production and circulation',
-        note: {
-          es: 'Producción 2008 de 50.000 pesos: 171 millones de piezas (total de la denominación ese año, no de una fecha Pick ni de un error). La tabla de entregas a Tesorería comienza en 2010.',
-          en: '2008 production of 50,000-peso notes: 171 million pieces (the denomination total for that year, not one Pick date or error). The Tesorería delivery table begins in 2010.',
         },
       },
     ],
