@@ -108,6 +108,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/miscellaneous/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'en'),
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/', 'en'),
       '/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     );
@@ -250,6 +254,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/'],
       '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/'],
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/'],
