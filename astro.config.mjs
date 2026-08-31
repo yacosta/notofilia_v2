@@ -63,7 +63,19 @@ export default defineConfig({
     '/en/coleccion/polimero-mundial/Canada': '/en/collection/world-polymer/Canada/',
     '/en/coleccion/polimero-mundial/america-del-norte/canada': '/en/collection/world-polymer/Canada/',
     '/coleccion/estados-unidos/renci': '/coleccion/estados-unidos/rency/',
+    '/coleccion/estados-unidos/renci/pele-the-beautiful-game':
+      '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
+    '/coleccion/estados-unidos/renci/warhol-basquiat-life-is-beautiful':
+      '/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
+    '/coleccion/estados-unidos/renci/trump-never-surrender':
+      '/coleccion/estados-unidos/rency/trump-never-surrender/',
     '/en/collection/united-states/renci': '/en/collection/united-states/rency/',
+    '/en/collection/united-states/renci/pele-the-beautiful-game':
+      '/en/collection/united-states/rency/pele-the-beautiful-game/',
+    '/en/collection/united-states/renci/warhol-basquiat-life-is-beautiful':
+      '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
+    '/en/collection/united-states/renci/trump-never-surrender':
+      '/en/collection/united-states/rency/trump-never-surrender/',
     '/en/coleccion/estados-unidos/renci': '/en/collection/united-states/rency/',
     '/en/coleccion/estados-unidos/rency': '/en/collection/united-states/rency/',
     ...generated,

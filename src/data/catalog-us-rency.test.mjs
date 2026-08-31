@@ -44,12 +44,13 @@ const enTrump = readFileSync(
   'utf8',
 );
 
-describe('US Renci pop-art case', () => {
+describe('US Rency pop-art case', () => {
   it('has bilingual series copy and keeps an empty-state fallback', () => {
     assert.match(data, /USA_RENCY_PATH = '\/coleccion\/estados-unidos\/rency\/'/);
     assert.match(data, /USA_RENCY_PATH_EN = '\/collection\/united-states\/rency\/'/);
-    assert.match(data, /Renci sobre papel de curso legal/);
-    assert.match(data, /Renci on legal-tender paper/);
+    assert.match(data, /Rency sobre papel de curso legal/);
+    assert.match(data, /Rency on legal-tender paper/);
+    assert.doesNotMatch(data, /Renci/);
     assert.match(data, /Aún no hay fichas en esta vitrina/);
     assert.match(data, /There are no note pages in this case yet/);
   });
