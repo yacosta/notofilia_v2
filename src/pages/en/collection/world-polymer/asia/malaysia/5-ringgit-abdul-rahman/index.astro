@@ -1,0 +1,9 @@
+---
+import PolymerMalaysiaNotePage from '../../../../../../../components/catalog/PolymerMalaysiaNotePage.astro';
+import { noteById } from '../../../../../../../data/malaysia-polymer';
+
+const note = noteById('5-ringgit-abdul-rahman');
+if (!note) throw new Error('Missing Malaysia polymer 5-ringgit-abdul-rahman catalog note');
+---
+
+<PolymerMalaysiaNotePage locale="en" note={note} />

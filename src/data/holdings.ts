@@ -99,6 +99,7 @@ export const additions: Holding[] = [
   { id: 'co-2015-50000-pesos-error-ab69350427', kind: 'banknote', country: 'CO' },
   { id: 'gb-2016-5-pounds-ac04879241', kind: 'banknote', country: 'GB' },
   { id: 'ca-2013-5-dollars-hbm0828003', kind: 'banknote', country: 'CA' },
+  { id: 'my-2012-5-ringgit-aa1955984', kind: 'banknote', country: 'MY' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -140,6 +141,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2015-50000-pesos-error-p462a' },
   { id: 'gb-2016-5-pounds-p394-b203a' },
   { id: 'ca-2013-5-dollars-p106b-bc69' },
+  { id: 'my-2012-5-ringgit-p52a-b149a' },
 ];
 
 export type CollectionStats = {

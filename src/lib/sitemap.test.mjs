@@ -22,6 +22,21 @@ describe('sitemap coverage for polymer England', () => {
   });
 });
 
+describe('sitemap coverage for polymer Malaysia', () => {
+  it('maps the Malaysia stub through the polymer locale pair', () => {
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/asia/malasia/', 'en'),
+      '/en/collection/world-polymer/asia/malaysia/',
+    );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/', 'en'),
+      '/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    assert.match(sitemapSource, /stubPages/);
+  });
+});
+
 describe('sitemap coverage for polymer Canada', () => {
   it('maps the Canada stub through the polymer locale pair', () => {
     assert.equal(

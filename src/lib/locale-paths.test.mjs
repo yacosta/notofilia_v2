@@ -13,6 +13,26 @@ describe('locale path mapping', () => {
     assert.equal(otherLocalePath('/en/contact/?motivo=error', 'en'), '/contacto/?motivo=error');
     assert.equal(localizePath('/coleccion/polimero-mundial/', 'en'), '/en/collection/world-polymer/');
     assert.equal(
+      localizePath('/coleccion/polimero-mundial/asia/', 'en'),
+      '/en/collection/world-polymer/asia/',
+    );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/asia/malasia/', 'en'),
+      '/en/collection/world-polymer/asia/malaysia/',
+    );
+    assert.equal(
+      localizePath('/en/collection/world-polymer/asia/malaysia/', 'es'),
+      '/coleccion/polimero-mundial/asia/malasia/',
+    );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/', 'en'),
+      '/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/',
+    );
+    assert.equal(
+      localizePath('/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/', 'es'),
+      '/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/',
+    );
+    assert.equal(
       localizePath('/coleccion/polimero-mundial/europa/', 'en'),
       '/en/collection/world-polymer/europe/',
     );
@@ -203,6 +223,10 @@ describe('locale path mapping', () => {
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
     assert.equal(
+      englishContentSlug('coleccion/polimero-mundial/asia/malasia'),
+      'collection/world-polymer/asia/malaysia',
+    );
+    assert.equal(
       englishContentSlug('coleccion/polimero-mundial/europa/inglaterra'),
       'collection/world-polymer/europe/england',
     );
@@ -218,6 +242,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/blog/mejores-empresas-certificacion-monedas-billetes/'],
       '/en/blog/best-coin-and-banknote-grading-companies/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/polimero-mundial/asia/malasia/'],
+      '/en/collection/world-polymer/asia/malaysia/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/'],
+      '/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/',
     );
     assert.equal(
       redirects['/en/coleccion/polimero-mundial/europa/inglaterra/'],

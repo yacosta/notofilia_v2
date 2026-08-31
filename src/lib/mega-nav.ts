@@ -7,7 +7,12 @@ import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
-import { POLIMERO_CANADA_PATH, POLIMERO_INGLATERRA_PATH, POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
+import {
+  POLIMERO_CANADA_PATH,
+  POLIMERO_INGLATERRA_PATH,
+  POLIMERO_MALASIA_PATH,
+  POLIMERO_MUNDIAL_PATH,
+} from '../data/polimero-mundial';
 import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
@@ -126,7 +131,7 @@ export const megaNav: NavNode[] = [
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
-        // Country children set `flag`. Continents use a silhouette `icon` (asia, europe, north-america).
+        // Country children set `flag` (China `cn`, Malaysia `my`, England `gb`, Canada `ca`). Continents use a silhouette `icon` (asia, europe, north-america).
         children: [
           {
             id: 'polimero-asia',
@@ -135,6 +140,13 @@ export const megaNav: NavNode[] = [
             icon: 'asia',
             children: [
               { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
+              {
+                id: 'polimero-malasia',
+                es: 'Malasia',
+                en: 'Malaysia',
+                href: POLIMERO_MALASIA_PATH,
+                flag: 'my',
+              },
             ],
           },
           {

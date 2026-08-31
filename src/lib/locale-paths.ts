@@ -108,6 +108,12 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
   { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
   {
+    es: '/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/',
+    en: '/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/',
+  },
+  { es: '/coleccion/polimero-mundial/asia/malasia/', en: '/collection/world-polymer/asia/malaysia/' },
+  { es: '/coleccion/polimero-mundial/asia/', en: '/collection/world-polymer/asia/' },
+  {
     es: '/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
     en: '/collection/world-polymer/europe/england/5-pounds-churchill/',
   },
@@ -260,6 +266,9 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',
     '/en/coleccion/colombia/catalogo/',
+    '/en/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/',
+    '/en/coleccion/polimero-mundial/asia/malasia/',
+    '/en/coleccion/polimero-mundial/asia/',
     '/en/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
     '/en/coleccion/polimero-mundial/europa/inglaterra/',
     '/en/coleccion/polimero-mundial/europa/',
