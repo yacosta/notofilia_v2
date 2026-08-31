@@ -27,6 +27,14 @@ const enNote = readFileSync(
   new URL('../pages/en/collection/united-states/rency/pele-the-beautiful-game/index.astro', import.meta.url),
   'utf8',
 );
+const esMessi = readFileSync(
+  new URL('../pages/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/index.astro', import.meta.url),
+  'utf8',
+);
+const enMessi = readFileSync(
+  new URL('../pages/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/index.astro', import.meta.url),
+  'utf8',
+);
 const esWarhol = readFileSync(
   new URL('../pages/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/index.astro', import.meta.url),
   'utf8',
@@ -77,6 +85,8 @@ describe('US Rency pop-art case', () => {
     assert.match(enRoute, /locale="en"/);
     assert.match(esNote, /renci-pele-the-beautiful-game/);
     assert.match(enNote, /renci-pele-the-beautiful-game/);
+    assert.match(esMessi, /renci-messi-you-have-to-fight-to-reach-your-dream/);
+    assert.match(enMessi, /renci-messi-you-have-to-fight-to-reach-your-dream/);
     assert.match(esWarhol, /renci-warhol-basquiat-life-is-beautiful/);
     assert.match(enWarhol, /renci-warhol-basquiat-life-is-beautiful/);
     assert.match(esTrump, /renci-trump-never-surrender/);

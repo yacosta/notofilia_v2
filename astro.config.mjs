@@ -65,6 +65,8 @@ export default defineConfig({
     '/coleccion/estados-unidos/renci': '/coleccion/estados-unidos/rency/',
     '/coleccion/estados-unidos/renci/pele-the-beautiful-game':
       '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
+    '/coleccion/estados-unidos/renci/messi-you-have-to-fight-to-reach-your-dream':
+      '/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/coleccion/estados-unidos/renci/warhol-basquiat-life-is-beautiful':
       '/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
     '/coleccion/estados-unidos/renci/trump-never-surrender':
@@ -72,6 +74,8 @@ export default defineConfig({
     '/en/collection/united-states/renci': '/en/collection/united-states/rency/',
     '/en/collection/united-states/renci/pele-the-beautiful-game':
       '/en/collection/united-states/rency/pele-the-beautiful-game/',
+    '/en/collection/united-states/renci/messi-you-have-to-fight-to-reach-your-dream':
+      '/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/collection/united-states/renci/warhol-basquiat-life-is-beautiful':
       '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
     '/en/collection/united-states/renci/trump-never-surrender':

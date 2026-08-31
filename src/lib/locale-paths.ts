@@ -119,6 +119,15 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     ],
   },
   {
+    es: '/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
+    en: '/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
+    aliases: [
+      '/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
+      '/coleccion/estados-unidos/renci/messi-you-have-to-fight-to-reach-your-dream/',
+      '/collection/united-states/renci/messi-you-have-to-fight-to-reach-your-dream/',
+    ],
+  },
+  {
     es: '/coleccion/estados-unidos/rency/',
     en: '/collection/united-states/rency/',
     aliases: [
@@ -292,6 +301,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/trump-never-surrender/',
     '/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
     '/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
+    '/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
@@ -306,6 +316,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/trump-never-surrender/',
     '/en/coleccion/united-states/rency/warhol-basquiat-life-is-beautiful/',
     '/en/coleccion/united-states/rency/pele-the-beautiful-game/',
+    '/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/united-states/rency/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',

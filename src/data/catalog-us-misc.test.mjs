@@ -69,6 +69,25 @@ describe('US Rency Pelé holding', () => {
   });
 });
 
+describe('US Rency Messi holding', () => {
+  it('records Messi / You Have to Fight to Reach Your Dream as a distinct pop-art object with reused serial F71235101A', () => {
+    assert.match(data, /id: 'renci-messi-you-have-to-fight-to-reach-your-dream'/);
+    assert.match(data, /Messi \/ You Have to Fight to Reach Your Dream/);
+    assert.match(data, /YOU HAVE TO FIGHT TO REACH YOUR DREAM!/);
+    assert.match(data, /Rency · 2\/222/);
+    assert.match(data, /LFG!/);
+    assert.match(data, /2022!/);
+    assert.match(data, /Lionel Messi/);
+    assert.match(data, /no fusiona las fichas/);
+    assert.match(data, /does not merge the records/);
+    assert.doesNotMatch(data, /Renci · 2\/222/);
+    const peleIdx = data.indexOf("id: 'renci-pele-the-beautiful-game'");
+    const messiIdx = data.indexOf("id: 'renci-messi-you-have-to-fight-to-reach-your-dream'");
+    const warholIdx = data.indexOf("id: 'renci-warhol-basquiat-life-is-beautiful'");
+    assert.ok(peleIdx > 0 && messiIdx > peleIdx && messiIdx < warholIdx);
+  });
+});
+
 describe('US Rency Warhol & Basquiat holding', () => {
   it('records Warhol y Basquiat / Life Is Beautiful as a second pop-art object', () => {
     assert.match(data, /id: 'renci-warhol-basquiat-life-is-beautiful'/);
