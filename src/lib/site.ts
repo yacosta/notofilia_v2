@@ -387,7 +387,7 @@ export const stubPages = [
   { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
   { path: 'coleccion/polimero-mundial', es: 'Billetes de polímero', en: 'Polymer banknotes' },
   { path: 'coleccion/polimero-mundial/europa/inglaterra', es: 'Inglaterra', en: 'England' },
-  { path: 'coleccion/polimero-mundial/Canada', es: 'Canadá', en: 'Canada' },
+  { path: 'coleccion/polimero-mundial/america-del-norte/canada', es: 'Canadá', en: 'Canada' },
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
   { path: 'glosario', es: 'Glosario', en: 'Glossary' },
