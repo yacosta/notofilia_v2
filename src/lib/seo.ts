@@ -1,5 +1,9 @@
-import { articlePath, blogArticles } from '../data/editorial';
+import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { collectionStats } from '../data/holdings';
+import { LAZARETTOS_PATH } from '../data/lazarettos';
+import { NETHERLANDS_PATH } from '../data/netherlands';
+import { localizePath } from './locale-paths';
+import { footerLinksFromNav, megaNav } from './mega-nav';
 import { SITE_URL, type Locale } from './site-url';
 
 export { SITE_URL, type Locale } from './site-url';
@@ -96,6 +100,52 @@ export function artworkJsonLd(input: {
   };
 }
 
+function llmsLink(href: string, es: string, en: string): string {
+  const esUrl = `${SITE_URL}${localizePath(href, 'es')}`;
+  const enUrl = `${SITE_URL}${localizePath(href, 'en')}`;
+  return `- [${es} / ${en}](${esUrl}): ${enUrl}`;
+}
+
+function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[number]): string {
+  const es = `${SITE_URL}${articlePath(kind, article.slug, 'es')}`;
+  const en = `${SITE_URL}${articlePath(kind, article.slug, 'en')}`;
+  return `- [${article.title.es} / ${article.title.en}](${es}): ${en}`;
+}
+
+/** Published hubs that are not (yet) rows in mega-nav. */
+const extraHighValuePages = [
+  { href: '/coleccion/', es: 'Colección', en: 'Collection' },
+  { href: '/buscar/', es: 'Buscar', en: 'Search' },
+  { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
+  { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
+  { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
+] as const;
+
+export function llmsHighValuePages(): { href: string; es: string; en: string }[] {
+  const seen = new Set<string>();
+  const pages: { href: string; es: string; en: string }[] = [];
+  const add = (href: string, es: string, en: string) => {
+    const key = localizePath(href, 'es');
+    if (seen.has(key)) return;
+    seen.add(key);
+    pages.push({ href: key, es, en });
+  };
+
+  add('/glosario/', 'Glosario', 'Glossary');
+  add('/blog/', 'Guías', 'Guides');
+  add('/noticias/', 'Noticias', 'News');
+  add('/coleccion/', 'Colección', 'Collection');
+  add('/buscar/', 'Buscar', 'Search');
+
+  for (const link of footerLinksFromNav(megaNav)) {
+    add(link.href, link.es, link.en);
+  }
+  for (const page of extraHighValuePages) {
+    add(page.href, page.es, page.en);
+  }
+  return pages;
+}
+
 export function llmsTxt(): string {
   const stats = collectionStats();
   return `# Notofilia
@@ -115,28 +165,16 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 
 ## Highest-value pages
 
-- [Glossary / Glosario](${SITE_URL}/glosario/): ${SITE_URL}/en/glossary/
-- [Guides / Guías](${SITE_URL}/blog/): ${SITE_URL}/en/blog/
-- [News / Noticias](${SITE_URL}/noticias/): ${SITE_URL}/en/news/
-- [Philippines / Filipinas](${SITE_URL}/coleccion/filipinas/): ${SITE_URL}/en/collection/philippines/
-- [Colombia](${SITE_URL}/coleccion/colombia/): ${SITE_URL}/en/collection/colombia/
-- [Visual banknote catalog](${SITE_URL}/coleccion/notafilia/catalogo/): ${SITE_URL}/en/collection/notaphily/catalog/
-- [Colombia visual banknote catalog](${SITE_URL}/coleccion/colombia/catalogo/): ${SITE_URL}/en/collection/colombia/catalog/
-- [Colombia visual coin catalog](${SITE_URL}/coleccion/colombia-numismatica/catalogo/): ${SITE_URL}/en/collection/colombia-numismatics/catalog/
-- [United States / Estados Unidos](${SITE_URL}/coleccion/estados-unidos/): ${SITE_URL}/en/collection/united-states/
-- [United States miscellaneous / Misceláneos](${SITE_URL}/coleccion/estados-unidos/miscelaneos/): ${SITE_URL}/en/collection/united-states/miscellaneous/
-- [Editorial policy](${SITE_URL}/editorial/): ${SITE_URL}/en/editorial/
-- [About / Acerca de](${SITE_URL}/acerca-de/): ${SITE_URL}/en/about/
-- [Contact / Contacto](${SITE_URL}/contacto/): ${SITE_URL}/en/contact/
+${llmsHighValuePages()
+  .map((page) => llmsLink(page.href, page.es, page.en))
+  .join('\n')}
 
 ## Guides / Guías
 
-${blogArticles
-  .map((article) => {
-    const es = `${SITE_URL}${articlePath('blog', article.slug, 'es')}`;
-    const en = `${SITE_URL}${articlePath('blog', article.slug, 'en')}`;
-    return `- [${article.title.es} / ${article.title.en}](${es}): ${en}`;
-  })
-  .join('\n')}
+${blogArticles.map((article) => articleLink('blog', article)).join('\n')}
+
+## News / Noticias
+
+${newsArticles.map((article) => articleLink('news', article)).join('\n')}
 `;
 }

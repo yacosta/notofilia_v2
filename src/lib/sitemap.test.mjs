@@ -61,3 +61,19 @@ describe('sitemap coverage for the grading guide', () => {
     );
   });
 });
+
+describe('sitemap coverage stays derived from catalog data', () => {
+  it('does not hard-code individual catalog slugs in extra', () => {
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    assert.match(sitemapSource, /stubPages/);
+    assert.doesNotMatch(sitemapSource, /coleccion\/filipinas\/1-peso/);
+    assert.match(sitemapSource, /const extra = \['\/'\]/);
+  });
+
+  it('maps the Colombia 50,000-peso error pair used in the sitemap', () => {
+    assert.equal(
+      localizePath('/coleccion/colombia/50000-pesos-error-2015/', 'en'),
+      '/en/collection/colombia/50000-pesos-error-2015/',
+    );
+  });
+});

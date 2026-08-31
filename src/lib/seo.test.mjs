@@ -7,10 +7,14 @@ const articles = JSON.parse(readFileSync(new URL('../data/blog-articles.json', i
 const seoSource = readFileSync(new URL('./seo.ts', import.meta.url), 'utf8');
 
 describe('llms.txt and grading-guide SEO copy', () => {
-  it('keeps the grading guide first and lists blog articles in llmsTxt()', () => {
+  it('keeps the grading guide first and lists blog and news articles in llmsTxt()', () => {
     assert.equal(articles[0].slug, 'mejores-empresas-certificacion-monedas-billetes');
     assert.match(seoSource, /## Guides \/ Guías/);
+    assert.match(seoSource, /## News \/ Noticias/);
     assert.match(seoSource, /blogArticles/);
+    assert.match(seoSource, /newsArticles/);
+    assert.match(seoSource, /footerLinksFromNav/);
+    assert.match(seoSource, /megaNav/);
     assert.match(articles[0].seoTitle.es, /PMG, PCGS y NGC/);
     assert.match(articles[0].seoTitle.en, /PMG, PCGS, and NGC/);
   });

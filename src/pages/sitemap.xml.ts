@@ -4,20 +4,8 @@ import { localizePath } from '../lib/locale-paths';
 import { SITE_URL } from '../lib/site-url';
 import { dedicatedCatalogPaths, stubPages } from '../lib/site';
 
-const extra = [
-  '/',
-  '/blog/',
-  '/noticias/',
-  '/glosario/',
-  '/acerca-de/',
-  '/contacto/',
-  '/buscar/',
-  '/coleccion/filipinas/',
-  '/coleccion/filipinas/1-peso/',
-  '/coleccion/filipinas/2-pesos/',
-  '/coleccion/filipinas/5-pesos/',
-  '/coleccion/filipinas/20-pesos/',
-];
+/** Home is the only public HTML route not already in stubPages or dedicatedCatalogPaths. */
+const extra = ['/'];
 
 function lastmodByPath(): Map<string, string> {
   const dates = new Map<string, string>();
