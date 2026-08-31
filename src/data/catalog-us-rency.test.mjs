@@ -51,6 +51,13 @@ describe('US Rency pop-art case', () => {
     assert.match(data, /Rency sobre papel de curso legal/);
     assert.match(data, /Rency on legal-tender paper/);
     assert.doesNotMatch(data, /Renci/);
+    assert.doesNotMatch(data, /RENCI/);
+    assert.match(data, /firma manuscrita RENCY/);
+    assert.match(data, /manuscript signature RENCY/);
+    assert.match(data, /suele firmar en mayúsculas RENCY/);
+    assert.match(data, /signs in capitals RENCY/);
+    assert.match(data, /suelen firmar RENCY en mayúsculas/);
+    assert.match(data, /signature is often RENCY in capitals/);
     assert.match(data, /Aún no hay fichas en esta vitrina/);
     assert.match(data, /There are no note pages in this case yet/);
   });
