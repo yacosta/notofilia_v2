@@ -222,7 +222,7 @@ describe('Collection-wide banknote catalog', () => {
     const canadaNotes = (extractExportArrayBlock(canadaNotesSource, 'canadaNotes').match(/^    serial: '/gm) || []).length;
     const malaysiaNotes = (extractExportArrayBlock(malaysiaNotesSource, 'malaysiaNotes').match(/^    serial: '/gm) || []).length;
 
-    assert.equal(colombiaPieces.length, 14);
+    assert.equal(colombiaPieces.length, 15);
     assert.equal(usaNotes, 11);
     assert.equal(mpcNotes, 4);
     assert.equal(polymerNotes.length, 1);
