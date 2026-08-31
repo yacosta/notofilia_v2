@@ -74,6 +74,7 @@ export const copy = {
     resources: 'Recursos',
     about: 'Sobre Notofilia',
     legal: 'Legal',
+    preferredSource: 'Añadir Notofilia como fuente preferida de Google',
     copyright: 'Copyright 2026 Notofilia. Todos los derechos reservados.',
     ownership:
       'Todos los billetes mostrados en este sitio pertenecen a mi colección privada. Ninguno está a la venta. Simplemente comparto mi pasión por este pasatiempo con el mundo.',
@@ -171,6 +172,7 @@ export const copy = {
     resources: 'Resources',
     about: 'About Notofilia',
     legal: 'Legal',
+    preferredSource: 'Add Notofilia as a Google preferred source',
     copyright: 'Copyright 2026 Notofilia. All rights reserved.',
     ownership:
       'Every banknote shown on this site belongs to my private collection. None are for sale. I simply share my passion for this hobby with the world.',
