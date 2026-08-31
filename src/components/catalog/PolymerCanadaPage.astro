@@ -1,0 +1,114 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { canadaNotes, notePath } from '../../data/canada-polymer';
+import {
+  canadaCopy,
+  polymerCanadaPath,
+  polymerWorldPath,
+  seriesCopy,
+} from '../../data/polimero-mundial';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = canadaCopy[locale];
+const polymer = seriesCopy[locale];
+const pathname = polymerCanadaPath(locale);
+const polymerHref = polymerWorldPath(locale);
+const canadaSources = canadaNotes.flatMap((note) => note.sources);
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: polymer.title, path: polymerHref },
+    { name: t.title, path: pathname },
+  ],
+});
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: polymerHref, label: polymer.title },
+          { label: t.title },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+      <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
+        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
+        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.subtitle}</span>
+      </h1>
+
+      <p class="mt-10 mb-0 w-full max-w-[46rem] text-[17px]/7 text-cream">{t.intro}</p>
+
+      <section class="mt-16" aria-labelledby="holdings-heading" id="catalogo">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-4 gap-2 p-0 sm:gap-4"
+          aria-label={copy[locale].polymerByDenomination}
+        >
+          {
+            canadaNotes.map((note) => (
+              <li class="min-w-0">
+                <a
+                  href={notePath(note, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <CatalogThumb
+                    src={note.images.front}
+                    alt={note.frontCaption[locale]}
+                    width={1440}
+                    height={960}
+                    class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {note.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial_display}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={canadaSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={polymerHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.backToPolymer}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

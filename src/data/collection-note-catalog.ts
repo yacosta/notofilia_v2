@@ -1,5 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import { chinaNotes, notePath as chinaNotePath } from './china';
+import { canadaNotes, notePath as canadaNotePath } from './canada-polymer';
 import { englandNotes, notePath as englandNotePath } from './england-polymer';
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
@@ -23,6 +24,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   PH: { es: 'Filipinas', en: 'Philippines' },
   CN: { es: 'China', en: 'China' },
   GB: { es: 'Inglaterra', en: 'England' },
+  CA: { es: 'Canadá', en: 'Canada' },
 };
 
 type CollectionSeed = {
@@ -174,6 +176,24 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of canadaNotes) {
+    seeds.push({
+      id: `ca-${note.id}`,
+      country: 'CA',
+      href: canadaNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '2013',
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   return seeds;
 }
 
@@ -226,6 +246,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'ph',
   'cn',
   'gb',
+  'ca',
   'pending',
   'specimen',
   'remainder',
@@ -277,6 +298,7 @@ export const collectionNoteCatalogCopy = {
       ph: 'Filipinas',
       cn: 'China',
       gb: 'Inglaterra',
+      ca: 'Canadá',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -327,6 +349,7 @@ export const collectionNoteCatalogCopy = {
       ph: 'Philippines',
       cn: 'China',
       gb: 'England',
+      ca: 'Canada',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',

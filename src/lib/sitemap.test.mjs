@@ -22,6 +22,21 @@ describe('sitemap coverage for polymer England', () => {
   });
 });
 
+describe('sitemap coverage for polymer Canada', () => {
+  it('maps the Canada stub through the polymer locale pair', () => {
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/Canada/', 'en'),
+      '/en/collection/world-polymer/Canada/',
+    );
+    assert.equal(
+      localizePath('/coleccion/polimero-mundial/Canada/5-dolares-laurier/', 'en'),
+      '/en/collection/world-polymer/Canada/5-dollars-laurier/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    assert.match(sitemapSource, /stubPages/);
+  });
+});
+
 describe('sitemap coverage for Colombia visual catalogs', () => {
   it('registers both locale pairs through dedicated catalog paths', () => {
     assert.equal(localizePath('/coleccion/notafilia/catalogo/', 'en'), '/en/collection/notaphily/catalog/');
