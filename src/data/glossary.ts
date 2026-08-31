@@ -1,4 +1,4 @@
-import { localizePath } from '../lib/locale-paths';
+import { localizePath } from '../lib/locale-paths.ts';
 
 export const GLOSSARY_PATH = '/glosario/';
 
@@ -154,6 +154,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: [],
   },
   {
+    slug: "bimetalica",
+    id: "bimetalica",
+    category: "Producción",
+    title: { es: "Bimetálica", en: "Bimetallic coin" },
+    definition: { es: "Moneda acuñada con un núcleo y un anillo de metales distintos —por ejemplo alpaca y latón—, de modo que el contraste de color y el ajuste de las dos piezas dificulten la falsificación. En Colombia el 500 pesos de 1993 (Ley 31) es la primera bimetálica de circulación.", en: "A coin struck with a core and a ring of different metals — for example nickel-silver and brass — so the colour contrast and the two-piece fit deter counterfeiting. In Colombia the 1993 500-peso piece (Law 31) is the first circulating bimetallic." },
+    seeAlso: ["peso", "cospel"],
+  },
+  {
     slug: "c-day",
     id: "c-day",
     category: "Emisión",
@@ -167,7 +175,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Calcografía", en: "Intaglio / chalcography" },
     definition: { es: "Proceso de impresión en hueco —también llamado intaglio— que deposita tinta espesa en surcos grabados y deja el relieve táctil de retratos y denominaciones, pensado para dificultar la falsificación.", en: "The recessed printing process — also called intaglio — that lays thick ink into engraved grooves and leaves the tactile relief of portraits and denominations, intended to deter counterfeiting." },
-    seeAlso: ["intaglio", "talla-dulce"],
+    seeAlso: ["intaglio", "talla-dulce", "offset"],
+  },
+  {
+    slug: "casi-sin-circular-au",
+    id: "casi-sin-circular-au",
+    category: "Conservación",
+    title: { es: "Casi sin circular (AU)", en: "About Uncirculated (AU)" },
+    definition: { es: "Grado Sheldon 50–58: el billete o la moneda circularon poco; quedan huellas leves de manipulación o un pliegue ligero, pero el diseño sigue nítido. En esta colección aparecen, entre otros, PMG 50, 53 y 55 About Uncirculated.", en: "Sheldon grades 50–58: the note or coin saw little circulation; light handling or a faint fold remains, but the design is still sharp. This collection includes, among others, PMG 50, 53, and 55 About Uncirculated." },
+    seeAlso: ["extremadamente-fino-ebc-ef", "billete-sin-circular", "escala-sheldon", "pliegue-y-doblez"],
   },
   {
     slug: "friedberg",
@@ -175,7 +191,23 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Catálogo Friedberg", en: "Friedberg catalog" },
     definition: { es: "Sistema de referencia especializado en billetes de Estados Unidos, alternativo y complementario al catálogo Pick.", en: "A reference system specialized in United States banknotes, an alternative and complement to the Pick catalog." },
-    seeAlso: ["pick"],
+    seeAlso: ["pick", "schwan", "banknote-book"],
+  },
+  {
+    slug: "schwan",
+    id: "catalogo-schwan",
+    category: "Coleccionismo",
+    title: { es: "Catálogo Schwan", en: "Schwan catalog" },
+    definition: { es: "Numeración de Frederick J. Schwan (con Joseph E. Boling) para certificados de pago militar y papel de ocupación. En las fichas de Vietnam de esta colección el número Schwan acompaña al Pick M —por ejemplo Schwan 887-1 para el 10 dólares de la serie 641—.", en: "Frederick J. Schwan’s numbering (with Joseph E. Boling) for military payment certificates and occupation paper. On this collection’s Vietnam records the Schwan number sits beside Pick M — for example Schwan 887-1 for the Series 641 $10." },
+    seeAlso: ["mpc", "pick", "friedberg"],
+  },
+  {
+    slug: "banknote-book",
+    id: "catalogo-tbb",
+    category: "Coleccionismo",
+    title: { es: "The Banknote Book (TBB)", en: "The Banknote Book (TBB)" },
+    definition: { es: "Catálogo de Owen W. Linzmayer que asigna a cada tipo un número B (TBB o BNB). En esta colección se cita junto al Pick —por ejemplo TBB B996c en el 20.000 pesos de 2017, BNB B149a en el RM5 malasio y B203a en el £5 Churchill—.", en: "Owen W. Linzmayer’s catalog, which gives each type a B number (TBB or BNB). This collection cites it beside Pick — for example TBB B996c on the 2017 20,000 pesos, BNB B149a on the Malaysian RM5, and B203a on the Churchill £5." },
+    seeAlso: ["pick", "friedberg", "schwan"],
   },
   {
     slug: "cedula-hipotecaria",
@@ -199,7 +231,23 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Monedas y divisas",
     title: { es: "Cocobola", en: "Cocobola" },
     definition: { es: "Apodo de las monedas colombianas de 50 centavos de plata encargadas en Nueva York hacia 1887, con una Libertad que lleva el perfil de Soledad Román, esposa de Rafael Núñez. El escándalo político y el ajusticiamiento en Panamá de un bandido apodado Cocobolo dieron el nombre. No confundir con la coscoja de los lazaretos.", en: "Nickname for Colombian 50-centavo silver coins ordered in New York about 1887, with a Liberty bearing the profile of Soledad Román, wife of Rafael Núñez. The political scandal and the execution in Panama of a bandit nicknamed Cocobolo gave the name. Not the lazaretto coscoja." },
-    seeAlso: ["peso", "exonumia"],
+    seeAlso: ["peso", "exonumia", "coscoja"],
+  },
+  {
+    slug: "choice-uncirculated",
+    id: "choice-uncirculated",
+    category: "Conservación",
+    title: { es: "Choice Uncirculated (CH UNC)", en: "Choice Uncirculated (CH UNC)" },
+    definition: { es: "Grado Sheldon 63–64: sin circular, con centramiento y márgenes por encima de lo corriente, pero sin llegar al aspecto de gema. En esta colección, las pruebas ABNC del Banco de Rio Hacha llevan PMG 64 Choice Uncirculated EPQ.", en: "Sheldon grades 63–64: uncirculated, with centering and margins above the ordinary, but short of gem appearance. In this collection the ABNC Banco de Rio Hacha proofs include PMG 64 Choice Uncirculated EPQ." },
+    seeAlso: ["billete-sin-circular", "gem-uncirculated", "epq-calidad-de-papel-excepcional", "escala-sheldon"],
+  },
+  {
+    slug: "coscoja",
+    id: "coscoja",
+    category: "Monedas y divisas",
+    title: { es: "Coscoja", en: "Coscoja" },
+    definition: { es: "Moneda de los lazaretos colombianos (Caño del Loro, Contratación, Agua de Dios), de curso solo dentro del cordón sanitario. El apodo —poca cosa— nació con las piezas de níquel de 1, 5 y 10 pesos P/M de 1907. No confundir con la cocobola de 50 centavos.", en: "Coin of the Colombian lazarettos (Caño del Loro, Contratación, Agua de Dios), legal only inside the sanitary cordon. The nickname — a little thing — began with the 1907 nickel 1, 5, and 10 pesos P/M. Not the 50-centavo cocobola." },
+    seeAlso: ["exonumia", "cocobola", "curso-legal"],
   },
   {
     slug: "columnario-de-dos-mundos",
@@ -234,6 +282,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["curso-legal"],
   },
   {
+    slug: "details-ngc",
+    id: "details-ngc",
+    category: "Conservación",
+    title: { es: "Grado Details", en: "Details grade" },
+    definition: { es: "Calificación de NGC o PCGS cuando autentican la pieza y describen el desgaste —por ejemplo About Uncirculated— pero un daño (limado de canto, limpieza, rayado) impide asignar un número Sheldon. El ducado de Utrecht de 1761 de esta colección es NGC AU Details (Edge Filing).", en: "An NGC or PCGS grade that authenticates the piece and describes the wear — for example About Uncirculated — but withholds a Sheldon number because of damage (edge filing, cleaning, scratches). This collection’s 1761 Utrecht ducat is NGC AU Details (Edge Filing)." },
+    seeAlso: ["ngc", "casi-sin-circular-au", "escala-sheldon", "pmg-pcgs"],
+  },
+  {
     slug: "deuda-flotante",
     id: "deuda-flotante",
     category: "Emisión",
@@ -255,7 +311,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Diseño",
     title: { es: "Dispositivo ópticamente variable (OVD)", en: "Optically variable device (OVD)" },
     definition: { es: "Elemento de seguridad impreso con tintas o láminas reflectantes que cambian de color o apariencia según el ángulo de luz.", en: "A security feature printed with reflective inks or foils that shifts color or appearance depending on the viewing angle." },
-    seeAlso: ["tinta-iridiscente", "tinta-ovi"],
+    seeAlso: ["tinta-iridiscente", "tinta-ovi", "spark", "foil"],
+  },
+  {
+    slug: "dolar",
+    id: "dolar",
+    category: "Monedas y divisas",
+    title: { es: "Dólar", en: "Dollar" },
+    definition: { es: "Unidad monetaria de Estados Unidos y de varios países que la adoptaron o dolarizaron. En esta colección aparece en los certificados de pago militar de Vietnam, en el 5 dólares de polímero de Canadá (serie Frontiers) y en el relato de la dolarización del Ecuador (2000), que sustituyó al sucre.", en: "The monetary unit of the United States and of countries that adopted or dollarized to it. In this collection it appears on Vietnam military payment certificates, on Canada’s polymer $5 (Frontiers series), and in the account of Ecuador’s 2000 dollarization, which replaced the sucre." },
+    seeAlso: ["sucre", "mpc", "peso"],
   },
   {
     slug: "dracma",
@@ -264,6 +328,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Dracma", en: "Drachm" },
     definition: { es: "Antigua denominación de moneda de plata originaria de Grecia, que influyó posteriormente en numerosas divisas regionales.", en: "An ancient silver coin denomination originating in Greece, which later influenced numerous regional currencies." },
     seeAlso: [],
+  },
+  {
+    slug: "ducado",
+    id: "ducado",
+    category: "Monedas y divisas",
+    title: { es: "Ducado", en: "Ducat" },
+    definition: { es: "Moneda de oro de comercio, de origen europeo, acuñada a un patrón estable de peso y ley. Utrecht la emitió desde 1586; esta colección documenta un ducado comercial de 1761 encapsulado por NGC.", en: "A gold trade coin of European origin, struck to a stable weight and fineness. Utrecht issued it from 1586; this collection records a 1761 trade ducat slabbed by NGC." },
+    seeAlso: ["gulden", "ngc", "encapsulado"],
   },
   {
     slug: "emalangeni-lilangeni",
@@ -282,6 +354,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: [],
   },
   {
+    slug: "encapsulado",
+    id: "encapsulado",
+    category: "Coleccionismo",
+    title: { es: "Encapsulado", en: "Slab / encapsulation" },
+    definition: { es: "Estuche plástico sellado por una casa de certificación (PMG, PCGS, NGC) que guarda la pieza con su etiqueta de grado y el número de certificado. En las fichas de esta colección «sin encapsular» significa que el ejemplar se muestra en funda, sin cápsula de tercero.", en: "A sealed plastic holder from a grading service (PMG, PCGS, NGC) that keeps the piece with its grade label and certificate number. In this collection’s records “unslabbed” means the example is shown in a sleeve, without a third-party capsule." },
+    seeAlso: ["pmg-pcgs", "ngc", "tasado"],
+  },
+  {
     slug: "ensayador",
     id: "ensayador",
     category: "Producción",
@@ -290,12 +370,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["marcas-de-ajuste"],
   },
   {
+    slug: "euro",
+    id: "euro",
+    category: "Monedas y divisas",
+    title: { es: "Euro", en: "Euro" },
+    definition: { es: "Moneda única de la zona euro. El gulden neerlandés pasó a ser subdivisión del euro el 1 de enero de 1999; el efectivo circuló desde el 1 de enero de 2002 y el gulden dejó de ser curso legal el 27 de enero de 2002, a 2,20371 gulden por euro.", en: "The single currency of the euro area. The Dutch gulden became a subunit of the euro on 1 January 1999; cash circulated from 1 January 2002, and the gulden ceased to be legal tender on 27 January 2002, at 2.20371 gulden to the euro." },
+    seeAlso: ["gulden", "curso-legal", "desmonetizado"],
+  },
+  {
     slug: "epq-calidad-de-papel-excepcional",
     id: "epq-calidad-de-papel-excepcional",
     category: "Conservación",
     title: { es: "EPQ (Calidad de Papel Excepcional)", en: "EPQ (Exceptional Paper Quality)" },
     definition: { es: "Designación de grado usada por PMG para señalar que un billete es completamente original y no ha sufrido modificaciones químicas, físicas ni cosméticas.", en: "A grading designation used by PMG to denote a banknote that is entirely original and has not undergone chemical, physical, or cosmetic modification." },
-    seeAlso: ["billete-alterado", "billete-sin-circular", "pmg-pcgs"],
+    seeAlso: ["billete-alterado", "billete-sin-circular", "pmg-pcgs", "encapsulado"],
   },
   {
     slug: "error-de-impresion",
@@ -311,7 +399,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Conservación",
     title: { es: "Escala Sheldon", en: "Sheldon Scale" },
     definition: { es: "Sistema numérico estándar de 70 puntos usado en numismática para calificar el desgaste y el estado de conservación de una moneda.", en: "The standard 70-point numerical system used in numismatics to grade the physical wear and preservation state of a coin." },
-    seeAlso: ["billete-sin-circular", "extremadamente-fino-ebc-ef", "pmg-pcgs"],
+    seeAlso: ["billete-sin-circular", "casi-sin-circular-au", "pmg-pcgs"],
   },
   {
     slug: "escripofilia",
@@ -359,7 +447,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Disciplina",
     title: { es: "Exonumia", en: "Exonumia" },
     definition: { es: "Objetos afines al coleccionismo numismático que no son monedas ni billetes de curso legal, como fichas o vales privados.", en: "Numismatic-adjacent collectibles that are not legal-tender coins or notes, such as tokens or private scrip." },
-    seeAlso: ["vale-al-portador"],
+    seeAlso: ["vale-al-portador", "coscoja"],
   },
   {
     slug: "extremadamente-fino-ebc-ef",
@@ -367,7 +455,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Conservación",
     title: { es: "Extremadamente Fino (EBC/EF)", en: "Extremely Fine (EF)" },
     definition: { es: "Grado de conservación alto que admite dobleces muy leves pero conserva nitidez y color casi intactos.", en: "A high condition grade allowing very light folds while keeping crispness and color nearly intact." },
-    seeAlso: ["billete-sin-circular"],
+    seeAlso: ["billete-sin-circular", "casi-sin-circular-au"],
   },
   {
     slug: "faja",
@@ -394,6 +482,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["registro-perfecto"],
   },
   {
+    slug: "foil",
+    id: "foil",
+    category: "Diseño",
+    title: { es: "Parche de foil", en: "Foil patch" },
+    definition: { es: "Lámina metálica estampada en caliente sobre el billete, a menudo holográfica, distinta de una tinta ópticamente variable. En el 5 libras Churchill de polímero el parche del reverso lee BLENHEIM.", en: "A metallic foil stamped onto the note, often holographic, distinct from optically variable ink. On the polymer Churchill £5 the reverse patch reads BLENHEIM." },
+    seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-ovi", "polimero"],
+  },
+  {
     slug: "firma",
     id: "firma",
     category: "Diseño",
@@ -410,6 +506,30 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["orla", "roseton"],
   },
   {
+    slug: "gem-uncirculated",
+    id: "gem-uncirculated",
+    category: "Conservación",
+    title: { es: "Gem Uncirculated (GEM UNC)", en: "Gem Uncirculated (GEM UNC)" },
+    definition: { es: "Grado Sheldon 65–66 (y superior): sin circular, con márgenes, color y originalidad excepcionales. En esta colección el 5 dólares MPC de la serie 661 está encapsulado como PMG 66 EPQ Gem Uncirculated.", en: "Sheldon grades 65–66 (and higher): uncirculated, with exceptional margins, colour, and originality. In this collection the Series 661 MPC $5 is slabbed PMG 66 EPQ Gem Uncirculated." },
+    seeAlso: ["billete-sin-circular", "choice-uncirculated", "epq-calidad-de-papel-excepcional", "escala-sheldon"],
+  },
+  {
+    slug: "guardian",
+    id: "guardian",
+    category: "Producción",
+    title: { es: "Guardian", en: "Guardian" },
+    definition: { es: "Sustrato de polímero de polipropileno biaxialmente orientado desarrollado con el Reserve Bank of Australia (hoy CCL Secure). El 100 yuan del milenio chino (Pick 902) usa Guardian, con ventana del Templo del Cielo. No es Tyvek.", en: "A biaxially oriented polypropylene polymer substrate developed with the Reserve Bank of Australia (now CCL Secure). China’s millennium 100-yuan (Pick 902) uses Guardian, with a Temple of Heaven window. It is not Tyvek." },
+    seeAlso: ["polimero", "tyvek", "sustrato", "ventana-transparente"],
+  },
+  {
+    slug: "gulden",
+    id: "gulden",
+    category: "Monedas y divisas",
+    title: { es: "Gulden", en: "Gulden / guilder" },
+    definition: { es: "Florín neerlandés: unidad de cuenta desde 1434 y moneda de curso legal de los Países Bajos hasta el 27 de enero de 2002, cuando lo sustituyó el euro. De Nederlandsche Bank emitió el papel de circulación desde 1814.", en: "The Dutch florin or guilder: a unit of account from 1434 and legal tender in the Netherlands until 27 January 2002, when the euro replaced it. De Nederlandsche Bank issued circulating paper from 1814." },
+    seeAlso: ["euro", "ducado", "curso-legal"],
+  },
+  {
     slug: "hilo-de-seguridad",
     id: "hilo-de-seguridad",
     category: "Diseño",
@@ -423,7 +543,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Intaglio", en: "Intaglio printing" },
     definition: { es: "Técnica de impresión en relieve —calcografía— donde la tinta se deposita en surcos grabados en una plancha, dejando una textura táctil perceptible en el billete.", en: "A relief printing technique — chalcography / intaglio — where ink sits in grooves engraved into a plate, leaving a tactile texture on the finished note." },
-    seeAlso: ["talla-dulce", "calcografia"],
+    seeAlso: ["talla-dulce", "calcografia", "offset"],
+  },
+  {
+    slug: "jiaozi",
+    id: "jiaozi",
+    category: "Emisión",
+    title: { es: "Jiaozi", en: "Jiaozi" },
+    definition: { es: "Primer papel moneda del mundo: pagarés privados de Sichuan a finales del siglo X y, desde 1024, el jiaozi oficial de la dinastía Song, con sello y número de serie. Precede al yuan y al renminbi modernos.", en: "The world’s first paper money: private Sichuan promissory notes in the late tenth century and, from 1024, the Song dynasty’s official jiaozi, sealed and serialled. It precedes the modern yuan and renminbi." },
+    seeAlso: ["yuan-renminbi", "numeracion", "banco-emisor"],
   },
   {
     slug: "kopek",
@@ -450,6 +578,22 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: [],
   },
   {
+    slug: "libra",
+    id: "libra",
+    category: "Monedas y divisas",
+    title: { es: "Libra", en: "Pound sterling" },
+    definition: { es: "Unidad monetaria del Reino Unido. El 5 libras Churchill de 2016 es el primer billete de polímero de circulación ordinaria del Banco de Inglaterra.", en: "The monetary unit of the United Kingdom. The 2016 Churchill £5 is the Bank of England’s first ordinary-circulation polymer note." },
+    seeAlso: ["polimero", "dolar", "euro"],
+  },
+  {
+    slug: "libranza",
+    id: "libranza",
+    category: "Emisión",
+    title: { es: "Libranza", en: "Bill of exchange / libranza" },
+    definition: { es: "Orden de pago a plazo, a menudo redimible en especie. Las libranzas de la Gran Colombia, grabadas por Peter Maverick en Nueva York (6, 12, 18 y 30 pesos, redimibles en sal de Zipaquirá), nunca se emitieron: quedan sin firmas.", en: "A term bill of exchange, often redeemable in kind. Gran Colombia’s libranzas, engraved by Peter Maverick in New York (6, 12, 18, and 30 pesos, redeemable in Zipaquirá salt), were never issued: they survive unsigned." },
+    seeAlso: ["vale-al-portador", "billete-provisional", "firma"],
+  },
+  {
     slug: "leyenda",
     id: "leyenda",
     category: "Diseño",
@@ -463,7 +607,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Litografía", en: "Lithography" },
     definition: { es: "Técnica de impresión plana basada en la repulsión entre grasa y agua, usada históricamente por imprentas regionales para emitir billetes y vales.", en: "A flat-plate printing technique based on the repulsion of grease and water, historically used by regional print houses to issue notes and scrip." },
-    seeAlso: [],
+    seeAlso: ["offset"],
+  },
+  {
+    slug: "offset",
+    id: "offset",
+    category: "Producción",
+    title: { es: "Offset", en: "Offset lithography" },
+    definition: { es: "Impresión plana en la que la imagen pasa de la plancha a una mantilla de caucho y de ahí al papel, sin el relieve del intaglio. Los certificados de pago militar de Vietnam se imprimieron en litografía offset a color, con planchetas, no en intaglio.", en: "Flat printing in which the image transfers from plate to rubber blanket to paper, without intaglio relief. Vietnam military payment certificates were printed in colour offset lithography, with planchettes, not intaglio." },
+    seeAlso: ["litografia", "intaglio", "plancheta", "mpc"],
   },
   {
     slug: "maculatura",
@@ -543,7 +695,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "MPC (certificado de pago militar)", en: "MPC (Military Payment Certificate)" },
     definition: { es: "Papel en dólares emitido por las fuerzas armadas de Estados Unidos entre 1946 y 1973 para pagar al personal en bases de ultramar. No era curso legal; un C-Day secreto invalidaba la serie vigente. En Vietnam circularon las series 641, 661, 681 y 692.", en: "Dollar-denominated paper issued by the U.S. armed forces from 1946 to 1973 to pay personnel on overseas bases. It was not legal tender; a secret C-Day voided the current series. In Vietnam the circulating series were 641, 661, 681, and 692." },
-    seeAlso: ["c-day", "desmonetizado"],
+    seeAlso: ["c-day", "desmonetizado", "schwan", "plancheta", "offset"],
   },
   {
     slug: "notafilia",
@@ -552,6 +704,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Notafilia", en: "Notaphily" },
     definition: { es: "Rama de la numismática enfocada específicamente en el coleccionismo de billetes de papel moneda.", en: "The branch of numismatics focused specifically on collecting paper banknotes." },
     seeAlso: ["numismatica"],
+  },
+  {
+    slug: "ngc",
+    id: "ngc",
+    category: "Conservación",
+    title: { es: "NGC", en: "NGC" },
+    definition: { es: "Numismatic Guaranty Company: casa de certificación sobre todo de monedas, que encapsula y asigna un grado Sheldon o una designación Details. El buscador de Notofilia agrupa PMG, PCGS y NGC; el ducado de Utrecht de 1761 lleva certificado NGC 4685927-012.", en: "Numismatic Guaranty Company: a grading service mainly for coins, which slabs pieces and assigns a Sheldon grade or a Details designation. Notofilia’s search groups PMG, PCGS, and NGC; the 1761 Utrecht ducat holds NGC certificate 4685927-012." },
+    seeAlso: ["pmg-pcgs", "encapsulado", "details-ngc", "escala-sheldon"],
   },
   {
     slug: "numeracion",
@@ -570,12 +730,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["numeracion-especial", "numeracion"],
   },
   {
+    slug: "numeracion-binaria",
+    id: "numeracion-binaria",
+    category: "Coleccionismo",
+    title: { es: "Numeración binaria", en: "Binary serial" },
+    definition: { es: "Número de serie formado solo por ceros y unos. El 2.000 pesos de 2008 de esta colección lleva el serial 10000001: binario y capicúa a la vez.", en: "A serial number made only of zeros and ones. This collection’s 2008 2,000-peso note is serial 10000001: both binary and a radar palindrome." },
+    seeAlso: ["numeracion-especial", "numeracion-radar", "numeracion"],
+  },
+  {
     slug: "numeracion-radar",
     id: "numeracion-radar",
     category: "Coleccionismo",
     title: { es: "Numeración capicúa (radar)", en: "Radar / palindrome note" },
     definition: { es: "Billete cuyo número de serie se lee igual de izquierda a derecha que de derecha a izquierda —un capicúa—, por ejemplo A4567654A.", en: "A banknote whose serial number reads the same forwards and backwards — a palindrome — for example A4567654A." },
     seeAlso: ["numeracion-especial"],
+  },
+  {
+    slug: "numeracion-repetidor",
+    id: "numeracion-repetidor",
+    category: "Coleccionismo",
+    title: { es: "Numeración repetidor", en: "Repeater serial" },
+    definition: { es: "Número de serie en el que un bloque corto se repite —por ejemplo 12121212 o 12312312— o se duplica en dos mitades (12341234). Es una clase de numeración especial, distinta del capicúa y de la escalera.", en: "A serial number in which a short block repeats — for example 12121212 or 12312312 — or a two-block repeat (12341234). It is a fancy-serial class, distinct from a radar and from a ladder." },
+    seeAlso: ["numeracion-especial", "numeracion-radar", "numeracion-escalera"],
   },
   {
     slug: "numeracion-escalera",
@@ -590,8 +766,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "numeracion-especial",
     category: "Coleccionismo",
     title: { es: "Numeración especial", en: "Fancy serial number" },
-    definition: { es: "Numeración de serie codiciada por su patrón visual: capicúas, sólidos, números bajos, repetidores o escaleras.", en: "A highly collectible serial-number pattern: radars (palindromes), solids, low numbers, repeaters, or ladders." },
-    seeAlso: ["numeracion", "numeracion-radar", "numeracion-solida", "numeracion-escalera", "numeracion-baja"],
+    definition: { es: "Numeración de serie codiciada por su patrón visual: capicúas, binarios, sólidos, números bajos, repetidores o escaleras.", en: "A highly collectible serial-number pattern: radars (palindromes), binaries, solids, low numbers, repeaters, or ladders." },
+    seeAlso: ["numeracion", "numeracion-radar", "numeracion-binaria", "numeracion-solida", "numeracion-escalera", "numeracion-baja", "numeracion-repetidor"],
   },
   {
     slug: "numeracion-solida",
@@ -639,7 +815,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Monedas y divisas",
     title: { es: "Peso", en: "Peso" },
     definition: { es: "Unidad monetaria histórica que significa \"peso\" (del latín pensum) y da nombre a ocho monedas nacionales vigentes, cada una con su código ISO: peso argentino (ARS), chileno (CLP), colombiano (COP), cubano (CUP), dominicano (DOP), mexicano (MXN), filipino o piso (PHP) y uruguayo (UYU). En Colombia el papel del Banco de la República se llamó peso oro de 1923 a 1993, para señalar su convertibilidad —perdida en 1931—; desde 1993 volvió a ser, simplemente, el peso.", en: "A historic monetary unit meaning \"weight\" (from the Latin pensum) that names eight national currencies still in circulation, each with its ISO code: the Argentine (ARS), Chilean (CLP), Colombian (COP), Cuban (CUP), Dominican (DOP), Mexican (MXN), Philippine piso (PHP), and Uruguayan (UYU) pesos. In Colombia Banco de la República paper was called peso oro from 1923 to 1993, to signal convertibility — lost in 1931; from 1993 the name returned to simply the peso." },
-    seeAlso: ["real", "billete-provisional"],
+    seeAlso: ["real", "billete-provisional", "peso-oro", "dolar"],
+  },
+  {
+    slug: "peso-oro",
+    id: "peso-oro",
+    category: "Monedas y divisas",
+    title: { es: "Peso oro", en: "Peso oro" },
+    definition: { es: "Nombre del papel del Banco de la República de 1923 a 1993, para señalar su convertibilidad en oro —perdida en 1931—. Las fichas de 1, 2, 10 y 1.000 pesos oro de esta colección llevan esa leyenda; desde 1993 el nombre volvió a ser, simplemente, el peso.", en: "The name of Banco de la República paper from 1923 to 1993, signalling gold convertibility — lost in 1931. This collection’s 1, 2, 10, and 1,000 peso oro records carry that legend; from 1993 the name returned to simply the peso." },
+    seeAlso: ["peso", "curso-legal", "desmonetizado"],
   },
   {
     slug: "pick",
@@ -647,7 +831,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Pick number", en: "Pick number" },
     definition: { es: "Número de referencia estándar asignado a cada billete en el Standard Catalog of World Paper Money, usado universalmente por coleccionistas para identificar variantes.", en: "The standard reference number assigned to each note in the Standard Catalog of World Paper Money, used universally by collectors to identify variants." },
-    seeAlso: ["friedberg"],
+    seeAlso: ["friedberg", "schwan", "banknote-book"],
   },
   {
     slug: "planchuela",
@@ -655,7 +839,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Planchuela", en: "Planchet" },
     definition: { es: "Disco metálico en bruto, con el reborde ya formado, que se introduce en la prensa acuñadora para recibir el diseño.", en: "The blank metal disk, prepared with upset rims, that is loaded into a coining press to be struck with a design." },
-    seeAlso: ["cospel"],
+    seeAlso: ["cospel", "plancheta"],
+  },
+  {
+    slug: "plancheta",
+    id: "plancheta",
+    category: "Producción",
+    title: { es: "Plancheta", en: "Planchette" },
+    definition: { es: "Disco o confeti de color incrustado en la pasta del papel como elemento de seguridad, visible a simple vista o bajo luz. Los certificados de pago militar de Vietnam llevan planchetas de color; no es la planchuela ni el cospel de una moneda.", en: "A coloured disc or confetti embedded in the paper pulp as a security feature, visible in ordinary or ultraviolet light. Vietnam military payment certificates carry coloured planchettes; it is not a coin planchet or blank." },
+    seeAlso: ["sustrato", "offset", "mpc", "planchuela"],
   },
   {
     slug: "pliegue-de-fabrica",
@@ -678,8 +870,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "pmg-pcgs",
     category: "Conservación",
     title: { es: "PMG / PCGS", en: "PMG / PCGS" },
-    definition: { es: "Las dos casas de certificación de papel moneda más usadas: Paper Money Guaranty (PMG) y PCGS Banknote. Encapsulan el billete y le asignan un grado numérico de 1 a 70, alineado con la escala Sheldon.", en: "The two leading third-party paper-money grading services: Paper Money Guaranty (PMG) and PCGS Banknote. They encapsulate the note and assign a numerical grade from 1 to 70, aligned with the Sheldon scale." },
-    seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "billete-sin-circular"],
+    definition: { es: "Las dos casas de certificación de papel moneda más usadas: Paper Money Guaranty (PMG) y PCGS Banknote. Encapsulan el billete y le asignan un grado numérico de 1 a 70, alineado con la escala Sheldon. Para monedas, ver NGC.", en: "The two leading third-party paper-money grading services: Paper Money Guaranty (PMG) and PCGS Banknote. They encapsulate the note and assign a numerical grade from 1 to 70, aligned with the Sheldon scale. For coins, see NGC." },
+    seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "billete-sin-circular", "ngc", "encapsulado"],
   },
   {
     slug: "polimero",
@@ -687,7 +879,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Polímero", en: "Polymer" },
     definition: { es: "Sustrato plástico —comúnmente polipropileno biaxialmente orientado— usado en billetes por su durabilidad y resistencia a la falsificación.", en: "A plastic substrate — commonly biaxially oriented polypropylene — used in banknotes for its durability and counterfeit resistance." },
-    seeAlso: ["sustrato", "tyvek"],
+    seeAlso: ["sustrato", "tyvek", "guardian", "ventana-transparente"],
   },
   {
     slug: "prueba-ensayo",
@@ -783,7 +975,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Conservación",
     title: { es: "Sin circular (SC / UNC)", en: "Uncirculated (UNC)" },
     definition: { es: "Grado de conservación más alto (SC en español, UNC en inglés): un billete sin signos de manipulación, con esquinas vivas, sin pliegues ni dobleces, y con su crispado original de imprenta.", en: "The highest condition grade: a pristine note with no signs of handling, sharp corners, no folds or creases, and its original press crispness." },
-    seeAlso: ["pliegue-y-doblez", "epq-calidad-de-papel-excepcional", "pmg-pcgs"],
+    seeAlso: ["pliegue-y-doblez", "epq-calidad-de-papel-excepcional", "pmg-pcgs", "casi-sin-circular-au", "choice-uncirculated", "gem-uncirculated", "encapsulado"],
   },
   {
     slug: "sin-circular-brillante-bu",
@@ -800,6 +992,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Sobresello", en: "Overprint" },
     definition: { es: "Texto o sello adicional impreso sobre un billete o documento ya existente para modificar su valor, vigencia o jurisdicción.", en: "Additional text or stamp printed over an already-existing note or document to alter its value, validity, or jurisdiction." },
     seeAlso: ["resello"],
+  },
+  {
+    slug: "spark",
+    id: "spark",
+    category: "Diseño",
+    title: { es: "SPARK", en: "SPARK" },
+    definition: { es: "Tinta de seguridad magnética ópticamente variable de SICPA: al inclinar el billete cambia de color y muestra un efecto de movimiento. En el 20.000 pesos de 2017 de esta colección el anón (chirimoya) del anverso es un motivo SPARK.", en: "SICPA’s optically variable magnetic security ink: tilting the note shifts colour and shows a motion effect. On this collection’s 2017 20,000-peso note the sugar-apple (anón) on the face is a SPARK motif." },
+    seeAlso: ["tinta-ovi", "dispositivo-opticamente-variable-ovd", "tinta-iridiscente"],
   },
   {
     slug: "superficies-alteradas",
@@ -824,6 +1024,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Sustrato híbrido", en: "Hybrid substrate" },
     definition: { es: "Material compuesto que combina capas de papel de algodón con elementos o ventanas de polímero, buscando la durabilidad plástica con la textura tradicional del papel.", en: "A composite material combining cotton-paper layers with polymer elements or windows, aiming for plastic durability with traditional paper feel." },
     seeAlso: ["sustrato", "polimero"],
+  },
+  {
+    slug: "sucre",
+    id: "sucre",
+    category: "Monedas y divisas",
+    title: { es: "Sucre", en: "Sucre" },
+    definition: { es: "Unidad monetaria del Ecuador desde la ley del 22 de marzo de 1884 hasta la dolarización de 2000. Lleva el nombre del mariscal Antonio José de Sucre. El papel lo emitieron primero casas privadas; el monopolio estatal llegó en 1927.", en: "Ecuador’s monetary unit from the law of 22 March 1884 until dollarization in 2000. It is named for Marshal Antonio José de Sucre. Private houses issued the paper first; the state monopoly came in 1927." },
+    seeAlso: ["dolar", "banco-emisor", "peso"],
   },
   {
     slug: "tala",
@@ -855,7 +1063,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Tasado", en: "Appraised" },
     definition: { es: "Ejemplar evaluado por un experto, certificado como auténtico y calificado explícitamente según los estándares establecidos de la industria.", en: "An item evaluated by an expert, certified as authentic, and explicitly graded according to established industry standards." },
-    seeAlso: ["pmg-pcgs", "escala-sheldon"],
+    seeAlso: ["pmg-pcgs", "escala-sheldon", "encapsulado", "ngc"],
   },
   {
     slug: "tenge",
@@ -887,7 +1095,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Tinta OVI", en: "Optically variable ink (OVI)" },
     definition: { es: "Tinta de seguridad que cambia de color según el ángulo de visión —por ejemplo, de verde a púrpura—. Es un tipo de dispositivo ópticamente variable impreso, distinto de las láminas holográficas.", en: "A security ink that changes color with the viewing angle — for example, from green to purple. It is a printed optically variable device, distinct from holographic foils." },
-    seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-iridiscente"],
+    seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-iridiscente", "spark", "foil"],
   },
   {
     slug: "tyvek",
@@ -895,7 +1103,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Tyvek", en: "Tyvek" },
     definition: { es: "Material sintético no tejido usado experimentalmente en algunas de las primeras emisiones de billetes de plástico en los años 1980.", en: "A synthetic non-woven material used experimentally in some of the earliest plastic banknote issues of the 1980s." },
-    seeAlso: ["polimero"],
+    seeAlso: ["polimero", "guardian"],
   },
   {
     slug: "vale-al-portador",
@@ -903,7 +1111,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "Vale al portador", en: "Bearer note" },
     definition: { es: "Documento que reconoce una deuda u obligación de pago a quien lo posea físicamente, sin necesidad de identificar a un titular específico.", en: "A document acknowledging a debt or payment obligation to whoever physically holds it, with no named holder required." },
-    seeAlso: ["deuda-flotante", "cedula-hipotecaria"],
+    seeAlso: ["deuda-flotante", "cedula-hipotecaria", "libranza"],
   },
   {
     slug: "ventana-transparente",
@@ -911,7 +1119,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Diseño",
     title: { es: "Ventana transparente", en: "Clear window" },
     definition: { es: "Apertura translúcida en un billete de polímero o híbrido, a menudo con una silueta o elemento grabado en relieve óptico.", en: "A translucent opening in a polymer or hybrid banknote, often bearing a silhouette or motif in optical relief." },
-    seeAlso: ["sustrato", "polimero"],
+    seeAlso: ["sustrato", "polimero", "guardian"],
   },
   {
     slug: "vineta",
@@ -920,6 +1128,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Viñeta", en: "Vignette" },
     definition: { es: "Ilustración grabada o impresa —un retrato, escena o motivo— que ocupa un área definida del diseño de un billete.", en: "An engraved or printed illustration — a portrait, scene, or motif — occupying a defined area of a banknote's design." },
     seeAlso: ["retrato", "talla-dulce"],
+  },
+  {
+    slug: "yuan-renminbi",
+    id: "yuan-renminbi",
+    category: "Monedas y divisas",
+    title: { es: "Yuan / Renminbi", en: "Yuan / Renminbi" },
+    definition: { es: "El renminbi (人民币) es la moneda de la República Popular China, emitida por el Banco Popular de China desde 1948; el yuan es su unidad. Esta colección cuenta las cinco series de papel y los conmemorativos de polímero (100 yuan del milenio, 20 yuan de 2022).", en: "The renminbi (人民币) is the currency of the People’s Republic of China, issued by the People’s Bank of China from 1948; the yuan is its unit. This collection covers the five paper series and the polymer commemoratives (millennium 100-yuan, 2022 20-yuan)." },
+    seeAlso: ["jiaozi", "polimero", "guardian"],
   },
 ];
 
