@@ -53,3 +53,17 @@ describe('US miscellaneous Where’s George copy', () => {
     assert.doesNotMatch(prose, /set:html/);
   });
 });
+
+describe('US Renci Pelé holding', () => {
+  it('records the Pelé / The Beautiful Game piece under pop art with serial F71235101A', () => {
+    assert.match(data, /id: 'renci-pele-the-beautiful-game'/);
+    assert.match(data, /chapterId: 'us-pop-art'/);
+    assert.match(data, /serial: 'F71235101A'/);
+    assert.match(data, /Renci · 5\/200/);
+    assert.match(data, /no es Rency Punnoose/);
+    assert.match(data, /This is not Rency Punnoose/);
+    assert.match(data, /Banksy/);
+    assert.match(seriesPage, /viewRencyCase/);
+    assert.match(seriesPage, /USA_RENCY_PATH/);
+  });
+});

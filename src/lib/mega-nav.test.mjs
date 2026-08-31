@@ -216,11 +216,12 @@ describe('Colombia visual catalogs', () => {
 });
 
 describe('United States submenu', () => {
-  it('includes the Rency and Misceláneos cases under Estados Unidos', () => {
+  it('includes the Renci and Misceláneos cases under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
     assert.match(usa, /id: 'rency'/);
-    assert.match(usa, /es: 'Rency'/);
+    assert.match(usa, /es: 'Renci'/);
+    assert.match(usa, /en: 'Renci'/);
     assert.match(usa, /href: USA_RENCY_PATH/);
     assert.match(usa, /id: 'miscelaneos'/);
     assert.match(usa, /es: 'Misceláneos'/);

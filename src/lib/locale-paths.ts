@@ -83,6 +83,14 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/mpc-vietnam/'],
   },
   {
+    es: '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
+    en: '/collection/united-states/rency/pele-the-beautiful-game/',
+    aliases: [
+      '/coleccion/united-states/rency/pele-the-beautiful-game/',
+      '/coleccion/estados-unidos/renci/pele-the-beautiful-game/',
+    ],
+  },
+  {
     es: '/coleccion/estados-unidos/rency/',
     en: '/collection/united-states/rency/',
     aliases: ['/coleccion/united-states/rency/', '/coleccion/estados-unidos/renci/'],
@@ -248,6 +256,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
+    '/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
@@ -258,6 +267,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/',
     '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
     '/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/',
+    '/en/coleccion/united-states/rency/pele-the-beautiful-game/',
     '/en/coleccion/united-states/rency/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',

@@ -143,8 +143,11 @@ const jsonLd = collectionPageJsonLd({
                       </li>
                     ))}
                   </ol>
-                ) : chapter.id === 'us-pop-art' ? (
-                  <p class="mt-8">
+                ) : null
+              }
+              {
+                chapter.id === 'us-pop-art' ? (
+                  <p class={notesForChapter(chapter.id).length > 0 ? 'mt-6' : 'mt-8'}>
                     <a
                       href={localizePath(USA_RENCY_PATH, locale)}
                       class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
