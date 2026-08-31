@@ -82,6 +82,20 @@ describe('US Rency Warhol & Basquiat holding', () => {
   });
 });
 
+describe('US Rency Life Is Beautiful / LIFE SPRAY holding', () => {
+  it('records LIFE SPRAY as a fourth pop-art object with reused serial F71235101A', () => {
+    assert.match(data, /id: 'renci-life-is-beautiful-life-spray'/);
+    assert.match(data, /Life Is Beautiful \/ LIFE SPRAY/);
+    assert.match(data, /LIFE SPRAY/);
+    assert.match(data, /FEDERAL BANK OF RENCY/);
+    assert.match(data, /life is beautiful/);
+    assert.match(data, /Rency · 5\/200/);
+    assert.match(data, /no fusiona las fichas/);
+    assert.match(data, /does not merge the records/);
+    assert.doesNotMatch(data, /Renci · 5\/200/);
+  });
+});
+
 describe('US Rency Trump / Never Surrender holding', () => {
   it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
     assert.match(data, /id: 'renci-trump-never-surrender'/);
