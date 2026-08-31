@@ -35,8 +35,8 @@ export type NavNode = {
    * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (flag-icons 4x3).
    */
   flag?: string;
-  /** Decorative mark for non-country panel links (Recursos and polymer continents). */
-  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america';
+  /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
+  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -101,12 +101,14 @@ export const megaNav: NavNode[] = [
             es: 'Rency',
             en: 'Rency',
             href: USA_RENCY_PATH,
+            icon: 'rency',
           },
           {
             id: 'miscelaneos',
             es: 'Misceláneos',
             en: 'Miscellaneous',
             href: USA_MISC_PATH,
+            icon: 'miscellaneous',
           },
         ],
       },

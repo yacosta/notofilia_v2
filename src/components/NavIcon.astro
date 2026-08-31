@@ -1,12 +1,21 @@
 ---
-export const NAV_ICON_IDS = ['guides', 'glossary', 'news', 'asia', 'europe', 'north-america'] as const;
+export const NAV_ICON_IDS = [
+  'guides',
+  'glossary',
+  'news',
+  'asia',
+  'europe',
+  'north-america',
+  'rency',
+  'miscellaneous',
+] as const;
 
 export type NavIconId = (typeof NAV_ICON_IDS)[number];
 
 const FILL_ICON_IDS = new Set<NavIconId>(['asia', 'europe', 'north-america']);
 
 interface Props {
-  /** Decorative mark for Recursos links and polymer continent headings. */
+  /** Decorative mark for Recursos links, polymer continent headings, and US series cases. */
   name?: string;
 }
 
@@ -43,6 +52,21 @@ const filled = icon ? FILL_ICON_IDS.has(icon) : false;
           <>
             <rect x="4.25" y="5" width="15.5" height="14" rx="1" />
             <path d="M7 9h10M7 12.25h7M7 15.5h10" />
+          </>
+        )}
+        {icon === 'rency' && (
+          <>
+            <path d="M11.2 8.35V6.1h1.6V8.35" />
+            <path d="M11.1 4.85h1.8v1.25h-1.8z" />
+            <rect x="9.15" y="8.35" width="5.7" height="11.4" rx="1.15" />
+            <path d="M10.55 12.4h2.9M10.55 14.7h2.1" />
+            <path d="M12.9 5.15l3.55-2.25M12.9 5.15l4.05-1.05M12.9 5.15l3.85.4" />
+          </>
+        )}
+        {icon === 'miscellaneous' && (
+          <>
+            <rect x="3.7" y="5.35" width="13.6" height="8.6" rx="1.1" />
+            <rect x="6.7" y="10.05" width="13.6" height="8.6" rx="1.1" />
           </>
         )}
         {

@@ -223,10 +223,17 @@ describe('United States submenu', () => {
     assert.match(usa, /es: 'Rency'/);
     assert.match(usa, /en: 'Rency'/);
     assert.match(usa, /href: USA_RENCY_PATH/);
+    assert.match(usa, /id: 'rency'[\s\S]*?icon: 'rency'/);
     assert.match(usa, /id: 'miscelaneos'/);
     assert.match(usa, /es: 'Misceláneos'/);
     assert.match(usa, /en: 'Miscellaneous'/);
     assert.match(usa, /href: USA_MISC_PATH/);
+    assert.match(usa, /id: 'miscelaneos'[\s\S]*?icon: 'miscellaneous'/);
+    const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
+    assert.match(icons, /'rency'/);
+    assert.match(icons, /'miscellaneous'/);
+    assert.match(icons, /icon === 'rency'/);
+    assert.match(icons, /icon === 'miscellaneous'/);
   });
 });
 
