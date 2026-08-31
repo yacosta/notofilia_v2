@@ -88,6 +88,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: [
       '/coleccion/united-states/rency/trump-never-surrender/',
       '/coleccion/estados-unidos/renci/trump-never-surrender/',
+      '/collection/united-states/renci/trump-never-surrender/',
     ],
   },
   {
@@ -96,6 +97,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: [
       '/coleccion/united-states/rency/warhol-basquiat-life-is-beautiful/',
       '/coleccion/estados-unidos/renci/warhol-basquiat-life-is-beautiful/',
+      '/collection/united-states/renci/warhol-basquiat-life-is-beautiful/',
     ],
   },
   {
@@ -104,12 +106,17 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: [
       '/coleccion/united-states/rency/pele-the-beautiful-game/',
       '/coleccion/estados-unidos/renci/pele-the-beautiful-game/',
+      '/collection/united-states/renci/pele-the-beautiful-game/',
     ],
   },
   {
     es: '/coleccion/estados-unidos/rency/',
     en: '/collection/united-states/rency/',
-    aliases: ['/coleccion/united-states/rency/', '/coleccion/estados-unidos/renci/'],
+    aliases: [
+      '/coleccion/united-states/rency/',
+      '/coleccion/estados-unidos/renci/',
+      '/collection/united-states/renci/',
+    ],
   },
   {
     es: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',

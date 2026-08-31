@@ -98,8 +98,8 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'rency',
-            es: 'Renci',
-            en: 'Renci',
+            es: 'Rency',
+            en: 'Rency',
             href: USA_RENCY_PATH,
           },
           {

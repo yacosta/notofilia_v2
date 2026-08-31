@@ -54,12 +54,13 @@ describe('US miscellaneous Where’s George copy', () => {
   });
 });
 
-describe('US Renci Pelé holding', () => {
+describe('US Rency Pelé holding', () => {
   it('records the Pelé / The Beautiful Game piece under pop art with serial F71235101A', () => {
     assert.match(data, /id: 'renci-pele-the-beautiful-game'/);
     assert.match(data, /chapterId: 'us-pop-art'/);
     assert.match(data, /serial: 'F71235101A'/);
-    assert.match(data, /Renci · 5\/200/);
+    assert.match(data, /Rency · 5\/200/);
+    assert.doesNotMatch(data, /Renci · 5\/200/);
     assert.match(data, /No debe confundirse con Rency Punnoose/);
     assert.match(data, /This is not Rency Punnoose/);
     assert.match(data, /Banksy/);
@@ -68,7 +69,7 @@ describe('US Renci Pelé holding', () => {
   });
 });
 
-describe('US Renci Warhol & Basquiat holding', () => {
+describe('US Rency Warhol & Basquiat holding', () => {
   it('records Warhol y Basquiat / Life Is Beautiful as a second pop-art object', () => {
     assert.match(data, /id: 'renci-warhol-basquiat-life-is-beautiful'/);
     assert.match(data, /Warhol y Basquiat \/ Life Is Beautiful/);
@@ -81,7 +82,7 @@ describe('US Renci Warhol & Basquiat holding', () => {
   });
 });
 
-describe('US Renci Trump / Never Surrender holding', () => {
+describe('US Rency Trump / Never Surrender holding', () => {
   it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
     assert.match(data, /id: 'renci-trump-never-surrender'/);
     assert.match(data, /Trump \/ Never Surrender/);

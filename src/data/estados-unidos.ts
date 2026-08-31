@@ -178,8 +178,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Contemporary interventions on genuine United States notes, not official BEP redesigns.',
     },
     body: {
-      es: 'Sobre papel de curso legal —sobre todo el 1 y el 2 dólares de la Reserva Federal—, artistas contemporáneos imprimen, estampan o dibujan hasta convertir el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP. En esta colección esa intervención es, sobre todo, Renci (firma RENCI; en el mercado también Rency). Ya tienen ficha Pelé / The Beautiful Game, edición 5/200; Warhol y Basquiat / Life Is Beautiful; y Trump / Never Surrender. Las dos primeras muestran el serial impreso F71235101A y son objetos distintos; en Never Surrender el serial del papel no es legible bajo la superposición. Lionel Messi y una pieza Life Is Beautiful aparte se documentarán en la vitrina de Renci a medida que se fotografíen.',
-      en: 'On legal-tender paper — chiefly the Federal Reserve $1 and $2 — contemporary artists print, stamp, or draw until the note becomes a pop-art object. These are not Treasury or BEP issues. In this collection that intervention is chiefly Renci (signed RENCI; also marketed as Rency). Pelé / The Beautiful Game, edition 5/200; Warhol & Basquiat / Life Is Beautiful; and Trump / Never Surrender already have note pages. The first two show printed serial F71235101A and are distinct objects; on Never Surrender the paper serial is not readable under the overlay. Lionel Messi and a separate Life Is Beautiful piece will be documented in the Renci case as they are photographed.',
+      es: 'Sobre papel de curso legal —sobre todo el 1 y el 2 dólares de la Reserva Federal—, artistas contemporáneos imprimen, estampan o dibujan hasta convertir el billete en objeto de pop art. No son emisiones del Tesoro ni del BEP. En esta colección esa intervención es, sobre todo, Rency (firma manuscrita RENCI). Ya tienen ficha Pelé / The Beautiful Game, edición 5/200; Warhol y Basquiat / Life Is Beautiful; y Trump / Never Surrender. Las dos primeras muestran el serial impreso F71235101A y son objetos distintos; en Never Surrender el serial del papel no es legible bajo la superposición. Lionel Messi y una pieza Life Is Beautiful aparte se documentarán en la vitrina de Rency a medida que se fotografíen.',
+      en: 'On legal-tender paper — chiefly the Federal Reserve $1 and $2 — contemporary artists print, stamp, or draw until the note becomes a pop-art object. These are not Treasury or BEP issues. In this collection that intervention is chiefly Rency (manuscript signature RENCI). Pelé / The Beautiful Game, edition 5/200; Warhol & Basquiat / Life Is Beautiful; and Trump / Never Surrender already have note pages. The first two show printed serial F71235101A and are distinct objects; on Never Surrender the paper serial is not readable under the overlay. Lionel Messi and a separate Life Is Beautiful piece will be documented in the Rency case as they are photographed.',
     },
   },
   {
@@ -279,7 +279,7 @@ export const seriesCopy = {
       'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
-    viewRencyCase: 'Abrir la vitrina de Renci',
+    viewRencyCase: 'Abrir la vitrina de Rency',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
@@ -299,7 +299,7 @@ export const seriesCopy = {
       'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
-    viewRencyCase: 'Open the Renci case',
+    viewRencyCase: 'Open the Rency case',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
@@ -469,19 +469,19 @@ export const miscSeriesSources: CatalogSource[] = [
 
 export const rencySeriesCopy = {
   es: {
-    metaTitle: 'Estados Unidos · Renci | Notofilia',
+    metaTitle: 'Estados Unidos · Rency | Notofilia',
     metaDescription:
-      'Vitrina de pop art de Renci sobre billetes auténticos de Estados Unidos: Pelé / The Beautiful Game, Warhol y Basquiat / Life Is Beautiful, y Trump / Never Surrender.',
+      'Vitrina de pop art de Rency sobre billetes auténticos de Estados Unidos: Pelé / The Beautiful Game, Warhol y Basquiat / Life Is Beautiful, y Trump / Never Surrender.',
     kicker: 'Estados Unidos · Pop art',
-    title: 'Renci sobre papel de curso legal',
-    breadcrumbCurrent: 'Renci',
+    title: 'Rency sobre papel de curso legal',
+    breadcrumbCurrent: 'Rency',
     parentLink: 'Estados Unidos',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'Renci —así firma estas piezas, en mayúsculas RENCI; en el mercado también se vende como Rency, de currency— es un artista de pop y street art estadounidense que interviene billetes auténticos. Trabaja de forma anónima. Las comparaciones con Banksy que aparecen en fichas de dealers son marketing, no un hecho documentado. No es Rency Punnoose, diseñador de otro oficio.',
+      'Rency —de currency; en las piezas suele firmar en mayúsculas RENCI— es un artista de pop y street art estadounidense que interviene billetes auténticos. Trabaja de forma anónima. Las comparaciones con Banksy que aparecen en fichas de dealers son marketing, no un hecho documentado. No es Rency Punnoose, diseñador de otro oficio.',
       'El soporte es papel de curso legal, no un rediseño del BEP ni una emisión del Tesoro: sobre todo el 1 y el 2 dólares de la Reserva Federal. El 2 dólares FRN volvió en 1976, en el 233.º aniversario de Jefferson, después de que el United States Note de esa denominación se detuviera en 1966.',
-      'La vitrina reúne Pelé / The Beautiful Game, edición 5/200 —anverso de un 1 dólar con superposición pop y reverso de un 2 dólares, plancha 52—; Warhol y Basquiat / Life Is Beautiful, un 2 dólares intervenido por ambas caras, plancha 23, con firma manuscrita Renci y sin fracción de edición; y Trump / Never Surrender, collage vertical del mugshot de Fulton County de 2023 sobre el reverso de un 2 dólares fotografiado en vertical, también con firma manuscrita Renci y sin fracción de edición. Pelé y Warhol–Basquiat muestran el serial impreso F71235101A; no son el mismo objeto. En Never Surrender el serial del papel no es legible. Lionel Messi y una pieza Life Is Beautiful aparte se documentarán aquí a medida que se fotografíen.',
+      'La vitrina reúne Pelé / The Beautiful Game, edición 5/200 —anverso de un 1 dólar con superposición pop y reverso de un 2 dólares, plancha 52—; Warhol y Basquiat / Life Is Beautiful, un 2 dólares intervenido por ambas caras, plancha 23, con firma manuscrita Rency y sin fracción de edición; y Trump / Never Surrender, collage vertical del mugshot de Fulton County de 2023 sobre el reverso de un 2 dólares fotografiado en vertical, también con firma manuscrita Rency y sin fracción de edición. Pelé y Warhol–Basquiat muestran el serial impreso F71235101A; no son el mismo objeto. En Never Surrender el serial del papel no es legible. Lionel Messi y una pieza Life Is Beautiful aparte se documentarán aquí a medida que se fotografíen.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -494,19 +494,19 @@ export const rencySeriesCopy = {
       'Aún no hay fichas en esta vitrina. Se documentarán aquí cuando se suban las imágenes.',
   },
   en: {
-    metaTitle: 'United States · Renci | Notofilia',
+    metaTitle: 'United States · Rency | Notofilia',
     metaDescription:
-      'Renci pop-art case on genuine United States notes: Pelé / The Beautiful Game, Warhol & Basquiat / Life Is Beautiful, and Trump / Never Surrender.',
+      'Rency pop-art case on genuine United States notes: Pelé / The Beautiful Game, Warhol & Basquiat / Life Is Beautiful, and Trump / Never Surrender.',
     kicker: 'United States · Pop art',
-    title: 'Renci on legal-tender paper',
-    breadcrumbCurrent: 'Renci',
+    title: 'Rency on legal-tender paper',
+    breadcrumbCurrent: 'Rency',
     parentLink: 'United States',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'Renci — the signature on these pieces, in capitals RENCI; also marketed as Rency, from currency — is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is marketing, not a documented fact. This is not Rency Punnoose, a designer in another field.',
+      'Rency — from currency; on these pieces the artist often signs in capitals RENCI — is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is marketing, not a documented fact. This is not Rency Punnoose, a designer in another field.',
       'The substrate is legal-tender paper, not a BEP redesign or a Treasury issue: chiefly the Federal Reserve $1 and $2. The $2 FRN returned in 1976, on the 233rd anniversary of Jefferson’s birth, after the United States Note of that denomination had been halted in 1966.',
-      'The case holds Pelé / The Beautiful Game, edition 5/200 — a $1 face with a pop overlay and a $2 reverse, plate 52 —; Warhol & Basquiat / Life Is Beautiful, a $2 intervened on both faces, plate 23, with a manuscript Renci signature and no edition fraction; and Trump / Never Surrender, a vertical collage of the 2023 Fulton County mugshot on a $2 reverse photographed upright, also with a manuscript Renci and no edition fraction. Pelé and Warhol–Basquiat show printed serial F71235101A; they are not the same object. On Never Surrender the paper serial is not readable. Lionel Messi and a separate Life Is Beautiful piece will be documented here as they are photographed.',
+      'The case holds Pelé / The Beautiful Game, edition 5/200 — a $1 face with a pop overlay and a $2 reverse, plate 52 —; Warhol & Basquiat / Life Is Beautiful, a $2 intervened on both faces, plate 23, with a manuscript Rency signature and no edition fraction; and Trump / Never Surrender, a vertical collage of the 2023 Fulton County mugshot on a $2 reverse photographed upright, also with a manuscript Rency and no edition fraction. Pelé and Warhol–Basquiat show printed serial F71235101A; they are not the same object. On Never Surrender the paper serial is not readable. Lionel Messi and a separate Life Is Beautiful piece will be documented here as they are photographed.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -544,8 +544,8 @@ export const rencySeriesSources: CatalogSource[] = [
     es: 'Bureau of Engraving and Printing — History',
     en: 'Bureau of Engraving and Printing — History',
     note: {
-      es: 'Contexto de la imprenta federal; las intervenciones de Renci no son emisiones del BEP.',
-      en: 'Context for the federal printer; Renci interventions are not BEP issues.',
+      es: 'Contexto de la imprenta federal; las intervenciones de Rency no son emisiones del BEP.',
+      en: 'Context for the federal printer; Rency interventions are not BEP issues.',
     },
   },
   {
@@ -1914,15 +1914,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     chapterId: 'us-pop-art',
     path: '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
     pathEn: '/collection/united-states/rency/pele-the-beautiful-game/',
-    pick: 'Renci · 5/200',
+    pick: 'Rency · 5/200',
     serial: 'F71235101A',
     signatures: {
-      es: 'Mary Ellen Withrow (tesorera, anverso del 1 dólar); firma manuscrita RENCI / Renci 5/200 (artista)',
-      en: 'Mary Ellen Withrow (Treasurer, $1 face); manuscript RENCI / Renci 5/200 (artist)',
+      es: 'Mary Ellen Withrow (tesorera, anverso del 1 dólar); firma manuscrita RENCI / Rency 5/200 (artista)',
+      en: 'Mary Ellen Withrow (Treasurer, $1 face); manuscript RENCI / Rency 5/200 (artist)',
     },
     printed: {
-      es: 'Papel de la Reserva Federal (BEP) con intervención de Renci. Edición manuscrita 5/200 en el reverso. Esta ficha no inventa una tirada del BEP para el tipo ni trata el 5/200 como censo de población.',
-      en: 'Federal Reserve paper (BEP) with a Renci intervention. Manuscript edition 5/200 on the back. This record does not invent a BEP printage for the type, and it does not treat 5/200 as a population census.',
+      es: 'Papel de la Reserva Federal (BEP) con intervención de Rency. Edición manuscrita 5/200 en el reverso. Esta ficha no inventa una tirada del BEP para el tipo ni trata el 5/200 como censo de población.',
+      en: 'Federal Reserve paper (BEP) with a Rency intervention. Manuscript edition 5/200 on the back. This record does not invent a BEP printage for the type, and it does not treat 5/200 as a population census.',
     },
     images: {
       composite: '/images/catalog/estados-unidos/renci-pele-f71235101-composite.jpg',
@@ -1936,32 +1936,32 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Pelé / The Beautiful Game · 5/200',
     },
     kicker: {
-      es: 'Estados Unidos · Pop art · Renci',
-      en: 'United States · Pop art · Renci',
+      es: 'Estados Unidos · Pop art · Rency',
+      en: 'United States · Pop art · Rency',
     },
     lead: {
       es: 'Una sola pieza: anverso pop de un 1 dólar auténtico, serial F 71235101 A, y reverso de un 2 dólares (Declaración de Independencia), edición manuscrita 5/200.',
       en: 'One object: a pop-art face on a genuine $1, serial F 71235101 A, and the back of a $2 (Declaration of Independence), manuscript edition 5/200.',
     },
     description: {
-      es: 'El anverso parte de un Federal Reserve Note de 1 dólar: seriales verdes F 71235101 A, sello del Tesoro y la firma de Mary Ellen Withrow, tesorera de Estados Unidos de 1994 a 2001. Sobre ese grabado, Renci superpone retratos de Pelé —joven con la camiseta de Brasil, la chilena en silueta, el gesto de celebración—, la firma de Pelé, las leyendas «the beautiful game» y «LOVE WHAT YOU ARE DOING», salpicaduras de color y, en vertical a la derecha, RENCI. El reverso no es el Gran Sello del 1 dólar: es el reverso del 2 dólares FRN, con la Declaración de Independencia de Trumbull, la plancha 52 y, a mano, «Renci» y «5/200». Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP.',
-      en: 'The face starts from a $1 Federal Reserve Note: green serials F 71235101 A, the Treasury seal, and the signature of Mary Ellen Withrow, Treasurer of the United States from 1994 to 2001. Over that engraving Renci overlays portraits of Pelé — young in the Brazil jersey, the bicycle-kick silhouette, the celebrating pose — Pelé’s signature, the legends “the beautiful game” and “LOVE WHAT YOU ARE DOING,” paint splatters, and, vertically at right, RENCI. The back is not the $1 Great Seal: it is the FRN $2 reverse, Trumbull’s Declaration of Independence, plate 52, and, in marker, “Renci” and “5/200.” It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue.',
+      es: 'El anverso parte de un Federal Reserve Note de 1 dólar: seriales verdes F 71235101 A, sello del Tesoro y la firma de Mary Ellen Withrow, tesorera de Estados Unidos de 1994 a 2001. Sobre ese grabado, Rency superpone retratos de Pelé —joven con la camiseta de Brasil, la chilena en silueta, el gesto de celebración—, la firma de Pelé, las leyendas «the beautiful game» y «LOVE WHAT YOU ARE DOING», salpicaduras de color y, en vertical a la derecha, RENCI. El reverso no es el Gran Sello del 1 dólar: es el reverso del 2 dólares FRN, con la Declaración de Independencia de Trumbull, la plancha 52 y, a mano, «Rency» y «5/200». Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP.',
+      en: 'The face starts from a $1 Federal Reserve Note: green serials F 71235101 A, the Treasury seal, and the signature of Mary Ellen Withrow, Treasurer of the United States from 1994 to 2001. Over that engraving Rency overlays portraits of Pelé — young in the Brazil jersey, the bicycle-kick silhouette, the celebrating pose — Pelé’s signature, the legends “the beautiful game” and “LOVE WHAT YOU ARE DOING,” paint splatters, and, vertically at right, RENCI. The back is not the $1 Great Seal: it is the FRN $2 reverse, Trumbull’s Declaration of Independence, plate 52, and, in marker, “Rency” and “5/200.” It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue.',
     },
     historyHeading: {
       es: 'El artista',
       en: 'The artist',
     },
     history: {
-      es: 'Renci firma estas piezas RENCI. En el comercio de arte sobre currency también se usa Rency, de currency. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. Pelé (Edson Arantes do Nascimento, 1940–2022) es el motivo: «the beautiful game» nombra el fútbol; la chilena y la camiseta de Brasil son los clichés visuales de su carrera. Esta ficha describe el objeto físico; no tasamos la edición ni republicamos precios de subasta.',
-      en: 'Renci signs these pieces RENCI. In the trade in art on currency the name Rency — from currency — is also used. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. Pelé (Edson Arantes do Nascimento, 1940–2022) is the subject: “the beautiful game” names football; the bicycle kick and the Brazil jersey are the visual clichés of his career. This record describes the physical object; it does not value the edition or republish auction prices.',
+      es: 'Rency es el nombre público del artista; en el papel suele firmar RENCI en mayúsculas. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. Pelé (Edson Arantes do Nascimento, 1940–2022) es el motivo: «the beautiful game» nombra el fútbol; la chilena y la camiseta de Brasil son los clichés visuales de su carrera. Esta ficha describe el objeto físico; no tasamos la edición ni republicamos precios de subasta.',
+      en: 'Rency is the public name of this artist; on the paper the signature is often RENCI in capitals. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. Pelé (Edson Arantes do Nascimento, 1940–2022) is the subject: “the beautiful game” names football; the bicycle kick and the Brazil jersey are the visual clichés of his career. This record describes the physical object; it does not value the edition or republish auction prices.',
     },
     frontCaption: {
       es: 'Anverso pop sobre un 1 dólar auténtico, serial F 71235101 A: retratos de Pelé, «the beautiful game», «LOVE WHAT YOU ARE DOING» y firma vertical RENCI.',
       en: 'Pop-art face on a genuine $1, serial F 71235101 A: Pelé portraits, “the beautiful game,” “LOVE WHAT YOU ARE DOING,” and vertical RENCI.',
     },
     backCaption: {
-      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 52, con firma manuscrita Renci y edición 5/200.',
-      en: 'Back of an FRN $2 (Declaration of Independence), plate 52, with manuscript Renci and edition 5/200.',
+      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 52, con firma manuscrita Rency y edición 5/200.',
+      en: 'Back of an FRN $2 (Declaration of Independence), plate 52, with manuscript Rency and edition 5/200.',
     },
     scarcity: {
       es: 'El artista numeró esta pieza 5/200. Esa fracción es una declaración de edición sobre el papel, no un censo PMG o PCGS ni una tirada del BEP. No se publica aquí un recuento independiente de ejemplares supervivientes. El híbrido 1 dólar / 2 dólares distingue el objeto de Warhol y Basquiat / Life Is Beautiful, el 2 dólares de esta vitrina intervenido por ambas caras, que muestra el mismo serial impreso F71235101A.',
@@ -2028,15 +2028,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     chapterId: 'us-pop-art',
     path: '/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
     pathEn: '/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
-    pick: 'Renci',
+    pick: 'Rency',
     serial: 'F71235101A',
     signatures: {
-      es: 'Firma manuscrita Renci (reverso); las firmas del Tesoro del 2 dólares quedan bajo la superposición',
-      en: 'Manuscript Renci (back); the $2 Treasury signatures sit under the overlay',
+      es: 'Firma manuscrita Rency (reverso); las firmas del Tesoro del 2 dólares quedan bajo la superposición',
+      en: 'Manuscript Rency (back); the $2 Treasury signatures sit under the overlay',
     },
     printed: {
-      es: 'Papel de la Reserva Federal (BEP) de 2 dólares con intervención de Renci en anverso y reverso. No hay fracción de edición manuscrita. Esta ficha no inventa una tirada del BEP para el tipo.',
-      en: 'Federal Reserve $2 paper (BEP) with a Renci intervention on both faces. There is no manuscript edition fraction. This record does not invent a BEP printage for the type.',
+      es: 'Papel de la Reserva Federal (BEP) de 2 dólares con intervención de Rency en anverso y reverso. No hay fracción de edición manuscrita. Esta ficha no inventa una tirada del BEP para el tipo.',
+      en: 'Federal Reserve $2 paper (BEP) with a Rency intervention on both faces. There is no manuscript edition fraction. This record does not invent a BEP printage for the type.',
     },
     images: {
       composite: '/images/catalog/estados-unidos/renci-warhol-basquiat-life-is-beautiful-composite.jpg',
@@ -2050,36 +2050,36 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Warhol & Basquiat / Life Is Beautiful',
     },
     kicker: {
-      es: 'Estados Unidos · Pop art · Renci',
-      en: 'United States · Pop art · Renci',
+      es: 'Estados Unidos · Pop art · Rency',
+      en: 'United States · Pop art · Rency',
     },
     lead: {
-      es: 'Una sola pieza: anverso pop sobre un 2 dólares auténtico, serial F 71235101 A, y reverso de Trumbull con firma manuscrita Renci y plancha 23.',
-      en: 'One object: a pop-art face on a genuine $2, serial F 71235101 A, and Trumbull’s reverse with a manuscript Renci signature and plate 23.',
+      es: 'Una sola pieza: anverso pop sobre un 2 dólares auténtico, serial F 71235101 A, y reverso de Trumbull con firma manuscrita Rency y plancha 23.',
+      en: 'One object: a pop-art face on a genuine $2, serial F 71235101 A, and Trumbull’s reverse with a manuscript Rency signature and plate 23.',
     },
     description: {
-      es: 'El anverso parte de un Federal Reserve Note de 2 dólares: numeral 2 en las esquinas y seriales verdes F 71235101 A. Sobre ese grabado, Renci superpone a Andy Warhol (izquierda: cabello blanco, cuello de tortuga negro) y Jean-Michel Basquiat (derecha: chaqueta estampada) espalda contra espalda, una lata Campbell’s Tomato Soup a la izquierda, una calavera al estilo Basquiat a la derecha y la corona de tres picos en el centro superior. Las leyendas incluyen «SAMO LIVES», «WORLD FAMOUS», «TOMATO SOUP», «CURRENCY», «NEW YORK CITY», «LIFE IS BEAUTIFUL», «THIS ART WILL LAST FOREVER», «STUDIO 54» y «FOLLOW YOUR DREAMS», con salpicaduras de pintura. El reverso es el del 2 dólares FRN: la Declaración de Independencia de Trumbull, el número de plancha 23 junto al grabado y, a mano en rotulador negro, «Renci». No hay fracción de edición. Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP. El serial impreso F71235101A también aparece en Pelé / The Beautiful Game de esta vitrina; son dos objetos físicos distintos (híbrido 1/2 dólares frente a este 2 dólares por ambas caras).',
-      en: 'The face starts from a $2 Federal Reserve Note: corner 2s and green serials F 71235101 A. Over that engraving Renci overlays Andy Warhol (left: white hair, black turtleneck) and Jean-Michel Basquiat (right: patterned jacket) back to back, a Campbell’s Tomato Soup can at left, a Basquiat-style skull at right, and the three-pointed crown at top center. The legends include “SAMO LIVES,” “WORLD FAMOUS,” “TOMATO SOUP,” “CURRENCY,” “NEW YORK CITY,” “LIFE IS BEAUTIFUL,” “THIS ART WILL LAST FOREVER,” “STUDIO 54,” and “FOLLOW YOUR DREAMS,” with paint splatters. The back is the FRN $2 reverse: Trumbull’s Declaration of Independence, plate 23 beside the engraving, and, in black marker, “Renci.” There is no edition fraction. It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue. Printed serial F71235101A also appears on Pelé / The Beautiful Game in this case; they are two distinct physical objects (a $1/$2 hybrid versus this $2 on both faces).',
+      es: 'El anverso parte de un Federal Reserve Note de 2 dólares: numeral 2 en las esquinas y seriales verdes F 71235101 A. Sobre ese grabado, Rency superpone a Andy Warhol (izquierda: cabello blanco, cuello de tortuga negro) y Jean-Michel Basquiat (derecha: chaqueta estampada) espalda contra espalda, una lata Campbell’s Tomato Soup a la izquierda, una calavera al estilo Basquiat a la derecha y la corona de tres picos en el centro superior. Las leyendas incluyen «SAMO LIVES», «WORLD FAMOUS», «TOMATO SOUP», «CURRENCY», «NEW YORK CITY», «LIFE IS BEAUTIFUL», «THIS ART WILL LAST FOREVER», «STUDIO 54» y «FOLLOW YOUR DREAMS», con salpicaduras de pintura. El reverso es el del 2 dólares FRN: la Declaración de Independencia de Trumbull, el número de plancha 23 junto al grabado y, a mano en rotulador negro, «Rency». No hay fracción de edición. Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP. El serial impreso F71235101A también aparece en Pelé / The Beautiful Game de esta vitrina; son dos objetos físicos distintos (híbrido 1/2 dólares frente a este 2 dólares por ambas caras).',
+      en: 'The face starts from a $2 Federal Reserve Note: corner 2s and green serials F 71235101 A. Over that engraving Rency overlays Andy Warhol (left: white hair, black turtleneck) and Jean-Michel Basquiat (right: patterned jacket) back to back, a Campbell’s Tomato Soup can at left, a Basquiat-style skull at right, and the three-pointed crown at top center. The legends include “SAMO LIVES,” “WORLD FAMOUS,” “TOMATO SOUP,” “CURRENCY,” “NEW YORK CITY,” “LIFE IS BEAUTIFUL,” “THIS ART WILL LAST FOREVER,” “STUDIO 54,” and “FOLLOW YOUR DREAMS,” with paint splatters. The back is the FRN $2 reverse: Trumbull’s Declaration of Independence, plate 23 beside the engraving, and, in black marker, “Rency.” There is no edition fraction. It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue. Printed serial F71235101A also appears on Pelé / The Beautiful Game in this case; they are two distinct physical objects (a $1/$2 hybrid versus this $2 on both faces).',
     },
     historyHeading: {
       es: 'El artista',
       en: 'The artist',
     },
     history: {
-      es: 'Renci firma estas piezas RENCI. En el comercio de arte sobre currency también se usa Rency, de currency. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. Andy Warhol (1928–1987) y Jean-Michel Basquiat (1960–1988) son el motivo: la lata Campbell’s y el retrato de Warhol citan la Factory; la corona, la calavera y «SAMO LIVES» citan a Basquiat; «STUDIO 54» y «NEW YORK CITY» sitúan la escena. Esta ficha describe el objeto físico; no tasamos la intervención ni republicamos precios de subasta.',
-      en: 'Renci signs these pieces RENCI. In the trade in art on currency the name Rency — from currency — is also used. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. Andy Warhol (1928–1987) and Jean-Michel Basquiat (1960–1988) are the subject: the Campbell’s can and Warhol’s portrait cite the Factory; the crown, skull, and “SAMO LIVES” cite Basquiat; “STUDIO 54” and “NEW YORK CITY” place the scene. This record describes the physical object; it does not value the intervention or republish auction prices.',
+      es: 'Rency es el nombre público del artista; en el papel suele firmar RENCI en mayúsculas. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. Andy Warhol (1928–1987) y Jean-Michel Basquiat (1960–1988) son el motivo: la lata Campbell’s y el retrato de Warhol citan la Factory; la corona, la calavera y «SAMO LIVES» citan a Basquiat; «STUDIO 54» y «NEW YORK CITY» sitúan la escena. Esta ficha describe el objeto físico; no tasamos la intervención ni republicamos precios de subasta.',
+      en: 'Rency is the public name of this artist; on the paper the signature is often RENCI in capitals. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. Andy Warhol (1928–1987) and Jean-Michel Basquiat (1960–1988) are the subject: the Campbell’s can and Warhol’s portrait cite the Factory; the crown, skull, and “SAMO LIVES” cite Basquiat; “STUDIO 54” and “NEW YORK CITY” place the scene. This record describes the physical object; it does not value the intervention or republish auction prices.',
     },
     frontCaption: {
       es: 'Anverso pop sobre un 2 dólares auténtico, serial F 71235101 A: Warhol y Basquiat, lata Campbell’s, calavera, corona y leyendas que incluyen «LIFE IS BEAUTIFUL» y «SAMO LIVES».',
       en: 'Pop-art face on a genuine $2, serial F 71235101 A: Warhol and Basquiat, Campbell’s can, skull, crown, and legends including “LIFE IS BEAUTIFUL” and “SAMO LIVES.”',
     },
     backCaption: {
-      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 23, con firma manuscrita Renci en rotulador negro. Sin fracción de edición.',
-      en: 'Back of an FRN $2 (Declaration of Independence), plate 23, with a manuscript Renci in black marker. No edition fraction.',
+      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia), plancha 23, con firma manuscrita Rency en rotulador negro. Sin fracción de edición.',
+      en: 'Back of an FRN $2 (Declaration of Independence), plate 23, with a manuscript Rency in black marker. No edition fraction.',
     },
     scarcity: {
-      es: 'El reverso lleva la firma manuscrita Renci y el número de plancha 23; no hay fracción de edición. Esa ausencia no se interpreta aquí como tirada abierta ni como censo. El 2 dólares intervenido por ambas caras distingue el objeto del híbrido Pelé / The Beautiful Game, edición 5/200, que muestra el mismo serial impreso.',
-      en: 'The back carries a manuscript Renci and plate 23; there is no edition fraction. That absence is not read here as an open edition or as a census. The $2 intervened on both faces sets the object apart from the Pelé / The Beautiful Game hybrid, edition 5/200, which shows the same printed serial.',
+      es: 'El reverso lleva la firma manuscrita Rency y el número de plancha 23; no hay fracción de edición. Esa ausencia no se interpreta aquí como tirada abierta ni como censo. El 2 dólares intervenido por ambas caras distingue el objeto del híbrido Pelé / The Beautiful Game, edición 5/200, que muestra el mismo serial impreso.',
+      en: 'The back carries a manuscript Rency and plate 23; there is no edition fraction. That absence is not read here as an open edition or as a census. The $2 intervened on both faces sets the object apart from the Pelé / The Beautiful Game hybrid, edition 5/200, which shows the same printed serial.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este objeto. El serial impreso F71235101A coincide con el de Pelé / The Beautiful Game; la coincidencia se registra y no fusiona las fichas. La pieza se presenta sin encapsular.',
@@ -2142,17 +2142,17 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     chapterId: 'us-pop-art',
     path: '/coleccion/estados-unidos/rency/trump-never-surrender/',
     pathEn: '/collection/united-states/rency/trump-never-surrender/',
-    pick: 'Renci',
+    pick: 'Rency',
     serial: '—',
     no_serial_reason:
       'Pop overlay covers the Federal Reserve face; BEP serials are not readable on the photographs. The $2 reverse has no serials.',
     signatures: {
-      es: 'Firma manuscrita Renci (anverso, abajo a la derecha; reverso, rotulador negro a gran escala). Las firmas del Tesoro no son legibles bajo la superposición.',
-      en: 'Manuscript Renci (face, lower right; back, large black marker). The Treasury signatures are not readable under the overlay.',
+      es: 'Firma manuscrita Rency (anverso, abajo a la derecha; reverso, rotulador negro a gran escala). Las firmas del Tesoro no son legibles bajo la superposición.',
+      en: 'Manuscript Rency (face, lower right; back, large black marker). The Treasury signatures are not readable under the overlay.',
     },
     printed: {
-      es: 'Papel de la Reserva Federal (BEP) de 2 dólares con intervención de Renci. El anverso es un collage pop vertical; el reverso es el grabado de Trumbull fotografiado en vertical (la plancha queda rotada). No hay fracción de edición manuscrita. Esta ficha no inventa una tirada del BEP para el tipo.',
-      en: 'Federal Reserve $2 paper (BEP) with a Renci intervention. The face is a vertical pop collage; the back is Trumbull’s engraving photographed upright (the plate is rotated). There is no manuscript edition fraction. This record does not invent a BEP printage for the type.',
+      es: 'Papel de la Reserva Federal (BEP) de 2 dólares con intervención de Rency. El anverso es un collage pop vertical; el reverso es el grabado de Trumbull fotografiado en vertical (la plancha queda rotada). No hay fracción de edición manuscrita. Esta ficha no inventa una tirada del BEP para el tipo.',
+      en: 'Federal Reserve $2 paper (BEP) with a Rency intervention. The face is a vertical pop collage; the back is Trumbull’s engraving photographed upright (the plate is rotated). There is no manuscript edition fraction. This record does not invent a BEP printage for the type.',
     },
     images: {
       composite: '/images/catalog/estados-unidos/renci-trump-never-surrender-composite.jpg',
@@ -2166,36 +2166,36 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Trump / Never Surrender',
     },
     kicker: {
-      es: 'Estados Unidos · Pop art · Renci',
-      en: 'United States · Pop art · Renci',
+      es: 'Estados Unidos · Pop art · Rency',
+      en: 'United States · Pop art · Rency',
     },
     lead: {
-      es: 'Una sola pieza: collage pop vertical del mugshot de Donald Trump (Fulton County, 2023) y reverso de un 2 dólares (Declaración de Independencia) fotografiado en vertical, con firma manuscrita Renci.',
-      en: 'One object: a vertical pop collage of Donald Trump’s 2023 Fulton County mugshot and a $2 reverse (Declaration of Independence) photographed upright, with a manuscript Renci signature.',
+      es: 'Una sola pieza: collage pop vertical del mugshot de Donald Trump (Fulton County, 2023) y reverso de un 2 dólares (Declaración de Independencia) fotografiado en vertical, con firma manuscrita Rency.',
+      en: 'One object: a vertical pop collage of Donald Trump’s 2023 Fulton County mugshot and a $2 reverse (Declaration of Independence) photographed upright, with a manuscript Rency signature.',
     },
     description: {
-      es: 'El anverso es un collage pop en formato retrato sobre papel de curso legal: el mugshot de Donald Trump de 2023 en el condado de Fulton, en semitono, con traje oscuro y corbata roja; detrás, una escala de altura con 70, 60, 50 y 40; las leyendas «Life, LIBERTY and the Pursuit of Happiness», «NEVER SURRENDER» en rojo y, en vertical a la derecha, «STAND UP FOR AMERICA»; el sello del sheriff del condado de Fulton con la sobrecarga «WITCH HUNT»; filigranas de currency, salpicaduras de pintura y un borde naranja-marrón. Abajo a la derecha, firma manuscrita Renci. El reverso es el del 2 dólares FRN —la Declaración de Independencia de Trumbull— fotografiado en vertical, de modo que el grabado queda rotado, con un «Renci» grande en rotulador negro sobre el centro. Los seriales del BEP no son legibles bajo la superposición; el reverso del 2 dólares no lleva serial. Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP. No duplica Pelé / The Beautiful Game ni Warhol y Basquiat / Life Is Beautiful.',
-      en: 'The face is a portrait-format pop collage on legal-tender paper: Donald Trump’s 2023 Fulton County mugshot in halftone, dark suit and red tie; behind him a height chart with 70, 60, 50, and 40; the legends “Life, LIBERTY and the Pursuit of Happiness,” “NEVER SURRENDER” in red, and, vertically at right, “STAND UP FOR AMERICA”; the Fulton County sheriff’s seal overprinted “WITCH HUNT”; currency scrollwork, paint splatters, and an orange-brown border. At lower right, a manuscript Renci. The back is the FRN $2 reverse — Trumbull’s Declaration of Independence — photographed upright, so the engraving is rotated, with a large black-marker “Renci” across the center. BEP serials are not readable under the overlay; the $2 reverse carries none. It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue. It does not duplicate Pelé / The Beautiful Game or Warhol & Basquiat / Life Is Beautiful.',
+      es: 'El anverso es un collage pop en formato retrato sobre papel de curso legal: el mugshot de Donald Trump de 2023 en el condado de Fulton, en semitono, con traje oscuro y corbata roja; detrás, una escala de altura con 70, 60, 50 y 40; las leyendas «Life, LIBERTY and the Pursuit of Happiness», «NEVER SURRENDER» en rojo y, en vertical a la derecha, «STAND UP FOR AMERICA»; el sello del sheriff del condado de Fulton con la sobrecarga «WITCH HUNT»; filigranas de currency, salpicaduras de pintura y un borde naranja-marrón. Abajo a la derecha, firma manuscrita Rency. El reverso es el del 2 dólares FRN —la Declaración de Independencia de Trumbull— fotografiado en vertical, de modo que el grabado queda rotado, con un «Rency» grande en rotulador negro sobre el centro. Los seriales del BEP no son legibles bajo la superposición; el reverso del 2 dólares no lleva serial. Es un único objeto coleccionable —anverso y reverso de la misma pieza—, no dos billetes catalogados por separado, y no es una emisión del Tesoro ni del BEP. No duplica Pelé / The Beautiful Game ni Warhol y Basquiat / Life Is Beautiful.',
+      en: 'The face is a portrait-format pop collage on legal-tender paper: Donald Trump’s 2023 Fulton County mugshot in halftone, dark suit and red tie; behind him a height chart with 70, 60, 50, and 40; the legends “Life, LIBERTY and the Pursuit of Happiness,” “NEVER SURRENDER” in red, and, vertically at right, “STAND UP FOR AMERICA”; the Fulton County sheriff’s seal overprinted “WITCH HUNT”; currency scrollwork, paint splatters, and an orange-brown border. At lower right, a manuscript Rency. The back is the FRN $2 reverse — Trumbull’s Declaration of Independence — photographed upright, so the engraving is rotated, with a large black-marker “Rency” across the center. BEP serials are not readable under the overlay; the $2 reverse carries none. It is one collectible — face and back of the same object — not two separately catalogued notes, and not a Treasury or BEP issue. It does not duplicate Pelé / The Beautiful Game or Warhol & Basquiat / Life Is Beautiful.',
     },
     historyHeading: {
       es: 'El artista',
       en: 'The artist',
     },
     history: {
-      es: 'Renci firma estas piezas RENCI. En el comercio de arte sobre currency también se usa Rency, de currency. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. El motivo es el mugshot de Donald Trump tomado el 24 de agosto de 2023 en la cárcel del condado de Fulton, Georgia; las leyendas «NEVER SURRENDER», «STAND UP FOR AMERICA» y «WITCH HUNT» pertenecen a la superposición, no a una emisión del Tesoro. Esta ficha describe el objeto físico; no tasamos la intervención ni republicamos precios de subasta.',
-      en: 'Renci signs these pieces RENCI. In the trade in art on currency the name Rency — from currency — is also used. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. The subject is Donald Trump’s mugshot taken on 24 August 2023 at the Fulton County Jail in Georgia; the legends “NEVER SURRENDER,” “STAND UP FOR AMERICA,” and “WITCH HUNT” belong to the overlay, not to a Treasury issue. This record describes the physical object; it does not value the intervention or republish auction prices.',
+      es: 'Rency es el nombre público del artista; en el papel suele firmar RENCI en mayúsculas. Es un artista de pop y street art estadounidense que trabaja de forma anónima sobre billetes auténticos. Las comparaciones con Banksy que publican dealers son un argumento de venta, no una atribución ni una biografía verificada. No debe confundirse con Rency Punnoose. El motivo es el mugshot de Donald Trump tomado el 24 de agosto de 2023 en la cárcel del condado de Fulton, Georgia; las leyendas «NEVER SURRENDER», «STAND UP FOR AMERICA» y «WITCH HUNT» pertenecen a la superposición, no a una emisión del Tesoro. Esta ficha describe el objeto físico; no tasamos la intervención ni republicamos precios de subasta.',
+      en: 'Rency is the public name of this artist; on the paper the signature is often RENCI in capitals. The artist is an anonymous United States pop and street artist who works on genuine notes. Dealer copy that likens the work to Banksy is a sales line, not an attribution or a verified biography. This is not Rency Punnoose. The subject is Donald Trump’s mugshot taken on 24 August 2023 at the Fulton County Jail in Georgia; the legends “NEVER SURRENDER,” “STAND UP FOR AMERICA,” and “WITCH HUNT” belong to the overlay, not to a Treasury issue. This record describes the physical object; it does not value the intervention or republish auction prices.',
     },
     frontCaption: {
-      es: 'Anverso pop en formato retrato: mugshot de Trump (Fulton County, 2023), «NEVER SURRENDER», «STAND UP FOR AMERICA», sello «WITCH HUNT» y firma Renci abajo a la derecha.',
-      en: 'Portrait-format pop face: Trump mugshot (Fulton County, 2023), “NEVER SURRENDER,” “STAND UP FOR AMERICA,” “WITCH HUNT” seal, and Renci at lower right.',
+      es: 'Anverso pop en formato retrato: mugshot de Trump (Fulton County, 2023), «NEVER SURRENDER», «STAND UP FOR AMERICA», sello «WITCH HUNT» y firma Rency abajo a la derecha.',
+      en: 'Portrait-format pop face: Trump mugshot (Fulton County, 2023), “NEVER SURRENDER,” “STAND UP FOR AMERICA,” “WITCH HUNT” seal, and Rency at lower right.',
     },
     backCaption: {
-      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia) fotografiado en vertical, con firma manuscrita Renci en rotulador negro. Sin fracción de edición.',
-      en: 'Back of an FRN $2 (Declaration of Independence) photographed upright, with a manuscript Renci in black marker. No edition fraction.',
+      es: 'Reverso de un 2 dólares FRN (Declaración de Independencia) fotografiado en vertical, con firma manuscrita Rency en rotulador negro. Sin fracción de edición.',
+      en: 'Back of an FRN $2 (Declaration of Independence) photographed upright, with a manuscript Rency in black marker. No edition fraction.',
     },
     scarcity: {
-      es: 'El reverso lleva la firma manuscrita Renci a gran escala; no hay fracción de edición. Esa ausencia no se interpreta aquí como tirada abierta ni como censo. El collage vertical del mugshot y el reverso de 2 dólares fotografiado en vertical distinguen el objeto del híbrido Pelé / The Beautiful Game, edición 5/200, y de Warhol y Basquiat / Life Is Beautiful, el 2 dólares intervenido por ambas caras con serial impreso F71235101A.',
-      en: 'The back carries a large manuscript Renci; there is no edition fraction. That absence is not read here as an open edition or as a census. The vertical mugshot collage and the $2 reverse photographed upright set the object apart from the Pelé / The Beautiful Game hybrid, edition 5/200, and from Warhol & Basquiat / Life Is Beautiful, the $2 intervened on both faces with printed serial F71235101A.',
+      es: 'El reverso lleva la firma manuscrita Rency a gran escala; no hay fracción de edición. Esa ausencia no se interpreta aquí como tirada abierta ni como censo. El collage vertical del mugshot y el reverso de 2 dólares fotografiado en vertical distinguen el objeto del híbrido Pelé / The Beautiful Game, edición 5/200, y de Warhol y Basquiat / Life Is Beautiful, el 2 dólares intervenido por ambas caras con serial impreso F71235101A.',
+      en: 'The back carries a large manuscript Rency; there is no edition fraction. That absence is not read here as an open edition or as a census. The vertical mugshot collage and the $2 reverse photographed upright set the object apart from the Pelé / The Beautiful Game hybrid, edition 5/200, and from Warhol & Basquiat / Life Is Beautiful, the $2 intervened on both faces with printed serial F71235101A.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este objeto. El serial del BEP no es legible en las fotografías; no se asigna aquí el serial F71235101A de otras piezas de la vitrina. La pieza se presenta sin encapsular.',
@@ -2250,7 +2250,7 @@ export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
     miscLink: 'Misceláneos',
-    rencyLink: 'Renci',
+    rencyLink: 'Rency',
     collectionLink: 'Estados Unidos',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
@@ -2271,7 +2271,7 @@ export const notePageCopy = {
   en: {
     seriesLink: 'United States',
     miscLink: 'Miscellaneous',
-    rencyLink: 'Renci',
+    rencyLink: 'Rency',
     collectionLink: 'United States',
     frontHeading: 'Face',
     backHeading: 'Back',
