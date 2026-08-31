@@ -1,9 +1,0 @@
----
-import PolymerCanadaNotePage from '../../../../../../components/catalog/PolymerCanadaNotePage.astro';
-import { noteById } from '../../../../../../data/canada-polymer';
-
-const note = noteById('5-dolares-laurier');
-if (!note) throw new Error('Missing Canada polymer 5-dolares-laurier catalog note');
----
-
-<PolymerCanadaNotePage locale="en" note={note} />
