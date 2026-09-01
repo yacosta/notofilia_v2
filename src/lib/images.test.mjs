@@ -25,15 +25,15 @@ describe('catalogAssetSrc', () => {
 describe('editorialUploadSrcset', () => {
   it('uses the -card sibling and master without /cdn-cgi/image/', () => {
     assert.equal(
-      editorialUploadSrcset('/uploads/baraboo-golden-jubilee-1933.jpg', 2128),
-      '/uploads/baraboo-golden-jubilee-1933-card.jpg 800w, /uploads/baraboo-golden-jubilee-1933.jpg 2128w',
+      editorialUploadSrcset('/uploads/circo-ringling-bros-barnum-bailey.jpg'),
+      '/uploads/circo-ringling-bros-barnum-bailey-card.jpg 800w, /uploads/circo-ringling-bros-barnum-bailey.jpg 1200w',
     );
   });
 
   it('does not wrap an already-card path', () => {
     assert.equal(
-      editorialUploadSrcset('/uploads/baraboo-golden-jubilee-1933-card.jpg'),
-      '/uploads/baraboo-golden-jubilee-1933-card.jpg 800w',
+      editorialUploadSrcset('/uploads/circo-ringling-bros-barnum-bailey-card.jpg'),
+      '/uploads/circo-ringling-bros-barnum-bailey-card.jpg 800w',
     );
   });
 });
