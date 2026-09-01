@@ -3,7 +3,14 @@ import { COLOMBIA_PATH } from '../data/colombia';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
-import { USA_MISC_PATH, USA_MPC_PATH, USA_PATH, USA_RENCY_PATH } from '../data/estados-unidos';
+import {
+  USA_BARABOO_SCRIP_PATH,
+  USA_MISC_PATH,
+  USA_MPC_PATH,
+  USA_PATH,
+  USA_RENCY_PATH,
+  barabooScripSeriesCopy,
+} from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -36,7 +43,7 @@ export type NavNode = {
    */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
-  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous';
+  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous' | 'circus';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -109,6 +116,13 @@ export const megaNav: NavNode[] = [
             en: 'Miscellaneous',
             href: USA_MISC_PATH,
             icon: 'miscellaneous',
+          },
+          {
+            id: 'scrip-baraboo',
+            es: barabooScripSeriesCopy.es.title,
+            en: barabooScripSeriesCopy.en.title,
+            href: USA_BARABOO_SCRIP_PATH,
+            icon: 'circus',
           },
         ],
       },

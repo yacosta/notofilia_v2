@@ -235,6 +235,38 @@ describe('United States submenu', () => {
     assert.match(icons, /icon === 'rency'/);
     assert.match(icons, /icon === 'miscellaneous'/);
   });
+
+  it('places the Baraboo 1933 scrip type immediately after Misceláneos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const data = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
+    assert.match(source, /USA_BARABOO_SCRIP_PATH/);
+    assert.match(source, /barabooScripSeriesCopy/);
+    assert.match(usa, /id: 'scrip-baraboo'/);
+    assert.match(usa, /es: barabooScripSeriesCopy\.es\.title/);
+    assert.match(usa, /en: barabooScripSeriesCopy\.en\.title/);
+    assert.match(usa, /href: USA_BARABOO_SCRIP_PATH/);
+    assert.match(usa, /id: 'miscelaneos'[\s\S]*id: 'scrip-baraboo'/);
+    assert.doesNotMatch(usa, /id: 'scrip-baraboo'[\s\S]*id: 'miscelaneos'/);
+    const miscBlock = usa.split("id: 'miscelaneos'")[1]?.split("id: 'scrip-baraboo'")[0] ?? '';
+    assert.doesNotMatch(miscBlock, /children:/);
+    assert.match(data, /title: 'Scrip de Baraboo · Golden Jubilee 1933'/);
+    assert.match(data, /title: 'Baraboo scrip · Golden Jubilee 1933'/);
+    assert.match(usa, /id: 'scrip-baraboo'[\s\S]*?icon: 'circus'/);
+  });
+
+  it('marks the Baraboo scrip link with a decorative circus Big Top', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
+    assert.match(usa, /id: 'scrip-baraboo'[\s\S]*?icon: 'circus'/);
+    assert.match(icons, /'circus'/);
+    assert.match(icons, /icon === 'circus'/);
+    assert.match(icons, /<circle cx="12" cy="3.45" r="1.15"/);
+    assert.match(icons, /M3\.9 11\.25 12 6\.35l8\.1 4\.9/);
+    assert.match(icons, /M9\.15 20\.4Q12 13\.9 14\.85 20\.4/);
+    assert.match(icons, /class="mega-nav-icon" aria-hidden="true"/);
+  });
 });
 
 describe('Recursos submenu', () => {

@@ -188,6 +188,33 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
       /\/en\/collection\/united-states\/miscellaneous\/baraboo-golden-jubilee-scrip-1933\//,
     );
   });
+
+  it('uses the 1933 jubilee souvenir map as the type-page hero, not the US Fed map or a Highsmith crop', () => {
+    const seriesHero = readFileSync(
+      new URL('../components/catalog/SeriesHero.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(data, /src: '\/uploads\/baraboo-golden-jubilee-1933\.jpg'/);
+    assert.match(barabooPage, /const hero = BARABOO_JUBILEE_FIGURE/);
+    assert.match(barabooPage, /fit="contain"/);
+    assert.doesNotMatch(barabooPage, /united-states\.jpg/);
+    assert.doesNotMatch(barabooPage, /estados-unidos\.jpg/);
+    assert.doesNotMatch(barabooPage, /Highsmith/);
+    assert.doesNotMatch(barabooPage, /circus-wagon/);
+    assert.match(seriesHero, /editorialUploadSrcset/);
+    assert.match(seriesHero, /src\.includes\('\/uploads\/'\)/);
+    assert.match(seriesHero, /fetchpriority="high"/);
+    assert.match(seriesHero, /object-contain/);
+    const copyBlock = data.slice(
+      data.indexOf('export const barabooScripSeriesCopy'),
+      data.indexOf('export const barabooScripSeriesLead'),
+    );
+    assert.match(copyBlock, /Al\. Ringling Theatre/);
+    assert.match(copyBlock, /Sauk County Courthouse/);
+    assert.match(copyBlock, /C\. & N\.W\. yards/);
+    assert.doesNotMatch(copyBlock, /Mapa vintage de Estados Unidos sobre pergamino/);
+    assert.doesNotMatch(copyBlock, /Vintage map of the United States on parchment/);
+  });
 });
 
 describe('US Rency Trump / Never Surrender holding', () => {

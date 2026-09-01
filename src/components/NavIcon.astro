@@ -8,6 +8,7 @@ export const NAV_ICON_IDS = [
   'north-america',
   'rency',
   'miscellaneous',
+  'circus',
 ] as const;
 
 export type NavIconId = (typeof NAV_ICON_IDS)[number];
@@ -67,6 +68,16 @@ const filled = icon ? FILL_ICON_IDS.has(icon) : false;
           <>
             <rect x="3.7" y="5.35" width="13.6" height="8.6" rx="1.1" />
             <rect x="6.7" y="10.05" width="13.6" height="8.6" rx="1.1" />
+          </>
+        )}
+        {icon === 'circus' && (
+          <>
+            <circle cx="12" cy="3.45" r="1.15" fill="currentColor" stroke="none" />
+            <path d="M12 4.6v2" />
+            <path d="M3.9 11.25 12 6.35l8.1 4.9" />
+            <path d="M3.9 11.25q2.05 1.75 4.05 0 2.05 1.75 4.05 0 2.05 1.75 4.05 0 2.05 1.75 4.05 0" />
+            <path d="M4.45 11.55 5.3 20.4h13.4l.85-8.85" />
+            <path d="M9.15 20.4Q12 13.9 14.85 20.4" />
           </>
         )}
         {

@@ -568,7 +568,7 @@ export const barabooScripSeriesCopy = {
     parentLink: 'Estados Unidos',
     miscLink: 'Misceláneos',
     heroAlt:
-      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+      'Postal souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
     typesLabel: 'Denominaciones del tipo',
     typesIntro:
       'Seis vales, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: esta ficha y las fuentes lo describen como un juego, no como seis seriales.',
@@ -599,7 +599,7 @@ export const barabooScripSeriesCopy = {
     parentLink: 'United States',
     miscLink: 'Miscellaneous',
     heroAlt:
-      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+      'Souvenir postcard of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
     typesLabel: 'Type denominations',
     typesIntro:
       'Six notes, Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: this record and the sources describe a set, not six serials.',
