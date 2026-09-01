@@ -252,6 +252,20 @@ describe('United States submenu', () => {
     assert.doesNotMatch(miscBlock, /children:/);
     assert.match(data, /title: 'Scrip de Baraboo · Golden Jubilee 1933'/);
     assert.match(data, /title: 'Baraboo scrip · Golden Jubilee 1933'/);
+    assert.match(usa, /id: 'scrip-baraboo'[\s\S]*?icon: 'circus'/);
+  });
+
+  it('marks the Baraboo scrip link with a decorative circus Big Top', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
+    assert.match(usa, /id: 'scrip-baraboo'[\s\S]*?icon: 'circus'/);
+    assert.match(icons, /'circus'/);
+    assert.match(icons, /icon === 'circus'/);
+    assert.match(icons, /<circle cx="12" cy="3.45" r="1.15"/);
+    assert.match(icons, /M3\.9 11\.25 12 6\.35l8\.1 4\.9/);
+    assert.match(icons, /M9\.15 20\.4Q12 13\.9 14\.85 20\.4/);
+    assert.match(icons, /class="mega-nav-icon" aria-hidden="true"/);
   });
 });
 
