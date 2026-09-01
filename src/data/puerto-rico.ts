@@ -148,8 +148,8 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       en: 'For the Treasurer (autograph signature); printed contributor: Citizen Pedro Fernandez Criado; redemption endorsement (back): Ramon Fernandez Criado on behalf of his father Pedro',
     },
     printed: {
-      es: 'Litografiado en Nueva York por Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Recibo de contribución provisional — no moneda de curso (distinto de Pick 61–63) — convertible en bonos de la República de Cuba en la primera emisión. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
-      en: 'Lithographed in New York by Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Provisional fundraising receipt — not circulating currency (separate from Pick 61–63) — convertible into Republic of Cuba bonds on the first issuance. This record does not invent a printage for the type or for No. 32.',
+      es: 'Litografiado en Nueva York por Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Recibo de contribución provisional — no moneda de curso (distinto de Pick 61–64) — convertible en bonos de la República de Cuba en la primera emisión. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
+      en: 'Lithographed in New York by Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Provisional fundraising receipt — not circulating currency (separate from Pick 61–64) — convertible into Republic of Cuba bonds on the first issuance. This record does not invent a printage for the type or for No. 32.',
     },
     images: {
       composite: '/images/catalog/puerto-rico/pr-1869-junta-central-32-composite.jpg',
