@@ -12,6 +12,7 @@ import { glossaryTermPath, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { victoryNotes } from '../data/philippines-victory-66';
+import { puertoRicoNotes } from '../data/puerto-rico';
 import { collections } from './site';
 import { localizePath, type Locale } from './locale-paths';
 import { extractCert, inferPieceFlags, normalizeIdentity, stripHtml } from './search';
@@ -209,6 +210,24 @@ function pieceSeeds(): PieceSeed[] {
   for (const note of malaysiaNotes) {
     seeds.push({
       id: `my-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      serial: note.serial_display,
+      title: note.title,
+      dek: note.lead,
+      kicker: note.kicker,
+      signatures: note.signatures,
+      grade: note.grade,
+      description: note.description,
+      image: note.images.composite,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of puertoRicoNotes) {
+    seeds.push({
+      id: `pr-${note.id}`,
       kind: 'banknote',
       path: note.path,
       pick: note.pick,

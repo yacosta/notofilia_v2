@@ -107,6 +107,7 @@ export const additions: Holding[] = [
   { id: 'gb-2016-5-pounds-ac04879241', kind: 'banknote', country: 'GB' },
   { id: 'ca-2013-5-dollars-hbm0828003', kind: 'banknote', country: 'CA' },
   { id: 'my-2012-5-ringgit-aa1955984', kind: 'banknote', country: 'MY' },
+  { id: 'pr-1895-1-peso-4548454', kind: 'banknote', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -156,6 +157,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'gb-2016-5-pounds-p394-b203a' },
   { id: 'ca-2013-5-dollars-p106b-bc69' },
   { id: 'my-2012-5-ringgit-p52a-b149a' },
+  { id: 'pr-1895-1-peso-p7b' },
 ];
 
 export type CollectionStats = {

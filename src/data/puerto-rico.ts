@@ -1,4 +1,5 @@
-import type { CatalogSource } from './catalog';
+import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath } from '../lib/locale-paths';
 
 export const PUERTO_RICO_PATH = '/coleccion/puerto-rico/';
 
@@ -41,7 +42,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Emisiones coloniales y de transición | Notofilia',
     metaDescription:
-      'Vitrina de papel moneda puertorriqueño del siglo XIX: emisiones coloniales y de transición. Las fichas se publicarán a medida que se documenten.',
+      'Vitrina de papel moneda puertorriqueño del siglo XIX: el Billete de Canje de 1 peso de 1895 y las emisiones coloniales y de transición.',
     kicker: 'Puerto Rico · Siglo XIX',
     title: 'Emisiones coloniales y de transición',
     heroAlt:
@@ -53,13 +54,17 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Las fichas de cada pieza se publicarán como en Filipinas, a medida que se documenten.',
+      'Por ahora, el Billete de Canje de 1 peso de 1895 (P#7b), serial radar 4548454. Las demás fichas se publicarán a medida que se documenten.',
+    holdingsAria: 'Billetes de Puerto Rico en la colección',
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
   },
   en: {
     metaTitle: 'Puerto Rico · Colonial and transition issues | Notofilia',
     metaDescription:
-      'Case for nineteenth-century Puerto Rican paper money: colonial and transition issues. Individual note pages will be published as they are documented.',
+      'Case for nineteenth-century Puerto Rican paper money: the 1895 1-peso exchange note and colonial and transition issues.',
     kicker: 'Puerto Rico · Nineteenth century',
     title: 'Colonial and transition issues',
     heroAlt:
@@ -71,13 +76,168 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'Individual note pages will be published as they are documented, as in the Philippines case.',
+      'For now, the 1895 1-peso exchange note (P#7b), radar serial 4548454. Further note pages will be published as they are documented.',
+    holdingsAria: 'Puerto Rico banknotes in the collection',
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
     sourcesTitle: 'Sources',
   },
 } as const;
 
-export function seriesPath(locale: 'es' | 'en'): string {
-  return locale === 'en' ? '/en/collection/puerto-rico/' : PUERTO_RICO_PATH;
+export type PuertoRicoNoteId = 'billete-de-canje-1-peso-1895';
+
+export type PuertoRicoNote = {
+  id: PuertoRicoNoteId;
+  path: string;
+  pick: string;
+  serial: string;
+  serial_display: string;
+  serial_kind: 'fancy';
+  signatures: LocalizedText;
+  printed: LocalizedText;
+  images: {
+    composite: string;
+    front: string;
+    back: string;
+  };
+  title: LocalizedText;
+  kicker: LocalizedText;
+  lead: LocalizedText;
+  description: LocalizedText;
+  frontCaption: LocalizedText;
+  backCaption: LocalizedText;
+  scarcity: LocalizedText;
+  population: LocalizedText;
+  grade: LocalizedText;
+  sources: CatalogSource[];
+};
+
+export const puertoRicoNotes: PuertoRicoNote[] = [
+  {
+    id: 'billete-de-canje-1-peso-1895',
+    path: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
+    pick: 'P#7b',
+    serial: '4548454',
+    serial_display: 'N.º 4548454',
+    serial_kind: 'fancy',
+    signatures: {
+      es: 'El Director de Hacienda (M. Vendrell); El Ordenador de Pagos; El Interventor',
+      en: 'Director of Finance (M. Vendrell); Paymaster; Comptroller',
+    },
+    printed: {
+      es: 'Wikipedia sitúa la emisión del Ministerio de Ultramar en cinco millones de Billetes de Canje de 1 peso (decreto de 17 de agosto de 1895). Esta ficha no inventa una tirada para la variedad P#7b ni para el serial 4548454.',
+      en: 'Wikipedia places the Ministerio de Ultramar issue at five million 1-peso exchange notes (decree of 17 August 1895). This record does not invent a printage for variety P#7b or for serial 4548454.',
+    },
+    images: {
+      composite: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-composite.jpg',
+      front: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-front.jpg',
+      back: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-back.jpg',
+    },
+    title: {
+      es: '1 peso · Billete de Canje · 1895',
+      en: '1 Peso · Exchange Note · 1895',
+    },
+    kicker: {
+      es: 'Puerto Rico · Ministerio de Ultramar',
+      en: 'Puerto Rico · Ministerio de Ultramar',
+    },
+    lead: {
+      es: 'Instrumento de canje de 1 peso creado por el Real Decreto de 17 de agosto de 1895. Serial radar N.º 4548454, variedad con talón parcial (P#7b).',
+      en: '1-peso exchange instrument created by the royal decree of 17 August 1895. Radar serial N.º 4548454, partial-counterfoil variety (P#7b).',
+    },
+    description: {
+      es: 'El Real Decreto de 17 de agosto de 1895 creó el Billete de Canje para recoger la plata mexicana y extranjera que saturaba la isla y acuñar en Madrid la moneda provincial. El Ministerio de Ultramar emitió un solo valor: 1 peso. El anverso, en negro sobre fondo amarillo, titula BILLETE DE CANJE y VALE UN PESO; a la izquierda, un retrato circular de un hombre barbado con caperuza —los catálogos no lo identifican; a menudo se describe como conquistador— y a la derecha el círculo del agua. El serial rojo N.º 4548454 es un palíndromo (radar). Firman El Director de Hacienda (M. Vendrell), El Ordenador de Pagos y El Interventor. Al pie, R. MAURA y MADRID: Bartolomé Maura y Montaner grabó la plancha para la imprenta madrileña. El reverso, en verde, lleva las armas reales de España, la cinta BILLETE DE CANJE y 1 PESO en el medallón derecho. Los restos de letras D y UI fuera del marco marcan el talón recortado: variedad Pick 7b (talón parcial), no el 7a de talón entero ni el 7c sin talón. Esta pieza de la colección está en funda, sin encapsular.',
+      en: 'The royal decree of 17 August 1895 created the exchange note to gather Mexican and foreign silver flooding the island and to strike provincial coin in Madrid. The Ministerio de Ultramar issued a single denomination: 1 peso. The face, black on a yellow underprint, reads BILLETE DE CANJE and VALE UN PESO; at left a circular portrait of a bearded man in a cap — catalogues do not name him; he is often described as a conquistador — and at right the watermark circle. The red serial N.º 4548454 is a palindrome (radar). The signers are the Director of Finance (M. Vendrell), the Paymaster, and the Comptroller. At the foot, R. MAURA and MADRID: Bartolomé Maura y Montaner engraved the plate for the Madrid press. The green back shows the Spanish royal arms, a BILLETE DE CANJE ribbon, and 1 PESO in the right medallion. Residual letters D and UI outside the frame mark the trimmed stub: Pick 7b (partial counterfoil), not 7a with a full stub or 7c with none. This collection piece is sleeved and unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del Billete de Canje de 1 peso, serial radar N.º 4548454: retrato a la izquierda, VALE UN PESO y firmas del Ministerio de Ultramar.',
+      en: 'Face of the 1-peso exchange note, radar serial N.º 4548454: portrait at left, VALE UN PESO, and Ministerio de Ultramar signatures.',
+    },
+    backCaption: {
+      es: 'Reverso en verde: armas de España, cinta BILLETE DE CANJE, 1 PESO a la derecha y restos de talón D / UI en los márgenes.',
+      en: 'Green back: arms of Spain, BILLETE DE CANJE ribbon, 1 PESO at right, and D / UI counterfoil remnants at the margins.',
+    },
+    scarcity: {
+      es: 'El tipo es el único valor de la emisión de canje de 1895 (Pick 7). Wikipedia cifra cinco millones de ejemplares para recoger la plata extranjera antes de la moneda provincial de 1895–1896; el canje se cerró en 1896. Las variedades se distinguen por el talón: entero (7a), parcial (7b, esta pieza) o ausente (7c). El serial 4548454 es fancy: lee igual al derecho y al revés. Esta ficha no inventa una tirada por variedad.',
+      en: 'The type is the only denomination of the 1895 exchange issue (Pick 7). Wikipedia places five million notes to gather foreign silver before the 1895–1896 provincial coin; the exchange closed in 1896. Varieties are distinguished by the stub: full (7a), partial (7b, this piece), or none (7c). Serial 4548454 is fancy: it reads the same forwards and backwards. This record does not invent a printage by variety.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for this serial has not been independently verified. The note is shown in original, sleeved, unslabbed condition.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda (colección privada)',
+      en: 'Unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.wikipedia.org/wiki/Currencies_of_Puerto_Rico',
+        es: 'Wikipedia — Currencies of Puerto Rico',
+        en: 'Wikipedia — Currencies of Puerto Rico',
+        note: {
+          es: 'Cinco millones de Billetes de Canje de 1 peso; decreto de 17 de agosto de 1895; canje cerrado en 1896.',
+          en: 'Five million 1-peso exchange notes; decree of 17 August 1895; exchange closed in 1896.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/PRI/PRI.htm',
+        es: 'Bank Note Museum — Puerto Rico',
+        en: 'Bank Note Museum — Puerto Rico',
+      },
+    ],
+  },
+];
+
+export const notePageCopy = {
+  es: {
+    collectionLink: 'Puerto Rico',
+    frontHeading: 'Anverso',
+    backHeading: 'Reverso',
+    aboutHeading: 'La pieza',
+    scarcityHeading: 'Rareza e impresión',
+    populationHeading: 'Población',
+    factsHeading: 'Datos de catálogo',
+    sourcesHeading: 'Fuentes',
+    printedLabel: 'Impresión',
+    signaturesLabel: 'Firmas',
+    serialLabel: 'Número de serie',
+    pickLabel: 'Referencia Pick',
+    gradeLabel: 'Conservación',
+    expandImage: 'Ampliar imagen',
+    closeLightbox: 'Cerrar',
+  },
+  en: {
+    collectionLink: 'Puerto Rico',
+    frontHeading: 'Face',
+    backHeading: 'Back',
+    aboutHeading: 'The note',
+    scarcityHeading: 'Scarcity and printage',
+    populationHeading: 'Population',
+    factsHeading: 'Catalog facts',
+    sourcesHeading: 'Sources',
+    printedLabel: 'Printage',
+    signaturesLabel: 'Signatures',
+    serialLabel: 'Serial number',
+    pickLabel: 'Pick reference',
+    gradeLabel: 'Condition',
+    expandImage: 'Enlarge image',
+    closeLightbox: 'Close',
+  },
+} as const;
+
+export function noteById(id: string): PuertoRicoNote | undefined {
+  return puertoRicoNotes.find((note) => note.id === id);
 }
 
-export const dedicatedCatalogPaths = new Set<string>(['coleccion/puerto-rico']);
+export function notePath(note: PuertoRicoNote, locale: 'es' | 'en'): string {
+  return localizePath(note.path, locale);
+}
+
+export const puertoRicoNoteSlugs = puertoRicoNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
+
+export function seriesPath(locale: 'es' | 'en'): string {
+  return localizePath(PUERTO_RICO_PATH, locale);
+}
+
+export const dedicatedCatalogPaths = new Set<string>(['coleccion/puerto-rico', ...puertoRicoNoteSlugs]);
