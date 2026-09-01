@@ -220,6 +220,17 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.doesNotMatch(copyBlock, /Mapa vintage de Estados Unidos sobre pergamino/);
     assert.doesNotMatch(copyBlock, /Vintage map of the United States on parchment/);
   });
+
+  it('lists the six-piece set including the $1 in ES and EN type copy', () => {
+    assert.match(data, /Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
+    assert.match(data, /The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
+    assert.match(data, /Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
+    assert.match(data, /Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
+    assert.match(data, /El 1 dólar reúne al grupo/);
+    assert.match(data, /The \$1 shows the group/);
+    assert.doesNotMatch(data, /Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢—/);
+    assert.doesNotMatch(data, /The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ —/);
+  });
 });
 
 describe('US Rency Trump / Never Surrender holding', () => {

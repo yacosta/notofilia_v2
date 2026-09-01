@@ -571,7 +571,7 @@ export const barabooScripSeriesCopy = {
       'Postal souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
     typesLabel: 'Denominaciones del tipo',
     typesIntro:
-      'Seis vales, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: esta ficha y las fuentes lo describen como un juego, no como seis seriales.',
+      'Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: esta ficha y las fuentes lo describen como un juego, no como seis seriales.',
     pendingLabel: 'Pendiente de ejemplar',
     holdingsTitle: 'Ejemplares de la colección',
     holdingsIntro:
@@ -598,7 +598,7 @@ export const barabooScripSeriesCopy = {
       'Souvenir postcard of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
     typesLabel: 'Type denominations',
     typesIntro:
-      'Six notes, Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: this record and the sources describe a set, not six serials.',
+      'Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: this record and the sources describe a set, not six serials.',
     pendingLabel: 'Holding pending',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
@@ -643,8 +643,8 @@ export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 's
         en: 'To commemorate the milestone, the town issued special Baraboo Scrip. These were not federal notes: they were ornate souvenir paper tokens, printed on currency-quality paper a trifle larger than Civil War shinplasters, redeemable in trade through the local Chamber of Commerce. The Baraboo News-Republic of 28 June 1933 announced the issue; the notes circulated as change and as souvenirs, and were redeemable through 1 November 1933.',
       },
       {
-        es: 'Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢— retratan a cada uno de los cinco hermanos Ringling por separado. El 1 dólar reúne al grupo. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. La idea y el diseño fueron de E. B. Trimpey, del estudio Trimpey de Baraboo, a partir de fotografías originales de los hermanos. En el papel figuran las firmas impresas del presidente y del tesorero de la Cámara.',
-        en: 'The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ — feature each of the five Ringling brothers singly. The $1 shows the group. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. E. B. Trimpey of Baraboo’s Trimpey studio designed the notes from original photographs of the brothers. Printed signatures of the Chamber’s president and treasurer appear on the paper.',
+        es: 'Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar— retratan a los hermanos Ringling: las inferiores, a cada uno de los cinco por separado. El 1 dólar reúne al grupo. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. La idea y el diseño fueron de E. B. Trimpey, del estudio Trimpey de Baraboo, a partir de fotografías originales de los hermanos. En el papel figuran las firmas impresas del presidente y del tesorero de la Cámara.',
+        en: 'The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — feature the Ringling brothers: the lower notes, each of the five singly. The $1 shows the group. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. E. B. Trimpey of Baraboo’s Trimpey studio designed the notes from original photographs of the brothers. Printed signatures of the Chamber’s president and treasurer appear on the paper.',
       },
       {
         es: 'Los comerciantes lo entregaban como cambio y también lo vendían a valor facial como recuerdo. Un reportaje del Wisconsin State Journal lo sitúa en circulación hasta Madison. La venta cubrió casi todo el costo de la celebración del aniversario para la Cámara de Comercio. No se conserva cifra de tirada; esta ficha no inventa una.',
