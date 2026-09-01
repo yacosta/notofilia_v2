@@ -16,7 +16,6 @@ import {
   barabooScripSeriesPath,
   barabooScripSeriesSources,
 } from '../../data/estados-unidos';
-import { editorialUploadSrcset } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -48,7 +47,7 @@ const jsonLd = collectionPageJsonLd({
   locale={locale}
   pathname={pathname}
   ogImage={BARABOO_JUBILEE_FIGURE.src}
-  ogImageAlt={t.figureAlt}
+  ogImageAlt={t.heroAlt}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -81,20 +80,6 @@ const jsonLd = collectionPageJsonLd({
       <p class="mb-10 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
         {barabooScripSeriesLead[locale]}
       </p>
-
-      <figure class="mb-16 mt-0">
-        <img
-          src={BARABOO_JUBILEE_FIGURE.src}
-          srcset={editorialUploadSrcset(BARABOO_JUBILEE_FIGURE.src, BARABOO_JUBILEE_FIGURE.width)}
-          sizes="(max-width: 768px) 100vw, 75rem"
-          alt={t.figureAlt}
-          width={BARABOO_JUBILEE_FIGURE.width}
-          height={BARABOO_JUBILEE_FIGURE.height}
-          class="h-auto w-full bg-panel object-contain"
-          decoding="async"
-        />
-        <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{t.figureCaption}</figcaption>
-      </figure>
 
       {
         barabooScripNarrative.map((section) => (

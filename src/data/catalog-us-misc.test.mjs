@@ -157,7 +157,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(miscPage, /t\.typesLabel/);
   });
 
-  it('wires thin ES/EN catalog type routes with narrative, figure, and CollectionPage JSON-LD', () => {
+  it('wires thin ES/EN catalog type routes with narrative and CollectionPage JSON-LD', () => {
     assert.match(esRoute, /UnitedStatesBarabooScripSeriesPage/);
     assert.match(esRoute, /locale="es"/);
     assert.match(enRoute, /UnitedStatesBarabooScripSeriesPage/);
@@ -167,11 +167,16 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(barabooPage, /barabooScripSeriesLead/);
     assert.match(barabooPage, /t\.emptyHoldings/);
     assert.match(barabooPage, /collectionPageJsonLd/);
-    assert.match(barabooPage, /editorialUploadSrcset/);
     assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /object-contain/);
+    assert.match(barabooPage, /fit="contain"/);
     assert.match(barabooPage, /id="main-content"/);
     assert.match(barabooPage, /USA_MISC_PATH/);
+    assert.doesNotMatch(barabooPage, /<figure/);
+    assert.doesNotMatch(barabooPage, /editorialUploadSrcset/);
+    assert.doesNotMatch(barabooPage, /figureCaption/);
+    assert.doesNotMatch(barabooPage, /figureAlt/);
+    assert.doesNotMatch(data, /figureCaption/);
+    assert.doesNotMatch(data, /figureAlt:/);
     assert.doesNotMatch(barabooPage, /RINGLING_BLOG_PATH/);
     assert.doesNotMatch(barabooPage, /BlogPosting/);
     assert.doesNotMatch(barabooPage, /\/blog\//);
@@ -214,6 +219,17 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(copyBlock, /C\. & N\.W\. yards/);
     assert.doesNotMatch(copyBlock, /Mapa vintage de Estados Unidos sobre pergamino/);
     assert.doesNotMatch(copyBlock, /Vintage map of the United States on parchment/);
+  });
+
+  it('lists the six-piece set including the $1 in ES and EN type copy', () => {
+    assert.match(data, /Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
+    assert.match(data, /The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
+    assert.match(data, /Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
+    assert.match(data, /Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
+    assert.match(data, /El 1 dólar reúne al grupo/);
+    assert.match(data, /The \$1 shows the group/);
+    assert.doesNotMatch(data, /Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢—/);
+    assert.doesNotMatch(data, /The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ —/);
   });
 });
 
