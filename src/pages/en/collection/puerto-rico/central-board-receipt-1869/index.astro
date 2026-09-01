@@ -1,0 +1,9 @@
+---
+import PuertoRicoNotePage from '../../../../../components/catalog/PuertoRicoNotePage.astro';
+import { noteById } from '../../../../../data/puerto-rico';
+
+const note = noteById('junta-central-cuba-1869');
+if (!note) throw new Error('Missing Puerto Rico 1869 Junta Central receipt');
+---
+
+<PuertoRicoNotePage locale="en" note={note} />

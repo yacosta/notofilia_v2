@@ -36,25 +36,43 @@ export const seriesSources: CatalogSource[] = [
       en: 'Summarizes the situado crisis, the 1812–1813 papeletas, and Ramírez’s amortization by 1816.',
     },
   },
+  {
+    href: 'https://doi.org/10.5209/docu.81329',
+    es: 'Documenta & Instrumenta — Canje de la moneda mexicana por el peso provincial (1895–1896)',
+    en: 'Documenta & Instrumenta — Exchange of Mexican currency for the provincial peso (1895–1896)',
+    note: {
+      es: 'Real Decreto de 17 de agosto de 1895, talonarios del Billete de Canje y expediente AHN Ultramar 6316.',
+      en: 'Royal decree of 17 August 1895, exchange-note counterfoils, and AHN Ultramar file 6316.',
+    },
+  },
+  {
+    href: 'http://biografiadelasriquezaspr.weebly.com/monedas.html',
+    es: 'Biografía de las Riquezas de Puerto Rico — Monedas',
+    en: 'Biography of the Riches of Puerto Rico — Coins',
+    note: {
+      es: 'Macuquinas, contramarcas de 1884 y equivalencia del billete de canje (25 g plata .900).',
+      en: 'Macuquinas, 1884 countermarks, and the exchange-note silver equivalent (25 g .900).',
+    },
+  },
 ];
 
 export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Emisiones coloniales y de transición | Notofilia',
     metaDescription:
-      'Vitrina de papel moneda puertorriqueño del siglo XIX: el Billete de Canje de 1 peso de 1895 y las emisiones coloniales y de transición.',
+      'Vitrina de papel moneda puertorriqueño del siglo XIX: recibo de la Junta Central de 1869 y Billete de Canje de 1 peso de 1895.',
     kicker: 'Puerto Rico · Siglo XIX',
     title: 'Emisiones coloniales y de transición',
     heroAlt:
       'Mapa vintage panorámico en relieve 3D de Puerto Rico sobre pergamino, con El Morro, Viejo San Juan, un coquí, una rosa de los vientos y el título Puerto Rico',
     intro: [
       'Puerto Rico fue, en 1766, la primera provincia de ultramar española que imprimió papeletas de 8 reales. Durante siglos el situado mexicano sostuvo las arcas de la isla; cuando las independencias americanas cortaron ese subsidio, el gobernador Salvador Meléndez Bruna autorizó, el 31 de agosto de 1812, una moneda provincial de papel. En 1813 la emisión de papeletas llegó a 500.000 pesos. El intendente Alejandro Ramírez, llegado el 11 de febrero de 1813, las amortizó hacia 1816.',
-      'El descrédito de aquel papel detuvo nuevas emisiones durante décadas. El papel volvió con la Guerra de los Diez Años. En Nueva York, la Junta Central Republicana de Cuba y Puerto Rico —presidida por José Morales Lemus, con el eco de Betances y Hostos— recaudó fondos para ambas islas. El 1 de junio de 1869 la República de Cuba en Armas autorizó un empréstito de veinte millones de pesos.',
-      'A finales de siglo la isla seguía sin moneda propia: pesos mexicanos, dólares y contramarcas de 1884. El Real Decreto del 17 de agosto de 1895 creó el Billete de Canje de 1 peso (P#7): instrumento efímero para recoger la plata extranjera y acuñar en Madrid la moneda provincial. Tres años después del decreto, el Tratado de París cerró el capítulo colonial español.',
+      'El descrédito de aquel papel detuvo nuevas emisiones durante décadas. El papel volvió con la Guerra de los Diez Años. Desde Nueva York, la Junta Central Republicana de Cuba y Puerto Rico —presidida por José Morales Lemus, con el secretario puertorriqueño Dr. José Francisco Basora— sirvió como apoyo gubernamental en el exilio: recaudar fondos, administrar las finanzas exteriores de la República de Cuba en Armas y enlazar la política anticolonial cubana y puertorriqueña entre donantes, imprentas y comunidades de exiliados. El 1 de junio de 1869 la República autorizó un empréstito de veinte millones de pesos; semanas después, Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses.',
+      'A finales de siglo la isla seguía sin moneda propia: macuquinas desgastadas, pesos mexicanos, dólares Morgan y otras piezas de plata extranjera —muchas contramarcadas con flor de lis desde 1884— saturaban el comercio. El Real Decreto del 17 de agosto de 1895 creó el Billete de Canje de 1 peso (Pick 7): instrumento efímero, equivalente a 25 g de plata .900, para recoger esa plata y acuñar en Madrid la moneda provincial. Tres años después del decreto, el Tratado de París cerró el capítulo colonial español.',
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Por ahora, el Billete de Canje de 1 peso de 1895 (P#7b), serial radar 4548454. Las demás fichas se publicarán a medida que se documenten.',
+      'Recibo de contribución provisional de la Junta Central de 1869 (N.º 32, bajo) y Billete de Canje de 1 peso de 1895 (P#7b, serial radar 4548454).',
     holdingsAria: 'Billetes de Puerto Rico en la colección',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -64,19 +82,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Puerto Rico · Colonial and transition issues | Notofilia',
     metaDescription:
-      'Case for nineteenth-century Puerto Rican paper money: the 1895 1-peso exchange note and colonial and transition issues.',
+      'Case for nineteenth-century Puerto Rican paper money: the 1869 Central Board receipt and the 1895 1-peso exchange note.',
     kicker: 'Puerto Rico · Nineteenth century',
     title: 'Colonial and transition issues',
     heroAlt:
       'Vintage panoramic 3D relief map of Puerto Rico on parchment, with El Morro, Old San Juan, a coquí, a compass rose, and the title Puerto Rico',
     intro: [
       'In 1766 Puerto Rico became the first Spanish overseas province to print 8-real papeletas. For centuries the Mexican situado propped up the island treasury; when Spanish American independence cut that subsidy, Governor Salvador Meléndez Bruna authorized provincial paper on 31 August 1812. By 1813 the papeleta issue reached 500,000 pesos. Intendant Alejandro Ramírez, who arrived on 11 February 1813, amortized it by 1816.',
-      'The disgrace of that paper stopped new issues for decades. Paper returned with the Ten Years’ War. In New York the Central Republican Board of Cuba and Puerto Rico — chaired by José Morales Lemus, with Betances and Hostos in the same orbit — raised funds for both islands. On 1 June 1869 the Republic of Cuba in Arms authorized a twenty-million-peso loan.',
-      'At century’s end the island still lacked its own coin: Mexican pesos, dollars, and 1884 fleur-de-lis countermarks. The royal decree of 17 August 1895 created the 1-peso exchange note (P#7): a short-lived instrument to gather foreign silver and strike provincial coin in Madrid. Three years after the decree, the Treaty of Paris closed the Spanish colonial chapter.',
+      'The disgrace of that paper stopped new issues for decades. Paper returned with the Ten Years’ War. From New York, the Central Republican Board of Cuba and Puerto Rico — chaired by José Morales Lemus, with Puerto Rican secretary Dr. José Francisco Basora — served as a government-in-exile support body: fundraising, managing the Republic of Cuba in Arms’ external finances, and linking Cuban and Puerto Rican anti-colonial politics among donors, printers, and exile communities. On 1 June 1869 the Republic authorized a twenty-million-peso loan; weeks later Morales Lemus and Basora were arrested under U.S. neutrality laws.',
+      'At century’s end the island still lacked its own coin: worn macuquinas, Mexican pesos, Morgan dollars, and other foreign silver — much of it fleur-de-lis countermarked from 1884 — flooded commerce. The royal decree of 17 August 1895 created the 1-peso exchange note (Pick 7): a short-lived instrument, equivalent to 25 g of .900 silver, to gather that silver and strike provincial coin in Madrid. Three years after the decree, the Treaty of Paris closed the Spanish colonial chapter.',
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'For now, the 1895 1-peso exchange note (P#7b), radar serial 4548454. Further note pages will be published as they are documented.',
+      '1869 Central Board provisional fundraising receipt (No. 32, low) and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
     holdingsAria: 'Puerto Rico banknotes in the collection',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -85,7 +103,7 @@ export const seriesCopy = {
   },
 } as const;
 
-export type PuertoRicoNoteId = 'billete-de-canje-1-peso-1895';
+export type PuertoRicoNoteId = 'junta-central-cuba-1869' | 'billete-de-canje-1-peso-1895';
 
 export type PuertoRicoNote = {
   id: PuertoRicoNoteId;
@@ -93,13 +111,17 @@ export type PuertoRicoNote = {
   pick: string;
   serial: string;
   serial_display: string;
-  serial_kind: 'fancy';
+  serial_kind: 'low' | 'fancy' | 'ordinary';
   signatures: LocalizedText;
   printed: LocalizedText;
   images: {
     composite: string;
     front: string;
     back: string;
+    frontWidth: number;
+    frontHeight: number;
+    backWidth: number;
+    backHeight: number;
   };
   title: LocalizedText;
   kicker: LocalizedText;
@@ -115,6 +137,129 @@ export type PuertoRicoNote = {
 
 export const puertoRicoNotes: PuertoRicoNote[] = [
   {
+    id: 'junta-central-cuba-1869',
+    path: '/coleccion/puerto-rico/junta-central-cuba-1869/',
+    pick: 'Recibo de contribución provisional',
+    serial: '32',
+    serial_display: 'N.º 32',
+    serial_kind: 'low',
+    signatures: {
+      es: 'Por El Tesorero (firma autógrafa); contribuyente impreso: Ciudadano Pedro Fernandez Criado; endoso de canje (reverso): Ramon Fernandez Criado en nombre de su padre Pedro',
+      en: 'For the Treasurer (autograph signature); printed contributor: Citizen Pedro Fernandez Criado; redemption endorsement (back): Ramon Fernandez Criado on behalf of his father Pedro',
+    },
+    printed: {
+      es: 'Litografiado en Nueva York por Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Recibo de contribución provisional — no moneda de curso (distinto de Pick 61–64) — convertible en bonos de la República de Cuba en la primera emisión. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
+      en: 'Lithographed in New York by Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Provisional fundraising receipt — not circulating currency (separate from Pick 61–64) — convertible into Republic of Cuba bonds on the first issuance. This record does not invent a printage for the type or for No. 32.',
+    },
+    images: {
+      composite: '/images/catalog/puerto-rico/pr-1869-junta-central-32-composite.jpg',
+      front: '/images/catalog/puerto-rico/pr-1869-junta-central-32-front.jpg',
+      back: '/images/catalog/puerto-rico/pr-1869-junta-central-32-back.jpg',
+      frontWidth: 1440,
+      frontHeight: 960,
+      backWidth: 1440,
+      backHeight: 960,
+    },
+    title: {
+      es: '1.500 dólares · Recibo de contribución provisional · 1869',
+      en: '1,500 Dollars · Provisional Fundraising Receipt · 1869',
+    },
+    kicker: {
+      es: 'Junta Central Republicana de Cuba y Puerto Rico · Nueva York',
+      en: 'Central Republican Board of Cuba and Puerto Rico · New York',
+    },
+    lead: {
+      es: 'Recibo de contribución provisional a la independencia de Cuba, litografiado en Nueva York el 16 de junio de 1869. N.º 32 — número bajo — por mil quinientos dólares en papel moneda de los Estados Unidos, convertible en bonos de la República de Cuba.',
+      en: 'Provisional fundraising receipt toward Cuban independence, lithographed in New York on 16 June 1869. No. 32 — a low document number — for one thousand five hundred dollars in United States paper currency, convertible into bonds of the Republic of Cuba.',
+    },
+    description: {
+      es: 'La Junta Central Republicana de Cuba y Puerto Rico —cuartel general político, diplomático y financiero de la insurgencia desde Nueva York, presidida por José Morales Lemus y con el secretario Dr. José Francisco Basora— emitió recibos de contribución provisional como este para recaudar fondos durante la Guerra de los Diez Años y afianzar la deuda soberana prometida por la República de Cuba en Armas, apenas ocho meses después del Grito de Yara (octubre de 1868). Este instrumento no es papel moneda al uso ni debe confundirse con los billetes circulantes de la Junta del 17 de agosto de 1869 (Pick 61–64): es un título de deuda revolucionaria emitido antes de que existiera un estado cubano soberano, convertible en bonos «del tipo que se emita en la primera emisión». Este N.º 32, fechado el 16 de junio de 1869 en Nueva York, cae en las semanas previas a las detenciones de junio bajo las leyes de neutralidad estadounidenses. El texto impreso reconoce haber recibido del ciudadano Pedro Fernandez Criado la suma de mil quinientos dólares en papel moneda de los Estados Unidos «para auxiliar la causa de la independencia de Cuba». El anverso litografiado por Slote & Janes, Stationers (93 y 95 Fulton St., N.Y.) muestra a la izquierda una figura alegórica de la Libertad o la República junto a un escudo con La Estrella Solitaria —emblema visual de la república imaginada—, el N.º 32 en rojo, la fecha manuscrita 16 de junio de 1869 y la firma del tesorero bajo «Por El Tesorero». El reverso documenta el cumplimiento de la promesa de conversión: un endoso manuscrito fechado el 15 de noviembre de 1869 en Nueva York, en el que Ramon Fernandez Criado declara «He recibido del Tesorero… los bonos correspondientes a este valor… por mi padre D. Pedro» — prueba de que la Junta cumplió la promesa unos cinco meses después de la contribución. Lleva sellos «REPUBLICA DE CUBA / ARCHIVO NACIONAL» y matriz de registro CAJA 196 / NÚMERO 301, lo que sitúa la pieza en la documentación archivística cubana. Manchas, pliegues y desgaste perimetral son coherentes con un documento decimonónico en uso.',
+      en: 'The Central Republican Board of Cuba and Puerto Rico — political, diplomatic, and financial headquarters of the insurgency from New York, chaired by José Morales Lemus with secretary Dr. José Francisco Basora — issued provisional fundraising receipts like this one to raise funds during the Ten Years’ War and build credibility for the sovereign debt promised by the Republic of Cuba in Arms, only about eight months after the Grito de Yara (October 1868). This instrument is not ordinary currency and must not be confused with the Board’s circulating notes of 17 August 1869 (Pick 61–64): it is revolutionary debt paper issued before a sovereign Cuban state existed, convertible into bonds “of the type to be issued in the first emission.” This No. 32, dated 16 June 1869 in New York, falls in the weeks before the June arrests under U.S. neutrality laws. The printed text acknowledges receipt from Citizen Pedro Fernandez Criado of one thousand five hundred dollars in United States paper currency “to aid the cause of the independence of Cuba.” The face lithographed by Slote & Janes, Stationers (93 & 95 Fulton St., N.Y.) shows at left an allegorical Liberty or Republic beside a shield with La Estrella Solitaria — visual emblem of the republic yet to exist — red No. 32, the handwritten date 16 June 1869, and the treasurer’s signature under “For the Treasurer.” The back records fulfillment of the conversion promise: a handwritten endorsement dated 15 November 1869 in New York in which Ramon Fernandez Criado states “He recibido del Tesorero… los bonos correspondientes a este valor… por mi padre D. Pedro” — proof the Board honored its promise about five months after the contribution. It bears “REPUBLICA DE CUBA / ARCHIVO NACIONAL” stamps and registration box CAJA 196 / NUMERO 301, placing the piece in Cuban archival holdings. Browning, stains, folds, and edge wear are consistent with a nineteenth-century working document.',
+    },
+    frontCaption: {
+      es: 'Anverso del recibo N.º 32: Junta Central Republicana de Cuba y Puerto Rico, mil quinientos dólares en papel moneda de los E.U., 16 de junio de 1869, litografía Slote & Janes; vignette de la Libertad con La Estrella Solitaria.',
+      en: 'Face of receipt No. 32: Central Republican Board of Cuba and Puerto Rico, one thousand five hundred dollars in United States paper currency, 16 June 1869, Slote & Janes lithograph; Liberty vignette with La Estrella Solitaria.',
+    },
+    backCaption: {
+      es: 'Reverso con endoso de canje del 15 de noviembre de 1869, Nueva York («He recibido del Tesorero… los bonos correspondientes a este valor… por mi padre D. Pedro», Ramon Fernandez Criado), sellos Archivo Nacional de Cuba y matriz CAJA 196 / NÚMERO 301.',
+      en: 'Back with redemption endorsement of 15 November 1869, New York (“He recibido del Tesorero… los bonos correspondientes a este valor… por mi padre D. Pedro”, Ramon Fernandez Criado), Archivo Nacional de Cuba stamps, and CAJA 196 / NUMERO 301 registration.',
+    },
+    scarcity: {
+      es: 'Los billetes circulantes de la Junta del 17 de agosto de 1869 figuran en catálogo como Pick 61–64 (1, 5, 10 y 20 pesos). Este recibo de contribución provisional es un instrumento distinto: recaudación revolucionaria en Nueva York durante la Guerra de los Diez Años, no moneda de curso. Fuentes numismáticas describen emisiones limitadas; en junio de 1869 Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses. El N.º 32 canjeado en bonos el 15 de noviembre de 1869 muestra que la Junta cumplió la promesa de conversión. El N.º 32 es un número documental muy bajo. Esta ficha no inventa una tirada.',
+      en: 'The Board’s circulating notes of 17 August 1869 are catalogued as Pick 61–64 (1, 5, 10, and 20 pesos). This provisional fundraising receipt is a separate instrument: revolutionary fundraising in New York during the Ten Years’ War, not circulating currency. Numismatic sources describe limited issues; in June 1869 Morales Lemus and Basora were arrested under U.S. neutrality laws. No. 32, redeemed for bonds on 15 November 1869, shows the Board honored its conversion promise. No. 32 is a very low document number. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo para el N.º 32. La pieza se presenta sin encapsular, con desgaste propio de un documento decimonónico en uso.',
+      en: 'An independent census for No. 32 has not been verified. The piece is shown unslabbed, with wear consistent with a nineteenth-century working document.',
+    },
+    grade: {
+      es: 'Sin encapsular; manchas, pliegues y desgaste perimetral (colección privada)',
+      en: 'Unslabbed; stains, folds, and edge wear (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/morales-lemus-jose-1808-1870',
+        es: 'Encyclopedia.com — José Morales Lemus (1808–1870)',
+        en: 'Encyclopedia.com — José Morales Lemus (1808–1870)',
+        note: {
+          es: 'Presidencia de la Junta Central y detención en junio de 1869 bajo las leyes de neutralidad estadounidenses.',
+          en: 'Central Board presidency and June 1869 arrest under U.S. neutrality laws.',
+        },
+      },
+      {
+        href: 'https://www.ebsco.com/research-starters/history/cubas-ten-years-war',
+        es: 'EBSCO — Cuba’s Ten Years’ War',
+        en: 'EBSCO — Cuba’s Ten Years’ War',
+        note: {
+          es: 'Contexto de la recaudación revolucionaria durante la Guerra de los Diez Años.',
+          en: 'Revolutionary fundraising context during the Ten Years’ War.',
+        },
+      },
+      {
+        href: 'https://exhibitions.library.columbia.edu/exhibits/show/yardley/index/r-s/slote-janes',
+        es: 'Columbia University — Slote & Janes, 93 Fulton Street (Yardley letterheads)',
+        en: 'Columbia University — Slote & Janes, 93 Fulton Street (Yardley letterheads)',
+        note: {
+          es: 'Imprenta y papelería en Fulton Street, entre William y Gold Streets, Nueva York.',
+          en: 'Stationers and printers at Fulton Street, between William and Gold Streets, New York.',
+        },
+      },
+      {
+        href: 'https://www.archivonacional.cu/',
+        es: 'Archivo Nacional de Cuba — procedencia del documento',
+        en: 'Archivo Nacional de Cuba — document provenance',
+        note: {
+          es: 'Sellos REPUBLICA DE CUBA / ARCHIVO NACIONAL; matriz CAJA 196 / NÚMERO 301.',
+          en: 'REPUBLICA DE CUBA / ARCHIVO NACIONAL stamps; CAJA 196 / NUMERO 301 registration.',
+        },
+      },
+      {
+        href: 'https://www.cultura.gob.es/en/cultura/archivos/difusion/mc-difusion/bicentenarios/contexto-historico/las-ultimas-posesiones/puerto-rico.html',
+        es: 'Ministerio de Cultura — Puerto Rico en el contexto de las últimas posesiones',
+        en: 'Ministry of Culture — Puerto Rico in the context of Spain’s last possessions',
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/item.aspx?i=29836775&mobile=0',
+        es: 'Sedwick Coins — Junta Central Republicana de Cuba y Puerto Rico (1869)',
+        en: 'Sedwick Coins — Central Republican Board of Cuba and Puerto Rico (1869)',
+      },
+      {
+        href: 'http://www.numismondo.net/pm/cub/index61.htm',
+        es: 'Numismondo — Cuba P#61–63 (billetes circulantes de 1869)',
+        en: 'Numismondo — Cuba P#61–63 (1869 circulating notes)',
+        note: {
+          es: 'Emisiones distintas del recibo de contribución provisional documentado aquí.',
+          en: 'Separate issues from the provisional contribution receipt documented here.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v16n12a24.html',
+        es: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+        en: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+      },
+    ],
+  },
+  {
     id: 'billete-de-canje-1-peso-1895',
     path: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     pick: 'P#7b',
@@ -126,13 +271,17 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       en: 'Director of Finance (M. Vendrell); Paymaster; Comptroller',
     },
     printed: {
-      es: 'Wikipedia sitúa la emisión del Ministerio de Ultramar en cinco millones de Billetes de Canje de 1 peso (decreto de 17 de agosto de 1895). Esta ficha no inventa una tirada para la variedad P#7b ni para el serial 4548454.',
-      en: 'Wikipedia places the Ministerio de Ultramar issue at five million 1-peso exchange notes (decree of 17 August 1895). This record does not invent a printage for variety P#7b or for serial 4548454.',
+      es: 'Wikipedia y Documenta & Instrumenta sitúan la emisión en cinco millones de Billetes de Canje de 1 peso (Real Decreto de 17 de agosto de 1895). Cada billete garantizaba el canje por un peso provincial de 25 g de ley .900 una vez acuñado en Madrid. Esta ficha no inventa una tirada para la variedad P#7b ni para el serial 4548454.',
+      en: 'Wikipedia and Documenta & Instrumenta place the issue at five million 1-peso exchange notes (royal decree of 17 August 1895). Each note guaranteed exchange for a provincial peso of 25 g at .900 fineness once struck in Madrid. This record does not invent a printage for variety P#7b or for serial 4548454.',
     },
     images: {
       composite: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-composite.jpg',
       front: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-front.jpg',
       back: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-back.jpg',
+      frontWidth: 1371,
+      frontHeight: 646,
+      backWidth: 1414,
+      backHeight: 646,
     },
     title: {
       es: '1 peso · Billete de Canje · 1895',
@@ -143,24 +292,24 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       en: 'Puerto Rico · Ministerio de Ultramar',
     },
     lead: {
-      es: 'Instrumento de canje de 1 peso creado por el Real Decreto de 17 de agosto de 1895. Serial radar N.º 4548454, variedad con talón parcial (P#7b).',
-      en: '1-peso exchange instrument created by the royal decree of 17 August 1895. Radar serial N.º 4548454, partial-counterfoil variety (P#7b).',
+      es: 'Billete de Canje de 1 peso del Ministerio de Ultramar, creado por el Real Decreto de 17 de agosto de 1895 para retirar plata extranjera. Serial radar N.º 4548454, variedad P#7b (talón parcial).',
+      en: 'Ministerio de Ultramar 1-peso exchange note, created by the royal decree of 17 August 1895 to withdraw foreign silver. Radar serial N.º 4548454, variety P#7b (partial counterfoil).',
     },
     description: {
-      es: 'El Real Decreto de 17 de agosto de 1895 creó el Billete de Canje para recoger la plata mexicana y extranjera que saturaba la isla y acuñar en Madrid la moneda provincial. El Ministerio de Ultramar emitió un solo valor: 1 peso. El anverso, en negro sobre fondo amarillo, titula BILLETE DE CANJE y VALE UN PESO; a la izquierda, un retrato circular de un hombre barbado con caperuza —los catálogos no lo identifican; a menudo se describe como conquistador— y a la derecha el círculo del agua. El serial rojo N.º 4548454 es un palíndromo (radar). Firman El Director de Hacienda (M. Vendrell), El Ordenador de Pagos y El Interventor. Al pie, R. MAURA y MADRID: Bartolomé Maura y Montaner grabó la plancha para la imprenta madrileña. El reverso, en verde, lleva las armas reales de España, la cinta BILLETE DE CANJE y 1 PESO en el medallón derecho. Los restos de letras D y UI fuera del marco marcan el talón recortado: variedad Pick 7b (talón parcial), no el 7a de talón entero ni el 7c sin talón. Esta pieza de la colección está en funda, sin encapsular.',
-      en: 'The royal decree of 17 August 1895 created the exchange note to gather Mexican and foreign silver flooding the island and to strike provincial coin in Madrid. The Ministerio de Ultramar issued a single denomination: 1 peso. The face, black on a yellow underprint, reads BILLETE DE CANJE and VALE UN PESO; at left a circular portrait of a bearded man in a cap — catalogues do not name him; he is often described as a conquistador — and at right the watermark circle. The red serial N.º 4548454 is a palindrome (radar). The signers are the Director of Finance (M. Vendrell), the Paymaster, and the Comptroller. At the foot, R. MAURA and MADRID: Bartolomé Maura y Montaner engraved the plate for the Madrid press. The green back shows the Spanish royal arms, a BILLETE DE CANJE ribbon, and 1 PESO in the right medallion. Residual letters D and UI outside the frame mark the trimmed stub: Pick 7b (partial counterfoil), not 7a with a full stub or 7c with none. This collection piece is sleeved and unslabbed.',
+      es: 'El Real Decreto de 17 de agosto de 1895 autorizó este Billete de Canje como recibo provisional mientras se retiraba la plata mexicana y extranjera —macuquina, dólares Morgan y otras monedas ajenas, muchas contramarcadas con flor de lis desde 1884 y retiradas en 1894— que dominaba la isla. Cada billete garantizaba al portador un peso provincial de 25 gramos de ley .900 una vez acuñado en Madrid (Biografía de las Riquezas de Puerto Rico); el canje se cerró en 1896. Los billetes salieron en talonarios con matriz doble: el oficial retenía el talón al canjear plata y el billete circulaba hasta la llegada del peso provincial. El Ministerio de Ultramar emitió un solo valor: 1 peso. El anverso, en negro sobre fondo amarillo, cita el Art. 1º del Real Decreto, titula BILLETE DE CANJE y VALE UN PESO, y lleva MINISTERIO DE ULTRAMAR en los márgenes verticales. A la izquierda, un retrato circular de un hombre barbado con caperuza —los catálogos no lo identifican con certeza; a menudo se asocia a un conquistador— y a la derecha el círculo del sello en seco «Canje de Puerto Rico» con velero. El serial rojo N.º 4548454 es un palíndromo (radar). Firman El Director de Hacienda (M. Vendrell), El Ordenador de Pagos y El Interventor. Al pie, R. MAURA y MADRID: Bartolomé Maura y Montaner grabó la plancha litográfica para la imprenta madrileña. El reverso, en verde azulado sobre crema, muestra las armas reales de España coronadas, la cinta BILLETE DE CANJE, 1 PESO y ULTRAMAR. Los restos de letras D y UI fuera del marco marcan el talón recortado: variedad Pick 7b (talón parcial), no el 7a de talón entero ni el 7c sin talón —aunque los márgenes parezcan limpios, las letras residuales confirman el recorte parcial. Esta pieza de la colección está en funda, sin encapsular.',
+      en: 'The royal decree of 17 August 1895 authorized this exchange note as a provisional receipt while Mexican and foreign silver — worn macuquina, Morgan dollars, and other outsiders’ coin, much of it fleur-de-lis countermarked from 1884 and withdrawn in 1894 — was removed from the island. Each note guaranteed the bearer a provincial peso of 25 grams at .900 fineness once struck in Madrid (Biography of the Riches of Puerto Rico); the exchange closed in 1896. Notes were delivered in counterfoil books with twin stubs: the exchange official kept the stub when silver was surrendered and the note circulated until provincial pesos arrived. The Ministerio de Ultramar issued a single denomination: 1 peso. The face, black on a yellow underprint, cites Article 1 of the royal decree, reads BILLETE DE CANJE and VALE UN PESO, and carries MINISTERIO DE ULTRAMAR in the vertical margins. At left a circular portrait of a bearded man in a cap — catalogues do not name him with certainty; he is often linked to a conquistador — and at right the dry-seal circle “Canje de Puerto Rico” with a sailing ship. The red serial N.º 4548454 is a palindrome (radar). The signers are the Director of Finance (M. Vendrell), the Paymaster, and the Comptroller. At the foot, R. MAURA and MADRID: Bartolomé Maura y Montaner engraved the lithographic plate for the Madrid press. The back, blue-green on cream, shows the crowned Spanish royal arms, a BILLETE DE CANJE ribbon, 1 PESO, and ULTRAMAR. Residual letters D and UI outside the frame mark the trimmed stub: Pick 7b (partial counterfoil), not 7a with a full stub or 7c with none — even where margins look clean, the leftover letters confirm a partial trim. This collection piece is sleeved and unslabbed.',
     },
     frontCaption: {
-      es: 'Anverso del Billete de Canje de 1 peso, serial radar N.º 4548454: retrato a la izquierda, VALE UN PESO y firmas del Ministerio de Ultramar.',
-      en: 'Face of the 1-peso exchange note, radar serial N.º 4548454: portrait at left, VALE UN PESO, and Ministerio de Ultramar signatures.',
+      es: 'Anverso del Billete de Canje de 1 peso, serial radar N.º 4548454: MINISTERIO DE ULTRAMAR en los márgenes, VALE UN PESO y firmas.',
+      en: 'Face of the 1-peso exchange note, radar serial N.º 4548454: MINISTERIO DE ULTRAMAR at the margins, VALE UN PESO, and signatures.',
     },
     backCaption: {
-      es: 'Reverso en verde: armas de España, cinta BILLETE DE CANJE, 1 PESO a la derecha y restos de talón D / UI en los márgenes.',
-      en: 'Green back: arms of Spain, BILLETE DE CANJE ribbon, 1 PESO at right, and D / UI counterfoil remnants at the margins.',
+      es: 'Reverso verde azulado sobre crema: armas de España, ULTRAMAR, cinta BILLETE DE CANJE, 1 PESO a la derecha y restos de talón D / UI en los márgenes.',
+      en: 'Green-teal back on cream: arms of Spain, ULTRAMAR, BILLETE DE CANJE ribbon, 1 PESO at right, and D / UI counterfoil remnants at the margins.',
     },
     scarcity: {
-      es: 'El tipo es el único valor de la emisión de canje de 1895 (Pick 7). Wikipedia cifra cinco millones de ejemplares para recoger la plata extranjera antes de la moneda provincial de 1895–1896; el canje se cerró en 1896. Las variedades se distinguen por el talón: entero (7a), parcial (7b, esta pieza) o ausente (7c). El serial 4548454 es fancy: lee igual al derecho y al revés. Esta ficha no inventa una tirada por variedad.',
-      en: 'The type is the only denomination of the 1895 exchange issue (Pick 7). Wikipedia places five million notes to gather foreign silver before the 1895–1896 provincial coin; the exchange closed in 1896. Varieties are distinguished by the stub: full (7a), partial (7b, this piece), or none (7c). Serial 4548454 is fancy: it reads the same forwards and backwards. This record does not invent a printage by variety.',
+      es: 'El tipo es el único valor de la emisión de canje de 1895 (Pick 7; Standard Catalog of World Paper Money). Wikipedia y Documenta & Instrumenta cifran cinco millones de ejemplares; el canje de plata duró unos 21 días en unos cuarenta y dos puntos de la isla y el programa cerró en 1896. Las variedades se distinguen por el talón del talonario: entero a ambos lados (7a), parcial con restos visibles (7b — esta pieza: letras D y UI fuera del marco, no márgenes limpios de 7c) o ausente sin restos tipográficos (7c). El serial 4548454 es fancy: lee igual al derecho y al revés. Esta ficha no inventa una tirada por variedad ni cifras de mercado.',
+      en: 'The type is the only denomination of the 1895 exchange issue (Pick 7; Standard Catalog of World Paper Money). Wikipedia and Documenta & Instrumenta place five million notes; the silver exchange ran about 21 days at some forty-two island locations and the program closed in 1896. Varieties are distinguished by the counterfoil-book stub: full on both sides (7a), partial with visible remnants (7b — this piece: letters D and UI outside the frame, not 7c’s clean margins), or absent with no typographic residue (7c). Serial 4548454 is fancy: it reads the same forwards and backwards. This record does not invent a printage by variety or market values.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, en funda, sin encapsular.',
@@ -176,14 +325,46 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
         es: 'Wikipedia — Currencies of Puerto Rico',
         en: 'Wikipedia — Currencies of Puerto Rico',
         note: {
-          es: 'Cinco millones de Billetes de Canje de 1 peso; decreto de 17 de agosto de 1895; canje cerrado en 1896.',
-          en: 'Five million 1-peso exchange notes; decree of 17 August 1895; exchange closed in 1896.',
+          es: 'Cinco millones de Billetes de Canje de 1 peso; Real Decreto de 17 de agosto de 1895; canje cerrado en 1896.',
+          en: 'Five million 1-peso exchange notes; royal decree of 17 August 1895; exchange closed in 1896.',
         },
       },
       {
-        href: 'http://www.banknote.ws/COLLECTION/countries/AME/PRI/PRI.htm',
-        es: 'Bank Note Museum — Puerto Rico',
-        en: 'Bank Note Museum — Puerto Rico',
+        href: 'https://revistas.ucm.es/index.php/DOCU/en/article/view/81329',
+        es: 'Documenta & Instrumenta — Canje de la moneda mexicana por el peso provincial (1895–1896)',
+        en: 'Documenta & Instrumenta — Exchange of Mexican currency for the provincial peso (1895–1896)',
+        note: {
+          es: 'Diseño de Maura y Montaner; expediente AHN Ultramar 6316; tirada de cinco millones.',
+          en: 'Maura y Montaner design; AHN Ultramar 6316 file; five-million print run.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/202441',
+        es: 'Numista — Puerto Rico 1 peso P#7 (7a/7b/7c)',
+        en: 'Numista — Puerto Rico 1 peso P#7 (7a/7b/7c)',
+        note: {
+          es: 'Variedades por talón; referencia al Standard Catalog of World Paper Money.',
+          en: 'Counterfoil varieties; references the Standard Catalog of World Paper Money.',
+        },
+      },
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/PRI/PRI0007.htm',
+        es: 'Bank Note Museum — Puerto Rico P#7 (7a, 7b, 7c)',
+        en: 'Bank Note Museum — Puerto Rico P#7 (7a, 7b, 7c)',
+      },
+      {
+        href: 'http://biografiadelasriquezaspr.weebly.com/monedas.html',
+        es: 'Biografía de las Riquezas de Puerto Rico — Billete de Canje (25 g plata .900)',
+        en: 'Biography of the Riches of Puerto Rico — exchange note (25 g .900 silver)',
+      },
+      {
+        href: 'https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ahn/fondos-documentales/introduccion.html',
+        es: 'Archivo Histórico Nacional — Fondos documentales (Ultramar 6316)',
+        en: 'Archivo Histórico Nacional — Document holdings (Ultramar 6316)',
+        note: {
+          es: 'Expediente sobre canje de moneda mejicana (1895–1896), exp. 4, doc. 8; citado en Documenta & Instrumenta.',
+          en: 'File on Mexican-currency exchange (1895–1896), exp. 4, doc. 8; cited in Documenta & Instrumenta.',
+        },
       },
     ],
   },

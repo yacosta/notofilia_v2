@@ -236,7 +236,8 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(canadaNotesSource, /serial: 'HBM0828003'/);
     assert.equal(malaysiaNotes, 1);
     assert.match(malaysiaNotesSource, /serial: 'AA1955984'/);
-    assert.equal(puertoRicoNotes, 1);
+    assert.equal(puertoRicoNotes, 2);
+    assert.match(puertoRicoNotesSource, /serial: '32'/);
     assert.match(puertoRicoNotesSource, /serial: '4548454'/);
 
     if (!existsSync(allNotesCatalogHtml)) return;
