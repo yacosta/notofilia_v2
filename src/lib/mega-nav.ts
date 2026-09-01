@@ -43,7 +43,7 @@ export type NavNode = {
    */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
-  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous';
+  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous' | 'circus';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -122,6 +122,7 @@ export const megaNav: NavNode[] = [
             es: barabooScripSeriesCopy.es.title,
             en: barabooScripSeriesCopy.en.title,
             href: USA_BARABOO_SCRIP_PATH,
+            icon: 'circus',
           },
         ],
       },
