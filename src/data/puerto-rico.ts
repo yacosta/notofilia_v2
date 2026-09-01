@@ -72,7 +72,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Recibo de contribución de la Junta Central de 1869 (N.º 32, bajo) y Billete de Canje de 1 peso de 1895 (P#7b, serial radar 4548454).',
+      'Recibo de contribución provisional de la Junta Central de 1869 (N.º 32, bajo) y Billete de Canje de 1 peso de 1895 (P#7b, serial radar 4548454).',
     holdingsAria: 'Billetes de Puerto Rico en la colección',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -94,7 +94,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      '1869 Central Board contribution receipt (No. 32, low) and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
+      '1869 Central Board provisional fundraising receipt (No. 32, low) and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
     holdingsAria: 'Puerto Rico banknotes in the collection',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -139,17 +139,17 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
   {
     id: 'junta-central-cuba-1869',
     path: '/coleccion/puerto-rico/junta-central-cuba-1869/',
-    pick: 'Recibo convertible',
+    pick: 'Recibo de contribución provisional',
     serial: '32',
     serial_display: 'N.º 32',
     serial_kind: 'low',
     signatures: {
-      es: 'Por El Tesorero (firma autógrafa); beneficiario manuscrito: Ciudadano Pedro Ferrandiz (lectura tentativa)',
-      en: 'For the Treasurer (autograph signature); handwritten payee: Citizen Pedro Ferrandiz (tentative reading)',
+      es: 'Por El Tesorero (firma autógrafa); contribuyente impreso: Ciudadano Pedro Fernandez Criado; endoso de canje (reverso): Ramon Fernandez Criado en nombre de su padre Pedro',
+      en: 'For the Treasurer (autograph signature); printed contributor: Citizen Pedro Fernandez Criado; redemption endorsement (back): Ramon Fernandez Criado on behalf of his father Pedro',
     },
     printed: {
-      es: 'Litografiado en Nueva York por Sarony & Co. No es moneda de curso: instrumento de recaudación revolucionaria convertible en bonos. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
-      en: 'Lithographed in New York by Sarony & Co. Not circulating currency: a revolutionary fundraising instrument convertible into bonds. This record does not invent a printage for the type or for No. 32.',
+      es: 'Litografiado en Nueva York por Slote & Janes, Stationers, 93 y 95 Fulton St., N.Y. Recibo de contribución provisional — no moneda de curso (distinto de Pick 61–64) — convertible en bonos de la República de Cuba en la primera emisión. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
+      en: 'Lithographed in New York by Slote & Janes, Stationers, 93 & 95 Fulton St., N.Y. Provisional fundraising receipt — not circulating currency (separate from Pick 61–64) — convertible into Republic of Cuba bonds on the first issuance. This record does not invent a printage for the type or for No. 32.',
     },
     images: {
       composite: '/images/catalog/puerto-rico/pr-1869-junta-central-32-composite.jpg',
@@ -161,32 +161,32 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       backHeight: 960,
     },
     title: {
-      es: '1.500 pesos · Recibo de contribución · 1869',
-      en: '1,500 Pesos · Contribution Receipt · 1869',
+      es: '1.500 dólares · Recibo de contribución provisional · 1869',
+      en: '1,500 Dollars · Provisional Fundraising Receipt · 1869',
     },
     kicker: {
       es: 'Junta Central Republicana de Cuba y Puerto Rico · Nueva York',
       en: 'Central Republican Board of Cuba and Puerto Rico · New York',
     },
     lead: {
-      es: 'Recibo de contribución a la independencia de Cuba, litografiado en Nueva York el 15 de junio de 1869. N.º 32 — número bajo — por mil quinientos pesos, convertible en bonos de la República de Cuba.',
-      en: 'Contribution receipt toward Cuban independence, lithographed in New York on 15 June 1869. No. 32 — a low document number — for one thousand five hundred pesos, convertible into bonds of the Republic of Cuba.',
+      es: 'Recibo de contribución provisional a la independencia de Cuba, litografiado en Nueva York el 16 de junio de 1869. N.º 32 — número bajo — por mil quinientos dólares en papel moneda de los Estados Unidos, convertible en bonos de la República de Cuba.',
+      en: 'Provisional fundraising receipt toward Cuban independence, lithographed in New York on 16 June 1869. No. 32 — a low document number — for one thousand five hundred dollars in United States paper currency, convertible into bonds of the Republic of Cuba.',
     },
     description: {
-      es: 'La Junta Central Republicana de Cuba y Puerto Rico —cuartel general político, diplomático y financiero de la insurgencia desde Nueva York, presidida por José Morales Lemus y con el secretario Dr. José Francisco Basora— emitió recibos como este para recaudar fondos y afianzar la deuda soberana prometida por la República de Cuba en Armas, apenas ocho meses después del Grito de Yara (octubre de 1868). Este N.º 32, fechado el 15 de junio de 1869, cae en las semanas previas a las detenciones de junio bajo las leyes de neutralidad estadounidenses. El texto impreso reconoce haber recibido del ciudadano Pedro Ferrandiz —lectura tentativa por la cursiva— la suma de mil quinientos pesos «para auxiliar la causa de la independencia de Cuba», y declara el recibo convertible en bonos de la República de Cuba «del tipo que se emita en la primera emisión». El anverso litografiado por Sarony & Co. muestra a la izquierda una figura alegórica de la Libertad junto a un escudo con una sola estrella —emblema visual de la república imaginada—, el N.º 32 en rojo, la fecha manuscrita 15 de junio de 1869 y la firma del tesorero bajo «Por El Tesorero». No es papel moneda al uso: es un título de deuda revolucionaria emitido antes de que existiera un estado cubano soberano. El reverso lleva sello «Archivo Nacional», matriz de registro de la República de Cuba (CAJA 196 / NÚMERO 307) y endosos manuscritos que la fotografía no permite transcribir con plena seguridad; manchas, pliegues y desgaste perimetral son coherentes con un documento decimonónico en uso.',
-      en: 'The Central Republican Board of Cuba and Puerto Rico — political, diplomatic, and financial headquarters of the insurgency from New York, chaired by José Morales Lemus with secretary Dr. José Francisco Basora — issued receipts like this one to raise funds and build credibility for the sovereign debt promised by the Republic of Cuba in Arms, only about eight months after the Grito de Yara (October 1868). This No. 32, dated 15 June 1869, falls in the weeks before the June arrests under U.S. neutrality laws. The printed text acknowledges receipt from Citizen Pedro Ferrandiz — a tentative reading of the cursive — of one thousand five hundred pesos “to aid the cause of the independence of Cuba,” and declares the receipt convertible into bonds of the Republic of Cuba “of the type to be issued in the first emission.” The face lithographed by Sarony & Co. shows at left an allegorical Liberty beside a shield with a single star — visual emblem of the republic yet to exist — red No. 32, the handwritten date 15 June 1869, and the treasurer’s signature under “For the Treasurer.” This is not ordinary currency: it is revolutionary debt paper issued before a sovereign Cuban state existed. The back bears an Archivo Nacional stamp, a Republic of Cuba registration box (CAJA 196 / NUMERO 307), and handwritten endorsements the photograph does not support transcribing with full confidence; browning, stains, folds, and edge wear are consistent with a nineteenth-century working document.',
+      es: 'La Junta Central Republicana de Cuba y Puerto Rico —cuartel general político, diplomático y financiero de la insurgencia desde Nueva York, presidida por José Morales Lemus y con el secretario Dr. José Francisco Basora— emitió recibos de contribución provisional como este para recaudar fondos durante la Guerra de los Diez Años y afianzar la deuda soberana prometida por la República de Cuba en Armas, apenas ocho meses después del Grito de Yara (octubre de 1868). Este instrumento no es papel moneda al uso ni debe confundirse con los billetes circulantes de la Junta del 17 de agosto de 1869 (Pick 61–64): es un título de deuda revolucionaria emitido antes de que existiera un estado cubano soberano, convertible en bonos «del tipo que se emita en la primera emisión». Este N.º 32, fechado el 16 de junio de 1869 en Nueva York, cae en las semanas previas a las detenciones de junio bajo las leyes de neutralidad estadounidenses. El texto impreso reconoce haber recibido del ciudadano Pedro Fernandez Criado la suma de mil quinientos dólares en papel moneda de los Estados Unidos «para auxiliar la causa de la independencia de Cuba». El anverso litografiado por Slote & Janes, Stationers (93 y 95 Fulton St., N.Y.), muestra a la izquierda una figura alegórica de la Libertad o la República junto a un escudo con una sola estrella —La Estrella Solitaria, emblema visual de la república imaginada—, el N.º 32 en rojo, la fecha manuscrita 16 de junio de 1869 y la firma del tesorero bajo «Por El Tesorero». El reverso documenta el cumplimiento de la promesa de conversión: un endoso manuscrito fechado el 15 de noviembre de 1869 en Nueva York declara que Ramon Fernandez Criado, en nombre de su padre Pedro, recibió del Tesorero de la Junta Central los bonos correspondientes a este valor —unos cinco meses después de la emisión del recibo. Lleva sello «REPUBLICA DE CUBA / ARCHIVO NACIONAL» y matriz de registro CAJA 196 / NÚMERO 301, lo que sitúa la pieza en la documentación archivística cubana. Manchas, pliegues y desgaste perimetral son coherentes con un documento decimonónico en uso.',
+      en: 'The Central Republican Board of Cuba and Puerto Rico — political, diplomatic, and financial headquarters of the insurgency from New York, chaired by José Morales Lemus with secretary Dr. José Francisco Basora — issued provisional fundraising receipts like this one to raise funds during the Ten Years’ War and build credibility for the sovereign debt promised by the Republic of Cuba in Arms, only about eight months after the Grito de Yara (October 1868). This instrument is not ordinary currency and must not be confused with the Board’s circulating notes of 17 August 1869 (Pick 61–64): it is revolutionary debt paper issued before a sovereign Cuban state existed, convertible into bonds “of the type to be issued in the first emission.” This No. 32, dated 16 June 1869 in New York, falls in the weeks before the June arrests under U.S. neutrality laws. The printed text acknowledges receipt from Citizen Pedro Fernandez Criado of one thousand five hundred dollars in United States paper currency “to aid the cause of the independence of Cuba.” The face lithographed by Slote & Janes, Stationers (93 & 95 Fulton St., N.Y.), shows at left an allegorical Liberty or Republic beside a shield with a single star — La Estrella Solitaria, visual emblem of the republic yet to exist — red No. 32, the handwritten date 16 June 1869, and the treasurer’s signature under “For the Treasurer.” The back records fulfillment of the conversion promise: a handwritten endorsement dated 15 November 1869 in New York states that Ramon Fernandez Criado, on behalf of his father Pedro, received from the Treasurer of the Central Board the bonds corresponding to this value — about five months after the receipt was issued. It bears a “REPUBLICA DE CUBA / ARCHIVO NACIONAL” stamp and registration box CAJA 196 / NUMERO 301, placing the piece in Cuban archival holdings. Browning, stains, folds, and edge wear are consistent with a nineteenth-century working document.',
     },
     frontCaption: {
-      es: 'Anverso del recibo N.º 32: Junta Central Republicana de Cuba y Puerto Rico, mil quinientos pesos, 15 de junio de 1869, litografía Sarony & Co.',
-      en: 'Face of receipt No. 32: Central Republican Board of Cuba and Puerto Rico, one thousand five hundred pesos, 15 June 1869, Sarony & Co. lithograph.',
+      es: 'Anverso del recibo N.º 32: Junta Central Republicana de Cuba y Puerto Rico, mil quinientos dólares, 16 de junio de 1869, litografía Slote & Janes; vignette de la Libertad con La Estrella Solitaria.',
+      en: 'Face of receipt No. 32: Central Republican Board of Cuba and Puerto Rico, one thousand five hundred dollars, 16 June 1869, Slote & Janes lithograph; Liberty vignette with La Estrella Solitaria.',
     },
     backCaption: {
-      es: 'Reverso con sello Archivo Nacional, matriz CAJA 196 / NÚMERO 307 y endosos manuscritos.',
-      en: 'Back with Archivo Nacional stamp, CAJA 196 / NUMERO 307 registration, and handwritten endorsements.',
+      es: 'Reverso con endoso de canje del 15 de noviembre de 1869 (Ramon Fernandez Criado en nombre de su padre Pedro), sello Archivo Nacional y matriz CAJA 196 / NÚMERO 301.',
+      en: 'Back with redemption endorsement of 15 November 1869 (Ramon Fernandez Criado on behalf of his father Pedro), Archivo Nacional stamp, and CAJA 196 / NUMERO 301 registration.',
     },
     scarcity: {
-      es: 'Los billetes circulantes de la Junta del 17 de agosto de 1869 figuran en catálogo como Pick 61–64 (1, 5, 10 y 20 pesos). Este recibo convertible es un instrumento distinto: recaudación revolucionaria en Nueva York, no moneda de curso. Fuentes numismáticas describen emisiones limitadas; en junio de 1869 Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses. El N.º 32 es un número documental muy bajo. Esta ficha no inventa una tirada.',
-      en: 'The Board’s circulating notes of 17 August 1869 are catalogued as Pick 61–64 (1, 5, 10, and 20 pesos). This convertible receipt is a separate instrument: revolutionary fundraising in New York, not circulating currency. Numismatic sources describe limited issues; in June 1869 Morales Lemus and Basora were arrested under U.S. neutrality laws. No. 32 is a very low document number. This record does not invent a printage.',
+      es: 'Los billetes circulantes de la Junta del 17 de agosto de 1869 figuran en catálogo como Pick 61–64 (1, 5, 10 y 20 pesos). Este recibo de contribución provisional es un instrumento distinto: recaudación revolucionaria en Nueva York, no moneda de curso. Fuentes numismáticas describen emisiones limitadas; en junio de 1869 Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses. El N.º 32 canjeado en bonos el 15 de noviembre de 1869 muestra que la Junta cumplió la promesa de conversión. El N.º 32 es un número documental muy bajo. Esta ficha no inventa una tirada.',
+      en: 'The Board’s circulating notes of 17 August 1869 are catalogued as Pick 61–64 (1, 5, 10, and 20 pesos). This provisional fundraising receipt is a separate instrument: revolutionary fundraising in New York, not circulating currency. Numismatic sources describe limited issues; in June 1869 Morales Lemus and Basora were arrested under U.S. neutrality laws. No. 32, redeemed for bonds on 15 November 1869, shows the Board honored its conversion promise. No. 32 is a very low document number. This record does not invent a printage.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo para el N.º 32. La pieza se presenta sin encapsular, con desgaste propio de un documento decimonónico en uso.',
@@ -210,6 +210,28 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
         href: 'https://www.ebsco.com/research-starters/history/cubas-ten-years-war',
         es: 'EBSCO — Cuba’s Ten Years’ War',
         en: 'EBSCO — Cuba’s Ten Years’ War',
+        note: {
+          es: 'Contexto de la recaudación revolucionaria durante la Guerra de los Diez Años.',
+          en: 'Revolutionary fundraising context during the Ten Years’ War.',
+        },
+      },
+      {
+        href: 'https://exhibitions.library.columbia.edu/exhibits/show/yardley/index/r-s/slote-janes',
+        es: 'Columbia University — Slote & Janes, 93 Fulton Street (Yardley letterheads)',
+        en: 'Columbia University — Slote & Janes, 93 Fulton Street (Yardley letterheads)',
+        note: {
+          es: 'Imprenta y papelería en Fulton Street, entre William y Gold Streets, Nueva York.',
+          en: 'Stationers and printers at Fulton Street, between William and Gold Streets, New York.',
+        },
+      },
+      {
+        href: 'https://www.archivonacional.cu/',
+        es: 'Archivo Nacional de Cuba — procedencia del documento',
+        en: 'Archivo Nacional de Cuba — document provenance',
+        note: {
+          es: 'Sellos REPUBLICA DE CUBA / ARCHIVO NACIONAL; matriz CAJA 196 / NÚMERO 301.',
+          en: 'REPUBLICA DE CUBA / ARCHIVO NACIONAL stamps; CAJA 196 / NUMERO 301 registration.',
+        },
       },
       {
         href: 'https://www.cultura.gob.es/en/cultura/archivos/difusion/mc-difusion/bicentenarios/contexto-historico/las-ultimas-posesiones/puerto-rico.html',
@@ -234,6 +256,24 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
         href: 'https://www.coinbooks.org/esylum_v16n12a24.html',
         es: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
         en: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Archivo_Nacional_de_la_Rep%C3%BAblica_de_Cuba',
+        es: 'Archivo Nacional de la República de Cuba',
+        en: 'Archivo Nacional de la República de Cuba',
+        note: {
+          es: 'Institución que conserva la documentación patrimonial nacional; la pieza lleva matriz CAJA 196 / NÚMERO 301.',
+          en: 'National archive holding Cuba’s permanent documentary heritage; this piece bears registration box CAJA 196 / NUMERO 301.',
+        },
+      },
+      {
+        href: 'https://exhibitions.library.columbia.edu/exhibits/show/yardley/index/r-s/slote-janes',
+        es: 'Columbia University Libraries — Slote & Janes, 93 Fulton Street',
+        en: 'Columbia University Libraries — Slote & Janes, 93 Fulton Street',
+        note: {
+          es: 'Papelería e imprenta neoyorquina en Fulton Street, contemporánea al recibo de 1869.',
+          en: 'New York stationers and printers on Fulton Street, contemporary with the 1869 receipt.',
+        },
       },
     ],
   },
