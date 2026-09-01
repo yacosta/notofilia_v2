@@ -35,7 +35,7 @@ import {
   netherlandsCoinageDedicatedSlugs,
 } from '../data/netherlands-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
-import { dedicatedCatalogPaths as puertoRicoPaths, PUERTO_RICO_PATH } from '../data/puerto-rico';
+import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { canadaNoteSlugs } from '../data/canada-polymer';
 import { englandNoteSlugs } from '../data/england-polymer';
 import { malaysiaNoteSlugs } from '../data/malaysia-polymer';
@@ -79,6 +79,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of englandNoteSlugs) slugs.add(slug);
   for (const slug of canadaNoteSlugs) slugs.add(slug);
   for (const slug of malaysiaNoteSlugs) slugs.add(slug);
+  for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;

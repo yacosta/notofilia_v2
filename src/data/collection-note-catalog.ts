@@ -8,6 +8,7 @@ import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
 import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
+import { puertoRicoNotes, notePath as puertoRicoNotePath } from './puerto-rico';
 import { localizePath, type Locale } from '../lib/locale-paths';
 import {
   type TypeCatalogCountry,
@@ -27,6 +28,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   MY: { es: 'Malasia', en: 'Malaysia' },
   GB: { es: 'Inglaterra', en: 'England' },
   CA: { es: 'Canadá', en: 'Canada' },
+  PR: { es: 'Puerto Rico', en: 'Puerto Rico' },
 };
 
 type CollectionSeed = {
@@ -214,6 +216,24 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of puertoRicoNotes) {
+    seeds.push({
+      id: `pr-${note.id}`,
+      country: 'PR',
+      href: puertoRicoNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '1895',
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   return seeds;
 }
 
@@ -268,6 +288,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'my',
   'gb',
   'ca',
+  'pr',
   'pending',
   'specimen',
   'remainder',
@@ -321,6 +342,7 @@ export const collectionNoteCatalogCopy = {
       my: 'Malasia',
       gb: 'Inglaterra',
       ca: 'Canadá',
+      pr: 'Puerto Rico',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -373,6 +395,7 @@ export const collectionNoteCatalogCopy = {
       my: 'Malaysia',
       gb: 'England',
       ca: 'Canada',
+      pr: 'Puerto Rico',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',

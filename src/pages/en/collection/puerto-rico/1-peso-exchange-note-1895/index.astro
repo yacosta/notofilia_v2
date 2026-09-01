@@ -1,0 +1,9 @@
+---
+import PuertoRicoNotePage from '../../../../../components/catalog/PuertoRicoNotePage.astro';
+import { noteById } from '../../../../../data/puerto-rico';
+
+const note = noteById('billete-de-canje-1-peso-1895');
+if (!note) throw new Error('Missing Puerto Rico 1895 1-peso catalog note');
+---
+
+<PuertoRicoNotePage locale="en" note={note} />

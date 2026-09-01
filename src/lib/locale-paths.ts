@@ -157,6 +157,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/'],
   },
   { es: '/coleccion/filipinas/', en: '/collection/philippines/' },
+  {
+    es: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
+    en: '/collection/puerto-rico/1-peso-exchange-note-1895/',
+  },
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
@@ -369,6 +373,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',
+    '/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     '/en/coleccion/puerto-rico/',
     '/en/coleccion/',
     '/en/glosario/',
