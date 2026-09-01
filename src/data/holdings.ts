@@ -109,6 +109,7 @@ export const additions: Holding[] = [
   { id: 'my-2012-5-ringgit-aa1955984', kind: 'banknote', country: 'MY' },
   { id: 'pr-1895-1-peso-4548454', kind: 'banknote', country: 'PR' },
   { id: 'pr-1869-junta-central-32', kind: 'banknote', country: 'PR' },
+  { id: 'pr-1869-junta-1-peso-13085', kind: 'banknote', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -160,6 +161,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'my-2012-5-ringgit-p52a-b149a' },
   { id: 'pr-1895-1-peso-p7b' },
   { id: 'pr-1869-junta-central-recibo' },
+  { id: 'pr-1869-junta-1-peso-p61' },
 ];
 
 export type CollectionStats = {

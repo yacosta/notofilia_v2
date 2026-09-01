@@ -60,7 +60,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Emisiones coloniales y de transición | Notofilia',
     metaDescription:
-      'Vitrina de papel moneda puertorriqueño del siglo XIX: recibo de la Junta Central de 1869 y Billete de Canje de 1 peso de 1895.',
+      'Vitrina de papel moneda puertorriqueño del siglo XIX: billete de 1 peso de la Junta Central de 1869, recibo provisional y Billete de Canje de 1895.',
     kicker: 'Puerto Rico · Siglo XIX',
     title: 'Emisiones coloniales y de transición',
     heroAlt:
@@ -72,7 +72,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Recibo de contribución provisional de la Junta Central de 1869 (N.º 32, bajo) y Billete de Canje de 1 peso de 1895 (P#7b, serial radar 4548454).',
+      'Billete circulante de 1 peso de la Junta Central de 1869 (P#61, N.º 13085), recibo de contribución provisional (N.º 32, bajo) y Billete de Canje de 1895 (P#7b, serial radar 4548454).',
     holdingsAria: 'Billetes de Puerto Rico en la colección',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -82,7 +82,7 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Puerto Rico · Colonial and transition issues | Notofilia',
     metaDescription:
-      'Case for nineteenth-century Puerto Rican paper money: the 1869 Central Board receipt and the 1895 1-peso exchange note.',
+      'Case for nineteenth-century Puerto Rican paper money: the 1869 Central Board 1-peso note, provisional receipt, and 1895 exchange note.',
     kicker: 'Puerto Rico · Nineteenth century',
     title: 'Colonial and transition issues',
     heroAlt:
@@ -94,7 +94,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      '1869 Central Board provisional fundraising receipt (No. 32, low) and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
+      '1869 Central Board circulating 1-peso note (P#61, No. 13085), provisional fundraising receipt (No. 32, low), and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
     holdingsAria: 'Puerto Rico banknotes in the collection',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -103,7 +103,10 @@ export const seriesCopy = {
   },
 } as const;
 
-export type PuertoRicoNoteId = 'junta-central-cuba-1869' | 'billete-de-canje-1-peso-1895';
+export type PuertoRicoNoteId =
+  | 'junta-central-1-peso-1869'
+  | 'junta-central-cuba-1869'
+  | 'billete-de-canje-1-peso-1895';
 
 export type PuertoRicoNote = {
   id: PuertoRicoNoteId;
@@ -256,6 +259,107 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
         href: 'https://www.coinbooks.org/esylum_v16n12a24.html',
         es: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
         en: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+      },
+    ],
+  },
+  {
+    id: 'junta-central-1-peso-1869',
+    path: '/coleccion/puerto-rico/junta-central-1-peso-1869/',
+    pick: 'P#61',
+    serial: '13085',
+    serial_display: 'N.º 13085 · serie B',
+    serial_kind: 'ordinary',
+    signatures: {
+      es: 'José Morales Lemus (Presidente de la Junta); J. M. Bassora (Secretario); El Tesorero (firma autógrafa)',
+      en: 'José Morales Lemus (Board President); J. M. Bassora (Secretary); the Treasurer (autograph signature)',
+    },
+    printed: {
+      es: 'Impreso en Nueva York, 17 de agosto de 1869. Billete circulante de la Junta Central Republicana de Cuba y Puerto Rico (Pick 61–64: 1, 5, 10 y 20 pesos). Convertible en bonos de la República de Cuba a presentación en la Tesorería de la Junta, en cantidades de cien pesos á lo ménos. Esta ficha no inventa una tirada para el tipo ni para el N.º 13085.',
+      en: 'Printed in New York, 17 August 1869. Circulating note of the Central Republican Board of Cuba and Puerto Rico (Pick 61–64: 1, 5, 10, and 20 pesos). Convertible into Republic of Cuba bonds upon presentation at the Board Treasury in amounts of at least one hundred pesos. This record does not invent a printage for the type or for No. 13085.',
+    },
+    images: {
+      composite: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-composite.jpg',
+      front: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-front.jpg',
+      back: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-back.jpg',
+      frontWidth: 1800,
+      frontHeight: 1200,
+      backWidth: 1800,
+      backHeight: 1200,
+    },
+    title: {
+      es: '1 peso · Junta Central Republicana · 1869',
+      en: '1 Peso · Central Republican Board · 1869',
+    },
+    kicker: {
+      es: 'Junta Central Republicana de Cuba y Puerto Rico · Nueva York',
+      en: 'Central Republican Board of Cuba and Puerto Rico · New York',
+    },
+    lead: {
+      es: 'Billete circulante de un peso de la Junta Central Republicana de Cuba y Puerto Rico, impreso en Nueva York el 17 de agosto de 1869. N.º 13085, serie B — papel moneda revolucionario convertible en bonos de la República de Cuba.',
+      en: 'Circulating one-peso note of the Central Republican Board of Cuba and Puerto Rico, printed in New York on 17 August 1869. No. 13085, series B — revolutionary currency convertible into Republic of Cuba bonds.',
+    },
+    description: {
+      es: 'El 17 de agosto de 1869 la Junta Central Republicana de Cuba y Puerto Rico —cuartel general político, diplomático y financiero de la insurgencia desde Nueva York, presidida por José Morales Lemus y con el secretario Dr. José Francisco Basora— emitió esta serie de billetes circulantes (Pick 61–64: 1, 5, 10 y 20 pesos) como moneda de curso revolucionaria durante la Guerra de los Diez Años. A diferencia del recibo de contribución provisional de junio —instrumento de recaudación por sumas variables—, este billete de un peso es papel al portador con denominación fija, reconocido por la Junta como deuda convertible en bonos de la República de Cuba «a presentación en la Tesorería de la Junta, en cantidades de cien pesos á lo ménos». El anverso encabeza LA REPÚBLICA DE CUBA POR MEDIO DE LA Junta Central Republicana de Cuba y Puerto Rico, centra UN PESO en tipografía decorativa, lleva el N.º 13085 en rojo, la letra de serie B arriba a la derecha y la fecha Nueva York, Agosto 17 de 1869. Medallones circulares con el numeral 1 flanquean el texto promisorio. Firman José Morales Lemus como Presidente de la Junta, J. M. Bassora como Secretario y el Tesorero con firma autógrafa. El reverso muestra el texto principal en transparencia por la delgadez del papel —comportamiento habitual en estos papeles decimonónicos impresos por una sola cara—; el N.º 13085 del anverso es el identificador de esta pieza concreta. La Junta vinculaba así la política anticolonial cubana y puertorriqueña en el exilio neoyorquino: semanas antes, en junio de 1869, Morales Lemus y Basora habían sido detenidos bajo las leyes de neutralidad estadounidenses, pero la emisión de agosto prosiguió la estrategia financiera revolucionaria.',
+      en: 'On 17 August 1869 the Central Republican Board of Cuba and Puerto Rico — political, diplomatic, and financial headquarters of the insurgency from New York, chaired by José Morales Lemus with secretary Dr. José Francisco Basora — issued this series of circulating notes (Pick 61–64: 1, 5, 10, and 20 pesos) as revolutionary currency during the Ten Years’ War. Unlike the provisional contribution receipt of June — a fundraising instrument for variable amounts — this one-peso note is fixed-denomination bearer paper, recognized by the Board as debt convertible into Republic of Cuba bonds “upon presentation at the Treasury of the Board, in amounts of at least one hundred pesos.” The face heads LA REPÚBLICA DE CUBA POR MEDIO DE LA Central Republican Board of Cuba and Puerto Rico, centers UN PESO in decorative type, carries red No. 13085, series letter B at upper right, and the date New York, August 17, 1869. Circular medallions with the numeral 1 flank the promissory text. Signers are José Morales Lemus as Board President, J. M. Bassora as Secretary, and the Treasurer with an autograph signature. The back shows the main text in show-through from the thin paper — typical of these nineteenth-century notes printed on one side —; the face No. 13085 is this piece’s identifier. The Board thus linked Cuban and Puerto Rican anti-colonial politics in the New York exile: weeks earlier, in June 1869, Morales Lemus and Basora had been arrested under U.S. neutrality laws, yet the August issue continued the revolutionary financial strategy.',
+    },
+    frontCaption: {
+      es: 'Anverso del billete de 1 peso P#61: Junta Central Republicana, N.º 13085 serie B, Nueva York 17 de agosto de 1869; medallones con el 1 y firmas de Morales Lemus, Bassora y el Tesorero.',
+      en: 'Face of the P#61 1-peso note: Central Republican Board, No. 13085 series B, New York 17 August 1869; medallions with 1 and signatures of Morales Lemus, Bassora, and the Treasurer.',
+    },
+    backCaption: {
+      es: 'Reverso con transparencia del anverso por la delgadez del papel; la sangrado puede mostrar un número distinto (p. ej. 13083). El identificador de la pieza es el N.º 13085 impreso en rojo en el anverso.',
+      en: 'Back with show-through from the face through thin paper; bleed-through may show a different number (e.g. 13083). This piece’s identifier is red No. 13085 on the face.',
+    },
+    scarcity: {
+      es: 'Pick 61–64 documenta los cuatro valores circulantes de la Junta del 17 de agosto de 1869 (1, 5, 10 y 20 pesos). Las fuentes numismáticas describen emisiones limitadas en Nueva York durante la Guerra de los Diez Años; en junio de 1869 Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses. El N.º 13085 es un serial ordinario. Esta ficha no inventa una tirada.',
+      en: 'Pick 61–64 catalogues the Board’s four circulating denominations of 17 August 1869 (1, 5, 10, and 20 pesos). Numismatic sources describe limited New York issues during the Ten Years’ War; in June 1869 Morales Lemus and Basora were arrested under U.S. neutrality laws. No. 13085 is an ordinary serial. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo para el N.º 13085. La pieza se presenta sin encapsular, con tono y desgaste propios de un billete decimonónico en uso.',
+      en: 'An independent census for No. 13085 has not been verified. The note is shown unslabbed, with toning and wear consistent with a nineteenth-century working note.',
+    },
+    grade: {
+      es: 'Sin encapsular; tono, manchas y desgaste perimetral (colección privada)',
+      en: 'Unslabbed; toning, stains, and edge wear (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.numismondo.net/pm/cub/index61.htm',
+        es: 'Numismondo — Cuba P#61–64 (billetes circulantes de 1869)',
+        en: 'Numismondo — Cuba P#61–64 (1869 circulating notes)',
+      },
+      {
+        href: 'https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/morales-lemus-jose-1808-1870',
+        es: 'Encyclopedia.com — José Morales Lemus (1808–1870)',
+        en: 'Encyclopedia.com — José Morales Lemus (1808–1870)',
+        note: {
+          es: 'Presidencia de la Junta Central y detención en junio de 1869 bajo las leyes de neutralidad estadounidenses.',
+          en: 'Central Board presidency and June 1869 arrest under U.S. neutrality laws.',
+        },
+      },
+      {
+        href: 'https://www.ebsco.com/research-starters/history/cubas-ten-years-war',
+        es: 'EBSCO — Cuba’s Ten Years’ War',
+        en: 'EBSCO — Cuba’s Ten Years’ War',
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/item.aspx?i=29836775&mobile=0',
+        es: 'Sedwick Coins — Junta Central Republicana de Cuba y Puerto Rico (1869)',
+        en: 'Sedwick Coins — Central Republican Board of Cuba and Puerto Rico (1869)',
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v16n12a24.html',
+        es: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+        en: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/PRI/PRI.htm',
+        es: 'Bank Note Museum — Puerto Rico',
+        en: 'Bank Note Museum — Puerto Rico',
+        note: {
+          es: 'Contexto de emisiones puertorriqueñas y Junta Central en el exilio neoyorquino.',
+          en: 'Puerto Rican issues and Central Board in the New York exile context.',
+        },
       },
     ],
   },
