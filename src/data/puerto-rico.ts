@@ -281,10 +281,10 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       composite: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-composite.jpg',
       front: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-front.jpg',
       back: '/images/catalog/puerto-rico/pr-1869-junta-1-peso-13085-back.jpg',
-      frontWidth: 1800,
-      frontHeight: 1200,
-      backWidth: 1800,
-      backHeight: 1200,
+      frontWidth: 1440,
+      frontHeight: 960,
+      backWidth: 1440,
+      backHeight: 960,
     },
     title: {
       es: '1 peso · Junta Central Republicana · 1869',
@@ -307,8 +307,8 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       en: 'Face of the P#61 1-peso note: Central Republican Board, No. 13085 series B, New York 17 August 1869; medallions with 1 and signatures of Morales Lemus, Bassora, and the Treasurer.',
     },
     backCaption: {
-      es: 'Reverso con transparencia del anverso por la delgadez del papel; la sangrado puede mostrar un número distinto (p. ej. 13083). El identificador de la pieza es el N.º 13085 impreso en rojo en el anverso.',
-      en: 'Back with show-through from the face through thin paper; bleed-through may show a different number (e.g. 13083). This piece’s identifier is red No. 13085 on the face.',
+      es: 'Reverso con transparencia del anverso por la delgadez del papel; la sangrado puede mostrar un número distinto (p. ej. 13082). El identificador de la pieza es el N.º 13085 impreso en rojo en el anverso.',
+      en: 'Back with show-through from the face through thin paper; bleed-through may show a different number (e.g. 13082). This piece’s identifier is red No. 13085 on the face.',
     },
     scarcity: {
       es: 'Pick 61–64 documenta los cuatro valores circulantes de la Junta del 17 de agosto de 1869 (1, 5, 10 y 20 pesos). Las fuentes numismáticas describen emisiones limitadas en Nueva York durante la Guerra de los Diez Años; en junio de 1869 Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses. El N.º 13085 es un serial ordinario. Esta ficha no inventa una tirada.',
