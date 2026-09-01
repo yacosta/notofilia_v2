@@ -582,10 +582,6 @@ export const barabooScripSeriesCopy = {
     scripTitle: 'El scrip de Baraboo',
     collectingTitle: 'Lo que buscan hoy los coleccionistas',
     strainTitle: '1933 y lo que siguió',
-    figureAlt:
-      'Postal souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
-    figureCaption:
-      'Mapa souvenir del Golden Jubilee: el tren llega por los patios C. & N.W., cruza Baraboo y monta la carpa en el recinto ferial el 3 de agosto de 1933.',
     relatedTitle: 'En la colección',
     sourcesTitle: 'Fuentes',
   },
@@ -613,10 +609,6 @@ export const barabooScripSeriesCopy = {
     scripTitle: 'The Baraboo scrip',
     collectingTitle: 'What collectors look for today',
     strainTitle: '1933 and after',
-    figureAlt:
-      'Souvenir postcard of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
-    figureCaption:
-      'Golden Jubilee souvenir map: the train arrives at the C. & N.W. yards, crosses Baraboo, and raises the Big Top at the fairgrounds on August 3, 1933.',
     relatedTitle: 'In the collection',
     sourcesTitle: 'Sources',
   },
