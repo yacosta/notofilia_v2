@@ -59,6 +59,8 @@ Used only by `AboutPage.astro` (`/acerca-de/`, `/en/about/`).
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `imageSrcset`. That is not a hero.
 
+A `wide` editorial article is a documented exception: the article case is `max-w-content` plus `--page-gutter`, and the figure is a full-column in-flow hero (`object-contain`, intrinsic size, raw `/uploads/` `src` so the image still loads when `/cdn-cgi/image/` is unavailable). Do not invent a fifth full-bleed photo hero.
+
 ## Do not
 
 - Ship a series/home LCP image without `/cdn-cgi/image/`.

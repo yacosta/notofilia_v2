@@ -41,8 +41,12 @@ export type EditorialArticle = {
   sourceName?: string | null;
   sourceUrl?: string | null;
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
   imageAlt: LocalizedText;
   caption: LocalizedText;
+  /** Museum-case column (`max-w-content`) instead of the 46rem reading measure. */
+  wide?: boolean;
   bodyHtml: LocalizedText;
   claim?: ClaimCallout | null;
   related: RelatedLink[];

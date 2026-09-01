@@ -36,6 +36,9 @@ const bodyIsFallback = locale === 'en' && rawBody === article.bodyHtml.es;
 const body = enhanceProseHtml(rawBody, locale);
 const related = resolveRelated(article.related, locale);
 const claim = article.claim;
+const wide = Boolean(article.wide);
+const imageWidth = article.imageWidth ?? 1200;
+const imageHeight = article.imageHeight ?? 675;
 
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(article.image, SITE_URL).href;
@@ -94,7 +97,12 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
-    <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+    <article
+      class:list={[
+        'mx-auto px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16',
+        wide ? 'max-w-content' : 'max-w-[46rem]',
+      ]}
+    >
       <nav class="mb-6 font-sans text-[14px] tracking-[0.06em] text-muted" aria-label={t.breadcrumb}>
         <ol class="breadcrumb m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
           <li>
@@ -111,7 +119,7 @@ const jsonLd = {
         </ol>
       </nav>
 
-      <header>
+      <header class:list={[wide && 'max-w-[46rem]']}>
         <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">
           {t.published}{' '}
           <time datetime={article.published}>{locale === 'en' ? article.dateEn : article.dateEs}</time>
@@ -162,15 +170,18 @@ const jsonLd = {
         </dl>
       </header>
 
-      <figure class="mb-10 mt-0">
+      <figure class:list={['mb-10 mt-0', wide && 'hero-figure']}>
         <img
-          src={cardImageSrc(article.image)}
-          srcset={imageSrcset(article.image)}
-          sizes="(max-width: 768px) 100vw, 46rem"
+          src={wide ? article.image : cardImageSrc(article.image)}
+          srcset={wide ? undefined : imageSrcset(article.image)}
+          sizes={wide ? '(max-width: 768px) 100vw, 75rem' : '(max-width: 768px) 100vw, 46rem'}
           alt={article.imageAlt[locale]}
-          width="1200"
-          height="675"
-          class="aspect-video w-full bg-panel object-cover"
+          width={imageWidth}
+          height={imageHeight}
+          class:list={[
+            'w-full bg-panel',
+            wide ? 'h-auto object-contain' : 'aspect-video object-cover',
+          ]}
           fetchpriority="high"
           decoding="async"
         />
@@ -234,7 +245,7 @@ const jsonLd = {
         ) : null
       }
 
-      <div class="prose-notofilia" lang={bodyIsFallback ? 'es' : locale} set:html={body} />
+      <div class:list={['prose-notofilia', wide && 'max-w-[46rem]']} lang={bodyIsFallback ? 'es' : locale} set:html={body} />
 
       {
         article.sourceName && article.sourceUrl ? (
