@@ -282,6 +282,14 @@ describe('locale path mapping', () => {
       '/en/blog/how-to-start-a-banknote-collection/',
     );
     assert.equal(
+      localizePath('/blog/circo-ringling-bros-barnum-bailey/', 'en'),
+      '/en/blog/ringling-bros-barnum-bailey-circus/',
+    );
+    assert.equal(
+      otherLocalePath('/en/blog/ringling-bros-barnum-bailey-circus/', 'en'),
+      '/blog/circo-ringling-bros-barnum-bailey/',
+    );
+    assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
@@ -307,6 +315,10 @@ describe('locale path mapping', () => {
 
   it('redirects old English Spanish slugs', () => {
     const redirects = englishRedirects();
+    assert.equal(
+      redirects['/en/blog/circo-ringling-bros-barnum-bailey/'],
+      '/en/blog/ringling-bros-barnum-bailey-circus/',
+    );
     assert.equal(
       redirects['/en/blog/mejores-empresas-certificacion-monedas-billetes/'],
       '/en/blog/best-coin-and-banknote-grading-companies/',
