@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { englishContentSlug, englishRedirects, localizePath, otherLocalePath } from './locale-paths.ts';
+import { englishContentSlug, englishRedirects, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
 
 describe('locale path mapping', () => {
   it('translates collection, glossary, news, and contact slugs', () => {
@@ -286,14 +286,6 @@ describe('locale path mapping', () => {
       '/en/blog/how-to-start-a-banknote-collection/',
     );
     assert.equal(
-      localizePath('/blog/circo-ringling-bros-barnum-bailey/', 'en'),
-      '/en/blog/ringling-bros-barnum-bailey-circus/',
-    );
-    assert.equal(
-      otherLocalePath('/en/blog/ringling-bros-barnum-bailey-circus/', 'en'),
-      '/blog/circo-ringling-bros-barnum-bailey/',
-    );
-    assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
@@ -315,14 +307,15 @@ describe('locale path mapping', () => {
       'collection/world-polymer/Canada',
     );
     assert.equal(englishContentSlug('noticias'), 'news');
+    assert.equal(
+      PATH_PREFIX_PAIRS.some((pair) => pair.es.includes('circo-ringling') || pair.en.includes('ringling-bros')),
+      false,
+    );
   });
 
   it('redirects old English Spanish slugs', () => {
     const redirects = englishRedirects();
-    assert.equal(
-      redirects['/en/blog/circo-ringling-bros-barnum-bailey/'],
-      '/en/blog/ringling-bros-barnum-bailey-circus/',
-    );
+    assert.equal(redirects['/en/blog/circo-ringling-bros-barnum-bailey/'], undefined);
     assert.equal(
       redirects['/en/blog/mejores-empresas-certificacion-monedas-billetes/'],
       '/en/blog/best-coin-and-banknote-grading-companies/',

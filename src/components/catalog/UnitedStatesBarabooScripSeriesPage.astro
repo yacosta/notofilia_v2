@@ -5,16 +5,18 @@ import SeriesHero from './SeriesHero.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
-  RINGLING_BLOG_PATH,
+  BARABOO_JUBILEE_FIGURE,
   USA_MISC_PATH,
   USA_PATH,
   barabooScripDenominations,
+  barabooScripNarrative,
+  barabooScripRelated,
   barabooScripSeriesCopy,
-  barabooScripSeriesIntro,
+  barabooScripSeriesLead,
   barabooScripSeriesPath,
   barabooScripSeriesSources,
 } from '../../data/estados-unidos';
-import { catalogAssetSrc } from '../../lib/images';
+import { editorialUploadSrcset } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -56,8 +58,8 @@ const jsonLd = collectionPageJsonLd({
   description={t.metaDescription}
   locale={locale}
   pathname={pathname}
-  ogImage={catalogAssetSrc(hero.src)}
-  ogImageAlt={t.heroAlt}
+  ogImage={BARABOO_JUBILEE_FIGURE.src}
+  ogImageAlt={t.figureAlt}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -86,11 +88,41 @@ const jsonLd = collectionPageJsonLd({
         ]}
       />
 
-      <div class="w-full text-[17px]/7 text-cream">
-        {barabooScripSeriesIntro.map((paragraph) => (
-          <p class="mb-5 mt-0 last:mb-0">{paragraph[locale]}</p>
-        ))}
-      </div>
+      <p class="mb-10 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
+        {barabooScripSeriesLead[locale]}
+      </p>
+
+      <figure class="mb-16 mt-0">
+        <img
+          src={BARABOO_JUBILEE_FIGURE.src}
+          srcset={editorialUploadSrcset(BARABOO_JUBILEE_FIGURE.src, BARABOO_JUBILEE_FIGURE.width)}
+          sizes="(max-width: 768px) 100vw, 75rem"
+          alt={t.figureAlt}
+          width={BARABOO_JUBILEE_FIGURE.width}
+          height={BARABOO_JUBILEE_FIGURE.height}
+          class="h-auto w-full bg-panel object-contain"
+          decoding="async"
+        />
+        <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{t.figureCaption}</figcaption>
+      </figure>
+
+      {
+        barabooScripNarrative.map((section) => (
+          <section class="mt-16 first:mt-0" aria-labelledby={`${section.id}-heading`}>
+            <h2
+              id={`${section.id}-heading`}
+              class="mb-5 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim"
+            >
+              {t[section.headingKey]}
+            </h2>
+            <div class="w-full text-[17px]/7 text-cream">
+              {section.paragraphs.map((paragraph) => (
+                <p class="mb-5 mt-0 last:mb-0">{paragraph[locale]}</p>
+              ))}
+            </div>
+          </section>
+        ))
+      }
 
       <section class="mt-16" aria-labelledby="baraboo-types-heading">
         <h2 id="baraboo-types-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
@@ -126,13 +158,21 @@ const jsonLd = collectionPageJsonLd({
         <h2 id="baraboo-related-heading" class="mb-4 mt-0 font-display text-[24px] font-normal text-cream">
           {t.relatedTitle}
         </h2>
-        <a
-          class="font-semibold text-cream no-underline hover:text-gold-light"
-          href={localizePath(RINGLING_BLOG_PATH, locale)}
-        >
-          {t.relatedLabel}
-        </a>
-        <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{t.relatedDek}</p>
+        <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+          {
+            barabooScripRelated.map((item) => (
+              <li>
+                <a
+                  class="font-semibold text-cream no-underline hover:text-gold-light"
+                  href={localizePath(item.href, locale)}
+                >
+                  {item.title[locale]}
+                </a>
+                <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{item.dek[locale]}</p>
+              </li>
+            ))
+          }
+        </ul>
       </aside>
 
       <div class="mt-16">
