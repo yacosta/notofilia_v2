@@ -132,6 +132,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     'utf8',
   );
   const blog = readFileSync(new URL('./blog-articles.json', import.meta.url), 'utf8');
+  const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
 
   it('announces Shafer WI100 as a type under Misceláneos without inventing serials', () => {
     assert.match(data, /USA_BARABOO_SCRIP_PATH = '\/coleccion\/estados-unidos\/miscelaneos\/scrip-baraboo-jubileo-1933\/'/);
@@ -156,17 +157,36 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(miscPage, /t\.typesLabel/);
   });
 
-  it('wires thin ES/EN type routes and links the Ringling article both ways', () => {
+  it('wires thin ES/EN catalog type routes with narrative, figure, and CollectionPage JSON-LD', () => {
     assert.match(esRoute, /UnitedStatesBarabooScripSeriesPage/);
     assert.match(esRoute, /locale="es"/);
     assert.match(enRoute, /UnitedStatesBarabooScripSeriesPage/);
     assert.match(enRoute, /locale="en"/);
     assert.match(barabooPage, /barabooScripDenominations/);
+    assert.match(barabooPage, /barabooScripNarrative/);
+    assert.match(barabooPage, /barabooScripSeriesLead/);
     assert.match(barabooPage, /t\.emptyHoldings/);
-    assert.match(barabooPage, /RINGLING_BLOG_PATH/);
+    assert.match(barabooPage, /collectionPageJsonLd/);
+    assert.match(barabooPage, /editorialUploadSrcset/);
+    assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
+    assert.match(barabooPage, /object-contain/);
     assert.match(barabooPage, /id="main-content"/);
-    assert.match(blog, /scrip-baraboo-jubileo-1933/);
-    assert.match(blog, /circo-ringling-bros-barnum-bailey/);
+    assert.match(barabooPage, /USA_MISC_PATH/);
+    assert.doesNotMatch(barabooPage, /RINGLING_BLOG_PATH/);
+    assert.doesNotMatch(barabooPage, /BlogPosting/);
+    assert.doesNotMatch(barabooPage, /\/blog\//);
+    assert.doesNotMatch(data, /RINGLING_BLOG_PATH/);
+    assert.doesNotMatch(data, /el artículo del blog/);
+    assert.doesNotMatch(data, /The blog article/);
+    assert.doesNotMatch(blog, /circo-ringling-bros-barnum-bailey/);
+    assert.doesNotMatch(blog, /scrip-baraboo-jubileo-1933/);
+    assert.match(astroConfig, /\/blog\/circo-ringling-bros-barnum-bailey\/':/);
+    assert.match(astroConfig, /\/coleccion\/estados-unidos\/miscelaneos\/scrip-baraboo-jubileo-1933\//);
+    assert.match(astroConfig, /\/en\/blog\/ringling-bros-barnum-bailey-circus\/':/);
+    assert.match(
+      astroConfig,
+      /\/en\/collection\/united-states\/miscellaneous\/baraboo-golden-jubilee-scrip-1933\//,
+    );
   });
 });
 

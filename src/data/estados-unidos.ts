@@ -33,7 +33,11 @@ export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
 export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
 export const USA_BARABOO_SCRIP_PATH_EN = '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/';
-export const RINGLING_BLOG_PATH = '/blog/circo-ringling-bros-barnum-bailey/';
+export const BARABOO_JUBILEE_FIGURE = {
+  src: '/uploads/baraboo-golden-jubilee-1933.jpg',
+  width: 2128,
+  height: 912,
+} as const;
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -567,17 +571,22 @@ export const barabooScripSeriesCopy = {
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     typesLabel: 'Denominaciones del tipo',
     typesIntro:
-      'Seis vales, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: el artículo y las fuentes lo describen como un juego, no como seis seriales.',
+      'Seis vales, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: esta ficha y las fuentes lo describen como un juego, no como seis seriales.',
     pendingLabel: 'Pendiente de ejemplar',
     holdingsTitle: 'Ejemplares de la colección',
     holdingsIntro:
       'Cada ficha de ejemplar necesita el número de serie impreso o, si el vale está encapsulado, el número de certificado. No se inventan seriales.',
     emptyHoldings:
       'Aún no hay fichas de ejemplar. Hace falta el número de serie o el certificado de cada vale. Las seis denominaciones del tipo Shafer WI100 se anuncian aquí.',
-    relatedTitle: 'Artículo',
-    relatedLabel: 'Ringling Bros. and Barnum & Bailey Circus',
-    relatedDek:
-      'El Golden Jubilee de 1933 en Baraboo y el scrip de 5¢ a 1 dólar: historia y coleccionismo.',
+    winterTitle: 'Baraboo, cuarteles de invierno',
+    scripTitle: 'El scrip de Baraboo',
+    collectingTitle: 'Lo que buscan hoy los coleccionistas',
+    strainTitle: '1933 y lo que siguió',
+    figureAlt:
+      'Postal souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
+    figureCaption:
+      'Mapa souvenir del Golden Jubilee: el tren llega por los patios C. & N.W., cruza Baraboo y monta la carpa en el recinto ferial el 3 de agosto de 1933.',
+    relatedTitle: 'En la colección',
     sourcesTitle: 'Fuentes',
   },
   en: {
@@ -593,33 +602,126 @@ export const barabooScripSeriesCopy = {
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     typesLabel: 'Type denominations',
     typesIntro:
-      'Six notes, Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: the article and the sources describe a set, not six serials.',
+      'Six notes, Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: this record and the sources describe a set, not six serials.',
     pendingLabel: 'Holding pending',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
       'Each piece page needs the printed serial or, if the note is slabbed, the certificate number. Serials are not invented here.',
     emptyHoldings:
       'There are no piece pages yet. Each note needs a serial or a certificate. The six Shafer WI100 denominations are announced here.',
-    relatedTitle: 'Article',
-    relatedLabel: 'Ringling Bros. and Barnum & Bailey Circus',
-    relatedDek:
-      'The 1933 Golden Jubilee in Baraboo and the 5¢ to $1 scrip: history and collecting.',
+    winterTitle: 'Baraboo winter quarters',
+    scripTitle: 'The Baraboo scrip',
+    collectingTitle: 'What collectors look for today',
+    strainTitle: '1933 and after',
+    figureAlt:
+      'Souvenir postcard of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
+    figureCaption:
+      'Golden Jubilee souvenir map: the train arrives at the C. & N.W. yards, crosses Baraboo, and raises the Big Top at the fairgrounds on August 3, 1933.',
+    relatedTitle: 'In the collection',
     sourcesTitle: 'Sources',
   },
 } as const;
 
-export const barabooScripSeriesIntro: LocalizedText[] = [
+export const barabooScripSeriesLead: LocalizedText = {
+  es: 'En 1933 el Ringling Bros. and Barnum & Bailey Circus volvió a Baraboo, Wisconsin, para su 50.º aniversario: el Golden Jubilee. La Cámara de Comercio emitió scrip de 5¢ a 1 dólar —Shafer WI100— que esta ficha documenta como tipo, no como ejemplar.',
+  en: 'In 1933 the Ringling Bros. and Barnum & Bailey Circus returned to Baraboo, Wisconsin, for its 50th anniversary — the Golden Jubilee. The Chamber of Commerce issued scrip from 5¢ to $1 — Shafer WI100 — which this record documents as a type, not as a holding.',
+};
+
+export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 'scripTitle' | 'collectingTitle' | 'strainTitle'; paragraphs: LocalizedText[] }[] = [
   {
-    es: 'En 1933 la Cámara de Comercio de Baraboo, Wisconsin, emitió scrip conmemorativo para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus. No es papel federal: son vales al portador, un poco más grandes que los shinplasters de la Guerra Civil, canjeables en comercio local hasta el 1 de noviembre de 1933. Los catálogos de scrip de la Depresión de Wisconsin los agrupan como Shafer WI100.',
-    en: 'In 1933 the Baraboo, Wisconsin, Chamber of Commerce issued commemorative scrip for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee. This is not federal paper: the notes are bearer tokens, a trifle larger than Civil War shinplasters, redeemable in local trade through 1 November 1933. Wisconsin Depression-scrip catalogs list them as Shafer WI100.',
+    id: 'baraboo-winter',
+    headingKey: 'winterTitle',
+    paragraphs: [
+      {
+        es: 'Baraboo ocupa un lugar especial en la historia del circo: allí nació y allí invernó el Ringling Brothers Circus. Los cinco hermanos fundaron su compañía itinerante en 1884 —el scrip del jubileo imprime el arco 1883–1933— y mantuvieron los cuarteles de invierno en el pueblo hasta 1918.',
+        en: 'Baraboo holds a special place in circus history as the original birthplace and winter quarters of the Ringling Brothers Circus. The five brothers founded their touring company there in 1884 — the jubilee scrip prints the span 1883–1933 — and wintered the operation in the town until 1918.',
+      },
+      {
+        es: 'La celebración del Golden Jubilee en Baraboo fue el 3 de agosto de 1933. El programa de la temporada de ese año sitúa el tren en Baraboo ese día, entre Winona y Rockford, antes de la larga parada en Chicago. Pese a la tensión financiera de la Gran Depresión —que recortó de forma severa la asistencia y los ingresos— la operación logística del circo llegó por ferrocarril.',
+        en: 'The Golden Jubilee celebration in Baraboo took place on 3 August 1933. That season’s route card places the train in Baraboo that day, between Winona and Rockford, before the long Chicago stand. Despite the massive financial strain of the Great Depression — which severely cut attendance and revenues — the logistical operation still rolled into town on the rails.',
+      },
+    ],
   },
   {
-    es: 'El juego tiene seis denominaciones: 5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar. Las cinco inferiores retratan a cada hermano Ringling por separado; el dólar reúne al grupo. E. B. Trimpey, del estudio Trimpey de Baraboo, diseñó las planchas a partir de fotografías originales. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. No se conserva cifra de tirada; esta ficha no inventa una.',
-    en: 'The set has six denominations: 5¢, 10¢, 15¢, 25¢, 50¢, and $1. The five lower notes show each Ringling brother singly; the dollar shows the group. E. B. Trimpey of Baraboo’s Trimpey studio designed the plates from original photographs. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. No printage figure survives; this record does not invent one.',
+    id: 'baraboo-scrip',
+    headingKey: 'scripTitle',
+    paragraphs: [
+      {
+        es: 'Para conmemorar el hito, el pueblo emitió un Baraboo Scrip especial. No era papel federal: eran vales ornamentados, impresos con calidad de moneda y un poco más grandes que los shinplasters de la Guerra Civil, canjeables en comercio a través de la Cámara de Comercio local. El Baraboo News-Republic del 28 de junio de 1933 anunció la emisión; los vales se usaron como moneda de cambio y como souvenir, y eran redimibles hasta el 1 de noviembre de 1933.',
+        en: 'To commemorate the milestone, the town issued special Baraboo Scrip. These were not federal notes: they were ornate souvenir paper tokens, printed on currency-quality paper a trifle larger than Civil War shinplasters, redeemable in trade through the local Chamber of Commerce. The Baraboo News-Republic of 28 June 1933 announced the issue; the notes circulated as change and as souvenirs, and were redeemable through 1 November 1933.',
+      },
+      {
+        es: 'Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢— retratan a cada uno de los cinco hermanos Ringling por separado. El 1 dólar reúne al grupo. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. La idea y el diseño fueron de E. B. Trimpey, del estudio Trimpey de Baraboo, a partir de fotografías originales de los hermanos. En el papel figuran las firmas impresas del presidente y del tesorero de la Cámara.',
+        en: 'The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ — feature each of the five Ringling brothers singly. The $1 shows the group. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. E. B. Trimpey of Baraboo’s Trimpey studio designed the notes from original photographs of the brothers. Printed signatures of the Chamber’s president and treasurer appear on the paper.',
+      },
+      {
+        es: 'Los comerciantes lo entregaban como cambio y también lo vendían a valor facial como recuerdo. Un reportaje del Wisconsin State Journal lo sitúa en circulación hasta Madison. La venta cubrió casi todo el costo de la celebración del aniversario para la Cámara de Comercio. No se conserva cifra de tirada; esta ficha no inventa una.',
+        en: 'Merchants handed the scrip out in change and also sold it at face value as a souvenir. A Wisconsin State Journal account placed it in commerce as far as Madison. Sales covered almost all of the Chamber’s cost for the anniversary celebration. No record of the number printed survives; this record does not invent one.',
+      },
+    ],
   },
   {
-    es: 'Esta página documenta el tipo, no un ejemplar. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. Mientras no se suministre, no se publican fichas de pieza. El artículo del blog cuenta el regreso del circo el 3 de agosto de 1933 y el contexto de la Depresión.',
-    en: 'This page documents the type, not a holding. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. Until one is supplied, piece pages stay unpublished. The blog article tells the circus’s return on 3 August 1933 and the Depression setting.',
+    id: 'baraboo-collecting',
+    headingKey: 'collectingTitle',
+    paragraphs: [
+      {
+        es: 'Estos vales del jubileo viven en la frontera entre la notafilia y la exonumia: no son curso legal federal, pero sí vales al portador de una cámara local, emitidos en el mismo año en que el feriado bancario de marzo de 1933 dejó a muchos pueblos imprimiendo scrip de emergencia. En catálogos de scrip de la Depresión de Wisconsin se los agrupa como Shafer WI100. Un juego completo de las seis piezas —cinco fraccionarios más el dólar— es la forma habitual de reunirlos.',
+        en: 'These jubilee tokens sit on the border between notaphily and exonumia: they are not federal legal tender, but they are local Chamber bearer notes, issued in the same year the March 1933 bank holiday left many towns printing emergency scrip. Wisconsin Depression-scrip catalogs list them as Shafer WI100. A complete set of the six pieces — five fractionals plus the dollar — is the usual way to collect them.',
+      },
+      {
+        es: 'Los ejemplares sin circular —sin pliegues ni pinchazos— son los más buscados por notafilistas e historiadores del circo. En Notofilia no publicamos precios de mercado. Esta ficha documenta el tipo bajo Misceláneos; pertenece a esa vitrina, no a las series federales. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. Mientras no se suministre, no se publican fichas de pieza.',
+        en: 'Uncirculated examples — no folds, no pinholes — are the ones notaphilists and circus historians hunt. Notofilia does not publish market prices. This record documents the type under Miscellaneous; the notes belong in that case, not in the federal series. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. Until one is supplied, piece pages stay unpublished.',
+      },
+    ],
+  },
+  {
+    id: 'baraboo-strain',
+    headingKey: 'strainTitle',
+    paragraphs: [
+      {
+        es: 'La temporada de 1933 fue de las más duras en la historia del circo. La Depresión recortó taquilla y márgenes, y el control operativo ya no estaba del todo en manos de la familia: un préstamo de 1929, tomado para comprar otros shows, había quedado en mora hacia 1932. Un acreedor importante, Allied Owners, entró en quiebra en 1933. La familia no recuperó el control pleno hasta 1937. El show se reorganizó y sobrevivió a la posguerra.',
+        en: 'The 1933 season was one of the hardest in the circus’s history. The Depression cut the gate and the margin, and operational control was already slipping from the family: a 1929 loan, taken to buy other shows, had gone into default by 1932. A major creditor, Allied Owners, entered bankruptcy in 1933. The family did not regain full control until 1937. The show was reorganized and survived into the postwar era.',
+      },
+      {
+        es: 'Baraboo, entretanto, conservó el solar de los cuarteles de invierno. Hoy Circus World ocupa esos terrenos: el mismo pueblo que vio nacer el circo en los años 1880 y que, en 1933, pagó su Golden Jubilee con papel de 5¢.',
+        en: 'Baraboo, meanwhile, kept the winter-quarters ground. Circus World occupies that site today: the same town that watched the circus begin in the 1880s and that, in 1933, paid for its Golden Jubilee with 5-cent paper.',
+      },
+    ],
+  },
+];
+
+export const barabooScripRelated: { href: string; title: LocalizedText; dek: LocalizedText }[] = [
+  {
+    href: USA_MISC_PATH,
+    title: { es: 'Estados Unidos · Misceláneos', en: 'United States · Miscellaneous' },
+    dek: {
+      es: 'La vitrina que anuncia este tipo junto al 1 dólar de Dallas y la nota de prueba Giori.',
+      en: 'The case that announces this type beside the Dallas $1 and the Giori test note.',
+    },
+  },
+  {
+    href: '/glosario/exonumia/',
+    title: { es: 'Glosario: exonumia', en: 'Glossary: exonumia' },
+    dek: {
+      es: 'Papel y metal que no son curso legal federal, pero sí se coleccionan.',
+      en: 'Paper and metal that are not federal legal tender, but are still collected.',
+    },
+  },
+  {
+    href: '/glosario/vale-al-portador/',
+    title: { es: 'Glosario: vale al portador', en: 'Glossary: bearer note' },
+    dek: {
+      es: 'El scrip de la Cámara es un vale al portador, no un Federal Reserve Note.',
+      en: 'The Chamber scrip is a bearer note, not a Federal Reserve Note.',
+    },
+  },
+  {
+    href: '/glosario/notafilia/',
+    title: { es: 'Glosario: notafilia', en: 'Glossary: notaphily' },
+    dek: {
+      es: 'El estudio y coleccionismo de papel moneda, incluidos los vales locales.',
+      en: 'The study and collecting of paper money, including local tokens.',
+    },
   },
 ];
 
@@ -629,8 +731,17 @@ export const barabooScripSeriesSources: CatalogSource[] = [
     es: 'Wisconsin Depression Scrip — Baraboo',
     en: 'Wisconsin Depression Scrip — Baraboo',
     note: {
-      es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre.',
-      en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November.',
+      es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. El programa de ruta de 1933 sitúa el tren en Baraboo el 3 de agosto.',
+      en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. The 1933 route program places the train in Baraboo on 3 August.',
+    },
+  },
+  {
+    href: 'https://time.com/archive/6751941/business-finance-fallen-ringling/',
+    es: 'TIME — Fallen Ringling (1932)',
+    en: 'TIME — Fallen Ringling (1932)',
+    note: {
+      es: 'El préstamo de 1929 y la pérdida de control operativo. The New York Times, 11 de diciembre de 1937, registra que la familia recupera el control pleno.',
+      en: 'The 1929 loan and the loss of operational control. The New York Times, 11 December 1937, records that the family recovered full control.',
     },
   },
 ];

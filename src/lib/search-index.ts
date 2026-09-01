@@ -345,6 +345,8 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: USA_BARABOO_SCRIP_PATH,
       title: { es: barabooScripSeriesCopy.es.title, en: barabooScripSeriesCopy.en.title },
       dek: { es: barabooScripSeriesCopy.es.metaDescription, en: barabooScripSeriesCopy.en.metaDescription },
+      extra:
+        'Ringling Bros Barnum Bailey Golden Jubilee Baraboo 1933 Shafer WI100 Trimpey Chamber scrip Allied Owners',
     },
   ]) {
     docs.push({
@@ -358,7 +360,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       serialNormalized: '',
       cert: '',
       flags: ['series'],
-      searchText: `${catalog.title.es} ${catalog.title.en} ${catalog.dek[locale]}`,
+      searchText: `${catalog.title.es} ${catalog.title.en} ${catalog.dek[locale]}${'extra' in catalog ? ` ${catalog.extra}` : ''}`,
     });
   }
 

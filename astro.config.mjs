@@ -82,6 +82,14 @@ export default defineConfig({
       '/en/collection/united-states/rency/trump-never-surrender/',
     '/en/coleccion/estados-unidos/renci': '/en/collection/united-states/rency/',
     '/en/coleccion/estados-unidos/rency': '/en/collection/united-states/rency/',
+    '/blog/circo-ringling-bros-barnum-bailey/':
+      '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
+    '/blog/ringling-bros-barnum-bailey-circus/':
+      '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
+    '/en/blog/circo-ringling-bros-barnum-bailey/':
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    '/en/blog/ringling-bros-barnum-bailey-circus/':
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     ...generated,
   },
   vite: {
