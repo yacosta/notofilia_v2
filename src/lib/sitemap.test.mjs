@@ -77,6 +77,16 @@ describe('sitemap coverage for the grading guide', () => {
   });
 });
 
+describe('sitemap coverage for Baraboo scrip type page', () => {
+  it('maps the miscellaneous Baraboo pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/', 'en'),
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage stays derived from catalog data', () => {
   it('does not hard-code individual catalog slugs in extra', () => {
     assert.match(sitemapSource, /dedicatedCatalogPaths/);

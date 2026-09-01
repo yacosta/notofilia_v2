@@ -115,6 +115,61 @@ describe('US Rency Life Is Beautiful / LIFE SPRAY holding', () => {
   });
 });
 
+describe('US miscellaneous Baraboo 1933 type page', () => {
+  const barabooPage = readFileSync(
+    new URL('../components/catalog/UnitedStatesBarabooScripSeriesPage.astro', import.meta.url),
+    'utf8',
+  );
+  const esRoute = readFileSync(
+    new URL('../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/index.astro', import.meta.url),
+    'utf8',
+  );
+  const enRoute = readFileSync(
+    new URL(
+      '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/index.astro',
+      import.meta.url,
+    ),
+    'utf8',
+  );
+  const blog = readFileSync(new URL('./blog-articles.json', import.meta.url), 'utf8');
+
+  it('announces Shafer WI100 as a type under Misceláneos without inventing serials', () => {
+    assert.match(data, /USA_BARABOO_SCRIP_PATH = '\/coleccion\/estados-unidos\/miscelaneos\/scrip-baraboo-jubileo-1933\/'/);
+    assert.match(
+      data,
+      /USA_BARABOO_SCRIP_PATH_EN = '\/collection\/united-states\/miscellaneous\/baraboo-golden-jubilee-scrip-1933\/'/,
+    );
+    assert.match(data, /Shafer WI100/);
+    assert.match(data, /E\. B\. Trimpey/);
+    assert.match(data, /1 de noviembre de 1933/);
+    assert.match(data, /1 November 1933/);
+    assert.match(data, /barabooScripDenominations/);
+    assert.match(data, /Aún no hay fichas de ejemplar/);
+    assert.match(data, /There are no piece pages yet/);
+    assert.match(data, /No se inventan seriales/);
+    assert.match(data, /Serials are not invented here/);
+    assert.doesNotMatch(data, /id: 'scrip-baraboo/);
+    assert.match(seriesPage, /viewMiscCase/);
+    assert.match(seriesPage, /USA_MISC_PATH/);
+    assert.match(miscPage, /barabooScripSeriesPath/);
+    assert.match(miscPage, /t\.viewBarabooCase/);
+    assert.match(miscPage, /t\.typesLabel/);
+  });
+
+  it('wires thin ES/EN type routes and links the Ringling article both ways', () => {
+    assert.match(esRoute, /UnitedStatesBarabooScripSeriesPage/);
+    assert.match(esRoute, /locale="es"/);
+    assert.match(enRoute, /UnitedStatesBarabooScripSeriesPage/);
+    assert.match(enRoute, /locale="en"/);
+    assert.match(barabooPage, /barabooScripDenominations/);
+    assert.match(barabooPage, /t\.emptyHoldings/);
+    assert.match(barabooPage, /RINGLING_BLOG_PATH/);
+    assert.match(barabooPage, /id="main-content"/);
+    assert.match(blog, /scrip-baraboo-jubileo-1933/);
+    assert.match(blog, /circo-ringling-bros-barnum-bailey/);
+  });
+});
+
 describe('US Rency Trump / Never Surrender holding', () => {
   it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
     assert.match(data, /id: 'renci-trump-never-surrender'/);

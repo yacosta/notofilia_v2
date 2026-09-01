@@ -7,6 +7,7 @@ import CatalogProseParagraph from './CatalogProseParagraph.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
+  barabooScripSeriesPath,
   miscSeriesCopy,
   miscSeriesIntro,
   miscSeriesPath,
@@ -96,6 +97,22 @@ const jsonLd = collectionPageJsonLd({
           <CatalogProseParagraph locale={locale} parts={paragraph} class="mb-5 mt-0 last:mb-0" />
         ))}
       </div>
+
+      <section class="mt-16" aria-labelledby="misc-types-heading">
+        <h2 id="misc-types-heading" class="mb-8 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.typesLabel}
+        </h2>
+        <a
+          href={barabooScripSeriesPath(locale)}
+          class="group flex min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-4 text-inherit no-underline hover:border-gold-light"
+        >
+          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+            {t.barabooCardTitle}
+          </h3>
+          <p class="mb-3 mt-0 font-sans text-[14px]/6 text-muted">{t.barabooCardDek}</p>
+          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewBarabooCase} →</span>
+        </a>
+      </section>
 
       {
         notes.length > 0 ? (

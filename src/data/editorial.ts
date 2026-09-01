@@ -1,5 +1,6 @@
 import blogArticlesJson from './blog-articles.json';
 import newsArticlesJson from './news-articles.json';
+import { barabooScripSeriesCopy, miscSeriesCopy } from './estados-unidos';
 import { localizePath, type Locale } from '../lib/locale-paths';
 
 export type LocalizedText = { es: string; en: string };
@@ -185,8 +186,23 @@ export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArt
   return (kind === 'blog' ? blogArticles : newsArticles).slice(0, limit);
 }
 
+const catalogRelatedTitles: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos/miscelaneos/': {
+    es: `${miscSeriesCopy.es.parentLink} · ${miscSeriesCopy.es.breadcrumbCurrent}`,
+    en: `${miscSeriesCopy.en.parentLink} · ${miscSeriesCopy.en.breadcrumbCurrent}`,
+  },
+  '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/': {
+    es: barabooScripSeriesCopy.es.breadcrumbCurrent,
+    en: barabooScripSeriesCopy.en.breadcrumbCurrent,
+  },
+};
+
 export function resolveRelated(related: RelatedLink[], locale: Locale): RelatedLink[] {
   return related.map((item) => {
+    const catalogTitle = catalogRelatedTitles[item.href];
+    if (catalogTitle) {
+      return { href: item.href, title: catalogTitle[locale], dek: item.dek };
+    }
     const slug = item.href.replace(/^\/+|\/+$/g, '').split('/').pop() ?? '';
     const target = findNewsArticle(slug) ?? findBlogArticle(slug);
     if (!target) return item;
