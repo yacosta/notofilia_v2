@@ -158,6 +158,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   },
   { es: '/coleccion/filipinas/', en: '/collection/philippines/' },
   {
+    es: '/coleccion/puerto-rico/junta-central-1-peso-1869/',
+    en: '/collection/puerto-rico/central-board-1-peso-1869/',
+  },
+  {
     es: '/coleccion/puerto-rico/junta-central-cuba-1869/',
     en: '/collection/puerto-rico/central-board-receipt-1869/',
   },
@@ -378,6 +382,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',
     '/en/coleccion/puerto-rico/junta-central-cuba-1869/',
+    '/en/coleccion/puerto-rico/junta-central-1-peso-1869/',
     '/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     '/en/coleccion/puerto-rico/',
     '/en/coleccion/',
