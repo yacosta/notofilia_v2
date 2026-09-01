@@ -168,7 +168,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(barabooPage, /t\.emptyHoldings/);
     assert.match(barabooPage, /collectionPageJsonLd/);
     assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /object-contain/);
+    assert.match(barabooPage, /fit="contain"/);
     assert.match(barabooPage, /id="main-content"/);
     assert.match(barabooPage, /USA_MISC_PATH/);
     assert.doesNotMatch(barabooPage, /<figure/);
