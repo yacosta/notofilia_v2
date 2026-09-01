@@ -235,6 +235,24 @@ describe('United States submenu', () => {
     assert.match(icons, /icon === 'rency'/);
     assert.match(icons, /icon === 'miscellaneous'/);
   });
+
+  it('places the Baraboo 1933 scrip type immediately after Misceláneos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const data = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
+    assert.match(source, /USA_BARABOO_SCRIP_PATH/);
+    assert.match(source, /barabooScripSeriesCopy/);
+    assert.match(usa, /id: 'scrip-baraboo'/);
+    assert.match(usa, /es: barabooScripSeriesCopy\.es\.title/);
+    assert.match(usa, /en: barabooScripSeriesCopy\.en\.title/);
+    assert.match(usa, /href: USA_BARABOO_SCRIP_PATH/);
+    assert.match(usa, /id: 'miscelaneos'[\s\S]*id: 'scrip-baraboo'/);
+    assert.doesNotMatch(usa, /id: 'scrip-baraboo'[\s\S]*id: 'miscelaneos'/);
+    const miscBlock = usa.split("id: 'miscelaneos'")[1]?.split("id: 'scrip-baraboo'")[0] ?? '';
+    assert.doesNotMatch(miscBlock, /children:/);
+    assert.match(data, /title: 'Scrip de Baraboo · Golden Jubilee 1933'/);
+    assert.match(data, /title: 'Baraboo scrip · Golden Jubilee 1933'/);
+  });
 });
 
 describe('Recursos submenu', () => {
