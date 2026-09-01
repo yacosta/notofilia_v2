@@ -30,8 +30,7 @@ Used by country/series indexes (`*SeriesPage`, `*CoinagePage`, `LazarettosPage`)
 - `section` `min-h-[86vh] md:min-h-[94vh]`, `aria-labelledby` on the `h1`.
 - Full-bleed photo with `object-cover` and an explicit `object-position`.
 - Image **must** use `heroSrcset` / `cfImage` plus `sizes="100vw"`. Raw `/images/…` is a FAIL.
-- **`/uploads/` exception (still this pattern):** preview Workers 404 `/cdn-cgi/image/` (error 1042). A type-page hero whose master lives under `/uploads/` uses `editorialUploadSrcset` (the `-card` sibling plus the master) instead of `heroSrcset` / `cfImage`. That is not a fifth hero.
-- **Wide panorama type-page:** the Baraboo 1933 Golden Jubilee souvenir map (2128×912) may use `object-contain` so printed labels stay visible. Do not crop that asset to 16:9 and do not substitute the Highsmith circus-wagon photo.
+- **`/uploads/` exception (still this pattern):** preview Workers 404 `/cdn-cgi/image/` (error 1042). A type-page hero whose master lives under `/uploads/` uses `editorialUploadSrcset` (the `-card` sibling plus the master) instead of `heroSrcset` / `cfImage`. That is not a fifth hero. The Baraboo 1933 Golden Jubilee souvenir map uses this srcset and the same `object-cover` + explicit `object-position` treatment as other series heroes. Do not letterbox it with `object-contain`, and do not substitute the Highsmith circus-wagon photo.
 - `fetchpriority="high"`, real `width`/`height`, meaningful `alt` from series copy.
 - Bottom-weighted radial + linear scrim. Type sits in the lower third (`justify-end`, `pt-[min(68vh,38rem)]`).
 - Kicker: “Colección virtual” / “Virtual collection” from i18n (not a component literal).

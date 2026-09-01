@@ -11,8 +11,6 @@ interface Props {
   title: string;
   subtitle?: string;
   imageClass?: string;
-  /** Wide `/uploads/` panoramas may contain so printed labels stay visible. */
-  fit?: 'cover' | 'contain';
 }
 
 const {
@@ -25,7 +23,6 @@ const {
   title,
   subtitle,
   imageClass = 'object-[50%_8%]',
-  fit = 'cover',
 } = Astro.props;
 
 const isUpload = src.includes('/uploads/');
@@ -37,8 +34,7 @@ const imgSrcset = isUpload ? editorialUploadSrcset(src, width) : heroSrcset(hero
 <section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby={headingId}>
   <img
     class:list={[
-      'absolute inset-0 h-full w-full [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
-      fit === 'contain' ? 'object-contain' : 'object-cover',
+      'absolute inset-0 h-full w-full object-cover [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
       imageClass,
     ]}
     src={imgSrc}
