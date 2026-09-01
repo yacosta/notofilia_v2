@@ -40,11 +40,11 @@ export function cardImageSrc(src: string): string {
  * Preview Workers return Cloudflare error 1042 for `/cdn-cgi/image/…`; a 404
  * srcset hides the working `src`. Catalog heroes still use `imageSrcset`.
  */
-export function editorialUploadSrcset(src: string): string {
+export function editorialUploadSrcset(src: string, masterWidth = 1200): string {
   if (!src.includes('/uploads/')) return imageSrcset(src);
   const card = src.includes('-card.') ? src : src.replace(/(\.[a-z0-9]+)$/i, '-card$1');
   if (card === src) return `${src} 800w`;
-  return `${card} 800w, ${src} 1200w`;
+  return `${card} 800w, ${src} ${masterWidth}w`;
 }
 
 export function heroSrcset(src: string): string {

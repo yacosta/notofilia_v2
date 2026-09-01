@@ -173,7 +173,7 @@ const jsonLd = {
       <figure class="mb-10 mt-0">
         <img
           src={wide ? article.image : cardImageSrc(article.image)}
-          srcset={editorialUploadSrcset(article.image)}
+          srcset={editorialUploadSrcset(article.image, imageWidth)}
           sizes={wide ? '(max-width: 768px) 100vw, 75rem' : '(max-width: 768px) 100vw, 46rem'}
           alt={article.imageAlt[locale]}
           width={imageWidth}
