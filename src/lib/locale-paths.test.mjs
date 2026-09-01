@@ -196,6 +196,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/', 'en'),
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/5-pesos-rio-hacha-1883/', 'en'),
       '/en/collection/colombia/5-pesos-rio-hacha-1883/',
     );
@@ -406,6 +410,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/'],
       '/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/'],
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/'],

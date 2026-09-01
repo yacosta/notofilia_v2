@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import {
+  RINGLING_BLOG_PATH,
+  USA_MISC_PATH,
+  USA_PATH,
+  barabooScripDenominations,
+  barabooScripSeriesCopy,
+  barabooScripSeriesIntro,
+  barabooScripSeriesPath,
+  barabooScripSeriesSources,
+} from '../../data/estados-unidos';
+import { catalogAssetSrc } from '../../lib/images';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = barabooScripSeriesCopy[locale];
+const pathname = barabooScripSeriesPath(locale);
+const hero =
+  locale === 'en'
+    ? {
+        src: '/images/catalog/united-states.jpg',
+        width: 2128,
+        height: 912,
+      }
+    : {
+        src: '/images/catalog/estados-unidos.jpg',
+        width: 2128,
+        height: 912,
+      };
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: USA_PATH },
+    { name: t.miscLink, path: USA_MISC_PATH },
+    { name: t.breadcrumbCurrent, path: pathname },
+  ],
+});
+---
+
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={catalogAssetSrc(hero.src)}
+  ogImageAlt={t.heroAlt}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_28%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(USA_PATH, locale), label: t.parentLink },
+          { href: localizePath(USA_MISC_PATH, locale), label: t.miscLink },
+          { label: t.breadcrumbCurrent },
+        ]}
+      />
+
+      <div class="w-full text-[17px]/7 text-cream">
+        {barabooScripSeriesIntro.map((paragraph) => (
+          <p class="mb-5 mt-0 last:mb-0">{paragraph[locale]}</p>
+        ))}
+      </div>
+
+      <section class="mt-16" aria-labelledby="baraboo-types-heading">
+        <h2 id="baraboo-types-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.typesLabel}
+        </h2>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.typesIntro}</p>
+        <ol class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2" aria-label={t.typesLabel}>
+          {
+            barabooScripDenominations.map((denom) => (
+              <li class="min-w-0 rounded-[6px] border border-dashed border-line-strong bg-panel p-4">
+                <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim">
+                  {denom.face[locale]}
+                </h3>
+                <p class="mb-3 mt-0 font-sans text-[14px]/6 text-muted">{denom.subject[locale]}</p>
+                <p class="mb-0 mt-0 font-sans text-[13px] text-gold-light">{t.pendingLabel}</p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section class="mt-16" aria-labelledby="baraboo-holdings-heading">
+        <h2 id="baraboo-holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <div class="mt-8 rounded-[6px] border border-dashed border-line-strong bg-panel px-6 py-10">
+          <p class="m-0 text-[17px]/7 text-muted">{t.emptyHoldings}</p>
+        </div>
+      </section>
+
+      <aside class="mt-16 rounded-[4px] border border-line px-6 py-6" aria-labelledby="baraboo-related-heading">
+        <h2 id="baraboo-related-heading" class="mb-4 mt-0 font-display text-[24px] font-normal text-cream">
+          {t.relatedTitle}
+        </h2>
+        <a
+          class="font-semibold text-cream no-underline hover:text-gold-light"
+          href={localizePath(RINGLING_BLOG_PATH, locale)}
+        >
+          {t.relatedLabel}
+        </a>
+        <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{t.relatedDek}</p>
+      </aside>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={barabooScripSeriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={localizePath(USA_MISC_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {t.miscLink}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

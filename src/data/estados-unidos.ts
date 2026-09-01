@@ -17,8 +17,8 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. Further note pages will be published here as they are photographed.',
+      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo— y la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. El scrip del Golden Jubilee de Baraboo, 1933 —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las fichas de ejemplar esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — and the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, already have note pages. The 1933 Baraboo Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; piece pages wait for each note’s serial or certificate. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -31,6 +31,9 @@ export const USA_MISC_PATH = '/coleccion/estados-unidos/miscelaneos/';
 export const USA_MISC_PATH_EN = '/collection/united-states/miscellaneous/';
 export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
+export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
+export const USA_BARABOO_SCRIP_PATH_EN = '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/';
+export const RINGLING_BLOG_PATH = '/blog/circo-ringling-bros-barnum-bailey/';
 
 export type UnitedStatesChapterId =
   | 'us-colonial'
@@ -280,6 +283,7 @@ export const seriesCopy = {
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
+    viewMiscCase: 'Abrir la vitrina de Misceláneos',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
@@ -300,6 +304,7 @@ export const seriesCopy = {
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
+    viewMiscCase: 'Open the Miscellaneous case',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
@@ -318,12 +323,16 @@ export function rencySeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_RENCY_PATH, locale);
 }
 
+export function barabooScripSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_BARABOO_SCRIP_PATH, locale);
+}
+
 export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y más adelante scrip y emisiones promocionales.',
-        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and later scrip and promotional issues.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
+        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and the 1933 Baraboo Golden Jubilee commemorative scrip.',
       },
     },
   ],
@@ -342,8 +351,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. Las demás piezas se publicarán a medida que se fotografíen.',
-        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. Further pieces will be published as they are photographed.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— se anuncia como tipo; no hay fichas de ejemplar porque no se ha suministrado ningún serial ni certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — is announced as a type; there are no piece pages because no serial or certificate has been supplied. Further pieces will be published as they are photographed.',
       },
     },
   ],
@@ -386,11 +395,16 @@ export const miscSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
     metaDescription:
-      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C, y la nota de prueba Giori del Lincoln Memorial, hacia los años 1970.',
+      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C; la nota de prueba Giori del Lincoln Memorial, hacia los años 1970; y el scrip del Golden Jubilee de Baraboo, 1933 (Shafer WI100).',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Fuera de las series federales',
     breadcrumbCurrent: 'Misceláneos',
     parentLink: 'Estados Unidos',
+    viewBarabooCase: 'Abrir el scrip de Baraboo 1933',
+    typesLabel: 'Tipos anunciados',
+    barabooCardTitle: 'Scrip de Baraboo · Golden Jubilee 1933',
+    barabooCardDek:
+      'Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar. Tipo anunciado; las fichas de ejemplar esperan un serial o un certificado.',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'es')),
@@ -403,11 +417,16 @@ export const miscSeriesCopy = {
   en: {
     metaTitle: 'United States · Miscellaneous | Notofilia',
     metaDescription:
-      'United States miscellaneous case: the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, and the Giori Lincoln Memorial test note, ca. 1970s.',
+      'United States miscellaneous case: the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C; the Giori Lincoln Memorial test note, ca. 1970s; and the 1933 Baraboo Golden Jubilee scrip (Shafer WI100).',
     kicker: 'United States · Miscellaneous',
     title: 'Outside the federal series',
     breadcrumbCurrent: 'Miscellaneous',
     parentLink: 'United States',
+    viewBarabooCase: 'Open the 1933 Baraboo scrip',
+    typesLabel: 'Announced types',
+    barabooCardTitle: 'Baraboo scrip · Golden Jubilee 1933',
+    barabooCardDek:
+      'Chamber of Commerce, Shafer WI100, 5¢ to $1. Announced type; piece pages wait for a serial or certificate.',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'en')),
@@ -463,6 +482,155 @@ export const miscSeriesSources: CatalogSource[] = [
     note: {
       es: 'Gualtiero Giori; pruebas de Ginebra (Nueva York) hacia los años 1970; planchas «nonsense» del BEP; la posesión privada se legalizó más tarde.',
       en: 'Gualtiero Giori; Geneva, New York trials in the 1970s; BEP nonsense plates; private ownership later made legal.',
+    },
+  },
+  {
+    href: 'https://wisconsinscrip.com/baraboo/',
+    es: 'Wisconsin Depression Scrip — Baraboo',
+    en: 'Wisconsin Depression Scrip — Baraboo',
+    note: {
+      es: 'Cámara de Comercio, 1933; denominaciones 5¢–1 dólar; Trimpey; redención hasta el 1 de noviembre; Shafer WI100.',
+      en: 'Chamber of Commerce, 1933; 5¢–$1 denominations; Trimpey; redeemable through 1 November; Shafer WI100.',
+    },
+  },
+];
+
+export type BarabooScripDenomination = {
+  id: string;
+  face: LocalizedText;
+  subject: LocalizedText;
+};
+
+/** Type rows only — no serials. Do not treat these as holdings. */
+export const barabooScripDenominations: BarabooScripDenomination[] = [
+  {
+    id: '5c',
+    face: { es: '5 centavos', en: '5¢' },
+    subject: {
+      es: 'Uno de los cinco hermanos Ringling',
+      en: 'One of the five Ringling brothers',
+    },
+  },
+  {
+    id: '10c',
+    face: { es: '10 centavos', en: '10¢' },
+    subject: {
+      es: 'Uno de los cinco hermanos Ringling',
+      en: 'One of the five Ringling brothers',
+    },
+  },
+  {
+    id: '15c',
+    face: { es: '15 centavos', en: '15¢' },
+    subject: {
+      es: 'Uno de los cinco hermanos Ringling',
+      en: 'One of the five Ringling brothers',
+    },
+  },
+  {
+    id: '25c',
+    face: { es: '25 centavos', en: '25¢' },
+    subject: {
+      es: 'Uno de los cinco hermanos Ringling',
+      en: 'One of the five Ringling brothers',
+    },
+  },
+  {
+    id: '50c',
+    face: { es: '50 centavos', en: '50¢' },
+    subject: {
+      es: 'Uno de los cinco hermanos Ringling',
+      en: 'One of the five Ringling brothers',
+    },
+  },
+  {
+    id: '1d',
+    face: { es: '1 dólar', en: '$1' },
+    subject: {
+      es: 'Los cinco hermanos Ringling',
+      en: 'The five Ringling brothers',
+    },
+  },
+];
+
+export const barabooScripSeriesCopy = {
+  es: {
+    metaTitle: 'Estados Unidos · Misceláneos · Scrip de Baraboo 1933 | Notofilia',
+    metaDescription:
+      'Scrip del Golden Jubilee de Baraboo, 1933: Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar, diseño de E. B. Trimpey. Tipo anunciado; aún no hay fichas de ejemplar.',
+    kicker: 'Estados Unidos · Misceláneos',
+    title: 'Scrip de Baraboo · Golden Jubilee 1933',
+    breadcrumbCurrent: 'Scrip de Baraboo 1933',
+    parentLink: 'Estados Unidos',
+    miscLink: 'Misceláneos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    typesLabel: 'Denominaciones del tipo',
+    typesIntro:
+      'Seis vales, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. No se asigna aquí qué hermano va en cada fraccionario: el artículo y las fuentes lo describen como un juego, no como seis seriales.',
+    pendingLabel: 'Pendiente de ejemplar',
+    holdingsTitle: 'Ejemplares de la colección',
+    holdingsIntro:
+      'Cada ficha de ejemplar necesita el número de serie impreso o, si el vale está encapsulado, el número de certificado. No se inventan seriales.',
+    emptyHoldings:
+      'Aún no hay fichas de ejemplar. Hace falta el número de serie o el certificado de cada vale. Las seis denominaciones del tipo Shafer WI100 se anuncian aquí.',
+    relatedTitle: 'Artículo',
+    relatedLabel: 'Ringling Bros. and Barnum & Bailey Circus',
+    relatedDek:
+      'El Golden Jubilee de 1933 en Baraboo y el scrip de 5¢ a 1 dólar: historia y coleccionismo.',
+    sourcesTitle: 'Fuentes',
+  },
+  en: {
+    metaTitle: 'United States · Miscellaneous · Baraboo scrip 1933 | Notofilia',
+    metaDescription:
+      'Baraboo Golden Jubilee scrip, 1933: Chamber of Commerce, Shafer WI100, 5¢ to $1, designed by E. B. Trimpey. Announced type; no piece pages yet.',
+    kicker: 'United States · Miscellaneous',
+    title: 'Baraboo scrip · Golden Jubilee 1933',
+    breadcrumbCurrent: 'Baraboo scrip 1933',
+    parentLink: 'United States',
+    miscLink: 'Miscellaneous',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    typesLabel: 'Type denominations',
+    typesIntro:
+      'Six notes, Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. This page does not assign a brother to each fractional: the article and the sources describe a set, not six serials.',
+    pendingLabel: 'Holding pending',
+    holdingsTitle: 'Notes in the collection',
+    holdingsIntro:
+      'Each piece page needs the printed serial or, if the note is slabbed, the certificate number. Serials are not invented here.',
+    emptyHoldings:
+      'There are no piece pages yet. Each note needs a serial or a certificate. The six Shafer WI100 denominations are announced here.',
+    relatedTitle: 'Article',
+    relatedLabel: 'Ringling Bros. and Barnum & Bailey Circus',
+    relatedDek:
+      'The 1933 Golden Jubilee in Baraboo and the 5¢ to $1 scrip: history and collecting.',
+    sourcesTitle: 'Sources',
+  },
+} as const;
+
+export const barabooScripSeriesIntro: LocalizedText[] = [
+  {
+    es: 'En 1933 la Cámara de Comercio de Baraboo, Wisconsin, emitió scrip conmemorativo para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus. No es papel federal: son vales al portador, un poco más grandes que los shinplasters de la Guerra Civil, canjeables en comercio local hasta el 1 de noviembre de 1933. Los catálogos de scrip de la Depresión de Wisconsin los agrupan como Shafer WI100.',
+    en: 'In 1933 the Baraboo, Wisconsin, Chamber of Commerce issued commemorative scrip for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee. This is not federal paper: the notes are bearer tokens, a trifle larger than Civil War shinplasters, redeemable in local trade through 1 November 1933. Wisconsin Depression-scrip catalogs list them as Shafer WI100.',
+  },
+  {
+    es: 'El juego tiene seis denominaciones: 5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar. Las cinco inferiores retratan a cada hermano Ringling por separado; el dólar reúne al grupo. E. B. Trimpey, del estudio Trimpey de Baraboo, diseñó las planchas a partir de fotografías originales. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. No se conserva cifra de tirada; esta ficha no inventa una.',
+    en: 'The set has six denominations: 5¢, 10¢, 15¢, 25¢, 50¢, and $1. The five lower notes show each Ringling brother singly; the dollar shows the group. E. B. Trimpey of Baraboo’s Trimpey studio designed the plates from original photographs. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. No printage figure survives; this record does not invent one.',
+  },
+  {
+    es: 'Esta página documenta el tipo, no un ejemplar. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. Mientras no se suministre, no se publican fichas de pieza. El artículo del blog cuenta el regreso del circo el 3 de agosto de 1933 y el contexto de la Depresión.',
+    en: 'This page documents the type, not a holding. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. Until one is supplied, piece pages stay unpublished. The blog article tells the circus’s return on 3 August 1933 and the Depression setting.',
+  },
+];
+
+export const barabooScripSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://wisconsinscrip.com/baraboo/',
+    es: 'Wisconsin Depression Scrip — Baraboo',
+    en: 'Wisconsin Depression Scrip — Baraboo',
+    note: {
+      es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre.',
+      en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November.',
     },
   },
 ];

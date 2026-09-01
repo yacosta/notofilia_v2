@@ -147,6 +147,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/'],
   },
   {
+    es: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
+    en: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/'],
+  },
+  {
     es: '/coleccion/estados-unidos/miscelaneos/',
     en: '/collection/united-states/miscellaneous/',
     aliases: ['/coleccion/united-states/miscellaneous/'],
@@ -318,6 +323,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
+    '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
     '/en/coleccion/estados-unidos/miscelaneos/',
     '/en/coleccion/estados-unidos/mpc-vietnam/',
     '/en/coleccion/estados-unidos/',
@@ -333,6 +339,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
+    '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     '/en/coleccion/united-states/miscellaneous/',
     '/en/coleccion/united-states/mpc-vietnam/',
     '/en/coleccion/united-states/',

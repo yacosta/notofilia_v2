@@ -11,6 +11,8 @@ import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import { colombiaCoinagePieceSlugs } from '../data/colombia-coinage-pieces';
 import {
+  USA_BARABOO_SCRIP_PATH,
+  USA_BARABOO_SCRIP_PATH_EN,
   USA_MISC_PATH,
   USA_MISC_PATH_EN,
   USA_MPC_PATH,
@@ -126,6 +128,7 @@ export function statsLine(locale: Locale): string {
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
+addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
@@ -392,6 +395,11 @@ export const stubPages = [
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
+  {
+    path: 'coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933',
+    es: 'Scrip de Baraboo 1933',
+    en: 'Baraboo scrip 1933',
+  },
   { path: 'coleccion/estados-unidos/rency', es: 'Rency', en: 'Rency' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
@@ -433,6 +441,8 @@ const dedicatedEs = [
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_BARABOO_SCRIP_PATH.replace(/^\/|\/$/g, ''),
+  USA_BARABOO_SCRIP_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
