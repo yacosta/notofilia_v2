@@ -54,7 +54,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Por ahora, el Billete de Canje de 1 peso de 1895 (P#7b), serial radar 4548454. Las demás fichas se publicarán a medida que se documenten.',
+      'Recibo de contribución de la Junta Central de 1869 (N.º 32, bajo) y Billete de Canje de 1 peso de 1895 (P#7b, serial radar 4548454).',
     holdingsAria: 'Billetes de Puerto Rico en la colección',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -76,7 +76,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      'For now, the 1895 1-peso exchange note (P#7b), radar serial 4548454. Further note pages will be published as they are documented.',
+      '1869 Central Board contribution receipt (No. 32, low) and 1895 1-peso exchange note (P#7b, radar serial 4548454).',
     holdingsAria: 'Puerto Rico banknotes in the collection',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -85,7 +85,7 @@ export const seriesCopy = {
   },
 } as const;
 
-export type PuertoRicoNoteId = 'billete-de-canje-1-peso-1895';
+export type PuertoRicoNoteId = 'junta-central-cuba-1869' | 'billete-de-canje-1-peso-1895';
 
 export type PuertoRicoNote = {
   id: PuertoRicoNoteId;
@@ -93,13 +93,17 @@ export type PuertoRicoNote = {
   pick: string;
   serial: string;
   serial_display: string;
-  serial_kind: 'fancy';
+  serial_kind: 'low' | 'fancy' | 'ordinary';
   signatures: LocalizedText;
   printed: LocalizedText;
   images: {
     composite: string;
     front: string;
     back: string;
+    frontWidth: number;
+    frontHeight: number;
+    backWidth: number;
+    backHeight: number;
   };
   title: LocalizedText;
   kicker: LocalizedText;
@@ -114,6 +118,98 @@ export type PuertoRicoNote = {
 };
 
 export const puertoRicoNotes: PuertoRicoNote[] = [
+  {
+    id: 'junta-central-cuba-1869',
+    path: '/coleccion/puerto-rico/junta-central-cuba-1869/',
+    pick: 'Recibo convertible',
+    serial: '32',
+    serial_display: 'N.º 32',
+    serial_kind: 'low',
+    signatures: {
+      es: 'Por El Tesorero (Ramón Fernández Criado, firma autógrafa); beneficiario manuscrito: Ciudadano Pedro Fernández Criado',
+      en: 'For the Treasurer (Ramón Fernández Criado, autograph signature); handwritten payee: Citizen Pedro Fernández Criado',
+    },
+    printed: {
+      es: 'Litografiado en Nueva York por Major & Knapp, Engraving, Mfg. & Lith. Co., 71 Broadway. No es moneda de curso: instrumento de recaudación revolucionaria convertible en bonos. Esta ficha no inventa una tirada para el tipo ni para el N.º 32.',
+      en: 'Lithographed in New York by Major & Knapp, Engraving, Mfg. & Lith. Co., 71 Broadway. Not circulating currency: a revolutionary fundraising instrument convertible into bonds. This record does not invent a printage for the type or for No. 32.',
+    },
+    images: {
+      composite: '/images/catalog/puerto-rico/pr-1869-junta-central-32-composite.jpg',
+      front: '/images/catalog/puerto-rico/pr-1869-junta-central-32-front.jpg',
+      back: '/images/catalog/puerto-rico/pr-1869-junta-central-32-back.jpg',
+      frontWidth: 1440,
+      frontHeight: 960,
+      backWidth: 1440,
+      backHeight: 960,
+    },
+    title: {
+      es: '1.500 pesos · Recibo de contribución · 1869',
+      en: '1,500 Pesos · Contribution Receipt · 1869',
+    },
+    kicker: {
+      es: 'Junta Central Republicana de Cuba y Puerto Rico · Nueva York',
+      en: 'Central Republican Board of Cuba and Puerto Rico · New York',
+    },
+    lead: {
+      es: 'Recibo de contribución a la independencia de Cuba, litografiado en Nueva York el 15 de junio de 1869. N.º 32 — número bajo — por mil quinientos pesos, convertible en bonos de la República de Cuba.',
+      en: 'Contribution receipt toward Cuban independence, lithographed in New York on 15 June 1869. No. 32 — a low document number — for one thousand five hundred pesos, convertible into bonds of the Republic of Cuba.',
+    },
+    description: {
+      es: 'La Junta Central Republicana de Cuba y Puerto Rico emitió en el exilio neoyorquino recibos como este para financiar la causa separatista contra España durante la Guerra de los Diez Años, apenas ocho meses después del Grito de Yara (octubre de 1868). El texto impreso reconoce haber recibido del ciudadano Pedro Fernández Criado la suma de mil quinientos pesos en papel de los Estados Unidos «para auxiliar la causa de la independencia de Cuba», y declara el recibo convertible en bonos de la República de Cuba «al tipo a que se haga la primera emisión». El anverso litografiado por Major & Knapp muestra a la izquierda una figura alegórica junto a un escudo con una sola estrella —emblema visual de la república imaginada—, el N.º 32 en rojo, la fecha 15 de junio de 1869 y la firma del tesorero Ramón Fernández Criado bajo «Por El Tesorero». No es papel moneda al uso: es un título de deuda revolucionaria emitido antes de que existiera un estado cubano soberano. El reverso lleva sello ARCHIVO NACIONAL, matriz de registro de la República de Cuba (CAJA 196 / NÚMERO 30) y endosos manuscritos; manchas, pliegues y desgaste perimetral son coherentes con un documento decimonónico en uso.',
+      en: 'The Central Republican Board of Cuba and Puerto Rico issued exile receipts like this one in New York to finance the separatist cause against Spain during the Ten Years’ War, only about eight months after the Grito de Yara (October 1868). The printed text acknowledges receipt from citizen Pedro Fernández Criado of one thousand five hundred pesos in United States paper money “to aid the cause of the independence of Cuba,” and declares the receipt convertible into bonds of the Republic of Cuba “at the rate at which the first issue is made.” The face lithographed by Major & Knapp shows at left an allegorical figure beside a shield with a single star — visual emblem of the republic yet to exist — red No. 32, the date 15 June 1869, and treasurer Ramón Fernández Criado’s signature under “For the Treasurer.” This is not ordinary currency: it is revolutionary debt paper issued before a sovereign Cuban state existed. The back bears an ARCHIVO NACIONAL stamp, a Republic of Cuba registration box (CAJA 196 / NUMERO 30), and handwritten endorsements; browning, stains, folds, and edge wear are consistent with a nineteenth-century working document.',
+    },
+    frontCaption: {
+      es: 'Anverso del recibo N.º 32: Junta Central Republicana de Cuba y Puerto Rico, mil quinientos pesos, 15 de junio de 1869, litografía Major & Knapp.',
+      en: 'Face of receipt No. 32: Central Republican Board of Cuba and Puerto Rico, one thousand five hundred pesos, 15 June 1869, Major & Knapp lithograph.',
+    },
+    backCaption: {
+      es: 'Reverso con sello ARCHIVO NACIONAL, matriz CAJA 196 / NÚMERO 30 y endosos manuscritos.',
+      en: 'Back with ARCHIVO NACIONAL stamp, CAJA 196 / NUMERO 30 registration, and handwritten endorsements.',
+    },
+    scarcity: {
+      es: 'Los billetes circulantes de la Junta del 17 de agosto de 1869 figuran en catálogo como Pick 61–64 (1, 5, 10 y 20 pesos). Este recibo convertible es un instrumento distinto: recaudación revolucionaria en Nueva York, no moneda de curso. Fuentes numismáticas describen emisiones limitadas y arrestos de dirigentes en 1869 por las leyes de neutralidad estadounidenses. El N.º 32 es un número documental muy bajo. Esta ficha no inventa una tirada.',
+      en: 'The Board’s circulating notes of 17 August 1869 are catalogued as Pick 61–64 (1, 5, 10, and 20 pesos). This convertible receipt is a separate instrument: revolutionary fundraising in New York, not circulating currency. Numismatic sources describe limited issues and leaders arrested in 1869 under U.S. neutrality laws. No. 32 is a very low document number. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo para el N.º 32. La pieza se presenta sin encapsular, con desgaste propio de un documento decimonónico en uso.',
+      en: 'An independent census for No. 32 has not been verified. The piece is shown unslabbed, with wear consistent with a nineteenth-century working document.',
+    },
+    grade: {
+      es: 'Sin encapsular; manchas, pliegues y desgaste perimetral (colección privada)',
+      en: 'Unslabbed; stains, folds, and edge wear (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.ebsco.com/research-starters/history/cubas-ten-years-war',
+        es: 'EBSCO — Cuba’s Ten Years’ War',
+        en: 'EBSCO — Cuba’s Ten Years’ War',
+      },
+      {
+        href: 'https://www.cultura.gob.es/en/cultura/archivos/difusion/mc-difusion/bicentenarios/contexto-historico/las-ultimas-posesiones/puerto-rico.html',
+        es: 'Ministerio de Cultura — Puerto Rico en el contexto de las últimas posesiones',
+        en: 'Ministry of Culture — Puerto Rico in the context of Spain’s last possessions',
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/item.aspx?i=29836775&mobile=0',
+        es: 'Sedwick Coins — Junta Central Republicana de Cuba y Puerto Rico (1869)',
+        en: 'Sedwick Coins — Central Republican Board of Cuba and Puerto Rico (1869)',
+      },
+      {
+        href: 'http://www.numismondo.net/pm/cub/index61.htm',
+        es: 'Numismondo — Cuba P#61–64 (billetes circulantes de 1869)',
+        en: 'Numismondo — Cuba P#61–64 (1869 circulating notes)',
+        note: {
+          es: 'Emisiones distintas del recibo convertible documentado aquí.',
+          en: 'Separate issues from the convertible receipt documented here.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v16n12a24.html',
+        es: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+        en: 'The E-Sylum — 1869 Military Junta of Cuba Currency',
+      },
+    ],
+  },
   {
     id: 'billete-de-canje-1-peso-1895',
     path: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
@@ -133,6 +229,10 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       composite: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-composite.jpg',
       front: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-front.jpg',
       back: '/images/catalog/puerto-rico/pr-1895-1-peso-4548454-back.jpg',
+      frontWidth: 1371,
+      frontHeight: 646,
+      backWidth: 1414,
+      backHeight: 646,
     },
     title: {
       es: '1 peso · Billete de Canje · 1895',
