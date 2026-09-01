@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { catalogAssetSrc, cfImage, CATALOG_HERO_VERSION } from './images.ts';
+import { catalogAssetSrc, cfImage, CATALOG_HERO_VERSION, editorialUploadSrcset } from './images.ts';
 
 describe('catalogAssetSrc', () => {
   it('appends a version query for catalog hero cache busting', () => {
@@ -18,6 +18,22 @@ describe('catalogAssetSrc', () => {
     assert.match(
       cfImage(catalogAssetSrc('/images/catalog/united-states.jpg'), { width: 1600 }),
       /hero-colombia|united-states\.jpg\?v=/,
+    );
+  });
+});
+
+describe('editorialUploadSrcset', () => {
+  it('uses the -card sibling and master without /cdn-cgi/image/', () => {
+    assert.equal(
+      editorialUploadSrcset('/uploads/baraboo-golden-jubilee-1933.jpg', 2128),
+      '/uploads/baraboo-golden-jubilee-1933-card.jpg 800w, /uploads/baraboo-golden-jubilee-1933.jpg 2128w',
+    );
+  });
+
+  it('does not wrap an already-card path', () => {
+    assert.equal(
+      editorialUploadSrcset('/uploads/baraboo-golden-jubilee-1933-card.jpg'),
+      '/uploads/baraboo-golden-jubilee-1933-card.jpg 800w',
     );
   });
 });
