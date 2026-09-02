@@ -17,6 +17,9 @@ export default defineConfig({
   site: 'https://notofilia.com',
   trailingSlash: 'always',
   compressHTML: false,
+  build: {
+    inlineStylesheets: 'always',
+  },
   redirects: {
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
     '/en/coleccion/numismatica/colombia': '/en/collection/colombia-numismatics/',
