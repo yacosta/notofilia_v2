@@ -47,43 +47,6 @@
   --page-gutter: clamp(1.25rem, 5vw, 2.5rem);
   /* Tight side inset so the wordmark and nav share more of the viewport. */
   --chrome-gutter: clamp(0.75rem, 1.5vw, 1.25rem);
-  /* Utility (~68px) + mega-bar (~72px). JS overwrites with the live stack. */
-  --sticky-chrome-height: 10rem;
-  /* Breathing mat below the in-flow header so a top-of-frame masthead is not flush. */
-  --series-hero-chrome-clear-gap: 5rem;
-  /* Sampled from the Baraboo souvenir map's top edge so the mat reads as paper, not a crop. */
-  --series-hero-clear-mat: #bd8b4b;
-}
-
-@media (max-width: 1023px) {
-  :root {
-    /* Utility only; the mega-bar is an off-canvas drawer. */
-    --sticky-chrome-height: 6.5rem;
-  }
-}
-
-.series-hero--clear-chrome .series-hero__frame {
-  position: relative;
-  box-sizing: border-box;
-  padding-top: var(--series-hero-chrome-clear-gap);
-  background: var(--series-hero-clear-mat);
-  min-height: 86vh;
-}
-
-@media (min-width: 768px) {
-  .series-hero--clear-chrome .series-hero__frame {
-    min-height: 94vh;
-  }
-}
-
-.series-hero--clear-chrome .series-hero__copy {
-  min-height: 86vh;
-}
-
-@media (min-width: 768px) {
-  .series-hero--clear-chrome .series-hero__copy {
-    min-height: 94vh;
-  }
 }
 
 html {
