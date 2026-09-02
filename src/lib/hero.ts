@@ -1,4 +1,4 @@
-import { cfImage } from './images';
+import { cfImage } from './images.ts';
 
 const HERO_IMAGE = '/images/hero-slide.jpg';
 
