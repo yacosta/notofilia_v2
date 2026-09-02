@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
+import NewWindowHint from './NewWindowHint.astro';
+import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../lib/seo';
+import { comparisonCopy, comparisonPath } from '../data/comparison';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = comparisonCopy[locale];
+const pathname = comparisonPath(locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout title={`${t.metaTitle} · Notofilia`} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+          <time datetime={t.published}>{t.dateLabel}</time>
+        </p>
+      </header>
+
+      {
+        t.sections.map((section) => (
+          <section class="mb-10" aria-labelledby={section.id}>
+            <h2 id={section.id} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {section.title}
+            </h2>
+            {section.paragraphs.map((paragraph) => (
+              <p class="mb-4 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">{paragraph}</p>
+            ))}
+          </section>
+        ))
+      }
+
+      <section class="mb-10" aria-labelledby="comparison-table-heading">
+        <h2 id="comparison-table-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.tableCaption}
+        </h2>
+        <div class="overflow-x-auto border border-line-strong">
+          <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+            <caption class="sr-only">{t.tableCaption}</caption>
+            <thead>
+              <tr class="border-b border-line-strong bg-panel text-left">
+                {t.tableHeaders.map((header) => (
+                  <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {t.tableRows.map((row) => (
+                <tr class="border-b border-line-strong last:border-b-0">
+                  {row.map((cell, index) =>
+                    index === 0 ? (
+                      <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td class="px-3 py-2.5">{cell}</td>
+                    ),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="comparison-sources-heading">
+        <h2 id="comparison-sources-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.sourcesTitle}
+        </h2>
+        <ul class="m-0 grid list-none gap-2 p-0">
+          {
+            t.sources.map((source) => (
+              <li>
+                <a
+                  href={source.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {source.label}
+                  <NewWindowHint locale={locale} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="mt-12">
+        <a
+          href={localizePath('/coleccion/colombia/', locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.colombiaCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

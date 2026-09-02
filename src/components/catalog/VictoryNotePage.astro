@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, SERIES_PATH, type Locale } from '../../lib/site';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   notePageCopy,
   notePath,
@@ -37,14 +38,17 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'VisualArtwork',
-        name: note.title[locale],
-        description: note.lead[locale],
-        url: new URL(pathname, 'https://notofilia.com').href,
-        image: new URL(note.images.front, 'https://notofilia.com').href,
-        artform: 'Banknote',
-        author: { '@type': 'Person', name: 'Yezid Acosta' },
-        creator: { '@type': 'Person', name: 'Yezid Acosta' },
+        ...visualArtworkJsonLd({
+          name: note.title[locale],
+          description: note.lead[locale],
+          url: pathname,
+          image: note.images.front,
+          locale,
+          artform: 'Banknote',
+          catalogNumber: note.pick,
+          serial: note.serial,
+          gradingService: inferGradingService(note.grade[locale]),
+        }),
       })}
     />
   </Fragment>

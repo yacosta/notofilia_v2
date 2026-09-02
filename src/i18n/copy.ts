@@ -23,7 +23,10 @@ export const copy = {
     backToMenu: 'Volver al menú',
     megaBannerCta: 'Ver el catálogo',
     metaTitle: 'Notofilia: Billetes y Numismática | Catálogo y Guías',
-    metaDescription: `Notafilia y numismática: ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países. Catálogos y guías en español.`,
+    metaDescription: `Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. ${seedHoldings.banknotes} billetes y ${seedHoldings.coins} monedas de ${seedHoldings.countries} países.`,
+    entityStatement:
+      'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta.',
+    faqHeading: 'Preguntas frecuentes',
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     virtualCollection: 'Colección virtual',
@@ -118,7 +121,10 @@ export const copy = {
     backToMenu: 'Back to menu',
     megaBannerCta: 'See the catalog',
     metaTitle: 'Notofilia: Banknotes and Numismatics | Catalog and Guides',
-    metaDescription: `Notaphily and numismatics: ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries. Catalogs and guides in English.`,
+    metaDescription: `Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta. ${seedHoldings.banknotes} banknotes and ${seedHoldings.coins} coins from ${seedHoldings.countries} countries.`,
+    entityStatement:
+      'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta.',
+    faqHeading: 'Frequently asked questions',
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     virtualCollection: 'Virtual collection',

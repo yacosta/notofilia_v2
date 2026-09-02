@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { POLIMERO_MALASIA_PATH, POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
 import { notePageCopy, type MalaysiaNote } from '../../data/malaysia-polymer';
 import SourceList from './SourceList.astro';
@@ -38,6 +38,9 @@ const malaysiaHref = localizePath(POLIMERO_MALASIA_PATH, locale);
           image: note.images.front,
           locale,
           artform: 'Banknote',
+          catalogNumber: note.pick,
+          serial: note.serial,
+          gradingService: inferGradingService(note.grade[locale]),
         }),
       })}
     />

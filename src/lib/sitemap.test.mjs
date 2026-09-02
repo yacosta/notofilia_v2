@@ -64,6 +64,16 @@ describe('sitemap coverage for Colombia visual catalogs', () => {
   });
 });
 
+describe('sitemap coverage for the comparison page', () => {
+  it('maps the Notofilia vs catalogs pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
+      '/en/notofilia-vs-colombian-banknote-catalogs/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the grading guide', () => {
   it('builds lastmod from blog articles and is linked from sitemap-index / robots', () => {
     assert.match(sitemapSource, /blogArticles/);

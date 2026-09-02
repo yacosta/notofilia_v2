@@ -49,6 +49,7 @@ import {
 } from '../data/polimero-mundial';
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
+import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 
@@ -103,6 +104,8 @@ function extraAstroPageFiles(): number {
       !file.includes('/netherlands-numismatics/') &&
       !file.includes('/acerca-de/') &&
       !file.includes('/about/') &&
+      !file.includes('/notofilia-vs-catalogos-billetes-colombianos/') &&
+      !file.includes('/notofilia-vs-colombian-banknote-catalogs/') &&
       !file.includes('/contacto/') &&
       !file.includes('/contact/'),
   );
@@ -131,6 +134,7 @@ addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
+addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export { copy } from '../i18n/copy';
@@ -371,6 +375,11 @@ export const news: NewsItem[] = newsArticles.map((item) => ({
 export const footerAbout = [
   { href: ABOUT_PATH, es: 'Sobre Notofilia', en: 'About Notofilia' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
+  {
+    href: COMPARISON_PATH,
+    es: 'Notofilia vs. otros catálogos',
+    en: 'Notofilia vs. other catalogs',
+  },
   { href: '/contacto/', es: 'Contacto', en: 'Contact' },
 ] as const;
 
@@ -461,6 +470,7 @@ const dedicatedEs = [
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
+  ...comparisonDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',
   'blog',

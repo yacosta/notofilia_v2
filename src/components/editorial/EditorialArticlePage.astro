@@ -3,7 +3,11 @@ import Layout from '../../layouts/Layout.astro';
 import Comments from '../Comments.astro';
 import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import FaqBlock from '../FaqBlock.astro';
 import { breadcrumbJsonLd, PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
+import { faqPageJsonLd } from '../../lib/json-ld';
+import { copy } from '../../lib/site';
+import { guideFaqs, localizeFaq } from '../../data/page-faq';
 import { cardImageSrc, editorialUploadSrcset } from '../../lib/images';
 import {
   articlePath,
@@ -42,6 +46,8 @@ const imageHeight = article.imageHeight ?? 675;
 
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(article.image, SITE_URL).href;
+const faqItems = kind === 'blog' ? localizeFaq(guideFaqs[article.slug] ?? [], locale) : [];
+const reviewerName = article.reviewer || SITE_AUTHOR;
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -62,6 +68,7 @@ const jsonLd = {
       mainEntityOfPage: pageUrl,
       articleSection: sectionLabel,
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: reviewerName, '@id': PERSON_ID },
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
       ...(kind === 'news' && article.sourceName && article.sourceUrl
         ? {
@@ -78,6 +85,7 @@ const jsonLd = {
       { name: sectionLabel, item: indexPath },
       { name: title, item: pathname },
     ]),
+    ...(faqItems.length ? [faqPageJsonLd(faqItems)] : []),
   ],
 };
 ---
@@ -145,18 +153,14 @@ const jsonLd = {
         </h1>
         <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{dek}</p>
         <dl class="mb-9 mt-0 grid gap-1 font-sans text-[14px] tracking-[0.02em] text-muted">
-          {
-            article.reviewer ? (
-              <div class="flex flex-wrap gap-x-2">
-                <dt class="m-0 font-semibold text-cream-soft">{t.reviewedBy}</dt>
-                <dd class="m-0">
-                  <a class="text-muted hover:text-cream" href={localizePath('/editorial/', locale)}>
-                    {article.reviewer}
-                  </a>
-                </dd>
-              </div>
-            ) : null
-          }
+          <div class="flex flex-wrap gap-x-2">
+            <dt class="m-0 font-semibold text-cream-soft">{t.reviewedBy}</dt>
+            <dd class="m-0">
+              <a class="text-muted hover:text-cream" href={localizePath('/editorial/', locale)}>
+                {reviewerName}
+              </a>
+            </dd>
+          </div>
           {
             article.updated ? (
               <div class="flex flex-wrap gap-x-2">
@@ -246,6 +250,8 @@ const jsonLd = {
       }
 
       <div class:list={['prose-notofilia', wide && 'max-w-[46rem]']} lang={bodyIsFallback ? 'es' : locale} set:html={body} />
+
+      {faqItems.length ? <FaqBlock heading={copy[locale].faqHeading} items={faqItems} /> : null}
 
       {
         article.sourceName && article.sourceUrl ? (

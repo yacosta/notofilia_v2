@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
   coinagePieceCopy,
@@ -36,6 +36,9 @@ const pathname = coinagePiecePath(piece, locale);
           image: piece.images.composite,
           locale,
           artform: 'Coin',
+          catalogNumber: piece.reference,
+          issuer: piece.mint[locale],
+          gradingService: inferGradingService(piece.grade[locale]),
         }),
       })}
     />

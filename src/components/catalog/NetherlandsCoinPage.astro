@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   coinPageCopy,
   coinagePath,
@@ -43,6 +43,10 @@ const sources = [
           image: coin.images.composite,
           locale,
           artform: 'Coin',
+          catalogNumber: coin.references,
+          issuer: coin.mint[locale],
+          gradingService: inferGradingService(coin.grade[locale]),
+          certNumber: coin.certificate,
         }),
       })}
     />

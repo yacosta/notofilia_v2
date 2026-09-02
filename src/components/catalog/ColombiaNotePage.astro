@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { seriesPath, seriesSources } from '../../data/colombia';
 import {
   notePageCopy,
@@ -44,6 +44,9 @@ const jsonLd = visualArtworkJsonLd({
   image: note.images.front,
   locale,
   artform: 'Banknote',
+  catalogNumber: note.pick,
+  serial: note.serial,
+  gradingService: inferGradingService(note.grade[locale]),
 });
 
 function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {

@@ -24,6 +24,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
+import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
 import { footerLinksFromNav } from './footer-nav';
 
@@ -237,6 +238,13 @@ export const megaNav: NavNode[] = [
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
       { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
+      {
+        id: 'comparacion',
+        es: 'Notofilia vs. otros catálogos',
+        en: 'Notofilia vs. other catalogs',
+        href: COMPARISON_PATH,
+        icon: 'guides',
+      },
     ],
   },
   {

@@ -44,6 +44,14 @@ const jsonLd = {
       jobTitle: copy[locale].collectorJobTitle,
       image: new URL(ABOUT_PORTRAIT, SITE_URL).href,
     },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: 'Notofilia',
+      url: SITE_URL,
+      founder: { '@id': `${SITE_URL}/#yezid-acosta` },
+      description: t.entityStatement,
+    },
   ],
 };
 ---
@@ -88,6 +96,9 @@ const jsonLd = {
             >
               {t.theSite}
             </h2>
+            <p class="mb-5 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty]">
+              {t.entityStatement}
+            </p>
             {t.site.map((paragraph) => (
               <p class="mb-5 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">
                 {paragraph}

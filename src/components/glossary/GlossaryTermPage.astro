@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
+import { definedTermJsonLd } from '../../lib/json-ld';
 import {
   glossaryCategories,
   glossaryCopy,
@@ -31,12 +32,13 @@ const related = term.seeAlso
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'DefinedTerm',
-        name: term.title[locale],
-        alternateName: term.title[otherLang],
-        description: term.definition[locale],
-        url: new URL(pathname, 'https://notofilia.com').href,
-        inLanguage: locale,
+        ...definedTermJsonLd({
+          name: term.title[locale],
+          alternateName: term.title[otherLang],
+          description: term.definition[locale],
+          url: pathname,
+          locale,
+        }),
       })}
     />
   </Fragment>

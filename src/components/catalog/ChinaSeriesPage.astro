@@ -3,8 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import FaqBlock from '../FaqBlock.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
   chinaNotes,
   notePath,
@@ -28,6 +30,7 @@ const hero = {
   height: 784,
 };
 
+const faqItems = localizeFaq(seriesFaqs.china, locale);
 const jsonLd = collectionPageJsonLd({
   locale,
   pathname,
@@ -38,6 +41,7 @@ const jsonLd = collectionPageJsonLd({
     { name: t.parentLink, path: POLIMERO_MUNDIAL_PATH },
     { name: t.kicker, path: pathname },
   ],
+  faq: faqItems,
 });
 
 ---
@@ -109,6 +113,8 @@ const jsonLd = collectionPageJsonLd({
           }
         </ol>
       </section>
+
+      <FaqBlock heading={copy[locale].faqHeading} items={faqItems} />
 
       <div class="mt-16">
         <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />

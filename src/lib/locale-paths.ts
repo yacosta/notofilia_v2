@@ -222,6 +222,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/noticias/', en: '/news/' },
   { es: '/contacto/', en: '/contact/' },
   { es: '/acerca-de/', en: '/about/' },
+  {
+    es: '/notofilia-vs-catalogos-billetes-colombianos/',
+    en: '/notofilia-vs-colombian-banknote-catalogs/',
+  },
   { es: '/buscar/', en: '/search/' },
   { es: '/politica-privacidad-cookies/', en: '/privacy-cookies/' },
   { es: '/blog/mejores-empresas-certificacion-monedas-billetes/', en: '/blog/best-coin-and-banknote-grading-companies/' },

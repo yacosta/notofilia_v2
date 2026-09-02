@@ -1,0 +1,29 @@
+---
+interface Props {
+  heading: string;
+  items: { question: string; answer: string }[];
+}
+
+const { heading, items } = Astro.props;
+---
+
+{
+  items.length ? (
+    <section class="mt-14 border-t border-line-strong pt-12" aria-labelledby="faq-kicker">
+      <p
+        id="faq-kicker"
+        class="mb-8 mt-0 font-sans text-[13px] font-semibold uppercase tracking-[0.16em] text-gold-light"
+      >
+        {heading}
+      </p>
+      <div class="grid gap-10">
+        {items.map((item) => (
+          <div>
+            <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{item.question}</h2>
+            <p class="mb-0 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty]">{item.answer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  ) : null
+}

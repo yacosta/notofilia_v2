@@ -3,8 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import FaqBlock from '../FaqBlock.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
   colombiaCatalogItems,
   colombiaChapters,
@@ -33,6 +35,7 @@ const hero = {
   height: 912,
 };
 
+const faqItems = localizeFaq(seriesFaqs.colombia, locale);
 const jsonLd = collectionPageJsonLd({
   locale,
   pathname,
@@ -42,6 +45,7 @@ const jsonLd = collectionPageJsonLd({
     { name: copy[locale].home, path: '/' },
     { name: t.title, path: pathname },
   ],
+  faq: faqItems,
 });
 
 ---
@@ -236,6 +240,8 @@ const jsonLd = collectionPageJsonLd({
           )
         }
       </section>
+
+      <FaqBlock heading={copy[locale].faqHeading} items={faqItems} />
 
       <div class="mt-16">
         <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />

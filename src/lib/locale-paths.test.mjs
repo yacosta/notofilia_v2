@@ -104,6 +104,14 @@ describe('locale path mapping', () => {
       '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
+    assert.equal(
+      localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
+      '/en/notofilia-vs-colombian-banknote-catalogs/',
+    );
+    assert.equal(
+      localizePath('/en/notofilia-vs-colombian-banknote-catalogs/', 'es'),
+      '/notofilia-vs-catalogos-billetes-colombianos/',
+    );
     assert.equal(localizePath('/buscar/', 'en'), '/en/search/');
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');

@@ -41,6 +41,20 @@ describe('about page copy and paths', () => {
     assert.doesNotMatch(pageSource, /personas que cambiaron la historia/);
   });
 
+  it('keeps the extractable entity statement without inventing a founding year', () => {
+    assert.equal(
+      aboutCopy.es.entityStatement,
+      'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta.',
+    );
+    assert.equal(
+      aboutCopy.en.entityStatement,
+      'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta.',
+    );
+    assert.doesNotMatch(aboutCopy.es.entityStatement, /en 20\d{2}/);
+    assert.doesNotMatch(aboutCopy.en.entityStatement, /in 20\d{2}/);
+    assert.match(pageSource, /\{t\.entityStatement\}/);
+  });
+
   it('keeps a stacked display title and hero lead in both locales', () => {
     assert.deepEqual([...aboutCopy.es.titleLines], ['Mirar', 'el dinero', 'dos veces']);
     assert.deepEqual([...aboutCopy.en.titleLines], ['Look', 'at money', 'twice']);

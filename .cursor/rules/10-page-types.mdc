@@ -26,6 +26,7 @@ Every file under `src/pages/**/*.astro` must map to one row. Route files stay th
 | `glossary-index` | `GlossaryPage.astro` | `/glosario/` | `/en/glossary/` |
 | `glossary-term` | `GlossaryTermPage.astro` | `/glosario/[term]/` | `/en/glossary/[term]/` |
 | `search` | `SearchPage.astro` | `/buscar/` | `/en/search/` |
+| `resource` | `ComparisonPage.astro` | `/notofilia-vs-catalogos-billetes-colombianos/` | `/en/notofilia-vs-colombian-banknote-catalogs/` |
 | `visual-catalog` | `TypeCatalogPage.astro` | `/coleccion/notafilia/catalogo/`, `/coleccion/colombia/catalogo/`, `/coleccion/colombia-numismatica/catalogo/` | `/en/collection/notaphily/catalog/`, `/en/collection/colombia/catalog/`, `/en/collection/colombia-numismatics/catalog/` |
 | `stub` | `StubPage.astro` | catch-all `[...slug].astro` | `en/[...slug].astro` |
 | `error` | `404.astro` (both locales) | `/404` | `/en/404` (or locale-aware 404) |
@@ -50,6 +51,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | `glossary-index` | Home → Glossary | none | search, filters, terms | `DefinedTermSet` + `BreadcrumbList` |
 | `glossary-term` | Home → Glossary → term | none | definition + related | `DefinedTerm` |
 | `search` | Home → Search | none (text header) | field, sort, filter pills, results | `SearchResultsPage` + `BreadcrumbList` |
+| `resource` | Home → title | none | text-only article (`max-w-[46rem]`), optional comparison table | `Article` + `BreadcrumbList` |
 | `visual-catalog` | Home → series → catalog | none (text header) | stats (no prices), field, sort, filter pills, four-column type grid | `CollectionPage` + `BreadcrumbList` |
 | `stub` | optional | none | coming-soon copy | none |
 | `error` | none | none | title, body, home link | none |

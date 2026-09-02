@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
@@ -54,14 +55,17 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'VisualArtwork',
-        name: note.title[locale],
-        description: note.lead[locale],
-        url: new URL(pathname, 'https://notofilia.com').href,
-        image: new URL(note.images.front, 'https://notofilia.com').href,
-        artform: 'Banknote',
-        author: { '@type': 'Person', name: 'Yezid Acosta' },
-        creator: { '@type': 'Person', name: 'Yezid Acosta' },
+        ...visualArtworkJsonLd({
+          name: note.title[locale],
+          description: note.lead[locale],
+          url: pathname,
+          image: note.images.front,
+          locale,
+          artform: 'Banknote',
+          catalogNumber: note.pick,
+          serial: note.serial,
+          gradingService: inferGradingService(note.grade[locale]),
+        }),
       })}
     />
   </Fragment>

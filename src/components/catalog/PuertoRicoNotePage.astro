@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { visualArtworkJsonLd } from '../../lib/json-ld';
+import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import {
   PUERTO_RICO_PATH,
   notePageCopy,
@@ -44,6 +44,9 @@ const sources = [...note.sources, ...seriesSources.filter((source) => !note.sour
           image: note.images.front,
           locale,
           artform: 'Banknote',
+          catalogNumber: note.pick,
+          serial: note.serial,
+          gradingService: inferGradingService(note.grade[locale]),
         }),
       })}
     />
