@@ -1,7 +1,18 @@
+import { CHINA_PATH } from '../data/china';
+import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
+import { ECUADOR_PATH } from '../data/ecuador';
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
+import { USA_PATH } from '../data/estados-unidos';
+import { GLOSSARY_PATH } from '../data/glossary';
+import { GUATEMALA_PATH } from '../data/guatemala';
 import { collectionStats } from '../data/holdings';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NETHERLANDS_PATH } from '../data/netherlands';
+import { NETHERLANDS_COINAGE_PATH } from '../data/netherlands-coinage';
+import { SERIES_PATH } from '../data/philippines-victory-66';
+import { POLIMERO_MUNDIAL_PATH } from '../data/polimero-mundial';
+import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { localizePath } from './locale-paths';
 import { footerLinksFromNav, megaNav } from './mega-nav';
 import { SITE_URL, type Locale } from './site-url';
@@ -51,6 +62,10 @@ export function websiteJsonLd(locale: Locale) {
         name: SITE_NAME,
         url: SITE_URL,
         founder: { '@id': PERSON_ID },
+        description:
+          locale === 'en'
+            ? 'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta. Nothing is for sale.'
+            : 'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Nada está a la venta.',
       },
     ],
   };
@@ -117,8 +132,30 @@ const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
   { href: '/buscar/', es: 'Buscar', en: 'Search' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
+  {
+    href: '/notofilia-vs-catalogos-billetes-colombianos/',
+    es: 'Notofilia vs. otros catálogos',
+    en: 'Notofilia vs. other catalogs',
+  },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
   { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
+] as const;
+
+/** Country and discipline catalogues for /llms.txt (locale-agnostic endpoint). */
+export const llmsCountryCatalogues = [
+  { href: COLOMBIA_PATH, es: 'Colombia (papel moneda)', en: 'Colombia (paper money)' },
+  { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
+  { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
+  { href: SERIES_PATH, es: 'Filipinas · Serie Victory n.º 66', en: 'Philippines · Victory Series No. 66' },
+  { href: CHINA_PATH, es: 'China', en: 'China' },
+  { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
+  { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
+  { href: GUATEMALA_PATH, es: 'Guatemala', en: 'Guatemala' },
+  { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
+  { href: NETHERLANDS_COINAGE_PATH, es: 'Países Bajos (numismática)', en: 'Netherlands (numismatics)' },
+  { href: LAZARETTOS_PATH, es: 'Lazaretos colombianos', en: 'Colombian lazarettos' },
+  { href: POLIMERO_MUNDIAL_PATH, es: 'Billetes de polímero', en: 'Polymer banknotes' },
+  { href: '/coleccion/espana/', es: 'España', en: 'Spain' },
 ] as const;
 
 export function llmsHighValuePages(): { href: string; es: string; en: string }[] {
@@ -150,11 +187,20 @@ export function llmsTxt(): string {
   const stats = collectionStats();
   return `# Notofilia
 
-> Private catalogue of historical banknotes and coins. Nothing is for sale.
+Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Spanish is the default locale; English lives at /en/. Images, Pick/KM references, grades, and source citations. Nothing is for sale.
 
-Notofilia is a bilingual (Spanish-primary, English at /en/) catalogue of a private collection: images, Pick/KM references, grades, and source citations. Founder: Yezid Acosta.
+## Glossary / Glosario
 
-Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección privada: imágenes, referencias Pick/KM, grados y fuentes. Nada está a la venta. Fundador: Yezid Acosta.
+${llmsLink(GLOSSARY_PATH, 'Glosario', 'Glossary')}
+
+## Guides / Guías
+
+${llmsLink('/blog/', 'Guías para coleccionistas', 'Guides for collectors')}
+${blogArticles.map((article) => articleLink('blog', article)).join('\n')}
+
+## Country catalogues / Catálogos por país
+
+${llmsCountryCatalogues.map((page) => llmsLink(page.href, page.es, page.en)).join('\n')}
 
 ## Stats / Cifras
 
@@ -163,15 +209,11 @@ Catálogo bilingüe (español en la raíz, inglés en /en/) de una colección pr
 - ${stats.countries} countries / países
 - ${stats.catalog} catalog entries / fichas
 
-## Highest-value pages
+## Other high-value pages
 
 ${llmsHighValuePages()
   .map((page) => llmsLink(page.href, page.es, page.en))
   .join('\n')}
-
-## Guides / Guías
-
-${blogArticles.map((article) => articleLink('blog', article)).join('\n')}
 
 ## News / Noticias
 

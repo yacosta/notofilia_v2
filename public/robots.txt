@@ -7,6 +7,9 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
@@ -19,10 +22,29 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 Sitemap: https://notofilia.com/sitemap-index.xml
+
+# IndexNow key file (Bing / Yandex / others). Cloudflare AI Crawl Control
+# and Bot Fight Mode are dashboard-only and cannot be changed from this repo.
+# Key: https://notofilia.com/a8f3c1e92b74d6058e1a4c7f0b39d2e6.txt
