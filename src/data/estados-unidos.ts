@@ -571,7 +571,7 @@ export const barabooScripSeriesCopy = {
     parentLink: 'Estados Unidos',
     miscLink: 'Misceláneos',
     heroAlt:
-      'Postal souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
+      'Mapa souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con boleto de circo de 1933, sello de 3¢ de Wisconsin 1848, rosa de los vientos y programa souvenir, y el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
     typesLabel: 'Denominaciones del tipo',
     typesIntro:
       'Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. El 5¢ de esta colección lleva a John Ringling; las demás fraccionarias siguen sin asignar hermano hasta que haya ejemplar.',
@@ -601,7 +601,7 @@ export const barabooScripSeriesCopy = {
     parentLink: 'United States',
     miscLink: 'Miscellaneous',
     heroAlt:
-      'Souvenir postcard of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
+      'Souvenir map of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view with a 1933 circus ticket, 3¢ Wisconsin 1848 stamp, compass rose, and souvenir program, labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
     typesLabel: 'Type denominations',
     typesIntro:
       'Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. The 5¢ in this collection shows John Ringling; the other fractionals stay unassigned until a holding is supplied.',

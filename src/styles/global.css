@@ -51,7 +51,7 @@
   --sticky-chrome-height: 10rem;
   /* Breathing mat below the in-flow header so a top-of-frame masthead is not flush. */
   --series-hero-chrome-clear-gap: 5rem;
-  /* Sampled from the Baraboo postcard's top edge so the mat reads as paper, not a crop. */
+  /* Sampled from the Baraboo souvenir map's top edge so the mat reads as paper, not a crop. */
   --series-hero-clear-mat: #bd8b4b;
 }
 
