@@ -222,12 +222,15 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(seriesHero, /clearStickyChrome/);
     assert.match(seriesHero, /series-hero--clear-chrome/);
     assert.match(seriesHero, /series-hero__photo/);
+    assert.match(seriesHero, /--series-hero-chrome-clear-gap/);
+    assert.match(globalCss, /--series-hero-chrome-clear-gap/);
     assert.doesNotMatch(seriesHero, /object-contain/);
     assert.doesNotMatch(seriesHero, /fit \?: 'cover' \| 'contain'/);
     assert.match(globalCss, /--sticky-chrome-height/);
     assert.match(globalCss, /series-hero--clear-chrome/);
     assert.match(layout, /data-sticky-chrome/);
     assert.match(layout, /--sticky-chrome-height/);
+    assert.doesNotMatch(layout, /SiteNotice/);
     const copyBlock = data.slice(
       data.indexOf('export const barabooScripSeriesCopy'),
       data.indexOf('export const barabooScripSeriesLead'),
