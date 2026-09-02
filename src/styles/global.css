@@ -49,6 +49,10 @@
   --chrome-gutter: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
+html {
+  overflow-x: clip;
+}
+
 html,
 body {
   background: var(--color-bg);
@@ -97,18 +101,6 @@ body {
   height: auto;
   outline: 2px solid var(--color-cream);
   outline-offset: 2px;
-}
-
-.site-notice {
-  padding-block: 0.35rem;
-  padding-inline: 0.5rem;
-}
-
-.site-notice-text {
-  margin: 0;
-  white-space: nowrap;
-  font-size: clamp(10px, 0.95vw, 13px);
-  line-height: 1.3;
 }
 
 :focus-visible {

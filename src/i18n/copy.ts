@@ -7,6 +7,7 @@ export const copy = {
   es: {
     skip: 'Saltar al contenido principal',
     siteNoticeLabel: 'Aviso del sitio',
+    siteNoticeShort: 'Actualizando las imágenes de la colección. Gracias por la paciencia.',
     siteNotice:
       'Estamos mejorando el sitio con cariño. En estos días actualizo las imágenes de mi colección para que se vean lo mejor posible. Si no encuentras la pieza que buscabas, te pido un poquito de paciencia. ¡Gracias por acompañarme!',
     brandTag: 'Numismática y Notafilia',
@@ -106,6 +107,7 @@ export const copy = {
   en: {
     skip: 'Skip to main content',
     siteNoticeLabel: 'Site notice',
+    siteNoticeShort: 'Refreshing the collection images. Thanks for your patience.',
     siteNotice:
       'This site is a work in progress, and I’m refreshing the images from my collection so they look their best. If you don’t find the piece you came for just yet, thanks for your patience — I’m glad you’re here.',
     brandTag: 'Numismatics and Notaphily',

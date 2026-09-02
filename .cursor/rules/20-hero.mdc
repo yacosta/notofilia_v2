@@ -14,10 +14,10 @@ Four visual patterns. Do not invent a fifth without updating this file.
 
 ## 1. Home (cinematic, centered)
 
-- `section` `min-h-[72vh]`, `aria-labelledby` pointing at the `h1`.
+- `section` `min-h-[28rem] md:min-h-[36rem] lg:min-h-screen`, `aria-labelledby` pointing at the `h1`.
 - Full-bleed `<img>`: `object-cover`, `fetchpriority="high"`, `decoding="async"`.
-- `src` / `srcset` from `cardImageSrc` + `heroSrcset` (`/cdn-cgi/image/…`). `sizes="100vw"`.
-- Intrinsic `width`/`height` must match the asset aspect (not a collapsed placeholder).
+- `src` / `srcset` / `sizes` from `src/lib/hero.ts` (`heroSrc`, `heroSrcset`, `heroSizes`) so the homepage preload is byte-identical. Do not call `cardImageSrc` or `images.heroSrcset` here.
+- Intrinsic `width`/`height` 1600×900 (not a collapsed placeholder).
 - Overlays: radial + linear dark gradients so cream type stays readable.
 - Stack: kicker rules → `NOTOFILIA` wordmark (display) → diamond divider → `h1` (title, not the wordmark) → lead → optional **single** stats line → primary + secondary CTAs.
 - Stats: at most one of (hero line, stats band). See `00-site-standards.mdc`.
