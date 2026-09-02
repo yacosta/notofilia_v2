@@ -197,13 +197,16 @@ export function collectionStats(pageCount: number = BASELINE.pages): CollectionS
   }
 
   const fichas = BASELINE.fichas + catalogAdditions.length;
+  const banknotes = BASELINE.banknotes + extraBanknotes;
+  const coins = BASELINE.coins + extraCoins;
 
   return {
-    banknotes: BASELINE.banknotes + extraBanknotes,
-    coins: BASELINE.coins + extraCoins,
+    banknotes,
+    coins,
     countries: BASELINE.countries + newCountries.size,
     fichas,
-    catalog: fichas,
+    // Catalog entries surface every physical holding: banknotes + coins.
+    catalog: banknotes + coins,
     pages: pageCount,
   };
 }
