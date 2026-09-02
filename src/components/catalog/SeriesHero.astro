@@ -11,8 +11,6 @@ interface Props {
   title: string;
   subtitle?: string;
   imageClass?: string;
-  /** Start the photo below sticky chrome with an in-flow parchment mat so a top-of-frame masthead stays visible. */
-  clearStickyChrome?: boolean;
 }
 
 const {
@@ -25,7 +23,6 @@ const {
   title,
   subtitle,
   imageClass = 'object-[50%_8%]',
-  clearStickyChrome = false,
 } = Astro.props;
 
 const isUpload = src.includes('/uploads/');
@@ -34,75 +31,56 @@ const imgSrc = isUpload ? src : cfImage(heroSrc, { width: 1600 });
 const imgSrcset = isUpload ? editorialUploadSrcset(src, width) : heroSrcset(heroSrc);
 ---
 
-<section
-  class:list={[
-    'w-full bg-[#0a0a09]',
-    clearStickyChrome ? 'series-hero--clear-chrome' : 'relative min-h-[86vh] md:min-h-[94vh]',
-  ]}
-  aria-labelledby={headingId}
->
+<section class="relative min-h-[86vh] w-full bg-[#0a0a09] md:min-h-[94vh]" aria-labelledby={headingId}>
+  <img
+    class:list={[
+      'absolute inset-0 h-full w-full object-cover [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
+      imageClass,
+    ]}
+    src={imgSrc}
+    srcset={imgSrcset}
+    sizes="100vw"
+    alt={alt}
+    width={width}
+    height={height}
+    fetchpriority="high"
+    decoding="async"
+  />
   <div
-    class:list={[clearStickyChrome ? 'series-hero__frame overflow-hidden' : 'contents']}
-    style={
-      clearStickyChrome
-        ? 'position:relative;padding-top:var(--series-hero-chrome-clear-gap);background:var(--series-hero-clear-mat)'
-        : undefined
-    }
+    class="absolute inset-0"
+    style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
   >
-    <img
-      class:list={[
-        'series-hero__photo w-full object-cover [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
-        clearStickyChrome ? 'relative block min-h-[86vh] md:min-h-[94vh]' : 'absolute inset-0 h-full',
-        imageClass,
-      ]}
-      src={imgSrc}
-      srcset={imgSrcset}
-      sizes="100vw"
-      alt={alt}
-      width={width}
-      height={height}
-      fetchpriority="high"
-      decoding="async"
-    />
-    <div
-      class="absolute inset-0"
-      style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
+  </div>
+  <div
+    class="absolute inset-0"
+    style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
+  >
+  </div>
+  <div
+    class="relative z-[1] mx-auto flex min-h-[86vh] max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(68vh,38rem)] md:min-h-[94vh] md:pb-16"
+  >
+    <p
+      class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]"
     >
-    </div>
-    <div
-      class="absolute inset-0"
-      style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
-    >
-    </div>
-    <div
+      {eyebrow}
+    </p>
+    <h1
+      id={headingId}
       class:list={[
-        'series-hero__copy relative z-[1] mx-auto flex max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 pt-[min(68vh,38rem)] md:pb-16',
-        !clearStickyChrome && 'min-h-[86vh] md:min-h-[94vh]',
+        'mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]',
+        !subtitle && 'text-[clamp(1.85rem,4vw,2.85rem)] text-cream-dim',
       ]}
     >
-      <p
-        class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]"
-      >
-        {eyebrow}
-      </p>
-      <h1
-        id={headingId}
-        class:list={[
-          'mb-0 mt-3 font-display font-normal leading-[1.12] text-cream [text-shadow:0_2px_24px_rgba(0,0,0,0.7)]',
-          !subtitle && 'text-[clamp(1.85rem,4vw,2.85rem)] text-cream-dim',
-        ]}
-      >
-        {
-          subtitle ? (
-            <>
-              <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{title}</span>
-              <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{subtitle}</span>
-            </>
-          ) : (
-            title
-          )
-        }
-      </h1>
-    </div>
+      {
+        subtitle ? (
+          <>
+            <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{title}</span>
+            <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{subtitle}</span>
+          </>
+        ) : (
+          title
+        )
+      }
+    </h1>
   </div>
 </section>
