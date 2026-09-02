@@ -11,7 +11,7 @@ import {
   NOTAFILIA_NOTES_CATALOG_PATH,
   type Locale,
 } from '../lib/site';
-import { cardImageSrc, heroSrcset } from '../lib/images';
+import { heroSizes, heroSrc, heroSrcset } from '../lib/hero';
 
 interface Props {
   locale: Locale;
@@ -24,15 +24,15 @@ const featuredNews = news.slice(0, 4);
 ---
 
 <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-  <section class="relative min-h-[72vh] w-full bg-[#0a0a09]" aria-labelledby="hero-heading">
+  <section class="relative min-h-[28rem] w-full bg-[#0a0a09] md:min-h-[36rem] lg:min-h-screen" aria-labelledby="hero-heading">
     <img
       class="absolute inset-0 h-full w-full object-cover object-[50%_40%] [filter:contrast(1.2)_brightness(0.85)_saturate(1.1)]"
-      src={cardImageSrc('/images/hero-slide.jpg')}
-      srcset={heroSrcset('/images/hero-slide.jpg')}
-      sizes="100vw"
+      src={heroSrc}
+      srcset={heroSrcset}
+      sizes={heroSizes}
       alt={t.heroAlt}
-      width="768"
-      height="284"
+      width="1600"
+      height="900"
       fetchpriority="high"
       decoding="async"
     />
@@ -47,13 +47,13 @@ const featuredNews = news.slice(0, 4);
     >
     </div>
 
-    <div class="relative z-[1] mx-auto flex min-h-[72vh] max-w-content flex-col items-center justify-center px-[var(--page-gutter)] py-16 text-center">
+    <div class="relative z-[1] flex min-h-[28rem] flex-col items-center justify-center px-[var(--page-gutter)] py-12 text-center outline-none md:min-h-[36rem] md:py-16 lg:min-h-screen">
       <div class="mb-7 flex items-center gap-4">
         <span class="h-px w-14 bg-[#e7dec98c]"></span>
         <span class="font-sans text-[17px] font-medium italic uppercase tracking-[0.28em] text-[#d8d2cd]">{t.heroKicker}</span>
         <span class="h-px w-14 bg-[#e7dec98c]"></span>
       </div>
-      <p class="m-0 font-display text-[clamp(48px,9vw,120px)] font-normal leading-[0.95] tracking-[0.04em] text-[#d8d2cd] [text-shadow:0_2px_24px_rgba(0,0,0,0.55)]">
+      <p class="m-0 font-display font-normal text-[clamp(40px,12vw,120px)] leading-[0.95] tracking-[0.04em] text-cream-dim [text-shadow:0_2px_24px_rgba(0,0,0,0.55)]">
         NOTOFILIA
       </p>
       <div class="my-6 flex items-center gap-[14px]">
@@ -67,7 +67,7 @@ const featuredNews = news.slice(0, 4);
       <p class="mb-0 mt-4 max-w-[42rem] font-sans text-[17px]/7 text-[#d8d2cd]">
         {t.heroLead}
       </p>
-      <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+      <div class="mt-8 flex w-full max-w-md flex-col items-stretch justify-center gap-3 sm:max-w-none sm:flex-row sm:items-center">
         <a
           href={localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale)}
           class="inline-flex min-h-12 items-center justify-center rounded-[2px] bg-[#e7ddc4] px-7 py-3 font-sans text-[15px] font-semibold uppercase tracking-[0.1em] text-[#0a0a09] no-underline hover:bg-[#d8d2cd]"

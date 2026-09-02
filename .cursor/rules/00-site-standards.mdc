@@ -42,6 +42,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 ## Images and LCP
 
 - Raster images that appear in the viewport or in cards go through `src/lib/images.ts` (`cfImage`, `heroSrcset`, `cardImageSrc`, `imageSrcset`) so the URL is `/cdn-cgi/image/…`.
+- Homepage LCP is the documented exception that still uses `cfImage`: `src/lib/hero.ts` exports the shared `heroSrc` / `heroSrcset` / `heroSizes` strings used by both the `<img>` and the homepage-only preload.
 - Exceptions: decorative SVG flags (`CountryFlag`), and full-resolution catalog scans inside `NoteImageLightbox` (detail viewing). Series heroes and editorial cards are **not** exceptions.
 - LCP hero: `fetchpriority="high"`, real `width`/`height` matching the file, `sizes` when `srcset` is present. Do not use a tiny intrinsic size on a full-viewport image.
 - Generated catalog files stay uncommitted (`public/images/catalog/`, `catalog-download/`).

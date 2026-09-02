@@ -1,11 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HomePage from '../components/HomePage.astro';
+import { heroSizes, heroSrc, heroSrcset } from '../lib/hero';
 import { copy } from '../lib/site';
 
 const t = copy.es;
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale="es" pathname="/" ogImage="/images/hero-slide.jpg">
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href={heroSrc}
+    imagesrcset={heroSrcset}
+    imagesizes={heroSizes}
+    fetchpriority="high"
+  />
   <HomePage locale="es" />
 </Layout>
