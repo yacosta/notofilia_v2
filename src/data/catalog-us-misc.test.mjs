@@ -168,8 +168,9 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(barabooPage, /t\.emptyHoldings/);
     assert.match(barabooPage, /collectionPageJsonLd/);
     assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /imageClass="object-\[50%_8%\]"/);
+    assert.match(barabooPage, /imageClass="bg-\[#c08e4f\] object-\[50%_3\.5rem\]"/);
     assert.doesNotMatch(barabooPage, /object-\[50%_58%\]/);
+    assert.doesNotMatch(barabooPage, /object-\[50%_8%\]/);
     assert.doesNotMatch(barabooPage, /fit="contain"/);
     assert.match(barabooPage, /id="main-content"/);
     assert.match(barabooPage, /USA_MISC_PATH/);
@@ -203,9 +204,10 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     );
     assert.match(data, /src: '\/uploads\/baraboo-golden-jubilee-1933\.jpg'/);
     assert.match(barabooPage, /const hero = BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /imageClass="object-\[50%_8%\]"/);
+    assert.match(barabooPage, /imageClass="bg-\[#c08e4f\] object-\[50%_3\.5rem\]"/);
     assert.match(seriesPage, /imageClass="object-\[50%_28%\]"/);
     assert.doesNotMatch(barabooPage, /object-\[50%_58%\]/);
+    assert.doesNotMatch(barabooPage, /object-\[50%_8%\]/);
     assert.doesNotMatch(barabooPage, /fit="contain"/);
     assert.doesNotMatch(barabooPage, /united-states\.jpg/);
     assert.doesNotMatch(barabooPage, /estados-unidos\.jpg/);
