@@ -1773,8 +1773,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP. Denominación alta de tamaño pequeño: última impresión en 1945 y retiro anunciado el 14 de julio de 1969. Esta ficha no inventa una tirada por distrito ni por bloque BA.',
-      en: 'BEP. A small-size high denomination: last printed in 1945, with withdrawal announced on 14 July 1969. This record does not invent a printage by district or BA block.',
+      es: 'Serie 1934 A, BEP. Denominación alta de tamaño pequeño: última impresión en 1945 y retiro anunciado el 14 de julio de 1969. Esta ficha no inventa una tirada por distrito ni por bloque BA.',
+      en: 'Series 1934A, BEP. A small-size high denomination: last printed in 1945, with withdrawal announced on 14 July 1969. This record does not invent a printage by district or BA block.',
     },
     images: {
       composite: '/images/catalog/estados-unidos/frn-1934a-500-new-york-b00286799-composite.jpg',
