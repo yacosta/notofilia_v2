@@ -7,8 +7,9 @@ const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.u
 const googlePreferred = readFileSync(new URL('../components/GooglePreferredSourceButton.astro', import.meta.url), 'utf8');
 const headers = readFileSync(new URL('../../public/_headers', import.meta.url), 'utf8');
 const homePage = readFileSync(new URL('../components/HomePage.astro', import.meta.url), 'utf8');
-const siteNotice = readFileSync(new URL('../components/SiteNotice.astro', import.meta.url), 'utf8');
+const header = readFileSync(new URL('../components/Header.astro', import.meta.url), 'utf8');
 const layout = readFileSync(new URL('../layouts/Layout.astro', import.meta.url), 'utf8');
+const copy = readFileSync(new URL('../i18n/copy.ts', import.meta.url), 'utf8');
 const indexEs = readFileSync(new URL('../pages/index.astro', import.meta.url), 'utf8');
 const indexEn = readFileSync(new URL('../pages/en/index.astro', import.meta.url), 'utf8');
 const globalCss = readFileSync(new URL('../styles/global.css', import.meta.url), 'utf8');
@@ -49,13 +50,10 @@ describe('homepage LCP hero strings', () => {
 });
 
 describe('mobile chrome patch', () => {
-  it('wraps the site notice and swaps short/long copy', () => {
-    assert.match(siteNotice, /flex-wrap/);
-    assert.match(siteNotice, /pt-\[max\(0\.4rem,env\(safe-area-inset-top\)\)\]/);
-    assert.match(siteNotice, /siteNoticeShort/);
-    assert.match(siteNotice, /sm:hidden/);
-    assert.match(siteNotice, /hidden sm:inline/);
-    assert.doesNotMatch(siteNotice, /flex-nowrap/);
+  it('does not render the red site notice banner', () => {
+    assert.doesNotMatch(layout, /SiteNotice/);
+    assert.doesNotMatch(copy, /siteNotice/);
+    assert.match(header, /pt-\[env\(safe-area-inset-top\)\]/);
     assert.doesNotMatch(globalCss, /white-space:\s*nowrap/);
   });
 
