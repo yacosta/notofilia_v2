@@ -300,6 +300,31 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
   });
 });
 
+describe('US obsolete City Bank of New Haven $5 remainder', () => {
+  it('records the unsigned CT-265 G52b remainder without inventing a serial', () => {
+    assert.match(data, /id: '5-dolares-city-bank-new-haven'/);
+    assert.match(data, /Haxby CT-265 G52b/);
+    assert.match(data, /no_serial_reason:\n      'Obsolete remainder: the printed No\. field is blank/);
+    assert.match(data, /Hacia 1850\. Toppan/);
+    assert.match(data, /Beast Coins cataloga el tipo G52b con monograma/);
+    assert.match(data, /this photograph does not support asserting that the monogram is visible/);
+    assert.match(data, /Haxby NJ-350 G16a, serial 9890 · B/);
+    assert.doesNotMatch(data.slice(data.indexOf("id: '5-dolares-city-bank-new-haven'")), /serial: '9890/);
+    const esPiece = readFileSync(
+      new URL('../pages/coleccion/estados-unidos/5-dolares-city-bank-new-haven/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enPiece = readFileSync(
+      new URL('../pages/en/collection/united-states/5-dollars-city-bank-new-haven/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
+  });
+});
+
 describe('US Rency Trump / Never Surrender holding', () => {
   it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
     assert.match(data, /id: 'renci-trump-never-surrender'/);
