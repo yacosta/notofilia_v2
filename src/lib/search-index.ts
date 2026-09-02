@@ -346,7 +346,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       title: { es: barabooScripSeriesCopy.es.title, en: barabooScripSeriesCopy.en.title },
       dek: { es: barabooScripSeriesCopy.es.metaDescription, en: barabooScripSeriesCopy.en.metaDescription },
       extra:
-        'Ringling Bros Barnum Bailey Golden Jubilee Baraboo 1933 Shafer WI100 Trimpey Chamber scrip Allied Owners',
+        'Ringling Bros Barnum Bailey Golden Jubilee Baraboo 1933 Shafer WI100 Trimpey Chamber scrip Allied Owners John Ringling A4895 5 cents',
     },
   ]) {
     docs.push({

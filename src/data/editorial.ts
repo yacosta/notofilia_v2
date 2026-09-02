@@ -195,6 +195,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: barabooScripSeriesCopy.es.breadcrumbCurrent,
     en: barabooScripSeriesCopy.en.breadcrumbCurrent,
   },
+  '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/': {
+    es: '5 centavos · John Ringling · A4895',
+    en: '5¢ · John Ringling · A4895',
+  },
 };
 
 export function resolveRelated(related: RelatedLink[], locale: Locale): RelatedLink[] {

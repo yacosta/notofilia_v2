@@ -83,6 +83,13 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
       localizePath('/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/', 'en'),
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     );
+    assert.equal(
+      localizePath(
+        '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/',
+        'en',
+      ),
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });
