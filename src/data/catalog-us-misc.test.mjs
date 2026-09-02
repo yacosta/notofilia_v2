@@ -169,7 +169,9 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(barabooPage, /t\.emptyHoldings/);
     assert.match(barabooPage, /collectionPageJsonLd/);
     assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /imageClass="object-\[50%_58%\]"/);
+    assert.match(barabooPage, /imageClass="object-\[50%_0%\]"/);
+    assert.match(barabooPage, /clearStickyChrome=\{true\}/);
+    assert.doesNotMatch(barabooPage, /object-\[50%_58%\]/);
     assert.doesNotMatch(barabooPage, /fit="contain"/);
     assert.match(barabooPage, /id="main-content"/);
     assert.match(barabooPage, /USA_MISC_PATH/);
@@ -201,9 +203,13 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
       new URL('../components/catalog/SeriesHero.astro', import.meta.url),
       'utf8',
     );
+    const globalCss = readFileSync(new URL('../styles/global.css', import.meta.url), 'utf8');
+    const layout = readFileSync(new URL('../layouts/Layout.astro', import.meta.url), 'utf8');
     assert.match(data, /src: '\/uploads\/baraboo-golden-jubilee-1933\.jpg'/);
     assert.match(barabooPage, /const hero = BARABOO_JUBILEE_FIGURE/);
-    assert.match(barabooPage, /imageClass="object-\[50%_58%\]"/);
+    assert.match(barabooPage, /imageClass="object-\[50%_0%\]"/);
+    assert.match(barabooPage, /clearStickyChrome=\{true\}/);
+    assert.doesNotMatch(barabooPage, /object-\[50%_58%\]/);
     assert.doesNotMatch(barabooPage, /fit="contain"/);
     assert.doesNotMatch(barabooPage, /united-states\.jpg/);
     assert.doesNotMatch(barabooPage, /estados-unidos\.jpg/);
@@ -213,8 +219,15 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(seriesHero, /src\.includes\('\/uploads\/'\)/);
     assert.match(seriesHero, /fetchpriority="high"/);
     assert.match(seriesHero, /object-cover/);
+    assert.match(seriesHero, /clearStickyChrome/);
+    assert.match(seriesHero, /series-hero--clear-chrome/);
+    assert.match(seriesHero, /series-hero__photo/);
     assert.doesNotMatch(seriesHero, /object-contain/);
     assert.doesNotMatch(seriesHero, /fit \?: 'cover' \| 'contain'/);
+    assert.match(globalCss, /--sticky-chrome-height/);
+    assert.match(globalCss, /series-hero--clear-chrome/);
+    assert.match(layout, /data-sticky-chrome/);
+    assert.match(layout, /--sticky-chrome-height/);
     const copyBlock = data.slice(
       data.indexOf('export const barabooScripSeriesCopy'),
       data.indexOf('export const barabooScripSeriesLead'),

@@ -76,10 +76,24 @@ const siteJsonLd = websiteJsonLd(locale);
   </head>
   <body class="m-0 min-h-full bg-bg font-serif text-[17px]/7 text-cream">
     <SkipLink locale={locale} />
-    <div class="sticky top-0 z-[60]">
+    <div class="sticky top-0 z-[60]" data-sticky-chrome>
       <SiteNotice locale={locale} />
       <Header locale={locale} pathname={pathname} />
     </div>
+    <script is:inline>
+      (() => {
+        const chrome = document.querySelector('[data-sticky-chrome]');
+        if (!chrome) return;
+        const root = document.documentElement;
+        const sync = () => {
+          root.style.setProperty('--sticky-chrome-height', `${chrome.offsetHeight}px`);
+        };
+        sync();
+        if (typeof ResizeObserver === 'function') {
+          new ResizeObserver(sync).observe(chrome);
+        }
+      })();
+    </script>
     <slot />
     <Footer locale={locale} />
   </body>
