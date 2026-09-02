@@ -243,6 +243,18 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(copyBlock, /Al\. Ringling Theatre/);
     assert.match(copyBlock, /Sauk County Courthouse/);
     assert.match(copyBlock, /C\. & N\.W\. yards/);
+    assert.match(copyBlock, /Mapa souvenir/);
+    assert.match(copyBlock, /Souvenir map/);
+    assert.match(copyBlock, /boleto de circo de 1933/);
+    assert.match(copyBlock, /1933 circus ticket/);
+    assert.match(copyBlock, /sello de 3¢ de Wisconsin 1848/);
+    assert.match(copyBlock, /3¢ Wisconsin 1848 stamp/);
+    assert.match(copyBlock, /rosa de los vientos/);
+    assert.match(copyBlock, /compass rose/);
+    assert.match(copyBlock, /programa souvenir/);
+    assert.match(copyBlock, /souvenir program/);
+    assert.doesNotMatch(copyBlock, /Postal souvenir/);
+    assert.doesNotMatch(copyBlock, /Souvenir postcard/);
     assert.doesNotMatch(copyBlock, /Mapa vintage de Estados Unidos sobre pergamino/);
     assert.doesNotMatch(copyBlock, /Vintage map of the United States on parchment/);
   });
