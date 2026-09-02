@@ -9,13 +9,17 @@ import {
   USA_MISC_PATH,
   USA_PATH,
   barabooScripDenominations,
+  barabooScripHoldings,
   barabooScripNarrative,
   barabooScripRelated,
   barabooScripSeriesCopy,
   barabooScripSeriesLead,
   barabooScripSeriesPath,
   barabooScripSeriesSources,
+  noteById,
+  notePath,
 } from '../../data/estados-unidos';
+import CatalogThumb from './CatalogThumb.astro';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -26,6 +30,7 @@ const { locale } = Astro.props;
 const t = barabooScripSeriesCopy[locale];
 const pathname = barabooScripSeriesPath(locale);
 const hero = BARABOO_JUBILEE_FIGURE;
+const holdings = barabooScripHoldings();
 
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -105,15 +110,34 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.typesIntro}</p>
         <ol class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2" aria-label={t.typesLabel}>
           {
-            barabooScripDenominations.map((denom) => (
-              <li class="min-w-0 rounded-[6px] border border-dashed border-line-strong bg-panel p-4">
-                <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim">
-                  {denom.face[locale]}
-                </h3>
-                <p class="mb-3 mt-0 font-sans text-[14px]/6 text-muted">{denom.subject[locale]}</p>
-                <p class="mb-0 mt-0 font-sans text-[13px] text-gold-light">{t.pendingLabel}</p>
-              </li>
-            ))
+            barabooScripDenominations.map((denom) => {
+              const holding = denom.holdingId ? noteById(denom.holdingId) : undefined;
+              return holding ? (
+                <li class="min-w-0">
+                  <a
+                    href={notePath(holding, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-4 text-inherit no-underline hover:border-gold-light"
+                  >
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {denom.face[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[14px]/6 text-muted">{denom.subject[locale]}</p>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.pickLabel} {holding.pick} · {t.serialLabel} {holding.serial}
+                    </p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  </a>
+                </li>
+              ) : (
+                <li class="min-w-0 rounded-[6px] border border-dashed border-line-strong bg-panel p-4">
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim">
+                    {denom.face[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[14px]/6 text-muted">{denom.subject[locale]}</p>
+                  <p class="mb-0 mt-0 font-sans text-[13px] text-gold-light">{t.pendingLabel}</p>
+                </li>
+              );
+            })
           }
         </ol>
       </section>
@@ -123,9 +147,42 @@ const jsonLd = collectionPageJsonLd({
           {t.holdingsTitle}
         </h2>
         <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-        <div class="mt-8 rounded-[6px] border border-dashed border-line-strong bg-panel px-6 py-10">
-          <p class="m-0 text-[17px]/7 text-muted">{t.emptyHoldings}</p>
-        </div>
+        {
+          holdings.length === 0 ? (
+            <div class="mt-8 rounded-[6px] border border-dashed border-line-strong bg-panel px-6 py-10">
+              <p class="m-0 text-[17px]/7 text-muted">{t.emptyHoldings}</p>
+            </div>
+          ) : (
+            <ol
+              class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+              aria-label={t.holdingsTitle}
+            >
+              {holdings.map((note) => (
+                <li class="min-w-0">
+                  <a
+                    href={notePath(note, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                  >
+                    <CatalogThumb
+                      src={note.images.front}
+                      alt={note.frontCaption[locale]}
+                      width={note.images.width ?? 1800}
+                      height={note.images.height ?? 600}
+                      class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    />
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {note.title[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                    </p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          )
+        }
       </section>
 
       <aside class="mt-16 rounded-[4px] border border-line px-6 py-6" aria-labelledby="baraboo-related-heading">

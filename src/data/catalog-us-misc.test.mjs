@@ -145,11 +145,11 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /1 de noviembre de 1933/);
     assert.match(data, /1 November 1933/);
     assert.match(data, /barabooScripDenominations/);
-    assert.match(data, /Aún no hay fichas de ejemplar/);
-    assert.match(data, /There are no piece pages yet/);
+    assert.match(data, /id: 'scrip-baraboo-5-centavos-a4895'/);
+    assert.match(data, /serial: 'A4895'/);
+    assert.match(data, /John Ringling/);
     assert.match(data, /No se inventan seriales/);
     assert.match(data, /Serials are not invented here/);
-    assert.doesNotMatch(data, /id: 'scrip-baraboo/);
     assert.match(seriesPage, /viewMiscCase/);
     assert.match(seriesPage, /USA_MISC_PATH/);
     assert.match(miscPage, /barabooScripSeriesPath/);
@@ -165,6 +165,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(barabooPage, /barabooScripDenominations/);
     assert.match(barabooPage, /barabooScripNarrative/);
     assert.match(barabooPage, /barabooScripSeriesLead/);
+    assert.match(barabooPage, /barabooScripHoldings/);
     assert.match(barabooPage, /t\.emptyHoldings/);
     assert.match(barabooPage, /collectionPageJsonLd/);
     assert.match(barabooPage, /BARABOO_JUBILEE_FIGURE/);
@@ -234,6 +235,35 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /The \$1 shows the group/);
     assert.doesNotMatch(data, /Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢—/);
     assert.doesNotMatch(data, /The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ —/);
+  });
+
+  it('publishes the 5¢ John Ringling holding A4895 with thin ES/EN piece routes', () => {
+    const esPiece = readFileSync(
+      new URL(
+        '../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    const enPiece = readFileSync(
+      new URL(
+        '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    assert.match(data, /id: 'scrip-baraboo-5-centavos-a4895'/);
+    assert.match(data, /serial: 'A4895'/);
+    assert.match(data, /Shafer WI100 · 5¢/);
+    assert.match(data, /holdingId: 'scrip-baraboo-5-centavos-a4895'/);
+    assert.match(data, /P\. L\. Gust/);
+    assert.match(data, /O\. L\. Gust/);
+    assert.match(notePage, /isBarabooScripNote/);
+    assert.match(notePage, /barabooScripSeriesPath/);
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
   });
 });
 

@@ -4,6 +4,9 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
+  barabooScripSeriesCopy,
+  barabooScripSeriesPath,
+  isBarabooScripNote,
   notePageCopy,
   notePath,
   noteSeriesHref,
@@ -85,7 +88,12 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: seriesPath(locale), label: t.seriesLink },
           ...(note.chapterId === 'us-miscelaneos'
-            ? [{ href: localizePath(USA_MISC_PATH, locale), label: t.miscLink }]
+            ? [
+                { href: localizePath(USA_MISC_PATH, locale), label: t.miscLink },
+                ...(isBarabooScripNote(note)
+                  ? [{ href: barabooScripSeriesPath(locale), label: barabooScripSeriesCopy[locale].breadcrumbCurrent }]
+                  : []),
+              ]
             : note.chapterId === 'us-pop-art'
               ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
               : []),
@@ -215,7 +223,13 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
           href={noteSeriesHref(note, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          ← {note.chapterId === 'us-miscelaneos' ? t.miscLink : note.chapterId === 'us-pop-art' ? t.rencyLink : t.seriesLink}
+          ← {isBarabooScripNote(note)
+            ? t.barabooLink
+            : note.chapterId === 'us-miscelaneos'
+              ? t.miscLink
+              : note.chapterId === 'us-pop-art'
+                ? t.rencyLink
+                : t.seriesLink}
         </a>
       </p>
     </article>
