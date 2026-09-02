@@ -460,6 +460,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-city-bank-new-haven/',
     );
     assert.equal(
+      redirects['/en/coleccion/united-states/5-dollars-city-bank-new-haven/'],
+      '/en/collection/united-states/5-dollars-city-bank-new-haven/',
+    );
+    assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );

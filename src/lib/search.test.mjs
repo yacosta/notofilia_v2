@@ -109,6 +109,15 @@ describe('collection search helpers', () => {
         signatures: 'Manuscript cashier; president blank (remainder)',
       }).includes('remainder'),
     );
+    assert.ok(
+      inferPieceFlags({
+        kind: 'banknote',
+        id: '5-dolares-city-bank-new-haven',
+        serial: '—',
+        grade: 'Remainder, unslabbed (private collection)',
+        signatures: 'None (Cash.r and Pres.t blank; remainder)',
+      }).includes('remainder'),
+    );
   });
 
   it('ranks a serial hit and filters specimens without a price sort', () => {
