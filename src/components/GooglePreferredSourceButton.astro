@@ -77,6 +77,15 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     en: '234px',
   };
 
+  function loadSwgPublisher() {
+    if (document.querySelector('script[data-swg-publisher]')) return;
+    const script = document.createElement('script');
+    script.src = 'https://news.google.com/swg/js/v1/publisher.js';
+    script.async = true;
+    script.dataset.swgPublisher = '';
+    document.head.appendChild(script);
+  }
+
   function lockPreferredSourceFrame(root: Element) {
     const host = root.querySelector('[google-add-preferred-source-btn]');
     if (!(host instanceof HTMLElement)) return;
@@ -107,4 +116,11 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
   }
 
   document.querySelectorAll('.google-preferred-source').forEach(lockPreferredSourceFrame);
+
+  const bootSwg = () => loadSwgPublisher();
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(bootSwg, { timeout: 4000 });
+  } else {
+    window.addEventListener('load', bootSwg, { once: true });
+  }
 </script>
