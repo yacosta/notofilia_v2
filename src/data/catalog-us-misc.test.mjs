@@ -222,10 +222,17 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(seriesHero, /clearStickyChrome/);
     assert.match(seriesHero, /series-hero--clear-chrome/);
     assert.match(seriesHero, /series-hero__photo/);
+    assert.match(seriesHero, /series-hero__frame/);
+    assert.match(seriesHero, /padding-top:var\(--series-hero-chrome-clear-gap\)/);
+    assert.match(seriesHero, /--series-hero-clear-mat/);
     assert.doesNotMatch(seriesHero, /object-contain/);
     assert.doesNotMatch(seriesHero, /fit \?: 'cover' \| 'contain'/);
     assert.match(globalCss, /--sticky-chrome-height/);
+    assert.match(globalCss, /--series-hero-chrome-clear-gap:\s*5rem/);
+    assert.match(globalCss, /--series-hero-clear-mat:\s*#bd8b4b/);
     assert.match(globalCss, /series-hero--clear-chrome/);
+    assert.match(globalCss, /padding-top:\s*var\(--series-hero-chrome-clear-gap\)/);
+    assert.doesNotMatch(globalCss, /margin-top:\s*calc\(-1 \* var\(--sticky-chrome-height\)\)/);
     assert.match(layout, /data-sticky-chrome/);
     assert.match(layout, /--sticky-chrome-height/);
     assert.doesNotMatch(layout, /SiteNotice/);
