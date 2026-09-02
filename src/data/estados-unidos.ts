@@ -89,8 +89,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'State banks, broken banknotes, and the tax that ended private issue.',
     },
     body: {
-      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. En esta colección caben bancos como el Citizens Bank of Louisiana, el State Bank of New Brunswick, el City Bank of New Haven y el Hagerstown Bank de Maryland.',
-      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. Banks such as the Citizens Bank of Louisiana, the State Bank of New Brunswick, the City Bank of New Haven, and the Hagerstown Bank of Maryland belong here.',
+      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, y el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial. En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
+      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, and the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
     },
   },
   {
@@ -842,6 +842,7 @@ export const rencySeriesSources: CatalogSource[] = [
 export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
+  | '5-dolares-city-bank-new-haven'
   | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
   | '10-dolares-serie-1934-chicago'
@@ -1036,6 +1037,91 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Cierre el 31 de marzo de 1877 a la una de la tarde; los oficiales se negaron a dar un estado de cuentas.',
           en: 'Closed on 31 March 1877 at one in the afternoon; the officers refused to issue a statement.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-dolares-city-bank-new-haven',
+    chapterId: 'us-obsoleto',
+    path: '/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
+    pathEn: '/collection/united-states/5-dollars-city-bank-new-haven/',
+    pick: 'Haxby CT-265 G52b',
+    serial: '—',
+    no_serial_reason:
+      'Unsigned remainder: the serial, date, cashier, and president lines were never filled.',
+    signatures: {
+      es: 'Ninguna (remainder: Cashr. y Pres.t en blanco)',
+      en: 'None (remainder: Cashr. and Pres.t blank)',
+    },
+    printed: {
+      es: 'Hacia 1850. Toppan, Carpenter, Casilear & Co., Nueva York y Filadelfia. Remainder sin fechar (18__) de las planchas de 5 dólares del City Bank of New Haven; Beast Coins sitúa el tipo G52b en la segunda mitad de esa década y en los 1860. No se publica una tirada de circulación para este tipo.',
+      en: 'Ca. 1850. Toppan, Carpenter, Casilear & Co., New York and Philadelphia. An undated remainder (18__) from the City Bank of New Haven $5 plates; Beast Coins places type G52b in the late 1850s and the 1860s. No circulating printage is published for this type.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/ct-265-5-dollar-new-haven-composite.jpg',
+      front: '/images/catalog/estados-unidos/ct-265-5-dollar-new-haven-front.jpg',
+      back: '/images/catalog/estados-unidos/ct-265-5-dollar-new-haven-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '5 dólares · City Bank of New Haven',
+      en: '$5 · City Bank of New Haven',
+    },
+    kicker: {
+      es: 'Estados Unidos · Billete obsoleto · Connecticut',
+      en: 'United States · Obsolete note · Connecticut',
+    },
+    lead: {
+      es: 'Remainder de 5 dólares del City Bank of New Haven: protector rojo FIVE, plancha A, fecha 18__ incompleta y líneas de firma en blanco.',
+      en: 'A $5 remainder of the City Bank of New Haven: a red FIVE protector, plate A, an incomplete 18__ date, and blank signature lines.',
+    },
+    description: {
+      es: 'El 5 dólares Haxby CT-265 G52b es un obsolete note del City Bank of New Haven, Connecticut. El anverso, en negro sobre papel crema, se titula «The City Bank of New Haven» en letra gótica y promete pagar cinco dólares al portador. Arriba, un puerto con vapor de ruedas, velero y botes; a la derecha, un retrato masculino en óvalo; a la izquierda, un escudo con gavillas; abajo, un águila entre las líneas de firma. Las esquinas superiores llevan el 5 en medallones de guilloche; las inferiores, FIVE. Un protector rojo FIVE cruza el centro, con FIVE DOLLARS grabado encima. El campo No. está en blanco; la fecha impresa queda en 18__; Cashr. y Pres.t no tienen firma; la letra de plancha es A: es un remainder, no un ejemplar puesto en circulación. El pie de imprenta es Toppan, Carpenter, Casilear & Co., New York & Phila. El reverso no lleva un grabado de circulación propio: se ve el anverso por transparencia, con el FIVE rojo invertido. No debe confundirse con el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a) ni con los National Bank Notes de New Haven posteriores a la carta nacional.',
+      en: 'The $5 Haxby CT-265 G52b is an obsolete note of the City Bank of New Haven, Connecticut. The face, black on cream paper, is titled “The City Bank of New Haven” in blackletter and promises to pay five dollars to the bearer. At top a harbor with a side-wheel steamer, a sailing ship, and small boats; at right a male portrait in an oval; at left a shield with sheaves; below an eagle between the signature lines. The upper corners carry 5s in lathework medallions; the lower corners, FIVE. A red FIVE protector crosses the center, with FIVE DOLLARS engraved over it. The No. field is blank; the printed date stops at 18__; Cashr. and Pres.t are unsigned; the plate letter is A: this is a remainder, not a note placed in circulation. The imprint is Toppan, Carpenter, Casilear & Co., New York & Phila. The back has no circulating reverse plate of its own: the face shows through, with the red FIVE reversed. It should not be confused with the $1 remainder of the State Bank at New Brunswick (Haxby NJ-350 G16a) or with later New Haven National Bank Notes.',
+    },
+    history: {
+      es: 'Beast Coins fecha el City Bank of New Haven en 1832–1915 y lo cataloga como Haxby CT-265; el destino del banco es la fusión con el New Haven National Bank. El tipo de 5 dólares G52b —protector rojo, imprenta Toppan, Carpenter, Casilear & Co., Nueva York y Filadelfia— sobrevive sobre todo como remainder sin serial, sin firmas y con fecha 18__, en planchas A, B y C. Esta ficha es la plancha A. La Society of Paper Money Collectors sitúa en enero de 1915 el acuerdo de los accionistas del City Bank para fusionarse con el National New Haven Bank (chárter 1243) y el New Haven County National Bank, y la fusión formal hacia agosto de 1915, bajo el nombre New Haven Bank, National Banking Association. El impuesto del 10 % sobre el papel estatal (1865–1866) explica por qué estas planchas de los años 1850 quedaron sin terminar de firmar. Esta ficha no afirma que el retrato de la derecha esté identificado.',
+      en: 'Beast Coins dates the City Bank of New Haven to 1832–1915 and catalogues it as Haxby CT-265; the bank’s fate is a merger with the New Haven National Bank. The $5 type G52b — red protector, Toppan, Carpenter, Casilear & Co., New York and Philadelphia — survives chiefly as remainders without serial, signatures, or a completed 18__ date, from plates A, B, and C. This record is plate A. The Society of Paper Money Collectors places in January 1915 the City Bank stockholders’ agreement to merge with the National New Haven Bank (charter 1243) and the New Haven County National Bank, with the formal merger around August 1915 as the New Haven Bank, National Banking Association. The 10 percent tax on state-bank paper (1865–1866) explains why these 1850s plates were left unsigned. This record does not identify the portrait at right.',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 dólares remainder, Haxby CT-265 G52b, plancha A: puerto con vapor de ruedas, protector rojo FIVE y líneas de firma en blanco.',
+      en: 'Face of the $5 remainder, Haxby CT-265 G52b, plate A: harbor with a side-wheel steamer, red FIVE protector, and blank signature lines.',
+    },
+    backCaption: {
+      es: 'Reverso del remainder: el FIVE rojo se ve invertido por transparencia; no hay plancha de reverso de circulación.',
+      en: 'Back of the remainder: the red FIVE shows through reversed; there is no circulating reverse plate.',
+    },
+    scarcity: {
+      es: 'Los 5 dólares G52b del mercado son casi todos remainders: fecha 18__, sin serial ni firmas, protector rojo y plancha A, B o C. Beast Coins ilustra ejemplares de las tres planchas, incluido un G52b plancha B encapsulado. Esta ficha no publica precios ni un censo de existencias.',
+      en: 'Almost all G52b $5 notes on the market are remainders: an 18__ date, no serial or signatures, a red protector, and plate A, B, or C. Beast Coins illustrates examples of all three plates, including a slabbed plate B G52b. This record does not publish prices or a supply census.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este remainder sin serial. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for this unsigned remainder has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Remainder, sin encapsular (colección privada)',
+      en: 'Remainder, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.beastcoins.com/Banknotes/Obsolete/Connecticut/Connecticut.htm',
+        es: 'Beast Coins — Obsolete notes de Connecticut, CT-265',
+        en: 'Beast Coins — Connecticut obsolete notes, CT-265',
+        note: {
+          es: 'City Bank of New Haven, 1832–1915; 5 dólares Haxby CT-265 G52b, Toppan, Carpenter, Casilear & Co.; remainder sin emitir, planchas A–C; destino: fusionado con el New Haven National Bank.',
+          en: 'City Bank of New Haven, 1832–1915; $5 Haxby CT-265 G52b, Toppan, Carpenter, Casilear & Co.; unissued remainder, plates A–C; fate: merged with the New Haven National Bank.',
+        },
+      },
+      {
+        href: 'https://banknotehistory.spmc.org/wiki/National_New_Haven_Bank/New_Haven_Bank_NB_Association,_New_Haven,_CT_(Charter_1243)',
+        es: 'SPMC Bank Note History — National New Haven Bank, chárter 1243',
+        en: 'SPMC Bank Note History — National New Haven Bank, charter 1243',
+        note: {
+          es: 'Enero de 1915: los accionistas del City Bank aprueban la fusión con el National New Haven Bank y el New Haven County National Bank; fusión formal hacia agosto de 1915 como New Haven Bank, National Banking Association.',
+          en: 'January 1915: City Bank stockholders approve a merger with the National New Haven Bank and the New Haven County National Bank; formal merger around August 1915 as the New Haven Bank, National Banking Association.',
         },
       },
     ],
