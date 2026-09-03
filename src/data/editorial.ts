@@ -11,6 +11,11 @@ export type RelatedLink = {
   dek: string;
 };
 
+export type PrimarySource = {
+  label: LocalizedText;
+  url: string;
+};
+
 export type ClaimCallout = {
   kindEs: string;
   kindEn: string;
@@ -41,11 +46,15 @@ export type EditorialArticle = {
   reviewer?: string | null;
   sourceName?: string | null;
   sourceUrl?: string | null;
+  keywords?: { es: string[]; en: string[] };
+  primarySources?: PrimarySource[];
   image: string;
   imageWidth?: number;
   imageHeight?: number;
   imageAlt: LocalizedText;
   caption: LocalizedText;
+  /** Letterbox the in-flow figure instead of cropping to 16:9. */
+  imageFit?: 'contain' | 'cover';
   /** Museum-case column (`max-w-content`) instead of the 46rem reading measure. */
   wide?: boolean;
   bodyHtml: LocalizedText;
@@ -79,6 +88,7 @@ export const editorialCopy = {
     updated: 'Última actualización',
     reviewedBy: 'Revisado por',
     source: 'Fuente',
+    primarySources: 'Fuentes primarias',
     aboutFigure: 'Sobre este valor',
     figureType: 'Tipo de cifra:',
     currency: 'Moneda:',
@@ -109,6 +119,7 @@ export const editorialCopy = {
     updated: 'Last updated',
     reviewedBy: 'Reviewed by',
     source: 'Source',
+    primarySources: 'Primary sources',
     aboutFigure: 'About this figure',
     figureType: 'Type of figure:',
     currency: 'Currency:',

@@ -418,6 +418,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
 
   for (const article of newsArticles) {
     const body = stripHtml(article.bodyHtml[locale]);
+    const keywords = (article.keywords?.[locale] ?? []).join(' ');
     docs.push({
       id: `news:${article.slug}:${locale}`,
       kind: 'news',
@@ -431,7 +432,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       serialNormalized: '',
       cert: '',
       flags: ['news'],
-      searchText: `${article.title[locale]} ${article.dek[locale]} ${body}`,
+      searchText: `${article.title[locale]} ${article.dek[locale]} ${body} ${keywords}`.trim(),
     });
   }
 

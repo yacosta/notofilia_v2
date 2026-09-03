@@ -41,8 +41,10 @@ const body = enhanceProseHtml(rawBody, locale);
 const related = resolveRelated(article.related, locale);
 const claim = article.claim;
 const wide = Boolean(article.wide);
+const containImage = article.imageFit === 'contain' || wide;
 const imageWidth = article.imageWidth ?? 1200;
 const imageHeight = article.imageHeight ?? 675;
+const keywords = article.keywords?.[locale] ?? [];
 
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(article.image, SITE_URL).href;
@@ -67,6 +69,7 @@ const jsonLd = {
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       articleSection: sectionLabel,
+      ...(keywords.length ? { keywords: keywords.join(', ') } : {}),
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
       reviewedBy: { '@type': 'Person', name: reviewerName, '@id': PERSON_ID },
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -176,7 +179,7 @@ const jsonLd = {
 
       <figure class="mb-10 mt-0">
         <img
-          src={wide ? article.image : cardImageSrc(article.image)}
+          src={containImage ? article.image : cardImageSrc(article.image)}
           srcset={editorialUploadSrcset(article.image, imageWidth)}
           sizes={wide ? '(max-width: 768px) 100vw, 75rem' : '(max-width: 768px) 100vw, 46rem'}
           alt={article.imageAlt[locale]}
@@ -184,7 +187,7 @@ const jsonLd = {
           height={imageHeight}
           class:list={[
             'w-full bg-panel',
-            wide ? 'h-auto object-contain' : 'aspect-video object-cover',
+            containImage ? 'h-auto object-contain' : 'aspect-video object-cover',
           ]}
           fetchpriority="high"
           decoding="async"
@@ -252,6 +255,31 @@ const jsonLd = {
       <div class:list={['prose-notofilia', wide && 'max-w-[46rem]']} lang={bodyIsFallback ? 'es' : locale} set:html={body} />
 
       {faqItems.length ? <FaqBlock heading={copy[locale].faqHeading} items={faqItems} /> : null}
+
+      {
+        article.primarySources?.length ? (
+          <section class="mt-10 border-t border-line pt-6" aria-labelledby="primary-sources-heading">
+            <h2 id="primary-sources-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+              {t.primarySources}
+            </h2>
+            <ul class="m-0 grid list-none gap-2 p-0">
+              {article.primarySources.map((source) => (
+                <li>
+                  <a
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex min-h-11 items-center text-cream underline decoration-line-strong hover:text-gold-light"
+                  >
+                    {source.label[locale]}
+                    <NewWindowHint locale={locale} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null
+      }
 
       {
         article.sourceName && article.sourceUrl ? (

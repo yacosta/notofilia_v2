@@ -67,4 +67,10 @@ describe('glossary and FAQ JSON-LD', () => {
     assert.match(articlePage, /reviewedBy: \{ '@type': 'Person', name: reviewerName/);
     assert.match(articlePage, /const reviewerName = article\.reviewer \|\| SITE_AUTHOR/);
   });
+
+  it('letterboxes contain figures and lists primary sources with a new-window hint', () => {
+    assert.match(articlePage, /containImage \? 'h-auto object-contain'/);
+    assert.match(articlePage, /article\.primarySources/);
+    assert.match(articlePage, /primary-sources-heading/);
+  });
 });
