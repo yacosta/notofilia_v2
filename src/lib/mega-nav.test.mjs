@@ -204,14 +204,19 @@ describe('country flags', () => {
 });
 
 describe('Colombia visual catalogs', () => {
-  it('keeps the collection-wide notes catalog and the Colombia coin catalog, not the Colombia notes catalog', () => {
+  it('keeps the collection-wide notes catalog in the menu and omits the Colombia coin catalog', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     assert.match(source, /id: 'catalogo-billetes'/);
     assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
     assert.doesNotMatch(source, /id: 'colombia-catalogo'/);
     assert.doesNotMatch(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
-    assert.match(source, /id: 'colombia-monedas-catalogo'/);
-    assert.match(source, /href: COLOMBIA_COIN_CATALOG_PATH/);
+    assert.doesNotMatch(source, /COLOMBIA_COIN_CATALOG_PATH/);
+    assert.doesNotMatch(numismatica, /id: 'colombia-monedas-catalogo'/);
+    assert.doesNotMatch(numismatica, /Catálogo visual de monedas/);
+    assert.doesNotMatch(numismatica, /Visual coin catalog/);
+    const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
+    assert.doesNotMatch(colombiaBlock, /children:/);
   });
 });
 

@@ -2,7 +2,6 @@ import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
-import { COLOMBIA_COIN_CATALOG_PATH } from '../data/colombia-coin-type-catalog';
 import {
   USA_BARABOO_SCRIP_PATH,
   USA_MISC_PATH,
@@ -217,14 +216,6 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
-        children: [
-          {
-            id: 'colombia-monedas-catalogo',
-            es: 'Catálogo visual de monedas',
-            en: 'Visual coin catalog',
-            href: COLOMBIA_COIN_CATALOG_PATH,
-          },
-        ],
       },
       {
         id: 'us-monedas',
