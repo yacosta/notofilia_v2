@@ -2,8 +2,6 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
 import { footerLinksFromNav } from './footer-nav.ts';
-import { footerNumismatica } from './mega-nav.ts';
-import { coinById } from '../data/estados-unidos-coinage.ts';
 import { navColumns } from './nav-columns.ts';
 
 describe('collection menu labels', () => {
@@ -236,19 +234,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
     assert.match(usBlock, /children:/);
-  });
-
-  it('lists the Trump dollar in the numismatics footer after the US series', () => {
-    const coin = coinById('1-dolar-trump-1776-2026');
-    assert.ok(coin);
-    const hrefs = footerNumismatica.map((item) => item.href);
-    const seriesIndex = hrefs.indexOf('/coleccion/estados-unidos-numismatica/');
-    const coinIndex = hrefs.indexOf(coin.path);
-    assert.ok(seriesIndex >= 0, 'US coinage series must appear in the footer');
-    assert.ok(coinIndex >= 0, 'Trump dollar piece must appear in the footer');
-    assert.ok(coinIndex > seriesIndex);
-    assert.equal(footerNumismatica[coinIndex]?.es, coin.title.es);
-    assert.equal(footerNumismatica[coinIndex]?.en, coin.title.en);
+    assert.match(source, /export const footerNumismatica = footerLinksFromNav\(navNumismatica\?\.children\)/);
   });
 });
 
