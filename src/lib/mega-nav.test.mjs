@@ -215,6 +215,16 @@ describe('Colombia visual catalogs', () => {
   });
 });
 
+describe('United States numismatics menu', () => {
+  it('adds Estados Unidos under Colección Virtual - Numismática', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    assert.match(numismatica, /id: 'us-monedas'/);
+    assert.match(numismatica, /href: USA_COINAGE_PATH/);
+    assert.match(numismatica, /id: 'colombia-monedas'[\s\S]*id: 'us-monedas'[\s\S]*id: 'nl-monedas'/);
+  });
+});
+
 describe('United States submenu', () => {
   it('includes the Rency and Misceláneos cases under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');

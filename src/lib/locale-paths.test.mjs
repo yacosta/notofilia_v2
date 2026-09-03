@@ -103,6 +103,14 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/', 'en'),
       '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/', 'en'),
+      '/en/collection/united-states-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
+    );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
@@ -386,6 +394,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/paises-bajos-numismatica/'],
       '/en/collection/netherlands-numismatics/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/'],
+      '/en/collection/united-states-numismatics/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/'],
+      '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],

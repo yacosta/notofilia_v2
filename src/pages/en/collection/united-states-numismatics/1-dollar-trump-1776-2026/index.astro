@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../../data/estados-unidos-coinage';
+
+const coin = coinById('1-dolar-trump-1776-2026');
+if (!coin) throw new Error('Missing United States 1776–2026 Trump dollar catalog coin');
+---
+
+<UnitedStatesCoinPage locale="en" coin={coin} />

@@ -36,6 +36,11 @@ import {
   netherlandsCoinSlugs,
   netherlandsCoinageDedicatedSlugs,
 } from '../data/netherlands-coinage';
+import {
+  USA_COINAGE_PATH,
+  unitedStatesCoinSlugs,
+  unitedStatesCoinageDedicatedSlugs,
+} from '../data/estados-unidos-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { canadaNoteSlugs } from '../data/canada-polymer';
@@ -78,6 +83,7 @@ function uniqueContentSlugs(): Set<string> {
   slugs.add(NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
+  for (const slug of unitedStatesCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of englandNoteSlugs) slugs.add(slug);
   for (const slug of canadaNoteSlugs) slugs.add(slug);
@@ -346,6 +352,17 @@ export const milestones: MilestoneItem[] = [
       description: 'Third numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
     },
   },
+  {
+    href: USA_COINAGE_PATH,
+    es: {
+      title: 'Estados Unidos · Numismática',
+      description: 'Cuarta vitrina de numismática: la ceca de Filadelfia y el dólar de Trump del Semiquincentenario 1776–2026.',
+    },
+    en: {
+      title: 'United States · Numismatics',
+      description: 'Fourth numismatics case: the Philadelphia mint and the 1776–2026 Semiquincentennial Trump dollar.',
+    },
+  },
 ];
 
 export const articles: ArticleItem[] = blogArticles.map((item) => ({
@@ -402,6 +419,7 @@ export const stubPages = [
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
+  { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {
@@ -444,6 +462,7 @@ const dedicatedEs = [
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,
+  ...unitedStatesCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),

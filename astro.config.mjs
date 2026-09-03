@@ -101,25 +101,25 @@ export default defineConfig({
       {
         name: 'cf-image-dev-passthrough',
         configureServer(server) {
-          return () => {
-            server.middlewares.use((req, _res, next) => {
-              const url = req.url ?? '';
-              if (!url.startsWith('/cdn-cgi/image/')) {
-                next();
-                return;
-              }
-              const q = url.indexOf('?');
-              const pathOnly = q === -1 ? url : url.slice(0, q);
-              const search = q === -1 ? '' : url.slice(q);
-              const slash = pathOnly.indexOf('/', '/cdn-cgi/image/'.length);
-              if (slash === -1) {
-                next();
-                return;
-              }
-              req.url = `${pathOnly.slice(slash)}${search}`;
+          // Register before Vite internals so rewritten /cdn-cgi/image/… paths
+          // still hit static files. A post-hook runs too late and 404s.
+          server.middlewares.use((req, _res, next) => {
+            const url = req.url ?? '';
+            if (!url.startsWith('/cdn-cgi/image/')) {
               next();
-            });
-          };
+              return;
+            }
+            const q = url.indexOf('?');
+            const pathOnly = q === -1 ? url : url.slice(0, q);
+            const search = q === -1 ? '' : url.slice(q);
+            const slash = pathOnly.indexOf('/', '/cdn-cgi/image/'.length);
+            if (slash === -1) {
+              next();
+              return;
+            }
+            req.url = `${pathOnly.slice(slash)}${search}`;
+            next();
+          });
         },
       },
     ],

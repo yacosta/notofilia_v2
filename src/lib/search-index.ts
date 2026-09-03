@@ -17,6 +17,7 @@ import {
 import { glossaryTermPath, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
+import { unitedStatesCoins } from '../data/estados-unidos-coinage';
 import { victoryNotes } from '../data/philippines-victory-66';
 import { puertoRicoNotes } from '../data/puerto-rico';
 import { collections } from './site';
@@ -293,6 +294,22 @@ function pieceSeeds(): PieceSeed[] {
       pick: coin.references,
       serial: coin.certificate,
       certificate: coin.certificate,
+      title: coin.title,
+      dek: coin.lead,
+      kicker: coin.kicker,
+      grade: coin.grade,
+      description: coin.description,
+      image: coin.images.composite,
+      imageAlt: coin.frontCaption,
+    });
+  }
+
+  for (const coin of unitedStatesCoins) {
+    seeds.push({
+      id: `us-coin-${coin.id}`,
+      kind: 'coin',
+      path: coin.path,
+      pick: coin.references,
       title: coin.title,
       dek: coin.lead,
       kicker: coin.kicker,
