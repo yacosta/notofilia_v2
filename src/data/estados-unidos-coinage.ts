@@ -1,7 +1,7 @@
 import type { CatalogSource, LocalizedText } from './catalog';
-import { localizePath } from '../lib/locale-paths';
 
 const USA_NOTES_PATH = '/coleccion/estados-unidos/';
+const USA_NOTES_PATH_EN = '/en/collection/united-states/';
 
 export const NUMISMATICS_PATH = '/coleccion/numismatica/';
 export const USA_COINAGE_PATH = '/coleccion/estados-unidos-numismatica/';
@@ -155,7 +155,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Three chapters, left to right: the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the ficha of the 1776–2026 $1 recorded in this collection.',
+      'Three chapters, left to right: the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the record of the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -406,7 +406,7 @@ export function chapterHref(id: UnitedStatesCoinageChapterId): string {
 }
 
 export function notesPath(locale: 'es' | 'en'): string {
-  return localizePath(USA_NOTES_PATH, locale);
+  return locale === 'en' ? USA_NOTES_PATH_EN : USA_NOTES_PATH;
 }
 
 export const unitedStatesCoinSlugs = unitedStatesCoins.map((coin) => coin.path.replace(/^\/|\/$/g, ''));
