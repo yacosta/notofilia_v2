@@ -104,6 +104,20 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
   });
 });
 
+describe('sitemap coverage for United States numismatics', () => {
+  it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/', 'en'),
+      '/en/collection/united-states-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage stays derived from catalog data', () => {
   it('does not hard-code individual catalog slugs in extra', () => {
     assert.match(sitemapSource, /dedicatedCatalogPaths/);

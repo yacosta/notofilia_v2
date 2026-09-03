@@ -12,6 +12,7 @@ import {
   barabooScripSeriesCopy,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
+import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -219,6 +220,13 @@ export const megaNav: NavNode[] = [
             href: COLOMBIA_COIN_CATALOG_PATH,
           },
         ],
+      },
+      {
+        id: 'us-monedas',
+        es: 'Estados Unidos',
+        en: 'United States',
+        href: USA_COINAGE_PATH,
+        flag: 'us',
       },
       {
         id: 'nl-monedas',

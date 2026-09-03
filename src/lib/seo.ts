@@ -4,6 +4,7 @@ import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { USA_PATH } from '../data/estados-unidos';
+import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
 import { GLOSSARY_PATH } from '../data/glossary';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { collectionStats } from '../data/holdings';
@@ -146,6 +147,7 @@ export const llmsCountryCatalogues = [
   { href: COLOMBIA_PATH, es: 'Colombia (papel moneda)', en: 'Colombia (paper money)' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
+  { href: USA_COINAGE_PATH, es: 'Estados Unidos (numismática)', en: 'United States (numismatics)' },
   { href: SERIES_PATH, es: 'Filipinas · Serie Victory n.º 66', en: 'Philippines · Victory Series No. 66' },
   { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },

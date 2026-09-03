@@ -18,6 +18,7 @@ import {
   USA_MISC_PATH,
   USA_RENCY_PATH,
 } from '../../data/estados-unidos';
+import { USA_COINAGE_PATH } from '../../data/estados-unidos-coinage';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
@@ -92,6 +93,17 @@ const jsonLd = collectionPageJsonLd({
       <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
+
+      <p class="mb-0 mt-6 text-[17px]/7 text-muted">
+        {t.coinageLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_COINAGE_PATH, locale)}
+        >
+          {t.coinageLink}
+        </a>
+      </p>
 
       <div class="mt-16 space-y-12">
         {

@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
-    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs src/lib/hero.test.mjs src/lib/images.test.mjs src/lib/mega-nav.test.mjs src/lib/locale-paths.test.mjs src/lib/footer-nav.test.mjs src/lib/staging-headers.test.mjs src/lib/seo.test.mjs src/lib/sitemap.test.mjs src/lib/search.test.mjs src/lib/type-catalog.test.mjs src/lib/json-ld.test.mjs src/lib/indexnow.test.mjs src/worker/comments.test.mjs src/data/contact.test.mjs src/data/about.test.mjs src/data/holdings.test.mjs src/data/colombia-errors.test.mjs src/data/catalog-us-misc.test.mjs src/data/catalog-us-rency.test.mjs src/data/glossary.test.mjs src/data/comparison.test.mjs src/data/page-faq.test.mjs",
+    "test": "node --test --experimental-strip-types scripts/catalog-watermark.test.mjs src/lib/catalog-media.test.mjs src/lib/hero.test.mjs src/lib/images.test.mjs src/lib/mega-nav.test.mjs src/lib/locale-paths.test.mjs src/lib/footer-nav.test.mjs src/lib/staging-headers.test.mjs src/lib/seo.test.mjs src/lib/sitemap.test.mjs src/lib/search.test.mjs src/lib/type-catalog.test.mjs src/lib/json-ld.test.mjs src/lib/indexnow.test.mjs src/worker/comments.test.mjs src/data/contact.test.mjs src/data/about.test.mjs src/data/holdings.test.mjs src/data/colombia-errors.test.mjs src/data/catalog-us-misc.test.mjs src/data/catalog-us-rency.test.mjs src/data/catalog-us-coinage.test.mjs src/data/glossary.test.mjs src/data/comparison.test.mjs src/data/page-faq.test.mjs",
     "astro": "astro"
   },
   "dependencies": {

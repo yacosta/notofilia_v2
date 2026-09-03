@@ -205,6 +205,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'No. The catalog cites Friedberg, Haxby, Schwan, Criswell, or Pick when those numbers exist, and states that nothing is for sale. Remaining note pages are published as pieces are photographed.',
       },
     },
+    {
+      question: {
+        es: '¿Hay monedas de Estados Unidos en Notofilia?',
+        en: 'Are there United States coins in Notofilia?',
+      },
+      answer: {
+        es: 'Sí. La vitrina de numismática documenta el 1 $ de Filadelfia del Semiquincentenario 1776–2026, con retrato de Trump, latón-manganeso —no oro— y sin encapsular. El papel de este país sigue en la vitrina de notafilia, incluido el collage pop Trump / Never Surrender de Rency, que es otro objeto.',
+        en: 'Yes. The numismatics case records the Philadelphia Semiquincentennial 1776–2026 $1, with Trump’s portrait, manganese brass — not gold — and unslabbed. This country’s paper remains in the notaphily case, including Rency’s Trump / Never Surrender pop collage, a different object.',
+      },
+    },
   ],
   philippines: [
     {

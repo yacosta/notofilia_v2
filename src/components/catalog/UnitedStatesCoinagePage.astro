@@ -1,0 +1,206 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import {
+  chapterHref,
+  coinPageCopy,
+  coinagePath,
+  coinPath,
+  notesPath,
+  NUMISMATICS_PATH,
+  seriesCopy,
+  seriesSources,
+  unitedStatesCoinageChapters,
+  unitedStatesCoins,
+} from '../../data/estados-unidos-coinage';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = seriesCopy[locale];
+const pieces = coinPageCopy[locale];
+const pathname = coinagePath(locale);
+const hero =
+  locale === 'en'
+    ? {
+        src: '/images/catalog/united-states.jpg',
+        width: 2128,
+        height: 912,
+      }
+    : {
+        src: '/images/catalog/estados-unidos.jpg',
+        width: 2128,
+        height: 912,
+      };
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: NUMISMATICS_PATH },
+    { name: t.kicker, path: pathname },
+  ],
+});
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_28%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(NUMISMATICS_PATH, locale), label: t.parentLink },
+          { label: t.kicker },
+        ]}
+      />
+
+      <div class="w-full text-[17px]/7 text-cream">
+        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <p class="mb-0 mt-6 text-[17px]/7 text-muted">
+        {t.notesLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={notesPath(locale)}
+        >
+          {t.notesLink}
+        </a>
+      </p>
+
+      <section class="mt-16" aria-labelledby="pieces-heading">
+        <h2 id="pieces-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {pieces.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{pieces.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+          aria-label={copy[locale].coinsInCollection}
+        >
+          {
+            unitedStatesCoins.map((coin) => (
+              <li class="min-w-0">
+                <a
+                  href={coinPath(coin, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <CatalogThumb
+                    src={coin.images.composite}
+                    alt={coin.frontCaption[locale]}
+                    width={coin.images.width}
+                    height={coin.images.height}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.95rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {coin.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {coin.year} · {coin.grade[locale]}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{pieces.viewCoin} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section class="mt-16" aria-labelledby="holdings-heading">
+        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-3 gap-2 p-0 sm:gap-4"
+          aria-label={copy[locale].chaptersByPeriod}
+        >
+          {
+            unitedStatesCoinageChapters.map((chapter) => (
+              <li class="min-w-0">
+                <a
+                  href={chapterHref(chapter.id)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                      {chapter.years[locale]}
+                    </span>
+                  </div>
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {chapter.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.eraLabel} · {chapter.years[locale]}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <div class="mt-16 space-y-12">
+        {
+          unitedStatesCoinageChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={localizePath(NUMISMATICS_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {copy[locale].backNumismaticsShort}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
