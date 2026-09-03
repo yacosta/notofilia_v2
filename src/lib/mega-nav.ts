@@ -12,7 +12,7 @@ import {
   barabooScripSeriesCopy,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
-import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
+import { USA_COINAGE_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -54,6 +54,11 @@ export type NavNode = {
 };
 
 export { navColumns } from './nav-columns';
+
+const usTrumpDollar = coinById('1-dolar-trump-1776-2026');
+if (!usTrumpDollar) {
+  throw new Error('Missing US Trump dollar coin for mega-nav');
+}
 
 export const megaNav: NavNode[] = [
   {
@@ -227,6 +232,14 @@ export const megaNav: NavNode[] = [
         en: 'United States',
         href: USA_COINAGE_PATH,
         flag: 'us',
+        children: [
+          {
+            id: 'us-1-dolar-trump-1776-2026',
+            es: usTrumpDollar.title.es,
+            en: usTrumpDollar.title.en,
+            href: usTrumpDollar.path,
+          },
+        ],
       },
       {
         id: 'nl-monedas',

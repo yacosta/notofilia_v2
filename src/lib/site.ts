@@ -168,8 +168,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Países Bajos y lazaretos colombianos.' },
-    en: { title: 'Numismatics', description: 'Coinage: Colombia, the Netherlands, and the Colombian lazarettos.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Estados Unidos, Países Bajos y lazaretos colombianos.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, the United States, the Netherlands, and the Colombian lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
