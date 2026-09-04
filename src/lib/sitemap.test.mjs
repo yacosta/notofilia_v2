@@ -125,6 +125,16 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
   });
 });
 
+describe('sitemap coverage for Continental Currency $5 1779', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/5-dolares-continental-1779/', 'en'),
+      '/en/collection/united-states/5-dollars-continental-1779/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
   it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
     assert.equal(

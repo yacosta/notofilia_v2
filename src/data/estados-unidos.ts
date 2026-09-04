@@ -73,8 +73,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The first public paper of the Western world: Massachusetts bills of credit and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en bills of credit para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». En esta vitrina caben emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 belong in this case.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en bills of credit para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. En esta vitrina caben también emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 also belong in this case.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -306,7 +306,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -775,6 +775,7 @@ export const rencySeriesSources: CatalogSource[] = [
 ];
 
 export type UnitedStatesNoteId =
+  | '5-dolares-continental-1779'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '5-dolares-city-bank-new-haven'
@@ -841,6 +842,119 @@ export type UnitedStatesNote = {
 };
 
 export const unitedStatesNotes: UnitedStatesNote[] = [
+  {
+    id: '5-dolares-continental-1779',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/5-dolares-continental-1779/',
+    pathEn: '/collection/united-states/5-dollars-continental-1779/',
+    pick: 'Fr. CC-91',
+    serial: '—',
+    no_serial_reason:
+      'The manuscript No. field was numbered in red at issue; it is illegible on this photograph and is not invented here.',
+    signatures: {
+      es: 'Watkins (ángulo inferior derecho); la segunda firma, en rojo, no se lee',
+      en: 'Watkins (lower right); the second, red signature is not readable',
+    },
+    printed: {
+      es: 'Hall and Sellers, Filadelfia, 1779. Papel de Ivy Mills (Chester County, Pensilvania), con fibras azules y mica. Notre Dame cifra en 95.051.695 dólares las emisiones autorizadas en siete resoluciones entre el 14 de enero y el 29 de noviembre de 1779, de los que 50.000.000 se destinaron al canje de las del 20 de mayo de 1777 y del 11 de abril de 1778. Esta ficha no inventa una tirada para el 5 dólares ni para este ejemplar.',
+      en: 'Hall and Sellers, Philadelphia, 1779. Ivy Mills paper (Chester County, Pennsylvania), with blue fibers and mica. Notre Dame puts emissions authorized by seven resolutions between 14 January and 29 November 1779 at $95,051,695, of which $50,000,000 was to exchange the 20 May 1777 and 11 April 1778 issues. This record does not invent a printage for the $5 or for this piece.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/cc-91-5-dollars-1779-composite.jpg',
+      front: '/images/catalog/estados-unidos/cc-91-5-dollars-1779-front.jpg',
+      back: '/images/catalog/estados-unidos/cc-91-5-dollars-1779-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '5 dólares · Continental Currency · 14 de enero de 1779',
+      en: '$5 · Continental Currency · 14 January 1779',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Congreso Continental',
+      en: 'United States · Colonial paper · Continental Congress',
+    },
+    lead: {
+      es: 'Anverso en negro y rojo con el emblema SUSTINE VEL ABSTINE; reverso con nature print de Hall and Sellers, 1779. Resolución del Congreso del 14 de enero de 1779. El serial manuscrito no se lee en esta fotografía.',
+      en: 'Black and red face with the SUSTINE VEL ABSTINE emblem; Hall and Sellers nature-print back, 1779. Resolution of Congress of 14 January 1779. The manuscript serial is not readable on this photograph.',
+    },
+    description: {
+      es: 'El 5 dólares del 14 de enero de 1779 (Friedberg CC-91) es el cinco de la última emisión de Continental Currency del Congreso. El anverso, en negro y rojo sobre papel de las Ivy Mills de Chester County, Pensilvania, promete al portador FIVE Spanish milled DOLLARS, o una suma igual en oro o plata, según la resolución del Congreso del 14 de enero de 1779. A la izquierda, un emblema circular muestra una mano que sangra al intentar arrancar un espino; el lema latino es SUSTINE VEL ABSTINE. Benjamin Franklin lo explicó, con el seudónimo Clericus, en la Pennsylvania Gazette del 20 de septiembre de 1775: el arbusto es América y la mano que sangra, Gran Bretaña; «Bear with me, or let me alone». El borde izquierdo lleva THE UNITED STATES en tinta roja; arriba y abajo se lee NORTH AMERICA. FIVE DOLLARS aparece a la derecha. El recuadro No. lleva un serial manuscrito en rojo que en esta fotografía no se lee. Abajo a la derecha hay una firma manuscrita Watkins, en tinta oscura; la segunda firma, en rojo, tampoco se distingue. El reverso muestra una nature print de hoja —el recurso anti-falsificación de Franklin y de Hall and Sellers— con «Printed by HALL and SEL-LERS. 1779» a la izquierda y FIVE DOLLARS a la derecha. No es el 5 dólares del 26 de septiembre de 1778 (mismo emblema, fecha anterior; Numista N#335875) ni el 30 dólares CC-93 de esta misma emisión. La pieza, circulada y sin encapsular, se presenta en funda.',
+      en: 'The $5 of 14 January 1779 (Friedberg CC-91) is the five of the Continental Congress’s last Continental Currency issue. The face, black and red on Ivy Mills paper from Chester County, Pennsylvania, entitles the bearer to FIVE Spanish milled DOLLARS, or an equal sum in gold or silver, according to the resolution of Congress of 14 January 1779. At left a circular emblem shows a hand bleeding as it tries to pull up a hawthorn; the Latin motto is SUSTINE VEL ABSTINE. Benjamin Franklin explained it, under the name Clericus, in the Pennsylvania Gazette of 20 September 1775: the bush is America and the bleeding hand Britain; “Bear with me, or let me alone.” THE UNITED STATES runs in red on the left border; NORTH AMERICA sits in the top and bottom borders. FIVE DOLLARS is at right. The No. field carries a manuscript serial in red that is not readable on this photograph. A dark manuscript signature, Watkins, sits at lower right; the second, red signature is not distinguishable. The back shows a leaf nature print — Franklin and Hall and Sellers’ anti-counterfeit device — with “Printed by HALL and SEL-LERS. 1779” at left and FIVE DOLLARS at right. It is not the $5 of 26 September 1778 (the same emblem, an earlier date; Numista N#335875), nor the $30 CC-93 of this same issue. The collection note, circulated and unslabbed, is shown in a sleeve.',
+    },
+    history: [
+      {
+        es: 'El Congreso Continental autorizó papel en mayo de 1775 para financiar la independencia. Las notas prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. Hall and Sellers las imprimieron en Filadelfia, herederos de la prensa de Benjamin Franklin, sobre papel de Ivy Mills con fibras azules y mica. El reverso usaba nature prints de hojas y telas, difíciles de grabar a mano. La inflación y las falsificaciones británicas —guerra económica— acuñaron la frase «not worth a Continental». El U.S. Currency Education Program y el Newman Numismatic Portal sitúan ese descrédito al final de la guerra; la desconfianza retrasó un papel federal hasta los greenbacks de 1861–1862.',
+        en: 'The Continental Congress authorized paper in May 1775 to finance independence. The notes promised Spanish milled dollars or their equal in gold or silver; they paid no interest. Hall and Sellers printed them in Philadelphia, successors to Benjamin Franklin’s press, on Ivy Mills paper with blue fibers and mica. The backs used nature prints of leaves and cloth, hard to engrave by hand. Inflation and British counterfeits — economic warfare — coined the phrase “not worth a Continental.” The U.S. Currency Education Program and the Newman Numismatic Portal place that collapse at the war’s end; the distrust delayed federal paper until the greenbacks of 1861–1862.',
+      },
+      {
+        es: 'La resolución del 14 de enero de 1779 fue la última. Notre Dame describe un borde nuevo con «United States of North America», emblemas más pequeños, y parte del emblema y del borde izquierdo en rojo. Francis Hopkinson diseñó los 35, 45, 70 y 80 dólares; otras manos, los 55 y 65. Las denominaciones de esta fecha van del 1 al 80, con valores inusuales —35, 45, 55, 65— impuestos por la inflación. En esa fecha el Congreso valoraba el papel en 7,42 Continentals por un dólar en especie. El serial y la segunda firma iban en rojo; la primera, en pardo. Esta ficha describe el objeto físico; no afirma el estado de plancha ni un censo de certificación para este ejemplar.',
+        en: 'The resolution of 14 January 1779 was the last. Notre Dame describes a new border with “United States of North America,” smaller emblems, and part of the emblem and left border in red. Francis Hopkinson designed the $35, $45, $70, and $80; other hands, the $55 and $65. Denominations on this date run from $1 to $80, with unusual values — $35, $45, $55, $65 — forced by inflation. On that date Congress valued the paper at $7.42 Continental to $1 in specie. The serial and the second signature were in red; the first, in brown. This record describes the physical object; it does not assert a plate state or a grading census for this example.',
+      },
+    ],
+    historyHeading: {
+      es: 'La última emisión continental',
+      en: 'The last Continental issue',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 dólares continental, Fr. CC-91, 14 de enero de 1779: emblema SUSTINE VEL ABSTINE, borde rojo THE UNITED STATES y serial manuscrito ilegible.',
+      en: 'Face of the Continental $5, Fr. CC-91, 14 January 1779: SUSTINE VEL ABSTINE emblem, red THE UNITED STATES border, and an illegible manuscript serial.',
+    },
+    backCaption: {
+      es: 'Reverso con nature print de hoja, «Printed by HALL and SEL-LERS. 1779» y FIVE DOLLARS, en funda.',
+      en: 'Back with a leaf nature print, “Printed by HALL and SEL-LERS. 1779,” and FIVE DOLLARS, in a sleeve.',
+    },
+    scarcity: {
+      es: 'El 14 de enero de 1779 cierra las 11 resoluciones de Continental Currency que Friedberg numera CC-1 a CC-102; el 5 dólares de esa fecha es CC-91. Notre Dame no publica una tirada por denominación. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para este ejemplar con el serial ilegible.',
+      en: '14 January 1779 closes the 11 Continental Currency resolutions Friedberg numbers CC-1 through CC-102; the $5 of that date is CC-91. Notre Dame does not publish a printage by denomination. This record does not invent a census or an auction rarity for the type or for this example with an illegible serial.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este ejemplar con el serial ilegible. La pieza se presenta en funda, sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for this example with an illegible serial has not been independently verified. The note is shown in a sleeve, unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular, en funda (colección privada)',
+      en: 'Circulated, unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://coins.nd.edu/ColCurrency/CurrencyText/CC-01-14-79.html',
+        es: 'University of Notre Dame — Continental Currency, 14 de enero de 1779',
+        en: 'University of Notre Dame — Continental Currency, 14 January 1779',
+        note: {
+          es: 'Hall and Sellers, Filadelfia; papel de Ivy Mills; borde United States of North America; emblema SUSTINE VEL ABSTINE y explicación de Franklin (Clericus, Pennsylvania Gazette, 20 de septiembre de 1775); 95.051.695 dólares autorizados en siete resoluciones; serial y segunda firma en rojo.',
+          en: 'Hall and Sellers, Philadelphia; Ivy Mills paper; United States of North America border; SUSTINE VEL ABSTINE emblem and Franklin’s explanation (Clericus, Pennsylvania Gazette, 20 September 1775); $95,051,695 authorized across seven resolutions; serial and second signature in red.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Massachusetts 1690 y Continentals de 1775; la frase «not worth a Continental».',
+          en: 'Massachusetts 1690 and Continentals of 1775; the phrase “not worth a Continental.”',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Continental_currency_banknotes',
+        es: 'Wikipedia — Continental currency banknotes',
+        en: 'Wikipedia — Continental currency banknotes',
+        note: {
+          es: 'Emisión del 14 de enero de 1779, incluida la denominación de 5 dólares; cita a Notre Dame.',
+          en: 'The 14 January 1779 issue, including the $5 denomination; cites Notre Dame.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/335875',
+        es: 'Numista — 5 dólares Continental Currency, 26 de septiembre de 1778 (N#335875)',
+        en: 'Numista — Continental Currency $5, 26 September 1778 (N#335875)',
+        note: {
+          es: 'Mismo emblema SUSTINE VEL ABSTINE y nature print de Hall and Sellers, fecha anterior. No es esta pieza de 1779.',
+          en: 'The same SUSTINE VEL ABSTINE emblem and Hall and Sellers nature print, an earlier date. Not this 1779 piece.',
+        },
+      },
+    ],
+  },
   {
     id: '1-dolar-state-bank-new-brunswick',
     chapterId: 'us-obsoleto',
