@@ -324,7 +324,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Las fichas se publican a medida que se documentan las piezas. La banca libre abre con las pruebas ABNC del Banco Hipotecario (1881) y del Banco de Rio Hacha (1883). El Banco Nacional, con la cédula representativa de un peso del Departamento del Tolima (Ibagué, septiembre de 1901, serial N.º 060.416, Serie D). El Banco de la República, con el 1 peso oro de 1954, el 10 pesos oro de 1943, el 2 pesos oro de 1944 y el de 1955, la reposición de 10 pesos oro de 1976, el 1.000 pesos oro de 1979, el espécimen de 2.000 pesos oro de 1983 y el 2.000 pesos de 2008 (serial capicúa binario 10000001). Las familias modernas, con el 20.000 pesos de 2017 (serial AF51355141). El Banco Central de 1905 se cuenta en los capítulos; aún no tiene ficha.',
+      'Las fichas se publican a medida que se documentan las piezas. La banca libre abre con las pruebas ABNC del Banco Hipotecario (1881) y del Banco de Rio Hacha (1883). El Banco Nacional, con la cédula representativa de un peso del Departamento del Tolima (Ibagué, septiembre de 1901, serial N.º 060.416, Serie D). El Banco de la República, con el 1 peso oro de 1954, el 10 pesos oro de 1943, el 2 pesos oro de 1944 y el de 1955, la reposición de 10 pesos oro de 1976, el 1.000 pesos oro de 1979, el espécimen de 2.000 pesos oro de 1983 y el 2.000 pesos de 2008 (serial capicúa binario 10000001). Las familias modernas, con el 2.000 pesos de 2015 (serial fancy AA40000066) y el 20.000 pesos de 2017 (serial AF51355141). El Banco Central de 1905 se cuenta en los capítulos; aún no tiene ficha.',
     viewChapter: 'Leer el capítulo',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -356,7 +356,7 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Note pages are published as pieces are documented. Free banking opens with the ABNC proofs of the Banco Hipotecario (1881) and the Banco de Rio Hacha (1883). The Banco Nacional chapter holds the one-peso cédula representativa of the Departamento del Tolima (Ibagué, September 1901, serial N.º 060.416, Series D). The Banco de la República chapter holds the 1954 1 peso oro, the 1943 10 pesos oro, the 1944 2 pesos oro, the 1955 2 pesos oro, the 1976 10 pesos oro replacement, the 1979 1,000 pesos oro, the 1983 2,000 pesos oro specimen, and the 2008 2,000 pesos (binary radar serial 10000001). The modern families chapter holds the 2017 20,000 pesos, serial AF51355141. The 1905 Banco Central is told in the chapters; it does not yet have a note page.',
+      'Note pages are published as pieces are documented. Free banking opens with the ABNC proofs of the Banco Hipotecario (1881) and the Banco de Rio Hacha (1883). The Banco Nacional chapter holds the one-peso cédula representativa of the Departamento del Tolima (Ibagué, September 1901, serial N.º 060.416, Series D). The Banco de la República chapter holds the 1954 1 peso oro, the 1943 10 pesos oro, the 1944 2 pesos oro, the 1955 2 pesos oro, the 1976 10 pesos oro replacement, the 1979 1,000 pesos oro, the 1983 2,000 pesos oro specimen, and the 2008 2,000 pesos (binary radar serial 10000001). The modern families chapter holds the 2015 2,000 pesos, fancy serial AA40000066, and the 2017 20,000 pesos, serial AF51355141. The 1905 Banco Central is told in the chapters; it does not yet have a note page.',
     viewChapter: 'Read the chapter',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',

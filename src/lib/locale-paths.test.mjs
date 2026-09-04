@@ -275,6 +275,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/20000-pesos-2017/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/2000-pesos-2015/', 'en'),
+      '/en/collection/colombia/2000-pesos-2015/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/1000-pesos-error-2008/', 'en'),
       '/en/collection/colombia/1000-pesos-error-2008/',
     );
