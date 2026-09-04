@@ -1,0 +1,28 @@
+---
+import { CONSENT_STORAGE_KEY, GA_MEASUREMENT_ID } from '../lib/analytics';
+---
+
+<script define:vars={{ GA_MEASUREMENT_ID }} is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500,
+  });
+</script>
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} is:inline></script>
+<script define:vars={{ GA_MEASUREMENT_ID, CONSENT_STORAGE_KEY }} is:inline>
+  try {
+    if (localStorage.getItem(CONSENT_STORAGE_KEY) === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', GA_MEASUREMENT_ID);
+</script>
