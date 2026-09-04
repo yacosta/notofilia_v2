@@ -116,8 +116,15 @@ const jsonLd = collectionPageJsonLd({
                 <li class="min-w-0">
                   <a
                     href={notePath(holding, locale)}
-                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-4 text-inherit no-underline hover:border-gold-light"
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                   >
+                    <CatalogThumb
+                      src={holding.images.front}
+                      alt={holding.frontCaption[locale]}
+                      width={holding.images.width ?? 1800}
+                      height={holding.images.height ?? 600}
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    />
                     <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
                       {denom.face[locale]}
                     </h3>
@@ -168,7 +175,7 @@ const jsonLd = collectionPageJsonLd({
                       alt={note.frontCaption[locale]}
                       width={note.images.width ?? 1800}
                       height={note.images.height ?? 600}
-                      class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
                     />
                     <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
                       {note.title[locale]}
