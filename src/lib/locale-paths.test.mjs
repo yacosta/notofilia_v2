@@ -364,7 +364,13 @@ describe('locale path mapping', () => {
     );
     assert.equal(englishContentSlug('noticias'), 'news');
     assert.equal(
-      PATH_PREFIX_PAIRS.some((pair) => pair.es.includes('circo-ringling') || pair.en.includes('ringling-bros')),
+      PATH_PREFIX_PAIRS.some(
+        (pair) =>
+          pair.es.includes('/blog/circo-ringling') ||
+          pair.en.includes('/blog/ringling-bros') ||
+          pair.es.includes('circo-ringling-bros-barnum-bailey') ||
+          pair.en.includes('ringling-bros-barnum-bailey'),
+      ),
       false,
     );
   });

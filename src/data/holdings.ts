@@ -81,7 +81,7 @@ export const additions: Holding[] = [
   { id: 'us-baraboo-1933-5c-a4895', kind: 'banknote', country: 'US' },
   { id: 'us-baraboo-1933-10c-a2844', kind: 'banknote', country: 'US' },
   { id: 'us-baraboo-1933-15c-a2819', kind: 'banknote', country: 'US' },
-  { id: 'us-baraboo-1933-1-a2002', kind: 'banknote', country: 'US' },
+  { id: 'us-baraboo-1933-1d-a2002', kind: 'banknote', country: 'US' },
   { id: 'us-renci-pele-f71235101a', kind: 'banknote', country: 'US' },
   { id: 'us-renci-messi-you-have-to-fight-to-reach-your-dream', kind: 'banknote', country: 'US' },
   { id: 'us-renci-warhol-basquiat-life-is-beautiful', kind: 'banknote', country: 'US' },

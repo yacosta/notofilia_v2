@@ -376,11 +376,14 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     );
     assert.match(data, /id: 'scrip-baraboo-1-dolar-a2002'/);
     assert.match(data, /serial: 'A2002'/);
+    assert.match(data, /serial_display: 'A 2002'/);
     assert.match(data, /Shafer WI100 · \$1/);
     assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-1-dolar-a2002'/);
     assert.match(data, /ONE DOLLAR/);
     assert.match(data, /RINGLING BROS\./);
-    assert.match(data, /baraboo-scrip-1933-1-a2002-front\.jpg/);
+    assert.match(data, /baraboo-scrip-1933-1d-a2002-front\.jpg/);
+    assert.match(data, /a su izquierda, la letra de serie A en azul/);
+    assert.match(data, /to its left the blue series letter A/);
     assert.match(esPiece1, /UnitedStatesNotePage/);
     assert.match(esPiece1, /locale="es"/);
     assert.match(enPiece1, /UnitedStatesNotePage/);

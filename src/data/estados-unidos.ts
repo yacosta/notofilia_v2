@@ -805,6 +805,8 @@ export type UnitedStatesNote = {
   pathEn: string;
   pick: string;
   serial: string;
+  /** Printed form when it differs from the normalized `serial`. */
+  serial_display?: string;
   /** Required when no serial was printed (proofs, uniface tests). */
   no_serial_reason?: string;
   cert_number?: string;
@@ -2582,6 +2584,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     pathEn: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',
     pick: 'Shafer WI100 · $1',
     serial: 'A2002',
+    serial_display: 'A 2002',
     signatures: {
       es: 'P. L. Gust (presidente) y O. L. Gust (tesorero), Cámara de Comercio de Baraboo',
       en: 'P. L. Gust (president) and O. L. Gust (treasurer), Baraboo Chamber of Commerce',
@@ -2591,9 +2594,9 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'E. B. Trimpey, Trimpey studio of Baraboo, for the Chamber of Commerce. Announced 28 June 1933; redeemable through 1 November 1933. No record of the number printed survives; this record does not invent one.',
     },
     images: {
-      composite: '/images/catalog/estados-unidos/baraboo-scrip-1933-1-a2002-composite.jpg',
-      front: '/images/catalog/estados-unidos/baraboo-scrip-1933-1-a2002-front.jpg',
-      back: '/images/catalog/estados-unidos/baraboo-scrip-1933-1-a2002-back.jpg',
+      composite: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-composite.jpg',
+      front: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-front.jpg',
+      back: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-back.jpg',
       width: 1440,
       height: 960,
     },
@@ -2610,8 +2613,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'A $1 Baraboo Chamber of Commerce note for the 1933 Golden Jubilee: the Ringling Bros. group portrait, series A, serial 2002, Shafer WI100.',
     },
     description: {
-      es: 'El 1 dólar Shafer WI100 es un vale al portador de la Cámara de Comercio de Baraboo, no un Federal Reserve Note. El anverso, en negro sobre papel crema con un disco azul, se titula BARABOO SCRIP. A la izquierda, un retrato oval de los cinco hermanos Ringling de perfil —orlado de laurel, con RINGLING BROS. en la cinta inferior— reúne al grupo; las denominaciones fraccionarias muestran a cada hermano por separado. El centro anuncia el 50.º aniversario, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. Un cartucho oscuro lee ONE DOLLAR; a la derecha, la letra de serie A en azul. El serial 2002 va en azul al pie, entre las firmas impresas de P. L. Gust (presidente) y O. L. Gust (tesorero). El pie promete redención en comercio o por la Cámara el 1 de noviembre de 1933 o antes. Las esquinas llevan cabezas de león (arriba) y de elefante (abajo). El reverso, en verde, muestra la carpa del Big Top con público, 1883 / 50th ANNIVERSARY / 1933, un tigre a la izquierda y un león a la derecha, y la franja GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. Esta pieza de la colección se presenta sin encapsular, en funda. No debe confundirse con las otras cinco denominaciones del juego ni con el 5¢ A4895, el 10¢ A2844 o el 15¢ A2819: las distinguen el retrato de grupo, el facial de 1 dólar y el serial A2002.',
-      en: 'The Shafer WI100 $1 is a Baraboo Chamber of Commerce bearer note, not a Federal Reserve Note. The face, black on cream paper with a blue disk, is titled BARABOO SCRIP. At left an oval portrait of the five Ringling brothers in profile — a laurel wreath, RINGLING BROS. on the lower ribbon — shows the group; the fractional notes show each brother singly. The center announces the 50th anniversary, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. A dark cartouche reads ONE DOLLAR; to the right the blue series letter A. Serial 2002 is printed in blue at the foot, between the printed signatures of P. L. Gust (president) and O. L. Gust (treasurer). The footer promises redemption in trade or by the Chamber on or before 1 November 1933. Corner medallions show lion heads above and elephant heads below. The green back shows the Big Top and crowd, 1883 / 50th ANNIVERSARY / 1933, a tiger at left and a lion at right, and the banner GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. This collection piece is shown unslabbed, in a sleeve. It is not the other five notes of the set, and it is not the 5¢ A4895, the 10¢ A2844, or the 15¢ A2819: the group portrait, the $1 face, and serial A2002 distinguish it.',
+      es: 'El 1 dólar Shafer WI100 es un vale al portador de la Cámara de Comercio de Baraboo, no un Federal Reserve Note. El anverso, en negro sobre papel crema con un disco azul, se titula BARABOO SCRIP. A la izquierda, un retrato oval de los cinco hermanos Ringling de perfil —orlado de laurel, con RINGLING BROS. en la cinta inferior— reúne al grupo; las denominaciones fraccionarias muestran a cada hermano por separado. El centro anuncia el 50.º aniversario, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. Un cartucho oscuro lee ONE DOLLAR; a su izquierda, la letra de serie A en azul. El serial 2002 va en azul al pie, entre las firmas impresas de P. L. Gust (presidente) y O. L. Gust (tesorero). El pie promete redención en comercio o por la Cámara el 1 de noviembre de 1933 o antes. Las esquinas llevan cabezas de león (arriba) y de elefante (abajo). El reverso, en verde, muestra la carpa del Big Top con público, 1883 / 50th ANNIVERSARY / 1933, un tigre a la izquierda y un león a la derecha, y la franja GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. Esta pieza de la colección se presenta sin encapsular, en funda. No debe confundirse con las otras cinco denominaciones del juego ni con el 5¢ A4895, el 10¢ A2844 o el 15¢ A2819: las distinguen el retrato de grupo, el facial de 1 dólar y el serial A2002.',
+      en: 'The Shafer WI100 $1 is a Baraboo Chamber of Commerce bearer note, not a Federal Reserve Note. The face, black on cream paper with a blue disk, is titled BARABOO SCRIP. At left an oval portrait of the five Ringling brothers in profile — a laurel wreath, RINGLING BROS. on the lower ribbon — shows the group; the fractional notes show each brother singly. The center announces the 50th anniversary, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. A dark cartouche reads ONE DOLLAR; to its left the blue series letter A. Serial 2002 is printed in blue at the foot, between the printed signatures of P. L. Gust (president) and O. L. Gust (treasurer). The footer promises redemption in trade or by the Chamber on or before 1 November 1933. Corner medallions show lion heads above and elephant heads below. The green back shows the Big Top and crowd, 1883 / 50th ANNIVERSARY / 1933, a tiger at left and a lion at right, and the banner GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. This collection piece is shown unslabbed, in a sleeve. It is not the other five notes of the set, and it is not the 5¢ A4895, the 10¢ A2844, or the 15¢ A2819: the group portrait, the $1 face, and serial A2002 distinguish it.',
     },
     history: [
       {
