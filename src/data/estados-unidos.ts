@@ -105,8 +105,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Treasury graybacks: from Montgomery to Richmond, without gold or recognition, through the 1864 reform.',
     },
     body: {
-      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina están el 5 dólares T-69, serial 6164, y el 20 dólares T-67, serial 74523, ambos de febrero de 1864.',
-      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case holds the T-69 $5, serial 6164, and the T-67 $20, serial 74523, both of February 1864.',
+      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball, J.T. Paterson y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina están el 100 dólares T-39, serial 50830, de agosto de 1862, el 5 dólares T-69, serial 6164, y el 20 dólares T-67, serial 74523, ambos de febrero de 1864.',
+      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, J.T. Paterson, and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case holds the T-39 $100, serial 50830, of August 1862, the T-69 $5, serial 6164, and the T-67 $20, serial 74523, both of February 1864.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 100 dólares confederado T-39 de 1862, serial 50830, el 5 dólares T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -306,7 +306,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1862 Confederate T-39 $100, serial 50830, the 1864 T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -779,6 +779,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '5-dolares-city-bank-new-haven'
+  | '100-dolares-confederados-1862'
   | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
   | '10-dolares-serie-1934-chicago'
@@ -1176,6 +1177,146 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Enero de 1915: los accionistas del City Bank aprobaron la fusión con el National New Haven Bank y el New Haven County National Bank; la casa resultante, New Haven Bank, National Banking Association; fusión formal prevista para agosto de 1915.',
           en: 'January 1915: City Bank stockholders approved a merger with the National New Haven Bank and the New Haven County National Bank; the combined house, New Haven Bank, National Banking Association; formal merger planned for August 1915.',
+        },
+      },
+    ],
+  },
+  {
+    id: '100-dolares-confederados-1862',
+    chapterId: 'us-confederado',
+    path: '/coleccion/estados-unidos/100-dolares-confederados-1862/',
+    pathEn: '/collection/united-states/100-dollars-confederate-1862/',
+    pick: 'P#43 · T-39 · N#208004',
+    serial: '50830 · Ae',
+    signatures: {
+      es: 'J. M. Walton («for Register») y J. W. Bell («for Treasurer»)',
+      en: 'J. M. Walton (“for Register”) and J. W. Bell (“for Treasurer”)',
+    },
+    printed: {
+      es: 'J.T. Paterson, Columbia, S.C. Wikipedia cifra el tipo T-39 en unos 284.000 ejemplares. La ley del 17 de abril de 1862 autorizó 170 millones de dólares, entre ellos estos 100 dólares con interés de dos centavos al día. Esta ficha no inventa una tirada por letra de plancha.',
+      en: 'J.T. Paterson, Columbia, S.C. Wikipedia puts T-39 at about 284,000 notes. The act of 17 April 1862 authorized $170 million, including these $100 notes bearing interest at two cents a day. This record does not invent a printage by plate letter.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/csa-1862-100-50830-composite.jpg',
+      front: '/images/catalog/estados-unidos/csa-1862-100-50830-front.jpg',
+      back: '/images/catalog/estados-unidos/csa-1862-100-50830-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    hero: {
+      src: {
+        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+      },
+      width: 2128,
+      height: 912,
+    },
+    heroAlt: {
+      es: 'Ilustración vintage de Richmond sobre pergamino, con el Capitolio, Main Street Station, Church Hill, las Tredegar Iron Works y el título Richmond',
+      en: 'Vintage illustration of Richmond on parchment, with the Capitol, Main Street Station, Church Hill, Tredegar Iron Works, and the title Richmond',
+    },
+    title: {
+      es: '100 dólares · Estados Confederados · 26 de agosto de 1862',
+      en: '$100 · Confederate States · 26 August 1862',
+    },
+    kicker: {
+      es: 'Estados Unidos · Estados Confederados',
+      en: 'United States · Confederate States',
+    },
+    lead: {
+      es: 'Anverso con locomotora y lechera; reverso en blanco con sellos de interés. Richmond, 26 de agosto de 1862. Serial 50830, plancha Ae. Interés de dos centavos al día.',
+      en: 'Face with locomotive and milkmaid; blank back with interest-paid stamps. Richmond, 26 August 1862. Serial 50830, plate Ae. Interest at two cents a day.',
+    },
+    description: {
+      es: 'El 100 dólares de 1862 (Pick 43, Criswell y Fricke T-39, Numista N#208004) es el ciento de la cuarta serie del Tesoro de los Estados Confederados, autorizado por la ley del 17 de abril de 1862. El anverso, en negro sobre papel crema, lleva al centro una locomotora de vapor que arrastra un tren de viajeros —el vapor sale en un penacho recto, la marca del T-39 frente al vapor difuso del T-40 (Pick 44)— y, a la izquierda, una mujer de pie con un cesto en la cabeza, la lechera. El arco superior lee la cláusula de redención: «Six Months after the Ratification of a treaty of Peace between the Confederate States and the United States». Bajo la viñeta, «THE CONFEDERATE STATES OF AMERICA» promete pagar One Hundred Dollars al portador «with Interest at two cents per day». La fecha es manuscrita: Richmond, 26 de agosto de 1862. El recuadro superior izquierdo anuncia que el papel es receivable in payment of all dues except export duties. El serial manuscrito 50830 se repite en tinta roja a ambos lados; la letra de plancha es Ae, a la izquierda del medallón 100. Las firmas son las de J. M. Walton («for Register») y J. W. Bell («for Treasurer»). El pie de imprenta es el de J.T. Paterson, Columbia, S.C.: Wikipedia y el Bank Note Museum atribuyen a esa casa las planchas Aa–Ah del T-39, tras el cierre de Hoyer & Ludwig en Richmond. El reverso no lleva grabado: tres sellos INTEREST PAID registran el pago del 1 de enero de 1863, 1864 y 1865 en Raleigh, N. C., y Richmond. No es el T-40 de vapor difuso ni el T-41 de Keatinge & Ball, con Calhoun y personas esclavizadas. La pieza de la colección, circulada y sin encapsular, se presenta en funda.',
+      en: 'The $100 of 1862 (Pick 43, Criswell and Fricke T-39, Numista N#208004) is the hundred of the Confederate Treasury’s fourth series, authorized by the act of 17 April 1862. The black face on cream paper carries a steam locomotive pulling passenger cars at center — the steam leaves in a straight plume, the mark of T-39 against the diffused steam of T-40 (Pick 44) — and, at left, a standing woman with a basket on her head, the milkmaid. The upper arc reads the redemption clause: “Six Months after the Ratification of a treaty of Peace between the Confederate States and the United States.” Beneath the vignette, “THE CONFEDERATE STATES OF AMERICA” promises to pay One Hundred Dollars to the bearer “with Interest at two cents per day.” The date is manuscript: Richmond, 26 August 1862. The upper-left tablet states that the paper is receivable in payment of all dues except export duties. Manuscript serial 50830 is written twice in red; the plate letter is Ae, to the left of the 100 medallion. The signatures are J. M. Walton (“for Register”) and J. W. Bell (“for Treasurer”). The imprint is J.T. Paterson, Columbia, S.C.: Wikipedia and the Bank Note Museum give that house the Aa–Ah plates of T-39, after Hoyer & Ludwig closed in Richmond. The back has no engraved design: three INTEREST PAID stamps record payment on 1 January 1863, 1864, and 1865 at Raleigh, N.C., and Richmond. It is not the diffused-steam T-40, nor Keatinge & Ball’s T-41 with Calhoun and enslaved people. The collection note, circulated and unslabbed, is shown in a sleeve.',
+    },
+    history: [
+      {
+        es: 'El Tesoro confederado nació casi vacío. La riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal; el bloqueo unionista cortó las exportaciones de algodón que habrían podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, Alabama, antes de que la capital pasara a Richmond. Christopher G. Memminger, secretario del Tesoro, recurrió a la prensa: los impuestos y los bonos cubrían solo una fracción de la guerra. El grayback no era un canje en oro. Era una promesa de pago si el Sur ganaba.',
+        en: 'The Confederate Treasury opened almost empty. Southern wealth sat in land and enslaved people, not in coin; the Union blockade cut off the cotton exports that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, Alabama, before the capital moved to Richmond. Christopher G. Memminger, secretary of the Treasury, turned to the press: taxes and bonds covered only a fraction of the war. The grayback was not a redemption in gold. It was a promise to pay if the South won.',
+      },
+      {
+        es: 'Casi todos los grabadores y las planchas de banco estaban en Nueva York y Filadelfia. Wikipedia registra las primeras planchas de la National Bank Note Company y de su sucursal de Nueva Orleans, la Southern Bank Note Company, hasta que esa vía se cerró. Hoyer & Ludwig grabó en Richmond el tren de este ciento —el mismo motivo que ya había usado en un bono de 1861— y vendió el taller en 1862; el grueso de T-39 y T-40 lo imprimió entonces J.T. Paterson en Columbia. Keatinge & Ball y Archer & Daly cubrieron otras denominaciones, a menudo en litografía, con papeles y planchas desiguales por el bloqueo. El resultado se copiaba con facilidad. Samuel C. Upham, de Filadelfia, vendió desde 1862 «fac-simile Confederate notes» como recuerdos; los contrabandistas recortaban el pie y los hacían circular en el Sur.',
+        en: 'Almost all the engravers and bank plates sat in New York and Philadelphia. Wikipedia records the first plates of the National Bank Note Company and of its New Orleans branch, the Southern Bank Note Company, until that route closed. Hoyer & Ludwig engraved the train on this hundred in Richmond — the same motif they had already used on an 1861 bond — and sold the shop in 1862; J.T. Paterson in Columbia then printed the bulk of T-39 and T-40. Keatinge & Ball and Archer & Daly covered other denominations, often by lithography, on uneven paper and plates under the blockade. The result was easy to copy. Samuel C. Upham of Philadelphia sold “fac-simile Confederate notes” as souvenirs from 1862; smugglers trimmed the imprint and passed them in the South.',
+      },
+      {
+        es: 'La ley del 17 de abril de 1862 —la cuarta serie— introdujo los 1 y 2 dólares y estos 100 dólares con interés: dos centavos al día, 7,30 dólares al año. El portador presentaba el papel en un depositario y el reverso, sin grabado, recibía el sello INTEREST PAID. Esta pieza lleva tres: 1 de enero de 1863, 1864 y 1865, en Raleigh y Richmond. Las primeras series prometían el pago seis meses después de un tratado de paz; la cláusula de 1864, la del T-69 y del T-67 de esta vitrina, dilató el canje a dos años. Las firmas manuscritas de escribientes —el Tesoro llegó a contratar hasta doscientos por cada cargo, a menudo mujeres— eran la norma en los enteros.',
+        en: 'The act of 17 April 1862 — the fourth series — introduced the $1 and $2 and these interest-bearing $100 notes: two cents a day, $7.30 a year. The bearer presented the paper at a depositary and the unengraved back received an INTEREST PAID stamp. This piece carries three: 1 January 1863, 1864, and 1865, at Raleigh and Richmond. Early series promised payment six months after a treaty of peace; the 1864 clause, the one on the T-69 and T-67 in this case, stretched redemption to two years. Manuscript signatures by clerks — the Treasury eventually hired as many as two hundred for each office, often women — were the rule on whole-dollar notes.',
+      },
+      {
+        es: 'Entre 1861 y 1864 hubo siete series. Wikipedia cifra el total autorizado en 1.700 millones de dólares y T-39 en unos 284.000 ejemplares; T-40, el del vapor difuso, en unos 214.400. Sin respaldo metálico, el grayback se hundió con las malas noticias: a finales de 1863 valía unos seis centavos de oro; en septiembre de 1864, tres. Tras Appomattox el papel perdió todo valor de curso. La Sección 4 de la Decimocuarta Enmienda declara ilegales y nulas las deudas contraídas en ayuda de la rebelión: ni los Estados Unidos ni ningún estado pueden asumirlas. El interés de dos centavos al día quedó, como el principal, sin pagar.',
+        en: 'Between 1861 and 1864 there were seven series. Wikipedia puts the authorized total at $1.7 billion and T-39 at about 284,000 notes; T-40, the diffused-steam type, at about 214,400. Unbacked by specie, the grayback sank with the bad news: by the end of 1863 it was worth about six cents in gold; by September 1864, three. After Appomattox the paper lost all value as currency. Section 4 of the Fourteenth Amendment holds debts incurred in aid of rebellion illegal and void: neither the United States nor any state may assume them. The two cents a day, like the principal, went unpaid.',
+      },
+    ],
+    historyHeading: {
+      es: 'La emisión',
+      en: 'The issue',
+    },
+    frontCaption: {
+      es: 'Anverso del 100 dólares confederado, T-39, 26 de agosto de 1862, serial 50830, plancha Ae: locomotora de vapor recto y lechera.',
+      en: 'Face of the Confederate $100, T-39, 26 August 1862, serial 50830, plate Ae: straight-steam locomotive and milkmaid.',
+    },
+    backCaption: {
+      es: 'Reverso sin grabado del 100 dólares confederado T-39: sellos INTEREST PAID de 1863, 1864 y 1865 en Raleigh y Richmond.',
+      en: 'Blank back of the Confederate T-39 $100: INTEREST PAID stamps for 1863, 1864, and 1865 at Raleigh and Richmond.',
+    },
+    scarcity: {
+      es: 'Wikipedia cifra T-39 en unos 284.000 ejemplares y T-40 en unos 214.400. El tren con lechera es, con el T-41 de Calhoun, el ciento de 1862 que más se ve; el Bank Note Museum lo numera P-43 (vapor recto) y P-44 (vapor difuso). El mercado trata el tipo circulado como frecuente; las claves están en los sellos de interés completos, los márgenes y la ausencia de cortes de cancelación. Esta ficha no inventa una tirada por letra Ae ni por fecha manuscrita.',
+      en: 'Wikipedia puts T-39 at about 284,000 notes and T-40 at about 214,400. The train with milkmaid is, with the Calhoun T-41, the 1862 hundred most often seen; the Bank Note Museum numbers it P-43 (straight steam) and P-44 (diffused steam). The market treats circulated examples as common; the keys are complete interest stamps, margins, and the absence of cut cancels. This record does not invent a printage by plate Ae or by manuscript date.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 50830. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 50830 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/CSA/CSA0043.htm',
+        es: 'Bank Note Museum — P-43, 100 dólares, 1862, vapor recto',
+        en: 'Bank Note Museum — P-43, $100, 1862, straight steam',
+        note: {
+          es: 'Lechera y tren de viajeros; 43b, series Aa–Ah, J. T. Paterson. El P-44 es el vapor difuso.',
+          en: 'Milkmaid and passenger train; 43b, series Aa–Ah, J. T. Paterson. P-44 is the diffused-steam type.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note208004.html',
+        es: 'Numista — 100 Dollars, Confederate States (N#208004)',
+        en: 'Numista — 100 Dollars, Confederate States (N#208004)',
+        note: {
+          es: 'Lechera y tren de vapor recto; interés de dos centavos al día; desmonetizado.',
+          en: 'Milkmaid and straight-steam train; interest at two cents a day; demonetized.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Confederate_States_dollar',
+        es: 'Wikipedia — Confederate States dollar',
+        en: 'Wikipedia — Confederate States dollar',
+        note: {
+          es: 'T-39, Hoyer & Ludwig y J.T. Patterson, unos 284.000; T-40, unos 214.400; ley del 17 de abril de 1862; interés de dos centavos al día.',
+          en: 'T-39, Hoyer & Ludwig and J.T. Patterson, about 284,000; T-40, about 214,400; act of 17 April 1862; interest at two cents a day.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Samuel_Curtis_Upham',
+        es: 'Wikipedia — Samuel C. Upham',
+        en: 'Wikipedia — Samuel C. Upham',
+        note: {
+          es: 'Facsímiles vendidos en Filadelfia desde 1862; el pie se recortaba y el papel circulaba en el Sur.',
+          en: 'Facsimiles sold in Philadelphia from 1862; the imprint was trimmed and the paper circulated in the South.',
+        },
+      },
+      {
+        href: 'https://constitution.congress.gov/browse/amendment-14/section-4/',
+        es: 'Constitution Annotated — Decimocuarta Enmienda, Sección 4',
+        en: 'Constitution Annotated — Fourteenth Amendment, Section 4',
+        note: {
+          es: 'Ni los Estados Unidos ni ningún estado asumirán deudas contraídas en ayuda de la rebelión; tales deudas son ilegales y nulas.',
+          en: 'Neither the United States nor any state shall assume debts incurred in aid of rebellion; such debts are illegal and void.',
         },
       },
     ],

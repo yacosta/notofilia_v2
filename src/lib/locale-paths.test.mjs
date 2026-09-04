@@ -156,6 +156,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/100-dolares-confederados-1862/', 'en'),
+      '/en/collection/united-states/100-dollars-confederate-1862/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/20-dolares-confederados-1864/', 'en'),
       '/en/collection/united-states/20-dollars-confederate-1864/',
     );
@@ -521,6 +525,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],
       '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/100-dolares-confederados-1862/'],
+      '/en/collection/united-states/100-dollars-confederate-1862/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/united-states/100-dollars-confederate-1862/'],
+      '/en/collection/united-states/100-dollars-confederate-1862/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/20-dolares-confederados-1864/'],

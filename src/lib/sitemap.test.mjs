@@ -135,6 +135,16 @@ describe('sitemap coverage for Continental Currency $5 1779', () => {
   });
 });
 
+describe('sitemap coverage for Confederate T-39 $100 1862', () => {
+  it('maps the Confederate piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/100-dolares-confederados-1862/', 'en'),
+      '/en/collection/united-states/100-dollars-confederate-1862/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
   it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
     assert.equal(
