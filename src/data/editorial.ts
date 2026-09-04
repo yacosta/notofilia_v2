@@ -210,13 +210,25 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '5 centavos · John Ringling · A4895',
     en: '5¢ · John Ringling · A4895',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
+    es: '1 dólar · Trump · Semiquincentenario 1776–2026',
+    en: '$1 · Trump · Semiquincentennial 1776–2026',
+  },
+};
+
+const catalogRelatedDeks: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
+    es: 'La ficha de la pieza en la colección virtual.',
+    en: 'The piece record in the virtual collection.',
+  },
 };
 
 export function resolveRelated(related: RelatedLink[], locale: Locale): RelatedLink[] {
   return related.map((item) => {
     const catalogTitle = catalogRelatedTitles[item.href];
     if (catalogTitle) {
-      return { href: item.href, title: catalogTitle[locale], dek: item.dek };
+      const catalogDek = catalogRelatedDeks[item.href];
+      return { href: item.href, title: catalogTitle[locale], dek: catalogDek?.[locale] ?? item.dek };
     }
     const slug = item.href.replace(/^\/+|\/+$/g, '').split('/').pop() ?? '';
     const target = findNewsArticle(slug) ?? findBlogArticle(slug);
