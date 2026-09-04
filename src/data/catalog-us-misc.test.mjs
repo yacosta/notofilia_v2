@@ -292,6 +292,10 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(esPiece, /locale="es"/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
+    assert.match(barabooPage, /holding\.images\.front/);
+    assert.match(barabooPage, /note\.images\.front/);
+    assert.match(barabooPage, /aspect-\[3\/2\]/);
+    assert.doesNotMatch(barabooPage, /aspect-\[3\/1\]/);
   });
 });
 
