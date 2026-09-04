@@ -164,6 +164,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-city-bank-new-haven/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/5-dolares-continental-1779/', 'en'),
+      '/en/collection/united-states/5-dollars-continental-1779/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/5-dolares-confederados-1864/', 'en'),
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );
@@ -529,6 +533,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/united-states/5-dollars-city-bank-new-haven/'],
       '/en/collection/united-states/5-dollars-city-bank-new-haven/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/5-dolares-continental-1779/'],
+      '/en/collection/united-states/5-dollars-continental-1779/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/united-states/5-dollars-continental-1779/'],
+      '/en/collection/united-states/5-dollars-continental-1779/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],

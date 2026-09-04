@@ -63,6 +63,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/5-dollars-city-bank-new-haven/'],
   },
   {
+    es: '/coleccion/estados-unidos/5-dolares-continental-1779/',
+    en: '/collection/united-states/5-dollars-continental-1779/',
+    aliases: ['/coleccion/united-states/5-dollars-continental-1779/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-dolares-confederados-1864/',
     en: '/collection/united-states/5-dollars-confederate-1864/',
     aliases: ['/coleccion/united-states/5-dollars-confederate-1864/'],
@@ -339,6 +344,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
+    '/en/coleccion/estados-unidos/5-dolares-continental-1779/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
     '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
     '/en/coleccion/united-states/1-dollar-state-bank-new-brunswick/',
@@ -351,6 +357,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/500-dollars-series-1934a-new-york/',
     '/en/coleccion/united-states/20-dollars-confederate-1864/',
     '/en/coleccion/united-states/5-dollars-city-bank-new-haven/',
+    '/en/coleccion/united-states/5-dollars-continental-1779/',
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
