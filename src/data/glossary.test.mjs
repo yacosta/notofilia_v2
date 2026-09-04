@@ -30,6 +30,15 @@ const added = [
   'gem-uncirculated',
   'choice-uncirculated',
   'details-ngc',
+  'remainder',
+  'scrip',
+  'haxby',
+  'criswell',
+  'uniface',
+  'letras-de-credito',
+  'nature-print',
+  'handstamp',
+  'grayback',
 ];
 
 describe('glossary catalogue terms', () => {
@@ -51,6 +60,6 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 138);
+    assert.equal(glossaryTerms.length, 147);
   });
 });

@@ -103,7 +103,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "Billete de banco obsoleto", en: "Obsolete Bank Notes" },
     definition: { es: "También llamados billetes de banco quebrado; moneda emitida por bancos privados autorizados por los estados o por comunidades locales antes del establecimiento del sistema de la Reserva Federal.", en: "Also called Broken Bank Notes; currency issued by private, state-chartered banks or local communities before the establishment of the Federal Reserve system." },
-    seeAlso: ["banca-libre"],
+    seeAlso: ["banca-libre", "haxby", "remainder"],
   },
   {
     slug: "billete-de-necesidad",
@@ -111,7 +111,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "Billete de necesidad", en: "Notgeld / emergency money" },
     definition: { es: "Papel moneda provisional emitido por gobiernos locales, municipios o empresas privadas durante crisis económicas, guerras o escasez de moneda metálica. En Alemania y Austria (1914–1924) se conoce como Notgeld.", en: "Provisional paper money issued by local governments, municipalities, or private businesses during economic crises, wars, or coin shortages. In Germany and Austria (1914–1924) it is known as Notgeld." },
-    seeAlso: ["billete-provisional", "curso-legal"],
+    seeAlso: ["billete-provisional", "curso-legal", "scrip"],
   },
   {
     slug: "billete-de-reemplazo-estrella",
@@ -186,12 +186,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["extremadamente-fino-ebc-ef", "billete-sin-circular", "escala-sheldon", "pliegue-y-doblez"],
   },
   {
+    slug: "criswell",
+    id: "catalogo-criswell",
+    category: "Coleccionismo",
+    title: { es: "Catálogo Criswell (Fricke)", en: "Criswell (Fricke) catalog" },
+    definition: { es: "Numeración de Grover C. y Clarence L. Criswell —revisada en ediciones posteriores con Pierre Fricke— para el papel moneda de los Estados Confederados, con números de tipo prefijados por T (T-1 a T-72). En esta colección acompaña al Pick, por ejemplo T-40 junto a P-44 en el 100 dólares de 1862.", en: "Grover C. and Clarence L. Criswell’s numbering — revised in later editions with Pierre Fricke — for Confederate States paper money, with T-prefixed type numbers (T-1 through T-72). In this collection it sits beside Pick, for example T-40 alongside P-44 on the 1862 $100." },
+    seeAlso: ["pick", "friedberg", "grayback"],
+  },
+  {
     slug: "friedberg",
     id: "catalogo-friedberg",
     category: "Coleccionismo",
     title: { es: "Catálogo Friedberg", en: "Friedberg catalog" },
     definition: { es: "Sistema de referencia especializado en billetes de Estados Unidos, alternativo y complementario al catálogo Pick.", en: "A reference system specialized in United States banknotes, an alternative and complement to the Pick catalog." },
-    seeAlso: ["pick", "schwan", "banknote-book"],
+    seeAlso: ["pick", "schwan", "banknote-book", "haxby", "criswell"],
+  },
+  {
+    slug: "haxby",
+    id: "catalogo-haxby",
+    category: "Coleccionismo",
+    title: { es: "Catálogo Haxby", en: "Haxby catalog" },
+    definition: { es: "Sistema de referencia de James A. Haxby (Standard Catalog of United States Obsolete Bank Notes) para el papel de bancos privados con carta estatal —los llamados obsolete notes o broken banknotes— emitido antes de la Guerra Civil, numerado por estado, banco y variedad de plancha.", en: "James A. Haxby’s reference system (Standard Catalog of United States Obsolete Bank Notes) for pre–Civil War, state-chartered private bank paper — the so-called obsolete notes or broken banknotes — numbered by state, bank, and plate variety." },
+    seeAlso: ["billete-de-banco-obsoleto", "friedberg", "remainder"],
   },
   {
     slug: "schwan",
@@ -423,7 +439,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Espécimen", en: "Specimen" },
     definition: { es: "Ejemplar de muestra enviado a bancos centrales y fuerzas de seguridad para familiarizarlos con un diseño nuevo. Suele llevar la palabra SPECIMEN perforada o estampada y numeración en ceros (p. ej. 0000000); no entra en circulación. En el catálogo de Hernández, los ceros distinguen el espécimen de la prueba.", en: "A sample note distributed to central banks and law enforcement to familiarize them with a new design. It usually bears perforated or stamped SPECIMEN text and all-zero serials (e.g. 0000000), and never enters circulation. In Hernández’s catalog, zeros distinguish a specimen from a proof." },
-    seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa"],
+    seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa", "remainder", "uniface"],
   },
   {
     slug: "estado-basal",
@@ -514,6 +530,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["billete-sin-circular", "choice-uncirculated", "epq-calidad-de-papel-excepcional", "escala-sheldon"],
   },
   {
+    slug: "grayback",
+    id: "grayback",
+    category: "Monedas y divisas",
+    title: { es: "Grayback", en: "Grayback" },
+    definition: { es: "Apodo coloquial del papel moneda de los Estados Confederados, por el tono grisáceo de buena parte de sus impresiones, en contraste con el «greenback» federal. Wikipedia documenta siete series entre 1861 y 1864 por unos 1.700 millones de dólares.", en: "A colloquial nickname for Confederate States paper money, from the grayish tone of much of its printing, in contrast to the federal “greenback.” Wikipedia documents seven series between 1861 and 1864 totaling about $1.7 billion." },
+    seeAlso: ["desmonetizado", "curso-legal", "criswell"],
+  },
+  {
     slug: "guardian",
     id: "guardian",
     category: "Producción",
@@ -528,6 +552,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Gulden", en: "Gulden / guilder" },
     definition: { es: "Florín neerlandés: unidad de cuenta desde 1434 y moneda de curso legal de los Países Bajos hasta el 27 de enero de 2002, cuando lo sustituyó el euro. De Nederlandsche Bank emitió el papel de circulación desde 1814.", en: "The Dutch florin or guilder: a unit of account from 1434 and legal tender in the Netherlands until 27 January 2002, when the euro replaced it. De Nederlandsche Bank issued circulating paper from 1814." },
     seeAlso: ["euro", "ducado", "curso-legal"],
+  },
+  {
+    slug: "handstamp",
+    id: "handstamp",
+    category: "Emisión",
+    title: { es: "Sello a mano (handstamp)", en: "Handstamp" },
+    definition: { es: "Marca aplicada a mano con tinta sobre un billete ya impreso —a diferencia de un diseño grabado— para registrar un hecho posterior, como el pago de un interés o el endoso de una depositaría. Los cien dólares confederados T-40 de esta colección llevan sellos de pago de interés en Raleigh, Carolina del Norte, de 1864 y 1865.", en: "A mark applied by hand in ink onto an already-printed note — as opposed to an engraved design — to record a later event, such as an interest payment or a depository’s endorsement. This collection’s Confederate T-40 $100 carries interest-paid handstamps from Raleigh, North Carolina, dated 1864 and 1865." },
+    seeAlso: ["resello", "sobresello"],
   },
   {
     slug: "hilo-de-seguridad",
@@ -568,6 +600,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Kwacha", en: "Kwacha" },
     definition: { es: "Unidad monetaria de Zambia y Malaui; el nombre significa “amanecer” en varias lenguas bantúes.", en: "The monetary unit of Zambia and Malawi; the name means “dawn” in several Bantu languages." },
     seeAlso: [],
+  },
+  {
+    slug: "letras-de-credito",
+    id: "letras-de-credito",
+    category: "Emisión",
+    title: { es: "Letras de crédito (bills of credit)", en: "Bills of credit" },
+    definition: { es: "Papel moneda colonial autorizado por una legislatura para financiar un gasto público —típicamente una guerra—, sin respaldo metálico pleno. Massachusetts emitió las primeras el 10 de diciembre de 1690, antecedente directo de los Continentals de 1775.", en: "Colonial paper money authorized by a legislature to finance public spending — typically a war — without full metallic backing. Massachusetts issued the first on 10 December 1690, a direct ancestor of the 1775 Continentals." },
+    seeAlso: ["billete-provisional", "curso-legal"],
   },
   {
     slug: "leu-lei",
@@ -696,6 +736,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "MPC (certificado de pago militar)", en: "MPC (Military Payment Certificate)" },
     definition: { es: "Papel en dólares emitido por las fuerzas armadas de Estados Unidos entre 1946 y 1973 para pagar al personal en bases de ultramar. No era curso legal; un C-Day secreto invalidaba la serie vigente. En Vietnam circularon las series 641, 661, 681 y 692.", en: "Dollar-denominated paper issued by the U.S. armed forces from 1946 to 1973 to pay personnel on overseas bases. It was not legal tender; a secret C-Day voided the current series. In Vietnam the circulating series were 641, 661, 681, and 692." },
     seeAlso: ["c-day", "desmonetizado", "schwan", "plancheta", "offset"],
+  },
+  {
+    slug: "nature-print",
+    id: "nature-print",
+    category: "Producción",
+    title: { es: "Nature print", en: "Nature print" },
+    definition: { es: "Técnica de grabado que reproduce la textura real de una hoja u otro objeto orgánico presionado contra la plancha. Benjamin Franklin y, más tarde, Hall and Sellers la usaron en el papel colonial y en el Continental Currency como medida anti-falsificación difícil de replicar a mano; el reverso del 5 dólares continental de 1779 de esta colección lleva una nature print de hoja.", en: "An engraving technique that reproduces the actual texture of a leaf or other organic object pressed into the plate. Benjamin Franklin and, later, Hall and Sellers used it on colonial paper and on Continental Currency as an anti-counterfeiting device that was hard to replicate by hand; the back of this collection’s 1779 Continental $5 carries a leaf nature print." },
+    seeAlso: ["calcografia", "intaglio", "letras-de-credito"],
   },
   {
     slug: "notafilia",
@@ -831,7 +879,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Pick number", en: "Pick number" },
     definition: { es: "Número de referencia estándar asignado a cada billete en el Standard Catalog of World Paper Money, usado universalmente por coleccionistas para identificar variantes.", en: "The standard reference number assigned to each note in the Standard Catalog of World Paper Money, used universally by collectors to identify variants." },
-    seeAlso: ["friedberg", "schwan", "banknote-book"],
+    seeAlso: ["friedberg", "schwan", "banknote-book", "haxby", "criswell"],
   },
   {
     slug: "planchuela",
@@ -887,7 +935,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Prueba / ensayo", en: "Proof / essay" },
     definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color. Hernández anota que las pruebas no llevan ceros y a menudo son unifaces, a diferencia del espécimen.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color. Hernández notes that proofs do not carry zeros and are often uniface, unlike a specimen." },
-    seeAlso: ["specimen", "intaglio", "mariposa"],
+    seeAlso: ["specimen", "intaglio", "mariposa", "uniface"],
   },
   {
     slug: "quetzal",
@@ -922,12 +970,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["filigrana"],
   },
   {
+    slug: "remainder",
+    id: "remainder",
+    category: "Coleccionismo",
+    title: { es: "Remainder (billete sin firmar)", en: "Remainder" },
+    definition: { es: "Ejemplar impreso que nunca se puso en circulación: suele faltarle una o ambas firmas manuscritas, el año de la fecha o el número de serie. Es distinto del espécimen —marcado y perforado— y de la prueba —un test de plancha o color—; el remainder es simplemente papel sobrante de una plancha, banco o emisión ya cerrados, como los billetes de 1 y 5 dólares de bancos obsoletos de esta colección.", en: "A printed note that never entered circulation: it is typically missing one or both manuscript signatures, the year of the date, or the serial number. It is distinct from a specimen — marked and perforated — or a proof — a plate or color test; a remainder is simply leftover paper from a plate, bank, or issue that closed, as with this collection’s $1 and $5 obsolete-bank notes." },
+    seeAlso: ["billete-de-banco-obsoleto", "specimen", "prueba-ensayo", "haxby"],
+  },
+  {
     slug: "resello",
     id: "resello",
     category: "Emisión",
     title: { es: "Resello", en: "Countermark" },
     definition: { es: "Marca oficial aplicada sobre un billete o moneda existente para revalidarlo bajo una nueva autoridad. En julio de 1923 el Banco de la República reselló certificados de oro de Medellín; en la Guerra de los Mil Días la Junta de Emisión puso el sello del Banco Nacional sobre papel de bancos privados.", en: "An official mark applied over an existing note or coin to revalidate it under a new authority. In July 1923 the Banco de la República overstamped Medellín gold certificates; in the Thousand Days’ War the Issue Board put the Banco Nacional’s seal on private-bank paper." },
-    seeAlso: ["sobresello", "billete-provisional"],
+    seeAlso: ["sobresello", "billete-provisional", "handstamp"],
   },
   {
     slug: "retrato",
@@ -962,6 +1018,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["guilloche"],
   },
   {
+    slug: "scrip",
+    id: "scrip",
+    category: "Emisión",
+    title: { es: "Scrip", en: "Scrip" },
+    definition: { es: "Papel o ficha sustitutiva de moneda emitida por un comercio, cámara de comercio, empleador o comunidad para un uso limitado y por tiempo definido —por ejemplo un jubileo o una emergencia local— sin ser billete de un banco central. El scrip del Golden Jubilee de Baraboo (1933) es de este tipo.", en: "Substitute paper or token currency issued by a business, chamber of commerce, employer, or community for limited, time-bound use — for example a jubilee or a local emergency — rather than by a central bank. The 1933 Baraboo Golden Jubilee scrip is of this kind." },
+    seeAlso: ["billete-de-necesidad", "vale-al-portador", "exonumia"],
+  },
+  {
     slug: "serie",
     id: "serie",
     category: "Coleccionismo",
@@ -991,7 +1055,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Emisión",
     title: { es: "Sobresello", en: "Overprint" },
     definition: { es: "Texto o sello adicional impreso sobre un billete o documento ya existente para modificar su valor, vigencia o jurisdicción.", en: "Additional text or stamp printed over an already-existing note or document to alter its value, validity, or jurisdiction." },
-    seeAlso: ["resello"],
+    seeAlso: ["resello", "handstamp"],
   },
   {
     slug: "spark",
@@ -1106,12 +1170,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["polimero", "guardian"],
   },
   {
+    slug: "uniface",
+    id: "uniface",
+    category: "Diseño",
+    title: { es: "Uniface (a una cara)", en: "Uniface" },
+    definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. La nota de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
+    seeAlso: ["anverso", "reverso", "prueba-ensayo", "specimen"],
+  },
+  {
     slug: "vale-al-portador",
     id: "vale-al-portador",
     category: "Emisión",
     title: { es: "Vale al portador", en: "Bearer note" },
     definition: { es: "Documento que reconoce una deuda u obligación de pago a quien lo posea físicamente, sin necesidad de identificar a un titular específico.", en: "A document acknowledging a debt or payment obligation to whoever physically holds it, with no named holder required." },
-    seeAlso: ["deuda-flotante", "cedula-hipotecaria", "libranza"],
+    seeAlso: ["deuda-flotante", "cedula-hipotecaria", "libranza", "scrip"],
   },
   {
     slug: "ventana-transparente",
