@@ -157,6 +157,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/'],
   },
   {
+    es: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
+    en: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',
+    aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/'],
+  },
+  {
     es: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/',
     en: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/',
     aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/'],
@@ -357,6 +362,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
+    '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/',
@@ -376,6 +382,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
+    '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',
     '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/',
     '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/',
     '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/',
