@@ -89,8 +89,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'State banks, broken banknotes, and the tax that ended private issue.',
     },
     body: {
-      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, y el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial. En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
-      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, and the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
+      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial, y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback». En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
+      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -306,7 +306,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -779,6 +779,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '5-dolares-city-bank-new-haven'
+  | '50-dolares-canal-bank-nueva-orleans'
   | '5-dolares-confederados-1864'
   | '20-dolares-confederados-1864'
   | '100-dolares-confederados-1862'
@@ -1177,6 +1178,145 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Enero de 1915: los accionistas del City Bank aprobaron la fusión con el National New Haven Bank y el New Haven County National Bank; la casa resultante, New Haven Bank, National Banking Association; fusión formal prevista para agosto de 1915.',
           en: 'January 1915: City Bank stockholders approved a merger with the National New Haven Bank and the New Haven County National Bank; the combined house, New Haven Bank, National Banking Association; formal merger planned for August 1915.',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-dolares-canal-bank-nueva-orleans',
+    chapterId: 'us-obsoleto',
+    path: '/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/',
+    pathEn: '/collection/united-states/50-dollars-canal-bank-new-orleans/',
+    pick: 'Haxby LA-105 G46a · N#206863',
+    serial: '—',
+    no_serial_reason:
+      'Obsolete remainder: the face has no printed No. field and no serial was written in. Cash.r and Pres.t lines are unsigned and the date stops at 18__.',
+    signatures: {
+      es: 'Ninguna (Cash.r y Pres.t en blanco; remainder)',
+      en: 'None (Cash.r and Pres.t blank; remainder)',
+    },
+    printed: {
+      es: 'Toppan, Carpenter & Co., Filadelfia y Nueva York. Beast Coins fecha la plancha D de este tipo a finales de los años 1840 y Numista da el tipo por 1849. No se publica una tirada para el tipo ni para este ejemplar.',
+      en: 'Toppan, Carpenter & Co., Philadelphia and New York. Beast Coins dates plate D of this type to the late 1840s and Numista gives the type as 1849. No printage is published for the type or for this piece.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/la-105-50-dollar-canal-bank-composite.jpg',
+      front: '/images/catalog/estados-unidos/la-105-50-dollar-canal-bank-front.jpg',
+      back: '/images/catalog/estados-unidos/la-105-50-dollar-canal-bank-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '50 dólares · Canal Bank, Nueva Orleans',
+      en: '$50 · Canal Bank, New Orleans',
+    },
+    kicker: {
+      es: 'Estados Unidos · Billete obsoleto · Luisiana',
+      en: 'United States · Obsolete note · Louisiana',
+    },
+    lead: {
+      es: 'Remainder de 50 dólares del Canal Bank de Nueva Orleans: plancha D, fecha 18__, sin serial ni firmas, y el reverso rojo que le dio el apodo de «Redback».',
+      en: 'A $50 remainder of the Canal Bank of New Orleans: plate D, an 18__ date, no serial and no signatures, and the red back that earned the type its “Redback” nickname.',
+    },
+    description: {
+      es: 'El 50 dólares Haxby LA-105 G46a (Numista N#206863) es un obsolete note remainder de The New Orleans Canal & Banking Company, Luisiana. Numista mide el tipo en 183 × 76 mm. El anverso, en calcografía negra sobre un fondo de protección gris que deletrea FIFTY en letras gigantes, se titula CANAL BANK en mayúsculas sombreadas, con «New Orleans» en cursiva arriba a la izquierda y la fecha detenida en 18__ arriba a la derecha. La línea manuscrita reza «The New Orleans Canal & Banking Company Will pay FIFTY DOLLARS to the bearer on demand». En el centro, una figura femenina sentada se apoya en un 50 monumental, con veleros a la izquierda, un escudo listado a sus pies y fardos y barriles a la derecha; abajo, un águila. Los cuatro medallones de las esquinas repiten el 50. Numista identifica el retrato inferior izquierdo como Andrew Jackson, el inferior derecho —de uniforme naval con charreteras— como el capitán James Lawrence, y el óvalo femenino de la derecha como Anne Florence de Grey; el segundo óvalo femenino, a la izquierda del centro, no lleva nombre en esa ficha y aquí no se le asigna uno. La plancha es D, impresa a ambos lados del título. El pie de imprenta, arriba a la derecha, es Toppan, Carpenter & Co. Philad’a & New York. No hay recuadro de serial, la fecha no se completó y las líneas Cash.r y Pres.t están en blanco: es un remainder, no un ejemplar puesto en circulación. El reverso sí lleva dorso propio, en rojo anaranjado: dos 50 sobre rosetones de torno y un medallón central de lacería, con el anverso y su orla de FIFTY DOLLARS asomando invertidos al trasluz. De ese dorso viene el apodo «Redback» que Numista recoge en el título del tipo. No debe confundirse con el 50 dólares LA-105 G48a, de diseño distinto e imprenta Rawdon, Wright, Hatch & Edson, que es la variedad que suelen listar las casas de subasta.',
+      en: 'The $50 Haxby LA-105 G46a (Numista N#206863) is an obsolete remainder of The New Orleans Canal & Banking Company, Louisiana. Numista gives the type as 183 × 76 mm. The face, black intaglio over a gray protector panel spelling FIFTY in giant letters, is titled CANAL BANK in shaded capitals, with “New Orleans” in script at upper left and the date stopped at 18__ at upper right. The engraved line reads “The New Orleans Canal & Banking Company Will pay FIFTY DOLLARS to the bearer on demand.” At center a seated female figure leans against a monumental 50, with sailing ships at left, a striped shield at her feet, and bales and barrels at right; an eagle sits below. Four corner medallions repeat the 50. Numista identifies the lower-left portrait as Andrew Jackson, the lower-right — in naval uniform with epaulettes — as Captain James Lawrence, and the right-hand female oval as Anne Florence de Grey; the second female oval, left of center, is unnamed in that record and no name is assigned to it here. The plate letter is D, printed on both sides of the title. The imprint at upper right is Toppan, Carpenter & Co. Philad’a & New York. There is no serial box, the date was never completed, and the Cash.r and Pres.t lines are blank: this is a remainder, not a note placed in circulation. The back does carry a design of its own, in orange-red: two 50s over lathework rosettes and a central medallion of guilloche, with the face and its FIFTY DOLLARS border showing through reversed. That back is the source of the “Redback” nickname Numista keeps in the type’s title. It should not be confused with the $50 LA-105 G48a, a different design printed by Rawdon, Wright, Hatch & Edson, which is the variety auction houses usually list.',
+    },
+    history: {
+      es: 'Este billete lo emitió un banco que pagó su carta cavando un canal. Luisiana fue el estado que más lejos llevó la intervención pública en la banca de los años 1830: la enciclopedia de EH.net y la Historic New Orleans Collection describen tres tipos de casa —commercial banks para comerciantes, property banks para hipotecas de plantación e improvement banks obligados por su carta a construir obra pública—. The New Orleans Canal & Banking Company, del 5 de marzo de 1831, fue el improvement bank del New Basin Canal. Según el Preservation Resource Center of New Orleans, la carta exigía un canal de 60 pies de ancho y al menos seis de profundidad, con diques, camino de peaje y camino de sirga, una dársena en la ciudad y un puerto en el lago; a cambio, la compañía cobraría peaje en exclusiva durante 35 años, tras los cuales el canal revertía al estado. El capital autorizado fue de cuatro millones de dólares. La primera mitad del trazado, de Mobile Landing a Metairie Road, quedó lista en agosto de 1834 y el resto en 1835; el canal abrió a la navegación en 1838. Lo cavaron a mano miles de jornaleros irlandeses, y el cólera y la fiebre amarilla se los llevaron sin que nadie levantara acta: el PRC advierte que la cifra de 10.000 muertos que suele repetirse es probablemente exagerada y se confunde con la epidemia de cólera de 1832–1833, sin que eso reste nada a la dureza del trabajo. El archivo de Tulane sigue el rastro corporativo del banco desde 1831 hasta la Canal Bank and Trust Company del 1 de enero de 1926, y anota su cierre en los años 1930. En 1933 se organizó The National Bank of Commerce in New Orleans, charter 13689: la ficha de la SPMC transcribe en su informe de organización que sucedería a la Canal Bank & Trust Company. La liquidación siguió litigándose ante la Corte Suprema de Luisiana hasta bien entrados los años cuarenta.',
+      en: 'This note came from a bank that paid for its charter by digging a canal. Louisiana carried public involvement in banking further than any other state in the 1830s: the EH.net encyclopedia and the Historic New Orleans Collection describe three kinds of house — commercial banks for merchants, property banks for plantation mortgages, and improvement banks required by charter to build public works. The New Orleans Canal & Banking Company, of 5 March 1831, was the improvement bank of the New Basin Canal. Per the Preservation Resource Center of New Orleans, the charter called for a channel 60 feet wide and at least six feet deep, with levees, a toll road and a towpath, a turning basin in the city and a harbor at the lake; in exchange the company held exclusive toll rights for 35 years, after which the canal reverted to the state. Authorized capital was four million dollars. The first half of the route, from Mobile Landing to Metairie Road, was finished in August 1834 and the rest in 1835; the canal opened to navigation in 1838. Thousands of Irish laborers dug it by hand, and cholera and yellow fever took them without anyone keeping a record: the PRC cautions that the figure of 10,000 dead usually repeated is probably an overestimate, conflated with the cholera epidemic of 1832–1833 — which takes nothing away from how brutal the work was. Tulane’s archive follows the bank’s corporate trail from 1831 to the Canal Bank and Trust Company of 1 January 1926 and records its closure in the 1930s. In 1933 The National Bank of Commerce in New Orleans, charter 13689, was organized: the SPMC record transcribes its organization report, which states that it would succeed the Canal Bank & Trust Company. The liquidation was still being litigated before the Louisiana Supreme Court well into the 1940s.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50 dólares remainder, Haxby LA-105 G46a, plancha D: Andrew Jackson y el capitán James Lawrence en las esquinas, la alegoría del 50 al centro y el título CANAL BANK.',
+      en: 'Face of the $50 remainder, Haxby LA-105 G46a, plate D: Andrew Jackson and Captain James Lawrence in the corners, the allegory of the 50 at center, and the CANAL BANK title.',
+    },
+    backCaption: {
+      es: 'Reverso «Redback» en rojo anaranjado: dos 50 sobre rosetones de torno y un medallón central; el anverso se ve invertido al trasluz. Sin serial ni firmas.',
+      en: '“Redback” reverse in orange-red: two 50s over lathework rosettes and a central medallion; the face reads through reversed. No serial and no signatures.',
+    },
+    scarcity: {
+      es: 'Numista da al tipo un índice de rareza 87 entre sus socios —una medida de presencia en colecciones, no de existencias en subasta— y anota que el 92 % de los ejemplares registrados son el remainder sin fecha, frente a un 8 % con la fecha emitida del 10 de febrero de 1849. La fila del remainder va etiquetada allí como «Series A»; este ejemplar lleva plancha D, que es la que Beast Coins ilustra para el G46a. Los remainders del Canal Bank abundan en grados altos porque nunca circularon; los cortes de cancelación, las roturas y los remiendos antiguos son corrientes en el tipo. Esta ficha no inventa un censo ni una cotización para este ejemplar.',
+      en: 'Numista gives the type a rarity index of 87 among its members — a measure of presence in collections, not of auction supply — and records that 92 percent of the examples logged are the undated remainder, against 8 percent carrying the issued date of 10 February 1849. The remainder row is labelled “Series A” there; this piece carries plate letter D, which is the plate Beast Coins illustrates for G46a. Canal Bank remainders are plentiful in high grades because they never circulated; cut cancels, splits, and old repairs are routine for the type. This record does not invent a census or a valuation for this piece.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG, PCGS o Legacy para este remainder sin serial ni certificado. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG, PCGS, or Legacy census for this remainder — which has neither a serial nor a certificate number — has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Remainder, sin encapsular (colección privada)',
+      en: 'Remainder, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note206863.html',
+        es: 'Numista — 50 Dollars, Canal Bank «Redback» (N#206863)',
+        en: 'Numista — 50 Dollars, Canal Bank “Redback” (N#206863)',
+        note: {
+          es: 'Referencia H# LA 105-G46a; imprenta Toppan, Carpenter & Co.; 183 × 76 mm; retratos de Andrew Jackson, el capitán James Lawrence y Anne Florence de Grey; remainder sin fecha (92 %) frente a la fecha emitida del 10 de febrero de 1849 (8 %); índice de rareza 87.',
+          en: 'Reference H# LA 105-G46a; Toppan, Carpenter & Co. imprint; 183 × 76 mm; portraits of Andrew Jackson, Captain James Lawrence, and Anne Florence de Grey; undated remainder (92 percent) against the issued date of 10 February 1849 (8 percent); rarity index 87.',
+        },
+      },
+      {
+        href: 'https://beastcoins.com/Banknotes/Obsolete/Louisiana/Louisiana.htm',
+        es: 'Beast Coins — Obsolete notes de Luisiana, LA-105-G46a',
+        en: 'Beast Coins — Louisiana obsolete notes, LA-105-G46a',
+        note: {
+          es: 'New Orleans Canal & Banking Company, c. 1831–1860s; 50 dólares Haxby LA-105-G46a, sin emitir ni firmar, finales de los años 1840, plancha D, Toppan, Carpenter & Co. Filadelfia y Nueva York; tipo I, pagadero en el banco de Nueva Orleans. El G48a de las mismas tablas es la variedad de Rawdon, Wright, Hatch & Edson.',
+          en: 'New Orleans Canal & Banking Company, c. 1831–1860s; $50 Haxby LA-105-G46a, unissued and unsigned, late 1840s, plate D, Toppan, Carpenter & Co. Philadelphia and New York; Type I, payable at the bank in New Orleans. The G48a in the same tables is the Rawdon, Wright, Hatch & Edson variety.',
+        },
+      },
+      {
+        href: 'https://eh.net/encyclopedia/antebellum-banking-in-the-united-states/',
+        es: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+        en: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+        note: {
+          es: 'Luisiana autorizó en los años 1830 commercial banks, property banks e improvement banks; entre estos últimos, la New Orleans Canal and Banking Company, que construyó el canal hasta el lago Pontchartrain.',
+          en: 'In the 1830s Louisiana chartered commercial banks, property banks, and improvement banks; among the latter, the New Orleans Canal and Banking Company, which built the canal to Lake Pontchartrain.',
+        },
+      },
+      {
+        href: 'https://hnoc.org/virtual-exhibitions/money-money-money/banking-antebellum-south/financing-progress',
+        es: 'Historic New Orleans Collection — Financing Progress (Money, Money, Money)',
+        en: 'Historic New Orleans Collection — Financing Progress (Money, Money, Money)',
+        note: {
+          es: 'La Canal and Banking Company (1831) encabeza la lista de improvement banks de Luisiana, obligados por carta a financiar canales, ferrocarriles, hoteles o alumbrado de gas.',
+          en: 'The Canal and Banking Company (1831) heads the list of Louisiana improvement banks, required by charter to fund canals, railroads, hotels, or gas streetlights.',
+        },
+      },
+      {
+        href: 'https://prcno.org/before-i-10-the-new-basin-canal-flowed-through-new-orleans/',
+        es: 'Preservation Resource Center of New Orleans — Before I-10, the New Basin Canal flowed through New Orleans',
+        en: 'Preservation Resource Center of New Orleans — Before I-10, the New Basin Canal flowed through New Orleans',
+        note: {
+          es: 'Carta del 5 de marzo de 1831: canal de 60 pies de ancho y seis de profundidad, diques, camino de peaje y de sirga, dársena y puerto en el lago; peaje exclusivo por 35 años. Primera mitad lista en agosto de 1834, el resto en 1835. La cifra de 10.000 jornaleros irlandeses muertos es probablemente exagerada y se confunde con el cólera de 1832–1833.',
+          en: 'Charter of 5 March 1831: a channel 60 feet wide and six deep, levees, a toll road and towpath, a turning basin and a lake harbor; exclusive tolls for 35 years. First half finished in August 1834, the rest in 1835. The figure of 10,000 dead Irish laborers is probably an overestimate, conflated with the 1832–1833 cholera epidemic.',
+        },
+      },
+      {
+        href: 'https://archives.tulane.edu/repositories/3/resources/307',
+        es: 'Tulane University — Canal Bank records (Archives and Special Collections)',
+        en: 'Tulane University — Canal Bank records (Archives and Special Collections)',
+        note: {
+          es: 'New Orleans Canal and Banking Company desde el 5 de marzo de 1831; Canal Bank of New Orleans (1895), Canal Bank and Trust Company (1903), Canal-Louisiana (1905), Canal-Commercial (1919) y Canal Bank and Trust Company desde el 1 de enero de 1926; cierre en los años 1930.',
+          en: 'New Orleans Canal and Banking Company from 5 March 1831; Canal Bank of New Orleans (1895), Canal Bank and Trust Company (1903), Canal-Louisiana (1905), Canal-Commercial (1919), and Canal Bank and Trust Company from 1 January 1926; closed in the 1930s.',
+        },
+      },
+      {
+        href: 'https://banklookup.spmc.org/bank/13689',
+        es: 'SPMC — U.S. National Bank Lookup, charter 13689 (National Bank of Commerce in New Orleans)',
+        en: 'SPMC — U.S. National Bank Lookup, charter 13689 (National Bank of Commerce in New Orleans)',
+        note: {
+          es: 'Organizado el 24 de abril de 1933 y con carta del 20 de mayo de 1933; el informe de organización anota que sucedería a la Canal Bank & Trust Company de Nueva Orleans.',
+          en: 'Organized 24 April 1933 and chartered 20 May 1933; the organization report notes that it would succeed the Canal Bank & Trust Company of New Orleans.',
+        },
+      },
+      {
+        href: 'https://www.courtlistener.com/opinion/3469670/liquidation-of-canal-bank-trust-co/',
+        es: 'Liquidation of Canal Bank & Trust Co., 211 La. 803 (1947) — CourtListener',
+        en: 'Liquidation of Canal Bank & Trust Co., 211 La. 803 (1947) — CourtListener',
+        note: {
+          es: 'La liquidación del banco seguía ante la Corte Suprema de Luisiana en abril de 1947.',
+          en: 'The bank’s liquidation was still before the Louisiana Supreme Court in April 1947.',
         },
       },
     ],
