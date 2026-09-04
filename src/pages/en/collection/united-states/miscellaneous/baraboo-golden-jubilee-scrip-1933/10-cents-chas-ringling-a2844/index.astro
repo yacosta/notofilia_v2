@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../../../data/estados-unidos';
+
+const note = noteById('scrip-baraboo-10-centavos-a2844');
+if (!note) throw new Error('Missing Baraboo 10¢ Chas. Ringling A2844 catalog record');
+---
+
+<UnitedStatesNotePage locale="en" note={note} />
