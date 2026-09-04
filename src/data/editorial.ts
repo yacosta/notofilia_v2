@@ -210,6 +210,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '5 centavos · John Ringling · A4895',
     en: '5¢ · John Ringling · A4895',
   },
+  '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/': {
+    es: '10 centavos · Chas. Ringling · A2844',
+    en: '10¢ · Chas. Ringling · A2844',
+  },
   '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/': {
     es: '15 centavos · Al. T. Ringling · A2819',
     en: '15¢ · Al. T. Ringling · A2819',

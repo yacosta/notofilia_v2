@@ -321,6 +321,34 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(enPiece15, /UnitedStatesNotePage/);
     assert.match(enPiece15, /locale="en"/);
   });
+
+  it('publishes the 10¢ Chas. Ringling holding A2844 with thin ES/EN piece routes', () => {
+    const esPiece10 = readFileSync(
+      new URL(
+        '../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    const enPiece10 = readFileSync(
+      new URL(
+        '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    assert.match(data, /id: 'scrip-baraboo-10-centavos-a2844'/);
+    assert.match(data, /serial: 'A2844'/);
+    assert.match(data, /Shafer WI100 · 10¢/);
+    assert.match(data, /holdingId: 'scrip-baraboo-10-centavos-a2844'/);
+    assert.match(data, /Chas\. Ringling/);
+    assert.match(data, /TEN CENTS/);
+    assert.match(data, /O\. L\. Erickson/);
+    assert.match(esPiece10, /UnitedStatesNotePage/);
+    assert.match(esPiece10, /locale="es"/);
+    assert.match(enPiece10, /UnitedStatesNotePage/);
+    assert.match(enPiece10, /locale="en"/);
+  });
 });
 
 describe('US obsolete City Bank of New Haven $5 remainder', () => {

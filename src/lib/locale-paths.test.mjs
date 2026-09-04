@@ -232,6 +232,13 @@ describe('locale path mapping', () => {
     );
     assert.equal(
       localizePath(
+        '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/',
+        'en',
+      ),
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/',
+    );
+    assert.equal(
+      localizePath(
         '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/',
         'en',
       ),
@@ -457,6 +464,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/'],
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/'],
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/'],
