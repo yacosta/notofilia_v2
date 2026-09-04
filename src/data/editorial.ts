@@ -210,6 +210,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '5 centavos · John Ringling · A4895',
     en: '5¢ · John Ringling · A4895',
   },
+  '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/': {
+    es: '15 centavos · Al. T. Ringling · A2819',
+    en: '15¢ · Al. T. Ringling · A2819',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',

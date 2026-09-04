@@ -293,6 +293,34 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
   });
+
+  it('publishes the 15¢ Al. T. Ringling holding A2819 with thin ES/EN piece routes', () => {
+    const esPiece15 = readFileSync(
+      new URL(
+        '../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    const enPiece15 = readFileSync(
+      new URL(
+        '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    assert.match(data, /id: 'scrip-baraboo-15-centavos-a2819'/);
+    assert.match(data, /serial: 'A2819'/);
+    assert.match(data, /Shafer WI100 · 15¢/);
+    assert.match(data, /holdingId: 'scrip-baraboo-15-centavos-a2819'/);
+    assert.match(data, /Al\. T\. Ringling/);
+    assert.match(data, /O\. L\. Erickson/);
+    assert.match(data, /FIFTEEN \(15\) CENTS/);
+    assert.match(esPiece15, /UnitedStatesNotePage/);
+    assert.match(esPiece15, /locale="es"/);
+    assert.match(enPiece15, /UnitedStatesNotePage/);
+    assert.match(enPiece15, /locale="en"/);
+  });
 });
 
 describe('US obsolete City Bank of New Haven $5 remainder', () => {

@@ -79,6 +79,7 @@ export const additions: Holding[] = [
   { id: 'us-frn-2006-1-dallas-k46602688c', kind: 'banknote', country: 'US' },
   { id: 'us-giori-lincoln-memorial-1970s', kind: 'banknote', country: 'US' },
   { id: 'us-baraboo-1933-5c-a4895', kind: 'banknote', country: 'US' },
+  { id: 'us-baraboo-1933-15c-a2819', kind: 'banknote', country: 'US' },
   { id: 'us-renci-pele-f71235101a', kind: 'banknote', country: 'US' },
   { id: 'us-renci-messi-you-have-to-fight-to-reach-your-dream', kind: 'banknote', country: 'US' },
   { id: 'us-renci-warhol-basquiat-life-is-beautiful', kind: 'banknote', country: 'US' },
