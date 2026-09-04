@@ -503,69 +503,6 @@ export const miscSeriesSources: CatalogSource[] = [
   },
 ];
 
-export type BarabooScripDenomination = {
-  id: string;
-  face: LocalizedText;
-  subject: LocalizedText;
-  /** When set, the type row links to that holding. Not a second identity. */
-  holdingId?: string;
-};
-
-/** Type rows only — no serials. Do not treat these as holdings. */
-export const barabooScripDenominations: BarabooScripDenomination[] = [
-  {
-    id: '5c',
-    face: { es: '5 centavos', en: '5¢' },
-    subject: {
-      es: 'John Ringling',
-      en: 'John Ringling',
-    },
-    holdingId: 'scrip-baraboo-5-centavos-a4895',
-  },
-  {
-    id: '10c',
-    face: { es: '10 centavos', en: '10¢' },
-    subject: {
-      es: 'Chas. Ringling',
-      en: 'Chas. Ringling',
-    },
-    holdingId: 'scrip-baraboo-10-centavos-a2844',
-  },
-  {
-    id: '15c',
-    face: { es: '15 centavos', en: '15¢' },
-    subject: {
-      es: 'Al. T. Ringling',
-      en: 'Al. T. Ringling',
-    },
-    holdingId: 'scrip-baraboo-15-centavos-a2819',
-  },
-  {
-    id: '25c',
-    face: { es: '25 centavos', en: '25¢' },
-    subject: {
-      es: 'Uno de los cinco hermanos Ringling',
-      en: 'One of the five Ringling brothers',
-    },
-  },
-  {
-    id: '50c',
-    face: { es: '50 centavos', en: '50¢' },
-    subject: {
-      es: 'Uno de los cinco hermanos Ringling',
-      en: 'One of the five Ringling brothers',
-    },
-  },
-  {
-    id: '1d',
-    face: { es: '1 dólar', en: '$1' },
-    subject: {
-      es: 'Los cinco hermanos Ringling',
-      en: 'The five Ringling brothers',
-    },
-  },
-];
-
 export const barabooScripSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos · Scrip de Baraboo 1933 | Notofilia',
@@ -578,10 +515,6 @@ export const barabooScripSeriesCopy = {
     miscLink: 'Misceláneos',
     heroAlt:
       'Mapa souvenir de Baraboo, Wisconsin, para el Golden Jubilee del Ringling Bros. and Barnum & Bailey Circus el 3 de agosto de 1933: vista aérea sepia con boleto de circo de 1933, sello de 3¢ de Wisconsin 1848, rosa de los vientos y programa souvenir, y el Al. Ringling Theatre, el palacio de justicia de Sauk County, el río Baraboo, los patios C. & N.W. y la carpa en el recinto ferial',
-    typesLabel: 'Denominaciones del tipo',
-    typesIntro:
-      'Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—, Shafer WI100. Las denominaciones inferiores retratan a cada hermano Ringling por separado; el 1 dólar reúne al grupo. El 5¢ de esta colección lleva a John Ringling; el 10¢, a Chas. Ringling; el 15¢, a Al. T. Ringling; las demás fraccionarias siguen sin asignar hermano hasta que haya ejemplar.',
-    pendingLabel: 'Pendiente de ejemplar',
     holdingsTitle: 'Ejemplares de la colección',
     holdingsIntro:
       'Cada ficha de ejemplar necesita el número de serie impreso o, si el vale está encapsulado, el número de certificado. No se inventan seriales.',
@@ -608,10 +541,6 @@ export const barabooScripSeriesCopy = {
     miscLink: 'Miscellaneous',
     heroAlt:
       'Souvenir map of Baraboo, Wisconsin, for the Ringling Bros. and Barnum & Bailey Circus Golden Jubilee on August 3, 1933: a sepia aerial view with a 1933 circus ticket, 3¢ Wisconsin 1848 stamp, compass rose, and souvenir program, labeling the Al. Ringling Theatre, Sauk County Courthouse, Baraboo River, C. & N.W. yards, and the Big Top at the fairgrounds',
-    typesLabel: 'Type denominations',
-    typesIntro:
-      'Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — Shafer WI100. The lower denominations show each Ringling brother singly; the $1 shows the group. The 5¢ in this collection shows John Ringling; the 10¢ shows Chas. Ringling; the 15¢ shows Al. T. Ringling; the other fractionals stay unassigned until a holding is supplied.',
-    pendingLabel: 'Holding pending',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
       'Each piece page needs the printed serial or, if the note is slabbed, the certificate number. Serials are not invented here.',
@@ -630,8 +559,8 @@ export const barabooScripSeriesCopy = {
 } as const;
 
 export const barabooScripSeriesLead: LocalizedText = {
-  es: 'En 1933 el Ringling Bros. and Barnum & Bailey Circus volvió a Baraboo, Wisconsin, para su 50.º aniversario: el Golden Jubilee. La Cámara de Comercio emitió scrip de 5¢ a 1 dólar —Shafer WI100—. Esta ficha documenta el tipo, el ejemplar de 5¢ con retrato de John Ringling, serial A4895, el de 10¢ con retrato de Chas. Ringling, serial A2844, y el de 15¢ con retrato de Al. T. Ringling, serial A2819.',
-  en: 'In 1933 the Ringling Bros. and Barnum & Bailey Circus returned to Baraboo, Wisconsin, for its 50th anniversary — the Golden Jubilee. The Chamber of Commerce issued scrip from 5¢ to $1 — Shafer WI100. This record documents the type, the 5¢ holding with John Ringling’s portrait, serial A4895, the 10¢ holding with Chas. Ringling’s portrait, serial A2844, and the 15¢ holding with Al. T. Ringling’s portrait, serial A2819.',
+  es: 'En 1933 el Ringling Bros. and Barnum & Bailey Circus volvió a Baraboo, Wisconsin, para su 50.º aniversario: el Golden Jubilee. La Cámara de Comercio emitió scrip de 5¢ a 1 dólar —Shafer WI100—. Esta ficha reúne el ejemplar de 5¢ con retrato de John Ringling, serial A4895, el de 10¢ con retrato de Chas. Ringling, serial A2844, y el de 15¢ con retrato de Al. T. Ringling, serial A2819.',
+  en: 'In 1933 the Ringling Bros. and Barnum & Bailey Circus returned to Baraboo, Wisconsin, for its 50th anniversary — the Golden Jubilee. The Chamber of Commerce issued scrip from 5¢ to $1 — Shafer WI100. This record holds the 5¢ note with John Ringling’s portrait, serial A4895, the 10¢ with Chas. Ringling’s portrait, serial A2844, and the 15¢ with Al. T. Ringling’s portrait, serial A2819.',
 };
 
 export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 'scripTitle' | 'collectingTitle' | 'strainTitle'; paragraphs: LocalizedText[] }[] = [

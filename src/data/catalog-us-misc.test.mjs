@@ -144,7 +144,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /E\. B\. Trimpey/);
     assert.match(data, /1 de noviembre de 1933/);
     assert.match(data, /1 November 1933/);
-    assert.match(data, /barabooScripDenominations/);
+    assert.doesNotMatch(data, /barabooScripDenominations/);
     assert.match(data, /id: 'scrip-baraboo-5-centavos-a4895'/);
     assert.match(data, /serial: 'A4895'/);
     assert.match(data, /John Ringling/);
@@ -162,7 +162,11 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(esRoute, /locale="es"/);
     assert.match(enRoute, /UnitedStatesBarabooScripSeriesPage/);
     assert.match(enRoute, /locale="en"/);
-    assert.match(barabooPage, /barabooScripDenominations/);
+    assert.doesNotMatch(barabooPage, /barabooScripDenominations/);
+    assert.doesNotMatch(barabooPage, /baraboo-types-heading/);
+    assert.doesNotMatch(barabooPage, /t\.typesLabel/);
+    assert.doesNotMatch(barabooPage, /t\.typesIntro/);
+    assert.doesNotMatch(barabooPage, /t\.pendingLabel/);
     assert.match(barabooPage, /barabooScripNarrative/);
     assert.match(barabooPage, /barabooScripSeriesLead/);
     assert.match(barabooPage, /barabooScripHoldings/);
@@ -254,13 +258,18 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.doesNotMatch(copyBlock, /Vintage map of the United States on parchment/);
   });
 
-  it('lists the six-piece set including the $1 in ES and EN type copy', () => {
+  it('lists the six-piece set including the $1 in ES and EN narrative, without a type-denomination grid', () => {
     assert.match(data, /Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
     assert.match(data, /The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
-    assert.match(data, /Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
-    assert.match(data, /Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
     assert.match(data, /El 1 dólar reúne al grupo/);
     assert.match(data, /The \$1 shows the group/);
+    assert.doesNotMatch(data, /Denominaciones del tipo/);
+    assert.doesNotMatch(data, /Type denominations/);
+    assert.doesNotMatch(data, /Pendiente de ejemplar/);
+    assert.doesNotMatch(data, /Holding pending/);
+    assert.doesNotMatch(data, /Pending specimen/);
+    assert.doesNotMatch(data, /Seis vales —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
+    assert.doesNotMatch(data, /Six notes — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
     assert.doesNotMatch(data, /Las denominaciones inferiores —5¢, 10¢, 15¢, 25¢ y 50¢—/);
     assert.doesNotMatch(data, /The lower denominations — 5¢, 10¢, 15¢, 25¢, and 50¢ —/);
   });
@@ -283,7 +292,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /id: 'scrip-baraboo-5-centavos-a4895'/);
     assert.match(data, /serial: 'A4895'/);
     assert.match(data, /Shafer WI100 · 5¢/);
-    assert.match(data, /holdingId: 'scrip-baraboo-5-centavos-a4895'/);
+    assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-5-centavos-a4895'/);
     assert.match(data, /P\. L\. Gust/);
     assert.match(data, /O\. L\. Gust/);
     assert.match(notePage, /isBarabooScripNote/);
@@ -312,7 +321,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /id: 'scrip-baraboo-15-centavos-a2819'/);
     assert.match(data, /serial: 'A2819'/);
     assert.match(data, /Shafer WI100 · 15¢/);
-    assert.match(data, /holdingId: 'scrip-baraboo-15-centavos-a2819'/);
+    assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-15-centavos-a2819'/);
     assert.match(data, /Al\. T\. Ringling/);
     assert.match(data, /O\. L\. Erickson/);
     assert.match(data, /FIFTEEN \(15\) CENTS/);
@@ -340,7 +349,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(data, /id: 'scrip-baraboo-10-centavos-a2844'/);
     assert.match(data, /serial: 'A2844'/);
     assert.match(data, /Shafer WI100 · 10¢/);
-    assert.match(data, /holdingId: 'scrip-baraboo-10-centavos-a2844'/);
+    assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-10-centavos-a2844'/);
     assert.match(data, /Chas\. Ringling/);
     assert.match(data, /TEN CENTS/);
     assert.match(data, /O\. L\. Erickson/);
