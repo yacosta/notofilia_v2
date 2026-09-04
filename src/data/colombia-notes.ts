@@ -14,6 +14,7 @@ export type ColombiaNoteId =
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '2000-pesos-2008'
+  | '2000-pesos-2015'
   | '20000-pesos-2017'
   | '1000-pesos-error-2008'
   | '1000-pesos-error-2011'
@@ -1323,6 +1324,113 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Contexto público del validador. La fuente de esta ficha es la tarjeta de identidad CashFlowSCN83, SOFTWARE BILL SET, uso interno, variante 523334446, Colombia (COP). Indexa COP 20000 (CA) como COP_000020000_C_A_D_C, «Series 2015» en esa tabla (familia de 2016), distinto de COP 20000 (BA). No es certificado PMG: no trae serial, grado, Pick ni censo. No se enlazan imágenes privadas ni las rutas de escaneo faltantes.',
           en: 'Public product context for the validator. The source used here is the CashFlowSCN83 identity card, SOFTWARE BILL SET, internal use, variant 523334446, Colombia (COP). It indexes COP 20000 (CA) as COP_000020000_C_A_D_C, “Series 2015” on that table (2016 family), distinct from COP 20000 (BA). It is not a PMG certificate: no serial, grade, Pick, or census. Private cert images and the card’s missing scan paths are not linked.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2000-pesos-2015',
+    chapterId: 'familias-modernas',
+    path: `${COLOMBIA_PATH}2000-pesos-2015/`,
+    pick: 'P# 458a / TBB B993a',
+    serial: 'AA40000066',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y José Tolosa Buitrago (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and José Tolosa Buitrago (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Impreso en tintas sobre papel. Fecha impresa en el reverso: 19 de agosto de 2015. Formato 128 × 66 mm (la Colección Numismática Banrepcultural lo da como 66 × 128 mm). Serial de dos letras y ocho dígitos, serie AA. El Bank Note Museum data el tipo Pick 458 en 2015–2023 y lista 19.08.2015 como 458a; siguen 02.08.2016 (458b), 29.08.2017 (458c) y fechas de 2018 a 2023 sin letra en el Standard Catalog. González White 2019 numera esta fecha BG# NF2-1 (p. 146), serie AA, y marca ¿? la emisión; la fecha de circulación del libro es el 29 de noviembre de 2016. Numista asigna a 19.08.2015 TBB B993a y agrupa los prefijos AA–AD en esa fecha (firmas JDUE / JTB). La producción BanRep de todos los 2.000 pesos en 2016 es 251,5 millones de piezas, y la entrega a Tesorería de la familia Z (2016) es 44,13 millones: son totales de la denominación ese año, no la tirada de esta fecha ni de esta serie. La cifra de 2015 (351,5 millones) es el total de la denominación ese año, aún sin la familia Z. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the back: 19 August 2015. Size 128 × 66 mm (Banrepcultural’s Numismatic Collection lists it as 66 × 128 mm). Two-letter prefix and eight digits, series AA. The Bank Note Museum dates type Pick 458 to 2015–2023 and lists 19.08.2015 as 458a; then 02.08.2016 (458b), 29.08.2017 (458c), and 2018–2023 dates unlettered in the Standard Catalog. González White 2019 numbers this date BG# NF2-1 (p. 146), series AA, and marks emisión ¿?; the book’s circulation date is 29 November 2016. Numista assigns TBB B993a to 19.08.2015 and groups prefixes AA–AD on that date (signatures JDUE / JTB). BanRep’s 2016 production of every 2,000-peso note is 251.5 million pieces, and Tesorería delivery of the 2016 Z family is 44.13 million: those are denomination totals for the year, not the printage of this date or this series. The 2015 figure (351.5 million) is the denomination total that year, still before the Z family. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2000-pesos-2015-AA40000066-composite.jpg',
+      front: '/images/catalog/colombia/2000-pesos-2015-AA40000066-front.jpg',
+      back: '/images/catalog/colombia/2000-pesos-2015-AA40000066-back.jpg',
+    },
+    title: {
+      es: '2.000 pesos · 2015 · serial AA40000066',
+      en: '2,000 pesos · 2015 · serial AA40000066',
+    },
+    kicker: {
+      es: 'Colombia · Familias modernas · Serial fancy',
+      en: 'Colombia · Modern families · Fancy serial',
+    },
+    lead: {
+      es: 'Dos mil pesos de la familia de 2016, Pick 458a / TBB B993a: fecha 19 de agosto de 2015, serie AA y serial fancy AA40000066 —cinco ceros consecutivos—, impreso dos veces en el anverso. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A two-thousand-peso note of the 2016 family, Pick 458a / TBB B993a: date 19 August 2015, series AA, and fancy serial AA40000066 — five consecutive zeros — printed twice on the face. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'En 2016 el Banco de la República puso en circulación una familia nueva —de 2.000 a 100.000— con formato por denominación, marcas táctiles y un programa iconográfico que sale de los próceres de la independencia. El 29 de noviembre de 2016 el dos mil fue el quinto de esa Nueva Familia: circularía a la vez que el 2.000 de Santander. El comunicado del banco precisa el homenaje: a la pintora Débora Arango Pérez (Medellín, 1907–Envigado, 2005) y a Caño Cristales, en la Serranía de la Macarena; el mismo diseño lleva las hojas y el fruto del lechoso (Perebea xanthochyma) y el pájaro de «Las monjas y el cardenal». González White numera el tipo de 128 × 66 mm en las fichas NF2; el Bank Note Museum, Pick 458 (2015–2023), impreso por la Imprenta de Billetes en tintas sobre papel. Esta pieza lleva la fecha «19 DE AGOSTO DE 2015» en el canto derecho del reverso —458a en esa tabla BNM— y el pie «IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA». Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista y el comunicado del 29 de noviembre de 2016 asignan a esa primera fecha (BG# NF2-1, serie AA). El anverso, en azul, muestra a Arango de cuerpo entero al centro, con las manos entrelazadas, y un primer plano a la derecha; a la izquierda, el lechoso en tinta ópticamente variable. El serial AA40000066 va en negro arriba a la izquierda y abajo a la derecha: es fancy por cinco ceros consecutivos (40000066). No es un serial bajo de emisión (00000001–00000100) ni un capicúa (40000066 no se lee igual al revés). El reverso lleva Caño Cristales, varias aves —entre ellas «El cardenal»— y un fragmento de entrevista de Arango tomado del libro Débora en plural. No debe confundirse con el 2.000 de Santander (Pick 457; en esta colección el serial capicúa binario 10000001 de 2008), ni con las fechas BNM 02.08.2016 (458b), 29.08.2017 (458c) o las de 2018 a 2023, ni con el 2.000 pesos oro de Bolívar. El registro NBI6555 de Banrepcultural es otra pieza de museo, no este serial. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'In 2016 the Banco de la República put a new family into circulation — 2,000 to 100,000 — with a size per denomination, tactile marks, and an iconographic program that moves beyond independence heroes. On 29 November 2016 the two-thousand was the fifth note of that New Family: it would circulate alongside the Santander 2,000. The bank’s communiqué specifies the homage: to the painter Débora Arango Pérez (Medellín, 1907–Envigado, 2005) and to Caño Cristales, in the Serranía de la Macarena; the same design carries the leaves and fruit of the lechoso (Perebea xanthochyma) and the bird from “Las monjas y el cardenal.” González White numbers the 128 × 66 mm type as the NF2 listings; the Bank Note Museum, Pick 458 (2015–2023), printed by the Imprenta de Billetes in inks on paper. This piece carries the date “19 DE AGOSTO DE 2015” on the right edge of the back — 458a on that BNM table — and the imprint “IMPRENTA DE BILLETES - BANCO DE LA REPÚBLICA.” The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista and the 29 November 2016 communiqué assign to that first date (BG# NF2-1, series AA). The face, in blue, shows Arango standing at centre with her hands clasped and a close-up at right; at left, the lechoso in optically variable ink. Serial AA40000066 appears in black at upper left and lower right: it is fancy for five consecutive zeros (40000066). It is not a first-of-issue low serial (00000001–00000100) or a palindrome (40000066 does not read the same backwards). The back carries Caño Cristales, several birds — among them “El cardenal” — and a fragment of an Arango interview taken from the book Débora en plural. It should not be confused with the Santander 2,000 (Pick 457; in this collection the 2008 binary radar serial 10000001), with BNM dates 02.08.2016 (458b), 29.08.2017 (458c), or 2018–2023, or with the Bolívar 2,000 pesos oro. Banrepcultural register NBI6555 is another museum object, not this serial. This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Débora Arango Pérez (Medellín, 11 de noviembre de 1907–Envigado, 4 de diciembre de 2005) pintó en acuarela, lápiz y óleo; González White resume la crítica social y política de su obra y el hecho de que fue la primera pintora colombiana en pintar desnudos. La familia de 2016 la coloca en el dos mil junto a Caño Cristales, el lechoso y el cardenal de «Las monjas y el cardenal». El Banco de la República puso el tipo en circulación el 29 de noviembre de 2016, quinto de la Nueva Familia, conviviendo con el 2.000 de Santander. El Bank Note Museum data las fechas impresas del Pick 458 de 2015 a 2023: esta pieza es la primera, 19.08.2015 (458a), con las firmas de José Darío Uribe Escobar y José Tolosa Buitrago. Numista agrupa los prefijos AA–AD en esa fecha (TBB B993a). Esta ficha documenta un ejemplar de serie AA con serial fancy AA40000066, en funda.',
+      en: 'Débora Arango Pérez (Medellín, 11 November 1907–Envigado, 4 December 2005) painted in watercolor, pencil, and oil; González White summarises the social and political critique in her work and that she was the first Colombian woman painter to paint nudes. The 2016 family places her on the two-thousand beside Caño Cristales, the lechoso, and the cardinal from “Las monjas y el cardenal.” The Banco de la República put the type into circulation on 29 November 2016, the fifth note of the New Family, running alongside the Santander 2,000. The Bank Note Museum dates Pick 458 printed dates from 2015 to 2023: this piece is the first, 19.08.2015 (458a), with the signatures of José Darío Uribe Escobar and José Tolosa Buitrago. Numista groups prefixes AA–AD on that date (TBB B993a). This record documents a series AA piece with fancy serial AA40000066, in a sleeve.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2.000 pesos, Pick 458a / TBB B993a: Débora Arango, lechoso SPARK, fecha 19 de agosto de 2015 y serial fancy AA40000066.',
+      en: 'Face of the 2,000 pesos, Pick 458a / TBB B993a: Débora Arango, SPARK lechoso, the date 19 August 2015, and fancy serial AA40000066.',
+    },
+    backCaption: {
+      es: 'Reverso del 2.000 pesos, Pick 458a / TBB B993a: Caño Cristales, Serranía de la Macarena, El cardenal y pie de la Imprenta de Billetes.',
+      en: 'Back of the 2,000 pesos, Pick 458a / TBB B993a: Caño Cristales, Serranía de la Macarena, El cardenal, and the Imprenta de Billetes imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# NF2-1, p. 146) no publica cifra de emisión para el 19 de agosto de 2015 (¿?). El Bank Note Museum describe Pick 458 como el tipo 2015–2023 y marca 19.08.2015 como 458a. La tabla BanRep de producción anual atribuye 251,5 millones de piezas a todos los 2.000 pesos de 2016, y la de entregas a Tesorería 44,13 millones a la familia Z: no es la tirada de una fecha, de un par de firmas ni de la serie AA. Numista agrupa el diseño bajo N# 204972, con índice de rareza 8, y marca la frecuencia de la fecha 19.08.2015 en 29 % entre quienes poseen el tipo. Un serial de ocho dígitos con cinco ceros consecutivos es un patrón de colección; esta ficha no inventa una población de ese patrón ni una tirada.',
+      en: 'González White 2019 (BG# NF2-1, p. 146) publishes no emisión figure for 19 August 2015 (¿?). The Bank Note Museum describes Pick 458 as the 2015–2023 type and marks 19.08.2015 as 458a. BanRep’s annual production table assigns 251.5 million pieces to every 2,000-peso note of 2016, and the Tesorería delivery table 44.13 million to the Z family: that is not the printage of one date, signature pair, or series AA. Numista groups the design under N# 204972, with a rarity index of 8, and marks the 19.08.2015 date’s frequency at 29% among owners of the type. An eight-digit serial with five consecutive zeros is a collector pattern; this record does not invent a population for that pattern or a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial AA40000066. La pieza se presenta en funda, aparentemente sin circular, sin encapsular.',
+      en: 'A PMG or PCGS census for serial AA40000066 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0458.htm',
+        es: 'Bank Note Museum — Colombia P-458, 2.000 pesos (2015–2023)',
+        en: 'Bank Note Museum — Colombia P-458, 2,000 pesos (2015–2023)',
+        note: {
+          es: 'Tipo 2015–2023. Anverso Débora Arango Pérez y lechoso; reverso Caño Cristales. 19.08.2015 es 458a; 02.08.2016 es 458b; 29.08.2017 es 458c. Esta pieza es 458a.',
+          en: 'Type 2015–2023. Débora Arango Pérez and the lechoso on the face; Caño Cristales on the back. 19.08.2015 is 458a; 02.08.2016 is 458b; 29.08.2017 is 458c. This piece is 458a.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/204972',
+        es: 'Numista — Colombia 2.000 pesos, N# 204972',
+        en: 'Numista — Colombia 2,000 pesos, N# 204972',
+        note: {
+          es: 'Fecha 19.08.2015: P# 458a / TBB B993a; firmas JDUE y JTB; prefijos AA–AD; frecuencia 29 % en el tipo; índice de rareza 8. Numista cita Hernández 663NF para esa fecha.',
+          en: '19.08.2015 date: P# 458a / TBB B993a; signatures JDUE and JTB; prefixes AA–AD; 29% frequency within the type; rarity index 8. Numista cites Hernández 663NF for that date.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/comunicado-29-11-2016',
+        es: 'Banco de la República — Comunicado: el billete de 2 mil pesos entra en circulación (29 de noviembre de 2016)',
+        en: 'Banco de la República — Communiqué: the 2,000-peso note enters circulation (29 November 2016)',
+        note: {
+          es: 'Quinto de la Nueva Familia; homenaje a Débora Arango, Caño Cristales, el lechoso y el pájaro de «Las monjas y el cardenal». Circularía a la vez que el 2.000 anterior.',
+          en: 'Fifth note of the New Family; homage to Débora Arango, Caño Cristales, the lechoso, and the bird from “Las monjas y el cardenal.” It would circulate alongside the previous 2,000.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2016 de 2.000 pesos: 251,5 millones de piezas. Entregas a Tesorería de 2.000 pesos Z (familia 2016): 44,13 millones (totales de la denominación ese año, no de una fecha Pick).',
+          en: '2016 production of 2,000-peso notes: 251.5 million pieces. Tesorería deliveries of 2,000-peso Z notes (2016 family): 44.13 million (denomination totals that year, not one Pick date).',
+        },
+      },
+      {
+        href: 'https://colecciones.banrepcultural.org/es/documento/2000-pesos/63a069235d96b8790f36da69',
+        es: 'Banrepcultural — Colección Numismática: Billete de dos mil pesos (NBI6555)',
+        en: 'Banrepcultural — Numismatic Collection: two-thousand-peso note (NBI6555)',
+        note: {
+          es: 'Ficha de tipo del museo (emisor Banco de la República de Colombia, 1923; impreso en tintas sobre papel; 66 × 128 mm). Homenaje a Débora Arango Pérez; el reverso lleva en microimpresión un fragmento de entrevista. Registro NBI6555: comparable de colección, no el serial AA40000066. Fecha de elaboración, ingreso y ubicación actuales van en blanco en el registro; no se inventan aquí.',
+          en: 'Museum type record (issuer Banco de la República de Colombia, 1923; printed in inks on paper; 66 × 128 mm). Homage to Débora Arango Pérez; the back carries a microprinted interview fragment. Register NBI6555 is a collection comparable, not serial AA40000066. Manufacture date, accession date, and current location are blank in the register; they are not invented here.',
         },
       },
     ],
