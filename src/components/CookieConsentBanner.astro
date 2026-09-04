@@ -1,0 +1,78 @@
+---
+import { cookieConsentCopy } from '../i18n/cookies';
+import { CONSENT_STORAGE_KEY } from '../lib/analytics';
+import { localizePath, type Locale } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = cookieConsentCopy[locale];
+const policyHref = localizePath('/politica-privacidad-cookies/', locale);
+---
+
+<div
+  id="cookie-consent-banner"
+  class="fixed inset-x-0 bottom-0 z-[70] border-t border-line bg-panel px-[var(--page-gutter)] py-4"
+  role="region"
+  aria-label={t.bannerLabel}
+  hidden
+>
+  <div class="mx-auto flex max-w-content flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
+    <p class="m-0 text-[15px] text-cream-dim">
+      {t.message}{' '}
+      <a href={policyHref} class="text-gold-light underline decoration-gold-light/50 hover:text-cream">
+        {t.policyLink}
+      </a>
+    </p>
+    <div class="flex shrink-0 gap-3">
+      <button
+        type="button"
+        data-cookie-reject
+        class="min-h-11 cursor-pointer rounded-full border border-cream bg-transparent px-5 py-2 font-sans text-[14px] font-semibold uppercase tracking-[0.06em] text-cream hover:bg-cream hover:text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+      >
+        {t.reject}
+      </button>
+      <button
+        type="button"
+        data-cookie-accept
+        class="min-h-11 cursor-pointer rounded-full border border-cream bg-cream px-5 py-2 font-sans text-[14px] font-semibold uppercase tracking-[0.06em] text-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+      >
+        {t.accept}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ storageKey: CONSENT_STORAGE_KEY }} is:inline>
+  (function () {
+    var banner = document.getElementById('cookie-consent-banner');
+    if (!banner) return;
+
+    var stored = null;
+    try {
+      stored = localStorage.getItem(storageKey);
+    } catch (e) {
+      stored = null;
+    }
+    if (!stored) {
+      banner.hidden = false;
+    }
+
+    function decide(value) {
+      try {
+        localStorage.setItem(storageKey, value);
+      } catch (e) {}
+      if (window.gtag) {
+        window.gtag('consent', 'update', { analytics_storage: value });
+      }
+      banner.hidden = true;
+    }
+
+    var acceptBtn = banner.querySelector('[data-cookie-accept]');
+    var rejectBtn = banner.querySelector('[data-cookie-reject]');
+    if (acceptBtn) acceptBtn.addEventListener('click', function () { decide('granted'); });
+    if (rejectBtn) rejectBtn.addEventListener('click', function () { decide('denied'); });
+  })();
+</script>
