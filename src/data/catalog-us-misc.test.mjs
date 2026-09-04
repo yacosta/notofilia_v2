@@ -358,6 +358,37 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(enPiece10, /UnitedStatesNotePage/);
     assert.match(enPiece10, /locale="en"/);
   });
+
+  it('publishes the $1 Ringling Bros. holding A2002 with thin ES/EN piece routes', () => {
+    const esPiece1 = readFileSync(
+      new URL(
+        '../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    const enPiece1 = readFileSync(
+      new URL(
+        '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    assert.match(data, /id: 'scrip-baraboo-1-dolar-a2002'/);
+    assert.match(data, /serial: 'A2002'/);
+    assert.match(data, /serial_display: 'A 2002'/);
+    assert.match(data, /Shafer WI100 · \$1/);
+    assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-1-dolar-a2002'/);
+    assert.match(data, /ONE DOLLAR/);
+    assert.match(data, /RINGLING BROS\./);
+    assert.match(data, /baraboo-scrip-1933-1d-a2002-front\.jpg/);
+    assert.match(data, /a su izquierda, la letra de serie A en azul/);
+    assert.match(data, /to its left the blue series letter A/);
+    assert.match(esPiece1, /UnitedStatesNotePage/);
+    assert.match(esPiece1, /locale="es"/);
+    assert.match(enPiece1, /UnitedStatesNotePage/);
+    assert.match(enPiece1, /locale="en"/);
+  });
 });
 
 describe('US obsolete City Bank of New Haven $5 remainder', () => {

@@ -17,8 +17,8 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, y el 15¢, Al. T. Ringling, serial A2819. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las demás denominaciones esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, and the 15¢, Al. T. Ringling, serial A2819, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the other denominations wait for each note’s serial or certificate. Further note pages will be published here as they are photographed.',
+      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las de 25¢ y 50¢ esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ and 50¢ still wait for each note’s serial or certificate. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, y el 15¢, Al. T. Ringling, serial A2819. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -306,7 +306,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, and the 15¢, Al. T. Ringling, serial A2819, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -359,8 +359,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, y el 15¢ de Al. T. Ringling, serial A2819. Las demás denominaciones esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
-        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, and the 15¢ Al. T. Ringling note, serial A2819. The other denominations wait for a serial or a certificate. Further pieces will be published as they are photographed.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002. Las de 25¢ y 50¢ esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002. The 25¢ and 50¢ wait for a serial or a certificate. Further pieces will be published as they are photographed.',
       },
     },
   ],
@@ -412,7 +412,7 @@ export const miscSeriesCopy = {
     typesLabel: 'Tipos anunciados',
     barabooCardTitle: 'Scrip de Baraboo · Golden Jubilee 1933',
     barabooCardDek:
-      'Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, y el 15¢ de Al. T. Ringling, serial A2819, ya tienen ficha; las demás denominaciones esperan un serial o un certificado.',
+      'Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; las de 25¢ y 50¢ esperan un serial o un certificado.',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'es')),
@@ -434,7 +434,7 @@ export const miscSeriesCopy = {
     typesLabel: 'Announced types',
     barabooCardTitle: 'Baraboo scrip · Golden Jubilee 1933',
     barabooCardDek:
-      'Chamber of Commerce, Shafer WI100, 5¢ to $1. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, and the 15¢ Al. T. Ringling note, serial A2819, already have pages; the other denominations wait for a serial or certificate.',
+      'Chamber of Commerce, Shafer WI100, 5¢ to $1. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ and 50¢ wait for a serial or certificate.',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'en')),
@@ -507,7 +507,7 @@ export const barabooScripSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos · Scrip de Baraboo 1933 | Notofilia',
     metaDescription:
-      'Scrip del Golden Jubilee de Baraboo, 1933: Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar, diseño de E. B. Trimpey. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, y el 15¢ de Al. T. Ringling, serial A2819, ya tienen ficha; las demás denominaciones esperan un serial o un certificado.',
+      'Scrip del Golden Jubilee de Baraboo, 1933: Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar, diseño de E. B. Trimpey. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; las de 25¢ y 50¢ esperan un serial o un certificado.',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Scrip de Baraboo · Golden Jubilee 1933',
     breadcrumbCurrent: 'Scrip de Baraboo 1933',
@@ -519,7 +519,7 @@ export const barabooScripSeriesCopy = {
     holdingsIntro:
       'Cada ficha de ejemplar necesita el número de serie impreso o, si el vale está encapsulado, el número de certificado. No se inventan seriales.',
     emptyHoldings:
-      'Las demás denominaciones del tipo Shafer WI100 esperan el número de serie o el certificado de cada vale.',
+      'Las de 25¢ y 50¢ del tipo Shafer WI100 esperan el número de serie o el certificado de cada vale.',
     winterTitle: 'Baraboo, cuarteles de invierno',
     scripTitle: 'El scrip de Baraboo',
     collectingTitle: 'Lo que buscan hoy los coleccionistas',
@@ -533,7 +533,7 @@ export const barabooScripSeriesCopy = {
   en: {
     metaTitle: 'United States · Miscellaneous · Baraboo scrip 1933 | Notofilia',
     metaDescription:
-      'Baraboo Golden Jubilee scrip, 1933: Chamber of Commerce, Shafer WI100, 5¢ to $1, designed by E. B. Trimpey. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, and the 15¢ Al. T. Ringling note, serial A2819, already have pages; the other denominations wait for a serial or a certificate.',
+      'Baraboo Golden Jubilee scrip, 1933: Chamber of Commerce, Shafer WI100, 5¢ to $1, designed by E. B. Trimpey. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ and 50¢ wait for a serial or a certificate.',
     kicker: 'United States · Miscellaneous',
     title: 'Baraboo scrip · Golden Jubilee 1933',
     breadcrumbCurrent: 'Baraboo scrip 1933',
@@ -545,7 +545,7 @@ export const barabooScripSeriesCopy = {
     holdingsIntro:
       'Each piece page needs the printed serial or, if the note is slabbed, the certificate number. Serials are not invented here.',
     emptyHoldings:
-      'The other Shafer WI100 denominations still need a serial or a certificate.',
+      'The Shafer WI100 25¢ and 50¢ still need a serial or a certificate.',
     winterTitle: 'Baraboo winter quarters',
     scripTitle: 'The Baraboo scrip',
     collectingTitle: 'What collectors look for today',
@@ -559,8 +559,8 @@ export const barabooScripSeriesCopy = {
 } as const;
 
 export const barabooScripSeriesLead: LocalizedText = {
-  es: 'En 1933 el Ringling Bros. and Barnum & Bailey Circus volvió a Baraboo, Wisconsin, para su 50.º aniversario: el Golden Jubilee. La Cámara de Comercio emitió scrip de 5¢ a 1 dólar —Shafer WI100—. Esta ficha reúne el ejemplar de 5¢ con retrato de John Ringling, serial A4895, el de 10¢ con retrato de Chas. Ringling, serial A2844, y el de 15¢ con retrato de Al. T. Ringling, serial A2819.',
-  en: 'In 1933 the Ringling Bros. and Barnum & Bailey Circus returned to Baraboo, Wisconsin, for its 50th anniversary — the Golden Jubilee. The Chamber of Commerce issued scrip from 5¢ to $1 — Shafer WI100. This record holds the 5¢ note with John Ringling’s portrait, serial A4895, the 10¢ with Chas. Ringling’s portrait, serial A2844, and the 15¢ with Al. T. Ringling’s portrait, serial A2819.',
+  es: 'En 1933 el Ringling Bros. and Barnum & Bailey Circus volvió a Baraboo, Wisconsin, para su 50.º aniversario: el Golden Jubilee. La Cámara de Comercio emitió scrip de 5¢ a 1 dólar —Shafer WI100—. Esta ficha reúne el ejemplar de 5¢ con retrato de John Ringling, serial A4895, el de 10¢ con retrato de Chas. Ringling, serial A2844, el de 15¢ con retrato de Al. T. Ringling, serial A2819, y el de 1 dólar con retrato de grupo de los Ringling Bros., serial A2002.',
+  en: 'In 1933 the Ringling Bros. and Barnum & Bailey Circus returned to Baraboo, Wisconsin, for its 50th anniversary — the Golden Jubilee. The Chamber of Commerce issued scrip from 5¢ to $1 — Shafer WI100. This record holds the 5¢ note with John Ringling’s portrait, serial A4895, the 10¢ with Chas. Ringling’s portrait, serial A2844, the 15¢ with Al. T. Ringling’s portrait, serial A2819, and the $1 with the Ringling Bros. group portrait, serial A2002.',
 };
 
 export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 'scripTitle' | 'collectingTitle' | 'strainTitle'; paragraphs: LocalizedText[] }[] = [
@@ -605,8 +605,8 @@ export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 's
         en: 'These jubilee tokens sit on the border between notaphily and exonumia: they are not federal legal tender, but they are local Chamber bearer notes, issued in the same year the March 1933 bank holiday left many towns printing emergency scrip. Wisconsin Depression-scrip catalogs list them as Shafer WI100. A complete set of the six pieces — five fractionals plus the dollar — is the usual way to collect them.',
       },
       {
-        es: 'Los ejemplares sin circular —sin pliegues ni pinchazos— son los más buscados por notafilistas e historiadores del circo. En Notofilia no publicamos precios de mercado. Esta ficha documenta el tipo bajo Misceláneos; pertenece a esa vitrina, no a las series federales. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, y el 15¢ de Al. T. Ringling, serial A2819, ya tienen ficha. Las demás denominaciones esperan el suyo.',
-        en: 'Uncirculated examples — no folds, no pinholes — are the ones notaphilists and circus historians hunt. Notofilia does not publish market prices. This record documents the type under Miscellaneous; the notes belong in that case, not in the federal series. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, and the 15¢ Al. T. Ringling note, serial A2819, already have pages. The other denominations still wait for theirs.',
+        es: 'Los ejemplares sin circular —sin pliegues ni pinchazos— son los más buscados por notafilistas e historiadores del circo. En Notofilia no publicamos precios de mercado. Esta ficha documenta el tipo bajo Misceláneos; pertenece a esa vitrina, no a las series federales. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha. Las de 25¢ y 50¢ esperan el suyo.',
+        en: 'Uncirculated examples — no folds, no pinholes — are the ones notaphilists and circus historians hunt. Notofilia does not publish market prices. This record documents the type under Miscellaneous; the notes belong in that case, not in the federal series. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002, already have pages. The 25¢ and 50¢ still wait for theirs.',
       },
     ],
   },
@@ -791,6 +791,7 @@ export type UnitedStatesNoteId =
   | 'scrip-baraboo-5-centavos-a4895'
   | 'scrip-baraboo-10-centavos-a2844'
   | 'scrip-baraboo-15-centavos-a2819'
+  | 'scrip-baraboo-1-dolar-a2002'
   | 'renci-pele-the-beautiful-game'
   | 'renci-messi-you-have-to-fight-to-reach-your-dream'
   | 'renci-warhol-basquiat-life-is-beautiful'
@@ -804,6 +805,8 @@ export type UnitedStatesNote = {
   pathEn: string;
   pick: string;
   serial: string;
+  /** Printed form when it differs from the normalized `serial`. */
+  serial_display?: string;
   /** Required when no serial was printed (proofs, uniface tests). */
   no_serial_reason?: string;
   cert_number?: string;
@@ -2557,6 +2560,91 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial A2819. La pieza se presenta sin encapsular, en funda, sin número de certificado.',
       en: 'A PMG or PCGS census for serial A2819 has not been independently verified. The note is shown unslabbed, in a sleeve, with no certificate number.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda (colección privada)',
+      en: 'Unslabbed, in a sleeve (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://wisconsinscrip.com/baraboo/',
+        es: 'Wisconsin Depression Scrip — Baraboo',
+        en: 'Wisconsin Depression Scrip — Baraboo',
+        note: {
+          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. Shafer WI100.',
+          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. Shafer WI100.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'scrip-baraboo-1-dolar-a2002',
+    chapterId: 'us-miscelaneos',
+    path: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
+    pathEn: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',
+    pick: 'Shafer WI100 · $1',
+    serial: 'A2002',
+    serial_display: 'A 2002',
+    signatures: {
+      es: 'P. L. Gust (presidente) y O. L. Gust (tesorero), Cámara de Comercio de Baraboo',
+      en: 'P. L. Gust (president) and O. L. Gust (treasurer), Baraboo Chamber of Commerce',
+    },
+    printed: {
+      es: 'E. B. Trimpey, estudio Trimpey de Baraboo, para la Cámara de Comercio. Anunciado el 28 de junio de 1933; redimible hasta el 1 de noviembre de 1933. No se conserva cifra de tirada; esta ficha no inventa una.',
+      en: 'E. B. Trimpey, Trimpey studio of Baraboo, for the Chamber of Commerce. Announced 28 June 1933; redeemable through 1 November 1933. No record of the number printed survives; this record does not invent one.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-composite.jpg',
+      front: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-front.jpg',
+      back: '/images/catalog/estados-unidos/baraboo-scrip-1933-1d-a2002-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '1 dólar · Baraboo Scrip · Ringling Bros. · 1933',
+      en: '$1 · Baraboo Scrip · Ringling Bros. · 1933',
+    },
+    kicker: {
+      es: 'Estados Unidos · Misceláneos · Scrip de Baraboo',
+      en: 'United States · Miscellaneous · Baraboo scrip',
+    },
+    lead: {
+      es: 'Vale de 1 dólar de la Cámara de Comercio de Baraboo para el Golden Jubilee de 1933: retrato de grupo de los Ringling Bros., serie A, serial 2002, Shafer WI100.',
+      en: 'A $1 Baraboo Chamber of Commerce note for the 1933 Golden Jubilee: the Ringling Bros. group portrait, series A, serial 2002, Shafer WI100.',
+    },
+    description: {
+      es: 'El 1 dólar Shafer WI100 es un vale al portador de la Cámara de Comercio de Baraboo, no un Federal Reserve Note. El anverso, en negro sobre papel crema con un disco azul, se titula BARABOO SCRIP. A la izquierda, un retrato oval de los cinco hermanos Ringling de perfil —orlado de laurel, con RINGLING BROS. en la cinta inferior— reúne al grupo; las denominaciones fraccionarias muestran a cada hermano por separado. El centro anuncia el 50.º aniversario, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. Un cartucho oscuro lee ONE DOLLAR; a su izquierda, la letra de serie A en azul. El serial 2002 va en azul al pie, entre las firmas impresas de P. L. Gust (presidente) y O. L. Gust (tesorero). El pie promete redención en comercio o por la Cámara el 1 de noviembre de 1933 o antes. Las esquinas llevan cabezas de león (arriba) y de elefante (abajo). El reverso, en verde, muestra la carpa del Big Top con público, 1883 / 50th ANNIVERSARY / 1933, un tigre a la izquierda y un león a la derecha, y la franja GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. Esta pieza de la colección se presenta sin encapsular, en funda. No debe confundirse con las otras cinco denominaciones del juego ni con el 5¢ A4895, el 10¢ A2844 o el 15¢ A2819: las distinguen el retrato de grupo, el facial de 1 dólar y el serial A2002.',
+      en: 'The Shafer WI100 $1 is a Baraboo Chamber of Commerce bearer note, not a Federal Reserve Note. The face, black on cream paper with a blue disk, is titled BARABOO SCRIP. At left an oval portrait of the five Ringling brothers in profile — a laurel wreath, RINGLING BROS. on the lower ribbon — shows the group; the fractional notes show each brother singly. The center announces the 50th anniversary, 1883–1933, CELEBRATION OF THE FOUNDING OF RINGLING BROS. SHOW AT BARABOO, WISCONSIN. A dark cartouche reads ONE DOLLAR; to its left the blue series letter A. Serial 2002 is printed in blue at the foot, between the printed signatures of P. L. Gust (president) and O. L. Gust (treasurer). The footer promises redemption in trade or by the Chamber on or before 1 November 1933. Corner medallions show lion heads above and elephant heads below. The green back shows the Big Top and crowd, 1883 / 50th ANNIVERSARY / 1933, a tiger at left and a lion at right, and the banner GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS. This collection piece is shown unslabbed, in a sleeve. It is not the other five notes of the set, and it is not the 5¢ A4895, the 10¢ A2844, or the 15¢ A2819: the group portrait, the $1 face, and serial A2002 distinguish it.',
+    },
+    history: [
+      {
+        es: 'Baraboo fue el pueblo natal y los cuarteles de invierno del Ringling Brothers Circus. Los cinco hermanos fundaron la compañía itinerante en 1884 —el scrip imprime el arco 1883–1933— y allí invernaron hasta 1918. El 3 de agosto de 1933 el Ringling Bros. and Barnum & Bailey Circus volvió para el Golden Jubilee; el programa de ruta de esa temporada sitúa el tren en Baraboo entre Winona y Rockford.',
+        en: 'Baraboo was the birthplace and winter quarters of the Ringling Brothers Circus. The five brothers founded the touring company in 1884 — the scrip prints the span 1883–1933 — and wintered there until 1918. On 3 August 1933 the Ringling Bros. and Barnum & Bailey Circus returned for the Golden Jubilee; that season’s route card places the train in Baraboo between Winona and Rockford.',
+      },
+      {
+        es: 'La Cámara de Comercio anunció el scrip el 28 de junio de 1933 en el Baraboo News-Republic. No era papel federal: vales ornamentados, impresos en papel de calidad de moneda un poco más grandes que los shinplasters de la Guerra Civil, canjeables en comercio hasta el 1 de noviembre. E. B. Trimpey, del estudio Trimpey de Baraboo, ideó y diseñó el juego a partir de fotografías originales de los hermanos. Las denominaciones inferiores retratan a cada uno por separado; el 1 dólar reúne al grupo. Este ejemplar es el 1 dólar: Ringling Bros., serial A2002.',
+        en: 'The Chamber of Commerce announced the scrip on 28 June 1933 in the Baraboo News-Republic. These were not federal notes: ornate souvenir tokens, printed on currency-quality paper a trifle larger than Civil War shinplasters, redeemable in trade through 1 November. E. B. Trimpey of Baraboo’s Trimpey studio designed the set from original photographs of the brothers. The lower denominations show each brother singly; the $1 shows the group. This example is the $1: Ringling Bros., serial A2002.',
+      },
+    ],
+    historyHeading: {
+      es: 'El scrip del Golden Jubilee',
+      en: 'The Golden Jubilee scrip',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar de Baraboo, Shafer WI100, serie A, serial 2002: retrato de grupo de los Ringling Bros., 50th ANNIVERSARY 1883–1933 y ONE DOLLAR.',
+      en: 'Face of the Baraboo $1, Shafer WI100, series A, serial 2002: the Ringling Bros. group portrait, 50th ANNIVERSARY 1883–1933, and ONE DOLLAR.',
+    },
+    backCaption: {
+      es: 'Reverso verde del mismo vale: la carpa del Big Top, 1883 / 50th ANNIVERSARY / 1933, y GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS.',
+      en: 'Green back of the same note: the Big Top, 1883 / 50th ANNIVERSARY / 1933, and GOLDEN JUBILEE CELEBRATING THE FOUNDING OF RINGLING BROS. SHOWS AT BARABOO, WIS.',
+    },
+    scarcity: {
+      es: 'El scrip de Baraboo no fue emisión federal. Wisconsin Depression Scrip lo agrupa como Shafer WI100; un juego de las seis piezas es la forma habitual de reunirlo. No se conserva cifra de tirada. Esta ficha no inventa una ni un censo. El interés de este ejemplar es el facial de 1 dólar con el retrato de grupo y el serial A2002, no una rareza de tipo inventada.',
+      en: 'Baraboo scrip was not a federal issue. Wisconsin Depression Scrip lists the set as Shafer WI100; a complete run of the six notes is the usual way to collect it. No record of the number printed survives. This record does not invent a printage or a census. This piece’s interest is the $1 group portrait and serial A2002, not an invented type rarity.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial A2002. La pieza se presenta sin encapsular, en funda, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial A2002 has not been independently verified. The note is shown unslabbed, in a sleeve, with no certificate number.',
     },
     grade: {
       es: 'Sin encapsular, en funda (colección privada)',

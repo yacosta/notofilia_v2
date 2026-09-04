@@ -130,7 +130,7 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
           </div>
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.serial}</dd>
+            <dd class="m-0 mt-1 text-cream">{note.serial_display ?? note.serial}</dd>
           </div>
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
