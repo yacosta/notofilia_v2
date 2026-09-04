@@ -73,6 +73,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/5-dollars-confederate-1864/'],
   },
   {
+    es: '/coleccion/estados-unidos/100-dolares-confederados-1862/',
+    en: '/collection/united-states/100-dollars-confederate-1862/',
+    aliases: ['/coleccion/united-states/100-dollars-confederate-1862/'],
+  },
+  {
     es: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     en: '/collection/united-states/mpc-vietnam/20-dollars-series-692/',
     aliases: ['/coleccion/united-states/mpc-vietnam/20-dollars-series-692/'],
