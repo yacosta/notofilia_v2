@@ -322,15 +322,10 @@ export const seriesCopy = {
       'Para estabilizar la posguerra, Rafael Reyes creó en 1905 el Banco Central de Colombia. Fue un emisor de vida corta: en 1909, tras la caída de Reyes, se le retiró el privilegio de emitir. No es el banco de 1923. En 1922 la Junta de Conversión quedó autorizada a resellar bonos del tesoro (Ley 5.ª, Decreto 165, escritura 206) antes de abrir el instituto. La Ley 25 de 1923, fruto de la Misión Kemmerer —el «money doctor» contratado por Pedro Nel Ospina— creó el Banco de la República con capital mixto, 10 millones de pesos oro y el monopolio de emitir la moneda legal. La corrida contra el Banco López adelantó la apertura al 23 de julio de 1923: los certificados de oro de Medellín llegaron por ferrocarril, hidroavión y tren y se resellaron en un fin de semana como billetes provisionales. Los primeros regulares los grabó la American Bank Note Company; el papel se llamó peso oro para señalar su convertibilidad. La convertibilidad se perdió en 1931. Tras la guerra con el Perú (1932) circularon pesos plata. Thomas De La Rue imprimió a mediados de siglo. El 23 de octubre de 1959 abrió la Imprenta de Billetes en Bogotá, con el 1 peso azul (Pick 404). La Junta Monetaria de 1963 y la Ley 31 de 1992 reordenaron la autoridad del banco; en 1973 el Estado nacionalizó casi todo el capital. Esta vitrina documenta el 1 peso oro de 1954 (Pick 380g), el 10 pesos oro de 1943 (Pick 389b), el 2 pesos oro de 1944 (Pick 390b) y el de 1955 (Pick 390d), la reposición de 10 pesos oro de 1976 (Pick 407f / TBB B950kr), el 1.000 pesos oro de 1979 (Pick 421a / TBB B963a), el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue, y el 2.000 pesos de 2008 (Pick 457), serial capicúa binario 10000001.',
       'Desde 1993 los billetes dejaron de llevar la leyenda «pesos oro». En octubre de 1994 el «robo del siglo» en la sucursal de Valledupar se llevó unos 24.072 millones de pesos en 2.000, 5.000 y 10.000; el banco canjeó series y, en 1995–1996, sustituyó esas tres denominaciones. En 2016 puso en circulación una familia nueva —de 2.000 a 100.000— con seguridad reforzada, biodiversidad, culturas indígenas y figuras como Gabriel García Márquez.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Las fichas se publican a medida que se documentan las piezas. La banca libre abre con las pruebas ABNC del Banco Hipotecario (1881) y del Banco de Rio Hacha (1883). El Banco Nacional, con la cédula representativa de un peso del Departamento del Tolima (Ibagué, septiembre de 1901, serial N.º 060.416, Serie D). El Banco de la República, con el 1 peso oro de 1954, el 10 pesos oro de 1943, el 2 pesos oro de 1944 y el de 1955, la reposición de 10 pesos oro de 1976, el 1.000 pesos oro de 1979, el espécimen de 2.000 pesos oro de 1983 y el 2.000 pesos de 2008 (serial capicúa binario 10000001). Las familias modernas, con el 2.000 pesos de 2015 (serial fancy AA40000066) y el 20.000 pesos de 2017 (serial AF51355141). El Banco Central de 1905 se cuenta en los capítulos; aún no tiene ficha.',
-    viewChapter: 'Leer el capítulo',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     errorsTitle: 'Errores',
     errorsIntro:
       'Maculaturas y errores de impresión del Banco de la República y de emisiones anteriores, ordenados por año y denominación. Las fichas se publican a medida que se documentan las piezas.',
@@ -354,15 +349,10 @@ export const seriesCopy = {
       'To stabilize the postwar economy, Rafael Reyes created the Banco Central de Colombia in 1905. It was a short-lived issuer: in 1909, after Reyes fell, its privilege of issue was withdrawn. It is not the bank of 1923. In 1922 the Conversion Board was authorized to overstamp treasury bonds (Law 5, Decree 165, deed 206) before the institute opened. Law 25 of 1923, the fruit of the Kemmerer Mission — the “money doctor” hired by Pedro Nel Ospina — created the Banco de la República with mixed capital, 10 million gold pesos, and the monopoly of legal-tender issue. A run on the Banco López brought the opening forward to 23 July 1923: Medellín gold certificates came by rail, flying boat, and train and were overstamped over a weekend as provisional notes. The first regular issues were engraved by the American Bank Note Company; the paper was called peso oro to signal convertibility. Gold convertibility ended in 1931. After the war with Peru (1932) pesos plata circulated. Thomas De La Rue printed at mid-century. On 23 October 1959 the Imprenta de Billetes opened in Bogotá, with the blue 1-peso (Pick 404). The 1963 Monetary Board and Law 31 of 1992 reordered the bank’s authority; in 1973 the state nationalized nearly all the capital. This case documents the 1954 1 peso oro (Pick 380g), the 1943 10 pesos oro (Pick 389b), the 1944 2 pesos oro (Pick 390b), the 1955 2 pesos oro (Pick 390d), the 1976 10 pesos oro replacement (Pick 407f / TBB B950kr), the 1979 1,000 pesos oro (Pick 421a / TBB B963a), the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue, and the 2008 2,000 pesos (Pick 457) with binary radar serial 10000001.',
       'From 1993 the notes dropped the legend “pesos oro.” In October 1994 the “robo del siglo” at the Valledupar branch took some 24.072 billion pesos in 2,000, 5,000, and 10,000 notes; the bank exchanged serial ranges and, in 1995–1996, replaced those three denominations. In 2016 it put a new family into circulation — 2,000 to 100,000 — with stronger security, biodiversity, indigenous cultures, and figures such as Gabriel García Márquez.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Note pages are published as pieces are documented. Free banking opens with the ABNC proofs of the Banco Hipotecario (1881) and the Banco de Rio Hacha (1883). The Banco Nacional chapter holds the one-peso cédula representativa of the Departamento del Tolima (Ibagué, September 1901, serial N.º 060.416, Series D). The Banco de la República chapter holds the 1954 1 peso oro, the 1943 10 pesos oro, the 1944 2 pesos oro, the 1955 2 pesos oro, the 1976 10 pesos oro replacement, the 1979 1,000 pesos oro, the 1983 2,000 pesos oro specimen, and the 2008 2,000 pesos (binary radar serial 10000001). The modern families chapter holds the 2015 2,000 pesos, fancy serial AA40000066, and the 2017 20,000 pesos, serial AF51355141. The 1905 Banco Central is told in the chapters; it does not yet have a note page.',
-    viewChapter: 'Read the chapter',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     errorsTitle: 'Errors',
     errorsIntro:
       'Maculatures and printing errors from the Banco de la República and earlier issues, sorted by year and denomination. Note pages are published as pieces are documented.',
@@ -379,22 +369,4 @@ export function seriesPath(locale: 'es' | 'en'): string {
 
 export function chapterHref(id: ColombiaChapterId): string {
   return `#${id}`;
-}
-
-export type ColombiaCatalogItem = {
-  id: string;
-  years: LocalizedText;
-  title: LocalizedText;
-  href: string;
-  kind: 'chapter';
-};
-
-export function colombiaCatalogItems(): ColombiaCatalogItem[] {
-  return colombiaChapters.map((chapter) => ({
-    id: chapter.id,
-    years: chapter.years,
-    title: chapter.title,
-    href: chapterHref(chapter.id),
-    kind: 'chapter' as const,
-  }));
 }
