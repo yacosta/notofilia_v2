@@ -114,10 +114,7 @@ const jsonLd = collectionPageJsonLd({
               {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
-                    class:list={[
-                      'mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2',
-                      chapter.id === 'banco-de-la-republica' && 'lg:grid-cols-4',
-                    ]}
+                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
                     aria-label={chapter.title[locale]}
                   >
                     {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
@@ -165,7 +162,7 @@ const jsonLd = collectionPageJsonLd({
         {
           hasErrorNotes() ? (
             <ol
-              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
+              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
               aria-label={t.errorsTitle}
             >
               {errorNotes.map(({ note, piece }) => {
