@@ -20,6 +20,13 @@ describe('catalogAssetSrc', () => {
       /hero-colombia|united-states\.jpg\?v=/,
     );
   });
+
+  it('accepts an explicit format override for LCP heroes', () => {
+    assert.equal(
+      cfImage('/images/hero-slide.jpg', { width: 1080, quality: 55, format: 'avif' }),
+      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg',
+    );
+  });
 });
 
 describe('editorialUploadSrcset', () => {

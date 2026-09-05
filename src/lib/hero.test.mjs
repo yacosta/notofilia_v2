@@ -18,16 +18,16 @@ describe('homepage LCP hero strings', () => {
   it('exports production CDN src and srcset that match the mobile patch', () => {
     assert.equal(
       heroSrc,
-      '/cdn-cgi/image/width=1080,format=auto,quality=70/images/hero-slide.jpg',
+      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg',
     );
     assert.equal(
       heroSrcset,
       [
-        '/cdn-cgi/image/width=480,format=auto,quality=60/images/hero-slide.jpg 480w',
-        '/cdn-cgi/image/width=640,format=auto,quality=65/images/hero-slide.jpg 640w',
-        '/cdn-cgi/image/width=1080,format=auto,quality=70/images/hero-slide.jpg 1080w',
-        '/cdn-cgi/image/width=1600,format=auto,quality=70/images/hero-slide.jpg 1600w',
-        '/cdn-cgi/image/width=2400,format=auto,quality=65/images/hero-slide.jpg 2400w',
+        '/cdn-cgi/image/width=480,format=avif,quality=50/images/hero-slide.jpg 480w',
+        '/cdn-cgi/image/width=640,format=avif,quality=55/images/hero-slide.jpg 640w',
+        '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg 1080w',
+        '/cdn-cgi/image/width=1600,format=avif,quality=60/images/hero-slide.jpg 1600w',
+        '/cdn-cgi/image/width=2400,format=avif,quality=55/images/hero-slide.jpg 2400w',
       ].join(', '),
     );
     assert.equal(heroSizes, '100vw');
@@ -67,11 +67,13 @@ describe('mobile chrome patch', () => {
 });
 
 describe('PageSpeed-oriented build settings', () => {
-  it('inlines stylesheets and defers Subscribe with Google until idle', () => {
+  it('inlines stylesheets and loads Subscribe with Google only on click', () => {
     assert.match(astroConfig, /inlineStylesheets:\s*'always'/);
     assert.doesNotMatch(layout, /publisher\.js/);
-    assert.match(googlePreferred, /requestIdleCallback/);
+    assert.doesNotMatch(googlePreferred, /requestIdleCallback/);
     assert.match(googlePreferred, /loadSwgPublisher/);
+    assert.match(googlePreferred, /data-swg-fallback/);
+    assert.match(googlePreferred, /preventDefault/);
   });
 
   it('sets long-lived cache headers for hashed assets and fonts', () => {

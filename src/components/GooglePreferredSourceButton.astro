@@ -1,4 +1,5 @@
 ---
+import NewWindowHint from './NewWindowHint.astro';
 import { copy, type Locale } from '../lib/site';
 
 interface Props {
@@ -10,26 +11,27 @@ const t = copy[locale];
 const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
 ---
 
-<div class="google-preferred-source">
-  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale}></div>
-  <noscript>
-    <a
-      href={deeplink}
-      class="inline-flex min-h-11 items-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
-    >
-      {t.preferredSource}
-    </a>
-  </noscript>
+{/*
+  Do not auto-load Subscribe with Google. publisher.js pulls ~200 KiB of gstatic
+  modules, unused preconnects, a Google Font, and third-party cookies into the
+  first-load audits. Offer a first-party deeplink; hydrate the official button
+  only after an explicit click.
+*/}
+<div class="google-preferred-source" data-swg-root data-locale={locale}>
+  <a
+    href={deeplink}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="google-preferred-source-link inline-flex min-h-11 items-center justify-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
+    data-swg-fallback
+  >
+    {t.preferredSource}
+    <NewWindowHint locale={locale} />
+  </a>
+  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale} hidden data-swg-host></div>
 </div>
 
 <style>
-  /*
-    publisher.js sets the host to width:100% and the iframe to position:absolute
-    filling that host. The official pill is inline-flex at the left of the iframe
-    document, so a stretched iframe looks left-aligned in the footer. Keep the
-    official iframe, take it out of stretch mode, and size it to the measured
-    badge (es 246px / en 234px) so the pill and copyright share a center.
-  */
   .google-preferred-source {
     display: flex;
     width: 100%;
@@ -38,7 +40,7 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     align-items: center;
   }
 
-  .google-preferred-source :global([google-add-preferred-source-btn]) {
+  .google-preferred-source :global([google-add-preferred-source-btn]:not([hidden])) {
     display: flex !important;
     width: max-content !important;
     max-width: 100% !important;
@@ -77,19 +79,21 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     en: '234px',
   };
 
-  function loadSwgPublisher() {
-    if (document.querySelector('script[data-swg-publisher]')) return;
-    const script = document.createElement('script');
-    script.src = 'https://news.google.com/swg/js/v1/publisher.js';
-    script.async = true;
-    script.dataset.swgPublisher = '';
-    document.head.appendChild(script);
+  function loadSwgPublisher(): Promise<void> {
+    const existing = document.querySelector('script[data-swg-publisher]');
+    if (existing) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://news.google.com/swg/js/v1/publisher.js';
+      script.async = true;
+      script.dataset.swgPublisher = '';
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error('Failed to load Subscribe with Google'));
+      document.head.appendChild(script);
+    });
   }
 
-  function lockPreferredSourceFrame(root: Element) {
-    const host = root.querySelector('[google-add-preferred-source-btn]');
-    if (!(host instanceof HTMLElement)) return;
-
+  function lockPreferredSourceFrame(host: HTMLElement) {
     const apply = () => {
       host.style.setProperty('width', 'max-content', 'important');
       host.style.setProperty('max-width', '100%', 'important');
@@ -115,12 +119,36 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     new MutationObserver(apply).observe(host, { childList: true, subtree: true, attributes: true });
   }
 
-  document.querySelectorAll('.google-preferred-source').forEach(lockPreferredSourceFrame);
+  async function upgradePreferredSource(root: HTMLElement) {
+    const fallback = root.querySelector('[data-swg-fallback]');
+    const host = root.querySelector('[data-swg-host]');
+    if (!(fallback instanceof HTMLElement) || !(host instanceof HTMLElement)) return;
+    if (root.dataset.swgLoading === '1' || root.dataset.swgReady === '1') return;
 
-  const bootSwg = () => loadSwgPublisher();
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(bootSwg, { timeout: 4000 });
-  } else {
-    window.addEventListener('load', bootSwg, { once: true });
+    root.dataset.swgLoading = '1';
+    try {
+      await loadSwgPublisher();
+      fallback.hidden = true;
+      host.hidden = false;
+      lockPreferredSourceFrame(host);
+      root.dataset.swgReady = '1';
+    } catch {
+      // Keep the first-party deeplink if Google's script fails.
+    } finally {
+      delete root.dataset.swgLoading;
+    }
   }
+
+  document.querySelectorAll<HTMLElement>('[data-swg-root]').forEach((root) => {
+    const fallback = root.querySelector('[data-swg-fallback]');
+    if (!(fallback instanceof HTMLElement)) return;
+    fallback.addEventListener(
+      'click',
+      (event) => {
+        event.preventDefault();
+        void upgradePreferredSource(root);
+      },
+      { once: true },
+    );
+  });
 </script>
