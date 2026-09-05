@@ -70,6 +70,7 @@ Confirm in the PDF before changing published copy.
 
 | Holding | Where in this book |
 | --- | --- |
+| 1 peso oro, 19 January 1945 (catalogues list 1 January 1945), serie R, ABNC (Pick 380d) | **BG# 027**, p. 33. Emisión 15.000.000; serials 81.000.001–96.000.000; 8 digits; serie R. The book prints **1º ENERO 1945**. Holding serial 85688116 sits in that range. Distinct from 1954 serie HH **BG# 044**. BanRep’s annual note tables begin in 1960; do not invent a 1945 tirada. |
 | 1 peso oro, 1 January 1954, serie HH, ABNC (Pick 380g) | **BG# 044**, p. 36. Emisión 50.000.000; serials 30.000.001–80.000.000; 8 digits. Same HH block as 1950 (BG# 041–042). Holding serial 52170492 sits in that range. |
 | 10 pesos oro replacement, 20 July 1976, asterisk, IBB (Pick 407f / TBB B950kr) | p. 68, several **JULIO 20 1976** rows (ordinary runs and `Reposición asterisco` with known serial bands). 8 digits, no series letter except the A–Z variety on the same spread. Match the holding to the asterisk row, not the 50/100 million ordinary counts. |
 | 1.000 pesos oro, 1 April 1979, serial 067682258, ABNC (Pick 421a / TBB B963a) | **BG# 411**, p. 105. First BanRep 1.000 pesos oro (Galán / Palacio de Nariño). Emisión 70.000.000; 9 digits, ordinary numbers start with one or two zeros. Holding serial 067682258 sits in that range and is not the **BG# 412** `Reposición R` (`R000.101.621`–`R000.125.160`). BanRep’s 1979 tables have no 1.000-peso column (that face-value total begins in 1988); do not treat the 1979 year total (254.75 million of 5/10/20 pesos) as this date’s printage. |
