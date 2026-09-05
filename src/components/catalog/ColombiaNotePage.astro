@@ -26,9 +26,10 @@ const t = notePageCopy[locale];
 const pathname = notePath(note, locale);
 const pieces = notePieces(note);
 const multi = pieces.length > 1;
+const shareType = Boolean(note.shareTypeNarrative && multi);
 const factsTag = multi ? 'h3' : 'h2';
 const pieceSources = pieces.flatMap((piece) => piece.sources);
-const sources = [...pieceSources, ...seriesSources].filter(
+const sources = [...note.sources, ...pieceSources, ...seriesSources].filter(
   (source, index, list) => list.findIndex((entry) => entry.href === source.href) === index,
 );
 const hero = note.hero;
@@ -115,7 +116,9 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                       {piece.title[locale]}
                     </h2>
-                    <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
+                    {shareType ? null : (
+                      <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
+                    )}
                   </>
                 ) : null
               }
@@ -177,15 +180,19 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 </figure>
               </div>
 
-              <section class="mt-14" aria-labelledby={pieceHeadingId(piece, 'about')}>
-                <NarrativeHeading id={pieceHeadingId(piece, 'about')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-                  {t.aboutHeading}
-                </NarrativeHeading>
-                <p class="m-0 text-[17px]/7 text-cream">{piece.description[locale]}</p>
-              </section>
+              {
+                shareType ? null : (
+                  <section class="mt-14" aria-labelledby={pieceHeadingId(piece, 'about')}>
+                    <NarrativeHeading id={pieceHeadingId(piece, 'about')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {t.aboutHeading}
+                    </NarrativeHeading>
+                    <p class="m-0 text-[17px]/7 text-cream">{piece.description[locale]}</p>
+                  </section>
+                )
+              }
 
               {
-                !multi && note.history ? (
+                !shareType && !multi && note.history ? (
                   <section class="mt-12" aria-labelledby="history-heading">
                     <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                       {t.historyHeading}
@@ -195,12 +202,16 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 ) : null
               }
 
-              <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'scarcity')}>
-                <NarrativeHeading id={pieceHeadingId(piece, 'scarcity')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-                  {t.scarcityHeading}
-                </NarrativeHeading>
-                <p class="m-0 text-[17px]/7 text-cream">{piece.scarcity[locale]}</p>
-              </section>
+              {
+                shareType ? null : (
+                  <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'scarcity')}>
+                    <NarrativeHeading id={pieceHeadingId(piece, 'scarcity')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {t.scarcityHeading}
+                    </NarrativeHeading>
+                    <p class="m-0 text-[17px]/7 text-cream">{piece.scarcity[locale]}</p>
+                  </section>
+                )
+              }
 
               <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'population')}>
                 <NarrativeHeading id={pieceHeadingId(piece, 'population')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
@@ -211,6 +222,40 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
             </div>
           );
         })
+      }
+
+      {
+        shareType ? (
+          <>
+            <section class="mt-14" aria-labelledby="about-heading">
+              <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.aboutHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
+            </section>
+            {note.history ? (
+              <section class="mt-12" aria-labelledby="history-heading">
+                <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                  {t.historyHeading}
+                </h2>
+                <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+              </section>
+            ) : null}
+            <section class="mt-12" aria-labelledby="scarcity-heading">
+              <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.scarcityHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream">{note.scarcity[locale]}</p>
+            </section>
+          </>
+        ) : multi && note.history ? (
+          <section class="mt-14" aria-labelledby="history-heading">
+            <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+              {t.historyHeading}
+            </h2>
+            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+          </section>
+        ) : null
       }
 
       <div class="mt-16">

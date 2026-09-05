@@ -54,6 +54,11 @@ export type ColombiaNote = {
   sources: CatalogSource[];
   /** Same-type holdings documented on this piece page (each with its own catalog block). */
   pieces?: ColombiaNotePiece[];
+  /**
+   * One type essay (description / history / scarcity) for every physical piece
+   * on the page. Piece blocks keep only facts, images, and serial-specific notes.
+   */
+  shareTypeNarrative?: boolean;
 };
 
 export type ColombiaNotePiece = {
@@ -1152,9 +1157,10 @@ export const colombiaNotes: ColombiaNote[] = [
       es: 'Miguel Urrutia Montoya (gerente general) y Fernando Copete Saldarriaga (gerente ejecutivo)',
       en: 'Miguel Urrutia Montoya (gerente general) and Fernando Copete Saldarriaga (gerente ejecutivo)',
     },
+    shareTypeNarrative: true,
     printed: {
-      es: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Fecha impresa en el anverso: Santa Fe de Bogotá, 1994. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie. Estrella a la derecha del serial negro superior. El Bank Note Museum numera el 10.000 pesos oro de 1992 como Pick 437 (Banco de México) y remite las fechas posteriores, ya en «pesos», a Pick 437A. Numista asigna esta reposición de 1994 a TBB B980az / Hernández 576. González White 2019 (pp. 127–128) lista la reposición estrella de 1994 con seriales 00.100.332–00.239.982; 00113227 cae en esa banda. La producción BanRep de 10.000 pesos en 1994 es 123,05 millones de piezas: es el total de esa denominación ese año, no la tirada de esta reposición ni de este serial. No se publica aquí una tirada.',
-      en: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Date printed on the face: Santa Fe de Bogotá, 1994. Published size 140 × 70 mm; eight digits, no series letter. A star sits to the right of the upper black serial. The Bank Note Museum numbers the 1992 10,000 pesos oro as Pick 437 (Banco de México) and refers later dates, already in “pesos,” to Pick 437A. Numista assigns this 1994 replacement to TBB B980az / Hernández 576. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982; 00113227 sits in that band. BanRep’s 1994 production of 10,000-peso notes is 123.05 million pieces: that is every note of that face value that year, not the printage of this replacement or this serial. No printage is published here.',
+      es: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Fecha impresa en el anverso: Santa Fe de Bogotá, 1994. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie. Estrella a la derecha del serial negro superior. El Bank Note Museum numera el 10.000 pesos oro de 1992 como Pick 437 (Banco de México) y remite las fechas posteriores, ya en «pesos», a Pick 437A. Numista asigna la reposición de 1994 a TBB B980az / Hernández 576. González White 2019 (pp. 127–128) lista la reposición estrella de 1994 con seriales 00.100.332–00.239.982. La producción BanRep de 10.000 pesos en 1994 es 123,05 millones de piezas: es el total de esa denominación ese año, no la tirada de esta reposición. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Date printed on the face: Santa Fe de Bogotá, 1994. Published size 140 × 70 mm; eight digits, no series letter. A star sits to the right of the upper black serial. The Bank Note Museum numbers the 1992 10,000 pesos oro as Pick 437 (Banco de México) and refers later dates, already in “pesos,” to Pick 437A. Numista assigns the 1994 replacement to TBB B980az / Hernández 576. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982. BanRep’s 1994 production of 10,000-peso notes is 123.05 million pieces: that is every note of that face value that year, not the printage of this replacement. No printage is published here.',
     },
     images: {
       composite: '/images/catalog/colombia/10000-pesos-1994-00113227-composite.jpg',
@@ -1170,16 +1176,16 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Colombia · Banco de la República · Star replacement',
     },
     lead: {
-      es: 'Diez mil pesos de la familia emberá Pick 437A: fecha 1994, serial 00113227 con estrella de reposición, impreso dos veces en el anverso. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
-      en: 'A ten-thousand-peso note of the Emberá Pick 437A family: date 1994, serial 00113227 with a replacement star, printed twice on the face. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+      es: 'Dos ejemplares de la familia emberá Pick 437A, fecha 1994: seriales 00113227 y 00249902, ambos con estrella de reposición. Cada uno tiene en esta página sus datos de catálogo y las dos caras; el texto de tipo es común.',
+      en: 'Two notes of the Emberá Pick 437A family, date 1994: serials 00113227 and 00249902, each with a replacement star. Each has its own catalog facts and both faces on this page; the type text is shared.',
     },
     description: {
-      es: 'El Banco de la República puso este diez mil en 1992 para conmemorar el V centenario del 12 de octubre de 1492. El diseño es de Liliana Ponce de León —segundo premio de un concurso de 1991 cuyo primer premio se declaró desierto—; el grabado se atribuye a Trento Cionini. La primera fecha, 1992, lleva «pesos oro» y salió de la imprenta del Banco de México (Pick 437). Esta pieza es de 1994: ya dice «DIEZ MIL PESOS», sin «oro», y el pie del reverso lee «IMPRESORA DE BILLETES – SANTA FE DE BOGOTÁ» (IBSFB). El Bank Note Museum y Numista la numeran Pick 437A / TBB B980az. En el anverso, a la derecha, el grabado rotulado «MUJER EMBERA», con collares y aretes; junto a ella, un poporo quimbaya antropomorfo del Museo del Oro; al centro, un medallón con carabelas. El serial 00113227 va en negro arriba a la izquierda, con una estrella a su derecha, y en rojo bajo el retrato. Las firmas son las de Miguel Urrutia Montoya, gerente general, y Fernando Copete Saldarriaga, gerente ejecutivo: el par de 1993–1994. El reverso reúne aves colombianas —el «billete de los loritos»— y el mapamundi de Waldseemüller de 1507. González White sitúa la reposición estrella de 1994 en 00.100.332–00.239.982; este serial cae ahí. No es la reposición con prefijo R de 1992 (R00.100.009–R00.107.451), ni un 10.000 de Policarpa (1995 en adelante), ni un ejemplar de los rangos que el banco publicó tras el robo de Valledupar. El grabado es motivo de demandas de 2025: Adriana Martínez Dogirama y el fotógrafo Mauricio Pardo alegan que el banco usó una foto suya de hacia 1986, publicada en 1988 por el Museo del Oro; el Banco de la República sostiene que la ilustración reúne rasgos de la comunidad emberá, no de una persona identificable. Esta ficha no resuelve ese litigio. Reúne las dos caras de la misma pieza, en funda, sin encapsular.',
-      en: 'The Banco de la República put this ten-thousand into circulation in 1992 to mark the 500th anniversary of 12 October 1492. The design is Liliana Ponce de León’s — second prize in a 1991 contest whose first prize was declared vacant — and the engraving is attributed to Trento Cionini. The first date, 1992, reads “pesos oro” and came from the Banco de México press (Pick 437). This piece is 1994: it already reads “DIEZ MIL PESOS,” without “oro,” and the back imprint is “IMPRESORA DE BILLETES – SANTA FE DE BOGOTÁ” (IBSFB). The Bank Note Museum and Numista number it Pick 437A / TBB B980az. On the face, at right, the engraving labelled “MUJER EMBERA,” with bead necklaces and earrings; beside her, an anthropomorphic Quimbaya poporo from the Museo del Oro; at centre, a medallion with caravels. Serial 00113227 appears in black at upper left, with a star to its right, and in red below the portrait. The signatures are those of Miguel Urrutia Montoya, general manager, and Fernando Copete Saldarriaga, executive manager: the 1993–1994 pair. The back gathers Colombian birds — the “parrot note” — and Waldseemüller’s 1507 world map. González White places the 1994 star replacement at 00.100.332–00.239.982; this serial sits there. It is not the 1992 R-prefix replacement (R00.100.009–R00.107.451), nor a Policarpa 10,000 (from 1995), nor an example from the serial ranges the bank published after the Valledupar robbery. The engraving is the subject of 2025 lawsuits: Adriana Martínez Dogirama and photographer Mauricio Pardo allege the bank used a photograph of her from around 1986, published in 1988 by the Museo del Oro; Banco de la República maintains the illustration gathers Emberá community traits, not a specific identifiable person. This record does not settle that dispute. It gathers both sides of the same unslabbed note, in a sleeve.',
+      es: 'El Banco de la República puso este diez mil en 1992 para conmemorar el V centenario del 12 de octubre de 1492. El diseño es de Liliana Ponce de León —segundo premio de un concurso de 1991 cuyo primer premio se declaró desierto—; el grabado se atribuye a Trento Cionini. La primera fecha, 1992, lleva «pesos oro» y salió de la imprenta del Banco de México (Pick 437). Estos ejemplares son de 1994: ya dicen «DIEZ MIL PESOS», sin «oro», y el pie del reverso lee «IMPRESORA DE BILLETES – SANTA FE DE BOGOTÁ» (IBSFB). El Bank Note Museum y Numista los numeran Pick 437A / TBB B980az. En el anverso, a la derecha, el grabado rotulado «MUJER EMBERA», con collares y aretes; junto a ella, un poporo quimbaya antropomorfo del Museo del Oro; al centro, un medallón con carabelas. Las firmas son las de Miguel Urrutia Montoya, gerente general, y Fernando Copete Saldarriaga, gerente ejecutivo: el par de 1993–1994. El reverso reúne aves colombianas —el «billete de los loritos»— y el mapamundi de Waldseemüller de 1507. González White sitúa la reposición estrella de 1994 en 00.100.332–00.239.982; 00113227 cae ahí; 00249902 (249.902) queda por encima de ese techo. No es la reposición con prefijo R de 1992 (R00.100.009–R00.107.451), ni un 10.000 de Policarpa (1995 en adelante), ni un ejemplar de los rangos que el banco publicó tras el robo de Valledupar. El grabado es motivo de demandas de 2025: Adriana Martínez Dogirama y el fotógrafo Mauricio Pardo alegan que el banco usó una foto suya de hacia 1986, publicada en 1988 por el Museo del Oro; el Banco de la República sostiene que la ilustración reúne rasgos de la comunidad emberá, no de una persona identificable. Esta ficha no resuelve ese litigio. Reúne dos piezas de 1994 con estrella, cada una en funda, sin encapsular.',
+      en: 'The Banco de la República put this ten-thousand into circulation in 1992 to mark the 500th anniversary of 12 October 1492. The design is Liliana Ponce de León’s — second prize in a 1991 contest whose first prize was declared vacant — and the engraving is attributed to Trento Cionini. The first date, 1992, reads “pesos oro” and came from the Banco de México press (Pick 437). These examples are 1994: they already read “DIEZ MIL PESOS,” without “oro,” and the back imprint is “IMPRESORA DE BILLETES – SANTA FE DE BOGOTÁ” (IBSFB). The Bank Note Museum and Numista number them Pick 437A / TBB B980az. On the face, at right, the engraving labelled “MUJER EMBERA,” with bead necklaces and earrings; beside her, an anthropomorphic Quimbaya poporo from the Museo del Oro; at centre, a medallion with caravels. The signatures are those of Miguel Urrutia Montoya, general manager, and Fernando Copete Saldarriaga, executive manager: the 1993–1994 pair. The back gathers Colombian birds — the “parrot note” — and Waldseemüller’s 1507 world map. González White places the 1994 star replacement at 00.100.332–00.239.982; 00113227 sits there; 00249902 (249,902) sits above that ceiling. It is not the 1992 R-prefix replacement (R00.100.009–R00.107.451), nor a Policarpa 10,000 (from 1995), nor an example from the serial ranges the bank published after the Valledupar robbery. The engraving is the subject of 2025 lawsuits: Adriana Martínez Dogirama and photographer Mauricio Pardo allege the bank used a photograph of her from around 1986, published in 1988 by the Museo del Oro; Banco de la República maintains the illustration gathers Emberá community traits, not a specific identifiable person. This record does not settle that dispute. It gathers two 1994 star notes, each in a sleeve, unslabbed.',
     },
     history: {
-      es: 'Desde 1993 los billetes del Banco de la República dejaron de llevar «pesos oro». Este diez mil nació al año anterior como serie conmemorativa del 12 de octubre de 1492: un guiño a la Constitución de 1991 y, en el reverso, a la fauna del país. El 16–17 de octubre de 1994 el «robo del siglo» vació la bóveda de Valledupar: unos 24.072 millones de pesos en 2.000, 5.000 y 10.000, buena parte aún sin emitir. El banco publicó rangos de seriales y, en 1995–1996, sustituyó esas tres denominaciones; el 10.000 siguiente lleva a Policarpa Salavarrieta. González White anota, en el mismo pliego de 1994, seriales ordinarios robados que no coinciden con esta reposición estrella. En 2023 el arquitecto Gildardo Tovar comparó el grabado con una diapositiva de Mauricio Pardo; El Tiempo (marzo de 2025) y El País (junio de 2025) cubren las demandas de Pardo y de Adriana Martínez Dogirama. El banco niega que el retrato reproduzca a una persona concreta. Esta ficha documenta un ejemplar de 1994 con estrella, en funda, impreso el mismo año del asalto.',
-      en: 'From 1993 Banco de la República notes dropped the legend “pesos oro.” This ten-thousand had appeared the year before as a commemorative series for 12 October 1492: a nod to the 1991 Constitution and, on the back, to the country’s fauna. On 16–17 October 1994 the “robo del siglo” emptied the Valledupar vault: some 24.072 billion pesos in 2,000, 5,000, and 10,000 notes, much of it still unissued. The bank published serial ranges and, in 1995–1996, replaced those three denominations; the next 10,000 carries Policarpa Salavarrieta. González White notes, on the same 1994 spread, stolen ordinary serials that do not match this star replacement. In 2023 the architect Gildardo Tovar compared the engraving with a slide by Mauricio Pardo; El Tiempo (March 2025) and El País (June 2025) cover the suits by Pardo and by Adriana Martínez Dogirama. The bank denies that the portrait reproduces a specific person. This record documents a 1994 star example, in a sleeve, printed the same year as the robbery.',
+      es: 'Desde 1993 los billetes del Banco de la República dejaron de llevar «pesos oro». Este diez mil nació al año anterior como serie conmemorativa del 12 de octubre de 1492: un guiño a la Constitución de 1991 y, en el reverso, a la fauna del país. El 16–17 de octubre de 1994 el «robo del siglo» vació la bóveda de Valledupar: unos 24.072 millones de pesos en 2.000, 5.000 y 10.000, buena parte aún sin emitir. El banco publicó rangos de seriales y, en 1995–1996, sustituyó esas tres denominaciones; el 10.000 siguiente lleva a Policarpa Salavarrieta. González White anota, en el mismo pliego de 1994, seriales ordinarios robados que no coinciden con estas reposiciones estrella. En 2023 el arquitecto Gildardo Tovar comparó el grabado con una diapositiva de Mauricio Pardo; El Tiempo (marzo de 2025) y El País (junio de 2025) cubren las demandas de Pardo y de Adriana Martínez Dogirama. El banco niega que el retrato reproduzca a una persona concreta. Esta ficha documenta dos ejemplares de 1994 con estrella —00113227 y 00249902—, cada uno en funda, impresos el mismo año del asalto.',
+      en: 'From 1993 Banco de la República notes dropped the legend “pesos oro.” This ten-thousand had appeared the year before as a commemorative series for 12 October 1492: a nod to the 1991 Constitution and, on the back, to the country’s fauna. On 16–17 October 1994 the “robo del siglo” emptied the Valledupar vault: some 24.072 billion pesos in 2,000, 5,000, and 10,000 notes, much of it still unissued. The bank published serial ranges and, in 1995–1996, replaced those three denominations; the next 10,000 carries Policarpa Salavarrieta. González White notes, on the same 1994 spread, stolen ordinary serials that do not match these star replacements. In 2023 the architect Gildardo Tovar compared the engraving with a slide by Mauricio Pardo; El Tiempo (March 2025) and El País (June 2025) cover the suits by Pardo and by Adriana Martínez Dogirama. The bank denies that the portrait reproduces a specific person. This record documents two 1994 star examples — 00113227 and 00249902 — each in a sleeve, printed the same year as the robbery.',
     },
     frontCaption: {
       es: 'Anverso del 10.000 pesos, Pick 437A / TBB B980az: mujer emberá, poporo quimbaya, fecha 1994 y serial 00113227 con estrella de reposición.',
@@ -1190,8 +1196,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Back of the 10,000 pesos, Pick 437A / TBB B980az: Colombian birds, Waldseemüller’s 1507 world map, and the Imprenta de Billetes Santa Fe de Bogotá imprint.',
     },
     scarcity: {
-      es: 'González White 2019 (pp. 127–128) publica la banda de seriales de la reposición estrella de 1994, no una cifra de emisión para esa variedad (¿? en el pliego). Numista agrupa el diseño 1993–1994 bajo N# 213677, con índice de rareza 46, y marca la frecuencia de la reposición estrella de 1994 en 0,9 % entre quienes poseen el tipo; esa cifra es una estimación de población de catálogo, no una tirada oficial. La tabla BanRep de producción anual atribuye 123,05 millones de piezas a todos los 10.000 pesos de 1994: no es la tirada de una reposición, de un par de firmas ni de un serial. No debe aplicarse a esta estrella el rango de catálogo que la prensa cita para el prefijo R de 1992. Esta ficha no inventa una tirada.',
-      en: 'González White 2019 (pp. 127–128) publishes the 1994 star-replacement serial band, not an emisión figure for that variety (¿? on the spread). Numista groups the 1993–1994 design under N# 213677, with a rarity index of 46, and marks the 1994 star replacement’s frequency at 0.9% among owners of the type; that figure is a catalog-population estimate, not an official printage. BanRep’s annual production table assigns 123.05 million pieces to every 10,000-peso note of 1994: that is not the printage of one replacement, signature pair, or serial. Catalog quotes the press cites for the 1992 R prefix do not apply to this star. This record does not invent a printage.',
+      es: 'González White 2019 (pp. 127–128) publica la banda de seriales de la reposición estrella de 1994 (00.100.332–00.239.982), no una cifra de emisión para esa variedad (¿? en el pliego). 00113227 cae en esa banda; 00249902 (249.902) queda por encima; no se aplica a un billete de 1994 la banda de 1993 (00.100.133–00.274.404) ni el prefijo R de 1992. Numista agrupa el diseño 1993–1994 bajo N# 213677, con índice de rareza 46, y marca la frecuencia de la reposición estrella de 1994 en 0,9 % entre quienes poseen el tipo; esa cifra es una estimación de población de catálogo, no una tirada oficial. La tabla BanRep de producción anual atribuye 123,05 millones de piezas a todos los 10.000 pesos de 1994: no es la tirada de una reposición, de un par de firmas ni de un serial. Esta ficha no inventa una tirada.',
+      en: 'González White 2019 (pp. 127–128) publishes the 1994 star-replacement serial band (00.100.332–00.239.982), not an emisión figure for that variety (¿? on the spread). 00113227 sits in that band; 00249902 (249,902) sits above it; the 1993 band (00.100.133–00.274.404) and the 1992 R prefix are not applied to a 1994-dated note. Numista groups the 1993–1994 design under N# 213677, with a rarity index of 46, and marks the 1994 star replacement’s frequency at 0.9% among owners of the type; that figure is a catalog-population estimate, not an official printage. BanRep’s annual production table assigns 123.05 million pieces to every 10,000-peso note of 1994: that is not the printage of one replacement, signature pair, or serial. This record does not invent a printage.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00113227. La pieza se presenta en funda, sin encapsular; el margen de marca de agua muestra dos manchas de foxing.',
@@ -1246,6 +1252,202 @@ export const colombiaNotes: ColombiaNote[] = [
           es: 'Relato de la autora del concurso de 1991, el primer premio desierto y la autorización para imprimir el segundo.',
           en: 'The designer’s account of the 1991 contest, the vacant first prize, and the authorization to print the second.',
         },
+      },
+    ],
+    pieces: [
+      {
+        id: '10000-pesos-1994-00113227',
+        pick: 'P# 437A · TBB B980az',
+        serial: '00113227',
+        signatures: {
+          es: 'Miguel Urrutia Montoya (gerente general) y Fernando Copete Saldarriaga (gerente ejecutivo)',
+          en: 'Miguel Urrutia Montoya (gerente general) and Fernando Copete Saldarriaga (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 00113227★. González White 2019 (pp. 127–128) lista la reposición estrella de 1994 con seriales 00.100.332–00.239.982; este serial cae en esa banda. Fecha impresa: Santa Fe de Bogotá, 1994. En funda, sin encapsular; el margen de marca de agua muestra dos manchas de foxing.',
+          en: 'Serial 00113227★. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982; this serial sits in that band. Printed date: Santa Fe de Bogotá, 1994. In a sleeve, unslabbed; the watermark margin shows two foxing spots.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/10000-pesos-1994-00113227-composite.jpg',
+          front: '/images/catalog/colombia/10000-pesos-1994-00113227-front.jpg',
+          back: '/images/catalog/colombia/10000-pesos-1994-00113227-back.jpg',
+        },
+        title: {
+          es: '10.000 pesos · reposición estrella · 1994 · 00113227',
+          en: '10,000 pesos · star replacement · 1994 · 00113227',
+        },
+        lead: {
+          es: 'Serial 00113227★: reposición estrella de 1994, dentro de la banda González White. En funda, sin encapsular.',
+          en: 'Serial 00113227★: 1994 star replacement, inside the González White band. In a sleeve, unslabbed.',
+        },
+        description: {
+          es: 'Serial 00113227★, impreso dos veces en el anverso. González White sitúa la reposición estrella de 1994 en 00.100.332–00.239.982; este serial cae ahí. En funda, sin encapsular; foxing en el margen de marca de agua.',
+          en: 'Serial 00113227★, printed twice on the face. González White places the 1994 star replacement at 00.100.332–00.239.982; this serial sits there. In a sleeve, unslabbed; foxing on the watermark margin.',
+        },
+        frontCaption: {
+          es: 'Anverso del 10.000 pesos, Pick 437A / TBB B980az: mujer emberá, poporo quimbaya, fecha 1994 y serial 00113227 con estrella de reposición.',
+          en: 'Face of the 10,000 pesos, Pick 437A / TBB B980az: Emberá woman, Quimbaya poporo, the date 1994, and serial 00113227 with a replacement star.',
+        },
+        backCaption: {
+          es: 'Reverso del 10.000 pesos, Pick 437A / TBB B980az: aves colombianas, mapamundi de Waldseemüller de 1507 y pie de la Imprenta de Billetes de Santa Fe de Bogotá.',
+          en: 'Back of the 10,000 pesos, Pick 437A / TBB B980az: Colombian birds, Waldseemüller’s 1507 world map, and the Imprenta de Billetes Santa Fe de Bogotá imprint.',
+        },
+        scarcity: {
+          es: '00113227 cae en la banda González White de 1994 (00.100.332–00.239.982). La rareza del tipo y la producción BanRep de 1994 se documentan una sola vez en esta página.',
+          en: '00113227 sits in the González White 1994 band (00.100.332–00.239.982). Type scarcity and BanRep’s 1994 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00113227. La pieza se presenta en funda, sin encapsular; el margen de marca de agua muestra dos manchas de foxing.',
+          en: 'A PMG or PCGS census for serial 00113227 has not been independently verified. The note is shown in a sleeve, unslabbed; the watermark margin shows two foxing spots.',
+        },
+        grade: {
+          es: 'Sin encapsular · en funda',
+          en: 'Unslabbed · in a sleeve',
+        },
+        sources: [
+          {
+            href: 'https://en.numista.com/213677',
+            es: 'Numista — Colombia 10.000 pesos (1993–1994), N# 213677',
+            en: 'Numista — Colombia 10,000 pesos (1993–1994), N# 213677',
+            note: {
+              es: 'Reposición 1994: TBB B980az; Hernández 576; estrella junto al serial; firmas MUM y FCS; frecuencia 0,9 % en el tipo; índice de rareza 46. 140 × 70 mm. Impresora: Imprenta de Billetes, Santa Fe de Bogotá.',
+              en: '1994 replacement: TBB B980az; Hernández 576; star beside the serial; signatures MUM and FCS; 0.9% frequency within the type; rarity index 46. 140 × 70 mm. Printer: Imprenta de Billetes, Santa Fe de Bogotá.',
+            },
+          },
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0437.htm',
+            es: 'Bank Note Museum — Colombia P-437, 10.000 pesos oro (1992)',
+            en: 'Bank Note Museum — Colombia P-437, 10,000 pesos oro (1992)',
+            note: {
+              es: '437: 1992, pesos oro, Banco de México; remite las fechas posteriores en «pesos», Imprenta de Billetes – Santa Fe de Bogotá, a Pick 437A. Anverso mujer emberá; reverso aves y mapa de Waldseemüller (1507).',
+              en: '437: 1992, pesos oro, Banco de México; refers later dates in “pesos,” Imprenta de Billetes – Santa Fe de Bogotá, to Pick 437A. Emberá woman on the face; birds and the 1507 Waldseemüller map on the back.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 1994 de 10.000 pesos: 123,05 millones de piezas (total de la denominación ese año, no de una reposición Pick).',
+              en: '1994 production of 10,000-peso notes: 123.05 million pieces (the denomination total that year, not one Pick replacement).',
+            },
+          },
+          {
+            href: 'https://elpais.com/america-colombia/2025-06-23/la-indigena-colombiana-que-tiene-en-apuros-al-banco-de-la-republica-por-un-billete-de-10000-pesos.html',
+            es: 'El País — Adriana Martínez Dogirama y el 10.000 pesos emberá (23 de junio de 2025)',
+            en: 'El País — Adriana Martínez Dogirama and the Emberá 10,000-peso note (23 June 2025)',
+            note: {
+              es: 'Crónica del diseño (Ponce de León, Cionini), de la foto de Mauricio Pardo y de las demandas de 2025. El banco niega que el grabado reproduzca a una persona concreta. No es una ficha de este serial.',
+              en: 'Report on the design (Ponce de León, Cionini), Mauricio Pardo’s photograph, and the 2025 lawsuits. The bank denies that the engraving reproduces a specific person. Not a record of this serial.',
+            },
+          },
+          {
+            href: 'https://lilianaponcedeleon.blogspot.com/2010/07/billete-sin-suerte.html',
+            es: 'Liliana Ponce de León — «Billete sin suerte» (7 de julio de 2010)',
+            en: 'Liliana Ponce de León — “Billete sin suerte” (7 July 2010)',
+            note: {
+              es: 'Relato de la autora del concurso de 1991, el primer premio desierto y la autorización para imprimir el segundo.',
+              en: 'The designer’s account of the 1991 contest, the vacant first prize, and the authorization to print the second.',
+            },
+          },
+        ],
+      },
+      {
+        id: '10000-pesos-1994-00249902',
+        pick: 'P# 437A · TBB B980az',
+        serial: '00249902',
+        signatures: {
+          es: 'Miguel Urrutia Montoya (gerente general) y Fernando Copete Saldarriaga (gerente ejecutivo)',
+          en: 'Miguel Urrutia Montoya (gerente general) and Fernando Copete Saldarriaga (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 00249902★. González White 2019 (pp. 127–128) lista la reposición estrella de 1994 con seriales 00.100.332–00.239.982; 00249902 (249.902) queda por encima de esa banda. El mismo pliego da a la reposición estrella de 1993 la banda 00.100.133–00.274.404; no se aplica aquí a un billete fechado 1994. Fecha impresa: Santa Fe de Bogotá, 1994. En funda, sin encapsular; el margen de marca de agua muestra un ligero amarilleo.',
+          en: 'Serial 00249902★. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982; 00249902 (249,902) sits above that band. The same spread gives the 1993 star replacement the band 00.100.133–00.274.404; that row is not applied here to a note dated 1994. Printed date: Santa Fe de Bogotá, 1994. In a sleeve, unslabbed; the watermark margin shows slight yellowing.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/10000-pesos-1994-00249902-composite.jpg',
+          front: '/images/catalog/colombia/10000-pesos-1994-00249902-front.jpg',
+          back: '/images/catalog/colombia/10000-pesos-1994-00249902-back.jpg',
+        },
+        title: {
+          es: '10.000 pesos · reposición estrella · 1994 · 00249902',
+          en: '10,000 pesos · star replacement · 1994 · 00249902',
+        },
+        lead: {
+          es: 'Serial 00249902★: reposición estrella de 1994, por encima de la banda González White. En funda, sin encapsular.',
+          en: 'Serial 00249902★: 1994 star replacement, above the González White band. In a sleeve, unslabbed.',
+        },
+        description: {
+          es: 'Serial 00249902★, impreso dos veces en el anverso. González White sitúa la reposición estrella de 1994 en 00.100.332–00.239.982; 249.902 queda por encima de ese techo. No se aplica la banda de 1993. En funda, sin encapsular; ligero amarilleo en el margen de marca de agua.',
+          en: 'Serial 00249902★, printed twice on the face. González White places the 1994 star replacement at 00.100.332–00.239.982; 249,902 sits above that ceiling. The 1993 band is not applied. In a sleeve, unslabbed; slight yellowing on the watermark margin.',
+        },
+        frontCaption: {
+          es: 'Anverso del 10.000 pesos, Pick 437A / TBB B980az: mujer emberá, poporo quimbaya, fecha 1994 y serial 00249902 con estrella de reposición.',
+          en: 'Face of the 10,000 pesos, Pick 437A / TBB B980az: Emberá woman, Quimbaya poporo, the date 1994, and serial 00249902 with a replacement star.',
+        },
+        backCaption: {
+          es: 'Reverso del 10.000 pesos, Pick 437A / TBB B980az: aves colombianas, mapamundi de Waldseemüller de 1507 y pie de la Imprenta de Billetes de Santa Fe de Bogotá.',
+          en: 'Back of the 10,000 pesos, Pick 437A / TBB B980az: Colombian birds, Waldseemüller’s 1507 world map, and the Imprenta de Billetes Santa Fe de Bogotá imprint.',
+        },
+        scarcity: {
+          es: '00249902 (249.902) queda por encima de la banda González White de 1994 (00.100.332–00.239.982). No se le aplica la banda de 1993 ni el prefijo R de 1992. La rareza del tipo y la producción BanRep de 1994 se documentan una sola vez en esta página.',
+          en: '00249902 (249,902) sits above the González White 1994 band (00.100.332–00.239.982). The 1993 band and the 1992 R prefix are not applied. Type scarcity and BanRep’s 1994 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00249902. La pieza se presenta en funda, sin encapsular; el margen de marca de agua muestra un ligero amarilleo.',
+          en: 'A PMG or PCGS census for serial 00249902 has not been independently verified. The note is shown in a sleeve, unslabbed; the watermark margin shows slight yellowing.',
+        },
+        grade: {
+          es: 'Sin encapsular · en funda',
+          en: 'Unslabbed · in a sleeve',
+        },
+        sources: [
+          {
+            href: 'https://en.numista.com/213677',
+            es: 'Numista — Colombia 10.000 pesos (1993–1994), N# 213677',
+            en: 'Numista — Colombia 10,000 pesos (1993–1994), N# 213677',
+            note: {
+              es: 'Reposición 1994: TBB B980az; Hernández 576; estrella junto al serial; firmas MUM y FCS (las impresas en este ejemplar); frecuencia 0,9 % en el tipo; índice de rareza 46. 140 × 70 mm. Impresora: Imprenta de Billetes, Santa Fe de Bogotá.',
+              en: '1994 replacement: TBB B980az; Hernández 576; star beside the serial; signatures MUM and FCS (the pair printed on this note); 0.9% frequency within the type; rarity index 46. 140 × 70 mm. Printer: Imprenta de Billetes, Santa Fe de Bogotá.',
+            },
+          },
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0437.htm',
+            es: 'Bank Note Museum — Colombia P-437, 10.000 pesos oro (1992)',
+            en: 'Bank Note Museum — Colombia P-437, 10,000 pesos oro (1992)',
+            note: {
+              es: '437: 1992, pesos oro, Banco de México; remite las fechas posteriores en «pesos», Imprenta de Billetes – Santa Fe de Bogotá, a Pick 437A. Anverso mujer emberá; reverso aves y mapa de Waldseemüller (1507).',
+              en: '437: 1992, pesos oro, Banco de México; refers later dates in “pesos,” Imprenta de Billetes – Santa Fe de Bogotá, to Pick 437A. Emberá woman on the face; birds and the 1507 Waldseemüller map on the back.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 1994 de 10.000 pesos: 123,05 millones de piezas (total de la denominación ese año, no de una reposición Pick).',
+              en: '1994 production of 10,000-peso notes: 123.05 million pieces (the denomination total that year, not one Pick replacement).',
+            },
+          },
+          {
+            href: 'https://elpais.com/america-colombia/2025-06-23/la-indigena-colombiana-que-tiene-en-apuros-al-banco-de-la-republica-por-un-billete-de-10000-pesos.html',
+            es: 'El País — Adriana Martínez Dogirama y el 10.000 pesos emberá (23 de junio de 2025)',
+            en: 'El País — Adriana Martínez Dogirama and the Emberá 10,000-peso note (23 June 2025)',
+            note: {
+              es: 'Crónica del diseño (Ponce de León, Cionini), de la foto de Mauricio Pardo y de las demandas de 2025. El banco niega que el grabado reproduzca a una persona concreta. No es una ficha de este serial.',
+              en: 'Report on the design (Ponce de León, Cionini), Mauricio Pardo’s photograph, and the 2025 lawsuits. The bank denies that the engraving reproduces a specific person. Not a record of this serial.',
+            },
+          },
+          {
+            href: 'https://lilianaponcedeleon.blogspot.com/2010/07/billete-sin-suerte.html',
+            es: 'Liliana Ponce de León — «Billete sin suerte» (7 de julio de 2010)',
+            en: 'Liliana Ponce de León — “Billete sin suerte” (7 July 2010)',
+            note: {
+              es: 'Relato de la autora del concurso de 1991, el primer premio desierto y la autorización para imprimir el segundo.',
+              en: 'The designer’s account of the 1991 contest, the vacant first prize, and the authorization to print the second.',
+            },
+          },
+        ],
       },
     ],
   },
@@ -1996,7 +2198,7 @@ export function notesForChapter(chapterId: ColombiaChapterId): ColombiaNote[] {
   return colombiaNotes.filter((note) => note.chapterId === chapterId);
 }
 
-const HOLDING_SORT_ID = /^(\d+)-pesos?(?:-[a-z0-9]+)*-(\d{4})$/i;
+const HOLDING_SORT_ID = /^(\d+)-pesos?(?:-[a-z0-9]+)*-(\d{4})(?:-\d+)?$/i;
 
 export function holdingSortKey(id: string): { denomination: number; year: number } {
   const match = id.match(HOLDING_SORT_ID);

@@ -246,8 +246,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The same Isaacs type in the collection, with a different serial and an error.',
   },
   '/coleccion/colombia/10000-pesos-1994/': {
-    es: 'La ficha de la pieza en la colección virtual: Pick 437A, serial 00113227.',
-    en: 'The piece record in the virtual collection: Pick 437A, serial 00113227.',
+    es: 'La ficha del tipo en la colección virtual: Pick 437A, seriales 00113227 y 00249902.',
+    en: 'The type record in the virtual collection: Pick 437A, serials 00113227 and 00249902.',
   },
 };
 

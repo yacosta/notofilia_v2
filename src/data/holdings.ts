@@ -109,6 +109,7 @@ export const additions: Holding[] = [
   { id: 'co-1979-1000-pesos-oro-067682258', kind: 'banknote', country: 'CO' },
   { id: 'co-1983-2000-pesos-oro-specimen-030', kind: 'banknote', country: 'CO' },
   { id: 'co-1994-10000-pesos-00113227', kind: 'banknote', country: 'CO' },
+  { id: 'co-1994-10000-pesos-00249902', kind: 'banknote', country: 'CO' },
   { id: 'co-2008-2000-pesos-10000001', kind: 'banknote', country: 'CO' },
   { id: 'co-2017-20000-pesos-af51355141', kind: 'banknote', country: 'CO' },
   { id: 'co-2015-2000-pesos-aa40000066', kind: 'banknote', country: 'CO' },
