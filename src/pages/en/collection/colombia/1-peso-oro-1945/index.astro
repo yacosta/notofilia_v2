@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('1-peso-oro-1945');
+if (!note) throw new Error('Missing Banco de la República 1 peso oro 1945 catalog note');
+---
+
+<ColombiaNotePage locale="en" note={note} />
