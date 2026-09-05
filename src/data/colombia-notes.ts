@@ -53,11 +53,12 @@ export type ColombiaNote = {
   population: LocalizedText;
   grade: LocalizedText;
   sources: CatalogSource[];
-  /** Same-type holdings documented on this piece page (each with its own catalog block). */
+  /** Physical holdings on this piece page. */
   pieces?: ColombiaNotePiece[];
   /**
-   * One type essay (description / history / scarcity) for every physical piece
-   * on the page. Piece blocks keep only facts, images, and serial-specific notes.
+   * Same Pick, date, and design: one series card, one facts block, and one type
+   * essay. Images stay per serial. Different dated objects (e.g. 1944 vs 1955)
+   * omit this flag and keep separate cards.
    */
   shareTypeNarrative?: boolean;
 };
@@ -1271,8 +1272,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Colombia · Banco de la República · Star replacement',
     },
     lead: {
-      es: 'Dos ejemplares de la familia emberá Pick 437A, fecha 1994: seriales 00113227 y 00249902, ambos con estrella de reposición. Cada uno tiene en esta página sus datos de catálogo y las dos caras; el texto de tipo es común.',
-      en: 'Two notes of the Emberá Pick 437A family, date 1994: serials 00113227 and 00249902, each with a replacement star. Each has its own catalog facts and both faces on this page; the type text is shared.',
+      es: 'Dos ejemplares de la familia emberá Pick 437A, fecha 1994: seriales 00113227 y 00249902, ambos con estrella de reposición. Una ficha: un bloque de datos y un texto de tipo; las dos caras de cada serial debajo.',
+      en: 'Two notes of the Emberá Pick 437A family, date 1994: serials 00113227 and 00249902, each with a replacement star. One record: one facts block and one type essay; both faces of each serial stacked below.',
     },
     description: {
       es: 'El Banco de la República puso este diez mil en 1992 para conmemorar el V centenario del 12 de octubre de 1492. El diseño es de Liliana Ponce de León —segundo premio de un concurso de 1991 cuyo primer premio se declaró desierto—; el grabado se atribuye a Trento Cionini. La primera fecha, 1992, lleva «pesos oro» y salió de la imprenta del Banco de México (Pick 437). Estos ejemplares son de 1994: ya dicen «DIEZ MIL PESOS», sin «oro», y el pie del reverso lee «IMPRESORA DE BILLETES – SANTA FE DE BOGOTÁ» (IBSFB). El Bank Note Museum y Numista los numeran Pick 437A / TBB B980az. En el anverso, a la derecha, el grabado rotulado «MUJER EMBERA», con collares y aretes; junto a ella, un poporo quimbaya antropomorfo del Museo del Oro; al centro, un medallón con carabelas. Las firmas son las de Miguel Urrutia Montoya, gerente general, y Fernando Copete Saldarriaga, gerente ejecutivo: el par de 1993–1994. El reverso reúne aves colombianas —el «billete de los loritos»— y el mapamundi de Waldseemüller de 1507. González White sitúa la reposición estrella de 1994 en 00.100.332–00.239.982; 00113227 cae ahí; 00249902 (249.902) queda por encima de ese techo. No es la reposición con prefijo R de 1992 (R00.100.009–R00.107.451), ni un 10.000 de Policarpa (1995 en adelante), ni un ejemplar de los rangos que el banco publicó tras el robo de Valledupar. El grabado es motivo de demandas de 2025: Adriana Martínez Dogirama y el fotógrafo Mauricio Pardo alegan que el banco usó una foto suya de hacia 1986, publicada en 1988 por el Museo del Oro; el Banco de la República sostiene que la ilustración reúne rasgos de la comunidad emberá, no de una persona identificable. Esta ficha no resuelve ese litigio. Reúne dos piezas de 1994 con estrella, cada una en funda, sin encapsular.',
@@ -1295,8 +1296,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'González White 2019 (pp. 127–128) publishes the 1994 star-replacement serial band (00.100.332–00.239.982), not an emisión figure for that variety (¿? on the spread). 00113227 sits in that band; 00249902 (249,902) sits above it; the 1993 band (00.100.133–00.274.404) and the 1992 R prefix are not applied to a 1994-dated note. Numista groups the 1993–1994 design under N# 213677, with a rarity index of 46, and marks the 1994 star replacement’s frequency at 0.9% among owners of the type; that figure is a catalog-population estimate, not an official printage. BanRep’s annual production table assigns 123.05 million pieces to every 10,000-peso note of 1994: that is not the printage of one replacement, signature pair, or serial. This record does not invent a printage.',
     },
     population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00113227. La pieza se presenta en funda, sin encapsular; el margen de marca de agua muestra dos manchas de foxing.',
-      en: 'A PMG or PCGS census for serial 00113227 has not been independently verified. The note is shown in a sleeve, unslabbed; the watermark margin shows two foxing spots.',
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para 00113227 ni para 00249902. Ambos se presentan en funda, sin encapsular; el margen de marca de agua de 00113227 muestra dos manchas de foxing, y el de 00249902 un ligero amarilleo.',
+      en: 'A PMG or PCGS census has not been independently verified for 00113227 or 00249902. Both notes are shown in a sleeve, unslabbed; the watermark margin of 00113227 shows two foxing spots, and that of 00249902 shows slight yellowing.',
     },
     grade: {
       es: 'Sin encapsular · en funda',
@@ -2231,6 +2232,8 @@ export const notePageCopy = {
     printedLabel: 'Impresión',
     signaturesLabel: 'Firmas',
     serialLabel: 'Número de serie',
+    serialsLabel: 'Números de serie',
+    exampleHeading: 'Ejemplar',
     pickLabel: 'Referencia Pick',
     gradeLabel: 'Conservación',
     expandImage: 'Ampliar imagen',
@@ -2250,6 +2253,8 @@ export const notePageCopy = {
     printedLabel: 'Printage',
     signaturesLabel: 'Signatures',
     serialLabel: 'Serial number',
+    serialsLabel: 'Serial numbers',
+    exampleHeading: 'Example',
     pickLabel: 'Pick reference',
     gradeLabel: 'Condition',
     expandImage: 'Enlarge image',
@@ -2284,6 +2289,35 @@ export function notePieces(note: ColombiaNote): ColombiaNotePiece[] {
   ];
 }
 
+/** Same-type serials share one catalog ficha and one series card. */
+export function groupsSameTypeHoldings(note: ColombiaNote): boolean {
+  return Boolean(note.shareTypeNarrative);
+}
+
+export function joinSerials(serials: string[]): string {
+  return serials.join(' / ');
+}
+
+export function noteSerialLine(note: ColombiaNote): string {
+  const pieces = notePieces(note);
+  if (groupsSameTypeHoldings(note) && pieces.length > 1) {
+    return joinSerials(pieces.map((piece) => piece.serial));
+  }
+  return note.serial;
+}
+
+export function seriesCardHref(
+  note: ColombiaNote,
+  piece: ColombiaNotePiece,
+  locale: 'es' | 'en',
+): string {
+  const path = notePath(note, locale);
+  if ((note.pieces?.length ?? 1) > 1 && !groupsSameTypeHoldings(note)) {
+    return `${path}#${piece.id}`;
+  }
+  return path;
+}
+
 export function notePath(note: ColombiaNote, locale: 'es' | 'en'): string {
   return localizePath(note.path, locale);
 }
@@ -2311,12 +2345,29 @@ export type ColombiaSeriesCard = {
 };
 
 export function seriesCardsForChapter(chapterId: ColombiaChapterId): ColombiaSeriesCard[] {
-  const cards = notesForChapter(chapterId).flatMap((note) =>
-    notePieces(note).map((piece) => {
+  const cards = notesForChapter(chapterId).flatMap((note) => {
+    const pieces = notePieces(note);
+    if (groupsSameTypeHoldings(note) && pieces.length > 1) {
+      const key = holdingSortKey(note.id);
+      const first = pieces[0];
+      return [
+        {
+          note,
+          piece: {
+            ...first,
+            title: note.title,
+            serial: joinSerials(pieces.map((piece) => piece.serial)),
+          },
+          denomination: key.denomination,
+          year: key.year,
+        },
+      ];
+    }
+    return pieces.map((piece) => {
       const key = holdingSortKey(piece.id);
       return { note, piece, denomination: key.denomination, year: key.year };
-    }),
-  );
+    });
+  });
   cards.sort((a, b) => a.denomination - b.denomination || a.year - b.year);
   return cards;
 }

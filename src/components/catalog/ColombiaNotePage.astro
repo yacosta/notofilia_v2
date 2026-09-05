@@ -9,6 +9,7 @@ import {
   notePageCopy,
   notePath,
   notePieces,
+  noteSerialLine,
   noteSeriesLabel,
   type ColombiaNote,
   type ColombiaNotePiece,
@@ -27,7 +28,8 @@ const pathname = notePath(note, locale);
 const pieces = notePieces(note);
 const multi = pieces.length > 1;
 const shareType = Boolean(note.shareTypeNarrative && multi);
-const factsTag = multi ? 'h3' : 'h2';
+const factsTag = multi && !shareType ? 'h3' : 'h2';
+const serialLine = noteSerialLine(note);
 const pieceSources = pieces.flatMap((piece) => piece.sources);
 const sources = [...note.sources, ...pieceSources, ...seriesSources].filter(
   (source, index, list) => list.findIndex((entry) => entry.href === source.href) === index,
@@ -46,7 +48,7 @@ const jsonLd = visualArtworkJsonLd({
   locale,
   artform: 'Banknote',
   catalogNumber: note.pick,
-  serial: note.serial,
+  serial: serialLine,
   gradingService: inferGradingService(note.grade[locale]),
 });
 
@@ -105,51 +107,96 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
       {
+        shareType ? (
+          <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+            <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {t.factsHeading}
+            </h2>
+            <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.pick}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialsLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{serialLine}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.signatures[locale]}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.grade[locale]}</dd>
+              </div>
+              <div class="sm:col-span-2">
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.printed[locale]}</dd>
+              </div>
+            </dl>
+          </section>
+        ) : null
+      }
+
+      {
         pieces.map((piece, index) => {
-          const FactsHeading = factsTag;
+          const FactsHeading = shareType ? 'h3' : factsTag;
           const NarrativeHeading = factsTag;
           return (
-            <div id={piece.id} class:list={['scroll-mt-28', multi && index > 0 && 'mt-14 border-t border-line-strong pt-14']}>
+            <div
+              id={piece.id}
+              class:list={[
+                'scroll-mt-28',
+                shareType && index > 0 && 'mt-10',
+                !shareType && multi && index > 0 && 'mt-14 border-t border-line-strong pt-14',
+              ]}
+            >
               {
-                multi ? (
+                shareType ? (
+                  <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                    {t.exampleHeading} {piece.serial}
+                  </h2>
+                ) : multi ? (
                   <>
                     <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                       {piece.title[locale]}
                     </h2>
-                    {shareType ? null : (
-                      <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
-                    )}
+                    <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
                   </>
                 ) : null
               }
 
-              <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby={pieceHeadingId(piece, 'facts')}>
-                <FactsHeading id={pieceHeadingId(piece, 'facts')} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-                  {t.factsHeading}
-                </FactsHeading>
-                <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-                  <div>
-                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
-                    <dd class="m-0 mt-1 text-cream">{piece.pick}</dd>
-                  </div>
-                  <div>
-                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
-                    <dd class="m-0 mt-1 text-cream">{piece.serial}</dd>
-                  </div>
-                  <div>
-                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
-                    <dd class="m-0 mt-1 text-cream">{piece.signatures[locale]}</dd>
-                  </div>
-                  <div>
-                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
-                    <dd class="m-0 mt-1 text-cream">{piece.grade[locale]}</dd>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
-                    <dd class="m-0 mt-1 text-cream">{piece.printed[locale]}</dd>
-                  </div>
-                </dl>
-              </section>
+              {
+                shareType ? null : (
+                  <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby={pieceHeadingId(piece, 'facts')}>
+                    <FactsHeading id={pieceHeadingId(piece, 'facts')} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                      {t.factsHeading}
+                    </FactsHeading>
+                    <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.pick}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.serial}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.signatures[locale]}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.grade[locale]}</dd>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.printed[locale]}</dd>
+                      </div>
+                    </dl>
+                  </section>
+                )
+              }
 
               <div class="grid gap-10 lg:grid-cols-2">
                 <figure class="m-0">
@@ -213,12 +260,16 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 )
               }
 
-              <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'population')}>
-                <NarrativeHeading id={pieceHeadingId(piece, 'population')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-                  {t.populationHeading}
-                </NarrativeHeading>
-                <p class="m-0 text-[17px]/7 text-cream">{piece.population[locale]}</p>
-              </section>
+              {
+                shareType ? null : (
+                  <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'population')}>
+                    <NarrativeHeading id={pieceHeadingId(piece, 'population')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {t.populationHeading}
+                    </NarrativeHeading>
+                    <p class="m-0 text-[17px]/7 text-cream">{piece.population[locale]}</p>
+                  </section>
+                )
+              }
             </div>
           );
         })
@@ -246,6 +297,12 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 {t.scarcityHeading}
               </h2>
               <p class="m-0 text-[17px]/7 text-cream">{note.scarcity[locale]}</p>
+            </section>
+            <section class="mt-12" aria-labelledby="population-heading">
+              <h2 id="population-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.populationHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream">{note.population[locale]}</p>
             </section>
           </>
         ) : multi && note.history ? (
