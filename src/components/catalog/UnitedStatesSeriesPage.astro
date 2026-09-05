@@ -107,7 +107,11 @@ const jsonLd = collectionPageJsonLd({
 
       <div class="mt-16 space-y-12">
         {
-          unitedStatesChapters.map((chapter) => (
+          unitedStatesChapters.map((chapter) => {
+            const notes = notesForChapter(chapter.id);
+            const listLabel =
+              chapter.id === 'us-frb' ? t.frnListLabel : chapter.title[locale];
+            return (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {chapter.years[locale]}
@@ -131,12 +135,12 @@ const jsonLd = collectionPageJsonLd({
                 )
               }
               {
-                notesForChapter(chapter.id).length > 0 ? (
+                notes.length > 0 ? (
                   <ol
                     class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
-                    aria-label={chapter.title[locale]}
+                    aria-label={listLabel}
                   >
-                    {notesForChapter(chapter.id).map((note) => (
+                    {notes.map((note) => (
                       <li class="min-w-0">
                         <a
                           href={notePath(note, locale)}
@@ -164,7 +168,7 @@ const jsonLd = collectionPageJsonLd({
               }
               {
                 chapter.id === 'us-pop-art' ? (
-                  <p class={notesForChapter(chapter.id).length > 0 ? 'mt-6' : 'mt-8'}>
+                  <p class={notes.length > 0 ? 'mt-6' : 'mt-8'}>
                     <a
                       href={localizePath(USA_RENCY_PATH, locale)}
                       class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
@@ -176,7 +180,7 @@ const jsonLd = collectionPageJsonLd({
               }
               {
                 chapter.id === 'us-miscelaneos' ? (
-                  <p class={notesForChapter(chapter.id).length > 0 ? 'mt-6' : 'mt-8'}>
+                  <p class={notes.length > 0 ? 'mt-6' : 'mt-8'}>
                     <a
                       href={localizePath(USA_MISC_PATH, locale)}
                       class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
@@ -187,7 +191,8 @@ const jsonLd = collectionPageJsonLd({
                 ) : null
               }
             </section>
-          ))
+            );
+          })
         }
       </div>
 
