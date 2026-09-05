@@ -118,7 +118,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "billete-de-reemplazo-estrella",
     category: "Coleccionismo",
     title: { es: "Billete de reposición (estrella)", en: "Replacement / star note" },
-    definition: { es: "Billete impreso para sustituir un ejemplar defectuoso retirado durante la fabricación. Se identifica por una estrella junto a la numeración o por un prefijo de letra reservado —como la Z en varias emisiones—. El 10.000 pesos emberá de 1994 de esta colección lleva el serial 00113227 con estrella.", en: "A banknote printed to replace a faulty note pulled during manufacture. It is identified by a star beside the serial number or by a reserved letter prefix — such as Z on several issues. This collection’s 1994 Emberá 10,000-peso note is serial 00113227 with a star." },
+    definition: { es: "Billete impreso para sustituir un ejemplar defectuoso retirado durante la fabricación. Se identifica por una estrella junto a la numeración o por un prefijo de letra reservado —como la Z en varias emisiones—. Los 10.000 pesos emberá de 1994 de esta colección llevan los seriales 00113227 y 00249902, ambos con estrella.", en: "A banknote printed to replace a faulty note pulled during manufacture. It is identified by a star beside the serial number or by a reserved letter prefix — such as Z on several issues. This collection’s 1994 Emberá 10,000-peso notes are serials 00113227 and 00249902, each with a star." },
     seeAlso: ["error-de-impresion", "maculatura", "numeracion"],
   },
   {

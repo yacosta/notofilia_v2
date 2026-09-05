@@ -213,6 +213,17 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
         })
       }
 
+      {
+        multi && note.history ? (
+          <section class="mt-14" aria-labelledby="history-heading">
+            <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+              {t.historyHeading}
+            </h2>
+            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+          </section>
+        ) : null
+      }
+
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
       </div>
