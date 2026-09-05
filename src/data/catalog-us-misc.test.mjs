@@ -416,6 +416,35 @@ describe('US obsolete City Bank of New Haven $5 remainder', () => {
   });
 });
 
+describe('US obsolete Canal Bank of New Orleans $50 remainder', () => {
+  it('records the unsigned LA-105 G46a "Redback" without inventing a serial', () => {
+    assert.match(data, /id: '50-dolares-canal-bank-nueva-orleans'/);
+    assert.match(data, /Haxby LA-105 G46a · N#206863/);
+    assert.match(data, /no_serial_reason:\n      'Obsolete remainder: the face has no printed No\. field/);
+    assert.match(data, /Toppan, Carpenter & Co\., Filadelfia y Nueva York/);
+    assert.match(data, /plancha D/);
+    assert.match(data, /plate letter is D/);
+    assert.match(data, /la-105-50-dollar-canal-bank-front\.jpg/);
+    // The G48a variety is a different printer's plate; keep the distinction explicit.
+    assert.match(data, /el 50 dólares LA-105 G48a, de diseño distinto e imprenta Rawdon, Wright, Hatch & Edson/);
+    assert.match(data, /the \$50 LA-105 G48a, a different design printed by Rawdon, Wright, Hatch & Edson/);
+    const canalBank = data.slice(data.indexOf("id: '50-dolares-canal-bank-nueva-orleans'"));
+    assert.doesNotMatch(canalBank.slice(0, canalBank.indexOf('sources:')), /serial: '[^—]/);
+    const esPiece = readFileSync(
+      new URL('../pages/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enPiece = readFileSync(
+      new URL('../pages/en/collection/united-states/50-dollars-canal-bank-new-orleans/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
+  });
+});
+
 describe('US Rency Trump / Never Surrender holding', () => {
   it('records Trump / Never Surrender as a third pop-art object without inventing a serial', () => {
     assert.match(data, /id: 'renci-trump-never-surrender'/);

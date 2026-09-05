@@ -63,6 +63,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/5-dollars-city-bank-new-haven/'],
   },
   {
+    es: '/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/',
+    en: '/collection/united-states/50-dollars-canal-bank-new-orleans/',
+    aliases: ['/coleccion/united-states/50-dollars-canal-bank-new-orleans/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-dolares-continental-1779/',
     en: '/collection/united-states/5-dollars-continental-1779/',
     aliases: ['/coleccion/united-states/5-dollars-continental-1779/'],
