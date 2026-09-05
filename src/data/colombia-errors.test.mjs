@@ -54,7 +54,8 @@ describe('colombia-errors', () => {
     assert.match(pageSource, /errorNoteCards/);
     assert.match(pageSource, /t\.errorsTitle/);
     assert.match(pageSource, /t\.sourcesTitle/);
-    assert.match(pageSource, /lg:grid-cols-4/);
+    assert.match(pageSource, /id="errores"[\s\S]*sm:grid-cols-2/);
+    assert.doesNotMatch(pageSource, /lg:grid-cols-4/);
     assert.doesNotMatch(pageSource, /errores-\$\{group\.year\}-\$\{group\.denomination\}-heading/);
     const erroresIndex = pageSource.indexOf('id="errores"');
     const sourcesIndex = pageSource.indexOf('t.sourcesTitle');
