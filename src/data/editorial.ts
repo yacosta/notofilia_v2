@@ -230,6 +230,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '50.000 pesos · error de numeración · 2008',
     en: '50,000 pesos · numbering error · 2008',
   },
+  '/coleccion/colombia/10000-pesos-1994/': {
+    es: '10.000 pesos · reposición estrella · 1994',
+    en: '10,000 pesos · star replacement · 1994',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -240,6 +244,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: 'El mismo tipo Isaacs en la colección, con otro serial y un error.',
     en: 'The same Isaacs type in the collection, with a different serial and an error.',
+  },
+  '/coleccion/colombia/10000-pesos-1994/': {
+    es: 'La ficha de la pieza en la colección virtual: Pick 437A, serial 00113227.',
+    en: 'The piece record in the virtual collection: Pick 437A, serial 00113227.',
   },
 };
 
