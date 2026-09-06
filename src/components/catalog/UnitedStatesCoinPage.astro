@@ -9,7 +9,6 @@ import {
   coinPath,
   NUMISMATICS_PATH,
   seriesCopy,
-  seriesSources,
   type UnitedStatesCoin,
 } from '../../data/estados-unidos-coinage';
 import SourceList from './SourceList.astro';
@@ -24,10 +23,7 @@ const { locale, coin } = Astro.props;
 const t = coinPageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = coinPath(coin, locale);
-const sources = [
-  ...coin.sources,
-  ...seriesSources.filter((source) => !coin.sources.some((own) => own.href === source.href)),
-];
+const sources = coin.sources;
 ---
 
 <Layout

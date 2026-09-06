@@ -11,7 +11,6 @@ import {
   rencySeriesCopy,
   rencySeriesPath,
   rencySeriesSources,
-  seriesSources,
   USA_PATH,
 } from '../../data/estados-unidos';
 import { catalogAssetSrc } from '../../lib/images';
@@ -25,10 +24,7 @@ const { locale } = Astro.props;
 const t = rencySeriesCopy[locale];
 const pathname = rencySeriesPath(locale);
 const notes = notesForChapter('us-pop-art');
-const sources = [
-  ...rencySeriesSources,
-  ...seriesSources.filter((source) => !rencySeriesSources.some((own) => own.href === source.href)),
-];
+const sources = rencySeriesSources;
 const hero = {
   src: '/images/catalog/estados-unidos/hero-rency.jpg',
   width: 3200,

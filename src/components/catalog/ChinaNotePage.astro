@@ -7,7 +7,6 @@ import {
   CHINA_PATH,
   notePageCopy,
   seriesCopy,
-  seriesSources,
   type ChinaNote,
 } from '../../data/china';
 import { POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
@@ -23,7 +22,7 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = localizePath(note.path, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const sources = note.sources;
 ---
 
 <Layout

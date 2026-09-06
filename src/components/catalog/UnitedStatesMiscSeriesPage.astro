@@ -14,7 +14,6 @@ import {
   miscSeriesSources,
   notePath,
   notesForChapter,
-  seriesSources,
   USA_PATH,
 } from '../../data/estados-unidos';
 import { catalogAssetSrc } from '../../lib/images';
@@ -28,10 +27,7 @@ const { locale } = Astro.props;
 const t = miscSeriesCopy[locale];
 const pathname = miscSeriesPath(locale);
 const notes = notesForChapter('us-miscelaneos');
-const sources = [
-  ...miscSeriesSources,
-  ...seriesSources.filter((source) => !miscSeriesSources.some((own) => own.href === source.href)),
-];
+const sources = miscSeriesSources;
 const hero =
   locale === 'en'
     ? {

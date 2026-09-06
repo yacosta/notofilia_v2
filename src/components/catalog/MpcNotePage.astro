@@ -8,7 +8,6 @@ import {
   notePath,
   seriesCopy,
   seriesPath,
-  seriesSources,
   USA_PATH,
   type MpcVietnamNote,
 } from '../../data/mpc-vietnam';
@@ -24,7 +23,7 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = notePath(note, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const sources = note.sources;
 ---
 
 <Layout

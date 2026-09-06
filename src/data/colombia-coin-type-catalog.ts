@@ -315,35 +315,7 @@ export const coinCatalogCopy = {
   },
 } as const;
 
-export const coinCatalogSources: CatalogSource[] = [
-  {
-    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
-    es: 'Banco de la República — Producción y circulación de billetes y monedas',
-    en: 'Banco de la República — Banknote and coin production and circulation',
-    note: {
-      es: 'Totales anuales por denominación desde 1987. Un total de año no es la tirada de un solo tipo.',
-      en: 'Annual totals by denomination from 1987. A year total is not the mintage of a single type.',
-    },
-  },
-  {
-    href: 'https://en.numista.com/18073',
-    es: 'Numista — ¼ real de Santa Marta, 1820 (N#18073)',
-    en: 'Numista — Santa Marta ¼ real, 1820 (N#18073)',
-    note: {
-      es: 'KM# B4, Restrepo 104, Hernández 11. La ficha de la colección enlaza esta pieza.',
-      en: 'KM# B4, Restrepo 104, Hernández 11. The collection record links this piece.',
-    },
-  },
-  {
-    href: 'https://en.numista.com/L100183',
-    es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
-    en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
-    note: {
-      es: 'Cód. 11 para el cuartillo de Santa Marta. No se publican precios.',
-      en: 'Cód. 11 for the Santa Marta cuartillo. Prices are not published here.',
-    },
-  },
-];
+export const coinCatalogSources: CatalogSource[] = [];
 
 export function colombiaCoinTypeDocuments(locale: Locale): TypeCatalogDocument[] {
   return colombiaCoinTypes.map((type) => {

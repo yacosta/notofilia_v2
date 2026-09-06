@@ -145,11 +145,6 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bank Note Museum — China (imperio y República)',
     en: 'Bank Note Museum — China (empire and Republic)',
   },
-  {
-    href: 'https://en.numista.com/312895',
-    es: 'Numista — 20 yuan (Juegos Olímpicos de Invierno, polímero)',
-    en: 'Numista — 20 Yuan (Beijing Winter Olympics, polymer)',
-  },
 ];
 
 export const seriesCopy = {
@@ -296,6 +291,15 @@ export const chinaNotes: ChinaNote[] = [
         href: 'https://www.banknoteworld.org/china-people-s-republic-100-yuan-2000-p-902.html',
         es: 'Banknote World — China 100 yuan 2000, P-902',
         en: 'Banknote World — China 100 Yuan 2000, P-902',
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Commemorative_banknotes_of_the_renminbi',
+        es: 'Wikipedia — Billetes conmemorativos del renminbi',
+        en: 'Wikipedia — Commemorative banknotes of the renminbi',
+        note: {
+          es: 'El 100 yuan de 2000 es polímero; el 10 yuan olímpico de 2008 es papel.',
+          en: 'The 2000 100-yuan is polymer; the 2008 Olympic 10-yuan is paper.',
+        },
       },
     ],
   },
