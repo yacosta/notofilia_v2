@@ -95,6 +95,9 @@ describe('Colombia MEN 15 centavos student-transport ticket', () => {
   it('emits one series card under Tiquetes y vales', () => {
     const chapter = colombiaChapters.find((entry) => entry.id === 'tiquetes');
     assert.ok(chapter);
+    assert.match(chapter.body.es, /Esta vitrina no es un billete del Banco de la República ni de la banca libre/);
+    assert.match(chapter.body.en, /This case is not a Banco de la República banknote, nor a free-banking banknote/);
+    assert.doesNotMatch(chapter.body.es, /Esta vitrina no es papel del Banco/);
     const cards = seriesCardsForChapter('tiquetes');
     assert.equal(cards.length, 1);
     assert.equal(cards[0].note.id, 'tiquete-estudiantil-15-centavos');
