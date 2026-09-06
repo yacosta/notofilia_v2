@@ -340,6 +340,7 @@ export const seriesCopy = {
       'Maculaturas y errores de impresión del Banco de la República y de emisiones anteriores, ordenados por año y denominación. Las fichas se publican a medida que se documentan las piezas.',
     errorsEmpty:
       'Aún no hay errores publicados en esta vitrina. Cuando se documente una pieza, aparecerá aquí ordenada por año y denominación.',
+    errorsTiqueteHeading: 'Tiquete de Subsidio / Boleto de Control',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -368,6 +369,7 @@ export const seriesCopy = {
       'Maculatures and printing errors from the Banco de la República and earlier issues, sorted by year and denomination. Note pages are published as pieces are documented.',
     errorsEmpty:
       'No error notes are published in this case yet. When a piece is documented, it will appear here sorted by year and denomination.',
+    errorsTiqueteHeading: 'Subsidy Ticket / Control Ticket',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },

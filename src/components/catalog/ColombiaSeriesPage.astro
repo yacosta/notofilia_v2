@@ -195,6 +195,18 @@ const jsonLd = collectionPageJsonLd({
             <p class="m-0 text-[17px]/7 text-muted">{t.errorsEmpty}</p>
           )
         }
+        <section
+          id="tiquete-de-subsidio"
+          class="mt-12 scroll-mt-28"
+          aria-labelledby="tiquete-de-subsidio-heading"
+        >
+          <h3
+            id="tiquete-de-subsidio-heading"
+            class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+          >
+            {t.errorsTiqueteHeading}
+          </h3>
+        </section>
       </section>
 
       <FaqBlock heading={copy[locale].faqHeading} items={faqItems} />
