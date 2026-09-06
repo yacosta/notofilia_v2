@@ -4,7 +4,7 @@ export const cookieConsentCopy = {
   es: {
     bannerLabel: 'Aviso de cookies',
     message:
-      'Usamos cookies de analítica (Google Analytics) para entender cómo se usa el sitio. Solo se activan si aceptas.',
+      'Usamos cookies de analítica (Google Analytics) para entender cómo se usa el sitio. Solo se activan si usted las acepta.',
     accept: 'Aceptar',
     reject: 'Rechazar',
     policyLink: 'Política de privacidad y cookies',

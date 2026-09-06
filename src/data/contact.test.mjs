@@ -22,9 +22,9 @@ describe('contact page copy and paths', () => {
   });
 
   it('keeps first-project field labels and status strings', () => {
-    assert.equal(contactCopy.es.country, 'País de donde me escribes');
+    assert.equal(contactCopy.es.country, 'País de donde me escribe');
     assert.equal(contactCopy.en.country, 'Country you are writing from');
-    assert.equal(contactCopy.es.success, '¡Gracias! Tu mensaje fue enviado correctamente.');
+    assert.equal(contactCopy.es.success, '¡Gracias! Recibimos su mensaje. Le responderemos con mucho gusto.');
     assert.equal(contactCopy.en.reportLead, 'I want to report an error or add information.');
     assert.equal(CONTACT_IMAGE, '/uploads/doblones-coloniales-oro.png');
   });

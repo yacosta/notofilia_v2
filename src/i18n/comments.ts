@@ -3,7 +3,7 @@
 export const commentsCopy = {
   es: {
     heading: 'Comentarios',
-    intro: 'Comparte tu opinión. Los comentarios se publican después de ser revisados.',
+    intro: 'Comparta su opinión. Los comentarios se publican después de ser revisados.',
     loading: 'Cargando comentarios…',
     name: 'Nombre',
     comment: 'Comentario',
