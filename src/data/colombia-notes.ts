@@ -1850,7 +1850,7 @@ export const colombiaNotes: ColombiaNote[] = [
     id: 'tiquete-estudiantil-15-centavos',
     chapterId: 'tiquetes',
     path: `${COLOMBIA_PATH}tiquete-estudiantil-15-centavos/`,
-    pick: 'MEN · 15¢ verde',
+    pick: 'MEN · 15¢',
     serial: '—',
     no_serial_reason:
       'Printed student-transport control ticket; no serial, date, or signatures on the paper.',
@@ -1867,8 +1867,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Unsigned',
     },
     printed: {
-      es: 'Sin fecha, pie de imprenta ni serial en el papel. Tinta verde sobre papel crema, con fondo de red de seguridad y marco ornamental. El reverso no lleva grabado propio: se ve el anverso por transparencia. El margen derecho, un poco irregular, sugiere corte de pliego o talonario. No se publica una tirada.',
-      en: 'No date, imprint, or serial on the paper. Green ink on cream stock, with a security-network ground and an ornamental frame. The back has no printing of its own: the face shows through. The slightly irregular right edge suggests a sheet or booklet cut. No printage is published.',
+      es: 'Sin fecha, pie de imprenta ni serial en el papel. El mismo diseño en dos tintas: verde y roja. No se publica una tirada.',
+      en: 'No date, imprint, or serial on the paper. The same design in two inks: green and red. No printage is published.',
     },
     images: {
       composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-composite.jpg',
@@ -1884,12 +1884,12 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Colombia · Tickets · Ministry of National Education',
     },
     lead: {
-      es: 'Tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde. Sin serial ni fecha impresa. El reverso no lleva grabado propio.',
-      en: 'A 15-centavos ticket of the Ministry of National Education, Student Transportation Service, in green ink. No serial and no printed date. The back has no printing of its own.',
+      es: 'Dos tiquetes de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte: la ficha verde y la variedad en tinta roja. Cada una tiene en esta página sus datos, anverso y reverso. Sin serial ni fecha impresa.',
+      en: 'Two 15-centavos tickets of the Ministry of National Education, Student Transportation Service: the green ticket and the red-ink variety. Each has its own facts, face, and back on this page. No serial and no printed date.',
     },
     description: {
-      es: 'Este papel no es un billete del Banco de la República ni de un banco privado. Es un tiquete —vale o boleto de control— del Ministerio de Educación Nacional, rotulado SERVICIO ESTUDIANTIL DE TRANSPORTE. El anverso, en tinta verde sobre papel crema, lleva un marco ornamental de escamas y un fondo de red. Arriba: MINISTERIO DE EDUCACION NACIONAL y SERVICIO ESTUDIANTIL DE TRANSPORTE. Al centro, un triángulo con un sol naciente sobre cumbres; a izquierda y derecha, el facial 15 ¢. Al pie, entre comillas: «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA». No hay serial, firmas ni fecha. El reverso está en blanco: se lee el anverso al trasluz. Los coleccionistas lo buscan como «billete»; la ficha lo trata como tiquete. No se le inventa un número Pick ni un BG# de González White. No debe confundirse con el scrip de 15 centavos de Baraboo (Wisconsin, 1933) ni con un pasaje en efectivo de la EDTU. Existe una variedad en tinta roja del mismo diseño; no es esta pieza.',
-      en: 'This paper is not a Banco de la República note, nor a private-bank note. It is a ticket — a voucher or control stub — of the Ministry of National Education, headed SERVICIO ESTUDIANTIL DE TRANSPORTE. The face, green ink on cream stock, has a scalloped ornamental frame and a network ground. At top: MINISTERIO DE EDUCACION NACIONAL and SERVICIO ESTUDIANTIL DE TRANSPORTE. At center, a triangle with a rising sun over peaks; at left and right, the face value 15 ¢. At the foot, in quotation marks: “ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA.” There is no serial, no signatures, and no date. The back is blank: the face shows through. Collectors hunt it as a “bill”; this record treats it as a ticket. No Pick number or González White BG# is invented for it. It is not the Baraboo, Wisconsin, 1933 15-cent scrip, nor an EDTU cash fare. A red-ink variety of the same design exists; it is not this piece.',
+      es: 'Este papel no es un billete del Banco de la República ni de un banco privado. Es un tiquete —vale o boleto de control— del Ministerio de Educación Nacional, rotulado SERVICIO ESTUDIANTIL DE TRANSPORTE. Esta ficha reúne dos ejemplares del mismo diseño, de 15 ¢: uno en tinta verde y otro en tinta roja. Ninguno lleva serial, firmas ni fecha. No se le inventa un número Pick ni un BG# de González White. No debe confundirse con el scrip de 15 centavos de Baraboo (Wisconsin, 1933) ni con un pasaje en efectivo de la EDTU.',
+      en: 'This paper is not a Banco de la República note, nor a private-bank note. It is a ticket — a voucher or control stub — of the Ministry of National Education, headed SERVICIO ESTUDIANTIL DE TRANSPORTE. This record gathers two examples of the same 15 ¢ design: one in green ink and one in red. Neither has a serial, signatures, or a date. No Pick number or González White BG# is invented for it. It is not the Baraboo, Wisconsin, 1933 15-cent scrip, nor an EDTU cash fare.',
     },
     history: {
       es: 'En Bogotá, a finales de los años cincuenta, los estudiantes de planteles reconocidos por el Ministerio de Educación pagaban una tarifa reducida con tiquetes que las empresas de buses entregaban a través del colegio, más un pase de identificación (Díaz Jaramillo, sobre La República del 6 de enero de 1959: tarifa estudiantil de 12,5 centavos). Hacia 1960 el pasaje ordinario municipal o de la EDTU se cita a 15 centavos en efectivo, pagado al conductor (The Commercial Motor, 5 de agosto de 1960). Este tiquete lleva el facial de 15 centavos y el membrete del ministerio, no el de una empresa de buses ni el del tranvía. No hay fecha en el papel: no se le asigna 1969 ni se cita un decreto que no figure aquí ni en la gaceta. El auxilio de transporte de enero de 1969 —cinco pesos en dinero, también para estudiantes de secundaria y universidad— es otra cosa: un subsidio en efectivo, no este vale.',
@@ -1904,16 +1904,16 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Back with no printing of its own: the green face shows through. No serial and no added legends.',
     },
     scarcity: {
-      es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este tiquete, ni una tirada publicada. Sobrevive como papel civil de tarifa, no como emisión de banco. El mismo diseño existe en tinta roja; esa variedad no tiene ficha en Notofilia hasta que se fotografíe el ejemplar. Esta ficha no inventa una rareza de tipo ni un censo.',
-      en: 'There is no Pick, Hernández Cód., or González White BG# for this ticket, and no published printage. It survives as civil fare paper, not as a bank issue. The same design exists in red ink; that variety has no Notofilia record until the example is photographed. This record does not invent a type rarity or a census.',
+      es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este tiquete, ni una tirada publicada. Sobrevive como papel civil de tarifa, no como emisión de banco. Esta ficha publica las dos tintas del mismo diseño, tinta verde y tinta roja. No inventa una rareza de tipo ni un censo.',
+      en: 'There is no Pick, Hernández Cód., or González White BG# for this ticket, and no published printage. It survives as civil fare paper, not as a bank issue. This record publishes both inks of the same design, green ink and red ink. It does not invent a type rarity or a census.',
     },
     population: {
-      es: 'Pieza sin encapsular, en funda. No hay censo de población de un servicio de certificación para este tiquete.',
-      en: 'Unslabbed, in a sleeve. There is no grading-service population census for this ticket.',
+      es: 'Dos piezas sin encapsular, en funda Mylar. No hay censo de población de un servicio de certificación para este tiquete.',
+      en: 'Two unslabbed pieces, in Mylar sleeves. There is no grading-service population census for this ticket.',
     },
     grade: {
-      es: 'Sin encapsular, en funda',
-      en: 'Unslabbed, in a sleeve',
+      es: 'Sin encapsular, en funda Mylar',
+      en: 'Unslabbed, in a Mylar sleeve',
     },
     sources: [
       {
@@ -1942,6 +1942,110 @@ export const colombiaNotes: ColombiaNote[] = [
           es: 'Recuerdo de pagar 15 centavos al conductor del trolebús. No es una ficha de este tiquete.',
           en: 'A memory of paying 15 centavos to the trolleybus conductor. It is not a record of this ticket.',
         },
+      },
+    ],
+    pieces: [
+      {
+        id: 'tiquete-estudiantil-15-centavos-verde',
+        pick: 'MEN · 15¢ verde',
+        serial: '—',
+        signatures: {
+          es: 'Sin firmas',
+          en: 'Unsigned',
+        },
+        printed: {
+          es: 'Sin fecha, pie de imprenta ni serial en el papel. Tinta verde sobre papel crema, con fondo de red de seguridad y marco ornamental. El reverso no lleva grabado propio: se ve el anverso por transparencia. El margen derecho, un poco irregular, sugiere corte de pliego o talonario. No se publica una tirada.',
+          en: 'No date, imprint, or serial on the paper. Green ink on cream stock, with a security-network ground and an ornamental frame. The back has no printing of its own: the face shows through. The slightly irregular right edge suggests a sheet or booklet cut. No printage is published.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-composite.jpg',
+          front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-front.jpg',
+          back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-back.jpg',
+        },
+        title: {
+          es: '15 centavos · tiquete estudiantil · verde',
+          en: '15 centavos · student-transport ticket · green',
+        },
+        lead: {
+          es: 'Tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde. Sin serial ni fecha impresa. El reverso no lleva grabado propio.',
+          en: 'A 15-centavos ticket of the Ministry of National Education, Student Transportation Service, in green ink. No serial and no printed date. The back has no printing of its own.',
+        },
+        description: {
+          es: 'Este papel no es un billete del Banco de la República ni de un banco privado. Es un tiquete —vale o boleto de control— del Ministerio de Educación Nacional, rotulado SERVICIO ESTUDIANTIL DE TRANSPORTE. El anverso, en tinta verde sobre papel crema, lleva un marco ornamental de escamas y un fondo de red. Arriba: MINISTERIO DE EDUCACION NACIONAL y SERVICIO ESTUDIANTIL DE TRANSPORTE. Al centro, un triángulo con un sol naciente sobre cumbres; a izquierda y derecha, el facial 15 ¢. Al pie, entre comillas: «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA». No hay serial, firmas ni fecha. El reverso está en blanco: se lee el anverso al trasluz. Los coleccionistas lo buscan como «billete»; la ficha lo trata como tiquete. No se le inventa un número Pick ni un BG# de González White. No debe confundirse con el scrip de 15 centavos de Baraboo (Wisconsin, 1933) ni con un pasaje en efectivo de la EDTU. La variedad en tinta roja del mismo diseño está más abajo en esta ficha.',
+          en: 'This paper is not a Banco de la República note, nor a private-bank note. It is a ticket — a voucher or control stub — of the Ministry of National Education, headed SERVICIO ESTUDIANTIL DE TRANSPORTE. The face, green ink on cream stock, has a scalloped ornamental frame and a network ground. At top: MINISTERIO DE EDUCACION NACIONAL and SERVICIO ESTUDIANTIL DE TRANSPORTE. At center, a triangle with a rising sun over peaks; at left and right, the face value 15 ¢. At the foot, in quotation marks: “ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA.” There is no serial, no signatures, and no date. The back is blank: the face shows through. Collectors hunt it as a “bill”; this record treats it as a ticket. No Pick number or González White BG# is invented for it. It is not the Baraboo, Wisconsin, 1933 15-cent scrip, nor an EDTU cash fare. The red-ink variety of the same design is further down this page.',
+        },
+        frontCaption: {
+          es: 'Anverso del tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde: triángulo con sol y montañas, facial 15 ¢ y el lema Estudiando más transformamos a Colombia.',
+          en: 'Face of the Ministry of National Education 15-centavos student-transport ticket, in green ink: a triangle with sun and mountains, the face value 15 ¢, and the motto Estudiando más transformamos a Colombia.',
+        },
+        backCaption: {
+          es: 'Reverso sin impresión propia: se ve el anverso verde por transparencia. Sin serial ni leyendas añadidas.',
+          en: 'Back with no printing of its own: the green face shows through. No serial and no added legends.',
+        },
+        scarcity: {
+          es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este tiquete, ni una tirada publicada. Sobrevive como papel civil de tarifa, no como emisión de banco. El mismo diseño en tinta roja está más abajo en esta ficha. Esta ficha no inventa una rareza de tipo ni un censo.',
+          en: 'There is no Pick, Hernández Cód., or González White BG# for this ticket, and no published printage. It survives as civil fare paper, not as a bank issue. The same design in red ink is further down this page. This record does not invent a type rarity or a census.',
+        },
+        population: {
+          es: 'Pieza sin encapsular, en funda Mylar. No hay censo de población de un servicio de certificación para este tiquete.',
+          en: 'Unslabbed, in a Mylar sleeve. There is no grading-service population census for this ticket.',
+        },
+        grade: {
+          es: 'Sin encapsular, en funda Mylar',
+          en: 'Unslabbed, in a Mylar sleeve',
+        },
+        sources: [],
+      },
+      {
+        id: 'tiquete-estudiantil-15-centavos-rojo',
+        pick: 'MEN · 15¢ rojo',
+        serial: '—',
+        signatures: {
+          es: 'Sin firmas',
+          en: 'Unsigned',
+        },
+        printed: {
+          es: 'Sin fecha, pie de imprenta ni serial en el papel. Tinta roja sobre papel crema, con fondo de red de seguridad y marco ornamental. Sobre el triángulo del anverso hay un sello azul corrido. El reverso no lleva grabado de imprenta: se ve el anverso por transparencia, con sellos de plantel en azul. Perforaciones de grapa en el margen. No se publica una tirada.',
+          en: 'No date, imprint, or serial on the paper. Red ink on cream stock, with a security-network ground and an ornamental frame. A smeared blue stamp sits over the triangle on the face. The back has no printer’s engraving: the face shows through, with school stamps in blue. Staple holes in the margin. No printage is published.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-composite.jpg',
+          front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-front.jpg',
+          back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-back.jpg',
+        },
+        title: {
+          es: '15 centavos · tiquete estudiantil · rojo',
+          en: '15 centavos · student-transport ticket · red',
+        },
+        lead: {
+          es: 'Tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta roja. Sin serial ni fecha impresa. El reverso lleva sellos del Externado Nacional Camilo Torres.',
+          en: 'A 15-centavos ticket of the Ministry of National Education, Student Transportation Service, in red ink. No serial and no printed date. The back carries stamps of the Externado Nacional Camilo Torres.',
+        },
+        description: {
+          es: 'Este papel no es un billete del Banco de la República ni de un banco privado. Es un tiquete —vale o boleto de control— del Ministerio de Educación Nacional, rotulado SERVICIO ESTUDIANTIL DE TRANSPORTE: el mismo diseño que el ejemplar verde de esta ficha, en tinta roja. El anverso lleva el marco de escamas, el fondo de red, el triángulo con sol y cumbres, el facial 15 ¢ y el lema «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA». Sobre el triángulo hay un sello azul corrido. No hay serial, firmas ni fecha. El reverso no lleva grabado de imprenta: se ve el anverso por transparencia. Lleva dos sellos de plantel en tinta azul: a la izquierda, en vertical, RECTOR; al centro, un escudo que lee EXTERNADO NACIONAL / CAMILO TORRES. Ese sello nombra un colegio; no es el retrato de Camilo Torres Tenorio del 2 pesos oro Pick 390. Hay perforaciones de grapa en el margen. No se le inventa un número Pick ni un BG# de González White. No debe confundirse con el scrip de 15 centavos de Baraboo (Wisconsin, 1933) ni con un pasaje en efectivo de la EDTU. Esta pieza de la colección está en funda Mylar, sin encapsular.',
+          en: 'This paper is not a Banco de la República note, nor a private-bank note. It is a ticket — a voucher or control stub — of the Ministry of National Education, headed SERVICIO ESTUDIANTIL DE TRANSPORTE: the same design as the green example on this page, in red ink. The face has the scalloped frame, the network ground, the triangle with sun and peaks, the face value 15 ¢, and the motto “ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA.” A smeared blue stamp sits over the triangle. There is no serial, no signatures, and no date. The back has no printer’s engraving: the face shows through. It carries two school stamps in blue: at left, vertical, RECTOR; at center, a shield reading EXTERNADO NACIONAL / CAMILO TORRES. That stamp names a school; it is not Camilo Torres Tenorio’s portrait on the Pick 390 two-peso oro. Staple holes sit in the margin. No Pick number or González White BG# is invented for it. It is not the Baraboo, Wisconsin, 1933 15-cent scrip, nor an EDTU cash fare. This collection piece is in a Mylar sleeve, unslabbed.',
+        },
+        frontCaption: {
+          es: 'Anverso del tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta roja: triángulo con sol y montañas, facial 15 ¢, el lema Estudiando más transformamos a Colombia y un sello azul corrido.',
+          en: 'Face of the Ministry of National Education 15-centavos student-transport ticket, in red ink: a triangle with sun and mountains, the face value 15 ¢, the motto Estudiando más transformamos a Colombia, and a smeared blue stamp.',
+        },
+        backCaption: {
+          es: 'Reverso sin grabado de imprenta: se ve el anverso rojo por transparencia, con sello vertical RECTOR y escudo EXTERNADO NACIONAL / CAMILO TORRES. No es el Camilo Torres del 2 pesos oro del Banco de la República.',
+          en: 'Back with no printer’s engraving: the red face shows through, with a vertical RECTOR stamp and a shield EXTERNADO NACIONAL / CAMILO TORRES. It is not Camilo Torres on the Banco de la República two-peso oro.',
+        },
+        scarcity: {
+          es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este tiquete, ni una tirada publicada. Sobrevive como papel civil de tarifa, no como emisión de banco. Es la variedad en tinta roja del mismo diseño que el ejemplar verde de esta ficha; el sello de plantel identifica el uso, no un tipo de banco. Esta ficha no inventa una rareza de tipo ni un censo.',
+          en: 'There is no Pick, Hernández Cód., or González White BG# for this ticket, and no published printage. It survives as civil fare paper, not as a bank issue. It is the red-ink variety of the same design as the green example on this page; the school stamp identifies use, not a bank type. This record does not invent a type rarity or a census.',
+        },
+        population: {
+          es: 'Pieza sin encapsular, en funda Mylar. No hay censo de población de un servicio de certificación para este tiquete.',
+          en: 'Unslabbed, in a Mylar sleeve. There is no grading-service population census for this ticket.',
+        },
+        grade: {
+          es: 'Sin encapsular, en funda Mylar',
+          en: 'Unslabbed, in a Mylar sleeve',
+        },
+        sources: [],
       },
     ],
   },

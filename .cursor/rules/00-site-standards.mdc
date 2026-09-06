@@ -30,7 +30,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 - Colombia BanRep types 1923–2019: González White 7ª ed. 2019 in `docs/sources/gonzalez-white/` (`41-gonzalez-white.mdc`). Cite BG#; do not publish plates or price columns. Coin varieties and C&C *NumisNotas*: `docs/sources/gonzalez-white/essays/` and `docs/sources/c-and-c/`.
 - Colombia paper before 1923 (independence, banca libre, Banco Nacional) and Hernández Cód. / H#: `docs/sources/hernandez/` (`43-hernandez.mdc`). Do not publish price columns or plates. Keep Numista H# on BanRep pieces unless Numista is updated.
 - Colombia auction photos / banca libre / specimens: Heritage sold-archive extract in `docs/sources/heritage/` (`42-heritage-colombia.mdc`). Lots are comparables, not holdings; do not import them or republish realized prices.
-- Colombia student/tram transport ticket (tiquete, vale, cupón): `docs/sources/colombia-transporte-estudiantil/` (`44-transporte-estudiantil.mdc`). Not BanRep paper. Do not cite Decreto 188 de 1969 until the gazette or the printed piece confirms it. Green MEN 15¢ holding: `tiquete-estudiantil-15-centavos`.
+- Colombia student/tram transport ticket (tiquete, vale, cupón): `docs/sources/colombia-transporte-estudiantil/` (`44-transporte-estudiantil.mdc`). Not BanRep paper. Do not cite Decreto 188 de 1969 until the gazette or the printed piece confirms it. MEN 15¢ holdings on one page: green and red `tiquete-estudiantil-15-centavos`.
 
 ## Locales and copy
 

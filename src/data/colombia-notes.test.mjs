@@ -83,30 +83,53 @@ describe('Colombia MEN 15 centavos student-transport ticket', () => {
     assert.equal(note.chapterId, 'tiquetes');
     assert.equal(note.serial, '—');
     assert.match(note.no_serial_reason ?? '', /no serial/i);
-    assert.equal(note.pick, 'MEN · 15¢ verde');
+    assert.equal(note.pick, 'MEN · 15¢');
+    const pieces = notePieces(note);
+    assert.equal(pieces.length, 2);
+    assert.equal(pieces[0].id, 'tiquete-estudiantil-15-centavos-verde');
+    assert.equal(pieces[1].id, 'tiquete-estudiantil-15-centavos-rojo');
+    assert.equal(pieces[0].pick, 'MEN · 15¢ verde');
+    assert.equal(pieces[1].pick, 'MEN · 15¢ rojo');
+    assert.equal(pieces[0].serial, '—');
+    assert.equal(pieces[1].serial, '—');
     assert.doesNotMatch(note.description.es, /Decreto 188 de 1969/);
     assert.doesNotMatch(note.description.en, /Decree 188 of 1969/);
+    assert.doesNotMatch(pieces[1].description.es, /Decreto 188 de 1969/);
+    assert.match(pieces[1].description.es, /EXTERNADO NACIONAL/);
+    assert.match(pieces[1].description.es, /Pick 390/);
     assert.match(note.scarcity.es, /tinta roja/);
-    assert.match(note.scarcity.en, /red ink/);
+    assert.match(note.scarcity.en, /red/);
     assert.equal(additions.some((row) => row.id === 'co-men-tiquete-estudiantil-15-centavos-verde'), true);
+    assert.equal(additions.some((row) => row.id === 'co-men-tiquete-estudiantil-15-centavos-rojo'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-men-tiquete-estudiantil-15c-verde'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-men-tiquete-estudiantil-15c-rojo'), true);
   });
 
-  it('emits one series card under Tiquetes y vales', () => {
+  it('lists green and red on one page and as two series cards', () => {
     const chapter = colombiaChapters.find((entry) => entry.id === 'tiquetes');
     assert.ok(chapter);
     assert.match(chapter.body.es, /Esta vitrina no es un billete del Banco de la República ni de la banca libre/);
     assert.match(chapter.body.en, /This case is not a Banco de la República banknote, nor a free-banking banknote/);
     assert.doesNotMatch(chapter.body.es, /Esta vitrina no es papel del Banco/);
+    assert.match(chapter.body.es, /tinta verde y la variedad en tinta roja/);
     const cards = seriesCardsForChapter('tiquetes');
-    assert.equal(cards.length, 1);
+    assert.equal(cards.length, 2);
     assert.equal(cards[0].note.id, 'tiquete-estudiantil-15-centavos');
-    assert.equal(seriesCardHref(cards[0].note, cards[0].piece, 'es'), '/coleccion/colombia/tiquete-estudiantil-15-centavos/');
+    assert.equal(cards[0].piece.id, 'tiquete-estudiantil-15-centavos-verde');
+    assert.equal(cards[1].piece.id, 'tiquete-estudiantil-15-centavos-rojo');
+    assert.equal(
+      seriesCardHref(cards[0].note, cards[0].piece, 'es'),
+      '/coleccion/colombia/tiquete-estudiantil-15-centavos/#tiquete-estudiantil-15-centavos-verde',
+    );
+    assert.equal(
+      seriesCardHref(cards[1].note, cards[1].piece, 'es'),
+      '/coleccion/colombia/tiquete-estudiantil-15-centavos/#tiquete-estudiantil-15-centavos-rojo',
+    );
     assert.equal(
       seriesCardHref(cards[0].note, cards[0].piece, 'en'),
-      '/en/collection/colombia/tiquete-estudiantil-15-centavos/',
+      '/en/collection/colombia/tiquete-estudiantil-15-centavos/#tiquete-estudiantil-15-centavos-verde',
     );
-    assert.match(seriesCopy.es.intro.join(' '), /tiquete estudiantil de 15 centavos/);
-    assert.match(seriesCopy.en.intro.join(' '), /15-centavos student-transport ticket/);
+    assert.match(seriesCopy.es.intro.join(' '), /tinta verde y en tinta roja/);
+    assert.match(seriesCopy.en.intro.join(' '), /in green ink and in red ink/);
   });
 });
