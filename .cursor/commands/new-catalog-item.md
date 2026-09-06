@@ -15,7 +15,7 @@ Follow `.cursor/rules/30-catalogue-duplicates.mdc` before creating or editing an
 7. Name masters under `catalog-src/catalog/` with the internal ID or normalized serial, not a generic denomination filename.
 8. Register both locales in the sitemap. Place copy in the feature’s `src/data` module (no chrome literals).
 9. End with a one-line dedup statement that includes serial class, e.g. `Dedup: … 10000001 (fancy: binary radar) — 0 matches.`
-10. Colombian notes or coins: if the copy mentions printage/tirada/mintage, consult `docs/sources/banrep/` (`40-banrep-production.mdc`) before saying no official figure exists. Banco de la República types 1923–2019: also look up **BG#** in `docs/sources/gonzalez-white/` (`41-gonzalez-white.mdc`). Coin varieties and C&C notes: `docs/sources/gonzalez-white/essays/` and `docs/sources/c-and-c/`.
+10. Colombian notes or coins: if the copy mentions printage/tirada/mintage, consult `docs/sources/banrep/` (`40-banrep-production.mdc`) before saying no official figure exists. Banco de la República types 1923–2019: also look up **BG#** in `docs/sources/gonzalez-white/` (`41-gonzalez-white.mdc`). Coin varieties and C&C notes: `docs/sources/gonzalez-white/essays/` and `docs/sources/c-and-c/`. The late-1960s **5 centavos** student-transport piece is a tiquete de subsidio / boleto de control (Decreto 188 de 1969), not BanRep paper — see `docs/sources/colombia-transporte-estudiantil/` (`44-transporte-estudiantil.mdc`).
 11. Run audit prompt B (`.cursor/commands/audit-pr.md`) on the result.
 
 Replace serial, issuer, denomination, and routes from the user message. If the serial is missing, ask before scaffolding.

@@ -1,0 +1,16 @@
+---
+description: Forthcoming Colombia 5-centavos student-transport subsidy ticket (c. 1969) — not a banknote
+alwaysApply: true
+---
+
+# Colombia — tiquete de transporte estudiantil (c. 1969)
+
+Read `docs/sources/colombia-transporte-estudiantil/README.md` before adding or describing this piece.
+
+A forthcoming Notofilia item is an old **printed student-transport ticket / voucher** from Colombia, late 1960s — popularly called a “billete,” **technically a tiquete de subsidio or boleto de control**.
+
+- **Decreto 188 de 1969** (government of President Carlos Lleras Restrepo; Minister of Education Octavio Arizmendi Posada) regulated the student-transport subsidy.
+- Face value: **5 centavos**. Used as proof of payment so urban collective-transport vehicles admitted students at the reduced fare.
+- Today: vintage / historical collectible of Colombian civil and school history.
+
+**Do not catalogue it as a Banco de la República banknote.** Do not invent Pick or González White BG#. Closest site pattern is miscellaneous scrip, not a BanRep type. Confirm serial / `no_serial_reason` and run `30-catalogue-duplicates.mdc` before creating `src/data/` or routes. No holding exists yet for this brief.
