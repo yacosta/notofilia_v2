@@ -26,6 +26,10 @@ export const seriesSources: CatalogSource[] = [
     href: 'https://en.wikipedia.org/wiki/Banknotes_of_the_Philippine_peso#American_Period',
     es: 'Wikipedia — Billetes del peso filipino (periodo estadounidense)',
     en: 'Wikipedia — Banknotes of the Philippine peso (American Period)',
+    note: {
+      es: 'Certificados de plata y del Tesoro, billetes de circulación del Philippine National Bank y la Serie Victory.',
+      en: 'Silver and Treasury Certificates, Philippine National Bank circulating notes, and the Victory series.',
+    },
   },
   {
     href: 'https://en.wikipedia.org/wiki/Banknotes_of_the_Philippine_peso#%22VICTORY-CBP%22_banknotes',
@@ -54,7 +58,7 @@ export const seriesSources: CatalogSource[] = [
 ];
 
 export type VictoryNote = {
-  id: VictoryNoteId;
+  id: string;
   path: string;
   pick: string;
   serial: string;
@@ -370,20 +374,25 @@ export const victoryNotes: VictoryNote[] = [
 
 export const seriesCopy = {
   es: {
-    metaTitle: 'Filipinas · Commonwealth · Serie Victory n.º 66 | Notofilia',
+    metaTitle: 'Filipinas · Periodo estadounidense | Notofilia',
     metaDescription:
-      'Catálogo de Certificados del Tesoro de la Serie Victory n.º 66: 1, 2, 5 y 20 pesos de la Commonwealth de Filipinas, con historia, imágenes y fuentes.',
-    kicker: 'Filipinas · Commonwealth',
-    title: 'Serie Victory n.º 66',
+      'Vitrina de papel filipino del periodo estadounidense: 5 pesos del Banco Nacional de 1916 y Certificados del Tesoro de la Serie Victory n.º 66.',
+    kicker: 'Filipinas · Gobierno Insular y Commonwealth',
+    title: 'Periodo estadounidense',
     heroAlt:
       'Mapa vintage en relieve 3D del archipiélago filipino sobre pergamino, con islas verdes, edificios y el título Filipinas escrito en caligrafía decorativa',
     intro: [
+      'El Philippine National Bank, creado por la Ley n.º 2612 de 1916, emitió billetes de circulación grabados en Washington. Esta vitrina abre con un 5 pesos de esa serie —McKinley, sello azul, reverso naranja— y sigue con los Certificados del Tesoro de la liberación.',
       'Los Certificados del Tesoro de la Serie Victory n.º 66 fueron el último papel moneda impreso bajo la administración de Estados Unidos en Filipinas. Los grabó el Bureau of Engraving and Printing en pliegos de diez sujetos, con reemplazos marcados por una estrella al estilo estadounidense.',
       'Según el BEP, el «n.º 66» se eligió porque era la edad atribuida al presidente Manuel L. Quezon al morir. Quezon nació el 19 de agosto de 1878 y murió el 1 de agosto de 1944, a los 65 años —meses antes de la liberación—, de modo que el número conmemora una edad que no llegó a cumplir. El 20 de octubre de 1944, al desembarcar las fuerzas de Douglas MacArthur en Leyte, llegaron cajas de estos certificados, puestos en circulación ese mismo día. El total emitido de la serie fue de ₱1.019.544.000.',
       'El 18 de noviembre de 1944, la Orden Ejecutiva n.º 25, firmada por Sergio Osmeña, reconoció los Victory Pesos como moneda de curso legal junto con los certificados y monedas de preguerra, a razón de dos Victory Pesos por un dólar estadounidense.',
       'En 1949, al crearse el Central Bank of the Philippines, parte de la serie recibió en el reverso la sobrecarga «CENTRAL BANK OF THE PHILIPPINES» (Pick 117 y siguientes). Los 500 pesos se retiraron antes, por las leyes de la República 1191 y 1516. El resto, por la Circular n.º 156 de 1963 del banco central, fue de curso legal hasta el 30 de julio de 1964 y pudo canjearse hasta el 30 de julio de 1967. El Bangko Sentral ng Pilipinas sitúa la llegada de la serie en 1944 y confirma que las sobrecargas CBP siguieron siendo de curso legal hasta esa fecha de 1964.',
     ],
     holdingsTitle: 'Piezas de la colección',
+    pnbHoldingsTitle: 'Banco Nacional de Filipinas · Serie de 1916',
+    pnbHoldingsIntro:
+      'Un 5 pesos de circulación del Philippine National Bank, serie A2179586A, firmas Mercado–Concepción. El serial cae en un tramo que la Ley n.º 211 enumeró como reemitido por las autoridades militares japonesas.',
+    victoryHoldingsTitle: 'Serie Victory n.º 66',
     holdingsIntro:
       'Cuatro certificados únicos, de izquierda a derecha por denominación: 1, 2, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
     viewNote: 'Ver la ficha',
@@ -393,20 +402,25 @@ export const seriesCopy = {
     gradeLabel: 'Grado',
   },
   en: {
-    metaTitle: 'Philippines · Commonwealth · Victory Series No. 66 | Notofilia',
+    metaTitle: 'Philippines · American period | Notofilia',
     metaDescription:
-      'Catalog of Victory Series No. 66 Treasury Certificates: 1, 2, 5, and 20 pesos of the Philippine Commonwealth, with history, images, and sources.',
-    kicker: 'Philippines · Commonwealth',
-    title: 'Victory Series No. 66',
+      'Philippine paper of the American period: a 1916 National Bank 5-peso and Victory Series No. 66 Treasury Certificates.',
+    kicker: 'Philippines · Insular Government and Commonwealth',
+    title: 'American period',
     heroAlt:
       'Vintage 3D relief map of the Philippine archipelago on parchment, with green islands, buildings, and the title Philippines in decorative lettering',
     intro: [
+      'The Philippine National Bank, created by Act No. 2612 of 1916, issued circulating notes engraved in Washington. This case opens with a 5-peso of that series — McKinley, blue seal, orange reverse — and continues with the liberation Treasury Certificates.',
       'Victory Series No. 66 Treasury Certificates were the last paper money printed under United States administration in the Philippines. The U.S. Bureau of Engraving and Printing produced them in 10-subject sheets, with star replacements in the American manner.',
       'According to the BEP, “No. 66” was chosen as President Manuel L. Quezon’s age at death. Quezon was born on 19 August 1878 and died on 1 August 1944 at 65 — months before liberation — so the series number commemorates an age he did not reach. When Douglas MacArthur’s forces landed on Leyte on 20 October 1944, they brought crates of these certificates and issued them that same day. The series totaled ₱1,019,544,000.',
       'On 18 November 1944, Executive Order No. 25, signed by Sergio Osmeña, recognized Victory Pesos as legal tender alongside pre-war certificates and coin, at two Victory Pesos to one United States dollar.',
       'In 1949, after the Central Bank of the Philippines was created, part of the series received a “CENTRAL BANK OF THE PHILIPPINES” overprint on the back (Pick 117 and later). The 500-peso notes were withdrawn earlier under Republic Acts 1191 and 1516. The remaining denominations, by Central Bank Circular No. 156 of 1963, were legal tender until 30 July 1964 and exchangeable until 30 July 1967. The Bangko Sentral ng Pilipinas places the series’ arrival in 1944 and confirms that the CBP overprints remained legal tender through that 1964 date.',
     ],
     holdingsTitle: 'Notes in the collection',
+    pnbHoldingsTitle: 'Philippine National Bank · Series of 1916',
+    pnbHoldingsIntro:
+      'One Philippine National Bank circulating 5-peso, serial A2179586A, Mercado–Concepción signatures. The serial falls in a band that Republic Act No. 211 listed as reissued by the Japanese military authorities.',
+    victoryHoldingsTitle: 'Victory Series No. 66',
     holdingsIntro:
       'Four unique certificates, left to right by denomination: 1, 2, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
     viewNote: 'Open the note page',

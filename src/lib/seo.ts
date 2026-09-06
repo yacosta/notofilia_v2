@@ -148,7 +148,7 @@ export const llmsCountryCatalogues = [
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
   { href: USA_COINAGE_PATH, es: 'Estados Unidos (numismática)', en: 'United States (numismatics)' },
-  { href: SERIES_PATH, es: 'Filipinas · Serie Victory n.º 66', en: 'Philippines · Victory Series No. 66' },
+  { href: SERIES_PATH, es: 'Filipinas · Periodo estadounidense', en: 'Philippines · American period' },
   { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
   { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },

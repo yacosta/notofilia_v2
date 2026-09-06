@@ -205,6 +205,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /unitedStatesNotes/);
     assert.match(collectionCatalogSource, /mpcVietnamNotes/);
     assert.match(collectionCatalogSource, /victoryNotes/);
+    assert.match(collectionCatalogSource, /pnbNotes/);
     assert.match(collectionCatalogSource, /chinaNotes/);
     assert.match(collectionCatalogSource, /englandNotes/);
     assert.match(collectionCatalogSource, /canadaNotes/);
@@ -277,8 +278,8 @@ describe('Collection-wide banknote catalog', () => {
         (byCountry.CA || 0) +
         (byCountry.MY || 0) +
         (byCountry.PR || 0) +
-        4,
-      'includes Philippines victory notes, Puerto Rico, and polymer holdings',
+        5,
+      'includes Philippines PNB and victory notes, Puerto Rico, and polymer holdings',
     );
   });
 });

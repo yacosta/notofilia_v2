@@ -219,6 +219,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
   philippines: [
     {
       question: {
+        es: '¿Qué es el 5 pesos del Banco Nacional de Filipinas de 1916?',
+        en: 'What is the 1916 Philippine National Bank 5-peso?',
+      },
+      answer: {
+        es: 'Es un billete de circulación del Philippine National Bank, grabado por el BEP bajo la Ley n.º 2612. Esta pieza, P#46b, lleva el serial A2179586A y las firmas de Mercado y Concepción. Ese serial cae en un tramo que la Ley n.º 211 enumeró como reemitido por las autoridades militares japonesas.',
+        en: 'It is a Philippine National Bank circulating note, engraved by the BEP under Act No. 2612. This piece, P#46b, is serial A2179586A with Mercado and Concepción signatures. That serial falls in a band Republic Act No. 211 listed as reissued by the Japanese military authorities.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es la Serie Victory n.º 66?',
         en: 'What is Victory Series No. 66?',
       },
@@ -229,22 +239,22 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
-        es: '¿Qué denominaciones de Victory documenta esta colección?',
-        en: 'Which Victory denominations does this collection document?',
+        es: '¿Qué papel filipino documenta esta colección?',
+        en: 'Which Philippine paper does this collection document?',
       },
       answer: {
-        es: 'Cuatro certificados únicos, alineados por denominación: 1, 2, 5 y 20 pesos de la Commonwealth. Un segundo archivo del 5 pesos con la misma serie no se cataloga dos veces.',
-        en: 'Four unique certificates, lined up by denomination: 1, 2, 5, and 20 pesos of the Commonwealth. A second file of the 5-peso with the same serial is not catalogued twice.',
+        es: 'Un 5 pesos del Banco Nacional de 1916 (serie A2179586A) y cuatro certificados Victory únicos, alineados por denominación: 1, 2, 5 y 20 pesos de la Commonwealth. Un segundo archivo del 5 pesos Victory con la misma serie no se cataloga dos veces.',
+        en: 'One 1916 National Bank 5-peso (serial A2179586A) and four unique Victory certificates, lined up by denomination: 1, 2, 5, and 20 pesos of the Commonwealth. A second file of the Victory 5-peso with the same serial is not catalogued twice.',
       },
     },
     {
       question: {
-        es: '¿Los Victory de Filipinas de Notofilia están a la venta?',
-        en: 'Are Notofilia’s Philippine Victory notes for sale?',
+        es: '¿Los billetes de Filipinas de Notofilia están a la venta?',
+        en: 'Are Notofilia’s Philippine notes for sale?',
       },
       answer: {
-        es: 'No. Son piezas de una colección privada, con referencia Pick y grado cuando se conoce, y ninguna está a la venta. Parte de la serie recibió en 1949 la sobrecarga del Central Bank of the Philippines (Pick 117 y siguientes).',
-        en: 'No. They are pieces from a private collection, with Pick references and a grade when known, and none is for sale. Part of the series received the 1949 Central Bank of the Philippines overprint (Pick 117 and later).',
+        es: 'No. Son piezas de una colección privada, con referencia Pick y grado cuando se conoce, y ninguna está a la venta. Parte de la Serie Victory recibió en 1949 la sobrecarga del Central Bank of the Philippines (Pick 117 y siguientes).',
+        en: 'No. They are pieces from a private collection, with Pick references and a grade when known, and none is for sale. Part of the Victory series received the 1949 Central Bank of the Philippines overprint (Pick 117 and later).',
       },
     },
   ],

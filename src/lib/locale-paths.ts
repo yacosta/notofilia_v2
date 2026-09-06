@@ -206,6 +206,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     en: '/collection/united-states/',
     aliases: ['/coleccion/united-states/'],
   },
+  {
+    es: '/coleccion/filipinas/5-pesos-banco-nacional-1916/',
+    en: '/collection/philippines/5-pesos-national-bank-1916/',
+  },
   { es: '/coleccion/filipinas/', en: '/collection/philippines/' },
   {
     es: '/coleccion/puerto-rico/junta-central-1-peso-1869/',
@@ -410,6 +414,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/filipinas/1-peso/',
     '/en/coleccion/filipinas/2-pesos/',
     '/en/coleccion/filipinas/5-pesos/',
+    '/en/coleccion/filipinas/5-pesos-banco-nacional-1916/',
     '/en/coleccion/filipinas/20-pesos/',
     '/en/coleccion/filipinas/',
     '/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',

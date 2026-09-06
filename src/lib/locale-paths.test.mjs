@@ -5,6 +5,14 @@ import { englishContentSlug, englishRedirects, localizePath, otherLocalePath, PA
 describe('locale path mapping', () => {
   it('translates collection, glossary, news, and contact slugs', () => {
     assert.equal(localizePath('/coleccion/filipinas/5-pesos/', 'en'), '/en/collection/philippines/5-pesos/');
+    assert.equal(
+      localizePath('/coleccion/filipinas/5-pesos-banco-nacional-1916/', 'en'),
+      '/en/collection/philippines/5-pesos-national-bank-1916/',
+    );
+    assert.equal(
+      localizePath('/en/collection/philippines/5-pesos-national-bank-1916/', 'es'),
+      '/coleccion/filipinas/5-pesos-banco-nacional-1916/',
+    );
     assert.equal(localizePath('/en/collection/philippines/', 'es'), '/coleccion/filipinas/');
     assert.equal(
       localizePath('/coleccion/puerto-rico/junta-central-cuba-1869/', 'en'),
@@ -424,6 +432,10 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');
+    assert.equal(
+      redirects['/en/coleccion/filipinas/5-pesos-banco-nacional-1916/'],
+      '/en/collection/philippines/5-pesos-national-bank-1916/',
+    );
     assert.equal(
       redirects['/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/'],
       '/en/collection/puerto-rico/1-peso-exchange-note-1895/',
