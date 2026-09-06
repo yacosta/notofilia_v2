@@ -1,6 +1,6 @@
 # Colombia — tiquete / vale de transporte estudiantil
 
-Working notes for student/tram transport paper. Catalogue holding: green MEN 15¢ `tiquete-estudiantil-15-centavos` (no serial; `no_serial_reason` on the record). A red-ink variety of the same design is noted in copy; do not scaffold a second object without photos. Run `.cursor/rules/30-catalogue-duplicates.mdc` before any new serial or colour.
+Working notes for student/tram transport paper. Catalogue holding: MEN 15¢ `tiquete-estudiantil-15-centavos` (no serial; `no_serial_reason` on the record). Green and red pieces share one page and two series cards. Do not create a second route for the red variety. Run `.cursor/rules/30-catalogue-duplicates.mdc` before any new serial or colour.
 
 This folder is research memory, not a public page. Cite the printed piece and named laws/press on the site, not this path.
 
@@ -71,7 +71,7 @@ Source for the 1969 subsidy: academic paper on Frente Nacional transport protest
 
 ### 5. Green **15-centavos** MEN ticket (published)
 
-Catalogue holding `tiquete-estudiantil-15-centavos`: Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, **15 ¢**, green ink, motto «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA», no serial, unprinted reverse. A **red-ink** variety of the same design exists; it is not a second record until photographed.
+Catalogue holding `tiquete-estudiantil-15-centavos`: Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, **15 ¢**, motto «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA», no serial. Two physical objects on one page: **green** (unprinted reverse) and **red** (reverse school stamps: RECTOR + shield EXTERNADO NACIONAL / CAMILO TORRES). That school stamp is not the BanRep Camilo Torres 2-pesos.
 
 **15 centavos** as a Bogotá fare (cash, color unknown) is separately documented:
 
@@ -99,20 +99,21 @@ Student **cash** subsidies today (TuLlave / DaviPlata in Bogotá; Metro *tiquete
 ## Catalogue checklist for further tickets
 
 1. Photograph issuer line (ministry, Distrito Especial, EDTU, named bus company, school, or tram company).
-2. Record printed date, **color**, and denomination exactly. **5 centavos** → tram-cupón vs later student tiquete vs unidentified vale. **15 centavos green MEN** is already `tiquete-estudiantil-15-centavos`. A **red** 15¢ of this design waits for photos; do not duplicate the green record.
+2. Record printed date, **color**, and denomination exactly. **5 centavos** → tram-cupón vs later student tiquete vs unidentified vale. **15 centavos MEN** green and red already live on `tiquete-estudiantil-15-centavos`; do not add a second route for the red piece.
 3. Do not write “Decreto 188 de 1969” in public copy unless that number is on the paper or in the *Diario Oficial*.
 4. Serial / `no_serial_reason`; many tickets are numbered control stubs.
 5. Still not BanRep paper.
 
 ## Still missing
 
-- The red-ink variety of the MEN 15¢ design (photos)
 - Any 5-centavos stub with a readable issuer
 - *Diario Oficial* scan for any January 1969 decree that actually raised the student subsidy (the *El Tiempo* article of 15 Jan 1969 is the lead)
 - A specialist exonumia / *tiquetes* listing (none in Hernández 2023 OCR, González White essays, or Heritage Colombia extract)
 
 ## Dedup (catalogue pass)
 
-Fingerprint for the green MEN 15¢: Ministerio de Educación Nacional · Servicio Estudiantil de Transporte · 15 centavos · green · ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA. No serial or cert. Searched `src/`, `public/`, `docs/`, `catalog-src/` before write. Identity is this physical unnumbered ticket; the red variety is a different object.
+Fingerprint for the green MEN 15¢: Ministerio de Educación Nacional · Servicio Estudiantil de Transporte · 15 centavos · green · ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA. No serial or cert.
+
+Fingerprint for the red MEN 15¢: same issuer, service, denomination, and motto · red · reverse school stamps EXTERNADO NACIONAL CAMILO TORRES + RECTOR. No serial or cert. Distinct physical object from the green ticket; same page, not a second route.
 
 Related rule: `.cursor/rules/44-transporte-estudiantil.mdc`.
