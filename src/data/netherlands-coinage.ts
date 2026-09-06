@@ -120,15 +120,6 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
-    href: 'https://en.numista.com/catalogue/pieces323147.html',
-    es: 'Numista — Ducado de oro de Utrecht (N# 323147)',
-    en: 'Numista — Utrecht gold ducat (N# 323147)',
-    note: {
-      es: 'Tipo comercial de las Provincias Unidas; referencia de la pieza de 1761 documentada en la colección.',
-      en: 'United Provinces trade type; reference for the 1761 piece recorded in the collection.',
-    },
-  },
-  {
     href: 'https://www.dnb.nl/en/money-exchange/exchanging-guilder-banknotes/',
     es: 'De Nederlandsche Bank — Canje del gulden',
     en: 'De Nederlandsche Bank — Exchanging the guilder',

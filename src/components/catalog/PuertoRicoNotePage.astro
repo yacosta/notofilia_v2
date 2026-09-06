@@ -7,7 +7,6 @@ import {
   PUERTO_RICO_PATH,
   notePageCopy,
   seriesCopy,
-  seriesSources,
   type PuertoRicoNote,
 } from '../../data/puerto-rico';
 import SourceList from './SourceList.astro';
@@ -22,7 +21,7 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = localizePath(note.path, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const sources = note.sources;
 ---
 
 <Layout

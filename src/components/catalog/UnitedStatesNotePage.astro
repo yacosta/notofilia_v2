@@ -12,7 +12,6 @@ import {
   notePath,
   noteSeriesHref,
   seriesPath,
-  seriesSources,
   USA_MISC_PATH,
   USA_RENCY_PATH,
   type UnitedStatesNote,
@@ -30,7 +29,7 @@ interface Props {
 const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const pathname = notePath(note, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const sources = note.sources;
 const imageWidth = note.images.width ?? 1800;
 const imageHeight = note.images.height ?? 600;
 const hero = note.hero

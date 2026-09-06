@@ -8,7 +8,6 @@ import {
   notePath,
   seriesCopy,
   seriesPath,
-  seriesSources,
   type VictoryNote,
 } from '../../data/philippines-victory-66';
 import SourceList from './SourceList.astro';
@@ -23,7 +22,7 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = notePath(note, locale);
-const sources = [...note.sources, ...seriesSources.filter((source) => !note.sources.some((own) => own.href === source.href))];
+const sources = note.sources;
 ---
 
 <Layout

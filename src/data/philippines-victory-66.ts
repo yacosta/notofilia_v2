@@ -43,16 +43,6 @@ export const seriesSources: CatalogSource[] = [
     en: 'Bank Note Museum — Philippines (Pick 94–101 and 117+)',
   },
   {
-    href: 'https://en.numista.com/201642',
-    es: 'Numista — 1 Peso (Victory)',
-    en: 'Numista — 1 Peso (Victory)',
-  },
-  {
-    href: 'https://en.numista.com/203356',
-    es: 'Numista — 2 Pesos (Victory)',
-    en: 'Numista — 2 Pesos (Victory)',
-  },
-  {
     href: 'https://www.officialgazette.gov.ph/1944/11/18/executive-order-no-25-s-1944/',
     es: 'Orden Ejecutiva n.º 25, s. 1944 (18 de noviembre de 1944)',
     en: 'Executive Order No. 25, s. 1944 (18 November 1944)',

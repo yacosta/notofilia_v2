@@ -118,6 +118,51 @@ export const seriesSources: CatalogSource[] = [
   },
 ];
 
+export const malaysiaSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://www.bnm.gov.my/currency/banknotes',
+    es: 'Bank Negara Malaysia — Current Banknote Series (2012–present)',
+    en: 'Bank Negara Malaysia — Current Banknote Series (2012–present)',
+    note: {
+      es: 'Cuarta serie Distinctively Malaysia; el RM5 cotidiano pasó al polímero en 2012.',
+      en: 'Fourth series Distinctively Malaysia; the everyday RM5 moved onto polymer in 2012.',
+    },
+  },
+  {
+    href: 'https://www.bnm.gov.my/-/currency/banknotes/rm5',
+    es: 'Bank Negara Malaysia — RM5 (cálao rinoceronte)',
+    en: 'Bank Negara Malaysia — RM5 (rhinoceros hornbill)',
+    note: {
+      es: 'Tuanku Abdul Rahman al anverso y Buceros rhinoceros al reverso.',
+      en: 'Tuanku Abdul Rahman on the face and Buceros rhinoceros on the reverse.',
+    },
+  },
+];
+
+export const englandSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://www.bankofengland.co.uk/news/2016/september/the-new-fiver-has-been-issued',
+    es: 'Banco de Inglaterra — The New Fiver has been issued (13 de septiembre de 2016)',
+    en: 'Bank of England — The New Fiver has been issued (13 September 2016)',
+    note: {
+      es: 'El 5 libras cotidiano pasó al polímero el 13 de septiembre de 2016: Isabel II y Churchill.',
+      en: 'The everyday £5 moved onto polymer on 13 September 2016: Elizabeth II and Churchill.',
+    },
+  },
+];
+
+export const canadaSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://www.bankofcanada.ca/2013/11/bank-canada-issues-5-and-10-polymer-bank-notes/',
+    es: 'Banco de Canadá — Issues $5 and $10 Polymer Bank Notes (7 de noviembre de 2013)',
+    en: 'Bank of Canada — Issues $5 and $10 Polymer Bank Notes (7 November 2013)',
+    note: {
+      es: 'El 5 dólares cotidiano de Laurier, Canadarm2 y Dextre; cierre de la serie Frontiers.',
+      en: 'Joint issue of the everyday Laurier $5 with Canadarm2 and Dextre; completion of the Frontiers series.',
+    },
+  },
+];
+
 export const seriesCopy = {
   es: {
     metaTitle: 'Billetes de polímero mundial | Notofilia',

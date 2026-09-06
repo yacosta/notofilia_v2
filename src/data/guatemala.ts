@@ -213,15 +213,6 @@ export const seriesSources: CatalogSource[] = [
       en: 'Context for the Antioquian free banking from which Recaredo de Villa came.',
     },
   },
-  {
-    href: 'https://en.numista.com',
-    es: 'Numista — Papel moneda mundial',
-    en: 'Numista — World paper money',
-    note: {
-      es: 'Catálogo general citado en la ficha histórica del Un Peso de 1900.',
-      en: 'General catalog cited in the historical record of the 1900 1-peso.',
-    },
-  },
 ];
 
 export const seriesCopy = {

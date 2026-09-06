@@ -7,6 +7,7 @@ import { collectionPageJsonLd } from '../../lib/json-ld';
 import { canadaNotes, notePath } from '../../data/canada-polymer';
 import {
   canadaCopy,
+  canadaSeriesSources,
   polymerCanadaPath,
   polymerWorldPath,
   seriesCopy,
@@ -22,7 +23,7 @@ const t = canadaCopy[locale];
 const polymer = seriesCopy[locale];
 const pathname = polymerCanadaPath(locale);
 const polymerHref = polymerWorldPath(locale);
-const canadaSources = canadaNotes.flatMap((note) => note.sources);
+const canadaSources = canadaSeriesSources;
 const jsonLd = collectionPageJsonLd({
   locale,
   pathname,

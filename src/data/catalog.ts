@@ -7,6 +7,13 @@ export type CatalogSource = {
   note?: LocalizedText;
 };
 
+/** First occurrence of each `href` wins. Piece pages must not inherit unused series lists. */
+export function uniqueCatalogSources(sources: CatalogSource[]): CatalogSource[] {
+  return sources.filter(
+    (source, index, list) => list.findIndex((entry) => entry.href === source.href) === index,
+  );
+}
+
 /** Inline catalog prose: plain text or an external link rendered as a real `<a>`. */
 export type CatalogProsePart =
   | { text: LocalizedText }

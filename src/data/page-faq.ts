@@ -70,7 +70,7 @@ export const guideFaqs: Record<string, FaqItem[]> = {
         en: 'How should I store banknotes that are not slabbed?',
       },
       answer: {
-        es: 'Usa fundas de poliéster inerte, no álbumes de PVC, y manipula el papel con las manos limpias o con guantes de algodón. La cápsula de PMG o PCGS es otra capa de protección; no sustituye un almacenamiento seco y estable.',
+        es: 'Use fundas de poliéster inerte, no álbumes de PVC, y manipule el papel con las manos limpias o con guantes de algodón. La cápsula de PMG o PCGS es otra capa de protección; no sustituye un almacenamiento seco y estable.',
         en: 'Use inert polyester sleeves, not PVC albums, and handle paper with clean hands or cotton gloves. A PMG or PCGS holder is another layer of protection; it does not replace dry, stable storage.',
       },
     },
@@ -114,7 +114,7 @@ export const guideFaqs: Record<string, FaqItem[]> = {
         en: 'How do I start a banknote collection?',
       },
       answer: {
-        es: 'Elige un eje —un país, un periodo o un tema— y compra piezas que puedas documentar: emisor, fecha, Pick o catálogo local, y estado. Un glosario y un catálogo de tipos evitan pagar de más por un ejemplar común o por un grado inflado.',
+        es: 'Elija un eje —un país, un periodo o un tema— y compre piezas que pueda documentar: emisor, fecha, Pick o catálogo local, y estado. Un glosario y un catálogo de tipos evitan pagar de más por un ejemplar común o por un grado inflado.',
         en: 'Pick a focus — a country, a period, or a theme — and buy pieces you can document: issuer, date, Pick or a local catalog, and condition. A glossary and a type catalog keep you from overpaying for a common note or an inflated grade.',
       },
     },
@@ -124,7 +124,7 @@ export const guideFaqs: Record<string, FaqItem[]> = {
         en: 'Do I need to grade the first pieces?',
       },
       answer: {
-        es: 'No. La certificación tiene sentido en piezas de alto valor o cuando necesitas un árbitro de autenticidad. Para empezar, una funda de poliéster y fotos claras del anverso y el reverso bastan para llevar el inventario.',
+        es: 'No. La certificación tiene sentido en piezas de alto valor o cuando necesite un árbitro de autenticidad. Para empezar, una funda de poliéster y fotos claras del anverso y el reverso bastan para llevar el inventario.',
         en: 'No. Grading matters for high-value pieces or when you need an authenticity referee. To start, a polyester sleeve and clear face and back photos are enough to keep an inventory.',
       },
     },
@@ -149,8 +149,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Colombian banknotes does Notofilia document?',
       },
       answer: {
-        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, el Banco de la República y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
-        en: 'The case covers independence issues, free banking, the Banco Nacional, the Banco de la República, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
+        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, el Banco de la República, tiquetes de transporte y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
+        en: 'The case covers independence issues, free banking, the Banco Nacional, the Banco de la República, transport tickets, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
       },
     },
     {

@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
-import { seriesPath, seriesSources } from '../../data/colombia';
+import { seriesPath } from '../../data/colombia';
 import {
   notePageCopy,
   notePath,
@@ -14,6 +14,7 @@ import {
   type ColombiaNote,
   type ColombiaNotePiece,
 } from '../../data/colombia-notes';
+import { uniqueCatalogSources } from '../../data/catalog';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -31,15 +32,15 @@ const shareType = Boolean(note.shareTypeNarrative && multi);
 const factsTag = multi && !shareType ? 'h3' : 'h2';
 const serialLine = noteSerialLine(note);
 const pieceSources = pieces.flatMap((piece) => piece.sources);
-const sources = [...note.sources, ...pieceSources, ...seriesSources].filter(
-  (source, index, list) => list.findIndex((entry) => entry.href === source.href) === index,
-);
+const sources = uniqueCatalogSources([...note.sources, ...pieceSources]);
 const hero = note.hero;
 const heroAlt = note.heroAlt?.[locale];
 if (hero && !heroAlt) {
   throw new Error(`Missing heroAlt for ${note.id} (${locale})`);
 }
 const seriesLabel = noteSeriesLabel(note, locale);
+const pickLabel = note.pickLabel?.[locale] ?? t.pickLabel;
+const historyHeading = note.historyHeading?.[locale] ?? t.historyHeading;
 const jsonLd = visualArtworkJsonLd({
   name: note.title[locale],
   description: note.lead[locale],
@@ -114,7 +115,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
             </h2>
             <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
               <div>
-                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{pickLabel}</dt>
                 <dd class="m-0 mt-1 text-cream">{note.pick}</dd>
               </div>
               <div>
@@ -174,7 +175,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     </FactsHeading>
                     <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
                       <div>
-                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{pickLabel}</dt>
                         <dd class="m-0 mt-1 text-cream">{piece.pick}</dd>
                       </div>
                       <div>
@@ -242,7 +243,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 !shareType && !multi && note.history ? (
                   <section class="mt-12" aria-labelledby="history-heading">
                     <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-                      {t.historyHeading}
+                      {historyHeading}
                     </h2>
                     <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
                   </section>
@@ -287,7 +288,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
             {note.history ? (
               <section class="mt-12" aria-labelledby="history-heading">
                 <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-                  {t.historyHeading}
+                  {historyHeading}
                 </h2>
                 <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
               </section>
@@ -308,7 +309,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
         ) : multi && note.history ? (
           <section class="mt-14" aria-labelledby="history-heading">
             <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-              {t.historyHeading}
+              {historyHeading}
             </h2>
             <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
           </section>

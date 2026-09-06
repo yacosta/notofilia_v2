@@ -13,7 +13,7 @@ npm run dev
 
 ## Site audits
 
-Page-type and chrome rules live in `.cursor/rules/` (`00-site-standards`, `10-page-types`, `20-hero`, `30-catalogue-duplicates`). Cursor commands:
+Page-type and chrome rules live in `.cursor/rules/` (`00-site-standards`, `10-page-types`, `20-hero`, `30-catalogue-duplicates`, `45-colombian-spanish-voice` for reader-facing Spanish). Cursor commands:
 
 - `/audit-site` — full sweep once a quarter. Do not modify files. Latest write-up: `.cursor/audits/2026-08-site-sweep.md`.
 - `/audit-pr` — before each pull request, against changed files. Include Lighthouse **mobile** scores from `npm run build && npx astro preview` for each affected route in both locales.

@@ -12,6 +12,7 @@ interface Props {
 const { locale, sources, heading } = Astro.props;
 ---
 
+{sources.length ? (
 <section class="border-t border-line pt-12" aria-labelledby="sources-heading">
   <h2 id="sources-heading" class="mb-4 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
     {heading}
@@ -35,3 +36,4 @@ const { locale, sources, heading } = Astro.props;
     }
   </ul>
 </section>
+) : null}

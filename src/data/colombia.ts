@@ -9,6 +9,7 @@ export type ColombiaChapterId =
   | 'banco-central'
   | 'banco-de-la-republica'
   | 'familias-modernas'
+  | 'tiquetes'
   | 'errores';
 
 export type ColombiaChapter = {
@@ -116,6 +117,22 @@ export const colombiaChapters: ColombiaChapter[] = [
       en: 'From 1993 Banco de la República notes dropped the legend “pesos oro”: the currency’s name returned to simply the peso. In October 1994 — the “robo del siglo,” the robbery of the century — thieves entered the vault of the Valledupar branch and took some 24.072 billion pesos, in 2,000-, 5,000-, and 10,000-peso notes, much of it still unissued. The bank published the serial ranges, opened an exchange for good-faith holders, and between 1995 and 1996 replaced those three denominations with a new family. In 2016 it put another family into circulation — 2,000 to 100,000 — with stronger security: the notes move beyond independence heroes alone and honor biodiversity, indigenous cultures, and figures such as Gabriel García Márquez, Virginia Gutiérrez, and Débora Arango.',
     },
   },
+  {
+    id: 'tiquetes',
+    years: { es: 'siglo XX', en: '20th century' },
+    title: {
+      es: 'Tiquetes y vales',
+      en: 'Tickets and vouchers',
+    },
+    lead: {
+      es: 'Papel de control de pasaje, no billete de banco: tiquetes, vales y cupones que el coleccionismo llama «billetes».',
+      en: 'Fare-control paper, not a banknote: tickets, vouchers, and coupons that collectors still call “bills.”',
+    },
+    body: {
+      es: 'Esta vitrina no es un billete del Banco de la República ni de la banca libre. Documenta tiquetes y vales impresos para el transporte —estudiantil, urbano o de empresa— que circulaban como prueba de tarifa, no como moneda de curso legal. No llevan Pick ni BG#. El ejemplar publicado es un tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde, sin serial ni fecha impresa. Existe una variedad en tinta roja del mismo diseño; no se publica aquí como segunda ficha hasta que esa pieza tenga foto propia. No se cita un decreto nacional que no figure en el papel ni en la gaceta.',
+      en: 'This case is not a Banco de la República banknote, nor a free-banking banknote. It documents printed tickets and vouchers for transport — student, urban, or company — used as proof of fare, not as legal tender. They have no Pick or BG# numbers. The published example is a 15-centavos ticket of the Ministry of National Education, Student Transportation Service, in green ink, with no serial and no printed date. A red-ink variety of the same design exists; it is not a second record here until that piece has its own photograph. No national decree is cited unless it appears on the paper or in the gazette.',
+    },
+  },
 ];
 
 export const seriesSources: CatalogSource[] = [
@@ -162,15 +179,6 @@ export const seriesSources: CatalogSource[] = [
     note: {
       es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá. El 5 pesos de 1961–1981 lleva las murallas de Cartagena.',
       en: '23 October 1959; first job: the blue 1-peso printed in Bogotá. The 5-peso of 1961–1981 carries the walls of Cartagena.',
-    },
-  },
-  {
-    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
-    es: 'Banco de la República — Producción y circulación de billetes y monedas',
-    en: 'Banco de la República — Banknote and coin production and circulation',
-    note: {
-      es: 'Tablas oficiales: producción anual de billetes por denominación (1960–2022), entregas de la Imprenta a Tesorería (2010–2022) y producción de monedas. Un total por año y valor facial no es la tirada de un tipo Pick, fecha o variedad.',
-      en: 'Official tables: annual banknote production by denomination (1960–2022), Imprenta deliveries to Tesorería (2010–2022), and coin production. A year-and-face-value total is not the printage of one Pick type, date, or variety.',
     },
   },
   {
@@ -321,6 +329,7 @@ export const seriesCopy = {
       'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional (Ley 39 de 1880): manejar fondos del Estado, emitir y prestar al fisco. Al principio convivió con la emisión privada. En 1886 el gobierno cortó la convertibilidad: el Decreto 104 y la Ley 87 hicieron del papel peso la unidad monetaria de curso forzoso. La Ley 57 de 1887 suspendió el derecho de los particulares a emitir mientras el Nacional tuviera el privilegio exclusivo. La emisión opaca depreció el billete; por esos excesos, la Ley 70 de 1894 ordenó liquidar el instituto. Astrid Romero sitúa el cierre definitivo el 1.º de enero de 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel sin respaldo —el gobierno y mandos regionales— y una inflación devastadora. El Museo Casa de Moneda registra billetes del Gobierno Provisional de Ocaña (1900) y resellos del Nacional sobre papel privado. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro. Aun en los primeros años de 1910 los billetes viejos del Nacional seguían en circulación. Esta vitrina documenta una cédula representativa de un peso del Departamento del Tolima, Ibagué, septiembre de 1901, serial N.º 060.416, Serie D (Hernández Cód. 1242).',
       'Para estabilizar la posguerra, Rafael Reyes creó en 1905 el Banco Central de Colombia. Fue un emisor de vida corta: en 1909, tras la caída de Reyes, se le retiró el privilegio de emitir. No es el banco de 1923. En 1922 la Junta de Conversión quedó autorizada a resellar bonos del tesoro (Ley 5.ª, Decreto 165, escritura 206) antes de abrir el instituto. La Ley 25 de 1923, fruto de la Misión Kemmerer —el «money doctor» contratado por Pedro Nel Ospina— creó el Banco de la República con capital mixto, 10 millones de pesos oro y el monopolio de emitir la moneda legal. La corrida contra el Banco López adelantó la apertura al 23 de julio de 1923: los certificados de oro de Medellín llegaron por ferrocarril, hidroavión y tren y se resellaron en un fin de semana como billetes provisionales. Los primeros regulares los grabó la American Bank Note Company; el papel se llamó peso oro para señalar su convertibilidad. La convertibilidad se perdió en 1931. Tras la guerra con el Perú (1932) circularon pesos plata. Thomas De La Rue imprimió a mediados de siglo. El 23 de octubre de 1959 abrió la Imprenta de Billetes en Bogotá, con el 1 peso azul (Pick 404). La Junta Monetaria de 1963 y la Ley 31 de 1992 reordenaron la autoridad del banco; en 1973 el Estado nacionalizó casi todo el capital. Esta vitrina documenta el 1 peso oro de 1945 (Pick 380d), el 1 peso oro de 1954 (Pick 380g), el 10 pesos oro de 1943 (Pick 389b), el 2 pesos oro de 1944 (Pick 390b) y el de 1955 (Pick 390d), la reposición de 10 pesos oro de 1976 (Pick 407f / TBB B950kr), el 1.000 pesos oro de 1979 (Pick 421a / TBB B963a), el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue, el 10.000 pesos emberá de 1994 (Pick 437A / TBB B980az), una ficha con seriales estrella 00113227 y 00249902, y el 2.000 pesos de 2008 (Pick 457), serial capicúa binario 10000001.',
       'Desde 1993 los billetes dejaron de llevar la leyenda «pesos oro». En octubre de 1994 el «robo del siglo» en la sucursal de Valledupar se llevó unos 24.072 millones de pesos en 2.000, 5.000 y 10.000; el banco canjeó series y, en 1995–1996, sustituyó esas tres denominaciones. En 2016 puso en circulación una familia nueva —de 2.000 a 100.000— con seguridad reforzada, biodiversidad, culturas indígenas y figuras como Gabriel García Márquez.',
+      'Fuera del papel de banco, esta vitrina documenta un tiquete estudiantil de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde, sin serial ni fecha impresa. No es un billete del Banco de la República.',
     ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -349,6 +358,7 @@ export const seriesCopy = {
       'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born (Law 39 of 1880): to handle state funds, issue notes, and lend to the treasury. At first it coexisted with private issues. In 1886 the government ended convertibility: Decree 104 and Law 87 made the paper peso the forced-tender monetary unit. Law 57 of 1887 suspended private banks’ right to issue while the Nacional held the exclusive privilege. Opaque issue depreciated the bill; for those excesses, Law 70 of 1894 ordered the institute liquidated. Astrid Romero places the final closure on 1 January 1896. The Thousand Days’ War (1899–1902) set off another surge of unbacked paper — from the government and from regional commanders — and a devastating inflation. The Casa de Moneda Museum records Gobierno Provisional notes from Ocaña (1900) and Nacional overstamps on private paper. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso. Even in the early 1910s old Nacional bills were still in circulation. This case documents a one-peso cédula representativa of the Departamento del Tolima, Ibagué, September 1901, serial N.º 060.416, Series D (Hernández Cód. 1242).',
       'To stabilize the postwar economy, Rafael Reyes created the Banco Central de Colombia in 1905. It was a short-lived issuer: in 1909, after Reyes fell, its privilege of issue was withdrawn. It is not the bank of 1923. In 1922 the Conversion Board was authorized to overstamp treasury bonds (Law 5, Decree 165, deed 206) before the institute opened. Law 25 of 1923, the fruit of the Kemmerer Mission — the “money doctor” hired by Pedro Nel Ospina — created the Banco de la República with mixed capital, 10 million gold pesos, and the monopoly of legal-tender issue. A run on the Banco López brought the opening forward to 23 July 1923: Medellín gold certificates came by rail, flying boat, and train and were overstamped over a weekend as provisional notes. The first regular issues were engraved by the American Bank Note Company; the paper was called peso oro to signal convertibility. Gold convertibility ended in 1931. After the war with Peru (1932) pesos plata circulated. Thomas De La Rue printed at mid-century. On 23 October 1959 the Imprenta de Billetes opened in Bogotá, with the blue 1-peso (Pick 404). The 1963 Monetary Board and Law 31 of 1992 reordered the bank’s authority; in 1973 the state nationalized nearly all the capital. This case documents the 1945 1 peso oro (Pick 380d), the 1954 1 peso oro (Pick 380g), the 1943 10 pesos oro (Pick 389b), the 1944 2 pesos oro (Pick 390b), the 1955 2 pesos oro (Pick 390d), the 1976 10 pesos oro replacement (Pick 407f / TBB B950kr), the 1979 1,000 pesos oro (Pick 421a / TBB B963a), the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue, the 1994 Emberá 10,000 pesos (Pick 437A / TBB B980az), one record with star serials 00113227 and 00249902, and the 2008 2,000 pesos (Pick 457) with binary radar serial 10000001.',
       'From 1993 the notes dropped the legend “pesos oro.” In October 1994 the “robo del siglo” at the Valledupar branch took some 24.072 billion pesos in 2,000, 5,000, and 10,000 notes; the bank exchanged serial ranges and, in 1995–1996, replaced those three denominations. In 2016 it put a new family into circulation — 2,000 to 100,000 — with stronger security, biodiversity, indigenous cultures, and figures such as Gabriel García Márquez.',
+      'Outside bank paper, this case documents a 15-centavos student-transport ticket of the Ministry of National Education, Student Transportation Service, in green ink, with no serial and no printed date. It is not a Banco de la República note.',
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Pick',

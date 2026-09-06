@@ -25,7 +25,7 @@ export const searchCopy = {
   es: {
     metaTitle: 'Buscar · Notofilia',
     metaDescription:
-      'Busca billetes, monedas, seriales, referencias Pick, términos del glosario y guías en la colección virtual de Notofilia.',
+      'Busque billetes, monedas, seriales, referencias Pick, términos del glosario y guías en la colección virtual de Notofilia.',
     title: 'Buscar en la colección',
     dek: 'Seriales, Pick, certificados, piezas, guías y el glosario. Nada de esta colección está a la venta.',
     breadcrumb: 'Migas de pan',
@@ -37,7 +37,7 @@ export const searchCopy = {
     sortLabel: 'Ordenar resultados',
     filterLabel: 'Filtrar resultados',
     statusLabel: 'Resultados de la búsqueda',
-    emptyQuery: 'Escribe un término o elige un filtro para recorrer el catálogo.',
+    emptyQuery: 'Escriba un término o elija un filtro para recorrer el catálogo.',
     noResults: 'No hay resultados para esta búsqueda.',
     resultCount: (count: number) => (count === 1 ? '1 resultado' : `${count} resultados`),
     needsJs: 'La búsqueda en vivo necesita JavaScript. El formulario sigue disponible.',

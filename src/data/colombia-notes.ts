@@ -18,6 +18,7 @@ export type ColombiaNoteId =
   | '2000-pesos-2008'
   | '2000-pesos-2015'
   | '20000-pesos-2017'
+  | 'tiquete-estudiantil-15-centavos'
   | '1000-pesos-error-2008'
   | '1000-pesos-error-2011'
   | '50000-pesos-error-2008'
@@ -29,8 +30,12 @@ export type ColombiaNote = {
   path: string;
   pick: string;
   serial: string;
+  /** Why serial is "—" when the paper has none, or the number cannot be read. */
+  no_serial_reason?: string;
   signatures: LocalizedText;
   printed: LocalizedText;
+  pickLabel?: LocalizedText;
+  historyHeading?: LocalizedText;
   images: {
     composite: string;
     front: string;
@@ -1837,6 +1842,105 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Ficha de tipo del museo (emisor Banco de la República de Colombia, 1923; impreso en tintas sobre papel; 66 × 128 mm). Homenaje a Débora Arango Pérez; el reverso lleva en microimpresión un fragmento de entrevista. Registro NBI6555: comparable de colección, no el serial AA40000066. Fecha de elaboración, ingreso y ubicación actuales van en blanco en el registro; no se inventan aquí.',
           en: 'Museum type record (issuer Banco de la República de Colombia, 1923; printed in inks on paper; 66 × 128 mm). Homage to Débora Arango Pérez; the back carries a microprinted interview fragment. Register NBI6555 is a collection comparable, not serial AA40000066. Manufacture date, accession date, and current location are blank in the register; they are not invented here.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'tiquete-estudiantil-15-centavos',
+    chapterId: 'tiquetes',
+    path: `${COLOMBIA_PATH}tiquete-estudiantil-15-centavos/`,
+    pick: 'MEN · 15¢ verde',
+    serial: '—',
+    no_serial_reason:
+      'Printed student-transport control ticket; no serial, date, or signatures on the paper.',
+    pickLabel: {
+      es: 'Referencia',
+      en: 'Catalog reference',
+    },
+    historyHeading: {
+      es: 'El servicio',
+      en: 'The service',
+    },
+    signatures: {
+      es: 'Sin firmas',
+      en: 'Unsigned',
+    },
+    printed: {
+      es: 'Sin fecha, pie de imprenta ni serial en el papel. Tinta verde sobre papel crema, con fondo de red de seguridad y marco ornamental. El reverso no lleva grabado propio: se ve el anverso por transparencia. El margen derecho, un poco irregular, sugiere corte de pliego o talonario. No se publica una tirada.',
+      en: 'No date, imprint, or serial on the paper. Green ink on cream stock, with a security-network ground and an ornamental frame. The back has no printing of its own: the face shows through. The slightly irregular right edge suggests a sheet or booklet cut. No printage is published.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-composite.jpg',
+      front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-front.jpg',
+      back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-back.jpg',
+    },
+    title: {
+      es: '15 centavos · tiquete estudiantil · MEN',
+      en: '15 centavos · student-transport ticket · MEN',
+    },
+    kicker: {
+      es: 'Colombia · Tiquetes · Ministerio de Educación Nacional',
+      en: 'Colombia · Tickets · Ministry of National Education',
+    },
+    lead: {
+      es: 'Tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde. Sin serial ni fecha impresa. El reverso no lleva grabado propio.',
+      en: 'A 15-centavos ticket of the Ministry of National Education, Student Transportation Service, in green ink. No serial and no printed date. The back has no printing of its own.',
+    },
+    description: {
+      es: 'Este papel no es un billete del Banco de la República ni de un banco privado. Es un tiquete —vale o boleto de control— del Ministerio de Educación Nacional, rotulado SERVICIO ESTUDIANTIL DE TRANSPORTE. El anverso, en tinta verde sobre papel crema, lleva un marco ornamental de escamas y un fondo de red. Arriba: MINISTERIO DE EDUCACION NACIONAL y SERVICIO ESTUDIANTIL DE TRANSPORTE. Al centro, un triángulo con un sol naciente sobre cumbres; a izquierda y derecha, el facial 15 ¢. Al pie, entre comillas: «ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA». No hay serial, firmas ni fecha. El reverso está en blanco: se lee el anverso al trasluz. Los coleccionistas lo buscan como «billete»; la ficha lo trata como tiquete. No se le inventa un número Pick ni un BG# de González White. No debe confundirse con el scrip de 15 centavos de Baraboo (Wisconsin, 1933) ni con un pasaje en efectivo de la EDTU. Existe una variedad en tinta roja del mismo diseño; no es esta pieza.',
+      en: 'This paper is not a Banco de la República note, nor a private-bank note. It is a ticket — a voucher or control stub — of the Ministry of National Education, headed SERVICIO ESTUDIANTIL DE TRANSPORTE. The face, green ink on cream stock, has a scalloped ornamental frame and a network ground. At top: MINISTERIO DE EDUCACION NACIONAL and SERVICIO ESTUDIANTIL DE TRANSPORTE. At center, a triangle with a rising sun over peaks; at left and right, the face value 15 ¢. At the foot, in quotation marks: “ESTUDIANDO MAS TRANSFORMAMOS A COLOMBIA.” There is no serial, no signatures, and no date. The back is blank: the face shows through. Collectors hunt it as a “bill”; this record treats it as a ticket. No Pick number or González White BG# is invented for it. It is not the Baraboo, Wisconsin, 1933 15-cent scrip, nor an EDTU cash fare. A red-ink variety of the same design exists; it is not this piece.',
+    },
+    history: {
+      es: 'En Bogotá, a finales de los años cincuenta, los estudiantes de planteles reconocidos por el Ministerio de Educación pagaban una tarifa reducida con tiquetes que las empresas de buses entregaban a través del colegio, más un pase de identificación (Díaz Jaramillo, sobre La República del 6 de enero de 1959: tarifa estudiantil de 12,5 centavos). Hacia 1960 el pasaje ordinario municipal o de la EDTU se cita a 15 centavos en efectivo, pagado al conductor (The Commercial Motor, 5 de agosto de 1960). Este tiquete lleva el facial de 15 centavos y el membrete del ministerio, no el de una empresa de buses ni el del tranvía. No hay fecha en el papel: no se le asigna 1969 ni se cita un decreto que no figure aquí ni en la gaceta. El auxilio de transporte de enero de 1969 —cinco pesos en dinero, también para estudiantes de secundaria y universidad— es otra cosa: un subsidio en efectivo, no este vale.',
+      en: 'In Bogotá in the late 1950s, students at schools recognized by the Ministry of Education paid a reduced fare with tickets that bus companies supplied through the school, plus an identity pass (Díaz Jaramillo, on La República of 6 January 1959: a student fare of 12.5 centavos). Around 1960 the ordinary municipal or EDTU fare is cited at 15 centavos in cash, paid to the conductor (The Commercial Motor, 5 August 1960). This ticket carries a 15-centavos face and the ministry’s heading, not a bus company’s or the tram’s. There is no date on the paper: it is not assigned to 1969, and no decree is cited unless it appears here or in the gazette. The January 1969 transport subsidy — five pesos in cash, including secondary and university students — is something else: a cash allowance, not this voucher.',
+    },
+    frontCaption: {
+      es: 'Anverso del tiquete de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde: triángulo con sol y montañas, facial 15 ¢ y el lema Estudiando más transformamos a Colombia.',
+      en: 'Face of the Ministry of National Education 15-centavos student-transport ticket, in green ink: a triangle with sun and mountains, the face value 15 ¢, and the motto Estudiando más transformamos a Colombia.',
+    },
+    backCaption: {
+      es: 'Reverso sin impresión propia: se ve el anverso verde por transparencia. Sin serial ni leyendas añadidas.',
+      en: 'Back with no printing of its own: the green face shows through. No serial and no added legends.',
+    },
+    scarcity: {
+      es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este tiquete, ni una tirada publicada. Sobrevive como papel civil de tarifa, no como emisión de banco. El mismo diseño existe en tinta roja; esa variedad no tiene ficha en Notofilia hasta que se fotografíe el ejemplar. Esta ficha no inventa una rareza de tipo ni un censo.',
+      en: 'There is no Pick, Hernández Cód., or González White BG# for this ticket, and no published printage. It survives as civil fare paper, not as a bank issue. The same design exists in red ink; that variety has no Notofilia record until the example is photographed. This record does not invent a type rarity or a census.',
+    },
+    population: {
+      es: 'Pieza sin encapsular, en funda. No hay censo de población de un servicio de certificación para este tiquete.',
+      en: 'Unslabbed, in a sleeve. There is no grading-service population census for this ticket.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda',
+      en: 'Unslabbed, in a sleeve',
+    },
+    sources: [
+      {
+        href: 'https://archive.commercialmotor.com/article/5th-august-1960/44/bogota-begs-for-british-buses',
+        es: 'The Commercial Motor — Bogotá begs for British buses (5 de agosto de 1960)',
+        en: 'The Commercial Motor — Bogotá begs for British buses (5 August 1960)',
+        note: {
+          es: 'Empresa Distrital de Transportes Urbanos: tarifa plana municipal de 15 centavos, en efectivo al conductor. No describe este tiquete del ministerio.',
+          en: 'Empresa Distrital de Transportes Urbanos: a municipal flat fare of 15 centavos, cash to the conductor. It does not describe this ministry ticket.',
+        },
+      },
+      {
+        href: 'https://doi.org/10.26564/16926250.761',
+        es: 'José Abelardo Díaz Jaramillo — Protestas contra el alza de las tarifas del transporte en Bogotá (1959)',
+        en: 'José Abelardo Díaz Jaramillo — Protests against the Bogotá fare rise (1959)',
+        note: {
+          es: 'Tras la resolución publicada en La República el 6 de enero de 1959: tarifa estudiantil de 12,5 centavos, con pase del plantel y tiquetes de las empresas. Analogía de mecanismo, no este facial de 15 centavos.',
+          en: 'After the resolution published in La República on 6 January 1959: a student fare of 12.5 centavos, with a school pass and company tickets. A mechanism analog, not this 15-centavos face.',
+        },
+      },
+      {
+        href: 'https://www.ciclobr.com/troleytranvia.html',
+        es: 'CicloBR — Memoria del trolebús y el tranvía en Bogotá',
+        en: 'CicloBR — Memory of the trolleybus and tram in Bogotá',
+        note: {
+          es: 'Recuerdo de pagar 15 centavos al conductor del trolebús. No es una ficha de este tiquete.',
+          en: 'A memory of paying 15 centavos to the trolleybus conductor. It is not a record of this ticket.',
         },
       },
     ],

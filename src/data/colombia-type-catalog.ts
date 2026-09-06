@@ -18,6 +18,7 @@ export const noteCatalogFilters: TypeCatalogFilter[] = [
   'banco-central',
   'banco-de-la-republica',
   'familias-modernas',
+  'tiquetes',
   'errores',
 ];
 
@@ -36,7 +37,7 @@ export const noteCatalogCopy = {
     sortLabel: 'Ordenar billetes',
     filterLabel: 'Filtrar billetes',
     statusLabel: 'Billetes visibles',
-    emptyQuery: 'Toda la colección. Escribe un término o elige un filtro.',
+    emptyQuery: 'Toda la colección. Escriba un término o elija un filtro.',
     noResults: 'No hay billetes para esta búsqueda.',
     resultCount: (count: number) => (count === 1 ? '1 billete' : `${count} billetes`),
     needsJs: 'La búsqueda en vivo necesita JavaScript. El formulario sigue disponible.',
@@ -71,6 +72,7 @@ export const noteCatalogCopy = {
       'banco-central': 'Banco Central',
       'banco-de-la-republica': 'Banco de la República',
       'familias-modernas': 'Familias modernas',
+      tiquetes: 'Tiquetes y vales',
       errores: 'Errores',
     } satisfies Record<(typeof noteCatalogFilters)[number], string>,
   },
@@ -123,6 +125,7 @@ export const noteCatalogCopy = {
       'banco-central': 'Banco Central',
       'banco-de-la-republica': 'Banco de la República',
       'familias-modernas': 'Modern families',
+      tiquetes: 'Tickets and vouchers',
       errores: 'Errors',
     } satisfies Record<(typeof noteCatalogFilters)[number], string>,
   },
@@ -136,33 +139,6 @@ export const noteCatalogSources: CatalogSource[] = [
     note: {
       es: 'Índice Pick de emisores colombianos. Esta vitrina muestra las piezas de la colección, no un censo de tipos.',
       en: 'Pick index of Colombian issuers. This case shows collection pieces, not a type census.',
-    },
-  },
-  {
-    href: 'https://en.numista.com/L100183',
-    es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
-    en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
-    note: {
-      es: 'Independencia, banca libre y Banco Nacional. No se publican columnas de precios.',
-      en: 'Independence, free banking, and Banco Nacional. Price columns are not published here.',
-    },
-  },
-  {
-    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
-    es: 'Banco de la República — Producción y circulación de billetes y monedas',
-    en: 'Banco de la República — Banknote and coin production and circulation',
-    note: {
-      es: 'Totales por denominación y año; no son la tirada de un solo Pick.',
-      en: 'Totals by denomination and year; not the printage of a single Pick.',
-    },
-  },
-  {
-    href: 'https://currency.ha.com/c/search/results.zx?term=Colombia&si=2&archive_state=5327&sold_status=1526&dept=2021&sb=1&mode=archive',
-    es: 'Heritage Auctions — archivo vendido de papel mundial (búsqueda Colombia)',
-    en: 'Heritage Auctions — World Paper Money sold archive (Colombia search)',
-    note: {
-      es: 'Comparables para identificar tipos. No se republican precios ni se enlazan fotografías de Heritage. Los lotes no son fichas de esta vitrina.',
-      en: 'Comparables for type identification. Realized prices are not republished, and Heritage photographs are not hotlinked. Lots are not holdings in this case.',
     },
   },
 ];
