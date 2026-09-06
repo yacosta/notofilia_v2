@@ -1,0 +1,23 @@
+---
+description: Colombia student/tram transport tickets — not banknotes; Decreto 188 de 1969 unverified
+alwaysApply: true
+---
+
+# Colombia — tiquete de transporte estudiantil / cupón de tranvía
+
+Read `docs/sources/colombia-transporte-estudiantil/README.md` before adding or describing this paper.
+
+These items are **printed transport paper** (tiquete, vale, cupón, boleto de control), popularly called a “billete,” **not** Banco de la República paper. Do not invent Pick or BG#. Closest site pattern is miscellaneous scrip.
+
+**Do not cite Decreto 188 de 1969 as fact.** No gazette text was found. Nearby traps: Decreto 188 de **1968** (military pay); Decreto **1848** de 1969 (pensions); Argentine Decreto-Ley **18.188/69** on 5-peso notes. Lleras Restrepo and Education Minister Octavio Arizmendi Posada (1968–1970) are the right government for a **1969 cash subsidy**, not proven as ticket issuers.
+
+Published holding: green 15¢ MEN ticket, `tiquete-estudiantil-15-centavos` (no serial). A red-ink variety of the same design exists; do not create a second record without that piece’s photos.
+
+Documented analogs (pick from the printed piece, do not merge):
+
+- Tranvía de Bogotá **5-centavo cupones** (one trip); later **tiquetes escolares** (free/school tickets; last tram 30 Jun 1951).
+- Bogotá **1959** student bus tiquetes: **12.5 centavos**, school ID + company tickets through the plantel (*La República* 6 Jan 1959; Díaz Jaramillo, *Grafía* 2017).
+- **Jan 1969**: government raised the workers’ transport subsidy by **5 pesos** and extended that increase to secondary and university students (*El Tiempo* 15 Jan 1969) — money, not a 5-centavos fare.
+- **15 centavos** *was* the Bogotá EDTU/municipal flat fare around 1960 (cash to the conductor in *The Commercial Motor*, 5 Aug 1960). Do not confuse with catalogue Baraboo 15 cents (green reverse).
+
+Run `30-catalogue-duplicates.mdc` before any new `src/data/` record. Fingerprint when there is no serial: issuer + service + denomination + ink colour + motto.

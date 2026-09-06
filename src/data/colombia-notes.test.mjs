@@ -75,3 +75,35 @@ describe('Colombia Emberá 1994 series card grouping', () => {
     assert.match(seriesCopy.en.intro.join(' '), /one record with star serials 00113227 and 00249902/);
   });
 });
+
+describe('Colombia MEN 15 centavos student-transport ticket', () => {
+  it('is a tiquetes-chapter holding with no serial and no invented Pick', () => {
+    const note = noteById('tiquete-estudiantil-15-centavos');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'tiquetes');
+    assert.equal(note.serial, '—');
+    assert.match(note.no_serial_reason ?? '', /no serial/i);
+    assert.equal(note.pick, 'MEN · 15¢ verde');
+    assert.doesNotMatch(note.description.es, /Decreto 188 de 1969/);
+    assert.doesNotMatch(note.description.en, /Decree 188 of 1969/);
+    assert.match(note.scarcity.es, /tinta roja/);
+    assert.match(note.scarcity.en, /red ink/);
+    assert.equal(additions.some((row) => row.id === 'co-men-tiquete-estudiantil-15-centavos-verde'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-men-tiquete-estudiantil-15c-verde'), true);
+  });
+
+  it('emits one series card under Tiquetes y vales', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'tiquetes');
+    assert.ok(chapter);
+    const cards = seriesCardsForChapter('tiquetes');
+    assert.equal(cards.length, 1);
+    assert.equal(cards[0].note.id, 'tiquete-estudiantil-15-centavos');
+    assert.equal(seriesCardHref(cards[0].note, cards[0].piece, 'es'), '/coleccion/colombia/tiquete-estudiantil-15-centavos/');
+    assert.equal(
+      seriesCardHref(cards[0].note, cards[0].piece, 'en'),
+      '/en/collection/colombia/tiquete-estudiantil-15-centavos/',
+    );
+    assert.match(seriesCopy.es.intro.join(' '), /tiquete estudiantil de 15 centavos/);
+    assert.match(seriesCopy.en.intro.join(' '), /15-centavos student-transport ticket/);
+  });
+});

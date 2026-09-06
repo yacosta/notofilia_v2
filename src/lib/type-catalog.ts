@@ -15,6 +15,7 @@ export type TypeCatalogEra =
   | 'banco-central'
   | 'banco-de-la-republica'
   | 'familias-modernas'
+  | 'tiquetes'
   | 'errores'
   | 'santa-fe'
   | 'nueva-granada'
