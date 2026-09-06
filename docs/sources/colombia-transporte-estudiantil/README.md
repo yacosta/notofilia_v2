@@ -69,6 +69,25 @@ A 5-centavos **face** on a 1969 student bus ticket would already have been far b
 
 Source for the 1969 subsidy: academic paper on Frente Nacional transport protests, citing *El Tiempo* 15 Jan 1969 pp. 1 and 9 ([Scribd copy of the ponencia](https://es.scribd.com/document/149903469/Ponecia-Para-Publicar-Como-eBook)).
 
+### 5. Hunt for a **green 15-centavos** ticket (not found as a specimen)
+
+Asked for next: a **15 centavos**, **green** piece of the same class (tiquete / vale, remembered as a “billete”). **No photograph, Mercado Libre listing, Numista row, Hernández OCR hit, or Heritage lot** matched a green 15-centavos Colombian student ticket. Do not invent one.
+
+What **is** documented about **15 centavos** as a fare (cash or ticket, color unknown):
+
+- **Ordinary Bogotá municipal / EDTU fare ≈ 15 centavos around 1960.** Empresa Distrital de Transportes Urbanos (Büssing diesels + trolleybuses): driver + conductor, **flat-rate 15 centavos**. *The Commercial Motor*, 5 Aug 1960, [archive](https://archive.commercialmotor.com/article/5th-august-1960/44/bogota-begs-for-british-buses). Private VW microbuses: 20 centavos. Memory of paying the trolley conductor **15 centavos**: [CicloBR](https://www.ciclobr.com/troleytranvia.html).
+- **Pre-7 Jan 1959 ordinary Bogotá bus fare remembered as 15 centavos**, then raised to 25 (MOEC 7 de enero thesis, Javeriana; [handle](http://hdl.handle.net/10554/14295)). González White philately note: “Un pasaje en bus costaba 15 centavos” (Luz Marina 1959 stamps essay). The 6 Jan 1959 *La República* resolution in Díaz Jaramillo instead writes ordinary **10 → 25** and student **10 → 12.5**. Those two reconstructions of the 1959 jump do not agree; do not pick one for copy until the printed ticket is read.
+- **Medellín c. 1948:** municipal **tiqueteras** for students at **2½ centavos** per trip (bus or tram), not 15. Paulo O. Cuartas, [memoir](http://losadultosylainternet.blogspot.com/2014/12/todo-tiempo-pasado-fue-mejor-ii.html). Later barrio memory of paying **15 centavos** to ride an *escalera* (the **vehicle** could be green/blue/red/yellow — not the ticket): [Mi Comuna Dos](https://www.micomunados.com/de-la-zorra-al-bus/).
+- By the **1980s** Bogotá trolley/bus payment is described as **cash to the driver**, not a paper stub (*Semana*, [fare history](https://www.semana.com/mejor-colombia/articulo/del-trolebus-al-sitp-asi-evoluciono-el-pago-del-pasaje-en-bogota/202417/)).
+
+Not this object:
+
+- Catalogue **Baraboo 15 cents** (`scrip-baraboo-15-centavos-a2819`) has a **green reverse**. That is Wisconsin 1933 Chamber scrip, not Colombia.
+- Later TransMilenio **green cards** are plastic smart cards, not 15-centavos paper.
+- Colombia did not issue a BanRep **15 centavos** banknote.
+
+If a green 15-centavos stub appears, treat it first as a possible **ordinary EDTU / municipal fare ticket** (or a student tiquete near the 1959 12.5 / remembered-15 band), still not BanRep paper.
+
 ## Legal frame (workers’ auxilio and company subsidy — not a student banknote)
 
 These laws explain “subsidio de transporte” in the period. They do **not** by themselves identify the paper object:
@@ -82,7 +101,7 @@ Student **cash** subsidies today (TuLlave / DaviPlata in Bogotá; Metro *tiquete
 ## Catalogue checklist when the piece arrives
 
 1. Photograph issuer line (ministry, Distrito Especial, EDTU, named bus company, school, or tram company).
-2. Record printed date and denomination exactly. If it says **5 centavos**, weigh tram-cupón (object 1) vs later student tiquete (objects 2–3) vs an unidentified municipal vale.
+2. Record printed date, **color**, and denomination exactly. **5 centavos** → tram-cupón vs later student tiquete vs unidentified vale. **15 centavos** (especially green) → possible EDTU/municipal ordinary fare stub or student tiquete near the 1959 12.5-centavos band; no published specimen found yet.
 3. Do not write “Decreto 188 de 1969” in public copy unless that number is on the paper or in the *Diario Oficial*.
 4. Serial / `no_serial_reason`; many tickets are numbered control stubs.
 5. Still not BanRep paper.
@@ -95,6 +114,6 @@ Student **cash** subsidies today (TuLlave / DaviPlata in Bogotá; Metro *tiquete
 
 ## Dedup (this research pass)
 
-No serial or cert. Fingerprint remains: Colombia · student or tram transport paper · 5 centavos **or** 12.5 centavos · 20th-century urban ticket. **0 catalogue holdings.** Do not create an entry from this note.
+No serial or cert. Fingerprints searched: 5 centavos student/tram paper; **15 centavos green** student/EDTU paper. Catalogue hit only for unrelated Baraboo **15 cents** (green reverse). **0 Colombian holdings.** Do not create an entry from this note.
 
 Related rule: `.cursor/rules/44-transporte-estudiantil.mdc`.
