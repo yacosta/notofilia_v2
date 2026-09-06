@@ -37,11 +37,11 @@ export const notafiliaCountries: NotafiliaCountry[] = [
   },
   {
     href: SERIES_PATH,
-    years: { es: '1944', en: '1944' },
+    years: { es: '1916–1944', en: '1916–1944' },
     title: { es: 'Filipinas', en: 'Philippines' },
     lead: {
-      es: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.',
-      en: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.',
+      es: 'Gobierno Insular y Commonwealth: 5 pesos del Banco Nacional de 1916 y Serie Victory n.º 66.',
+      en: 'Insular Government and Commonwealth: a 1916 National Bank 5-peso and Victory Series No. 66.',
     },
   },
   {

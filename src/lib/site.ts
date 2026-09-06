@@ -42,6 +42,7 @@ import {
   unitedStatesCoinageDedicatedSlugs,
 } from '../data/estados-unidos-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
+import { catalogNoteSlugs as philippinesPnbNoteSlugs, dedicatedCatalogPaths as philippinesPnbPaths } from '../data/philippines-pnb-1916';
 import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { canadaNoteSlugs } from '../data/canada-polymer';
 import { englandNoteSlugs } from '../data/england-polymer';
@@ -77,6 +78,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const item of articles) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const item of news) slugs.add(item.href.replace(/^\/|\/$/g, ''));
   for (const slug of philippinesNoteSlugs) slugs.add(slug);
+  for (const slug of philippinesPnbNoteSlugs) slugs.add(slug);
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of colombiaNoteSlugs) slugs.add(slug);
   slugs.add(COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
@@ -158,8 +160,8 @@ export {
 export const collections = [
   {
     href: SERIES_PATH,
-    es: { title: 'Filipinas', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5 y 20 pesos.' },
-    en: { title: 'Philippines', description: 'Commonwealth · Victory Series No. 66: 1, 2, 5, and 20 pesos.' },
+    es: { title: 'Filipinas', description: 'Gobierno Insular y Commonwealth: Banco Nacional de 1916 y Serie Victory n.º 66.' },
+    en: { title: 'Philippines', description: 'Insular Government and Commonwealth: 1916 National Bank and Victory Series No. 66.' },
   },
   {
     href: CHINA_PATH,
@@ -234,12 +236,12 @@ export const milestones: MilestoneItem[] = [
   {
     href: SERIES_PATH,
     es: {
-      title: 'Filipinas · Serie Victory n.º 66',
-      description: 'Primera vitrina del catálogo: 1, 2, 5 y 20 pesos del Commonwealth, alineados por denominación.',
+      title: 'Filipinas · Periodo estadounidense',
+      description: 'Primera vitrina del catálogo: 5 pesos del Banco Nacional de 1916 y 1, 2, 5 y 20 pesos de la Serie Victory n.º 66.',
     },
     en: {
-      title: 'Philippines · Victory Series No. 66',
-      description: 'First catalog case: Commonwealth 1, 2, 5, and 20 pesos, lined up by denomination.',
+      title: 'Philippines · American period',
+      description: 'First catalog case: a 1916 National Bank 5-peso and Commonwealth 1, 2, 5, and 20 pesos of Victory Series No. 66.',
     },
   },
   {
@@ -448,6 +450,7 @@ export const stubPages = [
 
 const dedicatedEs = [
   ...catalogPaths,
+  ...philippinesPnbPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),

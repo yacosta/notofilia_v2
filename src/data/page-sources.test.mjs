@@ -94,6 +94,7 @@ describe('page-specific catalog sources', () => {
     const philippinesHrefs = hrefsIn(exportArrayBlock(read('./philippines-victory-66.ts'), 'seriesSources'));
     assert.equal(philippinesHrefs.includes('https://en.numista.com/201642'), false);
     assert.equal(philippinesHrefs.includes('https://en.numista.com/203356'), false);
+    assert.equal(philippinesHrefs.includes('https://en.numista.com/237622'), false);
 
     const chinaHrefs = hrefsIn(exportArrayBlock(read('./china.ts'), 'seriesSources'));
     assert.equal(chinaHrefs.includes('https://en.numista.com/312895'), false);

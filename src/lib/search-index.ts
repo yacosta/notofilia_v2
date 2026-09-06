@@ -19,6 +19,7 @@ import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage';
 import { victoryNotes } from '../data/philippines-victory-66';
+import { pnbNotes } from '../data/philippines-pnb-1916';
 import { puertoRicoNotes } from '../data/puerto-rico';
 import { collections } from './site';
 import { localizePath, type Locale } from './locale-paths';
@@ -120,6 +121,24 @@ function pieceDocument(seed: PieceSeed, locale: Locale): SearchDocument {
 
 function pieceSeeds(): PieceSeed[] {
   const seeds: PieceSeed[] = [];
+
+  for (const note of pnbNotes) {
+    seeds.push({
+      id: `ph-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      serial: note.serial,
+      title: note.title,
+      dek: note.lead,
+      kicker: note.kicker,
+      signatures: note.signatures,
+      grade: note.grade,
+      description: note.description,
+      image: note.images.composite,
+      imageAlt: note.frontCaption,
+    });
+  }
 
   for (const note of victoryNotes) {
     seeds.push({

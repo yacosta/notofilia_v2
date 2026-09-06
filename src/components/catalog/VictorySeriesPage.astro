@@ -14,6 +14,7 @@ import {
   victoryNotes,
   notePath,
 } from '../../data/philippines-victory-66';
+import { pnbNotes, pnbNotePath } from '../../data/philippines-pnb-1916';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -80,9 +81,47 @@ const jsonLd = collectionPageJsonLd({
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
 
+      <section class="mt-16" aria-labelledby="pnb-holdings-heading">
+        <h2 id="pnb-holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.pnbHoldingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.pnbHoldingsIntro}</p>
+
+        <ol
+          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+          aria-label={t.pnbHoldingsTitle}
+        >
+          {
+            pnbNotes.map((note) => (
+              <li class="min-w-0">
+                <a
+                  href={pnbNotePath(note, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <CatalogThumb
+                    src={note.images.front}
+                    alt={note.frontCaption[locale]}
+                    width={1440}
+                    height={960}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {note.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
       <section class="mt-16" aria-labelledby="holdings-heading">
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.holdingsTitle}
+          {t.victoryHoldingsTitle}
         </h2>
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 

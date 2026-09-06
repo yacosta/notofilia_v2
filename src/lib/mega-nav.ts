@@ -97,8 +97,8 @@ export const megaNav: NavNode[] = [
         children: [
           {
             id: 'filipinas',
-            es: 'Commonwealth de Filipinas (1935 - 1945)',
-            en: 'Commonwealth of the Philippines (1935 - 1945)',
+            es: 'Filipinas (1916 - 1945)',
+            en: 'Philippines (1916 - 1945)',
             href: SERIES_PATH,
             flag: 'ph',
           },

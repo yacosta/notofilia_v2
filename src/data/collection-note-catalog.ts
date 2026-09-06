@@ -8,6 +8,7 @@ import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
 import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
+import { pnbNotes, pnbNotePath } from './philippines-pnb-1916';
 import { puertoRicoNotes, notePath as puertoRicoNotePath } from './puerto-rico';
 import { localizePath, type Locale } from '../lib/locale-paths';
 import {
@@ -119,6 +120,24 @@ function collectionSeeds(): CollectionSeed[] {
       serial: note.serial,
       issuer: note.kicker,
       year: yearFromText(note.printed.es, note.title.es, note.kicker.es),
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of pnbNotes) {
+    seeds.push({
+      id: `ph-${note.id}`,
+      country: 'PH',
+      href: pnbNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '1916',
       era: 'other',
       flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
       image: note.images.front,
