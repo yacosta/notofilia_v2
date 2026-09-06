@@ -234,6 +234,14 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '10.000 pesos · reposición estrella · 1994',
     en: '10,000 pesos · star replacement · 1994',
   },
+  '/coleccion/colombia-numismatica/': {
+    es: 'Casa de Moneda de Santa Fe y el peso',
+    en: 'The Santa Fe mint and the peso',
+  },
+  '/glosario/columnario-de-dos-mundos/': {
+    es: 'Columnario de dos mundos',
+    en: 'Pillar dollar (two worlds)',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -248,6 +256,14 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/colombia/10000-pesos-1994/': {
     es: 'La ficha del tipo en la colección virtual: Pick 437A, seriales 00113227 y 00249902.',
     en: 'The type record in the virtual collection: Pick 437A, serials 00113227 and 00249902.',
+  },
+  '/coleccion/colombia-numismatica/': {
+    es: 'La vitrina de moneda metálica colombiana, de las macuquinas al peso actual.',
+    en: 'The Colombian coinage case, from hammered cobs to the present peso.',
+  },
+  '/glosario/columnario-de-dos-mundos/': {
+    es: 'El tipo de 8 reales con las columnas de Hércules y los dos globos.',
+    en: 'The 8-real type with the Pillars of Hercules and the two globes.',
   },
 };
 
