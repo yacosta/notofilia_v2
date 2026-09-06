@@ -310,7 +310,7 @@ export const collectionNoteCatalogCopy = {
     sortLabel: 'Ordenar billetes',
     filterLabel: 'Filtrar billetes',
     statusLabel: 'Billetes visibles',
-    emptyQuery: 'Toda la colección. Escribe un término o elige un país.',
+    emptyQuery: 'Toda la colección. Escriba un término o elija un país.',
     noResults: 'No hay billetes para esta búsqueda.',
     resultCount: (count: number) => (count === 1 ? '1 billete' : `${count} billetes`),
     needsJs: 'La búsqueda en vivo necesita JavaScript. El formulario sigue disponible.',

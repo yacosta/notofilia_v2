@@ -38,6 +38,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 - 404 must exist for both locales (or one 404 that detects locale). Do not hard-code `locale="es"` only.
 - Shared UI strings belong in `src/i18n/` (create the module if missing). Until then, `copy` in `src/lib/site.ts` and `{ es, en }` objects in `src/data/` are the only allowed stores.
 - **No Spanish (or English) literals in components** for chrome, breadcrumbs, CTAs, `aria-label`, or alts. Catalog facts stay in `src/data/*`.
+- Reader-facing Spanish uses Colombian voice (`45-colombian-spanish-voice.mdc`). Catalogue facts (Pick, dates, serials, issuer names, technical descriptions) stay factual.
 - Thin route files under `src/pages/` pass `locale` into a `*Page.astro` type layout. Do not duplicate markup per locale.
 
 ## Images and LCP

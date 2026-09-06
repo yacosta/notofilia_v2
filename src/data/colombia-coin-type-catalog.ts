@@ -233,7 +233,7 @@ export const coinCatalogCopy = {
     sortLabel: 'Ordenar tipos',
     filterLabel: 'Filtrar tipos',
     statusLabel: 'Tipos visibles',
-    emptyQuery: 'Todos los tipos. Escribe un término o elige un filtro.',
+    emptyQuery: 'Todos los tipos. Escriba un término o elija un filtro.',
     noResults: 'No hay tipos para esta búsqueda.',
     resultCount: (count: number) => (count === 1 ? '1 tipo' : `${count} tipos`),
     needsJs: 'La búsqueda en vivo necesita JavaScript. El formulario sigue disponible.',

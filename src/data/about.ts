@@ -24,15 +24,15 @@ export const aboutCopy = {
     theSite: 'El sitio',
     site: [
       'Notofilia es un sitio sobre billetes y monedas —en español y en inglés— con una debilidad especial por Colombia y América Latina, cuya historia del papel moneda no recibe ni de cerca la atención que merece.',
-      'Vas a encontrar un catálogo de piezas de mi colección personal con buenas fotos y las historias detrás de cada una, un glosario bilingüe, y artículos sobre los bancos que imprimieron estos billetes, los artistas que los grabaron y las épocas que les tocó vivir.',
+      'Aquí encontrará un catálogo de piezas de mi colección personal, con buenas fotos y las historias detrás de cada una, un glosario bilingüe, y artículos sobre los bancos que imprimieron estos billetes, los artistas que los grabaron y las épocas que les tocó vivir.',
     ],
     aboutMe: 'Sobre mí',
     bioLead: 'Alguien me pasó un billete, y ahí impresa estaba la fecha de mi cumpleaños.',
     bio: [
-      'Me quedé asombrado —tenía en las manos algo que se había hecho cuando yo nací, algo que llevaba en el mundo exactamente el mismo tiempo que yo. Súmale a eso un niño que ya amaba la historia, y fue la combinación perfecta. Colecciono billetes desde que tenía unos cinco años.',
+      'Me quedé asombrado —tenía en las manos algo que se había hecho cuando yo nací, algo que llevaba en el mundo exactamente el mismo tiempo que yo. Súmele a eso un niño que ya amaba la historia, y fue la combinación perfecta. Colecciono billetes desde que tenía unos cinco años.',
       'Tantos años después sigo en esto, ahora sobre todo detrás de billetes colombianos, incluyendo algunas piezas del siglo XIX de bancos que dejaron de existir hace más de cien años —el Banco de Río Hacha, el Banco Hipotecario— además de monedas que se remontan aún más atrás.',
     ],
-    closing: 'Gracias por pasar por aquí. Ojalá algo de lo que encuentres te haga mirar dos veces.',
+    closing: 'Gracias por pasar por aquí. Ojalá algo de lo que encuentre le haga mirar dos veces.',
     brandLabel: 'mi propia marca',
     bioBrandBefore:
       '¿El resto de mi vida? Trabajo en tecnología. Soy esposo y papá de dos hermosos gemelos. Y disfruto de un buen cigarro —tanto que tengo ',
@@ -45,7 +45,7 @@ export const aboutCopy = {
     statsCountries: 'Países',
     statsFichas: 'Fichas',
     collectionCta: 'Ver la colección',
-    contactCta: 'Escribirme →',
+    contactCta: 'Escríbame →',
     pullQuote:
       '«Cada una de estas piezas fue dinero alguna vez. Pasó por mercados, bolsillos, guerras, malas economías y personas que cambiaron la historia, y sobrevivió lo suficiente para llegar a mis manos. ',
     pullQuoteAccent: 'Esa es la parte que casi todo el mundo pasa por alto: la historia.»',

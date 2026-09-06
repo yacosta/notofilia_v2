@@ -62,7 +62,7 @@ export const copy = {
     notaphilyBody:
       'Rama especializada de la numismática centrada específicamente en el estudio y la colección de billetes y papel moneda, incluyendo su historia, diseño, grabado y las emisiones de entidades tanto públicas como privadas.',
     newsletterTitle: 'Boletín',
-    newsletterBody: 'Suscríbase para recibir noticias de numismática y notafilia.',
+    newsletterBody: 'Suscríbase y, con mucho gusto, le enviaremos noticias de numismática y notafilia.',
     emailLabel: 'Correo electrónico',
     emailPlaceholder: 'su@correo.com',
     subscribe: 'Suscríbase',
@@ -82,7 +82,7 @@ export const copy = {
     designedBy: 'Página diseñada por',
     withLove: 'con mucho',
     love: 'amor',
-    comingSoon: 'Esta sección se está migrando a Notofilia v2.',
+    comingSoon: 'Esta sección se está migrando a Notofilia v2. Gracias por su paciencia.',
     backHome: 'Volver al inicio',
     numismaticsNav: 'Numismática',
     backNumismatics: 'Volver al catálogo de numismática',
@@ -101,7 +101,7 @@ export const copy = {
     casesLinedUp: 'Vitrinas alineadas de izquierda a derecha',
     collectorJobTitle: 'Coleccionista y tecnólogo',
     notFoundTitle: 'Página no encontrada',
-    notFoundBody: 'Esa dirección no existe en el catálogo.',
+    notFoundBody: 'Esa dirección no está en el catálogo. Puede volver al inicio.',
   },
   en: {
     skip: 'Skip to main content',

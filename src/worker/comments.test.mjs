@@ -104,7 +104,7 @@ describe('comments API', () => {
       );
       assert.equal(response.status, 403);
       const payload = await response.json();
-      assert.equal(payload.error, 'La verificación de seguridad falló. Inténtalo de nuevo.');
+      assert.equal(payload.error, 'La verificación de seguridad falló. Inténtelo de nuevo.');
       assert.equal(warnings.length, 1);
       assert.equal(warnings[0][0], 'Rejected Turnstile verification');
     } finally {

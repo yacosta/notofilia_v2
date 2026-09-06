@@ -95,7 +95,7 @@ export const editorialCopy = {
     valuationDate: 'Fecha de la valoración citada:',
     evidence: 'Evidencia:',
     editorialPolicy: 'Política editorial, fuentes y valoración',
-    keepExploring: 'Sigue explorando',
+    keepExploring: 'Siga explorando',
     backToBlog: 'Volver al blog',
     backToNews: 'Volver a noticias',
     byline: 'Notofilia',

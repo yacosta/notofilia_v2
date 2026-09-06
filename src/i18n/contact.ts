@@ -3,9 +3,9 @@
 export const contactClientCopy = {
   es: {
     sending: 'Enviando…',
-    success: '¡Gracias! Tu mensaje fue enviado correctamente.',
-    error: 'Hubo un error al enviar el formulario. Inténtalo de nuevo.',
-    turnstile: 'Por favor completa la verificación de seguridad.',
+    success: '¡Gracias! Recibimos su mensaje. Le responderemos con mucho gusto.',
+    error: 'Hubo un error al enviar el formulario. Inténtelo de nuevo, por favor.',
+    turnstile: 'Por favor complete la verificación de seguridad.',
     reportLead: 'Quiero reportar un error o aportar información.',
     recordLabel: 'Ficha: ',
     describe: 'Describa el error o la información adicional:',

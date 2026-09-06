@@ -98,7 +98,7 @@ async function onRequestPost(request: Request, env: CommentsEnv, slugParam: stri
     verification = await response.json();
   } catch (error) {
     console.error('Turnstile validation failed', error);
-    return json({ error: 'No se pudo completar la verificación. Inténtalo de nuevo.' }, { status: 502 });
+    return json({ error: 'No se pudo completar la verificación. Inténtelo de nuevo.' }, { status: 502 });
   }
 
   const requestHostname = new URL(request.url).hostname;
@@ -108,7 +108,7 @@ async function onRequestPost(request: Request, env: CommentsEnv, slugParam: stri
       action: verification.action,
       errors: verification['error-codes'],
     });
-    return json({ error: 'La verificación de seguridad falló. Inténtalo de nuevo.' }, { status: 403 });
+    return json({ error: 'La verificación de seguridad falló. Inténtelo de nuevo.' }, { status: 403 });
   }
 
   await env.COMMENTS_DB.prepare(
