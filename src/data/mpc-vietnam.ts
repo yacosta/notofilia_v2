@@ -365,8 +365,8 @@ export const mpcVietnamNotes: MpcVietnamNote[] = [
       composite: '/images/catalog/estados-unidos/mpc-661-5-composite.jpg',
       front: '/images/catalog/estados-unidos/mpc-661-5-front.jpg',
       back: '/images/catalog/estados-unidos/mpc-661-5-back.jpg',
-      width: 1600,
-      height: 1067,
+      width: 1440,
+      height: 960,
     },
     title: {
       es: '5 dólares · Serie 661',
