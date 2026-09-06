@@ -4,7 +4,7 @@ description: Audit changed files against site rules (before every PR)
 
 # Audit B — Single page or PR check
 
-Audit the files changed in this branch against `.cursor/rules/00-site-standards.mdc`, `10-page-types.mdc`, `20-hero.mdc`, `30-catalogue-duplicates.mdc`, `40-banrep-production.mdc` when Colombia printage or mintage copy changed, and `41-gonzalez-white.mdc` when Banco de la República type/date/replacement copy changed.
+Audit the files changed in this branch against `.cursor/rules/00-site-standards.mdc`, `10-page-types.mdc`, `20-hero.mdc`, `30-catalogue-duplicates.mdc`, `40-banrep-production.mdc` when Colombia printage or mintage copy changed, `41-gonzalez-white.mdc` when Banco de la República type/date/replacement copy changed, and `45-colombian-spanish-voice.mdc` when reader-facing Spanish chrome or copy changed.
 
 If the diff adds or edits a catalogue holding (`src/data/` country modules, piece routes, or `catalog-src/`), require a reported serial/cert search with zero unexpected matches, a bilingual pair (one data record, ES + EN routes), no second item for an existing serial, and a low/fancy/ordinary serial class (`30-catalogue-duplicates.mdc` §1.5) when a serial is present.
 
