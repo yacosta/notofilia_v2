@@ -10,4 +10,4 @@ Working copies for catalogue copy. Cite the issuer or the printed work on the si
 | `heritage/` | Heritage Auctions World Paper Money sold archive (*Colombia* search, Aug 2026). Comparables only — not holdings. |
 | `hernandez/` | Pedro Pablo Hernández, *Monedas y Billetes de Colombia*, 8ª ed. 2023 (OCR). Cite Numista L100183 on the site; do not republish prices or plates. |
 | `cashflow-scn83/` | MEI/Crane CASHFLOW SCN83 Colombia software bill-set identity card (variant 523334446). Validator index, not a holding or a grade. |
-| `colombia-transporte-estudiantil/` | Forthcoming 5-centavos student-transport subsidy ticket (Decreto 188 de 1969). Tiquete / boleto de control, not a BanRep banknote. No holding yet. |
+| `colombia-transporte-estudiantil/` | Forthcoming student/tram transport ticket (tiquete, vale, cupón). Not BanRep paper. Decreto 188 de 1969 is unverified; see the README. No holding yet. |
