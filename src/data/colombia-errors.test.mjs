@@ -46,6 +46,8 @@ describe('colombia-errors', () => {
     assert.equal(seriesCopy.en.errorsTitle, 'Errors');
     assert.match(seriesCopy.es.errorsIntro, /ordenados por año y denominación/);
     assert.match(seriesCopy.en.errorsIntro, /sorted by year and denomination/);
+    assert.equal(seriesCopy.es.errorsTiqueteHeading, 'Tiquete de Subsidio / Boleto de Control');
+    assert.equal(seriesCopy.en.errorsTiqueteHeading, 'Subsidy Ticket / Control Ticket');
   });
 
   it('renders error notes in one grid above sources on the series page', () => {
@@ -58,7 +60,11 @@ describe('colombia-errors', () => {
     assert.doesNotMatch(pageSource, /lg:grid-cols-4/);
     assert.doesNotMatch(pageSource, /errores-\$\{group\.year\}-\$\{group\.denomination\}-heading/);
     const erroresIndex = pageSource.indexOf('id="errores"');
+    const tiqueteIndex = pageSource.indexOf('id="tiquete-de-subsidio"');
     const sourcesIndex = pageSource.indexOf('t.sourcesTitle');
     assert.ok(erroresIndex > -1 && sourcesIndex > -1 && erroresIndex < sourcesIndex);
+    assert.ok(tiqueteIndex > erroresIndex && tiqueteIndex < sourcesIndex);
+    assert.match(pageSource, /t\.errorsTiqueteHeading/);
+    assert.match(pageSource, /id="tiquete-de-subsidio-heading"/);
   });
 });
