@@ -149,9 +149,10 @@ describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
     assert.match(note.kicker.en, /specimen/i);
     assert.match(note.description.es, /BG# 125/);
     assert.match(note.description.en, /BG# 125/);
-    assert.match(note.description.es, /Pick 399/);
-    assert.match(note.description.es, /Pick 406/);
-    assert.match(note.description.es, /Pick 430as/);
+    assert.doesNotMatch(note.description.es, /murallas de Cartagena/);
+    assert.doesNotMatch(note.description.es, /2\.000 pesos oro de 1983/);
+    assert.doesNotMatch(note.description.en, /walls of Cartagena/);
+    assert.doesNotMatch(note.description.en, /1983 2,000 pesos/);
     assert.doesNotMatch(note.printed.es, /30\.000\.000 de especímenes/);
     assert.match(note.printed.es, /no da una tirada de especímenes/);
     assert.match(note.scarcity.es, /no da tirada de especímenes/);
