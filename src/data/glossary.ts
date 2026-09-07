@@ -254,7 +254,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "choice-uncirculated",
     category: "Conservación",
     title: { es: "Choice Uncirculated (CH UNC)", en: "Choice Uncirculated (CH UNC)" },
-    definition: { es: "Grado Sheldon 63–64: sin circular, con centramiento y márgenes por encima de lo corriente, pero sin llegar al aspecto de gema. En esta colección, las pruebas ABNC del Banco de Rio Hacha llevan PMG 64 Choice Uncirculated EPQ.", en: "Sheldon grades 63–64: uncirculated, with centering and margins above the ordinary, but short of gem appearance. In this collection the ABNC Banco de Rio Hacha proofs include PMG 64 Choice Uncirculated EPQ." },
+    definition: { es: "Grado Sheldon 63–64: sin circular, con centramiento y márgenes por encima de lo corriente, pero sin llegar al aspecto de gema. En esta colección, las pruebas ABNC del Banco de Riohacha llevan PMG 64 Choice Uncirculated EPQ.", en: "Sheldon grades 63–64: uncirculated, with centering and margins above the ordinary, but short of gem appearance. In this collection the ABNC Banco de Riohacha proofs include PMG 64 Choice Uncirculated EPQ." },
     seeAlso: ["billete-sin-circular", "gem-uncirculated", "epq-calidad-de-papel-excepcional", "escala-sheldon"],
   },
   {
@@ -262,7 +262,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "coscoja",
     category: "Monedas y divisas",
     title: { es: "Coscoja", en: "Coscoja" },
-    definition: { es: "Moneda de los lazaretos colombianos (Caño del Loro, Contratación, Agua de Dios), de curso solo dentro del cordón sanitario. El apodo —poca cosa— nació con las piezas de níquel de 1, 5 y 10 pesos P/M de 1907. No confundir con la cocobola de 50 centavos.", en: "Coin of the Colombian lazarettos (Caño del Loro, Contratación, Agua de Dios), legal only inside the sanitary cordon. The nickname — a little thing — began with the 1907 nickel 1, 5, and 10 pesos P/M. Not the 50-centavo cocobola." },
+    definition: { es: "Moneda de los lazaretos colombianos (Caño del Oro, Contratación, Agua de Dios), de curso solo dentro del cordón sanitario. El apodo —poca cosa— nació con las piezas de níquel de 1, 5 y 10 pesos P/M de 1907. No confundir con la cocobola de 50 centavos.", en: "Coin of the Colombian lazarettos (Caño del Oro, Contratación, Agua de Dios), legal only inside the sanitary cordon. The nickname — a little thing — began with the 1907 nickel 1, 5, and 10 pesos P/M. Not the 50-centavo cocobola." },
     seeAlso: ["exonumia", "cocobola", "curso-legal"],
   },
   {

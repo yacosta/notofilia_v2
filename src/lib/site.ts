@@ -270,11 +270,11 @@ export const milestones: MilestoneItem[] = [
     href: LAZARETTOS_PATH,
     es: {
       title: 'Lazarettos',
-      description: 'Segunda vitrina de numismática: Caño de Loro, Contratación, Agua de Dios y la coscoja.',
+      description: 'Segunda vitrina de numismática: Caño del Oro, Contratación, Agua de Dios y la coscoja.',
     },
     en: {
       title: 'Lazarettos',
-      description: 'Second numismatics case: Caño de Loro, Contratación, Agua de Dios, and the coscoja.',
+      description: 'Second numismatics case: Caño del Oro, Contratación, Agua de Dios, and the coscoja.',
     },
   },
   {

@@ -17,16 +17,16 @@ export const lazarettosChapters: LazarettosChapter[] = [
     id: 'cano-de-loro',
     years: { es: '1598–1950', en: '1598–1950' },
     title: {
-      es: 'Caño del Loro · Bolívar',
-      en: 'Caño del Loro · Bolívar',
+      es: 'Caño del Oro · Bolívar',
+      en: 'Caño del Oro · Bolívar',
     },
     lead: {
       es: 'Cerca de Cartagena, en Bolívar: el lazareto creado para atender a los enfermos del norte del país.',
       en: 'Near Cartagena, in Bolívar: the lazaretto created to care for the sick of the north of the country.',
     },
     body: {
-      es: 'Ubicado cerca de Cartagena, Caño del Loro fue creado para atender a los enfermos del norte del país. Señal Memoria sitúa la construcción del Hospital de San Lázaro de Cartagena en 1592 y su apertura en 1598: allí reunieron a los enfermos llegados de España. El Archivo General de la Nación coloca ese hospital entre 1610 y 1640, y su traslado a la isla de Tierrabomba. La exposición del Banco de la República fecha en 1620 el primer lazareto del Nuevo Reino —el Real Hospital de San Lázaro, cerca de la plaza— y en 1784 el recinto de Caño del Loro, también llamado La Cantera, en una zona aislada de la bahía, hoy isla de Tierra Bomba. En 1742 el ingeniero Antonio de Arévalo recomendó mover el leprocomio a Caño del Loro, en Cantera Vieja; en 1772 había 104 internos. El decreto del 21 de febrero de 1835 lo asignó al Tercer Distrito, el norte de la República; en 1850 era lazareto provincial de Cartagena y, en 1861, del Estado de Bolívar. Fue el más antiguo de los tres que perdurarían. Trataron con aceite de chaulmoogra; las condiciones fueron precarias. El recinto se clausuró en 1950.',
-      en: 'Near Cartagena, Caño del Loro was created to care for the sick of the north of the country. Señal Memoria dates the Hospital of San Lázaro in Cartagena to a 1592 start of works and an opening in 1598: there the authorities gathered the sick who had arrived from Spain. The Archivo General de la Nación places that hospital between 1610 and 1640, and its transfer to the island of Tierrabomba. The Banco de la República exhibition dates the first lazaretto of the New Kingdom — the Royal Hospital of San Lázaro, near the plaza — to 1620, and Caño del Loro, also called La Cantera, to 1784, in an isolated reach of the bay, today the island of Tierra Bomba. In 1742 the engineer Antonio de Arévalo recommended moving the leprosarium to Caño del Loro, at Cantera Vieja; in 1772 it held 104 interned patients. The decree of 21 February 1835 assigned it to the Third District, the north of the Republic; in 1850 it was Cartagena’s provincial lazaretto and, in 1861, that of the State of Bolívar. It was the oldest of the three that would last. They treated with chaulmoogra oil; conditions were poor. The compound was closed in 1950.',
+      es: 'Ubicado cerca de Cartagena, Caño del Oro fue creado para atender a los enfermos del norte del país. Señal Memoria sitúa la construcción del Hospital de San Lázaro de Cartagena en 1592 y su apertura en 1598: allí reunieron a los enfermos llegados de España. El Archivo General de la Nación coloca ese hospital entre 1610 y 1640, y su traslado a la isla de Tierrabomba. La exposición del Banco de la República fecha en 1620 el primer lazareto del Nuevo Reino —el Real Hospital de San Lázaro, cerca de la plaza— y en 1784 el recinto de Caño del Oro, también llamado La Cantera, en una zona aislada de la bahía, hoy isla de Tierra Bomba. En 1742 el ingeniero Antonio de Arévalo recomendó mover el leprocomio a Caño del Oro, en Cantera Vieja; en 1772 había 104 internos. El decreto del 21 de febrero de 1835 lo asignó al Tercer Distrito, el norte de la República; en 1850 era lazareto provincial de Cartagena y, en 1861, del Estado de Bolívar. Fue el más antiguo de los tres que perdurarían. Trataron con aceite de chaulmoogra; las condiciones fueron precarias. El recinto se clausuró en 1950.',
+      en: 'Near Cartagena, Caño del Oro was created to care for the sick of the north of the country. Señal Memoria dates the Hospital of San Lázaro in Cartagena to a 1592 start of works and an opening in 1598: there the authorities gathered the sick who had arrived from Spain. The Archivo General de la Nación places that hospital between 1610 and 1640, and its transfer to the island of Tierrabomba. The Banco de la República exhibition dates the first lazaretto of the New Kingdom — the Royal Hospital of San Lázaro, near the plaza — to 1620, and Caño del Oro, also called La Cantera, to 1784, in an isolated reach of the bay, today the island of Tierra Bomba. In 1742 the engineer Antonio de Arévalo recommended moving the leprosarium to Caño del Oro, at Cantera Vieja; in 1772 it held 104 interned patients. The decree of 21 February 1835 assigned it to the Third District, the north of the Republic; in 1850 it was Cartagena’s provincial lazaretto and, in 1861, that of the State of Bolívar. It was the oldest of the three that would last. They treated with chaulmoogra oil; conditions were poor. The compound was closed in 1950.',
     },
   },
   {
@@ -41,8 +41,8 @@ export const lazarettosChapters: LazarettosChapter[] = [
       en: 'From the old leprosarium of El Curo: a confinement zone for the central and eastern region.',
     },
     body: {
-      es: 'Contratación, en Santander, se originó en el antiguo leprocomio de El Curo y funcionó como zona de reclusión para la región central y oriental. En 1812, a petición de los leprosos de aquel recinto, se fundó el lazareto en lo que hoy es el municipio. En 1822, por disposición de Francisco de Paula Santander, se alzaron dieciocho casas a orillas del río Suárez; de ese asiento nació el municipio. La guía de la exposición del Banco fecha el decreto del 21 de diciembre de 1835: el traslado de las concentraciones del Socorro y del Primer Distrito a un asentamiento nuevo, El Curo, en la orilla occidental del Suárez, cerca de Guadalupe. Rodríguez Salazar y Arévalo Hernández sitúan la organización republicana del recinto en 1861; Andrés Yepes Pérez precisa que el 27 de septiembre de ese año, por decreto de Eustorgio Salgar, presidente del Estado Soberano de Santander, el lugar empezó a recibir enfermos. El decreto 350 del 23 de marzo de 1906, bajo Rafael Reyes, lo declaró corregimiento destinado al reclusorio. Hasta 1910 no se fijaron los límites territoriales —lo mismo en Caño de Loro y en Agua de Dios—. Hubo juzgado, notaría y registro. El lugar acuñó su propia moneda. La Ley 148 de 1961 restituyó la ciudadanía; la Ordenanza 7 del 16 de marzo de 1962 erigió el municipio. Hoy sigue funcionando un sanatorio.',
-      en: 'Contratación, in Santander, grew out of the old leprosarium of El Curo and served as a confinement zone for the central and eastern region. In 1812, at the request of the lepers of that compound, the lazaretto was founded in what is now the municipality. In 1822, by order of Francisco de Paula Santander, eighteen houses went up on the banks of the Suárez River; the municipality grew from that settlement. The Bank’s exhibition guide dates the decree of 21 December 1835: the transfer of the concentrations at Socorro and in the First District to a new settlement, El Curo, on the western bank of the Suárez, near Guadalupe. Rodríguez Salazar and Arévalo Hernández place the republican organization of the compound in 1861; Andrés Yepes Pérez notes that on 27 September of that year, by decree of Eustorgio Salgar, president of the Sovereign State of Santander, the place began to receive the sick. Decree 350 of 23 March 1906, under Rafael Reyes, declared it a corregimiento destined as a place of confinement. Territorial limits were not fixed until 1910 — the same at Caño de Loro and Agua de Dios. There was a court, a notary, and a registry. The place struck its own coin. Law 148 of 1961 restored citizenship; Ordinance 7 of 16 March 1962 erected the municipality. A sanatorium still operates there.',
+      es: 'Contratación, en Santander, se originó en el antiguo leprocomio de El Curo y funcionó como zona de reclusión para la región central y oriental. En 1812, a petición de los leprosos de aquel recinto, se fundó el lazareto en lo que hoy es el municipio. En 1822, por disposición de Francisco de Paula Santander, se alzaron dieciocho casas a orillas del río Suárez; de ese asiento nació el municipio. La guía de la exposición del Banco fecha el decreto del 21 de diciembre de 1835: el traslado de las concentraciones del Socorro y del Primer Distrito a un asentamiento nuevo, El Curo, en la orilla occidental del Suárez, cerca de Guadalupe. Rodríguez Salazar y Arévalo Hernández sitúan la organización republicana del recinto en 1861; Andrés Yepes Pérez precisa que el 27 de septiembre de ese año, por decreto de Eustorgio Salgar, presidente del Estado Soberano de Santander, el lugar empezó a recibir enfermos. El decreto 350 del 23 de marzo de 1906, bajo Rafael Reyes, lo declaró corregimiento destinado al reclusorio. Hasta 1910 no se fijaron los límites territoriales —lo mismo en Caño del Oro y en Agua de Dios—. Hubo juzgado, notaría y registro. El lugar acuñó su propia moneda. La Ley 148 de 1961 restituyó la ciudadanía; la Ordenanza 7 del 16 de marzo de 1962 erigió el municipio. Hoy sigue funcionando un sanatorio.',
+      en: 'Contratación, in Santander, grew out of the old leprosarium of El Curo and served as a confinement zone for the central and eastern region. In 1812, at the request of the lepers of that compound, the lazaretto was founded in what is now the municipality. In 1822, by order of Francisco de Paula Santander, eighteen houses went up on the banks of the Suárez River; the municipality grew from that settlement. The Bank’s exhibition guide dates the decree of 21 December 1835: the transfer of the concentrations at Socorro and in the First District to a new settlement, El Curo, on the western bank of the Suárez, near Guadalupe. Rodríguez Salazar and Arévalo Hernández place the republican organization of the compound in 1861; Andrés Yepes Pérez notes that on 27 September of that year, by decree of Eustorgio Salgar, president of the Sovereign State of Santander, the place began to receive the sick. Decree 350 of 23 March 1906, under Rafael Reyes, declared it a corregimiento destined as a place of confinement. Territorial limits were not fixed until 1910 — the same at Caño del Oro and Agua de Dios. There was a court, a notary, and a registry. The place struck its own coin. Law 148 of 1961 restored citizenship; Ordinance 7 of 16 March 1962 erected the municipality. A sanatorium still operates there.',
     },
   },
   {
@@ -85,8 +85,8 @@ export const lazarettosSources: CatalogSource[] = [
     es: 'Banrepcultural — La moneda de los lazaretos (exposición, Museo Casa de Moneda, 2007–2008)',
     en: 'Banrepcultural — The coin of the lazarettos (exhibition, Casa de Moneda Museum, 2007–2008)',
     note: {
-      es: 'Curaduría de Andrés Yepes Pérez y guía de estudio n.° 61: decreto 300 del 12 de marzo de 1901 (20.000 pesos); series de 1901, 1907, 1921 y 1928; cruz de San Lázaro salvo en 1907; Caño del Loro (1784–1950), Contratación y Agua de Dios.',
-      en: 'Curated by Andrés Yepes Pérez, with study guide no. 61: decree 300 of 12 March 1901 (20,000 pesos); the 1901, 1907, 1921, and 1928 series; the cross of Saint Lazarus except in 1907; Caño del Loro (1784–1950), Contratación, and Agua de Dios.',
+      es: 'Curaduría de Andrés Yepes Pérez y guía de estudio n.° 61: decreto 300 del 12 de marzo de 1901 (20.000 pesos); series de 1901, 1907, 1921 y 1928; cruz de San Lázaro salvo en 1907; Caño del Oro (1784–1950), Contratación y Agua de Dios.',
+      en: 'Curated by Andrés Yepes Pérez, with study guide no. 61: decree 300 of 12 March 1901 (20,000 pesos); the 1901, 1907, 1921, and 1928 series; the cross of Saint Lazarus except in 1907; Caño del Oro (1784–1950), Contratación, and Agua de Dios.',
     },
   },
   {
@@ -94,14 +94,14 @@ export const lazarettosSources: CatalogSource[] = [
     es: 'Archivo General de la Nación — Agua de Dios, el leprocomio que fue cárcel para los enfermos de lepra (2022)',
     en: 'Archivo General de la Nación — Agua de Dios, the leprosarium that was a prison for those with leprosy (2022)',
     note: {
-      es: 'Sanatorio del 10 de agosto de 1870; Hospital de San Lázaro (1610–1640) y Caño de Loro; Contratación en 1822; Decreto 14 de 1905; monedas de circulación exclusiva; Ley 1435 de 2011.',
-      en: 'The sanatorium of 10 August 1870; the Hospital of San Lázaro (1610–1640) and Caño de Loro; Contratación in 1822; Decree 14 of 1905; coins of exclusive circulation; Law 1435 of 2011.',
+      es: 'Sanatorio del 10 de agosto de 1870; Hospital de San Lázaro (1610–1640) y Caño del Oro; Contratación en 1822; Decreto 14 de 1905; monedas de circulación exclusiva; Ley 1435 de 2011.',
+      en: 'The sanatorium of 10 August 1870; the Hospital of San Lázaro (1610–1640) and Caño del Oro; Contratación in 1822; Decree 14 of 1905; coins of exclusive circulation; Law 1435 of 2011.',
     },
   },
   {
     href: 'https://www.senalmemoria.co/piezas/lazaretos-lepra',
-    es: 'Señal Memoria — Lazaretos de Caño del Loro, Contratación y Agua de Dios',
-    en: 'Señal Memoria — The lazarettos of Caño del Loro, Contratación, and Agua de Dios',
+    es: 'Señal Memoria — Lazaretos de Caño del Oro, Contratación y Agua de Dios',
+    en: 'Señal Memoria — The lazarettos of Caño del Oro, Contratación, and Agua de Dios',
     note: {
       es: 'San Lázaro de Cartagena (1592–1598); traslado de 1742 por Arévalo; Contratación en 1812; Agua de Dios desde 1871; cordón de 1913 y policía interna de 1901.',
       en: 'San Lázaro of Cartagena (1592–1598); the 1742 move by Arévalo; Contratación in 1812; Agua de Dios from 1871; the 1913 cordon and the 1901 internal police.',
@@ -130,8 +130,8 @@ export const lazarettosSources: CatalogSource[] = [
     es: 'Botero-Jaramillo, Padilla-Pinzón, Beltrán-Serrano y Ossa-Trujillo — Tratamiento de la enfermedad de Hansen en Colombia (2017)',
     en: 'Botero-Jaramillo, Padilla-Pinzón, Beltrán-Serrano, and Ossa-Trujillo — The treatment of Hansen’s disease in Colombia (2017)',
     note: {
-      es: 'Abolición del aislamiento obligatorio por la Ley 148 de 1961; Caño de Loro hasta 1950; Agua de Dios y Contratación, municipios entre 1962 y 1963.',
-      en: 'Abolition of compulsory isolation by Law 148 of 1961; Caño de Loro until 1950; Agua de Dios and Contratación became municipalities between 1962 and 1963.',
+      es: 'Abolición del aislamiento obligatorio por la Ley 148 de 1961; Caño del Oro hasta 1950; Agua de Dios y Contratación, municipios entre 1962 y 1963.',
+      en: 'Abolition of compulsory isolation by Law 148 of 1961; Caño del Oro until 1950; Agua de Dios and Contratación became municipalities between 1962 and 1963.',
     },
   },
   {
@@ -148,8 +148,8 @@ export const lazarettosSources: CatalogSource[] = [
     es: 'Patricia Devia Angarita — Lepra in Colombia',
     en: 'Patricia Devia Angarita — Leprosy in Colombia',
     note: {
-      es: 'Aislamiento, legislación especial y moneda propia en Agua de Dios, Contratación y Caño de Loro; cambio de retórica médica hacia 1950.',
-      en: 'Isolation, special law, and a currency of their own at Agua de Dios, Contratación, and Caño de Loro; the shift in medical rhetoric toward 1950.',
+      es: 'Aislamiento, legislación especial y moneda propia en Agua de Dios, Contratación y Caño del Oro; cambio de retórica médica hacia 1950.',
+      en: 'Isolation, special law, and a currency of their own at Agua de Dios, Contratación, and Caño del Oro; the shift in medical rhetoric toward 1950.',
     },
   },
   {
@@ -166,8 +166,8 @@ export const lazarettosSources: CatalogSource[] = [
     es: 'Dema Coins — Leper colony coins: Colombian leprosarium coinage (2023)',
     en: 'Dema Coins — Leper colony coins: Colombian leprosarium coinage (2023)',
     note: {
-      es: 'Circulación restringida a Agua de Dios, Caño de Loro y Contratación; paralelo con Filipinas, Panamá y Venezuela.',
-      en: 'Circulation confined to Agua de Dios, Caño de Loro, and Contratación; the parallel with the Philippines, Panama, and Venezuela.',
+      es: 'Circulación restringida a Agua de Dios, Caño del Oro y Contratación; paralelo con Filipinas, Panamá y Venezuela.',
+      en: 'Circulation confined to Agua de Dios, Caño del Oro, and Contratación; the parallel with the Philippines, Panama, and Venezuela.',
     },
   },
 ];
@@ -176,13 +176,13 @@ export const lazarettosCopy = {
   es: {
     metaTitle: 'Lazarettos | Notofilia',
     metaDescription:
-      'Catálogo de lazaretos colombianos: Caño del Loro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
+      'Catálogo de lazaretos colombianos: Caño del Oro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
     kicker: 'Numismática',
     title: 'Lazarettos',
     heroAlt:
       'Póster ilustrado vintage de Agua de Dios, Cundinamarca, Ciudad de la Esperanza: pueblo colonial isométrico, catedral, río Bogotá, puente, Los Chorros y sello de Colombia Correos',
     intro: [
-      'Un lazareto no es una ceca. En Colombia fue la casa donde el Estado detenía a los enfermos de Hansen: Caño del Loro, cerca de Cartagena, para el norte; Contratación, nacida de El Curo, para el centro y el oriente; y Agua de Dios, el más poblado, grande e importante del país, hoy municipio de Cundinamarca. El nombre viene de Lázaro y de las órdenes de San Lázaro y de San Juan de Jerusalén, que cuidaron esos hospitales lejos de las periferias urbanas. El Hospital de San Lázaro de Cartagena abrió en 1598; de allí salió el primer lazareto de la costa. A comienzos del siglo XX, bajo la presunción de que el contagio pasaba también por los objetos, el decreto 300 del 12 de marzo de 1901 mandó veinte mil pesos en una moneda que no podía salir del recinto: la coscoja. Colombia fue el único país que grabó en ella la cruz de San Lázaro.',
+      'Un lazareto no es una ceca. En Colombia fue la casa donde el Estado detenía a los enfermos de Hansen: Caño del Oro, cerca de Cartagena, para el norte; Contratación, nacida de El Curo, para el centro y el oriente; y Agua de Dios, el más poblado, grande e importante del país, hoy municipio de Cundinamarca. El nombre viene de Lázaro y de las órdenes de San Lázaro y de San Juan de Jerusalén, que cuidaron esos hospitales lejos de las periferias urbanas. El Hospital de San Lázaro de Cartagena abrió en 1598; de allí salió el primer lazareto de la costa. A comienzos del siglo XX, bajo la presunción de que el contagio pasaba también por los objetos, el decreto 300 del 12 de marzo de 1901 mandó veinte mil pesos en una moneda que no podía salir del recinto: la coscoja. Colombia fue el único país que grabó en ella la cruz de San Lázaro.',
       'Esta vitrina reúne esa exonumia del aislamiento. No sustituye a las monedas de Santa Fe ni al papel de la banca libre: las acompaña. La exposición bibliográfica del Banco de la República, La moneda de los lazaretos, curada por Andrés Yepes Pérez, se mostró en el segundo piso del Museo Casa de Moneda —Calle 11 n.° 4-93, Bogotá— del 24 de octubre de 2007 al 14 de enero de 2008: un periplo por los tres recintos y las ocho piezas de la colección. Las fichas de cada tipo se publicarán como en Filipinas y en Colombia-Numismática, a medida que se documenten.',
     ],
     holdingsTitle: 'El catálogo',
@@ -193,13 +193,13 @@ export const lazarettosCopy = {
   en: {
     metaTitle: 'Lazarettos | Notofilia',
     metaDescription:
-      'Catalog of Colombian lazarettos: Caño del Loro, Contratación, Agua de Dios, and the coscoja, the exclusive coin of the sanitary cordon.',
+      'Catalog of Colombian lazarettos: Caño del Oro, Contratación, Agua de Dios, and the coscoja, the exclusive coin of the sanitary cordon.',
     kicker: 'Numismatics',
     title: 'Lazarettos',
     heroAlt:
       'Vintage illustrated poster of Agua de Dios, Cundinamarca, City of Hope: isometric colonial town, cathedral, Bogotá River, bridge, Los Chorros, and a Colombia Correos stamp',
     intro: [
-      'A lazaretto is not a mint. In Colombia it was the house where the State held those with Hansen’s disease: Caño del Loro, near Cartagena, for the north; Contratación, born of El Curo, for the centre and the east; and Agua de Dios, the most populous, largest, and most important in the country, today a municipality in Cundinamarca. The name comes from Lazarus and from the orders of Saint Lazarus and Saint John of Jerusalem, which kept those hospitals away from the urban peripheries. Cartagena’s Hospital of San Lázaro opened in 1598; from it came the first lazaretto on the coast. At the beginning of the twentieth century, under the presumption that contagion also passed through objects, decree 300 of 12 March 1901 ordered twenty thousand pesos in a coin that could not leave the compound: the coscoja. Colombia was the only country that engraved on it the cross of Saint Lazarus.',
+      'A lazaretto is not a mint. In Colombia it was the house where the State held those with Hansen’s disease: Caño del Oro, near Cartagena, for the north; Contratación, born of El Curo, for the centre and the east; and Agua de Dios, the most populous, largest, and most important in the country, today a municipality in Cundinamarca. The name comes from Lazarus and from the orders of Saint Lazarus and Saint John of Jerusalem, which kept those hospitals away from the urban peripheries. Cartagena’s Hospital of San Lázaro opened in 1598; from it came the first lazaretto on the coast. At the beginning of the twentieth century, under the presumption that contagion also passed through objects, decree 300 of 12 March 1901 ordered twenty thousand pesos in a coin that could not leave the compound: the coscoja. Colombia was the only country that engraved on it the cross of Saint Lazarus.',
       'This case gathers that exonumia of isolation. It does not replace the coins of Santa Fe or free-banking paper: it stands beside them. The Banco de la República’s bibliographic exhibition, The coin of the lazarettos, curated by Andrés Yepes Pérez, was shown on the second floor of the Casa de Moneda Museum — Calle 11 no. 4-93, Bogotá — from 24 October 2007 to 14 January 2008: a circuit through the three compounds and the eight pieces in the collection. Individual type pages will be published as they are documented, as in the Philippines case and Colombia-Numismatics.',
     ],
     holdingsTitle: 'The catalog',
