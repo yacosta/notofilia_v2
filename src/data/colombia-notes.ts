@@ -11,6 +11,7 @@ export type ColombiaNoteId =
   | '1-peso-oro-1954'
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
+  | '5-pesos-oro-1960'
   | '10-pesos-oro-1976'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
@@ -980,6 +981,109 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Mismo letra 389b: serie N, ABNC, 140 × 70 mm; firmas Julio Caro y Luis Ángel Arango en la fecha de 1944.',
           en: 'Same 389b letter: Series N, ABNC, 140 × 70 mm; Julio Caro and Luis Ángel Arango on the 1944 date.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-pesos-oro-1960',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}5-pesos-oro-1960/`,
+    pick: 'P# 405s',
+    serial: '00000000',
+    signatures: {
+      es: 'Jorge Cortés Boshell (gerente) y Germán Botero de los Ríos (secretario)',
+      en: 'Jorge Cortés Boshell (gerente) and Germán Botero de los Ríos (secretario)',
+    },
+    printed: {
+      es: 'Thomas De La Rue & Co., Londres. Espécimen de la fecha 20 de julio de 1960; serie M; formato publicado 140 × 70 mm. González White 2019 (BG# 125, p. 56) publica 30.000.000 de ejemplares de circulación, seriales 50.000.001–80.000.000, ocho dígitos, serie M; el pliego no da una tirada de especímenes. La tabla BanRep de 1960 registra producción de 1 peso, no de 5 pesos. No se publica aquí una tirada.',
+      en: 'Thomas De La Rue & Co., London. Specimen of the 20 July 1960 date; Series M; published size 140 × 70 mm. González White 2019 (BG# 125, p. 56) publishes 30,000,000 circulating notes, serials 50,000,001–80,000,000, eight digits, Series M; the spread does not give a specimen printage. BanRep’s 1960 table records 1-peso production, not 5-peso. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/5-pesos-oro-1960-00000000-composite.jpg',
+      front: '/images/catalog/colombia/5-pesos-oro-1960-00000000-front.jpg',
+      back: '/images/catalog/colombia/5-pesos-oro-1960-00000000-back.jpg',
+    },
+    title: {
+      es: '5 pesos oro · espécimen · 1960',
+      en: '5 pesos oro · specimen · 1960',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Espécimen TDLR',
+      en: 'Colombia · Banco de la República · TDLR specimen',
+    },
+    lead: {
+      es: 'Cinco pesos oro, espécimen Pick 405s: fecha 20 de julio de 1960, serie M, seriales de ceros. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A five-peso oro specimen, Pick 405s: date 20 July 1960, Series M, zero serials. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a Thomas De La Rue, de Londres, este cinco pesos oro de 1960. González White 2019 lo numera BG# 125 (p. 56): 20 de julio de 1960, serie M, ocho dígitos, pie Thomas de la Rue. El Bank Note Museum lo cataloga Pick 405, una sola fecha, y lo distingue del Pick 399 —mismo retrato de José María Córdova, edificio antiguo del banco al reverso—. Numista agrupa el diseño bajo N# 302384 (P# 405 / TBB B940; Hernández 127). Esta pieza es un espécimen: seriales rojos 00000000, dos veces, sin sobrecarga SPECIMEN ni MUESTRA y sin perforaciones de cancelación. La fecha impresa es «BOGOTÁ, COLOMBIA / 20 DE JULIO DE 1960». El anverso, en verde sobre fondo crema, lleva a la izquierda el retrato rotulado «CORDOBA» —González White anota que el apellido del general va escrito Córdoba en el papel—, al centro una alegoría femenina sentada sobre un paisaje de montañas y palmeras, y a la derecha un 5 en medallón. Las firmas son las de Jorge Cortés Boshell (gerente) y Germán Botero de los Ríos (secretario), el par que Numista y González White asignan a esa fecha (JCB, GBR). El reverso, en verde, muestra el edificio nuevo del Banco de la República en Bogotá —«EDIFICIO DEL BANCO DE LA REPUBLICA EN BOGOTÁ»— flanqueado por dos 5. El pie del anverso lee «THOMAS DE LA RUE & COY LTD LONDRES, INGLATERRA». No es el cinco de 1953 (Pick 399 / BG# 124), ni el de 1961–1981 con las murallas de Cartagena (Pick 406). Tampoco es el espécimen de 2.000 pesos oro de 1983 de esta misma vitrina, que comparte ceros de muestra pero lleva Pick 430as y SPECIMEN Nº 030. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'The Banco de la República ordered this 1960 five-peso oro from Thomas De La Rue of London. González White 2019 numbers it BG# 125 (p. 56): 20 July 1960, Series M, eight digits, Thomas de la Rue imprint. The Bank Note Museum catalogs it as Pick 405, a single date, and distinguishes it from Pick 399 — the same José María Córdova portrait, the old bank building on the back. Numista groups the design under N# 302384 (P# 405 / TBB B940; Hernández 127). This piece is a specimen: red serials 00000000, twice, with no SPECIMEN or MUESTRA overprint and no cancellation punches. The printed date is “BOGOTÁ, COLOMBIA / 20 DE JULIO DE 1960.” The face, green on a cream ground, carries at left the portrait labelled “CORDOBA” — González White notes that the general’s surname is spelled Córdoba on the paper — at center a seated female allegory over a landscape of mountains and palms, and at right a 5 in a medallion. The signatures are those of Jorge Cortés Boshell (gerente) and Germán Botero de los Ríos (secretario), the pair Numista and González White assign to that date (JCB, GBR). The green back shows the new Banco de la República building in Bogotá — “EDIFICIO DEL BANCO DE LA REPUBLICA EN BOGOTÁ” — flanked by two 5s. The face imprint reads “THOMAS DE LA RUE & COY LTD LONDRES, INGLATERRA.” It is not the 1953 five (Pick 399 / BG# 124), nor the 1961–1981 type with the walls of Cartagena (Pick 406). It is also not this case’s 1983 2,000 pesos oro specimen, which shares sample zeros but carries Pick 430as and SPECIMEN Nº 030. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 pesos oro, Pick 405s: José María Córdova, serie M, serial 00000000 y fecha 20 de julio de 1960.',
+      en: 'Face of the 5 pesos oro, Pick 405s: José María Córdova, Series M, serial 00000000, and the date 20 July 1960.',
+    },
+    backCaption: {
+      es: 'Reverso del 5 pesos oro, Pick 405s: edificio nuevo del Banco de la República en Bogotá y cifras 5.',
+      en: 'Back of the 5 pesos oro, Pick 405s: the new Banco de la República building in Bogotá and the figures 5.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 125, p. 56) publica 30.000.000 de ejemplares para el 20 de julio de 1960 de circulación, serie M, ocho dígitos, y anota numeración en rojo y en sepia; no da tirada de especímenes. Numista agrupa el diseño bajo N# 302384, índice de rareza 68, y lista la fecha como ejemplar de circulación (firmas JCB y GBR); no marca una fila de espécimen. El Bank Note Museum describe Pick 405 como esa fecha, TDLR, con el edificio nuevo del banco al reverso. Esta ficha no inventa una tirada de especímenes ni sustituye la emisión BG# por un total BanRep de denominación-año.',
+      en: 'González White 2019 (BG# 125, p. 56) publishes 30,000,000 notes for the circulating 20 July 1960 date, Series M, eight digits, and notes numbering in red and in sepia; it does not give a specimen printage. Numista groups the design under N# 302384, rarity index 68, and lists the date as a circulating note (signatures JCB and GBR); it does not mark a specimen row. The Bank Note Museum describes Pick 405 as that date, TDLR, with the new bank building on the back. This record does not invent a specimen printage or replace that BG# emisión with a BanRep denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00000000 de este Pick 405s. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 00000000 of this Pick 405s has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0405.htm',
+        es: 'Bank Note Museum — Colombia P-405, 5 pesos oro (20.07.1960)',
+        en: 'Bank Note Museum — Colombia P-405, 5 pesos oro (20.07.1960)',
+        note: {
+          es: '405: 20.07.1960; anverso José María Córdoba y alegoría; reverso edificio nuevo del Banco de la República en Bogotá; impresor Thomas de la Rue, Londres. Distinto del Pick 399 (edificio antiguo).',
+          en: '405: 20.07.1960; José María Córdoba and allegory on the face; new Banco de la República building in Bogotá on the back; printer Thomas de la Rue, London. Distinct from Pick 399 (old building).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note302384.html',
+        es: 'Numista — Colombia 5 pesos oro, N# 302384',
+        en: 'Numista — Colombia 5 pesos oro, N# 302384',
+        note: {
+          es: '20.07.1960: P# 405 / TBB B940; Hernández 127; firmas JCB y GBR; 140 × 70 mm; índice de rareza 68. Lista la fecha como circulación; no marca una fila de espécimen.',
+          en: '20.07.1960: P# 405 / TBB B940; Hernández 127; signatures JCB and GBR; 140 × 70 mm; rarity index 68. Lists the date as circulation; does not mark a specimen row.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-5-pesos-1960-p-405.html',
+        es: 'Banknote World — Colombia 5 pesos oro 1960, P-405',
+        en: 'Banknote World — Colombia 5 pesos oro 1960, P-405',
+        note: {
+          es: '20.07.1960; TDLR; 140 × 70 mm; firmas Jorge Cortés Boshell y Germán Botero de los Ríos; anverso Córdova, reverso edificio moderno del banco.',
+          en: '20.07.1960; TDLR; 140 × 70 mm; signatures Jorge Cortés Boshell and Germán Botero de los Ríos; Córdova on the face, modern bank building on the back.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1960: 82,6 millones de piezas de 1 peso. La tabla no registra 5 pesos ese año; no es la tirada de este espécimen ni de BG# 125.',
+          en: '1960 production: 82.6 million 1-peso notes. The table records no 5-peso notes that year; it is not the printage of this specimen or of BG# 125.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 127 para el ejemplar de circulación del 20 de julio de 1960; ese H# no se sustituye por el Cód. de 2023.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 127 for the 20 July 1960 circulating note; that H# is not replaced by a 2023 Cód.',
         },
       },
     ],
