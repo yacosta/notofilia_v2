@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { uniqueCatalogSources } from './catalog.ts';
+import { colombiaNotes } from './colombia-notes.ts';
 import newsArticlesJson from './news-articles.json' with { type: 'json' };
 
 const piecePages = [
@@ -130,6 +131,72 @@ describe('page-specific catalog sources', () => {
         );
       }
     }
+  });
+
+  it('lists Banknote World and RealBanknotes on Colombia pieces only when the copy names them', () => {
+    function prose(record) {
+      const skip = new Set(['sources', 'images', 'hero', 'path', 'pathEn', 'id', 'href', 'pieces']);
+      const strings = [];
+      const walk = (value) => {
+        if (typeof value === 'string') {
+          strings.push(value);
+          return;
+        }
+        if (Array.isArray(value)) {
+          value.forEach(walk);
+          return;
+        }
+        if (value && typeof value === 'object') {
+          for (const [key, child] of Object.entries(value)) {
+            if (!skip.has(key)) walk(child);
+          }
+        }
+      };
+      walk(record);
+      return strings.join('\n');
+    }
+
+    function check(id, copy, sources) {
+      for (const source of sources) {
+        if (source.href.includes('banknoteworld.org')) {
+          assert.match(
+            copy,
+            /Banknote World/,
+            `${id} lists ${source.href} but the copy never cites Banknote World`,
+          );
+        }
+        if (source.href.includes('realbanknotes.com')) {
+          assert.match(
+            copy,
+            /RealBanknotes/,
+            `${id} lists ${source.href} but the copy never cites RealBanknotes`,
+          );
+        }
+      }
+    }
+
+    for (const note of colombiaNotes) {
+      check(note.id, prose(note), note.sources);
+      for (const piece of note.pieces ?? []) {
+        check(piece.id, prose(piece), piece.sources);
+      }
+    }
+  });
+
+  it('keeps only consulted sources on the 1960 5 pesos oro specimen', () => {
+    const note = colombiaNotes.find((entry) => entry.id === '5-pesos-oro-1960');
+    assert.ok(note);
+    const hrefs = uniqueCatalogSources(note.sources).map((source) => source.href);
+    assert.deepEqual(hrefs, [
+      'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0405.htm',
+      'https://en.numista.com/catalogue/note302384.html',
+      'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+      'https://en.numista.com/L100183',
+    ]);
+    assert.equal(
+      hrefs.some((href) => href.includes('banknoteworld.org')),
+      false,
+    );
   });
 
   it('hides an empty SourceList instead of an empty Fuentes heading', () => {

@@ -156,6 +156,18 @@ describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
     assert.match(note.printed.es, /no da una tirada de especímenes/);
     assert.match(note.scarcity.es, /no da tirada de especímenes/);
     assert.match(note.scarcity.es, /82,6 millones|no registra 5 pesos|tabla BanRep de 1960|denominación-año/);
+    assert.equal(
+      note.sources.some((source) => source.href.includes('banknoteworld.org')),
+      false,
+    );
+    assert.equal(
+      note.sources.some((source) => source.href.includes('banknote.ws')),
+      true,
+    );
+    assert.equal(
+      note.sources.some((source) => source.href.includes('numista.com/catalogue/note302384')),
+      true,
+    );
     assert.equal(additions.some((row) => row.id === 'co-1960-5-pesos-oro-specimen-00000000'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1960-5-pesos-oro-p405s'), true);
   });

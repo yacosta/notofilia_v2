@@ -524,15 +524,6 @@ export const colombiaNotes: ColombiaNote[] = [
         },
       },
       {
-        href: 'https://www.realbanknotes.com/banknote/16848-Colombia-p380d-1-Peso-Oro-from-1944',
-        es: 'RealBanknotes — Colombia P-380d, 1 peso oro de 1944–1945',
-        en: 'RealBanknotes — Colombia P-380d, 1 peso oro of 1944–1945',
-        note: {
-          es: '20.7.1944 y 1.1.1945; ABNC; serie R en azul; anverso Santander y Bolívar, reverso Libertad.',
-          en: '20.7.1944 and 1.1.1945; ABNC; Series R in blue; Santander and Bolívar on the face, Liberty on the back.',
-        },
-      },
-      {
         href: 'https://en.numista.com/L100183',
         es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
         en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
@@ -615,15 +606,6 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '01.01.1954: P# 380g / TBB B922k; Hernández 38; serie HH; firmas LAA₂ y EAR; 140 × 70 mm; frecuencia 45 % en el tipo.',
           en: '01.01.1954: P# 380g / TBB B922k; Hernández 38; Series HH; signatures LAA₂ and EAR; 140 × 70 mm; 45% frequency within the type.',
-        },
-      },
-      {
-        href: 'https://www.realbanknotes.com/banknote/16851-Colombia-p380g-1-Peso-Oro-from-1954',
-        es: 'RealBanknotes — Colombia P-380g, 1 peso oro de 1954',
-        en: 'RealBanknotes — Colombia P-380g, 1 peso oro of 1954',
-        note: {
-          es: '1.1.1954; ABNC; serie HH; anverso Santander y Bolívar, reverso Libertad.',
-          en: '1.1.1954; ABNC; Series HH; Santander and Bolívar on the face, Liberty on the back.',
         },
       },
       {
@@ -888,15 +870,6 @@ export const colombiaNotes: ColombiaNote[] = [
             },
           },
           {
-            href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1955-p-390d.html',
-            es: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
-            en: 'Banknote World — Colombia 2 pesos oro 1955, P-390d',
-            note: {
-              es: 'Fecha 01.01.1955; ABNC; 140 × 70 mm; anverso Torres, reverso Libertad.',
-              en: 'Date 01.01.1955; ABNC; 140 × 70 mm; Torres on the face, Liberty on the back.',
-            },
-          },
-          {
             href: 'https://en.numista.com/L100183',
             es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
             en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
@@ -1060,15 +1033,6 @@ export const colombiaNotes: ColombiaNote[] = [
         },
       },
       {
-        href: 'https://www.banknoteworld.org/colombia-5-pesos-1960-p-405.html',
-        es: 'Banknote World — Colombia 5 pesos oro 1960, P-405',
-        en: 'Banknote World — Colombia 5 pesos oro 1960, P-405',
-        note: {
-          es: '20.07.1960; TDLR; 140 × 70 mm; firmas Jorge Cortés Boshell y Germán Botero de los Ríos; anverso Córdova, reverso edificio moderno del banco.',
-          en: '20.07.1960; TDLR; 140 × 70 mm; signatures Jorge Cortés Boshell and Germán Botero de los Ríos; Córdova on the face, modern bank building on the back.',
-        },
-      },
-      {
         href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
         es: 'Banco de la República — Producción y circulación de billetes y monedas',
         en: 'Banco de la República — Banknote and coin production and circulation',
@@ -1163,15 +1127,6 @@ export const colombiaNotes: ColombiaNote[] = [
         },
       },
       {
-        href: 'https://www.banknoteworld.org/colombia-10-pesos-oro-1974-p-407f-1.html',
-        es: 'Banknote World — Colombia 10 pesos oro 1974, P-407f.1',
-        en: 'Banknote World — Colombia 10 pesos oro 1974, P-407f.1',
-        note: {
-          es: 'Mismo letra 407f: Imprenta de Billetes, Bogotá; 140 × 70 mm; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
-          en: 'Same 407f letter: Imprenta de Billetes, Bogotá; 140 × 70 mm; no thread; Germán Botero de los Ríos and Antonio José Gutiérrez.',
-        },
-      },
-      {
         href: 'https://en.numista.com/L100183',
         es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
         en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
@@ -1254,15 +1209,6 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '01.04.1979: P# 421a / TBB B963a; Hernández 408; firmas RGQ y FJO; 140 × 70 mm; frecuencia 94 % en el tipo.',
           en: '01.04.1979: P# 421a / TBB B963a; Hernández 408; signatures RGQ and FJO; 140 × 70 mm; 94% frequency within the type.',
-        },
-      },
-      {
-        href: 'https://www.banknoteworld.org/colombia-1-000-pesos-oro-1979-p-421a.html',
-        es: 'Banknote World — Colombia 1.000 pesos oro 1979, P-421a',
-        en: 'Banknote World — Colombia 1,000 pesos oro 1979, P-421a',
-        note: {
-          es: '01.04.1979; ABNC; 140 × 70 mm; hilo de seguridad BRC; Galán y Palacio de Nariño.',
-          en: '01.04.1979; ABNC; 140 × 70 mm; BRC security thread; Galán and Palacio de Nariño.',
         },
       },
       {
