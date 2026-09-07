@@ -1,5 +1,5 @@
 ---
-description: Hernández 2023 Colombian coins and notes catalogue — consult for independence and free-banking paper
+description: Hernández 2023 Colombian coins and notes catalogue — independence, free-banking, and BanRep types through 2023
 globs:
   - src/data/colombia.ts
   - src/data/colombia-notes.ts
@@ -10,7 +10,7 @@ alwaysApply: false
 
 # Hernández, *Monedas y Billetes de Colombia* (8ª ed., 2023)
 
-Read `docs/sources/hernandez/README.md` before adding independence, banca libre, or Banco Nacional facts from this compiler.
+Read `docs/sources/hernandez/README.md` before adding independence, banca libre, Banco Nacional, or BanRep facts from this compiler.
 
 - Public cite: Numista **[L100183](https://en.numista.com/catalogue/literature.php?id=100183)**. Do not link the repo OCR.
 - This edition uses **Cód.** (e.g. **11** Santa Marta 1820 ¼ real; **1109** Riohacha 5 pesos 1 Jan 1883 circulating; **1134** Hipotecario 5 pesos ABNC). Older Notofilia H# (91, 95, 96, 199/201) follow **Numista**; do not overwrite them with 2023 Cód. unless Numista is updated.
