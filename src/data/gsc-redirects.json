@@ -2035,6 +2035,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/5-pesos-oro-1979/": {
+      "target": "/en/collection/colombia/5-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-oro-1979": {
+      "target": "/en/collection/colombia/5-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/5-pesos-oro-1980/": {
       "target": "/en/collection/colombia/5-pesos-oro-1980/",
       "status": 301,
