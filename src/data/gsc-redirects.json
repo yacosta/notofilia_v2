@@ -1,17 +1,70 @@
 {
-  "usedSeed": true,
-  "csv": "docs/seo/gsc-404-seed.csv",
+  "usedSeed": false,
+  "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
+    "gone": 16,
     "existing": 195,
-    "exists": 4,
-    "last-slug": 2,
-    "fuzzy": 1,
-    "hub-fallback": 4,
-    "category-hub": 1,
-    "gone": 2
+    "legacy-dc": 51,
+    "manual": 56,
+    "last-slug": 7,
+    "category-hub": 27,
+    "hub-fallback": 117,
+    "fuzzy": 3,
+    "last-slug-hreflang": 2,
+    "exists": 2
   },
-  "fuzzyOrHubPercent": 2.44,
+  "fuzzyOrHubPercent": 25.32,
   "redirects": {
+    "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2014/03/21/piden-a-benito-juarez-en-el-billete-de-1000-pesos/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2014/03/21/piden-a-benito-juarez-en-el-billete-de-1000-pesos": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2014/04/04/el-primer-sello-espanol-fue-emitido-hace-164-anos-y-estaba-dedicado-a-la-reina-isabel-ii/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2014/04/04/el-primer-sello-espanol-fue-emitido-hace-164-anos-y-estaba-dedicado-a-la-reina-isabel-ii": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2015/11/17/confirman-un-nuevo-billete-en-homenaje-a-madres-de-plaza-de-mayo/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2015/11/17/confirman-un-nuevo-billete-en-homenaje-a-madres-de-plaza-de-mayo": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2015/11/18/nueva-emision-del-billete-de-mil-pesos-con-fecha-19-de-agosto-de-2015/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/2015/11/18/nueva-emision-del-billete-de-mil-pesos-con-fecha-19-de-agosto-de-2015": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
     "/about": {
       "target": "/en/about/",
       "status": 301,
@@ -21,6 +74,456 @@
       "target": "/en/about/",
       "status": 301,
       "rule": "existing"
+    },
+    "/adolfo-suarez-tendra-el-primer-sello-de-una-persona-en-vida-con-imagen-del-museo-que-lleva-su-nombre/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/adolfo-suarez-tendra-el-primer-sello-de-una-persona-en-vida-con-imagen-del-museo-que-lleva-su-nombre": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/banco-de-la-republica-de-": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/banco-de-la-republica-de-/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/banxico-lanza-moneda-de-20-en-honor-belisario-dominguez/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/banxico-lanza-moneda-de-20-en-honor-belisario-dominguez": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/billete-adrian-insurance-company-michigan.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-adrian-insurance-company-michigan.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-certificado-de-oro-10-dolares-1928.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-certificado-de-oro-10-dolares-1928.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-cien-dolares-sello-rojo-1966.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-cien-dolares-sello-rojo-1966.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-citizens-bank-of-louisiana.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-citizens-bank-of-louisiana.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-city-bank-new-haven.dc": {
+      "target": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-city-bank-new-haven.dc/": {
+      "target": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-colombia-2000-pesos-error-corte-descentrado.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-2000-pesos-error-corte-descentrado.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-2000-pesos-error-mariposa.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-2000-pesos-error-mariposa.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-antioquia-libranza-10-centavos-1900.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-antioquia-libranza-10-centavos-1900.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-barranquilla-50-centavos-1880.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-barranquilla-50-centavos-1880.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-barranquilla-50-centavos-1900.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-barranquilla-50-centavos-1900.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-caldas-1-peso-1919.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-caldas-1-peso-1919.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-10-pesos-oro.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-10-pesos-oro.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-1000-pesos.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-1000-pesos.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-2000-pesos-oro.dc.html": {
+      "target": "/coleccion/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-colombia-banco-de-la-republica-2000-pesos-oro.dc.html/": {
+      "target": "/coleccion/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-colombia-banco-de-la-republica-50-pesos-oro-specimen.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-50-pesos-oro-specimen.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-500-pesos-oro-specimen.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-500-pesos-oro-specimen.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-5000-pesos-oro-specimen.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-republica-5000-pesos-oro-specimen.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-union-5-10-pesos-1883.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-la-union-5-10-pesos-1883.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-medellin-50-centavos.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-medellin-50-centavos.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-oriente-5-pesos-1888.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-oriente-5-pesos-1888.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-panama-1-5-pesos.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-de-panama-1-5-pesos.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-del-cauca-1-5-pesos-1888.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-del-cauca-1-5-pesos-1888.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-del-norte-5-pesos-1882.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-del-norte-5-pesos-1882.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-internacional-1-peso-1884.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-internacional-1-peso-1884.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-nacional-25-pesos-1895.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-banco-nacional-25-pesos-1895.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-boyaca-libranza-500-pesos-1883.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-boyaca-libranza-500-pesos-1883.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-cartagena-1-real-1813.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-cartagena-1-real-1813.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-departamento-de-antioquia-10-centavos-1961.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-departamento-de-antioquia-10-centavos-1961.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-estado-soberano-cauca-5-pesos-1882.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-estado-soberano-cauca-5-pesos-1882.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-estado-soberano-panama-3-pesos-1865.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-estado-soberano-panama-3-pesos-1865.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-republica-1904-serie.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-republica-1904-serie.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-vicente-villa-e-hijos-5-pesos-1880s.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-colombia-vicente-villa-e-hijos-5-pesos-1880s.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-diez-dolares-1934-distritos.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-diez-dolares-1934-distritos.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-ecuador-100-sucres-1993.dc.html": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-ecuador-100-sucres-1993.dc.html/": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-federal-reserve-bank-note-100-dolares-minneapolis-1929.dc.html": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-federal-reserve-bank-note-100-dolares-minneapolis-1929.dc.html/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-giori-press-test-note.dc": {
+      "target": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-giori-press-test-note.dc/": {
+      "target": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-guatemala-banco-colombiano-1-peso-1900.dc.html": {
+      "target": "/coleccion/guatemala/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-guatemala-banco-colombiano-1-peso-1900.dc.html/": {
+      "target": "/coleccion/guatemala/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-hagerstown-bank-maryland.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-hagerstown-bank-maryland.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-nueva-jersey-6-chelines-1776-colonial.dc.html": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-nueva-jersey-6-chelines-1776-colonial.dc.html/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-plata-1-dolar-norte-africa-1935a.dc.html": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-plata-1-dolar-norte-africa-1935a.dc.html/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-provincia-de-pensilvania-colonial.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-provincia-de-pensilvania-colonial.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/billete-state-bank-new-brunswick.dc": {
+      "target": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/billete-state-bank-new-brunswick.dc/": {
+      "target": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
     },
     "/blog/circo-ringling-bros-barnum-bailey/": {
       "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
@@ -42,25 +545,235 @@
       "status": 301,
       "rule": "existing"
     },
-    "/coleccion/1-peso-oro-1954": {
-      "target": "/coleccion/colombia/1-peso-oro-1954/",
+    "/catalogo-colombia.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-colombia.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-ecuador.dc.html": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-ecuador.dc.html/": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-emisiones-extranjero.dc": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-emisiones-extranjero.dc/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-emisiones-promocionales.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-emisiones-promocionales.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-moneda-colonial-espanola.dc": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-moneda-colonial-espanola.dc/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-moneda-colonial.dc.html": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-moneda-colonial.dc.html/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-puerto-rico.dc.html": {
+      "target": "/coleccion/puerto-rico/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-puerto-rico.dc.html/": {
+      "target": "/coleccion/puerto-rico/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-reserva-federal.dc": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo-reserva-federal.dc/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo.dc.html": {
+      "target": "/coleccion/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/catalogo.dc.html/": {
+      "target": "/coleccion/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/category/filatelia/%7B%7B%20item.url%20%7D%7D": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/filatelia/%7B%7B%20item.url%20%7D%7D/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/filatelia/noticias.dc.html": {
+      "target": "/noticias/",
       "status": 301,
       "rule": "last-slug"
     },
-    "/coleccion/1-peso-oro-1954/": {
-      "target": "/coleccion/colombia/1-peso-oro-1954/",
+    "/category/filatelia/noticias.dc.html/": {
+      "target": "/noticias/",
       "status": 301,
       "rule": "last-slug"
     },
-    "/coleccion/colombia/1-peso-oro-1954-banrep/": {
-      "target": "/coleccion/colombia/1-peso-oro-1954/",
+    "/category/filatelia/politica-privacidad-cookies.dc.html": {
+      "target": "/politica-privacidad-cookies/",
       "status": 301,
-      "rule": "fuzzy"
+      "rule": "manual"
     },
-    "/coleccion/colombia/1-peso-oro-1954-banrep": {
-      "target": "/coleccion/colombia/1-peso-oro-1954/",
+    "/category/filatelia/politica-privacidad-cookies.dc.html/": {
+      "target": "/politica-privacidad-cookies/",
       "status": 301,
-      "rule": "fuzzy"
+      "rule": "manual"
+    },
+    "/category/notafilia/%7B%7B%20item.url%20%7D%7D": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/notafilia/%7B%7B%20item.url%20%7D%7D/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/notafilia/noticias.dc.html": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/category/notafilia/noticias.dc.html/": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/category/notafilia/politica-privacidad-cookies.dc.html": {
+      "target": "/politica-privacidad-cookies/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/category/notafilia/politica-privacidad-cookies.dc.html/": {
+      "target": "/politica-privacidad-cookies/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/category/numismatica/%7B%7B%20item.url%20%7D%7D": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/numismatica/%7B%7B%20item.url%20%7D%7D/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/category/numismatica/noticias.dc.html": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/category/numismatica/noticias.dc.html/": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/category/numismatica/politica-privacidad-cookies.dc.html": {
+      "target": "/politica-privacidad-cookies/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/category/numismatica/politica-privacidad-cookies.dc.html/": {
+      "target": "/politica-privacidad-cookies/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/billete-obsoleto-estados-unidos/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/billete-obsoleto-estados-unidos": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/certificados-de-pago-militar/": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/certificados-de-pago-militar": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/certificados-de-pago-militar/1-dolar-serie-681/": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/certificados-de-pago-militar/1-dolar-serie-681": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/certificados-de-pago-militar/10-dolares-serie-641/": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/certificados-de-pago-militar/10-dolares-serie-641": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/certificados-de-pago-militar/20-dolares-serie-692/": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/certificados-de-pago-militar/20-dolares-serie-692": {
+      "target": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
+      "status": 301,
+      "rule": "last-slug"
     },
     "/coleccion/colombia/10-pesos-oro-1943-anverso": {
       "target": "/coleccion/colombia/10-pesos-oro-1943/",
@@ -92,6 +805,86 @@
       "status": 301,
       "rule": "existing"
     },
+    "/coleccion/colombia/2000-pesos-error-mariposa/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/2000-pesos-error-mariposa": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-colombiano-guatemala-1-peso-1900/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-colombiano-guatemala-1-peso-1900": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-barranquilla-50-centavos-1880/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-barranquilla-50-centavos-1880": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-barranquilla-50-centavos-1900/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-barranquilla-50-centavos-1900": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-caldas-1-peso-1919/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-caldas-1-peso-1919": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-colombia-1-peso-oro-1919/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-colombia-1-peso-oro-1919": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-la-republica-10000-pesos-specimen/%7B%7B%20item.url%20%7D%7D": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-la-republica-10000-pesos-specimen/%7B%7B%20item.url%20%7D%7D/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-la-republica-2-pesos-oro-1972/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-la-republica-2-pesos-oro-1972": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
     "/coleccion/colombia/banco-de-la-republica-2000-pesos-oro": {
       "target": "/coleccion/colombia/2000-pesos-oro-1983/",
       "status": 301,
@@ -102,15 +895,115 @@
       "status": 301,
       "rule": "existing"
     },
-    "/coleccion/colombia/nota-v1-ya-no-en-catalogo/": {
+    "/coleccion/colombia/banco-de-la-republica-medio-peso-oro-specimen/": {
       "target": "/coleccion/colombia/",
       "status": 301,
       "rule": "hub-fallback"
     },
-    "/coleccion/colombia/nota-v1-ya-no-en-catalogo": {
+    "/coleccion/colombia/banco-de-la-republica-medio-peso-oro-specimen": {
       "target": "/coleccion/colombia/",
       "status": 301,
       "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-medellin-50-centavos/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-medellin-50-centavos": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-oriente-5-pesos-1888/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-de-oriente-5-pesos-1888": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-del-norte-5-pesos-1882/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-del-norte-5-pesos-1882": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-hipotecario-5-pesos-1881/": {
+      "target": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/colombia/banco-hipotecario-5-pesos-1881": {
+      "target": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/colombia/banco-nacional-25-pesos-1895/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/banco-nacional-25-pesos-1895": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/emisiones-en-el-extranjero/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/emisiones-en-el-extranjero": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/estado-soberano-panama-3-pesos-1865/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/estado-soberano-panama-3-pesos-1865": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/republica-1904-serie/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/republica-1904-serie": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/vicente-villa-e-hijos-5-pesos/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/vicente-villa-e-hijos-5-pesos": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/diez-dolares-1934-distritos/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/diez-dolares-1934-distritos": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
     },
     "/coleccion/ecuador/100-sucres-1993": {
       "target": "/coleccion/ecuador/",
@@ -121,6 +1014,36 @@
       "target": "/coleccion/ecuador/",
       "status": 301,
       "rule": "existing"
+    },
+    "/coleccion/emisiones-promocionales/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/emisiones-promocionales": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/emisiones-promocionales/food-coupon-2-dolares-1967/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/emisiones-promocionales/food-coupon-2-dolares-1967": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/emisiones-promocionales/food-coupon-50-centavos-1967/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/emisiones-promocionales/food-coupon-50-centavos-1967": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
     },
     "/coleccion/estados-unidos/renci": {
       "target": "/coleccion/estados-unidos/rency/",
@@ -172,6 +1095,106 @@
       "status": 301,
       "rule": "existing"
     },
+    "/coleccion/hagerstown-bank-maryland/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/hagerstown-bank-maryland": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/moneda-colonial-espanola/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/moneda-colonial-espanola": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iii-1774/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iii-1774": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/moneda-colonial": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/moneda-colonial/nueva-jersey-6-chelines-1776/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial/nueva-jersey-6-chelines-1776": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial/perfil-andrew-jackson/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/moneda-colonial/perfil-andrew-jackson": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/mozambique/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/mozambique": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/nigeria/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/nigeria": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
     "/coleccion/numismatica/colombia": {
       "target": "/coleccion/colombia-numismatica/",
       "status": 301,
@@ -202,6 +1225,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/coleccion/papua-nueva-guinea/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/papua-nueva-guinea": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
     "/coleccion/polimero-mundial/america-del-norte/canada": {
       "target": "/coleccion/polimero-mundial/Canada/",
       "status": 301,
@@ -211,6 +1244,26 @@
       "target": "/coleccion/polimero-mundial/Canada/",
       "status": 301,
       "rule": "existing"
+    },
+    "/coleccion/polimero-mundial/brazil-10-reais-2000/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/brazil-10-reais-2000": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/brunei-ringgit/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/brunei-ringgit": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
     },
     "/coleccion/polimero-mundial/canada": {
       "target": "/coleccion/polimero-mundial/Canada/",
@@ -222,6 +1275,306 @@
       "status": 301,
       "rule": "existing"
     },
+    "/coleccion/polimero-mundial/catar-100-riyals/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/catar-100-riyals": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/costa-rica-20-1000-colones/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/costa-rica-20-1000-colones": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/guatemala-1-5-quetzales/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/guatemala-1-5-quetzales": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/honduras-20-lempiras-2008/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/honduras-20-lempiras-2008": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/kazajistan-1000-tenge/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/kazajistan-1000-tenge": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/malasia-ringgit/": {
+      "target": "/coleccion/polimero-mundial/asia/malasia/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/polimero-mundial/malasia-ringgit": {
+      "target": "/coleccion/polimero-mundial/asia/malasia/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/polimero-mundial/mexico-20-50-100-pesos/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/mexico-20-50-100-pesos": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/mozambique-20-50-100-meticais/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/mozambique-20-50-100-meticais": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005/%7B%7B%20item.url%20%7D%7D": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005/%7B%7B%20item.url%20%7D%7D/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005/noticias.dc.html": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/polimero-mundial/nepal-10-rupias-2005/noticias.dc.html/": {
+      "target": "/noticias/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/polimero-mundial/nicaragua-10-20-cordobas/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nicaragua-10-20-cordobas": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nigeria-naira/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/nigeria-naira": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/oman-5-rials-2010/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/oman-5-rials-2010": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/papua-nueva-guinea-kina/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/papua-nueva-guinea-kina": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/perfil-malietoa-tanumafili-ii/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/perfil-malietoa-tanumafili-ii": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/republica-dominicana-20-pesos-2009/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/republica-dominicana-20-pesos-2009": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/rumania-lei/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/rumania-lei": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/samoa-2-tala/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/samoa-2-tala": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/sri-lanka-200-rupias-1998/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/sri-lanka-200-rupias-1998": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/suazilandia-emalangeni/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/suazilandia-emalangeni": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/taiwan-50-dolares/": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/polimero-mundial/taiwan-50-dolares": {
+      "target": "/coleccion/polimero-mundial/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/pop-art/": {
+      "target": "/coleccion/estados-unidos/rency/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/pop-art": {
+      "target": "/coleccion/estados-unidos/rency/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/pop-art/life-is-beautiful-spray-cans/": {
+      "target": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/pop-art/life-is-beautiful-spray-cans": {
+      "target": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/puerto-rico/perfil-alejandro-ramirez/": {
+      "target": "/coleccion/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/puerto-rico/perfil-alejandro-ramirez": {
+      "target": "/coleccion/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/reserva-federal/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/reserva-federal": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/ringling-bros-50-aniversario-baraboo/": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/ringling-bros-50-aniversario-baraboo": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/state-bank-new-brunswick/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/state-bank-new-brunswick": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/state-bank-new-brunswick/1-dolar/": {
+      "target": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/state-bank-new-brunswick/1-dolar": {
+      "target": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/veinte-dolares-hawaii-1934/": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/coleccion/veinte-dolares-hawaii-1934": {
+      "target": "/coleccion/estados-unidos/",
+      "status": 301,
+      "rule": "category-hub"
+    },
     "/contact": {
       "target": "/en/contact/",
       "status": 301,
@@ -232,15 +1585,25 @@
       "status": 301,
       "rule": "existing"
     },
-    "/contacto.dc.html": {
+    "/contacto.dc": {
       "target": "/contacto/",
       "status": 301,
       "rule": "existing"
     },
-    "/contacto.dc.html/": {
+    "/contacto.dc/": {
       "target": "/contacto/",
       "status": 301,
       "rule": "existing"
+    },
+    "/el-museo-arqueologico-muestra-una-coleccion-exclusiva-de-monedas-de-la-ceca-conquense/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/el-museo-arqueologico-muestra-una-coleccion-exclusiva-de-monedas-de-la-ceca-conquense": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
     },
     "/en/acerca-de": {
       "target": "/en/about/",
@@ -292,6 +1655,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/blog/figures-on-colombia-banknotes/": {
+      "target": "/en/blog/figures-on-colombian-banknotes/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/blog/figures-on-colombia-banknotes": {
+      "target": "/en/blog/figures-on-colombian-banknotes/",
+      "status": 301,
+      "rule": "manual"
+    },
     "/en/blog/mejores-empresas-certificacion-monedas-billetes/": {
       "target": "/en/blog/best-coin-and-banknote-grading-companies/",
       "status": 301,
@@ -341,6 +1714,16 @@
       "target": "/en/blog/origins-of-commercial-banking-puerto-rico/",
       "status": 301,
       "rule": "existing"
+    },
+    "/en/blog/origins-of-commercial-banking-in-colombia-free-banking/": {
+      "target": "/en/blog/origins-of-commercial-banking-colombia-free-banking/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/en/blog/origins-of-commercial-banking-in-colombia-free-banking": {
+      "target": "/en/blog/origins-of-commercial-banking-colombia-free-banking/",
+      "status": 301,
+      "rule": "fuzzy"
     },
     "/en/blog/personajes-billetes-colombia/": {
       "target": "/en/blog/figures-on-colombian-banknotes/",
@@ -1762,6 +3145,36 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/collection/1761-utrecht-gold-ducat/": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/1761-utrecht-gold-ducat": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/adrian-insurance-michigan/2-dollars/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/adrian-insurance-michigan/2-dollars": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/city-bank-new-haven/5-dollars/": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/city-bank-new-haven/5-dollars": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "manual"
+    },
     "/en/collection/colombia/10-pesos-oro-1943-anverso": {
       "target": "/en/collection/colombia/10-pesos-oro-1943/",
       "status": 301,
@@ -1792,6 +3205,126 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/collection/colombia/2000-pesos-1996-butterfly-error/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/2000-pesos-1996-butterfly-error": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/2000-pesos-butterfly-error/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/2000-pesos-butterfly-error": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-colombiano-guatemala-1-peso-1900/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-colombiano-guatemala-1-peso-1900": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-antioquia-warrant-10-centavos-1900/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-antioquia-warrant-10-centavos-1900": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-barranquilla-50-centavos-1900/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-barranquilla-50-centavos-1900": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-colombia-1-peso-oro-1919/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-colombia-1-peso-oro-1919": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-10-pesos-oro-1943/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/colombia/banco-de-la-republica-10-pesos-oro-1943": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/colombia/banco-de-la-republica-10-pesos-oro/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-10-pesos-oro": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-100-pesos-oro/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-100-pesos-oro": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-1000-pesos/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-1000-pesos": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2-pesos-oro/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2-pesos-oro": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2000-pesos-debora-arango-prueba-anverso/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2000-pesos-debora-arango-prueba-anverso": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
     "/en/collection/colombia/banco-de-la-republica-2000-pesos-oro": {
       "target": "/en/collection/colombia/2000-pesos-oro-1983/",
       "status": 301,
@@ -1802,13 +3335,533 @@
       "status": 301,
       "rule": "existing"
     },
-    "/en/collection/filipinas/": {
-      "target": "/en/collection/philippines/",
+    "/en/collection/colombia/banco-de-la-republica/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-republica": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-union-5-10-pesos-1883/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-la-union-5-10-pesos-1883": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-pamplona-10-pesos-1884/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-pamplona-10-pesos-1884": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-panama-1-5-pesos/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-de-panama-1-5-pesos": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-del-cauca-1-5-pesos-1888/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-del-cauca-1-5-pesos-1888": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-del-norte-5-pesos-1882/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-del-norte-5-pesos-1882": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-internacional-1-peso-1884/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-internacional-1-peso-1884": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-union-cartagena-1-peso-1880s/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/banco-union-cartagena-1-peso-1880s": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/cartagena-1-real-1813/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/cartagena-1-real-1813": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/last-century/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/last-century": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-german-gutierrez-de-pineres/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-german-gutierrez-de-pineres": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-rafael-nunez/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-rafael-nunez": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-simon-bolivar/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/profile-simon-bolivar": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/republic-1904-series/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/republic-1904-series": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/republic-1910-1915-issues/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/republic-1910-1915-issues": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/santa-marta-quarter-real-1820/": {
+      "target": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/colombia/santa-marta-quarter-real-1820": {
+      "target": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/colombia/sovereign-state-cundinamarca-1-peso-1870/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/sovereign-state-cundinamarca-1-peso-1870": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/sovereign-state-panama-3-pesos-1865/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/sovereign-state-panama-3-pesos-1865": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/vicente-villa-e-hijos-5-pesos/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colombia/vicente-villa-e-hijos-5-pesos": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/new-jersey-6-shillings-1776/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/new-jersey-6-shillings-1776": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-alexander-hamilton/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-alexander-hamilton": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-andrew-jackson/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-andrew-jackson": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-benjamin-franklin/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/profile-benjamin-franklin": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/province-of-pennsylvania/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/colonial-paper-money/province-of-pennsylvania": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/federal-reserve/one-hundred-dollars-1990-cleveland/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/federal-reserve/one-hundred-dollars-1990-cleveland": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/giori-press-test-note-lincoln-memorial-uniface/": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
       "status": 301,
       "rule": "category-hub"
     },
-    "/en/collection/filipinas": {
-      "target": "/en/collection/philippines/",
+    "/en/collection/giori-press-test-note-lincoln-memorial-uniface": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/giori-press-test-note/": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/giori-press-test-note": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/gold-certificate-10-dollars-1928/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/gold-certificate-10-dollars-1928": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/military-payment-certificates/1-dollar-series-681/": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/military-payment-certificates/1-dollar-series-681": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/military-payment-certificates/10-dollars-series-641/": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/military-payment-certificates/10-dollars-series-641": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/military-payment-certificates/20-dollars-series-692/": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/military-payment-certificates/20-dollars-series-692": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/moneda-colonial-espanola/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/moneda-colonial-espanola": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/one-hundred-dollars-minneapolis-1929/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/one-hundred-dollars-minneapolis-1929": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/philippines/1-peso-victory-series-66/": {
+      "target": "/en/collection/philippines/1-peso/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/philippines/1-peso-victory-series-66": {
+      "target": "/en/collection/philippines/1-peso/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/philippines/2-pesos-victory-series-66/": {
+      "target": "/en/collection/philippines/2-pesos/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/philippines/2-pesos-victory-series-66": {
+      "target": "/en/collection/philippines/2-pesos/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/pop-art/": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/pop-art": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/pop-art/lionel-messi-leo/": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/pop-art/lionel-messi-leo": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/pop-art/pele-bicycle-kick-the-king/": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/pop-art/pele-bicycle-kick-the-king": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/promotional-issues/food-coupon-5-dollars-2000/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/promotional-issues/food-coupon-5-dollars-2000": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/promotional-issues/food-coupon-50-cents-1967/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/promotional-issues/food-coupon-50-cents-1967": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/billete-de-canje-1-peso-1895/": {
+      "target": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "status": 301,
+      "rule": "last-slug-hreflang"
+    },
+    "/en/collection/puerto-rico/billete-de-canje-1-peso-1895": {
+      "target": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "status": 301,
+      "rule": "last-slug-hreflang"
+    },
+    "/en/collection/puerto-rico/junta-central-cuba-1869/": {
+      "target": "/en/collection/puerto-rico/central-board-receipt-1869/",
+      "status": 301,
+      "rule": "last-slug-hreflang"
+    },
+    "/en/collection/puerto-rico/junta-central-cuba-1869": {
+      "target": "/en/collection/puerto-rico/central-board-receipt-1869/",
+      "status": 301,
+      "rule": "last-slug-hreflang"
+    },
+    "/en/collection/puerto-rico/national-treasury-25-pesos-1813/": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/national-treasury-25-pesos-1813": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/profile-alejandro-ramirez/": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/profile-alejandro-ramirez": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/republic-of-cuba-1-peso-1869/": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/puerto-rico/republic-of-cuba-1-peso-1869": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/ringling-bros-50th-anniversary-baraboo/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/ringling-bros-50th-anniversary-baraboo": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/spanish-colonial-coinage/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/spanish-colonial-coinage": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-carlos-iii-1787/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-carlos-iii-1787": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1811/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1811": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/2-escudos-felipe-v-bogota/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/spanish-colonial-coinage/2-escudos-felipe-v-bogota": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/state-bank-new-brunswick/1-dollar/": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/state-bank-new-brunswick/1-dollar": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/ten-dollars-1934-districts/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/ten-dollars-1934-districts": {
+      "target": "/en/collection/united-states/",
       "status": 301,
       "rule": "category-hub"
     },
@@ -1862,6 +3915,56 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/collection/us-department-of-the-treasury/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/us-department-of-the-treasury": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/usda-food-coupons/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/usda-food-coupons": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/world-polymer/brazil-10-reais-2000/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/brazil-10-reais-2000": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/brunei-ringgit/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/brunei-ringgit": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/bulgaria-20-leva-2005/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/bulgaria-20-leva-2005": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
     "/en/collection/world-polymer/canada": {
       "target": "/en/collection/world-polymer/Canada/",
       "status": 301,
@@ -1871,6 +3974,136 @@
       "target": "/en/collection/world-polymer/Canada/",
       "status": 301,
       "rule": "existing"
+    },
+    "/en/collection/world-polymer/chile-1000-2000-pesos/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/chile-1000-2000-pesos": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/china-100-yuan-2000/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/china-100-yuan-2000": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/costa-rica-20-1000-colones/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/costa-rica-20-1000-colones": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/dominican-republic-20-pesos-2009/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/dominican-republic-20-pesos-2009": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/guatemala-1-5-quetzales/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/guatemala-1-5-quetzales": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/haiti-1-2-50-gourdes/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/haiti-1-2-50-gourdes": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/hong-kong-10-dollars-2007/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/hong-kong-10-dollars-2007": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/kazakhstan-1000-tenge/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/kazakhstan-1000-tenge": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/malaysia-ringgit/": {
+      "target": "/en/collection/world-polymer/asia/malaysia/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/world-polymer/malaysia-ringgit": {
+      "target": "/en/collection/world-polymer/asia/malaysia/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/world-polymer/mexico-20-50-100-pesos/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/mexico-20-50-100-pesos": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/mozambique-20-50-100-meticais/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/mozambique-20-50-100-meticais": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/nicaragua-10-20-cordobas/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/nicaragua-10-20-cordobas": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/nigeria-naira/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/nigeria-naira": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
     },
     "/en/collection/world-polymer/north-america/canada": {
       "target": "/en/collection/world-polymer/Canada/",
@@ -1882,12 +4115,82 @@
       "status": 301,
       "rule": "existing"
     },
-    "/en/contact.dc.html": {
+    "/en/collection/world-polymer/oman-5-rials-2010/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/oman-5-rials-2010": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/profile-malietoa-tanumafili-ii/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/profile-malietoa-tanumafili-ii": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/qatar-100-riyals/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/qatar-100-riyals": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/samoa-2-tala/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/samoa-2-tala": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/solomon-islands-2-dollars-2001/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/solomon-islands-2-dollars-2001": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/taiwan-50-dollars/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/taiwan-50-dollars": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/zambia-kwacha/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/collection/world-polymer/zambia-kwacha": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/en/contact.dc": {
       "target": "/en/contact/",
       "status": 301,
       "rule": "existing"
     },
-    "/en/contact.dc.html/": {
+    "/en/contact.dc/": {
       "target": "/en/contact/",
       "status": 301,
       "rule": "existing"
@@ -1902,6 +4205,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/editorial/team/": {
+      "target": "/en/editorial/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/editorial/team": {
+      "target": "/en/editorial/",
+      "status": 301,
+      "rule": "manual"
+    },
     "/en/glosario/": {
       "target": "/en/glossary/",
       "status": 301,
@@ -1912,15 +4225,335 @@
       "status": 301,
       "rule": "existing"
     },
-    "/en/glosario/remainder/": {
-      "target": "/en/glossary/remainder/",
+    "/en/glossary/10-mil/": {
+      "target": "/en/glossary/diez-milesimas-10-mils/",
       "status": 301,
-      "rule": "last-slug"
+      "rule": "manual"
     },
-    "/en/glosario/remainder": {
-      "target": "/en/glossary/remainder/",
+    "/en/glossary/10-mil": {
+      "target": "/en/glossary/diez-milesimas-10-mils/",
       "status": 301,
-      "rule": "last-slug"
+      "rule": "manual"
+    },
+    "/en/glossary/accumulation/": {
+      "target": "/en/glossary/acumulacion/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/accumulation": {
+      "target": "/en/glossary/acumulacion/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/adjustment-marks/": {
+      "target": "/en/glossary/marcas-de-ajuste/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/adjustment-marks": {
+      "target": "/en/glossary/marcas-de-ajuste/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/altered-surfaces/": {
+      "target": "/en/glossary/superficies-alteradas/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/altered-surfaces": {
+      "target": "/en/glossary/superficies-alteradas/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/appraised/": {
+      "target": "/en/glossary/tasado/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/appraised": {
+      "target": "/en/glossary/tasado/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/bag-marks/": {
+      "target": "/en/glossary/marcas-de-bolsa/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/bag-marks": {
+      "target": "/en/glossary/marcas-de-bolsa/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/basal-state/": {
+      "target": "/en/glossary/estado-basal/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/basal-state": {
+      "target": "/en/glossary/estado-basal/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/brick/": {
+      "target": "/en/glossary/fajo-ladrillo/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/brick": {
+      "target": "/en/glossary/fajo-ladrillo/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/brilliant-uncirculated-bu/": {
+      "target": "/en/glossary/sin-circular-brillante-bu/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/brilliant-uncirculated-bu": {
+      "target": "/en/glossary/sin-circular-brillante-bu/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/clear-window/": {
+      "target": "/en/glossary/ventana-transparente/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/clear-window": {
+      "target": "/en/glossary/ventana-transparente/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/coin-blank/": {
+      "target": "/en/glossary/cospel/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/coin-blank": {
+      "target": "/en/glossary/cospel/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/epq-exceptional-paper-quality/": {
+      "target": "/en/glossary/epq-calidad-de-papel-excepcional/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/epq-exceptional-paper-quality": {
+      "target": "/en/glossary/epq-calidad-de-papel-excepcional/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/fancy-serial-number/": {
+      "target": "/en/glossary/numeracion-especial/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/fancy-serial-number": {
+      "target": "/en/glossary/numeracion-especial/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/intaglio-printing/": {
+      "target": "/en/glossary/intaglio/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/intaglio-printing": {
+      "target": "/en/glossary/intaglio/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/legend/": {
+      "target": "/en/glossary/leyenda/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/legend": {
+      "target": "/en/glossary/leyenda/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/mortgage-bond-certificate/": {
+      "target": "/en/glossary/cedula-hipotecaria/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/mortgage-bond-certificate": {
+      "target": "/en/glossary/cedula-hipotecaria/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/overprint/": {
+      "target": "/en/glossary/sobresello/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/overprint": {
+      "target": "/en/glossary/sobresello/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/pick-number/": {
+      "target": "/en/glossary/pick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/pick-number": {
+      "target": "/en/glossary/pick/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/planchet/": {
+      "target": "/en/glossary/plancheta/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/planchet": {
+      "target": "/en/glossary/plancheta/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/polymer/": {
+      "target": "/en/glossary/polimero/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/polymer": {
+      "target": "/en/glossary/polimero/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/radar-note/": {
+      "target": "/en/glossary/numeracion-radar/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/radar-note": {
+      "target": "/en/glossary/numeracion-radar/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/replacement-star-note/": {
+      "target": "/en/glossary/billete-de-reemplazo-estrella/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/replacement-star-note": {
+      "target": "/en/glossary/billete-de-reemplazo-estrella/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/rosette/": {
+      "target": "/en/glossary/roseton/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/rosette": {
+      "target": "/en/glossary/roseton/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/series/": {
+      "target": "/en/glossary/serie/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/series": {
+      "target": "/en/glossary/serie/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/sheldon-scale/": {
+      "target": "/en/glossary/escala-sheldon/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/sheldon-scale": {
+      "target": "/en/glossary/escala-sheldon/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/signature/": {
+      "target": "/en/glossary/firma/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/signature": {
+      "target": "/en/glossary/firma/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/strap/": {
+      "target": "/en/glossary/faja/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/strap": {
+      "target": "/en/glossary/faja/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/substrate/": {
+      "target": "/en/glossary/sustrato/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/substrate": {
+      "target": "/en/glossary/sustrato/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/uncirculated-unc/": {
+      "target": "/en/glossary/billete-sin-circular/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/uncirculated-unc": {
+      "target": "/en/glossary/billete-sin-circular/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/uv-fluorescent-ink/": {
+      "target": "/en/glossary/tinta-fluorescente-uv/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/uv-fluorescent-ink": {
+      "target": "/en/glossary/tinta-fluorescente-uv/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/vignette/": {
+      "target": "/en/glossary/vineta/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/vignette": {
+      "target": "/en/glossary/vineta/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/web-notes/": {
+      "target": "/en/glossary/billete-web/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/glossary/web-notes": {
+      "target": "/en/glossary/billete-web/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/j-s-g-boggs/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/en/j-s-g-boggs": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
     },
     "/en/netherlands-numismatica": {
       "target": "/en/collection/netherlands-numismatics/",
@@ -2002,6 +4635,56 @@
       "status": 301,
       "rule": "existing"
     },
+    "/expominer-y-colecciona-muestran-sellos-y-minerales-unicos/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/expominer-y-colecciona-muestran-sellos-y-minerales-unicos": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/glosario-numismatico.dc": {
+      "target": "/glosario/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/glosario-numismatico.dc/": {
+      "target": "/glosario/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/lazaretos_1921/": {
+      "target": "/coleccion/lazarettos/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/lazaretos_1921": {
+      "target": "/coleccion/lazarettos/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/moneda-colombia-1-escudo-fernando-vii-1820.dc.html": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/moneda-colombia-1-escudo-fernando-vii-1820.dc.html/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/moneda-colombia-2-escudos-carlos-iv-1791.dc.html": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/moneda-colombia-2-escudos-carlos-iv-1791.dc.html/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
     "/nosotros": {
       "target": "/acerca-de/",
       "status": 301,
@@ -2032,6 +4715,26 @@
       "status": 301,
       "rule": "existing"
     },
+    "/perfil-german-gutierrez-de-pineres.dc.html": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/perfil-german-gutierrez-de-pineres.dc.html/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "legacy-dc"
+    },
+    "/seis-colecciones-representaran-cuba-en-brasiliana-2013/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/seis-colecciones-representaran-cuba-en-brasiliana-2013": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
     "/sobre-mi": {
       "target": "/acerca-de/",
       "status": 301,
@@ -2042,22 +4745,12 @@
       "status": 301,
       "rule": "existing"
     },
-    "/tienda/carrito/": {
+    "/tunanmarca-quedara-perennizado-en-nuevo-sol/": {
       "target": "",
       "status": 410,
       "rule": "gone"
     },
-    "/tienda/carrito": {
-      "target": "",
-      "status": 410,
-      "rule": "gone"
-    },
-    "/wp-content/uploads/old-shop": {
-      "target": "",
-      "status": 410,
-      "rule": "gone"
-    },
-    "/wp-content/uploads/old-shop/": {
+    "/tunanmarca-quedara-perennizado-en-nuevo-sol": {
       "target": "",
       "status": 410,
       "rule": "gone"

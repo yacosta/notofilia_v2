@@ -12,6 +12,7 @@ import {
   csvEscape,
   identityPath,
   isHomePath,
+  isStub,
   matchUrl,
   normalizePath,
   parseCsv,
@@ -25,6 +26,7 @@ const gscCsv = join(seoDir, 'gsc-404-2026-09.csv');
 const seedCsv = join(seoDir, 'gsc-404-seed.csv');
 const indexFile = join(seoDir, 'v2-urls.json');
 const categoryFile = join(seoDir, 'category-map.json');
+const overridesFile = join(seoDir, 'manual-overrides.json');
 const mapCsv = join(seoDir, 'redirect-map.csv');
 const workerJson = join(root, 'src/data/gsc-redirects.json');
 const publicRedirects = join(root, 'public/_redirects');
@@ -43,6 +45,26 @@ if (!existsSync(indexFile)) {
 const index = JSON.parse(readFileSync(indexFile, 'utf8'));
 const urls = index.urls ?? index;
 const categoryMap = JSON.parse(readFileSync(categoryFile, 'utf8'));
+const liveByNorm = new Map(urls.map((u) => [normalizePath(u.path), u]));
+
+/** Hand-reviewed source → target pairs. Targets must be live, non-stub v2 pages. */
+const overrides = new Map();
+if (existsSync(overridesFile)) {
+  const raw = JSON.parse(readFileSync(overridesFile, 'utf8')).redirects ?? {};
+  for (const [from, to] of Object.entries(raw)) {
+    const row = liveByNorm.get(normalizePath(to));
+    if (!row) {
+      console.error(`manual-overrides.json: target ${to} (for ${from}) is not a live v2 URL`);
+      process.exit(1);
+    }
+    if (isStub(row)) {
+      console.error(`manual-overrides.json: target ${to} (for ${from}) is a redirect stub → ${row.redirectTo}`);
+      process.exit(1);
+    }
+    if (isHomePath(to)) continue;
+    overrides.set(normalizePath(from), to.endsWith('/') ? to : `${to}/`);
+  }
+}
 
 /** Continent hubs that PATH_PREFIX_PAIRS localize, but no page is published. */
 const MISSING_POLYMER_CONTINENTS = new Set(
@@ -116,7 +138,10 @@ for (const item of byNorm.values()) {
   const source = item.originalPath.startsWith('/') ? item.originalPath : `/${item.originalPath}`;
   const configured = existing.get(source) ?? existing.get(source.replace(/\/+$/, '') || '/') ?? existing.get(`${source.replace(/\/+$/, '')}/`);
   let result;
-  if (configured && !isHomePath(configured)) {
+  const manual = overrides.get(normalizePath(source));
+  if (manual) {
+    result = { status: 301, target: manual, rule: 'manual', confidence: 'high' };
+  } else if (configured && !isHomePath(configured)) {
     const target = configured.endsWith('/') || configured === '/' ? configured : `${configured}/`;
     if (MISSING_POLYMER_CONTINENTS.has(identityPath(target))) {
       result = matchUrl(source, urls, categoryMap);

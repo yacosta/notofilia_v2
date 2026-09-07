@@ -16,7 +16,11 @@ describe('gsc redirect lookup', () => {
   });
 
   it('plans 410 for gone URLs and 301 for mapped v1 paths, never to home', () => {
-    const gone = planSeoResponse('/tienda/carrito/');
+    // Data-driven: use whichever 410 the current map carries instead of a fixed seed URL.
+    const map = JSON.parse(readFileSync(new URL('../data/gsc-redirects.json', import.meta.url), 'utf8'));
+    const goneSource = Object.entries(map.redirects).find(([, v]) => v.status === 410)?.[0];
+    assert.ok(goneSource, 'map has at least one 410');
+    const gone = planSeoResponse(goneSource);
     assert.equal(gone.type, 'gone');
     const mapped = planSeoResponse('/nosotros');
     assert.equal(mapped.type, 'redirect');

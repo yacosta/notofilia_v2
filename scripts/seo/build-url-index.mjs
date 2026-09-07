@@ -42,6 +42,17 @@ function titleFromHtml(html) {
   return t ? stripTags(t[1]).replace(/\s*·\s*Notofilia\s*$/i, '') : '';
 }
 
+/** Astro static redirect stubs: `<meta http-equiv="refresh" content="0;url=/x/">`. */
+function redirectFromHtml(html) {
+  const m = html.match(/<meta\s+http-equiv=["']refresh["']\s+content=["']\d+;\s*url=([^"']+)["']/i);
+  if (!m) return '';
+  try {
+    return new URL(m[1], 'https://notofilia.com').pathname || '';
+  } catch {
+    return '';
+  }
+}
+
 function alternateFromHtml(html, lang) {
   const want = lang === 'en' ? 'es' : 'en';
   const re = new RegExp(`<link\\s+rel=["']alternate["']\\s+hreflang=["']${want}["']\\s+href=["']([^"']+)["']`, 'i');
@@ -70,6 +81,7 @@ async function fromDist() {
       lastSlug: lastSlug(path),
       title: titleFromHtml(html),
       alternate: alternateFromHtml(html, lang),
+      redirectTo: redirectFromHtml(html),
     });
   }
   return rows;
@@ -111,6 +123,7 @@ async function fromSrcPages() {
       lastSlug: lastSlug(path),
       title: lastSlug(path) || (path === '/' || path === '/en/' ? 'Notofilia' : ''),
       alternate: otherLocalePath(path, lang),
+      redirectTo: '',
     };
   });
 }

@@ -151,3 +151,64 @@ describe('match rules', () => {
     assert.equal(lastSlug('/en/glossary/remainder/'), 'remainder');
   });
 });
+
+describe('stubs, legacy Dreamweaver files, glossary', () => {
+  const stubUrls = [
+    ...urls,
+    {
+      path: '/en/coleccion/colombia/1-peso-oro-1954/',
+      lang: 'en',
+      type: 'catalogue',
+      lastSlug: '1-peso-oro-1954',
+      title: 'Redirecting to: /en/collection/colombia/1-peso-oro-1954/',
+      alternate: '',
+      redirectTo: '/en/collection/colombia/1-peso-oro-1954/',
+    },
+    {
+      path: '/en/coleccion/polimero-mundial/asia/',
+      lang: 'en',
+      type: 'hub',
+      lastSlug: 'asia',
+      title: 'Redirecting to: /en/collection/world-polymer/asia/',
+      alternate: '',
+      redirectTo: '/en/collection/world-polymer/asia/',
+    },
+    { path: '/en/collection/world-polymer/', lang: 'en', type: 'hub', lastSlug: 'world-polymer', title: 'World polymer', alternate: '' },
+    { path: '/en/glossary/', lang: 'en', type: 'glossary', lastSlug: 'glossary', title: 'Glossary', alternate: '/glosario/' },
+    { path: '/coleccion/ecuador/', lang: 'es', type: 'hub', lastSlug: 'ecuador', title: 'Ecuador', alternate: '' },
+  ];
+  const map = { ...categoryMap, en: { ...categoryMap.en, 'polimero-mundial': '/en/collection/world-polymer/' } };
+
+  it('301s a redirect stub straight to its destination instead of reporting exists', () => {
+    const r = matchUrl('/en/coleccion/colombia/1-peso-oro-1954/', stubUrls, map);
+    assert.equal(r.status, 301);
+    assert.equal(r.target, '/en/collection/colombia/1-peso-oro-1954/');
+  });
+
+  it('never targets a stub via last-slug (lands on the real page)', () => {
+    const r = matchUrl('/en/old/1-peso-oro-1954/', stubUrls, map);
+    assert.equal(r.status, 301);
+    assert.equal(r.target, '/en/collection/colombia/1-peso-oro-1954/');
+  });
+
+  it('falls through to the category hub when a stub points at a missing page', () => {
+    const r = matchUrl('/en/coleccion/polimero-mundial/asia/', stubUrls, map);
+    assert.equal(r.status, 301);
+    assert.equal(r.target, '/en/collection/world-polymer/');
+  });
+
+  it('maps root-level .dc / .dc.html legacy files to a section hub', () => {
+    assert.equal(matchUrl('/billete-ecuador-100-sucres-1993.dc.html', stubUrls, map).target, '/coleccion/ecuador/');
+    assert.equal(matchUrl('/billete-colombia-banco-de-caldas-1-peso-1919.dc', stubUrls, map).target, '/coleccion/colombia/');
+    assert.equal(matchUrl('/billete-colombia-banco-de-caldas-1-peso-1919.dc', stubUrls, map).rule, 'legacy-dc');
+    // Hub not in the index → still 410, never home.
+    assert.equal(matchUrl('/catalogo-puerto-rico.dc.html', stubUrls, map).status, 410);
+  });
+
+  it('sends unmatched glossary terms to the glossary hub', () => {
+    const r = matchUrl('/en/glossary/no-such-term/', stubUrls, map);
+    assert.equal(r.status, 301);
+    assert.equal(r.target, '/en/glossary/');
+    assert.equal(r.rule, 'glossary-hub');
+  });
+});
