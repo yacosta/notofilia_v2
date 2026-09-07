@@ -182,3 +182,56 @@ describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
     );
   });
 });
+
+describe('Colombia BanRep 5 pesos oro 1980 IBB circulation', () => {
+  it('is a distinct Cartagena type with ordinary serial 94658896, not the 1960 Pick 405s specimen', () => {
+    const note = noteById('5-pesos-oro-1980');
+    const specimen = noteById('5-pesos-oro-1960');
+    assert.ok(note);
+    assert.ok(specimen);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 406f · TBB B949p');
+    assert.equal(note.serial, '94658896');
+    assert.notEqual(note.serial, specimen.serial);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /p\. 60/);
+    assert.match(note.printed.en, /p\. 60/);
+    assert.match(note.description.es, /94658896/);
+    assert.match(note.description.en, /94658896/);
+    assert.match(note.description.es, /murallas de Cartagena/);
+    assert.match(note.description.en, /walls of Cartagena/);
+    assert.match(note.description.es, /Rafael Gama Quijano/);
+    assert.match(note.description.en, /Rafael Gama Quijano/);
+    assert.match(note.description.es, /No hay asterisco entre GERENTE y SECRETARIO/);
+    assert.match(note.description.en, /There is no asterisk between GERENTE and SECRETARIO/);
+    assert.doesNotMatch(note.printed.es, /49,5 millones de ejemplares para el 1/);
+    assert.match(note.printed.es, /50\.000\.000 de ejemplares/);
+    assert.match(note.printed.es, /49,5 millones de piezas de 5 pesos/);
+    assert.match(note.printed.es, /denominación-año/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    assert.equal(additions.some((row) => row.id === 'co-1980-5-pesos-oro-94658896'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-5-pesos-oro-p406f-b949p'), true);
+  });
+
+  it('lists the 1980 5 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /5 pesos oro de 1980 \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    assert.match(chapter.body.en, /1980 5 pesos oro \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    assert.match(seriesCopy.es.intro.join(' '), /5 pesos oro de 1980 \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    assert.match(seriesCopy.en.intro.join(' '), /1980 5 pesos oro \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5-pesos-oro-1980');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '94658896');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5-pesos-oro-1980/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5-pesos-oro-1980/',
+    );
+  });
+});
