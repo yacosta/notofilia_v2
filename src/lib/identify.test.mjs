@@ -19,6 +19,25 @@ describe('identify dHash', () => {
     assert.equal(parseDhash(hash)?.toString(16).padStart(16, '0'), hash);
   });
 
+  it('hashes RGBA through the shared bilinear path', () => {
+    const width = 18;
+    const height = 16;
+    const rgba = new Uint8Array(width * height * 4);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const p = (y * width + x) * 4;
+        const tone = x < width / 2 ? 20 : 220;
+        rgba[p] = tone;
+        rgba[p + 1] = tone;
+        rgba[p + 2] = tone;
+        rgba[p + 3] = 255;
+      }
+    }
+    const hash = dhashFromRgba(rgba, width, height);
+    assert.match(hash, /^[0-9a-f]{16}$/);
+    assert.equal(dhashFromRgba(rgba, width, height), hash);
+  });
+
   it('scores identical hashes as 1', () => {
     const hash = 'ffffffffffffffff';
     const a = parseDhash(hash);
