@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
+import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { identifyCopy, identifyPath } from '../data/identify';
+import { searchPath } from '../data/search';
+import identifyIndex from '../data/identify-index.json';
+import type { IdentifyIndex } from '../lib/identify';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = identifyCopy[locale];
+const pathname = identifyPath(locale);
+const index = identifyIndex as IdentifyIndex;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: t.home,
+          item: new URL(localizePath('/', locale), SITE_URL).href,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t.nav,
+          item: new URL(pathname, SITE_URL).href,
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      name: t.title,
+      description: t.metaDescription,
+      url: new URL(pathname, SITE_URL).href,
+      inLanguage: locale,
+    },
+  ],
+};
+
+const ui = {
+  locale,
+  apiPath: '/api/identify',
+  analyzing: t.analyzing,
+  emptyIdle: t.emptyIdle,
+  noResults: t.noResults,
+  resultCount: {
+    one: locale === 'en' ? '1 match' : '1 coincidencia',
+    other: locale === 'en' ? '{n} matches' : '{n} coincidencias',
+  },
+  scoreLabel: t.scoreLabel,
+  faceFront: t.faceFront,
+  faceBack: t.faceBack,
+  kindBanknote: t.kindBanknote,
+  kindCoin: t.kindCoin,
+  viewPiece: t.viewPiece,
+  previewAlt: t.previewAlt,
+  errorRead: t.errorRead,
+  errorHash: t.errorHash,
+  errorNetwork: t.errorNetwork,
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16" data-identify>
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
+
+      <header class="mb-10 max-w-[46rem]">
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
+      </header>
+
+      <section class="mb-12" aria-labelledby="identify-how">
+        <h2 id="identify-how" class="mb-5 mt-0 font-display text-[1.35rem] font-normal text-cream">{t.howTitle}</h2>
+        <ol class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
+          {
+            t.steps.map((step, index) => (
+              <li class="rounded-[6px] border border-line-strong bg-panel p-5">
+                <p class="m-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">{index + 1}</p>
+                <h3 class="mb-2 mt-2 font-display text-[1.15rem] font-normal text-cream">{step.title}</h3>
+                <p class="m-0 text-[15px]/6 text-cream-dim">{step.body}</p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section class="mb-12" aria-labelledby="identify-capture">
+        <h2 id="identify-capture" class="mb-2 mt-0 font-display text-[1.35rem] font-normal text-cream">
+          {t.captureTitle}
+        </h2>
+        <p class="mb-5 mt-0 text-[15px] text-muted">{t.captureHint}</p>
+
+        <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <label
+            class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-[8px] bg-cream px-5 font-sans text-[15px] font-semibold text-bg hover:bg-cream-dim"
+          >
+            <span>{t.cameraLabel}</span>
+            <input
+              type="file"
+              accept="image/*"
+              capture="environment"
+              class="sr-only"
+              data-identify-camera
+            />
+          </label>
+          <label
+            class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-[8px] border border-cream px-5 font-sans text-[15px] font-semibold text-cream hover:bg-panel"
+          >
+            <span>{t.uploadLabel}</span>
+            <input type="file" accept="image/*" class="sr-only" data-identify-upload />
+          </label>
+          <button
+            type="button"
+            class="hidden min-h-12 items-center justify-center rounded-[8px] border border-line-strong px-5 font-sans text-[15px] text-cream-dim hover:border-cream hover:text-cream"
+            data-identify-clear
+          >
+            {t.clearLabel}
+          </button>
+        </div>
+
+        <div class="mt-6 hidden overflow-hidden rounded-[6px] border border-line-strong bg-panel" data-identify-preview-wrap>
+          <img
+            src=""
+            alt=""
+            width="1200"
+            height="675"
+            class="max-h-[28rem] w-full object-contain"
+            data-identify-preview
+          />
+        </div>
+      </section>
+
+      <section aria-labelledby="identify-results-title">
+        <h2 id="identify-results-title" class="mb-4 mt-0 font-display text-[1.35rem] font-normal text-cream">
+          {t.resultsTitle}
+        </h2>
+        <p class="mb-6 mt-0 font-sans text-[14px] text-muted" aria-live="polite" data-identify-status>
+          {t.emptyIdle}
+        </p>
+        <p class="sr-only">{t.resultsStatus}</p>
+        <noscript>
+          <p class="mb-6 font-sans text-[14px] text-muted">{t.needsJs}</p>
+        </noscript>
+        <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2" data-identify-results></ul>
+      </section>
+
+      <p class="mt-10 max-w-[46rem] text-[15px] text-muted">{t.disclaimer}</p>
+      <p class="mt-4 text-[15px] text-cream-dim">
+        {t.searchLead}{' '}
+        <a href={searchPath(locale)} class="text-gold-light underline-offset-2 hover:underline">{t.searchLink}</a>
+      </p>
+    </article>
+  </main>
+</Layout>
+
+<script define:vars={{ ui, index }}>
+  window.__NOTOFILIA_IDENTIFY__ = { ui, index };
+</script>
+<script>
+  import { cardImageSrc } from '../lib/images';
+  import { DHASH_HEIGHT, DHASH_WIDTH, dhashFromGreyscale } from '../lib/identify-hash';
+  import { rankIdentifyMatches, type IdentifyIndex, type IdentifyMatch } from '../lib/identify';
+
+  type IdentifyUi = {
+    locale: 'es' | 'en';
+    apiPath: string;
+    analyzing: string;
+    emptyIdle: string;
+    noResults: string;
+    resultCount: { one: string; other: string };
+    scoreLabel: string;
+    faceFront: string;
+    faceBack: string;
+    kindBanknote: string;
+    kindCoin: string;
+    viewPiece: string;
+    previewAlt: string;
+    errorRead: string;
+    errorHash: string;
+    errorNetwork: string;
+  };
+
+  const payload = (
+    window as unknown as {
+      __NOTOFILIA_IDENTIFY__?: { ui: IdentifyUi; index: IdentifyIndex };
+    }
+  ).__NOTOFILIA_IDENTIFY__;
+
+  const root = document.querySelector('[data-identify]');
+  if (payload && root instanceof HTMLElement) {
+    const { ui, index } = payload;
+    const camera = root.querySelector<HTMLInputElement>('[data-identify-camera]');
+    const upload = root.querySelector<HTMLInputElement>('[data-identify-upload]');
+    const clear = root.querySelector<HTMLButtonElement>('[data-identify-clear]');
+    const previewWrap = root.querySelector<HTMLElement>('[data-identify-preview-wrap]');
+    const preview = root.querySelector<HTMLImageElement>('[data-identify-preview]');
+    const status = root.querySelector<HTMLElement>('[data-identify-status]');
+    const list = root.querySelector<HTMLElement>('[data-identify-results]');
+    let objectUrl = '';
+
+    function countLabel(count: number): string {
+      if (count === 1) return ui.resultCount.one;
+      return ui.resultCount.other.replace('{n}', String(count));
+    }
+
+    function setStatus(text: string) {
+      if (status) status.textContent = text;
+    }
+
+    function renderMatches(matches: IdentifyMatch[]) {
+      if (!list) return;
+      list.replaceChildren();
+      for (const hit of matches) {
+        const li = document.createElement('li');
+        const article = document.createElement('article');
+        article.className = 'flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel';
+
+        const link = document.createElement('a');
+        link.href = hit.href;
+        link.className = 'block overflow-hidden no-underline';
+        const img = document.createElement('img');
+        img.src = cardImageSrc(hit.image);
+        img.alt = '';
+        img.width = 1200;
+        img.height = 675;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.className = 'aspect-video w-full object-cover';
+        link.append(img);
+        article.append(link);
+
+        const body = document.createElement('div');
+        body.className = 'flex flex-1 flex-col p-5';
+        const meta = document.createElement('p');
+        meta.className = 'm-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted';
+        const kindLabel = hit.kind === 'coin' ? ui.kindCoin : ui.kindBanknote;
+        const faceLabel = hit.face === 'back' ? ui.faceBack : ui.faceFront;
+        meta.textContent = `${kindLabel} · ${faceLabel} · ${ui.scoreLabel} ${Math.round(hit.score * 100)}%`;
+        const title = document.createElement('h3');
+        title.className = 'mb-2 mt-2 font-display text-[1.25rem]/7 font-normal text-cream';
+        const titleLink = document.createElement('a');
+        titleLink.href = hit.href;
+        titleLink.className = 'text-inherit no-underline hover:text-gold-light';
+        titleLink.textContent = hit.title;
+        title.append(titleLink);
+        const pick = document.createElement('p');
+        pick.className = 'm-0 text-[15px]/6 text-cream-dim';
+        pick.textContent = hit.pick || ui.viewPiece;
+        body.append(meta, title, pick);
+        article.append(body);
+        li.append(article);
+        list.append(li);
+      }
+    }
+
+    async function hashFromFile(file: File): Promise<string> {
+      const bitmap = await createImageBitmap(file);
+      const canvas = document.createElement('canvas');
+      canvas.width = DHASH_WIDTH;
+      canvas.height = DHASH_HEIGHT;
+      const ctx = canvas.getContext('2d', { willReadFrequently: true });
+      if (!ctx) throw new Error('canvas');
+      ctx.drawImage(bitmap, 0, 0, DHASH_WIDTH, DHASH_HEIGHT);
+      bitmap.close();
+      const { data } = ctx.getImageData(0, 0, DHASH_WIDTH, DHASH_HEIGHT);
+      const grey = new Uint8Array(DHASH_WIDTH * DHASH_HEIGHT);
+      for (let i = 0, p = 0; i < grey.length; i++, p += 4) {
+        grey[i] = Math.round(0.299 * data[p]! + 0.587 * data[p + 1]! + 0.114 * data[p + 2]!);
+      }
+      return dhashFromGreyscale(grey);
+    }
+
+    async function matchHash(hash: string): Promise<IdentifyMatch[]> {
+      try {
+        const response = await fetch(ui.apiPath, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ hash, locale: ui.locale, topK: 5 }),
+        });
+        if (response.ok) {
+          const body = (await response.json()) as { matches?: IdentifyMatch[] };
+          if (Array.isArray(body.matches)) return body.matches;
+        }
+      } catch {
+        // Fall through to local ranking when the Worker API is unavailable (static preview).
+      }
+      return rankIdentifyMatches(index, hash, ui.locale);
+    }
+
+    async function onFile(file: File | undefined | null) {
+      if (!file || !file.type.startsWith('image/')) {
+        setStatus(ui.errorRead);
+        return;
+      }
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      objectUrl = URL.createObjectURL(file);
+      if (preview && previewWrap && clear) {
+        preview.src = objectUrl;
+        preview.alt = ui.previewAlt;
+        previewWrap.classList.remove('hidden');
+        clear.classList.remove('hidden');
+        clear.classList.add('inline-flex');
+      }
+      setStatus(ui.analyzing);
+      renderMatches([]);
+      try {
+        const hash = await hashFromFile(file);
+        const matches = await matchHash(hash);
+        renderMatches(matches);
+        setStatus(matches.length ? countLabel(matches.length) : ui.noResults);
+      } catch {
+        setStatus(ui.errorHash);
+      }
+    }
+
+    function onInputChange(event: Event) {
+      const input = event.currentTarget;
+      if (!(input instanceof HTMLInputElement)) return;
+      const file = input.files?.[0];
+      void onFile(file);
+      input.value = '';
+    }
+
+    camera?.addEventListener('change', onInputChange);
+    upload?.addEventListener('change', onInputChange);
+    clear?.addEventListener('click', () => {
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      objectUrl = '';
+      if (preview && previewWrap) {
+        preview.removeAttribute('src');
+        preview.alt = '';
+        previewWrap.classList.add('hidden');
+      }
+      clear.classList.add('hidden');
+      clear.classList.remove('inline-flex');
+      renderMatches([]);
+      setStatus(ui.emptyIdle);
+    });
+  }
+</script>

@@ -1,6 +1,7 @@
 import { contactLegacyRedirect } from './data/contact';
 import { planSeoResponse } from './lib/gsc-redirects';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
+import { IDENTIFY_API_PATH, handleIdentifyRequest } from './worker/identify';
 
 function isNonIndexableHost(hostname: string): boolean {
   return hostname.endsWith('.workers.dev') || hostname === 'dev.notofilia.com' || hostname.endsWith('.pages.dev');
@@ -55,6 +56,9 @@ export default {
     const legacy = contactLegacyRedirect(url.pathname);
     if (legacy && !isHomePath(legacy)) {
       return Response.redirect(new URL(legacy, url).href, 301);
+    }
+    if (url.pathname.replace(/\/$/, '') === IDENTIFY_API_PATH) {
+      return handleIdentifyRequest(request, env);
     }
     if (url.pathname.startsWith('/api/')) {
       return handleCommentsRequest(request, env);

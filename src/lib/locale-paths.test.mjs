@@ -130,6 +130,8 @@ describe('locale path mapping', () => {
     );
     assert.equal(localizePath('/buscar/', 'en'), '/en/search/');
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
+    assert.equal(localizePath('/identificar/', 'en'), '/en/identify/');
+    assert.equal(localizePath('/en/identify/', 'es'), '/identificar/');
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/', 'en'),

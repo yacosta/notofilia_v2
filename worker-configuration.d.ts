@@ -4,6 +4,7 @@ interface Env {
   ASSETS: Fetcher;
   COMMENTS_DB: D1Database;
   TURNSTILE_SECRET_KEY?: string;
+  AI?: unknown;
 }
 declare namespace Cloudflare {
   interface GlobalProps {
@@ -13,5 +14,6 @@ declare namespace Cloudflare {
     ASSETS: Fetcher;
     COMMENTS_DB: D1Database;
     TURNSTILE_SECRET_KEY?: string;
+    AI?: unknown;
   }
 }
