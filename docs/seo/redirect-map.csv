@@ -1,3 +1,9 @@
+/identificar/,/buscar/,301,manual,high
+/identificar,/buscar/,301,manual,high
+/en/identify/,/en/search/,301,manual,high
+/en/identify,/en/search/,301,manual,high
+/en/identificar/,/en/search/,301,manual,high
+/en/identificar,/en/search/,301,manual,high
 source,target,status,rule,confidence
 /2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/,,410,gone,high
 /2014/03/21/piden-a-benito-juarez-en-el-billete-de-1000-pesos/,,410,gone,high
@@ -949,7 +955,6 @@ source,target,status,rule,confidence
 /en/glossary/yuan-renminbi/,/en/glossary/?term=yuan-renminbi/,301,existing,high
 /en/herramientas/,/en/tools/,301,existing,high
 /en/herramientas/numeracion-especial/,/en/tools/fancy-serial-checker/,301,existing,high
-/en/identificar/,/en/identify/,301,existing,high
 /en/j-s-g-boggs/,,410,gone,high
 /en/netherlands-numismatica,/en/collection/netherlands-numismatics/,301,existing,high
 /en/netherlands-numismatica/ducado-utrecht-1761,/en/collection/netherlands-numismatics/ducado-utrecht-1761/,301,existing,high

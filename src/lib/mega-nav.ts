@@ -41,7 +41,6 @@ import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
-import { IDENTIFY_PATH } from '../data/identify';
 import { TOOLS_PATH } from '../data/reference-tools';
 import { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
@@ -442,7 +441,6 @@ export const megaNav: NavNode[] = [
     layout: 'horizontal',
     children: [
       { id: 'herramientas', es: 'Herramientas', en: 'Tools', href: TOOLS_PATH, icon: 'tools' },
-      { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
       {
