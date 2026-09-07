@@ -15,6 +15,7 @@ Research extract for Notofilia. **Do not republish plates, price columns, or dea
 - **ISBN (print, from title verso):** 978-958-49-7741-0.
 - **Public citation on the site:** Numista literature **[L100183](https://en.numista.com/catalogue/literature.php?id=100183)** (Hernández, *Monedas y Billetes de Colombia*). Do **not** cite this repo path.
 - **Cover series:** “Cien Años Banco de la República” is the 1923–2023 centennial frame. It does **not** make this an official Banco de la República publication.
+- **Scope:** the 8th edition covers coins and banknotes **before 1923 and through 2023** (independence, banca libre, Banco Nacional, and BanRep types). It is complementary to González White 2019 for BanRep 1923–2019; do not treat Hernández as pre-1923 only.
 
 ## Numbering
 
@@ -32,12 +33,21 @@ Research extract for Notofilia. **Do not republish plates, price columns, or dea
 - Banco de Riohacha: founded **1885**, liquidated **1888**; circulating **5 pesos 1 Jan 1883** Bolívar centre = **Cód. 1109**. Notofilia’s piece is **ABNCo proofs**, not that circulating row.
 - Santa Marta **1820** royalist copper ¼ real **SM** = **Cód. 11** (already on the coin record).
 - Specimen / prueba / **mariposa** (miscut) annex definitions — glossary only, no plates.
+- BanRep **Un Peso Oro** (1923–1977, then nickel coins): Imprenta de Billetes type **Cód. 45–81**. Ordinary **7 August 1973** = **Cód. 76** (Numista Hernández 76 / P# 404e; year as «1.973»); **Cód. 77** «7 Corto en el mes»; **Cód. 78** asterisk replacement. Last 1-peso date **1 January 1977** = **Cód. 81**. Annex 2 replacement interval for 7 August 1973 asterisk: **00105759–00541728** (not a holding).
 
 **Leave:**
 
 - All **$** / **US $** price columns and dealer ads (ASOCOPA, etc.).
 - Plate serials that are **not** Notofilia holdings (e.g. 20.000 pesos **29 Aug 2017** plate **AC53513901** / series **AE** **675NF** — collection note is **AF51355141**, González White **BG# NF20-6** series **AF**).
 - Invented printage from a Cód. row.
+
+## Current Notofilia holdings (lookup)
+
+Confirm in the OCR, then on Numista L100183, before changing published copy. Do **not** republish `$` / `US $` columns or plates.
+
+| Holding | Where in this book |
+| --- | --- |
+| 1 peso oro, 7 August 1973, Imprenta de Billetes, no series letter (Pick 404e), serial **26530968** | **Un Peso Oro**, ordinary **Cód. 76** (Numista Hernández 76; year as «1.973»). Distinct from **Cód. 77** «7 Corto en el mes» and **Cód. 78** asterisk replacement. Annex 2 asterisk interval **00105759–00541728** does not include this serial. Type **Cód. 45–81**; last 1-peso date **Cód. 81** (1 January 1977), then nickel coins. Complementary to González White 2019 p. 41 (do not guess a BG# from that OCR). N# 205723 had no earlier H#; publish the 2023 Cód. as Hernández’s number. |
 
 ## Related
 

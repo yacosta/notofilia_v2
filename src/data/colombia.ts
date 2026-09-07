@@ -222,8 +222,8 @@ export const seriesSources: CatalogSource[] = [
     es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
     en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
     note: {
-      es: 'Cód. de la 8.ª ed. (ISBN 978-958-49-7741-0): independencia en Mompós, libranzas de la Gran Colombia, Junta de Conversión de 1922 y banca libre. No se publican precios ni láminas. Los H# de Numista (91, 95, 96, 199/201) no se sustituyen por el Cód. de 2023.',
-      en: '8th-ed. Cód. numbers (ISBN 978-958-49-7741-0): independence paper at Mompós, Gran Colombia drafts, the 1922 Conversion Board, and free banking. Prices and plates are not published here. Numista’s older H# (91, 95, 96, 199/201) are not replaced by 2023 Cód. numbers.',
+      es: 'Cód. de la 8.ª ed. (ISBN 978-958-49-7741-0): independencia en Mompós, libranzas de la Gran Colombia, Junta de Conversión de 1922, banca libre y billetes del Banco de la República hasta 2023 (Un Peso Oro Cód. 45–81). No se publican precios ni láminas. Los H# de Numista (91, 95, 96, 199/201) no se sustituyen por el Cód. de 2023.',
+      en: '8th-ed. Cód. numbers (ISBN 978-958-49-7741-0): independence paper at Mompós, Gran Colombia drafts, the 1922 Conversion Board, free banking, and Banco de la República notes through 2023 (Un Peso Oro Cód. 45–81). Prices and plates are not published here. Numista’s older H# (91, 95, 96, 199/201) are not replaced by 2023 Cód. numbers.',
     },
   },
   {

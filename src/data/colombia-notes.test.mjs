@@ -159,6 +159,35 @@ describe('Colombia BanRep 1 peso oro 1973 Imprenta de Billetes', () => {
     assert.match(note.scarcity.es, /denominación-año/);
     assert.match(note.description.es, /No hay asterisco/);
     assert.match(note.description.es, /no es reposición/);
+    assert.match(note.printed.es, /Cód\. 76/);
+    assert.match(note.printed.en, /Cód\. 76/);
+    assert.match(note.printed.es, /Cód\. 81/);
+    assert.match(note.description.es, /Cód\. 76/);
+    assert.match(note.description.en, /Hernández 76/);
+    assert.match(note.scarcity.es, /Cód\. 76/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.es, /L100183/);
+    assert.match(hernandez.en, /L100183/);
+    assert.match(hernandez.note.es, /Cód\. 76/);
+    assert.match(hernandez.note.en, /Cód\. 76/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1973-1-peso-oro-26530968'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1973-1-peso-oro-p404e'), true);
   });
