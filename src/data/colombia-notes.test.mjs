@@ -263,6 +263,68 @@ describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
   });
 });
 
+describe('Colombia BanRep 5 pesos oro 1979 IBB asterisk replacement', () => {
+  it('is a distinct Cartagena replacement with serial 00141180, not the 1980 ordinary note', () => {
+    const note = noteById('5-pesos-oro-1979');
+    const ordinary = noteById('5-pesos-oro-1980');
+    assert.ok(note);
+    assert.ok(ordinary);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 406f · Hernández 156');
+    assert.equal(note.serial, '00141180');
+    assert.notEqual(note.serial, ordinary.serial);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /Cód\. 156/);
+    assert.match(note.printed.en, /Cód\. 156/);
+    assert.match(note.printed.es, /00100731–00135113/);
+    assert.match(note.printed.es, /no cae en ese intervalo/);
+    assert.match(note.printed.es, /109,5 millones de piezas de 5 pesos/);
+    assert.match(note.printed.es, /denominación-año/);
+    assert.match(note.description.es, /00141180/);
+    assert.match(note.description.en, /00141180/);
+    assert.match(note.description.es, /asterisco a la izquierda del título GERENTE/);
+    assert.match(note.description.en, /asterisk to the left of the title GERENTE/);
+    assert.match(note.description.es, /Cód\. 155/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    assert.equal(additions.some((row) => row.id === 'co-1979-5-pesos-oro-00141180'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1979-5-pesos-oro-p406f-h156'), true);
+  });
+
+  it('lists the 1979 replacement on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(
+      chapter.body.es,
+      /reposición de 5 pesos oro de 1979 \(Pick 406f; Hernández 156\), serial 00141180/,
+    );
+    assert.match(
+      chapter.body.en,
+      /1979 5 pesos oro replacement \(Pick 406f; Hernández 156\), serial 00141180/,
+    );
+    assert.match(
+      seriesCopy.es.intro.join(' '),
+      /reposición de 5 pesos oro de 1979 \(Pick 406f; Hernández 156\), serial 00141180/,
+    );
+    assert.match(
+      seriesCopy.en.intro.join(' '),
+      /1979 5 pesos oro replacement \(Pick 406f; Hernández 156\), serial 00141180/,
+    );
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5-pesos-oro-1979');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '00141180');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5-pesos-oro-1979/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5-pesos-oro-1979/',
+    );
+  });
+});
+
 describe('Colombia BanRep 5 pesos oro 1980 IBB circulation', () => {
   it('is a distinct Cartagena type with ordinary serial 94658896, not the 1960 Pick 405s specimen', () => {
     const note = noteById('5-pesos-oro-1980');

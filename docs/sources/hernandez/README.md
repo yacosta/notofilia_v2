@@ -48,6 +48,7 @@ Confirm in the OCR, then on Numista L100183, before changing published copy. Do 
 | Holding | Where in this book |
 | --- | --- |
 | 1 peso oro, 7 August 1973, Imprenta de Billetes, no series letter (Pick 404e), serial **26530968** | **Un Peso Oro**, ordinary **Cód. 76** (Numista Hernández 76; year as «1.973»). Distinct from **Cód. 77** «7 Corto en el mes» and **Cód. 78** asterisk replacement. Annex 2 asterisk interval **00105759–00541728** does not include this serial. Type **Cód. 45–81**; last 1-peso date **Cód. 81** (1 January 1977), then nickel coins. Complementary to González White 2019 p. 41 (do not guess a BG# from that OCR). N# 205723 had no earlier H#; publish the 2023 Cód. as Hernández’s number. |
+| 5 pesos oro replacement, 1 April 1979, IBB asterisk, serial **00141180** (Pick 406f) | **Cinco Pesos Oro** **Cód. 156** (Numista Hernández 156), distinct from circulating **Cód. 155** of the same date (P# 406f / TBB B949o). Neighbouring 5-peso rows **Cód. 150 / 153 / 160** are labelled «Rep., Asterisco en el anverso». Annex 2 (p. 322) asterisk interval for 1 April 1979: **00100731–00135113** — **does not** include 00141180. Do not republish price columns. Complementary to González White 2019 p. 60 (do not guess a BG# from that OCR). |
 
 ## Related
 
