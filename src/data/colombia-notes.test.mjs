@@ -134,6 +134,86 @@ describe('Colombia MEN 15 centavos student-transport ticket', () => {
   });
 });
 
+describe('Colombia BanRep 1 peso oro 1973 Imprenta de Billetes', () => {
+  it('is a distinct Pick 404e circulation note, not the 1945 or 1954 ABNC 1 pesos', () => {
+    const note = noteById('1-peso-oro-1973');
+    const note1945 = noteById('1-peso-oro-1945');
+    const note1954 = noteById('1-peso-oro-1954');
+    assert.ok(note);
+    assert.ok(note1945);
+    assert.ok(note1954);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 404e');
+    assert.equal(note.serial, '26530968');
+    assert.notEqual(note.serial, note1945.serial);
+    assert.notEqual(note.serial, note1954.serial);
+    assert.notEqual(note.pick, note1945.pick);
+    assert.notEqual(note.pick, note1954.pick);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no publica un BG# adivinado/);
+    assert.match(note.printed.es, /68,3 millones/);
+    assert.match(note.printed.es, /denominación ese año/);
+    assert.match(note.printed.es, /no la tirada de esta fecha/);
+    assert.match(note.scarcity.es, /68,3 millones/);
+    assert.match(note.scarcity.es, /denominación-año/);
+    assert.match(note.description.es, /No hay asterisco/);
+    assert.match(note.description.es, /no es reposición/);
+    assert.match(note.printed.es, /Cód\. 76/);
+    assert.match(note.printed.en, /Cód\. 76/);
+    assert.match(note.printed.es, /Cód\. 81/);
+    assert.match(note.description.es, /Cód\. 76/);
+    assert.match(note.description.en, /Hernández 76/);
+    assert.match(note.scarcity.es, /Cód\. 76/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.es, /L100183/);
+    assert.match(hernandez.en, /L100183/);
+    assert.match(hernandez.note.es, /Cód\. 76/);
+    assert.match(hernandez.note.en, /Cód\. 76/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1973-1-peso-oro-26530968'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1973-1-peso-oro-p404e'), true);
+  });
+
+  it('lists the 1973 1 peso oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /1 peso oro de 1973 \(Pick 404e\)/);
+    assert.match(chapter.body.en, /1973 1 peso oro \(Pick 404e\)/);
+    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\)/);
+    assert.match(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\)/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const peso1973 = cards.filter((card) => card.note.id === '1-peso-oro-1973');
+    assert.equal(peso1973.length, 1);
+    assert.equal(peso1973[0].piece.serial, '26530968');
+    assert.equal(
+      seriesCardHref(peso1973[0].note, peso1973[0].piece, 'es'),
+      '/coleccion/colombia/1-peso-oro-1973/',
+    );
+    assert.equal(
+      seriesCardHref(peso1973[0].note, peso1973[0].piece, 'en'),
+      '/en/collection/colombia/1-peso-oro-1973/',
+    );
+  });
+});
+
 describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
   it('is a distinct BanRep specimen with all-zero serials, not the 1983 2.000 pesos', () => {
     const note = noteById('5-pesos-oro-1960');

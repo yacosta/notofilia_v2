@@ -443,6 +443,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/1-peso-tolima-1901/',
     '/en/coleccion/colombia/1-peso-oro-1945/',
     '/en/coleccion/colombia/1-peso-oro-1954/',
+    '/en/coleccion/colombia/1-peso-oro-1973/',
     '/en/coleccion/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/5-pesos-oro-1960/',
     '/en/coleccion/colombia/5-pesos-oro-1980/',

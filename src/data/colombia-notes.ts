@@ -9,6 +9,7 @@ export type ColombiaNoteId =
   | '1-peso-tolima-1901'
   | '1-peso-oro-1945'
   | '1-peso-oro-1954'
+  | '1-peso-oro-1973'
   | '2-pesos-oro-1944'
   | '10-pesos-oro-1943'
   | '5-pesos-oro-1960'
@@ -634,6 +635,118 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 38 para el 1.º de enero de 1954; ese H# no se sustituye por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 38 for 1 January 1954; that H# is not replaced by a 2023 Cód.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-peso-oro-1973',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1-peso-oro-1973/`,
+    pick: 'P# 404e',
+    serial: '26530968',
+    signatures: {
+      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1973. Formato publicado: 140 × 70 mm. Serial de ocho dígitos, sin letra de serie. González White 2019 lista esta fecha en p. 41 (Bolívar–Santander / cóndor y nevado), con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera el 7 de agosto de 1973 ordinario como Cód. 76 —Numista concuerda Hernández 76, P# 404e, año como «1.973»—; Cód. 77 es la variedad «7 Corto en el mes»; Cód. 78 es la reposición con asterisco en el anverso. El serial 26530968 es un número ordinario de ocho dígitos, fuera de las bandas de asterisco de González White y del intervalo de reposición del anexo 2 de Hernández (00105759–00541728). El Un Peso Oro de Hernández comienza en 1923 y cierra el 1.º de enero de 1977 (Cód. 81), última fecha antes de las monedas de níquel. El Bank Note Museum numera el tipo 404e en 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974, sin hilo de seguridad. La tabla BanRep de 1973 registra 68,3 millones de piezas de 1 peso: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1973. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1973 as Cód. 76 — Numista concurs Hernández 76, P# 404e, year as “1.973”; Cód. 77 is the “7 Corto en el mes” variety; Cód. 78 is the face asterisk replacement. Serial 26530968 is an ordinary eight-digit number, outside González White’s asterisk bands and Hernández’s annex-2 replacement interval (00105759–00541728). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread. BanRep’s 1973 table records 68.3 million 1-peso notes: all production of that face value that year, not this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg',
+      front: '/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg',
+      back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
+    },
+    title: {
+      es: '1 peso oro · Banco de la República · 1973',
+      en: '1 peso oro · Banco de la República · 1973',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Un peso oro de circulación, Pick 404e: serial de ocho dígitos 26530968, 7 de agosto de 1973. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es el 1 peso oro ABNC de 1945 ni el de 1954 (Pick 380).',
+      en: 'A circulating one-peso oro, Pick 404e: eight-digit serial 26530968, 7 August 1973. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1945 or 1954 ABNC 1 peso oro (Pick 380).',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA COLOMBIA». Los seriales van en rojo: 26530968, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «7 DE AGOSTO DE 1973»; Numista marca el Cód. 76 con el año punteado «1.973». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; Numista asigna el mismo par (GBR₂, AJG) al Cód. 76; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 78. Tampoco es el Cód. 77 («7 Corto en el mes»). El reverso, en azul y naranja, muestra el cóndor andino sobre una roca, el salto y el nevado, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 76 para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. No es el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this one-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959; that plant’s first job was the blue 1-peso (Pick 404). Hernández (8th ed., 2023) lists that Imprenta type from Cód. 45 (12 October 1959) through Cód. 81 (1 January 1977). The face, blue on an orange multicolour underprint, carries at left Simón Bolívar in uniform and at right Francisco de Paula Santander in civilian dress — the reverse of the ABNC Pick 380 order. At center are the figure 1 with the legend “UN PESO ORO” and “BOGOTA COLOMBIA.” The serials are in red: 26530968, once at upper right and once at lower left. There is no series letter. The printed date is “7 DE AGOSTO DE 1973”; Numista marks Cód. 76 with the dotted year “1.973.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Banknote World records that pair on Pick 404e.4 of 20 July 1972; Numista assigns the same pair (GBR₂, AJG) to Cód. 76; González White places Botero as gerente from 1970 to 1978. There is no asterisk between GERENTE and SECRETARIO: it is not a replacement and not Cód. 78. It is not Cód. 77 (“7 Corto en el mes”) either. The back, in blue and orange, shows the Andean condor on a rock, the falls and the snow peak, Liberty’s seal (“BANCO DE LA REPUBLICA - BOGOTA COLOMBIA”), and the figures 1 with “PESO ORO” at each flank. Type 404e, per the Bank Note Museum, covers 1970–1974 without a security thread. Numista groups the 1959–1977 design under N# 205723 and cites Hernández 76 for this date. Hernández closes Un Peso Oro on 1 January 1977 (Cód. 81), when the denomination passes to nickel coins. It is not the 1945 Series R ABNC 1 peso oro (Pick 380d), nor the 1954 Series HH (Pick 380g), nor the 1953 Boyacá commemorative (Waterlow). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 peso oro, Pick 404e: Bolívar, Santander, serial 26530968 y fecha 7 de agosto de 1973.',
+      en: 'Face of the 1 peso oro, Pick 404e: Bolívar, Santander, serial 26530968, and the date 7 August 1973.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 peso oro, Pick 404e: cóndor andino, salto, nevado y sello de la Libertad.',
+      en: 'Back of the 1 peso oro, Pick 404e: Andean condor, falls, snow peak, and Liberty’s seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (p. 41) lista el 7 de agosto de 1973 en el pliego del 1 peso 1959–1977, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 76, la variedad «7 Corto en el mes» Cód. 77 y la reposición con asterisco Cód. 78; el anexo 2 da el intervalo de asterisco 00105759–00541728. El serial 26530968 no cae en ese intervalo ni en las bandas de White. El Un Peso Oro cierra el 1.º de enero de 1977 (Cód. 81), última fecha de la denominación antes de las monedas de níquel. El Bank Note Museum describe el Pick 404e como las fechas 1970–1974 del 1 peso azul de la Imprenta, sin hilo: Bolívar y Santander al anverso, cóndor y Libertad al reverso. Numista agrupa el diseño bajo N# 205723, índice de rareza 11, y marca la frecuencia de la fecha 07.08.1973, sin hilo, año «1.973», en un 30 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición. No se publican columnas de precios de Hernández. La tabla BanRep de 1973 (68,3 millones de piezas de 1 peso) es un total de denominación-año, no la tirada de esta fecha.',
+      en: 'González White 2019 (p. 41) lists 7 August 1973 on the 1959–1977 1-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 76, the “7 Corto en el mes” variety Cód. 77, and the asterisk replacement Cód. 78; annex 2 gives the asterisk interval 00105759–00541728. Serial 26530968 sits in neither that interval nor White’s bands. Un Peso Oro closes on 1 January 1977 (Cód. 81), the last date of the denomination before nickel coins. The Bank Note Museum describes Pick 404e as the 1970–1974 dates of the Imprenta’s blue 1-peso, without a thread: Bolívar and Santander on the face, condor and Liberty on the back. Numista groups the design under N# 205723, rarity index 11, and marks the 07.08.1973 no-thread “1.973” date’s frequency at 30% among owners of the type. It is neither a proof, a specimen, nor a replacement. Hernández price columns are not republished. BanRep’s 1973 table (68.3 million 1-peso notes) is a denomination-year total, not this date’s printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 26530968. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 26530968 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0404.htm',
+        es: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+        en: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+        note: {
+          es: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974; anverso Bolívar y Santander; reverso cóndor y Libertad; sin hilo de seguridad.',
+          en: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974; Bolívar and Santander on the face; condor and Liberty on the back; no security thread.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note205723.html',
+        es: 'Numista — Colombia 1 peso oro, N# 205723',
+        en: 'Numista — Colombia 1 peso oro, N# 205723',
+        note: {
+          es: '07.08.1973: P# 404e; Hernández 76 / Cód. 76; sin hilo de seguridad; año como «1.973»; 140 × 70 mm; Imprenta de Billetes, Bogotá; firmas GBR₂ y AJG; frecuencia 30 % en el tipo; índice de rareza 11.',
+          en: '07.08.1973: P# 404e; Hernández 76 / Cód. 76; no security thread; year as “1.973”; 140 × 70 mm; Imprenta de Billetes, Bogotá; signatures GBR₂ and AJG; 30% frequency within the type; rarity index 11.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-1-peso-oro-1972-p-404e-4.html',
+        es: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+        en: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+        note: {
+          es: '20.07.1972; mismo tipo 404e; 140 × 70 mm; Imprenta de Billetes; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
+          en: '20.07.1972; same type 404e; 140 × 70 mm; Imprenta de Billetes; no thread; signatures Germán Botero de los Ríos and Antonio José Gutiérrez.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1973: 68,3 millones de piezas de 1 peso. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 7 de agosto de 1973.',
+          en: '1973 production: 68.3 million 1-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 7 August 1973.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404).',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Cód. 76: 7 de agosto de 1973 ordinario (Pick 404e); Cód. 77 «7 Corto en el mes»; Cód. 78 reposición asterisco; el tipo cierra en Cód. 81 (1.º de enero de 1977). Numista no tenía H# previo para N# 205723; el Cód. de 2023 es el número de Hernández. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Cód. 76: ordinary 7 August 1973 (Pick 404e); Cód. 77 “7 Corto en el mes”; Cód. 78 asterisk replacement; the type closes at Cód. 81 (1 January 1977). Numista had no earlier H# for N# 205723; the 2023 Cód. is Hernández’s number. Price columns and plates are not republished.',
         },
       },
     ],
