@@ -307,7 +307,7 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
       en: 'Face of the P#61 1-peso note: Central Republican Board, No. 13085 series B, New York 17 August 1869; medallions with 1 and signatures of Morales Lemus, Bassora, and the Treasurer.',
     },
     backCaption: {
-      es: 'Reverso con transparencia del anverso por la delgadez del papel; la sangrado puede mostrar un número distinto (p. ej. 13082). El identificador de la pieza es el N.º 13085 impreso en rojo en el anverso.',
+      es: 'Reverso con transparencia del anverso por la delgadez del papel; el sangrado puede mostrar un número distinto (p. ej. 13082). El identificador de la pieza es el N.º 13085 impreso en rojo en el anverso.',
       en: 'Back with show-through from the face through thin paper; bleed-through may show a different number (e.g. 13082). This piece’s identifier is red No. 13085 on the face.',
     },
     scarcity: {
