@@ -8,6 +8,7 @@ export type ColombiaNoteId =
   | '5-pesos-rio-hacha-1883'
   | '1-peso-tolima-1901'
   | '1-peso-oro-1945'
+  | 'medio-peso-oro-1953'
   | '1-peso-oro-1954'
   | '1-peso-oro-1973'
   | '2-pesos-oro-1944'
@@ -542,6 +543,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 22 para el 1.º de enero de 1945; ese H# no se sustituye por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 22 for 1 January 1945; that H# is not replaced by a 2023 Cód.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'medio-peso-oro-1953',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}medio-peso-oro-1953/`,
+    pick: 'P# 345b',
+    serial: 'C 5256707',
+    signatures: {
+      es: 'Antonio Álvarez Restrepo (ministro de Hacienda), Hernando Llorente (contralor general) y Hernando Escallón Vargas (tesorero general)',
+      en: 'Antonio Álvarez Restrepo (Minister of Finance), Hernando Llorente (Comptroller General), and Hernando Escallón Vargas (Treasurer General)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de la Tesorería de la República de Colombia, no del Banco de la República; fecha en el billete 18 de febrero de 1953. Formato publicado: 112 × 58 mm. Serie C, un solo serial de siete dígitos. González White 2019 numera esta fecha BG# 012 (p. 28): emisión 10.000.000, seriales C0.000.001–C10.000.000, siete dígitos. Hernández (8.ª ed., 2023) numera la fecha como Cód. 12; Numista concuerda Hernández 12 y P# 345b, prefijo C. El serial C5256707 cae en ese tramo. Las tablas BanRep de producción anual de billetes empiezan en 1960; no hay un total de denominación para 1953.',
+      en: 'American Bank Note Company, New York. Treasury of the Republic of Colombia issue, not Banco de la República; date on the note 18 February 1953. Published size: 112 × 58 mm. Series C, a single seven-digit serial. González White 2019 numbers this date BG# 012 (p. 28): emisión 10,000,000, serials C0.000.001–C10.000.000, seven digits. Hernández (8th ed., 2023) numbers the date as Cód. 12; Numista concurs Hernández 12 and P# 345b, prefix C. Serial C5256707 falls in that range. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1953.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-composite.jpg',
+      front: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-front.jpg',
+      back: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-back.jpg',
+    },
+    title: {
+      es: 'Medio peso oro · República de Colombia · 1953',
+      en: 'Half peso oro · Republic of Colombia · 1953',
+    },
+    kicker: {
+      es: 'Colombia · Tesorería de la República · ABNC',
+      en: 'Colombia · Treasury of the Republic · ABNC',
+    },
+    lead: {
+      es: 'Medio peso oro de circulación, Pick 345b: serie C, serial de siete dígitos C5256707, 18 de febrero de 1953. Lo emitió la Tesorería, no el Banco de la República. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A circulating half-peso oro, Pick 345b: Series C, seven-digit serial C5256707, 18 February 1953. The Treasury issued it, not the Banco de la República. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'La Tesorería de la República de Colombia encargó a la American Bank Note Company de Nueva York este medio peso oro de la familia Pick 345 (1948–1953), popularmente «Lleritas» o «Marianitos». El título del anverso es «REPÚBLICA DE COLOMBIA», no «Banco de la República»: González White 2019 registra que, a partir de 1923, estos son de los pocos billetes colombianos que no emite el banco. El anverso, en negro sobre fondo naranja, verde y azul pálido, lleva al centro el retrato de Antonio Nariño en uniforme, con el nombre «NARIÑO» bajo el óvalo, y la promesa de pagar al portador medio peso oro. El serial va una sola vez, en rojo, arriba a la izquierda: C5256707. González White señala que, desde 1923, es el único tipo colombiano con una sola numeración, en el cuadrante superior izquierdo. La leyenda «SERIE C» aparece dos veces en negro. A la derecha se leen «LEY 33 DE 1936, DECRETO 404 DE 1953» y «BOGOTÁ, FEBRERO 18 DE 1953». Las firmas son las de Antonio Álvarez Restrepo (ministro de Hacienda), Hernando Llorente (contralor general) y Hernando Escallón Vargas (tesorero general), el trío que González White asigna a 1953. El reverso, en pardo, muestra el escudo nacional entre cifras 1/2 y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 345b, según el Bank Note Museum, cubre solo esa fecha y el prefijo C. Numista agrupa el diseño 1948–1953 bajo N# 205254 y marca la frecuencia de la fecha 18.02.1953, prefijo C, en un 44 % entre quienes poseen el tipo; cita Hernández 12. No es el medio peso del Banco de la República de 1935 (Pick 384, Caldas y Bolívar), ni las mitades reselladas de 1942–1943 (Pick 397), ni el Pick 345a de 1948 (series A y B). Esta pieza de la colección se presenta en funda, circulada, sin encapsular; el reverso muestra foxing.',
+      en: 'The Treasury of the Republic of Colombia ordered this half-peso oro of the Pick 345 family (1948–1953), popularly “Lleritas” or “Marianitos,” from the American Bank Note Company in New York. The face title is “REPÚBLICA DE COLOMBIA,” not “Banco de la República”: González White 2019 records that, from 1923, these are among the few Colombian notes the bank did not issue. The face, black on an orange, green, and pale-blue underprint, carries at center the portrait of Antonio Nariño in uniform, named “NARIÑO” under the oval, and the promise to pay the bearer half a gold peso. The serial appears once, in red, at upper left: C5256707. González White notes that, from 1923, this is the only Colombian type with a single numbering, in the upper-left quadrant. The legend “SERIE C” appears twice in black. At right are “LEY 33 DE 1936, DECRETO 404 DE 1953” and “BOGOTÁ, FEBRERO 18 DE 1953.” The signatures are those of Antonio Álvarez Restrepo (Minister of Finance), Hernando Llorente (Comptroller General), and Hernando Escallón Vargas (Treasurer General), the trio González White assigns to 1953. The brown back shows the national coat of arms between the figures 1/2 and the imprint “AMERICAN BANK NOTE COMPANY.” Type 345b, per the Bank Note Museum, covers that date and prefix C only. Numista groups the 1948–1953 design under N# 205254 and marks the 18.02.1953 prefix-C date’s frequency at 44% among owners of the type; it cites Hernández 12. It is not the Banco de la República 1935 half peso (Pick 384, Caldas and Bolívar), nor the 1942–1943 overstamped halves (Pick 397), nor the 1948 Pick 345a (Series A and B). This collection piece is shown in a sleeve, circulated, unslabbed; the back shows foxing.',
+    },
+    frontCaption: {
+      es: 'Anverso del medio peso oro, Pick 345b: Nariño, serie C, serial C5256707 y fecha 18 de febrero de 1953.',
+      en: 'Face of the half peso oro, Pick 345b: Nariño, Series C, serial C5256707, and the date 18 February 1953.',
+    },
+    backCaption: {
+      es: 'Reverso del medio peso oro, Pick 345b: escudo nacional, cifras 1/2 y pie de la American Bank Note Company.',
+      en: 'Back of the half peso oro, Pick 345b: the national coat of arms, the figures 1/2, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 012, p. 28) publica 10.000.000 de ejemplares para el 18 de febrero de 1953, serie C de siete dígitos, seriales C0.000.001–C10.000.000. El Bank Note Museum describe el Pick 345b como esa fecha del ½ peso oro ABNC de la República de Colombia: Nariño al anverso, el escudo al reverso, prefijo C. Numista agrupa el diseño 1948–1953 bajo N# 205254, da al tipo un índice de rareza 50 y marca la frecuencia de la fecha 18.02.1953, prefijo C, en un 44 % entre quienes poseen el tipo. Hernández (8.ª ed., 2023) numera la fecha Cód. 12 y llama al tipo «Lleritas» o «Marianito». No es prueba ni espécimen. Esta ficha no sustituye esa emisión BG# por un total BanRep de denominación-año. No se publican columnas de precios.',
+      en: 'González White 2019 (BG# 012, p. 28) publishes 10,000,000 notes for 18 February 1953, seven-digit Series C, serials C0.000.001–C10.000.000. The Bank Note Museum describes Pick 345b as that date of the República de Colombia ABNC ½ peso oro: Nariño on the face, the arms on the back, prefix C. Numista groups the 1948–1953 design under N# 205254, gives the type a rarity index of 50, and marks the 18.02.1953 prefix-C date’s frequency at 44% among owners of the type. Hernández (8th ed., 2023) numbers the date Cód. 12 and calls the type “Lleritas” or “Marianito.” It is neither a proof nor a specimen. This record does not replace that BG# emisión with a BanRep denomination-year total. Price columns are not published.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial C5256707. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial C5256707 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0345.htm',
+        es: 'Bank Note Museum — Colombia P-345, ½ peso oro (1948–1953)',
+        en: 'Bank Note Museum — Colombia P-345, ½ peso oro (1948–1953)',
+        note: {
+          es: '345b: 18.02.1953, prefijo C; emisor República de Colombia; anverso Antonio Nariño; reverso escudo; ABNC.',
+          en: '345b: 18.02.1953, prefix C; issuer República de Colombia; Antonio Nariño on the face; arms on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note205254.html',
+        es: 'Numista — Colombia ½ peso oro, N# 205254',
+        en: 'Numista — Colombia ½ peso oro, N# 205254',
+        note: {
+          es: '18.02.1953: P# 345b; Hernández 12; prefijo C; 112 × 58 mm; frecuencia 44 % en el tipo; índice de rareza 50. Numista sitúa el emisor en el Banco de la República; el título impreso y González White 2019 asignan la emisión a la Tesorería.',
+          en: '18.02.1953: P# 345b; Hernández 12; prefix C; 112 × 58 mm; 44% frequency within the type; rarity index 50. Numista places the issuer at the Banco de la República; the printed title and González White 2019 assign the issue to the Treasury.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-%C2%BD-peso-oro-1953-p-345b.html',
+        es: 'Banknote World — Colombia ½ peso oro 1953, P-345b',
+        en: 'Banknote World — Colombia ½ peso oro 1953, P-345b',
+        note: {
+          es: '18.02.1953; ABNC; anverso Nariño, reverso escudo; firmas Restrepo, Escallón Vargas y Llorente.',
+          en: '18.02.1953; ABNC; Nariño on the face, arms on the back; signatures Restrepo, Escallón Vargas, and Llorente.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023: Cód. 12, 18 de febrero de 1953, serie C. Numista cita Hernández 12 para esta fecha; ese H# coincide con el Cód. de 2023. El tipo se conoce como «Lleritas» o «Marianito»; la emisión fue de la Nación, no del banco.',
+          en: '8th ed. 2023: Cód. 12, 18 February 1953, Series C. Numista cites Hernández 12 for this date; that H# matches the 2023 Cód. The type is known as “Lleritas” or “Marianito”; the Nation issued it, not the bank.',
         },
       },
     ],
@@ -2954,6 +3049,10 @@ export function notesForChapter(chapterId: ColombiaChapterId): ColombiaNote[] {
 const HOLDING_SORT_ID = /^(\d+)-pesos?(?:-[a-z0-9]+)*-(\d{4})(?:-\d+)?$/i;
 
 export function holdingSortKey(id: string): { denomination: number; year: number } {
+  const medio = id.match(/^medio-peso(?:-[a-z0-9]+)*-(\d{4})(?:-\d+)?$/i);
+  if (medio) {
+    return { denomination: 0.5, year: Number(medio[1]) };
+  }
   const match = id.match(HOLDING_SORT_ID);
   if (!match) {
     return { denomination: Number.MAX_SAFE_INTEGER, year: 0 };

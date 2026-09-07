@@ -442,6 +442,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
     '/en/coleccion/colombia/1-peso-tolima-1901/',
     '/en/coleccion/colombia/1-peso-oro-1945/',
+    '/en/coleccion/colombia/medio-peso-oro-1953/',
     '/en/coleccion/colombia/1-peso-oro-1954/',
     '/en/coleccion/colombia/1-peso-oro-1973/',
     '/en/coleccion/colombia/10-pesos-oro-1943/',
