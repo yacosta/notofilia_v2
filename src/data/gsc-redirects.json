@@ -1,0 +1,2066 @@
+{
+  "usedSeed": true,
+  "csv": "docs/seo/gsc-404-seed.csv",
+  "counts": {
+    "existing": 198,
+    "exists": 4,
+    "last-slug": 2,
+    "fuzzy": 1,
+    "hub-fallback": 1,
+    "category-hub": 1,
+    "gone": 2
+  },
+  "fuzzyOrHubPercent": 0.98,
+  "redirects": {
+    "/about": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/about/": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/blog/circo-ringling-bros-barnum-bailey/": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/blog/circo-ringling-bros-barnum-bailey": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/blog/ringling-bros-barnum-bailey-circus/": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/blog/ringling-bros-barnum-bailey-circus": {
+      "target": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/1-peso-oro-1954": {
+      "target": "/coleccion/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/1-peso-oro-1954/": {
+      "target": "/coleccion/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/coleccion/colombia/1-peso-oro-1954-banrep/": {
+      "target": "/coleccion/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/colombia/1-peso-oro-1954-banrep": {
+      "target": "/coleccion/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "fuzzy"
+    },
+    "/coleccion/colombia/10-pesos-oro-1943-anverso": {
+      "target": "/coleccion/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/10-pesos-oro-1943-anverso/": {
+      "target": "/coleccion/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/10-pesos-oro-1943-reverso": {
+      "target": "/coleccion/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/10-pesos-oro-1943-reverso/": {
+      "target": "/coleccion/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/2-pesos-oro-1955": {
+      "target": "/coleccion/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/2-pesos-oro-1955/": {
+      "target": "/coleccion/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/banco-de-la-republica-2000-pesos-oro": {
+      "target": "/coleccion/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/banco-de-la-republica-2000-pesos-oro/": {
+      "target": "/coleccion/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/nota-v1-ya-no-en-catalogo/": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/colombia/nota-v1-ya-no-en-catalogo": {
+      "target": "/coleccion/colombia/",
+      "status": 301,
+      "rule": "hub-fallback"
+    },
+    "/coleccion/ecuador/100-sucres-1993": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/ecuador/100-sucres-1993/": {
+      "target": "/coleccion/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci": {
+      "target": "/coleccion/estados-unidos/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/": {
+      "target": "/coleccion/estados-unidos/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/messi-you-have-to-fight-to-reach-your-dream": {
+      "target": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/messi-you-have-to-fight-to-reach-your-dream/": {
+      "target": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/pele-the-beautiful-game": {
+      "target": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/pele-the-beautiful-game/": {
+      "target": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/trump-never-surrender": {
+      "target": "/coleccion/estados-unidos/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/trump-never-surrender/": {
+      "target": "/coleccion/estados-unidos/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/warhol-basquiat-life-is-beautiful": {
+      "target": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/renci/warhol-basquiat-life-is-beautiful/": {
+      "target": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/colombia": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/colombia/": {
+      "target": "/coleccion/colombia-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/paises-bajos": {
+      "target": "/coleccion/paises-bajos-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/paises-bajos/": {
+      "target": "/coleccion/paises-bajos-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/paises-bajos/ducado-utrecht-1761": {
+      "target": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/numismatica/paises-bajos/ducado-utrecht-1761/": {
+      "target": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/polimero-mundial/america-del-norte/canada": {
+      "target": "/coleccion/polimero-mundial/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/polimero-mundial/america-del-norte/canada/": {
+      "target": "/coleccion/polimero-mundial/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/polimero-mundial/canada": {
+      "target": "/coleccion/polimero-mundial/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/polimero-mundial/canada/": {
+      "target": "/coleccion/polimero-mundial/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/contact": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/contact/": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/contacto.dc.html": {
+      "target": "/contacto/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/contacto.dc.html/": {
+      "target": "/contacto/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/acerca-de": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/acerca-de/": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/circo-ringling-bros-barnum-bailey/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/circo-ringling-bros-barnum-bailey": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/como-empezar-coleccion-billetes/": {
+      "target": "/en/blog/how-to-start-a-banknote-collection/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/como-empezar-coleccion-billetes": {
+      "target": "/en/blog/how-to-start-a-banknote-collection/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/como-identificar-billetes-falsos/": {
+      "target": "/en/blog/how-to-identify-counterfeit-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/como-identificar-billetes-falsos": {
+      "target": "/en/blog/how-to-identify-counterfeit-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/diferencia-numismatica-notafilia/": {
+      "target": "/en/blog/difference-between-numismatics-and-notaphily/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/diferencia-numismatica-notafilia": {
+      "target": "/en/blog/difference-between-numismatics-and-notaphily/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/mejores-empresas-certificacion-monedas-billetes/": {
+      "target": "/en/blog/best-coin-and-banknote-grading-companies/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/mejores-empresas-certificacion-monedas-billetes": {
+      "target": "/en/blog/best-coin-and-banknote-grading-companies/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/mylar-si-plastico-no-como-guardar-billetes/": {
+      "target": "/en/blog/mylar-yes-plastic-no-how-to-store-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/mylar-si-plastico-no-como-guardar-billetes": {
+      "target": "/en/blog/mylar-yes-plastic-no-how-to-store-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/numeros-serie-especiales-billetes/": {
+      "target": "/en/blog/special-serial-numbers-on-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/numeros-serie-especiales-billetes": {
+      "target": "/en/blog/special-serial-numbers-on-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/origenes-banca-comercial-colombia-banca-libre/": {
+      "target": "/en/blog/origins-of-commercial-banking-colombia-free-banking/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/origenes-banca-comercial-colombia-banca-libre": {
+      "target": "/en/blog/origins-of-commercial-banking-colombia-free-banking/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/origenes-banca-comercial-puerto-rico/": {
+      "target": "/en/blog/origins-of-commercial-banking-puerto-rico/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/origenes-banca-comercial-puerto-rico": {
+      "target": "/en/blog/origins-of-commercial-banking-puerto-rico/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/personajes-billetes-colombia/": {
+      "target": "/en/blog/figures-on-colombian-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/personajes-billetes-colombia": {
+      "target": "/en/blog/figures-on-colombian-banknotes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/ringling-bros-barnum-bailey-circus/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/ringling-bros-barnum-bailey-circus": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/": {
+      "target": "/en/blog/three-imprints-colombian-banknote-printer/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos": {
+      "target": "/en/blog/three-imprints-colombian-banknote-printer/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/buscar/": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/buscar": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/": {
+      "target": "/en/collection/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion": {
+      "target": "/en/collection/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/china/": {
+      "target": "/en/collection/china/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/china": {
+      "target": "/en/collection/china/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/china/100-yuan/": {
+      "target": "/en/collection/china/100-yuan/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/china/100-yuan": {
+      "target": "/en/collection/china/100-yuan/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/": {
+      "target": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820": {
+      "target": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica/catalogo/": {
+      "target": "/en/collection/colombia-numismatics/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia-numismatica/catalogo": {
+      "target": "/en/collection/colombia-numismatics/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia": {
+      "target": "/en/collection/colombia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1945/": {
+      "target": "/en/collection/colombia/1-peso-oro-1945/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1945": {
+      "target": "/en/collection/colombia/1-peso-oro-1945/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1954/": {
+      "target": "/en/collection/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1954": {
+      "target": "/en/collection/colombia/1-peso-oro-1954/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1973/": {
+      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1973": {
+      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-tolima-1901/": {
+      "target": "/en/collection/colombia/1-peso-tolima-1901/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-tolima-1901": {
+      "target": "/en/collection/colombia/1-peso-tolima-1901/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943-anverso": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943-anverso/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943-reverso": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943-reverso/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1943": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1976/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1976/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1976": {
+      "target": "/en/collection/colombia/10-pesos-oro-1976/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-error-2008/": {
+      "target": "/en/collection/colombia/1000-pesos-error-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-error-2008": {
+      "target": "/en/collection/colombia/1000-pesos-error-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-error-2011/": {
+      "target": "/en/collection/colombia/1000-pesos-error-2011/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-error-2011": {
+      "target": "/en/collection/colombia/1000-pesos-error-2011/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-oro-1979/": {
+      "target": "/en/collection/colombia/1000-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-oro-1979": {
+      "target": "/en/collection/colombia/1000-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10000-pesos-1994/": {
+      "target": "/en/collection/colombia/10000-pesos-1994/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10000-pesos-1994": {
+      "target": "/en/collection/colombia/10000-pesos-1994/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1944/": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1944": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1955": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1955/": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-2008/": {
+      "target": "/en/collection/colombia/2000-pesos-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-2008": {
+      "target": "/en/collection/colombia/2000-pesos-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-2015/": {
+      "target": "/en/collection/colombia/2000-pesos-2015/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-2015": {
+      "target": "/en/collection/colombia/2000-pesos-2015/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-oro-1983/": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-oro-1983": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/20000-pesos-2017/": {
+      "target": "/en/collection/colombia/20000-pesos-2017/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/20000-pesos-2017": {
+      "target": "/en/collection/colombia/20000-pesos-2017/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-banco-hipotecario-1881/": {
+      "target": "/en/collection/colombia/5-pesos-banco-hipotecario-1881/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-banco-hipotecario-1881": {
+      "target": "/en/collection/colombia/5-pesos-banco-hipotecario-1881/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-oro-1960/": {
+      "target": "/en/collection/colombia/5-pesos-oro-1960/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-oro-1960": {
+      "target": "/en/collection/colombia/5-pesos-oro-1960/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-oro-1980/": {
+      "target": "/en/collection/colombia/5-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-oro-1980": {
+      "target": "/en/collection/colombia/5-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-rio-hacha-1883/": {
+      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-rio-hacha-1883": {
+      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50000-pesos-error-2008/": {
+      "target": "/en/collection/colombia/50000-pesos-error-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50000-pesos-error-2008": {
+      "target": "/en/collection/colombia/50000-pesos-error-2008/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50000-pesos-error-2015/": {
+      "target": "/en/collection/colombia/50000-pesos-error-2015/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50000-pesos-error-2015": {
+      "target": "/en/collection/colombia/50000-pesos-error-2015/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro/": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/catalogo/": {
+      "target": "/en/collection/colombia/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/catalogo": {
+      "target": "/en/collection/colombia/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/tiquete-estudiantil-15-centavos/": {
+      "target": "/en/collection/colombia/tiquete-estudiantil-15-centavos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/tiquete-estudiantil-15-centavos": {
+      "target": "/en/collection/colombia/tiquete-estudiantil-15-centavos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/ecuador/": {
+      "target": "/en/collection/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/ecuador": {
+      "target": "/en/collection/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/ecuador/100-sucres-1993": {
+      "target": "/en/collection/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/ecuador/100-sucres-1993/": {
+      "target": "/en/collection/ecuador/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/espana/": {
+      "target": "/en/collection/spain/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/espana": {
+      "target": "/en/collection/spain/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos-numismatica/": {
+      "target": "/en/collection/united-states-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos-numismatica": {
+      "target": "/en/collection/united-states-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/": {
+      "target": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026": {
+      "target": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/": {
+      "target": "/en/collection/united-states/1-dollar-silver-certificate-1957b/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b": {
+      "target": "/en/collection/united-states/1-dollar-silver-certificate-1957b/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/": {
+      "target": "/en/collection/united-states/1-dollar-series-2003-atlanta/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta": {
+      "target": "/en/collection/united-states/1-dollar-series-2003-atlanta/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago": {
+      "target": "/en/collection/united-states/10-dollars-series-1934-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-cleveland/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-cleveland/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond": {
+      "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/20-dolares-confederados-1864/": {
+      "target": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/20-dolares-confederados-1864": {
+      "target": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-confederados-1864/": {
+      "target": "/en/collection/united-states/5-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-confederados-1864": {
+      "target": "/en/collection/united-states/5-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-continental-1779/": {
+      "target": "/en/collection/united-states/5-dollars-continental-1779/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-dolares-continental-1779": {
+      "target": "/en/collection/united-states/5-dollars-continental-1779/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/": {
+      "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york": {
+      "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/": {
+      "target": "/en/collection/united-states/miscellaneous/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos": {
+      "target": "/en/collection/united-states/miscellaneous/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/": {
+      "target": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george": {
+      "target": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/": {
+      "target": "/en/collection/united-states/mpc-vietnam/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam": {
+      "target": "/en/collection/united-states/mpc-vietnam/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/": {
+      "target": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661": {
+      "target": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/renci": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/renci/": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/": {
+      "target": "/en/collection/united-states/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/life-is-beautiful-life-spray": {
+      "target": "/en/collection/united-states/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/pele-the-beautiful-game": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/trump-never-surrender/": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/trump-never-surrender": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/": {
+      "target": "/en/collection/philippines/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas": {
+      "target": "/en/collection/philippines/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/1-peso/": {
+      "target": "/en/collection/philippines/1-peso/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/1-peso": {
+      "target": "/en/collection/philippines/1-peso/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/2-pesos/": {
+      "target": "/en/collection/philippines/2-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/2-pesos": {
+      "target": "/en/collection/philippines/2-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/20-pesos/": {
+      "target": "/en/collection/philippines/20-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/20-pesos": {
+      "target": "/en/collection/philippines/20-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/5-pesos-banco-nacional-1916/": {
+      "target": "/en/collection/philippines/5-pesos-national-bank-1916/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/5-pesos-banco-nacional-1916": {
+      "target": "/en/collection/philippines/5-pesos-national-bank-1916/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/5-pesos/": {
+      "target": "/en/collection/philippines/5-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/filipinas/5-pesos": {
+      "target": "/en/collection/philippines/5-pesos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/guatemala/": {
+      "target": "/en/collection/guatemala/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/guatemala": {
+      "target": "/en/collection/guatemala/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/lazarettos/": {
+      "target": "/en/collection/lazarettos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/lazarettos": {
+      "target": "/en/collection/lazarettos/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/notafilia/": {
+      "target": "/en/collection/notaphily/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/notafilia": {
+      "target": "/en/collection/notaphily/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/notafilia/catalogo/": {
+      "target": "/en/collection/notaphily/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/notafilia/catalogo": {
+      "target": "/en/collection/notaphily/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/": {
+      "target": "/en/collection/numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica": {
+      "target": "/en/collection/numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/colombia": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/colombia/": {
+      "target": "/en/collection/colombia-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/paises-bajos": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/paises-bajos/": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/paises-bajos/ducado-utrecht-1761": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/numismatica/paises-bajos/ducado-utrecht-1761/": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos-numismatica/": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos-numismatica": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos-numismatica/ducado-utrecht-1761": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos/": {
+      "target": "/en/collection/netherlands/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/paises-bajos": {
+      "target": "/en/collection/netherlands/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial": {
+      "target": "/en/collection/world-polymer/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/america-del-norte/": {
+      "target": "/en/collection/world-polymer/north-america/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/america-del-norte": {
+      "target": "/en/collection/world-polymer/north-america/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/america-del-norte/canada": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/america-del-norte/canada/": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia/": {
+      "target": "/en/collection/world-polymer/asia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia": {
+      "target": "/en/collection/world-polymer/asia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia/malasia/": {
+      "target": "/en/collection/world-polymer/asia/malaysia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia/malasia": {
+      "target": "/en/collection/world-polymer/asia/malaysia/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/": {
+      "target": "/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman": {
+      "target": "/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/canada": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/canada/": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/Canada/5-dolares-laurier/": {
+      "target": "/en/collection/world-polymer/Canada/5-dollars-laurier/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/Canada/5-dolares-laurier": {
+      "target": "/en/collection/world-polymer/Canada/5-dollars-laurier/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa/": {
+      "target": "/en/collection/world-polymer/europe/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa": {
+      "target": "/en/collection/world-polymer/europe/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa/inglaterra/": {
+      "target": "/en/collection/world-polymer/europe/england/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa/inglaterra": {
+      "target": "/en/collection/world-polymer/europe/england/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/": {
+      "target": "/en/collection/world-polymer/europe/england/5-pounds-churchill/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill": {
+      "target": "/en/collection/world-polymer/europe/england/5-pounds-churchill/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico": {
+      "target": "/en/collection/puerto-rico/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/": {
+      "target": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895": {
+      "target": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/junta-central-1-peso-1869/": {
+      "target": "/en/collection/puerto-rico/central-board-1-peso-1869/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/junta-central-1-peso-1869": {
+      "target": "/en/collection/puerto-rico/central-board-1-peso-1869/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/junta-central-cuba-1869/": {
+      "target": "/en/collection/puerto-rico/central-board-receipt-1869/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/puerto-rico/junta-central-cuba-1869": {
+      "target": "/en/collection/puerto-rico/central-board-receipt-1869/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states-numismatics/": {
+      "target": "/en/collection/united-states-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states-numismatics": {
+      "target": "/en/collection/united-states-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states-numismatics/1-dollar-trump-1776-2026/": {
+      "target": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states-numismatics/1-dollar-trump-1776-2026": {
+      "target": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states": {
+      "target": "/en/collection/united-states/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-series-2003-atlanta/": {
+      "target": "/en/collection/united-states/1-dollar-series-2003-atlanta/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-series-2003-atlanta": {
+      "target": "/en/collection/united-states/1-dollar-series-2003-atlanta/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-silver-certificate-1957b/": {
+      "target": "/en/collection/united-states/1-dollar-silver-certificate-1957b/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-silver-certificate-1957b": {
+      "target": "/en/collection/united-states/1-dollar-silver-certificate-1957b/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-state-bank-new-brunswick/": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1-dollar-state-bank-new-brunswick": {
+      "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934-chicago/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934-chicago": {
+      "target": "/en/collection/united-states/10-dollars-series-1934-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934a-chicago/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934a-chicago": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-chicago/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934a-cleveland/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-cleveland/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934a-cleveland": {
+      "target": "/en/collection/united-states/10-dollars-series-1934a-cleveland/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934d-richmond/": {
+      "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-series-1934d-richmond": {
+      "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/20-dollars-confederate-1864/": {
+      "target": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/20-dollars-confederate-1864": {
+      "target": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-city-bank-new-haven/": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-city-bank-new-haven": {
+      "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-confederate-1864/": {
+      "target": "/en/collection/united-states/5-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-confederate-1864": {
+      "target": "/en/collection/united-states/5-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-continental-1779/": {
+      "target": "/en/collection/united-states/5-dollars-continental-1779/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-dollars-continental-1779": {
+      "target": "/en/collection/united-states/5-dollars-continental-1779/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/500-dollars-series-1934a-new-york/": {
+      "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/500-dollars-series-1934a-new-york": {
+      "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/": {
+      "target": "/en/collection/united-states/miscellaneous/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous": {
+      "target": "/en/collection/united-states/miscellaneous/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/": {
+      "target": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george": {
+      "target": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895": {
+      "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/": {
+      "target": "/en/collection/united-states/mpc-vietnam/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam": {
+      "target": "/en/collection/united-states/mpc-vietnam/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681/": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/1-dollar-series-681": {
+      "target": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641": {
+      "target": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/20-dollars-series-692/": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/20-dollars-series-692": {
+      "target": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/": {
+      "target": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661": {
+      "target": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/life-is-beautiful-life-spray/": {
+      "target": "/en/collection/united-states/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/life-is-beautiful-life-spray": {
+      "target": "/en/collection/united-states/rency/life-is-beautiful-life-spray/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/pele-the-beautiful-game/": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/pele-the-beautiful-game": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/trump-never-surrender/": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/trump-never-surrender": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/warhol-basquiat-life-is-beautiful/": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/rency/warhol-basquiat-life-is-beautiful": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/10-pesos-oro-1943-anverso": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/10-pesos-oro-1943-anverso/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/10-pesos-oro-1943-reverso": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/10-pesos-oro-1943-reverso/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1943/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/2-pesos-oro-1955": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/2-pesos-oro-1955/": {
+      "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2000-pesos-oro": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/banco-de-la-republica-2000-pesos-oro/": {
+      "target": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/filipinas/": {
+      "target": "/en/collection/philippines/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/filipinas": {
+      "target": "/en/collection/philippines/",
+      "status": 301,
+      "rule": "category-hub"
+    },
+    "/en/collection/united-states/renci": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/": {
+      "target": "/en/collection/united-states/rency/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/messi-you-have-to-fight-to-reach-your-dream": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/messi-you-have-to-fight-to-reach-your-dream/": {
+      "target": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/pele-the-beautiful-game": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/pele-the-beautiful-game/": {
+      "target": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/trump-never-surrender": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/trump-never-surrender/": {
+      "target": "/en/collection/united-states/rency/trump-never-surrender/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/warhol-basquiat-life-is-beautiful": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/united-states/renci/warhol-basquiat-life-is-beautiful/": {
+      "target": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/world-polymer/canada": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/world-polymer/canada/": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/world-polymer/north-america/canada": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/world-polymer/north-america/canada/": {
+      "target": "/en/collection/world-polymer/Canada/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/contact.dc.html": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/contact.dc.html/": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/contacto/": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/contacto": {
+      "target": "/en/contact/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/glosario/": {
+      "target": "/en/glossary/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/glosario": {
+      "target": "/en/glossary/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/glosario/remainder/": {
+      "target": "/en/glossary/remainder/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/en/glosario/remainder": {
+      "target": "/en/glossary/remainder/",
+      "status": 301,
+      "rule": "last-slug"
+    },
+    "/en/netherlands-numismatica": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/netherlands-numismatica/": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/netherlands-numismatica/ducado-utrecht-1761": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/netherlands-numismatica/ducado-utrecht-1761/": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/nosotros": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/nosotros/": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/": {
+      "target": "/en/news/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias": {
+      "target": "/en/news/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/paises-bajos-numismatica": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/paises-bajos-numismatica/": {
+      "target": "/en/collection/netherlands-numismatics/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/paises-bajos-numismatica/ducado-utrecht-1761": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/paises-bajos-numismatica/ducado-utrecht-1761/": {
+      "target": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/politica-privacidad-cookies/": {
+      "target": "/en/privacy-cookies/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/politica-privacidad-cookies": {
+      "target": "/en/privacy-cookies/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/sobre-mi": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/sobre-mi/": {
+      "target": "/en/about/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/nosotros": {
+      "target": "/acerca-de/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/nosotros/": {
+      "target": "/acerca-de/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/paises-bajos-numismatica": {
+      "target": "/coleccion/paises-bajos-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/paises-bajos-numismatica/": {
+      "target": "/coleccion/paises-bajos-numismatica/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/paises-bajos-numismatica/ducado-utrecht-1761": {
+      "target": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/paises-bajos-numismatica/ducado-utrecht-1761/": {
+      "target": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/sobre-mi": {
+      "target": "/acerca-de/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/sobre-mi/": {
+      "target": "/acerca-de/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/tienda/carrito/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/tienda/carrito": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/wp-content/uploads/old-shop": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    },
+    "/wp-content/uploads/old-shop/": {
+      "target": "",
+      "status": 410,
+      "rule": "gone"
+    }
+  }
+}

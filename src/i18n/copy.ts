@@ -42,6 +42,10 @@ export const copy = {
     statsLabel: 'Estadísticas de la colección',
     browseTitle: 'Explorar Colección Virtual',
     browseIntro: 'Entre por un país, un material o un tema especializado.',
+    collectionHubLead:
+      '¿Qué más? Esta página es el índice de la Colección Virtual: un museo de papel y metal, no una tienda. Nada está a la venta. Con mucho gusto le recibimos para que entre por un país, un material o un tema —Colombia, Filipinas, China, Estados Unidos, Puerto Rico, Países Bajos, el polímero mundial, los lazaretos— y abra las fichas con serial, Pick y fotografías de anverso y reverso. Aquí no hay carrito ni lista de precios: hay contexto, fuentes y la pieza tal como está en la colección.',
+    collectionHubBody:
+      'El catálogo vive en español por defecto; cada ficha tiene pareja en inglés bajo /en/. Cada billete es un objeto físico único y el número de serie es su identidad: no hay dos ejemplares con el mismo serial en esta vitrina. Si una dirección antigua de la versión 1 ya no existe, buscamos el equivalente en este índice o en el buscador; no lo mandamos al inicio a ciegas. Las fichas de Colombia citan las tablas de BanRep y González White cuando aplica; el resto de países lleva las referencias de catálogo que están impresas en la pieza o publicadas por el emisor. Use las tarjetas de abajo para entrar a una vitrina, o el buscador si ya tiene un Pick, un serial o un nombre de emisor. Si llega desde un enlace de Google que todavía muestra la URL vieja, déle un momento al redireccionamiento: la ficha vive aquí, con el mismo objeto y mejores fotos.',
     milestonesTitle: 'Logros del Mes — Colección Virtual',
     milestonesIntro: 'Piezas y catálogos recientes incorporados a la Colección Virtual.',
     emptyMilestones: 'No hay piezas destacadas este mes.',
@@ -140,6 +144,10 @@ export const copy = {
     statsLabel: 'Collection statistics',
     browseTitle: 'Explore Virtual Collection',
     browseIntro: 'Enter through a country, material, or specialty theme.',
+    collectionHubLead:
+      'This page is the index of the Virtual Collection: a museum of paper and metal, not a shop. Nothing is for sale. Enter through a country, a substrate, or a theme — Colombia, the Philippines, China, the United States, Puerto Rico, the Netherlands, world polymer, the lazarettos — and open the records with serials, Pick numbers, and face and back photographs. There is no cart and no price list: you get context, sources, and the piece as it sits in the collection.',
+    collectionHubBody:
+      'Spanish is the default language of the catalogue; every record has an English pair under /en/. Each banknote is a unique physical object and the serial number is its identity: this case does not list two holdings with the same serial. If an old version-1 address no longer exists, we map it to the matching record or to this index — never blindly to the homepage. Colombian notes cite BanRep tables and González White when those sources apply; other countries carry the catalogue references printed on the piece or published by the issuer. Use the cards below to open a case, or search if you already have a Pick number, a serial, or an issuer name. If you arrive from a Google result that still shows an old URL, give the redirect a moment: the record lives here, with the same object and better photographs.',
     milestonesTitle: 'Monthly Milestones — Virtual Collection',
     milestonesIntro: 'Recent pieces and catalogs added to the Virtual Collection.',
     emptyMilestones: 'No featured pieces this month.',

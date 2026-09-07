@@ -62,4 +62,11 @@ describe('glossary catalogue terms', () => {
     }
     assert.equal(glossaryTerms.length, 147);
   });
+
+  it('gives remainder a long bilingual definition', () => {
+    const term = glossaryTermBySlug('remainder');
+    assert.ok(term);
+    assert.ok(term.definition.es.trim().split(/\s+/).length >= 150, term.definition.es);
+    assert.ok(term.definition.en.trim().split(/\s+/).length >= 150, term.definition.en);
+  });
 });
