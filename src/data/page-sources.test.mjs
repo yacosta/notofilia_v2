@@ -1,14 +1,29 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { uniqueCatalogSources } from './catalog.ts';
 import newsArticlesJson from './news-articles.json' with { type: 'json' };
 
+const catalogComponentsDir = new URL('../components/catalog/', import.meta.url);
+
+// Piece pages are named `{Country}NotePage.astro` / `{Country}CoinPage.astro`
+// (see .cursor/rules/10-page-types.mdc). This excludes series/coinage index
+// pages, which end in `SeriesPage.astro` / `CoinagePage.astro` instead.
+function discoverPiecePageFiles() {
+  return readdirSync(catalogComponentsDir)
+    .filter((name) => /^[A-Za-z]+(?:Note|Coin)Page\.astro$/.test(name))
+    .sort();
+}
+
 const piecePages = [
   '../components/catalog/ChinaNotePage.astro',
+  '../components/catalog/ColombiaCoinPage.astro',
   '../components/catalog/ColombiaNotePage.astro',
   '../components/catalog/MpcNotePage.astro',
   '../components/catalog/NetherlandsCoinPage.astro',
+  '../components/catalog/PolymerCanadaNotePage.astro',
+  '../components/catalog/PolymerEnglandNotePage.astro',
+  '../components/catalog/PolymerMalaysiaNotePage.astro',
   '../components/catalog/PuertoRicoNotePage.astro',
   '../components/catalog/UnitedStatesCoinPage.astro',
   '../components/catalog/UnitedStatesNotePage.astro',
@@ -72,6 +87,35 @@ describe('page-specific catalog sources', () => {
         /\.\.\.seriesSources/,
         `${page} still spreads seriesSources onto the piece`,
       );
+    }
+  });
+
+  it('keeps the piece-page allowlist exhaustive so new note/coin pages get checked', () => {
+    const discovered = discoverPiecePageFiles();
+    const tracked = piecePages.map((page) => page.replace('../components/catalog/', '')).sort();
+    assert.deepEqual(
+      discovered,
+      tracked,
+      'A {Country}NotePage.astro / {Country}CoinPage.astro file was added or removed; update the piecePages list in page-sources.test.mjs',
+    );
+  });
+
+  it('never imports a series- or catalog-level *Sources list on a piece page', () => {
+    const allowedSourceBindings = new Set(['uniqueCatalogSources']);
+    for (const page of piecePages) {
+      const source = read(page);
+      const importBlocks = [...source.matchAll(/import\s*\{([^}]+)\}\s*from\s*['"][^'"]+['"]/g)];
+      for (const [, names] of importBlocks) {
+        for (const raw of names.split(',')) {
+          const name = raw.trim().split(/\s+as\s+/).pop()?.trim();
+          if (!name) continue;
+          if (/Sources$/.test(name) && !allowedSourceBindings.has(name)) {
+            assert.fail(
+              `${page} imports ${name}, a series/catalog-level source list; piece pages must only render note.sources / piece.sources (or a per-piece merge on the same page).`,
+            );
+          }
+        }
+      }
     }
   });
 
