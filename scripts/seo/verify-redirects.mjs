@@ -12,7 +12,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { isHomePath, normalizePath, parseCsv } from './match.mjs';
+import { identityPath, isHomePath, parseCsv } from './match.mjs';
 import { lookupGscRedirect } from '../../src/lib/gsc-redirects.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -42,7 +42,7 @@ const records = csvRows.slice(1).map((row) => ({
 }));
 
 const v2 = existsSync(indexFile) ? JSON.parse(readFileSync(indexFile, 'utf8')) : { urls: [] };
-const live = new Set((v2.urls ?? []).map((u) => normalizePath(u.path)));
+const live = new Set((v2.urls ?? []).map((u) => identityPath(u.path)));
 
 const failures = [];
 
@@ -52,16 +52,18 @@ function fail(source, reason) {
 
 for (const row of records) {
   if (row.rule === 'exists') {
-    if (!live.has(normalizePath(row.source))) fail(row.source, 'exists-rule but not in v2 index');
+    if (!live.has(identityPath(row.source))) fail(row.source, 'exists-rule but not in v2 index');
     continue;
   }
-  if (live.has(normalizePath(row.source))) fail(row.source, 'redirect source is a live v2 URL');
+  if (live.has(identityPath(row.source))) fail(row.source, 'redirect source is a live v2 URL');
   if (row.status === 301) {
     if (!row.target) fail(row.source, '301 without target');
     if (isHomePath(row.target)) fail(row.source, '301 to home');
     const hop = lookupGscRedirect(row.target);
-    if (hop && hop.status === 301) fail(row.source, `more than one hop via ${row.target} → ${hop.target}`);
-    if (normalizePath(row.source) === normalizePath(row.target)) fail(row.source, 'loop (source equals target)');
+    if (hop && hop.status === 301 && identityPath(hop.target) !== identityPath(row.target)) {
+      fail(row.source, `more than one hop via ${row.target} → ${hop.target}`);
+    }
+    if (identityPath(row.source) === identityPath(row.target)) fail(row.source, 'loop (source equals target)');
   } else if (row.status === 410) {
     if (row.target && isHomePath(row.target)) fail(row.source, '410 target is home');
   } else {
@@ -78,10 +80,10 @@ if (existsSync(sitemapFile)) {
       return m[1];
     }
   });
-  const sitemapSet = new Set(locs.map((p) => normalizePath(p)));
+  const sitemapSet = new Set(locs.map((p) => identityPath(p)));
   for (const row of records) {
     if (row.rule === 'exists') continue;
-    if (sitemapSet.has(normalizePath(row.source))) fail(row.source, 'redirect source listed in sitemap.xml');
+    if (sitemapSet.has(identityPath(row.source))) fail(row.source, 'redirect source listed in sitemap.xml');
   }
 }
 

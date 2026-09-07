@@ -1,4 +1,4 @@
-import map from '../data/gsc-redirects.json';
+import map from '../data/gsc-redirects.json' with { type: 'json' };
 
 export type GscRedirectHit = {
   target: string;
@@ -17,8 +17,6 @@ function variants(pathname: string): string[] {
   const trimmed = pathname.replace(/\/+$/, '') || '/';
   if (trimmed !== pathname) out.push(trimmed);
   if (!pathname.endsWith('/') && pathname !== '/') out.push(`${pathname}/`);
-  const lower = pathname.toLowerCase();
-  if (lower !== pathname) out.push(lower, lower.replace(/\/+$/, '') || '/', lower.endsWith('/') ? lower : `${lower}/`);
   return [...new Set(out)];
 }
 
@@ -42,6 +40,27 @@ export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined 
   }
 
   return undefined;
+}
+
+export function isHomePathname(pathname: string): boolean {
+  return pathname === '/' || pathname === '/en' || pathname === '/en/';
+}
+
+export function planSeoResponse(
+  pathname: string,
+):
+  | { type: 'redirect'; target: string; rule: string }
+  | { type: 'gone'; rule: string }
+  | { type: 'probe-dc'; path: string }
+  | { type: 'pass' } {
+  const mapped = lookupGscRedirect(pathname);
+  if (mapped?.status === 410) return { type: 'gone', rule: mapped.rule };
+  if (mapped?.status === 301 && mapped.target && !isHomePathname(mapped.target)) {
+    return { type: 'redirect', target: mapped.target, rule: mapped.rule };
+  }
+  const dcPath = stripDreamweaverSuffix(pathname);
+  if (dcPath && !isHomePathname(dcPath)) return { type: 'probe-dc', path: dcPath };
+  return { type: 'pass' };
 }
 
 export function gscRedirectStats() {

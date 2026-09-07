@@ -81,9 +81,19 @@ describe('match rules', () => {
   });
 
   it('uses hreflang when the only last-slug hit is the other language', () => {
-    const hit = matchUrl('/en/old/1-peso-oro-1954', urls, categoryMap);
+    const hit = matchUrl('/en/old/nota-solo-es', [
+      ...urls,
+      {
+        path: '/coleccion/colombia/nota-solo-es/',
+        lang: 'es',
+        type: 'catalogue',
+        lastSlug: 'nota-solo-es',
+        title: 'solo es',
+        alternate: '/en/collection/colombia/nota-solo-es/',
+      },
+    ], categoryMap);
     assert.equal(hit.rule, 'last-slug-hreflang');
-    assert.equal(hit.target, '/en/collection/colombia/1-peso-oro-1954/');
+    assert.equal(hit.target, '/en/collection/colombia/nota-solo-es/');
   });
 
   it('fuzzy-matches unique token overlap of at least 80%', () => {

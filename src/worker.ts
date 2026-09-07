@@ -1,5 +1,5 @@
 import { contactLegacyRedirect } from './data/contact';
-import { lookupGscRedirect, stripDreamweaverSuffix } from './lib/gsc-redirects';
+import { planSeoResponse } from './lib/gsc-redirects';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 
 function isNonIndexableHost(hostname: string): boolean {
@@ -45,12 +45,12 @@ async function goneResponse(request: Request, env: Env, url: URL): Promise<Respo
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    const mapped = lookupGscRedirect(url.pathname);
-    if (mapped?.status === 410) {
+    const planned = planSeoResponse(url.pathname);
+    if (planned.type === 'gone') {
       return goneResponse(request, env, url);
     }
-    if (mapped?.status === 301 && mapped.target && !isHomePath(mapped.target)) {
-      return Response.redirect(new URL(mapped.target, url).href, 301);
+    if (planned.type === 'redirect') {
+      return Response.redirect(new URL(planned.target, url).href, 301);
     }
     const legacy = contactLegacyRedirect(url.pathname);
     if (legacy && !isHomePath(legacy)) {
@@ -60,11 +60,10 @@ export default {
       return handleCommentsRequest(request, env);
     }
 
-    const dcPath = stripDreamweaverSuffix(url.pathname);
-    if (dcPath && !isHomePath(dcPath)) {
-      const probe = await env.ASSETS.fetch(new Request(new URL(dcPath, url.origin), request));
+    if (planned.type === 'probe-dc') {
+      const probe = await env.ASSETS.fetch(new Request(new URL(planned.path, url.origin), request));
       if (probe.status === 200) {
-        return Response.redirect(new URL(dcPath, url).href, 301);
+        return Response.redirect(new URL(planned.path, url).href, 301);
       }
     }
 

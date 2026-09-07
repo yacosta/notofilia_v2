@@ -10,6 +10,14 @@ export function decodePath(pathname) {
   }
 }
 
+/** Case-sensitive path identity (slash-normalized). Used so /canada → /Canada/ is not a loop. */
+export function identityPath(pathname) {
+  let p = decodePath(String(pathname ?? '').split('?')[0].split('#')[0]);
+  if (!p.startsWith('/')) p = `/${p}`;
+  if (p !== '/' && !p.endsWith('/')) p = `${p}/`;
+  return p;
+}
+
 /** Matching key: lowercase, no trailing slash, no .dc.html / .dc. */
 export function normalizePath(pathname) {
   let p = decodePath(pathname).split('?')[0].split('#')[0];
