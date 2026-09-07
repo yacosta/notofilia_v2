@@ -2,15 +2,15 @@
   "usedSeed": true,
   "csv": "docs/seo/gsc-404-seed.csv",
   "counts": {
-    "existing": 198,
+    "existing": 195,
     "exists": 4,
     "last-slug": 2,
     "fuzzy": 1,
-    "hub-fallback": 1,
+    "hub-fallback": 4,
     "category-hub": 1,
     "gone": 2
   },
-  "fuzzyOrHubPercent": 0.98,
+  "fuzzyOrHubPercent": 2.44,
   "redirects": {
     "/about": {
       "target": "/en/about/",
@@ -1283,14 +1283,14 @@
       "rule": "existing"
     },
     "/en/coleccion/polimero-mundial/america-del-norte/": {
-      "target": "/en/collection/world-polymer/north-america/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/america-del-norte": {
-      "target": "/en/collection/world-polymer/north-america/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/america-del-norte/canada": {
       "target": "/en/collection/world-polymer/Canada/",
@@ -1303,14 +1303,14 @@
       "rule": "existing"
     },
     "/en/coleccion/polimero-mundial/asia/": {
-      "target": "/en/collection/world-polymer/asia/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/asia": {
-      "target": "/en/collection/world-polymer/asia/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/asia/malasia/": {
       "target": "/en/collection/world-polymer/asia/malaysia/",
@@ -1353,14 +1353,14 @@
       "rule": "existing"
     },
     "/en/coleccion/polimero-mundial/europa/": {
-      "target": "/en/collection/world-polymer/europe/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/europa": {
-      "target": "/en/collection/world-polymer/europe/",
+      "target": "/en/collection/world-polymer/",
       "status": 301,
-      "rule": "existing"
+      "rule": "hub-fallback"
     },
     "/en/coleccion/polimero-mundial/europa/inglaterra/": {
       "target": "/en/collection/world-polymer/europe/england/",

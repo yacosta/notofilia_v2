@@ -116,6 +116,27 @@ describe('match rules', () => {
     assert.equal(hit.target, '/coleccion/colombia/');
   });
 
+  it('falls back to the polymer hub when a continent prefix has no page', () => {
+    const polymer = [
+      ...urls,
+      {
+        path: '/en/collection/world-polymer/',
+        lang: 'en',
+        type: 'hub',
+        lastSlug: 'world-polymer',
+        title: 'World polymer',
+        alternate: '/coleccion/polimero-mundial/',
+      },
+    ];
+    const cats = {
+      ...categoryMap,
+      en: { ...categoryMap.en, 'polimero-mundial': '/en/collection/world-polymer/' },
+    };
+    const hit = matchUrl('/en/coleccion/polimero-mundial/asia/', polymer, cats);
+    assert.equal(hit.rule, 'hub-fallback');
+    assert.equal(hit.target, '/en/collection/world-polymer/');
+  });
+
   it('returns 410 when nothing matches and never targets home', () => {
     const hit = matchUrl('/tienda/carrito/', urls, categoryMap);
     assert.equal(hit.status, 410);

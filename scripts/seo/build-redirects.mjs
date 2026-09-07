@@ -10,8 +10,8 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   csvEscape,
+  identityPath,
   isHomePath,
-  languageOf,
   matchUrl,
   normalizePath,
   parseCsv,
@@ -43,6 +43,18 @@ if (!existsSync(indexFile)) {
 const index = JSON.parse(readFileSync(indexFile, 'utf8'));
 const urls = index.urls ?? index;
 const categoryMap = JSON.parse(readFileSync(categoryFile, 'utf8'));
+
+/** Continent hubs that PATH_PREFIX_PAIRS localize, but no page is published. */
+const MISSING_POLYMER_CONTINENTS = new Set(
+  [
+    '/coleccion/polimero-mundial/asia/',
+    '/coleccion/polimero-mundial/europa/',
+    '/coleccion/polimero-mundial/america-del-norte/',
+    '/en/collection/world-polymer/asia/',
+    '/en/collection/world-polymer/europe/',
+    '/en/collection/world-polymer/north-america/',
+  ].map((p) => identityPath(p)),
+);
 
 function loadCsvUrls(file) {
   const rows = parseCsv(readFileSync(file, 'utf8'));
@@ -105,7 +117,12 @@ for (const item of byNorm.values()) {
   const configured = existing.get(source) ?? existing.get(source.replace(/\/+$/, '') || '/') ?? existing.get(`${source.replace(/\/+$/, '')}/`);
   let result;
   if (configured && !isHomePath(configured)) {
-    result = { status: 301, target: configured.endsWith('/') || configured === '/' ? configured : `${configured}/`, rule: 'existing', confidence: 'high' };
+    const target = configured.endsWith('/') || configured === '/' ? configured : `${configured}/`;
+    if (MISSING_POLYMER_CONTINENTS.has(identityPath(target))) {
+      result = matchUrl(source, urls, categoryMap);
+    } else {
+      result = { status: 301, target, rule: 'existing', confidence: 'high' };
+    }
   } else {
     result = matchUrl(source, urls, categoryMap);
   }

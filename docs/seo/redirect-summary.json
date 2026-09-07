@@ -3,14 +3,14 @@
   "usedSeed": true,
   "total": 209,
   "counts": {
-    "existing": 198,
+    "existing": 195,
     "exists": 4,
     "last-slug": 2,
     "fuzzy": 1,
-    "hub-fallback": 1,
+    "hub-fallback": 4,
     "category-hub": 1,
     "gone": 2
   },
-  "fuzzyOrHubPercent": 0.98,
+  "fuzzyOrHubPercent": 2.44,
   "reviewRequired": false
 }

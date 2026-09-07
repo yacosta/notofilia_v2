@@ -23,6 +23,18 @@ describe('gsc redirect lookup', () => {
     assert.notEqual(mapped.type === 'redirect' ? mapped.target : '', '/');
     assert.notEqual(mapped.type === 'redirect' ? mapped.target : '', '/en/');
   });
+
+  it('sends polymer continent stubs to the live polymer hub, not missing EN continent pages', () => {
+    for (const path of [
+      '/en/coleccion/polimero-mundial/asia/',
+      '/en/coleccion/polimero-mundial/europa/',
+      '/en/coleccion/polimero-mundial/america-del-norte/',
+    ]) {
+      const planned = planSeoResponse(path);
+      assert.equal(planned.type, 'redirect');
+      assert.equal(planned.type === 'redirect' ? planned.target : '', '/en/collection/world-polymer/');
+    }
+  });
 });
 
 describe('worker wiring', () => {
