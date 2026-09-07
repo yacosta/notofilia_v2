@@ -248,8 +248,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Vintage illustrated map of Riohacha on parchment, with the cathedral, the pier, the Caribbean Sea, La Guajira, a passport, and the title Riohacha',
     },
     title: {
-      es: '5 pesos · Banco de Rio Hacha · 1883',
-      en: '5 pesos · Banco de Rio Hacha · 1883',
+      es: '5 pesos · Banco de Riohacha · 1883',
+      en: '5 pesos · Banco de Riohacha · 1883',
     },
     kicker: {
       es: 'Colombia · Banca libre · Pruebas ABNC',
@@ -260,8 +260,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A pair of American Bank Note Company proofs: face S819p1, slabbed PMG 64 Choice Uncirculated EPQ; back S819p2, PMG 62 Uncirculated. Series C, serial 00000.',
     },
     description: {
-      es: 'El Banco de Rio Hacha —hoy Riohacha, en la Guajira— dejó estatutos impresos en 1882, en la Imprenta de Padilla. Al año siguiente encargó a la American Bank Note Company de Nueva York el papel de cinco pesos. Hernández (8.ª ed., 2023) numera el cinco pesos de circulación del 1.º de enero de 1883 —escudo a la izquierda, Bolívar al centro, negro sobre café— como Cód. 1109; esta ficha es el par de pruebas ABNC, no esa fila de caja. El Standard Catalog of World Paper Money — Specialized Issues lo numera S819p: negro sobre fondo pardo, escudo a la izquierda, Simón Bolívar al centro y, a la derecha, una alegoría femenina apoyada en una rueda. La serie es C. El montaje de estas pruebas lleva la fecha «February 1883». El anverso promete pagar en la oficina, a la vista y al portador, cinco pesos en moneda corriente; el serial rojo es 00000 y tres perforaciones de cancelación cortan el margen inferior. El reverso, en sepia, es un marco de roleos con el 5 en ambos flancos y el pie «AMERICAN BANK NOTE COMPANY, NEW YORK». No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',
-      en: 'The Banco de Rio Hacha — today’s Riohacha, on the Guajira — left printed statutes in 1882, from the Imprenta de Padilla. The next year it ordered five-peso paper from the American Bank Note Company in New York. Hernández (8th ed., 2023) numbers the circulating five-peso of 1 January 1883 — arms at left, Bolívar at center, black on brown — as Cód. 1109; this record is the ABNC proof pair, not that till row. The Standard Catalog of World Paper Money — Specialized Issues numbers it S819p: black on a brown underprint, arms at left, Simón Bolívar at center, and at right a female allegory leaning on a wheel. The series is C. The mount of these proofs is dated “February 1883.” The face promises to pay at the office, on sight and to the bearer, five pesos in current money; the red serial is 00000 and three cancellation punches cut the lower margin. The sepia back is a scrollwork frame with a 5 at each flank and the imprint “AMERICAN BANK NOTE COMPANY, NEW YORK.” There are no signatures: these are plate proofs, not a note placed in circulation. This record gathers the collection’s two PMG holders — face and back, separately slabbed.',
+      es: 'El Banco de Riohacha, en la Guajira, dejó estatutos impresos en 1882, en la Imprenta de Padilla. Al año siguiente encargó a la American Bank Note Company de Nueva York el papel de cinco pesos. Hernández (8.ª ed., 2023) numera el cinco pesos de circulación del 1.º de enero de 1883 —escudo a la izquierda, Bolívar al centro, negro sobre café— como Cód. 1109; esta ficha es el par de pruebas ABNC, no esa fila de caja. El Standard Catalog of World Paper Money — Specialized Issues lo numera S819p: negro sobre fondo pardo, escudo a la izquierda, Simón Bolívar al centro y, a la derecha, una alegoría femenina apoyada en una rueda. La serie es C. El montaje de estas pruebas lleva la fecha «February 1883». El anverso promete pagar en la oficina, a la vista y al portador, cinco pesos en moneda corriente; el serial rojo es 00000 y tres perforaciones de cancelación cortan el margen inferior. El reverso, en sepia, es un marco de roleos con el 5 en ambos flancos y el pie «AMERICAN BANK NOTE COMPANY, NEW YORK». No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',
+      en: 'The Banco de Riohacha, on the Guajira, left printed statutes in 1882, from the Imprenta de Padilla. The next year it ordered five-peso paper from the American Bank Note Company in New York. Hernández (8th ed., 2023) numbers the circulating five-peso of 1 January 1883 — arms at left, Bolívar at center, black on brown — as Cód. 1109; this record is the ABNC proof pair, not that till row. The Standard Catalog of World Paper Money — Specialized Issues numbers it S819p: black on a brown underprint, arms at left, Simón Bolívar at center, and at right a female allegory leaning on a wheel. The series is C. The mount of these proofs is dated “February 1883.” The face promises to pay at the office, on sight and to the bearer, five pesos in current money; the red serial is 00000 and three cancellation punches cut the lower margin. The sepia back is a scrollwork frame with a 5 at each flank and the imprint “AMERICAN BANK NOTE COMPANY, NEW YORK.” There are no signatures: these are plate proofs, not a note placed in circulation. This record gathers the collection’s two PMG holders — face and back, separately slabbed.',
     },
     history: {
       es: 'Entre 1870 y finales de los ochenta Colombia no tenía un único banco central: era la banca libre. El gobierno autorizó bancos privados regionales que emitían billetes respaldados en sus propias reservas de oro y plata. En esa ventana, Riohacha era un puerto de frontera en la Guajira, nudo de comerciantes con el Caribe, Europa y el interior. El transporte de especie metálica era peligroso; el crédito local lo evitaba. Los estatutos de 1882, impresos en la Imprenta de Padilla, fijan la constitución del banco por comerciantes locales y extranjeros. Adolfo Meisel sitúa el inicio de operaciones en 1885, con un capital autorizado de 150.000 pesos, y la liquidación en 1888. Los catálogos de notafilia colombiana —Hernández, y las series especializadas— registran una emisión principal de 1, 5, 10, 20 y 50 pesos, y un fraccionario de 20 centavos, serie Y, fechado hacia diciembre de 1885. Este cinco pesos de 1883 lleva pie de la American Bank Note Company de Nueva York; de otros valores no se publica aquí la imprenta. La Regeneración de Rafael Núñez centralizó el poder político y económico. El Banco Nacional se estableció en 1881; hacia 1886–1887 el curso forzoso y las leyes que monopolizaron la emisión quitaron a los bancos particulares el derecho de imprimir. Sin esa facultad, y obligados a recibir el papel nacional en depreciación, la mayoría de los emisores regionales —incluido el de Riohacha— se liquidaron. Cerró así, en pocos años, la independencia financiera de este puerto del Caribe colombiano.',
@@ -299,8 +299,8 @@ export const colombiaNotes: ColombiaNote[] = [
       },
       {
         href: 'https://www.pmgnotes.com/news/article/6302/January-Auction-to-Feature-PMG-Graded-Notes-From-the-Eldorado-Collection/',
-        es: 'PMG — Prueba S819p del Banco de Rio Hacha en la colección Eldorado',
-        en: 'PMG — Banco de Rio Hacha S819p proof in the Eldorado collection',
+        es: 'PMG — Prueba S819p del Banco de Riohacha en la colección Eldorado',
+        en: 'PMG — Banco de Riohacha S819p proof in the Eldorado collection',
         note: {
           es: 'Documenta el tipo de 5 pesos de 1883 como prueba encapsulada.',
           en: 'Records the 1883 5-peso type as a slabbed proof.',
@@ -326,8 +326,8 @@ export const colombiaNotes: ColombiaNote[] = [
       },
       {
         href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COLS0819.htm',
-        es: 'Bank Note Museum — Colombia S819, 5 pesos del Banco de Rio Hacha',
-        en: 'Bank Note Museum — Colombia S819, Banco de Rio Hacha 5 pesos',
+        es: 'Bank Note Museum — Colombia S819, 5 pesos del Banco de Riohacha',
+        en: 'Bank Note Museum — Colombia S819, Banco de Riohacha 5 pesos',
         note: {
           es: 'Fecha 1.º de enero de 1883; American Bank Note Company, Nueva York; anota que solo se conocen especímenes.',
           en: 'Date 1 January 1883; American Bank Note Company, New York; notes that only specimens are known.',
