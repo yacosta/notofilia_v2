@@ -293,6 +293,7 @@ export const seriesCopy = {
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     sourcesTitle: 'Fuentes',
+    frnListLabel: 'Federal Reserve Notes alineados por denominación y luego por fecha de serie',
   },
   en: {
     metaTitle: 'United States · Federal, colonial, Confederate, and obsolete | Notofilia',
@@ -316,6 +317,7 @@ export const seriesCopy = {
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     sourcesTitle: 'Sources',
+    frnListLabel: 'Federal Reserve Notes lined up by denomination, then series date',
   },
 } as const;
 
@@ -3670,8 +3672,37 @@ export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): str
   return `${seriesPath(locale)}#${note.chapterId}`;
 }
 
+const FRN_SORT_ID = /^(\d+)-dolar(?:es)?-serie-(\d{4})([a-z]*)-/i;
+
+export function federalReserveSortKey(id: string): {
+  denomination: number;
+  year: number;
+  seriesLetter: string;
+} {
+  const match = id.match(FRN_SORT_ID);
+  if (!match) {
+    return { denomination: Number.MAX_SAFE_INTEGER, year: 0, seriesLetter: '' };
+  }
+  return {
+    denomination: Number(match[1]),
+    year: Number(match[2]),
+    seriesLetter: match[3].toLowerCase(),
+  };
+}
+
 export function notesForChapter(chapterId: UnitedStatesChapterId): UnitedStatesNote[] {
-  return unitedStatesNotes.filter((note) => note.chapterId === chapterId);
+  const notes = unitedStatesNotes.filter((note) => note.chapterId === chapterId);
+  if (chapterId !== 'us-frb') return notes;
+  return notes.slice().sort((a, b) => {
+    const left = federalReserveSortKey(a.id);
+    const right = federalReserveSortKey(b.id);
+    return (
+      left.denomination - right.denomination ||
+      left.year - right.year ||
+      left.seriesLetter.localeCompare(right.seriesLetter) ||
+      a.id.localeCompare(b.id)
+    );
+  });
 }
 
 export const unitedStatesNoteSlugs = unitedStatesNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));
