@@ -13,12 +13,21 @@ export function catalogAssetSrc(src: string, version: string = CATALOG_HERO_VERS
 
 export function cfImage(
   src: string,
-  options: { width: number; quality?: number; fit?: 'scale-down' | 'cover' } = { width: 800 },
+  options: {
+    width: number;
+    quality?: number;
+    fit?: 'scale-down' | 'cover';
+    format?: 'auto' | 'avif' | 'webp' | 'jpeg';
+  } = { width: 800 },
 ): string {
   if (!src.startsWith('/') || src.startsWith('//') || src.startsWith('data:')) return src;
   // Astro dev has no Cloudflare Image Resizing endpoint; serve assets directly.
   if (import.meta.env?.DEV) return src;
-  const parts = [`width=${options.width}`, 'format=auto', `quality=${options.quality ?? 75}`];
+  const parts = [
+    `width=${options.width}`,
+    `format=${options.format ?? 'auto'}`,
+    `quality=${options.quality ?? 75}`,
+  ];
   if (options.fit) parts.push(`fit=${options.fit}`);
   return `/cdn-cgi/image/${parts.join(',')}${src}`;
 }
