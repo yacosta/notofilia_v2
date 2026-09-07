@@ -15,7 +15,7 @@ const jsonLd = collectionPageJsonLd({
   locale,
   pathname,
   name: t.browseTitle,
-  description: t.browseIntro,
+  description: t.collectionHubLead,
   crumbs: [
     { name: t.home, path: '/' },
     { name: t.browseTitle, path: '/coleccion/' },
@@ -23,7 +23,7 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={`${t.browseTitle} · Notofilia`} description={t.browseIntro} locale={locale} pathname={pathname}>
+<Layout title={`${t.browseTitle} · Notofilia`} description={t.collectionHubLead} locale={locale} pathname={pathname}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
@@ -36,7 +36,8 @@ const jsonLd = collectionPageJsonLd({
       ]}
     />
     <h1 class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">{t.browseTitle}</h1>
-    <p class="mb-8 mt-0 max-w-[40rem] text-[17px]/7 text-muted">{t.browseIntro}</p>
+    <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{t.collectionHubLead}</p>
+    <p class="mb-8 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{t.collectionHubBody}</p>
     <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
       {
         collections.map((item) => (

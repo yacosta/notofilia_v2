@@ -1,4 +1,5 @@
 import { contactLegacyRedirect } from './data/contact';
+import { planSeoResponse } from './lib/gsc-redirects';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 
 function isNonIndexableHost(hostname: string): boolean {
@@ -11,6 +12,10 @@ function shouldNoindex(url: URL): boolean {
   return false;
 }
 
+function isHomePath(pathname: string): boolean {
+  return pathname === '/' || pathname === '/en' || pathname === '/en/';
+}
+
 /** Strip `/cdn-cgi/image/<options>` when local preview lacks Image Resizing. */
 function cfImageFallbackPath(pathname: string): string | null {
   if (!pathname.startsWith('/cdn-cgi/image/')) return null;
@@ -18,15 +23,48 @@ function cfImageFallbackPath(pathname: string): string | null {
   return slash === -1 ? null : pathname.slice(slash);
 }
 
+function applyRobots(url: URL, response: Response): Response {
+  if (!shouldNoindex(url)) return response;
+  const headers = new Headers(response.headers);
+  headers.set('X-Robots-Tag', isNonIndexableHost(url.hostname) ? 'noindex, nofollow' : 'noindex');
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+async function goneResponse(request: Request, env: Env, url: URL): Promise<Response> {
+  const nf = url.pathname.startsWith('/en') ? '/en/404/' : '/404';
+  const page = await env.ASSETS.fetch(new Request(new URL(nf, url.origin), request));
+  const headers = new Headers(page.headers);
+  headers.set('X-Robots-Tag', 'noindex');
+  return new Response(page.body, { status: 410, statusText: 'Gone', headers });
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    const planned = planSeoResponse(url.pathname);
+    if (planned.type === 'gone') {
+      return goneResponse(request, env, url);
+    }
+    if (planned.type === 'redirect') {
+      return Response.redirect(new URL(planned.target, url).href, 301);
+    }
     const legacy = contactLegacyRedirect(url.pathname);
-    if (legacy) {
+    if (legacy && !isHomePath(legacy)) {
       return Response.redirect(new URL(legacy, url).href, 301);
     }
     if (url.pathname.startsWith('/api/')) {
       return handleCommentsRequest(request, env);
+    }
+
+    if (planned.type === 'probe-dc') {
+      const probe = await env.ASSETS.fetch(new Request(new URL(planned.path, url.origin), request));
+      if (probe.status === 200) {
+        return Response.redirect(new URL(planned.path, url).href, 301);
+      }
     }
 
     let asset = await env.ASSETS.fetch(request);
@@ -48,15 +86,7 @@ export default {
         headers: notFound.headers,
       });
     }
-    if (!shouldNoindex(url)) return asset;
-
-    const headers = new Headers(asset.headers);
-    headers.set('X-Robots-Tag', isNonIndexableHost(url.hostname) ? 'noindex, nofollow' : 'noindex');
-    return new Response(asset.body, {
-      status: asset.status,
-      statusText: asset.statusText,
-      headers,
-    });
+    return applyRobots(url, asset);
   },
 };
 

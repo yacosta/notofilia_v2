@@ -1,0 +1,5398 @@
+{
+  "generatedFrom": "src/pages",
+  "count": 674,
+  "urls": [
+    {
+      "path": "/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "",
+      "title": "Notofilia",
+      "alternate": "/en/"
+    },
+    {
+      "path": "/acerca-de/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "acerca-de",
+      "title": "acerca-de",
+      "alternate": "/en/about/"
+    },
+    {
+      "path": "/blog/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "blog",
+      "title": "blog",
+      "alternate": "/en/blog/"
+    },
+    {
+      "path": "/blog/como-empezar-coleccion-billetes/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "como-empezar-coleccion-billetes",
+      "title": "como-empezar-coleccion-billetes",
+      "alternate": "/en/blog/how-to-start-a-banknote-collection/"
+    },
+    {
+      "path": "/blog/como-identificar-billetes-falsos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "como-identificar-billetes-falsos",
+      "title": "como-identificar-billetes-falsos",
+      "alternate": "/en/blog/how-to-identify-counterfeit-banknotes/"
+    },
+    {
+      "path": "/blog/diferencia-numismatica-notafilia/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "diferencia-numismatica-notafilia",
+      "title": "diferencia-numismatica-notafilia",
+      "alternate": "/en/blog/difference-between-numismatics-and-notaphily/"
+    },
+    {
+      "path": "/blog/mejores-empresas-certificacion-monedas-billetes/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "mejores-empresas-certificacion-monedas-billetes",
+      "title": "mejores-empresas-certificacion-monedas-billetes",
+      "alternate": "/en/blog/best-coin-and-banknote-grading-companies/"
+    },
+    {
+      "path": "/blog/mylar-si-plastico-no-como-guardar-billetes/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "mylar-si-plastico-no-como-guardar-billetes",
+      "title": "mylar-si-plastico-no-como-guardar-billetes",
+      "alternate": "/en/blog/mylar-yes-plastic-no-how-to-store-banknotes/"
+    },
+    {
+      "path": "/blog/numeros-serie-especiales-billetes/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "numeros-serie-especiales-billetes",
+      "title": "numeros-serie-especiales-billetes",
+      "alternate": "/en/blog/special-serial-numbers-on-banknotes/"
+    },
+    {
+      "path": "/blog/origenes-banca-comercial-colombia-banca-libre/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "origenes-banca-comercial-colombia-banca-libre",
+      "title": "origenes-banca-comercial-colombia-banca-libre",
+      "alternate": "/en/blog/origins-of-commercial-banking-colombia-free-banking/"
+    },
+    {
+      "path": "/blog/origenes-banca-comercial-puerto-rico/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "origenes-banca-comercial-puerto-rico",
+      "title": "origenes-banca-comercial-puerto-rico",
+      "alternate": "/en/blog/origins-of-commercial-banking-puerto-rico/"
+    },
+    {
+      "path": "/blog/personajes-billetes-colombia/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "personajes-billetes-colombia",
+      "title": "personajes-billetes-colombia",
+      "alternate": "/en/blog/figures-on-colombian-banknotes/"
+    },
+    {
+      "path": "/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "tres-imprentas-misterio-pie-imprenta-billetes-colombianos",
+      "title": "tres-imprentas-misterio-pie-imprenta-billetes-colombianos",
+      "alternate": "/en/blog/three-imprints-colombian-banknote-printer/"
+    },
+    {
+      "path": "/buscar/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "buscar",
+      "title": "buscar",
+      "alternate": "/en/search/"
+    },
+    {
+      "path": "/coleccion/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "coleccion",
+      "title": "coleccion",
+      "alternate": "/en/collection/"
+    },
+    {
+      "path": "/coleccion/china/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "china",
+      "title": "china",
+      "alternate": "/en/collection/china/"
+    },
+    {
+      "path": "/coleccion/china/100-yuan/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "100-yuan",
+      "title": "100-yuan",
+      "alternate": "/en/collection/china/100-yuan/"
+    },
+    {
+      "path": "/coleccion/colombia-numismatica/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "colombia-numismatica",
+      "title": "colombia-numismatica",
+      "alternate": "/en/collection/colombia-numismatics/"
+    },
+    {
+      "path": "/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-4-real-santa-marta-1820",
+      "title": "1-4-real-santa-marta-1820",
+      "alternate": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/"
+    },
+    {
+      "path": "/coleccion/colombia-numismatica/catalogo/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "catalogo",
+      "title": "catalogo",
+      "alternate": "/en/collection/colombia-numismatics/catalog/"
+    },
+    {
+      "path": "/coleccion/colombia/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "colombia",
+      "title": "colombia",
+      "alternate": "/en/collection/colombia/"
+    },
+    {
+      "path": "/coleccion/colombia/1-peso-oro-1945/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1945",
+      "title": "1-peso-oro-1945",
+      "alternate": "/en/collection/colombia/1-peso-oro-1945/"
+    },
+    {
+      "path": "/coleccion/colombia/1-peso-oro-1954/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1954",
+      "title": "1-peso-oro-1954",
+      "alternate": "/en/collection/colombia/1-peso-oro-1954/"
+    },
+    {
+      "path": "/coleccion/colombia/1-peso-oro-1973/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1973",
+      "title": "1-peso-oro-1973",
+      "alternate": "/en/collection/colombia/1-peso-oro-1973/"
+    },
+    {
+      "path": "/coleccion/colombia/1-peso-tolima-1901/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-tolima-1901",
+      "title": "1-peso-tolima-1901",
+      "alternate": "/en/collection/colombia/1-peso-tolima-1901/"
+    },
+    {
+      "path": "/coleccion/colombia/10-pesos-oro-1943/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1943",
+      "title": "10-pesos-oro-1943",
+      "alternate": "/en/collection/colombia/10-pesos-oro-1943/"
+    },
+    {
+      "path": "/coleccion/colombia/10-pesos-oro-1976/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1976",
+      "title": "10-pesos-oro-1976",
+      "alternate": "/en/collection/colombia/10-pesos-oro-1976/"
+    },
+    {
+      "path": "/coleccion/colombia/1000-pesos-error-2008/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2008",
+      "title": "1000-pesos-error-2008",
+      "alternate": "/en/collection/colombia/1000-pesos-error-2008/"
+    },
+    {
+      "path": "/coleccion/colombia/1000-pesos-error-2011/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2011",
+      "title": "1000-pesos-error-2011",
+      "alternate": "/en/collection/colombia/1000-pesos-error-2011/"
+    },
+    {
+      "path": "/coleccion/colombia/1000-pesos-oro-1979/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-oro-1979",
+      "title": "1000-pesos-oro-1979",
+      "alternate": "/en/collection/colombia/1000-pesos-oro-1979/"
+    },
+    {
+      "path": "/coleccion/colombia/10000-pesos-1994/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10000-pesos-1994",
+      "title": "10000-pesos-1994",
+      "alternate": "/en/collection/colombia/10000-pesos-1994/"
+    },
+    {
+      "path": "/coleccion/colombia/2-pesos-oro-1944/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2-pesos-oro-1944",
+      "title": "2-pesos-oro-1944",
+      "alternate": "/en/collection/colombia/2-pesos-oro-1944/"
+    },
+    {
+      "path": "/coleccion/colombia/2000-pesos-2008/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-2008",
+      "title": "2000-pesos-2008",
+      "alternate": "/en/collection/colombia/2000-pesos-2008/"
+    },
+    {
+      "path": "/coleccion/colombia/2000-pesos-2015/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-2015",
+      "title": "2000-pesos-2015",
+      "alternate": "/en/collection/colombia/2000-pesos-2015/"
+    },
+    {
+      "path": "/coleccion/colombia/2000-pesos-oro-1983/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-oro-1983",
+      "title": "2000-pesos-oro-1983",
+      "alternate": "/en/collection/colombia/2000-pesos-oro-1983/"
+    },
+    {
+      "path": "/coleccion/colombia/20000-pesos-2017/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "20000-pesos-2017",
+      "title": "20000-pesos-2017",
+      "alternate": "/en/collection/colombia/20000-pesos-2017/"
+    },
+    {
+      "path": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-banco-hipotecario-1881",
+      "title": "5-pesos-banco-hipotecario-1881",
+      "alternate": "/en/collection/colombia/5-pesos-banco-hipotecario-1881/"
+    },
+    {
+      "path": "/coleccion/colombia/5-pesos-oro-1960/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1960",
+      "title": "5-pesos-oro-1960",
+      "alternate": "/en/collection/colombia/5-pesos-oro-1960/"
+    },
+    {
+      "path": "/coleccion/colombia/5-pesos-oro-1980/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1980",
+      "title": "5-pesos-oro-1980",
+      "alternate": "/en/collection/colombia/5-pesos-oro-1980/"
+    },
+    {
+      "path": "/coleccion/colombia/5-pesos-rio-hacha-1883/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-rio-hacha-1883",
+      "title": "5-pesos-rio-hacha-1883",
+      "alternate": "/en/collection/colombia/5-pesos-rio-hacha-1883/"
+    },
+    {
+      "path": "/coleccion/colombia/50000-pesos-error-2008/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "50000-pesos-error-2008",
+      "title": "50000-pesos-error-2008",
+      "alternate": "/en/collection/colombia/50000-pesos-error-2008/"
+    },
+    {
+      "path": "/coleccion/colombia/50000-pesos-error-2015/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "50000-pesos-error-2015",
+      "title": "50000-pesos-error-2015",
+      "alternate": "/en/collection/colombia/50000-pesos-error-2015/"
+    },
+    {
+      "path": "/coleccion/colombia/catalogo/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "catalogo",
+      "title": "catalogo",
+      "alternate": "/en/collection/colombia/catalog/"
+    },
+    {
+      "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "tiquete-estudiantil-15-centavos",
+      "title": "tiquete-estudiantil-15-centavos",
+      "alternate": "/en/collection/colombia/tiquete-estudiantil-15-centavos/"
+    },
+    {
+      "path": "/coleccion/ecuador/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "ecuador",
+      "title": "ecuador",
+      "alternate": "/en/collection/ecuador/"
+    },
+    {
+      "path": "/coleccion/estados-unidos-numismatica/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "estados-unidos-numismatica",
+      "title": "estados-unidos-numismatica",
+      "alternate": "/en/collection/united-states-numismatics/"
+    },
+    {
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-trump-1776-2026",
+      "title": "1-dolar-trump-1776-2026",
+      "alternate": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "estados-unidos",
+      "title": "estados-unidos",
+      "alternate": "/en/collection/united-states/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-certificado-plata-1957b",
+      "title": "1-dolar-certificado-plata-1957b",
+      "alternate": "/en/collection/united-states/1-dollar-silver-certificate-1957b/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-serie-2003-atlanta",
+      "title": "1-dolar-serie-2003-atlanta",
+      "alternate": "/en/collection/united-states/1-dollar-series-2003-atlanta/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-state-bank-new-brunswick",
+      "title": "1-dolar-state-bank-new-brunswick",
+      "alternate": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934-chicago/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-dolares-serie-1934-chicago",
+      "title": "10-dolares-serie-1934-chicago",
+      "alternate": "/en/collection/united-states/10-dollars-series-1934-chicago/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-dolares-serie-1934a-chicago",
+      "title": "10-dolares-serie-1934a-chicago",
+      "alternate": "/en/collection/united-states/10-dollars-series-1934a-chicago/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-dolares-serie-1934a-cleveland",
+      "title": "10-dolares-serie-1934a-cleveland",
+      "alternate": "/en/collection/united-states/10-dollars-series-1934a-cleveland/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-dolares-serie-1934d-richmond",
+      "title": "10-dolares-serie-1934d-richmond",
+      "alternate": "/en/collection/united-states/10-dollars-series-1934d-richmond/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/100-dolares-confederados-1862/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "100-dolares-confederados-1862",
+      "title": "100-dolares-confederados-1862",
+      "alternate": "/en/collection/united-states/100-dollars-confederate-1862/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/20-dolares-confederados-1864/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "20-dolares-confederados-1864",
+      "title": "20-dolares-confederados-1864",
+      "alternate": "/en/collection/united-states/20-dollars-confederate-1864/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-dolares-city-bank-new-haven",
+      "title": "5-dolares-city-bank-new-haven",
+      "alternate": "/en/collection/united-states/5-dollars-city-bank-new-haven/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/5-dolares-confederados-1864/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-dolares-confederados-1864",
+      "title": "5-dolares-confederados-1864",
+      "alternate": "/en/collection/united-states/5-dollars-confederate-1864/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/5-dolares-continental-1779/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-dolares-continental-1779",
+      "title": "5-dolares-continental-1779",
+      "alternate": "/en/collection/united-states/5-dollars-continental-1779/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "50-dolares-canal-bank-nueva-orleans",
+      "title": "50-dolares-canal-bank-nueva-orleans",
+      "alternate": "/en/collection/united-states/50-dollars-canal-bank-new-orleans/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "500-dolares-serie-1934a-nueva-york",
+      "title": "500-dolares-serie-1934a-nueva-york",
+      "alternate": "/en/collection/united-states/500-dollars-series-1934a-new-york/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "miscelaneos",
+      "title": "miscelaneos",
+      "alternate": "/en/collection/united-states/miscellaneous/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-serie-2006-dallas-wheres-george",
+      "title": "1-dolar-serie-2006-dallas-wheres-george",
+      "alternate": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "nota-prueba-giori-lincoln-memorial",
+      "title": "nota-prueba-giori-lincoln-memorial",
+      "alternate": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "scrip-baraboo-jubileo-1933",
+      "title": "scrip-baraboo-jubileo-1933",
+      "alternate": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-ringling-bros-a2002",
+      "title": "1-dolar-ringling-bros-a2002",
+      "alternate": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-centavos-chas-ringling-a2844",
+      "title": "10-centavos-chas-ringling-a2844",
+      "alternate": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "15-centavos-al-t-ringling-a2819",
+      "title": "15-centavos-al-t-ringling-a2819",
+      "alternate": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-centavos-john-ringling-a4895",
+      "title": "5-centavos-john-ringling-a4895",
+      "alternate": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/mpc-vietnam/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "mpc-vietnam",
+      "title": "mpc-vietnam",
+      "alternate": "/en/collection/united-states/mpc-vietnam/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-dolar-serie-681",
+      "title": "1-dolar-serie-681",
+      "alternate": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-dolares-serie-641",
+      "title": "10-dolares-serie-641",
+      "alternate": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "20-dolares-serie-692",
+      "title": "20-dolares-serie-692",
+      "alternate": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-dolares-serie-661",
+      "title": "5-dolares-serie-661",
+      "alternate": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "rency",
+      "title": "rency",
+      "alternate": "/en/collection/united-states/rency/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "life-is-beautiful-life-spray",
+      "title": "life-is-beautiful-life-spray",
+      "alternate": "/en/collection/united-states/rency/life-is-beautiful-life-spray/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "messi-you-have-to-fight-to-reach-your-dream",
+      "title": "messi-you-have-to-fight-to-reach-your-dream",
+      "alternate": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "pele-the-beautiful-game",
+      "title": "pele-the-beautiful-game",
+      "alternate": "/en/collection/united-states/rency/pele-the-beautiful-game/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/trump-never-surrender/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "trump-never-surrender",
+      "title": "trump-never-surrender",
+      "alternate": "/en/collection/united-states/rency/trump-never-surrender/"
+    },
+    {
+      "path": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "warhol-basquiat-life-is-beautiful",
+      "title": "warhol-basquiat-life-is-beautiful",
+      "alternate": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/"
+    },
+    {
+      "path": "/coleccion/filipinas/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "filipinas",
+      "title": "filipinas",
+      "alternate": "/en/collection/philippines/"
+    },
+    {
+      "path": "/coleccion/filipinas/1-peso/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso",
+      "title": "1-peso",
+      "alternate": "/en/collection/philippines/1-peso/"
+    },
+    {
+      "path": "/coleccion/filipinas/2-pesos/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2-pesos",
+      "title": "2-pesos",
+      "alternate": "/en/collection/philippines/2-pesos/"
+    },
+    {
+      "path": "/coleccion/filipinas/20-pesos/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "20-pesos",
+      "title": "20-pesos",
+      "alternate": "/en/collection/philippines/20-pesos/"
+    },
+    {
+      "path": "/coleccion/filipinas/5-pesos-banco-nacional-1916/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-banco-nacional-1916",
+      "title": "5-pesos-banco-nacional-1916",
+      "alternate": "/en/collection/philippines/5-pesos-national-bank-1916/"
+    },
+    {
+      "path": "/coleccion/filipinas/5-pesos/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos",
+      "title": "5-pesos",
+      "alternate": "/en/collection/philippines/5-pesos/"
+    },
+    {
+      "path": "/coleccion/guatemala/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "guatemala",
+      "title": "guatemala",
+      "alternate": "/en/collection/guatemala/"
+    },
+    {
+      "path": "/coleccion/lazarettos/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "lazarettos",
+      "title": "lazarettos",
+      "alternate": "/en/collection/lazarettos/"
+    },
+    {
+      "path": "/coleccion/notafilia/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "notafilia",
+      "title": "notafilia",
+      "alternate": "/en/collection/notaphily/"
+    },
+    {
+      "path": "/coleccion/notafilia/catalogo/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "catalogo",
+      "title": "catalogo",
+      "alternate": "/en/collection/notaphily/catalog/"
+    },
+    {
+      "path": "/coleccion/numismatica/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "numismatica",
+      "title": "numismatica",
+      "alternate": "/en/collection/numismatics/"
+    },
+    {
+      "path": "/coleccion/paises-bajos-numismatica/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "paises-bajos-numismatica",
+      "title": "paises-bajos-numismatica",
+      "alternate": "/en/collection/netherlands-numismatics/"
+    },
+    {
+      "path": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "ducado-utrecht-1761",
+      "title": "ducado-utrecht-1761",
+      "alternate": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/"
+    },
+    {
+      "path": "/coleccion/paises-bajos/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "paises-bajos",
+      "title": "paises-bajos",
+      "alternate": "/en/collection/netherlands/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "polimero-mundial",
+      "title": "polimero-mundial",
+      "alternate": "/en/collection/world-polymer/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/asia/malasia/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "malasia",
+      "title": "malasia",
+      "alternate": "/en/collection/world-polymer/asia/malaysia/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-ringgit-abdul-rahman",
+      "title": "5-ringgit-abdul-rahman",
+      "alternate": "/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/Canada/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "canada",
+      "title": "canada",
+      "alternate": "/en/collection/world-polymer/Canada/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-dolares-laurier",
+      "title": "5-dolares-laurier",
+      "alternate": "/en/collection/world-polymer/Canada/5-dollars-laurier/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/europa/inglaterra/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "inglaterra",
+      "title": "inglaterra",
+      "alternate": "/en/collection/world-polymer/europe/england/"
+    },
+    {
+      "path": "/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-libras-churchill",
+      "title": "5-libras-churchill",
+      "alternate": "/en/collection/world-polymer/europe/england/5-pounds-churchill/"
+    },
+    {
+      "path": "/coleccion/puerto-rico/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "puerto-rico",
+      "title": "puerto-rico",
+      "alternate": "/en/collection/puerto-rico/"
+    },
+    {
+      "path": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "billete-de-canje-1-peso-1895",
+      "title": "billete-de-canje-1-peso-1895",
+      "alternate": "/en/collection/puerto-rico/1-peso-exchange-note-1895/"
+    },
+    {
+      "path": "/coleccion/puerto-rico/junta-central-1-peso-1869/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "junta-central-1-peso-1869",
+      "title": "junta-central-1-peso-1869",
+      "alternate": "/en/collection/puerto-rico/central-board-1-peso-1869/"
+    },
+    {
+      "path": "/coleccion/puerto-rico/junta-central-cuba-1869/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "junta-central-cuba-1869",
+      "title": "junta-central-cuba-1869",
+      "alternate": "/en/collection/puerto-rico/central-board-receipt-1869/"
+    },
+    {
+      "path": "/contacto/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "contacto",
+      "title": "contacto",
+      "alternate": "/en/contact/"
+    },
+    {
+      "path": "/en/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "en",
+      "title": "en",
+      "alternate": "/"
+    },
+    {
+      "path": "/en/about/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "about",
+      "title": "about",
+      "alternate": "/acerca-de/"
+    },
+    {
+      "path": "/en/blog/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "blog",
+      "title": "blog",
+      "alternate": "/blog/"
+    },
+    {
+      "path": "/en/blog/best-coin-and-banknote-grading-companies/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "best-coin-and-banknote-grading-companies",
+      "title": "best-coin-and-banknote-grading-companies",
+      "alternate": "/blog/mejores-empresas-certificacion-monedas-billetes/"
+    },
+    {
+      "path": "/en/blog/difference-between-numismatics-and-notaphily/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "difference-between-numismatics-and-notaphily",
+      "title": "difference-between-numismatics-and-notaphily",
+      "alternate": "/blog/diferencia-numismatica-notafilia/"
+    },
+    {
+      "path": "/en/blog/figures-on-colombian-banknotes/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "figures-on-colombian-banknotes",
+      "title": "figures-on-colombian-banknotes",
+      "alternate": "/blog/personajes-billetes-colombia/"
+    },
+    {
+      "path": "/en/blog/how-to-identify-counterfeit-banknotes/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "how-to-identify-counterfeit-banknotes",
+      "title": "how-to-identify-counterfeit-banknotes",
+      "alternate": "/blog/como-identificar-billetes-falsos/"
+    },
+    {
+      "path": "/en/blog/how-to-start-a-banknote-collection/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "how-to-start-a-banknote-collection",
+      "title": "how-to-start-a-banknote-collection",
+      "alternate": "/blog/como-empezar-coleccion-billetes/"
+    },
+    {
+      "path": "/en/blog/mylar-yes-plastic-no-how-to-store-banknotes/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "mylar-yes-plastic-no-how-to-store-banknotes",
+      "title": "mylar-yes-plastic-no-how-to-store-banknotes",
+      "alternate": "/blog/mylar-si-plastico-no-como-guardar-billetes/"
+    },
+    {
+      "path": "/en/blog/origins-of-commercial-banking-colombia-free-banking/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "origins-of-commercial-banking-colombia-free-banking",
+      "title": "origins-of-commercial-banking-colombia-free-banking",
+      "alternate": "/blog/origenes-banca-comercial-colombia-banca-libre/"
+    },
+    {
+      "path": "/en/blog/origins-of-commercial-banking-puerto-rico/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "origins-of-commercial-banking-puerto-rico",
+      "title": "origins-of-commercial-banking-puerto-rico",
+      "alternate": "/blog/origenes-banca-comercial-puerto-rico/"
+    },
+    {
+      "path": "/en/blog/special-serial-numbers-on-banknotes/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "special-serial-numbers-on-banknotes",
+      "title": "special-serial-numbers-on-banknotes",
+      "alternate": "/blog/numeros-serie-especiales-billetes/"
+    },
+    {
+      "path": "/en/blog/three-imprints-colombian-banknote-printer/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "three-imprints-colombian-banknote-printer",
+      "title": "three-imprints-colombian-banknote-printer",
+      "alternate": "/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/"
+    },
+    {
+      "path": "/en/collection/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "collection",
+      "title": "collection",
+      "alternate": "/coleccion/"
+    },
+    {
+      "path": "/en/collection/china/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "china",
+      "title": "china",
+      "alternate": "/coleccion/china/"
+    },
+    {
+      "path": "/en/collection/china/100-yuan/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "100-yuan",
+      "title": "100-yuan",
+      "alternate": "/coleccion/china/100-yuan/"
+    },
+    {
+      "path": "/en/collection/colombia-numismatics/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "colombia-numismatics",
+      "title": "colombia-numismatics",
+      "alternate": "/coleccion/colombia-numismatica/"
+    },
+    {
+      "path": "/en/collection/colombia-numismatics/1-4-real-santa-marta-1820/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-4-real-santa-marta-1820",
+      "title": "1-4-real-santa-marta-1820",
+      "alternate": "/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/"
+    },
+    {
+      "path": "/en/collection/colombia-numismatics/catalog/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "catalog",
+      "title": "catalog",
+      "alternate": "/coleccion/colombia-numismatica/catalogo/"
+    },
+    {
+      "path": "/en/collection/colombia/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "colombia",
+      "title": "colombia",
+      "alternate": "/coleccion/colombia/"
+    },
+    {
+      "path": "/en/collection/colombia/1-peso-oro-1945/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1945",
+      "title": "1-peso-oro-1945",
+      "alternate": "/coleccion/colombia/1-peso-oro-1945/"
+    },
+    {
+      "path": "/en/collection/colombia/1-peso-oro-1954/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1954",
+      "title": "1-peso-oro-1954",
+      "alternate": "/coleccion/colombia/1-peso-oro-1954/"
+    },
+    {
+      "path": "/en/collection/colombia/1-peso-oro-1973/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1973",
+      "title": "1-peso-oro-1973",
+      "alternate": "/coleccion/colombia/1-peso-oro-1973/"
+    },
+    {
+      "path": "/en/collection/colombia/1-peso-tolima-1901/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-tolima-1901",
+      "title": "1-peso-tolima-1901",
+      "alternate": "/coleccion/colombia/1-peso-tolima-1901/"
+    },
+    {
+      "path": "/en/collection/colombia/10-pesos-oro-1943/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1943",
+      "title": "10-pesos-oro-1943",
+      "alternate": "/coleccion/colombia/10-pesos-oro-1943/"
+    },
+    {
+      "path": "/en/collection/colombia/10-pesos-oro-1976/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1976",
+      "title": "10-pesos-oro-1976",
+      "alternate": "/coleccion/colombia/10-pesos-oro-1976/"
+    },
+    {
+      "path": "/en/collection/colombia/1000-pesos-error-2008/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2008",
+      "title": "1000-pesos-error-2008",
+      "alternate": "/coleccion/colombia/1000-pesos-error-2008/"
+    },
+    {
+      "path": "/en/collection/colombia/1000-pesos-error-2011/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2011",
+      "title": "1000-pesos-error-2011",
+      "alternate": "/coleccion/colombia/1000-pesos-error-2011/"
+    },
+    {
+      "path": "/en/collection/colombia/1000-pesos-oro-1979/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-oro-1979",
+      "title": "1000-pesos-oro-1979",
+      "alternate": "/coleccion/colombia/1000-pesos-oro-1979/"
+    },
+    {
+      "path": "/en/collection/colombia/10000-pesos-1994/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10000-pesos-1994",
+      "title": "10000-pesos-1994",
+      "alternate": "/coleccion/colombia/10000-pesos-1994/"
+    },
+    {
+      "path": "/en/collection/colombia/2-pesos-oro-1944/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-pesos-oro-1944",
+      "title": "2-pesos-oro-1944",
+      "alternate": "/coleccion/colombia/2-pesos-oro-1944/"
+    },
+    {
+      "path": "/en/collection/colombia/2000-pesos-2008/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-2008",
+      "title": "2000-pesos-2008",
+      "alternate": "/coleccion/colombia/2000-pesos-2008/"
+    },
+    {
+      "path": "/en/collection/colombia/2000-pesos-2015/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-2015",
+      "title": "2000-pesos-2015",
+      "alternate": "/coleccion/colombia/2000-pesos-2015/"
+    },
+    {
+      "path": "/en/collection/colombia/2000-pesos-oro-1983/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2000-pesos-oro-1983",
+      "title": "2000-pesos-oro-1983",
+      "alternate": "/coleccion/colombia/2000-pesos-oro-1983/"
+    },
+    {
+      "path": "/en/collection/colombia/20000-pesos-2017/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20000-pesos-2017",
+      "title": "20000-pesos-2017",
+      "alternate": "/coleccion/colombia/20000-pesos-2017/"
+    },
+    {
+      "path": "/en/collection/colombia/5-pesos-banco-hipotecario-1881/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-banco-hipotecario-1881",
+      "title": "5-pesos-banco-hipotecario-1881",
+      "alternate": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/"
+    },
+    {
+      "path": "/en/collection/colombia/5-pesos-oro-1960/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1960",
+      "title": "5-pesos-oro-1960",
+      "alternate": "/coleccion/colombia/5-pesos-oro-1960/"
+    },
+    {
+      "path": "/en/collection/colombia/5-pesos-oro-1980/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1980",
+      "title": "5-pesos-oro-1980",
+      "alternate": "/coleccion/colombia/5-pesos-oro-1980/"
+    },
+    {
+      "path": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-rio-hacha-1883",
+      "title": "5-pesos-rio-hacha-1883",
+      "alternate": "/coleccion/colombia/5-pesos-rio-hacha-1883/"
+    },
+    {
+      "path": "/en/collection/colombia/50000-pesos-error-2008/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50000-pesos-error-2008",
+      "title": "50000-pesos-error-2008",
+      "alternate": "/coleccion/colombia/50000-pesos-error-2008/"
+    },
+    {
+      "path": "/en/collection/colombia/50000-pesos-error-2015/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50000-pesos-error-2015",
+      "title": "50000-pesos-error-2015",
+      "alternate": "/coleccion/colombia/50000-pesos-error-2015/"
+    },
+    {
+      "path": "/en/collection/colombia/catalog/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "catalog",
+      "title": "catalog",
+      "alternate": "/coleccion/colombia/catalogo/"
+    },
+    {
+      "path": "/en/collection/colombia/tiquete-estudiantil-15-centavos/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "tiquete-estudiantil-15-centavos",
+      "title": "tiquete-estudiantil-15-centavos",
+      "alternate": "/coleccion/colombia/tiquete-estudiantil-15-centavos/"
+    },
+    {
+      "path": "/en/collection/ecuador/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "ecuador",
+      "title": "ecuador",
+      "alternate": "/coleccion/ecuador/"
+    },
+    {
+      "path": "/en/collection/guatemala/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "guatemala",
+      "title": "guatemala",
+      "alternate": "/coleccion/guatemala/"
+    },
+    {
+      "path": "/en/collection/lazarettos/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "lazarettos",
+      "title": "lazarettos",
+      "alternate": "/coleccion/lazarettos/"
+    },
+    {
+      "path": "/en/collection/netherlands-numismatics/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "netherlands-numismatics",
+      "title": "netherlands-numismatics",
+      "alternate": "/coleccion/paises-bajos-numismatica/"
+    },
+    {
+      "path": "/en/collection/netherlands-numismatics/ducado-utrecht-1761/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "ducado-utrecht-1761",
+      "title": "ducado-utrecht-1761",
+      "alternate": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/"
+    },
+    {
+      "path": "/en/collection/netherlands/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "netherlands",
+      "title": "netherlands",
+      "alternate": "/coleccion/paises-bajos/"
+    },
+    {
+      "path": "/en/collection/notaphily/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "notaphily",
+      "title": "notaphily",
+      "alternate": "/coleccion/notafilia/"
+    },
+    {
+      "path": "/en/collection/notaphily/catalog/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "catalog",
+      "title": "catalog",
+      "alternate": "/coleccion/notafilia/catalogo/"
+    },
+    {
+      "path": "/en/collection/numismatics/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "numismatics",
+      "title": "numismatics",
+      "alternate": "/coleccion/numismatica/"
+    },
+    {
+      "path": "/en/collection/philippines/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "philippines",
+      "title": "philippines",
+      "alternate": "/coleccion/filipinas/"
+    },
+    {
+      "path": "/en/collection/philippines/1-peso/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso",
+      "title": "1-peso",
+      "alternate": "/coleccion/filipinas/1-peso/"
+    },
+    {
+      "path": "/en/collection/philippines/2-pesos/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-pesos",
+      "title": "2-pesos",
+      "alternate": "/coleccion/filipinas/2-pesos/"
+    },
+    {
+      "path": "/en/collection/philippines/20-pesos/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20-pesos",
+      "title": "20-pesos",
+      "alternate": "/coleccion/filipinas/20-pesos/"
+    },
+    {
+      "path": "/en/collection/philippines/5-pesos-national-bank-1916/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-national-bank-1916",
+      "title": "5-pesos-national-bank-1916",
+      "alternate": "/coleccion/filipinas/5-pesos-banco-nacional-1916/"
+    },
+    {
+      "path": "/en/collection/philippines/5-pesos/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos",
+      "title": "5-pesos",
+      "alternate": "/coleccion/filipinas/5-pesos/"
+    },
+    {
+      "path": "/en/collection/puerto-rico/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "puerto-rico",
+      "title": "puerto-rico",
+      "alternate": "/coleccion/puerto-rico/"
+    },
+    {
+      "path": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-exchange-note-1895",
+      "title": "1-peso-exchange-note-1895",
+      "alternate": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/"
+    },
+    {
+      "path": "/en/collection/puerto-rico/central-board-1-peso-1869/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "central-board-1-peso-1869",
+      "title": "central-board-1-peso-1869",
+      "alternate": "/coleccion/puerto-rico/junta-central-1-peso-1869/"
+    },
+    {
+      "path": "/en/collection/puerto-rico/central-board-receipt-1869/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "central-board-receipt-1869",
+      "title": "central-board-receipt-1869",
+      "alternate": "/coleccion/puerto-rico/junta-central-cuba-1869/"
+    },
+    {
+      "path": "/en/collection/united-states-numismatics/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "united-states-numismatics",
+      "title": "united-states-numismatics",
+      "alternate": "/coleccion/estados-unidos-numismatica/"
+    },
+    {
+      "path": "/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-trump-1776-2026",
+      "title": "1-dollar-trump-1776-2026",
+      "alternate": "/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/"
+    },
+    {
+      "path": "/en/collection/united-states/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "united-states",
+      "title": "united-states",
+      "alternate": "/coleccion/estados-unidos/"
+    },
+    {
+      "path": "/en/collection/united-states/1-dollar-series-2003-atlanta/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-series-2003-atlanta",
+      "title": "1-dollar-series-2003-atlanta",
+      "alternate": "/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/"
+    },
+    {
+      "path": "/en/collection/united-states/1-dollar-silver-certificate-1957b/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-silver-certificate-1957b",
+      "title": "1-dollar-silver-certificate-1957b",
+      "alternate": "/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/"
+    },
+    {
+      "path": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-state-bank-new-brunswick",
+      "title": "1-dollar-state-bank-new-brunswick",
+      "alternate": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/"
+    },
+    {
+      "path": "/en/collection/united-states/10-dollars-series-1934-chicago/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-dollars-series-1934-chicago",
+      "title": "10-dollars-series-1934-chicago",
+      "alternate": "/coleccion/estados-unidos/10-dolares-serie-1934-chicago/"
+    },
+    {
+      "path": "/en/collection/united-states/10-dollars-series-1934a-chicago/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-dollars-series-1934a-chicago",
+      "title": "10-dollars-series-1934a-chicago",
+      "alternate": "/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/"
+    },
+    {
+      "path": "/en/collection/united-states/10-dollars-series-1934a-cleveland/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-dollars-series-1934a-cleveland",
+      "title": "10-dollars-series-1934a-cleveland",
+      "alternate": "/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/"
+    },
+    {
+      "path": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-dollars-series-1934d-richmond",
+      "title": "10-dollars-series-1934d-richmond",
+      "alternate": "/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/"
+    },
+    {
+      "path": "/en/collection/united-states/100-dollars-confederate-1862/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "100-dollars-confederate-1862",
+      "title": "100-dollars-confederate-1862",
+      "alternate": "/coleccion/estados-unidos/100-dolares-confederados-1862/"
+    },
+    {
+      "path": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20-dollars-confederate-1864",
+      "title": "20-dollars-confederate-1864",
+      "alternate": "/coleccion/estados-unidos/20-dolares-confederados-1864/"
+    },
+    {
+      "path": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-dollars-city-bank-new-haven",
+      "title": "5-dollars-city-bank-new-haven",
+      "alternate": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/"
+    },
+    {
+      "path": "/en/collection/united-states/5-dollars-confederate-1864/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-dollars-confederate-1864",
+      "title": "5-dollars-confederate-1864",
+      "alternate": "/coleccion/estados-unidos/5-dolares-confederados-1864/"
+    },
+    {
+      "path": "/en/collection/united-states/5-dollars-continental-1779/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-dollars-continental-1779",
+      "title": "5-dollars-continental-1779",
+      "alternate": "/coleccion/estados-unidos/5-dolares-continental-1779/"
+    },
+    {
+      "path": "/en/collection/united-states/50-dollars-canal-bank-new-orleans/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50-dollars-canal-bank-new-orleans",
+      "title": "50-dollars-canal-bank-new-orleans",
+      "alternate": "/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/"
+    },
+    {
+      "path": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "500-dollars-series-1934a-new-york",
+      "title": "500-dollars-series-1934a-new-york",
+      "alternate": "/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "miscellaneous",
+      "title": "miscellaneous",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-series-2006-dallas-wheres-george",
+      "title": "1-dollar-series-2006-dallas-wheres-george",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "baraboo-golden-jubilee-scrip-1933",
+      "title": "baraboo-golden-jubilee-scrip-1933",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-ringling-bros-a2002",
+      "title": "1-dollar-ringling-bros-a2002",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-cents-chas-ringling-a2844",
+      "title": "10-cents-chas-ringling-a2844",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "15-cents-al-t-ringling-a2819",
+      "title": "15-cents-al-t-ringling-a2819",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-cents-john-ringling-a4895",
+      "title": "5-cents-john-ringling-a4895",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/"
+    },
+    {
+      "path": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "giori-test-note-lincoln-memorial",
+      "title": "giori-test-note-lincoln-memorial",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/"
+    },
+    {
+      "path": "/en/collection/united-states/mpc-vietnam/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "mpc-vietnam",
+      "title": "mpc-vietnam",
+      "alternate": "/coleccion/estados-unidos/mpc-vietnam/"
+    },
+    {
+      "path": "/en/collection/united-states/mpc-vietnam/1-dollar-series-681/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-dollar-series-681",
+      "title": "1-dollar-series-681",
+      "alternate": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/"
+    },
+    {
+      "path": "/en/collection/united-states/mpc-vietnam/10-dollars-series-641/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-dollars-series-641",
+      "title": "10-dollars-series-641",
+      "alternate": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/"
+    },
+    {
+      "path": "/en/collection/united-states/mpc-vietnam/20-dollars-series-692/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20-dollars-series-692",
+      "title": "20-dollars-series-692",
+      "alternate": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/"
+    },
+    {
+      "path": "/en/collection/united-states/mpc-vietnam/5-dollars-series-661/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-dollars-series-661",
+      "title": "5-dollars-series-661",
+      "alternate": "/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "rency",
+      "title": "rency",
+      "alternate": "/coleccion/estados-unidos/rency/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/life-is-beautiful-life-spray/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "life-is-beautiful-life-spray",
+      "title": "life-is-beautiful-life-spray",
+      "alternate": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "messi-you-have-to-fight-to-reach-your-dream",
+      "title": "messi-you-have-to-fight-to-reach-your-dream",
+      "alternate": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/pele-the-beautiful-game/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "pele-the-beautiful-game",
+      "title": "pele-the-beautiful-game",
+      "alternate": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/trump-never-surrender/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "trump-never-surrender",
+      "title": "trump-never-surrender",
+      "alternate": "/coleccion/estados-unidos/rency/trump-never-surrender/"
+    },
+    {
+      "path": "/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "warhol-basquiat-life-is-beautiful",
+      "title": "warhol-basquiat-life-is-beautiful",
+      "alternate": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/"
+    },
+    {
+      "path": "/en/collection/world-polymer/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "world-polymer",
+      "title": "world-polymer",
+      "alternate": "/coleccion/polimero-mundial/"
+    },
+    {
+      "path": "/en/collection/world-polymer/asia/malaysia/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "malaysia",
+      "title": "malaysia",
+      "alternate": "/coleccion/polimero-mundial/asia/malasia/"
+    },
+    {
+      "path": "/en/collection/world-polymer/asia/malaysia/5-ringgit-abdul-rahman/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-ringgit-abdul-rahman",
+      "title": "5-ringgit-abdul-rahman",
+      "alternate": "/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/"
+    },
+    {
+      "path": "/en/collection/world-polymer/Canada/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "canada",
+      "title": "canada",
+      "alternate": "/coleccion/polimero-mundial/Canada/"
+    },
+    {
+      "path": "/en/collection/world-polymer/Canada/5-dollars-laurier/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-dollars-laurier",
+      "title": "5-dollars-laurier",
+      "alternate": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/"
+    },
+    {
+      "path": "/en/collection/world-polymer/europe/england/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "england",
+      "title": "england",
+      "alternate": "/coleccion/polimero-mundial/europa/inglaterra/"
+    },
+    {
+      "path": "/en/collection/world-polymer/europe/england/5-pounds-churchill/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pounds-churchill",
+      "title": "5-pounds-churchill",
+      "alternate": "/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/"
+    },
+    {
+      "path": "/en/contact/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "contact",
+      "title": "contact",
+      "alternate": "/contacto/"
+    },
+    {
+      "path": "/en/glossary/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "glossary",
+      "title": "glossary",
+      "alternate": "/glosario/"
+    },
+    {
+      "path": "/en/glossary/abrasiones/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "abrasiones",
+      "title": "abrasiones",
+      "alternate": "/glosario/abrasiones/"
+    },
+    {
+      "path": "/en/glossary/acumulacion/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "acumulacion",
+      "title": "acumulacion",
+      "alternate": "/glosario/acumulacion/"
+    },
+    {
+      "path": "/en/glossary/anepigrafico/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "anepigrafico",
+      "title": "anepigrafico",
+      "alternate": "/glosario/anepigrafico/"
+    },
+    {
+      "path": "/en/glossary/anverso/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "anverso",
+      "title": "anverso",
+      "alternate": "/glosario/anverso/"
+    },
+    {
+      "path": "/en/glossary/apareamiento-de-troqueles/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "apareamiento-de-troqueles",
+      "title": "apareamiento-de-troqueles",
+      "alternate": "/glosario/apareamiento-de-troqueles/"
+    },
+    {
+      "path": "/en/glossary/banca-libre/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "banca-libre",
+      "title": "banca-libre",
+      "alternate": "/glosario/banca-libre/"
+    },
+    {
+      "path": "/en/glossary/banco-emisor/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "banco-emisor",
+      "title": "banco-emisor",
+      "alternate": "/glosario/banco-emisor/"
+    },
+    {
+      "path": "/en/glossary/banknote-book/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "banknote-book",
+      "title": "banknote-book",
+      "alternate": "/glosario/banknote-book/"
+    },
+    {
+      "path": "/en/glossary/billete-alterado/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-alterado",
+      "title": "billete-alterado",
+      "alternate": "/glosario/billete-alterado/"
+    },
+    {
+      "path": "/en/glossary/billete-de-banco-obsoleto/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-de-banco-obsoleto",
+      "title": "billete-de-banco-obsoleto",
+      "alternate": "/glosario/billete-de-banco-obsoleto/"
+    },
+    {
+      "path": "/en/glossary/billete-de-necesidad/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-de-necesidad",
+      "title": "billete-de-necesidad",
+      "alternate": "/glosario/billete-de-necesidad/"
+    },
+    {
+      "path": "/en/glossary/billete-de-reemplazo-estrella/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-de-reemplazo-estrella",
+      "title": "billete-de-reemplazo-estrella",
+      "alternate": "/glosario/billete-de-reemplazo-estrella/"
+    },
+    {
+      "path": "/en/glossary/billete-mula/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-mula",
+      "title": "billete-mula",
+      "alternate": "/glosario/billete-mula/"
+    },
+    {
+      "path": "/en/glossary/billete-provisional/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-provisional",
+      "title": "billete-provisional",
+      "alternate": "/glosario/billete-provisional/"
+    },
+    {
+      "path": "/en/glossary/billete-sin-circular/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-sin-circular",
+      "title": "billete-sin-circular",
+      "alternate": "/glosario/billete-sin-circular/"
+    },
+    {
+      "path": "/en/glossary/billete-web/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billete-web",
+      "title": "billete-web",
+      "alternate": "/glosario/billete-web/"
+    },
+    {
+      "path": "/en/glossary/billon/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "billon",
+      "title": "billon",
+      "alternate": "/glosario/billon/"
+    },
+    {
+      "path": "/en/glossary/bimetalica/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "bimetalica",
+      "title": "bimetalica",
+      "alternate": "/glosario/bimetalica/"
+    },
+    {
+      "path": "/en/glossary/c-day/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "c-day",
+      "title": "c-day",
+      "alternate": "/glosario/c-day/"
+    },
+    {
+      "path": "/en/glossary/calcografia/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "calcografia",
+      "title": "calcografia",
+      "alternate": "/glosario/calcografia/"
+    },
+    {
+      "path": "/en/glossary/casi-sin-circular-au/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "casi-sin-circular-au",
+      "title": "casi-sin-circular-au",
+      "alternate": "/glosario/casi-sin-circular-au/"
+    },
+    {
+      "path": "/en/glossary/cedula-hipotecaria/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "cedula-hipotecaria",
+      "title": "cedula-hipotecaria",
+      "alternate": "/glosario/cedula-hipotecaria/"
+    },
+    {
+      "path": "/en/glossary/choice-uncirculated/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "choice-uncirculated",
+      "title": "choice-uncirculated",
+      "alternate": "/glosario/choice-uncirculated/"
+    },
+    {
+      "path": "/en/glossary/cocobola/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "cocobola",
+      "title": "cocobola",
+      "alternate": "/glosario/cocobola/"
+    },
+    {
+      "path": "/en/glossary/columnario-de-dos-mundos/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "columnario-de-dos-mundos",
+      "title": "columnario-de-dos-mundos",
+      "alternate": "/glosario/columnario-de-dos-mundos/"
+    },
+    {
+      "path": "/en/glossary/cordoncillo/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "cordoncillo",
+      "title": "cordoncillo",
+      "alternate": "/glosario/cordoncillo/"
+    },
+    {
+      "path": "/en/glossary/coscoja/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "coscoja",
+      "title": "coscoja",
+      "alternate": "/glosario/coscoja/"
+    },
+    {
+      "path": "/en/glossary/cospel/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "cospel",
+      "title": "cospel",
+      "alternate": "/glosario/cospel/"
+    },
+    {
+      "path": "/en/glossary/criswell/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "criswell",
+      "title": "criswell",
+      "alternate": "/glosario/criswell/"
+    },
+    {
+      "path": "/en/glossary/curso-legal/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "curso-legal",
+      "title": "curso-legal",
+      "alternate": "/glosario/curso-legal/"
+    },
+    {
+      "path": "/en/glossary/desmonetizado/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "desmonetizado",
+      "title": "desmonetizado",
+      "alternate": "/glosario/desmonetizado/"
+    },
+    {
+      "path": "/en/glossary/details-ngc/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "details-ngc",
+      "title": "details-ngc",
+      "alternate": "/glosario/details-ngc/"
+    },
+    {
+      "path": "/en/glossary/deuda-flotante/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "deuda-flotante",
+      "title": "deuda-flotante",
+      "alternate": "/glosario/deuda-flotante/"
+    },
+    {
+      "path": "/en/glossary/diez-milesimas-10-mils/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "diez-milesimas-10-mils",
+      "title": "diez-milesimas-10-mils",
+      "alternate": "/glosario/diez-milesimas-10-mils/"
+    },
+    {
+      "path": "/en/glossary/dispositivo-opticamente-variable-ovd/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "dispositivo-opticamente-variable-ovd",
+      "title": "dispositivo-opticamente-variable-ovd",
+      "alternate": "/glosario/dispositivo-opticamente-variable-ovd/"
+    },
+    {
+      "path": "/en/glossary/dolar/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "dolar",
+      "title": "dolar",
+      "alternate": "/glosario/dolar/"
+    },
+    {
+      "path": "/en/glossary/dracma/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "dracma",
+      "title": "dracma",
+      "alternate": "/glosario/dracma/"
+    },
+    {
+      "path": "/en/glossary/ducado/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "ducado",
+      "title": "ducado",
+      "alternate": "/glosario/ducado/"
+    },
+    {
+      "path": "/en/glossary/emalangeni-lilangeni/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "emalangeni-lilangeni",
+      "title": "emalangeni-lilangeni",
+      "alternate": "/glosario/emalangeni-lilangeni/"
+    },
+    {
+      "path": "/en/glossary/emision-conmemorativa/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "emision-conmemorativa",
+      "title": "emision-conmemorativa",
+      "alternate": "/glosario/emision-conmemorativa/"
+    },
+    {
+      "path": "/en/glossary/encapsulado/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "encapsulado",
+      "title": "encapsulado",
+      "alternate": "/glosario/encapsulado/"
+    },
+    {
+      "path": "/en/glossary/ensayador/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "ensayador",
+      "title": "ensayador",
+      "alternate": "/glosario/ensayador/"
+    },
+    {
+      "path": "/en/glossary/epq-calidad-de-papel-excepcional/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "epq-calidad-de-papel-excepcional",
+      "title": "epq-calidad-de-papel-excepcional",
+      "alternate": "/glosario/epq-calidad-de-papel-excepcional/"
+    },
+    {
+      "path": "/en/glossary/error-de-impresion/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "error-de-impresion",
+      "title": "error-de-impresion",
+      "alternate": "/glosario/error-de-impresion/"
+    },
+    {
+      "path": "/en/glossary/escala-sheldon/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "escala-sheldon",
+      "title": "escala-sheldon",
+      "alternate": "/glosario/escala-sheldon/"
+    },
+    {
+      "path": "/en/glossary/escripofilia/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "escripofilia",
+      "title": "escripofilia",
+      "alternate": "/glosario/escripofilia/"
+    },
+    {
+      "path": "/en/glossary/escudo-de-armas/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "escudo-de-armas",
+      "title": "escudo-de-armas",
+      "alternate": "/glosario/escudo-de-armas/"
+    },
+    {
+      "path": "/en/glossary/estado-basal/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "estado-basal",
+      "title": "estado-basal",
+      "alternate": "/glosario/estado-basal/"
+    },
+    {
+      "path": "/en/glossary/estado-soberano/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "estado-soberano",
+      "title": "estado-soberano",
+      "alternate": "/glosario/estado-soberano/"
+    },
+    {
+      "path": "/en/glossary/euro/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "euro",
+      "title": "euro",
+      "alternate": "/glosario/euro/"
+    },
+    {
+      "path": "/en/glossary/exonumia/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "exonumia",
+      "title": "exonumia",
+      "alternate": "/glosario/exonumia/"
+    },
+    {
+      "path": "/en/glossary/extremadamente-fino-ebc-ef/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "extremadamente-fino-ebc-ef",
+      "title": "extremadamente-fino-ebc-ef",
+      "alternate": "/glosario/extremadamente-fino-ebc-ef/"
+    },
+    {
+      "path": "/en/glossary/faja/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "faja",
+      "title": "faja",
+      "alternate": "/glosario/faja/"
+    },
+    {
+      "path": "/en/glossary/fajo-ladrillo/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "fajo-ladrillo",
+      "title": "fajo-ladrillo",
+      "alternate": "/glosario/fajo-ladrillo/"
+    },
+    {
+      "path": "/en/glossary/filigrana/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "filigrana",
+      "title": "filigrana",
+      "alternate": "/glosario/filigrana/"
+    },
+    {
+      "path": "/en/glossary/firma/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "firma",
+      "title": "firma",
+      "alternate": "/glosario/firma/"
+    },
+    {
+      "path": "/en/glossary/foil/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "foil",
+      "title": "foil",
+      "alternate": "/glosario/foil/"
+    },
+    {
+      "path": "/en/glossary/foxing/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "foxing",
+      "title": "foxing",
+      "alternate": "/glosario/foxing/"
+    },
+    {
+      "path": "/en/glossary/friedberg/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "friedberg",
+      "title": "friedberg",
+      "alternate": "/glosario/friedberg/"
+    },
+    {
+      "path": "/en/glossary/gem-uncirculated/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "gem-uncirculated",
+      "title": "gem-uncirculated",
+      "alternate": "/glosario/gem-uncirculated/"
+    },
+    {
+      "path": "/en/glossary/grayback/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "grayback",
+      "title": "grayback",
+      "alternate": "/glosario/grayback/"
+    },
+    {
+      "path": "/en/glossary/guardian/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "guardian",
+      "title": "guardian",
+      "alternate": "/glosario/guardian/"
+    },
+    {
+      "path": "/en/glossary/guilloche/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "guilloche",
+      "title": "guilloche",
+      "alternate": "/glosario/guilloche/"
+    },
+    {
+      "path": "/en/glossary/gulden/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "gulden",
+      "title": "gulden",
+      "alternate": "/glosario/gulden/"
+    },
+    {
+      "path": "/en/glossary/handstamp/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "handstamp",
+      "title": "handstamp",
+      "alternate": "/glosario/handstamp/"
+    },
+    {
+      "path": "/en/glossary/haxby/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "haxby",
+      "title": "haxby",
+      "alternate": "/glosario/haxby/"
+    },
+    {
+      "path": "/en/glossary/hilo-de-seguridad/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "hilo-de-seguridad",
+      "title": "hilo-de-seguridad",
+      "alternate": "/glosario/hilo-de-seguridad/"
+    },
+    {
+      "path": "/en/glossary/intaglio/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "intaglio",
+      "title": "intaglio",
+      "alternate": "/glosario/intaglio/"
+    },
+    {
+      "path": "/en/glossary/jiaozi/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "jiaozi",
+      "title": "jiaozi",
+      "alternate": "/glosario/jiaozi/"
+    },
+    {
+      "path": "/en/glossary/kopek/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "kopek",
+      "title": "kopek",
+      "alternate": "/glosario/kopek/"
+    },
+    {
+      "path": "/en/glossary/kwacha/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "kwacha",
+      "title": "kwacha",
+      "alternate": "/glosario/kwacha/"
+    },
+    {
+      "path": "/en/glossary/letras-de-credito/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "letras-de-credito",
+      "title": "letras-de-credito",
+      "alternate": "/glosario/letras-de-credito/"
+    },
+    {
+      "path": "/en/glossary/leu-lei/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "leu-lei",
+      "title": "leu-lei",
+      "alternate": "/glosario/leu-lei/"
+    },
+    {
+      "path": "/en/glossary/leyenda/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "leyenda",
+      "title": "leyenda",
+      "alternate": "/glosario/leyenda/"
+    },
+    {
+      "path": "/en/glossary/libra/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "libra",
+      "title": "libra",
+      "alternate": "/glosario/libra/"
+    },
+    {
+      "path": "/en/glossary/libranza/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "libranza",
+      "title": "libranza",
+      "alternate": "/glosario/libranza/"
+    },
+    {
+      "path": "/en/glossary/litografia/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "litografia",
+      "title": "litografia",
+      "alternate": "/glosario/litografia/"
+    },
+    {
+      "path": "/en/glossary/maculatura/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "maculatura",
+      "title": "maculatura",
+      "alternate": "/glosario/maculatura/"
+    },
+    {
+      "path": "/en/glossary/macuquina-cob/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "macuquina-cob",
+      "title": "macuquina-cob",
+      "alternate": "/glosario/macuquina-cob/"
+    },
+    {
+      "path": "/en/glossary/marcas-de-ajuste/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "marcas-de-ajuste",
+      "title": "marcas-de-ajuste",
+      "alternate": "/glosario/marcas-de-ajuste/"
+    },
+    {
+      "path": "/en/glossary/marcas-de-bolsa/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "marcas-de-bolsa",
+      "title": "marcas-de-bolsa",
+      "alternate": "/glosario/marcas-de-bolsa/"
+    },
+    {
+      "path": "/en/glossary/marcas-de-funda-de-album/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "marcas-de-funda-de-album",
+      "title": "marcas-de-funda-de-album",
+      "alternate": "/glosario/marcas-de-funda-de-album/"
+    },
+    {
+      "path": "/en/glossary/mariposa/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "mariposa",
+      "title": "mariposa",
+      "alternate": "/glosario/mariposa/"
+    },
+    {
+      "path": "/en/glossary/microimpresion/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "microimpresion",
+      "title": "microimpresion",
+      "alternate": "/glosario/microimpresion/"
+    },
+    {
+      "path": "/en/glossary/monedas-antiguas/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "monedas-antiguas",
+      "title": "monedas-antiguas",
+      "alternate": "/glosario/monedas-antiguas/"
+    },
+    {
+      "path": "/en/glossary/mpc/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "mpc",
+      "title": "mpc",
+      "alternate": "/glosario/mpc/"
+    },
+    {
+      "path": "/en/glossary/nature-print/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "nature-print",
+      "title": "nature-print",
+      "alternate": "/glosario/nature-print/"
+    },
+    {
+      "path": "/en/glossary/ngc/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "ngc",
+      "title": "ngc",
+      "alternate": "/glosario/ngc/"
+    },
+    {
+      "path": "/en/glossary/notafilia/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "notafilia",
+      "title": "notafilia",
+      "alternate": "/glosario/notafilia/"
+    },
+    {
+      "path": "/en/glossary/numeracion-baja/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-baja",
+      "title": "numeracion-baja",
+      "alternate": "/glosario/numeracion-baja/"
+    },
+    {
+      "path": "/en/glossary/numeracion-binaria/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-binaria",
+      "title": "numeracion-binaria",
+      "alternate": "/glosario/numeracion-binaria/"
+    },
+    {
+      "path": "/en/glossary/numeracion-escalera/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-escalera",
+      "title": "numeracion-escalera",
+      "alternate": "/glosario/numeracion-escalera/"
+    },
+    {
+      "path": "/en/glossary/numeracion-especial/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-especial",
+      "title": "numeracion-especial",
+      "alternate": "/glosario/numeracion-especial/"
+    },
+    {
+      "path": "/en/glossary/numeracion-radar/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-radar",
+      "title": "numeracion-radar",
+      "alternate": "/glosario/numeracion-radar/"
+    },
+    {
+      "path": "/en/glossary/numeracion-repetidor/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-repetidor",
+      "title": "numeracion-repetidor",
+      "alternate": "/glosario/numeracion-repetidor/"
+    },
+    {
+      "path": "/en/glossary/numeracion-solida/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion-solida",
+      "title": "numeracion-solida",
+      "alternate": "/glosario/numeracion-solida/"
+    },
+    {
+      "path": "/en/glossary/numeracion/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numeracion",
+      "title": "numeracion",
+      "alternate": "/glosario/numeracion/"
+    },
+    {
+      "path": "/en/glossary/numismatica/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "numismatica",
+      "title": "numismatica",
+      "alternate": "/glosario/numismatica/"
+    },
+    {
+      "path": "/en/glossary/offset/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "offset",
+      "title": "offset",
+      "alternate": "/glosario/offset/"
+    },
+    {
+      "path": "/en/glossary/orla/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "orla",
+      "title": "orla",
+      "alternate": "/glosario/orla/"
+    },
+    {
+      "path": "/en/glossary/papel-moneda-fraccionario/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "papel-moneda-fraccionario",
+      "title": "papel-moneda-fraccionario",
+      "alternate": "/glosario/papel-moneda-fraccionario/"
+    },
+    {
+      "path": "/en/glossary/patina/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "patina",
+      "title": "patina",
+      "alternate": "/glosario/patina/"
+    },
+    {
+      "path": "/en/glossary/peso-oro/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "peso-oro",
+      "title": "peso-oro",
+      "alternate": "/glosario/peso-oro/"
+    },
+    {
+      "path": "/en/glossary/peso/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "peso",
+      "title": "peso",
+      "alternate": "/glosario/peso/"
+    },
+    {
+      "path": "/en/glossary/pick/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "pick",
+      "title": "pick",
+      "alternate": "/glosario/pick/"
+    },
+    {
+      "path": "/en/glossary/plancheta/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "plancheta",
+      "title": "plancheta",
+      "alternate": "/glosario/plancheta/"
+    },
+    {
+      "path": "/en/glossary/planchuela/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "planchuela",
+      "title": "planchuela",
+      "alternate": "/glosario/planchuela/"
+    },
+    {
+      "path": "/en/glossary/pliegue-de-fabrica/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "pliegue-de-fabrica",
+      "title": "pliegue-de-fabrica",
+      "alternate": "/glosario/pliegue-de-fabrica/"
+    },
+    {
+      "path": "/en/glossary/pliegue-y-doblez/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "pliegue-y-doblez",
+      "title": "pliegue-y-doblez",
+      "alternate": "/glosario/pliegue-y-doblez/"
+    },
+    {
+      "path": "/en/glossary/pmg-pcgs/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "pmg-pcgs",
+      "title": "pmg-pcgs",
+      "alternate": "/glosario/pmg-pcgs/"
+    },
+    {
+      "path": "/en/glossary/polimero/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "polimero",
+      "title": "polimero",
+      "alternate": "/glosario/polimero/"
+    },
+    {
+      "path": "/en/glossary/prueba-ensayo/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "prueba-ensayo",
+      "title": "prueba-ensayo",
+      "alternate": "/glosario/prueba-ensayo/"
+    },
+    {
+      "path": "/en/glossary/quetzal/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "quetzal",
+      "title": "quetzal",
+      "alternate": "/glosario/quetzal/"
+    },
+    {
+      "path": "/en/glossary/real/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "real",
+      "title": "real",
+      "alternate": "/glosario/real/"
+    },
+    {
+      "path": "/en/glossary/recocido/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "recocido",
+      "title": "recocido",
+      "alternate": "/glosario/recocido/"
+    },
+    {
+      "path": "/en/glossary/registro-perfecto/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "registro-perfecto",
+      "title": "registro-perfecto",
+      "alternate": "/glosario/registro-perfecto/"
+    },
+    {
+      "path": "/en/glossary/remainder/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "remainder",
+      "title": "remainder",
+      "alternate": "/glosario/remainder/"
+    },
+    {
+      "path": "/en/glossary/resello/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "resello",
+      "title": "resello",
+      "alternate": "/glosario/resello/"
+    },
+    {
+      "path": "/en/glossary/retrato/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "retrato",
+      "title": "retrato",
+      "alternate": "/glosario/retrato/"
+    },
+    {
+      "path": "/en/glossary/reverso/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "reverso",
+      "title": "reverso",
+      "alternate": "/glosario/reverso/"
+    },
+    {
+      "path": "/en/glossary/ringgit/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "ringgit",
+      "title": "ringgit",
+      "alternate": "/glosario/ringgit/"
+    },
+    {
+      "path": "/en/glossary/roseton/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "roseton",
+      "title": "roseton",
+      "alternate": "/glosario/roseton/"
+    },
+    {
+      "path": "/en/glossary/schwan/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "schwan",
+      "title": "schwan",
+      "alternate": "/glosario/schwan/"
+    },
+    {
+      "path": "/en/glossary/scrip/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "scrip",
+      "title": "scrip",
+      "alternate": "/glosario/scrip/"
+    },
+    {
+      "path": "/en/glossary/serie/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "serie",
+      "title": "serie",
+      "alternate": "/glosario/serie/"
+    },
+    {
+      "path": "/en/glossary/sin-circular-brillante-bu/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "sin-circular-brillante-bu",
+      "title": "sin-circular-brillante-bu",
+      "alternate": "/glosario/sin-circular-brillante-bu/"
+    },
+    {
+      "path": "/en/glossary/sobresello/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "sobresello",
+      "title": "sobresello",
+      "alternate": "/glosario/sobresello/"
+    },
+    {
+      "path": "/en/glossary/spark/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "spark",
+      "title": "spark",
+      "alternate": "/glosario/spark/"
+    },
+    {
+      "path": "/en/glossary/specimen/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "specimen",
+      "title": "specimen",
+      "alternate": "/glosario/specimen/"
+    },
+    {
+      "path": "/en/glossary/sucre/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "sucre",
+      "title": "sucre",
+      "alternate": "/glosario/sucre/"
+    },
+    {
+      "path": "/en/glossary/superficies-alteradas/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "superficies-alteradas",
+      "title": "superficies-alteradas",
+      "alternate": "/glosario/superficies-alteradas/"
+    },
+    {
+      "path": "/en/glossary/sustrato-hibrido/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "sustrato-hibrido",
+      "title": "sustrato-hibrido",
+      "alternate": "/glosario/sustrato-hibrido/"
+    },
+    {
+      "path": "/en/glossary/sustrato/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "sustrato",
+      "title": "sustrato",
+      "alternate": "/glosario/sustrato/"
+    },
+    {
+      "path": "/en/glossary/tala/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tala",
+      "title": "tala",
+      "alternate": "/glosario/tala/"
+    },
+    {
+      "path": "/en/glossary/talla-dulce/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "talla-dulce",
+      "title": "talla-dulce",
+      "alternate": "/glosario/talla-dulce/"
+    },
+    {
+      "path": "/en/glossary/tasado/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tasado",
+      "title": "tasado",
+      "alternate": "/glosario/tasado/"
+    },
+    {
+      "path": "/en/glossary/tejuelo/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tejuelo",
+      "title": "tejuelo",
+      "alternate": "/glosario/tejuelo/"
+    },
+    {
+      "path": "/en/glossary/tenge/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tenge",
+      "title": "tenge",
+      "alternate": "/glosario/tenge/"
+    },
+    {
+      "path": "/en/glossary/tinta-fluorescente-uv/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tinta-fluorescente-uv",
+      "title": "tinta-fluorescente-uv",
+      "alternate": "/glosario/tinta-fluorescente-uv/"
+    },
+    {
+      "path": "/en/glossary/tinta-iridiscente/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tinta-iridiscente",
+      "title": "tinta-iridiscente",
+      "alternate": "/glosario/tinta-iridiscente/"
+    },
+    {
+      "path": "/en/glossary/tinta-ovi/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tinta-ovi",
+      "title": "tinta-ovi",
+      "alternate": "/glosario/tinta-ovi/"
+    },
+    {
+      "path": "/en/glossary/tyvek/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "tyvek",
+      "title": "tyvek",
+      "alternate": "/glosario/tyvek/"
+    },
+    {
+      "path": "/en/glossary/uniface/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "uniface",
+      "title": "uniface",
+      "alternate": "/glosario/uniface/"
+    },
+    {
+      "path": "/en/glossary/vale-al-portador/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "vale-al-portador",
+      "title": "vale-al-portador",
+      "alternate": "/glosario/vale-al-portador/"
+    },
+    {
+      "path": "/en/glossary/ventana-transparente/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "ventana-transparente",
+      "title": "ventana-transparente",
+      "alternate": "/glosario/ventana-transparente/"
+    },
+    {
+      "path": "/en/glossary/vineta/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "vineta",
+      "title": "vineta",
+      "alternate": "/glosario/vineta/"
+    },
+    {
+      "path": "/en/glossary/yuan-renminbi/",
+      "lang": "en",
+      "type": "glossary",
+      "lastSlug": "yuan-renminbi",
+      "title": "yuan-renminbi",
+      "alternate": "/glosario/yuan-renminbi/"
+    },
+    {
+      "path": "/en/news/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "news",
+      "title": "news",
+      "alternate": "/noticias/"
+    },
+    {
+      "path": "/en/news/15-monedas-eeuu-valen-fortuna/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "15-monedas-eeuu-valen-fortuna",
+      "title": "15-monedas-eeuu-valen-fortuna",
+      "alternate": "/noticias/15-monedas-eeuu-valen-fortuna/"
+    },
+    {
+      "path": "/en/news/al-sur-del-mundo-subasta-2500-piezas/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "al-sur-del-mundo-subasta-2500-piezas",
+      "title": "al-sur-del-mundo-subasta-2500-piezas",
+      "alternate": "/noticias/al-sur-del-mundo-subasta-2500-piezas/"
+    },
+    {
+      "path": "/en/news/bank-al-maghrib-moneda-27-anos-mohamed-vi/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "bank-al-maghrib-moneda-27-anos-mohamed-vi",
+      "title": "bank-al-maghrib-moneda-27-anos-mohamed-vi",
+      "alternate": "/noticias/bank-al-maghrib-moneda-27-anos-mohamed-vi/"
+    },
+    {
+      "path": "/en/news/banxico-medallas-dinosaurios-casa-moneda/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "banxico-medallas-dinosaurios-casa-moneda",
+      "title": "banxico-medallas-dinosaurios-casa-moneda",
+      "alternate": "/noticias/banxico-medallas-dinosaurios-casa-moneda/"
+    },
+    {
+      "path": "/en/news/bessent-moneda-250-anos-independencia-eeuu/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "bessent-moneda-250-anos-independencia-eeuu",
+      "title": "bessent-moneda-250-anos-independencia-eeuu",
+      "alternate": "/noticias/bessent-moneda-250-anos-independencia-eeuu/"
+    },
+    {
+      "path": "/en/news/billete-1000-hidalgo-combo-mercado-libre/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-1000-hidalgo-combo-mercado-libre",
+      "title": "billete-1000-hidalgo-combo-mercado-libre",
+      "alternate": "/noticias/billete-1000-hidalgo-combo-mercado-libre/"
+    },
+    {
+      "path": "/en/news/billete-10000-pesos-lazaro-cardenas-canje/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-10000-pesos-lazaro-cardenas-canje",
+      "title": "billete-10000-pesos-lazaro-cardenas-canje",
+      "alternate": "/noticias/billete-10000-pesos-lazaro-cardenas-canje/"
+    },
+    {
+      "path": "/en/news/billete-2-dolares-serie-baja/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-2-dolares-serie-baja",
+      "title": "billete-2-dolares-serie-baja",
+      "alternate": "/noticias/billete-2-dolares-serie-baja/"
+    },
+    {
+      "path": "/en/news/billete-20000-chile-serie-anverso-falla/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-20000-chile-serie-anverso-falla",
+      "title": "billete-20000-chile-serie-anverso-falla",
+      "alternate": "/noticias/billete-20000-chile-serie-anverso-falla/"
+    },
+    {
+      "path": "/en/news/billete-50000-pesos-2001-serial-00000290/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-50000-pesos-2001-serial-00000290",
+      "title": "billete-50000-pesos-2001-serial-00000290",
+      "alternate": "/noticias/billete-50000-pesos-2001-serial-00000290/"
+    },
+    {
+      "path": "/en/news/billete-50000-pesos-colombia-valor/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billete-50000-pesos-colombia-valor",
+      "title": "billete-50000-pesos-colombia-valor",
+      "alternate": "/noticias/billete-50000-pesos-colombia-valor/"
+    },
+    {
+      "path": "/en/news/billetes-1-dolar-coleccionistas/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billetes-1-dolar-coleccionistas",
+      "title": "billetes-1-dolar-coleccionistas",
+      "alternate": "/noticias/billetes-1-dolar-coleccionistas/"
+    },
+    {
+      "path": "/en/news/billetes-2-dolares-7-detalles/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billetes-2-dolares-7-detalles",
+      "title": "billetes-2-dolares-7-detalles",
+      "alternate": "/noticias/billetes-2-dolares-7-detalles/"
+    },
+    {
+      "path": "/en/news/billetes-mexicanos-coleccionables/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "billetes-mexicanos-coleccionables",
+      "title": "billetes-mexicanos-coleccionables",
+      "alternate": "/noticias/billetes-mexicanos-coleccionables/"
+    },
+    {
+      "path": "/en/news/bncr-monedas-conmemorativas-nicoya-abolicion/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "bncr-monedas-conmemorativas-nicoya-abolicion",
+      "title": "bncr-monedas-conmemorativas-nicoya-abolicion",
+      "alternate": "/noticias/bncr-monedas-conmemorativas-nicoya-abolicion/"
+    },
+    {
+      "path": "/en/news/casa-moneda-condorito-fichas-conmemorativas/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "casa-moneda-condorito-fichas-conmemorativas",
+      "title": "casa-moneda-condorito-fichas-conmemorativas",
+      "alternate": "/noticias/casa-moneda-condorito-fichas-conmemorativas/"
+    },
+    {
+      "path": "/en/news/casa-museo-cecilio-acosta-muestra-bandera-numismatica/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "casa-museo-cecilio-acosta-muestra-bandera-numismatica",
+      "title": "casa-museo-cecilio-acosta-muestra-bandera-numismatica",
+      "alternate": "/noticias/casa-museo-cecilio-acosta-muestra-bandera-numismatica/"
+    },
+    {
+      "path": "/en/news/centavo-1919-greatcollections-298125/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "centavo-1919-greatcollections-298125",
+      "title": "centavo-1919-greatcollections-298125",
+      "alternate": "/noticias/centavo-1919-greatcollections-298125/"
+    },
+    {
+      "path": "/en/news/centavo-1969-s-doble-troquel/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "centavo-1969-s-doble-troquel",
+      "title": "centavo-1969-s-doble-troquel",
+      "alternate": "/noticias/centavo-1969-s-doble-troquel/"
+    },
+    {
+      "path": "/en/news/centenario-otras-8-monedas-valen-fortuna/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "centenario-otras-8-monedas-valen-fortuna",
+      "title": "centenario-otras-8-monedas-valen-fortuna",
+      "alternate": "/noticias/centenario-otras-8-monedas-valen-fortuna/"
+    },
+    {
+      "path": "/en/news/coleccionistas-chaquenos-preservan-memoria/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "coleccionistas-chaquenos-preservan-memoria",
+      "title": "coleccionistas-chaquenos-preservan-memoria",
+      "alternate": "/noticias/coleccionistas-chaquenos-preservan-memoria/"
+    },
+    {
+      "path": "/en/news/coleccionistas-rancagua-historias-objetos/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "coleccionistas-rancagua-historias-objetos",
+      "title": "coleccionistas-rancagua-historias-objetos",
+      "alternate": "/noticias/coleccionistas-rancagua-historias-objetos/"
+    },
+    {
+      "path": "/en/news/colombia-8-reales-1762-heritage-195200/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "colombia-8-reales-1762-heritage-195200",
+      "title": "colombia-8-reales-1762-heritage-195200",
+      "alternate": "/noticias/colombia-8-reales-1762-heritage-195200/"
+    },
+    {
+      "path": "/en/news/convencion-sociedad-numismatica-saltillo-2026/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "convencion-sociedad-numismatica-saltillo-2026",
+      "title": "convencion-sociedad-numismatica-saltillo-2026",
+      "alternate": "/noticias/convencion-sociedad-numismatica-saltillo-2026/"
+    },
+    {
+      "path": "/en/news/costa-rica-8-escudos-1828-subasta/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "costa-rica-8-escudos-1828-subasta",
+      "title": "costa-rica-8-escudos-1828-subasta",
+      "alternate": "/noticias/costa-rica-8-escudos-1828-subasta/"
+    },
+    {
+      "path": "/en/news/dime-1894-s-bowers-125-millones/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "dime-1894-s-bowers-125-millones",
+      "title": "dime-1894-s-bowers-125-millones",
+      "alternate": "/noticias/dime-1894-s-bowers-125-millones/"
+    },
+    {
+      "path": "/en/news/dime-1894-s-contexto-tucuman/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "dime-1894-s-contexto-tucuman",
+      "title": "dime-1894-s-contexto-tucuman",
+      "alternate": "/noticias/dime-1894-s-contexto-tucuman/"
+    },
+    {
+      "path": "/en/news/dolar-trump-vale-un-dolar/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "dolar-trump-vale-un-dolar",
+      "title": "dolar-trump-vale-un-dolar",
+      "alternate": "/noticias/dolar-trump-vale-un-dolar/"
+    },
+    {
+      "path": "/en/news/dolar-trump-venta-fila-virtual/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "dolar-trump-venta-fila-virtual",
+      "title": "dolar-trump-venta-fila-virtual",
+      "alternate": "/noticias/dolar-trump-venta-fila-virtual/"
+    },
+    {
+      "path": "/en/news/encuentro-coleccionistas-la-plata-2026/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "encuentro-coleccionistas-la-plata-2026",
+      "title": "encuentro-coleccionistas-la-plata-2026",
+      "alternate": "/noticias/encuentro-coleccionistas-la-plata-2026/"
+    },
+    {
+      "path": "/en/news/exhibicion-peso-independiente-ohiggins-talca/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "exhibicion-peso-independiente-ohiggins-talca",
+      "title": "exhibicion-peso-independiente-ohiggins-talca",
+      "alternate": "/noticias/exhibicion-peso-independiente-ohiggins-talca/"
+    },
+    {
+      "path": "/en/news/expo-coleccionismo-moneda-argentina-corrientes/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "expo-coleccionismo-moneda-argentina-corrientes",
+      "title": "expo-coleccionismo-moneda-argentina-corrientes",
+      "alternate": "/noticias/expo-coleccionismo-moneda-argentina-corrientes/"
+    },
+    {
+      "path": "/en/news/exposicion-monedas-billetes-la-paz-bolivia/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "exposicion-monedas-billetes-la-paz-bolivia",
+      "title": "exposicion-monedas-billetes-la-paz-bolivia",
+      "alternate": "/noticias/exposicion-monedas-billetes-la-paz-bolivia/"
+    },
+    {
+      "path": "/en/news/felipe-mateu-llopis-tesoro-numismatico/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "felipe-mateu-llopis-tesoro-numismatico",
+      "title": "felipe-mateu-llopis-tesoro-numismatico",
+      "alternate": "/noticias/felipe-mateu-llopis-tesoro-numismatico/"
+    },
+    {
+      "path": "/en/news/flowing-hair-1794-valor-85-millones/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "flowing-hair-1794-valor-85-millones",
+      "title": "flowing-hair-1794-valor-85-millones",
+      "alternate": "/noticias/flowing-hair-1794-valor-85-millones/"
+    },
+    {
+      "path": "/en/news/gobierno-monedas-oro-cerdo-iberico/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "gobierno-monedas-oro-cerdo-iberico",
+      "title": "gobierno-monedas-oro-cerdo-iberico",
+      "alternate": "/noticias/gobierno-monedas-oro-cerdo-iberico/"
+    },
+    {
+      "path": "/en/news/iii-encuentro-numismatico-arequipa-2026/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "iii-encuentro-numismatico-arequipa-2026",
+      "title": "iii-encuentro-numismatico-arequipa-2026",
+      "alternate": "/noticias/iii-encuentro-numismatico-arequipa-2026/"
+    },
+    {
+      "path": "/en/news/iv-congreso-numismatico-maracay-2026/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "iv-congreso-numismatico-maracay-2026",
+      "title": "iv-congreso-numismatico-maracay-2026",
+      "alternate": "/noticias/iv-congreso-numismatico-maracay-2026/"
+    },
+    {
+      "path": "/en/news/jaca-dinero-sancho-ramirez-6000-euros/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "jaca-dinero-sancho-ramirez-6000-euros",
+      "title": "jaca-dinero-sancho-ramirez-6000-euros",
+      "alternate": "/noticias/jaca-dinero-sancho-ramirez-6000-euros/"
+    },
+    {
+      "path": "/en/news/jornadas-nacionales-numismatica-la-plata-2026/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "jornadas-nacionales-numismatica-la-plata-2026",
+      "title": "jornadas-nacionales-numismatica-la-plata-2026",
+      "alternate": "/noticias/jornadas-nacionales-numismatica-la-plata-2026/"
+    },
+    {
+      "path": "/en/news/legado-tren-oro-renacimiento-forint-hungria/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "legado-tren-oro-renacimiento-forint-hungria",
+      "title": "legado-tren-oro-renacimiento-forint-hungria",
+      "alternate": "/noticias/legado-tren-oro-renacimiento-forint-hungria/"
+    },
+    {
+      "path": "/en/news/luis-lanza-ceca-valor-moneda-antigua/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "luis-lanza-ceca-valor-moneda-antigua",
+      "title": "luis-lanza-ceca-valor-moneda-antigua",
+      "alternate": "/noticias/luis-lanza-ceca-valor-moneda-antigua/"
+    },
+    {
+      "path": "/en/news/man-239-monedas-numismatica-andalusi/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "man-239-monedas-numismatica-andalusi",
+      "title": "man-239-monedas-numismatica-andalusi",
+      "alternate": "/noticias/man-239-monedas-numismatica-andalusi/"
+    },
+    {
+      "path": "/en/news/medalla-sistema-solar-heptagonal/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "medalla-sistema-solar-heptagonal",
+      "title": "medalla-sistema-solar-heptagonal",
+      "alternate": "/noticias/medalla-sistema-solar-heptagonal/"
+    },
+    {
+      "path": "/en/news/mercado-numismatica-filatelia-placa-reial/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "mercado-numismatica-filatelia-placa-reial",
+      "title": "mercado-numismatica-filatelia-placa-reial",
+      "alternate": "/noticias/mercado-numismatica-filatelia-placa-reial/"
+    },
+    {
+      "path": "/en/news/moneda-10-pesos-octogonal-chile/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-10-pesos-octogonal-chile",
+      "title": "moneda-10-pesos-octogonal-chile",
+      "alternate": "/noticias/moneda-10-pesos-octogonal-chile/"
+    },
+    {
+      "path": "/en/news/moneda-100-pesos-estado-mexico-primera-fase/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-100-pesos-estado-mexico-primera-fase",
+      "title": "moneda-100-pesos-estado-mexico-primera-fase",
+      "alternate": "/noticias/moneda-100-pesos-estado-mexico-primera-fase/"
+    },
+    {
+      "path": "/en/news/moneda-2-escudos-chile-1971-caupolican/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-2-escudos-chile-1971-caupolican",
+      "title": "moneda-2-escudos-chile-1971-caupolican",
+      "alternate": "/noticias/moneda-2-escudos-chile-1971-caupolican/"
+    },
+    {
+      "path": "/en/news/moneda-2-euros-alemania-2011-colonia/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-alemania-2011-colonia",
+      "title": "moneda-2-euros-alemania-2011-colonia",
+      "alternate": "/noticias/moneda-2-euros-alemania-2011-colonia/"
+    },
+    {
+      "path": "/en/news/moneda-2-euros-austria-beethoven/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-austria-beethoven",
+      "title": "moneda-2-euros-austria-beethoven",
+      "alternate": "/noticias/moneda-2-euros-austria-beethoven/"
+    },
+    {
+      "path": "/en/news/moneda-2-euros-grace-kelly/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-grace-kelly",
+      "title": "moneda-2-euros-grace-kelly",
+      "alternate": "/noticias/moneda-2-euros-grace-kelly/"
+    },
+    {
+      "path": "/en/news/moneda-20-bicentenario-independencia-4-millones/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-20-bicentenario-independencia-4-millones",
+      "title": "moneda-20-bicentenario-independencia-4-millones",
+      "alternate": "/noticias/moneda-20-bicentenario-independencia-4-millones/"
+    },
+    {
+      "path": "/en/news/moneda-20-tenochtitlan-banorte-73000/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-20-tenochtitlan-banorte-73000",
+      "title": "moneda-20-tenochtitlan-banorte-73000",
+      "alternate": "/noticias/moneda-20-tenochtitlan-banorte-73000/"
+    },
+    {
+      "path": "/en/news/moneda-25-centavos-1962-ngc/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-25-centavos-1962-ngc",
+      "title": "moneda-25-centavos-1962-ngc",
+      "alternate": "/noticias/moneda-25-centavos-1962-ngc/"
+    },
+    {
+      "path": "/en/news/moneda-500-chile-doble-fecha-2000/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-500-chile-doble-fecha-2000",
+      "title": "moneda-500-chile-doble-fecha-2000",
+      "alternate": "/noticias/moneda-500-chile-doble-fecha-2000/"
+    },
+    {
+      "path": "/en/news/moneda-500-chile-rara-ensayos/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-500-chile-rara-ensayos",
+      "title": "moneda-500-chile-rara-ensayos",
+      "alternate": "/noticias/moneda-500-chile-rara-ensayos/"
+    },
+    {
+      "path": "/en/news/moneda-campeones-mundo-plata-edicion-limitada/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-campeones-mundo-plata-edicion-limitada",
+      "title": "moneda-campeones-mundo-plata-edicion-limitada",
+      "alternate": "/noticias/moneda-campeones-mundo-plata-edicion-limitada/"
+    },
+    {
+      "path": "/en/news/moneda-carausius-east-west-rail/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-carausius-east-west-rail",
+      "title": "moneda-carausius-east-west-rail",
+      "alternate": "/noticias/moneda-carausius-east-west-rail/"
+    },
+    {
+      "path": "/en/news/moneda-chipre-salamina-2500-anos/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-chipre-salamina-2500-anos",
+      "title": "moneda-chipre-salamina-2500-anos",
+      "alternate": "/noticias/moneda-chipre-salamina-2500-anos/"
+    },
+    {
+      "path": "/en/news/moneda-eeuu-1796-valor-185-millones/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-eeuu-1796-valor-185-millones",
+      "title": "moneda-eeuu-1796-valor-185-millones",
+      "alternate": "/noticias/moneda-eeuu-1796-valor-185-millones/"
+    },
+    {
+      "path": "/en/news/moneda-trump-250-aniversario-primeras/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-trump-250-aniversario-primeras",
+      "title": "moneda-trump-250-aniversario-primeras",
+      "alternate": "/noticias/moneda-trump-250-aniversario-primeras/"
+    },
+    {
+      "path": "/en/news/moneda-vaticano-papa-leon-xiv/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "moneda-vaticano-papa-leon-xiv",
+      "title": "moneda-vaticano-papa-leon-xiv",
+      "alternate": "/noticias/moneda-vaticano-papa-leon-xiv/"
+    },
+    {
+      "path": "/en/news/monedas-100-chilenas-copihues-coleccionistas/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-100-chilenas-copihues-coleccionistas",
+      "title": "monedas-100-chilenas-copihues-coleccionistas",
+      "alternate": "/noticias/monedas-100-chilenas-copihues-coleccionistas/"
+    },
+    {
+      "path": "/en/news/monedas-25-centavos-valen-fortuna/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-25-centavos-valen-fortuna",
+      "title": "monedas-25-centavos-valen-fortuna",
+      "alternate": "/noticias/monedas-25-centavos-valen-fortuna/"
+    },
+    {
+      "path": "/en/news/monedas-anos-60-valen-150000/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-anos-60-valen-150000",
+      "title": "monedas-anos-60-valen-150000",
+      "alternate": "/noticias/monedas-anos-60-valen-150000/"
+    },
+    {
+      "path": "/en/news/monedas-eeuu-podrian-valer-143750/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-eeuu-podrian-valer-143750",
+      "title": "monedas-eeuu-podrian-valer-143750",
+      "alternate": "/noticias/monedas-eeuu-podrian-valer-143750/"
+    },
+    {
+      "path": "/en/news/monedas-guatemala-quetzal-plata-pagos-electronicos/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-guatemala-quetzal-plata-pagos-electronicos",
+      "title": "monedas-guatemala-quetzal-plata-pagos-electronicos",
+      "alternate": "/noticias/monedas-guatemala-quetzal-plata-pagos-electronicos/"
+    },
+    {
+      "path": "/en/news/monedas-mexicanas-valen-miles-pesos/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-mexicanas-valen-miles-pesos",
+      "title": "monedas-mexicanas-valen-miles-pesos",
+      "alternate": "/noticias/monedas-mexicanas-valen-miles-pesos/"
+    },
+    {
+      "path": "/en/news/monedas-oro-robadas-museo-albacete-valor/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-oro-robadas-museo-albacete-valor",
+      "title": "monedas-oro-robadas-museo-albacete-valor",
+      "alternate": "/noticias/monedas-oro-robadas-museo-albacete-valor/"
+    },
+    {
+      "path": "/en/news/monedas-spiderman-plata-999-relieve-3d/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "monedas-spiderman-plata-999-relieve-3d",
+      "title": "monedas-spiderman-plata-999-relieve-3d",
+      "alternate": "/noticias/monedas-spiderman-plata-999-relieve-3d/"
+    },
+    {
+      "path": "/en/news/muestra-billetes-antiguos-tabasco-septiembre/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "muestra-billetes-antiguos-tabasco-septiembre",
+      "title": "muestra-billetes-antiguos-tabasco-septiembre",
+      "alternate": "/noticias/muestra-billetes-antiguos-tabasco-septiembre/"
+    },
+    {
+      "path": "/en/news/muestra-monedas-historia-jaca/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "muestra-monedas-historia-jaca",
+      "title": "muestra-monedas-historia-jaca",
+      "alternate": "/noticias/muestra-monedas-historia-jaca/"
+    },
+    {
+      "path": "/en/news/mundial-2026-moneda-conmemorativa-espana/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "mundial-2026-moneda-conmemorativa-espana",
+      "title": "mundial-2026-moneda-conmemorativa-espana",
+      "alternate": "/noticias/mundial-2026-moneda-conmemorativa-espana/"
+    },
+    {
+      "path": "/en/news/numismatica-encuentro-coleccionistas-pereira/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "numismatica-encuentro-coleccionistas-pereira",
+      "title": "numismatica-encuentro-coleccionistas-pereira",
+      "alternate": "/noticias/numismatica-encuentro-coleccionistas-pereira/"
+    },
+    {
+      "path": "/en/news/paysandu-primer-encuentro-numismatico/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "paysandu-primer-encuentro-numismatico",
+      "title": "paysandu-primer-encuentro-numismatico",
+      "alternate": "/noticias/paysandu-primer-encuentro-numismatico/"
+    },
+    {
+      "path": "/en/news/primera-casa-moneda-filadelfia-firstival/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "primera-casa-moneda-filadelfia-firstival",
+      "title": "primera-casa-moneda-filadelfia-firstival",
+      "alternate": "/noticias/primera-casa-moneda-filadelfia-firstival/"
+    },
+    {
+      "path": "/en/news/raul-canales-billetes-chilenos-notafilia/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "raul-canales-billetes-chilenos-notafilia",
+      "title": "raul-canales-billetes-chilenos-notafilia",
+      "alternate": "/noticias/raul-canales-billetes-chilenos-notafilia/"
+    },
+    {
+      "path": "/en/news/robo-tesoro-villena-museos-badajoz-albacete/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "robo-tesoro-villena-museos-badajoz-albacete",
+      "title": "robo-tesoro-villena-museos-badajoz-albacete",
+      "alternate": "/noticias/robo-tesoro-villena-museos-badajoz-albacete/"
+    },
+    {
+      "path": "/en/news/se-agotan-dolares-conmemorativos-trump/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "se-agotan-dolares-conmemorativos-trump",
+      "title": "se-agotan-dolares-conmemorativos-trump",
+      "alternate": "/noticias/se-agotan-dolares-conmemorativos-trump/"
+    },
+    {
+      "path": "/en/news/tesoro-monedas-andalusies-cordoba-man/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "tesoro-monedas-andalusies-cordoba-man",
+      "title": "tesoro-monedas-andalusies-cordoba-man",
+      "alternate": "/noticias/tesoro-monedas-andalusies-cordoba-man/"
+    },
+    {
+      "path": "/en/notofilia-vs-colombian-banknote-catalogs/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "notofilia-vs-colombian-banknote-catalogs",
+      "title": "notofilia-vs-colombian-banknote-catalogs",
+      "alternate": "/notofilia-vs-catalogos-billetes-colombianos/"
+    },
+    {
+      "path": "/en/search/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "search",
+      "title": "search",
+      "alternate": "/buscar/"
+    },
+    {
+      "path": "/glosario/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "glosario",
+      "title": "glosario",
+      "alternate": "/en/glossary/"
+    },
+    {
+      "path": "/glosario/abrasiones/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "abrasiones",
+      "title": "abrasiones",
+      "alternate": "/en/glossary/abrasiones/"
+    },
+    {
+      "path": "/glosario/acumulacion/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "acumulacion",
+      "title": "acumulacion",
+      "alternate": "/en/glossary/acumulacion/"
+    },
+    {
+      "path": "/glosario/anepigrafico/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "anepigrafico",
+      "title": "anepigrafico",
+      "alternate": "/en/glossary/anepigrafico/"
+    },
+    {
+      "path": "/glosario/anverso/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "anverso",
+      "title": "anverso",
+      "alternate": "/en/glossary/anverso/"
+    },
+    {
+      "path": "/glosario/apareamiento-de-troqueles/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "apareamiento-de-troqueles",
+      "title": "apareamiento-de-troqueles",
+      "alternate": "/en/glossary/apareamiento-de-troqueles/"
+    },
+    {
+      "path": "/glosario/banca-libre/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "banca-libre",
+      "title": "banca-libre",
+      "alternate": "/en/glossary/banca-libre/"
+    },
+    {
+      "path": "/glosario/banco-emisor/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "banco-emisor",
+      "title": "banco-emisor",
+      "alternate": "/en/glossary/banco-emisor/"
+    },
+    {
+      "path": "/glosario/banknote-book/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "banknote-book",
+      "title": "banknote-book",
+      "alternate": "/en/glossary/banknote-book/"
+    },
+    {
+      "path": "/glosario/billete-alterado/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-alterado",
+      "title": "billete-alterado",
+      "alternate": "/en/glossary/billete-alterado/"
+    },
+    {
+      "path": "/glosario/billete-de-banco-obsoleto/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-de-banco-obsoleto",
+      "title": "billete-de-banco-obsoleto",
+      "alternate": "/en/glossary/billete-de-banco-obsoleto/"
+    },
+    {
+      "path": "/glosario/billete-de-necesidad/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-de-necesidad",
+      "title": "billete-de-necesidad",
+      "alternate": "/en/glossary/billete-de-necesidad/"
+    },
+    {
+      "path": "/glosario/billete-de-reemplazo-estrella/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-de-reemplazo-estrella",
+      "title": "billete-de-reemplazo-estrella",
+      "alternate": "/en/glossary/billete-de-reemplazo-estrella/"
+    },
+    {
+      "path": "/glosario/billete-mula/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-mula",
+      "title": "billete-mula",
+      "alternate": "/en/glossary/billete-mula/"
+    },
+    {
+      "path": "/glosario/billete-provisional/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-provisional",
+      "title": "billete-provisional",
+      "alternate": "/en/glossary/billete-provisional/"
+    },
+    {
+      "path": "/glosario/billete-sin-circular/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-sin-circular",
+      "title": "billete-sin-circular",
+      "alternate": "/en/glossary/billete-sin-circular/"
+    },
+    {
+      "path": "/glosario/billete-web/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billete-web",
+      "title": "billete-web",
+      "alternate": "/en/glossary/billete-web/"
+    },
+    {
+      "path": "/glosario/billon/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "billon",
+      "title": "billon",
+      "alternate": "/en/glossary/billon/"
+    },
+    {
+      "path": "/glosario/bimetalica/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "bimetalica",
+      "title": "bimetalica",
+      "alternate": "/en/glossary/bimetalica/"
+    },
+    {
+      "path": "/glosario/c-day/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "c-day",
+      "title": "c-day",
+      "alternate": "/en/glossary/c-day/"
+    },
+    {
+      "path": "/glosario/calcografia/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "calcografia",
+      "title": "calcografia",
+      "alternate": "/en/glossary/calcografia/"
+    },
+    {
+      "path": "/glosario/casi-sin-circular-au/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "casi-sin-circular-au",
+      "title": "casi-sin-circular-au",
+      "alternate": "/en/glossary/casi-sin-circular-au/"
+    },
+    {
+      "path": "/glosario/cedula-hipotecaria/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "cedula-hipotecaria",
+      "title": "cedula-hipotecaria",
+      "alternate": "/en/glossary/cedula-hipotecaria/"
+    },
+    {
+      "path": "/glosario/choice-uncirculated/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "choice-uncirculated",
+      "title": "choice-uncirculated",
+      "alternate": "/en/glossary/choice-uncirculated/"
+    },
+    {
+      "path": "/glosario/cocobola/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "cocobola",
+      "title": "cocobola",
+      "alternate": "/en/glossary/cocobola/"
+    },
+    {
+      "path": "/glosario/columnario-de-dos-mundos/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "columnario-de-dos-mundos",
+      "title": "columnario-de-dos-mundos",
+      "alternate": "/en/glossary/columnario-de-dos-mundos/"
+    },
+    {
+      "path": "/glosario/cordoncillo/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "cordoncillo",
+      "title": "cordoncillo",
+      "alternate": "/en/glossary/cordoncillo/"
+    },
+    {
+      "path": "/glosario/coscoja/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "coscoja",
+      "title": "coscoja",
+      "alternate": "/en/glossary/coscoja/"
+    },
+    {
+      "path": "/glosario/cospel/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "cospel",
+      "title": "cospel",
+      "alternate": "/en/glossary/cospel/"
+    },
+    {
+      "path": "/glosario/criswell/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "criswell",
+      "title": "criswell",
+      "alternate": "/en/glossary/criswell/"
+    },
+    {
+      "path": "/glosario/curso-legal/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "curso-legal",
+      "title": "curso-legal",
+      "alternate": "/en/glossary/curso-legal/"
+    },
+    {
+      "path": "/glosario/desmonetizado/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "desmonetizado",
+      "title": "desmonetizado",
+      "alternate": "/en/glossary/desmonetizado/"
+    },
+    {
+      "path": "/glosario/details-ngc/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "details-ngc",
+      "title": "details-ngc",
+      "alternate": "/en/glossary/details-ngc/"
+    },
+    {
+      "path": "/glosario/deuda-flotante/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "deuda-flotante",
+      "title": "deuda-flotante",
+      "alternate": "/en/glossary/deuda-flotante/"
+    },
+    {
+      "path": "/glosario/diez-milesimas-10-mils/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "diez-milesimas-10-mils",
+      "title": "diez-milesimas-10-mils",
+      "alternate": "/en/glossary/diez-milesimas-10-mils/"
+    },
+    {
+      "path": "/glosario/dispositivo-opticamente-variable-ovd/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "dispositivo-opticamente-variable-ovd",
+      "title": "dispositivo-opticamente-variable-ovd",
+      "alternate": "/en/glossary/dispositivo-opticamente-variable-ovd/"
+    },
+    {
+      "path": "/glosario/dolar/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "dolar",
+      "title": "dolar",
+      "alternate": "/en/glossary/dolar/"
+    },
+    {
+      "path": "/glosario/dracma/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "dracma",
+      "title": "dracma",
+      "alternate": "/en/glossary/dracma/"
+    },
+    {
+      "path": "/glosario/ducado/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "ducado",
+      "title": "ducado",
+      "alternate": "/en/glossary/ducado/"
+    },
+    {
+      "path": "/glosario/emalangeni-lilangeni/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "emalangeni-lilangeni",
+      "title": "emalangeni-lilangeni",
+      "alternate": "/en/glossary/emalangeni-lilangeni/"
+    },
+    {
+      "path": "/glosario/emision-conmemorativa/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "emision-conmemorativa",
+      "title": "emision-conmemorativa",
+      "alternate": "/en/glossary/emision-conmemorativa/"
+    },
+    {
+      "path": "/glosario/encapsulado/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "encapsulado",
+      "title": "encapsulado",
+      "alternate": "/en/glossary/encapsulado/"
+    },
+    {
+      "path": "/glosario/ensayador/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "ensayador",
+      "title": "ensayador",
+      "alternate": "/en/glossary/ensayador/"
+    },
+    {
+      "path": "/glosario/epq-calidad-de-papel-excepcional/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "epq-calidad-de-papel-excepcional",
+      "title": "epq-calidad-de-papel-excepcional",
+      "alternate": "/en/glossary/epq-calidad-de-papel-excepcional/"
+    },
+    {
+      "path": "/glosario/error-de-impresion/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "error-de-impresion",
+      "title": "error-de-impresion",
+      "alternate": "/en/glossary/error-de-impresion/"
+    },
+    {
+      "path": "/glosario/escala-sheldon/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "escala-sheldon",
+      "title": "escala-sheldon",
+      "alternate": "/en/glossary/escala-sheldon/"
+    },
+    {
+      "path": "/glosario/escripofilia/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "escripofilia",
+      "title": "escripofilia",
+      "alternate": "/en/glossary/escripofilia/"
+    },
+    {
+      "path": "/glosario/escudo-de-armas/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "escudo-de-armas",
+      "title": "escudo-de-armas",
+      "alternate": "/en/glossary/escudo-de-armas/"
+    },
+    {
+      "path": "/glosario/estado-basal/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "estado-basal",
+      "title": "estado-basal",
+      "alternate": "/en/glossary/estado-basal/"
+    },
+    {
+      "path": "/glosario/estado-soberano/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "estado-soberano",
+      "title": "estado-soberano",
+      "alternate": "/en/glossary/estado-soberano/"
+    },
+    {
+      "path": "/glosario/euro/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "euro",
+      "title": "euro",
+      "alternate": "/en/glossary/euro/"
+    },
+    {
+      "path": "/glosario/exonumia/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "exonumia",
+      "title": "exonumia",
+      "alternate": "/en/glossary/exonumia/"
+    },
+    {
+      "path": "/glosario/extremadamente-fino-ebc-ef/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "extremadamente-fino-ebc-ef",
+      "title": "extremadamente-fino-ebc-ef",
+      "alternate": "/en/glossary/extremadamente-fino-ebc-ef/"
+    },
+    {
+      "path": "/glosario/faja/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "faja",
+      "title": "faja",
+      "alternate": "/en/glossary/faja/"
+    },
+    {
+      "path": "/glosario/fajo-ladrillo/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "fajo-ladrillo",
+      "title": "fajo-ladrillo",
+      "alternate": "/en/glossary/fajo-ladrillo/"
+    },
+    {
+      "path": "/glosario/filigrana/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "filigrana",
+      "title": "filigrana",
+      "alternate": "/en/glossary/filigrana/"
+    },
+    {
+      "path": "/glosario/firma/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "firma",
+      "title": "firma",
+      "alternate": "/en/glossary/firma/"
+    },
+    {
+      "path": "/glosario/foil/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "foil",
+      "title": "foil",
+      "alternate": "/en/glossary/foil/"
+    },
+    {
+      "path": "/glosario/foxing/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "foxing",
+      "title": "foxing",
+      "alternate": "/en/glossary/foxing/"
+    },
+    {
+      "path": "/glosario/friedberg/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "friedberg",
+      "title": "friedberg",
+      "alternate": "/en/glossary/friedberg/"
+    },
+    {
+      "path": "/glosario/gem-uncirculated/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "gem-uncirculated",
+      "title": "gem-uncirculated",
+      "alternate": "/en/glossary/gem-uncirculated/"
+    },
+    {
+      "path": "/glosario/grayback/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "grayback",
+      "title": "grayback",
+      "alternate": "/en/glossary/grayback/"
+    },
+    {
+      "path": "/glosario/guardian/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "guardian",
+      "title": "guardian",
+      "alternate": "/en/glossary/guardian/"
+    },
+    {
+      "path": "/glosario/guilloche/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "guilloche",
+      "title": "guilloche",
+      "alternate": "/en/glossary/guilloche/"
+    },
+    {
+      "path": "/glosario/gulden/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "gulden",
+      "title": "gulden",
+      "alternate": "/en/glossary/gulden/"
+    },
+    {
+      "path": "/glosario/handstamp/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "handstamp",
+      "title": "handstamp",
+      "alternate": "/en/glossary/handstamp/"
+    },
+    {
+      "path": "/glosario/haxby/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "haxby",
+      "title": "haxby",
+      "alternate": "/en/glossary/haxby/"
+    },
+    {
+      "path": "/glosario/hilo-de-seguridad/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "hilo-de-seguridad",
+      "title": "hilo-de-seguridad",
+      "alternate": "/en/glossary/hilo-de-seguridad/"
+    },
+    {
+      "path": "/glosario/intaglio/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "intaglio",
+      "title": "intaglio",
+      "alternate": "/en/glossary/intaglio/"
+    },
+    {
+      "path": "/glosario/jiaozi/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "jiaozi",
+      "title": "jiaozi",
+      "alternate": "/en/glossary/jiaozi/"
+    },
+    {
+      "path": "/glosario/kopek/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "kopek",
+      "title": "kopek",
+      "alternate": "/en/glossary/kopek/"
+    },
+    {
+      "path": "/glosario/kwacha/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "kwacha",
+      "title": "kwacha",
+      "alternate": "/en/glossary/kwacha/"
+    },
+    {
+      "path": "/glosario/letras-de-credito/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "letras-de-credito",
+      "title": "letras-de-credito",
+      "alternate": "/en/glossary/letras-de-credito/"
+    },
+    {
+      "path": "/glosario/leu-lei/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "leu-lei",
+      "title": "leu-lei",
+      "alternate": "/en/glossary/leu-lei/"
+    },
+    {
+      "path": "/glosario/leyenda/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "leyenda",
+      "title": "leyenda",
+      "alternate": "/en/glossary/leyenda/"
+    },
+    {
+      "path": "/glosario/libra/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "libra",
+      "title": "libra",
+      "alternate": "/en/glossary/libra/"
+    },
+    {
+      "path": "/glosario/libranza/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "libranza",
+      "title": "libranza",
+      "alternate": "/en/glossary/libranza/"
+    },
+    {
+      "path": "/glosario/litografia/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "litografia",
+      "title": "litografia",
+      "alternate": "/en/glossary/litografia/"
+    },
+    {
+      "path": "/glosario/maculatura/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "maculatura",
+      "title": "maculatura",
+      "alternate": "/en/glossary/maculatura/"
+    },
+    {
+      "path": "/glosario/macuquina-cob/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "macuquina-cob",
+      "title": "macuquina-cob",
+      "alternate": "/en/glossary/macuquina-cob/"
+    },
+    {
+      "path": "/glosario/marcas-de-ajuste/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "marcas-de-ajuste",
+      "title": "marcas-de-ajuste",
+      "alternate": "/en/glossary/marcas-de-ajuste/"
+    },
+    {
+      "path": "/glosario/marcas-de-bolsa/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "marcas-de-bolsa",
+      "title": "marcas-de-bolsa",
+      "alternate": "/en/glossary/marcas-de-bolsa/"
+    },
+    {
+      "path": "/glosario/marcas-de-funda-de-album/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "marcas-de-funda-de-album",
+      "title": "marcas-de-funda-de-album",
+      "alternate": "/en/glossary/marcas-de-funda-de-album/"
+    },
+    {
+      "path": "/glosario/mariposa/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "mariposa",
+      "title": "mariposa",
+      "alternate": "/en/glossary/mariposa/"
+    },
+    {
+      "path": "/glosario/microimpresion/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "microimpresion",
+      "title": "microimpresion",
+      "alternate": "/en/glossary/microimpresion/"
+    },
+    {
+      "path": "/glosario/monedas-antiguas/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "monedas-antiguas",
+      "title": "monedas-antiguas",
+      "alternate": "/en/glossary/monedas-antiguas/"
+    },
+    {
+      "path": "/glosario/mpc/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "mpc",
+      "title": "mpc",
+      "alternate": "/en/glossary/mpc/"
+    },
+    {
+      "path": "/glosario/nature-print/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "nature-print",
+      "title": "nature-print",
+      "alternate": "/en/glossary/nature-print/"
+    },
+    {
+      "path": "/glosario/ngc/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "ngc",
+      "title": "ngc",
+      "alternate": "/en/glossary/ngc/"
+    },
+    {
+      "path": "/glosario/notafilia/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "notafilia",
+      "title": "notafilia",
+      "alternate": "/en/glossary/notafilia/"
+    },
+    {
+      "path": "/glosario/numeracion-baja/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-baja",
+      "title": "numeracion-baja",
+      "alternate": "/en/glossary/numeracion-baja/"
+    },
+    {
+      "path": "/glosario/numeracion-binaria/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-binaria",
+      "title": "numeracion-binaria",
+      "alternate": "/en/glossary/numeracion-binaria/"
+    },
+    {
+      "path": "/glosario/numeracion-escalera/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-escalera",
+      "title": "numeracion-escalera",
+      "alternate": "/en/glossary/numeracion-escalera/"
+    },
+    {
+      "path": "/glosario/numeracion-especial/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-especial",
+      "title": "numeracion-especial",
+      "alternate": "/en/glossary/numeracion-especial/"
+    },
+    {
+      "path": "/glosario/numeracion-radar/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-radar",
+      "title": "numeracion-radar",
+      "alternate": "/en/glossary/numeracion-radar/"
+    },
+    {
+      "path": "/glosario/numeracion-repetidor/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-repetidor",
+      "title": "numeracion-repetidor",
+      "alternate": "/en/glossary/numeracion-repetidor/"
+    },
+    {
+      "path": "/glosario/numeracion-solida/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion-solida",
+      "title": "numeracion-solida",
+      "alternate": "/en/glossary/numeracion-solida/"
+    },
+    {
+      "path": "/glosario/numeracion/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numeracion",
+      "title": "numeracion",
+      "alternate": "/en/glossary/numeracion/"
+    },
+    {
+      "path": "/glosario/numismatica/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "numismatica",
+      "title": "numismatica",
+      "alternate": "/en/glossary/numismatica/"
+    },
+    {
+      "path": "/glosario/offset/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "offset",
+      "title": "offset",
+      "alternate": "/en/glossary/offset/"
+    },
+    {
+      "path": "/glosario/orla/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "orla",
+      "title": "orla",
+      "alternate": "/en/glossary/orla/"
+    },
+    {
+      "path": "/glosario/papel-moneda-fraccionario/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "papel-moneda-fraccionario",
+      "title": "papel-moneda-fraccionario",
+      "alternate": "/en/glossary/papel-moneda-fraccionario/"
+    },
+    {
+      "path": "/glosario/patina/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "patina",
+      "title": "patina",
+      "alternate": "/en/glossary/patina/"
+    },
+    {
+      "path": "/glosario/peso-oro/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "peso-oro",
+      "title": "peso-oro",
+      "alternate": "/en/glossary/peso-oro/"
+    },
+    {
+      "path": "/glosario/peso/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "peso",
+      "title": "peso",
+      "alternate": "/en/glossary/peso/"
+    },
+    {
+      "path": "/glosario/pick/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "pick",
+      "title": "pick",
+      "alternate": "/en/glossary/pick/"
+    },
+    {
+      "path": "/glosario/plancheta/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "plancheta",
+      "title": "plancheta",
+      "alternate": "/en/glossary/plancheta/"
+    },
+    {
+      "path": "/glosario/planchuela/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "planchuela",
+      "title": "planchuela",
+      "alternate": "/en/glossary/planchuela/"
+    },
+    {
+      "path": "/glosario/pliegue-de-fabrica/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "pliegue-de-fabrica",
+      "title": "pliegue-de-fabrica",
+      "alternate": "/en/glossary/pliegue-de-fabrica/"
+    },
+    {
+      "path": "/glosario/pliegue-y-doblez/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "pliegue-y-doblez",
+      "title": "pliegue-y-doblez",
+      "alternate": "/en/glossary/pliegue-y-doblez/"
+    },
+    {
+      "path": "/glosario/pmg-pcgs/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "pmg-pcgs",
+      "title": "pmg-pcgs",
+      "alternate": "/en/glossary/pmg-pcgs/"
+    },
+    {
+      "path": "/glosario/polimero/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "polimero",
+      "title": "polimero",
+      "alternate": "/en/glossary/polimero/"
+    },
+    {
+      "path": "/glosario/prueba-ensayo/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "prueba-ensayo",
+      "title": "prueba-ensayo",
+      "alternate": "/en/glossary/prueba-ensayo/"
+    },
+    {
+      "path": "/glosario/quetzal/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "quetzal",
+      "title": "quetzal",
+      "alternate": "/en/glossary/quetzal/"
+    },
+    {
+      "path": "/glosario/real/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "real",
+      "title": "real",
+      "alternate": "/en/glossary/real/"
+    },
+    {
+      "path": "/glosario/recocido/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "recocido",
+      "title": "recocido",
+      "alternate": "/en/glossary/recocido/"
+    },
+    {
+      "path": "/glosario/registro-perfecto/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "registro-perfecto",
+      "title": "registro-perfecto",
+      "alternate": "/en/glossary/registro-perfecto/"
+    },
+    {
+      "path": "/glosario/remainder/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "remainder",
+      "title": "remainder",
+      "alternate": "/en/glossary/remainder/"
+    },
+    {
+      "path": "/glosario/resello/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "resello",
+      "title": "resello",
+      "alternate": "/en/glossary/resello/"
+    },
+    {
+      "path": "/glosario/retrato/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "retrato",
+      "title": "retrato",
+      "alternate": "/en/glossary/retrato/"
+    },
+    {
+      "path": "/glosario/reverso/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "reverso",
+      "title": "reverso",
+      "alternate": "/en/glossary/reverso/"
+    },
+    {
+      "path": "/glosario/ringgit/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "ringgit",
+      "title": "ringgit",
+      "alternate": "/en/glossary/ringgit/"
+    },
+    {
+      "path": "/glosario/roseton/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "roseton",
+      "title": "roseton",
+      "alternate": "/en/glossary/roseton/"
+    },
+    {
+      "path": "/glosario/schwan/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "schwan",
+      "title": "schwan",
+      "alternate": "/en/glossary/schwan/"
+    },
+    {
+      "path": "/glosario/scrip/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "scrip",
+      "title": "scrip",
+      "alternate": "/en/glossary/scrip/"
+    },
+    {
+      "path": "/glosario/serie/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "serie",
+      "title": "serie",
+      "alternate": "/en/glossary/serie/"
+    },
+    {
+      "path": "/glosario/sin-circular-brillante-bu/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "sin-circular-brillante-bu",
+      "title": "sin-circular-brillante-bu",
+      "alternate": "/en/glossary/sin-circular-brillante-bu/"
+    },
+    {
+      "path": "/glosario/sobresello/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "sobresello",
+      "title": "sobresello",
+      "alternate": "/en/glossary/sobresello/"
+    },
+    {
+      "path": "/glosario/spark/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "spark",
+      "title": "spark",
+      "alternate": "/en/glossary/spark/"
+    },
+    {
+      "path": "/glosario/specimen/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "specimen",
+      "title": "specimen",
+      "alternate": "/en/glossary/specimen/"
+    },
+    {
+      "path": "/glosario/sucre/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "sucre",
+      "title": "sucre",
+      "alternate": "/en/glossary/sucre/"
+    },
+    {
+      "path": "/glosario/superficies-alteradas/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "superficies-alteradas",
+      "title": "superficies-alteradas",
+      "alternate": "/en/glossary/superficies-alteradas/"
+    },
+    {
+      "path": "/glosario/sustrato-hibrido/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "sustrato-hibrido",
+      "title": "sustrato-hibrido",
+      "alternate": "/en/glossary/sustrato-hibrido/"
+    },
+    {
+      "path": "/glosario/sustrato/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "sustrato",
+      "title": "sustrato",
+      "alternate": "/en/glossary/sustrato/"
+    },
+    {
+      "path": "/glosario/tala/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tala",
+      "title": "tala",
+      "alternate": "/en/glossary/tala/"
+    },
+    {
+      "path": "/glosario/talla-dulce/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "talla-dulce",
+      "title": "talla-dulce",
+      "alternate": "/en/glossary/talla-dulce/"
+    },
+    {
+      "path": "/glosario/tasado/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tasado",
+      "title": "tasado",
+      "alternate": "/en/glossary/tasado/"
+    },
+    {
+      "path": "/glosario/tejuelo/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tejuelo",
+      "title": "tejuelo",
+      "alternate": "/en/glossary/tejuelo/"
+    },
+    {
+      "path": "/glosario/tenge/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tenge",
+      "title": "tenge",
+      "alternate": "/en/glossary/tenge/"
+    },
+    {
+      "path": "/glosario/tinta-fluorescente-uv/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tinta-fluorescente-uv",
+      "title": "tinta-fluorescente-uv",
+      "alternate": "/en/glossary/tinta-fluorescente-uv/"
+    },
+    {
+      "path": "/glosario/tinta-iridiscente/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tinta-iridiscente",
+      "title": "tinta-iridiscente",
+      "alternate": "/en/glossary/tinta-iridiscente/"
+    },
+    {
+      "path": "/glosario/tinta-ovi/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tinta-ovi",
+      "title": "tinta-ovi",
+      "alternate": "/en/glossary/tinta-ovi/"
+    },
+    {
+      "path": "/glosario/tyvek/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "tyvek",
+      "title": "tyvek",
+      "alternate": "/en/glossary/tyvek/"
+    },
+    {
+      "path": "/glosario/uniface/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "uniface",
+      "title": "uniface",
+      "alternate": "/en/glossary/uniface/"
+    },
+    {
+      "path": "/glosario/vale-al-portador/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "vale-al-portador",
+      "title": "vale-al-portador",
+      "alternate": "/en/glossary/vale-al-portador/"
+    },
+    {
+      "path": "/glosario/ventana-transparente/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "ventana-transparente",
+      "title": "ventana-transparente",
+      "alternate": "/en/glossary/ventana-transparente/"
+    },
+    {
+      "path": "/glosario/vineta/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "vineta",
+      "title": "vineta",
+      "alternate": "/en/glossary/vineta/"
+    },
+    {
+      "path": "/glosario/yuan-renminbi/",
+      "lang": "es",
+      "type": "glossary",
+      "lastSlug": "yuan-renminbi",
+      "title": "yuan-renminbi",
+      "alternate": "/en/glossary/yuan-renminbi/"
+    },
+    {
+      "path": "/noticias/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "noticias",
+      "title": "noticias",
+      "alternate": "/en/news/"
+    },
+    {
+      "path": "/noticias/15-monedas-eeuu-valen-fortuna/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "15-monedas-eeuu-valen-fortuna",
+      "title": "15-monedas-eeuu-valen-fortuna",
+      "alternate": "/en/news/15-monedas-eeuu-valen-fortuna/"
+    },
+    {
+      "path": "/noticias/al-sur-del-mundo-subasta-2500-piezas/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "al-sur-del-mundo-subasta-2500-piezas",
+      "title": "al-sur-del-mundo-subasta-2500-piezas",
+      "alternate": "/en/news/al-sur-del-mundo-subasta-2500-piezas/"
+    },
+    {
+      "path": "/noticias/bank-al-maghrib-moneda-27-anos-mohamed-vi/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "bank-al-maghrib-moneda-27-anos-mohamed-vi",
+      "title": "bank-al-maghrib-moneda-27-anos-mohamed-vi",
+      "alternate": "/en/news/bank-al-maghrib-moneda-27-anos-mohamed-vi/"
+    },
+    {
+      "path": "/noticias/banxico-medallas-dinosaurios-casa-moneda/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "banxico-medallas-dinosaurios-casa-moneda",
+      "title": "banxico-medallas-dinosaurios-casa-moneda",
+      "alternate": "/en/news/banxico-medallas-dinosaurios-casa-moneda/"
+    },
+    {
+      "path": "/noticias/bessent-moneda-250-anos-independencia-eeuu/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "bessent-moneda-250-anos-independencia-eeuu",
+      "title": "bessent-moneda-250-anos-independencia-eeuu",
+      "alternate": "/en/news/bessent-moneda-250-anos-independencia-eeuu/"
+    },
+    {
+      "path": "/noticias/billete-1000-hidalgo-combo-mercado-libre/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-1000-hidalgo-combo-mercado-libre",
+      "title": "billete-1000-hidalgo-combo-mercado-libre",
+      "alternate": "/en/news/billete-1000-hidalgo-combo-mercado-libre/"
+    },
+    {
+      "path": "/noticias/billete-10000-pesos-lazaro-cardenas-canje/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-10000-pesos-lazaro-cardenas-canje",
+      "title": "billete-10000-pesos-lazaro-cardenas-canje",
+      "alternate": "/en/news/billete-10000-pesos-lazaro-cardenas-canje/"
+    },
+    {
+      "path": "/noticias/billete-2-dolares-serie-baja/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-2-dolares-serie-baja",
+      "title": "billete-2-dolares-serie-baja",
+      "alternate": "/en/news/billete-2-dolares-serie-baja/"
+    },
+    {
+      "path": "/noticias/billete-20000-chile-serie-anverso-falla/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-20000-chile-serie-anverso-falla",
+      "title": "billete-20000-chile-serie-anverso-falla",
+      "alternate": "/en/news/billete-20000-chile-serie-anverso-falla/"
+    },
+    {
+      "path": "/noticias/billete-50000-pesos-2001-serial-00000290/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-50000-pesos-2001-serial-00000290",
+      "title": "billete-50000-pesos-2001-serial-00000290",
+      "alternate": "/en/news/billete-50000-pesos-2001-serial-00000290/"
+    },
+    {
+      "path": "/noticias/billete-50000-pesos-colombia-valor/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billete-50000-pesos-colombia-valor",
+      "title": "billete-50000-pesos-colombia-valor",
+      "alternate": "/en/news/billete-50000-pesos-colombia-valor/"
+    },
+    {
+      "path": "/noticias/billetes-1-dolar-coleccionistas/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billetes-1-dolar-coleccionistas",
+      "title": "billetes-1-dolar-coleccionistas",
+      "alternate": "/en/news/billetes-1-dolar-coleccionistas/"
+    },
+    {
+      "path": "/noticias/billetes-2-dolares-7-detalles/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billetes-2-dolares-7-detalles",
+      "title": "billetes-2-dolares-7-detalles",
+      "alternate": "/en/news/billetes-2-dolares-7-detalles/"
+    },
+    {
+      "path": "/noticias/billetes-mexicanos-coleccionables/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "billetes-mexicanos-coleccionables",
+      "title": "billetes-mexicanos-coleccionables",
+      "alternate": "/en/news/billetes-mexicanos-coleccionables/"
+    },
+    {
+      "path": "/noticias/bncr-monedas-conmemorativas-nicoya-abolicion/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "bncr-monedas-conmemorativas-nicoya-abolicion",
+      "title": "bncr-monedas-conmemorativas-nicoya-abolicion",
+      "alternate": "/en/news/bncr-monedas-conmemorativas-nicoya-abolicion/"
+    },
+    {
+      "path": "/noticias/casa-moneda-condorito-fichas-conmemorativas/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "casa-moneda-condorito-fichas-conmemorativas",
+      "title": "casa-moneda-condorito-fichas-conmemorativas",
+      "alternate": "/en/news/casa-moneda-condorito-fichas-conmemorativas/"
+    },
+    {
+      "path": "/noticias/casa-museo-cecilio-acosta-muestra-bandera-numismatica/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "casa-museo-cecilio-acosta-muestra-bandera-numismatica",
+      "title": "casa-museo-cecilio-acosta-muestra-bandera-numismatica",
+      "alternate": "/en/news/casa-museo-cecilio-acosta-muestra-bandera-numismatica/"
+    },
+    {
+      "path": "/noticias/centavo-1919-greatcollections-298125/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "centavo-1919-greatcollections-298125",
+      "title": "centavo-1919-greatcollections-298125",
+      "alternate": "/en/news/centavo-1919-greatcollections-298125/"
+    },
+    {
+      "path": "/noticias/centavo-1969-s-doble-troquel/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "centavo-1969-s-doble-troquel",
+      "title": "centavo-1969-s-doble-troquel",
+      "alternate": "/en/news/centavo-1969-s-doble-troquel/"
+    },
+    {
+      "path": "/noticias/centenario-otras-8-monedas-valen-fortuna/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "centenario-otras-8-monedas-valen-fortuna",
+      "title": "centenario-otras-8-monedas-valen-fortuna",
+      "alternate": "/en/news/centenario-otras-8-monedas-valen-fortuna/"
+    },
+    {
+      "path": "/noticias/coleccionistas-chaquenos-preservan-memoria/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "coleccionistas-chaquenos-preservan-memoria",
+      "title": "coleccionistas-chaquenos-preservan-memoria",
+      "alternate": "/en/news/coleccionistas-chaquenos-preservan-memoria/"
+    },
+    {
+      "path": "/noticias/coleccionistas-rancagua-historias-objetos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "coleccionistas-rancagua-historias-objetos",
+      "title": "coleccionistas-rancagua-historias-objetos",
+      "alternate": "/en/news/coleccionistas-rancagua-historias-objetos/"
+    },
+    {
+      "path": "/noticias/colombia-8-reales-1762-heritage-195200/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "colombia-8-reales-1762-heritage-195200",
+      "title": "colombia-8-reales-1762-heritage-195200",
+      "alternate": "/en/news/colombia-8-reales-1762-heritage-195200/"
+    },
+    {
+      "path": "/noticias/convencion-sociedad-numismatica-saltillo-2026/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "convencion-sociedad-numismatica-saltillo-2026",
+      "title": "convencion-sociedad-numismatica-saltillo-2026",
+      "alternate": "/en/news/convencion-sociedad-numismatica-saltillo-2026/"
+    },
+    {
+      "path": "/noticias/costa-rica-8-escudos-1828-subasta/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "costa-rica-8-escudos-1828-subasta",
+      "title": "costa-rica-8-escudos-1828-subasta",
+      "alternate": "/en/news/costa-rica-8-escudos-1828-subasta/"
+    },
+    {
+      "path": "/noticias/dime-1894-s-bowers-125-millones/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "dime-1894-s-bowers-125-millones",
+      "title": "dime-1894-s-bowers-125-millones",
+      "alternate": "/en/news/dime-1894-s-bowers-125-millones/"
+    },
+    {
+      "path": "/noticias/dime-1894-s-contexto-tucuman/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "dime-1894-s-contexto-tucuman",
+      "title": "dime-1894-s-contexto-tucuman",
+      "alternate": "/en/news/dime-1894-s-contexto-tucuman/"
+    },
+    {
+      "path": "/noticias/dolar-trump-vale-un-dolar/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "dolar-trump-vale-un-dolar",
+      "title": "dolar-trump-vale-un-dolar",
+      "alternate": "/en/news/dolar-trump-vale-un-dolar/"
+    },
+    {
+      "path": "/noticias/dolar-trump-venta-fila-virtual/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "dolar-trump-venta-fila-virtual",
+      "title": "dolar-trump-venta-fila-virtual",
+      "alternate": "/en/news/dolar-trump-venta-fila-virtual/"
+    },
+    {
+      "path": "/noticias/encuentro-coleccionistas-la-plata-2026/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "encuentro-coleccionistas-la-plata-2026",
+      "title": "encuentro-coleccionistas-la-plata-2026",
+      "alternate": "/en/news/encuentro-coleccionistas-la-plata-2026/"
+    },
+    {
+      "path": "/noticias/exhibicion-peso-independiente-ohiggins-talca/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "exhibicion-peso-independiente-ohiggins-talca",
+      "title": "exhibicion-peso-independiente-ohiggins-talca",
+      "alternate": "/en/news/exhibicion-peso-independiente-ohiggins-talca/"
+    },
+    {
+      "path": "/noticias/expo-coleccionismo-moneda-argentina-corrientes/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "expo-coleccionismo-moneda-argentina-corrientes",
+      "title": "expo-coleccionismo-moneda-argentina-corrientes",
+      "alternate": "/en/news/expo-coleccionismo-moneda-argentina-corrientes/"
+    },
+    {
+      "path": "/noticias/exposicion-monedas-billetes-la-paz-bolivia/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "exposicion-monedas-billetes-la-paz-bolivia",
+      "title": "exposicion-monedas-billetes-la-paz-bolivia",
+      "alternate": "/en/news/exposicion-monedas-billetes-la-paz-bolivia/"
+    },
+    {
+      "path": "/noticias/felipe-mateu-llopis-tesoro-numismatico/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "felipe-mateu-llopis-tesoro-numismatico",
+      "title": "felipe-mateu-llopis-tesoro-numismatico",
+      "alternate": "/en/news/felipe-mateu-llopis-tesoro-numismatico/"
+    },
+    {
+      "path": "/noticias/flowing-hair-1794-valor-85-millones/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "flowing-hair-1794-valor-85-millones",
+      "title": "flowing-hair-1794-valor-85-millones",
+      "alternate": "/en/news/flowing-hair-1794-valor-85-millones/"
+    },
+    {
+      "path": "/noticias/gobierno-monedas-oro-cerdo-iberico/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "gobierno-monedas-oro-cerdo-iberico",
+      "title": "gobierno-monedas-oro-cerdo-iberico",
+      "alternate": "/en/news/gobierno-monedas-oro-cerdo-iberico/"
+    },
+    {
+      "path": "/noticias/iii-encuentro-numismatico-arequipa-2026/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "iii-encuentro-numismatico-arequipa-2026",
+      "title": "iii-encuentro-numismatico-arequipa-2026",
+      "alternate": "/en/news/iii-encuentro-numismatico-arequipa-2026/"
+    },
+    {
+      "path": "/noticias/iv-congreso-numismatico-maracay-2026/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "iv-congreso-numismatico-maracay-2026",
+      "title": "iv-congreso-numismatico-maracay-2026",
+      "alternate": "/en/news/iv-congreso-numismatico-maracay-2026/"
+    },
+    {
+      "path": "/noticias/jaca-dinero-sancho-ramirez-6000-euros/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "jaca-dinero-sancho-ramirez-6000-euros",
+      "title": "jaca-dinero-sancho-ramirez-6000-euros",
+      "alternate": "/en/news/jaca-dinero-sancho-ramirez-6000-euros/"
+    },
+    {
+      "path": "/noticias/jornadas-nacionales-numismatica-la-plata-2026/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "jornadas-nacionales-numismatica-la-plata-2026",
+      "title": "jornadas-nacionales-numismatica-la-plata-2026",
+      "alternate": "/en/news/jornadas-nacionales-numismatica-la-plata-2026/"
+    },
+    {
+      "path": "/noticias/legado-tren-oro-renacimiento-forint-hungria/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "legado-tren-oro-renacimiento-forint-hungria",
+      "title": "legado-tren-oro-renacimiento-forint-hungria",
+      "alternate": "/en/news/legado-tren-oro-renacimiento-forint-hungria/"
+    },
+    {
+      "path": "/noticias/luis-lanza-ceca-valor-moneda-antigua/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "luis-lanza-ceca-valor-moneda-antigua",
+      "title": "luis-lanza-ceca-valor-moneda-antigua",
+      "alternate": "/en/news/luis-lanza-ceca-valor-moneda-antigua/"
+    },
+    {
+      "path": "/noticias/man-239-monedas-numismatica-andalusi/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "man-239-monedas-numismatica-andalusi",
+      "title": "man-239-monedas-numismatica-andalusi",
+      "alternate": "/en/news/man-239-monedas-numismatica-andalusi/"
+    },
+    {
+      "path": "/noticias/medalla-sistema-solar-heptagonal/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "medalla-sistema-solar-heptagonal",
+      "title": "medalla-sistema-solar-heptagonal",
+      "alternate": "/en/news/medalla-sistema-solar-heptagonal/"
+    },
+    {
+      "path": "/noticias/mercado-numismatica-filatelia-placa-reial/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "mercado-numismatica-filatelia-placa-reial",
+      "title": "mercado-numismatica-filatelia-placa-reial",
+      "alternate": "/en/news/mercado-numismatica-filatelia-placa-reial/"
+    },
+    {
+      "path": "/noticias/moneda-10-pesos-octogonal-chile/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-10-pesos-octogonal-chile",
+      "title": "moneda-10-pesos-octogonal-chile",
+      "alternate": "/en/news/moneda-10-pesos-octogonal-chile/"
+    },
+    {
+      "path": "/noticias/moneda-100-pesos-estado-mexico-primera-fase/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-100-pesos-estado-mexico-primera-fase",
+      "title": "moneda-100-pesos-estado-mexico-primera-fase",
+      "alternate": "/en/news/moneda-100-pesos-estado-mexico-primera-fase/"
+    },
+    {
+      "path": "/noticias/moneda-2-escudos-chile-1971-caupolican/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-2-escudos-chile-1971-caupolican",
+      "title": "moneda-2-escudos-chile-1971-caupolican",
+      "alternate": "/en/news/moneda-2-escudos-chile-1971-caupolican/"
+    },
+    {
+      "path": "/noticias/moneda-2-euros-alemania-2011-colonia/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-alemania-2011-colonia",
+      "title": "moneda-2-euros-alemania-2011-colonia",
+      "alternate": "/en/news/moneda-2-euros-alemania-2011-colonia/"
+    },
+    {
+      "path": "/noticias/moneda-2-euros-austria-beethoven/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-austria-beethoven",
+      "title": "moneda-2-euros-austria-beethoven",
+      "alternate": "/en/news/moneda-2-euros-austria-beethoven/"
+    },
+    {
+      "path": "/noticias/moneda-2-euros-grace-kelly/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-2-euros-grace-kelly",
+      "title": "moneda-2-euros-grace-kelly",
+      "alternate": "/en/news/moneda-2-euros-grace-kelly/"
+    },
+    {
+      "path": "/noticias/moneda-20-bicentenario-independencia-4-millones/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-20-bicentenario-independencia-4-millones",
+      "title": "moneda-20-bicentenario-independencia-4-millones",
+      "alternate": "/en/news/moneda-20-bicentenario-independencia-4-millones/"
+    },
+    {
+      "path": "/noticias/moneda-20-tenochtitlan-banorte-73000/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-20-tenochtitlan-banorte-73000",
+      "title": "moneda-20-tenochtitlan-banorte-73000",
+      "alternate": "/en/news/moneda-20-tenochtitlan-banorte-73000/"
+    },
+    {
+      "path": "/noticias/moneda-25-centavos-1962-ngc/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-25-centavos-1962-ngc",
+      "title": "moneda-25-centavos-1962-ngc",
+      "alternate": "/en/news/moneda-25-centavos-1962-ngc/"
+    },
+    {
+      "path": "/noticias/moneda-500-chile-doble-fecha-2000/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-500-chile-doble-fecha-2000",
+      "title": "moneda-500-chile-doble-fecha-2000",
+      "alternate": "/en/news/moneda-500-chile-doble-fecha-2000/"
+    },
+    {
+      "path": "/noticias/moneda-500-chile-rara-ensayos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-500-chile-rara-ensayos",
+      "title": "moneda-500-chile-rara-ensayos",
+      "alternate": "/en/news/moneda-500-chile-rara-ensayos/"
+    },
+    {
+      "path": "/noticias/moneda-campeones-mundo-plata-edicion-limitada/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-campeones-mundo-plata-edicion-limitada",
+      "title": "moneda-campeones-mundo-plata-edicion-limitada",
+      "alternate": "/en/news/moneda-campeones-mundo-plata-edicion-limitada/"
+    },
+    {
+      "path": "/noticias/moneda-carausius-east-west-rail/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-carausius-east-west-rail",
+      "title": "moneda-carausius-east-west-rail",
+      "alternate": "/en/news/moneda-carausius-east-west-rail/"
+    },
+    {
+      "path": "/noticias/moneda-chipre-salamina-2500-anos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-chipre-salamina-2500-anos",
+      "title": "moneda-chipre-salamina-2500-anos",
+      "alternate": "/en/news/moneda-chipre-salamina-2500-anos/"
+    },
+    {
+      "path": "/noticias/moneda-eeuu-1796-valor-185-millones/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-eeuu-1796-valor-185-millones",
+      "title": "moneda-eeuu-1796-valor-185-millones",
+      "alternate": "/en/news/moneda-eeuu-1796-valor-185-millones/"
+    },
+    {
+      "path": "/noticias/moneda-trump-250-aniversario-primeras/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-trump-250-aniversario-primeras",
+      "title": "moneda-trump-250-aniversario-primeras",
+      "alternate": "/en/news/moneda-trump-250-aniversario-primeras/"
+    },
+    {
+      "path": "/noticias/moneda-vaticano-papa-leon-xiv/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "moneda-vaticano-papa-leon-xiv",
+      "title": "moneda-vaticano-papa-leon-xiv",
+      "alternate": "/en/news/moneda-vaticano-papa-leon-xiv/"
+    },
+    {
+      "path": "/noticias/monedas-100-chilenas-copihues-coleccionistas/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-100-chilenas-copihues-coleccionistas",
+      "title": "monedas-100-chilenas-copihues-coleccionistas",
+      "alternate": "/en/news/monedas-100-chilenas-copihues-coleccionistas/"
+    },
+    {
+      "path": "/noticias/monedas-25-centavos-valen-fortuna/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-25-centavos-valen-fortuna",
+      "title": "monedas-25-centavos-valen-fortuna",
+      "alternate": "/en/news/monedas-25-centavos-valen-fortuna/"
+    },
+    {
+      "path": "/noticias/monedas-anos-60-valen-150000/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-anos-60-valen-150000",
+      "title": "monedas-anos-60-valen-150000",
+      "alternate": "/en/news/monedas-anos-60-valen-150000/"
+    },
+    {
+      "path": "/noticias/monedas-eeuu-podrian-valer-143750/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-eeuu-podrian-valer-143750",
+      "title": "monedas-eeuu-podrian-valer-143750",
+      "alternate": "/en/news/monedas-eeuu-podrian-valer-143750/"
+    },
+    {
+      "path": "/noticias/monedas-guatemala-quetzal-plata-pagos-electronicos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-guatemala-quetzal-plata-pagos-electronicos",
+      "title": "monedas-guatemala-quetzal-plata-pagos-electronicos",
+      "alternate": "/en/news/monedas-guatemala-quetzal-plata-pagos-electronicos/"
+    },
+    {
+      "path": "/noticias/monedas-mexicanas-valen-miles-pesos/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-mexicanas-valen-miles-pesos",
+      "title": "monedas-mexicanas-valen-miles-pesos",
+      "alternate": "/en/news/monedas-mexicanas-valen-miles-pesos/"
+    },
+    {
+      "path": "/noticias/monedas-oro-robadas-museo-albacete-valor/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-oro-robadas-museo-albacete-valor",
+      "title": "monedas-oro-robadas-museo-albacete-valor",
+      "alternate": "/en/news/monedas-oro-robadas-museo-albacete-valor/"
+    },
+    {
+      "path": "/noticias/monedas-spiderman-plata-999-relieve-3d/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "monedas-spiderman-plata-999-relieve-3d",
+      "title": "monedas-spiderman-plata-999-relieve-3d",
+      "alternate": "/en/news/monedas-spiderman-plata-999-relieve-3d/"
+    },
+    {
+      "path": "/noticias/muestra-billetes-antiguos-tabasco-septiembre/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "muestra-billetes-antiguos-tabasco-septiembre",
+      "title": "muestra-billetes-antiguos-tabasco-septiembre",
+      "alternate": "/en/news/muestra-billetes-antiguos-tabasco-septiembre/"
+    },
+    {
+      "path": "/noticias/muestra-monedas-historia-jaca/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "muestra-monedas-historia-jaca",
+      "title": "muestra-monedas-historia-jaca",
+      "alternate": "/en/news/muestra-monedas-historia-jaca/"
+    },
+    {
+      "path": "/noticias/mundial-2026-moneda-conmemorativa-espana/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "mundial-2026-moneda-conmemorativa-espana",
+      "title": "mundial-2026-moneda-conmemorativa-espana",
+      "alternate": "/en/news/mundial-2026-moneda-conmemorativa-espana/"
+    },
+    {
+      "path": "/noticias/numismatica-encuentro-coleccionistas-pereira/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "numismatica-encuentro-coleccionistas-pereira",
+      "title": "numismatica-encuentro-coleccionistas-pereira",
+      "alternate": "/en/news/numismatica-encuentro-coleccionistas-pereira/"
+    },
+    {
+      "path": "/noticias/paysandu-primer-encuentro-numismatico/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "paysandu-primer-encuentro-numismatico",
+      "title": "paysandu-primer-encuentro-numismatico",
+      "alternate": "/en/news/paysandu-primer-encuentro-numismatico/"
+    },
+    {
+      "path": "/noticias/primera-casa-moneda-filadelfia-firstival/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "primera-casa-moneda-filadelfia-firstival",
+      "title": "primera-casa-moneda-filadelfia-firstival",
+      "alternate": "/en/news/primera-casa-moneda-filadelfia-firstival/"
+    },
+    {
+      "path": "/noticias/raul-canales-billetes-chilenos-notafilia/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "raul-canales-billetes-chilenos-notafilia",
+      "title": "raul-canales-billetes-chilenos-notafilia",
+      "alternate": "/en/news/raul-canales-billetes-chilenos-notafilia/"
+    },
+    {
+      "path": "/noticias/robo-tesoro-villena-museos-badajoz-albacete/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "robo-tesoro-villena-museos-badajoz-albacete",
+      "title": "robo-tesoro-villena-museos-badajoz-albacete",
+      "alternate": "/en/news/robo-tesoro-villena-museos-badajoz-albacete/"
+    },
+    {
+      "path": "/noticias/se-agotan-dolares-conmemorativos-trump/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "se-agotan-dolares-conmemorativos-trump",
+      "title": "se-agotan-dolares-conmemorativos-trump",
+      "alternate": "/en/news/se-agotan-dolares-conmemorativos-trump/"
+    },
+    {
+      "path": "/noticias/tesoro-monedas-andalusies-cordoba-man/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "tesoro-monedas-andalusies-cordoba-man",
+      "title": "tesoro-monedas-andalusies-cordoba-man",
+      "alternate": "/en/news/tesoro-monedas-andalusies-cordoba-man/"
+    },
+    {
+      "path": "/notofilia-vs-catalogos-billetes-colombianos/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "notofilia-vs-catalogos-billetes-colombianos",
+      "title": "notofilia-vs-catalogos-billetes-colombianos",
+      "alternate": "/en/notofilia-vs-colombian-banknote-catalogs/"
+    }
+  ]
+}
