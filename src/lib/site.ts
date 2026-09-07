@@ -445,6 +445,7 @@ export const stubPages = [
   { path: 'editorial', es: 'Política editorial y valoración', en: 'Editorial policy' },
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
+  { path: 'identificar', es: 'Identificar', en: 'Identify' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
@@ -499,6 +500,7 @@ const dedicatedEs = [
   'noticias',
   'contacto',
   'buscar',
+  'identificar',
   ...blogSlugs,
   ...newsSlugs,
 ];

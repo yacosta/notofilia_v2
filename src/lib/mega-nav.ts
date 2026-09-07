@@ -26,6 +26,7 @@ import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
+import { IDENTIFY_PATH } from '../data/identify';
 import { footerLinksFromNav } from './footer-nav';
 
 export type { FooterLink } from './footer-nav';
@@ -44,7 +45,7 @@ export type NavNode = {
    */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
-  icon?: 'guides' | 'glossary' | 'news' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous' | 'circus';
+  icon?: 'guides' | 'glossary' | 'news' | 'identify' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous' | 'circus';
   /** Place this node in a second mega-menu column with its children always visible. */
   column?: 'main' | 'aside';
   /** Lay out this item's child links in a single desktop row (Recursos). */
@@ -247,6 +248,7 @@ export const megaNav: NavNode[] = [
     en: 'Resources',
     layout: 'horizontal',
     children: [
+      { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
       { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
