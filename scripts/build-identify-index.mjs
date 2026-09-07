@@ -11,6 +11,29 @@ const outPath = path.join(root, 'src', 'data', 'identify-index.json');
 const DHASH_WIDTH = 9;
 const DHASH_HEIGHT = 8;
 
+function resizeGreyscale(src, srcWidth, srcHeight, destWidth, destHeight) {
+  const out = new Uint8Array(destWidth * destHeight);
+  for (let y = 0; y < destHeight; y++) {
+    for (let x = 0; x < destWidth; x++) {
+      const sx = ((x + 0.5) * srcWidth) / destWidth - 0.5;
+      const sy = ((y + 0.5) * srcHeight) / destHeight - 0.5;
+      const x0 = Math.max(0, Math.min(srcWidth - 1, Math.floor(sx)));
+      const y0 = Math.max(0, Math.min(srcHeight - 1, Math.floor(sy)));
+      const x1 = Math.min(x0 + 1, srcWidth - 1);
+      const y1 = Math.min(y0 + 1, srcHeight - 1);
+      const fx = sx - x0;
+      const fy = sy - y0;
+      const v =
+        src[y0 * srcWidth + x0] * (1 - fx) * (1 - fy) +
+        src[y0 * srcWidth + x1] * fx * (1 - fy) +
+        src[y1 * srcWidth + x0] * (1 - fx) * fy +
+        src[y1 * srcWidth + x1] * fx * fy;
+      out[y * destWidth + x] = Math.round(v);
+    }
+  }
+  return out;
+}
+
 function dhashFromGreyscale(pixels) {
   let bits = 0n;
   for (let y = 0; y < DHASH_HEIGHT; y++) {
@@ -30,13 +53,13 @@ function publicImageToSource(publicPath) {
 }
 
 async function hashFile(filePath) {
-  const { data } = await sharp(filePath)
-    .rotate()
-    .greyscale()
-    .resize(DHASH_WIDTH, DHASH_HEIGHT, { fit: 'fill' })
-    .raw()
-    .toBuffer({ resolveWithObject: true });
-  return dhashFromGreyscale(data);
+  const { data, info } = await sharp(filePath).rotate().ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const grey = new Uint8Array(info.width * info.height);
+  for (let i = 0, p = 0; i < grey.length; i++, p += 4) {
+    grey[i] = Math.round(0.299 * data[p] + 0.587 * data[p + 1] + 0.114 * data[p + 2]);
+  }
+  const small = resizeGreyscale(grey, info.width, info.height, DHASH_WIDTH, DHASH_HEIGHT);
+  return dhashFromGreyscale(small);
 }
 
 function unescape(value) {

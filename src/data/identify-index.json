@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T19:31:19.074Z",
+  "generatedAt": "2026-09-07T20:16:24.228Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
       "pieceId": "5-dolares-laurier",
       "face": "front",
-      "hash": "716d0d755b37373b",
+      "hash": "006f3b00001d1700",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
@@ -19,7 +19,7 @@
     {
       "pieceId": "5-dolares-laurier",
       "face": "front",
-      "hash": "0051654f2d0d7500",
+      "hash": "009e1b2b291b5200",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
@@ -32,7 +32,7 @@
     {
       "pieceId": "5-dolares-laurier",
       "face": "back",
-      "hash": "00311b3537333900",
+      "hash": "002d4b3733312f00",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
@@ -45,7 +45,7 @@
     {
       "pieceId": "100-yuan",
       "face": "front",
-      "hash": "160e8e16069e9e16",
+      "hash": "120e0a0e1e1a1e06",
       "kind": "banknote",
       "path": "/coleccion/china/100-yuan/",
       "pick": "P#902",
@@ -58,7 +58,7 @@
     {
       "pieceId": "100-yuan",
       "face": "front",
-      "hash": "06160e0e8e8e160e",
+      "hash": "00222a162e0e2600",
       "kind": "banknote",
       "path": "/coleccion/china/100-yuan/",
       "pick": "P#902",
@@ -71,7 +71,7 @@
     {
       "pieceId": "100-yuan",
       "face": "back",
-      "hash": "1e16069e9e9e9e06",
+      "hash": "00160e0e0e0e1e00",
       "kind": "banknote",
       "path": "/coleccion/china/100-yuan/",
       "pick": "P#902",
@@ -84,7 +84,7 @@
     {
       "pieceId": "5-pesos-banco-hipotecario-1881",
       "face": "front",
-      "hash": "3b17172b3b17172b",
+      "hash": "610b1751450b1755",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
       "pick": "P# S511p1 / S511p2",
@@ -97,7 +97,7 @@
     {
       "pieceId": "5-pesos-banco-hipotecario-1881",
       "face": "front",
-      "hash": "071b1b0717172b33",
+      "hash": "0033230f17131300",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
       "pick": "P# S511p1 / S511p2",
@@ -110,7 +110,7 @@
     {
       "pieceId": "5-pesos-banco-hipotecario-1881",
       "face": "back",
-      "hash": "073b171717172b03",
+      "hash": "001927171f1b0700",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-banco-hipotecario-1881/",
       "pick": "P# S511p1 / S511p2",
@@ -123,7 +123,7 @@
     {
       "pieceId": "5-pesos-rio-hacha-1883",
       "face": "front",
-      "hash": "790f0b137913130f",
+      "hash": "05092b452d2b2b33",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-rio-hacha-1883/",
       "pick": "P# S819p1 / S819p2",
@@ -136,7 +136,7 @@
     {
       "pieceId": "5-pesos-rio-hacha-1883",
       "face": "front",
-      "hash": "13796d1b0f0b136d",
+      "hash": "00392115132b0100",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-rio-hacha-1883/",
       "pick": "P# S819p1 / S819p2",
@@ -149,7 +149,7 @@
     {
       "pieceId": "5-pesos-rio-hacha-1883",
       "face": "back",
-      "hash": "31791f1313131b61",
+      "hash": "0031652b332b3700",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-rio-hacha-1883/",
       "pick": "P# S819p1 / S819p2",
@@ -162,7 +162,7 @@
     {
       "pieceId": "1-peso-tolima-1901",
       "face": "front",
-      "hash": "610f8f1f610f0f07",
+      "hash": "000b0f00000e2600",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-tolima-1901/",
       "pick": "Cód. 1242",
@@ -175,7 +175,7 @@
     {
       "pieceId": "1-peso-tolima-1901",
       "face": "front",
-      "hash": "0461078f8f170f00",
+      "hash": "0041050b0f134400",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-tolima-1901/",
       "pick": "Cód. 1242",
@@ -188,7 +188,7 @@
     {
       "pieceId": "1-peso-tolima-1901",
       "face": "back",
-      "hash": "08611f0f0f0f0f00",
+      "hash": "00061a0e2e0e1e00",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-tolima-1901/",
       "pick": "Cód. 1242",
@@ -201,7 +201,7 @@
     {
       "pieceId": "1-peso-oro-1945",
       "face": "front",
-      "hash": "632f2b190b23231b",
+      "hash": "215557a121373ba1",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1945/",
       "pick": "P# 380d · TBB B922f",
@@ -214,7 +214,7 @@
     {
       "pieceId": "1-peso-oro-1945",
       "face": "front",
-      "hash": "80036f2d2b3b0f80",
+      "hash": "0a00670b4b590114",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1945/",
       "pick": "P# 380d · TBB B922f",
@@ -227,7 +227,7 @@
     {
       "pieceId": "1-peso-oro-1945",
       "face": "back",
-      "hash": "80230b23231b3380",
+      "hash": "0a9b3b1733331594",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1945/",
       "pick": "P# 380d · TBB B922f",
@@ -240,7 +240,7 @@
     {
       "pieceId": "1-peso-oro-1954",
       "face": "front",
-      "hash": "23273b09012b2b31",
+      "hash": "00271b0000092500",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1954/",
       "pick": "P# 380g · TBB B922k",
@@ -253,7 +253,7 @@
     {
       "pieceId": "1-peso-oro-1954",
       "face": "front",
-      "hash": "000b27273b3b0700",
+      "hash": "00ca6d135b5d1700",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1954/",
       "pick": "P# 380g · TBB B922k",
@@ -266,7 +266,7 @@
     {
       "pieceId": "1-peso-oro-1954",
       "face": "back",
-      "hash": "00230b2b2f2b6d00",
+      "hash": "002623272d297000",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1954/",
       "pick": "P# 380g · TBB B922k",
@@ -279,7 +279,7 @@
     {
       "pieceId": "1-peso-oro-1973-26530968",
       "face": "front",
-      "hash": "550b2b510f692b86",
+      "hash": "032b4d01034d0b01",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
@@ -292,7 +292,7 @@
     {
       "pieceId": "1-peso-oro-1973-26530968",
       "face": "front",
-      "hash": "00554d2b2b714900",
+      "hash": "98325d492973e0b2",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
@@ -305,7 +305,7 @@
     {
       "pieceId": "1-peso-oro-1973-26530968",
       "face": "back",
-      "hash": "300d4b692b0f4900",
+      "hash": "98c413654d4da481",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
@@ -318,7 +318,7 @@
     {
       "pieceId": "2-pesos-oro-1944",
       "face": "front",
-      "hash": "072b2b0b2b0f3333",
+      "hash": "00496900002b1700",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390b · TBB B923c",
@@ -331,7 +331,7 @@
     {
       "pieceId": "2-pesos-oro-1944",
       "face": "front",
-      "hash": "002b2f2b2b0f3300",
+      "hash": "00615563694d3500",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390b · TBB B923c",
@@ -344,7 +344,7 @@
     {
       "pieceId": "2-pesos-oro-1944",
       "face": "back",
-      "hash": "00332b0f17332f00",
+      "hash": "000f1f072b176000",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390b · TBB B923c",
@@ -357,7 +357,7 @@
     {
       "pieceId": "2-pesos-oro-1955",
       "face": "front",
-      "hash": "2d2f0f2d730f2b73",
+      "hash": "0053690000275700",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390d · TBB B923g",
@@ -370,7 +370,7 @@
     {
       "pieceId": "2-pesos-oro-1955",
       "face": "front",
-      "hash": "002b2f2b0f0f3b00",
+      "hash": "00565d2b5b2d9900",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390d · TBB B923g",
@@ -383,7 +383,7 @@
     {
       "pieceId": "2-pesos-oro-1955",
       "face": "back",
-      "hash": "00332b0f37334d00",
+      "hash": "00004b2b57670000",
       "kind": "banknote",
       "path": "/coleccion/colombia/2-pesos-oro-1944/",
       "pick": "P# 390d · TBB B923g",
@@ -396,7 +396,7 @@
     {
       "pieceId": "10-pesos-oro-1943",
       "face": "front",
-      "hash": "6d1b1307790f0733",
+      "hash": "652b0b21579696c0",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1943/",
       "pick": "P# 389b",
@@ -409,7 +409,7 @@
     {
       "pieceId": "10-pesos-oro-1943",
       "face": "front",
-      "hash": "076d3b3b13332741",
+      "hash": "0069350703034500",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1943/",
       "pick": "P# 389b",
@@ -422,7 +422,7 @@
     {
       "pieceId": "10-pesos-oro-1943",
       "face": "back",
-      "hash": "7d69330f0f333349",
+      "hash": "0051c48a3eb6c000",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1943/",
       "pick": "P# 389b",
@@ -435,7 +435,7 @@
     {
       "pieceId": "5-pesos-oro-1960",
       "face": "front",
-      "hash": "1771716917332b09",
+      "hash": "0167732102332d01",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1960/",
       "pick": "P# 405s",
@@ -448,7 +448,7 @@
     {
       "pieceId": "5-pesos-oro-1960",
       "face": "front",
-      "hash": "8013717519716580",
+      "hash": "8803372533591512",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1960/",
       "pick": "P# 405s",
@@ -461,7 +461,7 @@
     {
       "pieceId": "5-pesos-oro-1960",
       "face": "back",
-      "hash": "600d173b2b2b4d80",
+      "hash": "08101f6b6d439292",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1960/",
       "pick": "P# 405s",
@@ -474,7 +474,7 @@
     {
       "pieceId": "5-pesos-oro-1979-00141180",
       "face": "front",
-      "hash": "094b3b410a2b331d",
+      "hash": "a2514900252b3303",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
       "pick": "",
@@ -487,7 +487,7 @@
     {
       "pieceId": "5-pesos-oro-1979-00141180",
       "face": "front",
-      "hash": "00030b5b2b130100",
+      "hash": "0080695b2b658900",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
       "pick": "",
@@ -500,7 +500,7 @@
     {
       "pieceId": "5-pesos-oro-1979-00141180",
       "face": "back",
-      "hash": "400b2b2b33136100",
+      "hash": "0101271b37174101",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
       "pick": "",
@@ -513,7 +513,7 @@
     {
       "pieceId": "5-pesos-oro-1980",
       "face": "front",
-      "hash": "5b0333130f2b331f",
+      "hash": "151b3b4101291345",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1980/",
       "pick": "P# 406f · TBB B949p",
@@ -526,7 +526,7 @@
     {
       "pieceId": "5-pesos-oro-1980",
       "face": "front",
-      "hash": "08271b2323330b40",
+      "hash": "25412b0b2f0b2511",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1980/",
       "pick": "P# 406f · TBB B949p",
@@ -539,7 +539,7 @@
     {
       "pieceId": "5-pesos-oro-1980",
       "face": "back",
-      "hash": "000b0f6b331f2700",
+      "hash": "09214b69652f0711",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1980/",
       "pick": "P# 406f · TBB B949p",
@@ -552,7 +552,7 @@
     {
       "pieceId": "10-pesos-oro-1976",
       "face": "front",
-      "hash": "07273b2f494f0f3b",
+      "hash": "00496b0022557511",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1976/",
       "pick": "P# 407f · TBB B950kr",
@@ -565,7 +565,7 @@
     {
       "pieceId": "10-pesos-oro-1976",
       "face": "front",
-      "hash": "000b2733333b2f00",
+      "hash": "003b933b3955d000",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1976/",
       "pick": "P# 407f · TBB B950kr",
@@ -578,7 +578,7 @@
     {
       "pieceId": "10-pesos-oro-1976",
       "face": "back",
-      "hash": "800b4b070f2b1780",
+      "hash": "0a004d15050ddc10",
       "kind": "banknote",
       "path": "/coleccion/colombia/10-pesos-oro-1976/",
       "pick": "P# 407f · TBB B950kr",
@@ -591,7 +591,7 @@
     {
       "pieceId": "1000-pesos-oro-1979",
       "face": "front",
-      "hash": "3203036395373729",
+      "hash": "0057050000151f00",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-oro-1979/",
       "pick": "P# 421a · TBB B963a",
@@ -604,7 +604,7 @@
     {
       "pieceId": "1000-pesos-oro-1979",
       "face": "front",
-      "hash": "0031330707236300",
+      "hash": "0008275103631500",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-oro-1979/",
       "pick": "P# 421a · TBB B963a",
@@ -617,7 +617,7 @@
     {
       "pieceId": "1000-pesos-oro-1979",
       "face": "back",
-      "hash": "000d37371f336b00",
+      "hash": "00a23425172b6c00",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-oro-1979/",
       "pick": "P# 421a · TBB B963a",
@@ -630,7 +630,7 @@
     {
       "pieceId": "2000-pesos-oro-1983",
       "face": "front",
-      "hash": "693f1b17612b2b1b",
+      "hash": "00313b0000212f00",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-oro-1983/",
       "pick": "P# 430as",
@@ -643,7 +643,7 @@
     {
       "pieceId": "2000-pesos-oro-1983",
       "face": "front",
-      "hash": "0379691f0b1b1700",
+      "hash": "0029211b3b1b2700",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-oro-1983/",
       "pick": "P# 430as",
@@ -656,7 +656,7 @@
     {
       "pieceId": "2000-pesos-oro-1983",
       "face": "back",
-      "hash": "00312b1b2b2f1700",
+      "hash": "002d491b2b270300",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-oro-1983/",
       "pick": "P# 430as",
@@ -669,7 +669,7 @@
     {
       "pieceId": "10000-pesos-1994",
       "face": "front",
-      "hash": "1f43433d434d5d53",
+      "hash": "a12b8321212f35a1",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -682,7 +682,7 @@
     {
       "pieceId": "10000-pesos-1994",
       "face": "front",
-      "hash": "801f0f4343433d80",
+      "hash": "08330f82c7557310",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -695,7 +695,7 @@
     {
       "pieceId": "10000-pesos-1994",
       "face": "back",
-      "hash": "80434f6d6d5d4380",
+      "hash": "0a50572d555b1914",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -708,7 +708,7 @@
     {
       "pieceId": "10000-pesos-1994-00113227",
       "face": "front",
-      "hash": "1f43433d434d5d53",
+      "hash": "a12b8321212f35a1",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -721,7 +721,7 @@
     {
       "pieceId": "10000-pesos-1994-00113227",
       "face": "front",
-      "hash": "801f0f4343433d80",
+      "hash": "08330f82c7557310",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -734,7 +734,7 @@
     {
       "pieceId": "10000-pesos-1994-00113227",
       "face": "back",
-      "hash": "80434f6d6d5d4380",
+      "hash": "0a50572d555b1914",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -747,7 +747,7 @@
     {
       "pieceId": "10000-pesos-1994-00249902",
       "face": "front",
-      "hash": "1d434339472d0d09",
+      "hash": "11534121122d5520",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -760,7 +760,7 @@
     {
       "pieceId": "10000-pesos-1994-00249902",
       "face": "front",
-      "hash": "80190b4343091980",
+      "hash": "8ac01743432dc080",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -773,7 +773,7 @@
     {
       "pieceId": "10000-pesos-1994-00249902",
       "face": "back",
-      "hash": "80430f2d2d4d0b80",
+      "hash": "084b2947671d5b80",
       "kind": "banknote",
       "path": "/coleccion/colombia/10000-pesos-1994/",
       "pick": "P# 437A · TBB B980az",
@@ -786,7 +786,7 @@
     {
       "pieceId": "2000-pesos-2008",
       "face": "front",
-      "hash": "110303132d2f0f07",
+      "hash": "00174300003f1700",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2008/",
       "pick": "P# 457",
@@ -799,7 +799,7 @@
     {
       "pieceId": "2000-pesos-2008",
       "face": "front",
-      "hash": "0003130303030b00",
+      "hash": "005907030b077000",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2008/",
       "pick": "P# 457",
@@ -812,7 +812,7 @@
     {
       "pieceId": "2000-pesos-2008",
       "face": "back",
-      "hash": "00052f2f0f0f0f00",
+      "hash": "00b02d2f0d179000",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2008/",
       "pick": "P# 457",
@@ -825,7 +825,7 @@
     {
       "pieceId": "20000-pesos-2017-AF51355141",
       "face": "front",
-      "hash": "47070767511f0f43",
+      "hash": "000b5700005b1b00",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
       "pick": "",
@@ -838,7 +838,7 @@
     {
       "pieceId": "20000-pesos-2017-AF51355141",
       "face": "front",
-      "hash": "0047471707474700",
+      "hash": "0031450b0b475400",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
       "pick": "",
@@ -851,7 +851,7 @@
     {
       "pieceId": "20000-pesos-2017-AF51355141",
       "face": "back",
-      "hash": "00433f3f0f2f5300",
+      "hash": "00805d571f179400",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
       "pick": "",
@@ -864,7 +864,7 @@
     {
       "pieceId": "2000-pesos-2015-AA40000066",
       "face": "front",
-      "hash": "27070327531f1f17",
+      "hash": "0157470001b58500",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2015/",
       "pick": "P# 458a / TBB B993a",
@@ -877,7 +877,7 @@
     {
       "pieceId": "2000-pesos-2015-AA40000066",
       "face": "front",
-      "hash": "0245270303072700",
+      "hash": "02913347572b1110",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2015/",
       "pick": "",
@@ -890,7 +890,7 @@
     {
       "pieceId": "2000-pesos-2015-AA40000066",
       "face": "back",
-      "hash": "400d371f1f1f2700",
+      "hash": "02d02795bd972500",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2015/",
       "pick": "",
@@ -903,7 +903,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos",
       "face": "front",
-      "hash": "4113130361072303",
+      "hash": "100a120208231331",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢",
@@ -916,7 +916,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos",
       "face": "front",
-      "hash": "0141030313130303",
+      "hash": "4208001a06121610",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢",
@@ -929,7 +929,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos",
       "face": "back",
-      "hash": "5141052723230711",
+      "hash": "092000230b1b0bd0",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢",
@@ -942,7 +942,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-verde",
       "face": "front",
-      "hash": "4113130361072303",
+      "hash": "100a120208231331",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ verde",
@@ -955,7 +955,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-verde",
       "face": "front",
-      "hash": "0141030313130303",
+      "hash": "4208001a06121610",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ verde",
@@ -968,7 +968,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-verde",
       "face": "back",
-      "hash": "5141052723230711",
+      "hash": "092000230b1b0bd0",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ verde",
@@ -981,7 +981,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-rojo",
       "face": "front",
-      "hash": "254d4e25430d0d4b",
+      "hash": "4c4a5244551d1d07",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ rojo",
@@ -994,7 +994,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-rojo",
       "face": "front",
-      "hash": "25214d4d5a4e252d",
+      "hash": "11526a4a46766a90",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ rojo",
@@ -1007,7 +1007,7 @@
     {
       "pieceId": "tiquete-estudiantil-15-centavos-rojo",
       "face": "back",
-      "hash": "4f734d0d0d0d4b67",
+      "hash": "08d36985a59545a8",
       "kind": "banknote",
       "path": "/coleccion/colombia/tiquete-estudiantil-15-centavos/",
       "pick": "MEN · 15¢ rojo",
@@ -1020,7 +1020,7 @@
     {
       "pieceId": "1000-pesos-error-2008",
       "face": "front",
-      "hash": "27030717010f0f0f",
+      "hash": "0053170000170700",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2008/",
       "pick": "P# 456 / TBB B986",
@@ -1033,7 +1033,7 @@
     {
       "pieceId": "1000-pesos-error-2008",
       "face": "front",
-      "hash": "0027030307071700",
+      "hash": "00af6b531755b000",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2008/",
       "pick": "P# 456 / TBB B986",
@@ -1046,7 +1046,7 @@
     {
       "pieceId": "1000-pesos-error-2008",
       "face": "back",
-      "hash": "0041070f0f0f0f00",
+      "hash": "002113070d170000",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2008/",
       "pick": "P# 456 / TBB B986",
@@ -1059,7 +1059,7 @@
     {
       "pieceId": "50000-pesos-error-2008",
       "face": "front",
-      "hash": "0c4d4d4c0c4d4d4c",
+      "hash": "0c140c0c141c0c1c",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2008/",
       "pick": "P# 455l / TBB B992l",
@@ -1072,7 +1072,7 @@
     {
       "pieceId": "50000-pesos-error-2008",
       "face": "front",
-      "hash": "0c4c4d4d4d4d4d0c",
+      "hash": "18040c0c040c0c04",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2008/",
       "pick": "P# 455l / TBB B992l",
@@ -1085,7 +1085,7 @@
     {
       "pieceId": "50000-pesos-error-2008",
       "face": "back",
-      "hash": "0c4c4d4d4d4d4d0c",
+      "hash": "140c0414140c1404",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2008/",
       "pick": "P# 455l / TBB B992l",
@@ -1098,7 +1098,7 @@
     {
       "pieceId": "1000-pesos-error-2011",
       "face": "front",
-      "hash": "01030707600f0f07",
+      "hash": "00221e00002f0700",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2011/",
       "pick": "P# 456n / TBB B986n",
@@ -1111,7 +1111,7 @@
     {
       "pieceId": "1000-pesos-error-2011",
       "face": "front",
-      "hash": "0301130317070700",
+      "hash": "0001151606065200",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2011/",
       "pick": "P# 456n / TBB B986n",
@@ -1124,7 +1124,7 @@
     {
       "pieceId": "1000-pesos-error-2011",
       "face": "back",
-      "hash": "05604f0f0f070700",
+      "hash": "004041370f170f00",
       "kind": "banknote",
       "path": "/coleccion/colombia/1000-pesos-error-2011/",
       "pick": "P# 456n / TBB B986n",
@@ -1137,7 +1137,7 @@
     {
       "pieceId": "50000-pesos-error-2015",
       "face": "front",
-      "hash": "67170367416d0f07",
+      "hash": "000d0700004a5e00",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2015/",
       "pick": "P# 462a / TBB B997a",
@@ -1150,7 +1150,7 @@
     {
       "pieceId": "50000-pesos-error-2015-AB69350427",
       "face": "front",
-      "hash": "0047371713435700",
+      "hash": "00a255150d212100",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2015/",
       "pick": "P# 462a / TBB B997a",
@@ -1163,7 +1163,7 @@
     {
       "pieceId": "50000-pesos-error-2015-AB69350427",
       "face": "back",
-      "hash": "00457d2d2e1f0d00",
+      "hash": "00216a3e0e669f00",
       "kind": "banknote",
       "path": "/coleccion/colombia/50000-pesos-error-2015/",
       "pick": "P# 462a / TBB B997a",
@@ -1176,7 +1176,7 @@
     {
       "pieceId": "5-libras-churchill",
       "face": "front",
-      "hash": "2ccc333333333d2c",
+      "hash": "a84a2b8d098baa0d",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/",
       "pick": "P#394 · BNB B203a",
@@ -1189,7 +1189,7 @@
     {
       "pieceId": "5-libras-churchill",
       "face": "front",
-      "hash": "0960330303072300",
+      "hash": "4a22236727376704",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/",
       "pick": "P#394 · BNB B203a",
@@ -1202,7 +1202,7 @@
     {
       "pieceId": "5-libras-churchill",
       "face": "back",
-      "hash": "0cc01b0f0f1f2788",
+      "hash": "0a140f4f4f2b4800",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/",
       "pick": "P#394 · BNB B203a",
@@ -1215,7 +1215,7 @@
     {
       "pieceId": "1-dolar-trump-1776-2026",
       "face": "front",
-      "hash": "3333517171313333",
+      "hash": "007177d0b3736100",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/",
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
@@ -1228,7 +1228,7 @@
     {
       "pieceId": "1-dolar-trump-1776-2026",
       "face": "front",
-      "hash": "4e0f3315550f0f4e",
+      "hash": "002e69360c4d3600",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/",
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
@@ -1241,7 +1241,7 @@
     {
       "pieceId": "1-dolar-trump-1776-2026",
       "face": "back",
-      "hash": "8c0f434d530b0f8c",
+      "hash": "0026535b6b551a00",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/",
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
@@ -1254,7 +1254,7 @@
     {
       "pieceId": "5-dolares-continental-1779",
       "face": "front",
-      "hash": "17969607710e8e17",
+      "hash": "2035254884070788",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-continental-1779/",
       "pick": "Fr. CC-91",
@@ -1267,7 +1267,7 @@
     {
       "pieceId": "5-dolares-continental-1779",
       "face": "front",
-      "hash": "611d969696961761",
+      "hash": "08510d1d2d0d1108",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-continental-1779/",
       "pick": "Fr. CC-91",
@@ -1280,7 +1280,7 @@
     {
       "pieceId": "5-dolares-continental-1779",
       "face": "back",
-      "hash": "8271078e8e861720",
+      "hash": "0812470f055794a8",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-continental-1779/",
       "pick": "Fr. CC-91",
@@ -1293,7 +1293,7 @@
     {
       "pieceId": "1-dolar-state-bank-new-brunswick",
       "face": "front",
-      "hash": "1169694da82b2b49",
+      "hash": "00657100002b2b00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
       "pick": "Haxby NJ-350 G16a · N#334975",
@@ -1306,7 +1306,7 @@
     {
       "pieceId": "1-dolar-state-bank-new-brunswick",
       "face": "front",
-      "hash": "0005696969694d00",
+      "hash": "00006569554d0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
       "pick": "Haxby NJ-350 G16a · N#334975",
@@ -1319,7 +1319,7 @@
     {
       "pieceId": "1-dolar-state-bank-new-brunswick",
       "face": "back",
-      "hash": "00452b33232b5500",
+      "hash": "00002b53330f0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/",
       "pick": "Haxby NJ-350 G16a · N#334975",
@@ -1332,7 +1332,7 @@
     {
       "pieceId": "5-dolares-city-bank-new-haven",
       "face": "front",
-      "hash": "411d4d4980410541",
+      "hash": "00594d0000410500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
       "pick": "Haxby CT-265 G52b",
@@ -1345,7 +1345,7 @@
     {
       "pieceId": "5-dolares-city-bank-new-haven",
       "face": "front",
-      "hash": "0801590d054d4982",
+      "hash": "000159916b6b7300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
       "pick": "Haxby CT-265 G52b",
@@ -1358,7 +1358,7 @@
     {
       "pieceId": "5-dolares-city-bank-new-haven",
       "face": "back",
-      "hash": "0081414505054100",
+      "hash": "008145070b496500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-city-bank-new-haven/",
       "pick": "Haxby CT-265 G52b",
@@ -1371,7 +1371,7 @@
     {
       "pieceId": "50-dolares-canal-bank-nueva-orleans",
       "face": "front",
-      "hash": "554d4d49450f0f4d",
+      "hash": "002f2500000b1700",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/",
       "pick": "Haxby LA-105 G46a · N#206863",
@@ -1384,7 +1384,7 @@
     {
       "pieceId": "50-dolares-canal-bank-nueva-orleans",
       "face": "front",
-      "hash": "00554d4d554d4d00",
+      "hash": "0000452f354b0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/",
       "pick": "Haxby LA-105 G46a · N#206863",
@@ -1397,7 +1397,7 @@
     {
       "pieceId": "50-dolares-canal-bank-nueva-orleans",
       "face": "back",
-      "hash": "00554d0f174d4900",
+      "hash": "00492d23276d7400",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/",
       "pick": "Haxby LA-105 G46a · N#206863",
@@ -1410,7 +1410,7 @@
     {
       "pieceId": "5-dolares-confederados-1864",
       "face": "front",
-      "hash": "494d494125616969",
+      "hash": "004d590000295500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-confederados-1864/",
       "pick": "P#67 · T-69 · N#226718",
@@ -1423,7 +1423,7 @@
     {
       "pieceId": "5-dolares-confederados-1864",
       "face": "front",
-      "hash": "0071494d49496400",
+      "hash": "00004d5355590000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-confederados-1864/",
       "pick": "P#67 · T-69 · N#226718",
@@ -1436,7 +1436,7 @@
     {
       "pieceId": "5-dolares-confederados-1864",
       "face": "back",
-      "hash": "0061697171617900",
+      "hash": "0003757355292000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-confederados-1864/",
       "pick": "P#67 · T-69 · N#226718",
@@ -1449,7 +1449,7 @@
     {
       "pieceId": "20-dolares-confederados-1864",
       "face": "front",
-      "hash": "21614d69132b2b01",
+      "hash": "00592d0000171500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-confederados-1864/",
       "pick": "P#69 · T-67 · N#202478",
@@ -1462,7 +1462,7 @@
     {
       "pieceId": "20-dolares-confederados-1864",
       "face": "front",
-      "hash": "0045614d4d4d7900",
+      "hash": "00346b49436d7400",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-confederados-1864/",
       "pick": "P#69 · T-67 · N#202478",
@@ -1475,7 +1475,7 @@
     {
       "pieceId": "20-dolares-confederados-1864",
       "face": "back",
-      "hash": "0047332b2b2b2100",
+      "hash": "00e0595713593b00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-confederados-1864/",
       "pick": "P#69 · T-67 · N#202478",
@@ -1488,7 +1488,7 @@
     {
       "pieceId": "100-dolares-confederados-1862",
       "face": "front",
-      "hash": "4c0e44780d494113",
+      "hash": "228a650808cde491",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/100-dolares-confederados-1862/",
       "pick": "P#44 · T-40 · N#208004",
@@ -1501,7 +1501,7 @@
     {
       "pieceId": "100-dolares-confederados-1862",
       "face": "front",
-      "hash": "014c1c1647647100",
+      "hash": "887ca3525e61f482",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/100-dolares-confederados-1862/",
       "pick": "P#44 · T-40 · N#208004",
@@ -1514,7 +1514,7 @@
     {
       "pieceId": "100-dolares-confederados-1862",
       "face": "back",
-      "hash": "114d494161595300",
+      "hash": "90fd4d8549e9a284",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/100-dolares-confederados-1862/",
       "pick": "P#44 · T-40 · N#208004",
@@ -1527,7 +1527,7 @@
     {
       "pieceId": "10-dolares-serie-1934-chicago",
       "face": "front",
-      "hash": "33494d51332d2d33",
+      "hash": "006b0900002b2d00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934-chicago/",
       "pick": "P#430 · Fr. 2004-G",
@@ -1540,7 +1540,7 @@
     {
       "pieceId": "10-dolares-serie-1934-chicago",
       "face": "front",
-      "hash": "00352b494d493300",
+      "hash": "00006b2d4b6d0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934-chicago/",
       "pick": "P#430 · Fr. 2004-G",
@@ -1553,7 +1553,7 @@
     {
       "pieceId": "10-dolares-serie-1934-chicago",
       "face": "back",
-      "hash": "0017394d4d293700",
+      "hash": "0015234545754f00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934-chicago/",
       "pick": "P#430 · Fr. 2004-G",
@@ -1566,7 +1566,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-chicago",
       "face": "front",
-      "hash": "336d4d3d336d4d2b",
+      "hash": "002b6d0000395f00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/",
       "pick": "P#430Da · Fr. 2006-G",
@@ -1579,7 +1579,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-chicago",
       "face": "front",
-      "hash": "00172b6d4d6d1300",
+      "hash": "005169552b692400",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/",
       "pick": "P#430Da · Fr. 2006-G",
@@ -1592,7 +1592,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-chicago",
       "face": "back",
-      "hash": "0045334d4d2b1f00",
+      "hash": "0055335d653b1100",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/",
       "pick": "P#430Da · Fr. 2006-G",
@@ -1605,7 +1605,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-cleveland",
       "face": "front",
-      "hash": "514d4d4d336d4d79",
+      "hash": "00292d0000794d00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/",
       "pick": "P#430Da · Fr. 2006-D",
@@ -1618,7 +1618,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-cleveland",
       "face": "front",
-      "hash": "00656d4d2f4d5100",
+      "hash": "0094656a2b6d7b00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/",
       "pick": "P#430Da · Fr. 2006-D",
@@ -1631,7 +1631,7 @@
     {
       "pieceId": "10-dolares-serie-1934a-cleveland",
       "face": "back",
-      "hash": "005f794d4d6d7d00",
+      "hash": "00a2715d466dd500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/",
       "pick": "P#430Da · Fr. 2006-D",
@@ -1644,7 +1644,7 @@
     {
       "pieceId": "10-dolares-serie-1934d-richmond",
       "face": "front",
-      "hash": "332d4d51337d4d33",
+      "hash": "000b4d00007b3d00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/",
       "pick": "P#430Dd · Fr. 2009-E",
@@ -1657,7 +1657,7 @@
     {
       "pieceId": "10-dolares-serie-1934d-richmond",
       "face": "front",
-      "hash": "00152b4d4d6d3300",
+      "hash": "00002b6535550000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/",
       "pick": "P#430Dd · Fr. 2009-E",
@@ -1670,7 +1670,7 @@
     {
       "pieceId": "10-dolares-serie-1934d-richmond",
       "face": "back",
-      "hash": "0037314d5d697700",
+      "hash": "005523494d0b6500",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/",
       "pick": "P#430Dd · Fr. 2009-E",
@@ -1683,7 +1683,7 @@
     {
       "pieceId": "500-dolares-serie-1934a-nueva-york",
       "face": "front",
-      "hash": "556d4d0f606d4d33",
+      "hash": "59336945e26f6914",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/",
       "pick": "P#434a · Fr. 2202-B",
@@ -1696,7 +1696,7 @@
     {
       "pieceId": "500-dolares-serie-1934a-nueva-york",
       "face": "front",
-      "hash": "035d396d4d4d3bc0",
+      "hash": "04508c4b494da882",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/",
       "pick": "P#434a · Fr. 2202-B",
@@ -1709,7 +1709,7 @@
     {
       "pieceId": "500-dolares-serie-1934a-nueva-york",
       "face": "back",
-      "hash": "6569334d4d4d33c0",
+      "hash": "28f0ca4f4d575d10",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/",
       "pick": "P#434a · Fr. 2202-B",
@@ -1722,7 +1722,7 @@
     {
       "pieceId": "1-dolar-serie-2003-atlanta",
       "face": "front",
-      "hash": "714d4d550f31330d",
+      "hash": "0059690000373300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/",
       "pick": "P#515a · Fr. 1929-F*",
@@ -1735,7 +1735,7 @@
     {
       "pieceId": "1-dolar-serie-2003-atlanta",
       "face": "front",
-      "hash": "0071494d4d4d3300",
+      "hash": "009313290b5d8200",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/",
       "pick": "P#515a · Fr. 1929-F*",
@@ -1748,7 +1748,7 @@
     {
       "pieceId": "1-dolar-serie-2003-atlanta",
       "face": "back",
-      "hash": "0009337133334d00",
+      "hash": "00002b7b352b0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/",
       "pick": "P#515a · Fr. 1929-F*",
@@ -1761,7 +1761,7 @@
     {
       "pieceId": "1-dolar-certificado-plata-1957b",
       "face": "front",
-      "hash": "494d4d4d3333333b",
+      "hash": "61616b711579211b",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/",
       "pick": "P#419b · Fr. 1621",
@@ -1774,7 +1774,7 @@
     {
       "pieceId": "1-dolar-certificado-plata-1957b",
       "face": "front",
-      "hash": "334d4d4d4b4d4d73",
+      "hash": "735b696d6b4b4567",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/",
       "pick": "P#419b · Fr. 1621",
@@ -1787,7 +1787,7 @@
     {
       "pieceId": "1-dolar-certificado-plata-1957b",
       "face": "back",
-      "hash": "3f33336b6b333339",
+      "hash": "1727294313692315",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/",
       "pick": "P#419b · Fr. 1621",
@@ -1800,7 +1800,7 @@
     {
       "pieceId": "1-dolar-serie-2006-dallas-wheres-george",
       "face": "front",
-      "hash": "0031513535357100",
+      "hash": "0001771133358100",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/",
       "pick": "P#523a · Fr. 1933-K",
@@ -1813,7 +1813,7 @@
     {
       "pieceId": "1-dolar-serie-2006-dallas-wheres-george",
       "face": "front",
-      "hash": "0007694d4f4d5500",
+      "hash": "000053492a690000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/",
       "pick": "P#523a · Fr. 1933-K",
@@ -1826,7 +1826,7 @@
     {
       "pieceId": "1-dolar-serie-2006-dallas-wheres-george",
       "face": "back",
-      "hash": "0049797373330f00",
+      "hash": "00a2557b4b4f5300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/",
       "pick": "P#523a · Fr. 1933-K",
@@ -1839,7 +1839,7 @@
     {
       "pieceId": "nota-prueba-giori-lincoln-memorial",
       "face": "front",
-      "hash": "0053337333735300",
+      "hash": "0084327232322022",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
@@ -1852,7 +1852,7 @@
     {
       "pieceId": "nota-prueba-giori-lincoln-memorial",
       "face": "front",
-      "hash": "40134d554f0f3100",
+      "hash": "224545534d2f4111",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
@@ -1865,7 +1865,7 @@
     {
       "pieceId": "nota-prueba-giori-lincoln-memorial",
       "face": "back",
-      "hash": "0027575f4f4f2900",
+      "hash": "224d1717172f2511",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
@@ -1878,7 +1878,7 @@
     {
       "pieceId": "scrip-baraboo-5-centavos-a4895",
       "face": "front",
-      "hash": "0873737133717304",
+      "hash": "a27233765393f642",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/",
       "pick": "Shafer WI100 · 5¢",
@@ -1891,7 +1891,7 @@
     {
       "pieceId": "scrip-baraboo-5-centavos-a4895",
       "face": "front",
-      "hash": "806d2727272b3980",
+      "hash": "141f23272b6d7d92",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/",
       "pick": "Shafer WI100 · 5¢",
@@ -1904,7 +1904,7 @@
     {
       "pieceId": "scrip-baraboo-5-centavos-a4895",
       "face": "back",
-      "hash": "a20d0f3b17172b80",
+      "hash": "144d2f3b0b134d92",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/",
       "pick": "Shafer WI100 · 5¢",
@@ -1917,7 +1917,7 @@
     {
       "pieceId": "scrip-baraboo-10-centavos-a2844",
       "face": "front",
-      "hash": "0424333133332104",
+      "hash": "0000537331370100",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/",
       "pick": "Shafer WI100 · 10¢",
@@ -1930,7 +1930,7 @@
     {
       "pieceId": "scrip-baraboo-10-centavos-a2844",
       "face": "front",
-      "hash": "002b273727230b00",
+      "hash": "000035352d2b0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/",
       "pick": "Shafer WI100 · 10¢",
@@ -1943,7 +1943,7 @@
     {
       "pieceId": "scrip-baraboo-10-centavos-a2844",
       "face": "back",
-      "hash": "94690f33131323c0",
+      "hash": "00e24b2b57172b00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/",
       "pick": "Shafer WI100 · 10¢",
@@ -1956,7 +1956,7 @@
     {
       "pieceId": "scrip-baraboo-15-centavos-a2819",
       "face": "front",
-      "hash": "0024337333332304",
+      "hash": "0002537133330300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/",
       "pick": "Shafer WI100 · 15¢",
@@ -1969,7 +1969,7 @@
     {
       "pieceId": "scrip-baraboo-15-centavos-a2819",
       "face": "front",
-      "hash": "002b273727030700",
+      "hash": "00002d332f3b0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/",
       "pick": "Shafer WI100 · 15¢",
@@ -1982,7 +1982,7 @@
     {
       "pieceId": "scrip-baraboo-15-centavos-a2819",
       "face": "back",
-      "hash": "88300f1713172fc0",
+      "hash": "00345e1652360600",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/",
       "pick": "Shafer WI100 · 15¢",
@@ -1995,7 +1995,7 @@
     {
       "pieceId": "scrip-baraboo-1-dolar-a2002",
       "face": "front",
-      "hash": "c131333333333104",
+      "hash": "8832155131311220",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/",
       "pick": "Shafer WI100 · $1",
@@ -2008,7 +2008,7 @@
     {
       "pieceId": "scrip-baraboo-1-dolar-a2002",
       "face": "front",
-      "hash": "500b273707070900",
+      "hash": "0046b696a6b68291",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/",
       "pick": "Shafer WI100 · $1",
@@ -2021,7 +2021,7 @@
     {
       "pieceId": "scrip-baraboo-1-dolar-a2002",
       "face": "back",
-      "hash": "05610f1717170f40",
+      "hash": "22082b3aa626a495",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/",
       "pick": "Shafer WI100 · $1",
@@ -2034,7 +2034,7 @@
     {
       "pieceId": "renci-pele-the-beautiful-game",
       "face": "front",
-      "hash": "17372b0f21071721",
+      "hash": "002b4d0000130f00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
       "pick": "Rency · 5/200",
@@ -2047,7 +2047,7 @@
     {
       "pieceId": "renci-pele-the-beautiful-game",
       "face": "front",
-      "hash": "0825372b2b0f2b00",
+      "hash": "0000536b6b250000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
       "pick": "Rency · 5/200",
@@ -2060,7 +2060,7 @@
     {
       "pieceId": "renci-pele-the-beautiful-game",
       "face": "back",
-      "hash": "0200330717370012",
+      "hash": "00002b2317330000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/pele-the-beautiful-game/",
       "pick": "Rency · 5/200",
@@ -2073,7 +2073,7 @@
     {
       "pieceId": "renci-messi-you-have-to-fight-to-reach-your-dream",
       "face": "front",
-      "hash": "69634d5d41051715",
+      "hash": "006b5d0000722300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
       "pick": "Rency · 2/222",
@@ -2086,7 +2086,7 @@
     {
       "pieceId": "renci-messi-you-have-to-fight-to-reach-your-dream",
       "face": "front",
-      "hash": "00496f67495d4d00",
+      "hash": "0000ab9956940000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
       "pick": "Rency · 2/222",
@@ -2099,7 +2099,7 @@
     {
       "pieceId": "renci-messi-you-have-to-fight-to-reach-your-dream",
       "face": "back",
-      "hash": "000105031f150100",
+      "hash": "000053071d250000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/",
       "pick": "Rency · 2/222",
@@ -2112,7 +2112,7 @@
     {
       "pieceId": "renci-warhol-basquiat-life-is-beautiful",
       "face": "front",
-      "hash": "15272b1522273722",
+      "hash": "00272b0000332f00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
       "pick": "Rency",
@@ -2125,7 +2125,7 @@
     {
       "pieceId": "renci-warhol-basquiat-life-is-beautiful",
       "face": "front",
-      "hash": "000b27270b1b1700",
+      "hash": "00002b636b150000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
       "pick": "Rency",
@@ -2138,7 +2138,7 @@
     {
       "pieceId": "renci-warhol-basquiat-life-is-beautiful",
       "face": "back",
-      "hash": "0200330f17330002",
+      "hash": "00003b27271d0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/",
       "pick": "Rency",
@@ -2151,7 +2151,7 @@
     {
       "pieceId": "renci-trump-never-surrender",
       "face": "front",
-      "hash": "4d4d4d4d0c4d4d4d",
+      "hash": "0808080808080808",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/trump-never-surrender/",
       "pick": "Rency",
@@ -2164,7 +2164,7 @@
     {
       "pieceId": "renci-trump-never-surrender",
       "face": "front",
-      "hash": "0c4d4d4d4d4d4d0c",
+      "hash": "000c080c080c0800",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/trump-never-surrender/",
       "pick": "Rency",
@@ -2177,7 +2177,7 @@
     {
       "pieceId": "renci-trump-never-surrender",
       "face": "back",
-      "hash": "0c4d4d4d4d4d4d0c",
+      "hash": "0008080808080800",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/trump-never-surrender/",
       "pick": "Rency",
@@ -2190,7 +2190,7 @@
     {
       "pieceId": "renci-life-is-beautiful-life-spray",
       "face": "front",
-      "hash": "5353753155073335",
+      "hash": "00e26a00002b3300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
       "pick": "Rency · 5/200",
@@ -2203,7 +2203,7 @@
     {
       "pieceId": "renci-life-is-beautiful-life-spray",
       "face": "front",
-      "hash": "0043533545393100",
+      "hash": "00009ba4a6ca0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
       "pick": "Rency · 5/200",
@@ -2216,7 +2216,7 @@
     {
       "pieceId": "renci-life-is-beautiful-life-spray",
       "face": "back",
-      "hash": "0049550b33376100",
+      "hash": "000025171b6b0000",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/rency/life-is-beautiful-life-spray/",
       "pick": "Rency · 5/200",
@@ -2229,7 +2229,7 @@
     {
       "pieceId": "5-ringgit-abdul-rahman",
       "face": "front",
-      "hash": "0035333333333300",
+      "hash": "00d0951353539000",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/",
       "pick": "P#52a · TBB B149a",
@@ -2242,7 +2242,7 @@
     {
       "pieceId": "5-ringgit-abdul-rahman",
       "face": "front",
-      "hash": "0013131313135300",
+      "hash": "00e1131313576800",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/",
       "pick": "P#52a · TBB B149a",
@@ -2255,7 +2255,7 @@
     {
       "pieceId": "5-ringgit-abdul-rahman",
       "face": "back",
-      "hash": "0041372b2f1f2f00",
+      "hash": "00001d2d232d0000",
       "kind": "banknote",
       "path": "/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/",
       "pick": "P#52a · TBB B149a",
@@ -2268,7 +2268,7 @@
     {
       "pieceId": "10-dolares-serie-641",
       "face": "front",
-      "hash": "4c2b2b07612b2f03",
+      "hash": "633339550b2337d1",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
       "pick": "P#M63 · Schwan 887-1",
@@ -2281,7 +2281,7 @@
     {
       "pieceId": "10-dolares-serie-641",
       "face": "front",
-      "hash": "924d6d230b273bc0",
+      "hash": "005a2855555d3b02",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
       "pick": "P#M63 · Schwan 887-1",
@@ -2294,7 +2294,7 @@
     {
       "pieceId": "10-dolares-serie-641",
       "face": "back",
-      "hash": "8e63612f2f2f17c0",
+      "hash": "4a430317172d4514",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/",
       "pick": "P#M63 · Schwan 887-1",
@@ -2307,7 +2307,7 @@
     {
       "pieceId": "5-dolares-serie-661",
       "face": "front",
-      "hash": "4d0b0b0f61230f17",
+      "hash": "69338a1b1d451a05",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/",
       "pick": "P#M69 · Schwan 906-1",
@@ -2320,7 +2320,7 @@
     {
       "pieceId": "5-dolares-serie-661",
       "face": "front",
-      "hash": "824d49230b0b0760",
+      "hash": "985515278b2b0532",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/",
       "pick": "P#M69 · Schwan 906-1",
@@ -2333,7 +2333,7 @@
     {
       "pieceId": "5-dolares-serie-661",
       "face": "back",
-      "hash": "846361332b070f41",
+      "hash": "94242123372b2ab2",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/",
       "pick": "P#M69 · Schwan 906-1",
@@ -2346,7 +2346,7 @@
     {
       "pieceId": "1-dolar-serie-681",
       "face": "front",
-      "hash": "9696969696969e96",
+      "hash": "061236260a160e3a",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
       "pick": "P#M79 · Schwan 915",
@@ -2359,7 +2359,7 @@
     {
       "pieceId": "1-dolar-serie-681",
       "face": "front",
-      "hash": "9696969696969696",
+      "hash": "320e1a1612260e02",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
       "pick": "P#M79 · Schwan 915",
@@ -2372,7 +2372,7 @@
     {
       "pieceId": "1-dolar-serie-681",
       "face": "back",
-      "hash": "9696968e9e9e9696",
+      "hash": "3616160e1e161e2a",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/",
       "pick": "P#M79 · Schwan 915",
@@ -2385,7 +2385,7 @@
     {
       "pieceId": "20-dolares-serie-692",
       "face": "front",
-      "hash": "2b0f0f2f270f2b2b",
+      "hash": "2b2d0f1b170f0b69",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
       "pick": "P#M98 · Schwan 938",
@@ -2398,7 +2398,7 @@
     {
       "pieceId": "20-dolares-serie-692",
       "face": "front",
-      "hash": "2b2b0f0f0f0f2f33",
+      "hash": "730325352b0b3761",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
       "pick": "P#M98 · Schwan 938",
@@ -2411,7 +2411,7 @@
     {
       "pieceId": "20-dolares-serie-692",
       "face": "back",
-      "hash": "13270f0f072b3329",
+      "hash": "554b0f17172b3300",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/",
       "pick": "P#M98 · Schwan 938",
@@ -2424,7 +2424,7 @@
     {
       "pieceId": "ducado-utrecht-1761",
       "face": "front",
-      "hash": "3563518c3333cb75",
+      "hash": "53171511333311c0",
       "kind": "coin",
       "path": "/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/",
       "pick": "KM# 7.4 · Fr# 285 · Delmonte G# 965 · Ver# 98.4 · HPM# Ut 27 · Numista N# 323147",
@@ -2437,7 +2437,7 @@
     {
       "pieceId": "1-peso",
       "face": "front",
-      "hash": "172f3317170f0f17",
+      "hash": "321a2a3a122a2a36",
       "kind": "banknote",
       "path": "/coleccion/filipinas/1-peso/",
       "pick": "P#94a",
@@ -2450,7 +2450,7 @@
     {
       "pieceId": "1-peso",
       "face": "front",
-      "hash": "22170f2f37331717",
+      "hash": "001a1a0e0e2a3a00",
       "kind": "banknote",
       "path": "/coleccion/filipinas/1-peso/",
       "pick": "P#94a",
@@ -2463,7 +2463,7 @@
     {
       "pieceId": "1-peso",
       "face": "back",
-      "hash": "07172b0f2f171721",
+      "hash": "36122a0e2a161200",
       "kind": "banknote",
       "path": "/coleccion/filipinas/1-peso/",
       "pick": "P#94a",
@@ -2476,7 +2476,7 @@
     {
       "pieceId": "2-pesos",
       "face": "front",
-      "hash": "2b2b2b0f330f0f2b",
+      "hash": "132f2b132b0f0f17",
       "kind": "banknote",
       "path": "/coleccion/filipinas/2-pesos/",
       "pick": "P#95a",
@@ -2489,7 +2489,7 @@
     {
       "pieceId": "2-pesos",
       "face": "front",
-      "hash": "2b2b3b2b2b2f0f2b",
+      "hash": "2b2b37232b372f2b",
       "kind": "banknote",
       "path": "/coleccion/filipinas/2-pesos/",
       "pick": "P#95a",
@@ -2502,7 +2502,7 @@
     {
       "pieceId": "2-pesos",
       "face": "back",
-      "hash": "23330f0f0f0f2b3b",
+      "hash": "031b17151513372b",
       "kind": "banknote",
       "path": "/coleccion/filipinas/2-pesos/",
       "pick": "P#95a",
@@ -2515,7 +2515,7 @@
     {
       "pieceId": "5-pesos",
       "face": "front",
-      "hash": "2b0b23230b0f0f33",
+      "hash": "3b170f3317170f2f",
       "kind": "banknote",
       "path": "/coleccion/filipinas/5-pesos/",
       "pick": "P#96a",
@@ -2528,7 +2528,7 @@
     {
       "pieceId": "5-pesos",
       "face": "front",
-      "hash": "332b0b0f23232b23",
+      "hash": "35230f0b070f170f",
       "kind": "banknote",
       "path": "/coleccion/filipinas/5-pesos/",
       "pick": "P#96a",
@@ -2541,7 +2541,7 @@
     {
       "pieceId": "5-pesos",
       "face": "back",
-      "hash": "1b0b2f0f0f2b372b",
+      "hash": "1737170f0f2b1b39",
       "kind": "banknote",
       "path": "/coleccion/filipinas/5-pesos/",
       "pick": "P#96a",
@@ -2554,7 +2554,7 @@
     {
       "pieceId": "20-pesos",
       "face": "front",
-      "hash": "1696860eb28e0e16",
+      "hash": "22161e3a22160e02",
       "kind": "banknote",
       "path": "/coleccion/filipinas/20-pesos/",
       "pick": "P#98a",
@@ -2567,7 +2567,7 @@
     {
       "pieceId": "20-pesos",
       "face": "front",
-      "hash": "2296969696868e16",
+      "hash": "00022e160e061602",
       "kind": "banknote",
       "path": "/coleccion/filipinas/20-pesos/",
       "pick": "P#98a",
@@ -2580,7 +2580,7 @@
     {
       "pieceId": "20-pesos",
       "face": "back",
-      "hash": "96b2960e0e8e1602",
+      "hash": "2e26160e0e161e00",
       "kind": "banknote",
       "path": "/coleccion/filipinas/20-pesos/",
       "pick": "P#98a",
@@ -2593,7 +2593,7 @@
     {
       "pieceId": "junta-central-cuba-1869",
       "face": "front",
-      "hash": "0031313331313100",
+      "hash": "0002553630b60100",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-cuba-1869/",
       "pick": "Recibo de contribución provisional",
@@ -2606,7 +2606,7 @@
     {
       "pieceId": "junta-central-cuba-1869",
       "face": "front",
-      "hash": "000f4b6703676300",
+      "hash": "00003b4f6b130000",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-cuba-1869/",
       "pick": "Recibo de contribución provisional",
@@ -2619,7 +2619,7 @@
     {
       "pieceId": "junta-central-cuba-1869",
       "face": "back",
-      "hash": "0023272933133900",
+      "hash": "0000274d29110100",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-cuba-1869/",
       "pick": "Recibo de contribución provisional",
@@ -2632,7 +2632,7 @@
     {
       "pieceId": "junta-central-1-peso-1869",
       "face": "front",
-      "hash": "0071717133717100",
+      "hash": "0000557333710000",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-1-peso-1869/",
       "pick": "P#61",
@@ -2645,7 +2645,7 @@
     {
       "pieceId": "junta-central-1-peso-1869",
       "face": "front",
-      "hash": "00030f0f0f1f4700",
+      "hash": "00006b0b071f0000",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-1-peso-1869/",
       "pick": "P#61",
@@ -2658,7 +2658,7 @@
     {
       "pieceId": "junta-central-1-peso-1869",
       "face": "back",
-      "hash": "00070f070f072700",
+      "hash": "00000f0f0f070000",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/junta-central-1-peso-1869/",
       "pick": "P#61",
@@ -2671,7 +2671,7 @@
     {
       "pieceId": "billete-de-canje-1-peso-1895",
       "face": "front",
-      "hash": "3573537373535171",
+      "hash": "b4935773725791f5",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/",
       "pick": "P#7b",
@@ -2684,7 +2684,7 @@
     {
       "pieceId": "billete-de-canje-1-peso-1895",
       "face": "front",
-      "hash": "2f4f352d3d357577",
+      "hash": "d4655135352d095b",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/",
       "pick": "P#7b",
@@ -2697,7 +2697,7 @@
     {
       "pieceId": "billete-de-canje-1-peso-1895",
       "face": "back",
-      "hash": "330b0f4f4f0f3317",
+      "hash": "70372b4f432b2be1",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/",
       "pick": "P#7b",

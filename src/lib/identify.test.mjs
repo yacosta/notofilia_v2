@@ -4,6 +4,7 @@ import identifyIndex from '../data/identify-index.json' with { type: 'json' };
 import {
   DHASH_BITS,
   dhashFromGreyscale,
+  dhashFromRgba,
   hammingDistance,
   parseDhash,
   similarityFromHamming,

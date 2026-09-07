@@ -180,7 +180,7 @@ const ui = {
 </script>
 <script>
   import { cardImageSrc } from '../lib/images';
-  import { DHASH_HEIGHT, DHASH_WIDTH, dhashFromGreyscale } from '../lib/identify-hash';
+  import { dhashFromRgba } from '../lib/identify-hash';
   import { rankIdentifyMatches, type IdentifyIndex, type IdentifyMatch } from '../lib/identify';
 
   type IdentifyUi = {
@@ -278,18 +278,14 @@ const ui = {
     async function hashFromFile(file: File): Promise<string> {
       const bitmap = await createImageBitmap(file);
       const canvas = document.createElement('canvas');
-      canvas.width = DHASH_WIDTH;
-      canvas.height = DHASH_HEIGHT;
+      canvas.width = bitmap.width;
+      canvas.height = bitmap.height;
       const ctx = canvas.getContext('2d', { willReadFrequently: true });
       if (!ctx) throw new Error('canvas');
-      ctx.drawImage(bitmap, 0, 0, DHASH_WIDTH, DHASH_HEIGHT);
+      ctx.drawImage(bitmap, 0, 0);
       bitmap.close();
-      const { data } = ctx.getImageData(0, 0, DHASH_WIDTH, DHASH_HEIGHT);
-      const grey = new Uint8Array(DHASH_WIDTH * DHASH_HEIGHT);
-      for (let i = 0, p = 0; i < grey.length; i++, p += 4) {
-        grey[i] = Math.round(0.299 * data[p]! + 0.587 * data[p + 1]! + 0.114 * data[p + 2]!);
-      }
-      return dhashFromGreyscale(grey);
+      const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      return dhashFromRgba(data, width, height);
     }
 
     async function matchHash(hash: string): Promise<IdentifyMatch[]> {
