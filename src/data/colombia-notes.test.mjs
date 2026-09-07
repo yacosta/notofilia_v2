@@ -214,6 +214,85 @@ describe('Colombia BanRep 1 peso oro 1973 Imprenta de Billetes', () => {
   });
 });
 
+describe('Colombia Tesorería medio peso oro 1953 Lleritas', () => {
+  it('is a distinct Pick 345b Treasury note, not BanRep Pick 384 or the 1948 345a', () => {
+    const note = noteById('medio-peso-oro-1953');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 345b');
+    assert.equal(note.serial, 'C 5256707');
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /BG# 012/);
+    assert.match(note.printed.en, /BG# 012/);
+    assert.match(note.printed.es, /10\.000\.000/);
+    assert.match(note.printed.es, /C5256707/);
+    assert.match(note.printed.es, /Tesorería/);
+    assert.match(note.printed.en, /Treasury/);
+    assert.match(note.printed.es, /no hay un total de denominación para 1953/);
+    assert.match(note.description.es, /Nariño/);
+    assert.match(note.description.en, /Nariño/);
+    assert.match(note.description.es, /C5256707/);
+    assert.match(note.description.es, /una sola vez/);
+    assert.match(note.description.en, /appears once/);
+    assert.match(note.description.es, /Pick 384/);
+    assert.match(note.description.es, /Pick 397/);
+    assert.match(note.description.es, /Pick 345a/);
+    assert.match(note.description.es, /DECRETO 404 DE 1953/);
+    assert.match(note.kicker.es, /Tesorería/);
+    assert.match(note.kicker.en, /Treasury/);
+    assert.match(note.scarcity.es, /10\.000\.000/);
+    assert.match(note.scarcity.es, /Cód\. 12/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.match(note.scarcity.es, /denominación-año/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0345.htm'),
+      true,
+    );
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/catalogue/note205254.html'),
+      true,
+    );
+    assert.equal(note.sources.some((source) => source.href === 'https://en.numista.com/L100183'), true);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1953-medio-peso-oro-c5256707'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1953-medio-peso-oro-p345b'), true);
+  });
+
+  it('lists the 1953 medio peso oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /medio peso oro de 1953 de la Tesorería \(Pick 345b\), serial C5256707/);
+    assert.match(chapter.body.en, /1953 Treasury ½ peso oro \(Pick 345b\), serial C5256707/);
+    assert.match(seriesCopy.es.intro.join(' '), /medio peso oro de 1953 de la Tesorería \(Pick 345b\), serial C5256707/);
+    assert.match(seriesCopy.en.intro.join(' '), /1953 Treasury ½ peso oro \(Pick 345b\), serial C5256707/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === 'medio-peso-oro-1953');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, 'C 5256707');
+    assert.equal(holding[0].denomination, 0.5);
+    assert.equal(holding[0].year, 1953);
+    assert.ok(cards[0].denomination <= holding[0].denomination);
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/medio-peso-oro-1953/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/medio-peso-oro-1953/',
+    );
+  });
+});
+
 describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
   it('is a distinct BanRep specimen with all-zero serials, not the 1983 2.000 pesos', () => {
     const note = noteById('5-pesos-oro-1960');
