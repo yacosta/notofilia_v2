@@ -74,6 +74,10 @@ export default defineConfig({
       '/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/',
     '/coleccion/estados-unidos/renci/trump-never-surrender':
       '/coleccion/estados-unidos/rency/trump-never-surrender/',
+    '/identificar': '/buscar/',
+    '/identificar/': '/buscar/',
+    '/en/identify': '/en/search/',
+    '/en/identify/': '/en/search/',
     '/en/collection/united-states/renci': '/en/collection/united-states/rency/',
     '/en/collection/united-states/renci/pele-the-beautiful-game':
       '/en/collection/united-states/rency/pele-the-beautiful-game/',

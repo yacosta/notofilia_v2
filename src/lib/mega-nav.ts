@@ -26,7 +26,6 @@ import { NOTAFILIA_PATH } from '../data/notafilia';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
-import { IDENTIFY_PATH } from '../data/identify';
 import { footerLinksFromNav } from './footer-nav';
 
 export type { FooterLink } from './footer-nav';
@@ -248,7 +247,6 @@ export const megaNav: NavNode[] = [
     en: 'Resources',
     layout: 'horizontal',
     children: [
-      { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
       { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },

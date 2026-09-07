@@ -58,7 +58,7 @@ export default {
       return Response.redirect(new URL(legacy, url).href, 301);
     }
     if (url.pathname.replace(/\/$/, '') === IDENTIFY_API_PATH) {
-      return handleIdentifyRequest(request, env);
+      return handleIdentifyRequest(request);
     }
     if (url.pathname.startsWith('/api/')) {
       return handleCommentsRequest(request, env);

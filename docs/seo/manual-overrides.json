@@ -56,6 +56,9 @@
     "/lazaretos_1921/": "/coleccion/lazarettos/",
     "/category/filatelia/politica-privacidad-cookies.dc.html": "/politica-privacidad-cookies/",
     "/category/notafilia/politica-privacidad-cookies.dc.html": "/politica-privacidad-cookies/",
-    "/category/numismatica/politica-privacidad-cookies.dc.html": "/politica-privacidad-cookies/"
+    "/category/numismatica/politica-privacidad-cookies.dc.html": "/politica-privacidad-cookies/",
+    "/identificar/": "/buscar/",
+    "/en/identify/": "/en/search/",
+    "/en/identificar/": "/en/search/"
   }
 }

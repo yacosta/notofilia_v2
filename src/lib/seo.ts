@@ -132,7 +132,6 @@ function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[numbe
 const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
   { href: '/buscar/', es: 'Buscar', en: 'Search' },
-  { href: '/identificar/', es: 'Identificar', en: 'Identify' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
   {
     href: '/notofilia-vs-catalogos-billetes-colombianos/',
@@ -176,7 +175,6 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/noticias/', 'Noticias', 'News');
   add('/coleccion/', 'Colección', 'Collection');
   add('/buscar/', 'Buscar', 'Search');
-  add('/identificar/', 'Identificar', 'Identify');
 
   for (const link of footerLinksFromNav(megaNav)) {
     add(link.href, link.es, link.en);
