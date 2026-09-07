@@ -133,3 +133,51 @@ describe('Colombia MEN 15 centavos student-transport ticket', () => {
     assert.match(seriesCopy.en.intro.join(' '), /in green ink and in red ink/);
   });
 });
+
+describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
+  it('is a distinct BanRep specimen with all-zero serials, not the 1983 2.000 pesos', () => {
+    const note = noteById('5-pesos-oro-1960');
+    const other = noteById('2000-pesos-oro-1983');
+    assert.ok(note);
+    assert.ok(other);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 405s');
+    assert.equal(note.serial, '00000000');
+    assert.notEqual(note.serial, other.serial);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.kicker.es, /Espécimen/);
+    assert.match(note.kicker.en, /specimen/i);
+    assert.match(note.description.es, /BG# 125/);
+    assert.match(note.description.en, /BG# 125/);
+    assert.match(note.description.es, /Pick 399/);
+    assert.match(note.description.es, /Pick 406/);
+    assert.match(note.description.es, /Pick 430as/);
+    assert.doesNotMatch(note.printed.es, /30\.000\.000 de especímenes/);
+    assert.match(note.printed.es, /no da una tirada de especímenes/);
+    assert.match(note.scarcity.es, /no da tirada de especímenes/);
+    assert.match(note.scarcity.es, /82,6 millones|no registra 5 pesos|tabla BanRep de 1960|denominación-año/);
+    assert.equal(additions.some((row) => row.id === 'co-1960-5-pesos-oro-specimen-00000000'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1960-5-pesos-oro-p405s'), true);
+  });
+
+  it('lists the 1960 specimen on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /espécimen de 5 pesos oro de 1960 \(Pick 405s\)/);
+    assert.match(chapter.body.en, /1960 5 pesos oro specimen \(Pick 405s\)/);
+    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 5 pesos oro de 1960 \(Pick 405s\)/);
+    assert.match(seriesCopy.en.intro.join(' '), /1960 5 pesos oro specimen \(Pick 405s\)/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const specimen = cards.filter((card) => card.note.id === '5-pesos-oro-1960');
+    assert.equal(specimen.length, 1);
+    assert.equal(specimen[0].piece.serial, '00000000');
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'es'),
+      '/coleccion/colombia/5-pesos-oro-1960/',
+    );
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'en'),
+      '/en/collection/colombia/5-pesos-oro-1960/',
+    );
+  });
+});
