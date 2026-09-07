@@ -224,6 +224,58 @@ function contentTypes(row) {
   return row.type === 'catalogue' || row.type === 'glossary' || row.type === 'news';
 }
 
+export function isStub(row) {
+  return Boolean(row && (row.redirectTo || /^Redirecting to:/i.test(row.title ?? '')));
+}
+
+/**
+ * Follow Astro redirect stubs (meta-refresh pages in dist/) so a rule never
+ * targets a stub and creates a 301 → stub → 301 chain.
+ */
+export function resolveStub(path, live, depth = 0) {
+  const row = live.get(normalizePath(path));
+  if (!row || !isStub(row) || !row.redirectTo || depth > 5) return path;
+  if (normalizePath(row.redirectTo) === normalizePath(path)) return path;
+  return resolveStub(row.redirectTo, live, depth + 1);
+}
+
+/**
+ * Pre-v1 Dreamweaver-era root files (`/billete-colombia-x.dc.html`, `/catalogo-ecuador.dc`).
+ * Only the prefix tells us the section; the note itself is usually gone, so
+ * these land on the section hub (low confidence) instead of 410.
+ */
+const LEGACY_DC_HUBS = [
+  [/^catalogo-colombia$/, '/coleccion/colombia/'],
+  [/^catalogo-ecuador$/, '/coleccion/ecuador/'],
+  [/^catalogo-puerto-rico$/, '/coleccion/puerto-rico/'],
+  [/^catalogo-reserva-federal$/, '/coleccion/estados-unidos/'],
+  [/^catalogo-emisiones-promocionales$/, '/coleccion/estados-unidos/'],
+  [/^catalogo-emisiones-extranjero$/, '/coleccion/colombia/'],
+  [/^catalogo-moneda-colonial-espanola$/, '/coleccion/colombia-numismatica/'],
+  [/^catalogo-moneda-colonial$/, '/coleccion/estados-unidos/'],
+  [/^catalogo$/, '/coleccion/'],
+  [/^glosario(-numismatico)?$/, '/glosario/'],
+  [/^billete-colombia-/, '/coleccion/colombia/'],
+  [/^perfil-/, '/coleccion/colombia/'],
+  [/^moneda-colombia-/, '/coleccion/colombia-numismatica/'],
+  [/^billete-ecuador-/, '/coleccion/ecuador/'],
+  [/^billete-guatemala-/, '/coleccion/guatemala/'],
+  [/^billete-puerto-rico-/, '/coleccion/puerto-rico/'],
+  [/^billete-/, '/coleccion/estados-unidos/'],
+];
+
+function legacyDcHub(originalPath) {
+  const raw = decodePath(String(originalPath ?? '')).split('?')[0].split('#')[0].toLowerCase();
+  if (!/\.dc(\.html)?$/.test(raw)) return null;
+  const parts = raw.split('/').filter(Boolean);
+  if (parts.length !== 1) return null;
+  const slug = parts[0].replace(/\.dc(\.html)?$/, '');
+  for (const [re, hub] of LEGACY_DC_HUBS) {
+    if (re.test(slug)) return hub;
+  }
+  return null;
+}
+
 /**
  * @returns {{ status: 301 | 410 | 200, target: string, rule: string, confidence: string }}
  */
@@ -232,89 +284,128 @@ export function matchUrl(originalPath, urls, categoryMap) {
   const norm = normalizePath(originalPath);
   const live = new Map(urls.map((u) => [normalizePath(u.path), u]));
 
+  const isLivePage = (path) => {
+    const row = live.get(normalizePath(path));
+    return Boolean(row) && !isStub(row);
+  };
+
   if (live.has(norm)) {
-    return { status: 200, target: withSlash(live.get(norm).path), rule: 'exists', confidence: 'high' };
+    const hit = live.get(norm);
+    if (!isStub(hit)) {
+      return { status: 200, target: withSlash(hit.path), rule: 'exists', confidence: 'high' };
+    }
+    // A redirect stub: 301 straight to its destination when that page is real;
+    // a stub pointing at a missing page (e.g. an unpublished continent hub) falls
+    // through to normal matching instead of being reported as "exists".
+    const resolved = resolveStub(hit.path, live);
+    if (normalizePath(resolved) !== norm && !isHomePath(resolved) && isLivePage(resolved)) {
+      return { status: 301, target: withSlash(resolved), rule: 'existing', confidence: 'high' };
+    }
   }
 
+  // Never 301 onto a redirect stub — land on the page it points at.
+  const finish = (result) => {
+    if (result.status !== 301) return result;
+    const resolved = resolveStub(result.target, live);
+    if (isHomePath(resolved) || !isLivePage(resolved)) return result;
+    return { ...result, target: withSlash(resolved) };
+  };
+
   const slug = lastSlug(originalPath);
-  const content = urls.filter(contentTypes);
+  const content = urls.filter((row) => contentTypes(row) && !isStub(row));
   const bySlug = indexByLastSlug(content, () => true);
   const slugHits = bySlug.get(slug) ?? [];
 
-  if (slugHits.length) {
-    const same = pickSameLang(slugHits, lang);
-    if (same && !isHomePath(same.path)) {
-      return { status: 301, target: withSlash(same.path), rule: 'last-slug', confidence: 'high' };
-    }
-    if (slugHits.length === 1 && slugHits[0].lang !== lang && !isHomePath(slugHits[0].path)) {
-      const match = slugHits[0];
-      const alt = match.alternate && languageOf(match.alternate) === lang ? match.alternate : match.path;
-      return {
-        status: 301,
-        target: withSlash(alt),
-        rule: 'last-slug-hreflang',
-        confidence: 'high',
-      };
-    }
-    const other = pickOtherLang(slugHits, lang);
-    if (!same && other && slugHits.filter((c) => c.lang !== lang).length === 1 && !isHomePath(other.path)) {
-      const alt = other.alternate && languageOf(other.alternate) === lang ? other.alternate : other.path;
-      return { status: 301, target: withSlash(alt), rule: 'last-slug-hreflang', confidence: 'high' };
-    }
-  }
+  return finish(matchRest());
 
-  const tokens = slugTokens(slug);
-  if (tokens.length >= 2) {
-    const fuzzyHits = [];
-    for (const row of content) {
-      const overlap = tokenOverlap(slug, row.lastSlug || lastSlug(row.path));
-      if (overlap >= 0.8) fuzzyHits.push(row);
+  function matchRest() {
+    if (slugHits.length) {
+      const same = pickSameLang(slugHits, lang);
+      if (same && !isHomePath(same.path)) {
+        return { status: 301, target: withSlash(same.path), rule: 'last-slug', confidence: 'high' };
+      }
+      if (slugHits.length === 1 && slugHits[0].lang !== lang && !isHomePath(slugHits[0].path)) {
+        const match = slugHits[0];
+        const alt = match.alternate && languageOf(match.alternate) === lang ? match.alternate : match.path;
+        return {
+          status: 301,
+          target: withSlash(alt),
+          rule: 'last-slug-hreflang',
+          confidence: 'high',
+        };
+      }
+      const other = pickOtherLang(slugHits, lang);
+      if (!same && other && slugHits.filter((c) => c.lang !== lang).length === 1 && !isHomePath(other.path)) {
+        const alt = other.alternate && languageOf(other.alternate) === lang ? other.alternate : other.path;
+        return { status: 301, target: withSlash(alt), rule: 'last-slug-hreflang', confidence: 'high' };
+      }
     }
-    if (fuzzyHits.length >= 1) {
-      const sameLang = fuzzyHits.filter((row) => row.lang === lang);
-      const chosen = sameLang.length === 1 ? sameLang[0] : fuzzyHits.length === 1 ? fuzzyHits[0] : null;
-      if (chosen && !isHomePath(chosen.path)) {
-        const target =
-          chosen.lang === lang
-            ? chosen.path
-            : chosen.alternate && languageOf(chosen.alternate) === lang
-              ? chosen.alternate
-              : chosen.path;
-        if (!isHomePath(target)) {
-          return { status: 301, target: withSlash(target), rule: 'fuzzy', confidence: 'medium' };
+
+    const tokens = slugTokens(slug);
+    if (tokens.length >= 2) {
+      const fuzzyHits = [];
+      for (const row of content) {
+        const overlap = tokenOverlap(slug, row.lastSlug || lastSlug(row.path));
+        if (overlap >= 0.8) fuzzyHits.push(row);
+      }
+      if (fuzzyHits.length >= 1) {
+        const sameLang = fuzzyHits.filter((row) => row.lang === lang);
+        const chosen = sameLang.length === 1 ? sameLang[0] : fuzzyHits.length === 1 ? fuzzyHits[0] : null;
+        if (chosen && !isHomePath(chosen.path)) {
+          const target =
+            chosen.lang === lang
+              ? chosen.path
+              : chosen.alternate && languageOf(chosen.alternate) === lang
+                ? chosen.alternate
+                : chosen.path;
+          if (!isHomePath(target)) {
+            return { status: 301, target: withSlash(target), rule: 'fuzzy', confidence: 'medium' };
+          }
         }
       }
     }
-  }
 
-  const catKey = categoryKeyFromPath(originalPath);
-  const parts = norm.split('/').filter(Boolean);
-  const isHubShape =
-    catKey &&
-    (norm === `/coleccion/${catKey}` ||
-      norm === `/collection/${catKey}` ||
-      norm === `/en/collection/${catKey}` ||
-      norm === `/en/coleccion/${catKey}`);
+    const catKey = categoryKeyFromPath(originalPath);
+    const parts = norm.split('/').filter(Boolean);
+    const isHubShape =
+      catKey &&
+      (norm === `/coleccion/${catKey}` ||
+        norm === `/collection/${catKey}` ||
+        norm === `/en/collection/${catKey}` ||
+        norm === `/en/coleccion/${catKey}`);
 
-  if (isHubShape) {
-    const hub = lookupCategoryHub(categoryMap, lang, catKey);
-    if (hub && !isHomePath(hub)) {
-      if (normalizePath(hub) === norm || live.has(normalizePath(hub))) {
-        if (live.has(norm)) {
-          return { status: 200, target: withSlash(live.get(norm).path), rule: 'exists', confidence: 'high' };
+    if (isHubShape) {
+      const hub = lookupCategoryHub(categoryMap, lang, catKey);
+      if (hub && !isHomePath(hub)) {
+        if (normalizePath(hub) === norm || live.has(normalizePath(hub))) {
+          if (live.has(norm)) {
+            return { status: 200, target: withSlash(live.get(norm).path), rule: 'exists', confidence: 'high' };
+          }
+          return { status: 301, target: withSlash(hub), rule: 'category-hub', confidence: 'high' };
         }
         return { status: 301, target: withSlash(hub), rule: 'category-hub', confidence: 'high' };
       }
-      return { status: 301, target: withSlash(hub), rule: 'category-hub', confidence: 'high' };
     }
-  }
 
-  if (catKey && parts.length >= 3) {
-    const hub = lookupCategoryHub(categoryMap, lang, catKey);
-    if (hub && !isHomePath(hub)) {
-      return { status: 301, target: withSlash(hub), rule: 'hub-fallback', confidence: 'low' };
+    if (catKey && parts.length >= 3) {
+      const hub = lookupCategoryHub(categoryMap, lang, catKey);
+      if (hub && !isHomePath(hub)) {
+        return { status: 301, target: withSlash(hub), rule: 'hub-fallback', confidence: 'low' };
+      }
     }
-  }
 
-  return { status: 410, target: '', rule: 'gone', confidence: 'high' };
+    const dcHub = legacyDcHub(originalPath);
+    if (dcHub && live.has(normalizePath(dcHub))) {
+      return { status: 301, target: withSlash(dcHub), rule: 'legacy-dc', confidence: 'low' };
+    }
+
+    if (classifyType(originalPath) === 'glossary') {
+      const hub = lang === 'en' ? '/en/glossary/' : '/glosario/';
+      if (live.has(normalizePath(hub)) && normalizePath(hub) !== norm) {
+        return { status: 301, target: hub, rule: 'glossary-hub', confidence: 'low' };
+      }
+    }
+
+    return { status: 410, target: '', rule: 'gone', confidence: 'high' };
+  }
 }

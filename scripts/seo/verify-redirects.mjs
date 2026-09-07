@@ -12,7 +12,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { identityPath, isHomePath, parseCsv } from './match.mjs';
+import { identityPath, isHomePath, normalizePath, parseCsv } from './match.mjs';
 import { lookupGscRedirect } from '../../src/lib/gsc-redirects.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -42,7 +42,11 @@ const records = csvRows.slice(1).map((row) => ({
 }));
 
 const v2 = existsSync(indexFile) ? JSON.parse(readFileSync(indexFile, 'utf8')) : { urls: [] };
-const live = new Set((v2.urls ?? []).map((u) => identityPath(u.path)));
+// Redirect stubs (Astro meta-refresh pages) are not live pages: a 301 whose
+// source is a stub is exactly what we want, so they stay out of `live`.
+const isStub = (u) => Boolean(u.redirectTo) || /^Redirecting to:/i.test(u.title ?? '');
+const live = new Set((v2.urls ?? []).filter((u) => !isStub(u)).map((u) => identityPath(u.path)));
+const liveNorm = new Set((v2.urls ?? []).filter((u) => !isStub(u)).map((u) => normalizePath(u.path)));
 
 const failures = [];
 
@@ -52,7 +56,9 @@ function fail(source, reason) {
 
 for (const row of records) {
   if (row.rule === 'exists') {
-    if (!live.has(identityPath(row.source))) fail(row.source, 'exists-rule but not in v2 index');
+    if (!live.has(identityPath(row.source)) && !liveNorm.has(normalizePath(row.source))) {
+      fail(row.source, 'exists-rule but not in v2 index');
+    }
     continue;
   }
   if (live.has(identityPath(row.source))) fail(row.source, 'redirect source is a live v2 URL');
