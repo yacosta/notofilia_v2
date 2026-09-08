@@ -40,6 +40,7 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934a-cleveland',
       '10-dolares-serie-1934d-richmond',
       '500-dolares-serie-1934a-nueva-york',
+      '1000-dolares-serie-1934a-nueva-york',
       '1-dolar-serie-2003-atlanta',
     ]);
 
@@ -60,6 +61,7 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934a-cleveland',
       '10-dolares-serie-1934d-richmond',
       '500-dolares-serie-1934a-nueva-york',
+      '1000-dolares-serie-1934a-nueva-york',
     ]);
 
     assert.match(data, /FRN_SORT_ID = \/\^\(\\d\+\)-dolar\(\?:es\)\?-serie-/);

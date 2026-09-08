@@ -158,6 +158,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/500-dollars-series-1934a-new-york/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/', 'en'),
+      '/en/collection/united-states/1000-dollars-series-1934a-new-york/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/', 'en'),
       '/en/collection/united-states/1-dollar-silver-certificate-1957b/',
     );
@@ -559,6 +563,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/'],
       '/en/collection/united-states/500-dollars-series-1934a-new-york/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/'],
+      '/en/collection/united-states/1000-dollars-series-1934a-new-york/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/'],

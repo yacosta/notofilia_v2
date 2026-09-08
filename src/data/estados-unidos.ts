@@ -169,8 +169,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -307,7 +307,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -790,6 +790,7 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934a-cleveland'
   | '10-dolares-serie-1934d-richmond'
   | '500-dolares-serie-1934a-nueva-york'
+  | '1000-dolares-serie-1934a-nueva-york'
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
   | 'nota-prueba-giori-lincoln-memorial'
@@ -2278,6 +2279,117 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'El encapsulado imprime Fr. 2202-B, bloque BA, serial B00286799A, firmas Julian | Morgenthau, About Uncirculated 55 y posición de plancha E.',
           en: 'The holder prints Fr. 2202-B, BA block, serial B00286799A, Julian | Morgenthau signatures, About Uncirculated 55, and plate position E.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1000-dolares-serie-1934a-nueva-york',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/',
+    pathEn: '/collection/united-states/1000-dollars-series-1934a-new-york/',
+    pick: 'P#435a · Fr. 2212-B',
+    serial: 'B00411221A',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1934 A, BEP. Denominación alta de tamaño pequeño: última impresión en 1945 y retiro anunciado el 14 de julio de 1969. Esta ficha no inventa una tirada por distrito ni por bloque BA.',
+      en: 'Series 1934A, BEP. A small-size high denomination: last printed in 1945, with withdrawal announced on 14 July 1969. This record does not invent a printage by district or BA block.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '1.000 dólares · Serie 1934 A · Nueva York',
+      en: '$1,000 · Series 1934A · New York',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Cleveland y sello verde del Tesoro; reverso con The United States of America en gótico y ONE THOUSAND DOLLARS. Distrito B / 2. Serie 1934 A, serial B00411221A.',
+      en: 'Face with Cleveland and a green Treasury seal; back with The United States of America in blackletter and ONE THOUSAND DOLLARS. District B / 2. Series 1934A, serial B00411221A.',
+    },
+    description: {
+      es: 'El 1.000 dólares de la serie 1934 A (Pick 435a, Friedberg 2212-B) es un Federal Reserve Note de tamaño pequeño del distrito de Nueva York: sello circular con la B, el 2 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF NEW YORK NEW YORK». El anverso, en negro con sello y seriales verdes, lleva el retrato de Grover Cleveland en óvalo —con el nombre CLEVELAND bajo el marco— y, a la derecha, el sello del Tesoro sobre un 1000 pálido. Las firmas son las de W. A. Julian y Henry Morgenthau Jr. El texto de curso legal aún promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. El reverso, en verde, concentra «The United States of America» en gótico y «ONE THOUSAND DOLLARS» en bloque, con el 1000 en las cuatro esquinas. Esta pieza de la colección, circulada y sin encapsular, se presenta en funda rígida y lleva el serial B00411221A (bloque BA). No es un reemplazo con estrella ni un Gold Certificate. No es la serie 1934 sin letra (Fr. 2211-B). No es el 500 dólares de 1934 A del mismo distrito, serial B00286799A, que ya tiene ficha propia. El lema «IN GOD WE TRUST» no figura en el reverso.',
+      en: 'The Series 1934A $1,000 (Pick 435a, Friedberg 2212-B) is a small-size Federal Reserve Note of the New York district: a circular seal with B, 2s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF NEW YORK NEW YORK.” The black face with green seal and serials carries Grover Cleveland in an oval — the name CLEVELAND sits under the frame — and, at right, the Treasury seal over a pale 1000. The signatures are W. A. Julian and Henry Morgenthau Jr. The legal-tender clause still promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. The green back centers “The United States of America” in blackletter and “ONE THOUSAND DOLLARS” in block type, with 1000s in the four corners. This collection piece, circulated and unslabbed, is shown in a rigid holder and is serial B00411221A (BA block). It is neither a star replacement nor a Gold Certificate. It is not Series 1934 without a letter (Fr. 2211-B). It is not the Series 1934A $500 of the same district, serial B00286799A, which already has its own note page. The motto “IN GOD WE TRUST” is not on the back.',
+    },
+    history: [
+      {
+        es: 'El 1.000 dólares de tamaño pequeño lleva a Cleveland desde la serie 1928. El U.S. Currency Education Program y el Bureau of Engraving and Printing sitúan las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Las notas pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
+        en: 'Small-size $1,000 notes have carried Cleveland since Series 1928. The U.S. Currency Education Program and the Bureau of Engraving and Printing place the last printings of $500, $1,000, $5,000, and $10,000 notes in 1945; on 14 July 1969 the Federal Reserve and the Treasury announced those denominations would be discontinued for lack of use. Outstanding notes remain legal tender: the government has not recalled the paper.',
+      },
+      {
+        es: 'La serie 1934 A conserva las firmas Julian–Morgenthau. El Bank Note Museum numera el tipo P-435a (distritos A–J y L). Nueva York es el distrito B / 2. Esta pieza, bloque BA, no es un reemplazo con estrella. El lema «IN GOD WE TRUST» aún no figura en el reverso.',
+        en: 'Series 1934A keeps the Julian–Morgenthau signatures. The Bank Note Museum numbers the type P-435a (districts A–J and L). New York is district B / 2. This BA-block piece is not a star replacement. The motto “IN GOD WE TRUST” is not yet on the back.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 A de 1.000 dólares',
+      en: 'The Series 1934A $1,000',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 dólares, serie 1934 A, distrito de Nueva York, serial B00411221A: Cleveland, sello verde del Tesoro y funda rígida.',
+      en: 'Face of the Series 1934A $1,000, New York district, serial B00411221A: Cleveland, the green Treasury seal, and a rigid holder.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 dólares, serie 1934 A: The United States of America en gótico y ONE THOUSAND DOLLARS.',
+      en: 'Back of the Series 1934A $1,000: The United States of America in blackletter and ONE THOUSAND DOLLARS.',
+    },
+    scarcity: {
+      es: 'El 1.000 dólares de la Reserva —series 1928 a 1934C, los doce distritos— no fue papel cotidiano: sirvió a transferencias grandes y se dejó de imprimir en 1945. El Bank Note Museum numera la 1934 A como P-435a. Fr. 2212-B cubre Nueva York. El tipo es más escaso que el 10 dólares de las mismas series; las claves son los reemplazos con estrella, los 5.000 y 10.000 dólares, y la serie 1934C. Esta ficha no inventa una tirada por bloque.',
+      en: 'Federal Reserve $1,000 notes — Series 1928 through 1934C, all twelve districts — were not everyday paper: they served large transfers and were last printed in 1945. The Bank Note Museum numbers 1934A as P-435a. Fr. 2212-B is New York. The type is scarcer than the $10 of the same series; the keys are star replacements, the $5,000 and $10,000 notes, and Series 1934C. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial B00411221A. La pieza se presenta en funda rígida, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial B00411221A has not been independently verified. The note is shown in a rigid holder, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular, en funda rígida (colección privada)',
+      en: 'Circulated, unslabbed, in a rigid holder (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0435.htm',
+        es: 'Bank Note Museum — P-435, 1.000 dólares Federal Reserve Note, series 1934–1934C',
+        en: 'Bank Note Museum — P-435, Series 1934–1934C $1,000 Federal Reserve Note',
+        note: {
+          es: '435a: serie 1934 A, firmas Julian y Morgenthau; distrito B = Nueva York.',
+          en: '435a: Series 1934A, Julian and Morgenthau signatures; district B = New York.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Última impresión de las denominaciones altas en 1945; anuncio del 14 de julio de 1969.',
+          en: 'Last high-denomination printing in 1945; announcement of 14 July 1969.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history/historical-currency',
+        es: 'Bureau of Engraving and Printing — Historical Currency',
+        en: 'Bureau of Engraving and Printing — Historical Currency',
+        note: {
+          es: 'El Tesoro y la Reserva anunciaron el 14 de julio de 1969 el retiro de los 500, 1.000, 5.000 y 10.000 dólares; la última impresión fue en 1945. Siguen siendo curso legal.',
+          en: 'On 14 July 1969 the Treasury and the Federal Reserve announced that $500, $1,000, $5,000, and $10,000 notes would be discontinued; they were last printed in 1945. They remain legal tender.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/sp/united-states-federal-reserve-notes-small-size-one-thousand-dollars/9656/1934A',
+        es: 'Greysheet — Fr. 2212B, 1934A $1,000 Federal Reserve Note, Nueva York',
+        en: 'Greysheet — Fr. 2212B, 1934A $1,000 Federal Reserve Note, New York',
+        note: {
+          es: 'Tipo de tamaño pequeño, sello verde, distrito de Nueva York. Esta ficha no cita columnas de precio.',
+          en: 'Small-size type, green seal, New York district. This record does not quote price columns.',
         },
       },
     ],
