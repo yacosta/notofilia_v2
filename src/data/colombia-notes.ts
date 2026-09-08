@@ -17,6 +17,7 @@ export type ColombiaNoteId =
   | '5-pesos-oro-1979'
   | '5-pesos-oro-1980'
   | '10-pesos-oro-1976'
+  | '10-pesos-oro-1979'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '10000-pesos-1994'
@@ -1585,6 +1586,118 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 199 y 201 para la reposición del 20 de julio de 1976; esos H# no se sustituyen por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 199 and 201 for the 20 July 1976 replacement; those H# are not replaced by 2023 Cód. numbers.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-pesos-oro-1979',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}10-pesos-oro-1979/`,
+    pick: 'P# 407g · TBB B950m',
+    serial: '98040194',
+    signatures: {
+      es: 'Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario)',
+      en: 'Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1979. Ocho dígitos, sin letra de serie. González White 2019 (p. 68) lista fechas AGOSTO 7 1979 en el pliego DIEZ PESOS 1975–1980, con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera el 7 de agosto de 1979 ordinario como Cód. 205 —Numista concuerda Hernández 205, P# 407g y TBB B950m—; Cód. 206 es la reposición con asterisco en el anverso, entre los títulos (TBB B950mr). El serial 98040194 es un número ordinario de ocho dígitos, fuera de las bandas de asterisco de González White en ese pliego (alrededor de 00.100.xxx–00.472.xxx). El Bank Note Museum agrupa el tipo 407g en 07.08.1979 y 07.08.1980, sin serie, distinto del 407f (1974–1978) y del 407h de 1980 con serie AZ. Formato publicado: 140 × 70 mm. Sin hilo de seguridad ni marca de agua. La tabla BanRep de 1979 registra 58,75 millones de piezas de 10 pesos: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1979. Eight digits, no series letter. González White 2019 (p. 68) lists AGOSTO 7 1979 dates on the DIEZ PESOS 1975–1980 spread, with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1979 as Cód. 205 — Numista concurs Hernández 205, P# 407g, and TBB B950m; Cód. 206 is the replacement with an asterisk on the face, between the titles (TBB B950mr). Serial 98040194 is an ordinary eight-digit number, outside González White’s asterisk bands on that spread (around 00.100.xxx–00.472.xxx). The Bank Note Museum groups type 407g under 07.08.1979 and 07.08.1980, without a series letter, distinct from 407f (1974–1978) and from 407h of 1980 with series AZ. Published size: 140 × 70 mm. No security thread and no watermark. BanRep’s 1979 table records 58.75 million 10-peso notes: all production of that face value that year, not this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/10-pesos-oro-1979-98040194-composite.jpg',
+      front: '/images/catalog/colombia/10-pesos-oro-1979-98040194-front.jpg',
+      back: '/images/catalog/colombia/10-pesos-oro-1979-98040194-back.jpg',
+    },
+    title: {
+      es: '10 pesos oro · Banco de la República · 1979',
+      en: '10 pesos oro · Banco de la República · 1979',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Diez pesos oro de circulación, Pick 407g: serial de ocho dígitos 98040194, 7 de agosto de 1979. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es la reposición de 1976 (Pick 407f) ni el 10 pesos oro ABNC de 1943 (Pick 389b).',
+      en: 'A circulating ten-peso oro, Pick 407g: eight-digit serial 98040194, 7 August 1979. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1976 replacement (Pick 407f) nor the 1943 ABNC 10 pesos oro (Pick 389b).',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este diez pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. El anverso, en lila, verde, azul y pardo sobre policromía, lleva a la izquierda el retrato de Antonio Nariño en uniforme —rotulado «NARIÑO» bajo el busto— y a la derecha un cóndor andino posado sobre la cifra 10. Al centro, la promesa de pagar al portador diez pesos oro. Los seriales van en rojo: 98040194, una vez a media altura a la izquierda y otra arriba a la derecha. No hay letra de serie. La fecha impresa es «AGOSTO 7 DE 1979» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO) y el que Banknote World registra en el P-407g.1. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 206 / TBB B950mr. El reverso, en azul pizarra sobre marco policromado, muestra las estatuas precolombinas del Parque Arqueológico de San Agustín —rotuladas así en el papel—, el sello del banco con la Libertad («REPUBLICA DE COLOMBIA / BANCO DE LA REPUBLICA») y las cifras 10. El tipo 407g, según el Bank Note Museum, cubre 07.08.1979 y 07.08.1980 sin serie; Numista agrupa el diseño 1963–1980 bajo N# 203973 y cita Hernández 205 y TBB B950m para esta fecha, sin hilo. Distinto del 407f de 1974–1978, de la reposición de julio de 1976 de esta vitrina (serial 00142533), del 407h de 1980 con serie AZ y del 10 pesos oro ABNC de 1943 (Pick 389b). Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this ten-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, lilac, green, blue, and brown on a multicolour underprint, carries Antonio Nariño’s portrait in uniform at left — labelled “NARIÑO” under the bust — and an Andean condor perched on the figure 10 at right. At center is the promise to pay the bearer ten gold pesos. The serials are in red: 98040194, once at mid-left and once at upper right. There is no series letter. The printed date is “AGOSTO 7 DE 1979” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO) and the pair Banknote World records on P-407g.1. There is no asterisk between GERENTE and SECRETARIO: it is not a replacement and not Cód. 206 / TBB B950mr. The back, slate blue in a multicolour frame, shows the pre-Columbian statues of the San Agustín Archaeological Park — labelled on the paper — the bank’s Liberty seal (“REPUBLICA DE COLOMBIA / BANCO DE LA REPUBLICA”), and the figures 10. Type 407g, per the Bank Note Museum, covers 07.08.1979 and 07.08.1980 without a series letter; Numista groups the 1963–1980 design under N# 203973 and cites Hernández 205 and TBB B950m for this date, without a thread. Distinct from 407f of 1974–1978, from this case’s July 1976 replacement (serial 00142533), from 407h of 1980 with series AZ, and from the 1943 ABNC 10 pesos oro (Pick 389b). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 pesos oro, Pick 407g: Nariño, cóndor, serial 98040194 y fecha 7 de agosto de 1979.',
+      en: 'Face of the 10 pesos oro, Pick 407g: Nariño, the condor, serial 98040194, and the date 7 August 1979.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 pesos oro, Pick 407g: estatuas del Parque Arqueológico de San Agustín y sello del Banco de la República.',
+      en: 'Back of the 10 pesos oro, Pick 407g: statues of the San Agustín Archaeological Park and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (p. 68) cataloga la fecha del 7 de agosto de 1979 en el pliego del 10 pesos 1975–1980, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 205 y la reposición con asterisco Cód. 206. El serial 98040194 no cae en las bandas de White de ese pliego. El Bank Note Museum describe el Pick 407g como las fechas 07.08.1979 y 07.08.1980, sin serie: Nariño y cóndor al anverso, San Agustín al reverso. Numista agrupa el diseño bajo N# 203973 y marca la frecuencia de la fecha 07.08.1979, sin hilo, en un 12 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni el 10 pesos oro Pick 389b de 1943 ni la reposición Pick 407f de 1976. No se publican columnas de precios de Hernández. La tabla BanRep de 1979 (58,75 millones de piezas de 10 pesos) es un total de denominación-año, no la tirada de esta fecha. Esta ficha no sustituye esa cifra por una tirada de fecha.',
+      en: 'González White 2019 (p. 68) lists 7 August 1979 on the 1975–1980 10-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 205 and the asterisk replacement Cód. 206. Serial 98040194 does not sit in White’s bands on that spread. The Bank Note Museum describes Pick 407g as the 07.08.1979 and 07.08.1980 dates, without a series letter: Nariño and condor on the face, San Agustín on the back. Numista groups the design under N# 203973 and marks the 07.08.1979 no-thread date’s frequency at 12% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor the Pick 389b 10 pesos oro of 1943 nor the Pick 407f replacement of 1976. Hernández price columns are not republished. BanRep’s 1979 table (58.75 million 10-peso notes) is a denomination-year total, not this date’s printage. This record does not replace that figure with a date printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 98040194. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 98040194 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0407.htm',
+        es: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        en: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        note: {
+          es: '407g: 07.08.1979 y 07.08.1980, sin serie; anverso Nariño y cóndor, reverso San Agustín. Distinto del 407f (1974–1978, sin hilo) y del 407h (07.08.1980, serie AZ).',
+          en: '407g: 07.08.1979 and 07.08.1980, without a series letter; Nariño and condor on the face, San Agustín on the back. Distinct from 407f (1974–1978, no thread) and from 407h (07.08.1980, series AZ).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note203973.html',
+        es: 'Numista — Colombia 10 pesos oro, N# 203973',
+        en: 'Numista — Colombia 10 pesos oro, N# 203973',
+        note: {
+          es: '07.08.1979: P# 407g / TBB B950m; Hernández 205; firmas RGQ y FJO; 140 × 70 mm; sin hilo; frecuencia 12 % en el tipo. La reposición de la misma fecha es TBB B950mr / Hernández 206.',
+          en: '07.08.1979: P# 407g / TBB B950m; Hernández 205; signatures RGQ and FJO; 140 × 70 mm; no thread; 12% frequency within the type. The replacement of the same date is TBB B950mr / Hernández 206.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-10-pesos-oro-1979-p-407g-1.html',
+        es: 'Banknote World — Colombia 10 pesos oro 1979, P-407g.1',
+        en: 'Banknote World — Colombia 10 pesos oro 1979, P-407g.1',
+        note: {
+          es: '07.08.1979; Imprenta de Billetes, Bogotá; 140 × 70 mm; sin hilo ni marca de agua; firmas Rafael Gama Quijano y Francisco José Ortega.',
+          en: '07.08.1979; Imprenta de Billetes, Bogotá; 140 × 70 mm; no thread and no watermark; signatures Rafael Gama Quijano and Francisco José Ortega.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1979: 58,75 millones de piezas de 10 pesos. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 7 de agosto de 1979.',
+          en: '1979 production: 58.75 million 10-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 7 August 1979.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404). González White asigna a esa planta las fechas de 1975–1980 de este 10 pesos.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404). González White assigns the 1975–1980 dates of this 10-peso to that plant.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 205 para el 7 de agosto de 1979 ordinario (Pick 407g); la reposición de la misma fecha es Hernández 206, con asterisco en el anverso entre los títulos. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 205 for the ordinary 7 August 1979 (Pick 407g); the replacement of the same date is a separate row, Hernández 206, with an asterisk on the face between the titles. Price columns and plates are not republished.',
         },
       },
     ],

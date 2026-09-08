@@ -456,3 +456,90 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB circulation', () => {
     );
   });
 });
+
+describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
+  it('is a distinct Pick 407g circulation note, not the 1976 replacement or the 1943 ABNC 10 pesos', () => {
+    const note = noteById('10-pesos-oro-1979');
+    const replacement = noteById('10-pesos-oro-1976');
+    const note1943 = noteById('10-pesos-oro-1943');
+    assert.ok(note);
+    assert.ok(replacement);
+    assert.ok(note1943);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 407g · TBB B950m');
+    assert.equal(note.serial, '98040194');
+    assert.notEqual(note.serial, replacement.serial);
+    assert.notEqual(note.serial, note1943.serial);
+    assert.notEqual(note.pick, replacement.pick);
+    assert.notEqual(note.pick, note1943.pick);
+    assert.notEqual(note.path, replacement.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no publica un BG# adivinado/);
+    assert.match(note.printed.es, /58,75 millones/);
+    assert.match(note.printed.es, /denominación ese año/);
+    assert.match(note.printed.es, /no la tirada de esta fecha/);
+    assert.match(note.scarcity.es, /58,75 millones/);
+    assert.match(note.scarcity.es, /denominación-año/);
+    assert.match(note.description.es, /No hay asterisco/);
+    assert.match(note.description.es, /no es reposición/);
+    assert.match(note.description.es, /98040194/);
+    assert.match(note.description.es, /Nariño/);
+    assert.match(note.description.en, /Nariño/);
+    assert.match(note.description.es, /San Agustín/);
+    assert.match(note.description.es, /Pick 407f/);
+    assert.match(note.description.es, /Pick 389b/);
+    assert.match(note.printed.es, /Cód\. 205/);
+    assert.match(note.printed.en, /Cód\. 205/);
+    assert.match(note.printed.es, /Cód\. 206/);
+    assert.match(note.description.es, /Cód\. 206/);
+    assert.match(note.description.en, /Cód\. 206/);
+    assert.match(note.scarcity.es, /Cód\. 205/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.es, /L100183/);
+    assert.match(hernandez.en, /L100183/);
+    assert.match(hernandez.note.es, /Hernández 205/);
+    assert.match(hernandez.note.en, /Hernández 205/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1979-10-pesos-oro-98040194'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1979-10-pesos-oro-p407g'), true);
+  });
+
+  it('lists the 1979 10 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /10 pesos oro de 1979 \(Pick 407g\), serial 98040194/);
+    assert.match(chapter.body.en, /1979 10 pesos oro \(Pick 407g\), serial 98040194/);
+    assert.match(seriesCopy.es.intro.join(' '), /10 pesos oro de 1979 \(Pick 407g\), serial 98040194/);
+    assert.match(seriesCopy.en.intro.join(' '), /1979 10 pesos oro \(Pick 407g\), serial 98040194/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '10-pesos-oro-1979');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '98040194');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/10-pesos-oro-1979/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/10-pesos-oro-1979/',
+    );
+  });
+});

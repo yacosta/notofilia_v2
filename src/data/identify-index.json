@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T20:16:24.228Z",
+  "generatedAt": "2026-09-08T02:08:44.132Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -235,6 +235,45 @@
       "title": {
         "es": "1 peso oro · Banco de la República · 1945",
         "en": "1 peso oro · Banco de la República · 1945"
+      }
+    },
+    {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "front",
+      "hash": "50270f80012b3701",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-composite.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
+      }
+    },
+    {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "front",
+      "hash": "00100b0f372f0500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-front.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
+      }
+    },
+    {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "back",
+      "hash": "01070b27370f4101",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-back.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
       }
     },
     {
@@ -586,6 +625,45 @@
       "title": {
         "es": "10 pesos oro · reposición · 1976",
         "en": "10 pesos oro · replacement · 1976"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "front",
+      "hash": "522b230940494d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "P# 407g · TBB B950m",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-composite.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "front",
+      "hash": "00c057335b538115",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-front.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "back",
+      "hash": "81a06d656f4d1585",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-back.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
       }
     },
     {
@@ -1717,6 +1795,45 @@
       "title": {
         "es": "500 dólares · Serie 1934 A · Nueva York",
         "en": "$500 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "2249690848354904",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-composite.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "88f82b296915a592",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-front.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "back",
+      "hash": "888b2d4d55550592",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-back.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
       }
     },
     {
