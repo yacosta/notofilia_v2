@@ -301,6 +301,83 @@ describe('Colombia BanRep 1 peso oro 1974 Imprenta de Billetes', () => {
     );
   });
 });
+describe('Colombia BanRep 2 pesos oro 1977 Imprenta de Billetes', () => {
+  it('is a distinct Pick 413b circulation note, not the 1944 or 1955 ABNC 2 pesos', () => {
+    const note = noteById('2-pesos-oro-1977');
+    const note1944 = noteById('2-pesos-oro-1944');
+    assert.ok(note);
+    assert.ok(note1944);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 413b');
+    assert.equal(note.serial, '22214695');
+    assert.notEqual(note.serial, note1944.serial);
+    assert.notEqual(note.pick, note1944.pick);
+    assert.notEqual(note.path, note1944.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /BG# 100/);
+    assert.match(note.printed.en, /BG# 100/);
+    assert.match(note.printed.es, /50\.000\.000/);
+    assert.match(note.printed.es, /118,9 millones/);
+    assert.match(note.printed.es, /denominación ese año/);
+    assert.match(note.printed.es, /no la tirada de esta fecha/);
+    assert.match(note.scarcity.es, /118,9 millones/);
+    assert.match(note.scarcity.es, /denominación-año/);
+    assert.match(note.description.es, /No hay asterisco/);
+    assert.match(note.description.es, /no es reposición/);
+    assert.match(note.description.es, /22214695/);
+    assert.match(note.description.es, /Policarpa/);
+    assert.match(note.description.en, /Policarpa/);
+    assert.match(note.description.es, /Pick 390b/);
+    assert.match(note.printed.es, /Hernández 104/);
+    assert.match(note.printed.en, /Hernández 104/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.es, /L100183/);
+    assert.match(hernandez.en, /L100183/);
+    assert.match(hernandez.note.es, /Hernández 104/);
+    assert.match(hernandez.note.en, /Hernández 104/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1977-2-pesos-oro-22214695'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1977-2-pesos-oro-p413b'), true);
+  });
+
+  it('lists the 1977 2 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /2 pesos oro de 1977 \(Pick 413b\)/);
+    assert.match(chapter.body.en, /1977 2 pesos oro \(Pick 413b\)/);
+    assert.match(seriesCopy.es.intro.join(' '), /2 pesos oro de 1977 \(Pick 413b\)/);
+    assert.match(seriesCopy.en.intro.join(' '), /1977 2 pesos oro \(Pick 413b\)/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const twoPesos1977 = cards.filter((card) => card.note.id === '2-pesos-oro-1977');
+    assert.equal(twoPesos1977.length, 1);
+    assert.equal(twoPesos1977[0].piece.serial, '22214695');
+    assert.equal(
+      seriesCardHref(twoPesos1977[0].note, twoPesos1977[0].piece, 'es'),
+      '/coleccion/colombia/2-pesos-oro-1977/',
+    );
+    assert.equal(
+      seriesCardHref(twoPesos1977[0].note, twoPesos1977[0].piece, 'en'),
+      '/en/collection/colombia/2-pesos-oro-1977/',
+    );
+  });
+});
 
 describe('Colombia Tesorería medio peso oro 1953 Lleritas', () => {
   it('is a distinct Pick 345b Treasury note, not BanRep Pick 384 or the 1948 345a', () => {

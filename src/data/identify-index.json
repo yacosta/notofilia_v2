@@ -472,6 +472,45 @@
       }
     },
     {
+      "pieceId": "2-pesos-oro-1977-22214695",
+      "face": "front",
+      "hash": "42256d0011172b55",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-composite.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1977-22214695",
+      "face": "front",
+      "hash": "945279155d5dbb61",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-front.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1977-22214695",
+      "face": "back",
+      "hash": "09071b1f1b271412",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-back.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
       "pieceId": "10-pesos-oro-1943",
       "face": "front",
       "hash": "652b0b21579696c0",
