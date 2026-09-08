@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-08T01:13:38.700Z",
+  "generatedAt": "2026-09-08T02:08:44.132Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -703,6 +703,45 @@
       "title": {
         "es": "10 pesos oro · reposición · 1976",
         "en": "10 pesos oro · replacement · 1976"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "front",
+      "hash": "522b230940494d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "P# 407g · TBB B950m",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-composite.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "front",
+      "hash": "00c057335b538115",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-front.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979-98040194",
+      "face": "back",
+      "hash": "81a06d656f4d1585",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-back.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
       }
     },
     {
