@@ -113,27 +113,33 @@ const featuredNews = news.slice(0, 4);
         {t.milestonesTitle}
       </h2>
       <p class="mx-auto mb-8 mt-0 max-w-[40rem] text-center text-[17px]/7 text-muted">{t.milestonesIntro}</p>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          milestones.map((item) => (
-            <li>
-              <a
-                href={localizePath(item.href, locale)}
-                class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-bg p-5 text-inherit no-underline hover:border-gold-light"
-              >
-                <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
-                  {item[locale].title}
-                </h3>
-                <p class="mb-3 mt-0 font-sans text-[15px]/6 text-muted">{item[locale].description}</p>
-                <span class="font-sans text-[15px] text-gold-light">
-                  {t.viewCatalog}
-                  <span class="sr-only"> {item[locale].title}</span>
-                </span>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      {
+        milestones.length === 0 ? (
+          <p class="mx-auto mb-0 mt-0 max-w-[40rem] text-center text-[17px]/7 text-muted">{t.emptyMilestones}</p>
+        ) : (
+          <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
+            {
+              milestones.map((item) => (
+                <li>
+                  <a
+                    href={localizePath(item.href, locale)}
+                    class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-bg p-5 text-inherit no-underline hover:border-gold-light"
+                  >
+                    <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
+                      {item[locale].title}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[15px]/6 text-muted">{item[locale].description}</p>
+                    <span class="font-sans text-[15px] text-gold-light">
+                      {t.viewCatalog}
+                      <span class="sr-only"> {item[locale].title}</span>
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        )
+      }
       <p class="mt-10 text-center">
         <a
           href={localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale)}
