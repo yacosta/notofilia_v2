@@ -1865,6 +1865,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/1-peso-oro-1974/": {
+      "target": "/en/collection/colombia/1-peso-oro-1974/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1974": {
+      "target": "/en/collection/colombia/1-peso-oro-1974/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1-peso-tolima-1901/": {
       "target": "/en/collection/colombia/1-peso-tolima-1901/",
       "status": 301,
