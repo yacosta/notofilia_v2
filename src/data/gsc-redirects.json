@@ -2285,6 +2285,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/": {
       "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
       "status": 301,
@@ -2952,6 +2962,16 @@
     },
     "/en/coleccion/united-states/5-dollars-continental-1779": {
       "target": "/en/collection/united-states/5-dollars-continental-1779/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1000-dollars-series-1934a-new-york/": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1000-dollars-series-1934a-new-york": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
       "status": 301,
       "rule": "existing"
     },

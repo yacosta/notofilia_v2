@@ -39,6 +39,20 @@ describe('gsc redirect lookup', () => {
       assert.equal(planned.type === 'redirect' ? planned.target : '', '/en/collection/world-polymer/');
     }
   });
+
+  it('301s mixed-locale Series 1934A New York $1,000 paths to the English tree', () => {
+    const target = '/en/collection/united-states/1000-dollars-series-1934a-new-york/';
+    for (const path of [
+      '/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/',
+      '/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york',
+      '/en/coleccion/united-states/1000-dollars-series-1934a-new-york/',
+      '/en/coleccion/united-states/1000-dollars-series-1934a-new-york',
+    ]) {
+      const planned = planSeoResponse(path);
+      assert.equal(planned.type, 'redirect');
+      assert.equal(planned.type === 'redirect' ? planned.target : '', target);
+    }
+  });
 });
 
 describe('worker wiring', () => {
