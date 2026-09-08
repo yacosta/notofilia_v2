@@ -66,6 +66,12 @@ function flagsFrom(...parts: string[]): TypeCatalogFlag[] {
   return flags;
 }
 
+export type CollectionNoteSeed = CollectionSeed;
+
+export function collectionNoteSeeds(): CollectionSeed[] {
+  return collectionSeeds();
+}
+
 function collectionSeeds(): CollectionSeed[] {
   const seeds: CollectionSeed[] = [];
 

@@ -37,7 +37,6 @@ import {
   netherlandsCoinageDedicatedSlugs,
 } from '../data/netherlands-coinage';
 import {
-  USA_COINAGE_PATH,
   unitedStatesCoinSlugs,
   unitedStatesCoinageDedicatedSlugs,
 } from '../data/estados-unidos-coinage';
@@ -58,6 +57,10 @@ import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
+import { milestones } from './milestones.ts';
+
+export type { MilestoneItem } from './milestones.ts';
+export { milestones } from './milestones.ts';
 
 export type { Locale } from './locale-paths';
 export { localizePath, otherLocalePath, SITE_AUTHOR, DEFAULT_OG_IMAGE } from './locale-paths';
@@ -210,12 +213,6 @@ export const collections = [
   },
 ] as const;
 
-export type MilestoneItem = {
-  href: string;
-  es: { title: string; description: string };
-  en: { title: string; description: string };
-};
-
 export type ArticleItem = {
   href: string;
   dateEs: string;
@@ -231,141 +228,6 @@ export type NewsItem = ArticleItem & {
   source: string;
   sourceUrl: string;
 };
-
-export const milestones: MilestoneItem[] = [
-  {
-    href: SERIES_PATH,
-    es: {
-      title: 'Filipinas · Periodo estadounidense',
-      description: 'Primera vitrina del catálogo: 5 pesos del Banco Nacional de 1916 y 1, 2, 5 y 20 pesos de la Serie Victory n.º 66.',
-    },
-    en: {
-      title: 'Philippines · American period',
-      description: 'First catalog case: a 1916 National Bank 5-peso and Commonwealth 1, 2, 5, and 20 pesos of Victory Series No. 66.',
-    },
-  },
-  {
-    href: COLOMBIA_PATH,
-    es: {
-      title: 'Colombia · Banca libre y Banco de la República',
-      description: 'Segunda vitrina del catálogo: independencia, banca libre, Banco Nacional y el banco central.',
-    },
-    en: {
-      title: 'Colombia · Free banking and the Banco de la República',
-      description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
-    },
-  },
-  {
-    href: COLOMBIA_COINAGE_PATH,
-    es: {
-      title: 'Colombia-Numismática',
-      description: 'Primera vitrina de numismática: macuquinas, cecas de la Independencia, la reforma de 1847 y la Fábrica de Ibagué.',
-    },
-    en: {
-      title: 'Colombia-Numismatics',
-      description: 'First numismatics case: cobs, independence mints, the 1847 reform, and the Ibagué factory.',
-    },
-  },
-  {
-    href: LAZARETTOS_PATH,
-    es: {
-      title: 'Lazarettos',
-      description: 'Segunda vitrina de numismática: Caño del Oro, Contratación, Agua de Dios y la coscoja.',
-    },
-    en: {
-      title: 'Lazarettos',
-      description: 'Second numismatics case: Caño del Oro, Contratación, Agua de Dios, and the coscoja.',
-    },
-  },
-  {
-    href: USA_PATH,
-    es: {
-      title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
-      description: 'Tercera vitrina del catálogo: colonial, obsoleto, Estados Confederados, United States Notes, oro, plata, Reserva Federal, pop art y misceláneos.',
-    },
-    en: {
-      title: 'United States · From colonial paper to the Federal Reserve',
-      description: 'Third catalog case: colonial, obsolete, Confederate States, United States Notes, gold, silver, the Federal Reserve, pop art, and miscellaneous issues.',
-    },
-  },
-  {
-    href: USA_MPC_PATH,
-    es: {
-      title: 'Estados Unidos · MPC de la guerra de Vietnam',
-      description: 'Vitrina de certificados de pago militar: series 641, 661, 681 y 692 usadas en Vietnam.',
-    },
-    en: {
-      title: 'United States · Vietnam War MPCs',
-      description: 'Military Payment Certificate case: Series 641, 661, 681, and 692 used in Vietnam.',
-    },
-  },
-  {
-    href: PUERTO_RICO_PATH,
-    es: {
-      title: 'Puerto Rico · Emisiones coloniales y de transición',
-      description: 'Cuarta vitrina del catálogo: emisiones coloniales y de transición del siglo XIX.',
-    },
-    en: {
-      title: 'Puerto Rico · Colonial and transition issues',
-      description: 'Fourth catalog case: colonial and nineteenth-century transition issues.',
-    },
-  },
-  {
-    href: CHINA_PATH,
-    es: {
-      title: 'China · Del jiaozi al polímero',
-      description: 'Quinta vitrina: historia del papel moneda y exhibición de los billetes de polímero.',
-    },
-    en: {
-      title: 'China · From jiaozi to polymer',
-      description: 'Fifth catalog case: paper-money history and the polymer notes on exhibit.',
-    },
-  },
-  {
-    href: ECUADOR_PATH,
-    es: {
-      title: 'Ecuador · Del sucre a la dolarización',
-      description: 'Sexta vitrina: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización.',
-    },
-    en: {
-      title: 'Ecuador · From the sucre to dollarization',
-      description: 'Sixth catalog case: the 1884 sucre, private banks, the 1927 Central Bank, and dollarization.',
-    },
-  },
-  {
-    href: GUATEMALA_PATH,
-    es: {
-      title: 'Guatemala · Impresión de billetes y El Banco Colombiano',
-      description: 'Séptima vitrina: planchas de Nueva York y Londres, banca privada y la emisión antioqueña en Guatemala (1878–1901).',
-    },
-    en: {
-      title: 'Guatemala · Banknote printing and El Banco Colombiano',
-      description: 'Seventh catalog case: New York and London plates, private banks, and the Antioquian issue in Guatemala (1878–1901).',
-    },
-  },
-  {
-    href: NETHERLANDS_COINAGE_PATH,
-    es: {
-      title: 'Países Bajos · Historia de la acuñación',
-      description: 'Tercera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
-    },
-    en: {
-      title: 'Netherlands · History of the coinage',
-      description: 'Third numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
-    },
-  },
-  {
-    href: USA_COINAGE_PATH,
-    es: {
-      title: 'Estados Unidos · Numismática',
-      description: 'Cuarta vitrina de numismática: la ceca de Filadelfia y el dólar de Trump del Semiquincentenario 1776–2026.',
-    },
-    en: {
-      title: 'United States · Numismatics',
-      description: 'Fourth numismatics case: the Philadelphia mint and the 1776–2026 Semiquincentennial Trump dollar.',
-    },
-  },
-];
 
 export const articles: ArticleItem[] = blogArticles.map((item) => ({
   href: item.href,
