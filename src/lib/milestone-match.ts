@@ -56,6 +56,9 @@ function scorePiece(holding: Holding, piece: CatalogPiece): number {
 
   const serial = piece.serial ? alnum(piece.serial) : '';
   if (serial.length >= 4 && hid.includes(serial)) score += 300;
+  else if (serial.length >= 5 && /[A-Z]$/.test(serial) && hid.includes(serial.slice(0, -1))) {
+    score += 280;
+  }
 
   const cert = piece.cert ? alnum(piece.cert) : '';
   if (cert.length >= 6 && hid.includes(cert)) score += 250;

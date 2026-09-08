@@ -48,6 +48,28 @@ describe('homepage milestones from catalog holdings', () => {
     assert.equal(piece.serial, '98040194');
   });
 
+  it('matches a US serial when the holding id omits the block letter', () => {
+    const holding = {
+      id: 'us-frn-1934a-1000-new-york-b00411221',
+      kind: 'banknote',
+      country: 'US',
+    };
+    const piece = catalogPieceForHolding(holding, [
+      {
+        id: 'us-1000-dolares-serie-1934a-nueva-york',
+        country: 'US',
+        href: '/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/',
+        title: { es: '$1000', en: '$1000' },
+        dek: { es: 'Serial B00411221A', en: 'Serial B00411221A' },
+        pick: 'P#435a',
+        serial: 'B00411221A',
+        cert: '',
+      },
+    ]);
+    assert.ok(piece);
+    assert.match(piece.href, /1000-dolares-serie-1934a-nueva-york/);
+  });
+
   it('lists newly appended holdings first', () => {
     const pieces = colombiaPieces();
     const newest = { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' };
