@@ -123,16 +123,21 @@ const featuredNews = news.slice(0, 4);
                 <li>
                   <a
                     href={localizePath(item.href, locale)}
-                    class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-bg p-5 text-inherit no-underline hover:border-gold-light"
+                    class="group block h-full min-h-11 overflow-hidden rounded-[6px] border border-line-strong bg-bg text-inherit no-underline hover:border-gold-light"
                   >
-                    <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
-                      {item[locale].title}
-                    </h3>
-                    <p class="mb-3 mt-0 font-sans text-[15px]/6 text-muted">{item[locale].description}</p>
-                    <span class="font-sans text-[15px] text-gold-light">
-                      {t.viewCatalog}
-                      <span class="sr-only"> {item[locale].title}</span>
-                    </span>
+                    {item.image ? (
+                      <CardImage src={item.image} alt={item.imageAlt[locale]} />
+                    ) : null}
+                    <div class="p-5">
+                      <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
+                        {item[locale].title}
+                      </h3>
+                      <p class="mb-3 mt-0 font-sans text-[15px]/6 text-muted">{item[locale].description}</p>
+                      <span class="font-sans text-[15px] text-gold-light">
+                        {t.viewCatalog}
+                        <span class="sr-only"> {item[locale].title}</span>
+                      </span>
+                    </div>
                   </a>
                 </li>
               ))

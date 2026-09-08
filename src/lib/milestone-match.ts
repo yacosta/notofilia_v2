@@ -4,6 +4,8 @@ import type { LocalizedText } from '../data/catalog.ts';
 export type MilestoneItem = {
   href: string;
   holdingId: string;
+  image: string;
+  imageAlt: LocalizedText;
   es: { title: string; description: string };
   en: { title: string; description: string };
 };
@@ -17,6 +19,8 @@ export type CatalogPiece = {
   pick: string;
   serial: string;
   cert: string;
+  image: string;
+  imageAlt: LocalizedText;
 };
 
 /** Cards in the homepage “Logros del Mes” grid (3 columns × 2 rows). */
@@ -95,6 +99,8 @@ function toMilestone(holding: Holding, piece: CatalogPiece): MilestoneItem {
   return {
     href: piece.href,
     holdingId: holding.id,
+    image: piece.image,
+    imageAlt: piece.imageAlt,
     es: { title: piece.title.es, description: piece.dek.es },
     en: { title: piece.title.en, description: piece.dek.en },
   };

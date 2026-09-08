@@ -27,6 +27,8 @@ function colombiaPieces() {
       pick: piece.pick,
       serial: piece.serial,
       cert: '',
+      image: piece.images.composite || piece.images.front,
+      imageAlt: piece.frontCaption,
     }));
   });
 }
@@ -64,6 +66,8 @@ describe('homepage milestones from catalog holdings', () => {
         pick: 'P#435a',
         serial: 'B00411221A',
         cert: '',
+        image: '/images/catalog/estados-unidos/1000-dolares-serie-1934a-nueva-york-composite.jpg',
+        imageAlt: { es: 'Anverso', en: 'Obverse' },
       },
     ]);
     assert.ok(piece);
@@ -80,5 +84,15 @@ describe('homepage milestones from catalog holdings', () => {
     assert.equal(cards.length, 2);
     assert.match(cards[0].es.title, /2 pesos oro/);
     assert.match(cards[0].en.title, /2 pesos oro/);
+  });
+
+  it('includes catalog image and localized alt on each milestone card', () => {
+    assert.match(homeSource, /CardImage src=\{item\.image\}/);
+    const pieces = colombiaPieces();
+    const holding = { id: 'co-1979-10-pesos-oro-98040194', kind: 'banknote', country: 'CO' };
+    const [card] = milestonesFromHoldings([holding], pieces, HOME_MILESTONE_LIMIT);
+    assert.ok(card.image.startsWith('/images/catalog/'));
+    assert.ok(card.imageAlt.es.length > 0);
+    assert.ok(card.imageAlt.en.length > 0);
   });
 });

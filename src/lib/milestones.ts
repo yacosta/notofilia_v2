@@ -26,6 +26,8 @@ function catalogPieces(): CatalogPiece[] {
     pick: seed.pick,
     serial: seed.serial,
     cert: '',
+    image: seed.image,
+    imageAlt: seed.imageAlt,
   }));
 
   for (const coin of colombiaCoinagePieces) {
@@ -38,6 +40,8 @@ function catalogPieces(): CatalogPiece[] {
       pick: coin.reference,
       serial: '',
       cert: '',
+      image: coin.images.composite || coin.images.front,
+      imageAlt: coin.frontCaption,
     });
   }
 
@@ -51,6 +55,8 @@ function catalogPieces(): CatalogPiece[] {
       pick: coin.references,
       serial: '',
       cert: coin.certificate,
+      image: coin.images.composite,
+      imageAlt: coin.frontCaption,
     });
   }
 
@@ -64,6 +70,8 @@ function catalogPieces(): CatalogPiece[] {
       pick: coin.references,
       serial: '',
       cert: '',
+      image: coin.images.composite || coin.images.front,
+      imageAlt: coin.frontCaption,
     });
   }
 
