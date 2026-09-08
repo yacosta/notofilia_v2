@@ -12,6 +12,7 @@ export type ColombiaNoteId =
   | '1-peso-oro-1954'
   | '1-peso-oro-1973'
   | '2-pesos-oro-1944'
+  | '2-pesos-oro-1977'
   | '10-pesos-oro-1943'
   | '5-pesos-oro-1960'
   | '5-pesos-oro-1979'
@@ -1116,6 +1117,118 @@ export const colombiaNotes: ColombiaNote[] = [
             },
           },
         ],
+      },
+    ],
+  },
+  {
+    id: '2-pesos-oro-1977',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}2-pesos-oro-1977/`,
+    pick: 'P# 413b',
+    serial: '22214695',
+    signatures: {
+      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1977. Formato publicado: 140 × 70 mm. Serial de ocho dígitos, sin letra de serie y sin pie de imprenta. González White 2019 (p. 46) numera esta fecha BG# 100: IBB, última emisión de la denominación 2 pesos, 50.000.000 de ejemplares, seriales 00.000.001 / 50.000.000. El serial 22214695 cae en ese tramo. BG# 101 es la reposición asterisco de la misma fecha (00.104.171 / 00.191.883). Hernández (8.ª ed., 2023) da en el anexo 2 el intervalo de asterisco 00104171–00194009; 22214695 queda fuera. Numista concuerda Hernández 104, P# 413b y TBB B948f para el 20 de julio de 1977 ordinario. El Bank Note Museum agrupa el tipo 413b en 20.07.1976, 01.01.1977 y 20.07.1977 —serial pequeño, lejos del borde superior—, distinto del 413a de 1972–1973 (ABNC). La tabla BanRep de 1977 registra 118,9 millones de piezas de 2 pesos: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 20 July 1977. Published size: 140 × 70 mm. Eight-digit serial, no series letter, and no printer imprint. González White 2019 (p. 46) numbers this date BG# 100: IBB, last issue of the 2-peso denomination, 50,000,000 notes, serials 00.000.001 / 50.000.000. Serial 22214695 sits in that range. BG# 101 is the asterisk replacement of the same date (00.104.171 / 00.191.883). Hernández (8th ed., 2023) gives the annex-2 asterisk interval 00104171–00194009; 22214695 sits outside it. Numista concurs Hernández 104, P# 413b, and TBB B948f for the ordinary 20 July 1977. The Bank Note Museum groups type 413b under 20.07.1976, 01.01.1977, and 20.07.1977 — small serial, far from the upper border — distinct from 413a of 1972–1973 (ABNC). BanRep’s 1977 table records 118.9 million 2-peso notes: all production of that face value that year, not this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/2-pesos-oro-1977-22214695-composite.jpg',
+      front: '/images/catalog/colombia/2-pesos-oro-1977-22214695-front.jpg',
+      back: '/images/catalog/colombia/2-pesos-oro-1977-22214695-back.jpg',
+    },
+    title: {
+      es: '2 pesos oro · Banco de la República · 1977',
+      en: '2 pesos oro · Banco de la República · 1977',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Dos pesos oro de circulación, Pick 413b: serial de ocho dígitos 22214695, 20 de julio de 1977. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es el 2 pesos oro ABNC de 1944 ni el de 1955 (Pick 390).',
+      en: 'A circulating two-peso oro, Pick 413b: eight-digit serial 22214695, 20 July 1977. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1944 or 1955 ABNC 2 pesos oro (Pick 390).',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este dos pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. González White 2019 sitúa las fechas de 1972 y 1973 en la ABNC y las de 1976 y 1977 en la IBB; todas van a ocho dígitos y sin pie de imprenta. El anverso, en violeta sobre fondo policromado rosa, amarillo y verde, lleva a la izquierda el retrato de Policarpa Salavarrieta —rotulado bajo el óvalo— y al centro la promesa de pagar al portador dos pesos oro. Los seriales van en rojo: 22214695, una vez en vertical a la derecha del retrato y otra en horizontal arriba a la derecha. No hay letra de serie. La fecha impresa es «JULIO 20 DE 1977» sobre «BOGOTA COLOMBIA». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Numista asigna el par GBR₂ y AJG₂ a esta fecha; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco junto a GERENTE ni a la fecha: no es reposición ni el BG# 101. El reverso, en pardo sobre la misma policromía, muestra la Balsa estilo Muisca del Museo del Oro, el sello de la Libertad («BANCO DE LA REPUBLICA / BOGOTA COLOMBIA») y el lema «DOS PESOS ORO». El tipo 413b, según el Bank Note Museum, cubre 1976–1977 con serial pequeño lejos del borde superior. Numista agrupa el diseño 1972–1977 bajo N# 205262 y cita Hernández 104 y TBB B948f para esta fecha. González White cierra el Dos pesos oro en papel el 20 de julio de 1977, sustituido por moneda metálica. No es el 2 pesos oro ABNC de 1944, serie I (Pick 390b), ni el de 1955, serie GG (Pick 390d), documentados en otra ficha de esta vitrina. Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this two-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. González White 2019 places the 1972 and 1973 dates with ABNC and the 1976 and 1977 dates with IBB; all are eight digits and without a printer imprint. The face, violet on a pink, yellow, and green multicolour underprint, carries at left the portrait of Policarpa Salavarrieta — named under the oval — and at center the promise to pay the bearer two gold pesos. The serials are in red: 22214695, once vertically to the right of the portrait and once horizontally at upper right. There is no series letter. The printed date is “JULIO 20 DE 1977” over “BOGOTA COLOMBIA.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Numista assigns the pair GBR₂ and AJG₂ to this date; González White places Botero as gerente from 1970 to 1978. There is no asterisk beside GERENTE or the date: it is not a replacement and not BG# 101. The back, brown on the same multicolour, shows the Muisca-style raft from the Museo del Oro, Liberty’s seal (“BANCO DE LA REPUBLICA / BOGOTA COLOMBIA”), and the legend “DOS PESOS ORO.” Type 413b, per the Bank Note Museum, covers 1976–1977 with a small serial far from the upper border. Numista groups the 1972–1977 design under N# 205262 and cites Hernández 104 and TBB B948f for this date. González White closes paper two-peso oro on 20 July 1977, replaced by coin. It is not the 1944 Series I ABNC 2 pesos oro (Pick 390b), nor the 1955 Series GG (Pick 390d), documented on another record in this case. This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 pesos oro, Pick 413b: Policarpa Salavarrieta, serial 22214695 y fecha 20 de julio de 1977.',
+      en: 'Face of the 2 pesos oro, Pick 413b: Policarpa Salavarrieta, serial 22214695, and the date 20 July 1977.',
+    },
+    backCaption: {
+      es: 'Reverso del 2 pesos oro, Pick 413b: Balsa estilo Muisca del Museo del Oro, sello de la Libertad y cifras 2.',
+      en: 'Back of the 2 pesos oro, Pick 413b: Muisca-style raft from the Museo del Oro, Liberty’s seal, and the figures 2.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 100, p. 46) publica 50.000.000 de ejemplares para el 20 de julio de 1977 de circulación, IBB, ocho dígitos, seriales 00.000.001–50.000.000; el serial 22214695 cae en ese tramo. BG# 101 es la reposición asterisco de esa fecha. Hernández (8.ª ed., 2023) numera la fila ordinaria Hernández 104 y da en el anexo 2 el intervalo 00104171–00194009, que no incluye 22214695. El Bank Note Museum describe el Pick 413b como las fechas 1976–1977: Policarpa al anverso y la balsa muisca al reverso. Numista agrupa el diseño bajo N# 205262 y marca la frecuencia de la fecha 20.07.1977 ordinaria en un 39 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni el 2 pesos oro Pick 390 de 1944 o 1955. No se publican columnas de precios de Hernández. La tabla BanRep de 1977 (118,9 millones de piezas de 2 pesos) es un total de denominación-año, no la tirada de esta fecha. Esta ficha no sustituye la emisión BG# 100 por ese total.',
+      en: 'González White 2019 (BG# 100, p. 46) publishes 50,000,000 notes for the circulating 20 July 1977 date, IBB, eight digits, serials 00.000.001–50,000,000; serial 22214695 sits in that range. BG# 101 is the asterisk replacement of that date. Hernández (8th ed., 2023) numbers the ordinary row Hernández 104 and gives the annex-2 interval 00104171–00194009, which does not include 22214695. The Bank Note Museum describes Pick 413b as the 1976–1977 dates: Policarpa on the face and the Muisca raft on the back. Numista groups the design under N# 205262 and marks the ordinary 20.07.1977 date’s frequency at 39% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor the Pick 390 2 pesos oro of 1944 or 1955. Hernández price columns are not republished. BanRep’s 1977 table (118.9 million 2-peso notes) is a denomination-year total, not this date’s printage. This record does not replace the BG# 100 emisión with that total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 22214695. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 22214695 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0413.htm',
+        es: 'Bank Note Museum — Colombia P-413, 2 pesos oro (1972–1977)',
+        en: 'Bank Note Museum — Colombia P-413, 2 pesos oro (1972–1977)',
+        note: {
+          es: '413b: 20.07.1976, 01.01.1977 y 20.07.1977; anverso Policarpa Salavarrieta; reverso balsa muisca del Museo del Oro. Distinto del 413a (01.01.1972, 20.07.1972 y 01.01.1973).',
+          en: '413b: 20.07.1976, 01.01.1977, and 20.07.1977; Policarpa Salavarrieta on the face; Muisca raft from the Gold Museum on the back. Distinct from 413a (01.01.1972, 20.07.1972, and 01.01.1973).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note205262.html',
+        es: 'Numista — Colombia 2 pesos oro, N# 205262',
+        en: 'Numista — Colombia 2 pesos oro, N# 205262',
+        note: {
+          es: '20.07.1977: P# 413b / TBB B948f; Hernández 104; firmas GBR₂ y AJG₂; 140 × 70 mm; frecuencia 39 % en el tipo.',
+          en: '20.07.1977: P# 413b / TBB B948f; Hernández 104; signatures GBR₂ and AJG₂; 140 × 70 mm; 39% frequency within the type.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-2-pesos-oro-1977-p-413b-3.html',
+        es: 'Banknote World — Colombia 2 pesos oro 1977, P-413b.3',
+        en: 'Banknote World — Colombia 2 pesos oro 1977, P-413b.3',
+        note: {
+          es: '20.07.1977; 140 × 70 mm; sin hilo ni marca de agua; serial pequeño lejos del borde superior; firmas Germán Botero de los Ríos y Antonio José Gutiérrez. Nombra ABNC como impresor; González White asigna 1976–1977 a la IBB.',
+          en: '20.07.1977; 140 × 70 mm; no thread and no watermark; small serial far from the upper border; signatures Germán Botero de los Ríos and Antonio José Gutiérrez. Names ABNC as printer; González White assigns 1976–1977 to IBB.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1977: 118,9 millones de piezas de 2 pesos. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 20 de julio de 1977.',
+          en: '1977 production: 118.9 million 2-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 20 July 1977.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404). González White asigna a esa planta las fechas de 1976 y 1977 de este 2 pesos.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404). González White assigns the 1976 and 1977 dates of this 2-peso to that plant.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 104 para el 20 de julio de 1977 ordinario (Pick 413b); la reposición de la misma fecha es otra fila, con asterisco en el anverso. El anexo 2 da el intervalo 00104171–00194009. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 104 for the ordinary 20 July 1977 (Pick 413b); the replacement of the same date is a separate row, with an asterisk on the face. Annex 2 gives the interval 00104171–00194009. Price columns and plates are not republished.',
+        },
       },
     ],
   },
