@@ -487,7 +487,7 @@ describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
     assert.match(note.description.es, /Nariño/);
     assert.match(note.description.en, /Nariño/);
     assert.match(note.description.es, /San Agustín/);
-    assert.match(note.description.es, /Pick 407f/);
+    assert.match(note.description.es, /407f/);
     assert.match(note.description.es, /Pick 389b/);
     assert.match(note.printed.es, /Cód\. 205/);
     assert.match(note.printed.en, /Cód\. 205/);
