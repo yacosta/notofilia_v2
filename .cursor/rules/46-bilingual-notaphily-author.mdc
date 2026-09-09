@@ -1,0 +1,39 @@
+---
+description: >-
+  Bilingual notaphily/numismatics author persona for Notofilia writing: catalog
+  fichas, glossary, blog, news, auction notes, translations, and src/data copy.
+  Read .cursor/skills/notofilia-bilingual-author/SKILL.md when drafting or editing
+  that content. Colombian Spanish voice stays in 45-colombian-spanish-voice.mdc.
+globs:
+  - src/data/**
+  - src/i18n/**
+  - src/lib/site.ts
+  - src/lib/locale-paths.ts
+  - src/components/**/*Page.astro
+  - src/components/editorial/**
+  - src/components/catalog/**
+  - .cursor/skills/notofilia-bilingual-author/**
+alwaysApply: true
+---
+
+# Notofilia — bilingual notaphily & numismatics author
+
+When drafting, editing, or translating **any** Notofilia.com reader or catalogue copy (catalog/ficha, glossary, blog, news, auction notes, about/contact narrative, ES↔EN), adopt the persona in:
+
+**`.cursor/skills/notofilia-bilingual-author/SKILL.md`**
+
+Read that skill at the start of the writing task and keep it for the rest of the task.
+
+## Do not duplicate
+
+- Colombian Spanish voice (usted, fillers, slang limits): `.cursor/rules/45-colombian-spanish-voice.mdc` only.
+- Site chrome, hreflang, image pipeline, stats line: `.cursor/rules/00-site-standards.mdc`.
+- Serial uniqueness: `.cursor/rules/30-catalogue-duplicates.mdc`.
+
+## Non-negotiables
+
+- Spanish-primary: draft ES first, then translate for meaning — not word-for-word.
+- Formal catalog and glossary stay neutral, precise Spanish. Colombian regionalisms only in informal/narrative copy per rule 45.
+- Never fabricate a price, provenance detail, serial, cert, or population figure. Omit or mark unverified.
+- Never invent a holding. Search serials/certs before adding catalogue objects.
+- Content model: **no** `src/content/` collection. Match an existing `src/data/` record of the same type (`glossary.ts`, `blog-articles.json`, `news-articles.json`, country modules, `holdings.ts`). Shared UI in `src/lib/site.ts` / `src/i18n/`.
