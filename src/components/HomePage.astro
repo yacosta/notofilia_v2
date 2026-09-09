@@ -20,7 +20,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = copy[locale];
 const featuredArticles = articles.slice(0, 4);
-const featuredNews = news.slice(0, 4);
+const featuredNews = news.slice(0, 6);
 ---
 
 <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
@@ -207,7 +207,7 @@ const featuredNews = news.slice(0, 4);
       <h2 id="news-heading" class="mb-8 mt-0 text-center font-display text-[2rem]/10 font-normal text-cream-dim">
         {t.newsTitle}
       </h2>
-      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-2">
+      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
         {
           featuredNews.map((item) => (
             <li>
