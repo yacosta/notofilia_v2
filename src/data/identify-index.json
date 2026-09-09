@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-08T02:08:44.132Z",
+  "generatedAt": "2026-09-09T01:37:44.271Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -316,6 +316,45 @@
       }
     },
     {
+      "pieceId": "1-peso-oro-1959",
+      "face": "front",
+      "hash": "00335d40502b6b44",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-composite.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959",
+      "face": "front",
+      "hash": "0056631313775510",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-front.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959",
+      "face": "back",
+      "hash": "0006336d65211793",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-back.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
       "pieceId": "1-peso-oro-1973-26530968",
       "face": "front",
       "hash": "032b4d01034d0b01",
@@ -472,7 +511,7 @@
       }
     },
     {
-      "pieceId": "2-pesos-oro-1977-22214695",
+      "pieceId": "2-pesos-oro-1977",
       "face": "front",
       "hash": "42256d0011172b55",
       "kind": "banknote",
@@ -485,7 +524,7 @@
       }
     },
     {
-      "pieceId": "2-pesos-oro-1977-22214695",
+      "pieceId": "2-pesos-oro-1977",
       "face": "front",
       "hash": "945279155d5dbb61",
       "kind": "banknote",
