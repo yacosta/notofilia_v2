@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-09T01:37:44.271Z",
+  "generatedAt": "2026-09-09T02:24:50.266Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -318,7 +318,7 @@
     {
       "pieceId": "1-peso-oro-1959",
       "face": "front",
-      "hash": "00335d40502b6b44",
+      "hash": "00335d00012b690f",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1959/",
       "pick": "P# 398 · TBB B938",
@@ -344,7 +344,7 @@
     {
       "pieceId": "1-peso-oro-1959",
       "face": "back",
-      "hash": "0006336d65211793",
+      "hash": "41012b4b0965071f",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1959/",
       "pick": "P# 398 · TBB B938",
