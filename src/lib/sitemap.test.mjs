@@ -149,6 +149,17 @@ describe('sitemap coverage for United States numismatics', () => {
   });
 });
 
+describe('sitemap coverage for reference tools', () => {
+  it('maps the tools hub and fancy serial checker pairs', () => {
+    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
+    assert.equal(
+      localizePath('/herramientas/numeracion-especial/', 'en'),
+      '/en/tools/fancy-serial-checker/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage stays derived from catalog data', () => {
   it('does not hard-code individual catalog slugs in extra', () => {
     assert.match(sitemapSource, /dedicatedCatalogPaths/);

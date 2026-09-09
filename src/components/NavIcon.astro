@@ -4,6 +4,7 @@ export const NAV_ICON_IDS = [
   'glossary',
   'news',
   'identify',
+  'tools',
   'asia',
   'europe',
   'north-america',
@@ -63,6 +64,12 @@ const filled = icon ? FILL_ICON_IDS.has(icon) : false;
             <path d="M8 19.25H5.75A1.5 1.5 0 0 1 4.25 17.75V15" />
             <path d="M16 19.25h2.25A1.5 1.5 0 0 0 19.75 17.75V15" />
             <circle cx="12" cy="12" r="3.35" />
+          </>
+        )}
+        {icon === 'tools' && (
+          <>
+            <rect x="4.4" y="5.4" width="15.2" height="13.2" rx="1.4" />
+            <path d="M8 9.2h8M8 12.2h5.2M8 15.2h6.4" />
           </>
         )}
         {icon === 'rency' && (
