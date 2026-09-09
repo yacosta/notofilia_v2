@@ -138,6 +138,7 @@ export const additions: Holding[] = [
   { id: 'co-1979-5-pesos-oro-00141180', kind: 'banknote', country: 'CO' },
   { id: 'co-1953-medio-peso-oro-c5256707', kind: 'banknote', country: 'CO' },
   { id: 'us-frn-1934a-1000-new-york-b00411221', kind: 'banknote', country: 'US' },
+  { id: 'us-frn-2003-2-st-louis-h00010418', kind: 'banknote', country: 'US' },
   { id: 'co-1974-1-peso-oro-47550075', kind: 'banknote', country: 'CO' },
   { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' },
   { id: 'co-1979-10-pesos-oro-98040194', kind: 'banknote', country: 'CO' },
@@ -217,6 +218,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-1895-1-peso-p7b' },
   { id: 'pr-1869-junta-central-recibo' },
   { id: 'pr-1869-junta-1-peso-p61' },
+  { id: 'us-frn-2003-2-st-louis-h00010418' },
 ];
 
 export type CollectionStats = {

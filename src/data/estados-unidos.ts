@@ -169,8 +169,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -307,7 +307,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
       'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -780,6 +780,7 @@ export type UnitedStatesNoteId =
   | '5-dolares-continental-1779'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
+  | '2-dolares-serie-2003-san-luis'
   | '5-dolares-city-bank-new-haven'
   | '50-dolares-canal-bank-nueva-orleans'
   | '5-dolares-confederados-1864'
@@ -2487,6 +2488,105 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Washington en el 1 dólar desde 1869; ambas caras del Gran Sello en el reverso desde 1935.',
           en: 'Washington on the $1 since 1869; both faces of the Great Seal on the back since 1935.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-dolares-serie-2003-san-luis',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/',
+    pathEn: '/collection/united-states/2-dollars-series-2003-st-louis/',
+    pick: 'P#516 · Fr. 1937-H*',
+    serial: 'H00010418★',
+    serial_display: 'H 00010418 ★',
+    cert_grader: 'PMG',
+    signatures: {
+      es: 'Rosario Marin (tesorera) y John W. Snow (secretario del Tesoro)',
+      en: 'Rosario Marin (Treasurer) and John W. Snow (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'BEP, Fort Worth (FW). Emisión de coleccionista de la serie 2003, no la tirada de circulación de Minneapolis. El contador 00010418 queda por debajo de 16000.',
+      en: 'BEP, Fort Worth (FW). A Series 2003 collector printing, not the Minneapolis circulation run. Counter 00010418 falls under 16000.',
+    },
+    images: {
+      composite: '/images/note-photograph-pending.png',
+      front: '/images/note-photograph-pending.png',
+      back: '/images/note-photograph-pending.png',
+      width: 1200,
+      height: 800,
+    },
+    title: {
+      es: '2 dólares · Serie 2003 · San Luis ★',
+      en: '$2 · Series 2003 · St. Louis ★',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Reemplazo con estrella del distrito de San Luis (H / 8), serial H 00010418 ★, Friedberg 1937-H*, encapsulado PMG 64 EPQ. Las fotografías de este ejemplar aún no están en la ficha.',
+      en: 'St. Louis district (H / 8) star replacement, serial H 00010418 ★, Friedberg 1937-H*, slabbed PMG 64 EPQ. Photographs of this piece are not yet on the record.',
+    },
+    description: {
+      es: 'El 2 dólares de la serie 2003 (Pick 516, Friedberg 1937-H*) es un Federal Reserve Note de tamaño pequeño del distrito de San Luis: sello negro con la H, el 8 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Thomas Jefferson y, a la derecha, el sello del Tesoro. Las firmas son las de Rosario Marin y John W. Snow. El reverso, en verde, reproduce la Declaración de Independencia de John Trumbull. Esta pieza de la colección es un reemplazo: la estrella cierra el serial H 00010418 ★ (bloque H★). Se presenta encapsulada por PMG como Choice Uncirculated 64 EPQ. El número de certificado no consta en esta ficha. Las fotografías del anverso y del reverso de este serial aún no se publican aquí; los recuadros no son el billete.',
+      en: 'The Series 2003 $2 (Pick 516, Friedberg 1937-H*) is a small-size Federal Reserve Note of the St. Louis district: a black seal with H, 8s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI.” The black face with green seal and serials carries Thomas Jefferson and, at right, the Treasury seal. The signatures are Rosario Marin and John W. Snow. The green back reproduces John Trumbull’s Declaration of Independence. This collection piece is a replacement: a star closes serial H 00010418 ★ (H★ block). It is slabbed by PMG as Choice Uncirculated 64 EPQ. The certificate number is not recorded on this ficha. Photographs of the face and back of this serial are not yet published here; the panels are not the note.',
+    },
+    frontCaption: {
+      es: 'Fotografía pendiente del anverso del 2 dólares, serie 2003, San Luis, serial H 00010418 ★. Este recuadro no es el billete.',
+      en: 'Photograph pending of the face of the Series 2003 $2, St. Louis, serial H 00010418 ★. This panel is not the note.',
+    },
+    backCaption: {
+      es: 'Fotografía pendiente del reverso del 2 dólares, serie 2003, San Luis: Declaración de Independencia de Trumbull. Este recuadro no es el billete.',
+      en: 'Photograph pending of the back of the Series 2003 $2: Trumbull’s Declaration of Independence. This panel is not the note.',
+    },
+    scarcity: {
+      es: 'La serie 2003 del 2 dólares —firmas Marin–Snow, impresa en Fort Worth— no es el papel cotidiano de los doce distritos. USPaperMoney.Info registra la circulación ordinaria solo en Minneapolis (I): 121.600.000 notas y 3.840.000 estrellas en dos tiradas, y anota que el BEP imprimió además unas estrellas para venta a coleccionistas. Numismatic News (archivo) describe la venta del BEP de estrellas de los doce distritos, con seriales por debajo de 16000, a 9,95 dólares cada una; el juego de doce con seriales coincidentes ya se había agotado. Una recopilación de productos del BEP, que cita a Daniel Wishnatsky en Paper Money Values (noviembre–diciembre de 2008), sitúa 2.000 juegos premium —seriales 00000001* a 00002100*— y las notas sueltas en 0002101* a 00016000*, hasta 16.000 por distrito. Esta ficha no trata esas cifras como una tabla oficial del BEP. El serial H00010418★ cae en la banda de las sueltas, no en los primeros números del juego coincidente. No es la estrella de circulación de Minneapolis ni un 2 dólares ordinario del distrito H.',
+      en: 'Series 2003 $2 notes — Marin–Snow signatures, printed at Fort Worth — were not everyday paper from all twelve districts. USPaperMoney.Info records ordinary circulation only at Minneapolis (I): 121,600,000 notes and 3,840,000 stars in two runs, and notes that the BEP also printed some stars for collector sales. A Numismatic News archive report describes the BEP sale of stars from all twelve districts, with serials under 16000, at $9.95 each; the twelve-note matching-serial set had already sold out. A compilation of BEP products, citing Daniel Wishnatsky in Paper Money Values (November–December 2008), places 2,000 premium sets — serials 00000001* through 00002100* — and individual notes from 0002101* to 00016000*, up to 16,000 per district. This record does not treat those figures as an official BEP table. Serial H00010418★ falls in the individual-sale band, not in the first numbers of the matched set. It is neither the Minneapolis circulation star nor an ordinary district-H $2.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial H00010418★. El número de certificado no consta en esta ficha. El grado que se registra es el indicado para esta pieza: PMG 64 EPQ.',
+      en: 'A PMG or PCGS census for serial H00010418★ has not been independently verified. The certificate number is not recorded on this ficha. The grade recorded is the one given for this piece: PMG 64 EPQ.',
+    },
+    grade: {
+      es: 'PMG 64 EPQ (Choice Uncirculated, Exceptional Paper Quality)',
+      en: 'PMG 64 EPQ (Choice Uncirculated, Exceptional Paper Quality)',
+    },
+    sources: [
+      {
+        href: 'http://www.uspapermoney.info/serials/f2003_b.html',
+        es: 'USPaperMoney.Info — Series 2003 $2',
+        en: 'USPaperMoney.Info — Series 2003 $2',
+        note: {
+          es: 'Circulación ordinaria solo en Minneapolis; el texto añade estrellas para venta a coleccionistas, sin tabla por distrito.',
+          en: 'Ordinary circulation only at Minneapolis; the text adds stars for collector sales, without a district table.',
+        },
+      },
+      {
+        href: 'https://www.numismaticnews.net/archive/2-star-note-packages-new-from-bep',
+        es: 'Numismatic News — paquetes de estrellas de 2 dólares del BEP',
+        en: 'Numismatic News — $2 star note packages from the BEP',
+        note: {
+          es: 'Estrellas de los doce distritos, seriales por debajo de 16000, a 9,95 dólares cada una; el juego coincidente ya agotado.',
+          en: 'Stars from all twelve districts, serials under 16000, at $9.95 each; the matching set already sold out.',
+        },
+      },
+      {
+        href: 'http://bepcollectiblecurrency.blogspot.com/2010/09/2-federal-reserve-set.html',
+        es: 'BEP Collectible Currency — $2 Federal Reserve Set',
+        en: 'BEP Collectible Currency — $2 Federal Reserve Set',
+        note: {
+          es: 'Cita a Wishnatsky, Paper Money Values, noviembre–diciembre de 2008: 2.000 juegos y sueltas hasta 00016000*. No es una tabla del BEP.',
+          en: 'Cites Wishnatsky, Paper Money Values, November–December 2008: 2,000 sets and individuals through 00016000*. Not a BEP table.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/2',
+        es: 'U.S. Currency Education Program — 2 dólares',
+        en: 'U.S. Currency Education Program — $2 note',
+        note: {
+          es: 'Jefferson en el anverso; la Declaración de Independencia de Trumbull en el reverso desde 1976.',
+          en: 'Jefferson on the face; Trumbull’s Declaration of Independence on the back since 1976.',
         },
       },
     ],
