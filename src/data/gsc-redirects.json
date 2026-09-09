@@ -3,9 +3,9 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 195,
+    "existing": 197,
     "legacy-dc": 51,
-    "manual": 56,
+    "manual": 59,
     "last-slug": 7,
     "category-hub": 27,
     "hub-fallback": 117,
@@ -13,7 +13,7 @@
     "last-slug-hreflang": 2,
     "exists": 2
   },
-  "fuzzyOrHubPercent": 25.32,
+  "fuzzyOrHubPercent": 25.05,
   "redirects": {
     "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/": {
       "target": "",
@@ -2122,6 +2122,16 @@
     },
     "/en/coleccion/colombia/catalogo": {
       "target": "/en/collection/colombia/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/medio-peso-oro-1953/": {
+      "target": "/en/collection/colombia/medio-peso-oro-1953/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/medio-peso-oro-1953": {
+      "target": "/en/collection/colombia/medio-peso-oro-1953/",
       "status": 301,
       "rule": "existing"
     },
@@ -4575,6 +4585,26 @@
       "status": 301,
       "rule": "manual"
     },
+    "/en/identificar/": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/identificar": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/identify": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/identify/": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
+    },
     "/en/j-s-g-boggs/": {
       "target": "",
       "status": 410,
@@ -4684,6 +4714,16 @@
       "target": "/glosario/",
       "status": 301,
       "rule": "legacy-dc"
+    },
+    "/identificar": {
+      "target": "/buscar/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/identificar/": {
+      "target": "/buscar/",
+      "status": 301,
+      "rule": "manual"
     },
     "/lazaretos_1921/": {
       "target": "/coleccion/lazarettos/",
