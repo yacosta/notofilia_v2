@@ -152,10 +152,18 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
     assert.match(note.printed.es, /BG# 043/);
     assert.match(note.printed.es, /9 de agosto de 1959/);
     assert.match(note.printed.es, /no inventa un BG#/);
+    assert.match(note.printed.es, /anverso y reverso/);
     assert.match(note.description.es, /WATERLOW & SONS LIMITED/);
-    assert.match(note.description.es, /AMERICAN BANK NOTE COMPANY/);
-    assert.match(note.description.es, /No es el 1 peso ABNC/);
+    assert.match(note.description.es, /El pie del anverso y el del reverso/);
+    assert.match(note.description.es, /Pick 380/);
     assert.match(note.description.es, /Pick 404/);
+    assert.doesNotMatch(note.printed.es, /American Bank Note/);
+    assert.doesNotMatch(note.printed.en, /American Bank Note/);
+    assert.doesNotMatch(note.description.es, /AMERICAN BANK NOTE COMPANY/);
+    assert.doesNotMatch(note.description.en, /AMERICAN BANK NOTE COMPANY/);
+    assert.doesNotMatch(note.kicker.es, /ABNC/);
+    assert.doesNotMatch(note.scarcity.es, /mixt/);
+    assert.doesNotMatch(note.scarcity.en, /mixed/);
     assert.doesNotMatch(note.signatures.es, /Luis Ángel Arango/);
     assert.doesNotMatch(note.description.es, /Decreto 188/);
     const publicCopy = [
