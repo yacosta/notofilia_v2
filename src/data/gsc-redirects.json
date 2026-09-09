@@ -1855,6 +1855,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/1-peso-oro-1959/": {
+      "target": "/en/collection/colombia/1-peso-oro-1959/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1959": {
+      "target": "/en/collection/colombia/1-peso-oro-1959/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1-peso-oro-1973/": {
       "target": "/en/collection/colombia/1-peso-oro-1973/",
       "status": 301,

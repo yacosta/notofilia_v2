@@ -10,6 +10,7 @@ export type ColombiaNoteId =
   | '1-peso-oro-1945'
   | 'medio-peso-oro-1953'
   | '1-peso-oro-1954'
+  | '1-peso-oro-1959'
   | '1-peso-oro-1973'
   | '1-peso-oro-1974'
   | '2-pesos-oro-1944'
@@ -734,6 +735,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 38 para el 1.º de enero de 1954; ese H# no se sustituye por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 38 for 1 January 1954; that H# is not replaced by a 2023 Cód.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-peso-oro-1959',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1-peso-oro-1959/`,
+    pick: 'P# 398 · TBB B938',
+    serial: 'A 60870843',
+    signatures: {
+      es: 'Gerente y secretario (nombres no leídos con certeza en esta funda)',
+      en: 'Gerente and secretario (names not read with certainty from this sleeve)',
+    },
+    printed: {
+      es: 'Waterlow & Sons Limited, Londres, anverso y reverso. Emisión de circulación del Banco de la República; fecha impresa en el billete: Bogotá, 9 de agosto de 1959. Formato publicado del tipo: 140 × 70 mm. Serie A, serial de ocho dígitos 60870843. González White 2019 numera el conmemorativo de Boyacá como BG# 043 (p. 37): 7 de agosto de 1953, serie A, ocho dígitos, emisión 100.000.000, seriales 00.000.001–100.000.000, impresor Waterlow. Esa fila no lista el 9 de agosto de 1959; esta ficha no inventa un BG# para esa fecha. El serial 60870843 cae en el tramo publicado para BG# 043. El Bank Note Museum y Numista fechan el Pick 398 / TBB B938 / Hernández 44 el 7.8.1953. Las tablas BanRep de producción anual de billetes empiezan en 1960; no hay un total de denominación para 1959.',
+      en: 'Waterlow & Sons Limited, London, face and back. Banco de la República circulation issue; date printed on the note: Bogotá, 9 August 1959. Published size of the type: 140 × 70 mm. Series A, eight-digit serial 60870843. González White 2019 numbers the Boyacá commemorative as BG# 043 (p. 37): 7 August 1953, Series A, eight digits, emisión 100,000,000, serials 00.000.001–100.000.000, printer Waterlow. That row does not list 9 August 1959; this record does not invent a BG# for that date. Serial 60870843 falls in the published BG# 043 range. The Bank Note Museum and Numista date Pick 398 / TBB B938 / Hernández 44 to 7.8.1953. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1959.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1-peso-oro-1959-60870843-composite.jpg',
+      front: '/images/catalog/colombia/1-peso-oro-1959-60870843-front.jpg',
+      back: '/images/catalog/colombia/1-peso-oro-1959-60870843-back.jpg',
+    },
+    title: {
+      es: '1 peso oro · Banco de la República · 1959',
+      en: '1 peso oro · Banco de la República · 1959',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Waterlow',
+      en: 'Colombia · Banco de la República · Waterlow',
+    },
+    lead: {
+      es: 'Un peso oro de circulación del tipo Boyacá, Pick 398: serie A, serial 60870843, fecha impresa 9 de agosto de 1959. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A circulating one-peso oro of the Boyacá type, Pick 398: Series A, serial 60870843, printed date 9 August 1959. This record gathers the face and back of the same note, in a sleeve, unslabbed.',
+    },
+    description: {
+      es: 'El Banco de la República encargó este un peso oro del tipo conmemorativo de la Batalla de Boyacá (7 de agosto de 1819) a Waterlow & Sons Limited, Londres. El anverso, en azul sobre fondo policromado, lleva a la izquierda la estatua de Simón Bolívar —González White la identifica como la de Tenerani—, al centro el Puente de Boyacá rotulado en el grabado, y a la derecha el retrato circular de Francisco de Paula Santander en uniforme, que el mismo catálogo atribuye al óleo de Ricardo Acevedo Bernal. Los seriales van en rojo: 60870843, una vez arriba a la derecha y otra abajo a la izquierda. La letra de serie A aparece dos veces. La fecha impresa, a la derecha, es «BOGOTA / COLOMBIA / 9 DE AGOSTO / DE 1959». El pie del anverso y el del reverso leen «WATERLOW & SONS LIMITED. LONDRES». El reverso, en azul, muestra la cabeza de la Libertad con gorro frigio que inscribe «LIBERTAD» y las cifras 1 a ambos flancos. Los títulos bajo las firmas son GERENTE y SECRETARIO; los nombres no se leen con certeza a través de la funda y no se publican aquí. Numista asigna Luis Ángel Arango y Eduardo Arias Robledo (LAA, EAR) a la fecha de tipo 7.8.1953; esa atribución no se aplica a esta pieza sin lectura independiente. No es el 1 peso de Santander y Bolívar de la American Bank Note Company (Pick 380) ni el 1 peso azul de la Imprenta de Billetes (Pick 404), cuyo primer trabajo en Bogotá fue el 23 de octubre de 1959. Esta pieza de la colección se presenta en funda transparente de coleccionista, circulada, sin cápsula PMG ni NGC y sin número de certificado.',
+      en: 'The Banco de la República ordered this one-peso oro of the commemorative type for the Battle of Boyacá (7 August 1819) from Waterlow & Sons Limited, London. The face, blue on a multicolour underprint, carries at left the statue of Simón Bolívar — González White identifies it as Tenerani’s — at center the Puente de Boyacá, captioned on the engraving, and at right the circular portrait of Francisco de Paula Santander in uniform, which the same catalogue attributes to Ricardo Acevedo Bernal’s oil. The serials are in red: 60870843, once at upper right and once at lower left. The series letter A appears twice. The printed date, at right, is “BOGOTA / COLOMBIA / 9 DE AGOSTO / DE 1959.” The face and back imprints both read “WATERLOW & SONS LIMITED. LONDRES.” The blue back shows Liberty’s head with a Phrygian cap inscribed “LIBERTAD” and the figures 1 at each flank. The titles under the signatures are GERENTE and SECRETARIO; the names cannot be read with certainty through the sleeve and are not published here. Numista assigns Luis Ángel Arango and Eduardo Arias Robledo (LAA, EAR) to the type date 7.8.1953; that attribution is not applied to this piece without an independent reading. It is not the American Bank Note Company Santander-and-Bolívar 1-peso (Pick 380) or the Imprenta de Billetes blue 1-peso (Pick 404), whose first Bogotá job was 23 October 1959. This collection piece is shown in a clear collector’s sleeve, circulated, without a PMG or NGC holder and without a certificate number.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 peso oro, tipo Pick 398: Bolívar, Puente de Boyacá, Santander, serie A, serial 60870843 y fecha 9 de agosto de 1959.',
+      en: 'Face of the 1 peso oro, Pick 398 type: Bolívar, the Puente de Boyacá, Santander, Series A, serial 60870843, and the date 9 August 1959.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 peso oro, tipo Pick 398: Libertad con gorro frigio «LIBERTAD» y pie de Waterlow & Sons Limited, Londres.',
+      en: 'Back of the 1 peso oro, Pick 398 type: Liberty with a Phrygian cap reading “LIBERTAD,” and the Waterlow & Sons Limited, London imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 043, p. 37) publica 100.000.000 de ejemplares para el 7 de agosto de 1953, serie A de ocho dígitos, seriales 00.000.001–100.000.000, y anota que hasta 1959 fue la mayor emisión del banco desde su fundación. El Bank Note Museum describe el Pick 398 como esa fecha, Waterlow, con el puente al anverso y la Libertad al reverso. Numista agrupa el tipo bajo N# 213495 (P# 398 / TBB B938 / Hernández 44 / BG# 43) y lista solo el 7.8.1953, serie A. Esta pieza lleva fecha 9 de agosto de 1959; no se publica una tirada aparte para esa fecha. No es prueba ni espécimen. Esta ficha no sustituye la emisión BG# por un total BanRep de denominación-año.',
+      en: 'González White 2019 (BG# 043, p. 37) publishes 100,000,000 notes for 7 August 1953, eight-digit Series A, serials 00.000.001–100.000.000, and notes that until 1959 it was the bank’s largest issue since its founding. The Bank Note Museum describes Pick 398 as that date, Waterlow, with the bridge on the face and Liberty on the back. Numista groups the type under N# 213495 (P# 398 / TBB B938 / Hernández 44 / BG# 43) and lists only 7.8.1953, Series A. This piece carries the date 9 August 1959; no separate printage is published for that date. It is neither a proof nor a specimen. This record does not replace the BG# emisión with a BanRep denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 60870843. La pieza se presenta en funda, circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 60870843 has not been independently verified. The note is shown in a sleeve, circulated, unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, en funda, sin encapsular (colección privada)',
+      en: 'Circulated, in a sleeve, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0398.htm',
+        es: 'Bank Note Museum — Colombia P-398, 1 peso oro (7.8.1953)',
+        en: 'Bank Note Museum — Colombia P-398, 1 peso oro (7.8.1953)',
+        note: {
+          es: '398: 07.08.1953; estatua de Bolívar, Puente de Boyacá y Santander al anverso; Libertad al reverso; Waterlow, Londres.',
+          en: '398: 07.08.1953; Bolívar statue, Boyacá bridge, and Santander on the face; Liberty on the back; Waterlow, London.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note213495.html',
+        es: 'Numista — Colombia 1 peso oro, N# 213495',
+        en: 'Numista — Colombia 1 peso oro, N# 213495',
+        note: {
+          es: '07.08.1953: P# 398 / TBB B938; Hernández 44; BG# 43; serie A; firmas LAA y EAR en esa fecha de tipo; 140 × 70 mm; impresor Waterlow.',
+          en: '07.08.1953: P# 398 / TBB B938; Hernández 44; BG# 43; Series A; signatures LAA and EAR on that type date; 140 × 70 mm; printer Waterlow.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-1-peso-oro-1953-p-398.html',
+        es: 'Banknote World — Colombia 1 peso oro, 1953, P-398',
+        en: 'Banknote World — Colombia 1 peso oro, 1953, P-398',
+        note: {
+          es: '08.07.1953; Waterlow & Sons Limited, Londres; 140 × 70 mm.',
+          en: '08.07.1953; Waterlow & Sons Limited, London; 140 × 70 mm.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 44 para el tipo Pick 398; ese H# no se sustituye por el Cód. de 2023.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 44 for the Pick 398 type; that H# is not replaced by a 2023 Cód.',
         },
       },
     ],
