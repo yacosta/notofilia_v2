@@ -141,6 +141,7 @@ export const additions: Holding[] = [
   { id: 'co-1974-1-peso-oro-47550075', kind: 'banknote', country: 'CO' },
   { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' },
   { id: 'co-1979-10-pesos-oro-98040194', kind: 'banknote', country: 'CO' },
+  { id: 'co-1959-1-peso-oro-60870843', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -190,6 +191,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1945-1-peso-oro-p380d' },
   { id: 'co-1953-medio-peso-oro-p345b' },
   { id: 'co-1954-1-peso-oro-p380g' },
+  { id: 'co-1959-1-peso-oro-p398' },
   { id: 'co-1973-1-peso-oro-p404e' },
   { id: 'co-1974-1-peso-oro-p404e' },
   { id: 'co-1944-2-pesos-oro-p390b' },

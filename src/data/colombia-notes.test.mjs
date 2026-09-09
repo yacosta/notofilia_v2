@@ -134,6 +134,68 @@ describe('Colombia MEN 15 centavos student-transport ticket', () => {
   });
 });
 
+describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
+  it('is a distinct Pick 398 circulation note, not Pick 380 or Pick 404', () => {
+    const note = noteById('1-peso-oro-1959');
+    const note1954 = noteById('1-peso-oro-1954');
+    const note1973 = noteById('1-peso-oro-1973');
+    assert.ok(note);
+    assert.ok(note1954);
+    assert.ok(note1973);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 398 · TBB B938');
+    assert.equal(note.serial, 'A 60870843');
+    assert.notEqual(note.serial, note1954.serial);
+    assert.notEqual(note.pick, note1954.pick);
+    assert.notEqual(note.pick, note1973.pick);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /BG# 043/);
+    assert.match(note.printed.es, /9 de agosto de 1959/);
+    assert.match(note.printed.es, /no inventa un BG#/);
+    assert.match(note.description.es, /WATERLOW & SONS LIMITED/);
+    assert.match(note.description.es, /AMERICAN BANK NOTE COMPANY/);
+    assert.match(note.description.es, /No es el 1 peso ABNC/);
+    assert.match(note.description.es, /Pick 404/);
+    assert.doesNotMatch(note.signatures.es, /Luis Ángel Arango/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.doesNotMatch(publicCopy, /ESTIMADO/);
+    assert.equal(additions.some((row) => row.id === 'co-1959-1-peso-oro-60870843'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1959-1-peso-oro-p398'), true);
+  });
+
+  it('lists the 1959 1 peso oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /1 peso oro de 1959 \(Pick 398\), serial 60870843/);
+    assert.match(chapter.body.en, /1959 1 peso oro \(Pick 398\), serial 60870843/);
+    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1959 \(Pick 398\), serial 60870843/);
+    assert.match(seriesCopy.en.intro.join(' '), /1959 1 peso oro \(Pick 398\), serial 60870843/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const peso1959 = cards.filter((card) => card.note.id === '1-peso-oro-1959');
+    assert.equal(peso1959.length, 1);
+    assert.equal(peso1959[0].piece.serial, 'A 60870843');
+    assert.equal(
+      seriesCardHref(peso1959[0].note, peso1959[0].piece, 'es'),
+      '/coleccion/colombia/1-peso-oro-1959/',
+    );
+    assert.equal(
+      seriesCardHref(peso1959[0].note, peso1959[0].piece, 'en'),
+      '/en/collection/colombia/1-peso-oro-1959/',
+    );
+  });
+});
+
 describe('Colombia BanRep 1 peso oro 1973 Imprenta de Billetes', () => {
   it('is a distinct Pick 404e circulation note, not the 1945 or 1954 ABNC 1 pesos', () => {
     const note = noteById('1-peso-oro-1973');
