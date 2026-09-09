@@ -276,6 +276,7 @@ function pieceSeeds(): PieceSeed[] {
       path: note.path,
       pick: note.pick,
       serial: note.serial,
+      certificate: note.cert_number,
       title: note.title,
       dek: note.lead,
       kicker: note.kicker,

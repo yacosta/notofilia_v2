@@ -2500,21 +2500,22 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     pick: 'P#516 · Fr. 1937-H*',
     serial: 'H00010418★',
     serial_display: 'H 00010418 ★',
+    cert_number: '2458873-047',
     cert_grader: 'PMG',
     signatures: {
       es: 'Rosario Marin (tesorera) y John W. Snow (secretario del Tesoro)',
       en: 'Rosario Marin (Treasurer) and John W. Snow (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP, Fort Worth (FW). Emisión de coleccionista de la serie 2003, no la tirada de circulación de Minneapolis. El contador 00010418 queda por debajo de 16000.',
-      en: 'BEP, Fort Worth (FW). A Series 2003 collector printing, not the Minneapolis circulation run. Counter 00010418 falls under 16000.',
+      es: 'BEP, Fort Worth (FW). Marcas de plancha D3 (arriba a la izquierda) y FW D 1 (abajo a la derecha); la etiqueta PMG imprime posición de plancha D. Emisión de coleccionista de la serie 2003, no la tirada de circulación de Minneapolis. El contador 00010418 queda por debajo de 16000.',
+      en: 'BEP, Fort Worth (FW). Plate marks D3 (upper left) and FW D 1 (lower right); the PMG label prints plate position D. A Series 2003 collector printing, not the Minneapolis circulation run. Counter 00010418 falls under 16000.',
     },
     images: {
-      composite: '/images/note-photograph-pending.png',
-      front: '/images/note-photograph-pending.png',
-      back: '/images/note-photograph-pending.png',
-      width: 1200,
-      height: 800,
+      composite: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg',
+      width: 1800,
+      height: 1200,
     },
     title: {
       es: '2 dólares · Serie 2003 · San Luis ★',
@@ -2525,32 +2526,32 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'United States · Federal Reserve Note',
     },
     lead: {
-      es: 'Reemplazo con estrella del distrito de San Luis (H / 8), serial H 00010418 ★, Friedberg 1937-H*, encapsulado PMG 64 EPQ. Las fotografías de este ejemplar aún no están en la ficha.',
-      en: 'St. Louis district (H / 8) star replacement, serial H 00010418 ★, Friedberg 1937-H*, slabbed PMG 64 EPQ. Photographs of this piece are not yet on the record.',
+      es: 'Anverso encapsulado con Jefferson, sello de San Luis (H / 8) y serial de reemplazo H 00010418 ★; reverso con la Declaración de Independencia de Trumbull. PMG 64 EPQ, certificado 2458873-047.',
+      en: 'Slabbed face with Jefferson, the St. Louis seal (H / 8), and replacement serial H 00010418 ★; back with Trumbull’s Declaration of Independence. PMG 64 EPQ, certificate 2458873-047.',
     },
     description: {
-      es: 'El 2 dólares de la serie 2003 (Pick 516, Friedberg 1937-H*) es un Federal Reserve Note de tamaño pequeño del distrito de San Luis: sello negro con la H, el 8 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Thomas Jefferson y, a la derecha, el sello del Tesoro. Las firmas son las de Rosario Marin y John W. Snow. El reverso, en verde, reproduce la Declaración de Independencia de John Trumbull. Esta pieza de la colección es un reemplazo: la estrella cierra el serial H 00010418 ★ (bloque H★). Se presenta encapsulada por PMG como Choice Uncirculated 64 EPQ. El número de certificado no consta en esta ficha. Las fotografías del anverso y del reverso de este serial aún no se publican aquí; los recuadros no son el billete.',
-      en: 'The Series 2003 $2 (Pick 516, Friedberg 1937-H*) is a small-size Federal Reserve Note of the St. Louis district: a black seal with H, 8s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI.” The black face with green seal and serials carries Thomas Jefferson and, at right, the Treasury seal. The signatures are Rosario Marin and John W. Snow. The green back reproduces John Trumbull’s Declaration of Independence. This collection piece is a replacement: a star closes serial H 00010418 ★ (H★ block). It is slabbed by PMG as Choice Uncirculated 64 EPQ. The certificate number is not recorded on this ficha. Photographs of the face and back of this serial are not yet published here; the panels are not the note.',
+      es: 'El 2 dólares de la serie 2003 (Pick 516, Friedberg 1937-H*) es un Federal Reserve Note de tamaño pequeño del distrito de San Luis: sello negro con la H, el 8 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Thomas Jefferson y, a la derecha, el sello del Tesoro sobre TWO. Las firmas son las de Rosario Marin y John W. Snow; la serie impresa, 2003, queda junto al secretario. Los seriales verdes H00010418★ se repiten abajo a la izquierda y arriba a la derecha (bloque H★). Las marcas de plancha son D3 arriba a la izquierda y FW D 1 abajo a la derecha: el prefijo FW identifica la planta de Fort Worth. El reverso, en verde, reproduce la Declaración de Independencia de John Trumbull, con IN GOD WE TRUST bajo la escena. Esta pieza de la colección está encapsulada por PMG como Choice Uncirculated 64 EPQ; el certificado 2458873-047 identifica el serial H00010418*, Fr. 1937-H*, firmas Marin | Snow | FW, posición de plancha D y el pedigrí «Rickey Collection» impreso en la etiqueta. No es un 2 dólares ordinario del distrito H ni la estrella de circulación de Minneapolis.',
+      en: 'The Series 2003 $2 (Pick 516, Friedberg 1937-H*) is a small-size Federal Reserve Note of the St. Louis district: a black seal with H, 8s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI.” The black face with green seal and serials carries Thomas Jefferson and, at right, the Treasury seal over TWO. The signatures are Rosario Marin and John W. Snow; the printed series, 2003, sits beside the Secretary. Green serials H00010418★ repeat at lower left and upper right (H★ block). Plate marks are D3 at upper left and FW D 1 at lower right: the FW prefix identifies the Fort Worth plant. The green back reproduces John Trumbull’s Declaration of Independence, with IN GOD WE TRUST under the scene. This collection piece is slabbed by PMG as Choice Uncirculated 64 EPQ; certificate 2458873-047 records serial H00010418*, Fr. 1937-H*, Marin | Snow | FW signatures, plate position D, and the pedigree “Rickey Collection” printed on the label. It is neither an ordinary district-H $2 nor the Minneapolis circulation star.',
     },
     frontCaption: {
-      es: 'Fotografía pendiente del anverso del 2 dólares, serie 2003, San Luis, serial H 00010418 ★. Este recuadro no es el billete.',
-      en: 'Photograph pending of the face of the Series 2003 $2, St. Louis, serial H 00010418 ★. This panel is not the note.',
+      es: 'Anverso encapsulado del 2 dólares, serie 2003, distrito de San Luis, serial H 00010418 ★: Jefferson, sello verde del Tesoro y etiqueta PMG 64 EPQ.',
+      en: 'Slabbed face of the Series 2003 $2, St. Louis district, serial H 00010418 ★: Jefferson, the green Treasury seal, and the PMG 64 EPQ label.',
     },
     backCaption: {
-      es: 'Fotografía pendiente del reverso del 2 dólares, serie 2003, San Luis: Declaración de Independencia de Trumbull. Este recuadro no es el billete.',
-      en: 'Photograph pending of the back of the Series 2003 $2: Trumbull’s Declaration of Independence. This panel is not the note.',
+      es: 'Reverso encapsulado del 2 dólares, serie 2003, certificado PMG 2458873-047: Declaración de Independencia de Trumbull y Exceptional Paper Quality.',
+      en: 'Slabbed back of the Series 2003 $2, PMG certificate 2458873-047: Trumbull’s Declaration of Independence and Exceptional Paper Quality.',
     },
     scarcity: {
       es: 'La serie 2003 del 2 dólares —firmas Marin–Snow, impresa en Fort Worth— no es el papel cotidiano de los doce distritos. USPaperMoney.Info registra la circulación ordinaria solo en Minneapolis (I): 121.600.000 notas y 3.840.000 estrellas en dos tiradas, y anota que el BEP imprimió además unas estrellas para venta a coleccionistas. Numismatic News (archivo) describe la venta del BEP de estrellas de los doce distritos, con seriales por debajo de 16000, a 9,95 dólares cada una; el juego de doce con seriales coincidentes ya se había agotado. Una recopilación de productos del BEP, que cita a Daniel Wishnatsky en Paper Money Values (noviembre–diciembre de 2008), sitúa 2.000 juegos premium —seriales 00000001* a 00002100*— y las notas sueltas en 0002101* a 00016000*, hasta 16.000 por distrito. Esta ficha no trata esas cifras como una tabla oficial del BEP. El serial H00010418★ cae en la banda de las sueltas, no en los primeros números del juego coincidente. No es la estrella de circulación de Minneapolis ni un 2 dólares ordinario del distrito H.',
       en: 'Series 2003 $2 notes — Marin–Snow signatures, printed at Fort Worth — were not everyday paper from all twelve districts. USPaperMoney.Info records ordinary circulation only at Minneapolis (I): 121,600,000 notes and 3,840,000 stars in two runs, and notes that the BEP also printed some stars for collector sales. A Numismatic News archive report describes the BEP sale of stars from all twelve districts, with serials under 16000, at $9.95 each; the twelve-note matching-serial set had already sold out. A compilation of BEP products, citing Daniel Wishnatsky in Paper Money Values (November–December 2008), places 2,000 premium sets — serials 00000001* through 00002100* — and individual notes from 0002101* to 00016000*, up to 16,000 per district. This record does not treat those figures as an official BEP table. Serial H00010418★ falls in the individual-sale band, not in the first numbers of the matched set. It is neither the Minneapolis circulation star nor an ordinary district-H $2.',
     },
     population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial H00010418★. El número de certificado no consta en esta ficha. El grado que se registra es el indicado para esta pieza: PMG 64 EPQ.',
-      en: 'A PMG or PCGS census for serial H00010418★ has not been independently verified. The certificate number is not recorded on this ficha. The grade recorded is the one given for this piece: PMG 64 EPQ.',
+      es: 'PMG publica informes de población de Federal Reserve Notes, pero el recuento concreto de Fr. 1937-H* en 64 EPQ no se ha verificado aquí de forma independiente. Se documenta el certificado 2458873-047 y el grado impreso en el encapsulado, no un censo.',
+      en: 'PMG publishes population reports for Federal Reserve Notes, but the specific Fr. 1937-H* grade-64 EPQ headcount has not been independently verified here. This page records certificate 2458873-047 and the grade printed on the holder, not a census total.',
     },
     grade: {
-      es: 'PMG 64 EPQ (Choice Uncirculated, Exceptional Paper Quality)',
-      en: 'PMG 64 EPQ (Choice Uncirculated, Exceptional Paper Quality)',
+      es: 'PMG 64 EPQ · certificado 2458873-047',
+      en: 'PMG 64 EPQ · certificate 2458873-047',
     },
     sources: [
       {
@@ -2587,6 +2588,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Jefferson en el anverso; la Declaración de Independencia de Trumbull en el reverso desde 1976.',
           en: 'Jefferson on the face; Trumbull’s Declaration of Independence on the back since 1976.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/verify',
+        es: 'PMG — Verificación de certificado 2458873-047',
+        en: 'PMG — Certificate verification 2458873-047',
+        note: {
+          es: 'El encapsulado imprime Fr. 1937-H*, serial H00010418*, firmas Marin | Snow | FW, Choice Uncirculated 64 EPQ, posición de plancha D y el pedigrí Rickey Collection.',
+          en: 'The holder prints Fr. 1937-H*, serial H00010418*, Marin | Snow | FW signatures, Choice Uncirculated 64 EPQ, plate position D, and the Rickey Collection pedigree.',
         },
       },
     ],
