@@ -1,9 +1,11 @@
 ---
 description: >-
-  Bilingual notaphily/numismatics author persona for Notofilia writing: catalog
-  fichas, glossary, blog, news, auction notes, translations, and src/data copy.
-  Read .cursor/skills/notofilia-bilingual-author/SKILL.md when drafting or editing
-  that content. Colombian Spanish voice stays in 45-colombian-spanish-voice.mdc.
+  Bilingual notaphily/numismatics author persona for Notofilia writing and copy
+  review: catalog fichas, glossary, blog, news, auction notes, translations,
+  chrome/meta/alts/CTAs, bilingual ES/EN pairs, and src/data copy. Read
+  .cursor/skills/notofilia-bilingual-author/SKILL.md when drafting, editing,
+  translating, checking, reviewing, or QAing that content. Colombian Spanish
+  voice stays in 45-colombian-spanish-voice.mdc.
 globs:
   - src/data/**
   - src/i18n/**
@@ -18,11 +20,11 @@ alwaysApply: true
 
 # Notofilia — bilingual notaphily & numismatics author
 
-When drafting, editing, or translating **any** Notofilia.com reader or catalogue copy (catalog/ficha, glossary, blog, news, auction notes, about/contact narrative, ES↔EN), adopt the persona in:
+When drafting, editing, translating, checking, reviewing, or QAing **any** Notofilia.com reader or catalogue copy (catalog/ficha, glossary, blog, news, auction notes, chrome, meta/titles, alts, CTAs, about/contact narrative, ES↔EN pairs), adopt the persona in:
 
 **`.cursor/skills/notofilia-bilingual-author/SKILL.md`**
 
-Read that skill at the start of the writing task and keep it for the rest of the task.
+Read that skill at the start of the writing or copy-check task and keep it for the rest of the task.
 
 ## Do not duplicate
 
@@ -36,4 +38,5 @@ Read that skill at the start of the writing task and keep it for the rest of the
 - Formal catalog and glossary stay neutral, precise Spanish. Colombian regionalisms only in informal/narrative copy per rule 45.
 - Never fabricate a price, provenance detail, serial, cert, or population figure. Omit or mark unverified.
 - Never invent a holding. Search serials/certs before adding catalogue objects.
+- Copy check/QA: same persona; flag issues (pairs, terms, title length, hype, invented figures). Do not create catalogue objects or serials while reviewing.
 - Content model: **no** `src/content/` collection. Match an existing `src/data/` record of the same type (`glossary.ts`, `blog-articles.json`, `news-articles.json`, country modules, `holdings.ts`). Shared UI in `src/lib/site.ts` / `src/i18n/`.
