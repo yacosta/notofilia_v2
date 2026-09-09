@@ -132,6 +132,16 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(localizePath('/identificar/', 'en'), '/en/identify/');
     assert.equal(localizePath('/en/identify/', 'es'), '/identificar/');
+    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
+    assert.equal(localizePath('/en/tools/', 'es'), '/herramientas/');
+    assert.equal(
+      localizePath('/herramientas/numeracion-especial/', 'en'),
+      '/en/tools/fancy-serial-checker/',
+    );
+    assert.equal(
+      localizePath('/en/tools/fancy-serial-checker/', 'es'),
+      '/herramientas/numeracion-especial/',
+    );
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/', 'en'),
@@ -488,7 +498,12 @@ describe('locale path mapping', () => {
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
     );
-    assert.equal(redirects['/en/glosario/'], '/en/glossary/');
+    assert.equal(redirects['/en/identificar/'], '/en/identify/');
+    assert.equal(redirects['/en/herramientas/'], '/en/tools/');
+    assert.equal(
+      redirects['/en/herramientas/numeracion-especial/'],
+      '/en/tools/fancy-serial-checker/',
+    );
     assert.equal(redirects['/en/noticias/'], '/en/news/');
     assert.equal(redirects['/en/contacto/'], '/en/contact/');
     assert.equal(redirects['/en/coleccion/united-states/'], '/en/collection/united-states/');

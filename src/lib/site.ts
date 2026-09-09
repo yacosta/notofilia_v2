@@ -308,6 +308,8 @@ export const stubPages = [
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
   { path: 'identificar', es: 'Identificar', en: 'Identify' },
+  { path: 'herramientas', es: 'Herramientas', en: 'Tools' },
+  { path: 'herramientas/numeracion-especial', es: 'Numeración especial', en: 'Fancy serial checker' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
@@ -363,6 +365,8 @@ const dedicatedEs = [
   'contacto',
   'buscar',
   'identificar',
+  'herramientas',
+  'herramientas/numeracion-especial',
   ...blogSlugs,
   ...newsSlugs,
 ];
