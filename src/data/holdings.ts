@@ -147,6 +147,7 @@ export const additions: Holding[] = [
   { id: 'co-1979-10-pesos-oro-98040194', kind: 'banknote', country: 'CO' },
   { id: 'co-1959-1-peso-oro-60870843', kind: 'banknote', country: 'CO' },
   { id: 'us-frn-2003-2-st-louis-h00010418', kind: 'banknote', country: 'US' },
+  { id: 'co-2000-1000-pesos-error-693949988', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -223,6 +224,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-1869-junta-central-recibo' },
   { id: 'pr-1869-junta-1-peso-p61' },
   { id: 'us-frn-2003-2-st-louis-h00010418' },
+  { id: 'co-2000-1000-pesos-error-p450' },
 ];
 
 export type CollectionStats = {
