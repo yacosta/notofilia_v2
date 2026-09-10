@@ -3,7 +3,9 @@
  *
  * How to add a banknote or coin:
  *   Always **append** to `additions` (newest last). Do not insert into a
- *   country group. The homepage “Logros del Mes” list is the last rows.
+ *   country group or next to the same series/denomination. Site-addition
+ *   order is this array’s order. The homepage “Logros del Mes” list is
+ *   the last rows, newest first.
  *   additions.push({ id: 'co-1923-1-peso', kind: 'banknote', country: 'CO' })
  *   additions.push({ id: 'es-colonial-escudo', kind: 'coin', country: 'ES' })
  *
@@ -62,7 +64,9 @@ if (baselineCountrySet.size !== BASELINE.countries) {
 
 /**
  * Newly catalogued physical pieces (newest last).
- * Each entry increments banknotes or coins. Homepage milestones read from the end.
+ * Each entry increments banknotes or coins. Homepage milestones read from
+ * the end (newest catalogued holding first). Never splice a new row into
+ * an existing country or type cluster.
  */
 export const additions: Holding[] = [
   { id: 'ph-1944-1-peso-f70618009', kind: 'banknote', country: 'PH' },
@@ -138,11 +142,11 @@ export const additions: Holding[] = [
   { id: 'co-1979-5-pesos-oro-00141180', kind: 'banknote', country: 'CO' },
   { id: 'co-1953-medio-peso-oro-c5256707', kind: 'banknote', country: 'CO' },
   { id: 'us-frn-1934a-1000-new-york-b00411221', kind: 'banknote', country: 'US' },
-  { id: 'us-frn-2003-2-st-louis-h00010418', kind: 'banknote', country: 'US' },
   { id: 'co-1974-1-peso-oro-47550075', kind: 'banknote', country: 'CO' },
   { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' },
   { id: 'co-1979-10-pesos-oro-98040194', kind: 'banknote', country: 'CO' },
   { id: 'co-1959-1-peso-oro-60870843', kind: 'banknote', country: 'CO' },
+  { id: 'us-frn-2003-2-st-louis-h00010418', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */

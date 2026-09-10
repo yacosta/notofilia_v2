@@ -108,7 +108,8 @@ function toMilestone(holding: Holding, piece: CatalogPiece): MilestoneItem {
 
 /**
  * Homepage milestones: newest catalogued holdings first.
- * Recency is the order of `additions` (append new rows at the end).
+ * Recency is site-addition order in `additions` (append new rows at the
+ * end; do not sort by printed date, Pick, or denomination).
  */
 export function milestonesFromHoldings(
   holdings: Holding[],

@@ -74,6 +74,16 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(piece.href, /1000-dolares-serie-1934a-nueva-york/);
   });
 
+  it('keeps later catalogued holdings after earlier ones in additions', () => {
+    const stLouis = additions.findIndex((row) => row.id === 'us-frn-2003-2-st-louis-h00010418');
+    const peso1959 = additions.findIndex((row) => row.id === 'co-1959-1-peso-oro-60870843');
+    assert.ok(stLouis >= 0 && peso1959 >= 0);
+    assert.ok(
+      stLouis > peso1959,
+      'append when catalogued; do not insert beside other FRNs',
+    );
+  });
+
   it('lists newly appended holdings first', () => {
     const pieces = colombiaPieces();
     const newest = { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' };
