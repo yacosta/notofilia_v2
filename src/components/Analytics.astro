@@ -20,7 +20,12 @@ import { CONSENT_STORAGE_KEY, GA_MEASUREMENT_ID } from '../lib/analytics';
 <script define:vars={{ GA_MEASUREMENT_ID, CONSENT_STORAGE_KEY }} is:inline>
   try {
     if (localStorage.getItem(CONSENT_STORAGE_KEY) === 'granted') {
-      gtag('consent', 'update', { analytics_storage: 'granted' });
+      gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+      });
     }
   } catch (e) {}
   gtag('js', new Date());
