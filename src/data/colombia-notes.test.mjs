@@ -908,3 +908,72 @@ describe('Colombia BanRep 50 pesos oro 1984 Imprenta de Billetes', () => {
     );
   });
 });
+
+describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
+  it('is a distinct BanRep specimen with SPECIMEN Nº 027, not the 1960 or 1983 zero-serial notes', () => {
+    const note = noteById('100-pesos-oro-1980');
+    const five = noteById('5-pesos-oro-1960');
+    const twoThousand = noteById('2000-pesos-oro-1983');
+    assert.ok(note);
+    assert.ok(five);
+    assert.ok(twoThousand);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 418s');
+    assert.equal(note.serial, '00000000 · SPECIMEN Nº 027');
+    assert.notEqual(note.serial, five.serial);
+    assert.notEqual(note.serial, twoThousand.serial);
+    assert.notEqual(note.path, five.path);
+    assert.notEqual(note.path, twoThousand.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.kicker.es, /Espécimen/);
+    assert.match(note.kicker.en, /specimen/i);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /100\.000\.000 de ejemplares/);
+    assert.match(note.printed.es, /no da una tirada de especímenes/);
+    assert.match(note.printed.es, /no registra producción de 100 pesos/);
+    assert.match(note.description.es, /SPECIMEN Nº 027/);
+    assert.match(note.description.en, /SPECIMEN Nº 027/);
+    assert.match(note.description.es, /418b/);
+    assert.match(note.description.es, /Capitolio Nacional/);
+    assert.match(note.description.en, /National Capitol/);
+    assert.match(note.description.es, /Pick 405s/);
+    assert.match(note.description.es, /Pick 430as/);
+    assert.match(note.scarcity.es, /no inventa una tirada de especímenes/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1980-100-pesos-oro-specimen-027'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-100-pesos-oro-p418s'), true);
+  });
+
+  it('lists the 1980 100 pesos oro specimen on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /espécimen de 100 pesos oro de 1980 \(Pick 418s\), SPECIMEN Nº 027/);
+    assert.match(chapter.body.en, /1980 100 pesos oro specimen \(Pick 418s\), SPECIMEN Nº 027/);
+    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 100 pesos oro de 1980 \(Pick 418s\), SPECIMEN Nº 027/);
+    assert.match(seriesCopy.en.intro.join(' '), /1980 100 pesos oro specimen \(Pick 418s\), SPECIMEN Nº 027/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const specimen = cards.filter((card) => card.note.id === '100-pesos-oro-1980');
+    assert.equal(specimen.length, 1);
+    assert.equal(specimen[0].piece.serial, '00000000 · SPECIMEN Nº 027');
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'es'),
+      '/coleccion/colombia/100-pesos-oro-1980/',
+    );
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'en'),
+      '/en/collection/colombia/100-pesos-oro-1980/',
+    );
+  });
+});
