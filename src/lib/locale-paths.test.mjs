@@ -356,6 +356,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/10-pesos-oro-1979/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/20-pesos-oro-1983/', 'en'),
+      '/en/collection/colombia/20-pesos-oro-1983/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/50-pesos-oro-1974/', 'en'),
       '/en/collection/colombia/50-pesos-oro-1974/',
     );
@@ -390,6 +394,10 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/colombia/2000-pesos-2015/', 'en'),
       '/en/collection/colombia/2000-pesos-2015/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/1000-pesos-error-2000/', 'en'),
+      '/en/collection/colombia/1000-pesos-error-2000/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/1000-pesos-error-2008/', 'en'),

@@ -1935,6 +1935,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/1000-pesos-error-2000/": {
+      "target": "/en/collection/colombia/1000-pesos-error-2000/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1000-pesos-error-2000": {
+      "target": "/en/collection/colombia/1000-pesos-error-2000/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1000-pesos-error-2008/": {
       "target": "/en/collection/colombia/1000-pesos-error-2008/",
       "status": 301,
@@ -1992,6 +2002,16 @@
     },
     "/en/coleccion/colombia/2-pesos-oro-1955/": {
       "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/20-pesos-oro-1983/": {
+      "target": "/en/collection/colombia/20-pesos-oro-1983/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/20-pesos-oro-1983": {
+      "target": "/en/collection/colombia/20-pesos-oro-1983/",
       "status": 301,
       "rule": "existing"
     },

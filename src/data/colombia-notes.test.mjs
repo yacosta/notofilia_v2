@@ -977,3 +977,80 @@ describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
     );
   });
 });
+
+describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
+  it('is a distinct Pick 409d circulation note, not an asterisk replacement', () => {
+    const note = noteById('20-pesos-oro-1983');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 409d · TBB B951l');
+    assert.equal(note.serial, '056462955');
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no publica un BG# ni una emisión adivinados/);
+    assert.match(note.printed.es, /60,5 millones/);
+    assert.match(note.printed.es, /denominación ese año/);
+    assert.match(note.printed.es, /no la tirada de esta fecha/);
+    assert.match(note.scarcity.es, /60,5 millones/);
+    assert.match(note.scarcity.es, /denominación-año/);
+    assert.match(note.description.es, /No hay asterisco/);
+    assert.match(note.description.es, /no es reposición/);
+    assert.match(note.description.es, /056462955/);
+    assert.match(note.description.es, /Caldas/);
+    assert.match(note.description.en, /Caldas/);
+    assert.match(note.description.es, /Museo del Oro/);
+    assert.match(note.description.es, /409a/);
+    assert.match(note.printed.es, /Cód\. 243/);
+    assert.match(note.printed.en, /Cód\. 243/);
+    assert.match(note.printed.es, /Cód\. 244/);
+    assert.match(note.description.es, /Cód\. 244/);
+    assert.match(note.description.en, /Cód\. 244/);
+    assert.match(note.scarcity.es, /Cód\. 243/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.es, /L100183/);
+    assert.match(hernandez.en, /L100183/);
+    assert.match(hernandez.note.es, /Hernández 243/);
+    assert.match(hernandez.note.en, /Hernández 243/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1983-20-pesos-oro-056462955'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1983-20-pesos-oro-p409d'), true);
+  });
+
+  it('lists the 1983 20 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /20 pesos oro de 1983 \(Pick 409d\), serial 056462955/);
+    assert.match(chapter.body.en, /1983 20 pesos oro \(Pick 409d\), serial 056462955/);
+    assert.match(seriesCopy.es.intro.join(' '), /20 pesos oro de 1983 \(Pick 409d\), serial 056462955/);
+    assert.match(seriesCopy.en.intro.join(' '), /1983 20 pesos oro \(Pick 409d\), serial 056462955/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '20-pesos-oro-1983');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '056462955');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/20-pesos-oro-1983/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/20-pesos-oro-1983/',
+    );
+  });
+});

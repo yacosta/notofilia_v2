@@ -21,6 +21,7 @@ export type ColombiaNoteId =
   | '5-pesos-oro-1980'
   | '10-pesos-oro-1976'
   | '10-pesos-oro-1979'
+  | '20-pesos-oro-1983'
   | '50-pesos-oro-1974'
   | '50-pesos-oro-1984'
   | '100-pesos-oro-1980'
@@ -31,6 +32,7 @@ export type ColombiaNoteId =
   | '2000-pesos-2015'
   | '20000-pesos-2017'
   | 'tiquete-estudiantil-15-centavos'
+  | '1000-pesos-error-2000'
   | '1000-pesos-error-2008'
   | '1000-pesos-error-2011'
   | '50000-pesos-error-2008'
@@ -2027,6 +2029,118 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '20-pesos-oro-1983',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}20-pesos-oro-1983/`,
+    pick: 'P# 409d · TBB B951l',
+    serial: '056462955',
+    signatures: {
+      es: 'Hugo Palacios Mejía (gerente general) y Francisco José Ortega (secretario)',
+      en: 'Hugo Palacios Mejía (gerente general) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1983. Nueve dígitos, sin letra de serie. González White 2019 (pp. 73–74) lista fechas ENERO 1º 1983 en el pliego VEINTE PESOS 1975–1983, con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# ni una emisión adivinados. Hernández (8.ª ed., 2023) numera el 1.º de enero de 1983 ordinario como Cód. 243 —Numista concuerda Hernández 243, P# 409d y TBB B951l—; Cód. 244 es la reposición con asterisco en el anverso. El serial 056462955 es un número ordinario de nueve dígitos, fuera de las bandas de asterisco de González White en ese pliego (alrededor de 00.100.xxx–00.273.xxx) y fuera del intervalo del anexo 2 de Hernández para esta fecha (00102221–00171449). El Bank Note Museum agrupa el tipo 409d en 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983, distinto del 409a–c (1966–1977). Formato publicado: 140 × 70 mm. Sin hilo de seguridad ni marca de agua. Hernández anota que el veinte pesos oro se extinguió en 1983, sustituido por monedas de cobre de veinte pesos. La tabla BanRep de 1983 registra 60,5 millones de piezas de 20 pesos: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 January 1983. Nine digits, no series letter. González White 2019 (pp. 73–74) lists ENERO 1º 1983 dates on the VEINTE PESOS 1975–1983 spread, with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG# or emisión. Hernández (8th ed., 2023) numbers the ordinary 1 January 1983 as Cód. 243 — Numista concurs Hernández 243, P# 409d, and TBB B951l; Cód. 244 is the replacement with an asterisk on the face. Serial 056462955 is an ordinary nine-digit number, outside González White’s asterisk bands on that spread (around 00.100.xxx–00.273.xxx) and outside Hernández’s annex 2 interval for this date (00102221–00171449). The Bank Note Museum groups type 409d under 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983, distinct from 409a–c (1966–1977). Published size: 140 × 70 mm. No security thread and no watermark. Hernández notes that the twenty-peso oro ended in 1983, replaced by copper twenty-peso coins. BanRep’s 1983 table records 60.5 million 20-peso notes: all production of that face value that year, not this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/20-pesos-oro-1983-056462955-composite.jpg',
+      front: '/images/catalog/colombia/20-pesos-oro-1983-056462955-front.jpg',
+      back: '/images/catalog/colombia/20-pesos-oro-1983-056462955-back.jpg',
+    },
+    title: {
+      es: '20 pesos oro · Banco de la República · 1983',
+      en: '20 pesos oro · Banco de la República · 1983',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Veinte pesos oro de circulación, Pick 409d: serial de nueve dígitos 056462955, 1.º de enero de 1983. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es la reposición con asterisco (Hernández Cód. 244) ni las fechas 409a–c de 1966–1977.',
+      en: 'A circulating twenty-peso oro, Pick 409d: nine-digit serial 056462955, 1 January 1983. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the asterisk replacement (Hernández Cód. 244) nor the 409a–c dates of 1966–1977.',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este veinte pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. Es la última fecha del tipo Caldas / Museo del Oro: Hernández (8.ª ed., 2023) sitúa el nacimiento de la denominación en 1927 y su extinción en 1983, cuando las monedas de cobre de veinte pesos la sustituyeron. El anverso, en pardo, verde, naranja y violeta sobre policromía, lleva a la derecha el retrato de Francisco José de Caldas —rotulado «CALDAS» bajo el óvalo— con la mano sobre un globo terráqueo. Al centro, la promesa de pagar al portador veinte pesos oro y la cifra 20. Los seriales van en rojo: 056462955, una vez a media altura a la izquierda y otra abajo a la derecha. No hay letra de serie. La fecha impresa es «ENERO 1º DE 1983», con «BOGOTÁ» a la izquierda y «COLOMBIA» a la derecha. Las firmas son las de Hugo Palacios Mejía (gerente general) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (HPM, FJO) y el que Banknote World registra en el P-409d.4. No hay asterisco junto a los títulos: no es reposición ni el Cód. 244. El reverso, en pardo sobre marco policromado, muestra piezas del Museo del Oro —rotulado así en el papel—, el sello del banco con la Libertad («BANCO DE LA REPÚBLICA / COLOMBIA») y las cifras 20. El tipo 409d, según el Bank Note Museum, cubre 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983; Numista agrupa el diseño 1966–1983 bajo N# 202344 y cita Hernández 243 y TBB B951l para esta fecha, sin hilo. Distinto del 409a (1966–1973), del 409b y 409c de 1974–1977 y de las reposiciones con asterisco. Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this twenty-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. It is the last date of the Caldas / Museo del Oro type: Hernández (8th ed., 2023) places the denomination’s start in 1927 and its end in 1983, when copper twenty-peso coins replaced it. The face, brown, green, orange, and violet on a multicolour underprint, carries Francisco José de Caldas’s portrait at right — labelled “CALDAS” under the oval — with his hand on a terrestrial globe. At center is the promise to pay the bearer twenty gold pesos and the figure 20. The serials are in red: 056462955, once at mid-left and once at lower right. There is no series letter. The printed date is “ENERO 1º DE 1983,” with “BOGOTÁ” at left and “COLOMBIA” at right. The signatures are those of Hugo Palacios Mejía (gerente general) and Francisco José Ortega (secretario), the pair Numista assigns to this date (HPM, FJO) and the pair Banknote World records on P-409d.4. There is no asterisk by the titles: it is not a replacement and not Cód. 244. The back, brown in a multicolour frame, shows objects from the Museo del Oro — labelled on the paper — the bank’s Liberty seal (“BANCO DE LA REPÚBLICA / COLOMBIA”), and the figures 20. Type 409d, per the Bank Note Museum, covers 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983; Numista groups the 1966–1983 design under N# 202344 and cites Hernández 243 and TBB B951l for this date, without a thread. Distinct from 409a (1966–1973), from 409b and 409c of 1974–1977, and from the asterisk replacements. This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 20 pesos oro, Pick 409d: Caldas con el globo, serial 056462955 y fecha 1.º de enero de 1983.',
+      en: 'Face of the 20 pesos oro, Pick 409d: Caldas with the globe, serial 056462955, and the date 1 January 1983.',
+    },
+    backCaption: {
+      es: 'Reverso del 20 pesos oro, Pick 409d: piezas del Museo del Oro y sello del Banco de la República.',
+      en: 'Back of the 20 pesos oro, Pick 409d: objects from the Museo del Oro and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 73–74) cataloga la fecha del 1.º de enero de 1983 en el pliego del 20 pesos 1975–1983, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 243 y la reposición con asterisco Cód. 244. El serial 056462955 no cae en las bandas de White de ese pliego ni en el intervalo del anexo 2 para esta fecha. El Bank Note Museum describe el Pick 409d como las fechas 01.04.1979 y 01.01.1981–1983: Caldas y globo al anverso, Museo del Oro al reverso. Numista agrupa el diseño bajo N# 202344 y marca la frecuencia de la fecha 01.01.1983, sin hilo, en un 43 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni las fechas 409a–c. No se publican columnas de precios de Hernández. La tabla BanRep de 1983 (60,5 millones de piezas de 20 pesos) es un total de denominación-año, no la tirada de esta fecha. Esta ficha no sustituye esa cifra por una tirada de fecha.',
+      en: 'González White 2019 (pp. 73–74) lists 1 January 1983 on the 1975–1983 20-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 243 and the asterisk replacement Cód. 244. Serial 056462955 does not sit in White’s bands on that spread nor in the annex 2 interval for this date. The Bank Note Museum describes Pick 409d as the 01.04.1979 and 01.01.1981–1983 dates: Caldas and globe on the face, Museo del Oro on the back. Numista groups the design under N# 202344 and marks the 01.01.1983 no-thread date’s frequency at 43% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor the 409a–c dates. Hernández price columns are not republished. BanRep’s 1983 table (60.5 million 20-peso notes) is a denomination-year total, not this date’s printage. This record does not replace that figure with a date printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 056462955. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 056462955 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0409.htm',
+        es: 'Bank Note Museum — Colombia P-409, 20 pesos oro (1966–1983)',
+        en: 'Bank Note Museum — Colombia P-409, 20 pesos oro (1966–1983)',
+        note: {
+          es: '409d: 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983; anverso Caldas y globo, reverso Museo del Oro. Distinto del 409a (1966–1973), del 409b (1974 con hilo) y del 409c (1974–1977 sin hilo).',
+          en: '409d: 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983; Caldas and globe on the face, Museo del Oro on the back. Distinct from 409a (1966–1973), 409b (1974 with thread), and 409c (1974–1977 without thread).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202344.html',
+        es: 'Numista — Colombia 20 pesos oro, N# 202344',
+        en: 'Numista — Colombia 20 pesos oro, N# 202344',
+        note: {
+          es: '01.01.1983: P# 409d / TBB B951l; Hernández 243; firmas HPM y FJO; 140 × 70 mm; sin hilo; frecuencia 43 % en el tipo. La reposición de la misma fecha es Hernández 244.',
+          en: '01.01.1983: P# 409d / TBB B951l; Hernández 243; signatures HPM and FJO; 140 × 70 mm; no thread; 43% frequency within the type. The replacement of the same date is Hernández 244.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-20-pesos-oro-1983-p-409d-4.html',
+        es: 'Banknote World — Colombia 20 pesos oro 1983, P-409d.4',
+        en: 'Banknote World — Colombia 20 pesos oro 1983, P-409d.4',
+        note: {
+          es: '01.01.1983; Imprenta de Billetes, Bogotá; 140 × 70 mm; sin hilo ni marca de agua; firmas Hugo Palacios Mejía y Francisco José Ortega.',
+          en: '01.01.1983; Imprenta de Billetes, Bogotá; 140 × 70 mm; no thread and no watermark; signatures Hugo Palacios Mejía and Francisco José Ortega.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1983: 60,5 millones de piezas de 20 pesos. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 1.º de enero de 1983.',
+          en: '1983 production: 60.5 million 20-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 1 January 1983.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404). González White asigna a esa planta las fechas de 1975–1983 de este 20 pesos (IBBR).',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404). González White assigns the 1975–1983 dates of this 20-peso to that plant (IBBR).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 243 para el 1.º de enero de 1983 ordinario (Pick 409d); la reposición de la misma fecha es Hernández 244, con asterisco en el anverso. El veinte pesos oro se extinguió en 1983. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 243 for the ordinary 1 January 1983 (Pick 409d); the replacement of the same date is a separate row, Hernández 244, with an asterisk on the face. The twenty-peso oro ended in 1983. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
     id: '50-pesos-oro-1974',
     chapterId: 'banco-de-la-republica',
     path: `${COLOMBIA_PATH}50-pesos-oro-1974/`,
@@ -3298,6 +3412,95 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '1000-pesos-error-2000',
+    chapterId: 'errores',
+    path: `${COLOMBIA_PATH}1000-pesos-error-2000/`,
+    pick: 'P# 450 / TBB B985',
+    serial: '693949988',
+    signatures: {
+      es: 'Miguel Urrutia Montoya (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+      en: 'Miguel Urrutia Montoya (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha leída en el anverso, bajo las firmas: 16 de agosto de 2000. Formato publicado 140 × 70 mm; nueve dígitos, sin letra de serie; ambas numeraciones en el anverso. González White 2019 numera el tipo grande BG# 439 (pp. 110–111) y abre con el 7 de agosto de 2001 (439-a; emisión 98.050.000). El Bank Note Museum marca Pick 450 en 2001–2005 y 450a = 07.08.2001: no hay letra para un 16.08.2000. Numista agrupa el formato grande bajo N# 210180 (TBB B985; Hernández# 437–443) y asigna el par MUM / GHC a las fechas de 2001–2004. La producción BanRep de 1.000 pesos en 2000 es 175 millones de piezas: es el total de esa denominación ese año —aún del tipo anterior, Galán—, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date read on the face, under the signatures: 16 August 2000. Published size 140 × 70 mm; nine digits, no series letter; both serials on the face. González White 2019 numbers the large type BG# 439 (pp. 110–111) and opens with 7 August 2001 (439-a; emisión 98,050,000). The Bank Note Museum marks Pick 450 as 2001–2005 and 450a = 07.08.2001: there is no letter for a 16.08.2000. Numista groups the large format under N# 210180 (TBB B985; Hernández# 437–443) and assigns the MUM / GHC pair to the 2001–2004 dates. BanRep’s 2000 production of 1,000-peso notes is 175 million pieces: that is every note of that face value that year — still the earlier Galán type — not the printage of this date or this error. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg',
+      front: '/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg',
+      back: '/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg',
+    },
+    title: {
+      es: '1.000 pesos · error de corte · 2000',
+      en: '1,000 pesos · cutting error · 2000',
+    },
+    kicker: {
+      es: 'Colombia · Errores · Corte descentrado',
+      en: 'Colombia · Errors · Off-center cut',
+    },
+    lead: {
+      es: 'Mil pesos de Gaitán, Pick 450 / TBB B985: fecha 16 de agosto de 2000 y serial 693949988, en formato grande, con un error de corte que aprieta el canto superior contra el 1000 y el serial alto. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A Gaitán one-thousand-peso note, Pick 450 / TBB B985: date 16 August 2000 and serial 693949988, in the large format, with a cutting error that sets the upper edge tight against the 1000 and the upper serial. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato grande de 140 × 70 mm, es el Pick 450 (2001–2005) / TBB B985, impreso por la Imprenta de Billetes. González White numera esas fechas BG# 439. En el anverso de esta pieza se lee «16 DE AGOSTO DE 2000» bajo las firmas: está en su sitio, no en una franja del canto. Las firmas son las de Miguel Urrutia Montoya, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2001–2004, antes del cambio a José Darío Uribe en 2005. El serial 693949988 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; nueve cifras, sin prefijo. No es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», la firma manuscrita, el sello de Libertad y el pie de imprenta. Lo que distingue la pieza no es solo la fecha —los catálogos no publican un 16.08.2000 para este tipo; el primero listado es el 7.08.2001 (450a / 439-a)— sino el corte: el rectángulo está completo, sin solapa de pliego ni barras de color, pero el canto superior queda más justo contra el 1000 y el serial alto que el margen inferior, donde la franja iridiscente se ve entera. Es un corte descentrado, una maculatura de guillotina, no una mariposa. No debe confundirse con el mil reducido de 130 × 65 mm (Pick 456; ocho dígitos), ni con el corte de 18.08.2008 (serial 23085962) que arrastra la fecha al canto opuesto, ni con la mariposa de 10.06.2011 (serial 11508701) de esta misma vitrina. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the large 140 × 70 mm format is Pick 450 (2001–2005) / TBB B985, printed by the Imprenta de Billetes. González White numbers those dates BG# 439. On the face of this piece the line “16 DE AGOSTO DE 2000” is read under the signatures: it sits in its place, not in a strip along the edge. The signatures are those of Miguel Urrutia Montoya, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2001–2004 dates, before the change to José Darío Uribe in 2005. Serial 693949988 appears twice on the face, in black, at upper right and lower left; nine digits, no prefix. It is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the manuscript signature, the Liberty seal, and the printer’s imprint. What distinguishes the piece is not only the date — the catalogues publish no 16.08.2000 for this type; the first listed is 7.08.2001 (450a / 439-a) — but the cut: the rectangle is complete, with no sheet-margin flap and no color bars, yet the upper edge sits tighter against the 1000 and the upper serial than the lower margin, where the iridescent band is fully present. It is an off-center cut, a guillotine maculature, not a butterfly. It should not be confused with the reduced 130 × 65 mm one-thousand (Pick 456; eight digits), with the 18.08.2008 cut (serial 23085962) that carries the date to the opposite edge, or with this case’s 10.06.2011 butterfly (serial 11508701). This record gathers both sides of the same unslabbed note, in a sleeve.',
+    },
+    history: {
+      es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha catalogada, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. González White anota nueve emisiones en ese formato grande antes de la reducción a 130 × 65 mm en 2005–2006. El anverso toma la multitud desde un balcón del Hotel Nutibara; el reverso, el saludo de candidato del 23 de septiembre de 1945. Esta ficha no documenta un ejemplar de las fechas publicadas: documenta una maculatura de corte con una fecha de plancha, 16 de agosto de 2000, que el catálogo colombiano, el Bank Note Museum y Numista no listan.',
+      en: 'Jorge Eliécer Gaitán (1903–1948) has occupied the Banco de la República one-thousand since the first catalogued date, 7 August 2001, put into circulation in 2002 at 140 × 70 mm. González White notes nine issues in that large format before the cut to 130 × 65 mm in 2005–2006. The face takes the crowd from a balcony of the Hotel Nutibara; the back, the candidate’s greeting of 23 September 1945. This record does not document an example of the published dates: it documents a cutting maculature with a plate date, 16 August 2000, that the Colombian catalogue, the Bank Note Museum, and Numista do not list.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 pesos, Pick 450: Gaitán, serial 693949988 y la fecha 16 de agosto de 2000 bajo las firmas; el canto superior queda justo contra el 1000 y el serial alto.',
+      en: 'Face of the 1,000 pesos, Pick 450: Gaitán, serial 693949988, and the date 16 August 2000 under the signatures; the upper edge sits tight against the 1000 and the upper serial.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 pesos, Pick 450: Gaitán saludando, las dos citas, la firma manuscrita y el sello del Banco de la República.',
+      en: 'Back of the 1,000 pesos, Pick 450: Gaitán waving, the two quotations, the manuscript signature, and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 439, pp. 110–111) no publica un 16 de agosto de 2000: la primera fila es 439-a, 7 de agosto de 2001, con emisión 98.050.000. El Bank Note Museum describe Pick 450 como el tipo 2001–2005 de 140 × 70 mm y no asigna letra a un 16.08.2000. Numista agrupa el diseño grande bajo N# 210180; las frecuencias que marca son de las fechas ordinarias de 2001–2005, no de las maculaturas. La tabla BanRep de producción anual atribuye 175 millones de piezas a todos los 1.000 pesos de 2000: es el total de la denominación ese año, todavía del tipo Galán, no la tirada de una fecha Gaitán ni de un error de corte. Un corte descentrado con fecha no listada es una pieza de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# 439, pp. 110–111) publishes no 16 August 2000: the first row is 439-a, 7 August 2001, with an emisión of 98,050,000. The Bank Note Museum describes Pick 450 as the 2001–2005 140 × 70 mm type and assigns no letter to a 16.08.2000. Numista groups the large design under N# 210180; the frequencies it marks are for the ordinary 2001–2005 dates, not for maculatures. BanRep’s annual production table assigns 175 million pieces to every 1,000-peso note of 2000: that is the denomination total for that year, still the Galán type, not the printage of a Gaitán date or a cutting error. An off-center cut with an unlisted date is a showcase piece; this record does not invent a population for that error.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 693949988. La pieza se presenta en funda, aparentemente sin circular, sin encapsular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census for serial 693949988 has not been independently verified. The note is shown in a sleeve, apparently uncirculated, unslabbed. The error is a production fault, not a grading certificate.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda · aparentemente sin circular · error de corte (descentrado)',
+      en: 'Unslabbed · in a sleeve · apparently uncirculated · off-center cutting error',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0450.htm',
+        es: 'Bank Note Museum — Colombia P-450, 1.000 pesos (2001–2005)',
+        en: 'Bank Note Museum — Colombia P-450, 1,000 pesos (2001–2005)',
+        note: {
+          es: 'Tipo grande, Imprenta de Billetes; anverso y reverso Gaitán. El catálogo marca 450a = 07.08.2001 y sigue hasta 450i = 03.03.2005. Esta pieza lleva 16.08.2000 bajo las firmas; no se le asigna aquí una letra Pick.',
+          en: 'Large type, Imprenta de Billetes; Gaitán on face and back. The catalogue marks 450a = 07.08.2001 and runs through 450i = 03.03.2005. This piece carries 16.08.2000 under the signatures; no Pick letter is assigned here.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/210180',
+        es: 'Numista — Colombia 1.000 pesos (formato grande), N# 210180',
+        en: 'Numista — Colombia 1,000 pesos (large format), N# 210180',
+        note: {
+          es: 'Tipo 2001–2005, 140 × 70 mm; firmas MUM y GHC en las fechas de 2001–2004. No se publican columnas de precio. La fecha 16.08.2000 no tiene fila propia en esa tabla.',
+          en: '2001–2005 type, 140 × 70 mm; signatures MUM and GHC on the 2001–2004 dates. Price columns are not published here. The 16.08.2000 date has no row of its own on that table.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2000 de 1.000 pesos: 175 millones de piezas (total de la denominación ese año, del tipo Galán, no de una fecha Gaitán ni de un error). La tabla de entregas a Tesorería comienza en 2010.',
+          en: '2000 production of 1,000-peso notes: 175 million pieces (the denomination total for that year, the Galán type, not one Gaitán date or error). The Tesorería delivery table begins in 2010.',
+        },
+      },
+    ],
+  },
+  {
     id: '1000-pesos-error-2008',
     chapterId: 'errores',
     path: `${COLOMBIA_PATH}1000-pesos-error-2008/`,
@@ -3329,8 +3532,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A Gaitán one-thousand-peso note, Pick 456 / TBB B986: date 18 August 2008 and serial 23085962, with a vertical cutting error that leaves the date on the upper-left edge — where it should not be — and crops the foot under the signatures. This record gathers the face and back of the same unslabbed note, in a sleeve.',
     },
     description: {
-      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r. En el anverso de esta pieza se lee «18 DE AGOSTO DE 2008», no al pie de las firmas sino en una franja del canto superior izquierdo: el corte de fábrica desplazó el diseño hacia abajo y capturó el margen inferior del billete impreso encima en el pliego. Las firmas son las de José Darío Uribe Escobar, gerente general desde enero de 2005, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2008 y al 18.08.2009, antes del cambio a José Tolosa. El serial 23085962 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie de imprenta. El mismo desplazamiento deja en el canto superior del reverso una tira del pie del ejemplar vecino —la fecha de tipo «BOGOTÁ, 1.º DE NOVIEMBRE DE 2005» vive en el reverso de esta familia, distinta de la fecha de plancha del anverso— y recorta el margen inferior. No es una mariposa: no conserva solapa del margen de pliego ni las barras de color. Es un corte descentrado, una maculatura de guillotina. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con las fechas catalogadas 27.08.2008 (456j) y 28.08.2008 (456k), ni con el 18.08.2009 (456l), ni con la mariposa de 10.06.2011 (serial 11508701) de esta misma vitrina. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
-      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r. On the face of this piece the line “18 DE AGOSTO DE 2008” is read not under the signatures but in a strip along the upper-left edge: the factory cut shifted the design downward and captured the lower margin of the note printed above it on the sheet. The signatures are those of José Darío Uribe Escobar, general manager from January 2005, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2008 dates and to 18.08.2009, before the change to José Tolosa. Serial 23085962 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the printer’s imprint. The same shift leaves on the back’s upper edge a strip from the neighbouring note’s foot — the type date “BOGOTÁ, 1.º DE NOVIEMBRE DE 2005” lives on the back of this family, distinct from the face plate date — and crops the lower margin. It is not a butterfly: it keeps no sheet-margin flap and no color bars. It is an off-center cut, a guillotine maculature. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with the catalogued dates 27.08.2008 (456j) and 28.08.2008 (456k), with 18.08.2009 (456l), or with this case’s 10.06.2011 butterfly (serial 11508701). This record gathers both sides of the same unslabbed note, in a sleeve.',
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r. En el anverso de esta pieza se lee «18 DE AGOSTO DE 2008», no al pie de las firmas sino en una franja del canto superior izquierdo: el corte de fábrica desplazó el diseño hacia abajo y capturó el margen inferior del billete impreso encima en el pliego. Las firmas son las de José Darío Uribe Escobar, gerente general desde enero de 2005, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2008 y al 18.08.2009, antes del cambio a José Tolosa. El serial 23085962 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie de imprenta. El mismo desplazamiento deja en el canto superior del reverso una tira del pie del ejemplar vecino —la fecha de tipo «BOGOTÁ, 1.º DE NOVIEMBRE DE 2005» vive en el reverso de esta familia, distinta de la fecha de plancha del anverso— y recorta el margen inferior. No es una mariposa: no conserva solapa del margen de pliego ni las barras de color. Es un corte descentrado, una maculatura de guillotina. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con el corte de 16.08.2000 (serial 693949988) de esa familia, ni con las fechas catalogadas 27.08.2008 (456j) y 28.08.2008 (456k), ni con el 18.08.2009 (456l), ni con la mariposa de 10.06.2011 (serial 11508701) de esta misma vitrina. Esta ficha reúne las dos caras de la misma pieza, en funda, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r. On the face of this piece the line “18 DE AGOSTO DE 2008” is read not under the signatures but in a strip along the upper-left edge: the factory cut shifted the design downward and captured the lower margin of the note printed above it on the sheet. The signatures are those of José Darío Uribe Escobar, general manager from January 2005, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2008 dates and to 18.08.2009, before the change to José Tolosa. Serial 23085962 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the printer’s imprint. The same shift leaves on the back’s upper edge a strip from the neighbouring note’s foot — the type date “BOGOTÁ, 1.º DE NOVIEMBRE DE 2005” lives on the back of this family, distinct from the face plate date — and crops the lower margin. It is not a butterfly: it keeps no sheet-margin flap and no color bars. It is an off-center cut, a guillotine maculature. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with that family’s 16.08.2000 cut (serial 693949988), with the catalogued dates 27.08.2008 (456j) and 28.08.2008 (456k), with 18.08.2009 (456l), or with this case’s 10.06.2011 butterfly (serial 11508701). This record gathers both sides of the same unslabbed note, in a sleeve.',
     },
     history: {
       es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. En 2005–2006 el banco redujo el formato a 130 × 65 mm, renovó la marca de agua y siguió imprimiendo en la Imprenta de Billetes. El anverso toma la multitud desde un balcón del Hotel Nutibara; el reverso, el saludo de candidato del 23 de septiembre de 1945. González White anota que el tipo reducido circuló desde el 17 de noviembre de 2006. El tipo siguió hasta 2016; no se conocen reposiciones. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el diseño corrido respecto del papel.',
@@ -3516,8 +3719,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A Gaitán one-thousand-peso note, Pick 456n / TBB B986n: date 10 June 2011 and serial 11508701, with a butterfly-cut fold-over that retains the sheet-margin color bars and the A, B, and C boxes. This record gathers the face and back of the same unslabbed note.',
     },
     description: {
-      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r; esta pieza lleva «10 DE JUNIO DE 2011», BG# 439-r/14, que el Bank Note Museum marca 456n. Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista asigna a esa fecha (TBB B986n; Hernández# 453 en esa ficha). El serial 11508701 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie «IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA». Lo que distingue esta pieza no es el tipo sino el error: una solapa trapezoidal del margen de pliego quedó unida a la esquina superior derecha del anverso —la superior izquierda del reverso—. En esa solapa se leen las barras de color de control y las casillas A, B y C con una marca circular de registro: material que el corte de fábrica debía desechar. En la notafilia colombiana Hernández llama mariposa a ese ala de papel; el pliegue de fábrica que la dejó unida es un error de producción, no una variedad de diseño. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con las fechas 11.06.2011 (456o) y 12.06.2011 (456p), ni con 27.08.2014, 19.08.2015 o 02.08.2016. Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
-      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r; this piece carries “10 DE JUNIO DE 2011,” BG# 439-r/14, which the Bank Note Museum marks 456n. The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista assigns to that date (TBB B986n; Hernández# 453 on that record). Serial 11508701 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the imprint “IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA.” What distinguishes this piece is the error, not the type: a trapezoidal flap of sheet margin remained attached to the upper-right corner of the face — the upper-left of the back. That flap carries the control color bars and the A, B, and C boxes with a circular registration mark: material the factory cut was meant to discard. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly); the as-made fold that left it attached is a production error, not a design variety. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with dates 11.06.2011 (456o) and 12.06.2011 (456p), or with 27.08.2014, 19.08.2015, or 02.08.2016. This record gathers both sides of the same unslabbed note.',
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r; esta pieza lleva «10 DE JUNIO DE 2011», BG# 439-r/14, que el Bank Note Museum marca 456n. Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista asigna a esa fecha (TBB B986n; Hernández# 453 en esa ficha). El serial 11508701 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; no es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en naranja y ocre, muestra a Gaitán a la derecha y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo» y «El pueblo es superior a sus dirigentes», el sello de Libertad y el pie «IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA». Lo que distingue esta pieza no es el tipo sino el error: una solapa trapezoidal del margen de pliego quedó unida a la esquina superior derecha del anverso —la superior izquierda del reverso—. En esa solapa se leen las barras de color de control y las casillas A, B y C con una marca circular de registro: material que el corte de fábrica debía desechar. En la notafilia colombiana Hernández llama mariposa a ese ala de papel; el pliegue de fábrica que la dejó unida es un error de producción, no una variedad de diseño. No debe confundirse con el mil grande de 140 × 70 mm (Pick 450), ni con el corte de 16.08.2000 (serial 693949988) de esa familia, ni con las fechas 11.06.2011 (456o) y 12.06.2011 (456p), ni con 27.08.2014, 19.08.2015 o 02.08.2016. Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r; this piece carries “10 DE JUNIO DE 2011,” BG# 439-r/14, which the Bank Note Museum marks 456n. The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista assigns to that date (TBB B986n; Hernández# 453 on that record). Serial 11508701 appears twice on the face, in black, at upper right and lower left; it is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in orange and ochre, shows Gaitán at right and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo” and “El pueblo es superior a sus dirigentes,” the Liberty seal, and the imprint “IMPRENTA DE BILLETES – BANCO DE LA REPÚBLICA.” What distinguishes this piece is the error, not the type: a trapezoidal flap of sheet margin remained attached to the upper-right corner of the face — the upper-left of the back. That flap carries the control color bars and the A, B, and C boxes with a circular registration mark: material the factory cut was meant to discard. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly); the as-made fold that left it attached is a production error, not a design variety. It should not be confused with the large 140 × 70 mm one-thousand (Pick 450), with that family’s 16.08.2000 cut (serial 693949988), with dates 11.06.2011 (456o) and 12.06.2011 (456p), or with 27.08.2014, 19.08.2015, or 02.08.2016. This record gathers both sides of the same unslabbed note.',
     },
     history: {
       es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. En 2005–2006 el banco redujo el formato a 130 × 65 mm, renovó la marca de agua y siguió imprimiendo en la Imprenta de Billetes. El anverso toma la multitud desde un balcón del Hotel Nutibara; el reverso, el saludo de candidato del 23 de septiembre de 1945. Numista data la circulación de esta fecha, 10 de junio de 2011, el 27 de febrero de 2012. El tipo siguió hasta 2016; no se conocen reposiciones. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el margen de pliego aún unido.',

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T02:52:54.764Z",
+  "generatedAt": "2026-09-10T03:36:34.410Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -784,6 +784,45 @@
       }
     },
     {
+      "pieceId": "20-pesos-oro-1983-056462955",
+      "face": "front",
+      "hash": "252759332b675709",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-composite.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "20-pesos-oro-1983-056462955",
+      "face": "front",
+      "hash": "00511b5559550b00",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-front.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "20-pesos-oro-1983-056462955",
+      "face": "back",
+      "hash": "006d4d2b555d5700",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-back.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
       "pieceId": "50-pesos-oro-1974",
       "face": "front",
       "hash": "6253538a112d3701",
@@ -1327,6 +1366,45 @@
       "title": {
         "es": "15 centavos · tiquete estudiantil · rojo",
         "en": "15 centavos · student-transport ticket · red"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "124d5501a1170705",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "c42b295555536422",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "back",
+      "hash": "0c06170f4f0fa112",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
       }
     },
     {
