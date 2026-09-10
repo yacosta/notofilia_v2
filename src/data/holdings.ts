@@ -149,6 +149,7 @@ export const additions: Holding[] = [
   { id: 'us-frn-2003-2-st-louis-h00010418', kind: 'banknote', country: 'US' },
   { id: 'co-1984-50-pesos-oro-0001806322', kind: 'banknote', country: 'CO' },
   { id: 'co-1974-50-pesos-oro-2467354822', kind: 'banknote', country: 'CO' },
+  { id: 'co-2000-1000-pesos-error-693949988', kind: 'banknote', country: 'CO' },
   { id: 'co-1983-20-pesos-oro-056462955', kind: 'banknote', country: 'CO' },
 ];
 
@@ -228,6 +229,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-frn-2003-2-st-louis-h00010418' },
   { id: 'co-1984-50-pesos-oro-p425a' },
   { id: 'co-1974-50-pesos-oro-p414a-b953b' },
+  { id: 'co-2000-1000-pesos-error-p450' },
   { id: 'co-1983-20-pesos-oro-p409d' },
 ];
 

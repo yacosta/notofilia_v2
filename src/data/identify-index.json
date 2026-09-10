@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T03:25:13.707Z",
+  "generatedAt": "2026-09-10T03:29:21.766Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1327,6 +1327,45 @@
       "title": {
         "es": "15 centavos · tiquete estudiantil · rojo",
         "en": "15 centavos · student-transport ticket · red"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "124d5501a1170705",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "c42b295555536422",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "back",
+      "hash": "0c06170f4f0fa112",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
       }
     },
     {
