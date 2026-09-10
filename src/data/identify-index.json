@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-09T02:24:50.266Z",
+  "generatedAt": "2026-09-10T02:08:48.216Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -781,6 +781,84 @@
       "title": {
         "es": "10 pesos oro · Banco de la República · 1979",
         "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "6253538a112d3701",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "844651170315a611",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "back",
+      "hash": "846865355f591710",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "4271758a11555d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "440d61772b532b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984-0001806322",
+      "face": "back",
+      "hash": "848e7d2d5e692d10",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
       }
     },
     {
@@ -1990,6 +2068,45 @@
       "title": {
         "es": "1 dólar · Serie 2003 · Atlanta ★",
         "en": "$1 · Series 2003 · Atlanta ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "08450cceaeecca08",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "00c48aa4c8ccac00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "back",
+      "hash": "00a6a0f4e844c400",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
       }
     },
     {
