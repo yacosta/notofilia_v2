@@ -2075,6 +2075,26 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/50-pesos-oro-1974/": {
+      "target": "/en/collection/colombia/50-pesos-oro-1974/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50-pesos-oro-1974": {
+      "target": "/en/collection/colombia/50-pesos-oro-1974/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50-pesos-oro-1984/": {
+      "target": "/en/collection/colombia/50-pesos-oro-1984/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/50-pesos-oro-1984": {
+      "target": "/en/collection/colombia/50-pesos-oro-1984/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/5-pesos-rio-hacha-1883/": {
       "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
       "status": 301,

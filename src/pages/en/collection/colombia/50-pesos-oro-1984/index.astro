@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('50-pesos-oro-1984');
+if (!note) throw new Error('Missing Banco de la República 50 pesos oro 1984 catalog note');
+---
+
+<ColombiaNotePage locale="en" note={note} />
