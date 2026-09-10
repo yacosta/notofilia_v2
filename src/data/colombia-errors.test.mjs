@@ -51,6 +51,10 @@ describe('colombia-errors', () => {
     assert.match(seriesCopy.en.errorsIntro, /sorted by year and denomination/);
     assert.equal(seriesCopy.es.errorsTiqueteHeading, 'Tiquete de Subsidio / Boleto de Control');
     assert.equal(seriesCopy.en.errorsTiqueteHeading, 'Subsidy Ticket / Control Ticket');
+    assert.match(seriesCopy.es.errorsTiqueteLead, /tiquetes y vales/);
+    assert.match(seriesCopy.en.errorsTiqueteLead, /tickets-and-vouchers/);
+    assert.equal(seriesCopy.es.serialLabel, 'N.º de serie');
+    assert.equal(seriesCopy.en.serialLabel, 'Serial');
   });
 
   it('renders error notes in one grid above sources on the series page', () => {
@@ -59,7 +63,7 @@ describe('colombia-errors', () => {
     assert.match(pageSource, /errorNoteCards/);
     assert.match(pageSource, /t\.errorsTitle/);
     assert.match(pageSource, /t\.sourcesTitle/);
-    assert.match(pageSource, /id="errores"[\s\S]*sm:grid-cols-2/);
+    assert.match(pageSource, /id="errores"[\s\S]*sm:grid-cols-2 lg:grid-cols-3/);
     assert.doesNotMatch(pageSource, /lg:grid-cols-4/);
     assert.doesNotMatch(pageSource, /errores-\$\{group\.year\}-\$\{group\.denomination\}-heading/);
     const erroresIndex = pageSource.indexOf('id="errores"');
@@ -68,6 +72,9 @@ describe('colombia-errors', () => {
     assert.ok(erroresIndex > -1 && sourcesIndex > -1 && erroresIndex < sourcesIndex);
     assert.ok(tiqueteIndex > erroresIndex && tiqueteIndex < sourcesIndex);
     assert.match(pageSource, /t\.errorsTiqueteHeading/);
+    assert.match(pageSource, /t\.errorsTiqueteLead/);
+    assert.match(pageSource, /t\.errorsTiqueteLink/);
     assert.match(pageSource, /id="tiquete-de-subsidio-heading"/);
+    assert.match(pageSource, /href="#tiquetes"/);
   });
 });

@@ -114,7 +114,7 @@ const jsonLd = collectionPageJsonLd({
               {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
                     aria-label={chapter.title[locale]}
                   >
                     {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
@@ -161,7 +161,7 @@ const jsonLd = collectionPageJsonLd({
         {
           hasErrorNotes() ? (
             <ol
-              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
               aria-label={t.errorsTitle}
             >
               {errorNotes.map(({ note, piece }) => {
@@ -206,6 +206,16 @@ const jsonLd = collectionPageJsonLd({
           >
             {t.errorsTiqueteHeading}
           </h3>
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">
+            {t.errorsTiqueteLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href="#tiquetes"
+            >
+              {t.errorsTiqueteLink}
+            </a>
+          </p>
         </section>
       </section>
 
