@@ -21,6 +21,7 @@ export type ColombiaNoteId =
   | '5-pesos-oro-1980'
   | '10-pesos-oro-1976'
   | '10-pesos-oro-1979'
+  | '20-pesos-oro-1983'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '10000-pesos-1994'
@@ -2019,6 +2020,118 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 205 para el 7 de agosto de 1979 ordinario (Pick 407g); la reposición de la misma fecha es Hernández 206, con asterisco en el anverso entre los títulos. No se publican columnas de precios ni láminas.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 205 for the ordinary 7 August 1979 (Pick 407g); the replacement of the same date is a separate row, Hernández 206, with an asterisk on the face between the titles. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-pesos-oro-1983',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}20-pesos-oro-1983/`,
+    pick: 'P# 409d · TBB B951l',
+    serial: '056462955',
+    signatures: {
+      es: 'Hugo Palacios Mejía (gerente general) y Francisco José Ortega (secretario)',
+      en: 'Hugo Palacios Mejía (gerente general) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1983. Nueve dígitos, sin letra de serie. González White 2019 (pp. 73–74) lista fechas ENERO 1º 1983 en el pliego VEINTE PESOS 1975–1983, con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# ni una emisión adivinados. Hernández (8.ª ed., 2023) numera el 1.º de enero de 1983 ordinario como Cód. 243 —Numista concuerda Hernández 243, P# 409d y TBB B951l—; Cód. 244 es la reposición con asterisco en el anverso. El serial 056462955 es un número ordinario de nueve dígitos, fuera de las bandas de asterisco de González White en ese pliego (alrededor de 00.100.xxx–00.273.xxx) y fuera del intervalo del anexo 2 de Hernández para esta fecha (00102221–00171449). El Bank Note Museum agrupa el tipo 409d en 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983, distinto del 409a–c (1966–1977). Formato publicado: 140 × 70 mm. Sin hilo de seguridad ni marca de agua. Hernández anota que el veinte pesos oro se extinguió en 1983, sustituido por monedas de cobre de veinte pesos. La tabla BanRep de 1983 registra 60,5 millones de piezas de 20 pesos: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 January 1983. Nine digits, no series letter. González White 2019 (pp. 73–74) lists ENERO 1º 1983 dates on the VEINTE PESOS 1975–1983 spread, with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG# or emisión. Hernández (8th ed., 2023) numbers the ordinary 1 January 1983 as Cód. 243 — Numista concurs Hernández 243, P# 409d, and TBB B951l; Cód. 244 is the replacement with an asterisk on the face. Serial 056462955 is an ordinary nine-digit number, outside González White’s asterisk bands on that spread (around 00.100.xxx–00.273.xxx) and outside Hernández’s annex 2 interval for this date (00102221–00171449). The Bank Note Museum groups type 409d under 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983, distinct from 409a–c (1966–1977). Published size: 140 × 70 mm. No security thread and no watermark. Hernández notes that the twenty-peso oro ended in 1983, replaced by copper twenty-peso coins. BanRep’s 1983 table records 60.5 million 20-peso notes: all production of that face value that year, not this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/20-pesos-oro-1983-056462955-composite.jpg',
+      front: '/images/catalog/colombia/20-pesos-oro-1983-056462955-front.jpg',
+      back: '/images/catalog/colombia/20-pesos-oro-1983-056462955-back.jpg',
+    },
+    title: {
+      es: '20 pesos oro · Banco de la República · 1983',
+      en: '20 pesos oro · Banco de la República · 1983',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Veinte pesos oro de circulación, Pick 409d: serial de nueve dígitos 056462955, 1.º de enero de 1983. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es la reposición con asterisco (Hernández Cód. 244) ni las fechas 409a–c de 1966–1977.',
+      en: 'A circulating twenty-peso oro, Pick 409d: nine-digit serial 056462955, 1 January 1983. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the asterisk replacement (Hernández Cód. 244) nor the 409a–c dates of 1966–1977.',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este veinte pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. Es la última fecha del tipo Caldas / Museo del Oro: Hernández (8.ª ed., 2023) sitúa el nacimiento de la denominación en 1927 y su extinción en 1983, cuando las monedas de cobre de veinte pesos la sustituyeron. El anverso, en pardo, verde, naranja y violeta sobre policromía, lleva a la derecha el retrato de Francisco José de Caldas —rotulado «CALDAS» bajo el óvalo— con la mano sobre un globo terráqueo. Al centro, la promesa de pagar al portador veinte pesos oro y la cifra 20. Los seriales van en rojo: 056462955, una vez a media altura a la izquierda y otra abajo a la derecha. No hay letra de serie. La fecha impresa es «ENERO 1º DE 1983», con «BOGOTÁ» a la izquierda y «COLOMBIA» a la derecha. Las firmas son las de Hugo Palacios Mejía (gerente general) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (HPM, FJO) y el que Banknote World registra en el P-409d.4. No hay asterisco junto a los títulos: no es reposición ni el Cód. 244. El reverso, en pardo sobre marco policromado, muestra piezas del Museo del Oro —rotulado así en el papel—, el sello del banco con la Libertad («BANCO DE LA REPÚBLICA / COLOMBIA») y las cifras 20. El tipo 409d, según el Bank Note Museum, cubre 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983; Numista agrupa el diseño 1966–1983 bajo N# 202344 y cita Hernández 243 y TBB B951l para esta fecha, sin hilo. Distinto del 409a (1966–1973), del 409b y 409c de 1974–1977 y de las reposiciones con asterisco. Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this twenty-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. It is the last date of the Caldas / Museo del Oro type: Hernández (8th ed., 2023) places the denomination’s start in 1927 and its end in 1983, when copper twenty-peso coins replaced it. The face, brown, green, orange, and violet on a multicolour underprint, carries Francisco José de Caldas’s portrait at right — labelled “CALDAS” under the oval — with his hand on a terrestrial globe. At center is the promise to pay the bearer twenty gold pesos and the figure 20. The serials are in red: 056462955, once at mid-left and once at lower right. There is no series letter. The printed date is “ENERO 1º DE 1983,” with “BOGOTÁ” at left and “COLOMBIA” at right. The signatures are those of Hugo Palacios Mejía (gerente general) and Francisco José Ortega (secretario), the pair Numista assigns to this date (HPM, FJO) and the pair Banknote World records on P-409d.4. There is no asterisk by the titles: it is not a replacement and not Cód. 244. The back, brown in a multicolour frame, shows objects from the Museo del Oro — labelled on the paper — the bank’s Liberty seal (“BANCO DE LA REPÚBLICA / COLOMBIA”), and the figures 20. Type 409d, per the Bank Note Museum, covers 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983; Numista groups the 1966–1983 design under N# 202344 and cites Hernández 243 and TBB B951l for this date, without a thread. Distinct from 409a (1966–1973), from 409b and 409c of 1974–1977, and from the asterisk replacements. This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 20 pesos oro, Pick 409d: Caldas con el globo, serial 056462955 y fecha 1.º de enero de 1983.',
+      en: 'Face of the 20 pesos oro, Pick 409d: Caldas with the globe, serial 056462955, and the date 1 January 1983.',
+    },
+    backCaption: {
+      es: 'Reverso del 20 pesos oro, Pick 409d: piezas del Museo del Oro y sello del Banco de la República.',
+      en: 'Back of the 20 pesos oro, Pick 409d: objects from the Museo del Oro and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 73–74) cataloga la fecha del 1.º de enero de 1983 en el pliego del 20 pesos 1975–1983, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 243 y la reposición con asterisco Cód. 244. El serial 056462955 no cae en las bandas de White de ese pliego ni en el intervalo del anexo 2 para esta fecha. El Bank Note Museum describe el Pick 409d como las fechas 01.04.1979 y 01.01.1981–1983: Caldas y globo al anverso, Museo del Oro al reverso. Numista agrupa el diseño bajo N# 202344 y marca la frecuencia de la fecha 01.01.1983, sin hilo, en un 43 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni las fechas 409a–c. No se publican columnas de precios de Hernández. La tabla BanRep de 1983 (60,5 millones de piezas de 20 pesos) es un total de denominación-año, no la tirada de esta fecha. Esta ficha no sustituye esa cifra por una tirada de fecha.',
+      en: 'González White 2019 (pp. 73–74) lists 1 January 1983 on the 1975–1983 20-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 243 and the asterisk replacement Cód. 244. Serial 056462955 does not sit in White’s bands on that spread nor in the annex 2 interval for this date. The Bank Note Museum describes Pick 409d as the 01.04.1979 and 01.01.1981–1983 dates: Caldas and globe on the face, Museo del Oro on the back. Numista groups the design under N# 202344 and marks the 01.01.1983 no-thread date’s frequency at 43% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor the 409a–c dates. Hernández price columns are not republished. BanRep’s 1983 table (60.5 million 20-peso notes) is a denomination-year total, not this date’s printage. This record does not replace that figure with a date printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 056462955. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 056462955 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0409.htm',
+        es: 'Bank Note Museum — Colombia P-409, 20 pesos oro (1966–1983)',
+        en: 'Bank Note Museum — Colombia P-409, 20 pesos oro (1966–1983)',
+        note: {
+          es: '409d: 01.04.1979, 01.01.1981, 01.01.1982 y 01.01.1983; anverso Caldas y globo, reverso Museo del Oro. Distinto del 409a (1966–1973), del 409b (1974 con hilo) y del 409c (1974–1977 sin hilo).',
+          en: '409d: 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983; Caldas and globe on the face, Museo del Oro on the back. Distinct from 409a (1966–1973), 409b (1974 with thread), and 409c (1974–1977 without thread).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202344.html',
+        es: 'Numista — Colombia 20 pesos oro, N# 202344',
+        en: 'Numista — Colombia 20 pesos oro, N# 202344',
+        note: {
+          es: '01.01.1983: P# 409d / TBB B951l; Hernández 243; firmas HPM y FJO; 140 × 70 mm; sin hilo; frecuencia 43 % en el tipo. La reposición de la misma fecha es Hernández 244.',
+          en: '01.01.1983: P# 409d / TBB B951l; Hernández 243; signatures HPM and FJO; 140 × 70 mm; no thread; 43% frequency within the type. The replacement of the same date is Hernández 244.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-20-pesos-oro-1983-p-409d-4.html',
+        es: 'Banknote World — Colombia 20 pesos oro 1983, P-409d.4',
+        en: 'Banknote World — Colombia 20 pesos oro 1983, P-409d.4',
+        note: {
+          es: '01.01.1983; Imprenta de Billetes, Bogotá; 140 × 70 mm; sin hilo ni marca de agua; firmas Hugo Palacios Mejía y Francisco José Ortega.',
+          en: '01.01.1983; Imprenta de Billetes, Bogotá; 140 × 70 mm; no thread and no watermark; signatures Hugo Palacios Mejía and Francisco José Ortega.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1983: 60,5 millones de piezas de 20 pesos. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 1.º de enero de 1983.',
+          en: '1983 production: 60.5 million 20-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 1 January 1983.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404). González White asigna a esa planta las fechas de 1975–1983 de este 20 pesos (IBBR).',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404). González White assigns the 1975–1983 dates of this 20-peso to that plant (IBBR).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 243 para el 1.º de enero de 1983 ordinario (Pick 409d); la reposición de la misma fecha es Hernández 244, con asterisco en el anverso. El veinte pesos oro se extinguió en 1983. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 243 for the ordinary 1 January 1983 (Pick 409d); the replacement of the same date is a separate row, Hernández 244, with an asterisk on the face. The twenty-peso oro ended in 1983. Price columns and plates are not republished.',
         },
       },
     ],
