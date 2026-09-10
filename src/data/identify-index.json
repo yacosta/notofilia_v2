@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T02:25:06.061Z",
+  "generatedAt": "2026-09-10T03:25:13.707Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -820,6 +820,84 @@
       "title": {
         "es": "20 pesos oro · Banco de la República · 1983",
         "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "6253538a112d3701",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "844651170315a611",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "back",
+      "hash": "846865355f591710",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "4271758a11555d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "440d61772b532b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984-0001806322",
+      "face": "back",
+      "hash": "848e7d2d5e692d10",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
       }
     },
     {

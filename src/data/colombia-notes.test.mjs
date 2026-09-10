@@ -779,6 +779,136 @@ describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
   });
 });
 
+describe('Colombia BanRep 50 pesos oro 1974 Thomas de la Rue', () => {
+  it('is a distinct Pick 414a circulation note with serial 2467354822, not the 1984 IBB type', () => {
+    const note = noteById('50-pesos-oro-1974');
+    const later = noteById('50-pesos-oro-1984');
+    assert.ok(note);
+    assert.ok(later);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 414a · TBB B953b');
+    assert.equal(note.serial, '2467354822');
+    assert.notEqual(note.serial, later.serial);
+    assert.notEqual(note.pick, later.pick);
+    assert.notEqual(note.path, later.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /100\.000\.000 de ejemplares/);
+    assert.match(note.printed.es, /diez dígitos/);
+    assert.match(note.printed.es, /no se fuerza a la banda de nueve dígitos/);
+    assert.match(note.description.es, /2467354822/);
+    assert.match(note.description.es, /THOMAS DE LA RUE/);
+    assert.match(note.description.es, /No hay prefijo R/);
+    assert.match(note.description.es, /Pick 425/);
+    assert.match(note.description.en, /Thomas De La Rue/);
+    assert.match(note.scarcity.es, /Hernández 265/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1974-50-pesos-oro-2467354822'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1974-50-pesos-oro-p414a-b953b'), true);
+  });
+
+  it('lists the 1974 50 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /50 pesos oro de 1974 \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    assert.match(chapter.body.en, /1974 50 pesos oro \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    assert.match(seriesCopy.es.intro.join(' '), /50 pesos oro de 1974 \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    assert.match(seriesCopy.en.intro.join(' '), /1974 50 pesos oro \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '50-pesos-oro-1974');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '2467354822');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/50-pesos-oro-1974/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/50-pesos-oro-1974/',
+    );
+  });
+});
+
+describe('Colombia BanRep 50 pesos oro 1984 Imprenta de Billetes', () => {
+  it('is a distinct Pick 425a circulation note with ordinary serial 0001806322', () => {
+    const note = noteById('50-pesos-oro-1984');
+    const twoPesos = noteById('2-pesos-oro-1944');
+    assert.ok(note);
+    assert.ok(twoPesos);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 425a');
+    assert.equal(note.serial, '0001806322');
+    assert.notEqual(note.serial, twoPesos.serial);
+    assert.notEqual(note.path, twoPesos.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /100\.000\.000 de ejemplares/);
+    assert.match(note.printed.es, /no registra piezas de 50 pesos/);
+    assert.match(note.printed.es, /denominación-año/);
+    assert.match(note.description.es, /0001806322/);
+    assert.match(note.description.en, /0001806322/);
+    assert.match(note.description.es, /Camilo Torres/);
+    assert.match(note.description.en, /Camilo Torres/);
+    assert.match(note.description.es, /ORQUÍDEAS COLOMBIANAS/);
+    assert.match(note.description.es, /IMPRENTA DE BILLETES - BOGOTÁ/);
+    assert.match(note.description.es, /No hay asterisco entre GERENTE y ABOGADO-SUBGERENTE/);
+    assert.match(note.description.en, /There is no asterisk between GERENTE and ABOGADO-SUBGERENTE/);
+    assert.match(note.description.es, /Hugo Palacios Mejía/);
+    assert.match(note.description.es, /Roberto Salazar Manrique/);
+    assert.match(note.description.es, /Pick 390/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1984-50-pesos-oro-0001806322'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1984-50-pesos-oro-p425a'), true);
+  });
+
+  it('lists the 1984 50 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /50 pesos oro de 1984 \(Pick 425a\), serial 0001806322/);
+    assert.match(chapter.body.en, /1984 50 pesos oro \(Pick 425a\), serial 0001806322/);
+    assert.match(seriesCopy.es.intro.join(' '), /50 pesos oro de 1984 \(Pick 425a\), serial 0001806322/);
+    assert.match(seriesCopy.en.intro.join(' '), /1984 50 pesos oro \(Pick 425a\), serial 0001806322/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '50-pesos-oro-1984');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '0001806322');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/50-pesos-oro-1984/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/50-pesos-oro-1984/',
+    );
+  });
+});
+
 describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
   it('is a distinct Pick 409d circulation note, not an asterisk replacement', () => {
     const note = noteById('20-pesos-oro-1983');

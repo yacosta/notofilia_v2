@@ -22,6 +22,8 @@ export type ColombiaNoteId =
   | '10-pesos-oro-1976'
   | '10-pesos-oro-1979'
   | '20-pesos-oro-1983'
+  | '50-pesos-oro-1974'
+  | '50-pesos-oro-1984'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '10000-pesos-1994'
@@ -2132,6 +2134,212 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 243 para el 1.º de enero de 1983 ordinario (Pick 409d); la reposición de la misma fecha es Hernández 244, con asterisco en el anverso. El veinte pesos oro se extinguió en 1983. No se publican columnas de precios ni láminas.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 243 for the ordinary 1 January 1983 (Pick 409d); the replacement of the same date is a separate row, Hernández 244, with an asterisk on the face. The twenty-peso oro ended in 1983. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-pesos-oro-1974',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}50-pesos-oro-1974/`,
+    pick: 'P# 414a · TBB B953b',
+    serial: '2467354822',
+    signatures: {
+      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
+    },
+    printed: {
+      es: 'Thomas De La Rue & Company, Limited, Londres. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1974. Diez dígitos, sin letra de serie y sin prefijo R. González White 2019 (p. 79) publica 100.000.000 de ejemplares para esa fecha TDLR, seriales de nueve dígitos 170.000.001–270.000.000, y una reposición R 170.001.660–171.318.448; Hernández (8.ª ed., 2023) da el intervalo de reposición 170554001–171318448. El serial 2467354822 se imprime a diez dígitos y no lleva R: no se fuerza a la banda de nueve dígitos ni a la de reposición. El OCR del pliego mezcla BG# y fechas: no se publica aquí un BG# adivinado. Formato publicado: 140 × 70 mm. El Bank Note Museum agrupa el tipo 414 en 20.07.1973 y 20.07.1974. Las tablas BanRep de 1973 y 1974 no registran piezas de 50 pesos esos años calendario —totales de denominación-año, no la tirada de esta fecha—. Esta ficha no sustituye la emisión del catálogo por esos totales.',
+      en: 'Thomas De La Rue & Company, Limited, London. Banco de la República circulation issue; date on the note 20 July 1974. Ten digits, no series letter and no R prefix. González White 2019 (p. 79) publishes 100,000,000 notes for that TDLR date, nine-digit serials 170.000.001–270.000.000, and an R replacement 170.001.660–171.318.448; Hernández (8th ed., 2023) gives the replacement interval 170554001–171318448. Serial 2467354822 is printed with ten digits and no R: it is not forced into the nine-digit band or the replacement range. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 414 under 20.07.1973 and 20.07.1974. BanRep’s 1973 and 1974 tables record no 50-peso notes those calendar years — denomination-year totals, not this date’s printage. This record does not replace the catalogue emisión with those totals.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-composite.jpg',
+      front: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-front.jpg',
+      back: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-back.jpg',
+    },
+    title: {
+      es: '50 pesos oro · 1974',
+      en: '50 pesos oro · 1974',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República',
+      en: 'Colombia · Banco de la República',
+    },
+    lead: {
+      es: 'Cincuenta pesos oro, Pick 414a / TBB B953b: fecha 20 de julio de 1974, serial 2467354822. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A fifty-peso oro, Pick 414a / TBB B953b: date 20 July 1974, serial 2467354822. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a Thomas De La Rue & Company, Limited, de Londres, este cincuenta pesos oro de la familia Pick 414 (1973–1974). El anverso, en púrpura sobre policromía, lleva a la derecha el retrato de Camilo Torres Tenorio —rotulado «CAMILO TORRES»— y al centro la promesa de pagar al portador cincuenta pesos oro. Los seriales van en rojo: 2467354822, dos veces, a diez dígitos y sin letra de serie. La fecha impresa es «BOGOTÁ, COLOMBIA 20 DE JULIO DE 1974». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario), el par que Numista asigna a esta fecha (GBR, AJG). No hay prefijo R ni asterisco entre GERENTE y SECRETARIO: no es la reposición de 1974. El reverso muestra orquídeas colombianas —rotuladas «ORQUÍDEAS COLOMBIANAS»; Cattleya trianae en los catálogos anglófonos—, el escudo nacional y las cifras 50. El pie lee «THOMAS DE LA RUE & COMPANY, LIMITED.». Ese pie distingue el tipo 414 del cincuenta pesos oro Pick 425 de 1984–1986, impreso en la Imprenta de Billetes de Bogotá. Banknote World registra hilo de seguridad amarillo y filigrana de Camilo Torres en esta fecha. Distinto del dos pesos oro Pick 390 —mismo prócer, grabado por la American Bank Note Company—. Esta pieza de la colección se presenta sin encapsular.',
+      en: 'The Banco de la República ordered this fifty-peso oro of the Pick 414 family (1973–1974) from Thomas De La Rue & Company, Limited, in London. The face, purple on a multicolour underprint, carries Camilo Torres Tenorio’s portrait at right — labelled “CAMILO TORRES” — and, at center, the promise to pay the bearer fifty gold pesos. The serials are in red: 2467354822, twice, ten digits and no series letter. The printed date is “BOGOTÁ, COLOMBIA 20 DE JULIO DE 1974.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario), the pair Numista assigns to this date (GBR, AJG). There is no R prefix and no asterisk between GERENTE and SECRETARIO: it is not the 1974 replacement. The back shows Colombian orchids — labelled “ORQUÍDEAS COLOMBIANAS”; Cattleya trianae in English-language catalogs — the national arms, and the figures 50. The imprint reads “THOMAS DE LA RUE & COMPANY, LIMITED.” That imprint distinguishes type 414 from the Pick 425 fifty-peso oro of 1984–1986, printed at the Imprenta de Billetes in Bogotá. Banknote World records a yellow security thread and a Camilo Torres watermark on this date. Distinct from the Pick 390 two-peso oro — the same patriot, engraved by the American Bank Note Company. This collection piece is shown unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50 pesos oro, Pick 414a: Camilo Torres, serial 2467354822 y fecha 20 de julio de 1974.',
+      en: 'Face of the 50 pesos oro, Pick 414a: Camilo Torres, serial 2467354822, and the date 20 July 1974.',
+    },
+    backCaption: {
+      es: 'Reverso del 50 pesos oro, Pick 414a: orquídeas colombianas, escudo nacional y pie THOMAS DE LA RUE & COMPANY, LIMITED.',
+      en: 'Back of the 50 pesos oro, Pick 414a: Colombian orchids, the national arms, and the imprint THOMAS DE LA RUE & COMPANY, LIMITED.',
+    },
+    scarcity: {
+      es: 'González White 2019 (p. 79) publica 100.000.000 de ejemplares para el 20 de julio de 1974 de circulación, TDLR, seriales de nueve dígitos 170.000.001–270.000.000, y una reposición R. El serial 2467354822 se imprime a diez dígitos y no coincide con esa banda ni con el intervalo R. No da una tirada aparte de esta pieza. Numista agrupa el diseño 1973–1974 bajo N# 211665 y cita esta fecha como TBB B953b / Hernández 265, firmas GBR y AJG. El Bank Note Museum describe Pick 414 como 20.07.1973 y 20.07.1974, TDLR, Camilo Torres y orquídeas. Las tablas BanRep de 1973 y 1974 no registran 50 pesos. Esta ficha no inventa una tirada ni fuerza el serial de diez dígitos a la emisión de nueve.',
+      en: 'González White 2019 (p. 79) publishes 100,000,000 notes for the circulating 20 July 1974 date, TDLR, nine-digit serials 170.000.001–270.000.000, and an R replacement. Serial 2467354822 is printed with ten digits and matches neither that band nor the R interval. It does not give a separate printage for this piece. Numista groups the 1973–1974 design under N# 211665 and cites this date as TBB B953b / Hernández 265, signatures GBR and AJG. The Bank Note Museum describes Pick 414 as 20.07.1973 and 20.07.1974, TDLR, Camilo Torres and orchids. BanRep’s 1973 and 1974 tables record no 50-peso notes. This record does not invent a printage or force the ten-digit serial into the nine-digit emisión.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 2467354822. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial 2467354822 has not been independently verified. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0414.htm',
+        es: 'Bank Note Museum — Colombia P-414, 50 pesos oro (1973–1974)',
+        en: 'Bank Note Museum — Colombia P-414, 50 pesos oro (1973–1974)',
+        note: {
+          es: '414: 20.07.1973 y 20.07.1974; Thomas de la Rue; anverso Camilo Torres Tenorio; reverso orquídeas (Cattleya trianae). Distinto del Pick 412 de fechas anteriores.',
+          en: '414: 20.07.1973 and 20.07.1974; Thomas de la Rue; Camilo Torres Tenorio on the face; orchids (Cattleya trianae) on the back. Distinct from earlier-date Pick 412.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note211665.html',
+        es: 'Numista — Colombia 50 pesos oro, N# 211665',
+        en: 'Numista — Colombia 50 pesos oro, N# 211665',
+        note: {
+          es: '20.07.1974: TBB B953b; Hernández 265; firmas GBR y AJG; 140 × 70 mm; Thomas de la Rue. Distinto de las fechas IBB Pick 425.',
+          en: '20.07.1974: TBB B953b; Hernández 265; signatures GBR and AJG; 140 × 70 mm; Thomas de la Rue. Distinct from the IBB Pick 425 dates.',
+        },
+      },
+      {
+        href: 'https://www.banknoteworld.org/colombia-50-pesos-oro-1974-p-414a-2.html',
+        es: 'Banknote World — Colombia 50 pesos oro 1974, P-414a.2',
+        en: 'Banknote World — Colombia 50 pesos oro 1974, P-414a.2',
+        note: {
+          es: '20.07.1974; Thomas De La Rue; 140 × 70 mm; hilo amarillo y filigrana de Camilo Torres; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
+          en: '20.07.1974; Thomas De La Rue; 140 × 70 mm; yellow thread and Camilo Torres watermark; Germán Botero de los Ríos and Antonio José Gutiérrez.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1973 y 1974: no registran piezas de 50 pesos. Son totales de denominación-año, no la tirada del 20 de julio de 1974 ni de este serial.',
+          en: '1973 and 1974 production: no 50-peso notes recorded. Those are denomination-year totals, not the printage of 20 July 1974 or of this serial.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 265 para el 20 de julio de 1974; ese H# no se sustituye por un Cód. adivinado. Lista aparte la reposición R de 1974 (170554001–171318448). No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 265 for 20 July 1974; that H# is not replaced by a guessed Cód. The 1974 R replacement (170554001–171318448) is a separate row. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-pesos-oro-1984',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}50-pesos-oro-1984/`,
+    pick: 'P# 425a',
+    serial: '0001806322',
+    signatures: {
+      es: 'Hugo Palacios Mejía (gerente) y Roberto Salazar Manrique (abogado-subgerente)',
+      en: 'Hugo Palacios Mejía (gerente) and Roberto Salazar Manrique (abogado-subgerente)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 12 de octubre de 1984. Diez dígitos, sin letra de serie. González White 2019 (pp. 80–81) publica 100.000.000 de ejemplares, seriales 00.000.001–100.000.000, para esa fecha IBB; el serial 0001806322 cae en ese tramo. El mismo pliego lista una reposición asterisco (00.100.231–00.235.185); Hernández (8.ª ed., 2023) da el intervalo 00107344–00215345. El serial 0001806322 —y su núcleo de ocho dígitos 01806322— no coincide con esas bandas. El OCR del pliego mezcla BG# y fechas: no se publica aquí un BG# adivinado. Formato publicado: 140 × 70 mm. El Bank Note Museum agrupa el tipo 425a en 12.10.1984 y 01.01.1985, sin fibras incrustadas. La tabla BanRep de 1984 no registra piezas de 50 pesos ese año calendario; 1983 registra 154,5 millones y 1985 149,75 millones —totales de denominación-año, no la tirada de esta fecha—. Esta ficha no sustituye la emisión del catálogo por esos totales.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 12 October 1984. Ten digits, no series letter. González White 2019 (pp. 80–81) publishes 100,000,000 notes, serials 00.000.001–100.000.000, for that IBB date; serial 0001806322 sits in that range. The same spread lists an asterisk replacement (00.100.231–00.235.185); Hernández (8th ed., 2023) gives the interval 00107344–00215345. Serial 0001806322 — and its eight-digit core 01806322 — does not match those bands. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 425a under 12.10.1984 and 01.01.1985, without embedded fibres. BanRep’s 1984 table records no 50-peso notes that calendar year; 1983 records 154.5 million and 1985 149.75 million — denomination-year totals, not this date’s printage. This record does not replace the catalogue emisión with those totals.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-composite.jpg',
+      front: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-front.jpg',
+      back: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-back.jpg',
+    },
+    title: {
+      es: '50 pesos oro · 1984',
+      en: '50 pesos oro · 1984',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República',
+      en: 'Colombia · Banco de la República',
+    },
+    lead: {
+      es: 'Cincuenta pesos oro, Pick 425a: fecha 12 de octubre de 1984, serial 0001806322. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A fifty-peso oro, Pick 425a: date 12 October 1984, serial 0001806322. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cincuenta pesos oro de la familia Pick 425 (1984–1986). El anverso, en púrpura sobre policromía, lleva a la derecha el retrato de Camilo Torres Tenorio —rotulado «CAMILO TORRES»— y al centro la promesa de pagar al portador cincuenta pesos oro. Los seriales van en rojo: 0001806322, dos veces, a diez dígitos y sin letra de serie. Junto a COLOMBIA hay una roseta de adorno; no es asterisco de reposición. La fecha impresa es «BOGOTÁ, 12 DE OCTUBRE DE 1984». Las firmas son las de Hugo Palacios Mejía (gerente) y Roberto Salazar Manrique (abogado-subgerente), el par que Numista asigna a esta fecha (HPM, RSM). No hay asterisco entre GERENTE y ABOGADO-SUBGERENTE: no es la reposición de esa fecha. El reverso muestra orquídeas colombianas —rotuladas «ORQUÍDEAS COLOMBIANAS»; Cattleya trianae en los catálogos anglófonos—, el escudo nacional y las cifras 50. El pie lee «IMPRENTA DE BILLETES - BOGOTÁ». Ese pie distingue el tipo 425 de las fechas 1980–1983 del mismo retrato y las mismas orquídeas, que no llevan nombre de imprenta. El Bank Note Museum agrupa el 425a en 12.10.1984 y 01.01.1985 sin fibras incrustadas; la variedad con fibras es otra fila de 1985. González White sitúa en ese bloque IBB la ausencia de marca de agua y de hilo de seguridad. Distinto del dos pesos oro Pick 390 —mismo prócer, grabado por la American Bank Note Company; en esta vitrina las series I de 1944 y GG de 1955—. Esta pieza de la colección se presenta sin encapsular.',
+      en: 'The Banco de la República ordered this fifty-peso oro of the Pick 425 family (1984–1986) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, purple on a multicolour underprint, carries Camilo Torres Tenorio’s portrait at right — labelled “CAMILO TORRES” — and, at center, the promise to pay the bearer fifty gold pesos. The serials are in red: 0001806322, twice, ten digits and no series letter. Beside COLOMBIA sits an ornamental rosette; it is not a replacement asterisk. The printed date is “BOGOTÁ, 12 DE OCTUBRE DE 1984.” The signatures are those of Hugo Palacios Mejía (gerente) and Roberto Salazar Manrique (abogado-subgerente), the pair Numista assigns to this date (HPM, RSM). There is no asterisk between GERENTE and ABOGADO-SUBGERENTE: it is not the replacement of that date. The back shows Colombian orchids — labelled “ORQUÍDEAS COLOMBIANAS”; Cattleya trianae in English-language catalogs — the national arms, and the figures 50. The imprint reads “IMPRENTA DE BILLETES - BOGOTÁ.” That imprint distinguishes type 425 from the 1980–1983 dates of the same portrait and orchids, which carry no printer’s name. The Bank Note Museum groups 425a under 12.10.1984 and 01.01.1985 without embedded fibres; the fibre variety is a separate 1985 row. González White places the lack of watermark and security thread on that IBB block. Distinct from the Pick 390 two-peso oro — the same patriot, engraved by the American Bank Note Company; in this case Series I of 1944 and Series GG of 1955. This collection piece is shown unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 50 pesos oro, Pick 425a: Camilo Torres, serial 0001806322 y fecha 12 de octubre de 1984.',
+      en: 'Face of the 50 pesos oro, Pick 425a: Camilo Torres, serial 0001806322, and the date 12 October 1984.',
+    },
+    backCaption: {
+      es: 'Reverso del 50 pesos oro, Pick 425a: orquídeas colombianas, escudo nacional y pie IMPRENTA DE BILLETES - BOGOTÁ.',
+      en: 'Back of the 50 pesos oro, Pick 425a: Colombian orchids, the national arms, and the imprint IMPRENTA DE BILLETES - BOGOTÁ.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 80–81) publica 100.000.000 de ejemplares para el 12 de octubre de 1984 de circulación, IBB, seriales 00.000.001–100.000.000; el serial 0001806322 cae en ese tramo y no coincide con las bandas de reposición asterisco. No da una tirada aparte de esta pieza. Numista agrupa el diseño 1984–1986 bajo N# 213919 y lista esta fecha como P# 425a, con pie de imprenta, firmas HPM y RSM. El Bank Note Museum describe Pick 425a como 12.10.1984 y 01.01.1985 sin fibras incrustadas; el 425b es 01.01.1986. La tabla BanRep de 1984 no registra 50 pesos ese año; 1983 y 1985 sí publican totales de denominación-año. Esta ficha no inventa una tirada ni sustituye la emisión del catálogo por esos totales.',
+      en: 'González White 2019 (pp. 80–81) publishes 100,000,000 notes for the circulating 12 October 1984 date, IBB, serials 00.000.001–100.000.000; serial 0001806322 sits in that range and does not match the asterisk-replacement bands. It does not give a separate printage for this piece. Numista groups the 1984–1986 design under N# 213919 and lists this date as P# 425a, with the printer’s imprint, signatures HPM and RSM. The Bank Note Museum describes Pick 425a as 12.10.1984 and 01.01.1985 without embedded fibres; 425b is 01.01.1986. BanRep’s 1984 table records no 50-peso notes that year; 1983 and 1985 do publish denomination-year totals. This record does not invent a printage or replace the catalogue emisión with those totals.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 0001806322. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial 0001806322 has not been independently verified. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0425.htm',
+        es: 'Bank Note Museum — Colombia P-425, 50 pesos oro (1984–1986)',
+        en: 'Bank Note Museum — Colombia P-425, 50 pesos oro (1984–1986)',
+        note: {
+          es: '425a: 12.10.1984 y 01.01.1985 sin fibras incrustadas; anverso Camilo Torres Tenorio; reverso orquídeas (Cattleya trianae). 425b: 01.01.1986.',
+          en: '425a: 12.10.1984 and 01.01.1985 without embedded fibres; Camilo Torres Tenorio on the face; orchids (Cattleya trianae) on the back. 425b: 01.01.1986.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note213919.html',
+        es: 'Numista — Colombia 50 pesos oro, N# 213919',
+        en: 'Numista — Colombia 50 pesos oro, N# 213919',
+        note: {
+          es: '12.10.1984: P# 425a; firmas HPM y RSM; 140 × 70 mm; con nombre de imprenta al reverso. Distinto de las fechas 1980–1983 sin pie de imprenta.',
+          en: '12.10.1984: P# 425a; signatures HPM and RSM; 140 × 70 mm; with the printer’s name on the back. Distinct from the 1980–1983 dates without an imprint.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1984: no registra piezas de 50 pesos. 1983: 154,5 millones; 1985: 149,75 millones. Son totales de denominación-año, no la tirada del 12 de octubre de 1984 ni de este serial.',
+          en: '1984 production: no 50-peso notes recorded. 1983: 154.5 million; 1985: 149.75 million. Those are denomination-year totals, not the printage of 12 October 1984 or of this serial.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá. Este 50 pesos de 1984 lleva el pie IMPRENTA DE BILLETES - BOGOTÁ.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá. This 1984 50-peso carries the imprint IMPRENTA DE BILLETES - BOGOTÁ.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Lista el 12 de octubre de 1984 ordinario y una reposición con asterisco en el anverso (intervalo 00107344–00215345). No se publica aquí un Cód. adivinado por el OCR ni se sustituye un H# de Numista. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Lists the ordinary 12 October 1984 and a replacement with an asterisk on the face (interval 00107344–00215345). No guessed Cód. from the OCR is published here, and no Numista H# is overwritten. Price columns and plates are not republished.',
         },
       },
     ],
