@@ -65,7 +65,12 @@ const policyHref = localizePath('/politica-privacidad-cookies/', locale);
         localStorage.setItem(storageKey, value);
       } catch (e) {}
       if (window.gtag) {
-        window.gtag('consent', 'update', { analytics_storage: value });
+        window.gtag('consent', 'update', {
+          analytics_storage: value,
+          ad_storage: value,
+          ad_user_data: value,
+          ad_personalization: value,
+        });
       }
       banner.hidden = true;
     }
