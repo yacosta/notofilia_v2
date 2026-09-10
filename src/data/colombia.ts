@@ -331,7 +331,7 @@ export const seriesCopy = {
       'Desde 1993 los billetes dejaron de llevar la leyenda «pesos oro». En octubre de 1994 el «robo del siglo» en la sucursal de Valledupar se llevó unos 24.072 millones de pesos en 2.000, 5.000 y 10.000; el banco canjeó series y, en 1995–1996, sustituyó esas tres denominaciones. En 2016 puso en circulación una familia nueva —de 2.000 a 100.000— con seguridad reforzada, biodiversidad, culturas indígenas y figuras como Gabriel García Márquez.',      'Fuera del papel de banco, esta vitrina documenta un tiquete estudiantil de 15 centavos del Ministerio de Educación Nacional, Servicio Estudiantil de Transporte, en tinta verde y en tinta roja, sin serial ni fecha impresa. No es un billete del Banco de la República.',    ],
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
-    serialLabel: 'Serie',
+    serialLabel: 'N.º de serie',
     sourcesTitle: 'Fuentes',
     errorsTitle: 'Errores',
     errorsIntro:
@@ -339,6 +339,9 @@ export const seriesCopy = {
     errorsEmpty:
       'Aún no hay errores publicados en esta vitrina. Cuando se documente una pieza, aparecerá aquí ordenada por año y denominación.',
     errorsTiqueteHeading: 'Tiquete de Subsidio / Boleto de Control',
+    errorsTiqueteLead:
+      'Ese papel de transporte no es un error de impresión. Está documentado en la vitrina de tiquetes y vales.',
+    errorsTiqueteLink: 'Ver tiquetes y vales',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
   },
@@ -366,6 +369,9 @@ export const seriesCopy = {
     errorsEmpty:
       'No error notes are published in this case yet. When a piece is documented, it will appear here sorted by year and denomination.',
     errorsTiqueteHeading: 'Subsidy Ticket / Control Ticket',
+    errorsTiqueteLead:
+      'That transport paper is not a printing error. It is documented in the tickets-and-vouchers case.',
+    errorsTiqueteLink: 'See tickets and vouchers',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
   },
