@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-09T02:24:50.266Z",
+  "generatedAt": "2026-09-10T02:57:23.296Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -781,6 +781,45 @@
       "title": {
         "es": "10 pesos oro · Banco de la República · 1979",
         "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "a1515309144d2990",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-composite.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "4a6353121b3b1541",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-front.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "back",
+      "hash": "d86a3d0d0f2d2241",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-back.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
       }
     },
     {
@@ -1990,6 +2029,45 @@
       "title": {
         "es": "1 dólar · Serie 2003 · Atlanta ★",
         "en": "$1 · Series 2003 · Atlanta ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "08450cceaeecca08",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "00c48aa4c8ccac00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "back",
+      "hash": "00a6a0f4e844c400",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
       }
     },
     {

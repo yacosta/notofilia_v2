@@ -778,3 +778,94 @@ describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
     );
   });
 });
+
+describe('Colombia BanRep 100 pesos oro 1980 TDLR circulation', () => {
+  it('is a distinct Pick 418b note with ordinary serial 08648220, not the 1980 5 pesos or a prefix A/B/C type', () => {
+    const note = noteById('100-pesos-oro-1980');
+    const fivePesos = noteById('5-pesos-oro-1980');
+    assert.ok(note);
+    assert.ok(fivePesos);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 418b · TBB B958a');
+    assert.equal(note.serial, '08648220');
+    assert.notEqual(note.serial, fivePesos.serial);
+    assert.notEqual(note.path, fivePesos.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /100\.000\.000 de ejemplares/);
+    assert.match(note.printed.es, /p\. 86/);
+    assert.match(note.printed.es, /no publica una cifra de 100 pesos/);
+    assert.match(note.printed.es, /146,3 millones/);
+    assert.match(note.description.es, /08648220/);
+    assert.match(note.description.en, /08648220/);
+    assert.match(note.description.es, /Santander/);
+    assert.match(note.description.es, /Capitolio Nacional/);
+    assert.match(note.description.en, /Capitolio Nacional/);
+    assert.match(note.description.es, /Thomas De La Rue/);
+    assert.match(note.description.es, /No hay letra de serie ni prefijo R/);
+    assert.match(note.description.en, /There is no series letter and no R prefix/);
+    assert.match(note.description.es, /418c/);
+    assert.match(note.description.es, /Pick 426/);
+    assert.match(note.printed.es, /Hernández 307/);
+    assert.match(note.printed.en, /Hernández 307/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/catalogue/note224500.html'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.note.es, /Hernández 307/);
+    assert.match(hernandez.note.en, /Hernández 307/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1980-100-pesos-oro-08648220'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-100-pesos-oro-p418b-b958a'), true);
+  });
+
+  it('lists the 1980 100 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(
+      chapter.body.es,
+      /100 pesos oro de 1980 \(Pick 418b \/ TBB B958a\), serial 08648220/,
+    );
+    assert.match(
+      chapter.body.en,
+      /1980 100 pesos oro \(Pick 418b \/ TBB B958a\), serial 08648220/,
+    );
+    assert.match(
+      seriesCopy.es.intro.join(' '),
+      /100 pesos oro de 1980 \(Pick 418b \/ TBB B958a\), serial 08648220/,
+    );
+    assert.match(
+      seriesCopy.en.intro.join(' '),
+      /1980 100 pesos oro \(Pick 418b \/ TBB B958a\), serial 08648220/,
+    );
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '100-pesos-oro-1980');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '08648220');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/100-pesos-oro-1980/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/100-pesos-oro-1980/',
+    );
+  });
+});
