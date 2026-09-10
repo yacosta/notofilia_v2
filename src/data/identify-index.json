@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-09T02:24:50.266Z",
+  "generatedAt": "2026-09-10T02:51:28.368Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1213,6 +1213,45 @@
       }
     },
     {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "124d5501a1170705",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "c42b295555536422",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "back",
+      "hash": "0c06170f4f0fa112",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
       "pieceId": "1000-pesos-error-2008",
       "face": "front",
       "hash": "0053170000170700",
@@ -1990,6 +2029,45 @@
       "title": {
         "es": "1 dólar · Serie 2003 · Atlanta ★",
         "en": "$1 · Series 2003 · Atlanta ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "08450cceaeecca08",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "00c48aa4c8ccac00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "back",
+      "hash": "00a6a0f4e844c400",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
       }
     },
     {
