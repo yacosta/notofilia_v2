@@ -2115,6 +2115,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/100-pesos-oro-1980/": {
+      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/100-pesos-oro-1980": {
+      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/5-pesos-rio-hacha-1883/": {
       "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
       "status": 301,

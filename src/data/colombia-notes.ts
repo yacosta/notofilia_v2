@@ -24,6 +24,7 @@ export type ColombiaNoteId =
   | '20-pesos-oro-1983'
   | '50-pesos-oro-1974'
   | '50-pesos-oro-1984'
+  | '100-pesos-oro-1980'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '10000-pesos-1994'
@@ -2341,6 +2342,100 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Lista el 12 de octubre de 1984 ordinario y una reposición con asterisco en el anverso (intervalo 00107344–00215345). No se publica aquí un Cód. adivinado por el OCR ni se sustituye un H# de Numista. No se publican columnas de precios ni láminas.',
           en: '8th ed. 2023 (Numista L100183). Lists the ordinary 12 October 1984 and a replacement with an asterisk on the face (interval 00107344–00215345). No guessed Cód. from the OCR is published here, and no Numista H# is overwritten. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '100-pesos-oro-1980',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}100-pesos-oro-1980/`,
+    pick: 'P# 418s',
+    serial: '00000000 · SPECIMEN Nº 027',
+    signatures: {
+      es: 'Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario)',
+      en: 'Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Thomas De La Rue & Co., Londres. Espécimen de la fecha 1.º de enero de 1980, sin prefijo de serie; formato publicado 140 × 70 mm. El Bank Note Museum numera esa fecha sin prefijo como Pick 418b —«CIEN PESOS ORO» en letras rellenas— y la distingue del 418a de 1977 y del 418c con prefijos A, B y C. Numista agrupa el diseño bajo N# 224500 (P# 418 / TBB B958a; Hernández 307 para el ejemplar de circulación). González White 2019 (p. 86, pliego CIEN PESOS 1977 y 1980) publica 100.000.000 de ejemplares de circulación para el 1.º de enero de 1980, ocho dígitos, seriales 00.000.001–100.000.000, pie T. de la R.; el pliego no da una tirada de especímenes. El OCR mezcla BG# y fechas: no se publica aquí un BG# adivinado. Distinto de las filas 1980 A–C (p. 87). La tabla BanRep de 1980 no registra producción de 100 pesos (ese año anota 5 a 50 pesos); no es la tirada de este espécimen. Esta ficha no inventa una tirada.',
+      en: 'Thomas De La Rue & Co., London. Specimen of the 1 January 1980 date, without a serial prefix; published size 140 × 70 mm. The Bank Note Museum numbers that no-prefix date as Pick 418b — “CIEN PESOS ORO” in filled letters — and distinguishes it from 418a of 1977 and from 418c with prefixes A, B, and C. Numista groups the design under N# 224500 (P# 418 / TBB B958a; Hernández 307 for the circulating note). González White 2019 (p. 86, CIEN PESOS 1977 and 1980 spread) publishes 100,000,000 circulating notes for 1 January 1980, eight digits, serials 00.000.001–100.000.000, T. de la R. imprint; the spread does not give a specimen printage. The OCR jumbles BG# against dates: no guessed BG# is published here. Distinct from the 1980 A–C rows (p. 87). BanRep’s 1980 table records no 100-peso production (that year lists 5- to 50-peso notes); that is not this specimen’s printage. This record does not invent a printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-composite.jpg',
+      front: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-front.jpg',
+      back: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-back.jpg',
+    },
+    title: {
+      es: '100 pesos oro · espécimen · 1980',
+      en: '100 pesos oro · specimen · 1980',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Espécimen TDLR',
+      en: 'Colombia · Banco de la República · TDLR specimen',
+    },
+    lead: {
+      es: 'Cien pesos oro, espécimen Pick 418s de la fecha 1.º de enero de 1980: seriales de ceros y SPECIMEN Nº 027. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A one-hundred-peso oro specimen, Pick 418s of the 1 January 1980 date: zero serials and SPECIMEN Nº 027. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a Thomas De La Rue, de Londres, este cien pesos oro de Santander y el Capitolio. El Bank Note Museum numera el tipo Pick 418 en 1977 y 1980 y distingue tres letras: 418a (1.º de enero de 1977, letras huecas), 418b (1.º de enero de 1980, sin prefijo, letras rellenas) y 418c (la misma fecha con prefijos A, B o C). Numista agrupa el diseño bajo N# 224500 (P# 418 / TBB B957–B958; Hernández 304–310) y cita TBB B958a / Hernández 307 para la fecha de 1980 sin prefijo. Esta pieza es un espécimen de esa fecha 418b: seriales rojos 00000000, dos veces; sobrecarga diagonal SPECIMEN; óvalos «SPECIMEN / NO VALUE»; «SPECIMEN Nº 027» en el margen inferior; y tres perforaciones de cancelación. Un óvalo adicional lee «IMPRENTA DE BILLETES DE BANCO DE LA REPUBLICA». La fecha impresa es «1 DE ENERO DE 1980». El anverso, en violeta sobre fondo rosa, lleva a la derecha el retrato rotulado «SANTANDER», al centro la promesa de pagar al portador cien pesos oro, y a la izquierda el dispositivo de registro —libros, pluma y tintero—. Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que los catálogos asignan a esa fecha (RGQ, FJO). El reverso muestra el Capitolio Nacional de Bogotá —«CAPITOLIO NACIONAL / BOGOTÁ»—, el mismo dispositivo de libros y las cifras 100. González White 2019 (p. 86) anota, para las filas 307 a 314, marca de agua con el emblema de la Libertad. El pie de tipo, en los catálogos, es Thomas De La Rue. Distinto del 418a de 1977, del 418c con letra de serie, del espécimen de 5 pesos oro de 1960 (Pick 405s) y del de 2.000 pesos oro de 1983 (Pick 430as, SPECIMEN Nº 030). Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República ordered this Santander and Capitol one-hundred-peso oro from Thomas De La Rue of London. The Bank Note Museum numbers Pick 418 in 1977 and 1980 and distinguishes three letters: 418a (1 January 1977, hollow letters), 418b (1 January 1980, no prefix, filled letters), and 418c (the same date with prefixes A, B, or C). Numista groups the design under N# 224500 (P# 418 / TBB B957–B958; Hernández 304–310) and cites TBB B958a / Hernández 307 for the 1980 date without a prefix. This piece is a specimen of that 418b date: red serials 00000000, twice; a diagonal SPECIMEN overprint; “SPECIMEN / NO VALUE” ovals; “SPECIMEN Nº 027” on the lower margin; and three cancellation punches. An additional oval reads “IMPRENTA DE BILLETES DE BANCO DE LA REPUBLICA.” The printed date is “1 DE ENERO DE 1980.” The face, violet on a pink ground, carries at right the portrait labelled “SANTANDER,” at center the promise to pay the bearer one hundred gold pesos, and at left the registration device — books, quill, and inkwell. The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair catalogues assign to that date (RGQ, FJO). The back shows Bogotá’s National Capitol — “CAPITOLIO NACIONAL / BOGOTÁ” — the same book device, and the figures 100. González White 2019 (p. 86) notes a Liberty-emblem watermark for rows 307 to 314. Catalogues give Thomas De La Rue as the type’s printer. Distinct from 418a of 1977, from 418c with a series letter, from the 1960 5 pesos oro specimen (Pick 405s), and from the 1983 2,000 pesos oro specimen (Pick 430as, SPECIMEN Nº 030). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 100 pesos oro, Pick 418s: Santander, serial 00000000, SPECIMEN Nº 027 y fecha 1.º de enero de 1980.',
+      en: 'Face of the 100 pesos oro, Pick 418s: Santander, serial 00000000, SPECIMEN Nº 027, and the date 1 January 1980.',
+    },
+    backCaption: {
+      es: 'Reverso del 100 pesos oro, Pick 418s: Capitolio Nacional de Bogotá, sobrecarga SPECIMEN y óvalos sin valor.',
+      en: 'Back of the 100 pesos oro, Pick 418s: Bogotá’s National Capitol, the SPECIMEN overprint, and the no-value ovals.',
+    },
+    scarcity: {
+      es: 'González White 2019 (p. 86) publica 100.000.000 de ejemplares para el 1.º de enero de 1980 de circulación, ocho dígitos, T. de la R.; no da tirada de especímenes. Numista agrupa el diseño bajo N# 224500 y marca la frecuencia de la fecha de circulación 418b / TBB B958a en un 38 % entre quienes poseen el tipo; no se publica aquí una frecuencia de espécimen. El Bank Note Museum describe Pick 418b como esa fecha sin prefijo, TDLR, con Santander al anverso y el Capitolio al reverso. La tabla BanRep de 1980 no registra 100 pesos. Esta ficha no inventa una tirada de especímenes ni sustituye la emisión de circulación por un total BanRep de denominación-año.',
+      en: 'González White 2019 (p. 86) publishes 100,000,000 notes for the circulating 1 January 1980 date, eight digits, T. de la R.; it does not give a specimen printage. Numista groups the design under N# 224500 and marks the circulating 418b / TBB B958a date’s frequency at 38% among owners of the type; no specimen frequency is published here. The Bank Note Museum describes Pick 418b as that no-prefix date, TDLR, with Santander on the face and the Capitol on the back. BanRep’s 1980 table records no 100-peso notes. This record does not invent a specimen printage or replace the circulating emisión with a BanRep denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el SPECIMEN Nº 027 de este Pick 418s. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for SPECIMEN Nº 027 of this Pick 418s has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0418.htm',
+        es: 'Bank Note Museum — Colombia P-418, 100 pesos oro (1977 y 1980)',
+        en: 'Bank Note Museum — Colombia P-418, 100 pesos oro (1977 and 1980)',
+        note: {
+          es: '418b: 01.01.1980, sin prefijo, letras rellenas; anverso Santander, reverso Capitolio Nacional, Bogotá; impresor Thomas De La Rue, Londres. Distinto del 418a (1977) y del 418c (prefijos A, B y C).',
+          en: '418b: 01.01.1980, no prefix, filled letters; Santander on the face, National Capitol, Bogotá, on the back; printer Thomas De La Rue, London. Distinct from 418a (1977) and 418c (prefixes A, B, and C).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note224500.html',
+        es: 'Numista — Colombia 100 pesos oro, N# 224500',
+        en: 'Numista — Colombia 100 pesos oro, N# 224500',
+        note: {
+          es: '01.01.1980 sin prefijo: P# 418b / TBB B958a; Hernández 307; 140 × 70 mm. Lista la fecha como circulación; no se cita aquí una fila de espécimen ni una frecuencia de espécimen.',
+          en: '01.01.1980 without prefix: P# 418b / TBB B958a; Hernández 307; 140 × 70 mm. Lists the date as circulation; no specimen row or specimen frequency is cited here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1980: 49,5 millones de 5 pesos, 65,45 de 10, 13,5 de 20 y 17,85 de 50. La tabla no registra 100 pesos ese año; no es la tirada de este espécimen ni de la fecha de circulación de 1980.',
+          en: '1980 production: 49.5 million 5-peso notes, 65.45 million 10-peso, 13.5 million 20-peso, and 17.85 million 50-peso. The table records no 100-peso notes that year; it is not the printage of this specimen or of the 1980 circulating date.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 307 para el ejemplar de circulación del 1.º de enero de 1980 sin prefijo; ese H# no se sustituye por el Cód. de 2023 ni se aplica como número de este espécimen.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 307 for the circulating 1 January 1980 note without a prefix; that H# is not replaced by a 2023 Cód. and is not applied as this specimen’s number.',
         },
       },
     ],

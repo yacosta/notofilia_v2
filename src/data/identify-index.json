@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T03:29:21.766Z",
+  "generatedAt": "2026-09-10T03:36:34.410Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -898,6 +898,45 @@
       "title": {
         "es": "50 pesos oro · 1984",
         "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "front",
+      "hash": "624d77d0431f1d06",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-composite.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "front",
+      "hash": "ca2b155d6d292d91",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-front.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "back",
+      "hash": "ca132505390f0395",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-back.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
       }
     },
     {
