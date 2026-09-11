@@ -152,6 +152,7 @@ export const additions: Holding[] = [
   { id: 'co-2000-1000-pesos-error-693949988', kind: 'banknote', country: 'CO' },
   { id: 'co-1983-20-pesos-oro-056462955', kind: 'banknote', country: 'CO' },
   { id: 'co-1980-100-pesos-oro-specimen-027', kind: 'banknote', country: 'CO' },
+  { id: 'co-1993-5000-pesos-oro-82210365', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -233,6 +234,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2000-1000-pesos-error-p450' },
   { id: 'co-1983-20-pesos-oro-p409d' },
   { id: 'co-1980-100-pesos-oro-p418s' },
+  { id: 'co-1993-5000-pesos-oro-p436a-b974c' },
 ];
 
 export type CollectionStats = {

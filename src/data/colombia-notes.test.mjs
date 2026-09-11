@@ -909,6 +909,77 @@ describe('Colombia BanRep 50 pesos oro 1984 Imprenta de Billetes', () => {
   });
 });
 
+describe('Colombia BanRep 5.000 pesos oro 1993 Imprenta de Billetes', () => {
+  it('is a distinct Pick 436A circulation note with ordinary serial 82210365', () => {
+    const note = noteById('5000-pesos-oro-1993');
+    const twoThousand = noteById('2000-pesos-oro-1983');
+    const tenThousand = noteById('10000-pesos-1994');
+    assert.ok(note);
+    assert.ok(twoThousand);
+    assert.ok(tenThousand);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 436A · TBB B974c');
+    assert.equal(note.serial, '82210365');
+    assert.notEqual(note.serial, twoThousand.serial);
+    assert.notEqual(note.path, twoThousand.path);
+    assert.notEqual(note.path, tenThousand.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /93\.600\.000 de ejemplares/);
+    assert.match(note.printed.es, /120,25 millones/);
+    assert.match(note.printed.es, /denominación/);
+    assert.match(note.description.es, /82210365/);
+    assert.match(note.description.en, /82210365/);
+    assert.match(note.description.es, /Rafael Núñez/);
+    assert.match(note.description.en, /Rafael Núñez/);
+    assert.match(note.description.es, /Ermita del Cabrero/);
+    assert.match(note.description.es, /IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ/);
+    assert.match(note.description.es, /No hay estrella de reposición/);
+    assert.match(note.description.en, /There is no replacement star/);
+    assert.match(note.description.es, /Francisco José Ortega/);
+    assert.match(note.description.es, /Antonio Cerón del Hierro/);
+    assert.match(note.description.es, /Pick 434/);
+    assert.match(note.description.es, /José Asunción Silva/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1993-5000-pesos-oro-82210365'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1993-5000-pesos-oro-p436a-b974c'), true);
+  });
+
+  it('lists the 1993 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /5\.000 pesos oro de 1993 \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    assert.match(chapter.body.en, /1993 5,000 pesos oro \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    assert.match(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1993 \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    assert.match(seriesCopy.en.intro.join(' '), /1993 5,000 pesos oro \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5000-pesos-oro-1993');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '82210365');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5000-pesos-oro-1993/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5000-pesos-oro-1993/',
+    );
+  });
+});
+
 describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
   it('is a distinct BanRep specimen with SPECIMEN Nº 027, not the 1960 or 1983 zero-serial notes', () => {
     const note = noteById('100-pesos-oro-1980');
