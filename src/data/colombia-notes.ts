@@ -27,6 +27,7 @@ export type ColombiaNoteId =
   | '100-pesos-oro-1980'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
+  | '5000-pesos-oro-1993'
   | '10000-pesos-1994'
   | '2000-pesos-2008'
   | '2000-pesos-2015'
@@ -2606,6 +2607,104 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Espécimen 24.07.1983: P# 430s / TBB B971as; firmas HPM y FJO₁; 140 × 70 mm; frecuencia 0 % en el tipo.',
           en: '24.07.1983 specimen: P# 430s / TBB B971as; signatures HPM and FJO₁; 140 × 70 mm; 0% frequency within the type.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5000-pesos-oro-1993',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}5000-pesos-oro-1993/`,
+    pick: 'P# 436A · TBB B974c',
+    serial: '82210365',
+    signatures: {
+      es: 'Francisco José Ortega (gerente) y Antonio Cerón del Hierro (secretario)',
+      en: 'Francisco José Ortega (gerente) and Antonio Cerón del Hierro (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Emisión de circulación del Banco de la República; fecha impresa en el anverso: Santa Fe de Bogotá, 4 de enero de 1993. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie. González White 2019 (pp. 124–125) publica 93.600.000 de ejemplares para esa fecha IBSFB del tipo Núñez–Caro; el serial 82210365 cae en ese tramo. El mismo pliego lista una reposición estrella (00.100.014–00.274.159); 82210365 no coincide con esa banda. El OCR del pliego mezcla BG# y fechas: no se publica aquí un BG# adivinado. El Bank Note Museum numera las fechas 31.01.1992 y 04.01.1993 como Pick 436A (IBSFB) y las distingue del 436 de Bogotá (1990) y de las impresiones alemanas e italianas (Pick 434 y 435). La tabla BanRep de 1993 registra 120,25 millones de piezas de 5.000 pesos: es el total de esa denominación ese año, no la tirada de esta fecha. Esta ficha no sustituye la emisión del catálogo por ese total.',
+      en: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Banco de la República circulation issue; date printed on the face: Santa Fe de Bogotá, 4 January 1993. Published size 140 × 70 mm; eight digits, no series letter. González White 2019 (pp. 124–125) publishes 93,600,000 notes for that IBSFB Núñez–Caro date; serial 82210365 sits in that range. The same spread lists a star replacement (00.100.014–00.274.159); 82210365 does not match that band. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. The Bank Note Museum numbers the 31.01.1992 and 04.01.1993 dates as Pick 436A (IBSFB) and distinguishes them from Bogotá’s 436 (1990) and from the German and Italian printings (Pick 434 and 435). BanRep’s 1993 table records 120.25 million 5,000-peso notes: that is every note of that face value that year, not this date’s printage. This record does not replace the catalogue emisión with that total.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-composite.jpg',
+      front: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-front.jpg',
+      back: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-back.jpg',
+    },
+    title: {
+      es: '5.000 pesos oro · 1993',
+      en: '5,000 pesos oro · 1993',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República',
+      en: 'Colombia · Banco de la República',
+    },
+    lead: {
+      es: 'Cinco mil pesos oro, Pick 436A / TBB B974c: fecha 4 de enero de 1993, serial 82210365. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A five-thousand-peso oro, Pick 436A / TBB B974c: date 4 January 1993, serial 82210365. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó este cinco mil pesos oro de la familia Núñez–Caro a su Imprenta de Billetes. El tipo conmemora la Constitución de 1886 y los Estados Unidos de Colombia de 1863–1886. El Bank Note Museum numera las primeras fechas alemanas como Pick 434 (Bundesdruckerei, 1986), las italianas como Pick 435 (Istituto Poligrafico e Zecca dello Stato, 1987–1988), las de Bogotá como Pick 436 (1990) y estas de Santa Fe de Bogotá como Pick 436A (31.01.1992 y 04.01.1993). Esta pieza es la segunda fecha del 436A. El anverso, en violeta sobre policromía, lleva a la izquierda el retrato de Rafael Núñez y, junto a él, la Ermita del Cabrero de Cartagena. Al centro, la promesa de pagar al portador cinco mil pesos oro. Los seriales van dos veces, a ocho dígitos y sin letra de serie: 82210365. La fecha impresa es «SANTA FE DE BOGOTÁ, 4 DE ENERO DE 1993». Las firmas son las de Francisco José Ortega (gerente) y Antonio Cerón del Hierro (secretario), el par que Numista asigna a esta fecha (FJO, ACH). No hay estrella de reposición junto al serial. El reverso muestra la estatua de Miguel Antonio Caro —con la firma «M. A. Caro» bajo el pedestal— y, a la izquierda, la lista de estados de 1863–1886: Antioquia, Bolívar, Boyacá, Cauca, Cundinamarca, Magdalena, Panamá, Santander y Tolima. El pie lee «IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ». Ese pie distingue el 436A del 436 de Bogotá. Sigue llevando «pesos oro»: González White anota que la palabra «oro» se suprime a partir de las fechas de 1994. No es el 5.000 de José Asunción Silva (1995 en adelante), ni un ejemplar de los rangos que el banco publicó tras el robo de Valledupar en octubre de 1994 —esos seriales del pliego de 1994 no incluyen 82210365—. Esta pieza de la colección se presenta sin encapsular.',
+      en: 'The Banco de la República ordered this five-thousand-peso oro of the Núñez–Caro family from its own Imprenta de Billetes. The type commemorates the 1886 Constitution and the United States of Colombia of 1863–1886. The Bank Note Museum numbers the first German dates as Pick 434 (Bundesdruckerei, 1986), the Italian dates as Pick 435 (Istituto Poligrafico e Zecca dello Stato, 1987–1988), the Bogotá dates as Pick 436 (1990), and these Santa Fe de Bogotá dates as Pick 436A (31.01.1992 and 04.01.1993). This piece is the second 436A date. The face, violet on a multicolour underprint, carries Rafael Núñez’s portrait at left and, beside him, Cartagena’s Ermita del Cabrero. At center is the promise to pay the bearer five thousand gold pesos. The serials appear twice, eight digits and no series letter: 82210365. The printed date is “SANTA FE DE BOGOTÁ, 4 DE ENERO DE 1993.” The signatures are those of Francisco José Ortega (gerente) and Antonio Cerón del Hierro (secretario), the pair Numista assigns to this date (FJO, ACH). There is no replacement star beside the serial. The back shows the statue of Miguel Antonio Caro — with the signature “M. A. Caro” under the pedestal — and, at left, the 1863–1886 list of states: Antioquia, Bolívar, Boyacá, Cauca, Cundinamarca, Magdalena, Panamá, Santander, and Tolima. The imprint reads “IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ.” That imprint distinguishes 436A from Bogotá’s 436. It still reads “pesos oro”: González White notes that the word “oro” is dropped from the 1994 dates onward. It is not the José Asunción Silva 5,000 (from 1995), nor an example from the serial ranges the bank published after the Valledupar robbery in October 1994 — those 1994-spread serials do not include 82210365. This collection piece is shown unslabbed.',
+    },
+    history: {
+      es: 'El cinco mil de Núñez y Caro salió en 1986, centenario de la Constitución de 1886, con retrato del presidente de la Regeneración y, al reverso, la estatua de Miguel Antonio Caro y los estados de 1863–1886. Las primeras tiradas se grabaron en Berlín y en Roma; desde 1990 las imprimió la Imprenta de Billetes en Bogotá y, ya con el pie de Santa Fe de Bogotá, en 1992–1993. Desde 1993 los billetes del banco empezaron a dejar la leyenda «pesos oro»; este 4 de enero de 1993 todavía la lleva. En octubre de 1994 el «robo del siglo» vació la bóveda de Valledupar: 2.000, 5.000 y 10.000, buena parte aún sin emitir. El banco publicó rangos y, en 1995–1996, sustituyó esas tres denominaciones; el 5.000 siguiente honra a José Asunción Silva. Esta ficha documenta un ejemplar ordinario de 1993, serial 82210365, en funda, sin encapsular.',
+      en: 'The Núñez–Caro five-thousand appeared in 1986, the centenary of the 1886 Constitution, with the Regeneración president’s portrait and, on the back, Miguel Antonio Caro’s statue and the states of 1863–1886. The first runs were engraved in Berlin and Rome; from 1990 the Imprenta de Billetes printed them in Bogotá and, already with the Santa Fe de Bogotá imprint, in 1992–1993. From 1993 the bank’s notes began to drop the legend “pesos oro”; this 4 January 1993 still carries it. In October 1994 the “robo del siglo” emptied the Valledupar vault: 2,000, 5,000, and 10,000 notes, much of it still unissued. The bank published serial ranges and, in 1995–1996, replaced those three denominations; the next 5,000 honors José Asunción Silva. This record documents an ordinary 1993 example, serial 82210365, in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 5.000 pesos oro, Pick 436A / TBB B974c: Rafael Núñez, Ermita del Cabrero, serial 82210365 y fecha 4 de enero de 1993.',
+      en: 'Face of the 5,000 pesos oro, Pick 436A / TBB B974c: Rafael Núñez, the Ermita del Cabrero, serial 82210365, and the date 4 January 1993.',
+    },
+    backCaption: {
+      es: 'Reverso del 5.000 pesos oro, Pick 436A / TBB B974c: estatua de Miguel Antonio Caro, lista de estados de 1863–1886 y pie IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ.',
+      en: 'Back of the 5,000 pesos oro, Pick 436A / TBB B974c: statue of Miguel Antonio Caro, the 1863–1886 list of states, and the imprint IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 124–125) publica 93.600.000 de ejemplares para el 4 de enero de 1993 de circulación, IBSFB, ocho dígitos; el serial 82210365 cae en ese tramo y no coincide con la banda de reposición estrella (00.100.014–00.274.159). No da una tirada aparte de esta pieza. Numista agrupa el diseño 1986–1993 bajo N# 244719 y lista esta fecha como P# 436A / TBB B974c / Hernández 532, firmas FJO y ACH, con frecuencia 21 % entre quienes poseen el tipo; esa cifra es una estimación de población de catálogo, no una tirada oficial. El Bank Note Museum describe Pick 436A como 31.01.1992 y 04.01.1993, IBSFB. La tabla BanRep de 1993 atribuye 120,25 millones de piezas a todos los 5.000 pesos de ese año: no es la tirada de una fecha, de un par de firmas ni de un serial. Esta ficha no inventa una tirada.',
+      en: 'González White 2019 (pp. 124–125) publishes 93,600,000 notes for the circulating 4 January 1993 date, IBSFB, eight digits; serial 82210365 sits in that range and does not match the star-replacement band (00.100.014–00.274.159). It does not give a separate printage for this piece. Numista groups the 1986–1993 design under N# 244719 and lists this date as P# 436A / TBB B974c / Hernández 532, signatures FJO and ACH, at 21% frequency among owners of the type; that figure is a catalog-population estimate, not an official printage. The Bank Note Museum describes Pick 436A as 31.01.1992 and 04.01.1993, IBSFB. BanRep’s 1993 table assigns 120.25 million pieces to every 5,000-peso note of that year: that is not the printage of one date, signature pair, or serial. This record does not invent a printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 82210365. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial 82210365 has not been independently verified. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0436A2.htm',
+        es: 'Bank Note Museum — Colombia P-436A, 5.000 pesos oro (1992–1993)',
+        en: 'Bank Note Museum — Colombia P-436A, 5,000 pesos oro (1992–1993)',
+        note: {
+          es: '436A: 31.01.1992 y 04.01.1993; anverso Rafael Núñez; reverso estatua de Miguel Antonio Caro; Imprenta de Billetes – Santa Fe de Bogotá. Distinto del 434 (Berlín), 435 (Roma) y 436 (Bogotá).',
+          en: '436A: 31.01.1992 and 04.01.1993; Rafael Núñez on the face; statue of Miguel Antonio Caro on the back; Imprenta de Billetes – Santa Fe de Bogotá. Distinct from 434 (Berlin), 435 (Rome), and 436 (Bogotá).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/244719',
+        es: 'Numista — Colombia 5.000 pesos oro, N# 244719',
+        en: 'Numista — Colombia 5,000 pesos oro, N# 244719',
+        note: {
+          es: '04.01.1993: P# 436A / TBB B974c; Hernández 532; firmas FJO y ACH; 140 × 70 mm; frecuencia 21 % en el tipo. Impresora: Imprenta de Billetes (Bogotá / Santa Fe de Bogotá).',
+          en: '04.01.1993: P# 436A / TBB B974c; Hernández 532; signatures FJO and ACH; 140 × 70 mm; 21% frequency within the type. Printer: Imprenta de Billetes (Bogotá / Santa Fe de Bogotá).',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1993 de 5.000 pesos: 120,25 millones de piezas (total de la denominación ese año, no de una fecha Pick).',
+          en: '1993 production of 5,000-peso notes: 120.25 million pieces (the denomination total that year, not one Pick date).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 532 para el ejemplar de circulación del 4 de enero de 1993; ese H# no se sustituye por un Cód. adivinado. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 532 for the 4 January 1993 circulating note; that H# is not replaced by a guessed Cód. Price columns and plates are not republished.',
         },
       },
     ],
