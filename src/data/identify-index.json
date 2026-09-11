@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T03:36:34.410Z",
+  "generatedAt": "2026-09-11T02:08:59.464Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1018,6 +1018,45 @@
       }
     },
     {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "235e758601dd5502",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-composite.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "8a294f0e2c1d4b43",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-front.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "back",
+      "hash": "8a2585ca4b754142",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-back.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
       "pieceId": "10000-pesos-1994",
       "face": "front",
       "hash": "a12b8321212f35a1",
@@ -1522,6 +1561,45 @@
       "title": {
         "es": "1.000 pesos · error mariposa · 2011",
         "en": "1,000 pesos · butterfly-cut error · 2011"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "front",
+      "hash": "a52b27d0421b4b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "front",
+      "hash": "8843274b23296722",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "back",
+      "hash": "195a59332b196920",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
       }
     },
     {

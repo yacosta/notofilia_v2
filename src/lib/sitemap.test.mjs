@@ -168,6 +168,13 @@ describe('sitemap coverage stays derived from catalog data', () => {
     assert.match(sitemapSource, /const extra = \['\/'\]/);
   });
 
+  it('maps the Colombia 5,000-peso butterfly-cut error pair used in the sitemap', () => {
+    assert.equal(
+      localizePath('/coleccion/colombia/5000-pesos-error-2010/', 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
+  });
+
   it('maps the Colombia 50,000-peso error pairs used in the sitemap', () => {
     assert.equal(
       localizePath('/coleccion/colombia/50000-pesos-error-2008/', 'en'),
