@@ -115,8 +115,13 @@ describe('page-specific catalog sources', () => {
     const catalogHrefs = hrefsIn(exportArrayBlock(read('./colombia-type-catalog.ts'), 'noteCatalogSources'));
     assert.equal(catalogHrefs.some((href) => href.includes('currency.ha.com')), false);
     assert.equal(catalogHrefs.includes('https://en.numista.com/L100183'), false);
-    const coinCatalogSource = read('./colombia-coin-type-catalog.ts');
-    assert.match(coinCatalogSource, /export const coinCatalogSources: CatalogSource\[\] = \[\];/);
+    const coinCatalogHrefs = hrefsIn(exportArrayBlock(read('./colombia-coin-type-catalog.ts'), 'coinCatalogSources'));
+    assert.equal(coinCatalogHrefs.some((href) => href.includes('currency.ha.com')), false);
+    assert.equal(coinCatalogHrefs.includes('https://en.numista.com/L100183'), true);
+    assert.equal(
+      coinCatalogHrefs.includes('https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion'),
+      true,
+    );
   });
 
   it('lists editorial primary sources only when the article body used them', () => {
