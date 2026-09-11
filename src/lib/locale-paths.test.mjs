@@ -408,6 +408,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/1000-pesos-error-2011/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/5000-pesos-error-2010/', 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/50000-pesos-error-2008/', 'en'),
       '/en/collection/colombia/50000-pesos-error-2008/',
     );
@@ -518,6 +522,10 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
+    assert.equal(
+      redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
