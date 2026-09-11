@@ -183,6 +183,10 @@ describe('Colombia visual catalog data files', () => {
     assert.doesNotMatch(noteCatalogSource, /\b(price|precio|realized):/i);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /5000-pesos-santa-laura-2015/);
+    assert.match(coinCatalogSource, /1-peso-pm-1907/);
+    assert.match(coinCatalogSource, /10-centavos-palonegro-1902/);
+    assert.match(coinCatalogSource, /lazareto-50-centavos-1928/);
+    assert.match(coinCatalogSource, /20000-pesos-2024-santa-marta/);
     assert.doesNotMatch(coinCatalogSource, /\b(price|precio|realized):/i);
   });
 
