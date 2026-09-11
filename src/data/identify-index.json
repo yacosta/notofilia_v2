@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-11T01:53:35.934Z",
+  "generatedAt": "2026-09-11T02:08:59.464Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1015,6 +1015,45 @@
       "title": {
         "es": "2.000 pesos oro · 1983",
         "en": "2,000 pesos oro · 1983"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "235e758601dd5502",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-composite.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "8a294f0e2c1d4b43",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-front.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "back",
+      "hash": "8a2585ca4b754142",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-back.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
       }
     },
     {
