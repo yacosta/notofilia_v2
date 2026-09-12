@@ -68,7 +68,6 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
 function withEnglishSlugs(records: GlossaryTermRecord[]): GlossaryTerm[] {
   const used = new Set<string>();
   return records.map((term) => {
-<<<<<<< HEAD
     let slugEn = GLOSSARY_SLUG_EN[term.slug] ?? (slugifyEnglish(term.title.en) || term.slug);
     if (used.has(slugEn)) slugEn = `${slugEn}-${term.slug}`;
     used.add(slugEn);
