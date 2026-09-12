@@ -142,8 +142,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Legal Tender Notes, or greenbacks: the legal-tender federal paper that replaced Demand Notes, with a red seal.',
     },
     body: {
-      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Esta vitrina reunirá el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966, ambos de tamaño pequeño.',
-      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. This case will gather the 1928 red-seal $1 and the 1966 $100, both small-size.',
+      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Ya tiene ficha el 2 dólares de la serie 1917, Fr. 60, serial B50400302A, de tamaño grande. Esta vitrina reunirá también el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966, ambos de tamaño pequeño.',
+      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. The Series 1917 $2, Fr. 60, serial B50400302A, a large-size note, already has a note page. This case will also gather the 1928 red-seal $1 and the 1966 $100, both small-size.',
     },
   },
   {
@@ -395,7 +395,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre notas de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -419,7 +419,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -893,6 +893,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '2-dolares-serie-2003-san-luis'
+  | '2-dolares-serie-1917'
   | '5-dolares-city-bank-new-haven'
   | '50-dolares-canal-bank-nueva-orleans'
   | '5-dolares-confederados-1864'
@@ -2709,6 +2710,144 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'El encapsulado imprime Fr. 1937-H*, serial H00010418*, firmas Marin | Snow | FW, Choice Uncirculated 64 EPQ, posición de plancha D y el pedigrí Rickey Collection.',
           en: 'The holder prints Fr. 1937-H*, serial H00010418*, Marin | Snow | FW signatures, Choice Uncirculated 64 EPQ, plate position D, and the Rickey Collection pedigree.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-dolares-serie-1917',
+    chapterId: 'us-notes',
+    path: '/coleccion/estados-unidos/2-dolares-serie-1917/',
+    pathEn: '/collection/united-states/2-dollars-series-1917/',
+    pick: 'P#188(4) · Fr. 60',
+    serial: 'B50400302A',
+    signatures: {
+      es: 'Harley V. Speelman (registrador del Tesoro) y Frank White (tesorero de los Estados Unidos)',
+      en: 'Harley V. Speelman (Register of the Treasury) and Frank White (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Bureau of Engraving and Printing. Serie impresa 1917, al amparo de la ley del 3 de marzo de 1863. Letra de plancha B. USPaperMoney.Info sitúa el serial B50400302A (bloque BA) en el tramo mixto Elliott-White / Speelman-White B44800001A–B56688000A; el tramo regular solo Speelman-White empieza en B56688001A. Las firmas impresas son Speelman–White (Fr. 60; P#188(4)). Esta ficha no inventa una tirada para Fr. 60 ni para este serial.',
+      en: 'Bureau of Engraving and Printing. Printed Series 1917, under the act of 3 March 1863. Plate letter B. USPaperMoney.Info places serial B50400302A (BA block) in the mixed Elliott-White / Speelman-White band B44800001A–B56688000A; the Speelman-White-only regular range begins at B56688001A. The printed signatures are Speelman–White (Fr. 60; P#188(4)). This record does not invent a printage for Fr. 60 or for this serial.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-composite.jpg',
+      front: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-front.jpg',
+      back: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-back.jpg',
+      width: 1800,
+      height: 817,
+    },
+    title: {
+      es: '2 dólares · United States Note · Serie 1917',
+      en: '$2 · United States Note · Series 1917',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Note',
+      en: 'United States · United States Note',
+    },
+    lead: {
+      es: 'Anverso de tamaño grande con Jefferson, el Capitolio y sello rojo del Tesoro; reverso Bracelet. Serie 1917, Fr. 60, serial B50400302A, firmas Speelman–White.',
+      en: 'Large-size face with Jefferson, the Capitol, and a red Treasury seal; Bracelet reverse. Series 1917, Fr. 60, serial B50400302A, Speelman–White signatures.',
+    },
+    description: {
+      es: 'El 2 dólares de la serie 1917 (Pick 188(4), Friedberg 60) es un United States Note —también Legal Tender Note o greenback— de tamaño grande. El anverso, en negro con sello y seriales rojos, lleva a la izquierda el retrato de Thomas Jefferson en óvalo, rotulado JEFFERSON, y en el centro el grabado del Capitolio. El arco superior dice THIS NOTE IS A LEGAL TENDER FOR TWO DOLLARS; bajo él, SERIES OF 1917 y el pie «ENGRAVED AND PRINTED AT THE BUREAU OF ENGRAVING & PRINTING». El título en blackletter, United States, introduce la promesa Will pay to bearer TWO DOLLARS. A la derecha, un medallón con el 2 y el sello rojo festoneado del Tesoro sobre WASHINGTON, D.C. El borde izquierdo cita el ACT OF MARCH 3RD 1863. Las firmas son las de Harley V. Speelman (Register of the Treasury) y Frank White (Treasurer of the United States). Los seriales rojos B50400302A se repiten abajo a la izquierda y arriba a la derecha (bloque BA); la letra de plancha B figura junto al retrato y junto al 2. El recuadro inferior lee UNITED STATES NOTE. El reverso, en verde, es el que los coleccionistas llaman Bracelet: escudos circulares entrelazados alrededor del 2 central, UNITED STATES OF AMERICA, y TWO arriba y abajo, con la cláusula de curso legal y la pena por falsificación en el cuerpo de la orla. Los coleccionistas llaman horse blankets a estos billetes de formato grande, anteriores al recorte de 1929. Esta pieza de la colección, circulada y sin encapsular, se presenta fotografiada a ambas caras. No es el 2 dólares Federal Reserve Note de 2003 del distrito de San Luis, serial H00010418★, ni un United States Note de tamaño pequeño.',
+      en: 'The Series 1917 $2 (Pick 188(4), Friedberg 60) is a large-size United States Note — also a Legal Tender Note, or greenback. The black face with a red seal and serials carries Thomas Jefferson’s portrait in an oval at left, lettered JEFFERSON, and an engraving of the Capitol at center. The upper arc reads THIS NOTE IS A LEGAL TENDER FOR TWO DOLLARS; below it, SERIES OF 1917 and the imprint “ENGRAVED AND PRINTED AT THE BUREAU OF ENGRAVING & PRINTING.” The blackletter title United States introduces the promise Will pay to bearer TWO DOLLARS. At right a medallion with the figure 2 and the scalloped red Treasury seal sit over WASHINGTON, D.C. The left border cites the ACT OF MARCH 3RD 1863. The signatures are Harley V. Speelman’s (Register of the Treasury) and Frank White’s (Treasurer of the United States). Red serials B50400302A repeat at lower left and upper right (BA block); plate letter B sits beside the portrait and beside the 2. The lower tablet reads UNITED STATES NOTE. The green back is the type collectors call Bracelet: interlocking circular shields around the central 2, UNITED STATES OF AMERICA, and TWO above and below, with the legal-tender clause and the counterfeiting penalty in the scrollwork. Collectors call these large-format notes horse blankets, the size in use before the 1929 reduction. This collection piece, circulated and unslabbed, is shown on both faces. It is not the Series 2003 St. Louis Federal Reserve Note $2, serial H00010418★, nor a small-size United States Note.',
+    },
+    history: [
+      {
+        es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes como curso legal para deudas públicas y privadas. Sustituyeron a los Demand Notes de 1861; el apodo greenback nació en aquellos reversos verdes y pasó a esta clase. El sello y los seriales rojos distinguen el tipo. El BEP los grabó a partir de la serie 1869. La última entrega al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Siguen siendo redimibles a la par. El U.S. Currency Education Program y las FAQs del BEP sitúan esa línea.',
+        en: 'The act of 25 February 1862 authorized United States Notes as legal tender for public and private debts. They replaced the Demand Notes of 1861; the nickname “greenback” was born on those green backs and traveled with this class. A red seal and red serials mark the type. The BEP engraved them from Series 1869. The last delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face. The U.S. Currency Education Program and the BEP FAQs place that line.',
+      },
+      {
+        es: 'La serie 1917 del 2 dólares es el Legal Tender de tamaño grande con Jefferson y el Capitolio: Fr. 57 Teehee–Burke, Fr. 58 Elliott–Burke, Fr. 59 Elliott–White y Fr. 60 Speelman–White, que Numista numera P#188(1) a P#188(4). El año impreso es el de la serie, no el de cada pliego: Speelman y White coincidieron en el cargo en los años 1920, de modo que Fr. 60 se imprimió después de 1917. El reverso Bracelet da nombre al tipo. En 1929 el BEP recortó el formato cerca de un 30 % —de unos 7,375 × 3,125 pulgadas a 6,14 × 2,61—; Numista da 189 × 80 mm para este 2 dólares. El United States Note de 2 dólares de tamaño pequeño corrió hasta 1966; el FRN de 2 dólares con el reverso de Trumbull volvió en 1976. No es el 2 dólares de 2003 de San Luis de esta misma vitrina.',
+        en: 'The Series 1917 $2 is the large-size Legal Tender with Jefferson and the Capitol: Fr. 57 Teehee–Burke, Fr. 58 Elliott–Burke, Fr. 59 Elliott–White, and Fr. 60 Speelman–White, which Numista numbers P#188(1) through P#188(4). The printed year is the series, not each sheet’s press date: Speelman and White overlapped in office in the 1920s, so Fr. 60 was printed after 1917. The Bracelet reverse names the type. In 1929 the BEP cut the format by about 30 percent — from about 7.375 × 3.125 inches to 6.14 × 2.61; Numista gives 189 × 80 mm for this $2. The small-size United States Note $2 ran through 1966; the FRN $2 with the Trumbull reverse returned in 1976. It is not this case’s Series 2003 St. Louis $2.',
+      },
+    ],
+    historyHeading: {
+      es: 'El 2 dólares de tamaño grande',
+      en: 'The large-size $2',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 dólares United States Note, serie 1917, Fr. 60, serial B50400302A: Jefferson, el Capitolio y sello rojo festoneado.',
+      en: 'Face of the Series 1917 United States Note $2, Fr. 60, serial B50400302A: Jefferson, the Capitol, and the scalloped red seal.',
+    },
+    backCaption: {
+      es: 'Reverso Bracelet del 2 dólares, serie 1917, serial B50400302A: escudos circulares entrelazados alrededor del 2.',
+      en: 'Bracelet reverse of the Series 1917 $2, serial B50400302A: interlocking circular shields around the figure 2.',
+    },
+    scarcity: {
+      es: 'El 2 dólares de 1917 es un tipo de tamaño grande accesible. Speelman–White (Fr. 60; P#188(4)) es la combinación de firmas más frecuente: Numista registra que el 85 % de los socios que poseen el tipo N#212833 tienen esa variedad, una medida de presencia en colecciones, no de existencias en subasta. USPaperMoney.Info le asigna los bloques regulares más largos de la serie. Como denominación de trabajo, los ejemplares muy circulados, doblados o manchados son frecuentes; los bien centrados, con papel claro, sobrecarga roja viva y márgenes sanos —en la práctica, Very Fine o mejor— son más escasos. Los coleccionistas avanzados buscan mules Speelman–White: planchas de anverso y reverso de tamaño desigual, en esta serie con los números 59 y 60. Esta ficha no identifica el serial B50400302A como mule y no inventa un censo ni un premio de mercado.',
+      en: 'The 1917 $2 is an accessible large-size type. Speelman–White (Fr. 60; P#188(4)) is the most common signature pairing: Numista records that 85 percent of members who own type N#212833 have that variety, a measure of presence in collections, not of auction supply. USPaperMoney.Info assigns it the longest regular blocks in the series. As a working denomination, heavily circulated, creased, or stained notes are plentiful; well-centered examples with bright paper, vivid red overprints, and sound margins — in practice, Very Fine or better — are scarcer. Advanced collectors look for Speelman–White mules: mismatched face and back plate sizes, in this series involving plate numbers 59 and 60. This record does not identify serial B50400302A as a mule and does not invent a census or a market premium.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial B50400302A. La pieza se presenta sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial B50400302A has not been independently verified. The note is shown unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.uspapermoney.info/serials/u1917_b.html',
+        es: 'USPaperMoney.Info — Series 1917 $2 USN',
+        en: 'USPaperMoney.Info — Series 1917 $2 USN',
+        note: {
+          es: 'Jefferson a la izquierda, Capitolio al centro, reverso Bracelet. Tramos de serial por firmas, incluido el mixto EW/SW B44800001A–B56688000A y Speelman-White desde B56688001A.',
+          en: 'Jefferson at left, Capitol at center, Bracelet back. Serial ranges by signature, including mixed EW/SW B44800001A–B56688000A and Speelman-White from B56688001A.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/212833',
+        es: 'Numista — 2 dólares United States Note (N#212833)',
+        en: 'Numista — 2 Dollars, United States Note (N#212833)',
+        note: {
+          es: 'Fr. 60 y P#188(4) para Speelman–White; sello rojo pequeño a la derecha; 189 × 80 mm. Frecuencia 85 % entre socios que poseen el tipo. No se republican columnas de precio.',
+          en: 'Fr. 60 and P#188(4) for Speelman–White; small red seal at right; 189 × 80 mm. Frequency 85 percent among members who own the type. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-USNOTES/USA0188.htm',
+        es: 'Bank Note Museum — P-188, United States Note de 2 dólares, serie 1917',
+        en: 'Bank Note Museum — P-188, Series 1917 $2 United States Note',
+        note: {
+          es: 'United States Note de sello rojo; Jefferson y el Capitolio; 188(4) firmas Speelman y White.',
+          en: 'Red-seal United States Note; Jefferson and the Capitol; 188(4) Speelman and White signatures.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/2',
+        es: 'U.S. Currency Education Program — 2 dólares',
+        en: 'U.S. Currency Education Program — $2 note',
+        note: {
+          es: 'Jefferson en el anverso del 2 dólares; el FRN con el reverso de Trumbull desde 1976, después del United States Note.',
+          en: 'Jefferson on the $2 face; the FRN with the Trumbull reverse from 1976, after the United States Note.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/faqs',
+        es: 'Bureau of Engraving and Printing — FAQs',
+        en: 'Bureau of Engraving and Printing — FAQs',
+        note: {
+          es: 'United States Notes: primer papel nacional (1862); última puesta en circulación el 21 de enero de 1971.',
+          en: 'United States Notes: first national paper (1862); last placed in circulation 21 January 1971.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1839454',
+        es: 'National Museum of American History — 2 dólares, Legal Tender Note, 1917',
+        en: 'National Museum of American History — $2 Legal Tender Note, 1917',
+        note: {
+          es: 'Ley del 3 de marzo de 1863; serie 1917; Jefferson; cláusula de curso legal y pena por falsificación en el reverso.',
+          en: 'Act of 3 March 1863; Series 1917; Jefferson; legal-tender clause and counterfeiting penalty on the back.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/United_States_two-dollar_bill',
+        es: 'Wikipedia — United States two-dollar bill',
+        en: 'Wikipedia — United States two-dollar bill',
+        note: {
+          es: 'United States Note de 2 dólares hasta 1966; FRN desde 1976 con el reverso de Trumbull.',
+          en: 'United States Note $2 through 1966; FRN from 1976 with the Trumbull reverse.',
         },
       },
     ],

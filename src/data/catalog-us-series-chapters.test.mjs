@@ -77,5 +77,7 @@ describe('US series history chapters', () => {
     assert.match(data, /dos tipos de papel: los Federal Reserve Notes/);
     assert.match(faq, /pagaderos a la vista en metálico/);
     assert.match(faq, /cita a Friedberg/);
+    assert.match(faq, /2 dólares United States Note de 1917/);
+    assert.match(faq, /Series 1917 United States Note \$2/);
   });
 });

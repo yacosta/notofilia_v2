@@ -28,6 +28,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/2-dollars-series-2003-st-louis/'],
   },
   {
+    es: '/coleccion/estados-unidos/2-dolares-serie-1917/',
+    en: '/collection/united-states/2-dollars-series-1917/',
+    aliases: ['/coleccion/united-states/2-dollars-series-1917/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     en: '/collection/united-states/1-dollar-state-bank-new-brunswick/',
     aliases: ['/coleccion/united-states/1-dollar-state-bank-new-brunswick/'],
