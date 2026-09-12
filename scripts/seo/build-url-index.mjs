@@ -101,7 +101,7 @@ async function fromSrcPages() {
   }
   const { standaloneGlossaryTerms } = await import(pathToFileURL(join(root, 'src/data/glossary.ts')).href);
   for (const term of standaloneGlossaryTerms()) {
-    paths.push(`/glosario/${term.slug}/`, `/en/glossary/${term.slug}/`);
+    paths.push(`/glosario/${term.slug}/`, `/en/glossary/${term.slugEn}/`);
   }
   const blog = JSON.parse(readFileSync(join(root, 'src/data/blog-articles.json'), 'utf8'));
   const news = JSON.parse(readFileSync(join(root, 'src/data/news-articles.json'), 'utf8'));

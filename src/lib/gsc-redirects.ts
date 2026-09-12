@@ -73,9 +73,15 @@ export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined 
   const live = liveContentRedirect(pathname);
   if (live) return live;
 
+  const here = withSlash(pathname);
   for (const key of variants(pathname)) {
     const hit = data.redirects[key];
-    if (hit && (hit.status === 301 || hit.status === 410)) {
+    if (hit?.status === 410) {
+      return { target: hit.target, status: hit.status, rule: hit.rule };
+    }
+    if (hit?.status === 301 && hit.target) {
+      const bounce = liveContentRedirect(withSlash(hit.target));
+      if (bounce && variants(bounce.target).includes(here)) continue;
       return { target: hit.target, status: hit.status, rule: hit.rule };
     }
   }

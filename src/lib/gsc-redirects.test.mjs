@@ -33,6 +33,7 @@ describe('gsc redirect lookup', () => {
     const polymer = planSeoResponse('/en/glossary/polimero/');
     assert.equal(polymer.type, 'redirect');
     assert.equal(polymer.type === 'redirect' ? polymer.target : '', '/en/glossary/polymer/');
+    assert.equal(planSeoResponse('/en/glossary/polymer/').type, 'pass');
     const news = planSeoResponse('/en/noticias/billete-2-dolares-serie-baja/');
     assert.equal(news.type, 'redirect');
     assert.equal(news.type === 'redirect' ? news.target : '', '/en/news/the-2-note-with-serial-l00000002a/');
@@ -57,6 +58,8 @@ describe('gsc redirect lookup', () => {
       lines.slice(firstSplat).every((l) => l.includes('*')),
       'no static 301s appear after splat rules',
     );
+    assert.doesNotMatch(redirects, /\/en\/glossary\/polymer\/\s+\/en\/glossary\/polimero\//);
+    assert.match(redirects, /\/en\/glossary\/polimero\/\s+\/en\/glossary\/polymer\/\s+301/);
   });
 
   it('plans 410 for gone URLs and 301 for mapped v1 paths, never to home', () => {

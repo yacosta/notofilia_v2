@@ -4107,10 +4107,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/anverso/",
+      "path": "/en/glossary/obverse/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "anverso",
+      "lastSlug": "obverse",
       "title": "Obverse",
       "alternate": "/glosario/anverso/",
       "redirectTo": ""
@@ -4125,10 +4125,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/banca-libre/",
+      "path": "/en/glossary/free-banking/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "banca-libre",
+      "lastSlug": "free-banking",
       "title": "Free banking",
       "alternate": "/glosario/banca-libre/",
       "redirectTo": ""
@@ -4179,10 +4179,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/billete-de-reemplazo-estrella/",
+      "path": "/en/glossary/replacement-star-note/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "billete-de-reemplazo-estrella",
+      "lastSlug": "replacement-star-note",
       "title": "Replacement / star note",
       "alternate": "/glosario/billete-de-reemplazo-estrella/",
       "redirectTo": ""
@@ -4197,10 +4197,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/billete-provisional/",
+      "path": "/en/glossary/provisional-note/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "billete-provisional",
+      "lastSlug": "provisional-note",
       "title": "Provisional note",
       "alternate": "/glosario/billete-provisional/",
       "redirectTo": ""
@@ -4296,10 +4296,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/columnario-de-dos-mundos/",
+      "path": "/en/glossary/pillar-dollar/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "columnario-de-dos-mundos",
+      "lastSlug": "pillar-dollar",
       "title": "Pillar dollar (two worlds)",
       "alternate": "/glosario/columnario-de-dos-mundos/",
       "redirectTo": ""
@@ -4386,10 +4386,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/dispositivo-opticamente-variable-ovd/",
+      "path": "/en/glossary/optically-variable-device-ovd/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "dispositivo-opticamente-variable-ovd",
+      "lastSlug": "optically-variable-device-ovd",
       "title": "Optically variable device (OVD)",
       "alternate": "/glosario/dispositivo-opticamente-variable-ovd/",
       "redirectTo": ""
@@ -4440,10 +4440,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/encapsulado/",
+      "path": "/en/glossary/slab/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "encapsulado",
+      "lastSlug": "slab",
       "title": "Slab / encapsulation",
       "alternate": "/glosario/encapsulado/",
       "redirectTo": ""
@@ -4467,10 +4467,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/error-de-impresion/",
+      "path": "/en/glossary/printing-error/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "error-de-impresion",
+      "lastSlug": "printing-error",
       "title": "Printing error",
       "alternate": "/glosario/error-de-impresion/",
       "redirectTo": ""
@@ -4566,10 +4566,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/filigrana/",
+      "path": "/en/glossary/watermark/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "filigrana",
+      "lastSlug": "watermark",
       "title": "Watermark",
       "alternate": "/glosario/filigrana/",
       "redirectTo": ""
@@ -4674,19 +4674,19 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/hilo-de-seguridad/",
+      "path": "/en/glossary/security-thread/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "hilo-de-seguridad",
+      "lastSlug": "security-thread",
       "title": "Security thread",
       "alternate": "/glosario/hilo-de-seguridad/",
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/intaglio/",
+      "path": "/en/glossary/intaglio-printing/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "intaglio",
+      "lastSlug": "intaglio-printing",
       "title": "Intaglio printing",
       "alternate": "/glosario/intaglio/",
       "redirectTo": ""
@@ -4818,10 +4818,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/mariposa/",
+      "path": "/en/glossary/butterfly/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "mariposa",
+      "lastSlug": "butterfly",
       "title": "Butterfly cut",
       "alternate": "/glosario/mariposa/",
       "redirectTo": ""
@@ -4845,10 +4845,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/mpc/",
+      "path": "/en/glossary/mpc-military-payment-certificate/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "mpc",
+      "lastSlug": "mpc-military-payment-certificate",
       "title": "MPC (Military Payment Certificate)",
       "alternate": "/glosario/mpc/",
       "redirectTo": ""
@@ -4872,10 +4872,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/notafilia/",
+      "path": "/en/glossary/notaphily/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "notafilia",
+      "lastSlug": "notaphily",
       "title": "Notaphily",
       "alternate": "/glosario/notafilia/",
       "redirectTo": ""
@@ -4908,10 +4908,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/numeracion-especial/",
+      "path": "/en/glossary/fancy-serial-number/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "numeracion-especial",
+      "lastSlug": "fancy-serial-number",
       "title": "Fancy serial number",
       "alternate": "/glosario/numeracion-especial/",
       "redirectTo": ""
@@ -4944,19 +4944,19 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/numeracion/",
+      "path": "/en/glossary/serial-number/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "numeracion",
+      "lastSlug": "serial-number",
       "title": "Serial numbering",
       "alternate": "/glosario/numeracion/",
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/numismatica/",
+      "path": "/en/glossary/numismatics/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "numismatica",
+      "lastSlug": "numismatics",
       "title": "Numismatics",
       "alternate": "/glosario/numismatica/",
       "redirectTo": ""
@@ -4998,10 +4998,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/peso-oro/",
+      "path": "/en/glossary/gold-peso/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "peso-oro",
+      "lastSlug": "gold-peso",
       "title": "Peso oro",
       "alternate": "/glosario/peso-oro/",
       "redirectTo": ""
@@ -5070,19 +5070,19 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/polimero/",
+      "path": "/en/glossary/polymer/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "polimero",
+      "lastSlug": "polymer",
       "title": "Polymer",
       "alternate": "/glosario/polimero/",
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/prueba-ensayo/",
+      "path": "/en/glossary/proof-essay/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "prueba-ensayo",
+      "lastSlug": "proof-essay",
       "title": "Proof / essay",
       "alternate": "/glosario/prueba-ensayo/",
       "redirectTo": ""
@@ -5133,10 +5133,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/resello/",
+      "path": "/en/glossary/overstamp/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "resello",
+      "lastSlug": "overstamp",
       "title": "Countermark",
       "alternate": "/glosario/resello/",
       "redirectTo": ""
@@ -5151,10 +5151,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/reverso/",
+      "path": "/en/glossary/reverse/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "reverso",
+      "lastSlug": "reverse",
       "title": "Reverse",
       "alternate": "/glosario/reverso/",
       "redirectTo": ""
@@ -5340,10 +5340,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/tinta-ovi/",
+      "path": "/en/glossary/ovi-ink/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "tinta-ovi",
+      "lastSlug": "ovi-ink",
       "title": "Optically variable ink (OVI)",
       "alternate": "/glosario/tinta-ovi/",
       "redirectTo": ""
@@ -5376,10 +5376,10 @@
       "redirectTo": ""
     },
     {
-      "path": "/en/glossary/ventana-transparente/",
+      "path": "/en/glossary/clear-window/",
       "lang": "en",
       "type": "glossary",
-      "lastSlug": "ventana-transparente",
+      "lastSlug": "clear-window",
       "title": "Clear window",
       "alternate": "/glosario/ventana-transparente/",
       "redirectTo": ""
@@ -6389,7 +6389,7 @@
       "type": "glossary",
       "lastSlug": "anverso",
       "title": "Anverso",
-      "alternate": "/en/glossary/anverso/",
+      "alternate": "/en/glossary/obverse/",
       "redirectTo": ""
     },
     {
@@ -6407,7 +6407,7 @@
       "type": "glossary",
       "lastSlug": "banca-libre",
       "title": "Banca libre",
-      "alternate": "/en/glossary/banca-libre/",
+      "alternate": "/en/glossary/free-banking/",
       "redirectTo": ""
     },
     {
@@ -6461,7 +6461,7 @@
       "type": "glossary",
       "lastSlug": "billete-de-reemplazo-estrella",
       "title": "Billete de reposición (estrella)",
-      "alternate": "/en/glossary/billete-de-reemplazo-estrella/",
+      "alternate": "/en/glossary/replacement-star-note/",
       "redirectTo": ""
     },
     {
@@ -6479,7 +6479,7 @@
       "type": "glossary",
       "lastSlug": "billete-provisional",
       "title": "Billete provisional",
-      "alternate": "/en/glossary/billete-provisional/",
+      "alternate": "/en/glossary/provisional-note/",
       "redirectTo": ""
     },
     {
@@ -6578,7 +6578,7 @@
       "type": "glossary",
       "lastSlug": "columnario-de-dos-mundos",
       "title": "Columnario de dos mundos",
-      "alternate": "/en/glossary/columnario-de-dos-mundos/",
+      "alternate": "/en/glossary/pillar-dollar/",
       "redirectTo": ""
     },
     {
@@ -6668,7 +6668,7 @@
       "type": "glossary",
       "lastSlug": "dispositivo-opticamente-variable-ovd",
       "title": "Dispositivo ópticamente variable (OVD)",
-      "alternate": "/en/glossary/dispositivo-opticamente-variable-ovd/",
+      "alternate": "/en/glossary/optically-variable-device-ovd/",
       "redirectTo": ""
     },
     {
@@ -6722,7 +6722,7 @@
       "type": "glossary",
       "lastSlug": "encapsulado",
       "title": "Encapsulado",
-      "alternate": "/en/glossary/encapsulado/",
+      "alternate": "/en/glossary/slab/",
       "redirectTo": ""
     },
     {
@@ -6749,7 +6749,7 @@
       "type": "glossary",
       "lastSlug": "error-de-impresion",
       "title": "Error de impresión",
-      "alternate": "/en/glossary/error-de-impresion/",
+      "alternate": "/en/glossary/printing-error/",
       "redirectTo": ""
     },
     {
@@ -6848,7 +6848,7 @@
       "type": "glossary",
       "lastSlug": "filigrana",
       "title": "Filigrana",
-      "alternate": "/en/glossary/filigrana/",
+      "alternate": "/en/glossary/watermark/",
       "redirectTo": ""
     },
     {
@@ -6956,7 +6956,7 @@
       "type": "glossary",
       "lastSlug": "hilo-de-seguridad",
       "title": "Hilo de seguridad",
-      "alternate": "/en/glossary/hilo-de-seguridad/",
+      "alternate": "/en/glossary/security-thread/",
       "redirectTo": ""
     },
     {
@@ -6965,7 +6965,7 @@
       "type": "glossary",
       "lastSlug": "intaglio",
       "title": "Intaglio",
-      "alternate": "/en/glossary/intaglio/",
+      "alternate": "/en/glossary/intaglio-printing/",
       "redirectTo": ""
     },
     {
@@ -7100,7 +7100,7 @@
       "type": "glossary",
       "lastSlug": "mariposa",
       "title": "Mariposa",
-      "alternate": "/en/glossary/mariposa/",
+      "alternate": "/en/glossary/butterfly/",
       "redirectTo": ""
     },
     {
@@ -7127,7 +7127,7 @@
       "type": "glossary",
       "lastSlug": "mpc",
       "title": "MPC (certificado de pago militar)",
-      "alternate": "/en/glossary/mpc/",
+      "alternate": "/en/glossary/mpc-military-payment-certificate/",
       "redirectTo": ""
     },
     {
@@ -7154,7 +7154,7 @@
       "type": "glossary",
       "lastSlug": "notafilia",
       "title": "Notafilia",
-      "alternate": "/en/glossary/notafilia/",
+      "alternate": "/en/glossary/notaphily/",
       "redirectTo": ""
     },
     {
@@ -7190,7 +7190,7 @@
       "type": "glossary",
       "lastSlug": "numeracion-especial",
       "title": "Numeración especial",
-      "alternate": "/en/glossary/numeracion-especial/",
+      "alternate": "/en/glossary/fancy-serial-number/",
       "redirectTo": ""
     },
     {
@@ -7226,7 +7226,7 @@
       "type": "glossary",
       "lastSlug": "numeracion",
       "title": "Numeración",
-      "alternate": "/en/glossary/numeracion/",
+      "alternate": "/en/glossary/serial-number/",
       "redirectTo": ""
     },
     {
@@ -7235,7 +7235,7 @@
       "type": "glossary",
       "lastSlug": "numismatica",
       "title": "Numismática",
-      "alternate": "/en/glossary/numismatica/",
+      "alternate": "/en/glossary/numismatics/",
       "redirectTo": ""
     },
     {
@@ -7280,7 +7280,7 @@
       "type": "glossary",
       "lastSlug": "peso-oro",
       "title": "Peso oro",
-      "alternate": "/en/glossary/peso-oro/",
+      "alternate": "/en/glossary/gold-peso/",
       "redirectTo": ""
     },
     {
@@ -7352,7 +7352,7 @@
       "type": "glossary",
       "lastSlug": "polimero",
       "title": "Polímero",
-      "alternate": "/en/glossary/polimero/",
+      "alternate": "/en/glossary/polymer/",
       "redirectTo": ""
     },
     {
@@ -7361,7 +7361,7 @@
       "type": "glossary",
       "lastSlug": "prueba-ensayo",
       "title": "Prueba / ensayo",
-      "alternate": "/en/glossary/prueba-ensayo/",
+      "alternate": "/en/glossary/proof-essay/",
       "redirectTo": ""
     },
     {
@@ -7415,7 +7415,7 @@
       "type": "glossary",
       "lastSlug": "resello",
       "title": "Resello",
-      "alternate": "/en/glossary/resello/",
+      "alternate": "/en/glossary/overstamp/",
       "redirectTo": ""
     },
     {
@@ -7433,7 +7433,7 @@
       "type": "glossary",
       "lastSlug": "reverso",
       "title": "Reverso",
-      "alternate": "/en/glossary/reverso/",
+      "alternate": "/en/glossary/reverse/",
       "redirectTo": ""
     },
     {
@@ -7622,7 +7622,7 @@
       "type": "glossary",
       "lastSlug": "tinta-ovi",
       "title": "Tinta OVI",
-      "alternate": "/en/glossary/tinta-ovi/",
+      "alternate": "/en/glossary/ovi-ink/",
       "redirectTo": ""
     },
     {
@@ -7658,7 +7658,7 @@
       "type": "glossary",
       "lastSlug": "ventana-transparente",
       "title": "Ventana transparente",
-      "alternate": "/en/glossary/ventana-transparente/",
+      "alternate": "/en/glossary/clear-window/",
       "redirectTo": ""
     },
     {
