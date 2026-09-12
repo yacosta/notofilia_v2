@@ -1,6 +1,6 @@
 /** Cloudflare Image Transformations + card helpers. */
 
-export type ImageWidth = 400 | 640 | 800 | 1200 | 1600 | 2400;
+export type ImageWidth = 400 | 480 | 640 | 800 | 1200 | 1600 | 2400;
 
 /** Bump when series hero masters change so CDN/browser caches pick up new art at the same path. */
 export const CATALOG_HERO_VERSION = '20260829';
@@ -59,3 +59,12 @@ export function editorialUploadSrcset(src: string, masterWidth = 1200): string {
 export function heroSrcset(src: string): string {
   return imageSrcset(src, [640, 1200, 1600, 2400]);
 }
+
+/** Piece anverso/reverso: 480/800/1200/1600 AVIF, same widths hubs use for cards. */
+export function pieceSrcset(src: string): string {
+  return [480, 800, 1200, 1600]
+    .map((width) => `${cfImage(src, { width, format: 'avif' })} ${width}w`)
+    .join(', ');
+}
+
+export const PIECE_IMAGE_SIZES = '(min-width: 1024px) 50vw, 100vw';

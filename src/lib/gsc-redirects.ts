@@ -1,4 +1,6 @@
 import map from '../data/gsc-redirects.json' with { type: 'json' };
+import { glossaryRedirects } from '../data/glossary.ts';
+import { newsEnglishRedirects } from './content-slugs.ts';
 
 export type GscRedirectHit = {
   target: string;
@@ -18,6 +20,11 @@ function variants(pathname: string): string[] {
   if (trimmed !== pathname) out.push(trimmed);
   if (!pathname.endsWith('/') && pathname !== '/') out.push(`${pathname}/`);
   return [...new Set(out)];
+}
+
+function withSlash(path: string): string {
+  if (path.includes('?') || path.endsWith('/')) return path;
+  return `${path}/`;
 }
 
 /** Strip Dreamweaver `.dc` / `.dc.html` suffixes. Empty if the result would be home. */
@@ -40,17 +47,31 @@ export function rewriteEnSpanishPrefix(pathname: string): string | undefined {
     if (pathname === from.slice(0, -1)) return to;
     if (pathname.startsWith(from) || pathname === from) {
       const target = `${to}${pathname.slice(from.length)}`;
-      return target.endsWith('/') ? target : `${target}/`;
+      return target.endsWith('/') || target.includes('?') ? target : `${target}/`;
     }
   }
   return undefined;
 }
 
-export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined {
-  const prefixTarget = rewriteEnSpanishPrefix(pathname);
-  if (prefixTarget) {
-    return { target: prefixTarget, status: 301, rule: 'prefix-locale' };
+function liveContentRedirect(pathname: string): GscRedirectHit | undefined {
+  const glossary = glossaryRedirects();
+  const news = newsEnglishRedirects();
+  for (const key of variants(pathname)) {
+    const target = glossary[key] ?? news[key];
+    if (target) return { target, status: 301, rule: 'content-slug' };
   }
+  const rewritten = rewriteEnSpanishPrefix(pathname);
+  if (!rewritten) return undefined;
+  for (const key of variants(rewritten)) {
+    const composed = glossary[key] ?? news[key];
+    if (composed) return { target: composed, status: 301, rule: 'content-slug' };
+  }
+  return { target: withSlash(rewritten), status: 301, rule: 'prefix-locale' };
+}
+
+export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined {
+  const live = liveContentRedirect(pathname);
+  if (live) return live;
 
   for (const key of variants(pathname)) {
     const hit = data.redirects[key];

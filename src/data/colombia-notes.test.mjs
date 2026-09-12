@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { additions, catalogAdditions } from './holdings.ts';
 import { seriesCopy, colombiaChapters } from './colombia.ts';
+import { errorNoteCards } from './colombia-errors.ts';
 import {
   noteById,
   notePieces,
@@ -1173,5 +1174,75 @@ describe('Colombia 1 peso Tolima 1901 (Cód. 1242)', () => {
       true,
     );
     assert.equal(hrefs.includes('http://hdl.handle.net/10784/7647'), true);
+  });
+});
+
+describe('Colombia Silva 2010 butterfly-cut error series grouping', () => {
+  it('keeps two physical pieces and one type-level serial line', () => {
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    const pieces = notePieces(note);
+    assert.equal(pieces.length, 2);
+    assert.equal(pieces[0].id, '5000-pesos-error-2010-09629901');
+    assert.equal(pieces[1].id, '5000-pesos-error-2010-09636101');
+    assert.equal(pieces[0].serial, '09629901');
+    assert.equal(pieces[1].serial, '09636101');
+    assert.equal(note.serial, '09629901');
+    assert.equal(note.shareTypeNarrative, true);
+    assert.equal(noteSerialLine(note), '09629901 / 09636101');
+    assert.equal(
+      additions.filter((row) => row.id.startsWith('co-2010-5000-pesos-error-')).length,
+      2,
+    );
+    assert.equal(additions.some((row) => row.id === 'co-2010-5000-pesos-error-09629901'), true);
+    assert.equal(additions.some((row) => row.id === 'co-2010-5000-pesos-error-09636101'), true);
+    assert.ok(
+      additions.findIndex((row) => row.id === 'co-2010-5000-pesos-error-09629901') >
+        additions.findIndex((row) => row.id === 'co-2010-5000-pesos-error-09636101'),
+    );
+    assert.equal(
+      catalogAdditions.filter((row) => row.id === 'co-2010-5000-pesos-error-p452l').length,
+      1,
+    );
+    assert.match(note.lead.es, /09629901 y 09636101/);
+    assert.match(note.lead.en, /09629901 and 09636101/);
+    assert.match(note.description.es, /09629901 no es 09636101/);
+    assert.match(note.description.en, /09629901 is not 09636101/);
+    assert.doesNotMatch(note.description.es, /Elvira/);
+    assert.doesNotMatch(note.description.en, /Elvira/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      note.lead.es,
+      note.lead.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.doesNotMatch(publicCopy, /1[,.]5\s*millon/);
+  });
+
+  it('emits two error-grid cards, not one BanRep-style card', () => {
+    const cards = errorNoteCards().filter((card) => card.note.id === '5000-pesos-error-2010');
+    assert.equal(cards.length, 2);
+    assert.equal(cards[0].piece.serial, '09629901');
+    assert.equal(cards[1].piece.serial, '09636101');
+    assert.equal(cards[0].piece.title.es, '5.000 pesos · error mariposa · 2010 · 09629901');
+    assert.equal(cards[1].piece.title.es, '5.000 pesos · error mariposa · 2010 · 09636101');
+    const banRepCards = seriesCardsForChapter('banco-de-la-republica').filter(
+      (card) => card.note.id === '5000-pesos-error-2010',
+    );
+    assert.equal(banRepCards.length, 0);
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    assert.equal(seriesCardHref(note, cards[0].piece, 'es'), '/coleccion/colombia/5000-pesos-error-2010/');
+    assert.equal(
+      seriesCardHref(note, cards[0].piece, 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
   });
 });

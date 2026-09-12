@@ -4,7 +4,7 @@ import { newsArticles } from '../../../data/editorial';
 
 export function getStaticPaths() {
   return newsArticles.map((article) => ({
-    params: { slug: article.slug },
+    params: { slug: article.slugEn },
     props: { article },
   }));
 }

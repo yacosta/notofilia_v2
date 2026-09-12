@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-12T16:54:50.802Z",
+  "generatedAt": "2026-09-12T20:59:03.977Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1566,11 +1566,11 @@
     {
       "pieceId": "5000-pesos-error-2010",
       "face": "front",
-      "hash": "a52b27d0421b4b11",
+      "hash": "04352bbf11394f01",
       "kind": "banknote",
       "path": "/coleccion/colombia/5000-pesos-error-2010/",
       "pick": "P# 452l / TBB B989m",
-      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg",
       "title": {
         "es": "5.000 pesos · error mariposa · 2010",
         "en": "5,000 pesos · butterfly-cut error · 2010"
@@ -1579,11 +1579,11 @@
     {
       "pieceId": "5000-pesos-error-2010",
       "face": "front",
-      "hash": "8843274b23296722",
+      "hash": "c246a92525254211",
       "kind": "banknote",
       "path": "/coleccion/colombia/5000-pesos-error-2010/",
       "pick": "P# 452l / TBB B989m",
-      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg",
       "title": {
         "es": "5.000 pesos · error mariposa · 2010",
         "en": "5,000 pesos · butterfly-cut error · 2010"
@@ -1592,14 +1592,92 @@
     {
       "pieceId": "5000-pesos-error-2010",
       "face": "back",
+      "hash": "42584b2b07092500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "front",
+      "hash": "04352bbf11394f01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "front",
+      "hash": "c246a92525254211",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "back",
+      "hash": "42584b2b07092500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "front",
+      "hash": "a52b27d0421b4b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "front",
+      "hash": "8843274b23296722",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "back",
       "hash": "195a59332b196920",
       "kind": "banknote",
       "path": "/coleccion/colombia/5000-pesos-error-2010/",
       "pick": "P# 452l / TBB B989m",
       "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg",
       "title": {
-        "es": "5.000 pesos · error mariposa · 2010",
-        "en": "5,000 pesos · butterfly-cut error · 2010"
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
       }
     },
     {

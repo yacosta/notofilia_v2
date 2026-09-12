@@ -18,6 +18,7 @@ interface Props {
   ogImageAlt?: string;
   ogType?: string;
   publishedTime?: string | null;
+  robots?: string;
 }
 
 const {
@@ -29,6 +30,7 @@ const {
   ogImageAlt,
   ogType = 'website',
   publishedTime,
+  robots = 'index, follow, max-image-preview:large',
 } = Astro.props;
 
 const canonical = new URL(pathname, SITE_URL).href;
@@ -47,7 +49,7 @@ const siteJsonLd = websiteJsonLd(locale);
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content={description} />
     <meta name="author" content={SITE_AUTHOR} />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content={robots} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/MontenegrinGothicOne-Regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSans3-Variable-Latin.woff2" crossorigin />

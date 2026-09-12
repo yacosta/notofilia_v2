@@ -26,19 +26,37 @@ describe('gsc redirect lookup', () => {
     assert.equal(rewriteEnSpanishPrefix('/en/news/'), undefined);
     const glossary = lookupGscRedirect('/en/glosario/libra/');
     assert.equal(glossary?.status, 301);
-    assert.equal(glossary?.target, '/en/glossary/libra/');
+    assert.equal(glossary?.target, '/en/glossary/?term=pound-sterling');
     const glossaryPlan = planSeoResponse('/en/glosario/libra/');
     assert.equal(glossaryPlan.type, 'redirect');
-    assert.equal(glossaryPlan.type === 'redirect' ? glossaryPlan.target : '', '/en/glossary/libra/');
+    assert.equal(glossaryPlan.type === 'redirect' ? glossaryPlan.target : '', '/en/glossary/?term=pound-sterling');
+    const polymer = planSeoResponse('/en/glossary/polimero/');
+    assert.equal(polymer.type, 'redirect');
+    assert.equal(polymer.type === 'redirect' ? polymer.target : '', '/en/glossary/polymer/');
     const news = planSeoResponse('/en/noticias/billete-2-dolares-serie-baja/');
     assert.equal(news.type, 'redirect');
-    assert.equal(news.type === 'redirect' ? news.target : '', '/en/news/billete-2-dolares-serie-baja/');
+    assert.equal(news.type === 'redirect' ? news.target : '', '/en/news/the-2-note-with-serial-l00000002a/');
   });
 
   it('emits Cloudflare splat backups for Spanish /en/ glossary and news prefixes', () => {
     const builder = readFileSync(new URL('../../scripts/seo/build-redirects.mjs', import.meta.url), 'utf8');
+    const redirects = readFileSync(new URL('../../public/_redirects', import.meta.url), 'utf8');
     assert.match(builder, /\/en\/glosario\/\*   \/en\/glossary\/:splat   301/);
     assert.match(builder, /\/en\/noticias\/\*   \/en\/news\/:splat       301/);
+    const staticLoop = builder.indexOf('for (const row of static301');
+    const splatPush = builder.indexOf("staticLines.push('/en/glosario/*");
+    assert.ok(staticLoop !== -1 && splatPush > staticLoop, 'splat rules are emitted after static 301s');
+    const lines = redirects.split('\n').filter((l) => l && !l.startsWith('#'));
+    const firstSplat = lines.findIndex((l) => l.includes('*'));
+    assert.ok(firstSplat !== -1, 'generated _redirects has splat rules');
+    assert.ok(
+      lines.slice(0, firstSplat).every((l) => !l.includes('*')),
+      'static 301s appear before splat rules',
+    );
+    assert.ok(
+      lines.slice(firstSplat).every((l) => l.includes('*')),
+      'no static 301s appear after splat rules',
+    );
   });
 
   it('plans 410 for gone URLs and 301 for mapped v1 paths, never to home', () => {

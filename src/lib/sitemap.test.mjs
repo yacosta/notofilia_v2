@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
+import { foldedGlossaryTerms, glossaryTermSlugs, STANDALONE_GLOSSARY_SLUGS } from '../data/glossary.ts';
 import { localizePath } from './locale-paths.ts';
 
 const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.meta.url), 'utf8');
@@ -157,6 +158,20 @@ describe('sitemap coverage for reference tools', () => {
       '/en/tools/fancy-serial-checker/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for the two-tier glossary', () => {
+  it('registers the index and standalone terms, not folded term URLs', () => {
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    const siteSource = readFileSync(new URL('./site.ts', import.meta.url), 'utf8');
+    assert.match(siteSource, /\.\.\.glossaryTermSlugs/);
+    assert.equal(glossaryTermSlugs.length, STANDALONE_GLOSSARY_SLUGS.length);
+    assert.ok(glossaryTermSlugs.includes('glosario/pmg-pcgs'));
+    assert.ok(!glossaryTermSlugs.includes('glosario/libra'));
+    for (const term of foldedGlossaryTerms()) {
+      assert.ok(!glossaryTermSlugs.includes(`glosario/${term.slug}`), term.slug);
+    }
   });
 });
 

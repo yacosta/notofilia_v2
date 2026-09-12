@@ -14,7 +14,7 @@ import {
   USA_BARABOO_SCRIP_PATH,
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
-import { glossaryTermPath, glossaryTerms } from '../data/glossary';
+import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage';
@@ -422,7 +422,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
     docs.push({
       id: `glossary:${term.id}:${locale}`,
       kind: 'glossary',
-      href: glossaryTermPath(term.slug, locale),
+      href: glossaryTermHref(term.slug, locale),
       title: term.title[locale],
       dek: term.definition[locale],
       pick: '',

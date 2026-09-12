@@ -135,7 +135,6 @@ export function visualArtworkJsonLd(options: {
     description: options.description,
     url: absoluteUrl(options.url),
     inLanguage: options.locale,
-    image: options.image ? absoluteUrl(options.image) : undefined,
     artform: type === 'VisualArtwork' ? options.artform : undefined,
     identifier: options.catalogNumber || options.certNumber || options.serial || undefined,
     author: { '@id': PERSON_ID },
@@ -143,6 +142,16 @@ export function visualArtworkJsonLd(options: {
     publisher: options.issuer ? { '@type': 'Organization', name: options.issuer } : undefined,
     producer: options.printer ? { '@type': 'Organization', name: options.printer } : undefined,
     additionalProperty: additionalProperty.length ? additionalProperty : undefined,
+    image: options.image
+      ? omitEmpty({
+          '@type': 'ImageObject',
+          url: absoluteUrl(options.image),
+          contentUrl: absoluteUrl(options.image),
+          creditText: `${SITE_AUTHOR} / ${SITE_NAME}`,
+          license: absoluteUrl(options.locale === 'en' ? '/en/editorial/' : '/editorial/'),
+          acquireLicensePage: absoluteUrl(options.locale === 'en' ? '/en/contact/' : '/contacto/'),
+        })
+      : undefined,
     isPartOf: options.collectionUrl
       ? {
           '@type': 'Collection',
@@ -161,12 +170,14 @@ export function definedTermJsonLd(options: {
   locale: Locale;
 }) {
   const setUrl = absoluteUrl(options.locale === 'en' ? '/en/glossary/' : '/glosario/');
+  const url = absoluteUrl(options.url);
   return {
     '@type': 'DefinedTerm',
+    '@id': `${url}#term`,
     name: options.name,
     alternateName: options.alternateName,
     description: options.description,
-    url: absoluteUrl(options.url),
+    url,
     inLanguage: options.locale,
     inDefinedTermSet: `${setUrl}#glossary`,
   };

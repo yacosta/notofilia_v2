@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { englishContentSlug, englishRedirects, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
+import { englishContentSlug, englishRedirects, hrefToContentSlug, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
 
 describe('locale path mapping', () => {
   it('translates collection, glossary, news, and contact slugs', () => {
@@ -38,7 +38,10 @@ describe('locale path mapping', () => {
       localizePath('/en/collection/puerto-rico/1-peso-exchange-note-1895/', 'es'),
       '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     );
-    assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notafilia/');
+    assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notaphily/');
+    assert.equal(localizePath('/glosario/polimero/', 'en'), '/en/glossary/polymer/');
+    assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
+    assert.equal(localizePath('/glosario/?term=libra', 'en'), '/en/glossary/?term=libra');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
@@ -674,6 +677,19 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
+    );
+  });
+});
+
+describe('hrefToContentSlug', () => {
+  it('strips a piece fragment so stub routes do not encode # as a path', () => {
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/#5000-pesos-error-2010-09629901'),
+      'coleccion/colombia/5000-pesos-error-2010',
+    );
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/'),
+      'coleccion/colombia/5000-pesos-error-2010',
     );
   });
 });

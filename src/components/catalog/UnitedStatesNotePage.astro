@@ -4,6 +4,8 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { pieceSiblings } from '../../lib/catalog-media';
 import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
@@ -12,10 +14,12 @@ import {
   notePath,
   noteSeriesHref,
   seriesPath,
+  unitedStatesNotes,
   USA_MISC_PATH,
   USA_RENCY_PATH,
   type UnitedStatesNote,
 } from '../../data/estados-unidos';
+import PieceSiblings from './PieceSiblings.astro';
 import { isCatalogProseParts } from '../../data/catalog';
 import CatalogProseParagraph from './CatalogProseParagraph.astro';
 import SourceList from './SourceList.astro';
@@ -40,11 +44,21 @@ if (hero && !heroAlt) {
   throw new Error(`Missing heroAlt for ${note.id} (${locale})`);
 }
 const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? note.history : [note.history];
+const seo = piecePageMeta({
+  kind: 'note',
+  title: note.title[locale],
+  kicker: note.kicker[locale],
+  lead: note.lead[locale],
+  locale,
+  country: locale === 'en' ? 'United States' : 'Estados Unidos',
+});
+const chapterNotes = unitedStatesNotes.filter((item) => item.chapterId === note.chapterId);
+const siblings = pieceSiblings(chapterNotes, note.path);
 ---
 
 <Layout
-  title={`${note.title[locale]} | Notofilia`}
-  description={note.lead[locale]}
+  title={seo.documentTitle}
+  description={seo.description}
   locale={locale}
   pathname={pathname}
   ogImage={hero?.src ?? note.images.front}
@@ -55,8 +69,8 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
         ...visualArtworkJsonLd({
-          name: note.title[locale],
-          description: note.lead[locale],
+          name: seo.h1,
+          description: seo.description,
           url: pathname,
           image: note.images.front,
           locale,
@@ -78,7 +92,8 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
           height={hero.height}
           headingId="note-heading"
           eyebrow={note.kicker[locale]}
-          title={note.title[locale]}
+          title={seo.h1}
+          subtitle={seo.subtitle}
           imageClass="object-[50%_28%]"
         />
       ) : null
@@ -100,7 +115,7 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
             : note.chapterId === 'us-pop-art'
               ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
               : []),
-          { label: note.title[locale] },
+          { label: seo.h1 },
         ]}
       />
 
@@ -110,9 +125,10 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
             <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
               {note.kicker[locale]}
             </p>
-            <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-              {note.title[locale]}
+            <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+              {seo.h1}
             </h1>
+            <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
           </>
         )
       }
@@ -220,6 +236,25 @@ const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? not
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
       </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={
+          siblings.prev
+            ? { href: notePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front }
+            : undefined
+        }
+        next={
+          siblings.next
+            ? { href: notePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front }
+            : undefined
+        }
+        related={siblings.related.map((item) => ({
+          href: notePath(item, locale),
+          title: item.title[locale],
+          image: item.images.front,
+        }))}
+      />
 
       <p class="mt-12">
         <a

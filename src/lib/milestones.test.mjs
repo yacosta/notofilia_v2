@@ -105,4 +105,27 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(card.imageAlt.es.length > 0);
     assert.ok(card.imageAlt.en.length > 0);
   });
+
+  it('keeps the newest Silva butterfly-cut holding’s fragment on the homepage card', () => {
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
+    assert.ok(holding);
+    assert.equal(additions.at(-1)?.id, holding.id);
+    const pieces = notePieces(note).map((piece) => ({
+      id: `co-${piece.id}`,
+      country: 'CO',
+      href: `${notePath(note, 'es')}${piece.id !== note.id ? `#${piece.id}` : ''}`,
+      title: piece.title,
+      dek: piece.lead,
+      pick: piece.pick,
+      serial: piece.serial,
+      cert: '',
+      image: piece.images.front,
+      imageAlt: piece.frontCaption,
+    }));
+    const card = catalogPieceForHolding(holding, pieces);
+    assert.ok(card);
+    assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
+  });
 });

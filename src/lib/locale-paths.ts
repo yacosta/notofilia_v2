@@ -316,26 +316,35 @@ function splitHash(path: string): { pathname: string; hash: string; search: stri
   return { pathname: withHash.slice(0, searchIndex), search: withHash.slice(searchIndex), hash };
 }
 
+import { rewriteContentLastSegment } from './content-slugs.ts';
+
 export function rewriteUnprefixedPath(pathname: string, locale: Locale): string {
   if (pathname === '/' || pathname === '') return '/';
   const slashed = ensureTrailingSlash(pathname.startsWith('/') ? pathname : `/${pathname}`);
 
+  let rewritten = slashed;
   for (const { es, en, aliases = [] } of PAIRS_BY_LENGTH) {
     if (slashed === es || slashed.startsWith(es)) {
-      return locale === 'en' ? `${en}${slashed.slice(es.length)}` : slashed;
+      rewritten = locale === 'en' ? `${en}${slashed.slice(es.length)}` : slashed;
+      break;
     }
     if (slashed === en || slashed.startsWith(en)) {
-      return locale === 'es' ? `${es}${slashed.slice(en.length)}` : slashed;
+      rewritten = locale === 'es' ? `${es}${slashed.slice(en.length)}` : slashed;
+      break;
     }
+    let aliasHit = false;
     for (const alias of aliases) {
       if (slashed === alias || slashed.startsWith(alias)) {
         const rest = slashed.slice(alias.length);
-        return locale === 'en' ? `${en}${rest}` : `${es}${rest}`;
+        rewritten = locale === 'en' ? `${en}${rest}` : `${es}${rest}`;
+        aliasHit = true;
+        break;
       }
     }
+    if (aliasHit) break;
   }
 
-  return slashed;
+  return rewriteContentLastSegment(rewritten, locale);
 }
 
 export function localizePath(path: string, locale: Locale): string {
@@ -543,6 +552,11 @@ export function englishRedirects(): Record<string, string> {
 /** Kept so data modules can register extra exact pairs without a circular import. */
 export function addLocalePair(_esPath: string, _enPath: string) {
   // Prefix pairs above already cover USA, About, MPC notes, and Netherlands coinage.
+}
+
+/** Path without hash, used when a catalog href (ficha#piece) becomes a stub slug. */
+export function hrefToContentSlug(href: string): string {
+  return href.split('#')[0].replace(/^\/|\/$/g, '');
 }
 
 export function englishContentSlug(esSlug: string): string {
