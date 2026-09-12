@@ -263,8 +263,28 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is Victory Series No. 66?',
       },
       answer: {
-        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte. El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir.',
-        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte. “No. 66” commemorates the age attributed to Manuel L. Quezon at death.',
+        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte, para reemplazar el papel de ocupación japonesa conocido como dinero «Mickey Mouse». El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La serie oficial tuvo ocho denominaciones, de 1 a 500 pesos.',
+        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte, to replace Japanese occupation paper known as “Mickey Mouse” money. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official series had eight denominations, from 1 to 500 pesos.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué denominaciones integran la Serie Victory n.º 66?',
+        en: 'Which denominations make up Victory Series No. 66?',
+      },
+      answer: {
+        es: 'Ocho certificados del Tesoro, Pick 94 a 101: 1, 2, 5, 10, 20, 50, 100 y 500 pesos. Notofilia exhibe 1, 2, 5 y 20. El 10 lleva a Washington; el 50, al general Lawton; el 100, a Magallanes; el 500, a Legazpi. Una denominación ausente no crea un segundo objeto en el catálogo.',
+        en: 'Eight Treasury Certificates, Pick 94 to 101: 1, 2, 5, 10, 20, 50, 100, and 500 pesos. Notofilia shows the 1, 2, 5, and 20. The 10-peso carries Washington; the 50, General Lawton; the 100, Magellan; the 500, Legazpi. A missing denomination does not create a second catalog object.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué combinaciones de firmas circulan en la Serie Victory?',
+        en: 'Which signature combinations appear on the Victory series?',
+      },
+      answer: {
+        es: 'Tres: Osmeña–Hernandez (presidente y auditor general), la más numerosa salvo en el 500 pesos; Osmeña–Guevara (presidente y tesorero), solo en 100 y 500 pesos; y Roxas–Guevara, posterior a 1946, que no se registra en 1, 5 ni 10 pesos. Las piezas de esta vitrina son Osmeña–Hernandez.',
+        en: 'Three: Osmeña–Hernandez (President and Auditor General), the most numerous except on the 500-peso; Osmeña–Guevara (President and Treasurer), only on the 100- and 500-peso; and Roxas–Guevara, after 1946, which is not recorded on the 1-, 5-, or 10-peso. The notes in this case are Osmeña–Hernandez.',
       },
     },
     {

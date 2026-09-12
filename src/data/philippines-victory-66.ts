@@ -55,6 +55,33 @@ export const seriesSources: CatalogSource[] = [
       en: 'Recognition of Victory Pesos as legal tender.',
     },
   },
+  {
+    href: 'https://lawphil.net/statutes/repacts/ra1954/ra_1191_1954.html',
+    es: 'Ley de la República n.º 1191 (25 de agosto de 1954)',
+    en: 'Republic Act No. 1191 (25 August 1954)',
+    note: {
+      es: 'Desmonetiza certificados del Tesoro y billetes del banco central de más de 100 pesos.',
+      en: 'Demonetizes Treasury certificates and Central Bank notes over 100 pesos.',
+    },
+  },
+  {
+    href: 'https://lawphil.net/statutes/repacts/ra1956/ra_1516_1956.html',
+    es: 'Ley de la República n.º 1516 (16 de junio de 1956)',
+    en: 'Republic Act No. 1516 (16 June 1956)',
+    note: {
+      es: 'Prorroga el canje de los valores de más de 100 pesos hasta el 31 de diciembre de 1957.',
+      en: 'Extends the surrender of notes over 100 pesos through 31 December 1957.',
+    },
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Japanese_government-issued_Philippine_peso',
+    es: 'Wikipedia — Peso filipino emitido por el gobierno japonés',
+    en: 'Wikipedia — Japanese government-issued Philippine peso',
+    note: {
+      es: 'Papel de ocupación llamado popularmente dinero «Mickey Mouse».',
+      en: 'Occupation paper popularly called “Mickey Mouse” money.',
+    },
+  },
 ];
 
 export type VictoryNote = {
@@ -341,8 +368,8 @@ export const victoryNotes: VictoryNote[] = [
       en: 'Slabbed back of the 20-peso note, PMG certificate 8083882-032, with the VICTORY overprint.',
     },
     scarcity: {
-      es: 'numismatics.ph indica 12.439.635 ejemplares para la variedad Osmeña–Hernandez (series F00000001–F14050000). La variedad P#98b (Roxas–Guevara) se cita en unos 1.063.765 ejemplares y es claramente más escasa. Los 500 pesos de la misma serie se desmonetizaron antes, por las leyes de la República 1191 y 1516.',
-      en: 'numismatics.ph records 12,439,635 notes for the Osmeña–Hernandez variety (serials F00000001–F14050000). The P#98b Roxas–Guevara variety is cited at about 1,063,765 notes and is clearly scarcer. The series’ 500-peso notes were demonetized earlier under Republic Acts 1191 and 1516.',
+      es: 'numismatics.ph indica 12.439.635 ejemplares para la variedad Osmeña–Hernandez (series F00000001–F14050000). La variedad P#98b (Roxas–Guevara) se cita en unos 1.063.765 ejemplares y es claramente más escasa. Los 500 pesos de la misma serie se retiraron el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
+      en: 'numismatics.ph records 12,439,635 notes for the Osmeña–Hernandez variety (serials F00000001–F14050000). The P#98b Roxas–Guevara variety is cited at about 1,063,765 notes and is clearly scarcer. The series’ 500-peso notes were withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended the exchange through 31 December 1957.',
     },
     population: {
       es: 'PMG publica un informe de población de Filipinas 20 pesos, pero el recuento concreto de P#98a en 55 EPQ no se ha verificado aquí de forma independiente (el informe en línea requiere cuenta). Se documenta el certificado 8083882-032 y el grado impreso en el encapsulado, no un censo.',
@@ -384,9 +411,11 @@ export const seriesCopy = {
     intro: [
       'El Philippine National Bank, creado por la Ley n.º 2612 de 1916, emitió billetes de circulación grabados en Washington. Esta vitrina abre con un 5 pesos de esa serie —McKinley, sello azul, reverso naranja— y sigue con los Certificados del Tesoro de la liberación.',
       'Los Certificados del Tesoro de la Serie Victory n.º 66 fueron el último papel moneda impreso bajo la administración de Estados Unidos en Filipinas. Los grabó el Bureau of Engraving and Printing en pliegos de diez sujetos, con reemplazos marcados por una estrella al estilo estadounidense.',
-      'Según el BEP, el «n.º 66» se eligió porque era la edad atribuida al presidente Manuel L. Quezon al morir. Quezon nació el 19 de agosto de 1878 y murió el 1 de agosto de 1944, a los 65 años —meses antes de la liberación—, de modo que el número conmemora una edad que no llegó a cumplir. El 20 de octubre de 1944, al desembarcar las fuerzas de Douglas MacArthur en Leyte, llegaron cajas de estos certificados, puestos en circulación ese mismo día. El total emitido de la serie fue de ₱1.019.544.000.',
+      'Según el BEP, el «n.º 66» se eligió porque era la edad atribuida al presidente Manuel L. Quezon al morir. Quezon nació el 19 de agosto de 1878 y murió el 1 de agosto de 1944, a los 65 años —meses antes de la liberación—, de modo que el número conmemora una edad que no llegó a cumplir. El 20 de octubre de 1944, al desembarcar las fuerzas de Douglas MacArthur en Leyte, llegaron cajas de estos certificados, puestos en circulación ese mismo día. El total emitido de la serie fue de ₱1.019.544.000. Debían sustituir el papel fiduciario de la ocupación militar japonesa —el llamado dinero «Mickey Mouse»—, cuya hiperinflación había anulado la confianza en el circulante de guerra, y devolver un peso pagadero en plata o en moneda de curso legal de Estados Unidos.',
+      'La emisión oficial comprende ocho denominaciones (Pick 94–101): 1, 2, 5, 10, 20, 50, 100 y 500 pesos. Esta vitrina documenta cuatro ejemplares —1, 2, 5 y 20 pesos—. Las denominaciones que no están aquí son el 10 pesos con George Washington (reverso marrón), el 50 pesos con el general Henry Ware Lawton (reverso rojo), el 100 pesos con Fernando de Magallanes (reverso verde) y el 500 pesos con Miguel López de Legazpi (reverso oliva o violeta, según la variedad de firmas).',
+      'Las combinaciones de firmas de la serie son tres. Osmeña–Hernandez (presidente y auditor general) es la más numerosa en casi todas las denominaciones; en el 500 pesos esa pareja es, al contrario, la de menor tirada. Osmeña–Guevara (presidente y tesorero Marciano Guevara) aparece solo en 100 y 500 pesos. Roxas–Guevara, posterior a la toma de posesión de Manuel Roxas en 1946, no se registra en 1, 5 ni 10 pesos; sí en 2, 20, 50, 100 y 500. Las cuatro piezas de esta vitrina son Osmeña–Hernandez.',
       'El 18 de noviembre de 1944, la Orden Ejecutiva n.º 25, firmada por Sergio Osmeña, reconoció los Victory Pesos como moneda de curso legal junto con los certificados y monedas de preguerra, a razón de dos Victory Pesos por un dólar estadounidense.',
-      'En 1949, al crearse el Central Bank of the Philippines, parte de la serie recibió en el reverso la sobrecarga «CENTRAL BANK OF THE PHILIPPINES» (Pick 117 y siguientes). Los 500 pesos se retiraron antes, por las leyes de la República 1191 y 1516. El resto, por la Circular n.º 156 de 1963 del banco central, fue de curso legal hasta el 30 de julio de 1964 y pudo canjearse hasta el 30 de julio de 1967. El Bangko Sentral ng Pilipinas sitúa la llegada de la serie en 1944 y confirma que las sobrecargas CBP siguieron siendo de curso legal hasta esa fecha de 1964.',
+      'En 1949, al crearse el Central Bank of the Philippines, parte de la serie recibió en el reverso la sobrecarga «CENTRAL BANK OF THE PHILIPPINES» (Pick 117 y siguientes). Los 500 pesos se retiraron el 25 de agosto de 1954, por la Ley de la República n.º 1191, con un plazo de canje de seis meses (desmonetización prevista el 24 de febrero de 1955). La Ley de la República n.º 1516, de 16 de junio de 1956, prorrogó ese canje hasta el 31 de diciembre de 1957. El resto, por la Circular n.º 156 de 1963 del banco central, fue de curso legal hasta el 30 de julio de 1964 y pudo canjearse hasta el 30 de julio de 1967. El Bangko Sentral ng Pilipinas sitúa la llegada de la serie en 1944 y confirma que las sobrecargas CBP siguieron siendo de curso legal hasta esa fecha de 1964.',
     ],
     holdingsTitle: 'Piezas de la colección',
     pnbHoldingsTitle: 'Banco Nacional de Filipinas · Serie de 1916',
@@ -394,7 +423,7 @@ export const seriesCopy = {
       'Un 5 pesos de circulación del Philippine National Bank, serie A2179586A, firmas Mercado–Concepción. El serial cae en un tramo que la Ley n.º 211 enumeró como reemitido por las autoridades militares japonesas.',
     victoryHoldingsTitle: 'Serie Victory n.º 66',
     holdingsIntro:
-      'Cuatro certificados únicos, de izquierda a derecha por denominación: 1, 2, 5 y 20 pesos. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
+      'Cuatro certificados únicos de las ocho denominaciones oficiales, de izquierda a derecha: 1, 2, 5 y 20 pesos. El 10, el 50, el 100 y el 500 no tienen ejemplar en esta vitrina. Un segundo archivo del 5 pesos (misma serie F00618071) no se cataloga dos veces.',
     viewNote: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
     pickLabel: 'Pick',
@@ -412,9 +441,11 @@ export const seriesCopy = {
     intro: [
       'The Philippine National Bank, created by Act No. 2612 of 1916, issued circulating notes engraved in Washington. This case opens with a 5-peso of that series — McKinley, blue seal, orange reverse — and continues with the liberation Treasury Certificates.',
       'Victory Series No. 66 Treasury Certificates were the last paper money printed under United States administration in the Philippines. The U.S. Bureau of Engraving and Printing produced them in 10-subject sheets, with star replacements in the American manner.',
-      'According to the BEP, “No. 66” was chosen as President Manuel L. Quezon’s age at death. Quezon was born on 19 August 1878 and died on 1 August 1944 at 65 — months before liberation — so the series number commemorates an age he did not reach. When Douglas MacArthur’s forces landed on Leyte on 20 October 1944, they brought crates of these certificates and issued them that same day. The series totaled ₱1,019,544,000.',
+      'According to the BEP, “No. 66” was chosen as President Manuel L. Quezon’s age at death. Quezon was born on 19 August 1878 and died on 1 August 1944 at 65 — months before liberation — so the series number commemorates an age he did not reach. When Douglas MacArthur’s forces landed on Leyte on 20 October 1944, they brought crates of these certificates and issued them that same day. The series totaled ₱1,019,544,000. They were meant to replace the Japanese occupation’s fiat paper — popularly called “Mickey Mouse” money — whose hyperinflation had wiped out confidence in wartime currency, and to restore a peso payable in silver or in United States legal tender.',
+      'The official issue comprises eight denominations (Pick 94–101): 1, 2, 5, 10, 20, 50, 100, and 500 pesos. This case documents four examples — 1, 2, 5, and 20 pesos. The denominations not shown here are the 10-peso with George Washington (brown reverse), the 50-peso with General Henry Ware Lawton (red reverse), the 100-peso with Ferdinand Magellan (green reverse), and the 500-peso with Miguel López de Legazpi (olive or violet reverse, according to the signature variety).',
+      'The series has three signature pairings. Osmeña–Hernandez (President and Auditor General) is the most numerous on almost every denomination; on the 500-peso, that pairing is instead the smallest printing. Osmeña–Guevara (President and Treasurer Marciano Guevara) appears only on the 100- and 500-peso notes. Roxas–Guevara, after Manuel Roxas took office in 1946, is not recorded on the 1-, 5-, or 10-peso; it is found on the 2-, 20-, 50-, 100-, and 500-peso. All four notes in this case are Osmeña–Hernandez.',
       'On 18 November 1944, Executive Order No. 25, signed by Sergio Osmeña, recognized Victory Pesos as legal tender alongside pre-war certificates and coin, at two Victory Pesos to one United States dollar.',
-      'In 1949, after the Central Bank of the Philippines was created, part of the series received a “CENTRAL BANK OF THE PHILIPPINES” overprint on the back (Pick 117 and later). The 500-peso notes were withdrawn earlier under Republic Acts 1191 and 1516. The remaining denominations, by Central Bank Circular No. 156 of 1963, were legal tender until 30 July 1964 and exchangeable until 30 July 1967. The Bangko Sentral ng Pilipinas places the series’ arrival in 1944 and confirms that the CBP overprints remained legal tender through that 1964 date.',
+      'In 1949, after the Central Bank of the Philippines was created, part of the series received a “CENTRAL BANK OF THE PHILIPPINES” overprint on the back (Pick 117 and later). The 500-peso notes were withdrawn on 25 August 1954 under Republic Act No. 1191, with a six-month exchange window (demonetization scheduled for 24 February 1955). Republic Act No. 1516 of 16 June 1956 extended that exchange through 31 December 1957. The remaining denominations, by Central Bank Circular No. 156 of 1963, were legal tender until 30 July 1964 and exchangeable until 30 July 1967. The Bangko Sentral ng Pilipinas places the series’ arrival in 1944 and confirms that the CBP overprints remained legal tender through that 1964 date.',
     ],
     holdingsTitle: 'Notes in the collection',
     pnbHoldingsTitle: 'Philippine National Bank · Series of 1916',
@@ -422,7 +453,7 @@ export const seriesCopy = {
       'One Philippine National Bank circulating 5-peso, serial A2179586A, Mercado–Concepción signatures. The serial falls in a band that Republic Act No. 211 listed as reissued by the Japanese military authorities.',
     victoryHoldingsTitle: 'Victory Series No. 66',
     holdingsIntro:
-      'Four unique certificates, left to right by denomination: 1, 2, 5, and 20 pesos. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
+      'Four unique certificates from the eight official denominations, left to right: 1, 2, 5, and 20 pesos. The 10-, 50-, 100-, and 500-peso notes have no example in this case. A second file of the 5-peso note (same serial F00618071) is not catalogued twice.',
     viewNote: 'Open the note page',
     sourcesTitle: 'Sources',
     pickLabel: 'Pick',
