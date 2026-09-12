@@ -1,23 +1,19 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import { newsArticles } from './src/data/editorial.ts';
 import { glossaryRedirects } from './src/data/glossary.ts';
 import { englishRedirects } from './src/lib/locale-paths.ts';
 
 const generated = englishRedirects();
 // Folded glossary URLs 301 to `?term=` because CDN Location headers drop hash fragments.
 Object.assign(generated, glossaryRedirects());
-for (const article of newsArticles) {
-  generated[`/en/noticias/${article.slug}/`] = `/en/news/${article.slug}/`;
-}
 
 export default defineConfig({
   site: 'https://notofilia.com',
   trailingSlash: 'always',
-  compressHTML: false,
+  compressHTML: true,
   build: {
-    inlineStylesheets: 'always',
+    inlineStylesheets: 'auto',
   },
   redirects: {
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
