@@ -29,4 +29,15 @@ describe('FAQ copy for guides and country pages', () => {
       assert.ok(seriesFaqs[key].length >= 3, key);
     }
   });
+
+  it('adds Philippines Victory type facts without inventing holdings', () => {
+    const questions = seriesFaqs.philippines.map((item) => item.question.es).join(' ');
+    const answers = seriesFaqs.philippines.map((item) => item.answer.es).join(' ');
+    assert.match(questions, /denominaciones de la Serie Victory/);
+    assert.match(questions, /combinaciones de firmas/);
+    assert.match(questions, /Mickey Mouse/);
+    assert.match(answers, /Pick 94–101/);
+    assert.match(answers, /Osmeña–Guevara/);
+    assert.match(answers, /no tiene esos ejemplares/);
+  });
 });

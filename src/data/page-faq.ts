@@ -263,8 +263,38 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is Victory Series No. 66?',
       },
       answer: {
-        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte. El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir.',
-        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte. “No. 66” commemorates the age attributed to Manuel L. Quezon at death.',
+        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte. El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
+        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official issue ran to eight denominations, from 1 to 500 pesos (Pick 94–101).',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué denominaciones de la Serie Victory no están en esta vitrina?',
+        en: 'Which Victory Series denominations are missing from this case?',
+      },
+      answer: {
+        es: 'El 10 pesos (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101). No son huecos de ficha: esta colección no tiene esos ejemplares. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
+        en: 'The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101). Those are not missing catalogue pages: this collection does not hold those notes. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué combinaciones de firmas tiene la Serie Victory n.º 66?',
+        en: 'What signature combinations does Victory Series No. 66 have?',
+      },
+      answer: {
+        es: 'Tres pares principales: Osmeña–Hernandez (presidente y auditor general), el más frecuente y el de las cuatro piezas de esta vitrina; Osmeña–Guevara (presidente y tesorero), documentado sobre todo en 100 y 500 pesos; y Roxas–Guevara, tras 1946, en denominaciones seleccionadas —entre ellas el 2 y el 20 pesos, más escasos que Osmeña–Hernandez—.',
+        en: 'Three main pairings: Osmeña–Hernandez (President and Auditor General), the most frequent and the one on all four notes here; Osmeña–Guevara (President and Treasurer), recorded mainly on the 100- and 500-peso notes; and Roxas–Guevara, after 1946, on selected denominations — including the scarcer 2- and 20-peso varieties.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el dinero «Mickey Mouse» frente a los Victory Pesos?',
+        en: 'What is “Mickey Mouse” money next to the Victory Pesos?',
+      },
+      answer: {
+        es: 'Así se llamaba al papel fiduciario de la ocupación militar japonesa, devaluado por la hiperinflación. Los certificados Victory, puestos en Leyte el 20 de octubre de 1944 y reconocidos por la Orden Ejecutiva n.º 25, volvían a un peso del Tesoro pagadero en plata o en moneda estadounidense de valor equivalente.',
+        en: 'That was the popular name for Japanese military-occupation fiat paper, wrecked by hyperinflation. Victory certificates, issued at Leyte on 20 October 1944 and recognized by Executive Order No. 25, restored a Treasury peso payable in silver or in United States currency of equivalent value.',
       },
     },
     {

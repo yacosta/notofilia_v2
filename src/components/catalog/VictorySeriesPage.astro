@@ -159,6 +159,46 @@ const jsonLd = collectionPageJsonLd({
         </ol>
       </section>
 
+      <section class="mt-16" aria-labelledby="series-scope-heading">
+        <h2 id="series-scope-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.seriesScopeTitle}
+        </h2>
+        <div class="w-full text-[17px]/7 text-cream">
+          {t.seriesScopeIntro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        </div>
+        <h3 id="missing-denoms-heading" class="mb-4 mt-10 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.missingDenomsTitle}
+        </h3>
+        <dl class="m-0 grid gap-6" aria-labelledby="missing-denoms-heading">
+          {
+            t.missingDenoms.map((item) => (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {item.label}
+                </dt>
+                <dd class="mb-0 mt-1 text-[17px]/7 text-cream">{item.text}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <h3 id="series-signatures-heading" class="mb-3 mt-12 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.signaturesTitle}
+        </h3>
+        <p class="mb-6 mt-0 w-full text-[17px]/7 text-cream">{t.signaturesIntro}</p>
+        <dl class="m-0 grid gap-6" aria-labelledby="series-signatures-heading">
+          {
+            t.signaturePairs.map((item) => (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {item.label}
+                </dt>
+                <dd class="mb-0 mt-1 text-[17px]/7 text-cream">{item.text}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </section>
+
       <FaqBlock heading={copy[locale].faqHeading} items={faqItems} />
 
       <div class="mt-16">
