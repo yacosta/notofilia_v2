@@ -305,7 +305,7 @@ describe('Recursos submenu', () => {
     assert.match(recursos, /id: 'identificar',[\s\S]*?icon: 'identify'/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
-    assert.match(recursos, /id: 'noticias',[\s\S]*?icon: 'news'/);
+    assert.doesNotMatch(recursos, /id: 'noticias'/);
   });
 });
 

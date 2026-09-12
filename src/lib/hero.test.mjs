@@ -70,6 +70,11 @@ describe('PageSpeed-oriented build settings', () => {
   it('inlines stylesheets automatically and loads Subscribe with Google only on click', () => {
     assert.match(astroConfig, /compressHTML:\s*true/);
     assert.match(astroConfig, /inlineStylesheets:\s*'auto'/);
+    const flag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
+    const siblings = readFileSync(new URL('../components/catalog/PieceSiblings.astro', import.meta.url), 'utf8');
+    assert.match(flag, /alt=""/);
+    assert.match(siblings, /alt=""/);
+    assert.equal('<img alt="" src="/x.webp">'.includes('alt=""'), true);
     assert.doesNotMatch(layout, /publisher\.js/);
     assert.doesNotMatch(googlePreferred, /requestIdleCallback/);
     assert.match(googlePreferred, /loadSwgPublisher/);

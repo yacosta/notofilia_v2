@@ -253,7 +253,6 @@ export const megaNav: NavNode[] = [
       { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
-      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
       {
         id: 'comparacion',
         es: 'Notofilia vs. otros catálogos',
