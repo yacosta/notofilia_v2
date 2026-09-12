@@ -134,6 +134,22 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                 <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
                 <dd class="m-0 mt-1 text-cream">{note.printed[locale]}</dd>
               </div>
+              {
+                note.support ? (
+                  <div class="sm:col-span-2">
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.supportLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{note.support[locale]}</dd>
+                  </div>
+                ) : null
+              }
+              {
+                note.dimensions ? (
+                  <div class="sm:col-span-2">
+                    <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.dimensionsLabel}</dt>
+                    <dd class="m-0 mt-1 text-cream">{note.dimensions[locale]}</dd>
+                  </div>
+                ) : null
+              }
             </dl>
           </section>
         ) : null
@@ -194,6 +210,22 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                         <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
                         <dd class="m-0 mt-1 text-cream">{piece.printed[locale]}</dd>
                       </div>
+                      {
+                        note.support ? (
+                          <div class="sm:col-span-2">
+                            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.supportLabel}</dt>
+                            <dd class="m-0 mt-1 text-cream">{note.support[locale]}</dd>
+                          </div>
+                        ) : null
+                      }
+                      {
+                        note.dimensions ? (
+                          <div class="sm:col-span-2">
+                            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.dimensionsLabel}</dt>
+                            <dd class="m-0 mt-1 text-cream">{note.dimensions[locale]}</dd>
+                          </div>
+                        ) : null
+                      }
                     </dl>
                   </section>
                 )

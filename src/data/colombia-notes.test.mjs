@@ -1125,3 +1125,26 @@ describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
     );
   });
 });
+
+describe('Colombia Banco Hipotecario 1881 ABNC proofs', () => {
+  it('records uniface card proofs and does not invent millimetres', () => {
+    const note = noteById('5-pesos-banco-hipotecario-1881');
+    assert.ok(note);
+    assert.equal(note.serial, 'Y 00000');
+    assert.ok(note.support);
+    assert.ok(note.dimensions);
+    assert.match(note.support.es, /cartulina \(card proofs\)/);
+    assert.match(note.support.en, /card proofs/);
+    assert.match(note.lead.es, /pruebas unifaces sobre cartulina/);
+    assert.match(note.lead.en, /uniface card proofs/);
+    assert.match(note.description.es, /AMERICAN BANK NOTE COMPANY, NEW YORK/);
+    assert.match(note.description.en, /AMERICAN BANK NOTE COMPANY, NEW YORK/);
+    assert.match(note.description.es, /cartulina rígida de presentación/);
+    assert.match(note.dimensions.es, /no inventa una medida/);
+    assert.match(note.dimensions.en, /does not invent a measurement/);
+    assert.doesNotMatch(note.dimensions.es, /\d+\s*×\s*\d+/);
+    assert.doesNotMatch(note.dimensions.en, /\d+\s*[x×]\s*\d+/);
+    assert.match(notePageSource, /t\.supportLabel/);
+    assert.match(notePageSource, /t\.dimensionsLabel/);
+  });
+});
