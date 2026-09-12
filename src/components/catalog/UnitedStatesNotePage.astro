@@ -3,9 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
@@ -54,6 +54,36 @@ const seo = piecePageMeta({
 });
 const chapterNotes = unitedStatesNotes.filter((item) => item.chapterId === note.chapterId);
 const siblings = pieceSiblings(chapterNotes, note.path);
+const crumbItems = [
+  { href: localizePath('/', locale), label: copy[locale].home },
+  { href: seriesPath(locale), label: t.seriesLink },
+  ...(note.chapterId === 'us-miscelaneos'
+    ? [
+        { href: localizePath(USA_MISC_PATH, locale), label: t.miscLink },
+        ...(isBarabooScripNote(note)
+          ? [{ href: barabooScripSeriesPath(locale), label: barabooScripSeriesCopy[locale].breadcrumbCurrent }]
+          : []),
+      ]
+    : note.chapterId === 'us-pop-art'
+      ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
+      : []),
+  { label: seo.h1 },
+];
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: t.seriesLink, path: seriesPath(locale) },
+  ...(note.chapterId === 'us-miscelaneos'
+    ? [
+        { name: t.miscLink, path: USA_MISC_PATH },
+        ...(isBarabooScripNote(note)
+          ? [{ name: barabooScripSeriesCopy[locale].breadcrumbCurrent, path: barabooScripSeriesPath(locale) }]
+          : []),
+      ]
+    : note.chapterId === 'us-pop-art'
+      ? [{ name: t.rencyLink, path: USA_RENCY_PATH }]
+      : []),
+  { name: seo.h1, path: pathname },
+];
 ---
 
 <Layout
@@ -68,7 +98,9 @@ const siblings = pieceSiblings(chapterNotes, note.path);
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        ...visualArtworkJsonLd({
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
           name: seo.h1,
           description: seo.description,
           url: pathname,
@@ -79,6 +111,7 @@ const siblings = pieceSiblings(chapterNotes, note.path);
           serial: note.serial,
           gradingService: inferGradingService(note.grade[locale]),
         }),
+        ],
       })}
     />
   </Fragment>
@@ -100,24 +133,7 @@ const siblings = pieceSiblings(chapterNotes, note.path);
     }
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <Breadcrumb
-        locale={locale}
-        items={[
-          { href: localizePath('/', locale), label: copy[locale].home },
-          { href: seriesPath(locale), label: t.seriesLink },
-          ...(note.chapterId === 'us-miscelaneos'
-            ? [
-                { href: localizePath(USA_MISC_PATH, locale), label: t.miscLink },
-                ...(isBarabooScripNote(note)
-                  ? [{ href: barabooScripSeriesPath(locale), label: barabooScripSeriesCopy[locale].breadcrumbCurrent }]
-                  : []),
-              ]
-            : note.chapterId === 'us-pop-art'
-              ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
-              : []),
-          { label: seo.h1 },
-        ]}
-      />
+      <Breadcrumb locale={locale} items={crumbItems} />
 
       {
         hero ? null : (
@@ -173,6 +189,7 @@ const siblings = pieceSiblings(chapterNotes, note.path);
             locale={locale}
             width={imageWidth}
             height={imageHeight}
+            eager
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
@@ -195,7 +212,7 @@ const siblings = pieceSiblings(chapterNotes, note.path);
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.aboutHeading}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.description[locale], locale)} />
       </section>
 
       {

@@ -2,13 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
   coinagePieceCopy,
   coinagePiecePath,
+  colombiaCoinagePieces,
   type ColombiaCoinagePiece,
 } from '../../data/colombia-coinage-pieces';
+import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -21,17 +25,34 @@ const { locale, piece } = Astro.props;
 const t = coinagePieceCopy[locale];
 const series = coinageCopy[locale];
 const pathname = coinagePiecePath(piece, locale);
+const seo = piecePageMeta({
+  kind: 'coin',
+  title: piece.title[locale],
+  kicker: piece.kicker[locale],
+  lead: piece.lead[locale],
+  locale,
+  country: 'Colombia',
+});
+const siblings = pieceSiblings(colombiaCoinagePieces, piece.path);
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: t.collectionLink, path: COLOMBIA_COINAGE_PATH },
+  { name: t.chapterLink, path: `${coinagePath(locale)}#independencia` },
+  { name: seo.h1, path: pathname },
+];
 ---
 
-<Layout title={`${piece.title[locale]} | Notofilia`} description={piece.lead[locale]} locale={locale} pathname={pathname} ogImage={piece.images.composite}>
+<Layout title={seo.documentTitle} description={seo.description} locale={locale} pathname={pathname} ogImage={piece.images.composite}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        ...visualArtworkJsonLd({
-          name: piece.title[locale],
-          description: piece.lead[locale],
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+          name: seo.h1,
+          description: seo.description,
           url: pathname,
           image: piece.images.composite,
           locale,
@@ -40,6 +61,7 @@ const pathname = coinagePiecePath(piece, locale);
           issuer: piece.mint[locale],
           gradingService: inferGradingService(piece.grade[locale]),
         }),
+        ],
       })}
     />
   </Fragment>
@@ -51,16 +73,17 @@ const pathname = coinagePiecePath(piece, locale);
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(COLOMBIA_COINAGE_PATH, locale), label: t.collectionLink },
           { href: `${coinagePath(locale)}#independencia`, label: t.chapterLink },
-          { label: piece.title[locale] },
+          { label: seo.h1 },
         ]}
       />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {piece.kicker[locale]}
       </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {piece.title[locale]}
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {seo.h1}
       </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{piece.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
@@ -100,6 +123,7 @@ const pathname = coinagePiecePath(piece, locale);
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
+            eager
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.frontCaption[locale]}</figcaption>
         </figure>
@@ -120,7 +144,7 @@ const pathname = coinagePiecePath(piece, locale);
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.aboutHeading}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{piece.description[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(piece.description[locale], locale)} />
       </section>
 
       <section class="mt-12" aria-labelledby="scarcity-heading">
@@ -133,6 +157,13 @@ const pathname = coinagePiecePath(piece, locale);
       <div class="mt-16">
         <SourceList locale={locale} sources={piece.sources} heading={t.sourcesHeading} />
       </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={siblings.prev ? { href: coinagePiecePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
+        next={siblings.next ? { href: coinagePiecePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
+        related={siblings.related.map((item) => ({ href: coinagePiecePath(item, locale), title: item.title[locale], image: item.images.front }))}
+      />
 
       <p class="mt-12">
         <a
