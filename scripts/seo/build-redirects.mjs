@@ -202,6 +202,9 @@ staticLines.push('# 410 Gone is applied in src/worker.ts (Workers _redirects onl
 staticLines.push('# run_worker_first: true, so the worker lookup is the mechanism that actually 301s/410s.');
 staticLines.push('# Safe Dreamweaver suffix: only when the stripped path is a live v2 URL (handled in worker).');
 staticLines.push('# Do not catch-all to /. Do not duplicate www→apex (Cloudflare SSL/apex).');
+staticLines.push('# Prefix splats: legacy Spanish-slug EN trees → translated EN trees (mirrored in worker prefixRedirect).');
+staticLines.push('/en/glosario/*   /en/glossary/:splat   301');
+staticLines.push('/en/noticias/*   /en/news/:splat       301');
 
 const static301 = rows.filter((r) => r.status === 301 && r.rule !== 'exists');
 if (static301.length > 2000) {

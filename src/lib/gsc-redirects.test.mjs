@@ -1,9 +1,19 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { lookupGscRedirect, planSeoResponse, stripDreamweaverSuffix } from './gsc-redirects.ts';
+import { lookupGscRedirect, planSeoResponse, prefixRedirect, stripDreamweaverSuffix } from './gsc-redirects.ts';
 
 describe('gsc redirect lookup', () => {
+  it('301s deep /en/glosario and /en/noticias paths to the translated EN trees', () => {
+    assert.equal(prefixRedirect('/en/glosario/libra/'), '/en/glossary/libra/');
+    assert.equal(prefixRedirect('/en/noticias/medalla-sistema-solar-heptagonal/'), '/en/news/medalla-sistema-solar-heptagonal/');
+    assert.equal(prefixRedirect('/en/glosario/'), undefined);
+    assert.equal(prefixRedirect('/glosario/libra/'), undefined);
+    const planned = planSeoResponse('/en/glosario/libra/');
+    assert.equal(planned.type, 'redirect');
+    assert.equal(planned.type === 'redirect' ? planned.target : '', '/en/glossary/libra/');
+  });
+
   it('does not invent a homepage redirect', () => {
     assert.equal(lookupGscRedirect('/'), undefined);
     assert.equal(planSeoResponse('/').type, 'pass');

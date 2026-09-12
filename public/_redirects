@@ -3,6 +3,9 @@
 # run_worker_first: true, so the worker lookup is the mechanism that actually 301s/410s.
 # Safe Dreamweaver suffix: only when the stripped path is a live v2 URL (handled in worker).
 # Do not catch-all to /. Do not duplicate www→apex (Cloudflare SSL/apex).
+# Prefix splats: legacy Spanish-slug EN trees → translated EN trees (mirrored in worker prefixRedirect).
+/en/glosario/*   /en/glossary/:splat   301
+/en/noticias/*   /en/news/:splat       301
 /about /en/about/ 301
 /billete-adrian-insurance-company-michigan.dc /coleccion/estados-unidos/ 301
 /billete-certificado-de-oro-10-dolares-1928.dc /coleccion/estados-unidos/ 301
@@ -175,6 +178,7 @@
 /en/coleccion/colombia/ /en/collection/colombia/ 301
 /en/coleccion/colombia/1-peso-oro-1945/ /en/collection/colombia/1-peso-oro-1945/ 301
 /en/coleccion/colombia/1-peso-oro-1954/ /en/collection/colombia/1-peso-oro-1954/ 301
+/en/coleccion/colombia/1-peso-oro-1959/ /en/collection/colombia/1-peso-oro-1959/ 301
 /en/coleccion/colombia/1-peso-oro-1973/ /en/collection/colombia/1-peso-oro-1973/ 301
 /en/coleccion/colombia/1-peso-oro-1974/ /en/collection/colombia/1-peso-oro-1974/ 301
 /en/coleccion/colombia/1-peso-tolima-1901/ /en/collection/colombia/1-peso-tolima-1901/ 301
@@ -182,6 +186,8 @@
 /en/coleccion/colombia/10-pesos-oro-1943-reverso /en/collection/colombia/10-pesos-oro-1943/ 301
 /en/coleccion/colombia/10-pesos-oro-1943/ /en/collection/colombia/10-pesos-oro-1943/ 301
 /en/coleccion/colombia/10-pesos-oro-1976/ /en/collection/colombia/10-pesos-oro-1976/ 301
+/en/coleccion/colombia/10-pesos-oro-1979/ /en/collection/colombia/10-pesos-oro-1979/ 301
+/en/coleccion/colombia/100-pesos-oro-1980/ /en/collection/colombia/100-pesos-oro-1980/ 301
 /en/coleccion/colombia/1000-pesos-error-2000/ /en/collection/colombia/1000-pesos-error-2000/ 301
 /en/coleccion/colombia/1000-pesos-error-2008/ /en/collection/colombia/1000-pesos-error-2008/ 301
 /en/coleccion/colombia/1000-pesos-error-2011/ /en/collection/colombia/1000-pesos-error-2011/ 301
@@ -189,6 +195,8 @@
 /en/coleccion/colombia/10000-pesos-1994/ /en/collection/colombia/10000-pesos-1994/ 301
 /en/coleccion/colombia/2-pesos-oro-1944/ /en/collection/colombia/2-pesos-oro-1944/ 301
 /en/coleccion/colombia/2-pesos-oro-1955 /en/collection/colombia/2-pesos-oro-1944/ 301
+/en/coleccion/colombia/2-pesos-oro-1977/ /en/collection/colombia/2-pesos-oro-1977/ 301
+/en/coleccion/colombia/20-pesos-oro-1983/ /en/collection/colombia/20-pesos-oro-1983/ 301
 /en/coleccion/colombia/2000-pesos-2008/ /en/collection/colombia/2000-pesos-2008/ 301
 /en/coleccion/colombia/2000-pesos-2015/ /en/collection/colombia/2000-pesos-2015/ 301
 /en/coleccion/colombia/2000-pesos-oro-1983/ /en/collection/colombia/2000-pesos-oro-1983/ 301
@@ -198,10 +206,15 @@
 /en/coleccion/colombia/5-pesos-oro-1979/ /en/collection/colombia/5-pesos-oro-1979/ 301
 /en/coleccion/colombia/5-pesos-oro-1980/ /en/collection/colombia/5-pesos-oro-1980/ 301
 /en/coleccion/colombia/5-pesos-rio-hacha-1883/ /en/collection/colombia/5-pesos-rio-hacha-1883/ 301
+/en/coleccion/colombia/50-pesos-oro-1974/ /en/collection/colombia/50-pesos-oro-1974/ 301
+/en/coleccion/colombia/50-pesos-oro-1984/ /en/collection/colombia/50-pesos-oro-1984/ 301
+/en/coleccion/colombia/5000-pesos-error-2010/ /en/collection/colombia/5000-pesos-error-2010/ 301
+/en/coleccion/colombia/5000-pesos-oro-1993/ /en/collection/colombia/5000-pesos-oro-1993/ 301
 /en/coleccion/colombia/50000-pesos-error-2008/ /en/collection/colombia/50000-pesos-error-2008/ 301
 /en/coleccion/colombia/50000-pesos-error-2015/ /en/collection/colombia/50000-pesos-error-2015/ 301
 /en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro /en/collection/colombia/2000-pesos-oro-1983/ 301
 /en/coleccion/colombia/catalogo/ /en/collection/colombia/catalog/ 301
+/en/coleccion/colombia/medio-peso-oro-1953/ /en/collection/colombia/medio-peso-oro-1953/ 301
 /en/coleccion/colombia/tiquete-estudiantil-15-centavos/ /en/collection/colombia/tiquete-estudiantil-15-centavos/ 301
 /en/coleccion/ecuador/ /en/collection/ecuador/ 301
 /en/coleccion/ecuador/100-sucres-1993 /en/collection/ecuador/ 301
@@ -216,6 +229,8 @@
 /en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/ /en/collection/united-states/10-dollars-series-1934a-chicago/ 301
 /en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/ /en/collection/united-states/10-dollars-series-1934a-cleveland/ 301
 /en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/ /en/collection/united-states/10-dollars-series-1934d-richmond/ 301
+/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/ /en/collection/united-states/1000-dollars-series-1934a-new-york/ 301
+/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/ /en/collection/united-states/2-dollars-series-2003-st-louis/ 301
 /en/coleccion/estados-unidos/20-dolares-confederados-1864/ /en/collection/united-states/20-dollars-confederate-1864/ 301
 /en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/ /en/collection/united-states/5-dollars-city-bank-new-haven/ 301
 /en/coleccion/estados-unidos/5-dolares-confederados-1864/ /en/collection/united-states/5-dollars-confederate-1864/ 301
@@ -283,6 +298,7 @@
 /en/coleccion/united-states/10-dollars-series-1934a-chicago/ /en/collection/united-states/10-dollars-series-1934a-chicago/ 301
 /en/coleccion/united-states/10-dollars-series-1934a-cleveland/ /en/collection/united-states/10-dollars-series-1934a-cleveland/ 301
 /en/coleccion/united-states/10-dollars-series-1934d-richmond/ /en/collection/united-states/10-dollars-series-1934d-richmond/ 301
+/en/coleccion/united-states/1000-dollars-series-1934a-new-york/ /en/collection/united-states/1000-dollars-series-1934a-new-york/ 301
 /en/coleccion/united-states/20-dollars-confederate-1864/ /en/collection/united-states/20-dollars-confederate-1864/ 301
 /en/coleccion/united-states/5-dollars-city-bank-new-haven/ /en/collection/united-states/5-dollars-city-bank-new-haven/ 301
 /en/coleccion/united-states/5-dollars-confederate-1864/ /en/collection/united-states/5-dollars-confederate-1864/ 301
@@ -447,6 +463,9 @@
 /en/glossary/uv-fluorescent-ink/ /en/glossary/tinta-fluorescente-uv/ 301
 /en/glossary/vignette/ /en/glossary/vineta/ 301
 /en/glossary/web-notes/ /en/glossary/billete-web/ 301
+/en/herramientas/ /en/tools/ 301
+/en/herramientas/numeracion-especial/ /en/tools/fancy-serial-checker/ 301
+/en/identificar/ /en/identify/ 301
 /en/netherlands-numismatica /en/collection/netherlands-numismatics/ 301
 /en/netherlands-numismatica/ducado-utrecht-1761 /en/collection/netherlands-numismatics/ducado-utrecht-1761/ 301
 /en/nosotros /en/about/ 301

@@ -3,7 +3,7 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 195,
+    "existing": 214,
     "legacy-dc": 51,
     "manual": 56,
     "last-slug": 7,
@@ -13,7 +13,7 @@
     "last-slug-hreflang": 2,
     "exists": 2
   },
-  "fuzzyOrHubPercent": 25.32,
+  "fuzzyOrHubPercent": 24.34,
   "redirects": {
     "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/": {
       "target": "",
@@ -1935,6 +1935,26 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/10-pesos-oro-1979/": {
+      "target": "/en/collection/colombia/10-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/10-pesos-oro-1979": {
+      "target": "/en/collection/colombia/10-pesos-oro-1979/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/100-pesos-oro-1980/": {
+      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/100-pesos-oro-1980": {
+      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1000-pesos-error-2000/": {
       "target": "/en/collection/colombia/1000-pesos-error-2000/",
       "status": 301,
@@ -2002,6 +2022,16 @@
     },
     "/en/coleccion/colombia/2-pesos-oro-1955/": {
       "target": "/en/collection/colombia/2-pesos-oro-1944/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1977/": {
+      "target": "/en/collection/colombia/2-pesos-oro-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2-pesos-oro-1977": {
+      "target": "/en/collection/colombia/2-pesos-oro-1977/",
       "status": 301,
       "rule": "existing"
     },
@@ -2095,6 +2125,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/5-pesos-rio-hacha-1883/": {
+      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/5-pesos-rio-hacha-1883": {
+      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/50-pesos-oro-1974/": {
       "target": "/en/collection/colombia/50-pesos-oro-1974/",
       "status": 301,
@@ -2115,23 +2155,23 @@
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/100-pesos-oro-1980/": {
-      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+    "/en/coleccion/colombia/5000-pesos-error-2010/": {
+      "target": "/en/collection/colombia/5000-pesos-error-2010/",
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/100-pesos-oro-1980": {
-      "target": "/en/collection/colombia/100-pesos-oro-1980/",
+    "/en/coleccion/colombia/5000-pesos-error-2010": {
+      "target": "/en/collection/colombia/5000-pesos-error-2010/",
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/5-pesos-rio-hacha-1883/": {
-      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+    "/en/coleccion/colombia/5000-pesos-oro-1993/": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/5-pesos-rio-hacha-1883": {
-      "target": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+    "/en/coleccion/colombia/5000-pesos-oro-1993": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
       "status": 301,
       "rule": "existing"
     },
@@ -2172,6 +2212,16 @@
     },
     "/en/coleccion/colombia/catalogo": {
       "target": "/en/collection/colombia/catalog/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/medio-peso-oro-1953/": {
+      "target": "/en/collection/colombia/medio-peso-oro-1953/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/medio-peso-oro-1953": {
+      "target": "/en/collection/colombia/medio-peso-oro-1953/",
       "status": 301,
       "rule": "existing"
     },
@@ -2312,6 +2362,26 @@
     },
     "/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond": {
       "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/": {
+      "target": "/en/collection/united-states/2-dollars-series-2003-st-louis/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis": {
+      "target": "/en/collection/united-states/2-dollars-series-2003-st-louis/",
       "status": 301,
       "rule": "existing"
     },
@@ -2982,6 +3052,16 @@
     },
     "/en/coleccion/united-states/10-dollars-series-1934d-richmond": {
       "target": "/en/collection/united-states/10-dollars-series-1934d-richmond/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1000-dollars-series-1934a-new-york/": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/1000-dollars-series-1934a-new-york": {
+      "target": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
       "status": 301,
       "rule": "existing"
     },
@@ -4624,6 +4704,36 @@
       "target": "/en/glossary/billete-web/",
       "status": 301,
       "rule": "manual"
+    },
+    "/en/herramientas/": {
+      "target": "/en/tools/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/herramientas": {
+      "target": "/en/tools/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/herramientas/numeracion-especial/": {
+      "target": "/en/tools/fancy-serial-checker/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/herramientas/numeracion-especial": {
+      "target": "/en/tools/fancy-serial-checker/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/identificar/": {
+      "target": "/en/identify/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/identificar": {
+      "target": "/en/identify/",
+      "status": 301,
+      "rule": "existing"
     },
     "/en/j-s-g-boggs/": {
       "target": "",
