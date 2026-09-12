@@ -154,6 +154,7 @@ export const additions: Holding[] = [
   { id: 'co-1980-100-pesos-oro-specimen-027', kind: 'banknote', country: 'CO' },
   { id: 'co-1993-5000-pesos-oro-82210365', kind: 'banknote', country: 'CO' },
   { id: 'co-2010-5000-pesos-error-09636101', kind: 'banknote', country: 'CO' },
+  { id: 'us-usn-1917-2-b50400302a', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -237,6 +238,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1980-100-pesos-oro-p418s' },
   { id: 'co-1993-5000-pesos-oro-p436a-b974c' },
   { id: 'co-2010-5000-pesos-error-p452l' },
+  { id: 'us-usn-1917-2-p188-fr60' },
 ];
 
 export type CollectionStats = {

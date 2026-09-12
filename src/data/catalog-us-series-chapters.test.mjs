@@ -50,4 +50,34 @@ describe('US series history chapters', () => {
     assert.match(faq, /tamaño pequeño/);
     assert.match(faq, /change to small size/);
   });
+
+  it('corrects series-page wording: Continental subject, paper money, and chapter titles', () => {
+    assert.match(data, /su desplome de valor acuñó la expresión/);
+    assert.match(data, /their collapse in value coined the expression/);
+    assert.doesNotMatch(
+      data,
+      /falsificados por el enemigo, acuñaron la frase «not worth a Continental»/,
+    );
+    assert.doesNotMatch(
+      data,
+      /counterfeited by the enemy, they coined the phrase “not worth a Continental.”/,
+    );
+    assert.match(data, /primer papel moneda público de Occidente/);
+    assert.match(data, /first public paper money in the Western world/);
+    assert.match(data, /autorizó las «bills of credit»/);
+    assert.match(data, /en: 'Colonial paper'/);
+    assert.match(data, /es: 'Reserva Federal'/);
+    assert.match(data, /en: 'Federal Reserve'/);
+    assert.doesNotMatch(data, /en: 'Colonial coinage'/);
+    assert.doesNotMatch(data, /es: 'Federal Reserve Bank'/);
+    assert.match(data, /circuló solo entre bancos de la Reserva Federal/);
+    assert.doesNotMatch(data, /circularon solo entre bancos/);
+    assert.match(data, /Las primeras letras de crédito salieron en marzo–abril de 1861/);
+    assert.match(data, /banco de distrito/);
+    assert.match(data, /dos tipos de papel: los Federal Reserve Notes/);
+    assert.match(faq, /pagaderos a la vista en metálico/);
+    assert.match(faq, /cita a Friedberg/);
+    assert.match(faq, /2 dólares United States Note de 1917/);
+    assert.match(faq, /Series 1917 United States Note \$2/);
+  });
 });
