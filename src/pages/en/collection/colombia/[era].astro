@@ -1,0 +1,17 @@
+---
+import ColombiaEraPage from '../../../../components/catalog/ColombiaEraPage.astro';
+import { chapterBySlug, colombiaChapters, COLOMBIA_ERA_SLUG_EN } from '../../../../data/colombia';
+
+export function getStaticPaths() {
+  return colombiaChapters.map((chapter) => ({
+    params: { era: COLOMBIA_ERA_SLUG_EN[chapter.id] },
+    props: { chapter },
+  }));
+}
+
+const { era } = Astro.params;
+const chapter = Astro.props.chapter ?? chapterBySlug(era ?? '');
+if (!chapter) throw new Error(`Unknown Colombia era: ${era}`);
+---
+
+<ColombiaEraPage locale="en" chapter={chapter} />
