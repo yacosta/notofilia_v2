@@ -201,8 +201,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1917 United States Note $2?',
       },
       answer: {
-        es: 'Es un Legal Tender Note de tamaño grande —horse blanket— con Jefferson, el Capitolio y reverso Bracelet. Esta pieza es Fr. 60 (P#188(4)), firmas Speelman–White, serial B50400302A. No es el 2 dólares FRN de 2003 de San Luis, serial H00010418★.',
-        en: 'It is a large-size Legal Tender Note — a horse blanket — with Jefferson, the Capitol, and the Bracelet reverse. This piece is Fr. 60 (P#188(4)), Speelman–White signatures, serial B50400302A. It is not the Series 2003 St. Louis FRN $2, serial H00010418★.',
+        es: 'Es un Legal Tender Note de tamaño grande —horse blanket— con Jefferson, el Capitolio y reverso Bracelet. Esta pieza es Fr. 60 (P#188(4)), firmas Speelman–White, serial B50400302A.',
+        en: 'It is a large-size Legal Tender Note — a horse blanket — with Jefferson, the Capitol, and the Bracelet reverse. This piece is Fr. 60 (P#188(4)), Speelman–White signatures, serial B50400302A.',
       },
     },
     {
