@@ -191,7 +191,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Emisión",
     title: { es: "Banco emisor", en: "Issuing bank / authority" },
     definition: { es: "La entidad —banco central, banco privado o autoridad estatal— facultada legalmente para poner en circulación un billete.", en: "The entity — central bank, private bank, or state authority — legally empowered to put a banknote into circulation." },
-    seeAlso: ["curso-legal", "banca-libre"],
+    seeAlso: ["curso-legal", "banca-libre", "junta-de-conversion"],
   },
   {
     slug: "billete-alterado",
@@ -200,6 +200,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Billete alterado", en: "Altered Note" },
     definition: { es: "Billete modificado química o físicamente para aparentar una rareza, valor o grado de conservación mayores de los que realmente tiene.", en: "A banknote chemically or physically modified to appear rarer, more valuable, or in better condition than it actually is." },
     seeAlso: ["epq-calidad-de-papel-excepcional"],
+  },
+  {
+    slug: "billete-de-banco-nacional",
+    id: "billete-de-banco-nacional",
+    category: "Emisión",
+    title: { es: "Billete de banco nacional", en: "National Bank Note" },
+    definition: { es: "Papel federal de Estados Unidos emitido entre 1863 y 1935 por un banco con carta, respaldado por bonos del Tesoro depositados en Washington. Lleva el nombre de la plaza, el número de charter y las firmas de los oficiales locales. Friedberg los agrupa por First, Second y Third Charter Period y, desde 1929, por el tamaño pequeño. No son obsolete notes: el impuesto del 10 % y la National Banking Act apagaron el papel estatal.", en: "United States federal paper issued from 1863 to 1935 by a chartered bank, secured by Treasury bonds deposited in Washington. It bears the town name, the charter number, and the local officers’ signatures. Friedberg groups them by First, Second, and Third Charter Period and, from 1929, by the small-size type. They are not obsolete notes: the 10 percent tax and the National Banking Act ended state-bank paper." },
+    seeAlso: ["friedberg", "billete-de-banco-obsoleto", "tamano-grande"],
   },
   {
     slug: "billete-de-banco-obsoleto",
@@ -239,7 +247,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Emisión",
     title: { es: "Billete provisional", en: "Provisional note" },
     definition: { es: "Emisión de emergencia y circulación temporal, producida para cubrir una escasez de circulante mientras se prepara una emisión definitiva. En Colombia, el 23 de julio de 1923 el Banco de la República abrió con certificados de oro de la Casa de Medellín resellados en el reverso «BANCO DE LA REPÚBLICA — BILLETE PROVISIONAL».", en: "An emergency, temporary-circulation issue produced to cover a currency shortage while a definitive issue is prepared. In Colombia, on 23 July 1923 the Banco de la República opened with Medellín mint gold certificates overstamped on the back “BANCO DE LA REPÚBLICA — BILLETE PROVISIONAL.”" },
-    seeAlso: ["deuda-flotante", "billete-de-necesidad", "resello"],
+    seeAlso: ["deuda-flotante", "billete-de-necesidad", "resello", "junta-de-conversion"],
   },
   {
     slug: "billete-web",
@@ -303,7 +311,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Catálogo Friedberg", en: "Friedberg catalog" },
     definition: { es: "Sistema de referencia especializado en billetes de Estados Unidos, alternativo y complementario al catálogo Pick.", en: "A reference system specialized in United States banknotes, an alternative and complement to the Pick catalog." },
-    seeAlso: ["pick", "schwan", "banknote-book", "haxby", "criswell"],
+    seeAlso: ["pick", "schwan", "banknote-book", "haxby", "criswell", "united-states-note"],
   },
   {
     slug: "haxby",
@@ -327,7 +335,23 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "The Banknote Book (TBB)", en: "The Banknote Book (TBB)" },
     definition: { es: "Catálogo de Owen W. Linzmayer que asigna a cada tipo un número B (TBB o BNB). En esta colección se cita junto al Pick —por ejemplo TBB B996c en el 20.000 pesos de 2017, BNB B149a en el RM5 malasio y B203a en el £5 Churchill—.", en: "Owen W. Linzmayer’s catalog, which gives each type a B number (TBB or BNB). This collection cites it beside Pick — for example TBB B996c on the 2017 20,000 pesos, BNB B149a on the Malaysian RM5, and B203a on the Churchill £5." },
-    seeAlso: ["pick", "friedberg", "schwan"],
+    seeAlso: ["pick", "friedberg", "schwan", "gonzalez-white", "hernandez"],
+  },
+  {
+    slug: "gonzalez-white",
+    id: "catalogo-gonzalez-white",
+    category: "Coleccionismo",
+    title: { es: "Catálogo González White (BG#)", en: "González White catalog (BG#)" },
+    definition: { es: "Catálogo de Bernardo González White (Catálogo de Billetes Banco de la República y República de Colombia, 1923–2019, 7.ª ed. 2019) que asigna un número BG# a cada listado de fecha, variedad o reposición del BanRep. No cubre independencia, banca libre ni Banco Nacional. En las fichas se cita el BG# junto al Pick y al TBB; no se republican columnas de precios.", en: "Bernardo González White’s catalog (Catálogo de Billetes Banco de la República y República de Colombia, 1923–2019, 7th ed. 2019), which assigns a BG# to each BanRep date, variety, or replacement listing. It does not cover independence, free-banking, or Banco Nacional paper. Piece pages cite the BG# beside Pick and TBB; price columns are not republished." },
+    seeAlso: ["pick", "hernandez", "banknote-book", "billete-de-reemplazo-estrella"],
+  },
+  {
+    slug: "hernandez",
+    id: "catalogo-hernandez",
+    category: "Coleccionismo",
+    title: { es: "Catálogo Hernández (Cód.)", en: "Hernández catalog (Cód.)" },
+    definition: { es: "Compilación de Pedro Pablo Hernández (Monedas y Billetes de Colombia, 8.ª ed. 2023, Numista L100183) con códigos Cód. para monedas y billetes de la independencia, la banca libre, el Banco Nacional y el BanRep hasta 2023. Complementa a González White en el BanRep de 1923–2019. Distingue espécimen (ceros), prueba y mariposa. Los H# antiguos de esta vitrina siguen la concordancia de Numista.", en: "Pedro Pablo Hernández’s compilation (Monedas y Billetes de Colombia, 8th ed. 2023, Numista L100183), with Cód. numbers for independence, free-banking, Banco Nacional, and BanRep coins and notes through 2023. It complements González White for BanRep 1923–2019. It distinguishes specimen (zeros), proof, and mariposa. Older H# citations in this case follow Numista’s concordance." },
+    seeAlso: ["pick", "gonzalez-white", "specimen", "prueba-ensayo", "mariposa"],
   },
   {
     slug: "cedula-hipotecaria",
@@ -336,6 +360,22 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Cédula hipotecaria", en: "Mortgage bond / certificate" },
     definition: { es: "Título de deuda respaldado por hipotecas inmobiliarias, autorizado a circular con fuerza fiduciaria bajo un marco legal específico.", en: "A debt instrument backed by real-estate mortgages, authorized to circulate with fiduciary force under a specific legal framework." },
     seeAlso: ["vale-al-portador"],
+  },
+  {
+    slug: "certificado-de-oro",
+    id: "certificado-de-oro",
+    category: "Emisión",
+    title: { es: "Certificado de oro", en: "Gold Certificate" },
+    definition: { es: "Papel que representa oro depositado y, mientras rige el patrón, canjeable en metálico. En Estados Unidos, los Gold Certificates (1865–1934) los emitió el Tesoro; el público dejó de canjearlos en 1933 y la serie 1928 fue la última de tamaño pequeño en circulación general. En Colombia, los certificados de oro de la Casa de Medellín se resellaron el 23 de julio de 1923 como los primeros billetes provisionales del Banco de la República.", en: "Paper that represents gold on deposit and, while the standard holds, is redeemable in coin. In the United States, Gold Certificates (1865–1934) were Treasury issues; the public lost the right to redeem them in 1933, and Series 1928 was the last small-size type in general circulation. In Colombia, Medellín mint gold certificates were overstamped on 23 July 1923 as the Banco de la República’s first provisional notes." },
+    seeAlso: ["certificado-de-plata", "billete-provisional", "peso-oro", "friedberg", "tamano-grande"],
+  },
+  {
+    slug: "certificado-de-plata",
+    id: "certificado-de-plata",
+    category: "Emisión",
+    title: { es: "Certificado de plata", en: "Silver Certificate" },
+    definition: { es: "Papel del Tesoro de Estados Unidos, autorizado desde 1878, pagadero en plata. La Educational Series de 1896 pertenece a esta clase, no a los Treasury Notes. El canje en plata terminó en 1968. Esta vitrina documenta el 1 dólar serie 1957 B, serial S35513454A.", en: "United States Treasury paper, authorized from 1878, payable in silver. The 1896 Educational Series belongs to this class, not to Treasury Notes. Redemption in silver ended in 1968. This case documents the Series 1957-B $1, serial S35513454A." },
+    seeAlso: ["certificado-de-oro", "treasury-note", "friedberg"],
   },
   {
     slug: "cordoncillo",
@@ -402,6 +442,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["curso-legal"],
   },
   {
+    slug: "demand-note",
+    id: "demand-note",
+    category: "Emisión",
+    title: { es: "Demand Note (billete a la vista)", en: "Demand Note" },
+    definition: { es: "Primer papel federal de circulación general de Estados Unidos (1861–1862): 5, 10 y 20 dólares del Tesoro, no remunerados, pagaderos a la vista en metálico. El U.S. Currency Education Program y el BEP coinciden en esa primacía. El reverso en tinta verde originó el apodo greenback. Los United States Notes de 1862 los sustituyeron como curso legal. En esta vitrina no hay aún un ejemplar con foto y serial.", en: "The first federal paper of general circulation in the United States (1861–1862): Treasury $5, $10, and $20 notes, non-interest-bearing and payable on demand in coin. The U.S. Currency Education Program and the BEP agree on that primacy. Green ink on the back coined the nickname “greenback.” United States Notes of 1862 replaced them as legal tender. This case does not yet hold an example with a photograph and serial." },
+    seeAlso: ["greenback", "united-states-note", "friedberg", "curso-legal"],
+  },
+  {
     slug: "details-ngc",
     id: "details-ngc",
     category: "Conservación",
@@ -424,6 +472,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Diez milésimas (10 mils)", en: "10 Mil" },
     definition: { es: "Unidad de medida que describe un espesor de 1/100 de pulgada, referida normalmente al grosor del enchapado metálico de una medalla o moneda.", en: "A unit of measurement describing a width or thickness of 1/100 of an inch, usually referring to the thickness of metal plating on a medal or coin." },
     seeAlso: [],
+  },
+  {
+    slug: "dinero-mickey-mouse",
+    id: "dinero-mickey-mouse",
+    category: "Emisión",
+    title: { es: "Dinero Mickey Mouse", en: "Mickey Mouse money" },
+    definition: { es: "Apodo popular del peso fiduciario emitido por el gobierno de ocupación japonés en Filipinas (1942–1945): papel sin respaldo metálico, devaluado por la hiperinflación. Los certificados Victory del Tesoro, puestos en circulación el 20 de octubre de 1944 en Leyte, debían sustituirlo. No es un Pick de esta vitrina: es el contexto de las series Victory n.º 66.", en: "Popular nickname for the unbacked fiat peso issued by the Japanese occupation government in the Philippines (1942–1945), wrecked by hyperinflation. Treasury Victory certificates, issued on 20 October 1944 at Leyte, were meant to replace it. It is not a holding in this case: it is the context of the Victory Series No. 66 types." },
+    seeAlso: ["mpc", "desmonetizado", "curso-legal"],
   },
   {
     slug: "dispositivo-opticamente-variable-ovd",
@@ -639,7 +695,15 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Monedas y divisas",
     title: { es: "Grayback", en: "Grayback" },
     definition: { es: "Apodo coloquial del papel moneda de los Estados Confederados, por el tono grisáceo de buena parte de sus impresiones, en contraste con el «greenback» federal. Wikipedia documenta siete series entre 1861 y 1864 por unos 1.700 millones de dólares.", en: "A colloquial nickname for Confederate States paper money, from the grayish tone of much of its printing, in contrast to the federal “greenback.” Wikipedia documents seven series between 1861 and 1864 totaling about $1.7 billion." },
-    seeAlso: ["desmonetizado", "curso-legal", "criswell"],
+    seeAlso: ["desmonetizado", "curso-legal", "criswell", "greenback"],
+  },
+  {
+    slug: "greenback",
+    id: "greenback",
+    category: "Monedas y divisas",
+    title: { es: "Greenback", en: "Greenback" },
+    definition: { es: "Apodo del papel federal de Estados Unidos, nacido del reverso en tinta verde de los Demand Notes de 1861. Pasó a los United States Notes —Legal Tender Notes— de 1862, que sustituyeron a aquellos como curso legal. En contraste, el papel confederado se llama grayback. No describe un certificado de plata ni un Federal Reserve Note actual.", en: "Nickname for United States federal paper, coined from the green-ink back of the 1861 Demand Notes. It traveled to the United States Notes — Legal Tender Notes — of 1862, which replaced them as legal tender. By contrast, Confederate paper is called a grayback. It does not describe a Silver Certificate or a modern Federal Reserve Note." },
+    seeAlso: ["demand-note", "united-states-note", "grayback", "curso-legal"],
   },
   {
     slug: "guardian",
@@ -688,6 +752,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Jiaozi", en: "Jiaozi" },
     definition: { es: "Primer papel moneda del mundo: pagarés privados de Sichuan a finales del siglo X y, desde 1024, el jiaozi oficial de la dinastía Song, con sello y número de serie. Precede al yuan y al renminbi modernos.", en: "The world’s first paper money: private Sichuan promissory notes in the late tenth century and, from 1024, the Song dynasty’s official jiaozi, sealed and serialled. It precedes the modern yuan and renminbi." },
     seeAlso: ["yuan-renminbi", "numeracion", "banco-emisor"],
+  },
+  {
+    slug: "junta-de-conversion",
+    id: "junta-de-conversion",
+    category: "Emisión",
+    title: { es: "Junta de Conversión", en: "Conversion Board" },
+    definition: { es: "Organismo creado en 1909 por el gobierno de Carlos E. Restrepo, tras retirar al Banco Central de Colombia el privilegio exclusivo de emitir, para recoger el papel depreciado y sustituirlo con oro y con billetes respaldados. Hernández sitúa esa tarea junto a las rentas del Estado. Circuló el canje de los Próceres de Waterlow por la edición de la American Bank Note Company, con la fecha 20 de julio de 1915. En 1922 —Ley 5.ª, Decreto 165 y escritura 206 de la Notaría Tercera de Bogotá— quedó autorizada a resellar bonos del tesoro, antes de la apertura del Banco de la República el 23 de julio de 1923.", en: "Body created in 1909 by Carlos E. Restrepo’s government, after it revoked the Banco Central de Colombia’s exclusive right of issue, to retire depreciated paper and replace it with gold and backed notes. Hernández places that task beside state revenues. What circulated was the exchange of Waterlow’s Próceres for the American Bank Note Company edition, dated 20 July 1915. In 1922 — Law 5, Decree 165, and deed 206 at Bogotá’s Third Notary — it was authorized to overstamp treasury bonds, before the Banco de la República opened on 23 July 1923." },
+    seeAlso: ["banco-emisor", "billete-provisional", "peso-oro", "resello"],
   },
   {
     slug: "kopek",
@@ -807,7 +879,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Producción",
     title: { es: "Mariposa", en: "Butterfly cut" },
     definition: { es: "Error de corte: al contorno del billete le sobra un fragmento de papel en forma de ala. En la notafilia colombiana Hernández llama a esa pieza billete mariposa; no es un espécimen ni una prueba.", en: "A cutting error: a wing-shaped scrap of paper remains attached to the note’s edge. In Colombian notaphily Hernández calls that piece a butterfly note (mariposa); it is neither a specimen nor a proof." },
-    seeAlso: ["error-de-impresion", "specimen", "prueba-ensayo"],
+    seeAlso: ["error-de-impresion", "specimen", "prueba-ensayo", "hernandez"],
   },
   {
     slug: "foxing",
@@ -839,7 +911,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Emisión",
     title: { es: "MPC (certificado de pago militar)", en: "MPC (Military Payment Certificate)" },
     definition: { es: "Papel en dólares emitido por las fuerzas armadas de Estados Unidos entre 1946 y 1973 para pagar al personal en bases de ultramar. No era curso legal; un C-Day secreto invalidaba la serie vigente. En Vietnam circularon las series 641, 661, 681 y 692.", en: "Dollar-denominated paper issued by the U.S. armed forces from 1946 to 1973 to pay personnel on overseas bases. It was not legal tender; a secret C-Day voided the current series. In Vietnam the circulating series were 641, 661, 681, and 692." },
-    seeAlso: ["c-day", "desmonetizado", "schwan", "plancheta", "offset"],
+    seeAlso: ["c-day", "desmonetizado", "schwan", "plancheta", "offset", "dinero-mickey-mouse"],
   },
   {
     slug: "nature-print",
@@ -951,7 +1023,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Emisión",
     title: { es: "Papel moneda fraccionario", en: "Fractional Currency" },
     definition: { es: "Papel moneda emitido en denominaciones inferiores a la unidad monetaria básica de un país, como centavos.", en: "Paper currency issued in denominations valued at less than one basic unit of the national monetary standard, such as cents." },
-    seeAlso: [],
+    seeAlso: ["demand-note", "united-states-note", "friedberg"],
   },
   {
     slug: "patina",
@@ -983,7 +1055,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Pick number", en: "Pick number" },
     definition: { es: "Número de referencia estándar asignado a cada billete en el Standard Catalog of World Paper Money, usado universalmente por coleccionistas para identificar variantes.", en: "The standard reference number assigned to each note in the Standard Catalog of World Paper Money, used universally by collectors to identify variants." },
-    seeAlso: ["friedberg", "schwan", "banknote-book", "haxby", "criswell"],
+    seeAlso: ["friedberg", "schwan", "banknote-book", "haxby", "criswell", "gonzalez-white", "hernandez"],
   },
   {
     slug: "planchuela",
@@ -1226,6 +1298,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["intaglio", "vineta", "calcografia"],
   },
   {
+    slug: "tamano-grande",
+    id: "tamano-grande",
+    category: "Producción",
+    title: { es: "Tamaño grande (horse blanket)", en: "Large-size (horse blanket)" },
+    definition: { es: "Formato del papel federal de Estados Unidos anterior al recorte de 1929: unos 7,375 × 3,125 pulgadas, ocho billetes por pliego. El BEP y el U.S. Currency Education Program sitúan en 1929 el paso a 6,14 × 2,61 pulgadas —cerca de un 30 % menos— y a doce billetes por pliego; la serie impresa es 1928. Los coleccionistas llaman horse blanket a ese tamaño grande. El 2 dólares United States Note de 1917, Fr. 60, serial B50400302A, de esta vitrina es de tamaño grande.", en: "The United States federal format before the 1929 reduction: about 7.375 × 3.125 inches, eight notes per sheet. The BEP and the U.S. Currency Education Program place in 1929 the change to 6.14 × 2.61 inches — roughly 30 percent smaller — and to twelve notes per sheet; the printed series is 1928. Collectors call that large-size a horse blanket. This case’s Series 1917 United States Note $2, Fr. 60, serial B50400302A, is large-size." },
+    seeAlso: ["united-states-note", "friedberg", "billete-de-banco-nacional"],
+  },
+  {
     slug: "tasado",
     id: "tasado",
     category: "Coleccionismo",
@@ -1266,6 +1346,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-iridiscente", "spark", "foil"],
   },
   {
+    slug: "treasury-note",
+    id: "treasury-note",
+    category: "Emisión",
+    title: { es: "Treasury Note (Coin Note)", en: "Treasury Note / Coin Note" },
+    definition: { es: "Papel del Tesoro de Estados Unidos autorizado por la Sherman Silver Purchase Act: el portador lo canjeaba en moneda —oro o plata, a elección del Tesoro—. Las series son 1890 y 1891. Friedberg les dedica el capítulo de Treasury or Coin Notes. La Educational Series de 1896 es un certificado de plata, no esta clase. En esta vitrina no hay aún un ejemplar con foto y serial.", en: "United States Treasury paper authorized by the Sherman Silver Purchase Act: the bearer redeemed it in coin — gold or silver, at the Treasury’s choice. The series are 1890 and 1891. Friedberg gives them the Treasury or Coin Notes chapter. The 1896 Educational Series is a Silver Certificate issue, not this class. This case does not yet hold an example with a photograph and serial." },
+    seeAlso: ["certificado-de-plata", "friedberg", "curso-legal"],
+  },
+  {
     slug: "tyvek",
     id: "tyvek",
     category: "Producción",
@@ -1280,6 +1368,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Uniface (a una cara)", en: "Uniface" },
     definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. La nota de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
     seeAlso: ["anverso", "reverso", "prueba-ensayo", "specimen"],
+  },
+  {
+    slug: "united-states-note",
+    id: "united-states-note",
+    category: "Emisión",
+    title: { es: "United States Note (Legal Tender)", en: "United States Note / Legal Tender Note" },
+    definition: { es: "Papel federal de curso legal autorizado el 25 de febrero de 1862, también llamado Legal Tender Note o greenback. Sustituyó a los Demand Notes; el sello y los seriales rojos distinguen el tipo. El BEP entregó el último lote al Tesoro en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Esta vitrina ficha el 2 dólares de la serie 1917, Fr. 60 (P#188(4)), firmas Speelman–White, serial B50400302A, de tamaño grande.", en: "Federal legal-tender paper authorized on 25 February 1862, also called a Legal Tender Note or greenback. It replaced Demand Notes; a red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face. This case records the Series 1917 $2, Fr. 60 (P#188(4)), Speelman–White signatures, serial B50400302A, a large-size note." },
+    seeAlso: ["demand-note", "greenback", "friedberg", "curso-legal", "tamano-grande"],
   },
   {
     slug: "vale-al-portador",
