@@ -7,6 +7,7 @@ import {
   normalizePath,
   parseGscUrl,
   tokenOverlap,
+  withSlash,
 } from './match.mjs';
 
 const urls = [
@@ -210,5 +211,50 @@ describe('stubs, legacy Dreamweaver files, glossary', () => {
     assert.equal(r.status, 301);
     assert.equal(r.target, '/en/glossary/');
     assert.equal(r.rule, 'glossary-hub');
+  });
+
+  it('treats a live English glossary keeper as exists, not a hub 301', () => {
+    const urls = [
+      ...stubUrls,
+      {
+        path: '/en/glossary/polymer/',
+        lang: 'en',
+        type: 'glossary',
+        lastSlug: 'polymer',
+        title: 'Polymer',
+        alternate: '/glosario/polimero/',
+        redirectTo: '',
+      },
+    ];
+    const r = matchUrl('/en/glossary/polymer/', urls, map);
+    assert.equal(r.status, 200);
+    assert.equal(r.rule, 'exists');
+    assert.equal(r.target, '/en/glossary/polymer/');
+  });
+
+  it('keeps query-string 301 targets without a trailing slash after ?', () => {
+    const urls = [
+      ...stubUrls,
+      {
+        path: '/en/glossary/libra/',
+        lang: 'en',
+        type: 'glossary',
+        lastSlug: 'libra',
+        title: 'Redirecting to: /en/glossary/?term=pound-sterling',
+        alternate: '',
+        redirectTo: '/en/glossary/?term=pound-sterling',
+      },
+    ];
+    const r = matchUrl('/en/glossary/libra/', urls, map);
+    assert.equal(r.status, 301);
+    assert.equal(r.target, '/en/glossary/?term=pound-sterling');
+  });
+});
+
+describe('withSlash', () => {
+  it('does not append a slash after a query string', () => {
+    assert.equal(withSlash('/en/glossary/?term=pound-sterling'), '/en/glossary/?term=pound-sterling');
+    assert.equal(withSlash('/en/glossary/polymer'), '/en/glossary/polymer/');
+    assert.equal(withSlash('/'), '/');
   });
 });
