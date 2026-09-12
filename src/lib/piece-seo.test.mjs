@@ -12,7 +12,7 @@ import {
 describe('piece SEO titles and descriptions', () => {
   it('caps meta descriptions at 155 characters on a word boundary', () => {
     const long =
-      'Pieza de la colección Notofilia con referencia Pick, serial visible, firmas del gerente y del cajero, y contexto histórico del emisor colombiano en 1983.';
+      'Pieza de la colección Notofilia con referencia Pick, serial visible, firmas del gerente y del cajero, y contexto histórico del emisor colombiano documentado en 1983.';
     assert.ok(long.length > META_DESCRIPTION_MAX);
     const clipped = limitMetaDescription(long);
     assert.ok(clipped.length <= META_DESCRIPTION_MAX);
