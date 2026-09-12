@@ -2,9 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import { POLIMERO_INGLATERRA_PATH, POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
-import { notePageCopy, type EnglandNote } from '../../data/england-polymer';
+import { notePageCopy, englandNotes, type EnglandNote } from '../../data/england-polymer';
+import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -17,11 +20,26 @@ const { locale, note } = Astro.props;
 const t = notePageCopy[locale];
 const pathname = localizePath(note.path, locale);
 const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
+const seo = piecePageMeta({
+  kind: 'note',
+  title: note.title[locale],
+  kicker: note.kicker[locale],
+  lead: note.lead[locale],
+  locale,
+  country: locale === 'en' ? 'England' : 'Inglaterra',
+});
+const siblings = pieceSiblings(englandNotes, note.path);
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: t.seriesLink, path: POLIMERO_MUNDIAL_PATH },
+  { name: t.collectionLink, path: POLIMERO_INGLATERRA_PATH },
+  { name: seo.h1, path: pathname },
+];
 ---
 
 <Layout
-  title={`${note.title[locale]} | Notofilia`}
-  description={note.lead[locale]}
+  title={seo.documentTitle}
+  description={seo.description}
   locale={locale}
   pathname={pathname}
   ogImage={note.images.front}
@@ -31,9 +49,11 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        ...visualArtworkJsonLd({
-          name: note.title[locale],
-          description: note.lead[locale],
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+          name: seo.h1,
+          description: seo.description,
           url: pathname,
           image: note.images.front,
           locale,
@@ -42,6 +62,7 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
           serial: note.serial,
           gradingService: inferGradingService(note.grade[locale]),
         }),
+        ],
       })}
     />
   </Fragment>
@@ -53,16 +74,17 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(POLIMERO_MUNDIAL_PATH, locale), label: t.seriesLink },
           { href: englandHref, label: t.collectionLink },
-          { label: note.title[locale] },
+          { label: seo.h1 },
         ]}
       />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {note.kicker[locale]}
       </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {note.title[locale]}
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {seo.h1}
       </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
@@ -104,6 +126,7 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
             locale={locale}
             width={1440}
             height={960}
+            eager
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
@@ -126,7 +149,7 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.aboutHeading}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.description[locale], locale)} />
       </section>
 
       <section class="mt-12" aria-labelledby="scarcity-heading">
@@ -146,6 +169,13 @@ const englandHref = localizePath(POLIMERO_INGLATERRA_PATH, locale);
       <div class="mt-16">
         <SourceList locale={locale} sources={note.sources} heading={t.sourcesHeading} />
       </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={siblings.prev ? { href: localizePath(siblings.prev.path, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
+        next={siblings.next ? { href: localizePath(siblings.next.path, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
+        related={siblings.related.map((item) => ({ href: localizePath(item.path, locale), title: item.title[locale], image: item.images.front }))}
+      />
 
       <p class="mt-12">
         <a
