@@ -2,7 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import {
   coinPageCopy,
   coinagePath,
@@ -10,7 +12,9 @@ import {
   NUMISMATICS_PATH,
   seriesCopy,
   type UnitedStatesCoin,
+  unitedStatesCoins,
 } from '../../data/estados-unidos-coinage';
+import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -24,11 +28,26 @@ const t = coinPageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = coinPath(coin, locale);
 const sources = coin.sources;
+const seo = piecePageMeta({
+  kind: 'coin',
+  title: coin.title[locale],
+  kicker: coin.kicker[locale],
+  lead: coin.lead[locale],
+  locale,
+  country: locale === 'en' ? 'United States' : 'Estados Unidos',
+});
+const siblings = pieceSiblings(unitedStatesCoins, coin.path);
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: t.collectionLink, path: NUMISMATICS_PATH },
+  { name: t.seriesLink, path: coinagePath(locale) },
+  { name: seo.h1, path: pathname },
+];
 ---
 
 <Layout
-  title={`${coin.title[locale]} | Notofilia`}
-  description={coin.lead[locale]}
+  title={seo.documentTitle}
+  description={seo.description}
   locale={locale}
   pathname={pathname}
   ogImage={coin.images.composite}
@@ -38,9 +57,11 @@ const sources = coin.sources;
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        ...visualArtworkJsonLd({
-          name: coin.title[locale],
-          description: coin.lead[locale],
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+          name: seo.h1,
+          description: seo.description,
           url: pathname,
           image: coin.images.composite,
           locale,
@@ -49,6 +70,7 @@ const sources = coin.sources;
           issuer: coin.mint[locale],
           gradingService: inferGradingService(coin.grade[locale]),
         }),
+        ],
       })}
     />
   </Fragment>
@@ -60,16 +82,17 @@ const sources = coin.sources;
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(NUMISMATICS_PATH, locale), label: t.collectionLink },
           { href: coinagePath(locale), label: t.seriesLink },
-          { label: coin.title[locale] },
+          { label: seo.h1 },
         ]}
       />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {coin.kicker[locale]}
       </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {coin.title[locale]}
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {seo.h1}
       </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{coin.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
@@ -125,8 +148,7 @@ const sources = coin.sources;
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
-            width={coin.images.faceWidth}
-            height={coin.images.faceHeight}
+            eager
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.frontCaption[locale]}</figcaption>
         </figure>
@@ -149,7 +171,7 @@ const sources = coin.sources;
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.aboutHeading}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{coin.description[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(coin.description[locale], locale)} />
       </section>
 
       <section class="mt-12" aria-labelledby="legends-heading">
@@ -192,6 +214,13 @@ const sources = coin.sources;
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
       </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={siblings.prev ? { href: coinPath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
+        next={siblings.next ? { href: coinPath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
+        related={siblings.related.map((item) => ({ href: coinPath(item, locale), title: item.title[locale], image: item.images.front }))}
+      />
 
       <p class="mt-12">
         <a
