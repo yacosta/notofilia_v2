@@ -161,12 +161,14 @@ export function definedTermJsonLd(options: {
   locale: Locale;
 }) {
   const setUrl = absoluteUrl(options.locale === 'en' ? '/en/glossary/' : '/glosario/');
+  const url = absoluteUrl(options.url);
   return {
     '@type': 'DefinedTerm',
+    '@id': `${url}#term`,
     name: options.name,
     alternateName: options.alternateName,
     description: options.description,
-    url: absoluteUrl(options.url),
+    url,
     inLanguage: options.locale,
     inDefinedTermSet: `${setUrl}#glossary`,
   };

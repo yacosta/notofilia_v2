@@ -39,6 +39,8 @@ describe('locale path mapping', () => {
       '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     );
     assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notafilia/');
+    assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
+    assert.equal(localizePath('/glosario/?term=libra', 'en'), '/en/glossary/?term=libra');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');

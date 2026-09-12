@@ -99,8 +99,8 @@ async function fromSrcPages() {
     else if (rel.endsWith('/index.astro')) paths.push(`/${rel.slice(0, -'index.astro'.length)}`);
     else if (rel.endsWith('.astro')) paths.push(`/${rel.slice(0, -'.astro'.length)}/`);
   }
-  const { glossaryTerms } = await import(pathToFileURL(join(root, 'src/data/glossary.ts')).href);
-  for (const term of glossaryTerms) {
+  const { standaloneGlossaryTerms } = await import(pathToFileURL(join(root, 'src/data/glossary.ts')).href);
+  for (const term of standaloneGlossaryTerms()) {
     paths.push(`/glosario/${term.slug}/`, `/en/glossary/${term.slug}/`);
   }
   const blog = JSON.parse(readFileSync(join(root, 'src/data/blog-articles.json'), 'utf8'));

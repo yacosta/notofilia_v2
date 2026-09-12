@@ -1,9 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import { glossaryRedirects } from './src/data/glossary.ts';
 import { englishRedirects } from './src/lib/locale-paths.ts';
 
 const generated = englishRedirects();
+// Folded glossary URLs 301 to `?term=` because CDN Location headers drop hash fragments.
+Object.assign(generated, glossaryRedirects());
 
 export default defineConfig({
   site: 'https://notofilia.com',

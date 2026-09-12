@@ -2,12 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import { definedTermJsonLd } from '../../lib/json-ld';
+import { cardImageSrc, imageSrcset } from '../../lib/images';
+import {
+  glossaryArticleBySlug,
+  glossaryArticleLocaleText,
+  type GlossaryExample,
+} from '../../data/glossary-articles';
 import {
   glossaryCategories,
   glossaryCopy,
   glossaryPath,
   glossaryTermBySlug,
-  glossaryTermPath,
+  glossaryTermHref,
   type GlossaryTerm,
 } from '../../data/glossary';
 
@@ -18,15 +24,24 @@ interface Props {
 
 const { locale, term } = Astro.props;
 const t = glossaryCopy[locale];
-const pathname = glossaryTermPath(term.slug, locale);
+const pathname = glossaryTermHref(term.slug, locale);
 const otherLang: Locale = locale === 'en' ? 'es' : 'en';
 const categoryLabel = glossaryCategories.find((category) => category.id === term.category)?.[locale] ?? term.category;
 const related = term.seeAlso
   .map((slug) => glossaryTermBySlug(slug))
   .filter((item): item is GlossaryTerm => Boolean(item));
+const article = glossaryArticleBySlug(term.slug);
+const paragraphs = article?.paragraphs[locale] ?? [term.definition[locale]];
+const lead = paragraphs[0];
+const rest = paragraphs.slice(1);
+const jsonDescription = article ? glossaryArticleLocaleText(article, locale) : term.definition[locale];
+
+function exampleHref(example: GlossaryExample): string {
+  return localizePath(example.path, locale);
+}
 ---
 
-<Layout title={t.termTitle(term.title[locale])} description={term.definition[locale]} locale={locale} pathname={pathname}>
+<Layout title={t.termTitle(term.title[locale])} description={lead} locale={locale} pathname={pathname}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
@@ -35,7 +50,7 @@ const related = term.seeAlso
         ...definedTermJsonLd({
           name: term.title[locale],
           alternateName: term.title[otherLang],
-          description: term.definition[locale],
+          description: jsonDescription,
           url: pathname,
           locale,
         }),
@@ -68,38 +83,95 @@ const related = term.seeAlso
         {term.title[otherLang]}
       </p>
 
-      <div class="glossary-card rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim px-[clamp(20px,4vw,40px)] py-8">
-        {
-          locale === 'es' ? (
-            <>
-              <p class="m-0 mb-4 text-[19px] leading-[1.7] text-ink">{term.definition.es}</p>
-              <p lang="en" class="m-0 text-[16px] leading-[1.6] text-gold-dark italic">
-                {term.definition.en}
-              </p>
-            </>
-          ) : (
-            <p class="m-0 text-[19px] leading-[1.7] text-ink">{term.definition.en}</p>
-          )
-        }
-        {
-          related.length > 0 ? (
-            <p class="mb-0 mt-5 font-sans text-[15px] text-gold-dark">
-              <span>{t.seeAlso}</span>{' '}
-              {related.map((item, index) => (
-                <>
-                  {index > 0 ? <span>, </span> : null}
+      <p class="mb-10 mt-0 max-w-[46rem] text-[19px] leading-[1.7] text-cream-dim">{lead}</p>
+
+      {
+        article?.illustration?.image ? (
+          <figure class="mb-10 m-0">
+            <img
+              src={cardImageSrc(article.illustration.image)}
+              srcset={imageSrcset(article.illustration.image, [400, 800, 1200])}
+              sizes="(min-width: 1024px) 720px, 100vw"
+              width="800"
+              height="400"
+              alt={article.illustration.alt?.[locale] ?? article.illustration.title[locale]}
+              fetchpriority="high"
+              decoding="async"
+              class="block h-auto w-full rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim object-contain"
+            />
+            <figcaption class="mt-3 font-sans text-[14px] text-muted">
+              <a
+                href={exampleHref(article.illustration)}
+                class="text-gold-light underline decoration-line-strong hover:text-cream"
+              >
+                {article.illustration.title[locale]}
+              </a>
+            </figcaption>
+          </figure>
+        ) : null
+      }
+
+      {
+        rest.map((paragraph) => (
+          <p class="mb-5 mt-0 text-[19px] leading-[1.7] text-cream-dim">{paragraph}</p>
+        ))
+      }
+
+      {
+        article && article.examples.length > 0 ? (
+          <section class="mt-12" aria-labelledby="glossary-examples-heading">
+            <h2 id="glossary-examples-heading" class="mb-5 mt-0 font-display text-[22px] font-normal text-cream">
+              {t.examplesHeading}
+            </h2>
+            <ul class="m-0 grid list-none grid-cols-1 gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
+              {article.examples.map((example) => (
+                <li>
                   <a
-                    href={glossaryTermPath(item.slug, locale)}
-                    class="underline [text-decoration-color:rgba(51,46,34,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-deep"
+                    href={exampleHref(example)}
+                    class="block rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-deep"
                   >
-                    {item.title[locale]}
+                    {example.image ? (
+                      <img
+                        src={cardImageSrc(example.image)}
+                        srcset={imageSrcset(example.image, [400, 800])}
+                        sizes="(min-width: 1024px) 240px, 50vw"
+                        width="400"
+                        height="200"
+                        alt={example.alt?.[locale] ?? ''}
+                        loading="lazy"
+                        decoding="async"
+                        class="block h-auto w-full object-contain"
+                      />
+                    ) : null}
+                    <span class="block px-4 py-3 font-sans text-[15px] text-ink underline [text-decoration-color:rgba(51,46,34,0.45)]">
+                      {example.title[locale]}
+                    </span>
                   </a>
-                </>
+                </li>
               ))}
-            </p>
-          ) : null
-        }
-      </div>
+            </ul>
+          </section>
+        ) : null
+      }
+
+      {
+        related.length > 0 ? (
+          <p class="mb-0 mt-10 font-sans text-[15px] text-muted">
+            <span>{t.seeAlso}</span>{' '}
+            {related.map((item, index) => (
+              <>
+                {index > 0 ? <span>, </span> : null}
+                <a
+                  href={glossaryTermHref(item.slug, locale)}
+                  class="text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {item.title[locale]}
+                </a>
+              </>
+            ))}
+          </p>
+        ) : null
+      }
 
       <p class="mb-0 mt-8">
         <a

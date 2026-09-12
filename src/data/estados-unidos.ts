@@ -758,7 +758,7 @@ export const barabooScripRelated: { href: string; title: LocalizedText; dek: Loc
     },
   },
   {
-    href: '/glosario/vale-al-portador/',
+    href: '/glosario/#vale-al-portador',
     title: { es: 'Glosario: vale al portador', en: 'Glossary: bearer note' },
     dek: {
       es: 'El scrip de la Cámara es un vale al portador, no un Federal Reserve Note.',
