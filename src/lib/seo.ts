@@ -132,7 +132,6 @@ function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[numbe
 /** Published hubs that are not (yet) rows in mega-nav. */
 const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
-  { href: '/buscar/', es: 'Buscar', en: 'Search' },
   { href: '/identificar/', es: 'Identificar', en: 'Identify' },
   { href: '/herramientas/', es: 'Herramientas', en: 'Tools' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
@@ -177,7 +176,6 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/blog/', 'Guías', 'Guides');
   add('/noticias/', 'Noticias', 'News');
   add('/coleccion/', 'Colección', 'Collection');
-  add('/buscar/', 'Buscar', 'Search');
   add('/identificar/', 'Identificar', 'Identify');
   add('/herramientas/', 'Herramientas', 'Tools');
 
