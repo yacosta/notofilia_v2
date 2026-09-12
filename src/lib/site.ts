@@ -3,7 +3,7 @@ import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { dedicatedCatalogPaths as ecuadorPaths, ecuadorNoteSlugs, ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
-import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_PATH, colombiaEraSlugs } from '../data/colombia';
 import { colombiaNoteSlugs } from '../data/colombia-notes';
 import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
@@ -342,6 +342,7 @@ const dedicatedEs = [
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   ...bancaLibreDedicatedSlugs,
+  ...colombiaEraSlugs(),
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,
@@ -402,6 +403,7 @@ const dedicatedEs = [
   'contacto',
   'buscar',
   'identificar',
+  'identificar/billetes-falsos',
   'herramientas',
   'herramientas/numeracion-especial',
   ...blogSlugs,
