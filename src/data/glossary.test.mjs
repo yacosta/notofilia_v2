@@ -112,6 +112,7 @@ describe('two-tier glossary', () => {
     assert.equal(glossaryTermHref('libra', 'es'), '/glosario/#libra');
     assert.equal(glossaryTermHref('libra', 'en'), '/en/glossary/#libra');
     assert.equal(glossaryTermHref('libranza', 'es'), '/glosario/#libranza');
+    assert.equal(glossaryTermHref('criswell', 'es'), '/glosario/#catalogo-criswell');
   });
 
   it('301s folded term URLs to a query, not a hash fragment', () => {
@@ -137,6 +138,7 @@ describe('two-tier glossary', () => {
     assert.match(indexPage, /hasDefinedTerm/);
     assert.match(indexPage, /glossaryTermHref/);
     assert.match(indexPage, /data-glossary-tier/);
+    assert.match(indexPage, /data-glossary-slug/);
     assert.match(indexPage, /revealTermFromQuery/);
     assert.match(indexPage, /params\.get\('term'\)/);
     assert.match(indexPage, /glossary-letter-/);

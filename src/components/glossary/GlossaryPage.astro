@@ -210,6 +210,7 @@ const jsonLd = {
                     <article
                       id={term.id}
                       data-glossary-term
+                      data-glossary-slug={term.slug}
                       data-glossary-cat={term.category}
                       data-glossary-search={glossarySearchText(term)}
                       data-glossary-tier={standalone ? 'standalone' : 'index'}
@@ -383,14 +384,16 @@ const jsonLd = {
       const fromHash = window.location.hash.replace(/^#/, '');
       const id = fromQuery || fromHash;
       if (!id) return;
-      const el = document.getElementById(id);
+      const el =
+        document.getElementById(id) ||
+        root.querySelector<HTMLElement>(`[data-glossary-slug="${CSS.escape(id)}"]`);
       if (!el) return;
       el.hidden = false;
       const group = el.closest<HTMLElement>('[data-glossary-letter-group]');
       if (group) group.hidden = false;
       el.scrollIntoView({ behavior: 'auto', block: 'start' });
       if (fromQuery) {
-        const next = `${window.location.pathname}#${id}`;
+        const next = `${window.location.pathname}#${el.id}`;
         window.history.replaceState(null, '', next);
       }
     };
