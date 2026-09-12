@@ -1,6 +1,9 @@
 import { glossaryTerms } from '../data/glossary.ts';
-import { newsArticles } from '../data/editorial.ts';
+import newsArticlesJson from '../data/news-articles.json' with { type: 'json' };
 import type { Locale } from './locale-paths.ts';
+
+type NewsSlugRecord = { slug: string; slugEn: string };
+const newsArticles = newsArticlesJson as NewsSlugRecord[];
 
 type SegmentMaps = {
   esToEn: Map<string, string>;
