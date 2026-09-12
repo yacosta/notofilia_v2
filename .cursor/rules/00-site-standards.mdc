@@ -9,7 +9,7 @@ Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the d
 
 ## Shell (every HTML page)
 
-- `astro.config.mjs`: `compressHTML: false` (empty `alt=""` must survive minify), `trailingSlash: 'always'`.
+- `astro.config.mjs`: `compressHTML: true` (Astro 7 lossless whitespace; empty `alt=""` must still appear in built HTML), `build.inlineStylesheets: 'auto'`, `trailingSlash: 'always'`.
 - One chrome layout: `src/layouts/Layout.astro`.
 - First focusable in `<body>`: `SkipLink` → `href="#main-content"`. Hide with classic clip (`left: -10000px`), not Tailwind `sr-only`.
 - Landmark: `<main id="main-content" tabindex="-1">` on every page including 404.
