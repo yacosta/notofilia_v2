@@ -9,13 +9,14 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
   colombiaChapters,
+  eraPath,
   seriesCopy,
   seriesPath,
   seriesSources,
 } from '../../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
-import { notePath, notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
+import { notePath } from '../../data/colombia-notes';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
@@ -110,41 +111,14 @@ const jsonLd = collectionPageJsonLd({
                 {chapter.title[locale]}
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
-              {
-                notesForChapter(chapter.id).length > 0 ? (
-                  <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
-                    aria-label={chapter.title[locale]}
-                  >
-                    {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
-                      return (
-                      <li class="min-w-0">
-                        <a
-                          href={seriesCardHref(note, piece, locale)}
-                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                        >
-                          <CatalogThumb
-                    src={piece.images.front}
-                    alt={piece.frontCaption[locale]}
-                    width={1440}
-                    height={960}
-                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                  />
-                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                            {piece.title[locale]}
-                          </h3>
-                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                            {t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
-                          </p>
-                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                        </a>
-                      </li>
-                      );
-                    })}
-                  </ol>
-                ) : null
-              }
+              <p class="mb-0 mt-0">
+                <a
+                  href={eraPath(chapter.id, locale)}
+                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                >
+                  {t.eraOpen} →
+                </a>
+              </p>
             </section>
           ))
         }
@@ -211,7 +185,7 @@ const jsonLd = collectionPageJsonLd({
             {' '}
             <a
               class="text-gold-light underline decoration-line-strong hover:text-cream"
-              href="#tiquetes"
+              href={eraPath('tiquetes', locale)}
             >
               {t.errorsTiqueteLink}
             </a>
