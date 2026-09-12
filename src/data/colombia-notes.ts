@@ -3939,19 +3939,20 @@ export const colombiaNotes: ColombiaNote[] = [
     chapterId: 'errores',
     path: `${COLOMBIA_PATH}5000-pesos-error-2010/`,
     pick: 'P# 452l / TBB B989m',
-    serial: '09636101',
+    serial: '09629901',
+    shareTypeNarrative: true,
     signatures: {
       es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
       en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
     },
     printed: {
-      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso, bajo las firmas: 31 de julio de 2010. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Esta pieza conserva, además, una solapa triangular del margen de pliego que sobresale del canto superior. González White 2019 numera la fecha BG# 541 (p. 128): IBBR, Silva, emisión N.D.; anota Braille y la circulación el 1.º de febrero de 2011. El Bank Note Museum lista 31.07.2010 como Pick 452l. Numista asigna TBB B989m y Hernández# 570, con Braille en la zona de la filigrana. La producción BanRep de 5.000 pesos en 2010 es 98,149 millones de piezas, y la entrega a Tesorería del mismo año coincide: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
-      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 31 July 2010. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face. This piece also keeps a triangular sheet-margin flap that extends beyond the top edge. González White 2019 numbers the date BG# 541 (p. 128): IBBR, Silva, emisión N.D.; it notes Braille and circulation on 1 February 2011. The Bank Note Museum lists 31.07.2010 as Pick 452l. Numista assigns TBB B989m and Hernández# 570, with Braille in the watermark area. BanRep’s 2010 production of 5,000-peso notes is 98.149 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso, bajo las firmas: 31 de julio de 2010. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Estas dos piezas conservan, además, una solapa triangular del margen de pliego que sobresale del canto superior. González White 2019 numera la fecha BG# 541 (p. 128): IBBR, Silva, emisión N.D.; anota Braille y la circulación el 1.º de febrero de 2011. El Bank Note Museum lista 31.07.2010 como Pick 452l. Numista asigna TBB B989m y Hernández# 570, con Braille en la zona de la filigrana. La producción BanRep de 5.000 pesos en 2010 es 98,149 millones de piezas, y la entrega a Tesorería del mismo año coincide: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 31 July 2010. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face. These two pieces also keep a triangular sheet-margin flap that extends beyond the top edge. González White 2019 numbers the date BG# 541 (p. 128): IBBR, Silva, emisión N.D.; it notes Braille and circulation on 1 February 2011. The Bank Note Museum lists 31.07.2010 as Pick 452l. Numista assigns TBB B989m and Hernández# 570, with Braille in the watermark area. BanRep’s 2010 production of 5,000-peso notes is 98.149 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg',
-      front: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
-      back: '/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg',
+      composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
+      front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
+      back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
     },
     title: {
       es: '5.000 pesos · error mariposa · 2010',
@@ -3962,32 +3963,32 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Colombia · Errors · Butterfly cut',
     },
     lead: {
-      es: 'Cinco mil pesos de José Asunción Silva, Pick 452l / TBB B989m: fecha 31 de julio de 2010 y serial 09636101, con un error de corte en solapa —mariposa— que sobresale del margen superior. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
-      en: 'A José Asunción Silva five-thousand-peso note, Pick 452l / TBB B989m: date 31 July 2010 and serial 09636101, with a butterfly-cut fold-over that projects from the top margin. This record gathers the face and back of the same unslabbed note.',
+      es: 'Dos cinco mil pesos de José Asunción Silva, Pick 452l / TBB B989m: fecha 31 de julio de 2010 y seriales 09629901 y 09636101, cada uno con un error de corte en solapa —mariposa— que sobresale del margen superior. Una ficha: un bloque de datos y un texto de tipo; las dos caras de cada serial debajo.',
+      en: 'Two José Asunción Silva five-thousand-peso notes, Pick 452l / TBB B989m: date 31 July 2010 and serials 09629901 and 09636101, each with a butterfly-cut fold-over that projects from the top margin. One record: one facts block and one type essay; both faces of each serial stacked below.',
     },
     description: {
-      es: 'El cinco mil pesos de José Asunción Silva, en formato de 140 × 70 mm, es el Pick 452 (2001–2014) / TBB B989, impreso por la Imprenta de Billetes. González White numera esta fecha BG# 541 (p. 128); el Bank Note Museum la marca 452l. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2005–2010, antes del cambio a José Tolosa en 2011 (TBB B989m; Hernández# 570). El serial 09636101 aparece dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—; ocho cifras, sin prefijo. No es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en verdes y ocres, muestra a Silva a la derecha, con la rana y el insecto alado que aluden a su poesía, el 5000 y la leyenda «CINCO MIL PESOS». El reverso, en azul, lleva la alameda, la figura femenina, el pedestal con el fragmento en microimpresión del «Nocturno» y el sello de Libertad; el pie es el de la Imprenta de Billetes. Numista anota Braille en la zona de la filigrana a partir de 2009; González White registra la circulación de esta fecha el 1.º de febrero de 2011. Lo que distingue esta pieza no es el tipo sino el error: una solapa triangular del margen de pliego quedó unida al canto superior. En el reverso, junto a esa pérdida de rectángulo, se leen las barras de color de control del pliego: material que el corte de fábrica debía desechar. En la notafilia colombiana Hernández llama mariposa a ese ala de papel; el pliegue de fábrica que la dejó unida es un error de producción, no una variedad de diseño. No debe confundirse con el 1.º de agosto de 2010 (452m), ni con el 21.08.2009 (452k), ni con el cinco mil de la Nueva Familia (Pick 459), ni con la mariposa de 1.000 pesos de 2011 de esta misma vitrina (serial 11508701). Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
-      en: 'The José Asunción Silva five-thousand in the 140 × 70 mm format is Pick 452 (2001–2014) / TBB B989, printed by the Imprenta de Billetes. González White numbers this date BG# 541 (p. 128); the Bank Note Museum marks it 452l. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2005–2010 dates, before the change to José Tolosa in 2011 (TBB B989m; Hernández# 570). Serial 09636101 appears twice on the face — in black at upper right and in red at left — eight digits, no prefix. It is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in greens and ochres, shows Silva at right, with the frog and winged insect that allude to his poetry, the 5000, and the legend “CINCO MIL PESOS.” The back, in blue, carries the tree alley, the female figure, the pedestal with the microprinted fragment of “Nocturno,” and the Liberty seal; the imprint is that of the Imprenta de Billetes. Numista notes Braille in the watermark area from 2009; González White records this date into circulation on 1 February 2011. What distinguishes this piece is the error, not the type: a triangular flap of sheet margin remained attached to the top edge. On the back, beside that break in the rectangle, the sheet’s control color bars remain: material the factory cut was meant to discard. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly); the as-made fold that left it attached is a production error, not a design variety. It should not be confused with 1 August 2010 (452m), with 21.08.2009 (452k), with the New Family five-thousand (Pick 459), or with this case’s 2011 1,000-peso butterfly (serial 11508701). This record gathers both sides of the same unslabbed note.',
+      es: 'El cinco mil pesos de José Asunción Silva, en formato de 140 × 70 mm, es el Pick 452 (2001–2014) / TBB B989, impreso por la Imprenta de Billetes del Banco de la República, en tintas sobre papel. No es el cinco mil de Núñez y Caro ni el de la Nueva Familia (Pick 459). González White abre el tipo Núñez el 5 de agosto de 1986 (p. 124) y sitúa el tipo Silva del 1.º de marzo de 1995 al 2 de agosto de 2014 (pp. 126–128); algunas fechas de 1995 salieron de Thomas De La Rue. Esta fecha, 31 de julio de 2010, es BG# 541 (p. 128), IBBR, que el Bank Note Museum marca 452l. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2005–2010, antes del cambio a José Tolosa en 2011 (TBB B989m; Hernández# 570). Los seriales 09629901 y 09636101 aparecen cada uno dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—; ocho cifras, sin prefijo. No son seriales bajos ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en verdes y ocres, muestra a Silva a la derecha; González White (p. 129) anota las alusiones a sus poemas con cigarra y rana, el 5000 y la leyenda «CINCO MIL PESOS». El reverso, en azul, lleva la alameda, la figura femenina, el pedestal con el fragmento en microimpresión del «Nocturno» y el sello de Libertad; el pie es el de la Imprenta de Billetes. Numista anota Braille en la zona de la filigrana a partir de 2009; González White registra Braille en esta fecha y la circulación el 1.º de febrero de 2011. Lo que distingue estas piezas no es el tipo sino el error: un pliegue de fábrica dejó unida al canto superior una solapa triangular del margen de pliego. El huecograbado y las tintas de fondo continúan sobre esa solapa: el pliegue ocurrió después de imprimir el pliego y antes del corte. En el reverso, junto a la pérdida de rectángulo, se leen las barras de color de control —material que la guillotina de fábrica debía desechar—. Un pliegue anterior a la impresión dejaría la solapa en blanco; aquí no es el caso. En la notafilia colombiana Hernández llama mariposa a ese ala de papel. No debe confundirse con el 1.º de agosto de 2010 (452m), ni con el 21.08.2009 (452k), ni con el cinco mil de la Nueva Familia (Pick 459), ni con la mariposa de 1.000 pesos de 2011 de esta misma vitrina (serial 11508701). Dos objetos distintos de la misma fecha y el mismo error: 09629901 no es 09636101. Esta ficha reúne las dos caras de cada pieza, sin encapsular.',
+      en: 'The José Asunción Silva five-thousand in the 140 × 70 mm format is Pick 452 (2001–2014) / TBB B989, printed by the Banco de la República’s Imprenta de Billetes, in inks on paper. It is not the Núñez–Caro five-thousand, nor the New Family type (Pick 459). González White opens the Núñez type on 5 August 1986 (p. 124) and places the Silva type from 1 March 1995 to 2 August 2014 (pp. 126–128); some 1995 dates came from Thomas De La Rue. This date, 31 July 2010, is BG# 541 (p. 128), IBBR, which the Bank Note Museum marks 452l. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2005–2010 dates, before the change to José Tolosa in 2011 (TBB B989m; Hernández# 570). Serials 09629901 and 09636101 each appear twice on the face — in black at upper right and in red at left — eight digits, no prefix. They are not low serials and not a collector pattern (radar, binary, solid, or ladder). The face, in greens and ochres, shows Silva at right; González White (p. 129) notes the allusions to his poems with a cicada and a frog, the 5000, and the legend “CINCO MIL PESOS.” The back, in blue, carries the tree alley, the female figure, the pedestal with the microprinted fragment of “Nocturno,” and the Liberty seal; the imprint is that of the Imprenta de Billetes. Numista notes Braille in the watermark area from 2009; González White records Braille on this date and circulation on 1 February 2011. What distinguishes these pieces is the error, not the type: an as-made fold left a triangular flap of sheet margin attached to the top edge. Intaglio and the background tints continue onto that flap: the fold happened after the sheet was printed and before the cut. On the back, beside the break in the rectangle, the sheet’s control color bars remain — material the factory guillotine was meant to discard. A fold before printing would leave the flap blank; that is not the case here. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly). They should not be confused with 1 August 2010 (452m), with 21.08.2009 (452k), with the New Family five-thousand (Pick 459), or with this case’s 2011 1,000-peso butterfly (serial 11508701). Two distinct objects of the same date and the same error: 09629901 is not 09636101. This record gathers both sides of each unslabbed note.',
     },
     history: {
-      es: 'José Asunción Silva (Bogotá, 1865–1896) preside el cinco mil pesos del Banco de la República desde la emisión conmemorativa del centenario de su muerte (1996) y, en esta familia de circulación, desde las fechas de 2001. El anverso combina su retrato con la rana y el insecto alado; el reverso, la alameda y el «Nocturno». Juan Cárdenas firmó el grabado. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 5.000 de la Nueva Familia, todavía con Silva. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el margen de pliego aún unido.',
-      en: 'José Asunción Silva (Bogotá, 1865–1896) has occupied the Banco de la República five-thousand since the commemorative issue for the centenary of his death (1996) and, in this circulating family, since the 2001 dates. The face combines his portrait with the frog and winged insect; the back, the tree alley and “Nocturno.” Juan Cárdenas signed the engraving. The type ran through 2014; in 2016 it was joined, and later replaced in circulation, by the New Family 5,000, still with Silva. This record does not document an ordinary circulating example: it documents a maculature that escaped the cut with the sheet margin still attached.',
+      es: 'José Asunción Silva (Bogotá, 1865–1896) preside el cinco mil pesos del Banco de la República desde la emisión conmemorativa del centenario de su muerte y, en circulación, desde las fechas de 1995. El tipo anterior de la denominación, Núñez y Caro, salió el 5 de agosto de 1986. En octubre de 1994 el robo de Valledupar se llevó 2.200.000 ejemplares del #510 de esa familia (González White, p. 125); el banco sustituyó el 5.000 en 1995. Juan Cárdenas firmó el grabado de Silva: anverso con cigarra y rana; reverso, la alameda y el «Nocturno» en microimpresión. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 5.000 de la Nueva Familia, todavía con Silva. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta dos maculaturas que escaparon al corte con el margen de pliego aún unido.',
+      en: 'José Asunción Silva (Bogotá, 1865–1896) has occupied the Banco de la República five-thousand since the commemorative issue for the centenary of his death and, in circulation, since the 1995 dates. The previous type of the denomination, Núñez and Caro, appeared on 5 August 1986. In October 1994 the Valledupar robbery took 2,200,000 notes of that family’s #510 (González White, p. 125); the bank replaced the 5,000 in 1995. Juan Cárdenas signed the Silva engraving: a cicada and a frog on the face; on the back, the tree alley and “Nocturno” in microprint. The type ran through 2014; in 2016 it was joined, and later replaced in circulation, by the New Family 5,000, still with Silva. This record does not document an ordinary circulating example: it documents two maculatures that escaped the cut with the sheet margin still attached.',
     },
     frontCaption: {
-      es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09636101 y la solapa mariposa del canto superior.',
-      en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09636101, and the butterfly flap on the top edge.',
+      es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09629901 y la solapa mariposa del canto superior.',
+      en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09629901, and the butterfly flap on the top edge.',
     },
     backCaption: {
       es: 'Reverso del 5.000 pesos, Pick 452l: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
       en: 'Back of the 5,000 pesos, Pick 452l: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
     },
     scarcity: {
-      es: 'González White 2019 (BG# 541, p. 128) no publica cifra de emisión para el 31 de julio de 2010 (N.D.). El Bank Note Museum describe Pick 452 como el tipo 2001–2014 de 140 × 70 mm y marca 452l esa fecha. Numista agrupa el diseño bajo N# 208014 y marca la frecuencia de 31.07.2010 en 5 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 98,149 millones de piezas a todos los 5.000 pesos de 2010, y la de entregas a Tesorería el mismo total: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Un billete mariposa con barras de color del pliego es una pieza de vitrina; esta ficha no inventa una población de ese error.',
-      en: 'González White 2019 (BG# 541, p. 128) publishes no emisión figure for 31 July 2010 (N.D.). The Bank Note Museum describes Pick 452 as the 2001–2014 140 × 70 mm type and marks 452l for that date. Numista groups the design under N# 208014 and marks the 31.07.2010 date’s frequency at 5% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 98.149 million pieces to every 5,000-peso note of 2010, and the Tesorería delivery table the same total: that is not the printage of one date, signature pair, or cutting error. A butterfly note that still carries the sheet’s color bars is a showcase piece; this record does not invent a population for that error.',
+      es: 'González White 2019 (BG# 541, p. 128) no publica cifra de emisión para el 31 de julio de 2010 (N.D.). El Bank Note Museum describe Pick 452 como el tipo 2001–2014 de 140 × 70 mm y marca 452l esa fecha. Numista agrupa el diseño bajo N# 208014 y marca la frecuencia de 31.07.2010 en 5 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 98,149 millones de piezas a todos los 5.000 pesos de 2010, y la de entregas a Tesorería el mismo total: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Dos billetes mariposa con barras de color del pliego son piezas de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# 541, p. 128) publishes no emisión figure for 31 July 2010 (N.D.). The Bank Note Museum describes Pick 452 as the 2001–2014 140 × 70 mm type and marks 452l for that date. Numista groups the design under N# 208014 and marks the 31.07.2010 date’s frequency at 5% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 98.149 million pieces to every 5,000-peso note of 2010, and the Tesorería delivery table the same total: that is not the printage of one date, signature pair, or cutting error. Two butterfly notes that still carry the sheet’s color bars are showcase pieces; this record does not invent a population for that error.',
     },
     population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09636101. La pieza se presenta sin encapsular, aparentemente sin circular. El error es de producción, no un certificado de grado.',
-      en: 'A PMG or PCGS census for serial 09636101 has not been independently verified. The note is shown unslabbed, apparently uncirculated. The error is a production fault, not a grading certificate.',
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para 09629901 ni para 09636101. Ambas piezas se presentan sin encapsular, aparentemente sin circular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census has not been independently verified for 09629901 or 09636101. Both notes are shown unslabbed, apparently uncirculated. The error is a production fault, not a grading certificate.',
     },
     grade: {
       es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
@@ -4020,6 +4021,166 @@ export const colombiaNotes: ColombiaNote[] = [
           es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
           en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
         },
+      },
+    ],
+    pieces: [
+      {
+        id: '5000-pesos-error-2010-09629901',
+        pick: 'P# 452l / TBB B989m',
+        serial: '09629901',
+        signatures: {
+          es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+          en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 09629901. Fecha impresa: 31 de julio de 2010. Ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Corte mariposa: solapa triangular del margen de pliego en el canto superior. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09629901. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
+          front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
+          back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
+        },
+        title: {
+          es: '5.000 pesos · error mariposa · 2010 · 09629901',
+          en: '5,000 pesos · butterfly-cut error · 2010 · 09629901',
+        },
+        lead: {
+          es: 'Serial 09629901: mismo tipo, misma fecha y el mismo corte mariposa que el 09636101. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09629901: the same type, date and butterfly cut as 09636101. Unslabbed, apparently uncirculated.',
+        },
+        description: {
+          es: 'Serial 09629901, impreso dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—. El huecograbado y las tintas continúan sobre la solapa; en el reverso, las barras de color del margen de pliego. El corte coincide en mecánica con el 09636101 de esta misma ficha.',
+          en: 'Serial 09629901, printed twice on the face — in black at upper right and in red at left. Intaglio and the background tints continue onto the flap; on the reverse, the sheet-margin colour bars. The cut matches 09636101 on this same record in mechanics.',
+        },
+        frontCaption: {
+          es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09629901 y la solapa mariposa del canto superior.',
+          en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09629901, and the butterfly flap on the top edge.',
+        },
+        backCaption: {
+          es: 'Reverso del 5.000 pesos, Pick 452l, serial 09629901: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
+          en: 'Back of the 5,000 pesos, Pick 452l, serial 09629901: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
+        },
+        scarcity: {
+          es: '09629901 es un serial ordinario de la misma fecha y el mismo error que 09636101. La rareza del tipo y la producción BanRep de 2010 se documentan una sola vez en esta página.',
+          en: '09629901 is an ordinary serial of the same date and the same error as 09636101. Type scarcity and BanRep’s 2010 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09629901. La pieza se presenta sin encapsular, aparentemente sin circular.',
+          en: 'A PMG or PCGS census for serial 09629901 has not been independently verified. The note is shown unslabbed, apparently uncirculated.',
+        },
+        grade: {
+          es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
+          en: 'Unslabbed · apparently uncirculated · butterfly-cut error',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0452.htm',
+            es: 'Bank Note Museum — Colombia P-452, 5.000 pesos (2001–2014)',
+            en: 'Bank Note Museum — Colombia P-452, 5,000 pesos (2001–2014)',
+            note: {
+              es: 'Tipo Silva, Imprenta de Billetes; anverso Silva, reverso alameda y figura. Esta pieza es 31.07.2010 (452l). El catálogo marca 452m como 01.08.2010 y corrige un 01.09.2010 inexistente.',
+              en: 'Silva type, Imprenta de Billetes; Silva on the face, tree alley and figure on the back. This piece is 31.07.2010 (452l). The catalogue marks 452m as 01.08.2010 and corrects a non-existent 01.09.2010.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/208014',
+            es: 'Numista — Colombia 5.000 pesos (sello nuevo), N# 208014',
+            en: 'Numista — Colombia 5,000 pesos (new bank seal), N# 208014',
+            note: {
+              es: 'Fecha 31.07.2010: P# 452l, TBB B989m, Hernández# 570; firmas JDUE y GHC; Braille en la zona de la filigrana; frecuencia 5 % en el tipo. No se publican columnas de precio.',
+              en: '31.07.2010 date: P# 452l, TBB B989m, Hernández# 570; signatures JDUE and GHC; Braille in the watermark area; 5% frequency within the type. Price columns are not published here.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+              en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
+            },
+          },
+        ],
+      },
+      {
+        id: '5000-pesos-error-2010-09636101',
+        pick: 'P# 452l / TBB B989m',
+        serial: '09636101',
+        signatures: {
+          es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+          en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 09636101. Fecha impresa: 31 de julio de 2010. Ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Corte mariposa: solapa triangular del margen de pliego en el canto superior. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09636101. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg',
+          front: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
+          back: '/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg',
+        },
+        title: {
+          es: '5.000 pesos · error mariposa · 2010 · 09636101',
+          en: '5,000 pesos · butterfly-cut error · 2010 · 09636101',
+        },
+        lead: {
+          es: 'Serial 09636101: mismo tipo, misma fecha y el mismo corte mariposa que el 09629901. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09636101: the same type, date and butterfly cut as 09629901. Unslabbed, apparently uncirculated.',
+        },
+        description: {
+          es: 'Serial 09636101, impreso dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—. El huecograbado y las tintas continúan sobre la solapa; en el reverso, las barras de color del margen de pliego. El corte coincide en mecánica con el 09629901 de esta misma ficha.',
+          en: 'Serial 09636101, printed twice on the face — in black at upper right and in red at left. Intaglio and the background tints continue onto the flap; on the reverse, the sheet-margin colour bars. The cut matches 09629901 on this same record in mechanics.',
+        },
+        frontCaption: {
+          es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09636101 y la solapa mariposa del canto superior.',
+          en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09636101, and the butterfly flap on the top edge.',
+        },
+        backCaption: {
+          es: 'Reverso del 5.000 pesos, Pick 452l, serial 09636101: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
+          en: 'Back of the 5,000 pesos, Pick 452l, serial 09636101: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
+        },
+        scarcity: {
+          es: '09636101 es un serial ordinario de la misma fecha y el mismo error que 09629901. La rareza del tipo y la producción BanRep de 2010 se documentan una sola vez en esta página.',
+          en: '09636101 is an ordinary serial of the same date and the same error as 09629901. Type scarcity and BanRep’s 2010 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09636101. La pieza se presenta sin encapsular, aparentemente sin circular.',
+          en: 'A PMG or PCGS census for serial 09636101 has not been independently verified. The note is shown unslabbed, apparently uncirculated.',
+        },
+        grade: {
+          es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
+          en: 'Unslabbed · apparently uncirculated · butterfly-cut error',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0452.htm',
+            es: 'Bank Note Museum — Colombia P-452, 5.000 pesos (2001–2014)',
+            en: 'Bank Note Museum — Colombia P-452, 5,000 pesos (2001–2014)',
+            note: {
+              es: 'Tipo Silva, Imprenta de Billetes; anverso Silva, reverso alameda y figura. Esta pieza es 31.07.2010 (452l). El catálogo marca 452m como 01.08.2010 y corrige un 01.09.2010 inexistente.',
+              en: 'Silva type, Imprenta de Billetes; Silva on the face, tree alley and figure on the back. This piece is 31.07.2010 (452l). The catalogue marks 452m as 01.08.2010 and corrects a non-existent 01.09.2010.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/208014',
+            es: 'Numista — Colombia 5.000 pesos (sello nuevo), N# 208014',
+            en: 'Numista — Colombia 5,000 pesos (new bank seal), N# 208014',
+            note: {
+              es: 'Fecha 31.07.2010: P# 452l, TBB B989m, Hernández# 570; firmas JDUE y GHC; Braille en la zona de la filigrana; frecuencia 5 % en el tipo. No se publican columnas de precio.',
+              en: '31.07.2010 date: P# 452l, TBB B989m, Hernández# 570; signatures JDUE and GHC; Braille in the watermark area; 5% frequency within the type. Price columns are not published here.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+              en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
+            },
+          },
+        ],
       },
     ],
   },
