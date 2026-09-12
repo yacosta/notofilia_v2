@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import {
+  eraPath,
+  seriesCopy,
+  seriesPath,
+  seriesSources,
+  type ColombiaChapter,
+} from '../../data/colombia';
+import { notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+  chapter: ColombiaChapter;
+}
+
+const { locale, chapter } = Astro.props;
+const t = seriesCopy[locale];
+const pathname = eraPath(chapter.id, locale);
+const cards = seriesCardsForChapter(chapter.id);
+const hasHoldings = notesForChapter(chapter.id).length > 0;
+const title = t.eraMetaTitle(chapter.title[locale]);
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: chapter.title[locale],
+  description: chapter.lead[locale],
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.title, path: seriesPath(locale) },
+    { name: chapter.title[locale], path: pathname },
+  ],
+});
+---
+
+<Layout title={title} description={chapter.lead[locale]} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: seriesPath(locale), label: t.title },
+          { label: chapter.title[locale] },
+        ]}
+      />
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+        {chapter.years[locale]}
+      </p>
+      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {chapter.title[locale]}
+      </h1>
+      <p class="mb-6 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+      <p class="mb-10 mt-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+
+      {
+        hasHoldings ? (
+          <section aria-labelledby="era-holdings-heading">
+            <h2 id="era-holdings-heading" class="mb-6 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {t.eraHoldings}
+            </h2>
+            <ol class="mb-0 mt-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
+              {cards.map(({ note, piece }) => (
+                <li class="min-w-0">
+                  <a
+                    href={seriesCardHref(note, piece, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                  >
+                    <CatalogThumb
+                      src={piece.images.front}
+                      alt={piece.frontCaption[locale]}
+                      width={1440}
+                      height={960}
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    />
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {piece.title[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
+                    </p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ) : (
+          <p class="m-0 text-[17px]/7 text-muted">{t.eraEmpty}</p>
+        )
+      }
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={seriesPath(locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {t.eraBack}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
