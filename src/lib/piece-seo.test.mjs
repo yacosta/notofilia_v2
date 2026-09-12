@@ -34,6 +34,22 @@ describe('piece SEO titles and descriptions', () => {
     assert.doesNotMatch(title, /Pick/i);
   });
 
+  it('reads issuer from the kicker when the catalogue title is denomination · year', () => {
+    const parts = parsePieceTitleParts({
+      kind: 'note',
+      title: '2.000 pesos oro · 1983',
+      kicker: 'Colombia · Banco de la República · Espécimen TDLR',
+      country: 'Colombia',
+      locale: 'es',
+    });
+    assert.equal(parts.issuer, 'Banco de la República');
+    assert.equal(parts.year, '1983');
+    assert.equal(
+      pieceDocumentTitle(parts, 'es'),
+      'Billete de 2.000 pesos oro 1983 · Banco de la República (Colombia) | Notofilia',
+    );
+  });
+
   it('builds coin titles with Moneda / coin and keeps KM out of the title', () => {
     const es = piecePageMeta({
       kind: 'coin',
