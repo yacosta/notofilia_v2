@@ -24,11 +24,17 @@ function lastmodByPath(): Map<string, string> {
 
 export function collectSitemapPaths(): string[] {
   const paths = new Set<string>(extra);
-  for (const page of stubPages) paths.add(`/${page.path}/`);
-  for (const slug of dedicatedCatalogPaths) paths.add(`/${slug}/`);
+  for (const page of stubPages) {
+    if (page.path === 'buscar') continue;
+    paths.add(`/${page.path}/`);
+  }
+  for (const slug of dedicatedCatalogPaths) {
+    if (slug === 'buscar' || slug === 'search') continue;
+    paths.add(`/${slug}/`);
+  }
 
   const urls = [...paths].flatMap((path) => [localizePath(path, 'es'), localizePath(path, 'en')]);
-  return [...new Set(urls)];
+  return [...new Set(urls)].filter((path) => path !== '/buscar/' && path !== '/en/search/');
 }
 
 export const GET: APIRoute = () => {
