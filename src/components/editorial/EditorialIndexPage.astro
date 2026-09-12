@@ -3,13 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import CardImage from '../CardImage.astro';
 import NewWindowHint from '../NewWindowHint.astro';
-import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import {
   blogArticles,
   blogPath,
   editorialCopy,
-  newsArticles,
-  newsPath,
+  newsIndexPath,
+  newsPageCount,
+  paginateNews,
   type EditorialArticle,
 } from '../../data/editorial';
 
@@ -20,8 +21,10 @@ interface Props {
 
 const { locale, kind } = Astro.props;
 const t = editorialCopy[locale];
-const items: EditorialArticle[] = kind === 'blog' ? blogArticles : newsArticles;
-const pathname = kind === 'blog' ? blogPath(locale) : newsPath(locale);
+const page = 1;
+const pages = kind === 'news' ? newsPageCount() : 1;
+const items: EditorialArticle[] = kind === 'blog' ? blogArticles : paginateNews(page);
+const pathname = kind === 'blog' ? blogPath(locale) : newsIndexPath(locale, page);
 const title = kind === 'blog' ? t.blogTitle : t.newsTitle;
 const dek = kind === 'blog' ? t.blogDek : t.newsDek;
 const metaTitle = kind === 'blog' ? t.blogMetaTitle : t.newsMetaTitle;
@@ -41,6 +44,12 @@ const jsonLd = {
 <Layout title={metaTitle} description={metaDescription} locale={locale} pathname={pathname}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    {kind === 'news' && pages > 1 && page > 1 ? (
+      <link rel="prev" href={newsIndexPath(locale, page - 1)} />
+    ) : null}
+    {kind === 'news' && pages > 1 && page < pages ? (
+      <link rel="next" href={newsIndexPath(locale, page + 1)} />
+    ) : null}
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">

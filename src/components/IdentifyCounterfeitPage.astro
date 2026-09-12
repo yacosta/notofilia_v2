@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
+import { localizePath, type Locale } from '../lib/site';
+import { identifyCounterfeitCopy, identifyCounterfeitPath } from '../data/identify-counterfeit';
+import { identifyPath } from '../data/identify';
+import { glossaryTermHref } from '../data/glossary';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = identifyCounterfeitCopy[locale];
+const pathname = identifyCounterfeitPath(locale);
+const terms = [
+  { slug: 'filigrana', es: 'Filigrana', en: 'Watermark' },
+  { slug: 'hilo-de-seguridad', es: 'Hilo de seguridad', en: 'Security thread' },
+  { slug: 'intaglio', es: 'Intaglio', en: 'Intaglio' },
+  { slug: 'tinta-ovi', es: 'Tinta OVI', en: 'OVI ink' },
+  { slug: 'pmg-pcgs', es: 'PMG y PCGS', en: 'PMG and PCGS' },
+];
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: identifyPath(locale), label: t.identifyNav },
+          { label: t.nav },
+        ]}
+      />
+      <header class="mb-10 max-w-[46rem]">
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
+      </header>
+      <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{t.intro}</p>
+
+      <section class="mb-12" aria-labelledby="counterfeit-steps">
+        <h2 id="counterfeit-steps" class="mb-5 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.stepsTitle}
+        </h2>
+        <ol class="m-0 grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
+          {
+            t.steps.map((step, index) => (
+              <li class="rounded-[6px] border border-line-strong bg-panel p-5">
+                <p class="m-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">{index + 1}</p>
+                <h3 class="mb-2 mt-2 font-display text-[1.15rem] font-normal text-cream">{step.title}</h3>
+                <p class="m-0 text-[15px]/6 text-cream-dim">{step.body}</p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{t.toolLead}</p>
+      <p class="mb-8 mt-0 flex flex-wrap gap-x-6 gap-y-3 font-sans text-[16px]">
+        <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={identifyPath(locale)}>
+          {t.toolCta}
+        </a>
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath('/blog/como-identificar-billetes-falsos/', locale)}
+        >
+          {t.blogCta}
+        </a>
+      </p>
+
+      <p class="mb-3 mt-0 font-sans text-[14px] text-muted">{t.glossaryLead}</p>
+      <ul class="mb-12 mt-0 flex list-none flex-wrap gap-x-4 gap-y-2 p-0 font-sans text-[15px]">
+        {
+          terms.map((term) => (
+            <li>
+              <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={glossaryTermHref(term.slug, locale)}>
+                {term[locale]}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <section class="max-w-[46rem]" aria-labelledby="counterfeit-limits">
+        <h2 id="counterfeit-limits" class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.sourcesTitle}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{t.sources}</p>
+      </section>
+    </article>
+  </main>
+</Layout>
