@@ -149,8 +149,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Colombian banknotes does Notofilia document?',
       },
       answer: {
-        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, el Banco de la República, tiquetes de transporte y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
-        en: 'The case covers independence issues, free banking, the Banco Nacional, the Banco de la República, transport tickets, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
+        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, Junta de Conversión, el Banco de la República, tiquetes de transporte y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
+        en: 'The case covers independence issues, free banking, the Banco Nacional, the Conversion Board, the Banco de la República, transport tickets, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
       },
     },
     {
