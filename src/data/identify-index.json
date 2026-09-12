@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-11T02:08:59.464Z",
+  "generatedAt": "2026-09-12T16:54:50.802Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2302,6 +2302,45 @@
       "title": {
         "es": "2 dólares · Serie 2003 · San Luis ★",
         "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "front",
+      "hash": "6d254d4c4d95ab6c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-composite.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "front",
+      "hash": "006d356d75ad2a00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-front.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "back",
+      "hash": "0025614d552b5500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-back.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
       }
     },
     {
