@@ -68,6 +68,10 @@ describe('US Series 1917 United States Note $2 Fr. 60', () => {
     assert.match(faq, /¿Qué es el 2 dólares United States Note de 1917\?/);
     assert.match(faq, /What is the Series 1917 United States Note \$2\?/);
     assert.match(faq, /serial B50400302A/);
-    assert.match(faq, /H00010418★/);
+    assert.doesNotMatch(faq, /H00010418★/);
+    assert.doesNotMatch(note, /No es el 2 dólares Federal Reserve Note de 2003/);
+    assert.doesNotMatch(note, /No es el 2 dólares de 2003 de San Luis/);
+    assert.doesNotMatch(note, /It is not the Series 2003 St\. Louis Federal Reserve Note \$2/);
+    assert.doesNotMatch(note, /It is not this case’s Series 2003 St\. Louis \$2/);
   });
 });
