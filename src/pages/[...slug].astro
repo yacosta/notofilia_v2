@@ -8,6 +8,7 @@ import {
   news,
   stubPages,
 } from '../lib/site';
+import { hrefToContentSlug } from '../lib/locale-paths';
 
 export function getStaticPaths() {
   const titles = new Map<string, { es: string; en: string }>();
@@ -16,10 +17,10 @@ export function getStaticPaths() {
     titles.set(page.path, { es: page.es, en: page.en });
   }
   for (const item of collections) {
-    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es.title, en: item.en.title });
+    titles.set(hrefToContentSlug(item.href), { es: item.es.title, en: item.en.title });
   }
   for (const item of milestones) {
-    titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es.title, en: item.en.title });
+    titles.set(hrefToContentSlug(item.href), { es: item.es.title, en: item.en.title });
   }
   for (const item of articles) {
     titles.set(item.href.replace(/^\/|\/$/g, ''), { es: item.es, en: item.en });

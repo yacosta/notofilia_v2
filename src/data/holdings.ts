@@ -155,6 +155,7 @@ export const additions: Holding[] = [
   { id: 'co-1993-5000-pesos-oro-82210365', kind: 'banknote', country: 'CO' },
   { id: 'co-2010-5000-pesos-error-09636101', kind: 'banknote', country: 'CO' },
   { id: 'us-usn-1917-2-b50400302a', kind: 'banknote', country: 'US' },
+  { id: 'co-2010-5000-pesos-error-09629901', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */

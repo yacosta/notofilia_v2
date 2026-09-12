@@ -545,6 +545,11 @@ export function addLocalePair(_esPath: string, _enPath: string) {
   // Prefix pairs above already cover USA, About, MPC notes, and Netherlands coinage.
 }
 
+/** Path without hash, used when a catalog href (ficha#piece) becomes a stub slug. */
+export function hrefToContentSlug(href: string): string {
+  return href.split('#')[0].replace(/^\/|\/$/g, '');
+}
+
 export function englishContentSlug(esSlug: string): string {
   return localizePath(`/${esSlug.replace(/^\/|\/$/g, '')}/`, 'en')
     .replace(/^\/en\/?/, '')
