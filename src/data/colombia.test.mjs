@@ -40,5 +40,17 @@ describe('Colombia series overview', () => {
     assert.match(modern.body.es, /Ley 1741 de 2014/);
     assert.match(modern.body.en, /Law 1599 of 2012/);
     assert.match(modern.body.en, /Law 1741 of 2014/);
+    assert.match(modern.body.es, /fechas sin circular/);
+    assert.doesNotMatch(modern.body.es, /fechas inmaculadas/);
+    assert.match(modern.body.es, /Esa familia deja de retratar/);
+    assert.match(modern.body.en, /That family moves beyond/);
+    assert.match(modern.body.es, /serial fancy AA40000066/);
+    assert.match(modern.body.es, /serial AF51355141/);
+    assert.match(modern.body.en, /fancy serial AA40000066/);
+    assert.match(modern.body.en, /serial AF51355141/);
+    assert.match(seriesCopy.es.intro.join(' '), /dos tiquetes estudiantiles/);
+    assert.match(seriesCopy.en.intro.join(' '), /two 15-centavos student-transport tickets/);
+    assert.match(seriesCopy.es.intro.join(' '), /serial fancy AA40000066/);
+    assert.match(seriesCopy.en.intro.join(' '), /fancy serial AA40000066/);
   });
 });
