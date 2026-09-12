@@ -263,8 +263,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is Victory Series No. 66?',
       },
       answer: {
-        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte. El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
-        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official issue ran to eight denominations, from 1 to 500 pesos (Pick 94–101).',
+        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte, para reemplazar el papel de ocupación japonesa conocido como dinero «Mickey Mouse». El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
+        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte, to replace Japanese occupation paper known as “Mickey Mouse” money. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official issue ran to eight denominations, from 1 to 500 pesos (Pick 94–101).',
       },
     },
     {
@@ -273,8 +273,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Victory Series denominations are missing from this case?',
       },
       answer: {
-        es: 'El 10 pesos (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101). No son huecos de ficha: esta colección no tiene esos ejemplares. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
-        en: 'The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101). Those are not missing catalogue pages: this collection does not hold those notes. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
+        es: 'Ocho certificados del Tesoro, Pick 94 a 101: 1, 2, 5, 10, 20, 50, 100 y 500 pesos. Notofilia exhibe 1, 2, 5 y 20. El 10 (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101) no tienen ejemplar aquí. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
+        en: 'Eight Treasury Certificates, Pick 94 to 101: 1, 2, 5, 10, 20, 50, 100, and 500 pesos. Notofilia shows the 1, 2, 5, and 20. The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101) have no example here. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
       },
     },
     {
@@ -283,8 +283,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What signature combinations does Victory Series No. 66 have?',
       },
       answer: {
-        es: 'Tres pares principales: Osmeña–Hernandez (presidente y auditor general), el más frecuente y el de las cuatro piezas de esta vitrina; Osmeña–Guevara (presidente y tesorero), documentado sobre todo en 100 y 500 pesos; y Roxas–Guevara, tras 1946, en denominaciones seleccionadas —entre ellas el 2 y el 20 pesos, más escasos que Osmeña–Hernandez—.',
-        en: 'Three main pairings: Osmeña–Hernandez (President and Auditor General), the most frequent and the one on all four notes here; Osmeña–Guevara (President and Treasurer), recorded mainly on the 100- and 500-peso notes; and Roxas–Guevara, after 1946, on selected denominations — including the scarcer 2- and 20-peso varieties.',
+        es: 'Tres pares: Osmeña–Hernandez (presidente y auditor general), el más frecuente salvo en el 500 pesos y el de las cuatro piezas de esta vitrina; Osmeña–Guevara (presidente y tesorero), documentado sobre todo en 100 y 500 pesos; y Roxas–Guevara, tras 1946, que no se registra en 1, 5 ni 10 pesos —sí en el 2 y el 20 (P#95b, P#98b) y en los valores altos—.',
+        en: 'Three pairings: Osmeña–Hernandez (President and Auditor General), the most frequent except on the 500-peso and the one on all four notes here; Osmeña–Guevara (President and Treasurer), recorded mainly on the 100- and 500-peso notes; and Roxas–Guevara, after 1946, which is not recorded on the 1-, 5-, or 10-peso — it does appear on the 2 and 20 (P#95b, P#98b) and on the high values.',
       },
     },
     {

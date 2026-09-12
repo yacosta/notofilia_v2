@@ -11,13 +11,19 @@ const pageSource = readFileSync(
 describe('Philippines Victory Series No. 66 overview', () => {
   it('keeps only the four documented holdings', () => {
     assert.match(dataSource, /export type VictoryNoteId = '1-peso' \| '2-pesos' \| '5-pesos' \| '20-pesos'/);
-    assert.equal([...dataSource.matchAll(/id: '1-peso'|'2-pesos'|'5-pesos'|'20-pesos'/g)].length >= 4, true);
+    assert.match(dataSource, /serial: 'F70618009'/);
+    assert.match(dataSource, /serial: 'F13317943'/);
+    assert.match(dataSource, /serial: 'F00618071'/);
+    assert.match(dataSource, /serial: 'F04661756'/);
     assert.doesNotMatch(dataSource, /id: '10-pesos'|id: '50-pesos'|id: '100-pesos'|id: '500-pesos'/);
     assert.match(dataSource, /no se catalogan como piezas/);
     assert.match(dataSource, /not catalogued as holdings/);
+    assert.match(dataSource, /10, el 50, el 100 y el 500/);
+    assert.match(dataSource, /10-, 50-, 100-, and 500-peso/);
   });
 
   it('names the missing official denominations and portraits', () => {
+    assert.match(dataSource, /Pick 94–101/);
     assert.match(dataSource, /10 pesos · P#97/);
     assert.match(dataSource, /George Washington/);
     assert.match(dataSource, /50 pesos · P#99/);
@@ -44,6 +50,12 @@ describe('Philippines Victory Series No. 66 overview', () => {
     assert.match(dataSource, /Mickey Mouse/);
     assert.match(dataSource, /ocupación militar japonesa/);
     assert.match(dataSource, /Japanese occupation currency/);
+  });
+
+  it('cites the demonetization acts and occupation-paper source', () => {
+    assert.match(dataSource, /https:\/\/lawphil\.net\/statutes\/repacts\/ra1954\/ra_1191_1954\.html/);
+    assert.match(dataSource, /https:\/\/lawphil\.net\/statutes\/repacts\/ra1956\/ra_1516_1956\.html/);
+    assert.match(dataSource, /https:\/\/en\.wikipedia\.org\/wiki\/Japanese_government-issued_Philippine_peso/);
   });
 
   it('renders the type-level scope block on the series page', () => {
