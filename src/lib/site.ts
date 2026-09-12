@@ -183,8 +183,8 @@ export const collections = [
   },
   {
     href: USA_PATH,
-    es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
-    en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
+    es: { title: 'Estados Unidos', description: 'Federal, colonial, nacionales, fraccionarios, MPC, obsoletos y pop art.' },
+    en: { title: 'United States', description: 'Federal, colonial, nationals, fractionals, MPC, obsolete notes, and pop art.' },
   },
   {
     href: '/coleccion/espana/',
