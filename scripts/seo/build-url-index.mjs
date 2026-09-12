@@ -106,6 +106,7 @@ async function fromSrcPages() {
   const blog = JSON.parse(readFileSync(join(root, 'src/data/blog-articles.json'), 'utf8'));
   const news = JSON.parse(readFileSync(join(root, 'src/data/news-articles.json'), 'utf8'));
   const { otherLocalePath } = await import(pathToFileURL(join(root, 'src/lib/locale-paths.ts')).href);
+  const { colombiaChapters, eraPath } = await import(pathToFileURL(join(root, 'src/data/colombia.ts')).href);
   for (const article of blog) {
     const es = article.href.endsWith('/') ? article.href : `${article.href}/`;
     paths.push(es, otherLocalePath(es, 'es'));
@@ -114,6 +115,10 @@ async function fromSrcPages() {
     const es = article.href.endsWith('/') ? article.href : `${article.href}/`;
     paths.push(es, otherLocalePath(es, 'es'));
   }
+  for (const chapter of colombiaChapters) {
+    paths.push(eraPath(chapter.id, 'es'), eraPath(chapter.id, 'en'));
+  }
+  paths.push('/identificar/billetes-falsos/', '/en/identify/counterfeit-notes/', '/editorial/', '/en/editorial/');
   return [...new Set(paths)].map((path) => {
     const lang = languageOf(path);
     return {
@@ -128,7 +133,103 @@ async function fromSrcPages() {
   });
 }
 
-const rows = existsSync(join(dist, 'index.html')) ? await fromDist() : await fromSrcPages();
+function upsertRow(rows, byNorm, path, fields) {
+  const key = normalizePath(path);
+  const existing = byNorm.get(key);
+  const row = {
+    path,
+    lang: languageOf(path),
+    type: fields.type ?? existing?.type ?? classifyType(path),
+    lastSlug: lastSlug(path),
+    title: fields.title ?? existing?.title ?? lastSlug(path),
+    alternate: fields.alternate ?? existing?.alternate ?? '',
+    redirectTo: Object.hasOwn(fields, 'redirectTo') ? fields.redirectTo : (existing?.redirectTo ?? ''),
+  };
+  if (existing) {
+    Object.assign(existing, row);
+    return existing;
+  }
+  rows.push(row);
+  byNorm.set(key, row);
+  return row;
+}
+
+async function applyEnglishContentSlugs(rows) {
+  const { glossaryTerms, isStandaloneGlossaryTerm, glossaryTermPath, glossaryFoldedRedirectTarget } =
+    await import(pathToFileURL(join(root, 'src/data/glossary.ts')).href);
+  const news = JSON.parse(readFileSync(join(root, 'src/data/news-articles.json'), 'utf8'));
+  const { colombiaChapters, eraPath } = await import(pathToFileURL(join(root, 'src/data/colombia.ts')).href);
+
+  const byNorm = new Map(rows.map((row) => [normalizePath(row.path), row]));
+  const live = (path, fields = {}) => upsertRow(rows, byNorm, path, { ...fields, redirectTo: '' });
+  const stub = (from, to) => {
+    if (from === to) return;
+    upsertRow(rows, byNorm, from, { redirectTo: to, title: `Redirecting to: ${to}` });
+  };
+
+  for (const term of glossaryTerms) {
+    const esPage = glossaryTermPath(term.slug, 'es');
+    const enPage = glossaryTermPath(term.slug, 'en');
+    if (isStandaloneGlossaryTerm(term.slug)) {
+      live(esPage, { title: term.title.es, alternate: enPage, type: 'glossary' });
+      live(enPage, { title: term.title.en, alternate: esPage, type: 'glossary' });
+      if (term.slug !== term.slugEn) stub(`/en/glossary/${term.slug}/`, enPage);
+      continue;
+    }
+    stub(`/glosario/${term.slug}/`, glossaryFoldedRedirectTarget(term.slug, 'es'));
+    stub(`/en/glossary/${term.slug}/`, glossaryFoldedRedirectTarget(term.slug, 'en'));
+    if (term.slug !== term.slugEn) {
+      stub(`/en/glossary/${term.slugEn}/`, glossaryFoldedRedirectTarget(term.slug, 'en'));
+    }
+  }
+
+  for (const article of news) {
+    const es = `/noticias/${article.slug}/`;
+    const en = `/en/news/${article.slugEn}/`;
+    live(es, { type: 'news', alternate: en, title: article.title?.es ?? article.slug });
+    live(en, { type: 'news', alternate: es, title: article.title?.en ?? article.slugEn });
+    if (article.slug !== article.slugEn) stub(`/en/news/${article.slug}/`, en);
+  }
+
+  for (const chapter of colombiaChapters) {
+    const es = eraPath(chapter.id, 'es');
+    const en = eraPath(chapter.id, 'en');
+    live(es, { type: 'hub', alternate: en, title: chapter.title.es });
+    live(en, { type: 'hub', alternate: es, title: chapter.title.en });
+  }
+
+  const extras = [
+    ['/identificar/billetes-falsos/', '/en/identify/counterfeit-notes/', 'Cómo identificar un billete falso', 'How to identify a counterfeit note'],
+    ['/editorial/', '/en/editorial/', 'Política editorial', 'Editorial policy'],
+    [
+      '/blog/como-se-valora-un-billete-colombiano/',
+      '/en/blog/how-colombian-banknotes-are-valued/',
+      'Cómo se valora un billete colombiano',
+      'How Colombian banknotes are valued',
+    ],
+  ];
+  for (const [es, en, titleEs, titleEn] of extras) {
+    live(es, { alternate: en, title: titleEs });
+    live(en, { alternate: es, title: titleEn });
+  }
+
+  return rows;
+}
+
+async function loadRows() {
+  if (existsSync(join(dist, 'index.html'))) {
+    return { rows: await fromDist(), source: 'dist' };
+  }
+  if (existsSync(outFile)) {
+    const existing = JSON.parse(readFileSync(outFile, 'utf8'));
+    const urls = existing.urls ?? [];
+    if (urls.length > 0) return { rows: urls, source: existing.generatedFrom === 'dist' ? 'v2-urls.json' : 'src/pages' };
+  }
+  return { rows: await fromSrcPages(), source: 'src/pages' };
+}
+
+const { rows, source } = await loadRows();
+await applyEnglishContentSlugs(rows);
 const seen = new Set();
 const unique = [];
 for (const row of rows) {
@@ -142,6 +243,6 @@ unique.sort((a, b) => a.path.localeCompare(b.path));
 mkdirSync(outDir, { recursive: true });
 writeFileSync(
   outFile,
-  `${JSON.stringify({ generatedFrom: existsSync(join(dist, 'index.html')) ? 'dist' : 'src/pages', count: unique.length, urls: unique }, null, 2)}\n`,
+  `${JSON.stringify({ generatedFrom: source, count: unique.length, urls: unique }, null, 2)}\n`,
 );
-console.log(`Wrote ${unique.length} URLs to ${relative(root, outFile)} (${existsSync(join(dist, 'index.html')) ? 'dist' : 'src/pages fallback'})`);
+console.log(`Wrote ${unique.length} URLs to ${relative(root, outFile)} (${source})`);
