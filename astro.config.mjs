@@ -2,13 +2,12 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import { newsArticles } from './src/data/editorial.ts';
-import { glossaryTerms } from './src/data/glossary.ts';
+import { glossaryRedirects } from './src/data/glossary.ts';
 import { englishRedirects } from './src/lib/locale-paths.ts';
 
 const generated = englishRedirects();
-for (const term of glossaryTerms) {
-  generated[`/en/glosario/${term.slug}/`] = `/en/glossary/${term.slug}/`;
-}
+// Folded glossary URLs 301 to `?term=` because CDN Location headers drop hash fragments.
+Object.assign(generated, glossaryRedirects());
 for (const article of newsArticles) {
   generated[`/en/noticias/${article.slug}/`] = `/en/news/${article.slug}/`;
 }

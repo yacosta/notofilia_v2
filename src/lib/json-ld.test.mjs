@@ -53,6 +53,8 @@ describe('glossary and FAQ JSON-LD', () => {
       locale: 'es',
     });
     assert.equal(term['@type'], 'DefinedTerm');
+    assert.equal(term['@id'], 'https://notofilia.com/glosario/notafilia/#term');
+    assert.equal(term.url, 'https://notofilia.com/glosario/notafilia/');
     assert.equal(term.inDefinedTermSet, 'https://notofilia.com/glosario/#glossary');
   });
 

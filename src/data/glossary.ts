@@ -22,6 +22,57 @@ export type GlossaryTerm = {
   seeAlso: string[];
 };
 
+/**
+ * Keep list: standalone glossary URLs (25–40). Chosen for collector/search
+ * demand, existing copy depth, and collection examples that can illustrate
+ * the term. All other terms fold into `/glosario/#<slug>` (EN: `/en/glossary/#<slug>`).
+ * Old folded URLs 301 to `?term=<slug>` because CDN hash fragments are not reliable.
+ */
+export const STANDALONE_GLOSSARY_SLUGS = [
+  'anverso',
+  'banca-libre',
+  'billete-de-reemplazo-estrella',
+  'billete-provisional',
+  'columnario-de-dos-mundos',
+  'dispositivo-opticamente-variable-ovd',
+  'encapsulado',
+  'error-de-impresion',
+  'exonumia',
+  'filigrana',
+  'foxing',
+  'guardian',
+  'hilo-de-seguridad',
+  'intaglio',
+  'mariposa',
+  'mpc',
+  'ngc',
+  'notafilia',
+  'numeracion',
+  'numeracion-especial',
+  'numismatica',
+  'peso-oro',
+  'pick',
+  'pmg-pcgs',
+  'polimero',
+  'prueba-ensayo',
+  'remainder',
+  'resello',
+  'reverso',
+  'scrip',
+  'specimen',
+  'tinta-ovi',
+  'uniface',
+  'ventana-transparente',
+] as const;
+
+export type StandaloneGlossarySlug = (typeof STANDALONE_GLOSSARY_SLUGS)[number];
+
+const standaloneSlugSet = new Set<string>(STANDALONE_GLOSSARY_SLUGS);
+
+export function isStandaloneGlossaryTerm(slug: string): boolean {
+  return standaloneSlugSet.has(slug);
+}
+
 export const glossaryCategories: { id: GlossaryCategoryId; es: string; en: string }[] = [
   { id: "Conservación", es: "Conservación", en: "Conservation" },
   { id: "Coleccionismo", es: "Coleccionismo", en: "Collecting" },
@@ -974,7 +1025,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "remainder",
     category: "Coleccionismo",
     title: { es: "Remainder (billete sin firmar)", en: "Remainder" },
-    definition: { es: "Ejemplar impreso que nunca se puso en circulación: suele faltarle una o ambas firmas manuscritas, el año de la fecha o el número de serie. Es distinto del espécimen —marcado SPECIMEN y a menudo perforado— y de la prueba o ensayo —un test de plancha, color o registro—. El remainder es papel sobrante de una plancha, un banco o una emisión ya cerrados: el banco quebró, se fusionó o el impuesto del 10 % sobre el papel estatal apagó la emisión, y las hojas firmadas a medias quedaron en tesorería o en el archivo del grabador. En la notafilia estadounidense de bancos obsoletos (Haxby) es el estado más frecuente en el mercado: fecha impresa 18__, recuadro No. en blanco o con un serial de stock, una sola firma o ninguna. En esta colección hay remainders del State Bank at New Brunswick (1 dólar, serial 9890), del City Bank of New Haven (5 dólares, plancha A, sin serial) y del Canal Bank de Nueva Orleans (50 dólares, reverso rojo). No confunda remainder con resello, ni con un billete cancelado: el remainder jamás circuló; el resello revalida papel que sí salió a la calle.", en: "A printed note that never entered circulation: it is typically missing one or both manuscript signatures, the completed year of the date, or the serial number. It is distinct from a specimen — usually marked SPECIMEN and often perforated — and from a proof or essay — a plate, color, or register test. A remainder is leftover paper from a plate, bank, or issue that had already closed: the bank failed or merged, or the 10 percent tax on state-bank paper ended private issues, and half-signed sheets stayed in the treasury or the engraver’s archive. On United States obsolete notes (Haxby) it is the state most often seen in the market: a printed 18__ date, a blank No. box or a stock serial, and one signature or none. This collection includes remainders of the State Bank at New Brunswick ($1, serial 9890), the City Bank of New Haven ($5, plate A, no serial), and the Canal Bank of New Orleans ($50, red back). Do not confuse a remainder with a countermark or a cancelled note: a remainder never circulated; a countermark revalidates paper that did." },
+    definition: { es: "Ejemplar impreso que nunca circuló: suele faltarle una o ambas firmas manuscritas, el año completo de la fecha o el número de serie. Distinto del espécimen y de la prueba; en bancos obsoletos estadounidenses (Haxby) es el estado más frecuente.", en: "A printed note that never circulated: it is typically missing one or both manuscript signatures, the completed year, or the serial. Distinct from a specimen and from a proof; on United States obsolete notes (Haxby) it is the state most often seen." },
     seeAlso: ["billete-de-banco-obsoleto", "specimen", "prueba-ensayo", "haxby"],
   },
   {
@@ -1221,13 +1272,57 @@ export function glossaryPath(locale: Locale): string {
   return localizePath(GLOSSARY_PATH, locale);
 }
 
+/** Always the standalone-style URL (`/glosario/<slug>/`), including folded slugs (redirect sources). */
 export function glossaryTermPath(slug: string, locale: Locale): string {
   return `${glossaryPath(locale)}${slug}/`;
 }
 
+/** Public href: standalone page, or index hash for folded terms. */
+export function glossaryTermHref(slug: string, locale: Locale): string {
+  const term = glossaryTermBySlug(slug);
+  const id = term?.id ?? slug;
+  if (isStandaloneGlossaryTerm(slug)) return glossaryTermPath(slug, locale);
+  return `${glossaryPath(locale)}#${id}`;
+}
+
+/** 301 target for a retired term URL. Query, not hash: CDN Location headers drop fragments. */
+export function glossaryFoldedRedirectTarget(slug: string, locale: Locale): string {
+  if (isStandaloneGlossaryTerm(slug)) return glossaryTermPath(slug, locale);
+  return `${glossaryPath(locale)}?term=${encodeURIComponent(slug)}`;
+}
+
+/**
+ * Astro `redirects` map. Hash fragments are stripped from `Location` headers,
+ * so folded URLs land on `?term=<slug>`; the index then scrolls to `#<slug>`.
+ */
+export function glossaryRedirects(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const term of glossaryTerms) {
+    if (isStandaloneGlossaryTerm(term.slug)) {
+      out[`/en/glosario/${term.slug}/`] = glossaryTermPath(term.slug, 'en');
+      continue;
+    }
+    const esTarget = glossaryFoldedRedirectTarget(term.slug, 'es');
+    const enTarget = glossaryFoldedRedirectTarget(term.slug, 'en');
+    out[`/glosario/${term.slug}/`] = esTarget;
+    out[`/en/glossary/${term.slug}/`] = enTarget;
+    out[`/en/glosario/${term.slug}/`] = enTarget;
+  }
+  return out;
+}
+
+export function standaloneGlossaryTerms(): GlossaryTerm[] {
+  return glossaryTerms.filter((term) => isStandaloneGlossaryTerm(term.slug));
+}
+
+export function foldedGlossaryTerms(): GlossaryTerm[] {
+  return glossaryTerms.filter((term) => !isStandaloneGlossaryTerm(term.slug));
+}
+
 export function glossaryTermsForLocale(locale: Locale): GlossaryTerm[] {
-  if (locale !== 'en') return glossaryTerms;
-  return [...glossaryTerms].sort((a, b) => a.title.en.localeCompare(b.title.en, 'en'));
+  return [...glossaryTerms].sort((a, b) =>
+    a.title[locale].localeCompare(b.title[locale], locale, { sensitivity: 'base' }),
+  );
 }
 
 function fold(value: string): string {
@@ -1247,7 +1342,7 @@ export const glossaryCopy = {
       `Glosario bilingüe de ${glossaryTerms.length} términos de numismática y notafilia: monedas, billetes, diseño, producción y coleccionismo.`,
     kicker: 'Recurso para coleccionistas',
     title: 'Glosario de Numismática y Notafilia',
-    lead: `${glossaryTerms.length} términos de monedas y billetes: diseño, producción, emisión, conservación y coleccionismo, que aparecen a lo largo del catálogo de Notofilia, con su equivalente en inglés y una breve definición.`,
+    lead: `${glossaryTerms.length} términos de monedas y billetes: diseño, producción, emisión, conservación y coleccionismo. ${STANDALONE_GLOSSARY_SLUGS.length} artículos tienen página propia; el resto está anclado en esta lista.`,
     searchLabel: 'Buscar en el glosario',
     searchPlaceholder: 'Ej. foxing, OVI, capicúa…',
     clearSearch: 'Borrar búsqueda',
@@ -1259,6 +1354,9 @@ export const glossaryCopy = {
     reset: 'Ver todo el glosario',
     footnote: 'Términos marcados como sugeridos complementan el vocabulario ya usado en el catálogo con vocablos estándar del coleccionismo internacional.',
     back: '← Volver al glosario',
+    examplesHeading: 'Ejemplos en la colección',
+    readArticle: 'Leer el artículo',
+    letterNav: 'Índice alfabético',
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     glossary: 'Glosario',
@@ -1270,7 +1368,7 @@ export const glossaryCopy = {
       `Bilingual glossary of ${glossaryTerms.length} numismatics and notaphily terms: coins, banknotes, design, production, and collecting.`,
     kicker: 'A resource for collectors',
     title: 'Glossary of Numismatics and Notaphily',
-    lead: `${glossaryTerms.length} coin and banknote terms: design, production, issuing, conservation, and collecting. They appear throughout the Notofilia catalog, with the Spanish equivalent and a short definition.`,
+    lead: `${glossaryTerms.length} coin and banknote terms: design, production, issuing, conservation, and collecting. ${STANDALONE_GLOSSARY_SLUGS.length} articles have their own page; the rest are anchored in this list.`,
     searchLabel: 'Search the glossary',
     searchPlaceholder: 'E.g. foxing, OVI, ladder…',
     clearSearch: 'Clear search',
@@ -1282,6 +1380,9 @@ export const glossaryCopy = {
     reset: 'See the full glossary',
     footnote: 'Terms marked as suggested complement the vocabulary already used in the catalog with standard words from international collecting.',
     back: '← Back to the glossary',
+    examplesHeading: 'Examples in the collection',
+    readArticle: 'Read the article',
+    letterNav: 'Alphabetical index',
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     glossary: 'Glossary',
@@ -1289,5 +1390,5 @@ export const glossaryCopy = {
   },
 } as const;
 
-export const glossaryTermSlugs = glossaryTerms.map((term) => `glosario/${term.slug}`);
+export const glossaryTermSlugs = STANDALONE_GLOSSARY_SLUGS.map((slug) => `glosario/${slug}`);
 
