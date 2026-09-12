@@ -14,6 +14,15 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://en.wikipedia.org/wiki/Currencies_of_Puerto_Rico',
+    es: 'Wikipedia — Monedas y papel de Puerto Rico',
+    en: 'Wikipedia — Currencies of Puerto Rico',
+    note: {
+      es: 'Banco Español (1888–1890), Banco de Puerto Rico, First National Bank of Porto Rico y la recogida de 1916–1925.',
+      en: 'Banco Español (1888–1890), Bank of Porto Rico, the First National Bank of Porto Rico, and the 1916–1925 withdrawal.',
+    },
+  },
+  {
     href: 'http://www.banknote.ws/COLLECTION/countries/AME/PRI/PRI.htm',
     es: 'Bank Note Museum — Puerto Rico (Tesorería Nacional, Ministerio de Ultramar y bancos)',
     en: 'Bank Note Museum — Puerto Rico (National Treasury, Overseas Ministry, and banks)',
@@ -60,7 +69,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Emisiones coloniales y de transición | Notofilia',
     metaDescription:
-      'Vitrina de papel moneda puertorriqueño del siglo XIX: billete de 1 peso de la Junta Central de 1869, recibo provisional y Billete de Canje de 1895.',
+      'Vitrina de papel puertorriqueño del XIX: Junta Central de 1869, Billete de Canje de 1895 y el paso del Banco Español al dólar.',
     kicker: 'Puerto Rico · Siglo XIX',
     title: 'Emisiones coloniales y de transición',
     heroAlt:
@@ -68,7 +77,11 @@ export const seriesCopy = {
     intro: [
       'Puerto Rico fue, en 1766, la primera provincia de ultramar española que imprimió papeletas de 8 reales. Durante siglos el situado mexicano sostuvo las arcas de la isla; cuando las independencias americanas cortaron ese subsidio, el gobernador Salvador Meléndez Bruna autorizó, el 31 de agosto de 1812, una moneda provincial de papel. En 1813 la emisión de papeletas llegó a 500.000 pesos. El intendente Alejandro Ramírez, llegado el 11 de febrero de 1813, las amortizó hacia 1816.',
       'El descrédito de aquel papel detuvo nuevas emisiones durante décadas. El papel volvió con la Guerra de los Diez Años. Desde Nueva York, la Junta Central Republicana de Cuba y Puerto Rico —presidida por José Morales Lemus, con el secretario puertorriqueño Dr. José Francisco Basora— sirvió como apoyo gubernamental en el exilio: recaudar fondos, administrar las finanzas exteriores de la República de Cuba en Armas y enlazar la política anticolonial cubana y puertorriqueña entre donantes, imprentas y comunidades de exiliados. El 1 de junio de 1869 la República autorizó un empréstito de veinte millones de pesos; semanas después, Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses.',
-      'A finales de siglo la isla seguía sin moneda propia: macuquinas desgastadas, pesos mexicanos, dólares Morgan y otras piezas de plata extranjera —muchas contramarcadas con flor de lis desde 1884— saturaban el comercio. El Real Decreto del 17 de agosto de 1895 creó el Billete de Canje de 1 peso (Pick 7): instrumento efímero, equivalente a 25 g de plata .900, para recoger esa plata y acuñar en Madrid la moneda provincial. Tres años después del decreto, el Tratado de París cerró el capítulo colonial español.',
+      'A finales de siglo la isla seguía sin moneda propia: macuquinas desgastadas, pesos mexicanos, dólares Morgan y otras piezas de plata extranjera —muchas contramarcadas con flor de lis desde 1884— saturaban el comercio. La escasez de moneda oficial y fraccionaria empujó a haciendas azucareras y cafetaleras, a comerciantes y a algunos municipios a emitir su propio papel —vales o billetes rústicos— y, a menudo, fichas de latón. Ese scrip privado pagaba jornales y sostenía el trato diario mientras el circulante de la metrópoli no alcanzaba.',
+      'En esa misma crisis de circulante, el hito bancario de la isla fue el Banco Español de Puerto Rico. Autorizado por real decreto el 5 de mayo de 1888 e inaugurado el 1 de febrero de 1890, fue la única institución con monopolio de emisión de billetes. La American Bank Note Company de Nueva York imprimió las series de 5, 10, 20, 50, 100 y 200 pesos (Pick 8–31). El peso suelto de Ultramar —el Billete de Canje— no forma parte de esas series.',
+      'El Real Decreto del 17 de agosto de 1895 creó el Billete de Canje de 1 peso (Pick 7): instrumento efímero, equivalente a 25 g de plata .900, para recoger esa plata y acuñar en Madrid la moneda provincial. Tres años después del decreto, el Tratado de París cerró el capítulo colonial español.',
+      'El papel no se detuvo con el tratado. El Congreso de Estados Unidos respetó la carta española; el banco se reorganizó como Banco de Puerto Rico (Bank of Porto Rico), perdió el monopolio exclusivo y siguió emitiendo papel transicional —sellado y adaptado al dólar—, el llamado dólar puertorriqueño (Pick 32 y 41–48). En 1902 el First National Bank of Porto Rico, en San Juan, empezó a emitir billetes nacionales estadounidenses (Pick 33–41).',
+      'La carta española venció en 1913 y el banco se liquidó. Entre el 16 y el 24 de enero de 1916 una comisión de liquidación recogió el papel insular que aún circulaba; en enero de 1925 los ejemplares recuperados se incineraron. Por eso los billetes del Banco Español y del Banco de Puerto Rico son hoy escasos: sobrevive solo una fracción de lo emitido. Esta vitrina no inventa existencias de esas series: documenta el contexto y las tres piezas de la colección.',
     ],
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
@@ -82,7 +95,7 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Puerto Rico · Colonial and transition issues | Notofilia',
     metaDescription:
-      'Case for nineteenth-century Puerto Rican paper money: the 1869 Central Board 1-peso note, provisional receipt, and 1895 exchange note.',
+      'Nineteenth-century Puerto Rican paper: the 1869 Central Board, the 1895 exchange note, and the Banco Español-to-dollar transition.',
     kicker: 'Puerto Rico · Nineteenth century',
     title: 'Colonial and transition issues',
     heroAlt:
@@ -90,7 +103,11 @@ export const seriesCopy = {
     intro: [
       'In 1766 Puerto Rico became the first Spanish overseas province to print 8-real papeletas. For centuries the Mexican situado propped up the island treasury; when Spanish American independence cut that subsidy, Governor Salvador Meléndez Bruna authorized provincial paper on 31 August 1812. By 1813 the papeleta issue reached 500,000 pesos. Intendant Alejandro Ramírez, who arrived on 11 February 1813, amortized it by 1816.',
       'The disgrace of that paper stopped new issues for decades. Paper returned with the Ten Years’ War. From New York, the Central Republican Board of Cuba and Puerto Rico — chaired by José Morales Lemus, with Puerto Rican secretary Dr. José Francisco Basora — served as a government-in-exile support body: fundraising, managing the Republic of Cuba in Arms’ external finances, and linking Cuban and Puerto Rican anti-colonial politics among donors, printers, and exile communities. On 1 June 1869 the Republic authorized a twenty-million-peso loan; weeks later Morales Lemus and Basora were arrested under U.S. neutrality laws.',
-      'At century’s end the island still lacked its own coin: worn macuquinas, Mexican pesos, Morgan dollars, and other foreign silver — much of it fleur-de-lis countermarked from 1884 — flooded commerce. The royal decree of 17 August 1895 created the 1-peso exchange note (Pick 7): a short-lived instrument, equivalent to 25 g of .900 silver, to gather that silver and strike provincial coin in Madrid. Three years after the decree, the Treaty of Paris closed the Spanish colonial chapter.',
+      'At century’s end the island still lacked its own coin: worn macuquinas, Mexican pesos, Morgan dollars, and other foreign silver — much of it fleur-de-lis countermarked from 1884 — flooded commerce. The shortage of official and fractional coin pushed sugar and coffee haciendas, merchants, and some municipalities to issue their own paper — vales or rustic notes — often with brass tokens. That private scrip paid day wages and kept daily trade moving while metropolitan currency fell short.',
+      'In that same shortage of circulating money, the island’s banking landmark was the Banco Español de Puerto Rico. Authorized by royal decree on 5 May 1888 and opened on 1 February 1890, it was the only institution with a note-issuing monopoly. The American Bank Note Company of New York printed the 5, 10, 20, 50, 100, and 200 peso series (Pick 8–31). The Overseas Ministry’s single-peso exchange note is not part of those series.',
+      'The royal decree of 17 August 1895 created the 1-peso exchange note (Pick 7): a short-lived instrument, equivalent to 25 g of .900 silver, to gather that silver and strike provincial coin in Madrid. Three years after the decree, the Treaty of Paris closed the Spanish colonial chapter.',
+      'Paper did not stop with the treaty. The United States Congress respected the Spanish charter; the bank was reorganized as Banco de Puerto Rico (Bank of Porto Rico), lost its exclusive monopoly, and kept issuing transitional notes — stamped and adapted to the dollar — the so-called Puerto Rican dollar (Pick 32 and 41–48). In 1902 the First National Bank of Porto Rico, in San Juan, began issuing United States National Bank Notes (Pick 33–41).',
+      'The Spanish charter expired in 1913 and the bank was liquidated. Between 16 and 24 January 1916 a liquidation commission gathered the island notes still in circulation; in January 1925 the recovered pieces were incinerated. That is why Banco Español and Banco de Puerto Rico notes are scarce today: only a fraction of what was issued survives. This case does not invent holdings of those series: it documents the context and the three pieces in the collection.',
     ],
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:

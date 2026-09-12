@@ -149,8 +149,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Colombian banknotes does Notofilia document?',
       },
       answer: {
-        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, el Banco de la República, tiquetes de transporte y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
-        en: 'The case covers independence issues, free banking, the Banco Nacional, the Banco de la República, transport tickets, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
+        es: 'La vitrina cubre independencia, banca libre, Banco Nacional, Junta de Conversión, el Banco de la República, tiquetes de transporte y errores de impresión, con fichas publicadas a medida que se fotografían las piezas. No es un catálogo completo de todos los Pick colombianos.',
+        en: 'The case covers independence issues, free banking, the Banco Nacional, the Conversion Board, the Banco de la República, transport tickets, and printing errors, with note pages published as pieces are photographed. It is not a complete catalog of every Colombian Pick number.',
       },
     },
     {
@@ -181,8 +181,38 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What United States paper money is in Notofilia?',
       },
       answer: {
-        es: 'La vitrina reúne colonial, obsoletos, confederados, United States Notes, certificados de oro y plata, Reserva Federal, certificados de pago militar, pop art y misceláneos. No es un catálogo completo de Friedberg: es el inventario de los ejemplares documentados aquí.',
-        en: 'The case brings together colonial issues, obsolete notes, Confederates, United States Notes, gold and silver certificates, Federal Reserve notes, military payment certificates, pop art, and miscellaneous issues. It is not a complete Friedberg catalog: it is the inventory of the examples documented here.',
+        es: 'La vitrina reúne colonial, obsoletos, confederados, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, Treasury Notes, certificados de oro y plata, el recorte de 1928–1929, Reserva Federal, certificados de pago militar, pop art y misceláneos. Varias de esas clases aún no tienen ficha: no se inventa un serial. No es un catálogo completo de Friedberg: es el inventario de los ejemplares documentados aquí.',
+        en: 'The case brings together colonial issues, obsolete notes, Confederates, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, Treasury Notes, gold and silver certificates, the 1928–1929 size change, Federal Reserve notes, military payment certificates, pop art, and miscellaneous issues. Several of those classes still have no note page: a serial is not invented. It is not a complete Friedberg catalog: it is the inventory of the examples documented here.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuál fue el primer papel federal de circulación general?',
+        en: 'What was the first federal paper of general circulation?',
+      },
+      answer: {
+        es: 'Los Demand Notes de 1861 (5, 10 y 20 dólares), pagaderos a la vista en metal. El U.S. Currency Education Program y el BEP los sitúan como la primera circulación general del Tesoro y el origen del apodo greenback. Los United States Notes de 1862 los sustituyeron como curso legal. En esta colección aún no hay un Demand Note con foto y serial.',
+        en: 'The Demand Notes of 1861 ($5, $10, and $20), payable on demand in coin. The U.S. Currency Education Program and the BEP place them as the Treasury’s first general circulation and the origin of the nickname “greenback.” United States Notes of 1862 replaced them as legal tender. This collection does not yet hold a Demand Note with a photograph and serial.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué son los National Bank Notes, la Fractional Currency y los Coin Notes?',
+        en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
+      },
+      answer: {
+        es: 'Tres clases federales que esta vitrina cuenta y aún no ficha. Los National Bank Notes (1863–1935) los emitieron bancos con carta, respaldados por bonos del Tesoro, con el nombre de la plaza y el número de charter. La Fractional Currency (1862–1876) fue papel de 3 a 50 centavos cuando desapareció la moneda. Los Treasury Notes o Coin Notes (1890–1891) vienen de la Sherman Silver Purchase Act; la Educational Series de 1896 es un certificado de plata, no esa clase.',
+        en: 'Three federal classes this case narrates and does not yet record as holdings. National Bank Notes (1863–1935) were issued by chartered banks, secured by Treasury bonds, with the town name and charter number. Fractional Currency (1862–1876) was 3¢-to-50¢ paper when coin disappeared. Treasury or Coin Notes (1890–1891) come from the Sherman Silver Purchase Act; the 1896 Educational Series is a Silver Certificate issue, not that class.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuándo pasó el papel de Estados Unidos al tamaño pequeño?',
+        en: 'When did United States paper change to small size?',
+      },
+      answer: {
+        es: 'En 1929. El BEP recortó el formato cerca de un 30 % —de unos 7,375 × 3,125 pulgadas a 6,14 × 2,61— y pasó de ocho a doce billetes por pliego. La serie impresa es 1928. Esa línea divide el tamaño grande del pequeño; los Federal Reserve Notes de 1934 de esta vitrina ya son de formato moderno.',
+        en: 'In 1929. The BEP cut the format by about 30 percent — from about 7.375 × 3.125 inches to 6.14 × 2.61 — and went from eight notes per sheet to twelve. The printed series is 1928. That line divides large size from small size; the Series 1934 Federal Reserve Notes in this case are already the modern format.',
       },
     },
     {

@@ -43,9 +43,14 @@ export type UnitedStatesChapterId =
   | 'us-colonial'
   | 'us-obsoleto'
   | 'us-confederado'
+  | 'us-demand'
   | 'us-notes'
+  | 'us-fractional'
+  | 'us-national'
   | 'us-gold'
   | 'us-silver'
+  | 'us-treasury'
+  | 'us-size'
   | 'us-frb'
   | 'us-pop-art'
   | 'us-miscelaneos';
@@ -89,8 +94,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'State banks, broken banknotes, and the tax that ended private issue.',
     },
     body: {
-      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial, y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback». En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
-      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
+      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional: el sucesor federal de este papel es el National Bank Note, en su propio capítulo. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial, y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback». En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
+      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War: the federal successor of this paper is the National Bank Note, in its own chapter. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
     },
   },
   {
@@ -110,6 +115,22 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
     },
   },
   {
+    id: 'us-demand',
+    years: { es: '1861–1862', en: '1861–1862' },
+    title: {
+      es: 'Demand Notes',
+      en: 'Demand Notes',
+    },
+    lead: {
+      es: 'El primer papel federal de circulación general: pagadero a la vista y con el reverso verde que acuñó greenback.',
+      en: 'The first federal paper of general circulation: payable on demand, with the green back that coined “greenback.”',
+    },
+    body: {
+      es: 'Para financiar el inicio de la Guerra Civil, el Congreso autorizó Demand Notes no remunerados del Tesoro: 5, 10 y 20 dólares, pagaderos a la vista en metal en oficinas designadas. El U.S. Currency Education Program y el BEP coinciden: fue la primera circulación general de papel federal. El reverso en tinta verde originó el apodo greenback. Las primeras planchas las grabaron compañías privadas; en el edificio del Tesoro se firmaban, separaban y cortaban los pliegos. El BEP nació de ese trabajo. Los United States Notes de 1862 los sustituyeron como curso legal; el apodo pasó con ellos. El papel federal emitido desde 1861 sigue siendo redimible a la par. En esta vitrina no hay aún un Demand Note con foto y serial.',
+      en: 'To finance the opening of the Civil War, Congress authorized non-interest-bearing Treasury Demand Notes: $5, $10, and $20, payable on demand in coin at designated offices. The U.S. Currency Education Program and the BEP agree: this was the first general circulation of federal paper. Green ink on the back coined the nickname “greenback.” Private banknote companies engraved the first plates; clerks in the Treasury building signed, separated, and trimmed the sheets. The BEP grew from that work. United States Notes of 1862 replaced them as legal tender; the nickname traveled with them. Federal paper issued since 1861 remains redeemable at face. This case does not yet hold a Demand Note with a photograph and serial.',
+    },
+  },
+  {
     id: 'us-notes',
     years: { es: '1862–1971', en: '1862–1971' },
     title: {
@@ -117,12 +138,44 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'United States Notes',
     },
     lead: {
-      es: 'Legal Tender Notes o greenbacks: el primer papel federal de circulación amplia, con sello rojo.',
-      en: 'Legal Tender Notes, or greenbacks: the first widely circulated federal paper, with a red seal.',
+      es: 'Legal Tender Notes o greenbacks: el papel federal de curso legal que sustituyó a los Demand Notes, con sello rojo.',
+      en: 'Legal Tender Notes, or greenbacks: the legal-tender federal paper that replaced Demand Notes, with a red seal.',
     },
     body: {
-      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El Bureau of Engraving and Printing los identifica como el primer papel federal de circulación amplia; al principio los grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Esta vitrina reunirá el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966.',
-      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The Bureau of Engraving and Printing calls them the first widely circulated federal paper; at first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. This case will gather the 1928 red-seal $1 and the 1966 $100.',
+      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Esta vitrina reunirá el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966, ambos de tamaño pequeño.',
+      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. This case will gather the 1928 red-seal $1 and the 1966 $100, both small-size.',
+    },
+  },
+  {
+    id: 'us-fractional',
+    years: { es: '1862–1876', en: '1862–1876' },
+    title: {
+      es: 'Fractional Currency',
+      en: 'Fractional Currency',
+    },
+    lead: {
+      es: 'Papel de 3 a 50 centavos para el cambio cotidiano cuando la moneda metálica desapareció de la circulación.',
+      en: 'Paper from 3¢ to 50¢ for everyday change when coin vanished from circulation.',
+    },
+    body: {
+      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. En esta vitrina no hay aún un ejemplar con foto; cuando lo haya, llevará ficha propia. Un Pick o un año no identifican el objeto: lo identifica el serial, si lo lleva.',
+      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. This case does not yet hold a photographed example; when one is documented it will have its own note page. A Pick number or a year does not identify the object: the serial does, when one was printed.',
+    },
+  },
+  {
+    id: 'us-national',
+    years: { es: '1863–1935', en: '1863–1935' },
+    title: {
+      es: 'National Bank Notes',
+      en: 'National Bank Notes',
+    },
+    lead: {
+      es: 'Papel federal de bancos con carta: nombre de la plaza, número de charter y firmas locales, respaldado por bonos del Tesoro.',
+      en: 'Federal paper of chartered banks: town name, charter number, and local signatures, secured by Treasury bonds.',
+    },
+    body: {
+      es: 'La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos de Estados Unidos depositados en el Tesoro. El U.S. Currency Education Program y la American Numismatic Society sitúan ahí la unificación del papel nacional. Durante más de setenta años, hasta 1935, miles de bancos de pueblo pusieron en circulación billetes con el nombre de la plaza, el número de carta y las firmas de sus oficiales. Friedberg los agrupa por First, Second y Third Charter Period y, desde 1929, por el tamaño pequeño. No son obsolete notes: el impuesto del 10 % y esta ley apagaron el papel estatal. En esta colección no hay aún un National Bank Note documentado. Un mismo tipo o un mismo año no identifican el objeto: lo identifican la carta y el serial.',
+      en: 'The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by United States bonds deposited with the Treasury. The U.S. Currency Education Program and the American Numismatic Society place the unification of national paper there. For more than seventy years, until 1935, thousands of hometown banks put notes into circulation with the town name, the charter number, and the officers’ signatures. Friedberg groups them by First, Second, and Third Charter Period and, from 1929, by the small-size type. They are not obsolete notes: the 10 percent tax and this act ended state-bank paper. This collection does not yet hold a documented National Bank Note. A shared type or year does not identify the object: the charter and the serial do.',
     },
   },
   {
@@ -137,8 +190,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Paper backed by Treasury gold, from the BEP’s first issues to the 1933–1934 withdrawal.',
     },
     body: {
-      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency, como una de las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circularon solo entre bancos de la Reserva Federal, nunca entre el público. En esta colección se documentará el certificado de oro de 10 dólares de 1928.',
-      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency, as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. This collection will document the 1928 $10 Gold Certificate.',
+      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency —esta última en su propio capítulo—, como una de las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circularon solo entre bancos de la Reserva Federal, nunca entre el público. En esta colección se documentará el certificado de oro de 10 dólares de 1928.',
+      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency — the latter in its own chapter — as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. This collection will document the 1928 $10 Gold Certificate.',
     },
   },
   {
@@ -153,8 +206,40 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. Esta vitrina abre con el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y seguirá con el de África del Norte de sello amarillo.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. This case opens with the Series 1957-B $1 Silver Certificate, serial S35513454A, and will add that North Africa yellow-seal $1.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. Esta vitrina abre con el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y seguirá con el de África del Norte de sello amarillo.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. This case opens with the Series 1957-B $1 Silver Certificate, serial S35513454A, and will add that North Africa yellow-seal $1.',
+    },
+  },
+  {
+    id: 'us-treasury',
+    years: { es: '1890–1891', en: '1890–1891' },
+    title: {
+      es: 'Treasury Notes (Coin Notes)',
+      en: 'Treasury Notes (Coin Notes)',
+    },
+    lead: {
+      es: 'Papel de la Sherman Silver Purchase Act: redimible en moneda, series 1890 y 1891.',
+      en: 'Paper of the Sherman Silver Purchase Act: redeemable in coin, Series 1890 and 1891.',
+    },
+    body: {
+      es: 'En 1890 el Tesoro empezó a emitir Treasury Notes, también Coin Notes, autorizados por la Sherman Silver Purchase Act: el portador los canjeaba en moneda —oro o plata, a elección del Tesoro—. Las series son 1890 y 1891. El reverso recargado de 1890 incluye el 100 dólares cuyos ceros los coleccionistas llaman Watermelon Note; la de 1891 abrió el dorso. La Educational Series de 1896 —History Instructing Youth en el 1 dólar— es un certificado de plata, no esta clase. Friedberg les dedica el capítulo de Treasury or Coin Notes. En esta vitrina no hay aún un ejemplar con foto y serial.',
+      en: 'In 1890 the Treasury began issuing Treasury Notes, also called Coin Notes, authorized by the Sherman Silver Purchase Act: the bearer redeemed them in coin — gold or silver, at the Treasury’s choice. The series are 1890 and 1891. The ornate 1890 back includes the $100 whose zeros collectors call the Watermelon Note; Series 1891 opened the reverse. The 1896 Educational Series — History Instructing Youth on the $1 — is a Silver Certificate issue, not this class. Friedberg gives them the Treasury or Coin Notes chapter. This case does not yet hold an example with a photograph and serial.',
+    },
+  },
+  {
+    id: 'us-size',
+    years: { es: '1928–1929', en: '1928–1929' },
+    title: {
+      es: 'Tamaño grande y pequeño',
+      en: 'Large size and small size',
+    },
+    lead: {
+      es: 'El recorte de 1929: de ocho a doce billetes por pliego y el formato que sigue en circulación.',
+      en: 'The 1929 reduction: from eight to twelve notes per sheet, and the format still in circulation.',
+    },
+    body: {
+      es: 'El BEP y el U.S. Currency Education Program sitúan en 1929 el cambio de aspecto más amplio del papel estadounidense. Para abaratar la impresión, el formato pasó de unos 7,375 × 3,125 pulgadas a 6,14 × 2,61 —cerca de un 30 % menos— y de ocho a doce billetes por pliego. La serie impresa es 1928; la entrega al público, 1929. Cada denominación unificó retrato y dorso en todas las clases; el sello y su color distinguen el tipo. Esa línea —tamaño grande frente a tamaño pequeño— ordena el coleccionismo del papel federal. Los National Bank Notes de tamaño pequeño son de 1929; los Federal Reserve Notes de 1934 de esta vitrina ya son de formato moderno.',
+      en: 'The BEP and the U.S. Currency Education Program place in 1929 the widest change in the look of United States paper. To lower manufacturing cost, the format went from about 7.375 × 3.125 inches to 6.14 × 2.61 — roughly 30 percent smaller — and from eight to twelve notes per sheet. The printed series is 1928; release to the public, 1929. Each denomination unified portrait and back across classes; the seal and its color mark the type. That line — large size versus small size — is how collectors divide federal paper. Small-size National Bank Notes are 1929; the Series 1934 Federal Reserve Notes in this case are already the modern format.',
     },
   },
   {
@@ -169,8 +254,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. Los primeros son de tamaño grande; la serie 1928, entregada en 1929, abre el formato pequeño que documentan las fichas de 1934 de esta vitrina. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. The first issues are large-size; Series 1928, released in 1929, opens the small format that the 1934 note pages in this case document. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -214,8 +299,8 @@ export const seriesSources: CatalogSource[] = [
     es: 'U.S. Currency Education Program — History of U.S. Currency',
     en: 'U.S. Currency Education Program — History of U.S. Currency',
     note: {
-      es: 'Massachusetts 1690, Continentals, National Banknotes, certificados de plata y sobrecarga HAWAII.',
-      en: 'Massachusetts 1690, Continentals, National Banknotes, silver certificates, and the HAWAII overprint.',
+      es: 'Massachusetts 1690, Demand Notes de 1861 (greenbacks), National Bank Notes, Treasury Notes de 1890, Educational Series de 1896 y recorte de 1929.',
+      en: 'Massachusetts 1690, 1861 Demand Notes (greenbacks), National Bank Notes, 1890 Treasury Notes, the 1896 Educational Series, and the 1929 size reduction.',
     },
   },
   {
@@ -223,8 +308,17 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bureau of Engraving and Printing — History',
     en: 'Bureau of Engraving and Printing — History',
     note: {
-      es: 'Gold Certificates (1865), United States Notes (1869), Silver Certificates (1878) y Federal Reserve Act (1913).',
-      en: 'Gold Certificates (1865), United States Notes (1869), Silver Certificates (1878), and the Federal Reserve Act (1913).',
+      es: 'Demand Notes de 1861; Fractional Currency de 1863; Gold Certificates (1865); recorte de 1929 (ocho a doce billetes por pliego, cerca de un 30 % menos).',
+      en: '1861 Demand Notes; 1863 Fractional Currency; Gold Certificates (1865); the 1929 reduction (eight to twelve notes per sheet, about 30 percent smaller).',
+    },
+  },
+  {
+    href: 'https://www.bep.gov/media/1106/download?inline=',
+    es: 'Bureau of Engraving and Printing — Currency Notes',
+    en: 'Bureau of Engraving and Printing — Currency Notes',
+    note: {
+      es: 'Demand Notes como IOU pagaderos a la vista; origen de greenback; Fractional Currency y sello del Tesoro.',
+      en: 'Demand Notes as IOUs payable on demand; origin of “greenback”; Fractional Currency and the Treasury seal.',
     },
   },
   {
@@ -243,6 +337,24 @@ export const seriesSources: CatalogSource[] = [
     note: {
       es: 'Massachusetts 1690 como primer papel público occidental; impuesto del 10 % y National Banking Act de 1863.',
       en: 'Massachusetts 1690 as the first Western public paper; the 10 percent tax and the National Banking Act of 1863.',
+    },
+  },
+  {
+    href: 'https://www.coin-currency.com/',
+    es: 'Arthur L. e Ira S. Friedberg — Paper Money of the United States (Coin & Currency Institute)',
+    en: 'Arthur L. and Ira S. Friedberg — Paper Money of the United States (Coin & Currency Institute)',
+    note: {
+      es: 'Capítulos de Demand Notes, Legal Tender, Fractional Currency, Treasury or Coin Notes y National Bank Notes. Se citan números Friedberg; no se republican columnas de precio.',
+      en: 'Chapters on Demand Notes, Legal Tender, Fractional Currency, Treasury or Coin Notes, and National Bank Notes. Friedberg numbers are cited; price columns are not republished.',
+    },
+  },
+  {
+    href: 'https://www.pmgnotes.com/population-report/',
+    es: 'Paper Money Guaranty — Population Report',
+    en: 'Paper Money Guaranty — Population Report',
+    note: {
+      es: 'Censo de piezas encapsuladas (National Bank Notes, Fractional Currency y el resto de clases). Esta vitrina no republica cifras de población.',
+      en: 'Census of encapsulated notes (National Bank Notes, Fractional Currency, and the other classes). This case does not republish population figures.',
     },
   },
   {
@@ -274,15 +386,15 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Federal, colonial, confederado y obsoleto | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, Estados Confederados, United States Notes, certificados de oro y plata, Reserva Federal, pop art y misceláneos.',
+      'Catálogo de papel moneda de Estados Unidos: colonial, obsoletos, confederados, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, certificados, Reserva Federal y pop art.',
     kicker: 'Estados Unidos · Notafilia',
     title: 'Del papel colonial a la Reserva Federal',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
-      'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
-      'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
+      'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que abrió los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo greenback—; los United States Notes de 1862 los sustituyeron como curso legal. El atesoramiento de metal trajo Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
+      'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
       'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
@@ -298,15 +410,15 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Federal, colonial, Confederate, and obsolete | Notofilia',
     metaDescription:
-      'Catalog of United States paper money: colonial issues, obsolete notes, Confederate States, United States Notes, gold and silver certificates, the Federal Reserve, pop art, and miscellaneous issues.',
+      'Catalog of United States paper money: colonial issues, obsolete notes, Confederates, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, certificates, the Federal Reserve, and pop art.',
     kicker: 'United States · Notaphily',
     title: 'From colonial paper to the Federal Reserve',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
-      'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
-      'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
+      'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which opened National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
+      'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
       'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
