@@ -86,4 +86,12 @@ describe('US Federal Reserve Note series list', () => {
     assert.match(seriesPage, /chapter\.id === 'us-frb' \? t\.frnListLabel/);
     assert.match(seriesPage, /notesForChapter\(chapter\.id\)/);
   });
+
+  it('fits three banknote cards per row on large screens', () => {
+    assert.match(
+      seriesPage,
+      /notes\.length > 0 \? \(\s*<ol\s+class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"/,
+    );
+    assert.doesNotMatch(seriesPage, /lg:grid-cols-4/);
+  });
 });
