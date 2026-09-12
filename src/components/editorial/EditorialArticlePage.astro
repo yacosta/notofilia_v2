@@ -15,6 +15,7 @@ import {
   editorialCopy,
   enhanceProseHtml,
   newsPath,
+  relatedForArticle,
   resolveRelated,
   type EditorialArticle,
 } from '../../data/editorial';
@@ -38,7 +39,7 @@ const description = article.description[locale];
 const rawBody = article.bodyHtml[locale] || article.bodyHtml.es;
 const bodyIsFallback = locale === 'en' && rawBody === article.bodyHtml.es;
 const body = enhanceProseHtml(rawBody, locale);
-const related = resolveRelated(article.related, locale);
+const related = resolveRelated(relatedForArticle(article, kind), locale);
 const claim = article.claim;
 const wide = Boolean(article.wide);
 const containImage = article.imageFit === 'contain' || wide;
