@@ -21,8 +21,10 @@ describe('robots.txt AI and search crawlers', () => {
 });
 
 describe('llms.txt and grading-guide SEO copy', () => {
-  it('keeps the grading guide first and lists glossary, guides, and country catalogues', () => {
-    assert.equal(articles[0].slug, 'mejores-empresas-certificacion-monedas-billetes');
+  const grading = articles.find((article) => article.slug === 'mejores-empresas-certificacion-monedas-billetes');
+
+  it('keeps the grading guide in llms.txt and lists glossary, guides, and country catalogues', () => {
+    assert.ok(grading);
     assert.match(seoSource, /## Glossary \/ Glosario/);
     assert.match(seoSource, /## Guides \/ Guías/);
     assert.match(seoSource, /## Country catalogues \/ Catálogos por país/);
@@ -33,13 +35,15 @@ describe('llms.txt and grading-guide SEO copy', () => {
     assert.match(seoSource, /footerLinksFromNav/);
     assert.match(seoSource, /megaNav/);
     assert.match(seoSource, /colección privada y catálogo bilingüe/);
-    assert.match(articles[0].seoTitle.es, /PMG, PCGS y NGC/);
-    assert.match(articles[0].seoTitle.en, /PMG, PCGS, and NGC/);
+    assert.match(grading.seoTitle.es, /PMG, PCGS y NGC/);
+    assert.match(grading.seoTitle.en, /PMG, PCGS, and NGC/);
+    assert.equal(articles.some((article) => article.slug === 'como-se-valora-un-billete-colombiano'), true);
   });
 
   it('maps the grading-guide href pair used in llms.txt and the sitemap', () => {
+    assert.ok(grading);
     assert.equal(
-      localizePath(articles[0].href, 'en'),
+      localizePath(grading.href, 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
   });

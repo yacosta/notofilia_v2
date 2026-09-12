@@ -79,7 +79,7 @@ describe('colombia-errors', () => {
     assert.match(pageSource, /t\.errorsTiqueteLead/);
     assert.match(pageSource, /t\.errorsTiqueteLink/);
     assert.match(pageSource, /id="tiquete-de-subsidio-heading"/);
-    assert.match(pageSource, /href="#tiquetes"/);
+    assert.match(pageSource, /eraPath\('tiquetes'/);
   });
 
   it('lists both 2010 Silva butterfly-cut serials as separate error cards', () => {

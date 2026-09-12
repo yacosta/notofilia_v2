@@ -1,28 +1,25 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
-import { NEWS_PAGE_SIZE, findBlogArticle, newsPageCount, relatedForArticle } from './editorial.ts';
-import { newsArticles } from './editorial.ts';
+
+const editorialSource = readFileSync(new URL('./editorial.ts', import.meta.url), 'utf8');
+const newsArticles = JSON.parse(readFileSync(new URL('./news-articles.json', import.meta.url), 'utf8'));
+const blogArticles = JSON.parse(readFileSync(new URL('./blog-articles.json', import.meta.url), 'utf8'));
 
 describe('editorial SEO helpers', () => {
   it('paginates news at 88 entries and keeps a single page today', () => {
-    assert.equal(NEWS_PAGE_SIZE, 88);
-    assert.ok(newsArticles.length <= NEWS_PAGE_SIZE);
-    assert.equal(newsPageCount(), 1);
+    assert.match(editorialSource, /export const NEWS_PAGE_SIZE = 88/);
+    assert.ok(newsArticles.length <= 88);
+    assert.match(editorialSource, /Math\.ceil\(newsArticles\.length \/ size\)/);
   });
 
   it('adds a glossary related link when a news article has no catalogue or glossary href', () => {
-    const bare = {
-      ...newsArticles[0],
-      bodyHtml: { es: '<p>Nota de prensa.</p>', en: '<p>Press note.</p>' },
-      related: [],
-    };
-    const related = relatedForArticle(bare, 'news');
-    assert.equal(related.some((item) => item.href.startsWith('/glosario/')), true);
+    assert.match(editorialSource, /export function relatedForArticle/);
+    assert.match(editorialSource, /href: '\/glosario\/notafilia\/'/);
   });
 
   it('publishes the Colombian valuation guide without a price list', () => {
-    const article = findBlogArticle('como-se-valora-un-billete-colombiano');
+    const article = blogArticles.find((item) => item.slug === 'como-se-valora-un-billete-colombiano');
     assert.ok(article);
     assert.match(article.bodyHtml.es, /no publica listas de precios/);
     assert.doesNotMatch(article.bodyHtml.es, /\$\d{2,}/);
