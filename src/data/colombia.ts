@@ -333,11 +333,12 @@ export const seriesSources: CatalogSource[] = [
 
 export const seriesCopy = {
   es: {
-    metaTitle: 'Colombia · Banca libre y Banco de la República | Notofilia',
+    metaTitle: 'Billetes de Colombia | Notofilia',
     metaDescription:
       'Catálogo de papel moneda colombiano: emisiones de independencia, banca libre, Banco Nacional, especímenes y errores del Banco de la República.',
     kicker: 'Colombia · Notafilia',
-    title: 'Banca libre y Banco de la República',
+    title: 'Billetes de Colombia',
+    eraSubtitle: 'Banca libre, Banco Nacional y Banco de la República',
     heroAlt:
       'Mapa vintage en relieve 3D de Colombia sobre pergamino, con Sierra Nevada, Santa Marta, Riohacha, Medellín y Bogotá, sellos, pasaporte y el título Colombia',
     intro: [
@@ -453,11 +454,12 @@ export const seriesCopy = {
       'Todos los billetes expuestos pertenecen a una colección privada, con fines de preservación y estudio. Ninguna de las piezas documentadas en este sitio está a la venta.',
   },
   en: {
-    metaTitle: 'Colombia · Free banking and the Banco de la República | Notofilia',
+    metaTitle: 'Colombian banknotes | Notofilia',
     metaDescription:
       'Catalog of Colombian paper money: independence issues, free banking, the Banco Nacional, and Banco de la República specimens and errors.',
     kicker: 'Colombia · Notaphily',
-    title: 'Free banking and the Banco de la República',
+    title: 'Colombian banknotes',
+    eraSubtitle: 'Free banking, the Banco Nacional, and the Banco de la República',
     heroAlt:
       'Vintage 3D relief map of Colombia on parchment, with Sierra Nevada, Santa Marta, Riohacha, Medellín and Bogotá, postage stamps, a passport, and the title Colombia',
     intro: [
