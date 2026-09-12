@@ -191,7 +191,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What was the first federal paper of general circulation?',
       },
       answer: {
-        es: 'Los Demand Notes de 1861 (5, 10 y 20 dólares), pagaderos a la vista en metal. El U.S. Currency Education Program y el BEP los sitúan como la primera circulación general del Tesoro y el origen del apodo greenback. Los United States Notes de 1862 los sustituyeron como curso legal. En esta colección aún no hay un Demand Note con foto y serial.',
+        es: 'Los Demand Notes de 1861 (5, 10 y 20 dólares), pagaderos a la vista en metálico. El U.S. Currency Education Program y el BEP los sitúan como la primera circulación general del Tesoro y el origen del apodo «greenback». Los United States Notes de 1862 los sustituyeron como curso legal. En esta colección aún no hay un Demand Note con foto y serial.',
         en: 'The Demand Notes of 1861 ($5, $10, and $20), payable on demand in coin. The U.S. Currency Education Program and the BEP place them as the Treasury’s first general circulation and the origin of the nickname “greenback.” United States Notes of 1862 replaced them as legal tender. This collection does not yet hold a Demand Note with a photograph and serial.',
       },
     },
@@ -231,7 +231,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Are the United States notes in this collection for sale?',
       },
       answer: {
-        es: 'No. El catálogo cita Friedberg, Haxby, Schwan, Criswell o Pick cuando existen, y deja claro que nada está a la venta. Las fichas pendientes se publican a medida que se fotografían.',
+        es: 'No. El catálogo cita a Friedberg, Haxby, Schwan, Criswell o Pick cuando existen, y deja claro que nada está a la venta. Las fichas pendientes se publican a medida que se fotografían.',
         en: 'No. The catalog cites Friedberg, Haxby, Schwan, Criswell, or Pick when those numbers exist, and states that nothing is for sale. Remaining note pages are published as pieces are photographed.',
       },
     },
