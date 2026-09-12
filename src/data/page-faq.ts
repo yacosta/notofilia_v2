@@ -253,7 +253,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the 1916 Philippine National Bank 5-peso?',
       },
       answer: {
-        es: 'Es un billete de circulación del Philippine National Bank, grabado por el BEP bajo la Ley n.º 2612. Esta pieza, P#46b, lleva el serial A2179586A y las firmas de Mercado y Concepción. Ese serial cae en un tramo que la Ley n.º 211 enumeró como reemitido por las autoridades militares japonesas.',
+        es: 'Es un billete de circulación del Philippine National Bank, grabado por el BEP bajo la Ley n.º 2612. Esta pieza, P#46b, lleva el serial A2179586A y las firmas de Mercado y Concepción. Ese serial cae en un tramo que la Ley de la República n.º 211 enumeró como reemitido por las autoridades militares japonesas.',
         en: 'It is a Philippine National Bank circulating note, engraved by the BEP under Act No. 2612. This piece, P#46b, is serial A2179586A with Mercado and Concepción signatures. That serial falls in a band Republic Act No. 211 listed as reissued by the Japanese military authorities.',
       },
     },
@@ -263,7 +263,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is Victory Series No. 66?',
       },
       answer: {
-        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte, para reemplazar el papel de ocupación japonesa conocido como dinero «Mickey Mouse». El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
+        es: 'Fueron los últimos certificados del Tesoro impresos bajo la administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte, para reemplazar el papel de ocupación japonesa conocido como «dinero Mickey Mouse». El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
         en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte, to replace Japanese occupation paper known as “Mickey Mouse” money. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official issue ran to eight denominations, from 1 to 500 pesos (Pick 94–101).',
       },
     },
@@ -273,8 +273,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Victory Series denominations are missing from this case?',
       },
       answer: {
-        es: 'Ocho certificados del Tesoro, Pick 94 a 101: 1, 2, 5, 10, 20, 50, 100 y 500 pesos. Notofilia exhibe 1, 2, 5 y 20. El 10 (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101) no tienen ejemplar aquí. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
-        en: 'Eight Treasury Certificates, Pick 94 to 101: 1, 2, 5, 10, 20, 50, 100, and 500 pesos. Notofilia shows the 1, 2, 5, and 20. The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101) have no example here. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
+        es: 'El 10 (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101) no tienen ejemplar aquí. La emisión oficial del Tesoro tuvo ocho denominaciones, Pick 94 a 101; Notofilia exhibe el 1, el 2, el 5 y el 20. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
+        en: 'The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101) have no example here. The official Treasury issue ran to eight denominations, Pick 94 to 101; Notofilia shows the 1, 2, 5, and 20. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
       },
     },
     {
@@ -283,8 +283,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What signature combinations does Victory Series No. 66 have?',
       },
       answer: {
-        es: 'Tres pares: Osmeña–Hernandez (presidente y auditor general), el más frecuente salvo en el 500 pesos y el de las cuatro piezas de esta vitrina; Osmeña–Guevara (presidente y tesorero), documentado sobre todo en 100 y 500 pesos; y Roxas–Guevara, tras 1946, que no se registra en 1, 5 ni 10 pesos —sí en el 2 y el 20 (P#95b, P#98b) y en los valores altos—.',
-        en: 'Three pairings: Osmeña–Hernandez (President and Auditor General), the most frequent except on the 500-peso and the one on all four notes here; Osmeña–Guevara (President and Treasurer), recorded mainly on the 100- and 500-peso notes; and Roxas–Guevara, after 1946, which is not recorded on the 1-, 5-, or 10-peso — it does appear on the 2 and 20 (P#95b, P#98b) and on the high values.',
+        es: 'Tres pares. Osmeña–Hernandez (presidente y auditor general) es el más frecuente en casi todas las denominaciones —y el de las cuatro piezas de esta vitrina—; en el 500 pesos, al contrario, es la de menor tirada. Osmeña–Guevara (presidente y tesorero) se documenta sobre todo en 100 y 500 pesos. Roxas–Guevara, tras 1946, no se registra en 1, 5 ni 10 pesos; sí en el 2 y el 20 (P#95b, P#98b) y en los valores altos.',
+        en: 'Three pairings. Osmeña–Hernandez (President and Auditor General) is the most frequent on nearly every denomination — and the pairing on all four notes here; on the 500-peso it is instead the smallest printing. Osmeña–Guevara (President and Treasurer) is recorded mainly on the 100- and 500-peso notes. Roxas–Guevara, after 1946, is not recorded on the 1-, 5-, or 10-peso; it does appear on the 2 and 20 (P#95b, P#98b) and on the high values.',
       },
     },
     {
@@ -303,8 +303,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Which Philippine paper does this collection document?',
       },
       answer: {
-        es: 'Un 5 pesos del Banco Nacional de 1916 (serie A2179586A) y cuatro certificados Victory únicos, alineados por denominación: 1, 2, 5 y 20 pesos de la Commonwealth. Un segundo archivo del 5 pesos Victory con la misma serie no se cataloga dos veces.',
-        en: 'One 1916 National Bank 5-peso (serial A2179586A) and four unique Victory certificates, lined up by denomination: 1, 2, 5, and 20 pesos of the Commonwealth. A second file of the Victory 5-peso with the same serial is not catalogued twice.',
+        es: 'Un 5 pesos del Banco Nacional de 1916 (serie A2179586A) y cuatro certificados Victory únicos, alineados por denominación: 1, 2, 5 y 20 pesos de la Commonwealth. Una segunda fotografía del 5 pesos Victory con la misma serie no se cataloga dos veces.',
+        en: 'One 1916 National Bank 5-peso (serial A2179586A) and four unique Victory certificates, lined up by denomination: 1, 2, 5, and 20 pesos of the Commonwealth. A second photograph of the Victory 5-peso with the same serial is not catalogued twice.',
       },
     },
     {
@@ -313,7 +313,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Are Notofilia’s Philippine notes for sale?',
       },
       answer: {
-        es: 'No. Son piezas de una colección privada, con referencia Pick y grado cuando se conoce, y ninguna está a la venta. Parte de la Serie Victory recibió en 1949 la sobrecarga del Central Bank of the Philippines (Pick 117 y siguientes).',
+        es: 'No. Son piezas de una colección privada, con referencia Pick y, cuando se conoce, grado, y ninguna está a la venta. Parte de la Serie Victory recibió en 1949 la sobrecarga del Central Bank of the Philippines (Pick 117 y siguientes).',
         en: 'No. They are pieces from a private collection, with Pick references and a grade when known, and none is for sale. Part of the Victory series received the 1949 Central Bank of the Philippines overprint (Pick 117 and later).',
       },
     },
