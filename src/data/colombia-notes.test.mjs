@@ -1125,3 +1125,53 @@ describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
     );
   });
 });
+
+describe('Colombia 1 peso Tolima 1901 (Cód. 1242)', () => {
+  it('distinguishes the 1901 Ibagué treasury cédula from Banco del Tolima of Neiva', () => {
+    const note = noteById('1-peso-tolima-1901');
+    assert.ok(note);
+    assert.equal(note.serial, '060.416');
+    assert.equal(note.historyHeading?.es, 'Tesorería y banca libre');
+    assert.equal(note.historyHeading?.en, 'Treasury and free banking');
+    assert.ok(note.history);
+    assert.match(note.description.es, /escritura de 23 de junio de 1881/);
+    assert.match(note.description.en, /deed of 23 June 1881/);
+    assert.match(note.history.es, /sede en Neiva, no en Ibagué/);
+    assert.match(note.history.en, /seated in Neiva, not Ibagué/);
+    assert.match(note.history.es, /capital autorizado de 200\.000 pesos/);
+    assert.match(note.history.en, /authorized capital of 200,000 pesos/);
+    assert.match(note.history.es, /79\.600 pesos suscritos/);
+    assert.match(note.history.en, /79,600 pesos subscribed/);
+    assert.match(note.history.es, /cuarenta y dos bancos/);
+    assert.match(note.history.en, /forty-two banks/);
+    assert.match(note.history.es, /1883 —no en 1881/);
+    assert.match(note.history.en, /1883 — not 1881/);
+    assert.match(note.history.es, /letras de cambio/);
+    assert.match(note.history.en, /bills of exchange/);
+    assert.match(note.history.es, /no se fusionó/);
+    assert.match(note.history.en, /did not merge/);
+    assert.doesNotMatch(note.history.es, /Tocaima/);
+    assert.doesNotMatch(note.history.en, /Tocaima/);
+    assert.doesNotMatch(`${note.history.es}\n${note.description.es}`, /Tocaima/);
+    assert.doesNotMatch(`${note.history.en}\n${note.description.en}`, /Tocaima/);
+    const hrefs = note.sources.map((source) => source.href);
+    assert.equal(hrefs.includes('https://www.mascoleccionismo.com/publicaciones/JAG/JAG-083.pdf'), true);
+    assert.equal(
+      hrefs.includes('https://repositorio.banrep.gov.co/bitstreams/b82e02f1-24fd-41fa-bc0f-bbe70a0d1671/download'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('https://www.interciencia.net/wp-content/uploads/2022/10/02_6886_A_Andrade_Navia_v47n9_9.pdf'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('https://digitalcollections.library.vanderbilt.edu/islandora/object/islandora%3A10267'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('http://www.scielo.org.co/scielo.php?pid=S0120-25962024000100049&script=sci_arttext'),
+      true,
+    );
+    assert.equal(hrefs.includes('http://hdl.handle.net/10784/7647'), true);
+  });
+});
