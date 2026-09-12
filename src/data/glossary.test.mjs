@@ -102,9 +102,11 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 113);
+    assert.equal(foldedGlossaryTerms().length, glossaryTerms.length - 34);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
+    assert.ok(!isStandaloneGlossaryTerm('demand-note'));
+    assert.ok(!isStandaloneGlossaryTerm('gonzalez-white'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
     assert.ok(isStandaloneGlossaryTerm('dispositivo-opticamente-variable-ovd'));
   });
