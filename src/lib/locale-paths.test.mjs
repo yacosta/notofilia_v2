@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { englishContentSlug, englishRedirects, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
+import { englishContentSlug, englishRedirects, hrefToContentSlug, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
 
 describe('locale path mapping', () => {
   it('translates collection, glossary, news, and contact slugs', () => {
@@ -674,6 +674,19 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
+    );
+  });
+});
+
+describe('hrefToContentSlug', () => {
+  it('strips a piece fragment so stub routes do not encode # as a path', () => {
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/#5000-pesos-error-2010-09629901'),
+      'coleccion/colombia/5000-pesos-error-2010',
+    );
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/'),
+      'coleccion/colombia/5000-pesos-error-2010',
     );
   });
 });
