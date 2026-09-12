@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { colombiaChapters, seriesCopy } from './colombia.ts';
+import { chapterBySlug, colombiaChapters, eraPath, seriesCopy } from './colombia.ts';
 import { notesForChapter } from './colombia-notes.ts';
 
 const pageSource = readFileSync(
@@ -30,6 +30,16 @@ describe('Colombia series overview', () => {
     assert.match(pageSource, /id="catalogacion"/);
     assert.match(pageSource, /t\.printersRows/);
     assert.match(pageSource, /t\.disclaimer/);
+  });
+
+  it('opens era sub-hubs from the series teasers without inventing holdings', () => {
+    assert.equal(eraPath('banca-libre', 'es'), '/coleccion/colombia/banca-libre/');
+    assert.equal(eraPath('banca-libre', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(chapterBySlug('free-banking')?.id, 'banca-libre');
+    assert.equal(notesForChapter('independencia').length, 0);
+    assert.equal(notesForChapter('banco-central').length, 0);
+    assert.match(pageSource, /eraPath\(chapter\.id, locale\)/);
+    assert.match(pageSource, /t\.eraOpen/);
   });
 
   it('names the Valledupar ranges and the 2016 statutory portraits', () => {

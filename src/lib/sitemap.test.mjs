@@ -175,6 +175,21 @@ describe('sitemap coverage for the two-tier glossary', () => {
   });
 });
 
+describe('sitemap coverage for demand pages and search', () => {
+  it('maps editorial, counterfeit how-to, valuation, and Colombia era hubs', () => {
+    assert.equal(localizePath('/editorial/', 'en'), '/en/editorial/');
+    assert.equal(localizePath('/identificar/billetes-falsos/', 'en'), '/en/identify/counterfeit-notes/');
+    assert.equal(
+      localizePath('/blog/como-se-valora-un-billete-colombiano/', 'en'),
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(localizePath('/coleccion/colombia/independencia/', 'en'), '/en/collection/colombia/independence/');
+    assert.match(sitemapSource, /if \(page\.path === 'buscar'\) continue/);
+    assert.match(sitemapSource, /path !== '\/buscar\/' && path !== '\/en\/search\/'/);
+  });
+});
+
 describe('sitemap coverage stays derived from catalog data', () => {
   it('does not hard-code individual catalog slugs in extra', () => {
     assert.match(sitemapSource, /dedicatedCatalogPaths/);

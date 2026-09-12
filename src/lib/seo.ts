@@ -177,6 +177,8 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/noticias/', 'Noticias', 'News');
   add('/coleccion/', 'Colección', 'Collection');
   add('/identificar/', 'Identificar', 'Identify');
+  add('/identificar/billetes-falsos/', 'Cómo identificar un billete falso', 'How to identify a counterfeit note');
+  add('/editorial/', 'Política editorial', 'Editorial policy');
   add('/herramientas/', 'Herramientas', 'Tools');
 
   for (const link of footerLinksFromNav(megaNav)) {

@@ -339,6 +339,11 @@ export const seriesCopy = {
     kicker: 'Colombia · Notafilia',
     title: 'Billetes de Colombia',
     eraSubtitle: 'Banca libre, Banco Nacional y Banco de la República',
+    eraOpen: 'Abrir la vitrina',
+    eraEmpty: 'Esta vitrina aún no publica un ejemplar; el capítulo queda como marco histórico.',
+    eraHoldings: 'Piezas de esta época',
+    eraBack: 'Volver a Billetes de Colombia',
+    eraMetaTitle: (name: string) => `${name} · Billetes de Colombia | Notofilia`,
     heroAlt:
       'Mapa vintage en relieve 3D de Colombia sobre pergamino, con Sierra Nevada, Santa Marta, Riohacha, Medellín y Bogotá, sellos, pasaporte y el título Colombia',
     intro: [
@@ -460,6 +465,11 @@ export const seriesCopy = {
     kicker: 'Colombia · Notaphily',
     title: 'Colombian banknotes',
     eraSubtitle: 'Free banking, the Banco Nacional, and the Banco de la República',
+    eraOpen: 'Open the case',
+    eraEmpty: 'This case does not yet publish an example; the chapter is historical framing.',
+    eraHoldings: 'Pieces from this era',
+    eraBack: 'Back to Colombian banknotes',
+    eraMetaTitle: (name: string) => `${name} · Colombian banknotes | Notofilia`,
     heroAlt:
       'Vintage 3D relief map of Colombia on parchment, with Sierra Nevada, Santa Marta, Riohacha, Medellín and Bogotá, postage stamps, a passport, and the title Colombia',
     intro: [
@@ -580,6 +590,38 @@ export function seriesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/colombia/' : COLOMBIA_PATH;
 }
 
+export const COLOMBIA_ERA_SLUG_EN: Record<ColombiaChapterId, string> = {
+  independencia: 'independence',
+  'banca-libre': 'free-banking',
+  'banco-nacional': 'banco-nacional',
+  'banco-central': 'banco-central',
+  'junta-conversion': 'conversion-board',
+  'banco-de-la-republica': 'banco-de-la-republica',
+  'familias-modernas': 'modern-families',
+  tiquetes: 'tickets',
+  errores: 'errors',
+};
+
+const eraSlugToId = new Map<string, ColombiaChapterId>();
+for (const chapter of colombiaChapters) {
+  eraSlugToId.set(chapter.id, chapter.id);
+  eraSlugToId.set(COLOMBIA_ERA_SLUG_EN[chapter.id], chapter.id);
+}
+
+export function colombiaEraSlugs(): string[] {
+  return colombiaChapters.map((chapter) => `coleccion/colombia/${chapter.id}`);
+}
+
+export function chapterBySlug(slug: string): ColombiaChapter | undefined {
+  const id = eraSlugToId.get(slug);
+  return id ? colombiaChapters.find((chapter) => chapter.id === id) : undefined;
+}
+
+export function eraPath(id: ColombiaChapterId, locale: 'es' | 'en' = 'es'): string {
+  const segment = locale === 'en' ? COLOMBIA_ERA_SLUG_EN[id] : id;
+  return `${seriesPath(locale)}${segment}/`;
+}
+
 export function chapterHref(id: ColombiaChapterId): string {
-  return `#${id}`;
+  return `${COLOMBIA_PATH}${id}/`;
 }

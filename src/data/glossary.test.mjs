@@ -128,7 +128,12 @@ describe('two-tier glossary', () => {
     assert.equal(redirects['/en/glosario/polimero/'], '/en/glossary/polymer/');
     assert.equal(redirects['/en/glosario/pmg-pcgs/'], '/en/glossary/pmg-pcgs/');
     assert.equal(redirects['/glosario/pmg-pcgs/'], undefined);
-    assert.match(astroConfig, /glossaryRedirects\(\)/);
+    const redirectBuilder = readFileSync(new URL('../../scripts/seo/build-redirects.mjs', import.meta.url), 'utf8');
+    const workerRedirects = readFileSync(new URL('../lib/gsc-redirects.ts', import.meta.url), 'utf8');
+    assert.match(redirectBuilder, /glossaryRedirects\(\)/);
+    assert.match(workerRedirects, /glossaryRedirects/);
+    assert.doesNotMatch(astroConfig, /glossaryRedirects\(\)/);
+    assert.doesNotMatch(astroConfig, /\.\.\.generated/);
   });
 
   it('builds static term routes only for standalone slugs', () => {
