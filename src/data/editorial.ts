@@ -32,6 +32,7 @@ export type ClaimCallout = {
 
 export type EditorialArticle = {
   slug: string;
+  slugEn: string;
   href: string;
   title: LocalizedText;
   dek: LocalizedText;
@@ -156,7 +157,7 @@ export function findBlogArticle(slug: string): EditorialArticle | undefined {
 }
 
 export function findNewsArticle(slug: string): EditorialArticle | undefined {
-  return newsArticles.find((item) => item.slug === slug);
+  return newsArticles.find((item) => item.slug === slug || item.slugEn === slug);
 }
 
 export const blogSlugs = blogArticles.map((item) => `blog/${item.slug}`);

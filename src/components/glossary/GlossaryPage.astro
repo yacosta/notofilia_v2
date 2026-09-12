@@ -211,6 +211,7 @@ const jsonLd = {
                       id={term.id}
                       data-glossary-term
                       data-glossary-slug={term.slug}
+                      data-glossary-slug-en={term.slugEn}
                       data-glossary-cat={term.category}
                       data-glossary-search={glossarySearchText(term)}
                       data-glossary-tier={standalone ? 'standalone' : 'index'}
@@ -386,7 +387,8 @@ const jsonLd = {
       if (!id) return;
       const el =
         document.getElementById(id) ||
-        root.querySelector<HTMLElement>(`[data-glossary-slug="${CSS.escape(id)}"]`);
+        root.querySelector<HTMLElement>(`[data-glossary-slug="${CSS.escape(id)}"]`) ||
+        root.querySelector<HTMLElement>(`[data-glossary-slug-en="${CSS.escape(id)}"]`);
       if (!el) return;
       el.hidden = false;
       const group = el.closest<HTMLElement>('[data-glossary-letter-group]');

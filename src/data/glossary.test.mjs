@@ -109,6 +109,8 @@ describe('two-tier glossary', () => {
   it('points public hrefs at articles or index anchors', () => {
     assert.equal(glossaryTermHref('pmg-pcgs', 'es'), '/glosario/pmg-pcgs/');
     assert.equal(glossaryTermHref('pmg-pcgs', 'en'), '/en/glossary/pmg-pcgs/');
+    assert.equal(glossaryTermHref('polimero', 'en'), '/en/glossary/polymer/');
+    assert.equal(glossaryTermHref('pick', 'en'), '/en/glossary/pick/');
     assert.equal(glossaryTermHref('libra', 'es'), '/glosario/#libra');
     assert.equal(glossaryTermHref('libra', 'en'), '/en/glossary/#libra');
     assert.equal(glossaryTermHref('libranza', 'es'), '/glosario/#libranza');
@@ -117,11 +119,13 @@ describe('two-tier glossary', () => {
 
   it('301s folded term URLs to a query, not a hash fragment', () => {
     assert.equal(glossaryFoldedRedirectTarget('libra', 'es'), '/glosario/?term=libra');
-    assert.equal(glossaryFoldedRedirectTarget('libra', 'en'), '/en/glossary/?term=libra');
+    assert.equal(glossaryFoldedRedirectTarget('libra', 'en'), '/en/glossary/?term=pound-sterling');
     const redirects = glossaryRedirects();
     assert.equal(redirects['/glosario/libra/'], '/glosario/?term=libra');
-    assert.equal(redirects['/en/glossary/libra/'], '/en/glossary/?term=libra');
-    assert.equal(redirects['/en/glosario/libra/'], '/en/glossary/?term=libra');
+    assert.equal(redirects['/en/glossary/libra/'], '/en/glossary/?term=pound-sterling');
+    assert.equal(redirects['/en/glosario/libra/'], '/en/glossary/?term=pound-sterling');
+    assert.equal(redirects['/en/glossary/polimero/'], '/en/glossary/polymer/');
+    assert.equal(redirects['/en/glosario/polimero/'], '/en/glossary/polymer/');
     assert.equal(redirects['/en/glosario/pmg-pcgs/'], '/en/glossary/pmg-pcgs/');
     assert.equal(redirects['/glosario/pmg-pcgs/'], undefined);
     assert.match(astroConfig, /glossaryRedirects\(\)/);

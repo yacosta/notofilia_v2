@@ -109,10 +109,18 @@ function existingRedirectsFromAstro() {
 }
 
 const { englishRedirects } = await import(pathToFileURL(join(root, 'src/lib/locale-paths.ts')).href);
+const { glossaryRedirects } = await import(pathToFileURL(join(root, 'src/data/glossary.ts')).href);
+const { newsEnglishRedirects } = await import(pathToFileURL(join(root, 'src/lib/content-slugs.ts')).href);
 const { CONTACT_LEGACY_REDIRECTS } = await import(pathToFileURL(join(root, 'src/data/contact.ts')).href);
 
 const existing = existingRedirectsFromAstro();
 for (const [from, to] of Object.entries(englishRedirects())) {
+  if (!isHomePath(to)) existing.set(from, to);
+}
+for (const [from, to] of Object.entries(glossaryRedirects())) {
+  if (!isHomePath(to)) existing.set(from, to);
+}
+for (const [from, to] of Object.entries(newsEnglishRedirects())) {
   if (!isHomePath(to)) existing.set(from, to);
 }
 for (const [from, to] of Object.entries(CONTACT_LEGACY_REDIRECTS)) {
