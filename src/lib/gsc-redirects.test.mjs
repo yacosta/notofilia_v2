@@ -26,13 +26,16 @@ describe('gsc redirect lookup', () => {
     assert.equal(rewriteEnSpanishPrefix('/en/news/'), undefined);
     const glossary = lookupGscRedirect('/en/glosario/libra/');
     assert.equal(glossary?.status, 301);
-    assert.equal(glossary?.target, '/en/glossary/libra/');
+    assert.equal(glossary?.target, '/en/glossary/?term=pound-sterling');
     const glossaryPlan = planSeoResponse('/en/glosario/libra/');
     assert.equal(glossaryPlan.type, 'redirect');
-    assert.equal(glossaryPlan.type === 'redirect' ? glossaryPlan.target : '', '/en/glossary/libra/');
+    assert.equal(glossaryPlan.type === 'redirect' ? glossaryPlan.target : '', '/en/glossary/?term=pound-sterling');
+    const polymer = planSeoResponse('/en/glossary/polimero/');
+    assert.equal(polymer.type, 'redirect');
+    assert.equal(polymer.type === 'redirect' ? polymer.target : '', '/en/glossary/polymer/');
     const news = planSeoResponse('/en/noticias/billete-2-dolares-serie-baja/');
     assert.equal(news.type, 'redirect');
-    assert.equal(news.type === 'redirect' ? news.target : '', '/en/news/billete-2-dolares-serie-baja/');
+    assert.equal(news.type === 'redirect' ? news.target : '', '/en/news/the-2-note-with-serial-l00000002a/');
   });
 
   it('emits Cloudflare splat backups for Spanish /en/ glossary and news prefixes', () => {
