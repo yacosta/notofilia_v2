@@ -1,6 +1,6 @@
 {
   "generatedFrom": "dist",
-  "count": 1106,
+  "count": 950,
   "urls": [
     {
       "path": "/",
@@ -237,12 +237,30 @@
       "redirectTo": ""
     },
     {
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1959",
+      "title": "1 peso oro · Banco de la República · 1959",
+      "alternate": "/en/collection/colombia/1-peso-oro-1959/",
+      "redirectTo": ""
+    },
+    {
       "path": "/coleccion/colombia/1-peso-oro-1973/",
       "lang": "es",
       "type": "catalogue",
       "lastSlug": "1-peso-oro-1973",
       "title": "1 peso oro · Banco de la República · 1973",
       "alternate": "/en/collection/colombia/1-peso-oro-1973/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/1-peso-oro-1974/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1974",
+      "title": "1 peso oro · Banco de la República · 1974",
+      "alternate": "/en/collection/colombia/1-peso-oro-1974/",
       "redirectTo": ""
     },
     {
@@ -288,6 +306,33 @@
       "lastSlug": "10-pesos-oro-1976",
       "title": "10 pesos oro · reposición · 1976",
       "alternate": "/en/collection/colombia/10-pesos-oro-1976/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1979",
+      "title": "10 pesos oro · Banco de la República · 1979",
+      "alternate": "/en/collection/colombia/10-pesos-oro-1979/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "100-pesos-oro-1980",
+      "title": "100 pesos oro · espécimen · 1980",
+      "alternate": "/en/collection/colombia/100-pesos-oro-1980/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2000",
+      "title": "1.000 pesos · error de corte · 2000",
+      "alternate": "/en/collection/colombia/1000-pesos-error-2000/",
       "redirectTo": ""
     },
     {
@@ -345,6 +390,24 @@
       "redirectTo": "/coleccion/colombia/2-pesos-oro-1944/"
     },
     {
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2-pesos-oro-1977",
+      "title": "2 pesos oro · Banco de la República · 1977",
+      "alternate": "/en/collection/colombia/2-pesos-oro-1977/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "20-pesos-oro-1983",
+      "title": "20 pesos oro · Banco de la República · 1983",
+      "alternate": "/en/collection/colombia/20-pesos-oro-1983/",
+      "redirectTo": ""
+    },
+    {
       "path": "/coleccion/colombia/2000-pesos-2008/",
       "lang": "es",
       "type": "catalogue",
@@ -399,6 +462,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/coleccion/colombia/5-pesos-oro-1979/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1979",
+      "title": "5 pesos oro · reposición · 1979",
+      "alternate": "/en/collection/colombia/5-pesos-oro-1979/",
+      "redirectTo": ""
+    },
+    {
       "path": "/coleccion/colombia/5-pesos-oro-1980/",
       "lang": "es",
       "type": "catalogue",
@@ -414,6 +486,42 @@
       "lastSlug": "5-pesos-rio-hacha-1883",
       "title": "5 pesos · Banco de Riohacha · 1883",
       "alternate": "/en/collection/colombia/5-pesos-rio-hacha-1883/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1974",
+      "title": "50 pesos oro · 1974",
+      "alternate": "/en/collection/colombia/50-pesos-oro-1974/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1984",
+      "title": "50 pesos oro · 1984",
+      "alternate": "/en/collection/colombia/50-pesos-oro-1984/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-error-2010",
+      "title": "5.000 pesos · error mariposa · 2010",
+      "alternate": "/en/collection/colombia/5000-pesos-error-2010/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-oro-1993",
+      "title": "5.000 pesos oro · 1993",
+      "alternate": "/en/collection/colombia/5000-pesos-oro-1993/",
       "redirectTo": ""
     },
     {
@@ -450,6 +558,15 @@
       "lastSlug": "catalogo",
       "title": "Catálogo visual de billetes",
       "alternate": "/en/collection/colombia/catalog/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "medio-peso-oro-1953",
+      "title": "Medio peso oro · República de Colombia · 1953",
+      "alternate": "/en/collection/colombia/medio-peso-oro-1953/",
       "redirectTo": ""
     },
     {
@@ -585,6 +702,33 @@
       "lastSlug": "100-dolares-confederados-1862",
       "title": "100 dólares · Estados Confederados · 1862",
       "alternate": "/en/collection/united-states/100-dollars-confederate-1862/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "1000-dolares-serie-1934a-nueva-york",
+      "title": "1.000 dólares · Serie 1934 A · Nueva York",
+      "alternate": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2-dolares-serie-1917",
+      "title": "2 dólares · United States Note · Serie 1917",
+      "alternate": "/en/collection/united-states/2-dollars-series-1917/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "2-dolares-serie-2003-san-luis",
+      "title": "2 dólares · Serie 2003 · San Luis ★",
+      "alternate": "/en/collection/united-states/2-dollars-series-2003-st-louis/",
       "redirectTo": ""
     },
     {
@@ -1497,6 +1641,15 @@
       "redirectTo": "/en/collection/colombia/1-peso-oro-1954/"
     },
     {
+      "path": "/en/coleccion/colombia/1-peso-oro-1959/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1959",
+      "title": "Redirecting to: /en/collection/colombia/1-peso-oro-1959/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/1-peso-oro-1959/"
+    },
+    {
       "path": "/en/coleccion/colombia/1-peso-oro-1973/",
       "lang": "en",
       "type": "catalogue",
@@ -1504,6 +1657,15 @@
       "title": "Redirecting to: /en/collection/colombia/1-peso-oro-1973/",
       "alternate": "",
       "redirectTo": "/en/collection/colombia/1-peso-oro-1973/"
+    },
+    {
+      "path": "/en/coleccion/colombia/1-peso-oro-1974/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1974",
+      "title": "Redirecting to: /en/collection/colombia/1-peso-oro-1974/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/1-peso-oro-1974/"
     },
     {
       "path": "/en/coleccion/colombia/1-peso-tolima-1901/",
@@ -1549,6 +1711,33 @@
       "title": "Redirecting to: /en/collection/colombia/10-pesos-oro-1976/",
       "alternate": "",
       "redirectTo": "/en/collection/colombia/10-pesos-oro-1976/"
+    },
+    {
+      "path": "/en/coleccion/colombia/10-pesos-oro-1979/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1979",
+      "title": "Redirecting to: /en/collection/colombia/10-pesos-oro-1979/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/10-pesos-oro-1979/"
+    },
+    {
+      "path": "/en/coleccion/colombia/100-pesos-oro-1980/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "100-pesos-oro-1980",
+      "title": "Redirecting to: /en/collection/colombia/100-pesos-oro-1980/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/100-pesos-oro-1980/"
+    },
+    {
+      "path": "/en/coleccion/colombia/1000-pesos-error-2000/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2000",
+      "title": "Redirecting to: /en/collection/colombia/1000-pesos-error-2000/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/1000-pesos-error-2000/"
     },
     {
       "path": "/en/coleccion/colombia/1000-pesos-error-2008/",
@@ -1605,6 +1794,24 @@
       "redirectTo": "/en/collection/colombia/2-pesos-oro-1944/"
     },
     {
+      "path": "/en/coleccion/colombia/2-pesos-oro-1977/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-pesos-oro-1977",
+      "title": "Redirecting to: /en/collection/colombia/2-pesos-oro-1977/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/2-pesos-oro-1977/"
+    },
+    {
+      "path": "/en/coleccion/colombia/20-pesos-oro-1983/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20-pesos-oro-1983",
+      "title": "Redirecting to: /en/collection/colombia/20-pesos-oro-1983/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/20-pesos-oro-1983/"
+    },
+    {
       "path": "/en/coleccion/colombia/2000-pesos-2008/",
       "lang": "en",
       "type": "catalogue",
@@ -1659,6 +1866,15 @@
       "redirectTo": "/en/collection/colombia/5-pesos-oro-1960/"
     },
     {
+      "path": "/en/coleccion/colombia/5-pesos-oro-1979/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1979",
+      "title": "Redirecting to: /en/collection/colombia/5-pesos-oro-1979/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/5-pesos-oro-1979/"
+    },
+    {
       "path": "/en/coleccion/colombia/5-pesos-oro-1980/",
       "lang": "en",
       "type": "catalogue",
@@ -1675,6 +1891,42 @@
       "title": "Redirecting to: /en/collection/colombia/5-pesos-rio-hacha-1883/",
       "alternate": "",
       "redirectTo": "/en/collection/colombia/5-pesos-rio-hacha-1883/"
+    },
+    {
+      "path": "/en/coleccion/colombia/50-pesos-oro-1974/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1974",
+      "title": "Redirecting to: /en/collection/colombia/50-pesos-oro-1974/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/50-pesos-oro-1974/"
+    },
+    {
+      "path": "/en/coleccion/colombia/50-pesos-oro-1984/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1984",
+      "title": "Redirecting to: /en/collection/colombia/50-pesos-oro-1984/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/50-pesos-oro-1984/"
+    },
+    {
+      "path": "/en/coleccion/colombia/5000-pesos-error-2010/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-error-2010",
+      "title": "Redirecting to: /en/collection/colombia/5000-pesos-error-2010/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/5000-pesos-error-2010/"
+    },
+    {
+      "path": "/en/coleccion/colombia/5000-pesos-oro-1993/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-oro-1993",
+      "title": "Redirecting to: /en/collection/colombia/5000-pesos-oro-1993/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/5000-pesos-oro-1993/"
     },
     {
       "path": "/en/coleccion/colombia/50000-pesos-error-2008/",
@@ -1711,6 +1963,15 @@
       "title": "Redirecting to: /en/collection/colombia/catalog/",
       "alternate": "",
       "redirectTo": "/en/collection/colombia/catalog/"
+    },
+    {
+      "path": "/en/coleccion/colombia/medio-peso-oro-1953/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "medio-peso-oro-1953",
+      "title": "Redirecting to: /en/collection/colombia/medio-peso-oro-1953/",
+      "alternate": "",
+      "redirectTo": "/en/collection/colombia/medio-peso-oro-1953/"
     },
     {
       "path": "/en/coleccion/colombia/tiquete-estudiantil-15-centavos/",
@@ -1837,6 +2098,24 @@
       "title": "Redirecting to: /en/collection/united-states/10-dollars-series-1934d-richmond/",
       "alternate": "",
       "redirectTo": "/en/collection/united-states/10-dollars-series-1934d-richmond/"
+    },
+    {
+      "path": "/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-dolares-serie-1934a-nueva-york",
+      "title": "Redirecting to: /en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "alternate": "",
+      "redirectTo": "/en/collection/united-states/1000-dollars-series-1934a-new-york/"
+    },
+    {
+      "path": "/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-dolares-serie-2003-san-luis",
+      "title": "Redirecting to: /en/collection/united-states/2-dollars-series-2003-st-louis/",
+      "alternate": "",
+      "redirectTo": "/en/collection/united-states/2-dollars-series-2003-st-louis/"
     },
     {
       "path": "/en/coleccion/estados-unidos/20-dolares-confederados-1864/",
@@ -2442,6 +2721,15 @@
       "redirectTo": "/en/collection/united-states/10-dollars-series-1934d-richmond/"
     },
     {
+      "path": "/en/coleccion/united-states/1000-dollars-series-1934a-new-york/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-dollars-series-1934a-new-york",
+      "title": "Redirecting to: /en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "alternate": "",
+      "redirectTo": "/en/collection/united-states/1000-dollars-series-1934a-new-york/"
+    },
+    {
       "path": "/en/coleccion/united-states/20-dollars-confederate-1864/",
       "lang": "en",
       "type": "catalogue",
@@ -2739,12 +3027,30 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/collection/colombia/1-peso-oro-1959/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1959",
+      "title": "1 peso oro · Banco de la República · 1959",
+      "alternate": "/coleccion/colombia/1-peso-oro-1959/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/collection/colombia/1-peso-oro-1973/",
       "lang": "en",
       "type": "catalogue",
       "lastSlug": "1-peso-oro-1973",
       "title": "1 peso oro · Banco de la República · 1973",
       "alternate": "/coleccion/colombia/1-peso-oro-1973/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/1-peso-oro-1974/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1-peso-oro-1974",
+      "title": "1 peso oro · Banco de la República · 1974",
+      "alternate": "/coleccion/colombia/1-peso-oro-1974/",
       "redirectTo": ""
     },
     {
@@ -2790,6 +3096,33 @@
       "lastSlug": "10-pesos-oro-1976",
       "title": "10 pesos oro · replacement · 1976",
       "alternate": "/coleccion/colombia/10-pesos-oro-1976/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/10-pesos-oro-1979/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "10-pesos-oro-1979",
+      "title": "10 pesos oro · Banco de la República · 1979",
+      "alternate": "/coleccion/colombia/10-pesos-oro-1979/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/100-pesos-oro-1980/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "100-pesos-oro-1980",
+      "title": "100 pesos oro · specimen · 1980",
+      "alternate": "/coleccion/colombia/100-pesos-oro-1980/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/1000-pesos-error-2000/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-pesos-error-2000",
+      "title": "1,000 pesos · cutting error · 2000",
+      "alternate": "/coleccion/colombia/1000-pesos-error-2000/",
       "redirectTo": ""
     },
     {
@@ -2847,6 +3180,24 @@
       "redirectTo": "/en/collection/colombia/2-pesos-oro-1944/"
     },
     {
+      "path": "/en/collection/colombia/2-pesos-oro-1977/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-pesos-oro-1977",
+      "title": "2 pesos oro · Banco de la República · 1977",
+      "alternate": "/coleccion/colombia/2-pesos-oro-1977/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/20-pesos-oro-1983/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "20-pesos-oro-1983",
+      "title": "20 pesos oro · Banco de la República · 1983",
+      "alternate": "/coleccion/colombia/20-pesos-oro-1983/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/collection/colombia/2000-pesos-2008/",
       "lang": "en",
       "type": "catalogue",
@@ -2901,6 +3252,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/collection/colombia/5-pesos-oro-1979/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5-pesos-oro-1979",
+      "title": "5 pesos oro · replacement · 1979",
+      "alternate": "/coleccion/colombia/5-pesos-oro-1979/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/collection/colombia/5-pesos-oro-1980/",
       "lang": "en",
       "type": "catalogue",
@@ -2916,6 +3276,42 @@
       "lastSlug": "5-pesos-rio-hacha-1883",
       "title": "5 pesos · Banco de Riohacha · 1883",
       "alternate": "/coleccion/colombia/5-pesos-rio-hacha-1883/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/50-pesos-oro-1974/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1974",
+      "title": "50 pesos oro · 1974",
+      "alternate": "/coleccion/colombia/50-pesos-oro-1974/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/50-pesos-oro-1984/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "50-pesos-oro-1984",
+      "title": "50 pesos oro · 1984",
+      "alternate": "/coleccion/colombia/50-pesos-oro-1984/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/5000-pesos-error-2010/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-error-2010",
+      "title": "5,000 pesos · butterfly-cut error · 2010",
+      "alternate": "/coleccion/colombia/5000-pesos-error-2010/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/5000-pesos-oro-1993/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "5000-pesos-oro-1993",
+      "title": "5,000 pesos oro · 1993",
+      "alternate": "/coleccion/colombia/5000-pesos-oro-1993/",
       "redirectTo": ""
     },
     {
@@ -2952,6 +3348,15 @@
       "lastSlug": "catalog",
       "title": "Visual banknote catalog",
       "alternate": "/coleccion/colombia/catalogo/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/colombia/medio-peso-oro-1953/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "medio-peso-oro-1953",
+      "title": "Half peso oro · Republic of Colombia · 1953",
+      "alternate": "/coleccion/colombia/medio-peso-oro-1953/",
       "redirectTo": ""
     },
     {
@@ -3240,6 +3645,33 @@
       "lastSlug": "100-dollars-confederate-1862",
       "title": "$100 · Confederate States · 1862",
       "alternate": "/coleccion/estados-unidos/100-dolares-confederados-1862/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/united-states/1000-dollars-series-1934a-new-york/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "1000-dollars-series-1934a-new-york",
+      "title": "$1,000 · Series 1934A · New York",
+      "alternate": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/united-states/2-dollars-series-1917/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-dollars-series-1917",
+      "title": "$2 · United States Note · Series 1917",
+      "alternate": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/united-states/2-dollars-series-2003-st-louis/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "2-dollars-series-2003-st-louis",
+      "title": "$2 · Series 2003 · St. Louis ★",
+      "alternate": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
       "redirectTo": ""
     },
     {
@@ -3637,1329 +4069,6 @@
       "title": "Redirecting to: /en/glossary/",
       "alternate": "",
       "redirectTo": "/en/glossary/"
-    },
-    {
-      "path": "/en/glosario/abrasiones/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "abrasiones",
-      "title": "Redirecting to: /en/glossary/abrasiones/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/abrasiones/"
-    },
-    {
-      "path": "/en/glosario/acumulacion/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "acumulacion",
-      "title": "Redirecting to: /en/glossary/acumulacion/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/acumulacion/"
-    },
-    {
-      "path": "/en/glosario/anepigrafico/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "anepigrafico",
-      "title": "Redirecting to: /en/glossary/anepigrafico/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/anepigrafico/"
-    },
-    {
-      "path": "/en/glosario/anverso/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "anverso",
-      "title": "Redirecting to: /en/glossary/anverso/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/anverso/"
-    },
-    {
-      "path": "/en/glosario/apareamiento-de-troqueles/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "apareamiento-de-troqueles",
-      "title": "Redirecting to: /en/glossary/apareamiento-de-troqueles/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/apareamiento-de-troqueles/"
-    },
-    {
-      "path": "/en/glosario/banca-libre/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "banca-libre",
-      "title": "Redirecting to: /en/glossary/banca-libre/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/banca-libre/"
-    },
-    {
-      "path": "/en/glosario/banco-emisor/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "banco-emisor",
-      "title": "Redirecting to: /en/glossary/banco-emisor/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/banco-emisor/"
-    },
-    {
-      "path": "/en/glosario/banknote-book/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "banknote-book",
-      "title": "Redirecting to: /en/glossary/banknote-book/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/banknote-book/"
-    },
-    {
-      "path": "/en/glosario/billete-alterado/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-alterado",
-      "title": "Redirecting to: /en/glossary/billete-alterado/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-alterado/"
-    },
-    {
-      "path": "/en/glosario/billete-de-banco-obsoleto/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-de-banco-obsoleto",
-      "title": "Redirecting to: /en/glossary/billete-de-banco-obsoleto/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-de-banco-obsoleto/"
-    },
-    {
-      "path": "/en/glosario/billete-de-necesidad/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-de-necesidad",
-      "title": "Redirecting to: /en/glossary/billete-de-necesidad/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-de-necesidad/"
-    },
-    {
-      "path": "/en/glosario/billete-de-reemplazo-estrella/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-de-reemplazo-estrella",
-      "title": "Redirecting to: /en/glossary/billete-de-reemplazo-estrella/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-de-reemplazo-estrella/"
-    },
-    {
-      "path": "/en/glosario/billete-mula/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-mula",
-      "title": "Redirecting to: /en/glossary/billete-mula/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-mula/"
-    },
-    {
-      "path": "/en/glosario/billete-provisional/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-provisional",
-      "title": "Redirecting to: /en/glossary/billete-provisional/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-provisional/"
-    },
-    {
-      "path": "/en/glosario/billete-sin-circular/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-sin-circular",
-      "title": "Redirecting to: /en/glossary/billete-sin-circular/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-sin-circular/"
-    },
-    {
-      "path": "/en/glosario/billete-web/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billete-web",
-      "title": "Redirecting to: /en/glossary/billete-web/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billete-web/"
-    },
-    {
-      "path": "/en/glosario/billon/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "billon",
-      "title": "Redirecting to: /en/glossary/billon/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/billon/"
-    },
-    {
-      "path": "/en/glosario/bimetalica/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "bimetalica",
-      "title": "Redirecting to: /en/glossary/bimetalica/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/bimetalica/"
-    },
-    {
-      "path": "/en/glosario/c-day/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "c-day",
-      "title": "Redirecting to: /en/glossary/c-day/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/c-day/"
-    },
-    {
-      "path": "/en/glosario/calcografia/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "calcografia",
-      "title": "Redirecting to: /en/glossary/calcografia/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/calcografia/"
-    },
-    {
-      "path": "/en/glosario/casi-sin-circular-au/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "casi-sin-circular-au",
-      "title": "Redirecting to: /en/glossary/casi-sin-circular-au/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/casi-sin-circular-au/"
-    },
-    {
-      "path": "/en/glosario/cedula-hipotecaria/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "cedula-hipotecaria",
-      "title": "Redirecting to: /en/glossary/cedula-hipotecaria/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/cedula-hipotecaria/"
-    },
-    {
-      "path": "/en/glosario/choice-uncirculated/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "choice-uncirculated",
-      "title": "Redirecting to: /en/glossary/choice-uncirculated/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/choice-uncirculated/"
-    },
-    {
-      "path": "/en/glosario/cocobola/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "cocobola",
-      "title": "Redirecting to: /en/glossary/cocobola/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/cocobola/"
-    },
-    {
-      "path": "/en/glosario/columnario-de-dos-mundos/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "columnario-de-dos-mundos",
-      "title": "Redirecting to: /en/glossary/columnario-de-dos-mundos/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/columnario-de-dos-mundos/"
-    },
-    {
-      "path": "/en/glosario/cordoncillo/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "cordoncillo",
-      "title": "Redirecting to: /en/glossary/cordoncillo/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/cordoncillo/"
-    },
-    {
-      "path": "/en/glosario/coscoja/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "coscoja",
-      "title": "Redirecting to: /en/glossary/coscoja/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/coscoja/"
-    },
-    {
-      "path": "/en/glosario/cospel/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "cospel",
-      "title": "Redirecting to: /en/glossary/cospel/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/cospel/"
-    },
-    {
-      "path": "/en/glosario/criswell/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "criswell",
-      "title": "Redirecting to: /en/glossary/criswell/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/criswell/"
-    },
-    {
-      "path": "/en/glosario/curso-legal/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "curso-legal",
-      "title": "Redirecting to: /en/glossary/curso-legal/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/curso-legal/"
-    },
-    {
-      "path": "/en/glosario/desmonetizado/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "desmonetizado",
-      "title": "Redirecting to: /en/glossary/desmonetizado/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/desmonetizado/"
-    },
-    {
-      "path": "/en/glosario/details-ngc/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "details-ngc",
-      "title": "Redirecting to: /en/glossary/details-ngc/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/details-ngc/"
-    },
-    {
-      "path": "/en/glosario/deuda-flotante/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "deuda-flotante",
-      "title": "Redirecting to: /en/glossary/deuda-flotante/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/deuda-flotante/"
-    },
-    {
-      "path": "/en/glosario/diez-milesimas-10-mils/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "diez-milesimas-10-mils",
-      "title": "Redirecting to: /en/glossary/diez-milesimas-10-mils/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/diez-milesimas-10-mils/"
-    },
-    {
-      "path": "/en/glosario/dispositivo-opticamente-variable-ovd/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "dispositivo-opticamente-variable-ovd",
-      "title": "Redirecting to: /en/glossary/dispositivo-opticamente-variable-ovd/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/dispositivo-opticamente-variable-ovd/"
-    },
-    {
-      "path": "/en/glosario/dolar/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "dolar",
-      "title": "Redirecting to: /en/glossary/dolar/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/dolar/"
-    },
-    {
-      "path": "/en/glosario/dracma/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "dracma",
-      "title": "Redirecting to: /en/glossary/dracma/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/dracma/"
-    },
-    {
-      "path": "/en/glosario/ducado/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "ducado",
-      "title": "Redirecting to: /en/glossary/ducado/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/ducado/"
-    },
-    {
-      "path": "/en/glosario/emalangeni-lilangeni/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "emalangeni-lilangeni",
-      "title": "Redirecting to: /en/glossary/emalangeni-lilangeni/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/emalangeni-lilangeni/"
-    },
-    {
-      "path": "/en/glosario/emision-conmemorativa/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "emision-conmemorativa",
-      "title": "Redirecting to: /en/glossary/emision-conmemorativa/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/emision-conmemorativa/"
-    },
-    {
-      "path": "/en/glosario/encapsulado/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "encapsulado",
-      "title": "Redirecting to: /en/glossary/encapsulado/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/encapsulado/"
-    },
-    {
-      "path": "/en/glosario/ensayador/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "ensayador",
-      "title": "Redirecting to: /en/glossary/ensayador/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/ensayador/"
-    },
-    {
-      "path": "/en/glosario/epq-calidad-de-papel-excepcional/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "epq-calidad-de-papel-excepcional",
-      "title": "Redirecting to: /en/glossary/epq-calidad-de-papel-excepcional/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/epq-calidad-de-papel-excepcional/"
-    },
-    {
-      "path": "/en/glosario/error-de-impresion/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "error-de-impresion",
-      "title": "Redirecting to: /en/glossary/error-de-impresion/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/error-de-impresion/"
-    },
-    {
-      "path": "/en/glosario/escala-sheldon/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "escala-sheldon",
-      "title": "Redirecting to: /en/glossary/escala-sheldon/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/escala-sheldon/"
-    },
-    {
-      "path": "/en/glosario/escripofilia/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "escripofilia",
-      "title": "Redirecting to: /en/glossary/escripofilia/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/escripofilia/"
-    },
-    {
-      "path": "/en/glosario/escudo-de-armas/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "escudo-de-armas",
-      "title": "Redirecting to: /en/glossary/escudo-de-armas/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/escudo-de-armas/"
-    },
-    {
-      "path": "/en/glosario/estado-basal/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "estado-basal",
-      "title": "Redirecting to: /en/glossary/estado-basal/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/estado-basal/"
-    },
-    {
-      "path": "/en/glosario/estado-soberano/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "estado-soberano",
-      "title": "Redirecting to: /en/glossary/estado-soberano/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/estado-soberano/"
-    },
-    {
-      "path": "/en/glosario/euro/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "euro",
-      "title": "Redirecting to: /en/glossary/euro/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/euro/"
-    },
-    {
-      "path": "/en/glosario/exonumia/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "exonumia",
-      "title": "Redirecting to: /en/glossary/exonumia/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/exonumia/"
-    },
-    {
-      "path": "/en/glosario/extremadamente-fino-ebc-ef/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "extremadamente-fino-ebc-ef",
-      "title": "Redirecting to: /en/glossary/extremadamente-fino-ebc-ef/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/extremadamente-fino-ebc-ef/"
-    },
-    {
-      "path": "/en/glosario/faja/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "faja",
-      "title": "Redirecting to: /en/glossary/faja/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/faja/"
-    },
-    {
-      "path": "/en/glosario/fajo-ladrillo/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "fajo-ladrillo",
-      "title": "Redirecting to: /en/glossary/fajo-ladrillo/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/fajo-ladrillo/"
-    },
-    {
-      "path": "/en/glosario/filigrana/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "filigrana",
-      "title": "Redirecting to: /en/glossary/filigrana/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/filigrana/"
-    },
-    {
-      "path": "/en/glosario/firma/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "firma",
-      "title": "Redirecting to: /en/glossary/firma/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/firma/"
-    },
-    {
-      "path": "/en/glosario/foil/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "foil",
-      "title": "Redirecting to: /en/glossary/foil/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/foil/"
-    },
-    {
-      "path": "/en/glosario/foxing/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "foxing",
-      "title": "Redirecting to: /en/glossary/foxing/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/foxing/"
-    },
-    {
-      "path": "/en/glosario/friedberg/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "friedberg",
-      "title": "Redirecting to: /en/glossary/friedberg/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/friedberg/"
-    },
-    {
-      "path": "/en/glosario/gem-uncirculated/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "gem-uncirculated",
-      "title": "Redirecting to: /en/glossary/gem-uncirculated/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/gem-uncirculated/"
-    },
-    {
-      "path": "/en/glosario/grayback/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "grayback",
-      "title": "Redirecting to: /en/glossary/grayback/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/grayback/"
-    },
-    {
-      "path": "/en/glosario/guardian/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "guardian",
-      "title": "Redirecting to: /en/glossary/guardian/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/guardian/"
-    },
-    {
-      "path": "/en/glosario/guilloche/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "guilloche",
-      "title": "Redirecting to: /en/glossary/guilloche/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/guilloche/"
-    },
-    {
-      "path": "/en/glosario/gulden/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "gulden",
-      "title": "Redirecting to: /en/glossary/gulden/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/gulden/"
-    },
-    {
-      "path": "/en/glosario/handstamp/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "handstamp",
-      "title": "Redirecting to: /en/glossary/handstamp/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/handstamp/"
-    },
-    {
-      "path": "/en/glosario/haxby/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "haxby",
-      "title": "Redirecting to: /en/glossary/haxby/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/haxby/"
-    },
-    {
-      "path": "/en/glosario/hilo-de-seguridad/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "hilo-de-seguridad",
-      "title": "Redirecting to: /en/glossary/hilo-de-seguridad/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/hilo-de-seguridad/"
-    },
-    {
-      "path": "/en/glosario/intaglio/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "intaglio",
-      "title": "Redirecting to: /en/glossary/intaglio/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/intaglio/"
-    },
-    {
-      "path": "/en/glosario/jiaozi/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "jiaozi",
-      "title": "Redirecting to: /en/glossary/jiaozi/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/jiaozi/"
-    },
-    {
-      "path": "/en/glosario/kopek/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "kopek",
-      "title": "Redirecting to: /en/glossary/kopek/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/kopek/"
-    },
-    {
-      "path": "/en/glosario/kwacha/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "kwacha",
-      "title": "Redirecting to: /en/glossary/kwacha/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/kwacha/"
-    },
-    {
-      "path": "/en/glosario/letras-de-credito/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "letras-de-credito",
-      "title": "Redirecting to: /en/glossary/letras-de-credito/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/letras-de-credito/"
-    },
-    {
-      "path": "/en/glosario/leu-lei/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "leu-lei",
-      "title": "Redirecting to: /en/glossary/leu-lei/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/leu-lei/"
-    },
-    {
-      "path": "/en/glosario/leyenda/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "leyenda",
-      "title": "Redirecting to: /en/glossary/leyenda/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/leyenda/"
-    },
-    {
-      "path": "/en/glosario/libra/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "libra",
-      "title": "Redirecting to: /en/glossary/libra/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/libra/"
-    },
-    {
-      "path": "/en/glosario/libranza/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "libranza",
-      "title": "Redirecting to: /en/glossary/libranza/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/libranza/"
-    },
-    {
-      "path": "/en/glosario/litografia/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "litografia",
-      "title": "Redirecting to: /en/glossary/litografia/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/litografia/"
-    },
-    {
-      "path": "/en/glosario/maculatura/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "maculatura",
-      "title": "Redirecting to: /en/glossary/maculatura/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/maculatura/"
-    },
-    {
-      "path": "/en/glosario/macuquina-cob/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "macuquina-cob",
-      "title": "Redirecting to: /en/glossary/macuquina-cob/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/macuquina-cob/"
-    },
-    {
-      "path": "/en/glosario/marcas-de-ajuste/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "marcas-de-ajuste",
-      "title": "Redirecting to: /en/glossary/marcas-de-ajuste/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/marcas-de-ajuste/"
-    },
-    {
-      "path": "/en/glosario/marcas-de-bolsa/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "marcas-de-bolsa",
-      "title": "Redirecting to: /en/glossary/marcas-de-bolsa/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/marcas-de-bolsa/"
-    },
-    {
-      "path": "/en/glosario/marcas-de-funda-de-album/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "marcas-de-funda-de-album",
-      "title": "Redirecting to: /en/glossary/marcas-de-funda-de-album/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/marcas-de-funda-de-album/"
-    },
-    {
-      "path": "/en/glosario/mariposa/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "mariposa",
-      "title": "Redirecting to: /en/glossary/mariposa/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/mariposa/"
-    },
-    {
-      "path": "/en/glosario/microimpresion/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "microimpresion",
-      "title": "Redirecting to: /en/glossary/microimpresion/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/microimpresion/"
-    },
-    {
-      "path": "/en/glosario/monedas-antiguas/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "monedas-antiguas",
-      "title": "Redirecting to: /en/glossary/monedas-antiguas/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/monedas-antiguas/"
-    },
-    {
-      "path": "/en/glosario/mpc/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "mpc",
-      "title": "Redirecting to: /en/glossary/mpc/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/mpc/"
-    },
-    {
-      "path": "/en/glosario/nature-print/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "nature-print",
-      "title": "Redirecting to: /en/glossary/nature-print/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/nature-print/"
-    },
-    {
-      "path": "/en/glosario/ngc/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "ngc",
-      "title": "Redirecting to: /en/glossary/ngc/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/ngc/"
-    },
-    {
-      "path": "/en/glosario/notafilia/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "notafilia",
-      "title": "Redirecting to: /en/glossary/notafilia/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/notafilia/"
-    },
-    {
-      "path": "/en/glosario/numeracion-baja/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-baja",
-      "title": "Redirecting to: /en/glossary/numeracion-baja/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-baja/"
-    },
-    {
-      "path": "/en/glosario/numeracion-binaria/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-binaria",
-      "title": "Redirecting to: /en/glossary/numeracion-binaria/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-binaria/"
-    },
-    {
-      "path": "/en/glosario/numeracion-escalera/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-escalera",
-      "title": "Redirecting to: /en/glossary/numeracion-escalera/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-escalera/"
-    },
-    {
-      "path": "/en/glosario/numeracion-especial/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-especial",
-      "title": "Redirecting to: /en/glossary/numeracion-especial/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-especial/"
-    },
-    {
-      "path": "/en/glosario/numeracion-radar/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-radar",
-      "title": "Redirecting to: /en/glossary/numeracion-radar/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-radar/"
-    },
-    {
-      "path": "/en/glosario/numeracion-repetidor/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-repetidor",
-      "title": "Redirecting to: /en/glossary/numeracion-repetidor/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-repetidor/"
-    },
-    {
-      "path": "/en/glosario/numeracion-solida/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion-solida",
-      "title": "Redirecting to: /en/glossary/numeracion-solida/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion-solida/"
-    },
-    {
-      "path": "/en/glosario/numeracion/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numeracion",
-      "title": "Redirecting to: /en/glossary/numeracion/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numeracion/"
-    },
-    {
-      "path": "/en/glosario/numismatica/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "numismatica",
-      "title": "Redirecting to: /en/glossary/numismatica/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/numismatica/"
-    },
-    {
-      "path": "/en/glosario/offset/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "offset",
-      "title": "Redirecting to: /en/glossary/offset/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/offset/"
-    },
-    {
-      "path": "/en/glosario/orla/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "orla",
-      "title": "Redirecting to: /en/glossary/orla/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/orla/"
-    },
-    {
-      "path": "/en/glosario/papel-moneda-fraccionario/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "papel-moneda-fraccionario",
-      "title": "Redirecting to: /en/glossary/papel-moneda-fraccionario/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/papel-moneda-fraccionario/"
-    },
-    {
-      "path": "/en/glosario/patina/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "patina",
-      "title": "Redirecting to: /en/glossary/patina/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/patina/"
-    },
-    {
-      "path": "/en/glosario/peso-oro/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "peso-oro",
-      "title": "Redirecting to: /en/glossary/peso-oro/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/peso-oro/"
-    },
-    {
-      "path": "/en/glosario/peso/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "peso",
-      "title": "Redirecting to: /en/glossary/peso/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/peso/"
-    },
-    {
-      "path": "/en/glosario/pick/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "pick",
-      "title": "Redirecting to: /en/glossary/pick/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/pick/"
-    },
-    {
-      "path": "/en/glosario/plancheta/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "plancheta",
-      "title": "Redirecting to: /en/glossary/plancheta/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/plancheta/"
-    },
-    {
-      "path": "/en/glosario/planchuela/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "planchuela",
-      "title": "Redirecting to: /en/glossary/planchuela/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/planchuela/"
-    },
-    {
-      "path": "/en/glosario/pliegue-de-fabrica/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "pliegue-de-fabrica",
-      "title": "Redirecting to: /en/glossary/pliegue-de-fabrica/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/pliegue-de-fabrica/"
-    },
-    {
-      "path": "/en/glosario/pliegue-y-doblez/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "pliegue-y-doblez",
-      "title": "Redirecting to: /en/glossary/pliegue-y-doblez/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/pliegue-y-doblez/"
-    },
-    {
-      "path": "/en/glosario/pmg-pcgs/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "pmg-pcgs",
-      "title": "Redirecting to: /en/glossary/pmg-pcgs/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/pmg-pcgs/"
-    },
-    {
-      "path": "/en/glosario/polimero/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "polimero",
-      "title": "Redirecting to: /en/glossary/polimero/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/polimero/"
-    },
-    {
-      "path": "/en/glosario/prueba-ensayo/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "prueba-ensayo",
-      "title": "Redirecting to: /en/glossary/prueba-ensayo/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/prueba-ensayo/"
-    },
-    {
-      "path": "/en/glosario/quetzal/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "quetzal",
-      "title": "Redirecting to: /en/glossary/quetzal/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/quetzal/"
-    },
-    {
-      "path": "/en/glosario/real/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "real",
-      "title": "Redirecting to: /en/glossary/real/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/real/"
-    },
-    {
-      "path": "/en/glosario/recocido/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "recocido",
-      "title": "Redirecting to: /en/glossary/recocido/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/recocido/"
-    },
-    {
-      "path": "/en/glosario/registro-perfecto/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "registro-perfecto",
-      "title": "Redirecting to: /en/glossary/registro-perfecto/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/registro-perfecto/"
-    },
-    {
-      "path": "/en/glosario/remainder/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "remainder",
-      "title": "Redirecting to: /en/glossary/remainder/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/remainder/"
-    },
-    {
-      "path": "/en/glosario/resello/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "resello",
-      "title": "Redirecting to: /en/glossary/resello/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/resello/"
-    },
-    {
-      "path": "/en/glosario/retrato/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "retrato",
-      "title": "Redirecting to: /en/glossary/retrato/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/retrato/"
-    },
-    {
-      "path": "/en/glosario/reverso/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "reverso",
-      "title": "Redirecting to: /en/glossary/reverso/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/reverso/"
-    },
-    {
-      "path": "/en/glosario/ringgit/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "ringgit",
-      "title": "Redirecting to: /en/glossary/ringgit/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/ringgit/"
-    },
-    {
-      "path": "/en/glosario/roseton/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "roseton",
-      "title": "Redirecting to: /en/glossary/roseton/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/roseton/"
-    },
-    {
-      "path": "/en/glosario/schwan/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "schwan",
-      "title": "Redirecting to: /en/glossary/schwan/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/schwan/"
-    },
-    {
-      "path": "/en/glosario/scrip/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "scrip",
-      "title": "Redirecting to: /en/glossary/scrip/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/scrip/"
-    },
-    {
-      "path": "/en/glosario/serie/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "serie",
-      "title": "Redirecting to: /en/glossary/serie/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/serie/"
-    },
-    {
-      "path": "/en/glosario/sin-circular-brillante-bu/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "sin-circular-brillante-bu",
-      "title": "Redirecting to: /en/glossary/sin-circular-brillante-bu/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/sin-circular-brillante-bu/"
-    },
-    {
-      "path": "/en/glosario/sobresello/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "sobresello",
-      "title": "Redirecting to: /en/glossary/sobresello/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/sobresello/"
-    },
-    {
-      "path": "/en/glosario/spark/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "spark",
-      "title": "Redirecting to: /en/glossary/spark/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/spark/"
-    },
-    {
-      "path": "/en/glosario/specimen/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "specimen",
-      "title": "Redirecting to: /en/glossary/specimen/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/specimen/"
-    },
-    {
-      "path": "/en/glosario/sucre/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "sucre",
-      "title": "Redirecting to: /en/glossary/sucre/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/sucre/"
-    },
-    {
-      "path": "/en/glosario/superficies-alteradas/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "superficies-alteradas",
-      "title": "Redirecting to: /en/glossary/superficies-alteradas/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/superficies-alteradas/"
-    },
-    {
-      "path": "/en/glosario/sustrato-hibrido/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "sustrato-hibrido",
-      "title": "Redirecting to: /en/glossary/sustrato-hibrido/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/sustrato-hibrido/"
-    },
-    {
-      "path": "/en/glosario/sustrato/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "sustrato",
-      "title": "Redirecting to: /en/glossary/sustrato/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/sustrato/"
-    },
-    {
-      "path": "/en/glosario/tala/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tala",
-      "title": "Redirecting to: /en/glossary/tala/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tala/"
-    },
-    {
-      "path": "/en/glosario/talla-dulce/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "talla-dulce",
-      "title": "Redirecting to: /en/glossary/talla-dulce/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/talla-dulce/"
-    },
-    {
-      "path": "/en/glosario/tasado/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tasado",
-      "title": "Redirecting to: /en/glossary/tasado/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tasado/"
-    },
-    {
-      "path": "/en/glosario/tejuelo/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tejuelo",
-      "title": "Redirecting to: /en/glossary/tejuelo/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tejuelo/"
-    },
-    {
-      "path": "/en/glosario/tenge/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tenge",
-      "title": "Redirecting to: /en/glossary/tenge/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tenge/"
-    },
-    {
-      "path": "/en/glosario/tinta-fluorescente-uv/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tinta-fluorescente-uv",
-      "title": "Redirecting to: /en/glossary/tinta-fluorescente-uv/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tinta-fluorescente-uv/"
-    },
-    {
-      "path": "/en/glosario/tinta-iridiscente/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tinta-iridiscente",
-      "title": "Redirecting to: /en/glossary/tinta-iridiscente/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tinta-iridiscente/"
-    },
-    {
-      "path": "/en/glosario/tinta-ovi/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tinta-ovi",
-      "title": "Redirecting to: /en/glossary/tinta-ovi/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tinta-ovi/"
-    },
-    {
-      "path": "/en/glosario/tyvek/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "tyvek",
-      "title": "Redirecting to: /en/glossary/tyvek/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/tyvek/"
-    },
-    {
-      "path": "/en/glosario/uniface/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "uniface",
-      "title": "Redirecting to: /en/glossary/uniface/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/uniface/"
-    },
-    {
-      "path": "/en/glosario/vale-al-portador/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "vale-al-portador",
-      "title": "Redirecting to: /en/glossary/vale-al-portador/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/vale-al-portador/"
-    },
-    {
-      "path": "/en/glosario/ventana-transparente/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "ventana-transparente",
-      "title": "Redirecting to: /en/glossary/ventana-transparente/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/ventana-transparente/"
-    },
-    {
-      "path": "/en/glosario/vineta/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "vineta",
-      "title": "Redirecting to: /en/glossary/vineta/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/vineta/"
-    },
-    {
-      "path": "/en/glosario/yuan-renminbi/",
-      "lang": "en",
-      "type": "glossary",
-      "lastSlug": "yuan-renminbi",
-      "title": "Redirecting to: /en/glossary/yuan-renminbi/",
-      "alternate": "",
-      "redirectTo": "/en/glossary/yuan-renminbi/"
     },
     {
       "path": "/en/glossary/",
@@ -6294,6 +5403,42 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/herramientas/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "herramientas",
+      "title": "Redirecting to: /en/tools/",
+      "alternate": "",
+      "redirectTo": "/en/tools/"
+    },
+    {
+      "path": "/en/herramientas/numeracion-especial/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "numeracion-especial",
+      "title": "Redirecting to: /en/tools/fancy-serial-checker/",
+      "alternate": "",
+      "redirectTo": "/en/tools/fancy-serial-checker/"
+    },
+    {
+      "path": "/en/identificar/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "identificar",
+      "title": "Redirecting to: /en/identify/",
+      "alternate": "",
+      "redirectTo": "/en/identify/"
+    },
+    {
+      "path": "/en/identify/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "identify",
+      "title": "Identify a piece",
+      "alternate": "/identificar/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/netherlands-numismatica/",
       "lang": "en",
       "type": "other",
@@ -6564,6 +5709,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/news/dolar-eisenhower-1976-no-s-coinweek/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "dolar-eisenhower-1976-no-s-coinweek",
+      "title": "The 1976 No S Eisenhower found in a register",
+      "alternate": "/noticias/dolar-eisenhower-1976-no-s-coinweek/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/news/dolar-trump-vale-un-dolar/",
       "lang": "en",
       "type": "news",
@@ -6714,6 +5868,15 @@
       "lastSlug": "medalla-sistema-solar-heptagonal",
       "title": "Heptagonal Solar System medal",
       "alternate": "/noticias/medalla-sistema-solar-heptagonal/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/news/medios-dolares-911-privy-never-forget/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "medios-dolares-911-privy-never-forget",
+      "title": "Mint offers 9/11 NEVER FORGET privy halves",
+      "alternate": "/noticias/medios-dolares-911-privy-never-forget/",
       "redirectTo": ""
     },
     {
@@ -6978,6 +6141,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/news/numiscon-2026-castello-ibercoin/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "numiscon-2026-castello-ibercoin",
+      "title": "Numiscon 2026: coins and investing in Castelló",
+      "alternate": "/noticias/numiscon-2026-castello-ibercoin/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/news/numismatica-encuentro-coleccionistas-pereira/",
       "lang": "en",
       "type": "news",
@@ -7002,6 +6174,15 @@
       "lastSlug": "primera-casa-moneda-filadelfia-firstival",
       "title": "Philadelphia marks the first U.S. Mint",
       "alternate": "/noticias/primera-casa-moneda-filadelfia-firstival/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/news/primera-hora-15-monedas-eeuu/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "primera-hora-15-monedas-eeuu",
+      "title": "Primera Hora reprises 15 U.S. coin varieties",
+      "alternate": "/noticias/primera-hora-15-monedas-eeuu/",
       "redirectTo": ""
     },
     {
@@ -7032,12 +6213,39 @@
       "redirectTo": ""
     },
     {
+      "path": "/en/news/stella-1879-coiled-hair-heritage-19-millones/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "stella-1879-coiled-hair-heritage-19-millones",
+      "title": "1879 Coiled Hair Stella: nearly US$1.9 million",
+      "alternate": "/noticias/stella-1879-coiled-hair-heritage-19-millones/",
+      "redirectTo": ""
+    },
+    {
       "path": "/en/news/tesoro-monedas-andalusies-cordoba-man/",
       "lang": "en",
       "type": "news",
       "lastSlug": "tesoro-monedas-andalusies-cordoba-man",
       "title": "Córdoba and the Andalusi treasure that strengthens the MAN",
       "alternate": "/noticias/tesoro-monedas-andalusies-cordoba-man/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/news/tesoro-oro-krkonose-598-monedas/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "tesoro-oro-krkonose-598-monedas",
+      "title": "598 gold coins in a can in Krkonoše",
+      "alternate": "/noticias/tesoro-oro-krkonose-598-monedas/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/news/wkrc-centavo-1969-s-doble-troquel/",
+      "lang": "en",
+      "type": "news",
+      "lastSlug": "wkrc-centavo-1969-s-doble-troquel",
+      "title": "WKRC reprises the 1969-S doubled-die cent",
+      "alternate": "/noticias/wkrc-centavo-1969-s-doble-troquel/",
       "redirectTo": ""
     },
     {
@@ -7057,726 +6265,6 @@
       "title": "Redirecting to: /en/news/",
       "alternate": "",
       "redirectTo": "/en/news/"
-    },
-    {
-      "path": "/en/noticias/15-monedas-eeuu-valen-fortuna/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "15-monedas-eeuu-valen-fortuna",
-      "title": "Redirecting to: /en/news/15-monedas-eeuu-valen-fortuna/",
-      "alternate": "",
-      "redirectTo": "/en/news/15-monedas-eeuu-valen-fortuna/"
-    },
-    {
-      "path": "/en/noticias/al-sur-del-mundo-subasta-2500-piezas/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "al-sur-del-mundo-subasta-2500-piezas",
-      "title": "Redirecting to: /en/news/al-sur-del-mundo-subasta-2500-piezas/",
-      "alternate": "",
-      "redirectTo": "/en/news/al-sur-del-mundo-subasta-2500-piezas/"
-    },
-    {
-      "path": "/en/noticias/bank-al-maghrib-moneda-27-anos-mohamed-vi/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "bank-al-maghrib-moneda-27-anos-mohamed-vi",
-      "title": "Redirecting to: /en/news/bank-al-maghrib-moneda-27-anos-mohamed-vi/",
-      "alternate": "",
-      "redirectTo": "/en/news/bank-al-maghrib-moneda-27-anos-mohamed-vi/"
-    },
-    {
-      "path": "/en/noticias/banxico-medallas-dinosaurios-casa-moneda/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "banxico-medallas-dinosaurios-casa-moneda",
-      "title": "Redirecting to: /en/news/banxico-medallas-dinosaurios-casa-moneda/",
-      "alternate": "",
-      "redirectTo": "/en/news/banxico-medallas-dinosaurios-casa-moneda/"
-    },
-    {
-      "path": "/en/noticias/bessent-moneda-250-anos-independencia-eeuu/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "bessent-moneda-250-anos-independencia-eeuu",
-      "title": "Redirecting to: /en/news/bessent-moneda-250-anos-independencia-eeuu/",
-      "alternate": "",
-      "redirectTo": "/en/news/bessent-moneda-250-anos-independencia-eeuu/"
-    },
-    {
-      "path": "/en/noticias/billete-1000-hidalgo-combo-mercado-libre/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-1000-hidalgo-combo-mercado-libre",
-      "title": "Redirecting to: /en/news/billete-1000-hidalgo-combo-mercado-libre/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-1000-hidalgo-combo-mercado-libre/"
-    },
-    {
-      "path": "/en/noticias/billete-10000-pesos-lazaro-cardenas-canje/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-10000-pesos-lazaro-cardenas-canje",
-      "title": "Redirecting to: /en/news/billete-10000-pesos-lazaro-cardenas-canje/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-10000-pesos-lazaro-cardenas-canje/"
-    },
-    {
-      "path": "/en/noticias/billete-2-dolares-serie-baja/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-2-dolares-serie-baja",
-      "title": "Redirecting to: /en/news/billete-2-dolares-serie-baja/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-2-dolares-serie-baja/"
-    },
-    {
-      "path": "/en/noticias/billete-20000-chile-serie-anverso-falla/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-20000-chile-serie-anverso-falla",
-      "title": "Redirecting to: /en/news/billete-20000-chile-serie-anverso-falla/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-20000-chile-serie-anverso-falla/"
-    },
-    {
-      "path": "/en/noticias/billete-50000-pesos-2001-serial-00000290/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-50000-pesos-2001-serial-00000290",
-      "title": "Redirecting to: /en/news/billete-50000-pesos-2001-serial-00000290/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-50000-pesos-2001-serial-00000290/"
-    },
-    {
-      "path": "/en/noticias/billete-50000-pesos-colombia-valor/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billete-50000-pesos-colombia-valor",
-      "title": "Redirecting to: /en/news/billete-50000-pesos-colombia-valor/",
-      "alternate": "",
-      "redirectTo": "/en/news/billete-50000-pesos-colombia-valor/"
-    },
-    {
-      "path": "/en/noticias/billetes-1-dolar-coleccionistas/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billetes-1-dolar-coleccionistas",
-      "title": "Redirecting to: /en/news/billetes-1-dolar-coleccionistas/",
-      "alternate": "",
-      "redirectTo": "/en/news/billetes-1-dolar-coleccionistas/"
-    },
-    {
-      "path": "/en/noticias/billetes-2-dolares-7-detalles/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billetes-2-dolares-7-detalles",
-      "title": "Redirecting to: /en/news/billetes-2-dolares-7-detalles/",
-      "alternate": "",
-      "redirectTo": "/en/news/billetes-2-dolares-7-detalles/"
-    },
-    {
-      "path": "/en/noticias/billetes-mexicanos-coleccionables/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "billetes-mexicanos-coleccionables",
-      "title": "Redirecting to: /en/news/billetes-mexicanos-coleccionables/",
-      "alternate": "",
-      "redirectTo": "/en/news/billetes-mexicanos-coleccionables/"
-    },
-    {
-      "path": "/en/noticias/bncr-monedas-conmemorativas-nicoya-abolicion/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "bncr-monedas-conmemorativas-nicoya-abolicion",
-      "title": "Redirecting to: /en/news/bncr-monedas-conmemorativas-nicoya-abolicion/",
-      "alternate": "",
-      "redirectTo": "/en/news/bncr-monedas-conmemorativas-nicoya-abolicion/"
-    },
-    {
-      "path": "/en/noticias/casa-moneda-condorito-fichas-conmemorativas/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "casa-moneda-condorito-fichas-conmemorativas",
-      "title": "Redirecting to: /en/news/casa-moneda-condorito-fichas-conmemorativas/",
-      "alternate": "",
-      "redirectTo": "/en/news/casa-moneda-condorito-fichas-conmemorativas/"
-    },
-    {
-      "path": "/en/noticias/casa-museo-cecilio-acosta-muestra-bandera-numismatica/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "casa-museo-cecilio-acosta-muestra-bandera-numismatica",
-      "title": "Redirecting to: /en/news/casa-museo-cecilio-acosta-muestra-bandera-numismatica/",
-      "alternate": "",
-      "redirectTo": "/en/news/casa-museo-cecilio-acosta-muestra-bandera-numismatica/"
-    },
-    {
-      "path": "/en/noticias/centavo-1919-greatcollections-298125/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "centavo-1919-greatcollections-298125",
-      "title": "Redirecting to: /en/news/centavo-1919-greatcollections-298125/",
-      "alternate": "",
-      "redirectTo": "/en/news/centavo-1919-greatcollections-298125/"
-    },
-    {
-      "path": "/en/noticias/centavo-1969-s-doble-troquel/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "centavo-1969-s-doble-troquel",
-      "title": "Redirecting to: /en/news/centavo-1969-s-doble-troquel/",
-      "alternate": "",
-      "redirectTo": "/en/news/centavo-1969-s-doble-troquel/"
-    },
-    {
-      "path": "/en/noticias/centenario-otras-8-monedas-valen-fortuna/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "centenario-otras-8-monedas-valen-fortuna",
-      "title": "Redirecting to: /en/news/centenario-otras-8-monedas-valen-fortuna/",
-      "alternate": "",
-      "redirectTo": "/en/news/centenario-otras-8-monedas-valen-fortuna/"
-    },
-    {
-      "path": "/en/noticias/coleccionistas-chaquenos-preservan-memoria/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "coleccionistas-chaquenos-preservan-memoria",
-      "title": "Redirecting to: /en/news/coleccionistas-chaquenos-preservan-memoria/",
-      "alternate": "",
-      "redirectTo": "/en/news/coleccionistas-chaquenos-preservan-memoria/"
-    },
-    {
-      "path": "/en/noticias/coleccionistas-rancagua-historias-objetos/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "coleccionistas-rancagua-historias-objetos",
-      "title": "Redirecting to: /en/news/coleccionistas-rancagua-historias-objetos/",
-      "alternate": "",
-      "redirectTo": "/en/news/coleccionistas-rancagua-historias-objetos/"
-    },
-    {
-      "path": "/en/noticias/colombia-8-reales-1762-heritage-195200/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "colombia-8-reales-1762-heritage-195200",
-      "title": "Redirecting to: /en/news/colombia-8-reales-1762-heritage-195200/",
-      "alternate": "",
-      "redirectTo": "/en/news/colombia-8-reales-1762-heritage-195200/"
-    },
-    {
-      "path": "/en/noticias/convencion-sociedad-numismatica-saltillo-2026/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "convencion-sociedad-numismatica-saltillo-2026",
-      "title": "Redirecting to: /en/news/convencion-sociedad-numismatica-saltillo-2026/",
-      "alternate": "",
-      "redirectTo": "/en/news/convencion-sociedad-numismatica-saltillo-2026/"
-    },
-    {
-      "path": "/en/noticias/costa-rica-8-escudos-1828-subasta/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "costa-rica-8-escudos-1828-subasta",
-      "title": "Redirecting to: /en/news/costa-rica-8-escudos-1828-subasta/",
-      "alternate": "",
-      "redirectTo": "/en/news/costa-rica-8-escudos-1828-subasta/"
-    },
-    {
-      "path": "/en/noticias/dime-1894-s-bowers-125-millones/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "dime-1894-s-bowers-125-millones",
-      "title": "Redirecting to: /en/news/dime-1894-s-bowers-125-millones/",
-      "alternate": "",
-      "redirectTo": "/en/news/dime-1894-s-bowers-125-millones/"
-    },
-    {
-      "path": "/en/noticias/dime-1894-s-contexto-tucuman/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "dime-1894-s-contexto-tucuman",
-      "title": "Redirecting to: /en/news/dime-1894-s-contexto-tucuman/",
-      "alternate": "",
-      "redirectTo": "/en/news/dime-1894-s-contexto-tucuman/"
-    },
-    {
-      "path": "/en/noticias/dolar-trump-vale-un-dolar/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "dolar-trump-vale-un-dolar",
-      "title": "Redirecting to: /en/news/dolar-trump-vale-un-dolar/",
-      "alternate": "",
-      "redirectTo": "/en/news/dolar-trump-vale-un-dolar/"
-    },
-    {
-      "path": "/en/noticias/dolar-trump-venta-fila-virtual/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "dolar-trump-venta-fila-virtual",
-      "title": "Redirecting to: /en/news/dolar-trump-venta-fila-virtual/",
-      "alternate": "",
-      "redirectTo": "/en/news/dolar-trump-venta-fila-virtual/"
-    },
-    {
-      "path": "/en/noticias/encuentro-coleccionistas-la-plata-2026/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "encuentro-coleccionistas-la-plata-2026",
-      "title": "Redirecting to: /en/news/encuentro-coleccionistas-la-plata-2026/",
-      "alternate": "",
-      "redirectTo": "/en/news/encuentro-coleccionistas-la-plata-2026/"
-    },
-    {
-      "path": "/en/noticias/exhibicion-peso-independiente-ohiggins-talca/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "exhibicion-peso-independiente-ohiggins-talca",
-      "title": "Redirecting to: /en/news/exhibicion-peso-independiente-ohiggins-talca/",
-      "alternate": "",
-      "redirectTo": "/en/news/exhibicion-peso-independiente-ohiggins-talca/"
-    },
-    {
-      "path": "/en/noticias/expo-coleccionismo-moneda-argentina-corrientes/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "expo-coleccionismo-moneda-argentina-corrientes",
-      "title": "Redirecting to: /en/news/expo-coleccionismo-moneda-argentina-corrientes/",
-      "alternate": "",
-      "redirectTo": "/en/news/expo-coleccionismo-moneda-argentina-corrientes/"
-    },
-    {
-      "path": "/en/noticias/exposicion-monedas-billetes-la-paz-bolivia/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "exposicion-monedas-billetes-la-paz-bolivia",
-      "title": "Redirecting to: /en/news/exposicion-monedas-billetes-la-paz-bolivia/",
-      "alternate": "",
-      "redirectTo": "/en/news/exposicion-monedas-billetes-la-paz-bolivia/"
-    },
-    {
-      "path": "/en/noticias/felipe-mateu-llopis-tesoro-numismatico/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "felipe-mateu-llopis-tesoro-numismatico",
-      "title": "Redirecting to: /en/news/felipe-mateu-llopis-tesoro-numismatico/",
-      "alternate": "",
-      "redirectTo": "/en/news/felipe-mateu-llopis-tesoro-numismatico/"
-    },
-    {
-      "path": "/en/noticias/flowing-hair-1794-valor-85-millones/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "flowing-hair-1794-valor-85-millones",
-      "title": "Redirecting to: /en/news/flowing-hair-1794-valor-85-millones/",
-      "alternate": "",
-      "redirectTo": "/en/news/flowing-hair-1794-valor-85-millones/"
-    },
-    {
-      "path": "/en/noticias/gobierno-monedas-oro-cerdo-iberico/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "gobierno-monedas-oro-cerdo-iberico",
-      "title": "Redirecting to: /en/news/gobierno-monedas-oro-cerdo-iberico/",
-      "alternate": "",
-      "redirectTo": "/en/news/gobierno-monedas-oro-cerdo-iberico/"
-    },
-    {
-      "path": "/en/noticias/iii-encuentro-numismatico-arequipa-2026/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "iii-encuentro-numismatico-arequipa-2026",
-      "title": "Redirecting to: /en/news/iii-encuentro-numismatico-arequipa-2026/",
-      "alternate": "",
-      "redirectTo": "/en/news/iii-encuentro-numismatico-arequipa-2026/"
-    },
-    {
-      "path": "/en/noticias/iv-congreso-numismatico-maracay-2026/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "iv-congreso-numismatico-maracay-2026",
-      "title": "Redirecting to: /en/news/iv-congreso-numismatico-maracay-2026/",
-      "alternate": "",
-      "redirectTo": "/en/news/iv-congreso-numismatico-maracay-2026/"
-    },
-    {
-      "path": "/en/noticias/jaca-dinero-sancho-ramirez-6000-euros/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "jaca-dinero-sancho-ramirez-6000-euros",
-      "title": "Redirecting to: /en/news/jaca-dinero-sancho-ramirez-6000-euros/",
-      "alternate": "",
-      "redirectTo": "/en/news/jaca-dinero-sancho-ramirez-6000-euros/"
-    },
-    {
-      "path": "/en/noticias/jornadas-nacionales-numismatica-la-plata-2026/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "jornadas-nacionales-numismatica-la-plata-2026",
-      "title": "Redirecting to: /en/news/jornadas-nacionales-numismatica-la-plata-2026/",
-      "alternate": "",
-      "redirectTo": "/en/news/jornadas-nacionales-numismatica-la-plata-2026/"
-    },
-    {
-      "path": "/en/noticias/legado-tren-oro-renacimiento-forint-hungria/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "legado-tren-oro-renacimiento-forint-hungria",
-      "title": "Redirecting to: /en/news/legado-tren-oro-renacimiento-forint-hungria/",
-      "alternate": "",
-      "redirectTo": "/en/news/legado-tren-oro-renacimiento-forint-hungria/"
-    },
-    {
-      "path": "/en/noticias/luis-lanza-ceca-valor-moneda-antigua/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "luis-lanza-ceca-valor-moneda-antigua",
-      "title": "Redirecting to: /en/news/luis-lanza-ceca-valor-moneda-antigua/",
-      "alternate": "",
-      "redirectTo": "/en/news/luis-lanza-ceca-valor-moneda-antigua/"
-    },
-    {
-      "path": "/en/noticias/man-239-monedas-numismatica-andalusi/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "man-239-monedas-numismatica-andalusi",
-      "title": "Redirecting to: /en/news/man-239-monedas-numismatica-andalusi/",
-      "alternate": "",
-      "redirectTo": "/en/news/man-239-monedas-numismatica-andalusi/"
-    },
-    {
-      "path": "/en/noticias/medalla-sistema-solar-heptagonal/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "medalla-sistema-solar-heptagonal",
-      "title": "Redirecting to: /en/news/medalla-sistema-solar-heptagonal/",
-      "alternate": "",
-      "redirectTo": "/en/news/medalla-sistema-solar-heptagonal/"
-    },
-    {
-      "path": "/en/noticias/mercado-numismatica-filatelia-placa-reial/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "mercado-numismatica-filatelia-placa-reial",
-      "title": "Redirecting to: /en/news/mercado-numismatica-filatelia-placa-reial/",
-      "alternate": "",
-      "redirectTo": "/en/news/mercado-numismatica-filatelia-placa-reial/"
-    },
-    {
-      "path": "/en/noticias/moneda-10-pesos-octogonal-chile/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-10-pesos-octogonal-chile",
-      "title": "Redirecting to: /en/news/moneda-10-pesos-octogonal-chile/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-10-pesos-octogonal-chile/"
-    },
-    {
-      "path": "/en/noticias/moneda-100-pesos-estado-mexico-primera-fase/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-100-pesos-estado-mexico-primera-fase",
-      "title": "Redirecting to: /en/news/moneda-100-pesos-estado-mexico-primera-fase/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-100-pesos-estado-mexico-primera-fase/"
-    },
-    {
-      "path": "/en/noticias/moneda-2-escudos-chile-1971-caupolican/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-2-escudos-chile-1971-caupolican",
-      "title": "Redirecting to: /en/news/moneda-2-escudos-chile-1971-caupolican/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-2-escudos-chile-1971-caupolican/"
-    },
-    {
-      "path": "/en/noticias/moneda-2-euros-alemania-2011-colonia/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-2-euros-alemania-2011-colonia",
-      "title": "Redirecting to: /en/news/moneda-2-euros-alemania-2011-colonia/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-2-euros-alemania-2011-colonia/"
-    },
-    {
-      "path": "/en/noticias/moneda-2-euros-austria-beethoven/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-2-euros-austria-beethoven",
-      "title": "Redirecting to: /en/news/moneda-2-euros-austria-beethoven/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-2-euros-austria-beethoven/"
-    },
-    {
-      "path": "/en/noticias/moneda-2-euros-grace-kelly/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-2-euros-grace-kelly",
-      "title": "Redirecting to: /en/news/moneda-2-euros-grace-kelly/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-2-euros-grace-kelly/"
-    },
-    {
-      "path": "/en/noticias/moneda-20-bicentenario-independencia-4-millones/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-20-bicentenario-independencia-4-millones",
-      "title": "Redirecting to: /en/news/moneda-20-bicentenario-independencia-4-millones/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-20-bicentenario-independencia-4-millones/"
-    },
-    {
-      "path": "/en/noticias/moneda-20-tenochtitlan-banorte-73000/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-20-tenochtitlan-banorte-73000",
-      "title": "Redirecting to: /en/news/moneda-20-tenochtitlan-banorte-73000/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-20-tenochtitlan-banorte-73000/"
-    },
-    {
-      "path": "/en/noticias/moneda-25-centavos-1962-ngc/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-25-centavos-1962-ngc",
-      "title": "Redirecting to: /en/news/moneda-25-centavos-1962-ngc/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-25-centavos-1962-ngc/"
-    },
-    {
-      "path": "/en/noticias/moneda-500-chile-doble-fecha-2000/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-500-chile-doble-fecha-2000",
-      "title": "Redirecting to: /en/news/moneda-500-chile-doble-fecha-2000/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-500-chile-doble-fecha-2000/"
-    },
-    {
-      "path": "/en/noticias/moneda-500-chile-rara-ensayos/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-500-chile-rara-ensayos",
-      "title": "Redirecting to: /en/news/moneda-500-chile-rara-ensayos/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-500-chile-rara-ensayos/"
-    },
-    {
-      "path": "/en/noticias/moneda-campeones-mundo-plata-edicion-limitada/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-campeones-mundo-plata-edicion-limitada",
-      "title": "Redirecting to: /en/news/moneda-campeones-mundo-plata-edicion-limitada/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-campeones-mundo-plata-edicion-limitada/"
-    },
-    {
-      "path": "/en/noticias/moneda-carausius-east-west-rail/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-carausius-east-west-rail",
-      "title": "Redirecting to: /en/news/moneda-carausius-east-west-rail/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-carausius-east-west-rail/"
-    },
-    {
-      "path": "/en/noticias/moneda-chipre-salamina-2500-anos/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-chipre-salamina-2500-anos",
-      "title": "Redirecting to: /en/news/moneda-chipre-salamina-2500-anos/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-chipre-salamina-2500-anos/"
-    },
-    {
-      "path": "/en/noticias/moneda-eeuu-1796-valor-185-millones/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-eeuu-1796-valor-185-millones",
-      "title": "Redirecting to: /en/news/moneda-eeuu-1796-valor-185-millones/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-eeuu-1796-valor-185-millones/"
-    },
-    {
-      "path": "/en/noticias/moneda-trump-250-aniversario-primeras/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-trump-250-aniversario-primeras",
-      "title": "Redirecting to: /en/news/moneda-trump-250-aniversario-primeras/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-trump-250-aniversario-primeras/"
-    },
-    {
-      "path": "/en/noticias/moneda-vaticano-papa-leon-xiv/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "moneda-vaticano-papa-leon-xiv",
-      "title": "Redirecting to: /en/news/moneda-vaticano-papa-leon-xiv/",
-      "alternate": "",
-      "redirectTo": "/en/news/moneda-vaticano-papa-leon-xiv/"
-    },
-    {
-      "path": "/en/noticias/monedas-100-chilenas-copihues-coleccionistas/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-100-chilenas-copihues-coleccionistas",
-      "title": "Redirecting to: /en/news/monedas-100-chilenas-copihues-coleccionistas/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-100-chilenas-copihues-coleccionistas/"
-    },
-    {
-      "path": "/en/noticias/monedas-25-centavos-valen-fortuna/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-25-centavos-valen-fortuna",
-      "title": "Redirecting to: /en/news/monedas-25-centavos-valen-fortuna/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-25-centavos-valen-fortuna/"
-    },
-    {
-      "path": "/en/noticias/monedas-anos-60-valen-150000/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-anos-60-valen-150000",
-      "title": "Redirecting to: /en/news/monedas-anos-60-valen-150000/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-anos-60-valen-150000/"
-    },
-    {
-      "path": "/en/noticias/monedas-eeuu-podrian-valer-143750/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-eeuu-podrian-valer-143750",
-      "title": "Redirecting to: /en/news/monedas-eeuu-podrian-valer-143750/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-eeuu-podrian-valer-143750/"
-    },
-    {
-      "path": "/en/noticias/monedas-guatemala-quetzal-plata-pagos-electronicos/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-guatemala-quetzal-plata-pagos-electronicos",
-      "title": "Redirecting to: /en/news/monedas-guatemala-quetzal-plata-pagos-electronicos/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-guatemala-quetzal-plata-pagos-electronicos/"
-    },
-    {
-      "path": "/en/noticias/monedas-mexicanas-valen-miles-pesos/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-mexicanas-valen-miles-pesos",
-      "title": "Redirecting to: /en/news/monedas-mexicanas-valen-miles-pesos/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-mexicanas-valen-miles-pesos/"
-    },
-    {
-      "path": "/en/noticias/monedas-oro-robadas-museo-albacete-valor/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-oro-robadas-museo-albacete-valor",
-      "title": "Redirecting to: /en/news/monedas-oro-robadas-museo-albacete-valor/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-oro-robadas-museo-albacete-valor/"
-    },
-    {
-      "path": "/en/noticias/monedas-spiderman-plata-999-relieve-3d/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "monedas-spiderman-plata-999-relieve-3d",
-      "title": "Redirecting to: /en/news/monedas-spiderman-plata-999-relieve-3d/",
-      "alternate": "",
-      "redirectTo": "/en/news/monedas-spiderman-plata-999-relieve-3d/"
-    },
-    {
-      "path": "/en/noticias/muestra-billetes-antiguos-tabasco-septiembre/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "muestra-billetes-antiguos-tabasco-septiembre",
-      "title": "Redirecting to: /en/news/muestra-billetes-antiguos-tabasco-septiembre/",
-      "alternate": "",
-      "redirectTo": "/en/news/muestra-billetes-antiguos-tabasco-septiembre/"
-    },
-    {
-      "path": "/en/noticias/muestra-monedas-historia-jaca/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "muestra-monedas-historia-jaca",
-      "title": "Redirecting to: /en/news/muestra-monedas-historia-jaca/",
-      "alternate": "",
-      "redirectTo": "/en/news/muestra-monedas-historia-jaca/"
-    },
-    {
-      "path": "/en/noticias/mundial-2026-moneda-conmemorativa-espana/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "mundial-2026-moneda-conmemorativa-espana",
-      "title": "Redirecting to: /en/news/mundial-2026-moneda-conmemorativa-espana/",
-      "alternate": "",
-      "redirectTo": "/en/news/mundial-2026-moneda-conmemorativa-espana/"
-    },
-    {
-      "path": "/en/noticias/numismatica-encuentro-coleccionistas-pereira/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "numismatica-encuentro-coleccionistas-pereira",
-      "title": "Redirecting to: /en/news/numismatica-encuentro-coleccionistas-pereira/",
-      "alternate": "",
-      "redirectTo": "/en/news/numismatica-encuentro-coleccionistas-pereira/"
-    },
-    {
-      "path": "/en/noticias/paysandu-primer-encuentro-numismatico/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "paysandu-primer-encuentro-numismatico",
-      "title": "Redirecting to: /en/news/paysandu-primer-encuentro-numismatico/",
-      "alternate": "",
-      "redirectTo": "/en/news/paysandu-primer-encuentro-numismatico/"
-    },
-    {
-      "path": "/en/noticias/primera-casa-moneda-filadelfia-firstival/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "primera-casa-moneda-filadelfia-firstival",
-      "title": "Redirecting to: /en/news/primera-casa-moneda-filadelfia-firstival/",
-      "alternate": "",
-      "redirectTo": "/en/news/primera-casa-moneda-filadelfia-firstival/"
-    },
-    {
-      "path": "/en/noticias/raul-canales-billetes-chilenos-notafilia/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "raul-canales-billetes-chilenos-notafilia",
-      "title": "Redirecting to: /en/news/raul-canales-billetes-chilenos-notafilia/",
-      "alternate": "",
-      "redirectTo": "/en/news/raul-canales-billetes-chilenos-notafilia/"
-    },
-    {
-      "path": "/en/noticias/robo-tesoro-villena-museos-badajoz-albacete/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "robo-tesoro-villena-museos-badajoz-albacete",
-      "title": "Redirecting to: /en/news/robo-tesoro-villena-museos-badajoz-albacete/",
-      "alternate": "",
-      "redirectTo": "/en/news/robo-tesoro-villena-museos-badajoz-albacete/"
-    },
-    {
-      "path": "/en/noticias/se-agotan-dolares-conmemorativos-trump/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "se-agotan-dolares-conmemorativos-trump",
-      "title": "Redirecting to: /en/news/se-agotan-dolares-conmemorativos-trump/",
-      "alternate": "",
-      "redirectTo": "/en/news/se-agotan-dolares-conmemorativos-trump/"
-    },
-    {
-      "path": "/en/noticias/tesoro-monedas-andalusies-cordoba-man/",
-      "lang": "en",
-      "type": "news",
-      "lastSlug": "tesoro-monedas-andalusies-cordoba-man",
-      "title": "Redirecting to: /en/news/tesoro-monedas-andalusies-cordoba-man/",
-      "alternate": "",
-      "redirectTo": "/en/news/tesoro-monedas-andalusies-cordoba-man/"
     },
     {
       "path": "/en/notofilia-vs-colombian-banknote-catalogs/",
@@ -7840,6 +6328,24 @@
       "title": "Redirecting to: /en/about/",
       "alternate": "",
       "redirectTo": "/en/about/"
+    },
+    {
+      "path": "/en/tools/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "tools",
+      "title": "Reference tools",
+      "alternate": "/herramientas/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/tools/fancy-serial-checker/",
+      "lang": "en",
+      "type": "other",
+      "lastSlug": "fancy-serial-checker",
+      "title": "Fancy serial checker",
+      "alternate": "/herramientas/numeracion-especial/",
+      "redirectTo": ""
     },
     {
       "path": "/glosario/",
@@ -9174,6 +7680,33 @@
       "redirectTo": ""
     },
     {
+      "path": "/herramientas/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "herramientas",
+      "title": "Herramientas de referencia",
+      "alternate": "/en/tools/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/herramientas/numeracion-especial/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "numeracion-especial",
+      "title": "Clasificador de numeración especial",
+      "alternate": "/en/tools/fancy-serial-checker/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/identificar/",
+      "lang": "es",
+      "type": "other",
+      "lastSlug": "identificar",
+      "title": "Identificar una pieza",
+      "alternate": "/en/identify/",
+      "redirectTo": ""
+    },
+    {
       "path": "/nosotros/",
       "lang": "es",
       "type": "other",
@@ -9435,6 +7968,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/noticias/dolar-eisenhower-1976-no-s-coinweek/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "dolar-eisenhower-1976-no-s-coinweek",
+      "title": "El Eisenhower 1976 No S hallado en un registro",
+      "alternate": "/en/news/dolar-eisenhower-1976-no-s-coinweek/",
+      "redirectTo": ""
+    },
+    {
       "path": "/noticias/dolar-trump-vale-un-dolar/",
       "lang": "es",
       "type": "news",
@@ -9585,6 +8127,15 @@
       "lastSlug": "medalla-sistema-solar-heptagonal",
       "title": "Medalla heptagonal del Sistema Solar",
       "alternate": "/en/news/medalla-sistema-solar-heptagonal/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/noticias/medios-dolares-911-privy-never-forget/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "medios-dolares-911-privy-never-forget",
+      "title": "La Mint ofrece medios dólares 9/11 NEVER FORGET",
+      "alternate": "/en/news/medios-dolares-911-privy-never-forget/",
       "redirectTo": ""
     },
     {
@@ -9849,6 +8400,15 @@
       "redirectTo": ""
     },
     {
+      "path": "/noticias/numiscon-2026-castello-ibercoin/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "numiscon-2026-castello-ibercoin",
+      "title": "Numiscon 2026: monedas e inversión en Castelló",
+      "alternate": "/en/news/numiscon-2026-castello-ibercoin/",
+      "redirectTo": ""
+    },
+    {
       "path": "/noticias/numismatica-encuentro-coleccionistas-pereira/",
       "lang": "es",
       "type": "news",
@@ -9873,6 +8433,15 @@
       "lastSlug": "primera-casa-moneda-filadelfia-firstival",
       "title": "Filadelfia celebra la primera Casa de Moneda de EE. UU.",
       "alternate": "/en/news/primera-casa-moneda-filadelfia-firstival/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/noticias/primera-hora-15-monedas-eeuu/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "primera-hora-15-monedas-eeuu",
+      "title": "Primera Hora retoma 15 variedades de EE.UU.",
+      "alternate": "/en/news/primera-hora-15-monedas-eeuu/",
       "redirectTo": ""
     },
     {
@@ -9903,12 +8472,39 @@
       "redirectTo": ""
     },
     {
+      "path": "/noticias/stella-1879-coiled-hair-heritage-19-millones/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "stella-1879-coiled-hair-heritage-19-millones",
+      "title": "Stella 1879 Coiled Hair a casi US$1,9 millones",
+      "alternate": "/en/news/stella-1879-coiled-hair-heritage-19-millones/",
+      "redirectTo": ""
+    },
+    {
       "path": "/noticias/tesoro-monedas-andalusies-cordoba-man/",
       "lang": "es",
       "type": "news",
       "lastSlug": "tesoro-monedas-andalusies-cordoba-man",
       "title": "Córdoba y el tesoro andalusí que refuerza al MAN",
       "alternate": "/en/news/tesoro-monedas-andalusies-cordoba-man/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/noticias/tesoro-oro-krkonose-598-monedas/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "tesoro-oro-krkonose-598-monedas",
+      "title": "598 monedas de oro en una lata en Krkonoše",
+      "alternate": "/en/news/tesoro-oro-krkonose-598-monedas/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/noticias/wkrc-centavo-1969-s-doble-troquel/",
+      "lang": "es",
+      "type": "news",
+      "lastSlug": "wkrc-centavo-1969-s-doble-troquel",
+      "title": "WKRC retoma el centavo 1969-S de doble troquel",
+      "alternate": "/en/news/wkrc-centavo-1969-s-doble-troquel/",
       "redirectTo": ""
     },
     {
