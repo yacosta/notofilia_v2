@@ -39,6 +39,18 @@ const added = [
   'nature-print',
   'handstamp',
   'grayback',
+  'demand-note',
+  'united-states-note',
+  'greenback',
+  'billete-de-banco-nacional',
+  'certificado-de-oro',
+  'certificado-de-plata',
+  'treasury-note',
+  'tamano-grande',
+  'gonzalez-white',
+  'hernandez',
+  'junta-de-conversion',
+  'dinero-mickey-mouse',
 ];
 
 describe('glossary catalogue terms', () => {
@@ -60,7 +72,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 147);
+    assert.equal(glossaryTerms.length, 159);
   });
 
   it('gives remainder a long bilingual definition', () => {
