@@ -2,8 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
+import PieceSiblings from './PieceSiblings.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import { seriesPath } from '../../data/colombia';
 import {
   notePageCopy,
@@ -11,6 +14,7 @@ import {
   notePieces,
   noteSerialLine,
   noteSeriesLabel,
+  notesForChapter,
   type ColombiaNote,
   type ColombiaNotePiece,
 } from '../../data/colombia-notes';
@@ -41,17 +45,44 @@ if (hero && !heroAlt) {
 const seriesLabel = noteSeriesLabel(note, locale);
 const pickLabel = note.pickLabel?.[locale] ?? t.pickLabel;
 const historyHeading = note.historyHeading?.[locale] ?? t.historyHeading;
-const jsonLd = visualArtworkJsonLd({
-  name: note.title[locale],
-  description: note.lead[locale],
-  url: pathname,
-  image: note.images.front,
+const seo = piecePageMeta({
+  kind: 'note',
+  title: note.title[locale],
+  kicker: note.kicker[locale],
+  lead: note.lead[locale],
   locale,
-  artform: 'Banknote',
-  catalogNumber: note.pick,
-  serial: serialLine,
-  gradingService: inferGradingService(note.grade[locale]),
+  country: 'Colombia',
 });
+const crumbItems = [
+  { href: localizePath('/', locale), label: copy[locale].home },
+  { href: seriesPath(locale), label: seriesLabel },
+  { label: seo.h1 },
+];
+const siblings = pieceSiblings(notesForChapter(note.chapterId), note.path);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    breadcrumbList(
+      [
+        { name: copy[locale].home, path: '/' },
+        { name: seriesLabel, path: seriesPath(locale) },
+        { name: seo.h1, path: pathname },
+      ],
+      locale,
+    ),
+    visualArtworkJsonLd({
+      name: seo.h1,
+      description: seo.description,
+      url: pathname,
+      image: note.images.front,
+      locale,
+      artform: 'Banknote',
+      catalogNumber: note.pick,
+      serial: serialLine,
+      gradingService: inferGradingService(note.grade[locale]),
+    }),
+  ],
+};
 
 function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
   return `${piece.id}-${slot}`;
@@ -59,14 +90,14 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
 ---
 
 <Layout
-  title={`${note.title[locale]} | Notofilia`}
-  description={note.lead[locale]}
+  title={seo.documentTitle}
+  description={seo.description}
   locale={locale}
   pathname={pathname}
   ogImage={note.images.front}
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...jsonLd })} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
   <main id="main-content" tabindex="-1" class:list={['bg-bg outline-none', hero && 'relative w-full']}>
     {
@@ -78,20 +109,14 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
           height={hero.height}
           headingId="note-heading"
           eyebrow={note.kicker[locale]}
-          title={note.title[locale]}
+          title={seo.h1}
+          subtitle={seo.subtitle}
         />
       ) : null
     }
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <Breadcrumb
-        locale={locale}
-        items={[
-          { href: localizePath('/', locale), label: copy[locale].home },
-          { href: seriesPath(locale), label: seriesLabel },
-          { label: note.title[locale] },
-        ]}
-      />
+      <Breadcrumb locale={locale} items={crumbItems} />
 
       {
         hero ? null : (
@@ -99,9 +124,10 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
             <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
               {note.kicker[locale]}
             </p>
-            <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-              {note.title[locale]}
+            <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+              {seo.h1}
             </h1>
+            <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
           </>
         )
       }
@@ -210,6 +236,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     locale={locale}
                     width={1440}
                     height={960}
+                    eager={piece.id === pieces[0]?.id}
                   />
                   <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.frontCaption[locale]}</figcaption>
                 </figure>
@@ -234,7 +261,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     <NarrativeHeading id={pieceHeadingId(piece, 'about')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                       {t.aboutHeading}
                     </NarrativeHeading>
-                    <p class="m-0 text-[17px]/7 text-cream">{piece.description[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(piece.description[locale], locale)} />
                   </section>
                 )
               }
@@ -245,7 +272,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                       {historyHeading}
                     </h2>
-                    <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+                    <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.history[locale], locale)} />
                   </section>
                 ) : null
               }
@@ -283,14 +310,14 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
               <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                 {t.aboutHeading}
               </h2>
-              <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.description[locale], locale)} />
             </section>
             {note.history ? (
               <section class="mt-12" aria-labelledby="history-heading">
                 <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
                   {historyHeading}
                 </h2>
-                <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+                <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.history[locale], locale)} />
               </section>
             ) : null}
             <section class="mt-12" aria-labelledby="scarcity-heading">
@@ -311,7 +338,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
             <h2 id="history-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
               {historyHeading}
             </h2>
-            <p class="m-0 text-[17px]/7 text-cream">{note.history[locale]}</p>
+            <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.history[locale], locale)} />
           </section>
         ) : null
       }
@@ -319,6 +346,25 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
       </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={
+          siblings.prev
+            ? { href: notePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front }
+            : undefined
+        }
+        next={
+          siblings.next
+            ? { href: notePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front }
+            : undefined
+        }
+        related={siblings.related.map((item) => ({
+          href: notePath(item, locale),
+          title: item.title[locale],
+          image: item.images.front,
+        }))}
+      />
 
       <p class="mt-12">
         <a
