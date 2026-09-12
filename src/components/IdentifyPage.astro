@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
 import { identifyCopy, identifyPath } from '../data/identify';
+import { identifyCounterfeitPath } from '../data/identify-counterfeit';
 import { searchPath } from '../data/search';
 import identifyIndex from '../data/identify-index.json';
 import type { IdentifyIndex } from '../lib/identify';
@@ -105,6 +106,14 @@ const ui = {
           }
         </ol>
       </section>
+
+      <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-cream">
+        {t.counterfeitLead}
+        {' '}
+        <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={identifyCounterfeitPath(locale)}>
+          {t.counterfeitLink}
+        </a>
+      </p>
 
       <section class="mb-12" aria-labelledby="identify-capture">
         <h2 id="identify-capture" class="mb-2 mt-0 font-display text-[1.35rem] font-normal text-cream">
