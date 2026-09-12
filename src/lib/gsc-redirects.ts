@@ -31,7 +31,27 @@ export function stripDreamweaverSuffix(pathname: string): string | undefined {
   return stripped;
 }
 
+/** Spanish path segments leftover under `/en/` → English counterparts. */
+export function rewriteEnSpanishPrefix(pathname: string): string | undefined {
+  for (const [from, to] of [
+    ['/en/glosario/', '/en/glossary/'],
+    ['/en/noticias/', '/en/news/'],
+  ] as const) {
+    if (pathname === from.slice(0, -1)) return to;
+    if (pathname.startsWith(from) || pathname === from) {
+      const target = `${to}${pathname.slice(from.length)}`;
+      return target.endsWith('/') ? target : `${target}/`;
+    }
+  }
+  return undefined;
+}
+
 export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined {
+  const prefixTarget = rewriteEnSpanishPrefix(pathname);
+  if (prefixTarget) {
+    return { target: prefixTarget, status: 301, rule: 'prefix-locale' };
+  }
+
   for (const key of variants(pathname)) {
     const hit = data.redirects[key];
     if (hit && (hit.status === 301 || hit.status === 410)) {

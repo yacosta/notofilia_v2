@@ -67,8 +67,9 @@ describe('mobile chrome patch', () => {
 });
 
 describe('PageSpeed-oriented build settings', () => {
-  it('inlines stylesheets and loads Subscribe with Google only on click', () => {
-    assert.match(astroConfig, /inlineStylesheets:\s*'always'/);
+  it('inlines stylesheets automatically and loads Subscribe with Google only on click', () => {
+    assert.match(astroConfig, /compressHTML:\s*true/);
+    assert.match(astroConfig, /inlineStylesheets:\s*'auto'/);
     assert.doesNotMatch(layout, /publisher\.js/);
     assert.doesNotMatch(googlePreferred, /requestIdleCallback/);
     assert.match(googlePreferred, /loadSwgPublisher/);
