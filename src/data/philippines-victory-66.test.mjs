@@ -63,4 +63,10 @@ describe('Philippines Victory Series No. 66 overview', () => {
     assert.match(pageSource, /t\.missingDenoms/);
     assert.match(pageSource, /t\.signaturePairs/);
   });
+
+  it('shows holdings in a three-up grid on large screens', () => {
+    const threeUp = pageSource.match(/sm:grid-cols-2 lg:grid-cols-3/g);
+    assert.equal(threeUp?.length, 2);
+    assert.doesNotMatch(pageSource, /lg:grid-cols-4/);
+  });
 });
