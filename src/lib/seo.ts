@@ -19,6 +19,7 @@ import { footerLinksFromNav, megaNav } from './mega-nav';
 import { SITE_URL, type Locale } from './site-url';
 
 export { SITE_URL, type Locale } from './site-url';
+export { limitMetaDescription, META_DESCRIPTION_MAX } from './piece-seo';
 
 export const SITE_NAME = 'Notofilia';
 export const SITE_AUTHOR = 'Yezid Acosta';
