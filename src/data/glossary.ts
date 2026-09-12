@@ -15,12 +15,65 @@ export type GlossaryCategoryId =
 
 export type GlossaryTerm = {
   slug: string;
+  slugEn: string;
   id: string;
   category: GlossaryCategoryId;
   title: { es: string; en: string };
   definition: { es: string; en: string };
   seeAlso: string[];
 };
+
+type GlossaryTermRecord = Omit<GlossaryTerm, 'slugEn'>;
+
+export function slugifyEnglish(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, ' and ')
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+}
+
+/** Keeper English URL segments (and any title that would collide). */
+const GLOSSARY_SLUG_EN: Record<string, string> = {
+  anverso: 'obverse',
+  'banca-libre': 'free-banking',
+  'billete-de-reemplazo-estrella': 'replacement-star-note',
+  'billete-provisional': 'provisional-note',
+  'columnario-de-dos-mundos': 'pillar-dollar',
+  'dispositivo-opticamente-variable-ovd': 'optically-variable-device-ovd',
+  encapsulado: 'slab',
+  'error-de-impresion': 'printing-error',
+  filigrana: 'watermark',
+  'hilo-de-seguridad': 'security-thread',
+  mariposa: 'butterfly',
+  notafilia: 'notaphily',
+  numeracion: 'serial-number',
+  'numeracion-especial': 'fancy-serial-number',
+  numismatica: 'numismatics',
+  'peso-oro': 'gold-peso',
+  pick: 'pick',
+  'pmg-pcgs': 'pmg-pcgs',
+  polimero: 'polymer',
+  'prueba-ensayo': 'proof-essay',
+  resello: 'overstamp',
+  reverso: 'reverse',
+  'tinta-ovi': 'ovi-ink',
+  'ventana-transparente': 'clear-window',
+};
+
+function withEnglishSlugs(records: GlossaryTermRecord[]): GlossaryTerm[] {
+  const used = new Set<string>();
+  return records.map((term) => {
+    let slugEn = GLOSSARY_SLUG_EN[term.slug] ?? slugifyEnglish(term.title.en) || term.slug;
+    if (used.has(slugEn)) slugEn = `${slugEn}-${term.slug}`;
+    used.add(slugEn);
+    return { ...term, slugEn };
+  });
+}
 
 /**
  * Keep list: standalone glossary URLs (25–40). Chosen for collector/search
@@ -83,7 +136,7 @@ export const glossaryCategories: { id: GlossaryCategoryId; es: string; en: strin
   { id: "Disciplina", es: "Disciplina", en: "Discipline" },
 ];
 
-export const glossaryTerms: GlossaryTerm[] = [
+const glossaryTermRecords: GlossaryTermRecord[] = [
   {
     slug: "abrasiones",
     id: "abrasiones",
@@ -1262,51 +1315,75 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
 ];
 
+export const glossaryTerms: GlossaryTerm[] = withEnglishSlugs(glossaryTermRecords);
+
 const termsBySlug = new Map(glossaryTerms.map((term) => [term.slug, term]));
+const termsBySlugEn = new Map(glossaryTerms.map((term) => [term.slugEn, term]));
 
 export function glossaryTermBySlug(slug: string): GlossaryTerm | undefined {
-  return termsBySlug.get(slug);
+  return termsBySlug.get(slug) ?? termsBySlugEn.get(slug);
+}
+
+export function glossarySlugForLocale(term: GlossaryTerm, locale: Locale): string {
+  return locale === 'en' ? term.slugEn : term.slug;
 }
 
 export function glossaryPath(locale: Locale): string {
   return localizePath(GLOSSARY_PATH, locale);
 }
 
-/** Always the standalone-style URL (`/glosario/<slug>/`), including folded slugs (redirect sources). */
+/** Always the standalone-style URL, including folded slugs (redirect sources). */
 export function glossaryTermPath(slug: string, locale: Locale): string {
-  return `${glossaryPath(locale)}${slug}/`;
+  const term = glossaryTermBySlug(slug);
+  const segment = term ? glossarySlugForLocale(term, locale) : slug;
+  return `${glossaryPath(locale)}${segment}/`;
 }
 
 /** Public href: standalone page, or index hash for folded terms. */
 export function glossaryTermHref(slug: string, locale: Locale): string {
   const term = glossaryTermBySlug(slug);
   const id = term?.id ?? slug;
-  if (isStandaloneGlossaryTerm(slug)) return glossaryTermPath(slug, locale);
+  const key = term?.slug ?? slug;
+  if (isStandaloneGlossaryTerm(key)) return glossaryTermPath(key, locale);
   return `${glossaryPath(locale)}#${id}`;
 }
 
 /** 301 target for a retired term URL. Query, not hash: CDN Location headers drop fragments. */
 export function glossaryFoldedRedirectTarget(slug: string, locale: Locale): string {
-  if (isStandaloneGlossaryTerm(slug)) return glossaryTermPath(slug, locale);
-  return `${glossaryPath(locale)}?term=${encodeURIComponent(slug)}`;
+  const term = glossaryTermBySlug(slug);
+  const key = term?.slug ?? slug;
+  if (isStandaloneGlossaryTerm(key) && term) return glossaryTermPath(term.slug, locale);
+  const query = term ? glossarySlugForLocale(term, locale) : slug;
+  return `${glossaryPath(locale)}?term=${encodeURIComponent(query)}`;
+}
+
+function addRedirect(out: Record<string, string>, from: string, to: string) {
+  if (from === to) return;
+  out[from] = to;
 }
 
 /**
- * Astro `redirects` map. Hash fragments are stripped from `Location` headers,
- * so folded URLs land on `?term=<slug>`; the index then scrolls to `#<slug>`.
+ * Astro / worker `redirects` map. Hash fragments are stripped from `Location` headers,
+ * so folded URLs land on `?term=<slug>`; the index then scrolls to `#<id>`.
+ * English keepers move Spanish-slug EN URLs in one hop; folded EN uses the English query.
  */
 export function glossaryRedirects(): Record<string, string> {
   const out: Record<string, string> = {};
   for (const term of glossaryTerms) {
+    const enPage = glossaryTermPath(term.slug, 'en');
+    const enFolded = glossaryFoldedRedirectTarget(term.slug, 'en');
+    const esFolded = glossaryFoldedRedirectTarget(term.slug, 'es');
     if (isStandaloneGlossaryTerm(term.slug)) {
-      out[`/en/glosario/${term.slug}/`] = glossaryTermPath(term.slug, 'en');
+      addRedirect(out, `/en/glossary/${term.slug}/`, enPage);
+      addRedirect(out, `/en/glosario/${term.slug}/`, enPage);
+      addRedirect(out, `/en/glosario/${term.slugEn}/`, enPage);
       continue;
     }
-    const esTarget = glossaryFoldedRedirectTarget(term.slug, 'es');
-    const enTarget = glossaryFoldedRedirectTarget(term.slug, 'en');
-    out[`/glosario/${term.slug}/`] = esTarget;
-    out[`/en/glossary/${term.slug}/`] = enTarget;
-    out[`/en/glosario/${term.slug}/`] = enTarget;
+    addRedirect(out, `/glosario/${term.slug}/`, esFolded);
+    addRedirect(out, `/en/glossary/${term.slug}/`, enFolded);
+    addRedirect(out, `/en/glossary/${term.slugEn}/`, enFolded);
+    addRedirect(out, `/en/glosario/${term.slug}/`, enFolded);
+    addRedirect(out, `/en/glosario/${term.slugEn}/`, enFolded);
   }
   return out;
 }
@@ -1360,7 +1437,7 @@ export const glossaryCopy = {
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     glossary: 'Glosario',
-    termTitle: (name: string) => `${name} · Glosario · Notofilia`,
+    termTitle: (name: string) => `${name}: glosario de notafilia y numismática | Notofilia`,
   },
   en: {
     metaTitle: 'Glossary of Numismatics and Notaphily · Notofilia',
@@ -1386,7 +1463,7 @@ export const glossaryCopy = {
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     glossary: 'Glossary',
-    termTitle: (name: string) => `${name} · Glossary · Notofilia`,
+    termTitle: (name: string) => `${name}: notaphily and numismatics glossary | Notofilia`,
   },
 } as const;
 

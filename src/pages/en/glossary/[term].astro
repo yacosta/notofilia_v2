@@ -4,7 +4,7 @@ import { standaloneGlossaryTerms } from '../../../data/glossary';
 
 export function getStaticPaths() {
   return standaloneGlossaryTerms().map((term) => ({
-    params: { term: term.slug },
+    params: { term: term.slugEn },
     props: { term },
   }));
 }
