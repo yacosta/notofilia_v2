@@ -3,8 +3,7 @@
 # run_worker_first: true, so the worker lookup is the mechanism that actually 301s/410s.
 # Safe Dreamweaver suffix: only when the stripped path is a live v2 URL (handled in worker).
 # Do not catch-all to /. Do not duplicate www→apex (Cloudflare SSL/apex).
-/en/glosario/*   /en/glossary/:splat   301
-/en/noticias/*   /en/news/:splat       301
+# Splats must come after static 301s: a splat earlier in the file makes every later rule dynamic (max 100).
 /about /en/about/ 301
 /billete-adrian-insurance-company-michigan.dc /coleccion/estados-unidos/ 301
 /billete-certificado-de-oro-10-dolares-1928.dc /coleccion/estados-unidos/ 301
@@ -482,3 +481,5 @@
 /paises-bajos-numismatica/ducado-utrecht-1761 /coleccion/paises-bajos-numismatica/ducado-utrecht-1761/ 301
 /perfil-german-gutierrez-de-pineres.dc.html /coleccion/colombia/ 301
 /sobre-mi /acerca-de/ 301
+/en/glosario/*   /en/glossary/:splat   301
+/en/noticias/*   /en/news/:splat       301

@@ -202,8 +202,7 @@ staticLines.push('# 410 Gone is applied in src/worker.ts (Workers _redirects onl
 staticLines.push('# run_worker_first: true, so the worker lookup is the mechanism that actually 301s/410s.');
 staticLines.push('# Safe Dreamweaver suffix: only when the stripped path is a live v2 URL (handled in worker).');
 staticLines.push('# Do not catch-all to /. Do not duplicate www→apex (Cloudflare SSL/apex).');
-staticLines.push('/en/glosario/*   /en/glossary/:splat   301');
-staticLines.push('/en/noticias/*   /en/news/:splat       301');
+staticLines.push('# Splats must come after static 301s: a splat earlier in the file makes every later rule dynamic (max 100).');
 
 const static301 = rows.filter((r) => r.status === 301 && r.rule !== 'exists');
 if (static301.length > 2000) {
@@ -212,6 +211,8 @@ if (static301.length > 2000) {
 for (const row of static301.slice(0, 2000)) {
   staticLines.push(`${row.source} ${row.target} 301`);
 }
+staticLines.push('/en/glosario/*   /en/glossary/:splat   301');
+staticLines.push('/en/noticias/*   /en/news/:splat       301');
 writeFileSync(publicRedirects, `${staticLines.join('\n')}\n`);
 
 const summary = {
