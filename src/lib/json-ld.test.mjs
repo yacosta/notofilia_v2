@@ -41,6 +41,21 @@ describe('catalogue VisualArtwork JSON-LD', () => {
     assert.equal(bare.publisher, undefined);
     assert.equal(bare.additionalProperty, undefined);
   });
+
+  it('adds creditText, license, and acquireLicensePage on ImageObject', () => {
+    const node = visualArtworkJsonLd({
+      name: 'Billete',
+      description: 'Lead',
+      url: '/coleccion/colombia/2000-pesos-oro-1983/',
+      image: '/images/catalog/colombia/2000-pesos-oro-1983-front.jpg',
+      locale: 'es',
+      artform: 'Banknote',
+    });
+    assert.equal(node.image['@type'], 'ImageObject');
+    assert.match(node.image.creditText, /Yezid Acosta/);
+    assert.equal(node.image.license, 'https://notofilia.com/editorial/');
+    assert.equal(node.image.acquireLicensePage, 'https://notofilia.com/contacto/');
+  });
 });
 
 describe('glossary and FAQ JSON-LD', () => {

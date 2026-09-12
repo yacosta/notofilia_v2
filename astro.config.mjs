@@ -1,14 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import { glossaryRedirects } from './src/data/glossary.ts';
-import { newsEnglishRedirects } from './src/lib/content-slugs.ts';
-import { englishRedirects } from './src/lib/locale-paths.ts';
-
-const generated = englishRedirects();
-// Folded glossary URLs 301 to `?term=` because CDN Location headers drop hash fragments.
-// English glossary/news last segments 301 from old Spanish-slug EN URLs in one hop.
-Object.assign(generated, glossaryRedirects(), newsEnglishRedirects());
 
 export default defineConfig({
   site: 'https://notofilia.com',
@@ -90,7 +82,6 @@ export default defineConfig({
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     '/en/blog/ringling-bros-barnum-bailey-circus/':
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
-    ...generated,
   },
   vite: {
     plugins: [
