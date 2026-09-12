@@ -75,12 +75,16 @@ export function parsePieceTitleParts(input: {
 }): PieceTitleParts {
   const chunks = input.title.split(/\s·\s/).map((part) => part.trim()).filter(Boolean);
   let denomination = chunks[0] ?? input.title;
-  let issuer = chunks.length >= 2 ? chunks[1] : '';
+  let issuer = chunks.length >= 3 ? chunks[1] : '';
   let year = chunks.length >= 3 ? lastYearToken(chunks[chunks.length - 1]) : lastYearToken(input.title);
+  if (chunks.length === 2 && /^(1[5-9]\d{2}|20\d{2})$/.test(chunks[1])) {
+    year = chunks[1];
+    issuer = '';
+  }
   if (!year) year = lastYearToken(input.kicker ?? '') || '';
-  if (!issuer) {
+  if (!issuer || /^(1[5-9]\d{2}|20\d{2})$/.test(issuer)) {
     const kickerBits = (input.kicker ?? '').split(/\s·\s/).map((part) => part.trim()).filter(Boolean);
-    issuer = kickerBits[1] ?? kickerBits[0] ?? (input.locale === 'en' ? 'Issuer' : 'Emisor');
+    issuer = kickerBits.find((bit) => !/^(1[5-9]\d{2}|20\d{2})$/.test(bit) && bit !== input.country) ?? kickerBits[1] ?? kickerBits[0] ?? (input.locale === 'en' ? 'Issuer' : 'Emisor');
   }
   const country =
     input.country ||
