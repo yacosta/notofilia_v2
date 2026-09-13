@@ -146,6 +146,16 @@ describe('sitemap coverage for Pennsylvania 5 shillings 1773', () => {
   });
 });
 
+describe('sitemap coverage for Pennsylvania 2s6d 1773', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
   it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
     assert.equal(

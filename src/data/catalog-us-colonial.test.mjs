@@ -73,7 +73,7 @@ describe('US colonial Continental Currency $5 of 14 January 1779', () => {
 describe('US colonial Pennsylvania 5 shillings of 1 October 1773', () => {
   const paBlock = data.slice(
     data.indexOf("id: '5-chelines-pensilvania-1773'"),
-    data.indexOf("id: '1-dolar-state-bank-new-brunswick'"),
+    data.indexOf("id: '2-chelines-6-peniques-pensilvania-1773'"),
   );
   const esPiecePa = readFileSync(
     new URL('../pages/coleccion/estados-unidos/5-chelines-pensilvania-1773/index.astro', import.meta.url),
@@ -124,5 +124,64 @@ describe('US colonial Pennsylvania 5 shillings of 1 October 1773', () => {
     assert.match(paBlock, /pa-166-5-shillings-1773-9733-composite\.jpg/);
     assert.match(paBlock, /pa-166-5-shillings-1773-9733-front\.jpg/);
     assert.match(paBlock, /pa-166-5-shillings-1773-9733-back\.jpg/);
+  });
+});
+
+describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
+  const esPiece = readFileSync(
+    new URL('../pages/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/index.astro', import.meta.url),
+    'utf8',
+  );
+  const enPiece = readFileSync(
+    new URL('../pages/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/index.astro', import.meta.url),
+    'utf8',
+  );
+  const pa = data.slice(
+    data.indexOf("id: '2-chelines-6-peniques-pensilvania-1773'"),
+    data.indexOf("id: '1-dolar-state-bank-new-brunswick'"),
+  );
+
+  it('records PA-165 with serial 21251 and no invented cert', () => {
+    assert.match(pa, /chapterId: 'us-colonial'/);
+    assert.match(pa, /pick: 'Fr\. PA-165'/);
+    assert.match(pa, /serial: '21251'/);
+    assert.match(pa, /serial_display: 'No\. 21251'/);
+    assert.match(pa, /Benjamin Morgan; Barnaby Barnes; Samuel Fisher junr/);
+    assert.match(pa, /Hall and Sellers, Filadelfia, 1773/);
+    assert.match(pa, /Hall and Sellers, Philadelphia, 1773/);
+    assert.match(pa, /28\.318/);
+    assert.match(pa, /28,318/);
+    assert.match(pa, /referencia de lámina, no un censo/);
+    assert.match(pa, /plate reference, not a census/);
+    assert.match(pa, /esta ficha no inventa una tirada para el 2s6d/);
+    assert.match(pa, /this record does not invent a printage for the 2s6d/);
+    assert.match(pa, /cast cut/);
+    assert.match(pa, /share\.gemini\.google\/t3fSELWeqtml/);
+    assert.doesNotMatch(pa, /cert_number:/);
+    assert.match(holdings, /us-pa-165-2s6d-1773-21251/);
+    assert.match(holdings, /id: 'us-pa-165-2s6d-1773-21251', kind: 'banknote', country: 'US'/);
+    assert.match(holdings, /us-pa-165-1773-2s6d/);
+  });
+
+  it('keeps thin ES and EN piece routes on the United States note layout', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(esPiece, /noteById\('2-chelines-6-peniques-pensilvania-1773'\)/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
+    assert.match(pa, /pa-165-2s6d-1773-21251-composite\.jpg/);
+    assert.match(pa, /pa-165-2s6d-1773-21251-front\.jpg/);
+    assert.match(pa, /pa-165-2s6d-1773-21251-back\.jpg/);
+  });
+
+  it('names the holding in the colonial chapter and the series inventory', () => {
+    assert.match(data, /el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251/);
+    assert.match(data, /the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251/);
+    assert.match(data, /el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 \(Fr\. PA-165\), serial 21251/);
+    assert.match(data, /the Pennsylvania 2 shillings and 6 pence of 1 October 1773 \(Fr\. PA-165\), serial 21251/);
   });
 });

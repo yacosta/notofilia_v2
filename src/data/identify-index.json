@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T03:32:43.392Z",
+  "generatedAt": "2026-09-13T04:17:25.980Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1873,6 +1873,45 @@
       "title": {
         "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
         "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "front",
+      "hash": "294b593529256f5d",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-composite.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "front",
+      "hash": "2f25654b71694769",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-front.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "back",
+      "hash": "483d3d6d2b653543",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-back.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
       }
     },
     {
