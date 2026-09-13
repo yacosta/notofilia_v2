@@ -127,6 +127,8 @@ describe('locale path mapping', () => {
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
       '/en/notofilia-vs-colombian-banknote-catalogs/',
     );
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(localizePath('/en/collection/colombia/free-banking/', 'es'), '/coleccion/colombia/banca-libre/');
     assert.equal(
       localizePath('/en/notofilia-vs-colombian-banknote-catalogs/', 'es'),
       '/notofilia-vs-catalogos-billetes-colombianos/',
@@ -549,6 +551,7 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
+    assert.equal(redirects['/en/coleccion/colombia/banca-libre/'], '/en/collection/colombia/free-banking/');
     assert.equal(
       redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
       '/en/collection/colombia/5000-pesos-error-2010/',

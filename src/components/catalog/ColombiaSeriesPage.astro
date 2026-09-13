@@ -13,6 +13,7 @@ import {
   seriesPath,
   seriesSources,
 } from '../../data/colombia';
+import { BANCA_LIBRE_PATH } from '../../data/colombia-banca-libre';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
@@ -111,6 +112,18 @@ const jsonLd = collectionPageJsonLd({
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                chapter.id === 'banca-libre' ? (
+                  <p class="mb-0 mt-4">
+                    <a
+                      class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(BANCA_LIBRE_PATH, locale)}
+                    >
+                      {t.bancaLibreEssay}
+                    </a>
+                  </p>
+                ) : null
+              }
               {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
