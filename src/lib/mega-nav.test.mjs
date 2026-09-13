@@ -247,9 +247,11 @@ describe('United States submenu', () => {
   it('includes the colonial paper case under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
-    assert.match(usa, /colonialSeriesCopy/);
+    assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
+    assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
 

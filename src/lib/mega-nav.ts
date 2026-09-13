@@ -11,6 +11,7 @@ import {
   USA_RENCY_PATH,
   barabooScripSeriesCopy,
   colonialSeriesCopy,
+  notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { USA_COINAGE_PATH, coinById } from '../data/estados-unidos-coinage';
@@ -63,6 +64,8 @@ if (!usTrumpDollar) {
   throw new Error('Missing US Trump dollar coin for mega-nav');
 }
 
+const colonialNotes = notesForChapter('us-colonial');
+
 export const megaNav: NavNode[] = [
   {
     id: 'coleccion-notofilia',
@@ -101,10 +104,16 @@ export const megaNav: NavNode[] = [
         children: [
           {
             id: 'moneda-colonial',
-            es: colonialSeriesCopy.es.title,
-            en: colonialSeriesCopy.en.title,
+            es: `${colonialSeriesCopy.es.title} (${colonialSeriesCopy.es.kicker})`,
+            en: `${colonialSeriesCopy.en.title} (${colonialSeriesCopy.en.kicker})`,
             href: USA_COLONIAL_PATH,
             icon: 'guides',
+            children: colonialNotes.map((note) => ({
+              id: note.id,
+              es: note.title.es,
+              en: note.title.en,
+              href: note.path,
+            })),
           },
           {
             id: 'filipinas',
