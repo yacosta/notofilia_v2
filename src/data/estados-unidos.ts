@@ -1096,12 +1096,12 @@ export const colonialSeriesSources: CatalogSource[] = [
 
 export const obsoleteSeriesCopy = {
   es: {
-    metaTitle: '1782–1866 · Billetes obsoletos | Notofilia',
+    metaTitle: '1782–1866 · Billetes Obsoletos | Notofilia',
     metaDescription:
       'Papel de bancos estatales de Estados Unidos: Haxby, remainders y tres fichas de Nueva Jersey, Connecticut y Luisiana.',
     kicker: '1782–1866',
-    title: 'Billetes obsoletos',
-    breadcrumbCurrent: 'Billetes obsoletos',
+    title: 'Billetes Obsoletos',
+    breadcrumbCurrent: 'Billetes Obsoletos',
     parentLink: 'Estados Unidos',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
@@ -4827,7 +4827,7 @@ export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
     colonialLink: 'Moneda colonial',
-    obsoleteLink: 'Billetes obsoletos',
+    obsoleteLink: 'Billetes Obsoletos',
     miscLink: 'Misceláneos',
     barabooLink: 'Scrip de Baraboo 1933',
     rencyLink: 'Rency',

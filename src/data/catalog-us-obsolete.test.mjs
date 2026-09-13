@@ -29,7 +29,7 @@ describe('US obsolete series page 1782–1866', () => {
       '/en/collection/united-states/obsolete-notes/',
     );
     assert.match(data, /USA_OBSOLETE_PATH = '\/coleccion\/estados-unidos\/billetes-obsoletos\/'/);
-    assert.match(data, /title: 'Billetes obsoletos'/);
+    assert.match(data, /title: 'Billetes Obsoletos'/);
     assert.match(data, /title: 'Obsolete notes'/);
     assert.match(data, /kicker: '1782–1866'/);
     assert.match(obsoletePage, /notesForChapter\('us-obsoleto'\)/);
