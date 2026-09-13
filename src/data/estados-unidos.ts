@@ -1106,19 +1106,19 @@ export const obsoleteSeriesCopy = {
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'Tras la Constitución, el papel cotidiano no lo emitió un banco central: lo emitieron bancos con carta estatal, compañías de canales y otras casas locales. Miles de planchas —a menudo grabadas en Nueva York o Filadelfia— circularon con convertibilidad desigual. Los coleccionistas llaman a ese papel obsolete notes o broken banknotes. James A. Haxby lo numera por estado, banco y variedad de plancha. No es el papel federal posterior a 1861 ni el grayback confederado: esas clases tienen capítulo propio en esta vitrina.',
-      'Un informe de investigación de Gemini (septiembre de 2026) sirve aquí de punto de partida: banca descentralizada, viñetas de las casas grabadoras, corridas y el impuesto que apagó la emisión privada. Ese texto mezcla, bajo la misma etiqueta de «obsoleto», Demand Notes, Fractional Currency, certificados de oro y plata y billetes federales de alta denominación. En Notofilia esas clases no son obsolete notes. Esta página se queda en el papel estatal que cataloga Haxby.',
+      'Tras la Constitución, el papel cotidiano no lo emitió un banco central: lo emitieron bancos con carta estatal, compañías de canales y otras casas locales. Miles de planchas —a menudo grabadas en Nueva York o Filadelfia— circularon con convertibilidad desigual. Los coleccionistas llaman a ese papel obsolete notes o broken banknotes. James A. Haxby lo numera por estado, banco y variedad de plancha.',
+      'No es el papel federal posterior a 1861 ni el grayback confederado: Demand Notes, United States Notes, Fractional Currency, certificados de oro y plata y National Bank Notes tienen capítulo propio. En esta vitrina el objeto es el papel estatal. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B; el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial; y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback».',
     ],
     banksTitle: 'Bancos estatales y broken banknotes',
     banks: [
-      'El First Bank of the United States (1791) fue solo el primero de muchos. Howard Bodenhorn describe un sistema antebellum en el que cada estado tasaba cartas, reservas y sucursales a su modo. Luisiana, por ejemplo, distinguió commercial banks, property banks e improvement banks: el Canal Bank de Nueva Orleans pagó su carta cavando el New Basin Canal. En Nueva Jersey, el acto del 28 de enero de 1812 autorizó seis State Banks; el de New Brunswick es uno de ellos.',
-      'La confianza se buscaba en el grabado. National Bank Note Company, American Bank Note Company y Toppan, Carpenter —luego Toppan, Carpenter, Casilear & Co.— llenaban el anverso de alegorías, puertos, locomotoras y protectores de color. El Gemini resume bien ese recurso: la viñeta era propaganda y, a la vez, un obstáculo para el falsificador. Esta vitrina no republica precios de subasta ni el nicho de Santa Claus que ese informe cita; no hay aquí un ejemplar de esas planchas.',
-      'Cuando el banco no podía pagar en metal, el papel dejaba de valer. De ahí el apodo broken banknote. No todos los bancos «quebrcieron» en el sentido de quiebra: el impuesto del 10 % y las nacionalizaciones también dejaron pliegos sin firmar. Los remainders de esta vitrina —fecha 18__, una firma o ninguna, serial en blanco o de stock— son ese resto de plancha, no un censo de circulación.',
+      'El First Bank of the United States (1791) fue solo el primero de muchos. Howard Bodenhorn describe un sistema antebellum en el que cada estado tasaba cartas, reservas y sucursales a su modo. Luisiana distinguió commercial banks, property banks e improvement banks: el Canal Bank de Nueva Orleans pagó su carta cavando el New Basin Canal. En Nueva Jersey, el acto del 28 de enero de 1812 autorizó seis State Banks; el de New Brunswick es uno de ellos.',
+      'La confianza se buscaba en el grabado. National Bank Note Company, American Bank Note Company y Toppan, Carpenter —luego Toppan, Carpenter, Casilear & Co.— llenaban el anverso de alegorías, puertos, locomotoras y protectores de color. La viñeta era propaganda institucional y, a la vez, un obstáculo para el falsificador: el mismo recurso que se lee en las tres fichas de esta vitrina.',
+      'Cuando el banco no podía pagar en metal, el papel dejaba de valer. De ahí el apodo broken banknote. No todos los bancos «quebraron» en el sentido de quiebra: el impuesto del 10 % y las nacionalizaciones también dejaron pliegos sin firmar. Los remainders de esta vitrina —fecha 18__, una firma o ninguna, serial en blanco o de stock— son ese resto de plancha, no un censo de circulación.',
     ],
     endTitle: 'El impuesto del 10 % y la National Banking Act',
     end: [
-      'La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil. La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos del Tesoro. Un impuesto del 10 % sobre el papel privado, vigente en 1865–1866, hizo ruinosa la emisión estatal. El sucesor federal de este papel es el National Bank Note, en su propio capítulo. No se inventa aquí un National Bank Note: en esta colección aún no hay uno documentado.',
-      'El Gemini recuerda también Demand Notes de 1861, United States Notes, Fractional Currency y certificados metálicos. Esas emisiones son papel federal o tesoro, no Haxby. Quien busque greenbacks, shinplasters o certificados de oro y plata debe abrir esos capítulos de la vitrina de Estados Unidos, no esta página.',
+      'La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil. La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos del Tesoro. Un impuesto del 10 % sobre el papel privado, vigente en 1865–1866, hizo ruinosa la emisión estatal. El sucesor federal de este papel es el National Bank Note, en su propio capítulo. En esta colección aún no hay uno documentado.',
+      'Quien busque greenbacks, shinplasters o certificados de oro y plata debe abrir esos capítulos de la vitrina de Estados Unidos. Un Haxby no es un Friedberg: el primero numera el papel estatal; el segundo, el federal.',
     ],
     howToReadTitle: 'Cómo leer un billete obsoleto',
     howToReadIntro: 'Cinco señas que se repiten en las tres fichas y en casi todo el papel Haxby de esta vitrina:',
@@ -1147,11 +1147,11 @@ export const obsoleteSeriesCopy = {
     viewNote: 'Ver la ficha',
     pickLabel: 'Cat.',
     serialLabel: 'Serie',
-    sourcesTitle: 'Fuentes',
+    sourcesTitle: 'Enlaces',
     holdingsTitle: 'Piezas de la colección',
     holdingsCardsLabel: 'Fichas con imagen',
     holdingsIntro:
-      'Cada ficha describe un objeto físico. Un Haxby o un año no identifica el ejemplar: lo identifica el serial al existir, o la huella (banco, tipo, plancha) cuando el recuadro quedó en blanco.',
+      'Cada ficha describe un objeto físico. Un Haxby o un año no identifica el ejemplar: lo identifica el serial al leerse, o la huella —banco, tipo, plancha— cuando el recuadro quedó en blanco.',
     holdingsItems: [
       '1 dólar · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serie 9890 · B · Remainder',
       '5 dólares · City Bank of New Haven · Haxby CT-265 G52b · Plancha A · Serie — · Remainder',
@@ -1165,7 +1165,6 @@ export const obsoleteSeriesCopy = {
     references: [
       'Haxby remite a Standard Catalog of United States Obsolete Bank Notes. N# es el número de tipo de Numista, escrito aquí una sola vez junto a cada ficha que lo lleva. Friedberg numera el papel federal, no esta clase.',
       'Las tres piezas se describen como remainders, en funda y sin encapsular. La conservación se anota de forma descriptiva, no numérica. Esta página no republica columnas de precio ni cifras de subasta.',
-      'El informe de Gemini se cita como conversación de investigación. No sustituye a Haxby, a la ANS ni a las fichas de banco. No se toman de ahí precios, un censo ni la ampliación del término «obsoleto» al papel federal.',
     ],
     relatedTitle: 'En la colección',
   },
@@ -1180,19 +1179,19 @@ export const obsoleteSeriesCopy = {
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'After the Constitution, everyday paper did not come from a central bank: it came from state-chartered banks, canal companies, and other local houses. Thousands of plates — often engraved in New York or Philadelphia — circulated with uneven convertibility. Collectors call that paper obsolete notes or broken banknotes. James A. Haxby numbers it by state, bank, and plate variety. It is not federal paper after 1861, nor the Confederate grayback: those classes have their own chapters in this case.',
-      'A Gemini research report (September 2026) is the starting point here: decentralized banking, the vignettes of the engraving houses, runs on the banks, and the tax that ended private issue. That text folds Demand Notes, Fractional Currency, gold and silver certificates, and high-denomination federal notes under the same “obsolete” label. In Notofilia those classes are not obsolete notes. This page stays with the state paper Haxby catalogues.',
+      'After the Constitution, everyday paper did not come from a central bank: it came from state-chartered banks, canal companies, and other local houses. Thousands of plates — often engraved in New York or Philadelphia — circulated with uneven convertibility. Collectors call that paper obsolete notes or broken banknotes. James A. Haxby numbers it by state, bank, and plate variety.',
+      'It is not federal paper after 1861, nor the Confederate grayback: Demand Notes, United States Notes, Fractional Currency, gold and silver certificates, and National Bank Notes have chapters of their own. In this case the object is state paper. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B; the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial; and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages.',
     ],
     banksTitle: 'State banks and broken banknotes',
     banks: [
-      'The First Bank of the United States (1791) was only the first of many. Howard Bodenhorn describes an antebellum system in which each state set charters, reserves, and branches in its own way. Louisiana, for example, distinguished commercial banks, property banks, and improvement banks: the Canal Bank of New Orleans paid for its charter by digging the New Basin Canal. In New Jersey the act of 28 January 1812 authorized six State Banks; New Brunswick is one of them.',
-      'Trust was sought in the engraving. The National Bank Note Company, the American Bank Note Company, and Toppan, Carpenter — later Toppan, Carpenter, Casilear & Co. — filled the face with allegories, harbors, locomotives, and color protectors. Gemini summarizes that device well: the vignette was propaganda and, at the same time, an obstacle for the counterfeiter. This case does not republish auction prices or the Santa Claus niche that report cites; there is no example of those plates here.',
+      'The First Bank of the United States (1791) was only the first of many. Howard Bodenhorn describes an antebellum system in which each state set charters, reserves, and branches in its own way. Louisiana distinguished commercial banks, property banks, and improvement banks: the Canal Bank of New Orleans paid for its charter by digging the New Basin Canal. In New Jersey the act of 28 January 1812 authorized six State Banks; New Brunswick is one of them.',
+      'Trust was sought in the engraving. The National Bank Note Company, the American Bank Note Company, and Toppan, Carpenter — later Toppan, Carpenter, Casilear & Co. — filled the face with allegories, harbors, locomotives, and color protectors. The vignette was institutional propaganda and, at the same time, an obstacle for the counterfeiter: the same device that appears on the three records in this case.',
       'When the bank could not pay in coin, the paper stopped being money. That is the source of the nickname broken banknote. Not every bank “broke” in the sense of failure: the 10 percent tax and the nationalizations also left unsigned sheets. The remainders in this case — an 18__ date, one signature or none, a blank or stock serial — are that leftover plate, not a circulating census.',
     ],
     endTitle: 'The 10 percent tax and the National Banking Act',
     end: [
-      'The American Numismatic Society places the end of that plurality in the Civil War. The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by Treasury bonds. A 10 percent tax on private paper, in force in 1865–1866, made state issue ruinous. The federal successor of this paper is the National Bank Note, in its own chapter. A National Bank Note is not invented here: this collection does not yet hold a documented one.',
-      'Gemini also recounts Demand Notes of 1861, United States Notes, Fractional Currency, and metallic certificates. Those issues are federal or Treasury paper, not Haxby. Anyone looking for greenbacks, shinplasters, or gold and silver certificates should open those chapters of the United States case, not this page.',
+      'The American Numismatic Society places the end of that plurality in the Civil War. The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by Treasury bonds. A 10 percent tax on private paper, in force in 1865–1866, made state issue ruinous. The federal successor of this paper is the National Bank Note, in its own chapter. This collection does not yet hold a documented one.',
+      'Anyone looking for greenbacks, shinplasters, or gold and silver certificates should open those chapters of the United States case. A Haxby number is not a Friedberg number: the first catalogues state paper; the second, federal paper.',
     ],
     howToReadTitle: 'How to read an obsolete note',
     howToReadIntro: 'Five marks that recur on the three records and on almost all Haxby paper in this case:',
@@ -1215,17 +1214,17 @@ export const obsoleteSeriesCopy = {
       },
       {
         label: 'Serial.',
-        text: 'When present, it is the identity of the piece. When the box is blank, the record says so and does not fabricate a number.',
+        text: 'When it can be read, it is the identity of the piece. When the box is blank, the record says so and does not fabricate a number.',
       },
     ],
     viewNote: 'Open the note page',
     pickLabel: 'Cat.',
     serialLabel: 'Serial',
-    sourcesTitle: 'Sources',
+    sourcesTitle: 'Links',
     holdingsTitle: 'Notes in the collection',
     holdingsCardsLabel: 'Note pages with images',
     holdingsIntro:
-      'Each record describes a physical object. A Haxby number or a year does not identify the specimen: the serial does when one exists, or the fingerprint (bank, type, plate) when the box was left blank.',
+      'Each record describes a physical object. A Haxby number or a year does not identify the specimen: the serial does, when it can be read, or the fingerprint — bank, type, plate — when the box was left blank.',
     holdingsItems: [
       '$1 · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serial 9890 · B · Remainder',
       '$5 · City Bank of New Haven · Haxby CT-265 G52b · Plate A · Serial — · Remainder',
@@ -1239,7 +1238,6 @@ export const obsoleteSeriesCopy = {
     references: [
       'Haxby refers to the Standard Catalog of United States Obsolete Bank Notes. N# is the Numista type number, written out once here beside each record that carries one. Friedberg numbers federal paper, not this class.',
       'The three pieces are described as remainders, in a sleeve and unslabbed. Condition is noted descriptively, not numerically. This page does not republish price columns or auction figures.',
-      'The Gemini report is cited as a research conversation. It does not replace Haxby, the ANS, or the bank records. Prices, a census, and the widening of “obsolete” to federal paper are not taken from it.',
     ],
     relatedTitle: 'In the collection',
   },
@@ -1283,11 +1281,11 @@ export const obsoleteSeriesRelated: { href: string; title: LocalizedText; dek: L
 export const obsoleteSeriesSources: CatalogSource[] = [
   {
     href: 'https://share.gemini.google/x26FzHCczgwv',
-    es: 'Gemini — Informe sobre el billete obsoleto de Estados Unidos',
-    en: 'Gemini — Report on United States obsolete notes',
+    es: 'Gemini — nota de investigación de los billetes obsoletos',
+    en: 'Gemini — research note on obsolete banknotes',
     note: {
-      es: 'Conversación de investigación (septiembre de 2026). Útil para banca estatal, viñetas y el impuesto del 10 %. No sustituye a Haxby ni a la ANS; no se toman de aquí precios, un censo ni la ampliación del término al papel federal.',
-      en: 'Research conversation (September 2026). Useful for state banking, vignettes, and the 10 percent tax. It does not replace Haxby or the ANS; prices, a census, and the widening of the term to federal paper are not taken from it.',
+      es: 'Conversación de investigación de esta vitrina (septiembre de 2026). No sustituye a Haxby ni a la ANS; no se toman de aquí precios, un censo ni la ampliación del término «obsoleto» al papel federal.',
+      en: 'Research conversation for this case (September 2026). It does not replace Haxby or the ANS; prices, a census, and the widening of “obsolete” to federal paper are not taken from it.',
     },
   },
   {

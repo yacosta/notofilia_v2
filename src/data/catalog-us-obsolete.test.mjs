@@ -51,7 +51,11 @@ describe('US obsolete series page 1782–1866', () => {
     assert.match(data, /Serial 9890/);
     assert.match(data, /share\.gemini\.google\/x26FzHCczgwv/);
     assert.match(data, /no se toman de aquí precios/);
-    assert.match(data, /prices, a census, and the widening of the term to federal paper are not taken from it/);
+    assert.match(data, /prices, a census, and the widening of “obsolete” to federal paper are not taken from it/);
+    assert.doesNotMatch(data, /El Gemini/);
+    assert.doesNotMatch(data, /punto de partida/);
+    assert.match(data, /sourcesTitle: 'Enlaces'/);
+    assert.match(data, /sourcesTitle: 'Links'/);
     assert.match(data, /Citizens Bank of Louisiana/);
     assert.match(data, /Hagerstown Bank/);
     assert.match(data, /holdingsCardsLabel: 'Fichas con imagen'/);
