@@ -286,6 +286,7 @@ export const stubPages = [
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
+  { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },
   { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
