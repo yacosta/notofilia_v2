@@ -31,6 +31,8 @@ export const USA_MISC_PATH = '/coleccion/estados-unidos/miscelaneos/';
 export const USA_MISC_PATH_EN = '/collection/united-states/miscellaneous/';
 export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
+export const USA_COLONIAL_PATH = '/coleccion/estados-unidos/moneda-colonial/';
+export const USA_COLONIAL_PATH_EN = '/collection/united-states/colonial-paper/';
 export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
 export const USA_BARABOO_SCRIP_PATH_EN = '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/';
 export const BARABOO_JUBILEE_FIGURE = {
@@ -400,6 +402,7 @@ export const seriesCopy = {
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
+    viewColonialCase: 'Abrir la vitrina de moneda colonial',
     coinageLead: 'La moneda metálica de este país se documenta en la vitrina de numismática.',
     coinageLink: 'Estados Unidos · Numismática',
     pickLabel: 'Pick',
@@ -424,6 +427,7 @@ export const seriesCopy = {
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
+    viewColonialCase: 'Open the colonial paper case',
     coinageLead: 'This country’s struck coin is documented in the numismatics case.',
     coinageLink: 'United States · Numismatics',
     pickLabel: 'Pick',
@@ -447,6 +451,10 @@ export function rencySeriesPath(locale: 'es' | 'en'): string {
 
 export function barabooScripSeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_BARABOO_SCRIP_PATH, locale);
+}
+
+export function colonialSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_COLONIAL_PATH, locale);
 }
 
 export const miscSeriesIntro: CatalogProsePart[][] = [
@@ -848,6 +856,140 @@ export const rencySeriesCopy = {
       'There are no note pages in this case yet. They will be documented here when the images are uploaded.',
   },
 } as const;
+
+export const colonialSeriesCopy = {
+  es: {
+    metaTitle: '1690–1788 · Moneda colonial | Notofilia',
+    metaDescription:
+      'Papel colonial de Estados Unidos: bills of credit de Massachusetts (1690) y Continental Currency. Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91.',
+    kicker: '1690–1788',
+    title: 'Moneda colonial',
+    breadcrumbCurrent: 'Moneda colonial',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. El valor no estaba en el metal del soporte: estaba en la promesa de la colonia.',
+      'Aquellos Colony or Old Charter Bills iban indentados —el corte ondulado del borde debía encajar con el talón que retenía el tesorero— y llevaban el sello de Massachusetts Bay, con el indio y la leyenda Come over and help us. El Newman Numismatic Portal registra las denominaciones de 5, 10 y 20 chelines y 5 libras, y tres firmas de la comisión. Las demás colonias copiaron el expediente.',
+      'En 1775 el Congreso Continental emitió Continentals para financiar la independencia. Prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. La inflación y las falsificaciones británicas los dejaron «not worth a Continental». La última resolución fue la del 14 de enero de 1779.',
+      'Esta vitrina cierra en 1788, el año de la ratificación de la Constitución. El artículo I, sección 10, prohibió a los estados emitir bills of credit. El descrédito del papel continental retrasó un papel federal hasta los greenbacks de 1861–1862.',
+      'Ya tiene ficha el 5 dólares continental del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. En esta vitrina caben también emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776: no se inventa un serial para abrirles ficha.',
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Fuentes',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsIntro:
+      'Cada ficha describe un objeto físico. Un Pick o un año no identifican el ejemplar: lo identifica el serial, cuando se lee.',
+    emptyHoldings:
+      'Aún no hay más fichas coloniales. Pensilvania 1773 y los seis chelines de Nueva Jersey de 1776 esperan un serial o un certificado.',
+    relatedTitle: 'En la colección',
+  },
+  en: {
+    metaTitle: '1690–1788 · Colonial paper | Notofilia',
+    metaDescription:
+      'United States colonial paper: Massachusetts bills of credit (1690) and Continental Currency. The $5 of 14 January 1779, Friedberg CC-91, already has a note page.',
+    kicker: '1690–1788',
+    title: 'Colonial paper',
+    breadcrumbCurrent: 'Colonial paper',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The value was not in the metal of the substrate: it was in the colony’s promise.',
+      'Those Colony or Old Charter Bills were indented — the wavy cut along the edge had to fit the stub the treasurer kept — and carried the Massachusetts Bay seal, with the Indian and the legend Come over and help us. The Newman Numismatic Portal records the denominations of 5, 10, and 20 shillings and £5, and three committee signatures. The other colonies copied the expedient.',
+      'In 1775 the Continental Congress issued Continentals to finance independence. The notes promised Spanish milled dollars or their equal in gold or silver; they paid no interest. Inflation and British counterfeits left them “not worth a Continental.” The last resolution was that of 14 January 1779.',
+      'This case closes in 1788, the year the Constitution was ratified. Article I, Section 10, forbade the states to emit bills of credit. The collapse of Continental paper delayed federal paper until the greenbacks of 1861–1862.',
+      'The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 also belong here: a serial is not invented to open their pages.',
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Sources',
+    holdingsTitle: 'Notes in the collection',
+    holdingsIntro:
+      'Each record describes a physical object. A Pick number or a year does not identify the piece: the serial does, when it can be read.',
+    emptyHoldings:
+      'There are no further colonial note pages yet. Pennsylvania 1773 and the New Jersey six-shillings of 1776 wait for a serial or a certificate.',
+    relatedTitle: 'In the collection',
+  },
+} as const;
+
+export const colonialSeriesRelated: { href: string; title: LocalizedText; dek: LocalizedText }[] = [
+  {
+    href: USA_PATH,
+    title: { es: 'Estados Unidos · Notafilia', en: 'United States · Notaphily' },
+    dek: {
+      es: 'La vitrina federal, del papel colonial a la Reserva Federal.',
+      en: 'The federal case, from colonial paper to the Federal Reserve.',
+    },
+  },
+  {
+    href: '/glosario/#letras-de-credito',
+    title: { es: 'Glosario: letras de crédito', en: 'Glossary: bills of credit' },
+    dek: {
+      es: 'Papel colonial autorizado por una legislatura, sin respaldo metálico pleno.',
+      en: 'Colonial paper authorized by a legislature, without full metallic backing.',
+    },
+  },
+  {
+    href: '/glosario/#nature-print',
+    title: { es: 'Glosario: nature print', en: 'Glossary: nature print' },
+    dek: {
+      es: 'El recurso anti-falsificación de Franklin en el reverso del Continental de 1779.',
+      en: 'Franklin’s anti-counterfeit device on the back of the 1779 Continental.',
+    },
+  },
+];
+
+export const colonialSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://nnp.wustl.edu/library/imagecollection/514438',
+    es: 'Newman Numismatic Portal — Massachusetts, 10 de diciembre de 1690',
+    en: 'Newman Numismatic Portal — Massachusetts, 10 December 1690',
+    note: {
+      es: '7.000 libras en Colony or Old Charter Bills; primer papel moneda público autorizado en Occidente; 5s, 10s, 20s y 5 libras.',
+      en: '£7,000 in Colony or Old Charter Bills; first authorized public paper currency in the Western world; 5s, 10s, 20s, and £5.',
+    },
+  },
+  {
+    href: 'https://www.uscurrency.gov/history',
+    es: 'U.S. Currency Education Program — History of U.S. Currency',
+    en: 'U.S. Currency Education Program — History of U.S. Currency',
+    note: {
+      es: 'Massachusetts 1690 y Continentals de 1775; la frase «not worth a Continental».',
+      en: 'Massachusetts 1690 and Continentals of 1775; the phrase “not worth a Continental.”',
+    },
+  },
+  {
+    href: 'https://numismatics.org/a-history-of-american-currency/',
+    es: 'American Numismatic Society — A History of American Currency',
+    en: 'American Numismatic Society — A History of American Currency',
+    note: {
+      es: 'Massachusetts 1690 como primer papel moneda público occidental.',
+      en: 'Massachusetts 1690 as the first Western public paper.',
+    },
+  },
+  {
+    href: 'https://coins.nd.edu/ColCurrency/CurrencyIntros/CurrencyIntro.html',
+    es: 'University of Notre Dame — Colonial Currency',
+    en: 'University of Notre Dame — Colonial Currency',
+    note: {
+      es: 'Emisiones coloniales y Continentals hasta los años 1790; indentado y valor del dólar español.',
+      en: 'Colonial issues and Continentals through the 1790s; indenting and the Spanish dollar.',
+    },
+  },
+  {
+    href: 'https://www.archives.gov/founding-docs/constitution-transcript',
+    es: 'U.S. National Archives — Constitution of the United States',
+    en: 'U.S. National Archives — Constitution of the United States',
+    note: {
+      es: 'Artículo I, sección 10: ningún estado emitirá bills of credit. La Constitución se ratificó en 1788.',
+      en: 'Article I, Section 10: no state shall emit bills of credit. The Constitution was ratified in 1788.',
+    },
+  },
+];
 
 export const rencySeriesSources: CatalogSource[] = [
   {
@@ -4078,6 +4220,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
 export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
+    colonialLink: 'Moneda colonial',
     miscLink: 'Misceláneos',
     barabooLink: 'Scrip de Baraboo 1933',
     rencyLink: 'Rency',
@@ -4100,6 +4243,7 @@ export const notePageCopy = {
   },
   en: {
     seriesLink: 'United States',
+    colonialLink: 'Colonial paper',
     miscLink: 'Miscellaneous',
     barabooLink: 'Baraboo scrip 1933',
     rencyLink: 'Rency',
@@ -4142,6 +4286,7 @@ export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): str
   if (isBarabooScripNote(note)) return barabooScripSeriesPath(locale);
   if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
   if (note.chapterId === 'us-pop-art') return rencySeriesPath(locale);
+  if (note.chapterId === 'us-colonial') return colonialSeriesPath(locale);
   return `${seriesPath(locale)}#${note.chapterId}`;
 }
 

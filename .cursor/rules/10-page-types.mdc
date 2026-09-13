@@ -19,7 +19,7 @@ Every file under `src/pages/**/*.astro` must map to one row. Route files stay th
 | `contact` | `ContactPage.astro` | `/contacto/` | `/en/contact/` |
 | `collection-hub` | `CollectionHubPage.astro` | `/coleccion/` | `/en/collection/` |
 | `discipline-index` | `NotafiliaIndexPage.astro` / `NumismaticaIndexPage.astro` | `/coleccion/notafilia/`, `/coleccion/numismatica/` | `/en/collection/notaphily/`, `/en/collection/numismatics/` |
-| `series-index` | `{Country}SeriesPage.astro`, `{Country}CoinagePage.astro`, `LazarettosPage.astro`, `PolymerWorldPage.astro` | `/coleccion/{pais}/`, plus `/paises-bajos-numismatica/` | `/en/collection/{country}/`, plus `/en/netherlands-numismatica/` |
+| `series-index` | `{Country}SeriesPage.astro`, `{Country}CoinagePage.astro`, `LazarettosPage.astro`, `PolymerWorldPage.astro`, `UnitedStatesColonialSeriesPage.astro` | `/coleccion/{pais}/`, plus `/paises-bajos-numismatica/` | `/en/collection/{country}/`, plus `/en/netherlands-numismatica/` |
 | `piece` | `{Country}NotePage.astro` / `{Country}CoinPage.astro` | piece slug under the series | translated piece slug |
 | `editorial-index` | `EditorialIndexPage.astro` | `/blog/`, `/noticias/` | `/en/blog/`, `/en/news/` |
 | `editorial-article` | `EditorialArticlePage.astro` | `/blog/[slug]/`, `/noticias/[slug]/` | `/en/blog/[slug]/`, `/en/news/[slug]/` |

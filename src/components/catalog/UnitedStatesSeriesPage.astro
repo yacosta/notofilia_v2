@@ -15,6 +15,7 @@ import {
   seriesPath,
   seriesSources,
   unitedStatesChapters,
+  USA_COLONIAL_PATH,
   USA_MISC_PATH,
   USA_RENCY_PATH,
 } from '../../data/estados-unidos';
@@ -164,6 +165,18 @@ const jsonLd = collectionPageJsonLd({
                       </li>
                     ))}
                   </ol>
+                ) : null
+              }
+              {
+                chapter.id === 'us-colonial' ? (
+                  <p class={notes.length > 0 ? 'mt-6' : 'mt-8'}>
+                    <a
+                      href={localizePath(USA_COLONIAL_PATH, locale)}
+                      class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                    >
+                      {t.viewColonialCase} →
+                    </a>
+                  </p>
                 ) : null
               }
               {

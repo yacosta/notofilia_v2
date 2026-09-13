@@ -9,9 +9,11 @@ import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-co
 import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
 import {
   barabooScripSeriesCopy,
+  colonialSeriesCopy,
   rencySeriesCopy,
   unitedStatesNotes,
   USA_BARABOO_SCRIP_PATH,
+  USA_COLONIAL_PATH,
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
@@ -372,6 +374,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: COLOMBIA_COIN_CATALOG_PATH,
       title: { es: coinCatalogCopy.es.title, en: coinCatalogCopy.en.title },
       dek: { es: coinCatalogCopy.es.dek, en: coinCatalogCopy.en.dek },
+    },
+    {
+      href: USA_COLONIAL_PATH,
+      title: {
+        es: `${colonialSeriesCopy.es.kicker} ${colonialSeriesCopy.es.title}`,
+        en: `${colonialSeriesCopy.en.kicker} ${colonialSeriesCopy.en.title}`,
+      },
+      dek: { es: colonialSeriesCopy.es.metaDescription, en: colonialSeriesCopy.en.metaDescription },
+      extra:
+        'Massachusetts 1690 bills of credit Continental Currency Friedberg CC-91 1779 SUSTINE VEL ABSTINE Hall and Sellers',
     },
     {
       href: USA_RENCY_PATH,

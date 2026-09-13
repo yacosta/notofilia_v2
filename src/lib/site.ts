@@ -21,6 +21,8 @@ import {
   USA_PATH_EN,
   USA_RENCY_PATH,
   USA_RENCY_PATH_EN,
+  USA_COLONIAL_PATH,
+  USA_COLONIAL_PATH_EN,
   unitedStatesNoteDedicatedSlugs,
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
@@ -144,6 +146,7 @@ addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
+addLocalePair(USA_COLONIAL_PATH, USA_COLONIAL_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
@@ -341,6 +344,8 @@ const dedicatedEs = [
   USA_BARABOO_SCRIP_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
