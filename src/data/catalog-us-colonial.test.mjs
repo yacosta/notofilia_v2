@@ -91,6 +91,11 @@ describe('US colonial Pennsylvania 5 shillings of 1 October 1773', () => {
     assert.match(paBlock, /serial_display: 'No\. 9733'/);
     assert.match(paBlock, /la inferior se lee Mifflin/);
     assert.match(paBlock, /the lower one reads Mifflin/);
+    assert.match(paBlock, /no se atribuye aquí a Joseph Redman ni a John Mifflin/);
+    assert.match(paBlock, /it is not assigned here to Joseph Redman or John Mifflin/);
+    assert.match(paBlock, /Fr\. CC-91\) ni los demás valores de octubre de 1773: 18 d PA-163/);
+    assert.match(paBlock, /28,318 next to the 5s/);
+    assert.match(paBlock, /nmah_1823921/);
     assert.match(paBlock, /Hall and Sellers, Filadelfia, 1773/);
     assert.match(paBlock, /Hall and Sellers, Philadelphia, 1773/);
     assert.match(paBlock, /150\.000 libras/);
@@ -98,8 +103,8 @@ describe('US colonial Pennsylvania 5 shillings of 1 October 1773', () => {
     assert.match(paBlock, /esta ficha no inventa una tirada para los 5 chelines/);
     assert.match(paBlock, /this record does not invent a printage for the 5 shillings/);
     assert.match(paBlock, /To Counterfeit is Death/);
-    assert.match(paBlock, /ni las demás denominaciones de esta fecha/);
-    assert.match(paBlock, /nor the other denominations of this date/);
+    assert.match(paBlock, /ni los demás valores de octubre de 1773/);
+    assert.match(paBlock, /nor the other October 1773 values/);
     assert.doesNotMatch(paBlock, /cert_number:/);
     assert.match(holdings, /us-pa-166-5s-1773-9733/);
     assert.match(holdings, /id: 'us-pa-166-5s-1773-9733', kind: 'banknote', country: 'US'/);
