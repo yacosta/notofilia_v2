@@ -67,6 +67,10 @@ describe('US colonial Continental Currency $5 of 14 January 1779', () => {
     assert.match(data, /The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733/);
     assert.match(data, /el 5 chelines de Pensilvania del 1 de octubre de 1773 \(Fr\. PA-166, serial 9733\)/);
     assert.match(data, /the Pennsylvania 5 shillings of 1 October 1773 \(Fr\. PA-166, serial 9733\)/);
+    assert.match(data, /monnaie de carte/);
+    assert.match(data, /Jacques de Meulles/);
+    assert.match(data, /P# es el número del Standard Catalog of World Paper Money/);
+    assert.match(data, /P# is the Standard Catalog of World Paper Money/);
   });
 });
 
@@ -222,5 +226,19 @@ describe('US colonial series page 1690–1788', () => {
     assert.match(enRoute, /UnitedStatesColonialSeriesPage/);
     assert.match(enRoute, /locale="en"/);
     assert.doesNotMatch(colonialPage, /seriesSources/);
+    assert.match(colonialPage, /colonial-provincial-heading/);
+    assert.match(colonialPage, /colonial-how-to-read-heading/);
+    assert.match(colonialPage, /colonial-references-heading/);
+    assert.match(colonialPage, /t\.holdingsNote/);
+    assert.match(data, /provincialTitle: 'Ochenta y cinco años de papel provincial'/);
+    assert.match(data, /howToReadTitle: 'Cómo leer un billete colonial'/);
+    assert.match(data, /referencesTitle: 'Referencias y conservación'/);
+    assert.match(data, /Serie 9733/);
+    assert.match(data, /Serial 21251/);
+    assert.match(data, /esperan un serial legible o un certificado/);
+    assert.match(data, /wait for a readable serial or a certificate/);
+    assert.match(data, /no se adoptan aquí números de catálogo Newman/);
+    assert.match(data, /Newman catalog numbers are not adopted here/);
+    assert.match(data, /holdingsCardsLabel: 'Fichas con imagen'/);
   });
 });

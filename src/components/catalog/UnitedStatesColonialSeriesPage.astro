@@ -90,16 +90,54 @@ const jsonLd = collectionPageJsonLd({
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
 
+      <section class="mt-16" aria-labelledby="colonial-provincial-heading">
+        <h2 id="colonial-provincial-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.provincialTitle}
+        </h2>
+        <div class="w-full text-[17px]/7 text-cream">
+          {t.provincial.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="colonial-continental-heading">
+        <h2 id="colonial-continental-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.continentalTitle}
+        </h2>
+        <div class="w-full text-[17px]/7 text-cream">
+          {t.continental.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="colonial-how-to-read-heading">
+        <h2 id="colonial-how-to-read-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.howToReadTitle}
+        </h2>
+        <p class="mb-4 mt-0 w-full text-[17px]/7 text-cream">{t.howToReadIntro}</p>
+        <ul class="mb-0 mt-0 list-disc space-y-3 pl-6 text-[17px]/7 text-cream">
+          {
+            t.howToRead.map((item) => (
+              <li>
+                <span class="font-semibold text-cream-dim">{item.label}</span>{' '}
+                {item.text}
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
       <section class="mt-16" aria-labelledby="colonial-holdings-heading">
         <h2 id="colonial-holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
           {t.holdingsTitle}
         </h2>
-        <p class="mb-0 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <p class="mb-4 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <ol class="mb-0 mt-0 list-decimal space-y-3 pl-6 text-[17px]/7 text-cream">
+          {t.holdingsItems.map((item) => <li>{item}</li>)}
+        </ol>
         {
           notes.length > 0 ? (
             <ol
               class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
-              aria-label={t.holdingsTitle}
+              aria-label={t.holdingsCardsLabel}
             >
               {notes.map((note) => (
                 <li class="min-w-0">
@@ -133,9 +171,18 @@ const jsonLd = collectionPageJsonLd({
         }
         {
           notes.length > 0 ? (
-            <p class="mb-0 mt-6 text-[17px]/7 text-muted">{t.emptyHoldings}</p>
+            <p class="mb-0 mt-6 text-[17px]/7 text-muted">{t.holdingsNote}</p>
           ) : null
         }
+      </section>
+
+      <section class="mt-16" aria-labelledby="colonial-references-heading">
+        <h2 id="colonial-references-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.referencesTitle}
+        </h2>
+        <div class="w-full text-[17px]/7 text-cream">
+          {t.references.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        </div>
       </section>
 
       <section class="mt-16" aria-labelledby="colonial-related-heading">

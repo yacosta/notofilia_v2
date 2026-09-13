@@ -76,12 +76,12 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Colonial paper',
     },
     lead: {
-      es: 'Los primeros papeles públicos de Occidente: las «bills of credit» de Massachusetts y la moneda del Congreso Continental.',
-      en: 'The first public paper of the Western world: Massachusetts bills of credit and Continental Currency.',
+      es: 'El primer papel público autorizado por una legislatura británica en América: las bills of credit de Massachusetts (1690) y la moneda del Congreso Continental.',
+      en: 'The first public paper authorized by a British legislature in America: Massachusetts bills of credit (1690) and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. En esta vitrina caben también los seis chelines de Nueva Jersey de 1776.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The New Jersey six-shillings of 1776 still belongs in this case.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
     },
   },
   {
@@ -861,7 +861,7 @@ export const colonialSeriesCopy = {
   es: {
     metaTitle: '1690–1788 · Moneda colonial | Notofilia',
     metaDescription:
-      'Papel colonial de Estados Unidos: bills of credit de Massachusetts (1690) y Continental Currency. Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91.',
+      'Papel colonial de Estados Unidos: Massachusetts 1690, Pensilvania 1773 y Continental Currency de 1779. Tres fichas; Nueva Jersey 1776 espera serial.',
     kicker: '1690–1788',
     title: 'Moneda colonial',
     breadcrumbCurrent: 'Moneda colonial',
@@ -869,27 +869,75 @@ export const colonialSeriesCopy = {
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. El valor no estaba en el metal del soporte: estaba en la promesa de la colonia.',
-      'Aquellos Colony or Old Charter Bills iban indentados —el corte ondulado del borde debía encajar con el talón que retenía el tesorero— y llevaban el sello de Massachusetts Bay, con el indio y la leyenda Come over and help us. El Newman Numismatic Portal registra las denominaciones de 5, 10 y 20 chelines y 5 libras, y tres firmas de la comisión. Las demás colonias copiaron el expediente.',
-      'En 1775 el Congreso Continental emitió Continentals para financiar la independencia. Prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. La inflación y las falsificaciones británicas los dejaron «not worth a Continental». La última resolución fue la del 14 de enero de 1779.',
-      'Esta vitrina cierra en 1788, el año de la ratificación de la Constitución. El artículo I, sección 10, prohibió a los estados emitir bills of credit. El descrédito del papel continental retrasó un papel federal hasta los greenbacks de 1861–1862.',
-      'Ya tiene ficha el 5 dólares continental del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. En esta vitrina caben también emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776: no se inventa un serial para abrirles ficha.',
+      'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América. Conviene el matiz, porque cinco años antes, en 1685, el intendente Jacques de Meulles ya había pagado a la tropa de la Nueva Francia con naipes firmados y recortados, por un valor: el «monnaie de carte» es el antecedente en el hemisferio. Lo que Massachusetts inauguró fue otra cosa: el valor no estaba en el metal del soporte, sino en la promesa de la colonia.',
+      'Aquellos Colony or Old Charter Bills iban indentados —el corte ondulado del borde debía encajar con el talón que retenía el tesorero— y llevaban el sello de Massachusetts Bay, con el indio y la leyenda «Come over and help us». El Newman Numismatic Portal registra las denominaciones de 5, 10 y 20 chelines y de 5 libras, así como las firmas de tres miembros de la comisión. Las demás colonias copiaron el expediente.',
+    ],
+    provincialTitle: 'Ochenta y cinco años de papel provincial',
+    provincial: [
+      'Entre Massachusetts y el Congreso Continental hay casi un siglo de emisiones coloniales y las piezas de esta vitrina provienen de allí. Pensilvania entró en 1723 con 45.000 libras en bills of credit: 7.500 para el gobierno y el resto prestado a particulares al 5 % con garantía hipotecaria. Ese mecanismo —una caja pública que emite papel contra hipotecas— es el Loan Office que reaparece en la emisión de 1773. Un joven Benjamin Franklin lo defendió en 1729 en A Modest Enquiry into the Nature and Necessity of a Paper-Currency, uno de los primeros impresos de su taller de Filadelfia.',
+      'El papel no valía lo mismo en todas partes. Cada colonia tasaba el dólar español de cordoncillo en sus propios chelines: 6 en Nueva Inglaterra, Maryland y Virginia («lawful money»); 7 chelines y 6 peniques en Pensilvania, Nueva Jersey y Delaware; 8 en Nueva York. Por eso un billete de 5 chelines de Pensilvania «promete una corona» y no un dólar, y por eso Nueva Jersey emitía seis chelines: son fracciones de un peso fuerte que casi nadie tenía en la mano.',
+      'Londres desconfió. La Currency Act de 1751 limitó las emisiones en Nueva Inglaterra y les retiró el curso legal para deudas privadas; la de 1764 extendió la prohibición de curso legal a todas las colonias. En 1773, el Parlamento cedió y permitió el uso de papel moneda con curso legal para cubrir las deudas públicas. La emisión de Pensilvania del 1 de octubre de ese año nace en ese resquicio, impresa por Hall and Sellers en papel con escamas de mica y fibras azules.',
+    ],
+    continentalTitle: 'Continental Currency, 1775–1779',
+    continental: [
+      'Entre junio de 1775 y enero de 1779, el Congreso Continental ordenó once emisiones que sumaron cerca de 241,5 millones de dólares y constituyeron la principal fuente de ingresos de la guerra. Los billetes prometían dólares españoles de cordoncillo o su equivalente en oro o plata; no pagaban intereses. Las primeras series decían «The United Colonies»; la del 14 de enero de 1779 ya lleva en la orla «The United States of North America».',
+      'Esa última emisión —95.051.695 dólares en dieciséis valores, del 1 al 80— salió de la imprenta de Hall and Sellers en Filadelfia con el anverso en rojo y negro y, al reverso, la impresión de una hoja real: el nature print de Franklin, distinto en cada denominación. Gran Bretaña falsificó a tal escala las series del 20 de mayo de 1777 y del 11 de abril de 1778 que el Congreso las retiró por completo.',
+      'Nada de eso frenó la caída. En enero de 1777 hacían falta 1,25 dólares continentales por uno en metálico; en enero de 1781, cien. El papel dejó de circular en mayo de ese año y quedó la frase: «not worth a Continental». La Constitución, ratificada en 1788, cerró la puerta a los estados —artículo I, sección 10: ningún estado emitirá bills of credit— y el Congreso liquidó el resto en 1790, cambiándolo por bonos a razón de cien por uno. El descrédito fue tal que no hubo papel moneda federal hasta los greenbacks de 1861–1862.',
+    ],
+    howToReadTitle: 'Cómo leer un billete colonial',
+    howToReadIntro:
+      'Cinco señas que se repiten en las tres fichas y en casi todo el papel del periodo:',
+    howToRead: [
+      {
+        label: 'Indentado.',
+        text: 'El borde recortado a mano debía casar con el talón que guardaba el tesorero. Es el primer sistema antifalsificación para el papel estadounidense.',
+      },
+      {
+        label: 'Firmas manuscritas.',
+        text: 'Dos o tres comisionados firmaban cada billete con tinta; en la serie de 1779 la numeración y algunas firmas van en rojo.',
+      },
+      {
+        label: 'Serial manuscrito.',
+        text: 'Ningún Pick ni Friedberg identifica un ejemplar; lo identifica el número escrito a mano al leerse.',
+      },
+      {
+        label: 'Papel de Franklin.',
+        text: 'Escamas de mica y fibras azules en la masa del papel, visibles a contraluz en las piezas de Pensilvania.',
+      },
+      {
+        label: 'Amenaza impresa.',
+        text: '«To Counterfeit is Death» en Pensilvania; en los Continentals, la hoja del nature print cumplía la misma función.',
+      },
     ],
     viewNote: 'Ver la ficha',
-    pickLabel: 'Pick',
+    pickLabel: 'Cat.',
     serialLabel: 'Serie',
-    sourcesTitle: 'Fuentes',
+    sourcesTitle: 'Enlaces',
     holdingsTitle: 'Piezas de la colección',
+    holdingsCardsLabel: 'Fichas con imagen',
     holdingsIntro:
-      'Cada ficha describe un objeto físico. Un Pick o un año no identifican el ejemplar: lo identifica el serial, cuando se lee.',
+      'Cada ficha describe un objeto físico. Un Pick o un año no identifica el ejemplar: lo identifica el serial al leerse.',
+    holdingsItems: [
+      '5 dólares · Continental Currency · 14 de enero de 1779 · Friedberg CC-91 · Serie — · Emblema SUSTINE VEL ABSTINE · Reverso: hoja de matricaria (feverfew)',
+      '5 chelines · Pensilvania · 1 de octubre de 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serie 9733',
+      '2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773 · Friedberg PA-165 · Serie 21251',
+    ],
+    holdingsNote:
+      'Tres fichas, 1773–1779. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 13 de septiembre de 2026.',
     emptyHoldings:
-      'Aún no hay más fichas coloniales. Pensilvania 1773 y los seis chelines de Nueva Jersey de 1776 esperan un serial o un certificado.',
+      'Aún no hay fichas coloniales. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado.',
+    referencesTitle: 'Referencias y conservación',
+    references: [
+      'Fr. remite a Paper Money of the United States (Friedberg), que numera las emisiones coloniales por colonia (PA, NJ) y los Continentals como CC. En la ficha de los 5 chelines, P# es el número del Standard Catalog of World Paper Money (Pick), volumen specialized: S-2540. N# es el número de tipo de Numista: N#406969. Esas dos abreviaturas se escriben aquí una sola vez.',
+      'Esta vitrina usa los números de Friedberg en las tres fichas. Newman, The Early Paper Money of America, se cita como fuente en la ficha de los 5 chelines; no se adoptan aquí números de catálogo Newman.',
+      'Las tres piezas se describen como circuladas y sin encapsular; la conservación se anota de forma descriptiva, no numérica.',
+    ],
     relatedTitle: 'En la colección',
   },
   en: {
     metaTitle: '1690–1788 · Colonial paper | Notofilia',
     metaDescription:
-      'United States colonial paper: Massachusetts bills of credit (1690) and Continental Currency. The $5 of 14 January 1779, Friedberg CC-91, already has a note page.',
+      'United States colonial paper: Massachusetts 1690, Pennsylvania 1773, and 1779 Continental Currency. Three notes; New Jersey 1776 waits for a serial.',
     kicker: '1690–1788',
     title: 'Colonial paper',
     breadcrumbCurrent: 'Colonial paper',
@@ -897,21 +945,68 @@ export const colonialSeriesCopy = {
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The value was not in the metal of the substrate: it was in the colony’s promise.',
-      'Those Colony or Old Charter Bills were indented — the wavy cut along the edge had to fit the stub the treasurer kept — and carried the Massachusetts Bay seal, with the Indian and the legend Come over and help us. The Newman Numismatic Portal records the denominations of 5, 10, and 20 shillings and £5, and three committee signatures. The other colonies copied the expedient.',
-      'In 1775 the Continental Congress issued Continentals to finance independence. The notes promised Spanish milled dollars or their equal in gold or silver; they paid no interest. Inflation and British counterfeits left them “not worth a Continental.” The last resolution was that of 14 January 1779.',
-      'This case closes in 1788, the year the Constitution was ratified. Article I, Section 10, forbade the states to emit bills of credit. The collapse of Continental paper delayed federal paper until the greenbacks of 1861–1862.',
-      'The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 also belong here: a serial is not invented to open their pages.',
+      'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that this was the first public paper money authorized by a legislature in the British American colonies. The distinction matters: five years earlier, in 1685, intendant Jacques de Meulles had already paid the troops of New France with signed, cut playing cards, each for a stated value. That monnaie de carte is the hemispheric antecedent. What Massachusetts inaugurated was something else: the value did not sit in the metal of the substrate, but in the colony’s promise.',
+      'Those Colony or Old Charter Bills were indented — the wavy cut along the edge had to fit the stub the treasurer retained — and carried the Massachusetts Bay seal, with the Indian and the legend “Come over and help us.” The Newman Numismatic Portal records the denominations of 5, 10, and 20 shillings and of £5, and the signatures of three members of the committee. The other colonies copied the expedient.',
+    ],
+    provincialTitle: 'Eighty-five years of provincial paper',
+    provincial: [
+      'Between Massachusetts and the Continental Congress there is almost a century of colonial issues, and the pieces in this case come from that span. Pennsylvania entered in 1723 with £45,000 in bills of credit: £7,500 for the government and the rest lent to private borrowers at 5 percent against mortgage security. That mechanism — a public office that issues paper against mortgages — is the Loan Office that returns in the 1773 emission. A young Benjamin Franklin defended it in 1729 in A Modest Enquiry into the Nature and Necessity of a Paper-Currency, one of the earliest imprints from his Philadelphia shop.',
+      'The paper was not worth the same everywhere. Each colony rated the Spanish milled dollar in its own shillings: 6 in New England, Maryland, and Virginia (“lawful money”); 7 shillings and 6 pence in Pennsylvania, New Jersey, and Delaware; 8 in New York. That is why a Pennsylvania 5-shilling note “promises a crown” and not a dollar, and why New Jersey issued six shillings: they are fractions of a peso fuerte that almost no one held in the hand.',
+      'London distrusted the expedient. The Currency Act of 1751 limited issues in New England and withdrew legal tender for private debts; that of 1764 extended the legal-tender ban to all the colonies. In 1773 Parliament relented and allowed paper money as legal tender for public debts. The Pennsylvania issue of 1 October of that year is born in that opening, printed by Hall and Sellers on paper with mica flakes and blue fibers.',
+    ],
+    continentalTitle: 'Continental Currency, 1775–1779',
+    continental: [
+      'Between June 1775 and January 1779 the Continental Congress ordered eleven issues that totaled about $241.5 million and were the war’s principal source of revenue. The notes promised Spanish milled dollars or their equivalent in gold or silver; they paid no interest. The early series read “The United Colonies”; that of 14 January 1779 already carries on the border “The United States of North America.”',
+      'That last issue — $95,051,695 in sixteen values, from $1 to $80 — left the Hall and Sellers press in Philadelphia with the face in red and black and, on the back, the impression of a real leaf: Franklin’s nature print, distinct for each denomination. Great Britain counterfeited the series of 20 May 1777 and 11 April 1778 on such a scale that Congress withdrew them entirely.',
+      'None of that stopped the fall. In January 1777 it took 1.25 Continental dollars for one in specie; in January 1781, one hundred. The paper ceased to circulate in May of that year and left the phrase: “not worth a Continental.” The Constitution, ratified in 1788, closed the door on the states — Article I, Section 10: no state shall emit bills of credit — and Congress retired the remainder in 1790, exchanging it for bonds at one hundred to one. The discredit was such that there was no federal paper money until the greenbacks of 1861–1862.',
+    ],
+    howToReadTitle: 'How to read a colonial note',
+    howToReadIntro: 'Five marks that recur on the three records and on almost all paper of the period:',
+    howToRead: [
+      {
+        label: 'Indented.',
+        text: 'The hand-cut edge had to match the stub the treasurer kept. It is the first anti-counterfeit system for United States paper.',
+      },
+      {
+        label: 'Manuscript signatures.',
+        text: 'Two or three commissioners signed each note in ink; on the 1779 series the numbering and some signatures are in red.',
+      },
+      {
+        label: 'Manuscript serial.',
+        text: 'Neither Pick nor Friedberg identifies a specimen; the handwritten number does, when it can be read.',
+      },
+      {
+        label: 'Franklin paper.',
+        text: 'Mica flakes and blue fibers in the paper mass, visible against the light on the Pennsylvania pieces.',
+      },
+      {
+        label: 'Printed threat.',
+        text: '“To Counterfeit is Death” on Pennsylvania; on the Continentals, the nature-print leaf served the same function.',
+      },
     ],
     viewNote: 'Open the note page',
-    pickLabel: 'Pick',
+    pickLabel: 'Cat.',
     serialLabel: 'Serial',
-    sourcesTitle: 'Sources',
+    sourcesTitle: 'Links',
     holdingsTitle: 'Notes in the collection',
+    holdingsCardsLabel: 'Note pages with images',
     holdingsIntro:
-      'Each record describes a physical object. A Pick number or a year does not identify the piece: the serial does, when it can be read.',
+      'Each record describes a physical object. A Pick number or a year does not identify the specimen: the serial does, when it can be read.',
+    holdingsItems: [
+      '$5 · Continental Currency · 14 January 1779 · Friedberg CC-91 · Serial — · Emblem SUSTINE VEL ABSTINE · Reverse: feverfew leaf',
+      '5 shillings · Pennsylvania · 1 October 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serial 9733',
+      '2 shillings and 6 pence · Pennsylvania · 1 October 1773 · Friedberg PA-165 · Serial 21251',
+    ],
+    holdingsNote:
+      'Three note pages, 1773–1779. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 13 September 2026.',
     emptyHoldings:
-      'There are no further colonial note pages yet. Pennsylvania 1773 and the New Jersey six-shillings of 1776 wait for a serial or a certificate.',
+      'There are no colonial note pages yet. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate.',
+    referencesTitle: 'References and condition',
+    references: [
+      'Fr. refers to Paper Money of the United States (Friedberg), which numbers colonial issues by colony (PA, NJ) and Continentals as CC. On the 5-shilling record, P# is the Standard Catalog of World Paper Money (Pick) specialized number: S-2540. N# is the Numista type number: N#406969. Those two abbreviations are written out once, here.',
+      'This case uses Friedberg numbers on the three records. Newman, The Early Paper Money of America, is cited as a source on the 5-shilling page; Newman catalog numbers are not adopted here.',
+      'The three pieces are described as circulated and unencapsulated; condition is noted descriptively, not numerically.',
+    ],
     relatedTitle: 'In the collection',
   },
 } as const;
@@ -949,8 +1044,8 @@ export const colonialSeriesSources: CatalogSource[] = [
     es: 'Newman Numismatic Portal — Massachusetts, 10 de diciembre de 1690',
     en: 'Newman Numismatic Portal — Massachusetts, 10 December 1690',
     note: {
-      es: '7.000 libras en Colony or Old Charter Bills; primer papel moneda público autorizado en Occidente; 5s, 10s, 20s y 5 libras.',
-      en: '£7,000 in Colony or Old Charter Bills; first authorized public paper currency in the Western world; 5s, 10s, 20s, and £5.',
+      es: '7.000 libras en Colony or Old Charter Bills; primer papel público autorizado por una legislatura en las colonias británicas; 5s, 10s, 20s y 5 libras.',
+      en: '£7,000 in Colony or Old Charter Bills; first public paper authorized by a legislature in the British American colonies; 5s, 10s, 20s, and £5.',
     },
   },
   {
@@ -967,8 +1062,8 @@ export const colonialSeriesSources: CatalogSource[] = [
     es: 'American Numismatic Society — A History of American Currency',
     en: 'American Numismatic Society — A History of American Currency',
     note: {
-      es: 'Massachusetts 1690 como primer papel moneda público occidental.',
-      en: 'Massachusetts 1690 as the first Western public paper.',
+      es: 'Massachusetts 1690 en el relato del papel público colonial; conviene el matiz de la monnaie de carte de 1685.',
+      en: 'Massachusetts 1690 in the colonial public-paper account; the 1685 monnaie de carte is the needed nuance.',
     },
   },
   {
