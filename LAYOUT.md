@@ -49,6 +49,7 @@ Text-only and mixed pages:
 
 - `AboutPage.astro`: full-bleed color-block hero; lead inside the hero ~`640px` / `40rem`. After the hero, breadcrumbs, two-column body, aside, pull-quote, and closing use the museum case (`max-w-content` + `--page-gutter`). Do not wrap the whole about page in `max-w-[46rem]`.
 - `CollectionHubPage.astro`: museum case (`max-w-content` + `--page-gutter`). Hub intro and the collection cards share that column. Do not recap the intro at `46rem`.
+- `ColombiaBancaLibrePage.astro`: museum case (`max-w-content` + `--page-gutter`) so the regional tables share the Colombia series column. Keep only the lead under the `h1` at `max-w-[46rem]`.
 - `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
 - `EditorialIndexPage.astro`: a `46rem` header above a wider index is fine.
 - Stubs and the 404 page may stay at `720px`.

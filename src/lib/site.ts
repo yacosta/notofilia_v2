@@ -59,6 +59,7 @@ import {
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
+import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -89,6 +90,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of colombiaNoteSlugs) slugs.add(slug);
   slugs.add(COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
+  slugs.add(BANCA_LIBRE_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
@@ -152,6 +154,7 @@ addLocalePair(USA_COLONIAL_PATH, USA_COLONIAL_PATH_EN);
 addLocalePair(USA_OBSOLETE_PATH, USA_OBSOLETE_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
+addLocalePair(BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export { copy } from '../i18n/copy';
@@ -326,6 +329,7 @@ const dedicatedEs = [
   ...philippinesPnbPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  ...bancaLibreDedicatedSlugs,
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,

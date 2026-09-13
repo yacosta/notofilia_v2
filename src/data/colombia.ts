@@ -365,6 +365,7 @@ export const seriesCopy = {
     errorsTiqueteLink: 'Ver tiquetes y vales',
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
+    bancaLibreEssay: 'Leer el ensayo de la banca libre',
     methodTitle: 'Catalogación, impresión y conservación',
     methodLead:
       'Identificar un billete colombiano va más allá del retrato. Esta vitrina cruza pie de imprenta, reposición, grado y catálogos locales; el número Pick no basta.',
@@ -486,6 +487,7 @@ export const seriesCopy = {
     errorsTiqueteLink: 'See tickets and vouchers',
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
+    bancaLibreEssay: 'Read the free-banking essay',
     methodTitle: 'Cataloguing, printing, and conservation',
     methodLead:
       'Identifying a Colombian note goes beyond the portrait. This case crosses imprint, replacement, grade, and local catalogues; the Pick number is not enough.',

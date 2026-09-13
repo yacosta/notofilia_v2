@@ -203,6 +203,15 @@ describe('country flags', () => {
   });
 });
 
+describe('Colombia banca libre menu', () => {
+  it('names the years on the Banca libre submenu link', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    assert.match(colombia, /es: 'Banca libre \(1870–1887\)'/);
+    assert.match(colombia, /en: 'Free banking \(1870–1887\)'/);
+  });
+});
+
 describe('Colombia visual catalogs', () => {
   it('keeps the collection-wide notes catalog in the menu and omits the Colombia coin catalog', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');

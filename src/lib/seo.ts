@@ -140,6 +140,11 @@ const extraHighValuePages = [
     es: 'Notofilia vs. otros catálogos',
     en: 'Notofilia vs. other catalogs',
   },
+  {
+    href: '/coleccion/colombia/banca-libre/',
+    es: 'Banca libre',
+    en: 'Free banking',
+  },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
   { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
 ] as const;

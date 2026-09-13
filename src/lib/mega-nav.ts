@@ -1,5 +1,6 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { BANCA_LIBRE_PATH } from '../data/colombia-banca-libre';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import {
@@ -89,6 +90,13 @@ export const megaNav: NavNode[] = [
         href: COLOMBIA_PATH,
         flag: 'co',
         children: [
+          {
+            id: 'banca-libre',
+            es: 'Banca libre (1870–1887)',
+            en: 'Free banking (1870–1887)',
+            href: BANCA_LIBRE_PATH,
+            icon: 'guides',
+          },
           {
             id: 'emisiones-extranjero-guatemala',
             es: 'Guatemala (Emisiones en el Extranjero)',
