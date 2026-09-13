@@ -78,8 +78,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The first public paper of the Western world: Massachusetts bills of credit and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. En esta vitrina caben también emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 also belong in this case.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733. En esta vitrina caben también los seis chelines de Nueva Jersey de 1776.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, also has a note page. The New Jersey six-shillings of 1776 still belongs in this case.',
     },
   },
   {
@@ -395,7 +395,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre notas de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -419,7 +419,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -890,6 +890,7 @@ export const rencySeriesSources: CatalogSource[] = [
 
 export type UnitedStatesNoteId =
   | '5-dolares-continental-1779'
+  | '5-chelines-pensilvania-1773'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '2-dolares-serie-2003-san-luis'
@@ -1070,6 +1071,136 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Mismo emblema SUSTINE VEL ABSTINE y nature print de Hall and Sellers, fecha anterior. No es esta pieza de 1779.',
           en: 'The same SUSTINE VEL ABSTINE emblem and Hall and Sellers nature print, an earlier date. Not this 1779 piece.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-chelines-pensilvania-1773',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
+    pathEn: '/collection/united-states/5-shillings-pennsylvania-1773/',
+    pick: 'Fr. PA-166 · P# S-2540 · N#406969',
+    serial: '9733',
+    serial_display: 'No. 9733',
+    signatures: {
+      es: 'Dos firmas manuscritas en tinta oscura; la inferior se lee Mifflin. Newman da tres firmantes por billete —uno suele ir en rojo— e incluye a Joseph Mifflin, James Stephens, Thomas Leech, William Fisher Jr. y Barnaby Barnes en el elenco de la emisión. La firma superior de este ejemplar no se transcribe con certeza; no se atribuye aquí a Joseph Redman ni a John Mifflin.',
+      en: 'Two manuscript signatures in dark ink; the lower one reads Mifflin. Newman gives three signers per note — one often in red — and lists Joseph Mifflin, James Stephens, Thomas Leech, William Fisher Jr., and Barnaby Barnes among the issue’s authorized hands. The upper signature on this example is not confidently transcribed; it is not assigned here to Joseph Redman or John Mifflin.',
+    },
+    printed: {
+      es: 'Hall and Sellers, Filadelfia, 1773. Newman describe papel con escamas de mica y fibras azules. La ley del 1 de febrero de 1773 autorizó 150.000 libras para reactivar el Loan Office; esta ficha no inventa una tirada para los 5 chelines ni para el serial 9733. Numista da al tipo 90 × 70 mm.',
+      en: 'Hall and Sellers, Philadelphia, 1773. Newman describes paper with mica flakes and blue fibers. The act of 1 February 1773 authorized £150,000 to revive the Loan Office; this record does not invent a printage for the 5 shillings or for serial 9733. Numista gives the type as 90 × 70 mm.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-composite.jpg',
+      front: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-front.jpg',
+      back: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '5 chelines · Pensilvania · 1 de octubre de 1773',
+      en: '5 shillings · Pennsylvania · 1 October 1773',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Provincia de Pensilvania',
+      en: 'United States · Colonial paper · Province of Pennsylvania',
+    },
+    lead: {
+      es: 'Bill of credit de 5 chelines —una corona, un cuarto de libra de «lawful money»— de la Asamblea General de Pensilvania, 1 de octubre de 1773 (no el 5). Anverso con el escudo y franja roja; reverso agrícola y «To Counterfeit is Death». Serial 9733.',
+      en: 'A 5-shilling bill of credit — one crown, a quarter pound of lawful money — of the Pennsylvania General Assembly, 1 October 1773 (not the 5th). Face with the arms and a red stripe; farm reverse and “To Counterfeit is Death.” Serial 9733.',
+    },
+    description: {
+      es: 'Los 5 chelines del 1 de octubre de 1773 (Friedberg PA-166; Pick S-2540; Numista N#406969) son un bill of credit de la provincia de Pensilvania, no un Continental del Congreso. El anverso, en negro con una franja vertical roja a la derecha, titula FIVE SHILLINGS en los cuatro lados y cita un acto de la General Assembly «passed in the 13th Year of the Reign of His Majesty GEORGE the Third. Dated the First Day of October, 1773». El long s de First (Firſt) se lee a menudo Fifth: la fecha impresa es el 1, no el 5 de octubre; el Smithsonian transcribe el mismo formulario en el 15 chelines de esta emisión (nmah_1823921). El texto promete A CROWN in Gold or Silver, containing the Value of FIVE SHILLINGS Lawful Money: en el sistema esterlina una corona son cinco chelines, un cuarto de libra, anclados a la «lawful money» provincial. Newman señala que el número de coronas del tipo se corresponde con las cinco denominaciones altas; en este cinco hay una. Al centro, el escudo con un caballo y el lema impreso VIRTUE LIBERTY AND INDEPENDENCE —el lema de este ejemplar, no el Mercy Justice de las armas Penn que a veces se describe para el tipo—. El recuadro No. lleva el serial manuscrito 9733. Hay dos firmas manuscritas; la inferior se lee Mifflin. El reverso no es la nature print de hoja de los Continentals ni de las denominaciones altas de esta misma fecha: Newman lo describe como un grabado fundido de una escena agrícola —campos, cerca y sol en el horizonte—. Encima se lee To Counterfeit is Death y FIVE SHILLINGS; abajo, Printed by HALL and SELLERS. No es el 5 dólares continental de 1779 de la misma imprenta (Fr. CC-91) ni los demás valores de octubre de 1773: 18 d PA-163, 2 s PA-164, 2 s 6 d PA-165, 10 s PA-167, 15 s PA-168, 20 s PA-169 y 50 s PA-170. La pieza, circulada y sin encapsular, se presenta sobre fondo neutro.',
+      en: 'The 5 shillings of 1 October 1773 (Friedberg PA-166; Pick S-2540; Numista N#406969) is a Province of Pennsylvania bill of credit, not a Continental of Congress. The face, black with a vertical red stripe at right, titles FIVE SHILLINGS on all four sides and cites an act of the General Assembly “passed in the 13th Year of the Reign of His Majesty GEORGE the Third. Dated the First Day of October, 1773.” The long s in First (Firſt) is often read as Fifth: the printed date is the 1st, not 5 October; the Smithsonian transcribes the same formula on the 15 shillings of this issue (nmah_1823921). The text promises A CROWN in Gold or Silver, containing the Value of FIVE SHILLINGS Lawful Money: in sterling a crown is five shillings, a quarter pound, tied to provincial lawful money. Newman notes that the number of crowns on the type is keyed to the five highest denominations; this five has one. At center sit the arms with a horse and the printed motto VIRTUE LIBERTY AND INDEPENDENCE — the motto on this example, not the Penn family’s Mercy Justice sometimes described for the type. The No. field carries manuscript serial 9733. There are two manuscript signatures; the lower one reads Mifflin. The back is not the leaf nature print of the Continentals or of the higher denominations of this same date: Newman describes a cast cut of a farming scene — fields, a fence, and a sun on the horizon. Above it stand To Counterfeit is Death and FIVE SHILLINGS; below, Printed by HALL and SELLERS. It is not the 1779 Continental $5 from the same shop (Fr. CC-91), nor the other October 1773 values: 18d PA-163, 2s PA-164, 2s6d PA-165, 10s PA-167, 15s PA-168, 20s PA-169, and 50s PA-170. The collection note, circulated and unslabbed, is shown on a neutral ground.',
+    },
+    history: [
+      {
+        es: 'El 1 de febrero de 1773 la Asamblea de Pensilvania autorizó 150.000 libras en bills of credit para reactivar el Loan Office: una caja de préstamos hipotecarios sobre tierra que devolvía el papel a la tesorería. Newman fecha la emisión impresa el 1 de octubre de 1773 —Friedberg PA-163 a PA-170— y sitúa la imprenta en Hall and Sellers, Filadelfia, herederos de la prensa de Benjamin Franklin. El papel lleva mica y fibras azules. En las cuatro denominaciones más altas el anverso se imprimió en rojo y negro a la vez; Newman apunta a plantillas de papel maché. En este 5 chelines la tinta roja marca la orla derecha. Newman no publica una tirada por denominación; los números del portal junto a cada valor (p. ej. 28.318 junto al 5 s) son referencias de lámina, no un censo de 28.300 billetes.',
+        en: 'On 1 February 1773 the Pennsylvania Assembly authorized £150,000 in bills of credit to revive the Loan Office: a land-bank of mortgage loans that returned the paper to the treasury. Newman dates the printed issue to 1 October 1773 — Friedberg PA-163 through PA-170 — and places the shop with Hall and Sellers, Philadelphia, successors to Benjamin Franklin’s press. The paper carries mica and blue fibers. On the four highest denominations the face was printed red and black at once; Newman points to papier-mâché stencil plates. On this 5 shillings the red ink marks the right border. Newman does not publish a printage by denomination; the portal numbers beside each value (e.g. 28,318 next to the 5s) are plate references, not a census of 28,300 notes.',
+      },
+      {
+        es: 'Dos años después, el Congreso Continental usaría la misma casa —y, en los reversos, nature prints de hojas— para el papel de la independencia. Este cinco de 1773 sigue fechado en el año 13 de Jorge III y promete una corona en oro o plata, no dólares españoles. La amenaza To Counterfeit is Death es la fórmula penal del reverso. Newman pide dos o tres firmas manuscritas para que el billete circule; este ejemplar muestra dos. Esta ficha describe el objeto físico; no afirma el estado de plancha ni un censo de certificación para el serial 9733.',
+        en: 'Two years later the Continental Congress would use the same shop — and, on the backs, leaf nature prints — for the paper of independence. This 1773 five is still dated in the 13th year of George III and promises a crown in gold or silver, not Spanish milled dollars. To Counterfeit is Death is the penal formula on the back. Newman calls for two or three manuscript signatures for a note to circulate; this example shows two. This record describes the physical object; it does not assert a plate state or a grading census for serial 9733.',
+      },
+    ],
+    historyHeading: {
+      es: 'El Loan Office de 1773',
+      en: 'The 1773 Loan Office',
+    },
+    frontCaption: {
+      es: 'Anverso de los 5 chelines de Pensilvania, Fr. PA-166, 1 de octubre de 1773: escudo provincial, franja roja y serial manuscrito 9733.',
+      en: 'Face of the Pennsylvania 5 shillings, Fr. PA-166, 1 October 1773: provincial arms, red stripe, and manuscript serial 9733.',
+    },
+    backCaption: {
+      es: 'Reverso con escena agrícola fundida, «To Counterfeit is Death» y «Printed by HALL and SELLERS».',
+      en: 'Back with a cast farm scene, “To Counterfeit is Death,” and “Printed by HALL and SELLERS.”',
+    },
+    scarcity: {
+      es: 'Friedberg numera el 5 chelines del 1 de octubre de 1773 como PA-166. Newman no publica en el extracto del portal una tirada por denominación: la cifra de 150.000 libras es la autorización de toda la ley, no la de este tipo. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para el serial 9733.',
+      en: 'Friedberg numbers the 5 shillings of 1 October 1773 as PA-166. Newman’s portal extract does not publish a printage by denomination: the £150,000 figure is the authorization for the whole act, not for this type. This record does not invent a census or an auction rarity for the type or for serial 9733.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 9733. La pieza se presenta sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial 9733 has not been independently verified. The note is shown unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://nnp.wustl.edu/library/imagecollection/514721',
+        es: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        en: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        note: {
+          es: 'Ley del 1 de febrero de 1773, 150.000 libras; Hall and Sellers; papel con mica y fibras azules; escena agrícola en el reverso; coronas según denominación; impresión en rojo y negro; firmantes, entre ellos Joseph Mifflin.',
+          en: 'Act of 1 February 1773, £150,000; Hall and Sellers; mica and blue-fiber paper; farm scene on the back; crowns keyed to denomination; red-and-black printing; signers including Joseph Mifflin.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/406969',
+        es: 'Numista — 5 Shillings, Colony of Pennsylvania (N#406969)',
+        en: 'Numista — 5 Shillings, Colony of Pennsylvania (N#406969)',
+        note: {
+          es: 'Pick S-2540; 90 × 70 mm; Hall & Sellers; anverso con escudo; reverso agrícola y «To Counterfeit is Death».',
+          en: 'Pick S-2540; 90 × 70 mm; Hall & Sellers; arms on the face; farm reverse and “To Counterfeit is Death.”',
+        },
+      },
+      {
+        href: 'https://coins.nd.edu/ColCurrency/CurrencyText/PA-10-01-73.html',
+        es: 'University of Notre Dame — Pennsylvania, 1 de octubre de 1773',
+        en: 'University of Notre Dame — Pennsylvania, 1 October 1773',
+        note: {
+          es: 'Texto de la emisión provincial de esa fecha, en la misma serie que usa esta vitrina para el Continental del 14 de enero de 1779.',
+          en: 'Text of the provincial issue of that date, in the same series this case uses for the Continental of 14 January 1779.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1986138',
+        es: 'Smithsonian — National Museum of American History, 5 Shillings, Pennsylvania, 1773',
+        en: 'Smithsonian — National Museum of American History, 5 Shillings, Pennsylvania, 1773',
+        note: {
+          es: 'Ejemplar de tipo, fecha en el objeto 1773-10-01, imprenta Hall & Sellers. No es el serial 9733.',
+          en: 'A type example, date on object 1773-10-01, printer Hall & Sellers. Not serial 9733.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1823921',
+        es: 'Smithsonian — 15 Shillings, Pennsylvania, 1773 (nmah_1823921)',
+        en: 'Smithsonian — 15 Shillings, Pennsylvania, 1773 (nmah_1823921)',
+        note: {
+          es: 'Misma emisión: transcribe «DATED THE FIRFT DAY OF OC-TOBER, 1773». Confirma el 1 de octubre frente a una lectura Fifth del long s.',
+          en: 'Same issue: transcribes “DATED THE FIRFT DAY OF OC-TOBER, 1773.” Confirms 1 October against a Fifth reading of the long s.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Contexto del papel colonial anterior a los Continentals de 1775.',
+          en: 'Context for colonial paper before the Continentals of 1775.',
         },
       },
     ],

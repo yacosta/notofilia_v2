@@ -136,6 +136,16 @@ describe('sitemap coverage for Continental Currency $5 1779', () => {
   });
 });
 
+describe('sitemap coverage for Pennsylvania 5 shillings 1773', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/5-chelines-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/5-shillings-pennsylvania-1773/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
   it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
     assert.equal(
