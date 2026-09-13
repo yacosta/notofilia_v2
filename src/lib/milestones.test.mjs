@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, holding.id);
+    assert.equal(additions.at(-1)?.id, 'us-pa-165-2s6d-1773-21251');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
