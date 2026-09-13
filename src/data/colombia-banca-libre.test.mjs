@@ -39,6 +39,25 @@ describe('Colombia banca libre essay', () => {
     assert.ok(bancaLibreCopy.en.sources.every((source) => source.href.startsWith('http')));
   });
 
+  it('links Hipotecario and Riohacha in the regional tables to the published proofs', () => {
+    const cells = bancaLibreCopy.es.sections.flatMap((section) =>
+      (section.tables ?? []).flatMap((table) => table.rows.flat()),
+    );
+    const hipotecario = cells.find(
+      (cell) => typeof cell !== 'string' && cell.label === 'Banco Hipotecario de Bogotá',
+    );
+    const riohacha = cells.find((cell) => typeof cell !== 'string' && cell.label === 'Banco de Riohacha');
+    assert.deepEqual(hipotecario, {
+      label: 'Banco Hipotecario de Bogotá',
+      href: '/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
+    });
+    assert.deepEqual(riohacha, {
+      label: 'Banco de Riohacha',
+      href: '/coleccion/colombia/5-pesos-rio-hacha-1883/',
+    });
+    assert.match(pageSource, /localizePath\(cell\.href, locale\)/);
+  });
+
   it('uses the museum case width, not a 46rem article wrapper', () => {
     assert.match(pageSource, /article class="mx-auto max-w-content px-\[var\(--page-gutter\)\]/);
     assert.doesNotMatch(pageSource, /article class="[^"]*max-w-\[46rem\]/);

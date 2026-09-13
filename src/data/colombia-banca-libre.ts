@@ -8,10 +8,12 @@ type BancaLibreSource = {
   label: string;
 };
 
+export type BancaLibreTableCell = string | { label: string; href: string };
+
 type BancaLibreTable = {
   caption: string;
   headers: string[];
-  rows: string[][];
+  rows: BancaLibreTableCell[][];
 };
 
 type BancaLibreSection = {
@@ -106,7 +108,15 @@ export const bancaLibreCopy: Record<Locale, BancaLibreCopy> = {
               ['Banco de Bogotá', 'Bogotá', '1870', 'Primer banco comercial moderno aceptado de forma amplia; sobrevive como instituto de crédito.'],
               ['Banco de Colombia', 'Bogotá', '1875', 'Emisor nacional con sucursales; sobrevivió la era.'],
               ['Banco Popular', 'Bogotá', '1877', 'Descuento comercial y crédito local en la capital.'],
-              ['Banco Hipotecario de Bogotá', 'Bogotá', '1881', 'Crédito hipotecario y agrícola; billetes grabados por la American Bank Note Company. Esta vitrina documenta las pruebas de 5 pesos de 1881.'],
+              [
+                {
+                  label: 'Banco Hipotecario de Bogotá',
+                  href: '/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
+                },
+                'Bogotá',
+                '1881',
+                'Crédito hipotecario y agrícola; billetes grabados por la American Bank Note Company. Esta vitrina documenta las pruebas de 5 pesos de 1881.',
+              ],
               ['Banco Internacional', 'Bogotá', '1884', 'Casa comercial emisora al final del auge.'],
               ['Banco del Estado', 'Bogotá', '1884', 'Liquidado más tarde; las síntesis sitúan el paso de activos al Banco Cafetero en el siglo XX.'],
             ],
@@ -158,7 +168,15 @@ export const bancaLibreCopy: Record<Locale, BancaLibreCopy> = {
               ['Banco de Barranquilla', 'Barranquilla', '1873', 'Casas locales y extranjeras; comercio del Magdalena.'],
               ['Banco de Bolívar', 'Cartagena', '1874', 'Emisor costero de larga vida; las síntesis hablan de unos 42 años antes de la liquidación.'],
               ['Banco de Cartagena', 'Cartagena', '1881', 'La literatura lo asocia a Rafael Núñez; operó hasta 1919.'],
-              ['Banco de Riohacha', 'Riohacha', '1882/1883', 'Comercio de frontera en la Guajira. Esta vitrina documenta las pruebas ABNC de 5 pesos de 1883.'],
+              [
+                {
+                  label: 'Banco de Riohacha',
+                  href: '/coleccion/colombia/5-pesos-rio-hacha-1883/',
+                },
+                'Riohacha',
+                '1882/1883',
+                'Comercio de frontera en la Guajira. Esta vitrina documenta las pruebas ABNC de 5 pesos de 1883.',
+              ],
               ['Banco Comercial de Cartagena', 'Cartagena', 'Época', 'Vida breve y poco éxito comercial en las síntesis.'],
               ['Banco Industrial', 'Cartagena', 'Época', 'Parte del grupo de casas de la ciudad hasta el siglo XX.'],
             ],
@@ -360,7 +378,15 @@ export const bancaLibreCopy: Record<Locale, BancaLibreCopy> = {
               ['Banco de Bogotá', 'Bogotá', '1870', 'First modern commercial bank broadly accepted; survives as a credit institute.'],
               ['Banco de Colombia', 'Bogotá', '1875', 'National issuer with branches; survived the era.'],
               ['Banco Popular', 'Bogotá', '1877', 'Commercial discounting and local credit in the capital.'],
-              ['Banco Hipotecario de Bogotá', 'Bogotá', '1881', 'Mortgage and agricultural credit; notes engraved by the American Bank Note Company. This case records the 1881 5-peso proofs.'],
+              [
+                {
+                  label: 'Banco Hipotecario de Bogotá',
+                  href: '/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
+                },
+                'Bogotá',
+                '1881',
+                'Mortgage and agricultural credit; notes engraved by the American Bank Note Company. This case records the 1881 5-peso proofs.',
+              ],
               ['Banco Internacional', 'Bogotá', '1884', 'Commercial issuing house at the end of the boom.'],
               ['Banco del Estado', 'Bogotá', '1884', 'Later liquidated; syntheses place the passage of assets to Banco Cafetero in the twentieth century.'],
             ],
@@ -412,7 +438,15 @@ export const bancaLibreCopy: Record<Locale, BancaLibreCopy> = {
               ['Banco de Barranquilla', 'Barranquilla', '1873', 'Local and foreign houses; Magdalena River trade.'],
               ['Banco de Bolívar', 'Cartagena', '1874', 'Coastal issuer of long life; syntheses give about 42 years before liquidation.'],
               ['Banco de Cartagena', 'Cartagena', '1881', 'The literature links it to Rafael Núñez; it operated until 1919.'],
-              ['Banco de Riohacha', 'Riohacha', '1882/1883', 'Frontier trade on the Guajira. This case records the 1883 5-peso ABNC proofs.'],
+              [
+                {
+                  label: 'Banco de Riohacha',
+                  href: '/coleccion/colombia/5-pesos-rio-hacha-1883/',
+                },
+                'Riohacha',
+                '1882/1883',
+                'Frontier trade on the Guajira. This case records the 1883 5-peso ABNC proofs.',
+              ],
               ['Banco Comercial de Cartagena', 'Cartagena', 'Era', 'Brief life and little commercial success in the syntheses.'],
               ['Banco Industrial', 'Cartagena', 'Era', 'Part of the city’s cohort of houses into the twentieth century.'],
             ],
