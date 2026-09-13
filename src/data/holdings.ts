@@ -156,6 +156,7 @@ export const additions: Holding[] = [
   { id: 'co-2010-5000-pesos-error-09636101', kind: 'banknote', country: 'CO' },
   { id: 'us-usn-1917-2-b50400302a', kind: 'banknote', country: 'US' },
   { id: 'co-2010-5000-pesos-error-09629901', kind: 'banknote', country: 'CO' },
+  { id: 'us-pa-166-5s-1773-9733', kind: 'banknote', country: 'US' },
   { id: 'us-pa-165-2s6d-1773-21251', kind: 'banknote', country: 'US' },
 ];
 
@@ -241,6 +242,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1993-5000-pesos-oro-p436a-b974c' },
   { id: 'co-2010-5000-pesos-error-p452l' },
   { id: 'us-usn-1917-2-p188-fr60' },
+  { id: 'us-pa-166-1773-5s' },
   { id: 'us-pa-165-1773-2s6d' },
 ];
 

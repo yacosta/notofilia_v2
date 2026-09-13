@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T04:10:14.485Z",
+  "generatedAt": "2026-09-13T04:17:25.980Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1834,6 +1834,45 @@
       "title": {
         "es": "5 dólares · Continental Currency · 14 de enero de 1779",
         "en": "$5 · Continental Currency · 14 January 1779"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "front",
+      "hash": "336555490b233713",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-composite.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "front",
+      "hash": "292b49256d2d5903",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-front.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "back",
+      "hash": "1f2b0b13132b232b",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-back.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
       }
     },
     {
