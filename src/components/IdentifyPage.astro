@@ -5,6 +5,7 @@ import { localizePath, SITE_URL, type Locale } from '../lib/site';
 import { identifyCopy, identifyPath } from '../data/identify';
 import { searchPath } from '../data/search';
 import identifyIndex from '../data/identify-index.json';
+import { CATALOG_PIECE_GRID } from '../lib/catalog-grid';
 import type { IdentifyIndex } from '../lib/identify';
 
 interface Props {
@@ -163,7 +164,7 @@ const ui = {
         <noscript>
           <p class="mb-6 font-sans text-[14px] text-muted">{t.needsJs}</p>
         </noscript>
-        <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2" data-identify-results></ul>
+        <ul class:list={['m-0', CATALOG_PIECE_GRID]} data-identify-results></ul>
       </section>
 
       <p class="mt-10 max-w-[46rem] text-[15px] text-muted">{t.disclaimer}</p>

@@ -56,7 +56,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | `identify` | Home → Identify | none (text header) | how-it-works, camera/upload, top matches (no prices) | `WebPage` + `BreadcrumbList` |
 | `reference-tool` | Home → Tools (→ tool) | none (text header) | hub cards or serial field and pattern classes (no prices) | `WebPage` + `BreadcrumbList` |
 | `resource` | Home → title | none | text-only article (`max-w-[46rem]`); Banca libre uses the museum case (`max-w-content`) with a `46rem` lead | `Article` + `BreadcrumbList` |
-| `visual-catalog` | Home → series → catalog | none (text header) | stats (no prices), field, sort, filter pills, four-column type grid | `CollectionPage` + `BreadcrumbList` |
+| `visual-catalog` | Home → series → catalog | none (text header) | stats (no prices), field, sort, filter pills, three-column type grid | `CollectionPage` + `BreadcrumbList` |
 | `stub` | optional | none | coming-soon copy | none |
 | `error` | none | none | title, body, home link | none |
 

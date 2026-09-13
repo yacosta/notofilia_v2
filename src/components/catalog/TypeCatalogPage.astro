@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import { CATALOG_TYPE_GRID, CATALOG_TYPE_THUMB_SIZES } from '../../lib/catalog-grid';
 import SourceList from './SourceList.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
@@ -287,7 +288,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
       </noscript>
 
       <ul
-        class="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-4 sm:gap-4"
+        class:list={['m-0', CATALOG_TYPE_GRID]}
         data-catalog-results
         aria-label={t.title}
       >
@@ -306,7 +307,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
                       width={isNotes ? 1440 : 1024}
                       height={isNotes ? 960 : 1024}
                       class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain"
-                      sizes="(max-width: 640px) 50vw, 25vw"
+                      sizes={CATALOG_TYPE_THUMB_SIZES}
                     />
                   ) : (
                     <div class="mb-3 flex aspect-[3/2] w-full flex-col items-center justify-center rounded-[2px] bg-bg px-2 text-center">
@@ -329,7 +330,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
                       width={isNotes ? 1440 : 1024}
                       height={isNotes ? 960 : 1024}
                       class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain"
-                      sizes="(max-width: 640px) 50vw, 25vw"
+                      sizes={CATALOG_TYPE_THUMB_SIZES}
                     />
                   ) : (
                     <div class="mb-3 flex aspect-[3/2] w-full flex-col items-center justify-center rounded-[2px] bg-bg px-2 text-center">
@@ -374,6 +375,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
   window.__NOTOFILIA_TYPE_CATALOG__ = { documents, ui, filters };
 </script>
 <script>
+  import { CATALOG_TYPE_THUMB_SIZES } from '../../lib/catalog-grid';
   import { cfImage } from '../../lib/images';
   import {
     createTypeCatalogEngine,
@@ -437,6 +439,7 @@ function cardMeta(hit: TypeCatalogDocument): string {
         img.loading = 'lazy';
         img.decoding = 'async';
         img.className = 'mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain';
+        img.sizes = CATALOG_TYPE_THUMB_SIZES;
         return img;
       }
       const placeholder = document.createElement('div');

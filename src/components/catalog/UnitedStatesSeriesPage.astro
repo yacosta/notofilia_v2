@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import CatalogProseParagraph from './CatalogProseParagraph.astro';
 import FaqBlock from '../FaqBlock.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
@@ -139,7 +140,7 @@ const jsonLd = collectionPageJsonLd({
               {
                 notes.length > 0 ? (
                   <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
+                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
                     aria-label={listLabel}
                   >
                     {notes.map((note) => (
