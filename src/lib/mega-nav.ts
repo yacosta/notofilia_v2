@@ -92,8 +92,8 @@ export const megaNav: NavNode[] = [
         children: [
           {
             id: 'banca-libre',
-            es: 'Banca libre',
-            en: 'Free banking',
+            es: 'Banca libre (1870–1887)',
+            en: 'Free banking (1870–1887)',
             href: BANCA_LIBRE_PATH,
             icon: 'guides',
           },
