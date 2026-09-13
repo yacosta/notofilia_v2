@@ -65,6 +65,13 @@ describe('sitemap coverage for Colombia visual catalogs', () => {
   });
 });
 
+describe('sitemap coverage for the Colombia banca libre essay', () => {
+  it('maps the Banca libre pair used in dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the comparison page', () => {
   it('maps the Notofilia vs catalogs pair used in dedicated catalog paths', () => {
     assert.equal(

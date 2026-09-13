@@ -20,6 +20,13 @@ describe('Colombia series overview', () => {
     assert.equal(notesForChapter('junta-conversion').length, 0);
   });
 
+  it('links the Banca libre chapter to the essay page', () => {
+    assert.equal(seriesCopy.es.bancaLibreEssay, 'Leer el ensayo de la banca libre');
+    assert.equal(seriesCopy.en.bancaLibreEssay, 'Read the free-banking essay');
+    assert.match(pageSource, /BANCA_LIBRE_PATH/);
+    assert.match(pageSource, /chapter\.id === 'banca-libre'/);
+  });
+
   it('keeps a bilingual cataloguing method block on the series page', () => {
     assert.match(seriesCopy.es.intro[0], /Bienvenido a la vitrina virtual/);
     assert.match(seriesCopy.en.intro[0], /Welcome to the virtual case/);
