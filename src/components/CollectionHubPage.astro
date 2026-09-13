@@ -27,31 +27,35 @@ const jsonLd = collectionPageJsonLd({
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
-  <main id="main-content" tabindex="-1" class="mx-auto max-w-content px-[var(--page-gutter)] py-16 outline-none">
-    <Breadcrumb
-      locale={locale}
-      items={[
-        { href: localizePath('/', locale), label: t.home },
-        { label: t.browseTitle },
-      ]}
-    />
-    <h1 class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">{t.browseTitle}</h1>
-    <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{t.collectionHubLead}</p>
-    <p class="mb-8 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{t.collectionHubBody}</p>
-    <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
-      {
-        collections.map((item) => (
-          <li>
-            <a
-              href={localizePath(item.href, locale)}
-              class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-panel p-5 text-inherit no-underline hover:border-gold-light"
-            >
-              <span class="mb-2 block font-display text-[1.5rem]/8 text-cream-dim group-hover:text-cream">{item[locale].title}</span>
-              <span class="block font-sans text-[15px]/6 text-muted">{item[locale].description}</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.browseTitle },
+        ]}
+      />
+      <h1 class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">{t.browseTitle}</h1>
+      <div class="mb-8 w-full text-[17px]/7 text-muted">
+        <p class="mb-4 mt-0">{t.collectionHubLead}</p>
+        <p class="mb-0 mt-0">{t.collectionHubBody}</p>
+      </div>
+      <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          collections.map((item) => (
+            <li>
+              <a
+                href={localizePath(item.href, locale)}
+                class="group block h-full min-h-11 rounded-[6px] border border-line-strong bg-panel p-5 text-inherit no-underline hover:border-gold-light"
+              >
+                <span class="mb-2 block font-display text-[1.5rem]/8 text-cream-dim group-hover:text-cream">{item[locale].title}</span>
+                <span class="block font-sans text-[15px]/6 text-muted">{item[locale].description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
   </main>
 </Layout>
