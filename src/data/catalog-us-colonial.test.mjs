@@ -185,3 +185,42 @@ describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
     assert.match(data, /the Pennsylvania 2 shillings and 6 pence of 1 October 1773 \(Fr\. PA-165\), serial 21251/);
   });
 });
+
+describe('US colonial series page 1690–1788', () => {
+  const seriesPage = readFileSync(
+    new URL('../components/catalog/UnitedStatesSeriesPage.astro', import.meta.url),
+    'utf8',
+  );
+  const colonialPage = readFileSync(
+    new URL('../components/catalog/UnitedStatesColonialSeriesPage.astro', import.meta.url),
+    'utf8',
+  );
+  const esRoute = readFileSync(
+    new URL('../pages/coleccion/estados-unidos/moneda-colonial/index.astro', import.meta.url),
+    'utf8',
+  );
+  const enRoute = readFileSync(
+    new URL('../pages/en/collection/united-states/colonial-paper/index.astro', import.meta.url),
+    'utf8',
+  );
+
+  it('pairs the dedicated colonial case and links it from the United States series', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/moneda-colonial/', 'en'),
+      '/en/collection/united-states/colonial-paper/',
+    );
+    assert.match(data, /USA_COLONIAL_PATH = '\/coleccion\/estados-unidos\/moneda-colonial\/'/);
+    assert.match(data, /title: 'Moneda colonial'/);
+    assert.match(data, /title: 'Colonial paper'/);
+    assert.match(data, /kicker: '1690–1788'/);
+    assert.match(data, /notesForChapter\('us-colonial'\)|chapterId === 'us-colonial'/);
+    assert.match(colonialPage, /notesForChapter\('us-colonial'\)/);
+    assert.match(seriesPage, /viewColonialCase/);
+    assert.match(seriesPage, /USA_COLONIAL_PATH/);
+    assert.match(esRoute, /UnitedStatesColonialSeriesPage/);
+    assert.match(esRoute, /locale="es"/);
+    assert.match(enRoute, /UnitedStatesColonialSeriesPage/);
+    assert.match(enRoute, /locale="en"/);
+    assert.doesNotMatch(colonialPage, /seriesSources/);
+  });
+});

@@ -4,11 +4,13 @@ import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import {
   USA_BARABOO_SCRIP_PATH,
+  USA_COLONIAL_PATH,
   USA_MISC_PATH,
   USA_MPC_PATH,
   USA_PATH,
   USA_RENCY_PATH,
   barabooScripSeriesCopy,
+  colonialSeriesCopy,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { USA_COINAGE_PATH, coinById } from '../data/estados-unidos-coinage';
@@ -97,6 +99,13 @@ export const megaNav: NavNode[] = [
         href: USA_PATH,
         flag: 'us',
         children: [
+          {
+            id: 'moneda-colonial',
+            es: colonialSeriesCopy.es.title,
+            en: colonialSeriesCopy.en.title,
+            href: USA_COLONIAL_PATH,
+            icon: 'guides',
+          },
           {
             id: 'filipinas',
             es: 'Filipinas (1916 - 1945)',

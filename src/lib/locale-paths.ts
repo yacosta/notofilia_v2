@@ -227,6 +227,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/miscellaneous/'],
   },
   {
+    es: '/coleccion/estados-unidos/moneda-colonial/',
+    en: '/collection/united-states/colonial-paper/',
+    aliases: ['/coleccion/united-states/colonial-paper/'],
+  },
+  {
     es: '/coleccion/estados-unidos/',
     en: '/collection/united-states/',
     aliases: ['/coleccion/united-states/'],
@@ -425,6 +430,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
     '/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/estados-unidos/rency/',
+    '/en/coleccion/estados-unidos/moneda-colonial/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
@@ -445,6 +451,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/pele-the-beautiful-game/',
     '/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/united-states/rency/',
+    '/en/coleccion/united-states/colonial-paper/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',

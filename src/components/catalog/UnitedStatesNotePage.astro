@@ -15,6 +15,7 @@ import {
   noteSeriesHref,
   seriesPath,
   unitedStatesNotes,
+  USA_COLONIAL_PATH,
   USA_MISC_PATH,
   USA_RENCY_PATH,
   type UnitedStatesNote,
@@ -66,7 +67,9 @@ const crumbItems = [
       ]
     : note.chapterId === 'us-pop-art'
       ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
-      : []),
+      : note.chapterId === 'us-colonial'
+        ? [{ href: localizePath(USA_COLONIAL_PATH, locale), label: t.colonialLink }]
+        : []),
   { label: seo.h1 },
 ];
 const jsonCrumbs = [
@@ -81,7 +84,9 @@ const jsonCrumbs = [
       ]
     : note.chapterId === 'us-pop-art'
       ? [{ name: t.rencyLink, path: USA_RENCY_PATH }]
-      : []),
+      : note.chapterId === 'us-colonial'
+        ? [{ name: t.colonialLink, path: USA_COLONIAL_PATH }]
+        : []),
   { name: seo.h1, path: pathname },
 ];
 ---
@@ -284,7 +289,9 @@ const jsonCrumbs = [
               ? t.miscLink
               : note.chapterId === 'us-pop-art'
                 ? t.rencyLink
-                : t.seriesLink}
+                : note.chapterId === 'us-colonial'
+                  ? t.colonialLink
+                  : t.seriesLink}
         </a>
       </p>
     </article>

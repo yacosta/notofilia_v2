@@ -126,6 +126,16 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
   });
 });
 
+describe('sitemap coverage for colonial paper 1690–1788', () => {
+  it('maps the dedicated colonial series pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/moneda-colonial/', 'en'),
+      '/en/collection/united-states/colonial-paper/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for Continental Currency $5 1779', () => {
   it('maps the colonial piece pair used in dedicated catalog paths', () => {
     assert.equal(
