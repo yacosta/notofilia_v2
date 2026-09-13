@@ -70,7 +70,7 @@ source,target,status,rule,confidence
 /category/numismatica/%7B%7B%20item.url%20%7D%7D,,410,gone,high
 /category/numismatica/noticias.dc.html,/noticias/,301,last-slug,high
 /category/numismatica/politica-privacidad-cookies.dc.html,/politica-privacidad-cookies/,301,manual,high
-/coleccion/billete-obsoleto-estados-unidos/,/coleccion/estados-unidos/,301,category-hub,high
+/coleccion/billete-obsoleto-estados-unidos/,/coleccion/estados-unidos/billetes-obsoletos/,301,category-hub,high
 /coleccion/certificados-de-pago-militar/,/coleccion/estados-unidos/mpc-vietnam/,301,category-hub,high
 /coleccion/certificados-de-pago-militar/1-dolar-serie-681/,/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/,301,last-slug,high
 /coleccion/certificados-de-pago-militar/10-dolares-serie-641/,/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/,301,last-slug,high

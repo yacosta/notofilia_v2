@@ -255,6 +255,17 @@ describe('United States submenu', () => {
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
 
+  it('includes the obsolete notes case under Estados Unidos after colonial paper', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    assert.match(source, /notesForChapter\('us-obsoleto'\)/);
+    assert.match(usa, /id: 'billetes-obsoletos'/);
+    assert.match(usa, /href: USA_OBSOLETE_PATH/);
+    assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
+    assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
+    assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
+  });
+
   it('includes the Rency and Misceláneos cases under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';

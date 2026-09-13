@@ -23,6 +23,8 @@ import {
   USA_RENCY_PATH_EN,
   USA_COLONIAL_PATH,
   USA_COLONIAL_PATH_EN,
+  USA_OBSOLETE_PATH,
+  USA_OBSOLETE_PATH_EN,
   unitedStatesNoteDedicatedSlugs,
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
@@ -147,6 +149,7 @@ addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
 addLocalePair(USA_COLONIAL_PATH, USA_COLONIAL_PATH_EN);
+addLocalePair(USA_OBSOLETE_PATH, USA_OBSOLETE_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
@@ -287,6 +290,7 @@ export const stubPages = [
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },
+  { path: 'coleccion/estados-unidos/billetes-obsoletos', es: 'Billetes obsoletos (1782–1866)', en: 'Obsolete notes (1782–1866)' },
   { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
@@ -347,6 +351,8 @@ const dedicatedEs = [
   USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_COLONIAL_PATH.replace(/^\/|\/$/g, ''),
   USA_COLONIAL_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),

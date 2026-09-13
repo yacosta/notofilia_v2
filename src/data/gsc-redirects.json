@@ -727,12 +727,12 @@
       "rule": "manual"
     },
     "/coleccion/billete-obsoleto-estados-unidos/": {
-      "target": "/coleccion/estados-unidos/",
+      "target": "/coleccion/estados-unidos/billetes-obsoletos/",
       "status": 301,
       "rule": "category-hub"
     },
     "/coleccion/billete-obsoleto-estados-unidos": {
-      "target": "/coleccion/estados-unidos/",
+      "target": "/coleccion/estados-unidos/billetes-obsoletos/",
       "status": 301,
       "rule": "category-hub"
     },
