@@ -50,7 +50,7 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
-    <article class="mx-auto max-w-[46rem] px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <Breadcrumb
         locale={locale}
         label={t.breadcrumb}
@@ -66,7 +66,7 @@ const jsonLd = {
         <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
           {t.title}
         </h1>
-        <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
         <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
           <time datetime={t.published}>{t.dateLabel}</time>
         </p>
