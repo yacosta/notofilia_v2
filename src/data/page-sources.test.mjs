@@ -19,6 +19,7 @@ const subseriesPages = [
   '../components/catalog/UnitedStatesMiscSeriesPage.astro',
   '../components/catalog/UnitedStatesRencySeriesPage.astro',
   '../components/catalog/UnitedStatesColonialSeriesPage.astro',
+  '../components/catalog/UnitedStatesObsoleteSeriesPage.astro',
 ];
 
 const polymerCountryPages = [
@@ -76,7 +77,7 @@ describe('page-specific catalog sources', () => {
     }
   });
 
-  it('does not dump federal US sources onto misc, Rency, or colonial series pages', () => {
+  it('does not dump federal US sources onto misc, Rency, colonial, or obsolete series pages', () => {
     for (const page of subseriesPages) {
       const source = read(page);
       assert.doesNotMatch(source, /seriesSources/, `${page} still imports federal seriesSources`);

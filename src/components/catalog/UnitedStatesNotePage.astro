@@ -16,6 +16,7 @@ import {
   seriesPath,
   unitedStatesNotes,
   USA_COLONIAL_PATH,
+  USA_OBSOLETE_PATH,
   USA_MISC_PATH,
   USA_RENCY_PATH,
   type UnitedStatesNote,
@@ -69,6 +70,8 @@ const crumbItems = [
       ? [{ href: localizePath(USA_RENCY_PATH, locale), label: t.rencyLink }]
       : note.chapterId === 'us-colonial'
         ? [{ href: localizePath(USA_COLONIAL_PATH, locale), label: t.colonialLink }]
+        : note.chapterId === 'us-obsoleto'
+          ? [{ href: localizePath(USA_OBSOLETE_PATH, locale), label: t.obsoleteLink }]
         : []),
   { label: seo.h1 },
 ];
@@ -86,6 +89,8 @@ const jsonCrumbs = [
       ? [{ name: t.rencyLink, path: USA_RENCY_PATH }]
       : note.chapterId === 'us-colonial'
         ? [{ name: t.colonialLink, path: USA_COLONIAL_PATH }]
+        : note.chapterId === 'us-obsoleto'
+          ? [{ name: t.obsoleteLink, path: USA_OBSOLETE_PATH }]
         : []),
   { name: seo.h1, path: pathname },
 ];
@@ -291,6 +296,8 @@ const jsonCrumbs = [
                 ? t.rencyLink
                 : note.chapterId === 'us-colonial'
                   ? t.colonialLink
+                  : note.chapterId === 'us-obsoleto'
+                    ? t.obsoleteLink
                   : t.seriesLink}
         </a>
       </p>

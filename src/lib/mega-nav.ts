@@ -5,12 +5,14 @@ import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import {
   USA_BARABOO_SCRIP_PATH,
   USA_COLONIAL_PATH,
+  USA_OBSOLETE_PATH,
   USA_MISC_PATH,
   USA_MPC_PATH,
   USA_PATH,
   USA_RENCY_PATH,
   barabooScripSeriesCopy,
   colonialSeriesCopy,
+  obsoleteSeriesCopy,
   notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
@@ -65,6 +67,7 @@ if (!usTrumpDollar) {
 }
 
 const colonialNotes = notesForChapter('us-colonial');
+const obsoleteNotes = notesForChapter('us-obsoleto');
 
 export const megaNav: NavNode[] = [
   {
@@ -109,6 +112,19 @@ export const megaNav: NavNode[] = [
             href: USA_COLONIAL_PATH,
             icon: 'guides',
             children: colonialNotes.map((note) => ({
+              id: note.id,
+              es: note.title.es,
+              en: note.title.en,
+              href: note.path,
+            })),
+          },
+          {
+            id: 'billetes-obsoletos',
+            es: `${obsoleteSeriesCopy.es.title} (${obsoleteSeriesCopy.es.kicker})`,
+            en: `${obsoleteSeriesCopy.en.title} (${obsoleteSeriesCopy.en.kicker})`,
+            href: USA_OBSOLETE_PATH,
+            icon: 'guides',
+            children: obsoleteNotes.map((note) => ({
               id: note.id,
               es: note.title.es,
               en: note.title.en,

@@ -227,6 +227,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/colonial-paper/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/billetes-obsoletos/', 'en'),
+      '/en/collection/united-states/obsolete-notes/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/rency/', 'en'),
       '/en/collection/united-states/rency/',
     );
@@ -585,6 +589,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/moneda-colonial/'],
       '/en/collection/united-states/colonial-paper/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/billetes-obsoletos/'],
+      '/en/collection/united-states/obsolete-notes/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/'],

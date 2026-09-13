@@ -33,6 +33,8 @@ export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
 export const USA_COLONIAL_PATH = '/coleccion/estados-unidos/moneda-colonial/';
 export const USA_COLONIAL_PATH_EN = '/collection/united-states/colonial-paper/';
+export const USA_OBSOLETE_PATH = '/coleccion/estados-unidos/billetes-obsoletos/';
+export const USA_OBSOLETE_PATH_EN = '/collection/united-states/obsolete-notes/';
 export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
 export const USA_BARABOO_SCRIP_PATH_EN = '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/';
 export const BARABOO_JUBILEE_FIGURE = {
@@ -403,6 +405,7 @@ export const seriesCopy = {
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
     viewColonialCase: 'Abrir la vitrina de moneda colonial',
+    viewObsoleteCase: 'Abrir la vitrina de billetes obsoletos',
     coinageLead: 'La moneda metálica de este país se documenta en la vitrina de numismática.',
     coinageLink: 'Estados Unidos · Numismática',
     pickLabel: 'Pick',
@@ -428,6 +431,7 @@ export const seriesCopy = {
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
     viewColonialCase: 'Open the colonial paper case',
+    viewObsoleteCase: 'Open the obsolete notes case',
     coinageLead: 'This country’s struck coin is documented in the numismatics case.',
     coinageLink: 'United States · Numismatics',
     pickLabel: 'Pick',
@@ -455,6 +459,10 @@ export function barabooScripSeriesPath(locale: 'es' | 'en'): string {
 
 export function colonialSeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_COLONIAL_PATH, locale);
+}
+
+export function obsoleteSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_OBSOLETE_PATH, locale);
 }
 
 export const miscSeriesIntro: CatalogProsePart[][] = [
@@ -1082,6 +1090,256 @@ export const colonialSeriesSources: CatalogSource[] = [
     note: {
       es: 'Artículo I, sección 10: ningún estado emitirá bills of credit. La Constitución se ratificó en 1788.',
       en: 'Article I, Section 10: no state shall emit bills of credit. The Constitution was ratified in 1788.',
+    },
+  },
+];
+
+export const obsoleteSeriesCopy = {
+  es: {
+    metaTitle: '1782–1866 · Billetes Obsoletos | Notofilia',
+    metaDescription:
+      'Papel de bancos estatales de Estados Unidos: Haxby, remainders y tres fichas de Nueva Jersey, Connecticut y Luisiana.',
+    kicker: '1782–1866',
+    title: 'Billetes Obsoletos',
+    breadcrumbCurrent: 'Billetes Obsoletos',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'Tras la Constitución, el papel cotidiano no lo emitió un banco central: lo emitieron bancos con carta estatal, compañías de canales y otras casas locales. Miles de planchas —a menudo grabadas en Nueva York o Filadelfia— circularon con convertibilidad desigual. Los coleccionistas llaman a ese papel obsolete notes o broken banknotes. James A. Haxby lo numera por estado, banco y variedad de plancha.',
+      'No es el papel federal posterior a 1861 ni el grayback confederado: Demand Notes, United States Notes, Fractional Currency, certificados de oro y plata y National Bank Notes tienen capítulo propio. En esta vitrina el objeto es el papel estatal. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B; el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial; y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback».',
+    ],
+    banksTitle: 'Bancos estatales y broken banknotes',
+    banks: [
+      'El First Bank of the United States (1791) fue solo el primero de muchos. Howard Bodenhorn describe un sistema antebellum en el que cada estado tasaba cartas, reservas y sucursales a su modo. Luisiana distinguió commercial banks, property banks e improvement banks: el Canal Bank de Nueva Orleans pagó su carta cavando el New Basin Canal. En Nueva Jersey, el acto del 28 de enero de 1812 autorizó seis State Banks; el de New Brunswick es uno de ellos.',
+      'La confianza se buscaba en el grabado. National Bank Note Company, American Bank Note Company y Toppan, Carpenter —luego Toppan, Carpenter, Casilear & Co.— llenaban el anverso de alegorías, puertos, locomotoras y protectores de color. La viñeta era propaganda institucional y, a la vez, un obstáculo para el falsificador: el mismo recurso que se lee en las tres fichas de esta vitrina.',
+      'Cuando el banco no podía pagar en metal, el papel dejaba de valer. De ahí el apodo broken banknote. No todos los bancos «quebraron» en el sentido de quiebra: el impuesto del 10 % y las nacionalizaciones también dejaron pliegos sin firmar. Los remainders de esta vitrina —fecha 18__, una firma o ninguna, serial en blanco o de stock— son ese resto de plancha, no un censo de circulación.',
+    ],
+    endTitle: 'El impuesto del 10 % y la National Banking Act',
+    end: [
+      'La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil. La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos del Tesoro. Un impuesto del 10 % sobre el papel privado, vigente en 1865–1866, hizo ruinosa la emisión estatal. El sucesor federal de este papel es el National Bank Note, en su propio capítulo. En esta colección aún no hay uno documentado.',
+      'Quien busque greenbacks, shinplasters o certificados de oro y plata debe abrir esos capítulos de la vitrina de Estados Unidos. Un Haxby no es un Friedberg: el primero numera el papel estatal; el segundo, el federal.',
+    ],
+    howToReadTitle: 'Cómo leer un billete obsoleto',
+    howToReadIntro: 'Cinco señas que se repiten en las tres fichas y en casi todo el papel Haxby de esta vitrina:',
+    howToRead: [
+      {
+        label: 'Haxby.',
+        text: 'El número va por estado, banco y variedad (NJ-350 G16a, CT-265 G52b, LA-105 G46a). Un Pick o un año no identifica el objeto.',
+      },
+      {
+        label: 'Remainder.',
+        text: 'Fecha impresa 18__, recuadro No. en blanco o con un serial de stock, una sola firma o ninguna. Distinto del espécimen y de la prueba.',
+      },
+      {
+        label: 'Plancha.',
+        text: 'La letra (A, B, D) identifica la posición en el pliego. Hay que leerla; no se inventa.',
+      },
+      {
+        label: 'Pie de imprenta.',
+        text: 'NBNC, Toppan, Carpenter o ABNCo. El dorso verde de New Brunswick es de la NBNC, no un National Bank Note de esa plaza.',
+      },
+      {
+        label: 'Serial.',
+        text: 'Si está, es la identidad del ejemplar. Si el recuadro está en blanco, la ficha lo declara y no fabrica un número.',
+      },
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Enlaces',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsCardsLabel: 'Fichas con imagen',
+    holdingsIntro:
+      'Cada ficha describe un objeto físico. Un Haxby o un año no identifica el ejemplar: lo identifica el serial al leerse, o la huella —banco, tipo, plancha— cuando el recuadro quedó en blanco.',
+    holdingsItems: [
+      '1 dólar · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serie 9890 · B · Remainder',
+      '5 dólares · City Bank of New Haven · Haxby CT-265 G52b · Plancha A · Serie — · Remainder',
+      '50 dólares · Canal Bank, Nueva Orleans · Haxby LA-105 G46a · N#206863 · Plancha D · Serie — · Redback · Remainder',
+    ],
+    holdingsNote:
+      'Tres fichas, remainders de Nueva Jersey, Connecticut y Luisiana. El Citizens Bank of Louisiana y el Hagerstown Bank de Maryland caben en esta vitrina; esperan serial o certificado antes de abrir ficha. Última actualización: 13 de septiembre de 2026.',
+    emptyHoldings:
+      'Aún no hay fichas de billetes obsoletos. No se inventa un serial para abrir una.',
+    referencesTitle: 'Referencias y conservación',
+    references: [
+      'Haxby remite a Standard Catalog of United States Obsolete Bank Notes. N# es el número de tipo de Numista, escrito aquí una sola vez junto a cada ficha que lo lleva. Friedberg numera el papel federal, no esta clase.',
+      'Las tres piezas se describen como remainders, en funda y sin encapsular. La conservación se anota de forma descriptiva, no numérica. Esta página no republica columnas de precio ni cifras de subasta.',
+    ],
+    relatedTitle: 'En la colección',
+  },
+  en: {
+    metaTitle: '1782–1866 · Obsolete notes | Notofilia',
+    metaDescription:
+      'United States state-bank paper: Haxby, remainders, and three notes from New Jersey, Connecticut, and Louisiana.',
+    kicker: '1782–1866',
+    title: 'Obsolete notes',
+    breadcrumbCurrent: 'Obsolete notes',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'After the Constitution, everyday paper did not come from a central bank: it came from state-chartered banks, canal companies, and other local houses. Thousands of plates — often engraved in New York or Philadelphia — circulated with uneven convertibility. Collectors call that paper obsolete notes or broken banknotes. James A. Haxby numbers it by state, bank, and plate variety.',
+      'It is not federal paper after 1861, nor the Confederate grayback: Demand Notes, United States Notes, Fractional Currency, gold and silver certificates, and National Bank Notes have chapters of their own. In this case the object is state paper. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B; the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial; and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages.',
+    ],
+    banksTitle: 'State banks and broken banknotes',
+    banks: [
+      'The First Bank of the United States (1791) was only the first of many. Howard Bodenhorn describes an antebellum system in which each state set charters, reserves, and branches in its own way. Louisiana distinguished commercial banks, property banks, and improvement banks: the Canal Bank of New Orleans paid for its charter by digging the New Basin Canal. In New Jersey the act of 28 January 1812 authorized six State Banks; New Brunswick is one of them.',
+      'Trust was sought in the engraving. The National Bank Note Company, the American Bank Note Company, and Toppan, Carpenter — later Toppan, Carpenter, Casilear & Co. — filled the face with allegories, harbors, locomotives, and color protectors. The vignette was institutional propaganda and, at the same time, an obstacle for the counterfeiter: the same device that appears on the three records in this case.',
+      'When the bank could not pay in coin, the paper stopped being money. That is the source of the nickname broken banknote. Not every bank “broke” in the sense of failure: the 10 percent tax and the nationalizations also left unsigned sheets. The remainders in this case — an 18__ date, one signature or none, a blank or stock serial — are that leftover plate, not a circulating census.',
+    ],
+    endTitle: 'The 10 percent tax and the National Banking Act',
+    end: [
+      'The American Numismatic Society places the end of that plurality in the Civil War. The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by Treasury bonds. A 10 percent tax on private paper, in force in 1865–1866, made state issue ruinous. The federal successor of this paper is the National Bank Note, in its own chapter. This collection does not yet hold a documented one.',
+      'Anyone looking for greenbacks, shinplasters, or gold and silver certificates should open those chapters of the United States case. A Haxby number is not a Friedberg number: the first catalogues state paper; the second, federal paper.',
+    ],
+    howToReadTitle: 'How to read an obsolete note',
+    howToReadIntro: 'Five marks that recur on the three records and on almost all Haxby paper in this case:',
+    howToRead: [
+      {
+        label: 'Haxby.',
+        text: 'The number runs by state, bank, and variety (NJ-350 G16a, CT-265 G52b, LA-105 G46a). A Pick number or a year does not identify the object.',
+      },
+      {
+        label: 'Remainder.',
+        text: 'A printed 18__ date, a blank No. box or a stock serial, and one signature or none. Distinct from a specimen and from a proof.',
+      },
+      {
+        label: 'Plate.',
+        text: 'The letter (A, B, D) marks the position on the sheet. It is read; it is not invented.',
+      },
+      {
+        label: 'Imprint.',
+        text: 'NBNC, Toppan, Carpenter, or ABNCo. The green back of the New Brunswick note is NBNC’s, not a National Bank Note of that town.',
+      },
+      {
+        label: 'Serial.',
+        text: 'When it can be read, it is the identity of the piece. When the box is blank, the record says so and does not fabricate a number.',
+      },
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Links',
+    holdingsTitle: 'Notes in the collection',
+    holdingsCardsLabel: 'Note pages with images',
+    holdingsIntro:
+      'Each record describes a physical object. A Haxby number or a year does not identify the specimen: the serial does, when it can be read, or the fingerprint — bank, type, plate — when the box was left blank.',
+    holdingsItems: [
+      '$1 · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serial 9890 · B · Remainder',
+      '$5 · City Bank of New Haven · Haxby CT-265 G52b · Plate A · Serial — · Remainder',
+      '$50 · Canal Bank, New Orleans · Haxby LA-105 G46a · N#206863 · Plate D · Serial — · Redback · Remainder',
+    ],
+    holdingsNote:
+      'Three note pages, remainders from New Jersey, Connecticut, and Louisiana. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland belong in this case; they wait for a serial or a certificate before a note page is opened. Last updated: 13 September 2026.',
+    emptyHoldings:
+      'There are no obsolete-note pages yet. A serial is not invented in order to open one.',
+    referencesTitle: 'References and condition',
+    references: [
+      'Haxby refers to the Standard Catalog of United States Obsolete Bank Notes. N# is the Numista type number, written out once here beside each record that carries one. Friedberg numbers federal paper, not this class.',
+      'The three pieces are described as remainders, in a sleeve and unslabbed. Condition is noted descriptively, not numerically. This page does not republish price columns or auction figures.',
+    ],
+    relatedTitle: 'In the collection',
+  },
+} as const;
+
+export const obsoleteSeriesRelated: { href: string; title: LocalizedText; dek: LocalizedText }[] = [
+  {
+    href: USA_PATH,
+    title: { es: 'Estados Unidos · Notafilia', en: 'United States · Notaphily' },
+    dek: {
+      es: 'La vitrina federal, del papel colonial a la Reserva Federal.',
+      en: 'The federal case, from colonial paper to the Federal Reserve.',
+    },
+  },
+  {
+    href: USA_COLONIAL_PATH,
+    title: { es: 'Moneda colonial', en: 'Colonial paper' },
+    dek: {
+      es: 'El papel provincial y los Continentals, anteriores a los bancos estatales.',
+      en: 'Provincial paper and the Continentals, before the state banks.',
+    },
+  },
+  {
+    href: '/glosario/#billete-de-banco-obsoleto',
+    title: { es: 'Glosario: billete de banco obsoleto', en: 'Glossary: obsolete bank notes' },
+    dek: {
+      es: 'Papel de bancos con carta estatal, también llamados broken banknotes.',
+      en: 'State-chartered bank paper, also called broken banknotes.',
+    },
+  },
+  {
+    href: '/glosario/#haxby',
+    title: { es: 'Glosario: catálogo Haxby', en: 'Glossary: Haxby catalog' },
+    dek: {
+      es: 'La numeración por estado, banco y variedad de plancha.',
+      en: 'Numbering by state, bank, and plate variety.',
+    },
+  },
+];
+
+export const obsoleteSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://share.gemini.google/x26FzHCczgwv',
+    es: 'Gemini — nota de investigación de los billetes obsoletos',
+    en: 'Gemini — research note on obsolete banknotes',
+    note: {
+      es: 'Conversación de investigación de esta vitrina (septiembre de 2026). No sustituye a Haxby ni a la ANS; no se toman de aquí precios, un censo ni la ampliación del término «obsoleto» al papel federal.',
+      en: 'Research conversation for this case (September 2026). It does not replace Haxby or the ANS; prices, a census, and the widening of “obsolete” to federal paper are not taken from it.',
+    },
+  },
+  {
+    href: 'https://numismatics.org/a-history-of-american-currency/',
+    es: 'American Numismatic Society — A History of American Currency',
+    en: 'American Numismatic Society — A History of American Currency',
+    note: {
+      es: 'Impuesto del 10 % sobre el papel privado y National Banking Act de 1863.',
+      en: 'The 10 percent tax on private paper and the National Banking Act of 1863.',
+    },
+  },
+  {
+    href: 'https://www.uscurrency.gov/history',
+    es: 'U.S. Currency Education Program — History of U.S. Currency',
+    en: 'U.S. Currency Education Program — History of U.S. Currency',
+    note: {
+      es: 'National Bank Notes como unificación del papel nacional; Demand Notes y greenbacks van en otro capítulo.',
+      en: 'National Bank Notes as the unification of national paper; Demand Notes and greenbacks belong in another chapter.',
+    },
+  },
+  {
+    href: 'https://eh.net/encyclopedia/antebellum-banking-in-the-united-states/',
+    es: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+    en: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+    note: {
+      es: 'Banca estatal antebellum; en Luisiana, commercial, property e improvement banks, entre ellos el Canal Bank.',
+      en: 'Antebellum state banking; in Louisiana, commercial, property, and improvement banks, among them the Canal Bank.',
+    },
+  },
+  {
+    href: 'https://en.numista.com/catalogue/note334975.html',
+    es: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+    en: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+    note: {
+      es: 'Haxby NJ-350 G16a; remainder NBNC; serial 9890 · B en esta colección.',
+      en: 'Haxby NJ-350 G16a; NBNC remainder; serial 9890 · B in this collection.',
+    },
+  },
+  {
+    href: 'https://www.beastcoins.com/Banknotes/Obsolete/Connecticut/Connecticut.htm',
+    es: 'Beast Coins — Obsolete notes de Connecticut, CT-265 G52b',
+    en: 'Beast Coins — Connecticut obsolete notes, CT-265 G52b',
+    note: {
+      es: 'City Bank of New Haven, remainder de 5 dólares, planchas A–C, Toppan, Carpenter, Casilear & Co.',
+      en: 'City Bank of New Haven, $5 remainder, plates A–C, Toppan, Carpenter, Casilear & Co.',
+    },
+  },
+  {
+    href: 'https://en.numista.com/catalogue/note206863.html',
+    es: 'Numista — 50 Dollars, Canal Bank «Redback» (N#206863)',
+    en: 'Numista — 50 Dollars, Canal Bank “Redback” (N#206863)',
+    note: {
+      es: 'Haxby LA-105 G46a; remainder Toppan, Carpenter & Co.; plancha D en esta colección.',
+      en: 'Haxby LA-105 G46a; Toppan, Carpenter & Co. remainder; plate D in this collection.',
     },
   },
 ];
@@ -4569,6 +4827,7 @@ export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
     colonialLink: 'Moneda colonial',
+    obsoleteLink: 'Billetes Obsoletos',
     miscLink: 'Misceláneos',
     barabooLink: 'Scrip de Baraboo 1933',
     rencyLink: 'Rency',
@@ -4592,6 +4851,7 @@ export const notePageCopy = {
   en: {
     seriesLink: 'United States',
     colonialLink: 'Colonial paper',
+    obsoleteLink: 'Obsolete notes',
     miscLink: 'Miscellaneous',
     barabooLink: 'Baraboo scrip 1933',
     rencyLink: 'Rency',
@@ -4635,6 +4895,7 @@ export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): str
   if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
   if (note.chapterId === 'us-pop-art') return rencySeriesPath(locale);
   if (note.chapterId === 'us-colonial') return colonialSeriesPath(locale);
+  if (note.chapterId === 'us-obsoleto') return obsoleteSeriesPath(locale);
   return `${seriesPath(locale)}#${note.chapterId}`;
 }
 
