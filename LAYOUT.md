@@ -10,6 +10,15 @@ The fix was to drop `max-w-[46rem]` on those sections only. They now inherit the
 
 Apply the same rule everywhere a wide catalog block is followed by narrative sections.
 
+## Holdings grid (coins and banknotes)
+
+Series and type-catalog listings of individual coins and banknotes use **three columns** on a wide museum case. Tokens live in `src/lib/catalog-grid.ts`:
+
+- `CATALOG_PIECE_GRID`: `1` / `sm:2` / `lg:3` for series holdings cards
+- `CATALOG_TYPE_GRID`: `2` / `sm:3` for the compact visual catalog
+
+Do not use a two-column or four-column holdings row for coins or notes. Country/hub indexes, related editorial cards, chapter-only period tiles, and anverso/reverso pairs stay on their own grids.
+
 ## Two widths
 
 | Token | Value | Role |

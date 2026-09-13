@@ -5,6 +5,7 @@ import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../../data/colombia-coin-type-catalog';
 import {
@@ -108,7 +109,7 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5"
+          class:list={['m-0', CATALOG_PIECE_GRID]}
           aria-label={copy[locale].casesLinedUp}
         >
           {

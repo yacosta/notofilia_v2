@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Site standards
 
-Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the default locale (unprefixed URLs). English lives under `/en/` with translated path segments. Visual tokens and type live in `DESIGN.md`. Column widths live in `LAYOUT.md`.
+Notofilia is an Astro static site on Cloudflare Workers Assets. Spanish is the default locale (unprefixed URLs). English lives under `/en/` with translated path segments. Visual tokens and type live in `DESIGN.md`. Column widths live in `LAYOUT.md`. Coin and banknote holdings grids use three columns (`src/lib/catalog-grid.ts`).
 
 ## Shell (every HTML page)
 
