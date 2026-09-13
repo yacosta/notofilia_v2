@@ -47,6 +47,14 @@ describe('homepage LCP hero strings', () => {
     assert.match(indexEs, /href=\{heroSrc\}/);
     assert.match(indexEn, /href=\{heroSrc\}/);
   });
+
+  it('does not render the collection-browse grid on the homepage', () => {
+    assert.doesNotMatch(homePage, /browse-heading/);
+    assert.doesNotMatch(homePage, /t\.browseTitle/);
+    assert.doesNotMatch(homePage, /t\.browseIntro/);
+    assert.doesNotMatch(homePage, /collections\.map/);
+    assert.doesNotMatch(copy, /browseIntro/);
+  });
 });
 
 describe('mobile chrome patch', () => {
