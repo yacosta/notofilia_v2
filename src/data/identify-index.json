@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T04:17:25.980Z",
+  "generatedAt": "2026-09-14T00:38:18.742Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -363,8 +363,8 @@
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg",
       "title": {
-        "es": "1 peso oro · Banco de la República · 1973",
-        "en": "1 peso oro · Banco de la República · 1973"
+        "es": "1 peso oro · Banco de la República · 1973 y 1974",
+        "en": "1 peso oro · Banco de la República · 1973 and 1974"
       }
     },
     {
@@ -376,8 +376,8 @@
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg",
       "title": {
-        "es": "1 peso oro · Banco de la República · 1973",
-        "en": "1 peso oro · Banco de la República · 1973"
+        "es": "1 peso oro · Banco de la República · 1973 y 1974",
+        "en": "1 peso oro · Banco de la República · 1973 and 1974"
       }
     },
     {
@@ -389,8 +389,8 @@
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg",
       "title": {
-        "es": "1 peso oro · Banco de la República · 1973",
-        "en": "1 peso oro · Banco de la República · 1973"
+        "es": "1 peso oro · Banco de la República · 1973 y 1974",
+        "en": "1 peso oro · Banco de la República · 1973 and 1974"
       }
     },
     {
@@ -398,7 +398,7 @@
       "face": "front",
       "hash": "422b2900421b2500",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1974/",
+      "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-composite.jpg",
       "title": {
@@ -411,7 +411,7 @@
       "face": "front",
       "hash": "40c8352b2b2d8494",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1974/",
+      "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-front.jpg",
       "title": {
@@ -424,7 +424,7 @@
       "face": "back",
       "hash": "40640b273b292994",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1974/",
+      "path": "/coleccion/colombia/1-peso-oro-1973/",
       "pick": "",
       "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-back.jpg",
       "title": {

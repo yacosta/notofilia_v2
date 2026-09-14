@@ -15,7 +15,7 @@ const holdingsSource = readFileSync(new URL('../data/holdings.ts', import.meta.u
 const milestonesSource = readFileSync(new URL('./milestones.ts', import.meta.url), 'utf8');
 
 function colombiaPieces() {
-  return ['10-pesos-oro-1979', '2-pesos-oro-1977', '1-peso-oro-1974'].flatMap((id) => {
+  return ['10-pesos-oro-1979', '2-pesos-oro-1977', '1-peso-oro-1973'].flatMap((id) => {
     const note = noteById(id);
     assert.ok(note, id);
     return notePieces(note).map((piece) => ({
