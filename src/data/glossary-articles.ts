@@ -214,11 +214,11 @@ const canalBank: GlossaryExample = {
 };
 
 const giori: GlossaryExample = {
-  path: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+  path: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
   image: '/images/catalog/estados-unidos/giori-lincoln-memorial-front.jpg',
-  title: { es: 'Nota de prueba Giori · Lincoln Memorial', en: 'Giori test note · Lincoln Memorial' },
+  title: { es: 'Billete de prueba Giori · Lincoln Memorial', en: 'Giori test note · Lincoln Memorial' },
   alt: {
-    es: 'Anverso uniface de la nota de prueba Giori del Lincoln Memorial',
+    es: 'Anverso uniface del billete de prueba Giori del Lincoln Memorial',
     en: 'Uniface face of the Giori Lincoln Memorial test note',
   },
 };
@@ -827,7 +827,7 @@ export const glossaryArticles: GlossaryArticle[] = [
     'uniface',
     {
       es: [
-        'Uniface —a una cara— describe un billete, prueba o espécimen impreso solo por el anverso, con el reverso en blanco. No es un error de tinta faltante en circulación: es una decisión de taller. Hernández anota que las pruebas suelen ser unifaces; los especímenes de BanRep de esta colección, en cambio, están impresos por ambas caras y luego sobrecargados. La nota de prueba Giori del Lincoln Memorial, hacia los años 1970, es el ejemplar uniface de la vitrina miscelánea estadounidense: verde, sin seriales ni sellos, dorso vacío.',
+        'Uniface —a una cara— describe un billete, prueba o espécimen impreso solo por el anverso, con el reverso en blanco. No es un error de tinta faltante en circulación: es una decisión de taller. Hernández anota que las pruebas suelen ser unifaces; los especímenes de BanRep de esta colección, en cambio, están impresos por ambas caras y luego sobrecargados. El billete de prueba Giori del Lincoln Memorial, hacia los años 1970, es el ejemplar uniface de la vitrina miscelánea estadounidense: verde, sin seriales ni sellos, dorso vacío.',
         'Las pruebas ABNC del Hipotecario y de Riohacha se fichan en par anverso/reverso (p1 y p2), cada cara en su cápsula PMG 61: no son unifaces en el sentido del Giori, sino dos impresiones de una misma orden de imprenta. Confundir ese par con un solo pliego uniface mezclaría objetos. Un remainder con reverso rojo, como el Canal Bank, está impreso por detrás a propósito.',
         'Fotografiar el dorso en blanco es parte de la ficha: demuestra que no se omitió una cara. El Giori no es curso legal ni un Fr. de la Reserva Federal. El término enlaza prueba, espécimen y reverso, para que un dorso vacío no se lea como un fallo de escaneo ni como un Pick de circulación.',
       ],

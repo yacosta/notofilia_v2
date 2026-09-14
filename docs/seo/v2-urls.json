@@ -804,11 +804,11 @@
       "redirectTo": ""
     },
     {
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "lang": "es",
       "type": "catalogue",
-      "lastSlug": "nota-prueba-giori-lincoln-memorial",
-      "title": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+      "lastSlug": "billete-prueba-giori-lincoln-memorial",
+      "title": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
       "alternate": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
       "redirectTo": ""
     },
@@ -3797,7 +3797,7 @@
       "type": "catalogue",
       "lastSlug": "giori-test-note-lincoln-memorial",
       "title": "Giori test note · Lincoln Memorial · ca. 1970s",
-      "alternate": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "alternate": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "redirectTo": ""
     },
     {

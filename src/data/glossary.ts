@@ -1278,7 +1278,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "uniface",
     category: "Diseño",
     title: { es: "Uniface (a una cara)", en: "Uniface" },
-    definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. La nota de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
+    definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. El billete de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
     seeAlso: ["anverso", "reverso", "prueba-ensayo", "specimen"],
   },
   {

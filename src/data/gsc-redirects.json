@@ -3,7 +3,7 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 1076,
+    "existing": 1098,
     "legacy-dc": 51,
     "manual": 24,
     "last-slug": 7,
@@ -14,7 +14,7 @@
     "exists": 7,
     "glossary-hub": 2
   },
-  "fuzzyOrHubPercent": 9.06,
+  "fuzzyOrHubPercent": 8.91,
   "redirects": {
     "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/": {
       "target": "",
@@ -457,12 +457,12 @@
       "rule": "legacy-dc"
     },
     "/billete-giori-press-test-note.dc": {
-      "target": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "target": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "status": 301,
       "rule": "manual"
     },
     "/billete-giori-press-test-note.dc/": {
-      "target": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "target": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "status": 301,
       "rule": "manual"
     },
@@ -776,6 +776,26 @@
       "status": 301,
       "rule": "last-slug"
     },
+    "/coleccion/colombia/1-peso-oro-1973": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/1-peso-oro-1973/": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/1-peso-oro-1974": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/1-peso-oro-1974/": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/coleccion/colombia/10-pesos-oro-1943-anverso": {
       "target": "/coleccion/colombia/10-pesos-oro-1943/",
       "status": 301,
@@ -1045,6 +1065,16 @@
       "target": "/coleccion/estados-unidos/",
       "status": 301,
       "rule": "hub-fallback"
+    },
+    "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial": {
+      "target": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/": {
+      "target": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
     },
     "/coleccion/estados-unidos/renci": {
       "target": "/coleccion/estados-unidos/rency/",
@@ -1856,6 +1886,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/1-peso-oro-1959-1977/": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1959-1977": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1-peso-oro-1959/": {
       "target": "/en/collection/colombia/1-peso-oro-1959/",
       "status": 301,
@@ -1866,22 +1906,22 @@
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/1-peso-oro-1973/": {
-      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
     "/en/coleccion/colombia/1-peso-oro-1973": {
       "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
-    "/en/coleccion/colombia/1-peso-oro-1974/": {
+    "/en/coleccion/colombia/1-peso-oro-1973/": {
       "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/coleccion/colombia/1-peso-oro-1974": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/1-peso-oro-1974/": {
       "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
@@ -2196,6 +2236,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/banca-libre/": {
+      "target": "/en/collection/colombia/free-banking/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/banca-libre": {
+      "target": "/en/collection/colombia/free-banking/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro": {
       "target": "/en/collection/colombia/2000-pesos-oro-1983/",
       "status": 301,
@@ -2376,6 +2426,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/": {
+      "target": "/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773": {
+      "target": "/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/": {
       "target": "/en/collection/united-states/2-dollars-series-2003-st-louis/",
       "status": 301,
@@ -2393,6 +2453,16 @@
     },
     "/en/coleccion/estados-unidos/20-dolares-confederados-1864": {
       "target": "/en/collection/united-states/20-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/": {
+      "target": "/en/collection/united-states/5-shillings-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/5-chelines-pensilvania-1773": {
+      "target": "/en/collection/united-states/5-shillings-pennsylvania-1773/",
       "status": 301,
       "rule": "existing"
     },
@@ -2436,6 +2506,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/estados-unidos/billetes-obsoletos/": {
+      "target": "/en/collection/united-states/obsolete-notes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/billetes-obsoletos": {
+      "target": "/en/collection/united-states/obsolete-notes/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/estados-unidos/miscelaneos/": {
       "target": "/en/collection/united-states/miscellaneous/",
       "status": 301,
@@ -2453,6 +2533,16 @@
     },
     "/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george": {
       "target": "/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial": {
+      "target": "/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/",
       "status": 301,
       "rule": "existing"
     },
@@ -2513,6 +2603,16 @@
     },
     "/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895": {
       "target": "/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/moneda-colonial/": {
+      "target": "/en/collection/united-states/colonial-paper/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/moneda-colonial": {
+      "target": "/en/collection/united-states/colonial-paper/",
       "status": 301,
       "rule": "existing"
     },
@@ -3066,6 +3166,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/": {
+      "target": "/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773": {
+      "target": "/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/united-states/20-dollars-confederate-1864/": {
       "target": "/en/collection/united-states/20-dollars-confederate-1864/",
       "status": 301,
@@ -3106,6 +3216,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/united-states/5-shillings-pennsylvania-1773/": {
+      "target": "/en/collection/united-states/5-shillings-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/5-shillings-pennsylvania-1773": {
+      "target": "/en/collection/united-states/5-shillings-pennsylvania-1773/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/united-states/500-dollars-series-1934a-new-york/": {
       "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
       "status": 301,
@@ -3113,6 +3233,16 @@
     },
     "/en/coleccion/united-states/500-dollars-series-1934a-new-york": {
       "target": "/en/collection/united-states/500-dollars-series-1934a-new-york/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/colonial-paper/": {
+      "target": "/en/collection/united-states/colonial-paper/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/colonial-paper": {
+      "target": "/en/collection/united-states/colonial-paper/",
       "status": 301,
       "rule": "existing"
     },
@@ -3246,6 +3376,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/united-states/obsolete-notes/": {
+      "target": "/en/collection/united-states/obsolete-notes/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/obsolete-notes": {
+      "target": "/en/collection/united-states/obsolete-notes/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/united-states/rency/": {
       "target": "/en/collection/united-states/rency/",
       "status": 301,
@@ -3335,6 +3475,26 @@
       "target": "/en/collection/united-states/5-dollars-city-bank-new-haven/",
       "status": 301,
       "rule": "manual"
+    },
+    "/en/collection/colombia/1-peso-oro-1973": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/1-peso-oro-1973/": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/1-peso-oro-1974": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/1-peso-oro-1974/": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
     },
     "/en/collection/colombia/10-pesos-oro-1943-anverso": {
       "target": "/en/collection/colombia/10-pesos-oro-1943/",
@@ -9406,6 +9566,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/news/billete-10000-pesos-1995-serial-00000676/": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/news/billete-10000-pesos-1995-serial-00000676": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/news/billete-10000-pesos-lazaro-cardenas-canje/": {
       "target": "/en/news/the-10-000-peso-note-banxico-explains-the-exchange/",
       "status": 301,
@@ -9723,6 +9893,16 @@
     },
     "/en/news/iii-encuentro-numismatico-arequipa-2026": {
       "target": "/en/news/arequipa-shows-390-pieces-at-its-3rd-numismatic-meeting/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/news/infobae-medio-dolar-11-s-preventa/": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/news/infobae-medio-dolar-11-s-preventa": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
       "status": 301,
       "rule": "existing"
     },
@@ -10346,6 +10526,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/noticias/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/noticias/a-2-500-year-old-cypriot-coin-lights-up-ancient-trade-with-israel/": {
       "target": "/en/news/a-2-500-year-old-cypriot-coin-lights-up-ancient-trade-with-israel/",
       "status": 301,
@@ -10533,6 +10723,16 @@
     },
     "/en/noticias/billete-1000-hidalgo-combo-mercado-libre": {
       "target": "/en/news/a-1-000-hidalgo-combo-listed-at-5-699/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/billete-10000-pesos-1995-serial-00000676/": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/billete-10000-pesos-1995-serial-00000676": {
+      "target": "/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/",
       "status": 301,
       "rule": "existing"
     },
@@ -11033,6 +11233,16 @@
     },
     "/en/noticias/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000": {
       "target": "/en/news/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/infobae-medio-dolar-11-s-preventa/": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/infobae-medio-dolar-11-s-preventa": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
       "status": 301,
       "rule": "existing"
     },
@@ -11933,6 +12143,16 @@
     },
     "/en/noticias/trump-dollar-goes-on-sale-with-waits-over-an-hour": {
       "target": "/en/news/trump-dollar-goes-on-sale-with-waits-over-an-hour/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/us-mint-puts-a-9-11-50-cent-coin-on-sale/": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/noticias/us-mint-puts-a-9-11-50-cent-coin-on-sale": {
+      "target": "/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/",
       "status": 301,
       "rule": "existing"
     },
@@ -13265,46 +13485,6 @@
       "target": "",
       "status": 410,
       "rule": "gone"
-    },
-    "/coleccion/colombia/1-peso-oro-1974": {
-      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/coleccion/colombia/1-peso-oro-1974/": {
-      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/en/collection/colombia/1-peso-oro-1974": {
-      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/en/collection/colombia/1-peso-oro-1974/": {
-      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/coleccion/colombia/1-peso-oro-1973": {
-      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/coleccion/colombia/1-peso-oro-1973/": {
-      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/en/collection/colombia/1-peso-oro-1973": {
-      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/en/collection/colombia/1-peso-oro-1973/": {
-      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
-      "status": 301,
-      "rule": "existing"
     }
   }
 }

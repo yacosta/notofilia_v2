@@ -187,9 +187,12 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     ],
   },
   {
-    es: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    es: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     en: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
-    aliases: ['/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/'],
+    aliases: [
+      '/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+      '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    ],
   },
   {
     es: '/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
@@ -438,6 +441,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/moneda-colonial/',
     '/en/coleccion/estados-unidos/billetes-obsoletos/',
+    '/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',

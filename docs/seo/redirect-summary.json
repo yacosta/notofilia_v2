@@ -1,10 +1,10 @@
 {
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "usedSeed": false,
-  "total": 1332,
+  "total": 1354,
   "counts": {
     "gone": 16,
-    "existing": 1076,
+    "existing": 1098,
     "legacy-dc": 51,
     "manual": 24,
     "last-slug": 7,
@@ -15,6 +15,6 @@
     "exists": 7,
     "glossary-hub": 2
   },
-  "fuzzyOrHubPercent": 9.06,
+  "fuzzyOrHubPercent": 8.91,
   "reviewRequired": false
 }

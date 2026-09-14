@@ -269,6 +269,14 @@ describe('locale path mapping', () => {
       '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/', 'en'),
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'es'),
+      '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'en'),
       '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
@@ -620,6 +628,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/'],
       '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/'],
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/'],
