@@ -2578,41 +2578,41 @@
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "front",
       "hash": "0084327232322022",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-composite.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "front",
       "hash": "224545534d2f4111",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-front.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "back",
       "hash": "224d1717172f2511",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-back.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },

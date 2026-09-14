@@ -58,6 +58,8 @@ export default defineConfig({
     '/en/collection/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/10-pesos-oro-1943-anverso': '/en/collection/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
+    '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial':
+      '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     '/coleccion/colombia/banco-de-la-republica-2000-pesos-oro': '/coleccion/colombia/2000-pesos-oro-1983/',
     '/en/collection/colombia/banco-de-la-republica-2000-pesos-oro': '/en/collection/colombia/2000-pesos-oro-1983/',
     '/en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro': '/en/collection/colombia/2000-pesos-oro-1983/',

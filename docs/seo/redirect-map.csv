@@ -43,7 +43,7 @@ source,target,status,rule,confidence
 /billete-diez-dolares-1934-distritos.dc,/coleccion/estados-unidos/,301,legacy-dc,low
 /billete-ecuador-100-sucres-1993.dc.html,/coleccion/ecuador/,301,legacy-dc,low
 /billete-federal-reserve-bank-note-100-dolares-minneapolis-1929.dc.html,/coleccion/estados-unidos/,301,legacy-dc,low
-/billete-giori-press-test-note.dc,/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/,301,manual,high
+/billete-giori-press-test-note.dc,/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/,301,manual,high
 /billete-guatemala-banco-colombiano-1-peso-1900.dc.html,/coleccion/guatemala/,301,legacy-dc,low
 /billete-hagerstown-bank-maryland.dc,/coleccion/estados-unidos/,301,legacy-dc,low
 /billete-nueva-jersey-6-chelines-1776-colonial.dc.html,/coleccion/estados-unidos/,301,legacy-dc,low
@@ -75,10 +75,11 @@ source,target,status,rule,confidence
 /coleccion/certificados-de-pago-militar/1-dolar-serie-681/,/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/,301,last-slug,high
 /coleccion/certificados-de-pago-militar/10-dolares-serie-641/,/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/,301,last-slug,high
 /coleccion/certificados-de-pago-militar/20-dolares-serie-692/,/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/,301,last-slug,high
+/coleccion/colombia/1-peso-oro-1973,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
+/coleccion/colombia/1-peso-oro-1974,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
 /coleccion/colombia/10-pesos-oro-1943-anverso,/coleccion/colombia/10-pesos-oro-1943/,301,existing,high
 /coleccion/colombia/10-pesos-oro-1943-reverso,/coleccion/colombia/10-pesos-oro-1943/,301,existing,high
 /coleccion/colombia/2-pesos-oro-1955,/coleccion/colombia/2-pesos-oro-1944/,301,existing,high
-/coleccion/colombia/1-peso-oro-1974,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
 /coleccion/colombia/2000-pesos-error-mariposa/,/coleccion/colombia/,301,hub-fallback,low
 /coleccion/colombia/banco-colombiano-guatemala-1-peso-1900/,/coleccion/colombia/,301,hub-fallback,low
 /coleccion/colombia/banco-de-barranquilla-50-centavos-1880/,/coleccion/colombia/,301,hub-fallback,low
@@ -103,6 +104,7 @@ source,target,status,rule,confidence
 /coleccion/emisiones-promocionales/,/coleccion/estados-unidos/,301,category-hub,high
 /coleccion/emisiones-promocionales/food-coupon-2-dolares-1967/,/coleccion/estados-unidos/,301,hub-fallback,low
 /coleccion/emisiones-promocionales/food-coupon-50-centavos-1967/,/coleccion/estados-unidos/,301,hub-fallback,low
+/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial,/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/,301,existing,high
 /coleccion/estados-unidos/renci,/coleccion/estados-unidos/rency/,301,existing,high
 /coleccion/estados-unidos/renci/messi-you-have-to-fight-to-reach-your-dream,/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/,301,existing,high
 /coleccion/estados-unidos/renci/pele-the-beautiful-game,/coleccion/estados-unidos/rency/pele-the-beautiful-game/,301,existing,high
@@ -184,9 +186,10 @@ source,target,status,rule,confidence
 /en/coleccion/colombia/,/en/collection/colombia/,301,existing,high
 /en/coleccion/colombia/1-peso-oro-1945/,/en/collection/colombia/1-peso-oro-1945/,301,existing,high
 /en/coleccion/colombia/1-peso-oro-1954/,/en/collection/colombia/1-peso-oro-1954/,301,existing,high
-/en/coleccion/colombia/1-peso-oro-1959/,/en/collection/colombia/1-peso-oro-1959/,301,existing,high
 /en/coleccion/colombia/1-peso-oro-1959-1977/,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
-/en/coleccion/colombia/1-peso-oro-1974/,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
+/en/coleccion/colombia/1-peso-oro-1959/,/en/collection/colombia/1-peso-oro-1959/,301,existing,high
+/en/coleccion/colombia/1-peso-oro-1973,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
+/en/coleccion/colombia/1-peso-oro-1974,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
 /en/coleccion/colombia/1-peso-tolima-1901/,/en/collection/colombia/1-peso-tolima-1901/,301,existing,high
 /en/coleccion/colombia/10-pesos-oro-1943-anverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/coleccion/colombia/10-pesos-oro-1943-reverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
@@ -218,6 +221,7 @@ source,target,status,rule,confidence
 /en/coleccion/colombia/5000-pesos-oro-1993/,/en/collection/colombia/5000-pesos-oro-1993/,301,existing,high
 /en/coleccion/colombia/50000-pesos-error-2008/,/en/collection/colombia/50000-pesos-error-2008/,301,existing,high
 /en/coleccion/colombia/50000-pesos-error-2015/,/en/collection/colombia/50000-pesos-error-2015/,301,existing,high
+/en/coleccion/colombia/banca-libre/,/en/collection/colombia/free-banking/,301,existing,high
 /en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro,/en/collection/colombia/2000-pesos-oro-1983/,301,existing,high
 /en/coleccion/colombia/catalogo/,/en/collection/colombia/catalog/,301,existing,high
 /en/coleccion/colombia/medio-peso-oro-1953/,/en/collection/colombia/medio-peso-oro-1953/,301,existing,high
@@ -236,20 +240,25 @@ source,target,status,rule,confidence
 /en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/,/en/collection/united-states/10-dollars-series-1934a-cleveland/,301,existing,high
 /en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/,/en/collection/united-states/10-dollars-series-1934d-richmond/,301,existing,high
 /en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/,/en/collection/united-states/1000-dollars-series-1934a-new-york/,301,existing,high
+/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/,/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/,301,existing,high
 /en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/,/en/collection/united-states/2-dollars-series-2003-st-louis/,301,existing,high
 /en/coleccion/estados-unidos/20-dolares-confederados-1864/,/en/collection/united-states/20-dollars-confederate-1864/,301,existing,high
+/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/,/en/collection/united-states/5-shillings-pennsylvania-1773/,301,existing,high
 /en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/,/en/collection/united-states/5-dollars-city-bank-new-haven/,301,existing,high
 /en/coleccion/estados-unidos/5-dolares-confederados-1864/,/en/collection/united-states/5-dollars-confederate-1864/,301,existing,high
 /en/coleccion/estados-unidos/5-dolares-continental-1779/,/en/collection/united-states/5-dollars-continental-1779/,301,existing,high
 /en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/,/en/collection/united-states/500-dollars-series-1934a-new-york/,301,existing,high
+/en/coleccion/estados-unidos/billetes-obsoletos/,/en/collection/united-states/obsolete-notes/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/,/en/collection/united-states/miscellaneous/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/,/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/,301,existing,high
+/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/,/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/,/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/10-cents-chas-ringling-a2844/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/,301,existing,high
 /en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/,301,existing,high
+/en/coleccion/estados-unidos/moneda-colonial/,/en/collection/united-states/colonial-paper/,301,existing,high
 /en/coleccion/estados-unidos/mpc-vietnam/,/en/collection/united-states/mpc-vietnam/,301,existing,high
 /en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/,/en/collection/united-states/mpc-vietnam/1-dollar-series-681/,301,existing,high
 /en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/,/en/collection/united-states/mpc-vietnam/10-dollars-series-641/,301,existing,high
@@ -305,11 +314,14 @@ source,target,status,rule,confidence
 /en/coleccion/united-states/10-dollars-series-1934a-cleveland/,/en/collection/united-states/10-dollars-series-1934a-cleveland/,301,existing,high
 /en/coleccion/united-states/10-dollars-series-1934d-richmond/,/en/collection/united-states/10-dollars-series-1934d-richmond/,301,existing,high
 /en/coleccion/united-states/1000-dollars-series-1934a-new-york/,/en/collection/united-states/1000-dollars-series-1934a-new-york/,301,existing,high
+/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/,/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/,301,existing,high
 /en/coleccion/united-states/20-dollars-confederate-1864/,/en/collection/united-states/20-dollars-confederate-1864/,301,existing,high
 /en/coleccion/united-states/5-dollars-city-bank-new-haven/,/en/collection/united-states/5-dollars-city-bank-new-haven/,301,existing,high
 /en/coleccion/united-states/5-dollars-confederate-1864/,/en/collection/united-states/5-dollars-confederate-1864/,301,existing,high
 /en/coleccion/united-states/5-dollars-continental-1779/,/en/collection/united-states/5-dollars-continental-1779/,301,existing,high
+/en/coleccion/united-states/5-shillings-pennsylvania-1773/,/en/collection/united-states/5-shillings-pennsylvania-1773/,301,existing,high
 /en/coleccion/united-states/500-dollars-series-1934a-new-york/,/en/collection/united-states/500-dollars-series-1934a-new-york/,301,existing,high
+/en/coleccion/united-states/colonial-paper/,/en/collection/united-states/colonial-paper/,301,existing,high
 /en/coleccion/united-states/miscellaneous/,/en/collection/united-states/miscellaneous/,301,existing,high
 /en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/,/en/collection/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/,301,existing,high
 /en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/,/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/,301,existing,high
@@ -323,6 +335,7 @@ source,target,status,rule,confidence
 /en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/,/en/collection/united-states/mpc-vietnam/10-dollars-series-641/,301,existing,high
 /en/coleccion/united-states/mpc-vietnam/20-dollars-series-692/,/en/collection/united-states/mpc-vietnam/20-dollars-series-692/,301,existing,high
 /en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/,/en/collection/united-states/mpc-vietnam/5-dollars-series-661/,301,existing,high
+/en/coleccion/united-states/obsolete-notes/,/en/collection/united-states/obsolete-notes/,301,existing,high
 /en/coleccion/united-states/rency/,/en/collection/united-states/rency/,301,existing,high
 /en/coleccion/united-states/rency/life-is-beautiful-life-spray/,/en/collection/united-states/rency/life-is-beautiful-life-spray/,301,existing,high
 /en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/,/en/collection/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/,301,existing,high
@@ -332,10 +345,11 @@ source,target,status,rule,confidence
 /en/collection/1761-utrecht-gold-ducat/,/en/collection/netherlands-numismatics/ducado-utrecht-1761/,301,category-hub,high
 /en/collection/adrian-insurance-michigan/2-dollars/,/en/collection/united-states/,301,hub-fallback,low
 /en/collection/city-bank-new-haven/5-dollars/,/en/collection/united-states/5-dollars-city-bank-new-haven/,301,manual,high
+/en/collection/colombia/1-peso-oro-1973,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
+/en/collection/colombia/1-peso-oro-1974,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
 /en/collection/colombia/10-pesos-oro-1943-anverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/collection/colombia/10-pesos-oro-1943-reverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/collection/colombia/2-pesos-oro-1955,/en/collection/colombia/2-pesos-oro-1944/,301,existing,high
-/en/collection/colombia/1-peso-oro-1974,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
 /en/collection/colombia/2000-pesos-1996-butterfly-error/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/2000-pesos-butterfly-error/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-colombiano-guatemala-1-peso-1900/,/en/collection/colombia/,301,hub-fallback,low
@@ -945,6 +959,7 @@ source,target,status,rule,confidence
 /en/news/banxico-medallas-dinosaurios-casa-moneda/,/en/news/banxico-sells-dinosaur-medals/,301,existing,high
 /en/news/bessent-moneda-250-anos-independencia-eeuu/,/en/news/bessent-announces-a-commemorative-for-the-250th-anniversary-of-the-u-s/,301,existing,high
 /en/news/billete-1000-hidalgo-combo-mercado-libre/,/en/news/a-1-000-hidalgo-combo-listed-at-5-699/,301,existing,high
+/en/news/billete-10000-pesos-1995-serial-00000676/,/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/,301,existing,high
 /en/news/billete-10000-pesos-lazaro-cardenas-canje/,/en/news/the-10-000-peso-note-banxico-explains-the-exchange/,301,existing,high
 /en/news/billete-2-dolares-serie-baja/,/en/news/the-2-note-with-serial-l00000002a/,301,existing,high
 /en/news/billete-20000-chile-serie-anverso-falla/,/en/news/the-chilean-20-000-that/,301,existing,high
@@ -977,6 +992,7 @@ source,target,status,rule,confidence
 /en/news/flowing-hair-1794-valor-85-millones/,/en/news/flowing-hair-1794-the-dollar-that-reaches/,301,existing,high
 /en/news/gobierno-monedas-oro-cerdo-iberico/,/en/news/spain-authorizes-5-000-gold-iberian-pig-coins/,301,existing,high
 /en/news/iii-encuentro-numismatico-arequipa-2026/,/en/news/arequipa-shows-390-pieces-at-its-3rd-numismatic-meeting/,301,existing,high
+/en/news/infobae-medio-dolar-11-s-preventa/,/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/,301,existing,high
 /en/news/iv-congreso-numismatico-maracay-2026/,/en/news/the-4th-numismatic-congress-meets-in-maracay-on-12-september/,301,existing,high
 /en/news/jaca-dinero-sancho-ramirez-6000-euros/,/en/news/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000/,301,existing,high
 /en/news/jornadas-nacionales-numismatica-la-plata-2026/,/en/news/la-plata-hosts-the-46th-national-numismatic-conference/,301,existing,high
@@ -1039,6 +1055,7 @@ source,target,status,rule,confidence
 /en/noticias/a-1762-santa-fe-8-reales/,/en/news/a-1762-santa-fe-8-reales/,301,existing,high
 /en/noticias/a-1919-cent/,/en/news/a-1919-cent/,301,existing,high
 /en/noticias/a-1962-quarter/,/en/news/a-1962-quarter/,301,existing,high
+/en/noticias/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/,/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/,301,existing,high
 /en/noticias/a-2-500-year-old-cypriot-coin-lights-up-ancient-trade-with-israel/,/en/news/a-2-500-year-old-cypriot-coin-lights-up-ancient-trade-with-israel/,301,existing,high
 /en/noticias/a-2001-50-000-peso-note-with-serial-00000290-listed-at-cop-730-000/,/en/news/a-2001-50-000-peso-note-with-serial-00000290-listed-at-cop-730-000/,301,existing,high
 /en/noticias/a-2011-german-2-is-listed-at-6-000/,/en/news/a-2011-german-2-is-listed-at-6-000/,301,existing,high
@@ -1058,6 +1075,7 @@ source,target,status,rule,confidence
 /en/noticias/bessent-announces-a-commemorative-for-the-250th-anniversary-of-the-u-s/,/en/news/bessent-announces-a-commemorative-for-the-250th-anniversary-of-the-u-s/,301,existing,high
 /en/noticias/bessent-moneda-250-anos-independencia-eeuu/,/en/news/bessent-announces-a-commemorative-for-the-250th-anniversary-of-the-u-s/,301,existing,high
 /en/noticias/billete-1000-hidalgo-combo-mercado-libre/,/en/news/a-1-000-hidalgo-combo-listed-at-5-699/,301,existing,high
+/en/noticias/billete-10000-pesos-1995-serial-00000676/,/en/news/a-1995-10-000-peso-note-with-serial-00000676-listed-at-cop-580-000/,301,existing,high
 /en/noticias/billete-10000-pesos-lazaro-cardenas-canje/,/en/news/the-10-000-peso-note-banxico-explains-the-exchange/,301,existing,high
 /en/noticias/billete-2-dolares-serie-baja/,/en/news/the-2-note-with-serial-l00000002a/,301,existing,high
 /en/noticias/billete-20000-chile-serie-anverso-falla/,/en/news/the-chilean-20-000-that/,301,existing,high
@@ -1108,6 +1126,7 @@ source,target,status,rule,confidence
 /en/noticias/heptagonal-solar-system-medal/,/en/news/heptagonal-solar-system-medal/,301,existing,high
 /en/noticias/iii-encuentro-numismatico-arequipa-2026/,/en/news/arequipa-shows-390-pieces-at-its-3rd-numismatic-meeting/,301,existing,high
 /en/noticias/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000/,/en/news/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000/,301,existing,high
+/en/noticias/infobae-medio-dolar-11-s-preventa/,/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/,301,existing,high
 /en/noticias/is-the-2-coin-in-your-wallet/,/en/news/is-the-2-coin-in-your-wallet/,301,existing,high
 /en/noticias/iv-congreso-numismatico-maracay-2026/,/en/news/the-4th-numismatic-congress-meets-in-maracay-on-12-september/,301,existing,high
 /en/noticias/jaca-dinero-sancho-ramirez-6000-euros/,/en/news/in-jaca-a-sancho-ramirez-dinero-marked-jaca-does-not-go-below-6-000/,301,existing,high
@@ -1198,6 +1217,7 @@ source,target,status,rule,confidence
 /en/noticias/the-u-s-strikes-trump-coins-for-the-250th-anniversary/,/en/news/the-u-s-strikes-trump-coins-for-the-250th-anniversary/,301,existing,high
 /en/noticias/the-vatican-issues-euros-with-pope-leo-xiv/,/en/news/the-vatican-issues-euros-with-pope-leo-xiv/,301,existing,high
 /en/noticias/trump-dollar-goes-on-sale-with-waits-over-an-hour/,/en/news/trump-dollar-goes-on-sale-with-waits-over-an-hour/,301,existing,high
+/en/noticias/us-mint-puts-a-9-11-50-cent-coin-on-sale/,/en/news/us-mint-puts-a-9-11-50-cent-coin-on-sale/,301,existing,high
 /en/noticias/villena-badajoz-and-albacete-three-museum-thefts/,/en/news/villena-badajoz-and-albacete-three-museum-thefts/,301,existing,high
 /en/noticias/what-to-check-on-1-notes-to-see-if-collectors-will-pay-thousands/,/en/news/what-to-check-on-1-notes-to-see-if-collectors-will-pay-thousands/,301,existing,high
 /en/noticias/wkrc-centavo-1969-s-doble-troquel/,/en/news/wkrc-reprises-the-1969-s-doubled-die-cent/,301,existing,high
@@ -1333,5 +1353,3 @@ source,target,status,rule,confidence
 /seis-colecciones-representaran-cuba-en-brasiliana-2013/,,410,gone,high
 /sobre-mi,/acerca-de/,301,existing,high
 /tunanmarca-quedara-perennizado-en-nuevo-sol/,,410,gone,high
-/coleccion/colombia/1-peso-oro-1973,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
-/en/collection/colombia/1-peso-oro-1973,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high

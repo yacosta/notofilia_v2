@@ -17,7 +17,7 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las de 25¢ y 50¢ esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las de 25¢ y 50¢ esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
       en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ and 50¢ still wait for each note’s serial or certificate. Further note pages will be published here as they are photographed.',
     },
   },
@@ -286,7 +286,7 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Miscellaneous',
     },
     lead: {
-      es: 'Papel marcado en circulación, notas de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
+      es: 'Papel marcado en circulación, billetes de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
       en: 'Marked circulating paper, test notes, commemorative scrip, and other pieces that sit outside the federal series and pop art.',
     },
     bodyParts: miscChapterBodyParts,
@@ -397,9 +397,9 @@ export const seriesCopy = {
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
-      'En el siglo XIX el comercio cotidiano corrió sobre notas de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
+      'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -469,7 +469,7 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, un billete de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
         en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and the 1933 Baraboo Golden Jubilee commemorative scrip.',
       },
     },
@@ -489,7 +489,7 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002. Las de 25¢ y 50¢ esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002. Las de 25¢ y 50¢ esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
         en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002. The 25¢ and 50¢ wait for a serial or a certificate. Further pieces will be published as they are photographed.',
       },
     },
@@ -533,7 +533,7 @@ export const miscSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
     metaDescription:
-      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C; la nota de prueba Giori del Lincoln Memorial, hacia los años 1970; y el scrip del Golden Jubilee de Baraboo, 1933 (Shafer WI100).',
+      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C; el billete de prueba Giori del Lincoln Memorial, hacia los años 1970; y el scrip del Golden Jubilee de Baraboo, 1933 (Shafer WI100).',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Fuera de las series federales',
     breadcrumbCurrent: 'Misceláneos',
@@ -761,7 +761,7 @@ export const barabooScripRelated: { href: string; title: LocalizedText; dek: Loc
     href: USA_MISC_PATH,
     title: { es: 'Estados Unidos · Misceláneos', en: 'United States · Miscellaneous' },
     dek: {
-      es: 'La vitrina que anuncia este tipo junto al 1 dólar de Dallas y la nota de prueba Giori.',
+      es: 'La vitrina que anuncia este tipo junto al 1 dólar de Dallas y el billete de prueba Giori.',
       en: 'The case that announces this type beside the Dallas $1 and the Giori test note.',
     },
   },
@@ -1404,7 +1404,7 @@ export type UnitedStatesNoteId =
   | '1000-dolares-serie-1934a-nueva-york'
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
-  | 'nota-prueba-giori-lincoln-memorial'
+  | 'billete-prueba-giori-lincoln-memorial'
   | 'scrip-baraboo-5-centavos-a4895'
   | 'scrip-baraboo-10-centavos-a2844'
   | 'scrip-baraboo-15-centavos-a2819'
@@ -1500,7 +1500,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El Congreso Continental autorizó papel en mayo de 1775 para financiar la independencia. Las notas prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. Hall and Sellers las imprimieron en Filadelfia, herederos de la prensa de Benjamin Franklin, sobre papel de Ivy Mills con fibras azules y mica. El reverso usaba nature prints de hojas y telas, difíciles de grabar a mano. La inflación y las falsificaciones británicas —guerra económica— acuñaron la frase «not worth a Continental». El U.S. Currency Education Program y el Newman Numismatic Portal sitúan ese descrédito al final de la guerra; la desconfianza retrasó un papel federal hasta los greenbacks de 1861–1862.',
+        es: 'El Congreso Continental autorizó papel en mayo de 1775 para financiar la independencia. Los billetes prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. Hall and Sellers las imprimieron en Filadelfia, herederos de la prensa de Benjamin Franklin, sobre papel de Ivy Mills con fibras azules y mica. El reverso usaba nature prints de hojas y telas, difíciles de grabar a mano. La inflación y las falsificaciones británicas —guerra económica— acuñaron la frase «not worth a Continental». El U.S. Currency Education Program y el Newman Numismatic Portal sitúan ese descrédito al final de la guerra; la desconfianza retrasó un papel federal hasta los greenbacks de 1861–1862.',
         en: 'The Continental Congress authorized paper in May 1775 to finance independence. The notes promised Spanish milled dollars or their equal in gold or silver; they paid no interest. Hall and Sellers printed them in Philadelphia, successors to Benjamin Franklin’s press, on Ivy Mills paper with blue fibers and mica. The backs used nature prints of leaves and cloth, hard to engrave by hand. Inflation and British counterfeits — economic warfare — coined the phrase “not worth a Continental.” The U.S. Currency Education Program and the Newman Numismatic Portal place that collapse at the war’s end; the distrust delayed federal paper until the greenbacks of 1861–1862.',
       },
       {
@@ -2540,11 +2540,11 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         en: 'The Fourth Series — the act of 17 April 1862, amended 23 September — introduced the first $1 and $2 notes and, at the other end, these interest-bearing hundreds. Unlike the non-interest series of 1861, the Treasury offered 7.3 percent a year here, paid when the bearer presented the note at a depository. The underlying clause stayed the same: payment six months after a treaty of peace between the Confederacy and the United States. Wikipedia documents seven series between 1861 and 1864 totaling $1.7 billion.',
       },
       {
-        es: 'Los coleccionistas llaman a T-39, T-40 y T-41 las «Train and Hoer notes»: dos comparten la locomotora —recta o difusa la columna de humo— y la tercera cambia la viñeta por esclavos cavando con azadón y el retrato de John C. Calhoun. El Newman Numismatic Portal registra que el Tesoro, en Richmond, fechó a mano estas notas entre el 9 de mayo de 1862 y el 8 de enero de 1863; la fecha de este ejemplar, 20 de agosto de 1862, cae dentro del rango que la SPMC documenta para el T-40 (9 de agosto de 1862 a 16 de enero de 1863). Muchas de estas notas de cien salieron por comisionados o por oficiales del ejército confederado para comprar suministros en el frente, con endosos propios en el reverso; esta pieza no lleva esa firma de emisor, solo los sellos de intereses.',
+        es: 'Los coleccionistas llaman a T-39, T-40 y T-41 las «Train and Hoer notes»: dos comparten la locomotora —recta o difusa la columna de humo— y la tercera cambia la viñeta por esclavos cavando con azadón y el retrato de John C. Calhoun. El Newman Numismatic Portal registra que el Tesoro, en Richmond, fechó a mano estos billetes entre el 9 de mayo de 1862 y el 8 de enero de 1863; la fecha de este ejemplar, 20 de agosto de 1862, cae dentro del rango que la SPMC documenta para el T-40 (9 de agosto de 1862 a 16 de enero de 1863). Muchos de estos billetes de cien salieron por comisionados o por oficiales del ejército confederado para comprar suministros en el frente, con endosos propios en el reverso; esta pieza no lleva esa firma de emisor, solo los sellos de intereses.',
         en: 'Collectors call T-39, T-40, and T-41 the “Train and Hoer notes”: two share the locomotive — straight or diffused steam — and the third swaps the vignette for slaves hoeing and a portrait of John C. Calhoun. The Newman Numismatic Portal records that the Treasury, in Richmond, hand-dated these notes between 9 May 1862 and 8 January 1863; this note’s date, 20 August 1862, falls within the range the SPMC documents for T-40 (9 August 1862 to 16 January 1863). Many of these hundreds were put into circulation by Confederate commissioners or army officers buying supplies in the field, with their own endorsements on the back; this piece carries no such issuer’s signature, only the interest stamps.',
       },
       {
-        es: 'El interés se cobraba una vez al año, y cada cobro dejaba un sello en el reverso: por eso estas notas, a diferencia de las emisiones sin interés, no llevan un diseño grabado en la vuelta. Esta pieza registra al menos dos cobros en Raleigh, Carolina del Norte —1 de enero de 1864 y 1 de enero de 1865— y un tercer sello, en recuadro, superpuesto a un sello circular de depositaría que la fotografía no permite leer con certeza. La derrota confederada dejó sin valor tanto el principal como el interés acumulado; la Sección 4 de la Decimocuarta Enmienda declara nulas las deudas contraídas en ayuda de la rebelión.',
+        es: 'El interés se cobraba una vez al año, y cada cobro dejaba un sello en el reverso: por eso estos billetes, a diferencia de las emisiones sin interés, no llevan un diseño grabado en la vuelta. Esta pieza registra al menos dos cobros en Raleigh, Carolina del Norte —1 de enero de 1864 y 1 de enero de 1865— y un tercer sello, en recuadro, superpuesto a un sello circular de depositaría que la fotografía no permite leer con certeza. La derrota confederada dejó sin valor tanto el principal como el interés acumulado; la Sección 4 de la Decimocuarta Enmienda declara nulas las deudas contraídas en ayuda de la rebelión.',
         en: 'Interest was collected once a year, and each payment left a stamp on the back: that is why these notes, unlike the non-interest issues, carry no engraved design on the reverse. This piece records at least two payments at Raleigh, North Carolina — 1 January 1864 and 1 January 1865 — and a third, boxed stamp overlapping a circular depository seal that the photograph does not allow to be read with certainty. The Confederate defeat left both the principal and the accrued interest worthless; Section 4 of the Fourteenth Amendment holds debts incurred in aid of rebellion void.',
       },
     ],
@@ -3083,7 +3083,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El 500 dólares de tamaño pequeño lleva a McKinley desde la serie 1928. El U.S. Currency Education Program sitúa las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Las notas pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
+        es: 'El 500 dólares de tamaño pequeño lleva a McKinley desde la serie 1928. El U.S. Currency Education Program sitúa las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Los billetes pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
         en: 'Small-size $500 notes have carried McKinley since Series 1928. The U.S. Currency Education Program places the last printings of $500, $1,000, $5,000, and $10,000 notes in 1945; on 14 July 1969 the Federal Reserve and the Treasury announced those denominations would be discontinued for lack of use. Outstanding notes remain legal tender: the government has not recalled the paper.',
       },
       {
@@ -3185,7 +3185,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El 1.000 dólares de tamaño pequeño lleva a Cleveland desde la serie 1928. El U.S. Currency Education Program y el Bureau of Engraving and Printing sitúan las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Las notas pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
+        es: 'El 1.000 dólares de tamaño pequeño lleva a Cleveland desde la serie 1928. El U.S. Currency Education Program y el Bureau of Engraving and Printing sitúan las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Los billetes pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
         en: 'Small-size $1,000 notes have carried Cleveland since Series 1928. The U.S. Currency Education Program and the Bureau of Engraving and Printing place the last printings of $500, $1,000, $5,000, and $10,000 notes in 1945; on 14 July 1969 the Federal Reserve and the Treasury announced those denominations would be discontinued for lack of use. Outstanding notes remain legal tender: the government has not recalled the paper.',
       },
       {
@@ -3268,7 +3268,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Rosario Marin (Treasurer) and John W. Snow (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP, Fort Worth (FW). USPaperMoney.Info sitúa F05033622★ en la tirada de reemplazo de agosto de 2005, F03200001★–F06400000★ (3.200.000 notas). Friedberg cifra Fr. 1929-F* en 3.200.000.',
+      es: 'BEP, Fort Worth (FW). USPaperMoney.Info sitúa F05033622★ en la tirada de reemplazo de agosto de 2005, F03200001★–F06400000★ (3.200.000 billetes). Friedberg cifra Fr. 1929-F* en 3.200.000.',
       en: 'BEP, Fort Worth (FW). USPaperMoney.Info places F05033622★ in the August 2005 replacement run, F03200001★–F06400000★ (3,200,000 notes). Friedberg lists Fr. 1929-F* at 3,200,000.',
     },
     images: {
@@ -3303,7 +3303,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 2003 $1: both faces of the Great Seal and ONE DOLLAR. Plate 88.',
     },
     scarcity: {
-      es: 'La serie 2003 del 1 dólar —firmas Marin–Snow, impresa de julio de 2003 a octubre de 2005— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-515a. Atlanta tuvo 1.075.200.000 notas ordinarias y 3.520.000 estrellas en dos tiradas. La primera, de julio de 2003 en Washington (Fr. 1928-F*, F00000001★–F00320000★, 320.000 notas), es la escasa. Esta pieza cae en la segunda: Fort Worth, agosto de 2005, Fr. 1929-F*, F03200001★–F06400000★, 3.200.000 notas. El tipo con estrella es un reemplazo; esta tirada FW es la común del distrito.',
+      es: 'La serie 2003 del 1 dólar —firmas Marin–Snow, impresa de julio de 2003 a octubre de 2005— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-515a. Atlanta tuvo 1.075.200.000 billetes ordinarios y 3.520.000 estrellas en dos tiradas. La primera, de julio de 2003 en Washington (Fr. 1928-F*, F00000001★–F00320000★, 320.000 billetes), es la escasa. Esta pieza cae en la segunda: Fort Worth, agosto de 2005, Fr. 1929-F*, F03200001★–F06400000★, 3.200.000 billetes. El tipo con estrella es un reemplazo; esta tirada FW es la común del distrito.',
       en: 'Series 2003 $1 notes — Marin–Snow signatures, printed from July 2003 through October 2005 — were everyday Reserve paper. The Bank Note Museum numbers the type P-515a. Atlanta had 1,075,200,000 regular notes and 3,520,000 stars in two runs. The first, July 2003 in Washington (Fr. 1928-F*, F00000001★–F00320000★, 320,000 notes), is the scarce one. This piece falls in the second: Fort Worth, August 2005, Fr. 1929-F*, F03200001★–F06400000★, 3,200,000 notes. A star marks a replacement; this FW run is the common Atlanta star of the series.',
     },
     population: {
@@ -3403,7 +3403,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Slabbed back of the Series 2003 $2, PMG certificate 2458873-047: Trumbull’s Declaration of Independence and Exceptional Paper Quality.',
     },
     scarcity: {
-      es: 'La serie 2003 del 2 dólares —firmas Marin–Snow, impresa en Fort Worth— no es el papel cotidiano de los doce distritos. USPaperMoney.Info registra la circulación ordinaria solo en Minneapolis (I): 121.600.000 notas y 3.840.000 estrellas en dos tiradas, y anota que el BEP imprimió además unas estrellas para venta a coleccionistas. Numismatic News (archivo) describe la venta del BEP de estrellas de los doce distritos, con seriales por debajo de 16000, a 9,95 dólares cada una; el juego de doce con seriales coincidentes ya se había agotado. Una recopilación de productos del BEP, que cita a Daniel Wishnatsky en Paper Money Values (noviembre–diciembre de 2008), sitúa 2.000 juegos premium —seriales 00000001* a 00002100*— y las notas sueltas en 0002101* a 00016000*, hasta 16.000 por distrito. Esta ficha no trata esas cifras como una tabla oficial del BEP. El serial H00010418★ cae en la banda de las sueltas, no en los primeros números del juego coincidente. No es la estrella de circulación de Minneapolis ni un 2 dólares ordinario del distrito H.',
+      es: 'La serie 2003 del 2 dólares —firmas Marin–Snow, impresa en Fort Worth— no es el papel cotidiano de los doce distritos. USPaperMoney.Info registra la circulación ordinaria solo en Minneapolis (I): 121.600.000 billetes y 3.840.000 estrellas en dos tiradas, y anota que el BEP imprimió además unas estrellas para venta a coleccionistas. Numismatic News (archivo) describe la venta del BEP de estrellas de los doce distritos, con seriales por debajo de 16000, a 9,95 dólares cada una; el juego de doce con seriales coincidentes ya se había agotado. Una recopilación de productos del BEP, que cita a Daniel Wishnatsky en Paper Money Values (noviembre–diciembre de 2008), sitúa 2.000 juegos premium —seriales 00000001* a 00002100*— y los billetes sueltos en 0002101* a 00016000*, hasta 16.000 por distrito. Esta ficha no trata esas cifras como una tabla oficial del BEP. El serial H00010418★ cae en la banda de las sueltas, no en los primeros números del juego coincidente. No es la estrella de circulación de Minneapolis ni un 2 dólares ordinario del distrito H.',
       en: 'Series 2003 $2 notes — Marin–Snow signatures, printed at Fort Worth — were not everyday paper from all twelve districts. USPaperMoney.Info records ordinary circulation only at Minneapolis (I): 121,600,000 notes and 3,840,000 stars in two runs, and notes that the BEP also printed some stars for collector sales. A Numismatic News archive report describes the BEP sale of stars from all twelve districts, with serials under 16000, at $9.95 each; the twelve-note matching-serial set had already sold out. A compilation of BEP products, citing Daniel Wishnatsky in Paper Money Values (November–December 2008), places 2,000 premium sets — serials 00000001* through 00002100* — and individual notes from 0002101* to 00016000*, up to 16,000 per district. This record does not treat those figures as an official BEP table. Serial H00010418★ falls in the individual-sale band, not in the first numbers of the matched set. It is neither the Minneapolis circulation star nor an ordinary district-H $2.',
     },
     population: {
@@ -3709,7 +3709,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Anna Escobedo Cabral (Treasurer) and Henry M. Paulson, Jr. (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP. USPaperMoney.Info sitúa la serie 2006 del 1 dólar entre marzo de 2007 y noviembre de 2010 (firmas Cabral–Paulson). Dallas imprimió 569.600.000 notas ordinarias en seis bloques. El serial K46602688C (bloque KC) cae en la producción de marzo de 2008 de ese distrito. Esta ficha no inventa una tirada solo para el bloque KC.',
+      es: 'BEP. USPaperMoney.Info sitúa la serie 2006 del 1 dólar entre marzo de 2007 y noviembre de 2010 (firmas Cabral–Paulson). Dallas imprimió 569.600.000 billetes ordinarios en seis bloques. El serial K46602688C (bloque KC) cae en la producción de marzo de 2008 de ese distrito. Esta ficha no inventa una tirada solo para el bloque KC.',
       en: 'BEP. USPaperMoney.Info places Series 2006 $1 notes from March 2007 through November 2010 (Cabral–Paulson signatures). Dallas printed 569,600,000 regular notes in six blocks. Serial K46602688C (KC block) falls in that district’s March 2008 production. This record does not invent a printage for the KC block alone.',
     },
     images: {
@@ -3749,7 +3749,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 2006 $1: the Great Seal and, in the margins, FOLLOW MY JOURNEY AT / www.WHERESGEORGE.com.',
     },
     scarcity: {
-      es: 'La serie 2006 del 1 dólar —firmas Cabral–Paulson, los doce distritos— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-523a. Fr. 1933-K cubre Dallas. El tipo es común; Dallas imprimió 569.600.000 notas ordinarias en esa serie. El interés de esta pieza no es la rareza del FRN, sino los sellos de Where’s George? sobre un serial ordinario. Esta ficha no inventa una tirada por bloque.',
+      es: 'La serie 2006 del 1 dólar —firmas Cabral–Paulson, los doce distritos— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-523a. Fr. 1933-K cubre Dallas. El tipo es común; Dallas imprimió 569.600.000 billetes ordinarios en esa serie. El interés de esta pieza no es la rareza del FRN, sino los sellos de Where’s George? sobre un serial ordinario. Esta ficha no inventa una tirada por bloque.',
       en: 'Series 2006 $1 notes — Cabral–Paulson signatures, all twelve districts — were everyday Reserve paper. The Bank Note Museum numbers the type P-523a. Fr. 1933-K is Dallas. The type is common; Dallas printed 569,600,000 regular notes in the series. This piece’s interest is not FRN scarcity but the Where’s George? stamps on an ordinary serial. This record does not invent a printage by block.',
     },
     population: {
@@ -3827,16 +3827,16 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     ],
   },
   {
-    id: 'nota-prueba-giori-lincoln-memorial',
+    id: 'billete-prueba-giori-lincoln-memorial',
     chapterId: 'us-miscelaneos',
-    path: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    path: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     pathEn: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     pick: 'Giori · Lincoln Memorial (uniface)',
     serial: '—',
     no_serial_reason:
       'Uniface Giori press test: no serials, Treasury seal, or Federal Reserve seal were printed.',
     signatures: {
-      es: 'Ninguna (nota de prueba uniface)',
+      es: 'Ninguna (billete de prueba uniface)',
       en: 'None (uniface test note)',
     },
     printed: {
@@ -3851,7 +3851,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       height: 960,
     },
     title: {
-      es: 'Nota de prueba Giori · Lincoln Memorial · ca. 1970',
+      es: 'Billete de prueba Giori · Lincoln Memorial · ca. 1970',
       en: 'Giori test note · Lincoln Memorial · ca. 1970s',
     },
     kicker: {
@@ -3859,7 +3859,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'United States · Miscellaneous · Giori proof',
     },
     lead: {
-      es: 'Nota de prueba uniface de la prensa Giori, hacia los años 1970: anverso verde con el Lincoln Memorial y elementos del 1 dólar; reverso en blanco; sin seriales ni sellos. No es curso legal.',
+      es: 'Billete de prueba uniface de la prensa Giori, hacia los años 1970: anverso verde con el Lincoln Memorial y elementos del 1 dólar; reverso en blanco; sin seriales ni sellos. No es curso legal.',
       en: 'A uniface Giori press test note, ca. 1970s: a green face with the Lincoln Memorial and $1 design elements; a blank back; no serials or seals. It is not legal tender.',
     },
     description: {
@@ -3881,15 +3881,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'The Giori press',
     },
     frontCaption: {
-      es: 'Anverso uniface de la nota de prueba Giori, hacia los años 1970: Lincoln Memorial en verde, THE UNITED STATES OF AMERICA y 1 de las esquinas del 1 dólar, sin serial.',
+      es: 'Anverso uniface del billete de prueba Giori, hacia los años 1970: Lincoln Memorial en verde, THE UNITED STATES OF AMERICA y 1 de las esquinas del 1 dólar, sin serial.',
       en: 'Uniface face of the Giori test note, ca. 1970s: Lincoln Memorial in green, THE UNITED STATES OF AMERICA and the $1 corner 1s, with no serial.',
     },
     backCaption: {
-      es: 'Reverso en blanco de la misma nota de prueba Giori, en funda: sin tinta, grabado ni serial.',
+      es: 'Reverso en blanco del mismo billete de prueba Giori, en funda: sin tinta, grabado ni serial.',
       en: 'Blank back of the same Giori test note, in a sleeve: no ink, engraving, or serial.',
     },
     scarcity: {
-      es: 'Las notas de prueba Giori no fueron emisión de circulación. The E-Sylum indica que los pliegos de ensayo debían destruirse o quedaron al margen; algunos sobrevivieron y, una vez levantada la restricción del BEP, entraron en el mercado de coleccionistas. No hay Pick ni Friedberg para este collage uniface del Lincoln Memorial. Esta ficha no inventa una tirada ni un censo.',
+      es: 'Los billetes de prueba Giori no fueron emisión de circulación. The E-Sylum indica que los pliegos de ensayo debían destruirse o quedaron al margen; algunos sobrevivieron y, una vez levantada la restricción del BEP, entraron en el mercado de coleccionistas. No hay Pick ni Friedberg para este collage uniface del Lincoln Memorial. Esta ficha no inventa una tirada ni un censo.',
       en: 'Giori test notes were not a circulating issue. The E-Sylum notes that trial sheets were meant to be destroyed or otherwise kept aside; some survived and, once the BEP restriction was lifted, entered the collector market. There is no Pick or Friedberg number for this uniface Lincoln Memorial collage. This record does not invent a printage or a census.',
     },
     population: {
