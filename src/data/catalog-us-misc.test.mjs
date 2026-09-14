@@ -261,6 +261,14 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
   it('lists the six-piece set including the $1 in ES and EN narrative, without a type-denomination grid', () => {
     assert.match(data, /Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar—/);
     assert.match(data, /The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and \$1 —/);
+    assert.match(data, /el 25¢, a Otto Ringling/);
+    assert.match(data, /the 25¢, Otto Ringling/);
+    assert.match(data, /el 50¢, a Al Ringling \(Albert, el mayor\)/);
+    assert.match(data, /the 50¢, Al Ringling \(Albert, the eldest\)/);
+    assert.match(data, /WI100-\.25a/);
+    assert.match(data, /WI100-\.50a/);
+    assert.match(data, /Ralph A\. Mitchell y Neil Shafer/);
+    assert.match(data, /Ralph A\. Mitchell and Neil Shafer/);
     assert.match(data, /El 1 dólar reúne al grupo/);
     assert.match(data, /The \$1 shows the group/);
     assert.doesNotMatch(data, /Denominaciones del tipo/);
