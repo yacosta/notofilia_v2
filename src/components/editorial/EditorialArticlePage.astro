@@ -5,7 +5,7 @@ import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import FaqBlock from '../FaqBlock.astro';
 import { breadcrumbJsonLd, PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
-import { faqPageJsonLd } from '../../lib/json-ld';
+import { faqPageJsonLd, imageObjectJsonLd } from '../../lib/json-ld';
 import { copy } from '../../lib/site';
 import { guideFaqs, localizeFaq } from '../../data/page-faq';
 import { cardImageSrc, editorialUploadSrcset } from '../../lib/images';
@@ -61,11 +61,7 @@ const jsonLd = {
       datePublished: article.published,
       dateModified: article.updated || article.published,
       inLanguage: locale,
-      image: {
-        '@type': 'ImageObject',
-        url: imageUrl,
-        caption: article.caption[locale],
-      },
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: article.caption[locale] }),
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       articleSection: sectionLabel,
