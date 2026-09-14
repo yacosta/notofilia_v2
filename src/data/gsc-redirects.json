@@ -1867,22 +1867,22 @@
       "rule": "existing"
     },
     "/en/coleccion/colombia/1-peso-oro-1973/": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/coleccion/colombia/1-peso-oro-1973": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/coleccion/colombia/1-peso-oro-1974/": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/coleccion/colombia/1-peso-oro-1974": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
@@ -13267,22 +13267,42 @@
       "rule": "gone"
     },
     "/coleccion/colombia/1-peso-oro-1974": {
-      "target": "/coleccion/colombia/1-peso-oro-1973/",
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/coleccion/colombia/1-peso-oro-1974/": {
-      "target": "/coleccion/colombia/1-peso-oro-1973/",
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/collection/colombia/1-peso-oro-1974": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     },
     "/en/collection/colombia/1-peso-oro-1974/": {
-      "target": "/en/collection/colombia/1-peso-oro-1973/",
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/1-peso-oro-1973": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/1-peso-oro-1973/": {
+      "target": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/1-peso-oro-1973": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/1-peso-oro-1973/": {
+      "target": "/en/collection/colombia/1-peso-oro-1959-1977/",
       "status": 301,
       "rule": "existing"
     }

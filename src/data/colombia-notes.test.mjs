@@ -139,7 +139,7 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
   it('is a distinct Pick 398 circulation note, not Pick 380 or Pick 404', () => {
     const note = noteById('1-peso-oro-1959');
     const note1954 = noteById('1-peso-oro-1954');
-    const note1973 = noteById('1-peso-oro-1973');
+    const note1973 = noteById('1-peso-oro-1959-1977');
     assert.ok(note);
     assert.ok(note1954);
     assert.ok(note1973);
@@ -205,20 +205,21 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
   });
 });
 
-describe('Colombia BanRep 1 peso oro 1973–1974 Imprenta de Billetes', () => {
+describe('Colombia BanRep 1 peso Imprenta 1959–1977 (Pick 404e)', () => {
   it('keeps two Pick 404e dated pieces on one page, not the ABNC 1 pesos', () => {
-    const note = noteById('1-peso-oro-1973');
+    const note = noteById('1-peso-oro-1959-1977');
     const note1945 = noteById('1-peso-oro-1945');
     const note1954 = noteById('1-peso-oro-1954');
     assert.ok(note);
     assert.ok(note1945);
     assert.ok(note1954);
+    assert.equal(noteById('1-peso-oro-1973'), undefined);
     assert.equal(noteById('1-peso-oro-1974'), undefined);
     assert.equal(note.chapterId, 'banco-de-la-republica');
     assert.equal(note.pick, 'P# 404e');
     assert.equal(note.serial, '26530968');
-    assert.match(note.title.es, /1973 y 1974/);
-    assert.match(note.title.en, /1973 and 1974/);
+    assert.match(note.title.es, /1959–1977/);
+    assert.match(note.title.en, /1959–1977/);
     assert.notEqual(note.serial, note1945.serial);
     assert.notEqual(note.serial, note1954.serial);
     assert.notEqual(note.pick, note1945.pick);
@@ -299,16 +300,16 @@ describe('Colombia BanRep 1 peso oro 1973–1974 Imprenta de Billetes', () => {
     assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
     assert.match(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
-    const peso = cards.filter((card) => card.note.id === '1-peso-oro-1973');
+    const peso = cards.filter((card) => card.note.id === '1-peso-oro-1959-1977');
     assert.equal(peso.length, 2);
     assert.equal(peso[0].piece.id, '1-peso-oro-1973');
     assert.equal(peso[0].piece.serial, '26530968');
     assert.equal(peso[1].piece.id, '1-peso-oro-1974');
     assert.equal(peso[1].piece.serial, '47550075');
-    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'es'), /#1-peso-oro-1973$/);
-    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'es'), /#1-peso-oro-1974$/);
-    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'en'), /#1-peso-oro-1973$/);
-    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'en'), /#1-peso-oro-1974$/);
+    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'es'), /\/coleccion\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1973$/);
+    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'es'), /\/coleccion\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
+    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1973$/);
+    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
   });
 });
 

@@ -1,6 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { BANCA_LIBRE_PATH } from '../data/colombia-banca-libre';
+import { noteById as colombiaNoteById } from '../data/colombia-notes';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import {
@@ -67,6 +68,11 @@ if (!usTrumpDollar) {
   throw new Error('Missing US Trump dollar coin for mega-nav');
 }
 
+const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
+if (!colombia1PesoBanRep) {
+  throw new Error('Missing Colombia BanRep 1 peso 1959–1977 note for mega-nav');
+}
+
 const colonialNotes = notesForChapter('us-colonial');
 const obsoleteNotes = notesForChapter('us-obsoleto');
 
@@ -96,6 +102,12 @@ export const megaNav: NavNode[] = [
             en: 'Free banking (1870–1887)',
             href: BANCA_LIBRE_PATH,
             icon: 'guides',
+          },
+          {
+            id: 'colombia-1-peso-oro-1959-1977',
+            es: 'Banco de la República - 1 peso (1959 - 1977)',
+            en: 'Banco de la República - 1 peso (1959 - 1977)',
+            href: colombia1PesoBanRep.path,
           },
           {
             id: 'emisiones-extranjero-guatemala',

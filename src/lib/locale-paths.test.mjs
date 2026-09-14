@@ -337,12 +337,12 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/1-peso-oro-1959/',
     );
     assert.equal(
-      localizePath('/coleccion/colombia/1-peso-oro-1973/', 'en'),
-      '/en/collection/colombia/1-peso-oro-1973/',
+      localizePath('/coleccion/colombia/1-peso-oro-1959-1977/', 'en'),
+      '/en/collection/colombia/1-peso-oro-1959-1977/',
     );
     assert.equal(
-      localizePath('/coleccion/colombia/1-peso-oro-1973/#1-peso-oro-1974', 'en'),
-      '/en/collection/colombia/1-peso-oro-1973/#1-peso-oro-1974',
+      localizePath('/coleccion/colombia/1-peso-oro-1959-1977/#1-peso-oro-1974', 'en'),
+      '/en/collection/colombia/1-peso-oro-1959-1977/#1-peso-oro-1974',
     );
     assert.equal(
       localizePath('/coleccion/colombia/10-pesos-oro-1943/', 'en'),

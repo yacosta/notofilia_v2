@@ -34,6 +34,23 @@ describe('piece SEO titles and descriptions', () => {
     assert.doesNotMatch(title, /Pick/i);
   });
 
+  it('keeps a printed year range in the H1 and document title', () => {
+    const meta = piecePageMeta({
+      kind: 'note',
+      title: '1 peso · Banco de la República · 1959–1977',
+      kicker: 'Colombia · Banco de la República · Imprenta de Billetes',
+      lead: 'Dos ejemplares del Pick 404e: 1973 y 1974.',
+      locale: 'es',
+      country: 'Colombia',
+    });
+    assert.equal(meta.h1, 'Billete de 1 peso, 1959–1977');
+    assert.match(
+      meta.documentTitle,
+      /^Billete de 1 peso 1959–1977 · Banco de la República \(Colombia\) \| Notofilia$/,
+    );
+    assert.equal(meta.subtitle, '1 peso · Banco de la República · 1959–1977');
+  });
+
   it('builds coin titles with Moneda / coin and keeps KM out of the title', () => {
     const es = piecePageMeta({
       kind: 'coin',

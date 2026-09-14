@@ -210,6 +210,20 @@ describe('Colombia banca libre menu', () => {
     assert.match(colombia, /es: 'Banca libre \(1870–1887\)'/);
     assert.match(colombia, /en: 'Free banking \(1870–1887\)'/);
   });
+
+  it('links the BanRep 1 peso 1959–1977 note under Colombia', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    assert.match(source, /colombiaNoteById\('1-peso-oro-1959-1977'\)/);
+    assert.match(colombia, /id: 'colombia-1-peso-oro-1959-1977'/);
+    assert.match(colombia, /es: 'Banco de la República - 1 peso \(1959 - 1977\)'/);
+    assert.match(colombia, /en: 'Banco de la República - 1 peso \(1959 - 1977\)'/);
+    assert.match(colombia, /href: colombia1PesoBanRep\.path/);
+    assert.match(
+      colombia,
+      /id: 'banca-libre'[\s\S]*id: 'colombia-1-peso-oro-1959-1977'[\s\S]*id: 'emisiones-extranjero-guatemala'/,
+    );
+  });
 });
 
 describe('Colombia visual catalogs', () => {
