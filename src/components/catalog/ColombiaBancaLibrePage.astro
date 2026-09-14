@@ -100,15 +100,27 @@ const jsonLd = {
                   <tbody>
                     {table.rows.map((row) => (
                       <tr class="border-b border-line-strong last:border-b-0">
-                        {row.map((cell, index) =>
-                          index === 0 ? (
+                        {row.map((cell, index) => {
+                          const text = typeof cell === 'string' ? cell : cell.label;
+                          const href = typeof cell === 'string' ? undefined : localizePath(cell.href, locale);
+                          const content = href ? (
+                            <a
+                              href={href}
+                              class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                            >
+                              {text}
+                            </a>
+                          ) : (
+                            text
+                          );
+                          return index === 0 ? (
                             <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
-                              {cell}
+                              {content}
                             </th>
                           ) : (
-                            <td class="px-3 py-2.5">{cell}</td>
-                          ),
-                        )}
+                            <td class="px-3 py-2.5">{content}</td>
+                          );
+                        })}
                       </tr>
                     ))}
                   </tbody>
