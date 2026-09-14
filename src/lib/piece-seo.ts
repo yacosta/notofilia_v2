@@ -57,7 +57,9 @@ export function pieceDocumentTitle(parts: PieceTitleParts, locale: Locale): stri
   return `${h1} · ${parts.issuer} (${parts.country}) | Notofilia`;
 }
 
-function lastYearToken(value: string): string {
+function yearRangeToken(value: string): string {
+  const range = value.match(/\b(1[5-9]\d{2}|20\d{2})\s*[–-]\s*(1[5-9]\d{2}|20\d{2})\b/);
+  if (range) return `${range[1]}–${range[2]}`;
   const years = value.match(/\b(1[5-9]\d{2}|20\d{2})\b/g);
   return years?.[years.length - 1] ?? '';
 }
@@ -76,8 +78,9 @@ export function parsePieceTitleParts(input: {
   const chunks = input.title.split(/\s·\s/).map((part) => part.trim()).filter(Boolean);
   let denomination = chunks[0] ?? input.title;
   let issuer = chunks.length >= 2 ? chunks[1] : '';
-  let year = chunks.length >= 3 ? lastYearToken(chunks[chunks.length - 1]) : lastYearToken(input.title);
-  if (!year) year = lastYearToken(input.kicker ?? '') || '';
+  let year =
+    chunks.length >= 3 ? yearRangeToken(chunks[chunks.length - 1]) : yearRangeToken(input.title);
+  if (!year) year = yearRangeToken(input.kicker ?? '') || '';
   if (!issuer) {
     const kickerBits = (input.kicker ?? '').split(/\s·\s/).map((part) => part.trim()).filter(Boolean);
     issuer = kickerBits[1] ?? kickerBits[0] ?? (input.locale === 'en' ? 'Issuer' : 'Emisor');

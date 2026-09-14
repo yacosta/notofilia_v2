@@ -2,8 +2,8 @@
 import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
 import { noteById } from '../../../../../data/colombia-notes';
 
-const note = noteById('1-peso-oro-1973');
-if (!note) throw new Error('Missing Banco de la República 1 peso oro 1973 catalog note');
+const note = noteById('1-peso-oro-1959-1977');
+if (!note) throw new Error('Missing Colombia note 1-peso-oro-1959-1977');
 ---
 
 <ColombiaNotePage locale="en" note={note} />

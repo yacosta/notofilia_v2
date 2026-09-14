@@ -78,7 +78,7 @@ source,target,status,rule,confidence
 /coleccion/colombia/10-pesos-oro-1943-anverso,/coleccion/colombia/10-pesos-oro-1943/,301,existing,high
 /coleccion/colombia/10-pesos-oro-1943-reverso,/coleccion/colombia/10-pesos-oro-1943/,301,existing,high
 /coleccion/colombia/2-pesos-oro-1955,/coleccion/colombia/2-pesos-oro-1944/,301,existing,high
-/coleccion/colombia/1-peso-oro-1974,/coleccion/colombia/1-peso-oro-1973/,301,existing,high
+/coleccion/colombia/1-peso-oro-1974,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
 /coleccion/colombia/2000-pesos-error-mariposa/,/coleccion/colombia/,301,hub-fallback,low
 /coleccion/colombia/banco-colombiano-guatemala-1-peso-1900/,/coleccion/colombia/,301,hub-fallback,low
 /coleccion/colombia/banco-de-barranquilla-50-centavos-1880/,/coleccion/colombia/,301,hub-fallback,low
@@ -185,8 +185,8 @@ source,target,status,rule,confidence
 /en/coleccion/colombia/1-peso-oro-1945/,/en/collection/colombia/1-peso-oro-1945/,301,existing,high
 /en/coleccion/colombia/1-peso-oro-1954/,/en/collection/colombia/1-peso-oro-1954/,301,existing,high
 /en/coleccion/colombia/1-peso-oro-1959/,/en/collection/colombia/1-peso-oro-1959/,301,existing,high
-/en/coleccion/colombia/1-peso-oro-1973/,/en/collection/colombia/1-peso-oro-1973/,301,existing,high
-/en/coleccion/colombia/1-peso-oro-1974/,/en/collection/colombia/1-peso-oro-1973/,301,existing,high
+/en/coleccion/colombia/1-peso-oro-1959-1977/,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
+/en/coleccion/colombia/1-peso-oro-1974/,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
 /en/coleccion/colombia/1-peso-tolima-1901/,/en/collection/colombia/1-peso-tolima-1901/,301,existing,high
 /en/coleccion/colombia/10-pesos-oro-1943-anverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/coleccion/colombia/10-pesos-oro-1943-reverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
@@ -335,7 +335,7 @@ source,target,status,rule,confidence
 /en/collection/colombia/10-pesos-oro-1943-anverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/collection/colombia/10-pesos-oro-1943-reverso,/en/collection/colombia/10-pesos-oro-1943/,301,existing,high
 /en/collection/colombia/2-pesos-oro-1955,/en/collection/colombia/2-pesos-oro-1944/,301,existing,high
-/en/collection/colombia/1-peso-oro-1974,/en/collection/colombia/1-peso-oro-1973/,301,existing,high
+/en/collection/colombia/1-peso-oro-1974,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high
 /en/collection/colombia/2000-pesos-1996-butterfly-error/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/2000-pesos-butterfly-error/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-colombiano-guatemala-1-peso-1900/,/en/collection/colombia/,301,hub-fallback,low
@@ -1333,3 +1333,5 @@ source,target,status,rule,confidence
 /seis-colecciones-representaran-cuba-en-brasiliana-2013/,,410,gone,high
 /sobre-mi,/acerca-de/,301,existing,high
 /tunanmarca-quedara-perennizado-en-nuevo-sol/,,410,gone,high
+/coleccion/colombia/1-peso-oro-1973,/coleccion/colombia/1-peso-oro-1959-1977/,301,existing,high
+/en/collection/colombia/1-peso-oro-1973,/en/collection/colombia/1-peso-oro-1959-1977/,301,existing,high

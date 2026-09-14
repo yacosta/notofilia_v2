@@ -72,8 +72,10 @@
 /coleccion/colombia/10-pesos-oro-1943-anverso /coleccion/colombia/10-pesos-oro-1943/ 301
 /coleccion/colombia/10-pesos-oro-1943-reverso /coleccion/colombia/10-pesos-oro-1943/ 301
 /coleccion/colombia/2-pesos-oro-1955 /coleccion/colombia/2-pesos-oro-1944/ 301
-/coleccion/colombia/1-peso-oro-1974 /coleccion/colombia/1-peso-oro-1973/ 301
-/coleccion/colombia/1-peso-oro-1974/ /coleccion/colombia/1-peso-oro-1973/ 301
+/coleccion/colombia/1-peso-oro-1974 /coleccion/colombia/1-peso-oro-1959-1977/ 301
+/coleccion/colombia/1-peso-oro-1973 /coleccion/colombia/1-peso-oro-1959-1977/ 301
+/coleccion/colombia/1-peso-oro-1973/ /coleccion/colombia/1-peso-oro-1959-1977/ 301
+/coleccion/colombia/1-peso-oro-1974/ /coleccion/colombia/1-peso-oro-1959-1977/ 301
 /coleccion/colombia/2000-pesos-error-mariposa/ /coleccion/colombia/ 301
 /coleccion/colombia/banco-colombiano-guatemala-1-peso-1900/ /coleccion/colombia/ 301
 /coleccion/colombia/banco-de-barranquilla-50-centavos-1880/ /coleccion/colombia/ 301
@@ -179,8 +181,8 @@
 /en/coleccion/colombia/1-peso-oro-1945/ /en/collection/colombia/1-peso-oro-1945/ 301
 /en/coleccion/colombia/1-peso-oro-1954/ /en/collection/colombia/1-peso-oro-1954/ 301
 /en/coleccion/colombia/1-peso-oro-1959/ /en/collection/colombia/1-peso-oro-1959/ 301
-/en/coleccion/colombia/1-peso-oro-1973/ /en/collection/colombia/1-peso-oro-1973/ 301
-/en/coleccion/colombia/1-peso-oro-1974/ /en/collection/colombia/1-peso-oro-1973/ 301
+/en/coleccion/colombia/1-peso-oro-1973/ /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/coleccion/colombia/1-peso-oro-1974/ /en/collection/colombia/1-peso-oro-1959-1977/ 301
 /en/coleccion/colombia/1-peso-tolima-1901/ /en/collection/colombia/1-peso-tolima-1901/ 301
 /en/coleccion/colombia/10-pesos-oro-1943-anverso /en/collection/colombia/10-pesos-oro-1943/ 301
 /en/coleccion/colombia/10-pesos-oro-1943-reverso /en/collection/colombia/10-pesos-oro-1943/ 301
@@ -195,7 +197,9 @@
 /en/coleccion/colombia/10000-pesos-1994/ /en/collection/colombia/10000-pesos-1994/ 301
 /en/coleccion/colombia/2-pesos-oro-1944/ /en/collection/colombia/2-pesos-oro-1944/ 301
 /en/coleccion/colombia/2-pesos-oro-1955 /en/collection/colombia/2-pesos-oro-1944/ 301
-/en/coleccion/colombia/1-peso-oro-1974 /en/collection/colombia/1-peso-oro-1973/ 301
+/en/coleccion/colombia/1-peso-oro-1974 /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/coleccion/colombia/1-peso-oro-1973 /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/coleccion/colombia/1-peso-oro-1973/ /en/collection/colombia/1-peso-oro-1959-1977/ 301
 /en/coleccion/colombia/2-pesos-oro-1977/ /en/collection/colombia/2-pesos-oro-1977/ 301
 /en/coleccion/colombia/20-pesos-oro-1983/ /en/collection/colombia/20-pesos-oro-1983/ 301
 /en/coleccion/colombia/2000-pesos-2008/ /en/collection/colombia/2000-pesos-2008/ 301
@@ -330,8 +334,10 @@
 /en/collection/colombia/10-pesos-oro-1943-anverso /en/collection/colombia/10-pesos-oro-1943/ 301
 /en/collection/colombia/10-pesos-oro-1943-reverso /en/collection/colombia/10-pesos-oro-1943/ 301
 /en/collection/colombia/2-pesos-oro-1955 /en/collection/colombia/2-pesos-oro-1944/ 301
-/en/collection/colombia/1-peso-oro-1974 /en/collection/colombia/1-peso-oro-1973/ 301
-/en/collection/colombia/1-peso-oro-1974/ /en/collection/colombia/1-peso-oro-1973/ 301
+/en/collection/colombia/1-peso-oro-1974 /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/collection/colombia/1-peso-oro-1973 /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/collection/colombia/1-peso-oro-1973/ /en/collection/colombia/1-peso-oro-1959-1977/ 301
+/en/collection/colombia/1-peso-oro-1974/ /en/collection/colombia/1-peso-oro-1959-1977/ 301
 /en/collection/colombia/2000-pesos-1996-butterfly-error/ /en/collection/colombia/ 301
 /en/collection/colombia/2000-pesos-butterfly-error/ /en/collection/colombia/ 301
 /en/collection/colombia/banco-colombiano-guatemala-1-peso-1900/ /en/collection/colombia/ 301

@@ -11,7 +11,7 @@ export type ColombiaNoteId =
   | 'medio-peso-oro-1953'
   | '1-peso-oro-1954'
   | '1-peso-oro-1959'
-  | '1-peso-oro-1973'
+  | '1-peso-oro-1959-1977'
   | '2-pesos-oro-1944'
   | '2-pesos-oro-1977'
   | '10-pesos-oro-1943'
@@ -898,9 +898,9 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
-    id: '1-peso-oro-1973',
+    id: '1-peso-oro-1959-1977',
     chapterId: 'banco-de-la-republica',
-    path: `${COLOMBIA_PATH}1-peso-oro-1973/`,
+    path: `${COLOMBIA_PATH}1-peso-oro-1959-1977/`,
     pick: 'P# 404e',
     serial: '26530968',
     signatures: {
@@ -917,16 +917,16 @@ export const colombiaNotes: ColombiaNote[] = [
       back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
     },
     title: {
-      es: '1 peso oro · Banco de la República · 1973 y 1974',
-      en: '1 peso oro · Banco de la República · 1973 and 1974',
+      es: '1 peso · Banco de la República · 1959–1977',
+      en: '1 peso · Banco de la República · 1959–1977',
     },
     kicker: {
       es: 'Colombia · Banco de la República · Imprenta de Billetes',
       en: 'Colombia · Banco de la República · Imprenta de Billetes',
     },
     lead: {
-      es: 'Dos ejemplares del Pick 404e (Bolívar–Santander / cóndor): 7 de agosto de 1973 (serial 26530968, Cód. 76) y 7 de agosto de 1974 (serial 47550075, Cód. 79). Cada uno tiene en esta página sus datos de catálogo, la pieza, rareza e impresión, y población.',
-      en: 'Two notes of Pick 404e (Bolívar–Santander / condor): 7 August 1973 (serial 26530968, Cód. 76) and 7 August 1974 (serial 47550075, Cód. 79). Each has its own catalog facts, note, scarcity and printage, and population on this page.',
+      es: 'Dos ejemplares del 1 peso Imprenta de Billetes, Pick 404e (Bolívar–Santander / cóndor), tipo 1959–1977: 7 de agosto de 1973 (serial 26530968, Cód. 76) y 7 de agosto de 1974 (serial 47550075, Cód. 79). Cada uno tiene en esta página sus datos de catálogo, la pieza, rareza e impresión, y población.',
+      en: 'Two Imprenta de Billetes one-peso notes, Pick 404e (Bolívar–Santander / condor), 1959–1977 type: 7 August 1973 (serial 26530968, Cód. 76) and 7 August 1974 (serial 47550075, Cód. 79). Each has its own catalog facts, note, scarcity and printage, and population on this page.',
     },
     description: {
       es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA COLOMBIA». Los seriales van en rojo: 26530968, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «7 DE AGOSTO DE 1973»; Numista marca el Cód. 76 con el año punteado «1.973». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; Numista asigna el mismo par (GBR₂, AJG) al Cód. 76; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 78. Tampoco es el Cód. 77 («7 Corto en el mes»). El reverso, en azul y naranja, muestra el cóndor andino sobre una roca, el salto y el nevado, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 76 para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. No es el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
