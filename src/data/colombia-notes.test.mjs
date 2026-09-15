@@ -991,6 +991,82 @@ describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
   });
 });
 
+describe('Colombia BanRep 200 pesos oro 1989 IBB specimen', () => {
+  it('is a distinct BanRep specimen with control 499, not the 1960, 1980, or 1983 zero-serial notes', () => {
+    const note = noteById('200-pesos-oro-1989');
+    const five = noteById('5-pesos-oro-1960');
+    const hundred = noteById('100-pesos-oro-1980');
+    const twoThousand = noteById('2000-pesos-oro-1983');
+    assert.ok(note);
+    assert.ok(five);
+    assert.ok(hundred);
+    assert.ok(twoThousand);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 429ds');
+    assert.equal(note.serial, '00000000 · 499');
+    assert.notEqual(note.serial, five.serial);
+    assert.notEqual(note.serial, hundred.serial);
+    assert.notEqual(note.serial, twoThousand.serial);
+    assert.notEqual(note.path, five.path);
+    assert.notEqual(note.path, hundred.path);
+    assert.notEqual(note.path, twoThousand.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.kicker.es, /Espécimen/);
+    assert.match(note.kicker.en, /specimen/i);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /no da una tirada de especímenes/);
+    assert.match(note.printed.es, /122 millones/);
+    assert.match(note.description.es, /MUESTRA SIN VALOR/);
+    assert.match(note.description.en, /MUESTRA SIN VALOR/);
+    assert.match(note.description.es, /499/);
+    assert.match(note.description.es, /429d/);
+    assert.match(note.description.es, /Mutis/);
+    assert.match(note.description.en, /Mutis/);
+    assert.match(note.description.es, /LA BORDADITA/);
+    assert.match(note.description.es, /IMPRENTA DE BILLETES/);
+    assert.match(note.description.es, /Pick 405s/);
+    assert.match(note.description.es, /418s Nº 027/);
+    assert.match(note.description.es, /430as Nº 030/);
+    assert.match(note.scarcity.es, /no inventa una tirada de especímenes/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1989-200-pesos-oro-specimen-499'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1989-200-pesos-oro-p429ds'), true);
+  });
+
+  it('lists the 1989 200 pesos oro specimen on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
+    assert.match(chapter.body.en, /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
+    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
+    assert.match(seriesCopy.en.intro.join(' '), /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const specimen = cards.filter((card) => card.note.id === '200-pesos-oro-1989');
+    assert.equal(specimen.length, 1);
+    assert.equal(specimen[0].piece.serial, '00000000 · 499');
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'es'),
+      '/coleccion/colombia/200-pesos-oro-1989/',
+    );
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'en'),
+      '/en/collection/colombia/200-pesos-oro-1989/',
+    );
+  });
+});
+
 describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
   it('is a distinct Pick 409d circulation note, not an asterisk replacement', () => {
     const note = noteById('20-pesos-oro-1983');

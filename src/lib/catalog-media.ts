@@ -55,9 +55,19 @@ function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+function glossaryOffsetIsUnsafe(html: string, offset: number): boolean {
+  const before = html.slice(0, offset);
+  if (before.lastIndexOf('<') > before.lastIndexOf('>')) return true;
+  const opens = before.match(/<a\b/gi)?.length ?? 0;
+  const closes = before.match(/<\/a>/gi)?.length ?? 0;
+  return opens > closes;
+}
+
 /**
  * Wrap the first occurrence of each glossary title in a catalogue essay.
  * Keepers get standalone URLs; folded terms use the index href helper.
+ * Skip matches inside tags or existing links so a later needle cannot rewrite
+ * `gold-peso` (or `peso-oro`) after `peso oro` has already been wrapped.
  */
 export function linkFirstGlossaryTerms(text: string, locale: Locale): string {
   let html = escapeHtml(text);
@@ -65,10 +75,17 @@ export function linkFirstGlossaryTerms(text: string, locale: Locale): string {
   for (const item of glossaryNeedles(locale)) {
     const key = item.needle.toLowerCase();
     if (used.has(key)) continue;
-    const pattern = new RegExp(`(?<![\\w#/])(${escapeRegExp(item.needle)})(?![\\w])`, 'i');
-    if (!pattern.test(html)) continue;
-    used.add(key);
-    html = html.replace(pattern, `<a class="text-gold-light underline decoration-line-strong hover:text-cream" href="${item.href}">$1</a>`);
+    const pattern = new RegExp(`(?<![\\w#/])(${escapeRegExp(item.needle)})(?![\\w])`, 'gi');
+    let match: RegExpExecArray | null;
+    let wrapped = false;
+    while ((match = pattern.exec(html))) {
+      if (glossaryOffsetIsUnsafe(html, match.index)) continue;
+      used.add(key);
+      html = `${html.slice(0, match.index)}<a class="text-gold-light underline decoration-line-strong hover:text-cream" href="${item.href}">${match[1]}</a>${html.slice(match.index + match[0].length)}`;
+      wrapped = true;
+      break;
+    }
+    if (!wrapped) continue;
   }
   return html;
 }

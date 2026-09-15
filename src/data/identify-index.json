@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T01:03:55.587Z",
+  "generatedAt": "2026-09-15T03:32:48.368Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -937,6 +937,45 @@
       "title": {
         "es": "100 pesos oro · espécimen · 1980",
         "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "front",
+      "hash": "3d365d334b134727",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-composite.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "front",
+      "hash": "1b4f190d3d5d6d15",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-front.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "back",
+      "hash": "5f7143455b517773",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-back.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
       }
     },
     {
