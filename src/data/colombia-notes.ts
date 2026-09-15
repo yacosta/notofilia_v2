@@ -24,6 +24,7 @@ export type ColombiaNoteId =
   | '50-pesos-oro-1974'
   | '50-pesos-oro-1984'
   | '100-pesos-oro-1980'
+  | '200-pesos-oro-1989'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '5000-pesos-oro-1993'
@@ -2598,6 +2599,109 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 307 para el ejemplar de circulación del 1.º de enero de 1980 sin prefijo; ese H# no se sustituye por el Cód. de 2023 ni se aplica como número de este espécimen.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 307 for the circulating 1 January 1980 note without a prefix; that H# is not replaced by a 2023 Cód. and is not applied as this specimen’s number.',
+        },
+      },
+    ],
+  },
+  {
+    id: '200-pesos-oro-1989',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}200-pesos-oro-1989/`,
+    pick: 'P# 429ds',
+    serial: '00000000 · 499',
+    signatures: {
+      es: 'Francisco José Ortega (gerente) y Roberto Salazar Manrique (abogado-subgerente)',
+      en: 'Francisco José Ortega (gerente) and Roberto Salazar Manrique (abogado-subgerente)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Espécimen de la fecha 1.º de abril de 1989; formato publicado 140 × 70 mm. El Bank Note Museum numera esa fecha, con títulos Gerente y Abogado Subgerente, como Pick 429d, y la agrupa con 01.04.1987, 01.04.1988 y 01.11.1988. Distinto del 428 de Thomas De La Rue y del 429A de Santa Fe de Bogotá. Numista cita para la circulación de esta fecha P# 429d / TBB B967i / Hernández 365. González White 2019 (pp. 94–95, pliego DOSCIENTOS PESOS 1987 a 1992) lista el 1.º de abril de 1989, Mutis, IBB, y una reposición estrella; el pliego no da una tirada de especímenes. El OCR mezcla BG# y fechas: no se publica aquí un BG# adivinado. La tabla BanRep de 1989 registra 122 millones de piezas de 200 pesos: es el total de denominación-año, no la tirada de este espécimen. Esta ficha no inventa una tirada.',
+      en: 'Imprenta de Billetes, Bogotá. Specimen of the 1 April 1989 date; published size 140 × 70 mm. The Bank Note Museum numbers that date, with titles Gerente and Abogado Subgerente, as Pick 429d, and groups it with 01.04.1987, 01.04.1988, and 01.11.1988. Distinct from Thomas De La Rue’s 428 and from 429A of Santa Fe de Bogotá. Numista cites P# 429d / TBB B967i / Hernández 365 for the circulating note of this date. González White 2019 (pp. 94–95, DOSCIENTOS PESOS 1987 to 1992 spread) lists 1 April 1989, Mutis, IBB, and a star replacement; the spread does not give a specimen printage. The OCR jumbles BG# against dates: no guessed BG# is published here. BanRep’s 1989 table records 122 million 200-peso notes: that is the denomination-year total, not this specimen’s printage. This record does not invent a printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-composite.jpg',
+      front: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-front.jpg',
+      back: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-back.jpg',
+    },
+    title: {
+      es: '200 pesos oro · espécimen · 1989',
+      en: '200 pesos oro · specimen · 1989',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Espécimen IBB',
+      en: 'Colombia · Banco de la República · IBB specimen',
+    },
+    lead: {
+      es: 'Doscientos pesos oro, espécimen Pick 429ds de la fecha 1.º de abril de 1989: seriales de ceros, sobrecarga MUESTRA SIN VALOR y control 499. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A two-hundred-peso oro specimen, Pick 429ds of the 1 April 1989 date: zero serials, a MUESTRA SIN VALOR overprint, and control 499. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este doscientos pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. González White 2019 dedica el tipo a José Celestino Mutis y Bosio, sacerdote y naturalista, director de la Expedición Botánica que el virrey Antonio Caballero y Góngora creó en Mariquita en marzo de 1783. El Bank Note Museum numera el papel de esa planta como Pick 429 (1983–1991) y lo distingue del Pick 428 de Thomas De La Rue y del Pick 429A de Santa Fe de Bogotá. La fecha de esta pieza, 1.º de abril de 1989, cae en el grupo 429d: títulos Gerente y Abogado Subgerente. Numista agrupa el diseño bajo N# 205269 y cita para la circulación de esa fecha P# 429d / TBB B967i / Hernández 365, firmas FJO₂ y RSM. Esta pieza es un espécimen de esa fecha: seriales negros 00000000, dos veces; sobrecarga diagonal roja «MUESTRA SIN VALOR» en anverso y reverso; dos perforaciones de cancelación; y el control rojo 499 en el margen inferior izquierdo. No lleva óvalos De La Rue ni «SPECIMEN Nº». La fecha impresa es «BOGOTÁ: 1º DE ABRIL DE 1989». El anverso, en verde sobre policromía, lleva a la izquierda un edificio de torre en medallón y el retrato rotulado «MUTIS»; al centro, la promesa de pagar al portador doscientos pesos oro; a la derecha, el dispositivo de registro con el lema «CON HUMBOLDT». Las firmas son las de Francisco José Ortega (gerente) y Roberto Salazar Manrique (abogado-subgerente), el par que Numista asigna a esta fecha. El reverso muestra el claustro del Colegio Mayor de Nuestra Señora del Rosario —«LA BORDADITA», Bogotá—, el sello del banco con la Libertad y el pie «IMPRENTA DE BILLETES — BOGOTÁ». González White 2019 (pp. 94–95) lista el 1.º de abril de 1989, Mutis, IBB, y una reposición estrella de esa fecha; el OCR mezcla BG# y fechas: no se publica aquí un BG# adivinado. Distinto del 428 de De La Rue, del 429A de Santa Fe, de las fechas 429a–c, de la circulación 429d de 1989 y de los especímenes de ceros de esta colección (Pick 405s, 418s Nº 027 y 430as Nº 030). Esta pieza se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this two-hundred-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. González White 2019 dedicates the type to José Celestino Mutis y Bosio, priest and naturalist, director of the Botanical Expedition that Viceroy Antonio Caballero y Góngora created at Mariquita in March 1783. The Bank Note Museum numbers that plant’s paper as Pick 429 (1983–1991) and distinguishes it from Thomas De La Rue’s Pick 428 and from Pick 429A of Santa Fe de Bogotá. This piece’s date, 1 April 1989, falls in group 429d: titles Gerente and Abogado Subgerente. Numista groups the design under N# 205269 and cites P# 429d / TBB B967i / Hernández 365 for the circulating note of that date, signatures FJO₂ and RSM. This piece is a specimen of that date: black serials 00000000, twice; a diagonal red “MUESTRA SIN VALOR” overprint on face and back; two cancellation punches; and red control 499 at the lower-left margin. It has no De La Rue ovals and no “SPECIMEN Nº.” The printed date is “BOGOTÁ: 1º DE ABRIL DE 1989.” The face, green on a multicolour underprint, carries a towered building in a medallion at left and the portrait labelled “MUTIS”; at center, the promise to pay the bearer two hundred gold pesos; at right, the registration device with the motto “CON HUMBOLDT.” The signatures are those of Francisco José Ortega (gerente) and Roberto Salazar Manrique (abogado-subgerente), the pair Numista assigns to this date. The back shows the cloister of the Colegio Mayor de Nuestra Señora del Rosario — “LA BORDADITA,” Bogotá — the bank’s Liberty seal, and the imprint “IMPRENTA DE BILLETES — BOGOTÁ.” González White 2019 (pp. 94–95) lists 1 April 1989, Mutis, IBB, and a star replacement of that date; the OCR jumbles BG# against dates: no guessed BG# is published here. Distinct from De La Rue’s 428, from 429A of Santa Fe, from dates 429a–c, from circulating 429d of 1989, and from this collection’s other zero-serial specimens (Pick 405s, 418s Nº 027, and 430as Nº 030). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 200 pesos oro, Pick 429ds: Mutis, serial 00000000, control 499, sobrecarga MUESTRA SIN VALOR y fecha 1.º de abril de 1989.',
+      en: 'Face of the 200 pesos oro, Pick 429ds: Mutis, serial 00000000, control 499, the MUESTRA SIN VALOR overprint, and the date 1 April 1989.',
+    },
+    backCaption: {
+      es: 'Reverso del 200 pesos oro, Pick 429ds: claustro del Rosario —La Bordadita—, sobrecarga MUESTRA SIN VALOR y pie IMPRENTA DE BILLETES — BOGOTÁ.',
+      en: 'Back of the 200 pesos oro, Pick 429ds: the Rosario cloister —La Bordadita—, the MUESTRA SIN VALOR overprint, and the imprint IMPRENTA DE BILLETES — BOGOTÁ.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 94–95) lista el 1.º de abril de 1989 de circulación, IBB, y una reposición estrella; no da tirada de especímenes. Numista agrupa el diseño bajo N# 205269 y marca la frecuencia de la circulación de esa fecha en un 11 % entre quienes poseen el tipo; lista un espécimen con sobrecarga «MUESTRA SIN VALOR» en la fecha de 1987 al 0 %. El Bank Note Museum describe 429d como 01.04.1987, 01.04.1988, 01.11.1988 y 01.04.1989, con títulos Gerente y Abogado Subgerente. La tabla BanRep de 1989 atribuye 122 millones de piezas a todos los 200 pesos de ese año. Esta ficha no inventa una tirada de especímenes ni sustituye la emisión de circulación por ese total de denominación-año.',
+      en: 'González White 2019 (pp. 94–95) lists the circulating 1 April 1989 date, IBB, and a star replacement; it does not give a specimen printage. Numista groups the design under N# 205269 and marks the circulating date’s frequency at 11% among owners of the type; it lists a specimen with a “MUESTRA SIN VALOR” overprint on the 1987 date at 0%. The Bank Note Museum describes 429d as 01.04.1987, 01.04.1988, 01.11.1988, and 01.04.1989, with titles Gerente and Abogado Subgerente. BanRep’s 1989 table assigns 122 million pieces to every 200-peso note of that year. This record does not invent a specimen printage or replace the circulating emisión with that denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el control 499 de este Pick 429ds. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for control 499 of this Pick 429ds has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0429.htm',
+        es: 'Bank Note Museum — Colombia P-429, 200 pesos oro (1983–1991)',
+        en: 'Bank Note Museum — Colombia P-429, 200 pesos oro (1983–1991)',
+        note: {
+          es: '429d: 01.04.1987, 01.04.1988, 01.11.1988 y 01.04.1989; títulos Gerente y Abogado Subgerente; anverso Mutis, reverso claustro del Colegio Mayor de Nuestra Señora del Rosario (La Bordadita, Bogotá); Imprenta de Billetes, Bogotá. Distinto del 428 (TDLR) y del 429A (Santa Fe de Bogotá).',
+          en: '429d: 01.04.1987, 01.04.1988, 01.11.1988, and 01.04.1989; titles Gerente and Abogado Subgerente; Mutis on the face, cloister of the Colegio Mayor de Nuestra Señora del Rosario (La Bordadita, Bogotá) on the back; Imprenta de Billetes, Bogotá. Distinct from 428 (TDLR) and 429A (Santa Fe de Bogotá).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note205269.html',
+        es: 'Numista — Colombia 200 pesos oro, N# 205269',
+        en: 'Numista — Colombia 200 pesos oro, N# 205269',
+        note: {
+          es: '01.04.1989 de circulación: P# 429d / TBB B967i; Hernández 365; firmas FJO₂ y RSM; 140 × 70 mm; números estilizados; frecuencia 11 % en el tipo. Lista un espécimen con sobrecarga «MUESTRA SIN VALOR» en la fecha de 1987; no se cita aquí una fila de 1989 ni una frecuencia de este control 499.',
+          en: 'Circulating 01.04.1989: P# 429d / TBB B967i; Hernández 365; signatures FJO₂ and RSM; 140 × 70 mm; stylized numerals; 11% frequency within the type. Lists a specimen with a “MUESTRA SIN VALOR” overprint on the 1987 date; no 1989 specimen row or frequency for this control 499 is cited here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1989: 72,5 millones de 100 pesos, 122 millones de 200, 25 millones de 500 y 130,5 millones de 2.000. El total de 200 pesos es de denominación-año; no es la tirada de este espécimen ni de la fecha de circulación del 1.º de abril.',
+          en: '1989 production: 72.5 million 100-peso notes, 122 million 200-peso, 25 million 500-peso, and 130.5 million 2,000-peso. The 200-peso total is denomination-year; it is not the printage of this specimen or of the circulating 1 April date.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá. Este 200 pesos de 1989 lleva el pie IMPRENTA DE BILLETES — BOGOTÁ, no el de Santa Fe de Bogotá.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá. This 1989 200-peso carries the imprint IMPRENTA DE BILLETES — BOGOTÁ, not Santa Fe de Bogotá.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 365 para el ejemplar de circulación del 1.º de abril de 1989; ese H# no se sustituye por el Cód. de 2023 ni se aplica como número de este espécimen.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 365 for the circulating 1 April 1989 note; that H# is not replaced by a 2023 Cód. and is not applied as this specimen’s number.',
         },
       },
     ],

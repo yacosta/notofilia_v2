@@ -1996,6 +1996,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/200-pesos-oro-1989/": {
+      "target": "/en/collection/colombia/200-pesos-oro-1989/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/200-pesos-oro-1989": {
+      "target": "/en/collection/colombia/200-pesos-oro-1989/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/1000-pesos-error-2000/": {
       "target": "/en/collection/colombia/1000-pesos-error-2000/",
       "status": 301,
