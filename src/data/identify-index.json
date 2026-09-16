@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T03:32:48.368Z",
+  "generatedAt": "2026-09-16T23:41:54.510Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1759,6 +1759,45 @@
       }
     },
     {
+      "pieceId": "1-sucre-1901",
+      "face": "front",
+      "hash": "594f454a6417554d",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-composite.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
+      "pieceId": "1-sucre-1901",
+      "face": "front",
+      "hash": "495463464555355d",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-front.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
+      "pieceId": "1-sucre-1901",
+      "face": "back",
+      "hash": "3c49374d2b1b394c",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-back.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
       "pieceId": "5-libras-churchill",
       "face": "front",
       "hash": "a84a2b8d098baa0d",
@@ -2463,7 +2502,7 @@
     {
       "pieceId": "2-dolares-serie-2003-san-luis",
       "face": "front",
-      "hash": "08450cceaeecca08",
+      "hash": "10721451b1331160",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
       "pick": "P#516 · Fr. 1937-H*",
@@ -2476,7 +2515,7 @@
     {
       "pieceId": "2-dolares-serie-2003-san-luis",
       "face": "front",
-      "hash": "00c48aa4c8ccac00",
+      "hash": "04da924b2b6d0fa4",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
       "pick": "P#516 · Fr. 1937-H*",
@@ -2489,7 +2528,7 @@
     {
       "pieceId": "2-dolares-serie-2003-san-luis",
       "face": "back",
-      "hash": "00a6a0f4e844c400",
+      "hash": "4064935569550552",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
       "pick": "P#516 · Fr. 1937-H*",

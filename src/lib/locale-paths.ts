@@ -261,6 +261,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     en: '/collection/puerto-rico/1-peso-exchange-note-1895/',
   },
+  {
+    es: '/coleccion/ecuador/1-sucre-1901/',
+    en: '/collection/ecuador/1-sucre-1901/',
+  },
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
   { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
@@ -541,6 +545,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/50000-pesos-error-2015/',
     '/en/coleccion/colombia/tiquete-estudiantil-15-centavos/',
     '/en/coleccion/colombia/',
+    '/en/coleccion/ecuador/1-sucre-1901/',
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',

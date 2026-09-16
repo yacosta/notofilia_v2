@@ -1,6 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
-import { ECUADOR_PATH } from '../data/ecuador';
+import { dedicatedCatalogPaths as ecuadorPaths, ecuadorNoteSlugs, ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
@@ -100,6 +100,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of canadaNoteSlugs) slugs.add(slug);
   for (const slug of malaysiaNoteSlugs) slugs.add(slug);
   for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
+  for (const slug of ecuadorNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
@@ -207,8 +208,8 @@ export const collections = [
   },
   {
     href: ECUADOR_PATH,
-    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.' },
-    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
+    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Esta vitrina documenta el 1 sucre del Banco del Ecuador de 1901.' },
+    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. This case documents a 1901 Banco del Ecuador 1-sucre.' },
   },
   {
     href: GUATEMALA_PATH,
@@ -368,7 +369,7 @@ const dedicatedEs = [
   ...englandNoteSlugs,
   ...canadaNoteSlugs,
   ...malaysiaNoteSlugs,
-  ECUADOR_PATH.replace(/^\/|\/$/g, ''),
+  ...ecuadorPaths,
   GUATEMALA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
