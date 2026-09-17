@@ -159,6 +159,7 @@ export const additions: Holding[] = [
   { id: 'us-pa-166-5s-1773-9733', kind: 'banknote', country: 'US' },
   { id: 'us-pa-165-2s6d-1773-21251', kind: 'banknote', country: 'US' },
   { id: 'co-1989-200-pesos-oro-specimen-499', kind: 'banknote', country: 'CO' },
+  { id: 'ec-1901-1-sucre-k117574', kind: 'banknote', country: 'EC' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -246,6 +247,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-pa-166-1773-5s' },
   { id: 'us-pa-165-1773-2s6d' },
   { id: 'co-1989-200-pesos-oro-p429ds' },
+  { id: 'ec-1901-1-sucre-s151c' },
 ];
 
 export type CollectionStats = {

@@ -11,6 +11,7 @@ import { netherlandsCoins } from '../data/netherlands-coinage.ts';
 import { victoryNotes } from '../data/philippines-victory-66.ts';
 import { pnbNotes } from '../data/philippines-pnb-1916.ts';
 import { puertoRicoNotes } from '../data/puerto-rico.ts';
+import { ecuadorNotes } from '../data/ecuador.ts';
 
 export type IdentifyKind = 'banknote' | 'coin';
 export type IdentifyFace = 'front' | 'back';
@@ -132,6 +133,19 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
   for (const note of puertoRicoNotes) {
     pushSeed(seeds, {
       id: `pr-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      title: note.title,
+      imageFront: note.images.front,
+      imageBack: note.images.back,
+      imageComposite: note.images.composite,
+    });
+  }
+
+  for (const note of ecuadorNotes) {
+    pushSeed(seeds, {
+      id: `ec-${note.id}`,
       kind: 'banknote',
       path: note.path,
       pick: note.pick,

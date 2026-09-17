@@ -58,8 +58,8 @@ export const notafiliaCountries: NotafiliaCountry[] = [
     years: { es: '1884–2000', en: '1884–2000' },
     title: { es: 'Ecuador', en: 'Ecuador' },
     lead: {
-      es: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.',
-      en: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.',
+      es: 'Del sucre de 1884 a la dolarización. Esta vitrina documenta el 1 sucre del Banco del Ecuador de 1901.',
+      en: 'From the 1884 sucre to dollarization. This case documents a 1901 Banco del Ecuador 1-sucre.',
     },
   },
   {

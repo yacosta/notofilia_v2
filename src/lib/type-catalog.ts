@@ -24,7 +24,7 @@ export type TypeCatalogEra =
 
 export type TypeCatalogFlag = 'holding' | 'pending' | 'specimen' | 'remainder' | 'proof' | 'error';
 
-export type TypeCatalogCountry = 'CO' | 'US' | 'PH' | 'CN' | 'MY' | 'GB' | 'CA' | 'PR';
+export type TypeCatalogCountry = 'CO' | 'US' | 'PH' | 'CN' | 'MY' | 'GB' | 'CA' | 'PR' | 'EC';
 
 export type TypeCatalogFilter = 'all' | TypeCatalogFlag | TypeCatalogEra | Lowercase<TypeCatalogCountry>;
 
@@ -251,7 +251,7 @@ export function parseHeritageLots(text: string): HeritageTypeSeed[] {
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 }
 
-const COUNTRY_FILTERS = new Set<TypeCatalogFilter>(['co', 'us', 'ph', 'cn', 'gb', 'my', 'ca', 'pr']);
+const COUNTRY_FILTERS = new Set<TypeCatalogFilter>(['co', 'us', 'ph', 'cn', 'gb', 'my', 'ca', 'pr', 'ec']);
 
 export function matchesTypeFilter(doc: TypeCatalogDocument, filter: TypeCatalogFilter): boolean {
   if (filter === 'all') return true;

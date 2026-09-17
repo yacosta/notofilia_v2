@@ -10,6 +10,7 @@ import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
 import { pnbNotes, pnbNotePath } from './philippines-pnb-1916';
 import { puertoRicoNotes, notePath as puertoRicoNotePath } from './puerto-rico';
+import { ecuadorNotes, notePath as ecuadorNotePath } from './ecuador';
 import { localizePath, type Locale } from '../lib/locale-paths';
 import {
   type TypeCatalogCountry,
@@ -30,6 +31,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   GB: { es: 'Inglaterra', en: 'England' },
   CA: { es: 'Canadá', en: 'Canada' },
   PR: { es: 'Puerto Rico', en: 'Puerto Rico' },
+  EC: { es: 'Ecuador', en: 'Ecuador' },
 };
 
 type CollectionSeed = {
@@ -259,6 +261,24 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of ecuadorNotes) {
+    seeds.push({
+      id: `ec-${note.id}`,
+      country: 'EC',
+      href: ecuadorNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '1901',
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   return seeds;
 }
 
@@ -314,6 +334,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'gb',
   'ca',
   'pr',
+  'ec',
   'pending',
   'specimen',
   'remainder',
@@ -368,6 +389,7 @@ export const collectionNoteCatalogCopy = {
       gb: 'Inglaterra',
       ca: 'Canadá',
       pr: 'Puerto Rico',
+      ec: 'Ecuador',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -421,6 +443,7 @@ export const collectionNoteCatalogCopy = {
       gb: 'England',
       ca: 'Canada',
       pr: 'Puerto Rico',
+      ec: 'Ecuador',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',
