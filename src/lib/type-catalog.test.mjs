@@ -248,8 +248,11 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(puertoRicoNotesSource, /serial: '32'/);
     assert.match(puertoRicoNotesSource, /serial: '13085'/);
     assert.match(puertoRicoNotesSource, /serial: '4548454'/);
-    assert.equal(ecuadorNotes, 1);
+    const ecuadorHoldings = 3;
+    assert.equal(ecuadorNotes, 2);
     assert.match(ecuadorNotesSource, /serial: 'K117574'/);
+    assert.match(ecuadorNotesSource, /serial: 'WF00000002'/);
+    assert.match(ecuadorNotesSource, /serial: 'WF00000003'/);
 
     if (!existsSync(allNotesCatalogHtml)) return;
 
@@ -278,7 +281,7 @@ describe('Collection-wide banknote catalog', () => {
       assert.equal(byCountry.PR, puertoRicoNotes);
     }
     if (byCountry.EC) {
-      assert.equal(byCountry.EC, ecuadorNotes);
+      assert.equal(byCountry.EC, ecuadorHoldings);
     }
     assert.equal(
       documents.length,

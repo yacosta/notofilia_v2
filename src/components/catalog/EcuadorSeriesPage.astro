@@ -11,6 +11,7 @@ import {
   ecuadorChapters,
   ecuadorNotes,
   notePath,
+  noteSerialLine,
   seriesCopy,
   seriesPath,
   seriesSources,
@@ -100,7 +101,7 @@ const jsonLd = collectionPageJsonLd({
                     {note.title[locale]}
                   </h3>
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial_display}
+                    {t.pickLabel} {note.pick} · {t.serialLabel} {noteSerialLine(note)}
                   </p>
                   <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                 </a>

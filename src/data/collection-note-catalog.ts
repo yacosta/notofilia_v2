@@ -10,7 +10,7 @@ import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
 import { pnbNotes, pnbNotePath } from './philippines-pnb-1916';
 import { puertoRicoNotes, notePath as puertoRicoNotePath } from './puerto-rico';
-import { ecuadorNotes, notePath as ecuadorNotePath } from './ecuador';
+import { ecuadorNotes, notePath as ecuadorNotePath, notePieces as ecuadorNotePieces } from './ecuador';
 import { localizePath, type Locale } from '../lib/locale-paths';
 import {
   type TypeCatalogCountry,
@@ -262,21 +262,24 @@ function collectionSeeds(): CollectionSeed[] {
   }
 
   for (const note of ecuadorNotes) {
-    seeds.push({
-      id: `ec-${note.id}`,
-      country: 'EC',
-      href: ecuadorNotePath(note, 'es'),
-      title: note.title,
-      dek: note.lead,
-      pick: note.pick,
-      serial: note.serial,
-      issuer: note.kicker,
-      year: yearFromText(note.printed.es, note.title.es, note.kicker.es) || '1901',
-      era: 'other',
-      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
-      image: note.images.front,
-      imageAlt: note.frontCaption,
-    });
+    for (const piece of ecuadorNotePieces(note)) {
+      const hash = piece.id !== note.id ? `#${piece.id}` : '';
+      seeds.push({
+        id: `ec-${piece.id}`,
+        country: 'EC',
+        href: `${ecuadorNotePath(note, 'es')}${hash}`,
+        title: piece.title,
+        dek: piece.lead,
+        pick: piece.pick,
+        serial: piece.serial,
+        issuer: note.kicker,
+        year: yearFromText(piece.printed.es, piece.title.es, note.kicker.es) || '1901',
+        era: note.id === '100-sucres-1993' ? 'banco-central' : 'banca-libre',
+        flags: flagsFrom(piece.title.es, note.kicker.es, piece.pick, piece.lead.es),
+        image: piece.images.front,
+        imageAlt: piece.frontCaption,
+      });
+    }
   }
 
   return seeds;

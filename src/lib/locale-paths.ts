@@ -265,6 +265,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/ecuador/1-sucre-1901/',
     en: '/collection/ecuador/1-sucre-1901/',
   },
+  {
+    es: '/coleccion/ecuador/100-sucres-1993/',
+    en: '/collection/ecuador/100-sucres-1993/',
+  },
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
   { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
@@ -546,6 +550,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/tiquete-estudiantil-15-centavos/',
     '/en/coleccion/colombia/',
     '/en/coleccion/ecuador/1-sucre-1901/',
+    '/en/coleccion/ecuador/100-sucres-1993/',
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',

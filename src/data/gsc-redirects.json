@@ -437,12 +437,12 @@
       "rule": "legacy-dc"
     },
     "/billete-ecuador-100-sucres-1993.dc.html": {
-      "target": "/coleccion/ecuador/",
+      "target": "/coleccion/ecuador/100-sucres-1993/",
       "status": 301,
       "rule": "legacy-dc"
     },
     "/billete-ecuador-100-sucres-1993.dc.html/": {
-      "target": "/coleccion/ecuador/",
+      "target": "/coleccion/ecuador/100-sucres-1993/",
       "status": 301,
       "rule": "legacy-dc"
     },
@@ -1025,16 +1025,6 @@
       "target": "/coleccion/estados-unidos/",
       "status": 301,
       "rule": "category-hub"
-    },
-    "/coleccion/ecuador/100-sucres-1993": {
-      "target": "/coleccion/ecuador/",
-      "status": 301,
-      "rule": "existing"
-    },
-    "/coleccion/ecuador/100-sucres-1993/": {
-      "target": "/coleccion/ecuador/",
-      "status": 301,
-      "rule": "existing"
     },
     "/coleccion/emisiones-promocionales/": {
       "target": "/coleccion/estados-unidos/",
@@ -2307,12 +2297,12 @@
       "rule": "existing"
     },
     "/en/coleccion/ecuador/100-sucres-1993": {
-      "target": "/en/collection/ecuador/",
+      "target": "/en/collection/ecuador/100-sucres-1993/",
       "status": 301,
       "rule": "existing"
     },
     "/en/coleccion/ecuador/100-sucres-1993/": {
-      "target": "/en/collection/ecuador/",
+      "target": "/en/collection/ecuador/100-sucres-1993/",
       "status": 301,
       "rule": "existing"
     },
