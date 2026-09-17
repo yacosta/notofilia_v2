@@ -30,8 +30,6 @@ export default defineConfig({
     '/en/netherlands-numismatica/ducado-utrecht-1761': '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     '/en/paises-bajos-numismatica': '/en/collection/netherlands-numismatics/',
     '/en/paises-bajos-numismatica/ducado-utrecht-1761': '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
-    '/coleccion/ecuador/100-sucres-1993': '/coleccion/ecuador/',
-    '/en/coleccion/ecuador/100-sucres-1993': '/en/collection/ecuador/',
     '/nosotros': '/acerca-de/',
     '/en/nosotros': '/en/about/',
     '/sobre-mi': '/acerca-de/',

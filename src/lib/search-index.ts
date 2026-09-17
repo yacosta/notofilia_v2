@@ -25,7 +25,7 @@ import { unitedStatesCoins } from '../data/estados-unidos-coinage';
 import { victoryNotes } from '../data/philippines-victory-66';
 import { pnbNotes } from '../data/philippines-pnb-1916';
 import { puertoRicoNotes } from '../data/puerto-rico';
-import { ecuadorNotes } from '../data/ecuador';
+import { ecuadorNotes, notePieces as ecuadorNotePieces } from '../data/ecuador';
 import { collections } from './site';
 import { localizePath, type Locale } from './locale-paths';
 import { extractCert, inferPieceFlags, normalizeIdentity, stripHtml } from './search';
@@ -275,21 +275,24 @@ function pieceSeeds(): PieceSeed[] {
   }
 
   for (const note of ecuadorNotes) {
-    seeds.push({
-      id: `ec-${note.id}`,
-      kind: 'banknote',
-      path: note.path,
-      pick: note.pick,
-      serial: note.serial_display,
-      title: note.title,
-      dek: note.lead,
-      kicker: note.kicker,
-      signatures: note.signatures,
-      grade: note.grade,
-      description: note.description,
-      image: note.images.composite,
-      imageAlt: note.frontCaption,
-    });
+    for (const piece of ecuadorNotePieces(note)) {
+      const hash = piece.id !== note.id ? `#${piece.id}` : '';
+      seeds.push({
+        id: `ec-${piece.id}`,
+        kind: 'banknote',
+        path: `${note.path}${hash}`,
+        pick: piece.pick,
+        serial: piece.serial_display,
+        title: piece.title,
+        dek: piece.lead,
+        kicker: note.kicker,
+        signatures: piece.signatures,
+        grade: piece.grade,
+        description: piece.description,
+        image: piece.images.composite,
+        imageAlt: piece.frontCaption,
+      });
+    }
   }
 
   for (const note of unitedStatesNotes) {
