@@ -118,6 +118,11 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/estados-unidos-numismatica/', 'en'),
       '/en/collection/united-states-numismatics/',
     );
+    assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
+      '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
       '/en/collection/united-states-numismatics/hard-times-tokens/',
@@ -507,6 +512,11 @@ describe('locale path mapping', () => {
       '/blog/mejores-empresas-certificacion-monedas-billetes/',
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
+    assert.equal(englishContentSlug('coleccion/espana-numismatica'), 'collection/spain-numismatics');
+    assert.equal(
+      englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
+      'collection/spain-numismatics/half-escudo-madrid-1757-jb',
+    );
     assert.equal(
       englishContentSlug('coleccion/polimero-mundial/asia/malasia'),
       'collection/world-polymer/asia/malaysia',

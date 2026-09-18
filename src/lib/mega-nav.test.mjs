@@ -238,8 +238,21 @@ describe('Colombia visual catalogs', () => {
     assert.doesNotMatch(numismatica, /id: 'colombia-monedas-catalogo'/);
     assert.doesNotMatch(numismatica, /Catálogo visual de monedas/);
     assert.doesNotMatch(numismatica, /Visual coin catalog/);
-    const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
+    const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'es-monedas'")[0] ?? '';
     assert.doesNotMatch(colombiaBlock, /children:/);
+  });
+});
+
+describe('Spain numismatics menu', () => {
+  it('nests the 1757 Madrid half escudo under España', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    const spainBlock = numismatica.split("id: 'es-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
+    assert.match(source, /spainCoinById\('medio-escudo-madrid-1757-jb'\)/);
+    assert.match(spainBlock, /href: SPAIN_COINAGE_PATH/);
+    assert.match(spainBlock, /flag: 'es'/);
+    assert.match(spainBlock, /id: 'es-medio-escudo-madrid-1757-jb'/);
+    assert.match(spainBlock, /href: spainHalfEscudo\.path/);
   });
 });
 
@@ -249,7 +262,10 @@ describe('United States numismatics menu', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     assert.match(numismatica, /id: 'us-monedas'/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
-    assert.match(numismatica, /id: 'colombia-monedas'[\s\S]*id: 'us-monedas'[\s\S]*id: 'nl-monedas'/);
+    assert.match(
+      numismatica,
+      /id: 'colombia-monedas'[\s\S]*id: 'es-monedas'[\s\S]*id: 'us-monedas'[\s\S]*id: 'nl-monedas'/,
+    );
   });
 
   it('nests the Trump Semiquincentennial dollar under Estados Unidos', () => {

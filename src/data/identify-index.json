@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T14:57:33.470Z",
+  "generatedAt": "2026-09-18T16:27:35.388Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1951,6 +1951,45 @@
       "title": {
         "es": "100 sucres · serie WF · 00000002",
         "en": "100 sucres · series WF · 00000002"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "front",
+      "hash": "2315135016563323",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-composite.jpg",
+      "title": {
+        "es": "Fernando VI",
+        "en": "Ferdinand VI"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "front",
+      "hash": "0c2b372333332f0c",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-front.jpg",
+      "title": {
+        "es": "Fernando VI",
+        "en": "Ferdinand VI"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "back",
+      "hash": "040b25171b4d2704",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-back.jpg",
+      "title": {
+        "es": "Fernando VI",
+        "en": "Ferdinand VI"
       }
     },
     {

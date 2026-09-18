@@ -205,6 +205,17 @@ describe('sitemap coverage for United States numismatics', () => {
   });
 });
 
+describe('sitemap coverage for Spain numismatics', () => {
+  it('maps the coinage series and half-escudo pair used in dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
+      '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for reference tools', () => {
   it('maps the tools hub and fancy serial checker pairs', () => {
     assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');

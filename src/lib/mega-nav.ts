@@ -18,6 +18,7 @@ import {
   notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
+import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
 import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -71,6 +72,11 @@ if (!usTrumpDollar) {
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
 if (!usHt34) {
   throw new Error('Missing US Hard Times HT-34 token for mega-nav');
+}
+
+const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
+if (!spainHalfEscudo) {
+  throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
 }
 
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
@@ -277,6 +283,21 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
+      },
+      {
+        id: 'es-monedas',
+        es: 'España',
+        en: 'Spain',
+        href: SPAIN_COINAGE_PATH,
+        flag: 'es',
+        children: [
+          {
+            id: 'es-medio-escudo-madrid-1757-jb',
+            es: spainHalfEscudo.title.es,
+            en: spainHalfEscudo.title.en,
+            href: spainHalfEscudo.path,
+          },
+        ],
       },
       {
         id: 'us-monedas',

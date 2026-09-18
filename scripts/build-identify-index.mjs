@@ -105,6 +105,7 @@ const PATH_CONSTANTS = {
   USA_RENCY_PATH: '/coleccion/estados-unidos/rency/',
   USA_BARABOO_SCRIP_PATH: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
   USA_COINAGE_PATH: '/coleccion/estados-unidos-numismatica/',
+  SPAIN_COINAGE_PATH: '/coleccion/espana-numismatica/',
   NETHERLANDS_COINAGE_PATH: '/coleccion/paises-bajos-numismatica/',
   NETHERLANDS_PATH: '/coleccion/paises-bajos/',
   CHINA_PATH: '/coleccion/china/',
@@ -136,7 +137,7 @@ function nearestCollectionPath(source, aroundIndex) {
 }
 
 function isCoinPath(file, piecePath) {
-  return /coinage|numismatica|ducado|real-santa|real-bogota|dolar-trump/i.test(`${file} ${piecePath}`);
+  return /coinage|numismatica|ducado|real-santa|real-bogota|dolar-trump|medio-escudo/i.test(`${file} ${piecePath}`);
 }
 
 async function collectTargets() {

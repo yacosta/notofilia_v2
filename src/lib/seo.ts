@@ -5,6 +5,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { USA_PATH } from '../data/estados-unidos';
 import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
+import { SPAIN_COINAGE_PATH } from '../data/espana-coinage';
 import { GLOSSARY_PATH } from '../data/glossary';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { collectionStats } from '../data/holdings';
@@ -153,6 +154,7 @@ const extraHighValuePages = [
 export const llmsCountryCatalogues = [
   { href: COLOMBIA_PATH, es: 'Colombia (papel moneda)', en: 'Colombia (paper money)' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
+  { href: SPAIN_COINAGE_PATH, es: 'España (numismática)', en: 'Spain (numismatics)' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
   { href: USA_COINAGE_PATH, es: 'Estados Unidos (numismática)', en: 'United States (numismatics)' },
   { href: SERIES_PATH, es: 'Filipinas · Periodo estadounidense', en: 'Philippines · American period' },
