@@ -115,6 +115,7 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(esHt34Series, /UnitedStatesHardTimesSeriesPage locale="es"/);
     assert.match(enHt34Series, /UnitedStatesHardTimesSeriesPage locale="en"/);
     assert.match(data, /USA_HARD_TIMES_PATH = '\/coleccion\/estados-unidos-numismatica\/fichas-hard-times\/'/);
+    assert.match(hardTimesEssay, /hero-hard-times\.jpg/);
     assert.match(hardTimesEssay, /coinById\('ht-34-1837-burro-tortuga'\)/);
     assert.match(hardTimesEssay, /Specie Circular/);
     assert.match(hardTimesEssay, /NOT ONE CENT/);
