@@ -296,6 +296,11 @@ export const stubPages = [
   { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },
   { path: 'coleccion/estados-unidos/billetes-obsoletos', es: 'Billetes Obsoletos (1782–1866)', en: 'Obsolete notes (1782–1866)' },
   { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
+  {
+    path: 'coleccion/estados-unidos-numismatica/fichas-hard-times',
+    es: 'Fichas Hard Times',
+    en: 'Hard Times tokens',
+  },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {

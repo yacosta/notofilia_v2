@@ -183,9 +183,11 @@ describe('sitemap coverage for Pennsylvania 2s6d 1773', () => {
   });
 });
 
+describe('sitemap coverage for United States numismatics', () => {
+  it('maps the coinage series, Hard Times case, and piece pairs used in dedicated catalog paths', () => {
     assert.equal(
-      localizePath('/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', 'en'),
-      '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+      localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/', 'en'),

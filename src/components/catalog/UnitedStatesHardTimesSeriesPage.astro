@@ -1,0 +1,210 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import SourceList from './SourceList.astro';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
+import { NUMISMATICS_PATH, USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinPath, hardTimesPath } from '../../data/estados-unidos-coinage';
+import {
+  HARD_TIMES_HERO,
+  hardTimesHoldings,
+  hardTimesNarrative,
+  hardTimesParentPath,
+  hardTimesRelated,
+  hardTimesRarityRows,
+  hardTimesSeriesCopy,
+  hardTimesSeriesLead,
+  hardTimesSeriesSources,
+} from '../../data/estados-unidos-hard-times';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = hardTimesSeriesCopy[locale];
+const pathname = hardTimesPath(locale);
+const holdings = hardTimesHoldings();
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: NUMISMATICS_PATH },
+    { name: t.seriesLink, path: USA_COINAGE_PATH },
+    { name: t.breadcrumbCurrent, path: USA_HARD_TIMES_PATH },
+  ],
+});
+---
+
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={HARD_TIMES_HERO.src}
+  ogImageAlt={t.heroAlt}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={HARD_TIMES_HERO.src}
+      alt={t.heroAlt}
+      width={HARD_TIMES_HERO.width}
+      height={HARD_TIMES_HERO.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_42%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(NUMISMATICS_PATH, locale), label: t.parentLink },
+          { href: hardTimesParentPath(locale), label: t.seriesLink },
+          { label: t.breadcrumbCurrent },
+        ]}
+      />
+
+      <p class="mb-10 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
+        {hardTimesSeriesLead[locale]}
+      </p>
+
+      {
+        hardTimesNarrative.map((section) => (
+          <section class="mt-16 first:mt-0" aria-labelledby={`${section.id}-heading`}>
+            <h2
+              id={`${section.id}-heading`}
+              class="mb-5 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim"
+            >
+              {section.title[locale]}
+            </h2>
+            <div class="w-full text-[17px]/7 text-cream">
+              {section.paragraphs.map((paragraph) => (
+                <p class="mb-5 mt-0 last:mb-0">{paragraph[locale]}</p>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+
+      <section class="mt-16" aria-labelledby="hard-times-rarity-heading">
+        <h2 id="hard-times-rarity-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.rarityTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.rarityIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[36rem] border-collapse text-left text-[15px]/6 text-cream">
+            <caption class="sr-only">{t.rarityTitle}</caption>
+            <thead>
+              <tr class="border-b border-line-strong">
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.rarityRating}
+                </th>
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.rarityLabel}
+                </th>
+                <th scope="col" class="py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.rarityPopulation}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                hardTimesRarityRows.map((row) => (
+                  <tr class="border-b border-line">
+                    <th scope="row" class="py-2 pr-4 font-sans font-semibold text-gold-light">
+                      {row.rating}
+                    </th>
+                    <td class="py-2 pr-4">{row.label[locale]}</td>
+                    <td class="py-2">{row.population[locale]}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="hard-times-holdings-heading">
+        <h2 id="hard-times-holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
+        <ol class:list={['m-0', CATALOG_PIECE_GRID]} aria-label={t.holdingsTitle}>
+          {
+            holdings.map((coin) => (
+              <li class="min-w-0">
+                <a
+                  href={coinPath(coin, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <CatalogThumb
+                    src={coin.images.composite}
+                    alt={coin.frontCaption[locale]}
+                    width={coin.images.width}
+                    height={coin.images.height}
+                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.95rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {coin.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {coin.references} · {coin.year}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCoin} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <aside class="mt-16 rounded-[4px] border border-line px-6 py-6" aria-labelledby="hard-times-related-heading">
+        <h2 id="hard-times-related-heading" class="mb-4 mt-0 font-display text-[24px] font-normal text-cream">
+          {t.relatedTitle}
+        </h2>
+        <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+          {
+            hardTimesRelated.map((item) => (
+              <li>
+                <a
+                  class="font-semibold text-cream no-underline hover:text-gold-light"
+                  href={localizePath(item.href, locale)}
+                >
+                  {item.title[locale]}
+                </a>
+                <p class="mb-0 mt-1 font-sans text-[16px] leading-[1.5] text-muted">{item.dek[locale]}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </aside>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={hardTimesSeriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={hardTimesParentPath(locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {t.seriesLink}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

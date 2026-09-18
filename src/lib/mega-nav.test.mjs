@@ -258,6 +258,8 @@ describe('United States numismatics menu', () => {
     const usBlock = numismatica.split("id: 'us-monedas'")[1]?.split("id: 'nl-monedas'")[0] ?? '';
     assert.match(source, /coinById\('ht-34-1837-burro-tortuga'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
+    assert.match(usBlock, /id: 'us-fichas-hard-times'/);
+    assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);

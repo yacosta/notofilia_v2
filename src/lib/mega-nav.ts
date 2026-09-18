@@ -18,7 +18,7 @@ import {
   notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
-import { USA_COINAGE_PATH, coinById } from '../data/estados-unidos-coinage';
+import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -286,10 +286,18 @@ export const megaNav: NavNode[] = [
         flag: 'us',
         children: [
           {
-            id: 'us-ht-34-1837-burro-tortuga',
-            es: usHt34.title.es,
-            en: usHt34.title.en,
-            href: usHt34.path,
+            id: 'us-fichas-hard-times',
+            es: 'Fichas Hard Times',
+            en: 'Hard Times tokens',
+            href: USA_HARD_TIMES_PATH,
+            children: [
+              {
+                id: 'us-ht-34-1837-burro-tortuga',
+                es: usHt34.title.es,
+                en: usHt34.title.en,
+                href: usHt34.path,
+              },
+            ],
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

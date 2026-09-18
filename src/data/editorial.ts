@@ -223,6 +223,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Ringling Bros. · A2002',
     en: '$1 · Ringling Bros. · A2002',
   },
+  '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
+    es: 'Fichas Hard Times',
+    en: 'Hard Times tokens',
+  },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'Ficha de centavo · Hard Times · 1837',
     en: 'Cent-sized token · Hard Times · 1837',
@@ -250,6 +254,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
+    es: 'La vitrina de menuda privada de 1832–1844 y el HT-34 de 1837.',
+    en: 'The 1832–1844 private small-change case and the 1837 HT-34.',
+  },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',
     en: 'The 1837 HT-34 (Low-20) record in the virtual collection.',

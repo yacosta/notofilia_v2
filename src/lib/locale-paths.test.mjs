@@ -119,6 +119,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', 'en'),
       '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
     );
@@ -592,6 +596,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/'],
       '/en/collection/united-states-numismatics/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/fichas-hard-times/'],
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/'],
