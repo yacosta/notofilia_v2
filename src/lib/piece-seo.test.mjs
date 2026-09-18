@@ -95,4 +95,19 @@ describe('piece SEO titles and descriptions', () => {
     assert.doesNotMatch(meta.documentTitle, /\$\d{2,}|hammer|sold for|market value/i);
     assert.doesNotMatch(meta.h1, /Pick/i);
   });
+
+  it('lets a catalog heading replace the generic Moneda de H1', () => {
+    const meta = piecePageMeta({
+      kind: 'coin',
+      title: 'Ficha Hard Times de 1837 · HT-34 / Low-20',
+      kicker: 'Estados Unidos · exonumia privada',
+      lead: 'Copper HT-34 of 1837. No market price is published here.',
+      locale: 'es',
+      country: 'Estados Unidos',
+      heading: 'Ficha Hard Times de 1837 — HT-34 / Low-20',
+    });
+    assert.equal(meta.h1, 'Ficha Hard Times de 1837 — HT-34 / Low-20');
+    assert.match(meta.documentTitle, /^Ficha Hard Times de 1837 — HT-34 \/ Low-20 · Estados Unidos \| Notofilia$/);
+    assert.doesNotMatch(meta.h1, /Moneda de/);
+  });
 });

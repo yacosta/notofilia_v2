@@ -97,7 +97,13 @@ describe('US Hard Times HT-34 1837 token', () => {
     );
     assert.match(data, /id: 'ht-34-1837-burro-tortuga'/);
     assert.match(data, /id: 'hard-times'/);
-    assert.match(data, /HT-34 · Low-20 · R-1/);
+    assert.match(data, /HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1/);
+    assert.match(data, /Ficha Hard Times de 1837 — HT-34 \/ Low-20/);
+    assert.match(data, /STEPS, no «footsteps»/);
+    assert.match(data, /Independent Treasury/);
+    assert.match(data, /DeWitt CE-1838-4/);
+    assert.match(data, /el 1838 de DeWitt no cambia la fecha 1837 de la pieza/);
+    assert.match(data, /relatedLead:\n      'Otra pieza de la colección de Estados Unidos.'/);
     assert.match(data, /EXECUTIVE FINANCIERING/);
     assert.match(data, /EXECUTIVE EXPERIMENT/);
     assert.match(data, /no_serial_reason:\n      'Private Hard Times copper token/);
@@ -120,7 +126,8 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(hardTimesEssay, /Specie Circular/);
     assert.match(hardTimesEssay, /NOT ONE CENT/);
     assert.match(hardTimesEssay, /Feuchtwanger/);
-    assert.match(hardTimesEssay, /Coinage Act of 1864/);
+    assert.match(hardTimesEssay, /Independent Treasury Act/);
+    assert.match(hardTimesEssay, /STEPS, no «footsteps»/);
     assert.doesNotMatch(hardTimesEssay, /\$20 to \$50/);
     assert.doesNotMatch(hardTimesEssay, /Broward/);
   });

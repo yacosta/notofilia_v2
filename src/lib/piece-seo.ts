@@ -106,11 +106,16 @@ export function piecePageMeta(input: {
   lead: string;
   locale: Locale;
   country?: string;
+  heading?: string;
 }) {
   const parts = parsePieceTitleParts(input);
+  const h1 = input.heading?.trim() || pieceH1(parts, input.locale);
+  const documentTitle = input.heading?.trim()
+    ? `${input.heading.trim()} · ${parts.country} | Notofilia`
+    : pieceDocumentTitle(parts, input.locale);
   return {
-    documentTitle: pieceDocumentTitle(parts, input.locale),
-    h1: pieceH1(parts, input.locale),
+    documentTitle,
+    h1,
     subtitle: parts.catalogLabel,
     description: limitMetaDescription(input.lead),
     parts,
