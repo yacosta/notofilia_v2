@@ -28,8 +28,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'La ceca de Filadelfia, el dólar de latón-manganeso y el 1 $ de Trump del Semiquincentenario 1776–2026.',
-      en: 'The Philadelphia mint, the manganese-brass dollar, and the 1776–2026 Semiquincentennial Trump $1.',
+      es: 'Fichas Hard Times de 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
+      en: '1837 Hard Times tokens, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
     },
   },
   {
@@ -62,7 +62,7 @@ export const numismaticaCopy = {
     subtitle: 'Moneda metálica',
     intro: [
       'La numismática en esta colección es el estudio de la moneda acuñada: oro y plata coloniales, cobres de necesidad, pesos decimales y las series que aún circulan. No sustituye a la notafilia; la acompaña. El papel de cada país tiene su propia vitrina.',
-      'Abren cuatro casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué—, Estados Unidos —la ceca de Filadelfia y el dólar del Semiquincentenario—, Lazarettos —la exonumia del aislamiento, de Caño del Oro a la coscoja— y Países Bajos —del gulden al euro—. Otras se irán sumando como en el catálogo de billetes.',
+      'Abren cuatro casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué—, Estados Unidos —fichas Hard Times, la ceca de Filadelfia y el dólar del Semiquincentenario—, Lazarettos —la exonumia del aislamiento, de Caño del Oro a la coscoja— y Países Bajos —del gulden al euro—. Otras se irán sumando como en el catálogo de billetes.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro: 'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, Estados Unidos, Lazarettos y Países Bajos.',
@@ -78,7 +78,7 @@ export const numismaticaCopy = {
     subtitle: 'Coinage',
     intro: [
       'Numismatics in this collection is the study of struck coin: colonial gold and silver, necessity coppers, decimal pesos, and the series still in the pocket. It does not replace notaphily; it stands beside it. Each country’s paper has its own case.',
-      'Four houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — the United States — the Philadelphia mint and the Semiquincentennial dollar — Lazarettos — the exonumia of isolation, from Caño del Oro to the coscoja — and the Netherlands — from the gulden to the euro. Others will follow as they do in the note catalog.',
+      'Four houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — the United States — Hard Times tokens, the Philadelphia mint, and the Semiquincentennial dollar — Lazarettos — the exonumia of isolation, from Caño del Oro to the coscoja — and the Netherlands — from the gulden to the euro. Others will follow as they do in the note catalog.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro: 'One case to a card, left to right as each is documented. Colombia-Numismatics, the United States, Lazarettos, and the Netherlands open the row.',

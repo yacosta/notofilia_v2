@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T02:45:20.116Z",
+  "generatedAt": "2026-09-18T02:13:33.990Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1951,6 +1951,45 @@
       "title": {
         "es": "5 libras · Churchill · 2016",
         "en": "£5 · Churchill · 2016"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "front",
+      "hash": "0063235533632300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-composite.jpg",
+      "title": {
+        "es": "Ficha de centavo · Hard Times · 1837",
+        "en": "Cent-sized token · Hard Times · 1837"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "front",
+      "hash": "000c2e162e1e0c00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg",
+      "title": {
+        "es": "Ficha de centavo · Hard Times · 1837",
+        "en": "Cent-sized token · Hard Times · 1837"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "back",
+      "hash": "00042a122a2e0c00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-back.jpg",
+      "title": {
+        "es": "Ficha de centavo · Hard Times · 1837",
+        "en": "Cent-sized token · Hard Times · 1837"
       }
     },
     {

@@ -223,6 +223,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Ringling Bros. · A2002',
     en: '$1 · Ringling Bros. · A2002',
   },
+  '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
+    es: 'Ficha de centavo · Hard Times · 1837',
+    en: 'Cent-sized token · Hard Times · 1837',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
@@ -246,6 +250,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
+    es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',
+    en: 'The 1837 HT-34 (Low-20) record in the virtual collection.',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',

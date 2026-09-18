@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../../data/estados-unidos-coinage';
+
+const coin = coinById('ht-34-1837-burro-tortuga');
+if (!coin) throw new Error('Missing United States 1837 Hard Times HT-34 catalog token');
+---
+
+<UnitedStatesCoinPage locale="en" coin={coin} />

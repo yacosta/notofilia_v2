@@ -27,6 +27,14 @@ const enCoin = readFileSync(
   new URL('../pages/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/index.astro', import.meta.url),
   'utf8',
 );
+const esHt34 = readFileSync(
+  new URL('../pages/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/index.astro', import.meta.url),
+  'utf8',
+);
+const enHt34 = readFileSync(
+  new URL('../pages/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/index.astro', import.meta.url),
+  'utf8',
+);
 
 describe('US Trump Semiquincentennial dollar', () => {
   it('registers one bilingual coinage series and one holding', () => {
@@ -77,5 +85,33 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(numismatica, /Four houses are open/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
+  });
+});
+
+describe('US Hard Times HT-34 1837 token', () => {
+  it('registers a bilingual no-serial holding distinct from HT-33', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', 'en'),
+      '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    );
+    assert.match(data, /id: 'ht-34-1837-burro-tortuga'/);
+    assert.match(data, /id: 'hard-times'/);
+    assert.match(data, /HT-34 · Low-20 · R-1/);
+    assert.match(data, /EXECUTIVE FINANCIERING/);
+    assert.match(data, /EXECUTIVE EXPERIMENT/);
+    assert.match(data, /no_serial_reason:\n      'Private Hard Times copper token/);
+    assert.match(data, /Rulau\/Fuld/);
+    assert.doesNotMatch(data, /\$20 to \$50/);
+    assert.match(holdings, /id: 'us-1837-ht-34-burro-tortuga', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1837-ht-34-low-20/);
+  });
+
+  it('keeps thin ES and EN routes and catalog photographs', () => {
+    assert.match(esHt34, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enHt34, /UnitedStatesCoinPage locale="en"/);
+    assert.match(esHt34, /coinById\('ht-34-1837-burro-tortuga'\)/);
+    assert.match(data, /ht-34-1837-burro-tortuga-composite\.jpg/);
+    assert.match(data, /ht-34-1837-burro-tortuga-front\.jpg/);
+    assert.match(data, /ht-34-1837-burro-tortuga-back\.jpg/);
   });
 });

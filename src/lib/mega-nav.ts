@@ -68,6 +68,11 @@ if (!usTrumpDollar) {
   throw new Error('Missing US Trump dollar coin for mega-nav');
 }
 
+const usHt34 = coinById('ht-34-1837-burro-tortuga');
+if (!usHt34) {
+  throw new Error('Missing US Hard Times HT-34 token for mega-nav');
+}
+
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
 if (!colombia1PesoBanRep) {
   throw new Error('Missing Colombia BanRep 1 peso 1959–1977 note for mega-nav');
@@ -280,6 +285,12 @@ export const megaNav: NavNode[] = [
         href: USA_COINAGE_PATH,
         flag: 'us',
         children: [
+          {
+            id: 'us-ht-34-1837-burro-tortuga',
+            es: usHt34.title.es,
+            en: usHt34.title.en,
+            href: usHt34.path,
+          },
           {
             id: 'us-1-dolar-trump-1776-2026',
             es: usTrumpDollar.title.es,
