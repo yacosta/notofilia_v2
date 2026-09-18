@@ -8,9 +8,9 @@ import {
 } from './estados-unidos-coinage';
 
 export const HARD_TIMES_HERO = {
-  src: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg',
+  src: '/images/catalog/estados-unidos/hero-hard-times.jpg',
   width: 1024,
-  height: 682,
+  height: 438,
 } as const;
 
 export type HardTimesSection = {
@@ -30,7 +30,7 @@ export const hardTimesSeriesCopy = {
     parentLink: 'Numismática',
     seriesLink: 'Estados Unidos · Numismática',
     heroAlt:
-      'Anverso de la ficha Hard Times HT-34 de 1837: un burro al galope y la leyenda I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR',
+      'Mapa ilustrado de los Estados Unidos en el Pánico de 1837: tierras del Oeste, Filadelfia, Nueva Orleans y una ficha Hard Times de 1837',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
       'Un cobre HT-34 (Low-20) de 1837, sin serial y sin encapsular: burro al galope y tortuga con la caja SUB TREASURY. Abra la ficha para el anverso, el reverso y los datos de catálogo.',
@@ -54,7 +54,7 @@ export const hardTimesSeriesCopy = {
     parentLink: 'Numismatics',
     seriesLink: 'United States · Numismatics',
     heroAlt:
-      'Obverse of the 1837 Hard Times HT-34 token: a galloping jackass and the legend I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR',
+      'Illustrated map of the United States in the Panic of 1837: Western lands, Philadelphia, New Orleans, and an 1837 Hard Times token',
     holdingsTitle: 'In this collection',
     holdingsIntro:
       'One copper HT-34 (Low-20) of 1837, with no serial and unslabbed: a galloping jackass and a tortoise with the SUB TREASURY chest. Open the piece record for obverse, reverse, and catalog facts.',
