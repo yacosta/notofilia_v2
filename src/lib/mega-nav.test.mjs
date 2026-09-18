@@ -256,7 +256,9 @@ describe('United States numismatics menu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     const usBlock = numismatica.split("id: 'us-monedas'")[1]?.split("id: 'nl-monedas'")[0] ?? '';
+    assert.match(source, /coinById\('ht-34-1837-burro-tortuga'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
+    assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);

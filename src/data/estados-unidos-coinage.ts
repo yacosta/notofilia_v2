@@ -7,7 +7,11 @@ export const NUMISMATICS_PATH = '/coleccion/numismatica/';
 export const USA_COINAGE_PATH = '/coleccion/estados-unidos-numismatica/';
 export const USA_COINAGE_PATH_EN = '/collection/united-states-numismatics/';
 
-export type UnitedStatesCoinageChapterId = 'ceca-filadelfia' | 'dolar-laton' | 'semiquincentenario';
+export type UnitedStatesCoinageChapterId =
+  | 'hard-times'
+  | 'ceca-filadelfia'
+  | 'dolar-laton'
+  | 'semiquincentenario';
 
 export type UnitedStatesCoinageChapter = {
   id: UnitedStatesCoinageChapterId;
@@ -18,6 +22,22 @@ export type UnitedStatesCoinageChapter = {
 };
 
 export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
+  {
+    id: 'hard-times',
+    years: { es: '1832–1844', en: '1832–1844' },
+    title: {
+      es: 'Las fichas Hard Times',
+      en: 'Hard Times tokens',
+    },
+    lead: {
+      es: 'Cobre privado del tamaño de un large cent: menuda de emergencia y sátira política durante el Pánico de 1837, no moneda de la United States Mint.',
+      en: 'Private copper on a large-cent module: emergency small change and political satire during the Panic of 1837, not United States Mint coin.',
+    },
+    body: {
+      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina abre con el HT-34 de 1837 (Low-20), burro y tortuga; no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
+      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case opens with the 1837 HT-34 (Low-20), donkey and turtle; it is not HT-33, which reads EXECUTIVE EXPERIMENT.',
+    },
+  },
   {
     id: 'ceca-filadelfia',
     years: { es: 'desde 1792', en: 'from 1792' },
@@ -114,25 +134,43 @@ export const seriesSources: CatalogSource[] = [
       en: 'Founded by the Coinage Act of 2 April 1792 in Philadelphia.',
     },
   },
+  {
+    href: 'https://en.wikipedia.org/wiki/Hard_times_token',
+    es: 'Wikipedia — Hard times token',
+    en: 'Wikipedia — Hard times token',
+    note: {
+      es: 'Marco de 1832–1844, menuda privada y el Pánico de 1837. No se republican precios.',
+      en: '1832–1844 frame, private small change, and the Panic of 1837. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.ngccoin.com/coin-explorer/united-states/tokens-and-medals/hard-times-tokens-rulau/',
+    es: 'NGC Coin Explorer — Hard Times Tokens (Rulau)',
+    en: 'NGC Coin Explorer — Hard Times Tokens (Rulau)',
+    note: {
+      es: 'Atribución contemporánea por número HT de Rulau, con cruce a Low cuando aplica.',
+      en: 'Contemporary attribution by Rulau HT number, with a Low cross-reference when it applies.',
+    },
+  },
 ];
 
 export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: la ceca de Filadelfia, el dólar de latón-manganeso y el 1 $ de Trump del Semiquincentenario 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times de 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
     kicker: 'Estados Unidos · Numismática',
-    title: 'La ceca de Filadelfia y el dólar de 2026',
+    title: 'Hard Times, Filadelfia y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia empieza en Filadelfia: el Coinage Act del 2 de abril de 1792 creó la United States Mint cuando la ciudad era aún capital federal.',
-      'Esta vitrina abre con el módulo del dólar de latón-manganeso —el mismo cospel del Sacagawea y de los Presidential dollars— y con el tipo del Semiquincentenario de 2026. El primer ejemplar documentado es el 1 $ con retrato de Donald J. Trump, anverso de Joseph Menna y reverso de Frank Gasparro con el número 250. No es oro de 24 quilates ni una medalla privada.',
-      'Los demás tipos —centavos, medios dólares, águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
+      'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada; el HT-34 de 1837 no es un centavo federal.',
+      'Los demás tipos —centavos de la Mint, medios dólares, águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Tres capítulos, de izquierda a derecha: la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, la ficha del 1 $ de 1776–2026 documentado en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, las fichas del HT-34 de 1837 y del 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -143,19 +181,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: the Philadelphia mint, the manganese-brass dollar, and the 1776–2026 Semiquincentennial Trump $1.',
+      'Catalog of United States coinage: 1837 Hard Times tokens, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
     kicker: 'United States · Numismatics',
-    title: 'The Philadelphia mint and the 2026 dollar',
+    title: 'Hard Times, Philadelphia, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history begins in Philadelphia: the Coinage Act of 2 April 1792 created the United States Mint while the city was still the federal capital.',
-      'This case opens with the manganese-brass dollar module — the same planchet as the Sacagawea and the Presidential dollars — and with the 2026 Semiquincentennial type. The first documented example is the $1 with Donald J. Trump’s portrait, Joseph Menna’s obverse and Frank Gasparro’s reverse numbered 250. It is not 24-karat gold and not a private medal.',
-      'Further types — cents, half dollars, gold eagles — will be added as they are photographed, as in this country’s paper case.',
+      'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal; the 1837 HT-34 is not a federal cent.',
+      'Further types — Mint cents, half dollars, gold eagles — will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Three chapters, left to right: the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the record of the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times, the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the records of the 1837 HT-34 and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -165,7 +203,7 @@ export const seriesCopy = {
   },
 } as const;
 
-export type UnitedStatesCoinId = '1-dolar-trump-1776-2026';
+export type UnitedStatesCoinId = 'ht-34-1837-burro-tortuga' | '1-dolar-trump-1776-2026';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -206,6 +244,126 @@ export type UnitedStatesCoin = {
 };
 
 export const unitedStatesCoins: UnitedStatesCoin[] = [
+  {
+    id: 'ht-34-1837-burro-tortuga',
+    path: '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/',
+    pathEn: '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    chapterId: 'hard-times',
+    year: '1837',
+    mint: {
+      es: 'Acuñación privada (sin ceca federal)',
+      en: 'Private striking (no federal mint)',
+    },
+    denomination: {
+      es: 'Ficha de centavo (módulo de large cent)',
+      en: 'Cent-sized token (large-cent module)',
+    },
+    composition: {
+      es: 'Cobre',
+      en: 'Copper',
+    },
+    weight: {
+      es: 'No pesado en esta ficha',
+      en: 'Not weighed for this record',
+    },
+    diameter: {
+      es: '≈ 28,5 mm',
+      en: '≈ 28.5 mm',
+    },
+    edge: {
+      es: 'Liso',
+      en: 'Plain',
+    },
+    references: 'HT-34 · Low-20 · R-1',
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    no_serial_reason:
+      'Private Hard Times copper token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-composite.jpg',
+      front: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg',
+      back: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-back.jpg',
+      width: 1800,
+      height: 599,
+      faceWidth: 1024,
+      faceHeight: 682,
+    },
+    title: {
+      es: 'Ficha de centavo · Hard Times · 1837',
+      en: 'Cent-sized token · Hard Times · 1837',
+    },
+    kicker: {
+      es: 'Estados Unidos · exonumia privada',
+      en: 'United States · private exonumia',
+    },
+    lead: {
+      es: 'Ficha de cobre HT-34 (Low-20), 1837: burro al galope en el anverso y tortuga con caja SUB TREASURY en el reverso. R-1 en la escala de rareza Hard Times/Fuld, no en la de Sheldon. Sin serial y sin encapsular.',
+      en: 'Copper token HT-34 (Low-20), 1837: a galloping jackass on the obverse and a tortoise with a SUB TREASURY chest on the reverse. R-1 on the Hard Times/Fuld rarity scale, not Sheldon. No serial and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es una ficha Hard Times de cobre, módulo de large cent, acuñada en privado durante el Pánico de 1837 para circular como menuda. El anverso muestra un burro (jackass) al galope sobre una franja de césped, con la leyenda I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. El reverso muestra una tortuga que carga una caja fuerte marcada SUB TREASURY, con EXECUTIVE FINANCIERING, la fecha 1837 y FISCAL AGENT. El canto es liso. No es un centavo de la United States Mint ni el tipo HT-33, que lleva la misma iconografía pero lee EXECUTIVE EXPERIMENT. En este ejemplar no hay número de serie ni cápsula de certificación.',
+      en: 'This piece is a copper Hard Times token, large-cent module, struck privately during the Panic of 1837 to circulate as small change. The obverse shows a galloping jackass on a turf line, with the legend I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. The reverse shows a tortoise carrying a strongbox marked SUB TREASURY, with EXECUTIVE FINANCIERING, the date 1837, and FISCAL AGENT. The edge is plain. It is not a United States Mint cent and not type HT-33, which uses the same imagery but reads EXECUTIVE EXPERIMENT. This example has no serial number and no grading holder.',
+    },
+    history: {
+      es: 'El tipo se burlaba de Martin Van Buren y de Andrew Jackson, a quienes la oposición culpó de la crisis bancaria. El lema del anverso cita la promesa de Van Buren de seguir la política «hard money» de Jackson contra el Second Bank; el burro juega con Jackson (jackass) y, décadas después, Thomas Nast lo popularizó como símbolo del Partido Demócrata. El reverso ataca el Independent Treasury —la Sub-Tesorería— como un remedio gubernamental que avanzaba al paso de una tortuga. Low (1899) numeró esta variedad Low-20; Rulau la cataloga HT-34. No se publica aquí una tirada del tipo ni un censo de encapsulados.',
+      en: 'The type mocked Martin Van Buren and Andrew Jackson, whom the opposition blamed for the banking crash. The obverse motto quotes Van Buren’s pledge to follow Jackson’s hard-money policy against the Second Bank; the jackass puns on Jackson and, decades later, Thomas Nast popularized it as the Democratic Party’s symbol. The reverse attacks the Independent Treasury — the Sub-Treasury — as a government remedy that moved at a tortoise’s pace. Low (1899) numbered this variety Low-20; Rulau catalogs it HT-34. This record does not publish a type mintage or a slab census.',
+    },
+    obverseLegend: {
+      es: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. Burro al galope; STEPS bajo el animal.',
+      en: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. Galloping jackass; STEPS beneath the animal.',
+    },
+    reverseLegend: {
+      es: 'EXECUTIVE FINANCIERING · 1837 · FISCAL AGENT. Caja SUB TREASURY sobre una tortuga.',
+      en: 'EXECUTIVE FINANCIERING · 1837 · FISCAL AGENT. SUB TREASURY chest on a tortoise.',
+    },
+    frontCaption: {
+      es: 'Anverso: burro al galope; I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR.',
+      en: 'Obverse: galloping jackass; I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR.',
+    },
+    backCaption: {
+      es: 'Reverso: tortuga con caja SUB TREASURY; EXECUTIVE FINANCIERING 1837 FISCAL AGENT.',
+      en: 'Reverse: tortoise with SUB TREASURY chest; EXECUTIVE FINANCIERING 1837 FISCAL AGENT.',
+    },
+    scarcity: {
+      es: 'R-1 en la escala de rareza usada para Hard Times y fichas de la Guerra Civil (Rulau/Fuld): común, no la escala de Sheldon de la moneda federal. El tipo se encuentra con facilidad; esta ficha describe el ejemplar fotografiado —leyenda FINANCIERING, sin encapsular— y no una cotización. No se republica aquí un rango de precios ni un censo de PCGS o NGC.',
+      en: 'R-1 on the rarity scale used for Hard Times and Civil War tokens (Rulau/Fuld): common, not the Sheldon scale of federal coin. The type is readily found; this record describes the photographed example — FINANCIERING legend, unslabbed — and not a price. It does not republish a price range or a PCGS or NGC census.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa. Las fichas Hard Times de este tipo no llevan número de serie. La identidad de la ficha es el objeto fotografiado —HT-34, Low-20, EXECUTIVE FINANCIERING 1837— no un certificado. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder. Hard Times tokens of this type carry no serial number. The identity of this record is the photographed object — HT-34, Low-20, EXECUTIVE FINANCIERING 1837 — not a certificate. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://en.wikipedia.org/wiki/Hard_times_token',
+        es: 'Wikipedia — Hard times token',
+        en: 'Wikipedia — Hard times token',
+        note: {
+          es: 'Contexto del Pánico de 1837 y de la menuda privada. No se republican precios.',
+          en: 'Context for the Panic of 1837 and private small change. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://coinweek.com/the-strange-story-of-hard-time-tokens/',
+        es: 'CoinWeek — The Strange Story of Hard Time Tokens',
+        en: 'CoinWeek — The Strange Story of Hard Time Tokens',
+        note: {
+          es: 'Sátira jacksoniana, iconografía y circulación como menuda.',
+          en: 'Jacksonian satire, iconography, and circulation as small change.',
+        },
+      },
+      {
+        href: 'https://www.ngccoin.com/coin-explorer/united-states/tokens-and-medals/hard-times-tokens-rulau/',
+        es: 'NGC — Hard Times Tokens (Rulau)',
+        en: 'NGC — Hard Times Tokens (Rulau)',
+        note: {
+          es: 'HT de Rulau como atribución de catálogo; Low-20 es el cruce de esta variedad.',
+          en: 'Rulau HT as catalog attribution; Low-20 is this variety’s cross-reference.',
+        },
+      },
+    ],
+  },
   {
     id: '1-dolar-trump-1776-2026',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/',
@@ -356,7 +514,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Un dólar de Filadelfia de 1776–2026, sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
+      'Una ficha Hard Times HT-34 de 1837 y un dólar de Filadelfia de 1776–2026, ambos sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
   },
   en: {
     collectionLink: 'Numismatics',
@@ -385,7 +543,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'One unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'One unslabbed 1837 Hard Times HT-34 token and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
   },
 } as const;
 
