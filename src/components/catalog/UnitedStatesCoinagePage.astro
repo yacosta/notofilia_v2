@@ -148,7 +148,7 @@ const jsonLd = collectionPageJsonLd({
             unitedStatesCoinageChapters.map((chapter) => (
               <li class="min-w-0">
                 <a
-                  href={chapterHref(chapter.id)}
+                  href={chapterHref(chapter.id, locale)}
                   class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
                 >
                   <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
@@ -162,7 +162,9 @@ const jsonLd = collectionPageJsonLd({
                   <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
                     {t.eraLabel} · {chapter.years[locale]}
                   </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">
+                    {chapter.id === 'hard-times' ? t.hardTimesChapterCta : t.viewChapter} →
+                  </span>
                 </a>
               </li>
             ))

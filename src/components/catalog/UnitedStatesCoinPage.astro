@@ -9,6 +9,7 @@ import {
   coinPageCopy,
   coinagePath,
   coinPath,
+  hardTimesPath,
   NUMISMATICS_PATH,
   seriesCopy,
   type UnitedStatesCoin,
@@ -41,6 +42,9 @@ const jsonCrumbs = [
   { name: copy[locale].home, path: '/' },
   { name: t.collectionLink, path: NUMISMATICS_PATH },
   { name: t.seriesLink, path: coinagePath(locale) },
+  ...(coin.chapterId === 'hard-times'
+    ? [{ name: t.hardTimesLink, path: hardTimesPath(locale) }]
+    : []),
   { name: seo.h1, path: pathname },
 ];
 ---
@@ -82,6 +86,9 @@ const jsonCrumbs = [
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(NUMISMATICS_PATH, locale), label: t.collectionLink },
           { href: coinagePath(locale), label: t.seriesLink },
+          ...(coin.chapterId === 'hard-times'
+            ? [{ href: hardTimesPath(locale), label: t.hardTimesLink }]
+            : []),
           { label: seo.h1 },
         ]}
       />

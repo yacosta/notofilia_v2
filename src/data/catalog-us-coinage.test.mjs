@@ -27,14 +27,15 @@ const enCoin = readFileSync(
   new URL('../pages/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/index.astro', import.meta.url),
   'utf8',
 );
-const esHt34 = readFileSync(
-  new URL('../pages/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/index.astro', import.meta.url),
+const esHt34Series = readFileSync(
+  new URL('../pages/coleccion/estados-unidos-numismatica/fichas-hard-times/index.astro', import.meta.url),
   'utf8',
 );
-const enHt34 = readFileSync(
-  new URL('../pages/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/index.astro', import.meta.url),
+const enHt34Series = readFileSync(
+  new URL('../pages/en/collection/united-states-numismatics/hard-times-tokens/index.astro', import.meta.url),
   'utf8',
 );
+const hardTimesEssay = readFileSync(new URL('./estados-unidos-hard-times.ts', import.meta.url), 'utf8');
 
 describe('US Trump Semiquincentennial dollar', () => {
   it('registers one bilingual coinage series and one holding', () => {
@@ -106,12 +107,20 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(holdings, /us-1837-ht-34-low-20/);
   });
 
-  it('keeps thin ES and EN routes and catalog photographs', () => {
-    assert.match(esHt34, /UnitedStatesCoinPage locale="es"/);
-    assert.match(enHt34, /UnitedStatesCoinPage locale="en"/);
-    assert.match(esHt34, /coinById\('ht-34-1837-burro-tortuga'\)/);
-    assert.match(data, /ht-34-1837-burro-tortuga-composite\.jpg/);
-    assert.match(data, /ht-34-1837-burro-tortuga-front\.jpg/);
-    assert.match(data, /ht-34-1837-burro-tortuga-back\.jpg/);
+  it('keeps a bilingual Hard Times tokens series page that links the HT-34 holding', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
+    );
+    assert.match(esHt34Series, /UnitedStatesHardTimesSeriesPage locale="es"/);
+    assert.match(enHt34Series, /UnitedStatesHardTimesSeriesPage locale="en"/);
+    assert.match(data, /USA_HARD_TIMES_PATH = '\/coleccion\/estados-unidos-numismatica\/fichas-hard-times\/'/);
+    assert.match(hardTimesEssay, /coinById\('ht-34-1837-burro-tortuga'\)/);
+    assert.match(hardTimesEssay, /Specie Circular/);
+    assert.match(hardTimesEssay, /NOT ONE CENT/);
+    assert.match(hardTimesEssay, /Feuchtwanger/);
+    assert.match(hardTimesEssay, /Coinage Act of 1864/);
+    assert.doesNotMatch(hardTimesEssay, /\$20 to \$50/);
+    assert.doesNotMatch(hardTimesEssay, /Broward/);
   });
 });

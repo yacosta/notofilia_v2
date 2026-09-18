@@ -6,6 +6,8 @@ const USA_NOTES_PATH_EN = '/en/collection/united-states/';
 export const NUMISMATICS_PATH = '/coleccion/numismatica/';
 export const USA_COINAGE_PATH = '/coleccion/estados-unidos-numismatica/';
 export const USA_COINAGE_PATH_EN = '/collection/united-states-numismatics/';
+export const USA_HARD_TIMES_PATH = '/coleccion/estados-unidos-numismatica/fichas-hard-times/';
+export const USA_HARD_TIMES_PATH_EN = '/collection/united-states-numismatics/hard-times-tokens/';
 
 export type UnitedStatesCoinageChapterId =
   | 'hard-times'
@@ -170,8 +172,9 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, las fichas del HT-34 de 1837 y del 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, las fichas del HT-34 de 1837 y del 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
+    hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     parentLink: 'Numismática',
@@ -193,8 +196,9 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times, the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the records of the 1837 HT-34 and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the records of the 1837 HT-34 and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
+    hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     parentLink: 'Numismatics',
@@ -491,6 +495,7 @@ export const coinPageCopy = {
     collectionLink: 'Numismática',
     seriesLink: 'Estados Unidos · Numismática',
     chapterLink: 'Semiquincentenario',
+    hardTimesLink: 'Fichas Hard Times',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
@@ -520,6 +525,7 @@ export const coinPageCopy = {
     collectionLink: 'Numismatics',
     seriesLink: 'United States · Numismatics',
     chapterLink: 'Semiquincentennial',
+    hardTimesLink: 'Hard Times tokens',
     frontHeading: 'Obverse',
     backHeading: 'Reverse',
     aboutHeading: 'The coin',
@@ -559,7 +565,12 @@ export function coinPath(coin: UnitedStatesCoin, locale: 'es' | 'en'): string {
   return locale === 'en' ? coin.pathEn : coin.path;
 }
 
-export function chapterHref(id: UnitedStatesCoinageChapterId): string {
+export function hardTimesPath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${USA_HARD_TIMES_PATH_EN}` : USA_HARD_TIMES_PATH;
+}
+
+export function chapterHref(id: UnitedStatesCoinageChapterId, locale: 'es' | 'en' = 'es'): string {
+  if (id === 'hard-times') return hardTimesPath(locale);
   return `#${id}`;
 }
 
@@ -572,5 +583,7 @@ export const unitedStatesCoinSlugs = unitedStatesCoins.map((coin) => coin.path.r
 export const unitedStatesCoinageDedicatedSlugs = [
   USA_COINAGE_PATH,
   USA_COINAGE_PATH_EN,
+  USA_HARD_TIMES_PATH,
+  USA_HARD_TIMES_PATH_EN,
   ...unitedStatesCoins.flatMap((coin) => [coin.path, coin.pathEn]),
 ].map((path) => path.replace(/^\/en(?=\/)/, '').replace(/^\/|\/$/g, ''));
