@@ -7,6 +7,7 @@ import type { TypeCatalogDocument, TypeCatalogEra, TypeCatalogFilter, TypeCatalo
 export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
+  | '1-real-bogota-1810-nr-jf'
   | '1-4-real-santa-marta-1820'
   | '1-peso-pm-1907'
   | '2-pesos-pm-1907'
@@ -49,6 +50,21 @@ export type ColombiaCoinType = {
 
 /** Seed types from BanRep / González White essays. Tag `image` here as coins are photographed. */
 export const colombiaCoinTypes: ColombiaCoinType[] = [
+  {
+    id: '1-real-bogota-1810-nr-jf',
+    era: 'santa-fe',
+    year: '1810',
+    denomination: { es: '1 real', en: '1 real' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 68.1 · Restrepo 111.3 · Calicó 651',
+    title: { es: '1 real · Bogotá NR–JF · 1810', en: '1 real · Bogotá NR–JF · 1810' },
+    dek: {
+      es: 'Real colonial en nombre de Fernando VII, busto de Carlos IV. En la colección.',
+      en: 'Colonial real in the name of Ferdinand VII, bust of Charles IV. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-real-bogota-1810-nr-jf',
+  },
   {
     id: '1-4-real-santa-marta-1820',
     era: 'independencia',
@@ -402,10 +418,10 @@ export const coinCatalogCopy = {
   es: {
     metaTitle: 'Catálogo visual de monedas de Colombia | Notofilia',
     metaDescription:
-      'Tipos de moneda metálica colombiana: Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios. Las imágenes se añaden a medida que se documentan.',
+      'Tipos de moneda metálica colombiana: el real colonial de Santa Fe, Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios. Las imágenes se añaden a medida que se documentan.',
     kicker: 'Colombia-Numismática',
     title: 'Catálogo visual de monedas',
-    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. La pieza de Santa Marta ya tiene foto; pesos p/m, Palonegro y conmemorativas recientes se etiquetan cuando se fotografíen.',
+    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. El real de Bogotá de 1810 y el cuartillo de Santa Marta ya tienen foto; pesos p/m, Palonegro y conmemorativas recientes se etiquetan cuando se fotografíen.',
     nav: 'Catálogo visual',
     searchLabel: 'Buscar tipos de monedas',
     searchPlaceholder: 'KM, ceca, denominación, año…',
@@ -449,10 +465,10 @@ export const coinCatalogCopy = {
   en: {
     metaTitle: 'Visual catalog of Colombian coins | Notofilia',
     metaDescription:
-      'Colombian coin types: Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices. Images are added as coins are documented.',
+      'Colombian coin types: the Santa Fe colonial real, Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices. Images are added as coins are documented.',
     kicker: 'Colombia-Numismatics',
     title: 'Visual coin catalog',
-    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The Santa Marta piece already has a photograph; p/m pesos, Palonegro, and recent commemoratives stay ready to tag when they are shot.',
+    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The 1810 Bogotá real and the Santa Marta piece already have photographs; p/m pesos, Palonegro, and recent commemoratives stay ready to tag when they are shot.',
     nav: 'Visual catalog',
     searchLabel: 'Search coin types',
     searchPlaceholder: 'KM, mint, denomination, year…',

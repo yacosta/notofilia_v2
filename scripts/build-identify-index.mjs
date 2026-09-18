@@ -67,22 +67,28 @@ function unescape(value) {
 }
 
 function localizedPairNear(source, key, aroundIndex) {
-  const windowStart = Math.max(0, aroundIndex - 2500);
-  const windowEnd = Math.min(source.length, aroundIndex + 2500);
-  const window = source.slice(windowStart, windowEnd);
   const re = new RegExp(
-    `${key}:\\s*\\{\\s*es:\\s*'((?:\\\\'|[^'])*)'\\s*,\\s*en:\\s*'((?:\\\\'|[^'])*)'\\s*,?\\s*\\}`,
-    'ms',
+    `${key}:\\s*\\{\\s*es:\\s*'((?:\\\\'|[^'])*)'\\s*,\\s*en:\\s*'((?:\\\\'|[^'])*)'`,
+    'g',
   );
-  const match = window.match(re);
-  if (!match) return null;
+  const before = source.slice(0, aroundIndex);
+  let last = null;
+  for (const match of before.matchAll(re)) {
+    if (match[1] !== undefined && match[2] !== undefined) last = match;
+  }
+  if (last) return { es: unescape(last[1]), en: unescape(last[2]) };
+  const after = source.slice(aroundIndex, Math.min(source.length, aroundIndex + 2500));
+  const match = after.match(re);
+  if (!match?.[1] || !match[2]) return null;
   return { es: unescape(match[1]), en: unescape(match[2]) };
 }
 
 function stringNear(source, key, aroundIndex) {
-  const windowStart = Math.max(0, aroundIndex - 2500);
-  const window = source.slice(windowStart, aroundIndex + 800);
-  const re = new RegExp(`${key}:\\s*'((?:\\\\'|[^'])*)'`, 'm');
+  const re = new RegExp(`(?:^|\\n)\\s*${key}:\\s*'((?:\\\\'|[^'])*)'`, 'mg');
+  const before = source.slice(0, aroundIndex);
+  const matches = [...before.matchAll(re)];
+  if (matches.length) return unescape(matches[matches.length - 1][1]);
+  const window = source.slice(aroundIndex, aroundIndex + 800);
   const match = window.match(re);
   return match ? unescape(match[1]) : '';
 }
@@ -130,7 +136,7 @@ function nearestCollectionPath(source, aroundIndex) {
 }
 
 function isCoinPath(file, piecePath) {
-  return /coinage|numismatica|ducado|real-santa|dolar-trump/i.test(`${file} ${piecePath}`);
+  return /coinage|numismatica|ducado|real-santa|real-bogota|dolar-trump/i.test(`${file} ${piecePath}`);
 }
 
 async function collectTargets() {

@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('1-real-bogota-1810-nr-jf');
+if (!piece) throw new Error('Missing Bogotá 1810 1 real NR–JF');
+---
+
+<ColombiaCoinPage locale="es" piece={piece} />
