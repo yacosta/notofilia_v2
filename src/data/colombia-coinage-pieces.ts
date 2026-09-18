@@ -1,12 +1,16 @@
 import type { CatalogSource, LocalizedText } from './catalog';
-import { COLOMBIA_COINAGE_PATH } from './colombia-coinage';
+import {
+  COLOMBIA_COINAGE_PATH,
+  colombiaCoinageChapters,
+  type ColombiaCoinageChapterId,
+} from './colombia-coinage';
 
-export type ColombiaCoinagePieceId = '1-4-real-santa-marta-1820';
+export type ColombiaCoinagePieceId = '1-real-bogota-1810-nr-jf' | '1-4-real-santa-marta-1820';
 
 export type ColombiaCoinagePiece = {
   id: ColombiaCoinagePieceId;
   path: string;
-  chapterId: 'independencia';
+  chapterId: ColombiaCoinageChapterId;
   year: string;
   denomination: LocalizedText;
   metal: LocalizedText;
@@ -29,6 +33,85 @@ export type ColombiaCoinagePiece = {
 };
 
 export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
+  {
+    id: '1-real-bogota-1810-nr-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-real-bogota-1810-nr-jf/`,
+    chapterId: 'santa-fe',
+    year: '1810',
+    denomination: { es: '1 real', en: '1 real' },
+    metal: { es: 'Plata .896 (tipo)', en: 'Silver .896 (type specification)' },
+    mint: {
+      es: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+      en: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+    },
+    reference: 'KM# 68.1 · Restrepo 111.3 · Calicó 651 · Numista N#41692',
+    title: {
+      es: '1 real · Bogotá NR–JF · 1810',
+      en: '1 real · Bogotá NR–JF · 1810',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santa Fe colonial',
+      en: 'Colombia-Numismatics · colonial Santa Fe',
+    },
+    lead: {
+      es: 'Un real de plata de 1810, labrado en Santa Fe de Nuevo Reino en nombre de Fernando VII. El anverso conserva el busto de Carlos IV; el reverso identifica la ceca NR, el valor 1R y el ensaye JF.',
+      en: 'An 1810 silver real struck at Santa Fe de Nuevo Reino in the name of Ferdinand VII. The obverse keeps Charles IV’s bust; the reverse names mint NR, value 1R, and assayer JF.',
+    },
+    description: {
+      es: 'En 1810 la Casa de Santa Fe seguía labrando el real colonial de cordoncillo, ya con orla de Fernando VII. Este disco muestra la fecha 1810 bajo el retrato, la marca NR de Nuevo Reino (Bogotá) y el ensaye JF. El tipo KM# 68.1 retiene el busto de Carlos IV a la derecha: el nombre del rey y el retrato no coinciden. La leyenda del anverso, normalizada, lee FERDND · VII · DEI · GRATIA · 1810; la del reverso, HISPAN · ET IND · REX · NR · 1R · JF. Las fotografías no bastan para el sobrefecha 1810/9 ni para el ensaye repunchado JF/JJ (Restrepo 111.3a); esta ficha registra el 1810 JF ordinario, Restrepo 111.3 y Calicó 651. La plata .896 y el peso de tipo de unos 3,38 g son cifras de catálogo, no medidas de este ejemplar. No hay tirada verificada: las tablas BanRep de moneda empiezan en 1987. No es el cuartillo de cobre de sitio de Santa Marta de 1820 ni un 1 real de ceca peninsular.',
+      en: 'In 1810 the Santa Fe mint was still striking the reeded colonial real, already with Ferdinand VII’s legend. This disc shows the date 1810 under the portrait, mintmark NR for Nuevo Reino (Bogotá), and assayer JF. Type KM# 68.1 keeps Charles IV’s bust facing right: the king named in the legend is not the bust on the coin. Normalized obverse legend: FERDND · VII · DEI · GRATIA · 1810; reverse: HISPAN · ET IND · REX · NR · 1R · JF. The photographs do not establish the 1810/9 overdate or the JF/JJ recut assayer (Restrepo 111.3a); this record is the ordinary 1810 JF issue, Restrepo 111.3 and Calicó 651. Silver .896 and a type weight of about 3.38 g are catalogue figures, not measurements of this specimen. No mintage is verified: BanRep’s coin tables begin in 1987. It is not the 1820 Santa Marta copper siege cuartillo, nor a 1-real of a Spanish peninsula mint.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda de Fernando VII y fecha 1810.',
+      en: 'Obverse: bust of Charles IV facing right, Ferdinand VII legend, and the date 1810.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado entre columnas; NR, 1R y ensaye JF en la orla.',
+      en: 'Reverse: crowned arms between pillars; NR, 1R, and assayer JF in the legend.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 68.1 (N#41692) y no publica una tirada del 1810 JF. Sedwick documenta esa fecha y ensaye, y trata aparte la variedad JF/JJ. Esta ficha no inventa un censo de encapsulados ni atribuye esa variedad.',
+      en: 'Numista covers type KM# 68.1 (N#41692) and does not publish an 1810 JF mintage. Sedwick documents that date and assayer, and treats the JF/JJ variety separately. This record does not invent a slab census or assign that variety.',
+    },
+    grade: {
+      es: 'Circulada, con desgaste marcado en el retrato y mejor lectura en el reverso; gris con recesos más oscuros. Sin encapsular (colección privada)',
+      en: 'Circulated, with heavy portrait wear and a clearer reverse; gray surfaces with darker recesses. Unslabbed (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-composite.jpg',
+      front: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-front.jpg',
+      back: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/41692',
+        es: 'Numista — 1 real, Fernando VII (retrato de Carlos IV), Colombia (N#41692)',
+        en: 'Numista — 1 real, Ferdinand VII (portrait of Charles IV), Colombia (N#41692)',
+        note: {
+          es: 'KM# 68.1; plata de tipo .896; ceca NR de Santa Fe / Bogotá. No se cita aquí una tirada.',
+          en: 'KM# 68.1; type silver .896; NR mint of Santa Fe / Bogotá. No mintage is cited here.',
+        },
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/COLOMBIA-Bogot-bust-1-real-Ferdinand-VII-1810-JF-NGC-VF-30-ex-Becerra_i56359917',
+        es: 'Sedwick — 1 real de Bogotá, Fernando VII, 1810 JF',
+        en: 'Sedwick — Bogotá 1 real, Ferdinand VII, 1810 JF',
+        note: {
+          es: 'Comparable de subasta del 1810 JF (Restrepo 111.3; Calicó 651). No es este ejemplar; no se publican precios.',
+          en: 'Auction comparable for the 1810 JF issue (Restrepo 111.3; Calicó 651). Not this specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/Bogota-Colombia-bust-1-real-Ferdinand-VII-bust-of-Charles-IV-1810JF-JJ-scarce-KM-68-1-Restr_i12160048',
+        es: 'Sedwick — 1 real de Bogotá, busto de Carlos IV, variedad 1810 JF/JJ',
+        en: 'Sedwick — Bogotá 1 real, bust of Charles IV, 1810 JF/JJ variety',
+        note: {
+          es: 'Documenta el retrato retenido de Carlos IV y la variedad Restrepo 111.3a, no atribuida a esta ficha.',
+          en: 'Documents the retained Charles IV bust and Restrepo 111.3a, not attributed to this record.',
+        },
+      },
+    ],
+  },
   {
     id: '1-4-real-santa-marta-1820',
     path: `${COLOMBIA_COINAGE_PATH}1-4-real-santa-marta-1820/`,
@@ -149,6 +232,10 @@ export const coinagePieceCopy = {
 
 export function coinagePieceById(id: string): ColombiaCoinagePiece | undefined {
   return colombiaCoinagePieces.find((piece) => piece.id === id);
+}
+
+export function coinagePieceChapter(piece: ColombiaCoinagePiece) {
+  return colombiaCoinageChapters.find((chapter) => chapter.id === piece.chapterId);
 }
 
 export function coinagePiecePath(piece: ColombiaCoinagePiece, locale: 'es' | 'en'): string {

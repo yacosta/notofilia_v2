@@ -479,6 +479,10 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/colombia-numismatica/catalogo/', 'en'),
       '/en/collection/colombia-numismatics/catalog/',
     );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
+    );
     assert.equal(localizePath('/en/collection/colombia/catalog/', 'es'), '/coleccion/colombia/catalogo/');
   });
 
@@ -579,6 +583,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/'],
+      '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
     );
     assert.equal(redirects['/en/identificar/'], '/en/identify/');
     assert.equal(redirects['/en/herramientas/'], '/en/tools/');

@@ -8,8 +8,10 @@ const coinagePieceSource = readFileSync(new URL('./colombia-coinage-pieces.ts', 
 describe('Colombia coin type catalog enrichment', () => {
   it('keeps one holding and adds documented types without inventing serials', () => {
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 1);
-    assert.match(coinagePieceSource, /export type ColombiaCoinagePieceId = '1-4-real-santa-marta-1820'/);
+    assert.match(coinCatalogSource, /holdingId: '1-real-bogota-1810-nr-jf'/);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 2);
+    assert.match(coinagePieceSource, /'1-real-bogota-1810-nr-jf'/);
+    assert.match(coinagePieceSource, /'1-4-real-santa-marta-1820'/);
     assert.doesNotMatch(coinCatalogSource, /serial:\s*'[A-Z0-9]+'/);
   });
 

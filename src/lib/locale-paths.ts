@@ -272,6 +272,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
   { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
+  { es: '/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', en: '/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/' },
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
   { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
   {
@@ -490,6 +491,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/filipinas/5-pesos-banco-nacional-1916/',
     '/en/coleccion/filipinas/20-pesos/',
     '/en/coleccion/filipinas/',
+    '/en/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/',
     '/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',
