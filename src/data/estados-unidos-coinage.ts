@@ -256,33 +256,33 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     chapterId: 'hard-times',
     year: '1837',
     mint: {
-      es: 'Acuñación privada (sin ceca federal)',
-      en: 'Private striking (no federal mint)',
+      es: 'Acuñación privada; no se asigna ceca federal ni un fabricante nombrado',
+      en: 'Private striking; no federal mint or named manufacturer is assigned',
     },
     denomination: {
       es: 'Ficha de módulo de large cent (sin valor facial)',
       en: 'Large-cent module token (no face value on the piece)',
     },
     composition: {
-      es: 'Cobre',
-      en: 'Copper',
+      es: 'Cobre (composición publicada del tipo HT-34, no un análisis de este ejemplar)',
+      en: 'Copper (published composition of type HT-34, not an assay of this specimen)',
     },
     weight: {
       es: 'No pesado en esta ficha',
       en: 'Not weighed for this record',
     },
     diameter: {
-      es: '≈ 28,5 mm',
-      en: '≈ 28.5 mm',
+      es: '≈ 28,5 mm (medida de tipo; este ejemplar no se midió)',
+      en: '≈ 28.5 mm (type measurement; this specimen was not measured)',
     },
     edge: {
-      es: 'Liso',
-      en: 'Plain',
+      es: 'Liso (tipo publicado; no hay foto aparte del canto)',
+      en: 'Plain (published type; no separate edge photograph)',
     },
     references: 'HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1',
     grade: {
-      es: 'Sin encapsular (colección privada)',
-      en: 'Unslabbed (private collection)',
+      es: 'Sin encapsular. Leyendas y fecha legibles en las fotos; no es un grado numérico.',
+      en: 'Unslabbed. Legends and date legible in the photographs; not a numerical grade.',
     },
     no_serial_reason:
       'Private Hard Times copper token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
@@ -312,20 +312,20 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Copper token HT-34 (Low-20), 1837: a galloping jackass and a tortoise with a SUB TREASURY chest. Neither face carries a denomination; the module is that of a large cent. R-1 on the Hard Times/Fuld scale, not Sheldon. No serial and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es una ficha Hard Times de cobre, módulo de large cent, acuñada en privado en 1837 para circular como menuda. El anverso muestra un burro al galope y la leyenda I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR —STEPS, no «footsteps»—. El reverso muestra una tortuga que carga una caja marcada SUB TREASURY, con EXECUTIVE FINANCIERING, 1837 y FISCAL AGENT. El canto es liso. No es un centavo de la United States Mint ni el tipo HT-33 (EXECUTIVE EXPERIMENT). No hay número de serie ni cápsula.',
-      en: 'This piece is a copper Hard Times token, large-cent module, struck privately in 1837 to circulate as small change. The obverse shows a galloping jackass and the legend I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR — STEPS, not “footsteps.” The reverse shows a tortoise carrying a chest marked SUB TREASURY, with EXECUTIVE FINANCIERING, 1837, and FISCAL AGENT. The edge is plain. It is not a United States Mint cent and not type HT-33 (EXECUTIVE EXPERIMENT). There is no serial and no grading holder.',
+      es: 'Esta pieza es una ficha Hard Times de cobre, módulo de large cent, acuñada en privado en 1837 para circular como menuda. El anverso —el burro— lleva I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR: ILLUSTRIOUS en el arco superior, PREDECESSOR en el inferior, I FOLLOW IN THE sobre el animal, STEPS bajo el cuerpo y OF MY bajo el suelo. En este ejemplar la oreja hacia atrás parece tocar la I de IN, detalle que Heritage usa para HT-34 frente a un HT-33 mal atribuido. Rosetas y orla de perlas. El reverso —la tortuga a la derecha— carga una caja con bandas, remaches y asa, SUB TREASURY en dos líneas; EXECUTIVE en el arco superior, FINANCIERING —así, no «financing»— en el inferior; 1837 bajo el suelo y FISCAL AGENT bajo la fecha. No es un centavo de la Mint ni el HT-33 (EXECUTIVE EXPERIMENT). Sin serial ni cápsula.',
+      en: 'This piece is a copper Hard Times token, large-cent module, struck privately in 1837 to circulate as small change. The obverse — the donkey — reads I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR: ILLUSTRIOUS on the upper arc, PREDECESSOR on the lower, I FOLLOW IN THE above the animal, STEPS under the body, and OF MY below the ground. On this example the rearward ear appears to meet the I in IN, a relationship Heritage uses to distinguish HT-34 from a piece mislabeled HT-33. Rosettes and a beaded border. The reverse — the turtle facing right — carries a banded, riveted chest with a side handle, SUB TREASURY in two lines; EXECUTIVE on the upper arc, FINANCIERING — so spelled, not “financing” — on the lower; 1837 under the ground and FISCAL AGENT under the date. It is not a Mint cent and not HT-33 (EXECUTIVE EXPERIMENT). No serial and no holder.',
     },
     history: {
-      es: 'El cobre cita a Van Buren con STEPS, no con la paráfrasis «footsteps» de su inaugural. En septiembre de 1837 propuso el Independent Treasury: fondos federales en custodia del gobierno, no en un banco nacional ni en pet banks; el Congreso no lo legisló hasta 1840. La ficha pertenece a esa controversia, no a un sistema ya asentado. Douglas Mudd (Money Museum, ANA) lee la tortuga y la caja SUB TREASURY como sátira de la lentitud y de la inseguridad —según los críticos— de mover oro y plata entre subtesorerías dispersas; esta ficha transmite esa acusación y no la adopta como juicio. Low-20; Rulau HT-34; DeWitt CE-1838-4 —el 1838 de DeWitt no cambia la fecha 1837 de la pieza—; Heritage registra también W-11-540a. Sin tirada ni censo aquí.',
-      en: 'The copper cites Van Buren with STEPS, not the “footsteps” paraphrase of his inaugural. In September 1837 he proposed the Independent Treasury: federal funds in government custody, not in a national bank or pet banks; Congress did not enact it until 1840. The token belongs to that controversy, not to a system already in force. Douglas Mudd (ANA Money Museum) reads the tortoise and SUB TREASURY chest as a satire of the slowness and alleged insecurity of moving gold and silver among scattered sub-treasuries; this record reports that partisan charge and does not adopt it as a verdict. Low-20; Rulau HT-34; DeWitt CE-1838-4 — DeWitt’s 1838 does not change the 1837 date on the piece — and Heritage also records W-11-540a. No mintage or census is published here.',
+      es: 'La leyenda del anverso parodia la continuidad jacksoniana de Van Buren: al aceptar la nominación demócrata en mayo de 1835 prometió «tread generally in the footsteps of President Jackson»; el inaugural del 4 de marzo de 1837 siguió esa línea. El cobre no copia una frase literal: lee STEPS, no «footsteps». En septiembre de 1837 propuso el Independent Treasury —fondos federales en custodia del gobierno, no en un banco nacional ni en pet banks—; el Congreso no lo legisló hasta 1840. La ficha pertenece a esa controversia. Douglas Mudd (Money Museum, ANA) lee la tortuga y SUB TREASURY como sátira de la lentitud y de la inseguridad —según los críticos— de mover oro y plata entre subtesorerías; se informa esa acusación, no se adopta como juicio. Low-20; Rulau HT-34; DeWitt CE-1838-4 —el 1838 no cambia la fecha 1837—; Heritage añade W-11-540a. R-1 es rareza de tipo, no una tirada. PCGS no da mintage ni grabador. Sin procedencia registrada aquí.',
+      en: 'The obverse legend parodies Van Buren’s Jacksonian continuity: accepting the Democratic nomination in May 1835 he pledged to “tread generally in the footsteps of President Jackson”; the 4 March 1837 inaugural followed that line. The copper is not a verbatim sentence: it reads STEPS, not “footsteps.” In September 1837 he proposed the Independent Treasury — federal funds in government custody, not in a national bank or pet banks — which Congress did not enact until 1840. The token belongs to that controversy. Douglas Mudd (ANA Money Museum) reads the tortoise and SUB TREASURY as a satire of the slowness and alleged insecurity of moving gold and silver among scattered sub-treasuries; that partisan charge is reported, not adopted. Low-20; Rulau HT-34; DeWitt CE-1838-4 — the 1838 does not change the 1837 date — and Heritage adds W-11-540a. R-1 is a type rarity, not a mintage. PCGS gives no mintage or engraver. No provenance is recorded here.',
     },
     obverseLegend: {
-      es: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. Burro al galope; STEPS bajo el animal.',
-      en: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. Galloping jackass; STEPS beneath the animal.',
+      es: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. ILLUSTRIOUS arriba; PREDECESSOR abajo; STEPS bajo el burro; la oreja trasera toca la I de IN.',
+      en: 'I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR. ILLUSTRIOUS above; PREDECESSOR below; STEPS under the donkey; the rear ear meets the I in IN.',
     },
     reverseLegend: {
-      es: 'EXECUTIVE FINANCIERING · 1837 · FISCAL AGENT. Caja SUB TREASURY sobre una tortuga.',
-      en: 'EXECUTIVE FINANCIERING · 1837 · FISCAL AGENT. SUB TREASURY chest on a tortoise.',
+      es: 'EXECUTIVE (arco superior) · FINANCIERING (arco inferior, así escrito) · SUB TREASURY en la caja · 1837 · FISCAL AGENT.',
+      en: 'EXECUTIVE (upper arc) · FINANCIERING (lower arc, so spelled) · SUB TREASURY on the chest · 1837 · FISCAL AGENT.',
     },
     frontCaption: {
       es: 'Anverso: burro al galope; I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR.',
@@ -336,12 +336,12 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Reverse: tortoise with SUB TREASURY chest; EXECUTIVE FINANCIERING 1837 FISCAL AGENT.',
     },
     scarcity: {
-      es: 'R-1 en la escala de rareza usada para Hard Times y fichas de la Guerra Civil (Rulau/Fuld): común, no la escala de Sheldon de la moneda federal. El tipo se encuentra con facilidad; esta ficha describe el ejemplar fotografiado —leyenda FINANCIERING, sin encapsular— y no una cotización. No se republica aquí un rango de precios ni un censo de PCGS o NGC.',
-      en: 'R-1 on the rarity scale used for Hard Times and Civil War tokens (Rulau/Fuld): common, not the Sheldon scale of federal coin. The type is readily found; this record describes the photographed example — FINANCIERING legend, unslabbed — and not a price. It does not republish a price range or a PCGS or NGC census.',
+      es: 'R-1 (Heritage / Rulau-Fuld): rareza de tipo, no una tirada. PCGS no publica mintage. El tono gris de las fotos no prueba plata: el tipo HT-34 se cataloga en cobre y no se asigna aquí un color de cospel. No se republican precios ni un censo de encapsulados.',
+      en: 'R-1 (Heritage / Rulau-Fuld): a type rarity, not a mintage. PCGS publishes no mintage. The gray look of the photographs does not prove silver: type HT-34 is catalogued as copper, and no planchet-color designation is assigned here. No prices or slab census are republished.',
     },
     certification: {
-      es: 'El ejemplar está suelto, sin cápsula. Las fichas de este tipo no llevan serial. La identidad es el objeto fotografiado —HT-34, Low-20, DeWitt CE-1838-4, EXECUTIVE FINANCIERING 1837— no un certificado.',
-      en: 'The example is raw, with no holder. Tokens of this type carry no serial. The identity is the photographed object — HT-34, Low-20, DeWitt CE-1838-4, EXECUTIVE FINANCIERING 1837 — not a certificate.',
+      es: 'Sin cápsula. Las fotos muestran las leyendas principales y la fecha; no sustituyen un grado de mano. La atribución de tipo no es un certificado de autenticidad de este cobre. Sin serial.',
+      en: 'No holder. The photographs show the principal legends and date; they do not replace an in-hand grade. Type attribution is not a certificate of authenticity for this copper. No serial.',
     },
     sources: [
       {
@@ -390,12 +390,30 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
         },
       },
       {
-        href: 'https://www.numisbids.com/sale/1846/lot/8572',
-        es: 'Heritage / NumisBids — Long Beach 1252, lote 8572 (comparable)',
-        en: 'Heritage / NumisBids — Long Beach 1252, lot 8572 (comparable)',
+        href: 'https://millercenter.org/president/vanburen/domestic-affairs',
+        es: 'Miller Center — Martin Van Buren: Domestic Affairs',
+        en: 'Miller Center — Martin Van Buren: Domestic Affairs',
         note: {
-          es: 'Atribución del tipo: Low-20, HT-34, DeWitt CE-1838-4; cobre, canto liso, fecha 1837. No es esta pieza ni se republica el martillo.',
-          en: 'Type attribution: Low-20, HT-34, DeWitt CE-1838-4; copper, plain edge, dated 1837. Not this holding; the hammer is not republished.',
+          es: 'Nominación de mayo de 1835 («footsteps» de Jackson); sesión de septiembre de 1837 e Independent Treasury de 1840.',
+          en: 'May 1835 nomination (“footsteps” of Jackson); September 1837 session and Independent Treasury of 1840.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1837-ae-token-ht-34-illustrious-predecessor-bn/77372',
+        es: 'PCGS CoinFacts — 1837 HT-34 Illustrious Predecessor',
+        en: 'PCGS CoinFacts — 1837 HT-34 Illustrious Predecessor',
+        note: {
+          es: 'Tipo de cobre; sin tirada ni grabador publicados. No se republican precios.',
+          en: 'Copper type; no published mintage or engraver. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://coins.ha.com/itm/hard-times-tokens/1837-token-illustrious-predecessor-executive-financiering-low-20-dewitt-ce-1838-4-ht-34-w-11-540a-r1-au58-ngc-copper-plain-edge-/a/60161-93126.s',
+        es: 'Heritage — lote 60161-93126 (comparable de tipo)',
+        en: 'Heritage — lot 60161-93126 (type comparable)',
+        note: {
+          es: 'HT-34, Low-20, DeWitt CE-1838-4, W-11-540a; cobre, canto liso, fecha 1837. No es esta pieza; no se republica el martillo.',
+          en: 'HT-34, Low-20, DeWitt CE-1838-4, W-11-540a; copper, plain edge, dated 1837. Not this holding; the hammer is not republished.',
         },
       },
     ],

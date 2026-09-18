@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T14:43:31.034Z",
+  "generatedAt": "2026-09-18T14:57:33.470Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1959,7 +1959,7 @@
       "hash": "0063235533632300",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
-      "pick": "HT-34 · Low-20 · R-1",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
       "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-composite.jpg",
       "title": {
         "es": "Semiquincentenario",
@@ -1972,7 +1972,7 @@
       "hash": "000c2e162e1e0c00",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
-      "pick": "HT-34 · Low-20 · R-1",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
       "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg",
       "title": {
         "es": "Semiquincentenario",
@@ -1985,7 +1985,7 @@
       "hash": "00042a122a2e0c00",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
-      "pick": "HT-34 · Low-20 · R-1",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
       "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-back.jpg",
       "title": {
         "es": "Semiquincentenario",
@@ -2001,8 +2001,8 @@
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
       "image": "/images/catalog/estados-unidos/1-dolar-trump-1776-2026-composite.jpg",
       "title": {
-        "es": "Ficha de centavo · Hard Times · 1837",
-        "en": "Cent-sized token · Hard Times · 1837"
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
       }
     },
     {
@@ -2014,8 +2014,8 @@
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
       "image": "/images/catalog/estados-unidos/1-dolar-trump-1776-2026-front.jpg",
       "title": {
-        "es": "Ficha de centavo · Hard Times · 1837",
-        "en": "Cent-sized token · Hard Times · 1837"
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
       }
     },
     {
@@ -2027,8 +2027,8 @@
       "pick": "Pub. L. 116-330 · 31 U.S.C. § 5112(y)(1)(C)",
       "image": "/images/catalog/estados-unidos/1-dolar-trump-1776-2026-back.jpg",
       "title": {
-        "es": "Ficha de centavo · Hard Times · 1837",
-        "en": "Cent-sized token · Hard Times · 1837"
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
       }
     },
     {

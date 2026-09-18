@@ -174,8 +174,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'Sin caricatura sindicalizada, el cobre llevó el argumento al mostrador. Jackson es el blanco habitual: una ficha sin fecha lo muestra saliendo de un baúl con espada y bolsa, acusación whig de haber reunido poder militar y control del Tesoro. El lema Executive Experiment se burla de su manejo del sistema bancario; el reverso suele llevar un burro «testarudo». El juego con Jackson (jackass) lo popularizó más tarde Thomas Nast como símbolo del Partido Demócrata. El HT-34 de esta vitrina lleva la leyenda I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR —STEPS, no «footsteps»— y carga a una tortuga con la caja SUB TREASURY; el HT-33 lee Executive Experiment en lugar de Executive Financiering.',
-        en: 'Without syndicated cartoons, copper carried the argument to the counter. Jackson is the usual target: one undated token shows him emerging from a chest with sword and money bag, a Whig charge that he had joined military power to control of the Treasury. The motto Executive Experiment mocks his handling of the banks; the reverse often carries a “stubborn” donkey. The pun on Jackson (jackass) was later popularized by Thomas Nast as the Democratic Party’s symbol. The HT-34 in this case reads I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR — STEPS, not “footsteps” — and loads a tortoise with the SUB TREASURY chest; HT-33 reads Executive Experiment instead of Executive Financiering.',
+        es: 'Sin caricatura sindicalizada, el cobre llevó el argumento al mostrador. Jackson es el blanco habitual: una ficha sin fecha lo muestra saliendo de un baúl con espada y bolsa, acusación whig de haber reunido poder militar y control del Tesoro. El lema Executive Experiment se burla de su manejo del sistema bancario; el reverso suele llevar un burro «testarudo». El juego con Jackson (jackass) lo popularizó más tarde Thomas Nast como símbolo del Partido Demócrata. El HT-34 de esta vitrina lleva I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR —parodia, no una frase literal del inaugural— y carga a una tortuga con la caja SUB TREASURY; el HT-33 lee Executive Experiment en lugar de Executive Financiering.',
+        en: 'Without syndicated cartoons, copper carried the argument to the counter. Jackson is the usual target: one undated token shows him emerging from a chest with sword and money bag, a Whig charge that he had joined military power to control of the Treasury. The motto Executive Experiment mocks his handling of the banks; the reverse often carries a “stubborn” donkey. The pun on Jackson (jackass) was later popularized by Thomas Nast as the Democratic Party’s symbol. The HT-34 in this case reads I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR — a parody, not a verbatim inaugural sentence — and loads a tortoise with the SUB TREASURY chest; HT-33 reads Executive Experiment instead of Executive Financiering.',
       },
       {
         es: 'Circulan también Daniel Webster y William Henry Harrison. Las fichas whig usan un barco —la nave del Estado—, a veces naufragada, metáfora de la economía bajo Van Buren. Un fénix sobre llamas promete que el hard money renacerá de los shinplasters. El Running Boar (HT-9 a HT-13) parodia la política jacksoniana y sobrevive en cantidad.',
@@ -362,6 +362,15 @@ export const hardTimesSeriesSources: CatalogSource[] = [
     note: {
       es: 'Propuesta de septiembre de 1837; ley del 4 de julio de 1840.',
       en: 'September 1837 proposal; act of 4 July 1840.',
+    },
+  },
+  {
+    href: 'https://millercenter.org/president/vanburen/domestic-affairs',
+    es: 'Miller Center — Martin Van Buren: Domestic Affairs',
+    en: 'Miller Center — Martin Van Buren: Domestic Affairs',
+    note: {
+      es: 'Nominación de 1835 y sesión extraordinaria de septiembre de 1837.',
+      en: '1835 nomination and the September 1837 special session.',
     },
   },
   {
