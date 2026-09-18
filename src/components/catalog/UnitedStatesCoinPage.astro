@@ -36,6 +36,7 @@ const seo = piecePageMeta({
   lead: coin.lead[locale],
   locale,
   country: locale === 'en' ? 'United States' : 'Estados Unidos',
+  heading: coin.heading?.[locale],
 });
 const siblings = pieceSiblings(unitedStatesCoins, coin.path);
 const jsonCrumbs = [
@@ -99,7 +100,11 @@ const jsonCrumbs = [
       <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
         {seo.h1}
       </h1>
-      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
+      {
+        seo.subtitle !== seo.h1 && !coin.heading ? (
+          <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
+        ) : null
+      }
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{coin.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
@@ -227,6 +232,7 @@ const jsonCrumbs = [
         prev={siblings.prev ? { href: coinPath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
         next={siblings.next ? { href: coinPath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
         related={siblings.related.map((item) => ({ href: coinPath(item, locale), title: item.title[locale], image: item.images.front }))}
+        relatedLead={t.relatedLead}
       />
 
       <p class="mt-12">

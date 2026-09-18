@@ -88,8 +88,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
         en: 'American numismatics meets monetary history and politics here. Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent or half-cent module — about 28 mm. They did not come from a sovereign mint: they covered retail small change when legal-tender metal ran short.',
       },
       {
-        es: 'Sirvieron a la vez de medio de pago y de prensa de partido. Llenaron el hueco dejado por el atesoramiento de oro, plata y hasta de los centavos de cobre, y sus caras llevaron sátira, lemas populistas y publicidad mercantil. Hoy se clasifican como exonumia —objetos numismáticos que no son moneda ni papel de curso federal—. En los años 1830 y 1840 circularon junto al cobre federal y a la plata extranjera muy gastada.',
-        en: 'They served at once as a medium of exchange and as party media. They filled the gap left by the hoarding of gold, silver, and even copper cents, and their faces carried satire, populist mottos, and mercantile advertising. Today they are classed as exonumia — numismatic objects that are not federal legal-tender coin or paper. In the 1830s and 1840s they passed with federal copper and heavily worn foreign silver.',
+        es: 'Sirvieron a la vez de medio de pago y de prensa de partido. Douglas Mudd, director y curador del Money Museum de la American Numismatic Association, sitúa la serie entre 1832 y 1844 y recuerda que la escasez de menuda era anterior al Pánico de 1837: arrastraba desde la época colonial pese a la Mint. Las fichas cubrieron ese problema práctico y, al mismo tiempo, llevaron lemas políticos por el comercio diario. Hoy se clasifican como exonumia —objetos numismáticos que no son moneda ni papel de curso federal—. En los años 1830 y 1840 circularon junto al cobre federal y a la plata extranjera muy gastada.',
+        en: 'They served at once as a medium of exchange and as party media. Douglas Mudd, director and curator of the American Numismatic Association’s Money Museum, places the series in 1832–1844 and notes that the shortage of small change predated the Panic of 1837: it had run since the colonial period despite the Mint. The tokens met that practical need and, at the same time, carried political mottos through everyday commerce. Today they are classed as exonumia — numismatic objects that are not federal legal-tender coin or paper. In the 1830s and 1840s they passed with federal copper and heavily worn foreign silver.',
       },
     ],
   },
@@ -137,6 +137,23 @@ export const hardTimesNarrative: HardTimesSection[] = [
     ],
   },
   {
+    id: 'independent-treasury',
+    title: {
+      es: 'El Independent Treasury y la caja SUB TREASURY',
+      en: 'The Independent Treasury and the SUB TREASURY chest',
+    },
+    paragraphs: [
+      {
+        es: 'Van Buren propuso guardar los fondos federales en custodia del gobierno —bóvedas del Tesoro y subtesorerías— en lugar de depositarlos en un banco nacional o en los pet banks estatales. Presentó el plan en la sesión extraordinaria del Congreso de septiembre de 1837. El Congreso no lo convirtió en ley hasta 1840 (Independent Treasury Act, 4 de julio); los whigs lo derogaron al año siguiente. El HT-34 pertenece a la controversia sobre un arreglo financiero propuesto, no a la crítica de un sistema ya consolidado. El blanco era separar el Tesoro federal del sistema bancario.',
+        en: 'Van Buren proposed keeping federal funds in government custody — Treasury vaults and sub-treasuries — rather than depositing them in a national bank or in the state pet banks. He put the plan before the special session of Congress in September 1837. Congress did not enact it until 1840 (Independent Treasury Act, 4 July); the Whigs repealed it the following year. HT-34 belongs to the controversy over a proposed financial arrangement, not to criticism of a system already long in force. Its target was the separation of the federal Treasury from the banking system.',
+      },
+      {
+        es: 'Eso da sentido a la tortuga del reverso. Mudd explica la caja fuerte marcada SUB TREASURY como sátira de la lentitud y de la inseguridad —según los críticos— de mover especie, oro y plata, entre subtesorerías dispersas por el país. No es solo un chiste genérico sobre un remedio gubernamental lento. La ficha transmite esa acusación partidista; esta vitrina no la adopta como juicio objetivo de la política. Ninguna de las dos caras del HT-34 lleva un valor facial: decir «ficha de centavo» describe el módulo de large cent y el papel de menuda, no una denominación impresa.',
+        en: 'That is why the reverse tortoise matters. Mudd reads the strongbox marked SUB TREASURY as a satire of the slowness and the alleged insecurity of moving specie — gold and silver coin — among geographically scattered sub-treasuries. It is more specific than a general joke about a slow government remedy. The token conveys that partisan criticism; this case does not adopt it as an objective verdict on the policy. Neither face of HT-34 carries an explicit denomination: calling it a “cent token” describes the large-cent module and its role as small change, not a value written on the piece.',
+      },
+    ],
+  },
+  {
     id: 'typology',
     title: {
       es: 'Cinco tipos de Lyman Low',
@@ -157,8 +174,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'Sin caricatura sindicalizada, el cobre llevó el argumento al mostrador. Jackson es el blanco habitual: una ficha sin fecha lo muestra saliendo de un baúl con espada y bolsa, acusación whig de haber reunido poder militar y control del Tesoro. El lema Executive Experiment se burla de su manejo del sistema bancario; el reverso suele llevar un burro «testarudo». El juego con Jackson (jackass) lo popularizó más tarde Thomas Nast como símbolo del Partido Demócrata. El HT-34 de esta vitrina cita a Van Buren —I follow in the steps of my illustrious predecessor— y carga a una tortuga con la caja SUB TREASURY; el HT-33 lee Executive Experiment en lugar de Executive Financiering.',
-        en: 'Without syndicated cartoons, copper carried the argument to the counter. Jackson is the usual target: one undated token shows him emerging from a chest with sword and money bag, a Whig charge that he had joined military power to control of the Treasury. The motto Executive Experiment mocks his handling of the banks; the reverse often carries a “stubborn” donkey. The pun on Jackson (jackass) was later popularized by Thomas Nast as the Democratic Party’s symbol. The HT-34 in this case quotes Van Buren — I follow in the steps of my illustrious predecessor — and loads a tortoise with the SUB TREASURY chest; HT-33 reads Executive Experiment instead of Executive Financiering.',
+        es: 'Sin caricatura sindicalizada, el cobre llevó el argumento al mostrador. Jackson es el blanco habitual: una ficha sin fecha lo muestra saliendo de un baúl con espada y bolsa, acusación whig de haber reunido poder militar y control del Tesoro. El lema Executive Experiment se burla de su manejo del sistema bancario; el reverso suele llevar un burro «testarudo». El juego con Jackson (jackass) lo popularizó más tarde Thomas Nast como símbolo del Partido Demócrata. El HT-34 de esta vitrina lleva la leyenda I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR —STEPS, no «footsteps»— y carga a una tortuga con la caja SUB TREASURY; el HT-33 lee Executive Experiment en lugar de Executive Financiering.',
+        en: 'Without syndicated cartoons, copper carried the argument to the counter. Jackson is the usual target: one undated token shows him emerging from a chest with sword and money bag, a Whig charge that he had joined military power to control of the Treasury. The motto Executive Experiment mocks his handling of the banks; the reverse often carries a “stubborn” donkey. The pun on Jackson (jackass) was later popularized by Thomas Nast as the Democratic Party’s symbol. The HT-34 in this case reads I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR — STEPS, not “footsteps” — and loads a tortoise with the SUB TREASURY chest; HT-33 reads Executive Experiment instead of Executive Financiering.',
       },
       {
         es: 'Circulan también Daniel Webster y William Henry Harrison. Las fichas whig usan un barco —la nave del Estado—, a veces naufragada, metáfora de la economía bajo Van Buren. Un fénix sobre llamas promete que el hard money renacerá de los shinplasters. El Running Boar (HT-9 a HT-13) parodia la política jacksoniana y sobrevive en cantidad.',
@@ -264,8 +281,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando la Specie Circular y el pánico secaron el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-34 fotografiado en la colección.',
-        en: 'Hard Times tokens show how private trade invented small change when the Specie Circular and the panic dried up federal metal. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the Sub-Treasury tortoise. This case does not price the market or republish quotes; it records the photographed HT-34 in the collection.',
+        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando escaseó el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería propuesta. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-34 fotografiado en la colección.',
+        en: 'Hard Times tokens show how private trade invented small change when federal metal ran short. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the tortoise of the proposed Sub-Treasury. This case does not price the market or republish quotes; it records the photographed HT-34 in the collection.',
       },
     ],
   },
@@ -327,6 +344,24 @@ export const hardTimesSeriesSources: CatalogSource[] = [
     note: {
       es: 'Marco de 1832–1844, Pánico de 1837 y menuda privada. No se republican precios.',
       en: '1832–1844 frame, Panic of 1837, and private small change. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.money.org/tales-from-the-vault-hard-times-tokens/',
+    es: 'Douglas Mudd — Tales from the Vault: Hard Times Tokens (ANA, 6 sep. 2015)',
+    en: 'Douglas Mudd — Tales from the Vault: Hard Times Tokens (ANA, 6 Sep. 2015)',
+    note: {
+      es: 'Serie 1832–1844; escasez de menuda anterior al pánico; tortuga y especie entre subtesorerías.',
+      en: '1832–1844 series; small-change shortage before the panic; tortoise and specie among sub-treasuries.',
+    },
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Independent_Treasury',
+    es: 'Wikipedia — Independent Treasury',
+    en: 'Wikipedia — Independent Treasury',
+    note: {
+      es: 'Propuesta de septiembre de 1837; ley del 4 de julio de 1840.',
+      en: 'September 1837 proposal; act of 4 July 1840.',
     },
   },
   {

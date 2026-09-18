@@ -228,8 +228,8 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     en: 'Hard Times tokens',
   },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
-    es: 'Ficha de centavo · Hard Times · 1837',
-    en: 'Cent-sized token · Hard Times · 1837',
+    es: 'Ficha Hard Times de 1837 · HT-34 / Low-20',
+    en: '1837 Hard Times token · HT-34 / Low-20',
   },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',

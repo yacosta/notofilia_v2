@@ -15,10 +15,12 @@ interface Props {
   prev?: Sibling;
   next?: Sibling;
   related: Sibling[];
+  relatedLead?: string;
 }
 
-const { locale, prev, next, related } = Astro.props;
+const { locale, prev, next, related, relatedLead } = Astro.props;
 const t = pieceChrome(locale);
+const relatedIntro = relatedLead ?? t.relatedLead;
 ---
 
 {
@@ -46,7 +48,7 @@ const t = pieceChrome(locale);
       <h2 id="related-pieces-heading" class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
         {t.relatedHeading}
       </h2>
-      <p class="mb-6 mt-0 text-[15px]/6 text-muted">{t.relatedLead}</p>
+      <p class="mb-6 mt-0 text-[15px]/6 text-muted">{relatedIntro}</p>
       <ul class:list={['m-0', CATALOG_PIECE_GRID]}>
         {related.map((item) => (
           <li>
