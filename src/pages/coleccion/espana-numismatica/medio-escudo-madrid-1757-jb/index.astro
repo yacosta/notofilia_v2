@@ -1,0 +1,9 @@
+---
+import SpainCoinPage from '../../../../components/catalog/SpainCoinPage.astro';
+import { coinById } from '../../../../data/espana-coinage';
+
+const coin = coinById('medio-escudo-madrid-1757-jb');
+if (!coin) throw new Error('Missing Spain 1757 Madrid half escudo catalog coin');
+---
+
+<SpainCoinPage locale="es" coin={coin} />

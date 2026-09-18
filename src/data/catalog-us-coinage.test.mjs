@@ -76,14 +76,14 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(data, /1-dolar-trump-1776-2026-back\.jpg/);
   });
 
-  it('cross-links paper and coinage and opens four numismatic houses', () => {
+  it('cross-links paper and coinage and opens five numismatic houses', () => {
     assert.match(notes, /coinageLead: 'La moneda metálica de este país se documenta en la vitrina de numismática.'/);
     assert.match(notes, /coinageLink: 'Estados Unidos · Numismática'/);
     assert.match(seriesPage, /USA_COINAGE_PATH/);
     assert.match(seriesPage, /t\.coinageLead/);
     assert.doesNotMatch(seriesPage, /target="_blank"/);
-    assert.match(numismatica, /Abren cuatro casas/);
-    assert.match(numismatica, /Four houses are open/);
+    assert.match(numismatica, /Abren cinco casas/);
+    assert.match(numismatica, /Five houses are open/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
   });

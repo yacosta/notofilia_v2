@@ -1,4 +1,5 @@
 import { COLOMBIA_COINAGE_PATH } from './colombia-coinage';
+import { SPAIN_COINAGE_PATH } from './espana-coinage';
 import { LAZARETTOS_PATH } from './lazarettos';
 import { NETHERLANDS_COINAGE_PATH } from './netherlands-coinage';
 import { USA_COINAGE_PATH } from './estados-unidos-coinage';
@@ -21,6 +22,15 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     lead: {
       es: 'Casa de Moneda de Santa Fe, cecas de la Independencia, reforma decimal y la Fábrica de Ibagué.',
       en: 'The Santa Fe mint, independence issues, the decimal reform, and the Ibagué factory.',
+    },
+  },
+  {
+    href: SPAIN_COINAGE_PATH,
+    years: { es: '1535–1864', en: '1535–1864' },
+    title: { es: 'España', en: 'Spain' },
+    lead: {
+      es: 'El medio escudo de oro de Fernando VI, Madrid 1757, ensaye JB.',
+      en: 'Ferdinand VI’s gold half escudo, Madrid 1757, assayers JB.',
     },
   },
   {
@@ -56,32 +66,32 @@ export const numismaticaCopy = {
   es: {
     metaTitle: 'Numismática · Catálogo de moneda metálica | Notofilia',
     metaDescription:
-      'Catálogo de numismática de Notofilia: moneda metálica de Colombia, Estados Unidos, Países Bajos y lazaretos — Caño del Oro, Contratación, Agua de Dios y la coscoja.',
+      'Catálogo de numismática de Notofilia: moneda metálica de Colombia, España, Estados Unidos, Países Bajos y lazaretos — Caño del Oro, Contratación, Agua de Dios y la coscoja.',
     kicker: 'Colección virtual',
     title: 'Numismática',
     subtitle: 'Moneda metálica',
     intro: [
       'La numismática en esta colección es el estudio de la moneda acuñada: oro y plata coloniales, cobres de necesidad, pesos decimales y las series que aún circulan. No sustituye a la notafilia; la acompaña. El papel de cada país tiene su propia vitrina.',
-      'Abren cuatro casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué—, Estados Unidos —fichas Hard Times, la ceca de Filadelfia y el dólar del Semiquincentenario—, Lazarettos —la exonumia del aislamiento, de Caño del Oro a la coscoja— y Países Bajos —del gulden al euro—. Otras se irán sumando como en el catálogo de billetes.',
+      'Abren cinco casas: Colombia —cuatro siglos de cecas, de Santa Fe a Ibagué—, España —el medio escudo de Madrid de Fernando VI—, Estados Unidos —fichas Hard Times, la ceca de Filadelfia y el dólar del Semiquincentenario—, Lazarettos —la exonumia del aislamiento, de Caño del Oro a la coscoja— y Países Bajos —del gulden al euro—. Otras se irán sumando como en el catálogo de billetes.',
     ],
     holdingsTitle: 'El catálogo',
-    holdingsIntro: 'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, Estados Unidos, Lazarettos y Países Bajos.',
+    holdingsIntro: 'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos y Países Bajos.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
   en: {
     metaTitle: 'Numismatics · Coin catalog | Notofilia',
     metaDescription:
-      'Notofilia’s coin catalog: Colombian coinage, the United States, the Netherlands, and lazarettos — Caño del Oro, Contratación, Agua de Dios, and the coscoja.',
+      'Notofilia’s coin catalog: Colombian coinage, Spain, the United States, the Netherlands, and lazarettos — Caño del Oro, Contratación, Agua de Dios, and the coscoja.',
     kicker: 'Virtual collection',
     title: 'Numismatics',
     subtitle: 'Coinage',
     intro: [
       'Numismatics in this collection is the study of struck coin: colonial gold and silver, necessity coppers, decimal pesos, and the series still in the pocket. It does not replace notaphily; it stands beside it. Each country’s paper has its own case.',
-      'Four houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — the United States — Hard Times tokens, the Philadelphia mint, and the Semiquincentennial dollar — Lazarettos — the exonumia of isolation, from Caño del Oro to the coscoja — and the Netherlands — from the gulden to the euro. Others will follow as they do in the note catalog.',
+      'Five houses are open: Colombia — four centuries of mints, from Santa Fe to Ibagué — Spain — Ferdinand VI’s Madrid half escudo — the United States — Hard Times tokens, the Philadelphia mint, and the Semiquincentennial dollar — Lazarettos — the exonumia of isolation, from Caño del Oro to the coscoja — and the Netherlands — from the gulden to the euro. Others will follow as they do in the note catalog.',
     ],
     holdingsTitle: 'The catalog',
-    holdingsIntro: 'One case to a card, left to right as each is documented. Colombia-Numismatics, the United States, Lazarettos, and the Netherlands open the row.',
+    holdingsIntro: 'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, and the Netherlands open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },

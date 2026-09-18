@@ -164,6 +164,7 @@ export const additions: Holding[] = [
   { id: 'ec-1993-100-sucres-wf00000003', kind: 'banknote', country: 'EC' },
   { id: 'us-1837-ht-34-burro-tortuga', kind: 'coin', country: 'US' },
   { id: 'co-1810-1-real-bogota-nr-jf', kind: 'coin', country: 'CO' },
+  { id: 'es-1757-medio-escudo-madrid-jb', kind: 'coin', country: 'ES' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -255,6 +256,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'ec-1993-100-sucres-p123ab' },
   { id: 'us-1837-ht-34-low-20' },
   { id: 'co-1810-1-real-bogota-km68-1' },
+  { id: 'es-1757-half-escudo-km378' },
 ];
 
 export type CollectionStats = {
