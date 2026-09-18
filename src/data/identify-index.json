@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T16:27:35.388Z",
+  "generatedAt": "2026-09-18T18:05:22.018Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -40,6 +40,45 @@
       "title": {
         "es": "Billetes de polímero",
         "en": "Polymer banknotes"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "0063b073d2556100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "081e5d75af5d1300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "back",
+      "hash": "0c324b0b862d1308",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
       }
     },
     {
@@ -1956,7 +1995,7 @@
     {
       "pieceId": "medio-escudo-madrid-1757-jb",
       "face": "front",
-      "hash": "2315135016563323",
+      "hash": "2335127596d21123",
       "kind": "coin",
       "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
       "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
@@ -1969,7 +2008,7 @@
     {
       "pieceId": "medio-escudo-madrid-1757-jb",
       "face": "front",
-      "hash": "0c2b372333332f0c",
+      "hash": "0c2b13233333230c",
       "kind": "coin",
       "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
       "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
@@ -1982,7 +2021,7 @@
     {
       "pieceId": "medio-escudo-madrid-1757-jb",
       "face": "back",
-      "hash": "040b25171b4d2704",
+      "hash": "0c1b4923175b270c",
       "kind": "coin",
       "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
       "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
