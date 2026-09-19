@@ -41,7 +41,6 @@ export const copy = {
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
     browseTitle: 'Explorar Colección Virtual',
-    browseIntro: 'Entre por un país, un material o un tema especializado.',
     collectionHubLead:
       '¿Qué más? Esta página es el índice de la Colección Virtual: un museo de papel y metal, no una tienda. Nada está a la venta. Con mucho gusto le recibimos para que entre por un país, un material o un tema —Colombia, Filipinas, China, Estados Unidos, Puerto Rico, Países Bajos, el polímero mundial, los lazaretos— y abra las fichas con serial, Pick y fotografías de anverso y reverso. Aquí no hay carrito ni lista de precios: hay contexto, fuentes y la pieza tal como está en la colección.',
     collectionHubBody:
@@ -143,7 +142,6 @@ export const copy = {
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
     browseTitle: 'Explore Virtual Collection',
-    browseIntro: 'Enter through a country, material, or specialty theme.',
     collectionHubLead:
       'This page is the index of the Virtual Collection: a museum of paper and metal, not a shop. Nothing is for sale. Enter through a country, a substrate, or a theme — Colombia, the Philippines, China, the United States, Puerto Rico, the Netherlands, world polymer, the lazarettos — and open the records with serials, Pick numbers, and face and back photographs. There is no cart and no price list: you get context, sources, and the piece as it sits in the collection.',
     collectionHubBody:
