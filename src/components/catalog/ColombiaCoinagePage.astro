@@ -5,16 +5,13 @@ import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
-import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { COLOMBIA_PATH } from '../../data/colombia';
 import { COLOMBIA_COIN_CATALOG_PATH } from '../../data/colombia-coin-type-catalog';
 import {
-  coinageChapterHref,
   coinageCopy,
   coinagePath,
   coinageSources,
   colombiaCoinageChapters,
-  colombiaCoinageExtraCases,
 } from '../../data/colombia-coinage';
 import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
@@ -104,85 +101,6 @@ const jsonLd = collectionPageJsonLd({
           {t.visualCatalogLink}
         </a>
       </p>
-
-      <section class="mt-16" aria-labelledby="holdings-heading">
-        <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
-          {t.holdingsTitle}
-        </h2>
-        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
-
-        <ol
-          class:list={['m-0', CATALOG_PIECE_GRID]}
-          aria-label={copy[locale].casesLinedUp}
-        >
-          {
-            colombiaCoinageChapters.map((chapter) => {
-              const piece = piecesByChapter[chapter.id]?.[0];
-              return (
-              <li class="min-w-0">
-                <a
-                  href={coinageChapterHref(chapter.id)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  {
-                    piece ? (
-                      <CatalogThumb
-                    src={piece.images.composite}
-                    alt={piece.title[locale]}
-                    width={1536}
-                    height={1024}
-                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                  />
-                    ) : (
-                      <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                        <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                          {chapter.years[locale]}
-                        </span>
-                      </div>
-                    )
-                  }
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {chapter.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {chapter.years[locale]}
-                  </p>
-                  {
-                    piece ? (
-                      <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">{piece.title[locale]}</p>
-                    ) : null
-                  }
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewChapter} →</span>
-                </a>
-              </li>
-              );
-            })
-          }
-          {
-            colombiaCoinageExtraCases.map((item) => (
-              <li class="min-w-0">
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {item.years[locale]}
-                    </span>
-                  </div>
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {item.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {item.years[locale]}
-                  </p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCase} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
-      </section>
 
       <div class="mt-16 space-y-12">
         {
