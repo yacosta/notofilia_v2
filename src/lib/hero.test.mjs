@@ -18,16 +18,16 @@ describe('homepage LCP hero strings', () => {
   it('exports production CDN src and srcset that match the mobile patch', () => {
     assert.equal(
       heroSrc,
-      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg',
+      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-engraving-01.jpg',
     );
     assert.equal(
       heroSrcset,
       [
-        '/cdn-cgi/image/width=480,format=avif,quality=50/images/hero-slide.jpg 480w',
-        '/cdn-cgi/image/width=640,format=avif,quality=55/images/hero-slide.jpg 640w',
-        '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg 1080w',
-        '/cdn-cgi/image/width=1600,format=avif,quality=60/images/hero-slide.jpg 1600w',
-        '/cdn-cgi/image/width=2400,format=avif,quality=55/images/hero-slide.jpg 2400w',
+        '/cdn-cgi/image/width=480,format=avif,quality=50/images/hero-engraving-01.jpg 480w',
+        '/cdn-cgi/image/width=640,format=avif,quality=55/images/hero-engraving-01.jpg 640w',
+        '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-engraving-01.jpg 1080w',
+        '/cdn-cgi/image/width=1600,format=avif,quality=60/images/hero-engraving-01.jpg 1600w',
+        '/cdn-cgi/image/width=2400,format=avif,quality=55/images/hero-engraving-01.jpg 2400w',
       ].join(', '),
     );
     assert.equal(heroSizes, '100vw');

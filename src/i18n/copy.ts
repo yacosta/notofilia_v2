@@ -33,7 +33,7 @@ export const copy = {
     definitions: 'Definiciones',
     numismatics: 'Numismática',
     heroAlt:
-      'Primer plano de un billete de 5 quetzales de Guatemala, con el ave quetzal, estilo numismática y notafilia',
+      'Grabado a talla dulce de Eva Perón con el brazo en alto ante una multitud, detalle de un billete argentino',
     heroKicker: 'Notofilia.com',
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
@@ -135,7 +135,7 @@ export const copy = {
     definitions: 'Definitions',
     numismatics: 'Numismatics',
     heroAlt:
-      'Close-up of a Guatemala 5-quetzal banknote with the quetzal bird, in a notaphily style',
+      'Intaglio engraving of Eva Perón with her arm raised before a crowd, detail from an Argentine banknote',
     heroKicker: 'Notofilia.com',
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
