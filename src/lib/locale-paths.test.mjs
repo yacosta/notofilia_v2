@@ -198,6 +198,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/1000-dollars-series-1934a-new-york/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/', 'en'),
+      '/en/collection/united-states/1-dollar-silver-certificate-1928a/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/', 'en'),
       '/en/collection/united-states/1-dollar-silver-certificate-1957b/',
     );

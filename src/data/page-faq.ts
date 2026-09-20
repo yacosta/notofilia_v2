@@ -197,6 +197,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
+        en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1601 (P#412a), firmas Woods–Mellon, sello y seriales azules. El apodo Funnyback describe el reverso verde con un ONE ornamental, no un error. Esta pieza es el serial D00508932B, bloque D–B, emisión ordinaria.',
+        en: 'It is a small-size Silver Certificate, Fr. 1601 (P#412a), Woods–Mellon signatures, blue seal and serials. The nickname Funnyback describes the green reverse with an ornamental ONE, not an error. This piece is serial D00508932B, D–B block, a regular issue.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 2 dólares United States Note de 1917?',
         en: 'What is the Series 1917 United States Note $2?',
       },
