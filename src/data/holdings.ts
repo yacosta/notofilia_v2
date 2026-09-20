@@ -167,6 +167,7 @@ export const additions: Holding[] = [
   { id: 'es-1757-medio-escudo-madrid-jb', kind: 'coin', country: 'ES' },
   { id: 'co-1801-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'us-sc-1928a-d00508932b', kind: 'banknote', country: 'US' },
+  { id: 'us-mpc-481-5-d02536728d', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -261,6 +262,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'es-1757-half-escudo-km378' },
   { id: 'co-1801-1-escudo-popayan-km56-2' },
   { id: 'us-sc-1928a-fr1601' },
+  { id: 'us-mpc-481-5-m22a' },
 ];
 
 export type CollectionStats = {

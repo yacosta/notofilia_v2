@@ -21,6 +21,7 @@ import {
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
+import { mpcProgramNotes } from '../data/mpc';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { spainCoins } from '../data/espana-coinage';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage';
@@ -317,6 +318,24 @@ function pieceSeeds(): PieceSeed[] {
   }
 
   for (const note of mpcVietnamNotes) {
+    seeds.push({
+      id: `mpc-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      serial: note.serial,
+      title: note.title,
+      dek: note.lead,
+      kicker: note.kicker,
+      signatures: note.signatures,
+      grade: note.grade,
+      description: note.description,
+      image: note.images.composite,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of mpcProgramNotes) {
     seeds.push({
       id: `mpc-${note.id}`,
       kind: 'banknote',

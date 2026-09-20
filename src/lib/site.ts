@@ -17,6 +17,8 @@ import {
   USA_MISC_PATH_EN,
   USA_MPC_PATH,
   USA_MPC_PATH_EN,
+  USA_MPC_PROGRAM_PATH,
+  USA_MPC_PROGRAM_PATH_EN,
   USA_PATH,
   USA_PATH_EN,
   USA_RENCY_PATH,
@@ -29,6 +31,7 @@ import {
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
 import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
+import { mpcProgramNoteDedicatedSlugs, mpcProgramNoteSlugs } from '../data/mpc';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
@@ -105,6 +108,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
   for (const slug of ecuadorNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
+  for (const slug of mpcProgramNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
 }
@@ -151,6 +155,7 @@ export function statsLine(locale: Locale): string {
 
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
+addLocalePair(USA_MPC_PROGRAM_PATH, USA_MPC_PROGRAM_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
@@ -304,6 +309,7 @@ export const stubPages = [
     es: 'Fichas Hard Times',
     en: 'Hard Times tokens',
   },
+  { path: 'coleccion/estados-unidos/mpc', es: 'MPC - Serie 481 (1951-1954)', en: 'MPC - Series 481 (1951-1954)' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {
@@ -358,6 +364,8 @@ const dedicatedEs = [
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_BARABOO_SCRIP_PATH.replace(/^\/|\/$/g, ''),
@@ -369,6 +377,7 @@ const dedicatedEs = [
   USA_OBSOLETE_PATH.replace(/^\/|\/$/g, ''),
   USA_OBSOLETE_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
+  ...mpcProgramNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,

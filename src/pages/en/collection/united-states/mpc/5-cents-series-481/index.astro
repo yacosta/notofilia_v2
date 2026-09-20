@@ -1,0 +1,9 @@
+---
+import MpcNotePage from '../../../../../../components/catalog/MpcNotePage.astro';
+import { noteById } from '../../../../../../data/mpc';
+
+const note = noteById('5-centavos-serie-481');
+if (!note) throw new Error('Missing Series 481 5-cent catalog note');
+---
+
+<MpcNotePage locale="en" note={note} family="program" />

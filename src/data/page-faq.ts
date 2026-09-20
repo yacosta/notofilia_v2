@@ -241,8 +241,18 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What are Vietnam MPCs?',
       },
       answer: {
-        es: 'Los Military Payment Certificates fueron el papel de las bases estadounidenses en el extranjero. En esta colección se documentan series usadas en Vietnam (641, 661, 681 y 692) con ficha propia cuando hay foto y serial.',
-        en: 'Military Payment Certificates were the paper used on United States bases abroad. This collection documents series used in Vietnam (641, 661, 681, and 692) with their own pages when a photo and serial exist.',
+        es: 'Los Military Payment Certificates fueron el papel de las bases estadounidenses en el extranjero. Esta colección ficha el 5 centavos de la serie 481 (1951–1954), serial D02536728D, fuera de Vietnam, y las series usadas en Vietnam (641, 661, 681 y 692) cuando hay foto y serial.',
+        en: 'Military Payment Certificates were the paper used on United States bases abroad. This collection records the Series 481 5-cent note (1951–1954), serial D02536728D, outside Vietnam, and the series used in Vietnam (641, 661, 681, and 692) when a photo and serial exist.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 5 centavos MPC de la serie 481?',
+        en: 'What is the Series 481 5-cent MPC?',
+      },
+      answer: {
+        es: 'Es un certificado de pago militar de 5 centavos, Pick M22a y Friedberg M831, emitido sin año de calendario en 1951 y circulado del 20 de junio de 1951 al 25 de mayo de 1954. No es una serie de Vietnam. Esta pieza es el serial D02536728D, bloque D–D, número de pliego 66, sin encapsular.',
+        en: 'It is a 5-cent military payment certificate, Pick M22a and Friedberg M831, issued without a calendar year in 1951 and circulated from 20 June 1951 to 25 May 1954. It is not a Vietnam series. This piece is serial D02536728D, D–D block, sheet position 66, unslabbed.',
       },
     },
     {
