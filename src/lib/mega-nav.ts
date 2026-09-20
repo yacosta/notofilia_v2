@@ -10,6 +10,7 @@ import {
   USA_OBSOLETE_PATH,
   USA_MISC_PATH,
   USA_MPC_PATH,
+  USA_MPC_PROGRAM_PATH,
   USA_PATH,
   USA_RENCY_PATH,
   barabooScripSeriesCopy,
@@ -169,6 +170,13 @@ export const megaNav: NavNode[] = [
             en: 'Philippines (1916 - 1945)',
             href: SERIES_PATH,
             flag: 'ph',
+          },
+          {
+            id: 'mpc',
+            es: 'MPC - Serie 481 (1951-1954)',
+            en: 'MPC - Series 481 (1951-1954)',
+            href: USA_MPC_PROGRAM_PATH,
+            flag: 'us',
           },
           {
             id: 'mpc-vietnam',

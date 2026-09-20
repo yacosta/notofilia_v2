@@ -6,6 +6,7 @@ import { malaysiaNotes, notePath as malaysiaNotePath } from './malaysia-polymer'
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
+import { mpcProgramNotes, notePath as mpcProgramNotePath } from './mpc';
 import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
 import { pnbNotes, pnbNotePath } from './philippines-pnb-1916';
@@ -122,6 +123,24 @@ function collectionSeeds(): CollectionSeed[] {
       id: `mpc-${note.id}`,
       country: 'US',
       href: mpcNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es),
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of mpcProgramNotes) {
+    seeds.push({
+      id: `mpc-${note.id}`,
+      country: 'US',
+      href: mpcProgramNotePath(note, 'es'),
       title: note.title,
       dek: note.lead,
       pick: note.pick,

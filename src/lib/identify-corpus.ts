@@ -7,6 +7,7 @@ import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces.ts';
 import { unitedStatesNotes } from '../data/estados-unidos.ts';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage.ts';
 import { mpcVietnamNotes } from '../data/mpc-vietnam.ts';
+import { mpcProgramNotes } from '../data/mpc.ts';
 import { netherlandsCoins } from '../data/netherlands-coinage.ts';
 import { victoryNotes } from '../data/philippines-victory-66.ts';
 import { pnbNotes } from '../data/philippines-pnb-1916.ts';
@@ -173,6 +174,19 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
   }
 
   for (const note of mpcVietnamNotes) {
+    pushSeed(seeds, {
+      id: `mpc-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      title: note.title,
+      imageFront: note.images.front,
+      imageBack: note.images.back,
+      imageComposite: note.images.composite,
+    });
+  }
+
+  for (const note of mpcProgramNotes) {
     pushSeed(seeds, {
       id: `mpc-${note.id}`,
       kind: 'banknote',

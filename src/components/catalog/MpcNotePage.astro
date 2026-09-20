@@ -7,26 +7,35 @@ import { piecePageMeta } from '../../lib/piece-seo';
 import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import {
   mpcVietnamNotes,
-  notePageCopy,
-  notePath,
-  seriesCopy,
-  seriesPath,
+  notePageCopy as vietnamNotePageCopy,
+  notePath as vietnamNotePath,
+  seriesCopy as vietnamSeriesCopy,
+  seriesPath as vietnamSeriesPath,
   USA_PATH,
   type MpcVietnamNote,
 } from '../../data/mpc-vietnam';
+import {
+  mpcProgramNotes,
+  notePageCopy as programNotePageCopy,
+  notePath as programNotePath,
+  seriesCopy as programSeriesCopy,
+  seriesPath as programSeriesPath,
+  type MpcProgramNote,
+} from '../../data/mpc';
 import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
 interface Props {
   locale: Locale;
-  note: MpcVietnamNote;
+  note: MpcVietnamNote | MpcProgramNote;
+  family?: 'vietnam' | 'program';
 }
 
-const { locale, note } = Astro.props;
-const t = notePageCopy[locale];
-const series = seriesCopy[locale];
-const pathname = notePath(note, locale);
+const { locale, note, family = 'vietnam' } = Astro.props;
+const t = family === 'program' ? programNotePageCopy[locale] : vietnamNotePageCopy[locale];
+const series = family === 'program' ? programSeriesCopy[locale] : vietnamSeriesCopy[locale];
+const pathname = family === 'program' ? programNotePath(note as MpcProgramNote, locale) : vietnamNotePath(note as MpcVietnamNote, locale);
 const sources = note.sources;
 const seo = piecePageMeta({
   kind: 'note',
@@ -36,11 +45,12 @@ const seo = piecePageMeta({
   locale,
   country: locale === 'en' ? 'United States' : 'Estados Unidos',
 });
-const siblings = pieceSiblings(mpcVietnamNotes, note.path);
+const siblings = pieceSiblings(family === 'program' ? mpcProgramNotes : mpcVietnamNotes, note.path);
+const seriesHref = family === 'program' ? programSeriesPath(locale) : vietnamSeriesPath(locale);
 const jsonCrumbs = [
   { name: copy[locale].home, path: '/' },
   { name: t.collectionLink, path: USA_PATH },
-  { name: t.seriesLink, path: seriesPath(locale) },
+  { name: t.seriesLink, path: seriesHref },
   { name: seo.h1, path: pathname },
 ];
 ---
@@ -81,7 +91,7 @@ const jsonCrumbs = [
         items={[
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(USA_PATH, locale), label: t.collectionLink },
-          { href: seriesPath(locale), label: t.seriesLink },
+          { href: seriesHref, label: t.seriesLink },
           { label: seo.h1 },
         ]}
       />
@@ -180,14 +190,14 @@ const jsonCrumbs = [
 
       <PieceSiblings
         locale={locale}
-        prev={siblings.prev ? { href: notePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
-        next={siblings.next ? { href: notePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
-        related={siblings.related.map((item) => ({ href: notePath(item, locale), title: item.title[locale], image: item.images.front }))}
+        prev={siblings.prev ? { href: family === 'program' ? programNotePath(siblings.prev as MpcProgramNote, locale) : vietnamNotePath(siblings.prev as MpcVietnamNote, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
+        next={siblings.next ? { href: family === 'program' ? programNotePath(siblings.next as MpcProgramNote, locale) : vietnamNotePath(siblings.next as MpcVietnamNote, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
+        related={siblings.related.map((item) => ({ href: family === 'program' ? programNotePath(item as MpcProgramNote, locale) : vietnamNotePath(item as MpcVietnamNote, locale), title: item.title[locale], image: item.images.front }))}
       />
 
       <p class="mt-12">
         <a
-          href={seriesPath(locale)}
+          href={seriesHref}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
           ← {series.title}

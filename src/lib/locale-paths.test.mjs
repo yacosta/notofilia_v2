@@ -246,6 +246,14 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/mpc/5-centavos-serie-481/', 'en'),
+      '/en/collection/united-states/mpc/5-cents-series-481/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/mpc/', 'en'),
+      '/en/collection/united-states/mpc/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/', 'en'),
       '/en/collection/united-states/mpc-vietnam/5-dollars-series-661/',
     );
@@ -658,6 +666,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/'],
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],
+      '/en/collection/united-states/mpc/5-cents-series-481/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/mpc/'],
+      '/en/collection/united-states/mpc/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],

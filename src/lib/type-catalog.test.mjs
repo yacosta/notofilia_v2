@@ -22,6 +22,7 @@ const collectionCatalogSource = readFileSync(new URL('../data/collection-note-ca
 const coinCatalogSource = readFileSync(new URL('../data/colombia-coin-type-catalog.ts', import.meta.url), 'utf8');
 const usaNotesSource = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
 const mpcNotesSource = readFileSync(new URL('../data/mpc-vietnam.ts', import.meta.url), 'utf8');
+const mpcProgramNotesSource = readFileSync(new URL('../data/mpc.ts', import.meta.url), 'utf8');
 const chinaNotesSource = readFileSync(new URL('../data/china.ts', import.meta.url), 'utf8');
 const englandNotesSource = readFileSync(new URL('../data/england-polymer.ts', import.meta.url), 'utf8');
 const canadaNotesSource = readFileSync(new URL('../data/canada-polymer.ts', import.meta.url), 'utf8');
@@ -209,6 +210,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /notePieces/);
     assert.match(collectionCatalogSource, /unitedStatesNotes/);
     assert.match(collectionCatalogSource, /mpcVietnamNotes/);
+    assert.match(collectionCatalogSource, /mpcProgramNotes/);
     assert.match(collectionCatalogSource, /victoryNotes/);
     assert.match(collectionCatalogSource, /pnbNotes/);
     assert.match(collectionCatalogSource, /chinaNotes/);
@@ -226,6 +228,7 @@ describe('Collection-wide banknote catalog', () => {
     const colombiaPieces = colombiaNotes.flatMap((note) => notePieces(note));
     const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
+    const mpcProgramNotes = countTopLevelSerials(extractExportArrayBlock(mpcProgramNotesSource, 'mpcProgramNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
     const englandNotes = (extractExportArrayBlock(englandNotesSource, 'englandNotes').match(/^    serial: '/gm) || []).length;
     const canadaNotes = (extractExportArrayBlock(canadaNotesSource, 'canadaNotes').match(/^    serial: '/gm) || []).length;
@@ -234,8 +237,9 @@ describe('Collection-wide banknote catalog', () => {
     const ecuadorNotes = (extractExportArrayBlock(ecuadorNotesSource, 'ecuadorNotes').match(/^    serial: '/gm) || []).length;
 
     assert.equal(colombiaPieces.length, 40);
-    assert.equal(usaNotes, 30);
+    assert.equal(usaNotes, 31);
     assert.equal(mpcNotes, 4);
+    assert.equal(mpcProgramNotes, 1);
     assert.equal(polymerNotes.length, 1);
     assert.match(polymerNotes[0], /serial: 'J04445744'/);
     assert.equal(englandNotes, 1);
@@ -266,7 +270,7 @@ describe('Collection-wide banknote catalog', () => {
     }, {});
 
     assert.equal(byCountry.CO, colombiaPieces.length);
-    assert.equal(byCountry.US, usaNotes + mpcNotes);
+    assert.equal(byCountry.US, usaNotes + mpcNotes + mpcProgramNotes);
     assert.equal(byCountry.CN, polymerNotes.length);
     if (byCountry.GB) {
       assert.equal(byCountry.GB, englandNotes);
