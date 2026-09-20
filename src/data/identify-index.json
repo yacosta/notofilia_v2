@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T18:05:22.018Z",
+  "generatedAt": "2026-09-20T00:48:12.347Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2812,6 +2812,45 @@
       }
     },
     {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "front",
+      "hash": "003113b2b2b43600",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-composite.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "front",
+      "hash": "00871749ad59c700",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-front.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "back",
+      "hash": "008525493369b100",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-back.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
       "pieceId": "1-dolar-certificado-plata-1957b",
       "face": "front",
       "hash": "61616b711579211b",
@@ -2820,8 +2859,8 @@
       "pick": "P#419b · Fr. 1621",
       "image": "/images/catalog/estados-unidos/sc-1957b-1-dollar-composite.jpg",
       "title": {
-        "es": "2 dólares · United States Note · Serie 1917",
-        "en": "$2 · United States Note · Series 1917"
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
       }
     },
     {
@@ -2833,8 +2872,8 @@
       "pick": "P#419b · Fr. 1621",
       "image": "/images/catalog/estados-unidos/sc-1957b-1-dollar-front.jpg",
       "title": {
-        "es": "2 dólares · United States Note · Serie 1917",
-        "en": "$2 · United States Note · Series 1917"
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
       }
     },
     {
@@ -2846,8 +2885,8 @@
       "pick": "P#419b · Fr. 1621",
       "image": "/images/catalog/estados-unidos/sc-1957b-1-dollar-back.jpg",
       "title": {
-        "es": "2 dólares · United States Note · Serie 1917",
-        "en": "$2 · United States Note · Series 1917"
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
       }
     },
     {
