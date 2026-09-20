@@ -28,7 +28,7 @@ Every file under `src/pages/**/*.astro` must map to one row. Route files stay th
 | `search` | `SearchPage.astro` | `/buscar/` | `/en/search/` |
 | `identify` | `IdentifyPage.astro` | `/identificar/` | `/en/identify/` |
 | `reference-tool` | `ToolsPage.astro` / `FancySerialPage.astro` | `/herramientas/`, `/herramientas/numeracion-especial/` | `/en/tools/`, `/en/tools/fancy-serial-checker/` |
-| `resource` | `ComparisonPage.astro`, `ColombiaBancaLibrePage.astro` | `/notofilia-vs-catalogos-billetes-colombianos/`, `/coleccion/colombia/banca-libre/` | `/en/notofilia-vs-colombian-banknote-catalogs/`, `/en/collection/colombia/free-banking/` |
+| `resource` | `ComparisonPage.astro`, `ColombiaBancaLibrePage.astro`, `GioriTestNotesPage.astro` | `/notofilia-vs-catalogos-billetes-colombianos/`, `/coleccion/colombia/banca-libre/`, `/coleccion/notafilia/moneda-prueba-giori/` | `/en/notofilia-vs-colombian-banknote-catalogs/`, `/en/collection/colombia/free-banking/`, `/en/collection/notaphily/giori-test-notes/` |
 | `visual-catalog` | `TypeCatalogPage.astro` | `/coleccion/notafilia/catalogo/`, `/coleccion/colombia/catalogo/`, `/coleccion/colombia-numismatica/catalogo/` | `/en/collection/notaphily/catalog/`, `/en/collection/colombia/catalog/`, `/en/collection/colombia-numismatics/catalog/` |
 | `stub` | `StubPage.astro` | catch-all `[...slug].astro` | `en/[...slug].astro` |
 | `error` | `404.astro` (both locales) | `/404` | `/en/404` (or locale-aware 404) |
@@ -55,7 +55,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | `search` | Home → Search | none (text header) | field, sort, filter pills, results | `SearchResultsPage` + `BreadcrumbList` |
 | `identify` | Home → Identify | none (text header) | how-it-works, camera/upload, top matches (no prices) | `WebPage` + `BreadcrumbList` |
 | `reference-tool` | Home → Tools (→ tool) | none (text header) | hub cards or serial field and pattern classes (no prices) | `WebPage` + `BreadcrumbList` |
-| `resource` | Home → title | none | text-only article (`max-w-[46rem]`); Banca libre uses the museum case (`max-w-content`) with a `46rem` lead | `Article` + `BreadcrumbList` |
+| `resource` | Home → title | none | text-only article (`max-w-[46rem]`); Banca libre uses the museum case (`max-w-content`) with a `46rem` lead; Giori test notes use the series photo hero (`/uploads/` + `editorialUploadSrcset`), museum case, `46rem` lead, three-column type cards (one holding plus empty slots), and tables | `Article` + `BreadcrumbList` |
 | `visual-catalog` | Home → series → catalog | none (text header) | stats (no prices), field, sort, filter pills, three-column type grid | `CollectionPage` + `BreadcrumbList` |
 | `stub` | optional | none | coming-soon copy | none |
 | `error` | none | none | title, body, home link | none |

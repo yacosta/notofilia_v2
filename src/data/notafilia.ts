@@ -101,6 +101,8 @@ export const notafiliaCopy = {
     eraLabel: 'Época',
     visualCatalogLead: 'Todos los billetes documentados, de cualquier país, están en el catálogo visual. Se actualiza al añadir cada ficha.',
     visualCatalogLink: 'Catálogo visual de billetes',
+    gioriLead: 'La tipología de las pruebas Giori —prensas, ensayos del BEP y especímenes europeos— tiene página propia. No añade un ejemplar al catálogo.',
+    gioriLink: 'Moneda de prueba Giori',
   },
   en: {
     metaTitle: 'Virtual Notaphily Collection | Notofilia',
@@ -120,6 +122,8 @@ export const notafiliaCopy = {
     eraLabel: 'Period',
     visualCatalogLead: 'Every documented banknote, from any country, is in the visual catalog. It updates as each record is added.',
     visualCatalogLink: 'Visual banknote catalog',
+    gioriLead: 'Giori test notes — presses, BEP trials, and European specimens — have their own page. It does not add a holding to the catalog.',
+    gioriLink: 'Giori test currency',
   },
 } as const;
 

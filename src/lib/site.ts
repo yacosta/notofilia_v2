@@ -60,6 +60,7 @@ import {
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
+import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
@@ -384,6 +385,7 @@ const dedicatedEs = [
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
   ...comparisonDedicatedSlugs,
+  ...gioriTestNotesDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',
   'blog',

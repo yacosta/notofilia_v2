@@ -140,6 +140,18 @@ describe('locale path mapping', () => {
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
       '/en/notofilia-vs-colombian-banknote-catalogs/',
     );
+    assert.equal(
+      localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
+      '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/giori-test-notes/', 'es'),
+      '/coleccion/notafilia/moneda-prueba-giori/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/giori-test-currency/', 'es'),
+      '/coleccion/notafilia/moneda-prueba-giori/',
+    );
     assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
     assert.equal(localizePath('/en/collection/colombia/free-banking/', 'es'), '/coleccion/colombia/banca-libre/');
     assert.equal(
@@ -592,6 +604,14 @@ describe('locale path mapping', () => {
       '/en/collection/puerto-rico/1-peso-exchange-note-1895/',
     );
     assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
+    assert.equal(
+      redirects['/en/coleccion/notafilia/moneda-prueba-giori/'],
+      '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.equal(
+      redirects['/en/collection/notaphily/giori-test-currency/'],
+      '/en/collection/notaphily/giori-test-notes/',
+    );
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
     assert.equal(redirects['/en/coleccion/colombia/banca-libre/'], '/en/collection/colombia/free-banking/');
     assert.equal(

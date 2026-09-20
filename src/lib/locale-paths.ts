@@ -275,6 +275,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     en: '/collection/ecuador/100-sucres-1993/',
   },
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
+  {
+    es: '/coleccion/notafilia/moneda-prueba-giori/',
+    en: '/collection/notaphily/giori-test-notes/',
+    aliases: ['/collection/notaphily/giori-test-currency/'],
+  },
   { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
   { es: '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', en: '/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/' },
@@ -609,6 +614,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/blog/origenes-banca-comercial-colombia-banca-libre/',
     '/en/blog/origenes-banca-comercial-puerto-rico/',
     '/en/blog/personajes-billetes-colombia/',
+    '/en/coleccion/notafilia/moneda-prueba-giori/',
+    '/en/collection/notaphily/giori-test-currency/',
   ];
 
   for (const from of legacyEnglishPrefixes) {
