@@ -1,5 +1,4 @@
 import type { Locale } from '../lib/locale-paths';
-import { readFileSync } from 'node:fs';
 
 export const GIORI_TEST_NOTES_PATH = '/coleccion/notafilia/moneda-prueba-giori/';
 export const GIORI_TEST_NOTES_PATH_EN = '/collection/notaphily/giori-test-currency/';
@@ -116,8 +115,3 @@ export const gioriTestNotesDedicatedSlugs = [
   GIORI_TEST_NOTES_PATH.replace(/^\/|\/$/g, ''),
   GIORI_TEST_NOTES_PATH_EN.replace(/^\/|\/$/g, ''),
 ] as const;
-
-export const gioriTestNotesBody = {
-  es: readFileSync(new URL('./giori-test-notes/es.html', import.meta.url), 'utf8'),
-  en: readFileSync(new URL('./giori-test-notes/en.html', import.meta.url), 'utf8'),
-};

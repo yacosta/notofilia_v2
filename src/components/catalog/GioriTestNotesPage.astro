@@ -8,8 +8,9 @@ import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
 import { imageObjectJsonLd } from '../../lib/json-ld';
 import { NOTAFILIA_PATH } from '../../data/notafilia';
+import bodyEs from '../../data/giori-test-notes/es.html?raw';
+import bodyEn from '../../data/giori-test-notes/en.html?raw';
 import {
-  gioriTestNotesBody,
   gioriTestNotesCopy,
   gioriTestNotesHoldingHref,
   gioriTestNotesImage,
@@ -28,7 +29,7 @@ const t = gioriTestNotesCopy[locale];
 const pathname = gioriTestNotesPath(locale);
 const notafiliaHref = localizePath(NOTAFILIA_PATH, locale);
 const holdingHref = localizePath(gioriTestNotesHoldingHref, locale);
-const body = enhanceProseHtml(gioriTestNotesBody[locale], locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(gioriTestNotesImage, SITE_URL).href;
 
