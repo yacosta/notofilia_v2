@@ -72,6 +72,16 @@ describe('sitemap coverage for the Colombia banca libre essay', () => {
   });
 });
 
+describe('sitemap coverage for the Giori test notes page', () => {
+  it('maps the notafilia Giori pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
+      '/en/collection/notaphily/giori-test-currency/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the comparison page', () => {
   it('maps the Notofilia vs catalogs pair used in dedicated catalog paths', () => {
     assert.equal(

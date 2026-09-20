@@ -31,6 +31,7 @@ import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
+import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
@@ -99,6 +100,13 @@ export const megaNav: NavNode[] = [
         es: 'Catálogo visual de billetes',
         en: 'Visual banknote catalog',
         href: NOTAFILIA_NOTES_CATALOG_PATH,
+      },
+      {
+        id: 'moneda-prueba-giori',
+        es: 'Moneda de prueba Giori',
+        en: 'Giori test currency',
+        href: GIORI_TEST_NOTES_PATH,
+        icon: 'guides',
       },
       {
         id: 'colombia',

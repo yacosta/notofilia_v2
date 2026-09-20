@@ -18,6 +18,7 @@ import {
   USA_OBSOLETE_PATH,
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
+import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { netherlandsCoins } from '../data/netherlands-coinage';
@@ -440,6 +441,12 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: USA_RENCY_PATH,
       title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
       dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
+    },
+    {
+      href: GIORI_TEST_NOTES_PATH,
+      title: { es: gioriTestNotesCopy.es.nav, en: gioriTestNotesCopy.en.nav },
+      dek: { es: gioriTestNotesCopy.es.metaDescription, en: gioriTestNotesCopy.en.metaDescription },
+      extra: 'Giori Gualtiero Organisation De La Rue KBA Koenig Bauer Varinota Jefferson Washington Pigman Rollins',
     },
     {
       href: USA_BARABOO_SCRIP_PATH,

@@ -1,0 +1,159 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import { editorialUploadSrcset } from '../../lib/images';
+import { enhanceProseHtml } from '../../data/editorial';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { imageObjectJsonLd } from '../../lib/json-ld';
+import { NOTAFILIA_PATH } from '../../data/notafilia';
+import {
+  gioriTestNotesBody,
+  gioriTestNotesCopy,
+  gioriTestNotesHoldingHref,
+  gioriTestNotesImage,
+  gioriTestNotesImageHeight,
+  gioriTestNotesImageWidth,
+  gioriTestNotesPath,
+  gioriTestNotesSources,
+} from '../../data/giori-test-notes';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = gioriTestNotesCopy[locale];
+const pathname = gioriTestNotesPath(locale);
+const notafiliaHref = localizePath(NOTAFILIA_PATH, locale);
+const holdingHref = localizePath(gioriTestNotesHoldingHref, locale);
+const body = enhanceProseHtml(gioriTestNotesBody[locale], locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+const imageUrl = new URL(gioriTestNotesImage, SITE_URL).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      alternativeHeadline: t.metaTitle !== t.title ? t.metaTitle : undefined,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.caption }),
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.notafilia, item: notafiliaHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={gioriTestNotesImage}
+  ogImageAlt={t.imageAlt}
+  ogType="article"
+  publishedTime={t.published}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <header class="max-w-[46rem]">
+        <Breadcrumb
+          locale={locale}
+          label={t.breadcrumb}
+          items={[
+            { href: localizePath('/', locale), label: t.home },
+            { href: notafiliaHref, label: t.notafilia },
+            { label: t.nav },
+          ]}
+        />
+
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+          <time datetime={t.published}>{t.dateLabel}</time>
+        </p>
+      </header>
+
+      <figure class="mb-10 mt-0">
+        <img
+          src={gioriTestNotesImage}
+          srcset={editorialUploadSrcset(gioriTestNotesImage, gioriTestNotesImageWidth)}
+          sizes="(max-width: 768px) 100vw, 75rem"
+          alt={t.imageAlt}
+          width={gioriTestNotesImageWidth}
+          height={gioriTestNotesImageHeight}
+          class="h-auto w-full bg-panel object-contain"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{t.caption}</figcaption>
+      </figure>
+
+      <aside
+        class="mb-10 max-w-[46rem] border border-[rgba(138,109,59,0.35)] bg-[rgba(138,109,59,0.08)] px-5 py-5 sm:px-6"
+        aria-labelledby="giori-market-heading"
+      >
+        <h2 id="giori-market-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.marketKind}
+        </h2>
+        <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">{t.marketNote}</p>
+      </aside>
+
+      <div class="prose-notofilia max-w-[46rem]" lang={locale} set:html={body} />
+
+      <section class="mt-10 max-w-[46rem] border-t border-line pt-6" aria-labelledby="giori-sources-heading">
+        <h2 id="giori-sources-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.sourcesTitle}
+        </h2>
+        <ul class="m-0 grid list-none gap-2 p-0">
+          {
+            gioriTestNotesSources.map((source) => (
+              <li>
+                <a
+                  href={source.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {source[locale]}
+                  <NewWindowHint locale={locale} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
+        <a href={holdingHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.holdingCta}
+        </a>
+        <a href={notafiliaHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.notafiliaCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

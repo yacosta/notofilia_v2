@@ -140,6 +140,14 @@ describe('locale path mapping', () => {
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
       '/en/notofilia-vs-colombian-banknote-catalogs/',
     );
+    assert.equal(
+      localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
+      '/en/collection/notaphily/giori-test-currency/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/giori-test-currency/', 'es'),
+      '/coleccion/notafilia/moneda-prueba-giori/',
+    );
     assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
     assert.equal(localizePath('/en/collection/colombia/free-banking/', 'es'), '/coleccion/colombia/banca-libre/');
     assert.equal(

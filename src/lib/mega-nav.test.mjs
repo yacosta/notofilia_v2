@@ -232,6 +232,8 @@ describe('Colombia visual catalogs', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     assert.match(source, /id: 'catalogo-billetes'/);
     assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
+    assert.match(source, /id: 'moneda-prueba-giori'/);
+    assert.match(source, /href: GIORI_TEST_NOTES_PATH/);
     assert.doesNotMatch(source, /id: 'colombia-catalogo'/);
     assert.doesNotMatch(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
     assert.doesNotMatch(source, /COLOMBIA_COIN_CATALOG_PATH/);
