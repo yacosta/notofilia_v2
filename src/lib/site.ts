@@ -291,7 +291,7 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
-  { path: 'coleccion/notafilia', es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
+  { path: 'coleccion/notafilia', es: '¿Qué es la notafilia?', en: 'What is notaphily?' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
