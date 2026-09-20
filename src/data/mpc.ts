@@ -25,8 +25,8 @@ export const mpcProgramChapters: MpcProgramChapter[] = [
       en: 'Issued 20 June 1951 to 25 May 1954: overseas-base paper, not a Vietnam series.',
     },
     body: {
-      es: 'La serie 481 no lleva año de calendario impreso: «SERIES 481» es su designación. Circuló del 20 de junio de 1951 al 25 de mayo de 1954 en establecimientos militares de Estados Unidos en el extranjero. No forma parte de las cuatro series confinadas a Vietnam (641, 661, 681 y 692). Forbes Lithographic Manufacturing Co. y Tudor Press, en Boston, están documentados para esta serie; el Bureau of Engraving and Printing diseñó, acabó y despachó el papel. La impresión es litografía offset a partir de arte grabado, no intaglio directo. Esta vitrina reúne, de momento, el 5 centavos Pick M22a de la colección; las series vietnamitas siguen en su caso propio.',
-      en: 'Series 481 carries no printed calendar year: “SERIES 481” is its designation. It circulated from 20 June 1951 to 25 May 1954 at United States military establishments overseas. It is not one of the four series confined to Vietnam (641, 661, 681, and 692). Forbes Lithographic Manufacturing Co. and Tudor Press, in Boston, are documented for this series; the Bureau of Engraving and Printing handled design, finishing, and shipping. Printing is offset lithography from engraved artwork, not direct intaglio. This case currently holds the collection’s 5-cent Pick M22a; the Vietnam series remain in their own case.',
+      es: 'La serie 481 no lleva año de calendario impreso: «SERIES 481» es su designación. Circuló del 20 de junio de 1951 al 25 de mayo de 1954. Silver Recyclers sitúa el papel en Austria, Bélgica, Inglaterra, Francia, Alemania, Grecia, Hungría, Islandia, Italia, Japón, Corea, Marruecos, Filipinas, las Ryukyu, Escocia, Trieste y Yugoslavia. No forma parte de las cuatro series confinadas a Vietnam (641, 661, 681 y 692). Forbes Lithographic Manufacturing Co. y Tudor Press, en Boston, están documentados para esta serie; el Bureau of Engraving and Printing diseñó, acabó y despachó el papel. La impresión es litografía offset a partir de arte grabado, no intaglio directo. Esta vitrina reúne, de momento, el 5 centavos Pick M22a de la colección; las series vietnamitas siguen en su caso propio.',
+      en: 'Series 481 carries no printed calendar year: “SERIES 481” is its designation. It circulated from 20 June 1951 to 25 May 1954. Silver Recyclers places the paper in Austria, Belgium, England, France, Germany, Greece, Hungary, Iceland, Italy, Japan, Korea, Morocco, the Philippines, the Ryukyus, Scotland, Trieste, and Yugoslavia. It is not one of the four series confined to Vietnam (641, 661, 681, and 692). Forbes Lithographic Manufacturing Co. and Tudor Press, in Boston, are documented for this series; the Bureau of Engraving and Printing handled design, finishing, and shipping. Printing is offset lithography from engraved artwork, not direct intaglio. This case currently holds the collection’s 5-cent Pick M22a; the Vietnam series remain in their own case.',
     },
   },
 ];
@@ -48,6 +48,15 @@ export const seriesSources: CatalogSource[] = [
     note: {
       es: 'Circulación del 20 de junio de 1951 al 25 de mayo de 1954; impresores de Boston y el BEP en diseño y despacho.',
       en: 'Circulation 20 June 1951 to 25 May 1954; Boston printers and the BEP for design and shipping.',
+    },
+  },
+  {
+    href: 'https://www.silverrecyclers.com/blog/military-payment-certificate-series-481.aspx',
+    es: 'Silver Recyclers — Military Payment Certificate Series 481',
+    en: 'Silver Recyclers — Military Payment Certificate Series 481',
+    note: {
+      es: 'Fechas 20 de junio de 1951–25 de mayo de 1954 y la lista de teatros de ultramar. Los reemplazos, según esa página, cierran el serial con un número; la emisión regular, con una letra. Cita el Standard Catalog of United States Paper Money. No se republican precios.',
+      en: 'Dates 20 June 1951–25 May 1954 and the overseas theater list. Replacements, on that page, end the serial with a digit; regular issues end with a letter. It cites the Standard Catalog of United States Paper Money. Prices are not republished.',
     },
   },
   {
@@ -82,7 +91,7 @@ export const seriesCopy = {
       'Reverso del certificado de pago militar de 5 centavos, serie 481: águila con escudo sobre fondo rosa-magenta y orla azul',
     intro: [
       'El certificado de pago militar no es un billete del Tesoro ni curso legal estadounidense. Circulaba solo entre personal autorizado, en instalaciones de la base, y se convertía en moneda local, nunca al revés. El C-Day —un canje sorpresa— dejaba sin valor la serie saliente.',
-      'La serie 481 cubrió del 20 de junio de 1951 al 25 de mayo de 1954. No lleva año impreso. Forbes Lithographic y Tudor Press, en Boston, están documentados para la serie; el BEP diseñó, acabó y despachó. La impresión es offset, no intaglio. Esta vitrina no es el catálogo de Vietnam: las series 641, 661, 681 y 692 tienen caso propio.',
+      'La serie 481 cubrió del 20 de junio de 1951 al 25 de mayo de 1954. No lleva año impreso. Silver Recyclers la sitúa en Europa, el Mediterráneo, el Pacífico y Corea —Austria, Bélgica, Inglaterra, Francia, Alemania, Grecia, Hungría, Islandia, Italia, Japón, Corea, Marruecos, Filipinas, las Ryukyu, Escocia, Trieste y Yugoslavia—, no en Vietnam. Forbes Lithographic y Tudor Press, en Boston, están documentados para la serie; el BEP diseñó, acabó y despachó. La impresión es offset, no intaglio. Esta vitrina no es el catálogo de Vietnam: las series 641, 661, 681 y 692 tienen caso propio.',
       'Ya tiene ficha el 5 centavos Pick M22a, Friedberg M831, serial D02536728D, emisión regular D–D, número de pliego 66. No está encapsulado. Las demás denominaciones de 481 se publicarán cuando se fotografíen.',
     ],
     parentLink: 'Estados Unidos',
@@ -115,7 +124,7 @@ export const seriesCopy = {
       'Back of the Series 481 5-cent military payment certificate: eagle and shield on a pink-magenta field within a blue border',
     intro: [
       'A military payment certificate is not a Treasury note and not United States legal tender. It circulated only among authorized personnel, on base, and converted into local currency, never the other way. C-Day — a surprise conversion — left the outgoing series worthless.',
-      'Series 481 ran from 20 June 1951 to 25 May 1954. No calendar year is printed. Forbes Lithographic and Tudor Press, in Boston, are documented for the series; the BEP handled design, finishing, and shipping. Printing is offset, not intaglio. This case is not the Vietnam catalog: Series 641, 661, 681, and 692 have their own case.',
+      'Series 481 ran from 20 June 1951 to 25 May 1954. No calendar year is printed. Silver Recyclers places it in Europe, the Mediterranean, the Pacific, and Korea — Austria, Belgium, England, France, Germany, Greece, Hungary, Iceland, Italy, Japan, Korea, Morocco, the Philippines, the Ryukyus, Scotland, Trieste, and Yugoslavia — not in Vietnam. Forbes Lithographic and Tudor Press, in Boston, are documented for the series; the BEP handled design, finishing, and shipping. Printing is offset, not intaglio. This case is not the Vietnam catalog: Series 641, 661, 681, and 692 have their own case.',
       'The 5-cent Pick M22a, Friedberg M831, serial D02536728D, regular D–D issue, sheet position 66, already has a note page. It is unslabbed. Further Series 481 denominations will be published as they are photographed.',
     ],
     parentLink: 'United States',
@@ -223,8 +232,8 @@ export const mpcProgramNotes: MpcProgramNote[] = [
       en: 'Back of the Series 481 5-cent note: eagle and shield and the authorized-personnel use legend.',
     },
     scarcity: {
-      es: 'El tipo es la emisión regular con letra de prefijo y sufijo (Pick M22a), no la variedad de reemplazo. La primera impresión se atribuye por el rango de seriales publicado hasta D05152000D; este D02536728D cae dentro de ese tramo. Esta ficha no inventa una tirada del 5 centavos ni un censo de mercado.',
-      en: 'The type is the regular prefix-and-suffix-letter issue (Pick M22a), not the replacement variety. First-printing status is attributed from the published serial range through D05152000D; this D02536728D falls in that span. This record does not invent a 5-cent printage or a market census.',
+      es: 'El tipo es la emisión regular con letra de prefijo y sufijo (Pick M22a), no la variedad de reemplazo. Silver Recyclers describe los reemplazos de 481 como seriales que cierran con un número; este D02536728D cierra con D. La primera impresión se atribuye por el rango de seriales publicado hasta D05152000D; este ejemplar cae dentro de ese tramo. Esta ficha no inventa una tirada del 5 centavos ni un censo de mercado, y no republica precios de catálogo.',
+      en: 'The type is the regular prefix-and-suffix-letter issue (Pick M22a), not the replacement variety. Silver Recyclers describes Series 481 replacements as serials that end with a digit; this D02536728D ends with D. First-printing status is attributed from the published serial range through D05152000D; this example falls in that span. This record does not invent a 5-cent printage or a market census, and it does not republish catalog prices.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en estado original, sin encapsular.',
@@ -251,6 +260,15 @@ export const mpcProgramNotes: MpcProgramNote[] = [
         note: {
           es: 'Fechas de circulación 20 de junio de 1951–25 de mayo de 1954; Forbes Lithographic y Tudor Press a nivel de serie.',
           en: 'Circulation dates 20 June 1951–25 May 1954; Forbes Lithographic and Tudor Press at series level.',
+        },
+      },
+      {
+        href: 'https://www.silverrecyclers.com/blog/military-payment-certificate-series-481.aspx',
+        es: 'Silver Recyclers — serie 481',
+        en: 'Silver Recyclers — Series 481',
+        note: {
+          es: 'Lista de teatros; reemplazos con dígito final frente a letra en la emisión regular. Cita el Standard Catalog of United States Paper Money. No se republican precios.',
+          en: 'Theater list; replacements with a terminal digit versus a letter on the regular issue. Cites the Standard Catalog of United States Paper Money. Prices are not republished.',
         },
       },
       {

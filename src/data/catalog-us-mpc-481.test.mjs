@@ -32,6 +32,10 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(data, /no es una serie de Vietnam/i);
     assert.match(data, /not a Vietnam series/);
     assert.match(data, /D05152000D/);
+    assert.match(data, /silverrecyclers\.com\/blog\/military-payment-certificate-series-481\.aspx/);
+    assert.match(data, /Ryukyu/);
+    assert.match(data, /Ryukyus/);
+    assert.doesNotMatch(data, /\$27\.50/);
     assert.match(data, /posición 66/);
     assert.match(data, /sheet position 66/);
     assert.doesNotMatch(data, /Decreto 188/);
