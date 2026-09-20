@@ -102,13 +102,6 @@ export const megaNav: NavNode[] = [
         href: NOTAFILIA_NOTES_CATALOG_PATH,
       },
       {
-        id: 'moneda-prueba-giori',
-        es: 'Moneda de prueba Giori',
-        en: 'Giori test currency',
-        href: GIORI_TEST_NOTES_PATH,
-        icon: 'guides',
-      },
-      {
         id: 'colombia',
         es: 'Colombia',
         en: 'Colombia',
@@ -220,6 +213,13 @@ export const megaNav: NavNode[] = [
         en: 'Ecuador',
         href: ECUADOR_PATH,
         flag: 'ec',
+      },
+      {
+        id: 'moneda-prueba-giori',
+        es: 'Moneda de prueba Giori',
+        en: 'Giori test currency',
+        href: GIORI_TEST_NOTES_PATH,
+        icon: 'guides',
       },
       {
         id: 'polimero',

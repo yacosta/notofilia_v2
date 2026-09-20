@@ -1,7 +1,7 @@
 import type { Locale } from '../lib/locale-paths';
 
 export const GIORI_TEST_NOTES_PATH = '/coleccion/notafilia/moneda-prueba-giori/';
-export const GIORI_TEST_NOTES_PATH_EN = '/collection/notaphily/giori-test-currency/';
+export const GIORI_TEST_NOTES_PATH_EN = '/collection/notaphily/giori-test-notes/';
 
 export const gioriTestNotesCopy = {
   es: {
@@ -18,10 +18,17 @@ export const gioriTestNotesCopy = {
       'De los chablons de Gualtiero Giori a Koenig & Bauer Banknote Solutions: cómo las notas de ensayo registran prensas, simposios y el papel que coleccionistas llaman test notes.',
     published: '2026-09-20',
     dateLabel: '20 de septiembre de 2026',
+    heroAlt:
+      'Ilustración de una prensa de talla dulce y de papel moneda: el arte del grabado de seguridad. No es una fotografía de un taller Giori.',
     imageAlt:
       'Anverso uniface del billete de prueba Giori del Lincoln Memorial, en tinta verde, sin seriales ni sellos',
     caption:
-      'Ejemplar de esta colección: prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial. No es curso legal.',
+      'Un solo ejemplar en la vitrina: el uniface del Lincoln Memorial. El resto de tipos se deja en blanco hasta fotografiar una pieza.',
+    galleryHeading: 'Tipos en esta vitrina',
+    galleryAria: 'Tipos de moneda de prueba Giori',
+    pickLabel: 'Catálogo',
+    serialLabel: 'Serial',
+    viewNote: 'Ver la ficha',
     holdingCta: 'Abrir la ficha del Lincoln Memorial Giori',
     notafiliaCta: 'Volver a la vitrina de notafilia',
     sourcesTitle: 'Enlaces citados',
@@ -44,10 +51,17 @@ export const gioriTestNotesCopy = {
       'From Gualtiero Giori’s chablons to Koenig & Bauer Banknote Solutions: how trial notes record presses, symposiums, and the paper collectors call test notes.',
     published: '2026-09-20',
     dateLabel: 'September 20, 2026',
+    heroAlt:
+      'Illustration of an intaglio press and banknote paper: the art of security engraving. It is not a photograph of a Giori workshop.',
     imageAlt:
       'Uniface face of the Giori Lincoln Memorial test note, in green ink, with no serials or seals',
     caption:
-      'This collection’s example: a uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial. It is not legal tender.',
+      'One example is in the case: the Lincoln Memorial uniface. The other types stay blank until a piece is photographed.',
+    galleryHeading: 'Types in this case',
+    galleryAria: 'Giori test-note types',
+    pickLabel: 'Catalogue',
+    serialLabel: 'Serial',
+    viewNote: 'Open the note page',
     holdingCta: 'Open the Giori Lincoln Memorial record',
     notafiliaCta: 'Back to the notaphily case',
     sourcesTitle: 'Cited links',
@@ -57,12 +71,28 @@ export const gioriTestNotesCopy = {
   },
 } as const;
 
-export const gioriTestNotesImage = '/uploads/giori-lincoln-memorial-test-note.jpg';
-export const gioriTestNotesImageWidth = 1440;
-export const gioriTestNotesImageHeight = 960;
+export const GIORI_TEST_NOTES_HERO = {
+  src: '/uploads/giori-banknote-printing-hero.jpg',
+  width: 1024,
+  height: 438,
+} as const;
+
+export const GIORI_HOLDING_ID = 'billete-prueba-giori-lincoln-memorial';
 
 export const gioriTestNotesHoldingHref =
   '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/';
+
+export type GioriTypeSlot = {
+  id: string;
+  holdingId?: typeof GIORI_HOLDING_ID;
+};
+
+/** One published holding plus two empty cells so the grid is a single row of three. */
+export const gioriTypeSlots: GioriTypeSlot[] = [
+  { id: 'lincoln-memorial', holdingId: GIORI_HOLDING_ID },
+  { id: 'empty-1' },
+  { id: 'empty-2' },
+];
 
 export const gioriTestNotesSources = [
   {

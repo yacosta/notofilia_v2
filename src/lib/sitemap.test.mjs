@@ -76,7 +76,7 @@ describe('sitemap coverage for the Giori test notes page', () => {
   it('maps the notafilia Giori pair used in dedicated catalog paths', () => {
     assert.equal(
       localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
-      '/en/collection/notaphily/giori-test-currency/',
+      '/en/collection/notaphily/giori-test-notes/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });

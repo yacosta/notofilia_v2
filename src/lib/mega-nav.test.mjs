@@ -234,6 +234,10 @@ describe('Colombia visual catalogs', () => {
     assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
     assert.match(source, /id: 'moneda-prueba-giori'/);
     assert.match(source, /href: GIORI_TEST_NOTES_PATH/);
+    assert.match(
+      source,
+      /id: 'ecuador'[\s\S]*id: 'moneda-prueba-giori'[\s\S]*id: 'polimero'/,
+    );
     assert.doesNotMatch(source, /id: 'colombia-catalogo'/);
     assert.doesNotMatch(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
     assert.doesNotMatch(source, /COLOMBIA_COIN_CATALOG_PATH/);
