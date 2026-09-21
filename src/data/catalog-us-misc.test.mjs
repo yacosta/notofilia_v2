@@ -223,7 +223,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(seriesHero, /src\.includes\('\/uploads\/'\)/);
     assert.match(seriesHero, /fetchpriority="high"/);
     assert.match(seriesHero, /object-cover/);
-    assert.match(seriesHero, /min-h-\[86vh\]/);
+    assert.match(seriesHero, /relative min-h-\[86vh\]/);
     assert.match(seriesHero, /absolute inset-0 h-full w-full object-cover/);
     assert.doesNotMatch(seriesHero, /clearStickyChrome/);
     assert.doesNotMatch(seriesHero, /series-hero--clear-chrome/);
