@@ -298,9 +298,16 @@ export const seriesCopy = {
 } as const;
 
 export const MPC_PROGRAM_HERO = {
-  src: '/uploads/korean-war-1951-1954-hero.jpg',
-  width: 1024,
-  height: 438,
+  es: {
+    src: '/uploads/guerra-de-corea-1951-1954-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
+  en: {
+    src: '/uploads/korean-war-1951-1954-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
