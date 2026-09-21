@@ -191,6 +191,7 @@ describe('country flags', () => {
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
+    assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
@@ -313,6 +314,14 @@ describe('United States submenu', () => {
     assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
     assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
+  });
+
+  it('marks Korean War MPC with the South Korea flag', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const mpc = usa.split("id: 'mpc'")[1]?.split("id: 'mpc-vietnam'")[0] ?? '';
+    assert.match(mpc, /flag: 'kr'/);
+    assert.doesNotMatch(mpc, /flag: 'us'/);
   });
 
   it('includes the Rency and Misceláneos cases under Estados Unidos', () => {

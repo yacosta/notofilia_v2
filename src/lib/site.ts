@@ -309,7 +309,7 @@ export const stubPages = [
     es: 'Fichas Hard Times',
     en: 'Hard Times tokens',
   },
-  { path: 'coleccion/estados-unidos/mpc', es: 'MPC - Serie 481 (1951-1954)', en: 'MPC - Series 481 (1951-1954)' },
+  { path: 'coleccion/estados-unidos/mpc', es: 'MPC - Guerra de Corea (1951 - 1954)', en: 'MPC - Korean War (1951 - 1954)' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {
