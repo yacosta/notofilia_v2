@@ -66,8 +66,9 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(enSeries, /MpcSeriesPage/);
     assert.match(data, /mpc-481-5-d02536728d-front\.jpg/);
     assert.match(data, /mpc-481-5-d02536728d-back\.jpg/);
+    assert.match(data, /\/uploads\/guerra-de-corea-1951-1954-hero\.jpg/);
     assert.match(data, /\/uploads\/korean-war-1951-1954-hero\.jpg/);
-    assert.match(seriesPage, /MPC_PROGRAM_HERO/);
+    assert.match(seriesPage, /MPC_PROGRAM_HERO\[locale\]/);
     assert.match(seriesPage, /imageClass="object-\[50%_42%\]"/);
     assert.match(seriesPage, /size="compact"/);
     assert.match(seriesPage, /caseChapter/);
@@ -75,6 +76,8 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
       seriesPage.indexOf('series-facts-heading') < seriesPage.indexOf('caseChapter.id') &&
         seriesPage.indexOf('caseChapter.id') < seriesPage.indexOf('denomination-table-heading'),
     );
+    assert.ok(existsSync(new URL('../../public/uploads/guerra-de-corea-1951-1954-hero.jpg', import.meta.url)));
+    assert.ok(existsSync(new URL('../../public/uploads/guerra-de-corea-1951-1954-hero-card.jpg', import.meta.url)));
     assert.ok(existsSync(new URL('../../public/uploads/korean-war-1951-1954-hero.jpg', import.meta.url)));
     assert.ok(existsSync(new URL('../../public/uploads/korean-war-1951-1954-hero-card.jpg', import.meta.url)));
   });
