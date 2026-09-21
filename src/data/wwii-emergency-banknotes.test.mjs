@@ -98,6 +98,11 @@ describe('WWII emergency banknotes series page', () => {
     assert.ok(wwiiEmergencySources.length >= 30);
     assert.match(wwiiEmergencyCopy.es.holdingsValue, /S40499058C/);
     assert.match(wwiiEmergencyCopy.en.holdingsValue, /S40499058C/);
+    assert.match(wwiiEmergencyCopy.es.holdingsValue, /Hawaii P#36/);
+    assert.match(wwiiEmergencyCopy.es.holdingsValue, /numerado en 1944/);
+    assert.match(wwiiEmergencyCopy.en.holdingsValue, /numbered in 1944/);
+    assert.match(bodyEs, /Hawaii P#36; numerado en 1944/);
+    assert.match(bodyEn, /Hawaii P#36; numbered in 1944/);
     assert.match(bodyEs, /1-dolar-hawaii-1935a/);
     assert.match(bodyEn, /1-dolar-hawaii-1935a/);
     assert.doesNotMatch(wwiiEmergencyCopy.es.metaDescription, /\$\d/);

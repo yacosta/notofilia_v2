@@ -20,19 +20,31 @@ const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1957b'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1935A HAWAII $1 Fr. 2300', () => {
-  it('records Fr. 2300 / P#36 with serial S40499058C and PMG 1505944-014', () => {
+  it('records Fr. 2300 / Hawaii P#36 with serial S40499058C and PMG 1505944-014', () => {
     assert.match(data, /id: '1-dolar-hawaii-1935a'/);
     assert.match(note, /chapterId: 'us-silver'/);
-    assert.match(note, /pick: 'P#36 · Fr\. 2300'/);
+    assert.match(note, /pick: 'Hawaii P#36 · Fr\. 2300'/);
     assert.match(note, /serial: 'S40499058C'/);
     assert.match(note, /cert_number: '1505944-014'/);
     assert.match(note, /cert_grader: 'PMG'/);
-    assert.match(note, /W\. A\. Julian/);
+    assert.match(note, /William Alexander Julian/);
     assert.match(note, /Henry Morgenthau Jr\./);
     assert.match(note, /bloque S–C/);
     assert.match(note, /S–C block/);
+    assert.match(note, /S39996001C/);
+    assert.match(note, /S54996000C/);
+    assert.match(note, /15\.000\.000/);
+    assert.match(note, /16 de mayo al 6 de junio de 1944/);
+    assert.match(note, /16 May–6 June 1944/);
     assert.match(note, /35\.052\.000/);
     assert.match(note, /35,052,000/);
+    assert.match(note, /F 2300/);
+    assert.match(note, /3534/);
+    assert.match(note, /Choice About Uncirculated/);
+    assert.match(note, /no es el P#416a/i);
+    assert.match(note, /not United States P#416a/);
+    assert.match(note, /N#202338/);
+    assert.match(note, /Huntoon/);
     assert.match(note, /58 EPQ/);
     assert.match(note, /no es un reemplazo con estrella/i);
     assert.match(note, /not a star replacement/i);
@@ -61,7 +73,12 @@ describe('US Series 1935A HAWAII $1 Fr. 2300', () => {
     assert.match(data, /Series 1935A HAWAII \$1 \(Fr\. 2300\), serial S40499058C/);
     assert.match(faq, /¿Qué es el 1 dólar HAWAII serie 1935 A\?/);
     assert.match(faq, /What is the Series 1935A HAWAII \$1\?/);
+    assert.match(faq, /Hawaii P#36/);
+    assert.match(faq, /no es el P#416a/i);
     assert.match(faq, /serial S40499058C/);
+    assert.match(faq, /se numeró en 1944/);
+    assert.match(faq, /numbered in 1944/);
+    assert.match(faq, /Choice About Uncirculated/);
     assert.match(note, /No es el 1 dólar Funnyback serie 1928 A, serial D00508932B/);
     assert.match(note, /It is not the Series 1928A Funnyback \$1, serial D00508932B/);
   });
