@@ -46,7 +46,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | `contact` | Home → Contact | none | image + form | `BreadcrumbList` + `ContactPage` |
 | `collection-hub` | Home → Colección | none (text header) | collection cards | `CollectionPage` + `BreadcrumbList` |
 | `discipline-index` | Home → discipline | text header (kicker + stacked H1), no full-bleed photo | intro + country/case grid | `CollectionPage` + `BreadcrumbList` |
-| `series-index` | Home → (discipline) → series | full-bleed series hero; WWII emergency notes use a text header (blank hero) until a series photograph is ready | intro, holdings/chapters, sources | `CollectionPage` + `BreadcrumbList` |
+| `series-index` | Home → (discipline) → series | full-bleed series hero (WWII emergency notes use locale-specific illustrated heroes under `/uploads/`) | intro, holdings/chapters, sources | `CollectionPage` + `BreadcrumbList` |
 | `piece` | Home → series ancestors → title | optional series-style hero; else text-first | lead `max-w-[46rem]`, facts card, anverso/reverso, narrative (full case width), sources | `VisualArtwork` |
 | `editorial-index` | Home → Blog/News | none | card grid | `CollectionPage` |
 | `editorial-article` | Home → index → title | in-flow figure, not full-bleed | dek, claim, prose, related, comments | `BlogPosting` or `NewsArticle` |
