@@ -407,8 +407,58 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What was Operation Bernhard?',
       },
       answer: {
-        es: 'El mayor esquema de falsificación respaldado por un Estado: las SS, en Sachsenhausen, forjaron libras del Banco de Inglaterra. Se documentan al menos 8,9 millones de billetes por 134,6 millones de libras. El Banco de Inglaterra retiró las denominaciones altas y rediseñó el papel de posguerra.',
-        en: 'The largest state-backed counterfeiting scheme on record: the SS at Sachsenhausen forged Bank of England notes. At least 8.9 million pieces worth £134.6 million are documented. The Bank of England withdrew the high denominations and redesigned postwar paper.',
+        es: 'El mayor esquema de falsificación respaldado por un Estado: las SS, en Sachsenhausen, forjaron libras del Banco de Inglaterra. Se documentan al menos 8,9 millones de billetes por 134,6 millones de libras. El Banco de Inglaterra detectó el papel en 1943 —un serial reutilizado, llegado por Marruecos— y retiró las denominaciones altas; tras la guerra rediseñó el circulante.',
+        en: 'The largest state-backed counterfeiting scheme on record: the SS at Sachsenhausen forged Bank of England notes. At least 8.9 million pieces worth £134.6 million are documented. The Bank of England detected the paper in 1943 — a reused serial that arrived via Morocco — and withdrew the high denominations; after the war it redesigned the circulating notes.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuánto vale un billete HAWAII?',
+        en: 'What is a HAWAII overprint note worth?',
+      },
+      answer: {
+        es: 'Notofilia no publica precios. El valor de un HAWAII depende del tipo Friedberg, de la denominación, del estado del papel —incluida la designación EPQ—, de la nitidez de la sobreimpresión y de si es un reemplazo con estrella. El 1 dólar 1935 A (Fr. 2300) es el tipo más visto; los de 10 y 20 dólares, y los star notes, son más escasos. Esta colección no ficha un ejemplar ni cotiza el mercado.',
+        en: 'Notofilia does not publish prices. The value of a HAWAII note depends on the Friedberg type, the denomination, the paper — including an EPQ designation — the sharpness of the overprint, and whether it is a star replacement. The 1935A $1 (Fr. 2300) is the type most often seen; the $10 and $20 notes, and the star notes, are scarcer. This collection does not record an example and does not quote the market.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué eran los certificados de sello amarillo?',
+        en: 'What were the yellow-seal silver certificates?',
+      },
+      answer: {
+        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso.',
+        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué eran los Ghetto-Kronen de Theresienstadt?',
+        en: 'What were the Theresienstadt Ghetto-Kronen?',
+      },
+      answer: {
+        es: 'Siete denominaciones (1 a 100 coronas) fechadas el 1 de enero de 1943, impresas en Praga, con Moisés y las tablas en el anverso y la firma de Jakob Edelstein. No compraban: servían para presentar Theresienstadt como un campo modelo. Peter Kien diseñó el tipo; Heydrich rechazó el primer dibujo. No es moneda militar aliada.',
+        en: 'Seven denominations (1 to 100 crowns) dated 1 January 1943, printed in Prague, with Moses and the tablets on the face and Jakob Edelstein’s signature. They bought nothing: they were meant to present Theresienstadt as a model camp. Peter Kien designed the type; Heydrich rejected the first drawing. This is not Allied military currency.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el dinero de invasión japonés?',
+        en: 'What is Japanese invasion money?',
+      },
+      answer: {
+        es: 'Papel fiduciario que el Imperio japonés impuso en Malaya (letra M), Birmania (B), las Indias Orientales (S), Filipinas (P) y Oceanía (O). No es el yen militar (gunpyō) ni el yen A o B de la AMC. En Filipinas la guerrilla emitió vales propios, distintos de la Serie Victory.',
+        en: 'Fiduciary paper the Japanese Empire imposed in Malaya (letter M), Burma (B), the Netherlands Indies (S), the Philippines (P), and Oceania (O). It is not military yen (gunpyō) and not AMC A-yen or B-yen. In the Philippines the guerrillas issued their own vouchers, distinct from the Victory Series.',
+      },
+    },
+    {
+      question: {
+        es: '¿Para qué servían los BAFSV?',
+        en: 'What were BAFSV for?',
+      },
+      answer: {
+        es: 'Vales de las Fuerzas Armadas británicas, válidos solo en cantinas del NAAFI, para cortar el mercado negro de posguerra. La 1.ª serie (1946) incluye 3 d, 6 d, 1/-, 2/6, 5/-, 10/- y 1 £. La 5.ª se diseñó y no se imprimió. El programa duró, con huecos, hasta 1982.',
+        en: 'British Armed Forces vouchers, valid only in NAAFI canteens, meant to cut the postwar black market. The 1st series (1946) includes 3d, 6d, 1/-, 2/6, 5/-, 10/-, and £1. The 5th series was designed and never printed. The program lasted, with gaps, until 1982.',
       },
     },
   ],

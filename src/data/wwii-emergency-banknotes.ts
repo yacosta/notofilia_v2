@@ -21,7 +21,7 @@ export const wwiiEmergencyCopy = {
     periodValue: '1939–1948, con el eco de los BAFSV hasta 1982.',
     typesLabel: 'Emisiones',
     typesValue:
-      'Sobreimpresión HAWAII, certificado de plata de sello amarillo, experimentales R/S, Moneda Militar Aliada, Ghetto-Kronen de Theresienstadt, Operación Bernhard, dinero de invasión japonés, Reichskreditkassenscheine y BAFSV.',
+      'Sobreimpresión HAWAII, certificado de plata de sello amarillo, experimentales R/S, Moneda Militar Aliada (lira, franco, marco, chelín y yen), Ghetto-Kronen de Theresienstadt y otro papel de gueto y campo, Operación Bernhard, dinero de invasión japonés y yen militar, Reichskreditkassenscheine, islas del Canal, emisiones soviéticas de 1944, muntbiljetten neerlandeses de 1943 y BAFSV.',
     holdingsLabel: 'En esta vitrina',
     holdingsValue:
       'Ningún ejemplar fichado. El caso es el marco histórico; no se inventa un serial ni un HAWAII o sello amarillo.',
@@ -29,8 +29,15 @@ export const wwiiEmergencyCopy = {
       'El papel federal de la era de la guerra, los certificados de pago militar y la Serie Victory de Filipinas tienen vitrina propia.',
     usLead: 'El papel federal de la era de la guerra se documenta en la vitrina de Estados Unidos.',
     usLink: 'Estados Unidos',
-    mpcLead: 'El perímetro que, desde 1946, cerró el agujero de los dólares de sello amarillo y la AMC está en la vitrina de MPC.',
+    mpcLead: 'El perímetro que, desde 1946, cerró el agujero de los dólares de sello amarillo y la AMC está en la vitrina de MPC de Corea.',
     mpcLink: 'MPC - Guerra de Corea (1951 - 1954)',
+    mpcVietnamLead: 'El mismo perímetro, ya en polímero y en el teatro de Indochina, continúa en la vitrina de Vietnam.',
+    mpcVietnamLink: 'MPC - Guerra de Vietnam (1955-1975)',
+    updatedLabel: 'Actualizado',
+    updatedDate: '21 de septiembre de 2026',
+    byline: 'Texto de Yezid Acosta',
+    typeImageAlt:
+      'Anverso y reverso de un certificado de plata de 1 dólar serie 1935 A con sobreimpresión HAWAII (Fr. 2300). Ilustración de tipo, Smithsonian. No es un ejemplar de esta vitrina.',
     philippinesLead: 'El papel de la liberación filipina, distinto de los vales de guerrilla, está en la Serie Victory.',
     philippinesLink: 'Filipinas · Serie Victory',
     sourcesTitle: 'Fuentes',
@@ -54,7 +61,7 @@ export const wwiiEmergencyCopy = {
     periodValue: '1939–1948, with the BAFSV echo running to 1982.',
     typesLabel: 'Issues',
     typesValue:
-      'HAWAII overprints, yellow-seal silver certificates, R/S experimentals, Allied Military Currency, Theresienstadt Ghetto-Kronen, Operation Bernhard, Japanese invasion money, Reichskreditkassenscheine, and BAFSV.',
+      'HAWAII overprints, yellow-seal silver certificates, R/S experimentals, Allied Military Currency (lire, francs, marks, schillings, and yen), Theresienstadt Ghetto-Kronen and other ghetto and camp paper, Operation Bernhard, Japanese invasion money and military yen, Reichskreditkassenscheine, Channel Islands issues, Soviet 1944 notes, 1943 Dutch muntbiljetten, and BAFSV.',
     holdingsLabel: 'In this case',
     holdingsValue:
       'No holding recorded. The case is the historical frame; it does not invent a serial, a HAWAII overprint, or a yellow-seal note.',
@@ -62,8 +69,15 @@ export const wwiiEmergencyCopy = {
       'Federal paper from the war years, military payment certificates, and the Philippine Victory Series have their own cases.',
     usLead: 'Federal paper from the war years is documented in the United States case.',
     usLink: 'United States',
-    mpcLead: 'The perimeter that, from 1946, closed the gap opened by yellow-seal dollars and AMC lives in the MPC case.',
+    mpcLead: 'The perimeter that, from 1946, closed the gap opened by yellow-seal dollars and AMC lives in the Korean War MPC case.',
     mpcLink: 'MPC - Korean War (1951 - 1954)',
+    mpcVietnamLead: 'The same perimeter, later in the Indochina theatre, continues in the Vietnam MPC case.',
+    mpcVietnamLink: 'MPC - Vietnam War (1955-1975)',
+    updatedLabel: 'Updated',
+    updatedDate: '21 September 2026',
+    byline: 'Text by Yezid Acosta',
+    typeImageAlt:
+      'Face and back of a Series 1935A $1 silver certificate with the HAWAII overprint (Fr. 2300). Type illustration, Smithsonian. Not a holding in this case.',
     philippinesLead: 'Philippine liberation paper, distinct from the guerrilla vouchers, is in the Victory Series.',
     philippinesLink: 'Philippines · Victory Series',
     sourcesTitle: 'Sources',
@@ -243,6 +257,101 @@ export const wwiiEmergencySources: CatalogSource[] = [
     href: 'https://blog.littletoncoin.com/special-wartime-money-helped-win-wwii-70-years-ago/',
     es: 'Littleton — el dinero de guerra',
     en: 'Littleton — wartime money',
+  },
+  {
+    href: 'https://www.worldcat.org/title/world-war-ii-remembered-history-in-your-hands-a-numismatic-study/oclc/33404791',
+    es: 'Schwan y Boling — World War II Remembered (WorldCat)',
+    en: 'Schwan and Boling — World War II Remembered (WorldCat)',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Krueger%27s_Men',
+    es: 'Lawrence Malkin — Krueger’s Men',
+    en: 'Lawrence Malkin — Krueger’s Men',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Adolf_Burger',
+    es: 'Adolf Burger — testimonio de Sachsenhausen (The Devil’s Workshop)',
+    en: 'Adolf Burger — Sachsenhausen memoir (The Devil’s Workshop)',
+  },
+  {
+    href: 'https://collections.ushmm.org/search/catalog/irn524843',
+    es: 'Museo del Holocausto de EE. UU. — 1 corona de Theresienstadt',
+    en: 'U.S. Holocaust Memorial Museum — Theresienstadt 1 krone',
+  },
+  {
+    href: 'https://digital.kenyon.edu/bulmash/1174',
+    es: 'Kenyon / Bulmash — Currency Notes from Theresienstadt',
+    en: 'Kenyon / Bulmash — Currency Notes from Theresienstadt',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Japanese_invasion_money',
+    es: 'Wikipedia — Japanese invasion money',
+    en: 'Wikipedia — Japanese invasion money',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Japanese_military_yen',
+    es: 'Wikipedia — yen militar japonés',
+    en: 'Wikipedia — Japanese military yen',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/B_yen',
+    es: 'Wikipedia — yen B de Okinawa',
+    en: 'Wikipedia — B yen (Okinawa)',
+  },
+  {
+    href: 'https://en.numista.com/384168',
+    es: 'Numista — 5 chelines BAFSV, 1.ª serie',
+    en: 'Numista — BAFSV 5 shillings, 1st series',
+  },
+  {
+    href: 'https://rapc-association.org.uk/pay-services-history/ww2/bafsv.html',
+    es: 'Royal Army Pay Corps — historia de los BAFSV',
+    en: 'Royal Army Pay Corps — BAFSV history',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Banknotes_of_the_British_Armed_Forces',
+    es: 'Wikipedia — Banknotes of the British Armed Forces',
+    en: 'Wikipedia — Banknotes of the British Armed Forces',
+  },
+  {
+    href: 'https://coinweek.com/the-red-r-dollar-how-a-failed-wartime-paper-test-created-a-collector-classic/',
+    es: 'CoinWeek — experimentales R y S de 1944',
+    en: 'CoinWeek — 1944 R and S experimentals',
+  },
+  {
+    href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
+    es: 'Friedberg / Berman — Emergency Notes (tiradas HAWAII y sello amarillo)',
+    en: 'Friedberg / Berman — Emergency Notes (HAWAII and yellow-seal printages)',
+  },
+  {
+    href: 'https://learn.apmex.com/answers/what-are-north-african-notes/',
+    es: 'APMEX — certificados de sello amarillo',
+    en: 'APMEX — North Africa yellow-seal notes',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Occupation_of_the_Channel_Islands',
+    es: 'Wikipedia — ocupación de las islas del Canal',
+    en: 'Wikipedia — Occupation of the Channel Islands',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Allied_occupation_of_Austria',
+    es: 'Wikipedia — ocupación aliada de Austria (AM-schilling)',
+    en: 'Wikipedia — Allied occupation of Austria (AM-schilling)',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Hungarian_peng%C5%91',
+    es: 'Wikipedia — pengő húngaro (emisión soviética de 1944)',
+    en: 'Wikipedia — Hungarian pengő (1944 Soviet issue)',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Dutch_guilder',
+    es: 'Wikipedia — florín neerlandés (muntbiljetten de liberación)',
+    en: 'Wikipedia — Dutch guilder (liberation muntbiljetten)',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA_Ghetto',
+    es: 'Wikipedia — gueto de Łódź (Quittungen)',
+    en: 'Wikipedia — Łódź Ghetto (Quittungen)',
   },
 ];
 
