@@ -300,7 +300,7 @@ export const seriesCopy = {
 export const MPC_PROGRAM_HERO = {
   src: '/uploads/korean-war-1951-1954-hero.jpg',
   width: 1024,
-  height: 441,
+  height: 438,
 } as const;
 
 export function seriesPath(locale: 'es' | 'en'): string {
