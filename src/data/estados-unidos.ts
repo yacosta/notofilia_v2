@@ -3742,17 +3742,17 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     chapterId: 'us-silver',
     path: '/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
     pathEn: '/collection/united-states/1-dollar-hawaii-1935a/',
-    pick: 'P#36 · Fr. 2300',
+    pick: 'Hawaii P#36 · Fr. 2300',
     serial: 'S40499058C',
     cert_number: '1505944-014',
     cert_grader: 'PMG',
     signatures: {
-      es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
-      en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+      es: 'William Alexander Julian (tesorero de los Estados Unidos) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'William Alexander Julian (Treasurer of the United States) and Henry Morgenthau Jr. (Secretary of the Treasury)',
     },
     printed: {
-      es: 'Serie 1935 A, impresa como SERIES 1935 A. Bureau of Engraving and Printing. Emisión de emergencia HAWAII, en circulación desde el 25 de junio de 1942. Las fichas de tipo Friedberg / Berman citan 35.052.000 ejemplares para el 1 dólar Fr. 2300; no es una tirada de este serial ni de este bloque S–C. Esta ficha no inventa el primer ni el último número de la serie.',
-      en: 'Series 1935A, printed as SERIES 1935 A. Bureau of Engraving and Printing. HAWAII emergency issue, in circulation from 25 June 1942. Friedberg / Berman type records cite 35,052,000 notes for the $1 Fr. 2300; that is not a printage for this serial or for the S–C block. This record does not invent the first or last number of the series.',
+      es: 'Serie 1935 A, impresa como SERIES 1935 A: esa designación no es el año en que se numeró este ejemplar. El Tesoro puso en circulación la moneda HAWAII el 25 de junio de 1942. Peter Huntoon (Paper Money, mayo–junio de 2008, tabla 1a) sitúa el bloque S–C entre S39996001C y S54996000C —15.000.000 de piezas— y da las fechas de numeración del 16 de mayo al 6 de junio de 1944. El serial S40499058C cae en esa asignación; esas fechas son la ventana del lote, no el día exacto en que se terminó esta pieza. Las fichas de tipo citan 35.052.000 ejemplares ordinarios (sin estrella) del 1 dólar Fr. 2300, en ocho bloques; las estrellas se produjeron aparte. El formato de tipo es de unos 156 × 67 mm (Numista); no es una medición de este encapsulado. Bureau of Engraving and Printing.',
+      en: 'Series 1935A, printed as SERIES 1935 A: that designation is not the year this specimen was numbered. The Treasury introduced HAWAII currency on 25 June 1942. Peter Huntoon (Paper Money, May–June 2008, Table 1a) places the S–C block from S39996001C to S54996000C — 15,000,000 notes — and dates the numbering 16 May–6 June 1944. Serial S40499058C falls in that allocation; those dates are the run’s numbering window, not the exact day this note was finished. Type records cite 35,052,000 regular (non-star) $1 Fr. 2300 notes across eight blocks; replacements were produced separately. The type format is about 156 × 67 mm (Numista); that is not a measurement of this slab. Bureau of Engraving and Printing.',
     },
     images: {
       composite: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-composite.jpg',
@@ -3770,17 +3770,17 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'United States · Silver Certificate · Emergency',
     },
     lead: {
-      es: 'Anverso con Washington, sello y seriales marrones S40499058C y HAWAII en ambos márgenes; reverso con HAWAII en letras huecas. Serie 1935 A. PMG 58 EPQ, certificado 1505944-014.',
-      en: 'Face with Washington, brown seal and serials S40499058C, and HAWAII on both margins; back with HAWAII in hollow letters. Series 1935A. PMG 58 EPQ, certificate 1505944-014.',
+      es: 'Anverso con Washington, sello y seriales marrones S40499058C y HAWAII en ambos márgenes; reverso con HAWAII en letras huecas. Serie 1935 A, numerado en 1944. PMG 58 EPQ, Choice About Uncirculated, certificado 1505944-014.',
+      en: 'Face with Washington, brown seal and serials S40499058C, and HAWAII on both margins; back with HAWAII in hollow letters. Series 1935A, numbered in 1944. PMG 58 EPQ, Choice About Uncirculated, certificate 1505944-014.',
     },
     description: {
-      es: 'El 1 dólar certificado de plata serie 1935 A con sobreimpresión HAWAII (Pick 36, Friedberg 2300) es papel de emergencia del Tesoro, no un Federal Reserve Note ni un sello amarillo de África del Norte: sello y seriales marrones, firmas de W. A. Julian y Henry Morgenthau Jr. El anverso, en negro, lleva el retrato de George Washington, la leyenda SILVER CERTIFICATE y, a la derecha, el sello circular marrón del Tesoro. Los seriales marrones S40499058C se repiten arriba a la derecha y abajo a la izquierda (bloque S–C). La palabra HAWAII va en vertical en ambos márgenes del anverso. El reverso, en verde, muestra el Gran Sello —águila y pirámide— con HAWAII en letras huecas que cubren casi todo el campo. El encapsulado PMG imprime Fr. 2300, bloque SC, firmas Julian | Morgenthau, posición de plancha F, Choice About Unc 58 y la designación Exceptional Paper Quality. No es un reemplazo con estrella. No es el 1 dólar Funnyback serie 1928 A, serial D00508932B, ni el certificado de plata serie 1957 B, serial S35513454A, ni el 1 dólar de sello amarillo Fr. 2306. El canje en plata de estos certificados terminó en 1968; siguen siendo curso legal a la par.',
-      en: 'The Series 1935A $1 Silver Certificate with the HAWAII overprint (Pick 36, Friedberg 2300) is Treasury emergency paper, not a Federal Reserve Note and not a North Africa yellow-seal note: brown seal and serials, signatures of W. A. Julian and Henry Morgenthau Jr. The black face carries George Washington, the legend SILVER CERTIFICATE, and, at right, the brown circular Treasury seal. Brown serials S40499058C repeat at upper right and lower left (S–C block). HAWAII runs vertically on both face margins. The green back shows the Great Seal — eagle and pyramid — with HAWAII in hollow letters that fill almost the entire field. The PMG holder prints Fr. 2300, SC block, Julian | Morgenthau signatures, plate position F, Choice About Unc 58, and Exceptional Paper Quality. It is not a star replacement. It is not the Series 1928A Funnyback $1, serial D00508932B, nor the Series 1957-B Silver Certificate, serial S35513454A, nor the yellow-seal $1 Fr. 2306. Redemption of these certificates in silver ended in 1968; they remain legal tender at face value.',
+      es: 'El 1 dólar certificado de plata serie 1935 A con sobreimpresión HAWAII (Hawaii Pick 36, Friedberg 2300; Numista N#202338) es papel de emergencia del Tesoro para el Territorio de Hawái y las operaciones del Pacífico, no un Federal Reserve Note: el 1 dólar HAWAII es certificado de plata; los de 5, 10 y 20 dólares de esa emisión son FRN. Tampoco es el sello amarillo de África del Norte. El catálogo correcto es Hawaii P#36, no el P#416a de Estados Unidos, que nombra el 1935 A de sello azul ordinario. Sello y seriales marrones; firmas de William Alexander Julian y Henry Morgenthau Jr. El anverso, en negro sobre papel crema, lleva el retrato de George Washington, un 1 grande a la izquierda, la leyenda SILVER CERTIFICATE y, a la derecha, el sello circular marrón del Tesoro. Los seriales marrones S40499058C se repiten abajo a la izquierda y arriba a la derecha (bloque S–C). HAWAII va en vertical, en pequeño, en ambos márgenes. La marca de plancha de anverso es F 2300; la posición de plancha es F. El 2300 de la plancha y el Fr. 2300 coinciden en cifra, pero son identificadores distintos: uno está impreso en el billete y el otro es la ficha Friedberg. El reverso, en verde, muestra el ONE central, la pirámide y el ojo a la izquierda, el águila y el escudo a la derecha, y HAWAII en letras huecas que cruzan el campo. La plancha de reverso 3534 queda abajo, hacia la derecha. El encapsulado PMG imprime Fr. 2300, bloque SC, firmas Julian | Morgenthau, pp F, Choice About Uncirculated 58 y Exceptional Paper Quality. No es un reemplazo con estrella: el serial lleva prefijo S y sufijo C. No es el 1 dólar Funnyback serie 1928 A, serial D00508932B, ni el certificado de plata serie 1957 B, serial S35513454A, ni el 1 dólar de sello amarillo Fr. 2306. El canje en plata terminó en 1968; siguen siendo curso legal a la par.',
+      en: 'The Series 1935A $1 Silver Certificate with the HAWAII overprint (Hawaii Pick 36, Friedberg 2300; Numista N#202338) is Treasury emergency paper for the Territory of Hawaii and Pacific operations, not a Federal Reserve Note: the HAWAII $1 is a silver certificate; the $5, $10, and $20 of that issue are FRNs. It is not the North Africa yellow-seal note. The correct catalog number is Hawaii P#36, not United States P#416a, which names the ordinary blue-seal 1935A type. Brown seal and serials; signatures of William Alexander Julian and Henry Morgenthau Jr. The black face on cream paper carries George Washington, a large 1 at left, the legend SILVER CERTIFICATE, and, at right, the brown circular Treasury seal. Brown serials S40499058C repeat at lower left and upper right (S–C block). Small vertical HAWAII overprints flank the design. The face-plate marking is F 2300; the plate position is F. Face plate 2300 and Fr. 2300 match numerically here, but they are separate identifiers: one is printed on the note, the other is the Friedberg classification. The green back shows a central ONE, the pyramid and eye at left, the eagle and shield at right, and HAWAII in hollow letters across the field. Back plate 3534 sits below the lettering, toward the right. The PMG holder prints Fr. 2300, SC block, Julian | Morgenthau signatures, pp F, Choice About Uncirculated 58, and Exceptional Paper Quality. It is not a star replacement: the serial has an S prefix and a C suffix. It is not the Series 1928A Funnyback $1, serial D00508932B, nor the Series 1957-B Silver Certificate, serial S35513454A, nor the yellow-seal $1 Fr. 2306. Redemption in silver ended in 1968; the notes remain legal tender at face value.',
     },
     history: [
       {
-        es: 'Tras Pearl Harbor, el Tesoro y el Departamento de Guerra marcaron el dólar del Territorio de Hawái para poder repudiarlo si Japón tomaba el archipiélago. La serie salió el 25 de junio de 1942: sello y seriales marrones y la palabra HAWAII en anverso y reverso. El uso obligatorio se mantuvo hasta el 21 de octubre de 1944; el retiro oficial empezó en abril de 1946.',
-        en: 'After Pearl Harbor the Treasury and the War Department marked Territory of Hawaii dollars so they could be repudiated if Japan took the islands. The series was issued on 25 June 1942: brown seals and serials and the word HAWAII on face and back. Compulsory use lasted until 21 October 1944; official withdrawal began in April 1946.',
+        es: 'Tras Pearl Harbor, el Tesoro marcó el dólar del Territorio de Hawái —y el que sirvió en campañas del Pacífico— para poder invalidar existencias capturadas si Japón tomaba el archipiélago. La moneda HAWAII se introdujo el 25 de junio de 1942: sello y seriales marrones y la palabra HAWAII en anverso y reverso. La serie impresa 1935 A nombra el tipo, no el año de numeración de este ejemplar: el bloque S–C se numeró entre el 16 de mayo y el 6 de junio de 1944. Las restricciones de emergencia se levantaron el 21 de octubre de 1944; a partir de entonces el papel ordinario y el HAWAII pudieron circular juntos en las zonas designadas. Esa fecha cierra el régimen restrictivo, no la vida del billete en circulación. El retiro oficial empezó en abril de 1946.',
+        en: 'After Pearl Harbor the Treasury marked Territory of Hawaii dollars — and notes used in Pacific campaigns — so captured stocks could be invalidated if Japan took the islands. HAWAII currency was introduced on 25 June 1942: brown seals and serials and the word HAWAII on face and back. Printed Series 1935A names the type, not the numbering year of this specimen: the S–C block was serial-numbered between 16 May and 6 June 1944. The emergency restrictions were lifted on 21 October 1944; after that, ordinary U.S. currency and HAWAII notes could circulate together in the designated areas. That date ends the restrictive arrangement, not the notes’ life in circulation. Official withdrawal began in April 1946.',
       },
       {
         es: 'El marco de esas emisiones de emergencia —Hawái, el sello amarillo, la AMC, Bernhard— se recorre en la vitrina de billetes de emergencia de la Segunda Guerra Mundial, en Notafilia. Esta ficha es el ejemplar documentado de ese tipo: serial S40499058C, no una ilustración de tipo.',
@@ -3792,33 +3792,42 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'The HAWAII overprint',
     },
     frontCaption: {
-      es: 'Anverso encapsulado del 1 dólar HAWAII serie 1935 A, serial S40499058C: Washington, sello marrón del Tesoro, HAWAII en los márgenes y etiqueta PMG 58 EPQ.',
-      en: 'Slabbed face of the Series 1935A HAWAII $1, serial S40499058C: Washington, the brown Treasury seal, HAWAII in the margins, and the PMG 58 EPQ label.',
+      es: 'Anverso encapsulado del 1 dólar HAWAII serie 1935 A, serial S40499058C: Washington, sello marrón, HAWAII en los márgenes, plancha F 2300 y etiqueta PMG 58 EPQ.',
+      en: 'Slabbed face of the Series 1935A HAWAII $1, serial S40499058C: Washington, the brown seal, HAWAII in the margins, face plate F 2300, and the PMG 58 EPQ label.',
     },
     backCaption: {
-      es: 'Reverso encapsulado del 1 dólar HAWAII, certificado PMG 1505944-014: Gran Sello y HAWAII en letras huecas. Exceptional Paper Quality 58.',
-      en: 'Slabbed back of the HAWAII $1, PMG certificate 1505944-014: the Great Seal and HAWAII in hollow letters. Exceptional Paper Quality 58.',
+      es: 'Reverso encapsulado del 1 dólar HAWAII, certificado PMG 1505944-014: ONE central, HAWAII en letras huecas y plancha de reverso 3534. Choice About Uncirculated 58 EPQ.',
+      en: 'Slabbed back of the HAWAII $1, PMG certificate 1505944-014: central ONE, HAWAII in hollow letters, and back plate 3534. Choice About Uncirculated 58 EPQ.',
     },
     scarcity: {
-      es: 'Fr. 2300 (Pick 36) es el 1 dólar HAWAII, el tipo más común de la serie de emergencia. Las fichas de tipo citan 35.052.000 ejemplares; no es un total de este bloque S–C. Las claves del tipo son el estado del papel —sobre todo EPQ—, la nitidez de la sobreimpresión y los reemplazos con estrella. Esta pieza no es estrella. Esta ficha no inventa una tirada por bloque ni republica precios.',
-      en: 'Fr. 2300 (Pick 36) is the HAWAII $1, the common type of the emergency series. Type records cite 35,052,000 notes; that is not an S–C-block total. The keys of the type are paper quality — especially EPQ — the sharpness of the overprint, and star replacements. This piece is not a star. This record does not invent a printage by block and does not republish prices.',
+      es: 'Fr. 2300 (Hawaii P#36) es el 1 dólar HAWAII, el tipo más común de la serie de emergencia. Las fichas de tipo citan 35.052.000 ejemplares ordinarios, en ocho bloques; las estrellas van aparte. Huntoon asigna al bloque S–C 15.000.000 de piezas (S39996001C–S54996000C). Las claves del tipo son el estado del papel —sobre todo EPQ—, la nitidez de la sobreimpresión y los reemplazos con estrella. Esta pieza no es estrella. Esta ficha no republica precios.',
+      en: 'Fr. 2300 (Hawaii P#36) is the HAWAII $1, the common type of the emergency series. Type records cite 35,052,000 regular notes across eight blocks; stars were separate. Huntoon assigns the S–C block 15,000,000 notes (S39996001C–S54996000C). The keys of the type are paper quality — especially EPQ — the sharpness of the overprint, and star replacements. This piece is not a star. This record does not republish prices.',
     },
     population: {
-      es: 'PMG publica informes de población de certificados de plata de emergencia, pero el recuento concreto de Fr. 2300 en 58 EPQ no se ha verificado aquí de forma independiente (el informe en línea requiere cuenta). Se documenta el certificado 1505944-014 y el grado impreso en el encapsulado, no un censo.',
-      en: 'PMG publishes population reports for emergency silver certificates, but the specific Fr. 2300 grade-58 EPQ headcount has not been independently verified here (the online report requires an account). This page records certificate 1505944-014 and the grade printed on the holder, not a census total.',
+      es: 'El grado y el certificado se leen en el encapsulado; no se ha verificado de forma independiente el 1505944-014 contra la base de PMG. PMG describe el 58 como Choice About Uncirculated —a menudo un solo pliegue que cruza el diseño—, no Uncirculated ni Gem Uncirculated. EPQ, en el criterio de PMG, indica papel original, no procesado para simular un grado más alto; el desgaste propio del 58 sigue admitido. No se cita un censo de población.',
+      en: 'The grade and certificate are read from the holder; certification 1505944-014 has not been independently checked against PMG’s database. PMG describes 58 as Choice About Uncirculated — often a single fold across the design — not Uncirculated or Gem Uncirculated. EPQ, in PMG’s wording, means original paper that has not been processed to look like a higher grade; wear appropriate to 58 is still allowed. No population census is quoted.',
     },
     grade: {
-      es: 'PMG 58 EPQ · certificado 1505944-014',
-      en: 'PMG 58 EPQ · certificate 1505944-014',
+      es: 'PMG 58 EPQ — Choice About Uncirculated · certificado 1505944-014',
+      en: 'PMG 58 EPQ — Choice About Uncirculated · certificate 1505944-014',
     },
     sources: [
       {
-        href: 'https://en.wikipedia.org/wiki/Hawaii_overprint_note',
-        es: 'Wikipedia — Hawaii overprint note',
-        en: 'Wikipedia — Hawaii overprint note',
+        href: 'https://en.numista.com/catalogue/note202338.html',
+        es: 'Numista N#202338 — 1 Dollar (Silver Certificate; Brown Seal — Hawaii)',
+        en: 'Numista N#202338 — 1 Dollar (Silver Certificate; Brown Seal — Hawaii)',
         note: {
-          es: 'Serie hawaiana desde el 25 de junio de 1942; 1 dólar certificado de plata 1935 A; sello y seriales marrones.',
-          en: 'Hawaiian series from 25 June 1942; Series 1935A $1 silver certificate; brown seal and serials.',
+          es: 'Hawaii P#36; firmas Julian–Morgenthau; formato publicado de unos 156 × 67 mm. No es el P#416a de sello azul.',
+          en: 'Hawaii P#36; Julian–Morgenthau signatures; published format about 156 × 67 mm. Not the blue-seal P#416a.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/spmc-pm-articles',
+        es: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, mayo–junio de 2008)',
+        en: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, May–June 2008)',
+        note: {
+          es: 'Tabla 1a: bloque S–C, S39996001C–S54996000C, 15.000.000; numeración del 16 de mayo al 6 de junio de 1944.',
+          en: 'Table 1a: S–C block, S39996001C–S54996000C, 15,000,000; numbered 16 May–6 June 1944.',
         },
       },
       {
@@ -3826,17 +3835,26 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Friedberg / Berman — Emergency Notes (tirada del 1 dólar HAWAII)',
         en: 'Friedberg / Berman — Emergency Notes (HAWAII $1 printage)',
         note: {
-          es: '35.052.000 para el 1 dólar Fr. 2300; cifra de tipo, no de este serial.',
-          en: '35,052,000 for the $1 Fr. 2300; a type figure, not this serial.',
+          es: '35.052.000 ordinarios para el 1 dólar Fr. 2300, en ocho bloques; cifra de tipo, no de este serial.',
+          en: '35,052,000 regular $1 Fr. 2300 notes across eight blocks; a type figure, not this serial.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/paper-money-grading/grading-scale/',
+        es: 'PMG — escala de grados (58 Choice About Uncirculated y EPQ)',
+        en: 'PMG — grading scale (58 Choice About Uncirculated and EPQ)',
+        note: {
+          es: 'El 58 no es Uncirculated ni Gem; EPQ habla de papel original, no de un censo.',
+          en: '58 is not Uncirculated or Gem; EPQ describes original paper, not a census.',
         },
       },
       {
         href: 'https://www.pmgnotes.com/verify',
-        es: 'PMG — Verificación de certificado 1505944-014',
-        en: 'PMG — Certificate verification 1505944-014',
+        es: 'PMG — verificación de certificado (lectura del encapsulado 1505944-014)',
+        en: 'PMG — certificate verification (holder reading 1505944-014)',
         note: {
-          es: 'El encapsulado imprime Fr. 2300, bloque SC, serial S40499058C, firmas Julian | Morgenthau, Choice About Unc 58 EPQ y posición de plancha F.',
-          en: 'The holder prints Fr. 2300, SC block, serial S40499058C, Julian | Morgenthau signatures, Choice About Unc 58 EPQ, and plate position F.',
+          es: 'El encapsulado imprime Fr. 2300, bloque SC, serial S40499058C, firmas Julian | Morgenthau, Choice About Uncirculated 58 EPQ y pp F. No se consultó aquí la base en línea.',
+          en: 'The holder prints Fr. 2300, SC block, serial S40499058C, Julian | Morgenthau signatures, Choice About Uncirculated 58 EPQ, and pp F. The online database was not queried here.',
         },
       },
       {
@@ -3844,8 +3862,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'U.S. Currency Education Program — History of U.S. Currency',
         en: 'U.S. Currency Education Program — History of U.S. Currency',
         note: {
-          es: 'Certificados de plata desde 1878; canje en plata hasta 1968.',
-          en: 'Silver certificates from 1878; redemption in silver until 1968.',
+          es: 'BEP como impresor; certificados de plata; canje en plata hasta 1968.',
+          en: 'BEP as printer; silver certificates; redemption in silver until 1968.',
         },
       },
     ],

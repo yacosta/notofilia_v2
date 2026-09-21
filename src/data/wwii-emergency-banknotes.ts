@@ -38,7 +38,7 @@ export const wwiiEmergencyCopy = {
       'Sobreimpresión HAWAII, certificado de plata de sello amarillo, experimentales R/S, Moneda Militar Aliada (lira, franco, marco, chelín y yen), Ghetto-Kronen de Theresienstadt y otro papel de gueto y campo, Operación Bernhard, dinero de invasión japonés y yen militar, Reichskreditkassenscheine, islas del Canal, emisiones soviéticas de 1944, muntbiljetten neerlandeses de 1943 y BAFSV.',
     holdingsLabel: 'En esta vitrina',
     holdingsValue:
-      '1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, PMG 58 EPQ. El sello amarillo aún no tiene ficha.',
+      '1 dólar HAWAII serie 1935 A (Hawaii P#36 · Fr. 2300), serial S40499058C, numerado en 1944, PMG 58 EPQ — Choice About Uncirculated. El sello amarillo aún no tiene ficha.',
     holdingsNote:
       'El papel federal de la era de la guerra, los certificados de pago militar y la Serie Victory de Filipinas tienen vitrina propia.',
     viewNote: 'Ver la ficha',
@@ -84,7 +84,7 @@ export const wwiiEmergencyCopy = {
       'HAWAII overprints, yellow-seal silver certificates, R/S experimentals, Allied Military Currency (lire, francs, marks, schillings, and yen), Theresienstadt Ghetto-Kronen and other ghetto and camp paper, Operation Bernhard, Japanese invasion money and military yen, Reichskreditkassenscheine, Channel Islands issues, Soviet 1944 notes, 1943 Dutch muntbiljetten, and BAFSV.',
     holdingsLabel: 'In this case',
     holdingsValue:
-      'Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG 58 EPQ. No yellow-seal note is recorded yet.',
+      'Series 1935A HAWAII $1 (Hawaii P#36 · Fr. 2300), serial S40499058C, numbered in 1944, PMG 58 EPQ — Choice About Uncirculated. No yellow-seal note is recorded yet.',
     holdingsNote:
       'Federal paper from the war years, military payment certificates, and the Philippine Victory Series have their own cases.',
     viewNote: 'Open the note page',
