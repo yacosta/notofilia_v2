@@ -32,7 +32,12 @@ describe('WWII emergency banknotes series page', () => {
     assert.doesNotMatch(blog, /billetes-emergencia-segunda-guerra-mundial/);
     assert.match(navSource, /id: 'billetes-emergencia-iigm'/);
     assert.match(navSource, /href: WWII_EMERGENCY_PATH/);
+    assert.match(navSource, /flag: 'us-hi'/);
     assert.match(
+      navSource,
+      /id: 'estados-unidos'[\s\S]*id: 'filipinas'[\s\S]*id: 'billetes-emergencia-iigm'[\s\S]*id: 'mpc'/,
+    );
+    assert.doesNotMatch(
       navSource,
       /id: 'moneda-prueba-giori'[\s\S]*id: 'billetes-emergencia-iigm'[\s\S]*id: 'polimero'/,
     );
