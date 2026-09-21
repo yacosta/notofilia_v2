@@ -350,6 +350,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/blog/origenes-banca-comercial-colombia-banca-libre/', en: '/blog/origins-of-commercial-banking-colombia-free-banking/' },
   { es: '/blog/origenes-banca-comercial-puerto-rico/', en: '/blog/origins-of-commercial-banking-puerto-rico/' },
   { es: '/blog/personajes-billetes-colombia/', en: '/blog/figures-on-colombian-banknotes/' },
+  { es: '/blog/billetes-emergencia-segunda-guerra-mundial/', en: '/blog/world-war-ii-emergency-banknotes/' },
 ];
 
 const PAIRS_BY_LENGTH = [...PATH_PREFIX_PAIRS].sort(
@@ -628,6 +629,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/blog/origenes-banca-comercial-colombia-banca-libre/',
     '/en/blog/origenes-banca-comercial-puerto-rico/',
     '/en/blog/personajes-billetes-colombia/',
+    '/en/blog/billetes-emergencia-segunda-guerra-mundial/',
     '/en/coleccion/notafilia/moneda-prueba-giori/',
     '/en/collection/notaphily/giori-test-currency/',
   ];

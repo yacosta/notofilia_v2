@@ -536,6 +536,14 @@ describe('locale path mapping', () => {
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
     assert.equal(
+      localizePath('/blog/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/blog/world-war-ii-emergency-banknotes/',
+    );
+    assert.equal(
+      otherLocalePath('/en/blog/world-war-ii-emergency-banknotes/', 'en'),
+      '/blog/billetes-emergencia-segunda-guerra-mundial/',
+    );
+    assert.equal(
       otherLocalePath('/en/blog/best-coin-and-banknote-grading-companies/', 'en'),
       '/blog/mejores-empresas-certificacion-monedas-billetes/',
     );
