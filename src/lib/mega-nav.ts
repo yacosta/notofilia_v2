@@ -50,10 +50,10 @@ export type NavNode = {
   en: string;
   href?: string;
   /**
-   * ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag.
+   * ISO 3166-1 alpha-2 or a flag-icons region code (Hawaii `us-hi`) for a decorative flag.
    * Required on country rows under Notafilia, Numismática, and polymer country children
    * (China `cn`, England `gb`, …). Continent headings and catalog/misc links omit it.
-   * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (flag-icons 4x3).
+   * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (4x3).
    */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
@@ -173,6 +173,13 @@ export const megaNav: NavNode[] = [
             flag: 'ph',
           },
           {
+            id: 'billetes-emergencia-iigm',
+            es: 'Billetes de emergencia de la II Guerra Mundial',
+            en: 'World War II emergency banknotes',
+            href: WWII_EMERGENCY_PATH,
+            flag: 'us-hi',
+          },
+          {
             id: 'mpc',
             es: 'MPC - Guerra de Corea (1951 - 1954)',
             en: 'MPC - Korean War (1951 - 1954)',
@@ -228,13 +235,6 @@ export const megaNav: NavNode[] = [
         es: 'Moneda de prueba Giori',
         en: 'Giori test currency',
         href: GIORI_TEST_NOTES_PATH,
-        icon: 'guides',
-      },
-      {
-        id: 'billetes-emergencia-iigm',
-        es: 'Billetes de emergencia de la II Guerra Mundial',
-        en: 'World War II emergency banknotes',
-        href: WWII_EMERGENCY_PATH,
         icon: 'guides',
       },
       {

@@ -187,11 +187,12 @@ describe('polymer submenu', () => {
 describe('country flags', () => {
   it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
-    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2})'/g)].map((match) => match[1]);
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z]{2})?)'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
     assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
+    assert.ok(flags.includes('us-hi'), 'WWII emergency notes must use flag: us-hi');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
@@ -314,6 +315,17 @@ describe('United States submenu', () => {
     assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
     assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
+  });
+
+  it('nests WWII emergency banknotes under Estados Unidos after Filipinas', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const wwii = usa.split("id: 'billetes-emergencia-iigm'")[1]?.split("id: 'mpc'")[0] ?? '';
+    assert.match(usa, /id: 'filipinas'[\s\S]*id: 'billetes-emergencia-iigm'[\s\S]*id: 'mpc'/);
+    assert.match(wwii, /href: WWII_EMERGENCY_PATH/);
+    assert.match(wwii, /flag: 'us-hi'/);
+    assert.doesNotMatch(wwii, /flag: 'us'/);
+    assert.doesNotMatch(usa.split("id: 'mpc'")[1] ?? '', /id: 'billetes-emergencia-iigm'/);
   });
 
   it('marks Korean War MPC with the South Korea flag', () => {
