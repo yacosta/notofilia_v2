@@ -82,6 +82,16 @@ describe('sitemap coverage for the Giori test notes page', () => {
   });
 });
 
+describe('sitemap coverage for WWII emergency banknotes', () => {
+  it('maps the notafilia WWII pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the comparison page', () => {
   it('maps the Notofilia vs catalogs pair used in dedicated catalog paths', () => {
     assert.equal(
@@ -103,8 +113,8 @@ describe('sitemap coverage for the grading guide', () => {
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
     assert.equal(
-      localizePath('/blog/billetes-emergencia-segunda-guerra-mundial/', 'en'),
-      '/en/blog/world-war-ii-emergency-banknotes/',
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     );
   });
 });

@@ -19,7 +19,7 @@ Every file under `src/pages/**/*.astro` must map to one row. Route files stay th
 | `contact` | `ContactPage.astro` | `/contacto/` | `/en/contact/` |
 | `collection-hub` | `CollectionHubPage.astro` | `/coleccion/` | `/en/collection/` |
 | `discipline-index` | `NotafiliaIndexPage.astro` / `NumismaticaIndexPage.astro` | `/coleccion/notafilia/`, `/coleccion/numismatica/` | `/en/collection/notaphily/`, `/en/collection/numismatics/` |
-| `series-index` | `{Country}SeriesPage.astro`, `{Country}CoinagePage.astro`, `LazarettosPage.astro`, `PolymerWorldPage.astro`, `UnitedStatesColonialSeriesPage.astro`, `UnitedStatesObsoleteSeriesPage.astro`, `UnitedStatesHardTimesSeriesPage.astro` | `/coleccion/{pais}/`, plus `/paises-bajos-numismatica/` | `/en/collection/{country}/`, plus `/en/netherlands-numismatica/` |
+| `series-index` | `{Country}SeriesPage.astro`, `{Country}CoinagePage.astro`, `LazarettosPage.astro`, `PolymerWorldPage.astro`, `MpcSeriesPage.astro`, `WwiiEmergencySeriesPage.astro`, `UnitedStatesColonialSeriesPage.astro`, `UnitedStatesObsoleteSeriesPage.astro`, `UnitedStatesHardTimesSeriesPage.astro` | `/coleccion/{pais}/`, plus `/paises-bajos-numismatica/`, `/coleccion/estados-unidos/mpc/`, `/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/` | `/en/collection/{country}/`, plus `/en/netherlands-numismatica/`, `/en/collection/united-states/mpc/`, `/en/collection/notaphily/world-war-ii-emergency-banknotes/` |
 | `piece` | `{Country}NotePage.astro` / `{Country}CoinPage.astro` | piece slug under the series | translated piece slug |
 | `editorial-index` | `EditorialIndexPage.astro` | `/blog/`, `/noticias/` | `/en/blog/`, `/en/news/` |
 | `editorial-article` | `EditorialArticlePage.astro` | `/blog/[slug]/`, `/noticias/[slug]/` | `/en/blog/[slug]/`, `/en/news/[slug]/` |
@@ -46,7 +46,7 @@ All types: chrome `Layout`, skip link (via layout), `<main id="main-content" tab
 | `contact` | Home → Contact | none | image + form | `BreadcrumbList` + `ContactPage` |
 | `collection-hub` | Home → Colección | none (text header) | collection cards | `CollectionPage` + `BreadcrumbList` |
 | `discipline-index` | Home → discipline | text header (kicker + stacked H1), no full-bleed photo | intro + country/case grid | `CollectionPage` + `BreadcrumbList` |
-| `series-index` | Home → (discipline) → series | full-bleed series hero | intro, holdings/chapters, sources | `CollectionPage` + `BreadcrumbList` |
+| `series-index` | Home → (discipline) → series | full-bleed series hero; WWII emergency notes use a text header (blank hero) until a series photograph is ready | intro, holdings/chapters, sources | `CollectionPage` + `BreadcrumbList` |
 | `piece` | Home → series ancestors → title | optional series-style hero; else text-first | lead `max-w-[46rem]`, facts card, anverso/reverso, narrative (full case width), sources | `VisualArtwork` |
 | `editorial-index` | Home → Blog/News | none | card grid | `CollectionPage` |
 | `editorial-article` | Home → index → title | in-flow figure, not full-bleed | dek, claim, prose, related, comments | `BlogPosting` or `NewsArticle` |

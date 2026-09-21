@@ -290,6 +290,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     en: '/collection/notaphily/giori-test-notes/',
     aliases: ['/collection/notaphily/giori-test-currency/'],
   },
+  {
+    es: '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    en: '/collection/notaphily/world-war-ii-emergency-banknotes/',
+  },
   { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
   { es: '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', en: '/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/' },
@@ -350,7 +354,6 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/blog/origenes-banca-comercial-colombia-banca-libre/', en: '/blog/origins-of-commercial-banking-colombia-free-banking/' },
   { es: '/blog/origenes-banca-comercial-puerto-rico/', en: '/blog/origins-of-commercial-banking-puerto-rico/' },
   { es: '/blog/personajes-billetes-colombia/', en: '/blog/figures-on-colombian-banknotes/' },
-  { es: '/blog/billetes-emergencia-segunda-guerra-mundial/', en: '/blog/world-war-ii-emergency-banknotes/' },
 ];
 
 const PAIRS_BY_LENGTH = [...PATH_PREFIX_PAIRS].sort(
@@ -629,8 +632,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/blog/origenes-banca-comercial-colombia-banca-libre/',
     '/en/blog/origenes-banca-comercial-puerto-rico/',
     '/en/blog/personajes-billetes-colombia/',
-    '/en/blog/billetes-emergencia-segunda-guerra-mundial/',
     '/en/coleccion/notafilia/moneda-prueba-giori/',
+    '/en/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
     '/en/collection/notaphily/giori-test-currency/',
   ];
 

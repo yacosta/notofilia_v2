@@ -145,6 +145,14 @@ describe('locale path mapping', () => {
       '/en/collection/notaphily/giori-test-notes/',
     );
     assert.equal(
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/world-war-ii-emergency-banknotes/', 'es'),
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    );
+    assert.equal(
       localizePath('/en/collection/notaphily/giori-test-notes/', 'es'),
       '/coleccion/notafilia/moneda-prueba-giori/',
     );
@@ -536,14 +544,6 @@ describe('locale path mapping', () => {
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
     assert.equal(
-      localizePath('/blog/billetes-emergencia-segunda-guerra-mundial/', 'en'),
-      '/en/blog/world-war-ii-emergency-banknotes/',
-    );
-    assert.equal(
-      otherLocalePath('/en/blog/world-war-ii-emergency-banknotes/', 'en'),
-      '/blog/billetes-emergencia-segunda-guerra-mundial/',
-    );
-    assert.equal(
       otherLocalePath('/en/blog/best-coin-and-banknote-grading-companies/', 'en'),
       '/blog/mejores-empresas-certificacion-monedas-billetes/',
     );
@@ -623,6 +623,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/notafilia/moneda-prueba-giori/'],
       '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/'],
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     );
     assert.equal(
       redirects['/en/collection/notaphily/giori-test-currency/'],

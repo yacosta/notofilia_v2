@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import FaqBlock from '../FaqBlock.astro';
+import { enhanceProseHtml } from '../../data/editorial';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { localizeFaq, seriesFaqs } from '../../data/page-faq';
+import bodyEs from '../../data/wwii-emergency-banknotes/es.html?raw';
+import bodyEn from '../../data/wwii-emergency-banknotes/en.html?raw';
+import SourceList from './SourceList.astro';
+import { NOTAFILIA_PATH } from '../../data/notafilia';
+import { USA_MPC_PROGRAM_PATH, USA_PATH } from '../../data/estados-unidos';
+import { SERIES_PATH } from '../../data/philippines-victory-66';
+import {
+  wwiiEmergencyCopy,
+  wwiiEmergencyPath,
+  wwiiEmergencySources,
+} from '../../data/wwii-emergency-banknotes';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = wwiiEmergencyCopy[locale];
+const pathname = wwiiEmergencyPath(locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const faqItems = localizeFaq(seriesFaqs['wwii-emergency'], locale);
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: NOTAFILIA_PATH },
+    { name: t.breadcrumbCurrent, path: pathname },
+  ],
+  faq: faqItems,
+});
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(NOTAFILIA_PATH, locale), label: t.parentLink },
+          { label: t.breadcrumbCurrent },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+      <h1
+        id="series-heading"
+        class="mb-0 mt-3 font-display text-[clamp(1.75rem,4.2vw,2.85rem)] font-normal leading-[1.12] text-cream-dim"
+      >
+        {t.title}
+      </h1>
+      <p class="mb-5 mt-4 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
+        {t.intro[0]}
+      </p>
+
+      <section class="mt-12 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="series-facts-heading">
+        <h2 id="series-facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.periodLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.periodValue}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.holdingsLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.holdingsValue}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.typesLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.typesValue}</dd>
+          </div>
+        </dl>
+        <p class="mb-0 mt-6 text-[15px]/6 text-muted">{t.holdingsNote}</p>
+      </section>
+
+      <div class="prose-notofilia mt-12" lang={locale} set:html={body} />
+
+      <p class="mt-12 mb-0 text-[17px]/7 text-muted">
+        {t.usLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_PATH, locale)}
+        >
+          {t.usLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.mpcLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_MPC_PROGRAM_PATH, locale)}
+        >
+          {t.mpcLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.philippinesLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(SERIES_PATH, locale)}
+        >
+          {t.philippinesLink}
+        </a>
+      </p>
+
+      <p class="mb-0 mt-12 text-[17px]/7 text-muted">{t.sourcesLead}</p>
+      <div class="mt-8">
+        <SourceList locale={locale} sources={wwiiEmergencySources} heading={t.sourcesTitle} />
+      </div>
+
+      {faqItems.length ? <FaqBlock heading={copy[locale].faqHeading} items={faqItems} /> : null}
+
+      <p class="mt-12">
+        <a
+          href={localizePath(NOTAFILIA_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.notafiliaCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
