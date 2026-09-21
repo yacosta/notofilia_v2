@@ -212,8 +212,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas; esta vitrina aún no ficha un sello amarillo. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops; this case does not yet record a yellow-seal note. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
     },
   },
   {
@@ -401,7 +401,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -427,7 +427,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -1405,6 +1405,7 @@ export type UnitedStatesNoteId =
   | '500-dolares-serie-1934a-nueva-york'
   | '1000-dolares-serie-1934a-nueva-york'
   | '1-dolar-certificado-plata-1928a'
+  | '1-dolar-hawaii-1935a'
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
   | 'billete-prueba-giori-lincoln-memorial'
@@ -3723,6 +3724,119 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Silver Certificates desde 1878; recorte al tamaño pequeño en 1929, serie impresa 1928.',
           en: 'Silver Certificates from 1878; reduction to small size in 1929, printed Series 1928.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Certificados de plata desde 1878; canje en plata hasta 1968.',
+          en: 'Silver certificates from 1878; redemption in silver until 1968.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-hawaii-1935a',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    pathEn: '/collection/united-states/1-dollar-hawaii-1935a/',
+    pick: 'P#36 · Fr. 2300',
+    serial: 'S40499058C',
+    cert_number: '1505944-014',
+    cert_grader: 'PMG',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1935 A, impresa como SERIES 1935 A. Bureau of Engraving and Printing. Emisión de emergencia HAWAII, en circulación desde el 25 de junio de 1942. Las fichas de tipo Friedberg / Berman citan 35.052.000 ejemplares para el 1 dólar Fr. 2300; no es una tirada de este serial ni de este bloque S–C. Esta ficha no inventa el primer ni el último número de la serie.',
+      en: 'Series 1935A, printed as SERIES 1935 A. Bureau of Engraving and Printing. HAWAII emergency issue, in circulation from 25 June 1942. Friedberg / Berman type records cite 35,052,000 notes for the $1 Fr. 2300; that is not a printage for this serial or for the S–C block. This record does not invent the first or last number of the series.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-composite.jpg',
+      front: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-front.jpg',
+      back: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-back.jpg',
+      width: 2400,
+      height: 1600,
+    },
+    title: {
+      es: '1 dólar · HAWAII · Serie 1935 A',
+      en: '$1 · HAWAII · Series 1935A',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata · Emergencia',
+      en: 'United States · Silver Certificate · Emergency',
+    },
+    lead: {
+      es: 'Anverso con Washington, sello y seriales marrones S40499058C y HAWAII en ambos márgenes; reverso con HAWAII en letras huecas. Serie 1935 A. PMG 58 EPQ, certificado 1505944-014.',
+      en: 'Face with Washington, brown seal and serials S40499058C, and HAWAII on both margins; back with HAWAII in hollow letters. Series 1935A. PMG 58 EPQ, certificate 1505944-014.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata serie 1935 A con sobreimpresión HAWAII (Pick 36, Friedberg 2300) es papel de emergencia del Tesoro, no un Federal Reserve Note ni un sello amarillo de África del Norte: sello y seriales marrones, firmas de W. A. Julian y Henry Morgenthau Jr. El anverso, en negro, lleva el retrato de George Washington, la leyenda SILVER CERTIFICATE y, a la derecha, el sello circular marrón del Tesoro. Los seriales marrones S40499058C se repiten arriba a la derecha y abajo a la izquierda (bloque S–C). La palabra HAWAII va en vertical en ambos márgenes del anverso. El reverso, en verde, muestra el Gran Sello —águila y pirámide— con HAWAII en letras huecas que cubren casi todo el campo. El encapsulado PMG imprime Fr. 2300, bloque SC, firmas Julian | Morgenthau, posición de plancha F, Choice About Unc 58 y la designación Exceptional Paper Quality. No es un reemplazo con estrella. No es el 1 dólar Funnyback serie 1928 A, serial D00508932B, ni el certificado de plata serie 1957 B, serial S35513454A, ni el 1 dólar de sello amarillo Fr. 2306. El canje en plata de estos certificados terminó en 1968; siguen siendo curso legal a la par.',
+      en: 'The Series 1935A $1 Silver Certificate with the HAWAII overprint (Pick 36, Friedberg 2300) is Treasury emergency paper, not a Federal Reserve Note and not a North Africa yellow-seal note: brown seal and serials, signatures of W. A. Julian and Henry Morgenthau Jr. The black face carries George Washington, the legend SILVER CERTIFICATE, and, at right, the brown circular Treasury seal. Brown serials S40499058C repeat at upper right and lower left (S–C block). HAWAII runs vertically on both face margins. The green back shows the Great Seal — eagle and pyramid — with HAWAII in hollow letters that fill almost the entire field. The PMG holder prints Fr. 2300, SC block, Julian | Morgenthau signatures, plate position F, Choice About Unc 58, and Exceptional Paper Quality. It is not a star replacement. It is not the Series 1928A Funnyback $1, serial D00508932B, nor the Series 1957-B Silver Certificate, serial S35513454A, nor the yellow-seal $1 Fr. 2306. Redemption of these certificates in silver ended in 1968; they remain legal tender at face value.',
+    },
+    history: [
+      {
+        es: 'Tras Pearl Harbor, el Tesoro y el Departamento de Guerra marcaron el dólar del Territorio de Hawái para poder repudiarlo si Japón tomaba el archipiélago. La serie salió el 25 de junio de 1942: sello y seriales marrones y la palabra HAWAII en anverso y reverso. El uso obligatorio se mantuvo hasta el 21 de octubre de 1944; el retiro oficial empezó en abril de 1946.',
+        en: 'After Pearl Harbor the Treasury and the War Department marked Territory of Hawaii dollars so they could be repudiated if Japan took the islands. The series was issued on 25 June 1942: brown seals and serials and the word HAWAII on face and back. Compulsory use lasted until 21 October 1944; official withdrawal began in April 1946.',
+      },
+      {
+        es: 'El marco de esas emisiones de emergencia —Hawái, el sello amarillo, la AMC, Bernhard— se recorre en la vitrina de billetes de emergencia de la Segunda Guerra Mundial, en Notafilia. Esta ficha es el ejemplar documentado de ese tipo: serial S40499058C, no una ilustración de tipo.',
+        en: 'The frame for those emergency issues — Hawaii, the yellow seal, AMC, Bernhard — is on the World War II emergency-banknotes case, under Notaphily. This page is the documented example of that type: serial S40499058C, not a type illustration.',
+      },
+    ],
+    historyHeading: {
+      es: 'La sobreimpresión HAWAII',
+      en: 'The HAWAII overprint',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado del 1 dólar HAWAII serie 1935 A, serial S40499058C: Washington, sello marrón del Tesoro, HAWAII en los márgenes y etiqueta PMG 58 EPQ.',
+      en: 'Slabbed face of the Series 1935A HAWAII $1, serial S40499058C: Washington, the brown Treasury seal, HAWAII in the margins, and the PMG 58 EPQ label.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado del 1 dólar HAWAII, certificado PMG 1505944-014: Gran Sello y HAWAII en letras huecas. Exceptional Paper Quality 58.',
+      en: 'Slabbed back of the HAWAII $1, PMG certificate 1505944-014: the Great Seal and HAWAII in hollow letters. Exceptional Paper Quality 58.',
+    },
+    scarcity: {
+      es: 'Fr. 2300 (Pick 36) es el 1 dólar HAWAII, el tipo más común de la serie de emergencia. Las fichas de tipo citan 35.052.000 ejemplares; no es un total de este bloque S–C. Las claves del tipo son el estado del papel —sobre todo EPQ—, la nitidez de la sobreimpresión y los reemplazos con estrella. Esta pieza no es estrella. Esta ficha no inventa una tirada por bloque ni republica precios.',
+      en: 'Fr. 2300 (Pick 36) is the HAWAII $1, the common type of the emergency series. Type records cite 35,052,000 notes; that is not an S–C-block total. The keys of the type are paper quality — especially EPQ — the sharpness of the overprint, and star replacements. This piece is not a star. This record does not invent a printage by block and does not republish prices.',
+    },
+    population: {
+      es: 'PMG publica informes de población de certificados de plata de emergencia, pero el recuento concreto de Fr. 2300 en 58 EPQ no se ha verificado aquí de forma independiente (el informe en línea requiere cuenta). Se documenta el certificado 1505944-014 y el grado impreso en el encapsulado, no un censo.',
+      en: 'PMG publishes population reports for emergency silver certificates, but the specific Fr. 2300 grade-58 EPQ headcount has not been independently verified here (the online report requires an account). This page records certificate 1505944-014 and the grade printed on the holder, not a census total.',
+    },
+    grade: {
+      es: 'PMG 58 EPQ · certificado 1505944-014',
+      en: 'PMG 58 EPQ · certificate 1505944-014',
+    },
+    sources: [
+      {
+        href: 'https://en.wikipedia.org/wiki/Hawaii_overprint_note',
+        es: 'Wikipedia — Hawaii overprint note',
+        en: 'Wikipedia — Hawaii overprint note',
+        note: {
+          es: 'Serie hawaiana desde el 25 de junio de 1942; 1 dólar certificado de plata 1935 A; sello y seriales marrones.',
+          en: 'Hawaiian series from 25 June 1942; Series 1935A $1 silver certificate; brown seal and serials.',
+        },
+      },
+      {
+        href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
+        es: 'Friedberg / Berman — Emergency Notes (tirada del 1 dólar HAWAII)',
+        en: 'Friedberg / Berman — Emergency Notes (HAWAII $1 printage)',
+        note: {
+          es: '35.052.000 para el 1 dólar Fr. 2300; cifra de tipo, no de este serial.',
+          en: '35,052,000 for the $1 Fr. 2300; a type figure, not this serial.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/verify',
+        es: 'PMG — Verificación de certificado 1505944-014',
+        en: 'PMG — Certificate verification 1505944-014',
+        note: {
+          es: 'El encapsulado imprime Fr. 2300, bloque SC, serial S40499058C, firmas Julian | Morgenthau, Choice About Unc 58 EPQ y posición de plancha F.',
+          en: 'The holder prints Fr. 2300, SC block, serial S40499058C, Julian | Morgenthau signatures, Choice About Unc 58 EPQ, and plate position F.',
         },
       },
       {
