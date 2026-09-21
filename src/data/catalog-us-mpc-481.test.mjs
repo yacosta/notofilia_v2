@@ -69,6 +69,7 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(data, /\/uploads\/korean-war-1951-1954-hero\.jpg/);
     assert.match(seriesPage, /MPC_PROGRAM_HERO/);
     assert.match(seriesPage, /imageClass="object-\[50%_42%\]"/);
+    assert.match(seriesPage, /size="compact"/);
     assert.match(seriesPage, /caseChapter/);
     assert.ok(
       seriesPage.indexOf('series-facts-heading') < seriesPage.indexOf('caseChapter.id') &&
