@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { localizePath } from '../lib/locale-paths.ts';
 
@@ -22,6 +22,7 @@ const enSeries = readFileSync(
   new URL('../pages/en/collection/united-states/mpc/index.astro', import.meta.url),
   'utf8',
 );
+const seriesPage = readFileSync(new URL('../components/catalog/MpcSeriesPage.astro', import.meta.url), 'utf8');
 
 describe('US Series 481 MPC 5 cents D02536728D', () => {
   it('records Pick M22a / Fr. M831 with serial D02536728D outside Vietnam', () => {
@@ -36,6 +37,12 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(data, /Ryukyu/);
     assert.match(data, /Ryukyus/);
     assert.doesNotMatch(data, /\$27\.50/);
+    assert.match(data, /title: 'MPC - Guerra de Corea \(1951 - 1954\)'/);
+    assert.match(data, /title: 'MPC - Korean War \(1951 - 1954\)'/);
+    assert.match(data, /Día de la conversión/);
+    assert.match(data, /Conversion Day/);
+    assert.match(data, /P-M28/);
+    assert.match(data, /learn\.apmex\.com/);
     assert.match(data, /posición 66/);
     assert.match(data, /sheet position 66/);
     assert.doesNotMatch(data, /Decreto 188/);
@@ -59,6 +66,16 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(enSeries, /MpcSeriesPage/);
     assert.match(data, /mpc-481-5-d02536728d-front\.jpg/);
     assert.match(data, /mpc-481-5-d02536728d-back\.jpg/);
+    assert.match(data, /\/uploads\/korean-war-1951-1954-hero\.jpg/);
+    assert.match(seriesPage, /MPC_PROGRAM_HERO/);
+    assert.match(seriesPage, /editorialUploadSrcset|object-\[50%_42%\]/);
+    assert.match(seriesPage, /caseChapter/);
+    assert.ok(
+      seriesPage.indexOf('series-facts-heading') < seriesPage.indexOf('caseChapter.id') &&
+        seriesPage.indexOf('caseChapter.id') < seriesPage.indexOf('denomination-table-heading'),
+    );
+    assert.ok(existsSync(new URL('../../public/uploads/korean-war-1951-1954-hero.jpg', import.meta.url)));
+    assert.ok(existsSync(new URL('../../public/uploads/korean-war-1951-1954-hero-card.jpg', import.meta.url)));
   });
 
   it('names the holding in the United States FAQ', () => {

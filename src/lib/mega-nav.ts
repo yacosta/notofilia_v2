@@ -173,10 +173,10 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'mpc',
-            es: 'MPC - Serie 481 (1951-1954)',
-            en: 'MPC - Series 481 (1951-1954)',
+            es: 'MPC - Guerra de Corea (1951 - 1954)',
+            en: 'MPC - Korean War (1951 - 1954)',
             href: USA_MPC_PROGRAM_PATH,
-            flag: 'us',
+            flag: 'kr',
           },
           {
             id: 'mpc-vietnam',
