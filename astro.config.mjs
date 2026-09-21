@@ -96,6 +96,22 @@ export default defineConfig({
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     '/en/blog/ringling-bros-barnum-bailey-circus/':
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    '/blog/billetes-emergencia-segunda-guerra-mundial':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/billetes-emergencia-segunda-guerra-mundial/':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/world-war-ii-emergency-banknotes':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/world-war-ii-emergency-banknotes/':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/en/blog/world-war-ii-emergency-banknotes':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/world-war-ii-emergency-banknotes/':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/billetes-emergencia-segunda-guerra-mundial':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/billetes-emergencia-segunda-guerra-mundial/':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     ...generated,
   },
   vite: {

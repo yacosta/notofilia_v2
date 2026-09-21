@@ -380,4 +380,36 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
       },
     },
   ],
+  'wwii-emergency': [
+    {
+      question: {
+        es: '¿Qué eran los billetes con sobreimpresión HAWAII?',
+        en: 'What were the HAWAII overprint notes?',
+      },
+      answer: {
+        es: 'Certificados de plata y Federal Reserve Notes con sello y seriales marrones y la palabra HAWAII, emitidos desde junio de 1942. Si Japón tomaba el archipiélago, Washington podía declararlos sin valor de inmediato. El 1 dólar 1935 A (Fr. 2300) es el tipo más común; esta colección aún no ficha un ejemplar.',
+        en: 'Silver certificates and Federal Reserve Notes with brown seals and serials and the word HAWAII, issued from June 1942. If Japan took the islands, Washington could declare them worthless at once. The 1935A $1 (Fr. 2300) is the common type; this collection does not yet record an example.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué fue la Moneda Militar Aliada (AMC)?',
+        en: 'What was Allied Military Currency (AMC)?',
+      },
+      answer: {
+        es: 'Fiat temporal del AMGOT, impreso sobre todo por el BEP y Forbes, en liras, francos, marcos, chelines y yenes. Se pagaba a la tropa a un tipo fijo frente al dólar. En Italia desató inflación; en Francia chocó con de Gaulle; en Alemania las planchas soviéticas sin la marca «F» adelantaron la partición económica.',
+        en: 'Temporary AMGOT fiat, printed mainly by the BEP and Forbes, in lire, francs, marks, schillings, and yen. Troops were paid at a fixed dollar rate. In Italy it fed inflation; in France it collided with de Gaulle; in Germany Soviet plates without the “F” mark brought economic partition forward.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué fue la Operación Bernhard?',
+        en: 'What was Operation Bernhard?',
+      },
+      answer: {
+        es: 'El mayor esquema de falsificación respaldado por un Estado: las SS, en Sachsenhausen, forjaron libras del Banco de Inglaterra. Se documentan al menos 8,9 millones de billetes por 134,6 millones de libras. El Banco de Inglaterra retiró las denominaciones altas y rediseñó el papel de posguerra.',
+        en: 'The largest state-backed counterfeiting scheme on record: the SS at Sachsenhausen forged Bank of England notes. At least 8.9 million pieces worth £134.6 million are documented. The Bank of England withdrew the high denominations and redesigned postwar paper.',
+      },
+    },
+  ],
 };

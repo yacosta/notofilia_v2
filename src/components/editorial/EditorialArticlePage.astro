@@ -47,7 +47,8 @@ const imageHeight = article.imageHeight ?? 675;
 const keywords = article.keywords?.[locale] ?? [];
 
 const pageUrl = new URL(pathname, SITE_URL).href;
-const imageUrl = new URL(article.image, SITE_URL).href;
+const hasImage = Boolean(article.image);
+const imageUrl = hasImage ? new URL(article.image, SITE_URL).href : '';
 const faqItems = kind === 'blog' ? localizeFaq(guideFaqs[article.slug] ?? [], locale) : [];
 const reviewerName = article.reviewer || SITE_AUTHOR;
 const jsonLd = {
@@ -61,7 +62,9 @@ const jsonLd = {
       datePublished: article.published,
       dateModified: article.updated || article.published,
       inLanguage: locale,
-      image: imageObjectJsonLd({ image: imageUrl, locale, caption: article.caption[locale] }),
+      ...(hasImage
+        ? { image: imageObjectJsonLd({ image: imageUrl, locale, caption: article.caption[locale] }) }
+        : {}),
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       articleSection: sectionLabel,
@@ -94,8 +97,8 @@ const jsonLd = {
   description={description}
   locale={locale}
   pathname={pathname}
-  ogImage={article.image}
-  ogImageAlt={article.imageAlt[locale]}
+  ogImage={hasImage ? article.image : undefined}
+  ogImageAlt={hasImage ? article.imageAlt[locale] : undefined}
   ogType="article"
   publishedTime={article.published}
 >
@@ -173,27 +176,31 @@ const jsonLd = {
         </dl>
       </header>
 
-      <figure class="mb-10 mt-0">
-        <img
-          src={containImage ? article.image : cardImageSrc(article.image)}
-          srcset={editorialUploadSrcset(article.image, imageWidth)}
-          sizes={wide ? '(max-width: 768px) 100vw, 75rem' : '(max-width: 768px) 100vw, 46rem'}
-          alt={article.imageAlt[locale]}
-          width={imageWidth}
-          height={imageHeight}
-          class:list={[
-            'w-full bg-panel',
-            containImage ? 'h-auto object-contain' : 'aspect-video object-cover',
-          ]}
-          fetchpriority="high"
-          decoding="async"
-        />
-        {
-          article.caption[locale] ? (
-            <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{article.caption[locale]}</figcaption>
-          ) : null
-        }
-      </figure>
+      {
+        hasImage ? (
+          <figure class="mb-10 mt-0">
+            <img
+              src={containImage ? article.image : cardImageSrc(article.image)}
+              srcset={editorialUploadSrcset(article.image, imageWidth)}
+              sizes={wide ? '(max-width: 768px) 100vw, 75rem' : '(max-width: 768px) 100vw, 46rem'}
+              alt={article.imageAlt[locale]}
+              width={imageWidth}
+              height={imageHeight}
+              class:list={[
+                'w-full bg-panel',
+                containImage ? 'h-auto object-contain' : 'aspect-video object-cover',
+              ]}
+              fetchpriority="high"
+              decoding="async"
+            />
+            {
+              article.caption[locale] ? (
+                <figcaption class="mt-2.5 text-center font-sans text-[13px] italic text-muted">{article.caption[locale]}</figcaption>
+              ) : null
+            }
+          </figure>
+        ) : null
+      }
 
       {
         claim ? (

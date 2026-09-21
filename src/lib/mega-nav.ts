@@ -33,6 +33,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
+import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
@@ -227,6 +228,13 @@ export const megaNav: NavNode[] = [
         es: 'Moneda de prueba Giori',
         en: 'Giori test currency',
         href: GIORI_TEST_NOTES_PATH,
+        icon: 'guides',
+      },
+      {
+        id: 'billetes-emergencia-iigm',
+        es: 'Billetes de emergencia de la II Guerra Mundial',
+        en: 'World War II emergency banknotes',
+        href: WWII_EMERGENCY_PATH,
         icon: 'guides',
       },
       {

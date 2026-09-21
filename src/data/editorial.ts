@@ -199,6 +199,18 @@ export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArt
 }
 
 const catalogRelatedTitles: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos/': {
+    es: 'Estados Unidos',
+    en: 'United States',
+  },
+  '/coleccion/estados-unidos/mpc/': {
+    es: 'Certificados de pago militar',
+    en: 'Military payment certificates',
+  },
+  '/coleccion/filipinas/': {
+    es: 'Filipinas · Serie Victory',
+    en: 'Philippines · Victory Series',
+  },
   '/coleccion/estados-unidos/miscelaneos/': {
     es: `${miscSeriesCopy.es.parentLink} · ${miscSeriesCopy.es.breadcrumbCurrent}`,
     en: `${miscSeriesCopy.en.parentLink} · ${miscSeriesCopy.en.breadcrumbCurrent}`,
@@ -254,6 +266,18 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos/': {
+    es: 'Papel federal de la era de la guerra, certificados de plata y Federal Reserve Notes.',
+    en: 'Federal paper from the war years, silver certificates, and Federal Reserve Notes.',
+  },
+  '/coleccion/estados-unidos/mpc/': {
+    es: 'El perímetro que, desde 1946, cerró el agujero de los dólares de sello amarillo y la AMC.',
+    en: 'The perimeter that, from 1946, closed the gap opened by yellow-seal dollars and AMC.',
+  },
+  '/coleccion/filipinas/': {
+    es: 'El papel de la liberación, distinto de los vales de guerrilla.',
+    en: 'Liberation paper, distinct from the guerrilla vouchers.',
+  },
   '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
     es: 'La vitrina de menuda privada de 1832–1844 y el HT-34 de 1837.',
     en: 'The 1832–1844 private small-change case and the 1837 HT-34.',

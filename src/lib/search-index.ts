@@ -19,6 +19,7 @@ import {
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
+import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
 import { mpcProgramNotes } from '../data/mpc';
@@ -466,6 +467,13 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       title: { es: gioriTestNotesCopy.es.nav, en: gioriTestNotesCopy.en.nav },
       dek: { es: gioriTestNotesCopy.es.metaDescription, en: gioriTestNotesCopy.en.metaDescription },
       extra: 'Giori Gualtiero Organisation De La Rue KBA Koenig Bauer Varinota Jefferson Washington Pigman Rollins',
+    },
+    {
+      href: WWII_EMERGENCY_PATH,
+      title: { es: wwiiEmergencyCopy.es.title, en: wwiiEmergencyCopy.en.title },
+      dek: { es: wwiiEmergencyCopy.es.metaDescription, en: wwiiEmergencyCopy.en.metaDescription },
+      extra:
+        'HAWAII yellow seal Allied Military Currency Operation Bernhard Theresienstadt BAFSV Japanese invasion money RKKS R S experimental',
     },
     {
       href: USA_BARABOO_SCRIP_PATH,

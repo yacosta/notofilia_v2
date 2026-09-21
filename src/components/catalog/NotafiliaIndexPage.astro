@@ -6,6 +6,7 @@ import { collectionPageJsonLd } from '../../lib/json-ld';
 import { notafiliaCopy, notafiliaCountries, notafiliaPath } from '../../data/notafilia';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../../data/collection-note-catalog';
 import { GIORI_TEST_NOTES_PATH } from '../../data/giori-test-notes';
+import { WWII_EMERGENCY_PATH } from '../../data/wwii-emergency-banknotes';
 
 interface Props {
   locale: Locale;
@@ -186,6 +187,13 @@ const jsonLd = collectionPageJsonLd({
           {' '}
           <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(GIORI_TEST_NOTES_PATH, locale)}>
             {t.gioriLink}
+          </a>
+        </p>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">
+          {t.wwiiLead}
+          {' '}
+          <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(WWII_EMERGENCY_PATH, locale)}>
+            {t.wwiiLink}
           </a>
         </p>
 

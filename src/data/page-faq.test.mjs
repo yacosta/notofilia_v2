@@ -25,7 +25,7 @@ describe('FAQ copy for guides and country pages', () => {
   });
 
   it('covers Colombia, United States, Philippines, and China series pages', () => {
-    for (const key of ['colombia', 'united-states', 'philippines', 'china']) {
+    for (const key of ['colombia', 'united-states', 'philippines', 'china', 'wwii-emergency']) {
       assert.ok(seriesFaqs[key].length >= 3, key);
     }
   });
