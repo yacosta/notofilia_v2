@@ -185,11 +185,12 @@ describe('polymer submenu', () => {
 });
 
 describe('country flags', () => {
-  it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
+  it('allowlists every mega-nav flag in CountryFlag and ships its asset', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
-    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z0-9]{2})?)'/g)].map((match) => match[1]);
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z0-9]{2,4})?)'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
+    assert.ok(flags.includes('co-1889'), 'Banca libre must use the 1889 Colombia flag');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
     assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
     assert.ok(flags.includes('us-13'), 'Colonial paper must use the 13-star US flag');
@@ -199,9 +200,10 @@ describe('country flags', () => {
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
       assert.match(allow, new RegExp(`'${code}'`), `${code} must be in CountryFlag FLAG_CODES`);
+      const extension = code === 'co-1889' ? 'gif' : 'svg';
       assert.ok(
-        existsSync(new URL(`../../public/flags/${code}.svg`, import.meta.url)),
-        `public/flags/${code}.svg is required for flag: '${code}'`,
+        existsSync(new URL(`../../public/flags/${code}.${extension}`, import.meta.url)),
+        `public/flags/${code}.${extension} is required for flag: '${code}'`,
       );
     }
   });
@@ -211,8 +213,11 @@ describe('Colombia banca libre menu', () => {
   it('names the years on the Banca libre submenu link', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    const bancaLibre = colombia.split("id: 'banca-libre'")[1]?.split("id: 'colombia-1-peso-oro-1959-1977'")[0] ?? '';
     assert.match(colombia, /es: 'Banca libre \(1870–1887\)'/);
     assert.match(colombia, /en: 'Free banking \(1870–1887\)'/);
+    assert.match(bancaLibre, /flag: 'co-1889'/);
+    assert.doesNotMatch(bancaLibre, /icon: 'guides'/);
   });
 
   it('links the BanRep 1 peso 1959–1977 note under Colombia', () => {
