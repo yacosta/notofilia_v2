@@ -206,6 +206,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/', 'en'),
+      '/en/collection/united-states/10-dollars-series-1934a-philadelphia/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/', 'en'),
       '/en/collection/united-states/10-dollars-series-1934d-richmond/',
     );
@@ -766,6 +770,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/'],
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/'],
+      '/en/collection/united-states/10-dollars-series-1934a-philadelphia/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/'],

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-20T00:48:12.347Z",
+  "generatedAt": "2026-09-22T03:28:57.203Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2578,6 +2578,45 @@
       }
     },
     {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "front",
+      "hash": "2a68aca858696904",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-composite.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Cleveland",
+        "en": "$10 · Series 1934A · Cleveland"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "front",
+      "hash": "11a02bcc8aee1b05",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-front.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Cleveland",
+        "en": "$10 · Series 1934A · Cleveland"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "back",
+      "hash": "11a0174926295084",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-back.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Cleveland",
+        "en": "$10 · Series 1934A · Cleveland"
+      }
+    },
+    {
       "pieceId": "10-dolares-serie-1934d-richmond",
       "face": "front",
       "hash": "000b4d00007b3d00",
@@ -2586,8 +2625,8 @@
       "pick": "P#430Dd · Fr. 2009-E",
       "image": "/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-composite.jpg",
       "title": {
-        "es": "10 dólares · Serie 1934 A · Cleveland",
-        "en": "$10 · Series 1934A · Cleveland"
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
       }
     },
     {
@@ -2599,8 +2638,8 @@
       "pick": "P#430Dd · Fr. 2009-E",
       "image": "/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-front.jpg",
       "title": {
-        "es": "10 dólares · Serie 1934 A · Cleveland",
-        "en": "$10 · Series 1934A · Cleveland"
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
       }
     },
     {
@@ -2612,8 +2651,8 @@
       "pick": "P#430Dd · Fr. 2009-E",
       "image": "/images/catalog/estados-unidos/frn-1934d-10-richmond-e60822246-back.jpg",
       "title": {
-        "es": "10 dólares · Serie 1934 A · Cleveland",
-        "en": "$10 · Series 1934A · Cleveland"
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
       }
     },
     {
@@ -3472,6 +3511,45 @@
       "title": {
         "es": "1 dólar · Serie 681",
         "en": "$1 · Series 681"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "front",
+      "hash": "04222b2f2d278182",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-composite.jpg",
+      "title": {
+        "es": "En esta vitrina",
+        "en": "In this case"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "front",
+      "hash": "04222b2f2d278182",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-front.jpg",
+      "title": {
+        "es": "En esta vitrina",
+        "en": "In this case"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "back",
+      "hash": "0403452b351509a2",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-back.jpg",
+      "title": {
+        "es": "En esta vitrina",
+        "en": "In this case"
       }
     },
     {

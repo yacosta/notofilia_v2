@@ -168,6 +168,7 @@ export const additions: Holding[] = [
   { id: 'co-1801-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'us-sc-1928a-d00508932b', kind: 'banknote', country: 'US' },
   { id: 'us-mpc-481-5-d02536728d', kind: 'banknote', country: 'US' },
+  { id: 'us-frn-1934a-10-philadelphia-c46924254', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -263,6 +264,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1801-1-escudo-popayan-km56-2' },
   { id: 'us-sc-1928a-fr1601' },
   { id: 'us-mpc-481-5-m22a' },
+  { id: 'us-frn-1934a-10-philadelphia-fr2006c' },
 ];
 
 export type CollectionStats = {
