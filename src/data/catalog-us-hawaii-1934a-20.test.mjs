@@ -48,6 +48,8 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(note, /not a star replacement/i);
     assert.match(note, /Sin encapsular/);
     assert.match(note, /Ungraded/);
+    assert.match(note, /en: '\$20 · HAWAII · Series 1934 A'/);
+    assert.match(note, /es: '20 dólares · HAWAII · Serie 1934 A'/);
     assert.match(holdings, /us-frn-1934a-hawaii-20-l86654132a/);
     assert.match(holdings, /id: 'us-frn-1934a-hawaii-20-l86654132a', kind: 'banknote', country: 'US'/);
     assert.match(holdings, /us-frn-1934a-hawaii-fr2305/);

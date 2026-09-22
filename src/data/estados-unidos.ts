@@ -3285,7 +3285,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     title: {
       es: '20 dólares · HAWAII · Serie 1934 A',
-      en: '$20 · HAWAII · Series 1934A',
+      en: '$20 · HAWAII · Series 1934 A',
     },
     kicker: {
       es: 'Estados Unidos · Federal Reserve Note · Emergencia',
