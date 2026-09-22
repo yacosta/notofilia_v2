@@ -1,11 +1,11 @@
 ---
 // Keep in sync with public/flags/{code}.svg (4x3). Add both when a row gets a new `flag`.
-const FLAG_CODES = ['ca', 'cn', 'co', 'ec', 'es', 'gb', 'gt', 'kr', 'my', 'nl', 'ph', 'pr', 'us', 'us-hi', 'vn'] as const;
+const FLAG_CODES = ['ca', 'cn', 'co', 'ec', 'es', 'gb', 'gt', 'kr', 'my', 'nl', 'ph', 'pr', 'us', 'us-25', 'us-hi', 'vn'] as const;
 
 type FlagCode = (typeof FLAG_CODES)[number];
 
 interface Props {
-  /** ISO 3166-1 alpha-2 or a region code used by the flag SVGs (Hawaii `us-hi`). */
+  /** ISO 3166-1 alpha-2 or a custom code used by the flag SVGs (`us-25`, `us-hi`). */
   code?: string;
 }
 

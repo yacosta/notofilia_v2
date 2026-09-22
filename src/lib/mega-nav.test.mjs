@@ -187,11 +187,12 @@ describe('polymer submenu', () => {
 describe('country flags', () => {
   it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
-    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z]{2})?)'/g)].map((match) => match[1]);
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z0-9]{2})?)'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
     assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
+    assert.ok(flags.includes('us-25'), 'Obsolete notes must use the 25-star US flag');
     assert.ok(flags.includes('us-hi'), 'WWII emergency notes must use flag: us-hi');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
@@ -309,10 +310,13 @@ describe('United States submenu', () => {
   it('includes the obsolete notes case under Estados Unidos after colonial paper', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const obsolete = usa.split("id: 'billetes-obsoletos'")[1]?.split("id: 'filipinas'")[0] ?? '';
     assert.match(source, /notesForChapter\('us-obsoleto'\)/);
     assert.match(usa, /id: 'billetes-obsoletos'/);
     assert.match(usa, /href: USA_OBSOLETE_PATH/);
     assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
+    assert.match(obsolete, /flag: 'us-25'/);
+    assert.doesNotMatch(obsolete, /icon: 'guides'/);
     assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
   });

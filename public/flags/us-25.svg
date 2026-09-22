@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-us-25" viewBox="0 0 640 480">
+  <path fill="#b22234" d="M0 0h640v480H0z"/>
+  <path fill="#fff" d="M0 36.923h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640V480H0z"/>
+  <path fill="#3c3b6e" d="M0 0h258.462v258.462H0z"/>
+  <defs>
+    <path id="star" d="m0-11 2.47 7.6h7.99L4 1.3l2.47 7.6L0 4.2l-6.47 4.7L-4 1.3l-6.46-4.7h7.99z"/>
+  </defs>
+  <g fill="#fff">
+    <use href="#star" transform="translate(25.846 25.846)"/>
+    <use href="#star" transform="translate(77.538 25.846)"/>
+    <use href="#star" transform="translate(129.231 25.846)"/>
+    <use href="#star" transform="translate(180.923 25.846)"/>
+    <use href="#star" transform="translate(232.615 25.846)"/>
+    <use href="#star" transform="translate(25.846 77.538)"/>
+    <use href="#star" transform="translate(77.538 77.538)"/>
+    <use href="#star" transform="translate(129.231 77.538)"/>
+    <use href="#star" transform="translate(180.923 77.538)"/>
+    <use href="#star" transform="translate(232.615 77.538)"/>
+    <use href="#star" transform="translate(25.846 129.231)"/>
+    <use href="#star" transform="translate(77.538 129.231)"/>
+    <use href="#star" transform="translate(129.231 129.231)"/>
+    <use href="#star" transform="translate(180.923 129.231)"/>
+    <use href="#star" transform="translate(232.615 129.231)"/>
+    <use href="#star" transform="translate(25.846 180.923)"/>
+    <use href="#star" transform="translate(77.538 180.923)"/>
+    <use href="#star" transform="translate(129.231 180.923)"/>
+    <use href="#star" transform="translate(180.923 180.923)"/>
+    <use href="#star" transform="translate(232.615 180.923)"/>
+    <use href="#star" transform="translate(25.846 232.615)"/>
+    <use href="#star" transform="translate(77.538 232.615)"/>
+    <use href="#star" transform="translate(129.231 232.615)"/>
+    <use href="#star" transform="translate(180.923 232.615)"/>
+    <use href="#star" transform="translate(232.615 232.615)"/>
+  </g>
+</svg>
