@@ -50,7 +50,7 @@ export type NavNode = {
   en: string;
   href?: string;
   /**
-   * ISO 3166-1 alpha-2 or a custom flag code (`us-25`, Hawaii `us-hi`) for a decorative flag.
+   * ISO 3166-1 alpha-2 or a custom flag code (`us-13`, `us-25`, Hawaii `us-hi`) for a decorative flag.
    * Required on country rows under Notafilia, Numismática, and polymer country children
    * (China `cn`, England `gb`, …). Continent headings and catalog/misc links omit it.
    * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (4x3).
@@ -144,7 +144,7 @@ export const megaNav: NavNode[] = [
             es: `${colonialSeriesCopy.es.title} (${colonialSeriesCopy.es.kicker})`,
             en: `${colonialSeriesCopy.en.title} (${colonialSeriesCopy.en.kicker})`,
             href: USA_COLONIAL_PATH,
-            icon: 'guides',
+            flag: 'us-13',
             children: colonialNotes.map((note) => ({
               id: note.id,
               es: note.title.es,

@@ -192,6 +192,7 @@ describe('country flags', () => {
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
     assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
+    assert.ok(flags.includes('us-13'), 'Colonial paper must use the 13-star US flag');
     assert.ok(flags.includes('us-25'), 'Obsolete notes must use the 25-star US flag');
     assert.ok(flags.includes('us-hi'), 'WWII emergency notes must use flag: us-hi');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
@@ -299,10 +300,13 @@ describe('United States submenu', () => {
   it('includes the colonial paper case under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
     assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
+    assert.match(colonial, /flag: 'us-13'/);
+    assert.doesNotMatch(colonial, /icon: 'guides'/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
