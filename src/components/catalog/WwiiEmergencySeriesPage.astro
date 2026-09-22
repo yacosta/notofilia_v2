@@ -17,7 +17,7 @@ import { noteById, notePath, USA_MPC_PATH, USA_MPC_PROGRAM_PATH, USA_PATH } from
 import { SERIES_PATH } from '../../data/philippines-victory-66';
 import {
   WWII_EMERGENCY_HERO,
-  WWII_HAWAII_NOTE_ID,
+  WWII_HOLDING_NOTE_IDS,
   wwiiEmergencyCopy,
   wwiiEmergencyPath,
   wwiiEmergencySources,
@@ -31,8 +31,11 @@ const { locale } = Astro.props;
 const t = wwiiEmergencyCopy[locale];
 const pathname = wwiiEmergencyPath(locale);
 const hero = WWII_EMERGENCY_HERO[locale];
-const hawaiiNote = noteById(WWII_HAWAII_NOTE_ID);
-if (!hawaiiNote) throw new Error('Missing HAWAII $1 holding for the WWII emergency case');
+const hawaiiHoldings = WWII_HOLDING_NOTE_IDS.map((id) => {
+  const note = noteById(id);
+  if (!note) throw new Error(`Missing HAWAII holding ${id} for the WWII emergency case`);
+  return note;
+});
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const faqItems = localizeFaq(seriesFaqs['wwii-emergency'], locale);
 const jsonLd = collectionPageJsonLd({
@@ -123,27 +126,31 @@ const jsonLd = collectionPageJsonLd({
       </section>
 
       <ol class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]} aria-label={t.holdingsListLabel}>
-        <li class="min-w-0">
-          <a
-            href={notePath(hawaiiNote, locale)}
-            class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-          >
-            <CatalogThumb
-              src={hawaiiNote.images.front}
-              alt={hawaiiNote.frontCaption[locale]}
-              width={hawaiiNote.images.width}
-              height={hawaiiNote.images.height}
-              class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-            />
-            <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-              {hawaiiNote.title[locale]}
-            </h2>
-            <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-              {t.pickLabel} {hawaiiNote.pick} · {t.serialLabel} {hawaiiNote.serial}
-            </p>
-            <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-          </a>
-        </li>
+        {
+          hawaiiHoldings.map((holding) => (
+            <li class="min-w-0">
+              <a
+                href={notePath(holding, locale)}
+                class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+              >
+                <CatalogThumb
+                  src={holding.images.front}
+                  alt={holding.frontCaption[locale]}
+                  width={holding.images.width}
+                  height={holding.images.height}
+                  class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                />
+                <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                  {holding.title[locale]}
+                </h2>
+                <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                  {t.pickLabel} {holding.pick} · {t.serialLabel} {holding.serial}
+                </p>
+                <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+              </a>
+            </li>
+          ))
+        }
       </ol>
 
       <div class="prose-notofilia mt-12" lang={locale} set:html={body} />

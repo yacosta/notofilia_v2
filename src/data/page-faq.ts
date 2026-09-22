@@ -217,6 +217,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 20 dólares HAWAII serie 1934 A?',
+        en: 'What is the Series 1934A HAWAII $20?',
+      },
+      answer: {
+        es: 'Es un Federal Reserve Note de emergencia, Fr. 2305, distrito L / 12 de San Francisco, firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1934 A nombra el tipo, no el año de numeración: este ejemplar, serial L86654132A, bloque L–A, se numeró en 1944. Circulada, sin encapsular. No es el Fr. 2304 de 1934 sin letra, ni el 1 dólar HAWAII serial S40499058C.',
+        en: 'It is an emergency Federal Reserve Note, Fr. 2305, San Francisco district L / 12, Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1934A names the type, not the numbering year: this piece, serial L86654132A, L–A block, was numbered in 1944. Circulated, unslabbed. It is not Fr. 2304 (1934 without a letter) or the HAWAII $1, serial S40499058C.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 2 dólares United States Note de 1917?',
         en: 'What is the Series 1917 United States Note $2?',
       },
@@ -397,8 +407,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were the HAWAII overprint notes?',
       },
       answer: {
-        es: 'Certificados de plata y Federal Reserve Notes con sello y seriales marrones y la palabra HAWAII, emitidos desde junio de 1942. Si Japón tomaba el archipiélago, Washington podía declararlos sin valor de inmediato. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más común; 1935 A es la serie, no el año de numeración. Esta colección ficha el serial S40499058C, numerado en 1944, PMG 58 EPQ — Choice About Uncirculated.',
-        en: 'Silver certificates and Federal Reserve Notes with brown seals and serials and the word HAWAII, issued from June 1942. If Japan took the islands, Washington could declare them worthless at once. The 1935A $1 (Hawaii P#36; Fr. 2300) is the common type; 1935A is the series, not the numbering year. This collection records serial S40499058C, numbered in 1944, PMG 58 EPQ — Choice About Uncirculated.',
+        es: 'Certificados de plata y Federal Reserve Notes con sello y seriales marrones y la palabra HAWAII, emitidos desde junio de 1942. Si Japón tomaba el archipiélago, Washington podía declararlos sin valor de inmediato. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más común; 1935 A es la serie, no el año de numeración. Esta colección ficha el serial S40499058C y el 20 dólares 1934 A (Fr. 2305), serial L86654132A, ambos numerados en 1944.',
+        en: 'Silver certificates and Federal Reserve Notes with brown seals and serials and the word HAWAII, issued from June 1942. If Japan took the islands, Washington could declare them worthless at once. The 1935A $1 (Hawaii P#36; Fr. 2300) is the common type; 1935A is the series, not the numbering year. This collection records serial S40499058C and the 1934A $20 (Fr. 2305), serial L86654132A, both numbered in 1944.',
       },
     },
     {
@@ -427,8 +437,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is a HAWAII overprint note worth?',
       },
       answer: {
-        es: 'Notofilia no publica precios. El valor de un HAWAII depende del tipo Friedberg, de la denominación, del estado del papel —incluida la designación EPQ—, de la nitidez de la sobreimpresión y de si es un reemplazo con estrella. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más visto; los de 10 y 20 dólares, y los star notes, son más escasos. El ejemplar de esta vitrina es el serial S40499058C, PMG 58 EPQ — Choice About Uncirculated; no se cotiza el mercado.',
-        en: 'Notofilia does not publish prices. The value of a HAWAII note depends on the Friedberg type, the denomination, the paper — including an EPQ designation — the sharpness of the overprint, and whether it is a star replacement. The 1935A $1 (Hawaii P#36; Fr. 2300) is the type most often seen; the $10 and $20 notes, and the star notes, are scarcer. The holding in this case is serial S40499058C, PMG 58 EPQ — Choice About Uncirculated; the market is not quoted.',
+        es: 'Notofilia no publica precios. El valor de un HAWAII depende del tipo Friedberg, de la denominación, del estado del papel —incluida la designación EPQ—, de la nitidez de la sobreimpresión y de si es un reemplazo con estrella. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más visto; los de 10 y 20 dólares, y los star notes, son más escasos. Esta vitrina ficha el serial S40499058C y el 20 dólares Fr. 2305, serial L86654132A; no se cotiza el mercado.',
+        en: 'Notofilia does not publish prices. The value of a HAWAII note depends on the Friedberg type, the denomination, the paper — including an EPQ designation — the sharpness of the overprint, and whether it is a star replacement. The 1935A $1 (Hawaii P#36; Fr. 2300) is the type most often seen; the $10 and $20 notes, and the star notes, are scarcer. This case records serial S40499058C and the $20 Fr. 2305, serial L86654132A; the market is not quoted.',
       },
     },
     {

@@ -4,6 +4,8 @@ import type { Locale } from '../lib/locale-paths';
 export const WWII_EMERGENCY_PATH = '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/';
 export const WWII_EMERGENCY_PATH_EN = '/collection/notaphily/world-war-ii-emergency-banknotes/';
 export const WWII_HAWAII_NOTE_ID = '1-dolar-hawaii-1935a';
+export const WWII_HAWAII_20_NOTE_ID = '20-dolares-serie-1934a-hawaii';
+export const WWII_HOLDING_NOTE_IDS = [WWII_HAWAII_NOTE_ID, WWII_HAWAII_20_NOTE_ID] as const;
 
 export const WWII_EMERGENCY_HERO = {
   es: {
@@ -22,7 +24,7 @@ export const wwiiEmergencyCopy = {
   es: {
     metaTitle: 'Billetes de emergencia de la II Guerra Mundial | Notofilia',
     metaDescription:
-      'Vitrina de los billetes de emergencia de 1939–1948: Hawái, sello amarillo, AMC, Theresienstadt, Operación Bernhard, dinero de invasión japonés y BAFSV, con fuentes. Ejemplar HAWAII Fr. 2300, serial S40499058C.',
+      'Vitrina de los billetes de emergencia de 1939–1948: Hawái, sello amarillo, AMC, Theresienstadt, Operación Bernhard, dinero de invasión japonés y BAFSV, con fuentes. Ejemplares HAWAII Fr. 2300 y Fr. 2305.',
     kicker: 'Notafilia · 1939–1948',
     title: 'Billetes de Emergencia de la Segunda Guerra Mundial',
     breadcrumbCurrent: 'Billetes de emergencia · II Guerra Mundial',
@@ -38,13 +40,13 @@ export const wwiiEmergencyCopy = {
       'Sobreimpresión HAWAII, certificado de plata de sello amarillo, experimentales R/S, Moneda Militar Aliada (lira, franco, marco, chelín y yen), Ghetto-Kronen de Theresienstadt y otro papel de gueto y campo, Operación Bernhard, dinero de invasión japonés y yen militar, Reichskreditkassenscheine, islas del Canal, emisiones soviéticas de 1944, muntbiljetten neerlandeses de 1943 y BAFSV.',
     holdingsLabel: 'En esta vitrina',
     holdingsValue:
-      '1 dólar HAWAII serie 1935 A (Hawaii P#36 · Fr. 2300), serial S40499058C, numerado en 1944, PMG 58 EPQ — Choice About Uncirculated. El sello amarillo aún no tiene ficha.',
+      '1 dólar HAWAII serie 1935 A (Hawaii P#36 · Fr. 2300), serial S40499058C, y 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, numerados en 1944. El sello amarillo aún no tiene ficha.',
     holdingsNote:
       'El papel federal de la era de la guerra, los certificados de pago militar y la Serie Victory de Filipinas tienen vitrina propia.',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
     serialLabel: 'Serie',
-    holdingsListLabel: 'Ejemplar fichado en esta vitrina',
+    holdingsListLabel: 'Ejemplares fichados en esta vitrina',
     heroAlt:
       'Ilustración de escritorio con billetes de emergencia de la Segunda Guerra Mundial, un tórculo y un mapa. Título Billetes de Emergencia. No es un ejemplar fichado.',
     usLead: 'El papel federal de la era de la guerra se documenta en la vitrina de Estados Unidos.',
@@ -66,7 +68,7 @@ export const wwiiEmergencyCopy = {
   en: {
     metaTitle: 'World War II Emergency Banknotes | Notofilia',
     metaDescription:
-      'A case on emergency banknotes of 1939–1948: Hawaii, the yellow seal, AMC, Theresienstadt, Operation Bernhard, Japanese invasion money, and BAFSV, with sources. HAWAII Fr. 2300 holding, serial S40499058C.',
+      'A case on emergency banknotes of 1939–1948: Hawaii, the yellow seal, AMC, Theresienstadt, Operation Bernhard, Japanese invasion money, and BAFSV, with sources. HAWAII Fr. 2300 and Fr. 2305 holdings.',
     kicker: 'Notaphily · 1939–1948',
     title: 'World War II Emergency Banknotes',
     breadcrumbCurrent: 'WWII emergency banknotes',
@@ -82,13 +84,13 @@ export const wwiiEmergencyCopy = {
       'HAWAII overprints, yellow-seal silver certificates, R/S experimentals, Allied Military Currency (lire, francs, marks, schillings, and yen), Theresienstadt Ghetto-Kronen and other ghetto and camp paper, Operation Bernhard, Japanese invasion money and military yen, Reichskreditkassenscheine, Channel Islands issues, Soviet 1944 notes, 1943 Dutch muntbiljetten, and BAFSV.',
     holdingsLabel: 'In this case',
     holdingsValue:
-      'Series 1935A HAWAII $1 (Hawaii P#36 · Fr. 2300), serial S40499058C, numbered in 1944, PMG 58 EPQ — Choice About Uncirculated. No yellow-seal note is recorded yet.',
+      'Series 1935A HAWAII $1 (Hawaii P#36 · Fr. 2300), serial S40499058C, and Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, numbered in 1944. No yellow-seal note is recorded yet.',
     holdingsNote:
       'Federal paper from the war years, military payment certificates, and the Philippine Victory Series have their own cases.',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
     serialLabel: 'Serial',
-    holdingsListLabel: 'Holding recorded in this case',
+    holdingsListLabel: 'Holdings recorded in this case',
     heroAlt:
       'Desk illustration with World War II emergency banknotes, a printing press, and a map. Title Emergency Banknotes. Not a catalogued holding.',
     usLead: 'Federal paper from the war years is documented in the United States case.',
