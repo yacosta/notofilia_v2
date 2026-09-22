@@ -42,6 +42,7 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934d-richmond',
       '500-dolares-serie-1934a-nueva-york',
       '1000-dolares-serie-1934a-nueva-york',
+      '20-dolares-serie-1934a-hawaii',
       '1-dolar-serie-2003-atlanta',
       '2-dolares-serie-2003-san-luis',
     ]);
@@ -64,6 +65,7 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934a-cleveland',
       '10-dolares-serie-1934a-filadelfia',
       '10-dolares-serie-1934d-richmond',
+      '20-dolares-serie-1934a-hawaii',
       '500-dolares-serie-1934a-nueva-york',
       '1000-dolares-serie-1934a-nueva-york',
     ]);

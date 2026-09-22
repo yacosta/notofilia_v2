@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import FaqBlock from '../FaqBlock.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { enhanceProseHtml } from '../../data/editorial';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
@@ -10,9 +13,11 @@ import bodyEs from '../../data/wwii-emergency-banknotes/es.html?raw';
 import bodyEn from '../../data/wwii-emergency-banknotes/en.html?raw';
 import SourceList from './SourceList.astro';
 import { NOTAFILIA_PATH } from '../../data/notafilia';
-import { USA_MPC_PROGRAM_PATH, USA_PATH } from '../../data/estados-unidos';
+import { noteById, notePath, USA_MPC_PATH, USA_MPC_PROGRAM_PATH, USA_PATH } from '../../data/estados-unidos';
 import { SERIES_PATH } from '../../data/philippines-victory-66';
 import {
+  WWII_EMERGENCY_HERO,
+  WWII_HOLDING_NOTE_IDS,
   wwiiEmergencyCopy,
   wwiiEmergencyPath,
   wwiiEmergencySources,
@@ -25,6 +30,12 @@ interface Props {
 const { locale } = Astro.props;
 const t = wwiiEmergencyCopy[locale];
 const pathname = wwiiEmergencyPath(locale);
+const hero = WWII_EMERGENCY_HERO[locale];
+const hawaiiHoldings = WWII_HOLDING_NOTE_IDS.map((id) => {
+  const note = noteById(id);
+  if (!note) throw new Error(`Missing HAWAII holding ${id} for the WWII emergency case`);
+  return note;
+});
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const faqItems = localizeFaq(seriesFaqs['wwii-emergency'], locale);
 const jsonLd = collectionPageJsonLd({
@@ -41,11 +52,33 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogType="article"
+  ogImage={hero.src}
+  ogImageAlt={t.heroAlt}
+  publishedTime="2026-09-20"
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_40%]"
+      size="compact"
+    />
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <Breadcrumb
         locale={locale}
@@ -56,15 +89,13 @@ const jsonLd = collectionPageJsonLd({
         ]}
       />
 
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
-      <h1
-        id="series-heading"
-        class="mb-0 mt-3 font-display text-[clamp(1.75rem,4.2vw,2.85rem)] font-normal leading-[1.12] text-cream-dim"
-      >
-        {t.title}
-      </h1>
       <p class="mb-5 mt-4 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
         {t.intro[0]}
+      </p>
+      <p class="mb-0 mt-2 max-w-[46rem] font-sans text-[13px] tracking-[0.04em] text-muted">
+        <span>{t.byline}</span>
+        {' · '}
+        <span>{t.updatedLabel} {t.updatedDate}</span>
       </p>
 
       <section class="mt-12 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="series-facts-heading">
@@ -94,6 +125,34 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-0 mt-6 text-[15px]/6 text-muted">{t.holdingsNote}</p>
       </section>
 
+      <ol class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]} aria-label={t.holdingsListLabel}>
+        {
+          hawaiiHoldings.map((holding) => (
+            <li class="min-w-0">
+              <a
+                href={notePath(holding, locale)}
+                class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+              >
+                <CatalogThumb
+                  src={holding.images.front}
+                  alt={holding.frontCaption[locale]}
+                  width={holding.images.width}
+                  height={holding.images.height}
+                  class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                />
+                <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                  {holding.title[locale]}
+                </h2>
+                <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                  {t.pickLabel} {holding.pick} · {t.serialLabel} {holding.serial}
+                </p>
+                <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+
       <div class="prose-notofilia mt-12" lang={locale} set:html={body} />
 
       <p class="mt-12 mb-0 text-[17px]/7 text-muted">
@@ -114,6 +173,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(USA_MPC_PROGRAM_PATH, locale)}
         >
           {t.mpcLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.mpcVietnamLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_MPC_PATH, locale)}
+        >
+          {t.mpcVietnamLink}
         </a>
       </p>
       <p class="mt-4 mb-0 text-[17px]/7 text-muted">

@@ -71,16 +71,22 @@ function localizedPairNear(source, key, aroundIndex) {
     `${key}:\\s*\\{\\s*es:\\s*'((?:\\\\'|[^'])*)'\\s*,\\s*en:\\s*'((?:\\\\'|[^'])*)'`,
     'g',
   );
+  // Piece records put `images` before `title`. The next record's `id` is the bound,
+  // so a title after the image stays on this object. Records that put `title` first
+  // fall through to the last pair before the image.
+  const rest = source.slice(aroundIndex + 1);
+  const nextId = rest.search(/\n\s*id:\s*'/);
+  const forwardEnd = nextId === -1 ? Math.min(rest.length, 4000) : nextId;
+  const forward = new RegExp(re.source).exec(rest.slice(0, forwardEnd));
+  if (forward?.[1] && forward?.[2]) return { es: unescape(forward[1]), en: unescape(forward[2]) };
+
   const before = source.slice(0, aroundIndex);
   let last = null;
   for (const match of before.matchAll(re)) {
     if (match[1] !== undefined && match[2] !== undefined) last = match;
   }
   if (last) return { es: unescape(last[1]), en: unescape(last[2]) };
-  const after = source.slice(aroundIndex, Math.min(source.length, aroundIndex + 2500));
-  const match = after.match(re);
-  if (!match?.[1] || !match[2]) return null;
-  return { es: unescape(match[1]), en: unescape(match[2]) };
+  return null;
 }
 
 function stringNear(source, key, aroundIndex) {

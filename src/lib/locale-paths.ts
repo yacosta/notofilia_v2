@@ -13,6 +13,16 @@ type PathPair = {
 /** Longest-prefix pairs. Trailing slashes required. */
 export const PATH_PREFIX_PAIRS: PathPair[] = [
   {
+    es: '/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    en: '/collection/united-states/1-dollar-hawaii-1935a/',
+    aliases: ['/coleccion/united-states/1-dollar-hawaii-1935a/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
+    en: '/collection/united-states/20-dollars-hawaii-1934a/',
+    aliases: ['/coleccion/united-states/20-dollars-hawaii-1934a/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
     en: '/collection/united-states/1-dollar-silver-certificate-1928a/',
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1928a/'],
@@ -441,6 +451,10 @@ export function englishRedirects(): Record<string, string> {
   };
 
   const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    '/en/coleccion/united-states/1-dollar-hawaii-1935a/',
+    '/en/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
+    '/en/coleccion/united-states/20-dollars-hawaii-1934a/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1928a/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',

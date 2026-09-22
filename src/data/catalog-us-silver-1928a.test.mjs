@@ -16,7 +16,7 @@ const enPiece = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '1-dolar-certificado-plata-1928a'");
-const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1957b'");
+const noteEnd = data.indexOf("id: '1-dolar-hawaii-1935a'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1928A Silver Certificate $1 Fr. 1601', () => {
