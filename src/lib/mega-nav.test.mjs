@@ -307,6 +307,8 @@ describe('United States submenu', () => {
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
     const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
     const betsyRoss = readFileSync(new URL('../../public/flags/us-13.svg', import.meta.url), 'utf8');
+    const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
+    const styles = readFileSync(new URL('../styles/global.css', import.meta.url), 'utf8');
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
@@ -317,6 +319,8 @@ describe('United States submenu', () => {
     assert.match(betsyRoss, /fill="#bf0a30"/);
     assert.match(betsyRoss, /fill="#00205B"/);
     assert.match(betsyRoss, /rotate\(27\.692308\)/);
+    assert.match(countryFlag, /flagCode === 'us-13'[\s\S]*'mega-flag--wide'/);
+    assert.match(styles, /\.mega-flag--wide\s*\{[\s\S]*height: 0\.658rem/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });

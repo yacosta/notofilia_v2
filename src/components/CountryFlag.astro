@@ -21,7 +21,7 @@ const src = flagCode
 
 {
   src && (
-    <span class="mega-flag" aria-hidden="true">
+    <span class:list={['mega-flag', flagCode === 'us-13' && 'mega-flag--wide']} aria-hidden="true">
       <img class="mega-flag-img" src={src} alt="" width="20" height="15" decoding="async" />
     </span>
   )
