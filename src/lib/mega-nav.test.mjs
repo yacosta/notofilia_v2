@@ -306,12 +306,17 @@ describe('United States submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
     const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
+    const betsyRoss = readFileSync(new URL('../../public/flags/us-13.svg', import.meta.url), 'utf8');
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
     assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
     assert.match(colonial, /flag: 'us-13'/);
     assert.doesNotMatch(colonial, /icon: 'guides'/);
+    assert.match(betsyRoss, /width="1235" height="650" viewBox="0 0 1235 650"/);
+    assert.match(betsyRoss, /fill="#bf0a30"/);
+    assert.match(betsyRoss, /fill="#00205B"/);
+    assert.match(betsyRoss, /rotate\(27\.692308\)/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
