@@ -56,8 +56,6 @@ export const wwiiEmergencyCopy = {
     updatedLabel: 'Actualizado',
     updatedDate: '21 de septiembre de 2026',
     byline: 'Texto de Yezid Acosta',
-    typeImageAlt:
-      'Anverso y reverso de un certificado de plata de 1 dólar serie 1935 A con sobreimpresión HAWAII (Fr. 2300). Ilustración de tipo, Smithsonian. No es un ejemplar de esta vitrina.',
     philippinesLead: 'El papel de la liberación filipina, distinto de los vales de guerrilla, está en la Serie Victory.',
     philippinesLink: 'Filipinas · Serie Victory',
     sourcesTitle: 'Fuentes',
@@ -102,8 +100,6 @@ export const wwiiEmergencyCopy = {
     updatedLabel: 'Updated',
     updatedDate: '21 September 2026',
     byline: 'Text by Yezid Acosta',
-    typeImageAlt:
-      'Face and back of a Series 1935A $1 silver certificate with the HAWAII overprint (Fr. 2300). Type illustration, Smithsonian. Not a holding in this case.',
     philippinesLead: 'Philippine liberation paper, distinct from the guerrilla vouchers, is in the Victory Series.',
     philippinesLink: 'Philippines · Victory Series',
     sourcesTitle: 'Sources',
