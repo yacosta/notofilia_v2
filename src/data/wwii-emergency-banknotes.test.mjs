@@ -110,5 +110,13 @@ describe('WWII emergency banknotes series page', () => {
     assert.ok(wwiiEmergencySources.some((source) => /worldcat/.test(source.href)));
     assert.doesNotMatch(bodyEs, /eBay|Heritage Auctions/);
     assert.doesNotMatch(bodyEn, /eBay|Heritage Auctions/);
+    assert.doesNotMatch(bodyEs, /wwii-hawaii-fr2300|wwii-yellow-seal-fr2306/);
+    assert.doesNotMatch(bodyEn, /wwii-hawaii-fr2300|wwii-yellow-seal-fr2306/);
+    assert.doesNotMatch(bodyEs, /Colección Numismática Nacional/);
+    assert.doesNotMatch(bodyEn, /National Numismatic Collection/);
+    assert.doesNotMatch(bodyEs, /Tipo Fr\. 2300\. Foto/);
+    assert.doesNotMatch(bodyEs, /Tipo Fr\. 2306\. Foto/);
+    assert.doesNotMatch(bodyEn, /Type Fr\. 2300\. Photograph/);
+    assert.doesNotMatch(bodyEn, /Type Fr\. 2306\. Photograph/);
   });
 });
