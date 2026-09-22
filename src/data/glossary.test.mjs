@@ -56,6 +56,18 @@ const added = [
   'nature-print',
   'handstamp',
   'grayback',
+  'demand-note',
+  'united-states-note',
+  'greenback',
+  'billete-de-banco-nacional',
+  'certificado-de-oro',
+  'certificado-de-plata',
+  'treasury-note',
+  'tamano-grande',
+  'gonzalez-white',
+  'hernandez',
+  'junta-de-conversion',
+  'dinero-mickey-mouse',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -82,7 +94,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 147);
+    assert.equal(glossaryTerms.length, 159);
   });
 });
 
@@ -90,9 +102,11 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 113);
+    assert.equal(foldedGlossaryTerms().length, glossaryTerms.length - 34);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
+    assert.ok(!isStandaloneGlossaryTerm('demand-note'));
+    assert.ok(!isStandaloneGlossaryTerm('gonzalez-white'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
     assert.ok(isStandaloneGlossaryTerm('dispositivo-opticamente-variable-ovd'));
   });
