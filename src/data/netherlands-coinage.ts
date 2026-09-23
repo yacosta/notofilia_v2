@@ -296,7 +296,7 @@ export const netherlandsCoins: NetherlandsCoin[] = [
     },
     certificate: '4685927-012',
     images: {
-      composite: '/images/catalog/netherlands/1761-ducat-utrecht-ngc.png',
+      composite: '/images/catalog/netherlands/netherlands-utrecht-1-ducat-1761-ngc-4685927-012-composite.png',
       width: 1536,
       height: 1024,
     },

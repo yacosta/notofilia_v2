@@ -363,9 +363,9 @@ export const mpcProgramNotes: MpcProgramNote[] = [
       en: 'A printage for this 5-cent note has not been independently verified here. Published type dimensions are about 111 × 55 mm, not measurements of this specimen. Series circulation: 20 June 1951 to 25 May 1954',
     },
     images: {
-      composite: '/images/catalog/estados-unidos/mpc-481-5-d02536728d-composite.jpg',
-      front: '/images/catalog/estados-unidos/mpc-481-5-d02536728d-front.jpg',
-      back: '/images/catalog/estados-unidos/mpc-481-5-d02536728d-back.jpg',
+      composite: '/images/catalog/united-states/united-states-military-payment-certificate-5-cents-series-481-d02536728d-composite.jpg',
+      front: '/images/catalog/united-states/united-states-military-payment-certificate-5-cents-series-481-d02536728d-front.jpg',
+      back: '/images/catalog/united-states/united-states-military-payment-certificate-5-cents-series-481-d02536728d-back.jpg',
       width: 1024,
       height: 682,
     },

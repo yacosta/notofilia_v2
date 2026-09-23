@@ -110,7 +110,7 @@ After normalizing (§1.1), classify the numeric serial (ignore prefix/suffix let
 - Store the serial in a dedicated frontmatter/data field (`serial`), in normalized form, plus `serial_display` for the exact printed form if they differ.
 - Store `cert_number` and `cert_grader` for graded notes.
 - Give the item one stable internal ID shared by both language pages, so the dedup check can key on it later.
-- Name image files with the internal ID or normalized serial, never with a generic name (`billete-5-pesos.jpg` invites duplicates; `NF-0421-A1234567-front.jpg` does not). Masters go in `catalog-src/catalog/` using the public path pattern (`philippines/1-peso-front.jpg`).
+- Name image files with the internal ID or normalized serial, never with a generic name (`billete-5-pesos.jpg` invites duplicates; `NF-0421-A1234567-front.jpg` does not). Masters go in `catalog-src/catalog/` using the public path pattern (`philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg`).
 - Finish your response with a one-line dedup statement that includes serial class (§1.5), e.g.:
   `Dedup: searched src/, public/, docs/, catalog-src/ for A1234567 (ordinary) (and loose variants) — 0 matches. Cert 8071234-001 — 0 matches.`
   `Dedup: searched src/, public/, docs/, catalog-src/ for 10000001 (fancy: binary radar) — 0 matches.`

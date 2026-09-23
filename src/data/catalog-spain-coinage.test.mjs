@@ -52,9 +52,9 @@ describe('Spain Ferdinand VI 1757 Madrid half escudo', () => {
     assert.match(enSeries, /SpainCoinagePage locale="en"/);
     assert.match(esCoin, /SpainCoinPage locale="es"/);
     assert.match(enCoin, /SpainCoinPage locale="en"/);
-    assert.match(data, /medio-escudo-madrid-1757-jb-composite\.jpg/);
-    assert.match(data, /medio-escudo-madrid-1757-jb-front\.jpg/);
-    assert.match(data, /medio-escudo-madrid-1757-jb-back\.jpg/);
+    assert.match(data, /spain-madrid-medio-escudo-1757-ferdinand-vi-jb-composite\.jpg/);
+    assert.match(data, /spain-madrid-medio-escudo-1757-ferdinand-vi-jb-front\.jpg/);
+    assert.match(data, /spain-madrid-medio-escudo-1757-ferdinand-vi-jb-back\.jpg/);
   });
 
   it('opens Spain in the numismatics index', () => {

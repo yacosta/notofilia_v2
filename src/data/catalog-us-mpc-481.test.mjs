@@ -64,8 +64,8 @@ describe('US Series 481 MPC 5 cents D02536728D', () => {
     assert.match(enPiece, /locale="en"/);
     assert.match(esSeries, /MpcSeriesPage/);
     assert.match(enSeries, /MpcSeriesPage/);
-    assert.match(data, /mpc-481-5-d02536728d-front\.jpg/);
-    assert.match(data, /mpc-481-5-d02536728d-back\.jpg/);
+    assert.match(data, /united-states-military-payment-certificate-5-cents-series-481-d02536728d-front\.jpg/);
+    assert.match(data, /united-states-military-payment-certificate-5-cents-series-481-d02536728d-back\.jpg/);
     assert.match(data, /\/uploads\/guerra-de-corea-1951-1954-hero\.jpg/);
     assert.match(data, /\/uploads\/korean-war-1951-1954-hero\.jpg/);
     assert.match(seriesPage, /MPC_PROGRAM_HERO\[locale\]/);

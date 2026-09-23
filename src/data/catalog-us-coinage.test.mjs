@@ -71,9 +71,9 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(enSeries, /UnitedStatesCoinagePage locale="en"/);
     assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
     assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
-    assert.match(data, /1-dolar-trump-1776-2026-composite\.jpg/);
-    assert.match(data, /1-dolar-trump-1776-2026-front\.jpg/);
-    assert.match(data, /1-dolar-trump-1776-2026-back\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1776-2026-trump-composite\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1776-2026-trump-front\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1776-2026-trump-back\.jpg/);
   });
 
   it('cross-links paper and coinage and opens five numismatic houses', () => {

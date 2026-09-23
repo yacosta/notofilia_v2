@@ -381,7 +381,7 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-1-dolar-a2002'/);
     assert.match(data, /ONE DOLLAR/);
     assert.match(data, /RINGLING BROS\./);
-    assert.match(data, /baraboo-scrip-1933-1d-a2002-front\.jpg/);
+    assert.match(data, /united-states-baraboo-chamber-of-commerce-1-dollar-1933-a2002-front\.jpg/);
     assert.match(data, /a su izquierda, la letra de serie A en azul/);
     assert.match(data, /to its left the blue series letter A/);
     assert.match(esPiece1, /UnitedStatesNotePage/);
@@ -424,7 +424,7 @@ describe('US obsolete Canal Bank of New Orleans $50 remainder', () => {
     assert.match(data, /Toppan, Carpenter & Co\., Filadelfia y Nueva York/);
     assert.match(data, /plancha D/);
     assert.match(data, /plate letter is D/);
-    assert.match(data, /la-105-50-dollar-canal-bank-front\.jpg/);
+    assert.match(data, /united-states-canal-bank-new-orleans-50-dollars-la-105-front\.jpg/);
     // The G48a variety is a different printer's plate; keep the distinction explicit.
     assert.match(data, /el 50 dólares LA-105 G48a, de diseño distinto e imprenta Rawdon, Wright, Hatch & Edson/);
     assert.match(data, /the \$50 LA-105 G48a, a different design printed by Rawdon, Wright, Hatch & Edson/);

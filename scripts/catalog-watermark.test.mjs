@@ -38,7 +38,10 @@ describe('catalog watermark helpers', () => {
     assert.match(tile, /notafilia-wm/);
     assert.doesNotMatch(tile, /text-anchor="end"/);
 
-    const xmp = rightsXmp({ relativePath: 'philippines/1-peso-front.jpg', year: 2026 });
+    const xmp = rightsXmp({
+      relativePath: 'philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg',
+      year: 2026,
+    });
     assert.match(xmp, new RegExp(CREATOR));
     assert.match(xmp, /Copyright 2026/);
     assert.match(xmp, /Iptc4xmpCore/);

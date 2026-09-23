@@ -1,4 +1,5 @@
 import { contactLegacyRedirect } from './data/contact';
+import { catalogImageRedirect } from './lib/catalog-image-renames.ts';
 import { cfImageFallbackPath } from './lib/cf-image-path.ts';
 import { planSeoResponse } from './lib/gsc-redirects';
 import { applySecurityHeaders } from './lib/security-headers.ts';
@@ -68,6 +69,13 @@ export default {
       if (probe.status === 200) {
         return withSecurity(url, Response.redirect(new URL(planned.path, url).href, 301));
       }
+    }
+
+    const renamedImage = catalogImageRedirect(url.pathname);
+    if (renamedImage) {
+      const target = new URL(renamedImage, url);
+      target.search = url.search;
+      return withSecurity(url, Response.redirect(target.href, 301));
     }
 
     let asset = await env.ASSETS.fetch(request);

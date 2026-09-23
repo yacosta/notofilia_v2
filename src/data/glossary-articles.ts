@@ -25,7 +25,7 @@ function article(
 
 const hipotecario: GlossaryExample = {
   path: '/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
-  image: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-front.jpg',
   title: { es: '5 pesos · Banco Hipotecario · 1881', en: '5 pesos · Banco Hipotecario · 1881' },
   alt: {
     es: 'Anverso de la prueba de 5 pesos del Banco Hipotecario de 1881, serial Y 00000',
@@ -35,7 +35,7 @@ const hipotecario: GlossaryExample = {
 
 const rioHacha: GlossaryExample = {
   path: '/coleccion/colombia/5-pesos-rio-hacha-1883/',
-  image: '/images/catalog/colombia/5-pesos-rio-hacha-1883-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-rio-hacha-5-pesos-1883-c00000-front.jpg',
   title: { es: '5 pesos · Banco de Riohacha · 1883', en: '5 pesos · Banco de Riohacha · 1883' },
   alt: {
     es: 'Anverso de la prueba de 5 pesos del Banco de Riohacha, serial C 00000',
@@ -45,7 +45,7 @@ const rioHacha: GlossaryExample = {
 
 const tolima: GlossaryExample = {
   path: '/coleccion/colombia/1-peso-tolima-1901/',
-  image: '/images/catalog/colombia/1-peso-tolima-1901-060416-front.jpg',
+  image: '/images/catalog/colombia/colombia-departamento-del-tolima-1-peso-1901-series-d-060416-front.jpg',
   title: { es: '1 peso · Banco del Tolima · 1901', en: '1 peso · Banco del Tolima · 1901' },
   alt: {
     es: 'Anverso del 1 peso del Banco del Tolima de 1901',
@@ -55,7 +55,7 @@ const tolima: GlossaryExample = {
 
 const pesoOro1945: GlossaryExample = {
   path: '/coleccion/colombia/1-peso-oro-1945/',
-  image: '/images/catalog/colombia/1-peso-oro-1945-85688116-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1945-r85688116-front.jpg',
   title: { es: '1 peso oro · 1945', en: '1 peso oro · 1945' },
   alt: {
     es: 'Anverso del 1 peso oro de 1945, serial R 85688116',
@@ -65,7 +65,7 @@ const pesoOro1945: GlossaryExample = {
 
 const pesoOro1944: GlossaryExample = {
   path: '/coleccion/colombia/2-pesos-oro-1944/',
-  image: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-front.jpg',
   title: { es: '2 pesos oro · 1944', en: '2 pesos oro · 1944' },
   alt: {
     es: 'Anverso del 2 pesos oro de 1944',
@@ -75,7 +75,7 @@ const pesoOro1944: GlossaryExample = {
 
 const specimen1960: GlossaryExample = {
   path: '/coleccion/colombia/5-pesos-oro-1960/',
-  image: '/images/catalog/colombia/5-pesos-oro-1960-00000000-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1960-00000000-specimen-front.jpg',
   title: { es: '5 pesos oro · espécimen · 1960', en: '5 pesos oro · specimen · 1960' },
   alt: {
     es: 'Anverso del espécimen de 5 pesos oro de 1960, serial 00000000',
@@ -85,7 +85,7 @@ const specimen1960: GlossaryExample = {
 
 const specimen1980: GlossaryExample = {
   path: '/coleccion/colombia/100-pesos-oro-1980/',
-  image: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-100-pesos-oro-1980-00000000-specimen-027-front.jpg',
   title: { es: '100 pesos oro · espécimen · 1980', en: '100 pesos oro · specimen · 1980' },
   alt: {
     es: 'Anverso del espécimen de 100 pesos oro de 1980, SPECIMEN Nº 027',
@@ -95,7 +95,7 @@ const specimen1980: GlossaryExample = {
 
 const specimen1983: GlossaryExample = {
   path: '/coleccion/colombia/2000-pesos-oro-1983/',
-  image: '/images/catalog/colombia/2000-pesos-oro-1983-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-oro-1983-00000000-specimen-030-front.jpg',
   title: { es: '2.000 pesos oro · espécimen · 1983', en: '2,000 pesos oro · specimen · 1983' },
   alt: {
     es: 'Anverso encapsulado PCGS del espécimen de 2.000 pesos oro de 1983',
@@ -105,7 +105,7 @@ const specimen1983: GlossaryExample = {
 
 const embera1994: GlossaryExample = {
   path: '/coleccion/colombia/10000-pesos-1994/',
-  image: '/images/catalog/colombia/10000-pesos-1994-00113227-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-front.jpg',
   title: { es: '10.000 pesos · reposición estrella · 1994', en: '10,000 pesos · star replacement · 1994' },
   alt: {
     es: 'Anverso del 10.000 pesos emberá de 1994, serial 00113227 con estrella',
@@ -115,7 +115,7 @@ const embera1994: GlossaryExample = {
 
 const mariposa2010: GlossaryExample = {
   path: '/coleccion/colombia/5000-pesos-error-2010/',
-  image: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09636101-front.jpg',
   title: { es: '5.000 pesos · error mariposa · 2010', en: '5,000 pesos · butterfly-cut error · 2010' },
   alt: {
     es: 'Anverso del 5.000 pesos de 2010 con solapa de corte mariposa, serial 09636101',
@@ -125,7 +125,7 @@ const mariposa2010: GlossaryExample = {
 
 const error50000: GlossaryExample = {
   path: '/coleccion/colombia/50000-pesos-error-2008/',
-  image: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2008-72461316-72411316-front.jpg',
   title: { es: '50.000 pesos · error de numeración · 2008', en: '50,000 pesos · numbering error · 2008' },
   alt: {
     es: 'Anverso del 50.000 pesos de 2008 con error de numeración',
@@ -135,7 +135,7 @@ const error50000: GlossaryExample = {
 
 const serial10000001: GlossaryExample = {
   path: '/coleccion/colombia/2000-pesos-2008/',
-  image: '/images/catalog/colombia/2000-pesos-2008-10000001-front.jpg',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2008-10000001-front.jpg',
   title: { es: '2.000 pesos · serial 10000001 · 2008', en: '2,000 pesos · serial 10000001 · 2008' },
   alt: {
     es: 'Anverso del 2.000 pesos de 2008 con serial capicúa binario 10000001',
@@ -145,7 +145,7 @@ const serial10000001: GlossaryExample = {
 
 const victory20: GlossaryExample = {
   path: '/coleccion/filipinas/20-pesos/',
-  image: '/images/catalog/philippines/20-pesos-front.jpg',
+  image: '/images/catalog/philippines/philippines-treasury-20-pesos-series-66-f04661756-front.jpg',
   title: { es: '20 pesos · Victory · PMG 55 EPQ', en: '20 pesos · Victory · PMG 55 EPQ' },
   alt: {
     es: 'Anverso encapsulado PMG del 20 pesos Victory, serial F04661756',
@@ -155,7 +155,7 @@ const victory20: GlossaryExample = {
 
 const malaysiaRm5: GlossaryExample = {
   path: '/coleccion/polimero-mundial/asia/malasia/5-ringgit-abdul-rahman/',
-  image: '/images/catalog/malaysia/5-ringgit-aa1955984-front.jpg',
+  image: '/images/catalog/malaysia/malaysia-bank-negara-5-ringgit-2012-aa1955984-front.jpg',
   title: { es: '5 ringgit · Abdul Rahman · 2012', en: 'RM5 · Abdul Rahman · 2012' },
   alt: {
     es: 'Anverso del 5 ringgit de polímero de Malasia, serial AA 1955984',
@@ -165,7 +165,7 @@ const malaysiaRm5: GlossaryExample = {
 
 const canada5: GlossaryExample = {
   path: '/coleccion/polimero-mundial/Canada/5-dolares-laurier/',
-  image: '/images/catalog/canada/5-dollars-laurier-hbm0828003-front.jpg',
+  image: '/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-front.jpg',
   title: { es: '5 dólares · Laurier · 2013', en: '$5 · Laurier · 2013' },
   alt: {
     es: 'Anverso del 5 dólares de polímero de Canadá, serial HBM0828003',
@@ -175,7 +175,7 @@ const canada5: GlossaryExample = {
 
 const england5: GlossaryExample = {
   path: '/coleccion/polimero-mundial/europa/inglaterra/5-libras-churchill/',
-  image: '/images/catalog/england/5-pounds-churchill-ac04879241-front.jpg',
+  image: '/images/catalog/england/england-bank-of-england-5-pounds-2016-churchill-ac04879241-front.jpg',
   title: { es: '5 libras · Churchill · 2016', en: '£5 · Churchill · 2016' },
   alt: {
     es: 'Anverso del 5 libras de polímero del Banco de Inglaterra, serial AC04 879241',
@@ -185,7 +185,7 @@ const england5: GlossaryExample = {
 
 const chinaYuan: GlossaryExample = {
   path: '/coleccion/china/100-yuan/',
-  image: '/images/catalog/china/100-yuan-2000-front.jpg',
+  image: '/images/catalog/china/china-peoples-bank-100-yuan-2000-j04445744-front.jpg',
   title: { es: '100 yuan · milenio 2000', en: '100 yuan · millennium 2000' },
   alt: {
     es: 'Anverso del 100 yuan de polímero del milenio, serial J04445744',
@@ -195,7 +195,7 @@ const chinaYuan: GlossaryExample = {
 
 const newBrunswick: GlossaryExample = {
   path: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
-  image: '/images/catalog/estados-unidos/nj-350-1-dollar-new-brunswick-front.jpg',
+  image: '/images/catalog/united-states/united-states-state-bank-new-brunswick-1-dollar-nj-350-9890b-front.jpg',
   title: { es: '1 dólar · State Bank at New Brunswick', en: '$1 · State Bank at New Brunswick' },
   alt: {
     es: 'Anverso del remainder de 1 dólar del State Bank at New Brunswick, serial 9890',
@@ -205,7 +205,7 @@ const newBrunswick: GlossaryExample = {
 
 const canalBank: GlossaryExample = {
   path: '/coleccion/estados-unidos/50-dolares-canal-bank-nueva-orleans/',
-  image: '/images/catalog/estados-unidos/la-105-50-dollar-canal-bank-front.jpg',
+  image: '/images/catalog/united-states/united-states-canal-bank-new-orleans-50-dollars-la-105-front.jpg',
   title: { es: '50 dólares · Canal Bank, Nueva Orleans', en: '$50 · Canal Bank, New Orleans' },
   alt: {
     es: 'Anverso del remainder de 50 dólares del Canal Bank de Nueva Orleans',
@@ -215,7 +215,7 @@ const canalBank: GlossaryExample = {
 
 const giori: GlossaryExample = {
   path: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
-  image: '/images/catalog/estados-unidos/giori-lincoln-memorial-front.jpg',
+  image: '/images/catalog/united-states/united-states-giori-test-note-lincoln-memorial-front.jpg',
   title: { es: 'Billete de prueba Giori · Lincoln Memorial', en: 'Giori test note · Lincoln Memorial' },
   alt: {
     es: 'Anverso uniface del billete de prueba Giori del Lincoln Memorial',
@@ -225,7 +225,7 @@ const giori: GlossaryExample = {
 
 const baraboo5c: GlossaryExample = {
   path: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/',
-  image: '/images/catalog/estados-unidos/baraboo-scrip-1933-5c-a4895-front.jpg',
+  image: '/images/catalog/united-states/united-states-baraboo-chamber-of-commerce-5-cents-1933-a4895-front.jpg',
   title: { es: '5¢ · scrip de Baraboo · 1933', en: '5¢ · Baraboo scrip · 1933' },
   alt: {
     es: 'Anverso del scrip de 5 centavos de Baraboo, serial A4895',
@@ -235,7 +235,7 @@ const baraboo5c: GlossaryExample = {
 
 const ht34: GlossaryExample = {
   path: '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/',
-  image: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg',
+  image: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-front.jpg',
   title: { es: 'HT-34 · Hard Times · 1837', en: 'HT-34 · Hard Times · 1837' },
   alt: {
     es: 'Anverso de la ficha Hard Times HT-34 de 1837, burro al galope',
@@ -245,7 +245,7 @@ const ht34: GlossaryExample = {
 
 const ht181: GlossaryExample = {
   path: '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/',
-  image: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-front.jpg',
+  image: '/images/catalog/united-states/united-states-john-j-adams-token-ht-181-c1835-front.jpg',
   title: { es: 'HT-181 · Hard Times · c. 1835', en: 'HT-181 · Hard Times · c. 1835' },
   alt: {
     es: 'Anverso de la store card Hard Times HT-181, jabalí y Cash for Bristles',
@@ -255,7 +255,7 @@ const ht181: GlossaryExample = {
 
 const mpc10: GlossaryExample = {
   path: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
-  image: '/images/catalog/estados-unidos/mpc-641-10-front.jpg',
+  image: '/images/catalog/united-states/united-states-military-payment-certificate-10-dollars-series-641-j01130273j-front.jpg',
   title: { es: '10 dólares · MPC serie 641', en: '$10 · MPC Series 641' },
   alt: {
     es: 'Anverso del certificado de pago militar de 10 dólares, serie 641',
@@ -265,7 +265,7 @@ const mpc10: GlossaryExample = {
 
 const ducat: GlossaryExample = {
   path: '/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/',
-  image: '/images/catalog/netherlands/1761-ducat-utrecht-ngc.png',
+  image: '/images/catalog/netherlands/netherlands-utrecht-1-ducat-1761-ngc-4685927-012-composite.png',
   title: { es: 'Ducado de oro · Utrecht 1761', en: 'Gold ducat · Utrecht 1761' },
   alt: {
     es: 'Ducado de Utrecht de 1761 encapsulado por NGC, certificado 4685927-012',
@@ -275,7 +275,7 @@ const ducat: GlossaryExample = {
 
 const santaMarta: GlossaryExample = {
   path: '/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',
-  image: '/images/catalog/numismatica/1-4-real-santa-marta-1820-cross.jpg',
+  image: '/images/catalog/colombia/colombia-santa-marta-1-4-real-1820-front.jpg',
   title: { es: '1/4 real · Santa Marta · 1820', en: '1/4 real · Santa Marta · 1820' },
   alt: {
     es: 'Cuartillo de cobre de Santa Marta de 1820, cruz que parte las letras S y M',
@@ -290,7 +290,7 @@ const colombiaNumismatica: GlossaryExample = {
 
 const newHaven: GlossaryExample = {
   path: '/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
-  image: '/images/catalog/estados-unidos/ct-265-5-dollar-new-haven-front.jpg',
+  image: '/images/catalog/united-states/united-states-city-bank-new-haven-5-dollars-ct-265-front.jpg',
   title: { es: '5 dólares · City Bank of New Haven', en: '$5 · City Bank of New Haven' },
   alt: {
     es: 'Anverso del remainder de 5 dólares del City Bank of New Haven',

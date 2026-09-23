@@ -55,9 +55,9 @@ describe('US Series 1917 United States Note $2 Fr. 60', () => {
     assert.match(esPiece, /noteById\('2-dolares-serie-1917'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(note, /usn-1917-2-b50400302a-composite\.jpg/);
-    assert.match(note, /usn-1917-2-b50400302a-front\.jpg/);
-    assert.match(note, /usn-1917-2-b50400302a-back\.jpg/);
+    assert.match(note, /united-states-treasury-2-dollars-series-1917-united-states-note-b50400302a-composite\.jpg/);
+    assert.match(note, /united-states-treasury-2-dollars-series-1917-united-states-note-b50400302a-front\.jpg/);
+    assert.match(note, /united-states-treasury-2-dollars-series-1917-united-states-note-b50400302a-back\.jpg/);
   });
 
   it('names the holding in the United States Notes chapter, series inventory, and FAQ', () => {
