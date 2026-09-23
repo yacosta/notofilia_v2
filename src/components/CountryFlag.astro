@@ -1,18 +1,21 @@
 ---
-// Keep in sync with public/flags/{code}.svg (4x3). Add both when a row gets a new `flag`.
-const FLAG_CODES = ['ca', 'cn', 'co', 'ec', 'es', 'gb', 'gt', 'kr', 'my', 'nl', 'ph', 'pr', 'us', 'us-hi', 'vn'] as const;
+// Keep in sync with public/flags/. Add both when a row gets a new `flag`.
+const FLAG_CODES = ['ca', 'cn', 'co', 'co-1889', 'ec', 'es', 'gb', 'gt', 'kr', 'my', 'nl', 'ph', 'pr', 'us', 'us-13', 'us-25', 'us-hi', 'vn'] as const;
 
 type FlagCode = (typeof FLAG_CODES)[number];
 
 interface Props {
-  /** ISO 3166-1 alpha-2 or a region code used by the flag SVGs (Hawaii `us-hi`). */
+  /** ISO 3166-1 alpha-2 or a custom code used by the flag assets (`co-1889`, `us-13`, `us-25`, `us-hi`). */
   code?: string;
 }
 
 const { code } = Astro.props;
 const normalized = code?.toLowerCase();
-const src = normalized && (FLAG_CODES as readonly string[]).includes(normalized)
-  ? `/flags/${normalized as FlagCode}.svg`
+const flagCode = normalized && (FLAG_CODES as readonly string[]).includes(normalized)
+  ? (normalized as FlagCode)
+  : undefined;
+const src = flagCode
+  ? `/flags/${flagCode}.${flagCode === 'co-1889' ? 'gif' : 'svg'}`
   : undefined;
 ---
 

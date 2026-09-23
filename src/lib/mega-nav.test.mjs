@@ -185,21 +185,25 @@ describe('polymer submenu', () => {
 });
 
 describe('country flags', () => {
-  it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
+  it('allowlists every mega-nav flag in CountryFlag and ships its asset', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
-    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z]{2})?)'/g)].map((match) => match[1]);
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z0-9]{2,4})?)'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
+    assert.ok(flags.includes('co-1889'), 'Banca libre must use the 1889 Colombia flag');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
     assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
+    assert.ok(flags.includes('us-13'), 'Colonial paper must use the 13-star US flag');
+    assert.ok(flags.includes('us-25'), 'Obsolete notes must use the 25-star US flag');
     assert.ok(flags.includes('us-hi'), 'WWII emergency notes must use flag: us-hi');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
       assert.match(allow, new RegExp(`'${code}'`), `${code} must be in CountryFlag FLAG_CODES`);
+      const extension = code === 'co-1889' ? 'gif' : 'svg';
       assert.ok(
-        existsSync(new URL(`../../public/flags/${code}.svg`, import.meta.url)),
-        `public/flags/${code}.svg is required for flag: '${code}'`,
+        existsSync(new URL(`../../public/flags/${code}.${extension}`, import.meta.url)),
+        `public/flags/${code}.${extension} is required for flag: '${code}'`,
       );
     }
   });
@@ -209,8 +213,11 @@ describe('Colombia banca libre menu', () => {
   it('names the years on the Banca libre submenu link', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    const bancaLibre = colombia.split("id: 'banca-libre'")[1]?.split("id: 'colombia-1-peso-oro-1959-1977'")[0] ?? '';
     assert.match(colombia, /es: 'Banca libre \(1870–1887\)'/);
     assert.match(colombia, /en: 'Free banking \(1870–1887\)'/);
+    assert.match(bancaLibre, /flag: 'co-1889'/);
+    assert.doesNotMatch(bancaLibre, /icon: 'guides'/);
   });
 
   it('links the BanRep 1 peso 1959–1977 note under Colombia', () => {
@@ -298,10 +305,13 @@ describe('United States submenu', () => {
   it('includes the colonial paper case under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
     assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
+    assert.match(colonial, /flag: 'us-13'/);
+    assert.doesNotMatch(colonial, /icon: 'guides'/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
@@ -309,10 +319,13 @@ describe('United States submenu', () => {
   it('includes the obsolete notes case under Estados Unidos after colonial paper', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const obsolete = usa.split("id: 'billetes-obsoletos'")[1]?.split("id: 'filipinas'")[0] ?? '';
     assert.match(source, /notesForChapter\('us-obsoleto'\)/);
     assert.match(usa, /id: 'billetes-obsoletos'/);
     assert.match(usa, /href: USA_OBSOLETE_PATH/);
     assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
+    assert.match(obsolete, /flag: 'us-25'/);
+    assert.doesNotMatch(obsolete, /icon: 'guides'/);
     assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
   });
