@@ -198,6 +198,7 @@ export const lazarettosCopy = {
     holdingsIntro:
       'Las fichas de cada pieza se publicarán como en Filipinas y en Colombia-Numismática, a medida que se documenten.',
     sourcesTitle: 'Fuentes',
+    essayCta: 'Leer el ensayo Numismática de los Lazaretos',
   },
   en: {
     metaTitle: 'Lazarettos | Notofilia',
@@ -215,6 +216,7 @@ export const lazarettosCopy = {
     holdingsIntro:
       'Individual type pages will be published as they are documented, as in the Philippines case and Colombia-Numismatics.',
     sourcesTitle: 'Sources',
+    essayCta: 'Read the essay Numismatics of the Lazarettos',
   },
 } as const;
 

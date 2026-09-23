@@ -147,6 +147,11 @@ const extraHighValuePages = [
     en: 'Free banking',
   },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
+  {
+    href: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
+    es: 'Numismática de los Lazaretos',
+    en: 'Numismatics of the Lazarettos',
+  },
   { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
 ] as const;
 

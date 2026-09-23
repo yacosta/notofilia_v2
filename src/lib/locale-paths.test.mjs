@@ -617,6 +617,10 @@ describe('locale path mapping', () => {
       redirects['/en/coleccion/polimero-mundial/Canada/5-dolares-laurier/'],
       '/en/collection/world-polymer/Canada/5-dollars-laurier/',
     );
+    assert.equal(
+      redirects['/en/coleccion/numismatica/numismatica-de-los-lazaretos/'],
+      '/en/collection/numismatics/numismatics-of-the-lazarettos/',
+    );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');
     assert.equal(

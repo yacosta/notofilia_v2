@@ -33,6 +33,7 @@ import {
 import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
 import { mpcProgramNoteDedicatedSlugs, mpcProgramNoteSlugs } from '../data/mpc';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
+import { lazarettosNumismaticsDedicatedSlugs } from '../data/lazarettos-numismatics';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
@@ -356,6 +357,7 @@ const dedicatedEs = [
   COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
+  ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,

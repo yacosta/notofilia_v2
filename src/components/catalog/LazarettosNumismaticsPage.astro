@@ -1,0 +1,113 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import { enhanceProseHtml } from '../../data/editorial';
+import { LAZARETTOS_PATH } from '../../data/lazarettos';
+import {
+  LAZARETTOS_NUMISMATICS_HERO,
+  lazarettosNumismaticsCopy,
+  lazarettosNumismaticsPath,
+} from '../../data/lazarettos-numismatics';
+import bodyEs from '../../data/lazarettos-numismatics/es.html?raw';
+import bodyEn from '../../data/lazarettos-numismatics/en.html?raw';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { imageObjectJsonLd } from '../../lib/json-ld';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = lazarettosNumismaticsCopy[locale];
+const pathname = lazarettosNumismaticsPath(locale);
+const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
+const caseHref = localizePath(LAZARETTOS_PATH, locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const ogImage = LAZARETTOS_NUMISMATICS_HERO.src;
+const pageUrl = new URL(pathname, SITE_URL).href;
+const imageUrl = new URL(ogImage, SITE_URL).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.heroAlt }),
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.numismatica, item: numismaticaHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={ogImage}
+  ogImageAlt={t.heroAlt}
+  ogType="article"
+  publishedTime={t.published}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={LAZARETTOS_NUMISMATICS_HERO.src}
+      alt={t.heroAlt}
+      width={LAZARETTOS_NUMISMATICS_HERO.width}
+      height={LAZARETTOS_NUMISMATICS_HERO.height}
+      headingId="lazarettos-numismatics-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.title}
+      imageClass="object-[50%_42%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: numismaticaHref, label: t.numismatica },
+          { label: t.nav },
+        ]}
+      />
+
+      <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+      <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+        <time datetime={t.published}>{t.dateLabel}</time>
+      </p>
+
+      <div class="prose-notofilia" lang={locale} set:html={body} />
+
+      <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
+        <a href={caseHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.caseCta}
+        </a>
+        <a href={numismaticaHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.numismaticaCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

@@ -72,6 +72,16 @@ describe('sitemap coverage for the Colombia banca libre essay', () => {
   });
 });
 
+describe('sitemap coverage for the lazaretto numismatics essay', () => {
+  it('maps the numismatics pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/numismatica/numismatica-de-los-lazaretos/', 'en'),
+      '/en/collection/numismatics/numismatics-of-the-lazarettos/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the Giori test notes page', () => {
   it('maps the notafilia Giori pair used in dedicated catalog paths', () => {
     assert.equal(

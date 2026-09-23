@@ -33,6 +33,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
+import { LAZARETTOS_NUMISMATICS_PATH } from '../data/lazarettos-numismatics';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
@@ -306,6 +307,13 @@ export const megaNav: NavNode[] = [
         es: 'Colombia',
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
+        flag: 'co',
+      },
+      {
+        id: 'numismatica-lazaretos',
+        es: 'Numismática de los Lazaretos',
+        en: 'Numismatics of the Lazarettos',
+        href: LAZARETTOS_NUMISMATICS_PATH,
         flag: 'co',
       },
       {
