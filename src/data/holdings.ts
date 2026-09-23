@@ -172,6 +172,7 @@ export const additions: Holding[] = [
   { id: 'us-frn-1934a-hawaii-20-l86654132a', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-10-philadelphia-c46924254', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934c-10-kansas-city-j55894000', kind: 'banknote', country: 'US' },
+  { id: 'co-1921-2-centavos-lazareto', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -271,6 +272,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-frn-1934a-hawaii-fr2305' },
   { id: 'us-frn-1934a-10-philadelphia-fr2006c' },
   { id: 'us-frn-1934c-10-kansas-city-fr2008j' },
+  { id: 'co-1921-2-centavos-lazareto-km-l10' },
 ];
 
 export type CollectionStats = {

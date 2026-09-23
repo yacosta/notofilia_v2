@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('2-centavos-lazareto-1921');
+if (!piece) throw new Error('Missing Lazareto 1921 2 centavos');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />

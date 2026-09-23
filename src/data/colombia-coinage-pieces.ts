@@ -8,7 +8,8 @@ import {
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
-  | '1-4-real-santa-marta-1820';
+  | '1-4-real-santa-marta-1820'
+  | '2-centavos-lazareto-1921';
 
 export type ColombiaCoinagePiece = {
   id: ColombiaCoinagePieceId;
@@ -278,6 +279,91 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Cód. 11: cuarto de real de cobre de Santa Marta, 1820, con SM y cruz. No se publican precios.',
           en: 'Cód. 11: Santa Marta copper quarter-real, 1820, with SM and a cross. Prices are not published here.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-centavos-lazareto-1921',
+    path: `${COLOMBIA_COINAGE_PATH}2-centavos-lazareto-1921/`,
+    chapterId: 'republica',
+    year: '1921',
+    denomination: { es: '2 centavos', en: '2 centavos' },
+    metal: { es: 'Cuproníquel (tipo)', en: 'Copper-nickel (type specification)' },
+    mint: { es: 'Bogotá', en: 'Bogotá' },
+    reference: 'KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830',
+    title: {
+      es: '2 centavos · Lazareto · 1921',
+      en: '2 centavos · Lazaretto · 1921',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Lazaretos',
+      en: 'Colombia-Numismatics · Lazarettos',
+    },
+    lead: {
+      es: 'Dos centavos de cuproníquel de 1921, labrados en Bogotá para el cordón de los lazaretos. El anverso muestra la cruz con LAZARETO y la fecha; el reverso, el valor entre ramos.',
+      en: 'A 1921 cupronickel 2 centavos, struck at Bogotá for the lazaretto cordon. The obverse shows the cross with LAZARETO and the date; the reverse, the value inside a wreath.',
+    },
+    description: {
+      es: 'En 1921 la Casa de Bogotá labró cuproníquel cuyo curso estaba limitado al cordón de los lazaretos: Agua de Dios, Contratación y Caño del Oro. Este disco muestra en el anverso la cruz con LAZARETO, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la fecha 1921; en el reverso, un 2 ornamental sobre CENTAVOS, dentro de una corona vegetal atada con lazo. Es el tipo KM# L10, Restrepo 355.1 y Hernández Cód. 313 (8.ª ed. 2023). Hernández agrupa en ese año, también en cuproníquel y con la misma leyenda, el 1, el 5, el 10 y el 50 centavos. Las iniciales RH del grabador Roberto Hinestrosa son rasgo del tipo, bajo el lazo del reverso; en esta fotografía esa zona queda blanda y las letras no se leen. No marcan una variedad. El peso de 3 g, el diámetro de 18,89 mm, el canto liso y la alineación moneda son cifras de catálogo: este ejemplar no se pesó ni se midió. El diseño no nombra un lazareto. El apodo coscoja nació con los pesos P/M de níquel de 1907; esta pieza no es aquel módulo, ni el bronce de 50 centavos de 1928, ni el latón de Palonegro de 1902. Sin encapsular; las fotografías no autentican el metal.',
+      en: 'In 1921 the Bogotá mint struck cupronickel whose circulation was limited to the lazaretto cordon: Agua de Dios, Contratación, and Caño del Oro. This disc shows, on the obverse, the cross with LAZARETO, the legend REPUBLICA DE COLOMBIA — without an accent, as engraved — and the date 1921; on the reverse, an ornamental 2 above CENTAVOS, inside a leafy wreath tied with a bow. It is type KM# L10, Restrepo 355.1, and Hernández Cód. 313 (8th ed. 2023). Hernández groups with that year, also in cupronickel and with the same legend, the 1, 5, 10, and 50 centavos. The initials RH of engraver Roberto Hinestrosa belong to the type, under the reverse bow; on this photograph that area is soft and the letters cannot be read. They do not mark a variety. A weight of 3 g, a diameter of 18.89 mm, a plain edge, and coin alignment are catalogue figures: this specimen was not weighed or measured. The design names no single lazaretto. The nickname coscoja began with the 1907 nickel paper-money pesos; this piece is not that module, nor the 1928 bronze 50 centavos, nor the 1902 Palonegro brass. Unslabbed; the photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: cruz con LAZARETO, leyenda REPUBLICA DE COLOMBIA y fecha 1921.',
+      en: 'Obverse: cross with LAZARETO, legend REPUBLICA DE COLOMBIA, and the date 1921.',
+    },
+    backCaption: {
+      es: 'Reverso: 2 ornamental sobre CENTAVOS, dentro de una corona atada con lazo.',
+      en: 'Reverse: an ornamental 2 above CENTAVOS, inside a wreath tied with a bow.',
+    },
+    scarcity: {
+      es: 'Numista publica 300.000 piezas para el 1921 RH (N#6830). CoinVarieties, con el KM# L10 y Restrepo 355.1, publica 350.000. Son totales de catálogo en desacuerdo, no un intervalo de acuñación ni una cifra del Banco de la República: las tablas BanRep de moneda empiezan en 1987. En estado circulado el tipo se encuentra. Esta ficha no publica precios ni un censo de encapsulados.',
+      en: 'Numista publishes 300,000 pieces for the 1921 RH issue (N#6830). CoinVarieties, for KM# L10 and Restrepo 355.1, publishes 350,000. Those are disagreeing catalogue totals, not a production range and not a Banco de la República figure: BanRep’s coin tables begin in 1987. The type turns up in circulated condition. This record publishes neither prices nor a slab census.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. Fecha 1921 y valor 2 legibles; el lazo del reverso no resuelve las iniciales RH. Las fotografías no autentican el metal (colección privada)',
+      en: 'Circulated, unslabbed. The date 1921 and the value 2 are readable; the reverse bow does not resolve the initials RH. Photographs do not authenticate the metal (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/numismatica/2-centavos-lazareto-1921-composite.jpg',
+      front: '/images/catalog/numismatica/2-centavos-lazareto-1921-front.jpg',
+      back: '/images/catalog/numismatica/2-centavos-lazareto-1921-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/6830',
+        es: 'Numista — 2 centavos, moneda de lazareto, Colombia (N#6830)',
+        en: 'Numista — 2 centavos, leprosarium coinage, Colombia (N#6830)',
+        note: {
+          es: 'KM# L10; cuproníquel de tipo, 3 g y 18,89 mm; canto liso; alineación moneda. Publica 300.000 para el 1921 RH. Las iniciales RH van bajo el lazo. No se citan aquí columnas de valor.',
+          en: 'KM# L10; type copper-nickel, 3 g and 18.89 mm; plain edge; coin alignment. It publishes 300,000 for the 1921 RH issue. The initials RH sit under the bow. Value columns are not cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Lazareto_1921-RH_2_centavos_token',
+        es: 'CoinVarieties — 2 centavos de lazareto, 1921 RH',
+        en: 'CoinVarieties — Lazaretto 2 centavos, 1921 RH',
+        note: {
+          es: 'Restrepo 355.1 y KM# L10; publica 350.000, y las iniciales RH de Roberto Hinestrosa. No se publican precios de subasta.',
+          en: 'Restrepo 355.1 and KM# L10; it publishes 350,000, and the initials RH of Roberto Hinestrosa. Auction prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Cód. 313: 2 centavos de 1921, Bogotá, cuproníquel; anverso República de Colombia, cruz y Lazareto. En la misma tabla, el 1, el 5, el 10 y el 50 de ese año. No se publican columnas de precios ni láminas.',
+          en: 'Cód. 313: 1921 2 centavos, Bogotá, copper-nickel; obverse República de Colombia, cross, and Lazareto. The same table lists the 1, 5, 10, and 50 centavos of that year. Price columns and plates are not published.',
+        },
+      },
+      {
+        href: 'https://www.banrepcultural.org/exposiciones/la-moneda-de-los-lazaretos',
+        es: 'Banrepcultural — La moneda de los lazaretos',
+        en: 'Banrepcultural — The coin of the lazarettos',
+        note: {
+          es: 'Series de 1901, 1907, 1921 y 1928 para Agua de Dios, Contratación y Caño del Oro. El diseño de esta pieza no nombra uno de los tres.',
+          en: 'The 1901, 1907, 1921, and 1928 series for Agua de Dios, Contratación, and Caño del Oro. This piece’s design names none of the three.',
         },
       },
     ],
