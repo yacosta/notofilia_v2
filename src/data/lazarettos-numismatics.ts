@@ -6,13 +6,13 @@ export const LAZARETTOS_NUMISMATICS_PATH_EN = '/collection/numismatics/numismati
 export const LAZARETTOS_NUMISMATICS_HERO = {
   es: {
     src: '/uploads/monedas-de-lazaretos-hero.jpg',
-    width: 1024,
-    height: 438,
+    width: 2560,
+    height: 1095,
   },
   en: {
     src: '/uploads/lazaretto-coins-of-colombia-hero.jpg',
-    width: 1024,
-    height: 436,
+    width: 2560,
+    height: 1090,
   },
 } as const;
 
