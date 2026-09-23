@@ -53,9 +53,9 @@ describe('US colonial Continental Currency $5 of 14 January 1779', () => {
     assert.match(esPiece, /noteById\('5-dolares-continental-1779'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(data, /cc-91-5-dollars-1779-composite\.jpg/);
-    assert.match(data, /cc-91-5-dollars-1779-front\.jpg/);
-    assert.match(data, /cc-91-5-dollars-1779-back\.jpg/);
+    assert.match(data, /united-states-continental-congress-5-dollars-1779-cc-91-composite\.jpg/);
+    assert.match(data, /united-states-continental-congress-5-dollars-1779-cc-91-front\.jpg/);
+    assert.match(data, /united-states-continental-congress-5-dollars-1779-cc-91-back\.jpg/);
   });
 
   it('names the holding in the colonial chapter and the series inventory', () => {
@@ -125,9 +125,9 @@ describe('US colonial Pennsylvania 5 shillings of 1 October 1773', () => {
     assert.match(esPiecePa, /noteById\('5-chelines-pensilvania-1773'\)/);
     assert.match(enPiecePa, /UnitedStatesNotePage/);
     assert.match(enPiecePa, /locale="en"/);
-    assert.match(paBlock, /pa-166-5-shillings-1773-9733-composite\.jpg/);
-    assert.match(paBlock, /pa-166-5-shillings-1773-9733-front\.jpg/);
-    assert.match(paBlock, /pa-166-5-shillings-1773-9733-back\.jpg/);
+    assert.match(paBlock, /united-states-pennsylvania-5-shillings-1773-pa-166-9733-composite\.jpg/);
+    assert.match(paBlock, /united-states-pennsylvania-5-shillings-1773-pa-166-9733-front\.jpg/);
+    assert.match(paBlock, /united-states-pennsylvania-5-shillings-1773-pa-166-9733-back\.jpg/);
   });
 });
 
@@ -177,9 +177,9 @@ describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
     assert.match(esPiece, /noteById\('2-chelines-6-peniques-pensilvania-1773'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(pa, /pa-165-2s6d-1773-21251-composite\.jpg/);
-    assert.match(pa, /pa-165-2s6d-1773-21251-front\.jpg/);
-    assert.match(pa, /pa-165-2s6d-1773-21251-back\.jpg/);
+    assert.match(pa, /united-states-pennsylvania-2-shillings-6-pence-1773-pa-165-21251-composite\.jpg/);
+    assert.match(pa, /united-states-pennsylvania-2-shillings-6-pence-1773-pa-165-21251-front\.jpg/);
+    assert.match(pa, /united-states-pennsylvania-2-shillings-6-pence-1773-pa-165-21251-back\.jpg/);
   });
 
   it('names the holding in the colonial chapter and the series inventory', () => {

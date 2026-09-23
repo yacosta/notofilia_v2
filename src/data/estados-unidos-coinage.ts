@@ -290,9 +290,9 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     no_serial_reason:
       'Private Hard Times copper token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
     images: {
-      composite: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-composite.jpg',
-      front: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg',
-      back: '/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-back.jpg',
+      composite: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-composite.jpg',
+      front: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-front.jpg',
+      back: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-back.jpg',
       width: 1800,
       height: 599,
       faceWidth: 1024,
@@ -459,9 +459,9 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     no_serial_reason:
       'Undated Hard Times merchant token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
     images: {
-      composite: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-composite.jpg',
-      front: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-front.jpg',
-      back: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-back.jpg',
+      composite: '/images/catalog/united-states/united-states-john-j-adams-token-ht-181-c1835-composite.jpg',
+      front: '/images/catalog/united-states/united-states-john-j-adams-token-ht-181-c1835-front.jpg',
+      back: '/images/catalog/united-states/united-states-john-j-adams-token-ht-181-c1835-back.jpg',
       width: 1800,
       height: 599,
       faceWidth: 1024,
@@ -601,9 +601,9 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     no_serial_reason:
       'Struck circulating United States dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
     images: {
-      composite: '/images/catalog/estados-unidos/1-dolar-trump-1776-2026-composite.jpg',
-      front: '/images/catalog/estados-unidos/1-dolar-trump-1776-2026-front.jpg',
-      back: '/images/catalog/estados-unidos/1-dolar-trump-1776-2026-back.jpg',
+      composite: '/images/catalog/united-states/united-states-mint-1-dollar-1776-2026-trump-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-1-dollar-1776-2026-trump-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-1-dollar-1776-2026-trump-back.jpg',
       width: 1200,
       height: 675,
       faceWidth: 600,

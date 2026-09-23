@@ -46,9 +46,9 @@ export const canadaNotes: CanadaNote[] = [
       en: 'The Bank of Canada issued the polymer $5 on 7 November 2013, the same day as the $10, completing the Frontiers series. This record does not invent a printage for prefix HBM or for Pick 106b.',
     },
     images: {
-      composite: '/images/catalog/canada/5-dollars-laurier-hbm0828003-composite.jpg',
-      front: '/images/catalog/canada/5-dollars-laurier-hbm0828003-front.jpg',
-      back: '/images/catalog/canada/5-dollars-laurier-hbm0828003-back.jpg',
+      composite: '/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-composite.jpg',
+      front: '/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-front.jpg',
+      back: '/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-back.jpg',
     },
     title: {
       es: '5 dólares · Laurier · 2013',

@@ -63,9 +63,9 @@ describe('US Series 1935A HAWAII $1 Fr. 2300', () => {
     assert.match(esPiece, /noteById\('1-dolar-hawaii-1935a'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(note, /sc-1935a-hawaii-1-dolar-s40499058c-composite\.jpg/);
-    assert.match(note, /sc-1935a-hawaii-1-dolar-s40499058c-front\.jpg/);
-    assert.match(note, /sc-1935a-hawaii-1-dolar-s40499058c-back\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1935a-silver-certificate-hawaii-s40499058c-composite\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1935a-silver-certificate-hawaii-s40499058c-front\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1935a-silver-certificate-hawaii-s40499058c-back\.jpg/);
   });
 
   it('names the holding in the Silver Certificates chapter, series inventory, and FAQ', () => {

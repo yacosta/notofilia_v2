@@ -85,9 +85,9 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       en: 'Unslabbed; no grade assigned. Flattened portrait, hairlines and contact marks; date, 1 S, and P–JF readable. Photographs do not authenticate the disc (private collection)',
     },
     images: {
-      composite: '/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-composite.jpg',
-      front: '/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-front.jpg',
-      back: '/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-back.jpg',
+      composite: '/images/catalog/colombia/colombia-popayan-1-escudo-1801-charles-iv-p-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-1-escudo-1801-charles-iv-p-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-1-escudo-1801-charles-iv-p-jf-back.jpg',
     },
     sources: [
       {
@@ -173,9 +173,9 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       en: 'Circulated, with heavy portrait wear and a clearer reverse; gray surfaces with darker recesses. Unslabbed (private collection)',
     },
     images: {
-      composite: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-composite.jpg',
-      front: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-front.jpg',
-      back: '/images/catalog/numismatica/1-real-bogota-1810-nr-jf-back.jpg',
+      composite: '/images/catalog/colombia/colombia-bogota-1-real-1810-ferdinand-vii-nr-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-1-real-1810-ferdinand-vii-nr-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-1-real-1810-ferdinand-vii-nr-jf-back.jpg',
     },
     sources: [
       {
@@ -252,9 +252,9 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       en: 'Circulated, unslabbed (private collection)',
     },
     images: {
-      composite: '/images/catalog/numismatica/1-4-real-santa-marta-1820-composite.jpg',
-      front: '/images/catalog/numismatica/1-4-real-santa-marta-1820-cross.jpg',
-      back: '/images/catalog/numismatica/1-4-real-santa-marta-1820-value.jpg',
+      composite: '/images/catalog/colombia/colombia-santa-marta-1-4-real-1820-composite.jpg',
+      front: '/images/catalog/colombia/colombia-santa-marta-1-4-real-1820-front.jpg',
+      back: '/images/catalog/colombia/colombia-santa-marta-1-4-real-1820-back.jpg',
     },
     sources: [
       {
@@ -328,9 +328,9 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       en: 'Circulated, unslabbed. The date 1921, the legend, and the value 2 are readable; a worn mark sits under the bow and the initials RH cannot be read with certainty. Photographs do not authenticate the metal (private collection)',
     },
     images: {
-      composite: '/images/catalog/numismatica/2-centavos-lazareto-1921-composite.jpg',
-      front: '/images/catalog/numismatica/2-centavos-lazareto-1921-front.jpg',
-      back: '/images/catalog/numismatica/2-centavos-lazareto-1921-back.jpg',
+      composite: '/images/catalog/colombia/colombia-lazareto-2-centavos-1921-composite.jpg',
+      front: '/images/catalog/colombia/colombia-lazareto-2-centavos-1921-front.jpg',
+      back: '/images/catalog/colombia/colombia-lazareto-2-centavos-1921-back.jpg',
     },
     sources: [
       {

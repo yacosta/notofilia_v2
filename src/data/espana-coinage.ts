@@ -224,9 +224,9 @@ export const spainCoins: SpainCoin[] = [
     no_serial_reason:
       'Milled Spanish gold half escudo: the type does not carry a serial number, and this example is unslabbed with no certification number.',
     images: {
-      composite: '/images/catalog/espana/medio-escudo-madrid-1757-jb-composite.jpg',
-      front: '/images/catalog/espana/medio-escudo-madrid-1757-jb-front.jpg',
-      back: '/images/catalog/espana/medio-escudo-madrid-1757-jb-back.jpg',
+      composite: '/images/catalog/spain/spain-madrid-medio-escudo-1757-ferdinand-vi-jb-composite.jpg',
+      front: '/images/catalog/spain/spain-madrid-medio-escudo-1757-ferdinand-vi-jb-front.jpg',
+      back: '/images/catalog/spain/spain-madrid-medio-escudo-1757-ferdinand-vi-jb-back.jpg',
       width: 1840,
       height: 900,
       faceWidth: 900,

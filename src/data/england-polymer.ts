@@ -46,9 +46,9 @@ export const englandNotes: EnglandNote[] = [
       en: 'The Bank of England announced 440 million New Fivers when the note entered circulation on 13 September 2016. This record does not invent a printage for prefix AC04 or for later printings.',
     },
     images: {
-      composite: '/images/catalog/england/5-pounds-churchill-ac04879241-composite.jpg',
-      front: '/images/catalog/england/5-pounds-churchill-ac04879241-front.jpg',
-      back: '/images/catalog/england/5-pounds-churchill-ac04879241-back.jpg',
+      composite: '/images/catalog/england/england-bank-of-england-5-pounds-2016-churchill-ac04879241-composite.jpg',
+      front: '/images/catalog/england/england-bank-of-england-5-pounds-2016-churchill-ac04879241-front.jpg',
+      back: '/images/catalog/england/england-bank-of-england-5-pounds-2016-churchill-ac04879241-back.jpg',
     },
     title: {
       es: '5 libras · Churchill · 2016',

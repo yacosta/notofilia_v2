@@ -134,9 +134,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'No millimetre size is published in Hernández (Cód. 1134), Numismondo, or the Specialized Issues index. The cards keep archival margins wider than circulating paper; this record does not invent a measurement.',
     },
     images: {
-      composite: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-composite.jpg',
-      front: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
-      back: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-back.jpg',
     },
     hero: {
       src: '/images/catalog/colombia/hero-banco-hipotecario.jpg',
@@ -259,9 +259,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Printer’s mount dated February 1883; Series C. No circulating printage is published.',
     },
     images: {
-      composite: '/images/catalog/colombia/5-pesos-rio-hacha-1883-composite.jpg',
-      front: '/images/catalog/colombia/5-pesos-rio-hacha-1883-front.jpg',
-      back: '/images/catalog/colombia/5-pesos-rio-hacha-1883-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-rio-hacha-5-pesos-1883-c00000-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-rio-hacha-5-pesos-1883-c00000-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-rio-hacha-5-pesos-1883-c00000-back.jpg',
     },
     hero: {
       src: '/images/catalog/colombia/hero-rio-hacha.jpg',
@@ -384,9 +384,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Local typesetting, Departamento del Tolima. Printed date: Ibagué, September 1901. Series D. Printed serial N.º 060.416 (normalized 060416; leading zeros are kept). No printage is published: this is not a Banco de la República type (1923–2019), and BanRep’s annual banknote production tables begin in 1960.',
     },
     images: {
-      composite: '/images/catalog/colombia/1-peso-tolima-1901-060416-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-tolima-1901-060416-front.jpg',
-      back: '/images/catalog/colombia/1-peso-tolima-1901-060416-back.jpg',
+      composite: '/images/catalog/colombia/colombia-departamento-del-tolima-1-peso-1901-series-d-060416-composite.jpg',
+      front: '/images/catalog/colombia/colombia-departamento-del-tolima-1-peso-1901-series-d-060416-front.jpg',
+      back: '/images/catalog/colombia/colombia-departamento-del-tolima-1-peso-1901-series-d-060416-back.jpg',
     },
     title: {
       es: '1 peso · Departamento del Tolima · 1901',
@@ -549,9 +549,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 19 January 1945. Published size: 140 × 70 mm. Series R, eight-digit serial. González White 2019 numbers the January 1945 eight-digit Series R emission BG# 027 (p. 33): emisión 15,000,000, serials 81,000,001–96,000,000 (the book prints 1 January 1945). The Bank Note Museum numbers type 380d on 20.07.1944 and 01.01.1945. Numista cites Hernández 22 and TBB B922f for 1 January 1945. Serial 85688116 falls in that range. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1945.',
     },
     images: {
-      composite: '/images/catalog/colombia/1-peso-oro-1945-85688116-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-oro-1945-85688116-front.jpg',
-      back: '/images/catalog/colombia/1-peso-oro-1945-85688116-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1945-r85688116-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1945-r85688116-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1945-r85688116-back.jpg',
     },
     title: {
       es: '1 peso oro · Banco de la República · 1945',
@@ -643,9 +643,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Treasury of the Republic of Colombia issue, not Banco de la República; date on the note 18 February 1953. Published size: 112 × 58 mm. Series C, a single seven-digit serial. González White 2019 numbers this date BG# 012 (p. 28): emisión 10,000,000, serials C0.000.001–C10.000.000, seven digits. Hernández (8th ed., 2023) numbers the date as Cód. 12; Numista concurs Hernández 12 and P# 345b, prefix C. Serial C5256707 falls in that range. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1953.',
     },
     images: {
-      composite: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-composite.jpg',
-      front: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-front.jpg',
-      back: '/images/catalog/colombia/medio-peso-oro-1953-c5256707-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-medio-peso-oro-1953-c5256707-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-medio-peso-oro-1953-c5256707-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-medio-peso-oro-1953-c5256707-back.jpg',
     },
     title: {
       es: 'Medio peso oro · República de Colombia · 1953',
@@ -737,9 +737,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 January 1954. Published size: 140 × 70 mm. Series HH, eight-digit serial. González White 2019 numbers this date BG# 044 (p. 36): emisión 50,000,000, serials 30,000,001–80,000,000. The Bank Note Museum numbers type 380g on that date. Numista cites Hernández 38. Serial 52170492 falls in that range. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1954.',
     },
     images: {
-      composite: '/images/catalog/colombia/1-peso-oro-1954-52170492-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-oro-1954-52170492-front.jpg',
-      back: '/images/catalog/colombia/1-peso-oro-1954-52170492-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1954-hh52170492-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1954-hh52170492-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1954-hh52170492-back.jpg',
     },
     title: {
       es: '1 peso oro · Banco de la República · 1954',
@@ -831,9 +831,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Waterlow & Sons Limited, London, face and back. Banco de la República circulation issue; date printed on the note: Bogotá, 9 August 1959. Published size of the type: 140 × 70 mm. Series A, eight-digit serial 60870843. González White 2019 numbers the Boyacá commemorative as BG# 043 (p. 37): 7 August 1953, Series A, eight digits, emisión 100,000,000, serials 00.000.001–100.000.000, printer Waterlow. That row does not list 9 August 1959; this record does not invent a BG# for that date. Serial 60870843 falls in the published BG# 043 range. The Bank Note Museum and Numista date Pick 398 / TBB B938 / Hernández 44 to 7.8.1953. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1959.',
     },
     images: {
-      composite: '/images/catalog/colombia/1-peso-oro-1959-60870843-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-oro-1959-60870843-front.jpg',
-      back: '/images/catalog/colombia/1-peso-oro-1959-60870843-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1959-a60870843-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1959-a60870843-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1959-a60870843-back.jpg',
     },
     title: {
       es: '1 peso oro · Banco de la República · 1959',
@@ -925,9 +925,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1973. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1973 as Cód. 76 — Numista concurs Hernández 76, P# 404e, year as “1.973”; Cód. 77 is the “7 Corto en el mes” variety; Cód. 78 is the face asterisk replacement. Serial 26530968 is an ordinary eight-digit number, outside González White’s asterisk bands and Hernández’s annex-2 replacement interval (00105759–00541728). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread. BanRep’s 1973 table records 68.3 million 1-peso notes: all production of that face value that year, not this date’s printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg',
-      back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-back.jpg',
     },
     title: {
       es: '1 peso · Banco de la República · 1959–1977',
@@ -1035,9 +1035,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1973. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1973 as Cód. 76 — Numista concurs Hernández 76, P# 404e, year as “1.973”; Cód. 77 is the “7 Corto en el mes” variety; Cód. 78 is the face asterisk replacement. Serial 26530968 is an ordinary eight-digit number, outside González White’s asterisk bands and Hernández’s annex-2 replacement interval (00105759–00541728). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread. BanRep’s 1973 table records 68.3 million 1-peso notes: all production of that face value that year, not this date’s printage.',
         },
         images: {
-          composite: '/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg',
-          front: '/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg',
-          back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1973-26530968-back.jpg',
         },
         title: {
           es: '1 peso oro · Banco de la República · 1973',
@@ -1141,9 +1141,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1974. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1974 as Cód. 79 — Numista concurs Hernández 79, P# 404e, and TBB B947r; the next row is the face asterisk replacement (Cód. 80). Serial 47550075 is an ordinary eight-digit number, outside González White’s asterisk bands (00.100.108–00.195.207) and Hernández’s annex-2 replacement interval (00100108–00198717). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread; this date is the last of 404e. BanRep’s 1974 table records 47.2 million 1-peso notes: all production of that face value that year, not this date’s printage. The 1973 example, serial 26530968 (Cód. 76), is further up this page.',
         },
         images: {
-          composite: '/images/catalog/colombia/1-peso-oro-1974-47550075-composite.jpg',
-          front: '/images/catalog/colombia/1-peso-oro-1974-47550075-front.jpg',
-          back: '/images/catalog/colombia/1-peso-oro-1974-47550075-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1974-47550075-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1974-47550075-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1974-47550075-back.jpg',
         },
         title: {
           es: '1 peso oro · Banco de la República · 1974',
@@ -1252,9 +1252,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1944. The Bank Note Museum groups type 390b under 20.07.1944, 01.01.1945, and 07.08.1947. Published size: 140 × 70 mm. Numista marks this date as Series I in olive (Hernández 91). No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/2-pesos-oro-1944-composite.jpg',
-      front: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
-      back: '/images/catalog/colombia/2-pesos-oro-1944-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-back.jpg',
     },
     title: {
       es: '2 pesos oro · Banco de la República · 1944 y 1955',
@@ -1344,9 +1344,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1944. The Bank Note Museum groups type 390b under 20.07.1944, 01.01.1945, and 07.08.1947. Published size: 140 × 70 mm. Numista marks this date as Series I in olive (Hernández 91). No printage is published here.',
         },
         images: {
-          composite: '/images/catalog/colombia/2-pesos-oro-1944-composite.jpg',
-          front: '/images/catalog/colombia/2-pesos-oro-1944-front.jpg',
-          back: '/images/catalog/colombia/2-pesos-oro-1944-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1944-i12527403-back.jpg',
         },
         title: {
           es: '2 pesos oro · Banco de la República · 1944',
@@ -1432,9 +1432,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 January 1955. The Bank Note Museum numbers type 390d on that date. Published size: 140 × 70 mm. Numista distinguishes, in Series GG, seven-digit serials (Hernández 95) and eight-digit ones (Hernández 96); this piece is eight digits. No printage is published here.',
         },
         images: {
-          composite: '/images/catalog/colombia/2-pesos-oro-1955-composite.jpg',
-          front: '/images/catalog/colombia/2-pesos-oro-1955-front.jpg',
-          back: '/images/catalog/colombia/2-pesos-oro-1955-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1955-gg10739101-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1955-gg10739101-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1955-gg10739101-back.jpg',
         },
         title: {
           es: '2 pesos oro · Banco de la República · 1955',
@@ -1524,9 +1524,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 20 July 1977. Published size: 140 × 70 mm. Eight-digit serial, no series letter, and no printer imprint. González White 2019 (p. 46) numbers this date BG# 100: IBB, last issue of the 2-peso denomination, 50,000,000 notes, serials 00.000.001 / 50.000.000. Serial 22214695 sits in that range. BG# 101 is the asterisk replacement of the same date (00.104.171 / 00.191.883). Hernández (8th ed., 2023) gives the annex-2 asterisk interval 00104171–00194009; 22214695 sits outside it. Numista concurs Hernández 104, P# 413b, and TBB B948f for the ordinary 20 July 1977. The Bank Note Museum groups type 413b under 20.07.1976, 01.01.1977, and 20.07.1977 — small serial, far from the upper border — distinct from 413a of 1972–1973 (ABNC). BanRep’s 1977 table records 118.9 million 2-peso notes: all production of that face value that year, not this date’s printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/2-pesos-oro-1977-22214695-composite.jpg',
-      front: '/images/catalog/colombia/2-pesos-oro-1977-22214695-front.jpg',
-      back: '/images/catalog/colombia/2-pesos-oro-1977-22214695-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1977-22214695-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1977-22214695-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1977-22214695-back.jpg',
     },
     title: {
       es: '2 pesos oro · Banco de la República · 1977',
@@ -1636,9 +1636,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1943. The Bank Note Museum groups type 389b under 20.07.1943, 20.07.1944, and 07.08.1947. Published size: 140 × 70 mm. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/10-pesos-oro-1943-composite.jpg',
-      front: '/images/catalog/colombia/10-pesos-oro-1943-front.jpg',
-      back: '/images/catalog/colombia/10-pesos-oro-1943-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1943-n6813011-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1943-n6813011-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1943-n6813011-back.jpg',
     },
     title: {
       es: '10 pesos oro · Banco de la República · 1943',
@@ -1712,9 +1712,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Thomas De La Rue & Co., London. Specimen of the 20 July 1960 date; Series M; published size 140 × 70 mm. González White 2019 (BG# 125, p. 56) publishes 30,000,000 circulating notes, serials 50,000,001–80,000,000, eight digits, Series M; the spread does not give a specimen printage. BanRep’s 1960 table records 1-peso production, not 5-peso. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/5-pesos-oro-1960-00000000-composite.jpg',
-      front: '/images/catalog/colombia/5-pesos-oro-1960-00000000-front.jpg',
-      back: '/images/catalog/colombia/5-pesos-oro-1960-00000000-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1960-00000000-specimen-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1960-00000000-specimen-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1960-00000000-specimen-back.jpg',
     },
     title: {
       es: '5 pesos oro · espécimen · 1960',
@@ -1815,9 +1815,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 April 1979. Eight digits, no series letter. This piece is the replacement variety: Hernández (8th ed., 2023) numbers it Cód. 156 — Numista concurs Hernández 156, distinct from Cód. 155 of the circulating note of the same date (P# 406f / TBB B949o). The diagnostic on this holding is the asterisk to the left of GERENTE on the face; Hernández describes neighbouring replacements of this face value (Cód. 150, 153, and 160) as “asterisco en el anverso.” Annex 2 gives the 1 April 1979 asterisk interval as 00100731–00135113; serial 00141180 does not sit in that interval. González White 2019 (p. 60) lists Reposición asterisco rows on the 1973–1981 spread; a band 00.100.010–00.164.380 includes 00.141.180. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 406f under 01.10.1978, 01.04.1979, 01.01.1980, and 01.01.1981, without a security thread. BanRep’s 1979 table records 109.5 million 5-peso notes — a denomination-year total, not this replacement’s printage. This record does not invent a printage or replace Hernández’s interval or White’s band with that total.',
     },
     images: {
-      composite: '/images/catalog/colombia/5-pesos-oro-1979-00141180-composite.jpg',
-      front: '/images/catalog/colombia/5-pesos-oro-1979-00141180-front.jpg',
-      back: '/images/catalog/colombia/5-pesos-oro-1979-00141180-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1979-00141180-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1979-00141180-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1979-00141180-back.jpg',
     },
     title: {
       es: '5 pesos oro · reposición · 1979',
@@ -1909,9 +1909,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 January 1980. Eight digits, no series letter. González White 2019 (p. 60) publishes 50,000,000 notes, serials 50,000,001–100,000,000, for that IBB date; serial 94658896 sits in that range and does not match the asterisk-replacement rows. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 406f under 01.10.1978, 01.04.1979, 01.01.1980, and 01.01.1981, without a security thread. BanRep’s 1980 table records 49.5 million 5-peso notes — a denomination-year total, not this date’s printage. This record does not replace the catalogue emisión with that total.',
     },
     images: {
-      composite: '/images/catalog/colombia/5-pesos-oro-1980-94658896-composite.jpg',
-      front: '/images/catalog/colombia/5-pesos-oro-1980-94658896-front.jpg',
-      back: '/images/catalog/colombia/5-pesos-oro-1980-94658896-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-94658896-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-94658896-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-94658896-back.jpg',
     },
     title: {
       es: '5 pesos oro · 1980',
@@ -2012,9 +2012,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 20 July 1976. The Bank Note Museum groups type 407f under 20.07.1974, 01.01.1975, 20.07.1976, and 01.01.1978, without a security thread. Published size: 140 × 70 mm. This piece is the replacement variety (TBB B950kr; Hernández 199/201). No official printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/10-pesos-oro-1976-composite.jpg',
-      front: '/images/catalog/colombia/10-pesos-oro-1976-front.jpg',
-      back: '/images/catalog/colombia/10-pesos-oro-1976-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1976-00142533-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1976-00142533-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1976-00142533-back.jpg',
     },
     title: {
       es: '10 pesos oro · reposición · 1976',
@@ -2106,9 +2106,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1979. Eight digits, no series letter. González White 2019 (p. 68) lists AGOSTO 7 1979 dates on the DIEZ PESOS 1975–1980 spread, with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1979 as Cód. 205 — Numista concurs Hernández 205, P# 407g, and TBB B950m; Cód. 206 is the replacement with an asterisk on the face, between the titles (TBB B950mr). Serial 98040194 is an ordinary eight-digit number, outside González White’s asterisk bands on that spread (around 00.100.xxx–00.472.xxx). The Bank Note Museum groups type 407g under 07.08.1979 and 07.08.1980, without a series letter, distinct from 407f (1974–1978) and from 407h of 1980 with series AZ. Published size: 140 × 70 mm. No security thread and no watermark. BanRep’s 1979 table records 58.75 million 10-peso notes: all production of that face value that year, not this date’s printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/10-pesos-oro-1979-98040194-composite.jpg',
-      front: '/images/catalog/colombia/10-pesos-oro-1979-98040194-front.jpg',
-      back: '/images/catalog/colombia/10-pesos-oro-1979-98040194-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1979-98040194-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1979-98040194-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1979-98040194-back.jpg',
     },
     title: {
       es: '10 pesos oro · Banco de la República · 1979',
@@ -2218,9 +2218,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 January 1983. Nine digits, no series letter. González White 2019 (pp. 73–74) lists ENERO 1º 1983 dates on the VEINTE PESOS 1975–1983 spread, with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG# or emisión. Hernández (8th ed., 2023) numbers the ordinary 1 January 1983 as Cód. 243 — Numista concurs Hernández 243, P# 409d, and TBB B951l; Cód. 244 is the replacement with an asterisk on the face. Serial 056462955 is an ordinary nine-digit number, outside González White’s asterisk bands on that spread (around 00.100.xxx–00.273.xxx) and outside Hernández’s annex 2 interval for this date (00102221–00171449). The Bank Note Museum groups type 409d under 01.04.1979, 01.01.1981, 01.01.1982, and 01.01.1983, distinct from 409a–c (1966–1977). Published size: 140 × 70 mm. No security thread and no watermark. Hernández notes that the twenty-peso oro ended in 1983, replaced by copper twenty-peso coins. BanRep’s 1983 table records 60.5 million 20-peso notes: all production of that face value that year, not this date’s printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/20-pesos-oro-1983-056462955-composite.jpg',
-      front: '/images/catalog/colombia/20-pesos-oro-1983-056462955-front.jpg',
-      back: '/images/catalog/colombia/20-pesos-oro-1983-056462955-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-20-pesos-oro-1983-056462955-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-20-pesos-oro-1983-056462955-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-20-pesos-oro-1983-056462955-back.jpg',
     },
     title: {
       es: '20 pesos oro · Banco de la República · 1983',
@@ -2330,9 +2330,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Thomas De La Rue & Company, Limited, London. Banco de la República circulation issue; date on the note 20 July 1974. Ten digits, no series letter and no R prefix. González White 2019 (p. 79) publishes 100,000,000 notes for that TDLR date, nine-digit serials 170.000.001–270.000.000, and an R replacement 170.001.660–171.318.448; Hernández (8th ed., 2023) gives the replacement interval 170554001–171318448. Serial 2467354822 is printed with ten digits and no R: it is not forced into the nine-digit band or the replacement range. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 414 under 20.07.1973 and 20.07.1974. BanRep’s 1973 and 1974 tables record no 50-peso notes those calendar years — denomination-year totals, not this date’s printage. This record does not replace the catalogue emisión with those totals.',
     },
     images: {
-      composite: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-composite.jpg',
-      front: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-front.jpg',
-      back: '/images/catalog/colombia/50-pesos-oro-1974-2467354822-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1974-2467354822-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1974-2467354822-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1974-2467354822-back.jpg',
     },
     title: {
       es: '50 pesos oro · 1974',
@@ -2433,9 +2433,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 12 October 1984. Ten digits, no series letter. González White 2019 (pp. 80–81) publishes 100,000,000 notes, serials 00.000.001–100.000.000, for that IBB date; serial 0001806322 sits in that range. The same spread lists an asterisk replacement (00.100.231–00.235.185); Hernández (8th ed., 2023) gives the interval 00107344–00215345. Serial 0001806322 — and its eight-digit core 01806322 — does not match those bands. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. Published size: 140 × 70 mm. The Bank Note Museum groups type 425a under 12.10.1984 and 01.01.1985, without embedded fibres. BanRep’s 1984 table records no 50-peso notes that calendar year; 1983 records 154.5 million and 1985 149.75 million — denomination-year totals, not this date’s printage. This record does not replace the catalogue emisión with those totals.',
     },
     images: {
-      composite: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-composite.jpg',
-      front: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-front.jpg',
-      back: '/images/catalog/colombia/50-pesos-oro-1984-0001806322-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1984-0001806322-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1984-0001806322-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-50-pesos-oro-1984-0001806322-back.jpg',
     },
     title: {
       es: '50 pesos oro · 1984',
@@ -2536,9 +2536,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Thomas De La Rue & Co., London. Specimen of the 1 January 1980 date, without a serial prefix; published size 140 × 70 mm. The Bank Note Museum numbers that no-prefix date as Pick 418b — “CIEN PESOS ORO” in filled letters — and distinguishes it from 418a of 1977 and from 418c with prefixes A, B, and C. Numista groups the design under N# 224500 (P# 418 / TBB B958a; Hernández 307 for the circulating note). González White 2019 (p. 86, CIEN PESOS 1977 and 1980 spread) publishes 100,000,000 circulating notes for 1 January 1980, eight digits, serials 00.000.001–100.000.000, T. de la R. imprint; the spread does not give a specimen printage. The OCR jumbles BG# against dates: no guessed BG# is published here. Distinct from the 1980 A–C rows (p. 87). BanRep’s 1980 table records no 100-peso production (that year lists 5- to 50-peso notes); that is not this specimen’s printage. This record does not invent a printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-composite.jpg',
-      front: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-front.jpg',
-      back: '/images/catalog/colombia/100-pesos-oro-1980-specimen-027-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-100-pesos-oro-1980-00000000-specimen-027-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-100-pesos-oro-1980-00000000-specimen-027-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-100-pesos-oro-1980-00000000-specimen-027-back.jpg',
     },
     title: {
       es: '100 pesos oro · espécimen · 1980',
@@ -2630,9 +2630,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Bogotá. Specimen of the 1 April 1989 date; published size 140 × 70 mm. The Bank Note Museum numbers that date, with titles Gerente and Abogado Subgerente, as Pick 429d, and groups it with 01.04.1987, 01.04.1988, and 01.11.1988. Distinct from Thomas De La Rue’s 428 and from 429A of Santa Fe de Bogotá. Numista cites P# 429d / TBB B967i / Hernández 365 for the circulating note of this date. González White 2019 (pp. 94–95, DOSCIENTOS PESOS 1987 to 1992 spread) lists 1 April 1989, Mutis, IBB, and a star replacement; the spread does not give a specimen printage. The OCR jumbles BG# against dates: no guessed BG# is published here. BanRep’s 1989 table records 122 million 200-peso notes: that is the denomination-year total, not this specimen’s printage. This record does not invent a printage.',
     },
     images: {
-      composite: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-composite.jpg',
-      front: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-front.jpg',
-      back: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-200-pesos-oro-1989-00000000-specimen-499-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-200-pesos-oro-1989-00000000-specimen-499-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-200-pesos-oro-1989-00000000-specimen-499-back.jpg',
     },
     title: {
       es: '200 pesos oro · espécimen · 1989',
@@ -2733,9 +2733,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 1 April 1979. Published size: 140 × 70 mm. Nine digits, no series letter; González White 2019 notes that only eight were used and that ordinary numbers start with one or two zeros. He numbers this date BG# 411 (p. 105): emisión 70,000,000. Serial 067682258 falls in that range and does not carry the R prefix of replacement BG# 412. BanRep’s 1979 tables publish no 1,000-peso total (that column begins in 1988); the year’s 254.75 million covers 5-, 10-, and 20-peso notes. This record does not replace the BG# emisión with that denomination-year total.',
     },
     images: {
-      composite: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-composite.jpg',
-      front: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-front.jpg',
-      back: '/images/catalog/colombia/1000-pesos-oro-1979-067682258-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-oro-1979-067682258-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-oro-1979-067682258-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-oro-1979-067682258-back.jpg',
     },
     title: {
       es: '1.000 pesos oro · Banco de la República · 1979',
@@ -2827,9 +2827,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Thomas De La Rue & Co., London. Specimen of the 24 July 1983 date; published size 140 × 70 mm. The Bank Note Museum places Pick 430 in 1983–1986 (TDLR) and sends later dates to the Imprenta de Billetes (Pick 433 and 433A). No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/2000-pesos-oro-1983-composite.jpg',
-      front: '/images/catalog/colombia/2000-pesos-oro-1983-front.jpg',
-      back: '/images/catalog/colombia/2000-pesos-oro-1983-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-oro-1983-00000000-specimen-030-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-oro-1983-00000000-specimen-030-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-oro-1983-00000000-specimen-030-back.jpg',
     },
     title: {
       es: '2.000 pesos oro · 1983',
@@ -2903,9 +2903,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Banco de la República circulation issue; date printed on the face: Santa Fe de Bogotá, 4 January 1993. Published size 140 × 70 mm; eight digits, no series letter. González White 2019 (pp. 124–125) publishes 93,600,000 notes for that IBSFB Núñez–Caro date; serial 82210365 sits in that range. The same spread lists a star replacement (00.100.014–00.274.159); 82210365 does not match that band. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. The Bank Note Museum numbers the 31.01.1992 and 04.01.1993 dates as Pick 436A (IBSFB) and distinguishes them from Bogotá’s 436 (1990) and from the German and Italian printings (Pick 434 and 435). BanRep’s 1993 table records 120.25 million 5,000-peso notes: that is every note of that face value that year, not this date’s printage. This record does not replace the catalogue emisión with that total.',
     },
     images: {
-      composite: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-composite.jpg',
-      front: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-front.jpg',
-      back: '/images/catalog/colombia/5000-pesos-oro-1993-82210365-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1993-82210365-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1993-82210365-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1993-82210365-back.jpg',
     },
     title: {
       es: '5.000 pesos oro · 1993',
@@ -3002,9 +3002,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Santa Fe de Bogotá (IBSFB). Date printed on the face: Santa Fe de Bogotá, 1994. Published size 140 × 70 mm; eight digits, no series letter. A star sits to the right of the upper black serial. The Bank Note Museum numbers the 1992 10,000 pesos oro as Pick 437 (Banco de México) and refers later dates, already in “pesos,” to Pick 437A. Numista assigns the 1994 replacement to TBB B980az / Hernández 576. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982. BanRep’s 1994 production of 10,000-peso notes is 123.05 million pieces: that is every note of that face value that year, not the printage of this replacement. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/10000-pesos-1994-00113227-composite.jpg',
-      front: '/images/catalog/colombia/10000-pesos-1994-00113227-front.jpg',
-      back: '/images/catalog/colombia/10000-pesos-1994-00113227-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-back.jpg',
     },
     title: {
       es: '10.000 pesos · reposición estrella · 1994',
@@ -3107,9 +3107,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Serial 00113227★. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982; this serial sits in that band. Printed date: Santa Fe de Bogotá, 1994. In a sleeve, unslabbed; the watermark margin shows two foxing spots.',
         },
         images: {
-          composite: '/images/catalog/colombia/10000-pesos-1994-00113227-composite.jpg',
-          front: '/images/catalog/colombia/10000-pesos-1994-00113227-front.jpg',
-          back: '/images/catalog/colombia/10000-pesos-1994-00113227-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00113227-star-back.jpg',
         },
         title: {
           es: '10.000 pesos · reposición estrella · 1994 · 00113227',
@@ -3204,9 +3204,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Serial 00249902★. González White 2019 (pp. 127–128) lists the 1994 star replacement with serials 00.100.332–00.239.982; 00249902 (249,902) sits above that band. The same spread gives the 1993 star replacement the band 00.100.133–00.274.404; that row is not applied here to a note dated 1994. Printed date: Santa Fe de Bogotá, 1994. In a sleeve, unslabbed; the watermark margin shows slight yellowing.',
         },
         images: {
-          composite: '/images/catalog/colombia/10000-pesos-1994-00249902-composite.jpg',
-          front: '/images/catalog/colombia/10000-pesos-1994-00249902-front.jpg',
-          back: '/images/catalog/colombia/10000-pesos-1994-00249902-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00249902-star-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00249902-star-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-10000-pesos-1994-00249902-star-back.jpg',
         },
         title: {
           es: '10.000 pesos · reposición estrella · 1994 · 00249902',
@@ -3305,9 +3305,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face: 20 August 2008. Published size 130 × 65 mm; eight digits, no series letter; both serials on the back. González White 2019 numbers the reduced type BG# 490 (pp. 121–123) and marks the August 2008 dates N.D. for emisión; the Bank Note Museum lists 29.08.2008 (457i) and 30.08.2008 (457j) as Pick 457’s 2008 dates, and 20.08.2009 as 457l. BanRep’s 2008 production of 2,000-peso notes is 280.4 million pieces: that is every note of that face value that year, not the printage of this date or this serial. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/2000-pesos-2008-10000001-composite.jpg',
-      front: '/images/catalog/colombia/2000-pesos-2008-10000001-front.jpg',
-      back: '/images/catalog/colombia/2000-pesos-2008-10000001-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2008-10000001-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2008-10000001-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2008-10000001-back.jpg',
     },
     title: {
       es: '2.000 pesos · 2008',
@@ -3385,9 +3385,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the back: 29 August 2017. Size 143 × 66 mm (Banrepcultural’s Numismatic Collection lists it as 66 × 143 mm). Two-letter prefix and eight digits, series AF. The Bank Note Museum dates type Pick 461 to 2015–2023 and lists printed dates 19.08.2015 (461a), 02.08.2016 (461b), 29.08.2017 (this piece; not in the Standard Catalog), 24.07.2018, 23.07.2019, 26.05.2020 (two general-manager varieties), 27.07.2021, 25.10.2022, and 24.10.2023. González White 2019 numbers this date BG# NF20-6 (p. 151) and marks emisión ¿?. Numista assigns TBB B996c to 29.08.2017. The CashFlow SCN83 identity card (SOFTWARE BILL SET, variant 523334446, Colombia COP) indexes the 2016-family twenty-thousand as COP 20000 (CA) / COP_000020000_C_A_D_C, “Series 2015” on that table, and the previous twenty-thousand as COP 20000 (BA) / COP_000020000_B_A_D_B (2000–2012 years on the card). That software set is not printage and does not name this serial. BanRep’s 2017 production of 20,000-peso notes is 122.1 million pieces, and Tesorería delivery of the 2016 T family is 112.89 million: those are denomination totals for the year, not the printage of this date or this series. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/20000-pesos-2017-AF51355141-composite.jpg',
-      front: '/images/catalog/colombia/20000-pesos-2017-AF51355141-front.jpg',
-      back: '/images/catalog/colombia/20000-pesos-2017-AF51355141-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-20000-pesos-2017-af51355141-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-20000-pesos-2017-af51355141-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-20000-pesos-2017-af51355141-back.jpg',
     },
     title: {
       es: '20.000 pesos · 2017 · serial AF51355141',
@@ -3492,9 +3492,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the back: 19 August 2015. Size 128 × 66 mm (Banrepcultural’s Numismatic Collection lists it as 66 × 128 mm). Two-letter prefix and eight digits, series AA. The Bank Note Museum dates type Pick 458 to 2015–2023 and lists 19.08.2015 as 458a; then 02.08.2016 (458b), 29.08.2017 (458c), and 2018–2023 dates unlettered in the Standard Catalog. González White 2019 numbers this date BG# NF2-1 (p. 146), series AA, and marks emisión ¿?; the book’s circulation date is 29 November 2016. Numista assigns TBB B993a to 19.08.2015 and groups prefixes AA–AD on that date (signatures JDUE / JTB). BanRep’s 2016 production of every 2,000-peso note is 251.5 million pieces, and Tesorería delivery of the 2016 Z family is 44.13 million: those are denomination totals for the year, not the printage of this date or this series. The 2015 figure (351.5 million) is the denomination total that year, still before the Z family. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/2000-pesos-2015-AA40000066-composite.jpg',
-      front: '/images/catalog/colombia/2000-pesos-2015-AA40000066-front.jpg',
-      back: '/images/catalog/colombia/2000-pesos-2015-AA40000066-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2015-aa40000066-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2015-aa40000066-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2015-aa40000066-back.jpg',
     },
     title: {
       es: '2.000 pesos · 2015 · serial AA40000066',
@@ -3609,9 +3609,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'No date, imprint, or serial on the paper. The same design in two inks: green and red. No printage is published.',
     },
     images: {
-      composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-composite.jpg',
-      front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-front.jpg',
-      back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-back.jpg',
+      composite: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-composite.jpg',
+      front: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-front.jpg',
+      back: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-back.jpg',
     },
     title: {
       es: '15 centavos · tiquete estudiantil · MEN',
@@ -3696,9 +3696,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'No date, imprint, or serial on the paper. Green ink on cream stock, with a security-network ground and an ornamental frame. The back has no printing of its own: the face shows through. The slightly irregular right edge suggests a sheet or booklet cut. No printage is published.',
         },
         images: {
-          composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-composite.jpg',
-          front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-front.jpg',
-          back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-verde-back.jpg',
+          composite: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-composite.jpg',
+          front: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-front.jpg',
+          back: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-verde-back.jpg',
         },
         title: {
           es: '15 centavos · tiquete estudiantil · verde',
@@ -3747,9 +3747,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'No date, imprint, or serial on the paper. Red ink on cream stock, with a security-network ground and an ornamental frame. A smeared blue stamp sits over the triangle on the face. The back has no printer’s engraving: the face shows through, with school stamps in blue. Staple holes in the margin. No printage is published.',
         },
         images: {
-          composite: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-composite.jpg',
-          front: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-front.jpg',
-          back: '/images/catalog/colombia/tiquete-estudiantil-15-centavos-rojo-back.jpg',
+          composite: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-rojo-composite.jpg',
+          front: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-rojo-front.jpg',
+          back: '/images/catalog/colombia/colombia-ministerio-de-educacion-tiquete-estudiantil-15-centavos-rojo-back.jpg',
         },
         title: {
           es: '15 centavos · tiquete estudiantil · rojo',
@@ -3802,9 +3802,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date read on the face, under the signatures: 16 August 2000. Published size 140 × 70 mm; nine digits, no series letter; both serials on the face. González White 2019 numbers the large type BG# 439 (pp. 110–111) and opens with 7 August 2001 (439-a; emisión 98,050,000). The Bank Note Museum marks Pick 450 as 2001–2005 and 450a = 07.08.2001: there is no letter for a 16.08.2000. Numista groups the large format under N# 210180 (TBB B985; Hernández# 437–443) and assigns the MUM / GHC pair to the 2001–2004 dates. BanRep’s 2000 production of 1,000-peso notes is 175 million pieces: that is every note of that face value that year — still the earlier Galán type — not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg',
-      front: '/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg',
-      back: '/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2000-693949988-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2000-693949988-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2000-693949988-back.jpg',
     },
     title: {
       es: '1.000 pesos · error de corte · 2000',
@@ -3891,9 +3891,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date read on the face, shifted to the upper-left edge by the cutting error: 18 August 2008. Published size 130 × 65 mm; eight digits, no series letter; both serials on the face. González White 2019 numbers the reduced dates BG# 439-r (pp. 111–112) and lists, for 2008, 27 and 28 August (439-r/10 and 439-r/11); 18 August is published as 2009 (439-r/12). The Bank Note Museum marks 27.08.2008 as 456j, 28.08.2008 as 456k, and 18.08.2009 as 456l: there is no Pick letter for an 18.08.2008. Numista groups the type under N# 205282 and assigns the JDUE / GHC pair to those three dates. BanRep’s 2008 production of 1,000-peso notes is 280.4 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/1000-pesos-error-2008-23085962-composite.jpg',
-      front: '/images/catalog/colombia/1000-pesos-error-2008-23085962-front.jpg',
-      back: '/images/catalog/colombia/1000-pesos-error-2008-23085962-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2008-23085962-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2008-23085962-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2008-23085962-back.jpg',
     },
     title: {
       es: '1.000 pesos · error de corte · 2008',
@@ -3980,9 +3980,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the face, under the signatures: 5 September 2008. Size 140 × 70 mm; eight digits, no series letter. González White 2019 lists that date among the Jorge Isaacs 50,000s (pp. 138–139) and marks the emisión N.D. The Bank Note Museum numbers 05.09.2008 as Pick 455l. Numista assigns TBB B992l, Hernández# 657, and the JDUE / GHC pair. BanRep’s 2008 production of 50,000-peso notes is 171 million pieces: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-composite.jpg',
-      front: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-front.jpg',
-      back: '/images/catalog/colombia/50000-pesos-error-2008-72461316-72411316-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2008-72461316-72411316-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2008-72461316-72411316-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2008-72461316-72411316-back.jpg',
     },
     title: {
       es: '50.000 pesos · error de numeración · 2008',
@@ -4078,9 +4078,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face: 10 June 2011. Published size 130 × 65 mm; eight digits, no series letter; both serials on the face. This piece also keeps a sheet-margin flap that extends beyond the rectangle. González White 2019 numbers the date BG# 439-r/14 (p. 112). The Bank Note Museum lists 10.06.2011 as Pick 456n. Numista assigns TBB B986n and places the note into circulation on 27 February 2012. BanRep’s 2011 production of 1,000-peso notes is 196.1 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/1000-pesos-error-2011-11508701-composite.jpg',
-      front: '/images/catalog/colombia/1000-pesos-error-2011-11508701-front.jpg',
-      back: '/images/catalog/colombia/1000-pesos-error-2011-11508701-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2011-11508701-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2011-11508701-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-error-2011-11508701-back.jpg',
     },
     title: {
       es: '1.000 pesos · error mariposa · 2011',
@@ -4168,9 +4168,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 31 July 2010. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face. These two pieces also keep a triangular sheet-margin flap that extends beyond the top edge. González White 2019 numbers the date BG# 541 (p. 128): IBBR, Silva, emisión N.D.; it notes Braille and circulation on 1 February 2011. The Bank Note Museum lists 31.07.2010 as Pick 452l. Numista assigns TBB B989m and Hernández# 570, with Braille in the watermark area. BanRep’s 2010 production of 5,000-peso notes is 98.149 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
-      front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
-      back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-back.jpg',
     },
     title: {
       es: '5.000 pesos · error mariposa · 2010',
@@ -4255,9 +4255,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Serial 09629901. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
         },
         images: {
-          composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
-          front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
-          back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09629901-back.jpg',
         },
         title: {
           es: '5.000 pesos · error mariposa · 2010 · 09629901',
@@ -4334,9 +4334,9 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Serial 09636101. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
         },
         images: {
-          composite: '/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg',
-          front: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
-          back: '/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg',
+          composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09636101-composite.jpg',
+          front: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09636101-front.jpg',
+          back: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-error-2010-09636101-back.jpg',
         },
         title: {
           es: '5.000 pesos · error mariposa · 2010 · 09636101',
@@ -4417,9 +4417,9 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Imprenta de Billetes, Banco de la República, Bogotá. Printed in inks on paper. Date printed on the right edge of the back: 19 August 2015. Size 148 × 66 mm; two-letter prefix and eight digits, series AB. González White 2019 numbers this date and series BG# NF50-2 (p. 152): signatures Uribe / Tolosa, emisión ¿?; it places series AB into circulation on 18 November 2016. BanRep’s 19 August 2016 communiqué puts the type — the third note of the New Family — into circulation that day. The Bank Note Museum marks 19.08.2015 as Pick 462a. Numista assigns TBB B997a and prefixes AA–AD to that date. BanRep’s 2015 production of 50,000-peso notes is 250.4 million pieces (the denomination total that year; the García Márquez family had not yet circulated). In 2016 production of every 50,000 is 259.2 million, and Tesorería delivery of the 2016 S family is 115.786 million: those are not the printage of this date, this series, or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-composite.jpg',
-      front: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-front.jpg',
-      back: '/images/catalog/colombia/50000-pesos-error-2015-AB69350427-back.jpg',
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2015-ab69350427-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2015-ab69350427-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-50000-pesos-error-2015-ab69350427-back.jpg',
     },
     title: {
       es: '50.000 pesos · error de numeración · 2015',
