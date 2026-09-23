@@ -1,5 +1,6 @@
 import identifyIndex from '../data/identify-index.mjs';
 import { rankIdentifyMatches, type IdentifyIndex } from '../lib/identify.ts';
+import { readLimitedJson } from '../lib/read-json.ts';
 import { json } from './comments.ts';
 
 export const IDENTIFY_API_PATH = '/api/identify';
@@ -37,12 +38,20 @@ export async function handleIdentifyRequest(request: Request, _env: IdentifyEnv)
     return json({ error: 'Method not allowed' }, { status: 405 });
   }
 
-  let payload: { hash?: unknown; locale?: unknown; topK?: unknown };
-  try {
-    payload = await request.json();
-  } catch {
-    return json({ error: 'Invalid JSON body.' }, { status: 400 });
+  const contentType = request.headers.get('content-type') ?? '';
+  if (!contentType.toLowerCase().includes('application/json')) {
+    return json({ error: 'Expected application/json.' }, { status: 415 });
   }
+
+  const parsed = await readLimitedJson(request);
+  if (!parsed.ok) {
+    return json(
+      { error: parsed.tooLarge ? 'Request body is too large.' : 'Invalid JSON body.' },
+      { status: parsed.tooLarge ? 413 : 400 },
+    );
+  }
+
+  const payload = parsed.value as { hash?: unknown; locale?: unknown; topK?: unknown };
 
   const hash = String(payload.hash || '').trim().toLowerCase();
   if (!/^[0-9a-f]{16}$/.test(hash)) {

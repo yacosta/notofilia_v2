@@ -9,6 +9,30 @@ describe('identify API', () => {
     assert.equal(response.status, 405);
   });
 
+  it('rejects a non-JSON content type', async () => {
+    const response = await handleIdentifyRequest(
+      new Request('https://notofilia.com/api/identify', {
+        method: 'POST',
+        headers: { 'content-type': 'text/plain' },
+        body: 'hello',
+      }),
+      {},
+    );
+    assert.equal(response.status, 415);
+  });
+
+  it('rejects an oversized body', async () => {
+    const response = await handleIdentifyRequest(
+      new Request('https://notofilia.com/api/identify', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ hash: 'a'.repeat(9000) }),
+      }),
+      {},
+    );
+    assert.equal(response.status, 413);
+  });
+
   it('rejects invalid hashes', async () => {
     const response = await handleIdentifyRequest(
       new Request('https://notofilia.com/api/identify', {
