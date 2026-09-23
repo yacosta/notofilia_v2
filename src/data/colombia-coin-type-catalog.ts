@@ -16,6 +16,7 @@ export type ColombiaCoinTypeId =
   | '10-centavos-palonegro-1902'
   | '20-centavos-palonegro-1902'
   | '50-centavos-palonegro-1902'
+  | '2-centavos-lazareto-1921'
   | 'lazareto-50-centavos-1928'
   | '50-pesos-1989'
   | '200-pesos-1994'
@@ -179,6 +180,24 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
       en: 'Fifty centavos of Palonegro, 1902. Hernández groups them with the 10 and 20 as wartime coscojas, not lazaretto coin. Image pending.',
     },
     flags: ['pending'],
+  },
+  {
+    id: '2-centavos-lazareto-1921',
+    era: 'republica',
+    year: '1921',
+    denomination: { es: '2 centavos', en: '2 centavos' },
+    issuer: {
+      es: 'Lazaretos (Agua de Dios, Contratación, Caño del Oro)',
+      en: 'Lazarettos (Agua de Dios, Contratación, Caño del Oro)',
+    },
+    reference: 'KM# L10 · Restrepo 355.1 · Hernández Cód. 313',
+    title: { es: '2 centavos · Lazareto · 1921', en: '2 centavos · Lazaretto · 1921' },
+    dek: {
+      es: 'Cuproníquel de 1921 para el cordón sanitario. En la colección.',
+      en: '1921 cupronickel for the sanitary cordon. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '2-centavos-lazareto-1921',
   },
   {
     id: 'lazareto-50-centavos-1928',
