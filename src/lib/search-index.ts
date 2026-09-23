@@ -471,7 +471,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: lazarettosNumismaticsCopy.en.metaDescription,
       },
       extra:
-        'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 leprocomio',
+        'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 1921 2 centavos KM L10 leprocomio',
     },
     {
       href: GIORI_TEST_NOTES_PATH,

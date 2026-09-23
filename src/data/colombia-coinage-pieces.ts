@@ -4,6 +4,7 @@ import {
   colombiaCoinageChapters,
   type ColombiaCoinageChapterId,
 } from './colombia-coinage';
+import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
@@ -34,6 +35,8 @@ export type ColombiaCoinagePiece = {
     back: string;
   };
   sources: CatalogSource[];
+  /** Internal essays that discuss this piece. Spanish paths; pages localize them. */
+  related?: ReadonlyArray<{ href: string; label: LocalizedText }>;
 };
 
 export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
@@ -364,6 +367,15 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Series de 1901, 1907, 1921 y 1928 para Agua de Dios, Contratación y Caño del Oro. El diseño de esta pieza no nombra uno de los tres.',
           en: 'The 1901, 1907, 1921, and 1928 series for Agua de Dios, Contratación, and Caño del Oro. This piece’s design names none of the three.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: LAZARETTOS_NUMISMATICS_PATH,
+        label: {
+          es: 'Numismática de los Lazaretos',
+          en: 'Numismatics of the Lazarettos',
         },
       },
     ],

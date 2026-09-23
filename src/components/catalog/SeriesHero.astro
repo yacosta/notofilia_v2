@@ -11,8 +11,12 @@ interface Props {
   title: string;
   subtitle?: string;
   imageClass?: string;
-  /** `compact` is a shorter series band. Default matches the other catalogue pages. */
-  size?: 'default' | 'compact';
+  /**
+   * `compact` is a shorter series band.
+   * `frame` shows an upload poster at its own aspect ratio, with the title under the picture.
+   * Default matches the other catalogue pages.
+   */
+  size?: 'default' | 'compact' | 'frame';
 }
 
 const {
@@ -29,6 +33,7 @@ const {
 } = Astro.props;
 
 const isCompact = size === 'compact';
+const isFrame = size === 'frame';
 
 const isUpload = src.includes('/uploads/');
 const heroSrc = isUpload ? src : catalogAssetSrc(src);
@@ -39,40 +44,48 @@ const imgSrcset = isUpload ? editorialUploadSrcset(src, width) : heroSrcset(hero
 <section
   class:list={[
     'relative w-full bg-[#0a0a09]',
-    isCompact ? 'min-h-[64vh] md:min-h-[70vh]' : 'min-h-[86vh] md:min-h-[94vh]',
+    !isFrame && (isCompact ? 'min-h-[64vh] md:min-h-[70vh]' : 'min-h-[86vh] md:min-h-[94vh]'),
   ]}
   aria-labelledby={headingId}
 >
   <img
     class:list={[
-      'absolute inset-0 h-full w-full object-cover [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
-      imageClass,
+      isFrame
+        ? 'block h-auto w-full'
+        : 'absolute inset-0 h-full w-full object-cover [filter:contrast(1.06)_brightness(0.96)_saturate(1.04)]',
+      !isFrame && imageClass,
     ]}
     src={imgSrc}
-    srcset={imgSrcset}
-    sizes="100vw"
+    srcset={isFrame ? undefined : imgSrcset}
+    sizes={isFrame ? undefined : '100vw'}
     alt={alt}
     width={width}
     height={height}
     fetchpriority="high"
     decoding="async"
   />
-  <div
-    class="absolute inset-0"
-    style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
-  >
-  </div>
-  <div
-    class="absolute inset-0"
-    style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
-  >
-  </div>
+  {
+    !isFrame && (
+      <>
+        <div
+          class="absolute inset-0"
+          style="background:radial-gradient(ellipse 92% 58% at 50% 92%, rgba(10,10,9,0.78) 0%, rgba(10,10,9,0.28) 42%, rgba(10,10,9,0.04) 72%, rgba(10,10,9,0) 100%);"
+        />
+        <div
+          class="absolute inset-0"
+          style="background:linear-gradient(180deg, rgba(6,6,5,0) 0%, rgba(6,6,5,0) 36%, rgba(6,6,5,0.16) 58%, rgba(6,6,5,0.68) 80%, rgba(6,6,5,0.92) 100%);"
+        />
+      </>
+    )
+  }
   <div
     class:list={[
-      'relative z-[1] mx-auto flex max-w-content flex-col justify-end px-[var(--page-gutter)] pb-12 md:pb-16',
-      isCompact
-        ? 'min-h-[64vh] pt-[min(48vh,28rem)] md:min-h-[70vh]'
-        : 'min-h-[86vh] pt-[min(68vh,38rem)] md:min-h-[94vh]',
+      'relative z-[1] mx-auto flex max-w-content flex-col px-[var(--page-gutter)]',
+      isFrame
+        ? 'pb-8 pt-8 md:pb-10 md:pt-10'
+        : isCompact
+          ? 'min-h-[64vh] justify-end pb-12 pt-[min(48vh,28rem)] md:min-h-[70vh] md:pb-16'
+          : 'min-h-[86vh] justify-end pb-12 pt-[min(68vh,38rem)] md:min-h-[94vh] md:pb-16',
     ]}
   >
     <p
