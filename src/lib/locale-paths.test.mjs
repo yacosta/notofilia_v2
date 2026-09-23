@@ -382,6 +382,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/tiquete-estudiantil-15-centavos/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/', 'en'),
+      '/en/collection/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/1-peso-tolima-1901/', 'en'),
       '/en/collection/colombia/1-peso-tolima-1901/',
     );

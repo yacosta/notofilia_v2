@@ -33,6 +33,7 @@ export type ColombiaNoteId =
   | '2000-pesos-2015'
   | '20000-pesos-2017'
   | 'tiquete-estudiantil-15-centavos'
+  | 'bono-reconquista-del-poder-10-pesos-serie-c-2380'
   | '1000-pesos-error-2000'
   | '1000-pesos-error-2008'
   | '1000-pesos-error-2011'
@@ -3772,6 +3773,94 @@ export const colombiaNotes: ColombiaNote[] = [
           en: 'Unslabbed, in a Mylar sleeve',
         },
         sources: [],
+      },
+    ],
+  },
+  {
+    id: 'bono-reconquista-del-poder-10-pesos-serie-c-2380',
+    chapterId: 'bonos-politicos',
+    path: `${COLOMBIA_PATH}bono-reconquista-del-poder-10-pesos-serie-c-2380/`,
+    pick: 'DLN · Serie C',
+    serial: '2380',
+    pickLabel: {
+      es: 'Referencia',
+      en: 'Catalog reference',
+    },
+    historyHeading: {
+      es: 'La campaña',
+      en: 'The campaign',
+    },
+    signatures: {
+      es: 'Manuscritas, en los espacios del tesorero general y del secretario; no se transcriben',
+      en: 'Manuscript, in the spaces for the treasurer general and the secretary; not transcribed',
+    },
+    printed: {
+      es: 'Sin fecha ni pie de imprenta. Serie C, N.º 2380. Tinta pardo-rojiza y azul pálido. El bono sigue unido por la perforación al talón del cuadernillo. No se publica una tirada.',
+      en: 'No date and no imprint. Series C, No. 2380. Reddish-brown and pale-blue ink. The bond remains attached at the perforation to the booklet counterfoil. No printage is published.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-composite.jpg',
+      front: '/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-front.jpg',
+      back: '/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-back.jpg',
+    },
+    title: {
+      es: '10 pesos · Dirección Liberal Nacional · 1946–1948',
+      en: '10 pesos · Dirección Liberal Nacional · 1946–1948',
+    },
+    kicker: {
+      es: 'Colombia · Bonos políticos · Dirección Liberal Nacional',
+      en: 'Colombia · Political bonds · Dirección Liberal Nacional',
+    },
+    lead: {
+      es: 'Bono de diez pesos de la Dirección Liberal Nacional, Serie C, N.º 2380, todavía unido a su talón. No es papel del Banco de la República. El impreso no lleva fecha.',
+      en: 'A ten-peso bond of the Dirección Liberal Nacional, Series C, No. 2380, still attached to its counterfoil. It is not Banco de la República paper. The printing carries no date.',
+    },
+    description: {
+      es: 'Este papel no es un billete del Banco de la República ni moneda de curso legal. Es un bono de recaudo de la Dirección Liberal Nacional, titulado BONO DE RECONQUISTA DEL PODER. El anverso, en pardo rojizo y azul pálido, lleva tres óvalos rotulados HERRERA, GAITÁN y URIBE URIBE —Benjamín Herrera, Jorge Eliécer Gaitán y Rafael Uribe Uribe—, el facial DIEZ PESOS, SERIE C y N.º 2380, y la cifra 10 en las esquinas. Las orlas leen DIRECCIÓN LIBERAL NACIONAL. Hay firmas manuscritas sobre EL TESORERO GENERAL y EL SECRETARIO; no se transcriben. El talón, todavía unido por la perforación, se titula BONO DE LA RECONQUISTA DEL PODER —con el artículo, a diferencia del bono— y deja en blanco las casillas No., Tenedor, Valor y Fecha. La otra cara del cuadernillo muestra el reverso del bono: un marco rojo sobre fondo de rombos, con «Un esfuerzo colectivo para el triunfo de un gobierno del pueblo, por el pueblo y para el pueblo.» y LIBERALES, CEDULAOS! El dorso del talón está en blanco. No se le inventa un número Pick, un BG# de González White ni un Cód. de Hernández. No es el 10 pesos oro de 1943 (Pick 389) ni el mil pesos de Gaitán del Banco de la República.',
+      en: 'This paper is not a Banco de la República note and not legal tender. It is a fundraising bond of the Dirección Liberal Nacional, titled BONO DE RECONQUISTA DEL PODER. The face, in reddish brown and pale blue, carries three ovals labeled HERRERA, GAITÁN, and URIBE URIBE — Benjamín Herrera, Jorge Eliécer Gaitán, and Rafael Uribe Uribe — the face value DIEZ PESOS, SERIE C and No. 2380, and the figure 10 in the corners. The borders read DIRECCIÓN LIBERAL NACIONAL. Manuscript signatures sit over EL TESORERO GENERAL and EL SECRETARIO; they are not transcribed. The counterfoil, still joined at the perforation, is headed BONO DE LA RECONQUISTA DEL PODER — with the article, unlike the bond — and leaves blank the lines No., Tenedor, Valor, and Fecha. The other side of the booklet shows the bond’s back: a red frame on a diamond ground, with “Un esfuerzo colectivo para el triunfo de un gobierno del pueblo, por el pueblo y para el pueblo.” and LIBERALES, CEDULAOS! The back of the counterfoil is blank. No Pick number, González White BG#, or Hernández Cód. is invented for it. It is not the 1943 10 pesos oro (Pick 389) or the Banco de la República Gaitán one-thousand.',
+    },
+    history: {
+      es: 'El papel no trae fecha ni pie de imprenta. El título repite la consigna con la que Jorge Eliécer Gaitán, después de la elección presidencial de 1946, sustituyó «¡Por la restauración moral de la República!». González Contreras sitúa ese segundo momento discursivo, «¡Por la reconquista del poder!», entre 1946 y el asesinato de Gaitán el 9 de abril de 1948 (Desafíos, vol. 32, n.º 2, 2020). El bono nombra a la Dirección Liberal Nacional y retrata a Gaitán entre Benjamín Herrera y Rafael Uribe Uribe. LIBERALES, CEDULAOS! llama a sacar la cédula, el documento exigido para votar. Esta ficha no le asigna un día ni un decreto. Un catálogo de dispersión de la Asociación C&C (diciembre de 2020) lista otra denominación del mismo título: 1 peso, Serie A, N.º 09590, con los tres retratos. Ese ejemplar muestra una emisión de varias series; no es este diez pesos, Serie C, N.º 2380.',
+      en: 'The paper carries no date and no imprint. The title repeats the slogan with which Jorge Eliécer Gaitán, after the 1946 presidential election, replaced “¡Por la restauración moral de la República!” González Contreras places that second discursive moment, “¡Por la reconquista del poder!,” between 1946 and Gaitán’s assassination on 9 April 1948 (Desafíos, vol. 32, no. 2, 2020). The bond names the Dirección Liberal Nacional and portrays Gaitán between Benjamín Herrera and Rafael Uribe Uribe. LIBERALES, CEDULAOS! calls holders to obtain the cédula, the document required in order to vote. This record assigns it neither a day nor a decree. A December 2020 dispersal catalog of the Asociación C&C lists another denomination of the same title: 1 peso, Series A, No. 09590, with the three portraits. That example shows a multi-series issue; it is not this ten pesos, Series C, No. 2380.',
+    },
+    frontCaption: {
+      es: 'Cuadernillo abierto: a la izquierda el talón, con casillas en blanco para número, tenedor, valor y fecha; a la derecha el anverso del bono de diez pesos, Serie C, N.º 2380, con Herrera, Gaitán y Uribe Uribe.',
+      en: 'Open booklet: at left the counterfoil, with blank lines for number, holder, value, and date; at right the face of the ten-peso bond, Series C, No. 2380, with Herrera, Gaitán, and Uribe Uribe.',
+    },
+    backCaption: {
+      es: 'La otra cara del cuadernillo: a la izquierda el reverso del bono, con el lema del gobierno del pueblo y «LIBERALES, CEDULAOS!»; a la derecha, el dorso en blanco del talón.',
+      en: 'The other side of the booklet: at left the bond’s back, with the government-of-the-people motto and “LIBERALES, CEDULAOS!”; at right, the blank back of the counterfoil.',
+    },
+    scarcity: {
+      es: 'No hay catálogo Pick, Hernández Cód. ni González White BG# para este bono, ni una tirada publicada. El catálogo de dispersión C&C de diciembre de 2020 documenta un peso de la Serie A, N.º 09590, no un censo de este diez pesos de la Serie C. No se le asigna un número de rareza. El talón unido forma parte de la pieza.',
+      en: 'There is no Pick, Hernández Cód., or González White BG# for this bond, and no published printage. The December 2020 C&C dispersal catalog documents a Series A one-peso, No. 09590, not a census of this Series C ten-peso. No rarity number is assigned. The attached counterfoil is part of the piece.',
+    },
+    population: {
+      es: 'Una pieza sin encapsular. No hay censo de población de un servicio de certificación para este bono.',
+      en: 'One unslabbed piece. There is no grading-service population census for this bond.',
+    },
+    grade: {
+      es: 'Sin encapsular; bono unido al talón',
+      en: 'Unslabbed; bond still attached to the counterfoil',
+    },
+    sources: [
+      {
+        href: 'https://www.redalyc.org/journal/3596/359663370008/html/',
+        es: 'Daniel Felipe González Contreras — Gaitán en clave política (Desafíos, 2020)',
+        en: 'Daniel Felipe González Contreras — Gaitán in political terms (Desafíos, 2020)',
+        note: {
+          es: 'Universidad del Rosario, Desafíos, vol. 32, n.º 2. Sitúa la consigna «¡Por la reconquista del poder!» en 1946–1948, después de «¡Por la restauración moral de la República!». No describe este bono.',
+          en: 'Universidad del Rosario, Desafíos, vol. 32, no. 2. Places the slogan “¡Por la reconquista del poder!” in 1946–1948, after “¡Por la restauración moral de la República!” It does not describe this bond.',
+        },
+      },
+      {
+        href: 'https://es.scribd.com/document/469844683/DispersionCyC2020-12-CatalogoV2-pdf',
+        es: 'Asociación C&C — Catálogo de dispersión, diciembre de 2020',
+        en: 'Asociación C&C — Dispersal catalog, December 2020',
+        note: {
+          es: 'Lista un peso, Serie A, N.º 09590, de la Dirección Liberal Nacional, con Herrera, Gaitán y Uribe Uribe. Comparable de otra denominación y otra serie. No es este diez pesos, Serie C, N.º 2380. No se republica el precio.',
+          en: 'Lists a 1 peso, Series A, No. 09590, of the Dirección Liberal Nacional, with Herrera, Gaitán, and Uribe Uribe. A comparable of another denomination and another series. It is not this ten pesos, Series C, No. 2380. The price is not republished.',
+        },
       },
     ],
   },

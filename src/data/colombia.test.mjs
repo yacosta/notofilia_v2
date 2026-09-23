@@ -57,6 +57,8 @@ describe('Colombia series overview', () => {
     assert.match(modern.body.en, /serial AF51355141/);
     assert.match(seriesCopy.es.intro.join(' '), /dos tiquetes estudiantiles/);
     assert.match(seriesCopy.en.intro.join(' '), /two 15-centavos student-transport tickets/);
+    assert.match(seriesCopy.es.intro.join(' '), /N\.º 2380/);
+    assert.match(seriesCopy.en.intro.join(' '), /No\. 2380/);
     assert.match(seriesCopy.es.intro.join(' '), /serial fancy AA40000066/);
     assert.match(seriesCopy.en.intro.join(' '), /fancy serial AA40000066/);
   });

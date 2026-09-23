@@ -1,0 +1,9 @@
+---
+import ColombiaNotePage from '../../../../../components/catalog/ColombiaNotePage.astro';
+import { noteById } from '../../../../../data/colombia-notes';
+
+const note = noteById('bono-reconquista-del-poder-10-pesos-serie-c-2380');
+if (!note) throw new Error('Missing Dirección Liberal Nacional 10 pesos reconquest bond');
+---
+
+<ColombiaNotePage locale="en" note={note} />
