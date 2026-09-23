@@ -127,7 +127,8 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(enHt34Series, /UnitedStatesHardTimesSeriesPage locale="en"/);
     assert.match(data, /USA_HARD_TIMES_PATH = '\/coleccion\/estados-unidos-numismatica\/fichas-hard-times\/'/);
     assert.match(hardTimesEssay, /hero-hard-times\.jpg/);
-    assert.match(hardTimesEssay, /coinById\('ht-34-1837-burro-tortuga'\)/);
+    assert.match(hardTimesEssay, /chapterId === 'hard-times'/);
+    assert.match(hardTimesEssay, /HT-181/);
     assert.match(hardTimesEssay, /Specie Circular/);
     assert.match(hardTimesEssay, /NOT ONE CENT/);
     assert.match(hardTimesEssay, /Feuchtwanger/);
@@ -135,5 +136,29 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(hardTimesEssay, /parodia, no una frase literal del inaugural/);
     assert.doesNotMatch(hardTimesEssay, /\$20 to \$50/);
     assert.doesNotMatch(hardTimesEssay, /Broward/);
+  });
+});
+
+describe('US Hard Times HT-181 John J. Adams token', () => {
+  it('registers a bilingual no-serial store card, distinct from the copper type’s other metals', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/', 'en'),
+      '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
+    );
+    assert.match(data, /id: 'ht-181-c1835-john-j-adams'/);
+    assert.match(data, /Cash for Bristles/);
+    assert.match(data, /W-MA-320-10a/);
+    assert.match(data, /HT-181A/);
+    assert.match(data, /HT-181B/);
+    assert.match(data, /es: 'Cobre',\n      en: 'Copper',/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1835-token-ht-181-john-j-adams-ma-bn\/77447/);
+    assert.match(data, /no_serial_reason:\n      'Undated Hard Times merchant token/);
+    assert.match(data, /77447/);
+    assert.match(data, /60185-91189/);
+    assert.doesNotMatch(data, /\$59/);
+    assert.doesNotMatch(data, /89\.99/);
+    assert.match(holdings, /id: 'us-c1835-ht-181-john-j-adams', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-c1835-ht-181-low-300/);
+    assert.match(hardTimesEssay, /John J\. Adams/);
   });
 });

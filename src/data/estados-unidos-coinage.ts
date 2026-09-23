@@ -36,8 +36,8 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'Private copper on a large-cent module: emergency small change and political satire during the Panic of 1837, not United States Mint coin.',
     },
     body: {
-      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina abre con el HT-34 de 1837 (Low-20), burro y tortuga; no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
-      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case opens with the 1837 HT-34 (Low-20), donkey and turtle; it is not HT-33, which reads EXECUTIVE EXPERIMENT.',
+      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina reúne el HT-34 de 1837 (Low-20), burro y tortuga, y la store card de John J. Adams (HT-181, Low-300), hacia 1835. El HT-34 no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
+      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case holds the 1837 HT-34 (Low-20), donkey and turtle, and the John J. Adams store card (HT-181, Low-300), circa 1835. HT-34 is not HT-33, which reads EXECUTIVE EXPERIMENT.',
     },
   },
   {
@@ -160,19 +160,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times de 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times de 1835 y 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Hard Times, Filadelfia y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada; el HT-34 de 1837 no es un centavo federal.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'Los demás tipos —centavos de la Mint, medios dólares, águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, las fichas del HT-34 de 1837 y del 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-34 de 1837, la store card HT-181 de John J. Adams y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -184,19 +184,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: 1837 Hard Times tokens, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
+      'Catalog of United States coinage: Hard Times tokens of 1835 and 1837, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
     kicker: 'United States · Numismatics',
     title: 'Hard Times, Philadelphia, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal; the 1837 HT-34 is not a federal cent.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1837 HT-34 and John J. Adams’s HT-181 store card are not federal cents.',
       'Further types — Mint cents, half dollars, gold eagles — will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the records of the 1837 HT-34 and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1837 HT-34, the John J. Adams HT-181 store card, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -207,7 +207,10 @@ export const seriesCopy = {
   },
 } as const;
 
-export type UnitedStatesCoinId = 'ht-34-1837-burro-tortuga' | '1-dolar-trump-1776-2026';
+export type UnitedStatesCoinId =
+  | 'ht-34-1837-burro-tortuga'
+  | 'ht-181-c1835-john-j-adams'
+  | '1-dolar-trump-1776-2026';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -419,6 +422,148 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     ],
   },
   {
+    id: 'ht-181-c1835-john-j-adams',
+    path: '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/',
+    pathEn: '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
+    chapterId: 'hard-times',
+    year: 'c. 1835',
+    mint: {
+      es: 'Acuñación privada; no se asigna ceca federal ni un grabador nombrado',
+      en: 'Private striking; no federal mint or named engraver is assigned',
+    },
+    denomination: {
+      es: 'Ficha publicitaria (sin valor facial)',
+      en: 'Advertising token (no face value on the piece)',
+    },
+    composition: {
+      es: 'Cobre',
+      en: 'Copper',
+    },
+    weight: {
+      es: '10,5 g (peso de tipo en Numista; este ejemplar no se pesó)',
+      en: '10.5 g (Numista type weight; this specimen was not weighed)',
+    },
+    diameter: {
+      es: '28,5 mm (medida de tipo; este ejemplar no se midió)',
+      en: '28.5 mm (type measurement; this specimen was not measured)',
+    },
+    edge: {
+      es: 'Liso en el cobre ordinario HT-181; las fotos no muestran el canto',
+      en: 'Plain on ordinary copper HT-181; the photographs do not show the edge',
+    },
+    references: 'HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438',
+    grade: {
+      es: 'Sin encapsular. Desgaste en el jabalí, lema central debilitado y marcas dispersas. No es un grado numérico.',
+      en: 'Unslabbed. Wear on the boar, a weakened central motto, and scattered marks. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Undated Hard Times merchant token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-composite.jpg',
+      front: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-front.jpg',
+      back: '/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-back.jpg',
+      width: 1800,
+      height: 599,
+      faceWidth: 1024,
+      faceHeight: 682,
+    },
+    heading: {
+      es: 'Ficha Hard Times, c. 1835 — HT-181 / Low-300',
+      en: 'Hard Times token, c. 1835 — HT-181 / Low-300',
+    },
+    title: {
+      es: 'Ficha Hard Times, c. 1835 · HT-181 / Low-300',
+      en: 'Hard Times token, c. 1835 · HT-181 / Low-300',
+    },
+    kicker: {
+      es: 'Estados Unidos · exonumia privada',
+      en: 'United States · private exonumia',
+    },
+    lead: {
+      es: 'Ficha publicitaria sin fecha de John J. Adams, fabricante de cepillos en Taunton (Massachusetts), con oficina en Boston. Se atribuye hacia 1835. El anverso lleva un jabalí con «Cash for Bristles». Cobre HT-181 (Low-300). Sin serial y sin encapsular.',
+      en: 'Undated advertising token of John J. Adams, a brush manufacturer in Taunton, Massachusetts, with an office in Boston. It is dated circa 1835 by convention. The obverse carries a boar with “Cash for Bristles.” Copper HT-181 (Low-300). No serial and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es una store card Hard Times, ficha de comercio de John J. Adams, en el módulo de un large cent. Ninguna cara lleva valor facial ni fecha. El anverso, en el orden de Numista, es el jabalí: corre hacia la izquierda sobre una línea de suelo. El cuerpo lleva «Cash for / Bristles.»; arriba, OFFICE / IN BOSTON; abajo, No. 12 / ELM ST. El arco superior lee ALL KINDS OF BRUSHES y el inferior MADE TO ORDER. En este ejemplar el lema del animal está gastado; «Cash for Bristles» es la leyenda del tipo. Orla dentada en las dos caras. El reverso es solo texto: JOHN J. ADAMS No. 11 MAIN ST. y TAUNTON MASS. en el arco; en el centro, MANUFACTURER / OF EVERY / DESCRIPTION OF / BRUSHES, / WHOLESALE / & RETAIL. Este ejemplar es cobre y se cataloga como HT-181. El latón es HT-181A y la plata HT-181B. Sin serial ni cápsula.',
+      en: 'This piece is a Hard Times store card, a trade token of John J. Adams, on the large-cent module. Neither face carries a face value or a date. The obverse, in Numista’s order, is the boar: it runs left above a ground line. The body reads “Cash for / Bristles.”; above, OFFICE / IN BOSTON; below, No. 12 / ELM ST. The upper arc reads ALL KINDS OF BRUSHES and the lower MADE TO ORDER. On this example the motto on the animal is worn; “Cash for Bristles” is the type legend. A toothed border on both faces. The reverse is text only: JOHN J. ADAMS No. 11 MAIN ST. and TAUNTON MASS. on the arc; in the center, MANUFACTURER / OF EVERY / DESCRIPTION OF / BRUSHES, / WHOLESALE / & RETAIL. This example is copper and is catalogued as HT-181. Brass is HT-181A and silver is HT-181B. No serial and no holder.',
+    },
+    history: {
+      es: 'Adams fabricaba cepillos en el n.º 11 de Main Street, Taunton, y tenía oficina en el n.º 12 de Elm Street, Boston. El jabalí anuncia la materia prima: la leyenda ofrece dinero por cerdas, y el reverso vende los cepillos al por mayor, al por menor y por encargo. Low la numeró 300, entre las store cards; Rulau le dio HT-181; el Guide Book de Bowers, W-MA-320-10a. La fecha no está en el cospel. PCGS y la colección Fisher sitúan el tipo en 1835 entre paréntesis, en cobre de 28,5 mm. PCGS no publica tirada ni grabador. Numista N#125438 da 10,5 g como peso de tipo. R-1 describe la variedad de cobre, no un censo de este ejemplar. Existe una pieza plateada fuera de la lista de Rulau; no se atribuye aquí. Sin procedencia en esta ficha.',
+      en: 'Adams made brushes at No. 11 Main Street, Taunton, and kept an office at No. 12 Elm Street, Boston. The boar advertises the raw material: the legend offers cash for bristles, and the reverse sells the brushes wholesale, retail, and to order. Low numbered it 300, among the store cards; Rulau assigned HT-181; Bowers’s Guide Book, W-MA-320-10a. The date is not on the planchet. PCGS and the Fisher collection place the type in 1835 in parentheses, as copper of 28.5 mm. PCGS publishes no mintage or engraver. Numista N#125438 gives 10.5 g as a type weight. R-1 describes the copper variety, not a census of this example. A silvered piece is recorded outside Rulau’s list; it is not assigned here. No provenance is recorded on this page.',
+    },
+    obverseLegend: {
+      es: 'ALL KINDS OF BRUSHES · MADE TO ORDER · OFFICE / IN BOSTON · «Cash for Bristles.» sobre el jabalí · No. 12 / ELM ST.',
+      en: 'ALL KINDS OF BRUSHES · MADE TO ORDER · OFFICE / IN BOSTON · “Cash for Bristles.” on the boar · No. 12 / ELM ST.',
+    },
+    reverseLegend: {
+      es: 'JOHN J. ADAMS No. 11 MAIN ST. · TAUNTON MASS. · MANUFACTURER OF EVERY DESCRIPTION OF BRUSHES, WHOLESALE & RETAIL.',
+      en: 'JOHN J. ADAMS No. 11 MAIN ST. · TAUNTON MASS. · MANUFACTURER OF EVERY DESCRIPTION OF BRUSHES, WHOLESALE & RETAIL.',
+    },
+    frontCaption: {
+      es: 'Anverso: jabalí hacia la izquierda; «Cash for Bristles»; oficina en Boston, n.º 12 de Elm Street.',
+      en: 'Obverse: boar facing left; “Cash for Bristles”; Boston office, No. 12 Elm Street.',
+    },
+    backCaption: {
+      es: 'Reverso: John J. Adams, n.º 11 de Main Street, Taunton; cepillos al por mayor y al por menor.',
+      en: 'Reverse: John J. Adams, No. 11 Main Street, Taunton; brushes wholesale and retail.',
+    },
+    scarcity: {
+      es: 'R-1 (cobre HT-181): rareza de tipo, no una tirada. PCGS cataloga el metal como cobre. El latón es HT-181A y la plata HT-181B, números distintos. No se republican precios ni un censo de encapsulados.',
+      en: 'R-1 (copper HT-181): a type rarity, not a mintage. PCGS catalogues the metal as copper. Brass is HT-181A and silver is HT-181B, separate numbers. No prices or slab census are republished.',
+    },
+    certification: {
+      es: 'Sin cápsula y sin grado numérico. Las fotos muestran leyendas exteriores legibles, desgaste en el jabalí y marcas dispersas. No certifican autenticidad ni una limpieza previa. Sin serial.',
+      en: 'No holder and no numerical grade. The photographs show readable outer legends, wear on the boar, and scattered marks. They do not certify authenticity or prior cleaning. No serial.',
+    },
+    sources: [
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1835-token-ht-181-john-j-adams-ma-bn/77447',
+        es: 'PCGS CoinFacts — (1835) HT-181 John J. Adams',
+        en: 'PCGS CoinFacts — (1835) HT-181 John J. Adams',
+        note: {
+          es: 'Metal: cobre. Diámetro de referencia 28,5 mm. Sin tirada ni grabador publicados. No se republican precios.',
+          en: 'Metal: copper. Reference diameter 28.5 mm. No published mintage or engraver. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1835-token-ht-181a-ma/77445',
+        es: 'PCGS CoinFacts — (1835) HT-181A',
+        en: 'PCGS CoinFacts — (1835) HT-181A',
+        note: {
+          es: 'El latón es HT-181A, un número distinto del cobre HT-181. No se atribuye a este ejemplar.',
+          en: 'Brass is HT-181A, a different number from copper HT-181. It is not assigned to this example.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/125438',
+        es: 'Numista — N#125438, Hard Times Token, Taunton',
+        en: 'Numista — N#125438, Hard Times Token, Taunton',
+        note: {
+          es: 'N#125438. Peso de tipo 10,5 g. El anverso es el jabalí. No se republican precios.',
+          en: 'N#125438. Type weight 10.5 g. The obverse is the boar. Prices are not republished.',
+        },
+      },
+      {
+        href: 'http://www.hardtimestokens.com/HT181HT200.html',
+        es: 'Alan S. Fisher — Hard Times Token Collection, HT-181',
+        en: 'Alan S. Fisher — Hard Times Token Collection, HT-181',
+        note: {
+          es: 'Cobre, 28,5 mm, (1835), HT-181, Low-300, R-1, jabalí. Anota además una pieza plateada no listada por Rulau. No es este ejemplar; no se republica un precio.',
+          en: 'Copper, 28.5 mm, (1835), HT-181, Low-300, R-1, wild boar. It also notes a silvered piece unlisted by Rulau. Not this example; no price is republished.',
+        },
+      },
+      {
+        href: 'https://coins.ha.com/itm/hard-times-tokens/-1835-token-john-j-adams-taunton-mass-low-300-ht-181-w-ma-320-10a-r1-ms66-brown-ngc-copper-plain-edge-28-mm/a/60185-91189.s',
+        es: 'Heritage — lote 60185-91189 (comparable de tipo)',
+        en: 'Heritage — lot 60185-91189 (type comparable)',
+        note: {
+          es: 'Low-300, HT-181, W-MA-320-10a, R-1; cobre, canto liso. El título del lote dice 28 mm. No es esta pieza; no se republica el martillo.',
+          en: 'Low-300, HT-181, W-MA-320-10a, R-1; copper, plain edge. The lot title says 28 mm. Not this holding; the hammer is not republished.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-dolar-trump-1776-2026',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/',
     pathEn: '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
@@ -569,7 +714,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Una ficha Hard Times HT-34 de 1837 y un dólar de Filadelfia de 1776–2026, ambos sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
+      'Dos fichas Hard Times sin encapsular —el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835— y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -601,7 +746,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'One unslabbed 1837 Hard Times HT-34 token and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Two unslabbed Hard Times tokens — the 1837 HT-34 and the John J. Adams HT-181 store card, circa 1835 — and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

@@ -173,6 +173,7 @@ export const additions: Holding[] = [
   { id: 'us-frn-1934a-10-philadelphia-c46924254', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934c-10-kansas-city-j55894000', kind: 'banknote', country: 'US' },
   { id: 'co-1921-2-centavos-lazareto', kind: 'coin', country: 'CO' },
+  { id: 'us-c1835-ht-181-john-j-adams', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -273,6 +274,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-frn-1934a-10-philadelphia-fr2006c' },
   { id: 'us-frn-1934c-10-kansas-city-fr2008j' },
   { id: 'co-1921-2-centavos-lazareto-km-l10' },
+  { id: 'us-c1835-ht-181-low-300' },
 ];
 
 export type CollectionStats = {

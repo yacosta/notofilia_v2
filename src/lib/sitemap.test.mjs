@@ -232,6 +232,10 @@ describe('sitemap coverage for United States numismatics', () => {
       '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/', 'en'),
+      '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
