@@ -171,6 +171,7 @@ export const additions: Holding[] = [
   { id: 'us-sc-1935a-hawaii-s40499058c', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-hawaii-20-l86654132a', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-10-philadelphia-c46924254', kind: 'banknote', country: 'US' },
+  { id: 'us-frn-1934c-10-kansas-city-j55894000', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -269,6 +270,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-sc-1935a-hawaii-fr2300' },
   { id: 'us-frn-1934a-hawaii-fr2305' },
   { id: 'us-frn-1934a-10-philadelphia-fr2006c' },
+  { id: 'us-frn-1934c-10-kansas-city-fr2008j' },
 ];
 
 export type CollectionStats = {

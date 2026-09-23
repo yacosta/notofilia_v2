@@ -260,8 +260,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos tipos de papel: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco de distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. Los primeros son de tamaño grande; la serie 1928, entregada en 1929, abre el formato pequeño que documentan las fichas de 1934 de esta vitrina. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia (C / 3), serial C46924254A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 20 dólares HAWAII serie 1934 A de San Francisco (L / 12), Fr. 2305, serial L86654132A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two kinds of paper: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. The first issues are large-size; Series 1928, released in 1929, opens the small format that the 1934 note pages in this case document. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934A Philadelphia (C / 3) $10, serial C46924254A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 1934A San Francisco (L / 12) HAWAII $20, Fr. 2305, serial L86654132A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos tipos de papel: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco de distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. Los primeros son de tamaño grande; la serie 1928, entregada en 1929, abre el formato pequeño que documentan las fichas de 1934 de esta vitrina. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia (C / 3), serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City (J / 10), serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 20 dólares HAWAII serie 1934 A de San Francisco (L / 12), Fr. 2305, serial L86654132A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two kinds of paper: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. The first issues are large-size; Series 1928, released in 1929, opens the small format that the 1934 note pages in this case document. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934A Philadelphia (C / 3) $10, serial C46924254A, the Series 1934C Kansas City (J / 10) $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 1934A San Francisco (L / 12) HAWAII $20, Fr. 2305, serial L86654132A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -401,7 +401,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -427,7 +427,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -1402,6 +1402,7 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934a-chicago'
   | '10-dolares-serie-1934a-cleveland'
   | '10-dolares-serie-1934a-filadelfia'
+  | '10-dolares-serie-1934c-kansas-city'
   | '10-dolares-serie-1934d-richmond'
   | '500-dolares-serie-1934a-nueva-york'
   | '1000-dolares-serie-1934a-nueva-york'
@@ -3079,6 +3080,153 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'La letra del sello y del serial, con el numeral de distrito, identifica el banco de la Reserva. C / 3 es Filadelfia.',
           en: 'The letter in the seal and serial, with the district numeral, identifies the Federal Reserve Bank. C / 3 is Philadelphia.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-serie-1934c-kansas-city',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
+    pathEn: '/collection/united-states/10-dollars-series-1934c-kansas-city/',
+    pick: 'P#430Dc · Fr. 2008-J',
+    serial: 'J55894000A',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y John W. Snyder (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and John W. Snyder (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Tipo común de cara ancha del distrito de Kansas City. La serie 1934 C es la cuarta de las cinco emisiones 1934–1934D. John W. Snyder fue secretario del Tesoro de 1946 a 1953, de modo que la serie impresa no fecha la fabricación de J55894000A. Esta ficha no inventa una tirada por bloque.',
+      en: 'A common wide-face Kansas City type. Series 1934C is the fourth of the five 1934–1934D issues. John W. Snyder was Secretary of the Treasury from 1946 to 1953, so the printed series does not date the manufacture of J55894000A. This record does not invent a printage by block.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-back.jpg',
+      width: 1024,
+      height: 682,
+    },
+    title: {
+      es: '10 dólares · Serie 1934 C · Kansas City',
+      en: '$10 · Series 1934C · Kansas City',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Hamilton y sello verde del Tesoro; reverso con el edificio del Tesoro. Distrito J / 10. Serie 1934 C, cara ancha, serial J55894000A.',
+      en: 'Face with Hamilton and a green Treasury seal; back with the Treasury building. District J / 10. Series 1934C, wide face, serial J55894000A.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1934 C (Pick 430Dc, Friedberg 2008-J) es un Federal Reserve Note de tamaño pequeño del distrito de Kansas City: sello circular con la J, el 10 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF KANSAS CITY MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Alexander Hamilton en óvalo y, a la derecha, el sello del Tesoro sobre la palabra TEN. Las firmas son las de W. A. Julian y John W. Snyder. El texto de curso legal promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. La marca de plancha J73 —letra de posición J y plancha de anverso 73— queda abajo a la derecha. El reverso, en verde, muestra el edificio del Tesoro en Washington, D.C., con la leyenda «U.S. TREASURY», peatones y un automóvil de entreguerras frente a la fachada; el número de plancha 1177 queda a la derecha de la viñeta. El lema «IN GOD WE TRUST» aún no figura. Las medidas de catálogo del tipo son 156 × 66 mm; no son una medición de este ejemplar. El soporte del tipo es el papel de algodón y lino de la moneda estadounidense, con fibras de seguridad; esta ficha no presenta un recuento de fibras de la pieza. Esta pieza de la colección, circulada y sin encapsular, lleva el serial J55894000A (bloque J–A, sin estrella). La plancha 73 cae fuera de las únicas cuatro planchas de cara estrecha de la 1934 C (86, 87, 88 y 89), hechas solo para Kansas City, de modo que el ejemplar es la variedad de cara ancha: «ancha» nombra el grabado del anverso, no el ancho del papel. Las fotografías, realzadas, muestran dobleces que se cruzan, tono, esquinas reblandecidas y desgaste en los bordes; no fijan un grado. Las otras fichas del 10 dólares de la Reserva son piezas distintas: Chicago 1934, serial G30986728A; Chicago 1934 A, serial G74025286A; Cleveland 1934 A, serial D78652996A; Filadelfia 1934 A, serial C46924254A; Richmond 1934 D, serial E60822246B. Las distinguen la letra de serie C, el distrito J / 10, las firmas Julian–Snyder y este serial.',
+      en: 'The Series 1934C $10 (Pick 430Dc, Friedberg 2008-J) is a small-size Federal Reserve Note of the Kansas City district: a circular seal with J, 10s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF KANSAS CITY MISSOURI.” The black face with green seal and serials carries Alexander Hamilton in an oval and, at right, the Treasury seal over TEN. The signatures are W. A. Julian and John W. Snyder. The legal-tender clause promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. Plate marking J73 — position letter J and face plate 73 — sits at lower right. The green back shows the Treasury building in Washington, D.C., with the caption “U.S. TREASURY,” pedestrians, and an interwar automobile before the façade; plate number 1177 sits to the right of the vignette. The motto “IN GOD WE TRUST” is not yet present. Catalog dimensions for the type are 156 × 66 mm; they are not a measurement of this example. The type is printed on United States cotton-and-linen currency paper with security fibers; this record does not offer a fiber count of the piece. This collection piece, circulated and unslabbed, is serial J55894000A (J–A block, no star). Plate 73 falls outside the only four Series 1934C narrow-face plates (86, 87, 88, and 89), made for Kansas City alone, so the example is the wide-face variety: “wide” names the engraved face, not the width of the paper. The enhanced photographs show crossing folds, toning, softened corners, and edge wear; they do not fix a grade. The other Reserve $10 note pages are different pieces: Chicago 1934, serial G30986728A; Chicago 1934A, serial G74025286A; Cleveland 1934A, serial D78652996A; Philadelphia 1934A, serial C46924254A; Richmond 1934D, serial E60822246B. The series letter C, district J / 10, the Julian–Snyder signatures, and this serial distinguish them.',
+    },
+    history: [
+      {
+        es: 'La serie 1934 C del 10 dólares conserva el grabado pequeño de Hamilton y cambia el par de firmas a Julian–Snyder. El Bank Note Museum la numera P-430Dc, dentro del grupo de sello verde oscuro, para los doce distritos. John W. Snyder ocupó la secretaría del Tesoro de 1946 a 1953: la serie impresa 1934 C es la designación de la emisión, no el año en que se fabricó J55894000A. Las fotografías no fijan la fecha de impresión de este ejemplar. Kansas City es el distrito J / 10. El bloque J–A no es un reemplazo con estrella ni un HAWAII. El lema «IN GOD WE TRUST» aún no figura en el reverso.',
+        en: 'Series 1934C $10 notes keep the small Hamilton engraving and change the signature pair to Julian–Snyder. The Bank Note Museum numbers the type P-430Dc, in the dark-green seal group, for all twelve districts. John W. Snyder was Secretary of the Treasury from 1946 to 1953: printed Series 1934C is the issue designation, not the year J55894000A was made. The photographs do not fix the printing date of this example. Kansas City is district J / 10. The J–A block is neither a star replacement nor a HAWAII note. The motto “IN GOD WE TRUST” is not yet on the back.',
+      },
+      {
+        es: 'En diciembre de 1949 el BEP introdujo la cara estrecha del 10 dólares: el marco del anverso se acerca un poco al diseño interior. The Paper Money Project registra que, en la serie 1934 C, solo se hicieron cuatro planchas de cara estrecha, las 86 a 89, y solo para Kansas City. El resto de los 10 dólares FRN de 1934 C se imprimió con planchas de cara ancha, el diseño usado hasta entonces en el 10 dólares de tamaño pequeño. La plancha 73 de esta pieza es, por tanto, cara ancha. Greysheet numera el tipo de Kansas City como Fr. 2008-J. Esta ficha no inventa una tirada que separe cara ancha y cara estrecha.',
+        en: 'In December 1949 the BEP introduced the $10 narrow face: the face frame sits slightly closer to the interior design. The Paper Money Project records that Series 1934C used only four narrow-face plates, 86 through 89, and only for Kansas City. The rest of the 1934C $10 FRNs were printed from wide-face plates, the design used on small-size $10 notes until then. Face plate 73 on this piece is therefore wide face. Greysheet numbers the Kansas City type Fr. 2008-J. This record does not invent a printage that splits wide face from narrow face.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 C',
+      en: 'Series 1934C',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 1934 C, distrito de Kansas City, serial J55894000A: Hamilton, sello verde del Tesoro y plancha J73, cara ancha.',
+      en: 'Face of the Series 1934C $10, Kansas City district, serial J55894000A: Hamilton, the green Treasury seal, and plate J73, wide face.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 1934 C: edificio del Tesoro, leyenda U.S. TREASURY y plancha 1177. Sin lema IN GOD WE TRUST.',
+      en: 'Back of the Series 1934C $10: the Treasury building, the U.S. TREASURY caption, and plate 1177. No IN GOD WE TRUST motto.',
+    },
+    scarcity: {
+      es: 'La serie 1934 C del 10 dólares —firmas Julian–Snyder, sello verde oscuro, los doce distritos— es papel de la Reserva de la posguerra. El Bank Note Museum la numera P-430Dc. Fr. 2008-J cubre Kansas City. La cara ancha es la emisión ordinaria; la variedad que el censo separa es la cara estrecha de Kansas City, planchas 86–89. Esta pieza, plancha 73, es cara ancha. El tipo corriente es común en estados medios; las claves son los reemplazos con estrella, la cara estrecha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934C $10 notes — Julian–Snyder signatures, dark-green seal, all twelve districts — were postwar Reserve paper. The Bank Note Museum numbers the type P-430Dc. Fr. 2008-J is Kansas City. The wide face is the ordinary issue; the variety the census sets apart is the Kansas City narrow face, plates 86–89. This piece, plate 73, is wide face. The ordinary type is common in mid grades; the keys are star replacements, the narrow face, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial J55894000A. La pieza no está encapsulada y no lleva número de certificado. Las fotografías realzadas no bastan para un grado firme.',
+      en: 'A PMG or PCGS census for serial J55894000A has not been independently verified. The note is unslabbed and carries no certificate number. The enhanced photographs are not enough for a firm grade.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada). Dobleces, tono y desgaste en las esquinas, visibles en fotografía realzada.',
+      en: 'Circulated, unslabbed (private collection). Folds, toning, and corner wear, visible in an enhanced photograph.',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0430D2.htm',
+        es: 'Bank Note Museum — P-430D, 10 dólares Federal Reserve Note, series 1934–1934D',
+        en: 'Bank Note Museum — P-430D, Series 1934–1934D $10 Federal Reserve Note',
+        note: {
+          es: '430Dc: serie 1934 C, firmas Julian y Snyder; distrito J = Kansas City; sello verde oscuro.',
+          en: '430Dc: Series 1934C, Julian and Snyder signatures; district J = Kansas City; dark-green seal.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn-narrow',
+        es: 'The Paper Money Project — 10 dólares FRN de 1934 C, cara estrecha',
+        en: 'The Paper Money Project — Series 1934C $10 FRN, narrow face',
+        note: {
+          es: 'Cuatro planchas de cara estrecha, 86–89, solo Kansas City, desde diciembre de 1949. El resto de la 1934 C es cara ancha. La plancha 73 es cara ancha.',
+          en: 'Four narrow-face plates, 86–89, Kansas City only, from December 1949. The rest of Series 1934C is wide face. Plate 73 is wide face.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn',
+        es: 'The Paper Money Project — Federal Reserve Notes de 10 dólares, serie 1934',
+        en: 'The Paper Money Project — Series 1934 $10 Federal Reserve Notes',
+        note: {
+          es: 'Cinco series (1934–1934D). La cara estrecha de la 1934 C se limita a Kansas City, planchas 86–89.',
+          en: 'Five series (1934–1934D). The 1934C narrow face is limited to Kansas City, plates 86–89.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-2008j-1934c-ten-dollar-federal-reserve-note-small-size-united-states-currency/gsid/63468',
+        es: 'Greysheet — Fr. 2008-J, 1934C $10 Federal Reserve Note, Kansas City',
+        en: 'Greysheet — Fr. 2008-J, 1934C $10 Federal Reserve Note, Kansas City',
+        note: {
+          es: 'Tipo de tamaño pequeño, serie 1934 C, distrito de Kansas City.',
+          en: 'Small-size type, Series 1934C, Kansas City district.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202481.html',
+        es: 'Numista — N# 202481, 10 dólares, Federal Reserve Note, TEN grande',
+        en: 'Numista — N# 202481, $10 Federal Reserve Note, large TEN',
+        note: {
+          es: 'Serie 1934 C, firmas Julian y Snyder, P# 430Dc. Medidas de catálogo 156 × 66 mm.',
+          en: 'Series 1934C, Julian and Snyder signatures, P# 430Dc. Catalog size 156 × 66 mm.',
+        },
+      },
+      {
+        href: 'https://home.treasury.gov/about/history/prior-secretaries/john-w-snyder-1946-1953',
+        es: 'Departamento del Tesoro — John W. Snyder (1946–1953)',
+        en: 'U.S. Department of the Treasury — John W. Snyder (1946–1953)',
+        note: {
+          es: 'Snyder fue secretario del Tesoro de 1946 a 1953. La serie impresa 1934 C no es el año de fabricación.',
+          en: 'Snyder was Secretary of the Treasury from 1946 to 1953. Printed Series 1934C is not the year of manufacture.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/10',
+        es: 'U.S. Currency Education Program — 10 dólares',
+        en: 'U.S. Currency Education Program — $10',
+        note: {
+          es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
+          en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/bank-note-identifiers',
+        es: 'U.S. Currency Education Program — identificadores del billete',
+        en: 'U.S. Currency Education Program — bank note identifiers',
+        note: {
+          es: 'La letra del sello y del serial, con el numeral de distrito, identifica el banco de la Reserva. J / 10 es Kansas City.',
+          en: 'The letter in the seal and serial, with the district numeral, identifies the Federal Reserve Bank. J / 10 is Kansas City.',
         },
       },
     ],
