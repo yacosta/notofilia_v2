@@ -46,6 +46,8 @@ describe('Lazaretto essay and the 1921 2 centavos', () => {
 
   it('renders the holding card and both back links from data, not component literals', () => {
     assert.match(pageSource, /LAZARETTO_1921_HOLDING_ID/);
+    assert.match(pageSource, /size="compact"/);
+    assert.match(pageSource, /imageClass="object-\[50%_40%\]"/);
     assert.match(pageSource, /CATALOG_PIECE_GRID/);
     assert.match(pageSource, /holdingHref/);
     assert.match(pageSource, /t\.holdingCta/);
