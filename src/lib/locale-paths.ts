@@ -73,6 +73,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/10-dollars-series-1934a-philadelphia/'],
   },
   {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
+    en: '/collection/united-states/10-dollars-series-1934c-kansas-city/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934c-kansas-city/'],
+  },
+  {
     es: '/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
     en: '/collection/united-states/10-dollars-series-1934d-richmond/',
     aliases: ['/coleccion/united-states/10-dollars-series-1934d-richmond/'],
@@ -466,6 +471,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/',
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
     '/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/',
     '/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/',
@@ -485,6 +491,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/10-dollars-series-1934a-chicago/',
     '/en/coleccion/united-states/10-dollars-series-1934a-cleveland/',
     '/en/coleccion/united-states/10-dollars-series-1934a-philadelphia/',
+    '/en/coleccion/united-states/10-dollars-series-1934c-kansas-city/',
     '/en/coleccion/united-states/10-dollars-series-1934d-richmond/',
     '/en/coleccion/united-states/1000-dollars-series-1934a-new-york/',
     '/en/coleccion/united-states/500-dollars-series-1934a-new-york/',
