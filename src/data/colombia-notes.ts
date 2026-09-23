@@ -11,8 +11,7 @@ export type ColombiaNoteId =
   | 'medio-peso-oro-1953'
   | '1-peso-oro-1954'
   | '1-peso-oro-1959'
-  | '1-peso-oro-1973'
-  | '1-peso-oro-1974'
+  | '1-peso-oro-1959-1977'
   | '2-pesos-oro-1944'
   | '2-pesos-oro-1977'
   | '10-pesos-oro-1943'
@@ -25,6 +24,7 @@ export type ColombiaNoteId =
   | '50-pesos-oro-1974'
   | '50-pesos-oro-1984'
   | '100-pesos-oro-1980'
+  | '200-pesos-oro-1989'
   | '1000-pesos-oro-1979'
   | '2000-pesos-oro-1983'
   | '5000-pesos-oro-1993'
@@ -396,17 +396,21 @@ export const colombiaNotes: ColombiaNote[] = [
       es: 'Colombia · Banco Nacional · Cédula departamental',
       en: 'Colombia · Banco Nacional · Departmental cédula',
     },
+    historyHeading: {
+      es: 'Tesorería y banca libre',
+      en: 'Treasury and free banking',
+    },
     lead: {
       es: 'Cédula representativa de un peso del Departamento del Tolima: República de Colombia, Ibagué, septiembre de 1901, Serie D, serial N.º 060.416. Hernández (8.ª ed., 2023) numera el un peso tipográfico del departamento —solo texto en el anverso— como Cód. 1242. Esta ficha es el ejemplar 060416, en funda, sin encapsular.',
       en: 'A one-peso cédula representativa of the Departamento del Tolima: Republic of Colombia, Ibagué, September 1901, Series D, serial N.º 060.416. Hernández (8th ed., 2023) numbers the department’s typeset one-peso — text only on the face — as Cód. 1242. This record is serial 060416, in a sleeve, unslabbed.',
     },
     description: {
-      es: 'En la Guerra de los Mil Días (1899–1902) las tesorerías departamentales emitieron papel propio cuando el enlace con Bogotá se cortó. El Boletín Numismático 114 de José Arcelio Gómez (15 de agosto de 2012) sitúa las emisiones del Tolima entre 1900 y 1902, impresas en papeles comunes y a una sola tinta: diez, veinte y cincuenta centavos, y un peso. Hernández (8.ª ed., 2023) lista el papel tipográfico del departamento como Cód. 1239–1243; el un peso —«solo texto en el anverso»— es Cód. 1242. Las filas vecinas de esa tabla llevan fechas de julio de 1900; la fecha impresa en esta pieza es «Ibagué, Septiembre de 1901.» No se asigna aquí un Pick único: Gómez cita para el un peso del Tolima los números 1169, 1173, 1181 y 1191, sin emparejar esta Serie D ni este serial a uno de ellos. Numismondo agrupa las emisiones departamentales bajo P.S1050 y siguientes, con imágenes pendientes. Numista no lista un billete del Estado o Departamento del Tolima —solo un ensayo de 2 centavos de 1890 (N# 281840)—. El extracto de Heritage de esta colección no registra lotes del Tolima. El anverso, en negro sobre papel tostado, lee «REPUBLICA DE COLOMBIA» y «DEPARTAMENTO DEL TOLIMA», el tipo «Cédula representativa.», el valor «VALE UN PESO» y, abajo, «Ibagué, Septiembre de 1901.» El serial «N.º 060.416» va arriba a la izquierda; «Serie D», arriba a la derecha. El marco ornamental repite «UNPESO». Un sello circular rojizo, ya pálido, cubre en parte el encabezado. El reverso es papel tan envejecido con un gran sello circular rojo, manchas, pliegues y un manuscrito tenue a la izquierda. No hay firmas impresas ni pie de imprenta. No debe confundirse con el Banco del Tolima de Neiva (hacia 1881–1882), ni con las cédulas hipotecarias de bancos privados, ni con el un peso de tesorería de Antioquia (Pick S1065 y afines). Esta ficha reúne las dos caras de la misma pieza, en funda transparente, muy circulada, sin encapsular.',
-      en: 'In the Thousand Days’ War (1899–1902) departmental treasuries issued their own paper when the link to Bogotá failed. José Arcelio Gómez’s Boletín Numismático 114 (15 August 2012) places Tolima’s issues between 1900 and 1902, printed on ordinary papers in a single ink: ten, twenty, and fifty centavos, and one peso. Hernández (8th ed., 2023) lists the department’s typeset paper as Cód. 1239–1243; the one-peso — “text only on the face” — is Cód. 1242. Neighbouring rows in that table carry July 1900 dates; the date printed on this piece is “Ibagué, Septiembre de 1901.” No unique Pick is assigned here: Gómez cites 1169, 1173, 1181, and 1191 for Tolima one-peso issues, without matching this Series D or this serial to one of them. Numismondo groups departmental issues under P.S1050 and later, with images still needed. Numista lists no banknote for the State or Departamento del Tolima — only an 1890 2-centavo pattern (N# 281840). This collection’s Heritage extract records no Tolima lots. The face, black on browned paper, reads “REPUBLICA DE COLOMBIA” and “DEPARTAMENTO DEL TOLIMA,” the type “Cédula representativa.,” the value “VALE UN PESO,” and, below, “Ibagué, Septiembre de 1901.” Serial “N.º 060.416” sits at upper left; “Serie D” at upper right. The ornamental frame repeats “UNPESO.” A faded reddish circular stamp partly covers the heading. The back is aged tan paper with a large bright-red circular seal, stains, fold lines, and faint manuscript at left. There are no printed signatures and no printer’s imprint. It should not be confused with the Banco del Tolima of Neiva (about 1881–1882), with private-bank mortgage cédulas, or with Antioquia treasury one-peso notes (Pick S1065 and kin). This record gathers both sides of the same heavily circulated note, in a clear sleeve, unslabbed.',
+      es: 'En la Guerra de los Mil Días (1899–1902) las tesorerías departamentales emitieron papel propio cuando el enlace con Bogotá se cortó. El Boletín Numismático 114 de José Arcelio Gómez (15 de agosto de 2012) sitúa las emisiones del Tolima entre 1900 y 1902, impresas en papeles comunes y a una sola tinta: diez, veinte y cincuenta centavos, y un peso. Hernández (8.ª ed., 2023) lista el papel tipográfico del departamento como Cód. 1239–1243; el un peso —«solo texto en el anverso»— es Cód. 1242. Las filas vecinas de esa tabla llevan fechas de julio de 1900; la fecha impresa en esta pieza es «Ibagué, Septiembre de 1901.» No se asigna aquí un Pick único: Gómez cita para el un peso del Tolima los números 1169, 1173, 1181 y 1191, sin emparejar esta Serie D ni este serial a uno de ellos. Numismondo agrupa las emisiones departamentales bajo P.S1050 y siguientes, con imágenes pendientes. Numista no lista un billete del Estado o Departamento del Tolima —solo un ensayo de 2 centavos de 1890 (N# 281840)—. El extracto de Heritage de esta colección no registra lotes del Tolima. El anverso, en negro sobre papel tostado, lee «REPUBLICA DE COLOMBIA» y «DEPARTAMENTO DEL TOLIMA», el tipo «Cédula representativa.», el valor «VALE UN PESO» y, abajo, «Ibagué, Septiembre de 1901.» El serial «N.º 060.416» va arriba a la izquierda; «Serie D», arriba a la derecha. El marco ornamental repite «UNPESO». Un sello circular rojizo, ya pálido, cubre en parte el encabezado. El reverso es papel tan envejecido con un gran sello circular rojo, manchas, pliegues y un manuscrito tenue a la izquierda. No hay firmas impresas ni pie de imprenta. No debe confundirse con el Banco del Tolima de Neiva (escritura de 23 de junio de 1881; capital autorizado 200.000 pesos; liquidación antes de 1905), ni con las cédulas hipotecarias de bancos privados, ni con el un peso de tesorería de Antioquia (Pick S1065 y afines). Esta ficha reúne las dos caras de la misma pieza, en funda transparente, muy circulada, sin encapsular.',
+      en: 'In the Thousand Days’ War (1899–1902) departmental treasuries issued their own paper when the link to Bogotá failed. José Arcelio Gómez’s Boletín Numismático 114 (15 August 2012) places Tolima’s issues between 1900 and 1902, printed on ordinary papers in a single ink: ten, twenty, and fifty centavos, and one peso. Hernández (8th ed., 2023) lists the department’s typeset paper as Cód. 1239–1243; the one-peso — “text only on the face” — is Cód. 1242. Neighbouring rows in that table carry July 1900 dates; the date printed on this piece is “Ibagué, Septiembre de 1901.” No unique Pick is assigned here: Gómez cites 1169, 1173, 1181, and 1191 for Tolima one-peso issues, without matching this Series D or this serial to one of them. Numismondo groups departmental issues under P.S1050 and later, with images still needed. Numista lists no banknote for the State or Departamento del Tolima — only an 1890 2-centavo pattern (N# 281840). This collection’s Heritage extract records no Tolima lots. The face, black on browned paper, reads “REPUBLICA DE COLOMBIA” and “DEPARTAMENTO DEL TOLIMA,” the type “Cédula representativa.,” the value “VALE UN PESO,” and, below, “Ibagué, Septiembre de 1901.” Serial “N.º 060.416” sits at upper left; “Serie D” at upper right. The ornamental frame repeats “UNPESO.” A faded reddish circular stamp partly covers the heading. The back is aged tan paper with a large bright-red circular seal, stains, fold lines, and faint manuscript at left. There are no printed signatures and no printer’s imprint. It should not be confused with the Banco del Tolima of Neiva (deed of 23 June 1881; authorized capital 200,000 pesos; liquidated before 1905), with private-bank mortgage cédulas, or with Antioquia treasury one-peso notes (Pick S1065 and kin). This record gathers both sides of the same heavily circulated note, in a clear sleeve, unslabbed.',
     },
     history: {
-      es: 'Tras liquidarse el Banco Nacional (Ley 70 de 1894; cierre que Astrid Romero sitúa el 1.º de enero de 1896), la Guerra de los Mil Días volvió a llenar el país de papel sin respaldo. El gobierno y los mandos regionales imprimieron; el Museo Casa de Moneda registra billetes del Gobierno Provisional de Ocaña (1900) y resellos del Nacional sobre papel privado. El Tolima, aislado en el centro del país, recurrió a su tesorería: Gómez describe esas cédulas como emisiones locales, raras, de una sola tinta. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro. Esta pieza —un peso, Serie D, serial 060416, Ibagué, septiembre de 1901— es un superviviente de esa inflación, no un billete del Banco de la República ni de la banca libre de los años 1870–1880.',
-      en: 'After the Banco Nacional was wound up (Law 70 of 1894; a closure Astrid Romero places on 1 January 1896), the Thousand Days’ War again filled the country with unbacked paper. The government and regional commanders printed; the Casa de Moneda Museum records Gobierno Provisional notes from Ocaña (1900) and Nacional overstamps on private paper. Tolima, isolated in the centre of the country, turned to its treasury: Gómez describes those cédulas as local, scarce, single-ink issues. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso. This piece — one peso, Series D, serial 060416, Ibagué, September 1901 — is a survivor of that inflation, not a Banco de la República note and not free-banking paper of the 1870s–1880s.',
+      es: 'Tras liquidarse el Banco Nacional (Ley 70 de 1894; cierre que Astrid Romero sitúa el 1.º de enero de 1896), la Guerra de los Mil Días volvió a llenar el país de papel sin respaldo. El gobierno y los mandos regionales imprimieron; el Museo Casa de Moneda registra billetes del Gobierno Provisional de Ocaña (1900) y resellos del Nacional sobre papel privado. El Tolima, aislado en el centro del país, recurrió a su tesorería: Gómez describe esas cédulas como emisiones locales, raras, de una sola tinta. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro. Esta pieza —un peso, Serie D, serial 060416, Ibagué, septiembre de 1901— es un superviviente de esa inflación, no un billete del Banco de la República ni del Banco del Tolima. Ese banco privado de banca libre tuvo sede en Neiva, no en Ibagué. En el siglo XIX el Estado Soberano del Tolima abarcaba el territorio que hoy es Huila; Neiva era nudo comercial sobre el Magdalena. Gómez (Boletín Numismático 83) lee, en un billete de un peso de 1882 de esa casa, la leyenda de constitución: escritura ante el notario principal Nicolás Buendía D., 23 de junio de 1881, n.º 851. Andrade Navia, sobre La Estrella del Tolima, sitúa el anuncio de la creación a inicios de 1882. Meisel y Romero registran la casa en Neiva, 1881, con un capital autorizado de 200.000 pesos y liquidación antes de 1905. Ese capital autorizado no se pagó entero: Andrade documenta 79.600 pesos suscritos al fundarse —el 50 % pagado de entrada— y 120.400 en reserva; cuatro años después, a las puertas de la liquidación, las acciones reservadas seguían en 119.400. Helguera, citando el Historical Dictionary of Colombia de Davis (1993), sitúa en 1881 cuarenta y dos bancos en el país: el del Tolima fue uno de ellos, no un caso aislado. En 1883 —no en 1881— La Estrella del Tolima (n.º 48) avisaba al comercio que el banco compraba letras de cambio de forma permanente sobre Bogotá y Honda: descuento mercantil, distinto del papel de tesorería de 1901. Gómez registra un billete de un peso de 1882 fechado en Neiva (serial 00,836, Litografía D. Paredes) y cita el Pick 859 para un diez pesos de 1882; esta ficha no es esa emisión. El Banco del Tolima no se fusionó con el Banco del Huila, el Banco Social del Tolima, el Banco del Cauca ni el Banco de Santander: esas fueron otras casas —el Social del Tolima nació en Ibagué en 1917; el de Huila, en Neiva en 1919— y las adquirió el Banco de Bogotá entre 1925 y 1928.',
+      en: 'After the Banco Nacional was wound up (Law 70 of 1894; a closure Astrid Romero places on 1 January 1896), the Thousand Days’ War again filled the country with unbacked paper. The government and regional commanders printed; the Casa de Moneda Museum records Gobierno Provisional notes from Ocaña (1900) and Nacional overstamps on private paper. Tolima, isolated in the centre of the country, turned to its treasury: Gómez describes those cédulas as local, scarce, single-ink issues. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso. This piece — one peso, Series D, serial 060416, Ibagué, September 1901 — is a survivor of that inflation, not a Banco de la República note and not a Banco del Tolima note. That private free-banking house was seated in Neiva, not Ibagué. In the nineteenth century the Sovereign State of Tolima included the territory that is now Huila; Neiva was a commercial hinge on the Magdalena. Gómez (Boletín Numismático 83) reads on an 1882 one-peso of that bank the constitution legend: a deed before principal notary Nicolás Buendía D., 23 June 1881, no. 851. Andrade Navia, citing La Estrella del Tolima, places the public notice of the founding in early 1882. Meisel and Romero list the house in Neiva, 1881, with an authorized capital of 200,000 pesos and liquidation before 1905. That authorized capital was not fully paid: Andrade records 79,600 pesos subscribed at founding — 50 percent paid in at the start — and 120,400 held in reserve; four years later, on the eve of liquidation, reserved shares still stood at 119,400. Helguera, citing Davis’s Historical Dictionary of Colombia (1993), places forty-two banks in the country by 1881: Tolima’s was one of them, not an isolated case. In 1883 — not 1881 — La Estrella del Tolima (no. 48) advertised that the bank was buying bills of exchange on a standing basis on Bogotá and Honda: mercantile discount, distinct from the 1901 treasury paper. Gómez records an 1882 one-peso dated at Neiva (serial 00,836, Litografía D. Paredes) and cites Pick 859 for an 1882 ten-peso; this record is not that issue. Banco del Tolima did not merge with Banco del Huila, Banco Social del Tolima, Banco del Cauca, or Banco de Santander: those were other houses — Social del Tolima was founded in Ibagué in 1917; Huila in Neiva in 1919 — later acquired by Banco de Bogotá between 1925 and 1928.',
     },
     frontCaption: {
       es: 'Anverso de la cédula representativa de un peso, Cód. 1242: República de Colombia, Departamento del Tolima, VALE UN PESO, Ibagué septiembre de 1901, N.º 060.416, Serie D.',
@@ -448,6 +452,15 @@ export const colombiaNotes: ColombiaNote[] = [
         },
       },
       {
+        href: 'https://www.mascoleccionismo.com/publicaciones/JAG/JAG-083.pdf',
+        es: 'José Arcelio Gómez — Boletín Numismático 83 (Banco del Tolima, Neiva)',
+        en: 'José Arcelio Gómez — Boletín Numismático 83 (Banco del Tolima, Neiva)',
+        note: {
+          es: 'Escritura de constitución ante Nicolás Buendía D., 23 de junio de 1881, n.º 851. Un peso de 1882 fechado en Neiva, serial 00,836, Litografía D. Paredes; Pick 859 para un diez pesos de 1882. No es esta cédula de tesorería de 1901.',
+          en: 'Deed of constitution before Nicolás Buendía D., 23 June 1881, no. 851. An 1882 one-peso dated at Neiva, serial 00,836, Litografía D. Paredes; Pick 859 for an 1882 ten-peso. This is not the 1901 treasury cédula.',
+        },
+      },
+      {
         href: 'http://www.numismondo.net/pm/col/',
         es: 'Numismondo — Índice de papel moneda de Colombia, emisiones departamentales',
         en: 'Numismondo — Colombia paper-money index, departmental issues',
@@ -472,6 +485,51 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: 'Sin billetes listados. El único objeto es el ensayo de 2 centavos de 1890 (N# 281840), no esta cédula.',
           en: 'No banknotes listed. The only object is the 1890 2-centavo pattern (N# 281840), not this cédula.',
+        },
+      },
+      {
+        href: 'https://repositorio.banrep.gov.co/bitstreams/b82e02f1-24fd-41fa-bc0f-bbe70a0d1671/download',
+        es: 'Adolfo Meisel Roca — Los bancos comerciales en la era de la banca libre, 1871–1923',
+        en: 'Adolfo Meisel Roca — Commercial banks in the free-banking era, 1871–1923',
+        note: {
+          es: 'Cuadro de otras regiones: Banco del Tolima, Neiva, 1881, capital 200.000 pesos, liquidación antes de 1905. El Banco Social del Tolima (Ibagué, 1917) y el Banco de Huila (Neiva, 1919) figuran como casas distintas.',
+          en: 'Table of other regions: Banco del Tolima, Neiva, 1881, capital 200,000 pesos, liquidated before 1905. Banco Social del Tolima (Ibagué, 1917) and Banco de Huila (Neiva, 1919) are listed as other houses.',
+        },
+      },
+      {
+        href: 'https://www.interciencia.net/wp-content/uploads/2022/10/02_6886_A_Andrade_Navia_v47n9_9.pdf',
+        es: 'Andrade Navia — La confianza y la banca: crisis de la banca libre en la provincia de Neiva, 1880–1900',
+        en: 'Andrade Navia — Trust and banking: the free-banking crisis in the province of Neiva, 1880–1900',
+        note: {
+          es: 'Capital autorizado 200.000 pesos; 79.600 suscritos al fundarse y 120.400 en reserva; el 50 % pagado de entrada. Anuncio de creación a inicios de 1882 (La Estrella del Tolima).',
+          en: 'Authorized capital 200,000 pesos; 79,600 subscribed at founding and 120,400 held in reserve; 50 percent paid in at the start. Public notice of founding in early 1882 (La Estrella del Tolima).',
+        },
+      },
+      {
+        href: 'https://digitalcollections.library.vanderbilt.edu/islandora/object/islandora%3A10267',
+        es: 'Vanderbilt / colección Helguera — Estatutos del Banco del Tolima (1881)',
+        en: 'Vanderbilt / Helguera collection — Statutes of the Banco del Tolima (1881)',
+        note: {
+          es: 'Folleto de estatutos, 1881. La ficha de la colección cita a Davis (1993): hacia 1881 había cuarenta y dos bancos en el país.',
+          en: 'Statutes pamphlet, 1881. The collection record cites Davis (1993): by 1881 there were forty-two banks in the country.',
+        },
+      },
+      {
+        href: 'http://www.scielo.org.co/scielo.php?pid=S0120-25962024000100049&script=sci_arttext',
+        es: 'María Mercedes Botero — La era del oro y el sector financiero: Antioquia 1850–1886',
+        en: 'María Mercedes Botero — The gold era and the financial sector: Antioquia 1850–1886',
+        note: {
+          es: 'Cita La Estrella del Tolima n.º 48, 1883 (Quintero y Centeno, 2007): el Banco del Tolima avisaba que compraba letras de forma permanente sobre Bogotá y Honda.',
+          en: 'Cites La Estrella del Tolima no. 48, 1883 (Quintero and Centeno, 2007): the bank advertised that it was buying bills of exchange on a standing basis on Bogotá and Honda.',
+        },
+      },
+      {
+        href: 'http://hdl.handle.net/10784/7647',
+        es: 'Mora, Serna y Serna — Las entidades bancarias en Colombia',
+        en: 'Mora, Serna, and Serna — Banking entities in Colombia',
+        note: {
+          es: 'Tabla 5: el Banco de Bogotá adquirió el Banco del Huila (1925), el Banco Social del Tolima (1927), el Banco del Cauca y el Banco de Santander (1928). No es una fusión del Banco del Tolima de 1881.',
+          en: 'Table 5: Banco de Bogotá acquired Banco del Huila (1925), Banco Social del Tolima (1927), Banco del Cauca, and Banco de Santander (1928). This is not a merger of the 1881 Banco del Tolima.',
         },
       },
     ],
@@ -853,9 +911,9 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
-    id: '1-peso-oro-1973',
+    id: '1-peso-oro-1959-1977',
     chapterId: 'banco-de-la-republica',
-    path: `${COLOMBIA_PATH}1-peso-oro-1973/`,
+    path: `${COLOMBIA_PATH}1-peso-oro-1959-1977/`,
     pick: 'P# 404e',
     serial: '26530968',
     signatures: {
@@ -872,16 +930,16 @@ export const colombiaNotes: ColombiaNote[] = [
       back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
     },
     title: {
-      es: '1 peso oro · Banco de la República · 1973',
-      en: '1 peso oro · Banco de la República · 1973',
+      es: '1 peso · Banco de la República · 1959–1977',
+      en: '1 peso · Banco de la República · 1959–1977',
     },
     kicker: {
       es: 'Colombia · Banco de la República · Imprenta de Billetes',
       en: 'Colombia · Banco de la República · Imprenta de Billetes',
     },
     lead: {
-      es: 'Un peso oro de circulación, Pick 404e: serial de ocho dígitos 26530968, 7 de agosto de 1973. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es el 1 peso oro ABNC de 1945 ni el de 1954 (Pick 380).',
-      en: 'A circulating one-peso oro, Pick 404e: eight-digit serial 26530968, 7 August 1973. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1945 or 1954 ABNC 1 peso oro (Pick 380).',
+      es: 'Dos ejemplares del 1 peso Imprenta de Billetes, Pick 404e (Bolívar–Santander / cóndor), tipo 1959–1977: 7 de agosto de 1973 (serial 26530968, Cód. 76) y 7 de agosto de 1974 (serial 47550075, Cód. 79). Cada uno tiene en esta página sus datos de catálogo, la pieza, rareza e impresión, y población.',
+      en: 'Two Imprenta de Billetes one-peso notes, Pick 404e (Bolívar–Santander / condor), 1959–1977 type: 7 August 1973 (serial 26530968, Cód. 76) and 7 August 1974 (serial 47550075, Cód. 79). Each has its own catalog facts, note, scarcity and printage, and population on this page.',
     },
     description: {
       es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA COLOMBIA». Los seriales van en rojo: 26530968, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «7 DE AGOSTO DE 1973»; Numista marca el Cód. 76 con el año punteado «1.973». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; Numista asigna el mismo par (GBR₂, AJG) al Cód. 76; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 78. Tampoco es el Cód. 77 («7 Corto en el mes»). El reverso, en azul y naranja, muestra el cóndor andino sobre una roca, el salto y el nevado, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 76 para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. No es el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
@@ -963,119 +1021,222 @@ export const colombiaNotes: ColombiaNote[] = [
         },
       },
     ],
-  },
-  {
-    id: '1-peso-oro-1974',
-    chapterId: 'banco-de-la-republica',
-    path: `${COLOMBIA_PATH}1-peso-oro-1974/`,
-    pick: 'P# 404e',
-    serial: '47550075',
-    signatures: {
-      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
-      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
-    },
-    printed: {
-      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1974. Formato publicado: 140 × 70 mm. Serial de ocho dígitos, sin letra de serie. González White 2019 lista esta fecha en p. 41 (Bolívar–Santander / cóndor y nevado), con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera el 7 de agosto de 1974 ordinario como Cód. 79 —Numista concuerda Hernández 79, P# 404e y TBB B947r—; la fila siguiente es la reposición con asterisco en el anverso (Cód. 80). El serial 47550075 es un número ordinario de ocho dígitos, fuera de las bandas de asterisco de González White (00.100.108–00.195.207) y del intervalo de reposición del anexo 2 de Hernández (00100108–00198717). El Un Peso Oro de Hernández comienza en 1923 y cierra el 1.º de enero de 1977 (Cód. 81), última fecha antes de las monedas de níquel. El Bank Note Museum numera el tipo 404e en 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974, sin hilo de seguridad; esta fecha es la última del 404e. La tabla BanRep de 1974 registra 47,2 millones de piezas de 1 peso: toda la producción de esa denominación ese año, no la tirada de esta fecha. No es el ejemplar de 1973, serial 26530968 (Cód. 76).',
-      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1974. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1974 as Cód. 79 — Numista concurs Hernández 79, P# 404e, and TBB B947r; the next row is the face asterisk replacement (Cód. 80). Serial 47550075 is an ordinary eight-digit number, outside González White’s asterisk bands (00.100.108–00.195.207) and Hernández’s annex-2 replacement interval (00100108–00198717). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread; this date is the last of 404e. BanRep’s 1974 table records 47.2 million 1-peso notes: all production of that face value that year, not this date’s printage. It is not the 1973 example, serial 26530968 (Cód. 76).',
-    },
-    images: {
-      composite: '/images/catalog/colombia/1-peso-oro-1974-47550075-composite.jpg',
-      front: '/images/catalog/colombia/1-peso-oro-1974-47550075-front.jpg',
-      back: '/images/catalog/colombia/1-peso-oro-1974-47550075-back.jpg',
-    },
-    title: {
-      es: '1 peso oro · Banco de la República · 1974',
-      en: '1 peso oro · Banco de la República · 1974',
-    },
-    kicker: {
-      es: 'Colombia · Banco de la República · Imprenta de Billetes',
-      en: 'Colombia · Banco de la República · Imprenta de Billetes',
-    },
-    lead: {
-      es: 'Un peso oro de circulación, Pick 404e: serial de ocho dígitos 47550075, 7 de agosto de 1974. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es el 1 peso oro de 1973 (serial 26530968) ni los 1 peso oro ABNC de 1945 o 1954 (Pick 380).',
-      en: 'A circulating one-peso oro, Pick 404e: eight-digit serial 47550075, 7 August 1974. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1973 1 peso oro (serial 26530968) nor the 1945 or 1954 ABNC 1 peso oro (Pick 380).',
-    },
-    description: {
-      es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA, COLOMBIA». Los seriales van en rojo anaranjado: 47550075, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «AGOSTO 7 DE 1974». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Numista asigna ese par (GBR₂, AJG) al Cód. 79; Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 80. El reverso, en azul y naranja, muestra el cóndor andino en vuelo, el salto del Tequendama y el paisaje de montaña, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad; el 7 de agosto de 1974 es la última fecha de ese tipo. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 79 y TBB B947r para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. No es el 1 peso oro Imprenta de 1973, serial 26530968 (Cód. 76), ni el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
-      en: 'The Banco de la República printed this one-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959; that plant’s first job was the blue 1-peso (Pick 404). Hernández (8th ed., 2023) lists that Imprenta type from Cód. 45 (12 October 1959) through Cód. 81 (1 January 1977). The face, blue on an orange multicolour underprint, carries at left Simón Bolívar in uniform and at right Francisco de Paula Santander in civilian dress — the reverse of the ABNC Pick 380 order. At center are the figure 1 with the legend “UN PESO ORO” and “BOGOTA, COLOMBIA.” The serials are in reddish orange: 47550075, once at upper right and once at lower left. There is no series letter. The printed date is “AGOSTO 7 DE 1974.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Numista assigns that pair (GBR₂, AJG) to Cód. 79; Banknote World records the same pair on Pick 404e.4 of 20 July 1972; González White places Botero as gerente from 1970 to 1978. There is no asterisk between GERENTE and SECRETARIO: it is not a replacement and not Cód. 80. The back, in blue and orange, shows the Andean condor in flight, Tequendama Falls and a mountain landscape, Liberty’s seal (“BANCO DE LA REPUBLICA - BOGOTA COLOMBIA”), and the figures 1 with “PESO ORO” at each flank. Type 404e, per the Bank Note Museum, covers 1970–1974 without a security thread; 7 August 1974 is the last date of that type. Numista groups the 1959–1977 design under N# 205723 and cites Hernández 79 and TBB B947r for this date. Hernández closes Un Peso Oro on 1 January 1977 (Cód. 81), when the denomination passes to nickel coins. It is not the 1973 Imprenta 1 peso oro, serial 26530968 (Cód. 76), nor the 1945 Series R ABNC 1 peso oro (Pick 380d), nor the 1954 Series HH (Pick 380g), nor the 1953 Boyacá commemorative (Waterlow). This collection piece is shown in a sleeve, unslabbed.',
-    },
-    frontCaption: {
-      es: 'Anverso del 1 peso oro, Pick 404e: Bolívar, Santander, serial 47550075 y fecha 7 de agosto de 1974.',
-      en: 'Face of the 1 peso oro, Pick 404e: Bolívar, Santander, serial 47550075, and the date 7 August 1974.',
-    },
-    backCaption: {
-      es: 'Reverso del 1 peso oro, Pick 404e: cóndor andino, salto del Tequendama, paisaje de montaña y sello de la Libertad.',
-      en: 'Back of the 1 peso oro, Pick 404e: Andean condor, Tequendama Falls, mountain landscape, and Liberty’s seal.',
-    },
-    scarcity: {
-      es: 'González White 2019 (p. 41) cataloga la fecha del 7 de agosto de 1974 en el pliego del 1 peso 1959–1977, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 79 y la reposición con asterisco Cód. 80; el anexo 2 da el intervalo de asterisco 00100108–00198717. El serial 47550075 no cae en ese intervalo ni en las bandas de White (00.100.108–00.195.207). El Un Peso Oro cierra el 1.º de enero de 1977 (Cód. 81), última fecha de la denominación antes de las monedas de níquel. El Bank Note Museum describe el Pick 404e como las fechas 1970–1974 del 1 peso azul de la Imprenta, sin hilo: Bolívar y Santander al anverso, cóndor y Libertad al reverso; el 07.08.1974 es la última fecha del tipo. Numista agrupa el diseño bajo N# 205723, índice de rareza 11, y marca la frecuencia de la fecha 07.08.1974, sin hilo, en un 20 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni el ejemplar de 1973 (serial 26530968). No se publican columnas de precios de Hernández. La tabla BanRep de 1974 (47,2 millones de piezas de 1 peso) es un total de denominación-año, no la tirada de esta fecha.',
-      en: 'González White 2019 (p. 41) lists 7 August 1974 on the 1959–1977 1-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 79 and the asterisk replacement Cód. 80; annex 2 gives the asterisk interval 00100108–00198717. Serial 47550075 sits in neither that interval nor White’s bands (00.100.108–00.195.207). Un Peso Oro closes on 1 January 1977 (Cód. 81), the last date of the denomination before nickel coins. The Bank Note Museum describes Pick 404e as the 1970–1974 dates of the Imprenta’s blue 1-peso, without a thread: Bolívar and Santander on the face, condor and Liberty on the back; 07.08.1974 is the last date of the type. Numista groups the design under N# 205723, rarity index 11, and marks the 07.08.1974 no-thread date’s frequency at 20% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor the 1973 example (serial 26530968). Hernández price columns are not republished. BanRep’s 1974 table (47.2 million 1-peso notes) is a denomination-year total, not this date’s printage.',
-    },
-    population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 47550075. La pieza se presenta en funda, sin encapsular.',
-      en: 'A PMG or PCGS census for serial 47550075 has not been independently verified. The note is shown in a sleeve, unslabbed.',
-    },
-    grade: {
-      es: 'Sin encapsular · en funda',
-      en: 'Unslabbed · in a sleeve',
-    },
-    sources: [
+    pieces: [
       {
-        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0404.htm',
-        es: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
-        en: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
-        note: {
-          es: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974; anverso Bolívar y Santander; reverso cóndor y Libertad; sin hilo de seguridad; el 07.08.1974 cierra el tipo.',
-          en: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974; Bolívar and Santander on the face; condor and Liberty on the back; no security thread; 07.08.1974 closes the type.',
+        id: '1-peso-oro-1973',
+        pick: 'P# 404e',
+        serial: '26530968',
+        signatures: {
+          es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+          en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
         },
+        printed: {
+          es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1973. Formato publicado: 140 × 70 mm. Serial de ocho dígitos, sin letra de serie. González White 2019 lista esta fecha en p. 41 (Bolívar–Santander / cóndor y nevado), con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera el 7 de agosto de 1973 ordinario como Cód. 76 —Numista concuerda Hernández 76, P# 404e, año como «1.973»—; Cód. 77 es la variedad «7 Corto en el mes»; Cód. 78 es la reposición con asterisco en el anverso. El serial 26530968 es un número ordinario de ocho dígitos, fuera de las bandas de asterisco de González White y del intervalo de reposición del anexo 2 de Hernández (00105759–00541728). El Un Peso Oro de Hernández comienza en 1923 y cierra el 1.º de enero de 1977 (Cód. 81), última fecha antes de las monedas de níquel. El Bank Note Museum numera el tipo 404e en 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974, sin hilo de seguridad. La tabla BanRep de 1973 registra 68,3 millones de piezas de 1 peso: toda la producción de esa denominación ese año, no la tirada de esta fecha.',
+          en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1973. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1973 as Cód. 76 — Numista concurs Hernández 76, P# 404e, year as “1.973”; Cód. 77 is the “7 Corto en el mes” variety; Cód. 78 is the face asterisk replacement. Serial 26530968 is an ordinary eight-digit number, outside González White’s asterisk bands and Hernández’s annex-2 replacement interval (00105759–00541728). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread. BanRep’s 1973 table records 68.3 million 1-peso notes: all production of that face value that year, not this date’s printage.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg',
+          front: '/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg',
+          back: '/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg',
+        },
+        title: {
+          es: '1 peso oro · Banco de la República · 1973',
+          en: '1 peso oro · Banco de la República · 1973',
+        },
+        lead: {
+          es: 'Un peso oro de circulación, Pick 404e: serial de ocho dígitos 26530968, 7 de agosto de 1973. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular. No es el 1 peso oro ABNC de 1945 ni el de 1954 (Pick 380).',
+          en: 'A circulating one-peso oro, Pick 404e: eight-digit serial 26530968, 7 August 1973. This record gathers the face and back of the same unslabbed note, in a sleeve. It is not the 1945 or 1954 ABNC 1 peso oro (Pick 380).',
+        },
+        description: {
+          es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA COLOMBIA». Los seriales van en rojo: 26530968, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «7 DE AGOSTO DE 1973»; Numista marca el Cód. 76 con el año punteado «1.973». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; Numista asigna el mismo par (GBR₂, AJG) al Cód. 76; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 78. Tampoco es el Cód. 77 («7 Corto en el mes»). El reverso, en azul y naranja, muestra el cóndor andino sobre una roca, el salto y el nevado, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 76 para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. El ejemplar de 1974, serial 47550075 (Cód. 79), está más abajo en esta ficha. No es el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
+          en: 'The Banco de la República printed this one-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959; that plant’s first job was the blue 1-peso (Pick 404). Hernández (8th ed., 2023) lists that Imprenta type from Cód. 45 (12 October 1959) through Cód. 81 (1 January 1977). The face, blue on an orange multicolour underprint, carries at left Simón Bolívar in uniform and at right Francisco de Paula Santander in civilian dress — the reverse of the ABNC Pick 380 order. At center are the figure 1 with the legend “UN PESO ORO” and “BOGOTA COLOMBIA.” The serials are in red: 26530968, once at upper right and once at lower left. There is no series letter. The printed date is “7 DE AGOSTO DE 1973”; Numista marks Cód. 76 with the dotted year “1.973.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Banknote World records that pair on Pick 404e.4 of 20 July 1972; Numista assigns the same pair (GBR₂, AJG) to Cód. 76; González White places Botero as gerente from 1970 to 1978. There is no asterisk between GERENTE and SECRETARIO: it is not a replacement and not Cód. 78. It is not Cód. 77 (“7 Corto en el mes”) either. The back, in blue and orange, shows the Andean condor on a rock, the falls and the snow peak, Liberty’s seal (“BANCO DE LA REPUBLICA - BOGOTA COLOMBIA”), and the figures 1 with “PESO ORO” at each flank. Type 404e, per the Bank Note Museum, covers 1970–1974 without a security thread. Numista groups the 1959–1977 design under N# 205723 and cites Hernández 76 for this date. Hernández closes Un Peso Oro on 1 January 1977 (Cód. 81), when the denomination passes to nickel coins. The 1974 example, serial 47550075 (Cód. 79), is further down this page. It is not the 1945 Series R ABNC 1 peso oro (Pick 380d), nor the 1954 Series HH (Pick 380g), nor the 1953 Boyacá commemorative (Waterlow). This collection piece is shown in a sleeve, unslabbed.',
+        },
+        frontCaption: {
+          es: 'Anverso del 1 peso oro, Pick 404e: Bolívar, Santander, serial 26530968 y fecha 7 de agosto de 1973.',
+          en: 'Face of the 1 peso oro, Pick 404e: Bolívar, Santander, serial 26530968, and the date 7 August 1973.',
+        },
+        backCaption: {
+          es: 'Reverso del 1 peso oro, Pick 404e: cóndor andino, salto, nevado y sello de la Libertad.',
+          en: 'Back of the 1 peso oro, Pick 404e: Andean condor, falls, snow peak, and Liberty’s seal.',
+        },
+        scarcity: {
+          es: 'González White 2019 (p. 41) cataloga la fecha del 7 de agosto de 1973 en el pliego del 1 peso 1959–1977, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 76, la variedad «7 Corto en el mes» Cód. 77 y la reposición con asterisco Cód. 78; el anexo 2 da el intervalo de asterisco 00105759–00541728. El serial 26530968 no cae en ese intervalo ni en las bandas de White. El Un Peso Oro cierra el 1.º de enero de 1977 (Cód. 81), última fecha de la denominación antes de las monedas de níquel. El Bank Note Museum describe el Pick 404e como las fechas 1970–1974 del 1 peso azul de la Imprenta, sin hilo: Bolívar y Santander al anverso, cóndor y Libertad al reverso. Numista agrupa el diseño bajo N# 205723, índice de rareza 11, y marca la frecuencia de la fecha 07.08.1973, sin hilo, año «1.973», en un 30 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición. No se publican columnas de precios de Hernández. La tabla BanRep de 1973 (68,3 millones de piezas de 1 peso) es un total de denominación-año, no la tirada de esta fecha.',
+          en: 'González White 2019 (p. 41) lists 7 August 1973 on the 1959–1977 1-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 76, the “7 Corto en el mes” variety Cód. 77, and the asterisk replacement Cód. 78; annex 2 gives the asterisk interval 00105759–00541728. Serial 26530968 sits in neither that interval nor White’s bands. Un Peso Oro closes on 1 January 1977 (Cód. 81), the last date of the denomination before nickel coins. The Bank Note Museum describes Pick 404e as the 1970–1974 dates of the Imprenta’s blue 1-peso, without a thread: Bolívar and Santander on the face, condor and Liberty on the back. Numista groups the design under N# 205723, rarity index 11, and marks the 07.08.1973 no-thread “1.973” date’s frequency at 30% among owners of the type. It is neither a proof, a specimen, nor a replacement. Hernández price columns are not republished. BanRep’s 1973 table (68.3 million 1-peso notes) is a denomination-year total, not this date’s printage.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 26530968. La pieza se presenta en funda, sin encapsular.',
+          en: 'A PMG or PCGS census for serial 26530968 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+        },
+        grade: {
+          es: 'Sin encapsular · en funda',
+          en: 'Unslabbed · in a sleeve',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0404.htm',
+            es: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+            en: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+            note: {
+              es: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974; anverso Bolívar y Santander; reverso cóndor y Libertad; sin hilo de seguridad.',
+              en: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974; Bolívar and Santander on the face; condor and Liberty on the back; no security thread.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/catalogue/note205723.html',
+            es: 'Numista — Colombia 1 peso oro, N# 205723',
+            en: 'Numista — Colombia 1 peso oro, N# 205723',
+            note: {
+              es: '07.08.1973: P# 404e; Hernández 76 / Cód. 76; sin hilo de seguridad; año como «1.973»; 140 × 70 mm; Imprenta de Billetes, Bogotá; firmas GBR₂ y AJG; frecuencia 30 % en el tipo; índice de rareza 11.',
+              en: '07.08.1973: P# 404e; Hernández 76 / Cód. 76; no security thread; year as “1.973”; 140 × 70 mm; Imprenta de Billetes, Bogotá; signatures GBR₂ and AJG; 30% frequency within the type; rarity index 11.',
+            },
+          },
+          {
+            href: 'https://www.banknoteworld.org/colombia-1-peso-oro-1972-p-404e-4.html',
+            es: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+            en: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+            note: {
+              es: '20.07.1972; mismo tipo 404e; 140 × 70 mm; Imprenta de Billetes; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
+              en: '20.07.1972; same type 404e; 140 × 70 mm; Imprenta de Billetes; no thread; signatures Germán Botero de los Ríos and Antonio José Gutiérrez.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 1973: 68,3 millones de piezas de 1 peso. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 7 de agosto de 1973.',
+              en: '1973 production: 68.3 million 1-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 7 August 1973.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/node/51381',
+            es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+            en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+            note: {
+              es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404).',
+              en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404).',
+            },
+          },
+          {
+            href: 'https://en.numista.com/L100183',
+            es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+            en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+            note: {
+              es: '8.ª ed. 2023 (Numista L100183). Cód. 76: 7 de agosto de 1973 ordinario (Pick 404e); Cód. 77 «7 Corto en el mes»; Cód. 78 reposición asterisco; el tipo cierra en Cód. 81 (1.º de enero de 1977). Numista no tenía H# previo para N# 205723; el Cód. de 2023 es el número de Hernández. No se publican columnas de precios ni láminas.',
+              en: '8th ed. 2023 (Numista L100183). Cód. 76: ordinary 7 August 1973 (Pick 404e); Cód. 77 “7 Corto en el mes”; Cód. 78 asterisk replacement; the type closes at Cód. 81 (1 January 1977). Numista had no earlier H# for N# 205723; the 2023 Cód. is Hernández’s number. Price columns and plates are not republished.',
+            },
+          },
+        ],
       },
       {
-        href: 'https://en.numista.com/catalogue/note205723.html',
-        es: 'Numista — Colombia 1 peso oro, N# 205723',
-        en: 'Numista — Colombia 1 peso oro, N# 205723',
-        note: {
-          es: '07.08.1974: P# 404e / TBB B947r; Hernández 79 / Cód. 79; sin hilo de seguridad; 140 × 70 mm; Imprenta de Billetes, Bogotá; firmas GBR₂ y AJG; frecuencia 20 % en el tipo; índice de rareza 11.',
-          en: '07.08.1974: P# 404e / TBB B947r; Hernández 79 / Cód. 79; no security thread; 140 × 70 mm; Imprenta de Billetes, Bogotá; signatures GBR₂ and AJG; 20% frequency within the type; rarity index 11.',
+        id: '1-peso-oro-1974',
+        pick: 'P# 404e',
+        serial: '47550075',
+        signatures: {
+          es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+          en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
         },
-      },
-      {
-        href: 'https://www.banknoteworld.org/colombia-1-peso-oro-1972-p-404e-4.html',
-        es: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
-        en: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
-        note: {
-          es: '20.07.1972; mismo tipo 404e; 140 × 70 mm; Imprenta de Billetes; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
-          en: '20.07.1972; same type 404e; 140 × 70 mm; Imprenta de Billetes; no thread; signatures Germán Botero de los Ríos and Antonio José Gutiérrez.',
+        printed: {
+          es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1974. Formato publicado: 140 × 70 mm. Serial de ocho dígitos, sin letra de serie. González White 2019 lista esta fecha en p. 41 (Bolívar–Santander / cóndor y nevado), con filas ordinarias y de reposición asterisco; el extracto mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera el 7 de agosto de 1974 ordinario como Cód. 79 —Numista concuerda Hernández 79, P# 404e y TBB B947r—; la fila siguiente es la reposición con asterisco en el anverso (Cód. 80). El serial 47550075 es un número ordinario de ocho dígitos, fuera de las bandas de asterisco de González White (00.100.108–00.195.207) y del intervalo de reposición del anexo 2 de Hernández (00100108–00198717). El Un Peso Oro de Hernández comienza en 1923 y cierra el 1.º de enero de 1977 (Cód. 81), última fecha antes de las monedas de níquel. El Bank Note Museum numera el tipo 404e en 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974, sin hilo de seguridad; esta fecha es la última del 404e. La tabla BanRep de 1974 registra 47,2 millones de piezas de 1 peso: toda la producción de esa denominación ese año, no la tirada de esta fecha. El ejemplar de 1973, serial 26530968 (Cód. 76), está más arriba en esta ficha.',
+          en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1974. Published size: 140 × 70 mm. Eight-digit serial, no series letter. González White 2019 lists this date on p. 41 (Bolívar–Santander / condor and snow peak), with ordinary and asterisk-replacement rows; the extract jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the ordinary 7 August 1974 as Cód. 79 — Numista concurs Hernández 79, P# 404e, and TBB B947r; the next row is the face asterisk replacement (Cód. 80). Serial 47550075 is an ordinary eight-digit number, outside González White’s asterisk bands (00.100.108–00.195.207) and Hernández’s annex-2 replacement interval (00100108–00198717). Hernández’s Un Peso Oro chapter begins in 1923 and closes on 1 January 1977 (Cód. 81), the last date before nickel coins. The Bank Note Museum numbers type 404e on 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974, without a security thread; this date is the last of 404e. BanRep’s 1974 table records 47.2 million 1-peso notes: all production of that face value that year, not this date’s printage. The 1973 example, serial 26530968 (Cód. 76), is further up this page.',
         },
-      },
-      {
-        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
-        es: 'Banco de la República — Producción y circulación de billetes y monedas',
-        en: 'Banco de la República — Banknote and coin production and circulation',
-        note: {
-          es: 'Producción 1974: 47,2 millones de piezas de 1 peso. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 7 de agosto de 1974.',
-          en: '1974 production: 47.2 million 1-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 7 August 1974.',
+        images: {
+          composite: '/images/catalog/colombia/1-peso-oro-1974-47550075-composite.jpg',
+          front: '/images/catalog/colombia/1-peso-oro-1974-47550075-front.jpg',
+          back: '/images/catalog/colombia/1-peso-oro-1974-47550075-back.jpg',
         },
-      },
-      {
-        href: 'https://www.banrep.gov.co/es/node/51381',
-        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
-        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
-        note: {
-          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404).',
-          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404).',
+        title: {
+          es: '1 peso oro · Banco de la República · 1974',
+          en: '1 peso oro · Banco de la República · 1974',
         },
-      },
-      {
-        href: 'https://en.numista.com/L100183',
-        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
-        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
-        note: {
-          es: '8.ª ed. 2023 (Numista L100183). Cód. 79: 7 de agosto de 1974 ordinario (Pick 404e); Cód. 80 reposición asterisco; el tipo cierra en Cód. 81 (1.º de enero de 1977). Numista no tenía H# previo para N# 205723; el Cód. de 2023 es el número de Hernández. No se publican columnas de precios ni láminas.',
-          en: '8th ed. 2023 (Numista L100183). Cód. 79: ordinary 7 August 1974 (Pick 404e); Cód. 80 asterisk replacement; the type closes at Cód. 81 (1 January 1977). Numista had no earlier H# for N# 205723; the 2023 Cód. is Hernández’s number. Price columns and plates are not republished.',
+        lead: {
+          es: 'Un peso oro de circulación, Pick 404e: serial de ocho dígitos 47550075, 7 de agosto de 1974. Anverso y reverso de la misma pieza, en funda, sin encapsular. El ejemplar de 1973 está más arriba en esta ficha.',
+          en: 'A circulating one-peso oro, Pick 404e: eight-digit serial 47550075, 7 August 1974. Face and back of the same unslabbed note, in a sleeve. The 1973 example is further up this page.',
         },
+        description: {
+          es: 'El Banco de la República imprimió este un peso oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959; el primer trabajo de esa planta fue el 1 peso azul (Pick 404). Hernández (8.ª ed., 2023) lista ese tipo de la Imprenta desde Cód. 45 (12 de octubre de 1959) hasta Cód. 81 (1.º de enero de 1977). El anverso, en azul sobre fondo policromado naranja, lleva a la izquierda el retrato de Simón Bolívar en uniforme y a la derecha el de Francisco de Paula Santander de civil —el orden inverso al Pick 380 ABNC—. Al centro, el 1 con la leyenda «UN PESO ORO» y «BOGOTA, COLOMBIA». Los seriales van en rojo anaranjado: 47550075, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie. La fecha impresa es «AGOSTO 7 DE 1974». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Numista asigna ese par (GBR₂, AJG) al Cód. 79; Banknote World las registra en el Pick 404e.4 del 20 de julio de 1972; González White sitúa a Botero como gerente entre 1970 y 1978. No hay asterisco entre GERENTE y SECRETARIO: no es reposición ni el Cód. 80. El reverso, en azul y naranja, muestra el cóndor andino en vuelo, el salto del Tequendama y el paisaje de montaña, el sello de la Libertad («BANCO DE LA REPUBLICA - BOGOTA COLOMBIA») y las cifras 1 con «PESO ORO» a ambos flancos. El tipo 404e, según el Bank Note Museum, cubre 1970–1974 sin hilo de seguridad; el 7 de agosto de 1974 es la última fecha de ese tipo. Numista agrupa el diseño 1959–1977 bajo N# 205723 y cita Hernández 79 y TBB B947r para esta fecha. Hernández cierra el Un Peso Oro el 1.º de enero de 1977 (Cód. 81), cuando la denominación pasa a monedas de níquel. Es el mismo diseño que el 1 peso oro de 1973 de esta ficha (serial 26530968, Cód. 76). No es el 1 peso oro ABNC de 1945, serie R (Pick 380d), ni el de 1954, serie HH (Pick 380g), ni el conmemorativo de Boyacá de 1953 (Waterlow). Esta pieza de la colección se presenta en funda, sin encapsular.',
+          en: 'The Banco de la República printed this one-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959; that plant’s first job was the blue 1-peso (Pick 404). Hernández (8th ed., 2023) lists that Imprenta type from Cód. 45 (12 October 1959) through Cód. 81 (1 January 1977). The face, blue on an orange multicolour underprint, carries at left Simón Bolívar in uniform and at right Francisco de Paula Santander in civilian dress — the reverse of the ABNC Pick 380 order. At center are the figure 1 with the legend “UN PESO ORO” and “BOGOTA, COLOMBIA.” The serials are in reddish orange: 47550075, once at upper right and once at lower left. There is no series letter. The printed date is “AGOSTO 7 DE 1974.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Numista assigns that pair (GBR₂, AJG) to Cód. 79; Banknote World records the same pair on Pick 404e.4 of 20 July 1972; González White places Botero as gerente from 1970 to 1978. There is no asterisk between GERENTE and SECRETARIO: it is not a replacement and not Cód. 80. The back, in blue and orange, shows the Andean condor in flight, Tequendama Falls and a mountain landscape, Liberty’s seal (“BANCO DE LA REPUBLICA - BOGOTA COLOMBIA”), and the figures 1 with “PESO ORO” at each flank. Type 404e, per the Bank Note Museum, covers 1970–1974 without a security thread; 7 August 1974 is the last date of that type. Numista groups the 1959–1977 design under N# 205723 and cites Hernández 79 and TBB B947r for this date. Hernández closes Un Peso Oro on 1 January 1977 (Cód. 81), when the denomination passes to nickel coins. It is the same design as this page’s 1973 1 peso oro (serial 26530968, Cód. 76). It is not the 1945 Series R ABNC 1 peso oro (Pick 380d), nor the 1954 Series HH (Pick 380g), nor the 1953 Boyacá commemorative (Waterlow). This collection piece is shown in a sleeve, unslabbed.',
+        },
+        frontCaption: {
+          es: 'Anverso del 1 peso oro, Pick 404e: Bolívar, Santander, serial 47550075 y fecha 7 de agosto de 1974.',
+          en: 'Face of the 1 peso oro, Pick 404e: Bolívar, Santander, serial 47550075, and the date 7 August 1974.',
+        },
+        backCaption: {
+          es: 'Reverso del 1 peso oro, Pick 404e: cóndor andino, salto del Tequendama, paisaje de montaña y sello de la Libertad.',
+          en: 'Back of the 1 peso oro, Pick 404e: Andean condor, Tequendama Falls, mountain landscape, and Liberty’s seal.',
+        },
+        scarcity: {
+          es: 'González White 2019 (p. 41) cataloga la fecha del 7 de agosto de 1974 en el pliego del 1 peso 1959–1977, con filas ordinarias y de reposición asterisco; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera la fila ordinaria Cód. 79 y la reposición con asterisco Cód. 80; el anexo 2 da el intervalo de asterisco 00100108–00198717. El serial 47550075 no cae en ese intervalo ni en las bandas de White (00.100.108–00.195.207). El Un Peso Oro cierra el 1.º de enero de 1977 (Cód. 81), última fecha de la denominación antes de las monedas de níquel. El Bank Note Museum describe el Pick 404e como las fechas 1970–1974 del 1 peso azul de la Imprenta, sin hilo: Bolívar y Santander al anverso, cóndor y Libertad al reverso; el 07.08.1974 es la última fecha del tipo. Numista agrupa el diseño bajo N# 205723, índice de rareza 11, y marca la frecuencia de la fecha 07.08.1974, sin hilo, en un 20 % entre quienes poseen el tipo. No es prueba ni espécimen ni reposición, ni distinto del ejemplar de 1973 de esta ficha (serial 26530968). No se publican columnas de precios de Hernández. La tabla BanRep de 1974 (47,2 millones de piezas de 1 peso) es un total de denominación-año, no la tirada de esta fecha.',
+          en: 'González White 2019 (p. 41) lists 7 August 1974 on the 1959–1977 1-peso spread, with ordinary and asterisk-replacement rows; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers the ordinary row Cód. 79 and the asterisk replacement Cód. 80; annex 2 gives the asterisk interval 00100108–00198717. Serial 47550075 sits in neither that interval nor White’s bands (00.100.108–00.195.207). Un Peso Oro closes on 1 January 1977 (Cód. 81), the last date of the denomination before nickel coins. The Bank Note Museum describes Pick 404e as the 1970–1974 dates of the Imprenta’s blue 1-peso, without a thread: Bolívar and Santander on the face, condor and Liberty on the back; 07.08.1974 is the last date of the type. Numista groups the design under N# 205723, rarity index 11, and marks the 07.08.1974 no-thread date’s frequency at 20% among owners of the type. It is neither a proof, a specimen, nor a replacement, nor a different object from this page’s 1973 example (serial 26530968). Hernández price columns are not republished. BanRep’s 1974 table (47.2 million 1-peso notes) is a denomination-year total, not this date’s printage.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 47550075. La pieza se presenta en funda, sin encapsular.',
+          en: 'A PMG or PCGS census for serial 47550075 has not been independently verified. The note is shown in a sleeve, unslabbed.',
+        },
+        grade: {
+          es: 'Sin encapsular · en funda',
+          en: 'Unslabbed · in a sleeve',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0404.htm',
+            es: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+            en: 'Bank Note Museum — Colombia P-404, 1 peso oro (1959–1977)',
+            note: {
+              es: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973 y 07.08.1974; anverso Bolívar y Santander; reverso cóndor y Libertad; sin hilo de seguridad; el 07.08.1974 cierra el tipo.',
+              en: '404e: 01.05.1970, 12.10.1970, 07.08.1971, 20.07.1972, 07.08.1973, and 07.08.1974; Bolívar and Santander on the face; condor and Liberty on the back; no security thread; 07.08.1974 closes the type.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/catalogue/note205723.html',
+            es: 'Numista — Colombia 1 peso oro, N# 205723',
+            en: 'Numista — Colombia 1 peso oro, N# 205723',
+            note: {
+              es: '07.08.1974: P# 404e / TBB B947r; Hernández 79 / Cód. 79; sin hilo de seguridad; 140 × 70 mm; Imprenta de Billetes, Bogotá; firmas GBR₂ y AJG; frecuencia 20 % en el tipo; índice de rareza 11.',
+              en: '07.08.1974: P# 404e / TBB B947r; Hernández 79 / Cód. 79; no security thread; 140 × 70 mm; Imprenta de Billetes, Bogotá; signatures GBR₂ and AJG; 20% frequency within the type; rarity index 11.',
+            },
+          },
+          {
+            href: 'https://www.banknoteworld.org/colombia-1-peso-oro-1972-p-404e-4.html',
+            es: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+            en: 'Banknote World — Colombia 1 peso oro 1972, P-404e.4',
+            note: {
+              es: '20.07.1972; mismo tipo 404e; 140 × 70 mm; Imprenta de Billetes; sin hilo; firmas Germán Botero de los Ríos y Antonio José Gutiérrez.',
+              en: '20.07.1972; same type 404e; 140 × 70 mm; Imprenta de Billetes; no thread; signatures Germán Botero de los Ríos and Antonio José Gutiérrez.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 1974: 47,2 millones de piezas de 1 peso. La tabla no separa fecha, firmas ni reposición; no es la tirada de este 7 de agosto de 1974.',
+              en: '1974 production: 47.2 million 1-peso notes. The table does not split date, signatures, or replacement; it is not the printage of this 7 August 1974.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/node/51381',
+            es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+            en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+            note: {
+              es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404).',
+              en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404).',
+            },
+          },
+          {
+            href: 'https://en.numista.com/L100183',
+            es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+            en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+            note: {
+              es: '8.ª ed. 2023 (Numista L100183). Cód. 79: 7 de agosto de 1974 ordinario (Pick 404e); Cód. 80 reposición asterisco; el tipo cierra en Cód. 81 (1.º de enero de 1977). Numista no tenía H# previo para N# 205723; el Cód. de 2023 es el número de Hernández. No se publican columnas de precios ni láminas.',
+              en: '8th ed. 2023 (Numista L100183). Cód. 79: ordinary 7 August 1974 (Pick 404e); Cód. 80 asterisk replacement; the type closes at Cód. 81 (1 January 1977). Numista had no earlier H# for N# 205723; the 2023 Cód. is Hernández’s number. Price columns and plates are not republished.',
+            },
+          },
+        ],
       },
     ],
   },
+
   {
     id: '2-pesos-oro-1944',
     chapterId: 'banco-de-la-republica',
@@ -2450,6 +2611,109 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 307 para el ejemplar de circulación del 1.º de enero de 1980 sin prefijo; ese H# no se sustituye por el Cód. de 2023 ni se aplica como número de este espécimen.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 307 for the circulating 1 January 1980 note without a prefix; that H# is not replaced by a 2023 Cód. and is not applied as this specimen’s number.',
+        },
+      },
+    ],
+  },
+  {
+    id: '200-pesos-oro-1989',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}200-pesos-oro-1989/`,
+    pick: 'P# 429ds',
+    serial: '00000000 · 499',
+    signatures: {
+      es: 'Francisco José Ortega (gerente) y Roberto Salazar Manrique (abogado-subgerente)',
+      en: 'Francisco José Ortega (gerente) and Roberto Salazar Manrique (abogado-subgerente)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Espécimen de la fecha 1.º de abril de 1989; formato publicado 140 × 70 mm. El Bank Note Museum numera esa fecha, con títulos Gerente y Abogado Subgerente, como Pick 429d, y la agrupa con 01.04.1987, 01.04.1988 y 01.11.1988. Distinto del 428 de Thomas De La Rue y del 429A de Santa Fe de Bogotá. Numista cita para la circulación de esta fecha P# 429d / TBB B967i / Hernández 365. González White 2019 (pp. 94–95, pliego DOSCIENTOS PESOS 1987 a 1992) lista el 1.º de abril de 1989, Mutis, IBB, y una reposición estrella; el pliego no da una tirada de especímenes. El OCR mezcla BG# y fechas: no se publica aquí un BG# adivinado. La tabla BanRep de 1989 registra 122 millones de piezas de 200 pesos: es el total de denominación-año, no la tirada de este espécimen. Esta ficha no inventa una tirada.',
+      en: 'Imprenta de Billetes, Bogotá. Specimen of the 1 April 1989 date; published size 140 × 70 mm. The Bank Note Museum numbers that date, with titles Gerente and Abogado Subgerente, as Pick 429d, and groups it with 01.04.1987, 01.04.1988, and 01.11.1988. Distinct from Thomas De La Rue’s 428 and from 429A of Santa Fe de Bogotá. Numista cites P# 429d / TBB B967i / Hernández 365 for the circulating note of this date. González White 2019 (pp. 94–95, DOSCIENTOS PESOS 1987 to 1992 spread) lists 1 April 1989, Mutis, IBB, and a star replacement; the spread does not give a specimen printage. The OCR jumbles BG# against dates: no guessed BG# is published here. BanRep’s 1989 table records 122 million 200-peso notes: that is the denomination-year total, not this specimen’s printage. This record does not invent a printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-composite.jpg',
+      front: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-front.jpg',
+      back: '/images/catalog/colombia/200-pesos-oro-1989-specimen-499-back.jpg',
+    },
+    title: {
+      es: '200 pesos oro · espécimen · 1989',
+      en: '200 pesos oro · specimen · 1989',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Espécimen IBB',
+      en: 'Colombia · Banco de la República · IBB specimen',
+    },
+    lead: {
+      es: 'Doscientos pesos oro, espécimen Pick 429ds de la fecha 1.º de abril de 1989: seriales de ceros, sobrecarga MUESTRA SIN VALOR y control 499. Esta ficha reúne anverso y reverso de la misma pieza, en funda, sin encapsular.',
+      en: 'A two-hundred-peso oro specimen, Pick 429ds of the 1 April 1989 date: zero serials, a MUESTRA SIN VALOR overprint, and control 499. This record gathers the face and back of the same unslabbed note, in a sleeve.',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este doscientos pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. González White 2019 dedica el tipo a José Celestino Mutis y Bosio, sacerdote y naturalista, director de la Expedición Botánica que el virrey Antonio Caballero y Góngora creó en Mariquita en marzo de 1783. El Bank Note Museum numera el papel de esa planta como Pick 429 (1983–1991) y lo distingue del Pick 428 de Thomas De La Rue y del Pick 429A de Santa Fe de Bogotá. La fecha de esta pieza, 1.º de abril de 1989, cae en el grupo 429d: títulos Gerente y Abogado Subgerente. Numista agrupa el diseño bajo N# 205269 y cita para la circulación de esa fecha P# 429d / TBB B967i / Hernández 365, firmas FJO₂ y RSM. Esta pieza es un espécimen de esa fecha: seriales negros 00000000, dos veces; sobrecarga diagonal roja «MUESTRA SIN VALOR» en anverso y reverso; dos perforaciones de cancelación; y el control rojo 499 en el margen inferior izquierdo. No lleva óvalos De La Rue ni «SPECIMEN Nº». La fecha impresa es «BOGOTÁ: 1º DE ABRIL DE 1989». El anverso, en verde sobre policromía, lleva a la izquierda un edificio de torre en medallón y el retrato rotulado «MUTIS»; al centro, la promesa de pagar al portador doscientos pesos oro; a la derecha, el dispositivo de registro con el lema «CON HUMBOLDT». Las firmas son las de Francisco José Ortega (gerente) y Roberto Salazar Manrique (abogado-subgerente), el par que Numista asigna a esta fecha. El reverso muestra el claustro del Colegio Mayor de Nuestra Señora del Rosario —«LA BORDADITA», Bogotá—, el sello del banco con la Libertad y el pie «IMPRENTA DE BILLETES — BOGOTÁ». González White 2019 (pp. 94–95) lista el 1.º de abril de 1989, Mutis, IBB, y una reposición estrella de esa fecha; el OCR mezcla BG# y fechas: no se publica aquí un BG# adivinado. Distinto del 428 de De La Rue, del 429A de Santa Fe, de las fechas 429a–c, de la circulación 429d de 1989 y de los especímenes de ceros de esta colección (Pick 405s, 418s Nº 027 y 430as Nº 030). Esta pieza se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República printed this two-hundred-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. González White 2019 dedicates the type to José Celestino Mutis y Bosio, priest and naturalist, director of the Botanical Expedition that Viceroy Antonio Caballero y Góngora created at Mariquita in March 1783. The Bank Note Museum numbers that plant’s paper as Pick 429 (1983–1991) and distinguishes it from Thomas De La Rue’s Pick 428 and from Pick 429A of Santa Fe de Bogotá. This piece’s date, 1 April 1989, falls in group 429d: titles Gerente and Abogado Subgerente. Numista groups the design under N# 205269 and cites P# 429d / TBB B967i / Hernández 365 for the circulating note of that date, signatures FJO₂ and RSM. This piece is a specimen of that date: black serials 00000000, twice; a diagonal red “MUESTRA SIN VALOR” overprint on face and back; two cancellation punches; and red control 499 at the lower-left margin. It has no De La Rue ovals and no “SPECIMEN Nº.” The printed date is “BOGOTÁ: 1º DE ABRIL DE 1989.” The face, green on a multicolour underprint, carries a towered building in a medallion at left and the portrait labelled “MUTIS”; at center, the promise to pay the bearer two hundred gold pesos; at right, the registration device with the motto “CON HUMBOLDT.” The signatures are those of Francisco José Ortega (gerente) and Roberto Salazar Manrique (abogado-subgerente), the pair Numista assigns to this date. The back shows the cloister of the Colegio Mayor de Nuestra Señora del Rosario — “LA BORDADITA,” Bogotá — the bank’s Liberty seal, and the imprint “IMPRENTA DE BILLETES — BOGOTÁ.” González White 2019 (pp. 94–95) lists 1 April 1989, Mutis, IBB, and a star replacement of that date; the OCR jumbles BG# against dates: no guessed BG# is published here. Distinct from De La Rue’s 428, from 429A of Santa Fe, from dates 429a–c, from circulating 429d of 1989, and from this collection’s other zero-serial specimens (Pick 405s, 418s Nº 027, and 430as Nº 030). This collection piece is shown in a sleeve, unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 200 pesos oro, Pick 429ds: Mutis, serial 00000000, control 499, sobrecarga MUESTRA SIN VALOR y fecha 1.º de abril de 1989.',
+      en: 'Face of the 200 pesos oro, Pick 429ds: Mutis, serial 00000000, control 499, the MUESTRA SIN VALOR overprint, and the date 1 April 1989.',
+    },
+    backCaption: {
+      es: 'Reverso del 200 pesos oro, Pick 429ds: claustro del Rosario —La Bordadita—, sobrecarga MUESTRA SIN VALOR y pie IMPRENTA DE BILLETES — BOGOTÁ.',
+      en: 'Back of the 200 pesos oro, Pick 429ds: the Rosario cloister —La Bordadita—, the MUESTRA SIN VALOR overprint, and the imprint IMPRENTA DE BILLETES — BOGOTÁ.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 94–95) lista el 1.º de abril de 1989 de circulación, IBB, y una reposición estrella; no da tirada de especímenes. Numista agrupa el diseño bajo N# 205269 y marca la frecuencia de la circulación de esa fecha en un 11 % entre quienes poseen el tipo; lista un espécimen con sobrecarga «MUESTRA SIN VALOR» en la fecha de 1987 al 0 %. El Bank Note Museum describe 429d como 01.04.1987, 01.04.1988, 01.11.1988 y 01.04.1989, con títulos Gerente y Abogado Subgerente. La tabla BanRep de 1989 atribuye 122 millones de piezas a todos los 200 pesos de ese año. Esta ficha no inventa una tirada de especímenes ni sustituye la emisión de circulación por ese total de denominación-año.',
+      en: 'González White 2019 (pp. 94–95) lists the circulating 1 April 1989 date, IBB, and a star replacement; it does not give a specimen printage. Numista groups the design under N# 205269 and marks the circulating date’s frequency at 11% among owners of the type; it lists a specimen with a “MUESTRA SIN VALOR” overprint on the 1987 date at 0%. The Bank Note Museum describes 429d as 01.04.1987, 01.04.1988, 01.11.1988, and 01.04.1989, with titles Gerente and Abogado Subgerente. BanRep’s 1989 table assigns 122 million pieces to every 200-peso note of that year. This record does not invent a specimen printage or replace the circulating emisión with that denomination-year total.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el control 499 de este Pick 429ds. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for control 499 of this Pick 429ds has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · en funda',
+      en: 'Unslabbed · in a sleeve',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0429.htm',
+        es: 'Bank Note Museum — Colombia P-429, 200 pesos oro (1983–1991)',
+        en: 'Bank Note Museum — Colombia P-429, 200 pesos oro (1983–1991)',
+        note: {
+          es: '429d: 01.04.1987, 01.04.1988, 01.11.1988 y 01.04.1989; títulos Gerente y Abogado Subgerente; anverso Mutis, reverso claustro del Colegio Mayor de Nuestra Señora del Rosario (La Bordadita, Bogotá); Imprenta de Billetes, Bogotá. Distinto del 428 (TDLR) y del 429A (Santa Fe de Bogotá).',
+          en: '429d: 01.04.1987, 01.04.1988, 01.11.1988, and 01.04.1989; titles Gerente and Abogado Subgerente; Mutis on the face, cloister of the Colegio Mayor de Nuestra Señora del Rosario (La Bordadita, Bogotá) on the back; Imprenta de Billetes, Bogotá. Distinct from 428 (TDLR) and 429A (Santa Fe de Bogotá).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note205269.html',
+        es: 'Numista — Colombia 200 pesos oro, N# 205269',
+        en: 'Numista — Colombia 200 pesos oro, N# 205269',
+        note: {
+          es: '01.04.1989 de circulación: P# 429d / TBB B967i; Hernández 365; firmas FJO₂ y RSM; 140 × 70 mm; números estilizados; frecuencia 11 % en el tipo. Lista un espécimen con sobrecarga «MUESTRA SIN VALOR» en la fecha de 1987; no se cita aquí una fila de 1989 ni una frecuencia de este control 499.',
+          en: 'Circulating 01.04.1989: P# 429d / TBB B967i; Hernández 365; signatures FJO₂ and RSM; 140 × 70 mm; stylized numerals; 11% frequency within the type. Lists a specimen with a “MUESTRA SIN VALOR” overprint on the 1987 date; no 1989 specimen row or frequency for this control 499 is cited here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1989: 72,5 millones de 100 pesos, 122 millones de 200, 25 millones de 500 y 130,5 millones de 2.000. El total de 200 pesos es de denominación-año; no es la tirada de este espécimen ni de la fecha de circulación del 1.º de abril.',
+          en: '1989 production: 72.5 million 100-peso notes, 122 million 200-peso, 25 million 500-peso, and 130.5 million 2,000-peso. The 200-peso total is denomination-year; it is not the printage of this specimen or of the circulating 1 April date.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá. Este 200 pesos de 1989 lleva el pie IMPRENTA DE BILLETES — BOGOTÁ, no el de Santa Fe de Bogotá.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá. This 1989 200-peso carries the imprint IMPRENTA DE BILLETES — BOGOTÁ, not Santa Fe de Bogotá.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 365 para el ejemplar de circulación del 1.º de abril de 1989; ese H# no se sustituye por el Cód. de 2023 ni se aplica como número de este espécimen.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 365 for the circulating 1 April 1989 note; that H# is not replaced by a 2023 Cód. and is not applied as this specimen’s number.',
         },
       },
     ],
@@ -3893,19 +4157,20 @@ export const colombiaNotes: ColombiaNote[] = [
     chapterId: 'errores',
     path: `${COLOMBIA_PATH}5000-pesos-error-2010/`,
     pick: 'P# 452l / TBB B989m',
-    serial: '09636101',
+    serial: '09629901',
+    shareTypeNarrative: true,
     signatures: {
       es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
       en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
     },
     printed: {
-      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso, bajo las firmas: 31 de julio de 2010. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Esta pieza conserva, además, una solapa triangular del margen de pliego que sobresale del canto superior. González White 2019 numera la fecha BG# 541 (p. 128): IBBR, Silva, emisión N.D.; anota Braille y la circulación el 1.º de febrero de 2011. El Bank Note Museum lista 31.07.2010 como Pick 452l. Numista asigna TBB B989m y Hernández# 570, con Braille en la zona de la filigrana. La producción BanRep de 5.000 pesos en 2010 es 98,149 millones de piezas, y la entrega a Tesorería del mismo año coincide: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
-      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 31 July 2010. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face. This piece also keeps a triangular sheet-margin flap that extends beyond the top edge. González White 2019 numbers the date BG# 541 (p. 128): IBBR, Silva, emisión N.D.; it notes Braille and circulation on 1 February 2011. The Bank Note Museum lists 31.07.2010 as Pick 452l. Numista assigns TBB B989m and Hernández# 570, with Braille in the watermark area. BanRep’s 2010 production of 5,000-peso notes is 98.149 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso, bajo las firmas: 31 de julio de 2010. Formato publicado 140 × 70 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Estas dos piezas conservan, además, una solapa triangular del margen de pliego que sobresale del canto superior. González White 2019 numera la fecha BG# 541 (p. 128): IBBR, Silva, emisión N.D.; anota Braille y la circulación el 1.º de febrero de 2011. El Bank Note Museum lista 31.07.2010 como Pick 452l. Numista asigna TBB B989m y Hernández# 570, con Braille en la zona de la filigrana. La producción BanRep de 5.000 pesos en 2010 es 98,149 millones de piezas, y la entrega a Tesorería del mismo año coincide: es el total de esa denominación ese año, no la tirada de esta fecha ni de este error. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 31 July 2010. Published size 140 × 70 mm; eight digits, no series letter; both serials on the face. These two pieces also keep a triangular sheet-margin flap that extends beyond the top edge. González White 2019 numbers the date BG# 541 (p. 128): IBBR, Silva, emisión N.D.; it notes Braille and circulation on 1 February 2011. The Bank Note Museum lists 31.07.2010 as Pick 452l. Numista assigns TBB B989m and Hernández# 570, with Braille in the watermark area. BanRep’s 2010 production of 5,000-peso notes is 98.149 million pieces, and Tesorería delivery that year matches: that is every note of that face value that year, not the printage of this date or this error. No printage is published here.',
     },
     images: {
-      composite: '/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg',
-      front: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
-      back: '/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg',
+      composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
+      front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
+      back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
     },
     title: {
       es: '5.000 pesos · error mariposa · 2010',
@@ -3916,32 +4181,32 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'Colombia · Errors · Butterfly cut',
     },
     lead: {
-      es: 'Cinco mil pesos de José Asunción Silva, Pick 452l / TBB B989m: fecha 31 de julio de 2010 y serial 09636101, con un error de corte en solapa —mariposa— que sobresale del margen superior. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
-      en: 'A José Asunción Silva five-thousand-peso note, Pick 452l / TBB B989m: date 31 July 2010 and serial 09636101, with a butterfly-cut fold-over that projects from the top margin. This record gathers the face and back of the same unslabbed note.',
+      es: 'Dos cinco mil pesos de José Asunción Silva, Pick 452l / TBB B989m: fecha 31 de julio de 2010 y seriales 09629901 y 09636101, cada uno con un error de corte en solapa —mariposa— que sobresale del margen superior. Una ficha: un bloque de datos y un texto de tipo; las dos caras de cada serial debajo.',
+      en: 'Two José Asunción Silva five-thousand-peso notes, Pick 452l / TBB B989m: date 31 July 2010 and serials 09629901 and 09636101, each with a butterfly-cut fold-over that projects from the top margin. One record: one facts block and one type essay; both faces of each serial stacked below.',
     },
     description: {
-      es: 'El cinco mil pesos de José Asunción Silva, en formato de 140 × 70 mm, es el Pick 452 (2001–2014) / TBB B989, impreso por la Imprenta de Billetes. González White numera esta fecha BG# 541 (p. 128); el Bank Note Museum la marca 452l. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2005–2010, antes del cambio a José Tolosa en 2011 (TBB B989m; Hernández# 570). El serial 09636101 aparece dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—; ocho cifras, sin prefijo. No es un serial bajo ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en verdes y ocres, muestra a Silva a la derecha, con la rana y el insecto alado que aluden a su poesía, el 5000 y la leyenda «CINCO MIL PESOS». El reverso, en azul, lleva la alameda, la figura femenina, el pedestal con el fragmento en microimpresión del «Nocturno» y el sello de Libertad; el pie es el de la Imprenta de Billetes. Numista anota Braille en la zona de la filigrana a partir de 2009; González White registra la circulación de esta fecha el 1.º de febrero de 2011. Lo que distingue esta pieza no es el tipo sino el error: una solapa triangular del margen de pliego quedó unida al canto superior. En el reverso, junto a esa pérdida de rectángulo, se leen las barras de color de control del pliego: material que el corte de fábrica debía desechar. En la notafilia colombiana Hernández llama mariposa a ese ala de papel; el pliegue de fábrica que la dejó unida es un error de producción, no una variedad de diseño. No debe confundirse con el 1.º de agosto de 2010 (452m), ni con el 21.08.2009 (452k), ni con el cinco mil de la Nueva Familia (Pick 459), ni con la mariposa de 1.000 pesos de 2011 de esta misma vitrina (serial 11508701). Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
-      en: 'The José Asunción Silva five-thousand in the 140 × 70 mm format is Pick 452 (2001–2014) / TBB B989, printed by the Imprenta de Billetes. González White numbers this date BG# 541 (p. 128); the Bank Note Museum marks it 452l. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2005–2010 dates, before the change to José Tolosa in 2011 (TBB B989m; Hernández# 570). Serial 09636101 appears twice on the face — in black at upper right and in red at left — eight digits, no prefix. It is not a low serial and not a collector pattern (radar, binary, solid, or ladder). The face, in greens and ochres, shows Silva at right, with the frog and winged insect that allude to his poetry, the 5000, and the legend “CINCO MIL PESOS.” The back, in blue, carries the tree alley, the female figure, the pedestal with the microprinted fragment of “Nocturno,” and the Liberty seal; the imprint is that of the Imprenta de Billetes. Numista notes Braille in the watermark area from 2009; González White records this date into circulation on 1 February 2011. What distinguishes this piece is the error, not the type: a triangular flap of sheet margin remained attached to the top edge. On the back, beside that break in the rectangle, the sheet’s control color bars remain: material the factory cut was meant to discard. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly); the as-made fold that left it attached is a production error, not a design variety. It should not be confused with 1 August 2010 (452m), with 21.08.2009 (452k), with the New Family five-thousand (Pick 459), or with this case’s 2011 1,000-peso butterfly (serial 11508701). This record gathers both sides of the same unslabbed note.',
+      es: 'El cinco mil pesos de José Asunción Silva, en formato de 140 × 70 mm, es el Pick 452 (2001–2014) / TBB B989, impreso por la Imprenta de Billetes del Banco de la República, en tintas sobre papel. No es el cinco mil de Núñez y Caro ni el de la Nueva Familia (Pick 459). González White abre el tipo Núñez el 5 de agosto de 1986 (p. 124) y sitúa el tipo Silva del 1.º de marzo de 1995 al 2 de agosto de 2014 (pp. 126–128); algunas fechas de 1995 salieron de Thomas De La Rue. Esta fecha, 31 de julio de 2010, es BG# 541 (p. 128), IBBR, que el Bank Note Museum marca 452l. Las firmas son las de José Darío Uribe Escobar, gerente general, y Gerardo Hernández Correa, gerente ejecutivo: el par que Numista asigna a las fechas de 2005–2010, antes del cambio a José Tolosa en 2011 (TBB B989m; Hernández# 570). Los seriales 09629901 y 09636101 aparecen cada uno dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—; ocho cifras, sin prefijo. No son seriales bajos ni un patrón de colección (capicúa, binario, sólido o escalera). El anverso, en verdes y ocres, muestra a Silva a la derecha; González White (p. 129) anota las alusiones a sus poemas con cigarra y rana, el 5000 y la leyenda «CINCO MIL PESOS». El reverso, en azul, lleva la alameda, la figura femenina, el pedestal con el fragmento en microimpresión del «Nocturno» y el sello de Libertad; el pie es el de la Imprenta de Billetes. Numista anota Braille en la zona de la filigrana a partir de 2009; González White registra Braille en esta fecha y la circulación el 1.º de febrero de 2011. Lo que distingue estas piezas no es el tipo sino el error: un pliegue de fábrica dejó unida al canto superior una solapa triangular del margen de pliego. El huecograbado y las tintas de fondo continúan sobre esa solapa: el pliegue ocurrió después de imprimir el pliego y antes del corte. En el reverso, junto a la pérdida de rectángulo, se leen las barras de color de control —material que la guillotina de fábrica debía desechar—. Un pliegue anterior a la impresión dejaría la solapa en blanco; aquí no es el caso. En la notafilia colombiana Hernández llama mariposa a ese ala de papel. No debe confundirse con el 1.º de agosto de 2010 (452m), ni con el 21.08.2009 (452k), ni con el cinco mil de la Nueva Familia (Pick 459), ni con la mariposa de 1.000 pesos de 2011 de esta misma vitrina (serial 11508701). Dos objetos distintos de la misma fecha y el mismo error: 09629901 no es 09636101. Esta ficha reúne las dos caras de cada pieza, sin encapsular.',
+      en: 'The José Asunción Silva five-thousand in the 140 × 70 mm format is Pick 452 (2001–2014) / TBB B989, printed by the Banco de la República’s Imprenta de Billetes, in inks on paper. It is not the Núñez–Caro five-thousand, nor the New Family type (Pick 459). González White opens the Núñez type on 5 August 1986 (p. 124) and places the Silva type from 1 March 1995 to 2 August 2014 (pp. 126–128); some 1995 dates came from Thomas De La Rue. This date, 31 July 2010, is BG# 541 (p. 128), IBBR, which the Bank Note Museum marks 452l. The signatures are those of José Darío Uribe Escobar, general manager, and Gerardo Hernández Correa, executive manager: the pair Numista assigns to the 2005–2010 dates, before the change to José Tolosa in 2011 (TBB B989m; Hernández# 570). Serials 09629901 and 09636101 each appear twice on the face — in black at upper right and in red at left — eight digits, no prefix. They are not low serials and not a collector pattern (radar, binary, solid, or ladder). The face, in greens and ochres, shows Silva at right; González White (p. 129) notes the allusions to his poems with a cicada and a frog, the 5000, and the legend “CINCO MIL PESOS.” The back, in blue, carries the tree alley, the female figure, the pedestal with the microprinted fragment of “Nocturno,” and the Liberty seal; the imprint is that of the Imprenta de Billetes. Numista notes Braille in the watermark area from 2009; González White records Braille on this date and circulation on 1 February 2011. What distinguishes these pieces is the error, not the type: an as-made fold left a triangular flap of sheet margin attached to the top edge. Intaglio and the background tints continue onto that flap: the fold happened after the sheet was printed and before the cut. On the back, beside the break in the rectangle, the sheet’s control color bars remain — material the factory guillotine was meant to discard. A fold before printing would leave the flap blank; that is not the case here. In Colombian notaphily Hernández calls that paper wing a mariposa (butterfly). They should not be confused with 1 August 2010 (452m), with 21.08.2009 (452k), with the New Family five-thousand (Pick 459), or with this case’s 2011 1,000-peso butterfly (serial 11508701). Two distinct objects of the same date and the same error: 09629901 is not 09636101. This record gathers both sides of each unslabbed note.',
     },
     history: {
-      es: 'José Asunción Silva (Bogotá, 1865–1896) preside el cinco mil pesos del Banco de la República desde la emisión conmemorativa del centenario de su muerte (1996) y, en esta familia de circulación, desde las fechas de 2001. El anverso combina su retrato con la rana y el insecto alado; el reverso, la alameda y el «Nocturno». Juan Cárdenas firmó el grabado. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 5.000 de la Nueva Familia, todavía con Silva. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta una maculatura que escapó al corte con el margen de pliego aún unido.',
-      en: 'José Asunción Silva (Bogotá, 1865–1896) has occupied the Banco de la República five-thousand since the commemorative issue for the centenary of his death (1996) and, in this circulating family, since the 2001 dates. The face combines his portrait with the frog and winged insect; the back, the tree alley and “Nocturno.” Juan Cárdenas signed the engraving. The type ran through 2014; in 2016 it was joined, and later replaced in circulation, by the New Family 5,000, still with Silva. This record does not document an ordinary circulating example: it documents a maculature that escaped the cut with the sheet margin still attached.',
+      es: 'José Asunción Silva (Bogotá, 1865–1896) preside el cinco mil pesos del Banco de la República desde la emisión conmemorativa del centenario de su muerte y, en circulación, desde las fechas de 1995. El tipo anterior de la denominación, Núñez y Caro, salió el 5 de agosto de 1986. En octubre de 1994 el robo de Valledupar se llevó 2.200.000 ejemplares del #510 de esa familia (González White, p. 125); el banco sustituyó el 5.000 en 1995. Juan Cárdenas firmó el grabado de Silva: anverso con cigarra y rana; reverso, la alameda y el «Nocturno» en microimpresión. El tipo siguió hasta 2014; en 2016 lo acompañó, y luego lo sustituyó en circulación, el 5.000 de la Nueva Familia, todavía con Silva. Esta ficha no documenta un ejemplar de circulación ordinaria: documenta dos maculaturas que escaparon al corte con el margen de pliego aún unido.',
+      en: 'José Asunción Silva (Bogotá, 1865–1896) has occupied the Banco de la República five-thousand since the commemorative issue for the centenary of his death and, in circulation, since the 1995 dates. The previous type of the denomination, Núñez and Caro, appeared on 5 August 1986. In October 1994 the Valledupar robbery took 2,200,000 notes of that family’s #510 (González White, p. 125); the bank replaced the 5,000 in 1995. Juan Cárdenas signed the Silva engraving: a cicada and a frog on the face; on the back, the tree alley and “Nocturno” in microprint. The type ran through 2014; in 2016 it was joined, and later replaced in circulation, by the New Family 5,000, still with Silva. This record does not document an ordinary circulating example: it documents two maculatures that escaped the cut with the sheet margin still attached.',
     },
     frontCaption: {
-      es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09636101 y la solapa mariposa del canto superior.',
-      en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09636101, and the butterfly flap on the top edge.',
+      es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09629901 y la solapa mariposa del canto superior.',
+      en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09629901, and the butterfly flap on the top edge.',
     },
     backCaption: {
       es: 'Reverso del 5.000 pesos, Pick 452l: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
       en: 'Back of the 5,000 pesos, Pick 452l: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
     },
     scarcity: {
-      es: 'González White 2019 (BG# 541, p. 128) no publica cifra de emisión para el 31 de julio de 2010 (N.D.). El Bank Note Museum describe Pick 452 como el tipo 2001–2014 de 140 × 70 mm y marca 452l esa fecha. Numista agrupa el diseño bajo N# 208014 y marca la frecuencia de 31.07.2010 en 5 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 98,149 millones de piezas a todos los 5.000 pesos de 2010, y la de entregas a Tesorería el mismo total: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Un billete mariposa con barras de color del pliego es una pieza de vitrina; esta ficha no inventa una población de ese error.',
-      en: 'González White 2019 (BG# 541, p. 128) publishes no emisión figure for 31 July 2010 (N.D.). The Bank Note Museum describes Pick 452 as the 2001–2014 140 × 70 mm type and marks 452l for that date. Numista groups the design under N# 208014 and marks the 31.07.2010 date’s frequency at 5% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 98.149 million pieces to every 5,000-peso note of 2010, and the Tesorería delivery table the same total: that is not the printage of one date, signature pair, or cutting error. A butterfly note that still carries the sheet’s color bars is a showcase piece; this record does not invent a population for that error.',
+      es: 'González White 2019 (BG# 541, p. 128) no publica cifra de emisión para el 31 de julio de 2010 (N.D.). El Bank Note Museum describe Pick 452 como el tipo 2001–2014 de 140 × 70 mm y marca 452l esa fecha. Numista agrupa el diseño bajo N# 208014 y marca la frecuencia de 31.07.2010 en 5 % entre quienes poseen el tipo; esa cifra es de la fecha ordinaria, no de las maculaturas. La tabla BanRep de producción anual atribuye 98,149 millones de piezas a todos los 5.000 pesos de 2010, y la de entregas a Tesorería el mismo total: no es la tirada de una fecha, de un par de firmas ni de un error de corte. Dos billetes mariposa con barras de color del pliego son piezas de vitrina; esta ficha no inventa una población de ese error.',
+      en: 'González White 2019 (BG# 541, p. 128) publishes no emisión figure for 31 July 2010 (N.D.). The Bank Note Museum describes Pick 452 as the 2001–2014 140 × 70 mm type and marks 452l for that date. Numista groups the design under N# 208014 and marks the 31.07.2010 date’s frequency at 5% among owners of the type; that figure is for the ordinary date, not for maculatures. BanRep’s annual production table assigns 98.149 million pieces to every 5,000-peso note of 2010, and the Tesorería delivery table the same total: that is not the printage of one date, signature pair, or cutting error. Two butterfly notes that still carry the sheet’s color bars are showcase pieces; this record does not invent a population for that error.',
     },
     population: {
-      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09636101. La pieza se presenta sin encapsular, aparentemente sin circular. El error es de producción, no un certificado de grado.',
-      en: 'A PMG or PCGS census for serial 09636101 has not been independently verified. The note is shown unslabbed, apparently uncirculated. The error is a production fault, not a grading certificate.',
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para 09629901 ni para 09636101. Ambas piezas se presentan sin encapsular, aparentemente sin circular. El error es de producción, no un certificado de grado.',
+      en: 'A PMG or PCGS census has not been independently verified for 09629901 or 09636101. Both notes are shown unslabbed, apparently uncirculated. The error is a production fault, not a grading certificate.',
     },
     grade: {
       es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
@@ -3974,6 +4239,166 @@ export const colombiaNotes: ColombiaNote[] = [
           es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
           en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
         },
+      },
+    ],
+    pieces: [
+      {
+        id: '5000-pesos-error-2010-09629901',
+        pick: 'P# 452l / TBB B989m',
+        serial: '09629901',
+        signatures: {
+          es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+          en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 09629901. Fecha impresa: 31 de julio de 2010. Ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Corte mariposa: solapa triangular del margen de pliego en el canto superior. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09629901. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg',
+          front: '/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg',
+          back: '/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg',
+        },
+        title: {
+          es: '5.000 pesos · error mariposa · 2010 · 09629901',
+          en: '5,000 pesos · butterfly-cut error · 2010 · 09629901',
+        },
+        lead: {
+          es: 'Serial 09629901: mismo tipo, misma fecha y el mismo corte mariposa que el 09636101. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09629901: the same type, date and butterfly cut as 09636101. Unslabbed, apparently uncirculated.',
+        },
+        description: {
+          es: 'Serial 09629901, impreso dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—. El huecograbado y las tintas continúan sobre la solapa; en el reverso, las barras de color del margen de pliego. El corte coincide en mecánica con el 09636101 de esta misma ficha.',
+          en: 'Serial 09629901, printed twice on the face — in black at upper right and in red at left. Intaglio and the background tints continue onto the flap; on the reverse, the sheet-margin colour bars. The cut matches 09636101 on this same record in mechanics.',
+        },
+        frontCaption: {
+          es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09629901 y la solapa mariposa del canto superior.',
+          en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09629901, and the butterfly flap on the top edge.',
+        },
+        backCaption: {
+          es: 'Reverso del 5.000 pesos, Pick 452l, serial 09629901: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
+          en: 'Back of the 5,000 pesos, Pick 452l, serial 09629901: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
+        },
+        scarcity: {
+          es: '09629901 es un serial ordinario de la misma fecha y el mismo error que 09636101. La rareza del tipo y la producción BanRep de 2010 se documentan una sola vez en esta página.',
+          en: '09629901 is an ordinary serial of the same date and the same error as 09636101. Type scarcity and BanRep’s 2010 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09629901. La pieza se presenta sin encapsular, aparentemente sin circular.',
+          en: 'A PMG or PCGS census for serial 09629901 has not been independently verified. The note is shown unslabbed, apparently uncirculated.',
+        },
+        grade: {
+          es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
+          en: 'Unslabbed · apparently uncirculated · butterfly-cut error',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0452.htm',
+            es: 'Bank Note Museum — Colombia P-452, 5.000 pesos (2001–2014)',
+            en: 'Bank Note Museum — Colombia P-452, 5,000 pesos (2001–2014)',
+            note: {
+              es: 'Tipo Silva, Imprenta de Billetes; anverso Silva, reverso alameda y figura. Esta pieza es 31.07.2010 (452l). El catálogo marca 452m como 01.08.2010 y corrige un 01.09.2010 inexistente.',
+              en: 'Silva type, Imprenta de Billetes; Silva on the face, tree alley and figure on the back. This piece is 31.07.2010 (452l). The catalogue marks 452m as 01.08.2010 and corrects a non-existent 01.09.2010.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/208014',
+            es: 'Numista — Colombia 5.000 pesos (sello nuevo), N# 208014',
+            en: 'Numista — Colombia 5,000 pesos (new bank seal), N# 208014',
+            note: {
+              es: 'Fecha 31.07.2010: P# 452l, TBB B989m, Hernández# 570; firmas JDUE y GHC; Braille en la zona de la filigrana; frecuencia 5 % en el tipo. No se publican columnas de precio.',
+              en: '31.07.2010 date: P# 452l, TBB B989m, Hernández# 570; signatures JDUE and GHC; Braille in the watermark area; 5% frequency within the type. Price columns are not published here.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+              en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
+            },
+          },
+        ],
+      },
+      {
+        id: '5000-pesos-error-2010-09636101',
+        pick: 'P# 452l / TBB B989m',
+        serial: '09636101',
+        signatures: {
+          es: 'José Darío Uribe Escobar (gerente general) y Gerardo Hernández Correa (gerente ejecutivo)',
+          en: 'José Darío Uribe Escobar (gerente general) and Gerardo Hernández Correa (gerente ejecutivo)',
+        },
+        printed: {
+          es: 'Serial 09636101. Fecha impresa: 31 de julio de 2010. Ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. Corte mariposa: solapa triangular del margen de pliego en el canto superior. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09636101. Printed date: 31 July 2010. Eight digits, no series letter; both serials on the face. Butterfly cut: a triangular sheet-margin flap on the top edge. Unslabbed, apparently uncirculated.',
+        },
+        images: {
+          composite: '/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg',
+          front: '/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg',
+          back: '/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg',
+        },
+        title: {
+          es: '5.000 pesos · error mariposa · 2010 · 09636101',
+          en: '5,000 pesos · butterfly-cut error · 2010 · 09636101',
+        },
+        lead: {
+          es: 'Serial 09636101: mismo tipo, misma fecha y el mismo corte mariposa que el 09629901. Sin encapsular, aparentemente sin circular.',
+          en: 'Serial 09636101: the same type, date and butterfly cut as 09629901. Unslabbed, apparently uncirculated.',
+        },
+        description: {
+          es: 'Serial 09636101, impreso dos veces en el anverso —en negro arriba a la derecha y en rojo a la izquierda—. El huecograbado y las tintas continúan sobre la solapa; en el reverso, las barras de color del margen de pliego. El corte coincide en mecánica con el 09629901 de esta misma ficha.',
+          en: 'Serial 09636101, printed twice on the face — in black at upper right and in red at left. Intaglio and the background tints continue onto the flap; on the reverse, the sheet-margin colour bars. The cut matches 09629901 on this same record in mechanics.',
+        },
+        frontCaption: {
+          es: 'Anverso del 5.000 pesos, Pick 452l: Silva, la fecha 31 de julio de 2010, el serial 09636101 y la solapa mariposa del canto superior.',
+          en: 'Face of the 5,000 pesos, Pick 452l: Silva, the date 31 July 2010, serial 09636101, and the butterfly flap on the top edge.',
+        },
+        backCaption: {
+          es: 'Reverso del 5.000 pesos, Pick 452l, serial 09636101: la alameda, la figura femenina, el «Nocturno» y la misma solapa, con las barras de color del margen de pliego.',
+          en: 'Back of the 5,000 pesos, Pick 452l, serial 09636101: the tree alley, the female figure, “Nocturno,” and the same flap, with the sheet-margin color bars.',
+        },
+        scarcity: {
+          es: '09636101 es un serial ordinario de la misma fecha y el mismo error que 09629901. La rareza del tipo y la producción BanRep de 2010 se documentan una sola vez en esta página.',
+          en: '09636101 is an ordinary serial of the same date and the same error as 09629901. Type scarcity and BanRep’s 2010 production are documented once on this page.',
+        },
+        population: {
+          es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 09636101. La pieza se presenta sin encapsular, aparentemente sin circular.',
+          en: 'A PMG or PCGS census for serial 09636101 has not been independently verified. The note is shown unslabbed, apparently uncirculated.',
+        },
+        grade: {
+          es: 'Sin encapsular · aparentemente sin circular · error de corte (mariposa)',
+          en: 'Unslabbed · apparently uncirculated · butterfly-cut error',
+        },
+        sources: [
+          {
+            href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0452.htm',
+            es: 'Bank Note Museum — Colombia P-452, 5.000 pesos (2001–2014)',
+            en: 'Bank Note Museum — Colombia P-452, 5,000 pesos (2001–2014)',
+            note: {
+              es: 'Tipo Silva, Imprenta de Billetes; anverso Silva, reverso alameda y figura. Esta pieza es 31.07.2010 (452l). El catálogo marca 452m como 01.08.2010 y corrige un 01.09.2010 inexistente.',
+              en: 'Silva type, Imprenta de Billetes; Silva on the face, tree alley and figure on the back. This piece is 31.07.2010 (452l). The catalogue marks 452m as 01.08.2010 and corrects a non-existent 01.09.2010.',
+            },
+          },
+          {
+            href: 'https://en.numista.com/208014',
+            es: 'Numista — Colombia 5.000 pesos (sello nuevo), N# 208014',
+            en: 'Numista — Colombia 5,000 pesos (new bank seal), N# 208014',
+            note: {
+              es: 'Fecha 31.07.2010: P# 452l, TBB B989m, Hernández# 570; firmas JDUE y GHC; Braille en la zona de la filigrana; frecuencia 5 % en el tipo. No se publican columnas de precio.',
+              en: '31.07.2010 date: P# 452l, TBB B989m, Hernández# 570; signatures JDUE and GHC; Braille in the watermark area; 5% frequency within the type. Price columns are not published here.',
+            },
+          },
+          {
+            href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+            es: 'Banco de la República — Producción y circulación de billetes y monedas',
+            en: 'Banco de la República — Banknote and coin production and circulation',
+            note: {
+              es: 'Producción 2010 de 5.000 pesos: 98,149 millones de piezas. Entregas a Tesorería del mismo año: 98,149 millones (totales de la denominación ese año, no de una fecha Pick ni de un error).',
+              en: '2010 production of 5,000-peso notes: 98.149 million pieces. Tesorería deliveries that year: 98.149 million (denomination totals for the year, not one Pick date or error).',
+            },
+          },
+        ],
       },
     ],
   },

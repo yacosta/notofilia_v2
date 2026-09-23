@@ -15,7 +15,7 @@ const holdingsSource = readFileSync(new URL('../data/holdings.ts', import.meta.u
 const milestonesSource = readFileSync(new URL('./milestones.ts', import.meta.url), 'utf8');
 
 function colombiaPieces() {
-  return ['10-pesos-oro-1979', '2-pesos-oro-1977', '1-peso-oro-1974'].flatMap((id) => {
+  return ['10-pesos-oro-1979', '2-pesos-oro-1977', '1-peso-oro-1959-1977'].flatMap((id) => {
     const note = noteById(id);
     assert.ok(note, id);
     return notePieces(note).map((piece) => ({
@@ -104,5 +104,28 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(card.image.startsWith('/images/catalog/'));
     assert.ok(card.imageAlt.es.length > 0);
     assert.ok(card.imageAlt.en.length > 0);
+  });
+
+  it('keeps the newest Silva butterfly-cut holding’s fragment on the homepage card', () => {
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
+    assert.ok(holding);
+    assert.equal(additions.at(-1)?.id, 'co-1921-2-centavos-lazareto');
+    const pieces = notePieces(note).map((piece) => ({
+      id: `co-${piece.id}`,
+      country: 'CO',
+      href: `${notePath(note, 'es')}${piece.id !== note.id ? `#${piece.id}` : ''}`,
+      title: piece.title,
+      dek: piece.lead,
+      pick: piece.pick,
+      serial: piece.serial,
+      cert: '',
+      image: piece.images.front,
+      imageAlt: piece.frontCaption,
+    }));
+    const card = catalogPieceForHolding(holding, pieces);
+    assert.ok(card);
+    assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 });

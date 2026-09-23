@@ -22,11 +22,13 @@ const collectionCatalogSource = readFileSync(new URL('../data/collection-note-ca
 const coinCatalogSource = readFileSync(new URL('../data/colombia-coin-type-catalog.ts', import.meta.url), 'utf8');
 const usaNotesSource = readFileSync(new URL('../data/estados-unidos.ts', import.meta.url), 'utf8');
 const mpcNotesSource = readFileSync(new URL('../data/mpc-vietnam.ts', import.meta.url), 'utf8');
+const mpcProgramNotesSource = readFileSync(new URL('../data/mpc.ts', import.meta.url), 'utf8');
 const chinaNotesSource = readFileSync(new URL('../data/china.ts', import.meta.url), 'utf8');
 const englandNotesSource = readFileSync(new URL('../data/england-polymer.ts', import.meta.url), 'utf8');
 const canadaNotesSource = readFileSync(new URL('../data/canada-polymer.ts', import.meta.url), 'utf8');
 const malaysiaNotesSource = readFileSync(new URL('../data/malaysia-polymer.ts', import.meta.url), 'utf8');
 const puertoRicoNotesSource = readFileSync(new URL('../data/puerto-rico.ts', import.meta.url), 'utf8');
+const ecuadorNotesSource = readFileSync(new URL('../data/ecuador.ts', import.meta.url), 'utf8');
 const allNotesCatalogHtml = new URL(
   '../../dist/coleccion/notafilia/catalogo/index.html',
   import.meta.url,
@@ -208,6 +210,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /notePieces/);
     assert.match(collectionCatalogSource, /unitedStatesNotes/);
     assert.match(collectionCatalogSource, /mpcVietnamNotes/);
+    assert.match(collectionCatalogSource, /mpcProgramNotes/);
     assert.match(collectionCatalogSource, /victoryNotes/);
     assert.match(collectionCatalogSource, /pnbNotes/);
     assert.match(collectionCatalogSource, /chinaNotes/);
@@ -215,6 +218,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(collectionCatalogSource, /canadaNotes/);
     assert.match(collectionCatalogSource, /malaysiaNotes/);
     assert.match(collectionCatalogSource, /puertoRicoNotes/);
+    assert.match(collectionCatalogSource, /ecuadorNotes/);
     assert.match(collectionCatalogSource, /inCollection: true/);
     assert.doesNotMatch(collectionCatalogSource, /parseHeritageLots/);
     assert.doesNotMatch(collectionCatalogSource, /\b(price|precio|realized):/i);
@@ -224,15 +228,18 @@ describe('Collection-wide banknote catalog', () => {
     const colombiaPieces = colombiaNotes.flatMap((note) => notePieces(note));
     const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
+    const mpcProgramNotes = countTopLevelSerials(extractExportArrayBlock(mpcProgramNotesSource, 'mpcProgramNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
     const englandNotes = (extractExportArrayBlock(englandNotesSource, 'englandNotes').match(/^    serial: '/gm) || []).length;
     const canadaNotes = (extractExportArrayBlock(canadaNotesSource, 'canadaNotes').match(/^    serial: '/gm) || []).length;
     const malaysiaNotes = (extractExportArrayBlock(malaysiaNotesSource, 'malaysiaNotes').match(/^    serial: '/gm) || []).length;
     const puertoRicoNotes = (extractExportArrayBlock(puertoRicoNotesSource, 'puertoRicoNotes').match(/^    serial: '/gm) || []).length;
+    const ecuadorNotes = (extractExportArrayBlock(ecuadorNotesSource, 'ecuadorNotes').match(/^    serial: '/gm) || []).length;
 
-    assert.equal(colombiaPieces.length, 38);
-    assert.equal(usaNotes, 27);
+    assert.equal(colombiaPieces.length, 40);
+    assert.equal(usaNotes, 31);
     assert.equal(mpcNotes, 4);
+    assert.equal(mpcProgramNotes, 1);
     assert.equal(polymerNotes.length, 1);
     assert.match(polymerNotes[0], /serial: 'J04445744'/);
     assert.equal(englandNotes, 1);
@@ -245,6 +252,11 @@ describe('Collection-wide banknote catalog', () => {
     assert.match(puertoRicoNotesSource, /serial: '32'/);
     assert.match(puertoRicoNotesSource, /serial: '13085'/);
     assert.match(puertoRicoNotesSource, /serial: '4548454'/);
+    const ecuadorHoldings = 3;
+    assert.equal(ecuadorNotes, 2);
+    assert.match(ecuadorNotesSource, /serial: 'K117574'/);
+    assert.match(ecuadorNotesSource, /serial: 'WF00000002'/);
+    assert.match(ecuadorNotesSource, /serial: 'WF00000003'/);
 
     if (!existsSync(allNotesCatalogHtml)) return;
 
@@ -258,7 +270,7 @@ describe('Collection-wide banknote catalog', () => {
     }, {});
 
     assert.equal(byCountry.CO, colombiaPieces.length);
-    assert.equal(byCountry.US, usaNotes + mpcNotes);
+    assert.equal(byCountry.US, usaNotes + mpcNotes + mpcProgramNotes);
     assert.equal(byCountry.CN, polymerNotes.length);
     if (byCountry.GB) {
       assert.equal(byCountry.GB, englandNotes);
@@ -272,6 +284,9 @@ describe('Collection-wide banknote catalog', () => {
     if (byCountry.PR) {
       assert.equal(byCountry.PR, puertoRicoNotes);
     }
+    if (byCountry.EC) {
+      assert.equal(byCountry.EC, ecuadorHoldings);
+    }
     assert.equal(
       documents.length,
       colombiaPieces.length +
@@ -282,6 +297,7 @@ describe('Collection-wide banknote catalog', () => {
         (byCountry.CA || 0) +
         (byCountry.MY || 0) +
         (byCountry.PR || 0) +
+        (byCountry.EC || 0) +
         5,
       'includes Philippines PNB and victory notes, Puerto Rico, and polymer holdings',
     );

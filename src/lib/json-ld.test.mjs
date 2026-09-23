@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { definedTermJsonLd, faqPageJsonLd, inferGradingService, visualArtworkJsonLd } from './json-ld.ts';
+import {
+  definedTermJsonLd,
+  faqPageJsonLd,
+  imageObjectJsonLd,
+  inferGradingService,
+  visualArtworkJsonLd,
+} from './json-ld.ts';
 
 const articlePage = readFileSync(new URL('../components/editorial/EditorialArticlePage.astro', import.meta.url), 'utf8');
 
@@ -19,6 +25,7 @@ describe('catalogue VisualArtwork JSON-LD', () => {
       gradingService: 'NGC',
       certNumber: '4685927-012',
       serial: '',
+      image: '/images/catalog/netherlands/utrecht-ducat.jpg',
     });
     assert.equal(full['@type'], 'VisualArtwork');
     assert.equal(full.identifier, 'KM# 7.4');
@@ -26,6 +33,9 @@ describe('catalogue VisualArtwork JSON-LD', () => {
     assert.equal(full.producer.name, 'Provincial mint of Utrecht');
     const names = full.additionalProperty.map((item) => item.name);
     assert.deepEqual(names, ['catalogNumber', 'gradingService', 'certificateNumber']);
+    assert.equal(full.image.creator['@type'], 'Person');
+    assert.equal(full.image.creator.name, 'Yezid Acosta');
+    assert.match(full.image.copyrightNotice, /^© \d{4} NOTOFILIA$/);
 
     assert.equal(inferGradingService('NGC AU Details · Edge Filing'), 'NGC');
     assert.equal(inferGradingService('Sin encapsular (colección privada)'), undefined);
@@ -43,6 +53,28 @@ describe('catalogue VisualArtwork JSON-LD', () => {
   });
 });
 
+describe('ImageObject JSON-LD', () => {
+  it('includes Google Images attribution and licensing metadata', () => {
+    const image = imageObjectJsonLd({
+      image: '/uploads/example-banknote.jpg',
+      locale: 'en',
+      caption: 'Example banknote',
+    });
+
+    assert.equal(image.contentUrl, 'https://notofilia.com/uploads/example-banknote.jpg');
+    assert.equal(image.creator['@type'], 'Person');
+    assert.equal(image.creator['@id'], 'https://notofilia.com/#yezid-acosta');
+    assert.equal(image.creator.name, 'Yezid Acosta');
+    assert.match(image.copyrightNotice, /^© \d{4} NOTOFILIA$/);
+    assert.equal(image.license, 'https://notofilia.com/en/editorial/');
+    assert.equal(image.acquireLicensePage, 'https://notofilia.com/en/contact/');
+  });
+
+  it('is shared by editorial article images', () => {
+    assert.match(articlePage, /image: imageObjectJsonLd\(\{ image: imageUrl, locale,/);
+  });
+});
+
 describe('glossary and FAQ JSON-LD', () => {
   it('points DefinedTerm at the glossary DefinedTermSet', () => {
     const term = definedTermJsonLd({
@@ -53,6 +85,8 @@ describe('glossary and FAQ JSON-LD', () => {
       locale: 'es',
     });
     assert.equal(term['@type'], 'DefinedTerm');
+    assert.equal(term['@id'], 'https://notofilia.com/glosario/notafilia/#term');
+    assert.equal(term.url, 'https://notofilia.com/glosario/notafilia/');
     assert.equal(term.inDefinedTermSet, 'https://notofilia.com/glosario/#glossary');
   });
 

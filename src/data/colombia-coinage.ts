@@ -1,5 +1,4 @@
 import type { CatalogSource, LocalizedText } from './catalog';
-import { LAZARETTOS_PATH } from './lazarettos';
 
 export const COLOMBIA_COINAGE_PATH = '/coleccion/colombia-numismatica/';
 
@@ -188,14 +187,8 @@ export const coinageCopy = {
       'La guerra rompió ese orden. En 1811 la Junta de Cartagena acuñó cobres de medio y dos reales —ya con leyendas en castellano—; Nariño mandó en 1813 la moneda «de la china» para la Campaña del Sur; Bolívar, dueño de las cecas tras Boyacá, pidió el mismo tipo. Adolfo Meisel documenta también las piezas realistas de Popayán y Santa Marta y la caraqueña de baja ley. El Congreso de Cúcuta quiso volver a la ley española; Santander eludió la norma con emisiones antedatadas. En 1836 se unificó el régimen —granadino de plata y de oro—; en 1846–1847, bajo Mosquera, Lino de Pombo y Florentino González impusieron la ley 0,900 y el sistema decimal, y se amortizó la macuquina.',
       'La República de 1886 heredó el peso. Las cecas se paralizaron hacia 1890; las cocobolas de 50 centavos, con el perfil de Soledad Román, se encargaron en Nueva York. El Banco de la República, en su cronología, asumió la Casa de Bogotá en 1946 y compró la de Medellín en 1953. El 9 de abril de 1948 la casa resistió el Bogotazo. Un primer museo numismático abrió al público a comienzos de los años sesenta; el claustro de Calle 11 n.° 4-93 se recuperó en obras que culminaron en 1982, el mismo año en que Ibagué empezó a fabricar cospeles. En 1987 se trasladó allí la acuñación. La Ley 31 de 1993 incorporó la casa al banco emisor. En diciembre de 1996 abrió la exposición permanente. La familia de 2012 —biodiversidad y agua— ganó al año siguiente el premio a la mejor serie circulante. Esta vitrina reúne ese arco: de las macuquinas de Santa Fe al peso actual.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Cinco vitrinas, en la misma fila de izquierda a derecha: Santa Fe colonial, Independencia y Gran Colombia, Nueva Granada, la República y Lazarettos. Las fichas de cada tipo se publicarán como en Filipinas y en el papel colombiano, a medida que se documenten.',
-    viewChapter: 'Leer el capítulo',
-    viewCase: 'Leer el catálogo',
     viewPiece: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     notaphilyLead: 'El papel moneda de estas mismas épocas se documenta en la vitrina de notafilia.',
     notaphilyLink: 'Colombia · Banca libre y Banco de la República',
     visualCatalogLead: 'El catálogo visual reúne los tipos con buscador, cuatro por fila, sin precios.',
@@ -215,14 +208,8 @@ export const coinageCopy = {
       'War broke that order. In 1811 Cartagena’s junta struck half-real and two-real coppers — already with Castilian legends; in 1813 Nariño ordered the china coin for the Southern Campaign; Bolívar, master of the mints after Boyacá, asked for the same type. Adolfo Meisel also records royalist issues from Popayán and Santa Marta and the low-fineness caraqueña. The Cúcuta Congress tried to restore Spanish fineness; Santander evaded the rule with antedated issues. In 1836 the regime was unified — granadino de plata and de oro; in 1846–1847, under Mosquera, Lino de Pombo and Florentino González imposed 0.900 fine metal and the decimal system, and the cob was withdrawn.',
       'The Republic of 1886 inherited the peso. The mints stalled about 1890; the 50-centavo cocobolas, with Soledad Román’s profile, were ordered in New York. The Banco de la República, on its own timeline, took over the Bogotá mint in 1946 and bought Medellín in 1953. On 9 April 1948 the house held in the Bogotazo. A first public numismatic museum opened in the early 1960s; restoration of the cloister at Calle 11 no. 4-93 finished in 1982, the same year Ibagué began making planchets. In 1987 striking moved there. Law 31 of 1993 folded the house into the issuing bank. The permanent exhibition opened in December 1996. The 2012 family — biodiversity and water — won the next year’s prize for best circulating series. This case gathers that arc: from the cobs of Santa Fe to the peso now in the pocket.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Five cases in one row, left to right: colonial Santa Fe, Independence and Gran Colombia, New Granada, the Republic, and Lazarettos. Individual type pages will be published as they are documented, as in the Philippines case and the Colombian paper case.',
-    viewChapter: 'Read the chapter',
-    viewCase: 'Read the catalog',
     viewPiece: 'Open the piece',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     notaphilyLead: 'Paper money from the same periods is documented in the notaphily case.',
     notaphilyLink: 'Colombia · Free banking and the Banco de la República',
     visualCatalogLead: 'The visual catalog gathers the types with search, four to a row, and no prices.',
@@ -233,16 +220,3 @@ export const coinageCopy = {
 export function coinagePath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/colombia-numismatics/' : COLOMBIA_COINAGE_PATH;
 }
-
-export function coinageChapterHref(id: ColombiaCoinageChapterId): string {
-  return `#${id}`;
-}
-
-/** Extra catalog cards after the four Colombia chapters — same row, not in-page essays. */
-export const colombiaCoinageExtraCases = [
-  {
-    href: LAZARETTOS_PATH,
-    years: { es: 'desde 1598', en: 'from 1598' },
-    title: { es: 'Lazarettos', en: 'Lazarettos' },
-  },
-] as const;

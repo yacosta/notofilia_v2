@@ -1,17 +1,26 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { BANCA_LIBRE_PATH } from '../data/colombia-banca-libre';
+import { noteById as colombiaNoteById } from '../data/colombia-notes';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import {
   USA_BARABOO_SCRIP_PATH,
+  USA_COLONIAL_PATH,
+  USA_OBSOLETE_PATH,
   USA_MISC_PATH,
   USA_MPC_PATH,
+  USA_MPC_PROGRAM_PATH,
   USA_PATH,
   USA_RENCY_PATH,
   barabooScripSeriesCopy,
+  colonialSeriesCopy,
+  obsoleteSeriesCopy,
+  notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
-import { USA_COINAGE_PATH, coinById } from '../data/estados-unidos-coinage';
+import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
+import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -23,6 +32,9 @@ import { PUERTO_RICO_PATH } from '../data/puerto-rico';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
+import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
+import { LAZARETTOS_NUMISMATICS_PATH } from '../data/lazarettos-numismatics';
+import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
@@ -39,10 +51,10 @@ export type NavNode = {
   en: string;
   href?: string;
   /**
-   * ISO 3166-1 alpha-2 code for a decorative [flag-icons](https://github.com/lipis/flag-icons) flag.
+   * ISO 3166-1 alpha-2 or a custom flag code (`co-1889`, `us-13`, `us-25`, Hawaii `us-hi`) for a decorative flag.
    * Required on country rows under Notafilia, Numismática, and polymer country children
    * (China `cn`, England `gb`, …). Continent headings and catalog/misc links omit it.
-   * Add the code to `CountryFlag` `FLAG_CODES` and `public/flags/{code}.svg` (flag-icons 4x3).
+   * Add the code to `CountryFlag` `FLAG_CODES` and its matching asset in `public/flags/`.
    */
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
@@ -60,6 +72,29 @@ const usTrumpDollar = coinById('1-dolar-trump-1776-2026');
 if (!usTrumpDollar) {
   throw new Error('Missing US Trump dollar coin for mega-nav');
 }
+
+const usHt34 = coinById('ht-34-1837-burro-tortuga');
+if (!usHt34) {
+  throw new Error('Missing US Hard Times HT-34 token for mega-nav');
+}
+
+const usHt181 = coinById('ht-181-c1835-john-j-adams');
+if (!usHt181) {
+  throw new Error('Missing US Hard Times HT-181 token for mega-nav');
+}
+
+const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
+if (!spainHalfEscudo) {
+  throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
+}
+
+const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
+if (!colombia1PesoBanRep) {
+  throw new Error('Missing Colombia BanRep 1 peso 1959–1977 note for mega-nav');
+}
+
+const colonialNotes = notesForChapter('us-colonial');
+const obsoleteNotes = notesForChapter('us-obsoleto');
 
 export const megaNav: NavNode[] = [
   {
@@ -82,6 +117,19 @@ export const megaNav: NavNode[] = [
         flag: 'co',
         children: [
           {
+            id: 'banca-libre',
+            es: 'Banca libre (1870–1887)',
+            en: 'Free banking (1870–1887)',
+            href: BANCA_LIBRE_PATH,
+            flag: 'co-1889',
+          },
+          {
+            id: 'colombia-1-peso-oro-1959-1977',
+            es: 'Banco de la República - 1 peso (1959 - 1977)',
+            en: 'Banco de la República - 1 peso (1959 - 1977)',
+            href: colombia1PesoBanRep.path,
+          },
+          {
             id: 'emisiones-extranjero-guatemala',
             es: 'Guatemala (Emisiones en el Extranjero)',
             en: 'Guatemala (Issues Abroad)',
@@ -98,11 +146,51 @@ export const megaNav: NavNode[] = [
         flag: 'us',
         children: [
           {
+            id: 'moneda-colonial',
+            es: `${colonialSeriesCopy.es.title} (${colonialSeriesCopy.es.kicker})`,
+            en: `${colonialSeriesCopy.en.title} (${colonialSeriesCopy.en.kicker})`,
+            href: USA_COLONIAL_PATH,
+            flag: 'us-13',
+            children: colonialNotes.map((note) => ({
+              id: note.id,
+              es: note.title.es,
+              en: note.title.en,
+              href: note.path,
+            })),
+          },
+          {
+            id: 'billetes-obsoletos',
+            es: `${obsoleteSeriesCopy.es.title} (${obsoleteSeriesCopy.es.kicker})`,
+            en: `${obsoleteSeriesCopy.en.title} (${obsoleteSeriesCopy.en.kicker})`,
+            href: USA_OBSOLETE_PATH,
+            flag: 'us-25',
+            children: obsoleteNotes.map((note) => ({
+              id: note.id,
+              es: note.title.es,
+              en: note.title.en,
+              href: note.path,
+            })),
+          },
+          {
             id: 'filipinas',
             es: 'Filipinas (1916 - 1945)',
             en: 'Philippines (1916 - 1945)',
             href: SERIES_PATH,
             flag: 'ph',
+          },
+          {
+            id: 'billetes-emergencia-iigm',
+            es: 'Billetes de emergencia de la II Guerra Mundial',
+            en: 'World War II emergency banknotes',
+            href: WWII_EMERGENCY_PATH,
+            flag: 'us-hi',
+          },
+          {
+            id: 'mpc',
+            es: 'MPC - Guerra de Corea (1951 - 1954)',
+            en: 'MPC - Korean War (1951 - 1954)',
+            href: USA_MPC_PROGRAM_PATH,
+            flag: 'kr',
           },
           {
             id: 'mpc-vietnam',
@@ -147,6 +235,13 @@ export const megaNav: NavNode[] = [
         en: 'Ecuador',
         href: ECUADOR_PATH,
         flag: 'ec',
+      },
+      {
+        id: 'moneda-prueba-giori',
+        es: 'Moneda de prueba Giori',
+        en: 'Giori test currency',
+        href: GIORI_TEST_NOTES_PATH,
+        icon: 'guides',
       },
       {
         id: 'polimero',
@@ -218,6 +313,29 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
+        children: [
+          {
+            id: 'numismatica-lazaretos',
+            es: 'Numismática de los Lazaretos',
+            en: 'Numismatics of the Lazarettos',
+            href: LAZARETTOS_NUMISMATICS_PATH,
+          },
+        ],
+      },
+      {
+        id: 'es-monedas',
+        es: 'España',
+        en: 'Spain',
+        href: SPAIN_COINAGE_PATH,
+        flag: 'es',
+        children: [
+          {
+            id: 'es-medio-escudo-madrid-1757-jb',
+            es: spainHalfEscudo.title.es,
+            en: spainHalfEscudo.title.en,
+            href: spainHalfEscudo.path,
+          },
+        ],
       },
       {
         id: 'us-monedas',
@@ -226,6 +344,26 @@ export const megaNav: NavNode[] = [
         href: USA_COINAGE_PATH,
         flag: 'us',
         children: [
+          {
+            id: 'us-fichas-hard-times',
+            es: 'Fichas Hard Times',
+            en: 'Hard Times tokens',
+            href: USA_HARD_TIMES_PATH,
+            children: [
+              {
+                id: 'us-ht-34-1837-burro-tortuga',
+                es: usHt34.title.es,
+                en: usHt34.title.en,
+                href: usHt34.path,
+              },
+              {
+                id: 'us-ht-181-c1835-john-j-adams',
+                es: usHt181.title.es,
+                en: usHt181.title.en,
+                href: usHt181.path,
+              },
+            ],
+          },
           {
             id: 'us-1-dolar-trump-1776-2026',
             es: usTrumpDollar.title.es,

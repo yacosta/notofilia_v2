@@ -1,0 +1,76 @@
+---
+import { CATALOG_PIECE_GRID, CATALOG_PIECE_THUMB_SIZES } from '../../lib/catalog-grid';
+import { cardImageSrc, imageSrcset } from '../../lib/images';
+import type { Locale } from '../../lib/site';
+import { pieceChrome } from '../../data/piece-chrome';
+
+type Sibling = {
+  href: string;
+  title: string;
+  image?: string;
+};
+
+interface Props {
+  locale: Locale;
+  prev?: Sibling;
+  next?: Sibling;
+  related: Sibling[];
+  relatedLead?: string;
+}
+
+const { locale, prev, next, related, relatedLead } = Astro.props;
+const t = pieceChrome(locale);
+const relatedIntro = relatedLead ?? t.relatedLead;
+---
+
+{
+  prev || next ? (
+    <nav class="mt-14 flex flex-wrap justify-between gap-4 font-sans text-[14px]" aria-label={`${t.prev} / ${t.next}`}>
+      {prev ? (
+        <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={prev.href}>
+          ← {t.prev}: {prev.title}
+        </a>
+      ) : (
+        <span />
+      )}
+      {next ? (
+        <a class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream" href={next.href}>
+          {t.next}: {next.title} →
+        </a>
+      ) : null}
+    </nav>
+  ) : null
+}
+
+{
+  related.length ? (
+    <section class="mt-14" aria-labelledby="related-pieces-heading">
+      <h2 id="related-pieces-heading" class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+        {t.relatedHeading}
+      </h2>
+      <p class="mb-6 mt-0 text-[15px]/6 text-muted">{relatedIntro}</p>
+      <ul class:list={['m-0', CATALOG_PIECE_GRID]}>
+        {related.map((item) => (
+          <li>
+            <a class="block overflow-hidden rounded-[6px] border border-line-strong bg-panel no-underline hover:border-cream" href={item.href}>
+              {item.image ? (
+                <img
+                  src={cardImageSrc(item.image)}
+                  srcset={imageSrcset(item.image, [480, 800, 1200, 1600])}
+                  sizes={CATALOG_PIECE_THUMB_SIZES}
+                  alt=""
+                  width="800"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  class="aspect-[2/1] w-full object-cover"
+                />
+              ) : null}
+              <span class="block p-4 font-display text-[1.05rem] text-cream">{item.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ) : null
+}

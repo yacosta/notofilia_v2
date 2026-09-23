@@ -1,0 +1,206 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { enhanceProseHtml } from '../../data/editorial';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { imageObjectJsonLd } from '../../lib/json-ld';
+import { NOTAFILIA_PATH } from '../../data/notafilia';
+import { noteById, notePath } from '../../data/estados-unidos';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
+import bodyEs from '../../data/giori-test-notes/es.html?raw';
+import bodyEn from '../../data/giori-test-notes/en.html?raw';
+import {
+  GIORI_HOLDING_ID,
+  GIORI_TEST_NOTES_HERO,
+  gioriTestNotesCopy,
+  gioriTestNotesHoldingHref,
+  gioriTestNotesPath,
+  gioriTestNotesSources,
+  gioriTypeSlots,
+} from '../../data/giori-test-notes';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = gioriTestNotesCopy[locale];
+const pathname = gioriTestNotesPath(locale);
+const notafiliaHref = localizePath(NOTAFILIA_PATH, locale);
+const holdingHref = localizePath(gioriTestNotesHoldingHref, locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const note = noteById(GIORI_HOLDING_ID);
+if (!note) {
+  throw new Error(`Missing Giori holding ${GIORI_HOLDING_ID}`);
+}
+const ogImage = GIORI_TEST_NOTES_HERO.src;
+const pageUrl = new URL(pathname, SITE_URL).href;
+const imageUrl = new URL(ogImage, SITE_URL).href;
+const thumbClass = 'mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      alternativeHeadline: t.metaTitle !== t.title ? t.metaTitle : undefined,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.heroAlt }),
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.notafilia, item: notafiliaHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={ogImage}
+  ogImageAlt={t.heroAlt}
+  ogType="article"
+  publishedTime={t.published}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={GIORI_TEST_NOTES_HERO.src}
+      alt={t.heroAlt}
+      width={GIORI_TEST_NOTES_HERO.width}
+      height={GIORI_TEST_NOTES_HERO.height}
+      headingId="giori-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.nav}
+      imageClass="object-[50%_42%]"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: notafiliaHref, label: t.notafilia },
+          { label: t.nav },
+        ]}
+      />
+
+      <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+      <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+        <time datetime={t.published}>{t.dateLabel}</time>
+      </p>
+
+      <section class="mb-10 mt-0" aria-labelledby="giori-gallery-heading">
+        <h2 id="giori-gallery-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.galleryHeading}
+        </h2>
+        <p class="mb-6 mt-0 max-w-[46rem] text-[17px] leading-[1.6] text-cream-dim">{t.caption}</p>
+        <ol class:list={['m-0', CATALOG_PIECE_GRID]} aria-label={t.galleryAria}>
+          {
+            gioriTypeSlots.map((slot) => {
+              const holding = slot.holdingId ? noteById(slot.holdingId) : undefined;
+              if (holding) {
+                return (
+                  <li class="min-w-0">
+                    <a
+                      href={notePath(holding, locale)}
+                      class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                    >
+                      <CatalogThumb
+                        src={holding.images.front}
+                        alt={holding.frontCaption[locale]}
+                        width={holding.images.width}
+                        height={holding.images.height}
+                        class={thumbClass}
+                      />
+                      <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                        {holding.title[locale]}
+                      </h3>
+                      <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                        {t.pickLabel} {holding.pick} · {t.serialLabel} {holding.serial_display ?? holding.serial}
+                      </p>
+                      <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                    </a>
+                  </li>
+                );
+              }
+              return (
+                <li class="min-w-0" aria-hidden="true">
+                  <div class="flex h-full flex-col rounded-[6px] border border-line bg-panel p-2 sm:p-4">
+                    <div class={`${thumbClass} mb-0 border border-dashed border-line`}></div>
+                  </div>
+                </li>
+              );
+            })
+          }
+        </ol>
+      </section>
+
+      <aside
+        class="mb-10 border border-[rgba(138,109,59,0.35)] bg-[rgba(138,109,59,0.08)] px-5 py-5 sm:px-6"
+        aria-labelledby="giori-market-heading"
+      >
+        <h2 id="giori-market-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.marketKind}
+        </h2>
+        <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">{t.marketNote}</p>
+      </aside>
+
+      <div class="prose-notofilia" lang={locale} set:html={body} />
+
+      <section class="mt-10 border-t border-line pt-6" aria-labelledby="giori-sources-heading">
+        <h2 id="giori-sources-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.sourcesTitle}
+        </h2>
+        <ul class="m-0 grid list-none gap-2 p-0">
+          {
+            gioriTestNotesSources.map((source) => (
+              <li>
+                <a
+                  href={source.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {source[locale]}
+                  <NewWindowHint locale={locale} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
+        <a href={holdingHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.holdingCta}
+        </a>
+        <a href={notafiliaHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.notafiliaCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

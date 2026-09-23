@@ -13,6 +13,7 @@ import {
   seriesCopy,
 } from '../../data/polimero-mundial';
 import SourceList from './SourceList.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 
 interface Props {
   locale: Locale;
@@ -67,7 +68,7 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
+          class:list={['m-0', CATALOG_PIECE_GRID]}
           aria-label={copy[locale].polymerByDenomination}
         >
           {

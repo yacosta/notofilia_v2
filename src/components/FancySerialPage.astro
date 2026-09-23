@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
-import { glossaryTermPath, glossaryTerms } from '../data/glossary';
+import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import {
   fancySerialClassLabels,
   fancySerialCopy,
@@ -20,7 +20,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = fancySerialCopy[locale];
 const pathname = fancySerialPath(locale);
-const glossaryEspecial = glossaryTermPath('numeracion-especial', locale);
+const glossaryEspecial = glossaryTermHref('numeracion-especial', locale);
 const classLabels = fancySerialClassLabels[locale];
 
 const holdings: PublishedSerialHit[] = searchDocuments(locale)
@@ -96,7 +96,7 @@ const ui = {
       'numeracion-escalera',
       'numeracion-especial',
       'numeracion-solida',
-    ].map((slug) => [slug, glossaryTermPath(slug, locale)]),
+    ].map((slug) => [slug, glossaryTermHref(slug, locale)]),
   ) as Record<string, string>,
   glossaryTitles: Object.fromEntries(
     [

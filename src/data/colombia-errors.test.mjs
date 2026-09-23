@@ -24,6 +24,7 @@ describe('colombia-errors', () => {
     assert.match(notesSource, /serial: '693949988'/);
     assert.match(notesSource, /serial: '23085962'/);
     assert.match(notesSource, /serial: '11508701'/);
+    assert.match(notesSource, /serial: '09629901'/);
     assert.match(notesSource, /serial: '09636101'/);
     assert.match(notesSource, /serial: '72461316 \/ 72411316'/);
     assert.match(notesSource, /serial: 'AB69350427'/);
@@ -79,5 +80,12 @@ describe('colombia-errors', () => {
     assert.match(pageSource, /t\.errorsTiqueteLink/);
     assert.match(pageSource, /id="tiquete-de-subsidio-heading"/);
     assert.match(pageSource, /href="#tiquetes"/);
+  });
+
+  it('lists both 2010 Silva butterfly-cut serials as separate error cards', () => {
+    assert.match(notesSource, /id: '5000-pesos-error-2010-09629901'/);
+    assert.match(notesSource, /id: '5000-pesos-error-2010-09636101'/);
+    assert.match(notesSource, /shareTypeNarrative: true/);
+    assert.match(pageSource, /#\$\{piece\.id\}/);
   });
 });

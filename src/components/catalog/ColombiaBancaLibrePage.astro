@@ -1,0 +1,202 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { COLOMBIA_PATH } from '../../data/colombia';
+import { GLOSSARY_PATH } from '../../data/glossary';
+import { bancaLibreCopy, bancaLibrePath } from '../../data/colombia-banca-libre';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = bancaLibreCopy[locale];
+const pathname = bancaLibrePath(locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+const glossaryHref = localizePath(`${GLOSSARY_PATH}banca-libre/`, locale);
+const blogHref = localizePath('/blog/origenes-banca-comercial-colombia-banca-libre/', locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.series, item: localizePath(COLOMBIA_PATH, locale) },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout title={`${t.metaTitle} · Notofilia`} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: localizePath(COLOMBIA_PATH, locale), label: t.series },
+          { label: t.nav },
+        ]}
+      />
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+          <time datetime={t.published}>{t.dateLabel}</time>
+        </p>
+      </header>
+
+      {
+        t.sections.map((section) => (
+          <section class="mb-10" aria-labelledby={section.id}>
+            <h2 id={section.id} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {section.title}
+            </h2>
+            {section.paragraphs.map((paragraph) => (
+              <p class="mb-4 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">{paragraph}</p>
+            ))}
+            {section.note ? (
+              <p class="mb-4 mt-4 border-l-2 border-line-strong pl-4 text-[16px]/7 text-muted">{section.note}</p>
+            ) : null}
+            {section.tables?.map((table) => (
+              <div class="mb-6 overflow-x-auto border border-line-strong">
+                <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+                  <caption class="sr-only">{table.caption}</caption>
+                  <thead>
+                    <tr class="border-b border-line-strong bg-panel text-left">
+                      {table.headers.map((header) => (
+                        <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                          {header}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row) => (
+                      <tr class="border-b border-line-strong last:border-b-0">
+                        {row.map((cell, index) => {
+                          const text = typeof cell === 'string' ? cell : cell.label;
+                          const href = typeof cell === 'string' ? undefined : localizePath(cell.href, locale);
+                          const content = href ? (
+                            <a
+                              href={href}
+                              class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                            >
+                              {text}
+                            </a>
+                          ) : (
+                            text
+                          );
+                          return index === 0 ? (
+                            <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                              {content}
+                            </th>
+                          ) : (
+                            <td class="px-3 py-2.5">{content}</td>
+                          );
+                        })}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </section>
+        ))
+      }
+
+      <section class="mb-10" aria-labelledby="banca-libre-holdings">
+        <h2 id="banca-libre-holdings" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.holdingsTitle}
+        </h2>
+        <p class="mb-4 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty]">{t.holdingsLead}</p>
+        <ul class="m-0 grid list-none gap-3 p-0">
+          {
+            t.holdings.map((holding) => (
+              <li>
+                <a
+                  href={localizePath(holding.href, locale)}
+                  class="inline-flex min-h-11 flex-col justify-center text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  <span>{holding.label}</span>
+                  <span class="font-sans text-[14px] text-muted no-underline">{holding.dek}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="banca-libre-sources">
+        <h2 id="banca-libre-sources" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.sourcesTitle}
+        </h2>
+        <ul class="m-0 grid list-none gap-2 p-0">
+          {
+            t.sources.map((source) => (
+              <li>
+                <a
+                  href={source.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {source.label}
+                  <NewWindowHint locale={locale} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="mt-12 mb-4">
+        <a
+          href={localizePath(COLOMBIA_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.catalogCta}
+        </a>
+      </p>
+      <p class="mb-4 mt-0">
+        <a
+          href={glossaryHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.glossaryCta}
+        </a>
+      </p>
+      <p class="mb-0 mt-0">
+        <a href={blogHref} class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream">
+          {t.blogCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

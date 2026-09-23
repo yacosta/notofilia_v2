@@ -7,6 +7,8 @@ import type { TypeCatalogDocument, TypeCatalogEra, TypeCatalogFilter, TypeCatalo
 export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
+  | '1-escudo-popayan-1801-p-jf'
+  | '1-real-bogota-1810-nr-jf'
   | '1-4-real-santa-marta-1820'
   | '1-peso-pm-1907'
   | '2-pesos-pm-1907'
@@ -14,6 +16,7 @@ export type ColombiaCoinTypeId =
   | '10-centavos-palonegro-1902'
   | '20-centavos-palonegro-1902'
   | '50-centavos-palonegro-1902'
+  | '2-centavos-lazareto-1921'
   | 'lazareto-50-centavos-1928'
   | '50-pesos-1989'
   | '200-pesos-1994'
@@ -49,6 +52,36 @@ export type ColombiaCoinType = {
 
 /** Seed types from BanRep / González White essays. Tag `image` here as coins are photographed. */
 export const colombiaCoinTypes: ColombiaCoinType[] = [
+  {
+    id: '1-escudo-popayan-1801-p-jf',
+    era: 'santa-fe',
+    year: '1801',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59',
+    title: { es: '1 escudo · Popayán P–JF · 1801', en: '1 escudo · Popayán P–JF · 1801' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, ceca P y ensaye JF. En la colección.',
+      en: 'Charles IV gold escudo, mint P and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-popayan-1801-p-jf',
+  },
+  {
+    id: '1-real-bogota-1810-nr-jf',
+    era: 'santa-fe',
+    year: '1810',
+    denomination: { es: '1 real', en: '1 real' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 68.1 · Restrepo 111.3 · Calicó 651',
+    title: { es: '1 real · Bogotá NR–JF · 1810', en: '1 real · Bogotá NR–JF · 1810' },
+    dek: {
+      es: 'Real colonial en nombre de Fernando VII, busto de Carlos IV. En la colección.',
+      en: 'Colonial real in the name of Ferdinand VII, bust of Charles IV. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-real-bogota-1810-nr-jf',
+  },
   {
     id: '1-4-real-santa-marta-1820',
     era: 'independencia',
@@ -147,6 +180,24 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
       en: 'Fifty centavos of Palonegro, 1902. Hernández groups them with the 10 and 20 as wartime coscojas, not lazaretto coin. Image pending.',
     },
     flags: ['pending'],
+  },
+  {
+    id: '2-centavos-lazareto-1921',
+    era: 'republica',
+    year: '1921',
+    denomination: { es: '2 centavos', en: '2 centavos' },
+    issuer: {
+      es: 'Lazaretos (Agua de Dios, Contratación, Caño del Oro)',
+      en: 'Lazarettos (Agua de Dios, Contratación, Caño del Oro)',
+    },
+    reference: 'KM# L10 · Restrepo 355.1 · Hernández Cód. 313',
+    title: { es: '2 centavos · Lazareto · 1921', en: '2 centavos · Lazaretto · 1921' },
+    dek: {
+      es: 'Cuproníquel de 1921 para el cordón sanitario. En la colección.',
+      en: '1921 cupronickel for the sanitary cordon. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '2-centavos-lazareto-1921',
   },
   {
     id: 'lazareto-50-centavos-1928',
@@ -402,10 +453,10 @@ export const coinCatalogCopy = {
   es: {
     metaTitle: 'Catálogo visual de monedas de Colombia | Notofilia',
     metaDescription:
-      'Tipos de moneda metálica colombiana: Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios. Las imágenes se añaden a medida que se documentan.',
+      'Tipos de moneda metálica colombiana: el escudo de Popayán de 1801, el real colonial de Santa Fe, Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios. Las imágenes se añaden a medida que se documentan.',
     kicker: 'Colombia-Numismática',
     title: 'Catálogo visual de monedas',
-    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. La pieza de Santa Marta ya tiene foto; pesos p/m, Palonegro y conmemorativas recientes se etiquetan cuando se fotografíen.',
+    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. El escudo de Popayán de 1801, el real de Bogotá de 1810 y el cuartillo de Santa Marta ya tienen foto; pesos p/m, Palonegro y conmemorativas recientes se etiquetan cuando se fotografíen.',
     nav: 'Catálogo visual',
     searchLabel: 'Buscar tipos de monedas',
     searchPlaceholder: 'KM, ceca, denominación, año…',
@@ -449,10 +500,10 @@ export const coinCatalogCopy = {
   en: {
     metaTitle: 'Visual catalog of Colombian coins | Notofilia',
     metaDescription:
-      'Colombian coin types: Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices. Images are added as coins are documented.',
+      'Colombian coin types: the 1801 Popayán escudo, the Santa Fe colonial real, Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices. Images are added as coins are documented.',
     kicker: 'Colombia-Numismatics',
     title: 'Visual coin catalog',
-    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The Santa Marta piece already has a photograph; p/m pesos, Palonegro, and recent commemoratives stay ready to tag when they are shot.',
+    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The 1801 Popayán escudo, the 1810 Bogotá real, and the Santa Marta piece already have photographs; p/m pesos, Palonegro, and recent commemoratives stay ready to tag when they are shot.',
     nav: 'Visual catalog',
     searchLabel: 'Search coin types',
     searchPlaceholder: 'KM, mint, denomination, year…',

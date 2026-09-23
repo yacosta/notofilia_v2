@@ -9,18 +9,28 @@ import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-co
 import { NOTAFILIA_NOTES_CATALOG_PATH, collectionNoteCatalogCopy } from '../data/collection-note-catalog';
 import {
   barabooScripSeriesCopy,
+  colonialSeriesCopy,
+  obsoleteSeriesCopy,
   rencySeriesCopy,
   unitedStatesNotes,
   USA_BARABOO_SCRIP_PATH,
+  USA_COLONIAL_PATH,
+  USA_OBSOLETE_PATH,
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
-import { glossaryTermPath, glossaryTerms } from '../data/glossary';
+import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
+import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
+import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
+import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
+import { mpcProgramNotes } from '../data/mpc';
 import { netherlandsCoins } from '../data/netherlands-coinage';
+import { spainCoins } from '../data/espana-coinage';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage';
 import { victoryNotes } from '../data/philippines-victory-66';
 import { pnbNotes } from '../data/philippines-pnb-1916';
 import { puertoRicoNotes } from '../data/puerto-rico';
+import { ecuadorNotes, notePieces as ecuadorNotePieces } from '../data/ecuador';
 import { collections } from './site';
 import { localizePath, type Locale } from './locale-paths';
 import { extractCert, inferPieceFlags, normalizeIdentity, stripHtml } from './search';
@@ -269,6 +279,27 @@ function pieceSeeds(): PieceSeed[] {
     });
   }
 
+  for (const note of ecuadorNotes) {
+    for (const piece of ecuadorNotePieces(note)) {
+      const hash = piece.id !== note.id ? `#${piece.id}` : '';
+      seeds.push({
+        id: `ec-${piece.id}`,
+        kind: 'banknote',
+        path: `${note.path}${hash}`,
+        pick: piece.pick,
+        serial: piece.serial_display,
+        title: piece.title,
+        dek: piece.lead,
+        kicker: note.kicker,
+        signatures: piece.signatures,
+        grade: piece.grade,
+        description: piece.description,
+        image: piece.images.composite,
+        imageAlt: piece.frontCaption,
+      });
+    }
+  }
+
   for (const note of unitedStatesNotes) {
     seeds.push({
       id: `us-${note.id}`,
@@ -306,6 +337,24 @@ function pieceSeeds(): PieceSeed[] {
     });
   }
 
+  for (const note of mpcProgramNotes) {
+    seeds.push({
+      id: `mpc-${note.id}`,
+      kind: 'banknote',
+      path: note.path,
+      pick: note.pick,
+      serial: note.serial,
+      title: note.title,
+      dek: note.lead,
+      kicker: note.kicker,
+      signatures: note.signatures,
+      grade: note.grade,
+      description: note.description,
+      image: note.images.composite,
+      imageAlt: note.frontCaption,
+    });
+  }
+
   for (const coin of netherlandsCoins) {
     seeds.push({
       id: `nl-${coin.id}`,
@@ -314,6 +363,22 @@ function pieceSeeds(): PieceSeed[] {
       pick: coin.references,
       serial: coin.certificate,
       certificate: coin.certificate,
+      title: coin.title,
+      dek: coin.lead,
+      kicker: coin.kicker,
+      grade: coin.grade,
+      description: coin.description,
+      image: coin.images.composite,
+      imageAlt: coin.frontCaption,
+    });
+  }
+
+  for (const coin of spainCoins) {
+    seeds.push({
+      id: `es-coin-${coin.id}`,
+      kind: 'coin',
+      path: coin.path,
+      pick: coin.references,
       title: coin.title,
       dek: coin.lead,
       kicker: coin.kicker,
@@ -374,9 +439,52 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       dek: { es: coinCatalogCopy.es.dek, en: coinCatalogCopy.en.dek },
     },
     {
+      href: USA_COLONIAL_PATH,
+      title: {
+        es: `${colonialSeriesCopy.es.kicker} ${colonialSeriesCopy.es.title}`,
+        en: `${colonialSeriesCopy.en.kicker} ${colonialSeriesCopy.en.title}`,
+      },
+      dek: { es: colonialSeriesCopy.es.metaDescription, en: colonialSeriesCopy.en.metaDescription },
+      extra:
+        'Massachusetts 1690 bills of credit Continental Currency Friedberg CC-91 1779 SUSTINE VEL ABSTINE Hall and Sellers',
+    },
+    {
+      href: USA_OBSOLETE_PATH,
+      title: {
+        es: `${obsoleteSeriesCopy.es.kicker} ${obsoleteSeriesCopy.es.title}`,
+        en: `${obsoleteSeriesCopy.en.kicker} ${obsoleteSeriesCopy.en.title}`,
+      },
+      dek: { es: obsoleteSeriesCopy.es.metaDescription, en: obsoleteSeriesCopy.en.metaDescription },
+      extra:
+        'Haxby obsolete broken banknotes remainder NJ-350 New Brunswick 9890 CT-265 New Haven LA-105 Canal Bank Redback',
+    },
+    {
       href: USA_RENCY_PATH,
       title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
       dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
+    },
+    {
+      href: LAZARETTOS_NUMISMATICS_PATH,
+      title: { es: lazarettosNumismaticsCopy.es.nav, en: lazarettosNumismaticsCopy.en.nav },
+      dek: {
+        es: lazarettosNumismaticsCopy.es.metaDescription,
+        en: lazarettosNumismaticsCopy.en.metaDescription,
+      },
+      extra:
+        'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 1921 2 centavos KM L10 leprocomio',
+    },
+    {
+      href: GIORI_TEST_NOTES_PATH,
+      title: { es: gioriTestNotesCopy.es.nav, en: gioriTestNotesCopy.en.nav },
+      dek: { es: gioriTestNotesCopy.es.metaDescription, en: gioriTestNotesCopy.en.metaDescription },
+      extra: 'Giori Gualtiero Organisation De La Rue KBA Koenig Bauer Varinota Jefferson Washington Pigman Rollins',
+    },
+    {
+      href: WWII_EMERGENCY_PATH,
+      title: { es: wwiiEmergencyCopy.es.title, en: wwiiEmergencyCopy.en.title },
+      dek: { es: wwiiEmergencyCopy.es.metaDescription, en: wwiiEmergencyCopy.en.metaDescription },
+      extra:
+        'HAWAII yellow seal Allied Military Currency Operation Bernhard Theresienstadt BAFSV Japanese invasion money RKKS R S experimental',
     },
     {
       href: USA_BARABOO_SCRIP_PATH,
@@ -422,7 +530,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
     docs.push({
       id: `glossary:${term.id}:${locale}`,
       kind: 'glossary',
-      href: glossaryTermPath(term.slug, locale),
+      href: glossaryTermHref(term.slug, locale),
       title: term.title[locale],
       dek: term.definition[locale],
       pick: '',

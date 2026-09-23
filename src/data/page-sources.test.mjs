@@ -10,6 +10,7 @@ const piecePages = [
   '../components/catalog/MpcNotePage.astro',
   '../components/catalog/NetherlandsCoinPage.astro',
   '../components/catalog/PuertoRicoNotePage.astro',
+  '../components/catalog/SpainCoinPage.astro',
   '../components/catalog/UnitedStatesCoinPage.astro',
   '../components/catalog/UnitedStatesNotePage.astro',
   '../components/catalog/VictoryNotePage.astro',
@@ -18,6 +19,8 @@ const piecePages = [
 const subseriesPages = [
   '../components/catalog/UnitedStatesMiscSeriesPage.astro',
   '../components/catalog/UnitedStatesRencySeriesPage.astro',
+  '../components/catalog/UnitedStatesColonialSeriesPage.astro',
+  '../components/catalog/UnitedStatesObsoleteSeriesPage.astro',
 ];
 
 const polymerCountryPages = [
@@ -75,7 +78,7 @@ describe('page-specific catalog sources', () => {
     }
   });
 
-  it('does not dump federal US sources onto misc or Rency series pages', () => {
+  it('does not dump federal US sources onto misc, Rency, colonial, or obsolete series pages', () => {
     for (const page of subseriesPages) {
       const source = read(page);
       assert.doesNotMatch(source, /seriesSources/, `${page} still imports federal seriesSources`);
@@ -101,6 +104,9 @@ describe('page-specific catalog sources', () => {
 
     const netherlandsHrefs = hrefsIn(exportArrayBlock(read('./netherlands-coinage.ts'), 'seriesSources'));
     assert.equal(netherlandsHrefs.includes('https://en.numista.com/catalogue/pieces323147.html'), false);
+
+    const spainHrefs = hrefsIn(exportArrayBlock(read('./espana-coinage.ts'), 'seriesSources'));
+    assert.equal(spainHrefs.includes('https://en.numista.com/26320'), false);
 
     const guatemalaHrefs = hrefsIn(exportArrayBlock(read('./guatemala.ts'), 'seriesSources'));
     assert.equal(guatemalaHrefs.includes('https://en.numista.com'), false);

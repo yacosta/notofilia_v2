@@ -5,6 +5,7 @@ const PERSON_ID = `${SITE_URL}/#yezid-acosta`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 const ORG_ID = `${SITE_URL}/#organization`;
 const SITE_NAME = 'Notofilia';
+const COPYRIGHT_NOTICE = `© ${new Date().getUTCFullYear()} NOTOFILIA`;
 
 export type BreadcrumbCrumb = { name: string; path: string };
 
@@ -101,6 +102,25 @@ export function breadcrumbList(crumbs: BreadcrumbCrumb[], locale: Locale) {
   };
 }
 
+export function imageObjectJsonLd(options: { image: string; locale: Locale; caption?: string }) {
+  const imageUrl = absoluteUrl(options.image);
+  return omitEmpty({
+    '@type': 'ImageObject',
+    url: imageUrl,
+    contentUrl: imageUrl,
+    caption: options.caption,
+    creditText: `${SITE_AUTHOR} / ${SITE_NAME}`,
+    creator: {
+      '@type': 'Person',
+      '@id': PERSON_ID,
+      name: SITE_AUTHOR,
+    },
+    copyrightNotice: COPYRIGHT_NOTICE,
+    license: absoluteUrl(options.locale === 'en' ? '/en/editorial/' : '/editorial/'),
+    acquireLicensePage: absoluteUrl(options.locale === 'en' ? '/en/contact/' : '/contacto/'),
+  });
+}
+
 export function visualArtworkJsonLd(options: {
   name: string;
   description: string;
@@ -135,7 +155,6 @@ export function visualArtworkJsonLd(options: {
     description: options.description,
     url: absoluteUrl(options.url),
     inLanguage: options.locale,
-    image: options.image ? absoluteUrl(options.image) : undefined,
     artform: type === 'VisualArtwork' ? options.artform : undefined,
     identifier: options.catalogNumber || options.certNumber || options.serial || undefined,
     author: { '@id': PERSON_ID },
@@ -143,6 +162,7 @@ export function visualArtworkJsonLd(options: {
     publisher: options.issuer ? { '@type': 'Organization', name: options.issuer } : undefined,
     producer: options.printer ? { '@type': 'Organization', name: options.printer } : undefined,
     additionalProperty: additionalProperty.length ? additionalProperty : undefined,
+    image: options.image ? imageObjectJsonLd({ image: options.image, locale: options.locale }) : undefined,
     isPartOf: options.collectionUrl
       ? {
           '@type': 'Collection',
@@ -161,12 +181,14 @@ export function definedTermJsonLd(options: {
   locale: Locale;
 }) {
   const setUrl = absoluteUrl(options.locale === 'en' ? '/en/glossary/' : '/glosario/');
+  const url = absoluteUrl(options.url);
   return {
     '@type': 'DefinedTerm',
+    '@id': `${url}#term`,
     name: options.name,
     alternateName: options.alternateName,
     description: options.description,
-    url: absoluteUrl(options.url),
+    url,
     inLanguage: options.locale,
     inDefinedTermSet: `${setUrl}#glossary`,
   };

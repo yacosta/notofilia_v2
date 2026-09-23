@@ -32,6 +32,7 @@ export type ClaimCallout = {
 
 export type EditorialArticle = {
   slug: string;
+  slugEn: string;
   href: string;
   title: LocalizedText;
   dek: LocalizedText;
@@ -156,7 +157,7 @@ export function findBlogArticle(slug: string): EditorialArticle | undefined {
 }
 
 export function findNewsArticle(slug: string): EditorialArticle | undefined {
-  return newsArticles.find((item) => item.slug === slug);
+  return newsArticles.find((item) => item.slug === slug || item.slugEn === slug);
 }
 
 export const blogSlugs = blogArticles.map((item) => `blog/${item.slug}`);
@@ -198,6 +199,18 @@ export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArt
 }
 
 const catalogRelatedTitles: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos/': {
+    es: 'Estados Unidos',
+    en: 'United States',
+  },
+  '/coleccion/estados-unidos/mpc/': {
+    es: 'Certificados de pago militar',
+    en: 'Military payment certificates',
+  },
+  '/coleccion/filipinas/': {
+    es: 'Filipinas · Serie Victory',
+    en: 'Philippines · Victory Series',
+  },
   '/coleccion/estados-unidos/miscelaneos/': {
     es: `${miscSeriesCopy.es.parentLink} · ${miscSeriesCopy.es.breadcrumbCurrent}`,
     en: `${miscSeriesCopy.en.parentLink} · ${miscSeriesCopy.en.breadcrumbCurrent}`,
@@ -222,6 +235,18 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Ringling Bros. · A2002',
     en: '$1 · Ringling Bros. · A2002',
   },
+  '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
+    es: 'Fichas Hard Times',
+    en: 'Hard Times tokens',
+  },
+  '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
+    es: 'Ficha Hard Times de 1837 · HT-34 / Low-20',
+    en: '1837 Hard Times token · HT-34 / Low-20',
+  },
+  '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/': {
+    es: 'Ficha Hard Times, c. 1835 · HT-181 / Low-300',
+    en: 'Hard Times token, c. 1835 · HT-181 / Low-300',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
@@ -245,6 +270,30 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
+  '/coleccion/estados-unidos/': {
+    es: 'Papel federal de la era de la guerra, certificados de plata y Federal Reserve Notes.',
+    en: 'Federal paper from the war years, silver certificates, and Federal Reserve Notes.',
+  },
+  '/coleccion/estados-unidos/mpc/': {
+    es: 'El perímetro que, desde 1946, cerró el agujero de los dólares de sello amarillo y la AMC.',
+    en: 'The perimeter that, from 1946, closed the gap opened by yellow-seal dollars and AMC.',
+  },
+  '/coleccion/filipinas/': {
+    es: 'El papel de la liberación, distinto de los vales de guerrilla.',
+    en: 'Liberation paper, distinct from the guerrilla vouchers.',
+  },
+  '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
+    es: 'La vitrina de menuda privada de 1832–1844, el HT-34 de 1837 y la store card HT-181.',
+    en: 'The 1832–1844 private small-change case, the 1837 HT-34, and the HT-181 store card.',
+  },
+  '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
+    es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',
+    en: 'The 1837 HT-34 (Low-20) record in the virtual collection.',
+  },
+  '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/': {
+    es: 'La store card HT-181 (Low-300) de John J. Adams, hacia 1835, en la colección virtual.',
+    en: 'The John J. Adams HT-181 (Low-300) store card, circa 1835, in the virtual collection.',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',

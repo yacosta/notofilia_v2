@@ -1,24 +1,21 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import { newsArticles } from './src/data/editorial.ts';
-import { glossaryTerms } from './src/data/glossary.ts';
+import { glossaryRedirects } from './src/data/glossary.ts';
+import { newsEnglishRedirects } from './src/lib/content-slugs.ts';
 import { englishRedirects } from './src/lib/locale-paths.ts';
 
 const generated = englishRedirects();
-for (const term of glossaryTerms) {
-  generated[`/en/glosario/${term.slug}/`] = `/en/glossary/${term.slug}/`;
-}
-for (const article of newsArticles) {
-  generated[`/en/noticias/${article.slug}/`] = `/en/news/${article.slug}/`;
-}
+// Folded glossary URLs 301 to `?term=` because CDN Location headers drop hash fragments.
+// English glossary/news last segments 301 from old Spanish-slug EN URLs in one hop.
+Object.assign(generated, glossaryRedirects(), newsEnglishRedirects());
 
 export default defineConfig({
   site: 'https://notofilia.com',
   trailingSlash: 'always',
-  compressHTML: false,
+  compressHTML: true,
   build: {
-    inlineStylesheets: 'always',
+    inlineStylesheets: 'auto',
   },
   redirects: {
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
@@ -33,8 +30,6 @@ export default defineConfig({
     '/en/netherlands-numismatica/ducado-utrecht-1761': '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
     '/en/paises-bajos-numismatica': '/en/collection/netherlands-numismatics/',
     '/en/paises-bajos-numismatica/ducado-utrecht-1761': '/en/collection/netherlands-numismatics/ducado-utrecht-1761/',
-    '/coleccion/ecuador/100-sucres-1993': '/coleccion/ecuador/',
-    '/en/coleccion/ecuador/100-sucres-1993': '/en/collection/ecuador/',
     '/nosotros': '/acerca-de/',
     '/en/nosotros': '/en/about/',
     '/sobre-mi': '/acerca-de/',
@@ -49,12 +44,20 @@ export default defineConfig({
     '/coleccion/colombia/2-pesos-oro-1955': '/coleccion/colombia/2-pesos-oro-1944/',
     '/en/collection/colombia/2-pesos-oro-1955': '/en/collection/colombia/2-pesos-oro-1944/',
     '/en/coleccion/colombia/2-pesos-oro-1955': '/en/collection/colombia/2-pesos-oro-1944/',
+    '/coleccion/colombia/1-peso-oro-1973': '/coleccion/colombia/1-peso-oro-1959-1977/',
+    '/coleccion/colombia/1-peso-oro-1974': '/coleccion/colombia/1-peso-oro-1959-1977/',
+    '/en/collection/colombia/1-peso-oro-1973': '/en/collection/colombia/1-peso-oro-1959-1977/',
+    '/en/collection/colombia/1-peso-oro-1974': '/en/collection/colombia/1-peso-oro-1959-1977/',
+    '/en/coleccion/colombia/1-peso-oro-1973': '/en/collection/colombia/1-peso-oro-1959-1977/',
+    '/en/coleccion/colombia/1-peso-oro-1974': '/en/collection/colombia/1-peso-oro-1959-1977/',
     '/coleccion/colombia/10-pesos-oro-1943-anverso': '/coleccion/colombia/10-pesos-oro-1943/',
     '/coleccion/colombia/10-pesos-oro-1943-reverso': '/coleccion/colombia/10-pesos-oro-1943/',
     '/en/collection/colombia/10-pesos-oro-1943-anverso': '/en/collection/colombia/10-pesos-oro-1943/',
     '/en/collection/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/10-pesos-oro-1943-anverso': '/en/collection/colombia/10-pesos-oro-1943/',
     '/en/coleccion/colombia/10-pesos-oro-1943-reverso': '/en/collection/colombia/10-pesos-oro-1943/',
+    '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial':
+      '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     '/coleccion/colombia/banco-de-la-republica-2000-pesos-oro': '/coleccion/colombia/2000-pesos-oro-1983/',
     '/en/collection/colombia/banco-de-la-republica-2000-pesos-oro': '/en/collection/colombia/2000-pesos-oro-1983/',
     '/en/coleccion/colombia/banco-de-la-republica-2000-pesos-oro': '/en/collection/colombia/2000-pesos-oro-1983/',
@@ -93,6 +96,22 @@ export default defineConfig({
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     '/en/blog/ringling-bros-barnum-bailey-circus/':
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
+    '/blog/billetes-emergencia-segunda-guerra-mundial':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/billetes-emergencia-segunda-guerra-mundial/':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/world-war-ii-emergency-banknotes':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/blog/world-war-ii-emergency-banknotes/':
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/en/blog/world-war-ii-emergency-banknotes':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/world-war-ii-emergency-banknotes/':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/billetes-emergencia-segunda-guerra-mundial':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    '/en/blog/billetes-emergencia-segunda-guerra-mundial/':
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     ...generated,
   },
   vite: {

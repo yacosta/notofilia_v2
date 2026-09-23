@@ -5,6 +5,8 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { notafiliaCopy, notafiliaCountries, notafiliaPath } from '../../data/notafilia';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../../data/collection-note-catalog';
+import { GIORI_TEST_NOTES_PATH } from '../../data/giori-test-notes';
+import { WWII_EMERGENCY_PATH } from '../../data/wwii-emergency-banknotes';
 
 interface Props {
   locale: Locale;
@@ -40,14 +42,133 @@ const jsonLd = collectionPageJsonLd({
       />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
-      <h1 id="series-heading" class="mb-0 mt-3 font-display font-normal leading-[1.12] text-cream">
-        <span class="block text-[clamp(1.75rem,4.2vw,2.85rem)] text-cream-dim">{t.title}</span>
-        <span class="mt-2 block text-[clamp(1.45rem,3.4vw,2.25rem)]">{t.subtitle}</span>
+      <h1 id="series-heading" class="mb-0 mt-3 font-display text-[clamp(1.75rem,4.2vw,2.85rem)] font-normal leading-[1.12] text-cream-dim">
+        {t.title}
       </h1>
+      <p class="mb-0 mt-4 max-w-[46rem] text-[clamp(1.05rem,2.2vw,1.25rem)] leading-snug text-cream-dim">
+        {t.subtitle}
+      </p>
 
-      <div class="mt-10 w-full text-[17px]/7 text-cream">
-        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
-      </div>
+      <section class="mt-10" aria-labelledby="definition-heading">
+        <div class="rounded-r-[8px] border-l-4 border-gold-light bg-panel px-5 py-5">
+          <h2 id="definition-heading" class="mb-2 mt-0 font-display text-[1.4rem]/8 font-normal text-cream-dim">
+            {t.definitionTitle}
+          </h2>
+          <p class="mb-0 mt-0 text-[17px]/7 text-cream">{t.definition}</p>
+        </div>
+        <p class="mb-0 mt-6 max-w-[46rem] text-[17px]/7 text-cream-dim [text-wrap:pretty]">{t.etymology}</p>
+      </section>
+
+      <section class="mt-16" aria-labelledby="compare-heading">
+        <h2
+          id="compare-heading"
+          class="mb-6 mt-0 border-b border-line-strong pb-3 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+        >
+          {t.compareTitle}
+        </h2>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <article class="rounded-[8px] border border-line-strong bg-panel p-5">
+            <p class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-gold-light">
+              {t.numismaticsKicker}
+            </p>
+            <h3 class="mb-3 mt-2 font-display text-[1.15rem]/7 font-normal text-cream-dim">{t.numismaticsTitle}</h3>
+            <p class="mb-0 mt-0 text-[16px]/7 text-muted">{t.numismaticsBody}</p>
+          </article>
+          <article class="rounded-[8px] border border-line-strong bg-panel p-5">
+            <p class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-gold-light">
+              {t.notaphilyKicker}
+            </p>
+            <h3 class="mb-3 mt-2 font-display text-[1.15rem]/7 font-normal text-cream-dim">{t.notaphilyTitle}</h3>
+            <p class="mb-0 mt-0 text-[16px]/7 text-muted">{t.notaphilyBody}</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="history-heading">
+        <h2
+          id="history-heading"
+          class="mb-6 mt-0 border-b border-line-strong pb-3 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+        >
+          {t.historyTitle}
+        </h2>
+        <ol class="m-0 list-none space-y-5 p-0">
+          {
+            t.history.map((item, index) => (
+              <li class="text-[17px]/7 text-cream-dim">
+                <p class="mb-0 mt-0">
+                  <strong class="font-semibold text-cream">
+                    {index + 1}. {item.title}:
+                  </strong>{' '}
+                  {item.body}
+                </p>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section class="mt-16" aria-labelledby="elements-heading">
+        <h2
+          id="elements-heading"
+          class="mb-6 mt-0 border-b border-line-strong pb-3 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+        >
+          {t.elementsTitle}
+        </h2>
+        <ul class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2">
+          {
+            t.elements.map((item) => (
+              <li class="rounded-[6px] border border-line-strong bg-panel p-4">
+                <h3 class="mb-2 mt-0 font-display text-[1.05rem]/7 font-normal text-cream-dim">{item.title}</h3>
+                <p class="mb-0 mt-0 text-[15px]/6 text-muted">{item.body}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="mt-16" aria-labelledby="grading-heading">
+        <h2
+          id="grading-heading"
+          class="mb-6 mt-0 border-b border-line-strong pb-3 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+        >
+          {t.gradingTitle}
+        </h2>
+        <div class="overflow-x-auto border border-line-strong">
+          <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+            <caption class="sr-only">{t.gradingCaption}</caption>
+            <thead>
+              <tr class="border-b border-line-strong bg-panel text-left">
+                {t.gradingHeaders.map((header) => (
+                  <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {t.gradingRows.map((row) => (
+                <tr class="border-b border-line-strong last:border-b-0">
+                  {row.map((cell, index) =>
+                    index === 0 ? (
+                      <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                        {cell}
+                      </th>
+                    ) : index === 1 ? (
+                      <td class="px-3 py-2.5 font-semibold text-gold-light">{cell}</td>
+                    ) : (
+                      <td class="px-3 py-2.5">{cell}</td>
+                    ),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="mb-0 mt-6 flex flex-col gap-2 font-sans text-[14px]/6 text-muted sm:flex-row sm:items-center sm:justify-between">
+          <span>{t.conservationNote}</span>
+          <span class="font-semibold text-gold-light">{t.standardLabel}</span>
+        </p>
+      </section>
 
       <section class="mt-16" aria-labelledby="holdings-heading">
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
@@ -59,6 +180,20 @@ const jsonLd = collectionPageJsonLd({
           {' '}
           <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(NOTAFILIA_NOTES_CATALOG_PATH, locale)}>
             {t.visualCatalogLink}
+          </a>
+        </p>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">
+          {t.gioriLead}
+          {' '}
+          <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(GIORI_TEST_NOTES_PATH, locale)}>
+            {t.gioriLink}
+          </a>
+        </p>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">
+          {t.wwiiLead}
+          {' '}
+          <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath(WWII_EMERGENCY_PATH, locale)}>
+            {t.wwiiLink}
           </a>
         </p>
 

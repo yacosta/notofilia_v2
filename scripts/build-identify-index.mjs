@@ -67,22 +67,34 @@ function unescape(value) {
 }
 
 function localizedPairNear(source, key, aroundIndex) {
-  const windowStart = Math.max(0, aroundIndex - 2500);
-  const windowEnd = Math.min(source.length, aroundIndex + 2500);
-  const window = source.slice(windowStart, windowEnd);
   const re = new RegExp(
-    `${key}:\\s*\\{\\s*es:\\s*'((?:\\\\'|[^'])*)'\\s*,\\s*en:\\s*'((?:\\\\'|[^'])*)'\\s*,?\\s*\\}`,
-    'ms',
+    `${key}:\\s*\\{\\s*es:\\s*'((?:\\\\'|[^'])*)'\\s*,\\s*en:\\s*'((?:\\\\'|[^'])*)'`,
+    'g',
   );
-  const match = window.match(re);
-  if (!match) return null;
-  return { es: unescape(match[1]), en: unescape(match[2]) };
+  // Piece records put `images` before `title`. The next record's `id` is the bound,
+  // so a title after the image stays on this object. Records that put `title` first
+  // fall through to the last pair before the image.
+  const rest = source.slice(aroundIndex + 1);
+  const nextId = rest.search(/\n\s*id:\s*'/);
+  const forwardEnd = nextId === -1 ? Math.min(rest.length, 4000) : nextId;
+  const forward = new RegExp(re.source).exec(rest.slice(0, forwardEnd));
+  if (forward?.[1] && forward?.[2]) return { es: unescape(forward[1]), en: unescape(forward[2]) };
+
+  const before = source.slice(0, aroundIndex);
+  let last = null;
+  for (const match of before.matchAll(re)) {
+    if (match[1] !== undefined && match[2] !== undefined) last = match;
+  }
+  if (last) return { es: unescape(last[1]), en: unescape(last[2]) };
+  return null;
 }
 
 function stringNear(source, key, aroundIndex) {
-  const windowStart = Math.max(0, aroundIndex - 2500);
-  const window = source.slice(windowStart, aroundIndex + 800);
-  const re = new RegExp(`${key}:\\s*'((?:\\\\'|[^'])*)'`, 'm');
+  const re = new RegExp(`(?:^|\\n)\\s*${key}:\\s*'((?:\\\\'|[^'])*)'`, 'mg');
+  const before = source.slice(0, aroundIndex);
+  const matches = [...before.matchAll(re)];
+  if (matches.length) return unescape(matches[matches.length - 1][1]);
+  const window = source.slice(aroundIndex, aroundIndex + 800);
   const match = window.match(re);
   return match ? unescape(match[1]) : '';
 }
@@ -99,6 +111,7 @@ const PATH_CONSTANTS = {
   USA_RENCY_PATH: '/coleccion/estados-unidos/rency/',
   USA_BARABOO_SCRIP_PATH: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
   USA_COINAGE_PATH: '/coleccion/estados-unidos-numismatica/',
+  SPAIN_COINAGE_PATH: '/coleccion/espana-numismatica/',
   NETHERLANDS_COINAGE_PATH: '/coleccion/paises-bajos-numismatica/',
   NETHERLANDS_PATH: '/coleccion/paises-bajos/',
   CHINA_PATH: '/coleccion/china/',
@@ -130,7 +143,7 @@ function nearestCollectionPath(source, aroundIndex) {
 }
 
 function isCoinPath(file, piecePath) {
-  return /coinage|numismatica|ducado|real-santa|dolar-trump/i.test(`${file} ${piecePath}`);
+  return /coinage|numismatica|ducado|real-santa|real-bogota|dolar-trump|medio-escudo/i.test(`${file} ${piecePath}`);
 }
 
 async function collectTargets() {

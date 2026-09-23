@@ -1,10 +1,10 @@
 ---
 import GlossaryTermPage from '../../../components/glossary/GlossaryTermPage.astro';
-import { glossaryTerms } from '../../../data/glossary';
+import { standaloneGlossaryTerms } from '../../../data/glossary';
 
 export function getStaticPaths() {
-  return glossaryTerms.map((term) => ({
-    params: { term: term.slug },
+  return standaloneGlossaryTerms().map((term) => ({
+    params: { term: term.slugEn },
     props: { term },
   }));
 }

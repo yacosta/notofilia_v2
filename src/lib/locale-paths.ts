@@ -13,6 +13,21 @@ type PathPair = {
 /** Longest-prefix pairs. Trailing slashes required. */
 export const PATH_PREFIX_PAIRS: PathPair[] = [
   {
+    es: '/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    en: '/collection/united-states/1-dollar-hawaii-1935a/',
+    aliases: ['/coleccion/united-states/1-dollar-hawaii-1935a/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
+    en: '/collection/united-states/20-dollars-hawaii-1934a/',
+    aliases: ['/coleccion/united-states/20-dollars-hawaii-1934a/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
+    en: '/collection/united-states/1-dollar-silver-certificate-1928a/',
+    aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1928a/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
     en: '/collection/united-states/1-dollar-silver-certificate-1957b/',
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1957b/'],
@@ -26,6 +41,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/',
     en: '/collection/united-states/2-dollars-series-2003-st-louis/',
     aliases: ['/coleccion/united-states/2-dollars-series-2003-st-louis/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/2-dolares-serie-1917/',
+    en: '/collection/united-states/2-dollars-series-1917/',
+    aliases: ['/coleccion/united-states/2-dollars-series-1917/'],
   },
   {
     es: '/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
@@ -46,6 +66,16 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/',
     en: '/collection/united-states/10-dollars-series-1934a-cleveland/',
     aliases: ['/coleccion/united-states/10-dollars-series-1934a-cleveland/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/',
+    en: '/collection/united-states/10-dollars-series-1934a-philadelphia/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934a-philadelphia/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
+    en: '/collection/united-states/10-dollars-series-1934c-kansas-city/',
+    aliases: ['/coleccion/united-states/10-dollars-series-1934c-kansas-city/'],
   },
   {
     es: '/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
@@ -83,6 +113,16 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/5-dollars-continental-1779/'],
   },
   {
+    es: '/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
+    en: '/collection/united-states/5-shillings-pennsylvania-1773/',
+    aliases: ['/coleccion/united-states/5-shillings-pennsylvania-1773/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
+    en: '/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    aliases: ['/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-dolares-confederados-1864/',
     en: '/collection/united-states/5-dollars-confederate-1864/',
     aliases: ['/coleccion/united-states/5-dollars-confederate-1864/'],
@@ -91,6 +131,16 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/estados-unidos/100-dolares-confederados-1862/',
     en: '/collection/united-states/100-dollars-confederate-1862/',
     aliases: ['/coleccion/united-states/100-dollars-confederate-1862/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/mpc/5-centavos-serie-481/',
+    en: '/collection/united-states/mpc/5-cents-series-481/',
+    aliases: ['/coleccion/united-states/mpc/5-cents-series-481/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/mpc/',
+    en: '/collection/united-states/mpc/',
+    aliases: ['/coleccion/united-states/mpc/'],
   },
   {
     es: '/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
@@ -172,9 +222,12 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     ],
   },
   {
-    es: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    es: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     en: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
-    aliases: ['/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/'],
+    aliases: [
+      '/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+      '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    ],
   },
   {
     es: '/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
@@ -212,6 +265,16 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/miscellaneous/'],
   },
   {
+    es: '/coleccion/estados-unidos/moneda-colonial/',
+    en: '/collection/united-states/colonial-paper/',
+    aliases: ['/coleccion/united-states/colonial-paper/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/billetes-obsoletos/',
+    en: '/collection/united-states/obsolete-notes/',
+    aliases: ['/coleccion/united-states/obsolete-notes/'],
+  },
+  {
     es: '/coleccion/estados-unidos/',
     en: '/collection/united-states/',
     aliases: ['/coleccion/united-states/'],
@@ -233,8 +296,29 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     en: '/collection/puerto-rico/1-peso-exchange-note-1895/',
   },
+  {
+    es: '/coleccion/ecuador/1-sucre-1901/',
+    en: '/collection/ecuador/1-sucre-1901/',
+  },
+  {
+    es: '/coleccion/ecuador/100-sucres-1993/',
+    en: '/collection/ecuador/100-sucres-1993/',
+  },
   { es: '/coleccion/notafilia/catalogo/', en: '/collection/notaphily/catalog/' },
+  {
+    es: '/coleccion/notafilia/moneda-prueba-giori/',
+    en: '/collection/notaphily/giori-test-notes/',
+    aliases: ['/collection/notaphily/giori-test-currency/'],
+  },
+  {
+    es: '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    en: '/collection/notaphily/world-war-ii-emergency-banknotes/',
+  },
+  { es: '/coleccion/colombia/banca-libre/', en: '/collection/colombia/free-banking/' },
   { es: '/coleccion/colombia/catalogo/', en: '/collection/colombia/catalog/' },
+  { es: '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', en: '/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/' },
+  { es: '/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', en: '/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/' },
+  { es: '/coleccion/colombia-numismatica/2-centavos-lazareto-1921/', en: '/collection/colombia-numismatics/2-centavos-lazareto-1921/' },
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
   { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
   {
@@ -257,9 +341,18 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/polimero-mundial/america-del-norte/', en: '/collection/world-polymer/north-america/' },
   { es: '/coleccion/polimero-mundial/', en: '/collection/world-polymer/' },
   { es: '/coleccion/paises-bajos-numismatica/', en: '/collection/netherlands-numismatics/' },
+  { es: '/coleccion/estados-unidos-numismatica/fichas-hard-times/', en: '/collection/united-states-numismatics/hard-times-tokens/' },
+  { es: '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', en: '/collection/united-states-numismatics/ht-34-1837-donkey-turtle/' },
+  { es: '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/', en: '/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/' },
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', en: '/collection/united-states-numismatics/1-dollar-trump-1776-2026/' },
   { es: '/coleccion/estados-unidos-numismatica/', en: '/collection/united-states-numismatics/' },
+  { es: '/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', en: '/collection/spain-numismatics/half-escudo-madrid-1757-jb/' },
+  { es: '/coleccion/espana-numismatica/', en: '/collection/spain-numismatics/' },
   { es: '/coleccion/paises-bajos/', en: '/collection/netherlands/' },
+  {
+    es: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
+    en: '/collection/numismatics/numismatics-of-the-lazarettos/',
+  },
   { es: '/coleccion/numismatica/', en: '/collection/numismatics/' },
   { es: '/coleccion/notafilia/', en: '/collection/notaphily/' },
   { es: '/coleccion/espana/', en: '/collection/spain/' },
@@ -311,26 +404,35 @@ function splitHash(path: string): { pathname: string; hash: string; search: stri
   return { pathname: withHash.slice(0, searchIndex), search: withHash.slice(searchIndex), hash };
 }
 
+import { rewriteContentLastSegment } from './content-slugs.ts';
+
 export function rewriteUnprefixedPath(pathname: string, locale: Locale): string {
   if (pathname === '/' || pathname === '') return '/';
   const slashed = ensureTrailingSlash(pathname.startsWith('/') ? pathname : `/${pathname}`);
 
+  let rewritten = slashed;
   for (const { es, en, aliases = [] } of PAIRS_BY_LENGTH) {
     if (slashed === es || slashed.startsWith(es)) {
-      return locale === 'en' ? `${en}${slashed.slice(es.length)}` : slashed;
+      rewritten = locale === 'en' ? `${en}${slashed.slice(es.length)}` : slashed;
+      break;
     }
     if (slashed === en || slashed.startsWith(en)) {
-      return locale === 'es' ? `${es}${slashed.slice(en.length)}` : slashed;
+      rewritten = locale === 'es' ? `${es}${slashed.slice(en.length)}` : slashed;
+      break;
     }
+    let aliasHit = false;
     for (const alias of aliases) {
       if (slashed === alias || slashed.startsWith(alias)) {
         const rest = slashed.slice(alias.length);
-        return locale === 'en' ? `${en}${rest}` : `${es}${rest}`;
+        rewritten = locale === 'en' ? `${en}${rest}` : `${es}${rest}`;
+        aliasHit = true;
+        break;
       }
     }
+    if (aliasHit) break;
   }
 
-  return slashed;
+  return rewriteContentLastSegment(rewritten, locale);
 }
 
 export function localizePath(path: string, locale: Locale): string {
@@ -360,6 +462,12 @@ export function englishRedirects(): Record<string, string> {
   };
 
   const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    '/en/coleccion/united-states/1-dollar-hawaii-1935a/',
+    '/en/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
+    '/en/coleccion/united-states/20-dollars-hawaii-1934a/',
+    '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
+    '/en/coleccion/united-states/1-dollar-silver-certificate-1928a/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1957b/',
     '/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
@@ -368,26 +476,36 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/',
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/',
+    '/en/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/',
     '/en/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/',
     '/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
     '/en/coleccion/estados-unidos/5-dolares-continental-1779/',
+    '/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
+    '/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
     '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
     '/en/coleccion/united-states/1-dollar-state-bank-new-brunswick/',
+    '/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/',
+    '/en/coleccion/estados-unidos/mpc/',
     '/en/coleccion/estados-unidos/mpc-vietnam/20-dolares-serie-692/',
     '/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/',
     '/en/coleccion/united-states/10-dollars-series-1934-chicago/',
     '/en/coleccion/united-states/10-dollars-series-1934a-chicago/',
     '/en/coleccion/united-states/10-dollars-series-1934a-cleveland/',
+    '/en/coleccion/united-states/10-dollars-series-1934a-philadelphia/',
+    '/en/coleccion/united-states/10-dollars-series-1934c-kansas-city/',
     '/en/coleccion/united-states/10-dollars-series-1934d-richmond/',
     '/en/coleccion/united-states/1000-dollars-series-1934a-new-york/',
     '/en/coleccion/united-states/500-dollars-series-1934a-new-york/',
     '/en/coleccion/united-states/20-dollars-confederate-1864/',
     '/en/coleccion/united-states/5-dollars-city-bank-new-haven/',
     '/en/coleccion/united-states/5-dollars-continental-1779/',
+    '/en/coleccion/united-states/5-shillings-pennsylvania-1773/',
+    '/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/',
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
     '/en/coleccion/estados-unidos/mpc-vietnam/1-dolar-serie-681/',
@@ -397,6 +515,9 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
     '/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/estados-unidos/rency/',
+    '/en/coleccion/estados-unidos/moneda-colonial/',
+    '/en/coleccion/estados-unidos/billetes-obsoletos/',
+    '/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/1-dolar-serie-2006-dallas-wheres-george/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
@@ -407,6 +528,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/miscelaneos/',
     '/en/coleccion/estados-unidos/mpc-vietnam/',
     '/en/coleccion/estados-unidos/',
+    '/en/coleccion/united-states/mpc/5-cents-series-481/',
+    '/en/coleccion/united-states/mpc/',
     '/en/coleccion/united-states/mpc-vietnam/20-dollars-series-692/',
     '/en/coleccion/united-states/mpc-vietnam/5-dollars-series-661/',
     '/en/coleccion/united-states/mpc-vietnam/10-dollars-series-641/',
@@ -417,6 +540,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/pele-the-beautiful-game/',
     '/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/united-states/rency/',
+    '/en/coleccion/united-states/colonial-paper/',
+    '/en/coleccion/united-states/obsolete-notes/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',
     '/en/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/1-dollar-ringling-bros-a2002/',
@@ -433,7 +558,10 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/filipinas/5-pesos-banco-nacional-1916/',
     '/en/coleccion/filipinas/20-pesos/',
     '/en/coleccion/filipinas/',
+    '/en/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/',
+    '/en/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/',
     '/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',
+    '/en/coleccion/colombia-numismatica/2-centavos-lazareto-1921/',
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',
     '/en/coleccion/colombia/catalogo/',
@@ -454,6 +582,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/espana/',
     '/en/coleccion/china/100-yuan/',
     '/en/coleccion/china/',
+    '/en/coleccion/colombia/banca-libre/',
     '/en/coleccion/colombia/5-pesos-rio-hacha-1883/',
     '/en/coleccion/colombia/5-pesos-banco-hipotecario-1881/',
     '/en/coleccion/colombia/1-peso-tolima-1901/',
@@ -461,6 +590,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/medio-peso-oro-1953/',
     '/en/coleccion/colombia/1-peso-oro-1954/',
     '/en/coleccion/colombia/1-peso-oro-1959/',
+    '/en/coleccion/colombia/1-peso-oro-1959-1977/',
     '/en/coleccion/colombia/1-peso-oro-1973/',
     '/en/coleccion/colombia/1-peso-oro-1974/',
     '/en/coleccion/colombia/10-pesos-oro-1943/',
@@ -476,6 +606,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/50-pesos-oro-1974/',
     '/en/coleccion/colombia/50-pesos-oro-1984/',
     '/en/coleccion/colombia/100-pesos-oro-1980/',
+    '/en/coleccion/colombia/200-pesos-oro-1989/',
     '/en/coleccion/colombia/1000-pesos-oro-1979/',
     '/en/coleccion/colombia/2000-pesos-oro-1983/',
     '/en/coleccion/colombia/5000-pesos-oro-1993/',
@@ -491,9 +622,12 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/50000-pesos-error-2015/',
     '/en/coleccion/colombia/tiquete-estudiantil-15-centavos/',
     '/en/coleccion/colombia/',
+    '/en/coleccion/ecuador/1-sucre-1901/',
+    '/en/coleccion/ecuador/100-sucres-1993/',
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',
+    '/en/coleccion/numismatica/numismatica-de-los-lazaretos/',
     '/en/coleccion/puerto-rico/junta-central-cuba-1869/',
     '/en/coleccion/puerto-rico/junta-central-1-peso-1869/',
     '/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
@@ -512,8 +646,18 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/paises-bajos-numismatica/',
     '/en/paises-bajos-numismatica/ducado-utrecht-1761/',
     '/en/paises-bajos-numismatica/',
+    '/en/coleccion/estados-unidos-numismatica/fichas-hard-times/',
+    '/en/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/',
+    '/en/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/',
     '/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/',
     '/en/coleccion/estados-unidos-numismatica/',
+    '/en/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/',
+    '/en/coleccion/espana-numismatica/',
+    '/en/espana-numismatica/medio-escudo-madrid-1757-jb/',
+    '/en/espana-numismatica/',
+    '/en/coleccion/united-states-numismatics/hard-times-tokens/',
+    '/en/coleccion/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    '/en/coleccion/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
     '/en/coleccion/united-states-numismatics/1-dollar-trump-1776-2026/',
     '/en/coleccion/united-states-numismatics/',
     '/en/blog/mejores-empresas-certificacion-monedas-billetes/',
@@ -526,6 +670,9 @@ export function englishRedirects(): Record<string, string> {
     '/en/blog/origenes-banca-comercial-colombia-banca-libre/',
     '/en/blog/origenes-banca-comercial-puerto-rico/',
     '/en/blog/personajes-billetes-colombia/',
+    '/en/coleccion/notafilia/moneda-prueba-giori/',
+    '/en/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    '/en/collection/notaphily/giori-test-currency/',
   ];
 
   for (const from of legacyEnglishPrefixes) {
@@ -538,6 +685,11 @@ export function englishRedirects(): Record<string, string> {
 /** Kept so data modules can register extra exact pairs without a circular import. */
 export function addLocalePair(_esPath: string, _enPath: string) {
   // Prefix pairs above already cover USA, About, MPC notes, and Netherlands coinage.
+}
+
+/** Path without hash, used when a catalog href (ficha#piece) becomes a stub slug. */
+export function hrefToContentSlug(href: string): string {
+  return href.split('#')[0].replace(/^\/|\/$/g, '');
 }
 
 export function englishContentSlug(esSlug: string): string {

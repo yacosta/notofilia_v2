@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { additions, catalogAdditions } from './holdings.ts';
 import { seriesCopy, colombiaChapters } from './colombia.ts';
+import { errorNoteCards } from './colombia-errors.ts';
 import {
   noteById,
   notePieces,
@@ -138,7 +139,7 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
   it('is a distinct Pick 398 circulation note, not Pick 380 or Pick 404', () => {
     const note = noteById('1-peso-oro-1959');
     const note1954 = noteById('1-peso-oro-1954');
-    const note1973 = noteById('1-peso-oro-1973');
+    const note1973 = noteById('1-peso-oro-1959-1977');
     assert.ok(note);
     assert.ok(note1954);
     assert.ok(note1973);
@@ -204,173 +205,114 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
   });
 });
 
-describe('Colombia BanRep 1 peso oro 1973 Imprenta de Billetes', () => {
-  it('is a distinct Pick 404e circulation note, not the 1945 or 1954 ABNC 1 pesos', () => {
-    const note = noteById('1-peso-oro-1973');
+describe('Colombia BanRep 1 peso Imprenta 1959–1977 (Pick 404e)', () => {
+  it('keeps two Pick 404e dated pieces on one page, not the ABNC 1 pesos', () => {
+    const note = noteById('1-peso-oro-1959-1977');
     const note1945 = noteById('1-peso-oro-1945');
     const note1954 = noteById('1-peso-oro-1954');
     assert.ok(note);
     assert.ok(note1945);
     assert.ok(note1954);
+    assert.equal(noteById('1-peso-oro-1973'), undefined);
+    assert.equal(noteById('1-peso-oro-1974'), undefined);
     assert.equal(note.chapterId, 'banco-de-la-republica');
     assert.equal(note.pick, 'P# 404e');
     assert.equal(note.serial, '26530968');
+    assert.match(note.title.es, /1959–1977/);
+    assert.match(note.title.en, /1959–1977/);
     assert.notEqual(note.serial, note1945.serial);
     assert.notEqual(note.serial, note1954.serial);
     assert.notEqual(note.pick, note1945.pick);
     assert.notEqual(note.pick, note1954.pick);
-    assert.equal(notePieces(note).length, 1);
-    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
-    assert.match(note.printed.es, /no publica un BG# adivinado/);
-    assert.match(note.printed.es, /68,3 millones/);
-    assert.match(note.printed.es, /denominación ese año/);
-    assert.match(note.printed.es, /no la tirada de esta fecha/);
-    assert.match(note.scarcity.es, /68,3 millones/);
-    assert.match(note.scarcity.es, /denominación-año/);
-    assert.match(note.description.es, /No hay asterisco/);
-    assert.match(note.description.es, /no es reposición/);
-    assert.match(note.printed.es, /Cód\. 76/);
-    assert.match(note.printed.en, /Cód\. 76/);
-    assert.match(note.printed.es, /Cód\. 81/);
-    assert.match(note.description.es, /Cód\. 76/);
-    assert.match(note.description.en, /Hernández 76/);
-    assert.match(note.scarcity.es, /Cód\. 76/);
-    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    const pieces = notePieces(note);
+    assert.equal(pieces.length, 2);
+    assert.equal(pieces[0].id, '1-peso-oro-1973');
+    assert.equal(pieces[0].serial, '26530968');
+    assert.equal(pieces[1].id, '1-peso-oro-1974');
+    assert.equal(pieces[1].serial, '47550075');
+    assert.equal(pieces[0].pick, pieces[1].pick);
+    assert.doesNotMatch(pieces[0].printed.es, /BG#\s*\d+/);
+    assert.match(pieces[0].printed.es, /no publica un BG# adivinado/);
+    assert.match(pieces[0].printed.es, /68,3 millones/);
+    assert.match(pieces[0].printed.es, /denominación ese año/);
+    assert.match(pieces[0].printed.es, /no la tirada de esta fecha/);
+    assert.match(pieces[0].scarcity.es, /68,3 millones/);
+    assert.match(pieces[0].scarcity.es, /denominación-año/);
+    assert.match(pieces[0].description.es, /No hay asterisco/);
+    assert.match(pieces[0].description.es, /no es reposición/);
+    assert.match(pieces[0].description.es, /47550075/);
+    assert.match(pieces[0].printed.es, /Cód\. 76/);
+    assert.match(pieces[0].printed.en, /Cód\. 76/);
+    assert.match(pieces[0].printed.es, /Cód\. 81/);
+    assert.match(pieces[0].description.es, /Cód\. 76/);
+    assert.match(pieces[0].description.en, /Hernández 76/);
+    assert.match(pieces[0].scarcity.es, /Cód\. 76/);
+    assert.match(pieces[0].scarcity.es, /No se publican columnas de precios/);
+    assert.match(pieces[1].printed.es, /47,2 millones/);
+    assert.match(pieces[1].printed.es, /26530968/);
+    assert.match(pieces[1].description.es, /47550075/);
+    assert.match(pieces[1].printed.es, /Cód\. 79/);
+    assert.match(pieces[1].printed.en, /Cód\. 79/);
+    assert.match(pieces[1].description.es, /Cód\. 79/);
+    assert.match(pieces[1].description.en, /Hernández 79/);
+    assert.match(pieces[1].scarcity.es, /Cód\. 79/);
+    assert.match(pieces[1].scarcity.es, /20 %/);
+    assert.match(pieces[1].scarcity.en, /20%/);
+    assert.match(pieces[1].scarcity.es, /No se publican columnas de precios/);
     assert.equal(
-      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      pieces[0].sources.some((source) => source.href === 'https://en.numista.com/L100183'),
       true,
     );
-    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
-    assert.ok(hernandez);
-    assert.ok(hernandez.note);
-    assert.match(hernandez.es, /L100183/);
-    assert.match(hernandez.en, /L100183/);
-    assert.match(hernandez.note.es, /Cód\. 76/);
-    assert.match(hernandez.note.en, /Cód\. 76/);
+    assert.equal(
+      pieces[1].sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez1973 = pieces[0].sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    const hernandez1974 = pieces[1].sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez1973?.note);
+    assert.ok(hernandez1974?.note);
+    assert.match(hernandez1973.note.es, /Cód\. 76/);
+    assert.match(hernandez1974.note.es, /Cód\. 79/);
     const publicCopy = [
-      note.printed.es,
-      note.printed.en,
-      note.description.es,
-      note.description.en,
-      note.scarcity.es,
-      note.scarcity.en,
-      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+      ...pieces.flatMap((piece) => [
+        piece.printed.es,
+        piece.printed.en,
+        piece.description.es,
+        piece.description.en,
+        piece.scarcity.es,
+        piece.scarcity.en,
+        ...piece.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+      ]),
     ].join('\n');
     assert.doesNotMatch(publicCopy, /US\s*\$/);
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1973-1-peso-oro-26530968'), true);
-    assert.equal(catalogAdditions.some((row) => row.id === 'co-1973-1-peso-oro-p404e'), true);
-  });
-
-  it('lists the 1973 1 peso oro on the BanRep series page and in chapter copy', () => {
-    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
-    assert.ok(chapter);
-    assert.match(chapter.body.es, /1 peso oro de 1973 \(Pick 404e\)/);
-    assert.match(chapter.body.en, /1973 1 peso oro \(Pick 404e\)/);
-    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\)/);
-    assert.match(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\)/);
-    const cards = seriesCardsForChapter('banco-de-la-republica');
-    const peso1973 = cards.filter((card) => card.note.id === '1-peso-oro-1973');
-    assert.equal(peso1973.length, 1);
-    assert.equal(peso1973[0].piece.serial, '26530968');
-    assert.equal(
-      seriesCardHref(peso1973[0].note, peso1973[0].piece, 'es'),
-      '/coleccion/colombia/1-peso-oro-1973/',
-    );
-    assert.equal(
-      seriesCardHref(peso1973[0].note, peso1973[0].piece, 'en'),
-      '/en/collection/colombia/1-peso-oro-1973/',
-    );
-  });
-});
-
-describe('Colombia BanRep 1 peso oro 1974 Imprenta de Billetes', () => {
-  it('is a distinct Pick 404e circulation note, not the 1973 Imprenta piece or the ABNC 1 pesos', () => {
-    const note = noteById('1-peso-oro-1974');
-    const note1973 = noteById('1-peso-oro-1973');
-    const note1945 = noteById('1-peso-oro-1945');
-    const note1954 = noteById('1-peso-oro-1954');
-    assert.ok(note);
-    assert.ok(note1973);
-    assert.ok(note1945);
-    assert.ok(note1954);
-    assert.equal(note.chapterId, 'banco-de-la-republica');
-    assert.equal(note.pick, 'P# 404e');
-    assert.equal(note.serial, '47550075');
-    assert.notEqual(note.serial, note1973.serial);
-    assert.notEqual(note.serial, note1945.serial);
-    assert.notEqual(note.serial, note1954.serial);
-    assert.equal(note.pick, note1973.pick);
-    assert.notEqual(note.pick, note1945.pick);
-    assert.notEqual(note.path, note1973.path);
-    assert.equal(notePieces(note).length, 1);
-    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
-    assert.match(note.printed.es, /no publica un BG# adivinado/);
-    assert.match(note.printed.es, /47,2 millones/);
-    assert.match(note.printed.es, /denominación ese año/);
-    assert.match(note.printed.es, /no la tirada de esta fecha/);
-    assert.match(note.printed.es, /26530968/);
-    assert.match(note.scarcity.es, /47,2 millones/);
-    assert.match(note.scarcity.es, /denominación-año/);
-    assert.match(note.description.es, /No hay asterisco/);
-    assert.match(note.description.es, /no es reposición/);
-    assert.match(note.description.es, /47550075/);
-    assert.match(note.printed.es, /Cód\. 79/);
-    assert.match(note.printed.en, /Cód\. 79/);
-    assert.match(note.printed.es, /Cód\. 81/);
-    assert.match(note.description.es, /Cód\. 79/);
-    assert.match(note.description.en, /Hernández 79/);
-    assert.match(note.scarcity.es, /Cód\. 79/);
-    assert.match(note.scarcity.es, /20 %/);
-    assert.match(note.scarcity.en, /20%/);
-    assert.match(note.scarcity.es, /No se publican columnas de precios/);
-    assert.equal(
-      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
-      true,
-    );
-    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
-    assert.ok(hernandez);
-    assert.ok(hernandez.note);
-    assert.match(hernandez.es, /L100183/);
-    assert.match(hernandez.en, /L100183/);
-    assert.match(hernandez.note.es, /Cód\. 79/);
-    assert.match(hernandez.note.en, /Cód\. 79/);
-    const publicCopy = [
-      note.printed.es,
-      note.printed.en,
-      note.description.es,
-      note.description.en,
-      note.scarcity.es,
-      note.scarcity.en,
-      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
-    ].join('\n');
-    assert.doesNotMatch(publicCopy, /US\s*\$/);
-    assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1974-1-peso-oro-47550075'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1973-1-peso-oro-p404e'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1974-1-peso-oro-p404e'), true);
   });
 
-  it('lists the 1974 1 peso oro on the BanRep series page and in chapter copy', () => {
+  it('lists both 1973 and 1974 cards on the BanRep series page with hash links', () => {
     const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
     assert.ok(chapter);
-    assert.match(chapter.body.es, /1 peso oro de 1974 \(Pick 404e\)/);
-    assert.match(chapter.body.en, /1974 1 peso oro \(Pick 404e\)/);
-    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1974 \(Pick 404e\)/);
-    assert.match(seriesCopy.en.intro.join(' '), /1974 1 peso oro \(Pick 404e\)/);
+    assert.match(chapter.body.es, /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
+    assert.match(chapter.body.en, /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
+    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
+    assert.match(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
-    const peso1974 = cards.filter((card) => card.note.id === '1-peso-oro-1974');
-    assert.equal(peso1974.length, 1);
-    assert.equal(peso1974[0].piece.serial, '47550075');
-    assert.equal(
-      seriesCardHref(peso1974[0].note, peso1974[0].piece, 'es'),
-      '/coleccion/colombia/1-peso-oro-1974/',
-    );
-    assert.equal(
-      seriesCardHref(peso1974[0].note, peso1974[0].piece, 'en'),
-      '/en/collection/colombia/1-peso-oro-1974/',
-    );
+    const peso = cards.filter((card) => card.note.id === '1-peso-oro-1959-1977');
+    assert.equal(peso.length, 2);
+    assert.equal(peso[0].piece.id, '1-peso-oro-1973');
+    assert.equal(peso[0].piece.serial, '26530968');
+    assert.equal(peso[1].piece.id, '1-peso-oro-1974');
+    assert.equal(peso[1].piece.serial, '47550075');
+    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'es'), /\/coleccion\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1973$/);
+    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'es'), /\/coleccion\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
+    assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1973$/);
+    assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
   });
 });
+
 describe('Colombia BanRep 2 pesos oro 1977 Imprenta de Billetes', () => {
   it('is a distinct Pick 413b circulation note, not the 1944 or 1955 ABNC 2 pesos', () => {
     const note = noteById('2-pesos-oro-1977');
@@ -1049,6 +991,82 @@ describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
   });
 });
 
+describe('Colombia BanRep 200 pesos oro 1989 IBB specimen', () => {
+  it('is a distinct BanRep specimen with control 499, not the 1960, 1980, or 1983 zero-serial notes', () => {
+    const note = noteById('200-pesos-oro-1989');
+    const five = noteById('5-pesos-oro-1960');
+    const hundred = noteById('100-pesos-oro-1980');
+    const twoThousand = noteById('2000-pesos-oro-1983');
+    assert.ok(note);
+    assert.ok(five);
+    assert.ok(hundred);
+    assert.ok(twoThousand);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 429ds');
+    assert.equal(note.serial, '00000000 · 499');
+    assert.notEqual(note.serial, five.serial);
+    assert.notEqual(note.serial, hundred.serial);
+    assert.notEqual(note.serial, twoThousand.serial);
+    assert.notEqual(note.path, five.path);
+    assert.notEqual(note.path, hundred.path);
+    assert.notEqual(note.path, twoThousand.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.kicker.es, /Espécimen/);
+    assert.match(note.kicker.en, /specimen/i);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /no da una tirada de especímenes/);
+    assert.match(note.printed.es, /122 millones/);
+    assert.match(note.description.es, /MUESTRA SIN VALOR/);
+    assert.match(note.description.en, /MUESTRA SIN VALOR/);
+    assert.match(note.description.es, /499/);
+    assert.match(note.description.es, /429d/);
+    assert.match(note.description.es, /Mutis/);
+    assert.match(note.description.en, /Mutis/);
+    assert.match(note.description.es, /LA BORDADITA/);
+    assert.match(note.description.es, /IMPRENTA DE BILLETES/);
+    assert.match(note.description.es, /Pick 405s/);
+    assert.match(note.description.es, /418s Nº 027/);
+    assert.match(note.description.es, /430as Nº 030/);
+    assert.match(note.scarcity.es, /no inventa una tirada de especímenes/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1989-200-pesos-oro-specimen-499'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1989-200-pesos-oro-p429ds'), true);
+  });
+
+  it('lists the 1989 200 pesos oro specimen on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
+    assert.match(chapter.body.en, /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
+    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
+    assert.match(seriesCopy.en.intro.join(' '), /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const specimen = cards.filter((card) => card.note.id === '200-pesos-oro-1989');
+    assert.equal(specimen.length, 1);
+    assert.equal(specimen[0].piece.serial, '00000000 · 499');
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'es'),
+      '/coleccion/colombia/200-pesos-oro-1989/',
+    );
+    assert.equal(
+      seriesCardHref(specimen[0].note, specimen[0].piece, 'en'),
+      '/en/collection/colombia/200-pesos-oro-1989/',
+    );
+  });
+});
+
 describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
   it('is a distinct Pick 409d circulation note, not an asterisk replacement', () => {
     const note = noteById('20-pesos-oro-1983');
@@ -1122,6 +1140,126 @@ describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
     assert.equal(
       seriesCardHref(holding[0].note, holding[0].piece, 'en'),
       '/en/collection/colombia/20-pesos-oro-1983/',
+    );
+  });
+});
+
+describe('Colombia 1 peso Tolima 1901 (Cód. 1242)', () => {
+  it('distinguishes the 1901 Ibagué treasury cédula from Banco del Tolima of Neiva', () => {
+    const note = noteById('1-peso-tolima-1901');
+    assert.ok(note);
+    assert.equal(note.serial, '060.416');
+    assert.equal(note.historyHeading?.es, 'Tesorería y banca libre');
+    assert.equal(note.historyHeading?.en, 'Treasury and free banking');
+    assert.ok(note.history);
+    assert.match(note.description.es, /escritura de 23 de junio de 1881/);
+    assert.match(note.description.en, /deed of 23 June 1881/);
+    assert.match(note.history.es, /sede en Neiva, no en Ibagué/);
+    assert.match(note.history.en, /seated in Neiva, not Ibagué/);
+    assert.match(note.history.es, /capital autorizado de 200\.000 pesos/);
+    assert.match(note.history.en, /authorized capital of 200,000 pesos/);
+    assert.match(note.history.es, /79\.600 pesos suscritos/);
+    assert.match(note.history.en, /79,600 pesos subscribed/);
+    assert.match(note.history.es, /cuarenta y dos bancos/);
+    assert.match(note.history.en, /forty-two banks/);
+    assert.match(note.history.es, /1883 —no en 1881/);
+    assert.match(note.history.en, /1883 — not 1881/);
+    assert.match(note.history.es, /letras de cambio/);
+    assert.match(note.history.en, /bills of exchange/);
+    assert.match(note.history.es, /no se fusionó/);
+    assert.match(note.history.en, /did not merge/);
+    assert.doesNotMatch(note.history.es, /Tocaima/);
+    assert.doesNotMatch(note.history.en, /Tocaima/);
+    assert.doesNotMatch(`${note.history.es}\n${note.description.es}`, /Tocaima/);
+    assert.doesNotMatch(`${note.history.en}\n${note.description.en}`, /Tocaima/);
+    const hrefs = note.sources.map((source) => source.href);
+    assert.equal(hrefs.includes('https://www.mascoleccionismo.com/publicaciones/JAG/JAG-083.pdf'), true);
+    assert.equal(
+      hrefs.includes('https://repositorio.banrep.gov.co/bitstreams/b82e02f1-24fd-41fa-bc0f-bbe70a0d1671/download'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('https://www.interciencia.net/wp-content/uploads/2022/10/02_6886_A_Andrade_Navia_v47n9_9.pdf'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('https://digitalcollections.library.vanderbilt.edu/islandora/object/islandora%3A10267'),
+      true,
+    );
+    assert.equal(
+      hrefs.includes('http://www.scielo.org.co/scielo.php?pid=S0120-25962024000100049&script=sci_arttext'),
+      true,
+    );
+    assert.equal(hrefs.includes('http://hdl.handle.net/10784/7647'), true);
+  });
+});
+
+describe('Colombia Silva 2010 butterfly-cut error series grouping', () => {
+  it('keeps two physical pieces and one type-level serial line', () => {
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    const pieces = notePieces(note);
+    assert.equal(pieces.length, 2);
+    assert.equal(pieces[0].id, '5000-pesos-error-2010-09629901');
+    assert.equal(pieces[1].id, '5000-pesos-error-2010-09636101');
+    assert.equal(pieces[0].serial, '09629901');
+    assert.equal(pieces[1].serial, '09636101');
+    assert.equal(note.serial, '09629901');
+    assert.equal(note.shareTypeNarrative, true);
+    assert.equal(noteSerialLine(note), '09629901 / 09636101');
+    assert.equal(
+      additions.filter((row) => row.id.startsWith('co-2010-5000-pesos-error-')).length,
+      2,
+    );
+    assert.equal(additions.some((row) => row.id === 'co-2010-5000-pesos-error-09629901'), true);
+    assert.equal(additions.some((row) => row.id === 'co-2010-5000-pesos-error-09636101'), true);
+    assert.ok(
+      additions.findIndex((row) => row.id === 'co-2010-5000-pesos-error-09629901') >
+        additions.findIndex((row) => row.id === 'co-2010-5000-pesos-error-09636101'),
+    );
+    assert.equal(
+      catalogAdditions.filter((row) => row.id === 'co-2010-5000-pesos-error-p452l').length,
+      1,
+    );
+    assert.match(note.lead.es, /09629901 y 09636101/);
+    assert.match(note.lead.en, /09629901 and 09636101/);
+    assert.match(note.description.es, /09629901 no es 09636101/);
+    assert.match(note.description.en, /09629901 is not 09636101/);
+    assert.doesNotMatch(note.description.es, /Elvira/);
+    assert.doesNotMatch(note.description.en, /Elvira/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      note.lead.es,
+      note.lead.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.doesNotMatch(publicCopy, /1[,.]5\s*millon/);
+  });
+
+  it('emits two error-grid cards, not one BanRep-style card', () => {
+    const cards = errorNoteCards().filter((card) => card.note.id === '5000-pesos-error-2010');
+    assert.equal(cards.length, 2);
+    assert.equal(cards[0].piece.serial, '09629901');
+    assert.equal(cards[1].piece.serial, '09636101');
+    assert.equal(cards[0].piece.title.es, '5.000 pesos · error mariposa · 2010 · 09629901');
+    assert.equal(cards[1].piece.title.es, '5.000 pesos · error mariposa · 2010 · 09636101');
+    const banRepCards = seriesCardsForChapter('banco-de-la-republica').filter(
+      (card) => card.note.id === '5000-pesos-error-2010',
+    );
+    assert.equal(banRepCards.length, 0);
+    const note = noteById('5000-pesos-error-2010');
+    assert.ok(note);
+    assert.equal(seriesCardHref(note, cards[0].piece, 'es'), '/coleccion/colombia/5000-pesos-error-2010/');
+    assert.equal(
+      seriesCardHref(note, cards[0].piece, 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
     );
   });
 });

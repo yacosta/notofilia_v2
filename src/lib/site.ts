@@ -1,6 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
-import { ECUADOR_PATH } from '../data/ecuador';
+import { dedicatedCatalogPaths as ecuadorPaths, ecuadorNoteSlugs, ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
@@ -17,15 +17,23 @@ import {
   USA_MISC_PATH_EN,
   USA_MPC_PATH,
   USA_MPC_PATH_EN,
+  USA_MPC_PROGRAM_PATH,
+  USA_MPC_PROGRAM_PATH_EN,
   USA_PATH,
   USA_PATH_EN,
   USA_RENCY_PATH,
   USA_RENCY_PATH_EN,
+  USA_COLONIAL_PATH,
+  USA_COLONIAL_PATH_EN,
+  USA_OBSOLETE_PATH,
+  USA_OBSOLETE_PATH_EN,
   unitedStatesNoteDedicatedSlugs,
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
 import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
+import { mpcProgramNoteDedicatedSlugs, mpcProgramNoteSlugs } from '../data/mpc';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
+import { lazarettosNumismaticsDedicatedSlugs } from '../data/lazarettos-numismatics';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
@@ -40,6 +48,7 @@ import {
   unitedStatesCoinSlugs,
   unitedStatesCoinageDedicatedSlugs,
 } from '../data/estados-unidos-coinage';
+import { spainCoinageDedicatedSlugs, spainCoinSlugs } from '../data/espana-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { catalogNoteSlugs as philippinesPnbNoteSlugs, dedicatedCatalogPaths as philippinesPnbPaths } from '../data/philippines-pnb-1916';
 import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
@@ -55,6 +64,9 @@ import {
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
+import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
+import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
+import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -85,16 +97,20 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of colombiaNoteSlugs) slugs.add(slug);
   slugs.add(COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
+  slugs.add(BANCA_LIBRE_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of unitedStatesCoinSlugs) slugs.add(slug);
+  for (const slug of spainCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of englandNoteSlugs) slugs.add(slug);
   for (const slug of canadaNoteSlugs) slugs.add(slug);
   for (const slug of malaysiaNoteSlugs) slugs.add(slug);
   for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
+  for (const slug of ecuadorNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
+  for (const slug of mpcProgramNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
 }
@@ -141,11 +157,15 @@ export function statsLine(locale: Locale): string {
 
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
+addLocalePair(USA_MPC_PROGRAM_PATH, USA_MPC_PROGRAM_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
+addLocalePair(USA_COLONIAL_PATH, USA_COLONIAL_PATH_EN);
+addLocalePair(USA_OBSOLETE_PATH, USA_OBSOLETE_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
+addLocalePair(BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export { copy } from '../i18n/copy';
@@ -173,8 +193,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Estados Unidos, Países Bajos y lazaretos colombianos.' },
-    en: { title: 'Numismatics', description: 'Coinage: Colombia, the United States, the Netherlands, and the Colombian lazarettos.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, España, Estados Unidos, Países Bajos y lazaretos colombianos.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, Spain, the United States, the Netherlands, and the Colombian lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -188,8 +208,8 @@ export const collections = [
   },
   {
     href: '/coleccion/espana/',
-    es: { title: 'España', description: 'Oro colonial de la ceca de Santa Fe de Bogotá.' },
-    en: { title: 'Spain', description: 'Colonial gold of the Santa Fe de Bogotá mint.' },
+    es: { title: 'España', description: 'El papel está en preparación. El medio escudo de Madrid de 1757 se documenta en Numismática.' },
+    en: { title: 'Spain', description: 'Paper is in preparation. The 1757 Madrid half escudo is documented under Numismatics.' },
   },
   {
     href: PUERTO_RICO_PATH,
@@ -198,8 +218,8 @@ export const collections = [
   },
   {
     href: ECUADOR_PATH,
-    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.' },
-    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
+    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Esta vitrina documenta el 1 sucre del Banco del Ecuador de 1901.' },
+    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. This case documents a 1901 Banco del Ecuador 1-sucre.' },
   },
   {
     href: GUATEMALA_PATH,
@@ -278,12 +298,20 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
-  { path: 'coleccion/notafilia', es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
+  { path: 'coleccion/notafilia', es: '¿Qué es la notafilia?', en: 'What is notaphily?' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
+  { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },
+  { path: 'coleccion/estados-unidos/billetes-obsoletos', es: 'Billetes Obsoletos (1782–1866)', en: 'Obsolete notes (1782–1866)' },
   { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
+  {
+    path: 'coleccion/estados-unidos-numismatica/fichas-hard-times',
+    es: 'Fichas Hard Times',
+    en: 'Hard Times tokens',
+  },
+  { path: 'coleccion/estados-unidos/mpc', es: 'MPC - Guerra de Corea (1951 - 1954)', en: 'MPC - Korean War (1951 - 1954)' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {
@@ -293,6 +321,7 @@ export const stubPages = [
   },
   { path: 'coleccion/estados-unidos/rency', es: 'Rency', en: 'Rency' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
+  { path: 'coleccion/espana-numismatica', es: 'España-Numismática', en: 'Spain-Numismatics' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
   { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
@@ -318,6 +347,7 @@ const dedicatedEs = [
   ...philippinesPnbPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  ...bancaLibreDedicatedSlugs,
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,
@@ -327,21 +357,30 @@ const dedicatedEs = [
   COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
+  ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,
   ...unitedStatesCoinageDedicatedSlugs,
+  ...spainCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_BARABOO_SCRIP_PATH.replace(/^\/|\/$/g, ''),
   USA_BARABOO_SCRIP_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
+  ...mpcProgramNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
@@ -352,12 +391,14 @@ const dedicatedEs = [
   ...englandNoteSlugs,
   ...canadaNoteSlugs,
   ...malaysiaNoteSlugs,
-  ECUADOR_PATH.replace(/^\/|\/$/g, ''),
+  ...ecuadorPaths,
   GUATEMALA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
   ...comparisonDedicatedSlugs,
+  ...gioriTestNotesDedicatedSlugs,
+  ...wwiiEmergencyDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',
   'blog',

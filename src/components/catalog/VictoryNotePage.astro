@@ -2,14 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, SERIES_PATH, type Locale } from '../../lib/site';
-import { inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
 import {
   notePageCopy,
   notePath,
   seriesCopy,
   seriesPath,
+  victoryNotes,
   type VictoryNote,
 } from '../../data/philippines-victory-66';
+import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
 
@@ -24,11 +28,26 @@ const t = notePageCopy[locale];
 const series = seriesCopy[locale];
 const pathname = notePath(note, locale);
 const sources = note.sources;
+const seo = piecePageMeta({
+  kind: 'note',
+  title: note.title[locale],
+  kicker: note.kicker[locale],
+  lead: note.lead[locale],
+  locale,
+  country: locale === 'en' ? 'Philippines' : 'Filipinas',
+});
+const siblings = pieceSiblings(victoryNotes, note.path);
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: t.collectionLink, path: SERIES_PATH },
+  ...(includeSeriesCrumb ? [{ name: t.seriesLink, path: seriesPath(locale) }] : []),
+  { name: seo.h1, path: pathname },
+];
 ---
 
 <Layout
-  title={`${note.title[locale]} | Notofilia`}
-  description={note.lead[locale]}
+  title={seo.documentTitle}
+  description={seo.description}
   locale={locale}
   pathname={pathname}
   ogImage={note.images.front}
@@ -38,9 +57,11 @@ const sources = note.sources;
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        ...visualArtworkJsonLd({
-          name: note.title[locale],
-          description: note.lead[locale],
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+          name: seo.h1,
+          description: seo.description,
           url: pathname,
           image: note.images.front,
           locale,
@@ -49,6 +70,7 @@ const sources = note.sources;
           serial: note.serial,
           gradingService: inferGradingService(note.grade[locale]),
         }),
+        ],
       })}
     />
   </Fragment>
@@ -60,16 +82,17 @@ const sources = note.sources;
           { href: localizePath('/', locale), label: copy[locale].home },
           { href: localizePath(SERIES_PATH, locale), label: t.collectionLink },
           ...(includeSeriesCrumb ? [{ href: seriesPath(locale), label: t.seriesLink }] : []),
-          { label: note.title[locale] },
+          { label: seo.h1 },
         ]}
       />
 
       <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
         {note.kicker[locale]}
       </p>
-      <h1 class="mb-4 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
-        {note.title[locale]}
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {seo.h1}
       </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
 
       <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
@@ -109,6 +132,7 @@ const sources = note.sources;
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
+            eager
           />
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
@@ -129,7 +153,7 @@ const sources = note.sources;
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.aboutHeading}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{note.description[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.description[locale], locale)} />
       </section>
 
       <section class="mt-12" aria-labelledby="scarcity-heading">
@@ -145,6 +169,25 @@ const sources = note.sources;
         </h2>
         <p class="m-0 text-[17px]/7 text-cream">{note.population[locale]}</p>
       </section>
+
+      <PieceSiblings
+        locale={locale}
+        prev={
+          siblings.prev
+            ? { href: notePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front }
+            : undefined
+        }
+        next={
+          siblings.next
+            ? { href: notePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front }
+            : undefined
+        }
+        related={siblings.related.map((item) => ({
+          href: notePath(item, locale),
+          title: item.title[locale],
+          image: item.images.front,
+        }))}
+      />
 
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />

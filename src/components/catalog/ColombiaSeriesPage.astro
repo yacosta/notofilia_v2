@@ -13,9 +13,11 @@ import {
   seriesPath,
   seriesSources,
 } from '../../data/colombia';
+import { BANCA_LIBRE_PATH } from '../../data/colombia-banca-libre';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
@@ -66,9 +68,9 @@ const jsonLd = collectionPageJsonLd({
       width={hero.width}
       height={hero.height}
       headingId="series-heading"
-      eyebrow={copy[locale].virtualCollection}
-      title={t.kicker}
-      subtitle={t.title}
+          eyebrow={copy[locale].virtualCollection}
+          title={t.title}
+          subtitle={t.eraSubtitle}
       imageClass="object-[50%_28%]"
     />
 
@@ -112,9 +114,21 @@ const jsonLd = collectionPageJsonLd({
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
               {
+                chapter.id === 'banca-libre' ? (
+                  <p class="mb-0 mt-4">
+                    <a
+                      class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(BANCA_LIBRE_PATH, locale)}
+                    >
+                      {t.bancaLibreEssay}
+                    </a>
+                  </p>
+                ) : null
+              }
+              {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
+                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
                     aria-label={chapter.title[locale]}
                   >
                     {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
@@ -161,7 +175,7 @@ const jsonLd = collectionPageJsonLd({
         {
           hasErrorNotes() ? (
             <ol
-              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"
+              class:list={['m-0', CATALOG_PIECE_GRID]}
               aria-label={t.errorsTitle}
             >
               {errorNotes.map(({ note, piece }) => {

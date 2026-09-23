@@ -38,9 +38,12 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934-chicago',
       '10-dolares-serie-1934a-chicago',
       '10-dolares-serie-1934a-cleveland',
+      '10-dolares-serie-1934a-filadelfia',
+      '10-dolares-serie-1934c-kansas-city',
       '10-dolares-serie-1934d-richmond',
       '500-dolares-serie-1934a-nueva-york',
       '1000-dolares-serie-1934a-nueva-york',
+      '20-dolares-serie-1934a-hawaii',
       '1-dolar-serie-2003-atlanta',
       '2-dolares-serie-2003-san-luis',
     ]);
@@ -61,7 +64,10 @@ describe('US Federal Reserve Note series list', () => {
       '10-dolares-serie-1934-chicago',
       '10-dolares-serie-1934a-chicago',
       '10-dolares-serie-1934a-cleveland',
+      '10-dolares-serie-1934a-filadelfia',
+      '10-dolares-serie-1934c-kansas-city',
       '10-dolares-serie-1934d-richmond',
+      '20-dolares-serie-1934a-hawaii',
       '500-dolares-serie-1934a-nueva-york',
       '1000-dolares-serie-1934a-nueva-york',
     ]);
@@ -85,5 +91,13 @@ describe('US Federal Reserve Note series list', () => {
     );
     assert.match(seriesPage, /chapter\.id === 'us-frb' \? t\.frnListLabel/);
     assert.match(seriesPage, /notesForChapter\(chapter\.id\)/);
+  });
+
+  it('fits three banknote cards per row on large screens', () => {
+    assert.match(
+      seriesPage,
+      /notes\.length > 0 \? \(\s*<ol\s+class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"/,
+    );
+    assert.doesNotMatch(seriesPage, /lg:grid-cols-4/);
   });
 });

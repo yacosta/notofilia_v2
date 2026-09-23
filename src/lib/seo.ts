@@ -5,6 +5,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { USA_PATH } from '../data/estados-unidos';
 import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
+import { SPAIN_COINAGE_PATH } from '../data/espana-coinage';
 import { GLOSSARY_PATH } from '../data/glossary';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { collectionStats } from '../data/holdings';
@@ -19,6 +20,7 @@ import { footerLinksFromNav, megaNav } from './mega-nav';
 import { SITE_URL, type Locale } from './site-url';
 
 export { SITE_URL, type Locale } from './site-url';
+export { limitMetaDescription, META_DESCRIPTION_MAX } from './piece-seo';
 
 export const SITE_NAME = 'Notofilia';
 export const SITE_AUTHOR = 'Yezid Acosta';
@@ -131,7 +133,6 @@ function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[numbe
 /** Published hubs that are not (yet) rows in mega-nav. */
 const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
-  { href: '/buscar/', es: 'Buscar', en: 'Search' },
   { href: '/identificar/', es: 'Identificar', en: 'Identify' },
   { href: '/herramientas/', es: 'Herramientas', en: 'Tools' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
@@ -140,7 +141,17 @@ const extraHighValuePages = [
     es: 'Notofilia vs. otros catálogos',
     en: 'Notofilia vs. other catalogs',
   },
+  {
+    href: '/coleccion/colombia/banca-libre/',
+    es: 'Banca libre',
+    en: 'Free banking',
+  },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
+  {
+    href: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
+    es: 'Numismática de los Lazaretos',
+    en: 'Numismatics of the Lazarettos',
+  },
   { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },
 ] as const;
 
@@ -148,6 +159,7 @@ const extraHighValuePages = [
 export const llmsCountryCatalogues = [
   { href: COLOMBIA_PATH, es: 'Colombia (papel moneda)', en: 'Colombia (paper money)' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
+  { href: SPAIN_COINAGE_PATH, es: 'España (numismática)', en: 'Spain (numismatics)' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
   { href: USA_COINAGE_PATH, es: 'Estados Unidos (numismática)', en: 'United States (numismatics)' },
   { href: SERIES_PATH, es: 'Filipinas · Periodo estadounidense', en: 'Philippines · American period' },
@@ -176,7 +188,6 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/blog/', 'Guías', 'Guides');
   add('/noticias/', 'Noticias', 'News');
   add('/coleccion/', 'Colección', 'Collection');
-  add('/buscar/', 'Buscar', 'Search');
   add('/identificar/', 'Identificar', 'Identify');
   add('/herramientas/', 'Herramientas', 'Tools');
 

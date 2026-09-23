@@ -29,4 +29,11 @@ describe('collection hub copy length', () => {
     assert.match(src, /t\.collectionHubLead/);
     assert.doesNotMatch(src, /¿Qué más\?/);
   });
+
+  it('uses the museum-case column without a 46rem recap', () => {
+    const src = readFileSync(new URL('../components/CollectionHubPage.astro', import.meta.url), 'utf8');
+    assert.match(src, /max-w-content/);
+    assert.match(src, /px-\[var\(--page-gutter\)\]/);
+    assert.doesNotMatch(src, /max-w-\[46rem\]/);
+  });
 });

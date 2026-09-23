@@ -18,16 +18,16 @@ describe('homepage LCP hero strings', () => {
   it('exports production CDN src and srcset that match the mobile patch', () => {
     assert.equal(
       heroSrc,
-      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg',
+      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-engraving-01.jpg',
     );
     assert.equal(
       heroSrcset,
       [
-        '/cdn-cgi/image/width=480,format=avif,quality=50/images/hero-slide.jpg 480w',
-        '/cdn-cgi/image/width=640,format=avif,quality=55/images/hero-slide.jpg 640w',
-        '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg 1080w',
-        '/cdn-cgi/image/width=1600,format=avif,quality=60/images/hero-slide.jpg 1600w',
-        '/cdn-cgi/image/width=2400,format=avif,quality=55/images/hero-slide.jpg 2400w',
+        '/cdn-cgi/image/width=480,format=avif,quality=50/images/hero-engraving-01.jpg 480w',
+        '/cdn-cgi/image/width=640,format=avif,quality=55/images/hero-engraving-01.jpg 640w',
+        '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-engraving-01.jpg 1080w',
+        '/cdn-cgi/image/width=1600,format=avif,quality=60/images/hero-engraving-01.jpg 1600w',
+        '/cdn-cgi/image/width=2400,format=avif,quality=55/images/hero-engraving-01.jpg 2400w',
       ].join(', '),
     );
     assert.equal(heroSizes, '100vw');
@@ -46,6 +46,14 @@ describe('homepage LCP hero strings', () => {
     assert.match(indexEn, /imagesizes=\{heroSizes\}/);
     assert.match(indexEs, /href=\{heroSrc\}/);
     assert.match(indexEn, /href=\{heroSrc\}/);
+  });
+
+  it('does not render the collection-browse grid on the homepage', () => {
+    assert.doesNotMatch(homePage, /browse-heading/);
+    assert.doesNotMatch(homePage, /t\.browseTitle/);
+    assert.doesNotMatch(homePage, /t\.browseIntro/);
+    assert.doesNotMatch(homePage, /collections\.map/);
+    assert.doesNotMatch(copy, /browseIntro/);
   });
 });
 
@@ -67,8 +75,9 @@ describe('mobile chrome patch', () => {
 });
 
 describe('PageSpeed-oriented build settings', () => {
-  it('inlines stylesheets and loads Subscribe with Google only on click', () => {
-    assert.match(astroConfig, /inlineStylesheets:\s*'always'/);
+  it('inlines stylesheets automatically and loads Subscribe with Google only on click', () => {
+    assert.match(astroConfig, /compressHTML:\s*true/);
+    assert.match(astroConfig, /inlineStylesheets:\s*'auto'/);
     assert.doesNotMatch(layout, /publisher\.js/);
     assert.doesNotMatch(googlePreferred, /requestIdleCallback/);
     assert.match(googlePreferred, /loadSwgPublisher/);

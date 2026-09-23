@@ -191,8 +191,48 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What was the first federal paper of general circulation?',
       },
       answer: {
-        es: 'Los Demand Notes de 1861 (5, 10 y 20 dólares), pagaderos a la vista en metal. El U.S. Currency Education Program y el BEP los sitúan como la primera circulación general del Tesoro y el origen del apodo greenback. Los United States Notes de 1862 los sustituyeron como curso legal. En esta colección aún no hay un Demand Note con foto y serial.',
+        es: 'Los Demand Notes de 1861 (5, 10 y 20 dólares), pagaderos a la vista en metálico. El U.S. Currency Education Program y el BEP los sitúan como la primera circulación general del Tesoro y el origen del apodo «greenback». Los United States Notes de 1862 los sustituyeron como curso legal. En esta colección aún no hay un Demand Note con foto y serial.',
         en: 'The Demand Notes of 1861 ($5, $10, and $20), payable on demand in coin. The U.S. Currency Education Program and the BEP place them as the Treasury’s first general circulation and the origin of the nickname “greenback.” United States Notes of 1862 replaced them as legal tender. This collection does not yet hold a Demand Note with a photograph and serial.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
+        en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1601 (P#412a), firmas Woods–Mellon, sello y seriales azules. El apodo Funnyback describe el reverso verde con un ONE ornamental, no un error. Esta pieza es el serial D00508932B, bloque D–B, emisión ordinaria.',
+        en: 'It is a small-size Silver Certificate, Fr. 1601 (P#412a), Woods–Mellon signatures, blue seal and serials. The nickname Funnyback describes the green reverse with an ornamental ONE, not an error. This piece is serial D00508932B, D–B block, a regular issue.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 1 dólar HAWAII serie 1935 A?',
+        en: 'What is the Series 1935A HAWAII $1?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un sello amarillo, ni un Funnyback.',
+        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a, a yellow-seal note, or a Funnyback.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 20 dólares HAWAII serie 1934 A?',
+        en: 'What is the Series 1934A HAWAII $20?',
+      },
+      answer: {
+        es: 'Es un Federal Reserve Note de emergencia, Fr. 2305, distrito L / 12 de San Francisco, firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1934 A nombra el tipo, no el año de numeración: este ejemplar, serial L86654132A, bloque L–A, se numeró en 1944. Circulada, sin encapsular. No es el Fr. 2304 de 1934 sin letra, ni el 1 dólar HAWAII serial S40499058C.',
+        en: 'It is an emergency Federal Reserve Note, Fr. 2305, San Francisco district L / 12, Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1934A names the type, not the numbering year: this piece, serial L86654132A, L–A block, was numbered in 1944. Circulated, unslabbed. It is not Fr. 2304 (1934 without a letter) or the HAWAII $1, serial S40499058C.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 2 dólares United States Note de 1917?',
+        en: 'What is the Series 1917 United States Note $2?',
+      },
+      answer: {
+        es: 'Es un Legal Tender Note de tamaño grande —horse blanket— con Jefferson, el Capitolio y reverso Bracelet. Esta pieza es Fr. 60 (P#188(4)), firmas Speelman–White, serial B50400302A.',
+        en: 'It is a large-size Legal Tender Note — a horse blanket — with Jefferson, the Capitol, and the Bracelet reverse. This piece is Fr. 60 (P#188(4)), Speelman–White signatures, serial B50400302A.',
       },
     },
     {
@@ -221,8 +261,18 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What are Vietnam MPCs?',
       },
       answer: {
-        es: 'Los Military Payment Certificates fueron el papel de las bases estadounidenses en el extranjero. En esta colección se documentan series usadas en Vietnam (641, 661, 681 y 692) con ficha propia cuando hay foto y serial.',
-        en: 'Military Payment Certificates were the paper used on United States bases abroad. This collection documents series used in Vietnam (641, 661, 681, and 692) with their own pages when a photo and serial exist.',
+        es: 'Los Military Payment Certificates fueron el papel de las bases estadounidenses en el extranjero. Esta colección ficha el 5 centavos de la serie 481 (1951–1954), serial D02536728D, fuera de Vietnam, y las series usadas en Vietnam (641, 661, 681 y 692) cuando hay foto y serial.',
+        en: 'Military Payment Certificates were the paper used on United States bases abroad. This collection records the Series 481 5-cent note (1951–1954), serial D02536728D, outside Vietnam, and the series used in Vietnam (641, 661, 681, and 692) when a photo and serial exist.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 5 centavos MPC de la serie 481?',
+        en: 'What is the Series 481 5-cent MPC?',
+      },
+      answer: {
+        es: 'Es un certificado de pago militar de 5 centavos, Pick M22a y Friedberg M831, emitido sin año de calendario en 1951 y circulado del 20 de junio de 1951 al 25 de mayo de 1954. No es una serie de Vietnam. Esta pieza es el serial D02536728D, bloque D–D, número de pliego 66, sin encapsular.',
+        en: 'It is a 5-cent military payment certificate, Pick M22a and Friedberg M831, issued without a calendar year in 1951 and circulated from 20 June 1951 to 25 May 1954. It is not a Vietnam series. This piece is serial D02536728D, D–D block, sheet position 66, unslabbed.',
       },
     },
     {
@@ -231,7 +281,7 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Are the United States notes in this collection for sale?',
       },
       answer: {
-        es: 'No. El catálogo cita Friedberg, Haxby, Schwan, Criswell o Pick cuando existen, y deja claro que nada está a la venta. Las fichas pendientes se publican a medida que se fotografían.',
+        es: 'No. El catálogo cita a Friedberg, Haxby, Schwan, Criswell o Pick cuando existen, y deja claro que nada está a la venta. Las fichas pendientes se publican a medida que se fotografían.',
         en: 'No. The catalog cites Friedberg, Haxby, Schwan, Criswell, or Pick when those numbers exist, and states that nothing is for sale. Remaining note pages are published as pieces are photographed.',
       },
     },
@@ -263,8 +313,38 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is Victory Series No. 66?',
       },
       answer: {
-        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte. El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir.',
-        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte. “No. 66” commemorates the age attributed to Manuel L. Quezon at death.',
+        es: 'Fueron los últimos certificados del Tesoro impresos bajo administración de Estados Unidos en Filipinas, grabados por el BEP y puestos en circulación el 20 de octubre de 1944 en Leyte, para reemplazar el papel de ocupación japonesa conocido como dinero «Mickey Mouse». El «n.º 66» conmemora la edad atribuida a Manuel L. Quezon al morir. La emisión oficial tuvo ocho denominaciones, de 1 a 500 pesos (Pick 94–101).',
+        en: 'They were the last Treasury Certificates printed under United States administration in the Philippines, engraved by the BEP and issued on 20 October 1944 at Leyte, to replace Japanese occupation paper known as “Mickey Mouse” money. “No. 66” commemorates the age attributed to Manuel L. Quezon at death. The official issue ran to eight denominations, from 1 to 500 pesos (Pick 94–101).',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué denominaciones de la Serie Victory no están en esta vitrina?',
+        en: 'Which Victory Series denominations are missing from this case?',
+      },
+      answer: {
+        es: 'Ocho certificados del Tesoro, Pick 94 a 101: 1, 2, 5, 10, 20, 50, 100 y 500 pesos. Notofilia exhibe 1, 2, 5 y 20. El 10 (Washington, P#97), el 50 (general Lawton, P#99), el 100 (Magallanes, P#100) y el 500 (Legazpi, P#101) no tienen ejemplar aquí. El 500 pesos se retiró el 25 de agosto de 1954 (Ley de la República n.º 1191); la Ley n.º 1516 prorrogó el canje hasta el 31 de diciembre de 1957.',
+        en: 'Eight Treasury Certificates, Pick 94 to 101: 1, 2, 5, 10, 20, 50, 100, and 500 pesos. Notofilia shows the 1, 2, 5, and 20. The 10-peso (Washington, P#97), the 50 (General Lawton, P#99), the 100 (Magellan, P#100), and the 500 (Legazpi, P#101) have no example here. The 500-peso was withdrawn on 25 August 1954 (Republic Act No. 1191); Republic Act No. 1516 extended exchange through 31 December 1957.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué combinaciones de firmas tiene la Serie Victory n.º 66?',
+        en: 'What signature combinations does Victory Series No. 66 have?',
+      },
+      answer: {
+        es: 'Tres pares: Osmeña–Hernandez (presidente y auditor general), el más frecuente salvo en el 500 pesos y el de las cuatro piezas de esta vitrina; Osmeña–Guevara (presidente y tesorero), documentado sobre todo en 100 y 500 pesos; y Roxas–Guevara, tras 1946, que no se registra en 1, 5 ni 10 pesos —sí en el 2 y el 20 (P#95b, P#98b) y en los valores altos—.',
+        en: 'Three pairings: Osmeña–Hernandez (President and Auditor General), the most frequent except on the 500-peso and the one on all four notes here; Osmeña–Guevara (President and Treasurer), recorded mainly on the 100- and 500-peso notes; and Roxas–Guevara, after 1946, which is not recorded on the 1-, 5-, or 10-peso — it does appear on the 2 and 20 (P#95b, P#98b) and on the high values.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el dinero «Mickey Mouse» frente a los Victory Pesos?',
+        en: 'What is “Mickey Mouse” money next to the Victory Pesos?',
+      },
+      answer: {
+        es: 'Así se llamaba al papel fiduciario de la ocupación militar japonesa, devaluado por la hiperinflación. Los certificados Victory, puestos en Leyte el 20 de octubre de 1944 y reconocidos por la Orden Ejecutiva n.º 25, volvían a un peso del Tesoro pagadero en plata o en moneda estadounidense de valor equivalente.',
+        en: 'That was the popular name for Japanese military-occupation fiat paper, wrecked by hyperinflation. Victory certificates, issued at Leyte on 20 October 1944 and recognized by Executive Order No. 25, restored a Treasury peso payable in silver or in United States currency of equivalent value.',
       },
     },
     {
@@ -317,6 +397,88 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
       answer: {
         es: 'No. Notofilia no vende. Las fichas identifican el tipo Pick y el ejemplar de la colección; no son anuncios ni tasaciones de mercado.',
         en: 'No. Notofilia does not sell. The records identify the Pick type and the collection example; they are not listings or market appraisals.',
+      },
+    },
+  ],
+  'wwii-emergency': [
+    {
+      question: {
+        es: '¿Qué eran los billetes con sobreimpresión HAWAII?',
+        en: 'What were the HAWAII overprint notes?',
+      },
+      answer: {
+        es: 'Certificados de plata y Federal Reserve Notes con sello y seriales marrones y la palabra HAWAII, emitidos desde junio de 1942. Si Japón tomaba el archipiélago, Washington podía declararlos sin valor de inmediato. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más común; 1935 A es la serie, no el año de numeración. Esta colección ficha el serial S40499058C y el 20 dólares 1934 A (Fr. 2305), serial L86654132A, ambos numerados en 1944.',
+        en: 'Silver certificates and Federal Reserve Notes with brown seals and serials and the word HAWAII, issued from June 1942. If Japan took the islands, Washington could declare them worthless at once. The 1935A $1 (Hawaii P#36; Fr. 2300) is the common type; 1935A is the series, not the numbering year. This collection records serial S40499058C and the 1934A $20 (Fr. 2305), serial L86654132A, both numbered in 1944.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué fue la Moneda Militar Aliada (AMC)?',
+        en: 'What was Allied Military Currency (AMC)?',
+      },
+      answer: {
+        es: 'Fiat temporal del AMGOT, impreso sobre todo por el BEP y Forbes, en liras, francos, marcos, chelines y yenes. Se pagaba a la tropa a un tipo fijo frente al dólar. En Italia desató inflación; en Francia chocó con de Gaulle; en Alemania las planchas soviéticas sin la marca «F» adelantaron la partición económica.',
+        en: 'Temporary AMGOT fiat, printed mainly by the BEP and Forbes, in lire, francs, marks, schillings, and yen. Troops were paid at a fixed dollar rate. In Italy it fed inflation; in France it collided with de Gaulle; in Germany Soviet plates without the “F” mark brought economic partition forward.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué fue la Operación Bernhard?',
+        en: 'What was Operation Bernhard?',
+      },
+      answer: {
+        es: 'El mayor esquema de falsificación respaldado por un Estado: las SS, en Sachsenhausen, forjaron libras del Banco de Inglaterra. Se documentan al menos 8,9 millones de billetes por 134,6 millones de libras. El Banco de Inglaterra detectó el papel en 1943 —un serial reutilizado, llegado por Marruecos— y retiró las denominaciones altas; tras la guerra rediseñó el circulante.',
+        en: 'The largest state-backed counterfeiting scheme on record: the SS at Sachsenhausen forged Bank of England notes. At least 8.9 million pieces worth £134.6 million are documented. The Bank of England detected the paper in 1943 — a reused serial that arrived via Morocco — and withdrew the high denominations; after the war it redesigned the circulating notes.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuánto vale un billete HAWAII?',
+        en: 'What is a HAWAII overprint note worth?',
+      },
+      answer: {
+        es: 'Notofilia no publica precios. El valor de un HAWAII depende del tipo Friedberg, de la denominación, del estado del papel —incluida la designación EPQ—, de la nitidez de la sobreimpresión y de si es un reemplazo con estrella. El 1 dólar 1935 A (Hawaii P#36; Fr. 2300) es el tipo más visto; los de 10 y 20 dólares, y los star notes, son más escasos. Esta vitrina ficha el serial S40499058C y el 20 dólares Fr. 2305, serial L86654132A; no se cotiza el mercado.',
+        en: 'Notofilia does not publish prices. The value of a HAWAII note depends on the Friedberg type, the denomination, the paper — including an EPQ designation — the sharpness of the overprint, and whether it is a star replacement. The 1935A $1 (Hawaii P#36; Fr. 2300) is the type most often seen; the $10 and $20 notes, and the star notes, are scarcer. This case records serial S40499058C and the $20 Fr. 2305, serial L86654132A; the market is not quoted.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué eran los certificados de sello amarillo?',
+        en: 'What were the yellow-seal silver certificates?',
+      },
+      answer: {
+        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso.',
+        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué eran los Ghetto-Kronen de Theresienstadt?',
+        en: 'What were the Theresienstadt Ghetto-Kronen?',
+      },
+      answer: {
+        es: 'Siete denominaciones (1 a 100 coronas) fechadas el 1 de enero de 1943, impresas en Praga, con Moisés y las tablas en el anverso y la firma de Jakob Edelstein. No compraban: servían para presentar Theresienstadt como un campo modelo. Peter Kien diseñó el tipo; Heydrich rechazó el primer dibujo. No es moneda militar aliada.',
+        en: 'Seven denominations (1 to 100 crowns) dated 1 January 1943, printed in Prague, with Moses and the tablets on the face and Jakob Edelstein’s signature. They bought nothing: they were meant to present Theresienstadt as a model camp. Peter Kien designed the type; Heydrich rejected the first drawing. This is not Allied military currency.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el dinero de invasión japonés?',
+        en: 'What is Japanese invasion money?',
+      },
+      answer: {
+        es: 'Papel fiduciario que el Imperio japonés impuso en Malaya (letra M), Birmania (B), las Indias Orientales (S), Filipinas (P) y Oceanía (O). No es el yen militar (gunpyō) ni el yen A o B de la AMC. En Filipinas la guerrilla emitió vales propios, distintos de la Serie Victory.',
+        en: 'Fiduciary paper the Japanese Empire imposed in Malaya (letter M), Burma (B), the Netherlands Indies (S), the Philippines (P), and Oceania (O). It is not military yen (gunpyō) and not AMC A-yen or B-yen. In the Philippines the guerrillas issued their own vouchers, distinct from the Victory Series.',
+      },
+    },
+    {
+      question: {
+        es: '¿Para qué servían los BAFSV?',
+        en: 'What were BAFSV for?',
+      },
+      answer: {
+        es: 'Vales de las Fuerzas Armadas británicas, válidos solo en cantinas del NAAFI, para cortar el mercado negro de posguerra. La 1.ª serie (1946) incluye 3 d, 6 d, 1/-, 2/6, 5/-, 10/- y 1 £. La 5.ª se diseñó y no se imprimió. El programa duró, con huecos, hasta 1982.',
+        en: 'British Armed Forces vouchers, valid only in NAAFI canteens, meant to cut the postwar black market. The 1st series (1946) includes 3d, 6d, 1/-, 2/6, 5/-, 10/-, and £1. The 5th series was designed and never printed. The program lasted, with gaps, until 1982.',
       },
     },
   ],

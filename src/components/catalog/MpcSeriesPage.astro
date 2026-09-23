@@ -1,0 +1,292 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
+import CatalogThumb from './CatalogThumb.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
+import { collectionPageJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import {
+  MPC_PROGRAM_HERO,
+  mpcProgramChapters,
+  notePath,
+  notesForChapter,
+  seriesCopy,
+  seriesPath,
+  seriesSources,
+  USA_MPC_PATH,
+  USA_PATH,
+} from '../../data/mpc';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = seriesCopy[locale];
+const pathname = seriesPath(locale);
+const hero = MPC_PROGRAM_HERO[locale];
+const caseChapter = mpcProgramChapters.find((chapter) => chapter.id === 'serie-481');
+const essayChapters = mpcProgramChapters.filter((chapter) => chapter.id !== 'serie-481');
+if (!caseChapter) {
+  throw new Error('Missing serie-481 case chapter');
+}
+
+const jsonLd = collectionPageJsonLd({
+  locale,
+  pathname,
+  name: t.title,
+  description: t.metaDescription,
+  crumbs: [
+    { name: copy[locale].home, path: '/' },
+    { name: t.parentLink, path: USA_PATH },
+    { name: t.breadcrumbCurrent, path: pathname },
+  ],
+});
+---
+
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={hero.src}
+  ogImageAlt={t.heroAlt}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.kicker}
+      subtitle={t.title}
+      imageClass="object-[50%_42%]"
+      size="compact"
+    />
+
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(USA_PATH, locale), label: t.parentLink },
+          { label: t.breadcrumbCurrent },
+        ]}
+      />
+
+      <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">
+        {t.intro[0]}
+      </p>
+      <div class="w-full text-[17px]/7 text-cream">
+        {t.intro.slice(1).map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+      </div>
+
+      <section class="mt-12 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="series-facts-heading">
+        <h2 id="series-facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.denominationsLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.denominationsValue}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.printingLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.printingValue}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {t.authorityLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{t.authorityValue}</dd>
+          </div>
+        </dl>
+        <p class="mb-0 mt-6 text-[15px]/6 text-muted">{t.notVietnamNote}</p>
+      </section>
+
+      <section id={caseChapter.id} class="mt-16 scroll-mt-28" aria-labelledby={`${caseChapter.id}-heading`}>
+        <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+          {caseChapter.years[locale]}
+        </p>
+        <h2
+          id={`${caseChapter.id}-heading`}
+          class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+        >
+          {caseChapter.title[locale]}
+        </h2>
+        <p class="mb-4 mt-0 text-[17px]/7 text-muted">{caseChapter.lead[locale]}</p>
+        <p class="m-0 text-[17px]/7 text-cream">{caseChapter.body[locale]}</p>
+        {
+          notesForChapter(caseChapter.id).length > 0 ? (
+            <ol class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]} aria-label={caseChapter.title[locale]}>
+              {notesForChapter(caseChapter.id).map((note) => (
+                <li class="min-w-0">
+                  <a
+                    href={notePath(note, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                  >
+                    <CatalogThumb
+                      src={note.images.front}
+                      alt={note.frontCaption[locale]}
+                      width={note.images.width}
+                      height={note.images.height}
+                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                    />
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {note.title[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                    </p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          ) : null
+        }
+      </section>
+
+      <section class="mt-12" aria-labelledby="denomination-table-heading">
+        <h2
+          id="denomination-table-heading"
+          class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+        >
+          {t.tableHeading}
+        </h2>
+        <div class="overflow-x-auto border border-line-strong">
+          <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+            <caption class="caption-bottom px-3 py-2.5 text-left text-[14px] text-muted">
+              {t.tableCaption}
+            </caption>
+            <thead>
+              <tr class="border-b border-line-strong bg-panel text-left">
+                {
+                  t.tableHeaders.map((header) => (
+                    <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                      {header}
+                    </th>
+                  ))
+                }
+              </tr>
+            </thead>
+            <tbody>
+              {
+                t.tableRows.map((row) => (
+                  <tr class="border-b border-line-strong last:border-b-0">
+                    {row.map((cell, index) =>
+                      index === 0 ? (
+                        <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                          {cell}
+                        </th>
+                      ) : (
+                        <td class="px-3 py-2.5">{cell}</td>
+                      ),
+                    )}
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="mt-6 mb-0 text-[17px]/7 text-muted">
+        {t.usLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_PATH, locale)}
+        >
+          {t.usLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.vietnamLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(USA_MPC_PATH, locale)}
+        >
+          {t.vietnamLink}
+        </a>
+      </p>
+
+      <div class="mt-16 space-y-12">
+        {
+          essayChapters.map((chapter) => (
+            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                {chapter.years[locale]}
+              </p>
+              <h2
+                id={`${chapter.id}-heading`}
+                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+              >
+                {chapter.title[locale]}
+              </h2>
+              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                notesForChapter(chapter.id).length > 0 ? (
+                  <ol
+                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
+                    aria-label={chapter.title[locale]}
+                  >
+                    {notesForChapter(chapter.id).map((note) => (
+                      <li class="min-w-0">
+                        <a
+                          href={notePath(note, locale)}
+                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                        >
+                          <CatalogThumb
+                            src={note.images.front}
+                            alt={note.frontCaption[locale]}
+                            width={note.images.width}
+                            height={note.images.height}
+                            class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                          />
+                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                            {note.title[locale]}
+                          </h3>
+                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                            {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                          </p>
+                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                ) : null
+              }
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={seriesSources} heading={t.sourcesTitle} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={localizePath(USA_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {copy[locale].backUnitedStates}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>
