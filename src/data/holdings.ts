@@ -175,6 +175,7 @@ export const additions: Holding[] = [
   { id: 'co-1921-2-centavos-lazareto', kind: 'coin', country: 'CO' },
   { id: 'us-c1835-ht-181-john-j-adams', kind: 'coin', country: 'US' },
   { id: 'co-dln-bono-reconquista-10-pesos-serie-c-2380', kind: 'banknote', country: 'CO' },
+  { id: 'us-baraboo-1933-50c-a1054', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */

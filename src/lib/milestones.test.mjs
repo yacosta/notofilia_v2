@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c-2380');
+    assert.equal(additions.at(-1)?.id, 'us-baraboo-1933-50c-a1054');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',

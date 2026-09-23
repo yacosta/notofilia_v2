@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T15:56:26.769Z",
+  "generatedAt": "2026-09-23T23:19:57.338Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1639,6 +1639,45 @@
       "title": {
         "es": "15 centavos · tiquete estudiantil · rojo",
         "en": "15 centavos · student-transport ticket · red"
+      }
+    },
+    {
+      "pieceId": "bono-reconquista-del-poder-10-pesos-serie-c-2380",
+      "face": "front",
+      "hash": "008995000068d000",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/",
+      "pick": "DLN · Serie C",
+      "image": "/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-composite.jpg",
+      "title": {
+        "es": "10 pesos · Dirección Liberal Nacional · 1946–1948",
+        "en": "10 pesos · Dirección Liberal Nacional · 1946–1948"
+      }
+    },
+    {
+      "pieceId": "bono-reconquista-del-poder-10-pesos-serie-c-2380",
+      "face": "front",
+      "hash": "00008b95898b0000",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/",
+      "pick": "DLN · Serie C",
+      "image": "/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-front.jpg",
+      "title": {
+        "es": "10 pesos · Dirección Liberal Nacional · 1946–1948",
+        "en": "10 pesos · Dirección Liberal Nacional · 1946–1948"
+      }
+    },
+    {
+      "pieceId": "bono-reconquista-del-poder-10-pesos-serie-c-2380",
+      "face": "back",
+      "hash": "00009898b8e80000",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/",
+      "pick": "DLN · Serie C",
+      "image": "/images/catalog/colombia/bono-reconquista-10-pesos-serie-c-2380-back.jpg",
+      "title": {
+        "es": "10 pesos · Dirección Liberal Nacional · 1946–1948",
+        "en": "10 pesos · Dirección Liberal Nacional · 1946–1948"
       }
     },
     {
@@ -3433,6 +3472,45 @@
       "title": {
         "es": "15 centavos · Baraboo Scrip · Al. T. Ringling · 1933",
         "en": "15¢ · Baraboo Scrip · Al. T. Ringling · 1933"
+      }
+    },
+    {
+      "pieceId": "scrip-baraboo-50-centavos-a1054",
+      "face": "front",
+      "hash": "0000317133730000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/",
+      "pick": "MS WI100-.50",
+      "image": "/images/catalog/united-states/united-states-baraboo-chamber-of-commerce-50-cents-1933-a1054-composite.jpg",
+      "title": {
+        "es": "50 centavos · Baraboo Scrip · Albert C. Ringling · 1933",
+        "en": "50¢ · Baraboo Scrip · Albert C. Ringling · 1933"
+      }
+    },
+    {
+      "pieceId": "scrip-baraboo-50-centavos-a1054",
+      "face": "front",
+      "hash": "00003a3e062a0000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/",
+      "pick": "MS WI100-.50",
+      "image": "/images/catalog/united-states/united-states-baraboo-chamber-of-commerce-50-cents-1933-a1054-front.jpg",
+      "title": {
+        "es": "50 centavos · Baraboo Scrip · Albert C. Ringling · 1933",
+        "en": "50¢ · Baraboo Scrip · Albert C. Ringling · 1933"
+      }
+    },
+    {
+      "pieceId": "scrip-baraboo-50-centavos-a1054",
+      "face": "back",
+      "hash": "00002a2a3a060000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/",
+      "pick": "MS WI100-.50",
+      "image": "/images/catalog/united-states/united-states-baraboo-chamber-of-commerce-50-cents-1933-a1054-back.jpg",
+      "title": {
+        "es": "50 centavos · Baraboo Scrip · Albert C. Ringling · 1933",
+        "en": "50¢ · Baraboo Scrip · Albert C. Ringling · 1933"
       }
     },
     {

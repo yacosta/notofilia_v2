@@ -231,6 +231,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '15 centavos · Al. T. Ringling · A2819',
     en: '15¢ · Al. T. Ringling · A2819',
   },
+  '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/': {
+    es: '50 centavos · A. C. Ringling · A1054',
+    en: '50¢ · A. C. Ringling · A1054',
+  },
   '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/': {
     es: '1 dólar · Ringling Bros. · A2002',
     en: '$1 · Ringling Bros. · A2002',
