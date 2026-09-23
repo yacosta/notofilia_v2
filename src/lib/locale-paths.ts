@@ -621,6 +621,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/50000-pesos-error-2008/',
     '/en/coleccion/colombia/50000-pesos-error-2015/',
     '/en/coleccion/colombia/tiquete-estudiantil-15-centavos/',
+    '/en/coleccion/colombia/bono-reconquista-del-poder-10-pesos-serie-c-2380/',
     '/en/coleccion/colombia/',
     '/en/coleccion/ecuador/1-sucre-1901/',
     '/en/coleccion/ecuador/100-sucres-1993/',

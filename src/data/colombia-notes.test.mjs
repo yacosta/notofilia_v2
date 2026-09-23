@@ -77,6 +77,29 @@ describe('Colombia Emberá 1994 series card grouping', () => {
   });
 });
 
+describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
+  it('is a political-bond holding, serial 2380, with no invented Pick', () => {
+    const note = noteById('bono-reconquista-del-poder-10-pesos-serie-c-2380');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'bonos-politicos');
+    assert.equal(note.serial, '2380');
+    assert.equal(note.pick, 'DLN · Serie C');
+    assert.match(note.description.es, /talón/);
+    assert.match(note.description.es, /CEDULAOS/);
+    assert.match(note.description.en, /counterfoil/);
+    assert.doesNotMatch(note.pick, /P#|Pick/);
+    assert.doesNotMatch(note.scarcity.es, /R\d/);
+    assert.equal(additions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c-2380');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c');
+    const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /N\.º 2380/);
+    const cards = seriesCardsForChapter('bonos-politicos');
+    assert.equal(cards.length, 1);
+    assert.equal(cards[0].note.id, note.id);
+  });
+});
+
 describe('Colombia MEN 15 centavos student-transport ticket', () => {
   it('is a tiquetes-chapter holding with no serial and no invented Pick', () => {
     const note = noteById('tiquete-estudiantil-15-centavos');

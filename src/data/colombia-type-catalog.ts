@@ -19,6 +19,7 @@ export const noteCatalogFilters: TypeCatalogFilter[] = [
   'banco-de-la-republica',
   'familias-modernas',
   'tiquetes',
+  'bonos-politicos',
   'errores',
 ];
 
@@ -73,6 +74,7 @@ export const noteCatalogCopy = {
       'banco-de-la-republica': 'Banco de la República',
       'familias-modernas': 'Familias modernas',
       tiquetes: 'Tiquetes y vales',
+      'bonos-politicos': 'Bonos políticos',
       errores: 'Errores',
     } satisfies Record<(typeof noteCatalogFilters)[number], string>,
   },
@@ -126,6 +128,7 @@ export const noteCatalogCopy = {
       'banco-de-la-republica': 'Banco de la República',
       'familias-modernas': 'Modern families',
       tiquetes: 'Tickets and vouchers',
+      'bonos-politicos': 'Political bonds',
       errores: 'Errors',
     } satisfies Record<(typeof noteCatalogFilters)[number], string>,
   },
