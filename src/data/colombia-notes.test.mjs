@@ -89,7 +89,7 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c-2380');
+    assert.equal(additions.at(-1)?.id, 'us-baraboo-1933-50c-a1054');
     assert.equal(catalogAdditions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);

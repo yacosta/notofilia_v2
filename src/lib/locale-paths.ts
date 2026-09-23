@@ -250,6 +250,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/15-cents-al-t-ringling-a2819/'],
   },
   {
+    es: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/',
+    en: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/50-cents-a-c-ringling-a1054/',
+    aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/50-cents-a-c-ringling-a1054/'],
+  },
+  {
     es: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/',
     en: '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/',
     aliases: ['/coleccion/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/5-cents-john-ringling-a4895/'],
@@ -523,6 +528,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/10-centavos-chas-ringling-a2844/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/15-centavos-al-t-ringling-a2819/',
+    '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/5-centavos-john-ringling-a4895/',
     '/en/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
     '/en/coleccion/estados-unidos/miscelaneos/',

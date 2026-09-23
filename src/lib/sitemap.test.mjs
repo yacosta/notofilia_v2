@@ -158,6 +158,13 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
     );
     assert.equal(
       localizePath(
+        '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/',
+        'en',
+      ),
+      '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/50-cents-a-c-ringling-a1054/',
+    );
+    assert.equal(
+      localizePath(
         '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/1-dolar-ringling-bros-a2002/',
         'en',
       ),

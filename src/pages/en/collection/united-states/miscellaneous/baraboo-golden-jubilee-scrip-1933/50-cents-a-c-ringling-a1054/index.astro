@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../../../data/estados-unidos';
+
+const note = noteById('scrip-baraboo-50-centavos-a1054');
+if (!note) throw new Error('Missing Baraboo 50¢ A. C. Ringling A1054 catalog record');
+---
+
+<UnitedStatesNotePage locale="en" note={note} />

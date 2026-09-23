@@ -389,6 +389,39 @@ describe('US miscellaneous Baraboo 1933 type page', () => {
     assert.match(enPiece1, /UnitedStatesNotePage/);
     assert.match(enPiece1, /locale="en"/);
   });
+
+  it('publishes the 50¢ A. C. Ringling holding A1054 with thin ES/EN piece routes', () => {
+    const esPiece50 = readFileSync(
+      new URL(
+        '../pages/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/50-centavos-a-c-ringling-a1054/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    const enPiece50 = readFileSync(
+      new URL(
+        '../pages/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/50-cents-a-c-ringling-a1054/index.astro',
+        import.meta.url,
+      ),
+      'utf8',
+    );
+    assert.match(data, /id: 'scrip-baraboo-50-centavos-a1054'/);
+    assert.match(data, /serial: 'A1054'/);
+    assert.match(data, /MS WI100-\.50/);
+    assert.doesNotMatch(data, /holdingId: 'scrip-baraboo-50-centavos-a1054'/);
+    assert.match(data, /A\. C\. RINGLING/);
+    assert.match(data, /FIFTY CENTS/);
+    assert.match(data, /P\. L\. Gust/);
+    assert.match(data, /O\. L\. Gust/);
+    assert.match(data, /114 × 66 mm/);
+    assert.match(data, /united-states-baraboo-chamber-of-commerce-50-cents-1933-a1054-front\.jpg/);
+    assert.match(data, /la letra de serie A en verde/);
+    assert.match(data, /the green series letter A/);
+    assert.match(esPiece50, /UnitedStatesNotePage/);
+    assert.match(esPiece50, /locale="es"/);
+    assert.match(enPiece50, /UnitedStatesNotePage/);
+    assert.match(enPiece50, /locale="en"/);
+  });
 });
 
 describe('US obsolete City Bank of New Haven $5 remainder', () => {
