@@ -31,7 +31,7 @@ export const comparisonCopy = {
         title: 'Colección Numismática del Banco de la República',
         paragraphs: [
           'El Banco de la República guarda una Colección Numismática institucional, expuesta en el Museo Casa de Moneda de Bogotá y consultable en el catálogo de Banrepcultural. Es un museo del emisor: tipos, contexto histórico y piezas de reserva, no el inventario de un coleccionista particular.',
-          'Sus tablas públicas de producción (1960–2022 en notas; 1987 en adelante en moneda) miden millones de piezas por denominación y año. No sustituyen el Pick de un tipo, ni el serial de un ejemplar. Notofilia las cita como estadística del emisor, no como tirada de una ficha.',
+          'Sus tablas públicas de producción (1960–2022 en billetes; 1987 en adelante en moneda) miden millones de piezas por denominación y año. No sustituyen el Pick de un tipo, ni el serial de un ejemplar. Notofilia las cita como estadística del emisor, no como tirada de una ficha.',
         ],
       },
       {

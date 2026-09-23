@@ -17,7 +17,7 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', notas de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las de 25¢ y 50¢ esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; las de 25¢ y 50¢ esperan el número de serie o el certificado de cada vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
       en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ and 50¢ still wait for each note’s serial or certificate. Further note pages will be published here as they are photographed.',
     },
   },
@@ -27,10 +27,16 @@ export const USA_PATH = '/coleccion/estados-unidos/';
 export const USA_PATH_EN = '/collection/united-states/';
 export const USA_MPC_PATH = '/coleccion/estados-unidos/mpc-vietnam/';
 export const USA_MPC_PATH_EN = '/collection/united-states/mpc-vietnam/';
+export const USA_MPC_PROGRAM_PATH = '/coleccion/estados-unidos/mpc/';
+export const USA_MPC_PROGRAM_PATH_EN = '/collection/united-states/mpc/';
 export const USA_MISC_PATH = '/coleccion/estados-unidos/miscelaneos/';
 export const USA_MISC_PATH_EN = '/collection/united-states/miscellaneous/';
 export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
+export const USA_COLONIAL_PATH = '/coleccion/estados-unidos/moneda-colonial/';
+export const USA_COLONIAL_PATH_EN = '/collection/united-states/colonial-paper/';
+export const USA_OBSOLETE_PATH = '/coleccion/estados-unidos/billetes-obsoletos/';
+export const USA_OBSOLETE_PATH_EN = '/collection/united-states/obsolete-notes/';
 export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
 export const USA_BARABOO_SCRIP_PATH_EN = '/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/';
 export const BARABOO_JUBILEE_FIGURE = {
@@ -43,9 +49,14 @@ export type UnitedStatesChapterId =
   | 'us-colonial'
   | 'us-obsoleto'
   | 'us-confederado'
+  | 'us-demand'
   | 'us-notes'
+  | 'us-fractional'
+  | 'us-national'
   | 'us-gold'
   | 'us-silver'
+  | 'us-treasury'
+  | 'us-size'
   | 'us-frb'
   | 'us-pop-art'
   | 'us-miscelaneos';
@@ -66,15 +77,15 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
     years: { es: '1690–1788', en: '1690–1788' },
     title: {
       es: 'Moneda colonial',
-      en: 'Colonial coinage',
+      en: 'Colonial paper',
     },
     lead: {
-      es: 'Los primeros papeles públicos de Occidente: billetes de crédito de Massachusetts y la moneda del Congreso Continental.',
-      en: 'The first public paper of the Western world: Massachusetts bills of credit and Continental Currency.',
+      es: 'El primer papel público autorizado por una legislatura británica en América: las bills of credit de Massachusetts (1690) y la moneda del Congreso Continental.',
+      en: 'The first public paper authorized by a British legislature in America: Massachusetts bills of credit (1690) and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en bills of credit para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden: fue el primer papel moneda público del mundo occidental. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. En esta vitrina caben también emisiones provinciales como la de Pensilvania de 1773 y los seis chelines de Nueva Jersey de 1776.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree: it was the first public paper money in the Western world. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. Provincial issues such as Pennsylvania 1773 and the New Jersey six-shillings of 1776 also belong in this case.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
     },
   },
   {
@@ -89,8 +100,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'State banks, broken banknotes, and the tax that ended private issue.',
     },
     body: {
-      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial, y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback». En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
-      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
+      es: 'Tras la Constitución, el papel cotidiano lo emitieron bancos con carta estatal —el First Bank of the United States (1791) fue solo el primero de muchos—. Miles de planchas, a menudo grabadas en Nueva York o Filadelfia, circularon con convertibilidad desigual: los coleccionistas las llaman obsolete notes o broken banknotes y las cataloga Haxby. La American Numismatic Society recuerda que, durante la Guerra Civil, un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863 unificaron la moneda nacional: el sucesor federal de este papel es el National Bank Note, en su propio capítulo. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B, el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial, y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback». En esta vitrina caben también el Citizens Bank of Louisiana y el Hagerstown Bank de Maryland.',
+      en: 'After the Constitution, everyday paper came from state-chartered banks — the First Bank of the United States (1791) was only the first of many. Thousands of plates, often engraved in New York or Philadelphia, circulated with uneven convertibility: collectors call them obsolete or broken banknotes, catalogued by Haxby. The American Numismatic Society notes that a 10 percent tax on private paper and the National Banking Act of 1863 unified the national currency during the Civil War: the federal successor of this paper is the National Bank Note, in its own chapter. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B, the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial, and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland also belong in this case.',
     },
   },
   {
@@ -105,8 +116,24 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Treasury graybacks: from Montgomery to Richmond, without gold or recognition, through the 1864 reform.',
     },
     body: {
-      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Wikipedia sitúa las primeras letras de crédito en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y grabaron Hoyer & Ludwig, Keatinge & Ball, J. T. Paterson & Co. y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina están el 100 dólares T-40, serial 36830, de agosto de 1862, con interés y sellos de pago en el reverso, y el 5 dólares T-69, serial 6164, y el 20 dólares T-67, serial 74523, ambos de febrero de 1864.',
-      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. Wikipedia dates the first bills of credit to March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed and Hoyer & Ludwig, Keatinge & Ball, J. T. Paterson & Co., and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case holds the T-40 $100, serial 36830, of August 1862, interest-bearing with payment stamps on the back, and the T-69 $5, serial 6164, and the T-67 $20, serial 74523, both of February 1864.',
+      es: 'El Tesoro confederado nació casi vacío: la riqueza del Sur estaba en la tierra y en las personas esclavizadas, no en metal, y el bloqueo unionista cortó el algodón que habría podido comprar oro. Las primeras letras de crédito salieron en marzo–abril de 1861, en Montgomery, antes de que la capital pasara a Richmond. Christopher G. Memminger recurrió a la prensa; las planchas del Norte se cerraron y entonces grabaron Hoyer & Ludwig, Keatinge & Ball, J. T. Paterson & Co. y Archer & Daly, a menudo en litografía. Siete series sumaron unos 1.700 millones de dólares en 72 tipos Criswell. El grayback prometía un pago tras la paz; al perderse la guerra no valía nada, y la Decimocuarta Enmienda declaró nula esa deuda. En esta vitrina están el 100 dólares T-40, serial 36830, de agosto de 1862, con interés y sellos de pago en el reverso; el 5 dólares T-69, serial 6164; y el 20 dólares T-67, serial 74523, ambos de febrero de 1864.',
+      en: 'The Confederate Treasury opened almost empty: Southern wealth sat in land and enslaved people, not in coin, and the Union blockade cut off the cotton that might have bought gold. The first bills of credit appeared in March–April 1861, at Montgomery, before the capital moved to Richmond. Christopher G. Memminger turned to the press; Northern plates closed, and then Hoyer & Ludwig, Keatinge & Ball, J. T. Paterson & Co., and Archer & Daly engraved, often by lithography. Seven series ran to about $1.7 billion in 72 Criswell types. The grayback promised payment after peace; when the war was lost it was worth nothing, and the Fourteenth Amendment voided that debt. This case holds the T-40 $100, serial 36830, of August 1862, interest-bearing with payment stamps on the back; the T-69 $5, serial 6164; and the T-67 $20, serial 74523, both of February 1864.',
+    },
+  },
+  {
+    id: 'us-demand',
+    years: { es: '1861–1862', en: '1861–1862' },
+    title: {
+      es: 'Demand Notes',
+      en: 'Demand Notes',
+    },
+    lead: {
+      es: 'El primer papel federal de circulación general: pagadero a la vista y con el reverso verde que acuñó el apodo «greenback».',
+      en: 'The first federal paper of general circulation: payable on demand, with the green back that coined “greenback.”',
+    },
+    body: {
+      es: 'Para financiar el inicio de la Guerra Civil, el Congreso autorizó Demand Notes no remunerados del Tesoro: 5, 10 y 20 dólares, pagaderos a la vista en metálico en oficinas designadas. El U.S. Currency Education Program y el BEP coinciden: fue la primera circulación general de papel federal. El reverso en tinta verde originó el apodo «greenback». Las primeras planchas las grabaron compañías privadas; en el edificio del Tesoro se firmaban, separaban y cortaban los pliegos. El BEP nació de ese trabajo. Los United States Notes de 1862 los sustituyeron como curso legal; el apodo pasó con ellos. El papel federal emitido desde 1861 sigue siendo redimible a la par. En esta vitrina no hay aún un Demand Note con foto y serial.',
+      en: 'To finance the opening of the Civil War, Congress authorized non-interest-bearing Treasury Demand Notes: $5, $10, and $20, payable on demand in coin at designated offices. The U.S. Currency Education Program and the BEP agree: this was the first general circulation of federal paper. Green ink on the back coined the nickname “greenback.” Private banknote companies engraved the first plates; clerks in the Treasury building signed, separated, and trimmed the sheets. The BEP grew from that work. United States Notes of 1862 replaced them as legal tender; the nickname traveled with them. Federal paper issued since 1861 remains redeemable at face. This case does not yet hold a Demand Note with a photograph and serial.',
     },
   },
   {
@@ -117,12 +144,44 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'United States Notes',
     },
     lead: {
-      es: 'Legal Tender Notes o greenbacks: el primer papel federal de circulación amplia, con sello rojo.',
-      en: 'Legal Tender Notes, or greenbacks: the first widely circulated federal paper, with a red seal.',
+      es: 'Legal Tender Notes o greenbacks: el papel federal de curso legal que sustituyó a los Demand Notes, con sello rojo.',
+      en: 'Legal Tender Notes, or greenbacks: the legal-tender federal paper that replaced Demand Notes, with a red seal.',
     },
     body: {
-      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El Bureau of Engraving and Printing los identifica como el primer papel federal de circulación amplia; al principio los grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Esta vitrina reunirá el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966.',
-      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The Bureau of Engraving and Printing calls them the first widely circulated federal paper; at first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. This case will gather the 1928 red-seal $1 and the 1966 $100.',
+      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Ya tiene ficha el 2 dólares de la serie 1917, Fr. 60, serial B50400302A, de tamaño grande. Esta vitrina reunirá también el 1 dólar de sello rojo de 1928 y el 100 dólares de 1966, ambos de tamaño pequeño.',
+      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. The Series 1917 $2, Fr. 60, serial B50400302A, a large-size note, already has a note page. This case will also gather the 1928 red-seal $1 and the 1966 $100, both small-size.',
+    },
+  },
+  {
+    id: 'us-fractional',
+    years: { es: '1862–1876', en: '1862–1876' },
+    title: {
+      es: 'Fractional Currency',
+      en: 'Fractional Currency',
+    },
+    lead: {
+      es: 'Papel de 3 a 50 centavos para el cambio cotidiano cuando la moneda metálica desapareció de la circulación.',
+      en: 'Paper from 3¢ to 50¢ for everyday change when coin vanished from circulation.',
+    },
+    body: {
+      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. En esta vitrina no hay aún un ejemplar con foto; cuando lo haya, llevará ficha propia. Un Pick o un año no identifican el objeto: lo identifica el serial, si lo lleva.',
+      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. This case does not yet hold a photographed example; when one is documented it will have its own note page. A Pick number or a year does not identify the object: the serial does, when one was printed.',
+    },
+  },
+  {
+    id: 'us-national',
+    years: { es: '1863–1935', en: '1863–1935' },
+    title: {
+      es: 'National Bank Notes',
+      en: 'National Bank Notes',
+    },
+    lead: {
+      es: 'Papel federal de bancos con carta: nombre de la plaza, número de charter y firmas locales, respaldado por bonos del Tesoro.',
+      en: 'Federal paper of chartered banks: town name, charter number, and local signatures, secured by Treasury bonds.',
+    },
+    body: {
+      es: 'La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos de Estados Unidos depositados en el Tesoro. El U.S. Currency Education Program y la American Numismatic Society sitúan ahí la unificación del papel nacional. Durante más de setenta años, hasta 1935, miles de bancos de pueblo pusieron en circulación billetes con el nombre de la plaza, el número de carta y las firmas de sus oficiales. Friedberg los agrupa por First, Second y Third Charter Period y, desde 1929, por el tamaño pequeño. No son obsolete notes: el impuesto del 10 % y esta ley apagaron el papel estatal. En esta colección no hay aún un National Bank Note documentado. Un mismo tipo o un mismo año no identifican el objeto: lo identifican la carta y el serial.',
+      en: 'The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by United States bonds deposited with the Treasury. The U.S. Currency Education Program and the American Numismatic Society place the unification of national paper there. For more than seventy years, until 1935, thousands of hometown banks put notes into circulation with the town name, the charter number, and the officers’ signatures. Friedberg groups them by First, Second, and Third Charter Period and, from 1929, by the small-size type. They are not obsolete notes: the 10 percent tax and this act ended state-bank paper. This collection does not yet hold a documented National Bank Note. A shared type or year does not identify the object: the charter and the serial do.',
     },
   },
   {
@@ -137,8 +196,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Paper backed by Treasury gold, from the BEP’s first issues to the 1933–1934 withdrawal.',
     },
     body: {
-      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency, como una de las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circularon solo entre bancos de la Reserva Federal, nunca entre el público. En esta colección se documentará el certificado de oro de 10 dólares de 1928.',
-      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency, as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. This collection will document the 1928 $10 Gold Certificate.',
+      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency —esta última en su propio capítulo—, entre las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circuló solo entre bancos de la Reserva Federal, nunca entre el público. En esta colección se documentará el certificado de oro de 10 dólares de 1928.',
+      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency — the latter in its own chapter — as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. This collection will document the 1928 $10 Gold Certificate.',
     },
   },
   {
@@ -153,24 +212,56 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas. El canje en plata terminó en 1968. Esta vitrina abre con el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y seguirá con el de África del Norte de sello amarillo.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops. Redemption in silver ended in 1968. This case opens with the Series 1957-B $1 Silver Certificate, serial S35513454A, and will add that North Africa yellow-seal $1.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas; esta vitrina aún no ficha un sello amarillo. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops; this case does not yet record a yellow-seal note. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
+    },
+  },
+  {
+    id: 'us-treasury',
+    years: { es: '1890–1891', en: '1890–1891' },
+    title: {
+      es: 'Treasury Notes (Coin Notes)',
+      en: 'Treasury Notes (Coin Notes)',
+    },
+    lead: {
+      es: 'Papel de la Sherman Silver Purchase Act: redimible en moneda, series 1890 y 1891.',
+      en: 'Paper of the Sherman Silver Purchase Act: redeemable in coin, Series 1890 and 1891.',
+    },
+    body: {
+      es: 'En 1890 el Tesoro empezó a emitir Treasury Notes, también Coin Notes, autorizados por la Sherman Silver Purchase Act: el portador los canjeaba en moneda —oro o plata, a elección del Tesoro—. Las series son 1890 y 1891. El reverso recargado de 1890 incluye el 100 dólares cuyos ceros los coleccionistas llaman Watermelon Note; la de 1891 abrió el dorso. La Educational Series de 1896 —History Instructing Youth en el 1 dólar— es un certificado de plata, no esta clase. Friedberg les dedica el capítulo de Treasury or Coin Notes. En esta vitrina no hay aún un ejemplar con foto y serial.',
+      en: 'In 1890 the Treasury began issuing Treasury Notes, also called Coin Notes, authorized by the Sherman Silver Purchase Act: the bearer redeemed them in coin — gold or silver, at the Treasury’s choice. The series are 1890 and 1891. The ornate 1890 back includes the $100 whose zeros collectors call the Watermelon Note; Series 1891 opened the reverse. The 1896 Educational Series — History Instructing Youth on the $1 — is a Silver Certificate issue, not this class. Friedberg gives them the Treasury or Coin Notes chapter. This case does not yet hold an example with a photograph and serial.',
+    },
+  },
+  {
+    id: 'us-size',
+    years: { es: '1928–1929', en: '1928–1929' },
+    title: {
+      es: 'Tamaño grande y pequeño',
+      en: 'Large size and small size',
+    },
+    lead: {
+      es: 'El recorte de 1929: de ocho a doce billetes por pliego y el formato que sigue en circulación.',
+      en: 'The 1929 reduction: from eight to twelve notes per sheet, and the format still in circulation.',
+    },
+    body: {
+      es: 'El BEP y el U.S. Currency Education Program sitúan en 1929 el cambio de aspecto más amplio del papel estadounidense. Para abaratar la impresión, el formato pasó de unos 7,375 × 3,125 pulgadas a 6,14 × 2,61 —cerca de un 30 % menos— y de ocho a doce billetes por pliego. La serie impresa es 1928; la entrega al público, 1929. Cada denominación unificó retrato y dorso en todas las clases; el sello y su color distinguen el tipo. Esa línea —tamaño grande frente a tamaño pequeño— ordena el coleccionismo del papel federal. Los National Bank Notes de tamaño pequeño son de 1929; los Federal Reserve Notes de 1934 de esta vitrina ya son de formato moderno.',
+      en: 'The BEP and the U.S. Currency Education Program place in 1929 the widest change in the look of United States paper. To lower manufacturing cost, the format went from about 7.375 × 3.125 inches to 6.14 × 2.61 — roughly 30 percent smaller — and from eight to twelve notes per sheet. The printed series is 1928; release to the public, 1929. Each denomination unified portrait and back across classes; the seal and its color mark the type. That line — large size versus small size — is how collectors divide federal paper. Small-size National Bank Notes are 1929; the Series 1934 Federal Reserve Notes in this case are already the modern format.',
     },
   },
   {
     id: 'us-frb',
     years: { es: 'desde 1914', en: 'from 1914' },
     title: {
-      es: 'Federal Reserve Bank',
-      en: 'Federal Reserve Bank',
+      es: 'Reserva Federal',
+      en: 'Federal Reserve',
     },
     lead: {
       es: 'La Ley de 1913, los Federal Reserve Notes y los Federal Reserve Bank Notes de emergencia.',
       en: 'The 1913 Act, Federal Reserve Notes, and emergency Federal Reserve Bank Notes.',
     },
     body: {
-      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos papeles: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, y el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos, el 20 dólares de Hawái de 1934 y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
-      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two papers: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, and the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★ already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, the 1934 Hawaii $20, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
+      es: 'La Federal Reserve Act de 1913 creó el banco central y autorizó dos tipos de papel: los Federal Reserve Notes, emitidos por la Junta, y los Federal Reserve Bank Notes, moneda de emergencia de cada banco de distrito en el primer tercio del siglo XX. El BEP los distingue con claridad. Desde 1914 los FRN son el papel de circulación; hoy son el único tipo que se emite. Los primeros son de tamaño grande; la serie 1928, entregada en 1929, abre el formato pequeño que documentan las fichas de 1934 de esta vitrina. En 1934 el BEP añadió la sobrecarga HAWAII a FRN y certificados de plata. Ya tienen ficha el 10 dólares de 1934 del distrito de Chicago (G / 7), serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland (D / 4), serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia (C / 3), serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City (J / 10), serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond (E / 5), serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York (B / 2), serial B00286799A, PMG 55, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 20 dólares HAWAII serie 1934 A de San Francisco (L / 12), Fr. 2305, serial L86654132A, el 1 dólar de 2003 del distrito de Atlanta (F / 6), reemplazo con estrella F05033622★, y el 2 dólares de 2003 del distrito de San Luis (H / 8), reemplazo H00010418★, PMG 64 EPQ. Seguirán el 100 dólares FRBN de Minneapolis de 1929, más 10 dólares de 1934 de otros distritos y el 100 dólares de Cleveland de 1990. Los certificados de pago militar (MPC) de Vietnam se documentan en su propia vitrina. Los cupones USDA se documentarán junto a estas series federales.',
+      en: 'The Federal Reserve Act of 1913 created the central bank and authorized two kinds of paper: Federal Reserve Notes, issued by the Board, and Federal Reserve Bank Notes, emergency currency of each district bank in the early twentieth century. The BEP draws that distinction clearly. From 1914 FRNs have been the circulating paper; today they are the only type still issued. The first issues are large-size; Series 1928, released in 1929, opens the small format that the 1934 note pages in this case document. In 1934 the BEP added the HAWAII overprint to FRNs and silver certificates. The Series 1934 Chicago (G / 7) $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland (D / 4) $10, serial D78652996A, the Series 1934A Philadelphia (C / 3) $10, serial C46924254A, the Series 1934C Kansas City (J / 10) $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond (E / 5) $10, serial E60822246B, the Series 1934A New York (B / 2) $500, serial B00286799A, PMG 55, the Series 1934A $1,000 of the same district, serial B00411221A, the Series 1934A San Francisco (L / 12) HAWAII $20, Fr. 2305, serial L86654132A, the Series 2003 Atlanta (F / 6) $1 star replacement F05033622★, and the Series 2003 St. Louis (H / 8) $2 star replacement H00010418★, PMG 64 EPQ, already have note pages. Still to come are the 1929 Minneapolis $100 FRBN, further 1934 $10 notes from other districts, and the 1990 Cleveland $100. Vietnam Military Payment Certificates are documented in their own case. USDA food coupons will be documented alongside these federal series.',
     },
   },
   {
@@ -197,7 +288,7 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Miscellaneous',
     },
     lead: {
-      es: 'Papel marcado en circulación, notas de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
+      es: 'Papel marcado en circulación, billetes de prueba, scrip conmemorativo y otras piezas que no caben en las series federales ni en el pop art.',
       en: 'Marked circulating paper, test notes, commemorative scrip, and other pieces that sit outside the federal series and pop art.',
     },
     bodyParts: miscChapterBodyParts,
@@ -214,8 +305,8 @@ export const seriesSources: CatalogSource[] = [
     es: 'U.S. Currency Education Program — History of U.S. Currency',
     en: 'U.S. Currency Education Program — History of U.S. Currency',
     note: {
-      es: 'Massachusetts 1690, Continentals, National Banknotes, certificados de plata y sobrecarga HAWAII.',
-      en: 'Massachusetts 1690, Continentals, National Banknotes, silver certificates, and the HAWAII overprint.',
+      es: 'Massachusetts 1690, Demand Notes de 1861 (greenbacks), National Bank Notes, Treasury Notes de 1890, Educational Series de 1896 y recorte de 1929.',
+      en: 'Massachusetts 1690, 1861 Demand Notes (greenbacks), National Bank Notes, 1890 Treasury Notes, the 1896 Educational Series, and the 1929 size reduction.',
     },
   },
   {
@@ -223,8 +314,17 @@ export const seriesSources: CatalogSource[] = [
     es: 'Bureau of Engraving and Printing — History',
     en: 'Bureau of Engraving and Printing — History',
     note: {
-      es: 'Gold Certificates (1865), United States Notes (1869), Silver Certificates (1878) y Federal Reserve Act (1913).',
-      en: 'Gold Certificates (1865), United States Notes (1869), Silver Certificates (1878), and the Federal Reserve Act (1913).',
+      es: 'Demand Notes de 1861; Fractional Currency de 1863; Gold Certificates (1865); recorte de 1929 (ocho a doce billetes por pliego, cerca de un 30 % menos).',
+      en: '1861 Demand Notes; 1863 Fractional Currency; Gold Certificates (1865); the 1929 reduction (eight to twelve notes per sheet, about 30 percent smaller).',
+    },
+  },
+  {
+    href: 'https://www.bep.gov/media/1106/download?inline=',
+    es: 'Bureau of Engraving and Printing — Currency Notes',
+    en: 'Bureau of Engraving and Printing — Currency Notes',
+    note: {
+      es: 'Demand Notes como IOU pagaderos a la vista; origen de greenback; Fractional Currency y sello del Tesoro.',
+      en: 'Demand Notes as IOUs payable on demand; origin of “greenback”; Fractional Currency and the Treasury seal.',
     },
   },
   {
@@ -241,8 +341,26 @@ export const seriesSources: CatalogSource[] = [
     es: 'American Numismatic Society — A History of American Currency',
     en: 'American Numismatic Society — A History of American Currency',
     note: {
-      es: 'Massachusetts 1690 como primer papel público occidental; impuesto del 10 % y National Banking Act de 1863.',
+      es: 'Massachusetts 1690 como primer papel moneda público occidental; impuesto del 10 % y National Banking Act de 1863.',
       en: 'Massachusetts 1690 as the first Western public paper; the 10 percent tax and the National Banking Act of 1863.',
+    },
+  },
+  {
+    href: 'https://www.coin-currency.com/',
+    es: 'Arthur L. e Ira S. Friedberg — Paper Money of the United States (Coin & Currency Institute)',
+    en: 'Arthur L. and Ira S. Friedberg — Paper Money of the United States (Coin & Currency Institute)',
+    note: {
+      es: 'Capítulos de Demand Notes, Legal Tender, Fractional Currency, Treasury or Coin Notes y National Bank Notes. Se citan números Friedberg; no se republican columnas de precio.',
+      en: 'Chapters on Demand Notes, Legal Tender, Fractional Currency, Treasury or Coin Notes, and National Bank Notes. Friedberg numbers are cited; price columns are not republished.',
+    },
+  },
+  {
+    href: 'https://www.pmgnotes.com/population-report/',
+    es: 'Paper Money Guaranty — Population Report',
+    en: 'Paper Money Guaranty — Population Report',
+    note: {
+      es: 'Censo de piezas encapsuladas (National Bank Notes, Fractional Currency y el resto de clases). Esta vitrina no republica cifras de población.',
+      en: 'Census of encapsulated notes (National Bank Notes, Fractional Currency, and the other classes). This case does not republish population figures.',
     },
   },
   {
@@ -250,7 +368,7 @@ export const seriesSources: CatalogSource[] = [
     es: 'Newman Numismatic Portal — Massachusetts, 10 de diciembre de 1690',
     en: 'Newman Numismatic Portal — Massachusetts, 10 December 1690',
     note: {
-      es: '7.000 libras en Colony or Old Charter Bills; primer papel público autorizado en Occidente.',
+      es: '7.000 libras en Colony or Old Charter Bills; primer papel moneda público autorizado en Occidente.',
       en: '£7,000 in Colony or Old Charter Bills; first authorized public paper currency in the Western world.',
     },
   },
@@ -274,20 +392,22 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Federal, colonial, confederado y obsoleto | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda de Estados Unidos: moneda colonial, billetes obsoletos, Estados Confederados, United States Notes, certificados de oro y plata, Reserva Federal, pop art y misceláneos.',
+      'Catálogo de papel moneda de Estados Unidos: colonial, obsoletos, confederados, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, certificados, Reserva Federal y pop art.',
     kicker: 'Estados Unidos · Notafilia',
     title: 'Del papel colonial a la Reserva Federal',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
-      'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó bills of credit para pagar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel público de Occidente. Las trece colonias siguieron el modelo. El Congreso Continental emitió Continentals en 1775: sin respaldo metálico y falsificados por el enemigo, acuñaron la frase «not worth a Continental».',
-      'En el siglo XIX el comercio cotidiano corrió sobre obsolete notes de bancos estatales —broken banknotes en la jerga, catalogados por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863. Al mismo tiempo nació el papel federal —United States Notes (1862), Gold Certificates (1865) y Silver Certificates (1878)— y, en el Sur, el grayback de los Estados Confederados, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
-      'La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se fotografíen. Caben también certificados de pago militar (MPC), cupones USDA y otras notas de prueba.',
+      'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
+      'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
+      'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
+    viewColonialCase: 'Abrir la vitrina de moneda colonial',
+    viewObsoleteCase: 'Abrir la vitrina de billetes obsoletos',
     coinageLead: 'La moneda metálica de este país se documenta en la vitrina de numismática.',
     coinageLink: 'Estados Unidos · Numismática',
     pickLabel: 'Pick',
@@ -298,20 +418,22 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Federal, colonial, Confederate, and obsolete | Notofilia',
     metaDescription:
-      'Catalog of United States paper money: colonial issues, obsolete notes, Confederate States, United States Notes, gold and silver certificates, the Federal Reserve, pop art, and miscellaneous issues.',
+      'Catalog of United States paper money: colonial issues, obsolete notes, Confederates, Demand Notes, United States Notes, Fractional Currency, National Bank Notes, certificates, the Federal Reserve, and pop art.',
     kicker: 'United States · Notaphily',
     title: 'From colonial paper to the Federal Reserve',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
-      'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized bills of credit to pay for a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper in the Western world. The thirteen colonies followed. The Continental Congress issued Continentals in 1775: unbacked and counterfeited by the enemy, they coined the phrase “not worth a Continental.”',
-      'In the nineteenth century everyday trade ran on obsolete notes of state banks — broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863. Federal paper was born at the same time — United States Notes (1862), Gold Certificates (1865), and Silver Certificates (1878) — and, in the South, the unbacked Confederate grayback, through the act of 17 February 1864.',
-      'The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
+      'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
+      'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
+    viewColonialCase: 'Open the colonial paper case',
+    viewObsoleteCase: 'Open the obsolete notes case',
     coinageLead: 'This country’s struck coin is documented in the numismatics case.',
     coinageLink: 'United States · Numismatics',
     pickLabel: 'Pick',
@@ -337,11 +459,19 @@ export function barabooScripSeriesPath(locale: 'es' | 'en'): string {
   return localizePath(USA_BARABOO_SCRIP_PATH, locale);
 }
 
+export function colonialSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_COLONIAL_PATH, locale);
+}
+
+export function obsoleteSeriesPath(locale: 'es' | 'en'): string {
+  return localizePath(USA_OBSOLETE_PATH, locale);
+}
+
 export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, una nota de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, un billete de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
         en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and the 1933 Baraboo Golden Jubilee commemorative scrip.',
       },
     },
@@ -361,7 +491,7 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña la nota de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002. Las de 25¢ y 50¢ esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, y el 1 dólar de los Ringling Bros., serial A2002. Las de 25¢ y 50¢ esperan un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
         en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, and the $1 Ringling Bros. note, serial A2002. The 25¢ and 50¢ wait for a serial or a certificate. Further pieces will be published as they are photographed.',
       },
     },
@@ -405,7 +535,7 @@ export const miscSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos | Notofilia',
     metaDescription:
-      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C; la nota de prueba Giori del Lincoln Memorial, hacia los años 1970; y el scrip del Golden Jubilee de Baraboo, 1933 (Shafer WI100).',
+      'Vitrina miscelánea de Estados Unidos: el 1 dólar serie 2006 de Dallas estampado para Where’s George?, serial K46602688C; el billete de prueba Giori del Lincoln Memorial, hacia los años 1970; y el scrip del Golden Jubilee de Baraboo, 1933 (Shafer WI100).',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Fuera de las series federales',
     breadcrumbCurrent: 'Misceláneos',
@@ -633,7 +763,7 @@ export const barabooScripRelated: { href: string; title: LocalizedText; dek: Loc
     href: USA_MISC_PATH,
     title: { es: 'Estados Unidos · Misceláneos', en: 'United States · Miscellaneous' },
     dek: {
-      es: 'La vitrina que anuncia este tipo junto al 1 dólar de Dallas y la nota de prueba Giori.',
+      es: 'La vitrina que anuncia este tipo junto al 1 dólar de Dallas y el billete de prueba Giori.',
       en: 'The case that announces this type beside the Dallas $1 and the Giori test note.',
     },
   },
@@ -646,7 +776,7 @@ export const barabooScripRelated: { href: string; title: LocalizedText; dek: Loc
     },
   },
   {
-    href: '/glosario/vale-al-portador/',
+    href: '/glosario/#vale-al-portador',
     title: { es: 'Glosario: vale al portador', en: 'Glossary: bearer note' },
     dek: {
       es: 'El scrip de la Cámara es un vale al portador, no un Federal Reserve Note.',
@@ -737,6 +867,485 @@ export const rencySeriesCopy = {
   },
 } as const;
 
+export const colonialSeriesCopy = {
+  es: {
+    metaTitle: '1690–1788 · Moneda colonial | Notofilia',
+    metaDescription:
+      'Papel colonial de Estados Unidos: Massachusetts 1690, Pensilvania 1773 y Continental Currency de 1779. Tres fichas; Nueva Jersey 1776 espera serial.',
+    kicker: '1690–1788',
+    title: 'Moneda colonial',
+    breadcrumbCurrent: 'Moneda colonial',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América. Conviene el matiz, porque cinco años antes, en 1685, el intendente Jacques de Meulles ya había pagado a la tropa de la Nueva Francia con naipes firmados y recortados, por un valor: el «monnaie de carte» es el antecedente en el hemisferio. Lo que Massachusetts inauguró fue otra cosa: el valor no estaba en el metal del soporte, sino en la promesa de la colonia.',
+      'Aquellos Colony or Old Charter Bills iban indentados —el corte ondulado del borde debía encajar con el talón que retenía el tesorero— y llevaban el sello de Massachusetts Bay, con el indio y la leyenda «Come over and help us». El Newman Numismatic Portal registra las denominaciones de 5, 10 y 20 chelines y de 5 libras, así como las firmas de tres miembros de la comisión. Las demás colonias copiaron el expediente.',
+    ],
+    provincialTitle: 'Ochenta y cinco años de papel provincial',
+    provincial: [
+      'Entre Massachusetts y el Congreso Continental hay casi un siglo de emisiones coloniales y las piezas de esta vitrina provienen de allí. Pensilvania entró en 1723 con 45.000 libras en bills of credit: 7.500 para el gobierno y el resto prestado a particulares al 5 % con garantía hipotecaria. Ese mecanismo —una caja pública que emite papel contra hipotecas— es el Loan Office que reaparece en la emisión de 1773. Un joven Benjamin Franklin lo defendió en 1729 en A Modest Enquiry into the Nature and Necessity of a Paper-Currency, uno de los primeros impresos de su taller de Filadelfia.',
+      'El papel no valía lo mismo en todas partes. Cada colonia tasaba el dólar español de cordoncillo en sus propios chelines: 6 en Nueva Inglaterra, Maryland y Virginia («lawful money»); 7 chelines y 6 peniques en Pensilvania, Nueva Jersey y Delaware; 8 en Nueva York. Por eso un billete de 5 chelines de Pensilvania «promete una corona» y no un dólar, y por eso Nueva Jersey emitía seis chelines: son fracciones de un peso fuerte que casi nadie tenía en la mano.',
+      'Londres desconfió. La Currency Act de 1751 limitó las emisiones en Nueva Inglaterra y les retiró el curso legal para deudas privadas; la de 1764 extendió la prohibición de curso legal a todas las colonias. En 1773, el Parlamento cedió y permitió el uso de papel moneda con curso legal para cubrir las deudas públicas. La emisión de Pensilvania del 1 de octubre de ese año nace en ese resquicio, impresa por Hall and Sellers en papel con escamas de mica y fibras azules.',
+    ],
+    continentalTitle: 'Continental Currency, 1775–1779',
+    continental: [
+      'Entre junio de 1775 y enero de 1779, el Congreso Continental ordenó once emisiones que sumaron cerca de 241,5 millones de dólares y constituyeron la principal fuente de ingresos de la guerra. Los billetes prometían dólares españoles de cordoncillo o su equivalente en oro o plata; no pagaban intereses. Las primeras series decían «The United Colonies»; la del 14 de enero de 1779 ya lleva en la orla «The United States of North America».',
+      'Esa última emisión —95.051.695 dólares en dieciséis valores, del 1 al 80— salió de la imprenta de Hall and Sellers en Filadelfia con el anverso en rojo y negro y, al reverso, la impresión de una hoja real: el nature print de Franklin, distinto en cada denominación. Gran Bretaña falsificó a tal escala las series del 20 de mayo de 1777 y del 11 de abril de 1778 que el Congreso las retiró por completo.',
+      'Nada de eso frenó la caída. En enero de 1777 hacían falta 1,25 dólares continentales por uno en metálico; en enero de 1781, cien. El papel dejó de circular en mayo de ese año y quedó la frase: «not worth a Continental». La Constitución, ratificada en 1788, cerró la puerta a los estados —artículo I, sección 10: ningún estado emitirá bills of credit— y el Congreso liquidó el resto en 1790, cambiándolo por bonos a razón de cien por uno. El descrédito fue tal que no hubo papel moneda federal hasta los greenbacks de 1861–1862.',
+    ],
+    howToReadTitle: 'Cómo leer un billete colonial',
+    howToReadIntro:
+      'Cinco señas que se repiten en las tres fichas y en casi todo el papel del periodo:',
+    howToRead: [
+      {
+        label: 'Indentado.',
+        text: 'El borde recortado a mano debía casar con el talón que guardaba el tesorero. Es el primer sistema antifalsificación para el papel estadounidense.',
+      },
+      {
+        label: 'Firmas manuscritas.',
+        text: 'Dos o tres comisionados firmaban cada billete con tinta; en la serie de 1779 la numeración y algunas firmas van en rojo.',
+      },
+      {
+        label: 'Serial manuscrito.',
+        text: 'Ningún Pick ni Friedberg identifica un ejemplar; lo identifica el número escrito a mano al leerse.',
+      },
+      {
+        label: 'Papel de Franklin.',
+        text: 'Escamas de mica y fibras azules en la masa del papel, visibles a contraluz en las piezas de Pensilvania.',
+      },
+      {
+        label: 'Amenaza impresa.',
+        text: '«To Counterfeit is Death» en Pensilvania; en los Continentals, la hoja del nature print cumplía la misma función.',
+      },
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Enlaces',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsCardsLabel: 'Fichas con imagen',
+    holdingsIntro:
+      'Cada ficha describe un objeto físico. Un Pick o un año no identifica el ejemplar: lo identifica el serial al leerse.',
+    holdingsItems: [
+      '5 dólares · Continental Currency · 14 de enero de 1779 · Friedberg CC-91 · Serie — · Emblema SUSTINE VEL ABSTINE · Reverso: hoja de matricaria (feverfew)',
+      '5 chelines · Pensilvania · 1 de octubre de 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serie 9733',
+      '2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773 · Friedberg PA-165 · Serie 21251',
+    ],
+    holdingsNote:
+      'Tres fichas, 1773–1779. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 13 de septiembre de 2026.',
+    emptyHoldings:
+      'Aún no hay fichas coloniales. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado.',
+    referencesTitle: 'Referencias y conservación',
+    references: [
+      'Fr. remite a Paper Money of the United States (Friedberg), que numera las emisiones coloniales por colonia (PA, NJ) y los Continentals como CC. En la ficha de los 5 chelines, P# es el número del Standard Catalog of World Paper Money (Pick), volumen specialized: S-2540. N# es el número de tipo de Numista: N#406969. Esas dos abreviaturas se escriben aquí una sola vez.',
+      'Esta vitrina usa los números de Friedberg en las tres fichas. Newman, The Early Paper Money of America, se cita como fuente en la ficha de los 5 chelines; no se adoptan aquí números de catálogo Newman.',
+      'Las tres piezas se describen como circuladas y sin encapsular; la conservación se anota de forma descriptiva, no numérica.',
+    ],
+    relatedTitle: 'En la colección',
+  },
+  en: {
+    metaTitle: '1690–1788 · Colonial paper | Notofilia',
+    metaDescription:
+      'United States colonial paper: Massachusetts 1690, Pennsylvania 1773, and 1779 Continental Currency. Three notes; New Jersey 1776 waits for a serial.',
+    kicker: '1690–1788',
+    title: 'Colonial paper',
+    breadcrumbCurrent: 'Colonial paper',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that this was the first public paper money authorized by a legislature in the British American colonies. The distinction matters: five years earlier, in 1685, intendant Jacques de Meulles had already paid the troops of New France with signed, cut playing cards, each for a stated value. That monnaie de carte is the hemispheric antecedent. What Massachusetts inaugurated was something else: the value did not sit in the metal of the substrate, but in the colony’s promise.',
+      'Those Colony or Old Charter Bills were indented — the wavy cut along the edge had to fit the stub the treasurer retained — and carried the Massachusetts Bay seal, with the Indian and the legend “Come over and help us.” The Newman Numismatic Portal records the denominations of 5, 10, and 20 shillings and of £5, and the signatures of three members of the committee. The other colonies copied the expedient.',
+    ],
+    provincialTitle: 'Eighty-five years of provincial paper',
+    provincial: [
+      'Between Massachusetts and the Continental Congress there is almost a century of colonial issues, and the pieces in this case come from that span. Pennsylvania entered in 1723 with £45,000 in bills of credit: £7,500 for the government and the rest lent to private borrowers at 5 percent against mortgage security. That mechanism — a public office that issues paper against mortgages — is the Loan Office that returns in the 1773 emission. A young Benjamin Franklin defended it in 1729 in A Modest Enquiry into the Nature and Necessity of a Paper-Currency, one of the earliest imprints from his Philadelphia shop.',
+      'The paper was not worth the same everywhere. Each colony rated the Spanish milled dollar in its own shillings: 6 in New England, Maryland, and Virginia (“lawful money”); 7 shillings and 6 pence in Pennsylvania, New Jersey, and Delaware; 8 in New York. That is why a Pennsylvania 5-shilling note “promises a crown” and not a dollar, and why New Jersey issued six shillings: they are fractions of a peso fuerte that almost no one held in the hand.',
+      'London distrusted the expedient. The Currency Act of 1751 limited issues in New England and withdrew legal tender for private debts; that of 1764 extended the legal-tender ban to all the colonies. In 1773 Parliament relented and allowed paper money as legal tender for public debts. The Pennsylvania issue of 1 October of that year is born in that opening, printed by Hall and Sellers on paper with mica flakes and blue fibers.',
+    ],
+    continentalTitle: 'Continental Currency, 1775–1779',
+    continental: [
+      'Between June 1775 and January 1779 the Continental Congress ordered eleven issues that totaled about $241.5 million and were the war’s principal source of revenue. The notes promised Spanish milled dollars or their equivalent in gold or silver; they paid no interest. The early series read “The United Colonies”; that of 14 January 1779 already carries on the border “The United States of North America.”',
+      'That last issue — $95,051,695 in sixteen values, from $1 to $80 — left the Hall and Sellers press in Philadelphia with the face in red and black and, on the back, the impression of a real leaf: Franklin’s nature print, distinct for each denomination. Great Britain counterfeited the series of 20 May 1777 and 11 April 1778 on such a scale that Congress withdrew them entirely.',
+      'None of that stopped the fall. In January 1777 it took 1.25 Continental dollars for one in specie; in January 1781, one hundred. The paper ceased to circulate in May of that year and left the phrase: “not worth a Continental.” The Constitution, ratified in 1788, closed the door on the states — Article I, Section 10: no state shall emit bills of credit — and Congress retired the remainder in 1790, exchanging it for bonds at one hundred to one. The discredit was such that there was no federal paper money until the greenbacks of 1861–1862.',
+    ],
+    howToReadTitle: 'How to read a colonial note',
+    howToReadIntro: 'Five marks that recur on the three records and on almost all paper of the period:',
+    howToRead: [
+      {
+        label: 'Indented.',
+        text: 'The hand-cut edge had to match the stub the treasurer kept. It is the first anti-counterfeit system for United States paper.',
+      },
+      {
+        label: 'Manuscript signatures.',
+        text: 'Two or three commissioners signed each note in ink; on the 1779 series the numbering and some signatures are in red.',
+      },
+      {
+        label: 'Manuscript serial.',
+        text: 'Neither Pick nor Friedberg identifies a specimen; the handwritten number does, when it can be read.',
+      },
+      {
+        label: 'Franklin paper.',
+        text: 'Mica flakes and blue fibers in the paper mass, visible against the light on the Pennsylvania pieces.',
+      },
+      {
+        label: 'Printed threat.',
+        text: '“To Counterfeit is Death” on Pennsylvania; on the Continentals, the nature-print leaf served the same function.',
+      },
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Links',
+    holdingsTitle: 'Notes in the collection',
+    holdingsCardsLabel: 'Note pages with images',
+    holdingsIntro:
+      'Each record describes a physical object. A Pick number or a year does not identify the specimen: the serial does, when it can be read.',
+    holdingsItems: [
+      '$5 · Continental Currency · 14 January 1779 · Friedberg CC-91 · Serial — · Emblem SUSTINE VEL ABSTINE · Reverse: feverfew leaf',
+      '5 shillings · Pennsylvania · 1 October 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serial 9733',
+      '2 shillings and 6 pence · Pennsylvania · 1 October 1773 · Friedberg PA-165 · Serial 21251',
+    ],
+    holdingsNote:
+      'Three note pages, 1773–1779. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 13 September 2026.',
+    emptyHoldings:
+      'There are no colonial note pages yet. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate.',
+    referencesTitle: 'References and condition',
+    references: [
+      'Fr. refers to Paper Money of the United States (Friedberg), which numbers colonial issues by colony (PA, NJ) and Continentals as CC. On the 5-shilling record, P# is the Standard Catalog of World Paper Money (Pick) specialized number: S-2540. N# is the Numista type number: N#406969. Those two abbreviations are written out once, here.',
+      'This case uses Friedberg numbers on the three records. Newman, The Early Paper Money of America, is cited as a source on the 5-shilling page; Newman catalog numbers are not adopted here.',
+      'The three pieces are described as circulated and unencapsulated; condition is noted descriptively, not numerically.',
+    ],
+    relatedTitle: 'In the collection',
+  },
+} as const;
+
+export const colonialSeriesRelated: { href: string; title: LocalizedText; dek: LocalizedText }[] = [
+  {
+    href: USA_PATH,
+    title: { es: 'Estados Unidos · Notafilia', en: 'United States · Notaphily' },
+    dek: {
+      es: 'La vitrina federal, del papel colonial a la Reserva Federal.',
+      en: 'The federal case, from colonial paper to the Federal Reserve.',
+    },
+  },
+  {
+    href: '/glosario/#letras-de-credito',
+    title: { es: 'Glosario: letras de crédito', en: 'Glossary: bills of credit' },
+    dek: {
+      es: 'Papel colonial autorizado por una legislatura, sin respaldo metálico pleno.',
+      en: 'Colonial paper authorized by a legislature, without full metallic backing.',
+    },
+  },
+  {
+    href: '/glosario/#nature-print',
+    title: { es: 'Glosario: nature print', en: 'Glossary: nature print' },
+    dek: {
+      es: 'El recurso anti-falsificación de Franklin en el reverso del Continental de 1779.',
+      en: 'Franklin’s anti-counterfeit device on the back of the 1779 Continental.',
+    },
+  },
+];
+
+export const colonialSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://nnp.wustl.edu/library/imagecollection/514438',
+    es: 'Newman Numismatic Portal — Massachusetts, 10 de diciembre de 1690',
+    en: 'Newman Numismatic Portal — Massachusetts, 10 December 1690',
+    note: {
+      es: '7.000 libras en Colony or Old Charter Bills; primer papel público autorizado por una legislatura en las colonias británicas; 5s, 10s, 20s y 5 libras.',
+      en: '£7,000 in Colony or Old Charter Bills; first public paper authorized by a legislature in the British American colonies; 5s, 10s, 20s, and £5.',
+    },
+  },
+  {
+    href: 'https://www.uscurrency.gov/history',
+    es: 'U.S. Currency Education Program — History of U.S. Currency',
+    en: 'U.S. Currency Education Program — History of U.S. Currency',
+    note: {
+      es: 'Massachusetts 1690 y Continentals de 1775; la frase «not worth a Continental».',
+      en: 'Massachusetts 1690 and Continentals of 1775; the phrase “not worth a Continental.”',
+    },
+  },
+  {
+    href: 'https://numismatics.org/a-history-of-american-currency/',
+    es: 'American Numismatic Society — A History of American Currency',
+    en: 'American Numismatic Society — A History of American Currency',
+    note: {
+      es: 'Massachusetts 1690 en el relato del papel público colonial; conviene el matiz de la monnaie de carte de 1685.',
+      en: 'Massachusetts 1690 in the colonial public-paper account; the 1685 monnaie de carte is the needed nuance.',
+    },
+  },
+  {
+    href: 'https://coins.nd.edu/ColCurrency/CurrencyIntros/CurrencyIntro.html',
+    es: 'University of Notre Dame — Colonial Currency',
+    en: 'University of Notre Dame — Colonial Currency',
+    note: {
+      es: 'Emisiones coloniales y Continentals hasta los años 1790; indentado y valor del dólar español.',
+      en: 'Colonial issues and Continentals through the 1790s; indenting and the Spanish dollar.',
+    },
+  },
+  {
+    href: 'https://www.archives.gov/founding-docs/constitution-transcript',
+    es: 'U.S. National Archives — Constitution of the United States',
+    en: 'U.S. National Archives — Constitution of the United States',
+    note: {
+      es: 'Artículo I, sección 10: ningún estado emitirá bills of credit. La Constitución se ratificó en 1788.',
+      en: 'Article I, Section 10: no state shall emit bills of credit. The Constitution was ratified in 1788.',
+    },
+  },
+];
+
+export const obsoleteSeriesCopy = {
+  es: {
+    metaTitle: '1782–1866 · Billetes Obsoletos | Notofilia',
+    metaDescription:
+      'Papel de bancos estatales de Estados Unidos: Haxby, remainders y tres fichas de Nueva Jersey, Connecticut y Luisiana.',
+    kicker: '1782–1866',
+    title: 'Billetes Obsoletos',
+    breadcrumbCurrent: 'Billetes Obsoletos',
+    parentLink: 'Estados Unidos',
+    heroAlt:
+      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+    intro: [
+      'Tras la Constitución, el papel cotidiano no lo emitió un banco central: lo emitieron bancos con carta estatal, compañías de canales y otras casas locales. Miles de planchas —a menudo grabadas en Nueva York o Filadelfia— circularon con convertibilidad desigual. Los coleccionistas llaman a ese papel obsolete notes o broken banknotes. James A. Haxby lo numera por estado, banco y variedad de plancha.',
+      'No es el papel federal posterior a 1861 ni el grayback confederado: Demand Notes, United States Notes, Fractional Currency, certificados de oro y plata y National Bank Notes tienen capítulo propio. En esta vitrina el objeto es el papel estatal. Ya tienen ficha el 1 dólar remainder del State Bank at New Brunswick, serial 9890 · B; el 5 dólares remainder del City Bank of New Haven, Haxby CT-265 G52b, plancha A, sin serial; y el 50 dólares remainder del Canal Bank de Nueva Orleans, Haxby LA-105 G46a, plancha D, sin serial, con el reverso rojo «Redback».',
+    ],
+    banksTitle: 'Bancos estatales y broken banknotes',
+    banks: [
+      'El First Bank of the United States (1791) fue solo el primero de muchos. Howard Bodenhorn describe un sistema antebellum en el que cada estado tasaba cartas, reservas y sucursales a su modo. Luisiana distinguió commercial banks, property banks e improvement banks: el Canal Bank de Nueva Orleans pagó su carta cavando el New Basin Canal. En Nueva Jersey, el acto del 28 de enero de 1812 autorizó seis State Banks; el de New Brunswick es uno de ellos.',
+      'La confianza se buscaba en el grabado. National Bank Note Company, American Bank Note Company y Toppan, Carpenter —luego Toppan, Carpenter, Casilear & Co.— llenaban el anverso de alegorías, puertos, locomotoras y protectores de color. La viñeta era propaganda institucional y, a la vez, un obstáculo para el falsificador: el mismo recurso que se lee en las tres fichas de esta vitrina.',
+      'Cuando el banco no podía pagar en metal, el papel dejaba de valer. De ahí el apodo broken banknote. No todos los bancos «quebraron» en el sentido de quiebra: el impuesto del 10 % y las nacionalizaciones también dejaron pliegos sin firmar. Los remainders de esta vitrina —fecha 18__, una firma o ninguna, serial en blanco o de stock— son ese resto de plancha, no un censo de circulación.',
+    ],
+    endTitle: 'El impuesto del 10 % y la National Banking Act',
+    end: [
+      'La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil. La National Banking Act de 1863 —y la de 1864— autorizó bancos con carta federal a emitir National Bank Notes respaldados por bonos del Tesoro. Un impuesto del 10 % sobre el papel privado, vigente en 1865–1866, hizo ruinosa la emisión estatal. El sucesor federal de este papel es el National Bank Note, en su propio capítulo. En esta colección aún no hay uno documentado.',
+      'Quien busque greenbacks, shinplasters o certificados de oro y plata debe abrir esos capítulos de la vitrina de Estados Unidos. Un Haxby no es un Friedberg: el primero numera el papel estatal; el segundo, el federal.',
+    ],
+    howToReadTitle: 'Cómo leer un billete obsoleto',
+    howToReadIntro: 'Cinco señas que se repiten en las tres fichas y en casi todo el papel Haxby de esta vitrina:',
+    howToRead: [
+      {
+        label: 'Haxby.',
+        text: 'El número va por estado, banco y variedad (NJ-350 G16a, CT-265 G52b, LA-105 G46a). Un Pick o un año no identifica el objeto.',
+      },
+      {
+        label: 'Remainder.',
+        text: 'Fecha impresa 18__, recuadro No. en blanco o con un serial de stock, una sola firma o ninguna. Distinto del espécimen y de la prueba.',
+      },
+      {
+        label: 'Plancha.',
+        text: 'La letra (A, B, D) identifica la posición en el pliego. Hay que leerla; no se inventa.',
+      },
+      {
+        label: 'Pie de imprenta.',
+        text: 'NBNC, Toppan, Carpenter o ABNCo. El dorso verde de New Brunswick es de la NBNC, no un National Bank Note de esa plaza.',
+      },
+      {
+        label: 'Serial.',
+        text: 'Si está, es la identidad del ejemplar. Si el recuadro está en blanco, la ficha lo declara y no fabrica un número.',
+      },
+    ],
+    viewNote: 'Ver la ficha',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serie',
+    sourcesTitle: 'Enlaces',
+    holdingsTitle: 'Piezas de la colección',
+    holdingsCardsLabel: 'Fichas con imagen',
+    holdingsIntro:
+      'Cada ficha describe un objeto físico. Un Haxby o un año no identifica el ejemplar: lo identifica el serial al leerse, o la huella —banco, tipo, plancha— cuando el recuadro quedó en blanco.',
+    holdingsItems: [
+      '1 dólar · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serie 9890 · B · Remainder',
+      '5 dólares · City Bank of New Haven · Haxby CT-265 G52b · Plancha A · Serie — · Remainder',
+      '50 dólares · Canal Bank, Nueva Orleans · Haxby LA-105 G46a · N#206863 · Plancha D · Serie — · Redback · Remainder',
+    ],
+    holdingsNote:
+      'Tres fichas, remainders de Nueva Jersey, Connecticut y Luisiana. El Citizens Bank of Louisiana y el Hagerstown Bank de Maryland caben en esta vitrina; esperan serial o certificado antes de abrir ficha. Última actualización: 13 de septiembre de 2026.',
+    emptyHoldings:
+      'Aún no hay fichas de billetes obsoletos. No se inventa un serial para abrir una.',
+    referencesTitle: 'Referencias y conservación',
+    references: [
+      'Haxby remite a Standard Catalog of United States Obsolete Bank Notes. N# es el número de tipo de Numista, escrito aquí una sola vez junto a cada ficha que lo lleva. Friedberg numera el papel federal, no esta clase.',
+      'Las tres piezas se describen como remainders, en funda y sin encapsular. La conservación se anota de forma descriptiva, no numérica. Esta página no republica columnas de precio ni cifras de subasta.',
+    ],
+    relatedTitle: 'En la colección',
+  },
+  en: {
+    metaTitle: '1782–1866 · Obsolete notes | Notofilia',
+    metaDescription:
+      'United States state-bank paper: Haxby, remainders, and three notes from New Jersey, Connecticut, and Louisiana.',
+    kicker: '1782–1866',
+    title: 'Obsolete notes',
+    breadcrumbCurrent: 'Obsolete notes',
+    parentLink: 'United States',
+    heroAlt:
+      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+    intro: [
+      'After the Constitution, everyday paper did not come from a central bank: it came from state-chartered banks, canal companies, and other local houses. Thousands of plates — often engraved in New York or Philadelphia — circulated with uneven convertibility. Collectors call that paper obsolete notes or broken banknotes. James A. Haxby numbers it by state, bank, and plate variety.',
+      'It is not federal paper after 1861, nor the Confederate grayback: Demand Notes, United States Notes, Fractional Currency, gold and silver certificates, and National Bank Notes have chapters of their own. In this case the object is state paper. The $1 remainder of the State Bank at New Brunswick, serial 9890 · B; the $5 remainder of the City Bank of New Haven, Haxby CT-265 G52b, plate A, with no serial; and the $50 remainder of the Canal Bank of New Orleans, Haxby LA-105 G46a, plate D, with no serial and the red “Redback” reverse, already have note pages.',
+    ],
+    banksTitle: 'State banks and broken banknotes',
+    banks: [
+      'The First Bank of the United States (1791) was only the first of many. Howard Bodenhorn describes an antebellum system in which each state set charters, reserves, and branches in its own way. Louisiana distinguished commercial banks, property banks, and improvement banks: the Canal Bank of New Orleans paid for its charter by digging the New Basin Canal. In New Jersey the act of 28 January 1812 authorized six State Banks; New Brunswick is one of them.',
+      'Trust was sought in the engraving. The National Bank Note Company, the American Bank Note Company, and Toppan, Carpenter — later Toppan, Carpenter, Casilear & Co. — filled the face with allegories, harbors, locomotives, and color protectors. The vignette was institutional propaganda and, at the same time, an obstacle for the counterfeiter: the same device that appears on the three records in this case.',
+      'When the bank could not pay in coin, the paper stopped being money. That is the source of the nickname broken banknote. Not every bank “broke” in the sense of failure: the 10 percent tax and the nationalizations also left unsigned sheets. The remainders in this case — an 18__ date, one signature or none, a blank or stock serial — are that leftover plate, not a circulating census.',
+    ],
+    endTitle: 'The 10 percent tax and the National Banking Act',
+    end: [
+      'The American Numismatic Society places the end of that plurality in the Civil War. The National Banking Act of 1863 — and that of 1864 — authorized federally chartered banks to issue National Bank Notes secured by Treasury bonds. A 10 percent tax on private paper, in force in 1865–1866, made state issue ruinous. The federal successor of this paper is the National Bank Note, in its own chapter. This collection does not yet hold a documented one.',
+      'Anyone looking for greenbacks, shinplasters, or gold and silver certificates should open those chapters of the United States case. A Haxby number is not a Friedberg number: the first catalogues state paper; the second, federal paper.',
+    ],
+    howToReadTitle: 'How to read an obsolete note',
+    howToReadIntro: 'Five marks that recur on the three records and on almost all Haxby paper in this case:',
+    howToRead: [
+      {
+        label: 'Haxby.',
+        text: 'The number runs by state, bank, and variety (NJ-350 G16a, CT-265 G52b, LA-105 G46a). A Pick number or a year does not identify the object.',
+      },
+      {
+        label: 'Remainder.',
+        text: 'A printed 18__ date, a blank No. box or a stock serial, and one signature or none. Distinct from a specimen and from a proof.',
+      },
+      {
+        label: 'Plate.',
+        text: 'The letter (A, B, D) marks the position on the sheet. It is read; it is not invented.',
+      },
+      {
+        label: 'Imprint.',
+        text: 'NBNC, Toppan, Carpenter, or ABNCo. The green back of the New Brunswick note is NBNC’s, not a National Bank Note of that town.',
+      },
+      {
+        label: 'Serial.',
+        text: 'When it can be read, it is the identity of the piece. When the box is blank, the record says so and does not fabricate a number.',
+      },
+    ],
+    viewNote: 'Open the note page',
+    pickLabel: 'Cat.',
+    serialLabel: 'Serial',
+    sourcesTitle: 'Links',
+    holdingsTitle: 'Notes in the collection',
+    holdingsCardsLabel: 'Note pages with images',
+    holdingsIntro:
+      'Each record describes a physical object. A Haxby number or a year does not identify the specimen: the serial does, when it can be read, or the fingerprint — bank, type, plate — when the box was left blank.',
+    holdingsItems: [
+      '$1 · State Bank at New Brunswick · Haxby NJ-350 G16a · N#334975 · Serial 9890 · B · Remainder',
+      '$5 · City Bank of New Haven · Haxby CT-265 G52b · Plate A · Serial — · Remainder',
+      '$50 · Canal Bank, New Orleans · Haxby LA-105 G46a · N#206863 · Plate D · Serial — · Redback · Remainder',
+    ],
+    holdingsNote:
+      'Three note pages, remainders from New Jersey, Connecticut, and Louisiana. The Citizens Bank of Louisiana and the Hagerstown Bank of Maryland belong in this case; they wait for a serial or a certificate before a note page is opened. Last updated: 13 September 2026.',
+    emptyHoldings:
+      'There are no obsolete-note pages yet. A serial is not invented in order to open one.',
+    referencesTitle: 'References and condition',
+    references: [
+      'Haxby refers to the Standard Catalog of United States Obsolete Bank Notes. N# is the Numista type number, written out once here beside each record that carries one. Friedberg numbers federal paper, not this class.',
+      'The three pieces are described as remainders, in a sleeve and unslabbed. Condition is noted descriptively, not numerically. This page does not republish price columns or auction figures.',
+    ],
+    relatedTitle: 'In the collection',
+  },
+} as const;
+
+export const obsoleteSeriesRelated: { href: string; title: LocalizedText; dek: LocalizedText }[] = [
+  {
+    href: USA_PATH,
+    title: { es: 'Estados Unidos · Notafilia', en: 'United States · Notaphily' },
+    dek: {
+      es: 'La vitrina federal, del papel colonial a la Reserva Federal.',
+      en: 'The federal case, from colonial paper to the Federal Reserve.',
+    },
+  },
+  {
+    href: USA_COLONIAL_PATH,
+    title: { es: 'Moneda colonial', en: 'Colonial paper' },
+    dek: {
+      es: 'El papel provincial y los Continentals, anteriores a los bancos estatales.',
+      en: 'Provincial paper and the Continentals, before the state banks.',
+    },
+  },
+  {
+    href: '/glosario/#billete-de-banco-obsoleto',
+    title: { es: 'Glosario: billete de banco obsoleto', en: 'Glossary: obsolete bank notes' },
+    dek: {
+      es: 'Papel de bancos con carta estatal, también llamados broken banknotes.',
+      en: 'State-chartered bank paper, also called broken banknotes.',
+    },
+  },
+  {
+    href: '/glosario/#haxby',
+    title: { es: 'Glosario: catálogo Haxby', en: 'Glossary: Haxby catalog' },
+    dek: {
+      es: 'La numeración por estado, banco y variedad de plancha.',
+      en: 'Numbering by state, bank, and plate variety.',
+    },
+  },
+];
+
+export const obsoleteSeriesSources: CatalogSource[] = [
+  {
+    href: 'https://share.gemini.google/x26FzHCczgwv',
+    es: 'Gemini — nota de investigación de los billetes obsoletos',
+    en: 'Gemini — research note on obsolete banknotes',
+    note: {
+      es: 'Conversación de investigación de esta vitrina (septiembre de 2026). No sustituye a Haxby ni a la ANS; no se toman de aquí precios, un censo ni la ampliación del término «obsoleto» al papel federal.',
+      en: 'Research conversation for this case (September 2026). It does not replace Haxby or the ANS; prices, a census, and the widening of “obsolete” to federal paper are not taken from it.',
+    },
+  },
+  {
+    href: 'https://numismatics.org/a-history-of-american-currency/',
+    es: 'American Numismatic Society — A History of American Currency',
+    en: 'American Numismatic Society — A History of American Currency',
+    note: {
+      es: 'Impuesto del 10 % sobre el papel privado y National Banking Act de 1863.',
+      en: 'The 10 percent tax on private paper and the National Banking Act of 1863.',
+    },
+  },
+  {
+    href: 'https://www.uscurrency.gov/history',
+    es: 'U.S. Currency Education Program — History of U.S. Currency',
+    en: 'U.S. Currency Education Program — History of U.S. Currency',
+    note: {
+      es: 'National Bank Notes como unificación del papel nacional; Demand Notes y greenbacks van en otro capítulo.',
+      en: 'National Bank Notes as the unification of national paper; Demand Notes and greenbacks belong in another chapter.',
+    },
+  },
+  {
+    href: 'https://eh.net/encyclopedia/antebellum-banking-in-the-united-states/',
+    es: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+    en: 'Howard Bodenhorn — Antebellum Banking in the United States (EH.net Encyclopedia)',
+    note: {
+      es: 'Banca estatal antebellum; en Luisiana, commercial, property e improvement banks, entre ellos el Canal Bank.',
+      en: 'Antebellum state banking; in Louisiana, commercial, property, and improvement banks, among them the Canal Bank.',
+    },
+  },
+  {
+    href: 'https://en.numista.com/catalogue/note334975.html',
+    es: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+    en: 'Numista — 1 Dollar, State Bank at New Brunswick (N#334975)',
+    note: {
+      es: 'Haxby NJ-350 G16a; remainder NBNC; serial 9890 · B en esta colección.',
+      en: 'Haxby NJ-350 G16a; NBNC remainder; serial 9890 · B in this collection.',
+    },
+  },
+  {
+    href: 'https://www.beastcoins.com/Banknotes/Obsolete/Connecticut/Connecticut.htm',
+    es: 'Beast Coins — Obsolete notes de Connecticut, CT-265 G52b',
+    en: 'Beast Coins — Connecticut obsolete notes, CT-265 G52b',
+    note: {
+      es: 'City Bank of New Haven, remainder de 5 dólares, planchas A–C, Toppan, Carpenter, Casilear & Co.',
+      en: 'City Bank of New Haven, $5 remainder, plates A–C, Toppan, Carpenter, Casilear & Co.',
+    },
+  },
+  {
+    href: 'https://en.numista.com/catalogue/note206863.html',
+    es: 'Numista — 50 Dollars, Canal Bank «Redback» (N#206863)',
+    en: 'Numista — 50 Dollars, Canal Bank “Redback” (N#206863)',
+    note: {
+      es: 'Haxby LA-105 G46a; remainder Toppan, Carpenter & Co.; plancha D en esta colección.',
+      en: 'Haxby LA-105 G46a; Toppan, Carpenter & Co. remainder; plate D in this collection.',
+    },
+  },
+];
+
 export const rencySeriesSources: CatalogSource[] = [
   {
     href: 'https://www.uscurrency.gov/denominations/1',
@@ -778,8 +1387,12 @@ export const rencySeriesSources: CatalogSource[] = [
 
 export type UnitedStatesNoteId =
   | '5-dolares-continental-1779'
+  | '5-chelines-pensilvania-1773'
+  | '2-chelines-6-peniques-pensilvania-1773'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
+  | '2-dolares-serie-2003-san-luis'
+  | '2-dolares-serie-1917'
   | '5-dolares-city-bank-new-haven'
   | '50-dolares-canal-bank-nueva-orleans'
   | '5-dolares-confederados-1864'
@@ -788,12 +1401,17 @@ export type UnitedStatesNoteId =
   | '10-dolares-serie-1934-chicago'
   | '10-dolares-serie-1934a-chicago'
   | '10-dolares-serie-1934a-cleveland'
+  | '10-dolares-serie-1934a-filadelfia'
+  | '10-dolares-serie-1934c-kansas-city'
   | '10-dolares-serie-1934d-richmond'
   | '500-dolares-serie-1934a-nueva-york'
   | '1000-dolares-serie-1934a-nueva-york'
+  | '20-dolares-serie-1934a-hawaii'
+  | '1-dolar-certificado-plata-1928a'
+  | '1-dolar-hawaii-1935a'
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
-  | 'nota-prueba-giori-lincoln-memorial'
+  | 'billete-prueba-giori-lincoln-memorial'
   | 'scrip-baraboo-5-centavos-a4895'
   | 'scrip-baraboo-10-centavos-a2844'
   | 'scrip-baraboo-15-centavos-a2819'
@@ -889,7 +1507,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El Congreso Continental autorizó papel en mayo de 1775 para financiar la independencia. Las notas prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. Hall and Sellers las imprimieron en Filadelfia, herederos de la prensa de Benjamin Franklin, sobre papel de Ivy Mills con fibras azules y mica. El reverso usaba nature prints de hojas y telas, difíciles de grabar a mano. La inflación y las falsificaciones británicas —guerra económica— acuñaron la frase «not worth a Continental». El U.S. Currency Education Program y el Newman Numismatic Portal sitúan ese descrédito al final de la guerra; la desconfianza retrasó un papel federal hasta los greenbacks de 1861–1862.',
+        es: 'El Congreso Continental autorizó papel en mayo de 1775 para financiar la independencia. Los billetes prometían dólares españoles de milésima o su equivalente en oro o plata; no pagaban interés. Hall and Sellers las imprimieron en Filadelfia, herederos de la prensa de Benjamin Franklin, sobre papel de Ivy Mills con fibras azules y mica. El reverso usaba nature prints de hojas y telas, difíciles de grabar a mano. La inflación y las falsificaciones británicas —guerra económica— acuñaron la frase «not worth a Continental». El U.S. Currency Education Program y el Newman Numismatic Portal sitúan ese descrédito al final de la guerra; la desconfianza retrasó un papel federal hasta los greenbacks de 1861–1862.',
         en: 'The Continental Congress authorized paper in May 1775 to finance independence. The notes promised Spanish milled dollars or their equal in gold or silver; they paid no interest. Hall and Sellers printed them in Philadelphia, successors to Benjamin Franklin’s press, on Ivy Mills paper with blue fibers and mica. The backs used nature prints of leaves and cloth, hard to engrave by hand. Inflation and British counterfeits — economic warfare — coined the phrase “not worth a Continental.” The U.S. Currency Education Program and the Newman Numismatic Portal place that collapse at the war’s end; the distrust delayed federal paper until the greenbacks of 1861–1862.',
       },
       {
@@ -956,6 +1574,257 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Mismo emblema SUSTINE VEL ABSTINE y nature print de Hall and Sellers, fecha anterior. No es esta pieza de 1779.',
           en: 'The same SUSTINE VEL ABSTINE emblem and Hall and Sellers nature print, an earlier date. Not this 1779 piece.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-chelines-pensilvania-1773',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
+    pathEn: '/collection/united-states/5-shillings-pennsylvania-1773/',
+    pick: 'Fr. PA-166 · P# S-2540 · N#406969',
+    serial: '9733',
+    serial_display: 'No. 9733',
+    signatures: {
+      es: 'Dos firmas manuscritas en tinta oscura; la inferior se lee Mifflin. Newman da tres firmantes por billete —uno suele ir en rojo— e incluye a Joseph Mifflin, James Stephens, Thomas Leech, William Fisher Jr. y Barnaby Barnes en el elenco de la emisión. La firma superior de este ejemplar no se transcribe con certeza; no se atribuye aquí a Joseph Redman ni a John Mifflin.',
+      en: 'Two manuscript signatures in dark ink; the lower one reads Mifflin. Newman gives three signers per note — one often in red — and lists Joseph Mifflin, James Stephens, Thomas Leech, William Fisher Jr., and Barnaby Barnes among the issue’s authorized hands. The upper signature on this example is not confidently transcribed; it is not assigned here to Joseph Redman or John Mifflin.',
+    },
+    printed: {
+      es: 'Hall and Sellers, Filadelfia, 1773. Newman describe papel con escamas de mica y fibras azules. La ley del 1 de febrero de 1773 autorizó 150.000 libras para reactivar el Loan Office; esta ficha no inventa una tirada para los 5 chelines ni para el serial 9733. Numista da al tipo 90 × 70 mm.',
+      en: 'Hall and Sellers, Philadelphia, 1773. Newman describes paper with mica flakes and blue fibers. The act of 1 February 1773 authorized £150,000 to revive the Loan Office; this record does not invent a printage for the 5 shillings or for serial 9733. Numista gives the type as 90 × 70 mm.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-composite.jpg',
+      front: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-front.jpg',
+      back: '/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '5 chelines · Pensilvania · 1 de octubre de 1773',
+      en: '5 shillings · Pennsylvania · 1 October 1773',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Provincia de Pensilvania',
+      en: 'United States · Colonial paper · Province of Pennsylvania',
+    },
+    lead: {
+      es: 'Bill of credit de 5 chelines —una corona, un cuarto de libra de «lawful money»— de la Asamblea General de Pensilvania, 1 de octubre de 1773 (no el 5). Anverso con el escudo y franja roja; reverso agrícola y «To Counterfeit is Death». Serial 9733.',
+      en: 'A 5-shilling bill of credit — one crown, a quarter pound of lawful money — of the Pennsylvania General Assembly, 1 October 1773 (not the 5th). Face with the arms and a red stripe; farm reverse and “To Counterfeit is Death.” Serial 9733.',
+    },
+    description: {
+      es: 'Los 5 chelines del 1 de octubre de 1773 (Friedberg PA-166; Pick S-2540; Numista N#406969) son un bill of credit de la provincia de Pensilvania, no un Continental del Congreso. El anverso, en negro con una franja vertical roja a la derecha, titula FIVE SHILLINGS en los cuatro lados y cita un acto de la General Assembly «passed in the 13th Year of the Reign of His Majesty GEORGE the Third. Dated the First Day of October, 1773». El long s de First (Firſt) se lee a menudo Fifth: la fecha impresa es el 1, no el 5 de octubre; el Smithsonian transcribe el mismo formulario en el 15 chelines de esta emisión (nmah_1823921). El texto promete A CROWN in Gold or Silver, containing the Value of FIVE SHILLINGS Lawful Money: en el sistema esterlina una corona son cinco chelines, un cuarto de libra, anclados a la «lawful money» provincial. Newman señala que el número de coronas del tipo se corresponde con las cinco denominaciones altas; en este cinco hay una. Al centro, el escudo con un caballo y el lema impreso VIRTUE LIBERTY AND INDEPENDENCE —el lema de este ejemplar, no el Mercy Justice de las armas Penn que a veces se describe para el tipo—. El recuadro No. lleva el serial manuscrito 9733. Hay dos firmas manuscritas; la inferior se lee Mifflin. El reverso no es la nature print de hoja de los Continentals ni de las denominaciones altas de esta misma fecha: Newman lo describe como un grabado fundido de una escena agrícola —campos, cerca y sol en el horizonte—. Encima se lee To Counterfeit is Death y FIVE SHILLINGS; abajo, Printed by HALL and SELLERS. No es el 5 dólares continental de 1779 de la misma imprenta (Fr. CC-91) ni los demás valores de octubre de 1773: 18 d PA-163, 2 s PA-164, 2 s 6 d PA-165, 10 s PA-167, 15 s PA-168, 20 s PA-169 y 50 s PA-170. La pieza, circulada y sin encapsular, se presenta sobre fondo neutro.',
+      en: 'The 5 shillings of 1 October 1773 (Friedberg PA-166; Pick S-2540; Numista N#406969) is a Province of Pennsylvania bill of credit, not a Continental of Congress. The face, black with a vertical red stripe at right, titles FIVE SHILLINGS on all four sides and cites an act of the General Assembly “passed in the 13th Year of the Reign of His Majesty GEORGE the Third. Dated the First Day of October, 1773.” The long s in First (Firſt) is often read as Fifth: the printed date is the 1st, not 5 October; the Smithsonian transcribes the same formula on the 15 shillings of this issue (nmah_1823921). The text promises A CROWN in Gold or Silver, containing the Value of FIVE SHILLINGS Lawful Money: in sterling a crown is five shillings, a quarter pound, tied to provincial lawful money. Newman notes that the number of crowns on the type is keyed to the five highest denominations; this five has one. At center sit the arms with a horse and the printed motto VIRTUE LIBERTY AND INDEPENDENCE — the motto on this example, not the Penn family’s Mercy Justice sometimes described for the type. The No. field carries manuscript serial 9733. There are two manuscript signatures; the lower one reads Mifflin. The back is not the leaf nature print of the Continentals or of the higher denominations of this same date: Newman describes a cast cut of a farming scene — fields, a fence, and a sun on the horizon. Above it stand To Counterfeit is Death and FIVE SHILLINGS; below, Printed by HALL and SELLERS. It is not the 1779 Continental $5 from the same shop (Fr. CC-91), nor the other October 1773 values: 18d PA-163, 2s PA-164, 2s6d PA-165, 10s PA-167, 15s PA-168, 20s PA-169, and 50s PA-170. The collection note, circulated and unslabbed, is shown on a neutral ground.',
+    },
+    history: [
+      {
+        es: 'El 1 de febrero de 1773 la Asamblea de Pensilvania autorizó 150.000 libras en bills of credit para reactivar el Loan Office: una caja de préstamos hipotecarios sobre tierra que devolvía el papel a la tesorería. Newman fecha la emisión impresa el 1 de octubre de 1773 —Friedberg PA-163 a PA-170— y sitúa la imprenta en Hall and Sellers, Filadelfia, herederos de la prensa de Benjamin Franklin. El papel lleva mica y fibras azules. En las cuatro denominaciones más altas el anverso se imprimió en rojo y negro a la vez; Newman apunta a plantillas de papel maché. En este 5 chelines la tinta roja marca la orla derecha. Newman no publica una tirada por denominación; los números del portal junto a cada valor (p. ej. 28.318 junto al 5 s) son referencias de lámina, no un censo de 28.300 billetes.',
+        en: 'On 1 February 1773 the Pennsylvania Assembly authorized £150,000 in bills of credit to revive the Loan Office: a land-bank of mortgage loans that returned the paper to the treasury. Newman dates the printed issue to 1 October 1773 — Friedberg PA-163 through PA-170 — and places the shop with Hall and Sellers, Philadelphia, successors to Benjamin Franklin’s press. The paper carries mica and blue fibers. On the four highest denominations the face was printed red and black at once; Newman points to papier-mâché stencil plates. On this 5 shillings the red ink marks the right border. Newman does not publish a printage by denomination; the portal numbers beside each value (e.g. 28,318 next to the 5s) are plate references, not a census of 28,300 notes.',
+      },
+      {
+        es: 'Dos años después, el Congreso Continental usaría la misma casa —y, en los reversos, nature prints de hojas— para el papel de la independencia. Este cinco de 1773 sigue fechado en el año 13 de Jorge III y promete una corona en oro o plata, no dólares españoles. La amenaza To Counterfeit is Death es la fórmula penal del reverso. Newman pide dos o tres firmas manuscritas para que el billete circule; este ejemplar muestra dos. Esta ficha describe el objeto físico; no afirma el estado de plancha ni un censo de certificación para el serial 9733.',
+        en: 'Two years later the Continental Congress would use the same shop — and, on the backs, leaf nature prints — for the paper of independence. This 1773 five is still dated in the 13th year of George III and promises a crown in gold or silver, not Spanish milled dollars. To Counterfeit is Death is the penal formula on the back. Newman calls for two or three manuscript signatures for a note to circulate; this example shows two. This record describes the physical object; it does not assert a plate state or a grading census for serial 9733.',
+      },
+    ],
+    historyHeading: {
+      es: 'El Loan Office de 1773',
+      en: 'The 1773 Loan Office',
+    },
+    frontCaption: {
+      es: 'Anverso de los 5 chelines de Pensilvania, Fr. PA-166, 1 de octubre de 1773: escudo provincial, franja roja y serial manuscrito 9733.',
+      en: 'Face of the Pennsylvania 5 shillings, Fr. PA-166, 1 October 1773: provincial arms, red stripe, and manuscript serial 9733.',
+    },
+    backCaption: {
+      es: 'Reverso con escena agrícola fundida, «To Counterfeit is Death» y «Printed by HALL and SELLERS».',
+      en: 'Back with a cast farm scene, “To Counterfeit is Death,” and “Printed by HALL and SELLERS.”',
+    },
+    scarcity: {
+      es: 'Friedberg numera el 5 chelines del 1 de octubre de 1773 como PA-166. Newman no publica en el extracto del portal una tirada por denominación: la cifra de 150.000 libras es la autorización de toda la ley, no la de este tipo. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para el serial 9733.',
+      en: 'Friedberg numbers the 5 shillings of 1 October 1773 as PA-166. Newman’s portal extract does not publish a printage by denomination: the £150,000 figure is the authorization for the whole act, not for this type. This record does not invent a census or an auction rarity for the type or for serial 9733.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 9733. La pieza se presenta sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial 9733 has not been independently verified. The note is shown unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://nnp.wustl.edu/library/imagecollection/514721',
+        es: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        en: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        note: {
+          es: 'Ley del 1 de febrero de 1773, 150.000 libras; Hall and Sellers; papel con mica y fibras azules; escena agrícola en el reverso; coronas según denominación; impresión en rojo y negro; firmantes, entre ellos Joseph Mifflin.',
+          en: 'Act of 1 February 1773, £150,000; Hall and Sellers; mica and blue-fiber paper; farm scene on the back; crowns keyed to denomination; red-and-black printing; signers including Joseph Mifflin.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/406969',
+        es: 'Numista — 5 Shillings, Colony of Pennsylvania (N#406969)',
+        en: 'Numista — 5 Shillings, Colony of Pennsylvania (N#406969)',
+        note: {
+          es: 'Pick S-2540; 90 × 70 mm; Hall & Sellers; anverso con escudo; reverso agrícola y «To Counterfeit is Death».',
+          en: 'Pick S-2540; 90 × 70 mm; Hall & Sellers; arms on the face; farm reverse and “To Counterfeit is Death.”',
+        },
+      },
+      {
+        href: 'https://coins.nd.edu/ColCurrency/CurrencyText/PA-10-01-73.html',
+        es: 'University of Notre Dame — Pennsylvania, 1 de octubre de 1773',
+        en: 'University of Notre Dame — Pennsylvania, 1 October 1773',
+        note: {
+          es: 'Texto de la emisión provincial de esa fecha, en la misma serie que usa esta vitrina para el Continental del 14 de enero de 1779.',
+          en: 'Text of the provincial issue of that date, in the same series this case uses for the Continental of 14 January 1779.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1986138',
+        es: 'Smithsonian — National Museum of American History, 5 Shillings, Pennsylvania, 1773',
+        en: 'Smithsonian — National Museum of American History, 5 Shillings, Pennsylvania, 1773',
+        note: {
+          es: 'Ejemplar de tipo, fecha en el objeto 1773-10-01, imprenta Hall & Sellers. No es el serial 9733.',
+          en: 'A type example, date on object 1773-10-01, printer Hall & Sellers. Not serial 9733.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1823921',
+        es: 'Smithsonian — 15 Shillings, Pennsylvania, 1773 (nmah_1823921)',
+        en: 'Smithsonian — 15 Shillings, Pennsylvania, 1773 (nmah_1823921)',
+        note: {
+          es: 'Misma emisión: transcribe «DATED THE FIRFT DAY OF OC-TOBER, 1773». Confirma el 1 de octubre frente a una lectura Fifth del long s.',
+          en: 'Same issue: transcribes “DATED THE FIRFT DAY OF OC-TOBER, 1773.” Confirms 1 October against a Fifth reading of the long s.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Contexto del papel colonial anterior a los Continentals de 1775.',
+          en: 'Context for colonial paper before the Continentals of 1775.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-chelines-6-peniques-pensilvania-1773',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
+    pathEn: '/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    pick: 'Fr. PA-165',
+    serial: '21251',
+    serial_display: 'No. 21251',
+    signatures: {
+      es: 'Benjamin Morgan; Barnaby Barnes; Samuel Fisher junr (manuscritas, en tinta oscura)',
+      en: 'Benjamin Morgan; Barnaby Barnes; Samuel Fisher junr (manuscript, in dark ink)',
+    },
+    printed: {
+      es: 'Hall and Sellers, Filadelfia, 1773. Newman describe papel con escamas de mica y fibras azules. La ley del 1 de febrero de 1773 autorizó 150.000 libras para reactivar el Loan Office; esta ficha no inventa una tirada para el 2s6d ni para el serial 21251. El 28.318 que el portal pone junto a esta denominación es una referencia de lámina, no un censo.',
+      en: 'Hall and Sellers, Philadelphia, 1773. Newman describes paper with mica flakes and blue fibers. The act of 1 February 1773 authorized £150,000 to revive the Loan Office; this record does not invent a printage for the 2s6d or for serial 21251. The 28,318 the portal places beside this denomination is a plate reference, not a census.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-composite.jpg',
+      front: '/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-front.jpg',
+      back: '/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-back.jpg',
+      width: 1440,
+      height: 960,
+    },
+    title: {
+      es: '2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773',
+      en: '2 shillings and 6 pence · Pennsylvania · 1 October 1773',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Asamblea de Pensilvania',
+      en: 'United States · Colonial paper · Pennsylvania Assembly',
+    },
+    lead: {
+      es: 'Bill of credit de medio crown, Fr. PA-165, serial 21251. Anverso en negro con borde derecho en rojo; reverso con escena rural fundida de Hall and Sellers. Fecha impresa: 1 de octubre de 1773.',
+      en: 'Half-crown bill of credit, Fr. PA-165, serial 21251. Black face with a red right border; Hall and Sellers cast-cut farm reverse. Printed date: 1 October 1773.',
+    },
+    description: {
+      es: 'El 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Friedberg PA-165) es un bill of credit de la Asamblea General, equivalente a half-a-crown: la mitad de la corona de cinco chelines de esta misma emisión. El anverso, en negro con el borde derecho en rojo, encabeza Twoshillings and Six-pence y cita un acta pasada en el año 13.º del reinado de Jorge III, fechada the First Day of October, 1773. El long s de First se lee a menudo Fifth: la fecha impresa es el 1, no el 5 de octubre. Arriba y abajo se lee PENNSYLVANIA. A la izquierda corre HALF A CROWN; a la derecha, en tinta roja, Two Shillings & Six-pence. El recuadro ornamental lleva el No. 21251. Las tres firmas manuscritas, en tinta oscura, se leen Benjamin Morgan, Barnaby Barnes y Samuel Fisher junr —los tres figuran en la lista de firmantes de Newman para esta fecha—. El reverso muestra un grabado fundido de escena rural —Newman lo llama cast cut; no es una nature print de hoja— con To Counterfeit is Death y Printed by HALL and SELLERS, más Two Shillings & Six-pence. No es el 5 chelines de la misma fecha (Fr. PA-166, serial 9733 de esta vitrina), ni el 5 dólares continental CC-91 de 1779, ni un bill de Nueva Jersey de 1776. La pieza, circulada y sin encapsular, se presenta sobre fondo neutro.',
+      en: 'The Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Friedberg PA-165) is a General Assembly bill of credit, equal to a half-crown: half of the five-shilling crown of this same issue. The face, black with a red right border, heads Twoshillings and Six-pence and cites an act passed in the 13th year of the reign of George III, dated the First Day of October, 1773. The long s in First is often read as Fifth: the printed date is the 1st, not 5 October. PENNSYLVANIA runs at the top and bottom. HALF A CROWN stands at left; Two Shillings & Six-pence, in red, at right. The ornamental No. field reads 21251. The three manuscript signatures, in dark ink, read Benjamin Morgan, Barnaby Barnes, and Samuel Fisher junr — all three appear on Newman’s signer list for this date. The back shows a cast-cut farm scene — Newman’s term; it is not a leaf nature print — with To Counterfeit is Death and Printed by HALL and SELLERS, plus Two Shillings & Six-pence. It is not the 5 shillings of the same date (Fr. PA-166, serial 9733 in this case), nor the Continental $5 CC-91 of 1779, nor a New Jersey bill of 1776. The collection note, circulated and unslabbed, is shown on a neutral ground.',
+    },
+    history: [
+      {
+        es: 'El 1 de febrero de 1773 la Asamblea de Pensilvania autorizó 150.000 libras en bills of credit para reactivar el Loan Office. Newman fecha la emisión impresa el 1 de octubre de 1773 —Friedberg PA-163 a PA-170— y sitúa la imprenta en Hall and Sellers, Filadelfia. El papel lleva mica y fibras azules. Tres firmantes autorizaban cada ejemplar; Newman anota que uno solía firmar en rojo. En este 2s6d las tres firmas se leen en tinta oscura. Newman no publica una tirada por denominación; el 28.318 del portal junto al 2s6d es una referencia de lámina, no un censo.',
+        en: 'On 1 February 1773 the Pennsylvania Assembly authorized £150,000 in bills of credit to revive the Loan Office. Newman dates the printed issue to 1 October 1773 — Friedberg PA-163 through PA-170 — and places the shop with Hall and Sellers, Philadelphia. The paper carries mica and blue fibers. Three signers authorized each note; Newman notes that one usually signed in red. On this 2s6d the three signatures read in dark ink. Newman does not publish a printage by denomination; the portal’s 28,318 beside the 2s6d is a plate reference, not a census.',
+      },
+      {
+        es: 'En las cuatro denominaciones más altas el anverso combina rojo y negro; en este 2s6d el rojo queda en el borde derecho. El reverso lleva la escena rural fundida, no la nature print de hoja que Hall and Sellers usaron después en los Continentals. Esta ficha describe el objeto físico; no afirma el estado de plancha ni un censo de certificación para el serial 21251.',
+        en: 'On the four highest denominations the face combines red and black; on this 2s6d the red sits in the right border. The back carries the cast-cut farm scene, not the leaf nature print Hall and Sellers later used on the Continentals. This record describes the physical object; it does not assert a plate state or a grading census for serial 21251.',
+      },
+    ],
+    historyHeading: {
+      es: 'El Loan Office de 1773',
+      en: 'The 1773 Loan Office',
+    },
+    frontCaption: {
+      es: 'Anverso del 2s6d de Pensilvania, Fr. PA-165, 1 de octubre de 1773: Half-a-Crown, borde derecho en rojo y serial No. 21251.',
+      en: 'Face of the Pennsylvania 2s6d, Fr. PA-165, 1 October 1773: Half-a-Crown, red right border, and serial No. 21251.',
+    },
+    backCaption: {
+      es: 'Reverso con escena rural fundida, «To Counterfeit is Death» y «Printed by HALL and SELLERS».',
+      en: 'Back with a cast-cut farm scene, “To Counterfeit is Death,” and “Printed by HALL and SELLERS.”',
+    },
+    scarcity: {
+      es: 'Friedberg numera el 2s6d del 1 de octubre de 1773 como PA-165. Newman no publica en el extracto del portal una tirada por denominación: la cifra de 150.000 libras es la autorización de toda la ley, no la de este tipo. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para el serial 21251.',
+      en: 'Friedberg numbers the 2s6d of 1 October 1773 as PA-165. Newman’s portal extract does not publish a printage by denomination: the £150,000 figure is the authorization for the whole act, not for this type. This record does not invent a census or an auction rarity for the type or for serial 21251.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 21251. La pieza se presenta sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial 21251 has not been independently verified. The note is shown unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://nnp.wustl.edu/library/imagecollection/514721',
+        es: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        en: 'Newman Numismatic Portal — Early Paper Money of America / Pennsylvania / 1773 October 1',
+        note: {
+          es: 'Ley del 1 de febrero de 1773, 150.000 libras; Hall and Sellers; escena rural fundida; lista de firmantes, entre ellos Benjamin Morgan, Barnaby Barnes y Samuel Fisher. El 28.318 junto al 2s6d es referencia de lámina, no tirada.',
+          en: 'Act of 1 February 1773, £150,000; Hall and Sellers; cast-cut farm scene; signer list including Benjamin Morgan, Barnaby Barnes, and Samuel Fisher. The 28,318 beside the 2s6d is a plate reference, not a printage.',
+        },
+      },
+      {
+        href: 'https://coins.nd.edu/ColCurrency/CurrencyText/PA-10-01-73.html',
+        es: 'University of Notre Dame — Pennsylvania, 1 de octubre de 1773',
+        en: 'University of Notre Dame — Pennsylvania, 1 October 1773',
+        note: {
+          es: 'Texto de la emisión provincial de esa fecha, en la misma serie que usa esta vitrina para el 5 chelines PA-166 y el Continental del 14 de enero de 1779.',
+          en: 'Text of the provincial issue of that date, in the same series this case uses for the 5 shillings PA-166 and the Continental of 14 January 1779.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/pennsylvania-colonial-currency-october-1-1773-two-shillings-sixpence-friedberg-pa165/gsid/67422',
+        es: 'Greysheet — Oct 1, 1773 2s6d Pennsylvania (Fr. PA165)',
+        en: 'Greysheet — Oct 1, 1773 2s6d Pennsylvania (Fr. PA165)',
+        note: {
+          es: 'Confirma el número Friedberg PA-165 para esta denominación y fecha. No se republica ninguna columna de precio.',
+          en: 'Confirms Friedberg PA-165 for this denomination and date. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Contexto del papel colonial anterior a los Continentals de 1775.',
+          en: 'Context for colonial paper before the Continentals of 1775.',
+        },
+      },
+      {
+        href: 'https://share.gemini.google/t3fSELWeqtml',
+        es: 'Gemini — nota de investigación del 2s6d de Pensilvania, 1773',
+        en: 'Gemini — research note on the Pennsylvania 2s6d, 1773',
+        note: {
+          es: 'Conversación de investigación de este ejemplar. No sustituye a Newman ni a Friedberg; no se toman de aquí precios ni un censo. El 28.318 del portal se trata como referencia de lámina, no como tirada.',
+          en: 'Research conversation for this piece. It does not replace Newman or Friedberg; prices and census figures are not taken from it. The portal’s 28,318 is treated as a plate reference, not a printage.',
         },
       },
     ],
@@ -1678,11 +2547,11 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         en: 'The Fourth Series — the act of 17 April 1862, amended 23 September — introduced the first $1 and $2 notes and, at the other end, these interest-bearing hundreds. Unlike the non-interest series of 1861, the Treasury offered 7.3 percent a year here, paid when the bearer presented the note at a depository. The underlying clause stayed the same: payment six months after a treaty of peace between the Confederacy and the United States. Wikipedia documents seven series between 1861 and 1864 totaling $1.7 billion.',
       },
       {
-        es: 'Los coleccionistas llaman a T-39, T-40 y T-41 las «Train and Hoer notes»: dos comparten la locomotora —recta o difusa la columna de humo— y la tercera cambia la viñeta por esclavos cavando con azadón y el retrato de John C. Calhoun. El Newman Numismatic Portal registra que el Tesoro, en Richmond, fechó a mano estas notas entre el 9 de mayo de 1862 y el 8 de enero de 1863; la fecha de este ejemplar, 20 de agosto de 1862, cae dentro del rango que la SPMC documenta para el T-40 (9 de agosto de 1862 a 16 de enero de 1863). Muchas de estas notas de cien salieron por comisionados o por oficiales del ejército confederado para comprar suministros en el frente, con endosos propios en el reverso; esta pieza no lleva esa firma de emisor, solo los sellos de intereses.',
+        es: 'Los coleccionistas llaman a T-39, T-40 y T-41 las «Train and Hoer notes»: dos comparten la locomotora —recta o difusa la columna de humo— y la tercera cambia la viñeta por esclavos cavando con azadón y el retrato de John C. Calhoun. El Newman Numismatic Portal registra que el Tesoro, en Richmond, fechó a mano estos billetes entre el 9 de mayo de 1862 y el 8 de enero de 1863; la fecha de este ejemplar, 20 de agosto de 1862, cae dentro del rango que la SPMC documenta para el T-40 (9 de agosto de 1862 a 16 de enero de 1863). Muchos de estos billetes de cien salieron por comisionados o por oficiales del ejército confederado para comprar suministros en el frente, con endosos propios en el reverso; esta pieza no lleva esa firma de emisor, solo los sellos de intereses.',
         en: 'Collectors call T-39, T-40, and T-41 the “Train and Hoer notes”: two share the locomotive — straight or diffused steam — and the third swaps the vignette for slaves hoeing and a portrait of John C. Calhoun. The Newman Numismatic Portal records that the Treasury, in Richmond, hand-dated these notes between 9 May 1862 and 8 January 1863; this note’s date, 20 August 1862, falls within the range the SPMC documents for T-40 (9 August 1862 to 16 January 1863). Many of these hundreds were put into circulation by Confederate commissioners or army officers buying supplies in the field, with their own endorsements on the back; this piece carries no such issuer’s signature, only the interest stamps.',
       },
       {
-        es: 'El interés se cobraba una vez al año, y cada cobro dejaba un sello en el reverso: por eso estas notas, a diferencia de las emisiones sin interés, no llevan un diseño grabado en la vuelta. Esta pieza registra al menos dos cobros en Raleigh, Carolina del Norte —1 de enero de 1864 y 1 de enero de 1865— y un tercer sello, en recuadro, superpuesto a un sello circular de depositaría que la fotografía no permite leer con certeza. La derrota confederada dejó sin valor tanto el principal como el interés acumulado; la Sección 4 de la Decimocuarta Enmienda declara nulas las deudas contraídas en ayuda de la rebelión.',
+        es: 'El interés se cobraba una vez al año, y cada cobro dejaba un sello en el reverso: por eso estos billetes, a diferencia de las emisiones sin interés, no llevan un diseño grabado en la vuelta. Esta pieza registra al menos dos cobros en Raleigh, Carolina del Norte —1 de enero de 1864 y 1 de enero de 1865— y un tercer sello, en recuadro, superpuesto a un sello circular de depositaría que la fotografía no permite leer con certeza. La derrota confederada dejó sin valor tanto el principal como el interés acumulado; la Sección 4 de la Decimocuarta Enmienda declara nulas las deudas contraídas en ayuda de la rebelión.',
         en: 'Interest was collected once a year, and each payment left a stamp on the back: that is why these notes, unlike the non-interest issues, carry no engraved design on the reverse. This piece records at least two payments at Raleigh, North Carolina — 1 January 1864 and 1 January 1865 — and a third, boxed stamp overlapping a circular depository seal that the photograph does not allow to be read with certainty. The Confederate defeat left both the principal and the accrued interest worthless; Section 4 of the Fourteenth Amendment holds debts incurred in aid of rebellion void.',
       },
     ],
@@ -1805,8 +2674,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 1934 $10: the Treasury building and TEN DOLLARS. Plate 430.',
     },
     scarcity: {
-      es: 'La serie 1934 del 10 dólares —cinco emisiones, de 1934 a 1934D, los doce distritos y sellos verde claro y verde oscuro— es el papel cotidiano de la Reserva en la depresión y la guerra. El Bank Note Museum la numera P-430 (sello claro) y P-430D (sello oscuro). Fr. 2004-G cubre Chicago. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte.',
-      en: 'The Series 1934 $10 — five issues, 1934 through 1934D, all twelve districts, and both light- and dark-green seals — was everyday Reserve paper through the Depression and the war. The Bank Note Museum numbers it P-430 (light seal) and P-430D (dark seal). Fr. 2004-G is Chicago. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately.',
+      es: 'La serie 1934 del 10 dólares —cinco emisiones, de 1934 a 1934D, los doce distritos y sellos verde claro y verde oscuro— es el papel cotidiano de la Reserva en la depresión y la guerra. El Bank Note Museum la numera P-430 (sello claro) y P-430D (sello oscuro). Fr. 2004-G cubre Chicago. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305.',
+      en: 'The Series 1934 $10 — five issues, 1934 through 1934D, all twelve districts, and both light- and dark-green seals — was everyday Reserve paper through the Depression and the war. The Bank Note Museum numbers it P-430 (light seal) and P-430D (dark seal). Fr. 2004-G is Chicago. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este número de serie. La pieza se presenta en funda, circulada, sin encapsular.',
@@ -1907,8 +2776,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 1934A $10: the Treasury building and TEN DOLLARS. No IN GOD WE TRUST motto.',
     },
     scarcity: {
-      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-G cubre Chicago. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte. Esta ficha no inventa una tirada por bloque.',
-      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-G is Chicago. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately. This record does not invent a printage by block.',
+      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-G cubre Chicago. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-G is Chicago. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This record does not invent a printage by block.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial G74025286A. La pieza se presenta en funda, circulada, sin encapsular.',
@@ -2018,8 +2887,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 1934A $10: the Treasury building and TEN DOLLARS. Plate 949. No IN GOD WE TRUST motto.',
     },
     scarcity: {
-      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-D cubre Cleveland. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte. Esta ficha no inventa una tirada por bloque.',
-      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-D is Cleveland. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately. This record does not invent a printage by block.',
+      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-D cubre Cleveland. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-D is Cleveland. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This record does not invent a printage by block.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial D78652996A. La pieza se presenta en funda, circulada, sin encapsular.',
@@ -2064,6 +2933,300 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
           en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-serie-1934a-filadelfia',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/',
+    pathEn: '/collection/united-states/10-dollars-series-1934a-philadelphia/',
+    pick: 'P#430Da · Fr. 2006-C',
+    serial: 'C46924254A',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'La fecha de impresión de C46924254A no está establecida. La serie 1934 A del 10 dólares empezó a imprimirse en 1938 y siguió hasta mediados de los años 1940: 1934 A es la designación de serie, no el año de este ejemplar. USPaperMoney.Info da el tramo conjunto de Filadelfia para 1934–1934 D (C00000001A–C94760000B) y advierte que las series se mezclaban antes de numerar. Ese tramo no es la tirada ni el rango exclusivo de la 1934 A.',
+      en: 'The printing date of C46924254A is not established. Series 1934A $10 production began in 1938 and continued into the mid-1940s: 1934A is the series designation, not the year this example was printed. USPaperMoney.Info gives Philadelphia’s combined 1934–1934D span (C00000001A–C94760000B) and notes that the series could be mixed before numbering. That span is not the printage or the exclusive range of Series 1934A.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-back.jpg',
+      width: 1024,
+      height: 682,
+    },
+    title: {
+      es: '10 dólares · Serie 1934 A · Filadelfia',
+      en: '$10 · Series 1934A · Philadelphia',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Hamilton y sello verde del Tesoro; reverso con el edificio del Tesoro. Distrito C / 3. Serie 1934 A, serial C46924254A.',
+      en: 'Face with Hamilton and a green Treasury seal; back with the Treasury building. District C / 3. Series 1934A, serial C46924254A.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1934 A (Pick 430Da, Friedberg 2006-C) es un Federal Reserve Note de tamaño pequeño del distrito de Filadelfia: sello circular con la C, el 3 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF PHILADELPHIA PENNSYLVANIA». El anverso, en negro con sello y seriales verdes, lleva el retrato de Alexander Hamilton en óvalo y, a la derecha, el sello del Tesoro sobre la palabra TEN. Las firmas son las de W. A. Julian y Henry Morgenthau Jr., las mismas de la serie 1934 sin letra. El texto de curso legal promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. La letra de posición L queda a la izquierda del sello de la Reserva; la plancha de anverso L87, en cuerpo macro, queda abajo a la derecha. El reverso, en verde, muestra el edificio del Tesoro en Washington, D.C., con figuras en la calle y un automóvil de entreguerras frente a la fachada; el número de plancha 658 queda junto al borde interior derecho de la viñeta. En este diseño, las planchas de reverso desde 585 pertenecen al grupo macro. La cara L87 con el reverso 658 es la emisión ordinaria, no un billete mula. El formato oficial de tamaño pequeño es 6,14 × 2,61 pulgadas (cerca de 156 × 66 mm); el papel del tipo es algodón y lino (75 % y 25 %). Esas cifras describen la emisión, no una medida de este ejemplar. Lo imprimió el Bureau of Engraving and Printing en Washington, D.C.: Filadelfia nombra el distrito. Esta pieza, sin graduar y sin encapsular, lleva el serial C46924254A (bloque C–A). La A final es la letra de bloque, distinta de la A de la serie. Es emisión regular: el serial cierra en A, no en estrella, y no lleva la sobrecarga HAWAII. El lema «IN GOD WE TRUST» no figura en el reverso. El distrito C / 3, Fr. 2006-C y este serial lo separan del 10 dólares de 1934 de Chicago, G30986728A, del 10 dólares de 1934 A de Chicago, G74025286A, del de Cleveland, D78652996A, y del 10 dólares de 1934 D de Richmond, E60822246B.',
+      en: 'The Series 1934A $10 (Pick 430Da, Friedberg 2006-C) is a small-size Federal Reserve Note of the Philadelphia district: a circular seal with C, 3s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF PHILADELPHIA PENNSYLVANIA.” The black face with green seal and serials carries Alexander Hamilton in an oval and, at right, the Treasury seal over TEN. The signatures are W. A. Julian and Henry Morgenthau Jr., the same pair as on Series 1934 without a letter. The legal-tender clause promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. Check letter L sits to the left of the Reserve seal; face plate L87, in macro size, sits at lower right. The green back shows the Treasury building in Washington, D.C., with street figures and an interwar automobile before the façade; plate number 658 sits near the right inner border of the vignette. On this design, back plates from 585 belong to the macro group. Face L87 with back 658 is the ordinary non-mule issue. The official small-size format is 6.14 × 2.61 inches (about 156 × 66 mm); the type paper is cotton and linen (75 percent and 25 percent). Those figures describe the issue, not a measurement of this example. The Bureau of Engraving and Printing printed it in Washington, D.C.: Philadelphia names the district. This ungraded, unslabbed piece is serial C46924254A (C–A block). The final A is the block letter, separate from the A in the series. It is a regular issue: the serial ends in A, not a star, and it has no HAWAII overprint. The motto “IN GOD WE TRUST” is absent from the back. District C / 3, Fr. 2006-C, and this serial set it apart from the Series 1934 Chicago $10, G30986728A, the Series 1934A Chicago $10, G74025286A, the Cleveland note, D78652996A, and the Series 1934D Richmond $10, E60822246B.',
+    },
+    history: [
+      {
+        es: 'La serie 1934 A del 10 dólares conserva las firmas Julian–Morgenthau y el mismo grabado de Hamilton. El cambio que la distingue de la serie 1934 es tipográfico: los números de plancha pasan de micro a macro. The Paper Money Project sitúa esa transición en la 1934 A. Un billete mula junta una cara macro con un reverso micro. Las 1934 A llevan sello verde oscuro (DGS), que los especialistas describen también como verde azulado, no el amarillo-verde claro de las primeras 1934. La producción arrancó en 1938 y siguió hasta mediados de los años 1940.',
+        en: 'Series 1934A $10 notes keep the Julian–Morgenthau signatures and the same Hamilton engraving. What sets them apart from Series 1934 is typographic: plate numbers grow from micro to macro. The Paper Money Project places that change on 1934A. A mule pairs a macro face with a micro back. Series 1934A notes carry the dark-green seal (DGS), which specialists also describe as blue-green, not the yellow-green of the earliest 1934 printings. Production began in 1938 and continued into the mid-1940s.',
+      },
+      {
+        es: 'El Bank Note Museum numera el tipo P-430Da dentro del grupo de sello oscuro. Numista reúne el diseño más amplio —TEN grande, retrato pequeño— en N# 202481 y lo agrupa bajo P# 430D. Filadelfia es el distrito C / 3. Esta pieza, bloque C–A, es emisión regular. La plancha de anverso es L87 y la de reverso, 658: ese reverso cae en el grupo macro (585 en adelante), de modo que la pareja es la emisión ordinaria. El lema «IN GOD WE TRUST» aún no figura en el reverso. El tramo C00000001A–C94760000B publicado para Filadelfia cubre 1934 a 1934 D juntas; no se anota aquí como rango de esta serie.',
+        en: 'The Bank Note Museum numbers the type P-430Da in the dark-seal group. Numista gathers the broader design — large TEN, small portrait — as N# 202481 and groups it under P# 430D. Philadelphia is district C / 3. This C–A block piece is a regular issue. The face plate is L87 and the back plate is 658: that back falls in the macro group (585 and higher), so the pair is the ordinary issue. The motto “IN GOD WE TRUST” is not yet on the back. The published Philadelphia span C00000001A–C94760000B covers 1934 through 1934D together; it is not entered here as the range of this series.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 A',
+      en: 'Series 1934A',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 1934 A, distrito de Filadelfia, serial C46924254A: Hamilton, sello verde del Tesoro y plancha L87.',
+      en: 'Face of the Series 1934A $10, Philadelphia district, serial C46924254A: Hamilton, the green Treasury seal, and plate L87.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 1934 A: edificio del Tesoro y TEN DOLLARS. Plancha 658. Sin lema IN GOD WE TRUST.',
+      en: 'Back of the Series 1934A $10: the Treasury building and TEN DOLLARS. Plate 658. No IN GOD WE TRUST motto.',
+    },
+    scarcity: {
+      es: 'La serie 1934 A del 10 dólares —firmas Julian–Morgenthau, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva en la guerra. El Bank Note Museum la numera P-430Da. Fr. 2006-C cubre Filadelfia. El tipo es común en estados medios; las claves son los reemplazos con estrella, los billetes mula y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta pieza es la emisión ordinaria: reverso macro 658 con cara de 1934 A. Esta ficha no inventa una tirada por bloque ni una tirada exclusiva de Filadelfia para la 1934 A.',
+      en: 'Series 1934A $10 notes — Julian–Morgenthau signatures, dark-green seal, all twelve districts — were everyday Reserve paper during the war. The Bank Note Museum numbers the type P-430Da. Fr. 2006-C is Philadelphia. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This piece is the ordinary issue: macro back 658 with a 1934A face. This record does not invent a printage by block or a Philadelphia printage exclusive to Series 1934A.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial C46924254A. La pieza no está encapsulada y no lleva número de certificado.',
+      en: 'A PMG or PCGS census for serial C46924254A has not been independently verified. The note is unslabbed and carries no certificate number.',
+    },
+    grade: {
+      es: 'Sin graduar. Papel crema a ocre, con tono desigual y manchas dispersas; desgaste visible en bordes y esquinas. Las imágenes no muestran certificación.',
+      en: 'Ungraded. Cream-to-tan paper with uneven toning and scattered spotting; visible edge and corner wear. The images show no grading certification.',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0430D2.htm',
+        es: 'Bank Note Museum — P-430D, 10 dólares Federal Reserve Note, series 1934–1934D',
+        en: 'Bank Note Museum — P-430D, Series 1934–1934D $10 Federal Reserve Note',
+        note: {
+          es: '430Da: serie 1934 A, firmas Julian y Morgenthau; distrito C = Filadelfia; sello verde oscuro.',
+          en: '430Da: Series 1934A, Julian and Morgenthau signatures; district C = Philadelphia; dark-green seal.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn',
+        es: 'The Paper Money Project — Federal Reserve Notes de 10 dólares, serie 1934',
+        en: 'The Paper Money Project — Series 1934 $10 Federal Reserve Notes',
+        note: {
+          es: 'La 1934 A introduce planchas macro y sello verde oscuro. Un billete mula casa cara macro con reverso micro. Los reversos desde 585 son macro; el 658 de esta pieza queda en ese grupo.',
+          en: '1934A introduces macro plates and the dark-green seal. A mule pairs a macro face with a micro back. Backs from 585 are macro; back 658 on this piece falls in that group.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-2006c-1934a-ten-dollar-federal-reserve-note-small-size-united-states-currency/gsid/63225',
+        es: 'Greysheet — Fr. 2006-C, 1934A $10 Federal Reserve Note, Filadelfia',
+        en: 'Greysheet — Fr. 2006-C, 1934A $10 Federal Reserve Note, Philadelphia',
+        note: {
+          es: 'Tipo de tamaño pequeño, sello verde oscuro, distrito de Filadelfia.',
+          en: 'Small-size type, dark-green seal, Philadelphia district.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyforum.com/post/10-federal-reserve-series-1934-1934a-1934b-1934c-amp-1934d-collectors-guide-updated-april-2020-8268263',
+        es: 'Paper Money Forum — guía de las series 1934 a 1934 D del 10 dólares',
+        en: 'Paper Money Forum — guide to the Series 1934 through 1934D $10',
+        note: {
+          es: 'La producción de la 1934 A empezó en 1938. La A final del serial es letra de bloque, distinta de la A de la serie.',
+          en: '1934A production began in 1938. The final A of the serial is a block letter, separate from the A in the series.',
+        },
+      },
+      {
+        href: 'https://www.uspapermoney.info/serials/all___d.html',
+        es: 'USPaperMoney.Info — resumen de seriales del 10 dólares',
+        en: 'USPaperMoney.Info — $10 serial summary',
+        note: {
+          es: 'Filadelfia, series 1934 a 1934 D juntas: C00000001A–C94760000B. Las series se mezclaban antes de numerar; el primer serial de la 1934 A no consta aparte.',
+          en: 'Philadelphia, Series 1934 through 1934D together: C00000001A–C94760000B. The series could be mixed before numbering; the first Series 1934A serial is not recorded separately.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202481.html',
+        es: 'Numista — N# 202481, 10 dólares, Federal Reserve Note, TEN grande',
+        en: 'Numista — N# 202481, $10 Federal Reserve Note, large TEN',
+        note: {
+          es: 'Tipo amplio de retrato pequeño. Numista lo agrupa bajo P# 430D; esta ficha usa el sufijo 430Da para la serie 1934 A.',
+          en: 'Broad small-portrait type. Numista groups it under P# 430D; this record uses the 430Da suffix for Series 1934A.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/10',
+        es: 'U.S. Currency Education Program — 10 dólares',
+        en: 'U.S. Currency Education Program — $10',
+        note: {
+          es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
+          en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/bank-note-identifiers',
+        es: 'U.S. Currency Education Program — identificadores del billete',
+        en: 'U.S. Currency Education Program — bank note identifiers',
+        note: {
+          es: 'La letra del sello y del serial, con el numeral de distrito, identifica el banco de la Reserva. C / 3 es Filadelfia.',
+          en: 'The letter in the seal and serial, with the district numeral, identifies the Federal Reserve Bank. C / 3 is Philadelphia.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-serie-1934c-kansas-city',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/',
+    pathEn: '/collection/united-states/10-dollars-series-1934c-kansas-city/',
+    pick: 'P#430Dc · Fr. 2008-J',
+    serial: 'J55894000A',
+    signatures: {
+      es: 'W. A. Julian (tesorero) y John W. Snyder (secretario del Tesoro)',
+      en: 'W. A. Julian (Treasurer) and John W. Snyder (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Tipo común de cara ancha del distrito de Kansas City. La serie 1934 C es la cuarta de las cinco emisiones 1934–1934D. John W. Snyder fue secretario del Tesoro de 1946 a 1953, de modo que la serie impresa no fecha la fabricación de J55894000A. Esta ficha no inventa una tirada por bloque.',
+      en: 'A common wide-face Kansas City type. Series 1934C is the fourth of the five 1934–1934D issues. John W. Snyder was Secretary of the Treasury from 1946 to 1953, so the printed series does not date the manufacture of J55894000A. This record does not invent a printage by block.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-back.jpg',
+      width: 1024,
+      height: 682,
+    },
+    title: {
+      es: '10 dólares · Serie 1934 C · Kansas City',
+      en: '$10 · Series 1934C · Kansas City',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso con Hamilton y sello verde del Tesoro; reverso con el edificio del Tesoro. Distrito J / 10. Serie 1934 C, cara ancha, serial J55894000A.',
+      en: 'Face with Hamilton and a green Treasury seal; back with the Treasury building. District J / 10. Series 1934C, wide face, serial J55894000A.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1934 C (Pick 430Dc, Friedberg 2008-J) es un Federal Reserve Note de tamaño pequeño del distrito de Kansas City: sello circular con la J, el 10 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF KANSAS CITY MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Alexander Hamilton en óvalo y, a la derecha, el sello del Tesoro sobre la palabra TEN. Las firmas son las de W. A. Julian y John W. Snyder. El texto de curso legal promete el canje «in lawful money» en el Tesoro o en cualquier banco de la Reserva. La marca de plancha J73 —letra de posición J y plancha de anverso 73— queda abajo a la derecha. El reverso, en verde, muestra el edificio del Tesoro en Washington, D.C., con la leyenda «U.S. TREASURY», peatones y un automóvil de entreguerras frente a la fachada; el número de plancha 1177 queda a la derecha de la viñeta. El lema «IN GOD WE TRUST» aún no figura. Las medidas de catálogo del tipo son 156 × 66 mm; no son una medición de este ejemplar. El soporte del tipo es el papel de algodón y lino de la moneda estadounidense, con fibras de seguridad; esta ficha no presenta un recuento de fibras de la pieza. Esta pieza de la colección, circulada y sin encapsular, lleva el serial J55894000A (bloque J–A, sin estrella). La plancha 73 cae fuera de las únicas cuatro planchas de cara estrecha de la 1934 C (86, 87, 88 y 89), hechas solo para Kansas City, de modo que el ejemplar es la variedad de cara ancha: «ancha» nombra el grabado del anverso, no el ancho del papel. Las fotografías, realzadas, muestran dobleces que se cruzan, tono, esquinas reblandecidas y desgaste en los bordes; no fijan un grado. Las otras fichas del 10 dólares de la Reserva son piezas distintas: Chicago 1934, serial G30986728A; Chicago 1934 A, serial G74025286A; Cleveland 1934 A, serial D78652996A; Filadelfia 1934 A, serial C46924254A; Richmond 1934 D, serial E60822246B. Las distinguen la letra de serie C, el distrito J / 10, las firmas Julian–Snyder y este serial.',
+      en: 'The Series 1934C $10 (Pick 430Dc, Friedberg 2008-J) is a small-size Federal Reserve Note of the Kansas City district: a circular seal with J, 10s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF KANSAS CITY MISSOURI.” The black face with green seal and serials carries Alexander Hamilton in an oval and, at right, the Treasury seal over TEN. The signatures are W. A. Julian and John W. Snyder. The legal-tender clause promises redemption “in lawful money” at the Treasury or any Federal Reserve Bank. Plate marking J73 — position letter J and face plate 73 — sits at lower right. The green back shows the Treasury building in Washington, D.C., with the caption “U.S. TREASURY,” pedestrians, and an interwar automobile before the façade; plate number 1177 sits to the right of the vignette. The motto “IN GOD WE TRUST” is not yet present. Catalog dimensions for the type are 156 × 66 mm; they are not a measurement of this example. The type is printed on United States cotton-and-linen currency paper with security fibers; this record does not offer a fiber count of the piece. This collection piece, circulated and unslabbed, is serial J55894000A (J–A block, no star). Plate 73 falls outside the only four Series 1934C narrow-face plates (86, 87, 88, and 89), made for Kansas City alone, so the example is the wide-face variety: “wide” names the engraved face, not the width of the paper. The enhanced photographs show crossing folds, toning, softened corners, and edge wear; they do not fix a grade. The other Reserve $10 note pages are different pieces: Chicago 1934, serial G30986728A; Chicago 1934A, serial G74025286A; Cleveland 1934A, serial D78652996A; Philadelphia 1934A, serial C46924254A; Richmond 1934D, serial E60822246B. The series letter C, district J / 10, the Julian–Snyder signatures, and this serial distinguish them.',
+    },
+    history: [
+      {
+        es: 'La serie 1934 C del 10 dólares conserva el grabado pequeño de Hamilton y cambia el par de firmas a Julian–Snyder. El Bank Note Museum la numera P-430Dc, dentro del grupo de sello verde oscuro, para los doce distritos. John W. Snyder ocupó la secretaría del Tesoro de 1946 a 1953: la serie impresa 1934 C es la designación de la emisión, no el año en que se fabricó J55894000A. Las fotografías no fijan la fecha de impresión de este ejemplar. Kansas City es el distrito J / 10. El bloque J–A no es un reemplazo con estrella ni un HAWAII. El lema «IN GOD WE TRUST» aún no figura en el reverso.',
+        en: 'Series 1934C $10 notes keep the small Hamilton engraving and change the signature pair to Julian–Snyder. The Bank Note Museum numbers the type P-430Dc, in the dark-green seal group, for all twelve districts. John W. Snyder was Secretary of the Treasury from 1946 to 1953: printed Series 1934C is the issue designation, not the year J55894000A was made. The photographs do not fix the printing date of this example. Kansas City is district J / 10. The J–A block is neither a star replacement nor a HAWAII note. The motto “IN GOD WE TRUST” is not yet on the back.',
+      },
+      {
+        es: 'En diciembre de 1949 el BEP introdujo la cara estrecha del 10 dólares: el marco del anverso se acerca un poco al diseño interior. The Paper Money Project registra que, en la serie 1934 C, solo se hicieron cuatro planchas de cara estrecha, las 86 a 89, y solo para Kansas City. El resto de los 10 dólares FRN de 1934 C se imprimió con planchas de cara ancha, el diseño usado hasta entonces en el 10 dólares de tamaño pequeño. La plancha 73 de esta pieza es, por tanto, cara ancha. Greysheet numera el tipo de Kansas City como Fr. 2008-J. Esta ficha no inventa una tirada que separe cara ancha y cara estrecha.',
+        en: 'In December 1949 the BEP introduced the $10 narrow face: the face frame sits slightly closer to the interior design. The Paper Money Project records that Series 1934C used only four narrow-face plates, 86 through 89, and only for Kansas City. The rest of the 1934C $10 FRNs were printed from wide-face plates, the design used on small-size $10 notes until then. Face plate 73 on this piece is therefore wide face. Greysheet numbers the Kansas City type Fr. 2008-J. This record does not invent a printage that splits wide face from narrow face.',
+      },
+    ],
+    historyHeading: {
+      es: 'La serie 1934 C',
+      en: 'Series 1934C',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares, serie 1934 C, distrito de Kansas City, serial J55894000A: Hamilton, sello verde del Tesoro y plancha J73, cara ancha.',
+      en: 'Face of the Series 1934C $10, Kansas City district, serial J55894000A: Hamilton, the green Treasury seal, and plate J73, wide face.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 dólares, serie 1934 C: edificio del Tesoro, leyenda U.S. TREASURY y plancha 1177. Sin lema IN GOD WE TRUST.',
+      en: 'Back of the Series 1934C $10: the Treasury building, the U.S. TREASURY caption, and plate 1177. No IN GOD WE TRUST motto.',
+    },
+    scarcity: {
+      es: 'La serie 1934 C del 10 dólares —firmas Julian–Snyder, sello verde oscuro, los doce distritos— es papel de la Reserva de la posguerra. El Bank Note Museum la numera P-430Dc. Fr. 2008-J cubre Kansas City. La cara ancha es la emisión ordinaria; la variedad que el censo separa es la cara estrecha de Kansas City, planchas 86–89. Esta pieza, plancha 73, es cara ancha. El tipo corriente es común en estados medios; las claves son los reemplazos con estrella, la cara estrecha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934C $10 notes — Julian–Snyder signatures, dark-green seal, all twelve districts — were postwar Reserve paper. The Bank Note Museum numbers the type P-430Dc. Fr. 2008-J is Kansas City. The wide face is the ordinary issue; the variety the census sets apart is the Kansas City narrow face, plates 86–89. This piece, plate 73, is wide face. The ordinary type is common in mid grades; the keys are star replacements, the narrow face, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This record does not invent a printage by block.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial J55894000A. La pieza no está encapsulada y no lleva número de certificado. Las fotografías realzadas no bastan para un grado firme.',
+      en: 'A PMG or PCGS census for serial J55894000A has not been independently verified. The note is unslabbed and carries no certificate number. The enhanced photographs are not enough for a firm grade.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada). Dobleces, tono y desgaste en las esquinas, visibles en fotografía realzada.',
+      en: 'Circulated, unslabbed (private collection). Folds, toning, and corner wear, visible in an enhanced photograph.',
+    },
+    sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-FEDRES/USA0430D2.htm',
+        es: 'Bank Note Museum — P-430D, 10 dólares Federal Reserve Note, series 1934–1934D',
+        en: 'Bank Note Museum — P-430D, Series 1934–1934D $10 Federal Reserve Note',
+        note: {
+          es: '430Dc: serie 1934 C, firmas Julian y Snyder; distrito J = Kansas City; sello verde oscuro.',
+          en: '430Dc: Series 1934C, Julian and Snyder signatures; district J = Kansas City; dark-green seal.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn-narrow',
+        es: 'The Paper Money Project — 10 dólares FRN de 1934 C, cara estrecha',
+        en: 'The Paper Money Project — Series 1934C $10 FRN, narrow face',
+        note: {
+          es: 'Cuatro planchas de cara estrecha, 86–89, solo Kansas City, desde diciembre de 1949. El resto de la 1934 C es cara ancha. La plancha 73 es cara ancha.',
+          en: 'Four narrow-face plates, 86–89, Kansas City only, from December 1949. The rest of Series 1934C is wide face. Plate 73 is wide face.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/10-frn',
+        es: 'The Paper Money Project — Federal Reserve Notes de 10 dólares, serie 1934',
+        en: 'The Paper Money Project — Series 1934 $10 Federal Reserve Notes',
+        note: {
+          es: 'Cinco series (1934–1934D). La cara estrecha de la 1934 C se limita a Kansas City, planchas 86–89.',
+          en: 'Five series (1934–1934D). The 1934C narrow face is limited to Kansas City, plates 86–89.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/fr-2008j-1934c-ten-dollar-federal-reserve-note-small-size-united-states-currency/gsid/63468',
+        es: 'Greysheet — Fr. 2008-J, 1934C $10 Federal Reserve Note, Kansas City',
+        en: 'Greysheet — Fr. 2008-J, 1934C $10 Federal Reserve Note, Kansas City',
+        note: {
+          es: 'Tipo de tamaño pequeño, serie 1934 C, distrito de Kansas City.',
+          en: 'Small-size type, Series 1934C, Kansas City district.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202481.html',
+        es: 'Numista — N# 202481, 10 dólares, Federal Reserve Note, TEN grande',
+        en: 'Numista — N# 202481, $10 Federal Reserve Note, large TEN',
+        note: {
+          es: 'Serie 1934 C, firmas Julian y Snyder, P# 430Dc. Medidas de catálogo 156 × 66 mm.',
+          en: 'Series 1934C, Julian and Snyder signatures, P# 430Dc. Catalog size 156 × 66 mm.',
+        },
+      },
+      {
+        href: 'https://home.treasury.gov/about/history/prior-secretaries/john-w-snyder-1946-1953',
+        es: 'Departamento del Tesoro — John W. Snyder (1946–1953)',
+        en: 'U.S. Department of the Treasury — John W. Snyder (1946–1953)',
+        note: {
+          es: 'Snyder fue secretario del Tesoro de 1946 a 1953. La serie impresa 1934 C no es el año de fabricación.',
+          en: 'Snyder was Secretary of the Treasury from 1946 to 1953. Printed Series 1934C is not the year of manufacture.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/10',
+        es: 'U.S. Currency Education Program — 10 dólares',
+        en: 'U.S. Currency Education Program — $10',
+        note: {
+          es: 'Hamilton en el 10 dólares desde 1929; el edificio del Tesoro en el reverso de las series de tamaño pequeño anteriores al rediseño de 2006.',
+          en: 'Hamilton on the $10 since 1929; the Treasury building on the back of small-size series before the 2006 redesign.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/bank-note-identifiers',
+        es: 'U.S. Currency Education Program — identificadores del billete',
+        en: 'U.S. Currency Education Program — bank note identifiers',
+        note: {
+          es: 'La letra del sello y del serial, con el numeral de distrito, identifica el banco de la Reserva. J / 10 es Kansas City.',
+          en: 'The letter in the seal and serial, with the district numeral, identifies the Federal Reserve Bank. J / 10 is Kansas City.',
         },
       },
     ],
@@ -2129,8 +3292,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 1934D $10: the Treasury building and TEN DOLLARS. Plate 1297. No IN GOD WE TRUST motto.',
     },
     scarcity: {
-      es: 'La serie 1934 D del 10 dólares —firmas Clark–Snyder, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva de la posguerra. El Bank Note Museum la numera P-430Dd. Fr. 2009-E cubre Richmond. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que se documentará aparte. Esta ficha no inventa una tirada por bloque.',
-      en: 'Series 1934D $10 notes — Clark–Snyder signatures, dark-green seal, all twelve districts — were everyday Reserve paper after the war. The Bank Note Museum numbers the type P-430Dd. Fr. 2009-E is Richmond. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which will be documented separately. This record does not invent a printage by block.',
+      es: 'La serie 1934 D del 10 dólares —firmas Clark–Snyder, sello verde oscuro, los doce distritos— es el papel cotidiano de la Reserva de la posguerra. El Bank Note Museum la numera P-430Dd. Fr. 2009-E cubre Richmond. El tipo es común en estados medios; las claves son los reemplazos con estrella, los mulas de plancha y el 20 dólares HAWAII, que ya tiene ficha: serial L86654132A, Fr. 2305. Esta ficha no inventa una tirada por bloque.',
+      en: 'Series 1934D $10 notes — Clark–Snyder signatures, dark-green seal, all twelve districts — were everyday Reserve paper after the war. The Bank Note Museum numbers the type P-430Dd. Fr. 2009-E is Richmond. The type is common in mid grades; the keys are star replacements, plate mules, and the HAWAII $20, which already has a note page: serial L86654132A, Fr. 2305. This record does not invent a printage by block.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial E60822246B. La pieza se presenta en funda, circulada, sin encapsular.',
@@ -2221,7 +3384,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El 500 dólares de tamaño pequeño lleva a McKinley desde la serie 1928. El U.S. Currency Education Program sitúa las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Las notas pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
+        es: 'El 500 dólares de tamaño pequeño lleva a McKinley desde la serie 1928. El U.S. Currency Education Program sitúa las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Los billetes pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
         en: 'Small-size $500 notes have carried McKinley since Series 1928. The U.S. Currency Education Program places the last printings of $500, $1,000, $5,000, and $10,000 notes in 1945; on 14 July 1969 the Federal Reserve and the Treasury announced those denominations would be discontinued for lack of use. Outstanding notes remain legal tender: the government has not recalled the paper.',
       },
       {
@@ -2323,7 +3486,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'El 1.000 dólares de tamaño pequeño lleva a Cleveland desde la serie 1928. El U.S. Currency Education Program y el Bureau of Engraving and Printing sitúan las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Las notas pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
+        es: 'El 1.000 dólares de tamaño pequeño lleva a Cleveland desde la serie 1928. El U.S. Currency Education Program y el Bureau of Engraving and Printing sitúan las últimas impresiones de 500, 1.000, 5.000 y 10.000 dólares en 1945; el 14 de julio de 1969 la Reserva Federal y el Tesoro anunciaron el retiro de esas denominaciones por falta de uso. Los billetes pendientes siguen siendo curso legal: el gobierno no ha llamado al papel.',
         en: 'Small-size $1,000 notes have carried Cleveland since Series 1928. The U.S. Currency Education Program and the Bureau of Engraving and Printing place the last printings of $500, $1,000, $5,000, and $10,000 notes in 1945; on 14 July 1969 the Federal Reserve and the Treasury announced those denominations would be discontinued for lack of use. Outstanding notes remain legal tender: the government has not recalled the paper.',
       },
       {
@@ -2395,6 +3558,117 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     ],
   },
   {
+    id: '20-dolares-serie-1934a-hawaii',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
+    pathEn: '/collection/united-states/20-dollars-hawaii-1934a/',
+    pick: 'Fr. 2305',
+    serial: 'L86654132A',
+    signatures: {
+      es: 'William Alexander Julian (tesorero de los Estados Unidos) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'William Alexander Julian (Treasurer of the United States) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1934 A, impresa como SERIES OF 1934 A: esa designación no es el año en que se numeró este ejemplar. El Tesoro puso en circulación la moneda HAWAII el 25 de junio de 1942. Peter Huntoon (Paper Money, mayo–junio de 2008, tabla 1a) sitúa el serial L86654132A en el tramo L85536001A–L90036000A —4.500.000 de piezas de las series 1934 y 1934 A juntas—, numerado en 1944. Esas cifras son la ventana del lote, no el día exacto en que se terminó esta pieza ni la tirada solo de Fr. 2305. Las ocho tiradas ordinarias del 20 dólares HAWAII suman 11.246.000 ejemplares sin estrella, combinando 1934 (Fr. 2304) y 1934 A (Fr. 2305). El formato publicado es de unos 155 × 66 mm (Numista); no es una medición de este ejemplar. Bureau of Engraving and Printing; distrito L / 12, San Francisco.',
+      en: 'Series 1934A, printed as SERIES OF 1934 A: that designation is not the year this specimen was numbered. The Treasury introduced HAWAII currency on 25 June 1942. Peter Huntoon (Paper Money, May–June 2008, Table 1a) places serial L86654132A in the run L85536001A–L90036000A — 4,500,000 notes of Series 1934 and 1934A together — numbered in 1944. Those figures are the run’s numbering window, not the exact day this note was finished and not a Fr. 2305-only printage. The eight regular $20 HAWAII runs total 11,246,000 non-star notes, combining 1934 (Fr. 2304) and 1934A (Fr. 2305). The published format is about 155 × 66 mm (Numista); that is not a measurement of this piece. Bureau of Engraving and Printing; district L / 12, San Francisco.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-back.jpg',
+      width: 2400,
+      height: 1600,
+    },
+    title: {
+      es: '20 dólares · HAWAII · Serie 1934 A',
+      en: '$20 · HAWAII · Series 1934 A',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note · Emergencia',
+      en: 'United States · Federal Reserve Note · Emergency',
+    },
+    lead: {
+      es: 'Anverso con Jackson, sello y seriales marrones L86654132A y HAWAII en ambos márgenes; reverso con la Casa Blanca y HAWAII en letras huecas. Serie 1934 A, San Francisco, numerado en 1944. Circulada, sin encapsular.',
+      en: 'Face with Jackson, brown seal and serials L86654132A, and HAWAII on both margins; back with the White House and HAWAII in hollow letters. Series 1934A, San Francisco, numbered in 1944. Circulated, unslabbed.',
+    },
+    description: {
+      es: 'El 20 dólares Federal Reserve Note serie 1934 A con sobreimpresión HAWAII (Friedberg 2305; Numista N#202426) es papel de emergencia del Tesoro para el Territorio de Hawái y las operaciones del Pacífico, no un certificado de plata: los de 5, 10 y 20 dólares de esa emisión son FRN; el 1 dólar HAWAII es certificado de plata. La A de la serie importa: el anverso imprime SERIES OF 1934 A y lo distingue del Fr. 2304 de 1934 sin letra. Distrito L / 12, Federal Reserve Bank of San Francisco. Sello y seriales marrones; sello negro del banco; firmas de William Alexander Julian y Henry Morgenthau Jr. El anverso, en negro sobre papel crema, lleva el retrato de Andrew Jackson, el sello L a la izquierda y el sello circular marrón del Tesoro a la derecha. Los seriales marrones L86654132A se repiten (bloque L–A). HAWAII va en vertical, en negro macizo, en ambos márgenes. La letra de posición de pliego es H, arriba a la izquierda; la plancha de anverso es 47 —el letrero vecino queda en parte tapado por el HAWAII de la derecha—. El reverso, en verde, muestra la Casa Blanca, el pie WHITE HOUSE y HAWAII en letras huecas que cruzan el campo. La plancha de reverso 382 queda abajo a la derecha. Esa 382, con la serie 1934 A, corresponde a la variedad ordinaria no mula; no es la de plancha 204. No es un reemplazo con estrella: el serial termina en A. No es el 1 dólar HAWAII serie 1935 A, serial S40499058C, ni un FRN de sello verde ordinario. Se presenta en funda transparente, sin etiqueta de grado. El canje no se aplica: son curso legal a la par.',
+      en: 'The Series 1934A $20 Federal Reserve Note with the HAWAII overprint (Friedberg 2305; Numista N#202426) is Treasury emergency paper for the Territory of Hawaii and Pacific operations, not a silver certificate: the $5, $10, and $20 of that issue are FRNs; the HAWAII $1 is a silver certificate. The series letter matters: the face prints SERIES OF 1934 A and sets it apart from Fr. 2304, Series 1934 without a letter. District L / 12, Federal Reserve Bank of San Francisco. Brown Treasury seal and serials; black bank seal; signatures of William Alexander Julian and Henry Morgenthau Jr. The black face on cream paper carries Andrew Jackson, the L seal at left, and the brown circular Treasury seal at right. Brown serials L86654132A repeat (L–A block). Solid black vertical HAWAII overprints flank the design. The face sheet-position letter is H at upper left; the face plate is 47 — neighboring lettering is partly covered by the right-hand HAWAII. The green back shows the White House, the caption WHITE HOUSE, and HAWAII in hollow letters across the field. Back plate 382 sits toward the lower right. That 382, with Series 1934A, is the regular non-mule variety; it is not the back-plate-204 variety. It is not a star replacement: the serial ends in A. It is not the Series 1935A HAWAII $1, serial S40499058C, nor an ordinary green-seal FRN. It is shown in a transparent sleeve, with no grading label. The notes remain legal tender at face value.',
+    },
+    history: [
+      {
+        es: 'Tras Pearl Harbor, el Tesoro marcó el dólar del Territorio de Hawái —y el que sirvió en campañas del Pacífico— para poder invalidar existencias capturadas si Japón tomaba el archipiélago. La moneda HAWAII se introdujo el 25 de junio de 1942: sello y seriales marrones y la palabra HAWAII en anverso y reverso. La serie impresa 1934 A nombra el tipo, no el año de numeración de este ejemplar: el tramo L85536001A–L90036000A se numeró en 1944. Las restricciones de emergencia se levantaron el 21 de octubre de 1944; a partir de entonces el papel ordinario y el HAWAII pudieron circular juntos en las zonas designadas. Esa fecha cierra el régimen restrictivo, no una desmonetización. El retiro oficial empezó en abril de 1946.',
+        en: 'After Pearl Harbor the Treasury marked Territory of Hawaii dollars — and notes used in Pacific campaigns — so captured stocks could be invalidated if Japan took the islands. HAWAII currency was introduced on 25 June 1942: brown seals and serials and the word HAWAII on face and back. Printed Series 1934A names the type, not the numbering year of this specimen: the run L85536001A–L90036000A was serial-numbered in 1944. The emergency restrictions were lifted on 21 October 1944; after that, ordinary U.S. currency and HAWAII notes could circulate together in the designated areas. That date ends the restrictive arrangement, not a demonetization. Official withdrawal began in April 1946.',
+      },
+      {
+        es: 'El marco de esas emisiones de emergencia —Hawái, el sello amarillo, la AMC, Bernhard— se recorre en la vitrina de billetes de emergencia de la Segunda Guerra Mundial, en Notafilia. Esta ficha es el ejemplar documentado de Fr. 2305: serial L86654132A, no una ilustración de tipo.',
+        en: 'The frame for those emergency issues — Hawaii, the yellow seal, AMC, Bernhard — is on the World War II emergency-banknotes case, under Notaphily. This page is the documented Fr. 2305 example: serial L86654132A, not a type illustration.',
+      },
+    ],
+    historyHeading: {
+      es: 'La sobreimpresión HAWAII',
+      en: 'The HAWAII overprint',
+    },
+    frontCaption: {
+      es: 'Anverso del 20 dólares HAWAII serie 1934 A, serial L86654132A: Jackson, sello marrón, HAWAII en los márgenes, distrito L / 12 y plancha 47, en funda.',
+      en: 'Face of the Series 1934A HAWAII $20, serial L86654132A: Jackson, the brown seal, HAWAII in the margins, district L / 12, and face plate 47, in a sleeve.',
+    },
+    backCaption: {
+      es: 'Reverso del 20 dólares HAWAII, serial L86654132A: Casa Blanca, HAWAII en letras huecas y plancha de reverso 382.',
+      en: 'Back of the HAWAII $20, serial L86654132A: the White House, HAWAII in hollow letters, and back plate 382.',
+    },
+    scarcity: {
+      es: 'Fr. 2305 es el 20 dólares HAWAII serie 1934 A, más escaso que el 1 dólar Fr. 2300. Huntoon no separa un total solo para Fr. 2305: el tramo de este serial es de 4.500.000 piezas mixtas 1934/1934 A, y las ocho tiradas ordinarias del 20 dólares suman 11.246.000 sin estrella. Las claves del tipo son el estado del papel, la nitidez de la sobreimpresión, las mulas de plancha y los reemplazos con estrella. Esta pieza no es mula ni estrella. Esta ficha no republica precios.',
+      en: 'Fr. 2305 is the Series 1934A HAWAII $20, scarcer than the $1 Fr. 2300. Huntoon does not give a Fr. 2305-only total: this serial’s run is 4,500,000 mixed 1934/1934A notes, and the eight regular $20 runs total 11,246,000 non-star notes. The keys of the type are paper quality, the sharpness of the overprint, plate mules, and star replacements. This piece is neither a mule nor a star. This record does not republish prices.',
+    },
+    population: {
+      es: 'Las fotografías muestran un ejemplar circulado, con pliegues horizontales y verticales, tono de papel, manchas dispersas y desgaste en las esquinas. No hay etiqueta de grado. No se cita un censo de población ni se afirma limpieza o reparación.',
+      en: 'The photographs show a circulated specimen, with horizontal and vertical folds, paper toning, scattered stains, and corner wear. No grading label is present. No population census is quoted, and no claim is made about cleaning or repairs.',
+    },
+    grade: {
+      es: 'Circulada; pliegues visibles, tono y suciedad ligera. Sin encapsular.',
+      en: 'Circulated; visible folds, toning, and light soiling. Ungraded.',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note202426.html',
+        es: 'Numista N#202426 — 20 Dollars (Federal Reserve Note; Brown Seal — Hawaii)',
+        en: 'Numista N#202426 — 20 Dollars (Federal Reserve Note; Brown Seal — Hawaii)',
+        note: {
+          es: 'Fr. 2305; firmas Julian–Morgenthau; formato publicado de unos 155 × 66 mm. Distrito L / 12.',
+          en: 'Fr. 2305; Julian–Morgenthau signatures; published format about 155 × 66 mm. District L / 12.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/spmc-pm-articles',
+        es: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, mayo–junio de 2008)',
+        en: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, May–June 2008)',
+        note: {
+          es: 'Tabla 1a: L85536001A–L90036000A, 4.500.000; numeración en 1944; series 1934 y 1934 A en el mismo tramo.',
+          en: 'Table 1a: L85536001A–L90036000A, 4,500,000; numbered in 1944; Series 1934 and 1934A in the same run.',
+        },
+      },
+      {
+        href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
+        es: 'Friedberg / Berman — Emergency Notes (tirada del 20 dólares HAWAII)',
+        en: 'Friedberg / Berman — Emergency Notes (HAWAII $20 printage)',
+        note: {
+          es: '11.246.000 ordinarios para el 20 dólares HAWAII, series 1934 y 1934 A juntas; cifra de tipo, no de este serial.',
+          en: '11,246,000 regular $20 HAWAII notes, Series 1934 and 1934A combined; a type figure, not this serial.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'BEP como impresor; programa de moneda especial de guerra.',
+          en: 'BEP as printer; wartime special-currency program.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-dolar-serie-2003-atlanta',
     chapterId: 'us-frb',
     path: '/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
@@ -2406,7 +3680,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Rosario Marin (Treasurer) and John W. Snow (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP, Fort Worth (FW). USPaperMoney.Info sitúa F05033622★ en la tirada de reemplazo de agosto de 2005, F03200001★–F06400000★ (3.200.000 notas). Friedberg cifra Fr. 1929-F* en 3.200.000.',
+      es: 'BEP, Fort Worth (FW). USPaperMoney.Info sitúa F05033622★ en la tirada de reemplazo de agosto de 2005, F03200001★–F06400000★ (3.200.000 billetes). Friedberg cifra Fr. 1929-F* en 3.200.000.',
       en: 'BEP, Fort Worth (FW). USPaperMoney.Info places F05033622★ in the August 2005 replacement run, F03200001★–F06400000★ (3,200,000 notes). Friedberg lists Fr. 1929-F* at 3,200,000.',
     },
     images: {
@@ -2441,7 +3715,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 2003 $1: both faces of the Great Seal and ONE DOLLAR. Plate 88.',
     },
     scarcity: {
-      es: 'La serie 2003 del 1 dólar —firmas Marin–Snow, impresa de julio de 2003 a octubre de 2005— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-515a. Atlanta tuvo 1.075.200.000 notas ordinarias y 3.520.000 estrellas en dos tiradas. La primera, de julio de 2003 en Washington (Fr. 1928-F*, F00000001★–F00320000★, 320.000 notas), es la escasa. Esta pieza cae en la segunda: Fort Worth, agosto de 2005, Fr. 1929-F*, F03200001★–F06400000★, 3.200.000 notas. El tipo con estrella es un reemplazo; esta tirada FW es la común del distrito.',
+      es: 'La serie 2003 del 1 dólar —firmas Marin–Snow, impresa de julio de 2003 a octubre de 2005— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-515a. Atlanta tuvo 1.075.200.000 billetes ordinarios y 3.520.000 estrellas en dos tiradas. La primera, de julio de 2003 en Washington (Fr. 1928-F*, F00000001★–F00320000★, 320.000 billetes), es la escasa. Esta pieza cae en la segunda: Fort Worth, agosto de 2005, Fr. 1929-F*, F03200001★–F06400000★, 3.200.000 billetes. El tipo con estrella es un reemplazo; esta tirada FW es la común del distrito.',
       en: 'Series 2003 $1 notes — Marin–Snow signatures, printed from July 2003 through October 2005 — were everyday Reserve paper. The Bank Note Museum numbers the type P-515a. Atlanta had 1,075,200,000 regular notes and 3,520,000 stars in two runs. The first, July 2003 in Washington (Fr. 1928-F*, F00000001★–F00320000★, 320,000 notes), is the scarce one. This piece falls in the second: Fort Worth, August 2005, Fr. 1929-F*, F03200001★–F06400000★, 3,200,000 notes. A star marks a replacement; this FW run is the common Atlanta star of the series.',
     },
     population: {
@@ -2487,6 +3761,517 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Washington en el 1 dólar desde 1869; ambas caras del Gran Sello en el reverso desde 1935.',
           en: 'Washington on the $1 since 1869; both faces of the Great Seal on the back since 1935.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-dolares-serie-2003-san-luis',
+    chapterId: 'us-frb',
+    path: '/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/',
+    pathEn: '/collection/united-states/2-dollars-series-2003-st-louis/',
+    pick: 'P#516 · Fr. 1937-H*',
+    serial: 'H00010418★',
+    serial_display: 'H 00010418 ★',
+    cert_number: '2458373-047',
+    cert_grader: 'PMG',
+    signatures: {
+      es: 'Rosario Marin (tesorera) y John W. Snow (secretario del Tesoro)',
+      en: 'Rosario Marin (Treasurer) and John W. Snow (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'BEP, Fort Worth (FW). Marcas de plancha D3 (arriba a la izquierda) y FW D 1 (abajo a la derecha); la etiqueta PMG imprime posición de plancha D. Emisión de coleccionista de la serie 2003, no la tirada de circulación de Minneapolis. El contador 00010418 queda por debajo de 16000.',
+      en: 'BEP, Fort Worth (FW). Plate marks D3 (upper left) and FW D 1 (lower right); the PMG label prints plate position D. A Series 2003 collector printing, not the Minneapolis circulation run. Counter 00010418 falls under 16000.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg',
+      front: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg',
+      back: '/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg',
+      width: 1024,
+      height: 682,
+    },
+    title: {
+      es: '2 dólares · Serie 2003 · San Luis ★',
+      en: '$2 · Series 2003 · St. Louis ★',
+    },
+    kicker: {
+      es: 'Estados Unidos · Federal Reserve Note',
+      en: 'United States · Federal Reserve Note',
+    },
+    lead: {
+      es: 'Anverso encapsulado con Jefferson, sello de San Luis (H / 8) y serial de reemplazo H 00010418 ★; reverso con la Declaración de Independencia de Trumbull. PMG 64 EPQ, certificado 2458373-047.',
+      en: 'Slabbed face with Jefferson, the St. Louis seal (H / 8), and replacement serial H 00010418 ★; back with Trumbull’s Declaration of Independence. PMG 64 EPQ, certificate 2458373-047.',
+    },
+    description: {
+      es: 'El 2 dólares de la serie 2003 (Pick 516, Friedberg 1937-H*) es un Federal Reserve Note de tamaño pequeño del distrito de San Luis: sello negro con la H, el 8 en las cuatro esquinas interiores, y el banco «FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI». El anverso, en negro con sello y seriales verdes, lleva el retrato de Thomas Jefferson y, a la derecha, el sello del Tesoro sobre TWO. Las firmas son las de Rosario Marin y John W. Snow; la serie impresa, 2003, queda junto al secretario. Los seriales verdes H00010418★ se repiten abajo a la izquierda y arriba a la derecha (bloque H★). Las marcas de plancha son D3 arriba a la izquierda y FW D 1 abajo a la derecha: el prefijo FW identifica la planta de Fort Worth. El reverso, en verde, reproduce la Declaración de Independencia de John Trumbull, con IN GOD WE TRUST bajo la escena. Esta pieza de la colección está encapsulada por PMG como Choice Uncirculated 64 EPQ; el certificado 2458373-047 identifica el serial H00010418*, Fr. 1937-H*, firmas Marin | Snow | FW, posición de plancha D y el pedigrí «Rickey Collection» impreso en la etiqueta. No es un 2 dólares ordinario del distrito H ni la estrella de circulación de Minneapolis.',
+      en: 'The Series 2003 $2 (Pick 516, Friedberg 1937-H*) is a small-size Federal Reserve Note of the St. Louis district: a black seal with H, 8s in the four inner corners, and the bank legend “FEDERAL RESERVE BANK OF ST. LOUIS MISSOURI.” The black face with green seal and serials carries Thomas Jefferson and, at right, the Treasury seal over TWO. The signatures are Rosario Marin and John W. Snow; the printed series, 2003, sits beside the Secretary. Green serials H00010418★ repeat at lower left and upper right (H★ block). Plate marks are D3 at upper left and FW D 1 at lower right: the FW prefix identifies the Fort Worth plant. The green back reproduces John Trumbull’s Declaration of Independence, with IN GOD WE TRUST under the scene. This collection piece is slabbed by PMG as Choice Uncirculated 64 EPQ; certificate 2458373-047 records serial H00010418*, Fr. 1937-H*, Marin | Snow | FW signatures, plate position D, and the pedigree “Rickey Collection” printed on the label. It is neither an ordinary district-H $2 nor the Minneapolis circulation star.',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado del 2 dólares, serie 2003, distrito de San Luis, serial H 00010418 ★: Jefferson, sello verde del Tesoro y etiqueta PMG 64 EPQ.',
+      en: 'Slabbed face of the Series 2003 $2, St. Louis district, serial H 00010418 ★: Jefferson, the green Treasury seal, and the PMG 64 EPQ label.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado del 2 dólares, serie 2003, certificado PMG 2458373-047: Declaración de Independencia de Trumbull y Exceptional Paper Quality.',
+      en: 'Slabbed back of the Series 2003 $2, PMG certificate 2458373-047: Trumbull’s Declaration of Independence and Exceptional Paper Quality.',
+    },
+    scarcity: {
+      es: 'La serie 2003 del 2 dólares —firmas Marin–Snow, impresa en Fort Worth— no es el papel cotidiano de los doce distritos. USPaperMoney.Info registra la circulación ordinaria solo en Minneapolis (I): 121.600.000 billetes y 3.840.000 estrellas en dos tiradas, y anota que el BEP imprimió además unas estrellas para venta a coleccionistas. Numismatic News (archivo) describe la venta del BEP de estrellas de los doce distritos, con seriales por debajo de 16000, a 9,95 dólares cada una; el juego de doce con seriales coincidentes ya se había agotado. Una recopilación de productos del BEP, que cita a Daniel Wishnatsky en Paper Money Values (noviembre–diciembre de 2008), sitúa 2.000 juegos premium —seriales 00000001* a 00002100*— y los billetes sueltos en 0002101* a 00016000*, hasta 16.000 por distrito. Esta ficha no trata esas cifras como una tabla oficial del BEP. El serial H00010418★ cae en la banda de las sueltas, no en los primeros números del juego coincidente. No es la estrella de circulación de Minneapolis ni un 2 dólares ordinario del distrito H.',
+      en: 'Series 2003 $2 notes — Marin–Snow signatures, printed at Fort Worth — were not everyday paper from all twelve districts. USPaperMoney.Info records ordinary circulation only at Minneapolis (I): 121,600,000 notes and 3,840,000 stars in two runs, and notes that the BEP also printed some stars for collector sales. A Numismatic News archive report describes the BEP sale of stars from all twelve districts, with serials under 16000, at $9.95 each; the twelve-note matching-serial set had already sold out. A compilation of BEP products, citing Daniel Wishnatsky in Paper Money Values (November–December 2008), places 2,000 premium sets — serials 00000001* through 00002100* — and individual notes from 0002101* to 00016000*, up to 16,000 per district. This record does not treat those figures as an official BEP table. Serial H00010418★ falls in the individual-sale band, not in the first numbers of the matched set. It is neither the Minneapolis circulation star nor an ordinary district-H $2.',
+    },
+    population: {
+      es: 'PMG publica informes de población de Federal Reserve Notes, pero el recuento concreto de Fr. 1937-H* en 64 EPQ no se ha verificado aquí de forma independiente. Se documenta el certificado 2458373-047 y el grado impreso en el encapsulado, no un censo.',
+      en: 'PMG publishes population reports for Federal Reserve Notes, but the specific Fr. 1937-H* grade-64 EPQ headcount has not been independently verified here. This page records certificate 2458373-047 and the grade printed on the holder, not a census total.',
+    },
+    grade: {
+      es: 'PMG 64 EPQ · certificado 2458373-047',
+      en: 'PMG 64 EPQ · certificate 2458373-047',
+    },
+    sources: [
+      {
+        href: 'http://www.uspapermoney.info/serials/f2003_b.html',
+        es: 'USPaperMoney.Info — Series 2003 $2',
+        en: 'USPaperMoney.Info — Series 2003 $2',
+        note: {
+          es: 'Circulación ordinaria solo en Minneapolis; el texto añade estrellas para venta a coleccionistas, sin tabla por distrito.',
+          en: 'Ordinary circulation only at Minneapolis; the text adds stars for collector sales, without a district table.',
+        },
+      },
+      {
+        href: 'https://www.numismaticnews.net/archive/2-star-note-packages-new-from-bep',
+        es: 'Numismatic News — paquetes de estrellas de 2 dólares del BEP',
+        en: 'Numismatic News — $2 star note packages from the BEP',
+        note: {
+          es: 'Estrellas de los doce distritos, seriales por debajo de 16000, a 9,95 dólares cada una; el juego coincidente ya agotado.',
+          en: 'Stars from all twelve districts, serials under 16000, at $9.95 each; the matching set already sold out.',
+        },
+      },
+      {
+        href: 'http://bepcollectiblecurrency.blogspot.com/2010/09/2-federal-reserve-set.html',
+        es: 'BEP Collectible Currency — $2 Federal Reserve Set',
+        en: 'BEP Collectible Currency — $2 Federal Reserve Set',
+        note: {
+          es: 'Cita a Wishnatsky, Paper Money Values, noviembre–diciembre de 2008: 2.000 juegos y sueltas hasta 00016000*. No es una tabla del BEP.',
+          en: 'Cites Wishnatsky, Paper Money Values, November–December 2008: 2,000 sets and individuals through 00016000*. Not a BEP table.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/2',
+        es: 'U.S. Currency Education Program — 2 dólares',
+        en: 'U.S. Currency Education Program — $2 note',
+        note: {
+          es: 'Jefferson en el anverso; la Declaración de Independencia de Trumbull en el reverso desde 1976.',
+          en: 'Jefferson on the face; Trumbull’s Declaration of Independence on the back since 1976.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/verify',
+        es: 'PMG — Verificación de certificado 2458373-047',
+        en: 'PMG — Certificate verification 2458373-047',
+        note: {
+          es: 'El encapsulado imprime Fr. 1937-H*, serial H00010418*, firmas Marin | Snow | FW, Choice Uncirculated 64 EPQ, posición de plancha D y el pedigrí Rickey Collection.',
+          en: 'The holder prints Fr. 1937-H*, serial H00010418*, Marin | Snow | FW signatures, Choice Uncirculated 64 EPQ, plate position D, and the Rickey Collection pedigree.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-dolares-serie-1917',
+    chapterId: 'us-notes',
+    path: '/coleccion/estados-unidos/2-dolares-serie-1917/',
+    pathEn: '/collection/united-states/2-dollars-series-1917/',
+    pick: 'P#188(4) · Fr. 60',
+    serial: 'B50400302A',
+    signatures: {
+      es: 'Harley V. Speelman (registrador del Tesoro) y Frank White (tesorero de los Estados Unidos)',
+      en: 'Harley V. Speelman (Register of the Treasury) and Frank White (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Bureau of Engraving and Printing. Serie impresa 1917, al amparo de la ley del 3 de marzo de 1863. Letra de plancha B. USPaperMoney.Info sitúa el serial B50400302A (bloque BA) en el tramo mixto Elliott-White / Speelman-White B44800001A–B56688000A; el tramo regular solo Speelman-White empieza en B56688001A. Las firmas impresas son Speelman–White (Fr. 60; P#188(4)). Esta ficha no inventa una tirada para Fr. 60 ni para este serial.',
+      en: 'Bureau of Engraving and Printing. Printed Series 1917, under the act of 3 March 1863. Plate letter B. USPaperMoney.Info places serial B50400302A (BA block) in the mixed Elliott-White / Speelman-White band B44800001A–B56688000A; the Speelman-White-only regular range begins at B56688001A. The printed signatures are Speelman–White (Fr. 60; P#188(4)). This record does not invent a printage for Fr. 60 or for this serial.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-composite.jpg',
+      front: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-front.jpg',
+      back: '/images/catalog/estados-unidos/usn-1917-2-b50400302a-back.jpg',
+      width: 1800,
+      height: 817,
+    },
+    title: {
+      es: '2 dólares · United States Note · Serie 1917',
+      en: '$2 · United States Note · Series 1917',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Note',
+      en: 'United States · United States Note',
+    },
+    lead: {
+      es: 'Anverso de tamaño grande con Jefferson, el Capitolio y sello rojo del Tesoro; reverso Bracelet. Serie 1917, Fr. 60, serial B50400302A, firmas Speelman–White.',
+      en: 'Large-size face with Jefferson, the Capitol, and a red Treasury seal; Bracelet reverse. Series 1917, Fr. 60, serial B50400302A, Speelman–White signatures.',
+    },
+    description: {
+      es: 'El 2 dólares de la serie 1917 (Pick 188(4), Friedberg 60) es un United States Note —también Legal Tender Note o greenback— de tamaño grande. El anverso, en negro con sello y seriales rojos, lleva a la izquierda el retrato de Thomas Jefferson en óvalo, rotulado JEFFERSON, y en el centro el grabado del Capitolio. El arco superior dice THIS NOTE IS A LEGAL TENDER FOR TWO DOLLARS; bajo él, SERIES OF 1917 y el pie «ENGRAVED AND PRINTED AT THE BUREAU OF ENGRAVING & PRINTING». El título en blackletter, United States, introduce la promesa Will pay to bearer TWO DOLLARS. A la derecha, un medallón con el 2 y el sello rojo festoneado del Tesoro sobre WASHINGTON, D.C. El borde izquierdo cita el ACT OF MARCH 3RD 1863. Las firmas son las de Harley V. Speelman (Register of the Treasury) y Frank White (Treasurer of the United States). Los seriales rojos B50400302A se repiten abajo a la izquierda y arriba a la derecha (bloque BA); la letra de plancha B figura junto al retrato y junto al 2. El recuadro inferior lee UNITED STATES NOTE. El reverso, en verde, es el que los coleccionistas llaman Bracelet: escudos circulares entrelazados alrededor del 2 central, UNITED STATES OF AMERICA, y TWO arriba y abajo, con la cláusula de curso legal y la pena por falsificación en el cuerpo de la orla. Los coleccionistas llaman horse blankets a estos billetes de formato grande, anteriores al recorte de 1929. Esta pieza de la colección, circulada y sin encapsular, se presenta fotografiada a ambas caras.',
+      en: 'The Series 1917 $2 (Pick 188(4), Friedberg 60) is a large-size United States Note — also a Legal Tender Note, or greenback. The black face with a red seal and serials carries Thomas Jefferson’s portrait in an oval at left, lettered JEFFERSON, and an engraving of the Capitol at center. The upper arc reads THIS NOTE IS A LEGAL TENDER FOR TWO DOLLARS; below it, SERIES OF 1917 and the imprint “ENGRAVED AND PRINTED AT THE BUREAU OF ENGRAVING & PRINTING.” The blackletter title United States introduces the promise Will pay to bearer TWO DOLLARS. At right a medallion with the figure 2 and the scalloped red Treasury seal sit over WASHINGTON, D.C. The left border cites the ACT OF MARCH 3RD 1863. The signatures are Harley V. Speelman’s (Register of the Treasury) and Frank White’s (Treasurer of the United States). Red serials B50400302A repeat at lower left and upper right (BA block); plate letter B sits beside the portrait and beside the 2. The lower tablet reads UNITED STATES NOTE. The green back is the type collectors call Bracelet: interlocking circular shields around the central 2, UNITED STATES OF AMERICA, and TWO above and below, with the legal-tender clause and the counterfeiting penalty in the scrollwork. Collectors call these large-format notes horse blankets, the size in use before the 1929 reduction. This collection piece, circulated and unslabbed, is shown on both faces.',
+    },
+    history: [
+      {
+        es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes como curso legal para deudas públicas y privadas. Sustituyeron a los Demand Notes de 1861; el apodo greenback nació en aquellos reversos verdes y pasó a esta clase. El sello y los seriales rojos distinguen el tipo. El BEP los grabó a partir de la serie 1869. La última entrega al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Siguen siendo redimibles a la par. El U.S. Currency Education Program y las FAQs del BEP sitúan esa línea.',
+        en: 'The act of 25 February 1862 authorized United States Notes as legal tender for public and private debts. They replaced the Demand Notes of 1861; the nickname “greenback” was born on those green backs and traveled with this class. A red seal and red serials mark the type. The BEP engraved them from Series 1869. The last delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face. The U.S. Currency Education Program and the BEP FAQs place that line.',
+      },
+      {
+        es: 'La serie 1917 del 2 dólares es el Legal Tender de tamaño grande con Jefferson y el Capitolio: Fr. 57 Teehee–Burke, Fr. 58 Elliott–Burke, Fr. 59 Elliott–White y Fr. 60 Speelman–White, que Numista numera P#188(1) a P#188(4). El año impreso es el de la serie, no el de cada pliego: Speelman y White coincidieron en el cargo en los años 1920, de modo que Fr. 60 se imprimió después de 1917. El reverso Bracelet da nombre al tipo. En 1929 el BEP recortó el formato cerca de un 30 % —de unos 7,375 × 3,125 pulgadas a 6,14 × 2,61—; Numista da 189 × 80 mm para este 2 dólares. El United States Note de 2 dólares de tamaño pequeño corrió hasta 1966; el FRN de 2 dólares con el reverso de Trumbull volvió en 1976.',
+        en: 'The Series 1917 $2 is the large-size Legal Tender with Jefferson and the Capitol: Fr. 57 Teehee–Burke, Fr. 58 Elliott–Burke, Fr. 59 Elliott–White, and Fr. 60 Speelman–White, which Numista numbers P#188(1) through P#188(4). The printed year is the series, not each sheet’s press date: Speelman and White overlapped in office in the 1920s, so Fr. 60 was printed after 1917. The Bracelet reverse names the type. In 1929 the BEP cut the format by about 30 percent — from about 7.375 × 3.125 inches to 6.14 × 2.61; Numista gives 189 × 80 mm for this $2. The small-size United States Note $2 ran through 1966; the FRN $2 with the Trumbull reverse returned in 1976.',
+      },
+    ],
+    historyHeading: {
+      es: 'El 2 dólares de tamaño grande',
+      en: 'The large-size $2',
+    },
+    frontCaption: {
+      es: 'Anverso del 2 dólares United States Note, serie 1917, Fr. 60, serial B50400302A: Jefferson, el Capitolio y sello rojo festoneado.',
+      en: 'Face of the Series 1917 United States Note $2, Fr. 60, serial B50400302A: Jefferson, the Capitol, and the scalloped red seal.',
+    },
+    backCaption: {
+      es: 'Reverso Bracelet del 2 dólares, serie 1917, serial B50400302A: escudos circulares entrelazados alrededor del 2.',
+      en: 'Bracelet reverse of the Series 1917 $2, serial B50400302A: interlocking circular shields around the figure 2.',
+    },
+    scarcity: {
+      es: 'El 2 dólares de 1917 es un tipo de tamaño grande accesible. Speelman–White (Fr. 60; P#188(4)) es la combinación de firmas más frecuente: Numista registra que el 85 % de los socios que poseen el tipo N#212833 tienen esa variedad, una medida de presencia en colecciones, no de existencias en subasta. USPaperMoney.Info le asigna los bloques regulares más largos de la serie. Como denominación de trabajo, los ejemplares muy circulados, doblados o manchados son frecuentes; los bien centrados, con papel claro, sobrecarga roja viva y márgenes sanos —en la práctica, Very Fine o mejor— son más escasos. Los coleccionistas avanzados buscan mules Speelman–White: planchas de anverso y reverso de tamaño desigual, en esta serie con los números 59 y 60. Esta ficha no identifica el serial B50400302A como mule y no inventa un censo ni un premio de mercado.',
+      en: 'The 1917 $2 is an accessible large-size type. Speelman–White (Fr. 60; P#188(4)) is the most common signature pairing: Numista records that 85 percent of members who own type N#212833 have that variety, a measure of presence in collections, not of auction supply. USPaperMoney.Info assigns it the longest regular blocks in the series. As a working denomination, heavily circulated, creased, or stained notes are plentiful; well-centered examples with bright paper, vivid red overprints, and sound margins — in practice, Very Fine or better — are scarcer. Advanced collectors look for Speelman–White mules: mismatched face and back plate sizes, in this series involving plate numbers 59 and 60. This record does not identify serial B50400302A as a mule and does not invent a census or a market premium.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial B50400302A. La pieza se presenta sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial B50400302A has not been independently verified. The note is shown unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.uspapermoney.info/serials/u1917_b.html',
+        es: 'USPaperMoney.Info — Series 1917 $2 USN',
+        en: 'USPaperMoney.Info — Series 1917 $2 USN',
+        note: {
+          es: 'Jefferson a la izquierda, Capitolio al centro, reverso Bracelet. Tramos de serial por firmas, incluido el mixto EW/SW B44800001A–B56688000A y Speelman-White desde B56688001A.',
+          en: 'Jefferson at left, Capitol at center, Bracelet back. Serial ranges by signature, including mixed EW/SW B44800001A–B56688000A and Speelman-White from B56688001A.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/212833',
+        es: 'Numista — 2 dólares United States Note (N#212833)',
+        en: 'Numista — 2 Dollars, United States Note (N#212833)',
+        note: {
+          es: 'Fr. 60 y P#188(4) para Speelman–White; sello rojo pequeño a la derecha; 189 × 80 mm. Frecuencia 85 % entre socios que poseen el tipo. No se republican columnas de precio.',
+          en: 'Fr. 60 and P#188(4) for Speelman–White; small red seal at right; 189 × 80 mm. Frequency 85 percent among members who own the type. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-USNOTES/USA0188.htm',
+        es: 'Bank Note Museum — P-188, United States Note de 2 dólares, serie 1917',
+        en: 'Bank Note Museum — P-188, Series 1917 $2 United States Note',
+        note: {
+          es: 'United States Note de sello rojo; Jefferson y el Capitolio; 188(4) firmas Speelman y White.',
+          en: 'Red-seal United States Note; Jefferson and the Capitol; 188(4) Speelman and White signatures.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/denominations/2',
+        es: 'U.S. Currency Education Program — 2 dólares',
+        en: 'U.S. Currency Education Program — $2 note',
+        note: {
+          es: 'Jefferson en el anverso del 2 dólares; el FRN con el reverso de Trumbull desde 1976, después del United States Note.',
+          en: 'Jefferson on the $2 face; the FRN with the Trumbull reverse from 1976, after the United States Note.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/faqs',
+        es: 'Bureau of Engraving and Printing — FAQs',
+        en: 'Bureau of Engraving and Printing — FAQs',
+        note: {
+          es: 'United States Notes: primer papel nacional (1862); última puesta en circulación el 21 de enero de 1971.',
+          en: 'United States Notes: first national paper (1862); last placed in circulation 21 January 1971.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1839454',
+        es: 'National Museum of American History — 2 dólares, Legal Tender Note, 1917',
+        en: 'National Museum of American History — $2 Legal Tender Note, 1917',
+        note: {
+          es: 'Ley del 3 de marzo de 1863; serie 1917; Jefferson; cláusula de curso legal y pena por falsificación en el reverso.',
+          en: 'Act of 3 March 1863; Series 1917; Jefferson; legal-tender clause and counterfeiting penalty on the back.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/United_States_two-dollar_bill',
+        es: 'Wikipedia — United States two-dollar bill',
+        en: 'Wikipedia — United States two-dollar bill',
+        note: {
+          es: 'United States Note de 2 dólares hasta 1966; FRN desde 1976 con el reverso de Trumbull.',
+          en: 'United States Note $2 through 1966; FRN from 1976 with the Trumbull reverse.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-certificado-plata-1928a',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
+    pathEn: '/collection/united-states/1-dollar-silver-certificate-1928a/',
+    pick: 'P#412a · Fr. 1601',
+    serial: 'D00508932B',
+    signatures: {
+      es: 'W. O. Woods (tesorero de los Estados Unidos) y A. W. Mellon (secretario del Tesoro)',
+      en: 'W. O. Woods (Treasurer of the United States) and A. W. Mellon (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1928 A, impresa como SERIES OF 1928 A. Bureau of Engraving and Printing, Washington, D.C. La designación de serie no prueba que este ejemplar se imprimiera en el año calendario 1928. Jeremy Dansie (Mint Master, abril de 2024; Paper Money Project) da una producción estimada de la serie 1928 A de 2.267.809.500 ejemplares —unos 2.268 mil millones—; no es un total auditado del BEP. En la numeración ordinaria, los extremos publicados son D93825125A y J55439218B: son el bajo y el alto observados, no el primer ni el último billete impreso, y excluyen estrellas y bloques experimentales. El serial D00508932B cae en el bloque D–B (D00000001B–D99999999B). Ese bloque lo compartieron las series 1928 A, 1928 B, 1928 C y 1928 D: los pliegos se mezclaron antes de recibir serial, así que no se puede contar el bloque entero como tirada de 1928 A. La tabla del bloque cita para la porción 1928 A menos de 100 millones, sin desglose exacto. Esta ficha no confirma el primer ni el último serial de 1928 A realmente producidos. El formato de tipo es el de tamaño pequeño (unos 156 × 66 mm); no es una medición de esta pieza.',
+      en: 'Series 1928A, printed as SERIES OF 1928 A. Bureau of Engraving and Printing, Washington, D.C. The series designation does not prove that this specimen was printed in calendar year 1928. Jeremy Dansie (Mint Master, April 2024; Paper Money Project) estimates Series 1928A production at 2,267,809,500 notes — about 2.268 billion — and labels the figure as estimated production, not an audited BEP total. In the regular numbering sequence the published extremes are D93825125A and J55439218B: reported low and high observations, not the first or last notes printed, and they exclude stars and experimental blocks. Serial D00508932B falls in the D–B block (D00000001B–D99999999B). That block was shared by Series 1928A, 1928B, 1928C, and 1928D: sheets were mixed before they received serials, so the whole block cannot be counted as 1928A printage. The block table lists the 1928A portion as fewer than 100 million, without an exact breakdown. This record does not confirm the first or last Series 1928A serials actually produced. The type format is small size (about 156 × 66 mm); that is not a measurement of this piece.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-composite.jpg',
+      front: '/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-front.jpg',
+      back: '/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-back.jpg',
+      width: 2048,
+      height: 682,
+    },
+    title: {
+      es: '1 dólar · Certificado de plata · Serie 1928 A',
+      en: '$1 · Silver Certificate · Series 1928A',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata',
+      en: 'United States · Silver Certificate',
+    },
+    lead: {
+      es: 'Anverso con Washington, sello azul del Tesoro a la izquierda y seriales azules D00508932B; reverso verde Funnyback con el ONE ornamental. Serie 1928 A.',
+      en: 'Face with Washington, a blue Treasury seal at left, and blue serials D00508932B; green Funnyback reverse with the ornamental ONE. Series 1928A.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata serie 1928 A (Pick 412a, Friedberg 1601) es un billete de tamaño pequeño del Tesoro de los Estados Unidos, no un Federal Reserve Note: sello y seriales azules, firmas de W. O. Woods y A. W. Mellon. El anverso, en negro, lleva el retrato de George Washington en óvalo, la leyenda SILVER CERTIFICATE en el arco superior y, a la izquierda, el sello circular azul del Tesoro. El texto certifica un depósito en el Tesoro y, abajo, la obligación «ONE SILVER DOLLAR / PAYABLE TO THE BEARER ON DEMAND». A la derecha, un ONE grabado de gran tamaño. La serie impresa, SERIES OF 1928 A, aparece a ambos lados del retrato. Los seriales azules D00508932B se repiten arriba a la derecha y abajo a la izquierda (bloque D–B). En los márgenes figuran la letra de posición L y el número de plancha de anverso 1740. El reverso, en verde, muestra un ONE ornamental cruzado por ONE DOLLAR, con THE UNITED STATES OF AMERICA en la cinta superior; no lleva el águila ni la pirámide del Gran Sello que aparecen desde 1935. El apodo Funnyback nombra ese dorso, no un error de impresión. El número de plancha de reverso 2544 queda impreso abajo a la derecha. El bloque D–B queda fuera de los rangos X–B, Y–B y Z–B documentados para los experimentos de papel de las series 1928A/1928B: se ficha como emisión ordinaria, no como variedad experimental. Dansie estima unos 2.267.809.500 ejemplares para toda la serie 1928 A; el D–B, de D00000001B a D99999999B, lo compartieron también 1928 B, 1928 C y 1928 D, de modo que el serial de esta pieza no permite inferir una tirada del bloque solo para 1928 A. El canje en plata de estos certificados terminó en 1968; siguen siendo curso legal a la par. Esta pieza de la colección se presenta en funda transparente, sin encapsular; no se asigna grado numérico ni garantía de originalidad del papel a partir de las fotografías. Los rastros débiles del serial en el reverso no bastan, por sí solos, para registrar un offset o una doble impresión. No es el 1 dólar certificado de plata serie 1957 B, serial S35513454A: lo distinguen la serie 1928 A, las firmas Woods–Mellon, este serial y el reverso Funnyback.',
+      en: 'The Series 1928A $1 Silver Certificate (Pick 412a, Friedberg 1601) is small-size Treasury paper, not a Federal Reserve Note: blue seal and serials, signatures of W. O. Woods and A. W. Mellon. The black face carries George Washington in an oval, the legend SILVER CERTIFICATE in the upper arc, and, at left, the blue circular Treasury seal. The text certifies a deposit in the Treasury and, at the bottom, the obligation “ONE SILVER DOLLAR / PAYABLE TO THE BEARER ON DEMAND.” At right is a large engraved ONE. The printed series, SERIES OF 1928 A, appears on both sides of the portrait. Blue serials D00508932B repeat at upper right and lower left (D–B block). The margins show plate-position letter L and face plate 1740. The green reverse shows an ornamental ONE crossed by ONE DOLLAR, with THE UNITED STATES OF AMERICA on the upper ribbon; it does not carry the eagle or pyramid of the Great Seal that appear from 1935. The nickname Funnyback names that back, not a printing error. Reverse plate 2544 is printed at lower right. The D–B block sits outside the X–B, Y–B, and Z–B ranges documented for the Series 1928A/1928B paper experiments: it is catalogued as a regular issue, not an experimental-paper variety. Dansie estimates about 2,267,809,500 notes for Series 1928A as a whole; D–B, from D00000001B to D99999999B, was also used by 1928B, 1928C, and 1928D, so this serial does not yield a 1928A-only block printage. Redemption of these certificates in silver ended in 1968; they remain legal tender at face value. This collection piece is shown in a clear sleeve, unslabbed; no numerical grade or paper-originality guarantee is assigned from the photographs. Faint serial traces on the reverse do not, by themselves, establish an offset or a double printing. It is not the Series 1957-B $1 Silver Certificate, serial S35513454A: Series 1928A, Woods–Mellon signatures, this serial, and the Funnyback reverse distinguish it.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar certificado de plata serie 1928 A, serial D00508932B: Washington, sello azul del Tesoro, posición L y plancha 1740.',
+      en: 'Face of the Series 1928A $1 Silver Certificate, serial D00508932B: Washington, the blue Treasury seal, position L, and plate 1740.',
+    },
+    backCaption: {
+      es: 'Reverso Funnyback del 1 dólar certificado de plata serie 1928 A: ONE ornamental cruzado por ONE DOLLAR. Plancha de reverso 2544.',
+      en: 'Funnyback reverse of the Series 1928A $1 Silver Certificate: ornamental ONE crossed by ONE DOLLAR. Reverse plate 2544.',
+    },
+    scarcity: {
+      es: 'Fr. 1601 (Pick 412a) es la combinación Woods–Mellon de la serie 1928 A, emisión ordinaria, no estrella. Dansie estima 2.267.809.500 ejemplares para la serie; no es un total auditado. El bloque D–B no es experimental, pero lo compartieron 1928 A–D: la tabla cita menos de 100 millones para la porción 1928 A, sin cifra exacta. Esta ficha no inventa una tirada solo para D–B ni el primer y el último serial impresos.',
+      en: 'Fr. 1601 (Pick 412a) is the Woods–Mellon Series 1928A combination, a regular issue, not a star note. Dansie estimates 2,267,809,500 notes for the series; that is not an audited total. The D–B block is not experimental, but 1928A–D shared it: the table cites fewer than 100 million for the 1928A portion, with no exact figure. This record does not invent a D–B-only printage or the first and last serials printed.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial D00508932B. La pieza se presenta en funda, sin encapsular.',
+      en: 'A PMG or PCGS census for serial D00508932B has not been independently verified. The note is shown in a sleeve, unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular; estado documentado en las fotografías (colección privada)',
+      en: 'Unslabbed; condition documented by the supplied photographs (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-SILVER/USA0412.htm',
+        es: 'Bank Note Museum — P-412, certificado de plata de 1 dólar, series 1928–1928E',
+        en: 'Bank Note Museum — P-412, $1 Silver Certificate, Series 1928–1928E',
+        note: {
+          es: '412a: serie 1928A, firmas Woods y Mellon; sello azul.',
+          en: '412a: Series 1928A, Woods and Mellon signatures; blue seal.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note202355.html',
+        es: 'Numista — N#202355, 1 dólar certificado de plata de tamaño pequeño, sello azul a la izquierda',
+        en: 'Numista — N#202355, small-size $1 Silver Certificate, blue seal at left',
+        note: {
+          es: 'Pick 412a: serie 1928 A, firmas Woods y Mellon.',
+          en: 'Pick 412a: Series 1928A, Woods and Mellon signatures.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/sp/united-states-silver-certificate-bank-notes-small-size/9213/1928A',
+        es: 'Greysheet — certificados de plata de tamaño pequeño, serie 1928A',
+        en: 'Greysheet — small-size Silver Certificates, Series 1928A',
+        note: {
+          es: 'Tipo Fr. 1601, emisión ordinaria (no estrella). Esta ficha no republica columnas de precio.',
+          en: 'Type Fr. 1601, regular issue (not a star). This record does not republish price columns.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/_files/ugd/1dd2a7_7bda43930b8a44cca600c7b635a04ac3.pdf',
+        es: 'Jeremy Dansie — tabla de producción, Mint Master (abril de 2024), Paper Money Project',
+        en: 'Jeremy Dansie — production table, Mint Master (April 2024), Paper Money Project',
+        note: {
+          es: 'Producción estimada de la serie 1928 A: 2.267.809.500 ejemplares; no es un total auditado.',
+          en: 'Estimated Series 1928A production: 2,267,809,500 notes; not an audited total.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/_files/ugd/1dd2a7_54647856bb414b0bbff08f065a1cd2d3.pdf',
+        es: 'Paper Money Project — 1928x $1 Silver Certificates: bloques, rangos y datos de impresión',
+        en: 'Paper Money Project — 1928x $1 Silver Certificates: blocks, ranges, and print data',
+        note: {
+          es: 'D–B: D00000001B–D99999999B, compartido con 1928 B–D; porción 1928 A, menos de 100 millones. Bajos y altos ordinarios publicados: D93825125A y J55439218B.',
+          en: 'D–B: D00000001B–D99999999B, shared with 1928B–D; 1928A portion fewer than 100 million. Published regular low and high: D93825125A and J55439218B.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/news/article/4946/small-size-silver-certificates-and-experimental-notes/',
+        es: 'PMG — Small Size Silver Certificates and Experimental Notes',
+        en: 'PMG — Small Size Silver Certificates and Experimental Notes',
+        note: {
+          es: 'Los experimentos de papel de 1928A/1928B y sus controles se sitúan en bloques X–B, Y–B y Z–B.',
+          en: 'The 1928A/1928B paper experiments and their controls sit in the X–B, Y–B, and Z–B blocks.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Silver Certificates desde 1878; recorte al tamaño pequeño en 1929, serie impresa 1928.',
+          en: 'Silver Certificates from 1878; reduction to small size in 1929, printed Series 1928.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Certificados de plata desde 1878; canje en plata hasta 1968.',
+          en: 'Silver certificates from 1878; redemption in silver until 1968.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-hawaii-1935a',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-hawaii-1935a/',
+    pathEn: '/collection/united-states/1-dollar-hawaii-1935a/',
+    pick: 'Hawaii P#36 · Fr. 2300',
+    serial: 'S40499058C',
+    cert_number: '1505944-014',
+    cert_grader: 'PMG',
+    signatures: {
+      es: 'William Alexander Julian (tesorero de los Estados Unidos) y Henry Morgenthau Jr. (secretario del Tesoro)',
+      en: 'William Alexander Julian (Treasurer of the United States) and Henry Morgenthau Jr. (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Serie 1935 A, impresa como SERIES 1935 A: esa designación no es el año en que se numeró este ejemplar. El Tesoro puso en circulación la moneda HAWAII el 25 de junio de 1942. Peter Huntoon (Paper Money, mayo–junio de 2008, tabla 1a) sitúa el bloque S–C entre S39996001C y S54996000C —15.000.000 de piezas— y da las fechas de numeración del 16 de mayo al 6 de junio de 1944. El serial S40499058C cae en esa asignación; esas fechas son la ventana del lote, no el día exacto en que se terminó esta pieza. Las fichas de tipo citan 35.052.000 ejemplares ordinarios (sin estrella) del 1 dólar Fr. 2300, en ocho bloques; las estrellas se produjeron aparte. El formato de tipo es de unos 156 × 67 mm (Numista); no es una medición de este encapsulado. Bureau of Engraving and Printing.',
+      en: 'Series 1935A, printed as SERIES 1935 A: that designation is not the year this specimen was numbered. The Treasury introduced HAWAII currency on 25 June 1942. Peter Huntoon (Paper Money, May–June 2008, Table 1a) places the S–C block from S39996001C to S54996000C — 15,000,000 notes — and dates the numbering 16 May–6 June 1944. Serial S40499058C falls in that allocation; those dates are the run’s numbering window, not the exact day this note was finished. Type records cite 35,052,000 regular (non-star) $1 Fr. 2300 notes across eight blocks; replacements were produced separately. The type format is about 156 × 67 mm (Numista); that is not a measurement of this slab. Bureau of Engraving and Printing.',
+    },
+    images: {
+      composite: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-composite.jpg',
+      front: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-front.jpg',
+      back: '/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-back.jpg',
+      width: 2400,
+      height: 1600,
+    },
+    title: {
+      es: '1 dólar · HAWAII · Serie 1935 A',
+      en: '$1 · HAWAII · Series 1935A',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata · Emergencia',
+      en: 'United States · Silver Certificate · Emergency',
+    },
+    lead: {
+      es: 'Anverso con Washington, sello y seriales marrones S40499058C y HAWAII en ambos márgenes; reverso con HAWAII en letras huecas. Serie 1935 A, numerado en 1944. PMG 58 EPQ, Choice About Uncirculated, certificado 1505944-014.',
+      en: 'Face with Washington, brown seal and serials S40499058C, and HAWAII on both margins; back with HAWAII in hollow letters. Series 1935A, numbered in 1944. PMG 58 EPQ, Choice About Uncirculated, certificate 1505944-014.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata serie 1935 A con sobreimpresión HAWAII (Hawaii Pick 36, Friedberg 2300; Numista N#202338) es papel de emergencia del Tesoro para el Territorio de Hawái y las operaciones del Pacífico, no un Federal Reserve Note: el 1 dólar HAWAII es certificado de plata; los de 5, 10 y 20 dólares de esa emisión son FRN. Tampoco es el sello amarillo de África del Norte. El catálogo correcto es Hawaii P#36, no el P#416a de Estados Unidos, que nombra el 1935 A de sello azul ordinario. Sello y seriales marrones; firmas de William Alexander Julian y Henry Morgenthau Jr. El anverso, en negro sobre papel crema, lleva el retrato de George Washington, un 1 grande a la izquierda, la leyenda SILVER CERTIFICATE y, a la derecha, el sello circular marrón del Tesoro. Los seriales marrones S40499058C se repiten abajo a la izquierda y arriba a la derecha (bloque S–C). HAWAII va en vertical, en pequeño, en ambos márgenes. La marca de plancha de anverso es F 2300; la posición de plancha es F. El 2300 de la plancha y el Fr. 2300 coinciden en cifra, pero son identificadores distintos: uno está impreso en el billete y el otro es la ficha Friedberg. El reverso, en verde, muestra el ONE central, la pirámide y el ojo a la izquierda, el águila y el escudo a la derecha, y HAWAII en letras huecas que cruzan el campo. La plancha de reverso 3534 queda abajo, hacia la derecha. El encapsulado PMG imprime Fr. 2300, bloque SC, firmas Julian | Morgenthau, pp F, Choice About Uncirculated 58 y Exceptional Paper Quality. No es un reemplazo con estrella: el serial lleva prefijo S y sufijo C. No es el 1 dólar Funnyback serie 1928 A, serial D00508932B, ni el certificado de plata serie 1957 B, serial S35513454A, ni el 1 dólar de sello amarillo Fr. 2306. El canje en plata terminó en 1968; siguen siendo curso legal a la par.',
+      en: 'The Series 1935A $1 Silver Certificate with the HAWAII overprint (Hawaii Pick 36, Friedberg 2300; Numista N#202338) is Treasury emergency paper for the Territory of Hawaii and Pacific operations, not a Federal Reserve Note: the HAWAII $1 is a silver certificate; the $5, $10, and $20 of that issue are FRNs. It is not the North Africa yellow-seal note. The correct catalog number is Hawaii P#36, not United States P#416a, which names the ordinary blue-seal 1935A type. Brown seal and serials; signatures of William Alexander Julian and Henry Morgenthau Jr. The black face on cream paper carries George Washington, a large 1 at left, the legend SILVER CERTIFICATE, and, at right, the brown circular Treasury seal. Brown serials S40499058C repeat at lower left and upper right (S–C block). Small vertical HAWAII overprints flank the design. The face-plate marking is F 2300; the plate position is F. Face plate 2300 and Fr. 2300 match numerically here, but they are separate identifiers: one is printed on the note, the other is the Friedberg classification. The green back shows a central ONE, the pyramid and eye at left, the eagle and shield at right, and HAWAII in hollow letters across the field. Back plate 3534 sits below the lettering, toward the right. The PMG holder prints Fr. 2300, SC block, Julian | Morgenthau signatures, pp F, Choice About Uncirculated 58, and Exceptional Paper Quality. It is not a star replacement: the serial has an S prefix and a C suffix. It is not the Series 1928A Funnyback $1, serial D00508932B, nor the Series 1957-B Silver Certificate, serial S35513454A, nor the yellow-seal $1 Fr. 2306. Redemption in silver ended in 1968; the notes remain legal tender at face value.',
+    },
+    history: [
+      {
+        es: 'Tras Pearl Harbor, el Tesoro marcó el dólar del Territorio de Hawái —y el que sirvió en campañas del Pacífico— para poder invalidar existencias capturadas si Japón tomaba el archipiélago. La moneda HAWAII se introdujo el 25 de junio de 1942: sello y seriales marrones y la palabra HAWAII en anverso y reverso. La serie impresa 1935 A nombra el tipo, no el año de numeración de este ejemplar: el bloque S–C se numeró entre el 16 de mayo y el 6 de junio de 1944. Las restricciones de emergencia se levantaron el 21 de octubre de 1944; a partir de entonces el papel ordinario y el HAWAII pudieron circular juntos en las zonas designadas. Esa fecha cierra el régimen restrictivo, no la vida del billete en circulación. El retiro oficial empezó en abril de 1946.',
+        en: 'After Pearl Harbor the Treasury marked Territory of Hawaii dollars — and notes used in Pacific campaigns — so captured stocks could be invalidated if Japan took the islands. HAWAII currency was introduced on 25 June 1942: brown seals and serials and the word HAWAII on face and back. Printed Series 1935A names the type, not the numbering year of this specimen: the S–C block was serial-numbered between 16 May and 6 June 1944. The emergency restrictions were lifted on 21 October 1944; after that, ordinary U.S. currency and HAWAII notes could circulate together in the designated areas. That date ends the restrictive arrangement, not the notes’ life in circulation. Official withdrawal began in April 1946.',
+      },
+      {
+        es: 'El marco de esas emisiones de emergencia —Hawái, el sello amarillo, la AMC, Bernhard— se recorre en la vitrina de billetes de emergencia de la Segunda Guerra Mundial, en Notafilia. Esta ficha es el ejemplar documentado de ese tipo: serial S40499058C, no una ilustración de tipo.',
+        en: 'The frame for those emergency issues — Hawaii, the yellow seal, AMC, Bernhard — is on the World War II emergency-banknotes case, under Notaphily. This page is the documented example of that type: serial S40499058C, not a type illustration.',
+      },
+    ],
+    historyHeading: {
+      es: 'La sobreimpresión HAWAII',
+      en: 'The HAWAII overprint',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado del 1 dólar HAWAII serie 1935 A, serial S40499058C: Washington, sello marrón, HAWAII en los márgenes, plancha F 2300 y etiqueta PMG 58 EPQ.',
+      en: 'Slabbed face of the Series 1935A HAWAII $1, serial S40499058C: Washington, the brown seal, HAWAII in the margins, face plate F 2300, and the PMG 58 EPQ label.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado del 1 dólar HAWAII, certificado PMG 1505944-014: ONE central, HAWAII en letras huecas y plancha de reverso 3534. Choice About Uncirculated 58 EPQ.',
+      en: 'Slabbed back of the HAWAII $1, PMG certificate 1505944-014: central ONE, HAWAII in hollow letters, and back plate 3534. Choice About Uncirculated 58 EPQ.',
+    },
+    scarcity: {
+      es: 'Fr. 2300 (Hawaii P#36) es el 1 dólar HAWAII, el tipo más común de la serie de emergencia. Las fichas de tipo citan 35.052.000 ejemplares ordinarios, en ocho bloques; las estrellas van aparte. Huntoon asigna al bloque S–C 15.000.000 de piezas (S39996001C–S54996000C). Las claves del tipo son el estado del papel —sobre todo EPQ—, la nitidez de la sobreimpresión y los reemplazos con estrella. Esta pieza no es estrella. Esta ficha no republica precios.',
+      en: 'Fr. 2300 (Hawaii P#36) is the HAWAII $1, the common type of the emergency series. Type records cite 35,052,000 regular notes across eight blocks; stars were separate. Huntoon assigns the S–C block 15,000,000 notes (S39996001C–S54996000C). The keys of the type are paper quality — especially EPQ — the sharpness of the overprint, and star replacements. This piece is not a star. This record does not republish prices.',
+    },
+    population: {
+      es: 'El grado y el certificado se leen en el encapsulado; no se ha verificado de forma independiente el 1505944-014 contra la base de PMG. PMG describe el 58 como Choice About Uncirculated —a menudo un solo pliegue que cruza el diseño—, no Uncirculated ni Gem Uncirculated. EPQ, en el criterio de PMG, indica papel original, no procesado para simular un grado más alto; el desgaste propio del 58 sigue admitido. No se cita un censo de población.',
+      en: 'The grade and certificate are read from the holder; certification 1505944-014 has not been independently checked against PMG’s database. PMG describes 58 as Choice About Uncirculated — often a single fold across the design — not Uncirculated or Gem Uncirculated. EPQ, in PMG’s wording, means original paper that has not been processed to look like a higher grade; wear appropriate to 58 is still allowed. No population census is quoted.',
+    },
+    grade: {
+      es: 'PMG 58 EPQ — Choice About Uncirculated · certificado 1505944-014',
+      en: 'PMG 58 EPQ — Choice About Uncirculated · certificate 1505944-014',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note202338.html',
+        es: 'Numista N#202338 — 1 Dollar (Silver Certificate; Brown Seal — Hawaii)',
+        en: 'Numista N#202338 — 1 Dollar (Silver Certificate; Brown Seal — Hawaii)',
+        note: {
+          es: 'Hawaii P#36; firmas Julian–Morgenthau; formato publicado de unos 156 × 67 mm. No es el P#416a de sello azul.',
+          en: 'Hawaii P#36; Julian–Morgenthau signatures; published format about 156 × 67 mm. Not the blue-seal P#416a.',
+        },
+      },
+      {
+        href: 'https://www.papermoneyproject.com/spmc-pm-articles',
+        es: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, mayo–junio de 2008)',
+        en: 'Huntoon — U.S. Hawaii & North Africa/Sicily Military Currency (Paper Money 255, May–June 2008)',
+        note: {
+          es: 'Tabla 1a: bloque S–C, S39996001C–S54996000C, 15.000.000; numeración del 16 de mayo al 6 de junio de 1944.',
+          en: 'Table 1a: S–C block, S39996001C–S54996000C, 15,000,000; numbered 16 May–6 June 1944.',
+        },
+      },
+      {
+        href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
+        es: 'Friedberg / Berman — Emergency Notes (tirada del 1 dólar HAWAII)',
+        en: 'Friedberg / Berman — Emergency Notes (HAWAII $1 printage)',
+        note: {
+          es: '35.052.000 ordinarios para el 1 dólar Fr. 2300, en ocho bloques; cifra de tipo, no de este serial.',
+          en: '35,052,000 regular $1 Fr. 2300 notes across eight blocks; a type figure, not this serial.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/paper-money-grading/grading-scale/',
+        es: 'PMG — escala de grados (58 Choice About Uncirculated y EPQ)',
+        en: 'PMG — grading scale (58 Choice About Uncirculated and EPQ)',
+        note: {
+          es: 'El 58 no es Uncirculated ni Gem; EPQ habla de papel original, no de un censo.',
+          en: '58 is not Uncirculated or Gem; EPQ describes original paper, not a census.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/verify',
+        es: 'PMG — verificación de certificado (lectura del encapsulado 1505944-014)',
+        en: 'PMG — certificate verification (holder reading 1505944-014)',
+        note: {
+          es: 'El encapsulado imprime Fr. 2300, bloque SC, serial S40499058C, firmas Julian | Morgenthau, Choice About Uncirculated 58 EPQ y pp F. No se consultó aquí la base en línea.',
+          en: 'The holder prints Fr. 2300, SC block, serial S40499058C, Julian | Morgenthau signatures, Choice About Uncirculated 58 EPQ, and pp F. The online database was not queried here.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'BEP como impresor; certificados de plata; canje en plata hasta 1968.',
+          en: 'BEP as printer; silver certificates; redemption in silver until 1968.',
         },
       },
     ],
@@ -2600,7 +4385,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Anna Escobedo Cabral (Treasurer) and Henry M. Paulson, Jr. (Secretary of the Treasury)',
     },
     printed: {
-      es: 'BEP. USPaperMoney.Info sitúa la serie 2006 del 1 dólar entre marzo de 2007 y noviembre de 2010 (firmas Cabral–Paulson). Dallas imprimió 569.600.000 notas ordinarias en seis bloques. El serial K46602688C (bloque KC) cae en la producción de marzo de 2008 de ese distrito. Esta ficha no inventa una tirada solo para el bloque KC.',
+      es: 'BEP. USPaperMoney.Info sitúa la serie 2006 del 1 dólar entre marzo de 2007 y noviembre de 2010 (firmas Cabral–Paulson). Dallas imprimió 569.600.000 billetes ordinarios en seis bloques. El serial K46602688C (bloque KC) cae en la producción de marzo de 2008 de ese distrito. Esta ficha no inventa una tirada solo para el bloque KC.',
       en: 'BEP. USPaperMoney.Info places Series 2006 $1 notes from March 2007 through November 2010 (Cabral–Paulson signatures). Dallas printed 569,600,000 regular notes in six blocks. Serial K46602688C (KC block) falls in that district’s March 2008 production. This record does not invent a printage for the KC block alone.',
     },
     images: {
@@ -2640,7 +4425,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Series 2006 $1: the Great Seal and, in the margins, FOLLOW MY JOURNEY AT / www.WHERESGEORGE.com.',
     },
     scarcity: {
-      es: 'La serie 2006 del 1 dólar —firmas Cabral–Paulson, los doce distritos— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-523a. Fr. 1933-K cubre Dallas. El tipo es común; Dallas imprimió 569.600.000 notas ordinarias en esa serie. El interés de esta pieza no es la rareza del FRN, sino los sellos de Where’s George? sobre un serial ordinario. Esta ficha no inventa una tirada por bloque.',
+      es: 'La serie 2006 del 1 dólar —firmas Cabral–Paulson, los doce distritos— es papel cotidiano de la Reserva. El Bank Note Museum la numera P-523a. Fr. 1933-K cubre Dallas. El tipo es común; Dallas imprimió 569.600.000 billetes ordinarios en esa serie. El interés de esta pieza no es la rareza del FRN, sino los sellos de Where’s George? sobre un serial ordinario. Esta ficha no inventa una tirada por bloque.',
       en: 'Series 2006 $1 notes — Cabral–Paulson signatures, all twelve districts — were everyday Reserve paper. The Bank Note Museum numbers the type P-523a. Fr. 1933-K is Dallas. The type is common; Dallas printed 569,600,000 regular notes in the series. This piece’s interest is not FRN scarcity but the Where’s George? stamps on an ordinary serial. This record does not invent a printage by block.',
     },
     population: {
@@ -2718,16 +4503,16 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     ],
   },
   {
-    id: 'nota-prueba-giori-lincoln-memorial',
+    id: 'billete-prueba-giori-lincoln-memorial',
     chapterId: 'us-miscelaneos',
-    path: '/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
+    path: '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     pathEn: '/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     pick: 'Giori · Lincoln Memorial (uniface)',
     serial: '—',
     no_serial_reason:
       'Uniface Giori press test: no serials, Treasury seal, or Federal Reserve seal were printed.',
     signatures: {
-      es: 'Ninguna (nota de prueba uniface)',
+      es: 'Ninguna (billete de prueba uniface)',
       en: 'None (uniface test note)',
     },
     printed: {
@@ -2742,7 +4527,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       height: 960,
     },
     title: {
-      es: 'Nota de prueba Giori · Lincoln Memorial · ca. 1970',
+      es: 'Billete de prueba Giori · Lincoln Memorial · ca. 1970',
       en: 'Giori test note · Lincoln Memorial · ca. 1970s',
     },
     kicker: {
@@ -2750,7 +4535,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'United States · Miscellaneous · Giori proof',
     },
     lead: {
-      es: 'Nota de prueba uniface de la prensa Giori, hacia los años 1970: anverso verde con el Lincoln Memorial y elementos del 1 dólar; reverso en blanco; sin seriales ni sellos. No es curso legal.',
+      es: 'Billete de prueba uniface de la prensa Giori, hacia los años 1970: anverso verde con el Lincoln Memorial y elementos del 1 dólar; reverso en blanco; sin seriales ni sellos. No es curso legal.',
       en: 'A uniface Giori press test note, ca. 1970s: a green face with the Lincoln Memorial and $1 design elements; a blank back; no serials or seals. It is not legal tender.',
     },
     description: {
@@ -2772,15 +4557,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'The Giori press',
     },
     frontCaption: {
-      es: 'Anverso uniface de la nota de prueba Giori, hacia los años 1970: Lincoln Memorial en verde, THE UNITED STATES OF AMERICA y 1 de las esquinas del 1 dólar, sin serial.',
+      es: 'Anverso uniface del billete de prueba Giori, hacia los años 1970: Lincoln Memorial en verde, THE UNITED STATES OF AMERICA y 1 de las esquinas del 1 dólar, sin serial.',
       en: 'Uniface face of the Giori test note, ca. 1970s: Lincoln Memorial in green, THE UNITED STATES OF AMERICA and the $1 corner 1s, with no serial.',
     },
     backCaption: {
-      es: 'Reverso en blanco de la misma nota de prueba Giori, en funda: sin tinta, grabado ni serial.',
+      es: 'Reverso en blanco del mismo billete de prueba Giori, en funda: sin tinta, grabado ni serial.',
       en: 'Blank back of the same Giori test note, in a sleeve: no ink, engraving, or serial.',
     },
     scarcity: {
-      es: 'Las notas de prueba Giori no fueron emisión de circulación. The E-Sylum indica que los pliegos de ensayo debían destruirse o quedaron al margen; algunos sobrevivieron y, una vez levantada la restricción del BEP, entraron en el mercado de coleccionistas. No hay Pick ni Friedberg para este collage uniface del Lincoln Memorial. Esta ficha no inventa una tirada ni un censo.',
+      es: 'Los billetes de prueba Giori no fueron emisión de circulación. The E-Sylum indica que los pliegos de ensayo debían destruirse o quedaron al margen; algunos sobrevivieron y, una vez levantada la restricción del BEP, entraron en el mercado de coleccionistas. No hay Pick ni Friedberg para este collage uniface del Lincoln Memorial. Esta ficha no inventa una tirada ni un censo.',
       en: 'Giori test notes were not a circulating issue. The E-Sylum notes that trial sheets were meant to be destroyed or otherwise kept aside; some survived and, once the BEP restriction was lifted, entered the collector market. There is no Pick or Friedberg number for this uniface Lincoln Memorial collage. This record does not invent a printage or a census.',
     },
     population: {
@@ -3717,6 +5502,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
 export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
+    colonialLink: 'Moneda colonial',
+    obsoleteLink: 'Billetes Obsoletos',
     miscLink: 'Misceláneos',
     barabooLink: 'Scrip de Baraboo 1933',
     rencyLink: 'Rency',
@@ -3739,6 +5526,8 @@ export const notePageCopy = {
   },
   en: {
     seriesLink: 'United States',
+    colonialLink: 'Colonial paper',
+    obsoleteLink: 'Obsolete notes',
     miscLink: 'Miscellaneous',
     barabooLink: 'Baraboo scrip 1933',
     rencyLink: 'Rency',
@@ -3781,6 +5570,8 @@ export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): str
   if (isBarabooScripNote(note)) return barabooScripSeriesPath(locale);
   if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
   if (note.chapterId === 'us-pop-art') return rencySeriesPath(locale);
+  if (note.chapterId === 'us-colonial') return colonialSeriesPath(locale);
+  if (note.chapterId === 'us-obsoleto') return obsoleteSeriesPath(locale);
   return `${seriesPath(locale)}#${note.chapterId}`;
 }
 

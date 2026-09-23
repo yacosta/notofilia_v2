@@ -1,6 +1,6 @@
 import { BASELINE, collectionStats as holdingsStats } from '../data/holdings';
 import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
-import { ECUADOR_PATH } from '../data/ecuador';
+import { dedicatedCatalogPaths as ecuadorPaths, ecuadorNoteSlugs, ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { COLOMBIA_PATH } from '../data/colombia';
@@ -17,15 +17,23 @@ import {
   USA_MISC_PATH_EN,
   USA_MPC_PATH,
   USA_MPC_PATH_EN,
+  USA_MPC_PROGRAM_PATH,
+  USA_MPC_PROGRAM_PATH_EN,
   USA_PATH,
   USA_PATH_EN,
   USA_RENCY_PATH,
   USA_RENCY_PATH_EN,
+  USA_COLONIAL_PATH,
+  USA_COLONIAL_PATH_EN,
+  USA_OBSOLETE_PATH,
+  USA_OBSOLETE_PATH_EN,
   unitedStatesNoteDedicatedSlugs,
   unitedStatesNoteSlugs,
 } from '../data/estados-unidos';
 import { mpcVietnamNoteDedicatedSlugs, mpcVietnamNoteSlugs } from '../data/mpc-vietnam';
+import { mpcProgramNoteDedicatedSlugs, mpcProgramNoteSlugs } from '../data/mpc';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
+import { lazarettosNumismaticsDedicatedSlugs } from '../data/lazarettos-numismatics';
 import { NUMISMATICA_PATH } from '../data/numismatica';
 import { GLOSSARY_PATH, glossaryTermSlugs } from '../data/glossary';
 import { NETHERLANDS_PATH } from '../data/netherlands';
@@ -37,10 +45,10 @@ import {
   netherlandsCoinageDedicatedSlugs,
 } from '../data/netherlands-coinage';
 import {
-  USA_COINAGE_PATH,
   unitedStatesCoinSlugs,
   unitedStatesCoinageDedicatedSlugs,
 } from '../data/estados-unidos-coinage';
+import { spainCoinageDedicatedSlugs, spainCoinSlugs } from '../data/espana-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { catalogNoteSlugs as philippinesPnbNoteSlugs, dedicatedCatalogPaths as philippinesPnbPaths } from '../data/philippines-pnb-1916';
 import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
@@ -56,8 +64,15 @@ import {
 import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editorial';
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
+import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
+import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
+import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
+import { milestones } from './milestones.ts';
+
+export type { MilestoneItem } from './milestones.ts';
+export { milestones } from './milestones.ts';
 
 export type { Locale } from './locale-paths';
 export { localizePath, otherLocalePath, SITE_AUTHOR, DEFAULT_OG_IMAGE } from './locale-paths';
@@ -82,16 +97,20 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of colombiaCoinagePieceSlugs) slugs.add(slug);
   for (const slug of colombiaNoteSlugs) slugs.add(slug);
   slugs.add(COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
+  slugs.add(BANCA_LIBRE_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   slugs.add(COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''));
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of unitedStatesCoinSlugs) slugs.add(slug);
+  for (const slug of spainCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of englandNoteSlugs) slugs.add(slug);
   for (const slug of canadaNoteSlugs) slugs.add(slug);
   for (const slug of malaysiaNoteSlugs) slugs.add(slug);
   for (const slug of puertoRicoNoteSlugs) slugs.add(slug);
+  for (const slug of ecuadorNoteSlugs) slugs.add(slug);
   for (const slug of mpcVietnamNoteSlugs) slugs.add(slug);
+  for (const slug of mpcProgramNoteSlugs) slugs.add(slug);
   for (const slug of unitedStatesNoteSlugs) slugs.add(slug);
   return slugs;
 }
@@ -138,11 +157,15 @@ export function statsLine(locale: Locale): string {
 
 addLocalePair(USA_PATH, USA_PATH_EN);
 addLocalePair(USA_MPC_PATH, USA_MPC_PATH_EN);
+addLocalePair(USA_MPC_PROGRAM_PATH, USA_MPC_PROGRAM_PATH_EN);
 addLocalePair(USA_MISC_PATH, USA_MISC_PATH_EN);
 addLocalePair(USA_BARABOO_SCRIP_PATH, USA_BARABOO_SCRIP_PATH_EN);
 addLocalePair(USA_RENCY_PATH, USA_RENCY_PATH_EN);
+addLocalePair(USA_COLONIAL_PATH, USA_COLONIAL_PATH_EN);
+addLocalePair(USA_OBSOLETE_PATH, USA_OBSOLETE_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
+addLocalePair(BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export { copy } from '../i18n/copy';
@@ -170,8 +193,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, Estados Unidos, Países Bajos y lazaretos colombianos.' },
-    en: { title: 'Numismatics', description: 'Coinage: Colombia, the United States, the Netherlands, and the Colombian lazarettos.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, España, Estados Unidos, Países Bajos y lazaretos colombianos.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, Spain, the United States, the Netherlands, and the Colombian lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -180,13 +203,13 @@ export const collections = [
   },
   {
     href: USA_PATH,
-    es: { title: 'Estados Unidos', description: 'Federal, colonial, MPC, obsoletos y emisiones promocionales.' },
-    en: { title: 'United States', description: 'Federal, colonial, MPC, obsolete notes, and promotional issues.' },
+    es: { title: 'Estados Unidos', description: 'Federal, colonial, nacionales, fraccionarios, MPC, obsoletos y pop art.' },
+    en: { title: 'United States', description: 'Federal, colonial, nationals, fractionals, MPC, obsolete notes, and pop art.' },
   },
   {
     href: '/coleccion/espana/',
-    es: { title: 'España', description: 'Oro colonial de la ceca de Santa Fe de Bogotá.' },
-    en: { title: 'Spain', description: 'Colonial gold of the Santa Fe de Bogotá mint.' },
+    es: { title: 'España', description: 'El papel está en preparación. El medio escudo de Madrid de 1757 se documenta en Numismática.' },
+    en: { title: 'Spain', description: 'Paper is in preparation. The 1757 Madrid half escudo is documented under Numismatics.' },
   },
   {
     href: PUERTO_RICO_PATH,
@@ -195,8 +218,8 @@ export const collections = [
   },
   {
     href: ECUADOR_PATH,
-    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Las fichas se publicarán a medida que se documenten.' },
-    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. Note pages will be published as they are documented.' },
+    es: { title: 'Ecuador', description: 'Del sucre de 1884 a la dolarización. Esta vitrina documenta el 1 sucre del Banco del Ecuador de 1901.' },
+    en: { title: 'Ecuador', description: 'From the 1884 sucre to dollarization. This case documents a 1901 Banco del Ecuador 1-sucre.' },
   },
   {
     href: GUATEMALA_PATH,
@@ -209,12 +232,6 @@ export const collections = [
     en: { title: 'Polymer banknotes', description: 'World catalog of Guardian, Safeguard, and hybrid substrates.' },
   },
 ] as const;
-
-export type MilestoneItem = {
-  href: string;
-  es: { title: string; description: string };
-  en: { title: string; description: string };
-};
 
 export type ArticleItem = {
   href: string;
@@ -231,141 +248,6 @@ export type NewsItem = ArticleItem & {
   source: string;
   sourceUrl: string;
 };
-
-export const milestones: MilestoneItem[] = [
-  {
-    href: SERIES_PATH,
-    es: {
-      title: 'Filipinas · Periodo estadounidense',
-      description: 'Primera vitrina del catálogo: 5 pesos del Banco Nacional de 1916 y 1, 2, 5 y 20 pesos de la Serie Victory n.º 66.',
-    },
-    en: {
-      title: 'Philippines · American period',
-      description: 'First catalog case: a 1916 National Bank 5-peso and Commonwealth 1, 2, 5, and 20 pesos of Victory Series No. 66.',
-    },
-  },
-  {
-    href: COLOMBIA_PATH,
-    es: {
-      title: 'Colombia · Banca libre y Banco de la República',
-      description: 'Segunda vitrina del catálogo: independencia, banca libre, Banco Nacional y el banco central.',
-    },
-    en: {
-      title: 'Colombia · Free banking and the Banco de la República',
-      description: 'Second catalog case: independence, free banking, Banco Nacional, and the central bank.',
-    },
-  },
-  {
-    href: COLOMBIA_COINAGE_PATH,
-    es: {
-      title: 'Colombia-Numismática',
-      description: 'Primera vitrina de numismática: macuquinas, cecas de la Independencia, la reforma de 1847 y la Fábrica de Ibagué.',
-    },
-    en: {
-      title: 'Colombia-Numismatics',
-      description: 'First numismatics case: cobs, independence mints, the 1847 reform, and the Ibagué factory.',
-    },
-  },
-  {
-    href: LAZARETTOS_PATH,
-    es: {
-      title: 'Lazarettos',
-      description: 'Segunda vitrina de numismática: Caño del Oro, Contratación, Agua de Dios y la coscoja.',
-    },
-    en: {
-      title: 'Lazarettos',
-      description: 'Second numismatics case: Caño del Oro, Contratación, Agua de Dios, and the coscoja.',
-    },
-  },
-  {
-    href: USA_PATH,
-    es: {
-      title: 'Estados Unidos · Del papel colonial a la Reserva Federal',
-      description: 'Tercera vitrina del catálogo: colonial, obsoleto, Estados Confederados, United States Notes, oro, plata, Reserva Federal, pop art y misceláneos.',
-    },
-    en: {
-      title: 'United States · From colonial paper to the Federal Reserve',
-      description: 'Third catalog case: colonial, obsolete, Confederate States, United States Notes, gold, silver, the Federal Reserve, pop art, and miscellaneous issues.',
-    },
-  },
-  {
-    href: USA_MPC_PATH,
-    es: {
-      title: 'Estados Unidos · MPC de la guerra de Vietnam',
-      description: 'Vitrina de certificados de pago militar: series 641, 661, 681 y 692 usadas en Vietnam.',
-    },
-    en: {
-      title: 'United States · Vietnam War MPCs',
-      description: 'Military Payment Certificate case: Series 641, 661, 681, and 692 used in Vietnam.',
-    },
-  },
-  {
-    href: PUERTO_RICO_PATH,
-    es: {
-      title: 'Puerto Rico · Emisiones coloniales y de transición',
-      description: 'Cuarta vitrina del catálogo: emisiones coloniales y de transición del siglo XIX.',
-    },
-    en: {
-      title: 'Puerto Rico · Colonial and transition issues',
-      description: 'Fourth catalog case: colonial and nineteenth-century transition issues.',
-    },
-  },
-  {
-    href: CHINA_PATH,
-    es: {
-      title: 'China · Del jiaozi al polímero',
-      description: 'Quinta vitrina: historia del papel moneda y exhibición de los billetes de polímero.',
-    },
-    en: {
-      title: 'China · From jiaozi to polymer',
-      description: 'Fifth catalog case: paper-money history and the polymer notes on exhibit.',
-    },
-  },
-  {
-    href: ECUADOR_PATH,
-    es: {
-      title: 'Ecuador · Del sucre a la dolarización',
-      description: 'Sexta vitrina: el sucre de 1884, los bancos privados, el Banco Central de 1927 y la dolarización.',
-    },
-    en: {
-      title: 'Ecuador · From the sucre to dollarization',
-      description: 'Sixth catalog case: the 1884 sucre, private banks, the 1927 Central Bank, and dollarization.',
-    },
-  },
-  {
-    href: GUATEMALA_PATH,
-    es: {
-      title: 'Guatemala · Impresión de billetes y El Banco Colombiano',
-      description: 'Séptima vitrina: planchas de Nueva York y Londres, banca privada y la emisión antioqueña en Guatemala (1878–1901).',
-    },
-    en: {
-      title: 'Guatemala · Banknote printing and El Banco Colombiano',
-      description: 'Seventh catalog case: New York and London plates, private banks, and the Antioquian issue in Guatemala (1878–1901).',
-    },
-  },
-  {
-    href: NETHERLANDS_COINAGE_PATH,
-    es: {
-      title: 'Países Bajos · Historia de la acuñación',
-      description: 'Tercera vitrina de numismática: del gulden de 1434 al ducado de Utrecht y el euro.',
-    },
-    en: {
-      title: 'Netherlands · History of the coinage',
-      description: 'Third numismatics case: from the 1434 gulden to the Utrecht ducat and the euro.',
-    },
-  },
-  {
-    href: USA_COINAGE_PATH,
-    es: {
-      title: 'Estados Unidos · Numismática',
-      description: 'Cuarta vitrina de numismática: la ceca de Filadelfia y el dólar de Trump del Semiquincentenario 1776–2026.',
-    },
-    en: {
-      title: 'United States · Numismatics',
-      description: 'Fourth numismatics case: the Philadelphia mint and the 1776–2026 Semiquincentennial Trump dollar.',
-    },
-  },
-];
 
 export const articles: ArticleItem[] = blogArticles.map((item) => ({
   href: item.href,
@@ -416,12 +298,20 @@ export const stubPages = [
   { path: 'coleccion/colombia', es: 'Colombia', en: 'Colombia' },
   { path: 'coleccion/china', es: 'China', en: 'China' },
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
-  { path: 'coleccion/notafilia', es: 'Colección Virtual Notafilia', en: 'Virtual Notaphily Collection' },
+  { path: 'coleccion/notafilia', es: '¿Qué es la notafilia?', en: 'What is notaphily?' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
   { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
+  { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },
+  { path: 'coleccion/estados-unidos/billetes-obsoletos', es: 'Billetes Obsoletos (1782–1866)', en: 'Obsolete notes (1782–1866)' },
   { path: 'coleccion/estados-unidos-numismatica', es: 'Estados Unidos-Numismática', en: 'United States-Numismatics' },
+  {
+    path: 'coleccion/estados-unidos-numismatica/fichas-hard-times',
+    es: 'Fichas Hard Times',
+    en: 'Hard Times tokens',
+  },
+  { path: 'coleccion/estados-unidos/mpc', es: 'MPC - Guerra de Corea (1951 - 1954)', en: 'MPC - Korean War (1951 - 1954)' },
   { path: 'coleccion/estados-unidos/mpc-vietnam', es: 'MPC - Guerra de Vietnam (1955-1975)', en: 'MPC - Vietnam War (1955-1975)' },
   { path: 'coleccion/estados-unidos/miscelaneos', es: 'Misceláneos', en: 'Miscellaneous' },
   {
@@ -431,6 +321,7 @@ export const stubPages = [
   },
   { path: 'coleccion/estados-unidos/rency', es: 'Rency', en: 'Rency' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
+  { path: 'coleccion/espana-numismatica', es: 'España-Numismática', en: 'Spain-Numismatics' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
   { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
@@ -446,6 +337,8 @@ export const stubPages = [
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
   { path: 'identificar', es: 'Identificar', en: 'Identify' },
+  { path: 'herramientas', es: 'Herramientas', en: 'Tools' },
+  { path: 'herramientas/numeracion-especial', es: 'Numeración especial', en: 'Fancy serial checker' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
 
@@ -454,6 +347,7 @@ const dedicatedEs = [
   ...philippinesPnbPaths,
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
+  ...bancaLibreDedicatedSlugs,
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,
@@ -463,21 +357,30 @@ const dedicatedEs = [
   COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
+  ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
   NUMISMATICS_PATH.replace(/^\/|\/$/g, ''),
   ...netherlandsCoinageDedicatedSlugs,
   ...unitedStatesCoinageDedicatedSlugs,
+  ...spainCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH.replace(/^\/|\/$/g, ''),
+  USA_MPC_PROGRAM_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH.replace(/^\/|\/$/g, ''),
   USA_MISC_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_BARABOO_SCRIP_PATH.replace(/^\/|\/$/g, ''),
   USA_BARABOO_SCRIP_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH.replace(/^\/|\/$/g, ''),
   USA_RENCY_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH.replace(/^\/|\/$/g, ''),
+  USA_COLONIAL_PATH_EN.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH.replace(/^\/|\/$/g, ''),
+  USA_OBSOLETE_PATH_EN.replace(/^\/|\/$/g, ''),
   ...mpcVietnamNoteDedicatedSlugs,
+  ...mpcProgramNoteDedicatedSlugs,
   ...unitedStatesNoteDedicatedSlugs,
   CHINA_PATH.replace(/^\/|\/$/g, ''),
   ...chinaNoteSlugs,
@@ -488,12 +391,14 @@ const dedicatedEs = [
   ...englandNoteSlugs,
   ...canadaNoteSlugs,
   ...malaysiaNoteSlugs,
-  ECUADOR_PATH.replace(/^\/|\/$/g, ''),
+  ...ecuadorPaths,
   GUATEMALA_PATH.replace(/^\/|\/$/g, ''),
   GLOSSARY_PATH.replace(/^\/|\/$/g, ''),
   ...glossaryTermSlugs,
   ...aboutDedicatedSlugs,
   ...comparisonDedicatedSlugs,
+  ...gioriTestNotesDedicatedSlugs,
+  ...wwiiEmergencyDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',
   'blog',
@@ -501,6 +406,8 @@ const dedicatedEs = [
   'contacto',
   'buscar',
   'identificar',
+  'herramientas',
+  'herramientas/numeracion-especial',
   ...blogSlugs,
   ...newsSlugs,
 ];

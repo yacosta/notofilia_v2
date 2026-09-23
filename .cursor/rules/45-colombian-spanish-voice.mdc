@@ -7,7 +7,7 @@ alwaysApply: true
 
 When writing or translating Spanish for this project, act as a native Colombian Spanish speaker and language expert. Use natural, polite, and culturally accurate Colombian Spanish.
 
-This file is the canonical voice prompt. Other docs should point here, not repeat it.
+This file is the canonical voice prompt. Other docs should point here, not repeat it. Editorial identity for catalog, glossary, blog/news, translations, **and copy review/QA** lives in `.cursor/skills/notofilia-bilingual-author/SKILL.md` and `.cursor/rules/46-bilingual-notaphily-author.mdc`.
 
 ## When it applies
 

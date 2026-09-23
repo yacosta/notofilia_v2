@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../../data/estados-unidos-coinage';
+
+const coin = coinById('ht-181-c1835-john-j-adams');
+if (!coin) throw new Error('Missing United States Hard Times HT-181 John J. Adams catalog token');
+---
+
+<UnitedStatesCoinPage locale="en" coin={coin} />

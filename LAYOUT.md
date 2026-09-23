@@ -10,6 +10,15 @@ The fix was to drop `max-w-[46rem]` on those sections only. They now inherit the
 
 Apply the same rule everywhere a wide catalog block is followed by narrative sections.
 
+## Holdings grid (coins and banknotes)
+
+Series and type-catalog listings of individual coins and banknotes use **three columns** on a wide museum case. Tokens live in `src/lib/catalog-grid.ts`:
+
+- `CATALOG_PIECE_GRID`: `1` / `sm:2` / `lg:3` for series holdings cards
+- `CATALOG_TYPE_GRID`: `2` / `sm:3` for the compact visual catalog
+
+Do not use a two-column or four-column holdings row for coins or notes. Country/hub indexes, related editorial cards, chapter-only period tiles, and anverso/reverso pairs stay on their own grids.
+
 ## Two widths
 
 | Token | Value | Role |
@@ -39,6 +48,9 @@ Once a page opens the full content column (facts card, image pair, chapter grid)
 Text-only and mixed pages:
 
 - `AboutPage.astro`: full-bleed color-block hero; lead inside the hero ~`640px` / `40rem`. After the hero, breadcrumbs, two-column body, aside, pull-quote, and closing use the museum case (`max-w-content` + `--page-gutter`). Do not wrap the whole about page in `max-w-[46rem]`.
+- `CollectionHubPage.astro`: museum case (`max-w-content` + `--page-gutter`). Hub intro and the collection cards share that column. Do not recap the intro at `46rem`.
+- `ColombiaBancaLibrePage.astro`: museum case (`max-w-content` + `--page-gutter`) so the regional tables share the Colombia series column. Keep only the lead under the `h1` at `max-w-[46rem]`.
+- `GioriTestNotesPage.astro`: series photo hero, then museum case (`max-w-content` + `--page-gutter`) so the three-column type cards, tables, and body share the Notafilia column. Keep only the lead under the hero at `max-w-[46rem]`.
 - `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
 - `EditorialIndexPage.astro`: a `46rem` header above a wider index is fine.
 - Stubs and the 404 page may stay at `720px`.
@@ -73,7 +85,7 @@ The post-image narrative cap is removed on:
 - `ColombiaNotePage.astro`
 - `NetherlandsCoinPage.astro`
 
-Keep `max-w-[46rem]` on each piece page’s lead. Series index pages already use `max-w-content` without a second cap. About uses `max-w-content` after the color-block hero (hero lead ~`640px`). Leave editorial articles and stubs on a reading column.
+Keep `max-w-[46rem]` on each piece page’s lead. Series index pages already use `max-w-content` without a second cap. `CollectionHubPage.astro` (`/coleccion/`, `/en/collection/`) uses the same museum case: intro and collection cards share the article column, with no `46rem` recap on the hub copy. About uses `max-w-content` after the color-block hero (hero lead ~`640px`). Leave editorial articles and stubs on a reading column.
 
 ## Check
 

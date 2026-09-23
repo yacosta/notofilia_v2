@@ -13,9 +13,11 @@ import {
   seriesPath,
   seriesSources,
 } from '../../data/colombia';
+import { BANCA_LIBRE_PATH } from '../../data/colombia-banca-libre';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
@@ -66,9 +68,9 @@ const jsonLd = collectionPageJsonLd({
       width={hero.width}
       height={hero.height}
       headingId="series-heading"
-      eyebrow={copy[locale].virtualCollection}
-      title={t.kicker}
-      subtitle={t.title}
+          eyebrow={copy[locale].virtualCollection}
+          title={t.title}
+          subtitle={t.eraSubtitle}
       imageClass="object-[50%_28%]"
     />
 
@@ -112,9 +114,21 @@ const jsonLd = collectionPageJsonLd({
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
               {
+                chapter.id === 'banca-libre' ? (
+                  <p class="mb-0 mt-4">
+                    <a
+                      class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(BANCA_LIBRE_PATH, locale)}
+                    >
+                      {t.bancaLibreEssay}
+                    </a>
+                  </p>
+                ) : null
+              }
+              {
                 notesForChapter(chapter.id).length > 0 ? (
                   <ol
-                    class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
                     aria-label={chapter.title[locale]}
                   >
                     {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
@@ -161,7 +175,7 @@ const jsonLd = collectionPageJsonLd({
         {
           hasErrorNotes() ? (
             <ol
-              class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+              class:list={['m-0', CATALOG_PIECE_GRID]}
               aria-label={t.errorsTitle}
             >
               {errorNotes.map(({ note, piece }) => {
@@ -206,6 +220,177 @@ const jsonLd = collectionPageJsonLd({
           >
             {t.errorsTiqueteHeading}
           </h3>
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">
+            {t.errorsTiqueteLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href="#tiquetes"
+            >
+              {t.errorsTiqueteLink}
+            </a>
+          </p>
+        </section>
+      </section>
+
+      <section id="catalogacion" class="mt-16 scroll-mt-28" aria-labelledby="catalogacion-heading">
+        <h2
+          id="catalogacion-heading"
+          class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+        >
+          {t.methodTitle}
+        </h2>
+        <p class="mb-10 mt-0 text-[17px]/7 text-muted">{t.methodLead}</p>
+
+        <section id="pies-de-imprenta" class="scroll-mt-28" aria-labelledby="pies-de-imprenta-heading">
+          <h3
+            id="pies-de-imprenta-heading"
+            class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+          >
+            {t.imprintsTitle}
+          </h3>
+          <p class="mb-4 mt-0 text-[17px]/7 text-cream">{t.imprintsLead}</p>
+          <ul class="mb-4 mt-0 list-none space-y-3 p-0">
+            {
+              t.imprintItems.map((item) => (
+                <li class="text-[17px]/7 text-cream">
+                  <strong class="font-semibold text-cream-dim">{item.name}.</strong> {item.body}
+                </li>
+              ))
+            }
+          </ul>
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">
+            {t.imprintsEssayLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(t.imprintsEssayHref, locale)}
+            >
+              {t.imprintsEssayLink}
+            </a>
+            .
+          </p>
+        </section>
+
+        <section id="impresores" class="mt-12 scroll-mt-28" aria-labelledby="impresores-heading">
+          <h3
+            id="impresores-heading"
+            class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+          >
+            {t.printersTitle}
+          </h3>
+          <div class="overflow-x-auto border border-line-strong">
+            <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+              <caption class="caption-bottom px-3 py-2.5 text-left text-[14px] text-muted">
+                {t.printersCaption}
+              </caption>
+              <thead>
+                <tr class="border-b border-line-strong bg-panel text-left">
+                  {
+                    t.printersHeaders.map((header) => (
+                      <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                        {header}
+                      </th>
+                    ))
+                  }
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  t.printersRows.map((row) => (
+                    <tr class="border-b border-line-strong last:border-b-0">
+                      {row.map((cell, index) =>
+                        index === 0 ? (
+                          <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                            {cell}
+                          </th>
+                        ) : (
+                          <td class="px-3 py-2.5">{cell}</td>
+                        ),
+                      )}
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="reposicion" class="mt-12 scroll-mt-28" aria-labelledby="reposicion-heading">
+          <h3
+            id="reposicion-heading"
+            class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+          >
+            {t.replacementsTitle}
+          </h3>
+          {t.replacementsParagraphs.map((paragraph) => (
+            <p class="mb-4 mt-0 text-[17px]/7 text-cream last:mb-4">{paragraph}</p>
+          ))}
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">
+            {t.replacementsGlossaryLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(t.replacementsGlossaryHref, locale)}
+            >
+              {t.replacementsGlossaryLink}
+            </a>
+            .
+          </p>
+        </section>
+
+        <section id="certificacion" class="mt-12 scroll-mt-28" aria-labelledby="certificacion-heading">
+          <h3
+            id="certificacion-heading"
+            class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+          >
+            {t.gradingTitle}
+          </h3>
+          {t.gradingParagraphs.map((paragraph) => (
+            <p class="mb-4 mt-0 text-[17px]/7 text-cream last:mb-4">{paragraph}</p>
+          ))}
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">
+            {t.gradingEssayLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(t.gradingEssayHref, locale)}
+            >
+              {t.gradingEssayLink}
+            </a>
+            .
+          </p>
+        </section>
+
+        <section id="estandares" class="mt-12 scroll-mt-28" aria-labelledby="estandares-heading">
+          <h3
+            id="estandares-heading"
+            class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim"
+          >
+            {t.standardsTitle}
+          </h3>
+          <p class="mb-4 mt-0 text-[17px]/7 text-cream">{t.standardsLead}</p>
+          <ul class="mb-4 mt-0 list-none space-y-3 p-0">
+            {
+              t.standardsItems.map((item) => (
+                <li class="text-[17px]/7 text-cream">
+                  <strong class="font-semibold text-cream-dim">{item.name}.</strong> {item.body}
+                </li>
+              ))
+            }
+          </ul>
+          <p class="mb-6 mt-0 text-[17px]/7 text-muted">
+            {t.standardsCompareLead}
+            {' '}
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(t.standardsCompareHref, locale)}
+            >
+              {t.standardsCompareLink}
+            </a>
+            .
+          </p>
+          <p class="mb-0 mt-0 text-[17px]/7 text-muted">{t.disclaimer}</p>
         </section>
       </section>
 

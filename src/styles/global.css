@@ -709,6 +709,63 @@ body.mega-drawer-lock {
   color: var(--color-gold-light);
 }
 
+.prose-notofilia .table-scroll {
+  overflow-x: auto;
+  margin: 0 0 22px;
+}
+
+.prose-notofilia table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--color-cream-dim);
+}
+
+.prose-notofilia caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 0.65rem;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.prose-notofilia th,
+.prose-notofilia td {
+  border: 1px solid var(--color-line-strong);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose-notofilia thead th {
+  background: var(--color-panel);
+  color: var(--color-cream);
+  font-weight: 600;
+}
+
+.prose-notofilia figure {
+  margin: 0 0 22px;
+}
+
+.prose-notofilia figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.prose-notofilia figcaption {
+  margin-top: 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--color-muted);
+}
+
 .breadcrumb {
   list-style: none;
 }

@@ -1,4 +1,6 @@
 import map from '../data/gsc-redirects.json' with { type: 'json' };
+import { glossaryRedirects } from '../data/glossary.ts';
+import { newsEnglishRedirects } from './content-slugs.ts';
 
 export type GscRedirectHit = {
   target: string;
@@ -20,6 +22,11 @@ function variants(pathname: string): string[] {
   return [...new Set(out)];
 }
 
+function withSlash(path: string): string {
+  if (path.includes('?') || path.endsWith('/')) return path;
+  return `${path}/`;
+}
+
 /** Strip Dreamweaver `.dc` / `.dc.html` suffixes. Empty if the result would be home. */
 export function stripDreamweaverSuffix(pathname: string): string | undefined {
   const m = pathname.match(/^(.*)\/?\.dc(?:\.html)?$/i);
@@ -31,10 +38,50 @@ export function stripDreamweaverSuffix(pathname: string): string | undefined {
   return stripped;
 }
 
+/** Spanish path segments leftover under `/en/` → English counterparts. */
+export function rewriteEnSpanishPrefix(pathname: string): string | undefined {
+  for (const [from, to] of [
+    ['/en/glosario/', '/en/glossary/'],
+    ['/en/noticias/', '/en/news/'],
+  ] as const) {
+    if (pathname === from.slice(0, -1)) return to;
+    if (pathname.startsWith(from) || pathname === from) {
+      const target = `${to}${pathname.slice(from.length)}`;
+      return target.endsWith('/') || target.includes('?') ? target : `${target}/`;
+    }
+  }
+  return undefined;
+}
+
+function liveContentRedirect(pathname: string): GscRedirectHit | undefined {
+  const glossary = glossaryRedirects();
+  const news = newsEnglishRedirects();
+  for (const key of variants(pathname)) {
+    const target = glossary[key] ?? news[key];
+    if (target) return { target, status: 301, rule: 'content-slug' };
+  }
+  const rewritten = rewriteEnSpanishPrefix(pathname);
+  if (!rewritten) return undefined;
+  for (const key of variants(rewritten)) {
+    const composed = glossary[key] ?? news[key];
+    if (composed) return { target: composed, status: 301, rule: 'content-slug' };
+  }
+  return { target: withSlash(rewritten), status: 301, rule: 'prefix-locale' };
+}
+
 export function lookupGscRedirect(pathname: string): GscRedirectHit | undefined {
+  const live = liveContentRedirect(pathname);
+  if (live) return live;
+
+  const here = withSlash(pathname);
   for (const key of variants(pathname)) {
     const hit = data.redirects[key];
-    if (hit && (hit.status === 301 || hit.status === 410)) {
+    if (hit?.status === 410) {
+      return { target: hit.target, status: hit.status, rule: hit.rule };
+    }
+    if (hit?.status === 301 && hit.target) {
+      const bounce = liveContentRedirect(withSlash(hit.target));
+      if (bounce && variants(bounce.target).includes(here)) continue;
       return { target: hit.target, status: hit.status, rule: hit.rule };
     }
   }

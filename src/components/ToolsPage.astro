@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from './Breadcrumb.astro';
+import { localizePath, SITE_URL, type Locale } from '../lib/site';
+import { IDENTIFY_PATH } from '../data/identify';
+import { fancySerialPath, toolsHubCopy, toolsPath } from '../data/reference-tools';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = toolsHubCopy[locale];
+const pathname = toolsPath(locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: t.home,
+          item: new URL(localizePath('/', locale), SITE_URL).href,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t.nav,
+          item: new URL(pathname, SITE_URL).href,
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      name: t.title,
+      description: t.metaDescription,
+      url: new URL(pathname, SITE_URL).href,
+      inLanguage: locale,
+    },
+  ],
+};
+
+const cards = [
+  {
+    href: fancySerialPath(locale),
+    title: t.checkerTitle,
+    dek: t.checkerDek,
+    cta: t.checkerCta,
+  },
+  {
+    href: localizePath(IDENTIFY_PATH, locale),
+    title: t.identifyTitle,
+    dek: t.identifyDek,
+    cta: t.identifyCta,
+  },
+];
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { label: t.nav },
+        ]}
+      />
+
+      <header class="mb-10 max-w-[46rem]">
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
+      </header>
+
+      <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2">
+        {
+          cards.map((card) => (
+            <li>
+              <article class="flex h-full flex-col rounded-[6px] border border-line-strong bg-panel p-6">
+                <h2 class="mb-3 mt-0 font-display text-[1.35rem] font-normal text-cream">{card.title}</h2>
+                <p class="mb-6 mt-0 flex-1 text-[15px]/6 text-cream-dim">{card.dek}</p>
+                <a
+                  href={card.href}
+                  class="inline-flex min-h-12 w-fit items-center justify-center rounded-[8px] bg-cream px-5 font-sans text-[15px] font-semibold text-bg hover:bg-cream-dim"
+                >
+                  {card.cta}
+                </a>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+  </main>
+</Layout>

@@ -1,0 +1,1106 @@
+{
+  "es": {
+    "sections": [
+      {
+        "title": "Definición, Etimología y Dimensión Epistemológica",
+        "parts": [
+          {
+            "type": "p",
+            "text": "La numismática trasciende la catalogación y el atesoramiento de objetos de cambio para consolidarse como una disciplina científica autónoma y una ciencia auxiliar indispensable para la arqueología, la epigrafía, la historia económica y la sociología política. Etimológicamente, el término procede del latín numisma (variante de nomisma), un préstamo lingüístico del griego clásico nómisma (νόμισμα, \"costumbre establecida\", \"moneda corriente\"), derivado a su vez de nómos (νόμος, \"ley\" o \"norma\"). Esta raíz refleja la esencia fiduciaria de la moneda: un patrón ponderal y de cambio respaldado por el imperio de la ley y la fe pública de una autoridad soberana."
+          },
+          {
+            "type": "p",
+            "text": "En su vertiente epistemológica, el testimonio numismático presenta ventajas frente a las fuentes documentales manuscritas. Al ser un producto oficial manufacturado en serie bajo rigurosos mandatos estatales, la moneda constituye un documento de primera mano no interpolado que fija coordenadas cronológicas incontrovertibles. En contextos arqueológicos, el hallazgo de numerario establece el terminus post quem necesario para la datación de estratos, a la vez que documenta la expansión o repliegue de redes comerciales, la integración de economías regionales y las fluctuaciones del poder adquisitivo a través del envilecimiento o fortalecimiento de las aleaciones metálicas."
+          },
+          {
+            "type": "p",
+            "text": "La disciplina opera a través de dos dimensiones complementarias. Por una parte, la investigación histórica y metrológica examina el documento monetario como vector de propaganda política, reflejo de programas teológicos o dinásticos y testimonio directo de la contabilidad hacendística. Por otra, la preservación y el coleccionismo sistemático actúan como salvaguarda del patrimonio material frente a la refundición, preservando series completas que permiten reconstruir encadenamientos de cuños, estimar volúmenes de producción y registrar variantes tipológicas inadvertidas en los archivos administrativos."
+          },
+          {
+            "type": "p",
+            "text": "El campo de estudio se articula en ramas cronológicas y especialidades instrumentales. La numismática antigua abarca desde los orígenes de la acuñación en Lidia y las series helénicas hasta las emisiones hispanas prerromanas y los sistemas imperiales romano y bizantino. La numismática medieval analiza la fragmentación económica posromana, comprendiendo las series suevas y visigodas, el complejo monetario andalusí y las emisiones concejiles y feudales de los reinos cristianos peninsulares. Por su parte, la numismática moderna y contemporánea cubre desde la unificación normativa de los Reyes Católicos y la industrialización fabril de las cecas virreinales hasta la decimalización monetaria decimonónica. Estas áreas se complementan con la notafilia, dedicada a la investigación del papel moneda y valores fiduciarios afines, y la exonumia, disciplina que sistematiza artefactos paramonetarios carentes de curso legal estricto, tales como medallas conmemorativas, monedas obsidionales o de sitio, fichas de hacienda, plomos mercantiles y jetones de cuenta."
+          }
+        ],
+        "id": "definicion"
+      },
+      {
+        "title": "Anatomía, Metrología y Morfología Técnica de la Moneda",
+        "parts": [
+          {
+            "type": "p",
+            "text": "El examen científico de una pieza monetaria requiere el dominio de una nomenclatura taxonómica precisa. Las dos superficies planas de la moneda, delimitadas por su espesor perimetral, reciben el nombre de anverso y reverso. Por convención general, el anverso o haz aloja la efigie del soberano, el escudo institucional de la corporación política emisora o el motivo de mayor jerarquía institucional, mientras que el reverso o envés consigna las armas territoriales accesorias, el valor nominal, alegorías secundarias o inscripciones de índole devocional. El perímetro exterior de la moneda está resguardado por el canto, cuya superficie puede presentarse lisa o labrada con estrías, ranuras y cordoncillos para inhibir el recorte metálico fraudulento."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Componente Numismático",
+              "Definición Técnica y Función Operativa"
+            ],
+            "rows": [
+              [
+                "Anverso (Cara / Haz)",
+                "Superficie principal de la pieza que ostenta el tipo hegemónico de soberanía: retrato del gobernante, símbolo estatal o personificación de la autoridad política."
+              ],
+              [
+                "Reverso (Cruz / Envés)",
+                "Superficie complementaria de la pieza, destinada habitualmente a consignar la denominación facial, los motivos alegóricos secundarios y los lemas doctrinales."
+              ],
+              [
+                "Canto",
+                "Grosor perimetral que confina ambas caras de la moneda. Se labra con leyendas incusas o relieves para evidenciar mecánicamente cualquier mutilación o cercén de metal."
+              ],
+              [
+                "Exergo",
+                "Segmento inferior de una o ambas caras separado del campo por una línea horizontal; en él se ubican habitualmente la fecha, la marca de ceca o las firmas del grabador."
+              ],
+              [
+                "Campo",
+                "Espacio liso que actúa como fondo para la estampación de las figuras en relieve y las inscripciones epigráficas."
+              ],
+              [
+                "Gráfila",
+                "Cenefa o filete circular (frecuentemente formada por puntos, estrías o molduras continuas) dispuesta en la orilla del campo para enmarcar el diseño global de la pieza."
+              ],
+              [
+                "Listel",
+                "Reborde metálico anular sobreelevado que delimita el perímetro de ambas caras, diseñado para evitar el desgaste por roce continuo sobre los tipos figurativos centrales."
+              ],
+              [
+                "Módulo y Peso",
+                "El módulo define el diámetro exterior de la pieza expresado en milímetros; el peso certifica la masa intrínseca en gramos o unidades ponderales históricas (marcos, onzas, adarmes)."
+              ],
+              [
+                "Ley o Finura",
+                "Proporción exacta de metal precioso (oro o plata) contenida en la masa de la aleación, computada históricamente en quilates o dineros y modernamente en milésimas."
+              ],
+              [
+                "Alineación",
+                "Relación de orientación vertical entre los tipos de anverso y reverso tras un giro horizontal de 180°. Se distingue la alineación de moneda si el reverso queda invertido y la alineación de medalla si ambas caras permanecen paralelas."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La confección física de las piezas en los talleres monetarios estaba fiscalizada por un aparato burocrático juramentado. La ceca —vocablo proveniente del hispanoárabe sikka, matriz o cuño de acuñar— constituía el recinto fabril estatal donde se ejecutaban las tareas de fundición, laminación, cortado del cospel y estampación de las improntas con cuños grabados por los abridores de troqueles."
+          },
+          {
+            "type": "p",
+            "text": "Cada taller incorporaba en el diseño una marca de ceca (letras aisladas, monogramas o elementos iconográficos) para individualizar la procedencia institucional de la emisión. Junto a esta rúbrica figuraba de modo preceptivo la marca del ensayador, funcionario civil responsable de auditar mediante crisol y balanza la pureza de la pasta metálica y el peso intrínseco del lote de cospeles. Cualquier merma del fino estipulado por las ordenanzas acarreaba la persecución criminal del ensayador, cuyas iniciales expuestas en el campo de la moneda servían de garantía legal frente a los tenedores del numerario. Finalmente, la figura del juez de balanza cerraba el ciclo productivo, fiscalizando el tonelaje de metal noble que ingresaba al taller y certificando que el producto terminado se ajustara a las tolerancias legales de peso y talla por cada marco acuñado."
+          }
+        ],
+        "id": "anatomia"
+      },
+      {
+        "title": "Criterios de Conservación, Gradación y Patología de Materiales",
+        "parts": [
+          {
+            "type": "p",
+            "text": "La categorización del estado físico de un espécimen monetario resulta determinante para evaluar su testimonio material y su apreciación de mercado. En la tradición europea e hispanohablante ha imperado un sistema cualitativo descriptivo que divide el desgaste del relieve en grados discretos, desde ejemplares severamente degradados hasta piezas intactas de procedencia fabril."
+          },
+          {
+            "type": "p",
+            "text": "Simultáneamente, la numismática internacional ha asumido la escala cuantitativa de 70 puntos concebida originalmente por William Herbert Sheldon en 1949 para los centavos de cobre norteamericanos, modelo que a finales del siglo XX fue universalizado por las empresas de certificación independiente para graduar cualquier emisión histórica."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Escala Cualitativa Española",
+              "Sigla",
+              "Escala Sheldon",
+              "Criterios Morfológicos y Desgaste Superficial"
+            ],
+            "rows": [
+              [
+                "Mala Conservación / Regular",
+                "MC / RC",
+                "1 – 3",
+                "Desgaste crítico; siluetas apenas identificables, leyendas ilegibles o borradas casi por completo; posibles deformaciones mecánicas severas."
+              ],
+              [
+                "Buena Conservación",
+                "BC",
+                "4 – 15",
+                "Circulación prolongada; tipos principales aplanados de forma uniforme pero legibles en sus líneas maestras; campos afectados por roces."
+              ],
+              [
+                "Muy Buena Conservación",
+                "MBC",
+                "20 – 35",
+                "Desgaste moderado circunscrito a las aristas y relieves superiores del diseño (mejillas, bucles capilares, elementos de blasones); leyendas y gráfilas plenamente nítidas."
+              ],
+              [
+                "Excelente Buena Conservación",
+                "EBC",
+                "40 – 58",
+                "Circulación efímera; desgaste levísimo observable únicamente en los puntos culminantes de relieve; subsiste parte sustancial del brillo original de ceca en el campo."
+              ],
+              [
+                "Sin Circular",
+                "SC",
+                "60 – 64",
+                "Ausencia total de desgaste derivado de la circulación física; integridad absoluta del relieve; conserva el lustre rotatorio de cuño original, con marcas de contacto de bolsa tolerables."
+              ],
+              [
+                "Flor de Cuño",
+                "FDC",
+                "65 – 70",
+                "Pieza excepcional e inmaculada que preserva la frescura microscópica del golpe de cuño original; brillo estroboscópico íntegro y superficies carentes de erosiones visuales bajo magnificación."
+              ],
+              [
+                "Prueba (Proof)",
+                "Proof",
+                "PR / PF 60 – 70",
+                "Acabado técnico singular no destinado al tráfico común; grabado con cuños pulidos con pasta de diamante y cospeles tratados, generando contraste entre el campo espejado y los relieves satinados."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La preservación a largo plazo de los bienes numismáticos se fundamenta en principios rigurosos de conservación preventiva. El principal agente de degradación antropogénica en colecciones procede del uso de plásticos químicamente inestables, en particular las fundas flexibles de policloruro de vinilo (PVC). El PVC requiere la incorporación masiva de aditivos plastificantes (como los ésteres de ftalato) para ganar flexibilidad; con el tiempo y ante variaciones de temperatura y humedad relativa, estos agentes plastificantes exudan hacia la superficie del polímero y experimentan hidrólisis, desprendiendo compuestos clorados."
+          },
+          {
+            "type": "p",
+            "text": "Este exudado ataca la superficie metálica de la moneda, formando una película viscosa, verde y ácida de oleatos y cloruros de cobre o plata que penetra en los poros moleculares del cospel, provocando microcavidades de corrosión irreversibles. Para evitar esta patología destructiva, el almacenamiento debe restringirse a contenedores químicamente neutros: películas de poliéster biaxial inerte (Mylar), cápsulas de polimetilmetacrilato (PMMA) libre de plastificantes y sobres fabricados con papel de trapo sin ácido ni lignina."
+          },
+          {
+            "type": "p",
+            "text": "El segundo factor crítico de deterioro radica en la limpieza imprudente de los ejemplares mediante agentes mecánicos o reactivos químicos. La pátina no representa suciedad que deba eliminarse, sino una capa microscópica de pasivación mineral (sulfuros de plata, carbonatos y cupritas de cobre) originada por la interacción secular del metal noble con su microentorno. Dicha película estabiliza el núcleo metálico, aporta autenticidad histórica y realza la tridimensionalidad estética del grabado. El empleo de pulimentos abrasivos o baños en soluciones desoxidantes ácidas disuelve esta capa pasivante, exponiendo el metal virgen y dejando cicatrices por fricción (hairlines). Esta agresión fulmina el lustre original de acuñación (cartwheel effect) y merma el valor histórico-económico del testimonio material."
+          }
+        ],
+        "id": "conservacion"
+      },
+      {
+        "title": "Evolución Histórica de los Sistemas Monetarios Hispánicos y Latinoamericanos",
+        "parts": [
+          {
+            "type": "h3",
+            "text": "El Real de a Ocho y la Articulación del Comercio Global"
+          },
+          {
+            "type": "p",
+            "text": "La columna vertebral de la economía hispánica moderna y del comercio internacional durante más de tres siglos fue el Real de a Ocho, conocido en la historiografía mercantil como el Spanish dollar, piastra o peso fuerte. Las bases legales de este patrón monetario quedaron consolidadas el 13 de junio de 1497 por los Reyes Católicos mediante la Pragmática de Medina del Campo, que fijó la masa y pureza del real de plata a razón de 67 piezas por cada marco castellano (230,0465 gramos), con una ley intrínseca de 11 dineros y 4 granos, equivalente a 930,55 milésimas. La necesidad de articular el caudal argentífero procedente del Potosí y los yacimientos novohispanos impulsó la posterior producción a gran escala del múltiplo de 8 reales, una moneda de unos 27,46 gramos de plata de alta ley."
+          },
+          {
+            "type": "p",
+            "text": "La manufactura del real de a ocho atravesó cuatro fases tipológicas y técnicas sucesivas:"
+          },
+          {
+            "type": "p",
+            "text": "La etapa fundacional corresponde a las macuquinas (del término quechua makukina, \"lo golpeado\", o del árabe majquq, \"marcado\"), monedas producidas a golpe de martillo sobre cospeles irregulares cortados a tijera de una riel fundida. Su contorno quebradizo y grosor desigual convertían al tipo en un blanco constante del limado fraudulento, puesto que los usuarios podían recortar fracciones de metal precioso sin obliterar totalmente las marcas centrales del ensayador y la cruz de Jerusalén."
+          },
+          {
+            "type": "p",
+            "text": "Esta vulnerabilidad forzó en 1732 la adopción de las prensas mecánicas de volante en la Ceca de México, dando inicio al ciclo de los afamados columnarios o monedas de cordoncillo. Los columnarios exhibían en el reverso las dos esferas que personificaban el Viejo y el Nuevo Mundo bajo la corona hispánica, flanqueadas por las Columnas de Hércules con la cartela PLUS ULTRA, mientras el canto recibía una labra perimetral en forma de trenza o tulipán que inutilizaba el cercén clandestino."
+          },
+          {
+            "type": "p",
+            "text": "A partir de la pragmática reformadora de 1772 promulgada por Carlos III, el diseño arquitectónico de las columnas dio paso a las monedas de busto regio uniformadas bajo el canon neoclásico de las Luces, fase en la que la Corona introdujo mermas en la finura de la plata, rebajándola paulatinamente a 902,7 milésimas en 1772 y a 895,8 milésimas en 1786."
+          },
+          {
+            "type": "p",
+            "text": "La pureza y estabilidad de esta moneda facilitaron su expansión hacia los puertos asiáticos a través del Galeón de Manila. En los circuitos mercantiles del sur de China, el numerario de 8 reales hispánico y novohispano se convirtió en el medio de pago estándar. Para avalar la autenticidad de la plata frente a fundiciones espurias, los banqueros locales (shroffs) estampaban en el campo pequeñas contramarcas incusas con ideogramas denominadas chopmarks. La hegemonía monetaria del peso fuerte fue tan determinante que inspiró formalmente la creación del dólar estadounidense por el Coinage Act de 1792, fundamentó la aparición del yuan chino y el yen japonés, y proveyó la base estructural sobre la cual se erigieron los patrones monetarios de las nacientes repúblicas hispanoamericanas tras sus procesos de emancipación."
+          },
+          {
+            "type": "h3",
+            "text": "Panorama Estructural de las Principales Cecas Americanas"
+          },
+          {
+            "type": "p",
+            "text": "La inmensidad geográfica del Nuevo Mundo exigió una red de factorías monetarias próximas a las cuencas mineras y a las sedes virreinales de poder."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Casa de Moneda",
+              "Establecimiento",
+              "Marcas Carísticas",
+              "Significación Histórica y Rasgos de Producción"
+            ],
+            "rows": [
+              [
+                "México",
+                "1535",
+                "M, o/M",
+                "Primera ceca de América continental; operó de forma continua desde Carlos y Juana; laboratorio pionero para la mecanización de volantes en 1732."
+              ],
+              [
+                "Lima",
+                "1565",
+                "P, L, LIMA",
+                "Taller neurálgico del virreinato peruano; clausurado temporalmente en 1572 tras la primacía minera potosina y rehabilitado con regularidad a partir de 1659 y 1684."
+              ],
+              [
+                "Potosí",
+                "1572",
+                "P, PTS (monograma)",
+                "El complejo emisor más activo del mundo moderno, asentado al pie del Cerro Rico; responsable de masivas emisiones de macuquinas y escenario del escándalo del ensaye en el s. XVII."
+              ],
+              [
+                "Guatemala",
+                "1731 / 1733",
+                "G, NG",
+                "Cuarto taller oficial en el continente; acuñó moneda a martillo hasta 1751, introduciendo luego el cordoncillo para el abastecimiento de la Capitanía General."
+              ],
+              [
+                "Santiago de Chile",
+                "1743 / 1749",
+                "S, o/S",
+                "Instituida como ceca de concesión privada e incorporada luego a la Corona; inició sus labores labrando media onza áurea con la efigie de Fernando VI."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "El Maravedí: Trayectoria desde el Oro Musulmán hasta el Colapso del Vellón"
+          },
+          {
+            "type": "p",
+            "text": "La trayectoria del maravedí sintetiza la historia económica y fiscal de la monarquía hispánica. Nacido formalmente en el siglo XII como el morabetí, una imitación cristiana en oro fino del dinar almorávide labrada en Toledo por Alfonso VIII, el maravedí conservó inicialmente una elevada consideración de prestigio. Con el avance bajomedieval y los costes militares de la Reconquista, el maravedí de oro desapareció del tráfico físico para convertirse en una abstracta moneda de cuenta que tasaba el valor de las piezas reales en circulación."
+          },
+          {
+            "type": "p",
+            "text": "A partir de las reformas renacentistas de Enrique III, los Reyes Católicos y Carlos I, el maravedí físico reapareció transmutado en el estrato más bajo de la pirámide monetaria: fracciones de vellón (aleación de cobre con mínimas proporciones de plata) destinadas al menudeo cotidiano de los sectores populares."
+          },
+          {
+            "type": "p",
+            "text": "Durante el siglo XVII, bajo los reinados de Felipe III y Felipe IV, el maravedí protagonizó una de las crisis inflacionarias más agudas del Antiguo Régimen. Ante el déficit hacendístico provocado por la Guerra de los Treinta Años y la insolvencia de la Tesorería real, la monarquía recurrió a la amonedación masiva de vellón de ligadura nula (cobre puro, denominado vulgarmente \"calderilla\") y a sucesivas olas forzosas de resellos. El Estado obligaba a los particulares a presentar su moneda menuda en las cecas para estamparles mediante punzones un valor nominal doble o triple sobre el facial preexistente (destacando las campañas de 1603, 1641–1642 y 1651–1652), pretendiendo recaudar un ingreso por señoreaje sin alterar la masa metálica de la pieza."
+          },
+          {
+            "type": "p",
+            "text": "El resultado directo fue la alteración recurrente de precios, el colapso del crédito interno y la aplicación práctica de la Ley de Gresham, en virtud de la cual la moneda mala de vellón expulsó de la circulación peninsular a la buena plata, la cual huyó hacia los mercados mercantiles europeos."
+          },
+          {
+            "type": "h3",
+            "text": "El Patrón del Oro: Escudos y Doblones"
+          },
+          {
+            "type": "p",
+            "text": "La estructura áurea moderna quedó codificada por Carlos I en 1537 al instaurar el escudo o corona, pieza con una masa de 3,38 gramos de oro de 22 quilates (916,6 milésimas de finura) concebida para sustituir al ducado castellano de cuño antiguo. La arquitectura del numerario áureo se organizó en múltiplos estrictamente coordinados:"
+          },
+          {
+            "type": "p",
+            "text": "El múltiplo de 2 escudos dio nacimiento al célebre doblón (conocido en los mercados continentales como pistola), que se transformó en la divisa áurea referente de las transacciones militares e institucionales de la diplomacia imperial."
+          },
+          {
+            "type": "p",
+            "text": "En la cúspide de este sistema se situaba la pieza de 8 escudos, la majestuosa onza de oro (doblón de a ocho o cuádruplo), cuya masa aproximada de 27,06 gramos representó el depósito de valor patrimonial más respetado en la banca de las naciones occidentales. A través de estos múltiplos áureos, la Corona consolidó un bimetalismo simétrico con respecto a las emisiones argentíferas de 8 reales."
+          },
+          {
+            "type": "h3",
+            "text": "La Peseta y la Modernización Monetaria (1868–2002)"
+          },
+          {
+            "type": "p",
+            "text": "El colapso del complejo monetario del Antiguo Régimen y la dispersión de unidades tradicionales culminaron tras el triunfo de la Revolución Gloriosa en 1868. Mediante el Decreto de 19 de octubre de 1868, promovido por el ministro de Hacienda Laureano Figuerola bajo el Gobierno Provisional del general Serrano, se instauró la peseta como la unidad monetaria indivisible y única del Reino de España. La medida sepultó el intrincado régimen contable de reales, maravedís y escudos, estableciendo que una peseta equivalía exactamente a 4 reales o a 0,25 escudos vigentes."
+          },
+          {
+            "type": "p",
+            "text": "La arquitectura de la peseta fue concebida para alinear la política económica española con las pautas técnicas de la Unión Monetaria Latina (UML), organismo multilateral fundado en 1865 por Francia, Bélgica, Italia y Suiza. Bajo esta convergencia, la pieza estandarte del nuevo marco fue la moneda de 5 pesetas (heredera directa del \"duro\"), acuñada en plata de 900 milésimas, con un diámetro de 37 milímetros y un peso exacto de 25,00 gramos, parangonándose a la paridad fija del franco francés de la época. Las fracciones menores de 1 y 2 pesetas pasaron a labrarse en plata fiduciaria de 835 milésimas, mientras que las monedas menudas de 1, 2, 5 y 10 céntimos adoptaron el bronce."
+          },
+          {
+            "type": "p",
+            "text": "En el orden iconográfico, el grabador principal de la Casa de Moneda de Madrid, Luis Marchionni, concibió para la pieza de una peseta de 1869 una composición inspirada en la numismática antigua del emperador Adriano: la alegoría de Hispania recostada sobre los Pirineos, sosteniendo una rama de olivo y con el peñón de Gibraltar a sus plantas. Por su parte, las emisiones fraccionarias de bronce plasmaron la figura de una matrona sedente custodiando el escudo nacional junto a un león rampante, motivo estilístico que desató la chispa popular al confundirse el felino con un can, instaurándose las expresiones coloquiales de \"perra gorda\" (10 céntimos) y \"perra chica\" (5 céntimos)."
+          },
+          {
+            "type": "p",
+            "text": "La reforma de 1868 impuso asimismo la concentración manufacturera en la Ceca de Madrid, clausurando progresivamente los talleres provinciales de Sevilla, Segovia y Barcelona, dando origen a la Fábrica Nacional de Moneda y Timbre (FNMT). En este proceso se implementó el sistema técnico de estrellas de acuñación: en el campo principal de la moneda se grababa la fecha oficial del decreto de autorización legislativa, al tiempo que dentro de las diminutas estrellas laterales de seis puntas (distintivo del taller madrileño) se troquelaba en números microscópicos el año efectivo y cronológico en que el cospel era batido. Esta particularidad constituye un eje de estudio para la disciplina, pues especímenes con una fecha de impronta visible idéntica ocultan rarezas cronológicas extraordinarias cifradas en sus estrellas."
+          }
+        ],
+        "id": "evolucion"
+      },
+      {
+        "title": "Corpus Documental, Bibliografía Especializada e Instituciones Académicas",
+        "parts": [
+          {
+            "type": "p",
+            "text": "La investigación y catalogación de la numismática en lengua española se apoya en un conjunto de repertorios documentales e instituciones científicas de larga tradición:"
+          },
+          {
+            "type": "p",
+            "text": "El catálogo canónico por antonomasia para el análisis sistemático de la era moderna y contemporánea es Numismática Española: Catálogo de todas las monedas emitidas desde los Reyes Católicos hasta Felipe VI, editado de forma continua por la firma decana Áureo & Calicó. Su sistema de clasificación por reinados, módulos, variantes y siglas de ensayadores actúa como código estándar en gabinetes museísticos y salas de subasta internacionales."
+          },
+          {
+            "type": "p",
+            "text": "En paralelo, la magna obra Las Monedas Españolas, desarrollada en múltiples volúmenes por Carlos Castán junto a Juan Ramón, Clemente y Adolfo Cayón, ofrece un barrido analítico que abarca desde los tremises suevos y visigodos hasta las últimas acuñaciones en pesetas y euros, aportando corpus complementarios para la datación de variantes menores."
+          },
+          {
+            "type": "p",
+            "text": "En el campo monográfico del real de a ocho resulta referencial la obra fundacional de Adolfo Herrera, El Duro (1914), estudio histórico-descriptivo que sentó las bases para el análisis morfológico de las piezas de plata de gran módulo producidas en ambos hemisferios."
+          },
+          {
+            "type": "p",
+            "text": "Para el ámbito específico de las emisiones hispanoamericanas a martillo procedentes de flotas de Indias y contextos subacuáticos, destaca el manual técnico de Frank y Daniel Sedwick, The Practical Book of Cobs, referencia para la discriminación de ensayadores, cecas ultramarinas y detección de falsificaciones de época."
+          },
+          {
+            "type": "p",
+            "text": "El dinamismo académico del sector emana primordialmente de la Sociedad Iberoamericana de Estudios Numismáticos (SIAEN), instituida en Madrid en marzo de 1951. En coedición permanente con el Museo Casa de la Moneda, la entidad publica la revista científica Nvmisma, la cabecera periódica arbitrada de mayor rigor analítico y antigüedad del ámbito iberoamericano."
+          },
+          {
+            "type": "p",
+            "text": "El Museo Casa de la Moneda, dependiente de la FNMT, custodia uno de los gabinetes numismáticos, medallísticos y de maquinaria de acuñación más completos del orbe europeo. Estas entidades interactúan con la Asociación Numismática Española (ANE), editora de Gaceta Numismática, y con la Asociación Española de Numismáticos Profesionales (AENP), sociedad adherida a los principios deontológicos de la International Association of Professional Numismatists (IAPN) para certificar la catalogación, la debida diligencia de procedencia y la autenticidad en el tráfico patrimonial."
+          }
+        ],
+        "id": "corpus"
+      },
+      {
+        "title": "Conclusiones",
+        "parts": [
+          {
+            "type": "p",
+            "text": "La numismática constituye un observatorio multidisciplinar en el que convergen la metalurgia aplicada, el derecho soberano, la metrología fiscal y la iconografía del poder político. El estudio del numerario hispánico y latinoamericano documenta con nitidez esta correlación: la instauración del Real de a Ocho tras la Pragmática de Medina del Campo en 1497 cimentó la primera divisa con liquidez verdaderamente planetaria, vertebrando los intercambios entre América, Europa y Asia, mientras que las sucesivas manipulaciones inflacionarias del vellón castellano en el siglo XVII demostraron los límites del intervencionismo fiduciario frente a los mercados de materias primas."
+          },
+          {
+            "type": "p",
+            "text": "Asimismo, la racionalización científica plasmada en la creación de la peseta bajo los parámetros de la Unión Monetaria Latina en 1868 ilustra cómo la centralización fabril y la estandarización tipológica respondieron a las exigencias comerciales de la industrialización contemporánea. En el presente, la numismática afianza su rigor metodológico descartando materiales destructivos como el PVC, revalorizando la intangibilidad de la pátina original y defendiendo la preservación del objeto monetario no como una simple mercancía, sino como un documento histórico primario inalterable."
+          }
+        ],
+        "id": "conclusiones"
+      }
+    ],
+    "worksCitedTitle": "Fuentes citadas",
+    "worksCitedCaption": "Fuentes documentales de esta guía",
+    "standardLabel": "Estándar Notofilia"
+  },
+  "en": {
+    "sections": [
+      {
+        "title": "Definition, etymology, and the epistemological dimension",
+        "parts": [
+          {
+            "type": "p",
+            "text": "Numismatics goes beyond cataloguing and hoarding objects of exchange. It stands as an autonomous scientific discipline and an indispensable auxiliary science for archaeology, epigraphy, economic history, and political sociology. Etymologically the term comes from Latin numisma (a variant of nomisma), a loan from classical Greek nómisma (νόμισμα, “established custom,” “current coin”), itself from nómos (νόμος, “law” or “norm”). That root reflects the fiduciary essence of coinage: a ponderal and exchange standard backed by the rule of law and the public faith of a sovereign authority."
+          },
+          {
+            "type": "p",
+            "text": "On the epistemological side, numismatic testimony has advantages over handwritten documentary sources. As an official product manufactured in series under strict state mandate, the coin is a first-hand, uninterpolated document that fixes incontrovertible chronological coordinates. In archaeological contexts a find of coinage supplies the terminus post quem needed to date strata. It also records the expansion or contraction of trade networks, the integration of regional economies, and fluctuations in purchasing power through the debasement or strengthening of metallic alloys."
+          },
+          {
+            "type": "p",
+            "text": "The discipline works through two complementary dimensions. Historical and metrological research treats the monetary document as a vector of political propaganda, a reflection of theological or dynastic programmes, and direct testimony of fiscal accounting. Systematic preservation and collecting, for their part, safeguard material heritage against melting, keeping complete series that allow die-chains to be reconstructed, output to be estimated, and typological varieties unnoticed in administrative archives to be recorded."
+          },
+          {
+            "type": "p",
+            "text": "The field is articulated in chronological branches and instrumental specialisms. Ancient numismatics runs from the origins of striking in Lydia and the Hellenic series through pre-Roman Hispanic issues and the Roman and Byzantine imperial systems. Medieval numismatics analyses the post-Roman economic fragmentation: Suevic and Visigothic series, the Andalusi monetary complex, and the municipal and feudal issues of the Christian kingdoms of the peninsula. Modern and contemporary numismatics covers the normative unification of the Catholic Monarchs and the industrialisation of the viceregal mints through nineteenth-century decimalisation. These areas are complemented by notaphily, devoted to paper money and related fiduciary values, and by exonumia, which systematises paramonetary artefacts without strict legal tender: commemorative medals, obsidional or siege coins, hacienda tokens, mercantile lead pieces, and jetons of account."
+          }
+        ],
+        "id": "definicion"
+      },
+      {
+        "title": "Anatomy, metrology, and the technical morphology of the coin",
+        "parts": [
+          {
+            "type": "p",
+            "text": "The scientific examination of a coin requires a precise taxonomic nomenclature. The two flat surfaces, bounded by the piece’s perimeter thickness, are the obverse and the reverse. By general convention the obverse, or haz, carries the sovereign’s effigy, the institutional arms of the issuing political body, or the motif of highest institutional rank, while the reverse, or envés, records accessory territorial arms, the face value, secondary allegories, or inscriptions of a devotional kind. The outer perimeter is protected by the edge, which may be plain or worked with grooves, slots, and corded patterns to inhibit fraudulent clipping of metal."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Numismatic component",
+              "Technical definition and operative function"
+            ],
+            "rows": [
+              [
+                "Obverse (face / haz)",
+                "The principal face, bearing the hegemonic type of sovereignty: the ruler’s portrait, a state emblem, or a personification of political authority."
+              ],
+              [
+                "Reverse (cross / envés)",
+                "The complementary face, usually reserved for the face value, secondary allegorical types, and doctrinal legends."
+              ],
+              [
+                "Edge",
+                "The perimeter thickness that bounds both faces. It is worked with incuse legends or relief so that any clipping or mutilation of metal is mechanically evident."
+              ],
+              [
+                "Exergue",
+                "The lower segment of one or both faces, separated from the field by a horizontal line; it usually holds the date, the mintmark, or the engraver’s signatures."
+              ],
+              [
+                "Field",
+                "The plain ground on which the relief types and epigraphic inscriptions are struck."
+              ],
+              [
+                "Border of dots (gráfila)",
+                "A circular fillet or border (often of dots, striations, or continuous moulding) set at the edge of the field to frame the design."
+              ],
+              [
+                "Rim (listel)",
+                "A raised annular metal rim that delimits both faces, intended to spare the central types from continuous rubbing."
+              ],
+              [
+                "Module and weight",
+                "Module is the outer diameter in millimetres; weight certifies the intrinsic mass in grams or in historical ponderal units (marcos, ounces, adarmes)."
+              ],
+              [
+                "Fineness (ley)",
+                "The exact proportion of precious metal (gold or silver) in the alloy, historically reckoned in carats or dineros and in modern times in thousandths."
+              ],
+              [
+                "Die axis",
+                "The vertical relationship between obverse and reverse types after a 180° horizontal turn. Coin alignment inverts the reverse; medal alignment keeps both faces upright."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "The physical making of the pieces in the monetary workshops was overseen by a sworn bureaucratic apparatus. The mint — the word comes from Hispano-Arabic sikka, a matrix or striking die — was the state factory where melting, rolling, cutting of the planchet, and stamping of the types with dies engraved by the die-sinkers were carried out."
+          },
+          {
+            "type": "p",
+            "text": "Each workshop built a mintmark into the design (isolated letters, monograms, or iconographic elements) to identify the institutional origin of the issue. Beside that rubric, as a rule, stood the assayer’s mark: the civil officer responsible for auditing, by crucible and balance, the purity of the metallic paste and the intrinsic weight of the batch of planchets. Any shortfall from the fine metal stipulated in the ordinances brought criminal prosecution of the assayer, whose initials on the field of the coin served as a legal guarantee to holders of the money. Finally the judge of the balance closed the production cycle, auditing the tonnage of noble metal that entered the workshop and certifying that the finished product met the legal tolerances of weight and taille for each marco struck."
+          }
+        ],
+        "id": "anatomia"
+      },
+      {
+        "title": "Condition, grading, and material pathology",
+        "parts": [
+          {
+            "type": "p",
+            "text": "Classifying the physical state of a monetary specimen is decisive for evaluating its material testimony and its market standing. In the European and Spanish-speaking tradition a qualitative descriptive system has prevailed, dividing wear of the relief into discrete grades, from severely degraded examples to intact pieces of mint origin."
+          },
+          {
+            "type": "p",
+            "text": "At the same time, international numismatics has adopted the 70-point quantitative scale originally conceived by William Herbert Sheldon in 1949 for North American copper cents — a model that, by the late twentieth century, independent certification firms had universalised for grading any historical issue."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Spanish qualitative scale",
+              "Abbrev.",
+              "Sheldon scale",
+              "Morphological criteria and surface wear"
+            ],
+            "rows": [
+              [
+                "Poor / Fair",
+                "MC / RC",
+                "1 – 3",
+                "Critical wear; silhouettes barely identifiable; legends illegible or almost wholly lost; severe mechanical deformation may be present."
+              ],
+              [
+                "Good",
+                "BC",
+                "4 – 15",
+                "Long circulation; principal types evenly flattened yet readable in their main lines; fields marked by rubbing."
+              ],
+              [
+                "Very Fine",
+                "MBC",
+                "20 – 35",
+                "Moderate wear confined to the high points (cheeks, hair curls, elements of arms); legends and borders fully sharp."
+              ],
+              [
+                "Extremely Fine",
+                "EBC",
+                "40 – 58",
+                "Brief circulation; only the slightest wear on the highest points of relief; a substantial part of original mint lustre remains in the field."
+              ],
+              [
+                "Uncirculated",
+                "SC",
+                "60 – 64",
+                "No wear from circulation; full integrity of relief; original cartwheel mint lustre remains, with bag contact marks tolerated."
+              ],
+              [
+                "Fleur de coin",
+                "FDC",
+                "65 – 70",
+                "An exceptional, immaculate piece that preserves the microscopic freshness of the original strike; full stroboscopic lustre and surfaces free of visible erosion under magnification."
+              ],
+              [
+                "Proof",
+                "Proof",
+                "PR / PF 60 – 70",
+                "A technical finish not intended for ordinary circulation; dies polished with diamond paste and treated planchets, producing contrast between a mirrored field and frosted relief."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Long-term preservation of numismatic holdings rests on strict principles of preventive conservation. The principal agent of anthropogenic degradation in collections is chemically unstable plastic, above all flexible polyvinyl chloride (PVC) sleeves. PVC needs a massive load of plasticising additives (such as phthalate esters) to gain flexibility; over time, and with swings of temperature and relative humidity, those plasticisers exude toward the polymer surface and hydrolyse, releasing chlorinated compounds."
+          },
+          {
+            "type": "p",
+            "text": "That exudate attacks the metallic surface, forming a viscous, green, acidic film of copper or silver oleates and chlorides that penetrates the molecular pores of the planchet and causes irreversible corrosion microcavities. To avoid this destructive pathology, storage must be restricted to chemically neutral containers: inert biaxial polyester films (Mylar), plasticiser-free polymethyl methacrylate (PMMA) capsules, and envelopes made of acid-free, lignin-free rag paper."
+          },
+          {
+            "type": "p",
+            "text": "The second critical factor of deterioration is imprudent cleaning with mechanical agents or chemical reagents. Patina is not dirt to be removed. It is a microscopic mineral passivation layer (silver sulphides, carbonates, and copper cuprites) formed by the secular interaction of the noble metal with its microenvironment. That film stabilises the metallic core, supplies historical authenticity, and heightens the three-dimensional aesthetic of the engraving. Abrasive polishes or baths in acidic deoxidising solutions dissolve this passivating layer, expose virgin metal, and leave friction scars (hairlines). The assault destroys original mint lustre (the cartwheel effect) and diminishes the historical-economic value of the material testimony."
+          }
+        ],
+        "id": "conservacion"
+      },
+      {
+        "title": "Historical development of Hispanic and Latin American monetary systems",
+        "parts": [
+          {
+            "type": "h3",
+            "text": "The real de a ocho and the architecture of global trade"
+          },
+          {
+            "type": "p",
+            "text": "The backbone of the modern Hispanic economy and of international trade for more than three centuries was the real de a ocho, known in mercantile historiography as the Spanish dollar, piastra, or peso fuerte. The legal bases of this monetary standard were consolidated on 13 June 1497 by the Catholic Monarchs in the Pragmática of Medina del Campo, which fixed the mass and purity of the silver real at 67 pieces to the Castilian marco (230.0465 grams), with an intrinsic fineness of 11 dineros and 4 grains, equivalent to 930.55 thousandths. The need to channel the silver flow from Potosí and the New Spanish mines later drove large-scale production of the multiple of 8 reales, a coin of about 27.46 grams of high-grade silver."
+          },
+          {
+            "type": "p",
+            "text": "The manufacture of the real de a ocho passed through four successive typological and technical phases:"
+          },
+          {
+            "type": "p",
+            "text": "The founding stage corresponds to the cobs (from Quechua makukina, “that which is struck,” or Arabic majquq, “marked”), coins produced by hammer blows on irregular planchets scissor-cut from a cast strip. Their jagged outline and uneven thickness made the type a constant target of fraudulent filing, since users could clip fractions of precious metal without wholly obliterating the central assayer’s marks and the Jerusalem cross."
+          },
+          {
+            "type": "p",
+            "text": "That vulnerability forced, in 1732, the adoption of mechanical screw presses at the Mexico Mint and opened the cycle of the famous pillar dollars, or milled-edge coins. The pillar types showed on the reverse the two spheres personifying the Old and New Worlds under the Hispanic crown, flanked by the Pillars of Hercules with the cartouche PLUS ULTRA, while the edge received a braided or tulip milling that made clandestine clipping useless."
+          },
+          {
+            "type": "p",
+            "text": "From the reforming pragmatic of 1772 issued by Charles III, the architectural design of the columns gave way to royal-bust coins uniformed under the neoclassical canon of the Enlightenment, a phase in which the Crown reduced the fineness of the silver, lowering it gradually to 902.7 thousandths in 1772 and to 895.8 thousandths in 1786."
+          },
+          {
+            "type": "p",
+            "text": "The purity and stability of this coin eased its expansion toward Asian ports through the Manila Galleon. In the mercantile circuits of southern China, Hispanic and New Spanish 8-real money became the standard means of payment. To vouch for the authenticity of the silver against spurious melts, local bankers (shroffs) stamped small incuse countermarks with ideograms, known as chopmarks, into the field. The monetary hegemony of the peso fuerte was so decisive that it formally inspired the creation of the United States dollar by the Coinage Act of 1792, underpinned the appearance of the Chinese yuan and the Japanese yen, and supplied the structural base on which the monetary standards of the nascent Spanish-American republics were erected after emancipation."
+          },
+          {
+            "type": "h3",
+            "text": "Structural overview of the principal American mints"
+          },
+          {
+            "type": "p",
+            "text": "The geographic immensity of the New World required a network of monetary factories close to the mining basins and to the viceregal seats of power."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Mint",
+              "Established",
+              "Mintmarks",
+              "Historical significance and production notes"
+            ],
+            "rows": [
+              [
+                "México",
+                "1535",
+                "M, o/M",
+                "First mint on the American mainland; in continuous operation from the reign of Charles and Joanna; pioneer laboratory for screw-press mechanization in 1732."
+              ],
+              [
+                "Lima",
+                "1565",
+                "P, L, LIMA",
+                "The nerve center of the Peruvian viceroyalty; closed temporarily in 1572 after Potosí’s mining primacy, and restored to regular work from 1659 and 1684."
+              ],
+              [
+                "Potosí",
+                "1572",
+                "P, PTS (monograma)",
+                "The most active issuing complex of the early modern world, at the foot of the Cerro Rico; responsible for massive cob issues and the scene of the seventeenth-century assay scandal."
+              ],
+              [
+                "Guatemala",
+                "1731 / 1733",
+                "G, NG",
+                "Fourth official workshop on the continent; hammered coin until 1751, then introduced milled edges to supply the Captaincy General."
+              ],
+              [
+                "Santiago de Chile",
+                "1743 / 1749",
+                "S, o/S",
+                "Founded as a privately concessioned mint and later incorporated by the Crown; it began work striking a gold half-onza with the effigy of Ferdinand VI."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "The maravedí: from Muslim gold to the collapse of billon"
+          },
+          {
+            "type": "p",
+            "text": "The trajectory of the maravedí synthesizes the economic and fiscal history of the Hispanic monarchy. Born formally in the twelfth century as the morabetí, a Christian imitation in fine gold of the Almoravid dinar struck in Toledo by Alfonso VIII, the maravedí at first kept a high prestige. With the late-medieval advance and the military costs of the Reconquista, the gold maravedí disappeared from physical traffic and became an abstract money of account that valued the real pieces in circulation."
+          },
+          {
+            "type": "p",
+            "text": "From the Renaissance reforms of Henry III, the Catholic Monarchs, and Charles I, the physical maravedí reappeared transmuted into the lowest stratum of the monetary pyramid: billon fractions (a copper alloy with minimal proportions of silver) destined for the everyday small change of popular sectors."
+          },
+          {
+            "type": "p",
+            "text": "During the seventeenth century, under Philip III and Philip IV, the maravedí starred in one of the sharpest inflationary crises of the Ancien Régime. Faced with the fiscal deficit caused by the Thirty Years’ War and the insolvency of the royal Treasury, the monarchy resorted to massive minting of billon of nil ligature (pure copper, vulgarly called calderilla) and to successive forced waves of counterstamps. The State obliged private holders to present their small change at the mints so that punches could stamp a double or triple nominal value over the pre-existing face (notably the campaigns of 1603, 1641–1642, and 1651–1652), seeking a seigniorage revenue without altering the metallic mass of the piece."
+          },
+          {
+            "type": "p",
+            "text": "The direct result was recurrent price distortion, the collapse of domestic credit, and the practical application of Gresham’s Law, by which bad billon money drove good silver out of peninsular circulation; the silver fled toward European mercantile markets."
+          },
+          {
+            "type": "h3",
+            "text": "The gold standard: escudos and doubloons"
+          },
+          {
+            "type": "p",
+            "text": "The modern gold structure was codified by Charles I in 1537 when he instituted the escudo, or corona, a piece of 3.38 grams of 22-carat gold (916.6 thousandths fine) conceived to replace the Castilian ducat of the old type. The architecture of gold coinage was organized in strictly coordinated multiples:"
+          },
+          {
+            "type": "p",
+            "text": "The multiple of 2 escudos gave birth to the celebrated doubloon (known in continental markets as the pistole), which became the reference gold currency for military and institutional transactions of imperial diplomacy."
+          },
+          {
+            "type": "p",
+            "text": "At the summit of this system stood the piece of 8 escudos, the majestic gold onza (doubloon of eight, or quadruplo), whose approximate mass of 27.06 grams was the most respected store of patrimonial value in the banking of Western nations. Through these gold multiples the Crown consolidated a symmetrical bimetallism with the silver issues of 8 reales."
+          },
+          {
+            "type": "h3",
+            "text": "The peseta and monetary modernization (1868–2002)"
+          },
+          {
+            "type": "p",
+            "text": "The collapse of the Ancien Régime monetary complex and the scatter of traditional units culminated after the triumph of the Glorious Revolution in 1868. By the Decree of 19 October 1868, promoted by Finance Minister Laureano Figuerola under the Provisional Government of General Serrano, the peseta was instituted as the indivisible and sole monetary unit of the Kingdom of Spain. The measure buried the intricate accounting regime of reales, maravedís, and escudos, establishing that one peseta equalled exactly 4 reales or 0.25 of the escudos then current."
+          },
+          {
+            "type": "p",
+            "text": "The architecture of the peseta was conceived to align Spanish economic policy with the technical standards of the Latin Monetary Union (LMU), a multilateral body founded in 1865 by France, Belgium, Italy, and Switzerland. Under that convergence the flagship piece of the new frame was the 5-peseta coin (direct heir of the duro), struck in silver of 900 thousandths, 37 millimetres in diameter and an exact weight of 25.00 grams, matching the fixed parity of the French franc of the period. The lesser fractions of 1 and 2 pesetas were struck in fiduciary silver of 835 thousandths, while the small coins of 1, 2, 5, and 10 céntimos adopted bronze."
+          },
+          {
+            "type": "p",
+            "text": "In the iconographic order, the principal engraver of the Madrid Mint, Luis Marchionni, conceived for the one-peseta piece of 1869 a composition inspired by the ancient numismatics of the emperor Hadrian: the allegory of Hispania reclining on the Pyrenees, holding an olive branch, with the Rock of Gibraltar at her feet. The bronze fractional issues, for their part, showed a seated matron guarding the national arms beside a rampant lion — a stylistic motif that sparked popular wit when the feline was mistaken for a dog, giving rise to the colloquial expressions perra gorda (10 céntimos) and perra chica (5 céntimos)."
+          },
+          {
+            "type": "p",
+            "text": "The 1868 reform also imposed manufacturing concentration at the Madrid Mint, progressively closing the provincial workshops of Seville, Segovia, and Barcelona and giving rise to the Fábrica Nacional de Moneda y Timbre (FNMT). In this process the technical system of minting stars was implemented: the official date of the legislative authorising decree was engraved in the principal field, while inside the tiny six-pointed lateral stars (the mark of the Madrid workshop) the effective calendar year in which the planchet was struck was punched in microscopic numerals. That particularity is an axis of study for the discipline, because specimens with an identical visible imprint date hide extraordinary chronological rarities ciphered in their stars."
+          }
+        ],
+        "id": "evolucion"
+      },
+      {
+        "title": "Documentary corpus, specialist bibliography, and academic institutions",
+        "parts": [
+          {
+            "type": "p",
+            "text": "Research and cataloguing of numismatics in Spanish rest on a set of documentary repertoires and scientific institutions of long standing:"
+          },
+          {
+            "type": "p",
+            "text": "The canonical catalogue par excellence for the systematic analysis of the modern and contemporary era is Numismática Española: Catálogo de todas las monedas emitidas desde los Reyes Católicos hasta Felipe VI, issued continuously by the senior firm Áureo & Calicó. Its classification by reigns, modules, varieties, and assayer initials acts as a standard code in museum cabinets and international auction rooms."
+          },
+          {
+            "type": "p",
+            "text": "In parallel, the major work Las Monedas Españolas, developed in multiple volumes by Carlos Castán together with Juan Ramón, Clemente, and Adolfo Cayón, offers an analytical sweep from Suevic and Visigothic tremisses to the last strikings in pesetas and euros, supplying complementary corpora for dating minor varieties."
+          },
+          {
+            "type": "p",
+            "text": "In the monographic field of the real de a ocho the foundational work remains Adolfo Herrera’s El Duro (1914), a historical-descriptive study that laid the bases for the morphological analysis of large-module silver pieces produced in both hemispheres."
+          },
+          {
+            "type": "p",
+            "text": "For hammered Spanish-American issues from the Indies fleets and underwater contexts, the technical manual of Frank and Daniel Sedwick, The Practical Book of Cobs, is the reference for discriminating assayers, overseas mints, and detecting contemporary counterfeits."
+          },
+          {
+            "type": "p",
+            "text": "The sector’s academic dynamism comes primarily from the Sociedad Iberoamericana de Estudios Numismáticos (SIAEN), instituted in Madrid in March 1951. In permanent co-edition with the Museo Casa de la Moneda, the body publishes the scientific journal Nvmisma, the refereed periodical of greatest analytical rigour and seniority in the Ibero-American sphere."
+          },
+          {
+            "type": "p",
+            "text": "The Museo Casa de la Moneda, under the FNMT, holds one of the most complete numismatic, medallic, and minting-machinery cabinets in the European world. These entities interact with the Asociación Numismática Española (ANE), publisher of Gaceta Numismática, and with the Asociación Española de Numismáticos Profesionales (AENP), a society adhering to the deontological principles of the International Association of Professional Numismatists (IAPN) to certify cataloguing, due diligence of provenance, and authenticity in heritage traffic."
+          }
+        ],
+        "id": "corpus"
+      },
+      {
+        "title": "Conclusions",
+        "parts": [
+          {
+            "type": "p",
+            "text": "Numismatics is a multidisciplinary observatory in which applied metallurgy, sovereign law, fiscal metrology, and the iconography of political power converge. The study of Hispanic and Latin American coinage documents that correlation with clarity: the institution of the real de a ocho after the Pragmática of Medina del Campo in 1497 cemented the first currency with truly planetary liquidity, structuring exchanges among America, Europe, and Asia, while the successive inflationary manipulations of Castilian billon in the seventeenth century demonstrated the limits of fiduciary interventionism against raw-material markets."
+          },
+          {
+            "type": "p",
+            "text": "Likewise, the scientific rationalisation embodied in the creation of the peseta under the parameters of the Latin Monetary Union in 1868 illustrates how factory centralisation and typological standardisation answered the commercial demands of contemporary industrialisation. In the present, numismatics consolidates its methodological rigour by discarding destructive materials such as PVC, revaluing the intangibility of original patina, and defending the preservation of the monetary object not as a mere commodity but as an unalterable primary historical document."
+          }
+        ],
+        "id": "conclusiones"
+      }
+    ],
+    "worksCitedTitle": "Works cited",
+    "worksCitedCaption": "Documentary sources for this guide",
+    "standardLabel": "Notofilia standard"
+  },
+  "worksCited": [
+    {
+      "n": 1,
+      "title": "Diccionario numismático",
+      "href": "https://catalogodemonedas.es/?q=catalogo/diccionario",
+      "internal": false
+    },
+    {
+      "n": 2,
+      "title": "Más allá del coleccionismo: la Numismática como disciplina auxiliar",
+      "href": "https://elventanillo.uanl.mx/historia/mas-alla-del-coleccionismo-la-numismatica-como-disciplina-auxiliar-de-la-historia/",
+      "internal": false
+    },
+    {
+      "n": 3,
+      "title": "Historia de la Peseta - FNMT",
+      "href": "https://www.fnmt.es/historia-de-la-peseta/-/asset_publisher/m2ciOeDWChKi/content/moned-1/pop_up",
+      "internal": false
+    },
+    {
+      "n": 4,
+      "title": "El Real de a 8: Auge y caída de la primera moneda universal",
+      "href": "https://coleccionismodemonedas.com/real-de-a-8/",
+      "internal": false
+    },
+    {
+      "n": 5,
+      "title": "Numismática online - We are Numismatics",
+      "href": "https://wearenumismatics.com/numismatica-online/",
+      "internal": false
+    },
+    {
+      "n": 6,
+      "title": "El Catálogo \"Numismática Española\", Ed. 2019",
+      "href": "https://blognumismatico.com/2019/12/10/el-catalogo-numismatica-espanola-ed-2019/",
+      "internal": false
+    },
+    {
+      "n": 7,
+      "title": "Revista Nvmisma - SIAEN",
+      "href": "https://www.siaen.org/revista-nvmisma",
+      "internal": false
+    },
+    {
+      "n": 8,
+      "title": "El maravedí. Monedas para el pueblo - | Ministerio de Cultura",
+      "href": "https://www.man.es/man/exposiciones/recorridos-tematicos/dracma-euro/maravedi.html",
+      "internal": false
+    },
+    {
+      "n": 9,
+      "title": "las monedas españolas: del tremis al euro: del 411 a nuestros días",
+      "href": "https://www.buscalibre.com/int-es/libro-las-monedas-espanolas-del-tremis-al-euro-del-411-a-nuestros-dias/26015128/p/26015128",
+      "internal": false
+    },
+    {
+      "n": 10,
+      "title": "Glosario - eNumismatic",
+      "href": "https://www.enumismatic.com/glossary.php",
+      "internal": false
+    },
+    {
+      "n": 11,
+      "title": "Numismática Española - Numista",
+      "href": "https://es.numista.com/L106049",
+      "internal": false
+    },
+    {
+      "n": 12,
+      "title": "Las Monedas Españolas de la Edad Contemporánea - Numista",
+      "href": "https://es.numista.com/L100017",
+      "internal": false
+    },
+    {
+      "n": 13,
+      "title": "Mylar sí, plástico no: cómo guardar sus billetes - Notofilia",
+      "href": "/blog/mylar-si-plastico-no-como-guardar-billetes/",
+      "internal": true
+    },
+    {
+      "n": 14,
+      "title": "Trabajo científico - Museo Casa de la Moneda",
+      "href": "https://www.museocasadelamoneda.es/museo/trabajo-cientifico",
+      "internal": false
+    },
+    {
+      "n": 15,
+      "title": "Cecas Coloniales.cdr",
+      "href": "https://coins.su/forum/applications/core/interface/file/attachment.php?id=1540420",
+      "internal": false
+    },
+    {
+      "n": 16,
+      "title": "Cayón Numismática: Inicio",
+      "href": "https://www.cayon.com/",
+      "internal": false
+    },
+    {
+      "n": 17,
+      "title": "Libros. Numismática española - Moncayon.com",
+      "href": "http://www.moncayon.com/pdf/libros-numismatica-espanola.pdf",
+      "internal": false
+    },
+    {
+      "n": 18,
+      "title": "componentes de una moneda — Anverso, reverso, canto y leyendas",
+      "href": "https://stonexbullion.com/es/blog/como-leer-una-moneda/",
+      "internal": false
+    },
+    {
+      "n": 19,
+      "title": "Partes de una moneda y sus definiciones - Foronum",
+      "href": "https://www.foronum.com/numismatica/partes-moneda-definicion",
+      "internal": false
+    },
+    {
+      "n": 20,
+      "title": "Componentes de una moneda: anverso, reverso, canto e ... - Aurica",
+      "href": "https://aurica.cl/markets/article/como-leer-una-moneda-componentes-de-una-moneda-anverso-reverso-canto-e-inscripciones",
+      "internal": false
+    },
+    {
+      "n": 21,
+      "title": "Diccionario de términos numismáticos",
+      "href": "https://www.imperio-numismatico.com/t6427-diccionario-de-terminos-numismaticos",
+      "internal": false
+    },
+    {
+      "n": 22,
+      "title": "Historia numismática de España - Wikipedia, la enciclopedia libre",
+      "href": "https://es.wikipedia.org/wiki/Historia_numism%C3%A1tica_de_Espa%C3%B1a",
+      "internal": false
+    },
+    {
+      "n": 23,
+      "title": "Glosario - NUMISMATICA Y HISTORIA - WordPress.com",
+      "href": "https://orzoweisite.wordpress.com/glosario/",
+      "internal": false
+    },
+    {
+      "n": 24,
+      "title": "FELIPE IV 1621- 1665 - leyendo monedas/numismatica",
+      "href": "https://leyendomonedasnumismatica.blog/category/felipe-iv-1621-1665-2/",
+      "internal": false
+    },
+    {
+      "n": 25,
+      "title": "Marcas y Ensayadores de Ceca Española | PDF - Scribd",
+      "href": "https://es.scribd.com/document/587888107/Libro-Cecas-Ensayadores",
+      "internal": false
+    },
+    {
+      "n": 26,
+      "title": "The Practical Book of Cobs",
+      "href": "https://en-academic.com/dic.nsf/enwiki/11497969",
+      "internal": false
+    },
+    {
+      "n": 27,
+      "title": "(c) Portal Fuenterrebollo «««",
+      "href": "https://www.fuenterrebollo.com/faqs-numismatica/cecas/ceca-potosi.html",
+      "internal": false
+    },
+    {
+      "n": 28,
+      "title": "Las Marcas de Ceca en las Monedas. - YouTube",
+      "href": "https://www.youtube.com/watch?v=eNI8XZsn4M8",
+      "internal": false
+    },
+    {
+      "n": 29,
+      "title": "Cómo clasificar monedas: escala Sheldon y española",
+      "href": "https://www.numivium.com/blogs/guiaparacoleccionistas/guia-de-clasificacion-de-las-monedas",
+      "internal": false
+    },
+    {
+      "n": 30,
+      "title": "¿Qué es la escala Sheldon?: Definición, Grados y Ejemplos",
+      "href": "https://coleccionismodemonedas.com/escala-sheldon/",
+      "internal": false
+    },
+    {
+      "n": 31,
+      "title": "Cómo Identificar (correctamente) el Grado de Conservación de tu",
+      "href": "https://www.coleccionistasdemonedas.com/graduacion-estado-de-conservacion-de-monedas-antiguas/",
+      "internal": false
+    },
+    {
+      "n": 32,
+      "title": "NGCX: La nueva escala para graduar monedas - Blog Numismático",
+      "href": "https://blognumismatico.com/2023/03/09/ngcx-la-nueva-escala-para-graduar-monedas/",
+      "internal": false
+    },
+    {
+      "n": 33,
+      "title": "Escala Sheldon: qué es, grados y conservación",
+      "href": "https://realesdea8.com/escala-sheldon-numismatica/",
+      "internal": false
+    },
+    {
+      "n": 34,
+      "title": "Términos numismáticos - Glosario para principiantes",
+      "href": "https://rarecoin.store/es/blog/numismatica-para-principiantes-el-gran-glosario-de-los-terminos-mas-importantes/",
+      "internal": false
+    },
+    {
+      "n": 35,
+      "title": "Grado de conservación de las monedas - Wikipedia",
+      "href": "https://es.wikipedia.org/wiki/Grado_de_conservaci%C3%B3n_de_las_monedas",
+      "internal": false
+    },
+    {
+      "n": 36,
+      "title": "marzo 2013 - Ars Monetalis",
+      "href": "https://arsmonetalis.blogspot.com/2013/03/",
+      "internal": false
+    },
+    {
+      "n": 37,
+      "title": "“UNAN – NUMISMÁTICA”",
+      "href": "http://www.mascoleccionismo.com/publicaciones/UNAN/UNAN011.pdf",
+      "internal": false
+    },
+    {
+      "n": 38,
+      "title": "Cómo limpiar Monedas Oxidadas sin dañarlas - AccuBANKER México",
+      "href": "https://accubanker.mx/blogs/news/como-limpiar-monedas-oxidadas",
+      "internal": false
+    },
+    {
+      "n": 39,
+      "title": "La Moneda Usada en Chile durante la colonia - El Termómetro",
+      "href": "https://eltermometro.cl/2022/04/la-moneda-usada-en-chile-durante-la-colonia/",
+      "internal": false
+    },
+    {
+      "n": 40,
+      "title": "Diccionario Glosario Numisma - calentamientoglobalacelerado.net",
+      "href": "https://calentamientoglobalacelerado.net/taxcoin/Glosario-numisma-2011.pdf",
+      "internal": false
+    },
+    {
+      "n": 41,
+      "title": "LA CECA HISPANA DE GUATEMALA - Numismática Mayor 25",
+      "href": "http://mayor25.com/noticias/la-ceca-hispana-de-guatemala/",
+      "internal": false
+    },
+    {
+      "n": 42,
+      "title": "Lista por Año - Oscar de la Cruz",
+      "href": "http://oscardelacruzs.com/monedas/anno.htm",
+      "internal": false
+    },
+    {
+      "n": 43,
+      "title": "Los maravedís castellanos resellados en el siglo XVII",
+      "href": "https://mayor25.com/noticias/maravedis-castellanos-resellados/",
+      "internal": false
+    },
+    {
+      "n": 44,
+      "title": "Maravedíes y Reales de a Ocho troceados, el «dinero suelto",
+      "href": "https://novaciencia.es/maravedies-y-reales-de-a-ocho-troceados-la-forma-de-obtener-el-dinero-suelto-de-los-siglos-xvi-y-xvii-en-los-territorios-del-imperio-espanol/",
+      "internal": false
+    },
+    {
+      "n": 45,
+      "title": "la moneda de vellón castellana - Dialnet",
+      "href": "https://dialnet.unirioja.es/descarga/articulo/3702371.pdf",
+      "internal": false
+    },
+    {
+      "n": 46,
+      "title": "Resello a 8 Maravedís de Felipe IV sobre 8 ... - Imperio Numismático",
+      "href": "https://www.imperio-numismatico.com/t175006-resello-a-8-maravedis-de-felipe-iv-sobre-8-maravedis-de-felipe-iv",
+      "internal": false
+    },
+    {
+      "n": 47,
+      "title": "Felipe IV - Resellos de 1651-1652 - Numismática española",
+      "href": "https://catalogodemonedas.es/?q=catalogo/monedas/24/96/170",
+      "internal": false
+    },
+    {
+      "n": 48,
+      "title": "1868. La creación de la peseta - Edad de Plata",
+      "href": "http://www.edaddeplata.org/archivo/img/martin_acena/BILE_111_112.pdf",
+      "internal": false
+    },
+    {
+      "n": 49,
+      "title": "La creación de la peseta y la Unión Monetaria Latina",
+      "href": "http://archivodeinalbis.blogspot.com/2019/06/la-creacion-de-la-peseta-y-la-union.html",
+      "internal": false
+    },
+    {
+      "n": 50,
+      "title": "Ficha Completa - CER.es Colecciones en Red - Búsqueda general",
+      "href": "https://ceres.mcu.es/pages/Main?idt=47479\\&inventary=104772\\&table=FMUS\\&museum=MANT",
+      "internal": false
+    },
+    {
+      "n": 51,
+      "title": "EFEMÉRIDES. Tal día como hoy de 1868, la peseta se ... - YouTube",
+      "href": "https://www.youtube.com/watch?v=x-zQ2UClH_U",
+      "internal": false
+    },
+    {
+      "n": 52,
+      "title": "La revolución monetaria española de 1868 - Revistas UM",
+      "href": "https://revistas.um.es/analeshc/article/download/89911/86841/365981",
+      "internal": false
+    },
+    {
+      "n": 53,
+      "title": "Comprar Catálogo - Aureo & Calicó",
+      "href": "https://www.aureo.com/es/comprarcatalogo",
+      "internal": false
+    },
+    {
+      "n": 54,
+      "title": "Catálogo Las Monedas Españolas / Cayón Subastas",
+      "href": "https://www.lasmonedasespanolas.com/",
+      "internal": false
+    },
+    {
+      "n": 55,
+      "title": "Cayon Juan - AbeBooks",
+      "href": "https://www.abebooks.co.uk/book-search/author/cayon-juan/",
+      "internal": false
+    },
+    {
+      "n": 56,
+      "title": "Las Monedas Españolas - Numista",
+      "href": "https://es.numista.com/L255362",
+      "internal": false
+    },
+    {
+      "n": 57,
+      "title": "Tauler & Fau Subastas Auction 79 (30 Mar 2021) - NumisBids",
+      "href": "https://www.numisbids.com/sale/4591",
+      "internal": false
+    },
+    {
+      "n": 58,
+      "title": "Colonial America: Silver coins circulate widely - Coin World",
+      "href": "https://www.coinworld.com/news/us-coins/cobs-of-early-america.html",
+      "internal": false
+    },
+    {
+      "n": 59,
+      "title": "NVMISMA NÚM. 264 - AÑO 2022 - La Tienda de la FNMT-RCM",
+      "href": "https://tienda.fnmt.es/fnmttv/fnmt/es/p/91303008",
+      "internal": false
+    },
+    {
+      "n": 60,
+      "title": "SIAEN - SIAEN",
+      "href": "https://www.siaen.org/",
+      "internal": false
+    },
+    {
+      "n": 61,
+      "title": "Numismática Filatelica Dracma",
+      "href": "https://www.numismaticadracma.com/",
+      "internal": false
+    },
+    {
+      "n": 62,
+      "title": "Sobre Nosotros, Asociaciones Y Plataformas - Aureo & Calicó",
+      "href": "https://www.aureo.com/es/sobre-nosotros/asociaciones/",
+      "internal": false
+    },
+    {
+      "n": 63,
+      "title": "Numismática Filatelica Dracma",
+      "href": "https://www.numismaticadracma.com/quienes.php",
+      "internal": false
+    }
+  ]
+}

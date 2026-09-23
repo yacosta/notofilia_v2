@@ -1,5 +1,4 @@
 import type { CatalogSource, LocalizedText } from './catalog';
-import { LAZARETTOS_PATH } from './lazarettos';
 
 export const COLOMBIA_COINAGE_PATH = '/coleccion/colombia-numismatica/';
 
@@ -74,8 +73,8 @@ export const colombiaCoinageChapters: ColombiaCoinageChapter[] = [
       en: 'The Regeneración peso, administration by the Banco de la República, and the move of striking to Ibagué.',
     },
     body: {
-      es: 'La Constitución de 1886 fijó de nuevo el nombre de República de Colombia; el peso oro siguió como patrón mientras el papel del Banco Nacional y de la Guerra de los Mil Días destrozaba la convertibilidad. Popayán cesó en 1881 y no volvió. Bogotá y Medellín cerraron hacia 1890; la escasez de metálico llevó a encargar en Nueva York piezas de 50 centavos de plata con el perfil de Soledad Román de Núñez —las cocobolas—. Tras Reyes, Bogotá reanudó en 1906 y Medellín en 1914. Las últimas de oro se labraron en Medellín en 1930 —5 pesos, la libra colombiana—. La guerra con el Perú (1932) disparó los 50 centavos de plata; en la Segunda Guerra Mundial el níquel escaseó y los 1, 2 y 5 centavos pasaron al cobre. En 1947–1948 se acuñaron los últimos 50 centavos de plata, ley 0,500. El 9 de abril de 1948 Antonio María Barriga y los empleados defendieron la casa del Bogotazo con el cloro de la afinación y las máscaras del taller. El Banco de la República, según su cronología de la Fábrica, asumió la Casa de Bogotá por contrato en 1946 (el catálogo de 1996 fecha ese contrato en 1942) y compró la de Medellín en 1953. Luis Ángel Arango impulsó a mediados de siglo la conservación del edificio; un primer museo numismático abrió al público a comienzos de los años sesenta (1961 en una presentación de aula de 2020; 1962 en el catálogo *Tesoros* del Banco, 2023). El decreto 1584 del 11 de agosto de 1975 lo declaró monumento nacional. Desde los años setenta se recuperó el claustro colonial —Calle 11 n.° 4-93—, obras que culminaron en 1982, el mismo año en que, aparte, Ibagué empezó a fabricar cospeles. En 1980 aún se importaba el cospel; el director Luis Guillermo Correa propuso fabricarlo en el país. En 1982 inauguró en Ibagué esa planta y en 1987 trasladó allí la acuñación: Santa Fe dejó de golpear después de 366 años. Algunas prensas de Ibagué llegan a cuatrocientas piezas por minuto. La Ley 31 de 1993 incorporó la casa al banco emisor y ese año se acuñó el primer 500 pesos bimetálico. En diciembre de 1996 abrió la exposición permanente. En 2012 salió la familia que exalta la biodiversidad y el agua; al año siguiente obtuvo el primer lugar mundial como mejor serie circulante. Esta vitrina reunirá, a medida que se documenten, tipos coloniales, de independencia y de la República —como se hace con las fichas de Filipinas y del papel colombiano.',
-      en: 'The 1886 constitution restored the name Republic of Colombia; the gold peso remained the standard while Banco Nacional paper and the Thousand Days’ War wrecked convertibility. Popayán ceased in 1881 and did not return. Bogotá and Medellín closed about 1890; the shortage of coin led to an order in New York for 50-centavo silver with the profile of Soledad Román de Núñez — the cocobolas. After Reyes, Bogotá resumed in 1906 and Medellín in 1914. The last gold was struck at Medellín in 1930 — 5 pesos, the Colombian libra. The war with Peru (1932) drove large 50-centavo silver strikes; in the Second World War nickel ran short and the 1-, 2-, and 5-centavo pieces switched to copper. In 1947–1948 the last 50-centavo silver, 0.500 fine, was struck. On 9 April 1948 Antonio María Barriga and the staff defended the house in the Bogotazo with refining chlorine and the workshop masks. The Banco de la República, on its Coin Factory timeline, took over the Bogotá mint by contract in 1946 (the 1996 booklet dates that contract to 1942) and bought the Medellín mint in 1953. Luis Ángel Arango pushed, at mid-century, to conserve the building; a first public numismatic museum opened in the early 1960s (1961 in a 2020 classroom presentation; 1962 in the Bank’s 2023 *Tesoros* catalog). Decree 1584 of 11 August 1975 declared it a national monument. From the 1970s the colonial cloister — Calle 11 no. 4-93 — was restored, work that finished in 1982, the same year Ibagué, separately, began making planchets. In 1980 planchets were still imported; director Luis Guillermo Correa proposed making them in Colombia. In 1982 the Ibagué plant opened and in 1987 striking moved there: Santa Fe ceased after 366 years. Some Ibagué presses reach four hundred pieces a minute. Law 31 of 1993 folded the mint into the issuing bank, and that year the first bimetallic 500-peso was struck. The permanent exhibition opened in December 1996. In 2012 the family that honors biodiversity and water appeared; the next year it took first place worldwide as best circulating series. This case will gather, as they are documented, colonial, independence, and republican types — as the Philippines notes and Colombian paper already do.',
+      es: 'La Constitución de 1886 fijó de nuevo el nombre de República de Colombia; el peso oro siguió como patrón mientras el papel del Banco Nacional y de la Guerra de los Mil Días destrozaba la convertibilidad. Popayán cesó en 1881 y no volvió. Bogotá y Medellín cerraron hacia 1890; la escasez de metálico llevó a encargar en Nueva York piezas de 50 centavos de plata con el perfil de Soledad Román de Núñez —las cocobolas—. En el gobierno de Reyes (1904–1909) se labraron pesos de papel moneda en cuproníquel —1, 2 y 5 pesos p/m, equivalentes a 1, 2 y 5 centavos— con efigie de la Paz; Hernández fecha el módulo en Bruselas y Bogotá entre 1907 y 1916. No son billetes. Distintas, y anteriores, son las coscojas de necesidad de Palonegro (1902): latón de Bucaramanga con leyenda Santander, hechas de cápsulas de fusil. Tras Reyes, Bogotá reanudó en 1906 y Medellín en 1914. Las últimas de oro se labraron en Medellín en 1930 —5 pesos, la libra colombiana—. La guerra con el Perú (1932) disparó los 50 centavos de plata; en la Segunda Guerra Mundial el níquel escaseó y los 1, 2 y 5 centavos pasaron al cobre. En 1947–1948 se acuñaron los últimos 50 centavos de plata, ley 0,500. El 9 de abril de 1948 Antonio María Barriga y los empleados defendieron la casa del Bogotazo con el cloro de la afinación y las máscaras del taller. El Banco de la República, según su cronología de la Fábrica, asumió la Casa de Bogotá por contrato en 1946 (el catálogo de 1996 fecha ese contrato en 1942) y compró la de Medellín en 1953. Luis Ángel Arango impulsó a mediados de siglo la conservación del edificio; un primer museo numismático abrió al público a comienzos de los años sesenta (1961 en una presentación de aula de 2020; 1962 en el catálogo *Tesoros* del Banco, 2023). El decreto 1584 del 11 de agosto de 1975 lo declaró monumento nacional. Desde los años setenta se recuperó el claustro colonial —Calle 11 n.° 4-93—, obras que culminaron en 1982, el mismo año en que, aparte, Ibagué empezó a fabricar cospeles. En 1980 aún se importaba el cospel; el director Luis Guillermo Correa propuso fabricarlo en el país. En 1982 inauguró en Ibagué esa planta y en 1987 trasladó allí la acuñación: Santa Fe dejó de golpear después de 366 años. Algunas prensas de Ibagué llegan a cuatrocientas piezas por minuto. La Ley 31 de 1993 incorporó la casa al banco emisor y ese año se acuñó el primer 500 pesos bimetálico. En diciembre de 1996 abrió la exposición permanente. En 2012 salió la familia que exalta la biodiversidad y el agua; al año siguiente obtuvo el primer lugar mundial como mejor serie circulante. Las tablas BanRep registran después conmemorativas de 10.000 (2021 y 2023) y de 20.000 (2023–2024: centenario del Banco, guarniel antioqueño y quinto centenario de Santa Marta). Esta vitrina reunirá, a medida que se documenten, tipos coloniales, de independencia y de la República —como se hace con las fichas de Filipinas y del papel colombiano.',
+      en: 'The 1886 constitution restored the name Republic of Colombia; the gold peso remained the standard while Banco Nacional paper and the Thousand Days’ War wrecked convertibility. Popayán ceased in 1881 and did not return. Bogotá and Medellín closed about 1890; the shortage of coin led to an order in New York for 50-centavo silver with the profile of Soledad Román de Núñez — the cocobolas. Under Reyes (1904–1909) paper-money pesos were struck in cupronickel — 1, 2, and 5 pesos p/m, equal to 1, 2, and 5 centavos — with a Peace bust; Hernández dates the module at Brussels and Bogotá from 1907 to 1916. They are not banknotes. Distinct, and earlier, are the Palonegro necessity coscojas (1902): Bucaramanga brass with a Santander legend, made from rifle-cartridge cases. After Reyes, Bogotá resumed in 1906 and Medellín in 1914. The last gold was struck at Medellín in 1930 — 5 pesos, the Colombian libra. The war with Peru (1932) drove large 50-centavo silver strikes; in the Second World War nickel ran short and the 1-, 2-, and 5-centavo pieces switched to copper. In 1947–1948 the last 50-centavo silver, 0.500 fine, was struck. On 9 April 1948 Antonio María Barriga and the staff defended the house in the Bogotazo with refining chlorine and the workshop masks. The Banco de la República, on its Coin Factory timeline, took over the Bogotá mint by contract in 1946 (the 1996 booklet dates that contract to 1942) and bought the Medellín mint in 1953. Luis Ángel Arango pushed, at mid-century, to conserve the building; a first public numismatic museum opened in the early 1960s (1961 in a 2020 classroom presentation; 1962 in the Bank’s 2023 *Tesoros* catalog). Decree 1584 of 11 August 1975 declared it a national monument. From the 1970s the colonial cloister — Calle 11 no. 4-93 — was restored, work that finished in 1982, the same year Ibagué, separately, began making planchets. In 1980 planchets were still imported; director Luis Guillermo Correa proposed making them in Colombia. In 1982 the Ibagué plant opened and in 1987 striking moved there: Santa Fe ceased after 366 years. Some Ibagué presses reach four hundred pieces a minute. Law 31 of 1993 folded the mint into the issuing bank, and that year the first bimetallic 500-peso was struck. The permanent exhibition opened in December 1996. In 2012 the family that honors biodiversity and water appeared; the next year it took first place worldwide as best circulating series. BanRep’s tables later record 10,000-peso commemoratives (2021 and 2023) and 20,000-peso commemoratives (2023–2024: the Bank’s centenary, the Antioquian carriel, and Santa Marta’s fifth centenary). This case will gather, as they are documented, colonial, independence, and republican types — as the Philippines notes and Colombian paper already do.',
     },
   },
 ];
@@ -153,6 +152,24 @@ export const coinageSources: CatalogSource[] = [
       en: 'The cloister opened to the public in December 1996; the collection holds more than 18,000 pieces.',
     },
   },
+  {
+    href: 'https://en.numista.com/L100183',
+    es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+    en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+    note: {
+      es: 'Pesos p/m de 1907–1916 y coscojas de Palonegro de 1902. No se publican columnas de precios.',
+      en: 'P/m pesos of 1907–1916 and Palonegro coscojas of 1902. Price columns are not published.',
+    },
+  },
+  {
+    href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+    es: 'Banco de la República — Producción y circulación',
+    en: 'Banco de la República — Production and circulation',
+    note: {
+      es: 'Producción anual de moneda: conmemorativas de 10.000 (2021, 2023) y 20.000 (2023–2024). Un total de denominación-año no es tirada de un solo tipo.',
+      en: 'Annual coin production: 10,000-peso commemoratives (2021, 2023) and 20,000-peso commemoratives (2023–2024). A denomination-year total is not a single-type mintage.',
+    },
+  },
 ];
 
 export const coinageCopy = {
@@ -170,14 +187,8 @@ export const coinageCopy = {
       'La guerra rompió ese orden. En 1811 la Junta de Cartagena acuñó cobres de medio y dos reales —ya con leyendas en castellano—; Nariño mandó en 1813 la moneda «de la china» para la Campaña del Sur; Bolívar, dueño de las cecas tras Boyacá, pidió el mismo tipo. Adolfo Meisel documenta también las piezas realistas de Popayán y Santa Marta y la caraqueña de baja ley. El Congreso de Cúcuta quiso volver a la ley española; Santander eludió la norma con emisiones antedatadas. En 1836 se unificó el régimen —granadino de plata y de oro—; en 1846–1847, bajo Mosquera, Lino de Pombo y Florentino González impusieron la ley 0,900 y el sistema decimal, y se amortizó la macuquina.',
       'La República de 1886 heredó el peso. Las cecas se paralizaron hacia 1890; las cocobolas de 50 centavos, con el perfil de Soledad Román, se encargaron en Nueva York. El Banco de la República, en su cronología, asumió la Casa de Bogotá en 1946 y compró la de Medellín en 1953. El 9 de abril de 1948 la casa resistió el Bogotazo. Un primer museo numismático abrió al público a comienzos de los años sesenta; el claustro de Calle 11 n.° 4-93 se recuperó en obras que culminaron en 1982, el mismo año en que Ibagué empezó a fabricar cospeles. En 1987 se trasladó allí la acuñación. La Ley 31 de 1993 incorporó la casa al banco emisor. En diciembre de 1996 abrió la exposición permanente. La familia de 2012 —biodiversidad y agua— ganó al año siguiente el premio a la mejor serie circulante. Esta vitrina reúne ese arco: de las macuquinas de Santa Fe al peso actual.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Cinco vitrinas, en la misma fila de izquierda a derecha: Santa Fe colonial, Independencia y Gran Colombia, Nueva Granada, la República y Lazarettos. Las fichas de cada tipo se publicarán como en Filipinas y en el papel colombiano, a medida que se documenten.',
-    viewChapter: 'Leer el capítulo',
-    viewCase: 'Leer el catálogo',
     viewPiece: 'Ver la ficha',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     notaphilyLead: 'El papel moneda de estas mismas épocas se documenta en la vitrina de notafilia.',
     notaphilyLink: 'Colombia · Banca libre y Banco de la República',
     visualCatalogLead: 'El catálogo visual reúne los tipos con buscador, cuatro por fila, sin precios.',
@@ -197,14 +208,8 @@ export const coinageCopy = {
       'War broke that order. In 1811 Cartagena’s junta struck half-real and two-real coppers — already with Castilian legends; in 1813 Nariño ordered the china coin for the Southern Campaign; Bolívar, master of the mints after Boyacá, asked for the same type. Adolfo Meisel also records royalist issues from Popayán and Santa Marta and the low-fineness caraqueña. The Cúcuta Congress tried to restore Spanish fineness; Santander evaded the rule with antedated issues. In 1836 the regime was unified — granadino de plata and de oro; in 1846–1847, under Mosquera, Lino de Pombo and Florentino González imposed 0.900 fine metal and the decimal system, and the cob was withdrawn.',
       'The Republic of 1886 inherited the peso. The mints stalled about 1890; the 50-centavo cocobolas, with Soledad Román’s profile, were ordered in New York. The Banco de la República, on its own timeline, took over the Bogotá mint in 1946 and bought Medellín in 1953. On 9 April 1948 the house held in the Bogotazo. A first public numismatic museum opened in the early 1960s; restoration of the cloister at Calle 11 no. 4-93 finished in 1982, the same year Ibagué began making planchets. In 1987 striking moved there. Law 31 of 1993 folded the house into the issuing bank. The permanent exhibition opened in December 1996. The 2012 family — biodiversity and water — won the next year’s prize for best circulating series. This case gathers that arc: from the cobs of Santa Fe to the peso now in the pocket.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Five cases in one row, left to right: colonial Santa Fe, Independence and Gran Colombia, New Granada, the Republic, and Lazarettos. Individual type pages will be published as they are documented, as in the Philippines case and the Colombian paper case.',
-    viewChapter: 'Read the chapter',
-    viewCase: 'Read the catalog',
     viewPiece: 'Open the piece',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     notaphilyLead: 'Paper money from the same periods is documented in the notaphily case.',
     notaphilyLink: 'Colombia · Free banking and the Banco de la República',
     visualCatalogLead: 'The visual catalog gathers the types with search, four to a row, and no prices.',
@@ -215,16 +220,3 @@ export const coinageCopy = {
 export function coinagePath(locale: 'es' | 'en'): string {
   return locale === 'en' ? '/en/collection/colombia-numismatics/' : COLOMBIA_COINAGE_PATH;
 }
-
-export function coinageChapterHref(id: ColombiaCoinageChapterId): string {
-  return `#${id}`;
-}
-
-/** Extra catalog cards after the four Colombia chapters — same row, not in-page essays. */
-export const colombiaCoinageExtraCases = [
-  {
-    href: LAZARETTOS_PATH,
-    years: { es: 'desde 1598', en: 'from 1598' },
-    title: { es: 'Lazarettos', en: 'Lazarettos' },
-  },
-] as const;

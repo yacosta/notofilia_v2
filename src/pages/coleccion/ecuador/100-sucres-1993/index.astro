@@ -1,0 +1,9 @@
+---
+import EcuadorNotePage from '../../../../components/catalog/EcuadorNotePage.astro';
+import { noteById } from '../../../../data/ecuador';
+
+const note = noteById('100-sucres-1993');
+if (!note) throw new Error('Missing Ecuador 1993 100-sucres catalog note');
+---
+
+<EcuadorNotePage locale="es" note={note} />

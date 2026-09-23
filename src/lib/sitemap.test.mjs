@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
+import { foldedGlossaryTerms, glossaryTermSlugs, STANDALONE_GLOSSARY_SLUGS } from '../data/glossary.ts';
 import { localizePath } from './locale-paths.ts';
 
 const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.meta.url), 'utf8');
@@ -64,6 +65,43 @@ describe('sitemap coverage for Colombia visual catalogs', () => {
   });
 });
 
+describe('sitemap coverage for the Colombia banca libre essay', () => {
+  it('maps the Banca libre pair used in dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for the lazaretto numismatics essay', () => {
+  it('maps the numismatics pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/numismatica/numismatica-de-los-lazaretos/', 'en'),
+      '/en/collection/numismatics/numismatics-of-the-lazarettos/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for the Giori test notes page', () => {
+  it('maps the notafilia Giori pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
+      '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for WWII emergency banknotes', () => {
+  it('maps the notafilia WWII pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for the comparison page', () => {
   it('maps the Notofilia vs catalogs pair used in dedicated catalog paths', () => {
     assert.equal(
@@ -83,6 +121,10 @@ describe('sitemap coverage for the grading guide', () => {
     assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
+    );
+    assert.equal(
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     );
   });
 });
@@ -125,6 +167,26 @@ describe('sitemap coverage for Baraboo scrip type page', () => {
   });
 });
 
+describe('sitemap coverage for colonial paper 1690–1788', () => {
+  it('maps the dedicated colonial series pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/moneda-colonial/', 'en'),
+      '/en/collection/united-states/colonial-paper/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for obsolete notes 1782–1866', () => {
+  it('maps the dedicated obsolete series pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/billetes-obsoletos/', 'en'),
+      '/en/collection/united-states/obsolete-notes/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for Continental Currency $5 1779', () => {
   it('maps the colonial piece pair used in dedicated catalog paths', () => {
     assert.equal(
@@ -135,11 +197,43 @@ describe('sitemap coverage for Continental Currency $5 1779', () => {
   });
 });
 
+describe('sitemap coverage for Pennsylvania 5 shillings 1773', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/5-chelines-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/5-shillings-pennsylvania-1773/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for Pennsylvania 2s6d 1773', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
-  it('maps the coinage series and Trump dollar pair used in dedicated catalog paths', () => {
+  it('maps the coinage series, Hard Times case, and piece pairs used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
+    );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/', 'en'),
       '/en/collection/united-states-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', 'en'),
+      '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/', 'en'),
+      '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
@@ -149,12 +243,55 @@ describe('sitemap coverage for United States numismatics', () => {
   });
 });
 
+describe('sitemap coverage for Spain numismatics', () => {
+  it('maps the coinage series and half-escudo pair used in dedicated catalog paths', () => {
+    assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
+      '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for reference tools', () => {
+  it('maps the tools hub and fancy serial checker pairs', () => {
+    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
+    assert.equal(
+      localizePath('/herramientas/numeracion-especial/', 'en'),
+      '/en/tools/fancy-serial-checker/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for the two-tier glossary', () => {
+  it('registers the index and standalone terms, not folded term URLs', () => {
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    const siteSource = readFileSync(new URL('./site.ts', import.meta.url), 'utf8');
+    assert.match(siteSource, /\.\.\.glossaryTermSlugs/);
+    assert.equal(glossaryTermSlugs.length, STANDALONE_GLOSSARY_SLUGS.length);
+    assert.ok(glossaryTermSlugs.includes('glosario/pmg-pcgs'));
+    assert.ok(!glossaryTermSlugs.includes('glosario/libra'));
+    for (const term of foldedGlossaryTerms()) {
+      assert.ok(!glossaryTermSlugs.includes(`glosario/${term.slug}`), term.slug);
+    }
+  });
+});
+
 describe('sitemap coverage stays derived from catalog data', () => {
   it('does not hard-code individual catalog slugs in extra', () => {
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
     assert.match(sitemapSource, /stubPages/);
     assert.doesNotMatch(sitemapSource, /coleccion\/filipinas\/1-peso/);
     assert.match(sitemapSource, /const extra = \['\/'\]/);
+  });
+
+  it('maps the Colombia 5,000-peso butterfly-cut error pair used in the sitemap', () => {
+    assert.equal(
+      localizePath('/coleccion/colombia/5000-pesos-error-2010/', 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
   });
 
   it('maps the Colombia 50,000-peso error pairs used in the sitemap', () => {

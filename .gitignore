@@ -4,6 +4,8 @@ dist/
 .wrangler/
 .DS_Store
 .dev.vars
+.env
+.env.*
 
 # Generated from catalog-src/catalog/ by `npm run images`
 public/images/catalog/

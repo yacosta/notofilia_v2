@@ -65,12 +65,16 @@ const jsonLd = {
           items.map((item) => (
             <li>
               <article class="flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel">
-                <a
-                  href={localizePath(item.href, locale)}
-                  class="block overflow-hidden no-underline"
-                >
-                  <CardImage src={item.image} alt={item.imageAlt[locale]} />
-                </a>
+                {
+                  item.image ? (
+                    <a
+                      href={localizePath(item.href, locale)}
+                      class="block overflow-hidden no-underline"
+                    >
+                      <CardImage src={item.image} alt={item.imageAlt[locale]} />
+                    </a>
+                  ) : null
+                }
                 <div class="flex flex-1 flex-col p-5">
                   <p class="m-0 font-sans text-[14px]/5 tracking-[0.08em] text-muted">
                     {locale === 'en' ? item.dateEn : item.dateEs}

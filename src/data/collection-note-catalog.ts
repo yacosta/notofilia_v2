@@ -6,10 +6,12 @@ import { malaysiaNotes, notePath as malaysiaNotePath } from './malaysia-polymer'
 import { colombiaNotes, notePath as colombiaNotePath, notePieces } from './colombia-notes';
 import { unitedStatesNotes, notePath as usaNotePath } from './estados-unidos';
 import { mpcVietnamNotes, notePath as mpcNotePath } from './mpc-vietnam';
+import { mpcProgramNotes, notePath as mpcProgramNotePath } from './mpc';
 import { NOTAFILIA_PATH } from './notafilia';
 import { victoryNotes, notePath as victoryNotePath } from './philippines-victory-66';
 import { pnbNotes, pnbNotePath } from './philippines-pnb-1916';
 import { puertoRicoNotes, notePath as puertoRicoNotePath } from './puerto-rico';
+import { ecuadorNotes, notePath as ecuadorNotePath, notePieces as ecuadorNotePieces } from './ecuador';
 import { localizePath, type Locale } from '../lib/locale-paths';
 import {
   type TypeCatalogCountry,
@@ -30,6 +32,7 @@ export const COUNTRY_LABELS: Record<TypeCatalogCountry, LocalizedText> = {
   GB: { es: 'Inglaterra', en: 'England' },
   CA: { es: 'Canadá', en: 'Canada' },
   PR: { es: 'Puerto Rico', en: 'Puerto Rico' },
+  EC: { es: 'Ecuador', en: 'Ecuador' },
 };
 
 type CollectionSeed = {
@@ -64,6 +67,12 @@ function flagsFrom(...parts: string[]): TypeCatalogFlag[] {
   if (/remainder/i.test(blob)) flags.push('remainder');
   if (/error|maculatura/i.test(blob)) flags.push('error');
   return flags;
+}
+
+export type CollectionNoteSeed = CollectionSeed;
+
+export function collectionNoteSeeds(): CollectionSeed[] {
+  return collectionSeeds();
 }
 
 function collectionSeeds(): CollectionSeed[] {
@@ -114,6 +123,24 @@ function collectionSeeds(): CollectionSeed[] {
       id: `mpc-${note.id}`,
       country: 'US',
       href: mpcNotePath(note, 'es'),
+      title: note.title,
+      dek: note.lead,
+      pick: note.pick,
+      serial: note.serial,
+      issuer: note.kicker,
+      year: yearFromText(note.printed.es, note.title.es, note.kicker.es),
+      era: 'other',
+      flags: flagsFrom(note.title.es, note.kicker.es, note.pick, note.lead.es),
+      image: note.images.front,
+      imageAlt: note.frontCaption,
+    });
+  }
+
+  for (const note of mpcProgramNotes) {
+    seeds.push({
+      id: `mpc-${note.id}`,
+      country: 'US',
+      href: mpcProgramNotePath(note, 'es'),
       title: note.title,
       dek: note.lead,
       pick: note.pick,
@@ -253,6 +280,27 @@ function collectionSeeds(): CollectionSeed[] {
     });
   }
 
+  for (const note of ecuadorNotes) {
+    for (const piece of ecuadorNotePieces(note)) {
+      const hash = piece.id !== note.id ? `#${piece.id}` : '';
+      seeds.push({
+        id: `ec-${piece.id}`,
+        country: 'EC',
+        href: `${ecuadorNotePath(note, 'es')}${hash}`,
+        title: piece.title,
+        dek: piece.lead,
+        pick: piece.pick,
+        serial: piece.serial,
+        issuer: note.kicker,
+        year: yearFromText(piece.printed.es, piece.title.es, note.kicker.es) || '1901',
+        era: note.id === '100-sucres-1993' ? 'banco-central' : 'banca-libre',
+        flags: flagsFrom(piece.title.es, note.kicker.es, piece.pick, piece.lead.es),
+        image: piece.images.front,
+        imageAlt: piece.frontCaption,
+      });
+    }
+  }
+
   return seeds;
 }
 
@@ -308,6 +356,7 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
   'gb',
   'ca',
   'pr',
+  'ec',
   'pending',
   'specimen',
   'remainder',
@@ -362,6 +411,7 @@ export const collectionNoteCatalogCopy = {
       gb: 'Inglaterra',
       ca: 'Canadá',
       pr: 'Puerto Rico',
+      ec: 'Ecuador',
       pending: 'Sin imagen',
       specimen: 'Especímenes',
       remainder: 'Remainders',
@@ -415,6 +465,7 @@ export const collectionNoteCatalogCopy = {
       gb: 'England',
       ca: 'Canada',
       pr: 'Puerto Rico',
+      ec: 'Ecuador',
       pending: 'No image',
       specimen: 'Specimens',
       remainder: 'Remainders',

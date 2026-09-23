@@ -1,10 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
-import CardImage from './CardImage.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
-import { searchDocuments } from '../lib/search-index';
-import { createSearchEngine, parseFilter, parseSort, runSearch } from '../lib/search';
 import { searchCopy, searchFilters, searchPath } from '../data/search';
 
 interface Props {
@@ -14,12 +11,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = searchCopy[locale];
 const pathname = searchPath(locale);
-const documents = searchDocuments(locale);
-const engine = createSearchEngine(documents);
-const initialQuery = Astro.url.searchParams.get('q') ?? '';
-const initialFilter = parseFilter(Astro.url.searchParams.get('filtro'));
-const initialSort = parseSort(Astro.url.searchParams.get('orden'));
-const initialHits = runSearch(documents, engine, initialQuery, initialFilter, initialSort);
+const indexUrl = locale === 'en' ? '/en/search/indice.json' : '/buscar/indice.json';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -62,7 +54,7 @@ const ui = {
 };
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname} robots="noindex, follow, max-image-preview:large">
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
@@ -92,7 +84,7 @@ const ui = {
               id="collection-search"
               name="q"
               type="search"
-              value={initialQuery}
+              value=""
               placeholder={t.searchPlaceholder}
               autocomplete="off"
               class="box-border min-h-12 w-full rounded-[8px] border border-line-input bg-[#f4efe4] px-4 font-sans text-[16px] text-ink placeholder:text-[#7a705c]"
@@ -107,7 +99,7 @@ const ui = {
             >
               {
                 (['relevance', 'title-asc', 'title-desc'] as const).map((value) => (
-                  <option value={value} selected={initialSort === value}>
+                  <option value={value} selected={value === 'relevance'}>
                     {t.sorts[value]}
                   </option>
                 ))
@@ -121,7 +113,7 @@ const ui = {
             {t.searchSubmit}
           </button>
         </div>
-        <input type="hidden" name="filtro" value={initialFilter} data-search-filter-input />
+        <input type="hidden" name="filtro" value="all" data-search-filter-input />
 
         <div class="mt-4 flex flex-wrap gap-2" role="group" aria-label={t.filterLabel}>
           {
@@ -131,7 +123,7 @@ const ui = {
                 name="filtro"
                 value={filter}
                 data-search-filter={filter}
-                aria-pressed={initialFilter === filter ? 'true' : 'false'}
+                aria-pressed={filter === 'all' ? 'true' : 'false'}
                 class="search-chip min-h-11 cursor-pointer rounded-full border border-line-strong bg-panel px-3.5 py-[7px] font-sans text-[13px] text-cream-dim aria-[pressed=true]:border-transparent aria-[pressed=true]:bg-cream aria-[pressed=true]:text-bg"
               >
                 {t.filters[filter]}
@@ -142,49 +134,20 @@ const ui = {
       </form>
 
       <p id="search-status" class="mb-6 mt-0 font-sans text-[14px] text-muted" aria-live="polite" data-search-status>
-        {
-          initialQuery || initialFilter !== 'all'
-            ? initialHits.length === 1
-              ? t.resultCount(1)
-              : t.resultCount(initialHits.length)
-            : t.emptyQuery
-        }
+        {t.emptyQuery}
       </p>
       <p class="sr-only">{t.statusLabel}</p>
       <noscript>
         <p class="mb-6 font-sans text-[14px] text-muted">{t.needsJs}</p>
       </noscript>
 
-      <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2" data-search-results>
-        {
-          (initialQuery || initialFilter !== 'all' ? initialHits : []).map((hit) => (
-            <li data-search-hit>
-              <article class="flex h-full flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel">
-                {hit.image ? (
-                  <a href={hit.href} class="block overflow-hidden no-underline">
-                    <CardImage src={hit.image} alt={hit.imageAlt || ''} />
-                  </a>
-                ) : null}
-                <div class="flex flex-1 flex-col p-5">
-                  <p class="m-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">{t.kinds[hit.kind]}</p>
-                  <h2 class="mb-2 mt-2 font-display text-[1.25rem]/7 font-normal text-cream">
-                    <a href={hit.href} class="text-inherit no-underline hover:text-gold-light">
-                      {hit.title}
-                    </a>
-                  </h2>
-                  <p class="m-0 text-[15px]/6 text-cream-dim">{hit.dek}</p>
-                </div>
-              </article>
-            </li>
-          ))
-        }
-      </ul>
+      <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2" data-search-results></ul>
     </article>
   </main>
 </Layout>
 
-<script define:vars={{ documents, ui }}>
-  window.__NOTOFILIA_SEARCH__ = { documents, ui };
+<script define:vars={{ ui, indexUrl }}>
+  window.__NOTOFILIA_SEARCH__ = { ui, indexUrl };
 </script>
 <script>
   import { cardImageSrc } from '../lib/images';
@@ -197,13 +160,12 @@ const ui = {
     kinds: Record<string, string>;
   };
 
-  const payload = (window as unknown as { __NOTOFILIA_SEARCH__?: { documents: SearchDocument[]; ui: SearchUi } })
-    .__NOTOFILIA_SEARCH__;
+  const payload = (
+    window as unknown as { __NOTOFILIA_SEARCH__?: { ui: SearchUi; indexUrl: string } }
+  ).__NOTOFILIA_SEARCH__;
   const root = document.querySelector('[data-site-search]');
   if (payload && root instanceof HTMLElement) {
-    const documents = payload.documents;
     const ui = payload.ui;
-    const engine = createSearchEngine(documents);
     const form = root.querySelector('[data-search-form]');
     const input = root.querySelector<HTMLInputElement>('#collection-search');
     const sort = root.querySelector<HTMLSelectElement>('#collection-sort');
@@ -211,6 +173,9 @@ const ui = {
     const status = root.querySelector<HTMLElement>('[data-search-status]');
     const list = root.querySelector<HTMLElement>('[data-search-results]');
     const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-search-filter]')];
+    let documents: SearchDocument[] | undefined;
+    let engine: ReturnType<typeof createSearchEngine> | undefined;
+    let loading: Promise<void> | undefined;
 
     function countLabel(count: number): string {
       if (count === 1) return ui.resultCount.one;
@@ -272,6 +237,19 @@ const ui = {
       return parseFilter(filterInput?.value ?? 'all');
     }
 
+    async function ensureIndex() {
+      if (engine && documents) return;
+      if (!loading) {
+        loading = fetch(payload.indexUrl)
+          .then((response) => response.json())
+          .then((rows: SearchDocument[]) => {
+            documents = rows;
+            engine = createSearchEngine(rows);
+          });
+      }
+      await loading;
+    }
+
     const params = new URLSearchParams(window.location.search);
     if (input && !input.value && params.has('q')) input.value = params.get('q') ?? '';
     if (sort && params.has('orden')) sort.value = parseSort(params.get('orden'));
@@ -283,12 +261,18 @@ const ui = {
       }
     }
 
-    function apply(updateUrl = true) {
+    async function apply(updateUrl = true) {
       const query = input?.value ?? '';
       const filter = currentFilter();
       const orden = parseSort(sort?.value ?? 'relevance');
-      const hits = runSearch(documents, engine, query, filter, orden);
-      render(hits, query, filter);
+      if (!query.trim() && filter === 'all') {
+        render([], query, filter);
+      } else {
+        await ensureIndex();
+        if (documents && engine) {
+          render(runSearch(documents, engine, query, filter, orden), query, filter);
+        }
+      }
       if (updateUrl) {
         const url = new URL(window.location.href);
         if (query.trim()) url.searchParams.set('q', query);
@@ -303,10 +287,17 @@ const ui = {
 
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
-      apply();
+      void apply();
     });
-    input?.addEventListener('input', () => apply());
-    sort?.addEventListener('change', () => apply());
+    input?.addEventListener('input', () => {
+      void apply();
+    });
+    input?.addEventListener('keydown', () => {
+      void ensureIndex();
+    });
+    sort?.addEventListener('change', () => {
+      void apply();
+    });
     for (const chip of chips) {
       chip.addEventListener('click', (event) => {
         event.preventDefault();
@@ -315,10 +306,10 @@ const ui = {
         for (const other of chips) {
           other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
         }
-        apply();
+        void apply();
       });
     }
 
-    apply(false);
+    if (params.has('q') || params.has('filtro')) void apply(false);
   }
 </script>

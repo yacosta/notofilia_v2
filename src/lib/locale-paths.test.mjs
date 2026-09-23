@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { englishContentSlug, englishRedirects, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
+import { englishContentSlug, englishRedirects, hrefToContentSlug, localizePath, otherLocalePath, PATH_PREFIX_PAIRS } from './locale-paths.ts';
 
 describe('locale path mapping', () => {
   it('translates collection, glossary, news, and contact slugs', () => {
@@ -38,7 +38,10 @@ describe('locale path mapping', () => {
       localizePath('/en/collection/puerto-rico/1-peso-exchange-note-1895/', 'es'),
       '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     );
-    assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notafilia/');
+    assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notaphily/');
+    assert.equal(localizePath('/glosario/polimero/', 'en'), '/en/glossary/polymer/');
+    assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
+    assert.equal(localizePath('/glosario/?term=libra', 'en'), '/en/glossary/?term=libra');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
@@ -115,6 +118,23 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/estados-unidos-numismatica/', 'en'),
       '/en/collection/united-states-numismatics/',
     );
+    assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
+      '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/', 'en'),
+      '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/', 'en'),
+      '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
+    );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
@@ -125,6 +145,28 @@ describe('locale path mapping', () => {
       '/en/notofilia-vs-colombian-banknote-catalogs/',
     );
     assert.equal(
+      localizePath('/coleccion/notafilia/moneda-prueba-giori/', 'en'),
+      '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.equal(
+      localizePath('/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/', 'en'),
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/world-war-ii-emergency-banknotes/', 'es'),
+      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/giori-test-notes/', 'es'),
+      '/coleccion/notafilia/moneda-prueba-giori/',
+    );
+    assert.equal(
+      localizePath('/en/collection/notaphily/giori-test-currency/', 'es'),
+      '/coleccion/notafilia/moneda-prueba-giori/',
+    );
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(localizePath('/en/collection/colombia/free-banking/', 'es'), '/coleccion/colombia/banca-libre/');
+    assert.equal(
       localizePath('/en/notofilia-vs-colombian-banknote-catalogs/', 'es'),
       '/notofilia-vs-catalogos-billetes-colombianos/',
     );
@@ -132,10 +174,28 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(localizePath('/identificar/', 'en'), '/en/identify/');
     assert.equal(localizePath('/en/identify/', 'es'), '/identificar/');
+    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
+    assert.equal(localizePath('/en/tools/', 'es'), '/herramientas/');
+    assert.equal(
+      localizePath('/herramientas/numeracion-especial/', 'en'),
+      '/en/tools/fancy-serial-checker/',
+    );
+    assert.equal(
+      localizePath('/en/tools/fancy-serial-checker/', 'es'),
+      '/herramientas/numeracion-especial/',
+    );
     assert.equal(otherLocalePath('/en/collection/united-states/', 'en'), '/coleccion/estados-unidos/');
     assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/', 'en'),
       '/en/collection/united-states/1-dollar-series-2003-atlanta/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/', 'en'),
+      '/en/collection/united-states/2-dollars-series-2003-st-louis/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-dolares-serie-1917/', 'en'),
+      '/en/collection/united-states/2-dollars-series-1917/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
@@ -150,6 +210,14 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/', 'en'),
+      '/en/collection/united-states/10-dollars-series-1934a-philadelphia/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/', 'en'),
+      '/en/collection/united-states/10-dollars-series-1934c-kansas-city/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/', 'en'),
       '/en/collection/united-states/10-dollars-series-1934d-richmond/',
     );
@@ -160,6 +228,10 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/', 'en'),
       '/en/collection/united-states/1000-dollars-series-1934a-new-york/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/', 'en'),
+      '/en/collection/united-states/1-dollar-silver-certificate-1928a/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/', 'en'),
@@ -182,8 +254,24 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-continental-1779/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/5-chelines-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/5-shillings-pennsylvania-1773/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/', 'en'),
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/5-dolares-confederados-1864/', 'en'),
       '/en/collection/united-states/5-dollars-confederate-1864/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/mpc/5-centavos-serie-481/', 'en'),
+      '/en/collection/united-states/mpc/5-cents-series-481/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/mpc/', 'en'),
+      '/en/collection/united-states/mpc/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/', 'en'),
@@ -192,6 +280,14 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/', 'en'),
       '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/moneda-colonial/', 'en'),
+      '/en/collection/united-states/colonial-paper/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/billetes-obsoletos/', 'en'),
+      '/en/collection/united-states/obsolete-notes/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos/rency/', 'en'),
@@ -228,6 +324,14 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos/renci/pele-the-beautiful-game/', 'es'),
       '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/', 'en'),
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'es'),
+      '/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/', 'en'),
@@ -294,8 +398,16 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/1-peso-oro-1954/',
     );
     assert.equal(
-      localizePath('/coleccion/colombia/1-peso-oro-1973/', 'en'),
-      '/en/collection/colombia/1-peso-oro-1973/',
+      localizePath('/coleccion/colombia/1-peso-oro-1959/', 'en'),
+      '/en/collection/colombia/1-peso-oro-1959/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/1-peso-oro-1959-1977/', 'en'),
+      '/en/collection/colombia/1-peso-oro-1959-1977/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/1-peso-oro-1959-1977/#1-peso-oro-1974', 'en'),
+      '/en/collection/colombia/1-peso-oro-1959-1977/#1-peso-oro-1974',
     );
     assert.equal(
       localizePath('/coleccion/colombia/10-pesos-oro-1943/', 'en'),
@@ -318,6 +430,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/2-pesos-oro-1944/#2-pesos-oro-1955',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/2-pesos-oro-1977/', 'en'),
+      '/en/collection/colombia/2-pesos-oro-1977/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/2-pesos-oro-1955/', 'en'),
       '/en/collection/colombia/2-pesos-oro-1955/',
     );
@@ -326,12 +442,40 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/10-pesos-oro-1976/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/10-pesos-oro-1979/', 'en'),
+      '/en/collection/colombia/10-pesos-oro-1979/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/20-pesos-oro-1983/', 'en'),
+      '/en/collection/colombia/20-pesos-oro-1983/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/50-pesos-oro-1974/', 'en'),
+      '/en/collection/colombia/50-pesos-oro-1974/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/50-pesos-oro-1984/', 'en'),
+      '/en/collection/colombia/50-pesos-oro-1984/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/100-pesos-oro-1980/', 'en'),
+      '/en/collection/colombia/100-pesos-oro-1980/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/200-pesos-oro-1989/', 'en'),
+      '/en/collection/colombia/200-pesos-oro-1989/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/1000-pesos-oro-1979/', 'en'),
       '/en/collection/colombia/1000-pesos-oro-1979/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/2000-pesos-oro-1983/', 'en'),
       '/en/collection/colombia/2000-pesos-oro-1983/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/5000-pesos-oro-1993/', 'en'),
+      '/en/collection/colombia/5000-pesos-oro-1993/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/10000-pesos-1994/', 'en'),
@@ -350,12 +494,20 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/2000-pesos-2015/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/1000-pesos-error-2000/', 'en'),
+      '/en/collection/colombia/1000-pesos-error-2000/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/1000-pesos-error-2008/', 'en'),
       '/en/collection/colombia/1000-pesos-error-2008/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/1000-pesos-error-2011/', 'en'),
       '/en/collection/colombia/1000-pesos-error-2011/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia/5000-pesos-error-2010/', 'en'),
+      '/en/collection/colombia/5000-pesos-error-2010/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/50000-pesos-error-2008/', 'en'),
@@ -375,6 +527,14 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/colombia-numismatica/catalogo/', 'en'),
       '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
     );
     assert.equal(localizePath('/en/collection/colombia/catalog/', 'es'), '/coleccion/colombia/catalogo/');
   });
@@ -400,6 +560,11 @@ describe('locale path mapping', () => {
       '/blog/mejores-empresas-certificacion-monedas-billetes/',
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
+    assert.equal(englishContentSlug('coleccion/espana-numismatica'), 'collection/spain-numismatics');
+    assert.equal(
+      englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
+      'collection/spain-numismatics/half-escudo-madrid-1757-jb',
+    );
     assert.equal(
       englishContentSlug('coleccion/polimero-mundial/asia/malasia'),
       'collection/world-polymer/asia/malaysia',
@@ -456,6 +621,10 @@ describe('locale path mapping', () => {
       redirects['/en/coleccion/polimero-mundial/Canada/5-dolares-laurier/'],
       '/en/collection/world-polymer/Canada/5-dollars-laurier/',
     );
+    assert.equal(
+      redirects['/en/coleccion/numismatica/numismatica-de-los-lazaretos/'],
+      '/en/collection/numismatics/numismatics-of-the-lazarettos/',
+    );
     assert.equal(redirects['/en/coleccion/'], '/en/collection/');
     assert.equal(redirects['/en/coleccion/filipinas/'], '/en/collection/philippines/');
     assert.equal(
@@ -467,12 +636,46 @@ describe('locale path mapping', () => {
       '/en/collection/puerto-rico/1-peso-exchange-note-1895/',
     );
     assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
+    assert.equal(
+      redirects['/en/coleccion/notafilia/moneda-prueba-giori/'],
+      '/en/collection/notaphily/giori-test-notes/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/'],
+      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
+    );
+    assert.equal(
+      redirects['/en/collection/notaphily/giori-test-currency/'],
+      '/en/collection/notaphily/giori-test-notes/',
+    );
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
+    assert.equal(redirects['/en/coleccion/colombia/banca-libre/'], '/en/collection/colombia/free-banking/');
+    assert.equal(
+      redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
+      '/en/collection/colombia/5000-pesos-error-2010/',
+    );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
     );
-    assert.equal(redirects['/en/glosario/'], '/en/glossary/');
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/'],
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/'],
+      '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/2-centavos-lazareto-1921/'],
+      '/en/collection/colombia-numismatics/2-centavos-lazareto-1921/',
+    );
+    assert.equal(redirects['/en/identificar/'], '/en/identify/');
+    assert.equal(redirects['/en/herramientas/'], '/en/tools/');
+    assert.equal(
+      redirects['/en/herramientas/numeracion-especial/'],
+      '/en/tools/fancy-serial-checker/',
+    );
     assert.equal(redirects['/en/noticias/'], '/en/news/');
     assert.equal(redirects['/en/contacto/'], '/en/contact/');
     assert.equal(redirects['/en/coleccion/united-states/'], '/en/collection/united-states/');
@@ -485,8 +688,28 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/',
     );
     assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/fichas-hard-times/'],
+      '/en/collection/united-states-numismatics/hard-times-tokens/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/'],
+      '/en/collection/united-states-numismatics/ht-34-1837-donkey-turtle/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/'],
+      '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
+    );
+    assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/'],
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],
+      '/en/collection/united-states/mpc/5-cents-series-481/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/mpc/'],
+      '/en/collection/united-states/mpc/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc-vietnam/5-dolares-serie-661/'],
@@ -495,6 +718,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/'],
       '/en/collection/united-states/miscellaneous/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/moneda-colonial/'],
+      '/en/collection/united-states/colonial-paper/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/billetes-obsoletos/'],
+      '/en/collection/united-states/obsolete-notes/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/'],
@@ -519,6 +750,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/rency/warhol-basquiat-life-is-beautiful/'],
       '/en/collection/united-states/rency/warhol-basquiat-life-is-beautiful/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/'],
+      '/en/collection/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/'],
@@ -555,6 +790,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/'],
       '/en/collection/united-states/10-dollars-series-1934a-cleveland/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/'],
+      '/en/collection/united-states/10-dollars-series-1934a-philadelphia/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/'],
+      '/en/collection/united-states/10-dollars-series-1934c-kansas-city/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/10-dolares-serie-1934d-richmond/'],
@@ -597,12 +840,41 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-continental-1779/',
     );
     assert.equal(
+      redirects['/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/'],
+      '/en/collection/united-states/5-shillings-pennsylvania-1773/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/united-states/5-shillings-pennsylvania-1773/'],
+      '/en/collection/united-states/5-shillings-pennsylvania-1773/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/'],
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/'],
+      '/en/collection/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    );
+    assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
+    );
+  });
+});
+
+describe('hrefToContentSlug', () => {
+  it('strips a piece fragment so stub routes do not encode # as a path', () => {
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/#5000-pesos-error-2010-09629901'),
+      'coleccion/colombia/5000-pesos-error-2010',
+    );
+    assert.equal(
+      hrefToContentSlug('/coleccion/colombia/5000-pesos-error-2010/'),
+      'coleccion/colombia/5000-pesos-error-2010',
     );
   });
 });

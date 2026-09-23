@@ -19,6 +19,7 @@ import {
 } from '../../data/estados-unidos';
 import CatalogThumb from './CatalogThumb.astro';
 import SourceList from './SourceList.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 
 interface Props {
   locale: Locale;
@@ -113,7 +114,7 @@ const jsonLd = collectionPageJsonLd({
             </div>
           ) : (
             <ol
-              class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+              class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
               aria-label={t.holdingsTitle}
             >
               {holdings.map((note) => (

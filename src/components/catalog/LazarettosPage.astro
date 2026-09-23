@@ -10,6 +10,7 @@ import {
   lazarettosPath,
   lazarettosSources,
 } from '../../data/lazarettos';
+import { LAZARETTOS_NUMISMATICS_PATH } from '../../data/lazarettos-numismatics';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import SourceList from './SourceList.astro';
 
@@ -70,6 +71,15 @@ const jsonLd = collectionPageJsonLd({
       <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
+
+      <p class="mt-8 mb-0">
+        <a
+          href={localizePath(LAZARETTOS_NUMISMATICS_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.essayCta}
+        </a>
+      </p>
 
       <div class="mt-16 space-y-12">
         {

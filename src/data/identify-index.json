@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T20:16:24.228Z",
+  "generatedAt": "2026-09-23T15:56:26.769Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -79,6 +79,162 @@
       "title": {
         "es": "100 yuan · Milenio 2000",
         "en": "100 Yuan · Millennium 2000"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "0063b073d2556100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "081e5d75af5d1300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1801-p-jf",
+      "face": "back",
+      "hash": "0c324b0b862d1308",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.20 · Calicó 1160 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/numismatica/1-escudo-popayan-1801-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1801",
+        "en": "1 escudo · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-real-bogota-1810-nr-jf",
+      "face": "front",
+      "hash": "0000617375610000",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/",
+      "pick": "KM# 68.1 · Restrepo 111.3 · Calicó 651 · Numista N#41692",
+      "image": "/images/catalog/numismatica/1-real-bogota-1810-nr-jf-composite.jpg",
+      "title": {
+        "es": "1 real · Bogotá NR–JF · 1810",
+        "en": "1 real · Bogotá NR–JF · 1810"
+      }
+    },
+    {
+      "pieceId": "1-real-bogota-1810-nr-jf",
+      "face": "front",
+      "hash": "0006436b293b1600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/",
+      "pick": "KM# 68.1 · Restrepo 111.3 · Calicó 651 · Numista N#41692",
+      "image": "/images/catalog/numismatica/1-real-bogota-1810-nr-jf-front.jpg",
+      "title": {
+        "es": "1 real · Bogotá NR–JF · 1810",
+        "en": "1 real · Bogotá NR–JF · 1810"
+      }
+    },
+    {
+      "pieceId": "1-real-bogota-1810-nr-jf",
+      "face": "back",
+      "hash": "00166b39512b0600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/",
+      "pick": "KM# 68.1 · Restrepo 111.3 · Calicó 651 · Numista N#41692",
+      "image": "/images/catalog/numismatica/1-real-bogota-1810-nr-jf-back.jpg",
+      "title": {
+        "es": "1 real · Bogotá NR–JF · 1810",
+        "en": "1 real · Bogotá NR–JF · 1810"
+      }
+    },
+    {
+      "pieceId": "1-4-real-santa-marta-1820",
+      "face": "front",
+      "hash": "006b37d4b0513300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/",
+      "pick": "KM# B4 · Restrepo 104 · Hernández 11 · Numista N#18073",
+      "image": "/images/catalog/numismatica/1-4-real-santa-marta-1820-composite.jpg",
+      "title": {
+        "es": "1/4 real · Santa Marta · 1820",
+        "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "1-4-real-santa-marta-1820",
+      "face": "front",
+      "hash": "00163364421b0f00",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/",
+      "pick": "KM# B4 · Restrepo 104 · Hernández 11 · Numista N#18073",
+      "image": "/images/catalog/numismatica/1-4-real-santa-marta-1820-cross.jpg",
+      "title": {
+        "es": "1/4 real · Santa Marta · 1820",
+        "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "1-4-real-santa-marta-1820",
+      "face": "back",
+      "hash": "001e2d4b56151700",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/",
+      "pick": "KM# B4 · Restrepo 104 · Hernández 11 · Numista N#18073",
+      "image": "/images/catalog/numismatica/1-4-real-santa-marta-1820-value.jpg",
+      "title": {
+        "es": "1/4 real · Santa Marta · 1820",
+        "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "front",
+      "hash": "0000611555310000",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-composite.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "front",
+      "hash": "0022751351452600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-front.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "back",
+      "hash": "002a437945330600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-back.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
       }
     },
     {
@@ -238,6 +394,45 @@
       }
     },
     {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "front",
+      "hash": "50270f80012b3701",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-composite.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
+      }
+    },
+    {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "front",
+      "hash": "00100b0f372f0500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-front.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
+      }
+    },
+    {
+      "pieceId": "medio-peso-oro-1953",
+      "face": "back",
+      "hash": "01070b27370f4101",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/medio-peso-oro-1953/",
+      "pick": "P# 345b",
+      "image": "/images/catalog/colombia/medio-peso-oro-1953-c5256707-back.jpg",
+      "title": {
+        "es": "Medio peso oro · República de Colombia · 1953",
+        "en": "Half peso oro · Republic of Colombia · 1953"
+      }
+    },
+    {
       "pieceId": "1-peso-oro-1954",
       "face": "front",
       "hash": "00271b0000092500",
@@ -277,12 +472,90 @@
       }
     },
     {
-      "pieceId": "1-peso-oro-1973-26530968",
+      "pieceId": "1-peso-oro-1959",
+      "face": "front",
+      "hash": "00335d00012b690f",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-composite.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959",
+      "face": "front",
+      "hash": "0056631313775510",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-front.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959",
+      "face": "back",
+      "hash": "41012b4b0965071f",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959/",
+      "pick": "P# 398 · TBB B938",
+      "image": "/images/catalog/colombia/1-peso-oro-1959-60870843-back.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1959",
+        "en": "1 peso oro · Banco de la República · 1959"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959-1977",
       "face": "front",
       "hash": "032b4d01034d0b01",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1973/",
-      "pick": "",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg",
+      "title": {
+        "es": "1 peso · Banco de la República · 1959–1977",
+        "en": "1 peso · Banco de la República · 1959–1977"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959-1977",
+      "face": "front",
+      "hash": "98325d492973e0b2",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg",
+      "title": {
+        "es": "1 peso · Banco de la República · 1959–1977",
+        "en": "1 peso · Banco de la República · 1959–1977"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1959-1977",
+      "face": "back",
+      "hash": "98c413654d4da481",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg",
+      "title": {
+        "es": "1 peso · Banco de la República · 1959–1977",
+        "en": "1 peso · Banco de la República · 1959–1977"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1973",
+      "face": "front",
+      "hash": "032b4d01034d0b01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-composite.jpg",
       "title": {
         "es": "1 peso oro · Banco de la República · 1973",
@@ -290,12 +563,12 @@
       }
     },
     {
-      "pieceId": "1-peso-oro-1973-26530968",
+      "pieceId": "1-peso-oro-1973",
       "face": "front",
       "hash": "98325d492973e0b2",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1973/",
-      "pick": "",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-front.jpg",
       "title": {
         "es": "1 peso oro · Banco de la República · 1973",
@@ -303,16 +576,55 @@
       }
     },
     {
-      "pieceId": "1-peso-oro-1973-26530968",
+      "pieceId": "1-peso-oro-1973",
       "face": "back",
       "hash": "98c413654d4da481",
       "kind": "banknote",
-      "path": "/coleccion/colombia/1-peso-oro-1973/",
-      "pick": "",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
       "image": "/images/catalog/colombia/1-peso-oro-1973-26530968-back.jpg",
       "title": {
         "es": "1 peso oro · Banco de la República · 1973",
         "en": "1 peso oro · Banco de la República · 1973"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1974",
+      "face": "front",
+      "hash": "422b2900421b2500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-composite.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1974",
+        "en": "1 peso oro · Banco de la República · 1974"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1974",
+      "face": "front",
+      "hash": "40c8352b2b2d8494",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-front.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1974",
+        "en": "1 peso oro · Banco de la República · 1974"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1974",
+      "face": "back",
+      "hash": "40640b273b292994",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1959-1977/",
+      "pick": "P# 404e",
+      "image": "/images/catalog/colombia/1-peso-oro-1974-47550075-back.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1974",
+        "en": "1 peso oro · Banco de la República · 1974"
       }
     },
     {
@@ -394,6 +706,45 @@
       }
     },
     {
+      "pieceId": "2-pesos-oro-1977",
+      "face": "front",
+      "hash": "42256d0011172b55",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-composite.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1977",
+      "face": "front",
+      "hash": "945279155d5dbb61",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-front.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1977",
+      "face": "back",
+      "hash": "09071b1f1b271412",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1977/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/2-pesos-oro-1977-22214695-back.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1977",
+        "en": "2 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
       "pieceId": "10-pesos-oro-1943",
       "face": "front",
       "hash": "652b0b21579696c0",
@@ -472,12 +823,12 @@
       }
     },
     {
-      "pieceId": "5-pesos-oro-1979-00141180",
+      "pieceId": "5-pesos-oro-1979",
       "face": "front",
       "hash": "a2514900252b3303",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
-      "pick": "",
+      "pick": "P# 406f · Hernández 156",
       "image": "/images/catalog/colombia/5-pesos-oro-1979-00141180-composite.jpg",
       "title": {
         "es": "5 pesos oro · reposición · 1979",
@@ -485,12 +836,12 @@
       }
     },
     {
-      "pieceId": "5-pesos-oro-1979-00141180",
+      "pieceId": "5-pesos-oro-1979",
       "face": "front",
       "hash": "0080695b2b658900",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
-      "pick": "",
+      "pick": "P# 406f · Hernández 156",
       "image": "/images/catalog/colombia/5-pesos-oro-1979-00141180-front.jpg",
       "title": {
         "es": "5 pesos oro · reposición · 1979",
@@ -498,12 +849,12 @@
       }
     },
     {
-      "pieceId": "5-pesos-oro-1979-00141180",
+      "pieceId": "5-pesos-oro-1979",
       "face": "back",
       "hash": "0101271b37174101",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1979/",
-      "pick": "",
+      "pick": "P# 406f · Hernández 156",
       "image": "/images/catalog/colombia/5-pesos-oro-1979-00141180-back.jpg",
       "title": {
         "es": "5 pesos oro · reposición · 1979",
@@ -589,6 +940,240 @@
       }
     },
     {
+      "pieceId": "10-pesos-oro-1979",
+      "face": "front",
+      "hash": "522b230940494d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "P# 407g · TBB B950m",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-composite.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979",
+      "face": "front",
+      "hash": "00c057335b538115",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "P# 407g · TBB B950m",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-front.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1979",
+      "face": "back",
+      "hash": "81a06d656f4d1585",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1979/",
+      "pick": "P# 407g · TBB B950m",
+      "image": "/images/catalog/colombia/10-pesos-oro-1979-98040194-back.jpg",
+      "title": {
+        "es": "10 pesos oro · Banco de la República · 1979",
+        "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "20-pesos-oro-1983",
+      "face": "front",
+      "hash": "252759332b675709",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "P# 409d · TBB B951l",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-composite.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "20-pesos-oro-1983",
+      "face": "front",
+      "hash": "00511b5559550b00",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "P# 409d · TBB B951l",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-front.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "20-pesos-oro-1983",
+      "face": "back",
+      "hash": "006d4d2b555d5700",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/20-pesos-oro-1983/",
+      "pick": "P# 409d · TBB B951l",
+      "image": "/images/catalog/colombia/20-pesos-oro-1983-056462955-back.jpg",
+      "title": {
+        "es": "20 pesos oro · Banco de la República · 1983",
+        "en": "20 pesos oro · Banco de la República · 1983"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "6253538a112d3701",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "front",
+      "hash": "844651170315a611",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1974",
+      "face": "back",
+      "hash": "846865355f591710",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1974/",
+      "pick": "P# 414a · TBB B953b",
+      "image": "/images/catalog/colombia/50-pesos-oro-1974-2467354822-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1974",
+        "en": "50 pesos oro · 1974"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "4271758a11555d01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-composite.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "front",
+      "hash": "440d61772b532b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-front.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "50-pesos-oro-1984",
+      "face": "back",
+      "hash": "848e7d2d5e692d10",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/50-pesos-oro-1984/",
+      "pick": "P# 425a",
+      "image": "/images/catalog/colombia/50-pesos-oro-1984-0001806322-back.jpg",
+      "title": {
+        "es": "50 pesos oro · 1984",
+        "en": "50 pesos oro · 1984"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "front",
+      "hash": "624d77d0431f1d06",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-composite.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "front",
+      "hash": "ca2b155d6d292d91",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-front.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980",
+      "face": "back",
+      "hash": "ca132505390f0395",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980/",
+      "pick": "P# 418s",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-specimen-027-back.jpg",
+      "title": {
+        "es": "100 pesos oro · espécimen · 1980",
+        "en": "100 pesos oro · specimen · 1980"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "front",
+      "hash": "3d365d334b134727",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-composite.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "front",
+      "hash": "1b4f190d3d5d6d15",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-front.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
+      }
+    },
+    {
+      "pieceId": "200-pesos-oro-1989",
+      "face": "back",
+      "hash": "5f7143455b517773",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/200-pesos-oro-1989/",
+      "pick": "P# 429ds",
+      "image": "/images/catalog/colombia/200-pesos-oro-1989-specimen-499-back.jpg",
+      "title": {
+        "es": "200 pesos oro · espécimen · 1989",
+        "en": "200 pesos oro · specimen · 1989"
+      }
+    },
+    {
       "pieceId": "1000-pesos-oro-1979",
       "face": "front",
       "hash": "0057050000151f00",
@@ -664,6 +1249,45 @@
       "title": {
         "es": "2.000 pesos oro · 1983",
         "en": "2,000 pesos oro · 1983"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "235e758601dd5502",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-composite.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "front",
+      "hash": "8a294f0e2c1d4b43",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-front.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1993",
+      "face": "back",
+      "hash": "8a2585ca4b754142",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "pick": "P# 436A · TBB B974c",
+      "image": "/images/catalog/colombia/5000-pesos-oro-1993-82210365-back.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1993",
+        "en": "5,000 pesos oro · 1993"
       }
     },
     {
@@ -823,12 +1447,12 @@
       }
     },
     {
-      "pieceId": "20000-pesos-2017-AF51355141",
+      "pieceId": "20000-pesos-2017",
       "face": "front",
       "hash": "000b5700005b1b00",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
-      "pick": "",
+      "pick": "P# 461 / TBB B996c",
       "image": "/images/catalog/colombia/20000-pesos-2017-AF51355141-composite.jpg",
       "title": {
         "es": "20.000 pesos · 2017 · serial AF51355141",
@@ -836,12 +1460,12 @@
       }
     },
     {
-      "pieceId": "20000-pesos-2017-AF51355141",
+      "pieceId": "20000-pesos-2017",
       "face": "front",
       "hash": "0031450b0b475400",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
-      "pick": "",
+      "pick": "P# 461 / TBB B996c",
       "image": "/images/catalog/colombia/20000-pesos-2017-AF51355141-front.jpg",
       "title": {
         "es": "20.000 pesos · 2017 · serial AF51355141",
@@ -849,12 +1473,12 @@
       }
     },
     {
-      "pieceId": "20000-pesos-2017-AF51355141",
+      "pieceId": "20000-pesos-2017",
       "face": "back",
       "hash": "00805d571f179400",
       "kind": "banknote",
       "path": "/coleccion/colombia/20000-pesos-2017/",
-      "pick": "",
+      "pick": "P# 461 / TBB B996c",
       "image": "/images/catalog/colombia/20000-pesos-2017-AF51355141-back.jpg",
       "title": {
         "es": "20.000 pesos · 2017 · serial AF51355141",
@@ -862,7 +1486,7 @@
       }
     },
     {
-      "pieceId": "2000-pesos-2015-AA40000066",
+      "pieceId": "2000-pesos-2015",
       "face": "front",
       "hash": "0157470001b58500",
       "kind": "banknote",
@@ -875,12 +1499,12 @@
       }
     },
     {
-      "pieceId": "2000-pesos-2015-AA40000066",
+      "pieceId": "2000-pesos-2015",
       "face": "front",
       "hash": "02913347572b1110",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2015/",
-      "pick": "",
+      "pick": "P# 458a / TBB B993a",
       "image": "/images/catalog/colombia/2000-pesos-2015-AA40000066-front.jpg",
       "title": {
         "es": "2.000 pesos · 2015 · serial AA40000066",
@@ -888,12 +1512,12 @@
       }
     },
     {
-      "pieceId": "2000-pesos-2015-AA40000066",
+      "pieceId": "2000-pesos-2015",
       "face": "back",
       "hash": "02d02795bd972500",
       "kind": "banknote",
       "path": "/coleccion/colombia/2000-pesos-2015/",
-      "pick": "",
+      "pick": "P# 458a / TBB B993a",
       "image": "/images/catalog/colombia/2000-pesos-2015-AA40000066-back.jpg",
       "title": {
         "es": "2.000 pesos · 2015 · serial AA40000066",
@@ -1018,6 +1642,45 @@
       }
     },
     {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "124d5501a1170705",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "front",
+      "hash": "c42b295555536422",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-front.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-error-2000",
+      "face": "back",
+      "hash": "0c06170f4f0fa112",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-error-2000/",
+      "pick": "P# 450 / TBB B985",
+      "image": "/images/catalog/colombia/1000-pesos-error-2000-693949988-back.jpg",
+      "title": {
+        "es": "1.000 pesos · error de corte · 2000",
+        "en": "1,000 pesos · cutting error · 2000"
+      }
+    },
+    {
       "pieceId": "1000-pesos-error-2008",
       "face": "front",
       "hash": "0053170000170700",
@@ -1135,6 +1798,123 @@
       }
     },
     {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "front",
+      "hash": "04352bbf11394f01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "front",
+      "hash": "c246a92525254211",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010",
+      "face": "back",
+      "hash": "42584b2b07092500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010",
+        "en": "5,000 pesos · butterfly-cut error · 2010"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "front",
+      "hash": "04352bbf11394f01",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "front",
+      "hash": "c246a92525254211",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09629901",
+      "face": "back",
+      "hash": "42584b2b07092500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09629901-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09629901",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09629901"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "front",
+      "hash": "a52b27d0421b4b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-composite.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "front",
+      "hash": "8843274b23296722",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-front.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-error-2010-09636101",
+      "face": "back",
+      "hash": "195a59332b196920",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-error-2010/",
+      "pick": "P# 452l / TBB B989m",
+      "image": "/images/catalog/colombia/5000-pesos-error-2010-09636101-back.jpg",
+      "title": {
+        "es": "5.000 pesos · error mariposa · 2010 · 09636101",
+        "en": "5,000 pesos · butterfly-cut error · 2010 · 09636101"
+      }
+    },
+    {
       "pieceId": "50000-pesos-error-2015",
       "face": "front",
       "hash": "000d0700004a5e00",
@@ -1148,7 +1928,7 @@
       }
     },
     {
-      "pieceId": "50000-pesos-error-2015-AB69350427",
+      "pieceId": "50000-pesos-error-2015",
       "face": "front",
       "hash": "00a255150d212100",
       "kind": "banknote",
@@ -1161,7 +1941,7 @@
       }
     },
     {
-      "pieceId": "50000-pesos-error-2015-AB69350427",
+      "pieceId": "50000-pesos-error-2015",
       "face": "back",
       "hash": "00216a3e0e669f00",
       "kind": "banknote",
@@ -1171,6 +1951,162 @@
       "title": {
         "es": "50.000 pesos · error de numeración · 2015",
         "en": "50,000 pesos · numbering error · 2015"
+      }
+    },
+    {
+      "pieceId": "1-sucre-1901",
+      "face": "front",
+      "hash": "594f454a6417554d",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-composite.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
+      "pieceId": "1-sucre-1901",
+      "face": "front",
+      "hash": "495463464555355d",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-front.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
+      "pieceId": "1-sucre-1901",
+      "face": "back",
+      "hash": "3c49374d2b1b394c",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/1-sucre-1901/",
+      "pick": "P#S151c",
+      "image": "/images/catalog/ecuador/ec-1901-1-sucre-k117574-back.jpg",
+      "title": {
+        "es": "1 sucre · Banco del Ecuador · 1901",
+        "en": "1 Sucre · Banco del Ecuador · 1901"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993",
+      "face": "front",
+      "hash": "72aaaa7256696917",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-composite.jpg",
+      "title": {
+        "es": "100 sucres · Banco Central del Ecuador · 1993",
+        "en": "100 Sucres · Banco Central del Ecuador · 1993"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993",
+      "face": "front",
+      "hash": "9692c4aab8cc29cc",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-front.jpg",
+      "title": {
+        "es": "100 sucres · Banco Central del Ecuador · 1993",
+        "en": "100 Sucres · Banco Central del Ecuador · 1993"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993",
+      "face": "back",
+      "hash": "6975656a69693599",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-back.jpg",
+      "title": {
+        "es": "100 sucres · Banco Central del Ecuador · 1993",
+        "en": "100 Sucres · Banco Central del Ecuador · 1993"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000002",
+      "face": "front",
+      "hash": "72aaaa7256696917",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-composite.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000002",
+        "en": "100 sucres · series WF · 00000002"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000002",
+      "face": "front",
+      "hash": "9692c4aab8cc29cc",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-front.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000002",
+        "en": "100 sucres · series WF · 00000002"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000002",
+      "face": "back",
+      "hash": "6975656a69693599",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000002-back.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000002",
+        "en": "100 sucres · series WF · 00000002"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000003",
+      "face": "front",
+      "hash": "2aba8a56b46969c5",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000003-composite.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000003",
+        "en": "100 sucres · series WF · 00000003"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000003",
+      "face": "front",
+      "hash": "293ba698888e2b09",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000003-front.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000003",
+        "en": "100 sucres · series WF · 00000003"
+      }
+    },
+    {
+      "pieceId": "100-sucres-1993-wf00000003",
+      "face": "back",
+      "hash": "64496969696951aa",
+      "kind": "banknote",
+      "path": "/coleccion/ecuador/100-sucres-1993/",
+      "pick": "P#123Ab",
+      "image": "/images/catalog/ecuador/ec-1993-100-sucres-wf00000003-back.jpg",
+      "title": {
+        "es": "100 sucres · serie WF · 00000003",
+        "en": "100 sucres · series WF · 00000003"
       }
     },
     {
@@ -1210,6 +2146,123 @@
       "title": {
         "es": "5 libras · Churchill · 2016",
         "en": "£5 · Churchill · 2016"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "front",
+      "hash": "2335127596d21123",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-composite.jpg",
+      "title": {
+        "es": "½ escudo · Fernando VI · Madrid 1757 JB",
+        "en": "½ escudo · Ferdinand VI · Madrid 1757 JB"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "front",
+      "hash": "0c2b13233333230c",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-front.jpg",
+      "title": {
+        "es": "½ escudo · Fernando VI · Madrid 1757 JB",
+        "en": "½ escudo · Ferdinand VI · Madrid 1757 JB"
+      }
+    },
+    {
+      "pieceId": "medio-escudo-madrid-1757-jb",
+      "face": "back",
+      "hash": "0c1b4923175b270c",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/",
+      "pick": "KM#378 · Fr#274 · Áureo & Calicó#561 · Calicó 2008#255 · Numista N#26320",
+      "image": "/images/catalog/espana/medio-escudo-madrid-1757-jb-back.jpg",
+      "title": {
+        "es": "½ escudo · Fernando VI · Madrid 1757 JB",
+        "en": "½ escudo · Ferdinand VI · Madrid 1757 JB"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "front",
+      "hash": "0063235533632300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-composite.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "front",
+      "hash": "000c2e162e1e0c00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-front.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
+      }
+    },
+    {
+      "pieceId": "ht-34-1837-burro-tortuga",
+      "face": "back",
+      "hash": "00042a122a2e0c00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
+      "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
+      "image": "/images/catalog/estados-unidos/ht-34-1837-burro-tortuga-back.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1837 · HT-34 / Low-20",
+        "en": "1837 Hard Times token · HT-34 / Low-20"
+      }
+    },
+    {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "front",
+      "hash": "0261235137216122",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-composite.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "front",
+      "hash": "081c2a322a1a0c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-front.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "back",
+      "hash": "08040a2a261a0c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-back.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
       }
     },
     {
@@ -1288,6 +2341,84 @@
       "title": {
         "es": "5 dólares · Continental Currency · 14 de enero de 1779",
         "en": "$5 · Continental Currency · 14 January 1779"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "front",
+      "hash": "336555490b233713",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-composite.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "front",
+      "hash": "292b49256d2d5903",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-front.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "5-chelines-pensilvania-1773",
+      "face": "back",
+      "hash": "1f2b0b13132b232b",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-chelines-pensilvania-1773/",
+      "pick": "Fr. PA-166 · P# S-2540 · N#406969",
+      "image": "/images/catalog/estados-unidos/pa-166-5-shillings-1773-9733-back.jpg",
+      "title": {
+        "es": "5 chelines · Pensilvania · 1 de octubre de 1773",
+        "en": "5 shillings · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "front",
+      "hash": "294b593529256f5d",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-composite.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "front",
+      "hash": "2f25654b71694769",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-front.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "2-chelines-6-peniques-pensilvania-1773",
+      "face": "back",
+      "hash": "483d3d6d2b653543",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/",
+      "pick": "Fr. PA-165",
+      "image": "/images/catalog/estados-unidos/pa-165-2s6d-1773-21251-back.jpg",
+      "title": {
+        "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
+        "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
       }
     },
     {
@@ -1642,6 +2773,84 @@
       }
     },
     {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "front",
+      "hash": "2a68aca858696904",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-composite.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "front",
+      "hash": "11a02bcc8aee1b05",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-front.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-filadelfia",
+      "face": "back",
+      "hash": "11a0174926295084",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/",
+      "pick": "P#430Da · Fr. 2006-C",
+      "image": "/images/catalog/estados-unidos/frn-1934a-10-philadelphia-c46924254-back.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Filadelfia",
+        "en": "$10 · Series 1934A · Philadelphia"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "front",
+      "hash": "23e8cca4084d2a00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-composite.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "front",
+      "hash": "00c9d68ab2aa2084",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-front.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "back",
+      "hash": "00ae5355a62b2ba4",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-back.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
+      }
+    },
+    {
       "pieceId": "10-dolares-serie-1934d-richmond",
       "face": "front",
       "hash": "000b4d00007b3d00",
@@ -1720,6 +2929,84 @@
       }
     },
     {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "2249690848354904",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-composite.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "88f82b296915a592",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-front.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "1000-dolares-serie-1934a-nueva-york",
+      "face": "back",
+      "hash": "888b2d4d55550592",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1000-dolares-serie-1934a-nueva-york/",
+      "pick": "P#435a · Fr. 2212-B",
+      "image": "/images/catalog/estados-unidos/frn-1934a-1000-new-york-b00411221-back.jpg",
+      "title": {
+        "es": "1.000 dólares · Serie 1934 A · Nueva York",
+        "en": "$1,000 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii",
+      "face": "front",
+      "hash": "000092b630050000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-composite.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A",
+        "en": "$20 · HAWAII · Series 1934 A"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii",
+      "face": "front",
+      "hash": "c89769292b6dd441",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-front.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A",
+        "en": "$20 · HAWAII · Series 1934 A"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii",
+      "face": "back",
+      "hash": "4a64564d15558440",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/estados-unidos/frn-1934a-hawaii-20-dolares-l86654132a-back.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A",
+        "en": "$20 · HAWAII · Series 1934 A"
+      }
+    },
+    {
       "pieceId": "1-dolar-serie-2003-atlanta",
       "face": "front",
       "hash": "0059690000373300",
@@ -1756,6 +3043,162 @@
       "title": {
         "es": "1 dólar · Serie 2003 · Atlanta ★",
         "en": "$1 · Series 2003 · Atlanta ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "10721451b1331160",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-composite.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "front",
+      "hash": "04da924b2b6d0fa4",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-front.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-san-luis",
+      "face": "back",
+      "hash": "4064935569550552",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/",
+      "pick": "P#516 · Fr. 1937-H*",
+      "image": "/images/catalog/estados-unidos/frn-2003-2-st-louis-h00010418-back.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · San Luis ★",
+        "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "front",
+      "hash": "6d254d4c4d95ab6c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-composite.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "front",
+      "hash": "006d356d75ad2a00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-front.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-1917",
+      "face": "back",
+      "hash": "0025614d552b5500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-1917/",
+      "pick": "P#188(4) · Fr. 60",
+      "image": "/images/catalog/estados-unidos/usn-1917-2-b50400302a-back.jpg",
+      "title": {
+        "es": "2 dólares · United States Note · Serie 1917",
+        "en": "$2 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "front",
+      "hash": "003113b2b2b43600",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-composite.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "front",
+      "hash": "00871749ad59c700",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-front.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928a",
+      "face": "back",
+      "hash": "008525493369b100",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/",
+      "pick": "P#412a · Fr. 1601",
+      "image": "/images/catalog/estados-unidos/sc-1928a-1-dolar-d00508932b-back.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1928 A",
+        "en": "$1 · Silver Certificate · Series 1928A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-hawaii-1935a",
+      "face": "front",
+      "hash": "2072b613313533a2",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-hawaii-1935a/",
+      "pick": "Hawaii P#36 · Fr. 2300",
+      "image": "/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-composite.jpg",
+      "title": {
+        "es": "1 dólar · HAWAII · Serie 1935 A",
+        "en": "$1 · HAWAII · Series 1935A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-hawaii-1935a",
+      "face": "front",
+      "hash": "8aaca85b6d492d84",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-hawaii-1935a/",
+      "pick": "Hawaii P#36 · Fr. 2300",
+      "image": "/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-front.jpg",
+      "title": {
+        "es": "1 dólar · HAWAII · Serie 1935 A",
+        "en": "$1 · HAWAII · Series 1935A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-hawaii-1935a",
+      "face": "back",
+      "hash": "8a45b92b49332580",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-hawaii-1935a/",
+      "pick": "Hawaii P#36 · Fr. 2300",
+      "image": "/images/catalog/estados-unidos/sc-1935a-hawaii-1-dolar-s40499058c-back.jpg",
+      "title": {
+        "es": "1 dólar · HAWAII · Serie 1935 A",
+        "en": "$1 · HAWAII · Series 1935A"
       }
     },
     {
@@ -1837,41 +3280,41 @@
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "front",
       "hash": "0084327232322022",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-composite.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "front",
       "hash": "224545534d2f4111",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-front.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },
     {
-      "pieceId": "nota-prueba-giori-lincoln-memorial",
+      "pieceId": "billete-prueba-giori-lincoln-memorial",
       "face": "back",
       "hash": "224d1717172f2511",
       "kind": "banknote",
-      "path": "/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/",
+      "path": "/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/",
       "pick": "Giori · Lincoln Memorial (uniface)",
       "image": "/images/catalog/estados-unidos/giori-lincoln-memorial-back.jpg",
       "title": {
-        "es": "Nota de prueba Giori · Lincoln Memorial · ca. 1970",
+        "es": "Billete de prueba Giori · Lincoln Memorial · ca. 1970",
         "en": "Giori test note · Lincoln Memorial · ca. 1970s"
       }
     },
@@ -2419,6 +3862,45 @@
       "title": {
         "es": "20 dólares · Serie 692",
         "en": "$20 · Series 692"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "front",
+      "hash": "04222b2f2d278182",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-composite.jpg",
+      "title": {
+        "es": "5 centavos · Serie 481",
+        "en": "5 cents · Series 481"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "front",
+      "hash": "04222b2f2d278182",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-front.jpg",
+      "title": {
+        "es": "5 centavos · Serie 481",
+        "en": "5 cents · Series 481"
+      }
+    },
+    {
+      "pieceId": "5-centavos-serie-481",
+      "face": "back",
+      "hash": "0403452b351509a2",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/mpc/5-centavos-serie-481/",
+      "pick": "P#M22a · Fr. M831 · Schwan 831-1",
+      "image": "/images/catalog/estados-unidos/mpc-481-5-d02536728d-back.jpg",
+      "title": {
+        "es": "5 centavos · Serie 481",
+        "en": "5 cents · Series 481"
       }
     },
     {

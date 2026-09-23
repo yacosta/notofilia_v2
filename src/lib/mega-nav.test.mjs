@@ -185,21 +185,53 @@ describe('polymer submenu', () => {
 });
 
 describe('country flags', () => {
-  it('allowlists every mega-nav flag in CountryFlag and ships the SVG', () => {
+  it('allowlists every mega-nav flag in CountryFlag and ships its asset', () => {
     const nav = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
-    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2})'/g)].map((match) => match[1]);
+    const flags = [...nav.matchAll(/flag:\s*'([a-z]{2}(?:-[a-z0-9]{2,4})?)'/g)].map((match) => match[1]);
     assert.ok(flags.includes('gb'), 'England must use flag: gb');
     assert.ok(flags.includes('ca'), 'Canada must use flag: ca');
+    assert.ok(flags.includes('co-1889'), 'Banca libre must use the 1889 Colombia flag');
     assert.ok(flags.includes('my'), 'Malaysia must use flag: my');
+    assert.ok(flags.includes('kr'), 'Korean War MPC must use flag: kr');
+    assert.ok(flags.includes('us-13'), 'Colonial paper must use the 13-star US flag');
+    assert.ok(flags.includes('us-25'), 'Obsolete notes must use the 25-star US flag');
+    assert.ok(flags.includes('us-hi'), 'WWII emergency notes must use flag: us-hi');
     const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
     const allow = countryFlag.match(/FLAG_CODES = \[([^\]]+)\]/)?.[1] ?? '';
     for (const code of new Set(flags)) {
       assert.match(allow, new RegExp(`'${code}'`), `${code} must be in CountryFlag FLAG_CODES`);
+      const extension = code === 'co-1889' ? 'gif' : 'svg';
       assert.ok(
-        existsSync(new URL(`../../public/flags/${code}.svg`, import.meta.url)),
-        `public/flags/${code}.svg is required for flag: '${code}'`,
+        existsSync(new URL(`../../public/flags/${code}.${extension}`, import.meta.url)),
+        `public/flags/${code}.${extension} is required for flag: '${code}'`,
       );
     }
+  });
+});
+
+describe('Colombia banca libre menu', () => {
+  it('names the years on the Banca libre submenu link', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    const bancaLibre = colombia.split("id: 'banca-libre'")[1]?.split("id: 'colombia-1-peso-oro-1959-1977'")[0] ?? '';
+    assert.match(colombia, /es: 'Banca libre \(1870–1887\)'/);
+    assert.match(colombia, /en: 'Free banking \(1870–1887\)'/);
+    assert.match(bancaLibre, /flag: 'co-1889'/);
+    assert.doesNotMatch(bancaLibre, /icon: 'guides'/);
+  });
+
+  it('links the BanRep 1 peso 1959–1977 note under Colombia', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const colombia = source.split("id: 'colombia'")[1]?.split("id: 'estados-unidos'")[0] ?? '';
+    assert.match(source, /colombiaNoteById\('1-peso-oro-1959-1977'\)/);
+    assert.match(colombia, /id: 'colombia-1-peso-oro-1959-1977'/);
+    assert.match(colombia, /es: 'Banco de la República - 1 peso \(1959 - 1977\)'/);
+    assert.match(colombia, /en: 'Banco de la República - 1 peso \(1959 - 1977\)'/);
+    assert.match(colombia, /href: colombia1PesoBanRep\.path/);
+    assert.match(
+      colombia,
+      /id: 'banca-libre'[\s\S]*id: 'colombia-1-peso-oro-1959-1977'[\s\S]*id: 'emisiones-extranjero-guatemala'/,
+    );
   });
 });
 
@@ -209,14 +241,35 @@ describe('Colombia visual catalogs', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     assert.match(source, /id: 'catalogo-billetes'/);
     assert.match(source, /href: NOTAFILIA_NOTES_CATALOG_PATH/);
+    assert.match(source, /id: 'moneda-prueba-giori'/);
+    assert.match(source, /href: GIORI_TEST_NOTES_PATH/);
+    assert.match(
+      source,
+      /id: 'ecuador'[\s\S]*id: 'moneda-prueba-giori'[\s\S]*id: 'polimero'/,
+    );
     assert.doesNotMatch(source, /id: 'colombia-catalogo'/);
     assert.doesNotMatch(source, /href: COLOMBIA_NOTES_CATALOG_PATH/);
     assert.doesNotMatch(source, /COLOMBIA_COIN_CATALOG_PATH/);
     assert.doesNotMatch(numismatica, /id: 'colombia-monedas-catalogo'/);
     assert.doesNotMatch(numismatica, /Catálogo visual de monedas/);
     assert.doesNotMatch(numismatica, /Visual coin catalog/);
-    const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
-    assert.doesNotMatch(colombiaBlock, /children:/);
+    const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'es-monedas'")[0] ?? '';
+    assert.match(colombiaBlock, /id: 'numismatica-lazaretos'/);
+    assert.match(colombiaBlock, /href: LAZARETTOS_NUMISMATICS_PATH/);
+    assert.doesNotMatch(colombiaBlock, /COLOMBIA_COIN_CATALOG_PATH/);
+  });
+});
+
+describe('Spain numismatics menu', () => {
+  it('nests the 1757 Madrid half escudo under España', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    const spainBlock = numismatica.split("id: 'es-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
+    assert.match(source, /spainCoinById\('medio-escudo-madrid-1757-jb'\)/);
+    assert.match(spainBlock, /href: SPAIN_COINAGE_PATH/);
+    assert.match(spainBlock, /flag: 'es'/);
+    assert.match(spainBlock, /id: 'es-medio-escudo-madrid-1757-jb'/);
+    assert.match(spainBlock, /href: spainHalfEscudo\.path/);
   });
 });
 
@@ -226,14 +279,22 @@ describe('United States numismatics menu', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     assert.match(numismatica, /id: 'us-monedas'/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
-    assert.match(numismatica, /id: 'colombia-monedas'[\s\S]*id: 'us-monedas'[\s\S]*id: 'nl-monedas'/);
+    assert.match(
+      numismatica,
+      /id: 'colombia-monedas'[\s\S]*id: 'es-monedas'[\s\S]*id: 'us-monedas'[\s\S]*id: 'nl-monedas'/,
+    );
   });
 
   it('nests the Trump Semiquincentennial dollar under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     const usBlock = numismatica.split("id: 'us-monedas'")[1]?.split("id: 'nl-monedas'")[0] ?? '';
+    assert.match(source, /coinById\('ht-34-1837-burro-tortuga'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
+    assert.match(usBlock, /id: 'us-fichas-hard-times'/);
+    assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
+    assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
+    assert.match(usBlock, /id: 'us-ht-181-c1835-john-j-adams'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
@@ -244,6 +305,53 @@ describe('United States numismatics menu', () => {
 });
 
 describe('United States submenu', () => {
+  it('includes the colonial paper case under Estados Unidos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
+    assert.match(source, /notesForChapter\('us-colonial'\)/);
+    assert.match(usa, /id: 'moneda-colonial'/);
+    assert.match(usa, /href: USA_COLONIAL_PATH/);
+    assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
+    assert.match(colonial, /flag: 'us-13'/);
+    assert.doesNotMatch(colonial, /icon: 'guides'/);
+    assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
+    assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
+  });
+
+  it('includes the obsolete notes case under Estados Unidos after colonial paper', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const obsolete = usa.split("id: 'billetes-obsoletos'")[1]?.split("id: 'filipinas'")[0] ?? '';
+    assert.match(source, /notesForChapter\('us-obsoleto'\)/);
+    assert.match(usa, /id: 'billetes-obsoletos'/);
+    assert.match(usa, /href: USA_OBSOLETE_PATH/);
+    assert.match(usa, /obsoleteSeriesCopy\.es\.kicker/);
+    assert.match(obsolete, /flag: 'us-25'/);
+    assert.doesNotMatch(obsolete, /icon: 'guides'/);
+    assert.match(usa, /id: 'billetes-obsoletos'[\s\S]*children: obsoleteNotes\.map/);
+    assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'billetes-obsoletos'[\s\S]*id: 'filipinas'/);
+  });
+
+  it('nests WWII emergency banknotes under Estados Unidos after Filipinas', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const wwii = usa.split("id: 'billetes-emergencia-iigm'")[1]?.split("id: 'mpc'")[0] ?? '';
+    assert.match(usa, /id: 'filipinas'[\s\S]*id: 'billetes-emergencia-iigm'[\s\S]*id: 'mpc'/);
+    assert.match(wwii, /href: WWII_EMERGENCY_PATH/);
+    assert.match(wwii, /flag: 'us-hi'/);
+    assert.doesNotMatch(wwii, /flag: 'us'/);
+    assert.doesNotMatch(usa.split("id: 'mpc'")[1] ?? '', /id: 'billetes-emergencia-iigm'/);
+  });
+
+  it('marks Korean War MPC with the South Korea flag', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
+    const mpc = usa.split("id: 'mpc'")[1]?.split("id: 'mpc-vietnam'")[0] ?? '';
+    assert.match(mpc, /flag: 'kr'/);
+    assert.doesNotMatch(mpc, /flag: 'us'/);
+  });
+
   it('includes the Rency and Misceláneos cases under Estados Unidos', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
@@ -301,6 +409,7 @@ describe('Recursos submenu', () => {
   it('marks each resource link with a decorative icon', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
+    assert.match(recursos, /id: 'herramientas',[\s\S]*?icon: 'tools'/);
     assert.match(recursos, /id: 'identificar',[\s\S]*?icon: 'identify'/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);

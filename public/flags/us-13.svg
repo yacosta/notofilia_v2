@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-us-13" viewBox="0 0 640 480">
+  <path fill="#b22234" d="M0 0h640v480H0z"/>
+  <path fill="#fff" d="M0 36.923h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640V480H0z"/>
+  <path fill="#3c3b6e" d="M0 0h258.462v258.462H0z"/>
+  <defs>
+    <path id="star" d="m0-12 2.69 8.29h8.72L4.36 1.42l2.69 8.29L0 4.58l-7.05 5.13 2.69-8.29-7.05-5.13h8.72z"/>
+  </defs>
+  <g fill="#fff">
+    <use href="#star" transform="translate(129.231 39.231)"/>
+    <use href="#star" transform="translate(171.056 49.54)"/>
+    <use href="#star" transform="translate(203.3 78.105)"/>
+    <use href="#star" transform="translate(218.575 118.383)"/>
+    <use href="#star" transform="translate(213.382 161.145)"/>
+    <use href="#star" transform="translate(188.912 196.597)"/>
+    <use href="#star" transform="translate(150.769 216.616)"/>
+    <use href="#star" transform="translate(107.693 216.616)"/>
+    <use href="#star" transform="translate(69.55 196.597)"/>
+    <use href="#star" transform="translate(45.08 161.145)"/>
+    <use href="#star" transform="translate(39.887 118.383)"/>
+    <use href="#star" transform="translate(55.162 78.105)"/>
+    <use href="#star" transform="translate(87.406 49.54)"/>
+  </g>
+</svg>

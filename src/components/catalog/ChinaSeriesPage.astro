@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import FaqBlock from '../FaqBlock.astro';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { localizeFaq, seriesFaqs } from '../../data/page-faq';
@@ -83,7 +84,7 @@ const jsonLd = collectionPageJsonLd({
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
         <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2"
+          class:list={['m-0', CATALOG_PIECE_GRID]}
           aria-label={copy[locale].polymerByDenomination}
         >
           {

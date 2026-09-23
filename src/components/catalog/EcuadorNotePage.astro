@@ -1,0 +1,307 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import { copy, localizePath, type Locale } from '../../lib/site';
+import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
+import { piecePageMeta } from '../../lib/piece-seo';
+import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { uniqueCatalogSources } from '../../data/catalog';
+import {
+  ECUADOR_PATH,
+  ecuadorNotes,
+  groupsSameTypeHoldings,
+  notePageCopy,
+  notePath,
+  notePieces,
+  noteSerialLine,
+  seriesCopy,
+  type EcuadorNote,
+  type EcuadorNotePiece,
+} from '../../data/ecuador';
+import PieceSiblings from './PieceSiblings.astro';
+import SourceList from './SourceList.astro';
+import NoteImageLightbox from './NoteImageLightbox.astro';
+
+interface Props {
+  locale: Locale;
+  note: EcuadorNote;
+}
+
+const { locale, note } = Astro.props;
+const t = notePageCopy[locale];
+const series = seriesCopy[locale];
+const pathname = localizePath(note.path, locale);
+const pieces = notePieces(note);
+const multi = pieces.length > 1;
+const shareType = groupsSameTypeHoldings(note) && multi;
+const factsTag = multi && !shareType ? 'h3' : 'h2';
+const serialLine = noteSerialLine(note);
+const pieceSources = pieces.flatMap((piece) => piece.sources);
+const sources = uniqueCatalogSources([...note.sources, ...pieceSources]);
+const seo = piecePageMeta({
+  kind: 'note',
+  title: note.title[locale],
+  kicker: note.kicker[locale],
+  lead: note.lead[locale],
+  locale,
+  country: 'Ecuador',
+});
+const siblings = pieceSiblings(ecuadorNotes, note.path);
+const jsonCrumbs = [
+  { name: copy[locale].home, path: '/' },
+  { name: series.title, path: ECUADOR_PATH },
+  { name: seo.h1, path: pathname },
+];
+
+function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
+  return `${piece.id}-${slot}`;
+}
+---
+
+<Layout
+  title={seo.documentTitle}
+  description={seo.description}
+  locale={locale}
+  pathname={pathname}
+  ogImage={note.images.front}
+>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+            name: seo.h1,
+            description: seo.description,
+            url: pathname,
+            image: note.images.front,
+            locale,
+            artform: 'Banknote',
+            catalogNumber: note.pick,
+            serial: serialLine,
+            gradingService: inferGradingService(note.grade[locale]),
+          }),
+        ],
+      })}
+    />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { href: localizePath('/', locale), label: copy[locale].home },
+          { href: localizePath(ECUADOR_PATH, locale), label: t.collectionLink },
+          { label: seo.h1 },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+        {note.kicker[locale]}
+      </p>
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {seo.h1}
+      </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{seo.subtitle}</p>
+      <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{note.lead[locale]}</p>
+
+      {
+        shareType ? (
+          <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+            <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {t.factsHeading}
+            </h2>
+            <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.pick}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialsLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{serialLine}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.signatures[locale]}</dd>
+              </div>
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.grade[locale]}</dd>
+              </div>
+              <div class="sm:col-span-2">
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.printed[locale]}</dd>
+              </div>
+            </dl>
+          </section>
+        ) : null
+      }
+
+      {
+        pieces.map((piece, index) => {
+          const FactsHeading = shareType ? 'h3' : factsTag;
+          const NarrativeHeading = factsTag;
+          return (
+            <div
+              id={piece.id}
+              class:list={[
+                'scroll-mt-28',
+                shareType && index > 0 && 'mt-10',
+                !shareType && multi && index > 0 && 'mt-14 border-t border-line-strong pt-14',
+              ]}
+            >
+              {
+                shareType ? (
+                  <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                    {t.exampleHeading} {piece.serial_display}
+                  </h2>
+                ) : multi ? (
+                  <>
+                    <h2 class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                      {piece.title[locale]}
+                    </h2>
+                    <p class="mb-10 mt-0 text-[17px]/7 text-muted">{piece.lead[locale]}</p>
+                  </>
+                ) : null
+              }
+
+              {
+                shareType ? null : (
+                  <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby={pieceHeadingId(piece, 'facts')}>
+                    <FactsHeading id={pieceHeadingId(piece, 'facts')} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+                      {t.factsHeading}
+                    </FactsHeading>
+                    <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.pick}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.serial_display}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.signatures[locale]}</dd>
+                      </div>
+                      <div>
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.grade[locale]}</dd>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
+                        <dd class="m-0 mt-1 text-cream">{piece.printed[locale]}</dd>
+                      </div>
+                    </dl>
+                  </section>
+                )
+              }
+
+              <div class="grid gap-10 lg:grid-cols-2">
+                <figure class="m-0">
+                  <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</FactsHeading>
+                  <NoteImageLightbox
+                    src={piece.images.front}
+                    alt={piece.frontCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                    locale={locale}
+                    width={piece.images.frontWidth}
+                    height={piece.images.frontHeight}
+                    eager={piece.id === pieces[0]?.id}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.frontCaption[locale]}</figcaption>
+                </figure>
+                <figure class="m-0">
+                  <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</FactsHeading>
+                  <NoteImageLightbox
+                    src={piece.images.back}
+                    alt={piece.backCaption[locale]}
+                    expandLabel={t.expandImage}
+                    closeLabel={t.closeLightbox}
+                    locale={locale}
+                    width={piece.images.backWidth}
+                    height={piece.images.backHeight}
+                  />
+                  <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.backCaption[locale]}</figcaption>
+                </figure>
+              </div>
+
+              {
+                shareType ? null : (
+                  <>
+                    <section class="mt-14" aria-labelledby={pieceHeadingId(piece, 'about')}>
+                      <NarrativeHeading id={pieceHeadingId(piece, 'about')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                        {t.aboutHeading}
+                      </NarrativeHeading>
+                      <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(piece.description[locale], locale)} />
+                    </section>
+                    <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'scarcity')}>
+                      <NarrativeHeading id={pieceHeadingId(piece, 'scarcity')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                        {t.scarcityHeading}
+                      </NarrativeHeading>
+                      <p class="m-0 text-[17px]/7 text-cream">{piece.scarcity[locale]}</p>
+                    </section>
+                    <section class="mt-12" aria-labelledby={pieceHeadingId(piece, 'population')}>
+                      <NarrativeHeading id={pieceHeadingId(piece, 'population')} class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                        {t.populationHeading}
+                      </NarrativeHeading>
+                      <p class="m-0 text-[17px]/7 text-cream">{piece.population[locale]}</p>
+                    </section>
+                  </>
+                )
+              }
+            </div>
+          );
+        })
+      }
+
+      {
+        shareType ? (
+          <>
+            <section class="mt-14" aria-labelledby="about-heading">
+              <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.aboutHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(note.description[locale], locale)} />
+            </section>
+            <section class="mt-12" aria-labelledby="scarcity-heading">
+              <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.scarcityHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream">{note.scarcity[locale]}</p>
+            </section>
+            <section class="mt-12" aria-labelledby="population-heading">
+              <h2 id="population-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+                {t.populationHeading}
+              </h2>
+              <p class="m-0 text-[17px]/7 text-cream">{note.population[locale]}</p>
+            </section>
+          </>
+        ) : null
+      }
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
+      </div>
+
+      <PieceSiblings
+        locale={locale}
+        prev={siblings.prev ? { href: notePath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
+        next={siblings.next ? { href: notePath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
+        related={siblings.related.map((item) => ({ href: notePath(item, locale), title: item.title[locale], image: item.images.front }))}
+      />
+
+      <p class="mt-12">
+        <a
+          href={localizePath(ECUADOR_PATH, locale)}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {series.title}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

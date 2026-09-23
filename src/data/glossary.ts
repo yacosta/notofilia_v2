@@ -15,12 +15,126 @@ export type GlossaryCategoryId =
 
 export type GlossaryTerm = {
   slug: string;
+  slugEn: string;
   id: string;
   category: GlossaryCategoryId;
   title: { es: string; en: string };
   definition: { es: string; en: string };
   seeAlso: string[];
 };
+
+type GlossaryTermRecord = Omit<GlossaryTerm, 'slugEn'>;
+
+export function slugifyEnglish(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, ' and ')
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+}
+
+/** Keeper English URL segments (and any title that would collide). */
+const GLOSSARY_SLUG_EN: Record<string, string> = {
+  anverso: 'obverse',
+  'banca-libre': 'free-banking',
+  bep: 'bep',
+  'billete-de-reemplazo-estrella': 'replacement-star-note',
+  'billete-provisional': 'provisional-note',
+  'billete-reserva-federal': 'federal-reserve-note',
+  ceca: 'mint',
+  'certificado-de-plata': 'silver-certificate',
+  'columnario-de-dos-mundos': 'pillar-dollar',
+  'dispositivo-opticamente-variable-ovd': 'optically-variable-device-ovd',
+  encapsulado: 'slab',
+  'error-de-impresion': 'printing-error',
+  escudo: 'gold-escudo',
+  'fichas-hard-times': 'hard-times-tokens',
+  filigrana: 'watermark',
+  funnyback: 'funnyback',
+  'hilo-de-seguridad': 'security-thread',
+  mariposa: 'butterfly',
+  'moneda-prueba-giori': 'giori-test-note',
+  notafilia: 'notaphily',
+  numeracion: 'serial-number',
+  'numeracion-especial': 'fancy-serial-number',
+  numismatica: 'numismatics',
+  'peso-oro': 'gold-peso',
+  pick: 'pick',
+  'pmg-pcgs': 'pmg-pcgs',
+  polimero: 'polymer',
+  'prueba-ensayo': 'proof-essay',
+  resello: 'overstamp',
+  reverso: 'reverse',
+  'sello-amarillo': 'yellow-seal',
+  'sobreimpresion-hawaii': 'hawaii-overprint',
+  'tinta-ovi': 'ovi-ink',
+  'ventana-transparente': 'clear-window',
+};
+
+function withEnglishSlugs(records: GlossaryTermRecord[]): GlossaryTerm[] {
+  const used = new Set<string>();
+  return records.map((term) => {
+    let slugEn = GLOSSARY_SLUG_EN[term.slug] ?? (slugifyEnglish(term.title.en) || term.slug);
+    if (used.has(slugEn)) slugEn = `${slugEn}-${term.slug}`;
+    used.add(slugEn);
+    return { ...term, slugEn };
+  });
+}
+
+/**
+ * Keep list: standalone glossary URLs (25–40). Chosen for collector/search
+ * demand, existing copy depth, and collection examples that can illustrate
+ * the term. All other terms fold into `/glosario/#<slug>` (EN: `/en/glossary/#<slug>`).
+ * Old folded URLs 301 to `?term=<slug>` because CDN hash fragments are not reliable.
+ */
+export const STANDALONE_GLOSSARY_SLUGS = [
+  'anverso',
+  'banca-libre',
+  'billete-de-reemplazo-estrella',
+  'billete-provisional',
+  'columnario-de-dos-mundos',
+  'dispositivo-opticamente-variable-ovd',
+  'encapsulado',
+  'error-de-impresion',
+  'exonumia',
+  'filigrana',
+  'foxing',
+  'guardian',
+  'hilo-de-seguridad',
+  'intaglio',
+  'mariposa',
+  'mpc',
+  'ngc',
+  'notafilia',
+  'numeracion',
+  'numeracion-especial',
+  'numismatica',
+  'peso-oro',
+  'pick',
+  'pmg-pcgs',
+  'polimero',
+  'prueba-ensayo',
+  'remainder',
+  'resello',
+  'reverso',
+  'scrip',
+  'specimen',
+  'tinta-ovi',
+  'uniface',
+  'ventana-transparente',
+] as const;
+
+export type StandaloneGlossarySlug = (typeof STANDALONE_GLOSSARY_SLUGS)[number];
+
+const standaloneSlugSet = new Set<string>(STANDALONE_GLOSSARY_SLUGS);
+
+export function isStandaloneGlossaryTerm(slug: string): boolean {
+  return standaloneSlugSet.has(slug);
+}
 
 export const glossaryCategories: { id: GlossaryCategoryId; es: string; en: string }[] = [
   { id: "Conservación", es: "Conservación", en: "Conservation" },
@@ -32,7 +146,7 @@ export const glossaryCategories: { id: GlossaryCategoryId; es: string; en: strin
   { id: "Disciplina", es: "Disciplina", en: "Discipline" },
 ];
 
-export const glossaryTerms: GlossaryTerm[] = [
+const glossaryTermRecords: GlossaryTermRecord[] = [
   {
     slug: "abrasiones",
     id: "abrasiones",
@@ -138,12 +252,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["deuda-flotante", "billete-de-necesidad", "resello"],
   },
   {
+    slug: "billete-reserva-federal",
+    id: "billete-reserva-federal",
+    category: "Emisión",
+    title: { es: "Billete de la Reserva Federal (FRN)", en: "Federal Reserve Note (FRN)" },
+    definition: { es: "Papel de curso legal emitido por el Sistema de la Reserva Federal de Estados Unidos desde 1914, hoy el único tipo federal que se pone en circulación. El sello y el distrito (letra y número) lo distinguen de los certificados de plata o de los United States Notes. En esta colección figuran, entre otros, los 10 dólares serie 1934 / 1934 A de varios distritos y el 20 dólares HAWAII Fr. 2305.", en: "Legal-tender paper issued by the United States Federal Reserve System since 1914, today the only federal type still placed in circulation. The seal and the district (letter and number) distinguish it from Silver Certificates or United States Notes. This collection includes, among others, Series 1934 / 1934A $10 notes from several districts and the HAWAII $20 Fr. 2305." },
+    seeAlso: ["friedberg", "certificado-de-plata", "sobreimpresion-hawaii", "dolar", "bep"],
+  },
+  {
     slug: "billete-web",
     id: "billete-web",
     category: "Producción",
     title: { es: "Billete web", en: "Web Notes" },
     definition: { es: "Billetes experimentales producidos por la BEP entre 1992 y 1995 mediante una prensa de intaglio alimentada por rollo continuo en lugar de pliegos planos, identificables por la ubicación distinta de la numeración de placas.", en: "Experimental currency produced by the BEP between 1992 and 1995 using a continuous roll-fed web intaglio press instead of flat sheets, identifiable by relocated plate-numbering positions." },
-    seeAlso: ["intaglio"],
+    seeAlso: ["intaglio", "bep"],
+  },
+  {
+    slug: "bep",
+    id: "bep",
+    category: "Producción",
+    title: { es: "BEP (Bureau of Engraving and Printing)", en: "BEP (Bureau of Engraving and Printing)" },
+    definition: { es: "Oficina del Departamento del Tesoro de Estados Unidos que graba e imprime el papel moneda federal, los sellos postales y otros valores. Nació del trabajo de firmas y corte en el edificio del Tesoro durante la Guerra Civil; hoy produce Federal Reserve Notes, certificados históricos y billetes de prueba Giori. No es un banco emisor: imprime por encargo del Tesoro y de la Reserva Federal.", en: "United States Treasury bureau that engraves and prints federal paper currency, postage stamps, and other securities. It grew out of signing and cutting work in the Treasury building during the Civil War; today it produces Federal Reserve Notes, historic certificates, and Giori test notes. It is not an issuing bank: it prints on behalf of the Treasury and the Federal Reserve." },
+    seeAlso: ["billete-reserva-federal", "moneda-prueba-giori", "intaglio", "friedberg"],
   },
   {
     slug: "billon",
@@ -199,7 +329,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Catálogo Friedberg", en: "Friedberg catalog" },
     definition: { es: "Sistema de referencia especializado en billetes de Estados Unidos, alternativo y complementario al catálogo Pick.", en: "A reference system specialized in United States banknotes, an alternative and complement to the Pick catalog." },
-    seeAlso: ["pick", "schwan", "banknote-book", "haxby", "criswell"],
+    seeAlso: ["pick", "schwan", "banknote-book", "haxby", "criswell", "billete-reserva-federal", "certificado-de-plata"],
   },
   {
     slug: "haxby",
@@ -226,12 +356,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["pick", "friedberg", "schwan"],
   },
   {
+    slug: "ceca",
+    id: "ceca",
+    category: "Producción",
+    title: { es: "Ceca / marca de ceca", en: "Mint / mint mark" },
+    definition: { es: "Casa de moneda donde se acuña una pieza, y la letra o símbolo grabado que la identifica. En el medio escudo de Madrid de 1757 la marca es una M coronada entre las iniciales de ensaye; en el 1 escudo de Popayán de 1801, la P; en Santa Fe colonial, NR. Distinta del ensayador, que firma la ley del metal.", en: "The mint where a coin is struck, and the letter or symbol engraved that identifies it. On the 1757 Madrid half escudo the mark is a crowned M between the assayers’ initials; on the 1801 Popayán 1 escudo, a P; on colonial Santa Fe, NR. Distinct from the assayer, who signs the metal’s fineness." },
+    seeAlso: ["ensayador", "escudo", "planchuela", "macuquina-cob"],
+  },
+  {
     slug: "cedula-hipotecaria",
     id: "cedula-hipotecaria",
     category: "Emisión",
     title: { es: "Cédula hipotecaria", en: "Mortgage bond / certificate" },
     definition: { es: "Título de deuda respaldado por hipotecas inmobiliarias, autorizado a circular con fuerza fiduciaria bajo un marco legal específico.", en: "A debt instrument backed by real-estate mortgages, authorized to circulate with fiduciary force under a specific legal framework." },
     seeAlso: ["vale-al-portador"],
+  },
+  {
+    slug: "certificado-de-plata",
+    id: "certificado-de-plata",
+    category: "Emisión",
+    title: { es: "Certificado de plata", en: "Silver Certificate" },
+    definition: { es: "Papel federal estadounidense, emitido desde 1878, pagadero en plata del Tesoro. En tamaño pequeño el 1 dólar serie 1928 A (Fr. 1601) lleva el reverso Funnyback; en la Segunda Guerra Mundial la misma clase recibió la sobrecarga HAWAII y, en otra emisión, el sello amarillo de África del Norte. No es un Federal Reserve Note ni un United States Note.", en: "United States federal paper, issued from 1878, payable in Treasury silver. In small size the Series 1928A $1 (Fr. 1601) carries the Funnyback reverse; in the Second World War the same class received the HAWAII overprint and, in another issue, the North Africa yellow seal. It is not a Federal Reserve Note or a United States Note." },
+    seeAlso: ["funnyback", "sobreimpresion-hawaii", "sello-amarillo", "billete-reserva-federal", "friedberg", "bep"],
   },
   {
     slug: "cordoncillo",
@@ -335,7 +481,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Monedas y divisas",
     title: { es: "Dólar", en: "Dollar" },
     definition: { es: "Unidad monetaria de Estados Unidos y de varios países que la adoptaron o dolarizaron. En esta colección aparece en los certificados de pago militar de Vietnam, en el 5 dólares de polímero de Canadá (serie Frontiers) y en el relato de la dolarización del Ecuador (2000), que sustituyó al sucre.", en: "The monetary unit of the United States and of countries that adopted or dollarized to it. In this collection it appears on Vietnam military payment certificates, on Canada’s polymer $5 (Frontiers series), and in the account of Ecuador’s 2000 dollarization, which replaced the sucre." },
-    seeAlso: ["sucre", "mpc", "peso"],
+    seeAlso: ["sucre", "mpc", "peso", "billete-reserva-federal", "certificado-de-plata"],
   },
   {
     slug: "dracma",
@@ -383,7 +529,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Ensayador", en: "Assayer" },
     definition: { es: "Funcionario de la casa de moneda encargado de analizar y garantizar la pureza de los metales preciosos usados en la acuñación.", en: "The mint official responsible for analyzing and certifying the purity of the precious metals used in coinage." },
-    seeAlso: ["marcas-de-ajuste"],
+    seeAlso: ["marcas-de-ajuste", "ceca", "escudo"],
   },
   {
     slug: "euro",
@@ -426,12 +572,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["numismatica", "notafilia"],
   },
   {
+    slug: "escudo",
+    id: "escudo",
+    category: "Monedas y divisas",
+    title: { es: "Escudo (oro)", en: "Escudo (gold)" },
+    definition: { es: "Unidad de oro de la monarquía hispánica y de sus Indias: múltiplos y fracciones (medio escudo, 1, 2, 4, 8) acuñados a volante o a martillo. No es el escudo de armas heráldico ni el real de plata. Esta colección documenta un medio escudo de Madrid de 1757 (ensaye JB) y un 1 escudo de Popayán de 1801 (P–JF).", en: "Gold unit of the Spanish monarchy and its Indies: multiples and fractions (half escudo, 1, 2, 4, 8) struck by mill or hammer. It is not the heraldic coat of arms and not the silver real. This collection records a 1757 Madrid half escudo (assayers JB) and an 1801 Popayán 1 escudo (P–JF)." },
+    seeAlso: ["escudo-de-armas", "ceca", "ensayador", "real", "ducado"],
+  },
+  {
     slug: "escudo-de-armas",
     id: "escudo-de-armas",
     category: "Diseño",
     title: { es: "Escudo de armas", en: "Coat of arms" },
     definition: { es: "Emblema heráldico oficial de un país o entidad, incluido con frecuencia como sello de autenticidad institucional.", en: "A country or entity's official heraldic emblem, often included as a mark of institutional authenticity." },
-    seeAlso: [],
+    seeAlso: ["escudo"],
   },
   {
     slug: "specimen",
@@ -439,7 +593,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Coleccionismo",
     title: { es: "Espécimen", en: "Specimen" },
     definition: { es: "Ejemplar de muestra enviado a bancos centrales y fuerzas de seguridad para familiarizarlos con un diseño nuevo. Suele llevar la palabra SPECIMEN perforada o estampada y numeración en ceros (p. ej. 0000000); no entra en circulación. En el catálogo de Hernández, los ceros distinguen el espécimen de la prueba.", en: "A sample note distributed to central banks and law enforcement to familiarize them with a new design. It usually bears perforated or stamped SPECIMEN text and all-zero serials (e.g. 0000000), and never enters circulation. In Hernández’s catalog, zeros distinguish a specimen from a proof." },
-    seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa", "remainder", "uniface"],
+    seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa", "remainder", "uniface", "moneda-prueba-giori"],
   },
   {
     slug: "estado-basal",
@@ -447,7 +601,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Conservación",
     title: { es: "Estado basal", en: "Basal State" },
     definition: { es: "El grado de conservación más bajo posible, en el que una moneda solo es identificable por su tipo de diseño principal, fecha o marca de ceca, con desgaste máximo. También llamado Pobre (PO-1).", en: "The lowest possible condition grade, where a coin is identifiable only by its major design type, date, or mintmark, with maximum wear. Also known as Poor (PO-1)." },
-    seeAlso: ["escala-sheldon"],
+    seeAlso: ["escala-sheldon", "ceca"],
   },
   {
     slug: "estado-soberano",
@@ -463,7 +617,15 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Disciplina",
     title: { es: "Exonumia", en: "Exonumia" },
     definition: { es: "Objetos afines al coleccionismo numismático que no son monedas ni billetes de curso legal, como fichas o vales privados.", en: "Numismatic-adjacent collectibles that are not legal-tender coins or notes, such as tokens or private scrip." },
-    seeAlso: ["vale-al-portador", "coscoja"],
+    seeAlso: ["vale-al-portador", "coscoja", "fichas-hard-times", "scrip"],
+  },
+  {
+    slug: "fichas-hard-times",
+    id: "fichas-hard-times",
+    category: "Emisión",
+    title: { es: "Fichas Hard Times", en: "Hard Times tokens" },
+    definition: { es: "Fichas privadas de cobre, latón o metal blanco acuñadas en Estados Unidos sobre todo entre 1832 y 1844, en el módulo del large cent, cuando el público atesoró la moneda federal tras el Pánico de 1837. Sirvieron de menuda, de sátira política y de anuncio comercial; hoy se catalogan como exonumia (Low / Rulau). Esta colección documenta el HT-34 (Low-20) de 1837, burro y tortuga SUB TREASURY, y la store card de John J. Adams, HT-181 (Low-300), hacia 1835.", en: "Privately struck United States tokens in copper, brass, or white metal, mainly 1832–1844, on the large-cent module, when the public hoarded federal coin after the Panic of 1837. They served as small change, political satire, and commercial advertising; today they are catalogued as exonumia (Low / Rulau). This collection records the 1837 HT-34 (Low-20), donkey and SUB TREASURY tortoise, and the John J. Adams store card, HT-181 (Low-300), circa 1835." },
+    seeAlso: ["exonumia", "curso-legal", "scrip"],
   },
   {
     slug: "extremadamente-fino-ebc-ef",
@@ -528,6 +690,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Gem Uncirculated (GEM UNC)", en: "Gem Uncirculated (GEM UNC)" },
     definition: { es: "Grado Sheldon 65–66 (y superior): sin circular, con márgenes, color y originalidad excepcionales. En esta colección el 5 dólares MPC de la serie 661 está encapsulado como PMG 66 EPQ Gem Uncirculated.", en: "Sheldon grades 65–66 (and higher): uncirculated, with exceptional margins, colour, and originality. In this collection the Series 661 MPC $5 is slabbed PMG 66 EPQ Gem Uncirculated." },
     seeAlso: ["billete-sin-circular", "choice-uncirculated", "epq-calidad-de-papel-excepcional", "escala-sheldon"],
+  },
+  {
+    slug: "funnyback",
+    id: "funnyback",
+    category: "Diseño",
+    title: { es: "Funnyback", en: "Funnyback" },
+    definition: { es: "Apodo coleccionista del reverso ornamental del 1 dólar certificado de plata de tamaño pequeño series 1928 y 1928 A (Fr. 1600–1601): grandes «ONE» en los ángulos y un diseño que los coleccionistas contrastan con el Gran Sello unificado de 1935. Esta colección documenta el Fr. 1601, serial D00508932B.", en: "Collectors’ nickname for the ornamental reverse of the small-size Series 1928 and 1928A Silver Certificate $1 (Fr. 1600–1601): large “ONE” in the corners and a design collectors contrast with the unified Great Seal reverse of 1935. This collection records Fr. 1601, serial D00508932B." },
+    seeAlso: ["certificado-de-plata", "reverso", "friedberg", "dolar"],
   },
   {
     slug: "grayback",
@@ -720,6 +890,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     title: { es: "Microimpresión", en: "Microprinting" },
     definition: { es: "Texto impreso a tamaño extremadamente pequeño, legible solo con lupa, usado como medida anti-falsificación.", en: "Text printed at extremely small scale, legible only under magnification, used as an anti-counterfeiting measure." },
     seeAlso: [],
+  },
+  {
+    slug: "moneda-prueba-giori",
+    id: "moneda-prueba-giori",
+    category: "Producción",
+    title: { es: "Moneda de prueba Giori", en: "Giori test note" },
+    definition: { es: "Billete de ensayo o demostración producido en prensas de intaglio multicolor asociadas a Organisation Giori / Koenig & Bauer (KBA-Giori), usado para probar planchas, tintas y mecánica —no es un Pick de circulación. Coleccionistas y el catálogo Rollins los llaman test notes. El ejemplar uniface del Lincoln Memorial de esta colección, hacia los años 1970, sin serial, es de ese tipo.", en: "A trial or demonstration note produced on multi-colour intaglio presses linked to Organisation Giori / Koenig & Bauer (KBA-Giori), used to test plates, inks, and mechanics — not a circulating Pick. Collectors and the Rollins catalogue call them test notes. This collection’s uniface Lincoln Memorial example, ca. 1970s, with no serial, is of that type." },
+    seeAlso: ["prueba-ensayo", "uniface", "bep", "intaglio", "specimen"],
   },
   {
     slug: "monedas-antiguas",
@@ -935,7 +1113,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Producción",
     title: { es: "Prueba / ensayo", en: "Proof / essay" },
     definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color. Hernández anota que las pruebas no llevan ceros y a menudo son unifaces, a diferencia del espécimen.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color. Hernández notes that proofs do not carry zeros and are often uniface, unlike a specimen." },
-    seeAlso: ["specimen", "intaglio", "mariposa", "uniface"],
+    seeAlso: ["specimen", "intaglio", "mariposa", "uniface", "moneda-prueba-giori"],
   },
   {
     slug: "quetzal",
@@ -974,7 +1152,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "remainder",
     category: "Coleccionismo",
     title: { es: "Remainder (billete sin firmar)", en: "Remainder" },
-    definition: { es: "Ejemplar impreso que nunca se puso en circulación: suele faltarle una o ambas firmas manuscritas, el año de la fecha o el número de serie. Es distinto del espécimen —marcado SPECIMEN y a menudo perforado— y de la prueba o ensayo —un test de plancha, color o registro—. El remainder es papel sobrante de una plancha, un banco o una emisión ya cerrados: el banco quebró, se fusionó o el impuesto del 10 % sobre el papel estatal apagó la emisión, y las hojas firmadas a medias quedaron en tesorería o en el archivo del grabador. En la notafilia estadounidense de bancos obsoletos (Haxby) es el estado más frecuente en el mercado: fecha impresa 18__, recuadro No. en blanco o con un serial de stock, una sola firma o ninguna. En esta colección hay remainders del State Bank at New Brunswick (1 dólar, serial 9890), del City Bank of New Haven (5 dólares, plancha A, sin serial) y del Canal Bank de Nueva Orleans (50 dólares, reverso rojo). No confunda remainder con resello, ni con un billete cancelado: el remainder jamás circuló; el resello revalida papel que sí salió a la calle.", en: "A printed note that never entered circulation: it is typically missing one or both manuscript signatures, the completed year of the date, or the serial number. It is distinct from a specimen — usually marked SPECIMEN and often perforated — and from a proof or essay — a plate, color, or register test. A remainder is leftover paper from a plate, bank, or issue that had already closed: the bank failed or merged, or the 10 percent tax on state-bank paper ended private issues, and half-signed sheets stayed in the treasury or the engraver’s archive. On United States obsolete notes (Haxby) it is the state most often seen in the market: a printed 18__ date, a blank No. box or a stock serial, and one signature or none. This collection includes remainders of the State Bank at New Brunswick ($1, serial 9890), the City Bank of New Haven ($5, plate A, no serial), and the Canal Bank of New Orleans ($50, red back). Do not confuse a remainder with a countermark or a cancelled note: a remainder never circulated; a countermark revalidates paper that did." },
+    definition: { es: "Ejemplar impreso que nunca circuló: suele faltarle una o ambas firmas manuscritas, el año completo de la fecha o el número de serie. Distinto del espécimen y de la prueba; en bancos obsoletos estadounidenses (Haxby) es el estado más frecuente.", en: "A printed note that never circulated: it is typically missing one or both manuscript signatures, the completed year, or the serial. Distinct from a specimen and from a proof; on United States obsolete notes (Haxby) it is the state most often seen." },
     seeAlso: ["billete-de-banco-obsoleto", "specimen", "prueba-ensayo", "haxby"],
   },
   {
@@ -1026,6 +1204,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["billete-de-necesidad", "vale-al-portador", "exonumia"],
   },
   {
+    slug: "sello-amarillo",
+    id: "sello-amarillo",
+    category: "Emisión",
+    title: { es: "Sello amarillo (África del Norte)", en: "Yellow seal (North Africa)" },
+    definition: { es: "Certificado de plata estadounidense serie 1935 A con sello del Tesoro en amarillo, emitido para el teatro del norte de África en la Segunda Guerra Mundial: si caía en manos enemigas, el Tesoro podía declararlo sin valor. Comparte la lógica de emergencia de la sobrecarga HAWAII, pero el diagnóstico es el color del sello, no una sobreimpresión. Esta colección aún no documenta un ejemplar con ficha.", en: "United States Series 1935A Silver Certificate with a yellow Treasury seal, issued for the North Africa theater in the Second World War: if it fell into enemy hands, the Treasury could declare it worthless. It shares the emergency logic of the HAWAII overprint, but the diagnostic is seal colour, not an overprint. This collection does not yet record a note page for an example." },
+    seeAlso: ["certificado-de-plata", "sobreimpresion-hawaii", "billete-de-necesidad", "friedberg", "bep"],
+  },
+  {
     slug: "serie",
     id: "serie",
     category: "Coleccionismo",
@@ -1050,12 +1236,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     seeAlso: ["billete-sin-circular"],
   },
   {
+    slug: "sobreimpresion-hawaii",
+    id: "sobreimpresion-hawaii",
+    category: "Emisión",
+    title: { es: "Sobreimpresión HAWAII", en: "HAWAII overprint" },
+    definition: { es: "Sobrecarga «HAWAII» aplicada por el BEP en 1942–1944 a certificados de plata y Federal Reserve Notes destinados al archipiélago: sello y seriales marrones, y la palabra HAWAII en el anverso y el reverso, para poder invalidarlos si las islas caían. Esta colección documenta el 1 dólar Fr. 2300 (serial S40499058C) y el 20 dólares Fr. 2305 (serial L86654132A). No es el sello amarillo de África del Norte.", en: "“HAWAII” overprint applied by the BEP in 1942–1944 to Silver Certificates and Federal Reserve Notes for the islands: brown seals and serials, and the word HAWAII on face and back, so the notes could be voided if the islands fell. This collection records the $1 Fr. 2300 (serial S40499058C) and the $20 Fr. 2305 (serial L86654132A). It is not the North Africa yellow seal." },
+    seeAlso: ["sobresello", "certificado-de-plata", "billete-reserva-federal", "sello-amarillo", "billete-de-necesidad", "friedberg", "bep"],
+  },
+  {
     slug: "sobresello",
     id: "sobresello",
     category: "Emisión",
     title: { es: "Sobresello", en: "Overprint" },
     definition: { es: "Texto o sello adicional impreso sobre un billete o documento ya existente para modificar su valor, vigencia o jurisdicción.", en: "Additional text or stamp printed over an already-existing note or document to alter its value, validity, or jurisdiction." },
-    seeAlso: ["resello", "handstamp"],
+    seeAlso: ["resello", "handstamp", "sobreimpresion-hawaii"],
   },
   {
     slug: "spark",
@@ -1174,8 +1368,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     id: "uniface",
     category: "Diseño",
     title: { es: "Uniface (a una cara)", en: "Uniface" },
-    definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. La nota de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
-    seeAlso: ["anverso", "reverso", "prueba-ensayo", "specimen"],
+    definition: { es: "Dicho de un billete, prueba o espécimen impreso solo por una cara, con el reverso en blanco. El billete de prueba Giori del Lincoln Memorial de esta colección es uniface.", en: "Said of a note, proof, or specimen printed on only one side, with a blank reverse. This collection’s Giori Lincoln Memorial test note is uniface." },
+    seeAlso: ["anverso", "reverso", "prueba-ensayo", "specimen", "moneda-prueba-giori"],
   },
   {
     slug: "vale-al-portador",
@@ -1211,23 +1405,91 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
 ];
 
+export const glossaryTerms: GlossaryTerm[] = withEnglishSlugs(glossaryTermRecords);
+
 const termsBySlug = new Map(glossaryTerms.map((term) => [term.slug, term]));
+const termsBySlugEn = new Map(glossaryTerms.map((term) => [term.slugEn, term]));
 
 export function glossaryTermBySlug(slug: string): GlossaryTerm | undefined {
-  return termsBySlug.get(slug);
+  return termsBySlug.get(slug) ?? termsBySlugEn.get(slug);
+}
+
+export function glossarySlugForLocale(term: GlossaryTerm, locale: Locale): string {
+  return locale === 'en' ? term.slugEn : term.slug;
 }
 
 export function glossaryPath(locale: Locale): string {
   return localizePath(GLOSSARY_PATH, locale);
 }
 
+/** Always the standalone-style URL, including folded slugs (redirect sources). */
 export function glossaryTermPath(slug: string, locale: Locale): string {
-  return `${glossaryPath(locale)}${slug}/`;
+  const term = glossaryTermBySlug(slug);
+  const segment = term ? glossarySlugForLocale(term, locale) : slug;
+  return `${glossaryPath(locale)}${segment}/`;
+}
+
+/** Public href: standalone page, or index hash for folded terms. */
+export function glossaryTermHref(slug: string, locale: Locale): string {
+  const term = glossaryTermBySlug(slug);
+  const id = term?.id ?? slug;
+  const key = term?.slug ?? slug;
+  if (isStandaloneGlossaryTerm(key)) return glossaryTermPath(key, locale);
+  return `${glossaryPath(locale)}#${id}`;
+}
+
+/** 301 target for a retired term URL. Query, not hash: CDN Location headers drop fragments. */
+export function glossaryFoldedRedirectTarget(slug: string, locale: Locale): string {
+  const term = glossaryTermBySlug(slug);
+  const key = term?.slug ?? slug;
+  if (isStandaloneGlossaryTerm(key) && term) return glossaryTermPath(term.slug, locale);
+  const query = term ? glossarySlugForLocale(term, locale) : slug;
+  return `${glossaryPath(locale)}?term=${encodeURIComponent(query)}`;
+}
+
+function addRedirect(out: Record<string, string>, from: string, to: string) {
+  if (from === to) return;
+  out[from] = to;
+}
+
+/**
+ * Astro / worker `redirects` map. Hash fragments are stripped from `Location` headers,
+ * so folded URLs land on `?term=<slug>`; the index then scrolls to `#<id>`.
+ * English keepers move Spanish-slug EN URLs in one hop; folded EN uses the English query.
+ */
+export function glossaryRedirects(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const term of glossaryTerms) {
+    const enPage = glossaryTermPath(term.slug, 'en');
+    const enFolded = glossaryFoldedRedirectTarget(term.slug, 'en');
+    const esFolded = glossaryFoldedRedirectTarget(term.slug, 'es');
+    if (isStandaloneGlossaryTerm(term.slug)) {
+      addRedirect(out, `/en/glossary/${term.slug}/`, enPage);
+      addRedirect(out, `/en/glosario/${term.slug}/`, enPage);
+      addRedirect(out, `/en/glosario/${term.slugEn}/`, enPage);
+      continue;
+    }
+    addRedirect(out, `/glosario/${term.slug}/`, esFolded);
+    addRedirect(out, `/en/glossary/${term.slug}/`, enFolded);
+    addRedirect(out, `/en/glossary/${term.slugEn}/`, enFolded);
+    addRedirect(out, `/en/glosario/${term.slug}/`, enFolded);
+    addRedirect(out, `/en/glosario/${term.slugEn}/`, enFolded);
+  }
+  return out;
+}
+
+export function standaloneGlossaryTerms(): GlossaryTerm[] {
+  return glossaryTerms.filter((term) => isStandaloneGlossaryTerm(term.slug));
+}
+
+export function foldedGlossaryTerms(): GlossaryTerm[] {
+  return glossaryTerms.filter((term) => !isStandaloneGlossaryTerm(term.slug));
 }
 
 export function glossaryTermsForLocale(locale: Locale): GlossaryTerm[] {
-  if (locale !== 'en') return glossaryTerms;
-  return [...glossaryTerms].sort((a, b) => a.title.en.localeCompare(b.title.en, 'en'));
+  return [...glossaryTerms].sort((a, b) =>
+    a.title[locale].localeCompare(b.title[locale], locale, { sensitivity: 'base' }),
+  );
 }
 
 function fold(value: string): string {
@@ -1247,7 +1509,7 @@ export const glossaryCopy = {
       `Glosario bilingüe de ${glossaryTerms.length} términos de numismática y notafilia: monedas, billetes, diseño, producción y coleccionismo.`,
     kicker: 'Recurso para coleccionistas',
     title: 'Glosario de Numismática y Notafilia',
-    lead: `${glossaryTerms.length} términos de monedas y billetes: diseño, producción, emisión, conservación y coleccionismo, que aparecen a lo largo del catálogo de Notofilia, con su equivalente en inglés y una breve definición.`,
+    lead: `${glossaryTerms.length} términos de monedas y billetes: diseño, producción, emisión, conservación y coleccionismo. ${STANDALONE_GLOSSARY_SLUGS.length} artículos tienen página propia; el resto está anclado en esta lista.`,
     searchLabel: 'Buscar en el glosario',
     searchPlaceholder: 'Ej. foxing, OVI, capicúa…',
     clearSearch: 'Borrar búsqueda',
@@ -1259,10 +1521,13 @@ export const glossaryCopy = {
     reset: 'Ver todo el glosario',
     footnote: 'Términos marcados como sugeridos complementan el vocabulario ya usado en el catálogo con vocablos estándar del coleccionismo internacional.',
     back: '← Volver al glosario',
+    examplesHeading: 'Ejemplos en la colección',
+    readArticle: 'Leer el artículo',
+    letterNav: 'Índice alfabético',
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     glossary: 'Glosario',
-    termTitle: (name: string) => `${name} · Glosario · Notofilia`,
+    termTitle: (name: string) => `${name}: glosario de notafilia y numismática | Notofilia`,
   },
   en: {
     metaTitle: 'Glossary of Numismatics and Notaphily · Notofilia',
@@ -1270,7 +1535,7 @@ export const glossaryCopy = {
       `Bilingual glossary of ${glossaryTerms.length} numismatics and notaphily terms: coins, banknotes, design, production, and collecting.`,
     kicker: 'A resource for collectors',
     title: 'Glossary of Numismatics and Notaphily',
-    lead: `${glossaryTerms.length} coin and banknote terms: design, production, issuing, conservation, and collecting. They appear throughout the Notofilia catalog, with the Spanish equivalent and a short definition.`,
+    lead: `${glossaryTerms.length} coin and banknote terms: design, production, issuing, conservation, and collecting. ${STANDALONE_GLOSSARY_SLUGS.length} articles have their own page; the rest are anchored in this list.`,
     searchLabel: 'Search the glossary',
     searchPlaceholder: 'E.g. foxing, OVI, ladder…',
     clearSearch: 'Clear search',
@@ -1282,12 +1547,15 @@ export const glossaryCopy = {
     reset: 'See the full glossary',
     footnote: 'Terms marked as suggested complement the vocabulary already used in the catalog with standard words from international collecting.',
     back: '← Back to the glossary',
+    examplesHeading: 'Examples in the collection',
+    readArticle: 'Read the article',
+    letterNav: 'Alphabetical index',
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     glossary: 'Glossary',
-    termTitle: (name: string) => `${name} · Glossary · Notofilia`,
+    termTitle: (name: string) => `${name}: notaphily and numismatics glossary | Notofilia`,
   },
 } as const;
 
-export const glossaryTermSlugs = glossaryTerms.map((term) => `glosario/${term.slug}`);
+export const glossaryTermSlugs = STANDALONE_GLOSSARY_SLUGS.map((slug) => `glosario/${slug}`);
 

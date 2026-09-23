@@ -1,3 +1,6 @@
+import newsArticles from '../data/news-articles.json' with { type: 'json' };
+import { readLimitedJson } from '../lib/read-json.ts';
+
 const JSON_HEADERS = {
   'content-type': 'application/json; charset=utf-8',
   'cache-control': 'no-store',
@@ -22,6 +25,15 @@ export const normalizeSlug = (value: unknown) => {
   return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) ? slug : null;
 };
 
+type NewsSlugRow = { slug?: unknown };
+
+/** Spanish news slugs. English pages post the same `article.slug`. */
+export const commentArticleSlugs: ReadonlySet<string> = new Set(
+  (newsArticles as NewsSlugRow[])
+    .map((article) => normalizeSlug(article.slug))
+    .filter((slug): slug is string => slug !== null),
+);
+
 export const normalizeText = (value: unknown) =>
   String(value || '')
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '')
@@ -35,9 +47,14 @@ type SiteverifyResult = {
   'error-codes'?: string[];
 };
 
-async function onRequestGet(env: CommentsEnv, slugParam: string) {
+function unknownArticle() {
+  return json({ error: 'Artículo no válido.' }, { status: 404 });
+}
+
+async function onRequestGet(env: CommentsEnv, slugParam: string, allowedSlugs: ReadonlySet<string>) {
   const slug = normalizeSlug(slugParam);
   if (!slug) return json({ error: 'Artículo no válido.' }, { status: 400 });
+  if (!allowedSlugs.has(slug)) return unknownArticle();
 
   const { results } = await env.COMMENTS_DB.prepare(
     `
@@ -53,21 +70,35 @@ async function onRequestGet(env: CommentsEnv, slugParam: string) {
   return json({ comments: results });
 }
 
-async function onRequestPost(request: Request, env: CommentsEnv, slugParam: string) {
+async function onRequestPost(
+  request: Request,
+  env: CommentsEnv,
+  slugParam: string,
+  allowedSlugs: ReadonlySet<string>,
+) {
   const slug = normalizeSlug(slugParam);
   if (!slug) return json({ error: 'Artículo no válido.' }, { status: 400 });
+  if (!allowedSlugs.has(slug)) return unknownArticle();
 
   if (!env.TURNSTILE_SECRET_KEY) {
     console.error('TURNSTILE_SECRET_KEY is not configured');
     return json({ error: 'Los comentarios no están disponibles temporalmente.' }, { status: 503 });
   }
 
-  let payload: { name?: unknown; comment?: unknown; turnstileToken?: unknown };
-  try {
-    payload = await request.json();
-  } catch {
-    return json({ error: 'Solicitud no válida.' }, { status: 400 });
+  const contentType = request.headers.get('content-type') ?? '';
+  if (!contentType.toLowerCase().includes('application/json')) {
+    return json({ error: 'Solicitud no válida.' }, { status: 415 });
   }
+
+  const parsed = await readLimitedJson(request);
+  if (!parsed.ok) {
+    return json(
+      { error: parsed.tooLarge ? 'Solicitud demasiado grande.' : 'Solicitud no válida.' },
+      { status: parsed.tooLarge ? 413 : 400 },
+    );
+  }
+
+  const payload = parsed.value as { name?: unknown; comment?: unknown; turnstileToken?: unknown };
 
   const authorName = normalizeText(payload.name);
   const body = normalizeText(payload.comment);
@@ -128,7 +159,11 @@ async function onRequestPost(request: Request, env: CommentsEnv, slugParam: stri
   );
 }
 
-export async function handleCommentsRequest(request: Request, env: CommentsEnv): Promise<Response> {
+export async function handleCommentsRequest(
+  request: Request,
+  env: CommentsEnv,
+  allowedSlugs: ReadonlySet<string> = commentArticleSlugs,
+): Promise<Response> {
   const url = new URL(request.url);
   const match = url.pathname.match(COMMENTS_API_PATTERN);
   if (!match) {
@@ -138,10 +173,10 @@ export async function handleCommentsRequest(request: Request, env: CommentsEnv):
   const slug = decodeURIComponent(match[1]);
 
   if (request.method === 'GET') {
-    return onRequestGet(env, slug);
+    return onRequestGet(env, slug, allowedSlugs);
   }
   if (request.method === 'POST') {
-    return onRequestPost(request, env, slug);
+    return onRequestPost(request, env, slug, allowedSlugs);
   }
 
   return json({ error: 'Method not allowed' }, { status: 405 });
