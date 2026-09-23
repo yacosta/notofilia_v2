@@ -169,13 +169,23 @@ const jsonCrumbs = [
         related={siblings.related.map((item) => ({ href: coinagePiecePath(item, locale), title: item.title[locale], image: item.images.front }))}
       />
 
-      <p class="mt-12">
+      <p class="mt-12 flex flex-col gap-3">
         <a
           href={coinagePath(locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
           ← {series.kicker}
         </a>
+        {
+          piece.related?.map((item) => (
+            <a
+              href={localizePath(item.href, locale)}
+              class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+            >
+              ← {item.label[locale]}
+            </a>
+          ))
+        }
       </p>
     </article>
   </main>
