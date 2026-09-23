@@ -123,9 +123,9 @@ export const victoryNotes: VictoryNote[] = [
       en: '61,192,000 notes (P#94a, Numista / numismatics.ph)',
     },
     images: {
-      composite: '/images/catalog/philippines/1-peso-composite.jpg',
-      front: '/images/catalog/philippines/1-peso-front.jpg',
-      back: '/images/catalog/philippines/1-peso-back.jpg',
+      composite: '/images/catalog/philippines/philippines-treasury-1-peso-series-66-f70618009-composite.jpg',
+      front: '/images/catalog/philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg',
+      back: '/images/catalog/philippines/philippines-treasury-1-peso-series-66-f70618009-back.jpg',
     },
     title: {
       es: '1 peso · Serie Victory n.º 66',
@@ -195,9 +195,9 @@ export const victoryNotes: VictoryNote[] = [
       en: '16,231,272 notes (P#95a, Numista / numismatics.ph)',
     },
     images: {
-      composite: '/images/catalog/philippines/2-pesos-composite.jpg',
-      front: '/images/catalog/philippines/2-pesos-front.jpg',
-      back: '/images/catalog/philippines/2-pesos-back.jpg',
+      composite: '/images/catalog/philippines/philippines-treasury-2-pesos-series-66-f13317943-composite.jpg',
+      front: '/images/catalog/philippines/philippines-treasury-2-pesos-series-66-f13317943-front.jpg',
+      back: '/images/catalog/philippines/philippines-treasury-2-pesos-series-66-f13317943-back.jpg',
     },
     title: {
       es: '2 pesos · Serie Victory n.º 66',
@@ -267,9 +267,9 @@ export const victoryNotes: VictoryNote[] = [
       en: '17,355,000 notes (P#96a, Numista / numismatics.ph)',
     },
     images: {
-      composite: '/images/catalog/philippines/5-pesos-composite.jpg',
-      front: '/images/catalog/philippines/5-pesos-front.jpg',
-      back: '/images/catalog/philippines/5-pesos-back.jpg',
+      composite: '/images/catalog/philippines/philippines-treasury-5-pesos-series-66-f00618071-composite.jpg',
+      front: '/images/catalog/philippines/philippines-treasury-5-pesos-series-66-f00618071-front.jpg',
+      back: '/images/catalog/philippines/philippines-treasury-5-pesos-series-66-f00618071-back.jpg',
     },
     title: {
       es: '5 pesos · Serie Victory n.º 66',
@@ -339,9 +339,9 @@ export const victoryNotes: VictoryNote[] = [
       en: '12,439,635 notes (P#98a, numismatics.ph / series catalogs)',
     },
     images: {
-      composite: '/images/catalog/philippines/20-pesos-composite.jpg',
-      front: '/images/catalog/philippines/20-pesos-front.jpg',
-      back: '/images/catalog/philippines/20-pesos-back.jpg',
+      composite: '/images/catalog/philippines/philippines-treasury-20-pesos-series-66-f04661756-composite.jpg',
+      front: '/images/catalog/philippines/philippines-treasury-20-pesos-series-66-f04661756-front.jpg',
+      back: '/images/catalog/philippines/philippines-treasury-20-pesos-series-66-f04661756-back.jpg',
     },
     title: {
       es: '20 pesos · Serie Victory n.º 66',

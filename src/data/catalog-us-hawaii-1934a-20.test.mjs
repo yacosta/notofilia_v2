@@ -65,9 +65,9 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(esPiece, /noteById\('20-dolares-serie-1934a-hawaii'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(note, /frn-1934a-hawaii-20-dolares-l86654132a-composite\.jpg/);
-    assert.match(note, /frn-1934a-hawaii-20-dolares-l86654132a-front\.jpg/);
-    assert.match(note, /frn-1934a-hawaii-20-dolares-l86654132a-back\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-composite\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-front\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-back\.jpg/);
   });
 
   it('names the holding in the Federal Reserve chapter, series inventory, and FAQ', () => {

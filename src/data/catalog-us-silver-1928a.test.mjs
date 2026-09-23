@@ -71,9 +71,9 @@ describe('US Series 1928A Silver Certificate $1 Fr. 1601', () => {
     assert.match(esPiece, /noteById\('1-dolar-certificado-plata-1928a'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
-    assert.match(note, /sc-1928a-1-dolar-d00508932b-composite\.jpg/);
-    assert.match(note, /sc-1928a-1-dolar-d00508932b-front\.jpg/);
-    assert.match(note, /sc-1928a-1-dolar-d00508932b-back\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1928a-silver-certificate-d00508932b-composite\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1928a-silver-certificate-d00508932b-front\.jpg/);
+    assert.match(note, /united-states-treasury-1-dollar-series-1928a-silver-certificate-d00508932b-back\.jpg/);
   });
 
   it('names the holding in the Silver Certificates chapter, series inventory, and FAQ', () => {

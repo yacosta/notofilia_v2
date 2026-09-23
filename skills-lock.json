@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "Spanish": {
+      "source": "dvcrn/openclaw-skills-marketplace",
+      "sourceType": "github",
+      "skillPath": "plugins/ivangdavila--spanish/skills/spanish/SKILL.md",
+      "computedHash": "daecda4416aa19d9a2964a58ae6ad1789fd91042718ab30ae96c44c9678c0b01"
+    }
+  }
+}

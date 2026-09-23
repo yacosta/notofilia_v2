@@ -11,12 +11,12 @@ import {
 describe('catalog download paths', () => {
   it('maps display catalog URLs onto the tiled download tree', () => {
     assert.equal(
-      catalogDownloadSrc('/images/catalog/philippines/1-peso-front.jpg'),
-      '/images/catalog-download/philippines/1-peso-front.jpg',
+      catalogDownloadSrc('/images/catalog/philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg'),
+      '/images/catalog-download/philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg',
     );
     assert.equal(catalogDownloadSrc('/images/hero-slide.jpg'), '/images/hero-slide.jpg');
     assert.equal(catalogDownloadFilename('/images/catalog/china/hero-china.jpg'), 'hero-china.jpg');
-    assert.equal(catalogDownloadFormat('/images/catalog/netherlands/1761-ducat-utrecht-ngc.png'), 'PNG');
+    assert.equal(catalogDownloadFormat('/images/catalog/netherlands/netherlands-utrecht-1-ducat-1761-ngc-4685927-012-composite.png'), 'PNG');
     assert.match(catalogDownloadLabel('/a.jpg', 'es'), /Descargar JPEG.*Se inicia una descarga/);
     assert.match(catalogDownloadLabel('/a.png', 'en'), /Download PNG.*A download will start/);
   });

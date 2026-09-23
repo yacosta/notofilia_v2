@@ -18,9 +18,9 @@ export const pnbNote: VictoryNote = {
     en: '40,000 notes in A2175001A–A2215000A (B14.3C, numismatics.ph). Numista records 2,000,000 for P#46b (Mercado–Concepción).',
   },
   images: {
-    composite: '/images/catalog/philippines/5-pesos-pn-1916-a2179586a-composite.jpg',
-    front: '/images/catalog/philippines/5-pesos-pn-1916-a2179586a-front.jpg',
-    back: '/images/catalog/philippines/5-pesos-pn-1916-a2179586a-back.jpg',
+    composite: '/images/catalog/philippines/philippines-philippine-national-bank-5-pesos-1916-a2179586a-composite.jpg',
+    front: '/images/catalog/philippines/philippines-philippine-national-bank-5-pesos-1916-a2179586a-front.jpg',
+    back: '/images/catalog/philippines/philippines-philippine-national-bank-5-pesos-1916-a2179586a-back.jpg',
   },
   title: {
     es: '5 pesos · Banco Nacional de Filipinas · 1916',

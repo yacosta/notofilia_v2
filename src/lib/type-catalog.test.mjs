@@ -133,7 +133,7 @@ describe('type catalog search', () => {
       flags: ['holding', 'proof'],
       country: 'CO',
       serial: 'Y 00000',
-      image: '/images/catalog/colombia/5-pesos-banco-hipotecario-1881-front.jpg',
+      image: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-front.jpg',
       imageAlt: 'Anverso',
       searchText: 'S511 Hipotecario 5 pesos 1881',
       inCollection: true,

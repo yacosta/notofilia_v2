@@ -241,9 +241,9 @@ export const chinaNotes: ChinaNote[] = [
       en: 'About 10 million notes (Pick 902; circulating J prefix and I replacements)',
     },
     images: {
-      composite: '/images/catalog/china/100-yuan-2000-composite.jpg',
-      front: '/images/catalog/china/100-yuan-2000-front.jpg',
-      back: '/images/catalog/china/100-yuan-2000-back.jpg',
+      composite: '/images/catalog/china/china-peoples-bank-100-yuan-2000-j04445744-composite.jpg',
+      front: '/images/catalog/china/china-peoples-bank-100-yuan-2000-j04445744-front.jpg',
+      back: '/images/catalog/china/china-peoples-bank-100-yuan-2000-j04445744-back.jpg',
     },
     title: {
       es: '100 yuan · Milenio 2000',

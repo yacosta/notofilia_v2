@@ -46,9 +46,9 @@ export const malaysiaNotes: MalaysiaNote[] = [
       en: 'Bank Negara Malaysia places the fourth-series polymer RM5 — Distinctively Malaysia — in 2012, with the RM1 and the paper denominations. This record does not invent a printage for prefix AA or for Pick 52a.',
     },
     images: {
-      composite: '/images/catalog/malaysia/5-ringgit-aa1955984-composite.jpg',
-      front: '/images/catalog/malaysia/5-ringgit-aa1955984-front.jpg',
-      back: '/images/catalog/malaysia/5-ringgit-aa1955984-back.jpg',
+      composite: '/images/catalog/malaysia/malaysia-bank-negara-5-ringgit-2012-aa1955984-composite.jpg',
+      front: '/images/catalog/malaysia/malaysia-bank-negara-5-ringgit-2012-aa1955984-front.jpg',
+      back: '/images/catalog/malaysia/malaysia-bank-negara-5-ringgit-2012-aa1955984-back.jpg',
     },
     title: {
       es: '5 ringgit · Abdul Rahman · 2012',

@@ -9,8 +9,8 @@ const sourceRoot = path.join(root, 'catalog-src', 'catalog');
 const destRoot = path.join(root, 'public', 'watermark-preview');
 
 const samples = [
-  { file: 'philippines/1-peso-front.jpg', title: 'Filipinas 1 peso (note on white)' },
-  { file: 'netherlands/1761-ducat-utrecht-ngc.png', title: 'Utrecht 1761 ducat (NGC slab)' },
+  { file: 'philippines/philippines-treasury-1-peso-series-66-f70618009-front.jpg', title: 'Filipinas 1 peso (note on white)' },
+  { file: 'netherlands/netherlands-utrecht-1-ducat-1761-ngc-4685927-012-composite.png', title: 'Utrecht 1761 ducat (NGC slab)' },
   { file: 'philippines/hero-filipinas.jpg', title: 'Filipinas series hero (busy image)' },
 ];
 
