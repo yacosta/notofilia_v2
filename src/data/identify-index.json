@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T03:37:28.732Z",
+  "generatedAt": "2026-09-23T15:56:26.769Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -196,6 +196,45 @@
       "title": {
         "es": "1/4 real · Santa Marta · 1820",
         "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "front",
+      "hash": "0000611555310000",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-composite.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "front",
+      "hash": "0022751351452600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-front.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
+      }
+    },
+    {
+      "pieceId": "2-centavos-lazareto-1921",
+      "face": "back",
+      "hash": "002a437945330600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-centavos-lazareto-1921/",
+      "pick": "KM# L10 · Restrepo 355.1 · Hernández Cód. 313 · Numista N#6830",
+      "image": "/images/catalog/numismatica/2-centavos-lazareto-1921-back.jpg",
+      "title": {
+        "es": "2 centavos · Lazareto · 1921",
+        "en": "2 centavos · Lazaretto · 1921"
       }
     },
     {
@@ -2188,6 +2227,45 @@
       }
     },
     {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "front",
+      "hash": "0261235137216122",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-composite.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "front",
+      "hash": "081c2a322a1a0c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-front.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
+      "pieceId": "ht-181-c1835-john-j-adams",
+      "face": "back",
+      "hash": "08040a2a261a0c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/",
+      "pick": "HT-181 · Low-300 · W-MA-320-10a · R-1 · Numista N#125438",
+      "image": "/images/catalog/estados-unidos/ht-181-c1835-john-j-adams-back.jpg",
+      "title": {
+        "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
+        "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
       "pieceId": "1-dolar-trump-1776-2026",
       "face": "front",
       "hash": "007177d0b3736100",
@@ -2731,6 +2809,45 @@
       "title": {
         "es": "10 dólares · Serie 1934 A · Filadelfia",
         "en": "$10 · Series 1934A · Philadelphia"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "front",
+      "hash": "23e8cca4084d2a00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-composite.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "front",
+      "hash": "00c9d68ab2aa2084",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-front.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934c-kansas-city",
+      "face": "back",
+      "hash": "00ae5355a62b2ba4",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934c-kansas-city/",
+      "pick": "P#430Dc · Fr. 2008-J",
+      "image": "/images/catalog/estados-unidos/frn-1934c-10-kansas-city-j55894000-back.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 C · Kansas City",
+        "en": "$10 · Series 1934C · Kansas City"
       }
     },
     {

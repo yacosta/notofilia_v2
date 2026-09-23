@@ -1,7 +1,7 @@
 import type { CatalogSource, LocalizedText } from './catalog';
 import {
-  coinById,
   coinagePath,
+  unitedStatesCoins,
   USA_HARD_TIMES_PATH,
   USA_HARD_TIMES_PATH_EN,
   type UnitedStatesCoin,
@@ -23,7 +23,7 @@ export const hardTimesSeriesCopy = {
   es: {
     metaTitle: 'Fichas Hard Times · EE. UU. | Notofilia',
     metaDescription:
-      'Fichas Hard Times de 1832–1844: menuda privada, sátira jacksoniana y el HT-34 de 1837 (Low-20) en la colección.',
+      'Fichas Hard Times de 1832–1844: el HT-34 de 1837 y la store card de John J. Adams (HT-181, hacia 1835).',
     kicker: 'Estados Unidos · Numismática',
     title: 'Fichas Hard Times',
     breadcrumbCurrent: 'Fichas Hard Times',
@@ -33,7 +33,7 @@ export const hardTimesSeriesCopy = {
       'Mapa ilustrado de los Estados Unidos en el Pánico de 1837: tierras del Oeste, Filadelfia, Nueva Orleans y una ficha Hard Times de 1837',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Un cobre HT-34 (Low-20) de 1837, sin serial y sin encapsular: burro al galope y tortuga con la caja SUB TREASURY. Abra la ficha para el anverso, el reverso y los datos de catálogo.',
+      'Dos fichas sin serial y sin encapsular: el HT-34 (Low-20) de 1837, burro y tortuga SUB TREASURY, y el HT-181 (Low-300) de John J. Adams, hacia 1835, jabalí y «Cash for Bristles». Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
     viewCoin: 'Ver la ficha',
     rarityTitle: 'Escala de rareza (Rulau / Fuld)',
     rarityIntro:
@@ -47,7 +47,7 @@ export const hardTimesSeriesCopy = {
   en: {
     metaTitle: 'Hard Times tokens · United States | Notofilia',
     metaDescription:
-      'Hard Times tokens of 1832–1844: private small change, Jacksonian satire, and the 1837 HT-34 (Low-20) in the collection.',
+      'Hard Times tokens of 1832–1844: the 1837 HT-34 and the John J. Adams store card (HT-181, circa 1835).',
     kicker: 'United States · Numismatics',
     title: 'Hard Times tokens',
     breadcrumbCurrent: 'Hard Times tokens',
@@ -57,7 +57,7 @@ export const hardTimesSeriesCopy = {
       'Illustrated map of the United States in the Panic of 1837: Western lands, Philadelphia, New Orleans, and an 1837 Hard Times token',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'One copper HT-34 (Low-20) of 1837, with no serial and unslabbed: a galloping jackass and a tortoise with the SUB TREASURY chest. Open the piece record for obverse, reverse, and catalog facts.',
+      'Two tokens with no serial and unslabbed: the 1837 HT-34 (Low-20), jackass and SUB TREASURY tortoise, and John J. Adams’s HT-181 (Low-300), circa 1835, boar and “Cash for Bristles.” Open each record for obverse, reverse, and catalog facts.',
     viewCoin: 'Open the token page',
     rarityTitle: 'Rarity scale (Rulau / Fuld)',
     rarityIntro:
@@ -234,8 +234,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'El productor más prolífico fue Scovill Manufacturing Company, de Waterbury, Connecticut, nacida en botones de latón y dueña de laminadoras y prensas. Otros nombres: Wright & Bale en Nueva York, Edward Hulseman y Richard Trested (NY-922). Hulseman firmó una ficha de 1837 como Half Cent Worth of Pure Copper, que apelaba al metal y no al valor facial. Los grabadores vendían el cobre a los comerciantes por menos de un centavo; el comerciante lo daba como cambio a valor de un centavo y ganaba el señoreaje fraccionario, con su anuncio en circulación. Store cards documentan droguerías, ferreterías, paños, diligencias y hasta H.B. West’s Trained Dogs en Nueva York.',
-        en: 'The most prolific maker was Scovill Manufacturing Company of Waterbury, Connecticut, born in brass buttons and equipped with rolling mills and coining presses. Other names: Wright & Bale in New York, Edward Hulseman, and Richard Trested (NY-922). Hulseman signed an 1837 token Half Cent Worth of Pure Copper, which traded on bullion rather than face value. Die sinkers sold the copper to merchants for less than a cent; the merchant paid it out as change at a full cent and took fractional seigniorage, with his advertisement in circulation. Store cards record apothecaries, hardware, dry goods, coaches, and even H.B. West’s Trained Dogs in New York.',
+        es: 'El productor más prolífico fue Scovill Manufacturing Company, de Waterbury, Connecticut, nacida en botones de latón y dueña de laminadoras y prensas. Otros nombres: Wright & Bale en Nueva York, Edward Hulseman y Richard Trested (NY-922). Hulseman firmó una ficha de 1837 como Half Cent Worth of Pure Copper, que apelaba al metal y no al valor facial. Los grabadores vendían el cobre a los comerciantes por menos de un centavo; el comerciante lo daba como cambio a valor de un centavo y ganaba el señoreaje fraccionario, con su anuncio en circulación. Store cards documentan droguerías, ferreterías, paños, diligencias y hasta H.B. West’s Trained Dogs en Nueva York. En esta colección la store card fotografiada es la de John J. Adams, fabricante de cepillos en Taunton, con oficina en Boston: HT-181 (Low-300), hacia 1835.',
+        en: 'The most prolific maker was Scovill Manufacturing Company of Waterbury, Connecticut, born in brass buttons and equipped with rolling mills and coining presses. Other names: Wright & Bale in New York, Edward Hulseman, and Richard Trested (NY-922). Hulseman signed an 1837 token Half Cent Worth of Pure Copper, which traded on bullion rather than face value. Die sinkers sold the copper to merchants for less than a cent; the merchant paid it out as change at a full cent and took fractional seigniorage, with his advertisement in circulation. Store cards record apothecaries, hardware, dry goods, coaches, and even H.B. West’s Trained Dogs in New York. The store card photographed in this collection is John J. Adams’s, a brush manufacturer in Taunton with an office in Boston: HT-181 (Low-300), circa 1835.',
       },
       {
         es: 'El Tesoro acusó a William H. Scovill de fabricar cobre falso con ánimo de engañar. El caso se arrastró años y se archivó en 1842: las piezas llevaban publicidad, lemas políticos o NOT ONE CENT, y el gobierno sabía que procesar a los fabricantes cortaría la única menuda que quedaba. La ambigüedad legal se cerró el 22 de abril de 1864, en otra inundación de fichas —las de la Guerra Civil—. El Coinage Act de 1864 cambió el centavo federal, autorizó la pieza de dos centavos (la primera con In God We Trust) y criminalizó la acuñación privada de uno y dos centavos para circular. Ahí terminó la menuda de emergencia privada en Estados Unidos.',
@@ -281,8 +281,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando escaseó el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería propuesta. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-34 fotografiado en la colección.',
-        en: 'Hard Times tokens show how private trade invented small change when federal metal ran short. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the tortoise of the proposed Sub-Treasury. This case does not price the market or republish quotes; it records the photographed HT-34 in the collection.',
+        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando escaseó el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería propuesta. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-34 de 1837 y la store card HT-181 de John J. Adams fotografiados en la colección.',
+        en: 'Hard Times tokens show how private trade invented small change when federal metal ran short. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the tortoise of the proposed Sub-Treasury. This case does not price the market or republish quotes; it records the photographed 1837 HT-34 and the John J. Adams HT-181 store card.',
       },
     ],
   },
@@ -440,8 +440,7 @@ export const hardTimesRelated = [
 ] as const;
 
 export function hardTimesHoldings(): UnitedStatesCoin[] {
-  const token = coinById('ht-34-1837-burro-tortuga');
-  return token ? [token] : [];
+  return unitedStatesCoins.filter((coin) => coin.chapterId === 'hard-times');
 }
 
 export { coinagePath as hardTimesParentPath, USA_HARD_TIMES_PATH, USA_HARD_TIMES_PATH_EN };

@@ -294,6 +294,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
+    assert.match(usBlock, /id: 'us-ht-181-c1835-john-j-adams'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
