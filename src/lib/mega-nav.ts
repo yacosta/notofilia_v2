@@ -308,13 +308,14 @@ export const megaNav: NavNode[] = [
         en: 'Colombia',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
-      },
-      {
-        id: 'numismatica-lazaretos',
-        es: 'Numismática de los Lazaretos',
-        en: 'Numismatics of the Lazarettos',
-        href: LAZARETTOS_NUMISMATICS_PATH,
-        flag: 'co',
+        children: [
+          {
+            id: 'numismatica-lazaretos',
+            es: 'Numismática de los Lazaretos',
+            en: 'Numismatics of the Lazarettos',
+            href: LAZARETTOS_NUMISMATICS_PATH,
+          },
+        ],
       },
       {
         id: 'es-monedas',

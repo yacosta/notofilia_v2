@@ -26,7 +26,8 @@ const pathname = lazarettosNumismaticsPath(locale);
 const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
 const caseHref = localizePath(LAZARETTOS_PATH, locale);
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
-const ogImage = LAZARETTOS_NUMISMATICS_HERO.src;
+const hero = LAZARETTOS_NUMISMATICS_HERO[locale];
+const ogImage = hero.src;
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(ogImage, SITE_URL).href;
 
@@ -72,10 +73,10 @@ const jsonLd = {
 
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
     <SeriesHero
-      src={LAZARETTOS_NUMISMATICS_HERO.src}
+      src={hero.src}
       alt={t.heroAlt}
-      width={LAZARETTOS_NUMISMATICS_HERO.width}
-      height={LAZARETTOS_NUMISMATICS_HERO.height}
+      width={hero.width}
+      height={hero.height}
       headingId="lazarettos-numismatics-heading"
       eyebrow={copy[locale].virtualCollection}
       title={t.title}

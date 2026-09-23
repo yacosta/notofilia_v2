@@ -4,9 +4,16 @@ export const LAZARETTOS_NUMISMATICS_PATH = '/coleccion/numismatica/numismatica-d
 export const LAZARETTOS_NUMISMATICS_PATH_EN = '/collection/numismatics/numismatics-of-the-lazarettos/';
 
 export const LAZARETTOS_NUMISMATICS_HERO = {
-  src: '/uploads/monedas-de-lazaretos-hero.jpg',
-  width: 1024,
-  height: 438,
+  es: {
+    src: '/uploads/monedas-de-lazaretos-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
+  en: {
+    src: '/uploads/lazaretto-coins-of-colombia-hero.jpg',
+    width: 1024,
+    height: 436,
+  },
 } as const;
 
 export const lazarettosNumismaticsCopy = {
@@ -42,7 +49,7 @@ export const lazarettosNumismaticsCopy = {
     published: '2026-09-23',
     dateLabel: 'September 23, 2026',
     heroAlt:
-      'Illustration of lazaretto coins in Colombia: a map, Caño de Loro, Contratación, Agua de Dios, Hospital San Lázaro, coins with the cross of Saint Lazarus, and the legend “Isolation was also hope.”',
+      'Panoramic illustration titled Lazaretto Coins of Colombia: a map, Caño de Loro (1784), Contratación (1835), Agua de Dios (1870), Hospital San Lázaro in Cartagena (1598), and coins with the cross of Saint Lazarus.',
     caseCta: 'Open the lazarettos case',
     numismaticaCta: 'Back to numismatics',
   },
