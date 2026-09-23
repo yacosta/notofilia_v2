@@ -1,5 +1,7 @@
 import { contactLegacyRedirect } from './data/contact';
+import { cfImageFallbackPath } from './lib/cf-image-path.ts';
 import { planSeoResponse } from './lib/gsc-redirects';
+import { applySecurityHeaders } from './lib/security-headers.ts';
 import { COMMENTS_API_PATTERN, handleCommentsRequest } from './worker/comments';
 import { IDENTIFY_API_PATH, handleIdentifyRequest } from './worker/identify';
 
@@ -17,11 +19,8 @@ function isHomePath(pathname: string): boolean {
   return pathname === '/' || pathname === '/en' || pathname === '/en/';
 }
 
-/** Strip `/cdn-cgi/image/<options>` when local preview lacks Image Resizing. */
-function cfImageFallbackPath(pathname: string): string | null {
-  if (!pathname.startsWith('/cdn-cgi/image/')) return null;
-  const slash = pathname.indexOf('/', '/cdn-cgi/image/'.length);
-  return slash === -1 ? null : pathname.slice(slash);
+function withSecurity(url: URL, response: Response): Response {
+  return applySecurityHeaders(applyRobots(url, response));
 }
 
 function applyRobots(url: URL, response: Response): Response {
@@ -48,26 +47,26 @@ export default {
     const url = new URL(request.url);
     const planned = planSeoResponse(url.pathname);
     if (planned.type === 'gone') {
-      return goneResponse(request, env, url);
+      return withSecurity(url, await goneResponse(request, env, url));
     }
     if (planned.type === 'redirect') {
-      return Response.redirect(new URL(planned.target, url).href, 301);
+      return withSecurity(url, Response.redirect(new URL(planned.target, url).href, 301));
     }
     const legacy = contactLegacyRedirect(url.pathname);
     if (legacy && !isHomePath(legacy)) {
-      return Response.redirect(new URL(legacy, url).href, 301);
+      return withSecurity(url, Response.redirect(new URL(legacy, url).href, 301));
     }
     if (url.pathname.replace(/\/$/, '') === IDENTIFY_API_PATH) {
-      return handleIdentifyRequest(request, env);
+      return withSecurity(url, await handleIdentifyRequest(request, env));
     }
     if (url.pathname.startsWith('/api/')) {
-      return handleCommentsRequest(request, env);
+      return withSecurity(url, await handleCommentsRequest(request, env));
     }
 
     if (planned.type === 'probe-dc') {
       const probe = await env.ASSETS.fetch(new Request(new URL(planned.path, url.origin), request));
       if (probe.status === 200) {
-        return Response.redirect(new URL(planned.path, url).href, 301);
+        return withSecurity(url, Response.redirect(new URL(planned.path, url).href, 301));
       }
     }
 
@@ -90,7 +89,7 @@ export default {
         headers: notFound.headers,
       });
     }
-    return applyRobots(url, asset);
+    return withSecurity(url, asset);
   },
 };
 

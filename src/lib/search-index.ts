@@ -19,6 +19,7 @@ import {
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
+import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -461,6 +462,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: USA_RENCY_PATH,
       title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
       dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
+    },
+    {
+      href: LAZARETTOS_NUMISMATICS_PATH,
+      title: { es: lazarettosNumismaticsCopy.es.nav, en: lazarettosNumismaticsCopy.en.nav },
+      dek: {
+        es: lazarettosNumismaticsCopy.es.metaDescription,
+        en: lazarettosNumismaticsCopy.en.metaDescription,
+      },
+      extra:
+        'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 leprocomio',
     },
     {
       href: GIORI_TEST_NOTES_PATH,

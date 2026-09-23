@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict';
 import { afterEach, describe, it } from 'node:test';
-import { handleCommentsRequest, normalizeSlug, normalizeText } from './comments.ts';
+import newsArticles from '../data/news-articles.json' with { type: 'json' };
+import { commentArticleSlugs, handleCommentsRequest, normalizeSlug, normalizeText } from './comments.ts';
+
+const testSlugs = new Set(['guia-mylar']);
 
 function jsonRequest(url, method, body, headers = {}) {
   return new Request(url, {
@@ -58,6 +61,7 @@ describe('comments API', () => {
     const response = await handleCommentsRequest(
       new Request('https://notofilia.com/api/comments/guia-mylar'),
       env,
+      testSlugs,
     );
     assert.equal(response.status, 200);
     const payload = await response.json();
@@ -74,6 +78,7 @@ describe('comments API', () => {
         turnstileToken: 'token',
       }),
       env,
+      testSlugs,
     );
     assert.equal(response.status, 503);
   });
@@ -101,6 +106,7 @@ describe('comments API', () => {
           turnstileToken: 'token',
         }),
         createEnv(),
+        testSlugs,
       );
       assert.equal(response.status, 403);
       const payload = await response.json();
@@ -136,8 +142,43 @@ describe('comments API', () => {
         { 'CF-Connecting-IP': '203.0.113.10' },
       ),
       createEnv({ inserted }),
+      testSlugs,
     );
     assert.equal(response.status, 202);
     assert.deepEqual(inserted[0], ['guia-mylar', 'Ana', 'Buen articulo']);
+  });
+
+  it('rejects slugs that are not published news articles', async () => {
+    const response = await handleCommentsRequest(
+      jsonRequest('https://notofilia.com/api/comments/guia-mylar', 'POST', {
+        name: 'Ana',
+        comment: 'Buen articulo',
+        turnstileToken: 'token',
+      }),
+      createEnv(),
+    );
+    assert.equal(response.status, 404);
+  });
+
+  it('allows every published news slug', () => {
+    for (const article of newsArticles) {
+      const slug = normalizeSlug(article.slug);
+      assert.ok(slug, article.slug);
+      assert.equal(commentArticleSlugs.has(slug), true);
+    }
+    assert.equal(commentArticleSlugs.has('guia-mylar'), false);
+  });
+
+  it('rejects an oversized comment body before Turnstile', async () => {
+    const response = await handleCommentsRequest(
+      jsonRequest(
+        'https://notofilia.com/api/comments/guia-mylar',
+        'POST',
+        { name: 'Ana', comment: 'x'.repeat(9000), turnstileToken: 'token' },
+      ),
+      createEnv(),
+      testSlugs,
+    );
+    assert.equal(response.status, 413);
   });
 });

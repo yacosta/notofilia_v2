@@ -347,6 +347,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', en: '/collection/spain-numismatics/half-escudo-madrid-1757-jb/' },
   { es: '/coleccion/espana-numismatica/', en: '/collection/spain-numismatics/' },
   { es: '/coleccion/paises-bajos/', en: '/collection/netherlands/' },
+  {
+    es: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
+    en: '/collection/numismatics/numismatics-of-the-lazarettos/',
+  },
   { es: '/coleccion/numismatica/', en: '/collection/numismatics/' },
   { es: '/coleccion/notafilia/', en: '/collection/notaphily/' },
   { es: '/coleccion/espana/', en: '/collection/spain/' },
@@ -620,6 +624,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/ecuador/',
     '/en/coleccion/guatemala/',
     '/en/coleccion/lazarettos/',
+    '/en/coleccion/numismatica/numismatica-de-los-lazaretos/',
     '/en/coleccion/puerto-rico/junta-central-cuba-1869/',
     '/en/coleccion/puerto-rico/junta-central-1-peso-1869/',
     '/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
