@@ -56,6 +56,16 @@ const added = [
   'nature-print',
   'handstamp',
   'grayback',
+  'bep',
+  'billete-reserva-federal',
+  'ceca',
+  'certificado-de-plata',
+  'escudo',
+  'fichas-hard-times',
+  'funnyback',
+  'moneda-prueba-giori',
+  'sello-amarillo',
+  'sobreimpresion-hawaii',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -82,7 +92,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 147);
+    assert.equal(glossaryTerms.length, 157);
   });
 });
 
@@ -90,7 +100,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 113);
+    assert.equal(foldedGlossaryTerms().length, 123);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
