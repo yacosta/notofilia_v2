@@ -21,6 +21,7 @@ import {
   USA_MISC_PATH,
   USA_RENCY_PATH,
 } from '../../data/estados-unidos';
+import { EDUCATIONAL_SERIES_PATH } from '../../data/educational-series-1896';
 import { USA_COINAGE_PATH } from '../../data/estados-unidos-coinage';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
@@ -167,6 +168,18 @@ const jsonLd = collectionPageJsonLd({
                       </li>
                     ))}
                   </ol>
+                ) : null
+              }
+              {
+                chapter.id === 'us-silver' ? (
+                  <p class={notes.length > 0 ? 'mt-6' : 'mt-8'}>
+                    <a
+                      href={localizePath(EDUCATIONAL_SERIES_PATH, locale)}
+                      class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                    >
+                      {t.viewEducationalCase} →
+                    </a>
+                  </p>
                 ) : null
               }
               {

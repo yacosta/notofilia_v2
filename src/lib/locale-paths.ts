@@ -275,6 +275,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/colonial-paper/'],
   },
   {
+    es: '/coleccion/estados-unidos/serie-educativa-1896/',
+    en: '/collection/united-states/educational-series-1896/',
+    aliases: ['/coleccion/united-states/educational-series-1896/'],
+  },
+  {
     es: '/coleccion/estados-unidos/billetes-obsoletos/',
     en: '/collection/united-states/obsolete-notes/',
     aliases: ['/coleccion/united-states/obsolete-notes/'],
@@ -521,6 +526,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/estados-unidos/rency/',
     '/en/coleccion/estados-unidos/moneda-colonial/',
+    '/en/coleccion/estados-unidos/serie-educativa-1896/',
     '/en/coleccion/estados-unidos/billetes-obsoletos/',
     '/en/coleccion/estados-unidos/miscelaneos/billete-prueba-giori-lincoln-memorial/',
     '/en/coleccion/estados-unidos/miscelaneos/nota-prueba-giori-lincoln-memorial/',
@@ -547,6 +553,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/rency/messi-you-have-to-fight-to-reach-your-dream/',
     '/en/coleccion/united-states/rency/',
     '/en/coleccion/united-states/colonial-paper/',
+    '/en/coleccion/united-states/educational-series-1896/',
     '/en/coleccion/united-states/obsolete-notes/',
     '/en/coleccion/united-states/miscellaneous/giori-test-note-lincoln-memorial/',
     '/en/coleccion/united-states/miscellaneous/1-dollar-series-2006-dallas-wheres-george/',

@@ -65,6 +65,7 @@ import { blogArticles, blogSlugs, newsArticles, newsSlugs } from '../data/editor
 import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
 import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
+import { educationalSeriesDedicatedSlugs } from '../data/educational-series-1896';
 import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { contactDedicatedSlugs } from '../data/contact';
@@ -398,6 +399,7 @@ const dedicatedEs = [
   ...aboutDedicatedSlugs,
   ...comparisonDedicatedSlugs,
   ...gioriTestNotesDedicatedSlugs,
+  ...educationalSeriesDedicatedSlugs,
   ...wwiiEmergencyDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',
