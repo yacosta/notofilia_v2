@@ -176,6 +176,7 @@ export const additions: Holding[] = [
   { id: 'us-c1835-ht-181-john-j-adams', kind: 'coin', country: 'US' },
   { id: 'co-dln-bono-reconquista-10-pesos-serie-c-2380', kind: 'banknote', country: 'CO' },
   { id: 'us-baraboo-1933-50c-a1054', kind: 'banknote', country: 'US' },
+  { id: 'us-sc-1896-1-b3207078', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -278,6 +279,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1921-2-centavos-lazareto-km-l10' },
   { id: 'us-c1835-ht-181-low-300' },
   { id: 'co-dln-bono-reconquista-10-pesos-serie-c' },
+  { id: 'us-sc-1896-fr224' },
 ];
 
 export type CollectionStats = {

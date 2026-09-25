@@ -23,6 +23,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/20-dollars-hawaii-1934a/'],
   },
   {
+    es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1896/',
+    en: '/collection/united-states/1-dollar-silver-certificate-1896/',
+    aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1896/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
     en: '/collection/united-states/1-dollar-silver-certificate-1928a/',
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1928a/'],
@@ -476,6 +481,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/1-dollar-hawaii-1935a/',
     '/en/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
     '/en/coleccion/united-states/20-dollars-hawaii-1934a/',
+    '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1896/',
+    '/en/coleccion/united-states/1-dollar-silver-certificate-1896/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1928a/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1928a/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',

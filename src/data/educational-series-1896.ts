@@ -12,11 +12,11 @@ export const educationalSeriesCopy = {
     breadcrumb: 'Migas de pan',
     metaTitle: 'Serie educativa de 1896',
     metaDescription:
-      'Certificados de plata de 1896: History Instructing Youth, Ciencia y Electricidad. Friedberg 224–270, el giro de 1899 y las fuentes. Sin ejemplares en esta vitrina.',
+      'Certificados de plata de 1896: History Instructing Youth, Ciencia y Electricidad. Friedberg 224–270. El 1 dólar Fr. 224, serial B3207078, ya tiene ficha.',
     title: 'Serie educativa de 1896',
     kicker: 'Certificados de plata',
     lead:
-      'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. Esta página no publica un ejemplar: las fichas llegarán cuando se fotografíen las piezas.',
+      'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. El 1 dólar Fr. 224, serial B3207078, ya tiene ficha. El 2 y el 5 dólares siguen sin pieza fotografiada.',
     published: '2026-09-24',
     dateLabel: '24 de septiembre de 2026',
     sourcesTitle: 'Fuentes',
@@ -32,11 +32,11 @@ export const educationalSeriesCopy = {
     breadcrumb: 'Breadcrumb',
     metaTitle: '1896 Educational Series',
     metaDescription:
-      '1896 silver certificates: History Instructing Youth, Science, and Electricity. Friedberg 224–270, the 1899 turn, and the sources. No examples in this case.',
+      '1896 silver certificates: History Instructing Youth, Science, and Electricity. Friedberg 224–270. The $1, Fr. 224, serial B3207078, already has a note page.',
     title: '1896 Educational Series',
     kicker: 'Silver certificates',
     lead:
-      'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. This page does not publish an example: note pages will follow when the pieces are photographed.',
+      'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. The $1, Fr. 224, serial B3207078, already has a note page. The $2 and the $5 still have no photographed piece.',
     published: '2026-09-24',
     dateLabel: 'September 24, 2026',
     sourcesTitle: 'Sources',
