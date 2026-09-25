@@ -179,7 +179,10 @@ export const megaNav: NavNode[] = [
             en: educationalSeriesCopy.en.nav,
             href: EDUCATIONAL_SERIES_PATH,
             flag: 'us',
-            children: [noteById('1-dolar-certificado-plata-1896')].flatMap((note) =>
+            children: [
+              noteById('1-dolar-certificado-plata-1896'),
+              noteById('2-dolares-certificado-plata-1896'),
+            ].flatMap((note) =>
               note
                 ? [
                     {

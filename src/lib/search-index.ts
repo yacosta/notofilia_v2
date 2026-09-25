@@ -482,7 +482,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: educationalSeriesCopy.en.metaDescription,
       },
       extra:
-        'Educational Series 1896 History Instructing Youth Friedberg 224 225 247 248 268 269 270 Blanche Bruce Will Low Blashfield Shirlaw silver certificate B3207078 Tillman Morgan',
+        'Educational Series 1896 History Instructing Youth Friedberg 224 225 247 248 268 269 270 Blanche Bruce Will Low Blashfield Shirlaw silver certificate B3207078 1712091 Tillman Morgan Fulton Morse',
     },
     {
       href: GIORI_TEST_NOTES_PATH,

@@ -20,7 +20,7 @@ const notePage = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '1-dolar-certificado-plata-1896'");
-const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1928a'");
+const noteEnd = data.indexOf("id: '2-dolares-certificado-plata-1896'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1896 Educational Silver Certificate $1 Fr. 224', () => {
