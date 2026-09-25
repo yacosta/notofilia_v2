@@ -197,6 +197,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar Educational Series de 1896?',
+        en: 'What is the 1896 Educational Series $1?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño grande, Fr. 224 (P#335(1)), firmas Tillman–Morgan, sello rojo y seriales azules. El anverso es History Instructing Youth; el reverso, Martha y George Washington. Esta pieza es el serial B3207078. No es el Fr. 225 de Bruce–Roberts ni un Coin Note.',
+        en: 'It is a large-size Silver Certificate, Fr. 224 (P#335(1)), Tillman–Morgan signatures, a red seal, and blue serials. The face is History Instructing Youth; the back, Martha and George Washington. This piece is serial B3207078. It is not the Bruce–Roberts Fr. 225 or a Coin Note.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
         en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
       },

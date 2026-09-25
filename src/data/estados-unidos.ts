@@ -212,8 +212,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas; esta vitrina aún no ficha un sello amarillo. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops; this case does not yet record a yellow-seal note. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth y el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son Treasury Notes. Ya tiene ficha el 1 dólar Educational Series, Fr. 224, serial B3207078, firmas Tillman–Morgan. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. El 1 dólar 1935-A de sello amarillo —la emisión de África del Norte— sirvió al mismo fin con las tropas aliadas; esta vitrina aún no ficha un sello amarillo. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth and the $2 with Science presenting Steam and Electricity to Commerce and Manufacture. Those notes are not Treasury Notes. The Educational Series $1, Fr. 224, serial B3207078, Tillman–Morgan signatures, already has a note page. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The 1935-A $1 with a yellow seal — the North Africa issue — served the same purpose with Allied troops; this case does not yet record a yellow-seal note. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
     },
   },
   {
@@ -401,7 +401,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',
     ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
@@ -428,7 +428,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',
     ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
@@ -1409,6 +1409,7 @@ export type UnitedStatesNoteId =
   | '500-dolares-serie-1934a-nueva-york'
   | '1000-dolares-serie-1934a-nueva-york'
   | '20-dolares-serie-1934a-hawaii'
+  | '1-dolar-certificado-plata-1896'
   | '1-dolar-certificado-plata-1928a'
   | '1-dolar-hawaii-1935a'
   | '1-dolar-certificado-plata-1957b'
@@ -4011,6 +4012,131 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'United States Note de 2 dólares hasta 1966; FRN desde 1976 con el reverso de Trumbull.',
           en: 'United States Note $2 through 1966; FRN from 1976 with the Trumbull reverse.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-certificado-plata-1896',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-certificado-plata-1896/',
+    pathEn: '/collection/united-states/1-dollar-silver-certificate-1896/',
+    pick: 'P#335(1) · Fr. 224',
+    serial: 'B3207078',
+    signatures: {
+      es: 'James Fount Tillman (registrador del Tesoro) y Daniel N. Morgan (tesorero de los Estados Unidos)',
+      en: 'James Fount Tillman (Register of the Treasury) and Daniel N. Morgan (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Serie de 1896, impresa como SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Billete de tamaño grande: Numista da al tipo 187 × 79 mm y el Smithsonian, unos 18,8 × 8,1 cm. No es una medición de esta pieza en funda. Esta ficha no inventa una tirada del BEP para Fr. 224 ni para el serial B3207078.',
+      en: 'Series of 1896, printed as SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Large-size note: Numista gives the type as 187 × 79 mm and the Smithsonian as about 18.8 × 8.1 cm. That is not a measurement of this sleeved piece. This record does not invent a BEP printage for Fr. 224 or for serial B3207078.',
+    },
+    images: {
+      composite: '/images/catalog/united-states/united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-composite.jpg',
+      front: '/images/catalog/united-states/united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-front.jpg',
+      back: '/images/catalog/united-states/united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-back.jpg',
+      width: 1542,
+      height: 720,
+    },
+    title: {
+      es: '1 dólar · Certificado de plata · Serie 1896',
+      en: '$1 · Silver Certificate · Series 1896',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata · Educational Series',
+      en: 'United States · Silver Certificate · Educational Series',
+    },
+    lead: {
+      es: 'Anverso con History Instructing Youth, sello rojo del Tesoro y seriales azules B3207078; reverso verde con Martha y George Washington. Serie de 1896, Fr. 224, firmas Tillman–Morgan.',
+      en: 'Face with History Instructing Youth, a red Treasury seal, and blue serials B3207078; green back with Martha and George Washington. Series of 1896, Fr. 224, Tillman–Morgan signatures.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata de la serie de 1896 (Pick 335(1), Friedberg 224; Numista N#207329) es el valor bajo de la Educational Series, papel de tamaño grande del Tesoro, no un Treasury Note ni un Federal Reserve Note. El anverso, en negro, lleva la alegoría History Instructing Youth: la Historia, sentada, señala a un joven el panorama de Washington, D.C., con el Monumento a Washington y el Capitolio al fondo; a la derecha, la Constitución en una tabla; en las guirnaldas del borde, apellidos de estadounidenses. Will Hicok Low diseñó ese anverso y Charles Schlecht lo grabó. Abajo, la obligación «ONE SILVER DOLLAR / PAYABLE TO THE BEARER ON DEMAND» y WASHINGTON, D.C. La serie impresa es SERIES OF 1896. El sello pequeño del Tesoro, rojo y con rayos, va a la derecha. Los seriales azules B3207078 se repiten arriba a la derecha y abajo a la izquierda. Las firmas son las de James Fount Tillman, registrador del Tesoro, y Daniel N. Morgan, tesorero de los Estados Unidos: esa pareja es Fr. 224 (P#335(1)). La combinación posterior, Blanche K. Bruce y Ellis H. Roberts, es Fr. 225 (P#335(2)). El reverso, en verde, lo diseñó Thomas F. Morris: Martha Washington a la izquierda, grabado de Charles Burt, y George Washington a la derecha, grabado de Alfred Sealey, alrededor de un gran 1 y la leyenda SILVER CERTIFICATE. Esta pieza de la colección se presenta en funda, sin encapsular; no se asigna grado numérico a partir de las fotografías. No es el 1 dólar Funnyback serie 1928 A, serial D00508932B, ni el certificado de plata serie 1957 B, serial S35513454A, ni el 1 dólar HAWAII serie 1935 A, serial S40499058C. El canje en plata de estos certificados terminó en 1968; siguen siendo curso legal a la par.',
+      en: 'The Series of 1896 $1 Silver Certificate (Pick 335(1), Friedberg 224; Numista N#207329) is the low denomination of the Educational Series, large-size Treasury paper, not a Treasury Note and not a Federal Reserve Note. The black face carries the allegory History Instructing Youth: History, seated, points a youth toward the panorama of Washington, D.C., with the Washington Monument and the Capitol in the distance; at right, the Constitution on a tablet; in the border wreaths, surnames of Americans. Will Hicok Low designed that face and Charles Schlecht engraved it. Below is the obligation “ONE SILVER DOLLAR / PAYABLE TO THE BEARER ON DEMAND” and WASHINGTON, D.C. The printed series is SERIES OF 1896. The small red Treasury seal with rays sits at right. Blue serials B3207078 repeat at upper right and lower left. The signatures are James Fount Tillman, Register of the Treasury, and Daniel N. Morgan, Treasurer of the United States: that pairing is Fr. 224 (P#335(1)). The later pairing, Blanche K. Bruce and Ellis H. Roberts, is Fr. 225 (P#335(2)). Thomas F. Morris designed the green back: Martha Washington at left, engraved by Charles Burt, and George Washington at right, engraved by Alfred Sealey, around a large 1 and the legend SILVER CERTIFICATE. This collection piece is shown in a sleeve, unslabbed; no numerical grade is assigned from the photographs. It is not the Series 1928A Funnyback $1, serial D00508932B, nor the Series 1957-B Silver Certificate, serial S35513454A, nor the Series 1935A HAWAII $1, serial S40499058C. Redemption of these certificates in silver ended in 1968; they remain legal tender at face value.',
+    },
+    history: [
+      {
+        es: 'En 1896 el Tesoro puso en circulación tres certificados de plata de tamaño grande —1, 2 y 5 dólares— que los coleccionistas llaman Educational Series. El 1 dólar muestra History Instructing Youth; el 2 dólares, la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura. No son los Treasury Notes o Coin Notes de 1890–1891. El Bureau of Engraving and Printing los imprimió en Washington. En 1929 el formato se recortó cerca de un 30 %: esta pieza queda del lado grande de esa línea.',
+        en: 'In 1896 the Treasury placed three large-size silver certificates — one, two, and five dollars — into circulation. Collectors call them the Educational Series. The one-dollar note shows History Instructing Youth; the two-dollar note, Science presenting Steam and Electricity to Commerce and Manufacture. They are not the Treasury Notes or Coin Notes of 1890–1891. The Bureau of Engraving and Printing printed them in Washington. In 1929 the format was cut by about 30 percent: this piece sits on the large-size side of that line.',
+      },
+    ],
+    historyHeading: {
+      es: 'La Educational Series',
+      en: 'The Educational Series',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar certificado de plata, serie de 1896, serial B3207078: History Instructing Youth, sello rojo del Tesoro y firmas Tillman–Morgan, en funda.',
+      en: 'Face of the Series of 1896 $1 Silver Certificate, serial B3207078: History Instructing Youth, the red Treasury seal, and Tillman–Morgan signatures, in a sleeve.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 dólar Educational Series, Fr. 224: Martha Washington y George Washington en el grabado verde, en funda.',
+      en: 'Back of the Educational Series $1, Fr. 224: Martha Washington and George Washington in the green engraving, in a sleeve.',
+    },
+    scarcity: {
+      es: 'Fr. 224 (P#335(1)) es la combinación Tillman–Morgan; Fr. 225 (P#335(2)) es la posterior, Bruce–Roberts. Numista registra la primera con más frecuencia en su base de coleccionistas. Esa frecuencia no es una tirada del BEP. El 1 dólar es la denominación baja de las tres de 1896. Esta ficha no inventa un total de entrega ni trata el tipo como rareza extrema.',
+      en: 'Fr. 224 (P#335(1)) is the Tillman–Morgan combination; Fr. 225 (P#335(2)) is the later Bruce–Roberts pairing. Numista records the first more often in its collector database. That frequency is not a BEP printage. The one-dollar note is the low denomination of the three 1896 notes. This record does not invent a delivery total or treat the type as an extreme rarity.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial B3207078. La pieza se presenta en funda, sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for serial B3207078 has not been independently verified. The note is shown in a sleeve, unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Sin encapsular, en funda; sin grado numérico a partir de las fotografías (colección privada)',
+      en: 'Unslabbed, in a sleeve; no numerical grade from the photographs (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/207329',
+        es: 'Numista — N#207329, 1 dólar certificado de plata, Educational Series',
+        en: 'Numista — N#207329, $1 Silver Certificate, Educational Series',
+        note: {
+          es: 'P#335; Fr. 224, firmas Tillman y Morgan; Fr. 225, Bruce y Roberts. Tamaño publicado 187 × 79 mm. Anverso de Will Hicok Low, grabado de Charles Schlecht; reverso de Thomas F. Morris.',
+          en: 'P#335; Fr. 224, Tillman and Morgan signatures; Fr. 225, Bruce and Roberts. Published size 187 × 79 mm. Face by Will Hicok Low, engraved by Charles Schlecht; back by Thomas F. Morris.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-SILVER/USA0335.htm',
+        es: 'Bank Note Museum — P-335, certificado de plata de 1 dólar, 1896',
+        en: 'Bank Note Museum — P-335, $1 Silver Certificate, 1896',
+        note: {
+          es: '335(1): firmas Tillman y Morgan. 335(2): Bruce y Roberts.',
+          en: '335(1): Tillman and Morgan signatures. 335(2): Bruce and Roberts.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Educational_Series',
+        es: 'Wikipedia — Educational Series',
+        en: 'Wikipedia — Educational Series',
+        note: {
+          es: 'Tres denominaciones de 1896. Anverso del 1 dólar: Will Hicok Low y Charles Schlecht. Reverso: Thomas F. Morris; George Washington, Alfred Sealey (1867); Martha Washington, Charles Burt (1878).',
+          en: 'Three 1896 denominations. $1 face: Will Hicok Low and Charles Schlecht. Back: Thomas F. Morris; George Washington, Alfred Sealey (1867); Martha Washington, Charles Burt (1878).',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1451676',
+        es: 'National Museum of American History — 1 dólar, certificado de plata, 1896',
+        en: 'National Museum of American History — $1 Silver Certificate, 1896',
+        note: {
+          es: 'History Instructing Youth; Constitución, Monumento y Capitolio. Formato de tipo de unos 18,8 × 8,1 cm. Bureau of Engraving and Printing.',
+          en: 'History Instructing Youth; the Constitution, the Monument, and the Capitol. Type format about 18.8 × 8.1 cm. Bureau of Engraving and Printing.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Certificados de plata desde 1878; canje en plata hasta 1968.',
+          en: 'Silver certificates from 1878; redemption in silver until 1968.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Silver Certificates desde 1878; recorte al tamaño pequeño en 1929.',
+          en: 'Silver Certificates from 1878; reduction to small size in 1929.',
         },
       },
     ],
