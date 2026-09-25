@@ -4028,8 +4028,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'James Fount Tillman (Register of the Treasury) and Daniel N. Morgan (Treasurer of the United States)',
     },
     printed: {
-      es: 'Serie de 1896, impresa como SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Billete de tamaño grande: Numista da al tipo 187 × 79 mm y el Smithsonian, unos 18,8 × 8,1 cm. No es una medición de esta pieza en funda. Esta ficha no inventa una tirada del BEP para Fr. 224 ni para el serial B3207078.',
-      en: 'Series of 1896, printed as SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Large-size note: Numista gives the type as 187 × 79 mm and the Smithsonian as about 18.8 × 8.1 cm. That is not a measurement of this sleeved piece. This record does not invent a BEP printage for Fr. 224 or for serial B3207078.',
+      es: 'Serie de 1896, impresa como SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Billete de tamaño grande: Numista da al tipo 187 × 79 mm y el Smithsonian, unos 18,8 × 8,1 cm. No es una medición de esta pieza en funda. Las dos firmas del 1 dólar se numeraron en una sola secuencia. Los ejemplares accesibles sitúan Fr. 224 (Tillman–Morgan) desde el serial 1 hasta bien entrados los 31 millones —hay uno documentado en 31.573.321— y Fr. 225 (Bruce–Roberts) desde unos 36,9 millones (36.930.132) hasta al menos 55.343.927. El cambio de firmas cae entre el tramo bajo o medio de los 30 millones y 36,9 millones. No hay aquí un libro del BEP que fije el último serial de Fr. 224, y esta ficha no publica uno. Si la numeración fue continua desde 1, las dos combinaciones suman del orden de 55 a 56 millones de billetes: es una estimación a partir de seriales observados, no un total auditado. El contador de B3207078 es 3.207.078. Esta ficha no inventa una tirada del BEP para ese serial.',
+      en: 'Series of 1896, printed as SERIES OF 1896. Bureau of Engraving and Printing, Washington, D.C. Large-size note: Numista gives the type as 187 × 79 mm and the Smithsonian as about 18.8 × 8.1 cm. That is not a measurement of this sleeved piece. The two $1 signature combinations were numbered in one sequence. Accessible examples place Fr. 224 (Tillman–Morgan) from serial 1 well into the 31 millions — one is documented at 31,573,321 — and Fr. 225 (Bruce–Roberts) from about 36.9 million (36,930,132) through at least 55,343,927. The signature change falls between the low or mid-30 millions and 36.9 million. No BEP ledger here fixes the last Fr. 224 serial, and this record does not publish one. If numbering ran continuously from 1, the two combinations come to on the order of 55 to 56 million notes: an estimate from observed serials, not an audited total. The counter of B3207078 is 3,207,078. This record does not invent a BEP printage for that serial.',
     },
     images: {
       composite: '/images/catalog/united-states/united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-composite.jpg',
@@ -4073,8 +4073,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Back of the Educational Series $1, Fr. 224: Martha Washington and George Washington in the green engraving, in a sleeve.',
     },
     scarcity: {
-      es: 'Fr. 224 (P#335(1)) es la combinación Tillman–Morgan; Fr. 225 (P#335(2)) es la posterior, Bruce–Roberts. Numista registra la primera con más frecuencia en su base de coleccionistas. Esa frecuencia no es una tirada del BEP. El 1 dólar es la denominación baja de las tres de 1896. Esta ficha no inventa un total de entrega ni trata el tipo como rareza extrema.',
-      en: 'Fr. 224 (P#335(1)) is the Tillman–Morgan combination; Fr. 225 (P#335(2)) is the later Bruce–Roberts pairing. Numista records the first more often in its collector database. That frequency is not a BEP printage. The one-dollar note is the low denomination of the three 1896 notes. This record does not invent a delivery total or treat the type as an extreme rarity.',
+      es: 'Fr. 224 (P#335(1)) es la combinación Tillman–Morgan, la primera; Fr. 225 (P#335(2)) es la posterior y última, Bruce–Roberts. Con una numeración continua desde 1 y un Fr. 224 que llega a la mitad de los 30 millones, el contador 3.207.078 queda cerca del primer décimo de esa variedad y cerca del 6 % de una emisión que se documenta hasta los 55 millones. Es un serial relativamente temprano. Eso no hace rara la pieza: Fr. 224 circulado no es una rareza extrema. CoinWeek describe el pliego Monarch de Bruce–Roberts como el único conocido con esas firmas, frente a otros pliegos de 1 dólar Tillman–Morgan. Esa escasez es de pliegos, no de este billete cortado.',
+      en: 'Fr. 224 (P#335(1)) is the Tillman–Morgan combination, the first; Fr. 225 (P#335(2)) is the later and final pairing, Bruce–Roberts. With continuous numbering from 1 and an Fr. 224 run that reaches the mid-30 millions, counter 3,207,078 sits near the first tenth of that variety and near 6 percent of an issue documented into the 55 millions. It is a relatively early serial. That does not make the piece rare: circulated Fr. 224 is not an extreme rarity. CoinWeek describes the Monarch Bruce–Roberts sheet as the only one known with those signatures, against other $1 sheets that carry Tillman–Morgan. That scarcity belongs to sheets, not to this cut note.',
     },
     population: {
       es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial B3207078. La pieza se presenta en funda, sin encapsular, sin número de certificado.',
@@ -4092,6 +4092,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'P#335; Fr. 224, firmas Tillman y Morgan; Fr. 225, Bruce y Roberts. Tamaño publicado 187 × 79 mm. Anverso de Will Hicok Low, grabado de Charles Schlecht; reverso de Thomas F. Morris.',
           en: 'P#335; Fr. 224, Tillman and Morgan signatures; Fr. 225, Bruce and Roberts. Published size 187 × 79 mm. Face by Will Hicok Low, engraved by Charles Schlecht; back by Thomas F. Morris.',
+        },
+      },
+      {
+        href: 'https://coinweek.com/pmg-certifies-the-holy-grail-of-uncut-currency/',
+        es: 'CoinWeek — PMG y el pliego Monarch de 1 dólar',
+        en: 'CoinWeek — PMG and the Monarch $1 sheet',
+        note: {
+          es: 'Describe ese pliego Bruce–Roberts como el único conocido con esas firmas, frente a pliegos Tillman–Morgan. No es esta pieza cortada, serial B3207078.',
+          en: 'Describes that Bruce–Roberts sheet as the only one known with those signatures, against Tillman–Morgan sheets. Not this cut note, serial B3207078.',
         },
       },
       {

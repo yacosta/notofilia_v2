@@ -35,6 +35,15 @@ describe('US Series 1896 Educational Silver Certificate $1 Fr. 224', () => {
     assert.match(note, /Fr\. 225/);
     assert.match(note, /no inventa una tirada del BEP/);
     assert.match(note, /does not invent a BEP printage/);
+    assert.match(note, /31\.573\.321/);
+    assert.match(note, /31,573,321/);
+    assert.match(note, /55\.343\.927/);
+    assert.match(note, /55,343,927/);
+    assert.match(note, /3\.207\.078/);
+    assert.match(note, /3,207,078/);
+    assert.match(note, /no publica uno/);
+    assert.match(note, /does not publish one/);
+    assert.doesNotMatch(note, /35\.999\.999|35,999,999/);
     assert.match(note, /187 × 79 mm/);
     assert.doesNotMatch(note, /USD|hammer|population report/i);
     assert.match(holdings, /id: 'us-sc-1896-1-b3207078', kind: 'banknote', country: 'US'/);
