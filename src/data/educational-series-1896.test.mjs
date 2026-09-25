@@ -48,11 +48,11 @@ describe('1896 Educational Series resource page', () => {
     assert.doesNotMatch(pageSource, /SeriesHero/);
     assert.doesNotMatch(pageSource, /serial/);
     assert.match(bodyEs, /serial B3207078/);
-    assert.match(bodyEs, /aún no añade un ejemplar/);
+    assert.match(bodyEs, /serial 31528195/);
     assert.match(bodyEs, /serial 1712091/);
     assert.match(bodyEn, /serial B3207078/);
     assert.match(bodyEn, /serial 1712091/);
-    assert.match(bodyEn, /does not yet add an example/);
+    assert.match(bodyEn, /serial 31528195/);
     assert.match(bodyEs, /1-dolar-certificado-plata-1896/);
     assert.match(bodyEn, /1-dollar-silver-certificate-1896/);
     assert.match(bodyEs, /no vuelve a empezar/);

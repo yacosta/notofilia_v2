@@ -217,6 +217,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 5 dólares Educational Series de 1896?',
+        en: 'What is the 1896 Educational Series $5?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño grande, Fr. 270 (P#337(3)), firmas Lyons–Roberts, sello rojo, seriales azules y plancha C. El anverso es la Electricidad presentando la luz al mundo; el reverso, Ulysses S. Grant y Philip H. Sheridan. Esta pieza es el serial 31528195. No es el Fr. 268 de Tillman–Morgan ni el Fr. 269 de Bruce–Roberts.',
+        en: 'It is a large-size Silver Certificate, Fr. 270 (P#337(3)), Lyons–Roberts signatures, a red seal, blue serials, and plate C. The face is Electricity presenting light to the world; the back, Ulysses S. Grant and Philip H. Sheridan. This piece is serial 31528195. It is not the Tillman–Morgan Fr. 268 or the Bruce–Roberts Fr. 269.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
         en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
       },
