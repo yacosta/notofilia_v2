@@ -53,6 +53,12 @@ describe('1896 Educational Series resource page', () => {
     assert.match(bodyEn, /do not yet add an example/);
     assert.match(bodyEs, /1-dolar-certificado-plata-1896/);
     assert.match(bodyEn, /1-dollar-silver-certificate-1896/);
+    assert.match(bodyEs, /no vuelve a empezar/);
+    assert.match(bodyEn, /does not restart/);
+    assert.doesNotMatch(bodyEs, /30\.000\.000 = Fr/);
+    assert.doesNotMatch(bodyEn, /30,000,000 = Fr/);
+    assert.doesNotMatch(bodyEs, /se publicará cuando esté el escaneo/);
+    assert.doesNotMatch(bodyEn, /will be published when the scan is in hand/);
     assert.match(educationalSeriesCopy.es.marketNote, /no hay oferta/);
     assert.match(educationalSeriesCopy.en.marketNote, /not an offer/);
     assert.ok(educationalSeriesSources.length > 10);
