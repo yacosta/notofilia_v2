@@ -14,6 +14,10 @@ const enPiece = readFileSync(
   new URL('../pages/en/collection/united-states/1-dollar-silver-certificate-1896/index.astro', import.meta.url),
   'utf8',
 );
+const notePage = readFileSync(
+  new URL('../components/catalog/UnitedStatesNotePage.astro', import.meta.url),
+  'utf8',
+);
 
 const noteStart = data.indexOf("id: '1-dolar-certificado-plata-1896'");
 const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1928a'");
@@ -60,6 +64,10 @@ describe('US Series 1896 Educational Silver Certificate $1 Fr. 224', () => {
     assert.match(esPiece, /noteById\('1-dolar-certificado-plata-1896'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
+    assert.match(notePage, /isEducationalSeriesNote/);
+    assert.match(notePage, /EDUCATIONAL_SERIES_PATH/);
+    assert.match(data, /educationalLink: 'Serie educativa de 1896'/);
+    assert.match(data, /if \(isEducationalSeriesNote\(note\)\) return educationalSeriesPath\(locale\)/);
     assert.match(note, /united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-front\.jpg/);
     assert.match(note, /united-states-treasury-1-dollar-series-1896-silver-certificate-educational-b3207078-back\.jpg/);
   });

@@ -10,6 +10,7 @@ import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
   isBarabooScripNote,
+  isEducationalSeriesNote,
   notePageCopy,
   notePath,
   noteSeriesHref,
@@ -21,6 +22,7 @@ import {
   USA_RENCY_PATH,
   type UnitedStatesNote,
 } from '../../data/estados-unidos';
+import { EDUCATIONAL_SERIES_PATH } from '../../data/educational-series-1896';
 import PieceSiblings from './PieceSiblings.astro';
 import { isCatalogProseParts } from '../../data/catalog';
 import CatalogProseParagraph from './CatalogProseParagraph.astro';
@@ -72,6 +74,8 @@ const crumbItems = [
         ? [{ href: localizePath(USA_COLONIAL_PATH, locale), label: t.colonialLink }]
         : note.chapterId === 'us-obsoleto'
           ? [{ href: localizePath(USA_OBSOLETE_PATH, locale), label: t.obsoleteLink }]
+          : isEducationalSeriesNote(note)
+            ? [{ href: localizePath(EDUCATIONAL_SERIES_PATH, locale), label: t.educationalLink }]
         : []),
   { label: seo.h1 },
 ];
@@ -91,6 +95,8 @@ const jsonCrumbs = [
         ? [{ name: t.colonialLink, path: USA_COLONIAL_PATH }]
         : note.chapterId === 'us-obsoleto'
           ? [{ name: t.obsoleteLink, path: USA_OBSOLETE_PATH }]
+          : isEducationalSeriesNote(note)
+            ? [{ name: t.educationalLink, path: EDUCATIONAL_SERIES_PATH }]
         : []),
   { name: seo.h1, path: pathname },
 ];
@@ -288,7 +294,9 @@ const jsonCrumbs = [
           href={noteSeriesHref(note, locale)}
           class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
         >
-          ← {isBarabooScripNote(note)
+          ← {isEducationalSeriesNote(note)
+            ? t.educationalLink
+            : isBarabooScripNote(note)
             ? t.barabooLink
             : note.chapterId === 'us-miscelaneos'
               ? t.miscLink

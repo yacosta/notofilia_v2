@@ -16,6 +16,7 @@ import {
   barabooScripSeriesCopy,
   colonialSeriesCopy,
   obsoleteSeriesCopy,
+  noteById,
   notesForChapter,
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
@@ -178,6 +179,18 @@ export const megaNav: NavNode[] = [
             en: educationalSeriesCopy.en.nav,
             href: EDUCATIONAL_SERIES_PATH,
             flag: 'us',
+            children: [noteById('1-dolar-certificado-plata-1896')].flatMap((note) =>
+              note
+                ? [
+                    {
+                      id: note.id,
+                      es: note.title.es,
+                      en: note.title.en,
+                      href: note.path,
+                    },
+                  ]
+                : [],
+            ),
           },
           {
             id: 'filipinas',

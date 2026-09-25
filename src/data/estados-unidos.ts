@@ -1,6 +1,7 @@
 import type { CatalogProsePart, CatalogSource, LocalizedText } from './catalog';
 import { catalogProseText } from './catalog';
 import { localizePath } from '../lib/locale-paths';
+import { educationalSeriesPath } from './educational-series-1896';
 
 export const WHERES_GEORGE_HREF = 'https://www.wheresgeorge.com';
 
@@ -5733,6 +5734,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
 export const notePageCopy = {
   es: {
     seriesLink: 'Estados Unidos',
+    educationalLink: 'Serie educativa de 1896',
     colonialLink: 'Moneda colonial',
     obsoleteLink: 'Billetes Obsoletos',
     miscLink: 'Misceláneos',
@@ -5757,6 +5759,7 @@ export const notePageCopy = {
   },
   en: {
     seriesLink: 'United States',
+    educationalLink: '1896 Educational Series',
     colonialLink: 'Colonial paper',
     obsoleteLink: 'Obsolete notes',
     miscLink: 'Miscellaneous',
@@ -5797,7 +5800,12 @@ export function barabooScripHoldings(): UnitedStatesNote[] {
   return unitedStatesNotes.filter(isBarabooScripNote);
 }
 
+export function isEducationalSeriesNote(note: UnitedStatesNote): boolean {
+  return note.id === '1-dolar-certificado-plata-1896';
+}
+
 export function noteSeriesHref(note: UnitedStatesNote, locale: 'es' | 'en'): string {
+  if (isEducationalSeriesNote(note)) return educationalSeriesPath(locale);
   if (isBarabooScripNote(note)) return barabooScripSeriesPath(locale);
   if (note.chapterId === 'us-miscelaneos') return miscSeriesPath(locale);
   if (note.chapterId === 'us-pop-art') return rencySeriesPath(locale);
