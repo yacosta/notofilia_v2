@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SourceList from './SourceList.astro';
+import { enhanceProseHtml } from '../../data/editorial';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import bodyEs from '../../data/educational-series-1896/es.html?raw';
+import bodyEn from '../../data/educational-series-1896/en.html?raw';
+import {
+  educationalSeriesCopy,
+  educationalSeriesParentPath,
+  educationalSeriesPath,
+  educationalSeriesSources,
+} from '../../data/educational-series-1896';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = educationalSeriesCopy[locale];
+const pathname = educationalSeriesPath(locale);
+const parentHref = localizePath(educationalSeriesParentPath, locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.parent, item: parentHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogType="article"
+  publishedTime={t.published}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: parentHref, label: t.parent },
+          { label: t.nav },
+        ]}
+      />
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+          <time datetime={t.published}>{t.dateLabel}</time>
+        </p>
+      </header>
+
+      <aside
+        class="mb-10 border border-[rgba(138,109,59,0.35)] bg-[rgba(138,109,59,0.08)] px-5 py-5 sm:px-6"
+        aria-labelledby="educational-market-heading"
+      >
+        <h2 id="educational-market-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+          {t.marketKind}
+        </h2>
+        <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">{t.marketNote}</p>
+      </aside>
+
+      <div class="prose-notofilia" lang={locale} set:html={body} />
+
+      <SourceList locale={locale} sources={educationalSeriesSources} heading={t.sourcesTitle} />
+
+      <p class="mt-12">
+        <a href={parentHref} class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream">
+          {t.parentCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

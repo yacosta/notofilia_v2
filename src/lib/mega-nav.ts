@@ -33,6 +33,7 @@ import { ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
 import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
+import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educational-series-1896';
 import { LAZARETTOS_NUMISMATICS_PATH } from '../data/lazarettos-numismatics';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
@@ -170,6 +171,13 @@ export const megaNav: NavNode[] = [
               en: note.title.en,
               href: note.path,
             })),
+          },
+          {
+            id: 'serie-educativa-1896',
+            es: educationalSeriesCopy.es.nav,
+            en: educationalSeriesCopy.en.nav,
+            href: EDUCATIONAL_SERIES_PATH,
+            flag: 'us',
           },
           {
             id: 'filipinas',

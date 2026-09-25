@@ -19,6 +19,7 @@ import {
   USA_RENCY_PATH,
 } from '../data/estados-unidos';
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
+import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educational-series-1896';
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
@@ -472,6 +473,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       },
       extra:
         'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 1921 2 centavos KM L10 leprocomio',
+    },
+    {
+      href: EDUCATIONAL_SERIES_PATH,
+      title: { es: educationalSeriesCopy.es.nav, en: educationalSeriesCopy.en.nav },
+      dek: {
+        es: educationalSeriesCopy.es.metaDescription,
+        en: educationalSeriesCopy.en.metaDescription,
+      },
+      extra:
+        'Educational Series 1896 History Instructing Youth Friedberg 224 225 247 248 268 269 270 Blanche Bruce Will Low Blashfield Shirlaw silver certificate',
     },
     {
       href: GIORI_TEST_NOTES_PATH,
