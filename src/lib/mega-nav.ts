@@ -182,6 +182,7 @@ export const megaNav: NavNode[] = [
             children: [
               noteById('1-dolar-certificado-plata-1896'),
               noteById('2-dolares-certificado-plata-1896'),
+              noteById('5-dolares-certificado-plata-1896'),
             ].flatMap((note) =>
               note
                 ? [
