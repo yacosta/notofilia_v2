@@ -23,6 +23,10 @@ export const educationalSeriesCopy = {
     marketKind: 'Rangos de mercado secundario (no son martillos de Notofilia)',
     marketNote:
       'Las cifras en dólares del texto son observaciones de listados de dealers, notas de subasta y artículos citados abajo. No son precios de esta casa, no hay oferta de venta y no se verificó cada martillo uno a uno.',
+    holdingsAria: 'Tres certificados de la serie educativa de 1896',
+    pickLabel: 'Pick',
+    serialLabel: 'Serie',
+    viewNote: 'Ver la ficha',
     parentCta: 'Volver a la vitrina de Estados Unidos',
   },
   en: {
@@ -43,6 +47,10 @@ export const educationalSeriesCopy = {
     marketKind: 'Secondary-market ranges (not Notofilia hammers)',
     marketNote:
       'Dollar figures in the text are observations from dealer lists, auction notes, and articles cited below. They are not prices of this house, not an offer for sale, and not hammers verified one by one.',
+    holdingsAria: 'Three 1896 Educational Series certificates',
+    pickLabel: 'Pick',
+    serialLabel: 'Serial',
+    viewNote: 'Open the note page',
     parentCta: 'Back to the United States case',
   },
 } as const;

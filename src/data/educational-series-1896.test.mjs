@@ -38,15 +38,16 @@ describe('1896 Educational Series resource page', () => {
     assert.match(seriesPage, /EDUCATIONAL_SERIES_PATH/);
   });
 
-  it('keeps Article JSON-LD and does not publish an example note', () => {
+  it('keeps Article JSON-LD and lists the three holdings under the market note', () => {
     assert.match(pageSource, /@type': 'Article'/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /reviewedBy/);
     assert.match(pageSource, /max-w-content/);
     assert.match(pageSource, /max-w-\[46rem\]/);
-    assert.doesNotMatch(pageSource, /CatalogThumb/);
+    assert.match(pageSource, /CatalogThumb/);
+    assert.match(pageSource, /isEducationalSeriesNote/);
+    assert.ok(pageSource.indexOf('educational-market-heading') < pageSource.indexOf('holdingsAria'));
     assert.doesNotMatch(pageSource, /SeriesHero/);
-    assert.doesNotMatch(pageSource, /serial/);
     assert.match(bodyEs, /serial B3207078/);
     assert.match(bodyEs, /serial 31528195/);
     assert.match(bodyEs, /serial 1712091/);
