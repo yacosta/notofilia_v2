@@ -1,8 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
+import CatalogThumb from './CatalogThumb.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
+import { isEducationalSeriesNote, notePath, unitedStatesNotes } from '../../data/estados-unidos';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
 import bodyEs from '../../data/educational-series-1896/es.html?raw';
@@ -22,6 +25,7 @@ const { locale } = Astro.props;
 const t = educationalSeriesCopy[locale];
 const pathname = educationalSeriesPath(locale);
 const parentHref = localizePath(educationalSeriesParentPath, locale);
+const holdings = unitedStatesNotes.filter(isEducationalSeriesNote);
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const pageUrl = new URL(pathname, SITE_URL).href;
 
@@ -94,6 +98,33 @@ const jsonLd = {
         </h2>
         <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">{t.marketNote}</p>
       </aside>
+
+      <ol class:list={['mb-10 mt-0', CATALOG_PIECE_GRID]} aria-label={t.holdingsAria}>
+        {
+          holdings.map((note) => (
+            <li class="min-w-0">
+              <a
+                href={notePath(note, locale)}
+                class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+              >
+                <CatalogThumb
+                  src={note.images.front}
+                  alt={note.frontCaption[locale]}
+                  width={note.images.width ?? 1800}
+                  height={note.images.height ?? 600}
+                />
+                <h2 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                  {note.title[locale]}
+                </h2>
+                <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                  {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                </p>
+                <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
 
       <div class="prose-notofilia" lang={locale} set:html={body} />
 
