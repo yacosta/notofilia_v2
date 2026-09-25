@@ -207,6 +207,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 2 dólares Educational Series de 1896?',
+        en: 'What is the 1896 Educational Series $2?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño grande, Fr. 247 (P#336(1)), firmas Tillman–Morgan, sello rojo, seriales azules y plancha C. El anverso es la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura; el reverso, Robert Fulton y Samuel F. B. Morse. Esta pieza es el serial 1712091. No es el Fr. 248 de Bruce–Roberts ni el United States Note de 1917.',
+        en: 'It is a large-size Silver Certificate, Fr. 247 (P#336(1)), Tillman–Morgan signatures, a red seal, blue serials, and plate C. The face is Science presenting Steam and Electricity to Commerce and Manufacture; the back, Robert Fulton and Samuel F. B. Morse. This piece is serial 1712091. It is not the Bruce–Roberts Fr. 248 or the 1917 United States Note.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
         en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
       },

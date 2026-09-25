@@ -177,6 +177,7 @@ export const additions: Holding[] = [
   { id: 'co-dln-bono-reconquista-10-pesos-serie-c-2380', kind: 'banknote', country: 'CO' },
   { id: 'us-baraboo-1933-50c-a1054', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1896-1-b3207078', kind: 'banknote', country: 'US' },
+  { id: 'us-sc-1896-2-1712091', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -280,6 +281,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-c1835-ht-181-low-300' },
   { id: 'co-dln-bono-reconquista-10-pesos-serie-c' },
   { id: 'us-sc-1896-fr224' },
+  { id: 'us-sc-1896-fr247' },
 ];
 
 export type CollectionStats = {

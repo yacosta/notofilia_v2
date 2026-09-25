@@ -12,11 +12,11 @@ export const educationalSeriesCopy = {
     breadcrumb: 'Migas de pan',
     metaTitle: 'Serie educativa de 1896',
     metaDescription:
-      'Certificados de plata de 1896: History Instructing Youth, Ciencia y Electricidad. Friedberg 224–270. El 1 dólar Fr. 224, serial B3207078, ya tiene ficha.',
+      'Certificados de plata de 1896: History Instructing Youth, Ciencia y Electricidad. Friedberg 224–270. El 1 dólar Fr. 224, serial B3207078, y el 2 dólares Fr. 247, serial 1712091, ya tienen ficha.',
     title: 'Serie educativa de 1896',
     kicker: 'Certificados de plata',
     lead:
-      'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. El 1 dólar Fr. 224, serial B3207078, ya tiene ficha. El 2 y el 5 dólares siguen sin pieza fotografiada.',
+      'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. El 1 dólar Fr. 224, serial B3207078, y el 2 dólares Fr. 247, serial 1712091, ya tienen ficha. El 5 dólares sigue sin pieza fotografiada.',
     published: '2026-09-24',
     dateLabel: '24 de septiembre de 2026',
     sourcesTitle: 'Fuentes',
@@ -32,11 +32,11 @@ export const educationalSeriesCopy = {
     breadcrumb: 'Breadcrumb',
     metaTitle: '1896 Educational Series',
     metaDescription:
-      '1896 silver certificates: History Instructing Youth, Science, and Electricity. Friedberg 224–270. The $1, Fr. 224, serial B3207078, already has a note page.',
+      '1896 silver certificates: History Instructing Youth, Science, and Electricity. Friedberg 224–270. The $1, Fr. 224, serial B3207078, and the $2, Fr. 247, serial 1712091, already have note pages.',
     title: '1896 Educational Series',
     kicker: 'Silver certificates',
     lead:
-      'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. The $1, Fr. 224, serial B3207078, already has a note page. The $2 and the $5 still have no photographed piece.',
+      'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. The $1, Fr. 224, serial B3207078, and the $2, Fr. 247, serial 1712091, already have note pages. The $5 still has no photographed piece.',
     published: '2026-09-24',
     dateLabel: 'September 24, 2026',
     sourcesTitle: 'Sources',
