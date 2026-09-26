@@ -36,8 +36,8 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'Private copper, brass, and white metal on a large-cent module: emergency small change and political satire during the Panic of 1837, not United States Mint coin.',
     },
     body: {
-      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina reúne el HT-10A de 1834 (Low-9B), jabalí y busto de Jackson, el HT-34 de 1837 (Low-20), burro y tortuga, y la store card de John J. Adams (HT-181, Low-300), hacia 1835. El HT-34 no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
-      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case holds the 1834 HT-10A (Low-9B), running boar and Jackson bust, the 1837 HT-34 (Low-20), donkey and turtle, and the John J. Adams store card (HT-181, Low-300), circa 1835. HT-34 is not HT-33, which reads EXECUTIVE EXPERIMENT.',
+      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina reúne el HT-10A de 1834 (Low-9B), jabalí y busto de Jackson; el HT-16 de 1841 (Low-58), navío Constitution y «Not One Cent»; el HT-34 de 1837 (Low-20), burro y tortuga; y la store card de John J. Adams (HT-181, Low-300), hacia 1835. El HT-34 no es el HT-33, que lee EXECUTIVE EXPERIMENT. El canto del HT-16 no está fotografiado, así que no se le asigna el HT-16A.',
+      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case holds the 1834 HT-10A (Low-9B), running boar and Jackson bust; the 1841 HT-16 (Low-58), ship Constitution and “Not One Cent”; the 1837 HT-34 (Low-20), donkey and turtle; and the John J. Adams store card (HT-181, Low-300), circa 1835. HT-34 is not HT-33, which reads EXECUTIVE EXPERIMENT. The HT-16 edge is not photographed, so HT-16A is not assigned.',
     },
   },
   {
@@ -160,19 +160,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times de 1834, 1835 y 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times de 1834 a 1841, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Hard Times, Filadelfia y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'Los demás tipos —centavos de la Mint, medios dólares, águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-34 de 1837, la store card HT-181 de John J. Adams y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -184,19 +184,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens of 1834, 1835, and 1837, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
+      'Catalog of United States coinage: Hard Times tokens of 1834–1841, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
     kicker: 'United States · Numismatics',
     title: 'Hard Times, Philadelphia, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1834 HT-10A, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'Further types — Mint cents, half dollars, gold eagles — will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1837 HT-34, the John J. Adams HT-181 store card, and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -209,6 +209,7 @@ export const seriesCopy = {
 
 export type UnitedStatesCoinId =
   | 'ht-10a-1834-jabali'
+  | 'ht-16-1841-daniel-webster'
   | 'ht-34-1837-burro-tortuga'
   | 'ht-181-c1835-john-j-adams'
   | '1-dolar-trump-1776-2026';
@@ -689,6 +690,166 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     ],
   },
   {
+    id: 'ht-16-1841-daniel-webster',
+    path: '/coleccion/estados-unidos-numismatica/ht-16-1841-daniel-webster/',
+    pathEn: '/en/collection/united-states-numismatics/ht-16-1841-daniel-webster/',
+    chapterId: 'hard-times',
+    year: '1841',
+    mint: {
+      es: 'Acuñación privada. El Smithsonian atribuye su ejemplar del tipo a Scovill, de Waterbury; este cospel no muestra firma',
+      en: 'Private striking. The Smithsonian attributes its example of the type to Scovill of Waterbury; this planchet shows no signature',
+    },
+    denomination: {
+      es: 'Ficha política de módulo de large cent (sin valor facial)',
+      en: 'Political token on the large-cent module (no face value on the piece)',
+    },
+    composition: {
+      es: 'Cobre (metal publicado del HT-16; este ejemplar no se ensayó)',
+      en: 'Copper (published metal of type HT-16; this specimen was not assayed)',
+    },
+    weight: {
+      es: '10,2 g (peso de tipo en Numista; este ejemplar no se pesó)',
+      en: '10.2 g (Numista type weight; this specimen was not weighed)',
+    },
+    diameter: {
+      es: '≈ 28 mm (Numista); el ejemplar del Smithsonian mide unos 28,6 mm. Este ejemplar no se midió',
+      en: '≈ 28 mm (Numista); the Smithsonian example measures about 28.6 mm. This specimen was not measured',
+    },
+    edge: {
+      es: 'Liso en el HT-16 ordinario. El canto no está fotografiado, así que no se asigna el HT-16A estriado',
+      en: 'Plain on ordinary HT-16. The edge is not photographed, so reeded HT-16A is not assigned',
+    },
+    references: 'HT-16 · Low-58 · DeWitt CE-1838-8 · Wright 11-280a · R-1 · Numista N#121196 · PCGS 77215',
+    grade: {
+      es: 'Sin encapsular. Jarcia, leyendas, estrellas y dentículos legibles en las fotos. No es un grado numérico.',
+      en: 'Unslabbed. Rigging, legends, stars, and denticles are legible in the photographs. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Private 1841 Hard Times political token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-hard-times-token-ht-16-1841-composite.jpg',
+      front: '/images/catalog/united-states/united-states-hard-times-token-ht-16-1841-front.jpg',
+      back: '/images/catalog/united-states/united-states-hard-times-token-ht-16-1841-back.jpg',
+      width: 1800,
+      height: 900,
+      faceWidth: 1024,
+      faceHeight: 1024,
+    },
+    heading: {
+      es: 'Ficha Hard Times de 1841 — HT-16 / Low-58',
+      en: '1841 Hard Times token — HT-16 / Low-58',
+    },
+    title: {
+      es: 'Ficha Hard Times de 1841 · HT-16 / Low-58',
+      en: '1841 Hard Times token · HT-16 / Low-58',
+    },
+    kicker: {
+      es: 'Estados Unidos · exonumia privada',
+      en: 'United States · private exonumia',
+    },
+    lead: {
+      es: 'Ficha política de 1841: el navío CONSTITUTION y MILLIONS FOR DEFENCE / NOT ONE CENT FOR TRIBUTE. El diseño se cataloga como HT-16 (Low-58), cobre de canto liso. Este ejemplar no tiene foto del canto, así que no se le asigna el HT-16A estriado. Sin valor facial, sin serial y sin encapsular. El peso, el diámetro y el metal de esta pieza no se midieron.',
+      en: 'Political token of 1841: the ship CONSTITUTION and MILLIONS FOR DEFENCE / NOT ONE CENT FOR TRIBUTE. The design is catalogued as HT-16 (Low-58), plain-edge copper. This example has no edge photograph, so reeded HT-16A is not assigned. No face value, no serial, and unslabbed. Weight, diameter, and metal of this piece were not measured.',
+    },
+    description: {
+      es: 'Esta pieza es una ficha política Hard Times de 1841, módulo de large cent, acuñada en privado. No es un centavo de la United States Mint y no lleva valor facial. El anverso es un velero de tres palos en navegación, rotulado CONSTITUTION. El arco lee WEBSTER arriba, CREDIT a la izquierda, CURRENT a la derecha y 1841 abajo, con estrellas entre los tramos. Orla dentada. El reverso lee MILLIONS FOR DEFENCE en el arco y, al centro, NOT / ONE CENT / FOR / TRIBUTE, entre estrellas, dos hojas y una línea ondulada. El tipo publicado es cobre, unos 28 mm y canto liso: eso es HT-16. El canto estriado es HT-16A, un número distinto. Las fotos no muestran el canto. La superficie se ve gris; no se ensayó, y no se le asigna color BN, RB o RD. Fisher anota que el anverso comparte cuño con Low-60, en un estado un poco posterior. El reverso de este ejemplar es el lema NOT ONE CENT, no el Experiment naufragado de esa otra combinación. Sin serial ni cápsula.',
+      en: 'This piece is an 1841 political Hard Times token, large-cent module, struck privately. It is not a United States Mint cent and it carries no face value. The obverse is a three-masted ship under way, labeled CONSTITUTION. The arc reads WEBSTER above, CREDIT at left, CURRENT at right, and 1841 below, with stars between the segments. A denticled border. The reverse reads MILLIONS FOR DEFENCE on the arc and, at center, NOT / ONE CENT / FOR / TRIBUTE, among stars, two leaves, and a wavy line. The published type is copper, about 28 mm, plain edge: that is HT-16. The reeded edge is HT-16A, a different number. The photographs do not show the edge. The surface looks gray; it was not assayed, and no BN, RB, or RD color is assigned. Fisher notes that the obverse shares a die with Low-60, in a slightly later state. This example’s reverse is the NOT ONE CENT motto, not the wrecked Experiment of that other pairing. No serial and no holder.',
+    },
+    history: {
+      es: 'Daniel Webster, senador whig, defendía el crédito y un banco nacional frente al hard money jacksoniano. La ficha de 1841 junta su nombre, CREDIT CURRENT y el navío Constitution, la nave del Estado en orden. El reverso adapta el lema del asunto XYZ (1797–1798): millions for defense, but not one cent for tribute. En el módulo de un large cent, NOT ONE CENT evita estampar ONE CENT. Low la numeró 58; Rulau, HT-16; DeWitt, CE-1838-8 —el 1838 no cambia la fecha 1841—; Numista da Wright 11-280a y N#121196. Ese 58 es el número de variedad de Lyman H. Low, no un serial: el cospel no lleva número de serie, y los Low vecinos son otras variedades, no un rango impreso en esta pieza. Fisher la describe en cobre, 28 mm, canto liso, R-1. PCGS n.º 77215 es el listado BN de ese cobre; el listado RB es el 77855. En ambos la tirada figura como N/A, y aquí no se publica un número de piezas. El Smithsonian registra su ejemplar del tipo (1981.0296.0788) como cobre de unos 28,6 mm, hecho por Scovill Manufacturing Company en Waterbury, Connecticut. Ese dato es del objeto del museo, no una marca leída en este cospel. R-1 es rareza de tipo del canto liso, no un censo de este ejemplar. Sin procedencia registrada aquí.',
+      en: 'Daniel Webster, a Whig senator, argued for credit and a national bank against Jacksonian hard money. The 1841 token joins his name, CREDIT CURRENT, and the ship Constitution, the ship of state in good order. The reverse adapts the XYZ Affair motto (1797–1798): millions for defense, but not one cent for tribute. On a large-cent module, NOT ONE CENT avoids stamping ONE CENT. Low numbered it 58; Rulau, HT-16; DeWitt, CE-1838-8 — the 1838 does not change the 1841 date — and Numista gives Wright 11-280a and N#121196. That 58 is Lyman H. Low’s variety number, not a serial: the planchet carries no serial number, and neighboring Low numbers are other varieties, not a range printed on this piece. Fisher describes it as copper, 28 mm, plain edge, R-1. PCGS number 77215 is the BN listing of that copper; the RB listing is 77855. Both show mintage as N/A, and no quantity struck is published here. The Smithsonian records its example of the type (1981.0296.0788) as copper of about 28.6 mm, made by Scovill Manufacturing Company of Waterbury, Connecticut. That fact belongs to the museum object, not to a mark read on this planchet. R-1 is a type rarity of the plain edge, not a census of this example. No provenance is recorded here.',
+    },
+    obverseLegend: {
+      es: 'WEBSTER · CREDIT · 1841 · CURRENT. El velero lleva CONSTITUTION.',
+      en: 'WEBSTER · CREDIT · 1841 · CURRENT. The ship is labeled CONSTITUTION.',
+    },
+    reverseLegend: {
+      es: 'MILLIONS FOR DEFENCE en el arco · NOT / ONE CENT / FOR / TRIBUTE al centro.',
+      en: 'MILLIONS FOR DEFENCE on the arc · NOT / ONE CENT / FOR / TRIBUTE at center.',
+    },
+    frontCaption: {
+      es: 'Anverso: velero CONSTITUTION; WEBSTER CREDIT 1841 CURRENT.',
+      en: 'Obverse: ship CONSTITUTION; WEBSTER CREDIT 1841 CURRENT.',
+    },
+    backCaption: {
+      es: 'Reverso: MILLIONS FOR DEFENCE; NOT ONE CENT FOR TRIBUTE.',
+      en: 'Reverse: MILLIONS FOR DEFENCE; NOT ONE CENT FOR TRIBUTE.',
+    },
+    scarcity: {
+      es: 'R-1 (Fisher, canto liso HT-16): rareza de tipo, no una tirada. PCGS publica la tirada como N/A. El tono gris de las fotos no prueba plata: el tipo HT-16 se cataloga en cobre y no se asigna aquí un color de cospel. El HT-16A estriado queda fuera porque el canto no está fotografiado. No se republican precios ni un censo de encapsulados.',
+      en: 'R-1 (Fisher, plain-edge HT-16): a type rarity, not a mintage. PCGS publishes the mintage as N/A. The gray look of the photographs does not prove silver: type HT-16 is catalogued as copper, and no planchet-color designation is assigned here. Reeded HT-16A is left out because the edge is not photographed. No prices or slab census are republished.',
+    },
+    certification: {
+      es: 'Sin cápsula y sin grado numérico. Las fotos muestran la jarcia, las leyendas, las estrellas y los dentículos. No sustituyen peso, diámetro, canto ni un dictamen de autenticidad. La atribución de tipo no es un certificado de este ejemplar. Sin serial.',
+      en: 'No holder and no numerical grade. The photographs show the rigging, legends, stars, and denticles. They do not replace weight, diameter, edge, or an authenticity opinion. Type attribution is not a certificate for this example. No serial.',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/121196',
+        es: 'Numista — N#121196, Daniel Webster (Millions for Defence)',
+        en: 'Numista — N#121196, Daniel Webster (Millions for Defence)',
+        note: {
+          es: 'N#121196. Cobre, 10,2 g, 28 mm. Wright 11-280a. HT-16 de canto liso; HT-16A de canto estriado. No se republican precios.',
+          en: 'N#121196. Copper, 10.2 g, 28 mm. Wright 11-280a. Plain-edge HT-16; reeded HT-16A. Prices are not republished.',
+        },
+      },
+      {
+        href: 'http://www.hardtimestokens.com/HT1HT20.html',
+        es: 'Alan S. Fisher — Hard Times Token Collection, HT-16',
+        en: 'Alan S. Fisher — Hard Times Token Collection, HT-16',
+        note: {
+          es: 'HT-16, Low-58, cobre, 28 mm, canto liso, R-1. No es este ejemplar; no se republica un precio.',
+          en: 'HT-16, Low-58, copper, 28 mm, plain edge, R-1. Not this example; no price is republished.',
+        },
+      },
+      {
+        href: 'http://www.hardtimestokens.com/DanielWebster.aspx',
+        es: 'Alan S. Fisher — Daniel Webster, DeWitt CE-1838-8',
+        en: 'Alan S. Fisher — Daniel Webster, DeWitt CE-1838-8',
+        note: {
+          es: 'HT-16, Low-58, DeWitt CE-1838-8. El 1838 no cambia la fecha 1841 del cospel. No se republica un precio.',
+          en: 'HT-16, Low-58, DeWitt CE-1838-8. The 1838 does not change the 1841 date on the planchet. No price is republished.',
+        },
+      },
+      {
+        href: 'http://www.hardtimestokens.com/ht16details.html',
+        es: 'Alan S. Fisher — HT-16, cuño compartido con Low-60',
+        en: 'Alan S. Fisher — HT-16, die shared with Low-60',
+        note: {
+          es: 'El anverso comparte cuño con Low-60, en un estado posterior. No es este ejemplar.',
+          en: 'The obverse shares a die with Low-60, in a later state. Not this example.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1447779',
+        es: 'Smithsonian — Webster Credit Current Hard Times Token',
+        en: 'Smithsonian — Webster Credit Current Hard Times Token',
+        note: {
+          es: 'Ejemplar del museo, 1981.0296.0788: cobre, unos 28,6 mm, Scovill de Waterbury. No es esta pieza.',
+          en: 'Museum example, 1981.0296.0788: copper, about 28.6 mm, Scovill of Waterbury. Not this piece.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1841-token-ht-16-daniel-webster-bn/77215',
+        es: 'PCGS CoinFacts — 1841 HT-16 Daniel Webster, BN',
+        en: 'PCGS CoinFacts — 1841 HT-16 Daniel Webster, BN',
+        note: {
+          es: 'Listado BN n.º 77215 del cobre HT-16. Tirada N/A. No se asigna color BN a este ejemplar. No se republican precios.',
+          en: 'BN listing no. 77215 of copper HT-16. Mintage N/A. BN color is not assigned to this example. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1841-token-ht-16-daniel-webster-rb/77855',
+        es: 'PCGS CoinFacts — 1841 HT-16 Daniel Webster, RB',
+        en: 'PCGS CoinFacts — 1841 HT-16 Daniel Webster, RB',
+        note: {
+          es: 'Listado RB n.º 77855: cobre, 28 mm, tirada N/A, peso N/A. No se asigna a este ejemplar. No se republican precios.',
+          en: 'RB listing no. 77855: copper, 28 mm, mintage N/A, weight N/A. Not assigned to this example. Prices are not republished.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-dolar-trump-1776-2026',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/',
     pathEn: '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
@@ -839,7 +1000,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Tres fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835— y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835— y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -871,7 +1032,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Three unslabbed Hard Times tokens — the 1834 HT-10A, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

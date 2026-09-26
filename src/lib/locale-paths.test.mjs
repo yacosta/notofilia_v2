@@ -140,6 +140,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/ht-10a-1834-running-boar/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-16-1841-daniel-webster/', 'en'),
+      '/en/collection/united-states-numismatics/ht-16-1841-daniel-webster/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
@@ -733,6 +737,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/'],
       '/en/collection/united-states-numismatics/ht-10a-1834-running-boar/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/ht-16-1841-daniel-webster/'],
+      '/en/collection/united-states-numismatics/ht-16-1841-daniel-webster/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/'],

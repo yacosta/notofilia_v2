@@ -190,3 +190,35 @@ describe('US Hard Times HT-10A 1834 Running Boar', () => {
     assert.match(hardTimesEssay, /HT-10A/);
   });
 });
+
+describe('US Hard Times HT-16 1841 Webster token', () => {
+  it('registers a bilingual no-serial plain-edge type, with the reeded edge unassigned', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-16-1841-daniel-webster/', 'en'),
+      '/en/collection/united-states-numismatics/ht-16-1841-daniel-webster/',
+    );
+    assert.match(data, /id: 'ht-16-1841-daniel-webster'/);
+    assert.match(data, /CONSTITUTION/);
+    assert.match(data, /MILLIONS FOR DEFENCE/);
+    assert.match(data, /NOT ONE CENT/);
+    assert.match(data, /DeWitt CE-1838-8/);
+    assert.match(data, /Wright 11-280a/);
+    assert.match(data, /N#121196/);
+    assert.match(data, /PCGS 77215/);
+    assert.match(data, /HT-16A/);
+    assert.match(data, /el 1838 no cambia la fecha 1841/);
+    assert.match(data, /número de variedad de Lyman H\. Low, no un serial/);
+    assert.doesNotMatch(data, /serial: '58'/);
+    assert.match(data, /no_serial_reason:\n      'Private 1841 Hard Times political token/);
+    assert.match(data, /united-states-hard-times-token-ht-16-1841-front\.jpg/);
+    assert.match(data, /en\.numista\.com\/121196/);
+    assert.match(data, /nmah_1447779/);
+    assert.match(data, /1841-token-ht-16-daniel-webster-bn\/77215/);
+    assert.doesNotMatch(data, /\$99/);
+    assert.doesNotMatch(data, /\$408/);
+    assert.doesNotMatch(data, /\$450/);
+    assert.match(holdings, /id: 'us-1841-ht-16-daniel-webster', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1841-ht-16-low-58/);
+    assert.match(hardTimesEssay, /HT-16/);
+  });
+});
