@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../../data/estados-unidos-coinage';
+
+const coin = coinById('ht-10a-1834-jabali');
+if (!coin) throw new Error('Missing United States 1834 Hard Times HT-10A catalog token');
+---
+
+<UnitedStatesCoinPage locale="en" coin={coin} />

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T00:20:19.517Z",
+  "generatedAt": "2026-09-26T02:29:51.272Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2302,6 +2302,45 @@
       "title": {
         "es": "Ficha Hard Times, c. 1835 · HT-181 / Low-300",
         "en": "Hard Times token, c. 1835 · HT-181 / Low-300"
+      }
+    },
+    {
+      "pieceId": "ht-10a-1834-jabali",
+      "face": "front",
+      "hash": "6113525296903769",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/",
+      "pick": "HT-10A · Low-9B · DeWitt CE-1834-10 · W-10-210b · PCGS 77621",
+      "image": "/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-composite.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1834 · HT-10A / Low-9B",
+        "en": "1834 Hard Times token · HT-10A / Low-9B"
+      }
+    },
+    {
+      "pieceId": "ht-10a-1834-jabali",
+      "face": "front",
+      "hash": "1651c1a6ca535795",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/",
+      "pick": "HT-10A · Low-9B · DeWitt CE-1834-10 · W-10-210b · PCGS 77621",
+      "image": "/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-front.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1834 · HT-10A / Low-9B",
+        "en": "1834 Hard Times token · HT-10A / Low-9B"
+      }
+    },
+    {
+      "pieceId": "ht-10a-1834-jabali",
+      "face": "back",
+      "hash": "dc295957294c6595",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/",
+      "pick": "HT-10A · Low-9B · DeWitt CE-1834-10 · W-10-210b · PCGS 77621",
+      "image": "/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-back.jpg",
+      "title": {
+        "es": "Ficha Hard Times de 1834 · HT-10A / Low-9B",
+        "en": "1834 Hard Times token · HT-10A / Low-9B"
       }
     },
     {

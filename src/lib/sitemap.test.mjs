@@ -243,6 +243,10 @@ describe('sitemap coverage for United States numismatics', () => {
       '/en/collection/united-states-numismatics/ht-181-circa-1835-boar-bristles/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/', 'en'),
+      '/en/collection/united-states-numismatics/ht-10a-1834-running-boar/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );

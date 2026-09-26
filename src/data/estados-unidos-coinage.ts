@@ -32,12 +32,12 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'Hard Times tokens',
     },
     lead: {
-      es: 'Cobre privado del tamaño de un large cent: menuda de emergencia y sátira política durante el Pánico de 1837, no moneda de la United States Mint.',
-      en: 'Private copper on a large-cent module: emergency small change and political satire during the Panic of 1837, not United States Mint coin.',
+      es: 'Cobre, latón y metal blanco privados, del tamaño de un large cent: menuda de emergencia y sátira política durante el Pánico de 1837, no moneda de la United States Mint.',
+      en: 'Private copper, brass, and white metal on a large-cent module: emergency small change and political satire during the Panic of 1837, not United States Mint coin.',
     },
     body: {
-      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina reúne el HT-34 de 1837 (Low-20), burro y tortuga, y la store card de John J. Adams (HT-181, Low-300), hacia 1835. El HT-34 no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
-      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case holds the 1837 HT-34 (Low-20), donkey and turtle, and the John J. Adams store card (HT-181, Low-300), circa 1835. HT-34 is not HT-33, which reads EXECUTIVE EXPERIMENT.',
+      es: 'Las fichas Hard Times se acuñaron sobre todo entre 1832 y 1844, en cobre, latón y metal blanco, en el módulo del large cent —unos 28 mm—. No salieron de una ceca federal: cubrieron el vacío de menuda cuando el público atesoró oro, plata y hasta los centavos de cobre. Jackson vetó la renovación del Second Bank of the United States, trasladó depósitos a los llamados pet banks y, el 11 de julio de 1836, firmó con Levi Woodbury la Specie Circular: desde el 15 de agosto las tierras públicas se pagaban solo en moneda metálica. Van Buren heredó, en mayo de 1837, la suspensión de pagos en especie. Lyman H. Low clasificó 164 variedades en 1899; Russell Rulau las reordenó con números HT. El Coinage Act del 22 de abril de 1864 criminalizó la acuñación privada de piezas de uno y dos centavos y cerró esa menuda de emergencia. Esta vitrina reúne el HT-10A de 1834 (Low-9B), jabalí y busto de Jackson, el HT-34 de 1837 (Low-20), burro y tortuga, y la store card de John J. Adams (HT-181, Low-300), hacia 1835. El HT-34 no es el HT-33, que lee EXECUTIVE EXPERIMENT.',
+      en: 'Hard Times tokens were struck mainly between 1832 and 1844, in copper, brass, and white metal, on the large-cent module — about 28 mm. They did not come from a federal mint: they filled the small-change gap when the public hoarded gold, silver, and even copper cents. Jackson vetoed the recharter of the Second Bank of the United States, shifted deposits into so-called pet banks, and on 11 July 1836 signed with Levi Woodbury the Specie Circular: from 15 August, public lands were to be paid for in coin only. Van Buren inherited, in May 1837, the suspension of specie payments. Lyman H. Low classified 164 varieties in 1899; Russell Rulau reordered them with HT numbers. The Coinage Act of 22 April 1864 criminalized private striking of one- and two-cent pieces and ended that emergency small change. This case holds the 1834 HT-10A (Low-9B), running boar and Jackson bust, the 1837 HT-34 (Low-20), donkey and turtle, and the John J. Adams store card (HT-181, Low-300), circa 1835. HT-34 is not HT-33, which reads EXECUTIVE EXPERIMENT.',
     },
   },
   {
@@ -160,19 +160,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times de 1835 y 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times de 1834, 1835 y 1837, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Hard Times, Filadelfia y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'Los demás tipos —centavos de la Mint, medios dólares, águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-34 de 1837, la store card HT-181 de John J. Adams y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-34 de 1837, la store card HT-181 de John J. Adams y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -184,19 +184,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens of 1835 and 1837, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
+      'Catalog of United States coinage: Hard Times tokens of 1834, 1835, and 1837, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
     kicker: 'United States · Numismatics',
     title: 'Hard Times, Philadelphia, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1837 HT-34 and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1834 HT-10A, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'Further types — Mint cents, half dollars, gold eagles — will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1837 HT-34, the John J. Adams HT-181 store card, and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1837 HT-34, the John J. Adams HT-181 store card, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -208,6 +208,7 @@ export const seriesCopy = {
 } as const;
 
 export type UnitedStatesCoinId =
+  | 'ht-10a-1834-jabali'
   | 'ht-34-1837-burro-tortuga'
   | 'ht-181-c1835-john-j-adams'
   | '1-dolar-trump-1776-2026';
@@ -564,6 +565,130 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     ],
   },
   {
+    id: 'ht-10a-1834-jabali',
+    path: '/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/',
+    pathEn: '/en/collection/united-states-numismatics/ht-10a-1834-running-boar/',
+    chapterId: 'hard-times',
+    year: '1834',
+    mint: {
+      es: 'Acuñación privada; no se asigna ceca federal ni un fabricante nombrado',
+      en: 'Private striking; no federal mint or named manufacturer is assigned',
+    },
+    denomination: {
+      es: 'Ficha política (sin valor facial)',
+      en: 'Political token (no face value on the piece)',
+    },
+    composition: {
+      es: 'Latón plateado (metal publicado del HT-10A; este ejemplar no se ensayó)',
+      en: 'Silvered brass (published metal of type HT-10A; this specimen was not assayed)',
+    },
+    weight: {
+      es: 'No pesado en esta ficha',
+      en: 'Not weighed for this record',
+    },
+    diameter: {
+      es: '28,5 mm (medida de tipo en Fisher; este ejemplar no se midió)',
+      en: '28.5 mm (Fisher type measurement; this specimen was not measured)',
+    },
+    edge: {
+      es: 'Liso en el tipo publicado; no hay foto del canto',
+      en: 'Plain on the published type; no edge photograph',
+    },
+    references: 'HT-10A · Low-9B · DeWitt CE-1834-10 · W-10-210b · PCGS 77621',
+    grade: {
+      es: 'Sin encapsular. Detalle de diseño fuerte, rayas finas y tono gris desigual. No es un grado numérico.',
+      en: 'Unslabbed. Strong design detail, fine hairlines, and uneven gray toning. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Private 1834 Hard Times political token: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-composite.jpg',
+      front: '/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-front.jpg',
+      back: '/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-back.jpg',
+      width: 1800,
+      height: 900,
+      faceWidth: 1024,
+      faceHeight: 1024,
+    },
+    heading: {
+      es: 'Ficha Hard Times de 1834 — HT-10A / Low-9B',
+      en: '1834 Hard Times token — HT-10A / Low-9B',
+    },
+    title: {
+      es: 'Ficha Hard Times de 1834 · HT-10A / Low-9B',
+      en: '1834 Hard Times token · HT-10A / Low-9B',
+    },
+    kicker: {
+      es: 'Estados Unidos · exonumia privada',
+      en: 'United States · private exonumia',
+    },
+    lead: {
+      es: 'Ficha política de 1834: jabalí al galope y busto militar de Andrew Jackson. Se cataloga como HT-10A (Low-9B), latón plateado, por el retrato de hombros estrechos y la superficie gris plateada. Sin valor facial, sin serial y sin encapsular. El peso, el diámetro y el canto de este ejemplar no se midieron.',
+      en: 'Political token of 1834: a running boar and a military bust of Andrew Jackson. It is catalogued as HT-10A (Low-9B), silvered brass, from the narrow-shouldered portrait and the silver-gray surface. No face value, no serial, and unslabbed. Weight, diameter, and edge of this example were not measured.',
+    },
+    description: {
+      es: 'Esta pieza es una ficha política Hard Times de 1834, módulo de large cent, acuñada en privado. No lleva valor facial. El anverso catalogado es el jabalí, que corre hacia la izquierda sobre una línea de suelo. El arco lee PERISH CREDIT a la izquierda, PERISH arriba y COMMERCE a la derecha. Sobre el animal, MY VICTORY; en el cuerpo, MY / THIRD HEAT; debajo, DOWN WITH THE / BANK y la fecha 1834. Orla de perlas. El hocico apunta hacia CREDIT, el detalle que Fisher usa para el cuño de hombros estrechos de HT-10 y HT-10A. El reverso es un busto militar pequeño de Andrew Jackson, con MY en el pecho. El arco lee MY SUBSTITUTE FOR THE U.S. BANK. Debajo: EXPERIMENT, MY, CURRENCY, MY, GLORY. Dos rosetas flanquean el busto. La superficie de las fotos es gris plateada, el aspecto publicado del latón plateado HT-10A. El cobre de este diseño es HT-9 y el latón sin platear, en cospel grueso, es HT-10. Este ejemplar no se pesó, no se midió y no tiene foto del canto: la subvariedad descansa en el diseño y en el color del metal, no en un ensayo. Sin serial ni cápsula.',
+      en: 'This piece is an 1834 political Hard Times token, large-cent module, struck privately. It carries no face value. The catalogued obverse is the boar, running left above a ground line. The arc reads PERISH CREDIT at left, PERISH above, and COMMERCE at right. Above the animal, MY VICTORY; on the body, MY / THIRD HEAT; below, DOWN WITH THE / BANK and the date 1834. A beaded border. The snout points toward CREDIT, the marker Fisher uses for the narrow-shouldered die of HT-10 and HT-10A. The reverse is a small military bust of Andrew Jackson, with MY on the chest. The arc reads MY SUBSTITUTE FOR THE U.S. BANK. Below: EXPERIMENT, MY, CURRENCY, MY, GLORY. Two rosettes flank the bust. The surface in the photographs is silver-gray, the published look of silvered-brass HT-10A. Copper of this design is HT-9, and unsilvered brass on a thick planchet is HT-10. This example was not weighed or measured, and there is no edge photograph: the subvariety rests on the design and the color of the metal, not on an assay. No serial and no holder.',
+    },
+    history: {
+      es: 'La ficha pertenece a la Bank War. El MY repetido caricaturiza la política bancaria y monetaria de Jackson como un programa personal. PERISH CREDIT y PERISH COMMERCE, con DOWN WITH THE BANK, formulan el cargo de que desmontar el Second Bank of the United States arruinaría el crédito y el comercio. No es moneda de la United States Mint. Fisher registra el HT-10A como Low-9B, latón plateado, 28,5 mm, cospel delgado, hocico hacia la C de CREDIT y busto de hombros estrechos; el HT-10 es el mismo retrato en latón y cospel grueso. DeWitt CE-1834-10, Wright W-10-210b y el número PCGS 77621 son los cruces de catálogo de esa variedad plateada. Fisher la marca R-3; listados recientes de Heritage han usado R-2. No hay tirada publicada. El cospel no lleva firma de grabador, y no se le asigna fabricante. Las fotos muestran detalle de diseño fuerte, rayas finas y un tono gris desigual; no se asigna grado numérico ni se afirma que el plateado sea el original. Sin procedencia registrada aquí.',
+      en: 'The token belongs to the Bank War. The repeated MY caricatures Jackson’s banking and currency policy as a personal program. PERISH CREDIT and PERISH COMMERCE, with DOWN WITH THE BANK, state the charge that dismantling the Second Bank of the United States would ruin credit and commerce. It is not United States Mint coin. Fisher records HT-10A as Low-9B, silvered brass, 28.5 mm, a thin planchet, snout toward the C of CREDIT, and a narrow-shouldered bust; HT-10 is the same portrait in brass on a thick planchet. DeWitt CE-1834-10, Wright W-10-210b, and PCGS number 77621 are the catalog cross-references of that silvered variety. Fisher marks it R-3; recent Heritage listings have used R-2. No mintage is published. The planchet carries no engraver’s signature, and no manufacturer is assigned. The photographs show strong design detail, fine hairlines, and uneven gray toning; no numerical grade is assigned, and the silvering is not asserted to be original. No provenance is recorded here.',
+    },
+    obverseLegend: {
+      es: 'PERISH CREDIT · PERISH · COMMERCE · MY VICTORY · MY / THIRD HEAT sobre el jabalí · DOWN WITH THE / BANK · 1834.',
+      en: 'PERISH CREDIT · PERISH · COMMERCE · MY VICTORY · MY / THIRD HEAT on the boar · DOWN WITH THE / BANK · 1834.',
+    },
+    reverseLegend: {
+      es: 'MY SUBSTITUTE FOR THE U.S. BANK · EXPERIMENT · MY · CURRENCY · MY · GLORY. MY en el pecho del busto.',
+      en: 'MY SUBSTITUTE FOR THE U.S. BANK · EXPERIMENT · MY · CURRENCY · MY · GLORY. MY on the bust’s chest.',
+    },
+    frontCaption: {
+      es: 'Anverso: jabalí hacia la izquierda; PERISH CREDIT, PERISH COMMERCE; MY THIRD HEAT; DOWN WITH THE BANK; 1834.',
+      en: 'Obverse: boar facing left; PERISH CREDIT, PERISH COMMERCE; MY THIRD HEAT; DOWN WITH THE BANK; 1834.',
+    },
+    backCaption: {
+      es: 'Reverso: busto de Andrew Jackson; MY SUBSTITUTE FOR THE U.S. BANK; EXPERIMENT MY CURRENCY MY GLORY.',
+      en: 'Reverse: bust of Andrew Jackson; MY SUBSTITUTE FOR THE U.S. BANK; EXPERIMENT MY CURRENCY MY GLORY.',
+    },
+    scarcity: {
+      es: 'R-3 en la ficha de Fisher; listados recientes de Heritage han usado R-2. Es rareza de tipo, no una tirada. No hay mintage publicado. El plateado se lee en las fotos y no se ensayó. No se republican precios ni un censo de encapsulados.',
+      en: 'R-3 on Fisher’s record; recent Heritage listings have used R-2. It is a type rarity, not a mintage. No mintage is published. The silvering is read from the photographs and was not assayed. No prices or slab census are republished.',
+    },
+    certification: {
+      es: 'Sin cápsula y sin grado numérico. Las fotos muestran las leyendas, la fecha, rayas finas y un tono gris desigual. No certifican que el plateado sea el original ni sustituyen peso, diámetro o canto. Sin serial.',
+      en: 'No holder and no numerical grade. The photographs show the legends, the date, fine hairlines, and uneven gray toning. They do not certify that the silvering is original, and they do not replace weight, diameter, or edge. No serial.',
+    },
+    sources: [
+      {
+        href: 'http://www.hardtimestokens.com/HT1HT20.html',
+        es: 'Alan S. Fisher — Hard Times Token Collection, HT-10 y HT-10A',
+        en: 'Alan S. Fisher — Hard Times Token Collection, HT-10 and HT-10A',
+        note: {
+          es: 'HT-10A, Low-9B, latón plateado, 28,5 mm, cospel delgado, hocico hacia CREDIT, hombros estrechos, R-3. El HT-10 es latón en cospel grueso. No es este ejemplar; no se republica un precio.',
+          en: 'HT-10A, Low-9B, silvered brass, 28.5 mm, thin planchet, snout toward CREDIT, narrow shoulders, R-3. HT-10 is brass on a thick planchet. Not this example; no price is republished.',
+        },
+      },
+      {
+        href: 'https://www.ngccoin.com/coin-explorer/united-states/tokens-and-medals/hard-times-tokens-rulau/854028/1834-ht-10a-running-boar-ms/',
+        es: 'NGC — 1834 HT-10A Running Boar',
+        en: 'NGC — 1834 HT-10A Running Boar',
+        note: {
+          es: 'Número de catálogo HT-10A en la serie Rulau. No se republican precios ni un censo.',
+          en: 'Catalog number HT-10A in the Rulau series. No prices or census are republished.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Bank_War',
+        es: 'Wikipedia — Bank War',
+        en: 'Wikipedia — Bank War',
+        note: {
+          es: 'Contexto del veto de Jackson al Second Bank of the United States. No se republican precios.',
+          en: 'Context for Jackson’s veto of the Second Bank of the United States. Prices are not republished.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-dolar-trump-1776-2026',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/',
     pathEn: '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
@@ -714,7 +839,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Dos fichas Hard Times sin encapsular —el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835— y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Tres fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835— y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -746,7 +871,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Two unslabbed Hard Times tokens — the 1837 HT-34 and the John J. Adams HT-181 store card, circa 1835 — and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Three unslabbed Hard Times tokens — the 1834 HT-10A, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

@@ -251,6 +251,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Ficha Hard Times, c. 1835 · HT-181 / Low-300',
     en: 'Hard Times token, c. 1835 · HT-181 / Low-300',
   },
+  '/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/': {
+    es: 'Ficha Hard Times de 1834 · HT-10A / Low-9B',
+    en: '1834 Hard Times token · HT-10A / Low-9B',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
@@ -287,8 +291,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'Liberation paper, distinct from the guerrilla vouchers.',
   },
   '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
-    es: 'La vitrina de menuda privada de 1832–1844, el HT-34 de 1837 y la store card HT-181.',
-    en: 'The 1832–1844 private small-change case, the 1837 HT-34, and the HT-181 store card.',
+    es: 'La vitrina de menuda privada de 1832–1844: el HT-10A de 1834, el HT-34 de 1837 y la store card HT-181.',
+    en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',
@@ -297,6 +301,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/ht-181-c1835-jabali-cerdas/': {
     es: 'La store card HT-181 (Low-300) de John J. Adams, hacia 1835, en la colección virtual.',
     en: 'The John J. Adams HT-181 (Low-300) store card, circa 1835, in the virtual collection.',
+  },
+  '/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/': {
+    es: 'La ficha HT-10A (Low-9B) de 1834 en la colección virtual.',
+    en: 'The 1834 HT-10A (Low-9B) record in the virtual collection.',
   },
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',

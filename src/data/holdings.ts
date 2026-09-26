@@ -180,6 +180,7 @@ export const additions: Holding[] = [
   { id: 'us-sc-1896-2-1712091', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1896-5-31528195', kind: 'banknote', country: 'US' },
   { id: 'us-usn-1917-1-t55297699a', kind: 'banknote', country: 'US' },
+  { id: 'us-1834-ht-10a-jabali', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -286,6 +287,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-sc-1896-fr247' },
   { id: 'us-sc-1896-fr270' },
   { id: 'us-usn-1917-1-p187-fr39' },
+  { id: 'us-1834-ht-10a-low-9b' },
 ];
 
 export type CollectionStats = {
