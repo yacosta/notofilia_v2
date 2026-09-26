@@ -184,6 +184,7 @@ export const additions: Holding[] = [
   { id: 'co-2-reales-cartagena-1812-1814', kind: 'coin', country: 'CO' },
   { id: 'us-frn-1934a-hawaii-10-l45104670b', kind: 'banknote', country: 'US' },
   { id: 'us-usn-1907-5-m12980830', kind: 'banknote', country: 'US' },
+  { id: 'us-1841-ht-16-daniel-webster', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -294,6 +295,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2-reales-cartagena-1812-1814' },
   { id: 'us-frn-1934a-hawaii-fr2303' },
   { id: 'us-usn-1907-5-fr91' },
+  { id: 'us-1841-ht-16-low-58' },
 ];
 
 export type CollectionStats = {
