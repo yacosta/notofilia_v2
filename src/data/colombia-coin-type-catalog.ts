@@ -9,6 +9,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
+  | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
   | '1-peso-pm-1907'
   | '2-pesos-pm-1907'
@@ -81,6 +82,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-real-bogota-1810-nr-jf',
+  },
+  {
+    id: '2-reales-cartagena-1812-1814',
+    era: 'independencia',
+    year: 'ca. 1812–1814',
+    denomination: { es: '2 reales', en: '2 reales' },
+    issuer: { es: 'Estado de Cartagena', en: 'State of Cartagena' },
+    reference: 'KM# D1 · Restrepo 136 · Hernández 195',
+    title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
+    dek: {
+      es: 'Cobre de sitio, fecha y módulo sin leer. En la colección.',
+      en: 'Siege copper, date and module unread. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '2-reales-cartagena-1812-1814',
   },
   {
     id: '1-4-real-santa-marta-1820',

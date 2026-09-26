@@ -9,6 +9,7 @@ import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
+  | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
   | '2-centavos-lazareto-1921';
 
@@ -203,6 +204,94 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Documenta el retrato retenido de Carlos IV y la variedad Restrepo 111.3a, no atribuida a esta ficha.',
           en: 'Documents the retained Charles IV bust and Restrepo 111.3a, not attributed to this record.',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-reales-cartagena-1812-1814',
+    path: `${COLOMBIA_COINAGE_PATH}2-reales-cartagena-1812-1814/`,
+    chapterId: 'independencia',
+    year: 'ca. 1812–1814',
+    denomination: { es: '2 reales', en: '2 reales' },
+    metal: { es: 'Cobre', en: 'Copper' },
+    mint: {
+      es: 'Cartagena (Estado de Cartagena)',
+      en: 'Cartagena (State of Cartagena)',
+    },
+    reference: 'KM# D1 · Restrepo 136 · Hernández 195 · Numista N#48276',
+    title: {
+      es: '2 reales · Cartagena · ca. 1812–1814',
+      en: '2 reales · Cartagena · ca. 1812–1814',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Independencia',
+      en: 'Colombia-Numismatics · Independence',
+    },
+    lead: {
+      es: 'Cobre de sitio del Estado de Cartagena. Orla «…O · DE · CARTA…». La fecha no se lee; este ejemplar no se pesó ni se midió.',
+      en: 'Siege copper of the State of Cartagena. Rim “…O · DE · CARTA…”. The date is unread; this specimen was not weighed or measured.',
+    },
+    description: {
+      es: 'En 1811 la Junta de Cartagena mandó cobre de medio real y de dos reales, con leyendas en castellano. Esta ficha lo registra como 2 reales del tipo patriota, KM# D1 y Restrepo 136 (Hernández 195, Cód. 195 en la 8.ª ed. 2023, según Numista N#48276), años de catálogo 1811–1814. En el lado de la leyenda se lee la orla «…O · DE · CARTA…», con grafila de puntos y, abajo, rayos cortos. En el campo hay letras verticales gastadas: no se transcriben, y no forman un lema publicado del tipo. Numista pone en el reverso de ese 2 reales la leyenda ESTADO DE CARTAGENA VALE DOS REALES, con el valor en el centro; el ejemplo que publica lleva 1813. Aquí no se leen el año, ni «VALE DOS REALES» entero, ni un 2, ni un 1/2. El otro lado está muy gastado. Queda un relieve que puede verse como fortificación o figura heráldica; Numista describe en el anverso del tipo una figura bajo un árbol. Las fotografías no cierran esa lectura. En el canto izquierdo de ese lado hay una grieta, propia del cospel tosco. El medio real de la misma junta es KM# D2, Restrepo 131 (Numista N#48277): apila 1/2 y ESTADO / CARTA / GENA, y el catálogo da 3,45 g y 21 mm de tipo, no de este disco. La serie de 1815, Restrepo 118, es cobre de imitación, de estilo parecido. Sin fecha legible, sin marca de valor y sin peso ni diámetro de este ejemplar, la ficha no separa esos vecinos por una medida. Tampoco asigna el 4 girado de 1814 (Restrepo 136.3). Numista no publica peso ni diámetro del KM# D1. No hay tirada verificada: CoinVarieties deja la del 1814 sin cifra, y las tablas BanRep de moneda empiezan en 1987. Sin encapsular. No es el 2 reales de papel impreso en Mompós en 1812, ni el 1 real de papel de Cartagena de 1813 firmado por Gutiérrez de Piñeres, ni la moneda de la china de Santa Fe, ni el cuartillo de cobre de Santa Marta de 1820.',
+      en: 'In 1811 Cartagena’s junta ordered copper pieces of a half real and of two reales, with legends in Castilian. This record lists it as a 2 reales of the patriot type, KM# D1 and Restrepo 136 (Hernández 195, Cód. 195 in the 8th ed. 2023, as Numista N#48276 lists it), catalogue years 1811–1814. On the legend side the rim reads “…O · DE · CARTA…”, with a beaded border and, at the bottom, short rays. Worn vertical letters stand in the field: they are not transcribed, and they are not a motto published for the type. Numista places on the reverse of that 2 reales the legend ESTADO DE CARTAGENA VALE DOS REALES, with the value in the center; the sample it publishes carries 1813. Here the year, the full “VALE DOS REALES”, a 2, and a 1/2 are unread. The other side is heavily worn. A device remains that can be seen as a fortification or a heraldic figure; Numista describes on the type’s obverse a figure under a tree. The photographs do not settle that reading. A crack runs into the left edge of that side, the sort of flaw these crude planchets show. The half real of the same junta is KM# D2, Restrepo 131 (Numista N#48277): it stacks 1/2 and ESTADO / CARTA / GENA, and the catalogue gives 3.45 g and 21 mm for the type, not for this disc. The 1815 series, Restrepo 118, is imitation copper of a similar style. Without a readable date, a value mark, or a weight and diameter of this specimen, the record does not split those neighbors by a measurement. It also does not assign the rotated 4 of 1814 (Restrepo 136.3). Numista publishes neither weight nor diameter for KM# D1. No mintage is verified: CoinVarieties leaves the 1814 issue without a figure, and BanRep’s coin tables begin in 1987. Unslabbed. It is not the paper 2 reales printed at Mompós in 1812, nor the Cartagena paper 1 real of 1813 signed by Gutiérrez de Piñeres, nor Santa Fe’s china coin, nor the 1820 Santa Marta copper cuartillo.',
+    },
+    frontCaption: {
+      es: 'Lado de la leyenda: orla «…O · DE · CARTA…», grafila de puntos, letras verticales en el campo —sin transcribir— y rayos cortos abajo. Numista coloca esa leyenda en el reverso del KM# D1.',
+      en: 'Legend side: rim “…O · DE · CARTA…”, a beaded border, vertical letters in the field — not transcribed — and short rays below. Numista places that legend on the reverse of KM# D1.',
+    },
+    backCaption: {
+      es: 'Lado gastado: relieve central sin nombre seguro y una grieta en el canto izquierdo. Numista describe en el anverso del tipo una figura bajo un árbol; aquí no se lee.',
+      en: 'Worn side: a central device without a secure name, and a crack in the left edge. Numista describes a figure under a tree on the type’s obverse; it is not read here.',
+    },
+    scarcity: {
+      es: 'Numista no publica tirada, peso ni diámetro del 2 reales (N#48276). Para el medio real (N#48277) da 3,45 g y 21 mm de tipo. Este ejemplar no se pesó ni se midió, y la ficha no publica un censo de encapsulados.',
+      en: 'Numista publishes no mintage, weight, or diameter for the 2 reales (N#48276). For the half real (N#48277) it gives a type weight of 3.45 g and 21 mm. This specimen was not weighed or measured, and the record publishes no slab census.',
+    },
+    grade: {
+      es: 'Circulada, muy gastada, sin encapsular (colección privada)',
+      en: 'Circulated, heavily worn, unslabbed (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
+      front: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-front.jpg',
+      back: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/48276',
+        es: 'Numista — 2 reales de Cartagena, 1811–1814 (N#48276)',
+        en: 'Numista — Cartagena 2 reales, 1811–1814 (N#48276)',
+        note: {
+          es: 'KM# D1, Restrepo 136, Hernández 195 (Cód. 195 en la 8.ª ed. 2023); cobre; leyenda ESTADO DE CARTAGENA VALE DOS REALES.',
+          en: 'KM# D1, Restrepo 136, Hernández 195 (Cód. 195 in the 8th ed. 2023); copper; legend ESTADO DE CARTAGENA VALE DOS REALES.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/48277',
+        es: 'Numista — 1/2 real de Cartagena, 1811–1814 (N#48277)',
+        en: 'Numista — Cartagena 1/2 real, 1811–1814 (N#48277)',
+        note: {
+          es: 'KM# D2, Restrepo 131, Hernández 75. Vecino de módulo: 3,45 g y 21 mm son cifras del tipo, no de este disco. No se publican precios.',
+          en: 'KM# D2, Restrepo 131, Hernández 75. A neighbor in module: 3.45 g and 21 mm are type figures, not measurements of this disc. Prices are not published.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Cartagena_1814_2_reales',
+        es: 'CoinVarieties — Cartagena 1814 2 reales',
+        en: 'CoinVarieties — Cartagena 1814 2 reales',
+        note: {
+          es: 'Página del 1814 (KM# D1, Restrepo 136.3, 4 girado). Comparable de tipo; la fecha de esta ficha no se lee. No se publican precios.',
+          en: 'The 1814 page (KM# D1, Restrepo 136.3, rotated 4). A type comparable; the date on this record is unread. Prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Cód. 195, según Numista, para este cobre. El 2 reales de 1812 que Hernández sitúa en Mompós es papel, no esta moneda. No se publican precios.',
+          en: 'Cód. 195, as Numista lists it, for this copper. The 1812 2 reales Hernández places at Mompós is paper, not this coin. Prices are not published here.',
         },
       },
     ],

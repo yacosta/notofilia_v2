@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('2-reales-cartagena-1812-1814');
+if (!piece) throw new Error('Missing Cartagena 2 reales');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />
