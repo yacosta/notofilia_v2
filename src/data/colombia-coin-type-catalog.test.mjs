@@ -10,10 +10,12 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /holdingId: '1-real-bogota-1810-nr-jf'/);
+    assert.match(coinCatalogSource, /holdingId: '2-reales-cartagena-1812-1814'/);
     assert.match(coinCatalogSource, /holdingId: '2-centavos-lazareto-1921'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 4);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 5);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /'1-real-bogota-1810-nr-jf'/);
+    assert.match(coinagePieceSource, /'2-reales-cartagena-1812-1814'/);
     assert.match(coinagePieceSource, /'1-4-real-santa-marta-1820'/);
     assert.match(coinagePieceSource, /'2-centavos-lazareto-1921'/);
     assert.doesNotMatch(coinCatalogSource, /serial:\s*'[A-Z0-9]+'/);

@@ -555,6 +555,10 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', 'en'),
       '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
     );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', 'en'),
+      '/en/collection/colombia-numismatics/2-reales-cartagena-1812-1814/',
+    );
     assert.equal(localizePath('/en/collection/colombia/catalog/', 'es'), '/coleccion/colombia/catalogo/');
   });
 
