@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T21:53:39.326Z",
+  "generatedAt": "2026-09-26T23:26:51.701Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3282,7 +3282,7 @@
     {
       "pieceId": "5-dolares-serie-1907",
       "face": "front",
-      "hash": "e19ecb321154c671",
+      "hash": "002b4b00004c4e00",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-serie-1907/",
       "pick": "P#186(9) · Fr. 91",
@@ -3295,7 +3295,7 @@
     {
       "pieceId": "5-dolares-serie-1907",
       "face": "front",
-      "hash": "9accae46edcb4c67",
+      "hash": "00594b4f66461900",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-serie-1907/",
       "pick": "P#186(9) · Fr. 91",
@@ -3308,7 +3308,7 @@
     {
       "pieceId": "5-dolares-serie-1907",
       "face": "back",
-      "hash": "aa9684c6b4d4557a",
+      "hash": "006b4d25d64d4600",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/5-dolares-serie-1907/",
       "pick": "P#186(9) · Fr. 91",
