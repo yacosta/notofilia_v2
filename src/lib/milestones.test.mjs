@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-baraboo-1933-50c-a1054');
+    assert.equal(additions.at(-1)?.id, 'co-2-reales-cartagena-1812-1814');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -127,5 +127,41 @@ describe('homepage milestones from catalog holdings', () => {
     const card = catalogPieceForHolding(holding, pieces);
     assert.ok(card);
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
+  });
+
+  it('puts the Cartagena 2 reales first in Logros del Mes', () => {
+    const holding = additions.at(-1);
+    assert.equal(holding?.id, 'co-2-reales-cartagena-1812-1814');
+    const piece = catalogPieceForHolding(holding, [
+      {
+        id: 'co-2-reales-cartagena-1812-1814',
+        country: 'CO',
+        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
+        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
+        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
+        pick: 'KM# D1',
+        serial: '',
+        cert: '',
+        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
+        imageAlt: { es: 'Anverso', en: 'Obverse' },
+      },
+    ]);
+    assert.ok(piece);
+    const [card] = milestonesFromHoldings(additions, [
+      {
+        id: 'co-2-reales-cartagena-1812-1814',
+        country: 'CO',
+        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
+        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
+        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
+        pick: 'KM# D1',
+        serial: '',
+        cert: '',
+        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
+        imageAlt: { es: 'Anverso', en: 'Obverse' },
+      },
+    ]);
+    assert.equal(card.holdingId, 'co-2-reales-cartagena-1812-1814');
+    assert.match(card.href, /2-reales-cartagena-1812-1814/);
   });
 });

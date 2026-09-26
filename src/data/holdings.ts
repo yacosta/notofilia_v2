@@ -181,7 +181,7 @@ export const additions: Holding[] = [
   { id: 'us-sc-1896-5-31528195', kind: 'banknote', country: 'US' },
   { id: 'us-usn-1917-1-t55297699a', kind: 'banknote', country: 'US' },
   { id: 'us-1834-ht-10a-jabali', kind: 'coin', country: 'US' },
-  { id: 'co-cartagena-2-reales-km-d1', kind: 'coin', country: 'CO' },
+  { id: 'co-2-reales-cartagena-1812-1814', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -289,7 +289,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-sc-1896-fr270' },
   { id: 'us-usn-1917-1-p187-fr39' },
   { id: 'us-1834-ht-10a-low-9b' },
-  { id: 'co-cartagena-2-reales-km-d1' },
+  { id: 'co-2-reales-cartagena-1812-1814' },
 ];
 
 export type CollectionStats = {
