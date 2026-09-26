@@ -4,6 +4,20 @@ import type { Locale } from '../lib/locale-paths';
 export const EDUCATIONAL_SERIES_PATH = '/coleccion/estados-unidos/serie-educativa-1896/';
 export const EDUCATIONAL_SERIES_PATH_EN = '/collection/united-states/educational-series-1896/';
 
+/** Finished posters. Frame hero: do not crop. Card siblings are 800px wide. */
+export const EDUCATIONAL_SERIES_HERO = {
+  es: {
+    src: '/uploads/serie-educativa-1896-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
+  en: {
+    src: '/uploads/educational-series-1896-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
+} as const;
+
 export const educationalSeriesCopy = {
   es: {
     nav: 'Serie educativa de 1896',
@@ -19,6 +33,8 @@ export const educationalSeriesCopy = {
       'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. El 1 dólar Fr. 224, serial B3207078, el 2 dólares Fr. 247, serial 1712091, y el 5 dólares Fr. 270, serial 31528195, ya tienen ficha.',
     published: '2026-09-24',
     dateLabel: '24 de septiembre de 2026',
+    heroAlt:
+      'Cartel de la serie educativa de 1896: alegoría clásica, mapa de Estados Unidos, Capitolio y obelisco, y los certificados de plata de 1, 2 y 5 dólares sobre una mesa con libros, lupa y compás. Es una ilustración, no el escaneo de las piezas de la colección.',
     sourcesTitle: 'Fuentes',
     marketKind: 'Rangos de mercado secundario (no son martillos de Notofilia)',
     marketNote:
@@ -43,6 +59,8 @@ export const educationalSeriesCopy = {
       'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. The $1, Fr. 224, serial B3207078, the $2, Fr. 247, serial 1712091, and the $5, Fr. 270, serial 31528195, already have note pages.',
     published: '2026-09-24',
     dateLabel: 'September 24, 2026',
+    heroAlt:
+      'Poster for the 1896 Educational Series: a classical allegory, a map of the United States, the Capitol and the Washington Monument, and the $1, $2, and $5 silver certificates on a desk with books, a magnifying glass, and a compass. It is an illustration, not a scan of the notes in the collection.',
     sourcesTitle: 'Sources',
     marketKind: 'Secondary-market ranges (not Notofilia hammers)',
     marketNote:
