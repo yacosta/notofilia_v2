@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import {
+  EDUCATIONAL_SERIES_HERO,
   EDUCATIONAL_SERIES_PATH,
   EDUCATIONAL_SERIES_PATH_EN,
   educationalSeriesCopy,
@@ -47,7 +48,19 @@ describe('1896 Educational Series resource page', () => {
     assert.match(pageSource, /CatalogThumb/);
     assert.match(pageSource, /isEducationalSeriesNote/);
     assert.ok(pageSource.indexOf('educational-market-heading') < pageSource.indexOf('holdingsAria'));
-    assert.doesNotMatch(pageSource, /SeriesHero/);
+    assert.match(pageSource, /SeriesHero/);
+    assert.match(pageSource, /size="frame"/);
+    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
+    assert.equal(EDUCATIONAL_SERIES_HERO.es.src, '/uploads/serie-educativa-1896-hero.jpg');
+    assert.equal(EDUCATIONAL_SERIES_HERO.en.src, '/uploads/educational-series-1896-hero.jpg');
+    assert.equal(EDUCATIONAL_SERIES_HERO.es.width, 1024);
+    assert.equal(EDUCATIONAL_SERIES_HERO.es.height, 438);
+    assert.match(educationalSeriesCopy.es.heroAlt, /ilustración/);
+    assert.match(educationalSeriesCopy.en.heroAlt, /illustration/i);
+    for (const hero of Object.values(EDUCATIONAL_SERIES_HERO)) {
+      assert.ok(existsSync(new URL(`../../public${hero.src}`, import.meta.url)));
+      assert.ok(existsSync(new URL(`../../public${hero.src.replace('.jpg', '-card.jpg')}`, import.meta.url)));
+    }
     assert.match(bodyEs, /serial B3207078/);
     assert.match(bodyEs, /serial 31528195/);
     assert.match(bodyEs, /serial 1712091/);

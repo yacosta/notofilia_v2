@@ -2,15 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import CatalogThumb from './CatalogThumb.astro';
+import SeriesHero from './SeriesHero.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
 import { isEducationalSeriesNote, notePath, unitedStatesNotes } from '../../data/estados-unidos';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
-import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { imageObjectJsonLd } from '../../lib/json-ld';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
 import bodyEs from '../../data/educational-series-1896/es.html?raw';
 import bodyEn from '../../data/educational-series-1896/en.html?raw';
 import {
+  EDUCATIONAL_SERIES_HERO,
   educationalSeriesCopy,
   educationalSeriesParentPath,
   educationalSeriesPath,
@@ -27,7 +30,10 @@ const pathname = educationalSeriesPath(locale);
 const parentHref = localizePath(educationalSeriesParentPath, locale);
 const holdings = unitedStatesNotes.filter(isEducationalSeriesNote);
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const hero = EDUCATIONAL_SERIES_HERO[locale];
+const ogImage = hero.src;
 const pageUrl = new URL(pathname, SITE_URL).href;
+const imageUrl = new URL(ogImage, SITE_URL).href;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -39,6 +45,7 @@ const jsonLd = {
       datePublished: t.published,
       dateModified: t.published,
       inLanguage: locale,
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.heroAlt }),
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
@@ -59,6 +66,8 @@ const jsonLd = {
   description={t.metaDescription}
   locale={locale}
   pathname={pathname}
+  ogImage={ogImage}
+  ogImageAlt={t.heroAlt}
   ogType="article"
   publishedTime={t.published}
 >
@@ -67,6 +76,18 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={t.heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="educational-series-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={t.title}
+      subtitle={t.kicker}
+      size="frame"
+    />
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <Breadcrumb
         locale={locale}
@@ -78,16 +99,10 @@ const jsonLd = {
         ]}
       />
 
-      <header>
-        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
-        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
-          {t.title}
-        </h1>
-        <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
-        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
-          <time datetime={t.published}>{t.dateLabel}</time>
-        </p>
-      </header>
+      <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+      <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+        <time datetime={t.published}>{t.dateLabel}</time>
+      </p>
 
       <aside
         class="mb-10 border border-[rgba(138,109,59,0.35)] bg-[rgba(138,109,59,0.08)] px-5 py-5 sm:px-6"
