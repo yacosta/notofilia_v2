@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T00:41:04.203Z",
+  "generatedAt": "2026-09-26T00:20:19.517Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3124,6 +3124,45 @@
       }
     },
     {
+      "pieceId": "1-dolar-serie-1917",
+      "face": "front",
+      "hash": "e8c5699526aaa86a",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-serie-1917/",
+      "pick": "P#187(5) · Fr. 39",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1917-sawhorse-united-states-note-t55297699a-composite.jpg",
+      "title": {
+        "es": "1 dólar · United States Note · Serie 1917",
+        "en": "$1 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "1-dolar-serie-1917",
+      "face": "front",
+      "hash": "ccd5ea69abc98a22",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-serie-1917/",
+      "pick": "P#187(5) · Fr. 39",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1917-sawhorse-united-states-note-t55297699a-front.jpg",
+      "title": {
+        "es": "1 dólar · United States Note · Serie 1917",
+        "en": "$1 · United States Note · Series 1917"
+      }
+    },
+    {
+      "pieceId": "1-dolar-serie-1917",
+      "face": "back",
+      "hash": "a84d8a969694a845",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-serie-1917/",
+      "pick": "P#187(5) · Fr. 39",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1917-sawhorse-united-states-note-t55297699a-back.jpg",
+      "title": {
+        "es": "1 dólar · United States Note · Serie 1917",
+        "en": "$1 · United States Note · Series 1917"
+      }
+    },
+    {
       "pieceId": "2-dolares-serie-1917",
       "face": "front",
       "hash": "6d254d4c4d95ab6c",
@@ -3199,6 +3238,84 @@
       "title": {
         "es": "1 dólar · Certificado de plata · Serie 1896",
         "en": "$1 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "2-dolares-certificado-plata-1896",
+      "face": "front",
+      "hash": "0154d552b0b6b590",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-certificado-plata-1896/",
+      "pick": "P#336(1) · Fr. 247",
+      "image": "/images/catalog/united-states/united-states-treasury-2-dollars-series-1896-silver-certificate-educational-1712091-composite.jpg",
+      "title": {
+        "es": "2 dólares · Certificado de plata · Serie 1896",
+        "en": "$2 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "2-dolares-certificado-plata-1896",
+      "face": "front",
+      "hash": "823327636d4d2740",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-certificado-plata-1896/",
+      "pick": "P#336(1) · Fr. 247",
+      "image": "/images/catalog/united-states/united-states-treasury-2-dollars-series-1896-silver-certificate-educational-1712091-front.jpg",
+      "title": {
+        "es": "2 dólares · Certificado de plata · Serie 1896",
+        "en": "$2 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "2-dolares-certificado-plata-1896",
+      "face": "back",
+      "hash": "082b2355455b0b82",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-certificado-plata-1896/",
+      "pick": "P#336(1) · Fr. 247",
+      "image": "/images/catalog/united-states/united-states-treasury-2-dollars-series-1896-silver-certificate-educational-1712091-back.jpg",
+      "title": {
+        "es": "2 dólares · Certificado de plata · Serie 1896",
+        "en": "$2 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "5-dolares-certificado-plata-1896",
+      "face": "front",
+      "hash": "4c49252801354d01",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-certificado-plata-1896/",
+      "pick": "P#337(3) · Fr. 270",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1896-silver-certificate-educational-31528195-composite.jpg",
+      "title": {
+        "es": "5 dólares · Certificado de plata · Serie 1896",
+        "en": "$5 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "5-dolares-certificado-plata-1896",
+      "face": "front",
+      "hash": "8c823b5d53373b94",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-certificado-plata-1896/",
+      "pick": "P#337(3) · Fr. 270",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1896-silver-certificate-educational-31528195-front.jpg",
+      "title": {
+        "es": "5 dólares · Certificado de plata · Serie 1896",
+        "en": "$5 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "5-dolares-certificado-plata-1896",
+      "face": "back",
+      "hash": "8c07176b696b2d94",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-certificado-plata-1896/",
+      "pick": "P#337(3) · Fr. 270",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1896-silver-certificate-educational-31528195-back.jpg",
+      "title": {
+        "es": "5 dólares · Certificado de plata · Serie 1896",
+        "en": "$5 · Silver Certificate · Series 1896"
       }
     },
     {

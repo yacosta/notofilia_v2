@@ -267,6 +267,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar United States Note de 1917?',
+        en: 'What is the Series 1917 United States Note $1?',
+      },
+      answer: {
+        es: 'Es un Legal Tender Note de tamaño grande —horse blanket— con Washington, Colón avistando tierra y reverso Sawhorse. Esta pieza es Fr. 39 (P#187(5)), firmas Speelman–White, serial T55297699A, plancha G.',
+        en: 'It is a large-size Legal Tender Note — a horse blanket — with Washington, Columbus sighting land, and the Sawhorse reverse. This piece is Fr. 39 (P#187(5)), Speelman–White signatures, serial T55297699A, plate G.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué son los National Bank Notes, la Fractional Currency y los Coin Notes?',
         en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
       },
