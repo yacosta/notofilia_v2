@@ -3587,7 +3587,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       front: '/images/catalog/united-states/united-states-federal-reserve-note-10-dollars-series-1934a-hawaii-l45104670b-front.jpg',
       back: '/images/catalog/united-states/united-states-federal-reserve-note-10-dollars-series-1934a-hawaii-l45104670b-back.jpg',
       width: 1024,
-      height: 682,
+      height: 576,
     },
     title: {
       es: '10 dólares · HAWAII · Serie 1934 A',
