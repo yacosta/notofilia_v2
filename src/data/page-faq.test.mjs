@@ -44,5 +44,10 @@ describe('FAQ copy for guides and country pages', () => {
     assert.match(esText, /Osmeña–Guevara/);
     assert.match(enText, /Roxas–Guevara/);
     assert.match(esText, /no tienen ejemplar aquí/);
+    const missingEs = es.find((item) => item.question.includes('denominaciones'))?.answer ?? '';
+    const missingEn = en.find((item) => item.question.includes('missing'))?.answer ?? '';
+    assert.match(missingEs, /^El 10 \(Washington, P#97\), el 50/);
+    assert.match(missingEn, /^The 10-peso \(Washington, P#97\)/);
+    assert.doesNotMatch(missingEs, /^Ocho certificados/);
   });
 });
