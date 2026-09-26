@@ -1,23 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="flag-us-13" viewBox="0 0 640 480">
-  <path fill="#b22234" d="M0 0h640v480H0z"/>
-  <path fill="#fff" d="M0 36.923h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640v36.923H0zm0 73.846h640V480H0z"/>
-  <path fill="#3c3b6e" d="M0 0h258.462v258.462H0z"/>
-  <defs>
-    <path id="star" d="m0-12 2.69 8.29h8.72L4.36 1.42l2.69 8.29L0 4.58l-7.05 5.13 2.69-8.29-7.05-5.13h8.72z"/>
-  </defs>
-  <g fill="#fff">
-    <use href="#star" transform="translate(129.231 39.231)"/>
-    <use href="#star" transform="translate(171.056 49.54)"/>
-    <use href="#star" transform="translate(203.3 78.105)"/>
-    <use href="#star" transform="translate(218.575 118.383)"/>
-    <use href="#star" transform="translate(213.382 161.145)"/>
-    <use href="#star" transform="translate(188.912 196.597)"/>
-    <use href="#star" transform="translate(150.769 216.616)"/>
-    <use href="#star" transform="translate(107.693 216.616)"/>
-    <use href="#star" transform="translate(69.55 196.597)"/>
-    <use href="#star" transform="translate(45.08 161.145)"/>
-    <use href="#star" transform="translate(39.887 118.383)"/>
-    <use href="#star" transform="translate(55.162 78.105)"/>
-    <use href="#star" transform="translate(87.406 49.54)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1235" height="650" viewBox="0 0 1235 650" version="1.1" id="svg890" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<rect width="1235" height="650" fill="#bf0a30" id="rect860" x="0" y="0" style="stroke-width:0.5" />
+<g fill="#ffffff" id="g888" transform="scale(0.5)">
+<g id="Stripes3">
+<rect id="Stripe" width="2470" height="100" y="100" x="0" />
+<use xlink:href="#Stripe" y="200" id="use863" x="0" width="100%" height="100%" />
+<use xlink:href="#Stripe" y="400" id="use865" x="0" width="100%" height="100%" />
+</g>
+<use xlink:href="#Stripes3" y="600" id="use868" x="0" width="100%" height="100%" />
+<rect width="823.33331" height="700" fill="#00205B" id="rect870" x="0" y="0" />
+<g transform="translate(411.66667,350)" id="g886">
+<path transform="matrix(0.047,0,0,0.047,0,-233)" id="Star" d="M 0,-1000 -587.78525,809.01699 951.05652,-309.01699 H -951.05652 L 587.78525,809.01699 Z" />
+<g id="Stars4">
+<use xlink:href="#Star" transform="rotate(27.692308)" id="use873" x="0" y="0" width="100%" height="100%" />
+<use xlink:href="#Star" transform="rotate(55.384615)" id="use875" x="0" y="0" width="100%" height="100%" />
+<use xlink:href="#Star" transform="rotate(83.076923)" id="use877" x="0" y="0" width="100%" height="100%" />
+<use xlink:href="#Star" transform="rotate(110.76923)" id="use879" x="0" y="0" width="100%" height="100%" />
+</g>
+<use xlink:href="#Stars4" transform="rotate(110.76923)" id="use882" x="0" y="0" width="100%" height="100%" />
+<use xlink:href="#Stars4" transform="rotate(-138.46154)" id="use884" x="0" y="0" width="100%" height="100%" />
+</g>
+</g>
 </svg>

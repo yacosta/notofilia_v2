@@ -467,6 +467,10 @@ body.mega-drawer-lock {
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-bg) 18%, transparent);
 }
 
+.mega-flag--wide {
+  height: 0.658rem;
+}
+
 .mega-flag-img {
   display: block;
   width: 100%;
