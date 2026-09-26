@@ -23,7 +23,7 @@ export const hardTimesSeriesCopy = {
   es: {
     metaTitle: 'Fichas Hard Times · EE. UU. | Notofilia',
     metaDescription:
-      'Fichas Hard Times de 1832–1844: el HT-34 de 1837 y la store card de John J. Adams (HT-181, hacia 1835).',
+      'Fichas Hard Times de 1832–1844: el HT-10A de 1834, el HT-34 de 1837 y la store card de John J. Adams (HT-181).',
     kicker: 'Estados Unidos · Numismática',
     title: 'Fichas Hard Times',
     breadcrumbCurrent: 'Fichas Hard Times',
@@ -33,7 +33,7 @@ export const hardTimesSeriesCopy = {
       'Mapa ilustrado de los Estados Unidos en el Pánico de 1837: tierras del Oeste, Filadelfia, Nueva Orleans y una ficha Hard Times de 1837',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Dos fichas sin serial y sin encapsular: el HT-34 (Low-20) de 1837, burro y tortuga SUB TREASURY, y el HT-181 (Low-300) de John J. Adams, hacia 1835, jabalí y «Cash for Bristles». Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
+      'Tres fichas sin serial y sin encapsular: el HT-10A (Low-9B) de 1834, jabalí y busto de Jackson; el HT-34 (Low-20) de 1837, burro y tortuga SUB TREASURY; y el HT-181 (Low-300) de John J. Adams, hacia 1835, jabalí y «Cash for Bristles». Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
     viewCoin: 'Ver la ficha',
     rarityTitle: 'Escala de rareza (Rulau / Fuld)',
     rarityIntro:
@@ -47,7 +47,7 @@ export const hardTimesSeriesCopy = {
   en: {
     metaTitle: 'Hard Times tokens · United States | Notofilia',
     metaDescription:
-      'Hard Times tokens of 1832–1844: the 1837 HT-34 and the John J. Adams store card (HT-181, circa 1835).',
+      'Hard Times tokens of 1832–1844: the 1834 HT-10A, the 1837 HT-34, and the John J. Adams store card (HT-181).',
     kicker: 'United States · Numismatics',
     title: 'Hard Times tokens',
     breadcrumbCurrent: 'Hard Times tokens',
@@ -57,7 +57,7 @@ export const hardTimesSeriesCopy = {
       'Illustrated map of the United States in the Panic of 1837: Western lands, Philadelphia, New Orleans, and an 1837 Hard Times token',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'Two tokens with no serial and unslabbed: the 1837 HT-34 (Low-20), jackass and SUB TREASURY tortoise, and John J. Adams’s HT-181 (Low-300), circa 1835, boar and “Cash for Bristles.” Open each record for obverse, reverse, and catalog facts.',
+      'Three tokens with no serial and unslabbed: the 1834 HT-10A (Low-9B), running boar and Jackson bust; the 1837 HT-34 (Low-20), jackass and SUB TREASURY tortoise; and John J. Adams’s HT-181 (Low-300), circa 1835, boar and “Cash for Bristles.” Open each record for obverse, reverse, and catalog facts.',
     viewCoin: 'Open the token page',
     rarityTitle: 'Rarity scale (Rulau / Fuld)',
     rarityIntro:
@@ -178,8 +178,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
         en: 'Without syndicated cartoons, copper carried the argument to the counter. Jackson is the usual target: one undated token shows him emerging from a chest with sword and money bag, a Whig charge that he had joined military power to control of the Treasury. The motto Executive Experiment mocks his handling of the banks; the reverse often carries a “stubborn” donkey. The pun on Jackson (jackass) was later popularized by Thomas Nast as the Democratic Party’s symbol. The HT-34 in this case reads I FOLLOW IN THE STEPS OF MY ILLUSTRIOUS PREDECESSOR — a parody, not a verbatim inaugural sentence — and loads a tortoise with the SUB TREASURY chest; HT-33 reads Executive Experiment instead of Executive Financiering.',
       },
       {
-        es: 'Circulan también Daniel Webster y William Henry Harrison. Las fichas whig usan un barco —la nave del Estado—, a veces naufragada, metáfora de la economía bajo Van Buren. Un fénix sobre llamas promete que el hard money renacerá de los shinplasters. El Running Boar (HT-9 a HT-13) parodia la política jacksoniana y sobrevive en cantidad.',
-        en: 'Tokens for Daniel Webster and William Henry Harrison also circulated. Whig pieces use a ship — the ship of state — sometimes wrecked, a metaphor for the economy under Van Buren. A phoenix over flames promises that hard currency will rise from shinplasters. The Running Boar (HT-9 through HT-13) parodies Jacksonian policy and survives in quantity.',
+        es: 'Circulan también Daniel Webster y William Henry Harrison. Las fichas whig usan un barco —la nave del Estado—, a veces naufragada, metáfora de la economía bajo Van Buren. Un fénix sobre llamas promete que el hard money renacerá de los shinplasters. El Running Boar (HT-9 a HT-13) parodia la política jacksoniana. Esta vitrina documenta un ejemplar de 1834 atribuido como HT-10A (Low-9B), latón plateado, distinto del jabalí publicitario de John J. Adams.',
+        en: 'Tokens for Daniel Webster and William Henry Harrison also circulated. Whig pieces use a ship — the ship of state — sometimes wrecked, a metaphor for the economy under Van Buren. A phoenix over flames promises that hard currency will rise from shinplasters. The Running Boar (HT-9 through HT-13) parodies Jacksonian policy. This case records an 1834 example attributed as HT-10A (Low-9B), silvered brass, distinct from John J. Adams’s advertising boar.',
       },
     ],
   },
@@ -281,8 +281,8 @@ export const hardTimesNarrative: HardTimesSection[] = [
     },
     paragraphs: [
       {
-        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando escaseó el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería propuesta. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-34 de 1837 y la store card HT-181 de John J. Adams fotografiados en la colección.',
-        en: 'Hard Times tokens show how private trade invented small change when federal metal ran short. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the tortoise of the proposed Sub-Treasury. This case does not price the market or republish quotes; it records the photographed 1837 HT-34 and the John J. Adams HT-181 store card.',
+        es: 'Las fichas Hard Times muestran cómo el comercio privado inventó menuda cuando escaseó el metal federal. Legalmente, el NOT ONE CENT y el cuproníquel de Feuchtwanger marcan el límite que el Congreso cerró en 1864. Políticamente, el cobre es un documento de la retórica jacksoniana: de la súplica abolicionista a la tortuga de la Sub-Tesorería propuesta. Esta vitrina no tasa el mercado ni reproduce cotizaciones; documenta el HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams fotografiados en la colección.',
+        en: 'Hard Times tokens show how private trade invented small change when federal metal ran short. Legally, the NOT ONE CENT tokens and Feuchtwanger’s cupronickel mark the line Congress closed in 1864. Politically, the copper is a document of Jacksonian rhetoric: from the abolitionist plea to the tortoise of the proposed Sub-Treasury. This case does not price the market or republish quotes; it records the photographed 1834 HT-10A, the 1837 HT-34, and the John J. Adams HT-181 store card.',
       },
     ],
   },

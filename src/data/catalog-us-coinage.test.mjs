@@ -82,8 +82,8 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(seriesPage, /USA_COINAGE_PATH/);
     assert.match(seriesPage, /t\.coinageLead/);
     assert.doesNotMatch(seriesPage, /target="_blank"/);
-    assert.match(numismatica, /Abren cinco casas/);
-    assert.match(numismatica, /Five houses are open/);
+    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos y Países Bajos/);
+    assert.match(numismatica, /the United States, Lazarettos, and the Netherlands open the row/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
   });
@@ -160,5 +160,33 @@ describe('US Hard Times HT-181 John J. Adams token', () => {
     assert.match(holdings, /id: 'us-c1835-ht-181-john-j-adams', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-c1835-ht-181-low-300/);
     assert.match(hardTimesEssay, /John J\. Adams/);
+  });
+});
+
+describe('US Hard Times HT-10A 1834 Running Boar', () => {
+  it('registers a bilingual no-serial silvered-brass token, distinct from HT-9 and HT-10', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/', 'en'),
+      '/en/collection/united-states-numismatics/ht-10a-1834-running-boar/',
+    );
+    assert.match(data, /id: 'ht-10a-1834-jabali'/);
+    assert.match(data, /PERISH CREDIT/);
+    assert.match(data, /MY SUBSTITUTE FOR THE U\.S\. BANK/);
+    assert.match(data, /MY \/ THIRD HEAT/);
+    assert.match(data, /DeWitt CE-1834-10/);
+    assert.match(data, /W-10-210b/);
+    assert.match(data, /PCGS 77621/);
+    assert.match(data, /hardtimestokens.com\/HT1HT20.html/);
+    assert.match(data, /1834-ht-10a-running-boar-ms/);
+    assert.match(data, /no_serial_reason:\n      'Private 1834 Hard Times political token/);
+    assert.match(data, /Latón plateado/);
+    assert.match(data, /HT-9/);
+    assert.match(data, /united-states-hard-times-token-ht-10a-1834-front\.jpg/);
+    assert.doesNotMatch(data, /\$210/);
+    assert.doesNotMatch(data, /\$660/);
+    assert.doesNotMatch(data, /\$1,800/);
+    assert.match(holdings, /id: 'us-1834-ht-10a-jabali', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1834-ht-10a-low-9b/);
+    assert.match(hardTimesEssay, /HT-10A/);
   });
 });

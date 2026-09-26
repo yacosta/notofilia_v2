@@ -253,6 +253,16 @@ const ht181: GlossaryExample = {
   },
 };
 
+const ht10a: GlossaryExample = {
+  path: '/coleccion/estados-unidos-numismatica/ht-10a-1834-jabali/',
+  image: '/images/catalog/united-states/united-states-hard-times-token-ht-10a-1834-front.jpg',
+  title: { es: 'HT-10A · Hard Times · 1834', en: 'HT-10A · Hard Times · 1834' },
+  alt: {
+    es: 'Anverso de la ficha Hard Times HT-10A de 1834, jabalí al galope',
+    en: 'Obverse of the 1834 Hard Times HT-10A token, running boar',
+  },
+};
+
 const mpc10: GlossaryExample = {
   path: '/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
   image: '/images/catalog/united-states/united-states-military-payment-certificate-10-dollars-series-641-j01130273j-front.jpg',
@@ -441,16 +451,16 @@ export const glossaryArticles: GlossaryArticle[] = [
       es: [
         'La exonumia es el coleccionismo de objetos que parecen moneda o papel de pago pero no son curso legal federal: fichas, vales, scrip de cámara de comercio, medallas y papel de empresa. El término viene del inglés estadounidense y se usa aquí con precisión: el scrip de Baraboo de 1933 no es un Federal Reserve Note ni un certificado de plata. Es un vale al portador de la Cámara de Comercio, anunciado el 28 de junio de 1933 y redimible hasta el 1 de noviembre de ese año, diseñado por E. B. Trimpey (Shafer WI100).',
         'En Colombia el analogo más cercano en esta vitrina no es BanRep: el tiquete estudiantil de 15 centavos es papel de transporte, no un Pick. Los vales de lazareto son moneda de recinto, no de la república. Confundir exonumia con notafilia de banco central diluye ambas disciplinas. El scrip puede llevar serial y firmas —P. L. Gust y O. L. Gust en Baraboo— y aun así no obliga a un banco nacional. Tampoco es un remainder de banco obsoleto: el City Bank of New Haven sí fue un banco estatal; la Cámara de Baraboo no lo era.',
-        'Esta colección publica el 5¢ de John Ringling, serial A4895; el 10¢ de Chas. Ringling, A2844; el 15¢ de Al. T. Ringling, A2819; el 50¢ de A. C. Ringling, A1054; y el 1 dólar Ringling Bros., A2002. En metal, publica la ficha Hard Times HT-34 de 1837 (Low-20) y la store card de John J. Adams, HT-181 (Low-300), hacia 1835, ambas sin serial: la identidad es el objeto fotografiado, no un número impreso. La denominación de 25¢ de Baraboo espera serial o certificado antes de tener ficha de pieza. Nada de ese papel ni de esas fichas está a la venta.',
+        'Esta colección publica el 5¢ de John Ringling, serial A4895; el 10¢ de Chas. Ringling, A2844; el 15¢ de Al. T. Ringling, A2819; el 50¢ de A. C. Ringling, A1054; y el 1 dólar Ringling Bros., A2002. En metal, publica la ficha Hard Times HT-10A de 1834 (Low-9B), el HT-34 de 1837 (Low-20) y la store card de John J. Adams, HT-181 (Low-300), hacia 1835, las tres sin serial: la identidad es el objeto fotografiado, no un número impreso. La denominación de 25¢ de Baraboo espera serial o certificado antes de tener ficha de pieza. Nada de ese papel ni de esas fichas está a la venta.',
       ],
       en: [
         'Exonumia is the collecting of objects that look like money or payment paper but are not federal legal tender: tokens, vouchers, chamber-of-commerce scrip, medals, and company paper. The term comes from American English and is used here with precision: 1933 Baraboo scrip is not a Federal Reserve Note or a silver certificate. It is a Chamber of Commerce bearer voucher, announced on 28 June 1933 and redeemable through 1 November that year, designed by E. B. Trimpey (Shafer WI100).',
         'In Colombia the nearest analogue in this case is not BanRep: the 15-centavo student transport ticket is transport paper, not a Pick. Lazaretto tokens are compound money, not republican currency. Confusing exonumia with central-bank notaphily blurs both disciplines. Scrip may carry a serial and signatures — P. L. Gust and O. L. Gust at Baraboo — and still not bind a national bank. It is not an obsolete-bank remainder either: the City Bank of New Haven was a state bank; the Baraboo Chamber was not.',
-        'This collection publishes the John Ringling 5¢, serial A4895; the Chas. Ringling 10¢, A2844; the Al. T. Ringling 15¢, A2819; the A. C. Ringling 50¢, A1054; and the Ringling Bros. $1, A2002. In metal it publishes the 1837 Hard Times HT-34 token (Low-20) and the John J. Adams store card, HT-181 (Low-300), circa 1835, both without a serial: identity is the photographed object, not a printed number. The 25¢ Baraboo denomination waits for a serial or certificate before it receives a piece record. None of that paper or those tokens is for sale.',
+        'This collection publishes the John Ringling 5¢, serial A4895; the Chas. Ringling 10¢, A2844; the Al. T. Ringling 15¢, A2819; the A. C. Ringling 50¢, A1054; and the Ringling Bros. $1, A2002. In metal it publishes the 1834 Hard Times HT-10A token (Low-9B), the 1837 HT-34 (Low-20), and the John J. Adams store card, HT-181 (Low-300), circa 1835, all three without a serial: identity is the photographed object, not a printed number. The 25¢ Baraboo denomination waits for a serial or certificate before it receives a piece record. None of that paper or those tokens is for sale.',
       ],
     },
     baraboo5c,
-    [baraboo5c, ht34, ht181],
+    [baraboo5c, ht34, ht181, ht10a],
   ),
   article(
     'filigrana',
@@ -889,8 +899,8 @@ const extras: Partial<Record<StandaloneGlossarySlug, { es: string; en: string }>
     en: 'Anyone comparing a star with a 1970s–1990s asterisk is reading two factory conventions, not two different Picks. The 1994 Emberá record documents that mark on concrete serials. A replacement printage is not published from BanRep’s 1994 10,000-peso total (123.05 million), which mixes ordinary notes and stars.',
   },
   exonumia: {
-    es: 'El término exonumia cubre fichas metálicas y medallas que no son moneda de curso. En esta vitrina el HT-34 de 1837 y la store card HT-181 de John J. Adams (ambas sin serial) y el scrip de Baraboo de 1933 (con serial) ilustran los dos extremos. El 1 dólar de Dallas con sellos de Where’s George? sigue siendo un FRN de curso legal: no se clasifica aquí como exonumia, aunque los sellos lo documenten como objeto de seguimiento.',
-    en: 'Exonumia covers metallic tokens and medals that are not legal-tender coin. In this case the 1837 HT-34 and the John J. Adams HT-181 store card (both without a serial) and 1933 Baraboo scrip (with a serial) illustrate the two ends. The Dallas $1 with Where’s George? stamps remains a legal-tender FRN: it is not classed here as exonumia, even though the stamps document it as a tracking object.',
+    es: 'El término exonumia cubre fichas metálicas y medallas que no son moneda de curso. En esta vitrina el HT-10A de 1834, el HT-34 de 1837 y la store card HT-181 de John J. Adams (las tres sin serial) y el scrip de Baraboo de 1933 (con serial) ilustran los dos extremos. El 1 dólar de Dallas con sellos de Where’s George? sigue siendo un FRN de curso legal: no se clasifica aquí como exonumia, aunque los sellos lo documenten como objeto de seguimiento.',
+    en: 'Exonumia covers metallic tokens and medals that are not legal-tender coin. In this case the 1834 HT-10A, the 1837 HT-34, and the John J. Adams HT-181 store card (all three without a serial) and 1933 Baraboo scrip (with a serial) illustrate the two ends. The Dallas $1 with Where’s George? stamps remains a legal-tender FRN: it is not classed here as exonumia, even though the stamps document it as a tracking object.',
   },
   filigrana: {
     es: 'Una filigrana mal leída lleva a atribuir un retrato de Libertad a un tipo que no lo lleva, o a llamar filigrana a una ventana de polímero. Las fichas de polímero de esta colección describen ventana, no marca de agua. El papel ABNC de 1945 se cita aquí porque es algodón de banco central, el sustrato donde la filigrana tiene sentido.',

@@ -85,6 +85,11 @@ if (!usHt181) {
   throw new Error('Missing US Hard Times HT-181 token for mega-nav');
 }
 
+const usHt10a = coinById('ht-10a-1834-jabali');
+if (!usHt10a) {
+  throw new Error('Missing US Hard Times HT-10A token for mega-nav');
+}
+
 const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
 if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
@@ -386,6 +391,12 @@ export const megaNav: NavNode[] = [
                 es: usHt181.title.es,
                 en: usHt181.title.en,
                 href: usHt181.path,
+              },
+              {
+                id: 'us-ht-10a-1834-jabali',
+                es: usHt10a.title.es,
+                en: usHt10a.title.en,
+                href: usHt10a.path,
               },
             ],
           },
