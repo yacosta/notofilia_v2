@@ -23,6 +23,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/20-dollars-hawaii-1934a/'],
   },
   {
+    es: '/coleccion/estados-unidos/10-dolares-hawaii-1934a/',
+    en: '/collection/united-states/10-dollars-hawaii-1934a/',
+    aliases: ['/coleccion/united-states/10-dollars-hawaii-1934a/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1896/',
     en: '/collection/united-states/1-dollar-silver-certificate-1896/',
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1896/'],
@@ -61,6 +66,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/estados-unidos/2-dolares-serie-1917/',
     en: '/collection/united-states/2-dollars-series-1917/',
     aliases: ['/coleccion/united-states/2-dollars-series-1917/'],
+  },
+  {
+    es: '/coleccion/estados-unidos/5-dolares-serie-1907/',
+    en: '/collection/united-states/5-dollars-series-1907/',
+    aliases: ['/coleccion/united-states/5-dollars-series-1907/'],
   },
   {
     es: '/coleccion/estados-unidos/1-dolar-serie-1917/',
@@ -498,6 +508,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/1-dollar-hawaii-1935a/',
     '/en/coleccion/estados-unidos/20-dolares-hawaii-1934a/',
     '/en/coleccion/united-states/20-dollars-hawaii-1934a/',
+    '/en/coleccion/estados-unidos/10-dolares-hawaii-1934a/',
+    '/en/coleccion/united-states/10-dollars-hawaii-1934a/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1896/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1896/',
     '/en/coleccion/estados-unidos/2-dolares-certificado-plata-1896/',

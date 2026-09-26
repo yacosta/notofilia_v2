@@ -206,6 +206,14 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/1-dollar-series-1917/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/5-dolares-serie-1907/', 'en'),
+      '/en/collection/united-states/5-dollars-series-1907/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-hawaii-1934a/', 'en'),
+      '/en/collection/united-states/10-dollars-hawaii-1934a/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-serie-1934-chicago/', 'en'),
       '/en/collection/united-states/10-dollars-series-1934-chicago/',
     );
