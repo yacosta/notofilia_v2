@@ -4015,7 +4015,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       front: '/images/catalog/united-states/united-states-treasury-5-dollars-series-1907-woodchopper-m12980830-front.jpg',
       back: '/images/catalog/united-states/united-states-treasury-5-dollars-series-1907-woodchopper-m12980830-back.jpg',
       width: 1024,
-      height: 433,
+      height: 576,
     },
     title: {
       es: '5 dólares · United States Note · Serie 1907',
