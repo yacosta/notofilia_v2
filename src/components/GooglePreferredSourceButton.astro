@@ -12,24 +12,35 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
 ---
 
 {/*
-  Do not auto-load Subscribe with Google. publisher.js pulls ~200 KiB of gstatic
-  modules, unused preconnects, a Google Font, and third-party cookies into the
-  first-load audits. Offer a first-party deeplink; hydrate the official button
-  only after an explicit click.
+  The official Google button is the control visitors see. publisher.js still
+  loads from this footer (not the document head). The text link stays hidden
+  unless that script fails, and is the no-JS path via noscript.
 */}
 <div class="google-preferred-source" data-swg-root data-locale={locale}>
+  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale} data-swg-host></div>
   <a
     href={deeplink}
     target="_blank"
     rel="noopener noreferrer"
     class="google-preferred-source-link inline-flex min-h-11 items-center justify-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
     data-swg-fallback
+    hidden
   >
     {t.preferredSource}
     <NewWindowHint locale={locale} />
   </a>
-  <div google-add-preferred-source-btn data-theme="dark" data-lang={locale} hidden data-swg-host></div>
 </div>
+<noscript>
+  <a
+    href={deeplink}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex min-h-11 items-center justify-center font-sans text-[13px] text-cream underline decoration-gold-light/50"
+  >
+    {t.preferredSource}
+    <NewWindowHint locale={locale} />
+  </a>
+</noscript>
 
 <style>
   .google-preferred-source {
@@ -126,29 +137,21 @@ const deeplink = 'https://www.google.com/preferences/source?q=notofilia.com';
     if (root.dataset.swgLoading === '1' || root.dataset.swgReady === '1') return;
 
     root.dataset.swgLoading = '1';
+    fallback.hidden = true;
+    host.hidden = false;
     try {
       await loadSwgPublisher();
-      fallback.hidden = true;
-      host.hidden = false;
       lockPreferredSourceFrame(host);
       root.dataset.swgReady = '1';
     } catch {
-      // Keep the first-party deeplink if Google's script fails.
+      host.hidden = true;
+      fallback.hidden = false;
     } finally {
       delete root.dataset.swgLoading;
     }
   }
 
   document.querySelectorAll<HTMLElement>('[data-swg-root]').forEach((root) => {
-    const fallback = root.querySelector('[data-swg-fallback]');
-    if (!(fallback instanceof HTMLElement)) return;
-    fallback.addEventListener(
-      'click',
-      (event) => {
-        event.preventDefault();
-        void upgradePreferredSource(root);
-      },
-      { once: true },
-    );
+    void upgradePreferredSource(root);
   });
 </script>
