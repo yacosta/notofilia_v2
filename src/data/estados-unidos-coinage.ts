@@ -296,9 +296,9 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       front: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-front.jpg',
       back: '/images/catalog/united-states/united-states-hard-times-token-ht-34-1837-back.jpg',
       width: 1800,
-      height: 599,
+      height: 900,
       faceWidth: 1024,
-      faceHeight: 682,
+      faceHeight: 1024,
     },
     heading: {
       es: 'Ficha Hard Times de 1837 — HT-34 / Low-20',
