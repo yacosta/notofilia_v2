@@ -274,18 +274,10 @@ export const news: NewsItem[] = newsArticles.map((item) => ({
   sourceUrl: item.sourceUrl ?? '',
 }));
 
-export const footerAbout = [
+export const footerSite = [
   { href: ABOUT_PATH, es: 'Sobre Notofilia', en: 'About Notofilia' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
-  {
-    href: COMPARISON_PATH,
-    es: 'Notofilia vs. otros catálogos',
-    en: 'Notofilia vs. other catalogs',
-  },
   { href: '/contacto/', es: 'Contacto', en: 'Contact' },
-] as const;
-
-export const footerLegal = [
   {
     href: '/politica-privacidad-cookies/',
     es: 'Política de privacidad y cookies',

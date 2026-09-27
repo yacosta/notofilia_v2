@@ -42,10 +42,10 @@ import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
 import { IDENTIFY_PATH } from '../data/identify';
 import { TOOLS_PATH } from '../data/reference-tools';
-import { footerLinksFromNav } from './footer-nav';
+import { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
 export type { FooterLink } from './footer-nav';
-export { footerLinksFromNav } from './footer-nav';
+export { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
 export type NavNode = {
   id: string;
@@ -470,6 +470,6 @@ export const primaryNav = megaNav.map(({ href, es, en }) => ({
 
 const [navNotafilia, navNumismatica, navRecursos] = megaNav;
 
-export const footerNotafilia = footerLinksFromNav(navNotafilia?.children);
-export const footerNumismatica = footerLinksFromNav(navNumismatica?.children);
+export const footerNotafilia = footerTopLevelLinks(navNotafilia?.children);
+export const footerNumismatica = footerTopLevelLinks(navNumismatica?.children);
 export const footerResources = footerLinksFromNav(navRecursos?.children);

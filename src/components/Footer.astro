@@ -3,11 +3,10 @@ import NewWindowHint from './NewWindowHint.astro';
 import GooglePreferredSourceButton from './GooglePreferredSourceButton.astro';
 import {
   copy,
-  footerAbout,
-  footerLegal,
   footerNotafilia,
   footerNumismatica,
   footerResources,
+  footerSite,
   localizePath,
   megaNav,
   statsLine,
@@ -27,6 +26,7 @@ const catalogColumns = [
   { id: 'notafilia', title: navNotafilia[locale], items: footerNotafilia },
   { id: 'numismatica', title: navNumismatica[locale], items: footerNumismatica },
   { id: 'recursos', title: navRecursos[locale], items: footerResources },
+  { id: 'sitio', title: t.site, items: footerSite },
 ];
 
 function itemLabel(item: FooterLink) {
@@ -59,38 +59,6 @@ function itemLabel(item: FooterLink) {
             </div>
           ))
         }
-        <div>
-          <p class="mb-2.5 mt-0 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.about}</p>
-          <ul class="m-0 list-none p-0">
-            {
-              footerAbout.map((item) => (
-                <li>
-                  <a
-                    class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                    href={localizePath(item.href, locale)}
-                  >
-                    {item[locale]}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-          <p class="mb-2.5 mt-7 font-sans text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{t.legal}</p>
-          <ul class="m-0 list-none p-0">
-            {
-              footerLegal.map((item) => (
-                <li>
-                  <a
-                    class="inline-flex min-h-11 items-center text-cream-soft no-underline hover:text-cream"
-                    href={localizePath(item.href, locale)}
-                  >
-                    {item[locale]}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
       </div>
     </nav>
 
