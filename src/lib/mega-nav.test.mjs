@@ -303,7 +303,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
     assert.match(usBlock, /children:/);
-    assert.match(source, /export const footerNumismatica = footerLinksFromNav\(navNumismatica\?\.children\)/);
+    assert.match(source, /export const footerNumismatica = footerTopLevelLinks\(navNumismatica\?\.children\)/);
   });
 });
 
