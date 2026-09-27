@@ -77,6 +77,7 @@ export const copy = {
     resources: 'Recursos',
     site: 'Sitio',
     facebook: 'Facebook',
+    x: 'X',
     preferredSource: 'Añadir Notofilia como fuente preferida de Google',
     copyright: 'Copyright 2026 Notofilia. Todos los derechos reservados.',
     ownership:
@@ -178,6 +179,7 @@ export const copy = {
     resources: 'Resources',
     site: 'Site',
     facebook: 'Facebook',
+    x: 'X',
     preferredSource: 'Add Notofilia as a Google preferred source',
     copyright: 'Copyright 2026 Notofilia. All rights reserved.',
     ownership:
