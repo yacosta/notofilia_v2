@@ -99,10 +99,17 @@ function itemLabel(item: FooterLink) {
         href="https://www.facebook.com/NOTOFILIA"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex min-h-11 items-center justify-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
+        class="inline-flex size-11 items-center justify-center"
       >
-        {t.facebook}
-        <NewWindowHint locale={locale} />
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="12" fill="#ffffff"></circle>
+          <path
+            fill="#1877F2"
+            d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073C0 18.062 4.388 23.027 10.125 23.927v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+          ></path>
+        </svg>
+        <span class="footer-icon-name">{t.facebook}</span>
+        <NewWindowHint locale={locale} visuallyHidden />
       </a>
       <GooglePreferredSourceButton locale={locale} />
       <span class="font-sans text-[13px] tracking-[0.04em] text-cream-soft">{t.copyright}</span>
@@ -131,3 +138,13 @@ function itemLabel(item: FooterLink) {
     </div>
   </div>
 </footer>
+
+<style>
+  .footer-icon-name {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>
