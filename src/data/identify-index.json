@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T00:51:24.953Z",
+  "generatedAt": "2026-09-27T03:39:34.897Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4135,6 +4135,45 @@
       "title": {
         "es": "Life Is Beautiful / LIFE SPRAY · 5/200",
         "en": "Life Is Beautiful / LIFE SPRAY · 5/200"
+      }
+    },
+    {
+      "pieceId": "10-dolares-certificado-oro-1922",
+      "face": "front",
+      "hash": "028e984400b68601",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-certificado-oro-1922/",
+      "pick": "P#274(1) · Fr. 1173",
+      "image": "/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-composite.jpg",
+      "title": {
+        "es": "10 dólares · Certificado de oro · Serie 1922",
+        "en": "$10 · Gold Certificate · Series 1922"
+      }
+    },
+    {
+      "pieceId": "10-dolares-certificado-oro-1922",
+      "face": "front",
+      "hash": "505a968acc8e5b94",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-certificado-oro-1922/",
+      "pick": "P#274(1) · Fr. 1173",
+      "image": "/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-front.jpg",
+      "title": {
+        "es": "10 dólares · Certificado de oro · Serie 1922",
+        "en": "$10 · Gold Certificate · Series 1922"
+      }
+    },
+    {
+      "pieceId": "10-dolares-certificado-oro-1922",
+      "face": "back",
+      "hash": "544d45848ed44d94",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-certificado-oro-1922/",
+      "pick": "P#274(1) · Fr. 1173",
+      "image": "/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-back.jpg",
+      "title": {
+        "es": "10 dólares · Certificado de oro · Serie 1922",
+        "en": "$10 · Gold Certificate · Series 1922"
       }
     },
     {

@@ -197,8 +197,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Paper backed by Treasury gold, from the BEP’s first issues to the 1933–1934 withdrawal.',
     },
     body: {
-      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency —esta última en su propio capítulo—, entre las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circuló solo entre bancos de la Reserva Federal, nunca entre el público. En esta colección se documentará el certificado de oro de 10 dólares de 1928.',
-      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency — the latter in its own chapter — as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. This collection will document the 1928 $10 Gold Certificate.',
+      es: 'El BEP sitúa en 1865 los primeros Gold Certificates, junto con la Fractional Currency —esta última en su propio capítulo—, entre las primeras emisiones producidas enteramente por la oficina. Representaban oro depositado en el Tesoro. El público dejó de canjearlos en 1933, al abandonarse el patrón oro; la serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 —el de mayor denominación que imprimió el BEP, entre el 18 de diciembre de 1934 y el 9 de enero de 1935— circuló solo entre bancos de la Reserva Federal, nunca entre el público. Ya tiene ficha el 10 dólares de la serie 1922, Fr. 1173, serial K53955033, números de serie grandes, firmas Speelman–White y retrato de Michael Hillegas. En esta colección se documentará también el certificado de oro de 10 dólares de 1928.',
+      en: 'The BEP dates the first Gold Certificates to 1865, with Fractional Currency — the latter in its own chapter — as one of the first issues produced entirely by the bureau. They represented gold held by the Treasury. The public lost the right to redeem them in 1933, when the United States left the gold standard; Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate — the highest denomination the BEP ever printed, from 18 December 1934 through 9 January 1935 — moved only between Federal Reserve Banks, never among the public. The Series 1922 $10, Fr. 1173, serial K53955033, large serial numbers, Speelman–White signatures, and a portrait of Michael Hillegas, already has a note page. This collection will also document the 1928 $10 Gold Certificate.',
     },
   },
   {
@@ -1396,6 +1396,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-serie-2003-atlanta'
   | '2-dolares-serie-2003-san-luis'
   | '5-dolares-serie-1907'
+  | '10-dolares-certificado-oro-1922'
   | '1-dolar-serie-1917'
   | '2-dolares-serie-1917'
   | '5-dolares-city-bank-new-haven'
@@ -6322,6 +6323,135 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Contexto de la imprenta federal; la superposición no es una emisión del BEP.',
           en: 'Context for the federal printer; the overlay is not a BEP issue.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-dolares-certificado-oro-1922',
+    chapterId: 'us-gold',
+    path: '/coleccion/estados-unidos/10-dolares-certificado-oro-1922/',
+    pathEn: '/collection/united-states/10-dollars-gold-certificate-1922/',
+    pick: 'P#274(1) · Fr. 1173',
+    serial: 'K53955033',
+    signatures: {
+      es: 'Harley V. Speelman (registrador del Tesoro) y Frank White (tesorero de los Estados Unidos)',
+      en: 'Harley V. Speelman (Register of the Treasury) and Frank White (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Bureau of Engraving and Printing, Washington, D.C. Serie impresa 1922. Certificado de oro de tamaño grande, sello y seriales en tinta oro. Posición de plancha E; el anverso lee E 200 abajo a la derecha. No se lee un número de plancha de reverso. USPaperMoney.Info sitúa el serial K53955033 (bloque K) en el tramo regular de números grandes Speelman–White K1–K60604000; parte de esa tabla es aproximada, a partir de ejemplares observados. Las firmas impresas son Speelman–White (Fr. 1173; P#274(1)). El serial es ordinario: no es bajo (1–100), no es fancy y no es estrella. Esta ficha no inventa una tirada ni una fecha de entrega para este serial. Numista y PCGS dan al tipo 189 × 79 mm; no es una medición de esta pieza.',
+      en: 'Bureau of Engraving and Printing, Washington, D.C. Printed Series 1922. Large-size Gold Certificate, with the seal and serials in gold ink. Plate position E; the face reads E 200 at lower right. No back-plate number is readable. USPaperMoney.Info places serial K53955033 (K block) in the regular large-serial Speelman–White range K1–K60604000; part of that table is approximate, from observed notes. The printed signatures are Speelman–White (Fr. 1173; P#274(1)). The serial is ordinary: it is not low (1–100), it is not fancy, and it is not a star. This record does not invent a printage or a delivery date for this serial. Numista and PCGS give the type as 189 × 79 mm. That is not a measurement of this piece.',
+    },
+    images: {
+      composite: '/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-composite.jpg',
+      front: '/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-front.jpg',
+      back: '/images/catalog/united-states/united-states-treasury-10-dollars-series-1922-gold-certificate-hillegas-k53955033-back.jpg',
+      width: 1024,
+      height: 576,
+    },
+    title: {
+      es: '10 dólares · Certificado de oro · Serie 1922',
+      en: '$10 · Gold Certificate · Series 1922',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de oro',
+      en: 'United States · Gold Certificate',
+    },
+    lead: {
+      es: 'Anverso de tamaño grande con Hillegas, la X en oro y sello del Tesoro; reverso naranja-oro con el águila. Fr. 1173, serial K53955033, Speelman–White.',
+      en: 'Large-size face with Hillegas, the gold X, and the Treasury seal; orange-gold back with the eagle. Fr. 1173, serial K53955033, Speelman–White.',
+    },
+    description: {
+      es: 'El 10 dólares de la serie 1922 (Pick 274(1), Friedberg 1173; Numista N#239482) es un Gold Certificate de tamaño grande: el último de esa denominación antes del recorte de 1929. El anverso, en negro con sello y seriales en tinta oro, centra el retrato de Michael Hillegas, primer tesorero de los Estados Unidos, rotulado MICHAEL HILLEGAS y FIRST TREASURER OF THE U.S. El arco superior certifica el depósito: THIS CERTIFIES THAT THERE HAVE BEEN DEPOSITED IN THE TREASURY OF THE UNITED STATES OF AMERICA. Bajo el título en blackletter, United States, se lee SERIES OF 1922 a ambos lados del retrato. A la izquierda, una X en oro lleva la cláusula de curso legal y cita las leyes del 14 de marzo de 1900, con sus enmiendas, y del 24 de diciembre de 1919. El sello festoneado del Tesoro, en oro, queda a la derecha, sobre WASHINGTON, D.C. Las firmas son las de Harley V. Speelman (Register of the Treasury) y Frank White (Treasurer of the United States). Los seriales en oro K53955033 se repiten abajo a la izquierda y arriba a la derecha. La letra de posición E figura a la izquierda; abajo a la derecha se lee E 200. El recuadro inferior promete TEN DOLLARS IN GOLD COIN, PAYABLE TO THE BEARER ON DEMAND. El reverso, en naranja-oro, lleva GOLD CERTIFICATE, THE UNITED STATES OF AMERICA y TEN DOLLARS, con un águila heráldica al centro de un haz de rayos y grandes 10 en las esquinas. Ese dorso es el que hace que los coleccionistas hablen de goldbacks. Los coleccionistas llaman horse blankets a estos billetes de formato grande, anteriores al recorte de 1929. Esta pieza de la colección, circulada y sin encapsular, se presenta fotografiada a ambas caras. No es un United States Note de sello rojo ni el certificado de oro de tamaño pequeño de 1928.',
+      en: 'The Series 1922 $10 (Pick 274(1), Friedberg 1173; Numista N#239482) is a large-size Gold Certificate: the last of that denomination before the 1929 reduction. The black face with a gold seal and gold serials centers the portrait of Michael Hillegas, first Treasurer of the United States, lettered MICHAEL HILLEGAS and FIRST TREASURER OF THE U.S. The upper arc certifies the deposit: THIS CERTIFIES THAT THERE HAVE BEEN DEPOSITED IN THE TREASURY OF THE UNITED STATES OF AMERICA. Under the blackletter title United States, SERIES OF 1922 is printed on both sides of the portrait. At left a gold X carries the legal-tender clause and cites the acts of 14 March 1900, as amended, and of 24 December 1919. The scalloped Treasury seal, in gold, sits at right, over WASHINGTON, D.C. The signatures are Harley V. Speelman’s (Register of the Treasury) and Frank White’s (Treasurer of the United States). Gold serials K53955033 repeat at lower left and upper right. Position letter E sits at left; E 200 is printed at lower right. The lower tablet promises TEN DOLLARS IN GOLD COIN, PAYABLE TO THE BEARER ON DEMAND. The orange-gold back carries GOLD CERTIFICATE, THE UNITED STATES OF AMERICA, and TEN DOLLARS, with a heraldic eagle at the center of a sunburst and large 10s in the corners. That back is why collectors speak of goldbacks. Collectors call these large-format notes horse blankets, the size in use before the 1929 reduction. This collection piece, circulated and unslabbed, is shown on both faces. It is not a red-seal United States Note, and it is not the small-size Gold Certificate of 1928.',
+    },
+    history: [
+      {
+        es: 'Los Gold Certificates representaban oro depositado en el Tesoro. El BEP sitúa los primeros en 1865. El público dejó de canjearlos en 1933, al abandonarse el patrón oro. La serie 1928 fue la última de tamaño pequeño en circulación general. El certificado de 100.000 dólares de la serie 1934 circuló solo entre bancos de la Reserva Federal.',
+        en: 'Gold Certificates represented gold held by the Treasury. The BEP dates the first of them to 1865. The public lost the right to redeem them in 1933, when the United States left the gold standard. Series 1928 was the last small-size type in general circulation. The Series 1934 $100,000 certificate moved only between Federal Reserve Banks.',
+      },
+      {
+        es: 'El 10 dólares de 1922 continúa el anverso de Hillegas y el reverso del águila heráldica del certificado de oro de 10 dólares de 1907. USPaperMoney.Info llama a 1907 el precedente y a la serie 1928 el siguiente 10 dólares de esta clase, ya de tamaño pequeño. Bank Note Museum parte el Pick 274 en 274(1), números grandes, y 274(2), números pequeños. Esta pieza es la de números grandes, Fr. 1173. Las estrellas de la serie van en un bloque D aparte, no en K. El año impreso es el de la serie. Speelman fue registrador del Tesoro de 1922 a 1927 y White tesorero de 1921 a 1928, de modo que la pareja coincide con el año de serie. Numista da al diseño 189 × 79 mm. Esa medida es del tipo, no de esta pieza. No se inventa una tirada de Fr. 1173.',
+        en: 'The 1922 $10 continues the Hillegas face and the heraldic-eagle back of the 1907 $10 Gold Certificate. USPaperMoney.Info calls 1907 the previous issue and Series 1928 the next $10 of this class, already small-size. Bank Note Museum splits Pick 274 into 274(1), large serials, and 274(2), small serials. This piece is the large-serial note, Fr. 1173. Stars of the series sit in a separate D block, not in K. The printed year is the series. Speelman was Register of the Treasury from 1922 to 1927 and White was Treasurer from 1921 to 1928, so the pairing matches the series year. Numista gives the design as 189 × 79 mm. That measurement belongs to the type, not to this piece. No Fr. 1173 printage is invented.',
+      },
+    ],
+    historyHeading: {
+      es: 'El 10 dólares de oro',
+      en: 'The gold $10',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 dólares Gold Certificate, serie 1922, Fr. 1173, serial K53955033: Hillegas, la X en oro, sello del Tesoro y plancha E 200.',
+      en: 'Face of the Series 1922 Gold Certificate $10, Fr. 1173, serial K53955033: Hillegas, the gold X, the Treasury seal, and plate E 200.',
+    },
+    backCaption: {
+      es: 'Reverso naranja-oro del 10 dólares, serie 1922, serial K53955033: GOLD CERTIFICATE, águila heráldica y grandes 10.',
+      en: 'Orange-gold back of the Series 1922 $10, serial K53955033: GOLD CERTIFICATE, the heraldic eagle, and large 10s.',
+    },
+    scarcity: {
+      es: 'Speelman–White con números de serie grandes es Fr. 1173 (P#274(1)). USPaperMoney.Info coloca el serial K53955033 en el tramo regular K1–K60604000. El contador 53955033 es un serial ordinario. Las estrellas de la serie no van en el bloque K. La variedad de números pequeños es P#274(2); Friedberg la numera Fr. 1173a, distinta de este ejemplar. La fotografía del reverso no deja leer el número de plancha de dorso, así que la pieza se ficha como Fr. 1173 y esta ficha no la identifica como mule. No se inventa un censo ni un premio de mercado.',
+      en: 'Speelman–White with large serial numbers is Fr. 1173 (P#274(1)). USPaperMoney.Info places serial K53955033 in the regular range K1–K60604000. Counter 53955033 is an ordinary serial. Stars of the series are not in the K block. The small-serial variety is P#274(2); Friedberg numbers it Fr. 1173a, which this piece is not. The back photograph does not show a readable back-plate number, so the piece is recorded as Fr. 1173 and this record does not identify it as a mule. No census and no market premium are invented.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial K53955033. La pieza se presenta sin encapsular, sin número de certificado. No se republica aquí la tabla de población de PCGS para el tipo Fr. 1173.',
+      en: 'A PMG or PCGS census for serial K53955033 has not been independently verified. The note is shown unslabbed, with no certificate number. The PCGS population table for type Fr. 1173 is not republished here.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular; pliegue horizontal al centro; sin grado numérico a partir de las fotografías (colección privada)',
+      en: 'Circulated, unslabbed; horizontal center crease; no numerical grade from the photographs (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://www.uspapermoney.info/serials/g1922_d.html',
+        es: 'USPaperMoney.Info — Series 1922 $10 GC',
+        en: 'USPaperMoney.Info — Series 1922 $10 GC',
+        note: {
+          es: 'Hillegas al centro y águila heráldica al reverso. Números grandes Speelman–White: H13504001–H100000000 y K1–K60604000. Las estrellas van en bloque D. Parte de la tabla es aproximada.',
+          en: 'Hillegas at center and a heraldic eagle on the back. Large Speelman–White serials: H13504001–H100000000 and K1–K60604000. Stars are in the D block. Part of the table is approximate.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/239482',
+        es: 'Numista — 10 dólares, certificado de oro, serie 1922 (N#239482)',
+        en: 'Numista — 10 Dollars, Gold Certificate, Series 1922 (N#239482)',
+        note: {
+          es: 'P#274, Fr. 1173, Hillegas, Speelman–White, 189 × 79 mm. Medida del tipo. No se republican columnas de precio.',
+          en: 'P#274, Fr. 1173, Hillegas, Speelman–White, 189 × 79 mm. Type measurement. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-GOLD/USA0274.htm',
+        es: 'Bank Note Museum — P-274, certificado de oro de 10 dólares, 1922',
+        en: 'Bank Note Museum — P-274, 1922 $10 Gold Certificate',
+        note: {
+          es: 'Sello dorado; Hillegas. 274(1) números de serie grandes; 274(2) números pequeños.',
+          en: 'Gold seal; Hillegas. 274(1) large serial numbers; 274(2) small serial numbers.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/notefacts/detail/gold-certificates/fr-1173-1922-10-large-serial-numbers-gold-certificate/1104802',
+        es: 'PCGS NoteFacts — Fr. 1173, 1922 $10, números de serie grandes',
+        en: 'PCGS NoteFacts — Fr. 1173, 1922 $10, large serial numbers',
+        note: {
+          es: 'Fr. 1173, firmas Speelman y White, 189 × 79 mm. Esta ficha no republica cifras de población.',
+          en: 'Fr. 1173, Speelman and White signatures, 189 × 79 mm. This record does not republish population figures.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — historia',
+        en: 'U.S. Currency Education Program — history',
+        note: {
+          es: 'Los certificados de oro representaban metal del Tesoro. El público dejó de canjearlos en 1933.',
+          en: 'Gold certificates represented Treasury metal. The public lost the right to redeem them in 1933.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Primeros Gold Certificates en 1865. Recorte al tamaño pequeño en 1929. Esta pieza queda del lado grande de esa línea.',
+          en: 'First Gold Certificates in 1865. Reduction to small size in 1929. This piece sits on the large-size side of that line.',
         },
       },
     ],
