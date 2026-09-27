@@ -10,14 +10,34 @@ const generated = englishRedirects();
 // English glossary/news last segments 301 from old Spanish-slug EN URLs in one hop.
 Object.assign(generated, glossaryRedirects(), newsEnglishRedirects());
 
-export default defineConfig({
-  site: 'https://notofilia.com',
-  trailingSlash: 'always',
-  compressHTML: true,
-  build: {
-    inlineStylesheets: 'auto',
-  },
-  redirects: {
+/**
+ * `trailingSlash: 'always'` builds the same route for `/path` and `/path/`.
+ * Listing both is a router collision (a hard error in a later Astro).
+ * File-like sources (`contacto.dc.html`) stay unslashed; Astro does not append a slash to those.
+ * @param {string} from
+ */
+function redirectKey(from) {
+  if (from.endsWith('/')) return from;
+  const last = from.slice(from.lastIndexOf('/') + 1);
+  if (last.includes('.')) return from;
+  return `${from}/`;
+}
+
+/**
+ * @param {Record<string, string>} map
+ * @returns {Record<string, string>}
+ */
+function normalizeRedirects(map) {
+  /** @type {Record<string, string>} */
+  const out = {};
+  for (const [from, to] of Object.entries(map)) {
+    out[redirectKey(from)] = to;
+  }
+  return out;
+}
+
+/** Hand-written 301s. Applied after generated maps so a specific target wins the slash collision. */
+const explicitRedirects = {
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
     '/en/coleccion/numismatica/colombia': '/en/collection/colombia-numismatics/',
     '/coleccion/numismatica/paises-bajos': '/coleccion/paises-bajos-numismatica/',
@@ -96,23 +116,26 @@ export default defineConfig({
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
     '/en/blog/ringling-bros-barnum-bailey-circus/':
       '/en/collection/united-states/miscellaneous/baraboo-golden-jubilee-scrip-1933/',
-    '/blog/billetes-emergencia-segunda-guerra-mundial':
-      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
     '/blog/billetes-emergencia-segunda-guerra-mundial/':
-      '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
-    '/blog/world-war-ii-emergency-banknotes':
       '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
     '/blog/world-war-ii-emergency-banknotes/':
       '/coleccion/notafilia/billetes-emergencia-segunda-guerra-mundial/',
-    '/en/blog/world-war-ii-emergency-banknotes':
-      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     '/en/blog/world-war-ii-emergency-banknotes/':
-      '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
-    '/en/blog/billetes-emergencia-segunda-guerra-mundial':
       '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
     '/en/blog/billetes-emergencia-segunda-guerra-mundial/':
       '/en/collection/notaphily/world-war-ii-emergency-banknotes/',
-    ...generated,
+};
+
+export default defineConfig({
+  site: 'https://notofilia.com',
+  trailingSlash: 'always',
+  compressHTML: true,
+  build: {
+    inlineStylesheets: 'auto',
+  },
+  redirects: {
+    ...normalizeRedirects(generated),
+    ...normalizeRedirects(explicitRedirects),
   },
   vite: {
     plugins: [
