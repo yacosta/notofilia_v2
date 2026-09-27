@@ -360,6 +360,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', en: '/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/' },
   { es: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', en: '/collection/colombia-numismatics/2-reales-cartagena-1812-1814/' },
   { es: '/coleccion/colombia-numismatica/2-centavos-lazareto-1921/', en: '/collection/colombia-numismatics/2-centavos-lazareto-1921/' },
+  { es: '/coleccion/colombia-numismatica/50-centavos-lazareto-1931/', en: '/collection/colombia-numismatics/50-centavos-lazareto-1931/' },
   { es: '/coleccion/colombia-numismatica/catalogo/', en: '/collection/colombia-numismatics/catalog/' },
   { es: '/coleccion/colombia-numismatica/', en: '/collection/colombia-numismatics/' },
   {
@@ -617,6 +618,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
     '/en/coleccion/colombia-numismatica/1-4-real-santa-marta-1820/',
     '/en/coleccion/colombia-numismatica/2-centavos-lazareto-1921/',
+    '/en/coleccion/colombia-numismatica/50-centavos-lazareto-1931/',
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',
     '/en/coleccion/colombia/catalogo/',

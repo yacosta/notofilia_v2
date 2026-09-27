@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('50-centavos-lazareto-1931');
+if (!piece) throw new Error('Missing Lazareto 1931 50 centavos');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />

@@ -9,7 +9,9 @@ import { LAZARETTOS_PATH } from '../../data/lazarettos';
 import {
   LAZARETTO_1921_COMPOSITE,
   LAZARETTO_1921_HOLDING_ID,
+  LAZARETTO_1931_HOLDING_ID,
   LAZARETTOS_NUMISMATICS_HERO,
+  lazarettoCardAlt,
   lazarettosNumismaticsCopy,
   lazarettosNumismaticsPath,
 } from '../../data/lazarettos-numismatics';
@@ -31,11 +33,15 @@ const pathname = lazarettosNumismaticsPath(locale);
 const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
 const caseHref = localizePath(LAZARETTOS_PATH, locale);
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
-const holding = coinagePieceById(LAZARETTO_1921_HOLDING_ID);
-if (!holding) {
-  throw new Error(`Missing lazaretto holding ${LAZARETTO_1921_HOLDING_ID}`);
-}
+const holdingIds = [LAZARETTO_1921_HOLDING_ID, LAZARETTO_1931_HOLDING_ID] as const;
+const holdings = holdingIds.map((id) => {
+  const piece = coinagePieceById(id);
+  if (!piece) throw new Error(`Missing lazaretto holding ${id}`);
+  return piece;
+});
+const holding = holdings[0];
 const holdingHref = coinagePiecePath(holding, locale);
+const holding1931Href = coinagePiecePath(holdings[1], locale);
 const hero = LAZARETTOS_NUMISMATICS_HERO[locale];
 const ogImage = hero.src;
 const pageUrl = new URL(pathname, SITE_URL).href;
@@ -115,27 +121,29 @@ const jsonLd = {
         </h2>
         <p class="mb-6 mt-0 max-w-[46rem] text-[17px] leading-[1.6] text-cream-dim">{t.holdingIntro}</p>
         <ol class:list={['m-0', CATALOG_PIECE_GRID]} aria-label={t.holdingAria}>
-          <li class="min-w-0">
-            <a
-              href={holdingHref}
-              class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-            >
-              <CatalogThumb
-                src={holding.images.composite}
-                alt={t.holdingImageAlt}
-                width={LAZARETTO_1921_COMPOSITE.width}
-                height={LAZARETTO_1921_COMPOSITE.height}
-                class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-              />
-              <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                {holding.title[locale]}
-              </h3>
-              <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                {holding.year} · {holding.metal[locale]} · {holding.mint[locale]}
-              </p>
-              <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCoin} →</span>
-            </a>
-          </li>
+          {holdings.map((piece) => (
+            <li class="min-w-0">
+              <a
+                href={coinagePiecePath(piece, locale)}
+                class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+              >
+                <CatalogThumb
+                  src={piece.images.composite}
+                  alt={lazarettoCardAlt(piece.id, locale)}
+                  width={LAZARETTO_1921_COMPOSITE.width}
+                  height={LAZARETTO_1921_COMPOSITE.height}
+                  class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                />
+                <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                  {piece.title[locale]}
+                </h3>
+                <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                  {piece.year} · {piece.metal[locale]} · {piece.mint[locale]}
+                </p>
+                <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCoin} →</span>
+              </a>
+            </li>
+          ))}
         </ol>
       </section>
 
@@ -144,6 +152,9 @@ const jsonLd = {
       <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
         <a href={holdingHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
           {t.holdingCta}
+        </a>
+        <a href={holding1931Href} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.holdingCta1931}
         </a>
         <a href={caseHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
           {t.caseCta}
