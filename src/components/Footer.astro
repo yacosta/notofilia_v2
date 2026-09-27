@@ -95,6 +95,15 @@ function itemLabel(item: FooterLink) {
     </nav>
 
     <div class="flex flex-col items-center gap-2 border-t border-line pt-8 text-center">
+      <a
+        href="https://www.facebook.com/NOTOFILIA"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex min-h-11 items-center justify-center font-sans text-[13px] text-cream underline decoration-gold-light/50 hover:text-gold-light"
+      >
+        {t.facebook}
+        <NewWindowHint locale={locale} />
+      </a>
       <GooglePreferredSourceButton locale={locale} />
       <span class="font-sans text-[13px] tracking-[0.04em] text-cream-soft">{t.copyright}</span>
       <span class="max-w-full font-sans italic text-[15px] text-cream-dim">{t.ownership}</span>
