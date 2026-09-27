@@ -75,14 +75,15 @@ describe('mobile chrome patch', () => {
 });
 
 describe('PageSpeed-oriented build settings', () => {
-  it('inlines stylesheets automatically and loads Subscribe with Google only on click', () => {
+  it('inlines stylesheets automatically and shows the Google preferred-source button without a click', () => {
     assert.match(astroConfig, /compressHTML:\s*true/);
     assert.match(astroConfig, /inlineStylesheets:\s*'auto'/);
     assert.doesNotMatch(layout, /publisher\.js/);
     assert.doesNotMatch(googlePreferred, /requestIdleCallback/);
     assert.match(googlePreferred, /loadSwgPublisher/);
     assert.match(googlePreferred, /data-swg-fallback/);
-    assert.match(googlePreferred, /preventDefault/);
+    assert.match(googlePreferred, /upgradePreferredSource\(root\)/);
+    assert.doesNotMatch(googlePreferred, /preventDefault/);
   });
 
   it('sets long-lived cache headers for hashed assets and fonts', () => {
