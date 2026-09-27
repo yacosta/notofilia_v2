@@ -34,12 +34,13 @@ export const lazarettosNumismaticsCopy = {
       'Ilustración de las monedas de lazareto en Colombia: mapa, Caño de Loro, Contratación, Agua de Dios, el Hospital San Lázaro, monedas con la cruz de San Lázaro y la leyenda «Aislamiento también fue esperanza».',
     holdingHeading: 'En la colección',
     holdingIntro:
-      'Un ejemplar publicado: el 2 centavos de cuproníquel de 1921, labrado en Bogotá para el cordón de los lazaretos. Las demás denominaciones siguen sin ficha.',
-    holdingAria: 'Moneda de lazareto en la colección',
+      'Dos ejemplares publicados: el 2 centavos de cuproníquel de 1921 y un 50 centavos fechado 1931, con la cruz de los lazaretos. Esa fecha no está en KM, Hernández ni Restrepo. Las demás denominaciones siguen sin ficha.',
+    holdingAria: 'Monedas de lazareto en la colección',
     holdingImageAlt:
       'Anverso y reverso del 2 centavos de lazareto de 1921: cruz con LAZARETO y fecha, y el valor 2 entre ramos.',
     viewCoin: 'Abrir la ficha',
     holdingCta: 'Abrir la ficha del 2 centavos de 1921',
+    holdingCta1931: 'Abrir la ficha del 50 centavos de 1931',
     caseCta: 'Abrir la vitrina de lazarettos',
     numismaticaCta: 'Volver a numismática',
   },
@@ -60,12 +61,13 @@ export const lazarettosNumismaticsCopy = {
       'Panoramic illustration titled Lazaretto Coins of Colombia: a map, Caño de Loro (1784), Contratación (1835), Agua de Dios (1870), Hospital San Lázaro in Cartagena (1598), and coins with the cross of Saint Lazarus.',
     holdingHeading: 'In the collection',
     holdingIntro:
-      'One published piece: the 1921 cupronickel 2 centavos, struck at Bogotá for the lazaretto cordon. The other denominations still have no record.',
-    holdingAria: 'Lazaretto coin in the collection',
+      'Two published pieces: the 1921 cupronickel 2 centavos and a 50 centavos dated 1931, with the lazaretto cross. That date is not in KM, Hernández, or Restrepo. The other denominations still have no record.',
+    holdingAria: 'Lazaretto coins in the collection',
     holdingImageAlt:
       'Obverse and reverse of the 1921 lazaretto 2 centavos: the cross with LAZARETO and the date, and the value 2 inside a wreath.',
     viewCoin: 'Open the record',
     holdingCta: 'Open the 1921 2 centavos record',
+    holdingCta1931: 'Open the 1931 50 centavos record',
     caseCta: 'Open the lazarettos case',
     numismaticaCta: 'Back to numismatics',
   },
@@ -73,7 +75,29 @@ export const lazarettosNumismaticsCopy = {
 
 /** Composite of the 1921 2 centavos masters in catalog-src (1800×1200). */
 export const LAZARETTO_1921_HOLDING_ID = '2-centavos-lazareto-1921' as const;
+export const LAZARETTO_1931_HOLDING_ID = '50-centavos-lazareto-1931' as const;
 export const LAZARETTO_1921_COMPOSITE = { width: 1800, height: 1200 } as const;
+
+const lazarettoCardAlts = {
+  es: {
+    '2-centavos-lazareto-1921':
+      'Anverso y reverso del 2 centavos de lazareto de 1921: cruz con LAZARETO y fecha, y el valor 2 entre ramos.',
+    '50-centavos-lazareto-1931':
+      'Anverso y reverso del 50 centavos de lazareto fechado 1931: cruz con LAZARETO gastado y fecha, y el valor 50 entre ramos.',
+  },
+  en: {
+    '2-centavos-lazareto-1921':
+      'Obverse and reverse of the 1921 lazaretto 2 centavos: the cross with LAZARETO and the date, and the value 2 inside a wreath.',
+    '50-centavos-lazareto-1931':
+      'Obverse and reverse of the lazaretto 50 centavos dated 1931: the cross with worn LAZARETO and the date, and the value 50 inside a wreath.',
+  },
+} as const;
+
+export function lazarettoCardAlt(id: string, locale: Locale): string {
+  const alt = (lazarettoCardAlts[locale] as Record<string, string>)[id];
+  if (!alt) throw new Error(`Missing lazaretto card alt for ${id}`);
+  return alt;
+}
 
 export function lazarettosNumismaticsPath(locale: Locale): string {
   return locale === 'en' ? `/en${LAZARETTOS_NUMISMATICS_PATH_EN}` : LAZARETTOS_NUMISMATICS_PATH;

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T23:26:51.701Z",
+  "generatedAt": "2026-09-27T00:51:24.953Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -274,6 +274,45 @@
       "title": {
         "es": "2 centavos · Lazareto · 1921",
         "en": "2 centavos · Lazaretto · 1921"
+      }
+    },
+    {
+      "pieceId": "50-centavos-lazareto-1931",
+      "face": "front",
+      "hash": "0000337373330000",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-lazareto-1931/",
+      "pick": "Atribución pendiente · no es KM# 193.1",
+      "image": "/images/catalog/colombia/colombia-lazareto-50-centavos-1931-composite.jpg",
+      "title": {
+        "es": "50 centavos · Lazareto · 1931",
+        "en": "50 centavos · Lazaretto · 1931"
+      }
+    },
+    {
+      "pieceId": "50-centavos-lazareto-1931",
+      "face": "front",
+      "hash": "0116696963073208",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-lazareto-1931/",
+      "pick": "Atribución pendiente · no es KM# 193.1",
+      "image": "/images/catalog/colombia/colombia-lazareto-50-centavos-1931-front.jpg",
+      "title": {
+        "es": "50 centavos · Lazareto · 1931",
+        "en": "50 centavos · Lazaretto · 1931"
+      }
+    },
+    {
+      "pieceId": "50-centavos-lazareto-1931",
+      "face": "back",
+      "hash": "0a22656b5d51124c",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-lazareto-1931/",
+      "pick": "Atribución pendiente · no es KM# 193.1",
+      "image": "/images/catalog/colombia/colombia-lazareto-50-centavos-1931-back.jpg",
+      "title": {
+        "es": "50 centavos · Lazareto · 1931",
+        "en": "50 centavos · Lazaretto · 1931"
       }
     },
     {

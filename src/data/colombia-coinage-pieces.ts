@@ -11,7 +11,8 @@ export type ColombiaCoinagePieceId =
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
-  | '2-centavos-lazareto-1921';
+  | '2-centavos-lazareto-1921'
+  | '50-centavos-lazareto-1931';
 
 export type ColombiaCoinagePiece = {
   id: ColombiaCoinagePieceId;
@@ -456,6 +457,109 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Series de 1901, 1907, 1921 y 1928 para Agua de Dios, Contratación y Caño del Oro. El diseño de esta pieza no nombra uno de los tres.',
           en: 'The 1901, 1907, 1921, and 1928 series for Agua de Dios, Contratación, and Caño del Oro. This piece’s design names none of the three.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: LAZARETTOS_NUMISMATICS_PATH,
+        label: {
+          es: 'Numismática de los Lazaretos',
+          en: 'Numismatics of the Lazarettos',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-centavos-lazareto-1931',
+    path: `${COLOMBIA_COINAGE_PATH}50-centavos-lazareto-1931/`,
+    chapterId: 'republica',
+    year: '1931',
+    denomination: { es: '50 centavos', en: '50 centavos' },
+    metal: { es: 'No determinado en este ejemplar', en: 'Not determined on this specimen' },
+    mint: { es: 'Sin marca de ceca en el disco', en: 'No mint mark on the disc' },
+    reference: 'Atribución pendiente · no es KM# 193.1',
+    title: {
+      es: '50 centavos · Lazareto · 1931',
+      en: '50 centavos · Lazaretto · 1931',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Lazaretos',
+      en: 'Colombia-Numismatics · Lazarettos',
+    },
+    lead: {
+      es: 'Cincuenta centavos con la cruz de los lazaretos y la fecha 1931 en el disco. El diseño es de esa serie. KM, Hernández y Restrepo no listan ese año, y esta ficha no le asigna número.',
+      en: 'A 50 centavos with the lazaretto cross and the date 1931 on the disc. The design belongs to that series. KM, Hernández, and Restrepo do not list that year, and this record assigns it no number.',
+    },
+    description: {
+      es: 'Este disco lleva grabada la fecha 1931, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la cruz del tipo de lazareto. La palabra del centro está gastada: se leen con más claridad BA y RETO, resto de LAZARETO. El reverso muestra un 50 ornamental sobre CENTAVOS, dentro de una corona vegetal atada con lazo, y una estrella sobre el valor. Dos estrellas flanquean la fecha. Ese es el módulo de curso limitado al cordón de Agua de Dios, Contratación y Caño del Oro. El 50 centavos nacional de 1931 es otra moneda: KM# 193.1, plata .900, 12,5 g, busto de Simón Bolívar, escudo con cóndor y leyenda CINCUENTA CENTAVOS, G. 12.500, LEY 0.900. Nada de eso está en este ejemplar. Numista, Restrepo y Hernández documentan el 50 centavos de este diseño en 1921 (KM# L13, Restrepo 417, Hernández Cód. 316, cuproníquel, canto liso) y en 1928 (KM# L14, Restrepo 418, Hernández Cód. 317, bronce, canto estriado). También hay un 50 centavos de lazareto de 1901, de otro diseño. No listan 1931. Esta ficha no asigna L13 ni L14 a la fecha grabada. Las iniciales RH de Roberto Hinestrosa son rasgo de los tipos de 1921 y 1928, bajo el lazo; aquí no se leen. El peso, el diámetro y el canto de esos catálogos no se midieron en este disco. Las tablas BanRep de moneda empiezan en 1987 y no cubren la pieza. El diseño no nombra un lazareto. No es el 2 centavos de 1921 (KM# L10) ni el latón de Palonegro de 1902. Sin encapsular. Que 1931 sea una emisión oficial de catálogo queda sin confirmar: puede tratarse de una fecha no listada, de una reacuñación o de una fecha alterada. Las fotografías no autentican el metal.',
+      en: 'This disc is engraved with the date 1931, the legend REPUBLICA DE COLOMBIA — without an accent, as engraved — and the lazaretto-type cross. The word in the centre is worn: BA and RETO, the remains of LAZARETO, read most clearly. The reverse shows an ornamental 50 above CENTAVOS, inside a leafy wreath tied with a bow, and a star above the value. Two stars flank the date. That is the module whose circulation was limited to the cordon of Agua de Dios, Contratación, and Caño del Oro. The national 50 centavos of 1931 is a different coin: KM# 193.1, .900 silver, 12.5 g, a bust of Simón Bolívar, arms with a condor, and the legend CINCUENTA CENTAVOS, G. 12.500, LEY 0.900. None of that is on this specimen. Numista, Restrepo, and Hernández document the 50 centavos of this design for 1921 (KM# L13, Restrepo 417, Hernández Cód. 316, copper-nickel, plain edge) and for 1928 (KM# L14, Restrepo 418, Hernández Cód. 317, bronze, reeded edge). There is also a 1901 lazaretto 50 centavos, of another design. They do not list 1931. This record assigns neither L13 nor L14 to the engraved date. The initials RH of Roberto Hinestrosa belong to the 1921 and 1928 types, under the bow; they cannot be read here. The weight, diameter, and edge in those catalogues were not measured on this disc. BanRep’s coin tables begin in 1987 and do not cover the piece. The design names no single lazaretto. It is not the 1921 2 centavos (KM# L10), nor the 1902 Palonegro brass. Unslabbed. Whether 1931 is an official catalogued emission remains unconfirmed: it may be an unlisted date, a restrike, or an altered date. The photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: cruz con LAZARETO gastado, leyenda REPUBLICA DE COLOMBIA y fecha 1931.',
+      en: 'Obverse: cross with worn LAZARETO, legend REPUBLICA DE COLOMBIA, and the date 1931.',
+    },
+    backCaption: {
+      es: 'Reverso: 50 ornamental sobre CENTAVOS, dentro de una corona atada con lazo. Las iniciales RH no se leen.',
+      en: 'Reverse: an ornamental 50 above CENTAVOS, inside a wreath tied with a bow. The initials RH cannot be read.',
+    },
+    scarcity: {
+      es: 'No hay una tirada publicada para un 50 centavos de lazareto fechado 1931. Numista da 120.000 piezas para el 1921 RH (N#7542, KM# L13) y 50.000 para el 1928 RH (N#21644, KM# L14). Esas cifras son de esas fechas, no de este disco. Las tablas BanRep de moneda empiezan en 1987. Esta ficha no publica precios ni un censo de encapsulados.',
+      en: 'No mintage is published for a lazaretto 50 centavos dated 1931. Numista gives 120,000 pieces for the 1921 RH issue (N#7542, KM# L13) and 50,000 for the 1928 RH issue (N#21644, KM# L14). Those figures belong to those dates, not to this disc. BanRep’s coin tables begin in 1987. This record publishes neither prices nor a slab census.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. La fecha 1931, la leyenda y el valor 50 se leen; LAZARETO está gastado y las iniciales RH no se leen. Las fotografías no autentican el metal (colección privada)',
+      en: 'Circulated, unslabbed. The date 1931, the legend, and the value 50 are readable; LAZARETO is worn and the initials RH cannot be read. Photographs do not authenticate the metal (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-lazareto-50-centavos-1931-composite.jpg',
+      front: '/images/catalog/colombia/colombia-lazareto-50-centavos-1931-front.jpg',
+      back: '/images/catalog/colombia/colombia-lazareto-50-centavos-1931-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/7542',
+        es: 'Numista — 50 centavos, moneda de lazareto, 1921 (N#7542)',
+        en: 'Numista — 50 centavos, leprosarium coinage, 1921 (N#7542)',
+        note: {
+          es: 'KM# L13, Hernández Cód. 316, Restrepo 417. Cuproníquel de tipo, 9,8 g y 30 mm; canto liso. Publica 120.000 para el 1921 RH. Es el módulo de diseño, no la fecha de este disco. No se citan columnas de valor.',
+          en: 'KM# L13, Hernández Cód. 316, Restrepo 417. Type copper-nickel, 9.8 g and 30 mm; plain edge. It publishes 120,000 for the 1921 RH issue. That is the design module, not this disc’s date. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/21644',
+        es: 'Numista — 50 centavos, moneda de lazareto, 1928 (N#21644)',
+        en: 'Numista — 50 centavos, leprosarium coinage, 1928 (N#21644)',
+        note: {
+          es: 'KM# L14, Hernández Cód. 317, Restrepo 418. Bronce de tipo, 9,8 g y 30 mm; canto estriado. Publica 50.000 para el 1928 RH. No se asigna L14 a este ejemplar. No se citan columnas de valor.',
+          en: 'KM# L14, Hernández Cód. 317, Restrepo 418. Type bronze, 9.8 g and 30 mm; reeded edge. It publishes 50,000 for the 1928 RH issue. L14 is not assigned to this specimen. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/20273',
+        es: 'Numista — 50 centavos de plata, Colombia, 1912–1933 (N#20273)',
+        en: 'Numista — silver 50 centavos, Colombia, 1912–1933 (N#20273)',
+        note: {
+          es: 'KM# 193.1: plata .900, 12,5 g, busto de Bolívar y escudo. Incluye 1931 y 1931 B. Es la moneda nacional de ese año, no este disco.',
+          en: 'KM# 193.1: .900 silver, 12.5 g, Bolívar’s bust and the arms. It includes 1931 and 1931-B. That is the national coin of that year, not this disc.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Cód. 316 es el 50 centavos de 1921; Cód. 317, el de 1928. No se cita aquí una fila de 1931 para este diseño. No se publican columnas de precios ni láminas.',
+          en: 'Cód. 316 is the 1921 50 centavos; Cód. 317, the 1928 piece. No 1931 row for this design is cited here. Price columns and plates are not published.',
+        },
+      },
+      {
+        href: 'https://www.banrepcultural.org/exposiciones/la-moneda-de-los-lazaretos',
+        es: 'Banrepcultural — La moneda de los lazaretos',
+        en: 'Banrepcultural — The coin of the lazarettos',
+        note: {
+          es: 'Series de 1901, 1907, 1921 y 1928 para Agua de Dios, Contratación y Caño del Oro. El diseño de esta pieza no nombra uno de los tres, y la exposición no lista 1931.',
+          en: 'The 1901, 1907, 1921, and 1928 series for Agua de Dios, Contratación, and Caño del Oro. This piece’s design names none of the three, and the exhibition does not list 1931.',
         },
       },
     ],

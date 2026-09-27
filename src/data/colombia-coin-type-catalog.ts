@@ -18,6 +18,7 @@ export type ColombiaCoinTypeId =
   | '20-centavos-palonegro-1902'
   | '50-centavos-palonegro-1902'
   | '2-centavos-lazareto-1921'
+  | '50-centavos-lazareto-1931'
   | 'lazareto-50-centavos-1928'
   | '50-pesos-1989'
   | '200-pesos-1994'
@@ -216,6 +217,24 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     holdingId: '2-centavos-lazareto-1921',
   },
   {
+    id: '50-centavos-lazareto-1931',
+    era: 'republica',
+    year: '1931',
+    denomination: { es: '50 centavos', en: '50 centavos' },
+    issuer: {
+      es: 'Lazaretos (Agua de Dios, Contratación, Caño del Oro)',
+      en: 'Lazarettos (Agua de Dios, Contratación, Caño del Oro)',
+    },
+    reference: 'Atribución pendiente · no es KM# 193.1',
+    title: { es: '50 centavos · Lazareto · 1931', en: '50 centavos · Lazaretto · 1931' },
+    dek: {
+      es: 'Disco fechado 1931 con la cruz y el valor entre ramos. En la colección. KM, Hernández y Restrepo no listan ese año; no se asigna L13 ni L14.',
+      en: 'A disc dated 1931 with the cross and the value inside a wreath. In the collection. KM, Hernández, and Restrepo do not list that year; neither L13 nor L14 is assigned.',
+    },
+    flags: ['holding'],
+    holdingId: '50-centavos-lazareto-1931',
+  },
+  {
     id: 'lazareto-50-centavos-1928',
     era: 'republica',
     year: '1928',
@@ -224,8 +243,8 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     reference: 'Hernández 8.ª ed. 2023',
     title: { es: '50 centavos · lazareto · 1928', en: '50 centavos · lazaretto · 1928' },
     dek: {
-      es: 'Última acuñación de la moneda exclusiva del cordón, bajo Abadía Méndez: solo 50 centavos en bronce. Banrepcultural y Hernández la documentan; esta vitrina aún no tiene foto ni ejemplar.',
-      en: 'Last striking of the exclusive cordon coin, under Abadía Méndez: only bronze 50 centavos. Banrepcultural and Hernández document it; this case still has neither a photograph nor a specimen.',
+      es: 'Última acuñación de la moneda exclusiva del cordón, bajo Abadía Méndez: solo 50 centavos en bronce, KM# L14. Banrepcultural y Hernández la documentan. Esta vitrina no tiene el año 1928. El disco fechado 1931 es otra ficha y no lleva ese número.',
+      en: 'Last striking of the exclusive cordon coin, under Abadía Méndez: only bronze 50 centavos, KM# L14. Banrepcultural and Hernández document it. This case does not have the year 1928. The disc dated 1931 is another record and does not carry that number.',
     },
     flags: ['pending'],
   },
