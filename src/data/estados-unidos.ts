@@ -2657,8 +2657,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       composite: '/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-composite.jpg',
       front: '/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-front.jpg',
       back: '/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-back.jpg',
-      width: 1641,
-      height: 717,
+      width: 1672,
+      height: 941,
     },
     hero: {
       src: {

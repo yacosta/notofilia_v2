@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { describe, it } from 'node:test';
+import sharp from 'sharp';
 import { localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 
@@ -77,5 +79,40 @@ describe('US Confederate T-41 $100 serial 11657', () => {
     assert.match(note, /11657-l-composite\.jpg/);
     assert.match(note, /11657-l-front\.jpg/);
     assert.match(note, /11657-l-back\.jpg/);
+    assert.match(note, /width: 1672/);
+    assert.match(note, /height: 941/);
+  });
+
+  it('keeps the scan margins on the face and back masters', async () => {
+    const root = new URL('../../catalog-src/catalog/united-states/', import.meta.url);
+    for (const name of [
+      'united-states-confederate-states-100-dollars-1862-11657-l-front.jpg',
+      'united-states-confederate-states-100-dollars-1862-11657-l-back.jpg',
+    ]) {
+      const file = fileURLToPath(new URL(name, root));
+      const meta = await sharp(file).metadata();
+      assert.equal(meta.width, 1672);
+      assert.equal(meta.height, 941);
+      const { data, info } = await sharp(file).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+      let minX = info.width;
+      let minY = info.height;
+      let maxX = 0;
+      let maxY = 0;
+      for (let y = 0; y < info.height; y++) {
+        for (let x = 0; x < info.width; x++) {
+          const i = (y * info.width + x) * info.channels;
+          if (data[i] < 248 || data[i + 1] < 248 || data[i + 2] < 248) {
+            if (x < minX) minX = x;
+            if (y < minY) minY = y;
+            if (x > maxX) maxX = x;
+            if (y > maxY) maxY = y;
+          }
+        }
+      }
+      assert.ok(minX >= 8, `${name} left margin`);
+      assert.ok(minY >= 8, `${name} top margin`);
+      assert.ok(info.width - 1 - maxX >= 8, `${name} right margin`);
+      assert.ok(info.height - 1 - maxY >= 8, `${name} bottom margin`);
+    }
   });
 });
