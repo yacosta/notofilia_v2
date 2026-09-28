@@ -163,6 +163,7 @@ export async function processCatalogImage(srcPath, destPath, relativePath, { sty
   const description = imageDescription(relativePath);
   const ext = path.extname(srcPath).toLowerCase();
 
+  // Scale to the longest-edge cap. Do not trim: banknote and coin scans keep their full frame.
   let pipeline = sharp(srcPath).rotate().resize({
     width,
     height,
