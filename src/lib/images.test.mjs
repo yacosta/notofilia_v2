@@ -1,6 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { catalogAssetSrc, cfImage, CATALOG_HERO_VERSION, editorialUploadSrcset } from './images.ts';
+import {
+  catalogAssetSrc,
+  cfImage,
+  CATALOG_HERO_VERSION,
+  CATALOG_SCAN_VERSION,
+  editorialUploadSrcset,
+  versionCatalogScan,
+} from './images.ts';
 
 describe('catalogAssetSrc', () => {
   it('appends a version query for catalog hero cache busting', () => {
@@ -17,7 +24,22 @@ describe('catalogAssetSrc', () => {
   it('passes versioned paths through cfImage', () => {
     assert.match(
       cfImage(catalogAssetSrc('/images/catalog/united-states.jpg'), { width: 1600 }),
-      /hero-colombia|united-states\.jpg\?v=/,
+      /united-states\.jpg\?v=20260829$/,
+    );
+  });
+
+  it('cache-busts catalog scans so a replaced file is not served from Image Resizing', () => {
+    assert.equal(
+      versionCatalogScan('/images/catalog/united-states/note.jpg'),
+      `/images/catalog/united-states/note.jpg?v=${CATALOG_SCAN_VERSION}`,
+    );
+    assert.equal(
+      cfImage('/images/catalog/united-states/note.jpg', { width: 800, fit: 'cover' }),
+      `/cdn-cgi/image/width=800,format=auto,quality=75,fit=cover/images/catalog/united-states/note.jpg?v=${CATALOG_SCAN_VERSION}`,
+    );
+    assert.equal(
+      versionCatalogScan(`/images/catalog/note.jpg?v=${CATALOG_HERO_VERSION}`),
+      `/images/catalog/note.jpg?v=${CATALOG_HERO_VERSION}`,
     );
   });
 
