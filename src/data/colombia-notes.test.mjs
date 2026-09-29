@@ -89,8 +89,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'us-baraboo-1933-50c-a1054');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-dln-bono-reconquista-10-pesos-serie-c');
+    assert.equal(additions.at(-1)?.id, 'co-1992-5000-pesos-oro-46772124');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1992-5000-pesos-oro-p436a-b974b');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -870,6 +870,79 @@ describe('Colombia BanRep 50 pesos oro 1984 Imprenta de Billetes', () => {
     assert.equal(
       seriesCardHref(holding[0].note, holding[0].piece, 'en'),
       '/en/collection/colombia/50-pesos-oro-1984/',
+    );
+  });
+});
+
+describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
+  it('is a distinct Pick 436A circulation note with ordinary serial 46772124', () => {
+    const note = noteById('5000-pesos-oro-1992');
+    const later = noteById('5000-pesos-oro-1993');
+    assert.ok(note);
+    assert.ok(later);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 436A · TBB B974b');
+    assert.equal(note.serial, '46772124');
+    assert.notEqual(note.serial, later.serial);
+    assert.notEqual(note.path, later.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no se publica aquí un BG# adivinado/);
+    assert.match(note.printed.es, /96\.500\.000 de ejemplares/);
+    assert.match(note.printed.es, /96,9 millones/);
+    assert.match(note.printed.es, /denominación/);
+    assert.match(note.description.es, /46772124/);
+    assert.match(note.description.en, /46772124/);
+    assert.match(note.description.es, /Rafael Núñez/);
+    assert.match(note.description.es, /Ermita del Cabrero/);
+    assert.match(note.description.es, /IMPRENTA DE BILLETES - SANTA FE DE BOGOTÁ/);
+    assert.match(note.description.es, /No hay estrella de reposición/);
+    assert.match(note.description.en, /There is no replacement star/);
+    assert.match(note.description.es, /Francisco José Ortega/);
+    assert.match(note.description.es, /Antonio Cerón del Hierro/);
+    assert.match(note.description.es, /1914923-003/);
+    assert.match(note.description.es, /82210365/);
+    assert.match(note.grade.es, /PMG 66 Gem Uncirculated EPQ/);
+    assert.match(note.scarcity.es, /Hernández 530/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      note.history?.es,
+      note.history?.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
+    assert.equal(additions.at(-1)?.id, 'co-1992-5000-pesos-oro-46772124');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1992-5000-pesos-oro-p436a-b974b');
+  });
+
+  it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /5\.000 pesos oro de 1992 \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    assert.match(chapter.body.en, /1992 5,000 pesos oro \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    assert.match(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1992 \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    assert.match(seriesCopy.en.intro.join(' '), /1992 5,000 pesos oro \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5000-pesos-oro-1992');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '46772124');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5000-pesos-oro-1992/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5000-pesos-oro-1992/',
     );
   });
 });

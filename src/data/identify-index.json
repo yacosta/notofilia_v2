@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T03:39:34.897Z",
+  "generatedAt": "2026-09-29T17:24:48.155Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1330,6 +1330,45 @@
       }
     },
     {
+      "pieceId": "5000-pesos-oro-1992",
+      "face": "front",
+      "hash": "442d1d2395294b77",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1992/",
+      "pick": "P# 436A · TBB B974b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1992-46772124-composite.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1992",
+        "en": "5,000 pesos oro · 1992"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1992",
+      "face": "front",
+      "hash": "8aca150d2d110b12",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1992/",
+      "pick": "P# 436A · TBB B974b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1992-46772124-front.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1992",
+        "en": "5,000 pesos oro · 1992"
+      }
+    },
+    {
+      "pieceId": "5000-pesos-oro-1992",
+      "face": "back",
+      "hash": "944d024b4f4d6b69",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5000-pesos-oro-1992/",
+      "pick": "P# 436A · TBB B974b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1992-46772124-back.jpg",
+      "title": {
+        "es": "5.000 pesos oro · 1992",
+        "en": "5,000 pesos oro · 1992"
+      }
+    },
+    {
       "pieceId": "5000-pesos-oro-1993",
       "face": "front",
       "hash": "235e758601dd5502",
@@ -2307,7 +2346,7 @@
     {
       "pieceId": "ht-34-1837-burro-tortuga",
       "face": "front",
-      "hash": "0063235533632300",
+      "hash": "2213d57572b65323",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
       "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
@@ -2320,7 +2359,7 @@
     {
       "pieceId": "ht-34-1837-burro-tortuga",
       "face": "front",
-      "hash": "000c2e162e1e0c00",
+      "hash": "0c1b3b714c052b14",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
       "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
@@ -2333,7 +2372,7 @@
     {
       "pieceId": "ht-34-1837-burro-tortuga",
       "face": "back",
-      "hash": "00042a122a2e0c00",
+      "hash": "0c3b6594cd296114",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/",
       "pick": "HT-34 · Low-20 · DeWitt CE-1838-4 · W-11-540a · R-1",
@@ -3004,6 +3043,45 @@
       "title": {
         "es": "10 dólares · Serie 1934 A · Filadelfia",
         "en": "$10 · Series 1934A · Philadelphia"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "65a48a0014ceba0b",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-nueva-york/",
+      "pick": "P#430Da · Fr. 2006-B",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-10-dollars-series-1934a-new-york-b42488184b-composite.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Nueva York",
+        "en": "$10 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-nueva-york",
+      "face": "front",
+      "hash": "10e6aaaacaa8a014",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-nueva-york/",
+      "pick": "P#430Da · Fr. 2006-B",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-10-dollars-series-1934a-new-york-b42488184b-front.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Nueva York",
+        "en": "$10 · Series 1934A · New York"
+      }
+    },
+    {
+      "pieceId": "10-dolares-serie-1934a-nueva-york",
+      "face": "back",
+      "hash": "0886aa96965d4c14",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-serie-1934a-nueva-york/",
+      "pick": "P#430Da · Fr. 2006-B",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-10-dollars-series-1934a-new-york-b42488184b-back.jpg",
+      "title": {
+        "es": "10 dólares · Serie 1934 A · Nueva York",
+        "en": "$10 · Series 1934A · New York"
       }
     },
     {

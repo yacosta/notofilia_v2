@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-usn-1907-5-m12980830');
+    assert.equal(additions.at(-1)?.id, 'co-1992-5000-pesos-oro-46772124');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -129,41 +129,26 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 
-  it('keeps the Cartagena 2 reales in Logros del Mes', () => {
-    const holding = additions.find((row) => row.id === 'co-2-reales-cartagena-1812-1814');
+  it('puts the newest 1992 5.000 pesos oro first in Logros del Mes', () => {
+    const holding = additions.find((row) => row.id === 'co-1992-5000-pesos-oro-46772124');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
+    assert.equal(fromEnd, 0);
     assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
-    const piece = catalogPieceForHolding(holding, [
-      {
-        id: 'co-2-reales-cartagena-1812-1814',
-        country: 'CO',
-        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
-        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
-        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
-        pick: 'KM# D1',
-        serial: '',
-        cert: '',
-        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
-        imageAlt: { es: 'Anverso', en: 'Obverse' },
-      },
-    ]);
-    assert.ok(piece);
-    const [card] = milestonesFromHoldings(additions, [
-      {
-        id: 'co-2-reales-cartagena-1812-1814',
-        country: 'CO',
-        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
-        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
-        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
-        pick: 'KM# D1',
-        serial: '',
-        cert: '',
-        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
-        imageAlt: { es: 'Anverso', en: 'Obverse' },
-      },
-    ]);
-    assert.equal(card.holdingId, 'co-2-reales-cartagena-1812-1814');
-    assert.match(card.href, /2-reales-cartagena-1812-1814/);
+    const piece = {
+      id: 'co-5000-pesos-oro-1992',
+      country: 'CO',
+      href: '/coleccion/colombia/5000-pesos-oro-1992/',
+      title: { es: '5.000 pesos oro · 1992', en: '5,000 pesos oro · 1992' },
+      dek: { es: 'Serial 46772124', en: 'Serial 46772124' },
+      pick: 'P# 436A · TBB B974b',
+      serial: '46772124',
+      cert: '',
+      image: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1992-46772124-front.jpg',
+      imageAlt: { es: 'Anverso', en: 'Face' },
+    };
+    const [card] = milestonesFromHoldings(additions, [piece]);
+    assert.equal(card.holdingId, 'co-1992-5000-pesos-oro-46772124');
+    assert.match(card.href, /5000-pesos-oro-1992/);
   });
 });
