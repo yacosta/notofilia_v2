@@ -473,7 +473,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: coscojasSantanderCopy.en.metaDescription,
       },
       extra:
-        'coscojas Santander 1902 Palonegro Bucaramanga latón casquillos González Valencia 10 20 50 centavos unifaz',
+        'coscojas Santander 1902 Palonegro Bucaramanga latón casquillos González Valencia Penagos decreto 102 monedas sangrientas 10 20 50 centavos unifaz',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,
