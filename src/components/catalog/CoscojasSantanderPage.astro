@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import NewWindowHint from '../NewWindowHint.astro';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { coscojasSantanderCopy, coscojasSantanderPath } from '../../data/coscojas-santander';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = coscojasSantanderCopy[locale];
+const pathname = coscojasSantanderPath(locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
+const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.numismatica, item: numismaticaHref },
+      { name: t.series, item: seriesHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout title={`${t.metaTitle} · Notofilia`} description={t.metaDescription} locale={locale} pathname={pathname} ogType="article" publishedTime={t.published}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="min-h-[60vh] bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: numismaticaHref, label: t.numismatica },
+          { href: seriesHref, label: t.series },
+          { label: t.nav },
+        ]}
+      />
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
+          {t.title}
+        </h1>
+        <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+        <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+          <time datetime={t.published}>{t.dateLabel}</time>
+        </p>
+      </header>
+
+      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+        <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {
+            t.facts.map((fact) => (
+              <div class:list={[fact.wide && 'sm:col-span-2']}>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{fact.label}</dt>
+                <dd class="m-0 mt-1 text-cream">{fact.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <p class="mb-0 mt-6 font-sans text-[15px]/6 text-muted">{t.imagesNote}</p>
+      </section>
+
+      {
+        t.sections.map((section) => (
+          <section class="mb-10" aria-labelledby={section.id}>
+            <h2 id={section.id} class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {section.title}
+            </h2>
+            {section.paragraphs.map((paragraph) => (
+              <p class="mb-4 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">{paragraph}</p>
+            ))}
+          </section>
+        ))
+      }
+
+      <p class="mb-10 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty]">
+        {t.relatedLead}{' '}
+        <a
+          href={localizePath(t.relatedHref, locale)}
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+        >
+          {t.relatedLabel}
+        </a>
+      </p>
+
+      <section class="border-t border-line pt-12" aria-labelledby="coscojas-sources">
+        <h2 id="coscojas-sources" class="mb-4 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.sourcesTitle}
+        </h2>
+        <ul class="m-0 list-none space-y-2 p-0">
+          {
+            t.sources.map((source) => (
+              <li>
+                {source.href ? (
+                  <a
+                    href={source.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                  >
+                    {source.label}
+                    <NewWindowHint locale={locale} />
+                  </a>
+                ) : (
+                  <p class="mb-0 mt-2 font-sans text-[15px] text-cream-dim">{source.label}</p>
+                )}
+                {source.note ? <p class="mb-2 mt-0 font-sans text-[15px]/6 text-muted">{source.note}</p> : null}
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="mt-12 mb-4">
+        <a
+          href={seriesHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {t.backSeries}
+        </a>
+      </p>
+      <p class="mb-0">
+        <a
+          href={numismaticaHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          {copy[locale].backNumismaticsShort}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

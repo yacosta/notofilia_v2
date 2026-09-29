@@ -68,6 +68,7 @@ import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
 import { educationalSeriesDedicatedSlugs } from '../data/educational-series-1896';
 import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
+import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -349,6 +350,7 @@ const dedicatedEs = [
   COLOMBIA_COINAGE_PATH.replace(/^\/|\/$/g, ''),
   COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
+  ...coscojasSantanderDedicatedSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),

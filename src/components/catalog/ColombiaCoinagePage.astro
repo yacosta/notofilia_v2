@@ -15,6 +15,7 @@ import {
 } from '../../data/colombia-coinage';
 import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { COSCOJAS_SANTANDER_PATH } from '../../data/coscojas-santander';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -99,6 +100,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(COLOMBIA_COIN_CATALOG_PATH, locale)}
         >
           {t.visualCatalogLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.coscojasLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(COSCOJAS_SANTANDER_PATH, locale)}
+        >
+          {t.coscojasLink}
         </a>
       </p>
 
