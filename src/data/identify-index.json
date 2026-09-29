@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T17:24:48.155Z",
+  "generatedAt": "2026-09-29T17:28:24.740Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2887,6 +2887,45 @@
       "title": {
         "es": "100 dólares · Estados Confederados · 1862",
         "en": "$100 · Confederate States · 1862"
+      }
+    },
+    {
+      "pieceId": "100-dolares-confederados-1862-t41",
+      "face": "front",
+      "hash": "9156e9d7930a6c19",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/100-dolares-confederados-1862-t41/",
+      "pick": "P#45 · T-41 · N#223639",
+      "image": "/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-composite.jpg",
+      "title": {
+        "es": "100 dólares T-41 · Estados Confederados · 1862",
+        "en": "$100 T-41 · Confederate States · 1862"
+      }
+    },
+    {
+      "pieceId": "100-dolares-confederados-1862-t41",
+      "face": "front",
+      "hash": "4cca468e9964e502",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/100-dolares-confederados-1862-t41/",
+      "pick": "P#45 · T-41 · N#223639",
+      "image": "/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-front.jpg",
+      "title": {
+        "es": "100 dólares T-41 · Estados Confederados · 1862",
+        "en": "$100 T-41 · Confederate States · 1862"
+      }
+    },
+    {
+      "pieceId": "100-dolares-confederados-1862-t41",
+      "face": "back",
+      "hash": "8c445414a9cb6302",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/100-dolares-confederados-1862-t41/",
+      "pick": "P#45 · T-41 · N#223639",
+      "image": "/images/catalog/united-states/united-states-confederate-states-100-dollars-1862-11657-l-back.jpg",
+      "title": {
+        "es": "100 dólares T-41 · Estados Confederados · 1862",
+        "en": "$100 T-41 · Confederate States · 1862"
       }
     },
     {

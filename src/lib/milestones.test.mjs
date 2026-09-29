@@ -151,4 +151,42 @@ describe('homepage milestones from catalog holdings', () => {
     assert.equal(card.holdingId, 'co-1992-5000-pesos-oro-46772124');
     assert.match(card.href, /5000-pesos-oro-1992/);
   });
+
+  it('still matches the Cartagena 2 reales after newer holdings fill Logros del Mes', () => {
+    const holding = additions.find((row) => row.id === 'co-2-reales-cartagena-1812-1814');
+    assert.ok(holding);
+    const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
+    assert.equal(fromEnd, HOME_MILESTONE_LIMIT + 2);
+    const piece = catalogPieceForHolding(holding, [
+      {
+        id: 'co-2-reales-cartagena-1812-1814',
+        country: 'CO',
+        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
+        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
+        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
+        pick: 'KM# D1',
+        serial: '',
+        cert: '',
+        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
+        imageAlt: { es: 'Anverso', en: 'Obverse' },
+      },
+    ]);
+    assert.ok(piece);
+    const [card] = milestonesFromHoldings(additions, [
+      {
+        id: 'co-2-reales-cartagena-1812-1814',
+        country: 'CO',
+        href: '/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/',
+        title: { es: '2 reales · Cartagena · ca. 1812–1814', en: '2 reales · Cartagena · ca. 1812–1814' },
+        dek: { es: 'Cobre de sitio', en: 'Siege copper' },
+        pick: 'KM# D1',
+        serial: '',
+        cert: '',
+        image: '/images/catalog/colombia/colombia-cartagena-2-reales-1812-1814-composite.jpg',
+        imageAlt: { es: 'Anverso', en: 'Obverse' },
+      },
+    ]);
+    assert.equal(card.holdingId, 'co-2-reales-cartagena-1812-1814');
+    assert.match(card.href, /2-reales-cartagena-1812-1814/);
+  });
 });

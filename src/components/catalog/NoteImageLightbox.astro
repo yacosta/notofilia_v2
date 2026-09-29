@@ -4,7 +4,7 @@ import {
   catalogDownloadLabel,
   catalogDownloadSrc,
 } from '../../lib/catalog-media';
-import { pieceSrcset, PIECE_IMAGE_SIZES } from '../../lib/images';
+import { pieceSrcset, PIECE_IMAGE_SIZES, versionCatalogScan } from '../../lib/images';
 import type { Locale } from '../../lib/site';
 
 interface Props {
@@ -19,11 +19,12 @@ interface Props {
 }
 
 const { src, alt, expandLabel, closeLabel, locale, width = 1800, height = 900, eager = false } = Astro.props;
+const displaySrc = versionCatalogScan(src);
 const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 const downloadHref = catalogDownloadSrc(src);
 const downloadName = catalogDownloadFilename(src);
 const downloadLabel = catalogDownloadLabel(src, locale);
-const srcset = pieceSrcset(src);
+const srcset = pieceSrcset(displaySrc);
 ---
 
 <div class="note-lightbox-root" data-note-lightbox>
@@ -35,7 +36,7 @@ const srcset = pieceSrcset(src);
     data-note-lightbox-open
   >
     <img
-      src={src}
+      src={displaySrc}
       srcset={srcset}
       sizes={PIECE_IMAGE_SIZES}
       alt={alt}
@@ -98,7 +99,7 @@ const srcset = pieceSrcset(src);
         </div>
         <div class="flex min-h-0 flex-1 items-center justify-center overflow-auto bg-bg p-3 md:p-5">
           <img
-            src={src}
+            src={displaySrc}
             alt={alt}
             width={width}
             height={height}

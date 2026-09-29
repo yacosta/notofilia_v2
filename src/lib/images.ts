@@ -5,10 +5,23 @@ export type ImageWidth = 400 | 480 | 640 | 800 | 1200 | 1600 | 2400;
 /** Bump when series hero masters change so CDN/browser caches pick up new art at the same path. */
 export const CATALOG_HERO_VERSION = '20260829';
 
+/**
+ * Bump when a banknote or coin scan is replaced at the same path.
+ * Cloudflare Image Resizing keeps the previous file for hours; the query
+ * forces the homepage card and the note srcset onto the new frame.
+ */
+export const CATALOG_SCAN_VERSION = '20260928';
+
 export function catalogAssetSrc(src: string, version: string = CATALOG_HERO_VERSION): string {
   if (!version || !src.startsWith('/')) return src;
   const sep = src.includes('?') ? '&' : '?';
   return `${src}${sep}v=${version}`;
+}
+
+/** Version catalog scans that are not already cache-busted (heroes pass their own `v`). */
+export function versionCatalogScan(src: string): string {
+  if (!src.startsWith('/images/catalog/') || /[?&]v=/.test(src)) return src;
+  return catalogAssetSrc(src, CATALOG_SCAN_VERSION);
 }
 
 export function cfImage(
@@ -21,15 +34,16 @@ export function cfImage(
   } = { width: 800 },
 ): string {
   if (!src.startsWith('/') || src.startsWith('//') || src.startsWith('data:')) return src;
+  const asset = versionCatalogScan(src);
   // Astro dev has no Cloudflare Image Resizing endpoint; serve assets directly.
-  if (import.meta.env?.DEV) return src;
+  if (import.meta.env?.DEV) return asset;
   const parts = [
     `width=${options.width}`,
     `format=${options.format ?? 'auto'}`,
     `quality=${options.quality ?? 75}`,
   ];
   if (options.fit) parts.push(`fit=${options.fit}`);
-  return `/cdn-cgi/image/${parts.join(',')}${src}`;
+  return `/cdn-cgi/image/${parts.join(',')}${asset}`;
 }
 
 export function imageSrcset(src: string, widths: ImageWidth[] = [400, 800, 1200]): string {

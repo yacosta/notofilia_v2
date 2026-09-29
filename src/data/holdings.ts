@@ -187,6 +187,7 @@ export const additions: Holding[] = [
   { id: 'us-1841-ht-16-daniel-webster', kind: 'coin', country: 'US' },
   { id: 'co-1931-50-centavos-lazareto', kind: 'coin', country: 'CO' },
   { id: 'us-gc-1922-10-k53955033', kind: 'banknote', country: 'US' },
+  { id: 'us-csa-1862-100-11657l', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-10-new-york-b42488184', kind: 'banknote', country: 'US' },
   { id: 'co-1992-5000-pesos-oro-46772124', kind: 'banknote', country: 'CO' },
 ];
@@ -302,6 +303,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1841-ht-16-low-58' },
   { id: 'co-1931-50-centavos-lazareto' },
   { id: 'us-gc-1922-10-fr1173' },
+  { id: 'us-csa-1862-100-t41-p45' },
   { id: 'us-frn-1934a-10-new-york-fr2006b' },
   { id: 'co-1992-5000-pesos-oro-p436a-b974b' },
 ];

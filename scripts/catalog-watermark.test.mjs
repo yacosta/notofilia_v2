@@ -129,4 +129,39 @@ describe('processCatalogImage', () => {
       await rm(dir, { recursive: true, force: true });
     }
   });
+
+  it('keeps a blank margin instead of trimming the frame', async () => {
+    const dir = await mkdtemp(path.join(os.tmpdir(), 'catalog-margin-'));
+    const src = path.join(dir, 'note.jpg');
+    const dest = path.join(dir, 'out', 'note.jpg');
+    const inset = await sharp({
+      create: { width: 40, height: 20, channels: 3, background: '#222222' },
+    })
+      .png()
+      .toBuffer();
+
+    await sharp({
+      create: { width: 80, height: 60, channels: 3, background: '#ffffff' },
+    })
+      .composite([{ input: inset, left: 20, top: 20 }])
+      .jpeg()
+      .toFile(src);
+
+    try {
+      await processCatalogImage(src, dest, 'fixtures/margin-note.jpg');
+      const meta = await sharp(dest).metadata();
+      assert.equal(meta.width, 80);
+      assert.equal(meta.height, 60);
+      const { data, info } = await sharp(dest).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+      const corner = (x, y) => {
+        const i = (y * info.width + x) * info.channels;
+        return [data[i], data[i + 1], data[i + 2]];
+      };
+      for (const [r, g, b] of [corner(0, 0), corner(info.width - 1, 0), corner(0, 2)]) {
+        assert.ok(r > 240 && g > 240 && b > 240);
+      }
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
 });

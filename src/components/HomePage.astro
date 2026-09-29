@@ -99,7 +99,11 @@ const featuredNews = news.slice(0, 6);
                     class="group block h-full min-h-11 overflow-hidden rounded-[6px] border border-line-strong bg-bg text-inherit no-underline hover:border-gold-light"
                   >
                     {item.image ? (
-                      <CardImage src={item.image} alt={item.imageAlt[locale]} />
+                      <CardImage
+                        src={item.image}
+                        alt={item.imageAlt[locale]}
+                        class="aspect-video w-full bg-bg object-contain"
+                      />
                     ) : null}
                     <div class="p-5">
                       <h3 class="mb-2 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim group-hover:text-cream">
