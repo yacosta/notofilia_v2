@@ -35,10 +35,21 @@ describe('Santander coscojas essay', () => {
       coscojasSantanderCopy.es.facts.find((fact) => fact.label === 'Ref. (50 c)')?.value,
       '1,45 g · 23,1 mm',
     );
-    assert.equal(coscojasSantanderCopy.es.sections.length, coscojasSantanderCopy.en.sections.length);
+    assert.deepEqual(
+      coscojasSantanderCopy.es.sections.map((section) => section.id),
+      coscojasSantanderCopy.en.sections.map((section) => section.id),
+    );
+    const specs = coscojasSantanderCopy.es.sections.find((section) => section.id === 'hecha-a-mano');
+    assert.equal(specs?.table?.rows.length, 3);
+    assert.equal(specs?.table?.rows[0][1], '1,45 g');
     assert.equal(pageSource.includes('<img'), false);
     assert.equal(pageSource.includes('NoteImageLightbox'), false);
+    assert.equal(pageSource.includes('section.table'), true);
+    const blob = JSON.stringify(coscojasSantanderCopy);
+    assert.equal(/eBay|Mercado Libre|USD|US\$/.test(blob), false);
     assert.ok(coscojasSantanderCopy.es.sources.some((source) => source.href === 'https://en.numista.com/30954'));
+    assert.ok(coscojasSantanderCopy.es.sources.some((source) => source.href === 'https://en.numista.com/48340'));
+    assert.ok(coscojasSantanderCopy.en.sources.some((source) => source.href === 'https://en.numista.com/48341'));
     assert.ok(coscojasSantanderCopy.en.sources.every((source) => !source.href || source.href.startsWith('http')));
   });
 });

@@ -100,6 +100,45 @@ const jsonLd = {
             {section.paragraphs.map((paragraph) => (
               <p class="mb-4 mt-0 text-[17px]/7 text-cream-dim [text-wrap:pretty] last:mb-0">{paragraph}</p>
             ))}
+            {
+              section.table ? (
+                <div class="mb-2 mt-6 overflow-x-auto border border-line-strong">
+                  <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+                    <caption class="sr-only">{section.table.caption}</caption>
+                    <thead>
+                      <tr class="border-b border-line-strong bg-panel text-left">
+                        {
+                          section.table.headers.map((header) => (
+                            <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                              {header}
+                            </th>
+                          ))
+                        }
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {
+                        section.table.rows.map((row) => (
+                          <tr class="border-b border-line-strong last:border-b-0">
+                            {
+                              row.map((cell, index) =>
+                                index === 0 ? (
+                                  <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                                    {cell}
+                                  </th>
+                                ) : (
+                                  <td class="px-3 py-2.5">{cell}</td>
+                                ),
+                              )
+                            }
+                          </tr>
+                        ))
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              ) : null
+            }
           </section>
         ))
       }
