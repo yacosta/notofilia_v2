@@ -572,6 +572,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/catalog/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/coscojas-de-santander/', 'en'),
+      '/en/collection/colombia-numismatics/santander-coscojas/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
     );

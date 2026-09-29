@@ -254,6 +254,8 @@ describe('Colombia visual catalogs', () => {
     assert.doesNotMatch(numismatica, /Catálogo visual de monedas/);
     assert.doesNotMatch(numismatica, /Visual coin catalog/);
     const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'es-monedas'")[0] ?? '';
+    assert.match(colombiaBlock, /id: 'coscojas-de-santander'/);
+    assert.match(colombiaBlock, /href: COSCOJAS_SANTANDER_PATH/);
     assert.match(colombiaBlock, /id: 'numismatica-lazaretos'/);
     assert.match(colombiaBlock, /href: LAZARETTOS_NUMISMATICS_PATH/);
     assert.doesNotMatch(colombiaBlock, /COLOMBIA_COIN_CATALOG_PATH/);

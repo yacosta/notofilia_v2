@@ -21,6 +21,7 @@ import {
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
 import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educational-series-1896';
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
+import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -463,6 +464,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: USA_RENCY_PATH,
       title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
       dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
+    },
+    {
+      href: COSCOJAS_SANTANDER_PATH,
+      title: { es: coscojasSantanderCopy.es.nav, en: coscojasSantanderCopy.en.nav },
+      dek: {
+        es: coscojasSantanderCopy.es.metaDescription,
+        en: coscojasSantanderCopy.en.metaDescription,
+      },
+      extra:
+        'coscojas Santander 1902 Palonegro Bucaramanga latón casquillos González Valencia 10 20 50 centavos unifaz',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,
