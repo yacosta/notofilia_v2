@@ -3,6 +3,13 @@ import type { Locale } from '../lib/locale-paths';
 export const COSCOJAS_SANTANDER_PATH = '/coleccion/colombia-numismatica/coscojas-de-santander/';
 export const COSCOJAS_SANTANDER_PATH_EN = '/collection/colombia-numismatics/santander-coscojas/';
 
+/** Finished poster, 1024×438. Frame hero: do not crop. Card sibling is 800px wide. The lettering on the picture is Spanish. */
+export const COSCOJAS_SANTANDER_HERO = {
+  src: '/uploads/coscojas-de-santander-hero.jpg',
+  width: 1024,
+  height: 438,
+} as const;
+
 export type CoscojasFact = {
   label: string;
   value: string;
@@ -40,6 +47,7 @@ export type CoscojasCopy = {
   kicker: string;
   title: string;
   lead: string;
+  heroAlt: string;
   published: string;
   dateLabel: string;
   factsHeading: string;
@@ -68,6 +76,8 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     title: 'Las coscojas de Santander',
     lead:
       'Monedas de una sola cara, hechas a mano con casquillos de bala, nacidas del final de la Guerra de los Mil Días.',
+    heroAlt:
+      'Cartel de las coscojas de Santander: dos piezas de latón de 50 centavos, 1902, sobre un mapa, con vainas, brújula y un paisaje de montaña. Es una ilustración, no el escaneo de una pieza de la colección.',
     published: '2026-09-29',
     dateLabel: '29 de septiembre de 2026',
     factsHeading: 'Datos',
@@ -205,6 +215,8 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     title: 'The coscojas of Santander',
     lead:
       'One-faced coins, handmade from cartridge cases, born at the end of the War of a Thousand Days.',
+    heroAlt:
+      'Poster for the coscojas of Santander: two 1902 brass 50-centavo pieces on a map, with cartridge cases, a compass, and a mountain landscape. The lettering on the picture is in Spanish. It is an illustration, not a scan of a piece in the collection.',
     published: '2026-09-29',
     dateLabel: '29 September 2026',
     factsHeading: 'Facts',
