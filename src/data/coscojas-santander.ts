@@ -3,11 +3,18 @@ import type { Locale } from '../lib/locale-paths';
 export const COSCOJAS_SANTANDER_PATH = '/coleccion/colombia-numismatica/coscojas-de-santander/';
 export const COSCOJAS_SANTANDER_PATH_EN = '/collection/colombia-numismatics/santander-coscojas/';
 
-/** Finished poster, 1024×438. Frame hero: do not crop. Card sibling is 800px wide. The lettering on the picture is Spanish. */
+/** Finished posters. Frame hero: do not crop. Card siblings are 800px wide. */
 export const COSCOJAS_SANTANDER_HERO = {
-  src: '/uploads/coscojas-de-santander-hero.jpg',
-  width: 1024,
-  height: 438,
+  es: {
+    src: '/uploads/coscojas-de-santander-hero.jpg',
+    width: 1024,
+    height: 438,
+  },
+  en: {
+    src: '/uploads/santander-coscojas-hero.jpg',
+    width: 1024,
+    height: 439,
+  },
 } as const;
 
 export type CoscojasFact = {
@@ -216,7 +223,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     lead:
       'One-faced coins, handmade from cartridge cases, born at the end of the War of a Thousand Days.',
     heroAlt:
-      'Poster for the coscojas of Santander: two 1902 brass 50-centavo pieces on a map, with cartridge cases, a compass, and a mountain landscape. The lettering on the picture is in Spanish. It is an illustration, not a scan of a piece in the collection.',
+      'Poster for the coscojas of Santander: two 1902 brass 50-centavo pieces on a map, with cartridge cases, a compass, and a mountain landscape. The caption on the picture is in English. It is an illustration, not a scan of a piece in the collection.',
     published: '2026-09-29',
     dateLabel: '29 September 2026',
     factsHeading: 'Facts',

@@ -43,11 +43,14 @@ describe('Santander coscojas essay', () => {
     const specs = coscojasSantanderCopy.es.sections.find((section) => section.id === 'hecha-a-mano');
     assert.equal(specs?.table?.rows.length, 3);
     assert.equal(specs?.table?.rows[0][1], '1,45 g');
-    assert.equal(COSCOJAS_SANTANDER_HERO.src, '/uploads/coscojas-de-santander-hero.jpg');
-    assert.equal(COSCOJAS_SANTANDER_HERO.width, 1024);
-    assert.equal(COSCOJAS_SANTANDER_HERO.height, 438);
+    assert.equal(COSCOJAS_SANTANDER_HERO.es.src, '/uploads/coscojas-de-santander-hero.jpg');
+    assert.equal(COSCOJAS_SANTANDER_HERO.en.src, '/uploads/santander-coscojas-hero.jpg');
+    assert.equal(COSCOJAS_SANTANDER_HERO.es.width, 1024);
+    assert.equal(COSCOJAS_SANTANDER_HERO.en.height, 439);
     assert.ok(existsSync(new URL('../../public/uploads/coscojas-de-santander-hero.jpg', import.meta.url)));
     assert.ok(existsSync(new URL('../../public/uploads/coscojas-de-santander-hero-card.jpg', import.meta.url)));
+    assert.ok(existsSync(new URL('../../public/uploads/santander-coscojas-hero.jpg', import.meta.url)));
+    assert.ok(existsSync(new URL('../../public/uploads/santander-coscojas-hero-card.jpg', import.meta.url)));
     assert.equal(pageSource.includes('SeriesHero'), true);
     assert.equal(pageSource.includes('size="frame"'), true);
     assert.equal(pageSource.includes('<h1'), false);

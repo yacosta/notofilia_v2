@@ -21,7 +21,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = coscojasSantanderCopy[locale];
 const pathname = coscojasSantanderPath(locale);
-const hero = COSCOJAS_SANTANDER_HERO;
+const hero = COSCOJAS_SANTANDER_HERO[locale];
 const ogImage = hero.src;
 const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(ogImage, SITE_URL).href;
