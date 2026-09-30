@@ -2,14 +2,20 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import NewWindowHint from '../NewWindowHint.astro';
+import CatalogThumb from './CatalogThumb.astro';
 import SeriesHero from './SeriesHero.astro';
+import { coinagePieceById, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
 import { imageObjectJsonLd } from '../../lib/json-ld';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import {
+  COSCOJAS_SANTANDER_COMPOSITE,
   COSCOJAS_SANTANDER_HERO,
+  COSCOJAS_SANTANDER_HOLDING_IDS,
+  coscojasSantanderCardAlt,
   coscojasSantanderCopy,
   coscojasSantanderPath,
 } from '../../data/coscojas-santander';
@@ -27,6 +33,11 @@ const pageUrl = new URL(pathname, SITE_URL).href;
 const imageUrl = new URL(ogImage, SITE_URL).href;
 const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
 const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
+const holdings = COSCOJAS_SANTANDER_HOLDING_IDS.map((id) => {
+  const piece = coinagePieceById(id);
+  if (!piece) throw new Error(`Missing Santander coscoja holding ${id}`);
+  return piece;
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -138,6 +149,39 @@ const jsonLd = {
             {t.holdingLabel}
           </a>
         </p>
+      </section>
+
+      <section class="mb-14" aria-labelledby="coscojas-holdings-heading">
+        <h2 id="coscojas-holdings-heading" class="mb-6 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.holdingsHeading}
+        </h2>
+        <ol class:list={['m-0', CATALOG_PIECE_GRID]} aria-label={t.holdingsAria}>
+          {
+            holdings.map((piece) => (
+              <li class="min-w-0">
+                <a
+                  href={coinagePiecePath(piece, locale)}
+                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                >
+                  <CatalogThumb
+                    src={piece.images.composite}
+                    alt={coscojasSantanderCardAlt(piece.id, locale)}
+                    width={COSCOJAS_SANTANDER_COMPOSITE.width}
+                    height={COSCOJAS_SANTANDER_COMPOSITE.height}
+                    class="mb-3 aspect-[16/9] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  />
+                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                    {piece.title[locale]}
+                  </h3>
+                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                    {piece.year} · {piece.metal[locale]}
+                  </p>
+                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCoin} →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
       </section>
 
       {

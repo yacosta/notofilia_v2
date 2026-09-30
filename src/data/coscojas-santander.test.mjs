@@ -3,9 +3,12 @@ import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { localizePath } from '../lib/locale-paths.ts';
 import {
+  COSCOJAS_SANTANDER_COMPOSITE,
   COSCOJAS_SANTANDER_HERO,
+  COSCOJAS_SANTANDER_HOLDING_IDS,
   COSCOJAS_SANTANDER_PATH,
   COSCOJAS_SANTANDER_PATH_EN,
+  coscojasSantanderCardAlt,
   coscojasSantanderCopy,
   coscojasSantanderDedicatedSlugs,
   coscojasSantanderPath,
@@ -29,7 +32,7 @@ describe('Santander coscojas essay', () => {
     ]);
   });
 
-  it('records brass, the measured 50 centavos, and no coin images', () => {
+  it('records brass, the measured 50 centavos, and the three holding cards', () => {
     assert.equal(coscojasSantanderCopy.es.facts.find((fact) => fact.label === 'Metal')?.value, 'Latón');
     assert.equal(coscojasSantanderCopy.en.facts.find((fact) => fact.label === 'Metal')?.value, 'Brass');
     assert.equal(
@@ -55,7 +58,20 @@ describe('Santander coscojas essay', () => {
     assert.equal(pageSource.includes('size="frame"'), true);
     assert.equal(pageSource.includes('<h1'), false);
     assert.equal(pageSource.includes('NoteImageLightbox'), false);
+    assert.equal(pageSource.includes('CatalogThumb'), true);
+    assert.equal(pageSource.includes('CATALOG_PIECE_GRID'), true);
     assert.equal(pageSource.includes('section.table'), true);
+    assert.deepEqual([...COSCOJAS_SANTANDER_HOLDING_IDS], [
+      '10-centavos-santander-1902',
+      '20-centavos-santander-1902',
+      '50-centavos-santander-1902',
+    ]);
+    assert.equal(COSCOJAS_SANTANDER_COMPOSITE.width, 1024);
+    assert.equal(COSCOJAS_SANTANDER_COMPOSITE.height, 576);
+    assert.match(coscojasSantanderCardAlt('10-centavos-santander-1902', 'es'), /incuso/);
+    assert.match(coscojasSantanderCardAlt('50-centavos-santander-1902', 'en'), /incuse/);
+    assert.equal(coscojasSantanderCopy.es.viewCoin, 'Abrir la ficha');
+    assert.equal(coscojasSantanderCopy.en.viewCoin, 'Open the record');
     const blob = JSON.stringify(coscojasSantanderCopy);
     assert.equal(/eBay|Mercado Libre|USD|US\$/.test(blob), false);
     assert.equal(

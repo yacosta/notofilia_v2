@@ -43,6 +43,18 @@ export type CoscojasSource = {
   note?: string;
 };
 
+/** 10, 20, then 50 centavos. Composites in catalog-src are 1024×576. */
+export const COSCOJAS_SANTANDER_HOLDING_IDS = [
+  '10-centavos-santander-1902',
+  '20-centavos-santander-1902',
+  '50-centavos-santander-1902',
+] as const;
+
+export const COSCOJAS_SANTANDER_COMPOSITE = {
+  width: 1024,
+  height: 576,
+} as const;
+
 export type CoscojasCopy = {
   nav: string;
   home: string;
@@ -60,6 +72,9 @@ export type CoscojasCopy = {
   factsHeading: string;
   facts: CoscojasFact[];
   imagesNote: string;
+  holdingsHeading: string;
+  holdingsAria: string;
+  viewCoin: string;
   holdingLabel: string;
   holdingHref: string;
   alsoHoldingLabel?: string;
@@ -106,6 +121,9 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
       { label: 'Ref. (50 c)', value: '1,45 g · 23,1 mm', wide: true },
     ],
     imagesNote: 'El 10, el 20 y el 50 centavos de 1902 están en la colección.',
+    holdingsHeading: 'En la colección',
+    holdingsAria: 'Fichas de las coscojas de Santander',
+    viewCoin: 'Abrir la ficha',
     tenHoldingLabel: '10 centavos · Santander · 1902',
     tenHoldingHref: '/coleccion/colombia-numismatica/10-centavos-santander-1902/',
     alsoHoldingLabel: '20 centavos · Santander · 1902',
@@ -251,6 +269,9 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
       { label: 'Ref. (50 c)', value: '1.45 g · 23.1 mm', wide: true },
     ],
     imagesNote: 'The 1902 10, 20, and 50 centavos are in the collection.',
+    holdingsHeading: 'In the collection',
+    holdingsAria: 'Records of the Santander coscojas',
+    viewCoin: 'Open the record',
     tenHoldingLabel: '10 centavos · Santander · 1902',
     tenHoldingHref: '/coleccion/colombia-numismatica/10-centavos-santander-1902/',
     alsoHoldingLabel: '20 centavos · Santander · 1902',
@@ -367,6 +388,31 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     backSeries: 'Back to Colombia-Numismatics',
   },
 };
+
+const coscojasSantanderCardAlts = {
+  es: {
+    '10-centavos-santander-1902':
+      'Anverso y reverso del 10 centavos de Santander, sin fecha: SANTANDER, 10 y C; el reverso es incuso y en espejo.',
+    '20-centavos-santander-1902':
+      'Anverso y reverso del 20 centavos de Santander, 1902: SANTANDER, 20 y la fecha; el reverso es incuso y en espejo.',
+    '50-centavos-santander-1902':
+      'Anverso y reverso del 50 centavos de Santander, 1902: SANTANDER, 50 y la fecha; el reverso es incuso y en espejo.',
+  },
+  en: {
+    '10-centavos-santander-1902':
+      'Obverse and reverse of the undated Santander 10 centavos: SANTANDER, 10, and C; the reverse is incuse and mirrored.',
+    '20-centavos-santander-1902':
+      'Obverse and reverse of the 1902 Santander 20 centavos: SANTANDER, 20, and the date; the reverse is incuse and mirrored.',
+    '50-centavos-santander-1902':
+      'Obverse and reverse of the 1902 Santander 50 centavos: SANTANDER, 50, and the date; the reverse is incuse and mirrored.',
+  },
+} as const;
+
+export function coscojasSantanderCardAlt(id: string, locale: Locale): string {
+  const alt = (coscojasSantanderCardAlts[locale] as Record<string, string>)[id];
+  if (!alt) throw new Error(`Missing Santander coscoja card alt for ${id}`);
+  return alt;
+}
 
 export function coscojasSantanderPath(locale: Locale): string {
   return locale === 'en' ? `/en${COSCOJAS_SANTANDER_PATH_EN}` : COSCOJAS_SANTANDER_PATH;
