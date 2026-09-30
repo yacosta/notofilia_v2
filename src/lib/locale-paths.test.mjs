@@ -725,6 +725,14 @@ describe('locale path mapping', () => {
       redirects['/en/coleccion/colombia-numismatica/50-centavos-lazareto-1931/'],
       '/en/collection/colombia-numismatics/50-centavos-lazareto-1931/',
     );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/50-centavos-santander-1902/'],
+      '/en/collection/colombia-numismatics/50-centavos-santander-1902/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/20-centavos-santander-1902/'],
+      '/en/collection/colombia-numismatics/20-centavos-santander-1902/',
+    );
     assert.equal(redirects['/en/identificar/'], '/en/identify/');
     assert.equal(redirects['/en/herramientas/'], '/en/tools/');
     assert.equal(

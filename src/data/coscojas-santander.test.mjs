@@ -58,6 +58,12 @@ describe('Santander coscojas essay', () => {
     assert.equal(pageSource.includes('section.table'), true);
     const blob = JSON.stringify(coscojasSantanderCopy);
     assert.equal(/eBay|Mercado Libre|USD|US\$/.test(blob), false);
+    assert.equal(
+      coscojasSantanderCopy.es.holdingHref,
+      '/coleccion/colombia-numismatica/50-centavos-santander-1902/',
+    );
+    assert.equal(localizePath(coscojasSantanderCopy.es.holdingHref, 'en'), '/en/collection/colombia-numismatics/50-centavos-santander-1902/');
+    assert.equal(pageSource.includes('t.holdingHref'), true);
     assert.ok(coscojasSantanderCopy.es.sources.some((source) => source.href === 'https://en.numista.com/30954'));
     assert.ok(coscojasSantanderCopy.es.sources.some((source) => source.href === 'https://en.numista.com/48340'));
     assert.ok(coscojasSantanderCopy.en.sources.some((source) => source.href === 'https://en.numista.com/48341'));

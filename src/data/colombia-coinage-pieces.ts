@@ -4,6 +4,7 @@ import {
   colombiaCoinageChapters,
   type ColombiaCoinageChapterId,
 } from './colombia-coinage';
+import { COSCOJAS_SANTANDER_PATH } from './coscojas-santander';
 import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
@@ -12,7 +13,9 @@ export type ColombiaCoinagePieceId =
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
   | '2-centavos-lazareto-1921'
-  | '50-centavos-lazareto-1931';
+  | '50-centavos-lazareto-1931'
+  | '50-centavos-santander-1902'
+  | '20-centavos-santander-1902';
 
 export type ColombiaCoinagePiece = {
   id: ColombiaCoinagePieceId;
@@ -569,6 +572,200 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         label: {
           es: 'Numismática de los Lazaretos',
           en: 'Numismatics of the Lazarettos',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-centavos-santander-1902',
+    path: `${COLOMBIA_COINAGE_PATH}50-centavos-santander-1902/`,
+    chapterId: 'republica',
+    year: '1902',
+    denomination: { es: '50 centavos', en: '50 centavos' },
+    metal: { es: 'Latón (tipo)', en: 'Brass (type specification)' },
+    mint: {
+      es: 'Bucaramanga (tipo; sin marca de ceca en el disco)',
+      en: 'Bucaramanga (type; no mint mark on the disc)',
+    },
+    reference: 'KM# A3 · Restrepo 412 · Hernández Cód. 326 · Numista N#30954',
+    title: {
+      es: '50 centavos · Santander · 1902',
+      en: '50 centavos · Santander · 1902',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santander',
+      en: 'Colombia-Numismatics · Santander',
+    },
+    lead: {
+      es: 'Cincuenta centavos de latón de 1902, del Estado de Santander. El anverso lleva SANTANDER, el 50 y la fecha; el reverso queda incuso y en espejo.',
+      en: 'A 1902 brass necessity piece of the State of Santander. The obverse carries SANTANDER, 50, and the date; the reverse is incuse and reversed.',
+    },
+    description: {
+      es: 'En 1902 el Estado de Santander puso en curso una moneda de necesidad de latón, de una sola cara. Este disco muestra en el anverso SANTANDER en arco, el 50 dentro de un círculo —la «C» grande del tipo— y la fecha 1902. El reverso no tiene cuño propio: el golpe atraviesa la lámina y la leyenda queda incusa y en espejo, de modo que el 50 se lee 05 y 1902 se lee 2001. Es el tipo KM# A3, Restrepo 412 y Hernández Cód. 326 (8.ª ed. 2023), Numista N#30954. La leyenda de catálogo es SANTANDER 50 C 1902. Numista da latón, 1,45 g, 23,1 mm de diámetro, 1,1 mm de grosor, canto liso y alineación de medalla. Son cifras de tipo: este ejemplar no se pesó ni se midió. El general Ramón González Valencia, jefe civil y militar del departamento, autorizó la emisión el 19 de julio de 1902. Los apuntes sitúan el trabajo en el taller de los hermanos Penagos, en Bucaramanga, con casquillos de fusil recogidos tras Palonegro (11 al 25 de mayo de 1900). La misma serie incluye 10 y 20 centavos. El 20 centavos de 1902 está en otra ficha; el 10, no. No es el 50 centavos nacional de plata de 1902, KM# 192, labrado en Filadelfia, ni la moneda exclusiva de los lazaretos. Sin encapsular. La pátina verde y parda y el golpe irregular son propios del latón de cartuchería. Las fotografías no autentican el metal.',
+      en: 'In 1902 the State of Santander issued a one-faced brass necessity coin. This disc shows, on the obverse, SANTANDER in an arc, 50 inside a circle — the type’s large “C” — and the date 1902. The reverse has no die of its own: the blow passes through the sheet, and the legend is left incuse and mirrored, so that 50 reads as 05 and 1902 as 2001. It is type KM# A3, Restrepo 412, and Hernández Cód. 326 (8th ed. 2023), Numista N#30954. The catalogue lettering is SANTANDER 50 C 1902. Numista gives brass, 1.45 g, a diameter of 23.1 mm, a thickness of 1.1 mm, a plain edge, and medal alignment. Those are type figures: this specimen was not weighed or measured. General Ramón González Valencia, civil and military chief of the department, authorized the issue on 19 July 1902. The notes place the work in the workshop of the Penagos brothers, in Bucaramanga, using rifle-cartridge cases gathered after Palonegro (11–25 May 1900). The same series includes 10 and 20 centavos. The 1902 20 centavos is on another record; the 10 is not. It is not the national silver 50 centavos of 1902, KM# 192, struck at Philadelphia, nor the exclusive coin of the lazarettos. Unslabbed. The green and brown patina and the uneven strike belong to cartridge brass. The photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: SANTANDER en arco, 50 dentro del círculo y fecha 1902.',
+      en: 'Obverse: SANTANDER in an arc, 50 inside the circle, and the date 1902.',
+    },
+    backCaption: {
+      es: 'Reverso incuso: la misma leyenda, hundida y en espejo. El 50 se lee 05 y 1902 se lee 2001.',
+      en: 'Incuse reverse: the same legend, recessed and mirrored. 50 reads as 05 and 1902 as 2001.',
+    },
+    scarcity: {
+      es: 'CoinVarieties registra la tirada como desconocida. Los apuntes «Las monedas sangrientas», ya citados en la página de las coscojas, dan 684.000 piezas de 50 centavos —342.000 pesos de valor facial— dentro de los 750.000 pesos autorizados. No es una cifra del Banco de la República: las tablas BanRep de moneda empiezan en 1987. Esta ficha no publica precios ni un censo de encapsulados.',
+      en: 'CoinVarieties records the mintage as unknown. The notes “Las monedas sangrientas”, already cited on the coscojas page, give 684,000 pieces of 50 centavos — 342,000 pesos face value — within the 750,000 pesos authorized. That is not a Banco de la República figure: BanRep’s coin tables begin in 1987. This record publishes neither prices nor a slab census.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. SANTANDER, el 50 y 1902 se leen en el anverso; el reverso es incuso y está al revés. Pátina verde y parda, golpe desigual. Las fotografías no autentican el metal (colección privada)',
+      en: 'Circulated, unslabbed. SANTANDER, 50, and 1902 read on the obverse; the reverse is incuse and reversed. Green and brown patina, uneven strike. Photographs do not authenticate the metal (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-santander-50-centavos-1902-composite.jpg',
+      front: '/images/catalog/colombia/colombia-santander-50-centavos-1902-front.jpg',
+      back: '/images/catalog/colombia/colombia-santander-50-centavos-1902-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/30954',
+        es: 'Numista — 50 centavos, Estado de Santander, 1902 (N#30954)',
+        en: 'Numista — 50 centavos, State of Santander, 1902 (N#30954)',
+        note: {
+          es: 'KM# A3, Hernández 326, Restrepo 412. Latón, 1,45 g, 23,1 mm y 1,1 mm; canto liso; alineación de medalla. Leyenda SANTANDER 50 C 1902, valor dentro de una «C» grande. No se citan columnas de valor.',
+          en: 'KM# A3, Hernández 326, Restrepo 412. Brass, 1.45 g, 23.1 mm, and 1.1 mm; plain edge; medal alignment. Lettering SANTANDER 50 C 1902, the value inside a large “C”. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista cita Hernández 326 para este 50 centavos de 1902. No se publican columnas de precios ni láminas.',
+          en: 'Numista cites Hernández 326 for this 1902 50 centavos. Price columns and plates are not published.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Santander_1902_50_centavos',
+        es: 'CoinVarieties — Santander 1902 50 centavos',
+        en: 'CoinVarieties — Santander 1902 50 centavos',
+        note: {
+          es: 'KM A3, latón, unifaz. Registra la tirada como desconocida. No se publican precios.',
+          en: 'KM A3, brass, uniface. It records the mintage as unknown. Prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/18276',
+        es: 'Numista — 50 centavos de plata, Colombia, 1902 (N#18276)',
+        en: 'Numista — silver 50 centavos, Colombia, 1902 (N#18276)',
+        note: {
+          es: 'KM# 192: plata .835, 12,5 g, 30 mm, ceca de Filadelfia, leyenda REPUBLICA DE COLOMBIA. Es la moneda nacional de ese año, no este disco. No se citan columnas de valor.',
+          en: 'KM# 192: .835 silver, 12.5 g, 30 mm, Philadelphia mint, legend REPUBLICA DE COLOMBIA. That is the national coin of that year, not this disc. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'http://elnumismatico1975.blogspot.com/2015/04/las-monedas-sangrientas.html',
+        es: 'El numismático1975, «Las monedas sangrientas»',
+        en: 'El numismático1975, “Las monedas sangrientas”',
+        note: {
+          es: 'Taller Penagos y 684.000 piezas de 50 centavos. No es un pesaje de este ejemplar.',
+          en: 'The Penagos workshop and 684,000 pieces of 50 centavos. Not a weighing of this specimen.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: COSCOJAS_SANTANDER_PATH,
+        label: {
+          es: 'Las coscojas de Santander',
+          en: 'The coscojas of Santander',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-centavos-santander-1902',
+    path: `${COLOMBIA_COINAGE_PATH}20-centavos-santander-1902/`,
+    chapterId: 'republica',
+    year: '1902',
+    denomination: { es: '20 centavos', en: '20 centavos' },
+    metal: { es: 'Latón (tipo)', en: 'Brass (type specification)' },
+    mint: {
+      es: 'Bucaramanga (tipo; sin marca de ceca en el disco)',
+      en: 'Bucaramanga (type; no mint mark on the disc)',
+    },
+    reference: 'KM# A2 · Restrepo 387 · Hernández Cód. 325 · Numista N#48341',
+    title: {
+      es: '20 centavos · Santander · 1902',
+      en: '20 centavos · Santander · 1902',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santander',
+      en: 'Colombia-Numismatics · Santander',
+    },
+    lead: {
+      es: 'Veinte centavos de latón de 1902, del Estado de Santander. El anverso lleva SANTANDER, el 20 y la fecha; el reverso queda incuso y en espejo.',
+      en: 'A 1902 brass necessity piece of the State of Santander. The obverse carries SANTANDER, 20, and the date; the reverse is incuse and reversed.',
+    },
+    description: {
+      es: 'En 1902 el Estado de Santander puso en curso una moneda de necesidad de latón, de una sola cara, llamada luego coscoja. Este disco muestra en el anverso SANTANDER en arco, el 20 en el centro y la fecha 1902. El reverso no tiene cuño propio: el golpe atraviesa la lámina y la leyenda queda incusa y en espejo, de modo que el 20 se lee 02 y 1902 se lee 2001. Es el tipo KM# A2, Restrepo 387 y Hernández Cód. 325 (8.ª ed. 2023), Numista N#48341. La leyenda de catálogo es SANTANDER C 20 1902. Numista da latón, 0,7 g, 20 mm de diámetro y alineación de medalla. El canto, como en el 50 centavos de la serie, es liso. Son cifras de tipo: este ejemplar no se pesó ni se midió. El general Ramón González Valencia, jefe civil y militar del departamento, autorizó la emisión el 19 de julio de 1902. Los apuntes sitúan el trabajo en el taller de los hermanos Penagos, en Bucaramanga, con casquillos de fusil recogidos tras Palonegro (11 al 25 de mayo de 1900). A diferencia del 10 centavos, que suele ir sin fecha, este 20 centavos lleva 1902. Se conoce un modelo de 20 centavos sin fecha que no llegó a adoptarse; no es este disco. La misma serie incluye el 10 y el 50 centavos; el 50 está en otra ficha. No es el 20 centavos nacional de plata de esos años. Sin encapsular. La pátina verde y parda y el golpe irregular son propios del latón de cartuchería. Las fotografías no autentican el metal.',
+      en: 'In 1902 the State of Santander issued a one-faced brass necessity coin, later called a coscoja. This disc shows, on the obverse, SANTANDER in an arc, 20 in the center, and the date 1902. The reverse has no die of its own: the blow passes through the sheet, and the legend is left incuse and mirrored, so that 20 reads as 02 and 1902 as 2001. It is type KM# A2, Restrepo 387, and Hernández Cód. 325 (8th ed. 2023), Numista N#48341. The catalogue lettering is SANTANDER C 20 1902. Numista gives brass, 0.7 g, a diameter of 20 mm, and medal alignment. The edge, as on the 50 centavos of the series, is plain. Those are type figures: this specimen was not weighed or measured. General Ramón González Valencia, civil and military chief of the department, authorized the issue on 19 July 1902. The notes place the work in the workshop of the Penagos brothers, in Bucaramanga, using rifle-cartridge cases gathered after Palonegro (11–25 May 1900). Unlike the 10 centavos, which is usually undated, this 20 centavos carries 1902. An undated 20-centavo model that was not adopted is known; this disc is not that model. The same series includes the 10 and the 50 centavos; the 50 is on another record. It is not the national silver 20 centavos of those years. Unslabbed. The green and brown patina and the uneven strike belong to cartridge brass. The photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: SANTANDER en arco, 20 en el centro y fecha 1902.',
+      en: 'Obverse: SANTANDER in an arc, 20 in the center, and the date 1902.',
+    },
+    backCaption: {
+      es: 'Reverso incuso: la misma leyenda, hundida y en espejo. El 20 se lee 02 y 1902 se lee 2001.',
+      en: 'Incuse reverse: the same legend, recessed and mirrored. 20 reads as 02 and 1902 as 2001.',
+    },
+    scarcity: {
+      es: 'Numista no publica tirada. Los apuntes «Las monedas sangrientas», ya citados en la página de las coscojas, dan 130.500 piezas de 20 centavos dentro de los 750.000 pesos autorizados. No es una cifra del Banco de la República: las tablas BanRep de moneda empiezan en 1987. Numista publica un índice de rareza de 91, calculado sobre las colecciones de sus miembros. Esta ficha no publica precios ni un censo de encapsulados.',
+      en: 'Numista does not publish a mintage. The notes “Las monedas sangrientas”, already cited on the coscojas page, give 130,500 pieces of 20 centavos within the 750,000 pesos authorized. That is not a Banco de la República figure: BanRep’s coin tables begin in 1987. Numista publishes a rarity index of 91, calculated from its members’ collections. This record publishes neither prices nor a slab census.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. SANTANDER, el 20 y 1902 se leen en el anverso; el reverso es incuso y está al revés. Pátina verde y parda, golpe desigual. Las fotografías no autentican el metal (colección privada)',
+      en: 'Circulated, unslabbed. SANTANDER, 20, and 1902 read on the obverse; the reverse is incuse and reversed. Green and brown patina, uneven strike. Photographs do not authenticate the metal (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-santander-20-centavos-1902-composite.jpg',
+      front: '/images/catalog/colombia/colombia-santander-20-centavos-1902-front.jpg',
+      back: '/images/catalog/colombia/colombia-santander-20-centavos-1902-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/48341',
+        es: 'Numista — 20 centavos, Estado de Santander, 1902 (N#48341)',
+        en: 'Numista — 20 centavos, State of Santander, 1902 (N#48341)',
+        note: {
+          es: 'KM# A2, Hernández 325, Restrepo 387. Latón, 0,7 g y 20 mm; alineación de medalla. Leyenda SANTANDER C 20 1902. Índice de rareza 91. No se citan columnas de valor.',
+          en: 'KM# A2, Hernández 325, Restrepo 387. Brass, 0.7 g, and 20 mm; medal alignment. Lettering SANTANDER C 20 1902. Rarity index 91. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista cita Hernández 325 para este 20 centavos de 1902. No se publican columnas de precios ni láminas.',
+          en: 'Numista cites Hernández 325 for this 1902 20 centavos. Price columns and plates are not published.',
+        },
+      },
+      {
+        href: 'http://elnumismatico1975.blogspot.com/2015/04/las-monedas-sangrientas.html',
+        es: 'El numismático1975, «Las monedas sangrientas»',
+        en: 'El numismático1975, “Las monedas sangrientas”',
+        note: {
+          es: 'Taller Penagos y 130.500 piezas de 20 centavos. No es un pesaje de este ejemplar.',
+          en: 'The Penagos workshop and 130,500 pieces of 20 centavos. Not a weighing of this specimen.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: COSCOJAS_SANTANDER_PATH,
+        label: {
+          es: 'Las coscojas de Santander',
+          en: 'The coscojas of Santander',
         },
       },
     ],

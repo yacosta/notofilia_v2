@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1992-5000-pesos-oro-46772124');
+    assert.equal(additions.at(-1)?.id, 'co-1902-20-centavos-santander');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -129,34 +129,34 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 
-  it('puts the newest 1992 5.000 pesos oro first in Logros del Mes', () => {
-    const holding = additions.find((row) => row.id === 'co-1992-5000-pesos-oro-46772124');
+  it('puts the newest Santander 20 centavos first in Logros del Mes', () => {
+    const holding = additions.find((row) => row.id === 'co-1902-20-centavos-santander');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
     assert.equal(fromEnd, 0);
     assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
     const piece = {
-      id: 'co-5000-pesos-oro-1992',
+      id: 'co-20-centavos-santander-1902',
       country: 'CO',
-      href: '/coleccion/colombia/5000-pesos-oro-1992/',
-      title: { es: '5.000 pesos oro · 1992', en: '5,000 pesos oro · 1992' },
-      dek: { es: 'Serial 46772124', en: 'Serial 46772124' },
-      pick: 'P# 436A · TBB B974b',
-      serial: '46772124',
+      href: '/coleccion/colombia-numismatica/20-centavos-santander-1902/',
+      title: { es: '20 centavos · Santander · 1902', en: '20 centavos · Santander · 1902' },
+      dek: { es: 'Coscoja de 1902', en: '1902 coscoja' },
+      pick: 'KM# A2',
+      serial: '',
       cert: '',
-      image: '/images/catalog/colombia/colombia-banco-de-la-republica-5000-pesos-oro-1992-46772124-front.jpg',
-      imageAlt: { es: 'Anverso', en: 'Face' },
+      image: '/images/catalog/colombia/colombia-santander-20-centavos-1902-composite.jpg',
+      imageAlt: { es: 'Anverso', en: 'Obverse' },
     };
     const [card] = milestonesFromHoldings(additions, [piece]);
-    assert.equal(card.holdingId, 'co-1992-5000-pesos-oro-46772124');
-    assert.match(card.href, /5000-pesos-oro-1992/);
+    assert.equal(card.holdingId, 'co-1902-20-centavos-santander');
+    assert.match(card.href, /20-centavos-santander-1902/);
   });
 
   it('still matches the Cartagena 2 reales after newer holdings fill Logros del Mes', () => {
     const holding = additions.find((row) => row.id === 'co-2-reales-cartagena-1812-1814');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, HOME_MILESTONE_LIMIT + 2);
+    assert.ok(fromEnd > HOME_MILESTONE_LIMIT);
     const piece = catalogPieceForHolding(holding, [
       {
         id: 'co-2-reales-cartagena-1812-1814',
