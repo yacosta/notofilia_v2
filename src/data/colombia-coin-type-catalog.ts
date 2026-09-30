@@ -162,13 +162,14 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     year: '1902',
     denomination: { es: '10 centavos', en: '10 centavos' },
     issuer: { es: 'Necesidad · Palonegro (Santander)', en: 'Necessity · Palonegro (Santander)' },
-    reference: 'Hernández 8.ª ed. 2023',
+    reference: 'KM# A1 · Restrepo 375.1 · Hernández Cód. 324',
     title: { es: '10 centavos · Palonegro · 1902', en: '10 centavos · Palonegro · 1902' },
     dek: {
-      es: 'Moneda de necesidad en latón, Bucaramanga, leyenda Santander. Hernández las llama coscojas: cápsulas de fusil de Palonegro (1902). Distintas de la moneda exclusiva de los lazaretos. Sin ficha de colección.',
-      en: 'Brass necessity coin, Bucaramanga, Santander legend. Hernández calls them coscojas: rifle-cartridge cases from Palonegro (1902). Distinct from lazaretto exclusive coinage. No collection record.',
+      es: 'Diez centavos de Palonegro, sin fecha (1902). En la colección. Hernández las agrupa con el 20 y el 50 como coscojas de guerra, no como moneda de lazareto. Distintas de la moneda exclusiva de los lazaretos.',
+      en: 'Ten centavos of Palonegro, undated (1902). In the collection. Hernández groups them with the 20 and 50 as wartime coscojas, not lazaretto coin. Distinct from lazaretto exclusive coinage.',
     },
-    flags: ['pending'],
+    flags: ['holding'],
+    holdingId: '10-centavos-santander-1902',
   },
   {
     id: '20-centavos-palonegro-1902',

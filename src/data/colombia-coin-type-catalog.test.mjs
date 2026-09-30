@@ -15,7 +15,8 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '50-centavos-lazareto-1931'/);
     assert.match(coinCatalogSource, /holdingId: '50-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '20-centavos-santander-1902'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 8);
+    assert.match(coinCatalogSource, /holdingId: '10-centavos-santander-1902'/);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 9);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /'1-real-bogota-1810-nr-jf'/);
     assert.match(coinagePieceSource, /'2-reales-cartagena-1812-1814'/);
@@ -24,6 +25,7 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinagePieceSource, /'50-centavos-lazareto-1931'/);
     assert.match(coinagePieceSource, /'50-centavos-santander-1902'/);
     assert.match(coinagePieceSource, /'20-centavos-santander-1902'/);
+    assert.match(coinagePieceSource, /'10-centavos-santander-1902'/);
     assert.match(coinagePieceSource, /Atribución pendiente · no es KM# 193.1/);
     assert.match(coinagePieceSource, /Esta ficha no asigna L13 ni L14/);
     assert.doesNotMatch(coinCatalogSource, /serial:\s*'[A-Z0-9]+'/);
