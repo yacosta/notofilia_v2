@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T01:06:04.018Z",
+  "generatedAt": "2026-09-30T01:12:33.133Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4543,7 +4543,7 @@
     {
       "pieceId": "duit-voc-utrecht-1790",
       "face": "front",
-      "hash": "a271333171713123",
+      "hash": "3133237163337131",
       "kind": "coin",
       "path": "/coleccion/paises-bajos-numismatica/duit-voc-utrecht-1790/",
       "pick": "KM# 111 · Scholten 656 y ss. · Numista N# 6585",
@@ -4556,7 +4556,7 @@
     {
       "pieceId": "duit-voc-utrecht-1790",
       "face": "front",
-      "hash": "6b268e879f8ea61e",
+      "hash": "04c414140c0e1484",
       "kind": "coin",
       "path": "/coleccion/paises-bajos-numismatica/duit-voc-utrecht-1790/",
       "pick": "KM# 111 · Scholten 656 y ss. · Numista N# 6585",
@@ -4569,7 +4569,7 @@
     {
       "pieceId": "duit-voc-utrecht-1790",
       "face": "back",
-      "hash": "b4150600060e0a93",
+      "hash": "0cdc14040c0c1584",
       "kind": "coin",
       "path": "/coleccion/paises-bajos-numismatica/duit-voc-utrecht-1790/",
       "pick": "KM# 111 · Scholten 656 y ss. · Numista N# 6585",

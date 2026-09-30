@@ -39,9 +39,9 @@ describe('VOC Utrecht 1790 1 duit', () => {
     assert.match(data, /netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-front\.jpg/);
     assert.match(data, /netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-back\.jpg/);
     assert.match(data, /netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-composite\.jpg/);
-    assert.match(data, /faceWidth: 512/);
+    assert.match(data, /faceWidth: 1024/);
     assert.match(data, /faceHeight: 576/);
-    assert.match(data, /width: 1064/);
+    assert.match(data, /width: 2088/);
     assert.match(data, /height: 576/);
   });
 });

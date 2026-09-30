@@ -452,9 +452,9 @@ export const netherlandsCoins: NetherlandsCoin[] = [
       composite: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-composite.jpg',
       front: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-front.jpg',
       back: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-back.jpg',
-      width: 1064,
+      width: 2088,
       height: 576,
-      faceWidth: 512,
+      faceWidth: 1024,
       faceHeight: 576,
     },
     title: {
