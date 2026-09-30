@@ -394,6 +394,45 @@
       }
     },
     {
+      "pieceId": "10-centavos-santander-1902",
+      "face": "front",
+      "hash": "8c35555331716384",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/10-centavos-santander-1902/",
+      "pick": "KM# A1 · Restrepo 375.1 · Hernández Cód. 324 · Numista N#48340",
+      "image": "/images/catalog/colombia/colombia-santander-10-centavos-1902-composite.jpg",
+      "title": {
+        "es": "10 centavos · Santander · 1902",
+        "en": "10 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "10-centavos-santander-1902",
+      "face": "front",
+      "hash": "8896255b4b0d2742",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/10-centavos-santander-1902/",
+      "pick": "KM# A1 · Restrepo 375.1 · Hernández Cód. 324 · Numista N#48340",
+      "image": "/images/catalog/colombia/colombia-santander-10-centavos-1902-front.jpg",
+      "title": {
+        "es": "10 centavos · Santander · 1902",
+        "en": "10 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "10-centavos-santander-1902",
+      "face": "back",
+      "hash": "422e632d1d230e04",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/10-centavos-santander-1902/",
+      "pick": "KM# A1 · Restrepo 375.1 · Hernández Cód. 324 · Numista N#48340",
+      "image": "/images/catalog/colombia/colombia-santander-10-centavos-1902-back.jpg",
+      "title": {
+        "es": "10 centavos · Santander · 1902",
+        "en": "10 centavos · Santander · 1902"
+      }
+    },
+    {
       "pieceId": "5-pesos-banco-hipotecario-1881",
       "face": "front",
       "hash": "610b1751450b1755",
