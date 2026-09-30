@@ -506,7 +506,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       title: { es: wwiiEmergencyCopy.es.title, en: wwiiEmergencyCopy.en.title },
       dek: { es: wwiiEmergencyCopy.es.metaDescription, en: wwiiEmergencyCopy.en.metaDescription },
       extra:
-        'HAWAII yellow seal Allied Military Currency Operation Bernhard Theresienstadt BAFSV Japanese invasion money RKKS R S experimental',
+        'HAWAII yellow seal Allied Military Currency Operation Bernhard Theresienstadt BAFSV Japanese invasion money RKKS R S experimental guerrilla Shafer Victory Series 66 MPC 461 Ireland war code SIM',
     },
     {
       href: USA_BARABOO_SCRIP_PATH,

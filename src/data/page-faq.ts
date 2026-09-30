@@ -527,8 +527,28 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were BAFSV for?',
       },
       answer: {
-        es: 'Vales de las Fuerzas Armadas británicas, válidos solo en cantinas del NAAFI, para cortar el mercado negro de posguerra. La 1.ª serie (1946) incluye 3 d, 6 d, 1/-, 2/6, 5/-, 10/- y 1 £. La 5.ª se diseñó y no se imprimió. El programa duró, con huecos, hasta 1982.',
-        en: 'British Armed Forces vouchers, valid only in NAAFI canteens, meant to cut the postwar black market. The 1st series (1946) includes 3d, 6d, 1/-, 2/6, 5/-, 10/-, and £1. The 5th series was designed and never printed. The program lasted, with gaps, until 1982.',
+        es: 'Vales de las Fuerzas Armadas británicas, válidos solo en cantinas del NAAFI, para cortar el mercado negro de posguerra. La 1.ª serie (1946) incluye 3 d, 6 d, 1/-, 2/6, 5/-, 10/- y 1 £. La 5.ª se diseñó y no se imprimió. El programa duró, con huecos, hasta 1982. La serie 461 de los certificados de pago militar, de septiembre de 1946, es el primo estadounidense de ese perímetro.',
+        en: 'British Armed Forces vouchers, valid only in NAAFI canteens, meant to cut the postwar black market. The 1st series (1946) includes 3d, 6d, 1/-, 2/6, 5/-, 10/-, and £1. The 5th series was designed and never printed. The program lasted, with gaps, until 1982. Military payment certificate Series 461, of September 1946, is the American cousin of that perimeter.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cómo se reconoce una libra de la Operación Bernhard?',
+        en: 'How do you recognize an Operation Bernhard note?',
+      },
+      answer: {
+        es: 'Un prefijo publicado es un aviso, no un veredicto. En el billete genuino Britania lleva un pendiente redondo y blanco, el gancho del medallón entra en el dibujo, los círculos de TEN en la libra de 10 son completos y la filigrana suele ser menos nítida. El cifrado de la numeración no se reprodujo del todo: el taller reutilizó seriales genuinos. Notofilia no publica precios.',
+        en: 'A published prefix is a warning, not a verdict. On a genuine note Britannia wears a round white earring, the medallion hook runs into the design, the circles around TEN on the £10 are complete, and the watermark is usually less sharp. The numbering cipher was never fully reproduced: the shop reused genuine serials. Notofilia does not publish prices.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el papel de guerrilla filipino?',
+        en: 'What is Philippine guerrilla paper?',
+      },
+      answer: {
+        es: 'Vales de juntas provinciales y municipales, anteriores o posteriores a la rendición, que Shafer y los números S de Pick catalogan aparte del dinero de invasión. La Ley de la República 369 redimió el papel registrado: al par lo anterior a la rendición, y con una escala (100 %, 50 %, 30 %, 15 %) lo posterior. La Serie Victory n.º 66 es la contraparte de la liberación, no el mismo objeto. Las fantasías y las reimpresiones son habituales.',
+        en: 'Vouchers of provincial and municipal boards, pre-surrender or post-surrender, which Shafer and Pick S-numbers catalogue apart from invasion money. Republic Act No. 369 redeemed registered paper: at par for pre-surrender issues, and on a scale (100%, 50%, 30%, 15%) for post-surrender issues. Victory Series No. 66 is the liberation counterpart, not the same object. Fantasies and reprints are common.',
       },
     },
   ],

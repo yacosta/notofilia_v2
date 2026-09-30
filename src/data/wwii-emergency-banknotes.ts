@@ -57,7 +57,7 @@ export const wwiiEmergencyCopy = {
     mpcVietnamLead: 'El mismo perímetro, ya en polímero y en el teatro de Indochina, continúa en la vitrina de Vietnam.',
     mpcVietnamLink: 'MPC - Guerra de Vietnam (1955-1975)',
     updatedLabel: 'Actualizado',
-    updatedDate: '21 de septiembre de 2026',
+    updatedDate: '30 de septiembre de 2026',
     byline: 'Texto de Yezid Acosta',
     philippinesLead: 'El papel de la liberación filipina, distinto de los vales de guerrilla, está en la Serie Victory.',
     philippinesLink: 'Filipinas · Serie Victory',
@@ -101,7 +101,7 @@ export const wwiiEmergencyCopy = {
     mpcVietnamLead: 'The same perimeter, later in the Indochina theatre, continues in the Vietnam MPC case.',
     mpcVietnamLink: 'MPC - Vietnam War (1955-1975)',
     updatedLabel: 'Updated',
-    updatedDate: '21 September 2026',
+    updatedDate: '30 September 2026',
     byline: 'Text by Yezid Acosta',
     philippinesLead: 'Philippine liberation paper, distinct from the guerrilla vouchers, is in the Victory Series.',
     philippinesLink: 'Philippines · Victory Series',
@@ -377,6 +377,41 @@ export const wwiiEmergencySources: CatalogSource[] = [
     href: 'https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA_Ghetto',
     es: 'Wikipedia — gueto de Łódź (Quittungen)',
     en: 'Wikipedia — Łódź Ghetto (Quittungen)',
+  },
+  {
+    href: 'https://lawphil.net/statutes/repacts/ra1949/ra_369_1949.html',
+    es: 'Ley de la República 369 — rescate del papel de emergencia y de guerrilla',
+    en: 'Republic Act No. 369 — redemption of emergency and guerrilla currency',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Emergency_circulating_notes',
+    es: 'Wikipedia — emergency circulating notes (Filipinas)',
+    en: 'Wikipedia — Philippine emergency circulating notes',
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/Japanese_government%E2%80%93issued_Philippine_peso',
+    es: 'Wikipedia — peso filipino emitido por el gobierno japonés',
+    en: 'Wikipedia — Japanese government-issued Philippine peso',
+  },
+  {
+    href: 'https://britishnotes.co.uk/news_and_info/prefix_sightings/bernhard/index.php',
+    es: 'Pam West — prefijos y pruebas de la Operación Bernhard',
+    en: 'Pam West — Operation Bernhard prefixes and tests',
+  },
+  {
+    href: 'https://britishnotes.co.uk/news_and_info/guernseyoverprints/overprintstory.php',
+    es: 'Pam West — emisiones de ocupación de Guernsey',
+    en: 'Pam West — Guernsey occupation issues',
+  },
+  {
+    href: 'https://www.irishpapermoney.com/irish-world-war-2-bank-notes-war-code-notes.html',
+    es: 'Irish Paper Money — código de guerra, 1940–1944',
+    en: 'Irish Paper Money — war code, 1940–1944',
+  },
+  {
+    href: 'https://www.bep.gov/media/1041/download?inline=',
+    es: 'Bureau of Engraving and Printing — certificados de pago militar (serie 461)',
+    en: 'Bureau of Engraving and Printing — military payment certificates (Series 461)',
   },
 ];
 
