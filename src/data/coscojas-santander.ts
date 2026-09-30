@@ -111,6 +111,8 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     factsHeading: 'Datos',
     facts: [
       { label: 'Emisor', value: 'Estado de Santander' },
+      { label: 'Autoridad', value: 'Ramón González Valencia' },
+      { label: 'Tipo', value: 'Moneda de necesidad' },
       { label: 'Año', value: '1902' },
       { label: 'Denominaciones', value: '10, 20 y 50 centavos' },
       { label: 'Metal', value: 'Latón' },
@@ -140,6 +142,25 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         ],
       },
       {
+        id: 'cronologia',
+        title: 'Cronología',
+        paragraphs: [
+          'Son monedas de necesidad del Estado de Santander en guerra, no la plata nacional de 10, 20 y 50 centavos de esos años, ni la moneda exclusiva de los lazaretos, ni un billete de Peralonso.',
+        ],
+        table: {
+          caption: 'De la guerra al canje, 1899–1903',
+          headers: ['Fecha', 'Hecho'],
+          rows: [
+            ['17 de octubre de 1899', 'Empieza la Guerra de los Mil Días.'],
+            ['15 y 16 de diciembre de 1899', 'Batalla de Peralonso.'],
+            ['11 al 25 de mayo de 1900', 'Batalla de Palonegro, junto a Bucaramanga.'],
+            ['19 de julio de 1902', 'González Valencia decreta la moneda fraccionaria, de curso forzoso solo en Santander.'],
+            ['21 de noviembre de 1902', 'Tratado de Wisconsin. Termina la guerra.'],
+            ['29 de enero de 1903', 'Decreto 102: canje por papel nacional y fundición del metal canjeado.'],
+          ],
+        },
+      },
+      {
         id: 'metal',
         title: 'El metal de la batalla',
         paragraphs: [
@@ -151,13 +172,13 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'hecha-a-mano',
         title: 'Una pieza hecha a mano',
         paragraphs: [
-          'No hubo troqueles industriales ni prensas de volante. Los punzones se grabaron a mano. Cada moneda lleva por anverso la denominación dentro de una gran «C». En el 50 centavos la leyenda es «SANTANDER 50 C 1902»; en el 20, «SANTANDER C 20 1902»; en el 10, «SANTANDER 10 C». No hay busto, escudo ni efigie. El reverso no está grabado aparte: el golpe hunde el relieve del anverso y se lee por detrás. La alineación es de medalla. El canto quedó ligeramente redondeado para que la lámina no cortara. Hubo varios juegos de punzones. Al repasarse dejaron remarques; en el 50 centavos, un 50 grueso, un 50 delgado y el cero redondo. Montaña publica además un troquel del 50 gravemente fracturado. Esa factura irregular es lo que las distingue de una acuñación oficial.',
-          'De los 750.000 pesos autorizados, los mismos apuntes registran 393.100 puestos en circulación: 684.000 piezas de 50 centavos, 130.500 de 20 y 250.000 de 10. Las medidas son de catálogo. Esta vitrina no pesó ni midió un ejemplar.',
+          'No hubo troqueles industriales ni prensas de volante. Los punzones se grabaron a mano. Cada moneda lleva por anverso la denominación dentro de una gran «C». En el 50 centavos la leyenda es «SANTANDER 50 C 1902»; en el 20, «SANTANDER C 20 1902»; en el 10, «SANTANDER 10 C». No hay busto, escudo ni efigie. El reverso no está grabado aparte: el golpe hunde el relieve del anverso y se lee por detrás. En las tres, SANTANDER va en arco y el valor queda dentro de la C grande. El 10 no lleva fecha. El 20 y el 50 llevan 1902 bajo el círculo. La alineación de catálogo es de medalla. El canto es liso: Montaña lo anota en el 10 y el 20, y Numista en el 50. Hubo varios juegos de punzones. Al repasarse dejaron remarques; en el 50 centavos, un 50 grueso, un 50 delgado y el cero redondo. Montaña publica además un troquel del 50 gravemente fracturado. Esa factura irregular es lo que las distingue de una acuñación oficial.',
+          'De los 750.000 pesos autorizados, los mismos apuntes registran 393.100 puestos en circulación: 684.000 piezas de 50 centavos, 130.500 de 20 y 250.000 de 10. CoinVarieties deja la tirada del 50 como desconocida, y CGB deja en blanco la cantidad acuñada. Las cifras de la tabla no son un acta de la Casa de Moneda: son las de esos apuntes y las que Montaña toma de Pinilla y Vivas, Moneda y banca en Santander (1990). Las medidas son de catálogo. Esta vitrina no pesó ni midió un ejemplar.',
           'Numista no da el grosor del 20 centavos. Alexander Montaña, en Monedas de Colombia n.º 5 (2019), mide 0,2 a 0,3 mm en la lámina lisa y 0,6 a 0,7 mm en el relieve. La tabla recoge ese segundo tramo, el que se compara con el 0,62 mm del 10 centavos. No es un pesaje de esta vitrina.',
         ],
         table: {
           caption: 'Catálogo y medidas de las tres denominaciones, 1902',
-          headers: ['Denominación', 'Catálogo', 'Peso', 'Diámetro', 'Grosor', 'Leyenda', 'Piezas'],
+          headers: ['Denominación', 'Catálogo', 'Peso', 'Diámetro', 'Grosor', 'Leyenda', 'Piezas (apuntes)'],
           rows: [
             ['50 centavos', 'KM# A3 · Restrepo 412 · Hernández 326', '1,45 g', '23,1 mm', '1,1 mm', 'SANTANDER 50 C 1902', '684.000'],
             ['20 centavos', 'KM# A2 · Restrepo 387 · Hernández 325', '0,7 g', '20 mm', '0,6–0,7 mm', 'SANTANDER C 20 1902', '130.500'],
@@ -188,6 +209,13 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         },
       },
       {
+        id: 'autenticar',
+        title: 'Cómo reconocer una pieza original',
+        paragraphs: [
+          'Montaña separa las piezas originales de 10 y 20 centavos de las fundiciones hechas después para el coleccionismo. La original está acuñada, con cospel plano y muy delgado y canto liso. El reverso incuso queda hueco: ese hueco puede tener mugre y no está relleno de latón. La fundición suele verse más gruesa, con bordes curvos, diseño pobre y el hueco relleno de metal. Esas fundiciones se ven menos en el 50 centavos. Esta página no gradúa ni tasa una pieza. Una pieza dudosa se confirma con la moneda en la mano y con un especialista.',
+        ],
+      },
+      {
         id: 'por-que',
         title: 'Por qué «coscojas»',
         paragraphs: [
@@ -207,7 +235,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'nota-fuentes',
         title: 'Nota sobre las fuentes',
         paragraphs: [
-          'La cápsula de El Tiempo habla de cobre; El Tiempo Colecciones y Numista, de latón. Aquí se adopta latón, que es lo que registra el catálogo con especificaciones medidas. El taller Penagos, las cantidades acuñadas, los 300.000 casquillos estimados y el decreto 102 de 1903 proceden de los apuntes «Las monedas sangrientas». El grosor del 20 centavos, las variedades de leyenda y la nota de lo que sobrevivió a la fundición proceden de Montaña, 2019. Numista lista Restrepo 375 en el 10 centavos; CoinVarieties y la ficha de esta colección precisan 375.1, y esa es la cifra de la tabla. No son un pesaje ni un acta de esta vitrina.',
+          'La cápsula de El Tiempo habla de cobre; El Tiempo Colecciones y Numista, de latón. Aquí se adopta latón, que es lo que registra el catálogo con especificaciones medidas. El taller Penagos, las cantidades acuñadas, los 300.000 casquillos estimados y el decreto 102 de 1903 proceden de los apuntes «Las monedas sangrientas». El grosor del 20 centavos, las variedades de leyenda, las señales de una fundición y la nota de lo que sobrevivió a la fundición proceden de Montaña, 2019. El glosario del Museo Nacional (2006) las llama moneda bracteada o incusa, ordenadas por González Valencia con casquillos recogidos, según Barriga Villalba, en Palonegro. Montaña anota que no se conoce un documento que ate la batalla de 1900 con la orden de 1902. Numista lista KM# A1, A2 y A3. CGB escribe el 50 como KM20/A3 y no publica tirada ni un precio que esta página recoja. Numista lista Restrepo 375 en el 10 centavos; CoinVarieties y la ficha de esta colección precisan 375.1, y esa es la cifra de la tabla. No son un pesaje ni un acta de esta vitrina.',
         ],
       },
     ],
@@ -260,6 +288,21 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         label: 'Museo Nacional de Colombia, Piezas en diálogo',
       },
       {
+        label: 'Museo Nacional de Colombia, Glosario de numismática (2006)',
+        href: 'https://www.museonacional.gov.co/informacion-del-ciudadano/Documents/glosario_numismatica.pdf',
+        note: 'Moneda bracteada o incusa y moneda de necesidad: González Valencia, casquillos según Barriga Villalba y Palonegro.',
+      },
+      {
+        label: 'CoinVarieties, Colombia 1902 50 centavos',
+        href: 'http://www.coinvarieties.com/index.php/Colombia_1902_50_centavos',
+        note: 'Deja la tirada del 50 como desconocida. No se publica su precio.',
+      },
+      {
+        label: 'CGB, 50 centavos, province de Santander, 1902',
+        href: 'https://www.cgbfr.com/colombie-50-centavos-province-de-santander-guerre-des-mille-jours-1902-ttb-,fwo_1098367,a.html',
+        note: 'Referencia KM20/A3. La cantidad acuñada queda en blanco. No se publica el precio del lote.',
+      },
+      {
         label: 'Wikipedia, Guerra de los Mil Días',
         href: 'https://es.wikipedia.org/wiki/Guerra_de_los_Mil_D%C3%ADas',
         note: 'Extensión de la guerra: 17 de octubre de 1899 al 21 de noviembre de 1902.',
@@ -287,6 +330,8 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
     factsHeading: 'Facts',
     facts: [
       { label: 'Issuer', value: 'State of Santander' },
+      { label: 'Authority', value: 'Ramón González Valencia' },
+      { label: 'Type', value: 'Necessity coinage' },
       { label: 'Year', value: '1902' },
       { label: 'Denominations', value: '10, 20, and 50 centavos' },
       { label: 'Metal', value: 'Brass' },
@@ -316,6 +361,25 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         ],
       },
       {
+        id: 'cronologia',
+        title: 'Chronology',
+        paragraphs: [
+          'These are necessity coins of the State of Santander in wartime, not the national silver 10, 20, and 50 centavos of those years, not the exclusive coin of the lazarettos, and not a Peralonso note.',
+        ],
+        table: {
+          caption: 'From the war to the exchange, 1899–1903',
+          headers: ['Date', 'Event'],
+          rows: [
+            ['17 October 1899', 'The War of a Thousand Days begins.'],
+            ['15 and 16 December 1899', 'Battle of Peralonso.'],
+            ['11 to 25 May 1900', 'Battle of Palonegro, beside Bucaramanga.'],
+            ['19 July 1902', 'González Valencia decrees the fractional coinage, forced tender only inside Santander.'],
+            ['21 November 1902', 'Treaty of Wisconsin. The war ends.'],
+            ['29 January 1903', 'Decree 102: exchange for national paper and melting of the metal turned in.'],
+          ],
+        },
+      },
+      {
         id: 'metal',
         title: 'The metal of the battle',
         paragraphs: [
@@ -327,13 +391,13 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'hecha-a-mano',
         title: 'A handmade piece',
         paragraphs: [
-          'There were no industrial dies and no screw press. The punches were cut by hand. Each coin carries on the obverse the denomination inside a large «C». On the 50 centavos the legend is «SANTANDER 50 C 1902»; on the 20, «SANTANDER C 20 1902»; on the 10, «SANTANDER 10 C». There is no bust, arms, or portrait. The reverse is not engraved separately: the blow sinks the obverse relief, which is read from the back. The alignment is medal. The edge was slightly rounded so the sheet would not cut. There were several sets of punches. Recutting left doubled lettering; on the 50 centavos, a thick 50, a thin 50, and the round zero. Montaña also publishes a badly fractured 50-centavo die. That irregular workmanship is what sets the pieces apart from an official striking.',
-          'Of the 750,000 pesos authorized, the same notes record 393,100 put into circulation: 684,000 pieces of 50 centavos, 130,500 of 20, and 250,000 of 10. The measurements are catalogue figures. This case did not weigh or measure a specimen.',
+          'There were no industrial dies and no screw press. The punches were cut by hand. Each coin carries on the obverse the denomination inside a large «C». On the 50 centavos the legend is «SANTANDER 50 C 1902»; on the 20, «SANTANDER C 20 1902»; on the 10, «SANTANDER 10 C». There is no bust, arms, or portrait. The reverse is not engraved separately: the blow sinks the obverse relief, which is read from the back. On all three, SANTANDER sits in an arc and the value sits inside the large C. The 10 carries no date. The 20 and the 50 carry 1902 below that circle. The catalogue alignment is medal. The edge is plain: Montaña notes it on the 10 and the 20, and Numista on the 50. There were several sets of punches. Recutting left doubled lettering; on the 50 centavos, a thick 50, a thin 50, and the round zero. Montaña also publishes a badly fractured 50-centavo die. That irregular workmanship is what sets the pieces apart from an official striking.',
+          'Of the 750,000 pesos authorized, the same notes record 393,100 put into circulation: 684,000 pieces of 50 centavos, 130,500 of 20, and 250,000 of 10. CoinVarieties leaves the 50-centavo mintage unknown, and CGB leaves the quantity minted blank. The figures in the table are not a Casa de Moneda record: they are those notes, and the counts Montaña takes from Pinilla and Vivas, Moneda y banca en Santander (1990). The measurements are catalogue figures. This case did not weigh or measure a specimen.',
           'Numista does not give a thickness for the 20 centavos. Alexander Montaña, in Monedas de Colombia no. 5 (2019), measures 0.2 to 0.3 mm on the flat sheet and 0.6 to 0.7 mm on the relief. The table uses that second span, the one that sits beside the 0.62 mm of the 10 centavos. It is not a weighing of this case.',
         ],
         table: {
           caption: 'Catalogue numbers and measurements of the three denominations, 1902',
-          headers: ['Denomination', 'Catalogue', 'Weight', 'Diameter', 'Thickness', 'Legend', 'Pieces'],
+          headers: ['Denomination', 'Catalogue', 'Weight', 'Diameter', 'Thickness', 'Legend', 'Pieces (notes)'],
           rows: [
             ['50 centavos', 'KM# A3 · Restrepo 412 · Hernández 326', '1.45 g', '23.1 mm', '1.1 mm', 'SANTANDER 50 C 1902', '684,000'],
             ['20 centavos', 'KM# A2 · Restrepo 387 · Hernández 325', '0.7 g', '20 mm', '0.6–0.7 mm', 'SANTANDER C 20 1902', '130,500'],
@@ -364,6 +428,13 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         },
       },
       {
+        id: 'autenticar',
+        title: 'How to recognize an original piece',
+        paragraphs: [
+          'Montaña separates the original 10- and 20-centavo pieces from the later castings made for collectors. The original is struck, on a flat and very thin planchet, with a plain edge. The incuse reverse stays hollow: that hollow may hold dirt, not more brass. A casting tends to look thicker, with curved edges, a poor design, and the hollow filled with metal. The 50 centavos is the denomination on which those castings are least often seen. This page neither grades nor prices a piece. A doubtful attribution is settled with the coin in hand and with someone who studies it.',
+        ],
+      },
+      {
         id: 'por-que',
         title: 'Why «coscojas»',
         paragraphs: [
@@ -383,7 +454,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'nota-fuentes',
         title: 'A note on the sources',
         paragraphs: [
-          'El Tiempo’s capsule speaks of copper; El Tiempo Colecciones and Numista, of brass. This page adopts brass, which is what the catalogue records with measured specifications. The Penagos workshop, the quantities struck, the estimated 300,000 casings, and decree 102 of 1903 come from the notes “Las monedas sangrientas.” The thickness of the 20 centavos, the legend varieties, and the note on what survived the melting come from Montaña, 2019. Numista lists Restrepo 375 for the 10 centavos; CoinVarieties and this collection’s record specify 375.1, and that is the figure in the table. They are not a weighing or a record of this case.',
+          'El Tiempo’s capsule speaks of copper; El Tiempo Colecciones and Numista, of brass. This page adopts brass, which is what the catalogue records with measured specifications. The Penagos workshop, the quantities struck, the estimated 300,000 casings, and decree 102 of 1903 come from the notes “Las monedas sangrientas.” The thickness of the 20 centavos, the legend varieties, the signs of a casting, and the note on what survived the melting come from Montaña, 2019. The National Museum glossary (2006) calls them bracteate or incuse coins, ordered by González Valencia from cartridge cases gathered, according to Barriga Villalba, at Palonegro. Montaña notes that no document is known which ties the battle of 1900 to the order of 1902. Numista lists KM# A1, A2, and A3. CGB writes the 50 as KM20/A3 and publishes neither a mintage nor a price this page records. Numista lists Restrepo 375 for the 10 centavos; CoinVarieties and this collection’s record specify 375.1, and that is the figure in the table. They are not a weighing or a record of this case.',
         ],
       },
     ],
@@ -434,6 +505,21 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
       },
       {
         label: 'Museo Nacional de Colombia, Piezas en diálogo',
+      },
+      {
+        label: 'Museo Nacional de Colombia, Numismatic glossary (2006)',
+        href: 'https://www.museonacional.gov.co/informacion-del-ciudadano/Documents/glosario_numismatica.pdf',
+        note: 'Bracteate or incuse coin and necessity coin: González Valencia, cartridge cases according to Barriga Villalba, and Palonegro.',
+      },
+      {
+        label: 'CoinVarieties, Colombia 1902 50 centavos',
+        href: 'http://www.coinvarieties.com/index.php/Colombia_1902_50_centavos',
+        note: 'Leaves the 50-centavo mintage unknown. Its price is not published.',
+      },
+      {
+        label: 'CGB, 50 centavos, province de Santander, 1902',
+        href: 'https://www.cgbfr.com/colombie-50-centavos-province-de-santander-guerre-des-mille-jours-1902-ttb-,fwo_1098367,a.html',
+        note: 'Reference KM20/A3. The quantity minted is left blank. The lot price is not published.',
       },
       {
         label: 'Wikipedia, Guerra de los Mil Días',

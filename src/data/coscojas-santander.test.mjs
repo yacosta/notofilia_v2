@@ -46,6 +46,16 @@ describe('Santander coscojas essay', () => {
     const specs = coscojasSantanderCopy.es.sections.find((section) => section.id === 'hecha-a-mano');
     assert.equal(specs?.table?.rows.length, 3);
     assert.equal(specs?.table?.headers[1], 'Catálogo');
+    assert.equal(specs?.table?.headers[6], 'Piezas (apuntes)');
+    const chronology = coscojasSantanderCopy.es.sections.find((section) => section.id === 'cronologia');
+    assert.equal(chronology?.table?.rows.length, 6);
+    assert.match(chronology?.table?.rows.at(-1)?.[1] ?? '', /Decreto 102/);
+    const authenticate = coscojasSantanderCopy.es.sections.find((section) => section.id === 'autenticar');
+    assert.match(authenticate?.paragraphs[0] ?? '', /incuso/);
+    assert.match(
+      coscojasSantanderCopy.es.sections.find((section) => section.id === 'hecha-a-mano')?.paragraphs[1] ?? '',
+      /desconocida/,
+    );
     assert.equal(specs?.table?.rows[0][1], 'KM# A3 · Restrepo 412 · Hernández 326');
     assert.equal(specs?.table?.rows[0][2], '1,45 g');
     assert.equal(specs?.table?.rows[1][1], 'KM# A2 · Restrepo 387 · Hernández 325');
@@ -86,7 +96,7 @@ describe('Santander coscojas essay', () => {
     assert.equal(coscojasSantanderCopy.es.viewCoin, 'Abrir la ficha');
     assert.equal(coscojasSantanderCopy.en.viewCoin, 'Open the record');
     const blob = JSON.stringify(coscojasSantanderCopy);
-    assert.equal(/eBay|Mercado Libre|USD|US\$/.test(blob), false);
+    assert.equal(/eBay|Mercado Libre|USD|US\$|€/.test(blob), false);
     assert.equal(
       coscojasSantanderCopy.es.holdingHref,
       '/coleccion/colombia-numismatica/50-centavos-santander-1902/',
