@@ -206,6 +206,8 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
       path: coin.path,
       pick: coin.references,
       title: coin.title,
+      imageFront: coin.images.front,
+      imageBack: coin.images.back,
       imageComposite: coin.images.composite,
     });
   }

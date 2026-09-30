@@ -190,6 +190,7 @@ export const additions: Holding[] = [
   { id: 'us-csa-1862-100-11657l', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-10-new-york-b42488184', kind: 'banknote', country: 'US' },
   { id: 'co-1992-5000-pesos-oro-46772124', kind: 'banknote', country: 'CO' },
+  { id: 'nl-1790-duit-voc-utrecht-8703937-175', kind: 'coin', country: 'NL' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -306,6 +307,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-csa-1862-100-t41-p45' },
   { id: 'us-frn-1934a-10-new-york-fr2006b' },
   { id: 'co-1992-5000-pesos-oro-p436a-b974b' },
+  { id: 'nl-1790-1-duit-voc-km111' },
 ];
 
 export type CollectionStats = {

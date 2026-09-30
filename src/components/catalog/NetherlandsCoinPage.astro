@@ -138,25 +138,59 @@ const jsonCrumbs = [
         </dl>
       </section>
 
-      <figure class="m-0">
-        <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-          {copy[locale].obverseReverse}
-        </h2>
-        <NoteImageLightbox
-          src={coin.images.composite}
-          alt={`${coin.frontCaption[locale]} ${coin.backCaption[locale]}`}
-          expandLabel={t.expandImage}
-          closeLabel={t.closeLightbox}
-          locale={locale}
-          width={coin.images.width}
-          height={coin.images.height}
-          eager
-        />
-        <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">
-          <span class="block">{coin.frontCaption[locale]}</span>
-          <span class="mt-2 block">{coin.backCaption[locale]}</span>
-        </figcaption>
-      </figure>
+      {
+        coin.images.front && coin.images.back ? (
+          <div class="grid gap-10 lg:grid-cols-2">
+            <figure class="m-0">
+              <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
+              <NoteImageLightbox
+                src={coin.images.front}
+                alt={coin.frontCaption[locale]}
+                expandLabel={t.expandImage}
+                closeLabel={t.closeLightbox}
+                locale={locale}
+                width={coin.images.faceWidth ?? coin.images.width}
+                height={coin.images.faceHeight ?? coin.images.height}
+                eager
+              />
+              <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.frontCaption[locale]}</figcaption>
+            </figure>
+            <figure class="m-0">
+              <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
+              <NoteImageLightbox
+                src={coin.images.back}
+                alt={coin.backCaption[locale]}
+                expandLabel={t.expandImage}
+                closeLabel={t.closeLightbox}
+                locale={locale}
+                width={coin.images.faceWidth ?? coin.images.width}
+                height={coin.images.faceHeight ?? coin.images.height}
+              />
+              <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.backCaption[locale]}</figcaption>
+            </figure>
+          </div>
+        ) : (
+          <figure class="m-0">
+            <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+              {copy[locale].obverseReverse}
+            </h2>
+            <NoteImageLightbox
+              src={coin.images.composite}
+              alt={`${coin.frontCaption[locale]} ${coin.backCaption[locale]}`}
+              expandLabel={t.expandImage}
+              closeLabel={t.closeLightbox}
+              locale={locale}
+              width={coin.images.width}
+              height={coin.images.height}
+              eager
+            />
+            <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">
+              <span class="block">{coin.frontCaption[locale]}</span>
+              <span class="mt-2 block">{coin.backCaption[locale]}</span>
+            </figcaption>
+          </figure>
+        )
+      }
 
       <section class="mt-14" aria-labelledby="about-heading">
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
