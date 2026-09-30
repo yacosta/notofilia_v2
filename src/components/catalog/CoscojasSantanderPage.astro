@@ -103,7 +103,28 @@ const jsonLd = {
             ))
           }
         </dl>
-        <p class="mb-0 mt-6 font-sans text-[15px]/6 text-muted">{t.imagesNote}</p>
+        <p class="mb-0 mt-6 font-sans text-[15px]/6 text-muted">
+          {t.imagesNote}{' '}
+          {
+            t.alsoHoldingHref && t.alsoHoldingLabel ? (
+              <>
+                <a
+                  href={localizePath(t.alsoHoldingHref, locale)}
+                  class="text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {t.alsoHoldingLabel}
+                </a>
+                {' · '}
+              </>
+            ) : null
+          }
+          <a
+            href={localizePath(t.holdingHref, locale)}
+            class="text-gold-light underline decoration-line-strong hover:text-cream"
+          >
+            {t.holdingLabel}
+          </a>
+        </p>
       </section>
 
       {

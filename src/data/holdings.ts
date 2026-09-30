@@ -191,6 +191,8 @@ export const additions: Holding[] = [
   { id: 'us-frn-1934a-10-new-york-b42488184', kind: 'banknote', country: 'US' },
   { id: 'co-1992-5000-pesos-oro-46772124', kind: 'banknote', country: 'CO' },
   { id: 'nl-1790-duit-voc-utrecht-8703937-175', kind: 'coin', country: 'NL' },
+  { id: 'co-1902-50-centavos-santander', kind: 'coin', country: 'CO' },
+  { id: 'co-1902-20-centavos-santander', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -308,6 +310,8 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-frn-1934a-10-new-york-fr2006b' },
   { id: 'co-1992-5000-pesos-oro-p436a-b974b' },
   { id: 'nl-1790-1-duit-voc-km111' },
+  { id: 'co-1902-50-centavos-santander-km-a3' },
+  { id: 'co-1902-20-centavos-santander-km-a2' },
 ];
 
 export type CollectionStats = {

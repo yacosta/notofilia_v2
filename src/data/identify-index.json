@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T01:32:41.740Z",
+  "generatedAt": "2026-09-30T04:45:09.336Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -313,6 +313,84 @@
       "title": {
         "es": "50 centavos · Lazareto · 1931",
         "en": "50 centavos · Lazaretto · 1931"
+      }
+    },
+    {
+      "pieceId": "50-centavos-santander-1902",
+      "face": "front",
+      "hash": "8c355553b7513394",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-santander-1902/",
+      "pick": "KM# A3 · Restrepo 412 · Hernández Cód. 326 · Numista N#30954",
+      "image": "/images/catalog/colombia/colombia-santander-50-centavos-1902-composite.jpg",
+      "title": {
+        "es": "50 centavos · Santander · 1902",
+        "en": "50 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "50-centavos-santander-1902",
+      "face": "front",
+      "hash": "880e156853752f62",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-santander-1902/",
+      "pick": "KM# A3 · Restrepo 412 · Hernández Cód. 326 · Numista N#30954",
+      "image": "/images/catalog/colombia/colombia-santander-50-centavos-1902-front.jpg",
+      "title": {
+        "es": "50 centavos · Santander · 1902",
+        "en": "50 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "50-centavos-santander-1902",
+      "face": "back",
+      "hash": "443631cbb14f3604",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-santander-1902/",
+      "pick": "KM# A3 · Restrepo 412 · Hernández Cód. 326 · Numista N#30954",
+      "image": "/images/catalog/colombia/colombia-santander-50-centavos-1902-back.jpg",
+      "title": {
+        "es": "50 centavos · Santander · 1902",
+        "en": "50 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "20-centavos-santander-1902",
+      "face": "front",
+      "hash": "8c3531b355572394",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/20-centavos-santander-1902/",
+      "pick": "KM# A2 · Restrepo 387 · Hernández Cód. 325 · Numista N#48341",
+      "image": "/images/catalog/colombia/colombia-santander-20-centavos-1902-composite.jpg",
+      "title": {
+        "es": "20 centavos · Santander · 1902",
+        "en": "20 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "20-centavos-santander-1902",
+      "face": "front",
+      "hash": "8896256a6e151752",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/20-centavos-santander-1902/",
+      "pick": "KM# A2 · Restrepo 387 · Hernández Cód. 325 · Numista N#48341",
+      "image": "/images/catalog/colombia/colombia-santander-20-centavos-1902-front.jpg",
+      "title": {
+        "es": "20 centavos · Santander · 1902",
+        "en": "20 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "20-centavos-santander-1902",
+      "face": "back",
+      "hash": "42ba058b8b2f2605",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/20-centavos-santander-1902/",
+      "pick": "KM# A2 · Restrepo 387 · Hernández Cód. 325 · Numista N#48341",
+      "image": "/images/catalog/colombia/colombia-santander-20-centavos-1902-back.jpg",
+      "title": {
+        "es": "20 centavos · Santander · 1902",
+        "en": "20 centavos · Santander · 1902"
       }
     },
     {

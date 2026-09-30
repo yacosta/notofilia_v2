@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('20-centavos-santander-1902');
+if (!piece) throw new Error('Missing Santander 1902 20 centavos');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />
