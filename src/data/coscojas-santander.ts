@@ -151,16 +151,39 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'hecha-a-mano',
         title: 'Una pieza hecha a mano',
         paragraphs: [
-          'No hubo troqueles industriales ni prensas de volante. Los punzones se grabaron a mano. Cada moneda lleva por anverso la denominación dentro de una gran «C». En el 50 centavos la leyenda es «SANTANDER 50 C 1902»; en el 20, «SANTANDER C 20 1902»; en el 10, «SANTANDER 10 C». No hay busto, escudo ni efigie. El reverso no está grabado aparte: el golpe hunde el relieve del anverso y se lee por detrás. La alineación es de medalla. El canto quedó ligeramente redondeado para que la lámina no cortara. Los troqueles se quebraban y dejaron variedades de leyenda. Esa factura irregular es lo que las distingue de una acuñación oficial.',
+          'No hubo troqueles industriales ni prensas de volante. Los punzones se grabaron a mano. Cada moneda lleva por anverso la denominación dentro de una gran «C». En el 50 centavos la leyenda es «SANTANDER 50 C 1902»; en el 20, «SANTANDER C 20 1902»; en el 10, «SANTANDER 10 C». No hay busto, escudo ni efigie. El reverso no está grabado aparte: el golpe hunde el relieve del anverso y se lee por detrás. La alineación es de medalla. El canto quedó ligeramente redondeado para que la lámina no cortara. Hubo varios juegos de punzones. Al repasarse dejaron remarques; en el 50 centavos, un 50 grueso, un 50 delgado y el cero redondo. Montaña publica además un troquel del 50 gravemente fracturado. Esa factura irregular es lo que las distingue de una acuñación oficial.',
           'De los 750.000 pesos autorizados, los mismos apuntes registran 393.100 puestos en circulación: 684.000 piezas de 50 centavos, 130.500 de 20 y 250.000 de 10. Las medidas son de catálogo. Esta vitrina no pesó ni midió un ejemplar.',
+          'Numista no da el grosor del 20 centavos. Alexander Montaña, en Monedas de Colombia n.º 5 (2019), mide 0,2 a 0,3 mm en la lámina lisa y 0,6 a 0,7 mm en el relieve. La tabla recoge ese segundo tramo, el que se compara con el 0,62 mm del 10 centavos. No es un pesaje de esta vitrina.',
         ],
         table: {
-          caption: 'Medidas de catálogo de las tres denominaciones, 1902',
-          headers: ['Denominación', 'Peso', 'Diámetro', 'Grosor', 'Leyenda', 'Piezas'],
+          caption: 'Catálogo y medidas de las tres denominaciones, 1902',
+          headers: ['Denominación', 'Catálogo', 'Peso', 'Diámetro', 'Grosor', 'Leyenda', 'Piezas'],
           rows: [
-            ['50 centavos', '1,45 g', '23,1 mm', '1,1 mm', 'SANTANDER 50 C 1902', '684.000'],
-            ['20 centavos', '0,7 g', '20 mm', '—', 'SANTANDER C 20 1902', '130.500'],
-            ['10 centavos', '0,5 g', '15,5 mm', '0,62 mm', 'SANTANDER 10 C', '250.000'],
+            ['50 centavos', 'KM# A3 · Restrepo 412 · Hernández 326', '1,45 g', '23,1 mm', '1,1 mm', 'SANTANDER 50 C 1902', '684.000'],
+            ['20 centavos', 'KM# A2 · Restrepo 387 · Hernández 325', '0,7 g', '20 mm', '0,6–0,7 mm', 'SANTANDER C 20 1902', '130.500'],
+            ['10 centavos', 'KM# A1 · Restrepo 375.1 · Hernández 324', '0,5 g', '15,5 mm', '0,62 mm', 'SANTANDER 10 C', '250.000'],
+          ],
+        },
+      },
+      {
+        id: 'variedades',
+        title: 'Variedades de leyenda',
+        paragraphs: [
+          'Montaña nombra, dentro de cada denominación, las variedades de leyenda que dejan los punzones repasados y los distintos juegos de troqueles. Las tres fichas de arriba muestran las leyendas ordinarias. Esta página no reproduce las láminas de ese boletín.',
+        ],
+        table: {
+          caption: 'Variedades de leyenda nombradas por Montaña, 2019',
+          headers: ['Variedad', 'Denominación', 'Rasgo'],
+          rows: [
+            ['Normal', '10 centavos', 'SANTANDER 10 C. Sin fecha.'],
+            ['Leyenda remarcada', '10 centavos', 'Letras y números gruesos. El remarque puede ser total o parcial.'],
+            ['Normal', '20 centavos', 'SANTANDER C 20 1902.'],
+            ['2 remarcado', '20 centavos', 'El 2 de la denominación se ve rehecho.'],
+            ['Modelo sin fecha', '20 centavos', 'Rosetas a ambos lados del valor. No se adoptó. Se conoce reacuñado bajo un 50 centavos.'],
+            ['50 grueso', '50 centavos', 'El tipo usual: SANTANDER 50 C 1902.'],
+            ['50 delgado', '50 centavos', 'El 50 es de trazo fino.'],
+            ['Leyenda remarcada', '50 centavos', 'Remarque total o parcial. A veces hay letras llenas o incompletas.'],
+            ['Cero redondo', '50 centavos', 'Restrepo 412-1a (2012). Otro tipo de letra y de números. El cero es casi redondo.'],
           ],
         },
       },
@@ -176,7 +199,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'retiro',
         title: 'El canje y la fundición',
         paragraphs: [
-          'El Tratado de Wisconsin cerró la guerra el 21 de noviembre de 1902. El 29 de enero de 1903, José Manuel Marroquín, vicepresidente encargado del ejecutivo, firmó el decreto 102. Los apuntes numismáticos le atribuyen tres pasos: reconoció por un tiempo las piezas de González Valencia, siempre solo dentro de Santander; mandó al Ministerio del Tesoro ventanillas de canje por papel nacional; y ordenó fundir el metal ya canjeado. La mayor parte de lo labrado en el taller Penagos volvió al crisol. Lo que quedó fuera de esa fundición es lo que hoy se conserva.',
+          'El Tratado de Wisconsin cerró la guerra el 21 de noviembre de 1902. El 29 de enero de 1903, José Manuel Marroquín, vicepresidente encargado del ejecutivo, firmó el decreto 102. Los apuntes numismáticos le atribuyen tres pasos: reconoció por un tiempo las piezas de González Valencia, siempre solo dentro de Santander; mandó al Ministerio del Tesoro ventanillas de canje por papel nacional; y ordenó fundir el metal ya canjeado. La mayor parte de lo labrado en el taller Penagos volvió al crisol. Lo que quedó fuera de esa fundición es lo que hoy se conserva. Montaña anota que, de lo que no llegó al crisol, el 50 centavos es la pieza que más se encuentra, y el 10 y el 20 las escasas.',
           'Ese retiro cabe en el arreglo monetario de después de la guerra. La Ley 33 de octubre de 1903 prohibió nuevas emisiones indiscriminadas de papel, fijó el peso oro como unidad y creó la Junta Nacional de Amortización para recoger el papel depreciado. En el Museo Casa de Moneda, y en la obra comentada de Banrepcultural, estas piezas se muestran junto a los billetes de Peralonso.',
         ],
       },
@@ -184,7 +207,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'nota-fuentes',
         title: 'Nota sobre las fuentes',
         paragraphs: [
-          'La cápsula de El Tiempo habla de cobre; El Tiempo Colecciones y Numista, de latón. Aquí se adopta latón, que es lo que registra el catálogo con especificaciones medidas. El taller Penagos, las cantidades acuñadas, los 300.000 casquillos estimados y el decreto 102 de 1903 proceden de los apuntes «Las monedas sangrientas». No son un pesaje ni un acta de esta colección.',
+          'La cápsula de El Tiempo habla de cobre; El Tiempo Colecciones y Numista, de latón. Aquí se adopta latón, que es lo que registra el catálogo con especificaciones medidas. El taller Penagos, las cantidades acuñadas, los 300.000 casquillos estimados y el decreto 102 de 1903 proceden de los apuntes «Las monedas sangrientas». El grosor del 20 centavos, las variedades de leyenda y la nota de lo que sobrevivió a la fundición proceden de Montaña, 2019. Numista lista Restrepo 375 en el 10 centavos; CoinVarieties y la ficha de esta colección precisan 375.1, y esa es la cifra de la tabla. No son un pesaje ni un acta de esta vitrina.',
         ],
       },
     ],
@@ -222,6 +245,11 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         label: 'El numismático1975, «Las monedas sangrientas»',
         href: 'http://elnumismatico1975.blogspot.com/2015/04/las-monedas-sangrientas.html',
         note: 'Taller Penagos, 684.000, 130.500 y 250.000 piezas, decreto 102 de 1903 y fundición posterior.',
+      },
+      {
+        label: 'Alexander Montaña Rodríguez, Monedas de Colombia n.º 5 (octubre de 2019)',
+        href: 'http://www.mascoleccionismo.com/publicaciones/MFMCol/MoneCol_005.pdf',
+        note: 'Grosor del 20 centavos, variedades de leyenda y la nota de lo que escapó a la fundición. No se reproducen láminas ni precios.',
       },
       {
         label: 'Banrepcultural, Obra comentada: billetes de Peralonso y coscojas de Palonegro',
@@ -299,16 +327,39 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'hecha-a-mano',
         title: 'A handmade piece',
         paragraphs: [
-          'There were no industrial dies and no screw press. The punches were cut by hand. Each coin carries on the obverse the denomination inside a large «C». On the 50 centavos the legend is «SANTANDER 50 C 1902»; on the 20, «SANTANDER C 20 1902»; on the 10, «SANTANDER 10 C». There is no bust, arms, or portrait. The reverse is not engraved separately: the blow sinks the obverse relief, which is read from the back. The alignment is medal. The edge was slightly rounded so the sheet would not cut. The dies broke and left legend varieties. That irregular workmanship is what sets the pieces apart from an official striking.',
+          'There were no industrial dies and no screw press. The punches were cut by hand. Each coin carries on the obverse the denomination inside a large «C». On the 50 centavos the legend is «SANTANDER 50 C 1902»; on the 20, «SANTANDER C 20 1902»; on the 10, «SANTANDER 10 C». There is no bust, arms, or portrait. The reverse is not engraved separately: the blow sinks the obverse relief, which is read from the back. The alignment is medal. The edge was slightly rounded so the sheet would not cut. There were several sets of punches. Recutting left doubled lettering; on the 50 centavos, a thick 50, a thin 50, and the round zero. Montaña also publishes a badly fractured 50-centavo die. That irregular workmanship is what sets the pieces apart from an official striking.',
           'Of the 750,000 pesos authorized, the same notes record 393,100 put into circulation: 684,000 pieces of 50 centavos, 130,500 of 20, and 250,000 of 10. The measurements are catalogue figures. This case did not weigh or measure a specimen.',
+          'Numista does not give a thickness for the 20 centavos. Alexander Montaña, in Monedas de Colombia no. 5 (2019), measures 0.2 to 0.3 mm on the flat sheet and 0.6 to 0.7 mm on the relief. The table uses that second span, the one that sits beside the 0.62 mm of the 10 centavos. It is not a weighing of this case.',
         ],
         table: {
-          caption: 'Catalogue measurements of the three denominations, 1902',
-          headers: ['Denomination', 'Weight', 'Diameter', 'Thickness', 'Legend', 'Pieces'],
+          caption: 'Catalogue numbers and measurements of the three denominations, 1902',
+          headers: ['Denomination', 'Catalogue', 'Weight', 'Diameter', 'Thickness', 'Legend', 'Pieces'],
           rows: [
-            ['50 centavos', '1.45 g', '23.1 mm', '1.1 mm', 'SANTANDER 50 C 1902', '684,000'],
-            ['20 centavos', '0.7 g', '20 mm', '—', 'SANTANDER C 20 1902', '130,500'],
-            ['10 centavos', '0.5 g', '15.5 mm', '0.62 mm', 'SANTANDER 10 C', '250,000'],
+            ['50 centavos', 'KM# A3 · Restrepo 412 · Hernández 326', '1.45 g', '23.1 mm', '1.1 mm', 'SANTANDER 50 C 1902', '684,000'],
+            ['20 centavos', 'KM# A2 · Restrepo 387 · Hernández 325', '0.7 g', '20 mm', '0.6–0.7 mm', 'SANTANDER C 20 1902', '130,500'],
+            ['10 centavos', 'KM# A1 · Restrepo 375.1 · Hernández 324', '0.5 g', '15.5 mm', '0.62 mm', 'SANTANDER 10 C', '250,000'],
+          ],
+        },
+      },
+      {
+        id: 'variedades',
+        title: 'Legend varieties',
+        paragraphs: [
+          'Montaña names, within each denomination, the legend varieties left by recut punches and by the different die sets. The three records above show the ordinary legends. This page does not reproduce the plates in that bulletin.',
+        ],
+        table: {
+          caption: 'Legend varieties named by Montaña, 2019',
+          headers: ['Variety', 'Denomination', 'Trait'],
+          rows: [
+            ['Ordinary', '10 centavos', 'SANTANDER 10 C. No date.'],
+            ['Recut legend', '10 centavos', 'Thick letters and numerals. The recut may be full or partial.'],
+            ['Ordinary', '20 centavos', 'SANTANDER C 20 1902.'],
+            ['Recut 2', '20 centavos', 'The 2 of the denomination is visibly recut.'],
+            ['Undated model', '20 centavos', 'Rosettes on either side of the value. It was not adopted. It is known restruck under a 50 centavos.'],
+            ['Thick 50', '50 centavos', 'The usual type: SANTANDER 50 C 1902.'],
+            ['Thin 50', '50 centavos', 'The 50 is finely cut.'],
+            ['Recut legend', '50 centavos', 'A full or partial recut. Some letters are filled or incomplete.'],
+            ['Round zero', '50 centavos', 'Restrepo 412-1a (2012). A different style of letter and numeral. The zero is nearly round.'],
           ],
         },
       },
@@ -324,7 +375,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'retiro',
         title: 'The exchange and the melting',
         paragraphs: [
-          'The Treaty of Wisconsin ended the war on 21 November 1902. On 29 January 1903, José Manuel Marroquín, vice president in charge of the executive, signed decree 102. The numismatic notes give it three steps: it recognized González Valencia’s pieces for a time, still only inside Santander; it ordered the Treasury Ministry to open windows where they could be exchanged for national paper; and it ordered the exchanged metal melted. Most of what the Penagos workshop struck went back into the crucible. What stayed out of that melting is what survives today.',
+          'The Treaty of Wisconsin ended the war on 21 November 1902. On 29 January 1903, José Manuel Marroquín, vice president in charge of the executive, signed decree 102. The numismatic notes give it three steps: it recognized González Valencia’s pieces for a time, still only inside Santander; it ordered the Treasury Ministry to open windows where they could be exchanged for national paper; and it ordered the exchanged metal melted. Most of what the Penagos workshop struck went back into the crucible. What stayed out of that melting is what survives today. Montaña notes that, of what missed the crucible, the 50 centavos is the piece most often met, and the 10 and the 20 the scarce ones.',
           'That withdrawal sits inside the monetary settlement after the war. Law 33 of October 1903 forbade further indiscriminate paper issues, fixed the gold peso as the unit, and created the National Amortization Board to retire the depreciated paper. At the Casa de Moneda Museum, and in Banrepcultural’s commented work, these pieces are shown beside the Peralonso notes.',
         ],
       },
@@ -332,7 +383,7 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         id: 'nota-fuentes',
         title: 'A note on the sources',
         paragraphs: [
-          'El Tiempo’s capsule speaks of copper; El Tiempo Colecciones and Numista, of brass. This page adopts brass, which is what the catalogue records with measured specifications. The Penagos workshop, the quantities struck, the estimated 300,000 casings, and decree 102 of 1903 come from the notes “Las monedas sangrientas.” They are not a weighing or a record of this collection.',
+          'El Tiempo’s capsule speaks of copper; El Tiempo Colecciones and Numista, of brass. This page adopts brass, which is what the catalogue records with measured specifications. The Penagos workshop, the quantities struck, the estimated 300,000 casings, and decree 102 of 1903 come from the notes “Las monedas sangrientas.” The thickness of the 20 centavos, the legend varieties, and the note on what survived the melting come from Montaña, 2019. Numista lists Restrepo 375 for the 10 centavos; CoinVarieties and this collection’s record specify 375.1, and that is the figure in the table. They are not a weighing or a record of this case.',
         ],
       },
     ],
@@ -370,6 +421,11 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
         label: 'El numismático1975, “Las monedas sangrientas”',
         href: 'http://elnumismatico1975.blogspot.com/2015/04/las-monedas-sangrientas.html',
         note: 'Penagos workshop, 684,000, 130,500, and 250,000 pieces, decree 102 of 1903, and the later melting.',
+      },
+      {
+        label: 'Alexander Montaña Rodríguez, Monedas de Colombia no. 5 (October 2019)',
+        href: 'http://www.mascoleccionismo.com/publicaciones/MFMCol/MoneCol_005.pdf',
+        note: 'Thickness of the 20 centavos, the legend varieties, and the note on what escaped the melting. Plates and prices are not reproduced.',
       },
       {
         label: 'Banrepcultural, Obra comentada: billetes de Peralonso y coscojas de Palonegro',
