@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1821-8-reales-bogota-ba-jf');
+    assert.equal(additions.at(-1)?.id, 'co-1801-8-escudos-popayan-p-jf');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -129,11 +129,11 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 
-  it('puts the newest Bogotá 1821 8 reales first in Logros del Mes', () => {
+  it('keeps the Bogotá 1821 8 reales in Logros del Mes', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 0);
+    assert.equal(fromEnd, 1);
     assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -150,6 +150,28 @@ describe('homepage milestones from catalog holdings', () => {
     const [card] = milestonesFromHoldings(additions, [piece]);
     assert.equal(card.holdingId, 'co-1821-8-reales-bogota-ba-jf');
     assert.match(card.href, /8-reales-bogota-1821-ba-jf/);
+  });
+
+  it('puts the newest Popayán 1801 8 escudos first in Logros del Mes', () => {
+    const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
+    assert.ok(holding);
+    const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
+    assert.equal(fromEnd, 0);
+    const piece = {
+      id: 'co-8-escudos-popayan-1801-p-jf',
+      country: 'CO',
+      href: '/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/',
+      title: { es: '8 escudos · Popayán P–JF · 1801', en: '8 escudos · Popayán P–JF · 1801' },
+      dek: { es: 'Onza de oro', en: 'Gold onza' },
+      pick: 'KM# 62.2',
+      serial: '',
+      cert: '',
+      image: '/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-composite.jpg',
+      imageAlt: { es: 'Anverso', en: 'Obverse' },
+    };
+    const [card] = milestonesFromHoldings(additions, [piece]);
+    assert.equal(card.holdingId, 'co-1801-8-escudos-popayan-p-jf');
+    assert.match(card.href, /8-escudos-popayan-1801-p-jf/);
   });
 
   it('still matches the Cartagena 2 reales after newer holdings fill Logros del Mes', () => {

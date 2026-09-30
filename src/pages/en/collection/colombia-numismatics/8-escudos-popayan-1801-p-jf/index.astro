@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('8-escudos-popayan-1801-p-jf');
+if (!piece) throw new Error('Missing Popayán 1801 8 escudos P–JF');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />
