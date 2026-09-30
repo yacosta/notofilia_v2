@@ -194,6 +194,7 @@ export const additions: Holding[] = [
   { id: 'co-1902-50-centavos-santander', kind: 'coin', country: 'CO' },
   { id: 'co-1902-20-centavos-santander', kind: 'coin', country: 'CO' },
   { id: 'co-1902-10-centavos-santander', kind: 'coin', country: 'CO' },
+  { id: 'co-1821-8-reales-bogota-ba-jf', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -314,6 +315,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1902-50-centavos-santander-km-a3' },
   { id: 'co-1902-20-centavos-santander-km-a2' },
   { id: 'co-1902-10-centavos-santander-km-a1' },
+  { id: 'co-1821-8-reales-bogota-km-c6' },
 ];
 
 export type CollectionStats = {

@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1902-10-centavos-santander');
+    assert.equal(additions.at(-1)?.id, 'co-1821-8-reales-bogota-ba-jf');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -129,27 +129,27 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 
-  it('puts the newest Santander 10 centavos first in Logros del Mes', () => {
-    const holding = additions.find((row) => row.id === 'co-1902-10-centavos-santander');
+  it('puts the newest Bogotá 1821 8 reales first in Logros del Mes', () => {
+    const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
     assert.equal(fromEnd, 0);
     assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
     const piece = {
-      id: 'co-10-centavos-santander-1902',
+      id: 'co-8-reales-bogota-1821-ba-jf',
       country: 'CO',
-      href: '/coleccion/colombia-numismatica/10-centavos-santander-1902/',
-      title: { es: '10 centavos · Santander · 1902', en: '10 centavos · Santander · 1902' },
-      dek: { es: 'Coscoja de 1902', en: '1902 coscoja' },
-      pick: 'KM# A1',
+      href: '/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/',
+      title: { es: '8 reales · Bogotá BA–JF · 1821', en: '8 reales · Bogotá BA–JF · 1821' },
+      dek: { es: 'India y granada', en: 'Indian and pomegranate' },
+      pick: 'KM# C6',
       serial: '',
       cert: '',
-      image: '/images/catalog/colombia/colombia-santander-10-centavos-1902-composite.jpg',
+      image: '/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-composite.jpg',
       imageAlt: { es: 'Anverso', en: 'Obverse' },
     };
     const [card] = milestonesFromHoldings(additions, [piece]);
-    assert.equal(card.holdingId, 'co-1902-10-centavos-santander');
-    assert.match(card.href, /10-centavos-santander-1902/);
+    assert.equal(card.holdingId, 'co-1821-8-reales-bogota-ba-jf');
+    assert.match(card.href, /8-reales-bogota-1821-ba-jf/);
   });
 
   it('still matches the Cartagena 2 reales after newer holdings fill Logros del Mes', () => {

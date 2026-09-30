@@ -12,6 +12,7 @@ export type ColombiaCoinagePieceId =
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
+  | '8-reales-bogota-1821-ba-jf'
   | '2-centavos-lazareto-1921'
   | '50-centavos-lazareto-1931'
   | '50-centavos-santander-1902'
@@ -376,6 +377,85 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Cód. 11: cuarto de real de cobre de Santa Marta, 1820, con SM y cruz. No se publican precios.',
           en: 'Cód. 11: Santa Marta copper quarter-real, 1820, with SM and a cross. Prices are not published here.',
+        },
+      },
+    ],
+  },
+  {
+    id: '8-reales-bogota-1821-ba-jf',
+    path: `${COLOMBIA_COINAGE_PATH}8-reales-bogota-1821-ba-jf/`,
+    chapterId: 'independencia',
+    year: '1821',
+    denomination: { es: '8 reales', en: '8 reales' },
+    metal: { es: 'Plata .666 (tipo)', en: 'Silver .666 (type specification)' },
+    mint: {
+      es: 'Bogotá (BA), leyenda Cundinamarca',
+      en: 'Bogotá (BA), Cundinamarca legend',
+    },
+    reference: 'KM# C6 · Restrepo 157.4 · Hernández 285 · Numista N#35034',
+    title: {
+      es: '8 reales · Bogotá BA–JF · 1821',
+      en: '8 reales · Bogotá BA–JF · 1821',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Independencia',
+      en: 'Colombia-Numismatics · Independence',
+    },
+    lead: {
+      es: 'Ocho reales de 1821 con la india de la libertad americana. Al reverso, la granada de Cundinamarca, la marca BA de Bogotá y el ensaye JF.',
+      en: 'An 1821 8 reales with the Indian of American liberty. On the reverse, the pomegranate of Cundinamarca, Bogotá’s BA mintmark, and assayer JF.',
+    },
+    description: {
+      es: 'En 1821 la Casa de Bogotá labró este ocho reales de la República de Colombia. El anverso lleva el busto de la india —la libertad americana que Nariño encargó en 1813 como moneda «de la china» y que Bolívar volvió a pedir el 18 de agosto de 1819— con la leyenda REPUBLICA DE COLOMBIA, sin acento en el cuño, y la fecha 1821 bajo el perfil. El reverso muestra la granada de la Nueva Granada, la leyenda CUNDINAMARCA, la R del valor a la derecha del fruto y, en el exergo, BA · JF. BA es la marca de ceca de Bogotá en este tipo; JF, el ensayador. El catálogo lo numera KM# C6 y Restrepo 157.4, la variante con BA; Restrepo 157.3 es el 1821 JF sin esa marca. Hernández, en la 8.ª edición de 2023, abre los ocho reales de la Gran Colombia con la mula de 1820 en el cód. 282 y la lámina siguiente reúne los cód. 283, 284 y 285: el 1821 BA·JF de Bogotá es la tercera de esas filas. Numista agrupa el tipo en N#35034 y pone la granada como anverso y la india como reverso; esta ficha toma el retrato como anverso. La plata .666, unos 23 g y 37 mm son cifras de tipo: este disco no se pesó ni se midió, y las fotografías no autentican el metal. El 8 está gastado hasta casi desaparecer. Las tablas BanRep de moneda empiezan en 1987, con el peso moderno, y no traen una tirada de 1821. Esta pieza no es el columnario colonial, ni el peso republicano de 1825, ni el cuartillo de cobre de Santa Marta de 1820.',
+      en: 'In 1821 the Bogotá mint struck this 8 reales of the Republic of Colombia. The obverse carries the Indian bust — American liberty, the china coin Nariño ordered in 1813 and that Bolívar asked for again on 18 August 1819 — with the legend REPUBLICA DE COLOMBIA, unaccented on the die, and the date 1821 under the profile. The reverse shows the pomegranate of New Granada, the legend CUNDINAMARCA, the R of the value to the right of the fruit, and, in the exergue, BA · JF. BA is Bogotá’s mintmark on this type; JF is the assayer. Catalogues number it KM# C6 and Restrepo 157.4, the variety with BA; Restrepo 157.3 is the 1821 JF without that mark. Hernández, in the 8th edition of 2023, opens the Gran Colombia 8 reales with the 1820 mule as Cód. 282, and the next plate gathers Cód. 283, 284, and 285: the 1821 Bogotá BA·JF is the third of those rows. Numista groups the type as N#35034 and puts the pomegranate on the obverse and the Indian on the reverse; this record takes the portrait as the obverse. Silver .666, about 23 g, and 37 mm are type figures: this disc was not weighed or measured, and the photographs do not authenticate the metal. The 8 is worn nearly smooth. BanRep’s coin tables begin in 1987, with the modern peso, and do not give an 1821 mintage. This piece is not the colonial pillar dollar, nor the republican peso of 1825, nor the 1820 Santa Marta copper cuartillo.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de la india a la izquierda, leyenda REPUBLICA DE COLOMBIA y fecha 1821.',
+      en: 'Obverse: Indian bust facing left, legend REPUBLICA DE COLOMBIA, and the date 1821.',
+    },
+    backCaption: {
+      es: 'Reverso: granada, CUNDINAMARCA, R del valor y BA · JF en el exergo. El 8 está casi liso.',
+      en: 'Reverse: pomegranate, CUNDINAMARCA, the R of the value, and BA · JF in the exergue. The 8 is nearly smooth.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# C6 (N#35034), acuñado en 1820 y 1821, y no publica una tirada. El 1821 con BA es la combinación que más registra; el 1821 JF sin BA es Restrepo 157.3. Esta ficha no inventa un censo de encapsulados ni publica martillos.',
+      en: 'Numista covers type KM# C6 (N#35034), struck in 1820 and 1821, and does not publish a mintage. The 1821 with BA is the combination it records most often; the 1821 JF without BA is Restrepo 157.3. This record does not invent a slab census or publish hammers.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. Perfil aplanado y rayas en el campo; se leen 1821, CUNDINAMARCA, BA, JF y la R. El 8 está casi liso. Las fotografías no autentican el disco (colección privada)',
+      en: 'Circulated, unslabbed. Flattened profile and hairlines in the field; 1821, CUNDINAMARCA, BA, JF, and the R are readable. The 8 is nearly smooth. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/35034',
+        es: 'Numista — 8 reales, República de Colombia (N#35034)',
+        en: 'Numista — 8 reales, Republic of Colombia (N#35034)',
+        note: {
+          es: 'KM# C6; plata de tipo .666, unos 23 g y 37 mm; ceca de Bogotá; fechas 1820–1821, con la combinación 1821 Ba JF. Numista pone la granada en el anverso. No se cita aquí una tirada.',
+          en: 'KM# C6; type silver .666, about 23 g and 37 mm; Bogotá mint; dates 1820–1821, including the 1821 Ba JF combination. Numista puts the pomegranate on the obverse. No mintage is cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Cundinamarca_1821-Ba_JF_8_reales',
+        es: 'CoinVarieties — Cundinamarca 1821-Ba JF 8 reales',
+        en: 'CoinVarieties — Cundinamarca 1821-Ba JF 8 reales',
+        note: {
+          es: 'Tipo de busto indígena y granada, KM# C6, Restrepo 157.4, plata .666 de unos 23 g. Comparable de tipo; no es este ejemplar y no se publican precios.',
+          en: 'Indian-bust and pomegranate type, KM# C6, Restrepo 157.4, .666 silver of about 23 g. A type comparable; not this specimen, and prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Ocho reales de la Gran Colombia: cód. 282 es la mula de 1820; la lámina de los cód. 283, 284 y 285 cierra con el 1821 BA·JF de Bogotá. No se publican precios ni láminas.',
+          en: 'Gran Colombia 8 reales: Cód. 282 is the 1820 mule; the plate for Cód. 283, 284, and 285 ends with the 1821 Bogotá BA·JF. Prices and plates are not published.',
         },
       },
     ],
