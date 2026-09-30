@@ -92,6 +92,30 @@ describe('WWII emergency banknotes series page', () => {
     assert.match(bodyEs, /Ejército Rojo/);
     assert.match(bodyEs, /muntbiljetten/);
     assert.match(bodyEs, /<h2 id="amc">[\s\S]*<h2 id="theresienstadt">[\s\S]*<h2 id="bernhard">/);
+    assert.match(bodyEs, /<h3 id="guerrilla">/);
+    assert.match(bodyEn, /<h3 id="guerrilla">/);
+    assert.match(bodyEs, /Ley de la República 369/);
+    assert.match(bodyEn, /Republic Act No\. 369/);
+    assert.match(bodyEs, /<h3 id="identificar-bernhard">/);
+    assert.match(bodyEn, /<h3 id="identify-bernhard">/);
+    assert.match(bodyEs, /204\.000/);
+    assert.match(bodyEs, /54\.500/);
+    assert.match(bodyEn, /204,000/);
+    assert.match(bodyEn, /54,500/);
+    assert.match(bodyEs, /Fr\. 2301m/);
+    assert.match(bodyEn, /Fr\. 2301m/);
+    assert.match(bodyEs, /見本/);
+    assert.match(bodyEn, /THE CO-PROSPERITY SPHERE/);
+    assert.match(bodyEs, /serie 461/);
+    assert.match(bodyEn, /Series 461/);
+    assert.match(bodyEs, /Shafer/);
+    assert.match(bodyEs, /<h2 id="coleccionar">/);
+    assert.match(bodyEn, /<h2 id="collecting">/);
+    assert.match(bodyEs, /S40499058C/);
+    assert.match(bodyEs, /L45104670B/);
+    assert.match(bodyEs, /L86654132A/);
+    assert.doesNotMatch(bodyEs, /\$\d/);
+    assert.doesNotMatch(bodyEn, /Heritage Auctions|eBay/);
   });
 
   it('links the documented HAWAII holding without inventing a second serial', () => {
