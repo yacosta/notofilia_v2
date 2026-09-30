@@ -40,12 +40,12 @@ export const netherlandsCoinageChapters: NetherlandsCoinageChapter[] = [
       en: 'Provincial mints and the ducat',
     },
     lead: {
-      es: 'Utrecht acuñó desde 1567; el ducado de oro de 1586 se volvió moneda de comercio mundial. Esta colección documenta un ejemplar de 1761.',
-      en: 'Utrecht has struck since 1567; the 1586 gold ducat became a world trade coin. This collection records a 1761 example.',
+      es: 'Utrecht acuñó desde 1567; el ducado de oro de 1586 se volvió moneda de comercio mundial. Esta colección documenta un ducado de 1761 y un duit de la VOC con fecha 1790.',
+      en: 'Utrecht has struck since 1567; the 1586 gold ducat became a world trade coin. This collection records a 1761 ducat and a VOC duit dated 1790.',
     },
     body: {
-      es: 'La Koninklijke Nederlandse Munt sitúa su origen en Utrecht en 1567, cuando cada provincia acuñaba su propia moneda. El 4 de agosto de 1586 el ducado de oro quedó inscrito en la ley monetaria como moneda de comercio: caballero con espada y haz de siete flechas, y la leyenda CONCORDIA RES PARVAE CRESCUNT. El peso y la ley fijos lo hicieron aceptable desde el Báltico hasta Asia; Rusia y los Estados alemanes llegaron a imitarlo. En plata circularon el leeuwendaalder, el rijksdaalder, el ducatón «jinete de plata» y el stuiver. El Wisselbank de 1609 frenó las devaluaciones provinciales al ensayar el metal. En el XVIII las cecas provinciales —Utrecht entre ellas— siguieron emitiendo duiten de cobre, stuivers, gulden y ducados de 1 y 2. Esta vitrina reúne, de esa época, el ducado de oro de Utrecht de 1761. En 1806, bajo Luis Bonaparte, se unificó la acuñación en la ceca de Utrecht.',
-      en: 'The Royal Dutch Mint traces its origin to Utrecht in 1567, when each province struck its own money. On 4 August 1586 the gold ducat entered the mint act as a trade coin: a knight with sword and a bundle of seven arrows, and the legend CONCORDIA RES PARVAE CRESCUNT. Fixed weight and fineness made it welcome from the Baltic to Asia; Russia and the German states even imitated it. In silver the leeuwendaalder, rijksdaalder, “silver rider” ducaton, and stuiver circulated. The 1609 Wisselbank slowed provincial debasements by assaying the metal. In the eighteenth century provincial mints — Utrecht among them — still issued copper duiten, stuivers, gulden, and 1- and 2-ducat pieces. This case records, from that period, the 1761 Utrecht gold ducat. In 1806, under Louis Bonaparte, striking was unified at the Utrecht mint.',
+      es: 'La Koninklijke Nederlandse Munt sitúa su origen en Utrecht en 1567, cuando cada provincia acuñaba su propia moneda. El 4 de agosto de 1586 el ducado de oro quedó inscrito en la ley monetaria como moneda de comercio: caballero con espada y haz de siete flechas, y la leyenda CONCORDIA RES PARVAE CRESCUNT. El peso y la ley fijos lo hicieron aceptable desde el Báltico hasta Asia; Rusia y los Estados alemanes llegaron a imitarlo. En plata circularon el leeuwendaalder, el rijksdaalder, el ducatón «jinete de plata» y el stuiver. El Wisselbank de 1609 frenó las devaluaciones provinciales al ensayar el metal. En el XVIII las cecas provinciales —Utrecht entre ellas— siguieron emitiendo duiten de cobre, stuivers, gulden y ducados de 1 y 2. Esta vitrina reúne, de esa época, el ducado de oro de Utrecht de 1761, y un duit de cobre de la VOC con fecha 1790 para las Indias Orientales. En 1806, bajo Luis Bonaparte, se unificó la acuñación en la ceca de Utrecht.',
+      en: 'The Royal Dutch Mint traces its origin to Utrecht in 1567, when each province struck its own money. On 4 August 1586 the gold ducat entered the mint act as a trade coin: a knight with sword and a bundle of seven arrows, and the legend CONCORDIA RES PARVAE CRESCUNT. Fixed weight and fineness made it welcome from the Baltic to Asia; Russia and the German states even imitated it. In silver the leeuwendaalder, rijksdaalder, “silver rider” ducaton, and stuiver circulated. The 1609 Wisselbank slowed provincial debasements by assaying the metal. In the eighteenth century provincial mints — Utrecht among them — still issued copper duiten, stuivers, gulden, and 1- and 2-ducat pieces. This case records, from that period, the 1761 Utrecht gold ducat, and a VOC copper duit dated 1790 for the East Indies. In 1806, under Louis Bonaparte, striking was unified at the Utrecht mint.',
     },
   },
   {
@@ -141,13 +141,13 @@ export const seriesCopy = {
       'Mapa vintage en relieve 3D de los Países Bajos sobre pergamino, con Ámsterdam, la torre Dom de Utrecht, Kinderdijk, campos de tulipanes, un pasaporte y el título Países Bajos',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En los Países Bajos esa historia empieza antes del papel: peniques carolingios, el grote flamenco y, en 1434, el gulden de Felipe el Bueno, tasado en 20 stuivers y a la par del florín de oro italiano.',
-      'Las provincias acuñaron por su cuenta hasta que Utrecht, desde 1567, se convirtió en ceca de referencia. El ducado de oro, inscrito en la ley monetaria el 4 de agosto de 1586, llevó por el mundo al caballero con el haz de siete flechas. Esta vitrina documenta un ducado de Utrecht de 1761. El Wisselbank de 1609 estabilizó el metal; en 1806 Luis Bonaparte unificó la acuñación en esa misma ciudad.',
+      'Las provincias acuñaron por su cuenta hasta que Utrecht, desde 1567, se convirtió en ceca de referencia. El ducado de oro, inscrito en la ley monetaria el 4 de agosto de 1586, llevó por el mundo al caballero con el haz de siete flechas. Esta vitrina documenta un ducado de Utrecht de 1761 y un duit de cobre de la VOC, Utrecht, con fecha 1790. El Wisselbank de 1609 estabilizó el metal; en 1806 Luis Bonaparte unificó la acuñación en esa misma ciudad.',
       'Guillermo I rebautizó la casa como ’s Rijks Munt. En 1817 el gulden pasó a 100 céntimos. El 3 gulden de plata cedió en 1840 al 2½; las provinciales se retiraron en 1849. El patrón oro de 1875 devolvió el 10 gulden; el 5 céntimos cuadrado de 1913 se volvió una de las piezas más reconocibles del siglo XX.',
       'La ocupación sustituyó el vellón por cinc; Estados Unidos acuñó plata de tipo preguerra para la liberación. Bruno Ninaber van Eyben rediseñó la serie de Beatriz en 1982. El euro en efectivo llegó el 1 de enero de 2002; las monedas en gulden se pudieron cambiar en DNB hasta el 1 de enero de 2007. El papel moneda de este país se cataloga aparte, en Notafilia.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: el gulden medieval, el ducado comercial, el gulden decimal y el paso al euro. Debajo, la ficha del ducado de Utrecht de 1761 documentado en esta colección.',
+      'Cuatro capítulos, en la misma fila de izquierda a derecha por época: el gulden medieval, el ducado comercial, el gulden decimal y el paso al euro. Debajo, las fichas del ducado de Utrecht de 1761 y del duit de la VOC de 1790.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -164,13 +164,13 @@ export const seriesCopy = {
       'Vintage 3D relief map of the Netherlands on parchment, with Amsterdam, the Utrecht Dom Tower, Kinderdijk, tulip fields, a passport, and the title Netherlands',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the Netherlands that history begins before paper: Carolingian pennies, the Flemish grote, and, in 1434, Philip the Good’s gulden, rated at 20 stuivers and on a par with the Italian gold florin.',
-      'The provinces struck for themselves until Utrecht, from 1567, became the reference mint. The gold ducat, entered in the mint act on 4 August 1586, carried the knight with the bundle of seven arrows around the world. This case records a 1761 Utrecht ducat. The 1609 Wisselbank stabilized the metal; in 1806 Louis Bonaparte unified striking in that same city.',
+      'The provinces struck for themselves until Utrecht, from 1567, became the reference mint. The gold ducat, entered in the mint act on 4 August 1586, carried the knight with the bundle of seven arrows around the world. This case records a 1761 Utrecht ducat and a VOC copper duit, Utrecht, dated 1790. The 1609 Wisselbank stabilized the metal; in 1806 Louis Bonaparte unified striking in that same city.',
       'William I renamed the house ’s Rijks Munt. In 1817 the gulden became 100 cents. The silver 3-gulden yielded in 1840 to the 2½; provincial coins were withdrawn in 1849. The 1875 gold standard restored the 10-gulden; the square 5-cent of 1913 became one of the most recognizable twentieth-century types.',
       'Occupation replaced billon with zinc; the United States struck pre-war-type silver for liberation. Bruno Ninaber van Eyben redesigned Beatrix’s series in 1982. Euro cash arrived on 1 January 2002; guilder coins could be exchanged at DNB until 1 January 2007. This country’s paper money is catalogued separately, under Notaphily.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters in one row, left to right by period: the medieval gulden, the trade ducat, the decimal gulden, and the changeover to the euro. Below, the ficha of the 1761 Utrecht ducat recorded in this collection.',
+      'Four chapters in one row, left to right by period: the medieval gulden, the trade ducat, the decimal gulden, and the changeover to the euro. Below, the records of the 1761 Utrecht ducat and the 1790 VOC duit.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -224,7 +224,7 @@ export function chapterHref(id: NetherlandsCoinageChapterId): string {
   return `#${id}`;
 }
 
-export type NetherlandsCoinId = 'ducado-utrecht-1761';
+export type NetherlandsCoinId = 'ducado-utrecht-1761' | 'duit-voc-utrecht-1790';
 
 export type NetherlandsCoin = {
   id: NetherlandsCoinId;
@@ -240,10 +240,15 @@ export type NetherlandsCoin = {
   references: string;
   grade: LocalizedText;
   certificate: string;
+  no_serial_reason?: string;
   images: {
     composite: string;
     width: number;
     height: number;
+    front?: string;
+    back?: string;
+    faceWidth?: number;
+    faceHeight?: number;
   };
   title: LocalizedText;
   kicker: LocalizedText;
@@ -406,6 +411,135 @@ export const netherlandsCoins: NetherlandsCoin[] = [
       },
     ],
   },
+  {
+    id: 'duit-voc-utrecht-1790',
+    path: '/coleccion/paises-bajos-numismatica/duit-voc-utrecht-1790/',
+    pathEn: '/en/collection/netherlands-numismatics/duit-voc-utrecht-1790/',
+    year: '1790',
+    mint: {
+      es: 'Utrecht, para las Indias Orientales Neerlandesas (VOC)',
+      en: 'Utrecht, for the Netherlands East Indies (VOC)',
+    },
+    denomination: {
+      es: '1 duit (1/8 de stuiver)',
+      en: '1 duit (1/8 stuiver)',
+    },
+    composition: {
+      es: 'Cobre',
+      en: 'Copper',
+    },
+    weight: {
+      es: 'No pesado. Tipo en Numista: 3 g. Esta ficha no asigna ese peso al ejemplar.',
+      en: 'Not weighed. Numista type figure: 3 g. That weight is not assigned to this piece.',
+    },
+    diameter: {
+      es: 'No medido. Tipo en Numista: 22 mm.',
+      en: 'Not measured. Numista type figure: 22 mm.',
+    },
+    edge: {
+      es: 'Liso (tipo). El canto no se fotografió suelto; en el lado del escudo se ve una mella.',
+      en: 'Plain (type). The edge was not photographed loose; the arms side shows a rim nick.',
+    },
+    references: 'KM# 111 · Scholten 656 y ss. · Numista N# 6585',
+    grade: {
+      es: 'NGC Genuine',
+      en: 'NGC Genuine',
+    },
+    certificate: '8703937-175',
+    no_serial_reason:
+      'Struck copper VOC duit: the type has no serial number. Identity is NGC certificate 8703937-175.',
+    images: {
+      composite: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-composite.jpg',
+      front: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-front.jpg',
+      back: '/images/catalog/netherlands/netherlands-voc-utrecht-1-duit-1790-ngc-8703937-175-back.jpg',
+      width: 2088,
+      height: 576,
+      faceWidth: 1024,
+      faceHeight: 576,
+    },
+    title: {
+      es: '1 duit · VOC · 1790',
+      en: '1 duit · VOC · 1790',
+    },
+    kicker: {
+      es: 'Indias Orientales Neerlandesas · VOC · Utrecht',
+      en: 'Netherlands East Indies · VOC · Utrecht',
+    },
+    lead: {
+      es: 'Duit de cobre de la VOC, Utrecht, fecha 1790. NGC Genuine, certificado 8703937-175, etiqueta Old New York.',
+      en: 'VOC copper duit, Utrecht, dated 1790. NGC Genuine, certificate 8703937-175, Old New York label.',
+    },
+    description: {
+      es: 'Este duit de cobre —un octavo de stuiver— lo emitió la Vereenigde Oost-Indische Compagnie para las Indias Orientales Neerlandesas, con el escudo de la ciudad de Utrecht. El anverso lleva el monograma entrelazado VOC y, debajo, la fecha 1790, legible en la fotografía. Sobre el monograma queda una marca de ceca gastada: no se distingue el escudito entre puntos del tipo contemporáneo (KM# 111.1, familia Scholten 656) ni la estrella de las reacuñaciones oficiales que conservaron la fecha 1790 (KM# 111.3, estrella entre puntos; KM# 111.4, estrella sola). La ficha cita KM# 111 sin subtipo. No es el duit urbano con leyenda STAD UTRECHT. Numista reúne el tipo como N# 6585: cobre, 22 mm, 3 g, canto liso y alineación de medalla. El cobre está oscuro e irregular, con porosidad y una mella en el canto del escudo, coherente con una pieza auténtica a la que no se le asigna grado numérico.',
+      en: 'This copper duit — one eighth of a stuiver — was issued by the Vereenigde Oost-Indische Compagnie for the Netherlands East Indies, with the arms of the city of Utrecht. The obverse carries the interlocked VOC monogram and, below it, the date 1790, readable in the photograph. Above the monogram the mintmark is worn: neither the shield between dots of the contemporary type (KM# 111.1, Scholten 656 family) nor the star of the later official restrikes that kept the 1790 date (KM# 111.3, star between dots; KM# 111.4, star alone) can be told apart. The record cites KM# 111 without a subtype. It is not the civic duit lettered STAD UTRECHT. Numista groups the type as N# 6585: copper, 22 mm, 3 g, plain edge, medal alignment. The copper is dark and uneven, with porosity and a rim nick on the arms side, consistent with an authentic piece that receives no numeric grade.',
+    },
+    history: {
+      es: 'La VOC, fundada en 1602, acuñó duits de cobre como calderilla para las Indias Orientales. Coleccionistas y NGC llaman New York Penny a esa serie, y la etiqueta pictórica Old New York se hizo para ese mercado: duits de la Compañía circularon en Nueva Holanda cuando escaseaba el cobre inglés. Nueva Ámsterdam pasó a Inglaterra en 1664. Una pieza fechada 1790 —y todavía más una reacuñación posterior que conserva esa fecha— no circuló en la Nueva Ámsterdam neerlandesa. El apodo es tradicional; no es una emisión colonial distinta. La Compañía se disolvió en 1799. Después, cecas oficiales reacuñaron duits con fecha 1790 y otra marca sobre el monograma. En esta fotografía esa marca no se resuelve.',
+      en: 'The VOC, founded in 1602, struck copper duits as small change for the East Indies. Collectors and NGC call that series the New York Penny, and the pictorial Old New York label was made for that market: Company duits did circulate in New Netherland when English copper was scarce. New Amsterdam passed to England in 1664. A piece dated 1790, and still more a later restrike that keeps that date, was not circulating in Dutch New Amsterdam. The nickname is traditional; it is not a separate colonial emission. The Company was dissolved in 1799. Official mints afterwards restruck duits dated 1790 with a different mark above the monogram. That mark is not resolved in this photograph.',
+    },
+    obverseLegend: {
+      es: 'VOC / 1790. El monograma abrevia Vereenigde Oost-Indische Compagnie. La marca de ceca, encima del monograma, está gastada y no se transcribe.',
+      en: 'VOC / 1790. The monogram abbreviates Vereenigde Oost-Indische Compagnie. The mintmark above the monogram is worn and is not transcribed.',
+    },
+    reverseLegend: {
+      es: 'Escudo coronado de la ciudad de Utrecht, sostenido por dos leones, con roleos en el exergo. No lleva la leyenda STAD UTRECHT del duit urbano.',
+      en: 'Crowned shield of the city of Utrecht, held by two lions, with scrollwork in the exergue. It does not carry the STAD UTRECHT legend of the civic duit.',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado: monograma VOC y fecha 1790. Este lado de la cápsula muestra el holograma de verificación de NGC.',
+      en: 'Slabbed obverse: VOC monogram and the date 1790. This side of the holder shows the NGC verification hologram.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado: escudo coronado de Utrecht entre dos leones. Etiqueta Old New York: VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE, 8703937-175.',
+      en: 'Slabbed reverse: crowned Utrecht shield between two lions. Old New York label: VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE, 8703937-175.',
+    },
+    scarcity: {
+      es: 'El duit de Utrecht con fecha 1790 es un cobre común del tipo KM# 111. Numista no se cita aquí como censo de este certificado. La marca de ceca gastada impide separar la acuñación contemporánea de las reacuñaciones oficiales del siglo XIX que repiten 1790.',
+      en: 'The Utrecht duit dated 1790 is a common copper of type KM# 111. Numista is not cited here as a census of this certificate. The worn mintmark prevents separating the contemporary striking from the nineteenth-century official restrikes that repeat 1790.',
+    },
+    certification: {
+      es: 'NGC aceptó la pieza como un duit auténtico de la VOC y no asignó grado numérico. Genuine señala problemas de superficie —corrosión, porosidad, rayas o daño ambiental— habituales en la serie. El encapsulado, de la serie Old New York, lee VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE y el certificado 8703937-175. La consulta pública es ese número en ngccoin.com. Esta ficha transcribe la etiqueta visible; no publica un censo de población.',
+      en: 'NGC accepted the piece as an authentic VOC duit and did not assign a numeric grade. Genuine records surface problems — corrosion, porosity, scratches, or environmental damage — typical of the series. The holder, from the Old New York series, reads VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE, and certificate 8703937-175. The public check is that number at ngccoin.com. This record transcribes the visible label; it does not publish a population census.',
+    },
+    sources: [
+      {
+        href: 'https://www.ngccoin.com/certlookup/8703937-175/',
+        es: 'NGC — Verificación del certificado 8703937-175',
+        en: 'NGC — Certificate lookup 8703937-175',
+        note: {
+          es: 'La etiqueta visible en el encapsulado lee VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE y 8703937-175.',
+          en: 'The label visible on the holder reads VOC N.E. INDIES DUIT, NEW YORK PENNY, GENUINE, and 8703937-175.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/pieces6585.html',
+        es: 'Numista — 1 duit, Utrecht (N# 6585)',
+        en: 'Numista — 1 duit, Utrecht (N# 6585)',
+        note: {
+          es: 'Tipo de Utrecht, 1741–1794, KM# 111 y Scholten 656 y siguientes: cobre, 22 mm, 3 g, canto liso, alineación de medalla. La fecha 1790 también aparece en reacuñaciones oficiales posteriores, separadas por la marca de ceca.',
+          en: 'Utrecht type, 1741–1794, KM# 111 and Scholten 656 and following: copper, 22 mm, 3 g, plain edge, medal alignment. The date 1790 also appears on later official restrikes, separated by the mintmark.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Dutch_East_India_Company',
+        es: 'Wikipedia — Compañía Neerlandesa de las Indias Orientales',
+        en: 'Wikipedia — Dutch East India Company',
+        note: {
+          es: 'Compañía fundada en 1602 y disuelta en 1799. Acuñó moneda para el comercio de ultramar.',
+          en: 'Company founded in 1602 and dissolved in 1799. It struck coin for overseas trade.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/New_Amsterdam',
+        es: 'Wikipedia — Nueva Ámsterdam',
+        en: 'Wikipedia — New Amsterdam',
+        note: {
+          es: 'El asentamiento neerlandés pasó a Inglaterra en 1664, antes de los duits de la VOC fechados en 1790.',
+          en: 'The Dutch settlement passed to England in 1664, before VOC duits dated 1790.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -436,7 +570,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Un ducado de oro de Utrecht de 1761, encapsulado por NGC. Las demás fichas se publicarán a medida que se documenten.',
+      'Un ducado de oro de Utrecht de 1761 y un duit de cobre de la VOC con fecha 1790, ambos encapsulados por NGC.',
   },
   en: {
     collectionLink: 'Numismatics',
@@ -464,7 +598,7 @@ export const coinPageCopy = {
     closeLightbox: 'Close',
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
-    holdingsIntro: 'One 1761 Utrecht gold ducat, slabbed by NGC. Further coin pages will be published as they are documented.',
+    holdingsIntro: 'A 1761 Utrecht gold ducat and a VOC copper duit dated 1790, both slabbed by NGC.',
   },
 } as const;
 

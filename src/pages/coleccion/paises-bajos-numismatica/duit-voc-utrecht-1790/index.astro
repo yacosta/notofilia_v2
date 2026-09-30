@@ -1,0 +1,9 @@
+---
+import NetherlandsCoinPage from '../../../../components/catalog/NetherlandsCoinPage.astro';
+import { coinById } from '../../../../data/netherlands-coinage';
+
+const coin = coinById('duit-voc-utrecht-1790');
+if (!coin) throw new Error('Missing VOC Utrecht 1790 duit catalog coin');
+---
+
+<NetherlandsCoinPage locale="es" coin={coin} />
