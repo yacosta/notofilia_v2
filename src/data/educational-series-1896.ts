@@ -32,7 +32,9 @@ export const educationalSeriesCopy = {
     lead:
       'Tres certificados de plata de tamaño grande —1, 2 y 5 dólares— encargados a muralistas y retirados a los pocos años. El 1 dólar Fr. 224, serial B3207078, el 2 dólares Fr. 247, serial 1712091, y el 5 dólares Fr. 270, serial 31528195, ya tienen ficha.',
     published: '2026-09-24',
+    modified: '2026-09-30',
     dateLabel: '24 de septiembre de 2026',
+    revisedLabel: 'Actualizado el 30 de septiembre de 2026',
     heroAlt:
       'Cartel de la serie educativa de 1896: alegoría clásica, mapa de Estados Unidos, Capitolio y obelisco, y los certificados de plata de 1, 2 y 5 dólares sobre una mesa con libros, lupa y compás. Es una ilustración, no el escaneo de las piezas de la colección.',
     sourcesTitle: 'Fuentes',
@@ -58,7 +60,9 @@ export const educationalSeriesCopy = {
     lead:
       'Three large-size silver certificates — $1, $2, and $5 — commissioned from muralists and withdrawn within a few years. The $1, Fr. 224, serial B3207078, the $2, Fr. 247, serial 1712091, and the $5, Fr. 270, serial 31528195, already have note pages.',
     published: '2026-09-24',
+    modified: '2026-09-30',
     dateLabel: 'September 24, 2026',
+    revisedLabel: 'Updated 30 September 2026',
     heroAlt:
       'Poster for the 1896 Educational Series: a classical allegory, a map of the United States, the Capitol and the Washington Monument, and the $1, $2, and $5 silver certificates on a desk with books, a magnifying glass, and a compass. It is an illustration, not a scan of the notes in the collection.',
     sourcesTitle: 'Sources',

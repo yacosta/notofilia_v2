@@ -71,6 +71,18 @@ describe('1896 Educational Series resource page', () => {
     assert.match(bodyEn, /1-dollar-silver-certificate-1896/);
     assert.match(bodyEs, /no vuelve a empezar/);
     assert.match(bodyEn, /does not restart/);
+    assert.match(bodyEs, /N#307145/);
+    assert.match(bodyEs, /N#332092/);
+    assert.match(bodyEn, /N#307145/);
+    assert.match(bodyEn, /N#332092/);
+    assert.match(bodyEs, /no se ha auditado aquí/);
+    assert.match(bodyEn, /not audited here/);
+    assert.doesNotMatch(bodyEs, /último serial impreso/);
+    assert.doesNotMatch(bodyEn, /last serial printed/);
+    assert.equal(educationalSeriesCopy.es.published, '2026-09-24');
+    assert.equal(educationalSeriesCopy.es.modified, '2026-09-30');
+    assert.match(pageSource, /note\.images\.front/);
+    assert.match(pageSource, /dateModified: t\.modified/);
     assert.doesNotMatch(bodyEs, /30\.000\.000 = Fr/);
     assert.doesNotMatch(bodyEn, /30,000,000 = Fr/);
     assert.doesNotMatch(bodyEs, /se publicará cuando esté el escaneo/);
