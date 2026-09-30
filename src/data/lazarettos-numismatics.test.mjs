@@ -48,6 +48,18 @@ describe('Lazaretto essay and the 1921 2 centavos', () => {
     assert.match(bodyEn, /assigns neither L13 nor L14/);
     assert.match(bodyEs, /el anverso lleva la cruz/);
     assert.match(bodyEn, /the obverse bears the cross/);
+    assert.match(bodyEs, /KM L1–L14/);
+    assert.match(bodyEn, /KM L1–L14/);
+    assert.match(bodyEs, /Guía de estudio núm\. 61/);
+    assert.match(bodyEn, /Guía de estudio núm\. 61/);
+    assert.match(bodyEs, /coscojas-de-santander/);
+    assert.match(bodyEn, /coscojas-de-santander/);
+    assert.match(bodyEs, /quinta emisión oficial/);
+    assert.match(bodyEn, /not a fifth official issue/);
+    assert.match(bodyEs, /peso papel moneda nacional de la Libertad/);
+    assert.match(bodyEn, /not the national paper-money peso/);
+    assert.match(bodyEs, /no se sostienen en estas fuentes/);
+    assert.match(bodyEn, /are not supported in these sources/);
     assert.doesNotMatch(bodyEs, /2 centavos de 1921[\s\S]{0,400}(precio|US\$)/);
     assert.doesNotMatch(bodyEn, /1921 2 centavos[\s\S]{0,500}(\bprice\b|US\$)/);
   });
