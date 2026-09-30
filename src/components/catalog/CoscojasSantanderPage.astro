@@ -106,6 +106,19 @@ const jsonLd = {
         <p class="mb-0 mt-6 font-sans text-[15px]/6 text-muted">
           {t.imagesNote}{' '}
           {
+            t.tenHoldingHref && t.tenHoldingLabel ? (
+              <>
+                <a
+                  href={localizePath(t.tenHoldingHref, locale)}
+                  class="text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {t.tenHoldingLabel}
+                </a>
+                {' · '}
+              </>
+            ) : null
+          }
+          {
             t.alsoHoldingHref && t.alsoHoldingLabel ? (
               <>
                 <a

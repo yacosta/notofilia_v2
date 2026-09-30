@@ -64,6 +64,8 @@ export type CoscojasCopy = {
   holdingHref: string;
   alsoHoldingLabel?: string;
   alsoHoldingHref?: string;
+  tenHoldingLabel?: string;
+  tenHoldingHref?: string;
   sections: CoscojasSection[];
   relatedLead: string;
   relatedLabel: string;
@@ -103,8 +105,9 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
       { label: 'Curso', value: 'Forzoso, solo en Santander' },
       { label: 'Ref. (50 c)', value: '1,45 g · 23,1 mm', wide: true },
     ],
-    imagesNote:
-      'El 20 y el 50 centavos de 1902 están en la colección. El 10 centavos sigue sin fotografía de ejemplar.',
+    imagesNote: 'El 10, el 20 y el 50 centavos de 1902 están en la colección.',
+    tenHoldingLabel: '10 centavos · Santander · 1902',
+    tenHoldingHref: '/coleccion/colombia-numismatica/10-centavos-santander-1902/',
     alsoHoldingLabel: '20 centavos · Santander · 1902',
     alsoHoldingHref: '/coleccion/colombia-numismatica/20-centavos-santander-1902/',
     holdingLabel: '50 centavos · Santander · 1902',
@@ -247,8 +250,9 @@ export const coscojasSantanderCopy: Record<Locale, CoscojasCopy> = {
       { label: 'Tender', value: 'Forced, only in Santander' },
       { label: 'Ref. (50 c)', value: '1.45 g · 23.1 mm', wide: true },
     ],
-    imagesNote:
-      'The 1902 20 and 50 centavos are in the collection. The 10 centavos still has no specimen photograph.',
+    imagesNote: 'The 1902 10, 20, and 50 centavos are in the collection.',
+    tenHoldingLabel: '10 centavos · Santander · 1902',
+    tenHoldingHref: '/coleccion/colombia-numismatica/10-centavos-santander-1902/',
     alsoHoldingLabel: '20 centavos · Santander · 1902',
     alsoHoldingHref: '/coleccion/colombia-numismatica/20-centavos-santander-1902/',
     holdingLabel: '50 centavos · Santander · 1902',
