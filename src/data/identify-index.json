@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T04:45:09.336Z",
+  "generatedAt": "2026-09-30T17:21:49.458Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -121,6 +121,45 @@
       }
     },
     {
+      "pieceId": "8-escudos-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "aa73b05352d55394",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/",
+      "pick": "KM# 62.2 · Cayón 14557 · Fr#52 · Numista N#22976",
+      "image": "/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-composite.jpg",
+      "title": {
+        "es": "8 escudos · Popayán P–JF · 1801",
+        "en": "8 escudos · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "8-escudos-popayan-1801-p-jf",
+      "face": "front",
+      "hash": "883b0f5668551b42",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/",
+      "pick": "KM# 62.2 · Cayón 14557 · Fr#52 · Numista N#22976",
+      "image": "/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-front.jpg",
+      "title": {
+        "es": "8 escudos · Popayán P–JF · 1801",
+        "en": "8 escudos · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "8-escudos-popayan-1801-p-jf",
+      "face": "back",
+      "hash": "4a761bab15532204",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/",
+      "pick": "KM# 62.2 · Cayón 14557 · Fr#52 · Numista N#22976",
+      "image": "/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-back.jpg",
+      "title": {
+        "es": "8 escudos · Popayán P–JF · 1801",
+        "en": "8 escudos · Popayán P–JF · 1801"
+      }
+    },
+    {
       "pieceId": "1-real-bogota-1810-nr-jf",
       "face": "front",
       "hash": "0000617375610000",
@@ -235,6 +274,45 @@
       "title": {
         "es": "1/4 real · Santa Marta · 1820",
         "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "8-reales-bogota-1821-ba-jf",
+      "face": "front",
+      "hash": "2275d41492553122",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/",
+      "pick": "KM# C6 · Restrepo 157.4 · Hernández 285 · Numista N#35034",
+      "image": "/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-composite.jpg",
+      "title": {
+        "es": "8 reales · Bogotá BA–JF · 1821",
+        "en": "8 reales · Bogotá BA–JF · 1821"
+      }
+    },
+    {
+      "pieceId": "8-reales-bogota-1821-ba-jf",
+      "face": "front",
+      "hash": "0822552b71393608",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/",
+      "pick": "KM# C6 · Restrepo 157.4 · Hernández 285 · Numista N#35034",
+      "image": "/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-front.jpg",
+      "title": {
+        "es": "8 reales · Bogotá BA–JF · 1821",
+        "en": "8 reales · Bogotá BA–JF · 1821"
+      }
+    },
+    {
+      "pieceId": "8-reales-bogota-1821-ba-jf",
+      "face": "back",
+      "hash": "0c32795933652608",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/",
+      "pick": "KM# C6 · Restrepo 157.4 · Hernández 285 · Numista N#35034",
+      "image": "/images/catalog/colombia/colombia-bogota-8-reales-1821-indian-head-ba-jf-back.jpg",
+      "title": {
+        "es": "8 reales · Bogotá BA–JF · 1821",
+        "en": "8 reales · Bogotá BA–JF · 1821"
       }
     },
     {

@@ -8,6 +8,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1801-p-jf'
+  | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
@@ -69,6 +70,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-escudo-popayan-1801-p-jf',
+  },
+  {
+    id: '8-escudos-popayan-1801-p-jf',
+    era: 'santa-fe',
+    year: '1801',
+    denomination: { es: '8 escudos', en: '8 escudos' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 62.2 · Cayón 14557 · Fr#52',
+    title: { es: '8 escudos · Popayán P–JF · 1801', en: '8 escudos · Popayán P–JF · 1801' },
+    dek: {
+      es: 'Onza de oro de Carlos IV, ceca P y ensaye JF. En la colección.',
+      en: 'Charles IV gold onza, mint P and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '8-escudos-popayan-1801-p-jf',
   },
   {
     id: '1-real-bogota-1810-nr-jf',
