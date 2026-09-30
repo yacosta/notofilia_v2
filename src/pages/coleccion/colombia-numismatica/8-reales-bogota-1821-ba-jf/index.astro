@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('8-reales-bogota-1821-ba-jf');
+if (!piece) throw new Error('Missing Bogotá 1821 8 reales BA–JF');
+---
+
+<ColombiaCoinPage locale="es" piece={piece} />

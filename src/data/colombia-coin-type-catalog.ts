@@ -11,6 +11,7 @@ export type ColombiaCoinTypeId =
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
+  | '8-reales-bogota-1821-ba-jf'
   | '1-peso-pm-1907'
   | '2-pesos-pm-1907'
   | '5-pesos-pm-1907'
@@ -113,6 +114,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-4-real-santa-marta-1820',
+  },
+  {
+    id: '8-reales-bogota-1821-ba-jf',
+    era: 'independencia',
+    year: '1821',
+    denomination: { es: '8 reales', en: '8 reales' },
+    issuer: { es: 'Bogotá (BA), Cundinamarca', en: 'Bogotá (BA), Cundinamarca' },
+    reference: 'KM# C6 · Restrepo 157.4 · Hernández 285',
+    title: { es: '8 reales · Bogotá BA–JF · 1821', en: '8 reales · Bogotá BA–JF · 1821' },
+    dek: {
+      es: 'India y granada de Cundinamarca, marca BA y ensaye JF. En la colección.',
+      en: 'Indian and Cundinamarca pomegranate, mintmark BA and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '8-reales-bogota-1821-ba-jf',
   },
   {
     id: '1-peso-pm-1907',

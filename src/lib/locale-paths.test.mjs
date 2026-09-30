@@ -584,6 +584,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/', 'en'),
+      '/en/collection/colombia-numismatics/8-reales-bogota-1821-ba-jf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', 'en'),
       '/en/collection/colombia-numismatics/2-reales-cartagena-1812-1814/',
     );
@@ -716,6 +720,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/'],
       '/en/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/'],
+      '/en/collection/colombia-numismatics/8-reales-bogota-1821-ba-jf/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/2-centavos-lazareto-1921/'],
