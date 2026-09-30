@@ -55,7 +55,7 @@ const jsonLd = {
       headline: t.title,
       description: t.metaDescription,
       datePublished: t.published,
-      dateModified: t.published,
+      dateModified: t.modified,
       inLanguage: locale,
       image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.heroAlt }),
       url: pageUrl,
@@ -113,6 +113,8 @@ const jsonLd = {
       <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
       <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
         <time datetime={t.published}>{t.dateLabel}</time>
+        <span> · </span>
+        <time datetime={t.modified}>{t.revisedLabel}</time>
       </p>
 
       <section class="mb-10 mt-0" aria-labelledby="lazareto-holding-heading">

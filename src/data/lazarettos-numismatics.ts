@@ -29,7 +29,9 @@ export const lazarettosNumismaticsCopy = {
     lead:
       'Un ensayo sobre los lazaretos de Caño del Loro, Contratación y Agua de Dios, y sobre la moneda que el Estado acuñó para que no saliera del cordón sanitario.',
     published: '2026-09-23',
+    modified: '2026-09-30',
     dateLabel: '23 de septiembre de 2026',
+    revisedLabel: 'Actualizado el 30 de septiembre de 2026',
     heroAlt:
       'Ilustración de las monedas de lazareto en Colombia: mapa, Caño de Loro, Contratación, Agua de Dios, el Hospital San Lázaro, monedas con la cruz de San Lázaro y la leyenda «Aislamiento también fue esperanza».',
     holdingHeading: 'En la colección',
@@ -56,7 +58,9 @@ export const lazarettosNumismaticsCopy = {
     lead:
       'An essay on the lazarettos of Caño del Loro, Contratación, and Agua de Dios, and on the coin the State struck so that it would not leave the sanitary cordon.',
     published: '2026-09-23',
+    modified: '2026-09-30',
     dateLabel: 'September 23, 2026',
+    revisedLabel: 'Updated 30 September 2026',
     heroAlt:
       'Panoramic illustration titled Lazaretto Coins of Colombia: a map, Caño de Loro (1784), Contratación (1835), Agua de Dios (1870), Hospital San Lázaro in Cartagena (1598), and coins with the cross of Saint Lazarus.',
     holdingHeading: 'In the collection',
