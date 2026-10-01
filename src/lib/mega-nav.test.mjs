@@ -424,10 +424,10 @@ describe('Recursos submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
     assert.match(recursos, /id: 'herramientas',[\s\S]*?icon: 'tools'/);
-    assert.match(recursos, /id: 'identificar',[\s\S]*?icon: 'identify'/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
     assert.doesNotMatch(recursos, /id: 'noticias'/);
+    assert.doesNotMatch(recursos, /id: 'identificar'/);
   });
 });
 
