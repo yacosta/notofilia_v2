@@ -9,6 +9,7 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
   colombiaChapters,
+  eraPath,
   seriesCopy,
   seriesPath,
   seriesSources,
@@ -113,6 +114,14 @@ const jsonLd = collectionPageJsonLd({
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              <p class="mb-0 mt-4">
+                <a
+                  href={eraPath(chapter.id, locale)}
+                  class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light underline decoration-line-strong hover:text-cream"
+                >
+                  {t.eraOpen} →
+                </a>
+              </p>
               {
                 chapter.id === 'banca-libre' ? (
                   <p class="mb-0 mt-4">
@@ -225,7 +234,7 @@ const jsonLd = collectionPageJsonLd({
             {' '}
             <a
               class="text-gold-light underline decoration-line-strong hover:text-cream"
-              href="#tiquetes"
+              href={eraPath('tiquetes', locale)}
             >
               {t.errorsTiqueteLink}
             </a>

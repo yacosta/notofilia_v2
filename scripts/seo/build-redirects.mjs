@@ -18,6 +18,7 @@ import {
   parseCsv,
   parseGscUrl,
   urlColumnIndex,
+  withSlash,
 } from './match.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -62,7 +63,7 @@ if (existsSync(overridesFile)) {
       process.exit(1);
     }
     if (isHomePath(to)) continue;
-    overrides.set(normalizePath(from), to.endsWith('/') ? to : `${to}/`);
+    overrides.set(normalizePath(from), withSlash(to));
   }
 }
 
@@ -146,12 +147,17 @@ for (const item of byNorm.values()) {
   const source = item.originalPath.startsWith('/') ? item.originalPath : `/${item.originalPath}`;
   const configured = existing.get(source) ?? existing.get(source.replace(/\/+$/, '') || '/') ?? existing.get(`${source.replace(/\/+$/, '')}/`);
   let result;
+  const liveHit = liveByNorm.get(normalizePath(source));
   const manual = overrides.get(normalizePath(source));
-  if (manual) {
-    result = { status: 301, target: manual, rule: 'manual', confidence: 'high' };
+  // Live non-stub pages (English glossary keepers, news slugEn, etc.) must not 301 away,
+  // even when GSC still lists them as 404s or an old override inverts the slug.
+  if (liveHit && !isStub(liveHit)) {
+    result = { status: 200, target: withSlash(liveHit.path), rule: 'exists', confidence: 'high' };
+  } else if (manual) {
+    result = { status: 301, target: withSlash(manual), rule: 'manual', confidence: 'high' };
   } else if (configured && !isHomePath(configured)) {
-    const target = configured.endsWith('/') || configured === '/' ? configured : `${configured}/`;
-    if (MISSING_POLYMER_CONTINENTS.has(identityPath(target))) {
+    const target = withSlash(configured);
+    if (MISSING_POLYMER_CONTINENTS.has(identityPath(target.split('?')[0]))) {
       result = matchUrl(source, urls, categoryMap);
     } else {
       result = { status: 301, target, rule: 'existing', confidence: 'high' };
