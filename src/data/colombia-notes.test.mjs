@@ -1085,6 +1085,22 @@ describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
       '/en/collection/colombia/100-pesos-oro-1980/',
     );
   });
+
+
+  it('records the circulating 1980 100 pesos oro serial 08648220 beside the specimen', () => {
+    const note = noteById('100-pesos-oro-1980-08648220');
+    assert.ok(note);
+    assert.equal(note.serial, '08648220');
+    assert.equal(note.pick, 'P# 418b · TBB B958a');
+    assert.equal(note.path, '/coleccion/colombia/100-pesos-oro-1980-08648220/');
+    assert.notEqual(note.id, '100-pesos-oro-1980');
+    assert.equal(additions.some((row) => row.id === 'co-1980-100-pesos-oro-08648220'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-100-pesos-oro-p418b-b958a'), true);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const circulating = cards.filter((card) => card.note.id === '100-pesos-oro-1980-08648220');
+    assert.equal(circulating.length, 1);
+    assert.equal(circulating[0].piece.serial, '08648220');
+  });
 });
 
 describe('Colombia BanRep 200 pesos oro 1989 IBB specimen', () => {
