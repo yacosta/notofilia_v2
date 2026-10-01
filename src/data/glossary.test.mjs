@@ -153,8 +153,7 @@ describe('two-tier glossary', () => {
     const workerRedirects = readFileSync(new URL('../lib/gsc-redirects.ts', import.meta.url), 'utf8');
     assert.match(redirectBuilder, /glossaryRedirects\(\)/);
     assert.match(workerRedirects, /glossaryRedirects/);
-    assert.doesNotMatch(astroConfig, /glossaryRedirects\(\)/);
-    assert.doesNotMatch(astroConfig, /\.\.\.generated/);
+    assert.match(astroConfig, /glossaryRedirects\(\)/);
   });
 
   it('builds static term routes only for standalone slugs', () => {

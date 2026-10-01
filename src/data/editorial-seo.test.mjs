@@ -1,16 +1,18 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
+import { NEWS_PAGE_SIZE, newsPageCount } from './editorial.ts';
 
 const editorialSource = readFileSync(new URL('./editorial.ts', import.meta.url), 'utf8');
 const newsArticles = JSON.parse(readFileSync(new URL('./news-articles.json', import.meta.url), 'utf8'));
 const blogArticles = JSON.parse(readFileSync(new URL('./blog-articles.json', import.meta.url), 'utf8'));
 
 describe('editorial SEO helpers', () => {
-  it('paginates news at 88 entries and keeps a single page today', () => {
-    assert.match(editorialSource, /export const NEWS_PAGE_SIZE = 88/);
-    assert.ok(newsArticles.length <= 88);
+  it('paginates news at 88 entries', () => {
+    assert.equal(NEWS_PAGE_SIZE, 88);
     assert.match(editorialSource, /Math\.ceil\(newsArticles\.length \/ size\)/);
+    assert.equal(newsPageCount(), Math.ceil(newsArticles.length / NEWS_PAGE_SIZE));
+    assert.ok(newsPageCount() >= 2);
   });
 
   it('adds a glossary related link when a news article has no catalogue or glossary href', () => {
