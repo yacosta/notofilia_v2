@@ -621,6 +621,7 @@ export const COLOMBIA_ERA_SLUG_EN: Record<ColombiaChapterId, string> = {
   'familias-modernas': 'modern-families',
   tiquetes: 'tickets',
   errores: 'errors',
+  'bonos-politicos': 'political-bonds',
 };
 
 const eraSlugToId = new Map<string, ColombiaChapterId>();
