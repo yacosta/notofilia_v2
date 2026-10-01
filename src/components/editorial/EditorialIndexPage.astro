@@ -3,14 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import CardImage from '../CardImage.astro';
 import NewWindowHint from '../NewWindowHint.astro';
-import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
 import {
   blogArticles,
   blogPath,
   editorialCopy,
+  newsArticles,
   newsIndexPath,
-  newsPageCount,
-  paginateNews,
   type EditorialArticle,
 } from '../../data/editorial';
 
@@ -21,10 +20,8 @@ interface Props {
 
 const { locale, kind } = Astro.props;
 const t = editorialCopy[locale];
-const page = 1;
-const pages = kind === 'news' ? newsPageCount() : 1;
-const items: EditorialArticle[] = kind === 'blog' ? blogArticles : paginateNews(page);
-const pathname = kind === 'blog' ? blogPath(locale) : newsIndexPath(locale, page);
+const items: EditorialArticle[] = kind === 'blog' ? blogArticles : newsArticles;
+const pathname = kind === 'blog' ? blogPath(locale) : newsIndexPath(locale);
 const title = kind === 'blog' ? t.blogTitle : t.newsTitle;
 const dek = kind === 'blog' ? t.blogDek : t.newsDek;
 const metaTitle = kind === 'blog' ? t.blogMetaTitle : t.newsMetaTitle;
