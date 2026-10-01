@@ -20,8 +20,10 @@ interface Props {
 
 const { locale, kind } = Astro.props;
 const t = editorialCopy[locale];
+const page = 1;
+const pages = 1;
 const items: EditorialArticle[] = kind === 'blog' ? blogArticles : newsArticles;
-const pathname = kind === 'blog' ? blogPath(locale) : newsIndexPath(locale);
+const pathname = kind === 'blog' ? blogPath(locale) : newsIndexPath(locale, page);
 const title = kind === 'blog' ? t.blogTitle : t.newsTitle;
 const dek = kind === 'blog' ? t.blogDek : t.newsDek;
 const metaTitle = kind === 'blog' ? t.blogMetaTitle : t.newsMetaTitle;
