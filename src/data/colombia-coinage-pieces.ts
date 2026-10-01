@@ -9,6 +9,7 @@ import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
+  | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
@@ -131,6 +132,121 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'La casa comenzó a labrar en 1758. Contexto de ceca, no autenticación de este disco.',
           en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
+        label: {
+          es: '8 escudos de Popayán, 1801 P–JF',
+          en: 'Popayán 8 escudos, 1801 P–JF',
+        },
+      },
+    ],
+  },
+  {
+    id: '8-escudos-popayan-1801-p-jf',
+    path: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
+    chapterId: 'santa-fe',
+    year: '1801',
+    denomination: { es: '8 escudos', en: '8 escudos' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Popayán (P)',
+      en: 'Popayán (P)',
+    },
+    reference: 'KM# 62.2 · Cayón 14557 · Fr#52 · Numista N#22976',
+    title: {
+      es: '8 escudos · Popayán P–JF · 1801',
+      en: '8 escudos · Popayán P–JF · 1801',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Popayán colonial',
+      en: 'Colombia-Numismatics · colonial Popayán',
+    },
+    lead: {
+      es: 'Ocho escudos de oro de 1801, labrados en Popayán a nombre de Carlos IV. El anverso lleva el busto y la fecha; el reverso, el valor 8 S y las marcas P · JF.',
+      en: 'An 1801 gold 8 escudos struck at Popayán for Charles IV. The obverse carries the bust and the date; the reverse, the value 8 S and the marks P · JF.',
+    },
+    description: {
+      es: 'En 1801 la casa de Popayán, en labores desde 1758, seguía labrando oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1801 bajo el retrato, el valor 8 S y, a ambos lados del vellocino, las marcas P y JF. Eso es el tipo KM# 62.2 —Cayón 14557, Friedberg 52—, no el KM# 62.1 de Santa Fe con marca NR–JJ, ni el 1 escudo de la misma ceca y el mismo ensaye (KM# 56.2). La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1801 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · AUSPICE · DEO, abrevia In utroque felix, auspice Deo. El 8 a la izquierda y la S a la derecha marcan ocho escudos, la onza del sistema colonial. En inglés de coleccionista esa pieza se llama a veces doubloon; aquí la denominación queda en 8 escudos. El oro .875, 27,0674 g de tipo y un módulo de 37 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: CoinVarieties deja el 1801 P–JF sin cifra, NGC no publica una acuñación de esa fecha, y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal.',
+      en: 'In 1801 the Popayán mint, at work since 1758, was still striking milled gold in the name of Charles IV. This disc shows the date 1801 under the portrait, the value 8 S, and, on either side of the fleece, the marks P and JF. That is type KM# 62.2 — Cayón 14557, Friedberg 52 — not Santa Fe’s KM# 62.1 with mintmark NR–JJ, and not the 1 escudo of the same mint and assayer (KM# 56.2). Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1801 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · AUSPICE · DEO, for In utroque felix, auspice Deo. The 8 at left and S at right mark eight escudos, the onza of the colonial system. English-speaking collectors sometimes call that piece a doubloon; the catalogue denomination here stays 8 escudos. Gold .875, a type weight of 27.0674 g, and a module of 37 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: CoinVarieties leaves the 1801 P–JF without a figure, NGC does not publish a mintage for that date, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1801.',
+      en: 'Obverse: bust of Charles IV facing right, legend with IIII, and the date 1801.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 8 S; marcas P y JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 8 S; marks P and JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 62.2 (N#22976) y lista la combinación 1801 P–JF, sin una tirada. CoinVarieties deja esa fecha y ensaye sin cifra. No se publica aquí un censo de encapsulados ni un valor de catálogo. El 1 escudo de 1801 P–JF es otra ficha de esta colección.',
+      en: 'Numista covers type KM# 62.2 (N#22976) and lists the 1801 P–JF combination, without a mintage. CoinVarieties leaves that date and assayer without a figure. No slab census and no catalogue value are published here. The 1801 P–JF 1 escudo is a separate record in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Fecha, 8 S y P–JF legibles. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Date, 8 S, and P–JF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-8-escudos-1801-charles-iv-p-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/22976',
+        es: 'Numista — 8 escudos, Carlos IV, Colombia (N#22976)',
+        en: 'Numista — 8 escudos, Charles IV, Colombia (N#22976)',
+        note: {
+          es: 'KM# 62.2 para la ceca P de Popayán; el 1801 P–JF figura en esa variante. Oro de tipo .875, 27,0674 g y 37 mm. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 62.2 for the P mint of Popayán; 1801 P–JF is listed under that variety. Type gold .875, 27.0674 g, and 37 mm. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1801-P_JF_8_escudos',
+        es: 'CoinVarieties — 8 escudos de Popayán, Carlos IV, 1801 P–JF',
+        en: 'CoinVarieties — Popayán 8 escudos, Charles IV, 1801 P–JF',
+        note: {
+          es: 'Cayón 14557 y KM# 62.2. Deja la tirada sin cifra. El lote de Heritage que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Cayón 14557 and KM# 62.2. Leaves the mintage unstated. The Heritage lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1796-P_JF_8_escudos',
+        es: 'CoinVarieties — tipo de 8 escudos de Popayán, Carlos IV, Friedberg 52',
+        en: 'CoinVarieties — Popayán Charles IV 8 escudos type, Friedberg 52',
+        note: {
+          es: 'Asigna Fr-52 al tipo KM# 62.2 de Popayán. Esa página es de 1796, no de este disco, y no se publican precios.',
+          en: 'Assigns Fr-52 to the Popayán KM# 62.2 type. That page is 1796, not this disc, and prices are not published.',
+        },
+      },
+      {
+        href: 'https://www.ngccoin.com/price-guide/world/colombia-8-escudos-km-622-1791-1808-cuid-14400-duid-47901',
+        es: 'NGC — 8 escudos de Colombia, KM# 62.2, 1791–1808',
+        en: 'NGC — Colombia 8 escudos, KM# 62.2, 1791–1808',
+        note: {
+          es: 'Lista 1801P JF bajo KM# 62.2 y no publica una acuñación de esa fecha. No se citan aquí los valores de esa guía.',
+          en: 'Lists 1801P JF under KM# 62.2 and does not publish a mintage for that date. Values on that guide are not cited here.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Casa_de_acu%C3%B1aci%C3%B3n_de_moneda_de_Popay%C3%A1n',
+        es: 'Enciclopedia Banrepcultural — Casa de acuñación de Popayán',
+        en: 'Banrepcultural Encyclopedia — The Popayán mint',
+        note: {
+          es: 'La casa comenzó a labrar en 1758. Contexto de ceca, no autenticación de este disco.',
+          en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1801 P–JF',
+          en: 'Popayán 1 escudo, 1801 P–JF',
         },
       },
     ],
