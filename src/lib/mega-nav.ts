@@ -120,6 +120,11 @@ if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
 }
 
+const spain50Centimos1892 = spainCoinById('50-centimos-madrid-1892-alfonso-xiii-pg-m');
+if (!spain50Centimos1892) {
+  throw new Error('Missing Spain 1892 Madrid 50 céntimos for mega-nav');
+}
+
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
 if (!colombia1PesoBanRep) {
   throw new Error('Missing Colombia BanRep 1 peso 1959–1977 note for mega-nav');
@@ -395,6 +400,12 @@ export const megaNav: NavNode[] = [
             es: spainHalfEscudo.title.es,
             en: spainHalfEscudo.title.en,
             href: spainHalfEscudo.path,
+          },
+          {
+            id: 'es-50-centimos-madrid-1892-alfonso-xiii-pg-m',
+            es: spain50Centimos1892.title.es,
+            en: spain50Centimos1892.title.en,
+            href: spain50Centimos1892.path,
           },
         ],
       },

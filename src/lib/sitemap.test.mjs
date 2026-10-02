@@ -281,6 +281,10 @@ describe('sitemap coverage for Spain numismatics', () => {
       localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
     );
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/50-centimos-madrid-1892-alfonso-xiii-pg-m/', 'en'),
+      '/en/collection/spain-numismatics/50-centimos-madrid-1892-alfonso-xiii-pg-m/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });
