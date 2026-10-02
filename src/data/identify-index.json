@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T17:21:49.458Z",
+  "generatedAt": "2026-10-02T00:27:08.815Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2731,6 +2731,45 @@
       "title": {
         "es": "1 dólar · Trump · Semiquincentenario 1776–2026",
         "en": "$1 · Trump · Semiquincentennial 1776–2026"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "front",
+      "hash": "0022753737572200",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-composite.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "front",
+      "hash": "00042b1525350400",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-front.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "back",
+      "hash": "00182a364a261800",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-back.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
       }
     },
     {
