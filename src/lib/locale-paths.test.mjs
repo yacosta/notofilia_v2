@@ -131,6 +131,10 @@ describe('locale path mapping', () => {
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
     );
     assert.equal(
+      localizePath('/coleccion/espana-numismatica/50-centimos-alfonso-xiii-1892-pgm/', 'en'),
+      '/en/collection/spain-numismatics/50-centimos-alfonso-xiii-1892-pgm/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
       '/en/collection/united-states-numismatics/hard-times-tokens/',
     );

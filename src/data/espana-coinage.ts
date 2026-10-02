@@ -7,7 +7,7 @@ export const NUMISMATICS_PATH = '/coleccion/numismatica/';
 export const SPAIN_COINAGE_PATH = '/coleccion/espana-numismatica/';
 export const SPAIN_COINAGE_PATH_EN = '/collection/spain-numismatics/';
 
-export type SpainCoinageChapterId = 'escudo-oro' | 'madrid' | 'fernando-vi';
+export type SpainCoinageChapterId = 'escudo-oro' | 'madrid' | 'fernando-vi' | 'alfonso-xiii';
 
 export type SpainCoinageChapter = {
   id: SpainCoinageChapterId;
@@ -66,6 +66,22 @@ export const spainCoinageChapters: SpainCoinageChapter[] = [
       en: 'The legend FERDINAND · VI · D · G · is not Ferdinand VII’s. An 1810 of Ferdinand VII reads FERDND VII or FERDINAND VII and, in America, HISPAN ET IND REX. This disc reads HISPANIARUM · REX: king of the Spains, without the Indies in the legend. Calicó 2019 assigns the 1757 Madrid JB to the fourth portrait (Áureo & Calicó#561; in the 2008 edition, Calicó#255). Krause gathers the type as KM#378; Friedberg as Fr#274. Numista names Tomás Francisco Prieto Martín as engraver. This case does not try to cover all Ferdinand gold.',
     },
   },
+  {
+    id: 'alfonso-xiii',
+    years: { es: '1889–1892', en: '1889–1892' },
+    title: {
+      es: 'Primer retrato de Alfonso XIII',
+      en: 'Alfonso XIII, first portrait',
+    },
+    lead: {
+      es: 'El 50 céntimos de plata del primer retrato muestra al niño de perfil a la izquierda. La ficha de esta vitrina es la fecha 1892, con marcas P·G·M de Madrid.',
+      en: 'The silver 50 centimos of the first portrait shows the child in profile facing left. The record in this case is the 1892 date, with Madrid marks P·G·M.',
+    },
+    body: {
+      es: 'Alfonso XIII reinó de 1886 a 1931; hasta 1902, bajo la regencia de María Cristina. El 50 céntimos KM#690 se labró en 1889 y 1892: busto infantil a la izquierda, leyenda ALFONSO XIII POR LA G· DE DIOS, y en el reverso el escudo coronado entre las columnas de Hércules, PLUS ULTRA y REY CONSTL. DE ESPAÑA. Numista N#18485 da plata .835, 2,50 g, 18 mm, cerca de 1 mm de grosor, canto estriado y alineación moneda, y nombra grabador a Gregorio Sellán y González. En 1892 las marcas de Madrid son P·G·M. No es el segundo retrato de 1894 (KM#703) ni el tercero, de 1896–1900, cuyo corte lee B·M· (KM#705).',
+      en: 'Alfonso XIII reigned from 1886 to 1931, until 1902 under the regency of María Cristina. The KM#690 50 centimos was struck in 1889 and 1892: a child bust facing left, the legend ALFONSO XIII POR LA G· DE DIOS, and on the reverse the crowned shield between the Pillars of Hercules, PLUS ULTRA, and REY CONSTL. DE ESPAÑA. Numista N#18485 gives silver .835, 2.50 g, 18 mm, about 1 mm thick, a reeded edge, and coin alignment, and names Gregorio Sellán y González as engraver. In 1892 the Madrid marks are P·G·M. It is not the 1894 second portrait (KM#703) and not the third, of 1896–1900, whose truncation reads B·M· (KM#705).',
+    },
+  },
 ];
 
 export const seriesSources: CatalogSource[] = [
@@ -102,18 +118,18 @@ export const seriesCopy = {
   es: {
     metaTitle: 'España · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda española: el medio escudo de oro de Fernando VI, Madrid 1757, ensaye JB (KM#378).',
+      'Moneda española: medio escudo de Fernando VI, Madrid 1757 (KM#378), y 50 céntimos de Alfonso XIII, 1892, P·G·M (KM#690).',
     kicker: 'España · Numismática',
     title: 'Madrid, el escudo y Fernando VI',
     heroAlt:
       'Medio escudo de oro de Fernando VI, Madrid 1757: anverso con busto a la derecha y reverso con escudo coronado, sobre fondo oscuro',
     intro: [
-      'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En España esa historia de oro pasa por el escudo y por las casas reales de la Península. Esta vitrina abre con un medio escudo de Madrid de 1757, no con el oro colonial de Santa Fe, México o Lima.',
-      'Fernando VI (1746–1759) da nombre al busto. La M coronada y el ensaye JB identifican la Real Casa de Madrid. El papel de este país aún no tiene fichas; el metal, sí.',
+      'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En España esa historia pasa por el escudo de oro y, ya en la peseta, por la plata menuda de Alfonso XIII. Esta vitrina documenta un medio escudo de Madrid de 1757 y un 50 céntimos de 1892, no el oro colonial de Santa Fe, México o Lima.',
+      'Fernando VI (1746–1759) da nombre al medio escudo. La M coronada y el ensaye JB identifican esa pieza. El 50 céntimos es de 1892, primer retrato, con marcas P·G·M de la Real Casa de Madrid. El papel de este país aún no tiene fichas; el metal, sí.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Tres capítulos, de izquierda a derecha: el escudo de oro, la ceca de Madrid y Fernando VI. Debajo, la ficha del medio escudo de 1757 documentado en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: el escudo de oro, la ceca de Madrid, Fernando VI y el primer retrato de Alfonso XIII. Las fichas de la colección están arriba.',
     viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
@@ -124,18 +140,18 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Spain · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of Spanish coinage: Ferdinand VI’s gold half escudo, Madrid 1757, assayers JB (KM#378).',
+      'Spanish coinage: Ferdinand VI’s half escudo, Madrid 1757 (KM#378), and Alfonso XIII’s 50 centimos, 1892, P·G·M (KM#690).',
     kicker: 'Spain · Numismatics',
     title: 'Madrid, the escudo, and Ferdinand VI',
     heroAlt:
       'Ferdinand VI gold half escudo, Madrid 1757: obverse with bust facing right and reverse with a crowned shield, on a dark field',
     intro: [
-      'The Virtual Collection separates numismatics — struck coin — from notaphily. In Spain that gold history runs through the escudo and the royal houses of the peninsula. This case opens with a 1757 Madrid half escudo, not with colonial gold of Santa Fe, Mexico, or Lima.',
-      'Ferdinand VI (1746–1759) names the bust. The crowned M and assayers JB identify the Royal Mint of Madrid. This country’s paper has no records yet; the metal does.',
+      'The Virtual Collection separates numismatics — struck coin — from notaphily. In Spain that history runs through the gold escudo and, once the peseta is in place, through Alfonso XIII’s small silver. This case records a 1757 Madrid half escudo and an 1892 50 centimos, not colonial gold of Santa Fe, Mexico, or Lima.',
+      'Ferdinand VI (1746–1759) names the half escudo. The crowned M and assayers JB identify that piece. The 50 centimos is 1892, first portrait, with P·G·M marks of the Royal Mint of Madrid. This country’s paper has no records yet; the metal does.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Three chapters, left to right: the gold escudo, the Madrid mint, and Ferdinand VI. Below, the record of the 1757 half escudo documented in this collection.',
+      'Four chapters, left to right: the gold escudo, the Madrid mint, Ferdinand VI, and Alfonso XIII’s first portrait. The collection records are above.',
     viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
@@ -145,7 +161,7 @@ export const seriesCopy = {
   },
 } as const;
 
-export type SpainCoinId = 'medio-escudo-madrid-1757-jb';
+export type SpainCoinId = 'medio-escudo-madrid-1757-jb' | '50-centimos-alfonso-xiii-1892-pgm';
 
 export type SpainCoin = {
   id: SpainCoinId;
@@ -324,6 +340,135 @@ export const spainCoins: SpainCoin[] = [
       },
     ],
   },
+  {
+    id: '50-centimos-alfonso-xiii-1892-pgm',
+    path: '/coleccion/espana-numismatica/50-centimos-alfonso-xiii-1892-pgm/',
+    pathEn: '/en/collection/spain-numismatics/50-centimos-alfonso-xiii-1892-pgm/',
+    chapterId: 'alfonso-xiii',
+    year: '1892',
+    mint: {
+      es: 'Madrid; marcas P·G·M',
+      en: 'Madrid; marks P·G·M',
+    },
+    denomination: {
+      es: '50 céntimos',
+      en: '50 centimos',
+    },
+    composition: {
+      es: 'Plata .835 (especificación de tipo Numista N#18485; no es un ensayo de este ejemplar)',
+      en: 'Silver .835 (Numista N#18485 type specification; not an assay of this specimen)',
+    },
+    weight: {
+      es: 'No pesado. Tipo en Numista N#18485: 2,50 g. Esta ficha no asigna ese peso al ejemplar.',
+      en: 'Not weighed. Numista N#18485 type figure: 2.50 g. This record does not assign that weight to the specimen.',
+    },
+    diameter: {
+      es: 'No medido. Tipo en Numista N#18485: 18 mm. El grosor de tipo allí es de cerca de 1 mm; tampoco se midió aquí.',
+      en: 'Not measured. Numista N#18485 type figure: 18 mm. The type thickness there is about 1 mm; it was not measured here either.',
+    },
+    edge: {
+      es: 'Estriado (canto de tipo en Numista). El canto de este ejemplar no se fotografió.',
+      en: 'Reeded (Numista type edge). This specimen’s edge was not photographed.',
+    },
+    references: 'KM#690 · Cal# 54–57 · Numista N#18485',
+    grade: {
+      es: 'Sin encapsular. El retrato, el pelo, la corona, el escudo y las leyendas conservan detalle, con marcas de circulación en los campos. No es un grado numérico.',
+      en: 'Unslabbed. The portrait, hair, crown, shield, and legends still hold detail, with circulation marks in the fields. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Struck Spanish silver 50 centimos of the peseta: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/spain/ESP_1892_50-Centimos_AlfonsoXIII_Composite.png',
+      front: '/images/catalog/spain/ESP_1892_50-Centimos_AlfonsoXIII_Obv.png',
+      back: '/images/catalog/spain/ESP_1892_50-Centimos_AlfonsoXIII_Rev.png',
+      width: 3344,
+      height: 941,
+      faceWidth: 1672,
+      faceHeight: 941,
+    },
+    title: {
+      es: '50 céntimos · Alfonso XIII · Madrid 1892 P·G·M',
+      en: '50 centimos · Alfonso XIII · Madrid 1892 P·G·M',
+    },
+    kicker: {
+      es: 'España · primer retrato',
+      en: 'Spain · first portrait',
+    },
+    lead: {
+      es: '50 céntimos de Alfonso XIII, 1892, Madrid, P·G·M. Primer retrato, sin serial y sin encapsular. Las estrellas de la fecha no se leen aquí.',
+      en: 'Alfonso XIII 50 centimos, 1892, Madrid, P·G·M. First portrait, no serial, unslabbed. The stars beside the date do not resolve here.',
+    },
+    description: {
+      es: 'Esta pieza es un 50 céntimos de plata de Alfonso XIII, labrado en Madrid en 1892, dentro de la peseta. El anverso muestra el busto infantil a la izquierda —el primer retrato, el que el coleccionismo llama pelón— con la leyenda ALFONSO XIII POR LA G· DE DIOS. Bajo el corte, la fotografía lee B·V. La leyenda de tipo en Numista N#18485 imprime G·S· y nombra grabador a Gregorio Sellán y González. Esas iniciales de tipo no son las que enseña esta foto, y la ficha no inventa a quién corresponden B·V. La fecha 1892 va entre dos estrellas. Los dígitos dentro de las estrellas no se resuelven, así que no se asignan *92, *22, *62, *82 ni un sobrefecha 92/89. El reverso lleva el escudo coronado de España entre las columnas de Hércules, la cinta PLUS ULTRA y la orla REY CONSTL. DE ESPAÑA —«rey constitucional de España»—, con P·G·, 50 CENTIMOS y ·M·. P y G son los ensayadores Félix Miguel Peiró Rodrigo y Antonio García González; M es el juez de balanza Ángel Mendoza Ordóñez. Krause reúne el primer retrato como KM#690 (1889–1892). Numista da plata .835, 2,50 g, 18 mm, cerca de 1 mm de grosor, canto estriado y alineación moneda como cifras de tipo. Esas medidas no se tomaron en este ejemplar, y las dos fotografías no muestran el canto ni el eje de cuños. No es el segundo retrato de 1894 (KM#703) ni el tercero de 1896–1900 (KM#705), cuya truncadura lee B·M·.',
+      en: 'This piece is a silver 50 centimos of Alfonso XIII, struck at Madrid in 1892, in the peseta. The obverse shows the child bust facing left — the first portrait, the one collectors call the pelón — with the legend ALFONSO XIII POR LA G· DE DIOS. Under the truncation the photograph reads B·V. Numista’s type lettering for N#18485 prints G·S· and names Gregorio Sellán y González as engraver. Those type initials are not what this photograph shows, and the record does not invent a person for B·V. The date 1892 sits between two stars. The digits inside the stars are not resolved, so the record does not assign *92, *22, *62, *82, or an overdate 92/89. The reverse carries the crowned arms of Spain between the Pillars of Hercules, the ribbon PLUS ULTRA, and the legend REY CONSTL. DE ESPAÑA — “constitutional king of Spain” — with P·G·, 50 CENTIMOS, and ·M·. P and G are the assayers Félix Miguel Peiró Rodrigo and Antonio García González; M is the weight master Ángel Mendoza Ordóñez. Krause gathers the first portrait as KM#690 (1889–1892). Numista gives silver .835, 2.50 g, 18 mm, about 1 mm thick, a reeded edge, and coin alignment as type figures. Those measurements were not taken on this specimen, and the two photographs do not show the edge or the die axis. It is not the 1894 second portrait (KM#703) and not the 1896–1900 third portrait (KM#705), whose truncation reads B·M·.',
+    },
+    history: {
+      es: 'Alfonso XIII fue rey desde su nacimiento en 1886 hasta 1931, con María Cristina como regente hasta 1902. En 1892 tenía seis años. El 50 céntimos del primer retrato solo se labró en 1889 (M·P·M) y en 1892 (P·G·M). Numista anota 3.953.540 piezas para la fila ordinaria de 1892 P·G·M cuyas estrellas leen *92. Esta fotografía no lee esas estrellas, así que esa tirada no se asigna a este disco. Otras tablas redondean la misma fila a 3.954.000. El tipo se desmonetizó el 20 de febrero de 1939. No se publica aquí un martillo ni un censo de encapsulados.',
+      en: 'Alfonso XIII was king from his birth in 1886 until 1931, with María Cristina as regent until 1902. In 1892 he was six. The first-portrait 50 centimos was struck only in 1889 (M·P·M) and in 1892 (P·G·M). Numista records 3,953,540 pieces for the ordinary 1892 P·G·M row whose stars read *92. This photograph does not read those stars, so that mintage is not assigned to this disc. Other tables round the same row to 3,954,000. The type was demonetized on 20 February 1939. No hammer and no slab census are published here.',
+    },
+    obverseLegend: {
+      es: 'ALFONSO XIII POR LA G· DE DIOS — «Alfonso XIII, por la gracia de Dios». Bajo el corte se lee B·V. La fecha 1892 va entre dos estrellas; los números interiores no se resuelven.',
+      en: 'ALFONSO XIII POR LA G· DE DIOS — “Alfonso XIII, by the grace of God.” Under the truncation the coin reads B·V. The date 1892 sits between two stars; the inner numerals do not resolve.',
+    },
+    reverseLegend: {
+      es: 'REY CONSTL. DE ESPAÑA — «Rey constitucional de España». Cinta PLUS ULTRA. En la orla inferior: P·G· 50 CENTIMOS ·M· (Madrid; ensayadores Félix Miguel Peiró Rodrigo y Antonio García González; juez de balanza Ángel Mendoza Ordóñez).',
+      en: 'REY CONSTL. DE ESPAÑA — “Constitutional king of Spain.” Ribbon PLUS ULTRA. In the lower legend: P·G· 50 CENTIMOS ·M· (Madrid; assayers Félix Miguel Peiró Rodrigo and Antonio García González; weight master Ángel Mendoza Ordóñez).',
+    },
+    frontCaption: {
+      es: 'Anverso: busto infantil de Alfonso XIII a la izquierda; ALFONSO XIII POR LA G· DE DIOS; B·V bajo el corte; 1892 entre estrellas.',
+      en: 'Obverse: child bust of Alfonso XIII facing left; ALFONSO XIII POR LA G· DE DIOS; B·V under the truncation; 1892 between stars.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado entre las columnas de Hércules; PLUS ULTRA; REY CONSTL. DE ESPAÑA; P·G· 50 CENTIMOS ·M·.',
+      en: 'Reverse: crowned shield between the Pillars of Hercules; PLUS ULTRA; REY CONSTL. DE ESPAÑA; P·G· 50 CENTIMOS ·M·.',
+    },
+    scarcity: {
+      es: 'El 1892 P·G·M es una fecha del tipo KM#690, no una emisión única. Numista reúne el tipo en Cal# 54–57. Dentro de esa serie, la fila corriente cuyas estrellas leen *92 es la que suele citarse como Cal# 55, con 3.953.540 piezas. Esta ficha no asigna Cal# 55: las estrellas que flanquean 1892 no dejan leer el año pequeño. Tampoco se asignan *22, *62, *82 ni el sobrefecha 92/89. No se publican precios.',
+      en: 'The 1892 P·G·M is a date of type KM#690, not a unique issue. Numista gathers the type as Cal# 54–57. Within that series, the ordinary row whose stars read *92 is the one usually cited as Cal# 55, with 3,953,540 pieces. This record does not assign Cal# 55: the stars flanking 1892 do not yield the small year. *22, *62, *82, and the overdate 92/89 are not assigned either. Prices are not published.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa. Las monedas de este módulo no llevan número de serie. La identidad de la ficha es el objeto fotografiado —busto infantil, 1892, P·G·M de Madrid—, no un certificado. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder. Coins of this module carry no serial number. The identity of this record is the photographed object — child bust, 1892, Madrid P·G·M — not a certificate. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/18485',
+        es: 'Numista — 50 céntimos, Alfonso XIII, primer retrato (N#18485)',
+        en: 'Numista — 50 centimos, Alfonso XIII, first portrait (N#18485)',
+        note: {
+          es: 'KM#690; Cal# 54–57; plata .835, 2,50 g, 18 mm, cerca de 1 mm, canto estriado, alineación moneda. La fila 1892 P·G·M *92 figura con 3.953.540 piezas. Grabador de tipo: Gregorio Sellán y González. No se republica la tabla de precios. Las estrellas de este disco no se leen.',
+          en: 'KM#690; Cal# 54–57; silver .835, 2.50 g, 18 mm, about 1 mm, reeded edge, coin alignment. The 1892 P·G·M *92 row is listed at 3,953,540 pieces. Type engraver: Gregorio Sellán y González. The price table is not republished. This disc’s stars are unread.',
+        },
+      },
+      {
+        href: 'https://www.ngccoin.com/price-guide/world/spain-50-centimos-km-690-1889-cuid-8879-duid-32781',
+        es: 'NGC — 50 céntimos de España, KM#690 (1889–1892)',
+        en: 'NGC — Spain 50 centimos, KM#690 (1889–1892)',
+        note: {
+          es: 'Especificación de tipo: plata .835; busto infantil; existen variedades de fecha y de estrellas. No es un ensayo ni un grado de este ejemplar. No se republican precios ni se copia la tirada de esa tabla.',
+          en: 'Type specification: silver .835; toddler bust; date and star varieties exist. Not an assay or a grade of this specimen. Prices are not republished, and that table’s mintage is not copied.',
+        },
+      },
+      {
+        href: 'http://tlmonedas.blogspot.com/2012/06/50-centimos-1889-1892.html',
+        es: 'Foro La Peseta — 50 céntimos 1889–1892',
+        en: 'La Peseta forum — 50 centimos 1889–1892',
+        note: {
+          es: 'Desglose de P·G·M: Félix Miguel Peiró Rodrigo y Antonio García González, ensayadores, y Ángel Mendoza Ordóñez, juez de balanza. Compilación de coleccionista del tipo, no de este ejemplar. La tirada allí redondea la fila *92 a 3.954.000.',
+          en: 'Expansion of P·G·M: Félix Miguel Peiró Rodrigo and Antonio García González, assayers, and Ángel Mendoza Ordóñez, weight master. A collector’s compilation of the type, not of this specimen. The mintage there rounds the *92 row to 3,954,000.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Alfonso_XIII',
+        es: 'Wikipedia — Alfonso XIII de España',
+        en: 'Wikipedia — Alfonso XIII of Spain',
+        note: {
+          es: 'Reinado 1886–1931 y regencia de María Cristina hasta 1902. Marco del busto infantil, no una ficha de ceca.',
+          en: 'Reign 1886–1931 and the regency of María Cristina until 1902. Frame for the child bust, not a mint record.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -353,7 +498,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Un medio escudo de oro de Madrid de 1757, ensaye JB, sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
+      'Medio escudo de oro de Madrid, 1757, ensaye JB, y 50 céntimos de Alfonso XIII, 1892, P·G·M. Los dos, sin encapsular.',
     relatedLead: 'Otra pieza de la colección de España.',
   },
   en: {
@@ -382,7 +527,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'One unslabbed 1757 Madrid gold half escudo, assayers JB. Further coin pages will be published as they are documented.',
+      'An unslabbed 1757 Madrid gold half escudo, assayers JB, and an unslabbed Alfonso XIII 50 centimos, 1892, P·G·M.',
     relatedLead: 'Another piece in the Spain collection.',
   },
 } as const;

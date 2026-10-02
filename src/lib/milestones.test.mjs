@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-1908-2-50-dolares-cabeza-de-indio');
+    assert.equal(additions.at(-1)?.id, 'es-1892-50-centimos-alfonso-xiii-pgm');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -129,12 +129,12 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /\/coleccion\/colombia\/5000-pesos-error-2010\/#5000-pesos-error-2010-09629901$/);
   });
 
-  it('keeps the Bogotá 1821 8 reales in Logros del Mes', () => {
+  it('still matches the Bogotá 1821 8 reales after the 1892 50 céntimos fills Logros del Mes', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 5);
-    assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
+    assert.equal(fromEnd, 6);
+    assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
       country: 'CO',
@@ -156,7 +156,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 4);
+    assert.equal(fromEnd, 5);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',
       country: 'CO',

@@ -1,0 +1,9 @@
+---
+import SpainCoinPage from '../../../../../components/catalog/SpainCoinPage.astro';
+import { coinById } from '../../../../../data/espana-coinage';
+
+const coin = coinById('50-centimos-alfonso-xiii-1892-pgm');
+if (!coin) throw new Error('Missing Spain 1892 50 centimos catalog coin');
+---
+
+<SpainCoinPage locale="en" coin={coin} />

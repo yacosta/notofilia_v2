@@ -179,7 +179,7 @@ async function collectTargets() {
       const basenameId = path
         .basename(image)
         .replace(/\.(jpg|jpeg|png|webp)$/i, '')
-        .replace(/-(front|back|composite|obverse|reverse|cross|value)$/i, '');
+        .replace(/[-_](front|back|composite|obverse|reverse|obv|rev|cross|value)$/i, '');
       const pieceId = explicitId || basenameId;
       const kind = isCoinPath(file, piecePath) ? 'coin' : 'banknote';
 

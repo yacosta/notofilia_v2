@@ -272,6 +272,9 @@ describe('Spain numismatics menu', () => {
     assert.match(spainBlock, /flag: 'es'/);
     assert.match(spainBlock, /id: 'es-medio-escudo-madrid-1757-jb'/);
     assert.match(spainBlock, /href: spainHalfEscudo\.path/);
+    assert.match(source, /spainCoinById\('50-centimos-alfonso-xiii-1892-pgm'\)/);
+    assert.match(spainBlock, /id: 'es-50-centimos-alfonso-xiii-1892-pgm'/);
+    assert.match(spainBlock, /href: spain50Centimos\.path/);
   });
 });
 

@@ -64,11 +64,11 @@ export const numismaticaCountries: NumismaticaCountry[] = [
   },
   {
     href: SPAIN_COINAGE_PATH,
-    years: { es: '1535–1864', en: '1535–1864' },
+    years: { es: '1535–1892', en: '1535–1892' },
     title: { es: 'España', en: 'Spain' },
     lead: {
-      es: 'El medio escudo de oro de Fernando VI, Madrid 1757, ensaye JB.',
-      en: 'Ferdinand VI’s gold half escudo, Madrid 1757, assayers JB.',
+      es: 'Medio escudo de Fernando VI, Madrid 1757, y 50 céntimos de Alfonso XIII, 1892, P·G·M.',
+      en: 'Ferdinand VI’s half escudo, Madrid 1757, and Alfonso XIII’s 50 centimos, 1892, P·G·M.',
     },
   },
   {
