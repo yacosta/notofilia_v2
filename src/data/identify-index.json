@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T17:21:49.458Z",
+  "generatedAt": "2026-10-02T01:05:19.707Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2731,6 +2731,45 @@
       "title": {
         "es": "1 dólar · Trump · Semiquincentenario 1776–2026",
         "en": "$1 · Trump · Semiquincentennial 1776–2026"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1908-cabeza-de-indio",
+      "face": "front",
+      "hash": "0c7133353751aa14",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/",
+      "pick": "KM# 128 · Fr# 121 · PCGS# 7939",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-composite.jpg",
+      "title": {
+        "es": "2½ dólares · United States Mint · 1908",
+        "en": "$2½ · United States Mint · 1908"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1908-cabeza-de-indio",
+      "face": "front",
+      "hash": "885a376753275f22",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/",
+      "pick": "KM# 128 · Fr# 121 · PCGS# 7939",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-front.jpg",
+      "title": {
+        "es": "2½ dólares · United States Mint · 1908",
+        "en": "$2½ · United States Mint · 1908"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1908-cabeza-de-indio",
+      "face": "back",
+      "hash": "40ac162545572d01",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/",
+      "pick": "KM# 128 · Fr# 121 · PCGS# 7939",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-back.jpg",
+      "title": {
+        "es": "2½ dólares · United States Mint · 1908",
+        "en": "$2½ · United States Mint · 1908"
       }
     },
     {

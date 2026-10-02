@@ -254,6 +254,10 @@ describe('sitemap coverage for United States numismatics', () => {
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });

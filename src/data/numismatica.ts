@@ -76,8 +76,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Fichas Hard Times de 1834 a 1841, la ceca de Filadelfia y el 1 $ de Trump del Semiquincentenario 1776–2026.',
-      en: 'Hard Times tokens of 1834–1841, the Philadelphia mint, and the 1776–2026 Semiquincentennial Trump $1.',
+      es: 'Fichas Hard Times, el cuarto de águila de oro de 1908 y el 1 $ de Trump de 1776–2026.',
+      en: 'Hard Times tokens, the 1908 Indian Head gold quarter eagle, and the 1776–2026 Trump $1.',
     },
   },
   {
