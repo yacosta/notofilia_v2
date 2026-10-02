@@ -76,8 +76,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Fichas Hard Times, el quarter eagle Indian Head de 1912 y el 1 $ de Trump de 1776–2026.',
-      en: 'Hard Times tokens, the 1912 Indian Head quarter eagle, and the 1776–2026 Trump $1.',
+      es: 'Fichas Hard Times, los quarter eagle Liberty Head de 1878 e Indian Head de 1912, y el 1 $ de Trump de 1776–2026.',
+      en: 'Hard Times tokens, the 1878 Liberty Head and 1912 Indian Head quarter eagles, and the 1776–2026 Trump $1.',
     },
   },
   {

@@ -198,6 +198,7 @@ export const additions: Holding[] = [
   { id: 'co-1821-8-reales-bogota-ba-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1801-8-escudos-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'us-2-50-dolares-1912-indian-head', kind: 'coin', country: 'US' },
+  { id: 'us-2-50-dolares-1878-liberty-head', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -322,6 +323,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1821-8-reales-bogota-km-c6' },
   { id: 'co-1801-8-escudos-popayan-km62-2' },
   { id: 'us-1912-quarter-eagle-km128' },
+  { id: 'us-1878-quarter-eagle-pcgs7828' },
 ];
 
 export type CollectionStats = {
