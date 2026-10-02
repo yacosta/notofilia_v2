@@ -191,6 +191,32 @@ describe('US Hard Times HT-10A 1834 Running Boar', () => {
   });
 });
 
+describe('US 1878 Liberty Head quarter eagle', () => {
+  it('registers one bilingual unslabbed Philadelphia piece with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.match(data, /id: '2-50-dolares-1878-liberty-head'/);
+    assert.match(data, /chapterId: 'ceca-filadelfia'/);
+    assert.match(data, /Christian Gobrecht/);
+    assert.match(data, /PCGS #7828 · Numista N#13432/);
+    assert.match(data, /286\.240/);
+    assert.match(data, /286,240/);
+    assert.match(data, /LIBERTY en la coroneta/);
+    assert.match(data, /2 1\/2 D\./);
+    assert.match(data, /no_serial_reason:\n      'Struck United States quarter eagle/);
+    assert.match(data, /united-states-mint-2-50-dollars-1878-liberty-head-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1878-2-50\/7828/);
+    assert.match(data, /en\.numista\.com\/13432/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    assert.match(holdings, /id: 'us-2-50-dolares-1878-liberty-head', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1878-quarter-eagle-pcgs7828/);
+  });
+});
+
 describe('US 1912 Indian Head quarter eagle', () => {
   it('registers one bilingual unslabbed Philadelphia piece with no serial', () => {
     assert.equal(

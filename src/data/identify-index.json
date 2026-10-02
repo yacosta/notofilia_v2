@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T00:27:08.815Z",
+  "generatedAt": "2026-10-02T01:05:01.797Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1408,6 +1408,45 @@
       }
     },
     {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "a1515309144d2990",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-composite.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "4a6353121b3b1541",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-front.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "back",
+      "hash": "d86a3d0d0f2d2241",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-back.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
       "pieceId": "200-pesos-oro-1989",
       "face": "front",
       "hash": "3d365d334b134727",
@@ -2731,6 +2770,45 @@
       "title": {
         "es": "1 dólar · Trump · Semiquincentenario 1776–2026",
         "en": "$1 · Trump · Semiquincentennial 1776–2026"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "front",
+      "hash": "145595d455732b15",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-composite.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "front",
+      "hash": "9817555b2d238632",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-front.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "back",
+      "hash": "403a2d2b67152f41",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-back.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
       }
     },
     {
