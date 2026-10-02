@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T01:32:58.385Z",
+  "generatedAt": "2026-10-02T01:41:01.633Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2770,6 +2770,45 @@
       "title": {
         "es": "1 dólar · Trump · Semiquincentenario 1776–2026",
         "en": "$1 · Trump · Semiquincentennial 1776–2026"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "front",
+      "hash": "145595d455732b15",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-composite.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "front",
+      "hash": "9817555b2d238632",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-front.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1878-liberty-head",
+      "face": "back",
+      "hash": "403a2d2b67152f41",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/",
+      "pick": "PCGS #7828 · Numista N#13432",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1878-liberty-head-back.jpg",
+      "title": {
+        "es": "2,50 dólares · Liberty Head · 1878",
+        "en": "2.50 dollars · Liberty Head · 1878"
       }
     },
     {

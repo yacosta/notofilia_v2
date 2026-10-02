@@ -255,6 +255,10 @@ describe('sitemap coverage for United States numismatics', () => {
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
     );
