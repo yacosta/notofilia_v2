@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T16:00:18.274Z",
+  "generatedAt": "2026-10-02T18:12:34.280Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5128,7 +5128,7 @@
     {
       "pieceId": "20-centavos-1895-pgv",
       "face": "front",
-      "hash": "5035123173713376",
+      "hash": "0435f452d1963104",
       "kind": "coin",
       "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
       "pick": "KM#22 · Numista N#17451 · PCGS#976911",
@@ -5141,7 +5141,7 @@
     {
       "pieceId": "20-centavos-1895-pgv",
       "face": "front",
-      "hash": "5b004894ce169c1e",
+      "hash": "892a27ca6813aa22",
       "kind": "coin",
       "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
       "pick": "KM#22 · Numista N#17451 · PCGS#976911",
@@ -5154,7 +5154,7 @@
     {
       "pieceId": "20-centavos-1895-pgv",
       "face": "back",
-      "hash": "485244ccb6c8de7c",
+      "hash": "02be2b6b6d352791",
       "kind": "coin",
       "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
       "pick": "KM#22 · Numista N#17451 · PCGS#976911",
