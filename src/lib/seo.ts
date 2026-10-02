@@ -6,6 +6,7 @@ import { articlePath, blogArticles, newsArticles } from '../data/editorial';
 import { USA_PATH } from '../data/estados-unidos';
 import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
 import { SPAIN_COINAGE_PATH } from '../data/espana-coinage';
+import { PUERTO_RICO_COINAGE_PATH } from '../data/puerto-rico-coinage';
 import { GLOSSARY_PATH } from '../data/glossary';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { collectionStats } from '../data/holdings';
@@ -165,6 +166,7 @@ export const llmsCountryCatalogues = [
   { href: SERIES_PATH, es: 'Filipinas · Periodo estadounidense', en: 'Philippines · American period' },
   { href: CHINA_PATH, es: 'China', en: 'China' },
   { href: PUERTO_RICO_PATH, es: 'Puerto Rico', en: 'Puerto Rico' },
+  { href: PUERTO_RICO_COINAGE_PATH, es: 'Puerto Rico (numismática)', en: 'Puerto Rico (numismatics)' },
   { href: ECUADOR_PATH, es: 'Ecuador', en: 'Ecuador' },
   { href: GUATEMALA_PATH, es: 'Guatemala', en: 'Guatemala' },
   { href: NETHERLANDS_PATH, es: 'Países Bajos (papel moneda)', en: 'Netherlands (paper money)' },

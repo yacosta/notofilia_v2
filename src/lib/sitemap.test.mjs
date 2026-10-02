@@ -285,6 +285,20 @@ describe('sitemap coverage for Spain numismatics', () => {
   });
 });
 
+describe('sitemap coverage for Puerto Rico numismatics', () => {
+  it('maps the coinage series and 20 centavos pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/', 'en'),
+      '/en/collection/puerto-rico-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/20-centavos-1895-pgv/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
 describe('sitemap coverage for reference tools', () => {
   it('maps the tools hub and fancy serial checker pairs', () => {
     assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');

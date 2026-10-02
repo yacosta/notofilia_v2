@@ -275,6 +275,20 @@ describe('Spain numismatics menu', () => {
   });
 });
 
+describe('Puerto Rico numismatics menu', () => {
+  it('nests the 1895 20 centavos under Puerto Rico after Países Bajos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    const prBlock = numismatica.split("id: 'pr-monedas'")[1] ?? '';
+    assert.match(numismatica, /id: 'nl-monedas'[\s\S]*id: 'pr-monedas'/);
+    assert.match(source, /puertoRicoCoinById\('20-centavos-1895-pgv'\)/);
+    assert.match(prBlock, /href: PUERTO_RICO_COINAGE_PATH/);
+    assert.match(prBlock, /flag: 'pr'/);
+    assert.match(prBlock, /id: 'pr-20-centavos-1895-pgv'/);
+    assert.match(prBlock, /href: puertoRico20Centavos\.path/);
+  });
+});
+
 describe('United States numismatics menu', () => {
   it('adds Estados Unidos under Colección Virtual - Numismática', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
