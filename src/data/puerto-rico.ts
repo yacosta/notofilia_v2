@@ -83,6 +83,8 @@ export const seriesCopy = {
       'El papel no se detuvo con el tratado. El Congreso de Estados Unidos respetó la carta española; el banco se reorganizó como Banco de Puerto Rico (Bank of Porto Rico), perdió el monopolio exclusivo y siguió emitiendo papel transicional —sellado y adaptado al dólar—, el llamado dólar puertorriqueño (Pick 32 y 41–48). En 1902, el First National Bank of Porto Rico, en San Juan, empezó a emitir billetes nacionales estadounidenses (Pick 33–41).',
       'La carta española venció en 1913 y el banco se liquidó. Entre el 16 y el 24 de enero de 1916, una comisión de liquidación recogió el papel insular que aún circulaba; en enero de 1925, los ejemplares recuperados se incineraron. Por eso, los billetes del Banco Español y del Banco de Puerto Rico son hoy escasos: solo sobrevive una fracción de lo emitido. Esta vitrina no inventa existencias de esas series: documenta el contexto y las tres piezas de la colección.',
     ],
+    coinageLead: 'La moneda provincial de 1895, acuñada en Madrid, se documenta en la vitrina de numismática.',
+    coinageLink: 'Puerto Rico · Numismática',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
       'Billete circulante de 1 peso de la Junta Central de 1869 (P#61, N.º 13085), recibo de contribución provisional (N.º 32, abajo) y billete de Canje de 1895 (P#7b, serial radar 4548454).',
@@ -109,6 +111,8 @@ export const seriesCopy = {
       'Paper did not stop with the treaty. The United States Congress respected the Spanish charter; the bank was reorganized as Banco de Puerto Rico (Bank of Porto Rico), lost its exclusive monopoly, and kept issuing transitional notes — stamped and adapted to the dollar — the so-called Puerto Rican dollar (Pick 32 and 41–48). In 1902, the First National Bank of Porto Rico, in San Juan, began issuing United States National Bank Notes (Pick 33–41).',
       'The Spanish charter expired in 1913 and the bank was liquidated. Between 16 and 24 January 1916, a liquidation commission gathered the island notes still in circulation; in January 1925, the recovered pieces were incinerated. That is why Banco Español and Banco de Puerto Rico notes are scarce today: only a fraction of what was issued survives. This case does not invent holdings of those series: it documents the context and the three pieces in the collection.',
     ],
+    coinageLead: 'The 1895 provincial coinage, struck in Madrid, is documented in the numismatics case.',
+    coinageLink: 'Puerto Rico · Numismatics',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
       '1869 Central Board circulating 1-peso note (P#61, No. 13085), provisional fundraising receipt (No. 32, below), and 1895 exchange note (P#7b, radar serial 4548454).',

@@ -21,6 +21,7 @@ import {
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
+import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
 import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -118,6 +119,11 @@ if (!usHt16) {
 const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
 if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
+}
+
+const puertoRico20Centavos = puertoRicoCoinById('20-centavos-1895-pgv');
+if (!puertoRico20Centavos) {
+  throw new Error('Missing Puerto Rico 1895 20 centavos for mega-nav');
 }
 
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
@@ -475,6 +481,21 @@ export const megaNav: NavNode[] = [
         en: 'Netherlands',
         href: NETHERLANDS_COINAGE_PATH,
         flag: 'nl',
+      },
+      {
+        id: 'pr-monedas',
+        es: 'Puerto Rico',
+        en: 'Puerto Rico',
+        href: PUERTO_RICO_COINAGE_PATH,
+        flag: 'pr',
+        children: [
+          {
+            id: 'pr-20-centavos-1895-pgv',
+            es: puertoRico20Centavos.title.es,
+            en: puertoRico20Centavos.title.en,
+            href: puertoRico20Centavos.path,
+          },
+        ],
       },
     ],
   },

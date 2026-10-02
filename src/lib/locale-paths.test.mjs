@@ -127,6 +127,14 @@ describe('locale path mapping', () => {
     );
     assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
     assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/', 'en'),
+      '/en/collection/puerto-rico-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/20-centavos-1895-pgv/',
+    );
+    assert.equal(
       localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
     );
@@ -643,6 +651,11 @@ describe('locale path mapping', () => {
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
     assert.equal(englishContentSlug('coleccion/espana-numismatica'), 'collection/spain-numismatics');
+    assert.equal(englishContentSlug('coleccion/puerto-rico-numismatica'), 'collection/puerto-rico-numismatics');
+    assert.equal(
+      englishContentSlug('coleccion/puerto-rico-numismatica/20-centavos-1895-pgv'),
+      'collection/puerto-rico-numismatics/20-centavos-1895-pgv',
+    );
     assert.equal(
       englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
       'collection/spain-numismatics/half-escudo-madrid-1757-jb',

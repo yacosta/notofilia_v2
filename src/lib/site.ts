@@ -49,6 +49,7 @@ import {
   unitedStatesCoinageDedicatedSlugs,
 } from '../data/estados-unidos-coinage';
 import { spainCoinageDedicatedSlugs, spainCoinSlugs } from '../data/espana-coinage';
+import { puertoRicoCoinageDedicatedSlugs, puertoRicoCoinSlugs } from '../data/puerto-rico-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { catalogNoteSlugs as philippinesPnbNoteSlugs, dedicatedCatalogPaths as philippinesPnbPaths } from '../data/philippines-pnb-1916';
 import { dedicatedCatalogPaths as puertoRicoPaths, puertoRicoNoteSlugs, PUERTO_RICO_PATH } from '../data/puerto-rico';
@@ -105,6 +106,7 @@ function uniqueContentSlugs(): Set<string> {
   for (const slug of netherlandsCoinSlugs) slugs.add(slug);
   for (const slug of unitedStatesCoinSlugs) slugs.add(slug);
   for (const slug of spainCoinSlugs) slugs.add(slug);
+  for (const slug of puertoRicoCoinSlugs) slugs.add(slug);
   for (const slug of chinaNoteSlugs) slugs.add(slug);
   for (const slug of englandNoteSlugs) slugs.add(slug);
   for (const slug of canadaNoteSlugs) slugs.add(slug);
@@ -195,8 +197,8 @@ export const collections = [
   },
   {
     href: NUMISMATICS_PATH,
-    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, España, Estados Unidos, Países Bajos y lazaretos colombianos.' },
-    en: { title: 'Numismatics', description: 'Coinage: Colombia, Spain, the United States, the Netherlands, and the Colombian lazarettos.' },
+    es: { title: 'Numismática', description: 'Moneda metálica: Colombia, España, Estados Unidos, Países Bajos, Puerto Rico y lazaretos colombianos.' },
+    en: { title: 'Numismatics', description: 'Coinage: Colombia, Spain, the United States, the Netherlands, Puerto Rico, and the Colombian lazarettos.' },
   },
   {
     href: COLOMBIA_PATH,
@@ -215,8 +217,8 @@ export const collections = [
   },
   {
     href: PUERTO_RICO_PATH,
-    es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX.' },
-    en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues.' },
+    es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX. El 20 centavos de 1895 se documenta en Numismática.' },
+    en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues. The 1895 20 centavos is documented under Numismatics.' },
   },
   {
     href: ECUADOR_PATH,
@@ -316,6 +318,7 @@ export const stubPages = [
   { path: 'coleccion/estados-unidos/rency', es: 'Rency', en: 'Rency' },
   { path: 'coleccion/espana', es: 'España', en: 'Spain' },
   { path: 'coleccion/espana-numismatica', es: 'España-Numismática', en: 'Spain-Numismatics' },
+  { path: 'coleccion/puerto-rico-numismatica', es: 'Puerto Rico-Numismática', en: 'Puerto Rico-Numismatics' },
   { path: 'coleccion/puerto-rico', es: 'Puerto Rico', en: 'Puerto Rico' },
   { path: 'coleccion/ecuador', es: 'Ecuador', en: 'Ecuador' },
   { path: 'coleccion/guatemala', es: 'Guatemala', en: 'Guatemala' },
@@ -359,6 +362,7 @@ const dedicatedEs = [
   ...netherlandsCoinageDedicatedSlugs,
   ...unitedStatesCoinageDedicatedSlugs,
   ...spainCoinageDedicatedSlugs,
+  ...puertoRicoCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),
   USA_MPC_PATH.replace(/^\/|\/$/g, ''),
