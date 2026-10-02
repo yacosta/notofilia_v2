@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../../data/estados-unidos-coinage';
+
+const coin = coinById('1-dolar-oro-1856-cabeza-grande');
+if (!coin) throw new Error('Missing United States 1856 gold dollar catalog coin');
+---
+
+<UnitedStatesCoinPage locale="en" coin={coin} />

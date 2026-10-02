@@ -262,6 +262,10 @@ describe('sitemap coverage for United States numismatics', () => {
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });
