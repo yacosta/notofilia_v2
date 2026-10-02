@@ -63,9 +63,13 @@ describe('Puerto Rico 1895 20 centavos PGV', () => {
     assert.match(enCoin, /PuertoRicoCoinPage locale="en"/);
   });
 
-  it('shows blank placeholders while the 20 centavos has no photographs', () => {
-    assert.doesNotMatch(data, /puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-(front|back|composite)\.jpg/);
-    assert.doesNotMatch(data, /Las fotografías son del objeto|The photographs are of the object/);
+  it('shows the uncropped obverse, reverse, and composite photographs', () => {
+    assert.match(data, /puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-composite\.jpg/);
+    assert.match(data, /puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-front\.jpg/);
+    assert.match(data, /puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-back\.jpg/);
+    assert.match(data, /width: 1672,\n      height: 941,\n      faceWidth: 836,\n      faceHeight: 941,/);
+    assert.match(data, /Las fotografías son del objeto/);
+    assert.match(data, /The photographs are of the object/);
   });
 
   it('opens Puerto Rico in the numismatics index and cross-links the paper case', () => {
