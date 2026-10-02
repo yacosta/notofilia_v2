@@ -35,6 +35,7 @@ const seo = piecePageMeta({
   lead: coin.lead[locale],
   locale,
   country: 'Puerto Rico',
+  heading: coin.heading?.[locale],
 });
 const siblings = pieceSiblings(puertoRicoCoins, coin.path);
 const jsonCrumbs = [
@@ -107,6 +108,7 @@ const jsonCrumbs = [
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.yearLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{coin.year}</dd>
+            {coin.yearNote ? <dd class="m-0 mt-1 font-sans text-[14px]/6 text-muted">{coin.yearNote[locale]}</dd> : null}
           </div>
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.mintLabel}</dt>
@@ -139,6 +141,7 @@ const jsonCrumbs = [
           <div class="sm:col-span-2">
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.referencesLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{coin.references}</dd>
+            {coin.referencesNote ? <dd class="m-0 mt-1 font-sans text-[14px]/6 text-muted">{coin.referencesNote[locale]}</dd> : null}
           </div>
         </dl>
       </section>

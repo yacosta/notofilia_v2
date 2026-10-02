@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T18:46:32.492Z",
+  "generatedAt": "2026-10-02T20:26:37.113Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5123,6 +5123,45 @@
       "title": {
         "es": "20 pesos · Serie Victory n.º 66",
         "en": "20 Pesos · Victory Series No. 66"
+      }
+    },
+    {
+      "pieceId": "10-centavos-alfonso-xiii-pgv",
+      "face": "front",
+      "hash": "0031353472771100",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/",
+      "pick": "cf. KM#21 · cf. Numista N#17450 · cf. PCGS#976903",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-10-centavos-alfonso-xiii-pgv-composite.jpg",
+      "title": {
+        "es": "10 centavos · Alfonso XIII · fecha aparente 1895",
+        "en": "10 Centavos · Alfonso XIII · apparent date 1895"
+      }
+    },
+    {
+      "pieceId": "10-centavos-alfonso-xiii-pgv",
+      "face": "front",
+      "hash": "0012595a552f3e00",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/",
+      "pick": "cf. KM#21 · cf. Numista N#17450 · cf. PCGS#976903",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-10-centavos-alfonso-xiii-pgv-front.jpg",
+      "title": {
+        "es": "10 centavos · Alfonso XIII · fecha aparente 1895",
+        "en": "10 Centavos · Alfonso XIII · apparent date 1895"
+      }
+    },
+    {
+      "pieceId": "10-centavos-alfonso-xiii-pgv",
+      "face": "back",
+      "hash": "001677ad4d4b0a00",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/",
+      "pick": "cf. KM#21 · cf. Numista N#17450 · cf. PCGS#976903",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-10-centavos-alfonso-xiii-pgv-back.jpg",
+      "title": {
+        "es": "10 centavos · Alfonso XIII · fecha aparente 1895",
+        "en": "10 Centavos · Alfonso XIII · apparent date 1895"
       }
     },
     {

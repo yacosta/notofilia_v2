@@ -430,6 +430,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', en: '/collection/spain-numismatics/half-escudo-madrid-1757-jb/' },
   { es: '/coleccion/espana-numismatica/', en: '/collection/spain-numismatics/' },
   { es: '/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', en: '/collection/puerto-rico-numismatics/20-centavos-1895-pgv/' },
+  { es: '/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/', en: '/collection/puerto-rico-numismatics/10-centavos-alfonso-xiii-pgv/' },
   { es: '/coleccion/puerto-rico-numismatica/', en: '/collection/puerto-rico-numismatics/' },
   { es: '/coleccion/paises-bajos/', en: '/collection/netherlands/' },
   {
@@ -781,8 +782,10 @@ export function englishRedirects(): Record<string, string> {
     '/en/espana-numismatica/medio-escudo-madrid-1757-jb/',
     '/en/espana-numismatica/',
     '/en/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/',
+    '/en/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/',
     '/en/coleccion/puerto-rico-numismatica/',
     '/en/puerto-rico-numismatica/20-centavos-1895-pgv/',
+    '/en/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/',
     '/en/puerto-rico-numismatica/',
     '/en/coleccion/united-states-numismatics/hard-times-tokens/',
     '/en/coleccion/united-states-numismatics/ht-34-1837-donkey-turtle/',
