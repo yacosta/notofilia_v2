@@ -657,6 +657,10 @@ describe('locale path mapping', () => {
       'collection/puerto-rico-numismatics/20-centavos-1895-pgv',
     );
     assert.equal(
+      englishContentSlug('coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv'),
+      'collection/puerto-rico-numismatics/10-centavos-alfonso-xiii-pgv',
+    );
+    assert.equal(
       englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
       'collection/spain-numismatics/half-escudo-madrid-1757-jb',
     );
