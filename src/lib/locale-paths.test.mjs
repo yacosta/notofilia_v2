@@ -159,6 +159,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
     );
@@ -821,6 +825,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/'],
       '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/'],
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/'],

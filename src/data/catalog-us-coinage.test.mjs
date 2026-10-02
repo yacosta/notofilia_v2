@@ -89,6 +89,33 @@ describe('US Trump Semiquincentennial dollar', () => {
   });
 });
 
+describe('US 1908 Indian Head quarter eagle', () => {
+  it('registers one bilingual Philadelphia gold holding, with the studio pair as one coin', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.match(data, /id: '2-50-dolares-1908-cabeza-de-indio'/);
+    assert.match(data, /chapterId: 'ceca-filadelfia'/);
+    assert.match(data, /Cuarto de águila de 1908, cabeza de indio/);
+    assert.match(data, /1908 Indian Head quarter eagle/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-composite\.jpg/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-front\.jpg/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-back\.jpg/);
+    assert.match(data, /KM# 128 · Fr# 121 · PCGS# 7939/);
+    assert.match(data, /564\.821/);
+    assert.match(data, /565\.057/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States quarter eagle/);
+    assert.match(data, /una sola pieza/);
+    assert.match(data, /one piece/);
+    assert.match(data, /2½ DOLLARS/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.match(holdings, /id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /id: 'us-1908-2-50-km128'/);
+  });
+});
+
 describe('US Hard Times HT-34 1837 token', () => {
   it('registers a bilingual no-serial holding distinct from HT-33', () => {
     assert.equal(

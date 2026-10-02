@@ -80,6 +80,11 @@ if (!usQuarterEagle1878) {
   throw new Error('Missing US 1878 Liberty Head quarter eagle for mega-nav');
 }
 
+const usQuarterEagle1908 = coinById('2-50-dolares-1908-cabeza-de-indio');
+if (!usQuarterEagle1908) {
+  throw new Error('Missing US 1908 Indian Head quarter eagle for mega-nav');
+}
+
 const usQuarterEagle1912 = coinById('2-50-dolares-1912-indian-head');
 if (!usQuarterEagle1912) {
   throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
@@ -437,6 +442,12 @@ export const megaNav: NavNode[] = [
             es: usQuarterEagle1878.title.es,
             en: usQuarterEagle1878.title.en,
             href: usQuarterEagle1878.path,
+          },
+          {
+            id: 'us-2-50-dolares-1908-cabeza-de-indio',
+            es: usQuarterEagle1908.title.es,
+            en: usQuarterEagle1908.title.en,
+            href: usQuarterEagle1908.path,
           },
           {
             id: 'us-2-50-dolares-1912-indian-head',

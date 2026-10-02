@@ -295,6 +295,7 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('ht-16-1841-daniel-webster'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
     assert.match(source, /coinById\('2-50-dolares-1878-liberty-head'\)/);
+    assert.match(source, /coinById\('2-50-dolares-1908-cabeza-de-indio'\)/);
     assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
     assert.match(source, /coinById\('1-dolar-oro-1856-cabeza-grande'\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
@@ -303,6 +304,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-ht-181-c1835-john-j-adams'/);
     assert.match(usBlock, /id: 'us-ht-10a-1834-jabali'/);
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
+    assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
