@@ -111,12 +111,7 @@ export const seriesCopy = {
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Puerto Rico las dos historias se cruzan en 1895: el Billete de Canje recogió la plata mexicana y la moneda provincial, labrada en Madrid, ocupó su lugar.',
       'Esta vitrina abre con un 20 centavos de plata de ese año, con el busto niño de Alfonso XIII y las iniciales P·G·V. Es la única serie de moneda hecha para uso exclusivo de la isla.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Tres capítulos, de izquierda a derecha: el peso provincial, Madrid y P·G·V, y Alfonso XIII niño. Encima, la ficha del 20 centavos de 1895 documentado en esta colección.',
-    viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     parentLink: 'Numismática',
     notesLead: 'El papel moneda de Puerto Rico, incluido el Billete de Canje de 1895, se documenta en la vitrina de notafilia.',
     notesLink: 'Puerto Rico · Emisiones coloniales y de transición',
@@ -133,12 +128,7 @@ export const seriesCopy = {
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In Puerto Rico the two stories meet in 1895: the exchange note gathered the Mexican silver, and the provincial coinage, struck in Madrid, took its place.',
       'This case opens with a silver 20 centavos of that year, with the boy Alfonso XIII’s bust and the initials P·G·V. It is the only coinage series made for the island’s exclusive use.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Three chapters, left to right: the provincial peso, Madrid and P·G·V, and the boy Alfonso XIII. Above, the record of the 1895 20 centavos documented in this collection.',
-    viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     parentLink: 'Numismatics',
     notesLead: 'Puerto Rico’s paper money, including the 1895 exchange note, is documented in the notaphily case.',
     notesLink: 'Puerto Rico · Colonial and transition issues',
@@ -379,10 +369,6 @@ export function coinagePath(locale: 'es' | 'en'): string {
 
 export function coinPath(coin: PuertoRicoCoin, locale: 'es' | 'en'): string {
   return locale === 'en' ? coin.pathEn : coin.path;
-}
-
-export function chapterHref(id: PuertoRicoCoinageChapterId): string {
-  return `#${id}`;
 }
 
 export function notesPath(locale: 'es' | 'en'): string {
