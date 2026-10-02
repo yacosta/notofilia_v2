@@ -301,6 +301,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '2,50 dólares · United States Mint · 1912',
     en: '2.50 dollars · United States Mint · 1912',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
+    es: '1 dólar de oro · United States Mint · 1856',
+    en: 'Gold dollar · United States Mint · 1856',
+  },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: '50.000 pesos · error de numeración · 2008',
     en: '50,000 pesos · numbering error · 2008',
@@ -383,6 +387,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
     es: 'El quarter eagle Indian Head de 1912, Filadelfia, sin marca de ceca.',
     en: 'The 1912 Indian Head quarter eagle, Philadelphia, with no mint mark.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
+    es: 'El dólar de oro de 1856, tipo 3 de Longacre, Filadelfia, sin marca de ceca.',
+    en: 'The 1856 gold dollar, Longacre Type 3, Philadelphia, with no mint mark.',
   },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: 'El mismo tipo Isaacs en la colección, con otro serial y un error.',

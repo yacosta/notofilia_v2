@@ -48,12 +48,12 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'The Philadelphia mint',
     },
     lead: {
-      es: 'El Coinage Act del 2 de abril de 1792 creó la United States Mint en Filadelfia, entonces capital federal. Esa casa sigue siendo la ceca de esta pieza.',
-      en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house is still the mint of this piece.',
+      es: 'El Coinage Act del 2 de abril de 1792 creó la United States Mint en Filadelfia, entonces capital federal. Esa casa es la ceca de las piezas federales de esta vitrina.',
+      en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house is the mint of the federal pieces in this case.',
     },
     body: {
-      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el quarter eagle Indian Head de 1912, oro .900 de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. No se pretende cubrir Liberty Seated, Morgan ni Lincoln. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
-      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1912 Indian Head quarter eagle, .900 gold by Bela Lyon Pratt. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated, Morgan, and Lincoln are not covered here. This country’s legal-tender paper is catalogued separately, under Notaphily.',
+      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el dólar de oro de 1856, tipo 3 de James Barton Longacre, y el quarter eagle Indian Head de 1912, oro .900 de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. No se pretende cubrir Liberty Seated, Morgan ni Lincoln. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
+      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1856 gold dollar, James Barton Longacre’s Type 3, and the 1912 Indian Head quarter eagle, .900 gold by Bela Lyon Pratt. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated, Morgan, and Lincoln are not covered here. This country’s legal-tender paper is catalogued separately, under Notaphily.',
     },
   },
   {
@@ -68,8 +68,8 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'Since the Sacagawea dollar, the 8.10 g, 26.49 mm manganese-brass module has been that of the circulating $1. The 2026 piece uses that same alloy; it is not gold.',
     },
     body: {
-      es: 'El dólar de oro de circulación desapareció en 1933. El pequeño dólar de cuproníquel Susan B. Anthony (1979) cedió en 2000 al Sacagawea de latón-manganeso —88,5 % cobre, 6 % zinc, 3,5 % manganeso y 2 % níquel—, el mismo cospel que heredaron los Native American dollars, los Presidential dollars (2007–2016, 2020) y los American Innovation. El sello presidencial del reverso de esos Presidential dollars es el de Frank Gasparro, con sus iniciales FG. El dólar del Semiquincentenario reutiliza ese reverso, con el número 250 en el escudo, y cambia el canto: liso, sin leyenda ni marca de ceca, a diferencia de los Native American y American Innovation. Pese al color dorado, no contiene oro.',
-      en: 'Circulating gold dollars ended in 1933. The small cupronickel Susan B. Anthony dollar (1979) yielded in 2000 to the Sacagawea manganese-brass piece — 88.5% copper, 6% zinc, 3.5% manganese, and 2% nickel — the same planchet later used for Native American dollars, Presidential dollars (2007–2016, 2020), and American Innovation dollars. The presidential-seal reverse of those Presidential dollars is Frank Gasparro’s, with his initials FG. The Semiquincentennial dollar reuses that reverse, with 250 in the shield, and changes the edge: plain, with no lettering and no mint mark, unlike Native American and American Innovation dollars. Despite the golden color, it contains no gold.',
+      es: 'El dólar de oro de circulación desapareció en 1933. El de 1856, en el capítulo de Filadelfia, es esa pieza de oro .900. El pequeño dólar de cuproníquel Susan B. Anthony (1979) cedió en 2000 al Sacagawea de latón-manganeso —88,5 % cobre, 6 % zinc, 3,5 % manganeso y 2 % níquel—, el mismo cospel que heredaron los Native American dollars, los Presidential dollars (2007–2016, 2020) y los American Innovation. El sello presidencial del reverso de esos Presidential dollars es el de Frank Gasparro, con sus iniciales FG. El dólar del Semiquincentenario reutiliza ese reverso, con el número 250 en el escudo, y cambia el canto: liso, sin leyenda ni marca de ceca, a diferencia de los Native American y American Innovation. Pese al color dorado, no contiene oro.',
+      en: 'Circulating gold dollars ended in 1933. The 1856 piece, in the Philadelphia chapter, is that .900 gold coin. The small cupronickel Susan B. Anthony dollar (1979) yielded in 2000 to the Sacagawea manganese-brass piece — 88.5% copper, 6% zinc, 3.5% manganese, and 2% nickel — the same planchet later used for Native American dollars, Presidential dollars (2007–2016, 2020), and American Innovation dollars. The presidential-seal reverse of those Presidential dollars is Frank Gasparro’s, with his initials FG. The Semiquincentennial dollar reuses that reverse, with 250 in the shield, and changes the edge: plain, with no lettering and no mint mark, unlike Native American and American Innovation dollars. Despite the golden color, it contains no gold.',
     },
   },
   {
@@ -160,19 +160,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times, el quarter eagle Indian Head de 1912 y el 1 $ de Trump de 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times, el dólar de oro de 1856, el quarter eagle de 1912 y el 1 $ de 2026.',
     kicker: 'Estados Unidos · Numismática',
-    title: 'Hard Times, el quarter eagle de 1912 y el dólar de 2026',
+    title: 'Hard Times, el oro de Filadelfia y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el quarter eagle Indian Head de 1912 —oro .900 de Filadelfia, diseño incuso de Bela Lyon Pratt— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Indian Head de 1912 —oro .900, diseño incuso de Bela Lyon Pratt— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'Los demás tipos —centavos de la Mint, medios dólares, el medio águila y las otras águilas de oro— se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el quarter eagle Indian Head de 1912 y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el quarter eagle Indian Head de 1912, el dólar de oro de 1856 y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -184,19 +184,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens, the 1912 Indian Head quarter eagle, and the 1776–2026 Trump $1.',
+      'Catalog of United States coinage: Hard Times tokens, the 1856 gold dollar, the 1912 quarter eagle, and the 2026 $1.',
     kicker: 'United States · Numismatics',
-    title: 'Hard Times, the 1912 quarter eagle, and the 2026 dollar',
+    title: 'Hard Times, Philadelphia gold, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1912 Indian Head quarter eagle — Philadelphia .900 gold, Bela Lyon Pratt’s incuse design — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1912 Indian Head quarter eagle — .900 gold, Bela Lyon Pratt’s incuse design — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'Further types — Mint cents, half dollars, the half eagle, and the other gold eagles — will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1912 Indian Head quarter eagle, and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1912 Indian Head quarter eagle, the 1856 gold dollar, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -213,7 +213,8 @@ export type UnitedStatesCoinId =
   | 'ht-34-1837-burro-tortuga'
   | 'ht-181-c1835-john-j-adams'
   | '1-dolar-trump-1776-2026'
-  | '2-50-dolares-1912-indian-head';
+  | '2-50-dolares-1912-indian-head'
+  | '1-dolar-oro-1856-cabeza-grande';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -1090,6 +1091,144 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       },
     ],
   },
+  {
+    id: '1-dolar-oro-1856-cabeza-grande',
+    path: '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/',
+    pathEn: '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
+    chapterId: 'ceca-filadelfia',
+    year: '1856',
+    mint: {
+      es: 'Filadelfia (sin marca de ceca)',
+      en: 'Philadelphia (no mint mark)',
+    },
+    denomination: {
+      es: '1 dólar de oro',
+      en: 'Gold dollar',
+    },
+    composition: {
+      es: 'Oro .900 (90 % Au, 10 % Cu)',
+      en: 'Gold .900 (90% Au, 10% Cu)',
+    },
+    weight: {
+      es: '1,672 g',
+      en: '1.672 g',
+    },
+    diameter: {
+      es: '15 mm',
+      en: '15 mm',
+    },
+    edge: {
+      es: 'Estriado',
+      en: 'Reeded',
+    },
+    references: 'KM# 86 · PCGS# 7540 · N# 23120',
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    no_serial_reason:
+      'Struck United States gold dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-back.jpg',
+      width: 1672,
+      height: 941,
+      faceWidth: 836,
+      faceHeight: 941,
+    },
+    title: {
+      es: '1 dólar de oro · United States Mint · 1856',
+      en: 'Gold dollar · United States Mint · 1856',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Mint',
+      en: 'United States · United States Mint',
+    },
+    lead: {
+      es: 'Dólar de oro de Filadelfia, 1856, tipo 3 de Longacre: cabeza grande y 5 inclinado. Oro .900, sin marca de ceca, sin serial y sin encapsular.',
+      en: 'Philadelphia gold dollar, 1856, Longacre Type 3: large head and slanted 5. .900 gold, no mint mark, no serial, and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es el dólar de oro de 1856, tipo 3 de James Barton Longacre, acuñado en Filadelfia sin marca de ceca. El anverso muestra la cabeza de la Libertad a la izquierda, con penacho y la cinta LIBERTY, y la leyenda UNITED STATES OF AMERICA. El reverso lleva la corona agrícola —maíz, algodón, trigo y tabaco—, el 1 DOLLAR y la fecha 1856. El flanco izquierdo del 5 baja en diagonal: es el estilo que PCGS numera 7540 (Slanted 5). El 5 vertical es la variedad 7541. Bajo el lazo no hay letra. El relieve es alto. El quarter eagle Indian Head de 1912, también de Filadelfia y de oro .900, es otra pieza: 2,50 dólares, relieve incuso de Bela Lyon Pratt y fecha en el anverso. Numista (N# 23120, KM# 86) da 1,672 g —25,8 granos, o 25 4/5—, 15 mm y canto estriado. Esta fotografía muestra anverso y reverso; el canto no está en el encuadre y el ejemplar no se pesó. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación (7540) de la prueba (7606): el desgaste de la mejilla y del pelo corresponde a una pieza de circulación.',
+      en: 'This piece is the 1856 gold dollar, James Barton Longacre’s Type 3, struck at Philadelphia with no mint mark. The obverse shows Liberty’s head facing left, in a feathered headdress with the band LIBERTY, and the legend UNITED STATES OF AMERICA. The reverse carries the agricultural wreath — corn, cotton, wheat, and tobacco — 1 DOLLAR, and the date 1856. The left side of the 5 slopes: that is the style PCGS numbers 7540 (Slanted 5). The upright 5 is variety 7541. There is no letter under the bow. The relief is high. The 1912 Indian Head quarter eagle, also Philadelphia .900 gold, is another piece: 2.50 dollars, Bela Lyon Pratt’s incuse relief, and the date on the obverse. Numista (N# 23120, KM# 86) gives 1.672 g — 25.8 grains, or 25 4/5 — 15 mm, and a reeded edge. This photograph shows obverse and reverse; the edge is outside the frame and the example was not weighed. The piece is raw, with no holder. PCGS separates the business strike (7540) from the proof (7606): wear on the cheek and hair belongs to a circulation piece.',
+    },
+    history: {
+      es: 'La ley del 3 de marzo de 1849 (9 Stat. 397, cap. CIX) autorizó el dólar de oro y el double eagle. El dólar es de curso legal por un dólar; en el reverso se omite el águila; la tolerancia de peso es un cuarto de grano. Longacre sustituyó en 1854 la cabeza de la Libertad del tipo 1 por la Indian Princess. El tipo 2, de cabeza pequeña, se acuñó en Filadelfia en 1854 y 1855 y, en 1856, solo en San Francisco. En 1856 agrandó la cabeza y bajó el relieve: es el tipo 3, de 1856 a 1889. CoinWeek llama a ese retrato Large Head. Esta ficha describe el objeto de la colección; no tasa la emisión.',
+      en: 'The act of 3 March 1849 (9 Stat. 397, chap. CIX) authorized the gold dollar and the double eagle. The dollar is legal tender for one dollar; the reverse omits the eagle; the weight tolerance is a quarter grain. In 1854 Longacre replaced the Type 1 Liberty head with the Indian Princess. Type 2, the small head, was struck at Philadelphia in 1854 and 1855 and, in 1856, at San Francisco only. In 1856 he enlarged the head and lowered the relief: that is Type 3, from 1856 to 1889. CoinWeek calls that portrait the Large Head. This record describes the object in the collection; it does not value the issue.',
+    },
+    obverseLegend: {
+      es: 'UNITED STATES OF AMERICA · LIBERTY en la cinta del penacho.',
+      en: 'UNITED STATES OF AMERICA · LIBERTY on the headdress band.',
+    },
+    reverseLegend: {
+      es: '1 DOLLAR · 1856 · corona agrícola. Sin marca de ceca. El 5 es el inclinado (PCGS 7540).',
+      en: '1 DOLLAR · 1856 · agricultural wreath. No mint mark. The 5 is the slanted style (PCGS 7540).',
+    },
+    frontCaption: {
+      es: 'Anverso: cabeza de la Libertad a la izquierda, penacho y cinta LIBERTY; UNITED STATES OF AMERICA. Tipo 3, cabeza grande.',
+      en: 'Obverse: Liberty’s head facing left, feathered headdress and LIBERTY band; UNITED STATES OF AMERICA. Type 3, large head.',
+    },
+    backCaption: {
+      es: 'Reverso: 1 DOLLAR; 1856 con el 5 inclinado; corona agrícola. Sin letra bajo el lazo.',
+      en: 'Reverse: 1 DOLLAR; 1856 with the slanted 5; agricultural wreath. No letter under the bow.',
+    },
+    scarcity: {
+      es: 'CoinWeek da 1.762.936 como la tirada de negocio de 1856, la más alta del tipo 3. PCGS publica esa misma cifra en el 5 inclinado (7540) y en el 5 vertical (7541): es el total de Filadelfia para la fecha, no un reparto entre variedades ni un censo de este ejemplar. Numista anota el 1856-D de Dahlonega en 1.460, con D bajo el lazo; aquí ese campo está vacío. Stack’s Bowers sitúa el tipo 2 de 1856 solo en San Francisco. La prueba del 5 inclinado es el PCGS 7606. No se publica un censo de encapsulados ni un precio.',
+      en: 'CoinWeek gives 1,762,936 as the 1856 business-strike mintage, the highest of Type 3. PCGS publishes that same figure on the slanted 5 (7540) and the upright 5 (7541): it is the Philadelphia total for the date, not a split between varieties and not a census of this example. Numista lists the 1856-D of Dahlonega at 1,460, with a D under the bow; that field is empty here. Stack’s Bowers places the 1856 Type 2 at San Francisco only. The slanted-5 proof is PCGS 7606. This record publishes neither a slab census nor a price.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1856, 5 inclinado, sin marca de ceca, cabeza grande— no un certificado. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder. This module carries no serial number. The identity of this record is the photographed object — date 1856, slanted 5, no mint mark, large head — not a certificate. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/23120',
+        es: 'Numista — 1 dólar Large Indian Head, tipo 3 (N# 23120)',
+        en: 'Numista — 1 dollar Large Indian Head, Type 3 (N# 23120)',
+        note: {
+          es: 'KM# 86; 1856–1889; oro .900; 1,672 g (25 4/5 granos); 15 mm; canto estriado. Variedades de 1856: 5 inclinado y 5 vertical. 1856-D, 1.460. No se republican precios.',
+          en: 'KM# 86; 1856–1889; .900 gold; 1.672 g (25 4/5 grains); 15 mm; reeded edge. 1856 varieties: slanted 5 and upright 5. 1856-D, 1,460. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://coinweek.com/gold-dollar-type-3-large-head-1856-1889/',
+        es: 'CoinWeek — Dólar de oro, tipo 3 (cabeza grande), 1856–1889',
+        en: 'CoinWeek — Gold dollar, Type 3 (large head), 1856–1889',
+        note: {
+          es: 'Longacre agrandó la cabeza en 1856. Tirada de negocio más alta del tipo: 1.762.936 en 1856. Aleación .900. No se republican precios.',
+          en: 'Longacre enlarged the head in 1856. Highest business-strike mintage of the type: 1,762,936 in 1856. .900 alloy. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/7540',
+        es: 'PCGS CoinFacts — 1856, 1 dólar, 5 inclinado (7540)',
+        en: 'PCGS CoinFacts — 1856 gold dollar, slanted 5 (7540)',
+        note: {
+          es: 'James Barton Longacre; Filadelfia; tipo 3. El 5 vertical es el 7541 y la prueba del 5 inclinado es el 7606. No se republican precios.',
+          en: 'James Barton Longacre; Philadelphia; Type 3. The upright 5 is 7541 and the slanted-5 proof is 7606. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://fraser.stlouisfed.org/title/coinage-act-1849-1094/fulltext',
+        es: 'FRASER — Coinage Act of 1849, 9 Stat. 397',
+        en: 'FRASER — Coinage Act of 1849, 9 Stat. 397',
+        note: {
+          es: '3 de marzo de 1849, cap. CIX: autoriza el dólar de oro, de curso legal por un dólar, sin águila en el reverso, con tolerancia de un cuarto de grano.',
+          en: '3 March 1849, chap. CIX: authorizes the gold dollar, legal tender for one dollar, with no eagle on the reverse, and a quarter-grain tolerance.',
+        },
+      },
+      {
+        href: 'https://stacksbowers.com/coin-resource-center/us-coins/gold-dollars/indian-head-gold-dollar-type-2-small-head/',
+        es: 'Stack’s Bowers — Dólar Indian Head, tipo 2 (cabeza pequeña)',
+        en: 'Stack’s Bowers — Indian Head gold dollar, Type 2 (small head)',
+        note: {
+          es: 'El tipo 2 de 1856 se acuñó solo en San Francisco. La corona del tipo reúne maíz, algodón, trigo y tabaco. No se republican precios.',
+          en: 'The 1856 Type 2 was struck at San Francisco only. The type wreath gathers corn, cotton, wheat, and tobacco. Prices are not republished.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -1121,7 +1260,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, el quarter eagle Indian Head de 1912 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, el quarter eagle Indian Head de 1912, el dólar de oro de 1856 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -1153,7 +1292,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1912 Indian Head quarter eagle, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1912 Indian Head quarter eagle, the 1856 gold dollar, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },
