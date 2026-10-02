@@ -263,6 +263,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
   },
+  '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
+    es: '2,50 dólares · United States Mint · 1912',
+    en: '2.50 dollars · United States Mint · 1912',
+  },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: '50.000 pesos · error de numeración · 2008',
     en: '50,000 pesos · numbering error · 2008',
@@ -317,6 +321,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',
+  },
+  '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
+    es: 'El quarter eagle Indian Head de 1912, Filadelfia, sin marca de ceca.',
+    en: 'The 1912 Indian Head quarter eagle, Philadelphia, with no mint mark.',
   },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: 'El mismo tipo Isaacs en la colección, con otro serial y un error.',

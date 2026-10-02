@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../data/estados-unidos-coinage';
+
+const coin = coinById('2-50-dolares-1912-indian-head');
+if (!coin) throw new Error('Missing United States 1912 Indian Head quarter eagle catalog coin');
+---
+
+<UnitedStatesCoinPage locale="es" coin={coin} />
