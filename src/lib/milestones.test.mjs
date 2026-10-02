@@ -111,7 +111,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'pr-1895-20-centavos-pgv');
+    assert.equal(additions.at(-1)?.id, 'pr-10-centavos-alfonso-xiii-pgv');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -133,7 +133,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 6);
+    assert.equal(fromEnd, 7);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -152,12 +152,12 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /8-reales-bogota-1821-ba-jf/);
   });
 
-  it('keeps the Popayán 1801 8 escudos in Logros del Mes behind the newer quarter eagles and 20 centavos', () => {
+  it('matches the Popayán 1801 8 escudos holding to its card after the Puerto Rico coins push it out of Logros del Mes', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 5);
-    assert.ok(fromEnd < HOME_MILESTONE_LIMIT);
+    assert.equal(fromEnd, 6);
+    assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',
       country: 'CO',

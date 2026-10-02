@@ -104,8 +104,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: '1895–1896', en: '1895–1896' },
     title: { es: 'Puerto Rico', en: 'Puerto Rico' },
     lead: {
-      es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, P·G·V.',
-      en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, P·G·V.',
+      es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, y un 10 centavos P·G·V con fecha por verificar.',
+      en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
     },
   },
 ];

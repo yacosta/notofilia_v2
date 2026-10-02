@@ -126,6 +126,11 @@ if (!puertoRico20Centavos) {
   throw new Error('Missing Puerto Rico 1895 20 centavos for mega-nav');
 }
 
+const puertoRico10Centavos = puertoRicoCoinById('10-centavos-alfonso-xiii-pgv');
+if (!puertoRico10Centavos) {
+  throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
+}
+
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
 if (!colombia1PesoBanRep) {
   throw new Error('Missing Colombia BanRep 1 peso 1959–1977 note for mega-nav');
@@ -494,6 +499,12 @@ export const megaNav: NavNode[] = [
             es: puertoRico20Centavos.title.es,
             en: puertoRico20Centavos.title.en,
             href: puertoRico20Centavos.path,
+          },
+          {
+            id: 'pr-10-centavos-alfonso-xiii-pgv',
+            es: puertoRico10Centavos.title.es,
+            en: puertoRico10Centavos.title.en,
+            href: puertoRico10Centavos.path,
           },
         ],
       },

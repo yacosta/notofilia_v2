@@ -202,6 +202,7 @@ export const additions: Holding[] = [
   { id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },
   { id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US' },
   { id: 'pr-1895-20-centavos-pgv', kind: 'coin', country: 'PR' },
+  { id: 'pr-10-centavos-alfonso-xiii-pgv', kind: 'coin', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -330,6 +331,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1856-gold-dollar-km86' },
   { id: 'us-1908-2-50-km128' },
   { id: 'pr-1895-20-centavos-km22' },
+  { id: 'pr-10-centavos-cf-km21' },
 ];
 
 export type CollectionStats = {

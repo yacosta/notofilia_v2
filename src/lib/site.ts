@@ -217,8 +217,8 @@ export const collections = [
   },
   {
     href: PUERTO_RICO_PATH,
-    es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX. El 20 centavos de 1895 se documenta en Numismática.' },
-    en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues. The 1895 20 centavos is documented under Numismatics.' },
+    es: { title: 'Puerto Rico', description: 'Emisiones coloniales y de transición del siglo XIX. La moneda provincial de 1895–1896 se documenta en Numismática.' },
+    en: { title: 'Puerto Rico', description: 'Colonial and nineteenth-century transition issues. The 1895–1896 provincial coinage is documented under Numismatics.' },
   },
   {
     href: ECUADOR_PATH,
