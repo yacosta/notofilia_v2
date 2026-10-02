@@ -403,7 +403,7 @@ function pieceSeeds(): PieceSeed[] {
       kicker: coin.kicker,
       grade: coin.grade,
       description: coin.description,
-      image: coin.images.composite,
+      image: coin.images?.composite,
       imageAlt: coin.frontCaption,
     });
   }

@@ -87,7 +87,7 @@ function catalogPieces(): CatalogPiece[] {
       pick: coin.references,
       serial: '',
       cert: '',
-      image: coin.images.composite || coin.images.front,
+      image: coin.images?.composite ?? '',
       imageAlt: coin.frontCaption,
     });
   }
