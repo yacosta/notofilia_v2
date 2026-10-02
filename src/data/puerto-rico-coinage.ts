@@ -111,12 +111,7 @@ export const seriesCopy = {
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Puerto Rico las dos historias se cruzan en 1895: el Billete de Canje recogió la plata mexicana y la moneda provincial, labrada en Madrid, ocupó su lugar.',
       'Esta vitrina abre con un 20 centavos de plata de ese año, con el busto niño de Alfonso XIII y las iniciales P·G·V. Es la única serie de moneda hecha para uso exclusivo de la isla. A su lado va un 10 centavos de la misma serie cuya fotografía muestra 1895, una fecha que los catálogos no registran para ese valor.',
     ],
-    holdingsTitle: 'El catálogo',
-    holdingsIntro:
-      'Tres capítulos, de izquierda a derecha: el peso provincial, Madrid y P·G·V, y Alfonso XIII niño. Encima, las fichas del 20 centavos de 1895 y del 10 centavos con fecha por verificar.',
-    viewChapter: 'Leer el capítulo',
     sourcesTitle: 'Fuentes',
-    eraLabel: 'Época',
     parentLink: 'Numismática',
     notesLead: 'El papel moneda de Puerto Rico, incluido el Billete de Canje de 1895, se documenta en la vitrina de notafilia.',
     notesLink: 'Puerto Rico · Emisiones coloniales y de transición',
@@ -133,12 +128,7 @@ export const seriesCopy = {
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In Puerto Rico the two stories meet in 1895: the exchange note gathered the Mexican silver, and the provincial coinage, struck in Madrid, took its place.',
       'This case opens with a silver 20 centavos of that year, with the boy Alfonso XIII’s bust and the initials P·G·V. It is the only coinage series made for the island’s exclusive use. Beside it sits a 10 centavos of the same series whose photograph shows 1895, a date the catalogues do not record for that value.',
     ],
-    holdingsTitle: 'The catalog',
-    holdingsIntro:
-      'Three chapters, left to right: the provincial peso, Madrid and P·G·V, and the boy Alfonso XIII. Above, the records of the 1895 20 centavos and of the 10 centavos whose date awaits verification.',
-    viewChapter: 'Read the chapter',
     sourcesTitle: 'Sources',
-    eraLabel: 'Period',
     parentLink: 'Numismatics',
     notesLead: 'Puerto Rico’s paper money, including the 1895 exchange note, is documented in the notaphily case.',
     notesLink: 'Puerto Rico · Colonial and transition issues',
@@ -226,6 +216,15 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
     },
     no_serial_reason:
       'Milled Puerto Rican provincial silver 20 centavos: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-composite.jpg',
+      front: '/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-front.jpg',
+      back: '/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-back.jpg',
+      width: 1672,
+      height: 941,
+      faceWidth: 836,
+      faceHeight: 941,
+    },
     title: {
       es: '20 centavos · Alfonso XIII · 1895 PGV',
       en: '20 Centavos · Alfonso XIII · 1895 PGV',
@@ -239,8 +238,8 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
       en: 'Silver 20 centavos of Puerto Rico’s provincial coinage, 1895, with the boy Alfonso XIII’s bust and the initials P·G·V. Struck in Madrid. No serial and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es un 20 centavos de plata de la moneda provincial de Puerto Rico, fechado en 1895. El anverso muestra el busto de Alfonso XIII niño a la izquierda, con la leyenda ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA y la fecha 1895 entre estrellas bajo el corte del cuello; allí mismo van las iniciales B·M del grabador Bartolomé Maura y Montaner. El reverso lleva las armas de España coronadas entre las columnas de Hércules, con la cinta PLUS ULTRA, la orla ISLA DE PUERTO RICO arriba y 20 CENTAVOS abajo, flanqueado por P·G· a la izquierda y ·V· a la derecha. El disco no lleva leyenda de ley. Krause lo cataloga como KM#22; Numista, como N#17451; PCGS, con el número 976911. Numista y Greysheet dan plata .835, 5 g, 23 mm y canto estriado como cifras de tipo; no se midieron en este ejemplar.',
-      en: 'This piece is a silver 20 centavos of Puerto Rico’s provincial coinage, dated 1895. The obverse shows the bust of the boy Alfonso XIII facing left, with the legend ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA and the date 1895 between stars below the neck truncation, where the initials B·M of engraver Bartolomé Maura y Montaner also sit. The reverse carries the crowned arms of Spain between the Pillars of Hercules, with the PLUS ULTRA ribbon, the legend ISLA DE PUERTO RICO above and 20 CENTAVOS below, flanked by P·G· at left and ·V· at right. The disc carries no fineness legend. Krause catalogs it as KM#22; Numista as N#17451; PCGS under number 976911. Numista and Greysheet give .835 silver, 5 g, 23 mm, and a reeded edge as type figures; they were not measured on this specimen.',
+      es: 'Esta pieza es un 20 centavos de plata de la moneda provincial de Puerto Rico, fechado en 1895. El anverso muestra el busto de Alfonso XIII niño a la izquierda, con la leyenda ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA y la fecha 1895 entre estrellas bajo el corte del cuello; allí mismo van las iniciales B·M del grabador Bartolomé Maura y Montaner. El reverso lleva las armas de España coronadas entre las columnas de Hércules, con la cinta PLUS ULTRA, la orla ISLA DE PUERTO RICO arriba y 20 CENTAVOS abajo, flanqueado por P·G· a la izquierda y ·V· a la derecha. El disco no lleva leyenda de ley. Krause lo cataloga como KM#22; Numista, como N#17451; PCGS, con el número 976911. Numista y Greysheet dan plata .835, 5 g, 23 mm y canto estriado como cifras de tipo; no se midieron en este ejemplar. Las fotografías son del objeto, en posición de lectura y sin recorte; no establecen el eje de cuños.',
+      en: 'This piece is a silver 20 centavos of Puerto Rico’s provincial coinage, dated 1895. The obverse shows the bust of the boy Alfonso XIII facing left, with the legend ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA and the date 1895 between stars below the neck truncation, where the initials B·M of engraver Bartolomé Maura y Montaner also sit. The reverse carries the crowned arms of Spain between the Pillars of Hercules, with the PLUS ULTRA ribbon, the legend ISLA DE PUERTO RICO above and 20 CENTAVOS below, flanked by P·G· at left and ·V· at right. The disc carries no fineness legend. Krause catalogs it as KM#22; Numista as N#17451; PCGS under number 976911. Numista and Greysheet give .835 silver, 5 g, 23 mm, and a reeded edge as type figures; they were not measured on this specimen. The photographs are of the object, upright and uncropped; they do not establish die axis.',
     },
     history: {
       es: 'El Real Decreto de 17 de agosto de 1895 cambió la plata mexicana de la isla por el Billete de Canje de 1 peso, y ese papel, por moneda provincial labrada en Madrid. El 20 centavos fue el único divisor de 1895; el 5, el 10 y el 40 centavos llevan fecha de 1896. Tras el Tratado de París de 1898 la plata provincial convivió con el dólar hasta su retiro; Numista la da por desmonetizada el 12 de abril de 1900. No se publica aquí un martillo ni un censo de encapsulados.',
@@ -532,10 +531,6 @@ export function coinagePath(locale: 'es' | 'en'): string {
 
 export function coinPath(coin: PuertoRicoCoin, locale: 'es' | 'en'): string {
   return locale === 'en' ? coin.pathEn : coin.path;
-}
-
-export function chapterHref(id: PuertoRicoCoinageChapterId): string {
-  return `#${id}`;
 }
 
 export function notesPath(locale: 'es' | 'en'): string {
