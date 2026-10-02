@@ -152,6 +152,7 @@ export const additions: Holding[] = [
   { id: 'co-2000-1000-pesos-error-693949988', kind: 'banknote', country: 'CO' },
   { id: 'co-1983-20-pesos-oro-056462955', kind: 'banknote', country: 'CO' },
   { id: 'co-1980-100-pesos-oro-specimen-027', kind: 'banknote', country: 'CO' },
+  { id: 'co-1980-100-pesos-oro-08648220', kind: 'banknote', country: 'CO' },
   { id: 'co-1993-5000-pesos-oro-82210365', kind: 'banknote', country: 'CO' },
   { id: 'co-2010-5000-pesos-error-09636101', kind: 'banknote', country: 'CO' },
   { id: 'us-usn-1917-2-b50400302a', kind: 'banknote', country: 'US' },
@@ -196,6 +197,7 @@ export const additions: Holding[] = [
   { id: 'co-1902-10-centavos-santander', kind: 'coin', country: 'CO' },
   { id: 'co-1821-8-reales-bogota-ba-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1801-8-escudos-popayan-p-jf', kind: 'coin', country: 'CO' },
+  { id: 'us-2-50-dolares-1912-indian-head', kind: 'coin', country: 'US' },
   { id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US' },
 ];
 
@@ -278,6 +280,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2000-1000-pesos-error-p450' },
   { id: 'co-1983-20-pesos-oro-p409d' },
   { id: 'co-1980-100-pesos-oro-p418s' },
+  { id: 'co-1980-100-pesos-oro-p418b-b958a' },
   { id: 'co-1993-5000-pesos-oro-p436a-b974c' },
   { id: 'co-2010-5000-pesos-error-p452l' },
   { id: 'us-usn-1917-2-p188-fr60' },
@@ -319,6 +322,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1902-10-centavos-santander-km-a1' },
   { id: 'co-1821-8-reales-bogota-km-c6' },
   { id: 'co-1801-8-escudos-popayan-km62-2' },
+  { id: 'us-1912-quarter-eagle-km128' },
   { id: 'us-1908-2-50-km128' },
 ];
 

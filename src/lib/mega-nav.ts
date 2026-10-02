@@ -41,7 +41,6 @@ import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
-import { IDENTIFY_PATH } from '../data/identify';
 import { TOOLS_PATH } from '../data/reference-tools';
 import { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
@@ -79,6 +78,11 @@ if (!usTrumpDollar) {
 const usQuarterEagle1908 = coinById('2-50-dolares-1908-cabeza-de-indio');
 if (!usQuarterEagle1908) {
   throw new Error('Missing US 1908 Indian Head quarter eagle for mega-nav');
+}
+
+const usQuarterEagle1912 = coinById('2-50-dolares-1912-indian-head');
+if (!usQuarterEagle1912) {
+  throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
 }
 
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
@@ -430,6 +434,12 @@ export const megaNav: NavNode[] = [
             href: usQuarterEagle1908.path,
           },
           {
+            id: 'us-2-50-dolares-1912-indian-head',
+            es: usQuarterEagle1912.title.es,
+            en: usQuarterEagle1912.title.en,
+            href: usQuarterEagle1912.path,
+          },
+          {
             id: 'us-1-dolar-trump-1776-2026',
             es: usTrumpDollar.title.es,
             en: usTrumpDollar.title.en,
@@ -453,10 +463,8 @@ export const megaNav: NavNode[] = [
     layout: 'horizontal',
     children: [
       { id: 'herramientas', es: 'Herramientas', en: 'Tools', href: TOOLS_PATH, icon: 'tools' },
-      { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
-      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
       {
         id: 'comparacion',
         es: 'Notofilia vs. otros catálogos',

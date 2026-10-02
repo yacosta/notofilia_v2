@@ -133,7 +133,7 @@ function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[numbe
 /** Published hubs that are not (yet) rows in mega-nav. */
 const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
-  { href: '/identificar/', es: 'Identificar', en: 'Identify' },
+  { href: '/buscar/', es: 'Buscar', en: 'Search' },
   { href: '/herramientas/', es: 'Herramientas', en: 'Tools' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
   {
@@ -188,7 +188,9 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/blog/', 'Guías', 'Guides');
   add('/noticias/', 'Noticias', 'News');
   add('/coleccion/', 'Colección', 'Collection');
-  add('/identificar/', 'Identificar', 'Identify');
+  add('/buscar/', 'Buscar', 'Search');
+  add('/identificar/billetes-falsos/', 'Cómo identificar un billete falso', 'How to identify a counterfeit note');
+  add('/editorial/', 'Política editorial', 'Editorial policy');
   add('/herramientas/', 'Herramientas', 'Tools');
 
   for (const link of footerLinksFromNav(megaNav)) {

@@ -48,12 +48,12 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'The Philadelphia mint',
     },
     lead: {
-      es: 'El Coinage Act del 2 de abril de 1792 creó la United States Mint en Filadelfia, entonces capital federal. Esa casa acuñó el cuarto de águila de 1908 y el dólar de 2026 de esta vitrina.',
-      en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house struck the 1908 quarter eagle and the 2026 dollar in this case.',
+      es: 'El Coinage Act del 2 de abril de 1792 creó la United States Mint en Filadelfia, entonces capital federal. Esa casa acuñó los cuartos de águila de 1908 y 1912 y el dólar de 2026 de esta vitrina.',
+      en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house struck the 1908 and 1912 quarter eagles and the 2026 dollar in this case.',
     },
     body: {
-      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Esta vitrina no pretende cubrir dos siglos de tipos —Liberty Seated, Morgan, Lincoln, el águila de diez dólares—. Documenta, de momento, el cuarto de águila de 1908, cabeza de indio, y el dólar de Filadelfia de 2026. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
-      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. This case does not try to cover two centuries of types — Liberty Seated, Morgan, Lincoln, the ten-dollar eagle. For now it records the 1908 Indian Head quarter eagle and a 2026 Philadelphia dollar. This country’s legal-tender paper is catalogued separately, under Notaphily.',
+      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa los cuartos de águila de 1908 y 1912, oro de 900 milésimas, diseño incuso de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. No se pretende cubrir Liberty Seated, Morgan ni Lincoln. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
+      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1908 and 1912 Indian Head quarter eagles, 900-fine gold by Bela Lyon Pratt. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated, Morgan, and Lincoln are not covered here. This country’s legal-tender paper is catalogued separately, under Notaphily.',
     },
   },
   {
@@ -160,19 +160,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times, el cuarto de águila de oro de 1908 y el 1 $ de Filadelfia de 1776–2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times, los cuartos de águila de oro de 1908 y 1912 y el 1 $ de Filadelfia de 1776–2026.',
     kicker: 'Estados Unidos · Numismática',
-    title: 'Hard Times, Filadelfia y el dólar de 2026',
+    title: 'Hard Times, los quarter eagles de 1908 y 1912 y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el cuarto de águila de oro de 1908 y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El cuarto de águila sí es oro de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con los cuartos de águila de oro de 1908 y 1912 —diseño incuso de Bela Lyon Pratt, Filadelfia, oro de 900 milésimas— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. Los cuartos de águila sí son oro de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'La media águila, el águila de diez dólares, el doble águila, los centavos de la Mint y los medios dólares se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el cuarto de águila de 1908 y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Cuatro capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, los cuartos de águila de 1908 y 1912 y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -184,19 +184,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens, the 1908 Indian Head gold quarter eagle, and the 1776–2026 Philadelphia $1.',
+      'Catalog of United States coinage: Hard Times tokens, the 1908 and 1912 Indian Head gold quarter eagles, and the 1776–2026 Philadelphia $1.',
     kicker: 'United States · Numismatics',
-    title: 'Hard Times, Philadelphia, and the 2026 dollar',
+    title: 'Hard Times, the 1908 and 1912 quarter eagles, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1908 gold quarter eagle, and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The quarter eagle is 900-fine gold. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1908 and 1912 Indian Head gold quarter eagles — Philadelphia 900-fine gold, Bela Lyon Pratt’s incuse design — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The quarter eagles are 900-fine gold. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'The half eagle, the ten-dollar eagle, the double eagle, Mint cents, and half dollars will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1908 quarter eagle, and the 1776–2026 $1 documented in this collection.',
+      'Four chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1908 and 1912 quarter eagles, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -213,7 +213,8 @@ export type UnitedStatesCoinId =
   | 'ht-34-1837-burro-tortuga'
   | 'ht-181-c1835-john-j-adams'
   | '1-dolar-trump-1776-2026'
-  | '2-50-dolares-1908-cabeza-de-indio';
+  | '2-50-dolares-1908-cabeza-de-indio'
+  | '2-50-dolares-1912-indian-head';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -1112,6 +1113,126 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       },
     ],
   },
+  {
+    id: '2-50-dolares-1912-indian-head',
+    path: '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/',
+    pathEn: '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    chapterId: 'ceca-filadelfia',
+    year: '1912',
+    mint: {
+      es: 'Filadelfia (sin marca de ceca)',
+      en: 'Philadelphia (no mint mark)',
+    },
+    denomination: {
+      es: '2,50 dólares (quarter eagle)',
+      en: '2.50 dollars (quarter eagle)',
+    },
+    composition: {
+      es: 'Oro .900 (90 % Au, 10 % Cu)',
+      en: 'Gold .900 (90% Au, 10% Cu)',
+    },
+    weight: {
+      es: '4,18 g',
+      en: '4.18 g',
+    },
+    diameter: {
+      es: '18 mm',
+      en: '18 mm',
+    },
+    edge: {
+      es: 'Estriado',
+      en: 'Reeded',
+    },
+    references: 'KM# 128 · PCGS# 7944 · N# 6158',
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    no_serial_reason:
+      'Struck United States quarter eagle: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-back.jpg',
+      width: 1024,
+      height: 576,
+      faceWidth: 512,
+      faceHeight: 576,
+    },
+    title: {
+      es: '2,50 dólares · United States Mint · 1912',
+      en: '2.50 dollars · United States Mint · 1912',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Mint',
+      en: 'United States · United States Mint',
+    },
+    lead: {
+      es: 'Quarter eagle de oro .900, Filadelfia, 1912, sin marca de ceca. Diseño incuso de Bela Lyon Pratt. Sin serial y sin encapsular.',
+      en: 'Philadelphia .900 gold quarter eagle, 1912, with no mint mark. Bela Lyon Pratt’s incuse Indian Head design. No serial, and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es el quarter eagle de 2,50 dólares de 1912, de la ceca de Filadelfia, sin marca. El anverso es de Bela Lyon Pratt: busto a la izquierda con penacho, LIBERTY, trece estrellas y la fecha 1912. El reverso lleva un águila de pie a la izquierda sobre flechas y olivo, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA y 2½ DOLLARS. El relieve es incuso: el dibujo queda hundido en el campo. Numista incluye las iniciales B.L.P. en la leyenda del tipo; en esta fotografía no se transcriben. Tampoco se ve letra de ceca. La pieza está suelta, sin cápsula. No es el medio águila de 5 dólares del mismo autor. PCGS separa la acuñación de circulación de 1912 (7944) de las pruebas (7961): esta ficha no identifica el ejemplar como prueba.',
+      en: 'This piece is the 1912 2.50-dollar quarter eagle from the Philadelphia mint, with no mint mark. The obverse is by Bela Lyon Pratt: a left-facing bust in a feathered headdress, LIBERTY, thirteen stars, and the date 1912. The reverse carries a standing eagle facing left on arrows and an olive branch, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA, and 2½ DOLLARS. The relief is incuse: the design sits below the field. Numista includes the initials B.L.P. in the type legend; they are not transcribed from this photograph. No mint letter is visible. The piece is raw, with no holder. It is not Pratt’s 5-dollar half eagle. PCGS separates the 1912 business strike (7944) from the proofs (7961): this record does not identify the example as a proof.',
+    },
+    history: {
+      es: 'El quarter eagle es la cuarta parte del águila de 10 dólares, denominación del Coinage Act del 2 de abril de 1792. El tipo Indian Head, en relieve incuso, es obra de Bela Lyon Pratt y se acuñó de 1908 a 1929. El mismo escultor diseñó el medio águila de 5 dólares de ese relieve. Esta ficha describe el objeto de la colección; no tasa la emisión.',
+      en: 'The quarter eagle is one quarter of the 10-dollar eagle, a denomination of the Coinage Act of 2 April 1792. The Indian Head type, in incuse relief, is by Bela Lyon Pratt and was struck from 1908 to 1929. The same sculptor designed the 5-dollar half eagle of that relief. This record describes the object in the collection; it does not value the issue.',
+    },
+    obverseLegend: {
+      es: 'LIBERTY · trece estrellas · 1912. Numista incluye B.L.P. en la leyenda del tipo; en esta fotografía esas iniciales no se transcriben.',
+      en: 'LIBERTY · thirteen stars · 1912. Numista includes B.L.P. in the type legend; those initials are not transcribed from this photograph.',
+    },
+    reverseLegend: {
+      es: 'UNITED STATES OF AMERICA · E PLURIBUS UNUM · IN GOD WE TRUST · 2½ DOLLARS. Sin marca de ceca.',
+      en: 'UNITED STATES OF AMERICA · E PLURIBUS UNUM · IN GOD WE TRUST · 2½ DOLLARS. No mint mark.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto a la izquierda con penacho; LIBERTY; trece estrellas; 1912.',
+      en: 'Obverse: left-facing bust in a feathered headdress; LIBERTY; thirteen stars; 1912.',
+    },
+    backCaption: {
+      es: 'Reverso: águila sobre flechas y olivo; UNITED STATES OF AMERICA; E PLURIBUS UNUM; IN GOD WE TRUST; 2½ DOLLARS. Sin marca de ceca.',
+      en: 'Reverse: eagle on arrows and an olive branch; UNITED STATES OF AMERICA; E PLURIBUS UNUM; IN GOD WE TRUST; 2½ DOLLARS. No mint mark.',
+    },
+    scarcity: {
+      es: 'PCGS CoinFacts da 616.000 piezas de circulación de Filadelfia para 1912 (PCGS# 7944). CoinWeek añade 197 pruebas, que PCGS numera aparte (7961). Esas cifras son del tipo y la fecha, no un censo de este ejemplar. No se publica aquí un censo de encapsulados ni un precio.',
+      en: 'PCGS CoinFacts gives 616,000 Philadelphia business strikes for 1912 (PCGS# 7944). CoinWeek adds 197 proofs, which PCGS numbers separately (7961). Those figures belong to the type and date, not to a census of this example. This record publishes neither a slab census nor a price.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1912, sin marca de ceca, penacho y águila— no un certificado. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder. This module carries no serial number. The identity of this record is the photographed object — date 1912, no mint mark, headdress and eagle — not a certificate. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1912-2-50/7944',
+        es: 'PCGS CoinFacts — 1912 2,50 dólares, acuñación de circulación (7944)',
+        en: 'PCGS CoinFacts — 1912 2.50 dollars, business strike (7944)',
+        note: {
+          es: 'Bela Lyon Pratt; canto estriado; 18 mm; 4,18 g; Filadelfia; oro 90 % y cobre 10 %; 616.000 piezas de circulación. No se republican precios.',
+          en: 'Bela Lyon Pratt; reeded edge; 18 mm; 4.18 g; Philadelphia; 90% gold and 10% copper; 616,000 business strikes. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/6158',
+        es: 'Numista — 2½ dólares Indian Head, quarter eagle (N# 6158)',
+        en: 'Numista — 2½ dollars Indian Head, quarter eagle (N# 6158)',
+        note: {
+          es: 'KM# 128; 1908–1929; oro .900; 4,18 g; 18 mm; canto estriado; relieve incuso; leyenda del tipo con B.L.P.',
+          en: 'KM# 128; 1908–1929; .900 gold; 4.18 g; 18 mm; reeded edge; incuse relief; type legend with B.L.P.',
+        },
+      },
+      {
+        href: 'https://coinweek.com/1912-indian-head-quarter-eagle-a-collectors-guide/',
+        es: 'CoinWeek — Guía del quarter eagle Indian Head de 1912',
+        en: 'CoinWeek — 1912 Indian Head quarter eagle guide',
+        note: {
+          es: '616.000 piezas de circulación y 197 pruebas. El relieve incuso es el de Pratt, compartido con el medio águila de 5 dólares. No se republican precios ni censos.',
+          en: '616,000 business strikes and 197 proofs. The incuse relief is Pratt’s, shared with the 5-dollar half eagle. Prices and population censuses are not republished.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -1143,7 +1264,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, un cuarto de águila de oro de 1908 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, los cuartos de águila de oro de 1908 y 1912 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -1175,7 +1296,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — one 1908 gold quarter eagle, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1908 and 1912 Indian Head gold quarter eagles, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

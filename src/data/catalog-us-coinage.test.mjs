@@ -218,6 +218,32 @@ describe('US Hard Times HT-10A 1834 Running Boar', () => {
   });
 });
 
+describe('US 1912 Indian Head quarter eagle', () => {
+  it('registers one bilingual unslabbed Philadelphia piece with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    );
+    assert.match(data, /id: '2-50-dolares-1912-indian-head'/);
+    assert.match(data, /chapterId: 'ceca-filadelfia'/);
+    assert.match(data, /Bela Lyon Pratt/);
+    assert.match(data, /KM# 128 · PCGS# 7944 · N# 6158/);
+    assert.match(data, /Oro \.900 \(90 % Au, 10 % Cu\)/);
+    assert.match(data, /Gold \.900 \(90% Au, 10% Cu\)/);
+    assert.match(data, /4,18 g/);
+    assert.match(data, /616\.000/);
+    assert.match(data, /616,000/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States quarter eagle/);
+    assert.match(data, /united-states-mint-2-50-dollars-1912-indian-head-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1912-2-50\/7944/);
+    assert.match(data, /en\.numista\.com\/6158/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.match(holdings, /id: 'us-2-50-dolares-1912-indian-head', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1912-quarter-eagle-km128/);
+  });
+});
+
 describe('US Hard Times HT-16 1841 Webster token', () => {
   it('registers a bilingual no-serial plain-edge type, with the reeded edge unassigned', () => {
     assert.equal(

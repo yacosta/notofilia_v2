@@ -178,8 +178,9 @@ export function classifyType(path) {
   return 'other';
 }
 
-function withSlash(path) {
-  if (path === '/') return '/';
+/** Trailing slash for pathnames. Query strings must not gain a fake `/` after `?`. */
+export function withSlash(path) {
+  if (path === '/' || path.includes('?') || path.includes('#')) return path;
   return path.endsWith('/') ? path : `${path}/`;
 }
 

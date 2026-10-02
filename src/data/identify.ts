@@ -8,7 +8,7 @@ export function identifyPath(locale: Locale): string {
 
 export const identifyCopy = {
   es: {
-    metaTitle: 'Identificar billete o moneda · Notofilia',
+    metaTitle: 'Identificar billete o moneda · Foto y catálogo | Notofilia',
     metaDescription:
       'Suba una foto del anverso y compare con las piezas publicadas en la colección virtual de Notofilia. Sin precios y nada a la venta.',
     title: 'Identificar una pieza',
@@ -52,6 +52,8 @@ export const identifyCopy = {
     viewPiece: 'Ver la ficha',
     searchLead: 'También puede buscar por texto en el catálogo.',
     searchLink: 'Ir a Buscar',
+    counterfeitLead: 'Si duda del papel, no de la foto, hay una lista de comprobación aparte.',
+    counterfeitLink: 'Cómo identificar un billete falso',
     disclaimer:
       'Herramienta de orientación visual sobre la colección Notofilia. No sustituye un catálogo de tipos, un perito ni una certificación. Sin precios.',
     needsJs: 'La identificación por foto necesita JavaScript. Mientras tanto puede usar Buscar.',
@@ -60,7 +62,7 @@ export const identifyCopy = {
     errorNetwork: 'No se pudo completar la comparación. Inténtelo de nuevo.',
   },
   en: {
-    metaTitle: 'Identify a banknote or coin · Notofilia',
+    metaTitle: 'Identify a banknote or coin · Photo vs catalogue | Notofilia',
     metaDescription:
       'Upload a face photo and compare it with pieces published in the Notofilia virtual collection. No prices, and nothing is for sale.',
     title: 'Identify a piece',
@@ -104,6 +106,8 @@ export const identifyCopy = {
     viewPiece: 'View record',
     searchLead: 'You can also search the catalogue by text.',
     searchLink: 'Go to Search',
+    counterfeitLead: 'If the doubt is the paper, not the photo, there is a separate checklist.',
+    counterfeitLink: 'How to spot a counterfeit note',
     disclaimer:
       'A visual orientation tool over the Notofilia collection. It does not replace a type catalogue, an expert opinion, or grading. No prices.',
     needsJs: 'Photo identification needs JavaScript. Meanwhile you can use Search.',

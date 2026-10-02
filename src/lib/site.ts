@@ -3,7 +3,7 @@ import { CHINA_PATH, chinaNoteSlugs } from '../data/china';
 import { dedicatedCatalogPaths as ecuadorPaths, ecuadorNoteSlugs, ECUADOR_PATH } from '../data/ecuador';
 import { GUATEMALA_PATH } from '../data/guatemala';
 import { NOTAFILIA_PATH } from '../data/notafilia';
-import { COLOMBIA_PATH } from '../data/colombia';
+import { COLOMBIA_PATH, colombiaEraSlugs } from '../data/colombia';
 import { colombiaNoteSlugs } from '../data/colombia-notes';
 import { COLOMBIA_NOTES_CATALOG_PATH } from '../data/colombia-type-catalog';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
@@ -330,7 +330,7 @@ export const stubPages = [
   { path: 'editorial', es: 'Política editorial y valoración', en: 'Editorial policy' },
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
-  { path: 'identificar', es: 'Identificar', en: 'Identify' },
+  { path: 'identificar/billetes-falsos', es: 'Cómo identificar un billete falso', en: 'How to identify a counterfeit note' },
   { path: 'herramientas', es: 'Herramientas', en: 'Tools' },
   { path: 'herramientas/numeracion-especial', es: 'Numeración especial', en: 'Fancy serial checker' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
@@ -342,6 +342,7 @@ const dedicatedEs = [
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   ...bancaLibreDedicatedSlugs,
+  ...colombiaEraSlugs(),
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaNoteSlugs,
@@ -401,13 +402,12 @@ const dedicatedEs = [
   'noticias',
   'contacto',
   'buscar',
-  'identificar',
+  'identificar/billetes-falsos',
   'herramientas',
   'herramientas/numeracion-especial',
   ...blogSlugs,
   ...newsSlugs,
 ];
-
 export const dedicatedCatalogPaths = new Set<string>([
   ...dedicatedEs,
   ...dedicatedEs.map((slug) => englishContentSlug(slug)),

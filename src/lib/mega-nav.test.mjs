@@ -295,6 +295,7 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('ht-16-1841-daniel-webster'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
     assert.match(source, /coinById\('2-50-dolares-1908-cabeza-de-indio'\)/);
+    assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
@@ -303,6 +304,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
+    assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
@@ -316,12 +318,21 @@ describe('United States submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
     const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
+    const betsyRoss = readFileSync(new URL('../../public/flags/us-13.svg', import.meta.url), 'utf8');
+    const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
+    const styles = readFileSync(new URL('../styles/global.css', import.meta.url), 'utf8');
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
     assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
     assert.match(colonial, /flag: 'us-13'/);
     assert.doesNotMatch(colonial, /icon: 'guides'/);
+    assert.match(betsyRoss, /width="1235" height="650" viewBox="0 0 1235 650"/);
+    assert.match(betsyRoss, /fill="#bf0a30"/);
+    assert.match(betsyRoss, /fill="#00205B"/);
+    assert.match(betsyRoss, /rotate\(27\.692308\)/);
+    assert.match(countryFlag, /flagCode === 'us-13'[\s\S]*'mega-flag--wide'/);
+    assert.match(styles, /\.mega-flag--wide\s*\{[\s\S]*height: 0\.658rem/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
@@ -417,10 +428,10 @@ describe('Recursos submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
     assert.match(recursos, /id: 'herramientas',[\s\S]*?icon: 'tools'/);
-    assert.match(recursos, /id: 'identificar',[\s\S]*?icon: 'identify'/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
-    assert.match(recursos, /id: 'noticias',[\s\S]*?icon: 'news'/);
+    assert.doesNotMatch(recursos, /id: 'noticias'/);
+    assert.doesNotMatch(recursos, /id: 'identificar'/);
   });
 });
 

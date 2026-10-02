@@ -258,6 +258,10 @@ describe('sitemap coverage for United States numismatics', () => {
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });
@@ -295,6 +299,21 @@ describe('sitemap coverage for the two-tier glossary', () => {
     for (const term of foldedGlossaryTerms()) {
       assert.ok(!glossaryTermSlugs.includes(`glosario/${term.slug}`), term.slug);
     }
+  });
+});
+
+describe('sitemap coverage for demand pages and search', () => {
+  it('maps editorial, counterfeit how-to, valuation, and Colombia era hubs', () => {
+    assert.equal(localizePath('/editorial/', 'en'), '/en/editorial/');
+    assert.equal(localizePath('/identificar/billetes-falsos/', 'en'), '/en/identify/counterfeit-notes/');
+    assert.equal(
+      localizePath('/blog/como-se-valora-un-billete-colombiano/', 'en'),
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(localizePath('/coleccion/colombia/independencia/', 'en'), '/en/collection/colombia/independence/');
+    assert.match(sitemapSource, /if \(page\.path === 'buscar'\) continue/);
+    assert.match(sitemapSource, /path !== '\/buscar\/' && path !== '\/en\/search\/'/);
   });
 });
 

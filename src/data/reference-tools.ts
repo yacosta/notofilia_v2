@@ -14,7 +14,7 @@ export function fancySerialPath(locale: Locale): string {
 
 export const toolsHubCopy = {
   es: {
-    metaTitle: 'Herramientas de referencia · Notofilia',
+    metaTitle: 'Herramientas · Numeración especial e identificación | Notofilia',
     metaDescription:
       'Herramientas de consulta de la colección virtual Notofilia: numeración especial e identificación por foto. Sin precios y nada a la venta.',
     title: 'Herramientas de referencia',
@@ -31,7 +31,7 @@ export const toolsHubCopy = {
     identifyCta: 'Ir a Identificar',
   },
   en: {
-    metaTitle: 'Reference tools · Notofilia',
+    metaTitle: 'Tools · Fancy serials and photo identification | Notofilia',
     metaDescription:
       'Reference tools for the Notofilia virtual collection: fancy serial classification and photo identification. No prices, and nothing is for sale.',
     title: 'Reference tools',
@@ -50,7 +50,7 @@ export const toolsHubCopy = {
 
 export const fancySerialCopy = {
   es: {
-    metaTitle: 'Numeración especial · Notofilia',
+    metaTitle: 'Numeración especial · Seriales de la colección | Notofilia',
     metaDescription:
       'Clasifique el número de serie de un billete por patrón (bajo, capicúa, binario, sólido y otros) y compare con la colección Notofilia. Sin precios.',
     title: 'Clasificador de numeración especial',
@@ -61,7 +61,7 @@ export const fancySerialCopy = {
     inputLabel: 'Número de serie',
     inputHint: 'Letras, dígitos y, si aplica, marca de reemplazo o estrella.',
     submit: 'Clasificar',
-    examplesLabel: 'Ejemplos (solo ilustración)',
+    examplesLabel: 'Ejemplos de la colección',
     resultsTitle: 'Clasificación',
     statusLabel: 'Resultado de la clasificación',
     emptyIdle: 'Escriba un serial y pulse Clasificar. También puede elegir un ejemplo.',
@@ -82,15 +82,20 @@ export const fancySerialCopy = {
     holdingLink: 'Ver la ficha',
     noHolding: 'No hay un ejemplar publicado en Notofilia con este serial exacto.',
     examplesNote:
-      'Los ejemplos ilustran patrones. Solo se enlaza una ficha cuando el serial coincide con un objeto de la colección.',
+      'Los ejemplos son seriales publicados en esta colección. Un espécimen 00000000 no se trata como primer número de emisión.',
     disclaimer:
       'Clasificación de patrón sobre el texto que usted escribe. No autentica el billete, no lo gradúa y no lo valora. Notofilia es una colección privada; nada está a la venta.',
     needsJs:
       'La clasificación en esta página necesita JavaScript. Mientras tanto puede leer el término de numeración especial en el glosario.',
+    explainerTitle: 'Qué cuenta como numeración especial',
+    explainer: [
+      'Un serial «especial» es un patrón en los dígitos impresos: bajo (1–100 en el ancho), capicúa, binario, sólido, escalera o repetidor. El clasificador no inventa un ejemplar: solo nombra una ficha cuando el serial coincide con un objeto publicado.',
+      'Pick, fecha y tipo no bastan para identificar el objeto. Dos billetes del mismo Pick son dos piezas si los seriales difieren. Un serial capicúa no prueba autenticidad.',
+    ],
     needsJsLink: 'Numeración especial',
   },
   en: {
-    metaTitle: 'Fancy serial checker · Notofilia',
+    metaTitle: 'Fancy serial checker · Collection examples | Notofilia',
     metaDescription:
       'Classify a banknote serial by pattern (low, radar, binary, solid, and others) and compare it with the Notofilia collection. No prices.',
     title: 'Fancy serial checker',
@@ -101,7 +106,7 @@ export const fancySerialCopy = {
     inputLabel: 'Serial number',
     inputHint: 'Letters, digits, and a replacement or star mark when it applies.',
     submit: 'Classify',
-    examplesLabel: 'Examples (illustration only)',
+    examplesLabel: 'Examples from the collection',
     resultsTitle: 'Classification',
     statusLabel: 'Classification result',
     emptyIdle: 'Enter a serial and choose Classify. You can also pick an example.',
@@ -122,11 +127,16 @@ export const fancySerialCopy = {
     holdingLink: 'View the record',
     noHolding: 'No published Notofilia example has this exact serial.',
     examplesNote:
-      'The examples illustrate patterns. A record is linked only when the serial matches a collection object.',
+      'The examples are serials published in this collection. A specimen 00000000 is not treated as a first-of-issue number.',
     disclaimer:
       'Pattern classification of the text you enter. It does not authenticate, grade, or value the note. Notofilia is a private collection; nothing is for sale.',
     needsJs:
       'Classification on this page needs JavaScript. Meanwhile you can read the fancy serial term in the glossary.',
+    explainerTitle: 'What counts as a fancy serial',
+    explainer: [
+      'A “fancy” serial is a pattern in the printed digits: low (1–100 on the width), radar, binary, solid, ladder, or repeater. The checker does not invent a holding: it names a record only when the serial matches a published object.',
+      'Pick, date, and type do not identify the object. Two notes of the same Pick are two pieces if the serials differ. A radar serial does not prove authenticity.',
+    ],
     needsJsLink: 'Fancy serial number',
   },
 } as const;
@@ -160,7 +170,7 @@ export const fancySerialClassLabels: Record<Locale, Record<FancySerialClass, str
 
 export const fancySerialExamples = [
   { value: '10000001', label: '10000001' },
-  { value: '12345678', label: '12345678' },
-  { value: '00000042', label: '00000042' },
-  { value: '88888888', label: '88888888' },
+  { value: 'AA40000066', label: 'AA40000066' },
+  { value: '00141180', label: '00141180' },
+  { value: '00113227', label: '00113227' },
 ] as const;

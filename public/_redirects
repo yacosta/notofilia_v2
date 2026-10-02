@@ -938,7 +938,6 @@
 /en/glossary/yuan-renminbi/ /en/glossary/?term=yuan-renminbi/ 301
 /en/herramientas/ /en/tools/ 301
 /en/herramientas/numeracion-especial/ /en/tools/fancy-serial-checker/ 301
-/en/identificar/ /en/identify/ 301
 /en/netherlands-numismatica /en/collection/netherlands-numismatics/ 301
 /en/netherlands-numismatica/ducado-utrecht-1761 /en/collection/netherlands-numismatics/ducado-utrecht-1761/ 301
 /en/news/15-monedas-eeuu-valen-fortuna/ /en/news/15-u-s-coins-with-auction-records/ 301
@@ -1336,5 +1335,11 @@
 /paises-bajos-numismatica/ducado-utrecht-1761 /coleccion/paises-bajos-numismatica/ducado-utrecht-1761/ 301
 /perfil-german-gutierrez-de-pineres.dc.html /coleccion/colombia/ 301
 /sobre-mi /acerca-de/ 301
+/identificar/ /buscar/ 301
+/identificar /buscar/ 301
+/en/identify/ /en/search/ 301
+/en/identify /en/search/ 301
+/en/identificar/ /en/search/ 301
+/en/identificar /en/search/ 301
 /en/glosario/*   /en/glossary/:splat   301
 /en/noticias/*   /en/news/:splat       301

@@ -60,6 +60,7 @@ describe('gsc redirect lookup', () => {
     );
     assert.doesNotMatch(redirects, /\/en\/glossary\/polymer\/\s+\/en\/glossary\/polimero\//);
     assert.match(redirects, /\/en\/glossary\/polimero\/\s+\/en\/glossary\/polymer\/\s+301/);
+    assert.match(redirects, /\/en\/news\/billete-2-dolares-serie-baja\/\s+\/en\/news\/the-2-note-with-serial-l00000002a\/\s+301/);
   });
 
   it('plans 410 for gone URLs and 301 for mapped v1 paths, never to home', () => {

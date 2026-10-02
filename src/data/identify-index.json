@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T01:05:19.707Z",
+  "generatedAt": "2026-10-02T01:32:58.385Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1408,6 +1408,45 @@
       }
     },
     {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "a1515309144d2990",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-composite.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "front",
+      "hash": "4a6353121b3b1541",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-front.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "100-pesos-oro-1980-08648220",
+      "face": "back",
+      "hash": "d86a3d0d0f2d2241",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/100-pesos-oro-1980-08648220/",
+      "pick": "P# 418b · TBB B958a",
+      "image": "/images/catalog/colombia/100-pesos-oro-1980-08648220-back.jpg",
+      "title": {
+        "es": "100 pesos oro · 1980",
+        "en": "100 pesos oro · 1980"
+      }
+    },
+    {
       "pieceId": "200-pesos-oro-1989",
       "face": "front",
       "hash": "3d365d334b134727",
@@ -2770,6 +2809,45 @@
       "title": {
         "es": "2½ dólares · United States Mint · 1908",
         "en": "$2½ · United States Mint · 1908"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "front",
+      "hash": "0022753737572200",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-composite.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "front",
+      "hash": "00042b1525350400",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-front.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
+      }
+    },
+    {
+      "pieceId": "2-50-dolares-1912-indian-head",
+      "face": "back",
+      "hash": "00182a364a261800",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/",
+      "pick": "KM# 128 · PCGS# 7944 · N# 6158",
+      "image": "/images/catalog/united-states/united-states-mint-2-50-dollars-1912-indian-head-back.jpg",
+      "title": {
+        "es": "2,50 dólares · United States Mint · 1912",
+        "en": "2.50 dollars · United States Mint · 1912"
       }
     },
     {

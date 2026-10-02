@@ -11,7 +11,7 @@ export const aboutCopy = {
     nav: 'Sobre Notofilia',
     home: 'Inicio',
     breadcrumb: 'Migas de pan',
-    metaTitle: 'Acerca de Notofilia · Yezid Acosta',
+    metaTitle: 'Acerca de Notofilia · Colección virtual de billetes | Notofilia',
     metaDescription:
       'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta, con una debilidad especial por Colombia y América Latina.',
     entityStatement:
@@ -54,7 +54,7 @@ export const aboutCopy = {
     nav: 'About Notofilia',
     home: 'Home',
     breadcrumb: 'Breadcrumb',
-    metaTitle: 'About Notofilia · Yezid Acosta',
+    metaTitle: 'About Notofilia · A virtual banknote collection | Notofilia',
     metaDescription:
       'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta, with a soft spot for Colombia and Latin America.',
     entityStatement:

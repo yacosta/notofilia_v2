@@ -43,6 +43,13 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
     assert.equal(localizePath('/glosario/?term=libra', 'en'), '/en/glossary/?term=libra');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
+    assert.equal(localizePath('/editorial/', 'en'), '/en/editorial/');
+    assert.equal(localizePath('/identificar/billetes-falsos/', 'en'), '/en/identify/counterfeit-notes/');
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(
+      localizePath('/blog/como-se-valora-un-billete-colombiano/', 'en'),
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
     assert.equal(otherLocalePath('/en/contact/?motivo=error', 'en'), '/contacto/?motivo=error');
@@ -150,6 +157,10 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
     );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(
@@ -713,6 +724,11 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
     assert.equal(redirects['/en/coleccion/colombia/banca-libre/'], '/en/collection/colombia/free-banking/');
+    assert.equal(redirects['/en/identificar/billetes-falsos/'], '/en/identify/counterfeit-notes/');
+    assert.equal(
+      redirects['/en/blog/como-se-valora-un-billete-colombiano/'],
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
     assert.equal(
       redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
       '/en/collection/colombia/5000-pesos-error-2010/',
@@ -801,6 +817,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/'],
       '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/'],
+      '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],
