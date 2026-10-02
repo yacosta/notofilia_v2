@@ -76,8 +76,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Fichas Hard Times, los cuartos de águila de oro de 1878, 1908 y 1912 y el 1 $ de Trump de 1776–2026.',
-      en: 'Hard Times tokens, the 1878 Liberty Head and the 1908 and 1912 Indian Head gold quarter eagles, and the 1776–2026 Trump $1.',
+      es: 'Fichas Hard Times, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+      en: 'Hard Times tokens, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
     },
   },
   {

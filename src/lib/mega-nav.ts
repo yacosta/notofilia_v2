@@ -90,6 +90,11 @@ if (!usQuarterEagle1912) {
   throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
 }
 
+const usGoldDollar1856 = coinById('1-dolar-oro-1856-cabeza-grande');
+if (!usGoldDollar1856) {
+  throw new Error('Missing US 1856 Indian Princess gold dollar for mega-nav');
+}
+
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
 if (!usHt34) {
   throw new Error('Missing US Hard Times HT-34 token for mega-nav');
@@ -449,6 +454,12 @@ export const megaNav: NavNode[] = [
             es: usQuarterEagle1912.title.es,
             en: usQuarterEagle1912.title.en,
             href: usQuarterEagle1912.path,
+          },
+          {
+            id: 'us-1-dolar-oro-1856-cabeza-grande',
+            es: usGoldDollar1856.title.es,
+            en: usGoldDollar1856.title.en,
+            href: usGoldDollar1856.path,
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T01:41:01.633Z",
+  "generatedAt": "2026-10-02T01:43:54.591Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2887,6 +2887,45 @@
       "title": {
         "es": "2,50 dólares · United States Mint · 1912",
         "en": "2.50 dollars · United States Mint · 1912"
+      }
+    },
+    {
+      "pieceId": "1-dolar-oro-1856-cabeza-grande",
+      "face": "front",
+      "hash": "08179593b2543754",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/",
+      "pick": "KM# 86 · PCGS# 7540 · N# 23120",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-composite.jpg",
+      "title": {
+        "es": "1 dólar de oro · United States Mint · 1856",
+        "en": "Gold dollar · United States Mint · 1856"
+      }
+    },
+    {
+      "pieceId": "1-dolar-oro-1856-cabeza-grande",
+      "face": "front",
+      "hash": "92932518315b17aa",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/",
+      "pick": "KM# 86 · PCGS# 7540 · N# 23120",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-front.jpg",
+      "title": {
+        "es": "1 dólar de oro · United States Mint · 1856",
+        "en": "Gold dollar · United States Mint · 1856"
+      }
+    },
+    {
+      "pieceId": "1-dolar-oro-1856-cabeza-grande",
+      "face": "back",
+      "hash": "062a379b4c351701",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/",
+      "pick": "KM# 86 · PCGS# 7540 · N# 23120",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-back.jpg",
+      "title": {
+        "es": "1 dólar de oro · United States Mint · 1856",
+        "en": "Gold dollar · United States Mint · 1856"
       }
     },
     {

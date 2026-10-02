@@ -270,6 +270,41 @@ describe('US 1912 Indian Head quarter eagle', () => {
   });
 });
 
+describe('US 1856 Indian Princess gold dollar', () => {
+  it('registers one bilingual unslabbed Philadelphia Type 3 with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-oro-1856-cabeza-grande'/);
+    assert.match(data, /James Barton Longacre/);
+    assert.match(data, /KM# 86 · PCGS# 7540 · N# 23120/);
+    assert.match(data, /1,672 g/);
+    assert.match(data, /1\.672 g/);
+    assert.match(data, /1\.762\.936/);
+    assert.match(data, /1,762,936/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States gold dollar/);
+    assert.match(data, /united-states-mint-1-dollar-gold-1856-large-head-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/7540/);
+    assert.match(data, /en\.numista\.com\/23120/);
+    assert.match(data, /9 Stat\. 397/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1856-gold-dollar-km86/);
+  });
+});
+
 describe('US Hard Times HT-16 1841 Webster token', () => {
   it('registers a bilingual no-serial plain-edge type, with the reeded edge unassigned', () => {
     assert.equal(
