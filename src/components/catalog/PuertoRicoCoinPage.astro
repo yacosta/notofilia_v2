@@ -50,7 +50,7 @@ const jsonCrumbs = [
   description={seo.description}
   locale={locale}
   pathname={pathname}
-  ogImage={coin.images.composite}
+  ogImage={coin.images?.composite}
 >
   <Fragment slot="head">
     <script
@@ -63,7 +63,7 @@ const jsonCrumbs = [
           name: seo.h1,
           description: seo.description,
           url: pathname,
-          image: coin.images.composite,
+          image: coin.images?.composite,
           locale,
           artform: 'Coin',
           catalogNumber: coin.references,
@@ -144,33 +144,50 @@ const jsonCrumbs = [
       </section>
 
       <div class="grid gap-10 lg:grid-cols-2">
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-          <NoteImageLightbox
-            src={coin.images.front}
-            alt={coin.frontCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={coin.images.faceWidth}
-            height={coin.images.faceHeight}
-            eager
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.frontCaption[locale]}</figcaption>
-        </figure>
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
-          <NoteImageLightbox
-            src={coin.images.back}
-            alt={coin.backCaption[locale]}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={coin.images.faceWidth}
-            height={coin.images.faceHeight}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.backCaption[locale]}</figcaption>
-        </figure>
+        {
+          coin.images ? (
+            <>
+              <figure class="m-0">
+                <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
+                <NoteImageLightbox
+                  src={coin.images.front}
+                  alt={coin.frontCaption[locale]}
+                  expandLabel={t.expandImage}
+                  closeLabel={t.closeLightbox}
+                  locale={locale}
+                  width={coin.images.faceWidth}
+                  height={coin.images.faceHeight}
+                  eager
+                />
+                <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.frontCaption[locale]}</figcaption>
+              </figure>
+              <figure class="m-0">
+                <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
+                <NoteImageLightbox
+                  src={coin.images.back}
+                  alt={coin.backCaption[locale]}
+                  expandLabel={t.expandImage}
+                  closeLabel={t.closeLightbox}
+                  locale={locale}
+                  width={coin.images.faceWidth}
+                  height={coin.images.faceHeight}
+                />
+                <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{coin.backCaption[locale]}</figcaption>
+              </figure>
+            </>
+          ) : (
+            <>
+              <div>
+                <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
+                <div class="aspect-square w-full rounded-[2px] border border-line bg-panel" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
+                <div class="aspect-square w-full rounded-[2px] border border-line bg-panel" aria-hidden="true" />
+              </div>
+            </>
+          )
+        }
       </div>
 
       <section class="mt-14" aria-labelledby="about-heading">
@@ -223,9 +240,9 @@ const jsonCrumbs = [
 
       <PieceSiblings
         locale={locale}
-        prev={siblings.prev ? { href: coinPath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images.front } : undefined}
-        next={siblings.next ? { href: coinPath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images.front } : undefined}
-        related={siblings.related.map((item) => ({ href: coinPath(item, locale), title: item.title[locale], image: item.images.front }))}
+        prev={siblings.prev ? { href: coinPath(siblings.prev, locale), title: siblings.prev.title[locale], image: siblings.prev.images?.front } : undefined}
+        next={siblings.next ? { href: coinPath(siblings.next, locale), title: siblings.next.title[locale], image: siblings.next.images?.front } : undefined}
+        related={siblings.related.map((item) => ({ href: coinPath(item, locale), title: item.title[locale], image: item.images?.front }))}
         relatedLead={t.relatedLead}
       />
 

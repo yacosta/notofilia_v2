@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T18:12:34.280Z",
+  "generatedAt": "2026-10-02T18:46:32.492Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5123,45 +5123,6 @@
       "title": {
         "es": "20 pesos · Serie Victory n.º 66",
         "en": "20 Pesos · Victory Series No. 66"
-      }
-    },
-    {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "front",
-      "hash": "0435f452d1963104",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-composite.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
-      }
-    },
-    {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "front",
-      "hash": "892a27ca6813aa22",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-front.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
-      }
-    },
-    {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "back",
-      "hash": "02be2b6b6d352791",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-back.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
       }
     },
     {
