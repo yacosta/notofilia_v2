@@ -268,8 +268,11 @@ describe('Spain numismatics menu', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     const spainBlock = numismatica.split("id: 'es-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
     assert.match(source, /spainCoinById\('medio-escudo-madrid-1757-jb'\)/);
+    assert.match(source, /spainCoinById\('2-escudos-sevilla-felipe-ii-s-d'\)/);
     assert.match(spainBlock, /href: SPAIN_COINAGE_PATH/);
     assert.match(spainBlock, /flag: 'es'/);
+    assert.match(spainBlock, /id: 'es-2-escudos-sevilla-felipe-ii-s-d'/);
+    assert.match(spainBlock, /href: spainTwoEscudos\.path/);
     assert.match(spainBlock, /id: 'es-medio-escudo-madrid-1757-jb'/);
     assert.match(spainBlock, /href: spainHalfEscudo\.path/);
   });

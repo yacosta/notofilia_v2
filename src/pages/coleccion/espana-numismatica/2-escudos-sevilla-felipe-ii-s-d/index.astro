@@ -1,0 +1,9 @@
+---
+import SpainCoinPage from '../../../../components/catalog/SpainCoinPage.astro';
+import { coinById } from '../../../../data/espana-coinage';
+
+const coin = coinById('2-escudos-sevilla-felipe-ii-s-d');
+if (!coin) throw new Error('Missing Spain Philip II Seville 2 escudos catalog coin');
+---
+
+<SpainCoinPage locale="es" coin={coin} />

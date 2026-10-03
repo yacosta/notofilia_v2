@@ -68,8 +68,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: '1535–1864', en: '1535–1864' },
     title: { es: 'España', en: 'Spain' },
     lead: {
-      es: 'El medio escudo de oro de Fernando VI, Madrid 1757, ensaye JB.',
-      en: 'Ferdinand VI’s gold half escudo, Madrid 1757, assayers JB.',
+      es: 'El 2 escudos de Sevilla de Felipe II, sin fecha, y el medio escudo de Fernando VI, Madrid 1757, ensaye JB.',
+      en: 'Philip II’s undated Seville 2 escudos, and Ferdinand VI’s half escudo, Madrid 1757, assayers JB.',
     },
   },
   {

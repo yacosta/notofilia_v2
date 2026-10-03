@@ -139,6 +139,10 @@ describe('locale path mapping', () => {
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
     );
     assert.equal(
+      localizePath('/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/', 'en'),
+      '/en/collection/spain-numismatics/2-escudos-seville-philip-ii-s-d/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
       '/en/collection/united-states-numismatics/hard-times-tokens/',
     );
@@ -675,6 +679,10 @@ describe('locale path mapping', () => {
     assert.equal(
       englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
       'collection/spain-numismatics/half-escudo-madrid-1757-jb',
+    );
+    assert.equal(
+      englishContentSlug('coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d'),
+      'collection/spain-numismatics/2-escudos-seville-philip-ii-s-d',
     );
     assert.equal(
       englishContentSlug('coleccion/polimero-mundial/asia/malasia'),
