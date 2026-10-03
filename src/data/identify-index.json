@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T23:10:55.294Z",
+  "generatedAt": "2026-10-03T02:21:13.630Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -157,6 +157,45 @@
       "title": {
         "es": "8 escudos · Popayán P–JF · 1801",
         "en": "8 escudos · Popayán P–JF · 1801"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1806-p-jf",
+      "face": "front",
+      "hash": "0021757652716300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.34 · Calicó 1168 · Hernández 688 · Cayón 14127 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1806",
+        "en": "1 escudo · Popayán P–JF · 1806"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1806-p-jf",
+      "face": "front",
+      "hash": "0012776b4d351600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.34 · Calicó 1168 · Hernández 688 · Cayón 14127 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1806",
+        "en": "1 escudo · Popayán P–JF · 1806"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1806-p-jf",
+      "face": "back",
+      "hash": "00322731a1330a00",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.34 · Calicó 1168 · Hernández 688 · Cayón 14127 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1806",
+        "en": "1 escudo · Popayán P–JF · 1806"
       }
     },
     {

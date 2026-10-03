@@ -384,7 +384,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "ceca",
     category: "Producción",
     title: { es: "Ceca / marca de ceca", en: "Mint / mint mark" },
-    definition: { es: "Casa de moneda donde se acuña una pieza, y la letra o símbolo grabado que la identifica. En el medio escudo de Madrid de 1757 la marca es una M coronada entre las iniciales de ensaye; en el 1 escudo de Popayán de 1801, la P; en Santa Fe colonial, NR. Distinta del ensayador, que firma la ley del metal.", en: "The mint where a coin is struck, and the letter or symbol engraved that identifies it. On the 1757 Madrid half escudo the mark is a crowned M between the assayers’ initials; on the 1801 Popayán 1 escudo, a P; on colonial Santa Fe, NR. Distinct from the assayer, who signs the metal’s fineness." },
+    definition: { es: "Casa de moneda donde se acuña una pieza, y la letra o símbolo grabado que la identifica. En el medio escudo de Madrid de 1757 la marca es una M coronada entre las iniciales de ensaye; en los 1 escudos de Popayán de 1801 y 1806, la P; en Santa Fe colonial, NR. Distinta del ensayador, que firma la ley del metal.", en: "The mint where a coin is struck, and the letter or symbol engraved that identifies it. On the 1757 Madrid half escudo the mark is a crowned M between the assayers’ initials; on the 1801 and 1806 Popayán 1 escudos, a P; on colonial Santa Fe, NR. Distinct from the assayer, who signs the metal’s fineness." },
     seeAlso: ["ensayador", "escudo", "planchuela", "macuquina-cob"],
   },
   {
@@ -624,7 +624,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "escudo",
     category: "Monedas y divisas",
     title: { es: "Escudo (oro)", en: "Escudo (gold)" },
-    definition: { es: "Unidad de oro de la monarquía hispánica y de sus Indias: múltiplos y fracciones (medio escudo, 1, 2, 4, 8) acuñados a volante o a martillo. No es el escudo de armas heráldico ni el real de plata. Esta colección documenta un medio escudo de Madrid de 1757 (ensaye JB) y un 1 escudo de Popayán de 1801 (P–JF).", en: "Gold unit of the Spanish monarchy and its Indies: multiples and fractions (half escudo, 1, 2, 4, 8) struck by mill or hammer. It is not the heraldic coat of arms and not the silver real. This collection records a 1757 Madrid half escudo (assayers JB) and an 1801 Popayán 1 escudo (P–JF)." },
+    definition: { es: "Unidad de oro de la monarquía hispánica y de sus Indias: múltiplos y fracciones (medio escudo, 1, 2, 4, 8) acuñados a volante o a martillo. No es el escudo de armas heráldico ni el real de plata. Esta colección documenta un medio escudo de Madrid de 1757 (ensaye JB) y los 1 escudos de Popayán de 1801 y 1806 (P–JF).", en: "Gold unit of the Spanish monarchy and its Indies: multiples and fractions (half escudo, 1, 2, 4, 8) struck by mill or hammer. It is not the heraldic coat of arms and not the silver real. This collection records a 1757 Madrid half escudo (assayers JB) and the 1801 and 1806 Popayán 1 escudos (P–JF)." },
     seeAlso: ["escudo-de-armas", "ceca", "ensayador", "real", "ducado"],
   },
   {

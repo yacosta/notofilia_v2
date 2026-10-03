@@ -10,6 +10,7 @@ import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
   | '8-escudos-popayan-1801-p-jf'
+  | '1-escudo-popayan-1806-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
@@ -85,8 +86,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       en: 'Reverse: crowned arms and the Golden Fleece; 1 S; marks P and JF beside the fleece.',
     },
     scarcity: {
-      es: 'Numista cubre el tipo KM# 56.2 (N#52837) y no publica una tirada del 1801 P–JF. Heritage y Sedwick documentan esa fecha y ensaye en ejemplares ajenos a esta ficha. No se publica aquí un censo de encapsulados ni un martillo.',
-      en: 'Numista covers type KM# 56.2 (N#52837) and does not publish an 1801 P–JF mintage. Heritage and Sedwick document that date and assayer on specimens that are not this record. No slab census and no hammer are published here.',
+      es: 'Numista cubre el tipo KM# 56.2 (N#52837) y no publica una tirada del 1801 P–JF. Heritage y Sedwick documentan esa fecha y ensaye en ejemplares ajenos a esta ficha. No se publica aquí un censo de encapsulados ni un martillo. El 1806 P–JF es otra ficha de esta colección.',
+      en: 'Numista covers type KM# 56.2 (N#52837) and does not publish an 1801 P–JF mintage. Heritage and Sedwick document that date and assayer on specimens that are not this record. No slab census and no hammer are published here. The 1806 P–JF is a separate record in this collection.',
     },
     grade: {
       es: 'Sin encapsular; sin grado asignado. Retrato aplanado, rayas y marcas de contacto; fecha, 1 S y P–JF legibles. Las fotografías no autentican el disco (colección privada)',
@@ -136,6 +137,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       },
     ],
     related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1806-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1806 P–JF',
+          en: 'Popayán 1 escudo, 1806 P–JF',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
         label: {
@@ -247,6 +255,126 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         label: {
           es: '1 escudo de Popayán, 1801 P–JF',
           en: 'Popayán 1 escudo, 1801 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1806-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1806 P–JF',
+          en: 'Popayán 1 escudo, 1806 P–JF',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-escudo-popayan-1806-p-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1806-p-jf/`,
+    chapterId: 'santa-fe',
+    year: '1806',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Popayán (P)',
+      en: 'Popayán (P)',
+    },
+    reference: 'KM# 56.2 · Restrepo 85.34 · Calicó 1168 · Hernández 688 · Cayón 14127 · Fr#59 · Numista N#52837',
+    title: {
+      es: '1 escudo · Popayán P–JF · 1806',
+      en: '1 escudo · Popayán P–JF · 1806',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Popayán colonial',
+      en: 'Colombia-Numismatics · colonial Popayán',
+    },
+    lead: {
+      es: 'Un escudo de oro de 1806, labrado en Popayán a nombre de Carlos IV. El anverso lleva el busto y la fecha; el reverso, el valor 1 S y las marcas P · JF.',
+      en: 'An 1806 gold escudo struck at Popayán for Charles IV. The obverse carries the bust and the date; the reverse, the value 1 S and the marks P · JF.',
+    },
+    description: {
+      es: 'En 1806 la casa de Popayán, en labores desde 1758, seguía labrando oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1806 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, las marcas P y JF. Eso es el tipo KM# 56.2 —Restrepo 85.34, Calicó 1168, Hernández 688, Cayón 14127, Friedberg 59—, no el KM# 56.1 de Santa Fe con marca NR–JJ. Tampoco es el 1 escudo de 1801 P–JF de esta colección (Restrepo 85.20, Calicó 1160) ni el 1806 P–JT: Numista no confirma esa combinación en Hernández, y CoinVarieties la lista aparte como Restrepo 85.36. La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1806 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo, no un 15. El oro .875, unos 3,38 g de tipo y un módulo de 19 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla. El canto se ve estriado en estas fotografías; no hay una toma aparte del canto, y las dos caras no fijan el eje de este disco. No hay tirada verificada: CoinVarieties deja el 1806 P–JF sin cifra, Numista no publica una acuñación, y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal.',
+      en: 'In 1806 the Popayán mint, at work since 1758, was still striking milled gold in the name of Charles IV. This disc shows the date 1806 under the portrait, the value 1 S, and, on either side of the fleece, the marks P and JF. That is type KM# 56.2 — Restrepo 85.34, Calicó 1168, Hernández 688, Cayón 14127, Friedberg 59 — not Santa Fe’s KM# 56.1 with mintmark NR–JJ. It is not this collection’s 1801 P–JF escudo (Restrepo 85.20, Calicó 1160), nor the 1806 P–JT: Numista does not confirm that combination in Hernández, and CoinVarieties lists it separately as Restrepo 85.36. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1806 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo, not 15. Gold .875, a type weight of about 3.38 g, and a module of 19 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment. The edge looks reeded in these photographs; there is no separate edge view, and the two faces do not fix this disc’s axis. No mintage is verified: CoinVarieties leaves the 1806 P–JF without a figure, Numista does not publish a mintage, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1806.',
+      en: 'Obverse: bust of Charles IV facing right, legend with IIII, and the date 1806.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marcas P y JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; marks P and JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 56.2 (N#52837) y lista el 1806 P–JF como Hernández 688, sin una tirada. CoinVarieties deja esa fecha y ensaye sin cifra. El 1806 P–JT es otra combinación, no confirmada por Hernández en Numista. No se publica aquí un censo de encapsulados ni un martillo. El 1 escudo de 1801 P–JF es otra ficha de esta colección.',
+      en: 'Numista covers type KM# 56.2 (N#52837) and lists the 1806 P–JF as Hernández 688, without a mintage. CoinVarieties leaves that date and assayer without a figure. The 1806 P–JT is another combination, not confirmed by Hernández on Numista. No slab census and no hammer are published here. The 1801 P–JF 1 escudo is a separate record in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato gastado por la circulación, reverso más legible; fecha, 1 S y P–JF se leen. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Portrait worn by circulation, reverse clearer; date, 1 S, and P–JF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-1-escudo-1806-charles-iv-p-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/52837',
+        es: 'Numista — 1 escudo, Carlos IV, Colombia (N#52837)',
+        en: 'Numista — 1 escudo, Charles IV, Colombia (N#52837)',
+        note: {
+          es: 'KM# 56.2 para la ceca P; el 1806 P–JF figura como Hernández 688. Oro de tipo .875, unos 3,38 g y 19 mm. No se cita aquí una tirada.',
+          en: 'KM# 56.2 for the P mint; 1806 P–JF is listed as Hernández 688. Type gold .875, about 3.38 g, and 19 mm. No mintage is cited here.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/literature.php?id=100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Monedas y billetes de Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista asigna el Cód. 688 al 1806 P–JF de este tipo. No se copian las columnas de precio de esa edición, ni se lee ahí una tirada.',
+          en: 'Numista assigns Cód. 688 to the 1806 P–JF of this type. Price columns from that edition are not copied, and no mintage is read from them.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1806-P_JF_escudo',
+        es: 'CoinVarieties — 1 escudo de Popayán, Carlos IV, 1806 P–JF',
+        en: 'CoinVarieties — Popayán 1 escudo, Charles IV, 1806 P–JF',
+        note: {
+          es: 'Cayón 14127, Friedberg 59 y KM# 56.2. Deja la tirada sin cifra. El lote de Heritage que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Cayón 14127, Friedberg 59, and KM# 56.2. Leaves the mintage unstated. The Heritage lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/10611/lot/1974',
+        es: 'Sedwick / NumisBids — 1 escudo de Popayán, Carlos IV, 1806 JF',
+        en: 'Sedwick / NumisBids — Popayán 1 escudo, Charles IV, 1806 JF',
+        note: {
+          es: 'Reúne Restrepo 85.34, KM# 56.2, Calicó 1168 y Friedberg 59. Comparable; no es esta ficha y no se publican precios.',
+          en: 'Gathers Restrepo 85.34, KM# 56.2, Calicó 1168, and Friedberg 59. A comparable; not this record, and prices are not published.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Casa_de_acu%C3%B1aci%C3%B3n_de_moneda_de_Popay%C3%A1n',
+        es: 'Enciclopedia Banrepcultural — Casa de acuñación de Popayán',
+        en: 'Banrepcultural Encyclopedia — The Popayán mint',
+        note: {
+          es: 'La casa comenzó a labrar en 1758. Contexto de ceca, no autenticación de este disco.',
+          en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1801 P–JF',
+          en: 'Popayán 1 escudo, 1801 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
+        label: {
+          es: '8 escudos de Popayán, 1801 P–JF',
+          en: 'Popayán 8 escudos, 1801 P–JF',
         },
       },
     ],
