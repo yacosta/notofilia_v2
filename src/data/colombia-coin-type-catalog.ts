@@ -14,6 +14,7 @@ export type ColombiaCoinTypeId =
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
   | '8-reales-bogota-1821-ba-jf'
+  | '1-peso-bogota-1826-jf'
   | '1-peso-pm-1907'
   | '2-pesos-pm-1907'
   | '5-pesos-pm-1907'
@@ -161,6 +162,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '8-reales-bogota-1821-ba-jf',
+  },
+  {
+    id: '1-peso-bogota-1826-jf',
+    era: 'independencia',
+    year: '1826',
+    denomination: { es: '1 peso', en: '1 peso' },
+    issuer: { es: 'Bogotá', en: 'Bogotá' },
+    reference: 'KM# 84 · Restrepo 160.3 · Fr#73 · Hernández 808',
+    title: { es: '1 peso · Bogotá JF · 1826', en: '1 peso · Bogotá JF · 1826' },
+    dek: {
+      es: 'Peso de oro de la República de Colombia, Libertad y armas, ensaye JF. En la colección.',
+      en: 'Gold peso of the Republic of Colombia, Liberty and arms, assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-peso-bogota-1826-jf',
   },
   {
     id: '1-peso-pm-1907',

@@ -627,6 +627,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/8-reales-bogota-1821-ba-jf/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-peso-bogota-1826-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-peso-bogota-1826-jf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', 'en'),
       '/en/collection/colombia-numismatics/2-reales-cartagena-1812-1814/',
     );

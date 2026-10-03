@@ -15,6 +15,7 @@ export type ColombiaCoinagePieceId =
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
   | '8-reales-bogota-1821-ba-jf'
+  | '1-peso-bogota-1826-jf'
   | '2-centavos-lazareto-1921'
   | '50-centavos-lazareto-1931'
   | '50-centavos-santander-1902'
@@ -700,6 +701,109 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
         note: {
           es: 'Ocho reales de la Gran Colombia: cód. 282 es la mula de 1820; la lámina de los cód. 283, 284 y 285 cierra con el 1821 BA·JF de Bogotá. No se publican precios ni láminas.',
           en: 'Gran Colombia 8 reales: Cód. 282 is the 1820 mule; the plate for Cód. 283, 284, and 285 ends with the 1821 Bogotá BA·JF. Prices and plates are not published.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-peso-bogota-1826-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-peso-bogota-1826-jf/`,
+    chapterId: 'independencia',
+    year: '1826',
+    denomination: { es: '1 peso', en: '1 peso' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: { es: 'Bogotá', en: 'Bogotá' },
+    reference: 'KM# 84 · Restrepo 160.3 · Fr#73 · Hernández 808 · Numista N#48297',
+    title: {
+      es: '1 peso · Bogotá JF · 1826',
+      en: '1 peso · Bogotá JF · 1826',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Independencia',
+      en: 'Colombia-Numismatics · Independence',
+    },
+    lead: {
+      es: 'Un peso de oro de 1826, labrado en Bogotá. El anverso lleva la Libertad y la fecha; el reverso, las armas de la Gran Colombia y las iniciales J · F.',
+      en: 'An 1826 gold peso struck at Bogotá. The obverse carries Liberty and the date; the reverse, the arms of Gran Colombia and the initials J · F.',
+    },
+    description: {
+      es: 'En 1826 la Casa de Bogotá labró este peso de oro de la República de Colombia. El anverso lleva el busto de la Libertad a la izquierda, con ínfula, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la fecha 1826 bajo el perfil. La ley del 14 de marzo de 1825 mandó ese busto en traje romano y la palabra libertad en la ínfula; en esta fotografía las letras de la cinta no se leen con seguridad. El reverso muestra las armas fijadas el 4 de octubre de 1821: fasces, arco y flechas cruzados, y dos cornucopias. Alrededor se leen BOGOTA, el valor 1 · P, una roseta y las iniciales J · F. Eso es el tipo KM# 84, Friedberg 73. Hernández, en la 8.ª edición de 2023, reúne el 1825 y el 1826 de Bogotá con ensaye JF en el cód. 808; Numista agrupa el tipo (N#48297) en los cód. 808–810. Las descripciones de lote del 1826 JF citan Restrepo 160.3. Numista anota además un sobrefecha 1826/5 en ese ensaye. Esta fotografía lee 1826 y no muestra un numeral bajo el 6; la ficha no asigna ese subtipo de cuño. El mismo año existe con JR y con PJ; las iniciales de este reverso se leen J · F. El oro .875, 1,69 g y 15 mm son cifras de Numista para el tipo. CoinVarieties da el mismo peso, la misma ley y Friedberg 73, y deja la tirada sin cifra. La pieza de 1826 de la Colección Numismática del Banco (NMO3974) mide 15 mm y 1,7 g; no es este disco. Este ejemplar no se pesó ni se midió. La alineación moneda es la del tipo en Numista; estas fotografías, lado a lado, no fijan el eje. Las tablas BanRep de moneda empiezan en 1987 y no traen una acuñación de 1826. Bogotá fue, según el Banco, la única ceca que labró este peso de oro entre 1825 y 1836. Un peso de oro equivalía a medio escudo; el de plata, a ocho reales. Sin encapsular; las fotografías no autentican el metal. No es el ocho reales de plata de 1821 BA–JF ni el escudo colonial de Popayán.',
+      en: 'In 1826 the Bogotá mint struck this gold peso of the Republic of Colombia. The obverse carries Liberty’s bust facing left, with a headband, the legend REPUBLICA DE COLOMBIA — unaccented, as engraved — and the date 1826 under the profile. The law of 14 March 1825 ordered that bust in Roman dress and the word libertad on the headband; the letters on the band cannot be read with certainty in this photograph. The reverse shows the arms fixed on 4 October 1821: fasces, a crossed bow and arrows, and two cornucopias. Around them one reads BOGOTA, the value 1 · P, a rosette, and the initials J · F. That is type KM# 84, Friedberg 73. Hernández, in the 8th edition of 2023, gathers the 1825 and 1826 Bogotá issues with assayer JF as Cód. 808; Numista groups the type (N#48297) under Cód. 808–810. Lot descriptions of the 1826 JF cite Restrepo 160.3. Numista also notes an 1826/5 overdate for that assayer. This photograph reads 1826 and does not show a numeral under the 6; the record does not assign that die subtype. The same year exists with JR and with PJ; the initials on this reverse read J · F. Gold .875, 1.69 g, and 15 mm are Numista’s figures for the type. CoinVarieties gives the same weight, the same fineness, and Friedberg 73, and leaves the mintage unstated. The Bank’s Numismatic Collection piece of 1826 (NMO3974) measures 15 mm and 1.7 g; it is not this disc. This specimen was not weighed or measured. Coin alignment is the type’s orientation on Numista; these photographs, side by side, do not fix the axis. BanRep’s coin tables begin in 1987 and do not give an 1826 mintage. Bogotá was, according to the Bank, the only mint that struck this gold peso from 1825 through 1836. One gold peso equalled half an escudo; the silver peso, eight reales. Unslabbed; the photographs do not authenticate the metal. It is not the 1821 silver 8 reales BA–JF, nor the colonial Popayán escudo.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de la Libertad a la izquierda, ínfula, leyenda REPUBLICA DE COLOMBIA y fecha 1826.',
+      en: 'Obverse: bust of Liberty facing left, headband, legend REPUBLICA DE COLOMBIA, and the date 1826.',
+    },
+    backCaption: {
+      es: 'Reverso: fasces, arco y flechas, cornucopias; BOGOTA, 1 · P, roseta y J · F.',
+      en: 'Reverse: fasces, bow and arrows, cornucopias; BOGOTA, 1 · P, a rosette, and J · F.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 84 (N#48297), labrado de 1825 a 1836, y lista el 1826 JF junto a JR y PJ. Anota un sobrefecha 1826/5 en el JF; esta fotografía no lo establece. CoinVarieties deja la tirada del 1826 JF sin cifra. Las tablas BanRep de moneda empiezan en 1987. Esta ficha no publica un censo de encapsulados ni martillos.',
+      en: 'Numista covers type KM# 84 (N#48297), struck from 1825 to 1836, and lists 1826 JF alongside JR and PJ. It notes an 1826/5 overdate on the JF; this photograph does not establish it. CoinVarieties leaves the 1826 JF mintage unstated. BanRep’s coin tables begin in 1987. This record publishes neither a slab census nor hammers.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Se leen 1826, BOGOTA, 1 · P y J · F. El busto está gastado y el campo tiene marcas de contacto. El 6 no muestra aquí un numeral subyacente. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. 1826, BOGOTA, 1 · P, and J · F are readable. The bust is worn and the field shows contact marks. The 6 does not show an underlying numeral here. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/48297',
+        es: 'Numista — 1 peso, República de Colombia (N#48297)',
+        en: 'Numista — 1 peso, Republic of Colombia (N#48297)',
+        note: {
+          es: 'KM# 84 y Hernández 808–810. Oro de tipo .875, 1,69 g y 15 mm; técnica de cordoncillo; alineación moneda. Fechas 1825–1836, con 1826 JF, JR y PJ, y la nota de un sobrefecha 1826/5 en el JF. No se citan aquí columnas de valor ni una tirada.',
+          en: 'KM# 84 and Hernández 808–810. Type gold .875, 1.69 g, and 15 mm; milled; coin alignment. Dates 1825–1836, with 1826 JF, JR, and PJ, and a note that an 1826/5 overdate exists on the JF. Value columns and a mintage are not cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1826-B_JF_peso_oro',
+        es: 'CoinVarieties — peso de oro de Bogotá, 1826 JF',
+        en: 'CoinVarieties — Bogotá gold peso, 1826 JF',
+        note: {
+          es: 'Fr-73 y KM-84; 1,69 g y oro 0,875. Deja la tirada sin cifra. El lote que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Fr-73 and KM-84; 1.69 g and 0.875 gold. It leaves the mintage unstated. The lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://colecciones.banrepcultural.org/document/moneda-de-un-peso/63a069155d96b8790f3444fb',
+        es: 'Colección Numismática del Banco de la República — moneda de un peso, 1826 (NMO3974)',
+        en: 'Banco de la República Numismatic Collection — one-peso coin, 1826 (NMO3974)',
+        note: {
+          es: 'Otro ejemplar de 1826, oro, Casa de Bogotá, 15 mm y 1,7 g. Resume la ley del 14 de marzo de 1825 —el dieciseisavo de onza, llamado colombiano de oro— y las armas de la ley del 4 de octubre de 1821. No es este disco.',
+          en: 'Another 1826 specimen, gold, Bogotá mint, 15 mm and 1.7 g. It summarizes the law of 14 March 1825 — the sixteenth of an onza, called colombiano de oro — and the arms of the law of 4 October 1821. It is not this disc.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Cód. 808: 1 peso de la República de Colombia, 1825 y 1826, Bogotá, ensaye J.F., anverso República de Colombia y efigie de la Libertad, ley 0,875. No se publican columnas de precios ni láminas. El peso de esa fila no se transcribe: el OCR de esta edición no se lee con seguridad.',
+          en: 'Cód. 808: 1 peso of the Republic of Colombia, 1825 and 1826, Bogotá, assayer J.F., obverse República de Colombia and a Liberty bust, fineness 0.875. Price columns and plates are not published. The weight on that row is not transcribed: the OCR of this edition cannot be read with certainty.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/10256/lot/25081',
+        es: 'Heritage / NumisBids — peso de oro de Bogotá, 1826 JF',
+        en: 'Heritage / NumisBids — Bogotá gold peso, 1826 JF',
+        note: {
+          es: 'Comparable del tipo: 1826 BOGOTA-JF, KM# 84, Restrepo 160.3. No es este ejemplar y no se publican precios.',
+          en: 'A type comparable: 1826 BOGOTA-JF, KM# 84, Restrepo 160.3. Not this specimen, and prices are not published.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}8-reales-bogota-1821-ba-jf/`,
+        label: {
+          es: '8 reales de Bogotá, 1821 BA–JF',
+          en: 'Bogotá 8 reales, 1821 BA–JF',
         },
       },
     ],
