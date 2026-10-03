@@ -12,7 +12,7 @@ export const contactCopy = {
     nav: 'Contacto',
     home: 'Inicio',
     breadcrumb: 'Migas de pan',
-    metaTitle: 'Contacto · Notofilia',
+    metaTitle: 'Contacto · Identificación de billetes y consultas | Notofilia',
     metaDescription:
       'Escríbanos a Notofilia sobre el catálogo, el glosario o cualquier consulta sobre numismática y notafilia. Respondemos por correo.',
     title: 'Contacto',
@@ -37,7 +37,7 @@ export const contactCopy = {
     nav: 'Contact',
     home: 'Home',
     breadcrumb: 'Breadcrumb',
-    metaTitle: 'Contact · Notofilia',
+    metaTitle: 'Contact · Banknote identification and enquiries | Notofilia',
     metaDescription:
       'Write to Notofilia about the catalogue, the glossary, or any question about numismatics and notaphily. We reply by email.',
     title: 'Contact',

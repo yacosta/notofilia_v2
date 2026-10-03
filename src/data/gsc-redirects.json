@@ -5,7 +5,7 @@
     "gone": 16,
     "existing": 1098,
     "legacy-dc": 51,
-    "manual": 24,
+    "manual": 28,
     "last-slug": 7,
     "category-hub": 27,
     "hub-fallback": 117,
@@ -9467,14 +9467,14 @@
       "rule": "existing"
     },
     "/en/identificar/": {
-      "target": "/en/identify/",
+      "target": "/en/search/",
       "status": 301,
-      "rule": "existing"
+      "rule": "manual"
     },
     "/en/identificar": {
-      "target": "/en/identify/",
+      "target": "/en/search/",
       "status": 301,
-      "rule": "existing"
+      "rule": "manual"
     },
     "/en/j-s-g-boggs/": {
       "target": "",
@@ -13485,6 +13485,26 @@
       "target": "",
       "status": 410,
       "rule": "gone"
+    },
+    "/identificar/": {
+      "target": "/buscar/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/identificar": {
+      "target": "/buscar/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/identify/": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/identify": {
+      "target": "/en/search/",
+      "status": 301,
+      "rule": "manual"
     }
   }
 }

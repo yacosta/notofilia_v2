@@ -82,10 +82,37 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(seriesPage, /USA_COINAGE_PATH/);
     assert.match(seriesPage, /t\.coinageLead/);
     assert.doesNotMatch(seriesPage, /target="_blank"/);
-    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos y Países Bajos/);
-    assert.match(numismatica, /the United States, Lazarettos, and the Netherlands open the row/);
+    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos y Puerto Rico/);
+    assert.match(numismatica, /the United States, Lazarettos, the Netherlands, and Puerto Rico open the row/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
+  });
+});
+
+describe('US 1908 Indian Head quarter eagle', () => {
+  it('registers one bilingual Philadelphia gold holding, with the studio pair as one coin', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.match(data, /id: '2-50-dolares-1908-cabeza-de-indio'/);
+    assert.match(data, /chapterId: 'ceca-filadelfia'/);
+    assert.match(data, /Cuarto de águila de 1908, cabeza de indio/);
+    assert.match(data, /1908 Indian Head quarter eagle/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-composite\.jpg/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-front\.jpg/);
+    assert.match(data, /united-states-mint-2-50-dollars-1908-indian-head-back\.jpg/);
+    assert.match(data, /KM# 128 · Fr# 121 · PCGS# 7939/);
+    assert.match(data, /564\.821/);
+    assert.match(data, /565\.057/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States quarter eagle/);
+    assert.match(data, /una sola pieza/);
+    assert.match(data, /one piece/);
+    assert.match(data, /2½ DOLLARS/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.match(holdings, /id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /id: 'us-1908-2-50-km128'/);
   });
 });
 
@@ -191,6 +218,32 @@ describe('US Hard Times HT-10A 1834 Running Boar', () => {
   });
 });
 
+describe('US 1878 Liberty Head quarter eagle', () => {
+  it('registers one bilingual unslabbed Philadelphia piece with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.match(data, /id: '2-50-dolares-1878-liberty-head'/);
+    assert.match(data, /chapterId: 'ceca-filadelfia'/);
+    assert.match(data, /Christian Gobrecht/);
+    assert.match(data, /PCGS #7828 · Numista N#13432/);
+    assert.match(data, /286\.240/);
+    assert.match(data, /286,240/);
+    assert.match(data, /LIBERTY en la coroneta/);
+    assert.match(data, /2 1\/2 D\./);
+    assert.match(data, /no_serial_reason:\n      'Struck United States quarter eagle/);
+    assert.match(data, /united-states-mint-2-50-dollars-1878-liberty-head-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1878-2-50\/7828/);
+    assert.match(data, /en\.numista\.com\/13432/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    assert.match(holdings, /id: 'us-2-50-dolares-1878-liberty-head', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1878-quarter-eagle-pcgs7828/);
+  });
+});
+
 describe('US 1912 Indian Head quarter eagle', () => {
   it('registers one bilingual unslabbed Philadelphia piece with no serial', () => {
     assert.equal(
@@ -214,6 +267,41 @@ describe('US 1912 Indian Head quarter eagle', () => {
     assert.doesNotMatch(data, /cert_number:/);
     assert.match(holdings, /id: 'us-2-50-dolares-1912-indian-head', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1912-quarter-eagle-km128/);
+  });
+});
+
+describe('US 1856 Indian Princess gold dollar', () => {
+  it('registers one bilingual unslabbed Philadelphia Type 3 with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-oro-1856-cabeza-grande'/);
+    assert.match(data, /James Barton Longacre/);
+    assert.match(data, /KM# 86 · PCGS# 7540 · N# 23120/);
+    assert.match(data, /1,672 g/);
+    assert.match(data, /1\.672 g/);
+    assert.match(data, /1\.762\.936/);
+    assert.match(data, /1,762,936/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States gold dollar/);
+    assert.match(data, /united-states-mint-1-dollar-gold-1856-large-head-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/7540/);
+    assert.match(data, /en\.numista\.com\/23120/);
+    assert.match(data, /9 Stat\. 397/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1856-gold-dollar-km86/);
   });
 });
 

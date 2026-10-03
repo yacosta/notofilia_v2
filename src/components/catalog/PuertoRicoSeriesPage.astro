@@ -13,6 +13,7 @@ import {
   seriesPath,
   seriesSources,
 } from '../../data/puerto-rico';
+import { PUERTO_RICO_COINAGE_PATH } from '../../data/puerto-rico-coinage';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -69,6 +70,17 @@ const jsonLd = collectionPageJsonLd({
       <div class="w-full text-[17px]/7 text-cream">
         {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
       </div>
+
+      <p class="mb-0 mt-6 text-[17px]/7 text-muted">
+        {t.coinageLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(PUERTO_RICO_COINAGE_PATH, locale)}
+        >
+          {t.coinageLink}
+        </a>
+      </p>
 
       <section class="mt-16" aria-labelledby="holdings-heading">
         <h2 id="holdings-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">

@@ -112,6 +112,7 @@ const PATH_CONSTANTS = {
   USA_BARABOO_SCRIP_PATH: '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/',
   USA_COINAGE_PATH: '/coleccion/estados-unidos-numismatica/',
   SPAIN_COINAGE_PATH: '/coleccion/espana-numismatica/',
+  PUERTO_RICO_COINAGE_PATH: '/coleccion/puerto-rico-numismatica/',
   NETHERLANDS_COINAGE_PATH: '/coleccion/paises-bajos-numismatica/',
   NETHERLANDS_PATH: '/coleccion/paises-bajos/',
   CHINA_PATH: '/coleccion/china/',

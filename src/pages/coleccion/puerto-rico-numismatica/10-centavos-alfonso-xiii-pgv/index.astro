@@ -1,0 +1,9 @@
+---
+import PuertoRicoCoinPage from '../../../../components/catalog/PuertoRicoCoinPage.astro';
+import { coinById } from '../../../../data/puerto-rico-coinage';
+
+const coin = coinById('10-centavos-alfonso-xiii-pgv');
+if (!coin) throw new Error('Missing Puerto Rico 10 centavos catalog coin');
+---
+
+<PuertoRicoCoinPage locale="es" coin={coin} />

@@ -66,6 +66,17 @@ const added = [
   'moneda-prueba-giori',
   'sello-amarillo',
   'sobreimpresion-hawaii',
+  'demand-note',
+  'united-states-note',
+  'greenback',
+  'billete-de-banco-nacional',
+  'certificado-de-oro',
+  'treasury-note',
+  'tamano-grande',
+  'gonzalez-white',
+  'hernandez',
+  'junta-de-conversion',
+  'dinero-mickey-mouse',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -92,7 +103,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 157);
+    assert.equal(glossaryTerms.length, 168);
   });
 });
 
@@ -100,7 +111,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 123);
+    assert.equal(foldedGlossaryTerms().length, 134);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
@@ -138,6 +149,10 @@ describe('two-tier glossary', () => {
     assert.equal(redirects['/en/glosario/polimero/'], '/en/glossary/polymer/');
     assert.equal(redirects['/en/glosario/pmg-pcgs/'], '/en/glossary/pmg-pcgs/');
     assert.equal(redirects['/glosario/pmg-pcgs/'], undefined);
+    const redirectBuilder = readFileSync(new URL('../../scripts/seo/build-redirects.mjs', import.meta.url), 'utf8');
+    const workerRedirects = readFileSync(new URL('../lib/gsc-redirects.ts', import.meta.url), 'utf8');
+    assert.match(redirectBuilder, /glossaryRedirects\(\)/);
+    assert.match(workerRedirects, /glossaryRedirects/);
     assert.match(astroConfig, /glossaryRedirects\(\)/);
   });
 

@@ -18,8 +18,8 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; la de 25¢ espera el número de serie o el certificado del vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ still waits for a serial or a certificate. Further note pages will be published here as they are photographed.',
+      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; el 25¢ de Otto Ringling (WI100-.25a) espera el número de serie o el certificado del vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ Otto Ringling note (WI100-.25a) still waits for a serial or a certificate. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -492,8 +492,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002. La de 25¢ espera un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
-        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002. The 25¢ waits for a serial or a certificate. Further pieces will be published as they are photographed.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002. El 25¢ de Otto Ringling (WI100-.25a) espera un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002. The 25¢ Otto Ringling note (WI100-.25a) waits for a serial or a certificate. Further pieces will be published as they are photographed.',
       },
     },
   ],
@@ -545,7 +545,7 @@ export const miscSeriesCopy = {
     typesLabel: 'Tipos anunciados',
     barabooCardTitle: 'Scrip de Baraboo · Golden Jubilee 1933',
     barabooCardDek:
-      'Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; la de 25¢ espera un serial o un certificado.',
+      'Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; el 25¢ de Otto Ringling (WI100-.25a) espera un serial o un certificado.',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'es')),
@@ -567,7 +567,7 @@ export const miscSeriesCopy = {
     typesLabel: 'Announced types',
     barabooCardTitle: 'Baraboo scrip · Golden Jubilee 1933',
     barabooCardDek:
-      'Chamber of Commerce, Shafer WI100, 5¢ to $1. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ waits for a serial or a certificate.',
+      'Chamber of Commerce, Shafer WI100, 5¢ to $1. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ Otto Ringling note (WI100-.25a) waits for a serial or a certificate.',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: miscSeriesIntro.map((paragraph) => catalogProseText(paragraph, 'en')),
@@ -640,7 +640,7 @@ export const barabooScripSeriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Misceláneos · Scrip de Baraboo 1933 | Notofilia',
     metaDescription:
-      'Scrip del Golden Jubilee de Baraboo, 1933: Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar, diseño de E. B. Trimpey. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; la de 25¢ espera un serial o un certificado.',
+      'Scrip del Golden Jubilee de Baraboo, 1933: Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar, diseño de E. B. Trimpey. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha; el 25¢ de Otto Ringling (WI100-.25a) espera un serial o un certificado.',
     kicker: 'Estados Unidos · Misceláneos',
     title: 'Scrip de Baraboo · Golden Jubilee 1933',
     breadcrumbCurrent: 'Scrip de Baraboo 1933',
@@ -652,7 +652,7 @@ export const barabooScripSeriesCopy = {
     holdingsIntro:
       'Cada ficha de ejemplar necesita el número de serie impreso o, si el vale está encapsulado, el número de certificado. No se inventan seriales.',
     emptyHoldings:
-      'La de 25¢ del tipo Shafer WI100 espera el número de serie o el certificado del vale.',
+      'El 25¢ de Otto Ringling (WI100-.25a) espera el número de serie o el certificado del vale.',
     winterTitle: 'Baraboo, cuarteles de invierno',
     scripTitle: 'El scrip de Baraboo',
     collectingTitle: 'Lo que buscan hoy los coleccionistas',
@@ -666,7 +666,7 @@ export const barabooScripSeriesCopy = {
   en: {
     metaTitle: 'United States · Miscellaneous · Baraboo scrip 1933 | Notofilia',
     metaDescription:
-      'Baraboo Golden Jubilee scrip, 1933: Chamber of Commerce, Shafer WI100, 5¢ to $1, designed by E. B. Trimpey. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ waits for a serial or a certificate.',
+      'Baraboo Golden Jubilee scrip, 1933: Chamber of Commerce, Shafer WI100, 5¢ to $1, designed by E. B. Trimpey. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages; the 25¢ Otto Ringling note (WI100-.25a) waits for a serial or a certificate.',
     kicker: 'United States · Miscellaneous',
     title: 'Baraboo scrip · Golden Jubilee 1933',
     breadcrumbCurrent: 'Baraboo scrip 1933',
@@ -678,7 +678,7 @@ export const barabooScripSeriesCopy = {
     holdingsIntro:
       'Each piece page needs the printed serial or, if the note is slabbed, the certificate number. Serials are not invented here.',
     emptyHoldings:
-      'The Shafer WI100 25¢ still needs a serial or a certificate.',
+      'The Otto Ringling 25¢ (WI100-.25a) still needs a serial or a certificate.',
     winterTitle: 'Baraboo winter quarters',
     scripTitle: 'The Baraboo scrip',
     collectingTitle: 'What collectors look for today',
@@ -720,8 +720,8 @@ export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 's
         en: 'To commemorate the milestone, the town issued special Baraboo Scrip. These were not federal notes: they were ornate souvenir paper tokens, printed on currency-quality paper a trifle larger than Civil War shinplasters, redeemable in trade through the local Chamber of Commerce. The Baraboo News-Republic of 28 June 1933 announced the issue; the notes circulated as change and as souvenirs, and were redeemable through 1 November 1933.',
       },
       {
-        es: 'Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar— retratan a los hermanos Ringling: las inferiores, a cada uno de los cinco por separado. El 1 dólar reúne al grupo. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. La idea y el diseño fueron de E. B. Trimpey, del estudio Trimpey de Baraboo, a partir de fotografías originales de los hermanos. En el papel figuran las firmas impresas del presidente y del tesorero de la Cámara.',
-        en: 'The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — feature the Ringling brothers: the lower notes, each of the five singly. The $1 shows the group. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. E. B. Trimpey of Baraboo’s Trimpey studio designed the notes from original photographs of the brothers. Printed signatures of the Chamber’s president and treasurer appear on the paper.',
+        es: 'Las denominaciones —5¢, 10¢, 15¢, 25¢, 50¢ y 1 dólar— retratan a los hermanos Ringling. El 5¢ lleva a John Ringling; el 10¢, a Chas. Ringling; el 15¢, a Al. T. Ringling (Alfred T.); el 25¢, a Otto Ringling; el 50¢, a A. C. Ringling (Albert, el mayor). El 1 dólar reúne al grupo. El anverso lleva discos de color transparente; el reverso, en verde, muestra la carpa del Big Top flanqueada por un león y un tigre. La idea y el diseño fueron de E. B. Trimpey, del estudio Trimpey de Baraboo, a partir de fotografías originales de los hermanos. En el papel figuran las firmas impresas del presidente y del tesorero de la Cámara.',
+        en: 'The denominations — 5¢, 10¢, 15¢, 25¢, 50¢, and $1 — feature the Ringling brothers. The 5¢ shows John Ringling; the 10¢, Chas. Ringling; the 15¢, Al. T. Ringling (Alfred T.); the 25¢, Otto Ringling; the 50¢, A. C. Ringling (Albert, the eldest). The $1 shows the group. The face carries disks of transparent color; the green back shows the Big Top tent, bookended by a lion and a tiger. E. B. Trimpey of Baraboo’s Trimpey studio designed the notes from original photographs of the brothers. Printed signatures of the Chamber’s president and treasurer appear on the paper.',
       },
       {
         es: 'Los comerciantes lo entregaban como cambio y también lo vendían a valor facial como recuerdo. Un reportaje del Wisconsin State Journal lo sitúa en circulación hasta Madison. La venta cubrió casi todo el costo de la celebración del aniversario para la Cámara de Comercio. No se conserva cifra de tirada; esta ficha no inventa una.',
@@ -734,12 +734,12 @@ export const barabooScripNarrative: { id: string; headingKey: 'winterTitle' | 's
     headingKey: 'collectingTitle',
     paragraphs: [
       {
-        es: 'Estos vales del jubileo viven en la frontera entre la notafilia y la exonumia: no son curso legal federal, pero sí vales al portador de una cámara local, emitidos en el mismo año en que el feriado bancario de marzo de 1933 dejó a muchos pueblos imprimiendo scrip de emergencia. En catálogos de scrip de la Depresión de Wisconsin se los agrupa como Shafer WI100. Un juego completo de las seis piezas —cinco fraccionarios más el dólar— es la forma habitual de reunirlos.',
-        en: 'These jubilee tokens sit on the border between notaphily and exonumia: they are not federal legal tender, but they are local Chamber bearer notes, issued in the same year the March 1933 bank holiday left many towns printing emergency scrip. Wisconsin Depression-scrip catalogs list them as Shafer WI100. A complete set of the six pieces — five fractionals plus the dollar — is the usual way to collect them.',
+        es: 'Estos vales del jubileo viven en la frontera entre la notafilia y la exonumia: no son curso legal federal, pero sí vales al portador de una cámara local, emitidos en el mismo año en que el feriado bancario de marzo de 1933 dejó a muchos pueblos imprimiendo scrip de emergencia. Ralph A. Mitchell y Neil Shafer los agrupan como WI100 (Shafer WI100) en el Standard Catalog of Depression Scrip, con subnúmero por facial: WI100-.05a, WI100-.10a, WI100-.15a, WI100-.25a, WI100-.50a y WI100-1a. Un juego completo de las seis piezas —cinco fraccionarios más el dólar— es la forma habitual de reunirlos.',
+        en: 'These jubilee tokens sit on the border between notaphily and exonumia: they are not federal legal tender, but they are local Chamber bearer notes, issued in the same year the March 1933 bank holiday left many towns printing emergency scrip. Ralph A. Mitchell and Neil Shafer list them as WI100 (Shafer WI100) in the Standard Catalog of Depression Scrip, with a denomination suffix: WI100-.05a, WI100-.10a, WI100-.15a, WI100-.25a, WI100-.50a, and WI100-1a. A complete set of the six pieces — five fractionals plus the dollar — is the usual way to collect them.',
       },
       {
-        es: 'Los ejemplares sin circular —sin pliegues ni pinchazos— son los más buscados por notafilistas e historiadores del circo. En Notofilia no publicamos precios de mercado. Esta ficha documenta el tipo bajo Misceláneos; pertenece a esa vitrina, no a las series federales. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha. La de 25¢ espera el suyo.',
-        en: 'Uncirculated examples — no folds, no pinholes — are the ones notaphilists and circus historians hunt. Notofilia does not publish market prices. This record documents the type under Miscellaneous; the notes belong in that case, not in the federal series. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages. The 25¢ still waits for its serial or certificate.',
+        es: 'Los ejemplares sin circular —sin pliegues ni pinchazos— son los más buscados por notafilistas e historiadores del circo. En Notofilia no publicamos precios de mercado. Esta ficha documenta el tipo bajo Misceláneos; pertenece a esa vitrina, no a las series federales. En Notofilia un serial —o un certificado PMG, NGC o PCGS— es la identidad de cada vale. El 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002, ya tienen ficha. El 25¢ de Otto Ringling (WI100-.25a) espera el suyo: no se inventa un serial.',
+        en: 'Uncirculated examples — no folds, no pinholes — are the ones notaphilists and circus historians hunt. Notofilia does not publish market prices. This record documents the type under Miscellaneous; the notes belong in that case, not in the federal series. At Notofilia a serial — or a PMG, NGC, or PCGS certificate — is each note’s identity. The 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002, already have pages. The 25¢ Otto Ringling note (WI100-.25a) still waits for its serial or certificate: a serial is not invented here.',
       },
     ],
   },
@@ -800,8 +800,8 @@ export const barabooScripSeriesSources: CatalogSource[] = [
     es: 'Wisconsin Depression Scrip — Baraboo',
     en: 'Wisconsin Depression Scrip — Baraboo',
     note: {
-      es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. El programa de ruta de 1933 sitúa el tren en Baraboo el 3 de agosto.',
-      en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. The 1933 route program places the train in Baraboo on 3 August.',
+      es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos (cinco hermanos por separado; el grupo en el dólar), Trimpey, redención al 1 de noviembre. El programa de ruta de 1933 sitúa el tren en Baraboo el 3 de agosto.',
+      en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits (five brothers singly; the group on the dollar), Trimpey, redemption through 1 November. The 1933 route program places the train in Baraboo on 3 August.',
     },
   },
   {
@@ -811,6 +811,24 @@ export const barabooScripSeriesSources: CatalogSource[] = [
     note: {
       es: 'El préstamo de 1929 y la pérdida de control operativo. The New York Times, 11 de diciembre de 1937, registra que la familia recupera el control pleno.',
       en: 'The 1929 loan and the loss of operational control. The New York Times, 11 December 1937, records that the family recovered full control.',
+    },
+  },
+  {
+    href: 'http://obsoletecurrency.blogspot.com/2012/03/baraboo-scrip.html',
+    es: 'Obsolete Currency — Baraboo Scrip (Handini, 2012)',
+    en: 'Obsolete Currency — Baraboo Scrip (Handini, 2012)',
+    note: {
+      es: 'Concordancia de retratos por facial: John (5¢), Chas. (10¢), Alf T. (15¢), Otto (25¢), Al (50¢). No se citan precios.',
+      en: 'Portrait-to-denomination concordance: John (5¢), Chas. (10¢), Alf T. (15¢), Otto (25¢), Al (50¢). Prices are not cited here.',
+    },
+  },
+  {
+    href: 'https://www.depressionscrip.com/wisconsin/wisconsin.html',
+    es: 'Depression Scrip.com — Wisconsin (números Mitchell y Shafer)',
+    en: 'Depression Scrip.com — Wisconsin (Mitchell & Shafer numbers)',
+    note: {
+      es: 'Lista el juego como MS WI100-.05, WI100-.10, WI100-.15, WI100-.25, WI100-.50 y WI100-1. Los subnúmeros con sufijo a (WI100-.25a, WI100-.50a) son la forma habitual en fichas PCGS y en lotes de conjuntos.',
+      en: 'Lists the set as MS WI100-.05, WI100-.10, WI100-.15, WI100-.25, WI100-.50, and WI100-1. The a-suffix form (WI100-.25a, WI100-.50a) is the usual listing on PCGS holders and set lots.',
     },
   },
 ];
@@ -5722,8 +5740,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Wisconsin Depression Scrip — Baraboo',
         en: 'Wisconsin Depression Scrip — Baraboo',
         note: {
-          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. Shafer WI100.',
-          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. Shafer WI100.',
+          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos (cinco hermanos por separado; el grupo en el dólar), Trimpey, redención al 1 de noviembre. Shafer WI100.',
+          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits (five brothers singly; the group on the dollar), Trimpey, redemption through 1 November. Shafer WI100.',
         },
       },
     ],
@@ -5806,8 +5824,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Wisconsin Depression Scrip — Baraboo',
         en: 'Wisconsin Depression Scrip — Baraboo',
         note: {
-          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. Shafer WI100.',
-          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. Shafer WI100.',
+          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos (cinco hermanos por separado; el grupo en el dólar), Trimpey, redención al 1 de noviembre. Shafer WI100.',
+          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits (five brothers singly; the group on the dollar), Trimpey, redemption through 1 November. Shafer WI100.',
         },
       },
     ],
@@ -5890,8 +5908,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Wisconsin Depression Scrip — Baraboo',
         en: 'Wisconsin Depression Scrip — Baraboo',
         note: {
-          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. Shafer WI100.',
-          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. Shafer WI100.',
+          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos (cinco hermanos por separado; el grupo en el dólar), Trimpey, redención al 1 de noviembre. Shafer WI100.',
+          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits (five brothers singly; the group on the dollar), Trimpey, redemption through 1 November. Shafer WI100.',
         },
       },
     ],
@@ -6068,8 +6086,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'Wisconsin Depression Scrip — Baraboo',
         en: 'Wisconsin Depression Scrip — Baraboo',
         note: {
-          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos, Trimpey, redención al 1 de noviembre. Shafer WI100.',
-          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits, Trimpey, redemption through 1 November. Shafer WI100.',
+          es: 'Baraboo News-Republic, 28 de junio de 1933: denominaciones, retratos (cinco hermanos por separado; el grupo en el dólar), Trimpey, redención al 1 de noviembre. Shafer WI100.',
+          en: 'Baraboo News-Republic, 28 June 1933: denominations, portraits (five brothers singly; the group on the dollar), Trimpey, redemption through 1 November. Shafer WI100.',
         },
       },
     ],

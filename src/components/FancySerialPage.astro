@@ -140,6 +140,15 @@ const ui = {
         <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
       </header>
 
+      <section class="mb-10 max-w-[46rem]" aria-labelledby="fancy-explainer">
+        <h2 id="fancy-explainer" class="mb-3 mt-0 font-display text-[1.35rem] font-normal text-cream">
+          {t.explainerTitle}
+        </h2>
+        {t.explainer.map((paragraph) => (
+          <p class="mb-4 mt-0 text-[17px]/7 text-cream last:mb-0">{paragraph}</p>
+        ))}
+      </section>
+
       <form class="mb-8 max-w-[46rem]" data-fancy-form>
         <label class="mb-2 block font-sans text-[15px] font-semibold text-cream" for="fancy-serial-input">
           {t.inputLabel}

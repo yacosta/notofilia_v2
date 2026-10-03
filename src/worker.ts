@@ -58,7 +58,7 @@ export default {
       return withSecurity(url, Response.redirect(new URL(legacy, url).href, 301));
     }
     if (url.pathname.replace(/\/$/, '') === IDENTIFY_API_PATH) {
-      return withSecurity(url, await handleIdentifyRequest(request, env));
+      return withSecurity(url, await handleIdentifyRequest(request));
     }
     if (url.pathname.startsWith('/api/')) {
       return withSecurity(url, await handleCommentsRequest(request, env));

@@ -21,6 +21,7 @@ import {
 } from '../data/estados-unidos';
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
+import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
 import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -41,7 +42,6 @@ import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
-import { IDENTIFY_PATH } from '../data/identify';
 import { TOOLS_PATH } from '../data/reference-tools';
 import { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
@@ -76,9 +76,24 @@ if (!usTrumpDollar) {
   throw new Error('Missing US Trump dollar coin for mega-nav');
 }
 
+const usQuarterEagle1878 = coinById('2-50-dolares-1878-liberty-head');
+if (!usQuarterEagle1878) {
+  throw new Error('Missing US 1878 Liberty Head quarter eagle for mega-nav');
+}
+
+const usQuarterEagle1908 = coinById('2-50-dolares-1908-cabeza-de-indio');
+if (!usQuarterEagle1908) {
+  throw new Error('Missing US 1908 Indian Head quarter eagle for mega-nav');
+}
+
 const usQuarterEagle1912 = coinById('2-50-dolares-1912-indian-head');
 if (!usQuarterEagle1912) {
   throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
+}
+
+const usGoldDollar1856 = coinById('1-dolar-oro-1856-cabeza-grande');
+if (!usGoldDollar1856) {
+  throw new Error('Missing US 1856 Indian Princess gold dollar for mega-nav');
 }
 
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
@@ -104,6 +119,21 @@ if (!usHt16) {
 const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
 if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
+}
+
+const spainTwoEscudos = spainCoinById('2-escudos-sevilla-felipe-ii-s-d');
+if (!spainTwoEscudos) {
+  throw new Error('Missing Spain Philip II Seville 2 escudos for mega-nav');
+}
+
+const puertoRico20Centavos = puertoRicoCoinById('20-centavos-1895-pgv');
+if (!puertoRico20Centavos) {
+  throw new Error('Missing Puerto Rico 1895 20 centavos for mega-nav');
+}
+
+const puertoRico10Centavos = puertoRicoCoinById('10-centavos-alfonso-xiii-pgv');
+if (!puertoRico10Centavos) {
+  throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
 }
 
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
@@ -377,6 +407,12 @@ export const megaNav: NavNode[] = [
         flag: 'es',
         children: [
           {
+            id: 'es-2-escudos-sevilla-felipe-ii-s-d',
+            es: spainTwoEscudos.title.es,
+            en: spainTwoEscudos.title.en,
+            href: spainTwoEscudos.path,
+          },
+          {
             id: 'es-medio-escudo-madrid-1757-jb',
             es: spainHalfEscudo.title.es,
             en: spainHalfEscudo.title.en,
@@ -424,10 +460,28 @@ export const megaNav: NavNode[] = [
             ],
           },
           {
+            id: 'us-2-50-dolares-1878-liberty-head',
+            es: usQuarterEagle1878.title.es,
+            en: usQuarterEagle1878.title.en,
+            href: usQuarterEagle1878.path,
+          },
+          {
+            id: 'us-2-50-dolares-1908-cabeza-de-indio',
+            es: usQuarterEagle1908.title.es,
+            en: usQuarterEagle1908.title.en,
+            href: usQuarterEagle1908.path,
+          },
+          {
             id: 'us-2-50-dolares-1912-indian-head',
             es: usQuarterEagle1912.title.es,
             en: usQuarterEagle1912.title.en,
             href: usQuarterEagle1912.path,
+          },
+          {
+            id: 'us-1-dolar-oro-1856-cabeza-grande',
+            es: usGoldDollar1856.title.es,
+            en: usGoldDollar1856.title.en,
+            href: usGoldDollar1856.path,
           },
           {
             id: 'us-1-dolar-trump-1776-2026',
@@ -444,6 +498,27 @@ export const megaNav: NavNode[] = [
         href: NETHERLANDS_COINAGE_PATH,
         flag: 'nl',
       },
+      {
+        id: 'pr-monedas',
+        es: 'Puerto Rico',
+        en: 'Puerto Rico',
+        href: PUERTO_RICO_COINAGE_PATH,
+        flag: 'pr',
+        children: [
+          {
+            id: 'pr-20-centavos-1895-pgv',
+            es: puertoRico20Centavos.title.es,
+            en: puertoRico20Centavos.title.en,
+            href: puertoRico20Centavos.path,
+          },
+          {
+            id: 'pr-10-centavos-alfonso-xiii-pgv',
+            es: puertoRico10Centavos.title.es,
+            en: puertoRico10Centavos.title.en,
+            href: puertoRico10Centavos.path,
+          },
+        ],
+      },
     ],
   },
   {
@@ -453,10 +528,8 @@ export const megaNav: NavNode[] = [
     layout: 'horizontal',
     children: [
       { id: 'herramientas', es: 'Herramientas', en: 'Tools', href: TOOLS_PATH, icon: 'tools' },
-      { id: 'identificar', es: 'Identificar', en: 'Identify', href: IDENTIFY_PATH, icon: 'identify' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
-      { id: 'noticias', es: 'Noticias', en: 'News', href: '/noticias/', icon: 'news' },
       {
         id: 'comparacion',
         es: 'Notofilia vs. otros catálogos',

@@ -2,6 +2,7 @@ import { COLOMBIA_COINAGE_PATH } from './colombia-coinage';
 import { SPAIN_COINAGE_PATH } from './espana-coinage';
 import { LAZARETTOS_PATH } from './lazarettos';
 import { NETHERLANDS_COINAGE_PATH } from './netherlands-coinage';
+import { PUERTO_RICO_COINAGE_PATH } from './puerto-rico-coinage';
 import { USA_COINAGE_PATH } from './estados-unidos-coinage';
 import type { LocalizedText } from './catalog';
 import numismaticaGuideJson from './numismatica-guide.json';
@@ -67,8 +68,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: '1535–1864', en: '1535–1864' },
     title: { es: 'España', en: 'Spain' },
     lead: {
-      es: 'El medio escudo de oro de Fernando VI, Madrid 1757, ensaye JB.',
-      en: 'Ferdinand VI’s gold half escudo, Madrid 1757, assayers JB.',
+      es: 'El 2 escudos de Sevilla de Felipe II, sin fecha, y el medio escudo de Fernando VI, Madrid 1757, ensaye JB.',
+      en: 'Philip II’s undated Seville 2 escudos, and Ferdinand VI’s half escudo, Madrid 1757, assayers JB.',
     },
   },
   {
@@ -76,8 +77,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Fichas Hard Times, el quarter eagle Indian Head de 1912 y el 1 $ de Trump de 1776–2026.',
-      en: 'Hard Times tokens, the 1912 Indian Head quarter eagle, and the 1776–2026 Trump $1.',
+      es: 'Fichas Hard Times, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+      en: 'Hard Times tokens, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
     },
   },
   {
@@ -98,6 +99,15 @@ export const numismaticaCountries: NumismaticaCountry[] = [
       en: 'From the 1434 gulden to the Utrecht ducat, the decimal gulden, and the euro.',
     },
   },
+  {
+    href: PUERTO_RICO_COINAGE_PATH,
+    years: { es: '1895–1896', en: '1895–1896' },
+    title: { es: 'Puerto Rico', en: 'Puerto Rico' },
+    lead: {
+      es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, y un 10 centavos P·G·V con fecha por verificar.',
+      en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
+    },
+  },
 ];
 
 export const numismaticaCopy = {
@@ -115,7 +125,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos y Países Bajos.',
+      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos y Puerto Rico.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
@@ -133,7 +143,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, and the Netherlands open the row.',
+      'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, the Netherlands, and Puerto Rico open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },

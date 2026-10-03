@@ -255,8 +255,20 @@ describe('sitemap coverage for United States numismatics', () => {
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
@@ -268,6 +280,24 @@ describe('sitemap coverage for Spain numismatics', () => {
     assert.equal(
       localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/', 'en'),
+      '/en/collection/spain-numismatics/2-escudos-seville-philip-ii-s-d/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+  });
+});
+
+describe('sitemap coverage for Puerto Rico numismatics', () => {
+  it('maps the coinage series and 20 centavos pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/', 'en'),
+      '/en/collection/puerto-rico-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/20-centavos-1895-pgv/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
@@ -295,6 +325,21 @@ describe('sitemap coverage for the two-tier glossary', () => {
     for (const term of foldedGlossaryTerms()) {
       assert.ok(!glossaryTermSlugs.includes(`glosario/${term.slug}`), term.slug);
     }
+  });
+});
+
+describe('sitemap coverage for demand pages and search', () => {
+  it('maps editorial, counterfeit how-to, valuation, and Colombia era hubs', () => {
+    assert.equal(localizePath('/editorial/', 'en'), '/en/editorial/');
+    assert.equal(localizePath('/identificar/billetes-falsos/', 'en'), '/en/identify/counterfeit-notes/');
+    assert.equal(
+      localizePath('/blog/como-se-valora-un-billete-colombiano/', 'en'),
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(localizePath('/coleccion/colombia/independencia/', 'en'), '/en/collection/colombia/independence/');
+    assert.match(sitemapSource, /if \(page\.path === 'buscar'\) continue/);
+    assert.match(sitemapSource, /path !== '\/buscar\/' && path !== '\/en\/search\/'/);
   });
 });
 

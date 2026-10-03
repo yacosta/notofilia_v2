@@ -2,6 +2,7 @@ import { collectionNoteSeeds } from '../data/collection-note-catalog.ts';
 import { colombiaCoinagePieces, coinagePiecePath } from '../data/colombia-coinage-pieces.ts';
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
+import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
 import { unitedStatesCoins, coinPath as unitedStatesCoinPath } from '../data/estados-unidos-coinage.ts';
 import { additions } from '../data/holdings.ts';
 import {
@@ -72,6 +73,21 @@ function catalogPieces(): CatalogPiece[] {
       serial: '',
       cert: '',
       image: coin.images.composite || coin.images.front,
+      imageAlt: coin.frontCaption,
+    });
+  }
+
+  for (const coin of puertoRicoCoins) {
+    pieces.push({
+      id: `pr-${coin.id}`,
+      country: 'PR',
+      href: puertoRicoCoinPath(coin, 'es'),
+      title: coin.title,
+      dek: coin.lead,
+      pick: coin.references,
+      serial: '',
+      cert: '',
+      image: coin.images?.composite ?? '',
       imageAlt: coin.frontCaption,
     });
   }

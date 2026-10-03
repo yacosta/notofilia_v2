@@ -43,6 +43,13 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
     assert.equal(localizePath('/glosario/?term=libra', 'en'), '/en/glossary/?term=libra');
     assert.equal(localizePath('/noticias/', 'en'), '/en/news/');
+    assert.equal(localizePath('/editorial/', 'en'), '/en/editorial/');
+    assert.equal(localizePath('/identificar/billetes-falsos/', 'en'), '/en/identify/counterfeit-notes/');
+    assert.equal(localizePath('/coleccion/colombia/banca-libre/', 'en'), '/en/collection/colombia/free-banking/');
+    assert.equal(
+      localizePath('/blog/como-se-valora-un-billete-colombiano/', 'en'),
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
     assert.equal(localizePath('/contacto/', 'en'), '/en/contact/');
     assert.equal(localizePath('/contacto/?motivo=error', 'en'), '/en/contact/?motivo=error');
     assert.equal(otherLocalePath('/en/contact/?motivo=error', 'en'), '/contacto/?motivo=error');
@@ -120,8 +127,20 @@ describe('locale path mapping', () => {
     );
     assert.equal(localizePath('/coleccion/espana-numismatica/', 'en'), '/en/collection/spain-numismatics/');
     assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/', 'en'),
+      '/en/collection/puerto-rico-numismatics/',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/20-centavos-1895-pgv/',
+    );
+    assert.equal(
       localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
+    );
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/', 'en'),
+      '/en/collection/spain-numismatics/2-escudos-seville-philip-ii-s-d/',
     );
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/fichas-hard-times/', 'en'),
@@ -148,8 +167,20 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/', 'en'),
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/', 'en'),
       '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
     );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(
@@ -588,6 +619,14 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1806-p-jf/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/',
     );
@@ -598,6 +637,10 @@ describe('locale path mapping', () => {
     assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-reales-bogota-1821-ba-jf/',
+    );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-peso-bogota-1826-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-peso-bogota-1826-jf/',
     );
     assert.equal(
       localizePath('/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', 'en'),
@@ -628,9 +671,22 @@ describe('locale path mapping', () => {
     );
     assert.equal(englishContentSlug('coleccion/espana'), 'collection/spain');
     assert.equal(englishContentSlug('coleccion/espana-numismatica'), 'collection/spain-numismatics');
+    assert.equal(englishContentSlug('coleccion/puerto-rico-numismatica'), 'collection/puerto-rico-numismatics');
+    assert.equal(
+      englishContentSlug('coleccion/puerto-rico-numismatica/20-centavos-1895-pgv'),
+      'collection/puerto-rico-numismatics/20-centavos-1895-pgv',
+    );
+    assert.equal(
+      englishContentSlug('coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv'),
+      'collection/puerto-rico-numismatics/10-centavos-alfonso-xiii-pgv',
+    );
     assert.equal(
       englishContentSlug('coleccion/espana-numismatica/medio-escudo-madrid-1757-jb'),
       'collection/spain-numismatics/half-escudo-madrid-1757-jb',
+    );
+    assert.equal(
+      englishContentSlug('coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d'),
+      'collection/spain-numismatics/2-escudos-seville-philip-ii-s-d',
     );
     assert.equal(
       englishContentSlug('coleccion/polimero-mundial/asia/malasia'),
@@ -717,6 +773,11 @@ describe('locale path mapping', () => {
     );
     assert.equal(redirects['/en/coleccion/colombia/catalogo/'], '/en/collection/colombia/catalog/');
     assert.equal(redirects['/en/coleccion/colombia/banca-libre/'], '/en/collection/colombia/free-banking/');
+    assert.equal(redirects['/en/identificar/billetes-falsos/'], '/en/identify/counterfeit-notes/');
+    assert.equal(
+      redirects['/en/blog/como-se-valora-un-billete-colombiano/'],
+      '/en/blog/how-colombian-banknotes-are-valued/',
+    );
     assert.equal(
       redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
       '/en/collection/colombia/5000-pesos-error-2010/',
@@ -732,6 +793,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/'],
       '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/'],
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1806-p-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/'],
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/'],
@@ -807,8 +876,20 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/1-dollar-trump-1776-2026/',
     );
     assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/'],
+      '/en/collection/united-states-numismatics/2-50-dollars-1878-liberty-head/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/'],
+      '/en/collection/united-states-numismatics/2-50-dollars-1908-indian-head/',
+    );
+    assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/'],
       '/en/collection/united-states-numismatics/2-50-dollars-1912-indian-head/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/'],
+      '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],

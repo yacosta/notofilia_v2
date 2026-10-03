@@ -153,7 +153,7 @@ export function articleSlugParam(kind: 'blog' | 'news', slug: string, locale: Lo
 }
 
 export function findBlogArticle(slug: string): EditorialArticle | undefined {
-  return blogArticles.find((item) => item.slug === slug);
+  return blogArticles.find((item) => item.slug === slug || item.slugEn === slug);
 }
 
 export function findNewsArticle(slug: string): EditorialArticle | undefined {
@@ -170,7 +170,7 @@ const newWindowHint = {
 
 function localizeInternalHref(href: string, locale: Locale): string {
   if (href.startsWith('http')) return href;
-  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto|contact|buscar|politica-privacidad-cookies|notofilia-vs-catalogos-billetes-colombianos|notofilia-vs-colombian-banknote-catalogs)\//.test(href) || href === '/') {
+  if (/^\/(blog|noticias|editorial|glosario|coleccion|nosotros|acerca-de|about|contacto|contact|buscar|identificar|herramientas|politica-privacidad-cookies|notofilia-vs-catalogos-billetes-colombianos|notofilia-vs-colombian-banknote-catalogs)\//.test(href) || href === '/') {
     return localizePath(href, locale);
   }
   return href;
@@ -196,6 +196,40 @@ export function enhanceProseHtml(html: string, locale: Locale): string {
 
 export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArticle[] {
   return (kind === 'blog' ? blogArticles : newsArticles).slice(0, limit);
+}
+
+export const NEWS_PAGE_SIZE = 88;
+
+export function newsPageCount(size = NEWS_PAGE_SIZE): number {
+  return Math.max(1, Math.ceil(newsArticles.length / size));
+}
+
+export function paginateNews(page = 1, size = NEWS_PAGE_SIZE): EditorialArticle[] {
+  const safe = Math.max(1, page);
+  const start = (safe - 1) * size;
+  return newsArticles.slice(start, start + size);
+}
+
+export function newsIndexPath(locale: Locale, page = 1): string {
+  if (page <= 1) return newsPath(locale);
+  return locale === 'en' ? `/en/news/page/${page}/` : `/noticias/pagina/${page}/`;
+}
+
+export function newsHasCatalogLink(article: EditorialArticle): boolean {
+  const blob = `${article.bodyHtml.es} ${article.bodyHtml.en} ${article.related.map((item) => item.href).join(' ')}`;
+  return /\/(coleccion|glosario|collection|glossary)\//.test(blob);
+}
+
+export function relatedForArticle(article: EditorialArticle, kind: 'blog' | 'news'): RelatedLink[] {
+  if (kind !== 'news' || newsHasCatalogLink(article)) return article.related;
+  return [
+    ...article.related,
+    {
+      href: '/glosario/notafilia/',
+      title: 'Notafilia',
+      dek: '',
+    },
+  ];
 }
 
 const catalogRelatedTitles: Record<string, LocalizedText> = {
@@ -263,9 +297,17 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
   },
+  '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
+    es: '2,50 dólares · Liberty Head · 1878',
+    en: '2.50 dollars · Liberty Head · 1878',
+  },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
     es: '2,50 dólares · United States Mint · 1912',
     en: '2.50 dollars · United States Mint · 1912',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
+    es: '1 dólar de oro · United States Mint · 1856',
+    en: 'Gold dollar · United States Mint · 1856',
   },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: '50.000 pesos · error de numeración · 2008',
@@ -282,6 +324,30 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
   '/glosario/columnario-de-dos-mundos/': {
     es: 'Columnario de dos mundos',
     en: 'Pillar dollar (two worlds)',
+  },
+  '/glosario/notafilia/': {
+    es: 'Notafilia',
+    en: 'Notaphily',
+  },
+  '/glosario/pick/': {
+    es: 'Pick',
+    en: 'Pick',
+  },
+  '/glosario/pmg-pcgs/': {
+    es: 'PMG y PCGS',
+    en: 'PMG and PCGS',
+  },
+  '/editorial/': {
+    es: 'Política editorial y valoración',
+    en: 'Editorial policy and valuation',
+  },
+  '/coleccion/colombia/2000-pesos-2008/': {
+    es: '2.000 pesos · serial 10000001 · 2008',
+    en: '2,000 pesos · serial 10000001 · 2008',
+  },
+  '/coleccion/colombia/2000-pesos-oro-1983/': {
+    es: '2.000 pesos oro · 1983',
+    en: '2,000 pesos oro · 1983',
   },
 };
 
@@ -322,9 +388,17 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',
   },
+  '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
+    es: 'El quarter eagle Liberty Head de 1878, Filadelfia, sin marca de ceca.',
+    en: 'The 1878 Liberty Head quarter eagle, Philadelphia, with no mint mark.',
+  },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
     es: 'El quarter eagle Indian Head de 1912, Filadelfia, sin marca de ceca.',
     en: 'The 1912 Indian Head quarter eagle, Philadelphia, with no mint mark.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
+    es: 'El dólar de oro de 1856, tipo 3 de Longacre, Filadelfia, sin marca de ceca.',
+    en: 'The 1856 gold dollar, Longacre Type 3, Philadelphia, with no mint mark.',
   },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: 'El mismo tipo Isaacs en la colección, con otro serial y un error.',
@@ -341,6 +415,14 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/glosario/columnario-de-dos-mundos/': {
     es: 'El tipo de 8 reales con las columnas de Hércules y los dos globos.',
     en: 'The 8-real type with the Pillars of Hercules and the two globes.',
+  },
+  '/glosario/notafilia/': {
+    es: 'El estudio y la colección de papel moneda.',
+    en: 'The study and collecting of paper money.',
+  },
+  '/glosario/pick/': {
+    es: 'El número de catálogo Standard Catalog of World Paper Money.',
+    en: 'The Standard Catalog of World Paper Money catalogue number.',
   },
 };
 

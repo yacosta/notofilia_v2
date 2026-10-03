@@ -9,6 +9,7 @@ const piecePages = [
   '../components/catalog/ColombiaNotePage.astro',
   '../components/catalog/MpcNotePage.astro',
   '../components/catalog/NetherlandsCoinPage.astro',
+  '../components/catalog/PuertoRicoCoinPage.astro',
   '../components/catalog/PuertoRicoNotePage.astro',
   '../components/catalog/SpainCoinPage.astro',
   '../components/catalog/UnitedStatesCoinPage.astro',
@@ -107,6 +108,9 @@ describe('page-specific catalog sources', () => {
 
     const spainHrefs = hrefsIn(exportArrayBlock(read('./espana-coinage.ts'), 'seriesSources'));
     assert.equal(spainHrefs.includes('https://en.numista.com/26320'), false);
+
+    const puertoRicoCoinHrefs = hrefsIn(exportArrayBlock(read('./puerto-rico-coinage.ts'), 'seriesSources'));
+    assert.equal(puertoRicoCoinHrefs.includes('https://en.numista.com/17451'), false);
 
     const guatemalaHrefs = hrefsIn(exportArrayBlock(read('./guatemala.ts'), 'seriesSources'));
     assert.equal(guatemalaHrefs.includes('https://en.numista.com'), false);

@@ -268,10 +268,36 @@ describe('Spain numismatics menu', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     const spainBlock = numismatica.split("id: 'es-monedas'")[1]?.split("id: 'us-monedas'")[0] ?? '';
     assert.match(source, /spainCoinById\('medio-escudo-madrid-1757-jb'\)/);
+    assert.match(source, /spainCoinById\('2-escudos-sevilla-felipe-ii-s-d'\)/);
     assert.match(spainBlock, /href: SPAIN_COINAGE_PATH/);
     assert.match(spainBlock, /flag: 'es'/);
+    assert.match(spainBlock, /id: 'es-2-escudos-sevilla-felipe-ii-s-d'/);
+    assert.match(spainBlock, /href: spainTwoEscudos\.path/);
     assert.match(spainBlock, /id: 'es-medio-escudo-madrid-1757-jb'/);
     assert.match(spainBlock, /href: spainHalfEscudo\.path/);
+  });
+});
+
+describe('Puerto Rico numismatics menu', () => {
+  it('nests the 1895 20 centavos under Puerto Rico after Países Bajos', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    const prBlock = numismatica.split("id: 'pr-monedas'")[1] ?? '';
+    assert.match(numismatica, /id: 'nl-monedas'[\s\S]*id: 'pr-monedas'/);
+    assert.match(source, /puertoRicoCoinById\('20-centavos-1895-pgv'\)/);
+    assert.match(prBlock, /href: PUERTO_RICO_COINAGE_PATH/);
+    assert.match(prBlock, /flag: 'pr'/);
+    assert.match(prBlock, /id: 'pr-20-centavos-1895-pgv'/);
+    assert.match(prBlock, /href: puertoRico20Centavos\.path/);
+  });
+
+  it('lists the 10 centavos after the 20 centavos under Puerto Rico', () => {
+    const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
+    const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
+    const prBlock = numismatica.split("id: 'pr-monedas'")[1] ?? '';
+    assert.match(source, /puertoRicoCoinById\('10-centavos-alfonso-xiii-pgv'\)/);
+    assert.match(prBlock, /id: 'pr-20-centavos-1895-pgv'[\s\S]*id: 'pr-10-centavos-alfonso-xiii-pgv'/);
+    assert.match(prBlock, /href: puertoRico10Centavos\.path/);
   });
 });
 
@@ -294,15 +320,21 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('ht-34-1837-burro-tortuga'\)/);
     assert.match(source, /coinById\('ht-16-1841-daniel-webster'\)/);
     assert.match(source, /coinById\('1-dolar-trump-1776-2026'\)/);
+    assert.match(source, /coinById\('2-50-dolares-1878-liberty-head'\)/);
+    assert.match(source, /coinById\('2-50-dolares-1908-cabeza-de-indio'\)/);
     assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
+    assert.match(source, /coinById\('1-dolar-oro-1856-cabeza-grande'\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
     assert.match(usBlock, /id: 'us-ht-181-c1835-john-j-adams'/);
     assert.match(usBlock, /id: 'us-ht-10a-1834-jabali'/);
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
+    assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
+    assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
+    assert.match(usBlock, /id: 'us-1-dolar-oro-1856-cabeza-grande'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
@@ -316,12 +348,21 @@ describe('United States submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const usa = source.split("id: 'estados-unidos'")[1]?.split("id: 'puerto-rico'")[0] ?? '';
     const colonial = usa.split("id: 'moneda-colonial'")[1]?.split("id: 'billetes-obsoletos'")[0] ?? '';
+    const betsyRoss = readFileSync(new URL('../../public/flags/us-13.svg', import.meta.url), 'utf8');
+    const countryFlag = readFileSync(new URL('../components/CountryFlag.astro', import.meta.url), 'utf8');
+    const styles = readFileSync(new URL('../styles/global.css', import.meta.url), 'utf8');
     assert.match(source, /notesForChapter\('us-colonial'\)/);
     assert.match(usa, /id: 'moneda-colonial'/);
     assert.match(usa, /href: USA_COLONIAL_PATH/);
     assert.match(usa, /colonialSeriesCopy\.es\.kicker/);
     assert.match(colonial, /flag: 'us-13'/);
     assert.doesNotMatch(colonial, /icon: 'guides'/);
+    assert.match(betsyRoss, /width="1235" height="650" viewBox="0 0 1235 650"/);
+    assert.match(betsyRoss, /fill="#bf0a30"/);
+    assert.match(betsyRoss, /fill="#00205B"/);
+    assert.match(betsyRoss, /rotate\(27\.692308\)/);
+    assert.match(countryFlag, /flagCode === 'us-13'[\s\S]*'mega-flag--wide'/);
+    assert.match(styles, /\.mega-flag--wide\s*\{[\s\S]*height: 0\.658rem/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*children: colonialNotes\.map/);
     assert.match(usa, /id: 'moneda-colonial'[\s\S]*id: 'filipinas'/);
   });
@@ -417,10 +458,10 @@ describe('Recursos submenu', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
     assert.match(recursos, /id: 'herramientas',[\s\S]*?icon: 'tools'/);
-    assert.match(recursos, /id: 'identificar',[\s\S]*?icon: 'identify'/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
-    assert.match(recursos, /id: 'noticias',[\s\S]*?icon: 'news'/);
+    assert.doesNotMatch(recursos, /id: 'noticias'/);
+    assert.doesNotMatch(recursos, /id: 'identificar'/);
   });
 });
 
