@@ -1,9 +1,45 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
+import { orderSantaFeHoldings } from './colombia-coinage-order.ts';
 
 const coinCatalogSource = readFileSync(new URL('./colombia-coin-type-catalog.ts', import.meta.url), 'utf8');
 const coinagePieceSource = readFileSync(new URL('./colombia-coinage-pieces.ts', import.meta.url), 'utf8');
+
+describe('Santa Fe holdings on the Colombia-Numismatics case', () => {
+  const santaFeOrder = [
+    '1-escudo-popayan-1801-p-jf',
+    '1-escudo-popayan-1806-p-jf',
+    '1-escudo-popayan-1808-p-jf',
+    '8-escudos-popayan-1801-p-jf',
+    '1-real-bogota-1810-nr-jf',
+  ];
+
+  it('keeps 1 escudos together by date, then 8 escudos, then 1 real', () => {
+    const shuffled = [
+      { id: '1-real-bogota-1810-nr-jf', chapterId: 'santa-fe', year: '1810', denomination: { es: '1 real' } },
+      { id: '8-escudos-popayan-1801-p-jf', chapterId: 'santa-fe', year: '1801', denomination: { es: '8 escudos' } },
+      { id: '1-escudo-popayan-1808-p-jf', chapterId: 'santa-fe', year: '1808', denomination: { es: '1 escudo' } },
+      { id: 'later', chapterId: 'independencia', year: '1821', denomination: { es: '8 reales' } },
+      { id: '1-escudo-popayan-1806-p-jf', chapterId: 'santa-fe', year: '1806', denomination: { es: '1 escudo' } },
+      { id: '1-escudo-popayan-1801-p-jf', chapterId: 'santa-fe', year: '1801', denomination: { es: '1 escudo' } },
+    ];
+    assert.deepEqual(
+      orderSantaFeHoldings(shuffled).map((piece) => piece.id),
+      [...santaFeOrder, 'later'],
+    );
+  });
+
+  it('lists the published Santa Fe pieces in that order', () => {
+    const bodyStart = coinagePieceSource.indexOf('orderSantaFeHoldings([');
+    const bodyEnd = coinagePieceSource.indexOf(']);', bodyStart);
+    const body = coinagePieceSource.slice(bodyStart, bodyEnd);
+    const santaFe = [...body.matchAll(/id: '([^']+)'[\s\S]*?chapterId: '([^']+)'/g)]
+      .filter((match) => match[2] === 'santa-fe')
+      .map((match) => match[1]);
+    assert.deepEqual(santaFe, santaFeOrder);
+  });
+});
 
 describe('Colombia coin type catalog enrichment', () => {
   it('keeps one holding and adds documented types without inventing serials', () => {
