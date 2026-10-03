@@ -9,6 +9,7 @@ import { COSCOJAS_SANTANDER_PATH } from './coscojas-santander';
 import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
+  | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1801-p-jf'
   | '1-escudo-popayan-1806-p-jf'
   | '1-escudo-popayan-1808-p-jf'
@@ -140,6 +141,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       },
     ],
     related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}2-escudos-popayan-1791-p-sf/`,
+        label: {
+          es: '2 escudos de Popayán, 1791 P–SF',
+          en: 'Popayán 2 escudos, 1791 P–SF',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1806-p-jf/`,
         label: {
@@ -404,6 +412,110 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
     ],
   },
   {
+    id: '2-escudos-popayan-1791-p-sf',
+    path: `${COLOMBIA_COINAGE_PATH}2-escudos-popayan-1791-p-sf/`,
+    chapterId: 'santa-fe',
+    year: '1791',
+    denomination: { es: '2 escudos', en: '2 escudos' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Popayán (P)',
+      en: 'Popayán (P)',
+    },
+    reference: 'KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841',
+    title: {
+      es: '2 escudos · Popayán P–SF · 1791',
+      en: '2 escudos · Popayán P–SF · 1791',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Popayán colonial',
+      en: 'Colombia-Numismatics · colonial Popayán',
+    },
+    lead: {
+      es: 'Dos escudos de oro de 1791, labrados en Popayán a nombre de Carlos IV con el retrato de Carlos III. El anverso lleva el ordinal IV y la fecha; el reverso, el valor 2 S y las marcas P · SF.',
+      en: 'A 1791 gold 2 escudos struck at Popayán in the name of Charles IV, with the bust of Charles III. The obverse carries the ordinal IV and the date; the reverse, the value 2 S and the marks P · SF.',
+    },
+    description: {
+      es: 'En 1791 la casa de Popayán, en labores desde 1758, labraba oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1791 bajo el retrato y, en la leyenda, CAROL · IV · D · G · HISP · ET IND · R (IV, no IIII). En el reverso se leen el valor 2 S y, a ambos lados del vellocino, las marcas P y SF. Esa combinación es el tipo de transición KM# 51.2 —Restrepo 88.6, Cayón 14168, Friedberg 48; Numista asigna Hernández 734 al 1791 P–SF—, no el KM# 60.2 del busto propio de Carlos IV (Restrepo 90.2, Cayón 14169, Friedberg 57), que en el escudo de 1801 de esta colección lleva IIII. CoinVarieties separa, para Popayán y el mismo ensaye, el busto de Carlos III del busto de Carlos IV, y deja la tirada sin cifra. La leyenda del anverso abre Carolus IV Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · AUSPICE · DEO, abrevia In utroque felix, auspice Deo. El 2 a la izquierda y la S a la derecha marcan dos escudos. El oro .875 y 6,77 g de tipo son cifras de CoinVarieties; Numista da al tipo KM# 51 6,75 g y un módulo de 22 mm. Este ejemplar no se pesó ni se midió. No hay tirada verificada; las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. No es un 2 escudos de Madrid ni el 1 escudo de Popayán de 1801.',
+      en: 'In 1791 the Popayán mint, at work since 1758, was striking milled gold in the name of Charles IV. This disc shows the date 1791 under the portrait and, in the legend, CAROL · IV · D · G · HISP · ET IND · R (IV, not IIII). The reverse reads the value 2 S and, on either side of the fleece, the marks P and SF. That combination is the transitional type KM# 51.2 — Restrepo 88.6, Cayón 14168, Friedberg 48; Numista assigns Hernández 734 to the 1791 P–SF — not KM# 60.2, the type with Charles IV’s own bust (Restrepo 90.2, Cayón 14169, Friedberg 57), which on this collection’s 1801 escudo carries IIII. CoinVarieties separates, for Popayán and the same assayer, the bust of Charles III from the bust of Charles IV, and leaves the mintage unstated. The obverse legend expands to Carolus IV Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” The reverse, IN · UTROQ · FELIX · AUSPICE · DEO, stands for In utroque felix, auspice Deo. The 2 at left and the S at right mark two escudos. Gold .875 and a type weight of 6.77 g are CoinVarieties figures; Numista gives type KM# 51 a weight of 6.75 g and a module of 22 mm. This disc was not weighed or measured. No mintage is verified; BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. It is not a Madrid 2 escudos, nor Popayán’s 1801 1 escudo.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto a la derecha, leyenda con IV y fecha 1791.',
+      en: 'Obverse: bust facing right, legend with IV, and the date 1791.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 2 S; marcas P y SF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 2 S; marks P and SF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo de busto de Carlos III (N#52841) y lista el 1791 P–SF como KM# 51.2, sin una tirada. CoinVarieties deja esa fecha y ensaye sin cifra y distingue el KM# 60.2, de busto propio de Carlos IV. No se publica aquí un censo de encapsulados ni un martillo. El 1 escudo y los 8 escudos de Popayán de 1801 P–JF son otras fichas de esta colección.',
+      en: 'Numista covers the Charles III bust type (N#52841) and lists 1791 P–SF as KM# 51.2, without a mintage. CoinVarieties leaves that date and assayer without a figure and distinguishes KM# 60.2, the type with Charles IV’s own bust. No slab census and no hammer are published here. Popayán’s 1801 P–JF 1 escudo and 8 escudos are separate records in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato desgastado y marcas de contacto; fecha 1791, ordinal IV, 2 S y P–SF legibles. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Worn portrait and contact marks; date 1791, ordinal IV, 2 S, and P–SF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/52841',
+        es: 'Numista — 2 escudos, Carlos IV, retrato de Carlos III, Colombia (N#52841)',
+        en: 'Numista — 2 escudos, Charles IV, portrait of Charles III, Colombia (N#52841)',
+        note: {
+          es: 'KM# 51.2 y Hernández 734 para el 1791 P–SF. Oro de tipo .875, 6,75 g y 22 mm. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 51.2 and Hernández 734 for 1791 P–SF. Type gold .875, 6.75 g, and 22 mm. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1791-P_SF_2_escudos_Fr-48',
+        es: 'CoinVarieties — 2 escudos de Popayán, 1791 P–SF, busto de Carlos III',
+        en: 'CoinVarieties — Popayán 2 escudos, 1791 P–SF, bust of Charles III',
+        note: {
+          es: 'Cayón 14168, KM# 51.2, Friedberg 48 y Restrepo 88.6. Oro de tipo .875 y 6,77 g. Deja la tirada sin cifra. El lote que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Cayón 14168, KM# 51.2, Friedberg 48, and Restrepo 88.6. Type gold .875 and 6.77 g. Leaves the mintage unstated. The lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1791-P_SF_2_escudos_Fr-57',
+        es: 'CoinVarieties — 2 escudos de Popayán, 1791 P–SF, busto de Carlos IV',
+        en: 'CoinVarieties — Popayán 2 escudos, 1791 P–SF, bust of Charles IV',
+        note: {
+          es: 'Ese es el KM# 60.2 —Cayón 14169, Friedberg 57, Restrepo 90.2—, el otro busto de la misma fecha y ensaye. No es esta ficha y no se publican precios.',
+          en: 'That is KM# 60.2 — Cayón 14169, Friedberg 57, Restrepo 90.2 — the other bust of the same date and assayer. Not this record, and prices are not published.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Casa_de_acu%C3%B1aci%C3%B3n_de_moneda_de_Popay%C3%A1n',
+        es: 'Enciclopedia Banrepcultural — Casa de acuñación de Popayán',
+        en: 'Banrepcultural Encyclopedia — The Popayán mint',
+        note: {
+          es: 'La casa comenzó a labrar en 1758. Contexto de ceca, no autenticación de este disco.',
+          en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1801 P–JF',
+          en: 'Popayán 1 escudo, 1801 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
+        label: {
+          es: '8 escudos de Popayán, 1801 P–JF',
+          en: 'Popayán 8 escudos, 1801 P–JF',
+        },
+      },
+    ],
+  },
+  {
     id: '8-escudos-popayan-1801-p-jf',
     path: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
     chapterId: 'santa-fe',
@@ -500,6 +612,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       },
     ],
     related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}2-escudos-popayan-1791-p-sf/`,
+        label: {
+          es: '2 escudos de Popayán, 1791 P–SF',
+          en: 'Popayán 2 escudos, 1791 P–SF',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
         label: {
