@@ -204,6 +204,7 @@ export const additions: Holding[] = [
   { id: 'pr-1895-20-centavos-pgv', kind: 'coin', country: 'PR' },
   { id: 'pr-10-centavos-alfonso-xiii-pgv', kind: 'coin', country: 'PR' },
   { id: 'co-1806-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
+  { id: 'co-1808-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'es-nd-2-escudos-sevilla-felipe-ii-sd', kind: 'coin', country: 'ES' },
 ];
 
@@ -335,6 +336,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-1895-20-centavos-km22' },
   { id: 'pr-10-centavos-cf-km21' },
   { id: 'co-1806-1-escudo-popayan-km56-2' },
+  { id: 'co-1808-1-escudo-popayan-km56-2' },
   { id: 'es-nd-2-escudos-sevilla-cal828' },
 ];
 

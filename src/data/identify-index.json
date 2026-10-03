@@ -121,6 +121,45 @@
       }
     },
     {
+      "pieceId": "1-escudo-popayan-1808-p-jf",
+      "face": "front",
+      "hash": "00351355d6736300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.40 · Cayón 14140 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1808",
+        "en": "1 escudo · Popayán P–JF · 1808"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1808-p-jf",
+      "face": "front",
+      "hash": "002663275a5f0a00",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.40 · Cayón 14140 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1808",
+        "en": "1 escudo · Popayán P–JF · 1808"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1808-p-jf",
+      "face": "back",
+      "hash": "001653a9175d1600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.40 · Cayón 14140 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1808",
+        "en": "1 escudo · Popayán P–JF · 1808"
+      }
+    },
+    {
       "pieceId": "8-escudos-popayan-1801-p-jf",
       "face": "front",
       "hash": "aa73b05352d55394",

@@ -619,6 +619,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/1-escudo-popayan-1806-p-jf/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/',
     );
@@ -781,6 +785,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/'],
       '/en/collection/colombia-numismatics/1-escudo-popayan-1806-p-jf/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/'],
+      '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/'],
