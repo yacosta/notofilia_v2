@@ -7,6 +7,7 @@ import type { TypeCatalogDocument, TypeCatalogEra, TypeCatalogFilter, TypeCatalo
 export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
+  | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1801-p-jf'
   | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
@@ -56,6 +57,21 @@ export type ColombiaCoinType = {
 
 /** Seed types from BanRep / González White essays. Tag `image` here as coins are photographed. */
 export const colombiaCoinTypes: ColombiaCoinType[] = [
+  {
+    id: '2-escudos-popayan-1791-p-sf',
+    era: 'santa-fe',
+    year: '1791',
+    denomination: { es: '2 escudos', en: '2 escudos' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734',
+    title: { es: '2 escudos · Popayán P–SF · 1791', en: '2 escudos · Popayán P–SF · 1791' },
+    dek: {
+      es: 'Dos escudos de oro de Carlos IV, busto de Carlos III, ceca P y ensaye SF. En la colección.',
+      en: 'Charles IV gold 2 escudos, bust of Charles III, mint P and assayer SF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '2-escudos-popayan-1791-p-sf',
+  },
   {
     id: '1-escudo-popayan-1801-p-jf',
     era: 'santa-fe',

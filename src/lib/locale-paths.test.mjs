@@ -580,6 +580,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/santander-coscojas/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/', 'en'),
+      '/en/collection/colombia-numismatics/2-escudos-popayan-1791-p-sf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/1-escudo-popayan-1801-p-jf/',
     );
@@ -720,6 +724,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/'],
+      '/en/collection/colombia-numismatics/2-escudos-popayan-1791-p-sf/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/'],

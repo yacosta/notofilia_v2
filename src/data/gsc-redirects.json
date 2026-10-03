@@ -1157,14 +1157,14 @@
       "rule": "hub-fallback"
     },
     "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791/": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/coleccion/moneda-colonial/": {
       "target": "/coleccion/estados-unidos/",
@@ -13407,14 +13407,14 @@
       "rule": "legacy-dc"
     },
     "/moneda-colombia-2-escudos-carlos-iv-1791.dc.html": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "status": 301,
-      "rule": "legacy-dc"
+      "rule": "manual"
     },
     "/moneda-colombia-2-escudos-carlos-iv-1791.dc.html/": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "status": 301,
-      "rule": "legacy-dc"
+      "rule": "manual"
     },
     "/nosotros": {
       "target": "/acerca-de/",

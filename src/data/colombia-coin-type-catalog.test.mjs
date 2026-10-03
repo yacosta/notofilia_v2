@@ -7,6 +7,7 @@ const coinagePieceSource = readFileSync(new URL('./colombia-coinage-pieces.ts', 
 
 describe('Colombia coin type catalog enrichment', () => {
   it('keeps one holding and adds documented types without inventing serials', () => {
+    assert.match(coinCatalogSource, /holdingId: '2-escudos-popayan-1791-p-sf'/);
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '8-escudos-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
@@ -18,7 +19,12 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '50-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '20-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '10-centavos-santander-1902'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 11);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 12);
+    assert.match(coinagePieceSource, /'2-escudos-popayan-1791-p-sf'/);
+    assert.match(coinagePieceSource, /KM# 51\.2/);
+    assert.match(coinagePieceSource, /CAROL · IV/);
+    assert.doesNotMatch(coinagePieceSource, /2-escudos-popayan-1791[\s\S]{0,1200}tirada de \d/);
+    assert.doesNotMatch(coinagePieceSource, /2-escudos-popayan-1791[\s\S]{0,2500}\$\s*\d/);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /'8-escudos-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /KM# 62\.2/);
