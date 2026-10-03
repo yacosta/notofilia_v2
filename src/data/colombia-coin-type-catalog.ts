@@ -9,6 +9,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1801-p-jf'
   | '8-escudos-popayan-1801-p-jf'
+  | '1-escudo-popayan-1806-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
@@ -85,6 +86,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '8-escudos-popayan-1801-p-jf',
+  },
+  {
+    id: '1-escudo-popayan-1806-p-jf',
+    era: 'santa-fe',
+    year: '1806',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 56.2 · Restrepo 85.34 · Calicó 1168 · Hernández 688 · Fr#59',
+    title: { es: '1 escudo · Popayán P–JF · 1806', en: '1 escudo · Popayán P–JF · 1806' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, ceca P y ensaye JF, fecha 1806. En la colección.',
+      en: 'Charles IV gold escudo, mint P and assayer JF, dated 1806. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-popayan-1806-p-jf',
   },
   {
     id: '1-real-bogota-1810-nr-jf',
@@ -523,10 +539,10 @@ export const coinCatalogCopy = {
   es: {
     metaTitle: 'Catálogo visual de monedas de Colombia | Notofilia',
     metaDescription:
-      'Tipos de moneda metálica colombiana: el escudo de Popayán de 1801, el real colonial de Santa Fe, Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios. Las imágenes se añaden a medida que se documentan.',
+      'Tipos de moneda metálica colombiana: los escudos de Popayán de 1801 y 1806, el real colonial de Santa Fe, Santa Marta, pesos p/m, Palonegro, lazaretos, la República y conmemorativas BanRep. Sin precios.',
     kicker: 'Colombia-Numismática',
     title: 'Catálogo visual de monedas',
-    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. El escudo de Popayán de 1801, el real de Bogotá de 1810, el cuartillo de Santa Marta y los 20 y 50 centavos de Santander de 1902 ya tienen foto; el 10 de Palonegro, los pesos p/m y las conmemorativas recientes se etiquetan cuando se fotografíen.',
+    dek: 'Tipos colombianos —denominación, ceca, año— en una sola vitrina. Cuatro por fila, sin precios. Los escudos de Popayán de 1801 y 1806, el real de Bogotá de 1810, el cuartillo de Santa Marta y los 20 y 50 centavos de Santander de 1902 ya tienen foto; el 10 de Palonegro, los pesos p/m y las conmemorativas recientes se etiquetan cuando se fotografíen.',
     nav: 'Catálogo visual',
     searchLabel: 'Buscar tipos de monedas',
     searchPlaceholder: 'KM, ceca, denominación, año…',
@@ -570,10 +586,10 @@ export const coinCatalogCopy = {
   en: {
     metaTitle: 'Visual catalog of Colombian coins | Notofilia',
     metaDescription:
-      'Colombian coin types: the 1801 Popayán escudo, the Santa Fe colonial real, Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices. Images are added as coins are documented.',
+      'Colombian coin types: the 1801 and 1806 Popayán escudos, the Santa Fe colonial real, Santa Marta, p/m pesos, Palonegro, lazarettos, the Republic, and BanRep commemoratives. No prices.',
     kicker: 'Colombia-Numismatics',
     title: 'Visual coin catalog',
-    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The 1801 Popayán escudo, the 1810 Bogotá real, the Santa Marta piece, and the 1902 Santander 20 and 50 centavos already have photographs; the Palonegro 10, the p/m pesos, and recent commemoratives stay ready to tag when they are shot.',
+    dek: 'Colombian types — denomination, mint, year — in one case. Four to a row, no prices. The 1801 and 1806 Popayán escudos, the 1810 Bogotá real, the Santa Marta piece, and the 1902 Santander 20 and 50 centavos already have photographs; the Palonegro 10, the p/m pesos, and recent commemoratives stay ready to tag when they are shot.',
     nav: 'Visual catalog',
     searchLabel: 'Search coin types',
     searchPlaceholder: 'KM, mint, denomination, year…',
