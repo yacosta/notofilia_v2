@@ -11,14 +11,16 @@ describe('Santa Fe holdings on the Colombia-Numismatics case', () => {
     '1-escudo-popayan-1801-p-jf',
     '1-escudo-popayan-1806-p-jf',
     '1-escudo-popayan-1808-p-jf',
+    '2-escudos-popayan-1791-p-sf',
     '8-escudos-popayan-1801-p-jf',
     '1-real-bogota-1810-nr-jf',
   ];
 
-  it('keeps 1 escudos together by date, then 8 escudos, then 1 real', () => {
+  it('keeps 1 escudos together by date, then 2 escudos, then 8 escudos, then 1 real', () => {
     const shuffled = [
       { id: '1-real-bogota-1810-nr-jf', chapterId: 'santa-fe', year: '1810', denomination: { es: '1 real' } },
       { id: '8-escudos-popayan-1801-p-jf', chapterId: 'santa-fe', year: '1801', denomination: { es: '8 escudos' } },
+      { id: '2-escudos-popayan-1791-p-sf', chapterId: 'santa-fe', year: '1791', denomination: { es: '2 escudos' } },
       { id: '1-escudo-popayan-1808-p-jf', chapterId: 'santa-fe', year: '1808', denomination: { es: '1 escudo' } },
       { id: 'later', chapterId: 'independencia', year: '1821', denomination: { es: '8 reales' } },
       { id: '1-escudo-popayan-1806-p-jf', chapterId: 'santa-fe', year: '1806', denomination: { es: '1 escudo' } },
@@ -43,6 +45,7 @@ describe('Santa Fe holdings on the Colombia-Numismatics case', () => {
 
 describe('Colombia coin type catalog enrichment', () => {
   it('keeps one holding and adds documented types without inventing serials', () => {
+    assert.match(coinCatalogSource, /holdingId: '2-escudos-popayan-1791-p-sf'/);
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1806-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1808-p-jf'/);
@@ -57,7 +60,12 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '50-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '20-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '10-centavos-santander-1902'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 14);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 15);
+    assert.match(coinagePieceSource, /'2-escudos-popayan-1791-p-sf'/);
+    assert.match(coinagePieceSource, /KM# 51\.2/);
+    assert.match(coinagePieceSource, /CAROL · IV/);
+    assert.doesNotMatch(coinagePieceSource, /2-escudos-popayan-1791[\s\S]{0,1200}tirada de \d/);
+    assert.doesNotMatch(coinagePieceSource, /2-escudos-popayan-1791[\s\S]{0,2500}\$\s*\d/);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1806-p-jf'/);
     assert.match(coinagePieceSource, /Restrepo 85\.34/);

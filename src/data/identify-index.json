@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T04:05:00.000Z",
+  "generatedAt": "2026-10-03T04:51:32.030Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -79,6 +79,45 @@
       "title": {
         "es": "100 yuan · Milenio 2000",
         "en": "100 Yuan · Millennium 2000"
+      }
+    },
+    {
+      "pieceId": "2-escudos-popayan-1791-p-sf",
+      "face": "front",
+      "hash": "00753535b6753500",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
+      "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
+      "image": "/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-composite.jpg",
+      "title": {
+        "es": "2 escudos · Popayán P–SF · 1791",
+        "en": "2 escudos · Popayán P–SF · 1791"
+      }
+    },
+    {
+      "pieceId": "2-escudos-popayan-1791-p-sf",
+      "face": "front",
+      "hash": "0032271f4a353a00",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
+      "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
+      "image": "/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-front.jpg",
+      "title": {
+        "es": "2 escudos · Popayán P–SF · 1791",
+        "en": "2 escudos · Popayán P–SF · 1791"
+      }
+    },
+    {
+      "pieceId": "2-escudos-popayan-1791-p-sf",
+      "face": "back",
+      "hash": "00365515d50b1200",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
+      "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
+      "image": "/images/catalog/colombia/colombia-popayan-2-escudos-1791-charles-iv-p-sf-back.jpg",
+      "title": {
+        "es": "2 escudos · Popayán P–SF · 1791",
+        "en": "2 escudos · Popayán P–SF · 1791"
       }
     },
     {

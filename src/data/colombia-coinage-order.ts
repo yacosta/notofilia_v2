@@ -5,11 +5,12 @@ export type SantaFeOrderPiece = {
   denomination: { es: string };
 };
 
-/** Casa de Moneda de Santa Fe: 1 escudo by date, then 8 escudos, then 1 real. */
+/** Casa de Moneda de Santa Fe: 1 escudo by date, then 2 escudos, then 8 escudos, then 1 real. */
 const SANTA_FE_DENOMINATION_RANK: Readonly<Record<string, number>> = {
   '1 escudo': 0,
-  '8 escudos': 1,
-  '1 real': 2,
+  '2 escudos': 1,
+  '8 escudos': 2,
+  '1 real': 3,
 };
 
 export function orderSantaFeHoldings<T extends SantaFeOrderPiece>(pieces: readonly T[]): T[] {
