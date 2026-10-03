@@ -12,7 +12,9 @@ import {
   coinagePath,
   coinageSources,
   colombiaCoinageChapters,
+  linkCoinageGlossary,
 } from '../../data/colombia-coinage';
+import { comparisonPath } from '../../data/comparison';
 import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import { COSCOJAS_SANTANDER_PATH } from '../../data/coscojas-santander';
@@ -79,8 +81,27 @@ const jsonLd = collectionPageJsonLd({
       />
 
       <div class="w-full text-[17px]/7 text-cream">
-        {t.intro.map((paragraph) => <p class="mb-5 mt-0 last:mb-0">{paragraph}</p>)}
+        {
+          t.intro.map((paragraph) => (
+            <p class="mb-5 mt-0 last:mb-0">
+              {
+                linkCoinageGlossary(paragraph, locale).map((part) =>
+                  part.href ? (
+                    <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={part.href}>
+                      {part.text}
+                    </a>
+                  ) : (
+                    part.text
+                  ),
+                )
+              }
+            </p>
+          ))
+        }
       </div>
+      <p class="mb-0 mt-6 font-sans text-[13px] tracking-[0.04em] text-muted">
+        <time datetime={t.updated}>{t.updatedLabel}: {t.updatedDate}</time>
+      </p>
 
       <p class="mt-6 mb-0 text-[17px]/7 text-muted">
         {t.notaphilyLead}
@@ -129,7 +150,51 @@ const jsonLd = collectionPageJsonLd({
                 {chapter.title[locale]}
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                chapter.body[locale].split('\n\n').map((paragraph) => (
+                  <p class="mb-4 mt-0 text-[17px]/7 text-cream last:mb-0">
+                    {
+                      linkCoinageGlossary(paragraph, locale).map((part) =>
+                        part.href ? (
+                          <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={part.href}>
+                            {part.text}
+                          </a>
+                        ) : (
+                          part.text
+                        ),
+                      )
+                    }
+                  </p>
+                ))
+              }
+              {
+                chapter.note ? (
+                  <p class="mb-0 mt-4 text-[17px]/7 text-cream">
+                    {chapter.note.before[locale]}
+                    <a
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(chapter.note.path, locale)}
+                    >
+                      {chapter.note.label[locale]}
+                    </a>
+                    {chapter.note.after[locale]}
+                  </p>
+                ) : null
+              }
+              {
+                pieces.length === 0 ? (
+                  <p class="mb-0 mt-4 text-[17px]/7 text-muted">
+                    {t.emptyHolding}
+                    {' '}
+                    <a
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(`${COLOMBIA_COIN_CATALOG_PATH}?filtro=${chapter.id}`, locale)}
+                    >
+                      {t.emptyCatalogLink}
+                    </a>
+                  </p>
+                ) : null
+              }
               {
                 pieces.length > 0 ? (
                   <ul class="mt-8 m-0 grid list-none gap-4 p-0">
@@ -164,6 +229,81 @@ const jsonLd = collectionPageJsonLd({
           })
         }
       </div>
+
+      <section class="mt-16" aria-labelledby="mint-marks-heading">
+        <h2 id="mint-marks-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.marksTitle}
+        </h2>
+        <p class="mb-4 mt-0 text-[17px]/7 text-cream">
+          {
+            linkCoinageGlossary(t.marksIntro, locale).map((part) =>
+              part.href ? (
+                <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={part.href}>
+                  {part.text}
+                </a>
+              ) : (
+                part.text
+              ),
+            )
+          }
+        </p>
+        <div class="overflow-x-auto border border-line-strong">
+          <table class="w-full min-w-[36rem] border-collapse font-sans text-[15px] text-cream-dim">
+            <caption class="sr-only">{t.marksCaption}</caption>
+            <thead>
+              <tr class="border-b border-line-strong bg-panel text-left">
+                {
+                  t.marksHeaders.map((header) => (
+                    <th class="px-3 py-2.5 font-semibold text-cream" scope="col">
+                      {header}
+                    </th>
+                  ))
+                }
+              </tr>
+            </thead>
+            <tbody>
+              {
+                t.marksRows.map((row) => (
+                  <tr class="border-b border-line-strong last:border-b-0">
+                    <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">
+                      {row[0]}
+                    </th>
+                    <td class="px-3 py-2.5">
+                      {
+                        linkCoinageGlossary(row[1], locale).map((part) =>
+                          part.href ? (
+                            <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={part.href}>
+                              {part.text}
+                            </a>
+                          ) : (
+                            part.text
+                          ),
+                        )
+                      }
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="catalog-numbers-heading">
+        <h2 id="catalog-numbers-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.numberingTitle}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">
+          {t.numberingBefore}
+          <a
+            class="text-gold-light underline decoration-line-strong hover:text-cream"
+            href={comparisonPath(locale)}
+          >
+            {t.numberingLink}
+          </a>
+          {t.numberingAfter}
+        </p>
+      </section>
 
       <div class="mt-16">
         <SourceList locale={locale} sources={coinageSources} heading={t.sourcesTitle} />
