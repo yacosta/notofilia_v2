@@ -9,6 +9,7 @@ import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
+  | '1-escudo-popayan-1808-p-jf'
   | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
@@ -136,6 +137,126 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = [
       },
     ],
     related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1808-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1808 P–JF',
+          en: 'Popayán 1 escudo, 1808 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
+        label: {
+          es: '8 escudos de Popayán, 1801 P–JF',
+          en: 'Popayán 8 escudos, 1801 P–JF',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-escudo-popayan-1808-p-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1808-p-jf/`,
+    chapterId: 'santa-fe',
+    year: '1808',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Popayán (P)',
+      en: 'Popayán (P)',
+    },
+    reference: 'KM# 56.2 · Restrepo 85.40 · Cayón 14140 · Fr#59 · Numista N#52837',
+    title: {
+      es: '1 escudo · Popayán P–JF · 1808',
+      en: '1 escudo · Popayán P–JF · 1808',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Popayán colonial',
+      en: 'Colombia-Numismatics · colonial Popayán',
+    },
+    lead: {
+      es: 'Un escudo de oro de 1808, labrado en Popayán a nombre de Carlos IV. El anverso lleva el busto, la leyenda CAROL IIII y la fecha; el reverso, el valor 1 S y las marcas P · JF.',
+      en: 'An 1808 gold escudo struck at Popayán in the name of Charles IV. The obverse carries the bust, the legend CAROL IIII, and the date; the reverse, the value 1 S and the marks P · JF.',
+    },
+    description: {
+      es: 'En 1808 la casa de Popayán, en labores desde 1758, seguía labrando oro de cordoncillo. Este disco muestra la fecha 1808 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca P y las iniciales JF; la segunda letra del ensaye está gastada. La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1808 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». Eso la deja en el tipo KM# 56.2 —Restrepo 85.40, Cayón 14140, Friedberg 59, Numista N#52837—, no en el escudo de Fernando VII de la misma ceca y el mismo año (KM# 64.2, Hernández 691, Friedberg 66), que conserva el busto de Carlos IV y cambia la leyenda a FERDND VII. Numista anota que el catálogo nacional de Hernández no confirma el 1808 de Carlos IV ni en Nuevo Reino ni en Popayán. El Cód. 688 de esa obra es el tipo de Popayán con leyenda y busto de Carlos IV y ensaye P–JF; esta ficha no lo trata como una fila fechada 1808 ya verificada. CoinVarieties recoge el 1808 P–JF de Carlos IV como Restrepo 85.40 y señala que Restrepo lo lista como sobrefecha 1808/7; aquí el último dígito se lee 8 y no se afirma el 7 subyacente. El lema del reverso, en el tipo, es In utroque felix, auspice Deo. El oro .875, unos 3,38 g de tipo y un módulo de 19 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: CoinVarieties deja la acuñación sin cifra y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. El 1 escudo de Popayán de 1801 P–JF es otra ficha de esta colección.',
+      en: 'In 1808 the Popayán mint, at work since 1758, was still striking milled gold. This disc shows the date 1808 under the portrait, the value 1 S, and, on either side of the fleece, the mark P and the initials JF; the second assayer letter is worn. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1808 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” That keeps it in type KM# 56.2 — Restrepo 85.40, Cayón 14140, Friedberg 59, Numista N#52837. The Ferdinand VII escudo of the same mint and year (KM# 64.2, Hernández 691, Friedberg 66) keeps the Charles IV bust and changes the legend to FERDND VII. Numista notes that Hernández’s national catalogue does not confirm an 1808 Charles IV issue at either Nuevo Reino or Popayán. Cód. 688 in that book is the Popayán type with Charles IV’s legend and bust and the P–JF assay; this record does not treat it as a verified 1808 row. CoinVarieties records the 1808 P–JF Charles IV piece as Restrepo 85.40 and notes that Restrepo lists it as an 1808/7 overdate; here the last digit reads 8, and an underlying 7 is not asserted. The reverse motto of the type is In utroque felix, auspice Deo. Gold .875, a type weight of about 3.38 g, and a module of 19 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: CoinVarieties leaves the striking unstated, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. The 1801 Popayán 1 escudo P–JF is a separate record in this collection.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1808.',
+      en: 'Obverse: bust of Charles IV facing right, legend with IIII, and the date 1808.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marcas P y JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; marks P and JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 56.2 (N#52837) y lista 1808 P–JF, con la nota de que Hernández no confirma ese año. CoinVarieties documenta la combinación como Cayón 14140, Restrepo 85.40 y Friedberg 59, sin tirada. No se publica aquí un censo de encapsulados ni un martillo. El 1 escudo de 1801 P–JF es otra ficha de esta colección.',
+      en: 'Numista covers type KM# 56.2 (N#52837) and lists 1808 P–JF, noting that Hernández does not confirm that year. CoinVarieties documents the combination as Cayón 14140, Restrepo 85.40, and Friedberg 59, without a mintage. No slab census and no hammer are published here. The 1801 P–JF 1 escudo is a separate record in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato aplanado, rayas y marcas de contacto; fecha, leyenda CAROL IIII, 1 S y P–JF legibles, con la segunda inicial del ensaye gastada. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Flattened portrait, hairlines and contact marks; date, CAROL IIII legend, 1 S, and P–JF readable, with the second assayer initial worn. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-1-escudo-1808-charles-iv-p-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/52837',
+        es: 'Numista — 1 escudo, Carlos IV, Colombia (N#52837)',
+        en: 'Numista — 1 escudo, Charles IV, Colombia (N#52837)',
+        note: {
+          es: 'Lista 1808 P–JF como KM# 56.2 y anota que Hernández no confirma ese año. Oro de tipo .875, 3,38 g y 19 mm. No se cita aquí una tirada ni un valor.',
+          en: 'Lists 1808 P–JF as KM# 56.2 and notes that Hernández does not confirm that year. Type gold .875, 3.38 g, and 19 mm. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1808-P_JF_escudo_Fr-59',
+        es: 'CoinVarieties — 1 escudo de Popayán, Carlos IV, 1808 P–JF',
+        en: 'CoinVarieties — Popayán 1 escudo, Charles IV, 1808 P–JF',
+        note: {
+          es: 'Cayón 14140, Restrepo 85.40, KM# 56.2 y Friedberg 59. Deja la tirada sin cifra y recuerda la sobrefecha 1808/7 de Restrepo, que esta fotografía no afirma. El ejemplar ilustrado es otro; no se publican precios.',
+          en: 'Cayón 14140, Restrepo 85.40, KM# 56.2, and Friedberg 59. Leaves the mintage unstated and recalls Restrepo’s 1808/7 overdate, which this photograph does not assert. The illustrated specimen is another coin; prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/61388',
+        es: 'Numista — 1 escudo, Fernando VII con busto de Carlos IV (N#61388)',
+        en: 'Numista — 1 escudo, Ferdinand VII with the bust of Charles IV (N#61388)',
+        note: {
+          es: 'El 1808 P–JF de esa serie es KM# 64.2, Hernández 691, con leyenda FERDND VII. No es la leyenda de este disco.',
+          en: 'The 1808 P–JF of that series is KM# 64.2, Hernández 691, with the legend FERDND VII. That is not the legend on this disc.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'El Cód. 688 es el tipo de Popayán con leyenda y busto de Carlos IV. Numista indica que esa obra no confirma el año 1808. No se publican columnas de precios ni láminas.',
+          en: 'Cód. 688 is the Popayán type with Charles IV’s legend and bust. Numista states that this book does not confirm the year 1808. Price columns and plates are not published.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Casa_de_acu%C3%B1aci%C3%B3n_de_moneda_de_Popay%C3%A1n',
+        es: 'Enciclopedia Banrepcultural — Casa de acuñación de Popayán',
+        en: 'Banrepcultural Encyclopedia — The Popayán mint',
+        note: {
+          es: 'La casa comenzó a labrar en 1758. Contexto de ceca, no autenticación de este disco.',
+          en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1801 P–JF',
+          en: 'Popayán 1 escudo, 1801 P–JF',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}8-escudos-popayan-1801-p-jf/`,
         label: {
