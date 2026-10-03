@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T02:59:56.197Z",
+  "generatedAt": "2026-10-03T04:05:00.000Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -391,6 +391,45 @@
       "title": {
         "es": "8 reales · Bogotá BA–JF · 1821",
         "en": "8 reales · Bogotá BA–JF · 1821"
+      }
+    },
+    {
+      "pieceId": "1-peso-bogota-1826-jf",
+      "face": "front",
+      "hash": "006157d5d5756100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-peso-bogota-1826-jf/",
+      "pick": "KM# 84 · Restrepo 160.3 · Fr#73 · Hernández 808 · Numista N#48297",
+      "image": "/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-composite.jpg",
+      "title": {
+        "es": "1 peso · Bogotá JF · 1826",
+        "en": "1 peso · Bogotá JF · 1826"
+      }
+    },
+    {
+      "pieceId": "1-peso-bogota-1826-jf",
+      "face": "front",
+      "hash": "001a4f2b0f112200",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-peso-bogota-1826-jf/",
+      "pick": "KM# 84 · Restrepo 160.3 · Fr#73 · Hernández 808 · Numista N#48297",
+      "image": "/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-front.jpg",
+      "title": {
+        "es": "1 peso · Bogotá JF · 1826",
+        "en": "1 peso · Bogotá JF · 1826"
+      }
+    },
+    {
+      "pieceId": "1-peso-bogota-1826-jf",
+      "face": "back",
+      "hash": "0026455555131600",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-peso-bogota-1826-jf/",
+      "pick": "KM# 84 · Restrepo 160.3 · Fr#73 · Hernández 808 · Numista N#48297",
+      "image": "/images/catalog/colombia/colombia-bogota-1-peso-1826-liberty-jf-back.jpg",
+      "title": {
+        "es": "1 peso · Bogotá JF · 1826",
+        "en": "1 peso · Bogotá JF · 1826"
       }
     },
     {

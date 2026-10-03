@@ -205,6 +205,7 @@ export const additions: Holding[] = [
   { id: 'pr-10-centavos-alfonso-xiii-pgv', kind: 'coin', country: 'PR' },
   { id: 'co-1806-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1808-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
+  { id: 'co-1826-1-peso-bogota-jf', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -336,6 +337,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-10-centavos-cf-km21' },
   { id: 'co-1806-1-escudo-popayan-km56-2' },
   { id: 'co-1808-1-escudo-popayan-km56-2' },
+  { id: 'co-1826-1-peso-bogota-km84' },
 ];
 
 export type CollectionStats = {

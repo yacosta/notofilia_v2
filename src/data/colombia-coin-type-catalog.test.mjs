@@ -49,6 +49,7 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '8-escudos-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
     assert.match(coinCatalogSource, /holdingId: '8-reales-bogota-1821-ba-jf'/);
+    assert.match(coinCatalogSource, /holdingId: '1-peso-bogota-1826-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-real-bogota-1810-nr-jf'/);
     assert.match(coinCatalogSource, /holdingId: '2-reales-cartagena-1812-1814'/);
     assert.match(coinCatalogSource, /holdingId: '2-centavos-lazareto-1921'/);
@@ -56,7 +57,7 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '50-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '20-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '10-centavos-santander-1902'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 13);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 14);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1801-p-jf'/);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1806-p-jf'/);
     assert.match(coinagePieceSource, /Restrepo 85\.34/);
@@ -73,6 +74,12 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinagePieceSource, /'2-reales-cartagena-1812-1814'/);
     assert.match(coinagePieceSource, /'1-4-real-santa-marta-1820'/);
     assert.match(coinagePieceSource, /'8-reales-bogota-1821-ba-jf'/);
+    assert.match(coinagePieceSource, /'1-peso-bogota-1826-jf'/);
+    assert.match(coinagePieceSource, /KM# 84/);
+    assert.match(coinagePieceSource, /Hernández 808/);
+    assert.match(coinagePieceSource, /no asigna ese subtipo/);
+    assert.doesNotMatch(coinagePieceSource, /1-peso-bogota-1826[\s\S]{0,2500}tirada de \d/);
+    assert.doesNotMatch(coinagePieceSource, /1-peso-bogota-1826[\s\S]{0,3500}\$\s*\d/);
     assert.match(coinagePieceSource, /'2-centavos-lazareto-1921'/);
     assert.match(coinagePieceSource, /'50-centavos-lazareto-1931'/);
     assert.match(coinagePieceSource, /'50-centavos-santander-1902'/);
