@@ -8,6 +8,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1801-p-jf'
+  | '1-escudo-popayan-1808-p-jf'
   | '8-escudos-popayan-1801-p-jf'
   | '1-escudo-popayan-1806-p-jf'
   | '1-real-bogota-1810-nr-jf'
@@ -72,6 +73,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-escudo-popayan-1801-p-jf',
+  },
+  {
+    id: '1-escudo-popayan-1808-p-jf',
+    era: 'santa-fe',
+    year: '1808',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 56.2 · Restrepo 85.40 · Cayón 14140 · Fr#59',
+    title: { es: '1 escudo · Popayán P–JF · 1808', en: '1 escudo · Popayán P–JF · 1808' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, fecha 1808, ceca P y ensaye JF. En la colección.',
+      en: 'Charles IV gold escudo, dated 1808, mint P and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-popayan-1808-p-jf',
   },
   {
     id: '8-escudos-popayan-1801-p-jf',
