@@ -281,6 +281,10 @@ describe('sitemap coverage for Spain numismatics', () => {
       localizePath('/coleccion/espana-numismatica/medio-escudo-madrid-1757-jb/', 'en'),
       '/en/collection/spain-numismatics/half-escudo-madrid-1757-jb/',
     );
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/', 'en'),
+      '/en/collection/spain-numismatics/2-escudos-seville-philip-ii-s-d/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });

@@ -212,8 +212,8 @@ export const collections = [
   },
   {
     href: '/coleccion/espana/',
-    es: { title: 'España', description: 'El papel está en preparación. El medio escudo de Madrid de 1757 se documenta en Numismática.' },
-    en: { title: 'Spain', description: 'Paper is in preparation. The 1757 Madrid half escudo is documented under Numismatics.' },
+    es: { title: 'España', description: 'El papel está en preparación. El 2 escudos de Sevilla de Felipe II y el medio escudo de Madrid de 1757 se documentan en Numismática.' },
+    en: { title: 'Spain', description: 'Paper is in preparation. Philip II’s Seville 2 escudos and the 1757 Madrid half escudo are documented under Numismatics.' },
   },
   {
     href: PUERTO_RICO_PATH,

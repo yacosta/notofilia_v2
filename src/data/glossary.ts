@@ -384,7 +384,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "ceca",
     category: "Producción",
     title: { es: "Ceca / marca de ceca", en: "Mint / mint mark" },
-    definition: { es: "Casa de moneda donde se acuña una pieza, y la letra o símbolo grabado que la identifica. En el medio escudo de Madrid de 1757 la marca es una M coronada entre las iniciales de ensaye; en los 1 escudos de Popayán de 1801 y 1806, la P; en Santa Fe colonial, NR. Distinta del ensayador, que firma la ley del metal.", en: "The mint where a coin is struck, and the letter or symbol engraved that identifies it. On the 1757 Madrid half escudo the mark is a crowned M between the assayers’ initials; on the 1801 and 1806 Popayán 1 escudos, a P; on colonial Santa Fe, NR. Distinct from the assayer, who signs the metal’s fineness." },
+    definition: { es: "Casa de moneda donde se acuña una pieza, y la letra o símbolo grabado que la identifica. En el 2 escudos de Sevilla de Felipe II la marca es una S sobre la D de ensaye; en el medio escudo de Madrid de 1757, una M coronada entre las iniciales de ensaye; en los 1 escudos de Popayán de 1801 y 1806, la P; en Santa Fe colonial, NR. Distinta del ensayador, que firma la ley del metal.", en: "The mint where a coin is struck, and the letter or symbol engraved that identifies it. On Philip II’s Seville 2 escudos the mark is an S over the assayer’s D; on the 1757 Madrid half escudo, a crowned M between the assayers’ initials; on the 1801 and 1806 Popayán 1 escudos, a P; on colonial Santa Fe, NR. Distinct from the assayer, who signs the metal’s fineness." },
     seeAlso: ["ensayador", "escudo", "planchuela", "macuquina-cob"],
   },
   {
@@ -624,7 +624,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "escudo",
     category: "Monedas y divisas",
     title: { es: "Escudo (oro)", en: "Escudo (gold)" },
-    definition: { es: "Unidad de oro de la monarquía hispánica y de sus Indias: múltiplos y fracciones (medio escudo, 1, 2, 4, 8) acuñados a volante o a martillo. No es el escudo de armas heráldico ni el real de plata. Esta colección documenta un medio escudo de Madrid de 1757 (ensaye JB) y los 1 escudos de Popayán de 1801 y 1806 (P–JF).", en: "Gold unit of the Spanish monarchy and its Indies: multiples and fractions (half escudo, 1, 2, 4, 8) struck by mill or hammer. It is not the heraldic coat of arms and not the silver real. This collection records a 1757 Madrid half escudo (assayers JB) and the 1801 and 1806 Popayán 1 escudos (P–JF)." },
+    definition: { es: "Unidad de oro de la monarquía hispánica y de sus Indias: múltiplos y fracciones (medio escudo, 1, 2, 4, 8) acuñados a volante o a martillo. No es el escudo de armas heráldico ni el real de plata. Esta colección documenta un 2 escudos de Sevilla de Felipe II, sin fecha (S sobre D), un medio escudo de Madrid de 1757 (ensaye JB) y los 1 escudos de Popayán de 1801 y 1806 (P–JF).", en: "Gold unit of the Spanish monarchy and its Indies: multiples and fractions (half escudo, 1, 2, 4, 8) struck by mill or hammer. It is not the heraldic coat of arms and not the silver real. This collection records an undated Philip II Seville 2 escudos (S over D), a 1757 Madrid half escudo (assayers JB), and the 1801 and 1806 Popayán 1 escudos (P–JF)." },
     seeAlso: ["escudo-de-armas", "ceca", "ensayador", "real", "ducado"],
   },
   {
@@ -904,7 +904,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "macuquina-cob",
     category: "Producción",
     title: { es: "Macuquina (cob)", en: "Cobs" },
-    definition: { es: "Moneda tosca de oro o plata acuñada a martillo en las cecas coloniales españolas: el metal se vertía en moldes, se adelgazaba a golpes, se cortaba con cizallas y se estampaba entre dos troqueles. En el Nuevo Reino de Granada llevan marca N.R.; las de 1 y 2 escudos de 1621 son las primeras de oro de América.", en: "A crude gold or silver coin hammer-struck at Spanish colonial mints: metal poured into moulds, thinned by hammer, cut with shears, and stamped between two dies. In the New Kingdom of Granada they carry mintmark N.R.; the 1621 1- and 2-escudo pieces are the first gold coins of the Americas." },
+    definition: { es: "Moneda tosca de oro o plata acuñada a martillo: el metal se vertía en moldes, se adelgazaba a golpes, se cortaba con cizallas y se estampaba entre dos troqueles. En las cecas coloniales del Nuevo Reino de Granada llevan marca N.R.; las de 1 y 2 escudos de 1621 son las primeras de oro de América. La misma técnica se usó en la Península: el 2 escudos de Sevilla de Felipe II de esta colección es oro a martillo, con cospel irregular, no una pieza de Indias.", en: "A crude gold or silver coin hammer-struck from metal poured into moulds, thinned by hammer, cut with shears, and stamped between two dies. At the colonial mints of the New Kingdom of Granada they carry mintmark N.R.; the 1621 1- and 2-escudo pieces are the first gold coins of the Americas. The same technique was used on the peninsula: this collection’s Philip II Seville 2 escudos is hammered gold on an irregular planchet, not an Indies piece." },
     seeAlso: ["cospel", "cordoncillo", "tejuelo"],
   },
   {

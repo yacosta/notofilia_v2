@@ -121,6 +121,11 @@ if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
 }
 
+const spainTwoEscudos = spainCoinById('2-escudos-sevilla-felipe-ii-s-d');
+if (!spainTwoEscudos) {
+  throw new Error('Missing Spain Philip II Seville 2 escudos for mega-nav');
+}
+
 const puertoRico20Centavos = puertoRicoCoinById('20-centavos-1895-pgv');
 if (!puertoRico20Centavos) {
   throw new Error('Missing Puerto Rico 1895 20 centavos for mega-nav');
@@ -401,6 +406,12 @@ export const megaNav: NavNode[] = [
         href: SPAIN_COINAGE_PATH,
         flag: 'es',
         children: [
+          {
+            id: 'es-2-escudos-sevilla-felipe-ii-s-d',
+            es: spainTwoEscudos.title.es,
+            en: spainTwoEscudos.title.en,
+            href: spainTwoEscudos.path,
+          },
           {
             id: 'es-medio-escudo-madrid-1757-jb',
             es: spainHalfEscudo.title.es,

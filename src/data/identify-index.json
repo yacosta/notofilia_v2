@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T02:21:13.630Z",
+  "generatedAt": "2026-10-03T03:02:16.357Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2575,6 +2575,45 @@
       "title": {
         "es": "5 libras · Churchill · 2016",
         "en": "£5 · Churchill · 2016"
+      }
+    },
+    {
+      "pieceId": "2-escudos-sevilla-felipe-ii-s-d",
+      "face": "front",
+      "hash": "0051557355573100",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/",
+      "pick": "Áureo & Calicó#828 · Fr#169 · Tauler-31",
+      "image": "/images/catalog/spain/spain-seville-2-escudos-nd-philip-ii-s-d-composite.jpg",
+      "title": {
+        "es": "2 escudos · Felipe II · 1566–1587",
+        "en": "2 escudos · Philip II · 1566–1587"
+      }
+    },
+    {
+      "pieceId": "2-escudos-sevilla-felipe-ii-s-d",
+      "face": "front",
+      "hash": "0006512e0b2d0e00",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/",
+      "pick": "Áureo & Calicó#828 · Fr#169 · Tauler-31",
+      "image": "/images/catalog/spain/spain-seville-2-escudos-nd-philip-ii-s-d-front.jpg",
+      "title": {
+        "es": "2 escudos · Felipe II · 1566–1587",
+        "en": "2 escudos · Philip II · 1566–1587"
+      }
+    },
+    {
+      "pieceId": "2-escudos-sevilla-felipe-ii-s-d",
+      "face": "back",
+      "hash": "001a0d595d6b3600",
+      "kind": "coin",
+      "path": "/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/",
+      "pick": "Áureo & Calicó#828 · Fr#169 · Tauler-31",
+      "image": "/images/catalog/spain/spain-seville-2-escudos-nd-philip-ii-s-d-back.jpg",
+      "title": {
+        "es": "2 escudos · Felipe II · 1566–1587",
+        "en": "2 escudos · Philip II · 1566–1587"
       }
     },
     {

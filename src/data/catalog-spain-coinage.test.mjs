@@ -59,7 +59,33 @@ describe('Spain Ferdinand VI 1757 Madrid half escudo', () => {
 
   it('opens Spain in the numismatics index', () => {
     assert.match(numismatica, /href: SPAIN_COINAGE_PATH/);
-    assert.match(numismatica, /Abren cinco casas/);
-    assert.match(numismatica, /Five houses are open/);
+    assert.match(numismatica, /2 escudos de Sevilla de Felipe II/);
+    assert.match(numismatica, /Philip II’s undated Seville 2 escudos/);
+  });
+});
+
+describe('Spain Philip II Seville undated 2 escudos', () => {
+  it('registers one bilingual no-serial holding for Calicó 828', () => {
+    assert.equal(
+      localizePath('/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/', 'en'),
+      '/en/collection/spain-numismatics/2-escudos-seville-philip-ii-s-d/',
+    );
+    assert.match(data, /id: '2-escudos-sevilla-felipe-ii-s-d'/);
+    assert.match(data, /no_serial_reason:\n      'Hammered Spanish gold 2 escudos/);
+    assert.match(data, /Áureo & Calicó#828 · Fr#169 · Tauler-31/);
+    assert.match(data, /Sevilla \(S\); ensaye D cuadrada/);
+    assert.match(data, /PHILIPPVS · II · DEI · GRATIA/);
+    assert.match(data, /HISPANIARVM/);
+    assert.match(data, /Melchor Damián/);
+    assert.match(data, /No pesado/);
+    assert.match(data, /Not weighed/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+/);
+    assert.match(holdings, /id: 'es-nd-2-escudos-sevilla-felipe-ii-sd', kind: 'coin', country: 'ES'/);
+    assert.match(holdings, /es-nd-2-escudos-sevilla-cal828/);
+    assert.match(data, /spain-seville-2-escudos-nd-philip-ii-s-d-composite\.jpg/);
+    assert.match(data, /spain-seville-2-escudos-nd-philip-ii-s-d-front\.jpg/);
+    assert.match(data, /spain-seville-2-escudos-nd-philip-ii-s-d-back\.jpg/);
   });
 });
