@@ -203,6 +203,7 @@ export const additions: Holding[] = [
   { id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US' },
   { id: 'pr-1895-20-centavos-pgv', kind: 'coin', country: 'PR' },
   { id: 'pr-10-centavos-alfonso-xiii-pgv', kind: 'coin', country: 'PR' },
+  { id: 'co-1806-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1808-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
 ];
 
@@ -333,6 +334,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1908-2-50-km128' },
   { id: 'pr-1895-20-centavos-km22' },
   { id: 'pr-10-centavos-cf-km21' },
+  { id: 'co-1806-1-escudo-popayan-km56-2' },
   { id: 'co-1808-1-escudo-popayan-km56-2' },
 ];
 
