@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T23:07:00.000Z",
+  "generatedAt": "2026-10-04T02:48:26.375Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4330,6 +4330,45 @@
       "title": {
         "es": "1 dólar · HAWAII · Serie 1935 A",
         "en": "$1 · HAWAII · Series 1935A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-sello-amarillo-1935a",
+      "face": "front",
+      "hash": "00686a00006b2b00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a/",
+      "pick": "Fr. 2306",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-north-africa-b52497547c-composite.jpg",
+      "title": {
+        "es": "1 dólar · Sello amarillo · Serie 1935 A",
+        "en": "$1 · Yellow seal · Series 1935A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-sello-amarillo-1935a",
+      "face": "front",
+      "hash": "00393228aa4a1d00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a/",
+      "pick": "Fr. 2306",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-north-africa-b52497547c-front.jpg",
+      "title": {
+        "es": "1 dólar · Sello amarillo · Serie 1935 A",
+        "en": "$1 · Yellow seal · Series 1935A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-sello-amarillo-1935a",
+      "face": "back",
+      "hash": "00ed2959ab69c600",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a/",
+      "pick": "Fr. 2306",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-north-africa-b52497547c-back.jpg",
+      "title": {
+        "es": "1 dólar · Sello amarillo · Serie 1935 A",
+        "en": "$1 · Yellow seal · Series 1935A"
       }
     },
     {

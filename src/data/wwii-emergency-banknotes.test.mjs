@@ -114,6 +114,10 @@ describe('WWII emergency banknotes series page', () => {
     assert.match(bodyEs, /S40499058C/);
     assert.match(bodyEs, /L45104670B/);
     assert.match(bodyEs, /L86654132A/);
+    assert.match(bodyEs, /B52497547C/);
+    assert.match(bodyEn, /B52497547C/);
+    assert.match(wwiiEmergencyCopy.es.holdingsValue, /B52497547C/);
+    assert.match(wwiiEmergencyCopy.en.holdingsValue, /B52497547C/);
     assert.doesNotMatch(bodyEs, /\$\d/);
     assert.doesNotMatch(bodyEn, /Heritage Auctions|eBay/);
   });
