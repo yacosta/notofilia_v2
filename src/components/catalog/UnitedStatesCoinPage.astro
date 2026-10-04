@@ -156,7 +156,8 @@ const jsonCrumbs = [
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           <NoteImageLightbox
             src={coin.images.front}
-            alt={coin.frontCaption[locale]}
+            sideLabel={t.frontHeading}
+            title={coin.title[locale]}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -168,7 +169,8 @@ const jsonCrumbs = [
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           <NoteImageLightbox
             src={coin.images.back}
-            alt={coin.backCaption[locale]}
+            sideLabel={t.backHeading}
+            title={coin.title[locale]}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

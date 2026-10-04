@@ -123,7 +123,8 @@ const jsonCrumbs = [
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           <NoteImageLightbox
             src={piece.images.front}
-            alt={piece.frontCaption[locale]}
+            sideLabel={t.frontHeading}
+            title={piece.title[locale]}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -135,7 +136,8 @@ const jsonCrumbs = [
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           <NoteImageLightbox
             src={piece.images.back}
-            alt={piece.backCaption[locale]}
+            sideLabel={t.backHeading}
+            title={piece.title[locale]}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

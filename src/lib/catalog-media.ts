@@ -25,11 +25,130 @@ export function catalogDownloadFormat(src: string): 'JPEG' | 'PNG' | 'WebP' | 'i
   return 'image';
 }
 
-export function catalogDownloadLabel(src: string, locale: 'es' | 'en'): string {
+const MAX_SCAN_ALT = 80;
+const DASH_SERIAL = /^[\s—–-]+$/;
+
+/** Printed serial for alts and download names. Omit blanks and documented absences. */
+export function catalogSerialToken(serial?: string, serialDisplay?: string): string | undefined {
+  const normalized = serial?.trim() ?? '';
+  const display = serialDisplay?.trim() ?? '';
+  const printed =
+    display && display.length <= 36 && !display.includes('·') && !DASH_SERIAL.test(display) ? display : normalized;
+  if (!printed || DASH_SERIAL.test(printed)) return undefined;
+  return printed;
+}
+
+const YEAR_TOKEN = /\b(?:1[5-9]\d{2}|20\d{2})\b/;
+
+function identityKeys(serial?: string, serialDisplay?: string): string[] {
+  return [serial, serialDisplay]
+    .map((value) => value?.trim() ?? '')
+    .filter((value) => value && !DASH_SERIAL.test(value))
+    .map((value) => value.replace(/[\s.★*]/g, '').toUpperCase());
+}
+
+/**
+ * Short subject from a catalogue title.
+ * "10.000 pesos · reposición estrella · 1994 · 00113227" → "10.000 pesos 1994".
+ * A trailing serial is left to the separate serial clause.
+ */
+export function scanSubject(title: string, serial?: string, serialDisplay?: string): string {
+  let parts = title
+    .split('·')
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const keys = identityKeys(serial, serialDisplay);
+  if (keys.length) {
+    const filtered = parts.filter((part) => !keys.includes(part.replace(/[\s.★*]/g, '').toUpperCase()));
+    if (filtered.length) parts = filtered;
+  }
+  const last = parts[parts.length - 1] ?? '';
+  if (parts.length >= 3 && YEAR_TOKEN.test(last)) {
+    return `${parts[0]} ${last}`;
+  }
+  return parts.join(' ');
+}
+
+/**
+ * Short object description for a catalog scan (≤ 80 characters).
+ * The visible figcaption keeps the long sentence.
+ * Example: "Anverso, 10.000 pesos 1994, serial 00113227".
+ */
+export function pieceScanAlt(input: {
+  sideLabel: string;
+  title: string;
+  serial?: string;
+  serialDisplay?: string;
+}): string {
+  const side = input.sideLabel.trim();
+  const serial = catalogSerialToken(input.serial, input.serialDisplay);
+  const serialBit = serial ? `, serial ${serial}` : '';
+  const prefix = `${side}, `;
+  let subject = scanSubject(input.title, input.serial, input.serialDisplay);
+  const budget = MAX_SCAN_ALT - prefix.length - serialBit.length;
+  if (budget < 8) {
+    const bare = serial ? `${side}${serialBit}` : side;
+    return bare.length <= MAX_SCAN_ALT ? bare : `${bare.slice(0, MAX_SCAN_ALT - 1).trimEnd()}…`;
+  }
+  if (subject.length > budget) {
+    const cut = Math.max(1, budget - 1);
+    subject = `${subject.slice(0, cut).trimEnd()}…`;
+  }
+  return `${prefix}${subject}${serialBit}`;
+}
+
+export type CatalogDownloadDetail = {
+  side?: string;
+  serial?: string;
+  serialDisplay?: string;
+  /** Used when the piece has no serial, so two scans on one page stay distinct. */
+  title?: string;
+};
+
+/** Visible link (with the download-status sentence) and the short dialog label. */
+export function catalogDownloadLabels(
+  src: string,
+  locale: 'es' | 'en',
+  detail?: CatalogDownloadDetail,
+): { short: string; full: string } {
   const format = catalogDownloadFormat(src);
-  return locale === 'en'
-    ? `Download ${format}. A download will start.`
-    : `Descargar ${format}. Se inicia una descarga.`;
+  const serial = catalogSerialToken(detail?.serial, detail?.serialDisplay);
+  const side = detail?.side?.trim();
+  const sidePhrase = side ? (locale === 'en' ? ` of the ${side.toLowerCase()}` : ` del ${side.toLowerCase()}`) : '';
+  const subject = !serial && detail?.title ? scanSubject(detail.title, detail.serial, detail.serialDisplay) : '';
+  const serialPhrase = serial ? `, serial ${serial}` : subject ? `, ${subject}` : '';
+  const verb = locale === 'en' ? 'Download' : 'Descargar';
+  const short = `${verb} ${format}${sidePhrase}${serialPhrase}`;
+  const status = locale === 'en' ? 'A download will start.' : 'Se inicia una descarga.';
+  return { short, full: `${short}. ${status}` };
+}
+
+/**
+ * Alt must not repeat the figcaption. When they are the same sentence, keep a
+ * shorter object description (≤ 80) and leave the full sentence in the caption.
+ */
+export function distinctFigureAlt(alt: string, caption: string): string {
+  const imageAlt = alt.trim();
+  const figureCaption = caption.trim();
+  if (!figureCaption || imageAlt !== figureCaption) return imageAlt;
+  if (imageAlt.length > 80) {
+    return `${imageAlt.slice(0, 79).trimEnd()}…`;
+  }
+  const words = imageAlt.split(/\s+/);
+  if (words.length > 4) return words.slice(0, -1).join(' ');
+  return '';
+}
+
+export function catalogDownloadLabel(src: string, locale: 'es' | 'en', detail?: CatalogDownloadDetail): string {
+  return catalogDownloadLabels(src, locale, detail).full;
+}
+
+export function catalogDownloadShortLabel(
+  src: string,
+  locale: 'es' | 'en',
+  detail?: CatalogDownloadDetail,
+): string {
+  return catalogDownloadLabels(src, locale, detail).short;
 }
 
 export function escapeHtml(value: string): string {

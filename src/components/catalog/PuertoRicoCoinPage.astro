@@ -152,10 +152,11 @@ const jsonCrumbs = [
             <>
               <figure class="m-0">
                 <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-                <NoteImageLightbox
-                  src={coin.images.front}
-                  alt={coin.frontCaption[locale]}
-                  expandLabel={t.expandImage}
+                  <NoteImageLightbox
+                    src={coin.images.front}
+                    sideLabel={t.frontHeading}
+                    title={coin.title[locale]}
+                    expandLabel={t.expandImage}
                   closeLabel={t.closeLightbox}
                   locale={locale}
                   width={coin.images.faceWidth}
@@ -166,10 +167,11 @@ const jsonCrumbs = [
               </figure>
               <figure class="m-0">
                 <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
-                <NoteImageLightbox
-                  src={coin.images.back}
-                  alt={coin.backCaption[locale]}
-                  expandLabel={t.expandImage}
+                  <NoteImageLightbox
+                    src={coin.images.back}
+                    sideLabel={t.backHeading}
+                    title={coin.title[locale]}
+                    expandLabel={t.expandImage}
                   closeLabel={t.closeLightbox}
                   locale={locale}
                   width={coin.images.faceWidth}

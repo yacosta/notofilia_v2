@@ -1,15 +1,21 @@
 ---
 import {
   catalogDownloadFilename,
-  catalogDownloadLabel,
+  catalogDownloadLabels,
   catalogDownloadSrc,
+  pieceScanAlt,
 } from '../../lib/catalog-media';
 import { pieceSrcset, PIECE_IMAGE_SIZES, versionCatalogScan } from '../../lib/images';
 import type { Locale } from '../../lib/site';
 
 interface Props {
   src: string;
-  alt: string;
+  /** Localized side heading, e.g. Anverso / Face. The long caption stays in the figcaption. */
+  sideLabel: string;
+  /** Catalogue title. Collapsed to a short subject for the alt and dialog title. */
+  title: string;
+  serial?: string;
+  serialDisplay?: string;
   expandLabel: string;
   closeLabel: string;
   locale: Locale;
@@ -18,12 +24,25 @@ interface Props {
   eager?: boolean;
 }
 
-const { src, alt, expandLabel, closeLabel, locale, width = 1800, height = 900, eager = false } = Astro.props;
+const {
+  src,
+  sideLabel,
+  title,
+  serial,
+  serialDisplay,
+  expandLabel,
+  closeLabel,
+  locale,
+  width = 1800,
+  height = 900,
+  eager = false,
+} = Astro.props;
+const alt = pieceScanAlt({ sideLabel, title, serial, serialDisplay });
 const displaySrc = versionCatalogScan(src);
 const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 const downloadHref = catalogDownloadSrc(src);
 const downloadName = catalogDownloadFilename(src);
-const downloadLabel = catalogDownloadLabel(src, locale);
+const download = catalogDownloadLabels(src, locale, { side: sideLabel, serial, serialDisplay, title });
 const srcset = pieceSrcset(displaySrc);
 ---
 
@@ -61,7 +80,7 @@ const srcset = pieceSrcset(displaySrc);
       href={downloadHref}
       download={downloadName}
     >
-      {downloadLabel}
+      {download.full}
     </a>
   </p>
 
@@ -86,7 +105,7 @@ const srcset = pieceSrcset(displaySrc);
               href={downloadHref}
               download={downloadName}
             >
-              {downloadLabel}
+              {download.short}
             </a>
             <button
               type="button"
@@ -100,7 +119,7 @@ const srcset = pieceSrcset(displaySrc);
         <div class="flex min-h-0 flex-1 items-center justify-center overflow-auto bg-bg p-3 md:p-5">
           <img
             src={displaySrc}
-            alt={alt}
+            alt=""
             width={width}
             height={height}
             class="max-h-[min(78vh,48rem)] w-auto max-w-full object-contain"

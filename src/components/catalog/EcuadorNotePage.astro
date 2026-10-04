@@ -204,7 +204,10 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
                   <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</FactsHeading>
                   <NoteImageLightbox
                     src={piece.images.front}
-                    alt={piece.frontCaption[locale]}
+                    sideLabel={t.frontHeading}
+                    title={piece.title[locale]}
+                    serial={piece.serial}
+                    serialDisplay={piece.serial_display}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
@@ -218,7 +221,10 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
                   <FactsHeading class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</FactsHeading>
                   <NoteImageLightbox
                     src={piece.images.back}
-                    alt={piece.backCaption[locale]}
+                    sideLabel={t.backHeading}
+                    title={piece.title[locale]}
+                    serial={piece.serial}
+                    serialDisplay={piece.serial_display}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
