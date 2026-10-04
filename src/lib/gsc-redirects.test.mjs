@@ -9,6 +9,12 @@ describe('gsc redirect lookup', () => {
     assert.equal(planSeoResponse('/').type, 'pass');
   });
 
+  it('serves the live English Banco de la República era page', () => {
+    assert.equal(planSeoResponse('/en/collection/colombia/banco-de-la-republica/').type, 'pass');
+    assert.equal(planSeoResponse('/en/collection/colombia/banco-de-la-republica').type, 'pass');
+    assert.equal(lookupGscRedirect('/en/collection/colombia/banco-de-la-republica/'), undefined);
+  });
+
   it('strips .dc.html to a non-home path', () => {
     assert.equal(stripDreamweaverSuffix('/contacto.dc.html'), '/contacto/');
     assert.equal(stripDreamweaverSuffix('/en/contact.dc.html'), '/en/contact/');
