@@ -369,7 +369,7 @@ source,target,status,rule,confidence
 /en/collection/colombia/banco-de-la-republica-2-pesos-oro/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-de-la-republica-2000-pesos-debora-arango-prueba-anverso/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-de-la-republica-2000-pesos-oro,/en/collection/colombia/2000-pesos-oro-1983/,301,existing,high
-/en/collection/colombia/banco-de-la-republica/,/en/collection/colombia/,301,hub-fallback,low
+/en/collection/colombia/banco-de-la-republica/,/en/collection/colombia/banco-de-la-republica/,200,exists,high
 /en/collection/colombia/banco-de-la-union-5-10-pesos-1883/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-de-pamplona-10-pesos-1884/,/en/collection/colombia/,301,hub-fallback,low
 /en/collection/colombia/banco-de-panama-1-5-pesos/,/en/collection/colombia/,301,hub-fallback,low

@@ -8,13 +8,13 @@
     "manual": 28,
     "last-slug": 7,
     "category-hub": 27,
-    "hub-fallback": 117,
+    "hub-fallback": 116,
     "fuzzy": 3,
     "last-slug-hreflang": 2,
-    "exists": 7,
+    "exists": 8,
     "glossary-hub": 2
   },
-  "fuzzyOrHubPercent": 8.91,
+  "fuzzyOrHubPercent": 8.84,
   "redirects": {
     "/2014/01/26/royal-silver-acuna-monedas-conmemorativas-de-exportacion/": {
       "target": "",
@@ -3655,16 +3655,6 @@
       "target": "/en/collection/colombia/2000-pesos-oro-1983/",
       "status": 301,
       "rule": "existing"
-    },
-    "/en/collection/colombia/banco-de-la-republica/": {
-      "target": "/en/collection/colombia/",
-      "status": 301,
-      "rule": "hub-fallback"
-    },
-    "/en/collection/colombia/banco-de-la-republica": {
-      "target": "/en/collection/colombia/",
-      "status": 301,
-      "rule": "hub-fallback"
     },
     "/en/collection/colombia/banco-de-la-union-5-10-pesos-1883/": {
       "target": "/en/collection/colombia/",

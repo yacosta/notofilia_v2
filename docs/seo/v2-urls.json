@@ -1,6 +1,6 @@
 {
   "generatedFrom": "dist",
-  "count": 950,
+  "count": 952,
   "urls": [
     {
       "path": "/",
@@ -550,6 +550,15 @@
       "title": "Redirecting to: /coleccion/colombia/2000-pesos-oro-1983/",
       "alternate": "",
       "redirectTo": "/coleccion/colombia/2000-pesos-oro-1983/"
+    },
+    {
+      "path": "/coleccion/colombia/banco-de-la-republica/",
+      "lang": "es",
+      "type": "hub",
+      "lastSlug": "banco-de-la-republica",
+      "title": "Banco de la República",
+      "alternate": "/en/collection/colombia/banco-de-la-republica/",
+      "redirectTo": ""
     },
     {
       "path": "/coleccion/colombia/catalogo/",
@@ -3340,6 +3349,15 @@
       "title": "Redirecting to: /en/collection/colombia/2000-pesos-oro-1983/",
       "alternate": "",
       "redirectTo": "/en/collection/colombia/2000-pesos-oro-1983/"
+    },
+    {
+      "path": "/en/collection/colombia/banco-de-la-republica/",
+      "lang": "en",
+      "type": "hub",
+      "lastSlug": "banco-de-la-republica",
+      "title": "Banco de la República",
+      "alternate": "/coleccion/colombia/banco-de-la-republica/",
+      "redirectTo": ""
     },
     {
       "path": "/en/collection/colombia/catalog/",
