@@ -7,11 +7,23 @@ export const WWII_HAWAII_NOTE_ID = '1-dolar-hawaii-1935a';
 export const WWII_HAWAII_10_NOTE_ID = '10-dolares-serie-1934a-hawaii';
 export const WWII_HAWAII_20_NOTE_ID = '20-dolares-serie-1934a-hawaii';
 export const WWII_YELLOW_SEAL_NOTE_ID = '1-dolar-sello-amarillo-1935a';
-export const WWII_HOLDING_NOTE_IDS = [
+export const WWII_HAWAII_NOTE_IDS = [
   WWII_HAWAII_NOTE_ID,
   WWII_HAWAII_10_NOTE_ID,
   WWII_HAWAII_20_NOTE_ID,
-  WWII_YELLOW_SEAL_NOTE_ID,
+] as const;
+export const WWII_NORTH_AFRICA_NOTE_IDS = [WWII_YELLOW_SEAL_NOTE_ID] as const;
+export const WWII_HOLDING_GROUPS = [
+  { id: 'hawaii-series', headingKey: 'hawaiiSeriesHeading', noteIds: WWII_HAWAII_NOTE_IDS },
+  {
+    id: 'north-africa-series',
+    headingKey: 'northAfricaSeriesHeading',
+    noteIds: WWII_NORTH_AFRICA_NOTE_IDS,
+  },
+] as const;
+export const WWII_HOLDING_NOTE_IDS = [
+  ...WWII_HAWAII_NOTE_IDS,
+  ...WWII_NORTH_AFRICA_NOTE_IDS,
 ] as const;
 
 export const WWII_EMERGENCY_HERO = {
@@ -54,6 +66,8 @@ export const wwiiEmergencyCopy = {
     pickLabel: 'Pick',
     serialLabel: 'Serie',
     holdingsListLabel: 'Ejemplares fichados en esta vitrina',
+    hawaiiSeriesHeading: 'Serie de Hawái',
+    northAfricaSeriesHeading: 'Serie de África del Norte',
     heroAlt:
       'Ilustración de escritorio con billetes de emergencia de la Segunda Guerra Mundial, un tórculo y un mapa. Título Billetes de Emergencia. No es un ejemplar fichado.',
     usLead: 'El papel federal de la era de la guerra se documenta en la vitrina de Estados Unidos.',
@@ -98,6 +112,8 @@ export const wwiiEmergencyCopy = {
     pickLabel: 'Pick',
     serialLabel: 'Serial',
     holdingsListLabel: 'Holdings recorded in this case',
+    hawaiiSeriesHeading: 'Hawaii Series',
+    northAfricaSeriesHeading: 'North Africa Series',
     heroAlt:
       'Desk illustration with World War II emergency banknotes, a printing press, and a map. Title Emergency Banknotes. Not a catalogued holding.',
     usLead: 'Federal paper from the war years is documented in the United States case.',
