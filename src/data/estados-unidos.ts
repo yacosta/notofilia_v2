@@ -5352,7 +5352,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     title: {
       es: '1 dólar · Sello amarillo · Serie 1935 A',
-      en: '$1 · Yellow seal · Series 1935A',
+      en: '$1 · Yellow seal · Series 1935 A',
     },
     kicker: {
       es: 'Estados Unidos · Certificado de plata · Emergencia',
