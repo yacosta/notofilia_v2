@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { localizePath, type Locale } from '../../lib/site';
 import { definedTermJsonLd } from '../../lib/json-ld';
+import { distinctFigureAlt } from '../../lib/catalog-media';
 import { cardImageSrc, imageSrcset } from '../../lib/images';
 import {
   glossaryArticleBySlug,
@@ -35,6 +36,10 @@ const paragraphs = article?.paragraphs[locale] ?? [term.definition[locale]];
 const lead = paragraphs[0];
 const rest = paragraphs.slice(1);
 const jsonDescription = article ? glossaryArticleLocaleText(article, locale) : term.definition[locale];
+const illustrationTitle = article?.illustration?.title[locale] ?? '';
+const illustrationAlt = article?.illustration
+  ? distinctFigureAlt(article.illustration.alt?.[locale] ?? illustrationTitle, illustrationTitle)
+  : '';
 
 function exampleHref(example: GlossaryExample): string {
   return localizePath(example.path, locale);
@@ -94,7 +99,7 @@ function exampleHref(example: GlossaryExample): string {
               sizes="(min-width: 1024px) 720px, 100vw"
               width="800"
               height="400"
-              alt={article.illustration.alt?.[locale] ?? article.illustration.title[locale]}
+              alt={illustrationAlt}
               fetchpriority="high"
               decoding="async"
               class="block h-auto w-full rounded-[3px] border border-[rgba(10,10,9,0.08)] bg-cream-dim object-contain"
