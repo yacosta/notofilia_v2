@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T23:07:00.000Z",
+  "generatedAt": "2026-10-04T02:40:00.000Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4252,6 +4252,45 @@
       "title": {
         "es": "5 dólares · Certificado de plata · Serie 1896",
         "en": "$5 · Silver Certificate · Series 1896"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928",
+      "face": "front",
+      "hash": "00d4b192b2b43400",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928/",
+      "pick": "P#412 · Fr. 1600",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1928-silver-certificate-h86110669a-composite.jpg",
+      "title": {
+        "es": "1 dólar Tate–Mellon · Certificado de plata · 1928",
+        "en": "$1 Tate–Mellon · Silver Certificate · 1928"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928",
+      "face": "front",
+      "hash": "0069cc2aacca4b00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928/",
+      "pick": "P#412 · Fr. 1600",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1928-silver-certificate-h86110669a-front.jpg",
+      "title": {
+        "es": "1 dólar Tate–Mellon · Certificado de plata · 1928",
+        "en": "$1 Tate–Mellon · Silver Certificate · 1928"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1928",
+      "face": "back",
+      "hash": "00e92a5551cce800",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1928/",
+      "pick": "P#412 · Fr. 1600",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1928-silver-certificate-h86110669a-back.jpg",
+      "title": {
+        "es": "1 dólar Tate–Mellon · Certificado de plata · 1928",
+        "en": "$1 Tate–Mellon · Silver Certificate · 1928"
       }
     },
     {
