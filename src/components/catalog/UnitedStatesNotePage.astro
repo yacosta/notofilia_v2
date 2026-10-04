@@ -123,7 +123,7 @@ const jsonCrumbs = [
           image: note.images.front,
           locale,
           artform: 'Banknote',
-          catalogNumber: note.pick,
+          catalogNumber: note.scwpm ? `${note.scwpm} · ${note.friedberg ?? note.pick}` : note.pick,
           serial: note.serial,
           gradingService: inferGradingService(note.grade[locale]),
         }),
@@ -172,13 +172,31 @@ const jsonCrumbs = [
         </h2>
         <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
           <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.pick}</dd>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {note.friedberg ? t.friedbergLabel : t.pickLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{note.friedberg ?? note.pick}</dd>
           </div>
+          {
+            note.scwpm ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.pickScwpmLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{note.scwpm}</dd>
+              </div>
+            ) : null
+          }
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{note.serial_display ?? note.serial}</dd>
           </div>
+          {
+            (note.facts ?? []).map((fact) => (
+              <div class={fact.wide ? 'sm:col-span-2' : undefined}>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{fact.label[locale]}</dt>
+                <dd class="m-0 mt-1 text-cream">{fact.value[locale]}</dd>
+              </div>
+            ))
+          }
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.signaturesLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{note.signatures[locale]}</dd>

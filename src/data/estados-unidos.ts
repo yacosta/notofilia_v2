@@ -1454,12 +1454,25 @@ export type UnitedStatesNoteId =
   | 'renci-trump-never-surrender'
   | 'renci-life-is-beautiful-life-spray';
 
+export type UnitedStatesNoteFact = {
+  label: LocalizedText;
+  value: LocalizedText;
+  /** Span both columns. Use for a sentence-length catalog value. */
+  wide?: boolean;
+};
+
 export type UnitedStatesNote = {
   id: UnitedStatesNoteId;
   chapterId: UnitedStatesChapterId;
   path: string;
   pathEn: string;
   pick: string;
+  /** Friedberg number when it must not sit under the Pick label. */
+  friedberg?: string;
+  /** SCWPM Pick number when `pick` stores Friedberg or another catalog. */
+  scwpm?: string;
+  /** Extra catalog-fact rows, in table order, terse. */
+  facts?: UnitedStatesNoteFact[];
   serial: string;
   /** Printed form when it differs from the normalized `serial`. */
   serial_display?: string;
@@ -5571,6 +5584,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a/',
     pathEn: '/collection/united-states/1-dollar-yellow-seal-1935a/',
     pick: 'Fr. 2306',
+    friedberg: 'Fr. 2306',
+    scwpm: 'P#416AY',
     serial: 'B52497547C',
     serial_display: 'B 52497547 C',
     signatures: {
@@ -5578,9 +5593,70 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'William Alexander Julian (Treasurer of the United States) and Henry Morgenthau Jr. (Secretary of the Treasury)',
     },
     printed: {
-      es: 'Serie 1935 A, impresa como SERIES 1935 A: esa designación no es el año de este ejemplar. El sello amarillo se imprimió desde 1942 para la Operación Torch (8 de noviembre de 1942) y siguió en Sicilia y en las primeras semanas de Italia. Friedberg da 26.916.000 ejemplares ordinarios del Fr. 2306. USPaperMoney.Info separa, dentro del bloque B–C, el tramo B51624001C–B52624000C (1.000.000 de piezas). El serial B52497547C cae en ese tramo. El formato es el tamaño pequeño de 1929 (unos 6,14 × 2,61 pulgadas); no es una medición de esta pieza. Bureau of Engraving and Printing.',
-      en: 'Series 1935A, printed as SERIES 1935 A: that designation is not the year of this specimen. Yellow-seal notes were printed from 1942 for Operation Torch (8 November 1942) and continued in Sicily and in the first weeks in Italy. Friedberg gives 26,916,000 regular notes for Fr. 2306. USPaperMoney.Info sets off, inside the B–C block, the run B51624001C–B52624000C (1,000,000 notes). Serial B52497547C falls in that run. The format is the 1929 small size (about 6.14 × 2.61 inches); that is not a measurement of this piece. Bureau of Engraving and Printing.',
+      es: 'Friedberg da 26.916.000 ejemplares ordinarios del Fr. 2306. USPaperMoney.Info separa, dentro del bloque B–C, el tramo B51624001C–B52624000C (1.000.000 de piezas). El serial B52497547C cae en ese tramo.',
+      en: 'Friedberg gives 26,916,000 regular notes for Fr. 2306. USPaperMoney.Info sets off, inside the B–C block, the run B51624001C–B52624000C (1,000,000 notes). Serial B52497547C falls in that run.',
     },
+    facts: [
+      {
+        label: { es: 'Posición de plancha', en: 'Plate position' },
+        value: { es: 'A', en: 'A' },
+      },
+      {
+        label: { es: 'Plancha de anverso', en: 'Face plate' },
+        value: { es: 'A4124', en: 'A4124' },
+      },
+      {
+        label: { es: 'Plancha de reverso', en: 'Back plate' },
+        value: { es: '2813', en: '2813' },
+      },
+      {
+        label: { es: 'Impresor', en: 'Printer' },
+        value: {
+          es: 'Bureau of Engraving and Printing',
+          en: 'Bureau of Engraving and Printing',
+        },
+      },
+      {
+        label: { es: 'Formato', en: 'Format' },
+        wide: true,
+        value: {
+          es: 'Tamaño pequeño (estándar de 1928), unos 156 × 66 mm (6,14 × 2,61 in) — nominal, no es una medición de esta pieza',
+          en: 'Small size (1928 standard), approx. 156 × 66 mm (6.14 × 2.61 in) — nominal, not a measurement of this piece',
+        },
+      },
+      {
+        label: { es: 'Emitido para', en: 'Issued for' },
+        wide: true,
+        value: {
+          es: 'Fuerzas de Estados Unidos, Operación Torch (norte de África), 1942; después, Sicilia e Italia',
+          en: 'U.S. forces, Operation Torch (North Africa), 1942; later Sicily and Italy',
+        },
+      },
+      {
+        label: { es: 'Sello / seriales', en: 'Seal / serials' },
+        wide: true,
+        value: {
+          es: 'Sello amarillo del Tesoro, seriales azules, sin sobreimpresión',
+          en: 'Yellow Treasury seal, blue serial numbers, no overprint',
+        },
+      },
+      {
+        label: { es: 'Bloque / corrida', en: 'Block / run' },
+        wide: true,
+        value: {
+          es: 'Bloque B–C; segunda corrida de sello amarillo, B51624001C–B52624000C',
+          en: 'B–C block; second yellow-seal run, B51624001C–B52624000C',
+        },
+      },
+      {
+        label: { es: 'Fecha de serie', en: 'Series date' },
+        wide: true,
+        value: {
+          es: '1935 A (impresa «SERIES 1935 A»); impresa en 1942. La designación de serie no es el año.',
+          en: '1935A (printed "SERIES 1935 A"); printed 1942. The series designation is not the year.',
+        },
+      },
+    ],
     images: {
       composite:
         '/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-north-africa-b52497547c-composite.jpg',
@@ -5604,8 +5680,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Face with Washington, a yellow Treasury seal, and blue serials B52497547C; back with the Great Seal and no IN GOD WE TRUST. Series 1935A, Fr. 2306, B–C block. Circulated, unslabbed.',
     },
     description: {
-      es: 'El 1 dólar certificado de plata serie 1935 A con sello amarillo del Tesoro (Friedberg 2306) es papel de emergencia para las fuerzas estadounidenses en el norte de África y, después, en Sicilia y en las primeras semanas de Italia. El certificado de sello azul ordinario de la misma serie se cataloga como P#416a. El 1 dólar HAWAII es Hawaii P#36, Fr. 2300, serial S40499058C. Esta pieza es Fr. 2306: sello circular amarillo del Tesoro y seriales azules. Las firmas son las de William Alexander Julian y Henry Morgenthau Jr. El anverso, en negro sobre papel crema, lleva el retrato de George Washington, la leyenda SILVER CERTIFICATE, un 1 grande a la izquierda y, a la derecha, el sello amarillo sobre WASHINGTON, D.C. Los seriales azules B 52497547 C se repiten abajo a la izquierda y arriba a la derecha (bloque B–C). La serie impresa, SERIES 1935 A, queda junto al secretario. La letra de posición A se lee arriba a la izquierda; la marca de plancha de anverso A4124, en el margen inferior derecho. El reverso, en verde, muestra el ONE central, la pirámide inacabada y el ojo de la Providencia a la izquierda —ANNUIT COEPTIS, NOVUS ORDO SECLORUM y MDCCLXXVI— y el águila con E PLURIBUS UNUM a la derecha. El lema IN GOD WE TRUST no figura: entró en el 1 dólar en series posteriores. La plancha de reverso 2813 queda abajo, hacia la derecha. Friedberg abre una mula en el 10 dólares de 1934 (Fr. 2308m) y no abre una ficha de mula para el Fr. 2306. El serial lleva prefijo B y sufijo C: es emisión ordinaria, sin estrella de reemplazo. USPaperMoney.Info separa el tramo B51624001C–B52624000C, de 1.000.000 de piezas, dentro del bloque B–C; una compilación de coleccionista en Paper Money Forum lo identifica como la segunda corrida de sello amarillo de ese bloque. B52497547C cae dentro. Las fotografías muestran pliegues, suciedad de manejo y desgaste en los bordes, con márgenes aparentemente completos. No se asigna un grado numérico a partir de las fotografías: el cuerpo del papel, los lavados y las reparaciones no se leen con certeza en la imagen. Esta pieza de la colección, circulada y sin encapsular, se documenta con esas fotografías.',
-      en: 'The Series 1935A $1 Silver Certificate with a yellow Treasury seal (Friedberg 2306) is emergency paper for United States forces in North Africa and, later, in Sicily and in the first weeks in Italy. The ordinary blue-seal certificate of the same series is catalogued as P#416a. The HAWAII $1 is Hawaii P#36, Fr. 2300, serial S40499058C. This piece is Fr. 2306: a yellow circular Treasury seal and blue serials. The signatures are William Alexander Julian and Henry Morgenthau Jr. The black face on cream paper carries George Washington, the legend SILVER CERTIFICATE, a large 1 at left, and, at right, the yellow seal over WASHINGTON, D.C. Blue serials B 52497547 C repeat at lower left and upper right (B–C block). The printed series, SERIES 1935 A, sits beside the Secretary. Plate position A is read at upper left; the face-plate marking A4124 sits in the lower-right margin. The green back shows a central ONE, the unfinished pyramid and the Eye of Providence at left — ANNUIT COEPTIS, NOVUS ORDO SECLORUM, and MDCCLXXVI — and the eagle with E PLURIBUS UNUM at right. The motto IN GOD WE TRUST is absent: it came onto the $1 in later series. Back plate 2813 sits below the lettering, toward the right. Friedberg opens a mule on the 1934 ten-dollar note (Fr. 2308m) and does not open a mule number for Fr. 2306. The serial has a B prefix and a C suffix: a regular issue, with no replacement star. USPaperMoney.Info sets off the run B51624001C–B52624000C, 1,000,000 notes, inside the B–C block; a collector compilation on the Paper Money Forum identifies it as the second yellow-seal run in that block. B52497547C falls inside it. The photographs show folds, handling soil, and edge wear, with margins that appear complete. No numerical grade is assigned from the photographs: paper body, washing, and repairs cannot be read with certainty from the image. This collection piece, circulated and unslabbed, is documented by those photographs.',
+      es: 'El 1 dólar certificado de plata serie 1935 A con sello amarillo del Tesoro (P#416AY; Friedberg 2306) es papel de emergencia para las fuerzas estadounidenses en el norte de África y, después, en Sicilia y en las primeras semanas de Italia. El certificado de sello azul ordinario de la misma serie se cataloga como P#416a. El 1 dólar HAWAII es Hawaii P#36, Fr. 2300, serial S40499058C. Esta pieza es Fr. 2306: sello circular amarillo del Tesoro y seriales azules. Las firmas son las de William Alexander Julian y Henry Morgenthau Jr. El anverso, en negro sobre papel crema, lleva el retrato de George Washington, la leyenda SILVER CERTIFICATE, un 1 grande a la izquierda y, a la derecha, el sello amarillo sobre WASHINGTON, D.C. Los seriales azules B 52497547 C se repiten abajo a la izquierda y arriba a la derecha (bloque B–C). La serie impresa, SERIES 1935 A, queda junto al secretario. La letra de posición A se lee arriba a la izquierda; la marca de plancha de anverso A4124, en el margen inferior derecho. El reverso, en verde, muestra el ONE central, la pirámide inacabada y el ojo de la Providencia a la izquierda —ANNUIT COEPTIS, NOVUS ORDO SECLORUM y MDCCLXXVI— y el águila con E PLURIBUS UNUM a la derecha. El lema IN GOD WE TRUST no figura: entró en el 1 dólar en series posteriores. La plancha de reverso 2813 queda abajo, hacia la derecha. Friedberg abre una mula en el 10 dólares de 1934 (Fr. 2308m) y no abre una ficha de mula para el Fr. 2306. El serial lleva prefijo B y sufijo C: es emisión ordinaria, sin estrella de reemplazo. USPaperMoney.Info separa el tramo B51624001C–B52624000C, de 1.000.000 de piezas, dentro del bloque B–C; una compilación de coleccionista en Paper Money Forum lo identifica como la segunda corrida de sello amarillo de ese bloque. B52497547C cae dentro. Las fotografías muestran pliegues, suciedad de manejo y desgaste en los bordes, con márgenes aparentemente completos. No se asigna un grado numérico a partir de las fotografías: el cuerpo del papel, los lavados y las reparaciones no se leen con certeza en la imagen. Esta pieza de la colección, circulada y sin encapsular, se documenta con esas fotografías.',
+      en: 'The Series 1935A $1 Silver Certificate with a yellow Treasury seal (P#416AY; Friedberg 2306) is emergency paper for United States forces in North Africa and, later, in Sicily and in the first weeks in Italy. The ordinary blue-seal certificate of the same series is catalogued as P#416a. The HAWAII $1 is Hawaii P#36, Fr. 2300, serial S40499058C. This piece is Fr. 2306: a yellow circular Treasury seal and blue serials. The signatures are William Alexander Julian and Henry Morgenthau Jr. The black face on cream paper carries George Washington, the legend SILVER CERTIFICATE, a large 1 at left, and, at right, the yellow seal over WASHINGTON, D.C. Blue serials B 52497547 C repeat at lower left and upper right (B–C block). The printed series, SERIES 1935 A, sits beside the Secretary. Plate position A is read at upper left; the face-plate marking A4124 sits in the lower-right margin. The green back shows a central ONE, the unfinished pyramid and the Eye of Providence at left — ANNUIT COEPTIS, NOVUS ORDO SECLORUM, and MDCCLXXVI — and the eagle with E PLURIBUS UNUM at right. The motto IN GOD WE TRUST is absent: it came onto the $1 in later series. Back plate 2813 sits below the lettering, toward the right. Friedberg opens a mule on the 1934 ten-dollar note (Fr. 2308m) and does not open a mule number for Fr. 2306. The serial has a B prefix and a C suffix: a regular issue, with no replacement star. USPaperMoney.Info sets off the run B51624001C–B52624000C, 1,000,000 notes, inside the B–C block; a collector compilation on the Paper Money Forum identifies it as the second yellow-seal run in that block. B52497547C falls inside it. The photographs show folds, handling soil, and edge wear, with margins that appear complete. No numerical grade is assigned from the photographs: paper body, washing, and repairs cannot be read with certainty from the image. This collection piece, circulated and unslabbed, is documented by those photographs.',
     },
     history: [
       {
@@ -5642,6 +5718,15 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Circulated, unslabbed; condition documented by the supplied photographs (private collection)',
     },
     sources: [
+      {
+        href: 'http://banknote.ws/COLLECTION/countries/AME/USA/USA-SILVER/USA0416AY.htm',
+        es: 'Bank Note Museum — P-416AY, 1 dólar, sello amarillo, 1935A',
+        en: 'Bank Note Museum — P-416AY, $1 yellow seal, 1935A',
+        note: {
+          es: 'Numera el tipo 416AY: 1 dólar, 1935A, certificado de plata de sello amarillo, para uso militar en el norte de África y Sicilia. En la ficha P-416, 416a es el 1935 A de sello azul, firmas Julian–Morgenthau.',
+          en: 'Numbers the type 416AY: $1, 1935A, yellow-seal silver certificate, for military use in North Africa and Sicily. On the P-416 page, 416a is the blue-seal 1935A, Julian–Morgenthau signatures.',
+        },
+      },
       {
         href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
         es: 'Friedberg / Berman — Emergency Notes (Fr. 2306)',
@@ -7174,6 +7259,8 @@ export const notePageCopy = {
     signaturesLabel: 'Firmas',
     serialLabel: 'Número de serie',
     pickLabel: 'Referencia Pick',
+    friedbergLabel: 'Número Friedberg',
+    pickScwpmLabel: 'Pick / SCWPM',
     gradeLabel: 'Conservación',
     expandImage: 'Ampliar imagen',
     closeLightbox: 'Cerrar',
@@ -7199,6 +7286,8 @@ export const notePageCopy = {
     signaturesLabel: 'Signatures',
     serialLabel: 'Serial number',
     pickLabel: 'Pick reference',
+    friedbergLabel: 'Friedberg number',
+    pickScwpmLabel: 'Pick / SCWPM',
     gradeLabel: 'Condition',
     expandImage: 'Enlarge image',
     closeLightbox: 'Close',
