@@ -4949,6 +4949,199 @@ export function seriesCardsForChapter(chapterId: ColombiaChapterId): ColombiaSer
   return cards;
 }
 
+/**
+ * Face-value headings on the Colombia series index.
+ * Closed spans are the issue periods used for those sections.
+ * 500, 50.000, and 100.000 are listed so a future holding lands in the right band;
+ * a band with no fichas is not rendered.
+ */
+const BANREP_DENOMINATION_BANDS: {
+  denomination: number;
+  id: string;
+  heading: LocalizedText;
+}[] = [
+  {
+    denomination: 0.5,
+    id: 'banrep-medio-peso',
+    heading: {
+      es: 'Billetes de ½ peso (1923 - 1953)',
+      en: '½ peso notes (1923 - 1953)',
+    },
+  },
+  {
+    denomination: 1,
+    id: 'banrep-1-peso',
+    heading: {
+      es: 'Billetes de 1 peso (1923 - 1977)',
+      en: '1 peso notes (1923 - 1977)',
+    },
+  },
+  {
+    denomination: 2,
+    id: 'banrep-2-pesos',
+    heading: {
+      es: 'Billetes de 2 pesos (1923 - 1983)',
+      en: '2 peso notes (1923 - 1983)',
+    },
+  },
+  {
+    denomination: 5,
+    id: 'banrep-5-pesos',
+    heading: {
+      es: 'Billetes de 5 pesos (1923 - 1981)',
+      en: '5 peso notes (1923 - 1981)',
+    },
+  },
+  {
+    denomination: 10,
+    id: 'banrep-10-pesos',
+    heading: {
+      es: 'Billetes de 10 pesos (1923 - 1980)',
+      en: '10 peso notes (1923 - 1980)',
+    },
+  },
+  {
+    denomination: 20,
+    id: 'banrep-20-pesos',
+    heading: {
+      es: 'Billetes de 20 pesos (1927 - 1983)',
+      en: '20 peso notes (1927 - 1983)',
+    },
+  },
+  {
+    denomination: 50,
+    id: 'banrep-50-pesos',
+    heading: {
+      es: 'Billetes de 50 pesos (1923 - 1986)',
+      en: '50 peso notes (1923 - 1986)',
+    },
+  },
+  {
+    denomination: 100,
+    id: 'banrep-100-pesos',
+    heading: {
+      es: 'Billetes de 100 pesos (1923 - 1991)',
+      en: '100 peso notes (1923 - 1991)',
+    },
+  },
+  {
+    denomination: 200,
+    id: 'banrep-200-pesos',
+    heading: {
+      es: 'Billetes de 200 pesos (1974 - 1992)',
+      en: '200 peso notes (1974 - 1992)',
+    },
+  },
+  {
+    denomination: 500,
+    id: 'banrep-500-pesos',
+    heading: {
+      es: 'Billetes de 500 pesos (1986 - 1993)',
+      en: '500 peso notes (1986 - 1993)',
+    },
+  },
+  {
+    denomination: 1000,
+    id: 'banrep-1000-pesos',
+    heading: {
+      es: 'Billetes de 1.000 pesos (finales de los años 1990 - 2012)',
+      en: '1,000 peso notes (late 1990s - 2012)',
+    },
+  },
+  {
+    denomination: 2000,
+    id: 'banrep-2000-pesos',
+    heading: {
+      es: 'Billetes de 2.000 pesos (desde los años 1990)',
+      en: '2,000 peso notes (from the 1990s)',
+    },
+  },
+  {
+    denomination: 5000,
+    id: 'banrep-5000-pesos',
+    heading: {
+      es: 'Billetes de 5.000 pesos (desde 1995)',
+      en: '5,000 peso notes (from 1995)',
+    },
+  },
+  {
+    denomination: 10000,
+    id: 'banrep-10000-pesos',
+    heading: {
+      es: 'Billetes de 10.000 pesos (desde 1995)',
+      en: '10,000 peso notes (from 1995)',
+    },
+  },
+  {
+    denomination: 20000,
+    id: 'banrep-20000-pesos',
+    heading: {
+      es: 'Billetes de 20.000 pesos (desde finales de los años 1990)',
+      en: '20,000 peso notes (from the late 1990s)',
+    },
+  },
+  {
+    denomination: 50000,
+    id: 'banrep-50000-pesos',
+    heading: {
+      es: 'Billetes de 50.000 pesos (desde 1994)',
+      en: '50,000 peso notes (from 1994)',
+    },
+  },
+  {
+    denomination: 100000,
+    id: 'banrep-100000-pesos',
+    heading: {
+      es: 'Billetes de 100.000 pesos (desde marzo de 2016)',
+      en: '100,000 peso notes (from March 2016)',
+    },
+  },
+];
+
+export type ColombiaSeriesCardGroup = {
+  id: string;
+  heading: LocalizedText | null;
+  cards: ColombiaSeriesCard[];
+};
+
+export function seriesCardGroupsForChapter(chapterId: ColombiaChapterId): ColombiaSeriesCardGroup[] {
+  const cards = seriesCardsForChapter(chapterId);
+  if (cards.length === 0) return [];
+  if (chapterId !== 'banco-de-la-republica' && chapterId !== 'familias-modernas') {
+    return [{ id: chapterId, heading: null, cards }];
+  }
+
+  const byDenom = new Map<number, ColombiaSeriesCard[]>();
+  for (const card of cards) {
+    const list = byDenom.get(card.denomination) ?? [];
+    list.push(card);
+    byDenom.set(card.denomination, list);
+  }
+
+  return [...byDenom.keys()]
+    .sort((a, b) => a - b)
+    .map((denomination) => {
+      const band = BANREP_DENOMINATION_BANDS.find((entry) => entry.denomination === denomination);
+      const matched = byDenom.get(denomination) ?? [];
+      if (band) {
+        return { id: band.id, heading: band.heading, cards: matched };
+      }
+      const years = matched.map((card) => card.year).filter((year) => year > 0);
+      const from = years.length ? Math.min(...years) : 0;
+      const to = years.length ? Math.max(...years) : from;
+      const range = from === to ? String(from) : `${from} - ${to}`;
+      const label = denomination < 1000 ? String(denomination) : denomination.toLocaleString('es-CO');
+      return {
+        id: `banrep-${denomination}-pesos`,
+        heading: {
+          es: `Billetes de ${label} pesos (${range})`,
+          en: `${denomination.toLocaleString('en-US')} peso notes (${range})`,
+        },
+        cards: matched,
+      };
+    });
+}
+
 export function noteSeriesLabel(note: ColombiaNote, locale: 'es' | 'en'): string {
   if (note.chapterId === 'errores') {
     return `Colombia · ${seriesCopy[locale].errorsTitle}`;

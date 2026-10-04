@@ -8,6 +8,7 @@ import {
   noteById,
   notePieces,
   noteSerialLine,
+  seriesCardGroupsForChapter,
   seriesCardHref,
   seriesCardsForChapter,
 } from './colombia-notes.ts';
@@ -1396,5 +1397,86 @@ describe('Colombia Banco Hipotecario 1881 ABNC proofs', () => {
     assert.doesNotMatch(note.dimensions.en, /\d+\s*[x×]\s*\d+/);
     assert.match(notePageSource, /t\.supportLabel/);
     assert.match(notePageSource, /t\.dimensionsLabel/);
+  });
+});
+
+describe('Banco de la República denomination headings', () => {
+  const seriesPage = readFileSync(
+    new URL('../components/catalog/ColombiaSeriesPage.astro', import.meta.url),
+    'utf8',
+  );
+  const eraPage = readFileSync(
+    new URL('../components/catalog/ColombiaEraPage.astro', import.meta.url),
+    'utf8',
+  );
+
+  it('groups every BanRep ficha under a face-value heading and leaves other chapters flat', () => {
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const groups = seriesCardGroupsForChapter('banco-de-la-republica');
+    const grouped = groups.flatMap((group) => group.cards);
+    assert.equal(grouped.length, cards.length);
+    assert.deepEqual(
+      grouped.map((card) => card.piece.id),
+      cards.map((card) => card.piece.id),
+    );
+
+    const half = groups[0];
+    assert.equal(half.heading?.es, 'Billetes de ½ peso (1923 - 1953)');
+    assert.equal(half.heading?.en, '½ peso notes (1923 - 1953)');
+    assert.equal(half.cards.length, 1);
+    assert.equal(half.cards[0].note.id, 'medio-peso-oro-1953');
+
+    const one = groups.find((group) => group.id === 'banrep-1-peso');
+    assert.ok(one);
+    assert.equal(one.heading?.es, 'Billetes de 1 peso (1923 - 1977)');
+    assert.equal(one.heading?.en, '1 peso notes (1923 - 1977)');
+    assert.deepEqual(
+      one.cards.map((card) => card.piece.id),
+      ['1-peso-oro-1945', '1-peso-oro-1954', '1-peso-oro-1959', '1-peso-oro-1973', '1-peso-oro-1974'],
+    );
+
+    const expected = [
+      ['banrep-2-pesos', 'Billetes de 2 pesos (1923 - 1983)', '2 peso notes (1923 - 1983)', 3],
+      ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 3],
+      ['banrep-10-pesos', 'Billetes de 10 pesos (1923 - 1980)', '10 peso notes (1923 - 1980)', 3],
+      ['banrep-20-pesos', 'Billetes de 20 pesos (1927 - 1983)', '20 peso notes (1927 - 1983)', 1],
+      ['banrep-50-pesos', 'Billetes de 50 pesos (1923 - 1986)', '50 peso notes (1923 - 1986)', 2],
+      ['banrep-100-pesos', 'Billetes de 100 pesos (1923 - 1991)', '100 peso notes (1923 - 1991)', 2],
+      ['banrep-200-pesos', 'Billetes de 200 pesos (1974 - 1992)', '200 peso notes (1974 - 1992)', 1],
+      ['banrep-1000-pesos', 'Billetes de 1.000 pesos (finales de los años 1990 - 2012)', '1,000 peso notes (late 1990s - 2012)', 1],
+      ['banrep-2000-pesos', 'Billetes de 2.000 pesos (desde los años 1990)', '2,000 peso notes (from the 1990s)', 2],
+      ['banrep-5000-pesos', 'Billetes de 5.000 pesos (desde 1995)', '5,000 peso notes (from 1995)', 2],
+      ['banrep-10000-pesos', 'Billetes de 10.000 pesos (desde 1995)', '10,000 peso notes (from 1995)', 1],
+    ];
+    for (const [id, es, en, count] of expected) {
+      const group = groups.find((entry) => entry.id === id);
+      assert.ok(group, id);
+      assert.equal(group.heading?.es, es);
+      assert.equal(group.heading?.en, en);
+      assert.equal(group.cards.length, count, id);
+      assert.ok(group.cards.every((card) => card.note.chapterId === 'banco-de-la-republica'));
+    }
+
+    const libre = seriesCardGroupsForChapter('banca-libre');
+    assert.equal(libre.length, 1);
+    assert.equal(libre[0].heading, null);
+    assert.equal(libre[0].cards.length, seriesCardsForChapter('banca-libre').length);
+
+    assert.equal(groups.some((group) => group.id === 'banrep-500-pesos'), false);
+
+    const modern = seriesCardGroupsForChapter('familias-modernas');
+    assert.equal(modern.length, 2);
+    assert.equal(modern[0].heading?.es, 'Billetes de 2.000 pesos (desde los años 1990)');
+    assert.equal(modern[0].cards[0].note.id, '2000-pesos-2015');
+    assert.equal(modern[1].heading?.es, 'Billetes de 20.000 pesos (desde finales de los años 1990)');
+    assert.equal(modern[1].heading?.en, '20,000 peso notes (from the late 1990s)');
+    assert.equal(modern[1].cards[0].note.id, '20000-pesos-2017');
+  });
+
+  it('renders the denomination headings on the Colombia series and era pages', () => {
+    assert.match(seriesPage, /seriesCardGroupsForChapter\(chapter\.id\)/);
+    assert.match(seriesPage, /ColombiaHoldingGrid/);
+    assert.match(eraPage, /seriesCardGroupsForChapter\(chapter\.id\)/);
+    assert.match(eraPage, /ColombiaHoldingGrid/);
   });
 });
