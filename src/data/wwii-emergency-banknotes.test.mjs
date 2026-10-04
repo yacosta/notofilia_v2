@@ -4,6 +4,11 @@ import { describe, it } from 'node:test';
 import {
   WWII_EMERGENCY_PATH,
   WWII_EMERGENCY_PATH_EN,
+  WWII_HAWAII_NOTE_IDS,
+  WWII_HOLDING_GROUPS,
+  WWII_HOLDING_NOTE_IDS,
+  WWII_NORTH_AFRICA_NOTE_IDS,
+  WWII_YELLOW_SEAL_NOTE_ID,
   wwiiEmergencyCopy,
   wwiiEmergencyDedicatedSlugs,
   wwiiEmergencyPath,
@@ -151,5 +156,31 @@ describe('WWII emergency banknotes series page', () => {
     assert.doesNotMatch(bodyEs, /Tipo Fr\. 2306\. Foto/);
     assert.doesNotMatch(bodyEn, /Type Fr\. 2300\. Photograph/);
     assert.doesNotMatch(bodyEn, /Type Fr\. 2306\. Photograph/);
+  });
+
+  it('groups the fichas under Hawaii and North Africa headings', () => {
+    assert.equal(wwiiEmergencyCopy.es.hawaiiSeriesHeading, 'Serie de Hawái');
+    assert.equal(wwiiEmergencyCopy.en.hawaiiSeriesHeading, 'Hawaii Series');
+    assert.equal(wwiiEmergencyCopy.es.northAfricaSeriesHeading, 'Serie de África del Norte');
+    assert.equal(wwiiEmergencyCopy.en.northAfricaSeriesHeading, 'North Africa Series');
+    assert.deepEqual(
+      WWII_HOLDING_GROUPS.map((group) => group.id),
+      ['hawaii-series', 'north-africa-series'],
+    );
+    assert.deepEqual([...WWII_HAWAII_NOTE_IDS], [
+      '1-dolar-hawaii-1935a',
+      '10-dolares-serie-1934a-hawaii',
+      '20-dolares-serie-1934a-hawaii',
+    ]);
+    assert.deepEqual([...WWII_NORTH_AFRICA_NOTE_IDS], [WWII_YELLOW_SEAL_NOTE_ID]);
+    assert.deepEqual([...WWII_HOLDING_NOTE_IDS], [
+      ...WWII_HAWAII_NOTE_IDS,
+      ...WWII_NORTH_AFRICA_NOTE_IDS,
+    ]);
+    assert.doesNotMatch(WWII_HAWAII_NOTE_IDS.join(' '), /sello-amarillo/);
+    assert.match(pageSource, /WWII_HOLDING_GROUPS/);
+    assert.match(pageSource, /\$\{group\.id\}-heading/);
+    assert.match(pageSource, /holdingGroups\.map/);
+    assert.match(pageSource, /aria-label=\{t\.holdingsListLabel\}/);
   });
 });
