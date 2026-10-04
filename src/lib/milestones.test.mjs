@@ -53,7 +53,6 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the North Africa yellow-seal holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'us-sc-1935a-yellow-seal-b52497547c');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, holding.id);
     const piece = catalogPieceForHolding(holding, [
       {
         id: 'us-1-dolar-hawaii-1935a',
@@ -149,7 +148,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-sc-1935a-yellow-seal-b52497547c');
+    assert.equal(additions.at(-1)?.id, 'us-sc-1928-h86110669a');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -171,7 +170,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 14);
+    assert.equal(fromEnd, 15);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -194,7 +193,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 13);
+    assert.equal(fromEnd, 14);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',

@@ -227,12 +227,22 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar certificado de plata serie 1928 (Funnyback)?',
+        en: 'What is the Series 1928 $1 Silver Certificate (Funnyback)?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1600 (P#412), firmas Tate–Mellon, sello y seriales azules, serie impresa SERIES OF 1928 sin letra. El apodo Funnyback describe el reverso verde con un ONE ornamental, no un error. Esta pieza es el serial H86110669A, bloque H–A, posición G, plancha de anverso 948, emisión ordinaria. No es el Fr. 1601 serie 1928 A, serial D00508932B.',
+        en: 'It is a small-size Silver Certificate, Fr. 1600 (P#412), Tate–Mellon signatures, blue seal and serials, printed SERIES OF 1928 with no letter. The nickname Funnyback describes the green reverse with an ornamental ONE, not an error. This piece is serial H86110669A, H–A block, position G, face plate 948, a regular issue. It is not the Series 1928A Fr. 1601, serial D00508932B.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar certificado de plata serie 1928 A (Funnyback)?',
         en: 'What is the Series 1928A $1 Silver Certificate (Funnyback)?',
       },
       answer: {
-        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1601 (P#412a), firmas Woods–Mellon, sello y seriales azules. El apodo Funnyback describe el reverso verde con un ONE ornamental, no un error. Esta pieza es el serial D00508932B, bloque D–B, emisión ordinaria.',
-        en: 'It is a small-size Silver Certificate, Fr. 1601 (P#412a), Woods–Mellon signatures, blue seal and serials. The nickname Funnyback describes the green reverse with an ornamental ONE, not an error. This piece is serial D00508932B, D–B block, a regular issue.',
+        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1601 (P#412a), firmas Woods–Mellon, sello y seriales azules. El apodo Funnyback describe el reverso verde con un ONE ornamental, no un error. Esta pieza es el serial D00508932B, bloque D–B, emisión ordinaria. No es el Fr. 1600 serie 1928, serial H86110669A.',
+        en: 'It is a small-size Silver Certificate, Fr. 1601 (P#412a), Woods–Mellon signatures, blue seal and serials. The nickname Funnyback describes the green reverse with an ornamental ONE, not an error. This piece is serial D00508932B, D–B block, a regular issue. It is not the Series 1928 Fr. 1600, serial H86110669A.',
       },
     },
     {
