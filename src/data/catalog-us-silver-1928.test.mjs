@@ -44,8 +44,16 @@ describe('US Series 1928 Silver Certificate $1 Fr. 1600', () => {
     assert.match(note, /rango compartido 1928\/1928 A/);
     assert.match(note, /shared 1928\/1928A range/);
     assert.match(note, /H00000001A/);
-    assert.match(note, /no inventa una tirada solo del bloque/);
-    assert.match(note, /does not invent a block-only printage/);
+    assert.match(note, /No hay una tirada publicada solo de la serie 1928/);
+    assert.match(note, /no published Series 1928-only printage/);
+    assert.doesNotMatch(note, /Esta ficha no inventa/);
+    assert.doesNotMatch(note, /This record does not invent/);
+    assert.doesNotMatch(note, /no republica columnas de precio/);
+    assert.doesNotMatch(note, /does not republish price columns/);
+    assert.match(note, /En 1878 el Tesoro emitió los primeros certificados de plata/);
+    assert.match(note, /In 1878 the Treasury issued the first silver certificates/);
+    assert.match(note, /cerca de un 30 %/);
+    assert.match(note, /about 30 percent/);
     assert.match(note, /86110669 no es un serial bajo/);
     assert.match(note, /86110669 is not a low serial/);
     assert.doesNotMatch(note, /Decreto 188/);
