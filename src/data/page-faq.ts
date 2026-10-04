@@ -297,6 +297,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar United States Note de 1928?',
+        en: 'What is the Series 1928 United States Note $1?',
+      },
+      answer: {
+        es: 'Es el único Legal Tender Note de 1 dólar en tamaño pequeño, Fr. 1500 (P#377), firmas Woods–Woodin, sello y seriales rojos y reverso Funnyback. La serie 1928 nombra el tipo: el BEP lo imprimió en 1933. Esta pieza es el serial A01772521A, bloque A–A, plancha de anverso 21 y reverso 2467. Circulada, sin encapsular. El certificado de plata serie 1928 A de esta colección es otro billete: sello azul, Fr. 1601, serial D00508932B.',
+        en: 'It is the only small-size Legal Tender $1, Fr. 1500 (P#377), Woods–Woodin signatures, red seal and serials, and a Funnyback reverse. Series 1928 names the type: the BEP printed it in 1933. This piece is serial A01772521A, A–A block, face plate 21 and back plate 2467. Circulated, unslabbed. This collection’s Series 1928A Silver Certificate is a different note: blue seal, Fr. 1601, serial D00508932B.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué son los National Bank Notes, la Fractional Currency y los Coin Notes?',
         en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
       },
