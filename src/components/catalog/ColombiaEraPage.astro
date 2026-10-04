@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
-import CatalogThumb from './CatalogThumb.astro';
+import ColombiaHoldingGrid from './ColombiaHoldingGrid.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import {
@@ -11,8 +11,7 @@ import {
   seriesSources,
   type ColombiaChapter,
 } from '../../data/colombia';
-import { notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
-import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
+import { notesForChapter, seriesCardGroupsForChapter } from '../../data/colombia-notes';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -23,7 +22,7 @@ interface Props {
 const { locale, chapter } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = eraPath(chapter.id, locale);
-const cards = seriesCardsForChapter(chapter.id);
+const groups = seriesCardGroupsForChapter(chapter.id);
 const hasHoldings = notesForChapter(chapter.id).length > 0;
 const title = t.eraMetaTitle(chapter.title[locale]);
 const jsonLd = collectionPageJsonLd({
@@ -68,31 +67,14 @@ const jsonLd = collectionPageJsonLd({
             <h2 id="era-holdings-heading" class="mb-6 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
               {t.eraHoldings}
             </h2>
-            <ol class:list={['mb-0 mt-0 list-none p-0', CATALOG_PIECE_GRID]}>
-              {cards.map(({ note, piece }) => (
-                <li class="min-w-0">
-                  <a
-                    href={seriesCardHref(note, piece, locale)}
-                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                  >
-                    <CatalogThumb
-                      src={piece.images.front}
-                      alt={piece.frontCaption[locale]}
-                      width={1440}
-                      height={960}
-                      class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
-                    />
-                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                      {piece.title[locale]}
-                    </h3>
-                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                      {t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
-                    </p>
-                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                  </a>
-                </li>
-              ))}
-            </ol>
+            <ColombiaHoldingGrid
+              locale={locale}
+              groups={groups}
+              listLabel={t.eraHoldings}
+              pickLabel={t.pickLabel}
+              serialLabel={t.serialLabel}
+              viewNote={t.viewNote}
+            />
           </section>
         ) : (
           <p class="m-0 text-[17px]/7 text-muted">{t.eraEmpty}</p>

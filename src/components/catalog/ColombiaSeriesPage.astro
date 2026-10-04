@@ -17,9 +17,10 @@ import {
 import { BANCA_LIBRE_PATH } from '../../data/colombia-banca-libre';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
-import { notePath, notesForChapter, seriesCardHref, seriesCardsForChapter } from '../../data/colombia-notes';
+import { notePath, notesForChapter, seriesCardGroupsForChapter, seriesCardHref } from '../../data/colombia-notes';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { catalogAssetSrc } from '../../lib/images';
+import ColombiaHoldingGrid from './ColombiaHoldingGrid.astro';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -136,36 +137,15 @@ const jsonLd = collectionPageJsonLd({
               }
               {
                 notesForChapter(chapter.id).length > 0 ? (
-                  <ol
-                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
-                    aria-label={chapter.title[locale]}
-                  >
-                    {seriesCardsForChapter(chapter.id).map(({ note, piece }) => {
-                      return (
-                      <li class="min-w-0">
-                        <a
-                          href={seriesCardHref(note, piece, locale)}
-                          class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                        >
-                          <CatalogThumb
-                    src={piece.images.front}
-                    alt={piece.frontCaption[locale]}
-                    width={1440}
-                    height={960}
-                    class="mb-3 aspect-[3/2] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                  <ColombiaHoldingGrid
+                    locale={locale}
+                    groups={seriesCardGroupsForChapter(chapter.id)}
+                    listLabel={chapter.title[locale]}
+                    pickLabel={t.pickLabel}
+                    serialLabel={t.serialLabel}
+                    viewNote={t.viewNote}
+                    class="mt-8"
                   />
-                          <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                            {piece.title[locale]}
-                          </h3>
-                          <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                            {note.pickLabel?.[locale] ?? t.pickLabel} {piece.pick} · {t.serialLabel} {piece.serial}
-                          </p>
-                          <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
-                        </a>
-                      </li>
-                      );
-                    })}
-                  </ol>
                 ) : null
               }
             </section>
