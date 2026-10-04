@@ -251,8 +251,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1935A HAWAII $1?',
       },
       answer: {
-        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un sello amarillo, ni un Funnyback.',
-        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a, a yellow-seal note, or a Funnyback.',
+        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un Funnyback. El sello amarillo de esta colección es el Fr. 2306, serial B52497547C.',
+        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a or a Funnyback. This collection’s yellow seal is Fr. 2306, serial B52497547C.',
       },
     },
     {
@@ -517,8 +517,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were the yellow-seal silver certificates?',
       },
       answer: {
-        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso.',
-        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type.',
+        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, circulada y sin encapsular.',
+        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, circulated and unslabbed.',
       },
     },
     {

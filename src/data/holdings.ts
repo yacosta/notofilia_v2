@@ -209,6 +209,7 @@ export const additions: Holding[] = [
   { id: 'es-nd-2-escudos-sevilla-felipe-ii-sd', kind: 'coin', country: 'ES' },
   { id: 'co-1791-2-escudos-popayan-p-sf', kind: 'coin', country: 'CO' },
   { id: 'us-usn-1928-1-a01772521a', kind: 'banknote', country: 'US' },
+  { id: 'us-sc-1935a-yellow-seal-b52497547c', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1928-h86110669a', kind: 'banknote', country: 'US' },
 ];
 
@@ -345,6 +346,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'es-nd-2-escudos-sevilla-cal828' },
   { id: 'co-1791-2-escudos-popayan-km51-2' },
   { id: 'us-usn-1928-1-p377-fr1500' },
+  { id: 'us-sc-1935a-yellow-seal-fr2306' },
   { id: 'us-sc-1928-fr1600' },
 ];
 
