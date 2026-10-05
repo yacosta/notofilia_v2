@@ -368,6 +368,16 @@ export const wwiiEmergencySources: CatalogSource[] = [
     en: 'CoinWeek — 1944 R and S experimentals',
   },
   {
+    href: 'https://www.pmgnotes.com/news/article/4946/small-size-silver-certificates-and-experimental-notes/',
+    es: 'PMG — certificados de plata de tamaño pequeño y experimentales R y S',
+    en: 'PMG — small-size silver certificates and R and S experimentals',
+  },
+  {
+    href: 'https://www.uspapermoney.info/serials/s1935zs.html',
+    es: 'USPaperMoney.info — seriales del 1 dólar, series 1935–1935 D',
+    en: 'USPaperMoney.info — Series 1935–1935D $1 serials',
+  },
+  {
     href: 'http://www.neilsberman.com/currency/PaperMoneyoftheUS_Part5_Emergency_Notes.pdf',
     es: 'Friedberg / Berman — Emergency Notes (tiradas HAWAII y sello amarillo)',
     en: 'Friedberg / Berman — Emergency Notes (HAWAII and yellow-seal printages)',
