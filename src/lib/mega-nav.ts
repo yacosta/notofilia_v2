@@ -101,6 +101,16 @@ if (!usMorgan1885Cc) {
   throw new Error('Missing US 1885-CC Morgan dollar for mega-nav');
 }
 
+const usMorgan1884S = coinById('1-dolar-morgan-1884-s');
+if (!usMorgan1884S) {
+  throw new Error('Missing US 1884-S Morgan dollar for mega-nav');
+}
+
+const usMorgan1883Cc = coinById('1-dolar-morgan-1883-cc');
+if (!usMorgan1883Cc) {
+  throw new Error('Missing US 1883-CC Morgan dollar for mega-nav');
+}
+
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
 if (!usHt34) {
   throw new Error('Missing US Hard Times HT-34 token for mega-nav');
@@ -487,6 +497,18 @@ export const megaNav: NavNode[] = [
             es: usGoldDollar1856.title.es,
             en: usGoldDollar1856.title.en,
             href: usGoldDollar1856.path,
+          },
+          {
+            id: 'us-1884-s-1-dolar-morgan',
+            es: usMorgan1884S.title.es,
+            en: usMorgan1884S.title.en,
+            href: usMorgan1884S.path,
+          },
+          {
+            id: 'us-1-dolar-morgan-1883-cc',
+            es: usMorgan1883Cc.title.es,
+            en: usMorgan1883Cc.title.en,
+            href: usMorgan1883Cc.path,
           },
           {
             id: 'us-1-dolar-morgan-1885-cc',

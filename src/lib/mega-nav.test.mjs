@@ -325,6 +325,8 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
     assert.match(source, /coinById\('1-dolar-oro-1856-cabeza-grande'\)/);
     assert.match(source, /coinById\('1-dolar-morgan-1885-cc'\)/);
+    assert.match(source, /coinById\('1-dolar-morgan-1884-s'\)/);
+    assert.match(source, /coinById\('1-dolar-morgan-1883-cc'\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
@@ -337,6 +339,8 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
     assert.match(usBlock, /id: 'us-1-dolar-oro-1856-cabeza-grande'/);
     assert.match(usBlock, /id: 'us-1-dolar-morgan-1885-cc'/);
+    assert.match(usBlock, /id: 'us-1884-s-1-dolar-morgan'/);
+    assert.match(usBlock, /id: 'us-1-dolar-morgan-1883-cc'/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);

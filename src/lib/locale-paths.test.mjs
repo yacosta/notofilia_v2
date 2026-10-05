@@ -186,6 +186,14 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-morgan-1885-cc/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
+    );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
+    );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
@@ -906,6 +914,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/'],
       '/en/collection/united-states-numismatics/1-dollar-morgan-1885-cc/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/'],
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/'],
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],

@@ -1,0 +1,9 @@
+---
+import UnitedStatesCoinPage from '../../../../components/catalog/UnitedStatesCoinPage.astro';
+import { coinById } from '../../../../data/estados-unidos-coinage';
+
+const coin = coinById('1-dolar-morgan-1884-s');
+if (!coin) throw new Error('Missing United States 1884-S Morgan dollar catalog coin');
+---
+
+<UnitedStatesCoinPage locale="es" coin={coin} />

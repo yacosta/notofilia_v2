@@ -53,8 +53,8 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house struck the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 dollar in this case.',
     },
     body: {
-      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el dólar de oro de 1856, tipo 3 de James Barton Longacre, el quarter eagle Liberty Head de 1878, oro de 900 milésimas de Christian Gobrecht, y los cuartos de águila Indian Head de 1908 y 1912, diseño incuso de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. No se pretende cubrir Liberty Seated ni Lincoln. El dólar Morgan de 1885, con marca CC, está en el capítulo del dólar Morgan. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
-      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1856 gold dollar, James Barton Longacre’s Type 3, the 1878 Liberty Head quarter eagle, 900-fine gold by Christian Gobrecht, and the 1908 and 1912 Indian Head quarter eagles, Bela Lyon Pratt’s incuse design. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated and Lincoln are not covered here. The 1885 Morgan dollar, with the CC mint mark, is in the Morgan dollar chapter. This country’s legal-tender paper is catalogued separately, under Notaphily.',
+      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el dólar de oro de 1856, tipo 3 de James Barton Longacre, el quarter eagle Liberty Head de 1878, oro de 900 milésimas de Christian Gobrecht, y los cuartos de águila Indian Head de 1908 y 1912, diseño incuso de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. Liberty Seated y el centavo Lincoln quedan fuera de esta vitrina. Los dólares Morgan de 1884-S, de 1883-CC y de 1885-CC están en el capítulo del dólar de plata. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
+      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1856 gold dollar, James Barton Longacre’s Type 3, the 1878 Liberty Head quarter eagle, 900-fine gold by Christian Gobrecht, and the 1908 and 1912 Indian Head quarter eagles, Bela Lyon Pratt’s incuse design. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated and the Lincoln cent sit outside this case. The 1884-S, 1883-CC, and 1885-CC Morgan dollars are in the silver-dollar chapter. This country’s legal-tender paper is catalogued separately, under Notaphily.',
     },
   },
   {
@@ -65,12 +65,12 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'The Morgan dollar',
     },
     lead: {
-      es: 'Plata .900 de George T. Morgan, del dólar autorizado en 1878. Esta vitrina documenta el ejemplar de Carson City de 1885, con marca CC.',
-      en: '.900 silver by George T. Morgan, from the dollar authorized in 1878. This case records the 1885 Carson City example, with the CC mint mark.',
+      es: 'La ley del 28 de febrero de 1878 volvió a autorizar el dólar de plata de 26,73 g. Esta vitrina guarda el ejemplar de San Francisco de 1884, con la S bajo el lazo, y los de Carson City de 1883 y de 1885, con la CC bajo la corona.',
+      en: 'The act of 28 February 1878 restored the 26.73 g silver dollar. This case holds the 1884 San Francisco piece, with the S under the bow, and the 1883 and 1885 Carson City pieces, with the CC under the wreath.',
     },
     body: {
-      es: 'La Bland-Allison Act del 28 de febrero de 1878 obligó al Tesoro a comprar plata y acuñar dólares. George T. Morgan grabó las dos caras: la Libertad de perfil a la izquierda, con LIBERTY en la diadema, y el águila con rama de olivo y flechas, dentro de una corona. La marca de ceca va bajo el lazo, sobre ONE DOLLAR. Carson City, en Nevada, acuñó este tipo entre 1878 y 1885 y, tras el cierre, de nuevo entre 1889 y 1893. El dólar de 1885-CC cierra ese primer periodo: la casa dejó de acuñar en noviembre de 1885 y no reanudó la moneda hasta el 1 de julio de 1889. PCGS da 228.000 piezas, con entregas de 100.000 en enero, 100.000 en febrero y 28.000 en agosto, todas fechadas 1885. Al cierre de las dispersiones del Tesoro de 1962–1964 quedaron 148.285 ejemplares reservados para las ventas de la General Services Administration. Esta vitrina documenta un ejemplar suelto, sin cápsula y sin procedencia GSA. No cubre el resto de la serie.',
-      en: 'The Bland-Allison Act of 28 February 1878 required the Treasury to buy silver and strike dollars. George T. Morgan engraved both sides: Liberty in profile facing left, with LIBERTY on the coronet, and the eagle with an olive branch and arrows, inside a wreath. The mint mark sits under the bow, above ONE DOLLAR. Carson City, Nevada, struck this type from 1878 to 1885 and, after the closure, again from 1889 to 1893. The 1885-CC dollar closes that first period: the house stopped coining in November 1885 and did not resume coinage until 1 July 1889. PCGS gives 228,000 pieces, with deliveries of 100,000 in January, 100,000 in February, and 28,000 in August, all dated 1885. At the end of the 1962–1964 Treasury dispersals, 148,285 examples were held back for the General Services Administration sales. This case records one raw example, with no holder and no GSA provenance. It does not cover the rest of the series.',
+      es: 'La ley de acuñación de 1873 omitió el dólar de plata estándar. El 28 de febrero de 1878 el Congreso, por encima del veto, aprobó la ley que autoriza su acuñación y le devuelve el curso legal: el secretario del Tesoro debía comprar cada mes no menos de dos millones de dólares en plata, ni más de cuatro, y convertirla en esos dólares. La United States Mint fija el peso y la ley en los de la ley del 18 de enero de 1837: 26,73 g, 90 % plata y 10 % cobre. George T. Morgan grabó el tipo: Libertad a la izquierda en el anverso, y un águila con flechas y rama de olivo en el reverso. Las primeras piezas salieron en 1878 en Filadelfia, San Francisco y Carson City; Nueva Orleans se sumó al año siguiente. La serie llega hasta 1904 y reaparece en 1921. Esta vitrina no cubre el Peace dollar ni el trade dollar. Documenta un dólar Morgan de 1884 con marca S, otro de 1883 con marca CC y otro de 1885 con marca CC, los tres sueltos y sin número de serie. El 1883 sin letra es Filadelfia. El 1885-CC cierra el primer periodo de Carson City: la casa dejó de acuñar en noviembre de 1885 y reanudó la moneda el 1 de julio de 1889. PCGS da 228.000 piezas. Tras las dispersiones del Tesoro de 1962–1964 quedaron 148.285 ejemplares para las ventas de la GSA. Este 1885-CC no tiene procedencia GSA documentada.',
+      en: 'The coinage act of 1873 dropped the standard silver dollar. On 28 February 1878 Congress, over a veto, passed the act that authorizes its coinage and restores legal tender: the Treasury secretary was to buy each month not less than two million dollars of silver, and not more than four, and coin it into those dollars. The United States Mint sets the weight and fineness at those of the act of 18 January 1837: 26.73 g, 90% silver and 10% copper. George T. Morgan engraved the type: Liberty facing left on the obverse, and an eagle with arrows and an olive branch on the reverse. The first pieces came in 1878 at Philadelphia, San Francisco, and Carson City; New Orleans joined the next year. The series runs to 1904 and returns in 1921. This case does not cover the Peace dollar or the trade dollar. It records one 1884 Morgan dollar with an S mint mark, one 1883 Morgan dollar with a CC mint mark, and one 1885 Morgan dollar with a CC mint mark, all three raw and with no serial number. The 1883 with no letter is Philadelphia. The 1885-CC closes Carson City’s first coinage period: the house stopped striking in November 1885 and resumed coinage on 1 July 1889. PCGS gives 228,000 pieces. After the 1962–1964 Treasury dispersals, 148,285 examples were held for the GSA sales. This 1885-CC has no documented GSA provenance.',
     },
   },
   {
@@ -154,6 +154,15 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://www.usmint.gov/news/inside-the-mint/one-hundred-years-of-silver-dollar-coinage-1878-1978',
+    es: 'United States Mint — Cien años del dólar de plata, 1878–1978',
+    en: 'United States Mint — One hundred years of silver dollar coinage, 1878–1978',
+    note: {
+      es: 'Bland–Allison reautorizó el dólar de 26,73 g y ley .900 del acta de 1837. Morgan lo diseñó. Filadelfia, San Francisco y Carson City acuñaron en 1878. No se republican precios.',
+      en: 'Bland–Allison reauthorized the 26.73 g, .900 dollar of the 1837 act. Morgan designed it. Philadelphia, San Francisco, and Carson City struck it in 1878. Prices are not republished.',
+    },
+  },
+  {
     href: 'https://en.wikipedia.org/wiki/Hard_times_token',
     es: 'Wikipedia — Hard times token',
     en: 'Wikipedia — Hard times token',
@@ -172,21 +181,12 @@ export const seriesSources: CatalogSource[] = [
     },
   },
   {
-    href: 'https://www.pcgs.com/coinfacts/coin/1885-cc-1/7160',
-    es: 'PCGS CoinFacts — 1885-CC, 1 dólar Morgan (7160)',
-    en: 'PCGS CoinFacts — 1885-CC Morgan dollar (7160)',
+    href: 'https://www.govinfo.gov/content/pkg/STATUTE-20/pdf/STATUTE-20-Pg25-2.pdf',
+    es: '20 Stat. 25 — Ley del dólar de plata estándar (28 feb. 1878)',
+    en: '20 Stat. 25 — Standard silver dollar act (28 Feb. 1878)',
     note: {
-      es: 'George T. Morgan; Carson City; plata .900; 26,73 g; 38,10 mm; canto estriado; tirada 228.000. No se republican precios.',
-      en: 'George T. Morgan; Carson City; .900 silver; 26.73 g; 38.10 mm; reeded edge; mintage 228,000. Prices are not republished.',
-    },
-  },
-  {
-    href: 'https://en.numista.com/1492',
-    es: 'Numista — 1 dólar Morgan (N# 1492)',
-    en: 'Numista — Morgan dollar (N# 1492)',
-    note: {
-      es: 'KM# 110; 1878–1921; plata .900; 26,73 g; 38,1 mm; canto estriado. El 1885 CC figura en 228.000. No se republican precios.',
-      en: 'KM# 110; 1878–1921; .900 silver; 26.73 g; 38.1 mm; reeded edge. The 1885 CC is listed at 228,000. Prices are not republished.',
+      es: 'Compra mensual de plata, entre dos y cuatro millones de dólares, para acuñarla en dólares de curso legal.',
+      en: 'Monthly silver purchases, between two and four million dollars, to be coined into legal-tender dollars.',
     },
   },
 ];
@@ -195,19 +195,19 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times, el dólar Morgan de 1885-CC, el dólar de oro de 1856, los cuartos de águila y el 1 $ de 2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times, los dólares Morgan de 1883-CC, 1884-S y 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
     kicker: 'Estados Unidos · Numismática',
-    title: 'Hard Times, el Morgan de 1885 y el oro de Filadelfia',
+    title: 'Hard Times, Filadelfia, el Morgan y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el dólar Morgan de 1885 de Carson City —plata .900, marca CC, George T. Morgan—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El Morgan de 1885-CC es plata, no oro, y está suelto. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt—, con los dólares Morgan de 1884-S, 1883-CC y 1885-CC —plata .900 de George T. Morgan, marca S de San Francisco y marca CC de Carson City— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'La media águila, el águila de diez dólares, el doble águila, los centavos de la Mint y los medios dólares se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cinco capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el dólar Morgan de 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912 y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Cinco capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     sourcesTitle: 'Fuentes',
@@ -219,19 +219,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens, the 1885-CC Morgan dollar, the 1856 gold dollar, the quarter eagles, and the 2026 $1.',
+      'Catalog of United States coinage: Hard Times tokens, the 1883-CC, 1884-S, and 1885-CC Morgan dollars, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
     kicker: 'United States · Numismatics',
-    title: 'Hard Times, the 1885 Morgan, and Philadelphia gold',
+    title: 'Hard Times, Philadelphia, the Morgan, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1885 Carson City Morgan dollar — .900 silver, CC mint mark, George T. Morgan — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1885-CC Morgan is silver, not gold, and it is raw. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — with the 1884-S, 1883-CC, and 1885-CC Morgan dollars — George T. Morgan’s .900 silver, San Francisco S and Carson City CC — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'The half eagle, the ten-dollar eagle, the double eagle, Mint cents, and half dollars will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Five chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1885-CC Morgan dollar, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 1776–2026 $1 documented in this collection.',
+      'Five chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     sourcesTitle: 'Sources',
@@ -252,6 +252,8 @@ export type UnitedStatesCoinId =
   | '2-50-dolares-1908-cabeza-de-indio'
   | '2-50-dolares-1912-indian-head'
   | '1-dolar-oro-1856-cabeza-grande'
+  | '1-dolar-morgan-1884-s'
+  | '1-dolar-morgan-1883-cc'
   | '1-dolar-morgan-1885-cc';
 
 export type UnitedStatesCoin = {
@@ -1548,6 +1550,273 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     ],
   },
   {
+    id: '1-dolar-morgan-1884-s',
+    path: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/',
+    pathEn: '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
+    chapterId: 'dolar-morgan',
+    year: '1884',
+    mint: {
+      es: 'San Francisco (marca S)',
+      en: 'San Francisco (S mint mark)',
+    },
+    denomination: {
+      es: '1 dólar',
+      en: '1 dollar',
+    },
+    composition: {
+      es: 'Plata .900 (90 % Ag, 10 % Cu); ley del tipo, no un ensaye de este ejemplar',
+      en: 'Silver .900 (90% Ag, 10% Cu); type fineness, not an assay of this specimen',
+    },
+    weight: {
+      es: '26,73 g (peso de tipo; este ejemplar no se pesó)',
+      en: '26.73 g (type weight; this specimen was not weighed)',
+    },
+    diameter: {
+      es: '38,10 mm (medida de tipo; este ejemplar no se midió)',
+      en: '38.10 mm (type measurement; this specimen was not measured)',
+    },
+    edge: {
+      es: 'Estriado (tipo publicado; el canto no está en las fotos)',
+      en: 'Reeded (published type; the edge is not in the photographs)',
+    },
+    references: 'KM# 110 · PCGS# 7156 · N# 1492',
+    grade: {
+      es: 'Sin encapsular. Desgaste en el retrato y en el águila, y marcas en los campos. No es un grado numérico.',
+      en: 'Unslabbed. Wear on the portrait and the eagle, and marks in the fields. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Struck United States Morgan dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-back.jpg',
+      width: 3344,
+      height: 941,
+      faceWidth: 1672,
+      faceHeight: 941,
+    },
+    title: {
+      es: '1 dólar Morgan · San Francisco · 1884',
+      en: 'Morgan dollar · San Francisco · 1884',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Mint',
+      en: 'United States · United States Mint',
+    },
+    lead: {
+      es: 'Dólar Morgan de San Francisco, 1884, marca S bajo el lazo. Plata .900, diseño de George T. Morgan. Sin serial, sin VAM y sin encapsular.',
+      en: 'San Francisco Morgan dollar, 1884, S mint mark under the bow. .900 silver, George T. Morgan. No serial, no VAM, and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es un dólar Morgan de 1884 acuñado en San Francisco. El anverso muestra la Libertad a la izquierda, con gorro frigio, algodón y trigo en el tocado, la cinta LIBERTY y la leyenda E PLURIBUS UNUM; abajo, la fecha 1884 entre estrellas. El reverso lleva el águila con las alas abiertas, flechas y rama de olivo, IN GOD WE TRUST sobre el ave, UNITED STATES OF AMERICA en el arco y ONE DOLLAR bajo la corona. La letra bajo el lazo, encima de DOLLAR, es la marca S. PCGS numera esa acuñación de circulación como 7156. El tipo es plata de 900 milésimas, 26,73 g y 38,10 mm, con canto estriado: son medidas de la emisión, no un pesaje ni un calibre de este ejemplar. Las fotos no muestran el canto. El tipo lleva la M de Morgan en el corte del cuello y en el lazo del reverso; estas fotos no la muestran con la claridad suficiente para registrarla. No se asigna variedad VAM. La pieza está suelta, sin cápsula. El desgaste del retrato y del águila, y las marcas de los campos, se ven en las fotografías; no equivalen a un grado numérico ni certifican autenticidad.',
+      en: 'This piece is an 1884 Morgan dollar struck at San Francisco. The obverse shows Liberty facing left, in a Phrygian cap with cotton and wheat, the band LIBERTY, and the legend E PLURIBUS UNUM; below, the date 1884 among stars. The reverse carries the eagle with spread wings, arrows and an olive branch, IN GOD WE TRUST above the bird, UNITED STATES OF AMERICA on the arc, and ONE DOLLAR under the wreath. The letter under the bow, above DOLLAR, is the S mint mark. PCGS numbers that business strike 7156. The type is 900-fine silver, 26.73 g and 38.10 mm, with a reeded edge: those are issue standards, not a weight or a caliper reading of this example. The photographs do not show the edge. The type carries an M for Morgan on the neck truncation and on the reverse bow; these photographs do not show that letter clearly enough to record it. No VAM variety is assigned. The piece is raw, with no holder. Wear on the portrait and the eagle, and marks in the fields, show in the photographs; they are not a numerical grade and they do not certify authenticity.',
+    },
+    history: {
+      es: 'La ley de acuñación de 1873 omitió el dólar de plata estándar. El 28 de febrero de 1878 el Congreso superó el veto y aprobó la ley que lo autoriza de nuevo y le devuelve el curso legal, conocida como Bland-Allison: cada mes el Tesoro compraba no menos de dos millones de dólares en plata, ni más de cuatro, y la acuñaba en esos dólares. La United States Mint sitúa el peso y la ley en los de la ley del 18 de enero de 1837 —26,73 g, 90 % plata y 10 % cobre— y atribuye el diseño a George T. Morgan. Las primeras piezas son de 1878. Filadelfia no pone marca; San Francisco usa S, Nueva Orleans O y Carson City CC. PCGS y Numista dan a la 1884-S una tirada de 3.200.000. La misma fecha existe sin marca, con O y con CC: esta pieza lleva la S. PCGS trata la 1884-S como rareza de estado: la mayor parte salió pronto a la circulación y, sin circular, es escasa. Esa nota es del tipo, no un grado de este ejemplar. Esta ficha no copia estimaciones de supervivencia ni un precio.',
+      en: 'The coinage act of 1873 dropped the standard silver dollar. On 28 February 1878 Congress overrode the veto and passed the act that authorizes it again and restores legal tender, known as Bland-Allison: each month the Treasury bought not less than two million dollars of silver, and not more than four, and coined it into those dollars. The United States Mint places the weight and fineness at those of the act of 18 January 1837 — 26.73 g, 90% silver and 10% copper — and attributes the design to George T. Morgan. The first pieces are dated 1878. Philadelphia uses no mint mark; San Francisco uses S, New Orleans O, and Carson City CC. PCGS and Numista give the 1884-S a mintage of 3,200,000. The same date exists with no mark, with O, and with CC: this piece carries the S. PCGS treats the 1884-S as a condition rarity: most of the issue entered circulation early, and uncirculated pieces are scarce. That note describes the type, not a grade of this example. This record copies neither survival estimates nor a price.',
+    },
+    obverseLegend: {
+      es: 'E PLURIBUS UNUM · LIBERTY en la cinta · 1884.',
+      en: 'E PLURIBUS UNUM · LIBERTY on the band · 1884.',
+    },
+    reverseLegend: {
+      es: 'UNITED STATES OF AMERICA · IN GOD WE TRUST · ONE DOLLAR · marca S bajo el lazo.',
+      en: 'UNITED STATES OF AMERICA · IN GOD WE TRUST · ONE DOLLAR · S mint mark under the bow.',
+    },
+    frontCaption: {
+      es: 'Anverso: Libertad a la izquierda, cinta LIBERTY y fecha 1884.',
+      en: 'Obverse: Liberty facing left, LIBERTY band, and the date 1884.',
+    },
+    backCaption: {
+      es: 'Reverso: águila, flechas y olivo; ONE DOLLAR y marca S bajo el lazo.',
+      en: 'Reverse: eagle, arrows, and olive branch; ONE DOLLAR and the S under the bow.',
+    },
+    scarcity: {
+      es: 'PCGS CoinFacts (7156) publica la tirada de San Francisco: 3.200.000. Numista (N# 1492) anota la misma cifra en la línea 1884 S. La fecha es una rareza de estado, no una tirada baja: abunda circulada y escasea sin circular. No se reproduce aquí un censo de encapsulados, una estimación de supervivientes ni un precio. El 1884 sin marca, el 1884-O y el 1884-CC son otras piezas.',
+      en: 'PCGS CoinFacts (7156) publishes the San Francisco mintage: 3,200,000. Numista (N# 1492) lists the same figure on the 1884 S line. The date is a condition rarity, not a low mintage: it is common circulated and scarce uncirculated. This record reprints neither a slab census, nor a survival estimate, nor a price. The 1884 with no mint mark, the 1884-O, and the 1884-CC are other pieces.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1884 y marca S bajo el lazo—, no un certificado. Las fotos no confirman autenticidad, limpieza ni un grado numérico. No se asigna VAM. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no holder. This module carries no serial number. The identity of this record is the photographed object — date 1884 and an S under the bow — not a certificate. The photographs do not confirm authenticity, cleaning, or a numerical grade. No VAM is assigned. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1884-s-1/7156',
+        es: 'PCGS CoinFacts — 1884-S, 1 dólar Morgan (7156)',
+        en: 'PCGS CoinFacts — 1884-S Morgan dollar (7156)',
+        note: {
+          es: 'George T. Morgan; San Francisco; business strike. Plata 90 %, 26,73 g, 38,10 mm, canto estriado. Tirada 3.200.000. No se republican precios ni un censo.',
+          en: 'George T. Morgan; San Francisco; business strike. 90% silver, 26.73 g, 38.10 mm, reeded edge. Mintage 3,200,000. Prices and a census are not republished.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/1492',
+        es: 'Numista — 1 dólar Morgan (N# 1492)',
+        en: 'Numista — Morgan dollar (N# 1492)',
+        note: {
+          es: 'KM# 110; 1878–1921; plata .900; 26,73 g; 38,1 mm; canto estriado. La línea 1884 S da 3.200.000. No se republican precios.',
+          en: 'KM# 110; 1878–1921; .900 silver; 26.73 g; 38.1 mm; reeded edge. The 1884 S line gives 3,200,000. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.usmint.gov/news/inside-the-mint/one-hundred-years-of-silver-dollar-coinage-1878-1978',
+        es: 'United States Mint — Cien años del dólar de plata (1878–1978)',
+        en: 'United States Mint — One hundred years of silver dollar coinage (1878–1978)',
+        note: {
+          es: 'Bland-Allison restablece el peso y la ley de 1837. Diseño de George T. Morgan: Libertad y águila heráldica. San Francisco acuña desde 1878.',
+          en: 'Bland-Allison restores the 1837 weight and fineness. Design by George T. Morgan: Liberty and a heraldic eagle. San Francisco strikes from 1878.',
+        },
+      },
+      {
+        href: 'https://www.govinfo.gov/content/pkg/STATUTE-20/pdf/STATUTE-20-Pg25-2.pdf',
+        es: '20 Stat. 25 — Ley del dólar de plata estándar (28 feb. 1878)',
+        en: '20 Stat. 25 — Standard silver dollar act (28 Feb. 1878)',
+        note: {
+          es: 'Autoriza el dólar de plata de curso legal y ordena la compra mensual de plata, entre dos y cuatro millones de dólares, para acuñarla.',
+          en: 'Authorizes the legal-tender silver dollar and orders the monthly purchase of silver, between two and four million dollars, to be coined.',
+        },
+      },
+      {
+        href: 'https://www.usmint.gov/news/inside-the-mint/mint-history-crime-of-1873',
+        es: 'United States Mint — El «Crime of 1873»',
+        en: 'United States Mint — The “Crime of 1873”',
+        note: {
+          es: 'Contexto de la ley de 1873 y del Bland-Allison de 1878, que ordena comprar cada mes entre dos y cuatro millones de dólares en plata.',
+          en: 'Context for the 1873 act and for Bland-Allison in 1878, which orders monthly purchases of two to four million dollars of silver.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-morgan-1883-cc',
+    path: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/',
+    pathEn: '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
+    chapterId: 'dolar-morgan',
+    year: '1883',
+    mint: {
+      es: 'Carson City (marca CC)',
+      en: 'Carson City (CC mint mark)',
+    },
+    denomination: {
+      es: '1 dólar',
+      en: '1 dollar',
+    },
+    composition: {
+      es: 'Plata .900 (90 % Ag, 10 % Cu)',
+      en: 'Silver .900 (90% Ag, 10% Cu)',
+    },
+    weight: {
+      es: '26,73 g (especificación de emisión; este ejemplar no se pesó)',
+      en: '26.73 g (issue specification; this example was not weighed)',
+    },
+    diameter: {
+      es: '38,1 mm (especificación de emisión; este ejemplar no se midió)',
+      en: '38.1 mm (issue specification; this example was not measured)',
+    },
+    edge: {
+      es: 'Estriado (especificación de emisión; el canto no está fotografiado)',
+      en: 'Reeded (issue specification; the edge is not photographed)',
+    },
+    references: 'KM# 110 · PCGS# 7144 · N# 1492',
+    grade: {
+      es: 'Sin encapsular (colección privada)',
+      en: 'Unslabbed (private collection)',
+    },
+    no_serial_reason:
+      'Struck United States Morgan silver dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-back.jpg',
+      width: 3344,
+      height: 941,
+      faceWidth: 1672,
+      faceHeight: 941,
+    },
+    title: {
+      es: '1 dólar Morgan · Carson City · 1883',
+      en: 'Morgan dollar · Carson City · 1883',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Mint',
+      en: 'United States · United States Mint',
+    },
+    lead: {
+      es: 'Dólar Morgan de Carson City, 1883, con marca CC. Plata de 900 milésimas, diseño de George T. Morgan, sin serial y sin encapsular.',
+      en: 'Carson City Morgan dollar, 1883, with the CC mint mark. .900 silver, George T. Morgan’s design, no serial, and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es el dólar Morgan de 1883 acuñado en Carson City. La marca CC se lee en el reverso, bajo la corona y encima de ONE DOLLAR. El anverso muestra el perfil de la Libertad a la izquierda, con gorro frigio, la cinta LIBERTY, el lema E PLURIBUS UNUM, trece estrellas y la fecha 1883. El reverso lleva el águila de alas abiertas, flechas y rama de olivo, la leyenda UNITED STATES OF AMERICA, IN GOD WE TRUST y ONE DOLLAR. George T. Morgan diseñó ambas caras. En el tipo, su inicial M va en el corte del cuello y en el lazo del reverso. PCGS numera el golpe de negocio 1883-CC como 7144. El 7145 es la designación PL, el 97145 la DMPL y el 518869 la atribución GSA Hoard. Esta fotografía no asigna PL, DMPL ni un VAM, y la pieza no está en un estuche GSA. Numista recoge el tipo como N# 1492, KM# 110. La ley publicada es 90 % plata y 10 % cobre, 26,73 g y 38,1 mm, con canto estriado: son especificaciones de emisión. Este ejemplar no se pesó ni se midió, y el canto queda fuera del encuadre. En la foto se ven líneas y marcas en los campos. La pieza está suelta, sin cápsula. El 1883 sin letra es Filadelfia (PCGS 7142); esta marca es CC.',
+      en: 'This piece is the 1883 Morgan dollar struck at Carson City. The CC mint mark reads on the reverse, under the wreath and above ONE DOLLAR. The obverse shows Liberty’s profile facing left, in a Phrygian cap, with the band LIBERTY, the motto E PLURIBUS UNUM, thirteen stars, and the date 1883. The reverse carries the eagle with spread wings, arrows and an olive branch, the legend UNITED STATES OF AMERICA, IN GOD WE TRUST, and ONE DOLLAR. George T. Morgan designed both sides. On the type, his initial M sits on the truncation of the neck and in the reverse bow. PCGS numbers the 1883-CC business strike 7144. 7145 is the PL designation, 97145 the DMPL, and 518869 the GSA Hoard attribution. This photograph assigns neither PL, DMPL, nor a VAM, and the piece is not in a GSA holder. Numista lists the type as N# 1492, KM# 110. The published standard is 90% silver and 10% copper, 26.73 g and 38.1 mm, with a reeded edge: those are issue specifications. This example was not weighed or measured, and the edge is outside the frame. The photograph shows lines and marks in the fields. The piece is raw, with no holder. The 1883 with no letter is Philadelphia (PCGS 7142); this mark is CC.',
+    },
+    history: {
+      es: 'La United States Mint explica que la ley Bland–Allison de 1878 reautorizó el dólar de plata al peso y la ley del acta del 18 de enero de 1837: 26,73 g y .900. El primer Morgan salió en Filadelfia en 1878 y, el mismo año, en San Francisco y Carson City, cerca de las minas del Oeste. El anverso empareja a la Libertad con el águila del reverso, que sostiene flechas y una rama de olivo. Carson City marcó sus piezas con CC. Esta ficha describe el objeto de la colección; no tasa la emisión.',
+      en: 'The United States Mint explains that the Bland–Allison Act of 1878 reauthorized the silver dollar at the weight and fineness of the act of 18 January 1837: 26.73 g and .900 fine. The first Morgan came from Philadelphia in 1878 and, the same year, from San Francisco and Carson City, near the mines of the West. The obverse pairs Liberty with the reverse eagle, which holds arrows and an olive branch. Carson City marked its pieces CC. This record describes the object in the collection; it does not value the issue.',
+    },
+    obverseLegend: {
+      es: 'E PLURIBUS UNUM · LIBERTY en la cinta · trece estrellas · 1883.',
+      en: 'E PLURIBUS UNUM · LIBERTY on the band · thirteen stars · 1883.',
+    },
+    reverseLegend: {
+      es: 'UNITED STATES OF AMERICA · IN GOD WE TRUST · ONE DOLLAR · marca CC bajo la corona.',
+      en: 'UNITED STATES OF AMERICA · IN GOD WE TRUST · ONE DOLLAR · CC mint mark under the wreath.',
+    },
+    frontCaption: {
+      es: 'Anverso: perfil de la Libertad a la izquierda, cinta LIBERTY, E PLURIBUS UNUM y fecha 1883.',
+      en: 'Obverse: Liberty’s profile facing left, LIBERTY band, E PLURIBUS UNUM, and the date 1883.',
+    },
+    backCaption: {
+      es: 'Reverso: águila con flechas y olivo; ONE DOLLAR; marca CC bajo la corona.',
+      en: 'Reverse: eagle with arrows and olive branch; ONE DOLLAR; CC mint mark under the wreath.',
+    },
+    scarcity: {
+      es: 'PCGS da 1.204.000 como tirada del 1883-CC (7144). Esa cifra es la acuñación de Carson City para la fecha, no un censo de este ejemplar. Greysheet anota que la GSA distribuyó 755.518 piezas de esa fecha en la venta del tesoro de Carson City: es un recuento de la distribución del tesoro, no una población certificada ni la procedencia de esta moneda, que no conserva estuche GSA. PCGS estima unos 700.000 supervivientes en todos los grados, 500.000 en MS60 o mejor y 34.000 en MS65 o mejor. Son estimaciones de expertos —incluyen piezas sueltas y encapsuladas por cualquier casa—, no un recuento de certificados ni de este ejemplar. No se publica un precio.',
+      en: 'PCGS gives 1,204,000 as the mintage of the 1883-CC (7144). That figure is the Carson City coinage for the date, not a census of this example. Greysheet notes that the GSA distributed 755,518 pieces of that date in the Carson City Treasury sale: a hoard-distribution count, not a certified population and not the provenance of this coin, which keeps no GSA holder. PCGS estimates about 700,000 survivors in all grades, 500,000 in MS60 or better, and 34,000 in MS65 or better. Those are expert estimates — they include raw pieces and coins certified by any service — not a certificate count and not a count of this example. This record publishes no price.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa, y sin número de certificado. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1883, marca CC, dólar Morgan— no un certificado. La foto muestra líneas y marcas; no fija autenticidad de un tercero, grado numérico, limpieza, PL, DMPL ni un VAM. El peso y el diámetro de la ficha son los de la emisión, no una medición de esta pieza. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder, and with no certification number. This module carries no serial number. The identity of this record is the photographed object — date 1883, CC mint mark, Morgan dollar — not a certificate. The photograph shows lines and marks; it does not settle a third-party authentication, a numerical grade, cleaning, PL, DMPL, or a VAM. The weight and diameter on this record are the issue specifications, not a measurement of this piece. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1883-cc-1/7144',
+        es: 'PCGS CoinFacts — 1883-CC, 1 dólar Morgan (7144)',
+        en: 'PCGS CoinFacts — 1883-CC Morgan dollar (7144)',
+        note: {
+          es: 'George T. Morgan; Carson City; canto estriado; 38,10 mm; 26,73 g; 90 % plata y 10 % cobre; tirada 1.204.000. Estimación de supervivientes: 700.000, 500.000 en MS60 o mejor y 34.000 en MS65 o mejor. El PL es el 7145, el DMPL el 97145 y el GSA Hoard el 518869. No se republican precios.',
+          en: 'George T. Morgan; Carson City; reeded edge; 38.10 mm; 26.73 g; 90% silver and 10% copper; mintage 1,204,000. Survival estimate: 700,000, 500,000 in MS60 or better, and 34,000 in MS65 or better. PL is 7145, DMPL is 97145, and the GSA Hoard is 518869. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.usmint.gov/news/inside-the-mint/one-hundred-years-of-silver-dollar-coinage-1878-1978',
+        es: 'United States Mint — Cien años del dólar de plata, 1878–1978',
+        en: 'United States Mint — One hundred years of silver dollar coinage, 1878–1978',
+        note: {
+          es: 'Bland–Allison reautorizó el dólar de 26,73 g y ley .900 del acta del 18 de enero de 1837. Diseño de George T. Morgan. Filadelfia, San Francisco y Carson City acuñaron en 1878.',
+          en: 'Bland–Allison reauthorized the 26.73 g, .900 dollar of the act of 18 January 1837. Design by George T. Morgan. Philadelphia, San Francisco, and Carson City struck it in 1878.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/1492',
+        es: 'Numista — 1 dólar Morgan (N# 1492)',
+        en: 'Numista — 1 dollar Morgan (N# 1492)',
+        note: {
+          es: 'KM# 110; 1878–1921; plata .900; 26,73 g; 38,1 mm. El 1883 sin marca de ceca es otra acuñación (PCGS 7142). No se republican precios.',
+          en: 'KM# 110; 1878–1921; .900 silver; 26.73 g; 38.1 mm. The 1883 with no mint mark is another coinage (PCGS 7142). Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/1883-cc-morgan-silver-dollar-gsa-hoard-hard-package-proof-like-coin-values/gsid/213961',
+        es: 'Greysheet — distribución GSA del 1883-CC (GSID 213961)',
+        en: 'Greysheet — 1883-CC GSA distribution (GSID 213961)',
+        note: {
+          es: '755.518 piezas de 1883-CC salieron en la venta GSA, sobre una tirada de 1.204.000. Es un recuento de distribución, no la procedencia de este ejemplar suelto. No se republican precios.',
+          en: '755,518 pieces of the 1883-CC came out in the GSA sale, from a mintage of 1,204,000. That is a distribution count, not the provenance of this raw example. Prices are not republished.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-dolar-morgan-1885-cc',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/',
     pathEn: '/en/collection/united-states-numismatics/1-dollar-morgan-1885-cc/',
@@ -1698,7 +1967,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, el dólar Morgan de 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -1730,7 +1999,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1885-CC Morgan dollar, the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },
