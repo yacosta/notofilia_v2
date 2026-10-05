@@ -211,6 +211,7 @@ export const additions: Holding[] = [
   { id: 'us-usn-1928-1-a01772521a', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1935a-yellow-seal-b52497547c', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1928-h86110669a', kind: 'banknote', country: 'US' },
+  { id: 'us-frn-1934a-hawaii-5-l68013147a', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -348,6 +349,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-usn-1928-1-p377-fr1500' },
   { id: 'us-sc-1935a-yellow-seal-fr2306' },
   { id: 'us-sc-1928-fr1600' },
+  { id: 'us-frn-1934a-hawaii-fr2302' },
 ];
 
 export type CollectionStats = {

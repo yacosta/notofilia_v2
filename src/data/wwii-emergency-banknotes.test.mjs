@@ -169,6 +169,7 @@ describe('WWII emergency banknotes series page', () => {
     );
     assert.deepEqual([...WWII_HAWAII_NOTE_IDS], [
       '1-dolar-hawaii-1935a',
+      '5-dolares-serie-1934a-hawaii',
       '10-dolares-serie-1934a-hawaii',
       '20-dolares-serie-1934a-hawaii',
     ]);
