@@ -182,6 +182,10 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
+    );
     assert.equal(localizePath('/acerca-de/', 'en'), '/en/about/');
     assert.equal(
       localizePath('/notofilia-vs-catalogos-billetes-colombianos/', 'en'),
@@ -898,6 +902,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/'],
       '/en/collection/united-states-numismatics/1-dollar-gold-1856-large-head/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/'],
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/mpc/5-centavos-serie-481/'],

@@ -305,6 +305,45 @@ describe('US 1856 Indian Princess gold dollar', () => {
   });
 });
 
+describe('US 1884-S Morgan dollar', () => {
+  it('registers one bilingual unslabbed San Francisco piece with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1884-s'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /George T\. Morgan/);
+    assert.match(data, /KM# 110 · PCGS# 7156 · N# 1492/);
+    assert.match(data, /26,73 g/);
+    assert.match(data, /26\.73 g/);
+    assert.match(data, /3\.200\.000/);
+    assert.match(data, /3,200,000/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1884-s-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1884-s-1\/7156/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /20 Stat\. 25/);
+    assert.match(data, /Bland-Allison/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    assert.doesNotMatch(data, /199,980/);
+    assert.match(holdings, /id: 'us-1884-s-1-dolar-morgan', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1884-s-morgan-pcgs7156/);
+  });
+});
+
 describe('US Hard Times HT-16 1841 Webster token', () => {
   it('registers a bilingual no-serial plain-edge type, with the reeded edge unassigned', () => {
     assert.equal(
