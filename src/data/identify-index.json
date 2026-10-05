@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-05T21:25:59.216Z",
+  "generatedAt": "2026-10-05T23:10:43.201Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3160,6 +3160,45 @@
       "title": {
         "es": "1 dólar Morgan · Carson City · 1883",
         "en": "Morgan dollar · Carson City · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1885-cc",
+      "face": "front",
+      "hash": "0013733151773100",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/",
+      "pick": "KM# 110 · PCGS# 7160 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1885-cc-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1885",
+        "en": "Morgan dollar · Carson City · 1885"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1885-cc",
+      "face": "front",
+      "hash": "000c140e1e1c1400",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/",
+      "pick": "KM# 110 · PCGS# 7160 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1885-cc-front.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1885",
+        "en": "Morgan dollar · Carson City · 1885"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1885-cc",
+      "face": "back",
+      "hash": "000c14160e0c0c00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/",
+      "pick": "KM# 110 · PCGS# 7160 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1885-cc-back.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1885",
+        "en": "Morgan dollar · Carson City · 1885"
       }
     },
     {

@@ -148,7 +148,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1883-cc');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1885-cc');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -170,7 +170,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 18);
+    assert.equal(fromEnd, 19);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -193,7 +193,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 17);
+    assert.equal(fromEnd, 18);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',
