@@ -212,6 +212,7 @@ export const additions: Holding[] = [
   { id: 'us-sc-1935a-yellow-seal-b52497547c', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1928-h86110669a', kind: 'banknote', country: 'US' },
   { id: 'us-frn-1934a-hawaii-5-l68013147a', kind: 'banknote', country: 'US' },
+  { id: 'us-1884-s-1-dolar-morgan', kind: 'coin', country: 'US' },
   { id: 'us-1-dolar-morgan-1883-cc', kind: 'coin', country: 'US' },
 ];
 
@@ -351,6 +352,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-sc-1935a-yellow-seal-fr2306' },
   { id: 'us-sc-1928-fr1600' },
   { id: 'us-frn-1934a-hawaii-fr2302' },
+  { id: 'us-1884-s-morgan-pcgs7156' },
   { id: 'us-1883-cc-morgan-km110' },
 ];
 

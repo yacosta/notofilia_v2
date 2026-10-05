@@ -77,8 +77,8 @@ export const numismaticaCountries: NumismaticaCountry[] = [
     years: { es: 'desde 1792', en: 'from 1792' },
     title: { es: 'Estados Unidos', en: 'United States' },
     lead: {
-      es: 'Fichas Hard Times, el Morgan de 1883-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
-      en: 'Hard Times tokens, the 1883-CC Morgan, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
+      es: 'Fichas Hard Times, los Morgan de 1883-CC y 1884-S, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+      en: 'Hard Times tokens, the 1883-CC and 1884-S Morgans, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
     },
   },
   {
