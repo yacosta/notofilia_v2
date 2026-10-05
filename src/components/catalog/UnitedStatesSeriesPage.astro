@@ -10,6 +10,7 @@ import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
+  isEducationalSeriesNote,
   notePath,
   notesForChapter,
   seriesCopy,
@@ -113,6 +114,12 @@ const jsonLd = collectionPageJsonLd({
         {
           unitedStatesChapters.map((chapter) => {
             const notes = notesForChapter(chapter.id);
+            const educationalNotes =
+              chapter.id === 'us-silver' ? notes.filter((note) => isEducationalSeriesNote(note)) : [];
+            const chapterNotes =
+              chapter.id === 'us-silver'
+                ? notes.filter((note) => !isEducationalSeriesNote(note))
+                : notes;
             const listLabel =
               chapter.id === 'us-frb' ? t.frnListLabel : chapter.title[locale];
             return (
@@ -139,12 +146,61 @@ const jsonLd = collectionPageJsonLd({
                 )
               }
               {
-                notes.length > 0 ? (
+                educationalNotes.length > 0 ? (
+                  <section
+                    id="us-silver-serie-educativa"
+                    class="mt-8 scroll-mt-28"
+                    aria-labelledby="us-silver-serie-educativa-heading"
+                  >
+                    <h3
+                      id="us-silver-serie-educativa-heading"
+                      class="mb-4 mt-0 font-display text-[1.45rem]/8 font-normal text-cream-dim"
+                    >
+                      {t.educationalSeriesHeading}
+                    </h3>
+                    <ol class:list={['mb-0 mt-0', CATALOG_PIECE_GRID]} aria-label={t.educationalSeriesHeading}>
+                      {educationalNotes.map((note) => (
+                        <li class="min-w-0">
+                          <a
+                            href={notePath(note, locale)}
+                            class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                          >
+                            <CatalogThumb
+                              src={note.images.front}
+                              alt={note.frontCaption[locale]}
+                              width={note.images.width ?? 1800}
+                              height={note.images.height ?? 600}
+                              class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                            />
+                            <h4 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                              {note.title[locale]}
+                            </h4>
+                            <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                              {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                            </p>
+                            <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                    <p class="mt-6">
+                      <a
+                        href={localizePath(EDUCATIONAL_SERIES_PATH, locale)}
+                        class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+                      >
+                        {t.viewEducationalCase} →
+                      </a>
+                    </p>
+                  </section>
+                ) : null
+              }
+              {
+                chapterNotes.length > 0 ? (
                   <ol
-                    class:list={['mb-0 mt-8', CATALOG_PIECE_GRID]}
+                    class:list={['mb-0', CATALOG_PIECE_GRID, educationalNotes.length > 0 ? 'mt-12' : 'mt-8']}
                     aria-label={listLabel}
                   >
-                    {notes.map((note) => (
+                    {chapterNotes.map((note) => (
                       <li class="min-w-0">
                         <a
                           href={notePath(note, locale)}
@@ -168,18 +224,6 @@ const jsonLd = collectionPageJsonLd({
                       </li>
                     ))}
                   </ol>
-                ) : null
-              }
-              {
-                chapter.id === 'us-silver' ? (
-                  <p class={notes.length > 0 ? 'mt-6' : 'mt-8'}>
-                    <a
-                      href={localizePath(EDUCATIONAL_SERIES_PATH, locale)}
-                      class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
-                    >
-                      {t.viewEducationalCase} →
-                    </a>
-                  </p>
                 ) : null
               }
               {

@@ -20,6 +20,7 @@ const seriesPage = readFileSync(
   new URL('../components/catalog/UnitedStatesSeriesPage.astro', import.meta.url),
   'utf8',
 );
+const unitedStates = readFileSync(new URL('./estados-unidos.ts', import.meta.url), 'utf8');
 const bodyEs = readFileSync(new URL('./educational-series-1896/es.html', import.meta.url), 'utf8');
 const bodyEn = readFileSync(new URL('./educational-series-1896/en.html', import.meta.url), 'utf8');
 
@@ -37,6 +38,15 @@ describe('1896 Educational Series resource page', () => {
     assert.match(navSource, /href: EDUCATIONAL_SERIES_PATH/);
     assert.match(seriesPage, /viewEducationalCase/);
     assert.match(seriesPage, /EDUCATIONAL_SERIES_PATH/);
+    assert.match(seriesPage, /isEducationalSeriesNote/);
+    assert.match(seriesPage, /educationalSeriesHeading/);
+    assert.match(seriesPage, /us-silver-serie-educativa/);
+    assert.match(seriesPage, /!isEducationalSeriesNote/);
+    assert.match(unitedStates, /educationalSeriesHeading: 'Certificado de plata · Serie Educativa'/);
+    assert.match(unitedStates, /educationalSeriesHeading: 'Silver Certificate · Educational Series'/);
+    assert.ok(
+      seriesPage.indexOf('us-silver-serie-educativa') < seriesPage.indexOf('chapterNotes.length > 0'),
+    );
   });
 
   it('keeps Article JSON-LD and lists the three holdings under the market note', () => {
