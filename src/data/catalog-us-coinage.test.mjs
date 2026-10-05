@@ -336,3 +336,47 @@ describe('US Hard Times HT-16 1841 Webster token', () => {
     assert.match(hardTimesEssay, /HT-16/);
   });
 });
+
+describe('US 1883-CC Morgan dollar', () => {
+  it('registers one bilingual unslabbed Carson City dollar with no serial', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1883-cc'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /George T\. Morgan/);
+    assert.match(data, /KM# 110 · PCGS# 7144 · N# 1492/);
+    assert.match(data, /Plata \.900 \(90 % Ag, 10 % Cu\)/);
+    assert.match(data, /Silver \.900 \(90% Ag, 10% Cu\)/);
+    assert.match(data, /26,73 g/);
+    assert.match(data, /26\.73 g/);
+    assert.match(data, /1\.204\.000/);
+    assert.match(data, /1,204,000/);
+    assert.match(data, /755\.518/);
+    assert.match(data, /755,518/);
+    assert.match(data, /700\.000/);
+    assert.match(data, /700,000/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan silver dollar/);
+    assert.match(data, /united-states-mint-1-dollar-1883-cc-morgan-composite\.jpg/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1883-cc-1\/7144/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /Bland–Allison/);
+    assert.match(data, /marca CC/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1883-cc', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1883-cc-morgan-km110/);
+  });
+});
