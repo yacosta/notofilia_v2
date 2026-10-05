@@ -125,6 +125,9 @@ describe('US Federal Reserve Note series list', () => {
     }
     assert.match(data, /es: 'Denominaciones históricas y descontinuadas'/);
     assert.match(data, /en: 'Historical & Discontinued Denominations'/);
+    assert.match(data, /en: '\$1 banknotes'/);
+    assert.match(data, /en: '\$10,000 banknotes'/);
+    assert.doesNotMatch(data, /en: '\$[0-9,]+ notes'/);
     assert.ok(data.indexOf('frn-100') < data.indexOf('discontinued: true'));
     assert.ok(data.indexOf("es: 'Billetes de $100 dólares'") < data.indexOf("es: 'Billetes de $500 dólares'"));
     assert.match(data, /export function federalReserveNoteGroups/);
