@@ -336,3 +336,44 @@ describe('US Hard Times HT-16 1841 Webster token', () => {
     assert.match(hardTimesEssay, /HT-16/);
   });
 });
+
+describe('US 1885-CC Morgan dollar', () => {
+  it('registers one bilingual unslabbed Carson City piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1885-cc/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1885-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1885-cc'/);
+    assert.match(data, /id: 'dolar-morgan'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7160 · N# 1492/);
+    assert.match(data, /228\.000/);
+    assert.match(data, /228,000/);
+    assert.match(data, /148\.285/);
+    assert.match(data, /174\.250/);
+    assert.match(data, /155\.750/);
+    assert.match(data, /George T\. Morgan/);
+    assert.match(data, /marca CC/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1885-cc-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1885-cc-1\/7160/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /sin procedencia GSA/);
+    assert.match(data, /no documented GSA provenance/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1885-cc', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1885-cc-morgan-km110/);
+  });
+});
