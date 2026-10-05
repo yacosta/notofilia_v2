@@ -44,9 +44,7 @@ describe('1896 Educational Series resource page', () => {
     assert.match(seriesPage, /!isEducationalSeriesNote/);
     assert.match(unitedStates, /educationalSeriesHeading: 'Certificado de plata · Serie Educativa'/);
     assert.match(unitedStates, /educationalSeriesHeading: 'Silver Certificate · Educational Series'/);
-    assert.ok(
-      seriesPage.indexOf('us-silver-serie-educativa') < seriesPage.indexOf('chapterNotes.length > 0'),
-    );
+    assert.ok(seriesPage.indexOf('us-silver-serie-educativa') < seriesPage.indexOf('flatNotes.length > 0'));
   });
 
   it('keeps Article JSON-LD and lists the three holdings under the market note', () => {

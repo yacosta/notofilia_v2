@@ -10,6 +10,8 @@ import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import {
+  federalReserveDiscontinuedHeading,
+  federalReserveNoteGroups,
   isEducationalSeriesNote,
   notePath,
   notesForChapter,
@@ -120,8 +122,9 @@ const jsonLd = collectionPageJsonLd({
               chapter.id === 'us-silver'
                 ? notes.filter((note) => !isEducationalSeriesNote(note))
                 : notes;
-            const listLabel =
-              chapter.id === 'us-frb' ? t.frnListLabel : chapter.title[locale];
+            const frnGroups = chapter.id === 'us-frb' ? federalReserveNoteGroups(notes) : null;
+            const flatNotes = chapter.id === 'us-frb' ? [] : chapterNotes;
+            const listLabel = chapter.title[locale];
             return (
             <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
               <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
@@ -195,12 +198,120 @@ const jsonLd = collectionPageJsonLd({
                 ) : null
               }
               {
-                chapterNotes.length > 0 ? (
+                frnGroups ? (
+                  <div class="mt-8 space-y-10" aria-label={t.frnListLabel}>
+                    {
+                      frnGroups.current.map((group) => (
+                        <section
+                          id={group.band.id}
+                          class="scroll-mt-28"
+                          aria-labelledby={`${group.band.id}-heading`}
+                        >
+                          <h3
+                            id={`${group.band.id}-heading`}
+                            class="mb-4 mt-0 font-display text-[1.45rem]/8 font-normal text-cream-dim"
+                          >
+                            {group.band.heading[locale]}
+                          </h3>
+                          {
+                            group.notes.length > 0 ? (
+                              <ol class:list={['mb-0 mt-0', CATALOG_PIECE_GRID]} aria-label={group.band.heading[locale]}>
+                                {group.notes.map((note) => (
+                                  <li class="min-w-0">
+                                    <a
+                                      href={notePath(note, locale)}
+                                      class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                                    >
+                                      <CatalogThumb
+                                        src={note.images.front}
+                                        alt={note.frontCaption[locale]}
+                                        width={note.images.width ?? 1800}
+                                        height={note.images.height ?? 600}
+                                        class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                                      />
+                                      <h4 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                                        {note.title[locale]}
+                                      </h4>
+                                      <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                                        {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                                      </p>
+                                      <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                                    </a>
+                                  </li>
+                                ))}
+                              </ol>
+                            ) : null
+                          }
+                        </section>
+                      ))
+                    }
+                    <section
+                      id="us-frb-discontinued"
+                      class="scroll-mt-28 space-y-10"
+                      aria-labelledby="us-frb-discontinued-heading"
+                    >
+                      <h3
+                        id="us-frb-discontinued-heading"
+                        class="mb-0 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+                      >
+                        {federalReserveDiscontinuedHeading[locale]}
+                      </h3>
+                      {
+                        frnGroups.discontinued.map((group) => (
+                          <section
+                            id={group.band.id}
+                            class="scroll-mt-28"
+                            aria-labelledby={`${group.band.id}-heading`}
+                          >
+                            <h4
+                              id={`${group.band.id}-heading`}
+                              class="mb-4 mt-0 font-display text-[1.45rem]/8 font-normal text-cream-dim"
+                            >
+                              {group.band.heading[locale]}
+                            </h4>
+                            {
+                              group.notes.length > 0 ? (
+                                <ol class:list={['mb-0 mt-0', CATALOG_PIECE_GRID]} aria-label={group.band.heading[locale]}>
+                                  {group.notes.map((note) => (
+                                    <li class="min-w-0">
+                                      <a
+                                        href={notePath(note, locale)}
+                                        class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                                      >
+                                        <CatalogThumb
+                                          src={note.images.front}
+                                          alt={note.frontCaption[locale]}
+                                          width={note.images.width ?? 1800}
+                                          height={note.images.height ?? 600}
+                                          class="mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4"
+                                        />
+                                        <h5 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                                          {note.title[locale]}
+                                        </h5>
+                                        <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                                          {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                                        </p>
+                                        <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ol>
+                              ) : null
+                            }
+                          </section>
+                        ))
+                      }
+                    </section>
+                  </div>
+                ) : null
+              }
+              {
+                flatNotes.length > 0 ? (
                   <ol
                     class:list={['mb-0', CATALOG_PIECE_GRID, educationalNotes.length > 0 ? 'mt-12' : 'mt-8']}
                     aria-label={listLabel}
                   >
-                    {chapterNotes.map((note) => (
+                    {flatNotes.map((note) => (
                       <li class="min-w-0">
                         <a
                           href={notePath(note, locale)}
