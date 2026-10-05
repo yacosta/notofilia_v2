@@ -3163,6 +3163,45 @@
       }
     },
     {
+      "pieceId": "1-dolar-morgan-1883-cc",
+      "face": "front",
+      "hash": "2223212363212322",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
+      "pick": "KM# 110 · PCGS# 7144 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-composite.jpg",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1883",
+        "en": "Morgan dollar · Carson City · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1883-cc",
+      "face": "front",
+      "hash": "08140a1e16161408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
+      "pick": "KM# 110 · PCGS# 7144 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-front.jpg",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1883",
+        "en": "Morgan dollar · Carson City · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1883-cc",
+      "face": "back",
+      "hash": "0804160e2e2a1408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
+      "pick": "KM# 110 · PCGS# 7144 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-back.jpg",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1883",
+        "en": "Morgan dollar · Carson City · 1883"
+      }
+    },
+    {
       "pieceId": "5-dolares-continental-1779",
       "face": "front",
       "hash": "2035254884070788",
