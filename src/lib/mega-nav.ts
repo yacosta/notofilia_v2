@@ -96,6 +96,11 @@ if (!usGoldDollar1856) {
   throw new Error('Missing US 1856 Indian Princess gold dollar for mega-nav');
 }
 
+const usMorgan1885Cc = coinById('1-dolar-morgan-1885-cc');
+if (!usMorgan1885Cc) {
+  throw new Error('Missing US 1885-CC Morgan dollar for mega-nav');
+}
+
 const usMorgan1884S = coinById('1-dolar-morgan-1884-s');
 if (!usMorgan1884S) {
   throw new Error('Missing US 1884-S Morgan dollar for mega-nav');
@@ -504,6 +509,12 @@ export const megaNav: NavNode[] = [
             es: usMorgan1883Cc.title.es,
             en: usMorgan1883Cc.title.en,
             href: usMorgan1883Cc.path,
+          },
+          {
+            id: 'us-1-dolar-morgan-1885-cc',
+            es: usMorgan1885Cc.title.es,
+            en: usMorgan1885Cc.title.en,
+            href: usMorgan1885Cc.path,
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

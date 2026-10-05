@@ -214,6 +214,7 @@ export const additions: Holding[] = [
   { id: 'us-frn-1934a-hawaii-5-l68013147a', kind: 'banknote', country: 'US' },
   { id: 'us-1884-s-1-dolar-morgan', kind: 'coin', country: 'US' },
   { id: 'us-1-dolar-morgan-1883-cc', kind: 'coin', country: 'US' },
+  { id: 'us-1-dolar-morgan-1885-cc', kind: 'coin', country: 'US' },
   { id: 'co-1916-50-centavos-km193-1', kind: 'coin', country: 'CO' },
 ];
 
@@ -355,6 +356,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-frn-1934a-hawaii-fr2302' },
   { id: 'us-1884-s-morgan-pcgs7156' },
   { id: 'us-1883-cc-morgan-km110' },
+  { id: 'us-1885-cc-morgan-km110' },
   { id: 'co-1916-50-centavos-km193-1' },
 ];
 
