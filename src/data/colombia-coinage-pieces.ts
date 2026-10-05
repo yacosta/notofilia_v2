@@ -23,7 +23,8 @@ export type ColombiaCoinagePieceId =
   | '50-centavos-lazareto-1931'
   | '50-centavos-santander-1902'
   | '20-centavos-santander-1902'
-  | '10-centavos-santander-1902';
+  | '10-centavos-santander-1902'
+  | '50-centavos-1916-km193-1';
 
 export type ColombiaCoinagePiece = {
   id: ColombiaCoinagePieceId;
@@ -1265,6 +1266,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
           en: 'Numismatics of the Lazarettos',
         },
       },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}50-centavos-1916-km193-1/`,
+        label: {
+          es: '50 centavos de Bolívar, 1916',
+          en: 'Bolívar 50 centavos, 1916',
+        },
+      },
     ],
   },
   {
@@ -1554,6 +1562,128 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: 'Las coscojas de Santander',
           en: 'The coscojas of Santander',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-centavos-1916-km193-1',
+    path: `${COLOMBIA_COINAGE_PATH}50-centavos-1916-km193-1/`,
+    chapterId: 'republica',
+    year: '1916',
+    denomination: { es: '50 centavos', en: '50 centavos' },
+    metal: { es: 'Plata .900 (tipo)', en: 'Silver .900 (type specification)' },
+    mint: {
+      es: 'Birmingham / Bogotá (tipo KM# 193.1; sin marca en el disco)',
+      en: 'Birmingham / Bogotá (KM# 193.1 type; no mint mark on the disc)',
+    },
+    reference: 'KM# 193.1 · Numista N#20273',
+    title: {
+      es: '50 centavos · Bolívar · 1916',
+      en: '50 centavos · Bolívar · 1916',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · República',
+      en: 'Colombia-Numismatics · Republic',
+    },
+    lead: {
+      es: 'Cincuenta centavos de plata de 1916, con Bolívar a la derecha. El diseño es el KM# 193.1, fecha pequeña, de Birmingham o Bogotá. Este disco no se pesó.',
+      en: 'A 1916 silver 50 centavos with Bolívar facing right. The design matches KM# 193.1, small date, Birmingham or Bogotá. This disc was not weighed.',
+    },
+    description: {
+      es: 'Esta pieza es un 50 centavos de 1916 con el busto de Simón Bolívar a la derecha. El anverso lleva la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la fecha 1916 entre puntos, bajo el corte del cuello. El reverso muestra el escudo bajo un cóndor, la leyenda CINCUENTA CENTAVOS, el peso de tipo 12.500 y la ley LEY 0.900. Ese diseño es el que Numista (N#20273) cataloga como KM# 193.1, fecha pequeña, en el módulo Birmingham/Bogotá, con una tirada de 1.060.000 piezas. Numista aparta el KM# 193.2 de Medellín por las letras mayores y por el ala y las banderas más cerca de la leyenda; esa separación no se midió en este disco gastado, y el ejemplar no trae letra de ceca. CoinVarieties registra el 1916(b) como KM 193.1, labrado para Bogotá, con la misma tirada de 1.060.000, plata 0,900, 12,5 g y 0,361 onzas troy de plata fina, y da al canto la leyenda DIOS LEI LIBERTAD. Greysheet da al mismo KM-193.1 de 1916, fecha pequeña, 12,5 g y 30 mm, y anota el canto estriado. 11,25 g es el producto de los 12,5 g de tipo por 0,900; no es un ensayo de este disco. El canto no se fotografió aparte, y las dos caras, en posición de lectura, no fijan el eje. Las tablas BanRep de moneda empiezan en 1987 y no cubren 1916. La cifra de 1.300.000 pertenece al KM# 274 de Filadelfia (CoinVarieties), otra emisión del mismo año. CoinVarieties anota que el busto de Bolívar sustituyó al de la Libertad, cuya última fecha sitúa en 1908, y llama común a la fecha de 1916 de Bogotá; no se publica un censo de supervivientes. El glosario de Hernández llama Bolívar de Roulin, o cara gorda, a los cincuenta centavos de 1916, entre otras fechas, y nombra al médico francés François Désiré Roulin. El busto no lleva firma, y la fotografía no separa esa cara de la delgada. El 50 centavos de latón de Santander de 1902 y el disco de lazareto fechado 1931 son otras fichas. Sin encapsular. El desgaste, el moteado oscuro y las marcas de superficie se ven en las fotografías; no autentican el metal ni dan un grado numérico.',
+      en: 'This piece is a 1916 50 centavos with the bust of Simón Bolívar facing right. The obverse carries the legend REPUBLICA DE COLOMBIA — without an accent, as engraved — and the date 1916 between dots, below the neck truncation. The reverse shows the arms under a condor, the legend CINCUENTA CENTAVOS, the type weight 12.500, and the fineness LEY 0.900. That design is what Numista (N#20273) catalogs as KM# 193.1, small date, in the Birmingham/Bogotá module, with a mintage of 1,060,000 pieces. Numista sets KM# 193.2 of Medellín apart by larger letters and by the wing and flags sitting closer to the legend; that gap was not measured on this worn disc, and the piece carries no mint letter. CoinVarieties records the 1916(b) as KM 193.1, struck for Bogotá, with the same mintage of 1,060,000, silver 0.900, 12.5 g, and 0.361 troy ounces of fine silver, and gives the edge the legend DIOS LEI LIBERTAD. Greysheet gives the same 1916 KM-193.1, small date, as 12.5 g and 30 mm, and lists a reeded edge. 11.25 g is the product of the 12.5 g type weight and 0.900; it is not an assay of this disc. The edge was not photographed separately, and the two faces, set upright for reading, do not fix the axis. BanRep’s coin tables begin in 1987 and do not cover 1916. The figure of 1,300,000 belongs to Philadelphia’s KM# 274 (CoinVarieties), a separate issue of the same year. CoinVarieties notes that the Bolívar bust replaced the Liberty head, whose last date it places in 1908, and calls the 1916 Bogotá date common; no surviving-population census is published. Hernández’s glossary calls the 50 centavos of 1916, among other dates, the Bolívar de Roulin, or fat face, and names the French physician François Désiré Roulin. The bust is unsigned, and the photograph does not separate that face from the thin one. The 1902 brass 50 centavos of Santander and the lazaretto disc dated 1931 are other records. Unslabbed. The wear, the dark mottling, and the surface marks show in the photographs; they do not authenticate the metal or assign a numerical grade.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Simón Bolívar a la derecha, leyenda REPUBLICA DE COLOMBIA y fecha 1916.',
+      en: 'Obverse: bust of Simón Bolívar facing right, legend REPUBLICA DE COLOMBIA, and the date 1916.',
+    },
+    backCaption: {
+      es: 'Reverso: cóndor sobre el escudo, CINCUENTA CENTAVOS, 12.500 y LEY 0.900.',
+      en: 'Reverse: condor over the arms, CINCUENTA CENTAVOS, 12.500, and LEY 0.900.',
+    },
+    scarcity: {
+      es: 'Numista asigna 1.060.000 piezas al 1916 de fecha pequeña del KM# 193.1 (Birmingham/Bogotá). CoinVarieties repite esa tirada para el 1916(b) y llama común a la fecha. La de 1.300.000 es la del KM# 274 de Filadelfia. Las tablas BanRep de moneda empiezan en 1987. Esta ficha no publica precios ni un censo de encapsulados.',
+      en: 'Numista assigns 1,060,000 pieces to the 1916 small date of KM# 193.1 (Birmingham/Bogotá). CoinVarieties repeats that mintage for the 1916(b) and calls the date common. The figure of 1,300,000 is Philadelphia’s KM# 274. BanRep’s coin tables begin in 1987. This record publishes neither prices nor a slab census.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular. Desgaste marcado, moteado oscuro y marcas de superficie; se leen 1916, CINCUENTA CENTAVOS, 12.500 y LEY 0.900. Las fotografías no autentican el metal ni fijan un grado (colección privada)',
+      en: 'Circulated, unslabbed. Heavy wear, dark mottling, and surface marks; 1916, CINCUENTA CENTAVOS, 12.500, and LEY 0.900 are readable. Photographs do not authenticate the metal or assign a grade (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-50-centavos-1916-km193-1-composite.png',
+      front: '/images/catalog/colombia/colombia-50-centavos-1916-km193-1-front.png',
+      back: '/images/catalog/colombia/colombia-50-centavos-1916-km193-1-back.png',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/20273',
+        es: 'Numista — 50 centavos de plata, Colombia, 1912–1933 (N#20273)',
+        en: 'Numista — silver 50 centavos, Colombia, 1912–1933 (N#20273)',
+        note: {
+          es: 'KM# 193.1, fecha pequeña de 1916, módulo Birmingham/Bogotá: 1.060.000 piezas. El KM# 193.2 es Medellín. No se citan columnas de valor.',
+          en: 'KM# 193.1, 1916 small date, Birmingham/Bogotá module: 1,060,000 pieces. KM# 193.2 is Medellín. Value columns are not cited.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1916(b)_50_centavos',
+        es: 'CoinVarieties — 50 centavos de Colombia, 1916(b)',
+        en: 'CoinVarieties — Colombia 1916(b) 50 centavos',
+        note: {
+          es: 'KM 193.1, tirada registrada 1.060.000, plata 0,900, 12,5 g, 0,361 onzas troy de plata fina y canto con leyenda DIOS LEI LIBERTAD. Llama común a la fecha. No se publican precios.',
+          en: 'KM 193.1, recorded mintage 1,060,000, silver 0.900, 12.5 g, 0.361 troy ounces of fine silver, and an edge lettered DIOS LEI LIBERTAD. It calls the date common. Prices are not published.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1916(p)_50_centavos',
+        es: 'CoinVarieties — 50 centavos de Colombia, 1916(p), Filadelfia',
+        en: 'CoinVarieties — Colombia 1916(p) 50 centavos, Philadelphia',
+        note: {
+          es: 'KM 274, tirada registrada 1.300.000. Es otra emisión del mismo año. Esa cifra no se aplica a este disco.',
+          en: 'KM 274, recorded mintage 1,300,000. A separate issue of the same year. That figure is not applied to this disc.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/1916-50-centavos-colombia-world-coins-km-193-1-birmingham-bogota-mint-small-date-246222/gsid/246222',
+        es: 'Greysheet — 50 centavos de 1916, KM-193.1, fecha pequeña',
+        en: 'Greysheet — 1916 50 centavos, KM-193.1, small date',
+        note: {
+          es: '12,5 g y 30 mm; anota canto estriado, frente a la leyenda de canto de CoinVarieties. El canto de este disco no se leyó. No se publican precios.',
+          en: '12.5 g and 30 mm; it lists a reeded edge, against CoinVarieties’ lettered edge. This disc’s edge was not read. Prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'El glosario llama Bolívar de Roulin, o cara gorda, a los cincuenta centavos de 1916, entre otras fechas. No se publica aquí un Cód. de esa fila ni columnas de precios.',
+          en: 'The glossary calls the 50 centavos of 1916, among other dates, the Bolívar de Roulin, or fat face. No Cód. for that row and no price columns are published here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación',
+        en: 'Banco de la República — Production and circulation',
+        note: {
+          es: 'Las tablas de moneda abren en 1987. No hay una fila de 1916 que sustituya la tirada de catálogo.',
+          en: 'The coin tables open in 1987. There is no 1916 row to stand in for the catalog mintage.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}50-centavos-lazareto-1931/`,
+        label: {
+          es: '50 centavos de lazareto, 1931',
+          en: 'Lazaretto 50 centavos, 1931',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}50-centavos-santander-1902/`,
+        label: {
+          es: '50 centavos de Santander, 1902',
+          en: 'Santander 50 centavos, 1902',
         },
       },
     ],

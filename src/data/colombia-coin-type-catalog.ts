@@ -24,6 +24,7 @@ export type ColombiaCoinTypeId =
   | '20-centavos-palonegro-1902'
   | '50-centavos-palonegro-1902'
   | '2-centavos-lazareto-1921'
+  | '50-centavos-1916-km193-1'
   | '50-centavos-lazareto-1931'
   | 'lazareto-50-centavos-1928'
   | '50-pesos-1989'
@@ -296,6 +297,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '50-centavos-santander-1902',
+  },
+  {
+    id: '50-centavos-1916-km193-1',
+    era: 'republica',
+    year: '1916',
+    denomination: { es: '50 centavos', en: '50 centavos' },
+    issuer: { es: 'República de Colombia', en: 'Republic of Colombia' },
+    reference: 'KM# 193.1 · Numista N#20273',
+    title: { es: '50 centavos · Bolívar · 1916', en: '50 centavos · Bolívar · 1916' },
+    dek: {
+      es: 'Plata de 1916, busto de Bolívar, fecha pequeña del KM# 193.1. En la colección. La tirada de catálogo no es la del KM# 274 de Filadelfia.',
+      en: '1916 silver, Bolívar bust, small date of KM# 193.1. In the collection. The catalog mintage is not Philadelphia’s KM# 274.',
+    },
+    flags: ['holding'],
+    holdingId: '50-centavos-1916-km193-1',
   },
   {
     id: '2-centavos-lazareto-1921',
