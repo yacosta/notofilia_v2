@@ -93,15 +93,43 @@ describe('US Federal Reserve Note series list', () => {
       data,
       /frnListLabel: 'Federal Reserve Notes lined up by denomination, then series date'/,
     );
-    assert.match(seriesPage, /chapter\.id === 'us-frb' \? t\.frnListLabel/);
+    assert.match(seriesPage, /aria-label=\{t\.frnListLabel\}/);
+    assert.match(seriesPage, /federalReserveNoteGroups\(notes\)/);
     assert.match(seriesPage, /notesForChapter\(chapter\.id\)/);
   });
 
   it('fits three banknote cards per row on large screens', () => {
-    assert.match(
-      seriesPage,
-      /notes\.length > 0 \? \(\s*<ol\s+class="mb-0 mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3"/,
-    );
+    assert.match(seriesPage, /CATALOG_PIECE_GRID/);
     assert.doesNotMatch(seriesPage, /lg:grid-cols-4/);
+  });
+
+  it('lists every Reserva Federal denomination, with discontinued values after their own heading', () => {
+    const current = [
+      'Billetes de $1 dólar',
+      'Billetes de $2 dólares',
+      'Billetes de $5 dólares',
+      'Billetes de $10 dólares',
+      'Billetes de $20 dólares',
+      'Billetes de $50 dólares',
+      'Billetes de $100 dólares',
+    ];
+    const discontinued = [
+      'Billetes de $500 dólares',
+      'Billetes de $1,000 dólares',
+      'Billetes de $5,000 dólares',
+      'Billetes de $10,000 dólares',
+    ];
+    for (const heading of current) assert.match(data, new RegExp(`es: '${heading.replaceAll('$', '\\$')}'`));
+    for (const heading of discontinued) {
+      assert.match(data, new RegExp(`es: '${heading.replaceAll('$', '\\$')}'`));
+    }
+    assert.match(data, /es: 'Denominaciones históricas y descontinuadas'/);
+    assert.match(data, /en: 'Historical & Discontinued Denominations'/);
+    assert.ok(data.indexOf('frn-100') < data.indexOf('discontinued: true'));
+    assert.ok(data.indexOf("es: 'Billetes de $100 dólares'") < data.indexOf("es: 'Billetes de $500 dólares'"));
+    assert.match(data, /export function federalReserveNoteGroups/);
+    assert.match(seriesPage, /federalReserveDiscontinuedHeading/);
+    assert.match(seriesPage, /us-frb-discontinued/);
+    assert.ok(seriesPage.indexOf('frnGroups.current') < seriesPage.indexOf('us-frb-discontinued'));
   });
 });

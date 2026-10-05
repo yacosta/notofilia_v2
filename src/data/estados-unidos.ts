@@ -407,6 +407,7 @@ export const seriesCopy = {
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
     viewEducationalCase: 'Abrir la serie educativa de 1896',
+    educationalSeriesHeading: 'Certificado de plata · Serie Educativa',
     viewColonialCase: 'Abrir la vitrina de moneda colonial',
     viewObsoleteCase: 'Abrir la vitrina de billetes obsoletos',
     coinageLead: 'La moneda metálica de este país se documenta en la vitrina de numismática.',
@@ -433,6 +434,7 @@ export const seriesCopy = {
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
     viewEducationalCase: 'Open the 1896 Educational Series',
+    educationalSeriesHeading: 'Silver Certificate · Educational Series',
     viewColonialCase: 'Open the colonial paper case',
     viewObsoleteCase: 'Open the obsolete notes case',
     coinageLead: 'This country’s struck coin is documented in the numismatics case.',
@@ -7358,6 +7360,46 @@ export function federalReserveSortKey(id: string): {
     year: Number(match[2]),
     seriesLetter: match[3].toLowerCase(),
   };
+}
+
+export const federalReserveDiscontinuedHeading = {
+  es: 'Denominaciones históricas y descontinuadas',
+  en: 'Historical & Discontinued Denominations',
+} as const;
+
+/** Face-value bands for the Reserva Federal chapter. Empty bands still render a heading. */
+export const federalReserveDenominationBands = [
+  { id: 'frn-1', denomination: 1, discontinued: false, heading: { es: 'Billetes de $1 dólar', en: '$1 notes' } },
+  { id: 'frn-2', denomination: 2, discontinued: false, heading: { es: 'Billetes de $2 dólares', en: '$2 notes' } },
+  { id: 'frn-5', denomination: 5, discontinued: false, heading: { es: 'Billetes de $5 dólares', en: '$5 notes' } },
+  { id: 'frn-10', denomination: 10, discontinued: false, heading: { es: 'Billetes de $10 dólares', en: '$10 notes' } },
+  { id: 'frn-20', denomination: 20, discontinued: false, heading: { es: 'Billetes de $20 dólares', en: '$20 notes' } },
+  { id: 'frn-50', denomination: 50, discontinued: false, heading: { es: 'Billetes de $50 dólares', en: '$50 notes' } },
+  { id: 'frn-100', denomination: 100, discontinued: false, heading: { es: 'Billetes de $100 dólares', en: '$100 notes' } },
+  { id: 'frn-500', denomination: 500, discontinued: true, heading: { es: 'Billetes de $500 dólares', en: '$500 notes' } },
+  { id: 'frn-1000', denomination: 1000, discontinued: true, heading: { es: 'Billetes de $1,000 dólares', en: '$1,000 notes' } },
+  { id: 'frn-5000', denomination: 5000, discontinued: true, heading: { es: 'Billetes de $5,000 dólares', en: '$5,000 notes' } },
+  { id: 'frn-10000', denomination: 10000, discontinued: true, heading: { es: 'Billetes de $10,000 dólares', en: '$10,000 notes' } },
+] as const;
+
+export type FederalReserveDenominationBand = (typeof federalReserveDenominationBands)[number];
+
+export function federalReserveNoteGroups(notes: UnitedStatesNote[]): {
+  current: { band: FederalReserveDenominationBand; notes: UnitedStatesNote[] }[];
+  discontinued: { band: FederalReserveDenominationBand; notes: UnitedStatesNote[] }[];
+} {
+  const byDenom = new Map<number, UnitedStatesNote[]>();
+  for (const note of notes) {
+    const denomination = federalReserveSortKey(note.id).denomination;
+    const list = byDenom.get(denomination) ?? [];
+    list.push(note);
+    byDenom.set(denomination, list);
+  }
+  const grouped = (discontinued: boolean) =>
+    federalReserveDenominationBands
+      .filter((band) => band.discontinued === discontinued)
+      .map((band) => ({ band, notes: byDenom.get(band.denomination) ?? [] }));
+  return { current: grouped(false), discontinued: grouped(true) };
 }
 
 export function notesForChapter(chapterId: UnitedStatesChapterId): UnitedStatesNote[] {
