@@ -654,6 +654,10 @@ describe('locale path mapping', () => {
       localizePath('/coleccion/colombia-numismatica/2-reales-cartagena-1812-1814/', 'en'),
       '/en/collection/colombia-numismatics/2-reales-cartagena-1812-1814/',
     );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/50-centavos-1916-km193-1/', 'en'),
+      '/en/collection/colombia-numismatics/50-centavos-1916-km193-1/',
+    );
     assert.equal(localizePath('/en/collection/colombia/catalog/', 'es'), '/coleccion/colombia/catalogo/');
   });
 
@@ -841,6 +845,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/10-centavos-santander-1902/'],
       '/en/collection/colombia-numismatics/10-centavos-santander-1902/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/50-centavos-1916-km193-1/'],
+      '/en/collection/colombia-numismatics/50-centavos-1916-km193-1/',
     );
     assert.equal(redirects['/en/identificar/'], '/en/identify/');
     assert.equal(redirects['/en/herramientas/'], '/en/tools/');

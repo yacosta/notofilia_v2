@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-05T18:21:33.942Z",
+  "generatedAt": "2026-10-05T22:07:28.046Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -664,6 +664,45 @@
       "title": {
         "es": "10 centavos · Santander · 1902",
         "en": "10 centavos · Santander · 1902"
+      }
+    },
+    {
+      "pieceId": "50-centavos-1916-km193-1",
+      "face": "front",
+      "hash": "0073579673137100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-1916-km193-1/",
+      "pick": "KM# 193.1 · Numista N#20273",
+      "image": "/images/catalog/colombia/colombia-50-centavos-1916-km193-1-composite.png",
+      "title": {
+        "es": "50 centavos · Bolívar · 1916",
+        "en": "50 centavos · Bolívar · 1916"
+      }
+    },
+    {
+      "pieceId": "50-centavos-1916-km193-1",
+      "face": "front",
+      "hash": "0814160606261408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-1916-km193-1/",
+      "pick": "KM# 193.1 · Numista N#20273",
+      "image": "/images/catalog/colombia/colombia-50-centavos-1916-km193-1-front.png",
+      "title": {
+        "es": "50 centavos · Bolívar · 1916",
+        "en": "50 centavos · Bolívar · 1916"
+      }
+    },
+    {
+      "pieceId": "50-centavos-1916-km193-1",
+      "face": "back",
+      "hash": "0814362a2e2e0c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/50-centavos-1916-km193-1/",
+      "pick": "KM# 193.1 · Numista N#20273",
+      "image": "/images/catalog/colombia/colombia-50-centavos-1916-km193-1-back.png",
+      "title": {
+        "es": "50 centavos · Bolívar · 1916",
+        "en": "50 centavos · Bolívar · 1916"
       }
     },
     {
