@@ -35,6 +35,8 @@ describe('llms.txt and grading-guide SEO copy', () => {
     assert.match(seoSource, /footerLinksFromNav/);
     assert.match(seoSource, /megaNav/);
     assert.match(seoSource, /colección privada y catálogo bilingüe/);
+    assert.match(seoSource, /https:\/\/notofilia\.com\/sitemap\.txt/);
+    assert.match(seoSource, /Spanish, the x-default locale, is listed first/);
     assert.match(grading.seoTitle.es, /PMG, PCGS y NGC/);
     assert.match(grading.seoTitle.en, /PMG, PCGS, and NGC/);
     assert.equal(articles.some((article) => article.slug === 'como-se-valora-un-billete-colombiano'), true);

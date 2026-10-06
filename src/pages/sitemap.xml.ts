@@ -37,6 +37,15 @@ export function collectSitemapPaths(): string[] {
   return [...new Set(urls)].filter((path) => path !== '/buscar/' && path !== '/en/search/');
 }
 
+/**
+ * Text sitemap (one absolute URL per line). Google’s text-sitemap rules
+ * allow nothing but URLs, so the reading guide lives in llms.txt and robots.txt.
+ * Spanish (x-default) is emitted first; the English URL follows when it differs.
+ */
+export function sitemapTxt(): string {
+  return `${collectSitemapPaths().map((path) => `${SITE_URL}${path}`).join('\n')}\n`;
+}
+
 export const GET: APIRoute = () => {
   const unique = collectSitemapPaths();
   const lastmod = lastmodByPath();
