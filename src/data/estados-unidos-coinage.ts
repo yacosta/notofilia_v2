@@ -2015,6 +2015,23 @@ export function coinById(id: string): UnitedStatesCoin | undefined {
   return unitedStatesCoins.find((coin) => coin.id === id);
 }
 
+/** Bland–Allison through the 1904 close. The 1921 striking is a later return, not this run. */
+export const MORGAN_ORIGINAL_RUN_START = 1878;
+export const MORGAN_ORIGINAL_RUN_END = 1904;
+
+export function morganOriginalRunCoins(): UnitedStatesCoin[] {
+  const selected: UnitedStatesCoin[] = [];
+  for (const coin of unitedStatesCoins) {
+    if (coin.chapterId !== 'dolar-morgan') continue;
+    const year = Number(coin.year);
+    if (!Number.isInteger(year)) {
+      throw new Error(`Morgan dollar ${coin.id} needs a numeric year for the original-run menu`);
+    }
+    if (year >= MORGAN_ORIGINAL_RUN_START && year <= MORGAN_ORIGINAL_RUN_END) selected.push(coin);
+  }
+  return selected.sort((a, b) => Number(a.year) - Number(b.year) || a.id.localeCompare(b.id));
+}
+
 export function coinagePath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_COINAGE_PATH_EN}` : USA_COINAGE_PATH;
 }

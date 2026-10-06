@@ -466,6 +466,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/', en: '/collection/puerto-rico-numismatics/20-centavos-1895-pgv/' },
   { es: '/coleccion/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/', en: '/collection/puerto-rico-numismatics/10-centavos-alfonso-xiii-pgv/' },
   { es: '/coleccion/puerto-rico-numismatica/', en: '/collection/puerto-rico-numismatics/' },
+  {
+    es: '/coleccion/liberia-numismatica/20-dolares-1997-dragon-hong-kong/',
+    en: '/collection/liberia-numismatics/20-dollars-1997-dragon-hong-kong/',
+  },
+  { es: '/coleccion/liberia-numismatica/', en: '/collection/liberia-numismatics/' },
   { es: '/coleccion/paises-bajos/', en: '/collection/netherlands/' },
   {
     es: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
@@ -840,6 +845,10 @@ export function englishRedirects(): Record<string, string> {
     '/en/puerto-rico-numismatica/20-centavos-1895-pgv/',
     '/en/puerto-rico-numismatica/10-centavos-alfonso-xiii-pgv/',
     '/en/puerto-rico-numismatica/',
+    '/en/coleccion/liberia-numismatica/20-dolares-1997-dragon-hong-kong/',
+    '/en/coleccion/liberia-numismatica/',
+    '/en/liberia-numismatica/20-dolares-1997-dragon-hong-kong/',
+    '/en/liberia-numismatica/',
     '/en/coleccion/united-states-numismatics/hard-times-tokens/',
     '/en/coleccion/united-states-numismatics/ht-34-1837-donkey-turtle/',
     '/en/coleccion/united-states-numismatics/ht-181-circa-1835-boar-bristles/',

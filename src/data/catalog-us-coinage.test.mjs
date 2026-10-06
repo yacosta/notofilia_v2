@@ -98,8 +98,8 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(seriesPage, /USA_COINAGE_PATH/);
     assert.match(seriesPage, /t\.coinageLead/);
     assert.doesNotMatch(seriesPage, /target="_blank"/);
-    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos y Puerto Rico/);
-    assert.match(numismatica, /the United States, Lazarettos, the Netherlands, and Puerto Rico open the row/);
+    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos, Puerto Rico y Liberia/);
+    assert.match(numismatica, /the United States, Lazarettos, the Netherlands, Puerto Rico, and Liberia open the row/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
   });

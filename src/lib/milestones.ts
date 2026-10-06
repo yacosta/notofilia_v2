@@ -3,6 +3,7 @@ import { colombiaCoinagePieces, coinagePiecePath } from '../data/colombia-coinag
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
 import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
+import { liberiaCoins, coinPath as liberiaCoinPath } from '../data/liberia-coinage.ts';
 import { unitedStatesCoins, coinPath as unitedStatesCoinPath } from '../data/estados-unidos-coinage.ts';
 import { additions } from '../data/holdings.ts';
 import {
@@ -82,6 +83,21 @@ function catalogPieces(): CatalogPiece[] {
       id: `pr-${coin.id}`,
       country: 'PR',
       href: puertoRicoCoinPath(coin, 'es'),
+      title: coin.title,
+      dek: coin.lead,
+      pick: coin.references,
+      serial: '',
+      cert: '',
+      image: coin.images?.composite ?? '',
+      imageAlt: coin.frontCaption,
+    });
+  }
+
+  for (const coin of liberiaCoins) {
+    pieces.push({
+      id: `lr-${coin.id}`,
+      country: 'LR',
+      href: liberiaCoinPath(coin, 'es'),
       title: coin.title,
       dek: coin.lead,
       pick: coin.references,

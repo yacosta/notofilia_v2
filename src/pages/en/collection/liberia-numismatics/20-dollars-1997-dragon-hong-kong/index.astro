@@ -1,0 +1,9 @@
+---
+import LiberiaCoinPage from '../../../../../components/catalog/LiberiaCoinPage.astro';
+import { coinById } from '../../../../../data/liberia-coinage';
+
+const coin = coinById('20-dolares-1997-dragon-hong-kong');
+if (!coin) throw new Error('Missing Liberia 1997 20 dollars catalog coin');
+---
+
+<LiberiaCoinPage locale="en" coin={coin} />

@@ -22,7 +22,14 @@ import {
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
 import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
-import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, USA_MORGAN_PATH, coinById } from '../data/estados-unidos-coinage';
+import { LIBERIA_COINAGE_PATH, coinById as liberiaCoinById } from '../data/liberia-coinage';
+import {
+  USA_COINAGE_PATH,
+  USA_HARD_TIMES_PATH,
+  USA_MORGAN_PATH,
+  coinById,
+  morganOriginalRunCoins,
+} from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
@@ -97,19 +104,9 @@ if (!usGoldDollar1856) {
   throw new Error('Missing US 1856 Indian Princess gold dollar for mega-nav');
 }
 
-const usMorgan1885Cc = coinById('1-dolar-morgan-1885-cc');
-if (!usMorgan1885Cc) {
-  throw new Error('Missing US 1885-CC Morgan dollar for mega-nav');
-}
-
-const usMorgan1884S = coinById('1-dolar-morgan-1884-s');
-if (!usMorgan1884S) {
-  throw new Error('Missing US 1884-S Morgan dollar for mega-nav');
-}
-
-const usMorgan1883Cc = coinById('1-dolar-morgan-1883-cc');
-if (!usMorgan1883Cc) {
-  throw new Error('Missing US 1883-CC Morgan dollar for mega-nav');
+const usMorganOriginalRun = morganOriginalRunCoins();
+if (usMorganOriginalRun.length === 0) {
+  throw new Error('Missing original-run Morgan dollars for mega-nav');
 }
 
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
@@ -150,6 +147,11 @@ if (!puertoRico20Centavos) {
 const puertoRico10Centavos = puertoRicoCoinById('10-centavos-alfonso-xiii-pgv');
 if (!puertoRico10Centavos) {
   throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
+}
+
+const liberia20Dollars = liberiaCoinById('20-dolares-1997-dragon-hong-kong');
+if (!liberia20Dollars) {
+  throw new Error('Missing Liberia 1997 20 dollars for mega-nav');
 }
 
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
@@ -500,30 +502,16 @@ export const megaNav: NavNode[] = [
             href: usGoldDollar1856.path,
           },
           {
-            id: 'us-dolar-morgan-1878-1904',
-            es: morganSeriesCopy.es.breadcrumbCurrent,
-            en: morganSeriesCopy.en.breadcrumbCurrent,
+            id: 'us-dolares-morgan-emision-original',
+            es: morganSeriesCopy.es.title,
+            en: morganSeriesCopy.en.title,
             href: USA_MORGAN_PATH,
-            children: [
-              {
-                id: 'us-1884-s-1-dolar-morgan',
-                es: usMorgan1884S.title.es,
-                en: usMorgan1884S.title.en,
-                href: usMorgan1884S.path,
-              },
-              {
-                id: 'us-1-dolar-morgan-1883-cc',
-                es: usMorgan1883Cc.title.es,
-                en: usMorgan1883Cc.title.en,
-                href: usMorgan1883Cc.path,
-              },
-              {
-                id: 'us-1-dolar-morgan-1885-cc',
-                es: usMorgan1885Cc.title.es,
-                en: usMorgan1885Cc.title.en,
-                href: usMorgan1885Cc.path,
-              },
-            ],
+            children: usMorganOriginalRun.map((coin) => ({
+              id: `us-${coin.id}`,
+              es: coin.title.es,
+              en: coin.title.en,
+              href: coin.path,
+            })),
           },
           {
             id: 'us-1-dolar-trump-1776-2026',
@@ -558,6 +546,21 @@ export const megaNav: NavNode[] = [
             es: puertoRico10Centavos.title.es,
             en: puertoRico10Centavos.title.en,
             href: puertoRico10Centavos.path,
+          },
+        ],
+      },
+      {
+        id: 'lr-monedas',
+        es: 'Liberia',
+        en: 'Liberia',
+        href: LIBERIA_COINAGE_PATH,
+        flag: 'lr',
+        children: [
+          {
+            id: 'lr-20-dolares-1997-dragon-hong-kong',
+            es: liberia20Dollars.title.es,
+            en: liberia20Dollars.title.en,
+            href: liberia20Dollars.path,
           },
         ],
       },
