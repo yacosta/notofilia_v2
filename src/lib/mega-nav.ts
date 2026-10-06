@@ -70,8 +70,11 @@ export type NavNode = {
   flag?: string;
   /** Decorative mark for non-country panel links (Recursos, polymer continents, US series cases). */
   icon?: 'guides' | 'glossary' | 'news' | 'identify' | 'asia' | 'europe' | 'north-america' | 'rency' | 'miscellaneous' | 'circus';
-  /** Place this node in a second mega-menu column with its children always visible. */
-  column?: 'main' | 'aside';
+  /**
+   * Second mega-menu column. `peer` repeats the same country rows (Numismática: three per column).
+   * `aside` keeps that group's children visible (world polymer).
+   */
+  column?: 'main' | 'aside' | 'peer';
   /** Lay out this item's child links in a single desktop row (Recursos). */
   layout?: 'horizontal';
   children?: NavNode[];
@@ -527,6 +530,7 @@ export const megaNav: NavNode[] = [
         en: 'Netherlands',
         href: NETHERLANDS_COINAGE_PATH,
         flag: 'nl',
+        column: 'peer',
       },
       {
         id: 'pr-monedas',
@@ -534,6 +538,7 @@ export const megaNav: NavNode[] = [
         en: 'Puerto Rico',
         href: PUERTO_RICO_COINAGE_PATH,
         flag: 'pr',
+        column: 'peer',
         children: [
           {
             id: 'pr-20-centavos-1895-pgv',
@@ -555,6 +560,7 @@ export const megaNav: NavNode[] = [
         en: 'Liberia',
         href: LIBERIA_COINAGE_PATH,
         flag: 'lr',
+        column: 'peer',
         children: [
           {
             id: 'lr-20-dolares-1997-dragon-hong-kong',

@@ -54,70 +54,85 @@ export type NumismaticaCountry = {
   lead: LocalizedText;
 };
 
+const colombiaNumismatics: NumismaticaCountry = {
+  href: COLOMBIA_COINAGE_PATH,
+  years: { es: 'desde 1620', en: 'from 1620' },
+  title: { es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+  lead: {
+    es: 'Casa de Moneda de Santa Fe, cecas de la Independencia, reforma decimal y la Fábrica de Ibagué.',
+    en: 'The Santa Fe mint, independence issues, the decimal reform, and the Ibagué factory.',
+  },
+};
+
+const spainNumismatics: NumismaticaCountry = {
+  href: SPAIN_COINAGE_PATH,
+  years: { es: '1535–1864', en: '1535–1864' },
+  title: { es: 'España', en: 'Spain' },
+  lead: {
+    es: 'El 2 escudos de Sevilla de Felipe II, sin fecha, y el medio escudo de Fernando VI, Madrid 1757, ensaye JB.',
+    en: 'Philip II’s undated Seville 2 escudos, and Ferdinand VI’s half escudo, Madrid 1757, assayers JB.',
+  },
+};
+
+const unitedStatesNumismatics: NumismaticaCountry = {
+  href: USA_COINAGE_PATH,
+  years: { es: 'desde 1792', en: 'from 1792' },
+  title: { es: 'Estados Unidos', en: 'United States' },
+  lead: {
+    es: 'Fichas Hard Times, los Morgan de 1883-CC, 1884-S y 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+    en: 'Hard Times tokens, the 1883-CC, 1884-S, and 1885-CC Morgans, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
+  },
+};
+
+const netherlandsNumismatics: NumismaticaCountry = {
+  href: NETHERLANDS_COINAGE_PATH,
+  years: { es: 's. IX–2002', en: '9th c.–2002' },
+  title: { es: 'Países Bajos', en: 'Netherlands' },
+  lead: {
+    es: 'Del gulden de 1434 al ducado de Utrecht, el gulden decimal y el euro.',
+    en: 'From the 1434 gulden to the Utrecht ducat, the decimal gulden, and the euro.',
+  },
+};
+
+const puertoRicoNumismatics: NumismaticaCountry = {
+  href: PUERTO_RICO_COINAGE_PATH,
+  years: { es: '1895–1896', en: '1895–1896' },
+  title: { es: 'Puerto Rico', en: 'Puerto Rico' },
+  lead: {
+    es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, y un 10 centavos P·G·V con fecha por verificar.',
+    en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
+  },
+};
+
+const liberiaNumismatics: NumismaticaCountry = {
+  href: LIBERIA_COINAGE_PATH,
+  years: { es: '1997', en: '1997' },
+  title: { es: 'Liberia', en: 'Liberia' },
+  lead: {
+    es: 'Un 20 dólares de 1997 con el dragón de la retrocesión de Hong Kong. Metal, peso y KM sin confirmar.',
+    en: 'A 1997 20 dollars with the Hong Kong handover dragon. Metal, weight, and KM unconfirmed.',
+  },
+};
+
+/** Two columns of three countries. Lazarettos is a Colombian case, not a seventh country. */
+export const numismaticaCountryColumns: NumismaticaCountry[][] = [
+  [colombiaNumismatics, spainNumismatics, unitedStatesNumismatics],
+  [netherlandsNumismatics, puertoRicoNumismatics, liberiaNumismatics],
+];
+
+export const numismaticaLazarettos: NumismaticaCountry = {
+  href: LAZARETTOS_PATH,
+  years: { es: 'desde 1598', en: 'from 1598' },
+  title: { es: 'Lazarettos', en: 'Lazarettos' },
+  lead: {
+    es: 'Caño del Oro, Contratación, Agua de Dios y la coscoja: la moneda exclusiva del cordón sanitario.',
+    en: 'Caño del Oro, Contratación, Agua de Dios, and the coscoja: the exclusive coin of the sanitary cordon.',
+  },
+};
+
 export const numismaticaCountries: NumismaticaCountry[] = [
-  {
-    href: COLOMBIA_COINAGE_PATH,
-    years: { es: 'desde 1620', en: 'from 1620' },
-    title: { es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
-    lead: {
-      es: 'Casa de Moneda de Santa Fe, cecas de la Independencia, reforma decimal y la Fábrica de Ibagué.',
-      en: 'The Santa Fe mint, independence issues, the decimal reform, and the Ibagué factory.',
-    },
-  },
-  {
-    href: SPAIN_COINAGE_PATH,
-    years: { es: '1535–1864', en: '1535–1864' },
-    title: { es: 'España', en: 'Spain' },
-    lead: {
-      es: 'El 2 escudos de Sevilla de Felipe II, sin fecha, y el medio escudo de Fernando VI, Madrid 1757, ensaye JB.',
-      en: 'Philip II’s undated Seville 2 escudos, and Ferdinand VI’s half escudo, Madrid 1757, assayers JB.',
-    },
-  },
-  {
-    href: USA_COINAGE_PATH,
-    years: { es: 'desde 1792', en: 'from 1792' },
-    title: { es: 'Estados Unidos', en: 'United States' },
-    lead: {
-      es: 'Fichas Hard Times, los Morgan de 1883-CC, 1884-S y 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
-      en: 'Hard Times tokens, the 1883-CC, 1884-S, and 1885-CC Morgans, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
-    },
-  },
-  {
-    href: LAZARETTOS_PATH,
-    years: { es: 'desde 1598', en: 'from 1598' },
-    title: { es: 'Lazarettos', en: 'Lazarettos' },
-    lead: {
-      es: 'Caño del Oro, Contratación, Agua de Dios y la coscoja: la moneda exclusiva del cordón sanitario.',
-      en: 'Caño del Oro, Contratación, Agua de Dios, and the coscoja: the exclusive coin of the sanitary cordon.',
-    },
-  },
-  {
-    href: NETHERLANDS_COINAGE_PATH,
-    years: { es: 's. IX–2002', en: '9th c.–2002' },
-    title: { es: 'Países Bajos', en: 'Netherlands' },
-    lead: {
-      es: 'Del gulden de 1434 al ducado de Utrecht, el gulden decimal y el euro.',
-      en: 'From the 1434 gulden to the Utrecht ducat, the decimal gulden, and the euro.',
-    },
-  },
-  {
-    href: PUERTO_RICO_COINAGE_PATH,
-    years: { es: '1895–1896', en: '1895–1896' },
-    title: { es: 'Puerto Rico', en: 'Puerto Rico' },
-    lead: {
-      es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, y un 10 centavos P·G·V con fecha por verificar.',
-      en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
-    },
-  },
-  {
-    href: LIBERIA_COINAGE_PATH,
-    years: { es: '1997', en: '1997' },
-    title: { es: 'Liberia', en: 'Liberia' },
-    lead: {
-      es: 'Un 20 dólares de 1997 con el dragón de la retrocesión de Hong Kong. Metal, peso y KM sin confirmar.',
-      en: 'A 1997 20 dollars with the Hong Kong handover dragon. Metal, weight, and KM unconfirmed.',
-    },
-  },
+  ...numismaticaCountryColumns.flat(),
+  numismaticaLazarettos,
 ];
 
 export const numismaticaCopy = {
@@ -135,7 +150,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos, Puerto Rico y Liberia.',
+      'Dos columnas, tres países en cada una. A la izquierda: Colombia-Numismática, España y Estados Unidos. A la derecha: Países Bajos, Puerto Rico y Liberia. Los lazaretos colombianos tienen vitrina propia, debajo.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
@@ -153,7 +168,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, the Netherlands, Puerto Rico, and Liberia open the row.',
+      'Two columns, three countries in each. On the left: Colombia-Numismatics, Spain, and the United States. On the right: the Netherlands, Puerto Rico, and Liberia. The Colombian lazarettos have their own case below.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },
