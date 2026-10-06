@@ -1,8 +1,14 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
+import { register } from 'node:module';
 import { footerLinksFromNav } from './footer-nav.ts';
 import { navColumns } from './nav-columns.ts';
+
+register(new URL('./resolve-ts-hook.mjs', import.meta.url));
+
+const { megaNav } = await import('./mega-nav.ts');
+const { morganOriginalRunCoins } = await import('../data/estados-unidos-coinage.ts');
 
 describe('collection menu labels', () => {
   it('uses a dash between Colección Virtual and the discipline name', () => {
@@ -324,9 +330,7 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('2-50-dolares-1908-cabeza-de-indio'\)/);
     assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
     assert.match(source, /coinById\('1-dolar-oro-1856-cabeza-grande'\)/);
-    assert.match(source, /coinById\('1-dolar-morgan-1885-cc'\)/);
-    assert.match(source, /coinById\('1-dolar-morgan-1884-s'\)/);
-    assert.match(source, /coinById\('1-dolar-morgan-1883-cc'\)/);
+    assert.match(source, /morganOriginalRunCoins\(\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
     assert.match(usBlock, /id: 'us-ht-34-1837-burro-tortuga'/);
@@ -338,14 +342,39 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
     assert.match(usBlock, /id: 'us-1-dolar-oro-1856-cabeza-grande'/);
-    assert.match(usBlock, /id: 'us-1-dolar-morgan-1885-cc'/);
-    assert.match(usBlock, /id: 'us-1884-s-1-dolar-morgan'/);
-    assert.match(usBlock, /id: 'us-1-dolar-morgan-1883-cc'/);
+    assert.match(usBlock, /id: 'us-dolares-morgan-emision-original'/);
+    assert.match(usBlock, /Dólares Morgan de plata - emisión original \(1878–1904\)/);
+    assert.match(usBlock, /Morgan Silver Dollars - Original Run \(1878–1904\)/);
+    assert.match(usBlock, /href: `\$\{USA_COINAGE_PATH\}#dolar-morgan`/);
+    assert.match(usBlock, /children: usMorganOriginalRun\.map/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
     assert.match(usBlock, /children:/);
     assert.match(source, /export const footerNumismatica = footerTopLevelLinks\(navNumismatica\?\.children\)/);
+  });
+
+  it('nests 1878–1904 Morgan dollars under the original-run submenu', () => {
+    const numismatica = megaNav.find((item) => item.id === 'numismatica-mundial');
+    const unitedStates = numismatica?.children?.find((item) => item.id === 'us-monedas');
+    const submenu = unitedStates?.children?.find((item) => item.id === 'us-dolares-morgan-emision-original');
+    const holdings = morganOriginalRunCoins();
+    assert.ok(submenu);
+    assert.equal(submenu.es, 'Dólares Morgan de plata - emisión original (1878–1904)');
+    assert.equal(submenu.en, 'Morgan Silver Dollars - Original Run (1878–1904)');
+    assert.equal(submenu.href, '/coleccion/estados-unidos-numismatica/#dolar-morgan');
+    assert.deepEqual(
+      submenu.children?.map((item) => item.href),
+      holdings.map((coin) => coin.path),
+    );
+    assert.deepEqual(
+      holdings.map((coin) => coin.year),
+      ['1883', '1884', '1885'],
+    );
+    const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
+    for (const coin of holdings) {
+      assert.equal(directHrefs.includes(coin.path), false);
+    }
   });
 });
 
