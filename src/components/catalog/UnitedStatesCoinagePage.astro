@@ -15,7 +15,7 @@ import {
   seriesCopy,
   seriesSources,
   unitedStatesCoinageChapters,
-  unitedStatesCoins,
+  unitedStatesCoinsInCaseOrder,
 } from '../../data/estados-unidos-coinage';
 import SourceList from './SourceList.astro';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
@@ -28,6 +28,7 @@ const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pieces = coinPageCopy[locale];
 const pathname = coinagePath(locale);
+const coins = unitedStatesCoinsInCaseOrder();
 const hero =
   locale === 'en'
     ? {
@@ -107,7 +108,7 @@ const jsonLd = collectionPageJsonLd({
           aria-label={copy[locale].coinsInCollection}
         >
           {
-            unitedStatesCoins.map((coin) => (
+            coins.map((coin) => (
               <li class="min-w-0">
                 <a
                   href={coinPath(coin, locale)}
