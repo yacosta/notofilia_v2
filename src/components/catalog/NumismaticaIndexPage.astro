@@ -6,9 +6,11 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import {
   numismaticaCopy,
-  numismaticaCountries,
+  numismaticaCountryColumns,
+  numismaticaLazarettos,
   numismaticaGuide,
   numismaticaPath,
+  type NumismaticaCountry,
   type NumismaticaGuidePart,
 } from '../../data/numismatica';
 
@@ -18,6 +20,19 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = numismaticaCopy[locale];
+const catalogGroups: { cases: NumismaticaCountry[]; className: string; label: string }[] = [
+  {
+    cases: numismaticaCountryColumns.flat(),
+    className:
+      'm-0 grid list-none grid-cols-1 gap-4 p-0 lg:grid-cols-2 lg:grid-rows-[auto_auto_auto] lg:grid-flow-col',
+    label: copy[locale].coinCases,
+  },
+  {
+    cases: [numismaticaLazarettos],
+    className: 'm-0 mt-4 grid list-none grid-cols-1 gap-4 p-0 lg:max-w-[calc((100%-1rem)/2)]',
+    label: numismaticaLazarettos.title[locale],
+  },
+];
 const guide = numismaticaGuide[locale];
 const pathname = numismaticaPath(locale);
 const jsonLd = collectionPageJsonLd({
@@ -158,35 +173,34 @@ const sections = guide.sections.map((section) => ({
         </h2>
         <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.holdingsIntro}</p>
 
-        <ol
-          class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4"
-          aria-label={copy[locale].coinCases}
-        >
-          {
-            numismaticaCountries.map((country) => (
-              <li class="min-w-0">
-                <a
-                  href={localizePath(country.href, locale)}
-                  class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
-                >
-                  <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
-                    <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
-                      {country.years[locale]}
-                    </span>
-                  </div>
-                  <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
-                    {country.title[locale]}
-                  </h3>
-                  <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                    {t.eraLabel} · {country.years[locale]}
-                  </p>
-                  <p class="mb-3 mt-0 hidden font-sans text-[14px]/5 text-muted sm:block">{country.lead[locale]}</p>
-                  <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCountry} →</span>
-                </a>
-              </li>
-            ))
-          }
-        </ol>
+        {
+          catalogGroups.map((group) => (
+            <ol class={group.className} aria-label={group.label}>
+              {group.cases.map((country) => (
+                <li class="min-w-0">
+                  <a
+                    href={localizePath(country.href, locale)}
+                    class="group flex h-full min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-2 text-inherit no-underline hover:border-gold-light sm:p-4"
+                  >
+                    <div class="mb-3 flex aspect-[3/1] w-full items-center justify-center rounded-[2px] bg-bg sm:mb-4">
+                      <span class="px-1 text-center font-display text-[clamp(0.7rem,1.6vw,1.15rem)] leading-tight text-gold-light">
+                        {country.years[locale]}
+                      </span>
+                    </div>
+                    <h3 class="mb-2 mt-0 font-display text-[clamp(0.85rem,2.2vw,1.35rem)] leading-tight font-normal text-cream-dim group-hover:text-cream">
+                      {country.title[locale]}
+                    </h3>
+                    <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
+                      {t.eraLabel} · {country.years[locale]}
+                    </p>
+                    <p class="mb-3 mt-0 hidden font-sans text-[14px]/5 text-muted sm:block">{country.lead[locale]}</p>
+                    <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewCountry} →</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          ))
+        }
       </section>
 
       <p class="mt-12">

@@ -7,6 +7,10 @@ const data = readFileSync(new URL('./estados-unidos-coinage.ts', import.meta.url
 const holdings = readFileSync(new URL('./holdings.ts', import.meta.url), 'utf8');
 const notes = readFileSync(new URL('./estados-unidos.ts', import.meta.url), 'utf8');
 const numismatica = readFileSync(new URL('./numismatica.ts', import.meta.url), 'utf8');
+const numismaticaIndex = readFileSync(
+  new URL('../components/catalog/NumismaticaIndexPage.astro', import.meta.url),
+  'utf8',
+);
 const seriesPage = readFileSync(
   new URL('../components/catalog/UnitedStatesSeriesPage.astro', import.meta.url),
   'utf8',
@@ -82,8 +86,13 @@ describe('US Trump Semiquincentennial dollar', () => {
     assert.match(seriesPage, /USA_COINAGE_PATH/);
     assert.match(seriesPage, /t\.coinageLead/);
     assert.doesNotMatch(seriesPage, /target="_blank"/);
-    assert.match(numismatica, /Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos, Puerto Rico y Liberia/);
-    assert.match(numismatica, /the United States, Lazarettos, the Netherlands, Puerto Rico, and Liberia open the row/);
+    assert.match(numismatica, /A la izquierda: Colombia-Numismática, España y Estados Unidos\. A la derecha: Países Bajos, Puerto Rico y Liberia/);
+    assert.match(numismatica, /On the left: Colombia-Numismatics, Spain, and the United States\. On the right: the Netherlands, Puerto Rico, and Liberia/);
+    assert.match(numismatica, /\[colombiaNumismatics, spainNumismatics, unitedStatesNumismatics\]/);
+    assert.match(numismatica, /\[netherlandsNumismatics, puertoRicoNumismatics, liberiaNumismatics\]/);
+    assert.match(numismaticaIndex, /lg:grid-cols-2 lg:grid-rows-\[auto_auto_auto\] lg:grid-flow-col/);
+    assert.doesNotMatch(numismaticaIndex, /lg:grid-cols-4/);
+    assert.match(numismaticaIndex, /numismaticaLazarettos/);
     assert.match(numismatica, /href: USA_COINAGE_PATH/);
     assert.match(data, /notesLead: 'El papel moneda de este país se documenta en la vitrina de notafilia.'/);
   });

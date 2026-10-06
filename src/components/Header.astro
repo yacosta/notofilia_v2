@@ -117,7 +117,7 @@ function nodeIsCurrent(node: NavNode): boolean {
           const current = nodeIsCurrent(item);
           const nested = Boolean(item.children?.length);
           const href = item.href ? localizePath(item.href, locale) : undefined;
-          const { main, aside } = navColumns(item.children ?? []);
+          const { main, peer, aside } = navColumns(item.children ?? []);
           return (
             <li class:list={['mega-item', current && 'is-current']} data-mega-item>
               <div class="mega-item-chrome">
@@ -154,10 +154,15 @@ function nodeIsCurrent(node: NavNode): boolean {
                       </button>
                       <p class="mega-subhead-title">{label}</p>
                     </div>
-                    <div class:list={['mega-columns', aside.length > 0 && 'mega-columns--split']}>
+                    <div class:list={['mega-columns', (peer.length > 0 || aside.length > 0) && 'mega-columns--split']}>
                       <div class="mega-column">
                         <NavTree nodes={main} locale={locale} openSubmenu={t.openSubmenu} layout={item.layout} />
                       </div>
+                      {peer.length > 0 && (
+                        <div class="mega-column mega-column--peer">
+                          <NavTree nodes={peer} locale={locale} openSubmenu={t.openSubmenu} />
+                        </div>
+                      )}
                       {aside.length > 0 && (
                         <div class="mega-column mega-column--aside">
                           {aside.map((group) => {

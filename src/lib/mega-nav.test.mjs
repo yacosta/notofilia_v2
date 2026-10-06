@@ -94,6 +94,35 @@ describe('mega-nav columns', () => {
     );
   });
 
+  it('keeps Numismática to three countries per column', () => {
+    const numismatica = megaNav.find((item) => item.id === 'numismatica-mundial');
+    const { main, peer, aside } = navColumns(numismatica?.children ?? []);
+    assert.deepEqual(
+      main.map((node) => node.id),
+      ['colombia-monedas', 'es-monedas', 'us-monedas'],
+    );
+    assert.deepEqual(
+      peer.map((node) => node.id),
+      ['nl-monedas', 'pr-monedas', 'lr-monedas'],
+    );
+    assert.equal(aside.length, 0);
+    assert.equal(main.length, 3);
+    assert.equal(peer.length, 3);
+    assert.ok(peer.every((node) => node.flag));
+  });
+
+  it('keeps Notafilia countries in the main column and polymer aside', () => {
+    const notafilia = megaNav.find((item) => item.id === 'coleccion-notofilia');
+    const { main, peer, aside } = navColumns(notafilia?.children ?? []);
+    assert.equal(peer.length, 0);
+    assert.deepEqual(
+      aside.map((node) => node.id),
+      ['polimero'],
+    );
+    assert.ok(main.some((node) => node.id === 'colombia'));
+    assert.ok(main.every((node) => node.column !== 'peer'));
+  });
+
   it('leaves single-column menus untouched', () => {
     const nodes = [
       { id: 'colombia-monedas', es: 'Colombia', en: 'Colombia', flag: 'co' },
