@@ -29,7 +29,8 @@ import { mpcProgramNotes } from '../data/mpc';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { spainCoins } from '../data/espana-coinage';
 import { puertoRicoCoins } from '../data/puerto-rico-coinage';
-import { unitedStatesCoins } from '../data/estados-unidos-coinage';
+import { unitedStatesCoins, USA_MORGAN_PATH } from '../data/estados-unidos-coinage';
+import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { victoryNotes } from '../data/philippines-victory-66';
 import { pnbNotes } from '../data/philippines-pnb-1916';
 import { puertoRicoNotes } from '../data/puerto-rico';
@@ -481,6 +482,13 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       href: USA_RENCY_PATH,
       title: { es: rencySeriesCopy.es.title, en: rencySeriesCopy.en.title },
       dek: { es: rencySeriesCopy.es.metaDescription, en: rencySeriesCopy.en.metaDescription },
+    },
+    {
+      href: USA_MORGAN_PATH,
+      title: { es: morganSeriesCopy.es.title, en: morganSeriesCopy.en.title },
+      dek: { es: morganSeriesCopy.es.metaDescription, en: morganSeriesCopy.en.metaDescription },
+      extra:
+        'Morgan silver dollar original run 1878 1904 George T Morgan Bland-Allison Sherman Pittman Carson City CC San Francisco S New Orleans O 1884-S 1883-CC 1885-CC GSA VAM eight tail feathers 1893-S 1895 proof',
     },
     {
       href: COSCOJAS_SANTANDER_PATH,

@@ -22,7 +22,8 @@ import {
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
 import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
-import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, coinById } from '../data/estados-unidos-coinage';
+import { USA_COINAGE_PATH, USA_HARD_TIMES_PATH, USA_MORGAN_PATH, coinById } from '../data/estados-unidos-coinage';
+import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -499,22 +500,30 @@ export const megaNav: NavNode[] = [
             href: usGoldDollar1856.path,
           },
           {
-            id: 'us-1884-s-1-dolar-morgan',
-            es: usMorgan1884S.title.es,
-            en: usMorgan1884S.title.en,
-            href: usMorgan1884S.path,
-          },
-          {
-            id: 'us-1-dolar-morgan-1883-cc',
-            es: usMorgan1883Cc.title.es,
-            en: usMorgan1883Cc.title.en,
-            href: usMorgan1883Cc.path,
-          },
-          {
-            id: 'us-1-dolar-morgan-1885-cc',
-            es: usMorgan1885Cc.title.es,
-            en: usMorgan1885Cc.title.en,
-            href: usMorgan1885Cc.path,
+            id: 'us-dolar-morgan-1878-1904',
+            es: morganSeriesCopy.es.breadcrumbCurrent,
+            en: morganSeriesCopy.en.breadcrumbCurrent,
+            href: USA_MORGAN_PATH,
+            children: [
+              {
+                id: 'us-1884-s-1-dolar-morgan',
+                es: usMorgan1884S.title.es,
+                en: usMorgan1884S.title.en,
+                href: usMorgan1884S.path,
+              },
+              {
+                id: 'us-1-dolar-morgan-1883-cc',
+                es: usMorgan1883Cc.title.es,
+                en: usMorgan1883Cc.title.en,
+                href: usMorgan1883Cc.path,
+              },
+              {
+                id: 'us-1-dolar-morgan-1885-cc',
+                es: usMorgan1885Cc.title.es,
+                en: usMorgan1885Cc.title.en,
+                href: usMorgan1885Cc.path,
+              },
+            ],
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

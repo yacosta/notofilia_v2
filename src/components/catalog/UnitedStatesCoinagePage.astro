@@ -163,7 +163,11 @@ const jsonLd = collectionPageJsonLd({
                     {t.eraLabel} · {chapter.years[locale]}
                   </p>
                   <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">
-                    {chapter.id === 'hard-times' ? t.hardTimesChapterCta : t.viewChapter} →
+                    {chapter.id === 'hard-times'
+                      ? t.hardTimesChapterCta
+                      : chapter.id === 'dolar-morgan'
+                        ? t.morganChapterCta
+                        : t.viewChapter} →
                   </span>
                 </a>
               </li>

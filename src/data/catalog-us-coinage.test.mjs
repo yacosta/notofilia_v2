@@ -36,6 +36,22 @@ const enHt34Series = readFileSync(
   'utf8',
 );
 const hardTimesEssay = readFileSync(new URL('./estados-unidos-hard-times.ts', import.meta.url), 'utf8');
+const morganEssay = readFileSync(new URL('./estados-unidos-morgan-dollars.ts', import.meta.url), 'utf8');
+const esMorganSeries = readFileSync(
+  new URL('../pages/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/index.astro', import.meta.url),
+  'utf8',
+);
+const enMorganSeries = readFileSync(
+  new URL(
+    '../pages/en/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/index.astro',
+    import.meta.url,
+  ),
+  'utf8',
+);
+const morganPage = readFileSync(
+  new URL('../components/catalog/UnitedStatesMorganDollarsSeriesPage.astro', import.meta.url),
+  'utf8',
+);
 
 describe('US Trump Semiquincentennial dollar', () => {
   it('registers one bilingual coinage series and one holding', () => {
@@ -462,5 +478,37 @@ describe('US 1885-CC Morgan dollar', () => {
     assert.doesNotMatch(data, /\$\d+\.\d{2}/);
     assert.match(holdings, /id: 'us-1-dolar-morgan-1885-cc', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1885-cc-morgan-km110/);
+  });
+});
+
+describe('US Morgan dollar original run, 1878–1904', () => {
+  it('keeps a bilingual series page, like Hard Times, and does not publish prices', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/', 'en'),
+      '/en/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/',
+    );
+    assert.match(data, /USA_MORGAN_PATH = '\/coleccion\/estados-unidos-numismatica\/dolar-morgan-emision-original-1878-1904\/'/);
+    assert.match(data, /if \(id === 'dolar-morgan'\) return morganPath\(locale\)/);
+    assert.match(esMorganSeries, /UnitedStatesMorganDollarsSeriesPage locale="es"/);
+    assert.match(enMorganSeries, /UnitedStatesMorganDollarsSeriesPage locale="en"/);
+    assert.match(morganPage, /id="main-content"/);
+    assert.match(morganPage, /SeriesHero/);
+    assert.match(morganPage, /collectionPageJsonLd/);
+    assert.match(morganPage, /max-w-\[46rem\]/);
+    assert.match(morganPage, /max-w-content/);
+    assert.doesNotMatch(morganPage, /blog/);
+    assert.match(morganEssay, /hero-morgan-dollars-1878-1904\.jpg/);
+    assert.match(morganEssay, /chapterId === 'dolar-morgan'/);
+    assert.match(morganEssay, /Morgan Silver Dollars — Original Run \(1878–1904\)/);
+    assert.match(morganEssay, /Bland-Allison/);
+    assert.match(morganEssay, /Pittman/);
+    assert.match(morganEssay, /1884-S/);
+    assert.match(morganEssay, /1883-CC/);
+    assert.match(morganEssay, /1885-CC/);
+    assert.match(morganEssay, /Esta página no publica precios/);
+    assert.match(morganEssay, /This page does not publish prices/);
+    assert.doesNotMatch(morganEssay, /\$2,086,875/);
+    assert.doesNotMatch(morganEssay, /\$750,000/);
+    assert.doesNotMatch(morganPage, /EditorialArticlePage/);
   });
 });
