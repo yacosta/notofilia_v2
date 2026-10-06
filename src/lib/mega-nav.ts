@@ -26,9 +26,11 @@ import { LIBERIA_COINAGE_PATH, coinById as liberiaCoinById } from '../data/liber
 import {
   USA_COINAGE_PATH,
   USA_HARD_TIMES_PATH,
+  USA_MORGAN_PATH,
   coinById,
   morganOriginalRunCoins,
 } from '../data/estados-unidos-coinage';
+import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -501,9 +503,9 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'us-dolares-morgan-emision-original',
-            es: 'Dólares Morgan de plata - emisión original (1878–1904)',
-            en: 'Morgan Silver Dollars - Original Run (1878–1904)',
-            href: `${USA_COINAGE_PATH}#dolar-morgan`,
+            es: morganSeriesCopy.es.title,
+            en: morganSeriesCopy.en.title,
+            href: USA_MORGAN_PATH,
             children: usMorganOriginalRun.map((coin) => ({
               id: `us-${coin.id}`,
               es: coin.title.es,

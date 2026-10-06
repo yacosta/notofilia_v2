@@ -10,6 +10,7 @@ import {
   coinagePath,
   coinPath,
   hardTimesPath,
+  morganPath,
   NUMISMATICS_PATH,
   seriesCopy,
   type UnitedStatesCoin,
@@ -45,6 +46,9 @@ const jsonCrumbs = [
   { name: t.seriesLink, path: coinagePath(locale) },
   ...(coin.chapterId === 'hard-times'
     ? [{ name: t.hardTimesLink, path: hardTimesPath(locale) }]
+    : []),
+  ...(coin.chapterId === 'dolar-morgan'
+    ? [{ name: t.morganSeriesLink, path: morganPath(locale) }]
     : []),
   { name: seo.h1, path: pathname },
 ];
@@ -89,6 +93,9 @@ const jsonCrumbs = [
           { href: coinagePath(locale), label: t.seriesLink },
           ...(coin.chapterId === 'hard-times'
             ? [{ href: hardTimesPath(locale), label: t.hardTimesLink }]
+            : []),
+          ...(coin.chapterId === 'dolar-morgan'
+            ? [{ href: morganPath(locale), label: t.morganSeriesLink }]
             : []),
           { label: seo.h1 },
         ]}

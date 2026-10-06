@@ -8,7 +8,8 @@ import { navColumns } from './nav-columns.ts';
 register(new URL('./resolve-ts-hook.mjs', import.meta.url));
 
 const { megaNav } = await import('./mega-nav.ts');
-const { morganOriginalRunCoins } = await import('../data/estados-unidos-coinage.ts');
+const { USA_MORGAN_PATH, morganOriginalRunCoins } = await import('../data/estados-unidos-coinage.ts');
+const { morganSeriesCopy } = await import('../data/estados-unidos-morgan-dollars.ts');
 
 describe('collection menu labels', () => {
   it('uses a dash between Colección Virtual and the discipline name', () => {
@@ -343,9 +344,9 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
     assert.match(usBlock, /id: 'us-1-dolar-oro-1856-cabeza-grande'/);
     assert.match(usBlock, /id: 'us-dolares-morgan-emision-original'/);
-    assert.match(usBlock, /Dólares Morgan de plata - emisión original \(1878–1904\)/);
-    assert.match(usBlock, /Morgan Silver Dollars - Original Run \(1878–1904\)/);
-    assert.match(usBlock, /href: `\$\{USA_COINAGE_PATH\}#dolar-morgan`/);
+    assert.match(usBlock, /es: morganSeriesCopy\.es\.title/);
+    assert.match(usBlock, /en: morganSeriesCopy\.en\.title/);
+    assert.match(usBlock, /href: USA_MORGAN_PATH/);
     assert.match(usBlock, /children: usMorganOriginalRun\.map/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
@@ -360,9 +361,9 @@ describe('United States numismatics menu', () => {
     const submenu = unitedStates?.children?.find((item) => item.id === 'us-dolares-morgan-emision-original');
     const holdings = morganOriginalRunCoins();
     assert.ok(submenu);
-    assert.equal(submenu.es, 'Dólares Morgan de plata - emisión original (1878–1904)');
-    assert.equal(submenu.en, 'Morgan Silver Dollars - Original Run (1878–1904)');
-    assert.equal(submenu.href, '/coleccion/estados-unidos-numismatica/#dolar-morgan');
+    assert.equal(submenu.es, morganSeriesCopy.es.title);
+    assert.equal(submenu.en, morganSeriesCopy.en.title);
+    assert.equal(submenu.href, USA_MORGAN_PATH);
     assert.deepEqual(
       submenu.children?.map((item) => item.href),
       holdings.map((coin) => coin.path),

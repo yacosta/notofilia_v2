@@ -277,6 +277,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Fichas Hard Times',
     en: 'Hard Times tokens',
   },
+  '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
+    es: 'Dólares Morgan de plata — emisión original (1878–1904)',
+    en: 'Morgan Silver Dollars — Original Run (1878–1904)',
+  },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'Ficha Hard Times de 1837 · HT-34 / Low-20',
     en: '1837 Hard Times token · HT-34 / Low-20',
@@ -371,6 +375,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/fichas-hard-times/': {
     es: 'La vitrina de menuda privada de 1832–1844: el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181.',
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
+  },
+  '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1884-S, el 1883-CC y el 1885-CC de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1884-S, 1883-CC, and 1885-CC.',
   },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',

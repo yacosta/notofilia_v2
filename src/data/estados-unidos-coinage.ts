@@ -8,6 +8,8 @@ export const USA_COINAGE_PATH = '/coleccion/estados-unidos-numismatica/';
 export const USA_COINAGE_PATH_EN = '/collection/united-states-numismatics/';
 export const USA_HARD_TIMES_PATH = '/coleccion/estados-unidos-numismatica/fichas-hard-times/';
 export const USA_HARD_TIMES_PATH_EN = '/collection/united-states-numismatics/hard-times-tokens/';
+export const USA_MORGAN_PATH = '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/';
+export const USA_MORGAN_PATH_EN = '/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/';
 
 export type UnitedStatesCoinageChapterId =
   | 'hard-times'
@@ -210,6 +212,7 @@ export const seriesCopy = {
       'Cinco capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
+    morganChapterCta: 'Abrir la emisión original',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     parentLink: 'Numismática',
@@ -234,6 +237,7 @@ export const seriesCopy = {
       'Five chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
+    morganChapterCta: 'Open the original run',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     parentLink: 'Numismatics',
@@ -1944,6 +1948,7 @@ export const coinPageCopy = {
     seriesLink: 'Estados Unidos · Numismática',
     chapterLink: 'Semiquincentenario',
     hardTimesLink: 'Fichas Hard Times',
+    morganSeriesLink: 'Dólar Morgan, 1878–1904',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
@@ -1976,6 +1981,7 @@ export const coinPageCopy = {
     seriesLink: 'United States · Numismatics',
     chapterLink: 'Semiquincentennial',
     hardTimesLink: 'Hard Times tokens',
+    morganSeriesLink: 'Morgan dollar, 1878–1904',
     frontHeading: 'Obverse',
     backHeading: 'Reverse',
     aboutHeading: 'The coin',
@@ -2038,8 +2044,13 @@ export function hardTimesPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_HARD_TIMES_PATH_EN}` : USA_HARD_TIMES_PATH;
 }
 
+export function morganPath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${USA_MORGAN_PATH_EN}` : USA_MORGAN_PATH;
+}
+
 export function chapterHref(id: UnitedStatesCoinageChapterId, locale: 'es' | 'en' = 'es'): string {
   if (id === 'hard-times') return hardTimesPath(locale);
+  if (id === 'dolar-morgan') return morganPath(locale);
   return `#${id}`;
 }
 
@@ -2054,5 +2065,7 @@ export const unitedStatesCoinageDedicatedSlugs = [
   USA_COINAGE_PATH_EN,
   USA_HARD_TIMES_PATH,
   USA_HARD_TIMES_PATH_EN,
+  USA_MORGAN_PATH,
+  USA_MORGAN_PATH_EN,
   ...unitedStatesCoins.flatMap((coin) => [coin.path, coin.pathEn]),
 ].map((path) => path.replace(/^\/en(?=\/)/, '').replace(/^\/|\/$/g, ''));
