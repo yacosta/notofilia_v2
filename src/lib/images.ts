@@ -10,7 +10,7 @@ export const CATALOG_HERO_VERSION = '20260829';
  * Cloudflare Image Resizing keeps the previous file for hours; the query
  * forces the homepage card and the note srcset onto the new frame.
  */
-export const CATALOG_SCAN_VERSION = '20261006a';
+export const CATALOG_SCAN_VERSION = '20261006b';
 
 export function catalogAssetSrc(src: string, version: string = CATALOG_HERO_VERSION): string {
   if (!version || !src.startsWith('/')) return src;
