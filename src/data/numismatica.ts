@@ -3,6 +3,7 @@ import { SPAIN_COINAGE_PATH } from './espana-coinage';
 import { LAZARETTOS_PATH } from './lazarettos';
 import { NETHERLANDS_COINAGE_PATH } from './netherlands-coinage';
 import { PUERTO_RICO_COINAGE_PATH } from './puerto-rico-coinage';
+import { LIBERIA_COINAGE_PATH } from './liberia-coinage';
 import { USA_COINAGE_PATH } from './estados-unidos-coinage';
 import type { LocalizedText } from './catalog';
 import numismaticaGuideJson from './numismatica-guide.json';
@@ -108,6 +109,15 @@ export const numismaticaCountries: NumismaticaCountry[] = [
       en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
     },
   },
+  {
+    href: LIBERIA_COINAGE_PATH,
+    years: { es: '1997', en: '1997' },
+    title: { es: 'Liberia', en: 'Liberia' },
+    lead: {
+      es: 'Un 20 dólares de 1997 con el dragón de la retrocesión de Hong Kong. Metal, peso y KM sin confirmar.',
+      en: 'A 1997 20 dollars with the Hong Kong handover dragon. Metal, weight, and KM unconfirmed.',
+    },
+  },
 ];
 
 export const numismaticaCopy = {
@@ -125,7 +135,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos y Puerto Rico.',
+      'Una vitrina por tarjeta, de izquierda a derecha según se documente. Hoy abren Colombia-Numismática, España, Estados Unidos, Lazarettos, Países Bajos, Puerto Rico y Liberia.',
     viewCountry: 'Leer el catálogo',
     eraLabel: 'Época',
   },
@@ -143,7 +153,7 @@ export const numismaticaCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, the Netherlands, and Puerto Rico open the row.',
+      'One case to a card, left to right as each is documented. Colombia-Numismatics, Spain, the United States, Lazarettos, the Netherlands, Puerto Rico, and Liberia open the row.',
     viewCountry: 'Read the catalog',
     eraLabel: 'Period',
   },
