@@ -408,6 +408,10 @@ describe('US 1883-CC Morgan dollar', () => {
     assert.match(data, /700,000/);
     assert.match(data, /no_serial_reason:\n      'Struck United States Morgan silver dollar/);
     assert.match(data, /united-states-mint-1-dollar-1883-cc-morgan-composite\.jpg/);
+    assert.match(
+      data,
+      /united-states-mint-1-dollar-1883-cc-morgan-back\.jpg',\n      width: 1672,\n      height: 941,\n      faceWidth: 1672,\n      faceHeight: 941,/,
+    );
     assert.match(data, /pcgs.com\/coinfacts\/coin\/1883-cc-1\/7144/);
     assert.match(data, /en\.numista\.com\/1492/);
     assert.match(data, /Bland–Allison/);

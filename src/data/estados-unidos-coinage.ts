@@ -1728,7 +1728,7 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       composite: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-composite.jpg',
       front: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-front.jpg',
       back: '/images/catalog/united-states/united-states-mint-1-dollar-1883-cc-morgan-back.jpg',
-      width: 3344,
+      width: 1672,
       height: 941,
       faceWidth: 1672,
       faceHeight: 941,
