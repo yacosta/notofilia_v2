@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T00:40:24.021Z",
+  "generatedAt": "2026-10-06T01:50:56.309Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5188,6 +5188,45 @@
       "title": {
         "es": "10 dólares · Certificado de oro · Serie 1922",
         "en": "$10 · Gold Certificate · Series 1922"
+      }
+    },
+    {
+      "pieceId": "20-dolares-1997-dragon-hong-kong",
+      "face": "front",
+      "hash": "00713355b3756100",
+      "kind": "coin",
+      "path": "/coleccion/liberia-numismatica/20-dolares-1997-dragon-hong-kong/",
+      "pick": "KM sin asignar",
+      "image": "/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-composite.png",
+      "title": {
+        "es": "20 dólares · Retrocesión de Hong Kong · 1997",
+        "en": "20 dollars · Hong Kong handover · 1997"
+      }
+    },
+    {
+      "pieceId": "20-dolares-1997-dragon-hong-kong",
+      "face": "front",
+      "hash": "08140a262a060408",
+      "kind": "coin",
+      "path": "/coleccion/liberia-numismatica/20-dolares-1997-dragon-hong-kong/",
+      "pick": "KM sin asignar",
+      "image": "/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-front.png",
+      "title": {
+        "es": "20 dólares · Retrocesión de Hong Kong · 1997",
+        "en": "20 dollars · Hong Kong handover · 1997"
+      }
+    },
+    {
+      "pieceId": "20-dolares-1997-dragon-hong-kong",
+      "face": "back",
+      "hash": "081c16322a1e1408",
+      "kind": "coin",
+      "path": "/coleccion/liberia-numismatica/20-dolares-1997-dragon-hong-kong/",
+      "pick": "KM sin asignar",
+      "image": "/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-back.png",
+      "title": {
+        "es": "20 dólares · Retrocesión de Hong Kong · 1997",
+        "en": "20 dollars · Hong Kong handover · 1997"
       }
     },
     {

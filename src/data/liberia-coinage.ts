@@ -179,6 +179,15 @@ export const liberiaCoins: LiberiaCoin[] = [
     },
     no_serial_reason:
       'Milled Liberia 1997 20-dollar commemorative: the type does not carry a serial number, and this example has no certification number.',
+    images: {
+      composite: '/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-composite.png',
+      front: '/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-front.png',
+      back: '/images/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-back.png',
+      width: 1672,
+      height: 941,
+      faceWidth: 1672,
+      faceHeight: 941,
+    },
     title: {
       es: '20 dólares · Retrocesión de Hong Kong · 1997',
       en: '20 dollars · Hong Kong handover · 1997',

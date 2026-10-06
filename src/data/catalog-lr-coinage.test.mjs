@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { localizePath } from '../lib/locale-paths.ts';
 
@@ -57,6 +57,34 @@ describe('Liberia 1997 20 dollars Hong Kong handover', () => {
     assert.match(data, /Not established/);
     assert.match(data, /No pesado/);
     assert.match(data, /Not weighed/);
+  });
+
+  it('keeps the supplied 1672×941 frames, including each face canvas', () => {
+    assert.match(
+      data,
+      /composite: '\/images\/catalog\/liberia\/liberia-1997-20-dollars-hong-kong-dragon-composite\.png'/,
+    );
+    assert.match(
+      data,
+      /front: '\/images\/catalog\/liberia\/liberia-1997-20-dollars-hong-kong-dragon-front\.png'/,
+    );
+    assert.match(
+      data,
+      /back: '\/images\/catalog\/liberia\/liberia-1997-20-dollars-hong-kong-dragon-back\.png'/,
+    );
+    assert.match(data, /width: 1672,\n      height: 941,\n      faceWidth: 1672,\n      faceHeight: 941/);
+    for (const name of ['front', 'back', 'composite']) {
+      assert.equal(
+        existsSync(
+          new URL(
+            `../../catalog-src/catalog/liberia/liberia-1997-20-dollars-hong-kong-dragon-${name}.png`,
+            import.meta.url,
+          ),
+        ),
+        true,
+        name,
+      );
+    }
   });
 
   it('keeps thin ES and EN routes on the coinage type layouts', () => {
