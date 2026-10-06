@@ -3163,6 +3163,45 @@
       }
     },
     {
+      "pieceId": "1-dolar-morgan-1884-s",
+      "face": "front",
+      "hash": "00673151d1132100",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/",
+      "pick": "KM# 110 · PCGS# 7156 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-composite.jpg",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1884",
+        "en": "Morgan dollar · San Francisco · 1884"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1884-s",
+      "face": "front",
+      "hash": "081416262a1a0408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/",
+      "pick": "KM# 110 · PCGS# 7156 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-front.jpg",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1884",
+        "en": "Morgan dollar · San Francisco · 1884"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1884-s",
+      "face": "back",
+      "hash": "0804220a262a0c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/",
+      "pick": "KM# 110 · PCGS# 7156 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1884-s-back.jpg",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1884",
+        "en": "Morgan dollar · San Francisco · 1884"
+      }
+    },
+    {
       "pieceId": "1-dolar-morgan-1883-cc",
       "face": "front",
       "hash": "0031717771577300",
