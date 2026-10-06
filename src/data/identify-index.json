@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-05T23:10:43.201Z",
+  "generatedAt": "2026-10-06T00:40:24.021Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3165,7 +3165,7 @@
     {
       "pieceId": "1-dolar-morgan-1883-cc",
       "face": "front",
-      "hash": "00ce8e888ea88c00",
+      "hash": "0031717771577300",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
       "pick": "KM# 110 · PCGS# 7144 · N# 1492",
@@ -3178,7 +3178,7 @@
     {
       "pieceId": "1-dolar-morgan-1883-cc",
       "face": "front",
-      "hash": "1028746068682810",
+      "hash": "08140a1e16161408",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
       "pick": "KM# 110 · PCGS# 7144 · N# 1492",
@@ -3191,7 +3191,7 @@
     {
       "pieceId": "1-dolar-morgan-1883-cc",
       "face": "back",
-      "hash": "1038687050542810",
+      "hash": "0804160e2e2a1408",
       "kind": "coin",
       "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/",
       "pick": "KM# 110 · PCGS# 7144 · N# 1492",
