@@ -212,6 +212,10 @@ export function llmsTxt(): string {
 
 Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Spanish is the default locale; English lives at /en/. Images, Pick/KM references, grades, and source citations. Nothing is for sale.
 
+## Sitemap
+
+Every public HTML page is one absolute URL per line at https://notofilia.com/sitemap.txt (UTF-8, no titles on the line). Spanish, the x-default locale, is listed first; the English URL follows when the path differs. /buscar/ and /en/search/ are omitted. Titles for the same pages are in the sections below. The XML twin is https://notofilia.com/sitemap.xml.
+
 ## Glossary / Glosario
 
 ${llmsLink(GLOSSARY_PATH, 'Glosario', 'Glossary')}

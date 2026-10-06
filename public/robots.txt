@@ -45,6 +45,11 @@ Allow: /
 
 Sitemap: https://notofilia.com/sitemap-index.xml
 
+# Plain-text URL list for crawlers that do not parse XML. One absolute URL per line.
+# Spanish (x-default) is first; the English URL follows when the path differs.
+# Same public HTML pages as sitemap.xml. Search and error pages are omitted.
+Sitemap: https://notofilia.com/sitemap.txt
+
 # IndexNow key file (Bing / Yandex / others). Cloudflare AI Crawl Control
 # and Bot Fight Mode are dashboard-only and cannot be changed from this repo.
 # Key: https://notofilia.com/a8f3c1e92b74d6058e1a4c7f0b39d2e6.txt
