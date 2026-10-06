@@ -481,10 +481,17 @@ export const megaNav: NavNode[] = [
             ],
           },
           {
-            id: 'us-2-50-dolares-1878-liberty-head',
-            es: usQuarterEagle1878.title.es,
-            en: usQuarterEagle1878.title.en,
-            href: usQuarterEagle1878.path,
+            id: 'us-quarter-eagle-liberty-head-1840-1907',
+            es: 'Quarter eagle Liberty Head de 2,50 dólares en oro (1840–1907)',
+            en: 'Liberty Head $2.50 Gold Quarter Eagle (1840–1907)',
+            children: [
+              {
+                id: 'us-2-50-dolares-1878-liberty-head',
+                es: usQuarterEagle1878.title.es,
+                en: usQuarterEagle1878.title.en,
+                href: usQuarterEagle1878.path,
+              },
+            ],
           },
           {
             id: 'us-2-50-dolares-1908-cabeza-de-indio',

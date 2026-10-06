@@ -367,9 +367,14 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-ht-181-c1835-john-j-adams'/);
     assert.match(usBlock, /id: 'us-ht-10a-1834-jabali'/);
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
+    assert.match(usBlock, /id: 'us-quarter-eagle-liberty-head-1840-1907'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
+    assert.match(
+      usBlock,
+      /id: 'us-quarter-eagle-liberty-head-1840-1907'[\s\S]*id: 'us-2-50-dolares-1878-liberty-head'/,
+    );
     assert.match(usBlock, /id: 'us-2-50-dolares-1912-indian-head'/);
     assert.match(usBlock, /id: 'us-1-dolar-oro-1856-cabeza-grande'/);
     assert.match(usBlock, /id: 'us-dolares-morgan-emision-original'/);
@@ -382,6 +387,27 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /href: usTrumpDollar\.path/);
     assert.match(usBlock, /children:/);
     assert.match(source, /export const footerNumismatica = footerTopLevelLinks\(navNumismatica\?\.children\)/);
+  });
+
+  it('nests the 1878 Liberty Head quarter eagle under the 1840–1907 type', () => {
+    const numismatica = megaNav.find((item) => item.id === 'numismatica-mundial');
+    const unitedStates = numismatica?.children?.find((item) => item.id === 'us-monedas');
+    const submenu = unitedStates?.children?.find((item) => item.id === 'us-quarter-eagle-liberty-head-1840-1907');
+    assert.ok(submenu);
+    assert.equal(submenu.es, 'Quarter eagle Liberty Head de 2,50 dólares en oro (1840–1907)');
+    assert.equal(submenu.en, 'Liberty Head $2.50 Gold Quarter Eagle (1840–1907)');
+    assert.equal(submenu.href, undefined);
+    assert.deepEqual(
+      submenu.children?.map((item) => item.href),
+      ['/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/'],
+    );
+    const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
+    assert.equal(
+      directHrefs.includes('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/'),
+      false,
+    );
+    const indian = unitedStates?.children?.find((item) => item.id === 'us-2-50-dolares-1908-cabeza-de-indio');
+    assert.equal(indian?.href, '/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/');
   });
 
   it('nests 1878–1904 Morgan dollars under the original-run submenu', () => {
