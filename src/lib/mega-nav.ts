@@ -22,6 +22,7 @@ import {
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
 import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
+import { LIBERIA_COINAGE_PATH, coinById as liberiaCoinById } from '../data/liberia-coinage';
 import {
   USA_COINAGE_PATH,
   USA_HARD_TIMES_PATH,
@@ -144,6 +145,11 @@ if (!puertoRico20Centavos) {
 const puertoRico10Centavos = puertoRicoCoinById('10-centavos-alfonso-xiii-pgv');
 if (!puertoRico10Centavos) {
   throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
+}
+
+const liberia20Dollars = liberiaCoinById('20-dolares-1997-dragon-hong-kong');
+if (!liberia20Dollars) {
+  throw new Error('Missing Liberia 1997 20 dollars for mega-nav');
 }
 
 const colombia1PesoBanRep = colombiaNoteById('1-peso-oro-1959-1977');
@@ -538,6 +544,21 @@ export const megaNav: NavNode[] = [
             es: puertoRico10Centavos.title.es,
             en: puertoRico10Centavos.title.en,
             href: puertoRico10Centavos.path,
+          },
+        ],
+      },
+      {
+        id: 'lr-monedas',
+        es: 'Liberia',
+        en: 'Liberia',
+        href: LIBERIA_COINAGE_PATH,
+        flag: 'lr',
+        children: [
+          {
+            id: 'lr-20-dolares-1997-dragon-hong-kong',
+            es: liberia20Dollars.title.es,
+            en: liberia20Dollars.title.en,
+            href: liberia20Dollars.path,
           },
         ],
       },
