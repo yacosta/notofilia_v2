@@ -77,6 +77,12 @@ const added = [
   'hernandez',
   'junta-de-conversion',
   'dinero-mickey-mouse',
+  'marca-privy',
+  'reacunacion',
+  'dolar-morgan',
+  'cuarto-de-aguila',
+  'incuso',
+  'medalla',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -103,7 +109,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 168);
+    assert.equal(glossaryTerms.length, 174);
   });
 });
 
@@ -111,7 +117,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 134);
+    assert.equal(foldedGlossaryTerms().length, 140);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
