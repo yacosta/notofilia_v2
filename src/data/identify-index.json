@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T01:50:56.309Z",
+  "generatedAt": "2026-10-09T10:50:10.244Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2536,6 +2536,45 @@
       "title": {
         "es": "50.000 pesos · error de numeración · 2015",
         "en": "50,000 pesos · numbering error · 2015"
+      }
+    },
+    {
+      "pieceId": "500-pesos-oro-1977",
+      "face": "front",
+      "hash": "49031f4923231725",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/500-pesos-oro-1977/",
+      "pick": "P# 420a · TBB B962a",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-composite.jpg",
+      "title": {
+        "es": "500 pesos oro · Banco de la República · 1977",
+        "en": "500 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "500-pesos-oro-1977",
+      "face": "front",
+      "hash": "152911132b2d2b03",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/500-pesos-oro-1977/",
+      "pick": "P# 420a · TBB B962a",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-front.jpg",
+      "title": {
+        "es": "500 pesos oro · Banco de la República · 1977",
+        "en": "500 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "500-pesos-oro-1977",
+      "face": "back",
+      "hash": "1363050717172d0f",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/500-pesos-oro-1977/",
+      "pick": "P# 420a · TBB B962a",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-back.jpg",
+      "title": {
+        "es": "500 pesos oro · Banco de la República · 1977",
+        "en": "500 pesos oro · Banco de la República · 1977"
       }
     },
     {

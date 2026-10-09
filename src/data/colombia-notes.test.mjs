@@ -90,8 +90,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'lr-1997-20-dollars-dragon-hong-kong');
-    assert.equal(catalogAdditions.at(-1)?.id, 'lr-1997-20-dollars-hong-kong-handover');
+    assert.equal(additions.at(-1)?.id, 'co-1977-500-pesos-oro-038064123');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-500-pesos-oro-p420a');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -334,6 +334,76 @@ describe('Colombia BanRep 1 peso Imprenta 1959–1977 (Pick 404e)', () => {
     assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'es'), /\/coleccion\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
     assert.match(seriesCardHref(peso[0].note, peso[0].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1973$/);
     assert.match(seriesCardHref(peso[1].note, peso[1].piece, 'en'), /\/en\/collection\/colombia\/1-peso-oro-1959-1977\/#1-peso-oro-1974$/);
+  });
+});
+
+describe('Colombia BanRep 500 pesos oro 1977 ABNC Santander', () => {
+  it('is the ordinary Pick 420a of 20 July 1977, serial 038064123', () => {
+    const note = noteById('500-pesos-oro-1977');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 420a · TBB B962a');
+    assert.equal(note.serial, '038064123');
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /BG# 389/);
+    assert.match(note.printed.en, /BG# 389/);
+    assert.match(note.printed.es, /44\.500\.000/);
+    assert.match(note.printed.es, /no registra piezas de 500 pesos en 1977/);
+    assert.match(note.printed.es, /sustituye la emisión BG# 389/);
+    assert.match(note.scarcity.es, /denominación-año|columna empieza en 1988/);
+    assert.match(note.description.es, /038064123/);
+    assert.match(note.description.es, /Santander/);
+    assert.match(note.description.es, /Zipaquirá/);
+    assert.match(note.description.en, /Zipaquirá/);
+    assert.match(note.description.es, /420b/);
+    assert.match(note.printed.es, /Hernández 386|Cód\. 386/);
+    assert.match(note.population.es, /2307574-005/);
+    assert.match(note.population.es, /sin la designación EPQ/);
+    assert.match(note.grade.es, /PMG 64 Choice Uncirculated/);
+    assert.doesNotMatch(note.grade.es, /EPQ/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      note.population.es,
+      note.population.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.doesNotMatch(publicCopy, /€/);
+    assert.equal(additions.some((row) => row.id === 'co-1977-500-pesos-oro-038064123'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1977-500-pesos-oro-p420a'), true);
+  });
+
+  it('lists the 1977 500 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /500 pesos oro de 1977 \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    assert.match(chapter.body.en, /1977 500 pesos oro \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    assert.match(seriesCopy.es.intro.join(' '), /500 pesos oro de 1977 \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    assert.match(seriesCopy.en.intro.join(' '), /1977 500 pesos oro \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const noteCards = cards.filter((card) => card.note.id === '500-pesos-oro-1977');
+    assert.equal(noteCards.length, 1);
+    assert.equal(noteCards[0].piece.serial, '038064123');
+    assert.equal(noteCards[0].denomination, 500);
+    assert.equal(noteCards[0].year, 1977);
+    assert.equal(
+      seriesCardHref(noteCards[0].note, noteCards[0].piece, 'es'),
+      '/coleccion/colombia/500-pesos-oro-1977/',
+    );
+    assert.equal(
+      seriesCardHref(noteCards[0].note, noteCards[0].piece, 'en'),
+      '/en/collection/colombia/500-pesos-oro-1977/',
+    );
   });
 });
 
@@ -922,8 +992,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'lr-1997-20-dollars-dragon-hong-kong');
-    assert.equal(catalogAdditions.at(-1)?.id, 'lr-1997-20-dollars-hong-kong-handover');
+    assert.equal(additions.at(-1)?.id, 'co-1977-500-pesos-oro-038064123');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-500-pesos-oro-p420a');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1462,7 +1532,13 @@ describe('Banco de la República denomination headings', () => {
     assert.equal(libre[0].heading, null);
     assert.equal(libre[0].cards.length, seriesCardsForChapter('banca-libre').length);
 
-    assert.equal(groups.some((group) => group.id === 'banrep-500-pesos'), false);
+    const fiveHundred = groups.find((group) => group.id === 'banrep-500-pesos');
+    assert.ok(fiveHundred);
+    assert.equal(fiveHundred.heading?.es, 'Billetes de 500 pesos (1923 - 1993)');
+    assert.equal(fiveHundred.heading?.en, '500 peso notes (1923 - 1993)');
+    assert.equal(fiveHundred.cards.length, 1);
+    assert.equal(fiveHundred.cards[0].note.id, '500-pesos-oro-1977');
+    assert.equal(fiveHundred.cards[0].piece.serial, '038064123');
 
     const modern = seriesCardGroupsForChapter('familias-modernas');
     assert.equal(modern.length, 2);

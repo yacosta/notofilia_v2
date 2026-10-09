@@ -14,6 +14,7 @@ export type ColombiaNoteId =
   | '1-peso-oro-1959-1977'
   | '2-pesos-oro-1944'
   | '2-pesos-oro-1977'
+  | '500-pesos-oro-1977'
   | '10-pesos-oro-1943'
   | '5-pesos-oro-1960'
   | '5-pesos-oro-1979'
@@ -4784,6 +4785,109 @@ export const colombiaNotes: ColombiaNote[] = [
       },
     ],
   },
+  {
+    id: '500-pesos-oro-1977',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}500-pesos-oro-1977/`,
+    pick: 'P# 420a · TBB B962a',
+    serial: '038064123',
+    signatures: {
+      es: 'Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario)',
+      en: 'Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1977. Formato publicado: 140 × 70 mm. Serial de nueve dígitos, sin letra de serie. González White 2019 (p. 101) numera esta fecha BG# 389: ABNC, 44.500.000 de ejemplares, seriales 000.000.001 / 044.500.000. El serial 038064123 cae en ese tramo. BG# 390 es el 1.º de abril de 1979 (55.500.000, seriales 044.500.001 / 100.000.000); BG# 391 es la variedad con película de esa fecha, incluida en la emisión de BG# 390. Hernández (8.ª ed., 2023) numera el 20 de julio de 1977 como Cód. 386; Numista concuerda Hernández 386, P# 420a y TBB B962a. El Bank Note Museum numera el tipo 420a en 20.07.1977, distinto del 420b de 01.04.1979. La tabla BanRep de producción anual no registra piezas de 500 pesos en 1977; la primera cifra de esa columna es 1988. Esa tabla no es la tirada de esta fecha ni sustituye la emisión BG# 389.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1977. Published size: 140 × 70 mm. Nine-digit serial, no series letter. González White 2019 (p. 101) numbers this date BG# 389: ABNC, 44,500,000 notes, serials 000.000.001 / 044.500.000. Serial 038064123 sits in that range. BG# 390 is 1 April 1979 (55,500,000, serials 044.500.001 / 100.000.000); BG# 391 is the film variety of that date, included in the BG# 390 emisión. Hernández (8th ed., 2023) numbers 20 July 1977 as Cód. 386; Numista concurs Hernández 386, P# 420a, and TBB B962a. The Bank Note Museum numbers type 420a on 20.07.1977, distinct from 420b of 01.04.1979. BanRep’s annual production table records no 500-peso notes in 1977; the first figure in that column is 1988. That table is not this date’s printage and does not replace the BG# 389 emisión.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-500-pesos-oro-1977-038064123-back.jpg',
+    },
+    title: {
+      es: '500 pesos oro · Banco de la República · 1977',
+      en: '500 pesos oro · Banco de la República · 1977',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Quinientos pesos oro de circulación, Pick 420a / TBB B962a: serial de nueve dígitos 038064123, 20 de julio de 1977, encapsulado PMG 64 Choice Uncirculated. Esta ficha reúne anverso y reverso de la misma cápsula.',
+      en: 'A circulating five-hundred-peso oro, Pick 420a / TBB B962a: nine-digit serial 038064123, 20 July 1977, slabbed PMG 64 Choice Uncirculated. This record gathers the face and back of the same holder.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este quinientos pesos oro. González White 2019 (p. 101) anota que Santander reemplaza a Bolívar, personaje del billete de 500 pesos desde 1923 hasta 1973, y que esta es la primera fecha del tipo. El anverso lleva a la izquierda el retrato de Francisco de Paula Santander y, bajo el óvalo, la leyenda «SANTANDER EL HOMBRE DE LAS LEYES». Al centro, sobre un fondo geométrico policromado, la promesa de pagar al portador quinientos pesos oro. Los seriales van en negro: 038064123, una vez arriba a la derecha y otra abajo a la izquierda. No hay letra de serie ni asterisco. La fecha impresa es «20 DE JULIO DE 1977». Las firmas son las de Germán Botero de los Ríos (gerente) y Antonio José Gutiérrez (secretario): Numista asigna el par GBR₂ y AJG a esta fecha; el 1.º de abril de 1979 lleva a Rafael Gama Quijano y Francisco José Ortega. González White describe el tipo sin serie y con nueve dígitos, de modo que todos comienzan por cero, y anota que ese cero inicial pertenece a otra numeradora. También les atribuye filigrana e hilo de seguridad. La cápsula identifica la filigrana como el perfil de Santander; esta ficha no la examinó con luz transmitida. El reverso muestra la iglesia subterránea de las salinas de Zipaquirá, el sello de la Libertad («BANCO DE LA REPUBLICA / BOGOTÁ COLOMBIA») y el pie «AMERICAN BANK NOTE COMPANY». El tipo 420a, según el Bank Note Museum, es el 20.07.1977. Numista agrupa el diseño 1977–1979 bajo N# 236999 y cita Hernández 386 y TBB B962a para esta fecha. La leyenda llama a Santander «el hombre de las leyes»: prócer de la Independencia, presidió la Nueva Granada de 1832 a 1837. Esta pieza es la emisión ordinaria de circulación del 20 de julio de 1977. Quedan fuera el Pick 420b del 1.º de abril de 1979, el espécimen 420s1 y la variedad con película transparente de Hernández Cód. 388, también de 1979. La pieza de la colección está encapsulada por PMG.',
+      en: 'The Banco de la República ordered this five-hundred-peso oro from the American Bank Note Company in New York. González White 2019 (p. 101) notes that Santander replaces Bolívar, the figure on the 500-peso note from 1923 through 1973, and that this is the first date of the type. The face carries at left the portrait of Francisco de Paula Santander and, under the oval, the legend “SANTANDER EL HOMBRE DE LAS LEYES.” At center, on a multicolour geometric ground, is the promise to pay the bearer five hundred gold pesos. The serials are in black: 038064123, once at upper right and once at lower left. There is no series letter and no asterisk. The printed date is “20 DE JULIO DE 1977.” The signatures are those of Germán Botero de los Ríos (gerente) and Antonio José Gutiérrez (secretario): Numista assigns the pair GBR₂ and AJG to this date; 1 April 1979 carries Rafael Gama Quijano and Francisco José Ortega. González White describes the type without a series letter and with nine digits, so that every number begins with zero, and notes that the initial zero belongs to another numbering device. He also attributes a watermark and a security thread to these notes. The holder identifies the watermark as Santander’s profile; this record did not examine it under transmitted light. The back shows the underground church of the Zipaquirá salt mines, Liberty’s seal (“BANCO DE LA REPUBLICA / BOGOTÁ COLOMBIA”), and the imprint “AMERICAN BANK NOTE COMPANY.” Type 420a, per the Bank Note Museum, is 20.07.1977. Numista groups the 1977–1979 design under N# 236999 and cites Hernández 386 and TBB B962a for this date. The legend calls Santander “el hombre de las leyes”: an independence leader, he was president of New Granada from 1832 to 1837. This piece is the ordinary circulating issue of 20 July 1977. Pick 420b of 1 April 1979, specimen 420s1, and the transparent-film variety Hernández Cód. 388, also of 1979, are other rows. The collection piece is slabbed by PMG.',
+    },
+    frontCaption: {
+      es: 'Anverso del 500 pesos oro, Pick 420a, encapsulado PMG 64 Choice Uncirculated: Santander, serial 038064123 y fecha 20 de julio de 1977.',
+      en: 'Face of the 500 pesos oro, Pick 420a, slabbed PMG 64 Choice Uncirculated: Santander, serial 038064123, and the date 20 July 1977.',
+    },
+    backCaption: {
+      es: 'Reverso del 500 pesos oro, Pick 420a, encapsulado PMG 64 Choice Uncirculated: iglesia subterránea de las salinas de Zipaquirá, sello de la Libertad y cifras 500.',
+      en: 'Back of the 500 pesos oro, Pick 420a, slabbed PMG 64 Choice Uncirculated: underground church of the Zipaquirá salt mines, Liberty’s seal, and the figures 500.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 389, p. 101) publica 44.500.000 de ejemplares para el 20 de julio de 1977, ABNC, nueve dígitos, seriales 000.000.001–044.500.000; el serial 038064123 cae en ese tramo. BG# 390 y BG# 391 corresponden al 1.º de abril de 1979; la segunda es la variedad con película, incluida en la emisión de la primera. Hernández (8.ª ed., 2023) numera la fila del 20 de julio de 1977 como Cód. 386; Cód. 387 es el 1.º de abril de 1979 y Cód. 388 la misma fecha con película transparente sobre el serial izquierdo. El Bank Note Museum describe el Pick 420a como el 20.07.1977: Santander al anverso y la iglesia subterránea de Zipaquirá al reverso. Numista agrupa el diseño bajo N# 236999 y marca la frecuencia de la fecha 20.07.1977, firmas GBR₂ y AJG, en un 55 % entre quienes poseen el tipo. Es emisión ordinaria de circulación: quedan fuera la prueba, el espécimen 420s1 y la reposición, y también la variedad con película. No se publican columnas de precios. La tabla BanRep no lista producción de 500 pesos en 1977 (la columna empieza en 1988) y no sustituye la emisión BG# 389.',
+      en: 'González White 2019 (BG# 389, p. 101) publishes 44,500,000 notes for 20 July 1977, ABNC, nine digits, serials 000.000.001–044.500.000; serial 038064123 sits in that range. BG# 390 and BG# 391 are 1 April 1979; the latter is the film variety, included in the former’s emisión. Hernández (8th ed., 2023) numbers the 20 July 1977 row Cód. 386; Cód. 387 is 1 April 1979 and Cód. 388 is that date with a transparent film over the left serial. The Bank Note Museum describes Pick 420a as 20.07.1977: Santander on the face and the underground church at Zipaquirá on the back. Numista groups the design under N# 236999 and marks the 20.07.1977 date, signatures GBR₂ and AJG, at 55% among owners of the type. It is an ordinary circulating issue: proof, specimen 420s1, and replacement are other rows, as is the film variety. Price columns are not published. BanRep’s table lists no 500-peso production in 1977 (that column begins in 1988) and does not replace the BG# 389 emisión.',
+    },
+    population: {
+      es: 'La pieza está encapsulada por PMG como 64 Choice Uncirculated, sin la designación EPQ, certificado 2307574-005. No se ha verificado de forma independiente un censo de población para ese número de cápsula, ni la causa de la ausencia de EPQ.',
+      en: 'The note is slabbed by PMG as 64 Choice Uncirculated, without the EPQ designation, certification 2307574-005. A population census for that holder number has not been independently verified, nor has the reason EPQ is absent.',
+    },
+    grade: {
+      es: 'PMG 64 Choice Uncirculated',
+      en: 'PMG 64 Choice Uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0420.htm',
+        es: 'Bank Note Museum — Colombia P-420, 500 pesos oro (1977–1979)',
+        en: 'Bank Note Museum — Colombia P-420, 500 pesos oro (1977–1979)',
+        note: {
+          es: '420a: 20.07.1977; 420b: 01.04.1979. Anverso: Francisco de Paula Santander. Reverso: iglesia subterránea de las salinas de Zipaquirá. Impresor: American Bank Note Company, Nueva York.',
+          en: '420a: 20.07.1977; 420b: 01.04.1979. Face: Francisco de Paula Santander. Back: underground church of the Zipaquirá salt mines. Printer: American Bank Note Company, New York.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/236999',
+        es: 'Numista — Colombia 500 pesos oro, N# 236999',
+        en: 'Numista — Colombia 500 pesos oro, N# 236999',
+        note: {
+          es: '20.07.1977: P# 420a / TBB B962a; Hernández 386; firmas GBR₂ y AJG; 140 × 70 mm; filigrana Santander; frecuencia 55 % en el tipo. El 01.04.1979 es P# 420b / Hernández 387.',
+          en: '20.07.1977: P# 420a / TBB B962a; Hernández 386; signatures GBR₂ and AJG; 140 × 70 mm; Santander watermark; 55% frequency within the type. 01.04.1979 is P# 420b / Hernández 387.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'La tabla anual no registra piezas de 500 pesos en 1977. La primera cifra de esa columna es 1988. No es la tirada del 20 de julio de 1977 ni la emisión BG# 389.',
+          en: 'The annual table records no 500-peso notes in 1977. The first figure in that column is 1988. It is not the printage of 20 July 1977 or the BG# 389 emisión.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/index.php/Francisco_De_Paula_Santander',
+        es: 'Enciclopedia Banrepcultural — Francisco de Paula Santander',
+        en: 'Banrepcultural encyclopedia — Francisco de Paula Santander',
+        note: {
+          es: 'Prócer de la Independencia y presidente de la Nueva Granada (1832–1837). La leyenda del billete lo llama «el hombre de las leyes».',
+          en: 'Independence leader and president of New Granada (1832–1837). The note’s legend calls him “el hombre de las leyes.”',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 386 para el 20 de julio de 1977 (Pick 420a). Cód. 387 es el 1.º de abril de 1979 y Cód. 388 la misma fecha con película transparente. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 386 for 20 July 1977 (Pick 420a). Cód. 387 is 1 April 1979 and Cód. 388 is that date with a transparent film. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
 ];
 
 export const notePageCopy = {
@@ -5036,8 +5140,8 @@ const BANREP_DENOMINATION_BANDS: {
     denomination: 500,
     id: 'banrep-500-pesos',
     heading: {
-      es: 'Billetes de 500 pesos (1986 - 1993)',
-      en: '500 peso notes (1986 - 1993)',
+      es: 'Billetes de 500 pesos (1923 - 1993)',
+      en: '500 peso notes (1923 - 1993)',
     },
   },
   {
