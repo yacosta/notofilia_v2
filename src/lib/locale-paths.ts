@@ -757,6 +757,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/2-pesos-oro-1944/',
     '/en/coleccion/colombia/2-pesos-oro-1955/',
     '/en/coleccion/colombia/2-pesos-oro-1977/',
+    '/en/coleccion/colombia/500-pesos-oro-1977/',
     '/en/coleccion/colombia/10-pesos-oro-1976/',
     '/en/coleccion/colombia/10-pesos-oro-1979/',
     '/en/coleccion/colombia/20-pesos-oro-1983/',

@@ -121,6 +121,33 @@ describe('homepage milestones from catalog holdings', () => {
     );
   });
 
+  it('matches the 1977 500 pesos oro holding by its serial', () => {
+    const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
+    assert.ok(holding);
+    assert.equal(additions.at(-1)?.id, holding.id);
+    const note = noteById('500-pesos-oro-1977');
+    assert.ok(note);
+    const pieces = notePieces(note).map((piece) => ({
+      id: `co-${piece.id}`,
+      country: 'CO',
+      href: notePath(note, 'es'),
+      title: piece.title,
+      dek: piece.lead,
+      pick: piece.pick,
+      serial: piece.serial,
+      cert: '',
+      image: piece.images.composite || piece.images.front,
+      imageAlt: piece.frontCaption,
+    }));
+    const piece = catalogPieceForHolding(holding, pieces);
+    assert.ok(piece);
+    assert.match(piece.href, /500-pesos-oro-1977/);
+    assert.equal(piece.serial, '038064123');
+    const [card] = milestonesFromHoldings([holding], pieces, 1);
+    assert.equal(card.holdingId, holding.id);
+    assert.match(card.href, /500-pesos-oro-1977/);
+  });
+
   it('lists newly appended holdings first', () => {
     const pieces = colombiaPieces();
     const newest = { id: 'co-1977-2-pesos-oro-22214695', kind: 'banknote', country: 'CO' };
@@ -148,7 +175,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'lr-1997-20-dollars-dragon-hong-kong');
+    assert.equal(additions.at(-1)?.id, 'co-1977-500-pesos-oro-038064123');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -170,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 21);
+    assert.equal(fromEnd, 22);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -193,7 +220,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 20);
+    assert.equal(fromEnd, 21);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',

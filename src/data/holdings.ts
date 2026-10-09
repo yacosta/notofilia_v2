@@ -217,6 +217,7 @@ export const additions: Holding[] = [
   { id: 'us-1-dolar-morgan-1885-cc', kind: 'coin', country: 'US' },
   { id: 'co-1916-50-centavos-km193-1', kind: 'coin', country: 'CO' },
   { id: 'lr-1997-20-dollars-dragon-hong-kong', kind: 'coin', country: 'LR' },
+  { id: 'co-1977-500-pesos-oro-038064123', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -360,6 +361,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1885-cc-morgan-km110' },
   { id: 'co-1916-50-centavos-km193-1' },
   { id: 'lr-1997-20-dollars-hong-kong-handover' },
+  { id: 'co-1977-500-pesos-oro-p420a' },
 ];
 
 export type CollectionStats = {
