@@ -370,6 +370,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-quarter-eagle-liberty-head-1840-1907'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
+    assert.match(usBlock, /id: 'us-medalla-1836-primera-acunacion-vapor'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
     assert.match(
       usBlock,
