@@ -74,7 +74,7 @@ const jsonCrumbs = [
           url: pathname,
           image: coin.images.composite,
           locale,
-          artform: 'Coin',
+          artform: coin.artform ?? 'Coin',
           catalogNumber: coin.references,
           issuer: coin.mint[locale],
           gradingService: inferGradingService(coin.grade[locale]),
@@ -190,7 +190,7 @@ const jsonCrumbs = [
 
       <section class="mt-14" aria-labelledby="about-heading">
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
-          {t.aboutHeading}
+          {coin.aboutHeading?.[locale] ?? t.aboutHeading}
         </h2>
         <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(coin.description[locale], locale)} />
       </section>

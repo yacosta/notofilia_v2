@@ -132,6 +132,11 @@ if (!usHt16) {
   throw new Error('Missing US Hard Times HT-16 token for mega-nav');
 }
 
+const usSteamMedal = coinById('medalla-1836-primera-acunacion-vapor');
+if (!usSteamMedal) {
+  throw new Error('Missing US 1836 First Steam Coinage medal for mega-nav');
+}
+
 const spainHalfEscudo = spainCoinById('medio-escudo-madrid-1757-jb');
 if (!spainHalfEscudo) {
   throw new Error('Missing Spain 1757 Madrid half escudo for mega-nav');
@@ -479,6 +484,12 @@ export const megaNav: NavNode[] = [
                 href: usHt16.path,
               },
             ],
+          },
+          {
+            id: 'us-medalla-1836-primera-acunacion-vapor',
+            es: usSteamMedal.title.es,
+            en: usSteamMedal.title.en,
+            href: usSteamMedal.path,
           },
           {
             id: 'us-quarter-eagle-liberty-head-1840-1907',

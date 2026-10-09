@@ -13,6 +13,7 @@ export const USA_MORGAN_PATH_EN = '/collection/united-states-numismatics/morgan-
 
 export type UnitedStatesCoinageChapterId =
   | 'hard-times'
+  | 'medallas-ceca'
   | 'ceca-filadelfia'
   | 'dolar-morgan'
   | 'dolar-laton'
@@ -44,6 +45,22 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
     },
   },
   {
+    id: 'medallas-ceca',
+    years: { es: '1836', en: '1836' },
+    title: {
+      es: 'Medallas de la ceca',
+      en: 'Mint medals',
+    },
+    lead: {
+      es: 'Medalla conmemorativa de la United States Mint, sin valor facial. La fecha 1836 conmemora el 23 de marzo de 1836 y deja abierto el año en que se acuñó cada ejemplar.',
+      en: 'A United States Mint commemorative medal, with no face value. The date 1836 commemorates 23 March 1836 and leaves open the year each example was struck.',
+    },
+    body: {
+      es: 'El 23 de marzo de 1836 la ceca de Filadelfia estrenó la prensa de vapor en el golpe del cuño. El director Robert M. Patterson había fijado el acto para el 22 de febrero, cumpleaños de Washington; un fallo mecánico lo atrasó. Christian Gobrecht grabó el gorro de la Libertad entre rayos y el reverso UNITED STATES MINT, FIRST STEAM COINAGE. Julian MT-20 conserva FEB. 22. Julian MT-21 lleva MAR. 23, y las primeras impresiones de marzo muestran esa fecha sobre FEB. 22. PCGS separa la reacuñación en bronce amarillo como 783671 y no publica tirada. Esta vitrina documenta un ejemplar de ese tipo, sin cápsula: el color amarillo y la superficie texturada apoyan la reacuñación tardía, y los reflejos de la funda impiden fijar el año de fabricación o un grado. El Smithsonian describe un ejemplar del tipo en latón, de 28 mm, con Gobrecht en ambas caras; esa ficha de museo no autentica este disco. El vapor del laminado es anterior: el informe del director del 1 de enero de 1817, tras el incendio de enero de 1816, registra una máquina de vapor en lugar del tiro de caballos. El hito de 1836 es la acuñación.',
+      en: 'On 23 March 1836 the Philadelphia mint first used a steam press for the blow of the die. Director Robert M. Patterson had set the ceremony for 22 February, Washington’s birthday; a mechanical fault delayed it. Christian Gobrecht engraved the Liberty cap among rays and the reverse UNITED STATES MINT, FIRST STEAM COINAGE. Julian MT-20 keeps FEB. 22. Julian MT-21 reads MAR. 23, and the earliest March impressions show that date over FEB. 22. PCGS separates the yellow-bronze restrike as 783671 and publishes no mintage. This case records one example of that type, unslabbed: the yellow color and textured surface support a later restrike, and sleeve reflections prevent fixing a year of manufacture or a grade. The Smithsonian describes one example of the type in brass, 28 mm, with Gobrecht on both sides; that museum record does not authenticate this disc. Steam in the rolling mill is earlier: the director’s report of 1 January 1817, after the January 1816 fire, records a steam engine in place of horse power. The 1836 milestone is the striking.',
+    },
+  },
+  {
     id: 'ceca-filadelfia',
     years: { es: 'desde 1792', en: 'from 1792' },
     title: {
@@ -55,8 +72,8 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'The Coinage Act of 2 April 1792 created the United States Mint in Philadelphia, then the federal capital. That house struck the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 dollar in this case.',
     },
     body: {
-      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el dólar de oro de 1856, tipo 3 de James Barton Longacre, el quarter eagle Liberty Head de 1878, oro de 900 milésimas de Christian Gobrecht, y los cuartos de águila Indian Head de 1908 y 1912, diseño incuso de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. Liberty Seated y el centavo Lincoln quedan fuera de esta vitrina. Los dólares Morgan de 1884-S, de 1883-CC y de 1885-CC están en el capítulo del dólar de plata. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
-      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1856 gold dollar, James Barton Longacre’s Type 3, the 1878 Liberty Head quarter eagle, 900-fine gold by Christian Gobrecht, and the 1908 and 1912 Indian Head quarter eagles, Bela Lyon Pratt’s incuse design. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated and the Lincoln cent sit outside this case. The 1884-S, 1883-CC, and 1885-CC Morgan dollars are in the silver-dollar chapter. This country’s legal-tender paper is catalogued separately, under Notaphily.',
+      es: 'Antes de 1792 circulaban monedas europeas y se pagaba también en especie. El Congreso situó la primera ceca federal en Filadelfia el 2 de abril de 1792; la casa permaneció allí cuando la capital se trasladó a Washington. En sus primeros años acuñó centavos de cobre y las primeras piezas de oro y plata. Filadelfia no pone marca de ceca. Esta vitrina documenta de esa casa el dólar de oro de 1856, tipo 3 de James Barton Longacre, el quarter eagle Liberty Head de 1878, oro de 900 milésimas de Christian Gobrecht, y los cuartos de águila Indian Head de 1908 y 1912, diseño incuso de Bela Lyon Pratt. El dólar de 2026, también de Filadelfia y sin marca, está en el capítulo del Semiquincentenario. Liberty Seated y el centavo Lincoln quedan fuera de esta vitrina. Los dólares Morgan de 1884-S, de 1883-CC y de 1885-CC están en el capítulo del dólar de plata. La medalla de la primera acuñación a vapor, fechada 1836, está en el capítulo de medallas de la ceca. El papel de curso legal de este país se cataloga aparte, en Notafilia.',
+      en: 'Before 1792 European coin circulated and payment was also made in kind. Congress placed the first federal mint in Philadelphia on 2 April 1792; the house stayed there when the capital moved to Washington. In its first years it struck copper cents and the first gold and silver pieces. Philadelphia uses no mint mark. This case records from that house the 1856 gold dollar, James Barton Longacre’s Type 3, the 1878 Liberty Head quarter eagle, 900-fine gold by Christian Gobrecht, and the 1908 and 1912 Indian Head quarter eagles, Bela Lyon Pratt’s incuse design. The 2026 dollar, also Philadelphia and without a mint mark, is in the Semiquincentennial chapter. Liberty Seated and the Lincoln cent sit outside this case. The 1884-S, 1883-CC, and 1885-CC Morgan dollars are in the silver-dollar chapter. The First Steam Coinage medal, dated 1836, is in the Mint-medals chapter. This country’s legal-tender paper is catalogued separately, under Notaphily.',
     },
   },
   {
@@ -191,25 +208,43 @@ export const seriesSources: CatalogSource[] = [
       en: 'Monthly silver purchases, between two and four million dollars, to be coined into legal-tender dollars.',
     },
   },
+  {
+    href: 'https://americanhistory.si.edu/collections/object/nmah_1094089',
+    es: 'Smithsonian — Medalla First Steam Coinage, 1836',
+    en: 'Smithsonian — First Steam Coinage medal, 1836',
+    note: {
+      es: 'Ficha 1991.0009.0520: Gobrecht en anverso y reverso; latón; 28 mm; leyendas LIBERTY y UNITED STATES MINT / FIRST STEAM COINAGE / MAR. 23. / 1836. No autentica el ejemplar de esta vitrina.',
+      en: 'Record 1991.0009.0520: Gobrecht on obverse and reverse; brass; 28 mm; legends LIBERTY and UNITED STATES MINT / FIRST STEAM COINAGE / MAR. 23. / 1836. It does not authenticate the example in this case.',
+    },
+  },
+  {
+    href: 'https://www.pcgs.com/coinfacts/coin/1836-j-mt-21-yellow-bronze-first-steam-coinage/783671',
+    es: 'PCGS CoinFacts — reacuñación 783671, bronce amarillo, J-MT-21',
+    en: 'PCGS CoinFacts — restrike 783671, yellow bronze, J-MT-21',
+    note: {
+      es: 'Título «1836» Medal J-MT-21, First Steam Coinage Yellow Bronze Restrike. Tirada, diámetro, peso y canto: no disponibles. El campo de metal sigue en copper. No se republican precios.',
+      en: 'Title “1836” Medal J-MT-21, First Steam Coinage Yellow Bronze Restrike. Mintage, diameter, weight, and edge: unavailable. The metal field remains copper. Prices are not republished.',
+    },
+  },
 ];
 
 export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times, los dólares Morgan de 1883-CC, 1884-S y 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times, la medalla de 1836, los dólares Morgan de 1883-CC, 1884-S y 1885-CC, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Hard Times, Filadelfia, el Morgan y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt—, con los dólares Morgan de 1884-S, 1883-CC y 1885-CC —plata .900 de George T. Morgan, marca S de San Francisco y marca CC de Carson City— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con la medalla de la ceca fechada 1836 —primera acuñación a vapor, Julian MT-21—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt—, con los dólares Morgan de 1884-S, 1883-CC y 1885-CC —plata .900 de George T. Morgan, marca S de San Francisco y marca CC de Carson City— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'La media águila, el águila de diez dólares, el doble águila, los centavos de la Mint y los medios dólares se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Cinco capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Seis capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     morganChapterCta: 'Abrir la emisión original',
@@ -222,19 +257,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens, the 1883-CC, 1884-S, and 1885-CC Morgan dollars, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
+      'Catalog of United States coinage: Hard Times tokens, the 1836 medal, the 1883-CC, 1884-S, and 1885-CC Morgan dollars, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
     kicker: 'United States · Numismatics',
     title: 'Hard Times, Philadelphia, the Morgan, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — with the 1884-S, 1883-CC, and 1885-CC Morgan dollars — George T. Morgan’s .900 silver, San Francisco S and Carson City CC — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the Mint medal dated 1836 — First Steam Coinage, Julian MT-21 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — with the 1884-S, 1883-CC, and 1885-CC Morgan dollars — George T. Morgan’s .900 silver, San Francisco S and Carson City CC — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'The half eagle, the ten-dollar eagle, the double eagle, Mint cents, and half dollars will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Five chapters, left to right: Hard Times — with its own case — the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
+      'Six chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     morganChapterCta: 'Open the original run',
@@ -258,7 +293,8 @@ export type UnitedStatesCoinId =
   | '1-dolar-oro-1856-cabeza-grande'
   | '1-dolar-morgan-1884-s'
   | '1-dolar-morgan-1883-cc'
-  | '1-dolar-morgan-1885-cc';
+  | '1-dolar-morgan-1885-cc'
+  | 'medalla-1836-primera-acunacion-vapor';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -273,6 +309,8 @@ export type UnitedStatesCoin = {
   diameter: LocalizedText;
   edge: LocalizedText;
   references: string;
+  artform?: 'Coin' | 'Medal';
+  aboutHeading?: LocalizedText;
   grade: LocalizedText;
   no_serial_reason: string;
   images: {
@@ -1940,6 +1978,171 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       },
     ],
   },
+  {
+    id: 'medalla-1836-primera-acunacion-vapor',
+    path: '/coleccion/estados-unidos-numismatica/medalla-1836-primera-acunacion-a-vapor/',
+    pathEn: '/en/collection/united-states-numismatics/medal-1836-first-steam-coinage/',
+    chapterId: 'medallas-ceca',
+    year: '1836',
+    mint: {
+      es: 'Filadelfia, United States Mint. La fecha 1836 conmemora el acontecimiento; el año de fabricación de este ejemplar no está fijado.',
+      en: 'Philadelphia, United States Mint. The date 1836 commemorates the event; the year this example was struck is not established.',
+    },
+    denomination: {
+      es: 'Medalla conmemorativa (sin valor facial)',
+      en: 'Commemorative medal (no face value)',
+    },
+    composition: {
+      es: 'Bronce, según la descripción del ejemplar; aleación no ensayada. El Smithsonian cataloga su ejemplar del tipo como latón.',
+      en: 'Bronze, as described for this example; alloy not assayed. The Smithsonian catalogues its example of the type as brass.',
+    },
+    weight: {
+      es: 'No pesado en esta ficha',
+      en: 'Not weighed for this record',
+    },
+    diameter: {
+      es: '28 mm (medida aportada con el ejemplar; el Smithsonian da 28 mm al tipo, ficha 1991.0009.0520)',
+      en: '28 mm (measurement supplied with the example; the Smithsonian gives the type as 28 mm, record 1991.0009.0520)',
+    },
+    edge: {
+      es: 'No establecido: las fotografías no muestran el canto',
+      en: 'Not established: the photographs do not show the edge',
+    },
+    references: 'Julian MT-21 · PCGS #783671 · Smithsonian 1991.0009.0520',
+    artform: 'Medal',
+    aboutHeading: {
+      es: 'La medalla',
+      en: 'The medal',
+    },
+    grade: {
+      es: 'Sin encapsular. Leyendas legibles; reflejos de funda. No es un grado numérico.',
+      en: 'Unslabbed. Legends legible; sleeve reflections. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'United States Mint commemorative medal: the type carries no serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-back.jpg',
+      width: 1672,
+      height: 941,
+      faceWidth: 836,
+      faceHeight: 941,
+    },
+    heading: {
+      es: 'Medalla de 1836 — acuñación a vapor',
+      en: '1836 First Steam Coinage medal',
+    },
+    title: {
+      es: 'Medalla · Primera acuñación a vapor · 1836',
+      en: 'Medal · First steam coinage · 1836',
+    },
+    kicker: {
+      es: 'Estados Unidos · medalla de la ceca',
+      en: 'United States · Mint medal',
+    },
+    lead: {
+      es: 'Medalla de la United States Mint, 1836, Julian MT-21. Gorro LIBERTY y FIRST STEAM COINAGE, MAR. 23. Bronce amarillo provisional. Sin serial ni cápsula.',
+      en: 'United States Mint medal, 1836, Julian MT-21: Liberty cap and FIRST STEAM COINAGE, MAR. 23. Yellow-bronze restrike, provisional. No serial and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es una medalla de la United States Mint, sin valor facial, con la fecha 1836. El anverso lleva un gorro de la Libertad con LIBERTY en la banda, rodeado de rayos y de una orla de dentículos. El reverso lee UNITED STATES MINT en el arco, FIRST STEAM COINAGE en el centro, MAR. 23. y 1836 abajo, también con dentículos. La leyenda visible es la de marzo, de modo que el tipo es el Julian MT-21. El color amarillo y el aspecto texturado de la superficie concuerdan con la reacuñación en bronce amarillo que PCGS separa como 783671. Esa atribución queda en provisional: las fotos muestran reflejos de funda y no permiten separar una marca fina del metal de una marca del plástico, ni fijar el año de fabricación, ni un grado, ni la alineación de los cuños. El sobrefecha MAR. 23 sobre FEB. 22, propio de las primeras impresiones de marzo, no se afirma con estas fotografías. Christian Gobrecht está acreditado por el Smithsonian como grabador de ambas caras del tipo. El ejemplar del museo, 1991.0009.0520, mide 28 mm y está catalogado en latón; esa ficha no autentica este disco. El quarter eagle Liberty Head de 1878 de esta colección es otra obra de Gobrecht, en oro de curso. Sin serial y sin cápsula.',
+      en: 'This piece is a United States Mint medal, with no face value, dated 1836. The obverse carries a Liberty cap with LIBERTY on the band, surrounded by rays and a denticled border. The reverse reads UNITED STATES MINT on the arc, FIRST STEAM COINAGE at center, MAR. 23. and 1836 below, also with denticles. The legend in view is the March legend, so the type is Julian MT-21. The yellow color and textured surface agree with the yellow-bronze restrike PCGS separates as 783671. That attribution stays provisional: the photographs show sleeve reflections and do not separate a fine mark on the metal from a mark on the plastic, or fix a year of manufacture, a grade, or the die alignment. The overdate MAR. 23 over FEB. 22, a feature of the earliest March impressions, is not asserted from these photographs. The Smithsonian credits Christian Gobrecht as engraver of both sides of the type. The museum example, 1991.0009.0520, measures 28 mm and is catalogued as brass; that record does not authenticate this disc. This collection’s 1878 Liberty Head quarter eagle is another work by Gobrecht, in circulating gold. No serial and no holder.',
+    },
+    history: {
+      es: 'La medalla recuerda la puesta en marcha, el 23 de marzo de 1836, de la prensa de vapor en la ceca de Filadelfia. Patterson había previsto el estreno para el 22 de febrero. Gobrecht preparó cuños con FEB. 22; al fijarse la nueva fecha, el reverso pasó a MAR. 23 sobre FEB. 22. Ese 23 de marzo Patterson escribió a Levi Woodbury que enviaba cobres acuñados ese día en la prensa nueva por vapor, los primeros golpeados con esa fuerza en América, y que el día marcaba una época en la acuñación. La prensa, de diseño Thonnelier, llegó por Merrick, Agnew y Tyler; Franklin Peale la adaptó en la ceca. El Franklin Institute, que conserva esa máquina, publica una capacidad de unos 100 ejemplares por minuto. El informe del director del 1 de enero de 1817 ya registraba, tras el incendio de enero de 1816, una máquina de vapor en el laminado, en lugar del tiro de caballos: el hito de 1836 es el golpe del cuño. Las piezas de febrero, Julian MT-20, son raras; esa rareza no se traslada a un ejemplar tardío de bronce amarillo con fecha de marzo. PCGS deja la tirada de 783671 sin cifra. Esta ficha no publica precios ni un censo.',
+      en: 'The medal commemorates the start, on 23 March 1836, of the steam press at the Philadelphia mint. Patterson had planned the debut for 22 February. Gobrecht prepared dies reading FEB. 22; when the new date was set, the reverse became MAR. 23 over FEB. 22. On that 23 March Patterson wrote to Levi Woodbury that he was sending coppers struck that day on the new press by steam, the first struck by that power in America, and that the day marked an epoch in the coinage. The press, a Thonnelier design, arrived through Merrick, Agnew, and Tyler; Franklin Peale adapted it at the mint. The Franklin Institute, which holds that machine, publishes a capacity of about 100 pieces a minute. The director’s report of 1 January 1817 already recorded, after the January 1816 fire, a steam engine in the rolling mill in place of horse power: the 1836 milestone is the blow of the die. The February pieces, Julian MT-20, are rare; that rarity does not carry over to a later yellow-bronze example with the March date. PCGS leaves the mintage of 783671 unpublished. This record publishes neither prices nor a census.',
+    },
+    obverseLegend: {
+      es: 'LIBERTY en la banda del gorro; rayos; orla de dentículos.',
+      en: 'LIBERTY on the cap band; rays; denticled border.',
+    },
+    reverseLegend: {
+      es: 'UNITED STATES MINT · FIRST STEAM COINAGE · MAR. 23. · 1836.',
+      en: 'UNITED STATES MINT · FIRST STEAM COINAGE · MAR. 23. · 1836.',
+    },
+    frontCaption: {
+      es: 'Anverso: gorro de la Libertad con LIBERTY, entre rayos.',
+      en: 'Obverse: Liberty cap inscribed LIBERTY, among rays.',
+    },
+    backCaption: {
+      es: 'Reverso: UNITED STATES MINT, FIRST STEAM COINAGE, MAR. 23. y 1836.',
+      en: 'Reverse: UNITED STATES MINT, FIRST STEAM COINAGE, MAR. 23. and 1836.',
+    },
+    scarcity: {
+      es: 'Julian MT-20 es la impresión de febrero, con FEB. 22. Julian MT-21 es la de marzo, con MAR. 23. PCGS 514737 es el MT-21 de cobre en acuñación regular; 783671 es la reacuñación en bronce amarillo del mismo tipo, con la fecha entre comillas. En ambas fichas la tirada figura como no disponible, y el metal de 783671 sigue anotado como copper pese al título yellow bronze. El Smithsonian no clasifica su ejemplar de latón como original ni como reacuñación. El color y la textura de esta pieza apoyan 783671, sin certeza sobre el año de fabricación. No se republica un precio ni una población de encapsulados.',
+      en: 'Julian MT-20 is the February impression, reading FEB. 22. Julian MT-21 is the March impression, reading MAR. 23. PCGS 514737 is the copper MT-21 business strike; 783671 is the yellow-bronze restrike of the same type, with the date in quotation marks. On both records the mintage is unavailable, and the metal of 783671 remains entered as copper despite the yellow-bronze title. The Smithsonian does not class its brass example as an original or as a restrike. The color and texture of this piece support 783671, without certainty about the year of manufacture. No price and no slab population are republished.',
+    },
+    certification: {
+      es: 'Sin cápsula y sin número de certificado. La medalla no lleva número de serie. La identidad de la ficha es el objeto fotografiado: fecha 1836, leyenda MAR. 23, tipo MT-21. La atribución de reacuñación no es un certificado de autenticidad. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'No holder and no certification number. The medal carries no serial number. The identity of this record is the photographed object: date 1836, legend MAR. 23, type MT-21. The restrike attribution is not a certificate of authenticity. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1094089',
+        es: 'Smithsonian — Medalla First Steam Coinage, 1836',
+        en: 'Smithsonian — First Steam Coinage medal, 1836',
+        note: {
+          es: 'Ficha 1991.0009.0520. Gobrecht, anverso y reverso. Latón, acuñación, 28 mm. Leyendas LIBERTY y UNITED STATES MINT / 1836 / FIRST STEAM COINAGE / MAR. 23. No autentica este ejemplar.',
+          en: 'Record 1991.0009.0520. Gobrecht, obverse and reverse. Brass, struck, 28 mm. Legends LIBERTY and UNITED STATES MINT / 1836 / FIRST STEAM COINAGE / MAR. 23. It does not authenticate this example.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1836-j-mt-21-yellow-bronze-first-steam-coinage/783671',
+        es: 'PCGS CoinFacts — reacuñación 783671, bronce amarillo, J-MT-21',
+        en: 'PCGS CoinFacts — restrike 783671, yellow bronze, J-MT-21',
+        note: {
+          es: 'Título con la fecha entre comillas. Tirada, diámetro, peso, canto y diseñador: no disponibles. Metal anotado como copper. No se republican precios.',
+          en: 'Title with the date in quotation marks. Mintage, diameter, weight, edge, and designer: unavailable. Metal entered as copper. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1836-ae-medal-j-mt-21-first-steam-coinage/514737',
+        es: 'PCGS CoinFacts — 1836 AE, J-MT-21, acuñación regular (514737)',
+        en: 'PCGS CoinFacts — 1836 AE, J-MT-21, regular strike (514737)',
+        note: {
+          es: 'El MT-21 de cobre, distinto de la reacuñación 783671. Tirada no disponible. No se republican precios.',
+          en: 'The copper MT-21, distinct from restrike 783671. Mintage unavailable. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.numismaticnews.net/archive/little-known-medals-make-a-challenging-set',
+        es: 'Numismatic News — Little known medals make a challenging set',
+        en: 'Numismatic News — Little known medals make a challenging set',
+        note: {
+          es: 'Gobrecht, cuños de centavo, estreno previsto el 22 de febrero de 1836 y sobrefecha MAR. 23 sobre FEB. 22. No se republican precios.',
+          en: 'Gobrecht, cent-sized dies, a debut planned for 22 February 1836, and the overdate MAR. 23 over FEB. 22. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v17n33a19.html',
+        es: 'The E-Sylum — The very first steam coinage medal',
+        en: 'The E-Sylum — The very first steam coinage medal',
+        note: {
+          es: 'Carta de Patterson a Woodbury el 23 de marzo de 1836 y el atraso desde el 22 de febrero. El canto grabado «The Very First» pertenece a otro ejemplar, no a esta ficha.',
+          en: 'Patterson’s letter to Woodbury on 23 March 1836 and the delay from 22 February. The edge engraved “The Very First” belongs to another example, not to this record.',
+        },
+      },
+      {
+        href: 'https://fi.edu/en/science-and-education/collection/steampowered-coin-press',
+        es: 'Franklin Institute — prensa de vapor Thonnelier',
+        en: 'Franklin Institute — Thonnelier steam coining press',
+        note: {
+          es: 'Capacidad publicada de unos 100 ejemplares por minuto. Una frase de la página dice 22 de marzo; la carta de Patterson y la leyenda de la medalla fijan el 23. No se republican precios.',
+          en: 'Published capacity of about 100 pieces a minute. One sentence on the page says 22 March; Patterson’s letter and the medal’s legend fix the 23rd. Prices are not republished.',
+        },
+      },
+      {
+        href: 'http://chicagocoinclub.org/lib/us/usmnt/1816/mr.html',
+        es: 'Informe del director de la Mint, 1 de enero de 1817',
+        en: 'Director of the Mint’s report, 1 January 1817',
+        note: {
+          es: 'Transcripción del Chicago Coin Club. Tras el incendio de enero de 1816, una máquina de vapor sustituyó al tiro de caballos en el laminado.',
+          en: 'Chicago Coin Club transcription. After the January 1816 fire, a steam engine replaced horse power in the rolling mill.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -1972,7 +2175,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, la medalla de 1836 de la primera acuñación a vapor, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -2005,7 +2208,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1836 First Steam Coinage medal, the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

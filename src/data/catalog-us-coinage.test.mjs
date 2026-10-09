@@ -521,3 +521,38 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
   });
 });
+
+describe('US 1836 First Steam Coinage medal', () => {
+  it('registers one bilingual Mint medal, with the yellow-bronze restrike left provisional', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/medalla-1836-primera-acunacion-a-vapor/', 'en'),
+      '/en/collection/united-states-numismatics/medal-1836-first-steam-coinage/',
+    );
+    assert.match(data, /id: 'medalla-1836-primera-acunacion-vapor'/);
+    assert.match(data, /chapterId: 'medallas-ceca'/);
+    assert.match(data, /artform: 'Medal'/);
+    assert.match(data, /Julian MT-21 · PCGS #783671 · Smithsonian 1991\.0009\.0520/);
+    assert.match(data, /Bronce amarillo provisional/);
+    assert.match(data, /Yellow-bronze restrike, provisional/);
+    assert.match(data, /united-states-mint-medal-1836-first-steam-coinage-mt-21-composite\.jpg/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-${side}.jpg`,
+          import.meta.url,
+        ),
+      );
+    }
+    assert.match(data, /united-states-mint-medal-1836-first-steam-coinage-mt-21-front\.jpg/);
+    assert.match(data, /united-states-mint-medal-1836-first-steam-coinage-mt-21-back\.jpg/);
+    assert.match(data, /no_serial_reason:\n      'United States Mint commemorative medal/);
+    assert.match(data, /MAR\. 23 sobre FEB\. 22/);
+    assert.match(data, /The Very First/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const medal = data.slice(data.indexOf("id: 'medalla-1836-primera-acunacion-vapor'"));
+    assert.doesNotMatch(medal, /\$\d+/);
+    assert.match(holdings, /id: 'us-medalla-1836-primera-acunacion-vapor', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /id: 'us-1836-medalla-j-mt-21'/);
+  });
+});

@@ -127,7 +127,7 @@ export function visualArtworkJsonLd(options: {
   url: string;
   image?: string;
   locale: Locale;
-  artform: 'Banknote' | 'Coin' | 'CreativeWork';
+  artform: 'Banknote' | 'Coin' | 'Medal' | 'CreativeWork';
   catalogNumber?: string;
   issuer?: string;
   printer?: string;
