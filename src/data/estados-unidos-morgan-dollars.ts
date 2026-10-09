@@ -23,7 +23,7 @@ export const morganSeriesCopy = {
   es: {
     metaTitle: 'Dólares Morgan, 1878–1904 · EE. UU. | Notofilia',
     metaDescription:
-      'Dólar Morgan de plata, emisión original de 1878 a 1904: peso, cecas, Bland-Allison, fechas clave y el tesoro GSA. En la vitrina: 1884-S, 1883-CC y 1885-CC.',
+      'Dólar Morgan de plata, emisión original de 1878 a 1904: peso, cecas, Bland-Allison, fechas clave y el tesoro GSA. En la vitrina: 1883-CC, 1884-S y 1885-CC.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Dólares Morgan de plata — emisión original (1878–1904)',
     breadcrumbCurrent: 'Dólar Morgan, 1878–1904',
@@ -33,7 +33,7 @@ export const morganSeriesCopy = {
       'Cartel del dólar Morgan, emisión original 1878–1904: mapa con las cecas de Filadelfia, Carson City, Nueva Orleans y San Francisco, anverso de 1884, reverso con el águila y una prensa de acuñar. Es una ilustración; las leyendas del cartel están en inglés. No es el escaneo de las piezas de la colección.',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Tres dólares Morgan sueltos, sin serial y sin encapsular: San Francisco 1884, con la S bajo el lazo, y Carson City 1883 y 1885, con la CC bajo la corona. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
+      'Tres dólares Morgan sueltos, sin serial y sin encapsular: Carson City 1883, con la CC bajo la corona; San Francisco 1884, con la S bajo el lazo; y Carson City 1885, con la CC bajo la corona. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
     viewCoin: 'Ver la ficha',
     specTitle: 'Especificaciones del tipo',
     specIntro:
@@ -60,7 +60,7 @@ export const morganSeriesCopy = {
   en: {
     metaTitle: 'Morgan Silver Dollars, 1878–1904 · United States | Notofilia',
     metaDescription:
-      'Original-run Morgan silver dollar, 1878–1904: weight, mints, Bland-Allison, key dates, and the GSA hoard. In this case: 1884-S, 1883-CC, and 1885-CC.',
+      'Original-run Morgan silver dollar, 1878–1904: weight, mints, Bland-Allison, key dates, and the GSA hoard. In this case: 1883-CC, 1884-S, and 1885-CC.',
     kicker: 'United States · Numismatics',
     title: 'Morgan Silver Dollars — Original Run (1878–1904)',
     breadcrumbCurrent: 'Morgan dollar, 1878–1904',
@@ -70,7 +70,7 @@ export const morganSeriesCopy = {
       'Poster for the original-run Morgan dollar, 1878–1904: a map with the Philadelphia, Carson City, New Orleans, and San Francisco mints, an 1884 obverse, the eagle reverse, and a coining press. It is an illustration, not a scan of the pieces in the collection.',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'Three raw Morgan dollars, with no serial and unslabbed: San Francisco 1884, with the S under the bow, and Carson City 1883 and 1885, with the CC under the wreath. Open each record for obverse, reverse, and catalog facts.',
+      'Three raw Morgan dollars, with no serial and unslabbed: Carson City 1883, with the CC under the wreath; San Francisco 1884, with the S under the bow; and Carson City 1885, with the CC under the wreath. Open each record for obverse, reverse, and catalog facts.',
     viewCoin: 'Open the coin page',
     specTitle: 'Type specifications',
     specIntro:
@@ -307,8 +307,8 @@ export const morganNarrative: MorganSection[] = [
     },
     paragraphs: [
       {
-        es: 'La emisión original, de 1878 a 1904, es el tramo en que la Bland-Allison y luego la Sherman obligaron a acuñar plata que el público no pedía en la mano. El pánico de 1893 acortó las tiradas. La Pittman, ya fuera de ese tramo, fundió cerca de la mitad de lo acuñado. Las bóvedas de los años sesenta y las ventas GSA decidieron qué fechas siguen siendo comunes sin circular. Esta vitrina no tasa el mercado. Documenta el 1884-S, el 1883-CC y el 1885-CC fotografiados en la colección.',
-        en: 'The original run, from 1878 to 1904, is the stretch in which Bland-Allison and then Sherman forced the coinage of silver the public did not ask to carry. The Panic of 1893 shortened the mintages. Pittman, already outside that stretch, melted about half of what had been struck. The vaults of the 1960s and the GSA sales decided which dates are still common uncirculated. This case does not price the market. It records the photographed 1884-S, 1883-CC, and 1885-CC.',
+        es: 'La emisión original, de 1878 a 1904, es el tramo en que la Bland-Allison y luego la Sherman obligaron a acuñar plata que el público no pedía en la mano. El pánico de 1893 acortó las tiradas. La Pittman, ya fuera de ese tramo, fundió cerca de la mitad de lo acuñado. Las bóvedas de los años sesenta y las ventas GSA decidieron qué fechas siguen siendo comunes sin circular. Esta vitrina no tasa el mercado. Documenta el 1883-CC, el 1884-S y el 1885-CC fotografiados en la colección.',
+        en: 'The original run, from 1878 to 1904, is the stretch in which Bland-Allison and then Sherman forced the coinage of silver the public did not ask to carry. The Panic of 1893 shortened the mintages. Pittman, already outside that stretch, melted about half of what had been struck. The vaults of the 1960s and the GSA sales decided which dates are still common uncirculated. This case does not price the market. It records the photographed 1883-CC, 1884-S, and 1885-CC.',
       },
     ],
   },
@@ -702,7 +702,9 @@ export const morganRelated = [
 ] as const;
 
 export function morganHoldings(): UnitedStatesCoin[] {
-  return unitedStatesCoins.filter((coin) => coin.chapterId === 'dolar-morgan');
+  return unitedStatesCoins
+    .filter((coin) => coin.chapterId === 'dolar-morgan')
+    .sort((a, b) => Number(a.year) - Number(b.year) || a.id.localeCompare(b.id));
 }
 
 export { coinagePath as morganParentPath, USA_MORGAN_PATH, USA_MORGAN_PATH_EN };

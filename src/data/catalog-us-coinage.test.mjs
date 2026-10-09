@@ -519,5 +519,14 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganEssay, /\$2,086,875/);
     assert.doesNotMatch(morganEssay, /\$750,000/);
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
+    assert.match(
+      morganEssay,
+      /\.sort\(\(a, b\) => Number\(a\.year\) - Number\(b\.year\) \|\| a\.id\.localeCompare\(b\.id\)\)/,
+    );
+    assert.match(data, /export function unitedStatesCoinsInCaseOrder/);
+    assert.match(
+      readFileSync(new URL('../components/catalog/UnitedStatesCoinagePage.astro', import.meta.url), 'utf8'),
+      /unitedStatesCoinsInCaseOrder\(\)/,
+    );
   });
 });
