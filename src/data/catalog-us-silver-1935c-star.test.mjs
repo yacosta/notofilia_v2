@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'us-sc-1935c-star-25885207b');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-sc-1935c-fr1612-star');
+    assert.equal(additions.at(-1)?.id, 'us-sc-1935a-r-experimental-s71208111c');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-sc-1935a-r-experimental-fr1609');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

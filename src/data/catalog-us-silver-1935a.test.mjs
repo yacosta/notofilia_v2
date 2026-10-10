@@ -17,7 +17,7 @@ const enPiece = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '1-dolar-certificado-plata-1935a'");
-const noteEnd = data.indexOf("id: '1-dolar-experimental-s-1935a'");
+const noteEnd = data.indexOf("id: '1-dolar-experimental-r-1935a'");
 const note = data.slice(noteStart, noteEnd);
 const printedStart = note.indexOf('printed:');
 const printed = note.slice(printedStart, note.indexOf('facts:', printedStart));
@@ -54,8 +54,8 @@ describe('US Series 1935A blue-seal $1 Fr. 1608', () => {
     assert.doesNotMatch(printed, /6\.1/);
     assert.doesNotMatch(note, /Stuart/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'us-sc-1935c-star-25885207b');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-sc-1935c-fr1612-star');
+    assert.equal(additions.at(-1)?.id, 'us-sc-1935a-r-experimental-s71208111c');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-sc-1935a-r-experimental-fr1609');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {
