@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T10:57:54.755Z",
+  "generatedAt": "2026-10-10T11:43:41.213Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4759,6 +4759,84 @@
       "title": {
         "es": "1 dólar · Sello amarillo C–C · Serie 1935 A",
         "en": "$1 · Yellow seal C–C · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "front",
+      "hash": "00aaee00002b2900",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-composite.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "front",
+      "hash": "003935aaeaaab500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-front.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "back",
+      "hash": "00fa79356b55dc00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-back.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "front",
+      "hash": "00e8aa0000232300",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-composite.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "front",
+      "hash": "0025332caa865500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-front.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "back",
+      "hash": "00e83b4aa151f200",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-back.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
       }
     },
     {

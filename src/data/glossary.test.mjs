@@ -64,6 +64,7 @@ const added = [
   'fichas-hard-times',
   'funnyback',
   'moneda-prueba-giori',
+  'experimental-r-s',
   'sello-amarillo',
   'sobreimpresion-hawaii',
   'demand-note',
@@ -109,7 +110,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 174);
+    assert.equal(glossaryTerms.length, 175);
   });
 });
 
@@ -117,7 +118,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 140);
+    assert.equal(foldedGlossaryTerms().length, 141);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));

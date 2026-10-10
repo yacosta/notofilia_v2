@@ -9,6 +9,7 @@ export const WWII_HAWAII_10_NOTE_ID = '10-dolares-serie-1934a-hawaii';
 export const WWII_HAWAII_20_NOTE_ID = '20-dolares-serie-1934a-hawaii';
 export const WWII_YELLOW_SEAL_NOTE_ID = '1-dolar-sello-amarillo-1935a';
 export const WWII_YELLOW_SEAL_CC_NOTE_ID = '1-dolar-sello-amarillo-1935a-c78095129c';
+export const WWII_S_EXPERIMENTAL_NOTE_ID = '1-dolar-experimental-s-1935a';
 export const WWII_HAWAII_NOTE_IDS = [
   WWII_HAWAII_NOTE_ID,
   WWII_HAWAII_5_NOTE_ID,
@@ -19,6 +20,7 @@ export const WWII_NORTH_AFRICA_NOTE_IDS = [
   WWII_YELLOW_SEAL_NOTE_ID,
   WWII_YELLOW_SEAL_CC_NOTE_ID,
 ] as const;
+export const WWII_RS_EXPERIMENTAL_NOTE_IDS = [WWII_S_EXPERIMENTAL_NOTE_ID] as const;
 export const WWII_HOLDING_GROUPS = [
   { id: 'hawaii-series', headingKey: 'hawaiiSeriesHeading', noteIds: WWII_HAWAII_NOTE_IDS },
   {
@@ -26,10 +28,16 @@ export const WWII_HOLDING_GROUPS = [
     headingKey: 'northAfricaSeriesHeading',
     noteIds: WWII_NORTH_AFRICA_NOTE_IDS,
   },
+  {
+    id: 'rs-experimental-series',
+    headingKey: 'rsExperimentalSeriesHeading',
+    noteIds: WWII_RS_EXPERIMENTAL_NOTE_IDS,
+  },
 ] as const;
 export const WWII_HOLDING_NOTE_IDS = [
   ...WWII_HAWAII_NOTE_IDS,
   ...WWII_NORTH_AFRICA_NOTE_IDS,
+  ...WWII_RS_EXPERIMENTAL_NOTE_IDS,
 ] as const;
 
 export const WWII_EMERGENCY_HERO = {
@@ -65,7 +73,7 @@ export const wwiiEmergencyCopy = {
       'Sobreimpresión HAWAII, certificado de plata de sello amarillo, experimentales R/S, Moneda Militar Aliada (lira, franco, marco, chelín y yen), Ghetto-Kronen de Theresienstadt y otro papel de gueto y campo, Operación Bernhard, dinero de invasión japonés y yen militar, Reichskreditkassenscheine, islas del Canal, emisiones soviéticas de 1944, muntbiljetten neerlandeses de 1943 y BAFSV.',
     holdingsLabel: 'En esta vitrina',
     holdingsValue:
-      '1 dólar HAWAII serie 1935 A (Hawaii P#36 · Fr. 2300), serial S40499058C, y 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, numerados en 1944; 5 dólares HAWAII serie 1934 A (P#38 · Fr. 2302), serial L68013147A, bloque L–A; 10 dólares HAWAII serie 1934 A (P#40 · Fr. 2303), serial L45104670B, bloque L–B; y 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, bloque B–C, y serial C78095129C, bloque C–C.',
+      '1 dólar HAWAII serie 1935 A (Hawaii P#36 · Fr. 2300), serial S40499058C, y 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, numerados en 1944; 5 dólares HAWAII serie 1934 A (P#38 · Fr. 2302), serial L68013147A, bloque L–A; 10 dólares HAWAII serie 1934 A (P#40 · Fr. 2303), serial L45104670B, bloque L–B; 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, bloque B–C, y serial C78095129C, bloque C–C; y 1 dólar experimental S serie 1935 A (P#416AS · Fr. 1610), serial S74796042C, bloque S–C.',
     holdingsNote:
       'El papel federal de la era de la guerra, los certificados de pago militar y la Serie Victory de Filipinas tienen vitrina propia.',
     viewNote: 'Ver la ficha',
@@ -74,6 +82,7 @@ export const wwiiEmergencyCopy = {
     holdingsListLabel: 'Ejemplares fichados en esta vitrina',
     hawaiiSeriesHeading: 'Serie de Hawái',
     northAfricaSeriesHeading: 'Serie de África del Norte',
+    rsExperimentalSeriesHeading: 'Experimentales R y S',
     heroAlt:
       'Ilustración de escritorio con billetes de emergencia de la Segunda Guerra Mundial, un tórculo y un mapa. Título Billetes de Emergencia. No es un ejemplar fichado.',
     usLead: 'El papel federal de la era de la guerra se documenta en la vitrina de Estados Unidos.',
@@ -111,7 +120,7 @@ export const wwiiEmergencyCopy = {
       'HAWAII overprints, yellow-seal silver certificates, R/S experimentals, Allied Military Currency (lire, francs, marks, schillings, and yen), Theresienstadt Ghetto-Kronen and other ghetto and camp paper, Operation Bernhard, Japanese invasion money and military yen, Reichskreditkassenscheine, Channel Islands issues, Soviet 1944 notes, 1943 Dutch muntbiljetten, and BAFSV.',
     holdingsLabel: 'In this case',
     holdingsValue:
-      'Series 1935A HAWAII $1 (Hawaii P#36 · Fr. 2300), serial S40499058C, and Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, numbered in 1944; the Series 1934A HAWAII $5 (P#38 · Fr. 2302), serial L68013147A, L–A block; the Series 1934A HAWAII $10 (P#40 · Fr. 2303), serial L45104670B, L–B block; and the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, B–C block, and serial C78095129C, C–C block.',
+      'Series 1935A HAWAII $1 (Hawaii P#36 · Fr. 2300), serial S40499058C, and Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, numbered in 1944; the Series 1934A HAWAII $5 (P#38 · Fr. 2302), serial L68013147A, L–A block; the Series 1934A HAWAII $10 (P#40 · Fr. 2303), serial L45104670B, L–B block; the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, B–C block, and serial C78095129C, C–C block; and the Series 1935A S-experimental $1 (P#416AS · Fr. 1610), serial S74796042C, S–C block.',
     holdingsNote:
       'Federal paper from the war years, military payment certificates, and the Philippine Victory Series have their own cases.',
     viewNote: 'Open the note page',
@@ -120,6 +129,7 @@ export const wwiiEmergencyCopy = {
     holdingsListLabel: 'Holdings recorded in this case',
     hawaiiSeriesHeading: 'Hawaii Series',
     northAfricaSeriesHeading: 'North Africa Series',
+    rsExperimentalSeriesHeading: 'R and S experimentals',
     heroAlt:
       'Desk illustration with World War II emergency banknotes, a printing press, and a map. Title Emergency Banknotes. Not a catalogued holding.',
     usLead: 'Federal paper from the war years is documented in the United States case.',

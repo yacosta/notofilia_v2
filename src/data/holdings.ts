@@ -221,6 +221,7 @@ export const additions: Holding[] = [
   { id: 'us-medalla-1836-primera-acunacion-vapor', kind: 'coin', country: 'US' },
   { id: 'us-sc-1935a-v94411136b', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1935a-yellow-seal-c78095129c', kind: 'banknote', country: 'US' },
+  { id: 'us-sc-1935a-s-experimental-s74796042c', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -368,6 +369,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1836-medalla-j-mt-21' },
   { id: 'us-sc-1935a-fr1608' },
   { id: 'us-sc-1935a-yellow-seal-fr2306-c78095129c' },
+  { id: 'us-sc-1935a-s-experimental-fr1610' },
 ];
 
 export type CollectionStats = {
