@@ -84,6 +84,11 @@ const added = [
   'cuarto-de-aguila',
   'incuso',
   'medalla',
+  'pvc',
+  'libre-de-acido',
+  'poliester-mylar',
+  'lupa',
+  'procedencia',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -110,7 +115,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 175);
+    assert.equal(glossaryTerms.length, 180);
   });
 });
 
@@ -118,7 +123,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 141);
+    assert.equal(foldedGlossaryTerms().length, 146);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));
@@ -143,6 +148,18 @@ describe('two-tier glossary', () => {
     assert.equal(glossaryTermHref('libra', 'en'), '/en/glossary/#libra');
     assert.equal(glossaryTermHref('libranza', 'es'), '/glosario/#libranza');
     assert.equal(glossaryTermHref('criswell', 'es'), '/glosario/#catalogo-criswell');
+    assert.equal(glossaryTermHref('pvc', 'es'), '/glosario/#pvc');
+    assert.equal(glossaryTermHref('pvc', 'en'), '/en/glossary/#pvc');
+    assert.equal(glossaryTermHref('libre-de-acido', 'es'), '/glosario/#libre-de-acido');
+    assert.equal(glossaryTermHref('libre-de-acido', 'en'), '/en/glossary/#libre-de-acido');
+    assert.equal(glossaryTermHref('poliester-mylar', 'en'), '/en/glossary/#poliester-mylar');
+    assert.equal(glossaryTermHref('lupa', 'en'), '/en/glossary/#lupa');
+    assert.equal(glossaryTermHref('procedencia', 'en'), '/en/glossary/#procedencia');
+    assert.equal(glossaryFoldedRedirectTarget('libre-de-acido', 'en'), '/en/glossary/?term=acid-free');
+    assert.equal(glossaryFoldedRedirectTarget('poliester-mylar', 'en'), '/en/glossary/?term=polyester-mylar');
+    assert.equal(glossaryFoldedRedirectTarget('lupa', 'en'), '/en/glossary/?term=loupe');
+    assert.equal(glossaryFoldedRedirectTarget('procedencia', 'en'), '/en/glossary/?term=provenance');
+    assert.equal(glossaryFoldedRedirectTarget('pvc', 'en'), '/en/glossary/?term=pvc');
   });
 
   it('301s folded term URLs to a query, not a hash fragment', () => {
