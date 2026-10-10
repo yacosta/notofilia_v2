@@ -247,6 +247,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar experimental S serie 1935 A?',
+        en: 'What is the Series 1935A experimental S $1?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1610 (P#416aS), firmas Julian–Morgenthau, sello y seriales azules y una S roja junto al sello. La serie 1935 A nombra el tipo: el ensayo de papel se puso en circulación el 20 de junio de 1944. Esta pieza es el serial S74796042C, bloque S–C, en el tramo de papel especial S73884001C–S75068000C, plancha de anverso L5566 y reverso 3837. Sin encapsular. El prefijo S es la letra de bloque. La R de papel regular es el Fr. 1609. No es el HAWAII serial S40499058C ni el sello amarillo Fr. 2306, serial B52497547C.',
+        en: 'It is a small-size Silver Certificate, Fr. 1610 (P#416aS), Julian–Morgenthau signatures, blue seal and serials, and a red S beside the seal. Series 1935A names the type: the paper test was released on 20 June 1944. This piece is serial S74796042C, S–C block, in the special-paper run S73884001C–S75068000C, face plate L5566 and back plate 3837. Unslabbed. The S prefix is the block letter. The regular-paper R is Fr. 1609. It is not the HAWAII note, serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar HAWAII serie 1935 A?',
         en: 'What is the Series 1935A HAWAII $1?',
       },
@@ -529,6 +539,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
       answer: {
         es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, circulada y sin encapsular.',
         en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, circulated and unslabbed.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué fueron los experimentales R y S?',
+        en: 'What were the R and S experimentals?',
+      },
+      answer: {
+        es: 'Dos grupos de 1.184.000 certificados de plata de 1 dólar, serie 1935 A, firmas Julian–Morgenthau, puestos en circulación el 20 de junio de 1944 para ensayar el papel. La R roja (Fr. 1609) marcó papel regular, S70884001C–S72068000C. La S roja (Fr. 1610) marcó papel especial, S73884001C–S75068000C. El prefijo S del serial es la letra de bloque. Esta vitrina ficha el Fr. 1610, serial S74796042C, sin encapsular. No se publica un censo ni un precio.',
+        en: 'Two groups of 1,184,000 Series 1935A $1 silver certificates, Julian–Morgenthau signatures, released on 20 June 1944 to test the paper. A red R (Fr. 1609) marked regular paper, S70884001C–S72068000C. A red S (Fr. 1610) marked special paper, S73884001C–S75068000C. The S prefix of the serial is the block letter. This case records Fr. 1610, serial S74796042C, unslabbed. No census and no price are published.',
       },
     },
     {

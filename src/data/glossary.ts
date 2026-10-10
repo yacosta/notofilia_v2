@@ -76,6 +76,7 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   reacunacion: 'restrike',
   reverso: 'reverse',
   'sello-amarillo': 'yellow-seal',
+  'experimental-r-s': 'r-s-experimental',
   'sobreimpresion-hawaii': 'hawaii-overprint',
   'tinta-ovi': 'ovi-ink',
   'ventana-transparente': 'clear-window',
@@ -414,8 +415,8 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "certificado-de-plata",
     category: "Emisión",
     title: { es: "Certificado de plata", en: "Silver Certificate" },
-    definition: { es: "Papel federal estadounidense, emitido desde 1878, pagadero en plata del Tesoro. En tamaño pequeño el 1 dólar serie 1928 (Fr. 1600) y el serie 1928 A (Fr. 1601) llevan el reverso Funnyback; en la Segunda Guerra Mundial la misma clase recibió la sobrecarga HAWAII y, en otra emisión, el sello amarillo de África del Norte. La Educational Series de 1896 pertenece a esta clase, no a los Treasury Notes. No es un Federal Reserve Note ni un United States Note.", en: "United States federal paper, issued from 1878, payable in Treasury silver. In small size the Series 1928 $1 (Fr. 1600) and the Series 1928A $1 (Fr. 1601) carry the Funnyback reverse; in the Second World War the same class received the HAWAII overprint and, in another issue, the North Africa yellow seal. The 1896 Educational Series belongs to this class, not to Treasury Notes. It is not a Federal Reserve Note or a United States Note." },
-    seeAlso: ["funnyback", "sobreimpresion-hawaii", "sello-amarillo", "billete-reserva-federal", "friedberg", "bep", "certificado-de-oro", "treasury-note"],
+    definition: { es: "Papel federal estadounidense, emitido desde 1878, pagadero en plata del Tesoro. En tamaño pequeño el 1 dólar serie 1928 (Fr. 1600) y el serie 1928 A (Fr. 1601) llevan el reverso Funnyback; en la Segunda Guerra Mundial la misma clase recibió la sobrecarga HAWAII, el sello amarillo de África del Norte y, en 1944, la R o la S roja del ensayo de papel. Esta colección documenta el experimental S, Fr. 1610, serial S74796042C, bloque S–C. La Educational Series de 1896 pertenece a esta clase, no a los Treasury Notes. No es un Federal Reserve Note ni un United States Note.", en: "United States federal paper, issued from 1878, payable in Treasury silver. In small size the Series 1928 $1 (Fr. 1600) and the Series 1928A $1 (Fr. 1601) carry the Funnyback reverse; in the Second World War the same class received the HAWAII overprint, the North Africa yellow seal, and, in 1944, the red R or S of the paper test. This collection records the experimental S, Fr. 1610, serial S74796042C, S–C block. The 1896 Educational Series belongs to this class, not to Treasury Notes. It is not a Federal Reserve Note or a United States Note." },
+    seeAlso: ["funnyback", "sobreimpresion-hawaii", "sello-amarillo", "experimental-r-s", "billete-reserva-federal", "friedberg", "bep", "certificado-de-oro", "treasury-note"],
   },
   {
     slug: "cordoncillo",
@@ -656,6 +657,14 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Escudo de armas", en: "Coat of arms" },
     definition: { es: "Emblema heráldico oficial de un país o entidad, incluido con frecuencia como sello de autenticidad institucional.", en: "A country or entity's official heraldic emblem, often included as a mark of institutional authenticity." },
     seeAlso: ["escudo"],
+  },
+  {
+    slug: "experimental-r-s",
+    id: "experimental-r-s",
+    category: "Emisión",
+    title: { es: "Experimental R/S", en: "R/S experimental" },
+    definition: { es: "Certificado de plata estadounidense de 1 dólar, serie 1935 A, con una R o una S roja junto al sello azul del Tesoro. La R (Fr. 1609) marcó papel regular; la S (Fr. 1610) marcó papel especial. Los dos grupos, de 1.184.000 piezas ordinarias cada uno, se pusieron en circulación el 20 de junio de 1944. El prefijo S del serial es la letra de bloque, no la variedad. Esta colección documenta el Fr. 1610, serial S74796042C, bloque S–C.", en: "United States Series 1935A $1 Silver Certificate with a red R or S beside the blue Treasury seal. R (Fr. 1609) marked regular paper; S (Fr. 1610) marked special paper. Both groups, 1,184,000 regular notes each, were released on 20 June 1944. The S prefix of the serial is the block letter, not the variety. This collection records Fr. 1610, serial S74796042C, S–C block." },
+    seeAlso: ["certificado-de-plata", "sello-amarillo", "sobreimpresion-hawaii", "friedberg", "bep"],
   },
   {
     slug: "specimen",
