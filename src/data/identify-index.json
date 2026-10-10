@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T11:29:07.433Z",
+  "generatedAt": "2026-10-10T11:37:20.330Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4720,6 +4720,45 @@
       "title": {
         "es": "1 dólar · Sello amarillo · Serie 1935 A",
         "en": "$1 · Yellow seal · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "front",
+      "hash": "00aaee00002b2900",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-composite.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "front",
+      "hash": "003935aaeaaab500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-front.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935a",
+      "face": "back",
+      "hash": "00fa79356b55dc00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/",
+      "pick": "Fr. 1608",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-v94411136b-back.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 A",
+        "en": "$1 · Silver Certificate · Series 1935 A"
       }
     },
     {
