@@ -68,6 +68,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1957b/'],
   },
   {
+    es: '/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/',
+    en: '/collection/united-states/1-dollar-silver-certificate-1935a/',
+    aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1935a/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
     en: '/collection/united-states/1-dollar-series-2003-atlanta/',
     aliases: ['/coleccion/united-states/1-dollar-series-2003-atlanta/'],
@@ -610,6 +615,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/1-dollar-series-1928/',
     '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1957b/',
     '/en/coleccion/united-states/1-dollar-silver-certificate-1957b/',
+    '/en/coleccion/estados-unidos/1-dolar-certificado-plata-1935a/',
+    '/en/coleccion/united-states/1-dollar-silver-certificate-1935a/',
     '/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
     '/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/',
     '/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
