@@ -251,8 +251,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the blue-seal Series 1935A $1 Silver Certificate?',
       },
       answer: {
-        es: 'Es un certificado de plata ordinario, P#416a (Fr. 1608), firmas Julian–Morgenthau, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial V94411136B, bloque V–B, se numeró entre el 27 de enero y el 3 de marzo de 1942. Circulada, sin encapsular. No es el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C.',
-        en: 'It is an ordinary Silver Certificate, P#416a (Fr. 1608), Julian–Morgenthau signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. Series 1935A names the type, not the numbering year: this piece, serial V94411136B, V–B block, was numbered between 27 January and 3 March 1942. Circulated, unslabbed. It is not the HAWAII Fr. 2300, serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C.',
+        es: 'Es un certificado de plata ordinario, P#416a (Fr. 1608), firmas Julian–Morgenthau, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial V94411136B, bloque V–B, se numeró entre el 27 de enero y el 3 de marzo de 1942. Circulada, sin encapsular. No es el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el Fr. 2306, serial C78095129C.',
+        en: 'It is an ordinary Silver Certificate, P#416a (Fr. 1608), Julian–Morgenthau signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. Series 1935A names the type, not the numbering year: this piece, serial V94411136B, V–B block, was numbered between 27 January and 3 March 1942. Circulated, unslabbed. It is not the HAWAII Fr. 2300, serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C, or Fr. 2306, serial C78095129C.',
       },
     },
     {
@@ -261,8 +261,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1935A HAWAII $1?',
       },
       answer: {
-        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un Funnyback. El P#416a de esta colección es el Fr. 1608, serial V94411136B. El sello amarillo es el Fr. 2306, serial B52497547C.',
-        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a or a Funnyback. This collection’s P#416a is Fr. 1608, serial V94411136B. The yellow seal is Fr. 2306, serial B52497547C.',
+        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un Funnyback. El P#416a de esta colección es el Fr. 1608, serial V94411136B. El sello amarillo es el Fr. 2306, serial B52497547C, y el Fr. 2306, serial C78095129C.',
+        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a or a Funnyback. This collection’s P#416a is Fr. 1608, serial V94411136B. The yellow seal is Fr. 2306, serial B52497547C, and Fr. 2306, serial C78095129C.',
       },
     },
     {
@@ -537,8 +537,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were the yellow-seal silver certificates?',
       },
       answer: {
-        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, circulada y sin encapsular.',
-        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, circulated and unslabbed.',
+        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, y el serial C78095129C, bloque C–C, ambos circulados y sin encapsular.',
+        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, and serial C78095129C, C–C block, both circulated and unslabbed.',
       },
     },
     {
