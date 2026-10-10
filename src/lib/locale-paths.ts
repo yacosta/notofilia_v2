@@ -13,6 +13,11 @@ type PathPair = {
 /** Longest-prefix pairs. Trailing slashes required. */
 export const PATH_PREFIX_PAIRS: PathPair[] = [
   {
+    es: '/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a-c78095129c/',
+    en: '/collection/united-states/1-dollar-yellow-seal-1935a-c78095129c/',
+    aliases: ['/coleccion/united-states/1-dollar-yellow-seal-1935a-c78095129c/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-experimental-s-1935a/',
     en: '/collection/united-states/1-dollar-s-experimental-1935a/',
     aliases: ['/coleccion/united-states/1-dollar-s-experimental-1935a/'],
@@ -596,6 +601,8 @@ export function englishRedirects(): Record<string, string> {
   };
 
   const legacyEnglishPrefixes = [
+    '/en/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a-c78095129c/',
+    '/en/coleccion/united-states/1-dollar-yellow-seal-1935a-c78095129c/',
     '/en/coleccion/estados-unidos/1-dolar-experimental-s-1935a/',
     '/en/coleccion/united-states/1-dollar-s-experimental-1935a/',
     '/en/coleccion/estados-unidos/1-dolar-sello-amarillo-1935a/',
