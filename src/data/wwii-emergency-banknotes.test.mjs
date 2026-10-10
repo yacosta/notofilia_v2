@@ -8,6 +8,9 @@ import {
   WWII_HOLDING_GROUPS,
   WWII_HOLDING_NOTE_IDS,
   WWII_NORTH_AFRICA_NOTE_IDS,
+  WWII_RS_EXPERIMENTAL_NOTE_IDS,
+  WWII_S_EXPERIMENTAL_NOTE_ID,
+  WWII_YELLOW_SEAL_CC_NOTE_ID,
   WWII_YELLOW_SEAL_NOTE_ID,
   wwiiEmergencyCopy,
   wwiiEmergencyDedicatedSlugs,
@@ -177,9 +180,11 @@ describe('WWII emergency banknotes series page', () => {
     assert.equal(wwiiEmergencyCopy.en.hawaiiSeriesHeading, 'Hawaii Series');
     assert.equal(wwiiEmergencyCopy.es.northAfricaSeriesHeading, 'Serie de África del Norte');
     assert.equal(wwiiEmergencyCopy.en.northAfricaSeriesHeading, 'North Africa Series');
+    assert.equal(wwiiEmergencyCopy.es.rsExperimentalSeriesHeading, 'Experimentales R y S');
+    assert.equal(wwiiEmergencyCopy.en.rsExperimentalSeriesHeading, 'R and S experimentals');
     assert.deepEqual(
       WWII_HOLDING_GROUPS.map((group) => group.id),
-      ['hawaii-series', 'north-africa-series', 'experimental-series'],
+      ['hawaii-series', 'north-africa-series', 'rs-experimental-series'],
     );
     assert.deepEqual([...WWII_HAWAII_NOTE_IDS], [
       '1-dolar-hawaii-1935a',
@@ -187,11 +192,15 @@ describe('WWII emergency banknotes series page', () => {
       '10-dolares-serie-1934a-hawaii',
       '20-dolares-serie-1934a-hawaii',
     ]);
-    assert.deepEqual([...WWII_NORTH_AFRICA_NOTE_IDS], [WWII_YELLOW_SEAL_NOTE_ID]);
+    assert.deepEqual([...WWII_NORTH_AFRICA_NOTE_IDS], [
+      WWII_YELLOW_SEAL_NOTE_ID,
+      WWII_YELLOW_SEAL_CC_NOTE_ID,
+    ]);
+    assert.deepEqual([...WWII_RS_EXPERIMENTAL_NOTE_IDS], [WWII_S_EXPERIMENTAL_NOTE_ID]);
     assert.deepEqual([...WWII_HOLDING_NOTE_IDS], [
       ...WWII_HAWAII_NOTE_IDS,
       ...WWII_NORTH_AFRICA_NOTE_IDS,
-      '1-dolar-experimental-s-1935a',
+      ...WWII_RS_EXPERIMENTAL_NOTE_IDS,
     ]);
     assert.doesNotMatch(WWII_HAWAII_NOTE_IDS.join(' '), /sello-amarillo/);
     assert.match(pageSource, /WWII_HOLDING_GROUPS/);

@@ -3,7 +3,7 @@ import UnitedStatesNotePage from '../../../../../components/catalog/UnitedStates
 import { noteById } from '../../../../../data/estados-unidos';
 
 const note = noteById('1-dolar-experimental-s-1935a');
-if (!note) throw new Error('Missing Series 1935A experimental S $1 catalog note');
+if (!note) throw new Error('Missing Series 1935A S-experimental $1 catalog note');
 ---
 
 <UnitedStatesNotePage locale="en" note={note} />

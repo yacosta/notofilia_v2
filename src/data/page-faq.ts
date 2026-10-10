@@ -247,12 +247,12 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
-        es: '¿Qué es el 1 dólar experimental S serie 1935 A?',
-        en: 'What is the Series 1935A experimental S $1?',
+        es: '¿Qué es el 1 dólar certificado de plata serie 1935 A de sello azul?',
+        en: 'What is the blue-seal Series 1935A $1 Silver Certificate?',
       },
       answer: {
-        es: 'Es un certificado de plata de tamaño pequeño, Fr. 1610 (P#416aS), firmas Julian–Morgenthau, sello y seriales azules y una S roja junto al sello. La serie 1935 A nombra el tipo: el ensayo de papel se puso en circulación el 20 de junio de 1944. Esta pieza es el serial S74796042C, bloque S–C, en el tramo de papel especial S73884001C–S75068000C, plancha de anverso L5566 y reverso 3837. Sin encapsular. El prefijo S es la letra de bloque. La R de papel regular es el Fr. 1609. No es el HAWAII serial S40499058C ni el sello amarillo Fr. 2306, serial B52497547C.',
-        en: 'It is a small-size Silver Certificate, Fr. 1610 (P#416aS), Julian–Morgenthau signatures, blue seal and serials, and a red S beside the seal. Series 1935A names the type: the paper test was released on 20 June 1944. This piece is serial S74796042C, S–C block, in the special-paper run S73884001C–S75068000C, face plate L5566 and back plate 3837. Unslabbed. The S prefix is the block letter. The regular-paper R is Fr. 1609. It is not the HAWAII note, serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C.',
+        es: 'Es un certificado de plata ordinario, P#416a (Fr. 1608), firmas Julian–Morgenthau, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial V94411136B, bloque V–B, se numeró entre el 27 de enero y el 3 de marzo de 1942. Circulada, sin encapsular. No es el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el experimental S Fr. 1610, serial S74796042C, ni el sello amarillo Fr. 2306, serial C78095129C.',
+        en: 'It is an ordinary Silver Certificate, P#416a (Fr. 1608), Julian–Morgenthau signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. Series 1935A names the type, not the numbering year: this piece, serial V94411136B, V–B block, was numbered between 27 January and 3 March 1942. Circulated, unslabbed. It is not the HAWAII Fr. 2300, serial S40499058C, the yellow seal Fr. 2306, serial B52497547C, the S experimental Fr. 1610, serial S74796042C, or the yellow seal Fr. 2306, serial C78095129C.',
       },
     },
     {
@@ -261,8 +261,18 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1935A HAWAII $1?',
       },
       answer: {
-        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un Funnyback. El sello amarillo de esta colección es el Fr. 2306, serial B52497547C.',
-        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a or a Funnyback. This collection’s yellow seal is Fr. 2306, serial B52497547C.',
+        es: 'Es un certificado de plata de emergencia, Hawaii P#36 (Fr. 2300), firmas Julian–Morgenthau, sello y seriales marrones y la sobreimpresión HAWAII. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial S40499058C, bloque S–C, se numeró en 1944. El encapsulado registra PMG 58 EPQ — Choice About Uncirculated, certificado 1505944-014. No es el P#416a de sello azul, ni un Funnyback. El P#416a de esta colección es el Fr. 1608, serial V94411136B. El sello amarillo es el Fr. 2306, serial B52497547C, y el Fr. 2306, serial C78095129C. El experimental S es el Fr. 1610, serial S74796042C.',
+        en: 'It is an emergency Silver Certificate, Hawaii P#36 (Fr. 2300), Julian–Morgenthau signatures, brown seal and serials, and the HAWAII overprint. Series 1935A names the type, not the numbering year: this piece, serial S40499058C, S–C block, was numbered in 1944. The holder records PMG 58 EPQ — Choice About Uncirculated, certificate 1505944-014. It is not the blue-seal P#416a or a Funnyback. This collection’s P#416a is Fr. 1608, serial V94411136B. The yellow seal is Fr. 2306, serial B52497547C, and Fr. 2306, serial C78095129C. The S experimental is Fr. 1610, serial S74796042C.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 1 dólar experimental S serie 1935 A?',
+        en: 'What is the Series 1935A S-experimental $1?',
+      },
+      answer: {
+        es: 'Es un certificado de plata, P#416AS (Fr. 1610), firmas Julian–Morgenthau, sello y seriales azules y una S roja abajo a la derecha. La S nombra el papel especial del ensayo de 1944; la R, Fr. 1609, el papel corriente. La serie 1935 A nombra el tipo. Este ejemplar es el serial S74796042C, bloque S–C, en la corrida S73884001C–S75068000C, plancha de anverso L 5566 y reverso 3837. Circulada, sin encapsular. No es el P#416a sin letra roja, Fr. 1608, serial V94411136B, ni el HAWAII serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el Fr. 2306, serial C78095129C.',
+        en: 'It is a Silver Certificate, P#416AS (Fr. 1610), Julian–Morgenthau signatures, a blue seal and blue serials, and a red S at lower right. S names the special paper of the 1944 test; R, Fr. 1609, the regular paper. Series 1935A names the type. This piece is serial S74796042C, S–C block, in the run S73884001C–S75068000C, face plate L 5566 and back plate 3837. Circulated, unslabbed. It is not the P#416a with no red letter, Fr. 1608, serial V94411136B, the HAWAII note serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C or serial C78095129C.',
       },
     },
     {
@@ -537,8 +547,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were the yellow-seal silver certificates?',
       },
       answer: {
-        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, circulada y sin encapsular.',
-        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, circulated and unslabbed.',
+        es: 'Certificados de plata de 1, 5 y 10 dólares (Fr. 2306 a 2309) con sello del Tesoro amarillo, usados en el norte de África y en las primeras semanas de Italia. Si el Eje capturaba un depósito, Washington podía desmonetizar solo ese sello. El 10 dólares 1934 (Fr. 2308) es el tipo más escaso. Esta vitrina ficha el 1 dólar Fr. 2306, serial B52497547C, bloque B–C, y el serial C78095129C, bloque C–C, ambos circulados y sin encapsular.',
+        en: 'Silver certificates of $1, $5, and $10 (Fr. 2306–2309) with a yellow Treasury seal, used in North Africa and in the first weeks in Italy. If the Axis captured a depot, Washington could demonetize that seal alone. The 1934 $10 (Fr. 2308) is the scarcest type. This case records the $1 Fr. 2306, serial B52497547C, B–C block, and serial C78095129C, C–C block, both circulated and unslabbed.',
       },
     },
     {
@@ -547,8 +557,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What were the R and S experimentals?',
       },
       answer: {
-        es: 'Dos grupos de 1.184.000 certificados de plata de 1 dólar, serie 1935 A, firmas Julian–Morgenthau, puestos en circulación el 20 de junio de 1944 para ensayar el papel. La R roja (Fr. 1609) marcó papel regular, S70884001C–S72068000C. La S roja (Fr. 1610) marcó papel especial, S73884001C–S75068000C. El prefijo S del serial es la letra de bloque. Esta vitrina ficha el Fr. 1610, serial S74796042C, sin encapsular. No se publica un censo ni un precio.',
-        en: 'Two groups of 1,184,000 Series 1935A $1 silver certificates, Julian–Morgenthau signatures, released on 20 June 1944 to test the paper. A red R (Fr. 1609) marked regular paper, S70884001C–S72068000C. A red S (Fr. 1610) marked special paper, S73884001C–S75068000C. The S prefix of the serial is the block letter. This case records Fr. 1610, serial S74796042C, unslabbed. No census and no price are published.',
+        es: 'Dos corridas de 1.184.000 certificados de plata de 1 dólar, serie 1935 A, firmas Julian–Morgenthau, salidas el 20 de junio de 1944 por el Banco de la Reserva Federal de Chicago. La R roja (Fr. 1609) marca el papel corriente; la S roja (Fr. 1610), el papel especial. Esta vitrina ficha el Fr. 1610, serial S74796042C, bloque S–C, en la corrida S73884001C–S75068000C. Circulada, sin encapsular. No se cotiza el mercado.',
+        en: 'Two runs of 1,184,000 Series 1935A $1 silver certificates, Julian–Morgenthau signatures, released on 20 June 1944 through the Federal Reserve Bank of Chicago. The red R (Fr. 1609) marks regular paper; the red S (Fr. 1610), the special paper. This case records Fr. 1610, serial S74796042C, S–C block, in the run S73884001C–S75068000C. Circulated, unslabbed. The market is not quoted.',
       },
     },
     {

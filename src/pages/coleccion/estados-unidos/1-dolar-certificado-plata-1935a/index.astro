@@ -2,8 +2,8 @@
 import UnitedStatesNotePage from '../../../../components/catalog/UnitedStatesNotePage.astro';
 import { noteById } from '../../../../data/estados-unidos';
 
-const note = noteById('1-dolar-experimental-s-1935a');
-if (!note) throw new Error('Missing Series 1935A S-experimental $1 catalog note');
+const note = noteById('1-dolar-certificado-plata-1935a');
+if (!note) throw new Error('Missing Series 1935A blue-seal $1 catalog note');
 ---
 
 <UnitedStatesNotePage locale="es" note={note} />
