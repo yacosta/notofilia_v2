@@ -69,6 +69,7 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   numismatica: 'numismatics',
   'peso-oro': 'gold-peso',
   pick: 'pick',
+  pvc: 'pvc',
   'pmg-pcgs': 'pmg-pcgs',
   polimero: 'polymer',
   'prueba-ensayo': 'proof-essay',
@@ -907,6 +908,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["anepigrafico"],
   },
   {
+    slug: "libre-de-acido",
+    id: "libre-de-acido",
+    category: "Conservación",
+    title: { es: "Libre de ácido", en: "Acid-free" },
+    definition: {
+      es: "Dicho de un papel, cartón o funda de archivo fabricado sin ácidos libres y, en el papel de trapo, sin lignina. El papel moneda guardado así no amarillea, no se vuelve quebradizo y queda menos expuesto a las manchas de óxido (foxing).",
+      en: "Said of archival paper, board, or a sleeve made without free acids and, in rag paper, without lignin. Banknote paper stored this way does not yellow, does not turn brittle, and is less exposed to foxing.",
+    },
+    seeAlso: ["foxing", "poliester-mylar", "pvc"],
+  },
+  {
     slug: "litografia",
     id: "litografia",
     category: "Producción",
@@ -921,6 +933,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Offset", en: "Offset lithography" },
     definition: { es: "Impresión plana en la que la imagen pasa de la plancha a una mantilla de caucho y de ahí al papel, sin el relieve del intaglio. Los certificados de pago militar de Vietnam se imprimieron en litografía offset a color, con planchetas, no en intaglio.", en: "Flat printing in which the image transfers from plate to rubber blanket to paper, without intaglio relief. Vietnam military payment certificates were printed in colour offset lithography, with planchettes, not intaglio." },
     seeAlso: ["litografia", "intaglio", "plancheta", "mpc"],
+  },
+  {
+    slug: "lupa",
+    id: "lupa",
+    category: "Coleccionismo",
+    title: { es: "Lupa", en: "Loupe" },
+    definition: {
+      es: "Lupa de bolsillo, por lo común de unos 10 aumentos, con la que se examinan la microimpresión, el relieve del intaglio, el estado de conservación y las señales de falsificación.",
+      en: "A pocket magnifier, commonly around 10×, used to inspect microprinting, intaglio relief, condition, and signs of counterfeiting.",
+    },
+    seeAlso: ["microimpresion", "intaglio"],
   },
   {
     slug: "maculatura",
@@ -968,7 +991,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Conservación",
     title: { es: "Marcas de funda de álbum", en: "Album Slide Marks" },
     definition: { es: "Líneas, con frecuencia paralelas, causadas en la superficie de una moneda por la fricción de una funda plástica dentro de un álbum de almacenamiento.", en: "Lines, frequently parallel, imparted to a coin's surface by the friction of a plastic slide inside a storage album." },
-    seeAlso: [],
+    seeAlso: ["pvc"],
   },
   {
     slug: "medalla",
@@ -992,7 +1015,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Conservación",
     title: { es: "Manchas de óxido (foxing)", en: "Foxing" },
     definition: { es: "Manchas pardas de envejecimiento en el papel moneda, causadas por humedad, moho o la oxidación de partículas de hierro en la pasta. Bajan el grado aunque el resto del billete esté limpio.", en: "Brownish age spots on paper money caused by humidity, mold, or the oxidation of iron particles in the pulp. They lower the grade even when the rest of the note is otherwise clean." },
-    seeAlso: ["billete-sin-circular", "epq-calidad-de-papel-excepcional"],
+    seeAlso: ["billete-sin-circular", "epq-calidad-de-papel-excepcional", "libre-de-acido"],
   },
   {
     slug: "microimpresion",
@@ -1000,7 +1023,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Microimpresión", en: "Microprinting" },
     definition: { es: "Texto impreso a tamaño extremadamente pequeño, legible solo con lupa, usado como medida anti-falsificación.", en: "Text printed at extremely small scale, legible only under magnification, used as an anti-counterfeiting measure." },
-    seeAlso: [],
+    seeAlso: ["lupa"],
   },
   {
     slug: "moneda-prueba-giori",
@@ -1144,7 +1167,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Conservación",
     title: { es: "Pátina", en: "Toning" },
     definition: { es: "Coloración natural que se forma en la superficie de una moneda con el tiempo, debido a reacciones químicas con el aire y los materiales de almacenamiento.", en: "Natural coloration that forms on a coin's surface over time due to chemical reactions with air and storage materials." },
-    seeAlso: [],
+    seeAlso: ["pvc"],
   },
   {
     slug: "peso",
@@ -1211,12 +1234,34 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "billete-sin-circular", "ngc", "encapsulado"],
   },
   {
+    slug: "poliester-mylar",
+    id: "poliester-mylar",
+    category: "Conservación",
+    title: { es: "Poliéster / Mylar", en: "Polyester / Mylar" },
+    definition: {
+      es: "Película de poliéster químicamente inerte, de calidad de archivo, usada en fundas para guardar y manipular billetes. Mylar es el nombre comercial más extendido de esa película: no cede plastificantes y el papel no se pega a la funda. Es el material de la funda; el sustrato de un billete de polímero es otro plástico, el polipropileno.",
+      en: "A chemically inert, archival-quality polyester film used in sleeves for storing and handling banknotes. Mylar is the best-known trade name for that film: it does not leach plasticizers, and the paper does not stick to the sleeve. It is the sleeve material; the substrate of a polymer banknote is another plastic, polypropylene.",
+    },
+    seeAlso: ["pvc", "libre-de-acido", "polimero", "encapsulado"],
+  },
+  {
     slug: "polimero",
     id: "polimero",
     category: "Producción",
     title: { es: "Polímero", en: "Polymer" },
     definition: { es: "Sustrato plástico —comúnmente polipropileno biaxialmente orientado— usado en billetes por su durabilidad y resistencia a la falsificación.", en: "A plastic substrate — commonly biaxially oriented polypropylene — used in banknotes for its durability and counterfeit resistance." },
-    seeAlso: ["sustrato", "tyvek", "guardian", "ventana-transparente"],
+    seeAlso: ["sustrato", "tyvek", "guardian", "ventana-transparente", "poliester-mylar"],
+  },
+  {
+    slug: "procedencia",
+    id: "procedencia",
+    category: "Coleccionismo",
+    title: { es: "Procedencia", en: "Provenance" },
+    definition: {
+      es: "Historia documentada de quién ha poseído una pieza: colección, tesoro o casa de subastas, y con qué comprobantes. Una cadena clara de propiedad sostiene la autenticación; si el ejemplar perteneció a una colección o un hallazgo conocidos, esa historia forma parte de cómo el mercado lo lee.",
+      en: "The documented history of who has owned a piece: which collection, hoard, or auction house, and on what evidence. A clear chain of ownership supports authentication; when the example belonged to a known collection or find, that history is part of how the market reads it.",
+    },
+    seeAlso: [],
   },
   {
     slug: "prueba-ensayo",
@@ -1225,6 +1270,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Prueba / ensayo", en: "Proof / essay" },
     definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color. Hernández anota que las pruebas no llevan ceros y a menudo son unifaces, a diferencia del espécimen.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color. Hernández notes that proofs do not carry zeros and are often uniface, unlike a specimen." },
     seeAlso: ["specimen", "intaglio", "mariposa", "uniface", "moneda-prueba-giori", "reacunacion"],
+  },
+  {
+    slug: "pvc",
+    id: "pvc",
+    category: "Conservación",
+    title: { es: "PVC (policloruro de vinilo)", en: "PVC (polyvinyl chloride)" },
+    definition: {
+      es: "Plástico flexible —policloruro de vinilo, también llamado cloruro de polivinilo— de muchas fundas y álbumes baratos. Para ablandarse lleva plastificantes que, con el tiempo y con cambios de temperatura y humedad, exudan: dejan un residuo verdoso y ácido sobre las monedas y degradan la tinta y el papel de los billetes.",
+      en: "A flexible plastic — polyvinyl chloride — used in many inexpensive sleeves and albums. To stay soft it carries plasticizers that, over time and with swings of temperature and humidity, exude: they leave a green, acidic residue on coins and degrade the ink and paper of banknotes.",
+    },
+    seeAlso: ["poliester-mylar", "libre-de-acido", "marcas-de-funda-de-album", "patina"],
   },
   {
     slug: "quetzal",
