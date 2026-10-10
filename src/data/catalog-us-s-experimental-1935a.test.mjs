@@ -17,7 +17,7 @@ const enPiece = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '1-dolar-experimental-s-1935a'");
-const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1957b'");
+const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1935c-estrella'");
 const note = data.slice(noteStart, noteEnd);
 const printedStart = note.indexOf('printed:');
 const printed = note.slice(printedStart, note.indexOf('facts:', printedStart));
