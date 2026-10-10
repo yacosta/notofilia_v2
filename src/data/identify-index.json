@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T12:38:11.860Z",
+  "generatedAt": "2026-10-10T14:35:27.679Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4876,6 +4876,45 @@
       "title": {
         "es": "1 dólar · Experimental S · Serie 1935 A",
         "en": "$1 · S experimental · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935c-estrella",
+      "face": "front",
+      "hash": "00e99c00006d6100",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935c-estrella/",
+      "pick": "Fr. 1612★",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-composite.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 C ★",
+        "en": "$1 · Silver Certificate · Series 1935 C ★"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935c-estrella",
+      "face": "front",
+      "hash": "006b8e26cbdeb200",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935c-estrella/",
+      "pick": "Fr. 1612★",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-front.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 C ★",
+        "en": "$1 · Silver Certificate · Series 1935 C ★"
+      }
+    },
+    {
+      "pieceId": "1-dolar-certificado-plata-1935c-estrella",
+      "face": "back",
+      "hash": "00a871716571f000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-certificado-plata-1935c-estrella/",
+      "pick": "Fr. 1612★",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-back.jpg",
+      "title": {
+        "es": "1 dólar · Certificado de plata · Serie 1935 C ★",
+        "en": "$1 · Silver Certificate · Series 1935 C ★"
       }
     },
     {

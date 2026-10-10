@@ -325,6 +325,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/1-dollar-silver-certificate-1935a/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/1-dolar-certificado-plata-1935c-estrella/', 'en'),
+      '/en/collection/united-states/1-dollar-silver-certificate-1935c-star/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/', 'en'),
       '/en/collection/united-states/1-dollar-state-bank-new-brunswick/',
     );
