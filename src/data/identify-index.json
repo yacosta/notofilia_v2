@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T10:50:10.244Z",
+  "generatedAt": "2026-10-10T11:29:07.433Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3319,6 +3319,45 @@
       }
     },
     {
+      "pieceId": "medalla-1836-primera-acunacion-vapor",
+      "face": "front",
+      "hash": "00737755b7516300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/medalla-1836-primera-acunacion-a-vapor/",
+      "pick": "Julian MT-21 · PCGS #783671 · Smithsonian 1991.0009.0520",
+      "image": "/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-composite.jpg",
+      "title": {
+        "es": "Medalla · Primera acuñación a vapor · 1836",
+        "en": "Medal · First steam coinage · 1836"
+      }
+    },
+    {
+      "pieceId": "medalla-1836-primera-acunacion-vapor",
+      "face": "front",
+      "hash": "0006551929131a00",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/medalla-1836-primera-acunacion-a-vapor/",
+      "pick": "Julian MT-21 · PCGS #783671 · Smithsonian 1991.0009.0520",
+      "image": "/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-front.jpg",
+      "title": {
+        "es": "Medalla · Primera acuñación a vapor · 1836",
+        "en": "Medal · First steam coinage · 1836"
+      }
+    },
+    {
+      "pieceId": "medalla-1836-primera-acunacion-vapor",
+      "face": "back",
+      "hash": "001a756d35171600",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/medalla-1836-primera-acunacion-a-vapor/",
+      "pick": "Julian MT-21 · PCGS #783671 · Smithsonian 1991.0009.0520",
+      "image": "/images/catalog/united-states/united-states-mint-medal-1836-first-steam-coinage-mt-21-back.jpg",
+      "title": {
+        "es": "Medalla · Primera acuñación a vapor · 1836",
+        "en": "Medal · First steam coinage · 1836"
+      }
+    },
+    {
       "pieceId": "5-dolares-continental-1779",
       "face": "front",
       "hash": "2035254884070788",
@@ -4681,6 +4720,45 @@
       "title": {
         "es": "1 dólar · Sello amarillo · Serie 1935 A",
         "en": "$1 · Yellow seal · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "front",
+      "hash": "00e8aa0000232300",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-composite.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "front",
+      "hash": "0025332caa865500",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-front.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
+      }
+    },
+    {
+      "pieceId": "1-dolar-experimental-s-1935a",
+      "face": "back",
+      "hash": "00e83b4aa151f200",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/1-dolar-experimental-s-1935a/",
+      "pick": "Fr. 1610",
+      "image": "/images/catalog/united-states/united-states-treasury-1-dollar-series-1935a-silver-certificate-s-experimental-s74796042c-back.jpg",
+      "title": {
+        "es": "1 dólar · Experimental S · Serie 1935 A",
+        "en": "$1 · S experimental · Series 1935 A"
       }
     },
     {
