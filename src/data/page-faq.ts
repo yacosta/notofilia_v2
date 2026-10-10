@@ -251,8 +251,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the blue-seal Series 1935A $1 Silver Certificate?',
       },
       answer: {
-        es: 'Es un certificado de plata ordinario, P#416a (Fr. 1608), firmas Julian–Morgenthau, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial V94411136B, bloque V–B, se numeró entre el 27 de enero y el 3 de marzo de 1942. Circulada, sin encapsular. No es el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el experimental S Fr. 1610, serial S74796042C, ni el sello amarillo Fr. 2306, serial C78095129C.',
-        en: 'It is an ordinary Silver Certificate, P#416a (Fr. 1608), Julian–Morgenthau signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. Series 1935A names the type, not the numbering year: this piece, serial V94411136B, V–B block, was numbered between 27 January and 3 March 1942. Circulated, unslabbed. It is not the HAWAII Fr. 2300, serial S40499058C, the yellow seal Fr. 2306, serial B52497547C, the S experimental Fr. 1610, serial S74796042C, or the yellow seal Fr. 2306, serial C78095129C.',
+        es: 'Es un certificado de plata ordinario, P#416a (Fr. 1608), firmas Julian–Morgenthau, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La serie 1935 A nombra el tipo, no el año de numeración: este ejemplar, serial V94411136B, bloque V–B, se numeró entre el 27 de enero y el 3 de marzo de 1942. Circulada, sin encapsular. No es el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el experimental S Fr. 1610, serial S74796042C, ni el sello amarillo Fr. 2306, serial C78095129C, ni la estrella serie 1935 C, Fr. 1612★, serial ★25885207B.',
+        en: 'It is an ordinary Silver Certificate, P#416a (Fr. 1608), Julian–Morgenthau signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. Series 1935A names the type, not the numbering year: this piece, serial V94411136B, V–B block, was numbered between 27 January and 3 March 1942. Circulated, unslabbed. It is not the HAWAII Fr. 2300, serial S40499058C, the yellow seal Fr. 2306, serial B52497547C, the S experimental Fr. 1610, serial S74796042C, the yellow seal Fr. 2306, serial C78095129C, or the Series 1935C star, Fr. 1612★, serial ★25885207B.',
       },
     },
     {
@@ -267,12 +267,22 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 1 dólar certificado de plata serie 1935 C con estrella?',
+        en: 'What is the Series 1935C $1 Silver Certificate star note?',
+      },
+      answer: {
+        es: 'Es un certificado de plata de reposición, P#416c (Fr. 1612★), firmas Julian–Snyder, sello y seriales azules, reverso del Gran Sello sin IN GOD WE TRUST. La estrella abre el serial; la B final es la letra de bloque, no un distrito de la Reserva. La serie 1935 C nombra el tipo, no el año de este ejemplar: serial ★25885207B, bloque ★–B, posición G, plancha de anverso G5965 y reverso 4088. Circulada, sin encapsular. No es el Fr. 1608, serial V94411136B, ni el experimental S Fr. 1610, serial S74796042C, ni el HAWAII Fr. 2300, serial S40499058C.',
+        en: 'It is a replacement Silver Certificate, P#416c (Fr. 1612★), Julian–Snyder signatures, blue seal and serials, and a Great Seal back with no IN GOD WE TRUST. The star opens the serial; the final B is the block letter, not a Reserve district. Series 1935C names the type, not the year of this example: serial ★25885207B, ★–B block, position G, face plate G5965 and back plate 4088. Circulated, unslabbed. It is not Fr. 1608, serial V94411136B, the S experimental Fr. 1610, serial S74796042C, or the HAWAII Fr. 2300, serial S40499058C.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué es el 1 dólar experimental S serie 1935 A?',
         en: 'What is the Series 1935A S-experimental $1?',
       },
       answer: {
-        es: 'Es un certificado de plata, P#416AS (Fr. 1610), firmas Julian–Morgenthau, sello y seriales azules y una S roja abajo a la derecha. La S nombra el papel especial del ensayo de 1944; la R, Fr. 1609, el papel corriente. La serie 1935 A nombra el tipo. Este ejemplar es el serial S74796042C, bloque S–C, en la corrida S73884001C–S75068000C, plancha de anverso L 5566 y reverso 3837. Circulada, sin encapsular. No es el P#416a sin letra roja, Fr. 1608, serial V94411136B, ni el HAWAII serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el Fr. 2306, serial C78095129C.',
-        en: 'It is a Silver Certificate, P#416AS (Fr. 1610), Julian–Morgenthau signatures, a blue seal and blue serials, and a red S at lower right. S names the special paper of the 1944 test; R, Fr. 1609, the regular paper. Series 1935A names the type. This piece is serial S74796042C, S–C block, in the run S73884001C–S75068000C, face plate L 5566 and back plate 3837. Circulated, unslabbed. It is not the P#416a with no red letter, Fr. 1608, serial V94411136B, the HAWAII note serial S40499058C, or the yellow seal Fr. 2306, serial B52497547C or serial C78095129C.',
+        es: 'Es un certificado de plata, P#416AS (Fr. 1610), firmas Julian–Morgenthau, sello y seriales azules y una S roja abajo a la derecha. La S nombra el papel especial del ensayo de 1944; la R, Fr. 1609, el papel corriente. La serie 1935 A nombra el tipo. Este ejemplar es el serial S74796042C, bloque S–C, en la corrida S73884001C–S75068000C, plancha de anverso L 5566 y reverso 3837. Circulada, sin encapsular. No es el P#416a sin letra roja, Fr. 1608, serial V94411136B, ni el HAWAII serial S40499058C, ni el sello amarillo Fr. 2306, serial B52497547C, ni el Fr. 2306, serial C78095129C, ni la estrella serie 1935 C, Fr. 1612★, serial ★25885207B.',
+        en: 'It is a Silver Certificate, P#416AS (Fr. 1610), Julian–Morgenthau signatures, a blue seal and blue serials, and a red S at lower right. S names the special paper of the 1944 test; R, Fr. 1609, the regular paper. Series 1935A names the type. This piece is serial S74796042C, S–C block, in the run S73884001C–S75068000C, face plate L 5566 and back plate 3837. Circulated, unslabbed. It is not the P#416a with no red letter, Fr. 1608, serial V94411136B, the HAWAII note serial S40499058C, the yellow seal Fr. 2306, serial B52497547C or serial C78095129C, or the Series 1935C star, Fr. 1612★, serial ★25885207B.',
       },
     },
     {

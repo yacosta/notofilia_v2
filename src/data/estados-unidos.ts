@@ -213,8 +213,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Certificates payable in Treasury silver, the North Africa yellow seal, and HAWAII overprints.',
     },
     body: {
-      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth, el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura, y el 5 dólares con la Electricidad presentando la luz al mundo. No son Treasury Notes. Ya tiene ficha el 1 dólar Educational Series, Fr. 224, serial B3207078, firmas Tillman–Morgan. Ya tiene ficha el 2 dólares Educational Series, Fr. 247, serial 1712091, plancha C, firmas Tillman–Morgan. Ya tiene ficha el 5 dólares Educational Series, Fr. 270, serial 31528195, plancha C, firmas Lyons–Roberts. El 1 dólar de tamaño pequeño serie 1928 —Fr. 1600, reverso Funnyback, firmas Tate–Mellon— ya tiene ficha, serial H86110669A. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. Ya tiene ficha el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, bloque B–C, segunda corrida de África del Norte de ese bloque. Ya tiene ficha el mismo tipo, serial C78095129C, bloque C–C, segunda corrida de sello amarillo de ese bloque. Ya tiene ficha el 1 dólar de sello azul serie 1935 A (P#416a; Fr. 1608), serial V94411136B, bloque V–B. Ya tiene ficha el 1 dólar experimental S serie 1935 A (Fr. 1610), serial S74796042C, bloque S–C. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
-      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth, the $2 with Science presenting Steam and Electricity to Commerce and Manufacture, and the $5 with Electricity presenting light to the world. Those notes are not Treasury Notes. The Educational Series $1, Fr. 224, serial B3207078, Tillman–Morgan signatures, already has a note page. The Educational Series $2, Fr. 247, serial 1712091, plate C, Tillman–Morgan signatures, already has a note page. The Educational Series $5, Fr. 270, serial 31528195, plate C, Lyons–Roberts signatures, already has a note page. The small-size Series 1928 $1 — Fr. 1600, Funnyback reverse, Tate–Mellon signatures — already has a note page, serial H86110669A. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, B–C block, the second North Africa run in that block, already has a note page. The same type, serial C78095129C, C–C block, the second yellow-seal run in that block, also has a note page. The ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, V–B block, already has a note page. The Series 1935A S-experimental $1 (Fr. 1610), serial S74796042C, S–C block, already has a note page. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
+      es: 'En 1878 el Tesoro emitió Silver Certificates, autorizados por la legislación que aumentó la compra y acuñación de plata. El BEP y uscurrency.gov coinciden en esa fecha. En 1896 esa clase llevó la Educational Series: el 1 dólar con History Instructing Youth, el 2 dólares con la Ciencia presentando el Vapor y la Electricidad al Comercio y la Manufactura, y el 5 dólares con la Electricidad presentando la luz al mundo. No son Treasury Notes. Ya tiene ficha el 1 dólar Educational Series, Fr. 224, serial B3207078, firmas Tillman–Morgan. Ya tiene ficha el 2 dólares Educational Series, Fr. 247, serial 1712091, plancha C, firmas Tillman–Morgan. Ya tiene ficha el 5 dólares Educational Series, Fr. 270, serial 31528195, plancha C, firmas Lyons–Roberts. El 1 dólar de tamaño pequeño serie 1928 —Fr. 1600, reverso Funnyback, firmas Tate–Mellon— ya tiene ficha, serial H86110669A. El 1 dólar de tamaño pequeño serie 1928 A —Fr. 1601, reverso Funnyback— ya tiene ficha, serial D00508932B. En 1935, el anverso y el reverso del Gran Sello de Estados Unidos aparecieron juntos por primera vez en el 1 dólar de esta clase. Durante la Segunda Guerra Mundial, el BEP imprimió certificados de plata y billetes de la Reserva Federal con sobrecarga HAWAII, sello y seriales marrones, para poder declararlos sin valor si el archipiélago caía. Ya tiene ficha el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, certificado PMG 1505944-014. Ya tiene ficha el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, bloque B–C, segunda corrida de África del Norte de ese bloque. Ya tiene ficha el mismo tipo, serial C78095129C, bloque C–C, segunda corrida de sello amarillo de ese bloque. Ya tiene ficha el 1 dólar de sello azul serie 1935 A (P#416a; Fr. 1608), serial V94411136B, bloque V–B. Ya tiene ficha el 1 dólar experimental S serie 1935 A (Fr. 1610), serial S74796042C, bloque S–C. Ya tiene ficha el 1 dólar de sello azul serie 1935 C con estrella de reposición (P#416c; Fr. 1612★), serial ★25885207B, bloque ★–B, firmas Julian–Snyder. El canje en plata terminó en 1968. También tiene ficha el 1 dólar certificado de plata serie 1957 B, serial S35513454A.',
+      en: 'In 1878 the Treasury issued Silver Certificates, authorized by legislation that increased the purchase and coinage of silver. The BEP and uscurrency.gov agree on that date. In 1896 that class carried the Educational Series: the $1 with History Instructing Youth, the $2 with Science presenting Steam and Electricity to Commerce and Manufacture, and the $5 with Electricity presenting light to the world. Those notes are not Treasury Notes. The Educational Series $1, Fr. 224, serial B3207078, Tillman–Morgan signatures, already has a note page. The Educational Series $2, Fr. 247, serial 1712091, plate C, Tillman–Morgan signatures, already has a note page. The Educational Series $5, Fr. 270, serial 31528195, plate C, Lyons–Roberts signatures, already has a note page. The small-size Series 1928 $1 — Fr. 1600, Funnyback reverse, Tate–Mellon signatures — already has a note page, serial H86110669A. The small-size Series 1928A $1 — Fr. 1601, Funnyback reverse — already has a note page, serial D00508932B. In 1935 both faces of the Great Seal of the United States appeared together for the first time on the $1 of this class. During the Second World War the BEP printed silver certificates and Federal Reserve notes with a HAWAII overprint, brown seals, and brown serials, so they could be declared worthless if the islands fell. The Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, PMG certificate 1505944-014, already has a note page. The Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, B–C block, the second North Africa run in that block, already has a note page. The same type, serial C78095129C, C–C block, the second yellow-seal run in that block, also has a note page. The ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, V–B block, already has a note page. The Series 1935A S-experimental $1 (Fr. 1610), serial S74796042C, S–C block, already has a note page. The blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, ★–B block, Julian–Snyder signatures, already has a note page. Redemption in silver ended in 1968. The Series 1957-B $1 Silver Certificate, serial S35513454A, also has a note page.',
     },
   },
   {
@@ -402,7 +402,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -429,7 +429,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -1446,6 +1446,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-sello-amarillo-1935a-c78095129c'
   | '1-dolar-certificado-plata-1935a'
   | '1-dolar-experimental-s-1935a'
+  | '1-dolar-certificado-plata-1935c-estrella'
   | '1-dolar-certificado-plata-1957b'
   | '1-dolar-serie-2006-dallas-wheres-george'
   | 'billete-prueba-giori-lincoln-memorial'
@@ -6518,6 +6519,203 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Corrida S: S73884001C–S75068000C, 1.184.000. Entre R y S, certificados ordinarios S72068001C–S73884000C. Compilación de coleccionista, no un total auditado del BEP.',
           en: 'S run: S73884001C–S75068000C, 1,184,000. Between R and S, ordinary certificates S72068001C–S73884000C. A collector compilation, not an audited BEP total.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'En 1935 el anverso y el reverso del Gran Sello aparecieron juntos en el 1 dólar. Silver Certificates desde 1878.',
+          en: 'In 1935 both faces of the Great Seal appeared together on the $1. Silver Certificates from 1878.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'Certificados de plata desde 1878; canje en plata hasta 1968. Siguen siendo curso legal a la par.',
+          en: 'Silver certificates from 1878; redemption in silver until 1968. They remain legal tender at face value.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-dolar-certificado-plata-1935c-estrella',
+    chapterId: 'us-silver',
+    path: '/coleccion/estados-unidos/1-dolar-certificado-plata-1935c-estrella/',
+    pathEn: '/collection/united-states/1-dollar-silver-certificate-1935c-star/',
+    pick: 'Fr. 1612★',
+    friedberg: 'Fr. 1612★',
+    scwpm: 'P#416c',
+    serial: '★25885207B',
+    serial_display: '★ 25885207 B',
+    signatures: {
+      es: 'William Alexander Julian (tesorero de los Estados Unidos) y John W. Snyder (secretario del Tesoro)',
+      en: 'William Alexander Julian (Treasurer of the United States) and John W. Snyder (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'USPaperMoney sitúa las estrellas de la serie 1935 C en un tramo aproximado del bloque B que abre en ★12 y cierra en ★49, con dígitos intermedios sin fijar, y señala que las transiciones entre series no están fijadas. El serial ★25885207B cae en ese tramo. El BEP entregó las series 1935 a 1935 D entre noviembre de 1935 y octubre de 1953; esa ventana no es la fecha de este ejemplar. Esta ficha no publica un total oficial de estrellas de la sola serie 1935 C.',
+      en: 'USPaperMoney places Series 1935C stars in an approximate B-block span that opens at ★12 and closes at ★49, with the digits between unfixed, and notes that the series transitions are not fixed. Serial ★25885207B falls in that span. The BEP delivered Series 1935 through 1935D between November 1935 and October 1953; that window is not the date of this example. This record does not publish an official star total for Series 1935C alone.',
+    },
+    facts: [
+      {
+        label: { es: 'Posición de plancha', en: 'Plate position' },
+        value: { es: 'G', en: 'G' },
+      },
+      {
+        label: { es: 'Plancha de anverso', en: 'Face plate' },
+        value: { es: 'G5965', en: 'G5965' },
+      },
+      {
+        label: { es: 'Plancha de reverso', en: 'Back plate' },
+        value: { es: '4088', en: '4088' },
+      },
+      {
+        label: { es: 'Impresor', en: 'Printer' },
+        value: {
+          es: 'Bureau of Engraving and Printing',
+          en: 'Bureau of Engraving and Printing',
+        },
+      },
+      {
+        label: { es: 'Formato', en: 'Format' },
+        wide: true,
+        value: {
+          es: 'Tamaño pequeño (estándar de 1928). Numista N#201793 da el tipo en 156 × 67 mm; no es una medición de esta pieza',
+          en: 'Small size (1928 standard). Numista N#201793 gives the type as 156 × 67 mm; that is not a measurement of this piece',
+        },
+      },
+      {
+        label: { es: 'Sello / seriales', en: 'Seal / serials' },
+        wide: true,
+        value: {
+          es: 'Sello azul del Tesoro, seriales azules, estrella de reposición en el bloque ★–B, sin sobreimpresión',
+          en: 'Blue Treasury seal, blue serial numbers, replacement star in the ★–B block, no overprint',
+        },
+      },
+      {
+        label: { es: 'Bloque / corrida', en: 'Block / run' },
+        wide: true,
+        value: {
+          es: 'Bloque ★–B. USPaperMoney da a las estrellas 1935 C un tramo aproximado que abre en ★12 y cierra en ★49, con dígitos intermedios sin fijar',
+          en: '★–B block. USPaperMoney gives 1935C stars an approximate span that opens at ★12 and closes at ★49, with the digits between unfixed',
+        },
+      },
+      {
+        label: { es: 'Fecha de serie', en: 'Series date' },
+        wide: true,
+        value: {
+          es: '1935 C (impresa «SERIES 1935 C»). John W. Snyder fue secretario del Tesoro desde 1946. La designación de serie no es el año.',
+          en: '1935C (printed "SERIES 1935 C"). John W. Snyder was Secretary of the Treasury from 1946. The series designation is not the year.',
+        },
+      },
+    ],
+    images: {
+      composite:
+        '/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-composite.jpg',
+      front:
+        '/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-front.jpg',
+      back:
+        '/images/catalog/united-states/united-states-treasury-1-dollar-series-1935c-silver-certificate-star-25885207b-back.jpg',
+      width: 1672,
+      height: 941,
+    },
+    title: {
+      es: '1 dólar · Certificado de plata · Serie 1935 C ★',
+      en: '$1 · Silver Certificate · Series 1935 C ★',
+    },
+    kicker: {
+      es: 'Estados Unidos · Certificado de plata',
+      en: 'United States · Silver Certificate',
+    },
+    lead: {
+      es: 'Washington, sello azul y serial de reposición ★25885207B; reverso del Gran Sello, sin IN GOD WE TRUST. Serie 1935 C, Fr. 1612★, bloque ★–B. Circulada, sin encapsular.',
+      en: 'Washington, blue seal, replacement serial ★25885207B; Great Seal back, no IN GOD WE TRUST. Series 1935C, Fr. 1612★, ★–B block. Circulated, unslabbed.',
+    },
+    description: {
+      es: 'El 1 dólar certificado de plata serie 1935 C de sello azul con estrella (P#416c; Friedberg 1612★; Numista N#201793) es papel del Tesoro de los Estados Unidos, no un Federal Reserve Note. No es el 1 dólar de sello azul serie 1935 A de esta colección, Fr. 1608, serial V94411136B, ni el experimental S Fr. 1610, serial S74796042C, ni el HAWAII Fr. 2300, serial S40499058C, ni el sello amarillo Fr. 2306, seriales B52497547C y C78095129C. Las firmas son las de William Alexander Julian, tesorero, y John W. Snyder, secretario del Tesoro: esa pareja es la de Fr. 1612 y de su estrella Fr. 1612★. El anverso, en negro sobre papel crema, lleva el retrato de George Washington en óvalo, la leyenda SILVER CERTIFICATE, un 1 grande a la izquierda y, a la derecha, el sello circular azul del Tesoro sobre WASHINGTON, D.C. El texto certifica un depósito en el Tesoro y, abajo, la obligación «ONE DOLLAR / IN SILVER PAYABLE TO THE BEARER ON DEMAND». A la izquierda recuerda que el certificado es curso legal. Los seriales azules ★ 25885207 B se repiten abajo a la izquierda y arriba a la derecha (bloque ★–B). La estrella de reposición ocupa el lugar de la letra de prefijo; la B final es la letra de bloque, no un distrito de la Reserva Federal. No hay sobreimpresión. La serie impresa, SERIES 1935 C, queda junto al secretario. La letra de posición G se lee arriba a la izquierda; la marca de plancha de anverso G5965, en el margen inferior derecho. El reverso, en verde, muestra el ONE central, la pirámide inacabada y el ojo de la Providencia a la izquierda —ANNUIT COEPTIS, NOVUS ORDO SECLORUM y MDCCLXXVI— y el águila con E PLURIBUS UNUM a la derecha. El lema IN GOD WE TRUST no figura. La plancha de reverso 4088 queda abajo, hacia la derecha. Numista separa la emisión ordinaria de 1935 C de las reposiciones ★/B y ★/C; esta pieza es la reposición del bloque ★–B, no la emisión ordinaria y no el bloque ★–C. Las fotografías muestran pliegues de circulación, tono del papel, esquinas gastadas y pequeñas roturas en el borde. No se asigna un grado numérico a partir de las fotografías: el cuerpo del papel, los lavados y las reparaciones no se leen con certeza en la imagen. Esta pieza de la colección, circulada y sin encapsular, se documenta con esas fotografías.',
+      en: 'The blue-seal Series 1935C $1 Silver Certificate with a star (P#416c; Friedberg 1612★; Numista N#201793) is United States Treasury paper, not a Federal Reserve Note. It is not this collection’s blue-seal Series 1935A $1, Fr. 1608, serial V94411136B, the S experimental Fr. 1610, serial S74796042C, the HAWAII Fr. 2300, serial S40499058C, or the yellow-seal Fr. 2306 notes, serials B52497547C and C78095129C. The signatures are William Alexander Julian, Treasurer, and John W. Snyder, Secretary of the Treasury: that pairing is Fr. 1612 and its star, Fr. 1612★. The black face on cream paper carries George Washington in an oval, the legend SILVER CERTIFICATE, a large 1 at left, and, at right, the blue circular Treasury seal over WASHINGTON, D.C. The text certifies a deposit in the Treasury and, at the bottom, the obligation “ONE DOLLAR / IN SILVER PAYABLE TO THE BEARER ON DEMAND.” At left it notes that the certificate is legal tender. Blue serials ★ 25885207 B repeat at lower left and upper right (★–B block). The replacement star stands where a prefix letter would; the final B is the block letter, not a Federal Reserve district. There is no overprint. The printed series, SERIES 1935 C, sits beside the Secretary. Plate position G is read at upper left; the face-plate marking G5965 sits in the lower-right margin. The green back shows a central ONE, the unfinished pyramid and the Eye of Providence at left — ANNUIT COEPTIS, NOVUS ORDO SECLORUM, and MDCCLXXVI — and the eagle with E PLURIBUS UNUM at right. The motto IN GOD WE TRUST is absent. Back plate 4088 sits below the lettering, toward the right. Numista separates the ordinary 1935C issue from the ★/B and ★/C replacements; this piece is the ★–B replacement, not the ordinary issue and not the ★–C block. The photographs show circulation folds, paper toning, worn corners, and small edge splits. No numerical grade is assigned from the photographs: paper body, washing, and repairs cannot be read with certainty from the image. This collection piece, circulated and unslabbed, is documented by those photographs.',
+    },
+    history: [
+      {
+        es: 'La serie 1935 C cambia el par de firmas a Julian–Snyder. John W. Snyder ocupó la secretaría del Tesoro de 1946 a 1953: la serie impresa es la designación de la emisión, no el año en que se numeró ★25885207B. Las fotografías no fijan la fecha de impresión de este ejemplar. USPaperMoney sitúa las entregas de las series 1935 a 1935 D entre noviembre de 1935 y octubre de 1953, y advierte que las series se mezclaban antes de numerar.',
+        en: 'Series 1935C changes the signature pair to Julian–Snyder. John W. Snyder was Secretary of the Treasury from 1946 to 1953: the printed series is the issue designation, not the year ★25885207B was numbered. The photographs do not fix the printing date of this example. USPaperMoney places deliveries of Series 1935 through 1935D between November 1935 and October 1953, and notes that series were mixed before numbering.',
+      },
+      {
+        es: 'La estrella marca un billete de reposición, usado para sustituir una pieza defectuosa en la fabricación; no es por sí misma un error de impresión. En el certificado de plata de tamaño pequeño la estrella abre el número y la letra final nombra el bloque. El reverso conserva las dos caras del Gran Sello, sin IN GOD WE TRUST: ese lema llega al 1 dólar con la serie 1957, que en esta colección es el Fr. 1621, serial S35513454A. El canje en plata terminó en 1968; el papel sigue siendo curso legal a la par. Esta ficha es el ejemplar documentado de Fr. 1612★: serial ★25885207B, no una ilustración de tipo.',
+        en: 'The star marks a replacement note, used to stand in for a faulty piece pulled in manufacture; it is not itself a printing error. On the small-size silver certificate the star opens the number and the final letter names the block. The back keeps both faces of the Great Seal, without IN GOD WE TRUST: that motto reaches the $1 with Series 1957, which in this collection is Fr. 1621, serial S35513454A. Redemption in silver ended in 1968; the paper remains legal tender at face value. This page is the documented Fr. 1612★ example: serial ★25885207B, not a type illustration.',
+      },
+    ],
+    historyHeading: {
+      es: 'Reposición con estrella',
+      en: 'Star replacement',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 dólar certificado de plata serie 1935 C, serial de reposición ★25885207B: Washington, sello azul del Tesoro, posición G y plancha G5965.',
+      en: 'Face of the Series 1935C $1 Silver Certificate, replacement serial ★25885207B: Washington, the blue Treasury seal, position G, and plate G5965.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 dólar certificado de plata serie 1935 C: ONE, la pirámide y el águila, sin IN GOD WE TRUST. Plancha de reverso 4088.',
+      en: 'Back of the Series 1935C $1 Silver Certificate: ONE, the pyramid, and the eagle, with no IN GOD WE TRUST. Reverse plate 4088.',
+    },
+    scarcity: {
+      es: 'Fr. 1612★ es la estrella del 1 dólar serie 1935 C de sello azul, firmas Julian–Snyder. Numista la registra como P#416c, reposición ★/B, distinta de la emisión ordinaria y de la reposición ★/C. El contador 25885207 es ordinario: no es un serial bajo, ni un radar, ni un binario. La estrella identifica la reposición; no convierte el número en una numeración especial. USPaperMoney da a esas estrellas un tramo aproximado que abre en ★12 y cierra en ★49, y deja sin fijar las transiciones de serie. Ese tramo no es un total oficial. Esta ficha no republica precios y no publica un censo certificado.',
+      en: 'Fr. 1612★ is the star of the blue-seal Series 1935C $1, Julian–Snyder signatures. Numista records it as P#416c, a ★/B replacement, apart from the ordinary issue and the ★/C replacement. The counter 25885207 is ordinary: not a low serial, not a radar, and not binary. The star identifies the replacement; it does not make the number a fancy serial. USPaperMoney gives those stars an approximate span that opens at ★12 and closes at ★49, and leaves the series transitions unfixed. That span is not an official total. This record does not republish prices and does not publish a certified census.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial ★25885207B, ni una aparición previa en subasta de este serial. Un censo de casa de certificación contaría envíos encapsulados, no todos los ejemplares que sobreviven. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial ★25885207B has not been independently verified, nor has an earlier auction appearance of this serial. A grading-service census would count certified submissions, not every surviving example. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular; el estado se documenta en las fotografías (colección privada)',
+      en: 'Circulated, unslabbed; condition documented by the supplied photographs (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/201793',
+        es: 'Numista N#201793 — 1 dólar, certificado de plata, sello azul, sin lema',
+        en: 'Numista N#201793 — $1 Silver Certificate, blue seal, no motto',
+        note: {
+          es: 'P#416c y Fr. 1612: serie 1935 C, firmas Julian–Snyder. La fila de reposición ★/B es la de este ejemplar; la ★/C es otro bloque. El tipo mide 156 × 67 mm en esa ficha. No se republican las columnas de precio.',
+          en: 'P#416c and Fr. 1612: Series 1935C, Julian–Snyder signatures. The ★/B replacement row is this example; ★/C is another block. That page gives the type as 156 × 67 mm. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/USA/USA-SILVER/USA0416.htm',
+        es: 'Bank Note Museum — P-416, certificado de plata de 1 dólar, series 1935–1935G',
+        en: 'Bank Note Museum — P-416, $1 Silver Certificate, Series 1935–1935G',
+        note: {
+          es: '416c es el 1935 C, firmas Julian–Snyder. No es el 416a de 1935 A.',
+          en: '416c is the 1935C, Julian–Snyder signatures. It is not the 1935A 416a.',
+        },
+      },
+      {
+        href: 'https://www.uspapermoney.info/serials/s1935zs.html',
+        es: 'USPaperMoney.Info — series 1935–1935D, rangos de serial',
+        en: 'USPaperMoney.Info — Series 1935–1935D serial ranges',
+        note: {
+          es: 'Las estrellas de 1935 C quedan en un tramo aproximado del bloque B, de ★12 a ★49, con dígitos sin fijar. Las transiciones de serie en las estrellas no están cerradas. Entregas de 1935 a 1935 D: noviembre de 1935 a octubre de 1953.',
+          en: '1935C stars fall in an approximate B-block span, from ★12 to ★49, with digits unfixed. Series transitions among the stars are not closed. Deliveries of Series 1935 through 1935D: November 1935 to October 1953.',
+        },
+      },
+      {
+        href: 'https://www.uspapermoney.info/general/number.html',
+        es: 'USPaperMoney.Info — cómo se numera el papel estadounidense',
+        en: 'USPaperMoney.Info — how United States paper is numbered',
+        note: {
+          es: 'En esta época la estrella sustituye la letra de prefijo en el certificado de plata. La letra final nombra el bloque. No es un distrito de la Reserva Federal.',
+          en: 'In this period the star replaces the prefix letter on the silver certificate. The final letter names the block. It is not a Federal Reserve district.',
+        },
+      },
+      {
+        href: 'https://home.treasury.gov/about/history/prior-secretaries/john-w-snyder-1946-1953',
+        es: 'Departamento del Tesoro — John W. Snyder (1946–1953)',
+        en: 'U.S. Department of the Treasury — John W. Snyder (1946–1953)',
+        note: {
+          es: 'Snyder fue secretario del Tesoro de 1946 a 1953. La serie impresa 1935 C no es el año de fabricación.',
+          en: 'Snyder was Secretary of the Treasury from 1946 to 1953. Printed Series 1935C is not the year of manufacture.',
         },
       },
       {
