@@ -8,6 +8,7 @@ import {
   WWII_HOLDING_GROUPS,
   WWII_HOLDING_NOTE_IDS,
   WWII_NORTH_AFRICA_NOTE_IDS,
+  WWII_YELLOW_SEAL_CC_NOTE_ID,
   WWII_YELLOW_SEAL_NOTE_ID,
   wwiiEmergencyCopy,
   wwiiEmergencyDedicatedSlugs,
@@ -187,7 +188,10 @@ describe('WWII emergency banknotes series page', () => {
       '10-dolares-serie-1934a-hawaii',
       '20-dolares-serie-1934a-hawaii',
     ]);
-    assert.deepEqual([...WWII_NORTH_AFRICA_NOTE_IDS], [WWII_YELLOW_SEAL_NOTE_ID]);
+    assert.deepEqual([...WWII_NORTH_AFRICA_NOTE_IDS], [
+      WWII_YELLOW_SEAL_NOTE_ID,
+      WWII_YELLOW_SEAL_CC_NOTE_ID,
+    ]);
     assert.deepEqual([...WWII_HOLDING_NOTE_IDS], [
       ...WWII_HAWAII_NOTE_IDS,
       ...WWII_NORTH_AFRICA_NOTE_IDS,

@@ -219,6 +219,7 @@ export const additions: Holding[] = [
   { id: 'lr-1997-20-dollars-dragon-hong-kong', kind: 'coin', country: 'LR' },
   { id: 'co-1977-500-pesos-oro-038064123', kind: 'banknote', country: 'CO' },
   { id: 'us-medalla-1836-primera-acunacion-vapor', kind: 'coin', country: 'US' },
+  { id: 'us-sc-1935a-yellow-seal-c78095129c', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -364,6 +365,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'lr-1997-20-dollars-hong-kong-handover' },
   { id: 'co-1977-500-pesos-oro-p420a' },
   { id: 'us-1836-medalla-j-mt-21' },
+  { id: 'us-sc-1935a-yellow-seal-fr2306-c78095129c' },
 ];
 
 export type CollectionStats = {
