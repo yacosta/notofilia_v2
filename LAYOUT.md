@@ -51,7 +51,7 @@ Text-only and mixed pages:
 - `CollectionHubPage.astro`: museum case (`max-w-content` + `--page-gutter`). Hub intro and the collection cards share that column. Do not recap the intro at `46rem`.
 - `ColombiaBancaLibrePage.astro`: museum case (`max-w-content` + `--page-gutter`) so the regional tables share the Colombia series column. Keep only the lead under the `h1` at `max-w-[46rem]`.
 - `GioriTestNotesPage.astro`: series photo hero, then museum case (`max-w-content` + `--page-gutter`) so the three-column type cards, tables, and body share the Notafilia column. Keep only the lead under the hero at `max-w-[46rem]`.
-- `EditorialArticlePage.astro`: `max-w-[46rem]` on the article is correct.
+- `EditorialArticlePage.astro`: `max-w-[46rem]` on a text article is correct. An article with `wide: true` uses the museum case (`max-w-content`). Keep only the dek at `max-w-[46rem]`. The figure, the claim, and the body share that column. Do not recap the body at `46rem` under the figure.
 - `EditorialIndexPage.astro`: a `46rem` header above a wider index is fine.
 - Stubs and the 404 page may stay at `720px`.
 
@@ -85,7 +85,7 @@ The post-image narrative cap is removed on:
 - `ColombiaNotePage.astro`
 - `NetherlandsCoinPage.astro`
 
-Keep `max-w-[46rem]` on each piece page’s lead. Series index pages already use `max-w-content` without a second cap. `CollectionHubPage.astro` (`/coleccion/`, `/en/collection/`) uses the same museum case: intro and collection cards share the article column, with no `46rem` recap on the hub copy. About uses `max-w-content` after the color-block hero (hero lead ~`640px`). Leave editorial articles and stubs on a reading column.
+Keep `max-w-[46rem]` on each piece page’s lead. Series index pages already use `max-w-content` without a second cap. `CollectionHubPage.astro` (`/coleccion/`, `/en/collection/`) uses the same museum case: intro and collection cards share the article column, with no `46rem` recap on the hub copy. About uses `max-w-content` after the color-block hero (hero lead ~`640px`). Leave ordinary editorial articles and stubs on a reading column. A `wide` editorial article follows the museum case, with only the dek held at `46rem`.
 
 ## Check
 
