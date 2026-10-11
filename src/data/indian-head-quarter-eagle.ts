@@ -24,7 +24,7 @@ export const indianHeadQuarterEagleCopy = {
     metaDescription:
       'El cuarto de águila Indian Head (1908–1929): diseño incuso de Bela Lyon Pratt, tiradas, la 1911-D y el cierre de 1929. En esta colección, los ejemplares de Filadelfia de 1908 y 1912.',
     title: 'El cuarto de águila Indian Head (1908–1929)',
-    kicker: 'Oro de 2,50 dólares · diseño incuso',
+    kicker: 'Oro de 2½ dólares · diseño incuso',
     lead:
       'El cuarto de águila de Bela Lyon Pratt, acuñado de 1908 a 1915 y de 1925 a 1929. El retrato y el águila van hundidos en el campo. Esta colección guarda los ejemplares de Filadelfia de 1908 y de 1912, sueltos y sin marca de ceca.',
     published: '2026-10-11',
@@ -53,7 +53,7 @@ export const indianHeadQuarterEagleCopy = {
     metaDescription:
       'The Indian Head quarter eagle (1908–1929): Bela Lyon Pratt’s incuse design, mintages, the 1911-D, and the 1929 close. This collection holds the unslabbed Philadelphia pieces of 1908 and 1912.',
     title: 'The Indian Head Quarter Eagle (1908–1929)',
-    kicker: '$2.50 gold · incuse design',
+    kicker: '$2½ gold · incuse design',
     lead:
       'Bela Lyon Pratt’s quarter eagle, struck from 1908 to 1915 and from 1925 to 1929. The portrait and the eagle sit below the field. This collection holds the Philadelphia pieces of 1908 and 1912, raw and without a mint mark.',
     published: '2026-10-11',
@@ -86,8 +86,8 @@ export const indianHeadQuarterEagleSources: CatalogSource[] = [
   },
   {
     href: 'https://www.ngccoin.com/coin-explorer/united-states/gold-quarter-eagles/indian-head-2.50-1908-1929/',
-    es: 'NGC Coin Explorer — Indian Head $2.50 (1908–1929)',
-    en: 'NGC Coin Explorer — Indian Head $2.50 (1908–1929)',
+    es: 'NGC Coin Explorer — Indian Head $2½ (1908–1929)',
+    en: 'NGC Coin Explorer — Indian Head $2½ (1908–1929)',
   },
   {
     href: 'https://coinweek.com/indian-head-quarter-eagle-1908-1929-collectors-guide/',
@@ -100,13 +100,13 @@ export const indianHeadQuarterEagleSources: CatalogSource[] = [
   },
   {
     href: 'https://www.pcgs.com/coinfacts/category/indian-2-5-1908-1929/759',
-    es: 'PCGS CoinFacts — Indian $2.50, 1908–1929',
-    en: 'PCGS CoinFacts — Indian $2.50, 1908–1929',
+    es: 'PCGS CoinFacts — Indian $2½, 1908–1929',
+    en: 'PCGS CoinFacts — Indian $2½, 1908–1929',
   },
   {
     href: 'https://www.pcgs.com/coinfacts/coin/1908-2-50/7939',
-    es: 'PCGS CoinFacts — 1908 $2.50, acuñación de circulación (7939)',
-    en: 'PCGS CoinFacts — 1908 $2.50, regular strike (7939)',
+    es: 'PCGS CoinFacts — 1908 $2½, acuñación de circulación (7939)',
+    en: 'PCGS CoinFacts — 1908 $2½, regular strike (7939)',
     note: {
       es: 'Tirada de circulación 564.821. Stack’s Bowers publica 565.057 para el mismo año. Esta página no elige.',
       en: 'Circulation mintage 564,821. Stack’s Bowers publishes 565,057 for the same year. This page does not choose.',
@@ -137,8 +137,8 @@ export const indianHeadQuarterEagleSources: CatalogSource[] = [
   },
   {
     href: 'https://www.pcgs.com/coinfacts/coin/1911-d-2-50/7943',
-    es: 'PCGS CoinFacts — 1911-D $2.50 (7943)',
-    en: 'PCGS CoinFacts — 1911-D $2.50 (7943)',
+    es: 'PCGS CoinFacts — 1911-D $2½ (7943)',
+    en: 'PCGS CoinFacts — 1911-D $2½ (7943)',
     note: {
       es: 'Registra un único MS66+ como el más fino conocido. Sin precio de Heritage en esta página.',
       en: 'Records a single MS66+ as the finest known. No Heritage price on this page.',
@@ -156,8 +156,8 @@ export const indianHeadQuarterEagleSources: CatalogSource[] = [
   },
   {
     href: 'https://www.pcgs.com/coinfacts/coin/1929-2-50/7953',
-    es: 'PCGS CoinFacts — 1929 $2.50 (7953)',
-    en: 'PCGS CoinFacts — 1929 $2.50 (7953)',
+    es: 'PCGS CoinFacts — 1929 $2½ (7953)',
+    en: 'PCGS CoinFacts — 1929 $2½ (7953)',
   },
   {
     href: 'https://en.wikipedia.org/wiki/Executive_Order_6102',
@@ -175,8 +175,8 @@ export const indianHeadQuarterEagleSources: CatalogSource[] = [
   },
   {
     href: 'https://www.pcgs.com/prices/detail/indian-2-5/759/most-active',
-    es: 'PCGS Price Guide — Indian $2.50 (cifras de guía, no martillos)',
-    en: 'PCGS Price Guide — Indian $2.50 (guide figures, not hammers)',
+    es: 'PCGS Price Guide — Indian $2½ (cifras de guía, no martillos)',
+    en: 'PCGS Price Guide — Indian $2½ (guide figures, not hammers)',
   },
   {
     href: 'https://learn.apmex.com/learning-guide/history/who-was-bela-lyon-pratt/',

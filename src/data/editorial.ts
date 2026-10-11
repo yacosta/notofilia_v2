@@ -310,8 +310,8 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     en: '1 dollar · American Silver Eagle · 1988',
   },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
-    es: '2,50 dólares · Liberty Head · 1878',
-    en: '2.50 dollars · Liberty Head · 1878',
+    es: '2½ dólares · Liberty Head · 1878',
+    en: '2½ dollars · Liberty Head · 1878',
   },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
     es: '2½ dólares · United States Mint · 1912',

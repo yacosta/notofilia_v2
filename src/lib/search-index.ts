@@ -547,7 +547,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: indianHeadQuarterEagleCopy.en.metaDescription,
       },
       extra:
-        'Indian Head quarter eagle 1908 1929 Bela Lyon Pratt incuse 2.50 quarter eagle 1911-D 1929 Executive Order 6102 Philadelphia Denver',
+        'Indian Head quarter eagle 1908 1929 Bela Lyon Pratt incuse 2.50 2½ quarter eagle 1911-D 1929 Executive Order 6102 Philadelphia Denver',
     },
     {
       href: EDUCATIONAL_SERIES_PATH,

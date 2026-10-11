@@ -403,8 +403,8 @@ describe('United States numismatics menu', () => {
     const unitedStates = numismatica?.children?.find((item) => item.id === 'us-monedas');
     const submenu = unitedStates?.children?.find((item) => item.id === 'us-quarter-eagle-liberty-head-1840-1907');
     assert.ok(submenu);
-    assert.equal(submenu.es, 'Quarter eagle Liberty Head de 2,50 dólares en oro (1840–1907)');
-    assert.equal(submenu.en, 'Liberty Head $2.50 Gold Quarter Eagle (1840–1907)');
+    assert.equal(submenu.es, 'Quarter eagle Liberty Head de 2½ dólares en oro (1840–1907)');
+    assert.equal(submenu.en, 'Liberty Head $2½ Gold Quarter Eagle (1840–1907)');
     assert.equal(submenu.href, undefined);
     assert.deepEqual(
       submenu.children?.map((item) => item.href),
