@@ -1429,6 +1429,10 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       faceWidth: 512,
       faceHeight: 576,
     },
+    heading: {
+      es: 'Cuarto de águila de 1912, cabeza de indio',
+      en: '1912 Indian Head quarter eagle',
+    },
     title: {
       es: '2,50 dólares · United States Mint · 1912',
       en: '2.50 dollars · United States Mint · 1912',
