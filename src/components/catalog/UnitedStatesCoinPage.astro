@@ -17,6 +17,11 @@ import {
   type UnitedStatesCoin,
   unitedStatesCoins,
 } from '../../data/estados-unidos-coinage';
+import {
+  INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS,
+  indianHeadQuarterEagleCopy,
+  indianHeadQuarterEaglePath,
+} from '../../data/indian-head-quarter-eagle';
 import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
@@ -223,6 +228,18 @@ const jsonCrumbs = [
           {t.historyHeading}
         </h2>
         <p class="m-0 text-[17px]/7 text-cream">{coin.history[locale]}</p>
+        {
+          (INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS as readonly string[]).includes(coin.id) ? (
+            <p class="mb-0 mt-4 text-[17px]/7">
+              <a
+                href={indianHeadQuarterEaglePath(locale)}
+                class="text-gold-light underline decoration-line-strong hover:text-cream"
+              >
+                {indianHeadQuarterEagleCopy[locale].coinLink}
+              </a>
+            </p>
+          ) : null
+        }
       </section>
 
       <section class="mt-12" aria-labelledby="scarcity-heading">

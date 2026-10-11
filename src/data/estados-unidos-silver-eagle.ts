@@ -35,7 +35,7 @@ export const silverEagleSeriesCopy = {
     seriesLink: 'Estados Unidos · Numismática',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Todavía no hay un American Silver Eagle catalogado en esta vitrina. Cada ficha —año, acabado, marca de ceca si la hay, anverso y reverso— se publicará en esta página.',
+      'Un American Silver Eagle de 1988, de inversión, sin marca de ceca y sin encapsular. Abra la ficha para el anverso, el reverso y los datos de catálogo. Las demás fichas —año, acabado y marca si la hay— se publicarán en esta página.',
     viewCoin: 'Ver la ficha',
     specTitle: 'Especificaciones del tipo',
     specIntro:
@@ -73,7 +73,7 @@ export const silverEagleSeriesCopy = {
     seriesLink: 'United States · Numismatics',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'No American Silver Eagle is catalogued in this case yet. Each record — year, finish, mint mark when there is one, obverse, and reverse — will be published on this page.',
+      'One 1988 American Silver Eagle, bullion, with no mint mark and unslabbed. Open the record for obverse, reverse, and catalog facts. Further records — year, finish, and mint mark when there is one — will be published on this page.',
     viewCoin: 'Open the coin page',
     specTitle: 'Type specifications',
     specIntro:

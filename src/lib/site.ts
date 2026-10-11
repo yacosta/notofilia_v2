@@ -68,6 +68,7 @@ import { ABOUT_PATH, ABOUT_PATH_EN, aboutDedicatedSlugs } from '../data/about';
 import { COMPARISON_PATH, COMPARISON_PATH_EN, comparisonDedicatedSlugs } from '../data/comparison';
 import { gioriTestNotesDedicatedSlugs } from '../data/giori-test-notes';
 import { educationalSeriesDedicatedSlugs } from '../data/educational-series-1896';
+import { indianHeadQuarterEagleDedicatedSlugs } from '../data/indian-head-quarter-eagle';
 import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
@@ -413,6 +414,7 @@ const dedicatedEs = [
   ...comparisonDedicatedSlugs,
   ...gioriTestNotesDedicatedSlugs,
   ...educationalSeriesDedicatedSlugs,
+  ...indianHeadQuarterEagleDedicatedSlugs,
   ...wwiiEmergencyDedicatedSlugs,
   ...contactDedicatedSlugs,
   'coleccion',

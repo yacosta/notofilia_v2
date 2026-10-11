@@ -103,12 +103,12 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
       en: 'American Silver Eagle',
     },
     lead: {
-      es: 'Onza troy de plata .999, autorizada el 9 de julio de 1985. La serie tiene página propia. Todavía no hay una ficha en esta colección.',
-      en: 'A troy ounce of .999 silver, authorized on 9 July 1985. The series has its own page. No record is in this collection yet.',
+      es: 'Onza troy de plata .999, autorizada el 9 de julio de 1985. La serie tiene página propia. Esta colección documenta un ejemplar de 1988, sin marca de ceca.',
+      en: 'A troy ounce of .999 silver, authorized on 9 July 1985. The series has its own page. This collection records a 1988 example, with no mint mark.',
     },
     body: {
-      es: 'El 9 de julio de 1985 el Título II de la Public Law 99-61 autorizó una moneda de una onza troy de plata .999, con la Libertad en el anverso y un águila en el reverso, y valor facial de un dólar. La United States Mint la acuñó por primera vez en 1986 y la mantiene en 2026. El anverso es la Walking Liberty de Adolph A. Weinman. El reverso de John Mercanti corre hasta 2021; desde mediados de ese año el reverso es el de Emily Damstra, grabado por Michael Gaudioso. La pieza de inversión no lleva marca de ceca. La página de la serie reúne las especificaciones y el lugar donde irán las fichas. Todavía no hay un American Silver Eagle catalogado. Esta página no publica precios.',
-      en: 'On 9 July 1985 Title II of Public Law 99-61 authorized a coin of one troy ounce of .999 silver, with Liberty on the obverse and an eagle on the reverse, and a face value of one dollar. The United States Mint first struck it in 1986 and still strikes it in 2026. The obverse is Adolph A. Weinman’s Walking Liberty. John Mercanti’s reverse runs through 2021; from the middle of that year the reverse is Emily Damstra’s, sculpted by Michael Gaudioso. The bullion piece carries no mint mark. The series page holds the specifications and the place where the records will go. No American Silver Eagle is catalogued yet. This page does not publish prices.',
+      es: 'El 9 de julio de 1985 el Título II de la Public Law 99-61 autorizó una moneda de una onza troy de plata .999, con la Libertad en el anverso y un águila en el reverso, y valor facial de un dólar. La United States Mint la acuñó por primera vez en 1986 y la mantiene en 2026. El anverso es la Walking Liberty de Adolph A. Weinman. El reverso de John Mercanti corre hasta 2021; desde mediados de ese año el reverso es el de Emily Damstra, grabado por Michael Gaudioso. La pieza de inversión no lleva marca de ceca. La página de la serie reúne las especificaciones y las fichas. Esta colección documenta el ejemplar de 1988. Esta página no publica precios.',
+      en: 'On 9 July 1985 Title II of Public Law 99-61 authorized a coin of one troy ounce of .999 silver, with Liberty on the obverse and an eagle on the reverse, and a face value of one dollar. The United States Mint first struck it in 1986 and still strikes it in 2026. The obverse is Adolph A. Weinman’s Walking Liberty. John Mercanti’s reverse runs through 2021; from the middle of that year the reverse is Emily Damstra’s, sculpted by Michael Gaudioso. The bullion piece carries no mint mark. The series page holds the specifications and the records. This collection records the 1988 example. This page does not publish prices.',
     },
   },
   {
@@ -245,25 +245,52 @@ export const seriesSources: CatalogSource[] = [
       en: 'Title “1836” Medal J-MT-21, First Steam Coinage Yellow Bronze Restrike. Mintage, diameter, weight, and edge: unavailable. The metal field remains copper. Prices are not republished.',
     },
   },
+  {
+    href: 'https://www.law.cornell.edu/uscode/text/31/5112',
+    es: '31 U.S.C. § 5112(e) — dólar de plata de inversión',
+    en: '31 U.S.C. § 5112(e) — silver bullion dollar',
+    note: {
+      es: '40,6 mm, 31,103 g, plata .999, canto estriado, Libertad en el anverso y un águila en el reverso. No se republican precios.',
+      en: '40.6 mm, 31.103 g, .999 silver, reeded edge, Liberty on the obverse and an eagle on the reverse. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.coinworld.com/news/us-coins/mint-foia-response-confirms-origins-of-american-eagles',
+    es: 'Coin World — tabla FOIA de la Mint sobre el American Eagle de plata (16 oct. 2020)',
+    en: 'Coin World — Mint FOIA table for the silver American Eagle (16 Oct. 2020)',
+    note: {
+      es: '1988: 755.000 en West Point y 4.249.646 en San Francisco; total 5.004.646. La fila no da cantidad de Filadelfia. No se republican precios.',
+      en: '1988: 755,000 at West Point and 4,249,646 at San Francisco; total 5,004,646. That row gives no Philadelphia quantity. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.usmint.gov/coins/coin-medal-programs/american-eagle/silver-bullion',
+    es: 'United States Mint — American Eagle de plata, emisión de inversión',
+    en: 'United States Mint — American Eagle silver bullion',
+    note: {
+      es: 'Una onza troy, 99,9 % de plata, 40,60 mm, canto estriado. Anverso de Weinman. El reverso heráldico de Mercanti se usó de 1986 a 2021. La inversión no lleva marca de ceca.',
+      en: 'One troy ounce, 99.9% silver, 40.60 mm, reeded edge. Weinman obverse. Mercanti’s heraldic reverse was used from 1986 through 2021. Bullion carries no mint mark.',
+    },
+  },
 ];
 
 export const seriesCopy = {
   es: {
     metaTitle: 'Estados Unidos · Numismática | Notofilia',
     metaDescription:
-      'Catálogo de moneda estadounidense: fichas Hard Times, la medalla de 1836, los dólares Morgan de 1883-CC, 1884-S, 1885-CC y 1893, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, y el 1 $ de 2026.',
+      'Catálogo de moneda estadounidense: fichas Hard Times, la medalla de 1836, los dólares Morgan, el dólar de oro de 1856, los cuartos de águila, el American Silver Eagle de 1988 y el 1 $ de 2026.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Hard Times, Filadelfia, el Morgan y el dólar de 2026',
     heroAlt:
       'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Estados Unidos esa historia incluye tanto la ceca de Filadelfia, creada por el Coinage Act del 2 de abril de 1792, como el cobre privado que circuló cuando esa ceca no bastó.',
-      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con la medalla de la ceca fechada 1836 —primera acuñación a vapor, Julian MT-21—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt—, con los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893 —plata .900 de George T. Morgan, marca S de San Francisco, marca CC de Carson City y el de 1893 de Filadelfia, sin marca— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
+      'Esta vitrina abre con las fichas Hard Times de 1832–1844 —exonumia del Pánico de 1837—, con la medalla de la ceca fechada 1836 —primera acuñación a vapor, Julian MT-21—, con el dólar de oro de 1856 —tipo 3 de Longacre, cabeza grande, Filadelfia—, con el quarter eagle Liberty Head de 1878 —oro de 900 milésimas, coroneta de Christian Gobrecht—, con los cuartos de águila Indian Head de 1908 y 1912 —el mismo módulo, diseño incuso de Bela Lyon Pratt—, con los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893 —plata .900 de George T. Morgan, marca S de San Francisco, marca CC de Carson City y el de 1893 de Filadelfia, sin marca— y con el módulo del dólar de latón-manganeso, el mismo cospel del Sacagawea y de los Presidential dollars, hasta el tipo del Semiquincentenario de 2026. El American Silver Eagle de 1988 es otra pieza: plata .999 de inversión, anverso de Weinman y reverso heráldico de Mercanti, sin marca de ceca. El 1 $ con retrato de Donald J. Trump no es oro de 24 quilates ni una medalla privada. El oro federal de esta vitrina es de 900 milésimas. El HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams no son centavos federales.',
       'La media águila, el águila de diez dólares, el doble águila, los centavos de la Mint y los medios dólares se añadirán a medida que se fotografíen, como en el papel de este país.',
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Siete capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el American Silver Eagle —con vitrina propia—, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893 y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Siete capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el American Silver Eagle —con vitrina propia—, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893, el 1 $ de 1776–2026 y el American Silver Eagle de 1988 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     morganChapterCta: 'Abrir la emisión original',
@@ -277,19 +304,19 @@ export const seriesCopy = {
   en: {
     metaTitle: 'United States · Numismatics | Notofilia',
     metaDescription:
-      'Catalog of United States coinage: Hard Times tokens, the 1836 medal, the 1883-CC, 1884-S, 1885-CC, and 1893 Morgan dollars, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, and the 2026 $1.',
+      'Catalog of United States coinage: Hard Times tokens, the 1836 medal, the Morgan dollars, the 1856 gold dollar, the quarter eagles, the 1988 American Silver Eagle, and the 2026 $1.',
     kicker: 'United States · Numismatics',
     title: 'Hard Times, Philadelphia, the Morgan, and the 2026 dollar',
     heroAlt:
       'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In the United States that history includes both the Philadelphia mint, created by the Coinage Act of 2 April 1792, and the private copper that circulated when that mint was not enough.',
-      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the Mint medal dated 1836 — First Steam Coinage, Julian MT-21 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — with the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars — George T. Morgan’s .900 silver, San Francisco S, Carson City CC, and the 1893 Philadelphia piece with no mint mark — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
+      'This case opens with Hard Times tokens of 1832–1844 — exonumia of the Panic of 1837 — with the Mint medal dated 1836 — First Steam Coinage, Julian MT-21 — with the 1856 gold dollar — Longacre’s Type 3, large head, Philadelphia — with the 1878 Liberty Head quarter eagle — 900-fine gold, Christian Gobrecht’s coronet — with the 1908 and 1912 Indian Head quarter eagles — the same module, Bela Lyon Pratt’s incuse design — with the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars — George T. Morgan’s .900 silver, San Francisco S, Carson City CC, and the 1893 Philadelphia piece with no mint mark — and with the manganese-brass dollar module, the same planchet as the Sacagawea and the Presidential dollars, through the 2026 Semiquincentennial type. The 1988 American Silver Eagle is a separate piece: .999 silver bullion, Weinman’s obverse and Mercanti’s heraldic reverse, with no mint mark. The $1 with Donald J. Trump’s portrait is not 24-karat gold and not a private medal. The federal gold in this case is 900 fine. The 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and John J. Adams’s HT-181 store card are not federal cents.',
       'The half eagle, the ten-dollar eagle, the double eagle, Mint cents, and half dollars will be added as they are photographed, as in this country’s paper case.',
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Seven chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the American Silver Eagle — with its own case — the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, and the 1776–2026 $1 documented in this collection.',
+      'Seven chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the American Silver Eagle — with its own case — the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, the 1776–2026 $1, and the 1988 American Silver Eagle documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     morganChapterCta: 'Open the original run',
@@ -316,7 +343,8 @@ export type UnitedStatesCoinId =
   | '1-dolar-morgan-1883-cc'
   | '1-dolar-morgan-1885-cc'
   | '1-dolar-morgan-1893'
-  | 'medalla-1836-primera-acunacion-vapor';
+  | 'medalla-1836-primera-acunacion-vapor'
+  | '1-dolar-aguila-plata-1988';
 
 export type UnitedStatesCoin = {
   id: UnitedStatesCoinId;
@@ -2294,6 +2322,153 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       },
     ],
   },
+  {
+    id: '1-dolar-aguila-plata-1988',
+    path: '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/',
+    pathEn: '/en/collection/united-states-numismatics/1-dollar-american-silver-eagle-1988/',
+    chapterId: 'american-silver-eagle',
+    year: '1988',
+    mint: {
+      es: 'Sin marca de ceca; este ejemplar no se asigna a San Francisco ni a West Point',
+      en: 'No mint mark; this example is not assigned to San Francisco or to West Point',
+    },
+    denomination: {
+      es: '1 dólar (American Silver Eagle)',
+      en: '1 dollar (American Silver Eagle)',
+    },
+    composition: {
+      es: 'Plata .999 (ley publicada del tipo; este ejemplar no se ensayó)',
+      en: 'Silver .999 (published fineness of the type; this specimen was not assayed)',
+    },
+    weight: {
+      es: '31,103 g, una onza troy (peso de tipo; este ejemplar no se pesó)',
+      en: '31.103 g, one troy ounce (type weight; this specimen was not weighed)',
+    },
+    diameter: {
+      es: '40,6 mm (medida de tipo; este ejemplar no se midió)',
+      en: '40.6 mm (type measurement; this specimen was not measured)',
+    },
+    edge: {
+      es: 'Estriado (tipo publicado; no hay foto del canto)',
+      en: 'Reeded (published type; no edge photograph)',
+    },
+    references: 'KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493',
+    grade: {
+      es: 'Sin encapsular. La fecha se lee 1988, con relieve ablandado, rayas, vetas oscuras y color desigual. No es un grado numérico.',
+      en: 'Unslabbed. The date reads 1988, with softened relief, scratches, dark streaks, and uneven color. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Struck American Silver Eagle bullion dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-composite.jpg',
+      front: '/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-front.jpg',
+      back: '/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-back.jpg',
+      width: 1672,
+      height: 941,
+      faceWidth: 1672,
+      faceHeight: 941,
+    },
+    title: {
+      es: '1 dólar · American Silver Eagle · 1988',
+      en: '1 dollar · American Silver Eagle · 1988',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Mint',
+      en: 'United States · United States Mint',
+    },
+    lead: {
+      es: 'Dólar American Silver Eagle de 1988, emisión de inversión sin marca de ceca. Plata .999 de tipo; este ejemplar no se pesó. Sin serial y sin cápsula.',
+      en: '1988 American Silver Eagle bullion dollar, with no mint mark. The type is .999 silver; this example was not weighed. No serial and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es un dólar American Silver Eagle de 1988, emisión de inversión, sin marca de ceca visible. El anverso es la Walking Liberty de Adolph A. Weinman: la Libertad avanza hacia el sol, envuelta en la bandera, con ramas en el brazo. Se leen LIBERTY e IN GOD WE TRUST. La fecha, abajo, se lee 1988 y está debilitada. El reverso es el águila heráldica de John Mercanti, con escudo, la cinta E PLURIBUS UNUM y trece estrellas. El arco dice UNITED STATES OF AMERICA y el exergo 1 OZ. FINE SILVER~ONE DOLLAR. El tipo lleva el monograma de Weinman y las iniciales JM; el desgaste de estas fotos no permite afirmar que se lean. No hay letra de ceca. El proof de 1988 lleva una S y es otra emisión: Numista le da 557.370 piezas. 31 U.S.C. § 5112(e) fija 40,6 mm, 31,103 g, plata .999 y canto estriado. PCGS 9816 imprime 31,10 g y una línea de metal de 99,93 % de plata y 0,007 % de cobre. Este disco no se pesó ni se ensayó, y el canto no está fotografiado. La pieza está suelta, sin cápsula. El dólar Morgan de esta vitrina es plata .900 de circulación; no es este módulo de una onza.',
+      en: 'This piece is a 1988 American Silver Eagle dollar, a bullion strike, with no mint mark visible. The obverse is Adolph A. Weinman’s Walking Liberty: Liberty strides toward the sun, wrapped in the flag, with branches in her arm. LIBERTY and IN GOD WE TRUST are readable. The date, at the bottom, reads 1988 and is weak. The reverse is John Mercanti’s heraldic eagle, with a shield, the banner E PLURIBUS UNUM, and thirteen stars. The arc reads UNITED STATES OF AMERICA and the exergue 1 OZ. FINE SILVER~ONE DOLLAR. The type carries Weinman’s monogram and the initials JM; the wear in these photographs does not establish that they can be read. There is no mint letter. The 1988 proof carries an S and is a different issue: Numista gives it 557,370 pieces. 31 U.S.C. § 5112(e) sets 40.6 mm, 31.103 g, .999 silver, and a reeded edge. PCGS 9816 prints 31.10 g and a metal line of 99.93% silver and 0.007% copper. This disc was not weighed or assayed, and the edge is not photographed. The piece is raw, with no holder. The Morgan dollar in this case is circulating .900 silver; it is not this one-ounce module.',
+    },
+    history: {
+      es: 'La Liberty Coin Act, Public Law 99-61 del 9 de julio de 1985, autorizó el dólar de plata de inversión. PCGS sitúa la primera acuñación el 24 de noviembre de 1986. 1988 es el tercer año. La Mint describe el anverso como la Walking Liberty de Weinman, el medio dólar de 1916 a 1947, y el reverso heráldico de Mercanti como el usado de 1986 a 2021. El águila que aterriza, de Emily Damstra, es el reverso posterior a ese cambio de 2021. La inversión no lleva marca de ceca. El 16 de octubre de 2020 Coin World publicó la tabla que la Mint entregó por FOIA: en 1988, 755.000 en West Point y 4.249.646 en San Francisco, 5.004.646 en total, sin cantidad de Filadelfia en esa fila. PCGS 9816 da la misma tirada conjunta y anota la ceca como Filadelfia. Esa casilla no atribuye este disco. Numista N# 1493 (KM# 273) reparte 1988 igual, sin marca. La estimación de supervivencia de PCGS para todos los grados es 4.900.000, rareza R-1.0: es una opinión de expertos, no un censo ni un conteo de encapsulados. Jaime Hernández, en esa ficha, llama corriente a la fecha en conjunto y escasa en MS70. Esta página no republica una población de certificados ni un precio. Sin procedencia.',
+      en: 'The Liberty Coin Act, Public Law 99-61 of 9 July 1985, authorized the silver bullion dollar. PCGS places the first striking on 24 November 1986. 1988 is the third year. The Mint describes the obverse as Weinman’s Walking Liberty, the half dollar of 1916 to 1947, and Mercanti’s heraldic reverse as the one used from 1986 through 2021. Emily Damstra’s landing eagle is the reverse after that 2021 change. Bullion carries no mint mark. On 16 October 2020 Coin World published the table the Mint released under FOIA: for 1988, 755,000 at West Point and 4,249,646 at San Francisco, 5,004,646 in all, with no Philadelphia quantity in that row. PCGS 9816 gives the same combined mintage and enters the mint as Philadelphia. That field does not attribute this disc. Numista N# 1493 (KM# 273) splits 1988 the same way, with no mint mark. PCGS’s survival estimate for all grades is 4,900,000, rarity R-1.0: an expert opinion, not a census and not a count of certified coins. Jaime Hernandez, on that page, calls the date common overall and scarce in MS70. This page does not republish a certification population or a price. No provenance.',
+    },
+    obverseLegend: {
+      es: 'LIBERTY · IN GOD WE TRUST · 1988 abajo, debilitada. Sin marca de ceca.',
+      en: 'LIBERTY · IN GOD WE TRUST · 1988 at the bottom, weak. No mint mark.',
+    },
+    reverseLegend: {
+      es: 'UNITED STATES OF AMERICA · E PLURIBUS UNUM · 1 OZ. FINE SILVER~ONE DOLLAR. Águila heráldica con escudo y trece estrellas. Sin letra de ceca.',
+      en: 'UNITED STATES OF AMERICA · E PLURIBUS UNUM · 1 OZ. FINE SILVER~ONE DOLLAR. Heraldic eagle with shield and thirteen stars. No mint letter.',
+    },
+    frontCaption: {
+      es: 'Anverso: Walking Liberty de Weinman; LIBERTY e IN GOD WE TRUST; fecha 1988 debilitada.',
+      en: 'Obverse: Weinman’s Walking Liberty; LIBERTY and IN GOD WE TRUST; weak date 1988.',
+    },
+    backCaption: {
+      es: 'Reverso: águila heráldica de Mercanti; UNITED STATES OF AMERICA; 1 OZ. FINE SILVER~ONE DOLLAR.',
+      en: 'Reverse: Mercanti’s heraldic eagle; UNITED STATES OF AMERICA; 1 OZ. FINE SILVER~ONE DOLLAR.',
+    },
+    scarcity: {
+      es: 'PCGS 9816 publica 5.004.646 piezas para la acuñación corriente de 1988. La tabla de la Mint que Coin World imprimió el 16 de octubre de 2020 reparte ese total en 4.249.646 de San Francisco y 755.000 de West Point, sin marca en el cospel y sin cantidad de Filadelfia. El proof con S es otra emisión. PCGS estima 4.900.000 supervivientes en todos los grados (R-1.0): no es un censo. No se republica una población de encapsulados ni un precio.',
+      en: 'PCGS 9816 publishes 5,004,646 pieces for the 1988 business strike. The Mint table Coin World printed on 16 October 2020 splits that total into 4,249,646 from San Francisco and 755,000 from West Point, with no mark on the planchet and no Philadelphia quantity. The proof with an S is a different issue. PCGS estimates 4,900,000 survivors in all grades (R-1.0): that is not a census. No slab population and no price are republished.',
+    },
+    certification: {
+      es: 'Sin cápsula y sin número de certificado. Las fotos muestran desgaste, rayas, vetas oscuras y color desigual; no fijan un grado ni prueban el peso o la ley. La atribución de tipo no es un certificado de autenticidad. Sin serial. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'No holder and no certification number. The photographs show wear, scratches, dark streaks, and uneven color; they fix neither a grade nor the weight or fineness. Type attribution is not a certificate of authenticity. No serial. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://www.law.cornell.edu/uscode/text/31/5112',
+        es: '31 U.S.C. § 5112(e)–(f) — dólar de plata de inversión',
+        en: '31 U.S.C. § 5112(e)–(f) — silver bullion dollar',
+        note: {
+          es: '40,6 mm; 31,103 g; plata .999; canto estriado; Libertad y águila. La venta es al valor del metal más los costos. No se republica un precio.',
+          en: '40.6 mm; 31.103 g; .999 silver; reeded edge; Liberty and an eagle. Sale is at bullion value plus costs. No price is republished.',
+        },
+      },
+      {
+        href: 'https://www.usmint.gov/coins/coin-medal-programs/american-eagle/silver-bullion',
+        es: 'United States Mint — American Eagle de plata',
+        en: 'United States Mint — American Eagle silver bullion',
+        note: {
+          es: 'Una onza troy (31,103 g), 99,9 % de plata, 40,60 mm, canto estriado, sin marca de ceca. Anverso de Weinman. Reverso heráldico de Mercanti de 1986 a 2021.',
+          en: 'One troy ounce (31.103 g), 99.9% silver, 40.60 mm, reeded edge, no mint mark. Weinman obverse. Mercanti’s heraldic reverse from 1986 through 2021.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1988-1-silver-eagle/9816',
+        es: 'PCGS CoinFacts — American Silver Eagle de 1988, 9816',
+        en: 'PCGS CoinFacts — 1988 American Silver Eagle, 9816',
+        note: {
+          es: 'Tirada 5.004.646. Diámetro 40,60 mm. Peso impreso 31,10 g. Metal impreso 99,93 % de plata y 0,007 % de cobre. Ceca anotada como Filadelfia. Supervivencia estimada 4.900.000 (R-1.0). No se republican precios ni una población de certificados.',
+          en: 'Mintage 5,004,646. Diameter 40.60 mm. Printed weight 31.10 g. Printed metal 99.93% silver and 0.007% copper. Mint entered as Philadelphia. Estimated survival 4,900,000 (R-1.0). Prices and a certification population are not republished.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/coinfacts/coin/1986-1-silver-eagle/9801',
+        es: 'PCGS CoinFacts — American Silver Eagle de 1986, 9801',
+        en: 'PCGS CoinFacts — 1986 American Silver Eagle, 9801',
+        note: {
+          es: 'Public Law 99-61, 9 de julio de 1985, y primera acuñación el 24 de noviembre de 1986. No es esta pieza. No se republican precios.',
+          en: 'Public Law 99-61, 9 July 1985, and the first striking on 24 November 1986. Not this piece. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://www.coinworld.com/news/us-coins/mint-foia-response-confirms-origins-of-american-eagles',
+        es: 'Coin World — Paul Gilkes, tabla FOIA (16 oct. 2020)',
+        en: 'Coin World — Paul Gilkes, FOIA table (16 Oct. 2020)',
+        note: {
+          es: '1988: West Point 755.000 y San Francisco 4.249.646; total 5.004.646. Sin cantidad de Filadelfia en esa fila. No se republican precios.',
+          en: '1988: West Point 755,000 and San Francisco 4,249,646; total 5,004,646. No Philadelphia quantity in that row. Prices are not republished.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/1493',
+        es: 'Numista — N# 1493, American Silver Eagle, KM# 273',
+        en: 'Numista — N# 1493, American Silver Eagle, KM# 273',
+        note: {
+          es: 'Tipo 1986–2021. Peso 31,103 g; diámetro 40,6 mm; plata .999. 1988 sin marca: 4.249.646 en San Francisco y 755.000 en West Point. El proof 1988 S figura en 557.370. No se republican precios.',
+          en: 'Type of 1986–2021. Weight 31.103 g; diameter 40.6 mm; .999 silver. 1988 with no mint mark: 4,249,646 at San Francisco and 755,000 at West Point. The 1988-S proof is listed at 557,370. Prices are not republished.',
+        },
+      },
+    ],
+  },
 ];
 
 export const coinPageCopy = {
@@ -2327,7 +2502,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, la medalla de 1836 de la primera acuñación a vapor, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893 y un dólar de Filadelfia de 1776–2026. Las demás fichas se publicarán a medida que se documenten.',
+      'Cuatro fichas Hard Times sin encapsular —el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837 y la store card HT-181 de John J. Adams, hacia 1835—, la medalla de 1836 de la primera acuñación a vapor, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893, un dólar de Filadelfia de 1776–2026 y un American Silver Eagle de 1988 sin marca de ceca. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead:
       'Otra pieza de la colección de Estados Unidos.',
   },
@@ -2361,7 +2536,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1836 First Steam Coinage medal, the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, and one unslabbed Philadelphia 1776–2026 dollar. Further coin pages will be published as they are documented.',
+      'Four unslabbed Hard Times tokens — the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the John J. Adams HT-181 store card, circa 1835 — the 1836 First Steam Coinage medal, the 1856 gold dollar, the 1878 Liberty Head quarter eagle, the 1908 and 1912 Indian Head quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, one unslabbed Philadelphia 1776–2026 dollar, and one 1988 American Silver Eagle with no mint mark. Further coin pages will be published as they are documented.',
     relatedLead:
       'Another piece in the United States collection.',
   },

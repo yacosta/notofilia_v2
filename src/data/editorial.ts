@@ -305,6 +305,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/': {
+    es: '1 dólar · American Silver Eagle · 1988',
+    en: '1 dollar · American Silver Eagle · 1988',
+  },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
     es: '2,50 dólares · Liberty Head · 1878',
     en: '2.50 dollars · Liberty Head · 1878',
@@ -385,8 +389,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
-    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1884-S, el 1883-CC, el 1885-CC y el 1893 de Filadelfia de la colección.',
-    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1884-S, 1883-CC, 1885-CC, and Philadelphia 1893.',
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
   },
   '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
     es: 'La onza de plata .999 de 1986 a 2026. Las fichas de la serie se publicarán en esta página.',
@@ -411,6 +415,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/': {
+    es: 'El American Silver Eagle de 1988, sin marca de ceca y sin cápsula.',
+    en: 'The 1988 American Silver Eagle, with no mint mark and unslabbed.',
   },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
     es: 'El quarter eagle Liberty Head de 1878, Filadelfia, sin marca de ceca.',

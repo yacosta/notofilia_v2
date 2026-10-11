@@ -20,6 +20,10 @@ import {
 } from '../data/estados-unidos';
 import { GIORI_TEST_NOTES_PATH, gioriTestNotesCopy } from '../data/giori-test-notes';
 import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educational-series-1896';
+import {
+  INDIAN_HEAD_QUARTER_EAGLE_PATH,
+  indianHeadQuarterEagleCopy,
+} from '../data/indian-head-quarter-eagle';
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
@@ -534,6 +538,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       },
       extra:
         'coscoja lazareto Caño del Loro Contratación Agua de Dios cruz de San Lázaro Marroquín 1901 1921 2 centavos KM L10 leprocomio',
+    },
+    {
+      href: INDIAN_HEAD_QUARTER_EAGLE_PATH,
+      title: { es: indianHeadQuarterEagleCopy.es.title, en: indianHeadQuarterEagleCopy.en.title },
+      dek: {
+        es: indianHeadQuarterEagleCopy.es.metaDescription,
+        en: indianHeadQuarterEagleCopy.en.metaDescription,
+      },
+      extra:
+        'Indian Head quarter eagle 1908 1929 Bela Lyon Pratt incuse 2.50 quarter eagle 1911-D 1929 Executive Order 6102 Philadelphia Denver',
     },
     {
       href: EDUCATIONAL_SERIES_PATH,

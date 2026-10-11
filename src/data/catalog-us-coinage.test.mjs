@@ -590,6 +590,8 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganEssay, /\$2,086,875/);
     assert.doesNotMatch(morganEssay, /\$750,000/);
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
+    assert.match(morganEssay, /Number\(a\.year\) - Number\(b\.year\)/);
+    assert.match(morganEssay, /1883-CC, 1884-S, 1885-CC/);
   });
 });
 
@@ -629,7 +631,7 @@ describe('US 1836 First Steam Coinage medal', () => {
 });
 
 describe('American Silver Eagle, 1986–2026', () => {
-  it('keeps a bilingual series page under USA numismatics and does not publish prices or a holding', () => {
+  it('keeps a bilingual series page under USA numismatics and does not publish prices', () => {
     assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/', 'en'),
       '/en/collection/united-states-numismatics/american-silver-eagle-1986-2026/',
@@ -651,6 +653,8 @@ describe('American Silver Eagle, 1986–2026', () => {
     assert.match(silverEagleEssay, /Emily Damstra/);
     assert.match(silverEagleEssay, /Esta página no publica precios/);
     assert.match(silverEagleEssay, /This page does not publish prices/);
+    assert.match(silverEagleEssay, /Un American Silver Eagle de 1988/);
+    assert.match(silverEagleEssay, /One 1988 American Silver Eagle/);
     assert.match(silverEagleEssay, /silverEagleKeyRows/);
     assert.match(silverEagleEssay, /silverEagleMintageRows/);
     assert.match(silverEagleEssay, /5393005/);
@@ -666,6 +670,49 @@ describe('American Silver Eagle, 1986–2026', () => {
     assert.doesNotMatch(silverEagleEssay, /240[,.]?000/);
     assert.doesNotMatch(silverEagleEssay, /\$\d+\.\d{2}/);
     assert.doesNotMatch(silverEagleEssay, /Pembroke Pines/);
-    assert.doesNotMatch(holdings, /american-silver-eagle/);
+    assert.doesNotMatch(silverEagleEssay, /Todavía no hay un American Silver Eagle catalogado/);
+  });
+});
+
+describe('US 1988 American Silver Eagle', () => {
+  it('registers one bilingual bullion dollar, unassigned to a mint facility', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-american-silver-eagle-1988/',
+    );
+    assert.match(data, /id: '1-dolar-aguila-plata-1988'/);
+    assert.match(data, /chapterId: 'american-silver-eagle'/);
+    assert.match(data, /1 dólar · American Silver Eagle · 1988/);
+    assert.match(data, /1 dollar · American Silver Eagle · 1988/);
+    assert.match(data, /KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493/);
+    assert.match(data, /5\.004\.646/);
+    assert.match(data, /5,004,646/);
+    assert.match(data, /4\.249\.646/);
+    assert.match(data, /755\.000/);
+    assert.match(data, /4,900,000/);
+    assert.match(data, /no_serial_reason:\n      'Struck American Silver Eagle bullion dollar/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-composite\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-front\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-back\.jpg/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-${side}.jpg`,
+          import.meta.url,
+        ),
+      );
+    }
+    assert.match(data, /31 U\.S\.C\. § 5112\(e\)/);
+    assert.match(data, /coinworld.com\/news\/us-coins\/mint-foia-response-confirms-origins-of-american-eagles/);
+    assert.match(data, /Siete capítulos/);
+    assert.match(data, /Seven chapters/);
+    assert.doesNotMatch(data, /id: 'aguila-de-plata'/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const eagle = data.slice(data.indexOf("id: '1-dolar-aguila-plata-1988'"));
+    assert.doesNotMatch(eagle, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-aguila-plata-1988', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /id: 'us-1988-silver-eagle-km273'/);
+    assert.match(data, /Sin marca de ceca; este ejemplar no se asigna/);
   });
 });

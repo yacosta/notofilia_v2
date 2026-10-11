@@ -18,6 +18,10 @@ import {
   unitedStatesCoins,
 } from '../../data/estados-unidos-coinage';
 import SourceList from './SourceList.astro';
+import {
+  indianHeadQuarterEagleCopy,
+  indianHeadQuarterEaglePath,
+} from '../../data/indian-head-quarter-eagle';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 
 interface Props {
@@ -193,6 +197,18 @@ const jsonLd = collectionPageJsonLd({
               </h2>
               <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
               <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              {
+                chapter.id === 'ceca-filadelfia' ? (
+                  <p class="mb-0 mt-4 text-[17px]/7">
+                    <a
+                      href={indianHeadQuarterEaglePath(locale)}
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                    >
+                      {indianHeadQuarterEagleCopy[locale].chapterLink}
+                    </a>
+                  </p>
+                ) : null
+              }
             </section>
           ))
         }
