@@ -574,6 +574,8 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganEssay, /\$2,086,875/);
     assert.doesNotMatch(morganEssay, /\$750,000/);
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
+    assert.match(morganEssay, /Number\(a\.year\) - Number\(b\.year\)/);
+    assert.match(morganEssay, /1883-CC, 1884-S, 1885-CC/);
   });
 });
 
