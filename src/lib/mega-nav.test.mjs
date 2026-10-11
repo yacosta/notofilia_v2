@@ -403,8 +403,16 @@ describe('United States numismatics menu', () => {
     const unitedStates = numismatica?.children?.find((item) => item.id === 'us-monedas');
     const submenu = unitedStates?.children?.find((item) => item.id === 'us-quarter-eagle-liberty-head-1840-1907');
     assert.ok(submenu);
-    assert.equal(submenu.es, 'Quarter eagle Liberty Head de 2½ dólares en oro (1840–1907)');
-    assert.equal(submenu.en, 'Liberty Head $2½ Gold Quarter Eagle (1840–1907)');
+    assert.equal(submenu.es, '2½ dólares (cuarto de águila) · Liberty Head (1840–1907)');
+    assert.equal(submenu.en, '2½ dollars (quarter eagle) · Liberty Head (1840–1907)');
+    assert.deepEqual(
+      submenu.children?.map((item) => item.es),
+      ['2½ dólares (cuarto de águila) · 1878'],
+    );
+    assert.deepEqual(
+      submenu.children?.map((item) => item.en),
+      ['2½ dollars (quarter eagle) · 1878'],
+    );
     assert.equal(submenu.href, undefined);
     assert.deepEqual(
       submenu.children?.map((item) => item.href),
@@ -416,6 +424,8 @@ describe('United States numismatics menu', () => {
       false,
     );
     const indianType = unitedStates?.children?.find((item) => item.id === 'us-indian-head-quarter-eagle-1908-1929');
+    assert.equal(indianType?.es, '2½ dólares (cuarto de águila) · Indian Head (1908–1929)');
+    assert.equal(indianType?.en, '$2½ (quarter eagle) · Indian Head (1908–1929)');
     assert.equal(
       indianType?.href,
       '/coleccion/estados-unidos-numismatica/cuarto-de-aguila-indian-head-1908-1929/',

@@ -33,10 +33,7 @@ import {
 } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { silverEagleHoldings, silverEagleSeriesCopy } from '../data/estados-unidos-silver-eagle';
-import {
-  INDIAN_HEAD_QUARTER_EAGLE_PATH,
-  indianHeadQuarterEagleCopy,
-} from '../data/indian-head-quarter-eagle';
+import { INDIAN_HEAD_QUARTER_EAGLE_PATH } from '../data/indian-head-quarter-eagle';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -511,21 +508,21 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'us-quarter-eagle-liberty-head-1840-1907',
-            es: 'Quarter eagle Liberty Head de 2½ dólares en oro (1840–1907)',
-            en: 'Liberty Head $2½ Gold Quarter Eagle (1840–1907)',
+            es: '2½ dólares (cuarto de águila) · Liberty Head (1840–1907)',
+            en: '2½ dollars (quarter eagle) · Liberty Head (1840–1907)',
             children: [
               {
                 id: 'us-2-50-dolares-1878-liberty-head',
-                es: usQuarterEagle1878.title.es,
-                en: usQuarterEagle1878.title.en,
+                es: '2½ dólares (cuarto de águila) · 1878',
+                en: '2½ dollars (quarter eagle) · 1878',
                 href: usQuarterEagle1878.path,
               },
             ],
           },
           {
             id: 'us-indian-head-quarter-eagle-1908-1929',
-            es: indianHeadQuarterEagleCopy.es.title,
-            en: indianHeadQuarterEagleCopy.en.title,
+            es: '2½ dólares (cuarto de águila) · Indian Head (1908–1929)',
+            en: '$2½ (quarter eagle) · Indian Head (1908–1929)',
             href: INDIAN_HEAD_QUARTER_EAGLE_PATH,
             children: [
               {
