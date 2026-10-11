@@ -19,6 +19,36 @@ describe('editorial SEO helpers', () => {
     assert.match(editorialSource, /href: '\/glosario\/notafilia\/'/);
   });
 
+  it('publishes the Calarcá 1952 essay from checked sources and without a price', () => {
+    const article = blogArticles.find((item) => item.slug === 'cacique-calarca-trascendencia-numismatica');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'cacique-calarca-numismatic-afterlife');
+    assert.equal(article.title.es, 'Cacique Calarcá: Trascendencia Numismática');
+    assert.equal(article.image, '/uploads/cacique-calarca-10-centavos-1952-b.jpg');
+    assert.equal(article.imageWidth, 1792);
+    assert.equal(article.imageHeight, 1008);
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cacique-calarca-10-centavos-1952-b.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cacique-calarca-10-centavos-1952-b-card.jpg', import.meta.url)),
+      true,
+    );
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /6[.,]035[.,]000/);
+      assert.match(html, /KM# 212\.1/);
+      assert.match(html, /elsalondecris\.blogspot\.com/);
+      assert.match(html, /N# 10912|pieces10912/);
+      assert.doesNotMatch(html, /\$\s?\d/);
+      assert.doesNotMatch(html, /1[.,]351/);
+      assert.doesNotMatch(html, /Sedwick|Fort Lauderdale|cuatro millones|4 millones/i);
+    }
+    assert.match(article.claim.noteEs, /1987/);
+    assert.match(article.claim.noteEs, /Baltasar/);
+  });
+
   it('publishes the Colombian valuation guide without a price list', () => {
     const article = blogArticles.find((item) => item.slug === 'como-se-valora-un-billete-colombiano');
     assert.ok(article);

@@ -702,6 +702,14 @@ describe('locale path mapping', () => {
       '/en/blog/how-to-start-a-banknote-collection/',
     );
     assert.equal(
+      localizePath('/blog/cacique-calarca-trascendencia-numismatica/', 'en'),
+      '/en/blog/cacique-calarca-numismatic-afterlife/',
+    );
+    assert.equal(
+      otherLocalePath('/en/blog/cacique-calarca-numismatic-afterlife/', 'en'),
+      '/blog/cacique-calarca-trascendencia-numismatica/',
+    );
+    assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
@@ -817,6 +825,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/blog/como-se-valora-un-billete-colombiano/'],
       '/en/blog/how-colombian-banknotes-are-valued/',
+    );
+    assert.equal(
+      redirects['/en/blog/cacique-calarca-trascendencia-numismatica/'],
+      '/en/blog/cacique-calarca-numismatic-afterlife/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],
