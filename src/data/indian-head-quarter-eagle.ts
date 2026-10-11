@@ -6,13 +6,6 @@ export const INDIAN_HEAD_QUARTER_EAGLE_PATH =
 export const INDIAN_HEAD_QUARTER_EAGLE_PATH_EN =
   '/collection/united-states-numismatics/indian-head-quarter-eagle-1908-1929/';
 
-/** Collection scan of the 1908 piece. Frame hero: do not crop the composite. */
-export const INDIAN_HEAD_QUARTER_EAGLE_HERO = {
-  src: '/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-composite.jpg',
-  width: 1672,
-  height: 941,
-} as const;
-
 export const indianHeadQuarterEagleCopy = {
   es: {
     nav: 'Cuarto de águila Indian Head (1908–1929)',
@@ -31,8 +24,6 @@ export const indianHeadQuarterEagleCopy = {
     modified: '2026-10-11',
     dateLabel: '11 de octubre de 2026',
     revisedLabel: 'Actualizado el 11 de octubre de 2026',
-    heroAlt:
-      'Composición del cuarto de águila Indian Head de 1908 de la colección: anverso con busto y tocado de plumas, y reverso con el águila incusa sobre flechas y olivo. Es el escaneo de esa pieza de Filadelfia, no un cartel de la serie.',
     sourcesTitle: 'Fuentes',
     marketKind: 'Cifras de mercado citadas (no son precios de Notofilia)',
     marketNote:
@@ -60,8 +51,6 @@ export const indianHeadQuarterEagleCopy = {
     modified: '2026-10-11',
     dateLabel: 'October 11, 2026',
     revisedLabel: 'Updated 11 October 2026',
-    heroAlt:
-      'Composite of this collection’s 1908 Indian Head quarter eagle: obverse with a feathered-headdress bust, and reverse with the incuse eagle on arrows and an olive branch. It is the scan of that Philadelphia piece, not a series poster.',
     sourcesTitle: 'Sources',
     marketKind: 'Cited market figures (not Notofilia prices)',
     marketNote:

@@ -2,7 +2,6 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import {
-  INDIAN_HEAD_QUARTER_EAGLE_HERO,
   INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS,
   INDIAN_HEAD_QUARTER_EAGLE_PATH,
   INDIAN_HEAD_QUARTER_EAGLE_PATH_EN,
@@ -49,24 +48,17 @@ describe('Indian Head quarter eagle resource page', () => {
     assert.match(enRoute, /locale="en"/);
   });
 
-  it('keeps Article JSON-LD, the uncropped 1908 scan, and the two holdings under the market note', () => {
+  it('keeps Article JSON-LD and the two holdings under the market note, without a series hero', () => {
     assert.match(pageSource, /@type': 'Article'/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /reviewedBy/);
     assert.match(pageSource, /max-w-content/);
     assert.match(pageSource, /max-w-\[46rem\]/);
+    assert.match(pageSource, /<h1/);
     assert.match(pageSource, /CatalogThumb/);
     assert.match(pageSource, /INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS/);
     assert.ok(pageSource.indexOf('indian-head-market-heading') < pageSource.indexOf('holdingsAria'));
-    assert.match(pageSource, /SeriesHero/);
-    assert.match(pageSource, /size="frame"/);
-    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
-    assert.equal(
-      INDIAN_HEAD_QUARTER_EAGLE_HERO.src,
-      '/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-composite.jpg',
-    );
-    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.width, 1672);
-    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.height, 941);
+    assert.doesNotMatch(pageSource, /SeriesHero|size="frame"|heroAlt|ogImage/);
     assert.deepEqual([...INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS], [
       '2-50-dolares-1908-cabeza-de-indio',
       '2-50-dolares-1912-indian-head',

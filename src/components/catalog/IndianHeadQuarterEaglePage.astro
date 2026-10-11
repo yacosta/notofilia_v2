@@ -2,22 +2,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import CatalogThumb from './CatalogThumb.astro';
-import SeriesHero from './SeriesHero.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
 import { coinPath, NUMISMATICS_PATH, USA_COINAGE_PATH, unitedStatesCoins } from '../../data/estados-unidos-coinage';
 import bodyEs from '../../data/indian-head-quarter-eagle/es.html?raw';
 import bodyEn from '../../data/indian-head-quarter-eagle/en.html?raw';
 import {
-  INDIAN_HEAD_QUARTER_EAGLE_HERO,
   INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS,
   indianHeadQuarterEagleCopy,
   indianHeadQuarterEaglePath,
   indianHeadQuarterEagleSources,
 } from '../../data/indian-head-quarter-eagle';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
-import { imageObjectJsonLd } from '../../lib/json-ld';
-import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
 
 interface Props {
@@ -34,9 +31,7 @@ const holdings = INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS.map((id) => unitedStatesC
   (coin): coin is (typeof unitedStatesCoins)[number] => Boolean(coin && holdingIds.has(coin.id)),
 );
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
-const hero = INDIAN_HEAD_QUARTER_EAGLE_HERO;
 const pageUrl = new URL(pathname, SITE_URL).href;
-const imageUrl = new URL(hero.src, SITE_URL).href;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -48,7 +43,6 @@ const jsonLd = {
       datePublished: t.published,
       dateModified: t.modified,
       inLanguage: locale,
-      image: imageObjectJsonLd({ image: imageUrl, locale, caption: t.heroAlt }),
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
@@ -70,8 +64,6 @@ const jsonLd = {
   description={t.metaDescription}
   locale={locale}
   pathname={pathname}
-  ogImage={hero.src}
-  ogImageAlt={t.heroAlt}
   ogType="article"
   publishedTime={t.published}
 >
@@ -80,19 +72,7 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-    <SeriesHero
-      src={hero.src}
-      alt={t.heroAlt}
-      width={hero.width}
-      height={hero.height}
-      headingId="indian-head-quarter-eagle-heading"
-      eyebrow={copy[locale].virtualCollection}
-      title={t.title}
-      subtitle={t.kicker}
-      size="frame"
-    />
-
-    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
       <Breadcrumb
         locale={locale}
         label={t.breadcrumb}
@@ -103,6 +83,16 @@ const jsonLd = {
           { label: t.nav },
         ]}
       />
+
+      <header>
+        <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.16em] text-gold-light">{t.kicker}</p>
+        <h1
+          id="indian-head-quarter-eagle-heading"
+          class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream"
+        >
+          {t.title}
+        </h1>
+      </header>
 
       <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
       <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
