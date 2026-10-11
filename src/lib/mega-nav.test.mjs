@@ -427,6 +427,17 @@ describe('United States numismatics menu', () => {
         '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/',
       ],
     );
+    assert.deepEqual(
+      indianType?.children?.map((item) => item.es),
+      [
+        'Cuarto de águila de 1908, cabeza de indio',
+        'Cuarto de águila de 1912, cabeza de indio',
+      ],
+    );
+    assert.deepEqual(
+      indianType?.children?.map((item) => item.en),
+      ['1908 Indian Head quarter eagle', '1912 Indian Head quarter eagle'],
+    );
     const directHrefsAfter = (unitedStates?.children ?? []).map((item) => item.href);
     assert.equal(
       directHrefsAfter.includes('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/'),

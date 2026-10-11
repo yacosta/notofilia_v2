@@ -99,12 +99,14 @@ if (!usQuarterEagle1878) {
 }
 
 const usQuarterEagle1908 = coinById('2-50-dolares-1908-cabeza-de-indio');
-if (!usQuarterEagle1908) {
+const usQuarterEagle1908Heading = usQuarterEagle1908?.heading;
+if (!usQuarterEagle1908 || !usQuarterEagle1908Heading) {
   throw new Error('Missing US 1908 Indian Head quarter eagle for mega-nav');
 }
 
 const usQuarterEagle1912 = coinById('2-50-dolares-1912-indian-head');
-if (!usQuarterEagle1912) {
+const usQuarterEagle1912Heading = usQuarterEagle1912?.heading;
+if (!usQuarterEagle1912 || !usQuarterEagle1912Heading) {
   throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
 }
 
@@ -528,14 +530,14 @@ export const megaNav: NavNode[] = [
             children: [
               {
                 id: 'us-2-50-dolares-1908-cabeza-de-indio',
-                es: usQuarterEagle1908.title.es,
-                en: usQuarterEagle1908.title.en,
+                es: usQuarterEagle1908Heading.es,
+                en: usQuarterEagle1908Heading.en,
                 href: usQuarterEagle1908.path,
               },
               {
                 id: 'us-2-50-dolares-1912-indian-head',
-                es: usQuarterEagle1912.title.es,
-                en: usQuarterEagle1912.title.en,
+                es: usQuarterEagle1912Heading.es,
+                en: usQuarterEagle1912Heading.en,
                 href: usQuarterEagle1912.path,
               },
             ],
