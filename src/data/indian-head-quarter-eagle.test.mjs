@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import {
   INDIAN_HEAD_QUARTER_EAGLE_HERO,
@@ -49,7 +49,7 @@ describe('Indian Head quarter eagle resource page', () => {
     assert.match(enRoute, /locale="en"/);
   });
 
-  it('keeps Article JSON-LD, the uncropped 1908 scan, and the two holdings under the market note', () => {
+  it('keeps Article JSON-LD, the uncropped poster, and the two holdings under the market note', () => {
     assert.match(pageSource, /@type': 'Article'/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /reviewedBy/);
@@ -63,10 +63,16 @@ describe('Indian Head quarter eagle resource page', () => {
     assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
     assert.equal(
       INDIAN_HEAD_QUARTER_EAGLE_HERO.src,
-      '/images/catalog/united-states/united-states-mint-2-50-dollars-1908-indian-head-composite.jpg',
+      '/uploads/indian-head-quarter-eagle-1908-1929-hero.jpg',
     );
-    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.width, 1672);
-    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.height, 941);
+    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.width, 1916);
+    assert.equal(INDIAN_HEAD_QUARTER_EAGLE_HERO.height, 821);
+    assert.ok(existsSync(new URL('../../public/uploads/indian-head-quarter-eagle-1908-1929-hero.jpg', import.meta.url)));
+    assert.ok(
+      existsSync(new URL('../../public/uploads/indian-head-quarter-eagle-1908-1929-hero-card.jpg', import.meta.url)),
+    );
+    assert.match(indianHeadQuarterEagleCopy.es.heroAlt, /ilustración/);
+    assert.match(indianHeadQuarterEagleCopy.en.heroAlt, /illustration/i);
     assert.deepEqual([...INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS], [
       '2-50-dolares-1908-cabeza-de-indio',
       '2-50-dolares-1912-indian-head',
