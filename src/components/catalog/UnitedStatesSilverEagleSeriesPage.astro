@@ -16,6 +16,8 @@ import {
 import {
   silverEagleEdgeRows,
   silverEagleHoldings,
+  silverEagleKeyRows,
+  silverEagleMintageRows,
   silverEagleNarrative,
   silverEagleParentPath,
   silverEagleRelated,
@@ -153,6 +155,82 @@ const jsonLd = collectionPageJsonLd({
                       {row.year}
                     </th>
                     <td class="py-2">{row.place[locale]}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="silver-eagle-key-heading">
+        <h2 id="silver-eagle-key-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.keyTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.keyIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[36rem] border-collapse text-left text-[15px]/6 text-cream">
+            <caption class="sr-only">{t.keyTitle}</caption>
+            <thead>
+              <tr class="border-b border-line-strong">
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.keyDate}
+                </th>
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.keyMintage}
+                </th>
+                <th scope="col" class="py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.keyNote}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                silverEagleKeyRows.map((row) => (
+                  <tr class="border-b border-line">
+                    <th scope="row" class="py-2 pr-4 font-sans font-semibold text-gold-light">
+                      {row.date}
+                    </th>
+                    <td class="py-2 pr-4">{row.mintage[locale]}</td>
+                    <td class="py-2">{row.note[locale]}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-16" aria-labelledby="silver-eagle-mintage-heading">
+        <h2 id="silver-eagle-mintage-heading" class="mb-3 mt-0 font-display text-[2rem]/10 font-normal text-cream-dim">
+          {t.mintageTitle}
+        </h2>
+        <p class="mb-8 mt-0 w-full text-[17px]/7 text-muted">{t.mintageIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[36rem] border-collapse text-left text-[15px]/6 text-cream">
+            <caption class="sr-only">{t.mintageTitle}</caption>
+            <thead>
+              <tr class="border-b border-line-strong">
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.mintageYear}
+                </th>
+                <th scope="col" class="py-2 pr-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.mintageSales}
+                </th>
+                <th scope="col" class="py-2 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {t.mintageNote}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                silverEagleMintageRows.map((row) => (
+                  <tr class="border-b border-line">
+                    <th scope="row" class="py-2 pr-4 font-sans font-semibold text-gold-light">
+                      {row.date}
+                    </th>
+                    <td class="py-2 pr-4">{row.mintage[locale]}</td>
+                    <td class="py-2">{row.note[locale]}</td>
                   </tr>
                 ))
               }

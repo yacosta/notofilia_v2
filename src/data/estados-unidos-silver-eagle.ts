@@ -47,6 +47,18 @@ export const silverEagleSeriesCopy = {
       'Desde 2021 el canto sigue estriado y lleva una variación que la Mint usa como dispositivo de seguridad. Numista publica el lugar de esa variación en el tipo 2, mirando el anverso. No es la lectura de una moneda de esta vitrina.',
     edgeYear: 'Año',
     edgePlace: 'Lugar en el anverso',
+    keyTitle: 'Fechas que ordenan la serie',
+    keyIntro:
+      'Estas fechas separan la serie: la primera acuñación, la prueba que solo salió en un juego, el año sin prueba y las emisiones con un límite publicado. La cifra es una tirada o un límite, no un precio. Donde las cuentas no coinciden, la casilla queda vacía. Esta página no publica precios.',
+    keyDate: 'Fecha',
+    keyMintage: 'Cifra publicada',
+    keyNote: 'Qué la distingue',
+    mintageTitle: 'Onzas de inversión por año',
+    mintageIntro:
+      'Cada fila es la onza de inversión de ese año: una moneda, una onza troy, sin marca de ceca. La cifra es la venta que la United States Mint publica a sus compradores autorizados. No es una prueba, no es un satinado y no es un recuento de esta vitrina. En 2012, 2013 y 2014 el cuadro de producción por ceca que la Mint entregó en 2017 cuenta más piezas acuñadas que la venta de ese año. Esta tabla no usa ese cuadro. Donde las ventas publicadas no coinciden, la casilla queda vacía. 2026 sigue abierto. Esta página no publica precios.',
+    mintageYear: 'Año',
+    mintageSales: 'Venta de inversión',
+    mintageNote: 'Nota',
     sourcesTitle: 'Fuentes',
     relatedTitle: 'También en la vitrina',
   },
@@ -73,6 +85,18 @@ export const silverEagleSeriesCopy = {
       'From 2021 the edge stays reeded and carries a variation the Mint uses as a security device. Numista publishes where that variation sits on the Type 2, viewed from the obverse. It is not a reading of a coin in this case.',
     edgeYear: 'Year',
     edgePlace: 'Place on the obverse',
+    keyTitle: 'Dates that order the series',
+    keyIntro:
+      'These dates separate the series: the first striking, the proof that came only in a set, the year with no proof, and the issues with a published limit. The figure is a mintage or a limit, not a price. Where the counts do not agree, the cell stays empty. This page does not publish prices.',
+    keyDate: 'Date',
+    keyMintage: 'Published figure',
+    keyNote: 'What sets it apart',
+    mintageTitle: 'Bullion ounces by year',
+    mintageIntro:
+      'Each row is that year’s investment ounce: one coin, one troy ounce, no mint mark. The figure is the sale the United States Mint publishes to its authorized purchasers. It is not a proof, not a burnished piece, and not a count of this case. For 2012, 2013, and 2014 the facility-production chart the Mint released in 2017 counts more pieces struck than that year’s sales. This table does not use that chart. Where the published sales do not agree, the cell stays empty. 2026 is still open. This page does not publish prices.',
+    mintageYear: 'Year',
+    mintageSales: 'Bullion sales',
+    mintageNote: 'Note',
     sourcesTitle: 'Sources',
     relatedTitle: 'Also in the case',
   },
@@ -226,6 +250,271 @@ export const silverEagleEdgeRows: SilverEagleEdgeRow[] = [
   },
 ];
 
+export type SilverEagleFigureRow = {
+  date: string;
+  mintage: LocalizedText;
+  note: LocalizedText;
+};
+
+function publishedCount(n: number, suffix?: LocalizedText): LocalizedText {
+  const digits = String(n);
+  const es = digits.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  const en = digits.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  if (!suffix) return { es, en };
+  return { es: `${es} ${suffix.es}`, en: `${en} ${suffix.en}` };
+}
+
+const noPublishedCount: LocalizedText = { es: '—', en: '—' };
+const setsLabel: LocalizedText = { es: 'juegos', en: 'sets' };
+const limitLabel: LocalizedText = { es: '(límite)', en: '(limit)' };
+
+const sanFranciscoOnly: LocalizedText = {
+  es: 'Toda la producción de ese año, en San Francisco.',
+  en: 'All of that year’s production, at San Francisco.',
+};
+const bothHouses: LocalizedText = {
+  es: 'San Francisco y West Point.',
+  en: 'San Francisco and West Point.',
+};
+const westPointOnly: LocalizedText = {
+  es: 'West Point.',
+  en: 'West Point.',
+};
+const salesNotStrikes: LocalizedText = {
+  es: 'Venta del año. El cuadro de cecas de 2017 cuenta más piezas acuñadas.',
+  en: 'That year’s sales. The 2017 facility chart counts more pieces struck.',
+};
+
+const bullionSales: { year: string; count: number | null; note: LocalizedText }[] = [
+  { year: '1986', count: 5393005, note: sanFranciscoOnly },
+  { year: '1987', count: 11442335, note: sanFranciscoOnly },
+  { year: '1988', count: 5004646, note: bothHouses },
+  { year: '1989', count: 5203327, note: bothHouses },
+  { year: '1990', count: 5840110, note: bothHouses },
+  { year: '1991', count: 7191066, note: bothHouses },
+  { year: '1992', count: 5540068, note: bothHouses },
+  { year: '1993', count: 6763762, note: bothHouses },
+  { year: '1994', count: 4227319, note: bothHouses },
+  { year: '1995', count: 4672051, note: bothHouses },
+  { year: '1996', count: 3603386, note: bothHouses },
+  { year: '1997', count: 4295004, note: bothHouses },
+  { year: '1998', count: 4847549, note: bothHouses },
+  { year: '1999', count: 7408640, note: westPointOnly },
+  { year: '2000', count: 9239132, note: westPointOnly },
+  { year: '2001', count: 9001711, note: westPointOnly },
+  { year: '2002', count: 10539026, note: westPointOnly },
+  { year: '2003', count: 8495008, note: westPointOnly },
+  { year: '2004', count: 8882754, note: westPointOnly },
+  { year: '2005', count: 8891025, note: westPointOnly },
+  { year: '2006', count: 10676522, note: westPointOnly },
+  { year: '2007', count: 9028036, note: westPointOnly },
+  { year: '2008', count: 20583000, note: westPointOnly },
+  { year: '2009', count: 30459000, note: westPointOnly },
+  { year: '2010', count: 34764500, note: westPointOnly },
+  {
+    year: '2011',
+    count: 40020000,
+    note: {
+      es: 'West Point y San Francisco. Otra tabla da 39.860.500.',
+      en: 'West Point and San Francisco. Another table gives 39,860,500.',
+    },
+  },
+  { year: '2012', count: 33742500, note: salesNotStrikes },
+  { year: '2013', count: 42675000, note: salesNotStrikes },
+  { year: '2014', count: 44006000, note: salesNotStrikes },
+  {
+    year: '2015',
+    count: 47000000,
+    note: {
+      es: 'Total del año. La parte de Filadelfia no se separa.',
+      en: 'Year total. The Philadelphia portion is not split out.',
+    },
+  },
+  {
+    year: '2016',
+    count: 37701500,
+    note: {
+      es: 'West Point, San Francisco y Filadelfia.',
+      en: 'West Point, San Francisco, and Philadelphia.',
+    },
+  },
+  {
+    year: '2017',
+    count: 18065500,
+    note: { es: 'Inversión, sin marca.', en: 'Bullion, no mint mark.' },
+  },
+  {
+    year: '2018',
+    count: 15700000,
+    note: { es: 'Inversión, sin marca.', en: 'Bullion, no mint mark.' },
+  },
+  {
+    year: '2019',
+    count: 14863500,
+    note: { es: 'Inversión, sin marca.', en: 'Bullion, no mint mark.' },
+  },
+  {
+    year: '2020',
+    count: null,
+    note: {
+      es: 'Las ventas publicadas no coinciden.',
+      en: 'The published sales do not agree.',
+    },
+  },
+  {
+    year: '2021',
+    count: 28275000,
+    note: {
+      es: 'Tipos 1 y 2, sin reparto.',
+      en: 'Type 1 and Type 2, not split.',
+    },
+  },
+  {
+    year: '2022',
+    count: 15963500,
+    note: { es: 'Inversión, sin marca.', en: 'Bullion, no mint mark.' },
+  },
+  {
+    year: '2023',
+    count: 24750000,
+    note: { es: 'Inversión, sin marca.', en: 'Bullion, no mint mark.' },
+  },
+  {
+    year: '2024',
+    count: null,
+    note: {
+      es: 'Las cuentas de cierre no coinciden.',
+      en: 'The year-end counts do not agree.',
+    },
+  },
+  {
+    year: '2025',
+    count: 11568000,
+    note: {
+      es: 'Inversión. Las marcas privadas de ese año no van en esta cifra.',
+      en: 'Bullion. That year’s privy-mark issues are not in this figure.',
+    },
+  },
+  {
+    year: '2026',
+    count: null,
+    note: { es: 'El año sigue abierto.', en: 'The year is still open.' },
+  },
+];
+
+export const silverEagleMintageRows: SilverEagleFigureRow[] = bullionSales.map((row) => ({
+  date: row.year,
+  mintage: row.count === null ? noPublishedCount : publishedCount(row.count),
+  note: row.note,
+}));
+
+export const silverEagleKeyRows: SilverEagleFigureRow[] = [
+  {
+    date: '1986',
+    mintage: publishedCount(5393005),
+    note: {
+      es: 'Primera onza de inversión. El 29 de octubre de 1986 se acuñó en San Francisco, con el secretario del Tesoro James A. Baker III. Las ventas empezaron el 24 de noviembre. No lleva marca de ceca.',
+      en: 'First investment ounce. On 29 October 1986 it was struck at San Francisco, with Treasury Secretary James A. Baker III. Sales began on 24 November. It has no mint mark.',
+    },
+  },
+  {
+    date: '1986-S',
+    mintage: publishedCount(1446778),
+    note: {
+      es: 'Primera prueba. Lleva la S de San Francisco.',
+      en: 'First proof. It bears the San Francisco S.',
+    },
+  },
+  {
+    date: '1995-W',
+    mintage: publishedCount(30125, setsLabel),
+    note: {
+      es: 'Prueba de West Point. Se vendió solo en el juego de cinco monedas del décimo aniversario.',
+      en: 'West Point proof. It was sold only in the five-coin set of the tenth anniversary.',
+    },
+  },
+  {
+    date: '1996',
+    mintage: publishedCount(3603386),
+    note: {
+      es: 'La venta de inversión más baja entre los años que la tabla de abajo numera.',
+      en: 'The lowest bullion sales among the years the table below numbers.',
+    },
+  },
+  {
+    date: '2000',
+    mintage: publishedCount(75000, setsLabel),
+    note: {
+      es: 'Límite del Millennium Coinage and Currency Set: una onza de inversión de West Point sin W, un dólar Sacagawea de Denver y un billete de un dólar.',
+      en: 'Limit of the Millennium Coinage and Currency Set: a West Point investment ounce with no W, a Denver Sacagawea dollar, and a one-dollar note.',
+    },
+  },
+  {
+    date: '2009',
+    mintage: publishedCount(30459000),
+    note: {
+      es: 'Solo inversión. El 6 de octubre de 2009 la Mint anunció que ese año no habría prueba ni satinado.',
+      en: 'Bullion only. On 6 October 2009 the Mint announced there would be no proof and no burnished coin that year.',
+    },
+  },
+  {
+    date: '2015',
+    mintage: noPublishedCount,
+    note: {
+      es: 'Parte de la inversión salió de Filadelfia, sin marca. Las cuentas de esa corrida no coinciden, así que esta página no la fija. El total del año está en la tabla de abajo.',
+      en: 'Part of the bullion came from Philadelphia, with no mint mark. Counts of that run do not agree, so this page does not fix it. The year total is in the table below.',
+    },
+  },
+  {
+    date: '2019-W',
+    mintage: publishedCount(110000, setsLabel),
+    note: {
+      es: 'Enhanced reverse proof de West Point, en el juego Pride of Two Nations con la Royal Canadian Mint. Límite de la emisión.',
+      en: 'West Point enhanced reverse proof, in the Pride of Two Nations set with the Royal Canadian Mint. Issue limit.',
+    },
+  },
+  {
+    date: '2019-S',
+    mintage: publishedCount(30000, limitLabel),
+    note: {
+      es: 'Enhanced reverse proof de San Francisco, suelta, no la del juego con Canadá. Límite de la emisión, no un cierre de ventas.',
+      en: 'San Francisco enhanced reverse proof, sold on its own, not the one in the Canadian set. Issue limit, not a final sales close.',
+    },
+  },
+  {
+    date: '2020',
+    mintage: noPublishedCount,
+    note: {
+      es: 'En abril Filadelfia acuñó onzas de inversión mientras West Point estaba cerrado. No llevan marca. Las cuentas de esa corrida no coinciden.',
+      en: 'In April Philadelphia struck investment ounces while West Point was closed. They have no mint mark. Counts of that run do not agree.',
+    },
+  },
+  {
+    date: '2020-W V75',
+    mintage: publishedCount(75000, limitLabel),
+    note: {
+      es: 'Prueba del 75.º aniversario del fin de la Segunda Guerra Mundial, con la marca privada V75.',
+      en: 'Proof for the 75th anniversary of the end of the Second World War, with the V75 privy mark.',
+    },
+  },
+  {
+    date: '2021',
+    mintage: publishedCount(125000, setsLabel),
+    note: {
+      es: 'Máximo del juego de dos reverse proof: tipo 1 en West Point y tipo 2 en San Francisco. Ese año también hubo inversión de los dos tipos; esta página no la reparte.',
+      en: 'Maximum for the two-coin reverse-proof set: Type 1 at West Point and Type 2 at San Francisco. That year also had bullion of both types; this page does not split it.',
+    },
+  },
+  {
+    date: '2026',
+    mintage: noPublishedCount,
+    note: {
+      es: 'El año sigue abierto. Esta página no fija la tirada.',
+      en: 'The year is still open. This page does not fix the mintage.',
+    },
+  },
+];
+
 export const silverEagleSeriesSources: CatalogSource[] = [
   {
     href: 'https://www.govinfo.gov/content/pkg/STATUTE-99/pdf/STATUTE-99-Pg113.pdf',
@@ -288,6 +577,60 @@ export const silverEagleSeriesSources: CatalogSource[] = [
     note: {
       es: 'KM# 746. Mismas medidas. Reverso de Damstra y Gaudioso, 2021–2026, y el lugar de la variación del canto. No se republica el valor de metal.',
       en: 'KM# 746. The same measurements. Damstra and Gaudioso reverse, 2021–2026, and where the edge variation sits. Melt value is not republished.',
+    },
+  },
+  {
+    href: 'https://www.usmint.gov/about/production-sales-figures/bullion-sales',
+    es: 'United States Mint — ventas de inversión',
+    en: 'United States Mint — bullion sales',
+    note: {
+      es: 'La tabla anual sigue esas ventas donde las compilaciones coinciden. No fija 2020, 2024 ni 2026. No se republican precios.',
+      en: 'The year table follows those sales where the compilations agree. It does not fix 2020, 2024, or 2026. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.coinworld.com/news/us-coins/mint-foia-response-confirms-origins-of-american-eagles',
+    es: 'Coin World — cuadro de la Mint por ceca, 1986 a julio de 2017',
+    en: 'Coin World — Mint facility chart, 1986 through July 2017',
+    note: {
+      es: 'Totales de 1986–2011 y 2015–2016 coinciden con las ventas. 2012–2014 cuentan más piezas acuñadas; esta página no los usa como venta del año. No se separa la parte de Filadelfia de 2015.',
+      en: 'Totals for 1986–2011 and 2015–2016 match the sales. 2012–2014 count more pieces struck; this page does not use them as that year’s sales. The 2015 Philadelphia portion is not split out.',
+    },
+  },
+  {
+    href: 'https://en.wikipedia.org/wiki/American_Silver_Eagle',
+    es: 'American Silver Eagle — fechas de la primera acuñación y de las emisiones especiales',
+    en: 'American Silver Eagle — dates of the first striking and the special issues',
+    note: {
+      es: 'San Francisco, 29 de octubre de 1986; ventas desde el 24 de noviembre. Prueba 1995-W: 30.125 juegos. Límite de 75.000 para la prueba V75. No se republican precios.',
+      en: 'San Francisco, 29 October 1986; sales from 24 November. 1995-W proof: 30,125 sets. Limit of 75,000 for the V75 proof. Prices are not republished.',
+    },
+  },
+  {
+    href: 'https://www.usmint.gov/news/press-releases/united-states-mint-and-royal-canadian-mint-launch-limited-edition-coin-set-celebrating-the-pride-of-two-nations',
+    es: 'United States Mint — Pride of Two Nations, 2019',
+    en: 'United States Mint — Pride of Two Nations, 2019',
+    note: {
+      es: 'Límite de 110.000 juegos. Enhanced reverse proof de West Point. No se republica el precio.',
+      en: 'Limit of 110,000 sets. West Point enhanced reverse proof. The price is not republished.',
+    },
+  },
+  {
+    href: 'https://www.coinworld.com/news/us-coins/mint-updates-sales-totals-for-enhanced-reverse-proof-2019-s-american-eagle',
+    es: 'Coin World — enhanced reverse proof 2019-S',
+    en: 'Coin World — 2019-S enhanced reverse proof',
+    note: {
+      es: 'La Mint ofreció 30.000. Esta página publica ese límite, no un cierre de ventas posterior. No se republica el precio.',
+      en: 'The Mint offered 30,000. This page publishes that limit, not a later sales close. The price is not republished.',
+    },
+  },
+  {
+    href: 'https://www.usmint.gov/news/press-releases/united-states-mint-to-release-set-of-2021-reverse-proof-american-eagle-silver-coins-on-september-13',
+    es: 'United States Mint — juego reverse proof de 2021',
+    en: 'United States Mint — 2021 reverse-proof set',
+    note: {
+      es: 'Máximo de 125.000 juegos. Tipo 1 en West Point y tipo 2 en San Francisco. No se republica el precio.',
+      en: 'Maximum of 125,000 sets. Type 1 at West Point and Type 2 at San Francisco. The price is not republished.',
     },
   },
 ];
