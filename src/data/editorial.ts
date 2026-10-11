@@ -314,8 +314,8 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     en: '2.50 dollars · Liberty Head · 1878',
   },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/': {
-    es: '2,50 dólares · United States Mint · 1912',
-    en: '2.50 dollars · United States Mint · 1912',
+    es: '2½ dólares · United States Mint · 1912',
+    en: '$2½ · United States Mint · 1912',
   },
   '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
     es: '1 dólar de oro · United States Mint · 1856',

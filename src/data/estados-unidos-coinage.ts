@@ -1394,8 +1394,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia (no mint mark)',
     },
     denomination: {
-      es: '2,50 dólares (quarter eagle)',
-      en: '2.50 dollars (quarter eagle)',
+      es: '2½ dólares (cuarto de águila)',
+      en: '$2½ (quarter eagle)',
     },
     composition: {
       es: 'Oro .900 (90 % Au, 10 % Cu)',
@@ -1434,8 +1434,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: '1912 Indian Head quarter eagle',
     },
     title: {
-      es: '2,50 dólares · United States Mint · 1912',
-      en: '2.50 dollars · United States Mint · 1912',
+      es: '2½ dólares · United States Mint · 1912',
+      en: '$2½ · United States Mint · 1912',
     },
     kicker: {
       es: 'Estados Unidos · United States Mint',
