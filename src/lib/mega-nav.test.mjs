@@ -9,7 +9,7 @@ register(new URL('./resolve-ts-hook.mjs', import.meta.url));
 
 const { megaNav } = await import('./mega-nav.ts');
 const { USA_MORGAN_PATH, morganOriginalRunCoins } = await import('../data/estados-unidos-coinage.ts');
-const { morganSeriesCopy } = await import('../data/estados-unidos-morgan-dollars.ts');
+const { morganSeriesCopy, morganHoldings } = await import('../data/estados-unidos-morgan-dollars.ts');
 
 describe('collection menu labels', () => {
   it('uses a dash between Colección Virtual and the discipline name', () => {
@@ -427,6 +427,10 @@ describe('United States numismatics menu', () => {
     assert.deepEqual(
       holdings.map((coin) => coin.year),
       ['1883', '1884', '1885', '1893'],
+    );
+    assert.deepEqual(
+      morganHoldings().map((coin) => coin.id),
+      holdings.map((coin) => coin.id),
     );
     const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
     for (const coin of holdings) {

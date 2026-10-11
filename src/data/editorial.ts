@@ -381,8 +381,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
-    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1884-S, el 1883-CC, el 1885-CC y el 1893 de Filadelfia de la colección.',
-    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1884-S, 1883-CC, 1885-CC, and Philadelphia 1893.',
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
   },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',
