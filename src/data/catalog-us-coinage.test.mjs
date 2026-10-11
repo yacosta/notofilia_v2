@@ -56,6 +56,22 @@ const morganPage = readFileSync(
   new URL('../components/catalog/UnitedStatesMorganDollarsSeriesPage.astro', import.meta.url),
   'utf8',
 );
+const silverEagleEssay = readFileSync(new URL('./estados-unidos-silver-eagle.ts', import.meta.url), 'utf8');
+const esSilverEagleSeries = readFileSync(
+  new URL('../pages/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/index.astro', import.meta.url),
+  'utf8',
+);
+const enSilverEagleSeries = readFileSync(
+  new URL(
+    '../pages/en/collection/united-states-numismatics/american-silver-eagle-1986-2026/index.astro',
+    import.meta.url,
+  ),
+  'utf8',
+);
+const silverEaglePage = readFileSync(
+  new URL('../components/catalog/UnitedStatesSilverEagleSeriesPage.astro', import.meta.url),
+  'utf8',
+);
 
 describe('US Trump Semiquincentennial dollar', () => {
   it('registers one bilingual coinage series and one holding', () => {
@@ -554,5 +570,34 @@ describe('US 1836 First Steam Coinage medal', () => {
     assert.doesNotMatch(medal, /\$\d+/);
     assert.match(holdings, /id: 'us-medalla-1836-primera-acunacion-vapor', kind: 'coin', country: 'US'/);
     assert.match(holdings, /id: 'us-1836-medalla-j-mt-21'/);
+  });
+});
+
+describe('American Silver Eagle, 1986–2026', () => {
+  it('keeps a bilingual series page under USA numismatics and does not publish prices or a holding', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/', 'en'),
+      '/en/collection/united-states-numismatics/american-silver-eagle-1986-2026/',
+    );
+    assert.match(data, /USA_SILVER_EAGLE_PATH = '\/coleccion\/estados-unidos-numismatica\/aguila-de-plata-1986-2026\/'/);
+    assert.match(data, /if \(id === 'american-silver-eagle'\) return silverEaglePath\(locale\)/);
+    assert.match(data, /id: 'american-silver-eagle'/);
+    assert.match(esSilverEagleSeries, /UnitedStatesSilverEagleSeriesPage locale="es"/);
+    assert.match(enSilverEagleSeries, /UnitedStatesSilverEagleSeriesPage locale="en"/);
+    assert.match(silverEaglePage, /id="main-content"/);
+    assert.match(silverEaglePage, /collectionPageJsonLd/);
+    assert.match(silverEaglePage, /max-w-\[46rem\]/);
+    assert.match(silverEaglePage, /max-w-content/);
+    assert.doesNotMatch(silverEaglePage, /SeriesHero/);
+    assert.doesNotMatch(silverEaglePage, /blog/);
+    assert.match(silverEagleEssay, /chapterId === 'american-silver-eagle'/);
+    assert.match(silverEagleEssay, /American Silver Eagle \(1986–2026\)/);
+    assert.match(silverEagleEssay, /Liberty Coin Act/);
+    assert.match(silverEagleEssay, /Emily Damstra/);
+    assert.match(silverEagleEssay, /Esta página no publica precios/);
+    assert.match(silverEagleEssay, /This page does not publish prices/);
+    assert.doesNotMatch(silverEagleEssay, /\$\d+\.\d{2}/);
+    assert.doesNotMatch(silverEagleEssay, /Pembroke Pines/);
+    assert.doesNotMatch(holdings, /american-silver-eagle/);
   });
 });

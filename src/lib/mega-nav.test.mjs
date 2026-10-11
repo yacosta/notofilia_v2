@@ -383,6 +383,9 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /en: morganSeriesCopy\.en\.title/);
     assert.match(usBlock, /href: USA_MORGAN_PATH/);
     assert.match(usBlock, /children: usMorganOriginalRun\.map/);
+    assert.match(usBlock, /id: 'us-american-silver-eagle'/);
+    assert.match(usBlock, /es: silverEagleSeriesCopy\.es\.title/);
+    assert.match(usBlock, /href: USA_SILVER_EAGLE_PATH/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);

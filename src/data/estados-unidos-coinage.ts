@@ -10,12 +10,15 @@ export const USA_HARD_TIMES_PATH = '/coleccion/estados-unidos-numismatica/fichas
 export const USA_HARD_TIMES_PATH_EN = '/collection/united-states-numismatics/hard-times-tokens/';
 export const USA_MORGAN_PATH = '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/';
 export const USA_MORGAN_PATH_EN = '/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/';
+export const USA_SILVER_EAGLE_PATH = '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/';
+export const USA_SILVER_EAGLE_PATH_EN = '/collection/united-states-numismatics/american-silver-eagle-1986-2026/';
 
 export type UnitedStatesCoinageChapterId =
   | 'hard-times'
   | 'medallas-ceca'
   | 'ceca-filadelfia'
   | 'dolar-morgan'
+  | 'american-silver-eagle'
   | 'dolar-laton'
   | 'semiquincentenario';
 
@@ -90,6 +93,22 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
     body: {
       es: 'La ley de acuñación de 1873 omitió el dólar de plata estándar. El 28 de febrero de 1878 el Congreso, por encima del veto, aprobó la ley que autoriza su acuñación y le devuelve el curso legal: el secretario del Tesoro debía comprar cada mes no menos de dos millones de dólares en plata, ni más de cuatro, y convertirla en esos dólares. La United States Mint fija el peso y la ley en los de la ley del 18 de enero de 1837: 26,73 g, 90 % plata y 10 % cobre. George T. Morgan grabó el tipo: Libertad a la izquierda en el anverso, y un águila con flechas y rama de olivo en el reverso. Las primeras piezas salieron en 1878 en Filadelfia, San Francisco y Carson City; Nueva Orleans se sumó al año siguiente. La serie llega hasta 1904 y reaparece en 1921. Esta vitrina no cubre el Peace dollar ni el trade dollar. Documenta un dólar Morgan de 1884 con marca S, otro de 1883 con marca CC y otro de 1885 con marca CC, los tres sueltos y sin número de serie. El 1883 sin letra es Filadelfia. El 1885-CC cierra el primer periodo de Carson City: la casa dejó de acuñar en noviembre de 1885 y reanudó la moneda el 1 de julio de 1889. PCGS da 228.000 piezas. Tras las dispersiones del Tesoro de 1962–1964 quedaron 148.285 ejemplares para las ventas de la GSA. Este 1885-CC no tiene procedencia GSA documentada.',
       en: 'The coinage act of 1873 dropped the standard silver dollar. On 28 February 1878 Congress, over a veto, passed the act that authorizes its coinage and restores legal tender: the Treasury secretary was to buy each month not less than two million dollars of silver, and not more than four, and coin it into those dollars. The United States Mint sets the weight and fineness at those of the act of 18 January 1837: 26.73 g, 90% silver and 10% copper. George T. Morgan engraved the type: Liberty facing left on the obverse, and an eagle with arrows and an olive branch on the reverse. The first pieces came in 1878 at Philadelphia, San Francisco, and Carson City; New Orleans joined the next year. The series runs to 1904 and returns in 1921. This case does not cover the Peace dollar or the trade dollar. It records one 1884 Morgan dollar with an S mint mark, one 1883 Morgan dollar with a CC mint mark, and one 1885 Morgan dollar with a CC mint mark, all three raw and with no serial number. The 1883 with no letter is Philadelphia. The 1885-CC closes Carson City’s first coinage period: the house stopped striking in November 1885 and resumed coinage on 1 July 1889. PCGS gives 228,000 pieces. After the 1962–1964 Treasury dispersals, 148,285 examples were held for the GSA sales. This 1885-CC has no documented GSA provenance.',
+    },
+  },
+  {
+    id: 'american-silver-eagle',
+    years: { es: '1986–2026', en: '1986–2026' },
+    title: {
+      es: 'American Silver Eagle',
+      en: 'American Silver Eagle',
+    },
+    lead: {
+      es: 'Onza troy de plata .999, autorizada el 9 de julio de 1985. La serie tiene página propia. Todavía no hay una ficha en esta colección.',
+      en: 'A troy ounce of .999 silver, authorized on 9 July 1985. The series has its own page. No record is in this collection yet.',
+    },
+    body: {
+      es: 'El 9 de julio de 1985 el Título II de la Public Law 99-61 autorizó una moneda de una onza troy de plata .999, con la Libertad en el anverso y un águila en el reverso, y valor facial de un dólar. La United States Mint la acuñó por primera vez en 1986 y la mantiene en 2026. El anverso es la Walking Liberty de Adolph A. Weinman. El reverso de John Mercanti corre hasta 2021; desde mediados de ese año el reverso es el de Emily Damstra, grabado por Michael Gaudioso. La pieza de inversión no lleva marca de ceca. La página de la serie reúne las especificaciones y el lugar donde irán las fichas. Todavía no hay un American Silver Eagle catalogado. Esta página no publica precios.',
+      en: 'On 9 July 1985 Title II of Public Law 99-61 authorized a coin of one troy ounce of .999 silver, with Liberty on the obverse and an eagle on the reverse, and a face value of one dollar. The United States Mint first struck it in 1986 and still strikes it in 2026. The obverse is Adolph A. Weinman’s Walking Liberty. John Mercanti’s reverse runs through 2021; from the middle of that year the reverse is Emily Damstra’s, sculpted by Michael Gaudioso. The bullion piece carries no mint mark. The series page holds the specifications and the place where the records will go. No American Silver Eagle is catalogued yet. This page does not publish prices.',
     },
   },
   {
@@ -244,10 +263,11 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Seis capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
+      'Siete capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el American Silver Eagle —con vitrina propia—, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC y 1885-CC y el 1 $ de 1776–2026 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     morganChapterCta: 'Abrir la emisión original',
+    silverEagleChapterCta: 'Abrir la serie',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     parentLink: 'Numismática',
@@ -269,10 +289,11 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Six chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
+      'Seven chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the American Silver Eagle — with its own case — the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, and 1885-CC Morgan dollars, and the 1776–2026 $1 documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     morganChapterCta: 'Open the original run',
+    silverEagleChapterCta: 'Open the series',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     parentLink: 'Numismatics',
@@ -2152,6 +2173,7 @@ export const coinPageCopy = {
     chapterLink: 'Semiquincentenario',
     hardTimesLink: 'Fichas Hard Times',
     morganSeriesLink: 'Dólar Morgan, 1878–1904',
+    silverEagleSeriesLink: 'American Silver Eagle, 1986–2026',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
@@ -2185,6 +2207,7 @@ export const coinPageCopy = {
     chapterLink: 'Semiquincentennial',
     hardTimesLink: 'Hard Times tokens',
     morganSeriesLink: 'Morgan dollar, 1878–1904',
+    silverEagleSeriesLink: 'American Silver Eagle, 1986–2026',
     frontHeading: 'Obverse',
     backHeading: 'Reverse',
     aboutHeading: 'The coin',
@@ -2251,9 +2274,14 @@ export function morganPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_MORGAN_PATH_EN}` : USA_MORGAN_PATH;
 }
 
+export function silverEaglePath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${USA_SILVER_EAGLE_PATH_EN}` : USA_SILVER_EAGLE_PATH;
+}
+
 export function chapterHref(id: UnitedStatesCoinageChapterId, locale: 'es' | 'en' = 'es'): string {
   if (id === 'hard-times') return hardTimesPath(locale);
   if (id === 'dolar-morgan') return morganPath(locale);
+  if (id === 'american-silver-eagle') return silverEaglePath(locale);
   return `#${id}`;
 }
 
@@ -2270,5 +2298,7 @@ export const unitedStatesCoinageDedicatedSlugs = [
   USA_HARD_TIMES_PATH_EN,
   USA_MORGAN_PATH,
   USA_MORGAN_PATH_EN,
+  USA_SILVER_EAGLE_PATH,
+  USA_SILVER_EAGLE_PATH_EN,
   ...unitedStatesCoins.flatMap((coin) => [coin.path, coin.pathEn]),
 ].map((path) => path.replace(/^\/en(?=\/)/, '').replace(/^\/|\/$/g, ''));

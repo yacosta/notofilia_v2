@@ -27,10 +27,12 @@ import {
   USA_COINAGE_PATH,
   USA_HARD_TIMES_PATH,
   USA_MORGAN_PATH,
+  USA_SILVER_EAGLE_PATH,
   coinById,
   morganOriginalRunCoins,
 } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
+import { silverEagleHoldings, silverEagleSeriesCopy } from '../data/estados-unidos-silver-eagle';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -111,6 +113,8 @@ const usMorganOriginalRun = morganOriginalRunCoins();
 if (usMorganOriginalRun.length === 0) {
   throw new Error('Missing original-run Morgan dollars for mega-nav');
 }
+
+const usSilverEagles = silverEagleHoldings();
 
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
 if (!usHt34) {
@@ -533,6 +537,22 @@ export const megaNav: NavNode[] = [
               en: coin.title.en,
               href: coin.path,
             })),
+          },
+          {
+            id: 'us-american-silver-eagle',
+            es: silverEagleSeriesCopy.es.title,
+            en: silverEagleSeriesCopy.en.title,
+            href: USA_SILVER_EAGLE_PATH,
+            ...(usSilverEagles.length > 0
+              ? {
+                  children: usSilverEagles.map((coin) => ({
+                    id: `us-${coin.id}`,
+                    es: coin.title.es,
+                    en: coin.title.en,
+                    href: coin.path,
+                  })),
+                }
+              : {}),
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

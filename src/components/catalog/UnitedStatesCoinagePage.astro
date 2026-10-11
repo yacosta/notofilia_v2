@@ -167,7 +167,9 @@ const jsonLd = collectionPageJsonLd({
                       ? t.hardTimesChapterCta
                       : chapter.id === 'dolar-morgan'
                         ? t.morganChapterCta
-                        : t.viewChapter} →
+                        : chapter.id === 'american-silver-eagle'
+                          ? t.silverEagleChapterCta
+                          : t.viewChapter} →
                   </span>
                 </a>
               </li>
