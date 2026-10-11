@@ -56,7 +56,7 @@ export type EditorialArticle = {
   caption: LocalizedText;
   /** Letterbox the in-flow figure instead of cropping to 16:9. */
   imageFit?: 'contain' | 'cover';
-  /** Museum-case column (`max-w-content`). The dek stays at 46rem; the figure and the body share the case. */
+  /** Museum-case column (`max-w-content`) instead of the 46rem reading measure. */
   wide?: boolean;
   bodyHtml: LocalizedText;
   claim?: ClaimCallout | null;

@@ -132,7 +132,7 @@ const jsonLd = {
         </ol>
       </nav>
 
-      <header>
+      <header class:list={[wide && 'max-w-[46rem]']}>
         <p class="mb-3 mt-0 font-sans text-[13px] uppercase tracking-[0.08em] text-muted">
           {t.published}{' '}
           <time datetime={article.published}>{locale === 'en' ? article.dateEn : article.dateEs}</time>
@@ -156,14 +156,7 @@ const jsonLd = {
         <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
           {title}
         </h1>
-        <p
-          class:list={[
-            'mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim',
-            wide && 'max-w-[46rem]',
-          ]}
-        >
-          {dek}
-        </p>
+        <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{dek}</p>
         <dl class="mb-9 mt-0 grid gap-1 font-sans text-[14px] tracking-[0.02em] text-muted">
           <div class="flex flex-wrap gap-x-2">
             <dt class="m-0 font-semibold text-cream-soft">{t.reviewedBy}</dt>
@@ -265,7 +258,7 @@ const jsonLd = {
         ) : null
       }
 
-      <div class="prose-notofilia" lang={bodyIsFallback ? 'es' : locale} set:html={body} />
+      <div class:list={['prose-notofilia', wide && 'max-w-[46rem]']} lang={bodyIsFallback ? 'es' : locale} set:html={body} />
 
       {faqItems.length ? <FaqBlock heading={copy[locale].faqHeading} items={faqItems} /> : null}
 
