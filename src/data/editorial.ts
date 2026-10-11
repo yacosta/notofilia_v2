@@ -281,6 +281,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Dólares Morgan de plata — emisión original (1878–1904)',
     en: 'Morgan Silver Dollars — Original Run (1878–1904)',
   },
+  '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
+    es: 'American Silver Eagle (1986–2026)',
+    en: 'American Silver Eagle (1986–2026)',
+  },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'Ficha Hard Times de 1837 · HT-34 / Low-20',
     en: '1837 Hard Times token · HT-34 / Low-20',
@@ -387,6 +391,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
     es: 'La emisión original del dólar Morgan, 1878–1904, con el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia de la colección.',
     en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
+  },
+  '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
+    es: 'La onza de plata .999 de 1986 a 2026. Las fichas de la serie se publicarán en esta página.',
+    en: 'The .999 silver ounce from 1986 to 2026. The series records will be published on this page.',
   },
   '/coleccion/estados-unidos-numismatica/ht-34-1837-burro-tortuga/': {
     es: 'La ficha HT-34 (Low-20) de 1837 en la colección virtual.',

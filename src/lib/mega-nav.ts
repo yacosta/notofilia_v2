@@ -27,10 +27,12 @@ import {
   USA_COINAGE_PATH,
   USA_HARD_TIMES_PATH,
   USA_MORGAN_PATH,
+  USA_SILVER_EAGLE_PATH,
   coinById,
   morganOriginalRunCoins,
 } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
+import { silverEagleHoldings, silverEagleSeriesCopy } from '../data/estados-unidos-silver-eagle';
 import {
   INDIAN_HEAD_QUARTER_EAGLE_PATH,
   indianHeadQuarterEagleCopy,
@@ -119,6 +121,11 @@ if (!usSilverEagle1988) {
 const usMorganOriginalRun = morganOriginalRunCoins();
 if (usMorganOriginalRun.length === 0) {
   throw new Error('Missing original-run Morgan dollars for mega-nav');
+}
+
+const usSilverEagles = silverEagleHoldings();
+if (!usSilverEagles.some((coin) => coin.id === usSilverEagle1988.id)) {
+  throw new Error('The 1988 American Silver Eagle must sit under the series menu');
 }
 
 const usHt34 = coinById('ht-34-1837-burro-tortuga');
@@ -552,10 +559,16 @@ export const megaNav: NavNode[] = [
             })),
           },
           {
-            id: 'us-1-dolar-aguila-plata-1988',
-            es: usSilverEagle1988.title.es,
-            en: usSilverEagle1988.title.en,
-            href: usSilverEagle1988.path,
+            id: 'us-american-silver-eagle',
+            es: silverEagleSeriesCopy.es.title,
+            en: silverEagleSeriesCopy.en.title,
+            href: USA_SILVER_EAGLE_PATH,
+            children: usSilverEagles.map((coin) => ({
+              id: `us-${coin.id}`,
+              es: coin.title.es,
+              en: coin.title.en,
+              href: coin.path,
+            })),
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

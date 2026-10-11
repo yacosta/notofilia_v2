@@ -11,6 +11,7 @@ import {
   coinPath,
   hardTimesPath,
   morganPath,
+  silverEaglePath,
   NUMISMATICS_PATH,
   seriesCopy,
   type UnitedStatesCoin,
@@ -54,6 +55,9 @@ const jsonCrumbs = [
     : []),
   ...(coin.chapterId === 'dolar-morgan'
     ? [{ name: t.morganSeriesLink, path: morganPath(locale) }]
+    : []),
+  ...(coin.chapterId === 'american-silver-eagle'
+    ? [{ name: t.silverEagleSeriesLink, path: silverEaglePath(locale) }]
     : []),
   { name: seo.h1, path: pathname },
 ];
@@ -101,6 +105,9 @@ const jsonCrumbs = [
             : []),
           ...(coin.chapterId === 'dolar-morgan'
             ? [{ href: morganPath(locale), label: t.morganSeriesLink }]
+            : []),
+          ...(coin.chapterId === 'american-silver-eagle'
+            ? [{ href: silverEaglePath(locale), label: t.silverEagleSeriesLink }]
             : []),
           { label: seo.h1 },
         ]}

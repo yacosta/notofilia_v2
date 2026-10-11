@@ -10,14 +10,16 @@ export const USA_HARD_TIMES_PATH = '/coleccion/estados-unidos-numismatica/fichas
 export const USA_HARD_TIMES_PATH_EN = '/collection/united-states-numismatics/hard-times-tokens/';
 export const USA_MORGAN_PATH = '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/';
 export const USA_MORGAN_PATH_EN = '/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/';
+export const USA_SILVER_EAGLE_PATH = '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/';
+export const USA_SILVER_EAGLE_PATH_EN = '/collection/united-states-numismatics/american-silver-eagle-1986-2026/';
 
 export type UnitedStatesCoinageChapterId =
   | 'hard-times'
   | 'medallas-ceca'
   | 'ceca-filadelfia'
   | 'dolar-morgan'
+  | 'american-silver-eagle'
   | 'dolar-laton'
-  | 'aguila-de-plata'
   | 'semiquincentenario';
 
 export type UnitedStatesCoinageChapter = {
@@ -94,6 +96,22 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
     },
   },
   {
+    id: 'american-silver-eagle',
+    years: { es: '1986–2026', en: '1986–2026' },
+    title: {
+      es: 'American Silver Eagle',
+      en: 'American Silver Eagle',
+    },
+    lead: {
+      es: 'Onza troy de plata .999, autorizada el 9 de julio de 1985. La serie tiene página propia. Esta colección documenta un ejemplar de 1988, sin marca de ceca.',
+      en: 'A troy ounce of .999 silver, authorized on 9 July 1985. The series has its own page. This collection records a 1988 example, with no mint mark.',
+    },
+    body: {
+      es: 'El 9 de julio de 1985 el Título II de la Public Law 99-61 autorizó una moneda de una onza troy de plata .999, con la Libertad en el anverso y un águila en el reverso, y valor facial de un dólar. La United States Mint la acuñó por primera vez en 1986 y la mantiene en 2026. El anverso es la Walking Liberty de Adolph A. Weinman. El reverso de John Mercanti corre hasta 2021; desde mediados de ese año el reverso es el de Emily Damstra, grabado por Michael Gaudioso. La pieza de inversión no lleva marca de ceca. La página de la serie reúne las especificaciones y las fichas. Esta colección documenta el ejemplar de 1988. Esta página no publica precios.',
+      en: 'On 9 July 1985 Title II of Public Law 99-61 authorized a coin of one troy ounce of .999 silver, with Liberty on the obverse and an eagle on the reverse, and a face value of one dollar. The United States Mint first struck it in 1986 and still strikes it in 2026. The obverse is Adolph A. Weinman’s Walking Liberty. John Mercanti’s reverse runs through 2021; from the middle of that year the reverse is Emily Damstra’s, sculpted by Michael Gaudioso. The bullion piece carries no mint mark. The series page holds the specifications and the records. This collection records the 1988 example. This page does not publish prices.',
+    },
+  },
+  {
     id: 'dolar-laton',
     years: { es: 'desde 2000', en: 'from 2000' },
     title: {
@@ -123,22 +141,6 @@ export const unitedStatesCoinageChapters: UnitedStatesCoinageChapter[] = [
     body: {
       es: 'La Circulating Collectible Coin Redesign Act of 2020 (Public Law 116-330; 31 U.S.C. § 5112(y)(1)(C)) permite al secretario del Tesoro acuñar, durante 2026, un dólar de 1 $ con un diseño emblemático del Semiquincentenario. Prohíbe retratos de personas vivas en el reverso; no impone la misma restricción al anverso. El 16 de julio de 2026 el Tesoro presentó el tipo: retrato de frente de Joseph Menna (JFM), a partir de una fotografía oficial de la Casa Blanca de Daniel Torok, con LIBERTY, IN GOD WE TRUST y la doble fecha 1776 ~ 2026; reverso de Gasparro con 250 en el escudo. Los rollos y bolsas de calidad de circulación, solo de Filadelfia y sin marca de ceca, salieron a la venta el 2 de septiembre de 2026. Un programa aparte de oro de 24 quilates de una onza no es esta pieza. Un antecedente de presidente en vida en moneda estadounidense es el medio dólar del Sesquicentenario de 1926, con Calvin Coolidge.',
       en: 'The Circulating Collectible Coin Redesign Act of 2020 (Public Law 116-330; 31 U.S.C. § 5112(y)(1)(C)) lets the Treasury secretary strike, during 2026, a $1 coin with a design emblematic of the Semiquincentennial. It bars portraits of living people on the reverse; it places no matching limit on the obverse. On 16 July 2026 the Treasury unveiled the type: a facing portrait by Joseph Menna (JFM), after an official White House photograph by Daniel Torok, with LIBERTY, IN GOD WE TRUST, and the dual date 1776 ~ 2026; Gasparro’s reverse with 250 in the shield. Circulating-quality rolls and bags, Philadelphia only and without a mint mark, went on sale on 2 September 2026. A separate 24-karat one-ounce gold program is not this piece. A precedent for a living president on United States coin is the 1926 Sesquicentennial half dollar, with Calvin Coolidge.',
-    },
-  },
-  {
-    id: 'aguila-de-plata',
-    years: { es: 'desde 1986', en: 'from 1986' },
-    title: {
-      es: 'El American Silver Eagle',
-      en: 'The American Silver Eagle',
-    },
-    lead: {
-      es: 'La ley de 1985 autorizó un dólar de plata de inversión, de una onza troy. Esta vitrina guarda un ejemplar de 1988 sin marca de ceca, con el anverso de Weinman y el reverso heráldico de Mercanti.',
-      en: 'The 1985 act authorized a one-troy-ounce silver bullion dollar. This case holds a 1988 example with no mint mark, Weinman’s obverse, and Mercanti’s heraldic reverse.',
-    },
-    body: {
-      es: 'La Liberty Coin Act (Public Law 99-61, 9 de julio de 1985) ordenó acuñar, según la demanda, monedas de un dólar con 31,103 g y 40,6 mm, plata .999, canto estriado, un anverso simbólico de la Libertad y un águila en el reverso. El programa de plata empezó en 1986. El anverso retoma la Walking Liberty de Adolph A. Weinman, el medio dólar de 1916 a 1947. El reverso heráldico, con escudo, es de John Mercanti y se usó de 1986 a 2021. Desde 2021 la Mint usa el águila que aterriza, de Emily Damstra; no es esta pieza. La emisión de inversión no lleva marca de ceca. Coin World publicó el 16 de octubre de 2020 la tabla que la Mint entregó por una solicitud FOIA: en 1988, 755.000 piezas en West Point y 4.249.646 en San Francisco, 5.004.646 en total, sin cantidad de Filadelfia en esa fila. PCGS 9816 reúne esa tirada y anota la ceca como Filadelfia, dato que no coincide con la tabla. El proof de 1988 lleva S y es otra emisión. Esta vitrina documenta un ejemplar suelto de 1988, sin marca visible, sin serial y sin cápsula. Las fotos no pesan ni ensayan el disco, y no separan San Francisco de West Point.',
-      en: 'The Liberty Coin Act (Public Law 99-61, 9 July 1985) directed the Mint to strike, as demand required, one-dollar coins of 31.103 g and 40.6 mm, .999 silver, with a reeded edge, an obverse symbolic of Liberty, and an eagle on the reverse. The silver program began in 1986. The obverse revives Adolph A. Weinman’s Walking Liberty, the half dollar of 1916 to 1947. The heraldic reverse, with a shield, is John Mercanti’s and was used from 1986 through 2021. Since 2021 the Mint has used Emily Damstra’s landing eagle; that is not this piece. The bullion issue carries no mint mark. On 16 October 2020 Coin World published the table the Mint released under a FOIA request: for 1988, 755,000 pieces at West Point and 4,249,646 at San Francisco, 5,004,646 in all, with no Philadelphia quantity in that row. PCGS 9816 gathers that mintage and enters the mint as Philadelphia, which does not match the table. The 1988 proof carries an S and is a different issue. This case records one raw 1988 example, with no visible mint mark, no serial, and no holder. The photographs neither weigh nor assay the disc, and they do not separate San Francisco from West Point.',
     },
   },
 ];
@@ -288,10 +290,11 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'El catálogo',
     holdingsIntro:
-      'Siete capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el dólar de latón-manganeso, el Semiquincentenario y el American Silver Eagle. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893, el 1 $ de 1776–2026 y el American Silver Eagle de 1988 documentados en esta colección.',
+      'Siete capítulos, de izquierda a derecha: Hard Times —con vitrina propia—, las medallas de la ceca, la ceca de Filadelfia, el dólar Morgan, el American Silver Eagle —con vitrina propia—, el dólar de latón-manganeso y el Semiquincentenario. Debajo, el HT-10A de 1834, el HT-16 de 1841, el HT-34 de 1837, la store card HT-181 de John J. Adams, la medalla de 1836, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, los dólares Morgan de 1884-S, 1883-CC, 1885-CC y 1893, el 1 $ de 1776–2026 y el American Silver Eagle de 1988 documentados en esta colección.',
     viewChapter: 'Leer el capítulo',
     hardTimesChapterCta: 'Abrir la vitrina Hard Times',
     morganChapterCta: 'Abrir la emisión original',
+    silverEagleChapterCta: 'Abrir la serie',
     sourcesTitle: 'Fuentes',
     eraLabel: 'Época',
     parentLink: 'Numismática',
@@ -313,10 +316,11 @@ export const seriesCopy = {
     ],
     holdingsTitle: 'The catalog',
     holdingsIntro:
-      'Seven chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the manganese-brass dollar, the Semiquincentennial, and the American Silver Eagle. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, the 1776–2026 $1, and the 1988 American Silver Eagle documented in this collection.',
+      'Seven chapters, left to right: Hard Times — with its own case — Mint medals, the Philadelphia mint, the Morgan dollar, the American Silver Eagle — with its own case — the manganese-brass dollar, and the Semiquincentennial. Below, the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, the John J. Adams HT-181 store card, the 1836 medal, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1884-S, 1883-CC, 1885-CC, and 1893 Morgan dollars, the 1776–2026 $1, and the 1988 American Silver Eagle documented in this collection.',
     viewChapter: 'Read the chapter',
     hardTimesChapterCta: 'Open the Hard Times case',
     morganChapterCta: 'Open the original run',
+    silverEagleChapterCta: 'Open the series',
     sourcesTitle: 'Sources',
     eraLabel: 'Period',
     parentLink: 'Numismatics',
@@ -2322,7 +2326,7 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     id: '1-dolar-aguila-plata-1988',
     path: '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/',
     pathEn: '/en/collection/united-states-numismatics/1-dollar-american-silver-eagle-1988/',
-    chapterId: 'aguila-de-plata',
+    chapterId: 'american-silver-eagle',
     year: '1988',
     mint: {
       es: 'Sin marca de ceca; este ejemplar no se asigna a San Francisco ni a West Point',
@@ -2474,6 +2478,7 @@ export const coinPageCopy = {
     chapterLink: 'Semiquincentenario',
     hardTimesLink: 'Fichas Hard Times',
     morganSeriesLink: 'Dólar Morgan, 1878–1904',
+    silverEagleSeriesLink: 'American Silver Eagle, 1986–2026',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
@@ -2507,6 +2512,7 @@ export const coinPageCopy = {
     chapterLink: 'Semiquincentennial',
     hardTimesLink: 'Hard Times tokens',
     morganSeriesLink: 'Morgan dollar, 1878–1904',
+    silverEagleSeriesLink: 'American Silver Eagle, 1986–2026',
     frontHeading: 'Obverse',
     backHeading: 'Reverse',
     aboutHeading: 'The coin',
@@ -2573,9 +2579,14 @@ export function morganPath(locale: 'es' | 'en'): string {
   return locale === 'en' ? `/en${USA_MORGAN_PATH_EN}` : USA_MORGAN_PATH;
 }
 
+export function silverEaglePath(locale: 'es' | 'en'): string {
+  return locale === 'en' ? `/en${USA_SILVER_EAGLE_PATH_EN}` : USA_SILVER_EAGLE_PATH;
+}
+
 export function chapterHref(id: UnitedStatesCoinageChapterId, locale: 'es' | 'en' = 'es'): string {
   if (id === 'hard-times') return hardTimesPath(locale);
   if (id === 'dolar-morgan') return morganPath(locale);
+  if (id === 'american-silver-eagle') return silverEaglePath(locale);
   return `#${id}`;
 }
 
@@ -2592,5 +2603,7 @@ export const unitedStatesCoinageDedicatedSlugs = [
   USA_HARD_TIMES_PATH_EN,
   USA_MORGAN_PATH,
   USA_MORGAN_PATH_EN,
+  USA_SILVER_EAGLE_PATH,
+  USA_SILVER_EAGLE_PATH_EN,
   ...unitedStatesCoins.flatMap((coin) => [coin.path, coin.pathEn]),
 ].map((path) => path.replace(/^\/en(?=\/)/, '').replace(/^\/|\/$/g, ''));

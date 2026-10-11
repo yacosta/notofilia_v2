@@ -8,8 +8,11 @@ import { navColumns } from './nav-columns.ts';
 register(new URL('./resolve-ts-hook.mjs', import.meta.url));
 
 const { megaNav } = await import('./mega-nav.ts');
-const { USA_MORGAN_PATH, morganOriginalRunCoins } = await import('../data/estados-unidos-coinage.ts');
+const { USA_MORGAN_PATH, USA_SILVER_EAGLE_PATH, morganOriginalRunCoins } = await import(
+  '../data/estados-unidos-coinage.ts'
+);
 const { morganSeriesCopy, morganHoldings } = await import('../data/estados-unidos-morgan-dollars.ts');
+const { silverEagleSeriesCopy, silverEagleHoldings } = await import('../data/estados-unidos-silver-eagle.ts');
 
 describe('collection menu labels', () => {
   it('uses a dash between Colección Virtual and the discipline name', () => {
@@ -370,7 +373,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
     assert.match(usBlock, /id: 'us-quarter-eagle-liberty-head-1840-1907'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
-    assert.match(usBlock, /id: 'us-1-dolar-aguila-plata-1988'/);
+    assert.match(usBlock, /children: usSilverEagles\.map/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /id: 'us-medalla-1836-primera-acunacion-vapor'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
@@ -385,6 +388,9 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /en: morganSeriesCopy\.en\.title/);
     assert.match(usBlock, /href: USA_MORGAN_PATH/);
     assert.match(usBlock, /children: usMorganOriginalRun\.map/);
+    assert.match(usBlock, /id: 'us-american-silver-eagle'/);
+    assert.match(usBlock, /es: silverEagleSeriesCopy\.es\.title/);
+    assert.match(usBlock, /href: USA_SILVER_EAGLE_PATH/);
     assert.match(usBlock, /es: usTrumpDollar\.title\.es/);
     assert.match(usBlock, /en: usTrumpDollar\.title\.en/);
     assert.match(usBlock, /href: usTrumpDollar\.path/);
@@ -448,6 +454,29 @@ describe('United States numismatics menu', () => {
     assert.deepEqual(
       morganHoldings().map((coin) => coin.id),
       holdings.map((coin) => coin.id),
+    );
+    const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
+    for (const coin of holdings) {
+      assert.equal(directHrefs.includes(coin.path), false);
+    }
+  });
+
+  it('nests the 1988 American Silver Eagle under the 1986–2026 series', () => {
+    const numismatica = megaNav.find((item) => item.id === 'numismatica-mundial');
+    const unitedStates = numismatica?.children?.find((item) => item.id === 'us-monedas');
+    const submenu = unitedStates?.children?.find((item) => item.id === 'us-american-silver-eagle');
+    const holdings = silverEagleHoldings();
+    assert.ok(submenu);
+    assert.equal(submenu.es, silverEagleSeriesCopy.es.title);
+    assert.equal(submenu.en, silverEagleSeriesCopy.en.title);
+    assert.equal(submenu.href, USA_SILVER_EAGLE_PATH);
+    assert.deepEqual(
+      submenu.children?.map((item) => item.href),
+      holdings.map((coin) => coin.path),
+    );
+    assert.deepEqual(
+      holdings.map((coin) => coin.id),
+      ['1-dolar-aguila-plata-1988'],
     );
     const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
     for (const coin of holdings) {
