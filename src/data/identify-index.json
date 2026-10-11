@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T00:50:00.000Z",
+  "generatedAt": "2026-10-11T02:40:02.565Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3394,6 +3394,45 @@
       "title": {
         "es": "Medalla · Primera acuñación a vapor · 1836",
         "en": "Medal · First steam coinage · 1836"
+      }
+    },
+    {
+      "pieceId": "1-dolar-aguila-plata-1988",
+      "face": "front",
+      "hash": "00533532b2753300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/",
+      "pick": "KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-composite.jpg",
+      "title": {
+        "es": "1 dólar · American Silver Eagle · 1988",
+        "en": "1 dollar · American Silver Eagle · 1988"
+      }
+    },
+    {
+      "pieceId": "1-dolar-aguila-plata-1988",
+      "face": "front",
+      "hash": "080c0a1e0e2a1c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/",
+      "pick": "KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-front.jpg",
+      "title": {
+        "es": "1 dólar · American Silver Eagle · 1988",
+        "en": "1 dollar · American Silver Eagle · 1988"
+      }
+    },
+    {
+      "pieceId": "1-dolar-aguila-plata-1988",
+      "face": "back",
+      "hash": "0814161a26361408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/",
+      "pick": "KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-back.jpg",
+      "title": {
+        "es": "1 dólar · American Silver Eagle · 1988",
+        "en": "1 dollar · American Silver Eagle · 1988"
       }
     },
     {

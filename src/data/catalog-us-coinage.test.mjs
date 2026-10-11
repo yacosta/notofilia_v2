@@ -613,3 +613,45 @@ describe('US 1836 First Steam Coinage medal', () => {
     assert.match(holdings, /id: 'us-1836-medalla-j-mt-21'/);
   });
 });
+
+describe('US 1988 American Silver Eagle', () => {
+  it('registers one bilingual bullion dollar, unassigned to a mint facility', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-american-silver-eagle-1988/',
+    );
+    assert.match(data, /id: '1-dolar-aguila-plata-1988'/);
+    assert.match(data, /chapterId: 'aguila-de-plata'/);
+    assert.match(data, /1 dólar · American Silver Eagle · 1988/);
+    assert.match(data, /1 dollar · American Silver Eagle · 1988/);
+    assert.match(data, /KM# 273 · PCGS# 9816 · Schön# 216 · N# 1493/);
+    assert.match(data, /5\.004\.646/);
+    assert.match(data, /5,004,646/);
+    assert.match(data, /4\.249\.646/);
+    assert.match(data, /755\.000/);
+    assert.match(data, /4,900,000/);
+    assert.match(data, /no_serial_reason:\n      'Struck American Silver Eagle bullion dollar/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-composite\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-front\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-1988-american-silver-eagle-back\.jpg/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-1988-american-silver-eagle-${side}.jpg`,
+          import.meta.url,
+        ),
+      );
+    }
+    assert.match(data, /31 U\.S\.C\. § 5112\(e\)/);
+    assert.match(data, /coinworld.com\/news\/us-coins\/mint-foia-response-confirms-origins-of-american-eagles/);
+    assert.match(data, /Siete capítulos/);
+    assert.match(data, /Seven chapters/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const eagle = data.slice(data.indexOf("id: '1-dolar-aguila-plata-1988'"));
+    assert.doesNotMatch(eagle, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-aguila-plata-1988', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /id: 'us-1988-silver-eagle-km273'/);
+    assert.match(data, /Sin marca de ceca; este ejemplar no se asigna/);
+  });
+});

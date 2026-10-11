@@ -360,6 +360,7 @@ describe('United States numismatics menu', () => {
     assert.match(source, /coinById\('2-50-dolares-1908-cabeza-de-indio'\)/);
     assert.match(source, /coinById\('2-50-dolares-1912-indian-head'\)/);
     assert.match(source, /coinById\('1-dolar-oro-1856-cabeza-grande'\)/);
+    assert.match(source, /coinById\('1-dolar-aguila-plata-1988'\)/);
     assert.match(source, /morganOriginalRunCoins\(\)/);
     assert.match(usBlock, /id: 'us-fichas-hard-times'/);
     assert.match(usBlock, /href: USA_HARD_TIMES_PATH/);
@@ -369,6 +370,7 @@ describe('United States numismatics menu', () => {
     assert.match(usBlock, /id: 'us-ht-16-1841-daniel-webster'/);
     assert.match(usBlock, /id: 'us-quarter-eagle-liberty-head-1840-1907'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1908-cabeza-de-indio'/);
+    assert.match(usBlock, /id: 'us-1-dolar-aguila-plata-1988'/);
     assert.match(usBlock, /id: 'us-1-dolar-trump-1776-2026'/);
     assert.match(usBlock, /id: 'us-medalla-1836-primera-acunacion-vapor'/);
     assert.match(usBlock, /id: 'us-2-50-dolares-1878-liberty-head'/);
