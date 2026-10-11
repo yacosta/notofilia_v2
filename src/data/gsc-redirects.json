@@ -3,7 +3,7 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 1098,
+    "existing": 1104,
     "legacy-dc": 51,
     "manual": 28,
     "last-slug": 7,
@@ -13495,6 +13495,36 @@
       "target": "/en/search/",
       "status": 301,
       "rule": "manual"
+    },
+    "/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen": {
+      "target": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen/": {
+      "target": "/coleccion/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen/": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/banco-de-la-republica-5000-pesos-oro-specimen": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/collection/colombia/banco-de-la-republica-5000-pesos-oro-specimen/": {
+      "target": "/en/collection/colombia/5000-pesos-oro-1993/",
+      "status": 301,
+      "rule": "existing"
     }
   }
 }
