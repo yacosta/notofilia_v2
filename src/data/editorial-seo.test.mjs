@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
+import { lookupGscRedirect } from '../lib/gsc-redirects.ts';
 
 const editorialSource = readFileSync(new URL('./editorial.ts', import.meta.url), 'utf8');
 const newsArticles = JSON.parse(readFileSync(new URL('./news-articles.json', import.meta.url), 'utf8'));
@@ -27,6 +28,37 @@ describe('editorial SEO helpers', () => {
     assert.match(article.bodyHtml.es, /\/glosario\/pick\//);
     assert.match(article.bodyHtml.es, /\/coleccion\/colombia\/2000-pesos-2008\//);
     assert.equal(article.slugEn, 'how-colombian-banknotes-are-valued');
+  });
+
+  it('shows the imprint essay figures from files that exist and links live catalog pages', () => {
+    const article = blogArticles.find(
+      (item) => item.slug === 'tres-imprentas-misterio-pie-imprenta-billetes-colombianos',
+    );
+    assert.ok(article);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.doesNotMatch(html, /href="[^"]*banco-de-la-republica-5000-pesos-oro-specimen/);
+      assert.doesNotMatch(html, /1986-specimen/);
+      assert.match(html, /\/coleccion\/colombia\/2000-pesos-oro-1983\//);
+      assert.match(html, /\/coleccion\/colombia\/5000-pesos-oro-1993\//);
+      assert.match(html, /1993-specimen-640\.webp/);
+      assert.match(html, /5000-pesos-oro-1993-82210365\.webp/);
+    }
+    assert.equal(
+      existsSync(new URL('../../public/uploads/colombia-banco-de-la-republica-2000-pesos-oro-1993-specimen-640.webp', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/colombia-banco-de-la-republica-5000-pesos-oro-1993-82210365.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/colombia-banco-de-la-republica-5000-pesos-oro-1993-82210365.webp', import.meta.url)),
+      true,
+    );
+    const redirect = lookupGscRedirect('/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen/');
+    assert.equal(redirect?.status, 301);
+    assert.equal(redirect?.target, '/coleccion/colombia/5000-pesos-oro-1993/');
   });
 });
 

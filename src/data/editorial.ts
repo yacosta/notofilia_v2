@@ -369,6 +369,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '2.000 pesos oro · 1983',
     en: '2,000 pesos oro · 1983',
   },
+  '/coleccion/colombia/5000-pesos-oro-1993/': {
+    es: '5.000 pesos oro · 1993',
+    en: '5,000 pesos oro · 1993',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
