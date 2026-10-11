@@ -107,6 +107,11 @@ if (!usGoldDollar1856) {
   throw new Error('Missing US 1856 Indian Princess gold dollar for mega-nav');
 }
 
+const usSilverEagle1988 = coinById('1-dolar-aguila-plata-1988');
+if (!usSilverEagle1988) {
+  throw new Error('Missing US 1988 American Silver Eagle for mega-nav');
+}
+
 const usMorganOriginalRun = morganOriginalRunCoins();
 if (usMorganOriginalRun.length === 0) {
   throw new Error('Missing original-run Morgan dollars for mega-nav');
@@ -533,6 +538,12 @@ export const megaNav: NavNode[] = [
               en: coin.title.en,
               href: coin.path,
             })),
+          },
+          {
+            id: 'us-1-dolar-aguila-plata-1988',
+            es: usSilverEagle1988.title.es,
+            en: usSilverEagle1988.title.en,
+            href: usSilverEagle1988.path,
           },
           {
             id: 'us-1-dolar-trump-1776-2026',

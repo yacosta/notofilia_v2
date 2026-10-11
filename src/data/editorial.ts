@@ -301,6 +301,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar · Trump · Semiquincentenario 1776–2026',
     en: '$1 · Trump · Semiquincentennial 1776–2026',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/': {
+    es: '1 dólar · American Silver Eagle · 1988',
+    en: '1 dollar · American Silver Eagle · 1988',
+  },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
     es: '2,50 dólares · Liberty Head · 1878',
     en: '2.50 dollars · Liberty Head · 1878',
@@ -403,6 +407,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-trump-1776-2026/': {
     es: 'La ficha de la pieza en la colección virtual.',
     en: 'The piece record in the virtual collection.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-aguila-plata-1988/': {
+    es: 'El American Silver Eagle de 1988, sin marca de ceca y sin cápsula.',
+    en: 'The 1988 American Silver Eagle, with no mint mark and unslabbed.',
   },
   '/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/': {
     es: 'El quarter eagle Liberty Head de 1878, Filadelfia, sin marca de ceca.',

@@ -225,6 +225,7 @@ export const additions: Holding[] = [
   { id: 'us-sc-1935c-star-25885207b', kind: 'banknote', country: 'US' },
   { id: 'us-sc-1935a-r-experimental-s71208111c', kind: 'banknote', country: 'US' },
   { id: 'us-1-dolar-morgan-1893', kind: 'coin', country: 'US' },
+  { id: 'us-1-dolar-aguila-plata-1988', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -376,6 +377,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-sc-1935c-fr1612-star' },
   { id: 'us-sc-1935a-r-experimental-fr1609' },
   { id: 'us-1893-morgan-km110' },
+  { id: 'us-1988-silver-eagle-km273' },
 ];
 
 export type CollectionStats = {
