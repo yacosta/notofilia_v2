@@ -407,8 +407,23 @@ describe('United States numismatics menu', () => {
       directHrefs.includes('/coleccion/estados-unidos-numismatica/2-50-dolares-1878-liberty-head/'),
       false,
     );
-    const indian = unitedStates?.children?.find((item) => item.id === 'us-2-50-dolares-1908-cabeza-de-indio');
-    assert.equal(indian?.href, '/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/');
+    const indianType = unitedStates?.children?.find((item) => item.id === 'us-indian-head-quarter-eagle-1908-1929');
+    assert.equal(
+      indianType?.href,
+      '/coleccion/estados-unidos-numismatica/cuarto-de-aguila-indian-head-1908-1929/',
+    );
+    assert.deepEqual(
+      indianType?.children?.map((item) => item.href),
+      [
+        '/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/',
+        '/coleccion/estados-unidos-numismatica/2-50-dolares-1912-indian-head/',
+      ],
+    );
+    const directHrefsAfter = (unitedStates?.children ?? []).map((item) => item.href);
+    assert.equal(
+      directHrefsAfter.includes('/coleccion/estados-unidos-numismatica/2-50-dolares-1908-cabeza-de-indio/'),
+      false,
+    );
   });
 
   it('nests 1878–1904 Morgan dollars under the original-run submenu', () => {

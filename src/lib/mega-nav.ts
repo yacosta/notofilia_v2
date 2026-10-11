@@ -31,6 +31,10 @@ import {
   morganOriginalRunCoins,
 } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
+import {
+  INDIAN_HEAD_QUARTER_EAGLE_PATH,
+  indianHeadQuarterEagleCopy,
+} from '../data/indian-head-quarter-eagle';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -505,16 +509,24 @@ export const megaNav: NavNode[] = [
             ],
           },
           {
-            id: 'us-2-50-dolares-1908-cabeza-de-indio',
-            es: usQuarterEagle1908.title.es,
-            en: usQuarterEagle1908.title.en,
-            href: usQuarterEagle1908.path,
-          },
-          {
-            id: 'us-2-50-dolares-1912-indian-head',
-            es: usQuarterEagle1912.title.es,
-            en: usQuarterEagle1912.title.en,
-            href: usQuarterEagle1912.path,
+            id: 'us-indian-head-quarter-eagle-1908-1929',
+            es: indianHeadQuarterEagleCopy.es.title,
+            en: indianHeadQuarterEagleCopy.en.title,
+            href: INDIAN_HEAD_QUARTER_EAGLE_PATH,
+            children: [
+              {
+                id: 'us-2-50-dolares-1908-cabeza-de-indio',
+                es: usQuarterEagle1908.title.es,
+                en: usQuarterEagle1908.title.en,
+                href: usQuarterEagle1908.path,
+              },
+              {
+                id: 'us-2-50-dolares-1912-indian-head',
+                es: usQuarterEagle1912.title.es,
+                en: usQuarterEagle1912.title.en,
+                href: usQuarterEagle1912.path,
+              },
+            ],
           },
           {
             id: 'us-1-dolar-oro-1856-cabeza-grande',
