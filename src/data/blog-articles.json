@@ -1,5 +1,136 @@
 [
   {
+    "slug": "cacique-calarca-trascendencia-numismatica",
+    "slugEn": "cacique-calarca-numismatic-afterlife",
+    "href": "/blog/cacique-calarca-trascendencia-numismatica/",
+    "title": {
+      "es": "Cacique Calarcá: Trascendencia Numismática",
+      "en": "Cacique Calarcá: a numismatic afterlife"
+    },
+    "dek": {
+      "es": "En 1952 el diez centavos dejó la plata, pasó al cuproníquel y puso el perfil de Calarcá en la menuda. La fecha corriente se acuñó por millones. La pieza que llaman Baltasar sigue sin veredicto.",
+      "en": "In 1952 the ten centavos left silver for copper-nickel and put Calarcá’s profile into everyday change. The ordinary date was struck in the millions. The piece called Baltasar still has no verdict."
+    },
+    "description": {
+      "es": "El 10 centavos de 1952: de la plata 0,500 de Santander al cuproníquel de Calarcá (KM 212.1), la marca B y la variante Baltasar, sin precio inventado.",
+      "en": "The 1952 10 centavos: from Santander’s .500 silver to Calarcá’s copper-nickel (KM 212.1), the B mint mark, and the Baltasar variety, with no invented price."
+    },
+    "seoTitle": {
+      "es": "Cacique Calarcá en el 10 centavos de 1952",
+      "en": "Calarcá on the 1952 ten-centavo coin"
+    },
+    "published": "2026-10-11",
+    "updated": null,
+    "dateEs": "11 de octubre de 2026",
+    "dateEn": "October 11, 2026",
+    "updatedEs": null,
+    "updatedEn": null,
+    "reviewer": "Yezid Acosta",
+    "keywords": {
+      "es": [
+        "Calarcá",
+        "10 centavos 1952",
+        "Baltasar",
+        "cuproníquel",
+        "Casa de Moneda de Bogotá",
+        "KM 212.1"
+      ],
+      "en": [
+        "Calarcá",
+        "1952 10 centavos",
+        "Baltasar",
+        "copper-nickel",
+        "Bogotá mint",
+        "KM 212.1"
+      ]
+    },
+    "primarySources": [
+      {
+        "label": {
+          "es": "Numista — 10 centavos, Calarcá, 1952-1966 (N# 5094)",
+          "en": "Numista — 10 centavos, Calarcá, 1952–1966 (N# 5094)"
+        },
+        "url": "https://en.numista.com/catalogue/pieces5094.html"
+      },
+      {
+        "label": {
+          "es": "Numista — 10 centavos de plata, Santander, 1945-1952 (N# 10912)",
+          "en": "Numista — silver 10 centavos, Santander, 1945–1952 (N# 10912)"
+        },
+        "url": "https://en.numista.com/catalogue/pieces10912.html"
+      },
+      {
+        "label": {
+          "es": "Bernardo González White, «Baltasar» o «indio diferente», diciembre de 2014, en El Salón de Cris",
+          "en": "Bernardo González White, “Baltasar” or “different Indian,” December 2014, in El Salón de Cris"
+        },
+        "url": "https://elsalondecris.blogspot.com/2014/12/diez-centavos-1952-b-baltasar-o-indio.html"
+      },
+      {
+        "label": {
+          "es": "El Quindiano, 26 de junio de 2024 — la muerte de Calarcá según Lopera y fray Pedro Simón",
+          "en": "El Quindiano, 26 June 2024 — Calarcá’s death according to Lopera and Fray Pedro Simón"
+        },
+        "url": "https://elquindiano.com/noticia/197312/anivresario-138-calarca-no-fue-un-cacique-sino-una-dignidad-guerrera-cap-ii/"
+      },
+      {
+        "label": {
+          "es": "Radio Nacional de Colombia, 16 de enero de 2022 — el nombre del municipio",
+          "en": "Radio Nacional de Colombia, 16 January 2022 — the town’s name"
+        },
+        "url": "https://www.radionacional.co/cultura/historia-del-cacique-calarca-y-el-nombre-del-municipio"
+      }
+    ],
+    "image": "/uploads/cacique-calarca-10-centavos-1952-b.jpg",
+    "imageWidth": 1792,
+    "imageHeight": 1008,
+    "imageFit": "contain",
+    "wide": true,
+    "imageAlt": {
+      "es": "Lámina con dos monedas de 10 centavos de 1952 marca B: a la izquierda el retrato llamado Baltasar y a la derecha la acuñación corriente de Calarcá, y debajo los reversos con las armas y la fecha",
+      "en": "Plate of two 1952-B ten-centavo coins: the portrait called Baltasar on the left and the ordinary Calarcá strike on the right, with the arms-and-date reverses below"
+    },
+    "caption": {
+      "es": "Seis diferencias que la lámina marca entre el retrato escaso y la acuñación corriente. No es una ficha de la colección.",
+      "en": "Six differences the plate marks between the scarce portrait and the ordinary strike. Not a record in the collection."
+    },
+    "claim": {
+      "kindEs": "Tirada de catálogo",
+      "kindEn": "Catalogue mintage",
+      "noteEs": "Los 6.035.000 ejemplares de 1952 B son la cifra en la que coinciden Numista (N# 5094), el KM# 212.1, Restrepo 380.1 y la nota de Bernardo González White de diciembre de 2014. No salen del cuadro anual de moneda del Banco de la República que conserva este archivo: ese cuadro empieza en 1987 y no parte una fecha. No es la tirada de la variante Baltasar, que aquí no tiene cifra oficial.",
+      "noteEn": "The 6,035,000 pieces of 1952 B are the figure on which Numista (N# 5094), KM# 212.1, Restrepo 380.1, and Bernardo González White’s December 2014 note agree. They do not come from the Banco de la República annual coin workbook kept in this archive: that table starts in 1987 and does not split a date. It is not the mintage of the Baltasar variety, which has no official count here.",
+      "evidenceHref": "https://en.numista.com/catalogue/pieces5094.html",
+      "evidenceLabelEs": "Numista N# 5094",
+      "evidenceLabelEn": "Numista N# 5094"
+    },
+    "bodyHtml": {
+      "es": "<p>En 1952 el diez centavos colombiano cambió de metal y de rostro. Hasta entonces la denominación era plata de ley 0,500, con el busto de Francisco de Paula Santander. Ese mismo año la Casa de Moneda de Bogotá acuñó, además, una pieza de cuproníquel con el perfil del líder pijao Calarcá. La fecha corriente de ese tipo nuevo salió por millones. La que los coleccionistas llaman Baltasar, o indio diferente, todavía no tiene un veredicto de autenticidad.</p>\n<p>Esta nota no es una ficha de la colección. La lámina compara dos retratos de 1952 con marca B. Las tiradas que siguen son de catálogo. El cuadro anual de moneda del Banco de la República que guarda este archivo empieza en 1987 y no alcanza esta fecha.</p>\n<h2 id=\"el-nombre\">El nombre que quedó en el metal</h2>\n<p>Calarcá entra en las crónicas de la resistencia pijao a principios del siglo XVII, en la campaña del presidente de la Real Audiencia Juan de Borja. Sobre su muerte conviven dos relatos, y no dicen lo mismo.</p>\n<p>El de la leyenda es un duelo con Baltazar, jefe coyaima bautizado y aliado de los españoles, a veces situado en Peñas Blancas. Jaime Lopera Gutiérrez lo trata como leyenda. Manuel Lucena Salmoral lo dijo en corto en 1962: Calarcá no murió a manos de Baltazar. La ficha de <a href=\"https://en.numista.com/catalogue/pieces5094.html\">Numista</a> del tipo de cuproníquel todavía resume esa pelea.</p>\n<p><a href=\"https://elquindiano.com/noticia/197312/anivresario-138-calarca-no-fue-un-cacique-sino-una-dignidad-guerrera-cap-ii/\">El Quindiano</a> (26 de junio de 2024) recoge la otra versión a partir de Lopera y de fray Pedro Simón, <em>Noticias historiales</em>, tomo VI. En el valle de Chaparral, Calarcá y el indio Coyara asaltan el fuerte del capitán Diego de Ospina. En el forcejeo, Ospina le dispara al pecho. Simón escribe que murió al quinto día y que su gente mantuvo la muerte oculta más de dos meses. Lopera apoya ese relato en un informe de servicios de Ospina, de 1650, citado como Archivo Nacional de Colombia, Miscelánea 73, folio 190. Esta página no ha abierto ese folio. Cita el reportaje y las ediciones que él nombra: Simón, Biblioteca Banco Popular, 1981, páginas 411 a 414; Lopera, <em>La colonización del Quindío</em>, Banco de la República, 1986; Lucena Salmoral, <em>Boletín Cultural y Bibliográfico</em>, volumen V, número 10, 1962.</p>\n<p>El mismo reportaje anuncia, para una entrega siguiente, la tesis de que «Calarcá» fue una dignidad guerrera y no un nombre propio. Aquí no se da por cerrada. La moneda, como Simón, lo presenta como cacique.</p>\n<p><a href=\"https://www.radionacional.co/cultura/historia-del-cacique-calarca-y-el-nombre-del-municipio\">Radio Nacional de Colombia</a> (16 de enero de 2022) recuerda que el municipio de Calarcá, en el Quindío, se fundó en 1886 con ese nombre. El mismo texto sitúa la moneda a finales de la década de 1960. El catálogo no. El tipo empieza en 1952 y la última fecha es 1966.</p>\n<h2 id=\"de-la-plata-al-cuproniquel\">De la plata al cuproníquel</h2>\n<p>El diez centavos anterior es otra pieza. <a href=\"https://en.numista.com/catalogue/pieces10912.html\">Numista N# 10912</a> lo registra como KM# 207 y Restrepo 379: plata 0,500, 2,50 g, 18 mm, canto estriado, años 1945-1952, <a href=\"/glosario/anverso/\">anverso</a> con Santander. En 1952 todavía se acuñó esa plata: 1.060.000 piezas, KM# 207.2, que Numista concuerda con Restrepo 379.10 y Hernández 416. No lleva a Calarcá.</p>\n<p>El tipo nuevo es <a href=\"https://en.numista.com/catalogue/pieces5094.html\">Numista N# 5094</a>: KM# 212.1 y 212.2, Schön 31, Restrepo 380, cuproníquel, 1952-1966. Numista atribuye las dos caras al grabador Luis Alberto Acuña Tapias. El anverso lleva las armas, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como va en el cuño— y la fecha al pie. El <a href=\"/glosario/reverso/\">reverso</a> lleva DIEZ CENTAVOS y, bajo el corte del cuello, CALARCÁ, de perfil a la derecha, con tocado de plumas.</p>\n<p>La <a href=\"/glosario/#ceca\">marca B</a> es la Casa de Moneda de Bogotá. Bernardo González White, en una nota de diciembre de 2014 que publicó Cristina Martín San Roque en <a href=\"https://elsalondecris.blogspot.com/2014/12/diez-centavos-1952-b-baltasar-o-indio.html\">El Salón de Cris</a>, la sitúa entre la base del escudo y la fecha. Escribe que dejó de usarse como marca ordinaria desde 1956. Numista coincide en lo grueso: la gran tirada de 1956 va sin B, y aparte lista una 1956 B sin cifra de acuñación. Esa nota de 2014 no es una fila del catálogo de billetes de González White de 2019, y aquí no se le asigna un BG#.</p>\n<div class=\"table-scroll\">\n<table>\n<caption>Parámetros del 10 centavos de 1952 B. Diámetro y tirada, en Numista y en González White (2014). El grosor es la cifra de tipo de Numista, no una medida publicada aparte para el módulo de 18 mm.</caption>\n<thead>\n<tr><th>Característica</th><th>1952 B</th></tr>\n</thead>\n<tbody>\n<tr><td>Metal</td><td>Cuproníquel</td></tr>\n<tr><td>Peso</td><td>2,50 g</td></tr>\n<tr><td>Diámetro</td><td>18,0 mm (KM# 212.1, Restrepo 380.1). Desde 1954, 18,5 mm (KM# 212.2)</td></tr>\n<tr><td>Grosor</td><td>1,31 mm en la ficha de tipo de Numista</td></tr>\n<tr><td>Canto</td><td>Estriado</td></tr>\n<tr><td>Alineación</td><td>Moneda (↑↓)</td></tr>\n<tr><td>Tirada de catálogo</td><td>6.035.000</td></tr>\n</tbody>\n</table>\n</div>\n<p>Esos 6.035.000 son la fecha corriente, no la variante. El otro año de módulo pequeño, 1953 B, figura en Numista con 6.985.000. González White anota que no hubo fechas de 1957 ni de 1958. La lista de Numista tampoco las trae. La última fecha del tipo es 1966.</p>\n<p>En esa nota de 2014, González White da otras cifras redondas —unos 36 millones para 1956 y para 1959, y 61,7 millones «en 1963»— que no cuadran con la tabla actual de Numista: 1956, 77.705.000; 1959, 36.653.000; y 61.672.000 corresponde a 1964, no a 1963. Para esas fechas posteriores se sigue Numista. Para el diámetro de 18 mm, el lugar de la B y la variante, se sigue la nota de 2014.</p>\n<h2 id=\"baltasar\">Baltasar, o el indio diferente</h2>\n<p>La fecha de 1952 se hizo famosa por otro cuño. González White escribió en diciembre de 2014 que la autenticidad de esa «variedad» seguía sin concepto claro. Podía ser una <a href=\"/glosario/prueba-ensayo/\">prueba</a> salida de la Casa de Moneda, o una falsificación de la época. La llamó Baltasar, o indio diferente. Han pasado más de setenta años desde la fecha de la moneda, y la nota no cierra el caso. Esta página tampoco.</p>\n<p>El apodo «la Cotuda», por el bulto del cuello, circula en el habla de coleccionistas. No está en la nota de 2014, y no es el rótulo de la lámina. La lámina dice «Baltasar» a un lado y «acuñación normal» al otro.</p>\n<p>González White añade un detalle que la lámina no muestra. Conoce dos piezas con el reverso invertido, y no son iguales: una tiene el 9 de la fecha abierto y la otra el 9 cerrado, con otras diferencias menores en los números. Escribe que la primera quedó en la colección de JFK y la segunda en la de ERM, coleccionistas ya fallecidos. No publica los nombres completos. Aquí no se inventan.</p>\n<h2 id=\"la-lamina\">Lo que marca la lámina</h2>\n<p>La comparación de arriba no es el texto de González White. Es una lámina de Notofilia sobre dos retratos de 1952 B —las caras, en el habla corriente— con los reversos de armas debajo. Señala seis diferencias. Se leen como observaciones de diseño, no como un dictamen de laboratorio.</p>\n<div class=\"table-scroll\">\n<table>\n<caption>Diferencias que nombra la lámina. El color es una observación visual: no hay aquí un análisis de la aleación.</caption>\n<thead>\n<tr><th>Detalle</th><th>Acuñación corriente</th><th>Retrato llamado Baltasar</th></tr>\n</thead>\n<tbody>\n<tr><td>Cuello</td><td>Laringe fina, cuello estrecho</td><td>Bulto marcado en la parte frontal del cuello</td></tr>\n<tr><td>Arete</td><td>Junto a la mejilla</td><td>Más separado del contorno del rostro</td></tr>\n<tr><td>Leyendas</td><td>Trazos más delgados</td><td>Letras más gruesas, en el contorno y en la fecha</td></tr>\n<tr><td>Mandíbula</td><td>Curva suave</td><td>Ángulo más rígido</td></tr>\n<tr><td>Cabello y cinta</td><td>Trazo más nítido; la cinta sigue el cráneo</td><td>Cabello más plano; la cinta no se integra igual con las plumas</td></tr>\n<tr><td>Color</td><td>Tono del cuproníquel de la pieza corriente</td><td>La lámina lo ve distinto. Puede sugerir otra mezcla. No está ensayado aquí</td></tr>\n</tbody>\n</table>\n</div>\n<h2 id=\"sin-precio\">Sin precio en esta página</h2>\n<p>Numista, Foronum y las guías de precio publican bandas para la fecha corriente. No se copian. Para la variante Baltasar, las fuentes revisadas no dejan un martillo público que esta página pueda citar. Un precio pedido en un video no es un remate. La <a href=\"/editorial/\">política editorial</a> pide esa distinción, y pide no convertir en lote de subasta un texto que no muestra el lote.</p>\n<p>La pieza de millones y el retrato discutido no se miden con la misma vara. Compartir el año 1952 y la marca B no las vuelve el mismo cuño.</p>\n<p>El diez centavos de cuproníquel metió un líder indígena en la menuda de todos los días, en el año en que esa denominación dejó la plata —sin que la plata de Santander desapareciera del todo: los dos metales llevan fecha de 1952—. El Baltazar de la leyenda y el «Baltasar» del coleccionista comparten un nombre. No comparten la misma clase de prueba. Uno es un relato sobre el siglo XVII. El otro es un cuño del que González White no quiso decir si salió de la ceca o de un taller clandestino.</p>\n<p>Más moneda colombiana, de las macuquinas al peso, está en la <a href=\"/coleccion/colombia-numismatica/\">vitrina de numismática de Colombia</a>. El estudio de la moneda, aparte del papel, está en el <a href=\"/glosario/numismatica/\">glosario</a>.</p>",
+      "en": "<p>In 1952 the Colombian ten centavos changed metal and changed face. Until then the denomination was .500 silver, with the bust of Francisco de Paula Santander. That same year the Casa de Moneda de Bogotá also struck a copper-nickel piece with the profile of the Pijao leader Calarcá. The ordinary date of the new type was struck in the millions. The one collectors call Baltasar, or the different Indian, still has no verdict on authenticity.</p>\n<p>This note is not a collection record. The plate compares two 1952 portraits with the B mint mark. The mintages below are catalogue figures. The Banco de la República annual coin workbook kept in this archive starts in 1987 and does not reach this date.</p>\n<h2 id=\"the-name\">The name that stayed on the metal</h2>\n<p>Calarcá enters the chronicles of Pijao resistance in the early seventeenth century, during the campaign of Juan de Borja, president of the Real Audiencia. Two accounts of his death sit side by side, and they do not say the same thing.</p>\n<p>The legend is a duel with Baltazar, a baptized Coyaima leader allied with the Spanish, sometimes placed at Peñas Blancas. Jaime Lopera Gutiérrez treats it as legend. Manuel Lucena Salmoral put it shortly in 1962: Calarcá did not die at Baltazar’s hands. The <a href=\"https://en.numista.com/catalogue/pieces5094.html\">Numista</a> page for the copper-nickel type still summarizes that fight.</p>\n<p><a href=\"https://elquindiano.com/noticia/197312/anivresario-138-calarca-no-fue-un-cacique-sino-una-dignidad-guerrera-cap-ii/\">El Quindiano</a> (26 June 2024) gives the other version from Lopera and from Fray Pedro Simón, <em>Noticias historiales</em>, volume VI. In the Chaparral valley, Calarcá and the Indian Coyara attack Captain Diego de Ospina’s fort. In the struggle, Ospina shoots him in the chest. Simón writes that he died on the fifth day and that his people kept the death hidden for more than two months. Lopera rests that account on Ospina’s service report of 1650, cited as Archivo Nacional de Colombia, Miscelánea 73, folio 190. This page has not opened that folio. It cites the article and the editions the article names: Simón, Biblioteca Banco Popular, 1981, pages 411 to 414; Lopera, <em>La colonización del Quindío</em>, Banco de la República, 1986; Lucena Salmoral, <em>Boletín Cultural y Bibliográfico</em>, volume V, number 10, 1962.</p>\n<p>The same article announces, for a later installment, the thesis that “Calarcá” was a warrior dignity and not a personal name. It is not treated as settled here. The coin, like Simón, presents him as a cacique.</p>\n<p><a href=\"https://www.radionacional.co/cultura/historia-del-cacique-calarca-y-el-nombre-del-municipio\">Radio Nacional de Colombia</a> (16 January 2022) recalls that the municipality of Calarcá, in Quindío, was founded in 1886 under that name. The same text places the coin at the end of the 1960s. The catalogue does not. The type begins in 1952 and the last date is 1966.</p>\n<h2 id=\"from-silver-to-copper-nickel\">From silver to copper-nickel</h2>\n<p>The earlier ten centavos is a different piece. <a href=\"https://en.numista.com/catalogue/pieces10912.html\">Numista N# 10912</a> lists it as KM# 207 and Restrepo 379: .500 silver, 2.50 g, 18 mm, reeded edge, years 1945–1952, Santander on the <a href=\"/glosario/anverso/\">obverse</a>. That silver was still struck in 1952: 1,060,000 pieces, KM# 207.2, which Numista concordances with Restrepo 379.10 and Hernández 416. It does not carry Calarcá.</p>\n<p>The new type is <a href=\"https://en.numista.com/catalogue/pieces5094.html\">Numista N# 5094</a>: KM# 212.1 and 212.2, Schön 31, Restrepo 380, copper-nickel, 1952–1966. Numista attributes both sides to the engraver Luis Alberto Acuña Tapias. The obverse carries the arms, the legend REPUBLICA DE COLOMBIA — without the accent, as the die cuts it — and the date at the foot. The <a href=\"/glosario/reverso/\">reverse</a> carries DIEZ CENTAVOS and, below the neck truncation, CALARCÁ, in profile to the right, with a feathered headdress.</p>\n<p>The <a href=\"/glosario/#ceca\">B</a> is the Casa de Moneda de Bogotá. Bernardo González White, in a December 2014 note that Cristina Martín San Roque published in <a href=\"https://elsalondecris.blogspot.com/2014/12/diez-centavos-1952-b-baltasar-o-indio.html\">El Salón de Cris</a>, places it between the base of the shield and the date. He writes that it ceased to be the ordinary mark from 1956. Numista agrees in outline: the large 1956 mintage has no B, and a 1956 B is listed separately with no mintage figure. That 2014 note is not a row in González White’s 2019 banknote catalogue, and no BG# is assigned to it here.</p>\n<div class=\"table-scroll\">\n<table>\n<caption>Specifications of the 1952-B 10 centavos. Diameter and mintage, in Numista and in González White (2014). Thickness is Numista’s type figure, not a measurement published separately for the 18 mm module.</caption>\n<thead>\n<tr><th>Feature</th><th>1952 B</th></tr>\n</thead>\n<tbody>\n<tr><td>Metal</td><td>Copper-nickel</td></tr>\n<tr><td>Weight</td><td>2.50 g</td></tr>\n<tr><td>Diameter</td><td>18.0 mm (KM# 212.1, Restrepo 380.1). From 1954, 18.5 mm (KM# 212.2)</td></tr>\n<tr><td>Thickness</td><td>1.31 mm on Numista’s type page</td></tr>\n<tr><td>Edge</td><td>Reeded</td></tr>\n<tr><td>Alignment</td><td>Coin (↑↓)</td></tr>\n<tr><td>Catalogue mintage</td><td>6,035,000</td></tr>\n</tbody>\n</table>\n</div>\n<p>Those 6,035,000 are the ordinary date, not the variety. The other small-module year, 1953 B, is listed on Numista at 6,985,000. González White notes that there were no dates 1957 or 1958. Numista’s list does not have them either. The last date of the type is 1966.</p>\n<p>In that 2014 note, González White gives other round figures — about 36 million each for 1956 and 1959, and 61.7 million “in 1963” — which do not match Numista’s current table: 1956, 77,705,000; 1959, 36,653,000; and 61,672,000 belongs to 1964, not to 1963. Later dates follow Numista. The 18 mm diameter, the place of the B, and the variety follow the 2014 note.</p>\n<h2 id=\"baltasar\">Baltasar, or the different Indian</h2>\n<p>The date 1952 became famous for another die. In December 2014 González White wrote that the authenticity of that “variety” still had no clear reading. It might be a <a href=\"/glosario/prueba-ensayo/\">pattern</a> that left the mint, or a contemporary counterfeit. He called it Baltasar, or the different Indian. More than seventy years have passed since the coin’s date, and the note does not close the case. This page does not either.</p>\n<p>The nickname “la Cotuda,” for the bulge at the neck, circulates in collector speech. It is not in the 2014 note, and it is not the plate’s label. The plate says “Baltasar” on one side and “ordinary strike” on the other.</p>\n<p>González White adds a detail the plate does not show. He knows two pieces with the reverse inverted, and they are not the same: one has an open 9 in the date and the other a closed 9, with other small differences in the numerals. He writes that the first remained in the collection of JFK and the second in that of ERM, collectors who have since died. He does not publish their full names. They are not invented here.</p>\n<h2 id=\"the-plate\">What the plate marks</h2>\n<p>The comparison above is not González White’s text. It is a Notofilia plate of two 1952-B portraits — the “faces,” in everyday speech — with the arms reverses below. It marks six differences. They read as design observations, not as a laboratory finding.</p>\n<div class=\"table-scroll\">\n<table>\n<caption>Differences the plate names. Color is a visual observation: there is no alloy analysis here.</caption>\n<thead>\n<tr><th>Detail</th><th>Ordinary strike</th><th>Portrait called Baltasar</th></tr>\n</thead>\n<tbody>\n<tr><td>Neck</td><td>A fine larynx, a narrow neck</td><td>A marked bulge on the front of the neck</td></tr>\n<tr><td>Earring</td><td>Against the cheek</td><td>Set farther out from the outline of the face</td></tr>\n<tr><td>Legends</td><td>Thinner strokes</td><td>Heavier letters, in the rim legend and in the date</td></tr>\n<tr><td>Jaw</td><td>A soft curve</td><td>A more rigid angle</td></tr>\n<tr><td>Hair and band</td><td>A clearer line; the band follows the skull</td><td>Flatter hair; the band does not sit with the feathers in the same way</td></tr>\n<tr><td>Color</td><td>The tone of the ordinary copper-nickel piece</td><td>The plate sees it as different. That can suggest another mix. It is not assayed here</td></tr>\n</tbody>\n</table>\n</div>\n<h2 id=\"no-price\">No price on this page</h2>\n<p>Numista, Foronum, and the price guides publish ranges for the ordinary date. They are not copied. For the Baltasar variety, the sources checked here do not leave a public hammer this page can cite. An asking price in a video is not an auction result. The <a href=\"/editorial/\">editorial policy</a> asks for that distinction, and asks that a text which does not show a lot not be turned into an auction lot.</p>\n<p>The piece struck in the millions and the disputed portrait are not measured with the same stick. Sharing the year 1952 and the B mint mark does not make them the same die.</p>\n<p>The copper-nickel ten centavos put an indigenous leader into everyday small change, in the year that denomination left silver — without the Santander silver vanishing altogether: both metals are dated 1952. The Baltazar of the legend and the collectors’ “Baltasar” share a name. They do not share the same kind of evidence. One is an account of the seventeenth century. The other is a die about which González White would not say whether it came from the mint or from a clandestine workshop.</p>\n<p>More Colombian coin, from cobs to the peso, is in the <a href=\"/coleccion/colombia-numismatica/\">Colombia numismatics case</a>. The study of coin, apart from paper, is in the <a href=\"/glosario/numismatica/\">glossary</a>.</p>"
+    },
+    "related": [
+      {
+        "href": "/coleccion/colombia-numismatica/",
+        "title": "Numismática de Colombia",
+        "dek": ""
+      },
+      {
+        "href": "/glosario/numismatica/",
+        "title": "Glosario: numismática",
+        "dek": ""
+      },
+      {
+        "href": "/glosario/prueba-ensayo/",
+        "title": "Glosario: prueba y ensayo",
+        "dek": ""
+      },
+      {
+        "href": "/blog/diferencia-numismatica-notafilia/",
+        "title": "Diferencia entre numismática y notafilia",
+        "dek": ""
+      }
+    ]
+  },
+  {
     "slug": "como-se-valora-un-billete-colombiano",
     "slugEn": "how-colombian-banknotes-are-valued",
     "href": "/blog/como-se-valora-un-billete-colombiano/",
