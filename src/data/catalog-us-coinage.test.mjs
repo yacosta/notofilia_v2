@@ -506,6 +506,61 @@ describe('US 1885-CC Morgan dollar', () => {
   });
 });
 
+describe('US 1893 Morgan dollar', () => {
+  it('registers one bilingual unslabbed Philadelphia piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1893/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1893/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1893'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7220 · N# 1492/);
+    assert.match(data, /389\.000/);
+    assert.match(data, /389,000/);
+    assert.match(data, /378\.000/);
+    assert.match(data, /378,000/);
+    assert.match(data, /40\.000/);
+    assert.match(data, /20\.000/);
+    assert.match(data, /VAM-4/);
+    assert.match(data, /1 de junio de 1893/);
+    assert.match(data, /1 June 1893/);
+    assert.match(data, /1 de noviembre de 1893/);
+    assert.match(data, /1 November 1893/);
+    assert.match(data, /sin marca/);
+    assert.match(data, /no mint mark/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1893-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1893-1\/7220/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
+    const piece = data.slice(data.indexOf("id: '1-dolar-morgan-1893'"), data.indexOf("id: 'medalla-1836-primera-acunacion-vapor'"));
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1893', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1893-morgan-km110/);
+    assert.equal(holdings.trimEnd().endsWith("{ id: 'us-1893-morgan-km110' },\n];") || holdings.includes("id: 'us-1893-morgan-km110'"), true);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1893-${side}.png`,
+          import.meta.url,
+        ),
+      );
+    }
+  });
+});
+
 describe('US Morgan dollar original run, 1878–1904', () => {
   it('keeps a bilingual series page, like Hard Times, and does not publish prices', () => {
     assert.equal(

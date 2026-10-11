@@ -429,7 +429,7 @@ describe('United States numismatics menu', () => {
     );
     assert.deepEqual(
       holdings.map((coin) => coin.year),
-      ['1883', '1884', '1885'],
+      ['1883', '1884', '1885', '1893'],
     );
     const directHrefs = (unitedStates?.children ?? []).map((item) => item.href);
     for (const coin of holdings) {
