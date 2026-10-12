@@ -99,17 +99,18 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     );
     assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages.length, 3);
     assert.equal(popayan1EscudoCarlosIvCopy.en.archiveImages.length, 3);
-    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[0].caption, /Archivo General de la Nación/);
-    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[1].caption, /Eladio Vergara/);
     assert.equal(
-      popayan1EscudoCarlosIvCopy.es.archiveImages[2].src,
+      popayan1EscudoCarlosIvCopy.es.archiveImages[0].src,
       '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
     );
-    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].width, 3456);
-    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].height, 1216);
-    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].wide, true);
-    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[2].caption, /ResearchGate/);
-    assert.match(popayan1EscudoCarlosIvCopy.en.archiveImages[2].caption, /Archivo Nacional de Bogotá/);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[0].width, 3456);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[0].height, 1216);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[0].wide, true);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[0].featureAfterLead, true);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[0].caption, /ResearchGate/);
+    assert.match(popayan1EscudoCarlosIvCopy.en.archiveImages[0].caption, /Archivo Nacional de Bogotá/);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[1].caption, /Archivo General de la Nación/);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[2].caption, /Eladio Vergara/);
     assert.ok(popayan1EscudoCarlosIvSources.some((source) => source.href === 'https://en.numista.com/52837'));
     assert.ok(
       popayan1EscudoCarlosIvSources.some(
