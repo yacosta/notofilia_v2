@@ -5425,9 +5425,9 @@
       "lang": "en",
       "type": "other",
       "lastSlug": "herramientas",
-      "title": "Redirecting to: /en/tools/",
+      "title": "Redirecting to: /en/tools/fancy-serial-checker/",
       "alternate": "",
-      "redirectTo": "/en/tools/"
+      "redirectTo": "/en/tools/fancy-serial-checker/"
     },
     {
       "path": "/en/herramientas/numeracion-especial/",
@@ -6352,9 +6352,9 @@
       "lang": "en",
       "type": "other",
       "lastSlug": "tools",
-      "title": "Reference tools",
-      "alternate": "/herramientas/",
-      "redirectTo": ""
+      "title": "Redirecting to: /en/tools/fancy-serial-checker/",
+      "alternate": "",
+      "redirectTo": "/en/tools/fancy-serial-checker/"
     },
     {
       "path": "/en/tools/fancy-serial-checker/",
@@ -7702,9 +7702,9 @@
       "lang": "es",
       "type": "other",
       "lastSlug": "herramientas",
-      "title": "Herramientas de referencia",
-      "alternate": "/en/tools/",
-      "redirectTo": ""
+      "title": "Redirecting to: /herramientas/numeracion-especial/",
+      "alternate": "",
+      "redirectTo": "/herramientas/numeracion-especial/"
     },
     {
       "path": "/herramientas/numeracion-especial/",

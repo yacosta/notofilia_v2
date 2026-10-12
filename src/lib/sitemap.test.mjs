@@ -333,12 +333,15 @@ describe('sitemap coverage for Puerto Rico numismatics', () => {
 });
 
 describe('sitemap coverage for reference tools', () => {
-  it('maps the tools hub and fancy serial checker pairs', () => {
-    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
+  it('maps the fancy serial checker pair and omits the retired tools hub', () => {
     assert.equal(
       localizePath('/herramientas/numeracion-especial/', 'en'),
       '/en/tools/fancy-serial-checker/',
     );
+    const siteSource = readFileSync(new URL('./site.ts', import.meta.url), 'utf8');
+    assert.match(siteSource, /herramientas\/numeracion-especial/);
+    assert.doesNotMatch(siteSource, /path: 'herramientas'/);
+    assert.doesNotMatch(siteSource, /'herramientas',/);
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });
