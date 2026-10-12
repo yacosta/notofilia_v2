@@ -13,6 +13,11 @@ import {
   colombiaCoinagePieces,
   type ColombiaCoinagePiece,
 } from '../../data/colombia-coinage-pieces';
+import {
+  POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS,
+  popayan1EscudoCarlosIvCopy,
+  popayan1EscudoCarlosIvPath,
+} from '../../data/popayan-1-escudo-carlos-iv';
 import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
@@ -151,6 +156,18 @@ const jsonCrumbs = [
           {t.aboutHeading}
         </h2>
         <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(piece.description[locale], locale)} />
+        {
+          (POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS as readonly string[]).includes(piece.id) ? (
+            <p class="mb-0 mt-4 text-[17px]/7">
+              <a
+                href={popayan1EscudoCarlosIvPath(locale)}
+                class="text-gold-light underline decoration-line-strong hover:text-cream"
+              >
+                {popayan1EscudoCarlosIvCopy[locale].coinLink}
+              </a>
+            </p>
+          ) : null
+        }
       </section>
 
       <section class="mt-12" aria-labelledby="scarcity-heading">

@@ -52,6 +52,7 @@ import { GIORI_TEST_NOTES_PATH } from '../data/giori-test-notes';
 import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educational-series-1896';
 import { LAZARETTOS_NUMISMATICS_PATH } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH } from '../data/coscojas-santander';
+import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from '../data/popayan-1-escudo-carlos-iv';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
@@ -427,6 +428,12 @@ export const megaNav: NavNode[] = [
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
         children: [
+          {
+            id: '1-escudo-carlos-iv-popayan',
+            es: '1 escudo de Popayán, Carlos IV',
+            en: 'Popayán 1 escudo, Charles IV',
+            href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+          },
           {
             id: 'coscojas-de-santander',
             es: 'Las coscojas de Santander',

@@ -26,6 +26,10 @@ import {
 } from '../data/indian-head-quarter-eagle';
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
+import {
+  POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+  popayan1EscudoCarlosIvCopy,
+} from '../data/popayan-1-escudo-carlos-iv';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -518,6 +522,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       dek: { es: silverEagleSeriesCopy.es.metaDescription, en: silverEagleSeriesCopy.en.metaDescription },
       extra:
         'American Silver Eagle 1986 2026 Walking Liberty Adolph Weinman John Mercanti Emily Damstra Michael Gaudioso Liberty Coin Act onza troy .999 West Point bullion proof burnished KM 273 KM 746',
+    },
+    {
+      href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+      title: { es: popayan1EscudoCarlosIvCopy.es.nav, en: popayan1EscudoCarlosIvCopy.en.nav },
+      dek: {
+        es: popayan1EscudoCarlosIvCopy.es.metaDescription,
+        en: popayan1EscudoCarlosIvCopy.en.metaDescription,
+      },
+      extra:
+        '1 escudo oro gold Carlos IV Charles IV Popayán P JF KM 56.2 Hernández 688 Friedberg 59 1792 1808 colonial',
     },
     {
       href: COSCOJAS_SANTANDER_PATH,

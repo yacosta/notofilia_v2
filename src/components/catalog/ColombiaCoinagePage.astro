@@ -18,6 +18,10 @@ import { comparisonPath } from '../../data/comparison';
 import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import { COSCOJAS_SANTANDER_PATH } from '../../data/coscojas-santander';
+import {
+  POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+  popayan1EscudoCarlosIvCopy,
+} from '../../data/popayan-1-escudo-carlos-iv';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -124,6 +128,16 @@ const jsonLd = collectionPageJsonLd({
         </a>
       </p>
       <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.escudoLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(POPAYAN_1_ESCUDO_CARLOS_IV_PATH, locale)}
+        >
+          {t.escudoLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
         {t.coscojasLead}
         {' '}
         <a
@@ -166,6 +180,18 @@ const jsonLd = collectionPageJsonLd({
                     }
                   </p>
                 ))
+              }
+              {
+                chapter.id === 'santa-fe' ? (
+                  <p class="mb-0 mt-4 text-[17px]/7">
+                    <a
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(POPAYAN_1_ESCUDO_CARLOS_IV_PATH, locale)}
+                    >
+                      {popayan1EscudoCarlosIvCopy[locale].chapterLink}
+                    </a>
+                  </p>
+                ) : null
               }
               {
                 chapter.note ? (

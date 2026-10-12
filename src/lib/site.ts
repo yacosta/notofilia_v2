@@ -72,6 +72,7 @@ import { indianHeadQuarterEagleDedicatedSlugs } from '../data/indian-head-quarte
 import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
 import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
+import { popayan1EscudoCarlosIvDedicatedSlugs } from '../data/popayan-1-escudo-carlos-iv';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -369,6 +370,7 @@ const dedicatedEs = [
   COLOMBIA_COIN_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   ...colombiaCoinagePieceSlugs,
   ...coscojasSantanderDedicatedSlugs,
+  ...popayan1EscudoCarlosIvDedicatedSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),

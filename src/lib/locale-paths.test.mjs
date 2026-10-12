@@ -663,6 +663,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-carlos-iv-popayan-1792-1808/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-charles-iv-popayan-1792-1808/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/',
     );
