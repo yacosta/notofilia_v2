@@ -92,6 +92,44 @@ describe('editorial SEO helpers', () => {
   });
 });
 
+describe('editorial upload images', () => {
+  const publicRoot = new URL('../../public/', import.meta.url);
+
+  function cardSibling(src) {
+    if (!src.includes('/uploads/') || src.includes('-card.')) return null;
+    return src.replace(/(\.[a-z0-9]+)$/i, '-card$1');
+  }
+
+  function assertPublicFile(src, label) {
+    const path = src.split(/[?#]/)[0];
+    assert.equal(path.startsWith('/'), true, `${label} ${src}`);
+    assert.equal(existsSync(new URL(path.slice(1), publicRoot)), true, `${label} missing ${path}`);
+  }
+
+  it('ships a -card sibling for every blog and news upload the index requests', () => {
+    for (const article of [...blogArticles, ...newsArticles]) {
+      if (!article.image) continue;
+      assertPublicFile(article.image, article.slug);
+      const card = cardSibling(article.image);
+      if (card) assertPublicFile(card, `${article.slug} card`);
+    }
+  });
+
+  it('resolves inline blog figures to files that exist', () => {
+    const srcRe = /<img\b[^>]*\ssrc="([^"]+)"/g;
+    for (const article of blogArticles) {
+      for (const locale of ['es', 'en']) {
+        const html = article.bodyHtml[locale] ?? '';
+        for (const match of html.matchAll(srcRe)) {
+          const src = match[1];
+          if (/^https?:\/\//.test(src)) continue;
+          assertPublicFile(src, `${article.slug} ${locale}`);
+        }
+      }
+    }
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);

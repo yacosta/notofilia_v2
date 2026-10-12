@@ -114,9 +114,9 @@ describe('Colombia coinage guide', () => {
   });
 
   it('dates the page and says KM opens the coin reference', () => {
-    assert.equal(coinageCopy.es.updated, '2026-10-03');
-    assert.equal(coinageCopy.es.updatedDate, '3 de octubre de 2026');
-    assert.equal(coinageCopy.en.updatedDate, 'October 3, 2026');
+    assert.equal(coinageCopy.es.updated, '2026-10-12');
+    assert.equal(coinageCopy.es.updatedDate, '12 de octubre de 2026');
+    assert.equal(coinageCopy.en.updatedDate, 'October 12, 2026');
     assert.match(coinageCopy.es.numberingBefore, /el número que abre la referencia es el KM/);
     assert.match(pageSource, /comparisonPath\(locale\)/);
     assert.match(pageSource, /datetime=\{t\.updated\}/);

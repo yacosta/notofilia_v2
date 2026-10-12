@@ -13,6 +13,7 @@ export const POPAYAN_1_ESCUDO_CARLOS_IV_COMPOSITE = {
 } as const;
 
 export const POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS = [
+  '1-escudo-popayan-1800-p-jf',
   '1-escudo-popayan-1801-p-jf',
   '1-escudo-popayan-1806-p-jf',
   '1-escudo-popayan-1808-p-jf',
@@ -49,6 +50,8 @@ export type PopayanEscudoCopy = {
   holdingsHeading: string;
   holdingsAria: string;
   viewCoin: string;
+  holding1800Label: string;
+  holding1800Href: string;
   holding1801Label: string;
   holding1801Href: string;
   holding1806Label: string;
@@ -74,7 +77,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     breadcrumb: 'Migas de pan',
     metaTitle: '1 escudo de Popayán, Carlos IV, 1792–1808',
     metaDescription:
-      'El 1 escudo de oro de Carlos IV, ceca de Popayán (P), 1792–1808: KM# 56.2, Hernández 688 y Fr# 59. Esta vitrina guarda los discos P–JF de 1801, 1806 y 1808. Sin precios.',
+      'El 1 escudo de oro de Carlos IV, ceca de Popayán (P), 1792–1808: KM# 56.2, Hernández 688 y Fr# 59. Esta vitrina guarda los discos P–JF de 1800, 1801, 1806 y 1808. Sin precios.',
     kicker: 'Colombia-Numismática · oro colonial',
     title: '1 Escudo (Oro) – Carlos IV – Ceca de Popayán (1792–1808)',
     lead:
@@ -93,10 +96,12 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
       { label: 'Ensaye ordinario', value: 'JF' },
       { label: 'Catálogo', value: 'KM# 56.2 · Hernández 688 · Fr# 59', wide: true },
     ],
-    imagesNote: 'Tres discos P–JF de este tipo están en la colección.',
+    imagesNote: 'Cuatro discos P–JF de este tipo están en la colección.',
     holdingsHeading: 'En la colección',
     holdingsAria: 'Fichas del 1 escudo de Popayán de Carlos IV',
     viewCoin: 'Abrir la ficha',
+    holding1800Label: '1 escudo · Popayán P–JF · 1800',
+    holding1800Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1800-p-jf/',
     holding1801Label: '1 escudo · Popayán P–JF · 1801',
     holding1801Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/',
     holding1806Label: '1 escudo · Popayán P–JF · 1806',
@@ -109,14 +114,14 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         title: 'El tipo de Popayán',
         paragraphs: [
           'El 1 escudo de oro labrado en la Ceca de Popayán —marca P— bajo Carlos IV marca un tramo claro de la moneda colonial del Nuevo Reino. Se acuñó con regularidad entre 1792 y 1808, y sucede a las emisiones de transición que aún portaban el busto de Carlos III. La casa estaba en labores desde 1758.',
-          'Eso es el tipo KM# 56.2: leyenda y busto propios de Carlos IV, oro de cordoncillo. No es el KM# 56.1 de Santa Fe, con marca NR–JJ. Tampoco es el tipo de transición con leyenda de Carlos IV y busto de Carlos III —Hernández Cód. 686, fechas 1789 y 1790, ensaye P–SF—. El 2 escudos de 1791 P–SF de esta colección pertenece a esa generación anterior (KM# 51.2), no a este módulo de un escudo.',
+          'Eso es el tipo KM# 56.2: leyenda y busto propios de Carlos IV, oro de cordoncillo. No es el KM# 56.1 de Santa Fe, con marca NR–JJ. Tampoco es el tipo de transición con leyenda de Carlos IV y busto de Carlos III —Hernández Cód. 686, fechas 1789 y 1790, ensaye P–SF—. El 2 escudos de 1791 P–SF de esta colección pertenece a esa generación anterior (KM# 51.2), no a este módulo de un escudo. Esta vitrina guarda cuatro discos P–JF: 1800, 1801, 1806 y 1808.',
         ],
       },
       {
         id: 'composicion',
         title: 'Composición y módulo',
         paragraphs: [
-          'El tipo se labra en oro de ley .875. El peso teórico es de unos 3,38 g —Hernández anota 3,389 g— y el diámetro, de 18 a 19 mm; Numista da 19 mm. Son cifras de catálogo: los tres discos de esta vitrina no se pesaron ni se midieron. Numista da al tipo el cordoncillo y la alineación de medalla. No hay una tirada verificada; las tablas BanRep de moneda empiezan en 1987.',
+          'El tipo se labra en oro de ley .875. El peso teórico es de unos 3,38 g —Hernández anota 3,389 g— y el diámetro, de 18 a 19 mm; Numista da 19 mm. Son cifras de catálogo: los cuatro discos de esta vitrina no se pesaron ni se midieron. Numista da al tipo el cordoncillo y la alineación de medalla. No hay una tirada verificada; las tablas BanRep de moneda empiezan en 1987.',
         ],
       },
       {
@@ -152,7 +157,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         title: 'Notas de archivo',
         paragraphs: [
           'La existencia de un 1808 de Carlos IV en Popayán sigue en discusión. Numista anota que el catálogo nacional de P. P. Hernández no confirma ese año ni en Nuevo Reino ni en Popayán, aunque figura en registros foráneos. El Cód. 688 nombra el tipo P–JF, no una fila fechada 1808 ya verificada. CoinVarieties recoge el 1808 P–JF como Restrepo 85.40 y señala la sobrefecha 1808/7; en el disco de esta colección el último dígito se lee 8 y no se afirma el 7 subyacente. El 1 escudo de Fernando VII de la misma ceca y el mismo año (KM# 64.2, Hernández 691, Fr# 66) conserva el busto de Carlos IV y cambia la leyenda a FERDND VII; no es este tipo.',
-          'No se publica aquí un censo de encapsulados ni un martillo. Los tres ejemplares de esta vitrina circulan gastados, con el retrato a menudo aplanado —un rasgo frecuente de los troqueles de la época, no un grado. Las fotografías no autentican el metal.',
+          'No se publica aquí un censo de encapsulados ni un martillo. Los cuatro ejemplares de esta vitrina circulan gastados, con el retrato a menudo aplanado —un rasgo frecuente de los troqueles de la época, no un grado. Las fotografías no autentican el metal.',
         ],
       },
     ],
@@ -172,7 +177,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     breadcrumb: 'Breadcrumb',
     metaTitle: 'Popayán 1 escudo, Charles IV, 1792–1808',
     metaDescription:
-      'Charles IV’s gold 1 escudo, Popayán mint (P), 1792–1808: KM# 56.2, Hernández 688, and Fr# 59. This case holds the 1801, 1806, and 1808 P–JF discs. No prices.',
+      'Charles IV’s gold 1 escudo, Popayán mint (P), 1792–1808: KM# 56.2, Hernández 688, and Fr# 59. This case holds the 1800, 1801, 1806, and 1808 P–JF discs. No prices.',
     kicker: 'Colombia-Numismatics · colonial gold',
     title: '1 Escudo (Gold) – Charles IV – Popayán Mint (1792–1808)',
     lead:
@@ -191,10 +196,12 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
       { label: 'Ordinary assayer', value: 'JF' },
       { label: 'Catalogue', value: 'KM# 56.2 · Hernández 688 · Fr# 59', wide: true },
     ],
-    imagesNote: 'Three P–JF discs of this type are in the collection.',
+    imagesNote: 'Four P–JF discs of this type are in the collection.',
     holdingsHeading: 'In the collection',
     holdingsAria: 'Records of the Popayán 1 escudo of Charles IV',
     viewCoin: 'Open the record',
+    holding1800Label: '1 escudo · Popayán P–JF · 1800',
+    holding1800Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1800-p-jf/',
     holding1801Label: '1 escudo · Popayán P–JF · 1801',
     holding1801Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/',
     holding1806Label: '1 escudo · Popayán P–JF · 1806',
@@ -207,14 +214,14 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         title: 'The Popayán type',
         paragraphs: [
           'The gold 1 escudo struck at the Popayán Mint — mint mark P — under Charles IV marks a clear stretch of colonial coinage in the New Kingdom. It was struck regularly between 1792 and 1808, and it succeeds the transitional issues that still carried the bust of Charles III. The house had been at work since 1758.',
-          'That is type KM# 56.2: Charles IV’s own legend and bust, milled gold. It is not Santa Fe’s KM# 56.1, with mintmark NR–JJ. It is not the transitional type with Charles IV’s legend and Charles III’s bust — Hernández Cód. 686, dates 1789 and 1790, assayer P–SF. This collection’s 1791 P–SF 2 escudos belongs to that earlier generation (KM# 51.2), not to this one-escudo module.',
+          'That is type KM# 56.2: Charles IV’s own legend and bust, milled gold. It is not Santa Fe’s KM# 56.1, with mintmark NR–JJ. It is not the transitional type with Charles IV’s legend and Charles III’s bust — Hernández Cód. 686, dates 1789 and 1790, assayer P–SF. This collection’s 1791 P–SF 2 escudos belongs to that earlier generation (KM# 51.2), not to this one-escudo module. This case holds four P–JF discs: 1800, 1801, 1806, and 1808.',
         ],
       },
       {
         id: 'composicion',
         title: 'Composition and module',
         paragraphs: [
-          'The type is struck in .875 fine gold. The theoretical weight is about 3.38 g — Hernández records 3.389 g — and the diameter spans 18 to 19 mm; Numista gives 19 mm. Those are catalogue figures: the three discs in this case were not weighed or measured. Numista gives the type a reeded edge and medal alignment. No mintage is verified; BanRep’s coin tables begin in 1987.',
+          'The type is struck in .875 fine gold. The theoretical weight is about 3.38 g — Hernández records 3.389 g — and the diameter spans 18 to 19 mm; Numista gives 19 mm. Those are catalogue figures: the four discs in this case were not weighed or measured. Numista gives the type a reeded edge and medal alignment. No mintage is verified; BanRep’s coin tables begin in 1987.',
         ],
       },
       {
@@ -250,7 +257,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         title: 'Archival notes',
         paragraphs: [
           'The existence of an 1808 Charles IV strike at Popayán remains under discussion. Numista notes that P. P. Hernández’s Colombian national catalogue does not confirm that year at either Nuevo Reino or Popayán, though it appears in some foreign listings. Cód. 688 names the P–JF type, not a verified 1808 row. CoinVarieties records the 1808 P–JF as Restrepo 85.40 and notes Restrepo’s 1808/7 overdate; on this collection’s disc the last digit reads 8, and an underlying 7 is not asserted. The Ferdinand VII 1 escudo of the same mint and year (KM# 64.2, Hernández 691, Fr# 66) keeps the Charles IV bust and changes the legend to FERDND VII; that is not this type.',
-          'No slab census and no hammer are published here. The three specimens in this case circulated worn, often with a flattened portrait — a frequent trait of the period’s dies, not a grade. Photographs do not authenticate the metal.',
+          'No slab census and no hammer are published here. The four specimens in this case circulated worn, often with a flattened portrait — a frequent trait of the period’s dies, not a grade. Photographs do not authenticate the metal.',
         ],
       },
     ],
@@ -341,6 +348,8 @@ export const popayan1EscudoCarlosIvSources: CatalogSource[] = [
 
 const popayan1EscudoCarlosIvCardAlts = {
   es: {
+    '1-escudo-popayan-1800-p-jf':
+      'Anverso y reverso del 1 escudo de Popayán de 1800 P–JF: busto de Carlos IV y fecha 1800; escudo coronado, 1 S y marcas P · JF.',
     '1-escudo-popayan-1801-p-jf':
       'Anverso y reverso del 1 escudo de Popayán de 1801 P–JF: busto de Carlos IV y fecha 1801; escudo coronado, 1 S y marcas P · JF.',
     '1-escudo-popayan-1806-p-jf':
@@ -349,6 +358,8 @@ const popayan1EscudoCarlosIvCardAlts = {
       'Anverso y reverso del 1 escudo de Popayán de 1808 P–JF: busto de Carlos IV y fecha 1808; escudo coronado, 1 S y marcas P · JF.',
   },
   en: {
+    '1-escudo-popayan-1800-p-jf':
+      'Obverse and reverse of the 1800 Popayán 1 escudo P–JF: bust of Charles IV and the date 1800; crowned arms, 1 S, and marks P · JF.',
     '1-escudo-popayan-1801-p-jf':
       'Obverse and reverse of the 1801 Popayán 1 escudo P–JF: bust of Charles IV and the date 1801; crowned arms, 1 S, and marks P · JF.',
     '1-escudo-popayan-1806-p-jf':
