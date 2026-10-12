@@ -57,7 +57,7 @@ import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
 import { CONTACT_PATH } from '../data/contact';
-import { TOOLS_PATH } from '../data/reference-tools';
+import { FANCY_SERIAL_PATH } from '../data/reference-tools';
 import { footerLinksFromNav, footerTopLevelLinks } from './footer-nav';
 
 export type { FooterLink } from './footer-nav';
@@ -639,7 +639,7 @@ export const megaNav: NavNode[] = [
     en: 'Resources',
     layout: 'horizontal',
     children: [
-      { id: 'herramientas', es: 'Herramientas', en: 'Tools', href: TOOLS_PATH, icon: 'tools' },
+      { id: 'herramientas', es: 'Numeración especial', en: 'Fancy serial checker', href: FANCY_SERIAL_PATH, icon: 'tools' },
       { id: 'guias', es: 'Guías', en: 'Guides', href: '/blog/', icon: 'guides' },
       { id: 'glosario', es: 'Glosario', en: 'Glossary', href: '/glosario/', icon: 'glossary' },
       {

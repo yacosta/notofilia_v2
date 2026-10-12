@@ -601,7 +601,10 @@ describe('Recursos submenu', () => {
   it('marks each resource link with a decorative icon', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const recursos = source.split("id: 'recursos'")[1]?.split("id: 'sobre'")[0] ?? '';
-    assert.match(recursos, /id: 'herramientas',[\s\S]*?icon: 'tools'/);
+    assert.match(recursos, /id: 'herramientas',[\s\S]*?href: FANCY_SERIAL_PATH,[\s\S]*?icon: 'tools'/);
+    assert.match(recursos, /es: 'Numeración especial'/);
+    assert.match(recursos, /en: 'Fancy serial checker'/);
+    assert.doesNotMatch(recursos, /TOOLS_PATH/);
     assert.match(recursos, /id: 'guias',[\s\S]*?icon: 'guides'/);
     assert.match(recursos, /id: 'glosario',[\s\S]*?icon: 'glossary'/);
     assert.doesNotMatch(recursos, /id: 'noticias'/);

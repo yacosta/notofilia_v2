@@ -349,7 +349,6 @@ export const stubPages = [
   { path: 'contacto', es: 'Contacto', en: 'Contact' },
   { path: 'buscar', es: 'Buscar', en: 'Search' },
   { path: 'identificar/billetes-falsos', es: 'Cómo identificar un billete falso', en: 'How to identify a counterfeit note' },
-  { path: 'herramientas', es: 'Herramientas', en: 'Tools' },
   { path: 'herramientas/numeracion-especial', es: 'Numeración especial', en: 'Fancy serial checker' },
   { path: 'politica-privacidad-cookies', es: 'Política de privacidad y cookies', en: 'Privacy and cookie policy' },
 ] as const;
@@ -425,7 +424,6 @@ const dedicatedEs = [
   'contacto',
   'buscar',
   'identificar/billetes-falsos',
-  'herramientas',
   'herramientas/numeracion-especial',
   ...blogSlugs,
   ...newsSlugs,

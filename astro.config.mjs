@@ -38,6 +38,9 @@ function normalizeRedirects(map) {
 
 /** Hand-written 301s. Applied after generated maps so a specific target wins the slash collision. */
 const explicitRedirects = {
+    '/herramientas/': '/herramientas/numeracion-especial/',
+    '/en/tools/': '/en/tools/fancy-serial-checker/',
+    '/en/herramientas/': '/en/tools/fancy-serial-checker/',
     '/coleccion/numismatica/colombia': '/coleccion/colombia-numismatica/',
     '/en/coleccion/numismatica/colombia': '/en/collection/colombia-numismatics/',
     '/coleccion/numismatica/paises-bajos': '/coleccion/paises-bajos-numismatica/',

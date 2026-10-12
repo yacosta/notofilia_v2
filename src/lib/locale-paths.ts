@@ -528,7 +528,6 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/buscar/', en: '/search/' },
   { es: '/identificar/', en: '/identify/' },
   { es: '/herramientas/numeracion-especial/', en: '/tools/fancy-serial-checker/' },
-  { es: '/herramientas/', en: '/tools/' },
   { es: '/politica-privacidad-cookies/', en: '/privacy-cookies/' },
   { es: '/blog/mejores-empresas-certificacion-monedas-billetes/', en: '/blog/best-coin-and-banknote-grading-companies/' },
   { es: '/blog/mylar-si-plastico-no-como-guardar-billetes/', en: '/blog/mylar-yes-plastic-no-how-to-store-banknotes/' },
@@ -863,7 +862,6 @@ export function englishRedirects(): Record<string, string> {
     '/en/buscar/',
     '/en/identificar/',
     '/en/herramientas/numeracion-especial/',
-    '/en/herramientas/',
     '/en/politica-privacidad-cookies/',
     '/en/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/',
     '/en/coleccion/paises-bajos-numismatica/',
@@ -941,6 +939,9 @@ export function englishRedirects(): Record<string, string> {
   for (const from of legacyEnglishPrefixes) {
     add(from, localizePath(from, 'en'));
   }
+
+  // Retired tools hub. The fancy-serial checker is the page that remains.
+  add('/en/herramientas/', '/en/tools/fancy-serial-checker/');
 
   return redirects;
 }

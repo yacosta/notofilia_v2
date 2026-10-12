@@ -136,7 +136,6 @@ function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[numbe
 const extraHighValuePages = [
   { href: '/coleccion/', es: 'Colección', en: 'Collection' },
   { href: '/buscar/', es: 'Buscar', en: 'Search' },
-  { href: '/herramientas/', es: 'Herramientas', en: 'Tools' },
   { href: '/editorial/', es: 'Política editorial y valoración', en: 'Editorial policy' },
   {
     href: '/notofilia-vs-catalogos-billetes-colombianos/',
@@ -195,7 +194,7 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   add('/buscar/', 'Buscar', 'Search');
   add('/identificar/billetes-falsos/', 'Cómo identificar un billete falso', 'How to identify a counterfeit note');
   add('/editorial/', 'Política editorial', 'Editorial policy');
-  add('/herramientas/', 'Herramientas', 'Tools');
+  add('/herramientas/numeracion-especial/', 'Numeración especial', 'Fancy serial checker');
 
   for (const link of footerLinksFromNav(megaNav)) {
     add(link.href, link.es, link.en);

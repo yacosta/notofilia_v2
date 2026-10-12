@@ -953,7 +953,7 @@ source,target,status,rule,confidence
 /en/glossary/vineta/,/en/glossary/?term=vignette/,301,existing,high
 /en/glossary/web-notes/,/en/glossary/?term=web-notes/,301,existing,high
 /en/glossary/yuan-renminbi/,/en/glossary/?term=yuan-renminbi/,301,existing,high
-/en/herramientas/,/en/tools/,301,existing,high
+/en/herramientas/,/en/tools/fancy-serial-checker/,301,existing,high
 /en/herramientas/numeracion-especial/,/en/tools/fancy-serial-checker/,301,existing,high
 /en/j-s-g-boggs/,,410,gone,high
 /en/netherlands-numismatica,/en/collection/netherlands-numismatics/,301,existing,high
@@ -1231,6 +1231,7 @@ source,target,status,rule,confidence
 /en/paises-bajos-numismatica/ducado-utrecht-1761,/en/collection/netherlands-numismatics/ducado-utrecht-1761/,301,existing,high
 /en/politica-privacidad-cookies/,/en/privacy-cookies/,301,existing,high
 /en/sobre-mi,/en/about/,301,existing,high
+/en/tools/,/en/tools/fancy-serial-checker/,301,existing,high
 /expominer-y-colecciona-muestran-sellos-y-minerales-unicos/,,410,gone,high
 /glosario-numismatico.dc,/glosario/,301,legacy-dc,low
 /glosario/abrasiones/,/glosario/?term=abrasiones/,301,existing,high
@@ -1346,6 +1347,7 @@ source,target,status,rule,confidence
 /glosario/vale-al-portador/,/glosario/?term=vale-al-portador/,301,existing,high
 /glosario/vineta/,/glosario/?term=vineta/,301,existing,high
 /glosario/yuan-renminbi/,/glosario/?term=yuan-renminbi/,301,existing,high
+/herramientas/,/herramientas/numeracion-especial/,301,existing,high
 /lazaretos_1921/,/coleccion/lazarettos/,301,manual,high
 /moneda-colombia-1-escudo-fernando-vii-1820.dc.html,/coleccion/colombia-numismatica/,301,legacy-dc,low
 /moneda-colombia-2-escudos-carlos-iv-1791.dc.html,/coleccion/colombia-numismatica/,301,legacy-dc,low
