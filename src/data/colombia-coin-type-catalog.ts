@@ -8,6 +8,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
   | '2-escudos-popayan-1791-p-sf'
+  | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
   | '1-escudo-popayan-1808-p-jf'
   | '8-escudos-popayan-1801-p-jf'
@@ -75,6 +76,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '2-escudos-popayan-1791-p-sf',
+  },
+  {
+    id: '1-escudo-popayan-1800-p-jf',
+    era: 'santa-fe',
+    year: '1800',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Popayán (P)', en: 'Popayán (P)' },
+    reference: 'KM# 56.2 · Restrepo 85.18 · Calicó 1159 · Hernández 688 · Cayón 14083 · Fr#59',
+    title: { es: '1 escudo · Popayán P–JF · 1800', en: '1 escudo · Popayán P–JF · 1800' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, fecha 1800, ceca P y ensaye JF. En la colección.',
+      en: 'Charles IV gold escudo, dated 1800, mint P and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-popayan-1800-p-jf',
   },
   {
     id: '1-escudo-popayan-1801-p-jf',
