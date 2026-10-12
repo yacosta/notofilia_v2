@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T02:40:02.565Z",
+  "generatedAt": "2026-10-12T03:19:54.177Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -79,6 +79,45 @@
       "title": {
         "es": "100 yuan · Milenio 2000",
         "en": "100 Yuan · Millennium 2000"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1800-p-jf",
+      "face": "front",
+      "hash": "0071153293313300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1800-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.18 · Calicó 1159 · Hernández 688 · Cayón 14083 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1800-charles-iv-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1800",
+        "en": "1 escudo · Popayán P–JF · 1800"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1800-p-jf",
+      "face": "front",
+      "hash": "0814262e2e121408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1800-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.18 · Calicó 1159 · Hernández 688 · Cayón 14083 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1800-charles-iv-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1800",
+        "en": "1 escudo · Popayán P–JF · 1800"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1800-p-jf",
+      "face": "back",
+      "hash": "08042e1216120408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1800-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.18 · Calicó 1159 · Hernández 688 · Cayón 14083 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1800-charles-iv-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1800",
+        "en": "1 escudo · Popayán P–JF · 1800"
       }
     },
     {
