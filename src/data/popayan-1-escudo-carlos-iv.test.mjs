@@ -88,6 +88,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.equal(pageSource.includes('CatalogThumb'), true);
     assert.equal(pageSource.includes('CATALOG_PIECE_GRID'), true);
     assert.equal(pageSource.includes('POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS'), true);
+    assert.equal(pageSource.includes('archiveImages'), true);
     assert.equal(
       popayan1EscudoCarlosIvCopy.es.holding1801Href,
       '/coleccion/colombia-numismatica/1-escudo-popayan-1801-p-jf/',
@@ -96,10 +97,38 @@ describe('Popayán Charles IV 1 escudo type page', () => {
       localizePath(popayan1EscudoCarlosIvCopy.es.holding1808Href, 'en'),
       '/en/collection/colombia-numismatics/1-escudo-popayan-1808-p-jf/',
     );
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages.length, 3);
+    assert.equal(popayan1EscudoCarlosIvCopy.en.archiveImages.length, 3);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[0].caption, /Archivo General de la Nación/);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[1].caption, /Eladio Vergara/);
+    assert.equal(
+      popayan1EscudoCarlosIvCopy.es.archiveImages[2].src,
+      '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
+    );
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].width, 3456);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].height, 1216);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.archiveImages[2].wide, true);
+    assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[2].caption, /ResearchGate/);
+    assert.match(popayan1EscudoCarlosIvCopy.en.archiveImages[2].caption, /Archivo Nacional de Bogotá/);
     assert.ok(popayan1EscudoCarlosIvSources.some((source) => source.href === 'https://en.numista.com/52837'));
     assert.ok(
       popayan1EscudoCarlosIvSources.some(
         (source) => source.href === 'https://en.numista.com/catalogue/literature.php?id=100183',
+      ),
+    );
+    assert.ok(
+      popayan1EscudoCarlosIvSources.some((source) =>
+        source.href.includes('Plano_1_de_la_Real_Casa_de_Moneda_de_Popayan_1771'),
+      ),
+    );
+    assert.ok(
+      popayan1EscudoCarlosIvSources.some((source) =>
+        source.href.includes('Plano_de_la_Casa_de_Moneda_de_Popayan_en_1866'),
+      ),
+    );
+    assert.ok(
+      popayan1EscudoCarlosIvSources.some(
+        (source) => source.href === '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
       ),
     );
     const blob = JSON.stringify({ copy: popayan1EscudoCarlosIvCopy, sources: popayan1EscudoCarlosIvSources });

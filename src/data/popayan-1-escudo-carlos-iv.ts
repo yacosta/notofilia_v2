@@ -31,12 +31,13 @@ export type PopayanEscudoSection = {
   paragraphs: string[];
 };
 
-export type PopayanEscudoMintPlan = {
+export type PopayanEscudoArchiveImage = {
   src: string;
   width: number;
   height: number;
   alt: string;
   caption: string;
+  wide?: boolean;
 };
 
 export type PopayanEscudoCopy = {
@@ -66,9 +67,9 @@ export type PopayanEscudoCopy = {
   holding1806Href: string;
   holding1808Label: string;
   holding1808Href: string;
-  mintPlansHeading: string;
-  mintPlansLead: string;
-  mintPlans: PopayanEscudoMintPlan[];
+  archiveImagesHeading: string;
+  archiveImagesLead: string;
+  archiveImages: PopayanEscudoArchiveImage[];
   sections: PopayanEscudoSection[];
   relatedLead: string;
   relatedLabel: string;
@@ -119,10 +120,10 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     holding1806Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/',
     holding1808Label: '1 escudo · Popayán P–JF · 1808',
     holding1808Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/',
-    mintPlansHeading: 'La casa de moneda en planos',
-    mintPlansLead:
-      'Los planos de la Real Casa de Moneda de Popayán ayudan a leer el tipo como parte de una infraestructura: talleres, patios y dependencias donde el oro colonial pasaba de metal a moneda.',
-    mintPlans: [
+    archiveImagesHeading: 'La casa de moneda en imágenes de archivo',
+    archiveImagesLead:
+      'Los planos y la fachada de la Real Casa de Moneda de Popayán ayudan a leer el tipo como parte de una infraestructura: talleres, patios y dependencias donde el oro colonial pasaba de metal a moneda.',
+    archiveImages: [
       {
         src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Plano_1_de_la_Real_Casa_de_Moneda_de_Popayan_1771_-_AGN.jpg',
         width: 2500,
@@ -138,6 +139,15 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         alt: 'Plano de la Casa de Moneda de Popayán en 1866 por Eladio Vergara.',
         caption:
           'Plano de la Casa de Moneda de Popayán en 1866, por Eladio Vergara. Archivo General de la Nación, vía Wikimedia Commons.',
+      },
+      {
+        src: '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
+        width: 3456,
+        height: 1216,
+        alt: 'Antigua fachada colonial de la Casa de Moneda de Popayán, con la entrada principal sobre la Calle Real.',
+        caption:
+          'Antigua fachada colonial de la Casa de Moneda. Fotografía propiedad de ResearchGate y extraída del Archivo Nacional de Bogotá.',
+        wide: true,
       },
     ],
     sections: [
@@ -240,10 +250,10 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     holding1806Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1806-p-jf/',
     holding1808Label: '1 escudo · Popayán P–JF · 1808',
     holding1808Href: '/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/',
-    mintPlansHeading: 'The mint in plans',
-    mintPlansLead:
-      'The plans of the Popayán mint place the type inside its working infrastructure: shops, courtyards, and service rooms where colonial gold moved from metal to coin.',
-    mintPlans: [
+    archiveImagesHeading: 'The mint in archival images',
+    archiveImagesLead:
+      'The plans and façade of the Popayán mint place the type inside its working infrastructure: shops, courtyards, and service rooms where colonial gold moved from metal to coin.',
+    archiveImages: [
       {
         src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Plano_1_de_la_Real_Casa_de_Moneda_de_Popayan_1771_-_AGN.jpg',
         width: 2500,
@@ -259,6 +269,15 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
         alt: 'Plan of the Popayán Mint in 1866 by Eladio Vergara.',
         caption:
           'Plan of the Popayán Mint in 1866, by Eladio Vergara. Archivo General de la Nación, via Wikimedia Commons.',
+      },
+      {
+        src: '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
+        width: 3456,
+        height: 1216,
+        alt: 'Old colonial façade of the Popayán Mint, with the main entrance on Calle Real.',
+        caption:
+          'Old colonial façade of the Mint. Photograph owned by ResearchGate and extracted from the Archivo Nacional de Bogotá.',
+        wide: true,
       },
     ],
     sections: [
@@ -395,6 +414,15 @@ export const popayan1EscudoCarlosIvSources: CatalogSource[] = [
     note: {
       es: 'Plano histórico posterior a la etapa de Carlos IV. Se incluye para ubicar la casa de moneda y su edificio, no para fechar los ejemplares.',
       en: 'Historical plan made after Charles IV’s period. Included to locate the mint and its building, not to date the specimens.',
+    },
+  },
+  {
+    href: '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
+    es: 'ResearchGate / Archivo Nacional de Bogotá — Antigua fachada colonial de la Casa de Moneda',
+    en: 'ResearchGate / Archivo Nacional de Bogotá — Old colonial façade of the Mint',
+    note: {
+      es: 'Imagen contextual de la fachada colonial. Crédito indicado por la fuente: fotografía propiedad de ResearchGate y extraída del Archivo Nacional de Bogotá.',
+      en: 'Contextual image of the colonial façade. Credit supplied by the source: photograph owned by ResearchGate and extracted from the Archivo Nacional de Bogotá.',
     },
   },
   {
