@@ -106,6 +106,13 @@ describe('Colombia coinage guide', () => {
     assert.match(labels, /El sistema monetario de Colombia/);
   });
 
+  it('points the colonial 1 escudo type page from the series copy', () => {
+    assert.match(coinageCopy.es.escudoLead, /1792 y 1808/);
+    assert.match(coinageCopy.en.escudoLead, /1792 to 1808/);
+    assert.match(pageSource, /POPAYAN_1_ESCUDO_CARLOS_IV_PATH/);
+    assert.match(pageSource, /t\.escudoLead/);
+  });
+
   it('dates the page and says KM opens the coin reference', () => {
     assert.equal(coinageCopy.es.updated, '2026-10-12');
     assert.equal(coinageCopy.es.updatedDate, '12 de octubre de 2026');

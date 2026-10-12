@@ -6,6 +6,7 @@ import {
 } from './colombia-coinage';
 import { orderSantaFeHoldings } from './colombia-coinage-order.ts';
 import { COSCOJAS_SANTANDER_PATH } from './coscojas-santander';
+import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from './popayan-1-escudo-carlos-iv';
 import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
@@ -162,6 +163,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
     ],
     related: [
       {
+        href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+        label: {
+          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
+          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
         label: {
           es: '1 escudo de Popayán, 1801 P–JF',
@@ -279,6 +287,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       },
     ],
     related: [
+      {
+        href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+        label: {
+          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
+          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}2-escudos-popayan-1791-p-sf/`,
         label: {
@@ -414,6 +429,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
     ],
     related: [
       {
+        href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+        label: {
+          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
+          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
         label: {
           es: '1 escudo de Popayán, 1800 P–JF',
@@ -540,6 +562,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       },
     ],
     related: [
+      {
+        href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+        label: {
+          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
+          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
       {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
         label: {
