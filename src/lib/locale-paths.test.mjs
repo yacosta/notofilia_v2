@@ -233,8 +233,6 @@ describe('locale path mapping', () => {
     assert.equal(localizePath('/buscar/?q=colombiano', 'en'), '/en/search/?q=colombiano');
     assert.equal(localizePath('/identificar/', 'en'), '/en/identify/');
     assert.equal(localizePath('/en/identify/', 'es'), '/identificar/');
-    assert.equal(localizePath('/herramientas/', 'en'), '/en/tools/');
-    assert.equal(localizePath('/en/tools/', 'es'), '/herramientas/');
     assert.equal(
       localizePath('/herramientas/numeracion-especial/', 'en'),
       '/en/tools/fancy-serial-checker/',
@@ -891,7 +889,7 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/50-centavos-1916-km193-1/',
     );
     assert.equal(redirects['/en/identificar/'], '/en/identify/');
-    assert.equal(redirects['/en/herramientas/'], '/en/tools/');
+    assert.equal(redirects['/en/herramientas/'], '/en/tools/fancy-serial-checker/');
     assert.equal(
       redirects['/en/herramientas/numeracion-especial/'],
       '/en/tools/fancy-serial-checker/',

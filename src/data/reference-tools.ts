@@ -1,52 +1,11 @@
 import { localizePath, type Locale } from '../lib/locale-paths';
 import type { FancySerialClass } from '../lib/fancy-serial';
 
-export const TOOLS_PATH = '/herramientas/';
 export const FANCY_SERIAL_PATH = '/herramientas/numeracion-especial/';
-
-export function toolsPath(locale: Locale): string {
-  return localizePath(TOOLS_PATH, locale);
-}
 
 export function fancySerialPath(locale: Locale): string {
   return localizePath(FANCY_SERIAL_PATH, locale);
 }
-
-export const toolsHubCopy = {
-  es: {
-    metaTitle: 'Herramientas · Numeración especial e identificación | Notofilia',
-    metaDescription:
-      'Herramientas de consulta de la colección virtual Notofilia: numeración especial e identificación por foto. Sin precios y nada a la venta.',
-    title: 'Herramientas de referencia',
-    dek: 'Consultas de orientación sobre la colección publicada. Clasifican un patrón o comparan una foto con las fichas; no autentican, no gradúan y no valoran. Nada de esta colección está a la venta.',
-    home: 'Inicio',
-    nav: 'Herramientas',
-    checkerTitle: 'Numeración especial',
-    checkerDek:
-      'Clasifique un número de serie según patrones de coleccionista —bajo, capicúa, binario, sólido, escalera, repetidor— y vea si coincide con un ejemplar publicado.',
-    checkerCta: 'Abrir el clasificador',
-    identifyTitle: 'Identificar una pieza',
-    identifyDek:
-      'Tome o suba una foto del anverso y compare con las piezas ya publicadas en el catálogo.',
-    identifyCta: 'Ir a Identificar',
-  },
-  en: {
-    metaTitle: 'Tools · Fancy serials and photo identification | Notofilia',
-    metaDescription:
-      'Reference tools for the Notofilia virtual collection: fancy serial classification and photo identification. No prices, and nothing is for sale.',
-    title: 'Reference tools',
-    dek: 'Orientation tools over the published collection. They classify a pattern or compare a photo with the records; they do not authenticate, grade, or value a piece. Nothing in this collection is for sale.',
-    home: 'Home',
-    nav: 'Tools',
-    checkerTitle: 'Fancy serial numbers',
-    checkerDek:
-      'Classify a serial number by collector patterns — low, radar, binary, solid, ladder, repeater — and see whether it matches a published example.',
-    checkerCta: 'Open the checker',
-    identifyTitle: 'Identify a piece',
-    identifyDek: 'Take or upload a face photo and compare it with pieces already published in the catalogue.',
-    identifyCta: 'Go to Identify',
-  },
-} as const;
 
 export const fancySerialCopy = {
   es: {
@@ -56,7 +15,6 @@ export const fancySerialCopy = {
     title: 'Clasificador de numeración especial',
     dek: 'Escriba el número de serie tal como aparece impreso. Mostramos el serial normalizado, las clases de patrón y, si coincide, el enlace a la ficha. Esto no autentica, no asigna grado ni estima un precio.',
     home: 'Inicio',
-    hubNav: 'Herramientas',
     nav: 'Numeración especial',
     inputLabel: 'Número de serie',
     inputHint: 'Letras, dígitos y, si aplica, marca de reemplazo o estrella.',
@@ -101,7 +59,6 @@ export const fancySerialCopy = {
     title: 'Fancy serial checker',
     dek: 'Enter the serial number as printed. We show the normalized serial, pattern classes, and a record link when it matches. This does not authenticate, grade, or estimate a price.',
     home: 'Home',
-    hubNav: 'Tools',
     nav: 'Fancy serial checker',
     inputLabel: 'Serial number',
     inputHint: 'Letters, digits, and a replacement or star mark when it applies.',

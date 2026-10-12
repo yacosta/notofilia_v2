@@ -3,7 +3,7 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 1104,
+    "existing": 1106,
     "legacy-dc": 51,
     "manual": 28,
     "last-slug": 7,
@@ -9437,12 +9437,12 @@
       "rule": "existing"
     },
     "/en/herramientas/": {
-      "target": "/en/tools/",
+      "target": "/en/tools/fancy-serial-checker/",
       "status": 301,
       "rule": "existing"
     },
     "/en/herramientas": {
-      "target": "/en/tools/",
+      "target": "/en/tools/fancy-serial-checker/",
       "status": 301,
       "rule": "existing"
     },
@@ -12226,6 +12226,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/tools/": {
+      "target": "/en/tools/fancy-serial-checker/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/tools": {
+      "target": "/en/tools/fancy-serial-checker/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/expominer-y-colecciona-muestran-sellos-y-minerales-unicos/": {
       "target": "",
       "status": 410,
@@ -13373,6 +13383,16 @@
     },
     "/glosario/yuan-renminbi": {
       "target": "/glosario/?term=yuan-renminbi/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/herramientas/": {
+      "target": "/herramientas/numeracion-especial/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/herramientas": {
+      "target": "/herramientas/numeracion-especial/",
       "status": 301,
       "rule": "existing"
     },
