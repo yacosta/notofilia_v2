@@ -7,6 +7,7 @@ import type { TypeCatalogDocument, TypeCatalogEra, TypeCatalogFilter, TypeCatalo
 export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
+  | '1-escudo-bogota-1795-nr-jj'
   | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
@@ -76,6 +77,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '2-escudos-popayan-1791-p-sf',
+  },
+  {
+    id: '1-escudo-bogota-1795-nr-jj',
+    era: 'santa-fe',
+    year: '1795',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 56.1 · Restrepo 84.8 · Calicó 1201 · Hernández 687 · Fr#58',
+    title: { es: '1 escudo · Bogotá NR–JJ · 1795', en: '1 escudo · Bogotá NR–JJ · 1795' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, fecha 1795, ceca NR y ensaye JJ. En la colección.',
+      en: 'Charles IV gold escudo, dated 1795, mint NR and assayer JJ. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-bogota-1795-nr-jj',
   },
   {
     id: '1-escudo-popayan-1800-p-jf',

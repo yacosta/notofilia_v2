@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('1-escudo-bogota-1795-nr-jj');
+if (!piece) throw new Error('Missing Bogotá 1795 1 escudo NR–JJ');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />

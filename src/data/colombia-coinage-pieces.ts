@@ -10,6 +10,7 @@ import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from './popayan-1-escudo-carlos-iv';
 import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
+  | '1-escudo-bogota-1795-nr-jj'
   | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
@@ -56,6 +57,85 @@ export type ColombiaCoinagePiece = {
 };
 
 export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHoldings([
+  {
+    id: '1-escudo-bogota-1795-nr-jj',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1795-nr-jj/`,
+    chapterId: 'santa-fe',
+    year: '1795',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+      en: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+    },
+    reference: 'KM# 56.1 · Restrepo 84.8 · Calicó 1201 · Hernández 687 · Fr#58 · Numista N#52837',
+    title: {
+      es: '1 escudo · Bogotá NR–JJ · 1795',
+      en: '1 escudo · Bogotá NR–JJ · 1795',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santa Fe colonial',
+      en: 'Colombia-Numismatics · colonial Santa Fe',
+    },
+    lead: {
+      es: 'Un escudo de oro de 1795, labrado en Santa Fe de Nuevo Reino (Bogotá) a nombre de Carlos IV. El anverso lleva el busto y la fecha; el reverso, el valor 1 S y las marcas NR · JJ.',
+      en: 'An 1795 gold escudo struck at Santa Fe de Nuevo Reino (Bogotá) in the name of Charles IV. The obverse carries the bust and the date; the reverse, the value 1 S and the marks NR · JJ.',
+    },
+    description: {
+      es: 'En 1795 la Casa de Santa Fe de Nuevo Reino, en Bogotá, labraba oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1795 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca NR de Nuevo Reino y las iniciales de ensaye JJ. Eso es el tipo KM# 56.1 —Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58—, no el KM# 56.2 de Popayán con marcas P–JF, que documentan las fichas de 1800, 1801, 1806 y 1808. La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo, no un 15. Numista reúne bajo N#52837 las dos cecas del tipo (NR como KM# 56.1, P como KM# 56.2) y lista el 1795 NR–JJ como Hernández 687; la 8.ª edición de 2023 de Hernández reúne bajo ese código los NR–JJ de Carlos IV con leyenda y busto propios. El oro .875, unos 3,38 g de tipo y un módulo de 19 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: Numista no publica cifra para ningún año y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. No es el real de plata de Bogotá de 1810 ni los escudos de Popayán de esta colección.',
+      en: 'In 1795 the Santa Fe de Nuevo Reino mint, at Bogotá, was striking milled gold in the name of Charles IV. This disc shows the date 1795 under the portrait, the value 1 S, and, on either side of the fleece, mintmark NR for Nuevo Reino and the assayer initials JJ. That is type KM# 56.1 — Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58 — not Popayán’s KM# 56.2 with marks P–JF, which the 1800, 1801, 1806, and 1808 records document. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo, not 15. Numista groups both mints of the type under N#52837 (NR as KM# 56.1, P as KM# 56.2) and lists the 1795 NR–JJ as Hernández 687; the 2023 8th edition of Hernández gathers under that code the NR–JJ pieces with Charles IV’s own legend and bust. Gold .875, a type weight of about 3.38 g, and a module of 19 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: Numista publishes no figure for any year, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. It is not Bogotá’s 1810 silver real, nor the Popayán escudos in this collection.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1795.',
+      en: 'Obverse: bust of Charles IV facing right, legend with IIII, and the date 1795.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marca NR y ensaye JJ a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; mintmark NR and assayer JJ beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 56.1 (N#52837) y lista el 1795 NR–JJ como Hernández 687, sin foto, sin valor y sin tirada. Un lote de Sedwick con la misma fecha y ensaye describe un ejemplar PCGS VF30 como el mejor y único del censo de PCGS, sin ninguno en NGC al catalogarlo; eso es el censo de dos servicios, no un conteo de sobrevivientes. Esta ficha no inventa un censo ni publica precios.',
+      en: 'Numista covers type KM# 56.1 (N#52837) and lists the 1795 NR–JJ as Hernández 687, with no photo, no value, and no mintage. A Sedwick lot of the same date and assayer describes a PCGS VF30 example as the finest and only one in the PCGS census, with none at NGC when catalogued; that is a two-grader census, not a survivor count. This record does not invent a census or publish prices.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato muy gastado y reverso con mejor detalle; superficie amarilla con recesos oscuros, rayones y marcas; disco algo irregular. Fecha 1795, 1 S y NR–JJ se leen. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Heavily worn portrait and a clearer reverse; yellow surface with darker recesses, scratches, and marks; slightly irregular disc. Date 1795, 1 S, and NR–JJ readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-1-escudo-1795-charles-iv-nr-jj-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-1-escudo-1795-charles-iv-nr-jj-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-1-escudo-1795-charles-iv-nr-jj-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/52837',
+        es: 'Numista — 1 escudo, Carlos IV, Colombia (N#52837)',
+        en: 'Numista — 1 escudo, Charles IV, Colombia (N#52837)',
+        note: {
+          es: 'KM# 56.1 para la ceca NR; el 1795 NR–JJ figura como Hernández 687. Oro de tipo .875, unos 3,38 g y 19 mm. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 56.1 for the NR mint; 1795 NR–JJ is listed as Hernández 687. Type gold .875, about 3.38 g, and 19 mm. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/literature.php?id=100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Monedas y billetes de Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista asigna el Cód. 687 al NR–JJ de Carlos IV de este tipo. No se copian las columnas de precio de esa edición, ni se lee ahí una tirada.',
+          en: 'Numista assigns Cód. 687 to the Charles IV NR–JJ of this type. Price columns from that edition are not copied, and no mintage is read from them.',
+        },
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/COLOMBIA-Bogot-gold-bust-1-escudo-Charles-IV-1795-JJ-PCGS-VF30-finest-and-only-example-in-PCG_i59768910',
+        es: 'Sedwick — 1 escudo de Bogotá, Carlos IV, 1795 JJ (PCGS VF30)',
+        en: 'Sedwick — Bogotá 1 escudo, Charles IV, 1795 JJ (PCGS VF30)',
+        note: {
+          es: 'KM-56.1, Restrepo 84.8, Calicó 1201 y Friedberg 58. Comparable de subasta; no es este ejemplar y no se publican precios. Numista, para el tipo completo, lista Fr 59 y 65.',
+          en: 'KM-56.1, Restrepo 84.8, Calicó 1201, and Friedberg 58. Auction comparable; not this specimen, and prices are not published. Numista lists Fr 59 and 65 for the whole type.',
+        },
+      },
+    ],
+  },
   {
     id: '1-escudo-popayan-1800-p-jf',
     path: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
