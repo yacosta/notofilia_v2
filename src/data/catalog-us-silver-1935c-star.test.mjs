@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-bogota-nr-jj');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1795-1-escudo-bogota-km56-1');
+    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-popayan-p-jf');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1795-1-escudo-popayan-km56-2');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

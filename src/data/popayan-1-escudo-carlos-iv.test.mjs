@@ -46,7 +46,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.match(enRoute, /PopayanCharlesIvEscudoPage/);
   });
 
-  it('records the type facts, the four holdings, and the 1808 caveat', () => {
+  it('records the type facts, the five holdings, and the 1808 caveat', () => {
     assert.equal(popayan1EscudoCarlosIvCopy.es.facts.find((fact) => fact.label === 'Metal')?.value, 'Oro .875 (tipo)');
     assert.equal(
       popayan1EscudoCarlosIvCopy.en.facts.find((fact) => fact.label === 'Metal')?.value,
@@ -72,6 +72,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.match(archiveEn?.paragraphs[0] ?? '', /does not confirm that year/);
     assert.match(archive?.paragraphs[0] ?? '', /KM# 64\.2/);
     assert.deepEqual([...POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS], [
+      '1-escudo-popayan-1795-p-jf',
       '1-escudo-popayan-1800-p-jf',
       '1-escudo-popayan-1801-p-jf',
       '1-escudo-popayan-1806-p-jf',
@@ -79,6 +80,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     ]);
     assert.equal(POPAYAN_1_ESCUDO_CARLOS_IV_COMPOSITE.width, 1536);
     assert.equal(POPAYAN_1_ESCUDO_CARLOS_IV_COMPOSITE.height, 1024);
+    assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1795-p-jf', 'es'), /1795/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1800-p-jf', 'es'), /1800/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1801-p-jf', 'es'), /1801/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1808-p-jf', 'en'), /1808/);
