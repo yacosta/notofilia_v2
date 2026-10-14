@@ -199,7 +199,6 @@ export const additions: Holding[] = [
   { id: 'co-1801-8-escudos-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'us-2-50-dolares-1912-indian-head', kind: 'coin', country: 'US' },
   { id: 'us-2-50-dolares-1878-liberty-head', kind: 'coin', country: 'US' },
-  { id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },
   { id: 'us-1908-2-50-dolares-cabeza-de-indio', kind: 'coin', country: 'US' },
   { id: 'pr-1895-20-centavos-pgv', kind: 'coin', country: 'PR' },
   { id: 'pr-10-centavos-alfonso-xiii-pgv', kind: 'coin', country: 'PR' },
@@ -229,6 +228,7 @@ export const additions: Holding[] = [
   { id: 'co-1800-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1795-1-escudo-bogota-nr-jj', kind: 'coin', country: 'CO' },
   { id: 'co-1795-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
+  { id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
