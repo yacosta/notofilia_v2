@@ -11,6 +11,7 @@ import { LAZARETTOS_NUMISMATICS_PATH } from './lazarettos-numismatics';
 
 export type ColombiaCoinagePieceId =
   | '1-escudo-bogota-1795-nr-jj'
+  | '1-escudo-popayan-1795-p-jf'
   | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
@@ -137,6 +138,129 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
     ],
   },
   {
+    id: '1-escudo-popayan-1795-p-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1795-p-jf/`,
+    chapterId: 'santa-fe',
+    year: '1795',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Popayán (P)',
+      en: 'Popayán (P)',
+    },
+    reference: 'KM# 56.2 · Hernández 688 · Cayón 14047 · Fr#59 · Numista N#52837',
+    title: {
+      es: '1 escudo · Popayán P–JF · 1795',
+      en: '1 escudo · Popayán P–JF · 1795',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Popayán colonial',
+      en: 'Colombia-Numismatics · colonial Popayán',
+    },
+    lead: {
+      es: 'Escudo de oro de Carlos IV fechado en 1795, de la casa de moneda de Popayán. En el reverso, el valor 1 S y las marcas P · JF a los lados del vellocino.',
+      en: 'A gold escudo of Charles IV dated 1795, from the Popayán mint. The reverse carries the value 1 S and the marks P · JF on either side of the fleece.',
+    },
+    description: {
+      es: 'En 1795 la casa de moneda de Popayán, que había empezado a acuñar en 1758, labraba oro de cordoncillo a nombre de Carlos IV. Este disco lleva la fecha 1795 bajo el busto, el valor 1 S en el reverso y, a cada lado del vellocino, las marcas P y JF. Corresponde al tipo KM# 56.2 —Hernández 688, Cayón 14047, Friedberg 59—, no al KM# 56.1 de Santa Fe (marcas NR–JJ), que también existe con fecha 1795 y se documenta en otra ficha de esta colección. Tampoco es ninguno de los escudos de Popayán de 1800, 1801, 1806 y 1808, que son fichas aparte. La leyenda del anverso, normalizada, dice CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, no IV) y se desarrolla como Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha indican un escudo. Las cifras de oro .875, unos 3,38 g y 19 mm son las que Numista da para el tipo; CoinVarieties añade 0,095 oz troy de oro fino. Este ejemplar no se pesó ni se midió. Numista describe el tipo como acuñado a molino, con alineación de medalla; en estas fotografías el canto se ve estriado, aunque no hay una toma aparte del canto. Ninguna de las fuentes consultadas da una tirada para el 1795 P–JF. Sin encapsular; las fotografías no autentican el metal.',
+      en: 'In 1795 the Popayán mint, which had begun striking in 1758, was producing milled gold in the name of Charles IV. This disc shows the date 1795 under the bust, the value 1 S on the reverse, and, on either side of the fleece, the marks P and JF. That is type KM# 56.2 — Hernández 688, Cayón 14047, Friedberg 59 — not Santa Fe’s KM# 56.1 (marks NR–JJ), which also exists dated 1795 and is documented in a separate record in this collection. Nor is it any of the Popayán escudos of 1800, 1801, 1806, and 1808, which are records of their own. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, not IV), expanding to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and the S at right mark one escudo. The figures of gold .875, about 3.38 g, and 19 mm are the ones Numista gives for the type; CoinVarieties adds 0.095 troy oz of fine gold. This disc was not weighed or measured. Numista describes the type as milled, with medal alignment; the edge looks reeded in these photographs, though there is no separate edge view. None of the sources consulted gives a mintage for the 1795 P–JF. Unslabbed; photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1795.',
+      en: 'Obverse: bust of Charles IV facing right, legend with IIII, and the date 1795.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marcas P y JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; marks P and JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 56.2 (N#52837) y lista el 1795 P–JF como Hernández 688, sin una tirada. CoinVarieties registra esa fecha y ese ensaye como Cayón 14047, con Friedberg 59 y KM# 56.2, y deja la acuñación sin cifra; tampoco da número de Restrepo ni de Calicó para este año, y aquí no se inventan. No se publica un censo de encapsulados ni un martillo. El 1795 NR–JJ de Bogotá es otra ficha de esta colección.',
+      en: 'Numista covers type KM# 56.2 (N#52837) and lists the 1795 P–JF as Hernández 688, without a mintage. CoinVarieties records that date and assayer as Cayón 14047, with Friedberg 59 and KM# 56.2, and leaves the striking unstated; it gives no Restrepo or Calicó number for this year either, and none is invented here. No slab census and no hammer are published. The Bogotá 1795 NR–JJ is a separate record in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato aplanado, con rayas y marcas finas de contacto; disco algo irregular. Fecha 1795, 1 S y P–JF se leen. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Flattened portrait with hairlines and fine contact marks; slightly irregular disc. Date 1795, 1 S, and P–JF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/52837',
+        es: 'Numista — 1 escudo, Carlos IV, Colombia (N#52837)',
+        en: 'Numista — 1 escudo, Charles IV, Colombia (N#52837)',
+        note: {
+          es: 'KM# 56.2 para la ceca P; el 1795 P–JF figura como Hernández 688. Oro de tipo .875, unos 3,38 g y 19 mm. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 56.2 for the P mint; 1795 P–JF is listed as Hernández 688. Type gold .875, about 3.38 g, and 19 mm. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1795-P_JF_escudo',
+        es: 'CoinVarieties — 1 escudo de Popayán, Carlos IV, 1795 P–JF',
+        en: 'CoinVarieties — Popayán 1 escudo, Charles IV, 1795 P–JF',
+        note: {
+          es: 'Cayón 14047, Friedberg 59 y KM# 56.2; 0,095 oz troy de oro fino. Deja la tirada sin cifra y no da número de Restrepo ni de Calicó para este año. El ejemplar de subasta que describe es otro; no se publican precios.',
+          en: 'Cayón 14047, Friedberg 59, and KM# 56.2; 0.095 troy oz of fine gold. Leaves the mintage unstated and gives no Restrepo or Calicó number for this year. The auction specimen it describes is another coin; prices are not published.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Casa_de_acu%C3%B1aci%C3%B3n_de_moneda_de_Popay%C3%A1n',
+        es: 'Enciclopedia Banrepcultural — Casa de acuñación de Popayán',
+        en: 'Banrepcultural Encyclopedia — The Popayán mint',
+        note: {
+          es: 'La casa empezó a acuñar en 1758. Contexto de ceca, no autenticación de este disco.',
+          en: 'The house began striking in 1758. Mint context, not authentication of this disc.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
+        label: {
+          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
+          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1795-nr-jj/`,
+        label: {
+          es: '1 escudo de Bogotá, 1795 NR–JJ',
+          en: 'Bogotá 1 escudo, 1795 NR–JJ',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1800 P–JF',
+          en: 'Popayán 1 escudo, 1800 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1801-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1801 P–JF',
+          en: 'Popayán 1 escudo, 1801 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1806-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1806 P–JF',
+          en: 'Popayán 1 escudo, 1806 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1808-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1808 P–JF',
+          en: 'Popayán 1 escudo, 1808 P–JF',
+        },
+      },
+    ],
+  },
+  {
     id: '1-escudo-popayan-1800-p-jf',
     path: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
     chapterId: 'santa-fe',
@@ -247,6 +371,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Popayán, Carlos IV (1792–1808)',
           en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1795-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1795 P–JF',
+          en: 'Popayán 1 escudo, 1795 P–JF',
         },
       },
       {
@@ -372,6 +503,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Popayán, Carlos IV (1792–1808)',
           en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1795-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1795 P–JF',
+          en: 'Popayán 1 escudo, 1795 P–JF',
         },
       },
       {
@@ -516,6 +654,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         },
       },
       {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1795-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1795 P–JF',
+          en: 'Popayán 1 escudo, 1795 P–JF',
+        },
+      },
+      {
         href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1800-p-jf/`,
         label: {
           es: '1 escudo de Popayán, 1800 P–JF',
@@ -647,6 +792,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Popayán, Carlos IV (1792–1808)',
           en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1795-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1795 P–JF',
+          en: 'Popayán 1 escudo, 1795 P–JF',
         },
       },
       {
