@@ -124,7 +124,7 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the 1977 500 pesos oro holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-bogota-nr-jj');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1878-cc');
     const note = noteById('500-pesos-oro-1977');
     assert.ok(note);
     const pieces = notePieces(note).map((piece) => ({
@@ -146,6 +146,28 @@ describe('homepage milestones from catalog holdings', () => {
     const [card] = milestonesFromHoldings([holding], pieces, 1);
     assert.equal(card.holdingId, holding.id);
     assert.match(card.href, /500-pesos-oro-1977/);
+  });
+
+  it('puts the 1878-CC Morgan dollar on the first Logros del Mes page', () => {
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1878-cc');
+    const holding = additions.at(-1);
+    assert.ok(holding);
+    const piece = {
+      id: 'us-1-dolar-morgan-1878-cc',
+      country: 'US',
+      href: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/',
+      title: { es: '1 dólar Morgan · Carson City · 1878', en: 'Morgan dollar · Carson City · 1878' },
+      dek: { es: 'lead', en: 'lead' },
+      pick: 'KM# 110',
+      serial: '',
+      cert: '',
+      image: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1878-cc-composite.jpg',
+      imageAlt: { es: 'Anverso', en: 'Obverse' },
+    };
+    const cards = milestonesFromHoldings(additions, [piece], HOME_MILESTONE_LIMIT);
+    assert.equal(cards[0].holdingId, holding.id);
+    assert.match(cards[0].href, /1-dolar-morgan-1878-cc/);
+    assert.ok(cards.length <= HOME_MILESTONE_LIMIT);
   });
 
   it('lists newly appended holdings first', () => {
@@ -175,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-bogota-nr-jj');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1878-cc');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -197,7 +219,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 32);
+    assert.equal(fromEnd, 34);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -220,7 +242,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 31);
+    assert.equal(fromEnd, 33);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',

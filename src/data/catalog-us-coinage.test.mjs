@@ -336,17 +336,32 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.match(data, /KM# 86 · PCGS# 7540 · N# 23120/);
     assert.match(data, /1,672 g/);
     assert.match(data, /1\.672 g/);
+    assert.match(data, /1,505 g/);
+    assert.match(data, /1\.505 g/);
+    assert.match(data, /0,04838 oz troy/);
+    assert.match(data, /0\.04838 troy oz/);
     assert.match(data, /1\.762\.936/);
     assert.match(data, /1,762,936/);
+    assert.match(data, /2\.250/);
+    assert.match(data, /2,250/);
+    assert.match(data, /Bressett/);
     assert.match(data, /no_serial_reason:\n      'Struck United States gold dollar/);
     assert.match(data, /united-states-mint-1-dollar-gold-1856-large-head-composite\.jpg/);
-    assert.match(data, /pcgs.com\/coinfacts\/coin\/7540/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1856-g-1-slanted-5\/7540/);
     assert.match(data, /en\.numista\.com\/23120/);
+    assert.match(data, /money.org\/uploads\/pdfs\/1856_Upright_5_Final_Article\.pdf/);
     assert.match(data, /9 Stat\. 397/);
     assert.doesNotMatch(data, /serial: '/);
     assert.doesNotMatch(data, /cert_number:/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-oro-1856-cabeza-grande'"),
+      data.indexOf("id: '1-dolar-morgan-1884-s'"),
+    );
+    assert.doesNotMatch(piece, /1\.729\.276|1,729,276|33\.660|33,660/);
+    assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1856-gold-dollar-km86/);
+    assert.match(holdings, /us-1-dolar-morgan-1878-cc', kind: 'coin', country: 'US' },\n];/);
   });
 });
 
