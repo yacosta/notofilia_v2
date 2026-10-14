@@ -361,7 +361,7 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1856-gold-dollar-km86/);
-    assert.match(holdings, /us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },\n];/);
+    assert.match(holdings, /us-1-dolar-morgan-1878-cc', kind: 'coin', country: 'US' },\n];/);
   });
 });
 
@@ -433,6 +433,63 @@ describe('US Hard Times HT-16 1841 Webster token', () => {
     assert.match(holdings, /id: 'us-1841-ht-16-daniel-webster', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1841-ht-16-low-58/);
     assert.match(hardTimesEssay, /HT-16/);
+  });
+});
+
+describe('US 1878-CC Morgan dollar', () => {
+  it('registers one bilingual Carson City dollar in a PCGS holder, with cert transcribed and unverified', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1878-cc/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1878-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1878-cc'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7080 · N# 1492/);
+    assert.match(data, /7495\.60\/72833930/);
+    assert.match(data, /2\.212\.000/);
+    assert.match(data, /2,212,000/);
+    assert.match(data, /60\.993/);
+    assert.match(data, /60,993/);
+    assert.match(data, /295\.000/);
+    assert.match(data, /195\.000/);
+    assert.match(data, /George T\. Morgan/);
+    assert.match(data, /marca CC/);
+    assert.match(data, /no se verificó de forma independiente/);
+    assert.match(data, /not independently verified/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1878-cc-composite\.jpg/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1878-cc-front\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1878-cc-1\/7080/);
+    assert.match(data, /pcgs.com\/cert\/72833930/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /16 de abril de 1878/);
+    assert.match(data, /16 April 1878/);
+    assert.doesNotMatch(data, /serial: '/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-morgan-1878-cc'"),
+      data.indexOf("id: '1-dolar-morgan-1884-s'"),
+    );
+    assert.doesNotMatch(piece, /cert_number:/);
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1878-cc', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1878-cc-morgan-pcgs72833930/);
+    for (const file of [
+      'united-states-mint-1-dollar-morgan-1878-cc-front.png',
+      'united-states-mint-1-dollar-morgan-1878-cc-back.png',
+      'united-states-mint-1-dollar-morgan-1878-cc-composite.jpg',
+    ]) {
+      readFileSync(new URL(`../../catalog-src/catalog/united-states/${file}`, import.meta.url));
+    }
   });
 });
 
@@ -610,7 +667,7 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganEssay, /\$750,000/);
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
     assert.match(morganEssay, /Number\(a\.year\) - Number\(b\.year\)/);
-    assert.match(morganEssay, /1883-CC, 1884-S, 1885-CC/);
+    assert.match(morganEssay, /1878-CC, 1883-CC, 1884-S, 1885-CC/);
   });
 });
 

@@ -321,6 +321,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar de oro · United States Mint · 1856',
     en: 'Gold dollar · United States Mint · 1856',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/': {
+    es: '1 dólar Morgan · Carson City · 1878',
+    en: 'Morgan dollar · Carson City · 1878',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/': {
     es: '1 dólar Morgan · Carson City · 1885',
     en: 'Morgan dollar · Carson City · 1885',
@@ -393,8 +397,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
-    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia de la colección.',
-    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1878-CC, 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
   },
   '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
     es: 'La onza de plata .999 de 1986 a 2026. Las fichas de la serie se publicarán en esta página.',
@@ -435,6 +439,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/': {
     es: 'El dólar de oro de 1856, tipo 3 de Longacre, Filadelfia, sin marca de ceca.',
     en: 'The 1856 gold dollar, Longacre Type 3, Philadelphia, with no mint mark.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/': {
+    es: 'El dólar Morgan de 1878, Carson City, en cápsula rotulada PCGS MS60.',
+    en: 'The 1878 Morgan dollar, Carson City, in a holder labeled PCGS MS60.',
   },
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/': {
     es: 'El dólar Morgan de 1885, Carson City, marca CC, sin cápsula.',

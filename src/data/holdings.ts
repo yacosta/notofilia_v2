@@ -229,6 +229,7 @@ export const additions: Holding[] = [
   { id: 'co-1795-1-escudo-bogota-nr-jj', kind: 'coin', country: 'CO' },
   { id: 'co-1795-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },
+  { id: 'us-1-dolar-morgan-1878-cc', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -384,6 +385,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1800-1-escudo-popayan-km56-2' },
   { id: 'co-1795-1-escudo-bogota-km56-1' },
   { id: 'co-1795-1-escudo-popayan-km56-2' },
+  { id: 'us-1878-cc-morgan-pcgs72833930' },
 ];
 
 export type CollectionStats = {
