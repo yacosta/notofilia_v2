@@ -124,7 +124,7 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the 1977 500 pesos oro holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-popayan-p-jf');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-oro-1856-cabeza-grande');
     const note = noteById('500-pesos-oro-1977');
     assert.ok(note);
     const pieces = notePieces(note).map((piece) => ({
@@ -146,6 +146,28 @@ describe('homepage milestones from catalog holdings', () => {
     const [card] = milestonesFromHoldings([holding], pieces, 1);
     assert.equal(card.holdingId, holding.id);
     assert.match(card.href, /500-pesos-oro-1977/);
+  });
+
+  it('puts the 1856 gold dollar on the first Logros del Mes page', () => {
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-oro-1856-cabeza-grande');
+    const holding = additions.at(-1);
+    assert.ok(holding);
+    const piece = {
+      id: 'us-1-dolar-oro-1856-cabeza-grande',
+      country: 'US',
+      href: '/coleccion/estados-unidos-numismatica/1-dolar-oro-1856-cabeza-grande/',
+      title: { es: '1 dólar de oro · United States Mint · 1856', en: 'Gold dollar · United States Mint · 1856' },
+      dek: { es: 'lead', en: 'lead' },
+      pick: 'KM# 86',
+      serial: '',
+      cert: '',
+      image: '/images/catalog/united-states/united-states-mint-1-dollar-gold-1856-large-head-composite.jpg',
+      imageAlt: { es: 'Anverso', en: 'Obverse' },
+    };
+    const cards = milestonesFromHoldings(additions, [piece], HOME_MILESTONE_LIMIT);
+    assert.equal(cards[0].holdingId, holding.id);
+    assert.match(cards[0].href, /1-dolar-oro-1856-cabeza-grande/);
+    assert.ok(cards.length <= HOME_MILESTONE_LIMIT);
   });
 
   it('lists newly appended holdings first', () => {
@@ -175,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-popayan-p-jf');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-oro-1856-cabeza-grande');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',

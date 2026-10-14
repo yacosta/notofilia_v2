@@ -54,7 +54,7 @@ describe('US Series 1935A blue-seal $1 Fr. 1608', () => {
     assert.doesNotMatch(printed, /6\.1/);
     assert.doesNotMatch(note, /Stuart/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'co-1795-1-escudo-popayan-p-jf');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-oro-1856-cabeza-grande');
     assert.equal(catalogAdditions.at(-1)?.id, 'co-1795-1-escudo-popayan-km56-2');
   });
 
