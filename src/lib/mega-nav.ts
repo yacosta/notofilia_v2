@@ -33,10 +33,7 @@ import {
 } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
 import { silverEagleHoldings, silverEagleSeriesCopy } from '../data/estados-unidos-silver-eagle';
-import {
-  INDIAN_HEAD_QUARTER_EAGLE_PATH,
-  indianHeadQuarterEagleCopy,
-} from '../data/indian-head-quarter-eagle';
+import { INDIAN_HEAD_QUARTER_EAGLE_PATH } from '../data/indian-head-quarter-eagle';
 import { SERIES_PATH } from '../data/philippines-victory-66';
 import {
   POLIMERO_CANADA_PATH,
@@ -100,12 +97,14 @@ if (!usQuarterEagle1878) {
 }
 
 const usQuarterEagle1908 = coinById('2-50-dolares-1908-cabeza-de-indio');
-if (!usQuarterEagle1908) {
+const usQuarterEagle1908Heading = usQuarterEagle1908?.heading;
+if (!usQuarterEagle1908 || !usQuarterEagle1908Heading) {
   throw new Error('Missing US 1908 Indian Head quarter eagle for mega-nav');
 }
 
 const usQuarterEagle1912 = coinById('2-50-dolares-1912-indian-head');
-if (!usQuarterEagle1912) {
+const usQuarterEagle1912Heading = usQuarterEagle1912?.heading;
+if (!usQuarterEagle1912 || !usQuarterEagle1912Heading) {
   throw new Error('Missing US 1912 Indian Head quarter eagle for mega-nav');
 }
 
@@ -516,33 +515,33 @@ export const megaNav: NavNode[] = [
           },
           {
             id: 'us-quarter-eagle-liberty-head-1840-1907',
-            es: 'Quarter eagle Liberty Head de 2,50 dólares en oro (1840–1907)',
-            en: 'Liberty Head $2.50 Gold Quarter Eagle (1840–1907)',
+            es: '2½ dólares (cuarto de águila) · Liberty Head (1840–1907)',
+            en: '2½ dollars (quarter eagle) · Liberty Head (1840–1907)',
             children: [
               {
                 id: 'us-2-50-dolares-1878-liberty-head',
-                es: usQuarterEagle1878.title.es,
-                en: usQuarterEagle1878.title.en,
+                es: '2½ dólares (cuarto de águila) · 1878',
+                en: '2½ dollars (quarter eagle) · 1878',
                 href: usQuarterEagle1878.path,
               },
             ],
           },
           {
             id: 'us-indian-head-quarter-eagle-1908-1929',
-            es: indianHeadQuarterEagleCopy.es.title,
-            en: indianHeadQuarterEagleCopy.en.title,
+            es: '2½ dólares (cuarto de águila) · Indian Head (1908–1929)',
+            en: '$2½ (quarter eagle) · Indian Head (1908–1929)',
             href: INDIAN_HEAD_QUARTER_EAGLE_PATH,
             children: [
               {
                 id: 'us-2-50-dolares-1908-cabeza-de-indio',
-                es: usQuarterEagle1908.title.es,
-                en: usQuarterEagle1908.title.en,
+                es: usQuarterEagle1908Heading.es,
+                en: usQuarterEagle1908Heading.en,
                 href: usQuarterEagle1908.path,
               },
               {
                 id: 'us-2-50-dolares-1912-indian-head',
-                es: usQuarterEagle1912.title.es,
-                en: usQuarterEagle1912.title.en,
+                es: usQuarterEagle1912Heading.es,
+                en: usQuarterEagle1912Heading.en,
                 href: usQuarterEagle1912.path,
               },
             ],

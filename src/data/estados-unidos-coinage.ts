@@ -1114,8 +1114,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia (no mint mark)',
     },
     denomination: {
-      es: '2,50 dólares (quarter eagle)',
-      en: '2.50 dollars (quarter eagle)',
+      es: '2½ dólares (quarter eagle)',
+      en: '2½ dollars (quarter eagle)',
     },
     composition: {
       es: 'Oro .900 (90 % Au, 10 % Cu)',
@@ -1150,8 +1150,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       faceHeight: 941,
     },
     title: {
-      es: '2,50 dólares · Liberty Head · 1878',
-      en: '2.50 dollars · Liberty Head · 1878',
+      es: '2½ dólares · Liberty Head · 1878',
+      en: '2½ dollars · Liberty Head · 1878',
     },
     kicker: {
       es: 'Estados Unidos · United States Mint',
@@ -1162,12 +1162,12 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia .900 gold quarter eagle, 1878, with no mint mark. Christian Gobrecht Liberty Head, in raised relief. No serial, and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es el quarter eagle de 2,50 dólares de 1878, de la ceca de Filadelfia, sin marca. El anverso es el Liberty Head de Christian Gobrecht, también llamado Coronet: busto a la izquierda, cabello recogido con una sarta de cuentas, coroneta con LIBERTY, trece estrellas y la fecha 1878. El relieve está en alto, no hundido. El reverso lleva un águila heráldica con escudo, rama de olivo y flechas; la leyenda es UNITED STATES OF AMERICA y 2 1/2 D., con un punto a cada lado del valor. Sobre el valor, donde iría la marca de ceca, no hay letra. Tampoco se lee E PLURIBUS UNUM ni IN GOD WE TRUST, ni el punzón CAL. del 1848. No es el quarter eagle Indian Head de 1912 de esta colección —relieve incuso de Bela Lyon Pratt, penacho, IN GOD WE TRUST y 2½ DOLLARS—, ni el Classic Head de 1834–1839, ni un Gold Certificate. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación de 1878 (7828) de las pruebas (7904): esta foto muestra desgaste de circulación y no se le asigna acabado proof.',
-      en: 'This piece is the 1878 2.50-dollar quarter eagle from the Philadelphia mint, with no mint mark. The obverse is the Liberty Head of Christian Gobrecht, also called the Coronet type: a left-facing bust, hair drawn back with a string of beads, a coronet inscribed LIBERTY, thirteen stars, and the date 1878. The relief is raised, not incuse. The reverse carries a heraldic eagle with a shield, an olive branch, and arrows; the legend is UNITED STATES OF AMERICA and 2 1/2 D., with a dot on each side of the value. Above the value, where a mint mark would sit, there is no letter. The photograph shows neither E PLURIBUS UNUM nor IN GOD WE TRUST, and no 1848 CAL. punch. It is not this collection’s 1912 Indian Head quarter eagle — Bela Lyon Pratt incuse relief, a feathered headdress, IN GOD WE TRUST, and 2½ DOLLARS — not the Classic Head of 1834–1839, and not a Gold Certificate. The piece is raw, with no holder. PCGS separates the 1878 business strike (7828) from the proofs (7904): this photograph shows circulation wear and is not identified as a proof.',
+      es: 'Esta pieza es el quarter eagle de 2½ dólares de 1878, de la ceca de Filadelfia, sin marca. El anverso es el Liberty Head de Christian Gobrecht, también llamado Coronet: busto a la izquierda, cabello recogido con una sarta de cuentas, coroneta con LIBERTY, trece estrellas y la fecha 1878. El relieve está en alto, no hundido. El reverso lleva un águila heráldica con escudo, rama de olivo y flechas; la leyenda es UNITED STATES OF AMERICA y 2 1/2 D., con un punto a cada lado del valor. Sobre el valor, donde iría la marca de ceca, no hay letra. Tampoco se lee E PLURIBUS UNUM ni IN GOD WE TRUST, ni el punzón CAL. del 1848. No es el quarter eagle Indian Head de 1912 de esta colección —relieve incuso de Bela Lyon Pratt, penacho, IN GOD WE TRUST y 2½ DOLLARS—, ni el Classic Head de 1834–1839, ni un Gold Certificate. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación de 1878 (7828) de las pruebas (7904): esta foto muestra desgaste de circulación y no se le asigna acabado proof.',
+      en: 'This piece is the 1878 2½-dollar quarter eagle from the Philadelphia mint, with no mint mark. The obverse is the Liberty Head of Christian Gobrecht, also called the Coronet type: a left-facing bust, hair drawn back with a string of beads, a coronet inscribed LIBERTY, thirteen stars, and the date 1878. The relief is raised, not incuse. The reverse carries a heraldic eagle with a shield, an olive branch, and arrows; the legend is UNITED STATES OF AMERICA and 2 1/2 D., with a dot on each side of the value. Above the value, where a mint mark would sit, there is no letter. The photograph shows neither E PLURIBUS UNUM nor IN GOD WE TRUST, and no 1848 CAL. punch. It is not this collection’s 1912 Indian Head quarter eagle — Bela Lyon Pratt incuse relief, a feathered headdress, IN GOD WE TRUST, and 2½ DOLLARS — not the Classic Head of 1834–1839, and not a Gold Certificate. The piece is raw, with no holder. PCGS separates the 1878 business strike (7828) from the proofs (7904): this photograph shows circulation wear and is not identified as a proof.',
     },
     history: {
-      es: 'El Coinage Act del 2 de abril de 1792 dio nombre al quarter eagle: la cuarta parte del águila de 10 dólares, con valor de 2,50 dólares. El peso pasó de 67,5 granos a 64,5 granos (4,18 g) con la ley del 28 de junio de 1834; la ley del 18 de enero de 1837 fijó la fineza en .900. Wikipedia, citando a Yeoman, sitúa en 0,121 onzas troy el oro fino de los quarter eagle de 1837 en adelante: es el contenido legal del tipo, no un ensayo de este disco. Christian Gobrecht adaptó en 1840, para este módulo de 18 mm, la cabeza con coroneta que había usado en el águila. El tipo se acuñó sin cambio mayor hasta 1907. La marca de ceca quedó bajo el águila; Filadelfia no la pone. En 1908 lo sustituyó el Indian Head incuso de Bela Lyon Pratt, acuñado hasta 1929. La denominación se retiró en 1933, con el fin del patrón oro; la última fecha emitida es 1929. Esta ficha describe el objeto de la colección; no tasa la emisión.',
-      en: 'The Coinage Act of 2 April 1792 named the quarter eagle: one quarter of the 10-dollar eagle, worth 2.50 dollars. The weight fell from 67.5 grains to 64.5 grains (4.18 g) with the act of 28 June 1834; the act of 18 January 1837 set the fineness at .900. Wikipedia, citing Yeoman, places the fine gold of quarter eagles from 1837 onward at 0.121 troy ounces: that is the statutory content of the type, not an assay of this disc. In 1840 Christian Gobrecht adapted, for this 18 mm module, the coronet head he had used on the eagle. The type was struck without a major change through 1907. The mint mark was placed under the eagle; Philadelphia uses none. In 1908 Bela Lyon Pratt’s incuse Indian Head replaced it and was struck through 1929. The denomination was withdrawn in 1933, with the end of the gold standard; the last date issued is 1929. This record describes the object in the collection; it does not value the issue.',
+      es: 'El Coinage Act del 2 de abril de 1792 dio nombre al quarter eagle: la cuarta parte del águila de 10 dólares, con valor de 2½ dólares. El peso pasó de 67,5 granos a 64,5 granos (4,18 g) con la ley del 28 de junio de 1834; la ley del 18 de enero de 1837 fijó la fineza en .900. Wikipedia, citando a Yeoman, sitúa en 0,121 onzas troy el oro fino de los quarter eagle de 1837 en adelante: es el contenido legal del tipo, no un ensayo de este disco. Christian Gobrecht adaptó en 1840, para este módulo de 18 mm, la cabeza con coroneta que había usado en el águila. El tipo se acuñó sin cambio mayor hasta 1907. La marca de ceca quedó bajo el águila; Filadelfia no la pone. En 1908 lo sustituyó el Indian Head incuso de Bela Lyon Pratt, acuñado hasta 1929. La denominación se retiró en 1933, con el fin del patrón oro; la última fecha emitida es 1929. Esta ficha describe el objeto de la colección; no tasa la emisión.',
+      en: 'The Coinage Act of 2 April 1792 named the quarter eagle: one quarter of the 10-dollar eagle, worth 2½ dollars. The weight fell from 67.5 grains to 64.5 grains (4.18 g) with the act of 28 June 1834; the act of 18 January 1837 set the fineness at .900. Wikipedia, citing Yeoman, places the fine gold of quarter eagles from 1837 onward at 0.121 troy ounces: that is the statutory content of the type, not an assay of this disc. In 1840 Christian Gobrecht adapted, for this 18 mm module, the coronet head he had used on the eagle. The type was struck without a major change through 1907. The mint mark was placed under the eagle; Philadelphia uses none. In 1908 Bela Lyon Pratt’s incuse Indian Head replaced it and was struck through 1929. The denomination was withdrawn in 1933, with the end of the gold standard; the last date issued is 1929. This record describes the object in the collection; it does not value the issue.',
     },
     obverseLegend: {
       es: 'LIBERTY en la coroneta · trece estrellas · 1878.',
@@ -1196,8 +1196,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     sources: [
       {
         href: 'https://www.pcgs.com/coinfacts/coin/1878-2-50/7828',
-        es: 'PCGS CoinFacts — 1878 2,50 dólares, acuñación de circulación (7828)',
-        en: 'PCGS CoinFacts — 1878 2.50 dollars, business strike (7828)',
+        es: 'PCGS CoinFacts — 1878 2½ dólares, acuñación de circulación (7828)',
+        en: 'PCGS CoinFacts — 1878 2½ dollars, business strike (7828)',
         note: {
           es: 'Christian Gobrecht; canto estriado; 18 mm; 4,18 g; Filadelfia; oro 90 % y cobre 10 %; 286.240 piezas de circulación. No se republican precios.',
           en: 'Christian Gobrecht; reeded edge; 18 mm; 4.18 g; Philadelphia; 90% gold and 10% copper; 286,240 business strikes. Prices are not republished.',
@@ -1205,8 +1205,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       },
       {
         href: 'https://www.pcgs.com/coinfacts/coin/1878-2-50/7904',
-        es: 'PCGS CoinFacts — 1878 2,50 dólares, prueba (7904)',
-        en: 'PCGS CoinFacts — 1878 2.50 dollars, proof (7904)',
+        es: 'PCGS CoinFacts — 1878 2½ dólares, prueba (7904)',
+        en: 'PCGS CoinFacts — 1878 2½ dollars, proof (7904)',
         note: {
           es: '20 pruebas publicadas. Otro producto: esta foto no se identifica como prueba. No se republican precios.',
           en: '20 published proofs. A different product: this photograph is not identified as a proof. Prices are not republished.',
@@ -1394,8 +1394,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia (no mint mark)',
     },
     denomination: {
-      es: '2,50 dólares (quarter eagle)',
-      en: '2.50 dollars (quarter eagle)',
+      es: '2½ dólares (cuarto de águila)',
+      en: '$2½ (quarter eagle)',
     },
     composition: {
       es: 'Oro .900 (90 % Au, 10 % Cu)',
@@ -1434,8 +1434,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: '1912 Indian Head quarter eagle',
     },
     title: {
-      es: '2,50 dólares · United States Mint · 1912',
-      en: '2.50 dollars · United States Mint · 1912',
+      es: '2½ dólares · United States Mint · 1912',
+      en: '$2½ · United States Mint · 1912',
     },
     kicker: {
       es: 'Estados Unidos · United States Mint',
@@ -1446,8 +1446,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia .900 gold quarter eagle, 1912, with no mint mark. Bela Lyon Pratt’s incuse Indian Head design. No serial, and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es el quarter eagle de 2,50 dólares de 1912, de la ceca de Filadelfia, sin marca. El anverso es de Bela Lyon Pratt: busto a la izquierda con penacho, LIBERTY, trece estrellas y la fecha 1912. El reverso lleva un águila de pie a la izquierda sobre flechas y olivo, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA y 2½ DOLLARS. El relieve es incuso: el dibujo queda hundido en el campo. Numista incluye las iniciales B.L.P. en la leyenda del tipo; en esta fotografía no se transcriben. Tampoco se ve letra de ceca. La pieza está suelta, sin cápsula. No es el medio águila de 5 dólares del mismo autor. PCGS separa la acuñación de circulación de 1912 (7944) de las pruebas (7961): esta ficha no identifica el ejemplar como prueba.',
-      en: 'This piece is the 1912 2.50-dollar quarter eagle from the Philadelphia mint, with no mint mark. The obverse is by Bela Lyon Pratt: a left-facing bust in a feathered headdress, LIBERTY, thirteen stars, and the date 1912. The reverse carries a standing eagle facing left on arrows and an olive branch, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA, and 2½ DOLLARS. The relief is incuse: the design sits below the field. Numista includes the initials B.L.P. in the type legend; they are not transcribed from this photograph. No mint letter is visible. The piece is raw, with no holder. It is not Pratt’s 5-dollar half eagle. PCGS separates the 1912 business strike (7944) from the proofs (7961): this record does not identify the example as a proof.',
+      es: 'Esta pieza es el quarter eagle de 2½ dólares de 1912, de la ceca de Filadelfia, sin marca. El anverso es de Bela Lyon Pratt: busto a la izquierda con penacho, LIBERTY, trece estrellas y la fecha 1912. El reverso lleva un águila de pie a la izquierda sobre flechas y olivo, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA y 2½ DOLLARS. El relieve es incuso: el dibujo queda hundido en el campo. Numista incluye las iniciales B.L.P. en la leyenda del tipo; en esta fotografía no se transcriben. Tampoco se ve letra de ceca. La pieza está suelta, sin cápsula. No es el medio águila de 5 dólares del mismo autor. PCGS separa la acuñación de circulación de 1912 (7944) de las pruebas (7961): esta ficha no identifica el ejemplar como prueba.',
+      en: 'This piece is the 1912 2½-dollar quarter eagle from the Philadelphia mint, with no mint mark. The obverse is by Bela Lyon Pratt: a left-facing bust in a feathered headdress, LIBERTY, thirteen stars, and the date 1912. The reverse carries a standing eagle facing left on arrows and an olive branch, E PLURIBUS UNUM, IN GOD WE TRUST, UNITED STATES OF AMERICA, and 2½ DOLLARS. The relief is incuse: the design sits below the field. Numista includes the initials B.L.P. in the type legend; they are not transcribed from this photograph. No mint letter is visible. The piece is raw, with no holder. It is not Pratt’s 5-dollar half eagle. PCGS separates the 1912 business strike (7944) from the proofs (7961): this record does not identify the example as a proof.',
     },
     history: {
       es: 'El quarter eagle es la cuarta parte del águila de 10 dólares, denominación del Coinage Act del 2 de abril de 1792. El tipo Indian Head, en relieve incuso, es obra de Bela Lyon Pratt y se acuñó de 1908 a 1929. El mismo escultor diseñó el medio águila de 5 dólares de ese relieve. Esta ficha describe el objeto de la colección; no tasa la emisión.',
@@ -1480,8 +1480,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
     sources: [
       {
         href: 'https://www.pcgs.com/coinfacts/coin/1912-2-50/7944',
-        es: 'PCGS CoinFacts — 1912 2,50 dólares, acuñación de circulación (7944)',
-        en: 'PCGS CoinFacts — 1912 2.50 dollars, business strike (7944)',
+        es: 'PCGS CoinFacts — 1912 2½ dólares, acuñación de circulación (7944)',
+        en: 'PCGS CoinFacts — 1912 2½ dollars, business strike (7944)',
         note: {
           es: 'Bela Lyon Pratt; canto estriado; 18 mm; 4,18 g; Filadelfia; oro 90 % y cobre 10 %; 616.000 piezas de circulación. No se republican precios.',
           en: 'Bela Lyon Pratt; reeded edge; 18 mm; 4.18 g; Philadelphia; 90% gold and 10% copper; 616,000 business strikes. Prices are not republished.',
@@ -1566,8 +1566,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia gold dollar, 1856, Longacre Type 3: large head and slanted 5. .900 gold, no mint mark, no serial, and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es el dólar de oro de 1856, tipo 3 de James Barton Longacre, acuñado en Filadelfia sin marca de ceca. El anverso muestra la cabeza de la Libertad a la izquierda, con penacho y la cinta LIBERTY, y la leyenda UNITED STATES OF AMERICA. El reverso lleva la corona agrícola —maíz, algodón, trigo y tabaco—, el 1 DOLLAR y la fecha 1856. El flanco izquierdo del 5 baja en diagonal: es el estilo que PCGS numera 7540 (Slanted 5). El 5 vertical es la variedad 7541. Bajo el lazo no hay letra. El relieve es alto. El quarter eagle Liberty Head de 1878 —coroneta de Christian Gobrecht— y el Indian Head de 1912 —relieve incuso de Bela Lyon Pratt— también son de Filadelfia y de oro .900: cada uno es otra pieza de 2,50 dólares. Numista (N# 23120, KM# 86) da 1,672 g —25,8 granos, o 25 4/5—, 15 mm y canto estriado. Esta fotografía muestra anverso y reverso; el canto no está en el encuadre y el ejemplar no se pesó. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación (7540) de la prueba (7606): el desgaste de la mejilla y del pelo corresponde a una pieza de circulación.',
-      en: 'This piece is the 1856 gold dollar, James Barton Longacre’s Type 3, struck at Philadelphia with no mint mark. The obverse shows Liberty’s head facing left, in a feathered headdress with the band LIBERTY, and the legend UNITED STATES OF AMERICA. The reverse carries the agricultural wreath — corn, cotton, wheat, and tobacco — 1 DOLLAR, and the date 1856. The left side of the 5 slopes: that is the style PCGS numbers 7540 (Slanted 5). The upright 5 is variety 7541. There is no letter under the bow. The relief is high. The 1878 Liberty Head quarter eagle — Christian Gobrecht’s coronet — and the 1912 Indian Head — Bela Lyon Pratt’s incuse relief — are also Philadelphia .900 gold: each is another 2.50-dollar piece. Numista (N# 23120, KM# 86) gives 1.672 g — 25.8 grains, or 25 4/5 — 15 mm, and a reeded edge. This photograph shows obverse and reverse; the edge is outside the frame and the example was not weighed. The piece is raw, with no holder. PCGS separates the business strike (7540) from the proof (7606): wear on the cheek and hair belongs to a circulation piece.',
+      es: 'Esta pieza es el dólar de oro de 1856, tipo 3 de James Barton Longacre, acuñado en Filadelfia sin marca de ceca. El anverso muestra la cabeza de la Libertad a la izquierda, con penacho y la cinta LIBERTY, y la leyenda UNITED STATES OF AMERICA. El reverso lleva la corona agrícola —maíz, algodón, trigo y tabaco—, el 1 DOLLAR y la fecha 1856. El flanco izquierdo del 5 baja en diagonal: es el estilo que PCGS numera 7540 (Slanted 5). El 5 vertical es la variedad 7541. Bajo el lazo no hay letra. El relieve es alto. El quarter eagle Liberty Head de 1878 —coroneta de Christian Gobrecht— y el Indian Head de 1912 —relieve incuso de Bela Lyon Pratt— también son de Filadelfia y de oro .900: cada uno es otra pieza de 2½ dólares. Numista (N# 23120, KM# 86) da 1,672 g —25,8 granos, o 25 4/5—, 15 mm y canto estriado. Esta fotografía muestra anverso y reverso; el canto no está en el encuadre y el ejemplar no se pesó. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación (7540) de la prueba (7606): el desgaste de la mejilla y del pelo corresponde a una pieza de circulación.',
+      en: 'This piece is the 1856 gold dollar, James Barton Longacre’s Type 3, struck at Philadelphia with no mint mark. The obverse shows Liberty’s head facing left, in a feathered headdress with the band LIBERTY, and the legend UNITED STATES OF AMERICA. The reverse carries the agricultural wreath — corn, cotton, wheat, and tobacco — 1 DOLLAR, and the date 1856. The left side of the 5 slopes: that is the style PCGS numbers 7540 (Slanted 5). The upright 5 is variety 7541. There is no letter under the bow. The relief is high. The 1878 Liberty Head quarter eagle — Christian Gobrecht’s coronet — and the 1912 Indian Head — Bela Lyon Pratt’s incuse relief — are also Philadelphia .900 gold: each is another 2½-dollar piece. Numista (N# 23120, KM# 86) gives 1.672 g — 25.8 grains, or 25 4/5 — 15 mm, and a reeded edge. This photograph shows obverse and reverse; the edge is outside the frame and the example was not weighed. The piece is raw, with no holder. PCGS separates the business strike (7540) from the proof (7606): wear on the cheek and hair belongs to a circulation piece.',
     },
     history: {
       es: 'La ley del 3 de marzo de 1849 (9 Stat. 397, cap. CIX) autorizó el dólar de oro y el double eagle. El dólar es de curso legal por un dólar; en el reverso se omite el águila; la tolerancia de peso es un cuarto de grano. Longacre sustituyó en 1854 la cabeza de la Libertad del tipo 1 por la Indian Princess. El tipo 2, de cabeza pequeña, se acuñó en Filadelfia en 1854 y 1855 y, en 1856, solo en San Francisco. En 1856 agrandó la cabeza y bajó el relieve: es el tipo 3, de 1856 a 1889. CoinWeek llama a ese retrato Large Head. Esta ficha describe el objeto de la colección; no tasa la emisión.',

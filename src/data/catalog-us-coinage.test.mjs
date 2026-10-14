@@ -297,6 +297,14 @@ describe('US 1912 Indian Head quarter eagle', () => {
       data,
       /heading: \{\n      es: 'Cuarto de águila de 1912, cabeza de indio',\n      en: '1912 Indian Head quarter eagle',/,
     );
+    assert.match(
+      data,
+      /id: '2-50-dolares-1912-indian-head'[\s\S]{0,800}es: '2½ dólares \(cuarto de águila\)',\n      en: '\$2½ \(quarter eagle\)',/,
+    );
+    assert.match(data, /es: '2½ dólares · United States Mint · 1912',\n      en: '\$2½ · United States Mint · 1912',/);
+    assert.match(data, /quarter eagle de 2½ dólares de 1912/);
+    assert.match(data, /1912 2½-dollar quarter eagle/);
+    assert.match(data, /1912 2½ dollars, business strike/);
     assert.match(data, /Bela Lyon Pratt/);
     assert.match(data, /KM# 128 · PCGS# 7944 · N# 6158/);
     assert.match(data, /Oro \.900 \(90 % Au, 10 % Cu\)/);
