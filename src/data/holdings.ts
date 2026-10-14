@@ -228,6 +228,7 @@ export const additions: Holding[] = [
   { id: 'us-1-dolar-aguila-plata-1988', kind: 'coin', country: 'US' },
   { id: 'co-1800-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1795-1-escudo-bogota-nr-jj', kind: 'coin', country: 'CO' },
+  { id: 'co-1795-1-escudo-popayan-p-jf', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -382,6 +383,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1988-silver-eagle-km273' },
   { id: 'co-1800-1-escudo-popayan-km56-2' },
   { id: 'co-1795-1-escudo-bogota-km56-1' },
+  { id: 'co-1795-1-escudo-popayan-km56-2' },
 ];
 
 export type CollectionStats = {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T02:57:33.936Z",
+  "generatedAt": "2026-10-14T02:18:52.065Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -118,6 +118,45 @@
       "title": {
         "es": "1 escudo · Bogotá NR–JJ · 1795",
         "en": "1 escudo · Bogotá NR–JJ · 1795"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1795-p-jf",
+      "face": "front",
+      "hash": "003157d551356300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.8 · Hernández 688 · Cayón 14047 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1795",
+        "en": "1 escudo · Popayán P–JF · 1795"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1795-p-jf",
+      "face": "front",
+      "hash": "08143a1e160e1c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.8 · Hernández 688 · Cayón 14047 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1795",
+        "en": "1 escudo · Popayán P–JF · 1795"
+      }
+    },
+    {
+      "pieceId": "1-escudo-popayan-1795-p-jf",
+      "face": "back",
+      "hash": "08141e322a0a1408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/",
+      "pick": "KM# 56.2 · Restrepo 85.8 · Hernández 688 · Cayón 14047 · Fr#59 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-popayan-1-escudo-1795-charles-iv-p-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Popayán P–JF · 1795",
+        "en": "1 escudo · Popayán P–JF · 1795"
       }
     },
     {

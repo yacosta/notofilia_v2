@@ -531,7 +531,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: popayan1EscudoCarlosIvCopy.en.metaDescription,
       },
       extra:
-        '1 escudo oro gold Carlos IV Charles IV Popayán P JF KM 56.2 Hernández 688 Friedberg 59 1792 1808 colonial',
+        '1 escudo oro gold Carlos IV Charles IV Popayán P JF KM 56.2 Hernández 688 Friedberg 59 1792 1795 1808 colonial',
     },
     {
       href: COSCOJAS_SANTANDER_PATH,
