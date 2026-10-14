@@ -278,7 +278,7 @@ export const coinageCopy = {
     marksHeaders: ['Marca', 'Qué indica'],
     marksRows: [
       ['NR', 'Santa Fe, Nuevo Reino. En el 1 real de 1810 de esta vitrina.'],
-      ['P', 'Popayán. En los escudos de 1800, 1801, 1806 y 1808.'],
+      ['P', 'Popayán. En los escudos de 1795, 1800, 1801, 1806 y 1808.'],
       ['BA', 'Bogotá, Cundinamarca. En el 8 reales de 1821.'],
       ['JF', 'Iniciales de ensaye junto a NR, P y BA en esas fichas.'],
       ['JJ', 'Iniciales de ensaye del tipo de Santa Fe KM# 56.1, el que las fichas de Popayán separan del P–JF.'],
@@ -327,7 +327,7 @@ export const coinageCopy = {
     marksHeaders: ['Mark', 'What it indicates'],
     marksRows: [
       ['NR', 'Santa Fe, Nuevo Reino. On this case’s 1810 1 real.'],
-      ['P', 'Popayán. On the 1800, 1801, 1806, and 1808 escudos.'],
+      ['P', 'Popayán. On the 1795, 1800, 1801, 1806, and 1808 escudos.'],
       ['BA', 'Bogotá, Cundinamarca. On the 1821 8 reales.'],
       ['JF', 'Assayer initials beside NR, P, and BA on those records.'],
       ['JJ', 'Assayer initials of the Santa Fe type KM# 56.1, the one the Popayán records set apart from P–JF.'],
