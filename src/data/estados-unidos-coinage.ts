@@ -1522,25 +1522,25 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Gold dollar',
     },
     composition: {
-      es: 'Oro .900 (90 % Au, 10 % Cu)',
-      en: 'Gold .900 (90% Au, 10% Cu)',
+      es: 'Oro .900 (90 % Au, 10 % Cu) (ley publicada del tipo; este ejemplar no se ensayó)',
+      en: 'Gold .900 (90% Au, 10% Cu) (published fineness of the type; this specimen was not assayed)',
     },
     weight: {
-      es: '1,672 g',
-      en: '1.672 g',
+      es: '1,672 g, 25,8 granos (peso de tipo; este ejemplar no se pesó). Oro fino calculado: 1,505 g (0,04838 oz troy)',
+      en: '1.672 g, 25.8 grains (type weight; this specimen was not weighed). Calculated fine gold: 1.505 g (0.04838 troy oz)',
     },
     diameter: {
-      es: '15 mm',
-      en: '15 mm',
+      es: '15 mm (medida de tipo; este ejemplar no se midió)',
+      en: '15 mm (type measurement; this specimen was not measured)',
     },
     edge: {
-      es: 'Estriado',
-      en: 'Reeded',
+      es: 'Estriado (tipo publicado; no hay foto aparte del canto)',
+      en: 'Reeded (published type; no separate edge photograph)',
     },
     references: 'KM# 86 · PCGS# 7540 · N# 23120',
     grade: {
-      es: 'Sin encapsular (colección privada)',
-      en: 'Unslabbed (private collection)',
+      es: 'Sin encapsular. Marcas y rayas visibles en las fotos; fecha y leyendas legibles. No es un grado numérico.',
+      en: 'Unslabbed. Marks and scratches visible in the photographs; date and legends legible. Not a numerical grade.',
     },
     no_serial_reason:
       'Struck United States gold dollar: the type does not carry a serial number, and this example is unslabbed with no certification number.',
@@ -1566,12 +1566,12 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Philadelphia gold dollar, 1856, Longacre Type 3: large head and slanted 5. .900 gold, no mint mark, no serial, and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es el dólar de oro de 1856, tipo 3 de James Barton Longacre, acuñado en Filadelfia sin marca de ceca. El anverso muestra la cabeza de la Libertad a la izquierda, con penacho y la cinta LIBERTY, y la leyenda UNITED STATES OF AMERICA. El reverso lleva la corona agrícola —maíz, algodón, trigo y tabaco—, el 1 DOLLAR y la fecha 1856. El flanco izquierdo del 5 baja en diagonal: es el estilo que PCGS numera 7540 (Slanted 5). El 5 vertical es la variedad 7541. Bajo el lazo no hay letra. El relieve es alto. El quarter eagle Liberty Head de 1878 —coroneta de Christian Gobrecht— y el Indian Head de 1912 —relieve incuso de Bela Lyon Pratt— también son de Filadelfia y de oro .900: cada uno es otra pieza de 2,50 dólares. Numista (N# 23120, KM# 86) da 1,672 g —25,8 granos, o 25 4/5—, 15 mm y canto estriado. Esta fotografía muestra anverso y reverso; el canto no está en el encuadre y el ejemplar no se pesó. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación (7540) de la prueba (7606): el desgaste de la mejilla y del pelo corresponde a una pieza de circulación.',
-      en: 'This piece is the 1856 gold dollar, James Barton Longacre’s Type 3, struck at Philadelphia with no mint mark. The obverse shows Liberty’s head facing left, in a feathered headdress with the band LIBERTY, and the legend UNITED STATES OF AMERICA. The reverse carries the agricultural wreath — corn, cotton, wheat, and tobacco — 1 DOLLAR, and the date 1856. The left side of the 5 slopes: that is the style PCGS numbers 7540 (Slanted 5). The upright 5 is variety 7541. There is no letter under the bow. The relief is high. The 1878 Liberty Head quarter eagle — Christian Gobrecht’s coronet — and the 1912 Indian Head — Bela Lyon Pratt’s incuse relief — are also Philadelphia .900 gold: each is another 2.50-dollar piece. Numista (N# 23120, KM# 86) gives 1.672 g — 25.8 grains, or 25 4/5 — 15 mm, and a reeded edge. This photograph shows obverse and reverse; the edge is outside the frame and the example was not weighed. The piece is raw, with no holder. PCGS separates the business strike (7540) from the proof (7606): wear on the cheek and hair belongs to a circulation piece.',
+      es: 'Esta pieza es el dólar de oro de 1856, tipo 3 de James Barton Longacre, acuñado en Filadelfia sin marca de ceca. El anverso muestra la cabeza de la Libertad a la izquierda, con penacho y la cinta LIBERTY, y la leyenda UNITED STATES OF AMERICA. El reverso lleva la corona agrícola —maíz, algodón, trigo y tabaco—, el 1 DOLLAR y la fecha 1856. El flanco izquierdo del 5 baja en diagonal: es el estilo que PCGS numera 7540 (Slanted 5). El 5 vertical es la variedad 7541. Bajo el lazo no hay letra. El relieve es alto. El quarter eagle Liberty Head de 1878 —coroneta de Christian Gobrecht— y el Indian Head de 1912 —relieve incuso de Bela Lyon Pratt— también son de Filadelfia y de oro .900: cada uno es otra pieza de 2,50 dólares. Numista (N# 23120, KM# 86) da 1,672 g —25,8 granos, o 25 4/5—, 15 mm y canto estriado. El oro fino, 1,505 g o 0,04838 oz troy, se calcula sobre ese peso de tipo, no sobre un ensayo de este disco. PCGS imprime 1,70 g y 14,30 mm en la ficha de tipo; esta página conserva las cifras de Numista. Esta fotografía muestra anverso y reverso; el canto no está en el encuadre y el ejemplar no se pesó. La pieza está suelta, sin cápsula. PCGS separa la acuñación de circulación (7540) de la prueba (7606): el desgaste de la mejilla y del pelo corresponde a una pieza de circulación. Las fotos muestran marcas y rayas de superficie; no fijan autenticidad de un tercero, grado numérico ni una limpieza anterior.',
+      en: 'This piece is the 1856 gold dollar, James Barton Longacre’s Type 3, struck at Philadelphia with no mint mark. The obverse shows Liberty’s head facing left, in a feathered headdress with the band LIBERTY, and the legend UNITED STATES OF AMERICA. The reverse carries the agricultural wreath — corn, cotton, wheat, and tobacco — 1 DOLLAR, and the date 1856. The left side of the 5 slopes: that is the style PCGS numbers 7540 (Slanted 5). The upright 5 is variety 7541. There is no letter under the bow. The relief is high. The 1878 Liberty Head quarter eagle — Christian Gobrecht’s coronet — and the 1912 Indian Head — Bela Lyon Pratt’s incuse relief — are also Philadelphia .900 gold: each is another 2.50-dollar piece. Numista (N# 23120, KM# 86) gives 1.672 g — 25.8 grains, or 25 4/5 — 15 mm, and a reeded edge. The fine gold, 1.505 g or 0.04838 troy oz, is calculated from that type weight, not from an assay of this disc. PCGS prints 1.70 g and 14.30 mm on the type card; this page keeps Numista’s figures. This photograph shows obverse and reverse; the edge is outside the frame and the example was not weighed. The piece is raw, with no holder. PCGS separates the business strike (7540) from the proof (7606): wear on the cheek and hair belongs to a circulation piece. The photographs show surface marks and scratches; they do not settle a third-party authentication, a numerical grade, or earlier cleaning.',
     },
     history: {
-      es: 'La ley del 3 de marzo de 1849 (9 Stat. 397, cap. CIX) autorizó el dólar de oro y el double eagle. El dólar es de curso legal por un dólar; en el reverso se omite el águila; la tolerancia de peso es un cuarto de grano. Longacre sustituyó en 1854 la cabeza de la Libertad del tipo 1 por la Indian Princess. El tipo 2, de cabeza pequeña, se acuñó en Filadelfia en 1854 y 1855 y, en 1856, solo en San Francisco. En 1856 agrandó la cabeza y bajó el relieve: es el tipo 3, de 1856 a 1889. CoinWeek llama a ese retrato Large Head. Esta ficha describe el objeto de la colección; no tasa la emisión.',
-      en: 'The act of 3 March 1849 (9 Stat. 397, chap. CIX) authorized the gold dollar and the double eagle. The dollar is legal tender for one dollar; the reverse omits the eagle; the weight tolerance is a quarter grain. In 1854 Longacre replaced the Type 1 Liberty head with the Indian Princess. Type 2, the small head, was struck at Philadelphia in 1854 and 1855 and, in 1856, at San Francisco only. In 1856 he enlarged the head and lowered the relief: that is Type 3, from 1856 to 1889. CoinWeek calls that portrait the Large Head. This record describes the object in the collection; it does not value the issue.',
+      es: 'La ley del 3 de marzo de 1849 (9 Stat. 397, cap. CIX) autorizó el dólar de oro y el double eagle. El dólar es de curso legal por un dólar; en el reverso se omite el águila; la tolerancia de peso es un cuarto de grano. Longacre sustituyó en 1854 la cabeza de la Libertad del tipo 1 por la Indian Princess. El tipo 2, de cabeza pequeña, se acuñó en Filadelfia en 1854 y 1855 y, en 1856, solo en San Francisco; el relieve alto dejaba golpes flojos. En 1856 agrandó la cabeza y revisó el relieve para mejorar el flujo del metal: es el tipo 3, de 1856 a 1889. CoinWeek llama a ese retrato Large Head. Esta ficha describe el objeto de la colección; no tasa la emisión.',
+      en: 'The act of 3 March 1849 (9 Stat. 397, chap. CIX) authorized the gold dollar and the double eagle. The dollar is legal tender for one dollar; the reverse omits the eagle; the weight tolerance is a quarter grain. In 1854 Longacre replaced the Type 1 Liberty head with the Indian Princess. Type 2, the small head, was struck at Philadelphia in 1854 and 1855 and, in 1856, at San Francisco only; the high relief left weak strikes. In 1856 he enlarged the head and revised the relief to improve metal flow: that is Type 3, from 1856 to 1889. CoinWeek calls that portrait the Large Head. This record describes the object in the collection; it does not value the issue.',
     },
     obverseLegend: {
       es: 'UNITED STATES OF AMERICA · LIBERTY en la cinta del penacho.',
@@ -1590,12 +1590,12 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
       en: 'Reverse: 1 DOLLAR; 1856 with the slanted 5; agricultural wreath. No letter under the bow.',
     },
     scarcity: {
-      es: 'CoinWeek da 1.762.936 como la tirada de negocio de 1856, la más alta del tipo 3. PCGS publica esa misma cifra en el 5 inclinado (7540) y en el 5 vertical (7541): es el total de Filadelfia para la fecha, no un reparto entre variedades ni un censo de este ejemplar. Numista anota el 1856-D de Dahlonega en 1.460, con D bajo el lazo; aquí ese campo está vacío. Stack’s Bowers sitúa el tipo 2 de 1856 solo en San Francisco. La prueba del 5 inclinado es el PCGS 7606. No se publica un censo de encapsulados ni un precio.',
-      en: 'CoinWeek gives 1,762,936 as the 1856 business-strike mintage, the highest of Type 3. PCGS publishes that same figure on the slanted 5 (7540) and the upright 5 (7541): it is the Philadelphia total for the date, not a split between varieties and not a census of this example. Numista lists the 1856-D of Dahlonega at 1,460, with a D under the bow; that field is empty here. Stack’s Bowers places the 1856 Type 2 at San Francisco only. The slanted-5 proof is PCGS 7606. This record publishes neither a slab census nor a price.',
+      es: 'CoinWeek y PCGS dan 1.762.936 como la tirada de negocio de Filadelfia en 1856, la más alta del tipo 3. Esa cifra cubre las dos variedades de fecha —el 5 inclinado (7540) y el 5 vertical (7541)—; no es un reparto entre ellas ni un censo de este ejemplar. Ken Bressett, citado por Craig Krueger en The Numismatist (abril de 2005), señala que el desglose a veces atribuido a Akers y a Breen carece de corroboración firme: esta ficha no lo publica como tirada verificada. Numista anota el 1856-D de Dahlonega en 1.460, con D bajo el lazo; aquí ese campo está vacío. Stack’s Bowers sitúa el tipo 2 de 1856 solo en San Francisco. La prueba del 5 inclinado es el PCGS 7606. PCGS estima unos 2.250 supervivientes del 5 inclinado en todos los grados, 1.000 en MS60 o mejor y 50 en MS65 o mejor. Son estimaciones de expertos —incluyen piezas sueltas y encapsuladas por cualquier casa—, no un recuento de certificados ni de este ejemplar. Entre los tipo 3, el 5 inclinado es de los más fáciles de hallar en grados de circulación; el 5 vertical es bastante más escaso, y los 5 inclinados de alto grado también escasean. Nada de esto fija el estado de esta pieza. No se publica un censo de encapsulados ni un precio.',
+      en: 'CoinWeek and PCGS give 1,762,936 as the 1856 Philadelphia business-strike mintage, the highest of Type 3. That figure covers both date varieties — the slanted 5 (7540) and the upright 5 (7541) —; it is not a split between them and not a census of this example. Ken Bressett, cited by Craig Krueger in The Numismatist (April 2005), states that the breakdown sometimes attributed to Akers and Breen lacks firm corroboration: this record does not publish it as a verified mintage. Numista lists the 1856-D of Dahlonega at 1,460, with a D under the bow; that field is empty here. Stack’s Bowers places the 1856 Type 2 at San Francisco only. The slanted-5 proof is PCGS 7606. PCGS estimates about 2,250 slanted-5 survivors in all grades, 1,000 in MS60 or better, and 50 in MS65 or better. Those are expert estimates — they include raw pieces and coins certified by any service — not a certificate count and not a count of this example. Among Type 3 issues the slanted 5 is one of the more available dates in circulated grades; the upright 5 is substantially scarcer, and high-grade slanted 5 pieces are also much harder to find. None of this fixes the state of this piece. This record publishes neither a slab census nor a price.',
     },
     certification: {
-      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1856, 5 inclinado, sin marca de ceca, cabeza grande— no un certificado. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
-      en: 'The example is raw, with no NGC, PCGS, or other holder. This module carries no serial number. The identity of this record is the photographed object — date 1856, slanted 5, no mint mark, large head — not a certificate. If it is later slabbed, the cert number will replace this note.',
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa, y sin número de certificado. Este módulo no lleva número de serie. La identidad de la ficha es el objeto fotografiado —fecha 1856, 5 inclinado, sin marca de ceca, cabeza grande— no un certificado. Las fotos muestran marcas y rayas; no fijan autenticidad de un tercero, grado numérico ni una limpieza anterior. El peso, el diámetro y el oro fino de la ficha son los de la emisión, no una medición de esta pieza. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder, and with no certification number. This module carries no serial number. The identity of this record is the photographed object — date 1856, slanted 5, no mint mark, large head — not a certificate. The photographs show marks and scratches; they do not settle a third-party authentication, a numerical grade, or earlier cleaning. The weight, diameter, and fine gold on this record are the issue specifications, not a measurement of this piece. If it is later slabbed, the cert number will replace this note.',
     },
     sources: [
       {
@@ -1603,8 +1603,8 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
         es: 'Numista — 1 dólar Large Indian Head, tipo 3 (N# 23120)',
         en: 'Numista — 1 dollar Large Indian Head, Type 3 (N# 23120)',
         note: {
-          es: 'KM# 86; 1856–1889; oro .900; 1,672 g (25 4/5 granos); 15 mm; canto estriado. Variedades de 1856: 5 inclinado y 5 vertical. 1856-D, 1.460. No se republican precios.',
-          en: 'KM# 86; 1856–1889; .900 gold; 1.672 g (25 4/5 grains); 15 mm; reeded edge. 1856 varieties: slanted 5 and upright 5. 1856-D, 1,460. Prices are not republished.',
+          es: 'KM# 86; 1856–1889; oro .900; 1,672 g (25 4/5 granos); 15 mm; canto estriado; oro fino publicado 0,048 oz. Variedades de 1856: 5 inclinado y 5 vertical. El 1.762.936 figura en la línea del 5 vertical como total de Filadelfia. 1856-D, 1.460. No se republican precios.',
+          en: 'KM# 86; 1856–1889; .900 gold; 1.672 g (25 4/5 grains); 15 mm; reeded edge; published fine gold 0.048 oz. 1856 varieties: slanted 5 and upright 5. The 1,762,936 sits on the upright-5 line as the Philadelphia total. 1856-D, 1,460. Prices are not republished.',
         },
       },
       {
@@ -1612,17 +1612,26 @@ export const unitedStatesCoins: UnitedStatesCoin[] = [
         es: 'CoinWeek — Dólar de oro, tipo 3 (cabeza grande), 1856–1889',
         en: 'CoinWeek — Gold dollar, Type 3 (large head), 1856–1889',
         note: {
-          es: 'Longacre agrandó la cabeza en 1856. Tirada de negocio más alta del tipo: 1.762.936 en 1856. Aleación .900. No se republican precios.',
-          en: 'Longacre enlarged the head in 1856. Highest business-strike mintage of the type: 1,762,936 in 1856. .900 alloy. Prices are not republished.',
+          es: 'Longacre agrandó la cabeza en 1856 para mejorar el flujo del metal. Tirada de negocio más alta del tipo: 1.762.936 en 1856, total de Filadelfia. Aleación .900. No se republican precios.',
+          en: 'Longacre enlarged the head in 1856 to improve metal flow. Highest business-strike mintage of the type: 1,762,936 in 1856, the Philadelphia total. .900 alloy. Prices are not republished.',
         },
       },
       {
-        href: 'https://www.pcgs.com/coinfacts/coin/7540',
+        href: 'https://www.pcgs.com/coinfacts/coin/1856-g-1-slanted-5/7540',
         es: 'PCGS CoinFacts — 1856, 1 dólar, 5 inclinado (7540)',
         en: 'PCGS CoinFacts — 1856 gold dollar, slanted 5 (7540)',
         note: {
-          es: 'James Barton Longacre; Filadelfia; tipo 3. El 5 vertical es el 7541 y la prueba del 5 inclinado es el 7606. No se republican precios.',
-          en: 'James Barton Longacre; Philadelphia; Type 3. The upright 5 is 7541 and the slanted-5 proof is 7606. Prices are not republished.',
+          es: 'James Barton Longacre; Filadelfia; tipo 3. Tirada impresa 1.762.936. Estimación de supervivientes: 2.250, 1.000 en MS60 o mejor y 50 en MS65 o mejor. La ficha de tipo imprime 1,70 g y 14,30 mm. El 5 vertical es el 7541 y la prueba del 5 inclinado es el 7606. No se republican precios ni una población de certificados.',
+          en: 'James Barton Longacre; Philadelphia; Type 3. Printed mintage 1,762,936. Survival estimate: 2,250, 1,000 in MS60 or better, and 50 in MS65 or better. The type card prints 1.70 g and 14.30 mm. The upright 5 is 7541 and the slanted-5 proof is 7606. Prices and a certification population are not republished.',
+        },
+      },
+      {
+        href: 'https://www.money.org/uploads/pdfs/1856_Upright_5_Final_Article.pdf',
+        es: 'The Numismatist — Craig Krueger, el 5 vertical de 1856 (abril de 2005)',
+        en: 'The Numismatist — Craig Krueger, the 1856 upright 5 (April 2005)',
+        note: {
+          es: 'Ken Bressett: no hay evidencia concreta del desglose entre el 5 vertical y el 5 inclinado. El Red Book ha publicado a veces solo el total 1.762.936. El 5 vertical es más escaso. No se republica el desglose de Akers y Breen como tirada ni un precio.',
+          en: 'Ken Bressett: there is no concrete evidence for a split between the upright 5 and the slanted 5. The Red Book has at times published only the combined 1,762,936. The upright 5 is the scarcer variety. The Akers–Breen split is not republished as a mintage, and no price is given.',
         },
       },
       {
