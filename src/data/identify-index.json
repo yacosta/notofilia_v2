@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T02:57:33.936Z",
+  "generatedAt": "2026-10-14T02:47:47.838Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3277,6 +3277,45 @@
       "title": {
         "es": "1 dólar de oro · United States Mint · 1856",
         "en": "Gold dollar · United States Mint · 1856"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1878-cc",
+      "face": "front",
+      "hash": "3515533733533153",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/",
+      "pick": "KM# 110 · PCGS# 7080 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1878-cc-composite.jpg",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1878",
+        "en": "Morgan dollar · Carson City · 1878"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1878-cc",
+      "face": "front",
+      "hash": "0c0c0c0c0c040c14",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/",
+      "pick": "KM# 110 · PCGS# 7080 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1878-cc-front.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1878",
+        "en": "Morgan dollar · Carson City · 1878"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1878-cc",
+      "face": "back",
+      "hash": "04140c0c0c0c140c",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/",
+      "pick": "KM# 110 · PCGS# 7080 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1878-cc-back.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1878",
+        "en": "Morgan dollar · Carson City · 1878"
       }
     },
     {
