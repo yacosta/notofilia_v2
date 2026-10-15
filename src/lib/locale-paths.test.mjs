@@ -195,6 +195,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states-numismatics/1-dollar-morgan-1893/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1893-cc/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
     );
@@ -988,6 +992,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/'],
       '/en/collection/united-states-numismatics/1-dollar-morgan-1893/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/'],
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1893-cc/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/'],

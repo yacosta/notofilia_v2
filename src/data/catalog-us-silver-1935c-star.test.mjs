@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1878-cc');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-1878-cc-morgan-pcgs72833930');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1893-cc');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-1893-cc-morgan-km110');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

@@ -23,7 +23,7 @@ export const morganSeriesCopy = {
   es: {
     metaTitle: 'Dólares Morgan, 1878–1904 · EE. UU. | Notofilia',
     metaDescription:
-      'Dólar Morgan de plata, emisión original de 1878 a 1904: peso, cecas, Bland-Allison, fechas clave y el tesoro GSA. En la vitrina: 1878-CC, 1883-CC, 1884-S, 1885-CC y 1893.',
+      'Dólar Morgan de plata, emisión original de 1878 a 1904: peso, cecas, Bland-Allison, fechas clave y el tesoro GSA. En la vitrina: 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC y 1893.',
     kicker: 'Estados Unidos · Numismática',
     title: 'Dólares Morgan de plata — emisión original (1878–1904)',
     breadcrumbCurrent: 'Dólar Morgan, 1878–1904',
@@ -33,7 +33,7 @@ export const morganSeriesCopy = {
       'Cartel del dólar Morgan, emisión original 1878–1904: mapa con las cecas de Filadelfia, Carson City, Nueva Orleans y San Francisco, anverso de 1884, reverso con el águila y una prensa de acuñar. Es una ilustración; las leyendas del cartel están en inglés. No es el escaneo de las piezas de la colección.',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Cinco dólares Morgan, sin serial, por fecha: Carson City 1878, en cápsula rotulada PCGS MS60; Carson City 1883, con la CC bajo la corona; San Francisco 1884, con la S bajo el lazo; Carson City 1885, con la CC bajo la corona; y Filadelfia 1893, sin marca bajo la corona. Los cuatro últimos están sueltos. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
+      'Seis dólares Morgan, sin serial, por fecha: Carson City 1878, en cápsula rotulada PCGS MS60; Carson City 1883, con la CC bajo la corona; San Francisco 1884, con la S bajo el lazo; Carson City 1885, con la CC bajo la corona; Carson City 1893, con la CC bajo la corona; y Filadelfia 1893, sin marca bajo la corona. Los cinco últimos están sueltos. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
     viewCoin: 'Ver la ficha',
     specTitle: 'Especificaciones del tipo',
     specIntro:
@@ -60,7 +60,7 @@ export const morganSeriesCopy = {
   en: {
     metaTitle: 'Morgan Silver Dollars, 1878–1904 · United States | Notofilia',
     metaDescription:
-      'Original-run Morgan silver dollar, 1878–1904: weight, mints, Bland-Allison, key dates, and the GSA hoard. In this case: 1878-CC, 1883-CC, 1884-S, 1885-CC, and 1893.',
+      'Original-run Morgan silver dollar, 1878–1904: weight, mints, Bland-Allison, key dates, and the GSA hoard. In this case: 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, and 1893.',
     kicker: 'United States · Numismatics',
     title: 'Morgan Silver Dollars — Original Run (1878–1904)',
     breadcrumbCurrent: 'Morgan dollar, 1878–1904',
@@ -70,7 +70,7 @@ export const morganSeriesCopy = {
       'Poster for the original-run Morgan dollar, 1878–1904: a map with the Philadelphia, Carson City, New Orleans, and San Francisco mints, an 1884 obverse, the eagle reverse, and a coining press. It is an illustration, not a scan of the pieces in the collection.',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'Five Morgan dollars, with no serial, in date order: Carson City 1878, in a holder labeled PCGS MS60; Carson City 1883, with the CC under the wreath; San Francisco 1884, with the S under the bow; Carson City 1885, with the CC under the wreath; and Philadelphia 1893, with no mint mark under the wreath. The last four are raw. Open each record for obverse, reverse, and catalog facts.',
+      'Six Morgan dollars, with no serial, in date order: Carson City 1878, in a holder labeled PCGS MS60; Carson City 1883, with the CC under the wreath; San Francisco 1884, with the S under the bow; Carson City 1885, with the CC under the wreath; Carson City 1893, with the CC under the wreath; and Philadelphia 1893, with no mint mark under the wreath. The last five are raw. Open each record for obverse, reverse, and catalog facts.',
     viewCoin: 'Open the coin page',
     specTitle: 'Type specifications',
     specIntro:
@@ -264,8 +264,8 @@ export const morganNarrative: MorganSection[] = [
         en: 'The floor of any Morgan is the silver in it: 0.77344 troy ounces times the spot price. Heavily worn common dates — the high-mintage 1921, or a well-worn Philadelphia coin of the 1880s — trade near that metal. Once there is a collector grade, a variety, or a short mintage, the numismatic premium pulls away from the bullion. This page does not publish that premium.',
       },
       {
-        es: 'La escala de Sheldon tiene 70 puntos. En el gastado se pasa del contorno y de las borlas planas del gorro, en Good-4, al detalle de Fine-12 y, más arriba, a las plumas nítidas con solo roce en los altos, en Extremely Fine y About Uncirculated. De MS-60 a MS-62 no hay desgaste de circulación, pero sí marcas de saco y lustre apagado. De MS-63 a MS-65 el campo limpio, el lustre y el golpe importan más. De MS-66 a MS-68 las poblaciones son cortas. Un cuño recién pulido deja campos de espejo y relieves escarchados: prooflike (PL) si el reflejo se lee a unas dos a cuatro pulgadas, y deep mirror prooflike (DMPL) si el espejo llega a unas seis pulgadas en las dos caras, con contraste de camafeo. Una calcomanía de la Certified Acceptance Corporation señala, para ese grado, superficie y golpe por encima del típico. Cuatro piezas de esta vitrina están sueltas. El 1878-CC está en una cápsula rotulada PCGS MS60; esa etiqueta no se verificó de forma independiente y no se le asigna aquí PL, DMPL ni CAC.',
-        en: 'The Sheldon scale has 70 points. In worn grades the eye moves from the outline and the flat cotton bolls on the cap, at Good-4, to Fine-12 detail and, higher, to sharp feathers with only high-point friction, in Extremely Fine and About Uncirculated. MS-60 to MS-62 shows no circulation wear, but bag marks and dull luster. From MS-63 to MS-65 clean fields, luster, and strike matter more. From MS-66 to MS-68 populations are short. A freshly polished die leaves mirror fields and frosted devices: prooflike (PL) when the reflection reads at about two to four inches, and deep mirror prooflike (DMPL) when the mirror reaches about six inches on both sides, with cameo contrast. A Certified Acceptance Corporation sticker marks, for that grade, surface and strike above the typical piece. Four coins in this case are raw. The 1878-CC is in a holder labeled PCGS MS60; that label was not independently verified, and this page assigns it neither PL, DMPL, nor CAC.',
+        es: 'La escala de Sheldon tiene 70 puntos. En el gastado se pasa del contorno y de las borlas planas del gorro, en Good-4, al detalle de Fine-12 y, más arriba, a las plumas nítidas con solo roce en los altos, en Extremely Fine y About Uncirculated. De MS-60 a MS-62 no hay desgaste de circulación, pero sí marcas de saco y lustre apagado. De MS-63 a MS-65 el campo limpio, el lustre y el golpe importan más. De MS-66 a MS-68 las poblaciones son cortas. Un cuño recién pulido deja campos de espejo y relieves escarchados: prooflike (PL) si el reflejo se lee a unas dos a cuatro pulgadas, y deep mirror prooflike (DMPL) si el espejo llega a unas seis pulgadas en las dos caras, con contraste de camafeo. Una calcomanía de la Certified Acceptance Corporation señala, para ese grado, superficie y golpe por encima del típico. Cinco piezas de esta vitrina están sueltas. El 1878-CC está en una cápsula rotulada PCGS MS60; esa etiqueta no se verificó de forma independiente y no se le asigna aquí PL, DMPL ni CAC.',
+        en: 'The Sheldon scale has 70 points. In worn grades the eye moves from the outline and the flat cotton bolls on the cap, at Good-4, to Fine-12 detail and, higher, to sharp feathers with only high-point friction, in Extremely Fine and About Uncirculated. MS-60 to MS-62 shows no circulation wear, but bag marks and dull luster. From MS-63 to MS-65 clean fields, luster, and strike matter more. From MS-66 to MS-68 populations are short. A freshly polished die leaves mirror fields and frosted devices: prooflike (PL) when the reflection reads at about two to four inches, and deep mirror prooflike (DMPL) when the mirror reaches about six inches on both sides, with cameo contrast. A Certified Acceptance Corporation sticker marks, for that grade, surface and strike above the typical piece. Five coins in this case are raw. The 1878-CC is in a holder labeled PCGS MS60; that label was not independently verified, and this page assigns it neither PL, DMPL, nor CAC.',
       },
     ],
   },
@@ -294,8 +294,8 @@ export const morganNarrative: MorganSection[] = [
         en: 'The rare dollar is altered and counterfeited. The protocol the grading services describe starts with measurement: 26.73 g, 38.10 mm, and about 2.40 mm thick. A copper, a zinc, or a modern white alloy fails the balance and the caliper. Core resistivity is measured without touching the surface, and hydrostatic specific gravity checks whether the volume matches the 90/10 alloy. This case neither weighed nor measured its five examples.',
       },
       {
-        es: 'La fecha se retoque —un 8 o un 5 convertidos en 3 para simular un 1893-S— y la marca se añada o se quite. En un 1893-S auténtico las fuentes sitúan el 1 centrado sobre el dentículo cuarto del canto inferior, y un rayajo de cuño en el asta de la T de LIBERTY. Una marca añadida deja halo, soldadura o un corte en el estriado. Un compuesto de dos monedas muestra costura en el canto, peso anómalo y un sonido sordo. Las copias modernas, aun en plata 0,900, repiten dentículos blandos, campos granulosos y las mismas depresiones del cuño de transferencia. Del 1893-S auténtico se catalogan dos reversos (VAM-1 y VAM-2) con un solo anverso: lo que no coincide con esos cuños no es esa fecha. Por eso las piezas de valor alto circulan casi solo en cápsula de PCGS o NGC. Cuatro de esta colección no lo están. El 1878-CC está en una cápsula rotulada PCGS; esa certificación no se verificó de forma independiente.',
-        en: 'Dates are reworked — an 8 or a 5 turned into a 3 to imitate an 1893-S — and mint marks are added or removed. On a genuine 1893-S the sources place the 1 centered over the fourth denticle of the lower rim, and a die scratch through the upright of the T in LIBERTY. An added mark leaves a halo, solder, or a break in the reeding. A composite of two coins shows a seam on the edge, an odd weight, and a dull ring. Modern copies, even on 0.900 silver, repeat soft denticles, granular fields, and the same depressions from the transfer die. The genuine 1893-S is catalogued as two reverses (VAM-1 and VAM-2) with a single obverse: what does not match those dies is not that date. That is why high-value pieces trade almost only in a PCGS or NGC holder. Four in this collection are not in one. The 1878-CC is in a holder labeled PCGS; that certification was not independently verified.',
+        es: 'La fecha se retoque —un 8 o un 5 convertidos en 3 para simular un 1893-S— y la marca se añada o se quite. En un 1893-S auténtico las fuentes sitúan el 1 centrado sobre el dentículo cuarto del canto inferior, y un rayajo de cuño en el asta de la T de LIBERTY. Una marca añadida deja halo, soldadura o un corte en el estriado. Un compuesto de dos monedas muestra costura en el canto, peso anómalo y un sonido sordo. Las copias modernas, aun en plata 0,900, repiten dentículos blandos, campos granulosos y las mismas depresiones del cuño de transferencia. Del 1893-S auténtico se catalogan dos reversos (VAM-1 y VAM-2) con un solo anverso: lo que no coincide con esos cuños no es esa fecha. Por eso las piezas de valor alto circulan casi solo en cápsula de PCGS o NGC. Cinco de esta colección no lo están. El 1878-CC está en una cápsula rotulada PCGS; esa certificación no se verificó de forma independiente.',
+        en: 'Dates are reworked — an 8 or a 5 turned into a 3 to imitate an 1893-S — and mint marks are added or removed. On a genuine 1893-S the sources place the 1 centered over the fourth denticle of the lower rim, and a die scratch through the upright of the T in LIBERTY. An added mark leaves a halo, solder, or a break in the reeding. A composite of two coins shows a seam on the edge, an odd weight, and a dull ring. Modern copies, even on 0.900 silver, repeat soft denticles, granular fields, and the same depressions from the transfer die. The genuine 1893-S is catalogued as two reverses (VAM-1 and VAM-2) with a single obverse: what does not match those dies is not that date. That is why high-value pieces trade almost only in a PCGS or NGC holder. Five in this collection are not in one. The 1878-CC is in a holder labeled PCGS; that certification was not independently verified.',
       },
     ],
   },
@@ -307,8 +307,8 @@ export const morganNarrative: MorganSection[] = [
     },
     paragraphs: [
       {
-        es: 'La emisión original, de 1878 a 1904, es el tramo en que la Bland-Allison y luego la Sherman obligaron a acuñar plata que el público no pedía en la mano. El pánico de 1893 acortó las tiradas. La Pittman, ya fuera de ese tramo, fundió cerca de la mitad de lo acuñado. Las bóvedas de los años sesenta y las ventas GSA decidieron qué fechas siguen siendo comunes sin circular. Esta vitrina no tasa el mercado. Documenta, por fecha, el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC y el 1893 de Filadelfia fotografiados en la colección.',
-        en: 'The original run, from 1878 to 1904, is the stretch in which Bland-Allison and then Sherman forced the coinage of silver the public did not ask to carry. The Panic of 1893 shortened the mintages. Pittman, already outside that stretch, melted about half of what had been struck. The vaults of the 1960s and the GSA sales decided which dates are still common uncirculated. This case does not price the market. It records, in date order, the photographed 1878-CC, 1883-CC, 1884-S, 1885-CC, and Philadelphia 1893.',
+        es: 'La emisión original, de 1878 a 1904, es el tramo en que la Bland-Allison y luego la Sherman obligaron a acuñar plata que el público no pedía en la mano. El pánico de 1893 acortó las tiradas. La Pittman, ya fuera de ese tramo, fundió cerca de la mitad de lo acuñado. Las bóvedas de los años sesenta y las ventas GSA decidieron qué fechas siguen siendo comunes sin circular. Esta vitrina no tasa el mercado. Documenta, por fecha, el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC, el 1893-CC y el 1893 de Filadelfia fotografiados en la colección.',
+        en: 'The original run, from 1878 to 1904, is the stretch in which Bland-Allison and then Sherman forced the coinage of silver the public did not ask to carry. The Panic of 1893 shortened the mintages. Pittman, already outside that stretch, melted about half of what had been struck. The vaults of the 1960s and the GSA sales decided which dates are still common uncirculated. This case does not price the market. It records, in date order, the photographed 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, and Philadelphia 1893.',
       },
     ],
   },
@@ -687,8 +687,8 @@ export const morganRelated = [
     href: '/glosario/encapsulado/',
     title: { es: 'Glosario: encapsulado', en: 'Glossary: slab' },
     dek: {
-      es: 'La cápsula de un servicio de grado. Cuatro piezas de esta vitrina no la tienen; el 1878-CC está en una rotulada PCGS MS60, sin verificación independiente.',
-      en: 'A grading-service holder. Four pieces in this case do not have one; the 1878-CC is in a holder labeled PCGS MS60, without independent verification.',
+      es: 'La cápsula de un servicio de grado. Cinco piezas de esta vitrina no la tienen; el 1878-CC está en una rotulada PCGS MS60, sin verificación independiente.',
+      en: 'A grading-service holder. Five pieces in this case do not have one; the 1878-CC is in a holder labeled PCGS MS60, without independent verification.',
     },
   },
   {
