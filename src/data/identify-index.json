@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T03:14:43.426Z",
+  "generatedAt": "2026-10-15T03:51:45.687Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3511,6 +3511,45 @@
       "title": {
         "es": "1 dólar Morgan · Filadelfia · 1893",
         "en": "Morgan dollar · Philadelphia · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-cc",
+      "face": "front",
+      "hash": "0033333311173100",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/",
+      "pick": "KM# 110 · PCGS# 7222 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1893",
+        "en": "Morgan dollar · Carson City · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-cc",
+      "face": "front",
+      "hash": "0804260636121408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/",
+      "pick": "KM# 110 · PCGS# 7222 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-front.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1893",
+        "en": "Morgan dollar · Carson City · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-cc",
+      "face": "back",
+      "hash": "080c060e160a0408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/",
+      "pick": "KM# 110 · PCGS# 7222 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-back.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1893",
+        "en": "Morgan dollar · Carson City · 1893"
       }
     },
     {

@@ -487,6 +487,7 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/', en: '/collection/united-states-numismatics/1-dollar-morgan-1878-cc/' },
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/', en: '/collection/united-states-numismatics/1-dollar-morgan-1885-cc/' },
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/', en: '/collection/united-states-numismatics/1-dollar-morgan-1893/' },
+  { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/', en: '/collection/united-states-numismatics/1-dollar-morgan-1893-cc/' },
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/', en: '/collection/united-states-numismatics/1-dollar-morgan-1884-s/' },
   { es: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/', en: '/collection/united-states-numismatics/1-dollar-morgan-1883-cc/' },
   {
@@ -888,6 +889,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1878-cc/',
     '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/',
     '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/',
+    '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/',
     '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1884-s/',
     '/en/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/',
     '/en/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/',
@@ -925,6 +927,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states-numismatics/1-dollar-morgan-1883-cc/',
     '/en/coleccion/united-states-numismatics/1-dollar-morgan-1885-cc/',
     '/en/coleccion/united-states-numismatics/1-dollar-morgan-1893/',
+    '/en/coleccion/united-states-numismatics/1-dollar-morgan-1893-cc/',
     '/en/coleccion/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/',
     '/en/coleccion/united-states-numismatics/american-silver-eagle-1986-2026/',
     '/en/coleccion/united-states-numismatics/',
