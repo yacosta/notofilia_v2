@@ -717,6 +717,13 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.doesNotMatch(morganEssay, /\$750,000/);
     assert.doesNotMatch(morganPage, /EditorialArticlePage/);
     assert.match(morganEssay, /Number\(a\.year\) - Number\(b\.year\)/);
+    assert.match(morganEssay, /morganHoldingsByMint/);
+    assert.match(morganEssay, /mintCarsonCity: 'Carson City'/);
+    assert.match(morganEssay, /mintSanFrancisco: 'San Francisco'/);
+    assert.match(morganEssay, /mintPhiladelphia: 'Filadelfia'/);
+    assert.match(morganEssay, /mintPhiladelphia: 'Philadelphia'/);
+    assert.match(morganPage, /morganHoldingsByMint/);
+    assert.match(morganPage, /morgan-mint-\$\{group\.id\}-heading/);
     assert.match(morganEssay, /1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC/);
   });
 });
