@@ -451,7 +451,7 @@ describe('United States numismatics menu', () => {
     );
     assert.deepEqual(
       holdings.map((coin) => coin.year),
-      ['1878', '1883', '1884', '1885', '1893'],
+      ['1878', '1883', '1884', '1885', '1893', '1893'],
     );
     assert.deepEqual(
       morganHoldings().map((coin) => coin.id),

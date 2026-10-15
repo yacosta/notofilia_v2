@@ -33,7 +33,10 @@ export const morganSeriesCopy = {
       'Cartel del dólar Morgan, emisión original 1878–1904: mapa con las cecas de Filadelfia, Carson City, Nueva Orleans y San Francisco, anverso de 1884, reverso con el águila y una prensa de acuñar. Es una ilustración; las leyendas del cartel están en inglés. No es el escaneo de las piezas de la colección.',
     holdingsTitle: 'En esta colección',
     holdingsIntro:
-      'Seis dólares Morgan, sin serial, por fecha: Carson City 1878, en cápsula rotulada PCGS MS60; Carson City 1883, con la CC bajo la corona; San Francisco 1884, con la S bajo el lazo; Carson City 1885, con la CC bajo la corona; Carson City 1893, con la CC bajo la corona; y Filadelfia 1893, sin marca bajo la corona. Los cinco últimos están sueltos. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
+      'Seis dólares Morgan, sin serial, agrupados por ceca y ordenados por fecha: Carson City 1878, en cápsula rotulada PCGS MS60; Carson City 1883, 1885 y 1893, con la CC bajo la corona; San Francisco 1884, con la S bajo el lazo; y Filadelfia 1893, sin marca bajo la corona. Los cinco últimos están sueltos. Abra cada ficha para el anverso, el reverso y los datos de catálogo.',
+    mintCarsonCity: 'Carson City',
+    mintSanFrancisco: 'San Francisco',
+    mintPhiladelphia: 'Filadelfia',
     viewCoin: 'Ver la ficha',
     specTitle: 'Especificaciones del tipo',
     specIntro:
@@ -70,7 +73,10 @@ export const morganSeriesCopy = {
       'Poster for the original-run Morgan dollar, 1878–1904: a map with the Philadelphia, Carson City, New Orleans, and San Francisco mints, an 1884 obverse, the eagle reverse, and a coining press. It is an illustration, not a scan of the pieces in the collection.',
     holdingsTitle: 'In this collection',
     holdingsIntro:
-      'Six Morgan dollars, with no serial, in date order: Carson City 1878, in a holder labeled PCGS MS60; Carson City 1883, with the CC under the wreath; San Francisco 1884, with the S under the bow; Carson City 1885, with the CC under the wreath; Carson City 1893, with the CC under the wreath; and Philadelphia 1893, with no mint mark under the wreath. The last five are raw. Open each record for obverse, reverse, and catalog facts.',
+      'Six Morgan dollars, with no serial, grouped by mint and listed by date: Carson City 1878, in a holder labeled PCGS MS60; Carson City 1883, 1885, and 1893, with the CC under the wreath; San Francisco 1884, with the S under the bow; and Philadelphia 1893, with no mint mark under the wreath. The last five are raw. Open each record for obverse, reverse, and catalog facts.',
+    mintCarsonCity: 'Carson City',
+    mintSanFrancisco: 'San Francisco',
+    mintPhiladelphia: 'Philadelphia',
     viewCoin: 'Open the coin page',
     specTitle: 'Type specifications',
     specIntro:
@@ -701,10 +707,52 @@ export const morganRelated = [
   },
 ] as const;
 
+export type MorganMintId = 'carson-city' | 'san-francisco' | 'philadelphia';
+
+export type MorganMintGroup = {
+  id: MorganMintId;
+  titleKey: 'mintCarsonCity' | 'mintSanFrancisco' | 'mintPhiladelphia';
+  coins: UnitedStatesCoin[];
+};
+
+const MORGAN_MINT_ORDER: MorganMintId[] = ['carson-city', 'san-francisco', 'philadelphia'];
+
+function morganMintId(coin: UnitedStatesCoin): MorganMintId {
+  const mark = coin.mint.en.toLowerCase();
+  if (mark.includes('carson city')) return 'carson-city';
+  if (mark.includes('san francisco')) return 'san-francisco';
+  if (mark.includes('philadelphia')) return 'philadelphia';
+  throw new Error(`Morgan dollar ${coin.id} has no recognized mint for the series page: ${coin.mint.en}`);
+}
+
 export function morganHoldings(): UnitedStatesCoin[] {
   return unitedStatesCoins
     .filter((coin) => coin.chapterId === 'dolar-morgan')
     .sort((a, b) => Number(a.year) - Number(b.year) || a.id.localeCompare(b.id));
+}
+
+/** Holdings for the series page: mint city sections, each sorted by date. */
+export function morganHoldingsByMint(): MorganMintGroup[] {
+  const buckets: Record<MorganMintId, UnitedStatesCoin[]> = {
+    'carson-city': [],
+    'san-francisco': [],
+    philadelphia: [],
+  };
+
+  for (const coin of morganHoldings()) {
+    buckets[morganMintId(coin)].push(coin);
+  }
+
+  return MORGAN_MINT_ORDER.filter((id) => buckets[id].length > 0).map((id) => ({
+    id,
+    titleKey:
+      id === 'carson-city'
+        ? 'mintCarsonCity'
+        : id === 'san-francisco'
+          ? 'mintSanFrancisco'
+          : 'mintPhiladelphia',
+    coins: buckets[id],
+  }));
 }
 
 export { coinagePath as morganParentPath, USA_MORGAN_PATH, USA_MORGAN_PATH_EN };
