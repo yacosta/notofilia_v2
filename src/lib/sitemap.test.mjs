@@ -300,6 +300,10 @@ describe('sitemap coverage for United States numismatics', () => {
       '/en/collection/united-states-numismatics/1-dollar-morgan-1884-s/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1887-s/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
     );
