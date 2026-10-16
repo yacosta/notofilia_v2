@@ -124,7 +124,7 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the 1977 500 pesos oro holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1893-cc');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1891-cc');
     const note = noteById('500-pesos-oro-1977');
     assert.ok(note);
     const pieces = notePieces(note).map((piece) => ({
@@ -148,25 +148,25 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /500-pesos-oro-1977/);
   });
 
-  it('puts the 1893-CC Morgan dollar on the first Logros del Mes page', () => {
-    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1893-cc');
+  it('puts the 1891-CC Morgan dollar on the first Logros del Mes page', () => {
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1891-cc');
     const holding = additions.at(-1);
     assert.ok(holding);
     const piece = {
-      id: 'us-1-dolar-morgan-1893-cc',
+      id: 'us-1-dolar-morgan-1891-cc',
       country: 'US',
-      href: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/',
-      title: { es: '1 dólar Morgan · Carson City · 1893', en: 'Morgan dollar · Carson City · 1893' },
+      href: '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/',
+      title: { es: '1 dólar Morgan · Carson City · 1891', en: 'Morgan dollar · Carson City · 1891' },
       dek: { es: 'lead', en: 'lead' },
       pick: 'KM# 110',
       serial: '',
       cert: '',
-      image: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-composite.png',
+      image: '/images/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-composite.png',
       imageAlt: { es: 'Anverso', en: 'Obverse' },
     };
     const cards = milestonesFromHoldings(additions, [piece], HOME_MILESTONE_LIMIT);
     assert.equal(cards[0].holdingId, holding.id);
-    assert.match(cards[0].href, /1-dolar-morgan-1893-cc/);
+    assert.match(cards[0].href, /1-dolar-morgan-1891-cc/);
     assert.ok(cards.length <= HOME_MILESTONE_LIMIT);
   });
 
@@ -197,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1893-cc');
+    assert.equal(additions.at(-1)?.id, 'us-1-dolar-morgan-1891-cc');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
