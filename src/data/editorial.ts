@@ -337,6 +337,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar Morgan · Carson City · 1893',
     en: 'Morgan dollar · Carson City · 1893',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/': {
+    es: '1 dólar Morgan · San Francisco · 1893',
+    en: 'Morgan dollar · San Francisco · 1893',
+  },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: '50.000 pesos · error de numeración · 2008',
     en: '50,000 pesos · numbering error · 2008',
@@ -401,8 +405,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
-    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC, el 1893-CC y el 1893 de Filadelfia de la colección.',
-    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, and Philadelphia 1893.',
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC, el 1893-CC, el 1893-S y el 1893 de Filadelfia de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, 1893-S, and Philadelphia 1893.',
   },
   '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
     es: 'La onza de plata .999 de 1986 a 2026. Las fichas de la serie se publicarán en esta página.',
@@ -459,6 +463,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/': {
     es: 'El dólar Morgan de 1893, Carson City, marca CC, sin cápsula.',
     en: 'The 1893 Morgan dollar, Carson City, CC mint mark, unslabbed.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/': {
+    es: 'El dólar Morgan de 1893, San Francisco, marca S, sin cápsula. Las fotos no confirman autenticidad.',
+    en: 'The 1893 Morgan dollar, San Francisco, S mint mark, unslabbed. The photographs do not confirm authenticity.',
   },
   '/coleccion/colombia/50000-pesos-error-2008/': {
     es: 'El mismo tipo Isaacs en la colección, con otro serial y un error.',

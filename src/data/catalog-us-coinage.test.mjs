@@ -361,7 +361,7 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1856-gold-dollar-km86/);
-    assert.match(holdings, /us-1-dolar-morgan-1893-cc', kind: 'coin', country: 'US' },\n];/);
+    assert.match(holdings, /us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US' },\n];/);
   });
 });
 
@@ -616,7 +616,7 @@ describe('US 1893-CC Morgan dollar', () => {
     assert.doesNotMatch(data, /cert_number:/);
     const piece = data.slice(
       data.indexOf("id: '1-dolar-morgan-1893-cc'"),
-      data.indexOf("id: 'medalla-1836-primera-acunacion-vapor'"),
+      data.indexOf("id: '1-dolar-morgan-1893-s'"),
     );
     assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-morgan-1893-cc', kind: 'coin', country: 'US'/);
@@ -625,6 +625,58 @@ describe('US 1893-CC Morgan dollar', () => {
       readFileSync(
         new URL(
           `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-${side}.png`,
+          import.meta.url,
+        ),
+      );
+    }
+  });
+});
+
+describe('US 1893-S Morgan dollar', () => {
+  it('registers one bilingual unslabbed San Francisco piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1893-s/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1893-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1893-s'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7226 · N# 1492/);
+    assert.match(data, /100\.000/);
+    assert.match(data, /100,000/);
+    assert.match(data, /9\.948/);
+    assert.match(data, /9,948/);
+    assert.match(data, /marca S/);
+    assert.match(data, /S mint mark/);
+    assert.match(data, /las fotos no confirman autenticidad/);
+    assert.match(data, /photographs do not confirm authenticity/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1893-s-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1893-s-1\/7226/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /usmint\.gov\/news\/inside-the-mint\/one-hundred-years-of-silver-dollar-coinage-1878-1978/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-morgan-1893-s'"),
+      data.indexOf("id: 'medalla-1836-primera-acunacion-vapor'"),
+    );
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1893-s-morgan-km110/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1893-s-${side}.png`,
           import.meta.url,
         ),
       );
@@ -724,7 +776,7 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.match(morganEssay, /mintPhiladelphia: 'Philadelphia'/);
     assert.match(morganPage, /morganHoldingsByMint/);
     assert.match(morganPage, /morgan-mint-\$\{group\.id\}-heading/);
-    assert.match(morganEssay, /1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC/);
+    assert.match(morganEssay, /1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, 1893-S/);
   });
 });
 

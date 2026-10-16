@@ -231,6 +231,7 @@ export const additions: Holding[] = [
   { id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US' },
   { id: 'us-1-dolar-morgan-1878-cc', kind: 'coin', country: 'US' },
   { id: 'us-1-dolar-morgan-1893-cc', kind: 'coin', country: 'US' },
+  { id: 'us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -388,6 +389,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1795-1-escudo-popayan-km56-2' },
   { id: 'us-1878-cc-morgan-pcgs72833930' },
   { id: 'us-1893-cc-morgan-km110' },
+  { id: 'us-1893-s-morgan-km110' },
 ];
 
 export type CollectionStats = {
