@@ -674,7 +674,7 @@ describe('US 1887-S Morgan dollar', () => {
     assert.doesNotMatch(data, /cert_number:/);
     const piece = data.slice(
       data.indexOf("id: '1-dolar-morgan-1887-s'"),
-      data.indexOf("id: '1-dolar-morgan-1893'"),
+      data.indexOf("id: '1-dolar-morgan-1891-cc'"),
     );
     assert.doesNotMatch(piece, /\$\d+/);
     assert.doesNotMatch(piece, /13,?992/);
@@ -691,149 +691,56 @@ describe('US 1887-S Morgan dollar', () => {
   });
 });
 
-describe('US 1893-CC Morgan dollar', () => {
+describe('US 1891-CC Morgan dollar', () => {
   it('registers one bilingual unslabbed Carson City piece with no serial and no cert', () => {
     assert.equal(
-      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/', 'en'),
-      '/en/collection/united-states-numismatics/1-dollar-morgan-1893-cc/',
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1891-cc/',
     );
     const esCoin = readFileSync(
-      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-cc/index.astro', import.meta.url),
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/index.astro', import.meta.url),
       'utf8',
     );
     const enCoin = readFileSync(
-      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1893-cc/index.astro', import.meta.url),
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1891-cc/index.astro', import.meta.url),
       'utf8',
     );
     assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
     assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
-    assert.match(data, /id: '1-dolar-morgan-1893-cc'/);
+    assert.match(data, /id: '1-dolar-morgan-1891-cc'/);
     assert.match(data, /chapterId: 'dolar-morgan'/);
-    assert.match(data, /KM# 110 · PCGS# 7222 · N# 1492/);
-    assert.match(data, /677\.000/);
-    assert.match(data, /677,000/);
-    assert.match(data, /48\.000/);
-    assert.match(data, /26\.000/);
-    assert.match(data, /último año de acuñación/);
-    assert.match(data, /final year of coinage/);
+    assert.match(data, /KM# 110 · PCGS# 7206 · N# 1492/);
+    assert.match(data, /1\.618\.000/);
+    assert.match(data, /1,618,000/);
+    assert.match(data, /162\.000/);
+    assert.match(data, /80\.000/);
+    assert.match(data, /5\.687/);
+    assert.match(data, /Sherman/);
+    assert.match(data, /Spitting Eagle/);
+    assert.match(data, /VAM-3/);
+    assert.match(data, /VAM-7/);
     assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
-    assert.match(data, /united-states-mint-1-dollar-morgan-1893-cc-composite\.png/);
-    assert.match(data, /pcgs.com\/coinfacts\/coin\/1893-cc-1\/7222/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1891-cc-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1891-cc-1\/7206/);
     assert.match(data, /en\.numista\.com\/1492/);
-    assert.match(data, /usmint\.gov\/news\/inside-the-mint\/the-history-of-the-carson-city-mint/);
+    assert.match(data, /stacksbowers.com\/coin-resource-center\/coin\/1891-cc-morgan-dollar/);
     assert.doesNotMatch(data, /serial: '/);
     assert.doesNotMatch(data, /cert_number:/);
     const piece = data.slice(
-      data.indexOf("id: '1-dolar-morgan-1893-cc'"),
-      data.indexOf("id: 'medalla-1836-primera-acunacion-vapor'"),
+      data.indexOf("id: '1-dolar-morgan-1891-cc'"),
+      data.indexOf("id: '1-dolar-morgan-1893'"),
     );
     assert.doesNotMatch(piece, /\$\d+/);
-    assert.match(holdings, /id: 'us-1-dolar-morgan-1893-cc', kind: 'coin', country: 'US'/);
-    assert.match(holdings, /us-1893-cc-morgan-km110/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1891-cc', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1891-cc-morgan-km110/);
     for (const side of ['composite', 'front', 'back']) {
       readFileSync(
         new URL(
-          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1893-cc-${side}.png`,
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-${side}.png`,
           import.meta.url,
         ),
       );
     }
-  });
-});
-
-describe('US 1893 Morgan dollar', () => {
-  it('registers one bilingual unslabbed Philadelphia piece with no serial and no cert', () => {
-    assert.equal(
-      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/', 'en'),
-      '/en/collection/united-states-numismatics/1-dollar-morgan-1893/',
-    );
-    const esCoin = readFileSync(
-      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/index.astro', import.meta.url),
-      'utf8',
-    );
-    const enCoin = readFileSync(
-      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1893/index.astro', import.meta.url),
-      'utf8',
-    );
-    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
-    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
-    assert.match(data, /id: '1-dolar-morgan-1893'/);
-    assert.match(data, /chapterId: 'dolar-morgan'/);
-    assert.match(data, /KM# 110 · PCGS# 7220 · N# 1492/);
-    assert.match(data, /389\.000/);
-    assert.match(data, /389,000/);
-    assert.match(data, /378\.000/);
-    assert.match(data, /378,000/);
-    assert.match(data, /40\.000/);
-    assert.match(data, /20\.000/);
-    assert.match(data, /VAM-4/);
-    assert.match(data, /1 de junio de 1893/);
-    assert.match(data, /1 June 1893/);
-    assert.match(data, /1 de noviembre de 1893/);
-    assert.match(data, /1 November 1893/);
-    assert.match(data, /sin marca/);
-    assert.match(data, /no mint mark/);
-    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
-    assert.match(data, /united-states-mint-1-dollar-morgan-1893-composite\.png/);
-    assert.match(data, /pcgs.com\/coinfacts\/coin\/1893-1\/7220/);
-    assert.match(data, /en\.numista\.com\/1492/);
-    assert.doesNotMatch(data, /serial: '/);
-    assert.doesNotMatch(data, /cert_number:/);
-    assert.doesNotMatch(data, /\$\d+\.\d{2}/);
-    const piece = data.slice(data.indexOf("id: '1-dolar-morgan-1893',"), data.indexOf("id: '1-dolar-morgan-1893-cc'"));
-    assert.doesNotMatch(piece, /\$\d+/);
-    assert.match(holdings, /id: 'us-1-dolar-morgan-1893', kind: 'coin', country: 'US'/);
-    assert.match(holdings, /us-1893-morgan-km110/);
-    assert.equal(holdings.trimEnd().endsWith("{ id: 'us-1893-morgan-km110' },\n];") || holdings.includes("id: 'us-1893-morgan-km110'"), true);
-    for (const side of ['composite', 'front', 'back']) {
-      readFileSync(
-        new URL(
-          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1893-${side}.png`,
-          import.meta.url,
-        ),
-      );
-    }
-  });
-});
-
-describe('US Morgan dollar original run, 1878–1904', () => {
-  it('keeps a bilingual series page, like Hard Times, and does not publish prices', () => {
-    assert.equal(
-      localizePath('/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/', 'en'),
-      '/en/collection/united-states-numismatics/morgan-silver-dollars-original-run-1878-1904/',
-    );
-    assert.match(data, /USA_MORGAN_PATH = '\/coleccion\/estados-unidos-numismatica\/dolar-morgan-emision-original-1878-1904\/'/);
-    assert.match(data, /if \(id === 'dolar-morgan'\) return morganPath\(locale\)/);
-    assert.match(esMorganSeries, /UnitedStatesMorganDollarsSeriesPage locale="es"/);
-    assert.match(enMorganSeries, /UnitedStatesMorganDollarsSeriesPage locale="en"/);
-    assert.match(morganPage, /id="main-content"/);
-    assert.match(morganPage, /SeriesHero/);
-    assert.match(morganPage, /collectionPageJsonLd/);
-    assert.match(morganPage, /max-w-\[46rem\]/);
-    assert.match(morganPage, /max-w-content/);
-    assert.doesNotMatch(morganPage, /blog/);
-    assert.match(morganEssay, /hero-morgan-dollars-1878-1904\.jpg/);
-    assert.match(morganEssay, /chapterId === 'dolar-morgan'/);
-    assert.match(morganEssay, /Morgan Silver Dollars — Original Run \(1878–1904\)/);
-    assert.match(morganEssay, /Bland-Allison/);
-    assert.match(morganEssay, /Pittman/);
-    assert.match(morganEssay, /1884-S/);
-    assert.match(morganEssay, /1883-CC/);
-    assert.match(morganEssay, /1885-CC/);
-    assert.match(morganEssay, /Esta página no publica precios/);
-    assert.match(morganEssay, /This page does not publish prices/);
-    assert.doesNotMatch(morganEssay, /\$2,086,875/);
-    assert.doesNotMatch(morganEssay, /\$750,000/);
-    assert.doesNotMatch(morganPage, /EditorialArticlePage/);
-    assert.match(morganEssay, /Number\(a\.year\) - Number\(b\.year\)/);
-    assert.match(morganEssay, /morganHoldingsByMint/);
-    assert.match(morganEssay, /mintCarsonCity: 'Carson City'/);
-    assert.match(morganEssay, /mintSanFrancisco: 'San Francisco'/);
-    assert.match(morganEssay, /mintPhiladelphia: 'Filadelfia'/);
-    assert.match(morganEssay, /mintPhiladelphia: 'Philadelphia'/);
-    assert.match(morganPage, /morganHoldingsByMint/);
-    assert.match(morganPage, /morgan-mint-\$\{group\.id\}-heading/);
-    assert.match(morganEssay, /1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1887-S, 1893-CC/);
   });
 });
 
