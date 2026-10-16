@@ -130,6 +130,33 @@ describe('editorial upload images', () => {
   });
 });
 
+describe('October 2026 Colombian fair notes', () => {
+  it('publishes the Bogotá philatelic show and the Manizales fair from named sources', () => {
+    const bogota = newsArticles.find((item) => item.slug === 'xxxvii-exposicion-filatelica-nacional-bogota-2026');
+    const manizales = newsArticles.find((item) => item.slug === 'feria-numismatica-cable-plaza-manizales-2026');
+    assert.ok(bogota);
+    assert.ok(manizales);
+    assert.equal(bogota.slugEn, '37th-national-philatelic-show-bogota-2026');
+    assert.equal(manizales.slugEn, 'numismatic-fair-cable-plaza-manizales-2026');
+    assert.equal(bogota.sourceName, 'Pulzo');
+    assert.equal(manizales.sourceName, 'La Patria');
+    assert.match(bogota.bodyHtml.es, /XXXVII/);
+    assert.match(bogota.bodyHtml.es, /Club El Cubo Colsubsidio/);
+    assert.match(bogota.bodyHtml.en, /37th/);
+    assert.match(manizales.bodyHtml.es, /Cable Plaza/);
+    assert.match(manizales.bodyHtml.es, /22 al 25 de octubre/);
+    assert.match(manizales.bodyHtml.en, /22 to 25 October/);
+    for (const article of [bogota, manizales]) {
+      assert.equal(article.claim, null);
+      for (const locale of ['es', 'en']) {
+        assert.match(article.bodyHtml[locale], /\/glosario\/numismatica\//);
+        assert.match(article.bodyHtml[locale], /\/glosario\/notafilia\//);
+        assert.doesNotMatch(article.bodyHtml[locale], /US\$|€\s?\d|millones de pesos/i);
+      }
+    }
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-15T03:51:45.687Z",
+  "generatedAt": "2026-10-16T03:44:48.856Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3433,6 +3433,45 @@
       "title": {
         "es": "1 dólar Morgan · Carson City · 1883",
         "en": "Morgan dollar · Carson City · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1883",
+      "face": "front",
+      "hash": "0031133151553300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/",
+      "pick": "KM# 110 · PCGS# 7142 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1883-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · Filadelfia · 1883",
+        "en": "Morgan dollar · Philadelphia · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1883",
+      "face": "front",
+      "hash": "081406060e160c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/",
+      "pick": "KM# 110 · PCGS# 7142 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1883-front.png",
+      "title": {
+        "es": "1 dólar Morgan · Filadelfia · 1883",
+        "en": "Morgan dollar · Philadelphia · 1883"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1883",
+      "face": "back",
+      "hash": "080c161e0e060408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/",
+      "pick": "KM# 110 · PCGS# 7142 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1883-back.png",
+      "title": {
+        "es": "1 dólar Morgan · Filadelfia · 1883",
+        "en": "Morgan dollar · Philadelphia · 1883"
       }
     },
     {
