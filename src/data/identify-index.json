@@ -3514,6 +3514,84 @@
       }
     },
     {
+      "pieceId": "1-dolar-morgan-1887-s",
+      "face": "front",
+      "hash": "007335f133377300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/",
+      "pick": "KM# 110 · PCGS# 7180 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1887-s-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1887",
+        "en": "Morgan dollar · San Francisco · 1887"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1887-s",
+      "face": "front",
+      "hash": "08142a0e0e0a1408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/",
+      "pick": "KM# 110 · PCGS# 7180 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1887-s-front.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1887",
+        "en": "Morgan dollar · San Francisco · 1887"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1887-s",
+      "face": "back",
+      "hash": "08140a0e162e1c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/",
+      "pick": "KM# 110 · PCGS# 7180 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1887-s-back.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1887",
+        "en": "Morgan dollar · San Francisco · 1887"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1891-cc",
+      "face": "front",
+      "hash": "0077333235757300",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/",
+      "pick": "KM# 110 · PCGS# 7206 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1891",
+        "en": "Morgan dollar · Carson City · 1891"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1891-cc",
+      "face": "front",
+      "hash": "081c02262a260c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/",
+      "pick": "KM# 110 · PCGS# 7206 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-front.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1891",
+        "en": "Morgan dollar · Carson City · 1891"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1891-cc",
+      "face": "back",
+      "hash": "08142a1a0a1a1c08",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/",
+      "pick": "KM# 110 · PCGS# 7206 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-back.png",
+      "title": {
+        "es": "1 dólar Morgan · Carson City · 1891",
+        "en": "Morgan dollar · Carson City · 1891"
+      }
+    },
+    {
       "pieceId": "1-dolar-morgan-1893",
       "face": "front",
       "hash": "0031337675117300",

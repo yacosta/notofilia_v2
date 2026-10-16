@@ -637,6 +637,113 @@ describe('US 1885-CC Morgan dollar', () => {
   });
 });
 
+describe('US 1887-S Morgan dollar', () => {
+  it('registers one bilingual unslabbed San Francisco piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1887-s/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1887-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1887-s/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1887-s'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7180 · N# 1492/);
+    assert.match(data, /1\.771\.000/);
+    assert.match(data, /1,771,000/);
+    assert.match(data, /180\.000/);
+    assert.match(data, /60\.000/);
+    assert.match(data, /1\.300/);
+    assert.match(data, /1,300/);
+    assert.match(data, /VAM-2/);
+    assert.match(data, /fecha mejor/);
+    assert.match(data, /better date/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1887-s-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1887-s-1\/7180/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /20 Stat\. 25/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-morgan-1887-s'"),
+      data.indexOf("id: '1-dolar-morgan-1891-cc'"),
+    );
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.doesNotMatch(piece, /13,?992/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1887-s', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1887-s-morgan-km110/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1887-s-${side}.png`,
+          import.meta.url,
+        ),
+      );
+    }
+  });
+});
+
+describe('US 1891-CC Morgan dollar', () => {
+  it('registers one bilingual unslabbed Carson City piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1891-cc/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1891-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1891-cc/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1891-cc'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7206 · N# 1492/);
+    assert.match(data, /1\.618\.000/);
+    assert.match(data, /1,618,000/);
+    assert.match(data, /162\.000/);
+    assert.match(data, /80\.000/);
+    assert.match(data, /5\.687/);
+    assert.match(data, /Sherman/);
+    assert.match(data, /Spitting Eagle/);
+    assert.match(data, /VAM-3/);
+    assert.match(data, /VAM-7/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1891-cc-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1891-cc-1\/7206/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.match(data, /stacksbowers.com\/coin-resource-center\/coin\/1891-cc-morgan-dollar/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-morgan-1891-cc'"),
+      data.indexOf("id: '1-dolar-morgan-1893'"),
+    );
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1891-cc', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1891-cc-morgan-km110/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1891-cc-${side}.png`,
+          import.meta.url,
+        ),
+      );
+    }
+  });
+});
+
 describe('US 1893-CC Morgan dollar', () => {
   it('registers one bilingual unslabbed Carson City piece with no serial and no cert', () => {
     assert.equal(
@@ -831,7 +938,7 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.match(morganEssay, /mintPhiladelphia: 'Philadelphia'/);
     assert.match(morganPage, /morganHoldingsByMint/);
     assert.match(morganPage, /morgan-mint-\$\{group\.id\}-heading/);
-    assert.match(morganEssay, /1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1893-CC, 1893-S/);
+    assert.match(morganEssay, /1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1887-S, 1891-CC, 1893-CC, 1893-S/);
   });
 });
 
