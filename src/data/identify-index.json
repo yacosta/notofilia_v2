@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T03:44:48.856Z",
+  "generatedAt": "2026-10-16T03:57:29.677Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3589,6 +3589,45 @@
       "title": {
         "es": "1 dólar Morgan · Carson City · 1893",
         "en": "Morgan dollar · Carson City · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-s",
+      "face": "front",
+      "hash": "0013337177735700",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/",
+      "pick": "KM# 110 · PCGS# 7226 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-s-composite.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1893",
+        "en": "Morgan dollar · San Francisco · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-s",
+      "face": "front",
+      "hash": "0814220e0e161408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/",
+      "pick": "KM# 110 · PCGS# 7226 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-s-front.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1893",
+        "en": "Morgan dollar · San Francisco · 1893"
+      }
+    },
+    {
+      "pieceId": "1-dolar-morgan-1893-s",
+      "face": "back",
+      "hash": "080c362e161e0408",
+      "kind": "coin",
+      "path": "/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893-s/",
+      "pick": "KM# 110 · PCGS# 7226 · N# 1492",
+      "image": "/images/catalog/united-states/united-states-mint-1-dollar-morgan-1893-s-back.png",
+      "title": {
+        "es": "1 dólar Morgan · San Francisco · 1893",
+        "en": "Morgan dollar · San Francisco · 1893"
       }
     },
     {
