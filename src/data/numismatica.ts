@@ -79,8 +79,8 @@ const unitedStatesNumismatics: NumismaticaCountry = {
   years: { es: 'desde 1792', en: 'from 1792' },
   title: { es: 'Estados Unidos', en: 'United States' },
   lead: {
-    es: 'Fichas Hard Times, la medalla de 1836, los Morgan de 1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1893-CC y 1893, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, el American Silver Eagle de 1988 y el 1 $ de 2026.',
-    en: 'Hard Times tokens, the 1836 medal, the 1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1893-CC, and 1893 Morgans, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1988 American Silver Eagle, and the 2026 $1.',
+    es: 'Fichas Hard Times, la medalla de 1836, los Morgan de 1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1891-CC, 1893-CC y 1893, el dólar de oro de 1856, los cuartos de águila de 1878, 1908 y 1912, el American Silver Eagle de 1988 y el 1 $ de 2026.',
+    en: 'Hard Times tokens, the 1836 medal, the 1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1891-CC, 1893-CC, and 1893 Morgans, the 1856 gold dollar, the 1878, 1908, and 1912 quarter eagles, the 1988 American Silver Eagle, and the 2026 $1.',
   },
 };
 
