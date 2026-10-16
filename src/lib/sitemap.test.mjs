@@ -303,6 +303,10 @@ describe('sitemap coverage for United States numismatics', () => {
       localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883-cc/', 'en'),
       '/en/collection/united-states-numismatics/1-dollar-morgan-1883-cc/',
     );
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1883/',
+    );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
   });
 });

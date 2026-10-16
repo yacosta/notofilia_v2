@@ -514,7 +514,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       title: { es: morganSeriesCopy.es.title, en: morganSeriesCopy.en.title },
       dek: { es: morganSeriesCopy.es.metaDescription, en: morganSeriesCopy.en.metaDescription },
       extra:
-        'Morgan silver dollar original run 1878 1904 George T Morgan Bland-Allison Sherman Pittman Carson City CC San Francisco S New Orleans O 1878-CC 1884-S 1883-CC 1885-CC 1893-CC 1893 Philadelphia no mint mark GSA VAM eight tail feathers 1893-S 1895 proof PCGS 72833930 7222',
+        'Morgan silver dollar original run 1878 1904 George T Morgan Bland-Allison Sherman Pittman Carson City CC San Francisco S New Orleans O 1878-CC 1884-S 1883 1883-CC 1885-CC 1893-CC 1893 Philadelphia no mint mark GSA VAM eight tail feathers 1893-S 1895 proof PCGS 72833930 7222 7142',
     },
     {
       href: USA_SILVER_EAGLE_PATH,

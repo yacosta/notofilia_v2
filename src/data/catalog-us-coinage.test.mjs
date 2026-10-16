@@ -361,7 +361,7 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1856-gold-dollar-km86/);
-    assert.match(holdings, /us-1-dolar-morgan-1893-cc', kind: 'coin', country: 'US' },\n];/);
+    assert.match(holdings, /us-1-dolar-morgan-1883', kind: 'coin', country: 'US' },\n];/);
   });
 });
 
@@ -538,6 +538,61 @@ describe('US 1883-CC Morgan dollar', () => {
     assert.doesNotMatch(data, /\$\d+\.\d{2}/);
     assert.match(holdings, /id: 'us-1-dolar-morgan-1883-cc', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1883-cc-morgan-km110/);
+  });
+});
+
+describe('US 1883 Morgan dollar', () => {
+  it('registers one bilingual unslabbed Philadelphia piece with no serial and no cert', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/', 'en'),
+      '/en/collection/united-states-numismatics/1-dollar-morgan-1883/',
+    );
+    const esCoin = readFileSync(
+      new URL('../pages/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enCoin = readFileSync(
+      new URL('../pages/en/collection/united-states-numismatics/1-dollar-morgan-1883/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.match(esCoin, /UnitedStatesCoinPage locale="es"/);
+    assert.match(enCoin, /UnitedStatesCoinPage locale="en"/);
+    assert.match(data, /id: '1-dolar-morgan-1883'/);
+    assert.match(data, /chapterId: 'dolar-morgan'/);
+    assert.match(data, /KM# 110 · PCGS# 7142 · N# 1492/);
+    assert.match(data, /12\.290\.000/);
+    assert.match(data, /12,290,000/);
+    assert.match(data, /3\.000\.000/);
+    assert.match(data, /3,000,000/);
+    assert.match(data, /350\.000/);
+    assert.match(data, /350,000/);
+    assert.match(data, /17\.000/);
+    assert.match(data, /17,000/);
+    assert.match(data, /VAM-10/);
+    assert.match(data, /Sextupled Stars/);
+    assert.match(data, /sin marca/);
+    assert.match(data, /no mint mark/);
+    assert.match(data, /no_serial_reason:\n      'Struck United States Morgan dollar/);
+    assert.match(data, /united-states-mint-1-dollar-morgan-1883-composite\.png/);
+    assert.match(data, /pcgs.com\/coinfacts\/coin\/1883-1\/7142/);
+    assert.match(data, /en\.numista\.com\/1492/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    const piece = data.slice(
+      data.indexOf("id: '1-dolar-morgan-1883',"),
+      data.indexOf("id: '1-dolar-morgan-1885-cc'"),
+    );
+    assert.doesNotMatch(piece, /\$\d+/);
+    assert.match(holdings, /id: 'us-1-dolar-morgan-1883', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /us-1883-morgan-km110/);
+    for (const side of ['composite', 'front', 'back']) {
+      readFileSync(
+        new URL(
+          `../../catalog-src/catalog/united-states/united-states-mint-1-dollar-morgan-1883-${side}.png`,
+          import.meta.url,
+        ),
+      );
+    }
   });
 });
 
@@ -724,7 +779,7 @@ describe('US Morgan dollar original run, 1878–1904', () => {
     assert.match(morganEssay, /mintPhiladelphia: 'Philadelphia'/);
     assert.match(morganPage, /morganHoldingsByMint/);
     assert.match(morganPage, /morgan-mint-\$\{group\.id\}-heading/);
-    assert.match(morganEssay, /1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC/);
+    assert.match(morganEssay, /1878-CC, 1883, 1883-CC, 1884-S, 1885-CC, 1893-CC/);
   });
 });
 

@@ -329,6 +329,10 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '1 dólar Morgan · Carson City · 1885',
     en: 'Morgan dollar · Carson City · 1885',
   },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/': {
+    es: '1 dólar Morgan · Filadelfia · 1883',
+    en: 'Morgan dollar · Philadelphia · 1883',
+  },
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/': {
     es: '1 dólar Morgan · Filadelfia · 1893',
     en: 'Morgan dollar · Philadelphia · 1893',
@@ -401,8 +405,8 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
     en: 'The 1832–1844 private small-change case: the 1834 HT-10A, the 1841 HT-16, the 1837 HT-34, and the HT-181 store card.',
   },
   '/coleccion/estados-unidos-numismatica/dolar-morgan-emision-original-1878-1904/': {
-    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1878-CC, el 1883-CC, el 1884-S, el 1885-CC, el 1893-CC y el 1893 de Filadelfia de la colección.',
-    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1878-CC, 1883-CC, 1884-S, 1885-CC, 1893-CC, and Philadelphia 1893.',
+    es: 'La emisión original del dólar Morgan, 1878–1904, con el 1878-CC, el 1883 de Filadelfia, el 1883-CC, el 1884-S, el 1885-CC, el 1893-CC y el 1893 de Filadelfia de la colección.',
+    en: 'The original Morgan dollar run, 1878–1904, with the collection’s 1878-CC, Philadelphia 1883, 1883-CC, 1884-S, 1885-CC, 1893-CC, and Philadelphia 1893.',
   },
   '/coleccion/estados-unidos-numismatica/aguila-de-plata-1986-2026/': {
     es: 'La onza de plata .999 de 1986 a 2026. Las fichas de la serie se publicarán en esta página.',
@@ -451,6 +455,10 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1885-cc/': {
     es: 'El dólar Morgan de 1885, Carson City, marca CC, sin cápsula.',
     en: 'The 1885 Morgan dollar, Carson City, CC mint mark, unslabbed.',
+  },
+  '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1883/': {
+    es: 'El dólar Morgan de 1883, Filadelfia, sin marca de ceca y sin cápsula.',
+    en: 'The 1883 Morgan dollar, Philadelphia, no mint mark, unslabbed.',
   },
   '/coleccion/estados-unidos-numismatica/1-dolar-morgan-1893/': {
     es: 'El dólar Morgan de 1893, Filadelfia, sin marca de ceca y sin cápsula.',
