@@ -119,7 +119,7 @@ source,target,status,rule,confidence
 /coleccion/hagerstown-bank-maryland/,/coleccion/estados-unidos/,301,category-hub,high
 /coleccion/moneda-colonial-espanola/,/coleccion/colombia-numismatica/,301,category-hub,high
 /coleccion/moneda-colonial-espanola/1-escudo-carlos-iii-1774/,/coleccion/colombia-numismatica/,301,hub-fallback,low
-/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802/,/coleccion/colombia-numismatica/,301,hub-fallback,low
+/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802/,/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/,301,manual,low
 /coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791/,/coleccion/colombia-numismatica/,301,hub-fallback,low
 /coleccion/moneda-colonial/,/coleccion/estados-unidos/,301,category-hub,high
 /coleccion/moneda-colonial/nueva-jersey-6-chelines-1776/,/coleccion/estados-unidos/,301,hub-fallback,low

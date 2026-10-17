@@ -12,6 +12,7 @@ export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1795-p-jf'
   | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
+  | '1-escudo-bogota-1802-nr-jj'
   | '1-escudo-popayan-1808-p-jf'
   | '1-escudo-bogota-1811-nr-jf'
   | '8-escudos-popayan-1801-p-jf'
@@ -139,6 +140,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-escudo-popayan-1801-p-jf',
+  },
+  {
+    id: '1-escudo-bogota-1802-nr-jj',
+    era: 'santa-fe',
+    year: '1802',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 56.1 · Hernández 687 · Fr#58',
+    title: { es: '1 escudo · Bogotá NR–JJ · 1802', en: '1 escudo · Bogotá NR–JJ · 1802' },
+    dek: {
+      es: 'Escudo de oro de Carlos IV, fecha 1802, ceca NR y ensaye JJ. En la colección.',
+      en: 'Charles IV gold escudo, dated 1802, mint NR and assayer JJ. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-bogota-1802-nr-jj',
   },
   {
     id: '1-escudo-popayan-1808-p-jf',

@@ -236,6 +236,7 @@ export const additions: Holding[] = [
   { id: 'us-1-dolar-morgan-1887-s', kind: 'coin', country: 'US' },
   { id: 'us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US' },
   { id: 'co-1811-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO' },
+  { id: 'co-1802-1-escudo-bogota-nr-jj', kind: 'coin', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -398,6 +399,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-1887-s-morgan-km110' },
   { id: 'us-1893-s-morgan-km110' },
   { id: 'co-1811-1-escudo-bogota-km64-1' },
+  { id: 'co-1802-1-escudo-bogota-km56-1' },
 ];
 
 export type CollectionStats = {
