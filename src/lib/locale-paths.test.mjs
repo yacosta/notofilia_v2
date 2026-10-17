@@ -677,6 +677,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/1-escudo-bogota-1795-nr-jj/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/', 'en'),
+      '/en/collection/colombia-numismatics/1-escudo-bogota-1811-nr-jf/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/1-escudo-popayan-1795-p-jf/',
     );
@@ -883,6 +887,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-escudo-bogota-1795-nr-jj/'],
       '/en/collection/colombia-numismatics/1-escudo-bogota-1795-nr-jj/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/'],
+      '/en/collection/colombia-numismatics/1-escudo-bogota-1811-nr-jf/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/'],

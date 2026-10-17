@@ -13,6 +13,7 @@ export type ColombiaCoinTypeId =
   | '1-escudo-popayan-1800-p-jf'
   | '1-escudo-popayan-1801-p-jf'
   | '1-escudo-popayan-1808-p-jf'
+  | '1-escudo-bogota-1811-nr-jf'
   | '8-escudos-popayan-1801-p-jf'
   | '1-escudo-popayan-1806-p-jf'
   | '1-real-bogota-1810-nr-jf'
@@ -198,6 +199,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-real-bogota-1810-nr-jf',
+  },
+  {
+    id: '1-escudo-bogota-1811-nr-jf',
+    era: 'santa-fe',
+    year: '1811',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Hernández 690 · Fr#65',
+    title: { es: '1 escudo · Bogotá NR–JF · 1811', en: '1 escudo · Bogotá NR–JF · 1811' },
+    dek: {
+      es: 'Escudo de oro de Fernando VII, busto de Carlos IV, fecha 1811, ceca NR y ensaye JF. En la colección.',
+      en: 'Ferdinand VII gold escudo, bust of Charles IV, dated 1811, mint NR and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-bogota-1811-nr-jf',
   },
   {
     id: '2-reales-cartagena-1812-1814',
