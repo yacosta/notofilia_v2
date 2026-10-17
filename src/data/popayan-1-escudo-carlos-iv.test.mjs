@@ -91,6 +91,8 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.equal(pageSource.includes('CATALOG_PIECE_GRID'), true);
     assert.equal(pageSource.includes('POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS'), true);
     assert.equal(pageSource.includes('archiveImages'), true);
+    assert.equal(pageSource.includes('NewWindowHint'), true);
+    assert.equal(pageSource.includes('target="_blank"'), true);
     assert.equal(
       popayan1EscudoCarlosIvCopy.es.holding1795Href,
       '/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/',
@@ -117,6 +119,8 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.match(popayan1EscudoCarlosIvCopy.en.archiveImages[0].caption, /Archivo Nacional de Bogotá/);
     assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[1].caption, /Archivo General de la Nación/);
     assert.match(popayan1EscudoCarlosIvCopy.es.archiveImages[2].caption, /Eladio Vergara/);
+    assert.equal(popayan1EscudoCarlosIvCopy.es.expandImage, 'Ampliar imagen');
+    assert.equal(popayan1EscudoCarlosIvCopy.en.expandImage, 'Enlarge image');
     assert.ok(popayan1EscudoCarlosIvSources.some((source) => source.href === 'https://en.numista.com/52837'));
     assert.ok(
       popayan1EscudoCarlosIvSources.some(

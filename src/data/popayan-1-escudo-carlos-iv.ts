@@ -73,6 +73,7 @@ export type PopayanEscudoCopy = {
   holding1808Href: string;
   archiveImagesHeading: string;
   archiveImagesLead: string;
+  expandImage: string;
   archiveImages: PopayanEscudoArchiveImage[];
   sections: PopayanEscudoSection[];
   relatedLead: string;
@@ -129,6 +130,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     archiveImagesHeading: 'La casa de moneda en imágenes de archivo',
     archiveImagesLead:
       'Los planos y la fachada de la Real Casa de Moneda de Popayán ayudan a leer el tipo como parte de una infraestructura: talleres, patios y dependencias donde el oro colonial pasaba de metal a moneda.',
+    expandImage: 'Ampliar imagen',
     archiveImages: [
       {
         src: '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
@@ -262,6 +264,7 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     archiveImagesHeading: 'The mint in archival images',
     archiveImagesLead:
       'The plans and façade of the Popayán mint place the type inside its working infrastructure: shops, courtyards, and service rooms where colonial gold moved from metal to coin.',
+    expandImage: 'Enlarge image',
     archiveImages: [
       {
         src: '/uploads/casa-de-moneda-popayan-fachada-colonial.jpg',
