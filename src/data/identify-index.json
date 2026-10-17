@@ -316,6 +316,45 @@
       }
     },
     {
+      "pieceId": "1-escudo-bogota-1811-nr-jf",
+      "face": "front",
+      "hash": "0071513217536300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1811",
+        "en": "1 escudo · Bogotá NR–JF · 1811"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1811-nr-jf",
+      "face": "front",
+      "hash": "08141616262a1408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1811",
+        "en": "1 escudo · Bogotá NR–JF · 1811"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1811-nr-jf",
+      "face": "back",
+      "hash": "081432122a1e1c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1811",
+        "en": "1 escudo · Bogotá NR–JF · 1811"
+      }
+    },
+    {
       "pieceId": "2-escudos-popayan-1791-p-sf",
       "face": "front",
       "hash": "00753535b6753500",

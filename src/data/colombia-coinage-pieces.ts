@@ -17,6 +17,7 @@ export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1801-p-jf'
   | '1-escudo-popayan-1806-p-jf'
   | '1-escudo-popayan-1808-p-jf'
+  | '1-escudo-bogota-1811-nr-jf'
   | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
@@ -150,6 +151,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Popayán, 1795 P–JF',
           en: 'Popayán 1 escudo, 1795 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1811-nr-jf/`,
+        label: {
+          es: '1 escudo de Bogotá, 1811 NR–JF',
+          en: 'Bogotá 1 escudo, 1811 NR–JF',
         },
       },
       {
@@ -812,8 +820,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         es: 'Numista — 1 escudo, Fernando VII con busto de Carlos IV (N#61388)',
         en: 'Numista — 1 escudo, Ferdinand VII with the bust of Charles IV (N#61388)',
         note: {
-          es: 'El 1808 P–JF de esa serie es KM# 64.2, Hernández 691, con leyenda FERDND VII. No es la leyenda de este disco. El 1820 NR–JF de la misma serie está en esta colección.',
-          en: 'The 1808 P–JF of that series is KM# 64.2, Hernández 691, with the legend FERDND VII. That is not the legend on this disc. The 1820 NR–JF of the same series is in this collection.',
+          es: 'El 1808 P–JF de esa serie es KM# 64.2, Hernández 691, con leyenda FERDND VII. No es la leyenda de este disco. Los 1811 y 1820 NR–JF de Bogotá de esa serie están en esta colección.',
+          en: 'The 1808 P–JF of that series is KM# 64.2, Hernández 691, with the legend FERDND VII. That is not the legend on this disc. The 1811 and 1820 NR–JF Bogotá pieces of that series are in this collection.',
         },
       },
       {
@@ -876,6 +884,150 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '8 escudos de Popayán, 1801 P–JF',
           en: 'Popayán 8 escudos, 1801 P–JF',
+        },
+      },
+    ],
+  },
+  {
+    id: '1-escudo-bogota-1811-nr-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1811-nr-jf/`,
+    chapterId: 'santa-fe',
+    year: '1811',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+      en: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+    },
+    reference:
+      'KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388',
+    title: {
+      es: '1 escudo · Bogotá NR–JF · 1811',
+      en: '1 escudo · Bogotá NR–JF · 1811',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santa Fe colonial',
+      en: 'Colombia-Numismatics · colonial Santa Fe',
+    },
+    lead: {
+      es: 'Un escudo de oro de 1811, labrado en Santa Fe de Nuevo Reino (Bogotá) a nombre de Fernando VII. El anverso conserva el busto de Carlos IV; el reverso, el valor 1 S y las marcas NR · JF.',
+      en: 'An 1811 gold escudo struck at Santa Fe de Nuevo Reino (Bogotá) in the name of Ferdinand VII. The obverse keeps Charles IV’s bust; the reverse, the value 1 S and the marks NR · JF.',
+    },
+    description: {
+      es: 'En 1811 la Casa de Santa Fe de Nuevo Reino, en Bogotá, seguía labrando oro de cordoncillo ya con orla de Fernando VII. Este disco muestra la fecha 1811 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca NR de Nuevo Reino y las iniciales de ensaye JF. Eso es el tipo KM# 64.1 —Restrepo 122.7, Calicó 1548, Cayón 16137, Hernández 690, Friedberg 65—, no el KM# 56.1 de Carlos IV (NR–JJ, 1795 en esta colección) ni el KM# 64.2 de Popayán (Hernández 691, Friedberg 66). CoinVarieties anota que Popayán no parece haber labrado el 1 escudo en 1811. La leyenda del anverso, normalizada, lee FERDND · VII · D · G · HISP · ET IND · R · 1811; abre Ferdinandus VII Dei Gratia Hispaniarum et Indiarum Rex: «Fernando VII, por la gracia de Dios, rey de las Españas y de las Indias». El retrato sigue siendo el de Carlos IV a la derecha: el nombre del rey y el busto no coinciden. La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo, no un 15. El oro .875 y unos 3,38 g de tipo —Numista da 3,3834 g; Hernández anota 3,389 g— son cifras de catálogo: este ejemplar no se pesó ni se midió. CoinVarieties anota 0,095 oz troy de oro fino sobre ese peso. Numista da al tipo la técnica de molino y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: CoinVarieties deja la acuñación sin cifra, Numista no publica una para este año, y las tablas BanRep de moneda empiezan en 1987. Ese mismo año la Constitución de Cundinamarca, promulgada el 4 de abril de 1811, afirmó una soberanía local y retuvo el reconocimiento de Fernando VII; la imagen real de este disco encaja en esa transición, sin que la ficha lo trate como emisión de esa constitución. Sin encapsular; las fotografías no autentican el metal. No es el real de plata de Bogotá de 1810 ni el cobre patriota de Cartagena de esta colección.',
+      en: 'In 1811 the Santa Fe de Nuevo Reino mint, at Bogotá, was still striking milled gold, already with Ferdinand VII’s legend. This disc shows the date 1811 under the portrait, the value 1 S, and, on either side of the fleece, mintmark NR for Nuevo Reino and the assayer initials JF. That is type KM# 64.1 — Restrepo 122.7, Calicó 1548, Cayón 16137, Hernández 690, Friedberg 65 — not Charles IV’s KM# 56.1 (NR–JJ, 1795 in this collection) and not Popayán’s KM# 64.2 (Hernández 691, Friedberg 66). CoinVarieties notes that Popayán does not seem to have struck the 1 escudo in 1811. Normalized obverse legend: FERDND · VII · D · G · HISP · ET IND · R · 1811; it expands to Ferdinandus VII Dei Gratia Hispaniarum et Indiarum Rex: “Ferdinand VII, by the grace of God, king of the Spains and the Indies.” The portrait remains Charles IV facing right: the king named in the legend is not the bust on the coin. Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo, not 15. Gold .875 and a type weight of about 3.38 g — Numista gives 3.3834 g; Hernández records 3.389 g — are catalogue figures: this disc was not weighed or measured. CoinVarieties notes 0.095 troy oz of fine gold on that weight. Numista gives the type a milled technique and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: CoinVarieties leaves the striking unstated, Numista publishes none for this year, and BanRep’s coin tables begin in 1987. That same year Cundinamarca’s constitution, promulgated on 4 April 1811, asserted local sovereignty while retaining recognition of Ferdinand VII; the royal image on this disc fits that transition, without treating the coin as an issue of that constitution. Unslabbed; photographs do not authenticate the metal. It is not Bogotá’s 1810 silver real, nor the patriot copper of Cartagena in this collection.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda de Fernando VII y fecha 1811.',
+      en: 'Obverse: bust of Charles IV facing right, Ferdinand VII legend, and the date 1811.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marca NR y ensaye JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; mintmark NR and assayer JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 64.1 (N#61388) y lista el 1811 NR–JF como Hernández 690, sin tirada. También lista un 1811 NR–JJ, no confirmado por Hernández. CoinVarieties documenta el 1811 NR–JF como Cayón 16137, Friedberg 65, KM 64.1 y Restrepo 122.7, y trata el JJ de ese año como más común; deja la acuñación sin cifra. Sedwick reunió las mismas referencias —más Calicó 1548— para un ejemplar NGC MS64 de noviembre de 2024, que describió como el mejor entonces en el censo de NGC; eso es una observación de rareza de conservación de otro disco, no un conteo de sobrevivientes ni el grado de esta ficha. Esta ficha no inventa un censo ni publica precios.',
+      en: 'Numista covers type KM# 64.1 (N#61388) and lists the 1811 NR–JF as Hernández 690, without a mintage. It also lists an 1811 NR–JJ, not confirmed by Hernández. CoinVarieties documents the 1811 NR–JF as Cayón 16137, Friedberg 65, KM 64.1, and Restrepo 122.7, and treats that year’s JJ as more common; it leaves the striking unstated. Sedwick gathered the same references — plus Calicó 1548 — for an NGC MS64 example in November 2024, which it described as the finest then in the NGC census; that is a condition-rarity note on another disc, not a survivor count or the grade of this record. This record does not invent a census or publish prices.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato muy gastado y reverso con mejor detalle; superficie amarilla con recesos oscuros, rayones y marcas. Fecha 1811, 1 S y NR–JF se leen. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Heavily worn portrait and a clearer reverse; yellow surface with darker recesses, scratches, and marks. Date 1811, 1 S, and NR–JF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/61388',
+        es: 'Numista — 1 escudo, Fernando VII (retrato de Carlos IV), Colombia (N#61388)',
+        en: 'Numista — 1 escudo, Ferdinand VII (portrait of Charles IV), Colombia (N#61388)',
+        note: {
+          es: 'KM# 64.1 para la ceca NR; el 1811 NR–JF figura como Hernández 690. Oro de tipo .875 y 3,3834 g. Lista también un 1811 NR–JJ no confirmado por Hernández. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 64.1 for the NR mint; 1811 NR–JF is listed as Hernández 690. Type gold .875 and 3.3834 g. It also lists an 1811 NR–JJ not confirmed by Hernández. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/literature.php?id=100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista asigna el Cód. 690 al NR–JF de Fernando VII con busto de Carlos IV. Lei 0,875 y peso 3,389 g. No se copian las columnas de precio de esa edición, ni se lee ahí una tirada.',
+          en: 'Numista assigns Cód. 690 to the Ferdinand VII NR–JF with the bust of Charles IV. Fineness 0.875 and weight 3.389 g. Price columns from that edition are not copied, and no mintage is read from them.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1811-NR_JF_escudo',
+        es: 'CoinVarieties — 1 escudo de Bogotá, Fernando VII, 1811 NR–JF',
+        en: 'CoinVarieties — Bogotá 1 escudo, Ferdinand VII, 1811 NR–JF',
+        note: {
+          es: 'Cayón 16137, Friedberg 65, KM 64.1 y Restrepo 122.7. Deja la tirada sin cifra. Trata el JJ de 1811 como más común y anota que Popayán no parece haber labrado este módulo ese año. El lote de Stack’s Bowers que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Cayón 16137, Friedberg 65, KM 64.1, and Restrepo 122.7. Leaves the mintage unstated. It treats the 1811 JJ as more common and notes that Popayán does not seem to have struck this module that year. The Stack’s Bowers lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://auction.sedwickcoins.com/COLOMBIA-Bogot-gold-bust-1-escudo-Ferdinand-VII-bust-of-Charles-IV-1811-JF-NGC-MS-64-finest_i54333306',
+        es: 'Sedwick — 1 escudo de Bogotá, Fernando VII, 1811 JF (NGC MS64)',
+        en: 'Sedwick — Bogotá 1 escudo, Ferdinand VII, 1811 JF (NGC MS64)',
+        note: {
+          es: 'KM-64.1, Restrepo 122.7, Calicó 1548 y Friedberg 65. Comparable de noviembre de 2024; no es este ejemplar y no se publican precios ni el grado de esta ficha.',
+          en: 'KM-64.1, Restrepo 122.7, Calicó 1548, and Friedberg 65. A November 2024 comparable; not this specimen, and prices and this record’s grade are not published.',
+        },
+      },
+      {
+        href: 'https://www.cervantesvirtual.com/obra-visor/constitucion-de-cundinamarca-30-de-marzo-de-1811-y-promulgada-el-4-de-abril-de-1811--0/html/008e4dae-82b2-11df-acc7-002185ce6064_2.html',
+        es: 'Cervantes Virtual — Constitución de Cundinamarca (4 de abril de 1811)',
+        en: 'Cervantes Virtual — Constitution of Cundinamarca (4 April 1811)',
+        note: {
+          es: 'Texto constitucional de 1811: soberanía local con reconocimiento de Fernando VII. Contexto histórico, no autenticación de este disco.',
+          en: 'The 1811 constitutional text: local sovereignty with recognition of Ferdinand VII. Historical context, not authentication of this disc.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación',
+        en: 'Banco de la República — Production and circulation',
+        note: {
+          es: 'Las tablas de moneda abren en 1987. No hay una fila de 1811 que sustituya una tirada de catálogo.',
+          en: 'The coin tables open in 1987. There is no 1811 row to stand in for a catalog mintage.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1795-nr-jj/`,
+        label: {
+          es: '1 escudo de Bogotá, 1795 NR–JJ',
+          en: 'Bogotá 1 escudo, 1795 NR–JJ',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-real-bogota-1810-nr-jf/`,
+        label: {
+          es: '1 real de Bogotá, 1810 NR–JF',
+          en: 'Bogotá 1 real, 1810 NR–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-popayan-1808-p-jf/`,
+        label: {
+          es: '1 escudo de Popayán, 1808 P–JF',
+          en: 'Popayán 1 escudo, 1808 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}2-reales-cartagena-1812-1814/`,
+        label: {
+          es: '2 reales de Cartagena, ca. 1812–1814',
+          en: 'Cartagena 2 reales, ca. 1812–1814',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1820-nr-jf/`,
+        label: {
+          es: '1 escudo de Bogotá, Fernando VII, 1820 NR–JF',
+          en: 'Bogotá 1 escudo, Ferdinand VII, 1820 NR–JF',
         },
       },
     ],
@@ -1496,6 +1648,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Bogotá, Carlos IV, 1795 NR–JJ',
           en: 'Bogotá 1 escudo, Charles IV, 1795 NR–JJ',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1811-nr-jf/`,
+        label: {
+          es: '1 escudo de Bogotá, 1811 NR–JF',
+          en: 'Bogotá 1 escudo, 1811 NR–JF',
         },
       },
       {
