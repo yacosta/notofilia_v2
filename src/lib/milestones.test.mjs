@@ -124,7 +124,7 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the 1977 500 pesos oro holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1811-1-escudo-bogota-nr-jf');
+    assert.equal(additions.at(-1)?.id, 'co-nd-2-escudos-bogota-felipe-v');
     const note = noteById('500-pesos-oro-1977');
     assert.ok(note);
     const pieces = notePieces(note).map((piece) => ({
@@ -148,25 +148,25 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /500-pesos-oro-1977/);
   });
 
-  it('puts the 1811 Bogotá 1 escudo on the first Logros del Mes page', () => {
-    assert.equal(additions.at(-1)?.id, 'co-1811-1-escudo-bogota-nr-jf');
+  it('puts the Bogotá cob 2 escudos on the first Logros del Mes page', () => {
+    assert.equal(additions.at(-1)?.id, 'co-nd-2-escudos-bogota-felipe-v');
     const holding = additions.at(-1);
     assert.ok(holding);
     const piece = {
-      id: 'co-1-escudo-bogota-1811-nr-jf',
+      id: 'co-2-escudos-bogota-nd-felipe-v',
       country: 'CO',
-      href: '/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/',
-      title: { es: '1 escudo · Bogotá NR–JF · 1811', en: '1 escudo · Bogotá NR–JF · 1811' },
-      dek: { es: 'lead', en: 'lead' },
-      pick: 'KM# 64.1',
+      href: '/coleccion/colombia-numismatica/2-escudos-bogota-nd-felipe-v/',
+      title: { es: '2 escudos · Bogotá · ND (Felipe V)', en: '2 escudos · Bogotá · ND (Philip V)' },
+      dek: { es: 'Macuquina de oro', en: 'Gold cob' },
+      pick: 'KM# 17',
       serial: '',
       cert: '',
-      image: '/images/catalog/colombia/colombia-bogota-1-escudo-1811-ferdinand-vii-charles-iv-nr-jf-composite.jpg',
+      image: '/images/catalog/colombia/colombia-bogota-2-escudos-nd-philip-v-cob-composite.jpg',
       imageAlt: { es: 'Anverso', en: 'Obverse' },
     };
     const cards = milestonesFromHoldings(additions, [piece], HOME_MILESTONE_LIMIT);
     assert.equal(cards[0].holdingId, holding.id);
-    assert.match(cards[0].href, /1-escudo-bogota-1811-nr-jf/);
+    assert.match(cards[0].href, /2-escudos-bogota-nd-felipe-v/);
     assert.ok(cards.length <= HOME_MILESTONE_LIMIT);
   });
 
@@ -197,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1811-1-escudo-bogota-nr-jf');
+    assert.equal(additions.at(-1)?.id, 'co-nd-2-escudos-bogota-felipe-v');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',

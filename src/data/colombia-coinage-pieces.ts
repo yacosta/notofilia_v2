@@ -1,4 +1,5 @@
 import type { CatalogSource, LocalizedText } from './catalog';
+import { localizePath, type Locale } from '../lib/locale-paths';
 import {
   COLOMBIA_COINAGE_PATH,
   colombiaCoinageChapters,
@@ -18,6 +19,7 @@ export type ColombiaCoinagePieceId =
   | '1-escudo-popayan-1806-p-jf'
   | '1-escudo-popayan-1808-p-jf'
   | '1-escudo-bogota-1811-nr-jf'
+  | '2-escudos-bogota-nd-felipe-v'
   | '8-escudos-popayan-1801-p-jf'
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
@@ -157,6 +159,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Bogotá, 1811 NR–JF',
           en: 'Bogotá 1 escudo, 1811 NR–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}2-escudos-bogota-nd-felipe-v/`,
+        label: {
+          es: '2 escudos macuquina de Bogotá, ND (Felipe V)',
+          en: 'Bogotá cob 2 escudos, ND (Philip V)',
         },
       },
     ],
@@ -1013,6 +1022,126 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '2 reales de Cartagena, ca. 1812–1814',
           en: 'Cartagena 2 reales, ca. 1812–1814',
+        },
+      },
+    ],
+  },
+  {
+    id: '2-escudos-bogota-nd-felipe-v',
+    path: `${COLOMBIA_COINAGE_PATH}2-escudos-bogota-nd-felipe-v/`,
+    chapterId: 'santa-fe',
+    year: 'ND',
+    denomination: { es: '2 escudos', en: '2 escudos' },
+    metal: { es: 'Oro .917 (tipo)', en: 'Gold .917 (type specification)' },
+    mint: {
+      es: 'Santa Fe de Nuevo Reino, Bogotá (atribución de estilo)',
+      en: 'Santa Fe de Nuevo Reino, Bogotá (style attribution)',
+    },
+    reference: 'KM# 17 · Restrepo M80 / KM 17.2 (comparación) · Hernández 708–714 · Numista N#61438',
+    title: {
+      es: '2 escudos · Bogotá · ND (Felipe V)',
+      en: '2 escudos · Bogotá · ND (Philip V)',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Santa Fe colonial',
+      en: 'Colombia-Numismatics · colonial Santa Fe',
+    },
+    lead: {
+      es: 'Macuquina de oro, probablemente un 2 escudos de Santa Fe (Bogotá) a nombre de Felipe V. La fecha, el ensaye y el facial no se leen con seguridad. Este disco no se pesó.',
+      en: 'A gold cob, probably a Santa Fe (Bogotá) 2 escudos in the name of Philip V. Date, assayer, and face value are not securely readable. This disc was not weighed.',
+    },
+    description: {
+      es: 'Esta macuquina es un oro colonial de Santa Fe de Nuevo Reino —Bogotá—, atribuido por el estilo del escudo y de la cruz, no por una marca de ceca legible. El cospel es irregular, de martillo: no es el cordoncillo de Popayán de 1791 ni el 1 escudo de busto de Bogotá de 1795. El anverso muestra un escudo coronado; los cuarteles de castillos y leones parecen transpuestos, un rasgo que Sedwick documenta en el oro santafereño. El reverso lleva una cruz potenzada con flores de lis en los cuarteles, dentro de una orla de cuatro lóbulos con anillos. La leyenda, la fecha y las marcas de ceca y ensaye quedan incompletas o fuera del cospel: no se asigna año, ordinal seguro ni ensayador. Numista reúne el tipo de 2 escudos de Felipe V de Bogotá como KM# 17 (N#61438), oro de tipo .917 y 6,77 g, con Hernández 708–714 para fechas y ensayes distintos. Sedwick cita Restrepo M80 y KM 17.2 en comparables de la misma ceca y el mismo rey. Esas cifras de metal y peso no se midieron en este ejemplar: un 1 escudo de tipo ronda los 3,38 g; sin pesada, el facial queda como 2 escudos por el módulo aparente, no por una II legible. El oro de Santa Fe a martillo corre de 1622 a 1756; Felipe V ocupa el trono de 1700 a 1746, con el paréntesis de Luis I en 1724. Esta ficha no fija un tramo de ensaye. No hay tirada verificada: las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal.',
+      en: 'This cob is colonial gold of Santa Fe de Nuevo Reino — Bogotá — attributed from the style of the shield and cross, not from a readable mintmark. The planchet is irregular and hammer-struck: it is not Popayán’s 1791 milled 2 escudos, nor Bogotá’s 1795 bust 1 escudo. The obverse shows a crowned shield; the castle and lion quarters appear transposed, a trait Sedwick records on Santafé gold. The reverse carries a cross potent with fleurs-de-lis in the quadrants, inside a four-lobed tressure with ringlets. Legend, date, mintmark, and assayer fall incomplete or off the planchet: no year, secure ordinal, or assayer is assigned. Numista gathers Bogotá’s Philip V 2 escudos type as KM# 17 (N#61438), type gold .917 and 6.77 g, with Hernández 708–714 for distinct dates and assayers. Sedwick cites Restrepo M80 and KM 17.2 on comparables of the same mint and king. Those metal and weight figures were not measured on this specimen: a 1 escudo of the type is about 3.38 g; without a scale reading, the face value stands as 2 escudos from apparent module, not from a readable II. Santa Fe hammered gold runs from 1622 to 1756; Philip V holds the throne from 1700 to 1746, with Louis I’s interval in 1724. This record does not fix an assayer span. No mintage is verified: BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal.',
+    },
+    frontCaption: {
+      es: 'Anverso: escudo coronado sobre cospel irregular; castillos y leones al parecer transpuestos; leyenda incompleta.',
+      en: 'Obverse: crowned shield on an irregular planchet; castles and lions apparently transposed; incomplete legend.',
+    },
+    backCaption: {
+      es: 'Reverso: cruz potenzada con flores de lis en orla de cuatro lóbulos y anillos; sin fecha legible.',
+      en: 'Reverse: cross potent with fleurs-de-lis in a four-lobed tressure with ringlets; no readable date.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 17 (N#61438) y reúne Hernández 708–714 para fechas y ensayes distintos. Restrepo M80 / KM 17.2 aparecen en comparables de Sedwick para 2 escudos de Bogotá de Felipe V. Este disco no tiene fecha ni ensaye asignados; no se publica un censo ni un precio. El 2 escudos de Popayán de 1791 y el 1 escudo de Bogotá de 1795 son otras fichas de esta colección.',
+      en: 'Numista covers type KM# 17 (N#61438) and gathers Hernández 708–714 for distinct dates and assayers. Restrepo M80 / KM 17.2 appear on Sedwick comparables for Bogotá Philip V 2 escudos. This disc has no assigned date or assayer; no census and no price are published. Popayán’s 1791 2 escudos and Bogotá’s 1795 1 escudo are separate records in this collection.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Cospel irregular a martillo; escudo y cruz visibles; fecha, ensaye y valor no se leen con seguridad. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Irregular hammered planchet; shield and cross visible; date, assayer, and value not securely readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-2-escudos-nd-philip-v-cob-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-2-escudos-nd-philip-v-cob-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-2-escudos-nd-philip-v-cob-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/61438',
+        es: 'Numista — 2 escudos, Felipe V, Colombia (N#61438)',
+        en: 'Numista — 2 escudos, Philip V, Colombia (N#61438)',
+        note: {
+          es: 'KM# 17 para Santa Fe; oro de tipo .917 y 6,77 g; Hernández 708–714 según fecha y ensaye. No se cita aquí una tirada ni un valor, ni se copia el peso al disco.',
+          en: 'KM# 17 for Santa Fe; type gold .917 and 6.77 g; Hernández 708–714 by date and assayer. No mintage and no value are cited here, and the type weight is not copied onto this disc.',
+        },
+      },
+      {
+        href: 'https://classic.sedwickcoins.com/articles/colombian2escudos.pdf',
+        es: 'Daniel Frank Sedwick — Collecting Colombian cob 2 escudos',
+        en: 'Daniel Frank Sedwick — Collecting Colombian cob 2 escudos',
+        note: {
+          es: 'Estilo de escudo y cruz, cecas de Bogotá y Cartagena, y el arco 1622–1756. No asigna fecha ni ensaye a este disco.',
+          en: 'Shield and cross style, Bogotá and Cartagena mints, and the 1622–1756 span. It does not assign a date or assayer to this disc.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/1062/lot/52',
+        es: 'Sedwick — 2 escudos de Bogotá, Felipe V, Restrepo M80 / KM-17.2 (comparable)',
+        en: 'Sedwick — Bogotá 2 escudos, Philip V, Restrepo M80 / KM-17.2 (comparable)',
+        note: {
+          es: 'Treasure Auction 17, lote 52: escudo completo y cruz con anillos en la orla; ensaye no visible. No es este ejemplar; no se publica el martillo.',
+          en: 'Treasure Auction 17, lot 52: full shield and cross with ringlets in the tressure; assayer not visible. Not this specimen; the hammer is not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/literature.php?id=100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista reparte Cód. 708–714 por fecha y ensaye del tipo KM# 17. Sin año ni ensaye leídos, esta ficha no toma un Cód. No se copian columnas de precio.',
+          en: 'Numista splits Cód. 708–714 by date and assayer of type KM# 17. With no year or assayer read, this record takes no Cód. Price columns are not copied.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/fabrica-moneda/historia',
+        es: 'Banco de la República — Historia de la Fábrica de Moneda',
+        en: 'Banco de la República — History of the Coin Factory',
+        note: {
+          es: 'Fundación efectiva en 1620. Contexto de ceca, no autenticación de este disco. Las tablas de moneda abren en 1987.',
+          en: 'Effective founding in 1620. Mint context, not authentication of this disc. The coin tables open in 1987.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1795-nr-jj/`,
+        label: {
+          es: '1 escudo de Bogotá, 1795 NR–JJ',
+          en: 'Bogotá 1 escudo, 1795 NR–JJ',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}2-escudos-popayan-1791-p-sf/`,
+        label: {
+          es: '2 escudos de Popayán, 1791 P–SF',
+          en: 'Popayán 2 escudos, 1791 P–SF',
+        },
+      },
+      {
+        href: '/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/',
+        label: {
+          es: '2 escudos de Sevilla, Felipe II, S–D',
+          en: 'Seville 2 escudos, Philip II, S–D',
         },
       },
     ],
@@ -2368,8 +2497,8 @@ export function coinagePieceChapter(piece: ColombiaCoinagePiece) {
   return colombiaCoinageChapters.find((chapter) => chapter.id === piece.chapterId);
 }
 
-export function coinagePiecePath(piece: ColombiaCoinagePiece, locale: 'es' | 'en'): string {
-  return locale === 'en' ? piece.path.replace('/coleccion/', '/en/collection/').replace('colombia-numismatica', 'colombia-numismatics') : piece.path;
+export function coinagePiecePath(piece: ColombiaCoinagePiece, locale: Locale): string {
+  return localizePath(piece.path, locale);
 }
 
 export const colombiaCoinagePieceSlugs = colombiaCoinagePieces.map((piece) =>

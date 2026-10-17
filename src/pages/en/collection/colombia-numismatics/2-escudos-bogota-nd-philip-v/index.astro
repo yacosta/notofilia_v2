@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('2-escudos-bogota-nd-felipe-v');
+if (!piece) throw new Error('Missing Bogotá ND 2 escudos cob (Philip V)');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />
