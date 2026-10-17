@@ -13,6 +13,10 @@ const SANTA_FE_DENOMINATION_RANK: Readonly<Record<string, number>> = {
   '1 real': 3,
 };
 
+function santaFeYearKey(year: string): string {
+  return year === 'ND' || year.startsWith('ND') ? '0' : year;
+}
+
 export function orderSantaFeHoldings<T extends SantaFeOrderPiece>(pieces: readonly T[]): T[] {
   const santaFe = pieces
     .filter((piece) => piece.chapterId === 'santa-fe')
@@ -20,7 +24,7 @@ export function orderSantaFeHoldings<T extends SantaFeOrderPiece>(pieces: readon
       const rankA = SANTA_FE_DENOMINATION_RANK[a.denomination.es] ?? Number.POSITIVE_INFINITY;
       const rankB = SANTA_FE_DENOMINATION_RANK[b.denomination.es] ?? Number.POSITIVE_INFINITY;
       if (rankA !== rankB) return rankA - rankB;
-      const byYear = a.year.localeCompare(b.year, 'en', { numeric: true });
+      const byYear = santaFeYearKey(a.year).localeCompare(santaFeYearKey(b.year), 'en', { numeric: true });
       if (byYear !== 0) return byYear;
       return a.id.localeCompare(b.id);
     });
