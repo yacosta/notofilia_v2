@@ -80,8 +80,12 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinagePieceSource, /'1-escudo-bogota-1795-nr-jj'/);
     assert.match(coinagePieceSource, /Restrepo 84\.8/);
     assert.match(coinagePieceSource, /Calicó 1201/);
-    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1795[\s\S]{0,6000}\$\s*\d/);
-    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1795[\s\S]{0,3000}tirada de \d/);
+    const bogota1795 = coinagePieceSource.slice(
+      coinagePieceSource.indexOf("id: '1-escudo-bogota-1795-nr-jj'"),
+      coinagePieceSource.indexOf("id: '1-escudo-popayan-1795-p-jf'"),
+    );
+    assert.doesNotMatch(bogota1795, /\$\s*\d/);
+    assert.doesNotMatch(bogota1795, /tirada de \d/);
     assert.match(coinagePieceSource, /'1-escudo-popayan-1795-p-jf'/);
     assert.match(coinagePieceSource, /Restrepo 85\.8 ·/);
     assert.doesNotMatch(coinagePieceSource, /1-escudo-popayan-1795[\s\S]{0,2500}\$\s*\d/);
@@ -106,15 +110,23 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinagePieceSource, /'1-escudo-bogota-1820-nr-jf'/);
     assert.match(coinagePieceSource, /Restrepo 122\.27/);
     assert.match(coinagePieceSource, /Calicó 1559/);
-    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1820[\s\S]{0,6000}\$\s*\d/);
-    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1820[\s\S]{0,3000}tirada de \d/);
+    const bogota1820 = coinagePieceSource.slice(
+      coinagePieceSource.indexOf("id: '1-escudo-bogota-1820-nr-jf'"),
+      coinagePieceSource.indexOf("id: '8-reales-bogota-1821-ba-jf'"),
+    );
+    assert.doesNotMatch(bogota1820, /\$\s*\d/);
+    assert.doesNotMatch(bogota1820, /tirada de \d/);
     assert.match(coinagePieceSource, /'8-reales-bogota-1821-ba-jf'/);
     assert.match(coinagePieceSource, /'1-peso-bogota-1826-jf'/);
     assert.match(coinagePieceSource, /KM# 84/);
     assert.match(coinagePieceSource, /Hernández 808/);
     assert.match(coinagePieceSource, /no asigna ese subtipo/);
-    assert.doesNotMatch(coinagePieceSource, /1-peso-bogota-1826[\s\S]{0,2500}tirada de \d/);
-    assert.doesNotMatch(coinagePieceSource, /1-peso-bogota-1826[\s\S]{0,3500}\$\s*\d/);
+    const bogota1826 = coinagePieceSource.slice(
+      coinagePieceSource.indexOf("id: '1-peso-bogota-1826-jf'"),
+      coinagePieceSource.indexOf("id: '2-centavos-lazareto-1921'"),
+    );
+    assert.doesNotMatch(bogota1826, /tirada de \d/);
+    assert.doesNotMatch(bogota1826, /\$\s*\d/);
     assert.match(coinagePieceSource, /'2-centavos-lazareto-1921'/);
     assert.match(coinagePieceSource, /'50-centavos-lazareto-1931'/);
     assert.match(coinagePieceSource, /'50-centavos-santander-1902'/);
