@@ -119,6 +119,8 @@ describe('Colombia coinage guide', () => {
     assert.equal(coinageCopy.en.updatedDate, 'October 17, 2026');
     assert.match(coinageCopy.es.numberingBefore, /el número que abre la referencia es el KM/);
     assert.match(pageSource, /comparisonPath\(locale\)/);
+    assert.match(pageSource, /object-\[74%_0%\]/);
+    assert.match(pageSource, /band="panorama"/);
     assert.match(pageSource, /datetime=\{t\.updated\}/);
     assert.doesNotMatch(pageSource, /target="_blank"/);
   });
