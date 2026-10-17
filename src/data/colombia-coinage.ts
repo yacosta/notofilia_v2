@@ -277,7 +277,7 @@ export const coinageCopy = {
     marksCaption: 'Marcas que leen las fichas de esta vitrina',
     marksHeaders: ['Marca', 'Qué indica'],
     marksRows: [
-      ['NR', 'Santa Fe, Nuevo Reino. En el 1 real de 1810 y los 1 escudo de 1811 y 1820 de esta vitrina.'],
+      ['NR', 'Santa Fe, Nuevo Reino. En el 1 real de 1810 y los 1 escudo de 1802, 1811 y 1820 de esta vitrina.'],
       ['P', 'Popayán. En los escudos de 1795, 1800, 1801, 1806 y 1808.'],
       ['BA', 'Bogotá, Cundinamarca. En el 8 reales de 1821.'],
       ['JF', 'Iniciales de ensaye junto a NR, P y BA en esas fichas.'],
@@ -326,7 +326,7 @@ export const coinageCopy = {
     marksCaption: 'Marks read on the records in this case',
     marksHeaders: ['Mark', 'What it indicates'],
     marksRows: [
-      ['NR', 'Santa Fe, Nuevo Reino. On this case’s 1810 1 real and the 1811 and 1820 1 escudos.'],
+      ['NR', 'Santa Fe, Nuevo Reino. On this case’s 1810 1 real and the 1802, 1811, and 1820 1 escudos.'],
       ['P', 'Popayán. On the 1795, 1800, 1801, 1806, and 1808 escudos.'],
       ['BA', 'Bogotá, Cundinamarca. On the 1821 8 reales.'],
       ['JF', 'Assayer initials beside NR, P, and BA on those records.'],

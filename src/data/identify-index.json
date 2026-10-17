@@ -238,6 +238,45 @@
       }
     },
     {
+      "pieceId": "1-escudo-bogota-1802-nr-jj",
+      "face": "front",
+      "hash": "0021779231136300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
+      "pick": "KM# 56.1 · Hernández 687 · Fr#58 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1802-charles-iv-nr-jj-composite.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JJ · 1802",
+        "en": "1 escudo · Bogotá NR–JJ · 1802"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1802-nr-jj",
+      "face": "front",
+      "hash": "080c361a261a1c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
+      "pick": "KM# 56.1 · Hernández 687 · Fr#58 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1802-charles-iv-nr-jj-front.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JJ · 1802",
+        "en": "1 escudo · Bogotá NR–JJ · 1802"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1802-nr-jj",
+      "face": "back",
+      "hash": "081c06322a3a0c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
+      "pick": "KM# 56.1 · Hernández 687 · Fr#58 · Numista N#52837",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1802-charles-iv-nr-jj-back.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JJ · 1802",
+        "en": "1 escudo · Bogotá NR–JJ · 1802"
+      }
+    },
+    {
       "pieceId": "1-escudo-popayan-1806-p-jf",
       "face": "front",
       "hash": "0021757652716300",

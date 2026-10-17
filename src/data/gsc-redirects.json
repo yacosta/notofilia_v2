@@ -5,10 +5,10 @@
     "gone": 16,
     "existing": 1106,
     "legacy-dc": 51,
-    "manual": 28,
+    "manual": 30,
     "last-slug": 7,
     "category-hub": 27,
-    "hub-fallback": 116,
+    "hub-fallback": 114,
     "fuzzy": 3,
     "last-slug-hreflang": 2,
     "exists": 8,
@@ -1147,14 +1147,14 @@
       "rule": "hub-fallback"
     },
     "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802/": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791/": {
       "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
