@@ -5,7 +5,7 @@ import { describe, it } from 'node:test';
 const pieces = readFileSync(new URL('./colombia-coinage-pieces.ts', import.meta.url), 'utf8');
 const holdings = readFileSync(new URL('./holdings.ts', import.meta.url), 'utf8');
 const start = pieces.indexOf("id: '1-escudo-bogota-1811-nr-jf',\n    path:");
-const end = pieces.indexOf("id: '2-escudos-popayan-1791-p-sf'", start);
+const end = pieces.indexOf("id: '2-escudos-bogota-nd-felipe-v'", start);
 const piece = pieces.slice(start, end);
 
 describe('Colombia 1811 Bogotá 1 escudo, KM# 64.1', () => {

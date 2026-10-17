@@ -669,6 +669,14 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/santander-coscojas/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/2-escudos-bogota-nd-felipe-v/', 'en'),
+      '/en/collection/colombia-numismatics/2-escudos-bogota-nd-philip-v/',
+    );
+    assert.equal(
+      englishContentSlug('coleccion/colombia-numismatica/2-escudos-bogota-nd-felipe-v'),
+      'collection/colombia-numismatics/2-escudos-bogota-nd-philip-v',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/', 'en'),
       '/en/collection/colombia-numismatics/2-escudos-popayan-1791-p-sf/',
     );
@@ -887,6 +895,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/catalogo/'],
       '/en/collection/colombia-numismatics/catalog/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/colombia-numismatica/2-escudos-bogota-nd-felipe-v/'],
+      '/en/collection/colombia-numismatics/2-escudos-bogota-nd-philip-v/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/'],

@@ -8,6 +8,7 @@ export const COLOMBIA_COIN_CATALOG_PATH = `${COLOMBIA_COINAGE_PATH}catalogo/`;
 
 export type ColombiaCoinTypeId =
   | '1-escudo-bogota-1795-nr-jj'
+  | '2-escudos-bogota-nd-felipe-v'
   | '2-escudos-popayan-1791-p-sf'
   | '1-escudo-popayan-1795-p-jf'
   | '1-escudo-popayan-1800-p-jf'
@@ -67,6 +68,21 @@ export type ColombiaCoinType = {
 
 /** Seed types from BanRep / González White essays. Tag `image` here as coins are photographed. */
 export const colombiaCoinTypes: ColombiaCoinType[] = [
+  {
+    id: '2-escudos-bogota-nd-felipe-v',
+    era: 'santa-fe',
+    year: 'ND',
+    denomination: { es: '2 escudos', en: '2 escudos' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 17 · Restrepo M80 / KM 17.2 (comparación) · Hernández 708–714',
+    title: { es: '2 escudos · Bogotá · ND (Felipe V)', en: '2 escudos · Bogotá · ND (Philip V)' },
+    dek: {
+      es: 'Macuquina de oro, probablemente 2 escudos de Felipe V. En la colección; fecha y ensaye no leídos.',
+      en: 'Gold cob, probably a Philip V 2 escudos. In the collection; date and assayer unread.',
+    },
+    flags: ['holding'],
+    holdingId: '2-escudos-bogota-nd-felipe-v',
+  },
   {
     id: '2-escudos-popayan-1791-p-sf',
     era: 'santa-fe',

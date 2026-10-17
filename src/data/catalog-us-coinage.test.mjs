@@ -364,6 +364,7 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.match(holdings, /us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US'/);
     assert.match(holdings, /co-1811-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO'/);
     assert.match(holdings, /co-1802-1-escudo-bogota-nr-jj', kind: 'coin', country: 'CO'/);
+    assert.match(holdings, /co-nd-2-escudos-bogota-felipe-v', kind: 'coin', country: 'CO'/);
     assert.match(holdings, /co-1820-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO' },\n];/);
   });
 });
