@@ -292,6 +292,7 @@ describe('Collection-wide banknote catalog', () => {
       colombiaPieces.length +
         usaNotes +
         mpcNotes +
+        mpcProgramNotes +
         polymerNotes.length +
         (byCountry.GB || 0) +
         (byCountry.CA || 0) +
