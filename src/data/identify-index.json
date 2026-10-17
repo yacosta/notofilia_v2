@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T03:57:29.677Z",
+  "generatedAt": "2026-10-17T05:23:09.735Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -508,6 +508,45 @@
       "title": {
         "es": "1/4 real · Santa Marta · 1820",
         "en": "1/4 real · Santa Marta · 1820"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1820-nr-jf",
+      "face": "front",
+      "hash": "00713513d2753300",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.27 · Calicó 1559 · Hernández 690 · Fr#65 · Cayón 16191 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-composite.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1820",
+        "en": "1 escudo · Bogotá NR–JF · 1820"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1820-nr-jf",
+      "face": "front",
+      "hash": "081c1a0e261e1c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.27 · Calicó 1559 · Hernández 690 · Fr#65 · Cayón 16191 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-front.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1820",
+        "en": "1 escudo · Bogotá NR–JF · 1820"
+      }
+    },
+    {
+      "pieceId": "1-escudo-bogota-1820-nr-jf",
+      "face": "back",
+      "hash": "080c261626261408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/",
+      "pick": "KM# 64.1 · Restrepo 122.27 · Calicó 1559 · Hernández 690 · Fr#65 · Cayón 16191 · Numista N#61388",
+      "image": "/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-back.jpg",
+      "title": {
+        "es": "1 escudo · Bogotá NR–JF · 1820",
+        "en": "1 escudo · Bogotá NR–JF · 1820"
       }
     },
     {

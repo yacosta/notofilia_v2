@@ -60,6 +60,7 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '1-escudo-popayan-1808-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '8-escudos-popayan-1801-p-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-4-real-santa-marta-1820'/);
+    assert.match(coinCatalogSource, /holdingId: '1-escudo-bogota-1820-nr-jf'/);
     assert.match(coinCatalogSource, /holdingId: '8-reales-bogota-1821-ba-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-peso-bogota-1826-jf'/);
     assert.match(coinCatalogSource, /holdingId: '1-real-bogota-1810-nr-jf'/);
@@ -70,7 +71,7 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinCatalogSource, /holdingId: '20-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '10-centavos-santander-1902'/);
     assert.match(coinCatalogSource, /holdingId: '50-centavos-1916-km193-1'/);
-    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 19);
+    assert.equal([...coinCatalogSource.matchAll(/holdingId:/g)].length, 20);
     assert.match(coinagePieceSource, /'2-escudos-popayan-1791-p-sf'/);
     assert.match(coinagePieceSource, /KM# 51\.2/);
     assert.match(coinagePieceSource, /CAROL · IV/);
@@ -102,6 +103,11 @@ describe('Colombia coin type catalog enrichment', () => {
     assert.match(coinagePieceSource, /'1-real-bogota-1810-nr-jf'/);
     assert.match(coinagePieceSource, /'2-reales-cartagena-1812-1814'/);
     assert.match(coinagePieceSource, /'1-4-real-santa-marta-1820'/);
+    assert.match(coinagePieceSource, /'1-escudo-bogota-1820-nr-jf'/);
+    assert.match(coinagePieceSource, /Restrepo 122\.27/);
+    assert.match(coinagePieceSource, /Calicó 1559/);
+    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1820[\s\S]{0,6000}\$\s*\d/);
+    assert.doesNotMatch(coinagePieceSource, /1-escudo-bogota-1820[\s\S]{0,3000}tirada de \d/);
     assert.match(coinagePieceSource, /'8-reales-bogota-1821-ba-jf'/);
     assert.match(coinagePieceSource, /'1-peso-bogota-1826-jf'/);
     assert.match(coinagePieceSource, /KM# 84/);

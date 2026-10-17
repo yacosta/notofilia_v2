@@ -4137,14 +4137,14 @@
       "rule": "hub-fallback"
     },
     "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820/": {
-      "target": "/en/collection/colombia-numismatics/",
+      "target": "/en/collection/colombia-numismatics/1-escudo-bogota-1820-nr-jf/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820": {
-      "target": "/en/collection/colombia-numismatics/",
+      "target": "/en/collection/colombia-numismatics/1-escudo-bogota-1820-nr-jf/",
       "status": 301,
-      "rule": "hub-fallback"
+      "rule": "manual"
     },
     "/en/collection/spanish-colonial-coinage/2-escudos-felipe-v-bogota/": {
       "target": "/en/collection/colombia-numismatics/",
@@ -13407,14 +13407,14 @@
       "rule": "manual"
     },
     "/moneda-colombia-1-escudo-fernando-vii-1820.dc.html": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/",
       "status": 301,
-      "rule": "legacy-dc"
+      "rule": "manual"
     },
     "/moneda-colombia-1-escudo-fernando-vii-1820.dc.html/": {
-      "target": "/coleccion/colombia-numismatica/",
+      "target": "/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/",
       "status": 301,
-      "rule": "legacy-dc"
+      "rule": "manual"
     },
     "/moneda-colombia-2-escudos-carlos-iv-1791.dc.html": {
       "target": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",

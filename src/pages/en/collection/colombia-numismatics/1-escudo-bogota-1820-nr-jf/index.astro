@@ -1,0 +1,9 @@
+---
+import ColombiaCoinPage from '../../../../../components/catalog/ColombiaCoinPage.astro';
+import { coinagePieceById } from '../../../../../data/colombia-coinage-pieces';
+
+const piece = coinagePieceById('1-escudo-bogota-1820-nr-jf');
+if (!piece) throw new Error('Missing Bogotá 1820 1 escudo NR–JF');
+---
+
+<ColombiaCoinPage locale="en" piece={piece} />

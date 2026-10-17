@@ -418,7 +418,7 @@ source,target,status,rule,confidence
 /en/collection/spanish-colonial-coinage/,/en/collection/colombia-numismatics/,301,category-hub,high
 /en/collection/spanish-colonial-coinage/1-escudo-carlos-iii-1787/,/en/collection/colombia-numismatics/,301,hub-fallback,low
 /en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1811/,/en/collection/colombia-numismatics/,301,hub-fallback,low
-/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820/,/en/collection/colombia-numismatics/,301,hub-fallback,low
+/en/collection/spanish-colonial-coinage/1-escudo-fernando-vii-1820/,/en/collection/colombia-numismatics/1-escudo-bogota-1820-nr-jf/,301,manual,low
 /en/collection/spanish-colonial-coinage/2-escudos-felipe-v-bogota/,/en/collection/colombia-numismatics/,301,hub-fallback,low
 /en/collection/state-bank-new-brunswick/1-dollar/,/en/collection/united-states/1-dollar-state-bank-new-brunswick/,301,manual,high
 /en/collection/ten-dollars-1934-districts/,/en/collection/united-states/,301,category-hub,high
@@ -1349,7 +1349,7 @@ source,target,status,rule,confidence
 /glosario/yuan-renminbi/,/glosario/?term=yuan-renminbi/,301,existing,high
 /herramientas/,/herramientas/numeracion-especial/,301,existing,high
 /lazaretos_1921/,/coleccion/lazarettos/,301,manual,high
-/moneda-colombia-1-escudo-fernando-vii-1820.dc.html,/coleccion/colombia-numismatica/,301,legacy-dc,low
+/moneda-colombia-1-escudo-fernando-vii-1820.dc.html,/coleccion/colombia-numismatica/1-escudo-bogota-1820-nr-jf/,301,manual,low
 /moneda-colombia-2-escudos-carlos-iv-1791.dc.html,/coleccion/colombia-numismatica/,301,legacy-dc,low
 /nosotros,/acerca-de/,301,existing,high
 /noticias.dc,/noticias/,200,exists,high

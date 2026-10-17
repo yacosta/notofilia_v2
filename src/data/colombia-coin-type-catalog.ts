@@ -18,6 +18,7 @@ export type ColombiaCoinTypeId =
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
+  | '1-escudo-bogota-1820-nr-jf'
   | '8-reales-bogota-1821-ba-jf'
   | '1-peso-bogota-1826-jf'
   | '1-peso-pm-1907'
@@ -228,6 +229,21 @@ export const colombiaCoinTypes: ColombiaCoinType[] = [
     },
     flags: ['holding'],
     holdingId: '1-4-real-santa-marta-1820',
+  },
+  {
+    id: '1-escudo-bogota-1820-nr-jf',
+    era: 'independencia',
+    year: '1820',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    issuer: { es: 'Santa Fe de Nuevo Reino (Bogotá)', en: 'Santa Fe de Nuevo Reino (Bogotá)' },
+    reference: 'KM# 64.1 · Restrepo 122.27 · Calicó 1559 · Hernández 690 · Fr#65',
+    title: { es: '1 escudo · Bogotá NR–JF · 1820', en: '1 escudo · Bogotá NR–JF · 1820' },
+    dek: {
+      es: 'Escudo de oro de Fernando VII con busto de Carlos IV, fecha 1820, ceca NR y ensaye JF. En la colección.',
+      en: 'Ferdinand VII gold escudo with Charles IV’s bust, dated 1820, mint NR and assayer JF. In the collection.',
+    },
+    flags: ['holding'],
+    holdingId: '1-escudo-bogota-1820-nr-jf',
   },
   {
     id: '8-reales-bogota-1821-ba-jf',

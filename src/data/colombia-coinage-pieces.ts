@@ -21,6 +21,7 @@ export type ColombiaCoinagePieceId =
   | '1-real-bogota-1810-nr-jf'
   | '2-reales-cartagena-1812-1814'
   | '1-4-real-santa-marta-1820'
+  | '1-escudo-bogota-1820-nr-jf'
   | '8-reales-bogota-1821-ba-jf'
   | '1-peso-bogota-1826-jf'
   | '2-centavos-lazareto-1921'
@@ -83,8 +84,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       en: 'An 1795 gold escudo struck at Santa Fe de Nuevo Reino (Bogotá) in the name of Charles IV. The obverse carries the bust and the date; the reverse, the value 1 S and the marks NR · JJ.',
     },
     description: {
-      es: 'En 1795 la Casa de Santa Fe de Nuevo Reino, en Bogotá, labraba oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1795 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca NR de Nuevo Reino y las iniciales de ensaye JJ. Eso es el tipo KM# 56.1 —Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58—, no el KM# 56.2 de Popayán con marcas P–JF, que documentan las fichas de 1795, 1800, 1801, 1806 y 1808. La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo, no un 15. Numista reúne bajo N#52837 las dos cecas del tipo (NR como KM# 56.1, P como KM# 56.2) y lista el 1795 NR–JJ como Hernández 687; la 8.ª edición de 2023 de Hernández reúne bajo ese código los NR–JJ de Carlos IV con leyenda y busto propios. El oro .875, unos 3,38 g de tipo y un módulo de 19 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: Numista no publica cifra para ningún año y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. No es el real de plata de Bogotá de 1810 ni los escudos de Popayán de esta colección.',
-      en: 'In 1795 the Santa Fe de Nuevo Reino mint, at Bogotá, was striking milled gold in the name of Charles IV. This disc shows the date 1795 under the portrait, the value 1 S, and, on either side of the fleece, mintmark NR for Nuevo Reino and the assayer initials JJ. That is type KM# 56.1 — Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58 — not Popayán’s KM# 56.2 with marks P–JF, which the 1795, 1800, 1801, 1806, and 1808 records document. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo, not 15. Numista groups both mints of the type under N#52837 (NR as KM# 56.1, P as KM# 56.2) and lists the 1795 NR–JJ as Hernández 687; the 2023 8th edition of Hernández gathers under that code the NR–JJ pieces with Charles IV’s own legend and bust. Gold .875, a type weight of about 3.38 g, and a module of 19 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: Numista publishes no figure for any year, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. It is not Bogotá’s 1810 silver real, nor the Popayán escudos in this collection.',
+      es: 'En 1795 la Casa de Santa Fe de Nuevo Reino, en Bogotá, labraba oro de cordoncillo a nombre de Carlos IV. Este disco muestra la fecha 1795 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca NR de Nuevo Reino y las iniciales de ensaye JJ. Eso es el tipo KM# 56.1 —Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58—, no el KM# 56.2 de Popayán con marcas P–JF, que documentan las fichas de 1795, 1800, 1801, 1806 y 1808. La leyenda del anverso, normalizada, lee CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, no IV); abre Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: «Carlos IV, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo, no un 15. Numista reúne bajo N#52837 las dos cecas del tipo (NR como KM# 56.1, P como KM# 56.2) y lista el 1795 NR–JJ como Hernández 687; la 8.ª edición de 2023 de Hernández reúne bajo ese código los NR–JJ de Carlos IV con leyenda y busto propios. El oro .875, unos 3,38 g de tipo y un módulo de 19 mm son cifras de Numista: este ejemplar no se pesó ni se midió. Numista da al tipo el cordoncillo y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: Numista no publica cifra para ningún año y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. No es el real de plata de Bogotá de 1810, ni el 1 escudo de Fernando VII de 1820 NR–JF, ni los escudos de Popayán de esta colección.',
+      en: 'In 1795 the Santa Fe de Nuevo Reino mint, at Bogotá, was striking milled gold in the name of Charles IV. This disc shows the date 1795 under the portrait, the value 1 S, and, on either side of the fleece, mintmark NR for Nuevo Reino and the assayer initials JJ. That is type KM# 56.1 — Restrepo 84.8, Calicó 1201, Hernández 687, Friedberg 58 — not Popayán’s KM# 56.2 with marks P–JF, which the 1795, 1800, 1801, 1806, and 1808 records document. Normalized obverse legend: CAROL · IIII · D · G · HISP · ET IND · R · 1795 (IIII, not IV); it expands to Carolus IIII Dei Gratia Hispaniarum et Indiarum Rex: “Charles IV, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo, not 15. Numista groups both mints of the type under N#52837 (NR as KM# 56.1, P as KM# 56.2) and lists the 1795 NR–JJ as Hernández 687; the 2023 8th edition of Hernández gathers under that code the NR–JJ pieces with Charles IV’s own legend and bust. Gold .875, a type weight of about 3.38 g, and a module of 19 mm are Numista figures: this disc was not weighed or measured. Numista gives the type a reeded edge and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: Numista publishes no figure for any year, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. It is not Bogotá’s 1810 silver real, nor the 1820 NR–JF Ferdinand VII 1 escudo, nor the Popayán escudos in this collection.',
     },
     frontCaption: {
       es: 'Anverso: busto de Carlos IV a la derecha, leyenda con IIII y fecha 1795.',
@@ -149,6 +150,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '1 escudo de Popayán, 1795 P–JF',
           en: 'Popayán 1 escudo, 1795 P–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1820-nr-jf/`,
+        label: {
+          es: '1 escudo de Bogotá, Fernando VII, 1820 NR–JF',
+          en: 'Bogotá 1 escudo, Ferdinand VII, 1820 NR–JF',
         },
       },
     ],
@@ -804,8 +812,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         es: 'Numista — 1 escudo, Fernando VII con busto de Carlos IV (N#61388)',
         en: 'Numista — 1 escudo, Ferdinand VII with the bust of Charles IV (N#61388)',
         note: {
-          es: 'El 1808 P–JF de esa serie es KM# 64.2, Hernández 691, con leyenda FERDND VII. No es la leyenda de este disco.',
-          en: 'The 1808 P–JF of that series is KM# 64.2, Hernández 691, with the legend FERDND VII. That is not the legend on this disc.',
+          es: 'El 1808 P–JF de esa serie es KM# 64.2, Hernández 691, con leyenda FERDND VII. No es la leyenda de este disco. El 1820 NR–JF de la misma serie está en esta colección.',
+          en: 'The 1808 P–JF of that series is KM# 64.2, Hernández 691, with the legend FERDND VII. That is not the legend on this disc. The 1820 NR–JF of the same series is in this collection.',
         },
       },
       {
@@ -1378,6 +1386,128 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
     ],
   },
   {
+    id: '1-escudo-bogota-1820-nr-jf',
+    path: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1820-nr-jf/`,
+    chapterId: 'independencia',
+    year: '1820',
+    denomination: { es: '1 escudo', en: '1 escudo' },
+    metal: { es: 'Oro .875 (tipo)', en: 'Gold .875 (type specification)' },
+    mint: {
+      es: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+      en: 'Santa Fe de Nuevo Reino, Bogotá (NR)',
+    },
+    reference: 'KM# 64.1 · Restrepo 122.27 · Calicó 1559 · Hernández 690 · Fr#65 · Cayón 16191 · Numista N#61388',
+    title: {
+      es: '1 escudo · Bogotá NR–JF · 1820',
+      en: '1 escudo · Bogotá NR–JF · 1820',
+    },
+    kicker: {
+      es: 'Colombia-Numismática · Independencia',
+      en: 'Colombia-Numismatics · Independence',
+    },
+    lead: {
+      es: 'Un escudo de oro de 1820, labrado en Santa Fe de Nuevo Reino (Bogotá) a nombre de Fernando VII, con el busto de Carlos IV. El anverso lleva la fecha; el reverso, el valor 1 S y las marcas NR · JF.',
+      en: 'An 1820 gold escudo struck at Santa Fe de Nuevo Reino (Bogotá) in the name of Ferdinand VII, with the bust of Charles IV. The obverse carries the date; the reverse, the value 1 S and the marks NR · JF.',
+    },
+    description: {
+      es: 'En 1820 la Casa de Santa Fe de Nuevo Reino, en Bogotá, labraba todavía oro de cordoncillo con cuños reales. Boyacá había sido en agosto de 1819; Bolívar tomó la casa y, el 18 de agosto, pidió el tipo de la india. Este disco, sin embargo, nombra a Fernando VII y conserva el busto de Carlos IV. Muestra la fecha 1820 bajo el retrato, el valor 1 S y, a ambos lados del vellocino, la marca NR de Nuevo Reino y las iniciales de ensaye JF. Eso es el tipo KM# 64.1 —Restrepo 122.27, Calicó 1559, Hernández 690, Friedberg 65, Cayón 16191—, no el KM# 56.1 de Carlos IV con leyenda CAROL IIII, que documenta la ficha de Bogotá de 1795, ni el KM# 64.2 de Popayán. La leyenda del anverso, normalizada, lee FERDND · VII · D · G · HISP · ET IND · R · 1820; abre Ferdinandus VII Dei Gratia Hispaniarum et Indiarum Rex: «Fernando VII, por la gracia de Dios, rey de las Españas y de las Indias». La del reverso, IN · UTROQ · FELIX · A · D ·, abrevia In utroque felix, auspice Deo. El 1 a la izquierda y la S a la derecha marcan un escudo. El oro .875 y unos 3,38 g de tipo son cifras de Numista y de CoinVarieties; CoinVarieties anota 0,095 oz troy de oro fino sobre ese peso. Este ejemplar no se pesó ni se midió. Numista da al tipo la técnica de molino y la alineación de medalla; estas fotografías no muestran el canto ni fijan el eje de este disco. No hay tirada verificada: Numista no publica cifra, CoinVarieties deja la acuñación sin dato, PCGS registra N/A para el número 755868, y las tablas BanRep de moneda empiezan en 1987. Sin encapsular; las fotografías no autentican el metal. No es el cuartillo de cobre de sitio de Santa Marta de 1820 ni el peso de oro de Bogotá de 1826.',
+      en: 'In 1820 the Santa Fe de Nuevo Reino mint, at Bogotá, was still striking milled gold from royal dies. Boyacá had been in August 1819; Bolívar took the house and, on 18 August, asked for the Indian type. This disc, however, names Ferdinand VII and keeps Charles IV’s bust. It shows the date 1820 under the portrait, the value 1 S, and, on either side of the fleece, mintmark NR for Nuevo Reino and the assayer initials JF. That is type KM# 64.1 — Restrepo 122.27, Calicó 1559, Hernández 690, Friedberg 65, Cayón 16191 — not Charles IV’s KM# 56.1 with the legend CAROL IIII, which the 1795 Bogotá record documents, nor Popayán’s KM# 64.2. Normalized obverse legend: FERDND · VII · D · G · HISP · ET IND · R · 1820; it expands to Ferdinandus VII Dei Gratia Hispaniarum et Indiarum Rex: “Ferdinand VII, by the grace of God, king of the Spains and the Indies.” Reverse: IN · UTROQ · FELIX · A · D ·, for In utroque felix, auspice Deo. The 1 at left and S at right mark one escudo. Gold .875 and a type weight of about 3.38 g are figures from Numista and CoinVarieties; CoinVarieties notes 0.095 troy oz of fine gold on that weight. This disc was not weighed or measured. Numista gives the type a milled technique and medal alignment; these photographs do not show the edge and do not fix this disc’s axis. No mintage is verified: Numista publishes no figure, CoinVarieties leaves the striking unstated, PCGS records N/A for coin number 755868, and BanRep’s coin tables begin in 1987. Unslabbed; photographs do not authenticate the metal. It is not the 1820 Santa Marta copper siege cuartillo, nor Bogotá’s 1826 gold peso.',
+    },
+    frontCaption: {
+      es: 'Anverso: busto de Carlos IV a la derecha, leyenda de Fernando VII y fecha 1820.',
+      en: 'Obverse: bust of Charles IV facing right, Ferdinand VII legend, and the date 1820.',
+    },
+    backCaption: {
+      es: 'Reverso: escudo coronado y Toisón; 1 S; marca NR y ensaye JF a ambos lados del vellocino.',
+      en: 'Reverse: crowned arms and the Golden Fleece; 1 S; mintmark NR and assayer JF beside the fleece.',
+    },
+    scarcity: {
+      es: 'Numista cubre el tipo KM# 64.1 (N#61388) y lista el 1820 NR–JF como Hernández 690, sin tirada. CoinVarieties documenta esa fecha y ensaye como Cayón 16191, Friedberg 65 y KM# 64.1, y deja la acuñación sin cifra; llama al tipo de Fernando VII con busto de Carlos IV —Bogotá 1808–1820 y Popayán 1808–1819— de los oros coloniales más frecuentes. Eso no es un censo de sobrevivientes ni una tirada de este año. Áureo & Calicó describió el 1820 de Santa Fe de Nuevo Reino, ensaye JF, como escasa (AC. 1559, Restrepo 122-27); ese lote no es este ejemplar y no se publican aquí estimación ni martillo. PCGS reúne el 1820-NR JF bajo el número 755868, con acuñación N/A; esta ficha no copia un censo de encapsulados. Las tablas BanRep de moneda empiezan en 1987.',
+      en: 'Numista covers type KM# 64.1 (N#61388) and lists the 1820 NR–JF as Hernández 690, without a mintage. CoinVarieties documents that date and assayer as Cayón 16191, Friedberg 65, and KM# 64.1, and leaves the striking unstated; it calls the Ferdinand VII type with Charles IV’s bust — Bogotá 1808–1820 and Popayán 1808–1819 — among the more available Spanish colonial gold. That is neither a survivor census nor a mintage for this year. Áureo & Calicó described the 1820 Santa Fe de Nuevo Reino JF as scarce (AC. 1559, Restrepo 122-27); that lot is not this specimen, and neither an estimate nor a hammer is published here. PCGS gathers the 1820-NR JF under coin number 755868, with mintage N/A; this record does not copy a slab census. BanRep’s coin tables begin in 1987.',
+    },
+    grade: {
+      es: 'Sin encapsular; sin grado asignado. Retrato muy gastado y reverso con mejor detalle; superficie amarilla con recesos oscuros, rayones y marcas; canto irregular. Fecha 1820, 1 S y NR–JF se leen. Las fotografías no autentican el disco (colección privada)',
+      en: 'Unslabbed; no grade assigned. Heavily worn portrait and a clearer reverse; yellow surface with darker recesses, scratches, and marks; irregular edge. Date 1820, 1 S, and NR–JF readable. Photographs do not authenticate the disc (private collection)',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-composite.jpg',
+      front: '/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-front.jpg',
+      back: '/images/catalog/colombia/colombia-bogota-1-escudo-1820-ferdinand-vii-charles-iv-nr-jf-back.jpg',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/61388',
+        es: 'Numista — 1 escudo, Fernando VII con busto de Carlos IV (N#61388)',
+        en: 'Numista — 1 escudo, Ferdinand VII with the bust of Charles IV (N#61388)',
+        note: {
+          es: 'KM# 64.1 para la ceca NR; el 1820 NR–JF figura como Hernández 690. Oro de tipo .875 y unos 3,38 g. Técnica de molino; alineación de medalla. No se cita aquí una tirada ni un valor.',
+          en: 'KM# 64.1 for the NR mint; 1820 NR–JF is listed as Hernández 690. Type gold .875 and about 3.38 g. Milled; medal alignment. No mintage and no value are cited here.',
+        },
+      },
+      {
+        href: 'https://coinvarieties.com/index.php/Colombia_1820-NR_JF_escudo',
+        es: 'CoinVarieties — 1 escudo de Bogotá, Fernando VII, 1820 NR–JF',
+        en: 'CoinVarieties — Bogotá 1 escudo, Ferdinand VII, 1820 NR–JF',
+        note: {
+          es: 'Cayón 16191, Friedberg 65 y KM# 64.1. Deja la tirada sin cifra. El lote Eliasberg que ilustra es otro ejemplar; no se publican precios.',
+          en: 'Cayón 16191, Friedberg 65, and KM# 64.1. It leaves the mintage unstated. The Eliasberg lot it illustrates is another specimen; prices are not published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/literature.php?id=100183',
+        es: 'Hernández — Monedas y billetes de Colombia, 8.ª ed. 2023 (Numista L100183)',
+        en: 'Hernández — Coins and Banknotes of Colombia, 8th ed. 2023 (Numista L100183)',
+        note: {
+          es: 'Numista asigna el Cód. 690 al NR–JF de Fernando VII de este tipo, con busto de Carlos IV. No se copian las columnas de precio de esa edición, ni se lee ahí una tirada.',
+          en: 'Numista assigns Cód. 690 to the Ferdinand VII NR–JF of this type, with Charles IV’s bust. Price columns from that edition are not copied, and no mintage is read from them.',
+        },
+      },
+      {
+        href: 'https://www.pcgs.com/valueview/colombia/1820-nr-jf-escudo-restrepo-122-27-calico-1559/1081?h=pop&sn=755868',
+        es: 'PCGS — 1820-NR JF escudo, Restrepo 122.27, Calicó 1559 (n.º 755868)',
+        en: 'PCGS — 1820-NR JF escudo, Restrepo 122.27, Calicó 1559 (no. 755868)',
+        note: {
+          es: 'Confirma Restrepo 122.27 y Calicó 1559 para esa fecha y ceca. Acuñación N/A. Este disco no lleva encapsulado; no se copia un censo ni un martillo.',
+          en: 'Confirms Restrepo 122.27 and Calicó 1559 for that date and mint. Mintage N/A. This disc is unslabbed; neither a census nor a hammer is copied.',
+        },
+      },
+      {
+        href: 'https://aureocalico.bidinside.com/es/lot/69381/1820-fernando-vii-santa-fe-de-nuevo-reino-/',
+        es: 'Áureo & Calicó — 1 escudo de Santa Fe de Nuevo Reino, Fernando VII, 1820 JF',
+        en: 'Áureo & Calicó — Santa Fe de Nuevo Reino 1 escudo, Ferdinand VII, 1820 JF',
+        note: {
+          es: 'Comparable de subasta: AC. 1559 y Restrepo 122-27; describe la combinación como escasa. No es este ejemplar y no se publican precios.',
+          en: 'Auction comparable: AC. 1559 and Restrepo 122-27; it describes the combination as scarce. Not this specimen, and prices are not published.',
+        },
+      },
+      {
+        href: 'https://enciclopedia.banrepcultural.org/Financiaci%C3%B3n_de_la_independencia',
+        es: 'Enciclopedia Banrepcultural — Financiación de la independencia',
+        en: 'Banrepcultural Encyclopedia — Financing independence',
+        note: {
+          es: 'Orden de Bolívar del 18 de agosto de 1819 de acuñar el tipo de la india, tras tomar las casas de Bogotá y Popayán.',
+          en: 'Bolívar’s 18 August 1819 order to strike the Indian type, after taking the Bogotá and Popayán mints.',
+        },
+      },
+    ],
+    related: [
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1795-nr-jj/`,
+        label: {
+          es: '1 escudo de Bogotá, Carlos IV, 1795 NR–JJ',
+          en: 'Bogotá 1 escudo, Charles IV, 1795 NR–JJ',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-peso-bogota-1826-jf/`,
+        label: {
+          es: '1 peso de oro de Bogotá, 1826 JF',
+          en: 'Bogotá gold peso, 1826 JF',
+        },
+      },
+    ],
+  },
+  {
     id: '8-reales-bogota-1821-ba-jf',
     path: `${COLOMBIA_COINAGE_PATH}8-reales-bogota-1821-ba-jf/`,
     chapterId: 'independencia',
@@ -1478,8 +1608,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       en: 'An 1826 gold peso struck at Bogotá. The obverse carries Liberty and the date; the reverse, the arms of Gran Colombia and the initials J · F.',
     },
     description: {
-      es: 'En 1826 la Casa de Bogotá labró este peso de oro de la República de Colombia. El anverso lleva el busto de la Libertad a la izquierda, con ínfula, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la fecha 1826 bajo el perfil. La ley del 14 de marzo de 1825 mandó ese busto en traje romano y la palabra libertad en la ínfula; en esta fotografía las letras de la cinta no se leen con seguridad. El reverso muestra las armas fijadas el 4 de octubre de 1821: fasces, arco y flechas cruzados, y dos cornucopias. Alrededor se leen BOGOTA, el valor 1 · P, una roseta y las iniciales J · F. Eso es el tipo KM# 84, Friedberg 73. Hernández, en la 8.ª edición de 2023, reúne el 1825 y el 1826 de Bogotá con ensaye JF en el cód. 808; Numista agrupa el tipo (N#48297) en los cód. 808–810. Las descripciones de lote del 1826 JF citan Restrepo 160.3. Numista anota además un sobrefecha 1826/5 en ese ensaye. Esta fotografía lee 1826 y no muestra un numeral bajo el 6; la ficha no asigna ese subtipo de cuño. El mismo año existe con JR y con PJ; las iniciales de este reverso se leen J · F. El oro .875, 1,69 g y 15 mm son cifras de Numista para el tipo. CoinVarieties da el mismo peso, la misma ley y Friedberg 73, y deja la tirada sin cifra. La pieza de 1826 de la Colección Numismática del Banco (NMO3974) mide 15 mm y 1,7 g; no es este disco. Este ejemplar no se pesó ni se midió. La alineación moneda es la del tipo en Numista; estas fotografías, lado a lado, no fijan el eje. Las tablas BanRep de moneda empiezan en 1987 y no traen una acuñación de 1826. Bogotá fue, según el Banco, la única ceca que labró este peso de oro entre 1825 y 1836. Un peso de oro equivalía a medio escudo; el de plata, a ocho reales. Sin encapsular; las fotografías no autentican el metal. No es el ocho reales de plata de 1821 BA–JF ni el escudo colonial de Popayán.',
-      en: 'In 1826 the Bogotá mint struck this gold peso of the Republic of Colombia. The obverse carries Liberty’s bust facing left, with a headband, the legend REPUBLICA DE COLOMBIA — unaccented, as engraved — and the date 1826 under the profile. The law of 14 March 1825 ordered that bust in Roman dress and the word libertad on the headband; the letters on the band cannot be read with certainty in this photograph. The reverse shows the arms fixed on 4 October 1821: fasces, a crossed bow and arrows, and two cornucopias. Around them one reads BOGOTA, the value 1 · P, a rosette, and the initials J · F. That is type KM# 84, Friedberg 73. Hernández, in the 8th edition of 2023, gathers the 1825 and 1826 Bogotá issues with assayer JF as Cód. 808; Numista groups the type (N#48297) under Cód. 808–810. Lot descriptions of the 1826 JF cite Restrepo 160.3. Numista also notes an 1826/5 overdate for that assayer. This photograph reads 1826 and does not show a numeral under the 6; the record does not assign that die subtype. The same year exists with JR and with PJ; the initials on this reverse read J · F. Gold .875, 1.69 g, and 15 mm are Numista’s figures for the type. CoinVarieties gives the same weight, the same fineness, and Friedberg 73, and leaves the mintage unstated. The Bank’s Numismatic Collection piece of 1826 (NMO3974) measures 15 mm and 1.7 g; it is not this disc. This specimen was not weighed or measured. Coin alignment is the type’s orientation on Numista; these photographs, side by side, do not fix the axis. BanRep’s coin tables begin in 1987 and do not give an 1826 mintage. Bogotá was, according to the Bank, the only mint that struck this gold peso from 1825 through 1836. One gold peso equalled half an escudo; the silver peso, eight reales. Unslabbed; the photographs do not authenticate the metal. It is not the 1821 silver 8 reales BA–JF, nor the colonial Popayán escudo.',
+      es: 'En 1826 la Casa de Bogotá labró este peso de oro de la República de Colombia. El anverso lleva el busto de la Libertad a la izquierda, con ínfula, la leyenda REPUBLICA DE COLOMBIA —sin tilde, como está grabada— y la fecha 1826 bajo el perfil. La ley del 14 de marzo de 1825 mandó ese busto en traje romano y la palabra libertad en la ínfula; en esta fotografía las letras de la cinta no se leen con seguridad. El reverso muestra las armas fijadas el 4 de octubre de 1821: fasces, arco y flechas cruzados, y dos cornucopias. Alrededor se leen BOGOTA, el valor 1 · P, una roseta y las iniciales J · F. Eso es el tipo KM# 84, Friedberg 73. Hernández, en la 8.ª edición de 2023, reúne el 1825 y el 1826 de Bogotá con ensaye JF en el cód. 808; Numista agrupa el tipo (N#48297) en los cód. 808–810. Las descripciones de lote del 1826 JF citan Restrepo 160.3. Numista anota además un sobrefecha 1826/5 en ese ensaye. Esta fotografía lee 1826 y no muestra un numeral bajo el 6; la ficha no asigna ese subtipo de cuño. El mismo año existe con JR y con PJ; las iniciales de este reverso se leen J · F. El oro .875, 1,69 g y 15 mm son cifras de Numista para el tipo. CoinVarieties da el mismo peso, la misma ley y Friedberg 73, y deja la tirada sin cifra. La pieza de 1826 de la Colección Numismática del Banco (NMO3974) mide 15 mm y 1,7 g; no es este disco. Este ejemplar no se pesó ni se midió. La alineación moneda es la del tipo en Numista; estas fotografías, lado a lado, no fijan el eje. Las tablas BanRep de moneda empiezan en 1987 y no traen una acuñación de 1826. Bogotá fue, según el Banco, la única ceca que labró este peso de oro entre 1825 y 1836. Un peso de oro equivalía a medio escudo; el de plata, a ocho reales. Sin encapsular; las fotografías no autentican el metal. No es el 1 escudo de Fernando VII de 1820 NR–JF, ni el ocho reales de plata de 1821 BA–JF, ni el escudo colonial de Popayán.',
+      en: 'In 1826 the Bogotá mint struck this gold peso of the Republic of Colombia. The obverse carries Liberty’s bust facing left, with a headband, the legend REPUBLICA DE COLOMBIA — unaccented, as engraved — and the date 1826 under the profile. The law of 14 March 1825 ordered that bust in Roman dress and the word libertad on the headband; the letters on the band cannot be read with certainty in this photograph. The reverse shows the arms fixed on 4 October 1821: fasces, a crossed bow and arrows, and two cornucopias. Around them one reads BOGOTA, the value 1 · P, a rosette, and the initials J · F. That is type KM# 84, Friedberg 73. Hernández, in the 8th edition of 2023, gathers the 1825 and 1826 Bogotá issues with assayer JF as Cód. 808; Numista groups the type (N#48297) under Cód. 808–810. Lot descriptions of the 1826 JF cite Restrepo 160.3. Numista also notes an 1826/5 overdate for that assayer. This photograph reads 1826 and does not show a numeral under the 6; the record does not assign that die subtype. The same year exists with JR and with PJ; the initials on this reverse read J · F. Gold .875, 1.69 g, and 15 mm are Numista’s figures for the type. CoinVarieties gives the same weight, the same fineness, and Friedberg 73, and leaves the mintage unstated. The Bank’s Numismatic Collection piece of 1826 (NMO3974) measures 15 mm and 1.7 g; it is not this disc. This specimen was not weighed or measured. Coin alignment is the type’s orientation on Numista; these photographs, side by side, do not fix the axis. BanRep’s coin tables begin in 1987 and do not give an 1826 mintage. Bogotá was, according to the Bank, the only mint that struck this gold peso from 1825 through 1836. One gold peso equalled half an escudo; the silver peso, eight reales. Unslabbed; the photographs do not authenticate the metal. It is not the 1820 NR–JF Ferdinand VII 1 escudo, nor the 1821 silver 8 reales BA–JF, nor the colonial Popayán escudo.',
     },
     frontCaption: {
       es: 'Anverso: busto de la Libertad a la izquierda, ínfula, leyenda REPUBLICA DE COLOMBIA y fecha 1826.',
@@ -1555,6 +1685,13 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
         label: {
           es: '8 reales de Bogotá, 1821 BA–JF',
           en: 'Bogotá 8 reales, 1821 BA–JF',
+        },
+      },
+      {
+        href: `${COLOMBIA_COINAGE_PATH}1-escudo-bogota-1820-nr-jf/`,
+        label: {
+          es: '1 escudo de Bogotá, Fernando VII, 1820 NR–JF',
+          en: 'Bogotá 1 escudo, Ferdinand VII, 1820 NR–JF',
         },
       },
     ],
