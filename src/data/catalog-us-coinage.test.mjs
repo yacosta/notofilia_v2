@@ -361,7 +361,8 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.doesNotMatch(piece, /\$\d+/);
     assert.match(holdings, /id: 'us-1-dolar-oro-1856-cabeza-grande', kind: 'coin', country: 'US'/);
     assert.match(holdings, /us-1856-gold-dollar-km86/);
-    assert.match(holdings, /us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US' },\n];/);
+    assert.match(holdings, /us-1-dolar-morgan-1893-s', kind: 'coin', country: 'US'/);
+    assert.match(holdings, /co-1811-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO' },\n];/);
   });
 });
 
