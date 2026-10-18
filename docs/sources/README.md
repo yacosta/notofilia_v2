@@ -11,3 +11,4 @@ Working copies for catalogue copy. Cite the issuer or the printed work on the si
 | `hernandez/` | Pedro Pablo Hernández, *Monedas y Billetes de Colombia*, 8ª ed. 2023 (OCR). Cite Numista L100183 on the site; do not republish prices or plates. |
 | `cashflow-scn83/` | MEI/Crane CASHFLOW SCN83 Colombia software bill-set identity card (variant 523334446). Validator index, not a holding or a grade. |
 | `colombia-transporte-estudiantil/` | Student/tram transport tickets (tiquete, vale, cupón). Not BanRep paper. Decreto 188 de 1969 is unverified. Holding: MEN 15¢ green and red on `tiquete-estudiantil-15-centavos`. |
+| `blog/` | Drafts supplied for editorial notes. `fidel-castro-en-billete-colombiano.md` is the 18 Oct 2026 Gaitán / Castro essay (image extracted to `public/uploads/`). Cite BanRep, González White, and the live press URLs on the site, not this path. |

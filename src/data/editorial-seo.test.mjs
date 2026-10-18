@@ -49,6 +49,44 @@ describe('editorial SEO helpers', () => {
     assert.match(article.claim.noteEs, /Baltasar/);
   });
 
+  it('publishes the Gaitán Castro essay from checked sources and without a price', () => {
+    const article = blogArticles.find((item) => item.slug === 'fidel-castro-en-billete-colombiano');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'fidel-castro-on-colombian-1000-peso-note');
+    assert.equal(article.title.es, 'Fidel Castro en el mil pesos de Gaitán');
+    assert.equal(article.image, '/uploads/fidel-castro-billete-1000-pesos.png');
+    assert.equal(article.imageWidth, 348);
+    assert.equal(article.imageHeight, 880);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/fidel-castro-billete-1000-pesos.png', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/fidel-castro-billete-1000-pesos-card.png', import.meta.url)),
+      true,
+    );
+    assert.ok(article.primarySources?.length >= 8);
+    const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(sourceUrls, /banrep\.gov\.co/);
+    assert.match(sourceUrls, /colombiareports\.com/);
+    assert.match(sourceUrls, /banknotenews\.com/);
+    assert.match(sourceUrls, /wradio\.com\.co/);
+    assert.doesNotMatch(sourceUrls, /wikipedia\.org|facebook\.com|youtube\.com/i);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /BG# 439/);
+      assert.match(html, /98[.,]050[.,]000/);
+      assert.match(html, /José Antonio Suárez/);
+      assert.match(html, /\/coleccion\/colombia\/1000-pesos-error-2000\//);
+      assert.match(html, /banrep\.gov\.co/);
+      assert.doesNotMatch(html, /wikipedia\.org/i);
+      assert.doesNotMatch(html, /US\$0[.,]55|56 centavos|22 céntimos/i);
+    }
+    assert.match(article.claim.noteEs, /2[.,]300 millones/);
+    assert.match(article.claim.noteEs, /ensayo/);
+  });
+
   it('publishes the Colombian valuation guide without a price list', () => {
     const article = blogArticles.find((item) => item.slug === 'como-se-valora-un-billete-colombiano');
     assert.ok(article);
