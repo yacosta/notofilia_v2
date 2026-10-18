@@ -203,8 +203,8 @@ export const megaNav: NavNode[] = [
       },
       {
         id: 'colombia',
-        es: 'Colombia',
-        en: 'Colombia',
+        es: 'Billetes de Colombia',
+        en: 'Colombian banknotes',
         href: COLOMBIA_PATH,
         flag: 'co',
         children: [
@@ -424,8 +424,8 @@ export const megaNav: NavNode[] = [
     children: [
       {
         id: 'colombia-monedas',
-        es: 'Colombia',
-        en: 'Colombia',
+        es: 'Monedas de Colombia',
+        en: 'Colombian coins',
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
         children: [

@@ -235,7 +235,7 @@ export const seriesCopy = {
       'Tres hechos de la época: el exilio antioqueño de Recaredo de Villa, la Guatemala cafetalera de 1878 y las planchas londinenses que firmaron la serie hasta 1901.',
     sourcesTitle: 'Fuentes',
     colombiaLead: 'La banca libre de la que sale este banco se documenta en la vitrina de Colombia.',
-    colombiaLink: 'Colombia · Banca libre y Banco de la República',
+    colombiaLink: 'Billetes de Colombia',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
       'Esta página no reproduce billetes. Las fichas de cada pieza se publicarán a medida que se documenten, como en las demás vitrinas de notafilia.',
@@ -260,7 +260,7 @@ export const seriesCopy = {
       'Three facts of the period: Recaredo de Villa’s Antioquian exile, the coffee Guatemala of 1878, and the London plates that signed the series through 1901.',
     sourcesTitle: 'Sources',
     colombiaLead: 'The free banking from which this bank came is documented in the Colombia case.',
-    colombiaLink: 'Colombia · Free banking and the Banco de la República',
+    colombiaLink: 'Colombian banknotes',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
       'This page does not reproduce banknotes. Individual note pages will be published as they are documented, as in the other notaphily cases.',

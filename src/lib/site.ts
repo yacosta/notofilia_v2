@@ -207,8 +207,8 @@ export const collections = [
   },
   {
     href: COLOMBIA_PATH,
-    es: { title: 'Colombia', description: 'Banca libre, Banco de la República, specimens y errores.' },
-    en: { title: 'Colombia', description: 'Free banking, Banco de la República, specimens, and errors.' },
+    es: { title: 'Billetes de Colombia', description: 'Banca libre, Banco de la República, especímenes y errores.' },
+    en: { title: 'Colombian banknotes', description: 'Free banking, Banco de la República, specimens, and errors.' },
   },
   {
     href: USA_PATH,

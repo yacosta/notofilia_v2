@@ -20,7 +20,7 @@ export const notafiliaCountries: NotafiliaCountry[] = [
   {
     href: COLOMBIA_PATH,
     years: { es: 'desde 1811', en: 'from 1811' },
-    title: { es: 'Colombia', en: 'Colombia' },
+    title: { es: 'Billetes de Colombia', en: 'Colombian banknotes' },
     lead: {
       es: 'Independencia, banca libre, Banco Nacional y el Banco de la República.',
       en: 'Independence, free banking, the Banco Nacional, and the Banco de la República.',

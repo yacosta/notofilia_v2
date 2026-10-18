@@ -43,8 +43,8 @@ export const colombiaChapters: ColombiaChapter[] = [
     id: 'banca-libre',
     years: { es: '1870–1887', en: '1870–1887' },
     title: {
-      es: 'Banca libre',
-      en: 'Free banking',
+      es: 'Banca libre: los billetes de bancos regionales',
+      en: 'Free banking: the notes of regional banks',
     },
     lead: {
       es: 'Ley 35 de 1865, Banco de Bogotá (1870) y decenas de emisores regionales convertibles en metálico.',
@@ -59,8 +59,8 @@ export const colombiaChapters: ColombiaChapter[] = [
     id: 'banco-nacional',
     years: { es: '1880–1903', en: '1880–1903' },
     title: {
-      es: 'Banco Nacional',
-      en: 'Banco Nacional',
+      es: 'Banco Nacional: los billetes de curso forzoso',
+      en: 'Banco Nacional: forced-tender notes',
     },
     lead: {
       es: 'La Regeneración, el curso forzoso de 1886, la Ley 70 de 1894 y el papel de la Guerra de los Mil Días.',
@@ -107,8 +107,8 @@ export const colombiaChapters: ColombiaChapter[] = [
     id: 'banco-de-la-republica',
     years: { es: 'desde 1923', en: 'from 1923' },
     title: {
-      es: 'Banco de la República',
-      en: 'Banco de la República',
+      es: 'Banco de la República: el emisor de los billetes',
+      en: 'Banco de la República: the bank of issue',
     },
     lead: {
       es: 'Ley 25 de 1923, Misión Kemmerer, peso oro, provisionales de 1923, pesos plata de 1932, ABNC, De La Rue e Imprenta de Billetes.',
@@ -123,8 +123,8 @@ export const colombiaChapters: ColombiaChapter[] = [
     id: 'familias-modernas',
     years: { es: 'desde 1993', en: 'from 1993' },
     title: {
-      es: 'Familias modernas',
-      en: 'Modern families',
+      es: 'Familias modernas de billetes',
+      en: 'Modern banknote families',
     },
     lead: {
       es: 'El fin del peso oro, el robo de Valledupar y la familia de 2016.',
@@ -350,12 +350,12 @@ export const seriesSources: CatalogSource[] = [
 
 export const seriesCopy = {
   es: {
-    metaTitle: 'Billetes de Colombia | Notofilia',
+    metaTitle: 'Billetes de Colombia: catálogo histórico 1812–hoy | Notofilia',
     metaDescription:
-      'Catálogo de papel moneda colombiano: emisiones de independencia, banca libre, Banco Nacional, especímenes y errores del Banco de la República.',
-    kicker: 'Colombia · Notafilia',
+      'Catálogo de billetes de Colombia: banca libre, Banco Nacional y Banco de la República, con pruebas, especímenes y reposiciones documentados.',
+    kicker: 'Billetes de Colombia',
     title: 'Billetes de Colombia',
-    eraSubtitle: 'Banca libre, Banco Nacional y Banco de la República',
+    eraSubtitle: 'Banca libre y Banco de la República',
     eraOpen: 'Abrir la vitrina',
     eraEmpty: 'Esta vitrina aún no publica un ejemplar; el capítulo queda como marco histórico.',
     eraHoldings: 'Piezas de esta época',
@@ -364,8 +364,8 @@ export const seriesCopy = {
     heroAlt:
       'Mapa vintage en relieve 3D de Colombia sobre pergamino, con Sierra Nevada, Santa Marta, Riohacha, Medellín y Bogotá, sellos, pasaporte y el título Colombia',
     intro: [
-      'Bienvenido a la vitrina virtual de notafilia colombiana. Esta colección documenta el papel moneda del país —de las emisiones de emergencia de la Independencia a la banca libre y a la consolidación del Banco de la República— como documentos de la soberanía monetaria, no como mercancía.',
-      'El papel moneda en Colombia nació de la urgencia de la Independencia, no de un banco central. Hernández (8.ª ed., 2023) lista primero un 2 reales de 1812 impreso en Mompós —único ejemplar que registra— y luego el 1 real de 1813; la Enciclopedia Banrepcultural identifica ese 1 real de Gutiérrez de Piñeres, firmado a mano en papel común. Cundinamarca siguió al año siguiente con vales de tesorería. Las libranzas de la Gran Colombia, grabadas por Peter Maverick en Nueva York, nunca se emitieron. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
+      'Los billetes de Colombia nacieron de la urgencia de la Independencia, no de un banco central. Esta vitrina documenta esas emisiones —de la banca libre a la consolidación del Banco de la República— como documentos de la soberanía monetaria, no como mercancía.',
+      'Hernández (8.ª ed., 2023) lista primero un 2 reales de 1812 impreso en Mompós —único ejemplar que registra— y luego el 1 real de 1813; la Enciclopedia Banrepcultural identifica ese 1 real de Gutiérrez de Piñeres, firmado a mano en papel común. Cundinamarca siguió al año siguiente con vales de tesorería. Las libranzas de la Gran Colombia, grabadas por Peter Maverick en Nueva York, nunca se emitieron. Habituada al oro y la plata, la población desconfió de esos papeles. Con la Reconquista de 1815 muchos se destruyeron; los que sobreviven son de extrema rareza.',
       'El billete moderno llegó en la década de 1870, con la banca libre. La Ley 35 de 1865 abrió la emisión convertible. El Banco de Bogotá se constituyó el 15 de noviembre de 1870 y fue el primer emisor privado que el comercio aceptó de forma amplia. Mover especie por el relieve era caro y peligroso; más de tres docenas de bancos regionales —Antioquia, Colombia, Bolívar, Medellín, Pamplona, el Norte, el Cauca, el Hipotecario, Riohacha— cubrieron el crédito local con papel propio, fraccionarios incluidos, grabado en Nueva York y Londres. Esas emisiones, junto con pruebas y especímenes, forman el corazón histórico de esta vitrina. La banca libre abre con las pruebas ABNC del Banco Hipotecario de Bogotá (1881) y del 5 pesos de Riohacha (1883).',
       'En 1880–1881, bajo la Regeneración de Rafael Núñez, nació el Banco Nacional (Ley 39 de 1880): manejar fondos del Estado, emitir y prestar al fisco. Al principio convivió con la emisión privada. En 1886 el gobierno cortó la convertibilidad: el Decreto 104 y la Ley 87 hicieron del papel peso la unidad monetaria de curso forzoso. La Ley 57 de 1887 suspendió el derecho de los particulares a emitir mientras el Nacional tuviera el privilegio exclusivo. La política de emisión, opaca y holgada, depreció el billete; por esos excesos, la Ley 70 de 1894 ordenó liquidar el instituto. Astrid Romero sitúa el cierre definitivo el 1.º de enero de 1896. La Guerra de los Mil Días (1899–1902) volvió a disparar la impresión de papel sin respaldo —el gobierno y mandos regionales— y una inflación devastadora. El Museo Casa de Moneda registra billetes del Gobierno Provisional de Ocaña (1900) y resellos del Nacional sobre papel privado. En 1909 la Junta de Conversión tasó 100 pesos de papel por 1 peso oro. Aun en los primeros años de 1910 los billetes viejos del Nacional seguían en circulación. Esta vitrina documenta una cédula representativa de un peso del Departamento del Tolima, Ibagué, septiembre de 1901, serial N.º 060.416, Serie D (Hernández Cód. 1242).',
       'Para estabilizar la posguerra, Rafael Reyes creó en 1905 el Banco Central de Colombia. Fue un emisor de vida corta: en 1909, tras la caída de Reyes, se le retiró el privilegio de emitir. No es el banco de 1923. En 1922 la Junta de Conversión quedó autorizada a resellar bonos del tesoro (Ley 5.ª, Decreto 165, escritura 206) antes de abrir el instituto. La Ley 25 de 1923, fruto de la Misión Kemmerer —el «money doctor» contratado por Pedro Nel Ospina— creó el Banco de la República con capital mixto, 10 millones de pesos oro y el monopolio de emitir la moneda legal. La corrida contra el Banco López adelantó la apertura al 23 de julio de 1923: los certificados de oro de Medellín llegaron por ferrocarril, hidroavión y tren y se resellaron en un fin de semana como billetes provisionales. Los primeros regulares los grabó la American Bank Note Company; el papel se llamó peso oro para señalar su convertibilidad. La convertibilidad se perdió en 1931. Tras la guerra con el Perú (1932) circularon pesos plata. Thomas De La Rue imprimió a mediados de siglo. El 23 de octubre de 1959 abrió la Imprenta de Billetes en Bogotá, con el 1 peso azul (Pick 404). La Junta Monetaria de 1963 y la Ley 31 de 1992 reordenaron la autoridad del banco; en 1973 el Estado nacionalizó casi todo el capital. Esta vitrina documenta el medio peso oro de 1953 de la Tesorería (Pick 345b), serial C5256707, el 1 peso oro de 1945 (Pick 380d), el 1 peso oro de 1954 (Pick 380g), el 1 peso oro de 1959 (Pick 398), serial 60870843, el 1 peso oro de 1973 (Pick 404e) y el de 1974 (Pick 404e), el 10 pesos oro de 1943 (Pick 389b), el 2 pesos oro de 1944 (Pick 390b) y el de 1955 (Pick 390d), el 2 pesos oro de 1977 (Pick 413b), el 500 pesos oro de 1977 (Pick 420a / TBB B962a), serial 038064123, el espécimen de 5 pesos oro de 1960 (Pick 405s), de De La Rue, el 5 pesos oro de 1980 (Pick 406f / TBB B949p), serial 94658896, la reposición de 5 pesos oro de 1979 (Pick 406f; Hernández 156), serial 00141180, la reposición de 10 pesos oro de 1976 (Pick 407f / TBB B950kr), el 10 pesos oro de 1979 (Pick 407g), serial 98040194, el 20 pesos oro de 1983 (Pick 409d), serial 056462955, el 50 pesos oro de 1974 (Pick 414a / TBB B953b), serial 2467354822, el 50 pesos oro de 1984 (Pick 425a), serial 0001806322, el espécimen de 100 pesos oro de 1980 (Pick 418s), SPECIMEN Nº 027, el 100 pesos oro de 1980 (Pick 418b / TBB B958a), serial 08648220, el espécimen de 200 pesos oro de 1989 (Pick 429ds), control 499, el 1.000 pesos oro de 1979 (Pick 421a / TBB B963a), el espécimen de 2.000 pesos oro de 1983 (Pick 430as), impreso por Thomas De La Rue, el 5.000 pesos oro de 1992 (Pick 436A / TBB B974b), serial 46772124, el 5.000 pesos oro de 1993 (Pick 436A / TBB B974c), serial 82210365, el 10.000 pesos emberá de 1994 (Pick 437A / TBB B980az), una ficha con seriales estrella 00113227 y 00249902, y el 2.000 pesos de 2008 (Pick 457), serial capicúa binario 10000001.',
@@ -389,6 +389,31 @@ export const seriesCopy = {
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
     bancaLibreEssay: 'Leer el ensayo de la banca libre',
+    guidesTitle: 'Guías sobre billetes colombianos',
+    guidesLead:
+      'Notas de método y de historia para leer el papel colombiano de esta vitrina: valoración, pies de imprenta, iconografía y la banca libre.',
+    guides: [
+      {
+        href: '/blog/como-se-valora-un-billete-colombiano/',
+        title: 'Cómo se valora un billete colombiano',
+      },
+      {
+        href: '/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/',
+        title: 'Tres imprentas y el misterio del pie de imprenta',
+      },
+      {
+        href: '/blog/personajes-billetes-colombia/',
+        title: 'Personajes en los billetes colombianos',
+      },
+      {
+        href: '/blog/fidel-castro-en-billete-colombiano/',
+        title: 'Fidel Castro en el mil pesos de Gaitán',
+      },
+      {
+        href: '/blog/origenes-banca-comercial-colombia-banca-libre/',
+        title: 'Orígenes de la banca comercial: la banca libre',
+      },
+    ],
     methodTitle: 'Catalogación, impresión y conservación',
     methodLead:
       'Identificar un billete colombiano va más allá del retrato. Esta vitrina cruza pie de imprenta, reposición, grado y catálogos locales; el número Pick no basta.',
@@ -478,22 +503,22 @@ export const seriesCopy = {
       'Todos los billetes expuestos pertenecen a una colección privada, con fines de preservación y estudio. Ninguna de las piezas documentadas en este sitio está a la venta.',
   },
   en: {
-    metaTitle: 'Colombian banknotes | Notofilia',
+    metaTitle: 'Colombian Banknotes: Historical Catalogue 1812–Present | Notofilia',
     metaDescription:
-      'Catalog of Colombian paper money: independence issues, free banking, the Banco Nacional, and Banco de la República specimens and errors.',
-    kicker: 'Colombia · Notaphily',
-    title: 'Colombian banknotes',
-    eraSubtitle: 'Free banking, the Banco Nacional, and the Banco de la República',
+      'Catalogue of Colombian banknotes: free banking, Banco Nacional and Banco de la República issues, with proofs, specimens and replacement notes.',
+    kicker: 'Colombian Banknotes',
+    title: 'Colombian Banknotes',
+    eraSubtitle: 'Free banking and the Banco de la República',
     eraOpen: 'Open the case',
     eraEmpty: 'This case does not yet publish an example; the chapter is historical framing.',
     eraHoldings: 'Pieces from this era',
-    eraBack: 'Back to Colombian banknotes',
-    eraMetaTitle: (name: string) => `${name} · Colombian banknotes | Notofilia`,
+    eraBack: 'Back to Colombian Banknotes',
+    eraMetaTitle: (name: string) => `${name} · Colombian Banknotes | Notofilia`,
     heroAlt:
       'Vintage 3D relief map of Colombia on parchment, with Sierra Nevada, Santa Marta, Riohacha, Medellín and Bogotá, postage stamps, a passport, and the title Colombia',
     intro: [
-      'Welcome to the virtual case of Colombian notaphily. This collection documents the country’s paper money — from the emergency issues of independence through free banking to the consolidation of the Banco de la República — as records of monetary sovereignty, not as merchandise.',
-      'Paper money in Colombia was born from the urgency of independence, not from a central bank. Hernández (8th ed., 2023) lists first a 2-reales of 1812 printed at Mompós — the only example he records — then the 1-real of 1813; Banrepcultural’s encyclopedia identifies that Gutiérrez de Piñeres 1-real, signed by hand on ordinary paper. Cundinamarca followed the next year with treasury vales. Gran Colombia’s drafts, engraved by Peter Maverick in New York, were never issued. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
+      'Colombian banknotes were born from the urgency of independence, not from a central bank. This case documents those issues — from free banking to the consolidation of the Banco de la República — as records of monetary sovereignty, not as merchandise.',
+      'Hernández (8th ed., 2023) lists first a 2-reales of 1812 printed at Mompós — the only example he records — then the 1-real of 1813; Banrepcultural’s encyclopedia identifies that Gutiérrez de Piñeres 1-real, signed by hand on ordinary paper. Cundinamarca followed the next year with treasury vales. Gran Colombia’s drafts, engraved by Peter Maverick in New York, were never issued. A public used to gold and silver distrusted those papers. After the 1815 reconquest many were destroyed; survivors are extremely rare.',
       'The modern note arrived in the 1870s with free banking. Law 35 of 1865 opened convertible issue. The Banco de Bogotá was constituted on 15 November 1870 and was the first private issuer the market broadly accepted. Moving specie across the highlands was costly and dangerous; more than three dozen regional banks — Antioquia, Colombia, Bolívar, Medellín, Pamplona, the Norte, the Cauca, the Hipotecario, Riohacha — covered local credit with their own paper, fractionals included, engraved in New York and London. Those issues, with proofs and specimens, are the historical core of this case. Free banking opens with the ABNC proofs of the Banco Hipotecario of Bogotá (1881) and the Riohacha 5 pesos (1883).',
       'In 1880–1881, under Rafael Núñez’s Regeneración, the Banco Nacional was born (Law 39 of 1880): to handle state funds, issue notes, and lend to the treasury. At first it coexisted with private issues. In 1886 the government ended convertibility: Decree 104 and Law 87 made the paper peso the forced-tender monetary unit. Law 57 of 1887 suspended private banks’ right to issue while the Nacional held the exclusive privilege. A lax, untransparent issuing policy depreciated the bill; for those excesses, Law 70 of 1894 ordered the institute liquidated. Astrid Romero places the final closure on 1 January 1896. The Thousand Days’ War (1899–1902) set off another surge of unbacked paper — from the government and from regional commanders — and a devastating inflation. The Casa de Moneda Museum records Gobierno Provisional notes from Ocaña (1900) and Nacional overstamps on private paper. In 1909 the Conversion Board rated 100 paper pesos to 1 gold peso. Even in the early 1910s old Nacional bills were still in circulation. This case documents a one-peso cédula representativa of the Departamento del Tolima, Ibagué, September 1901, serial N.º 060.416, Series D (Hernández Cód. 1242).',
       'To stabilize the postwar economy, Rafael Reyes created the Banco Central de Colombia in 1905. It was a short-lived issuer: in 1909, after Reyes fell, its privilege of issue was withdrawn. It is not the bank of 1923. In 1922 the Conversion Board was authorized to overstamp treasury bonds (Law 5, Decree 165, deed 206) before the institute opened. Law 25 of 1923, the fruit of the Kemmerer Mission — the “money doctor” hired by Pedro Nel Ospina — created the Banco de la República with mixed capital, 10 million gold pesos, and the monopoly of legal-tender issue. A run on the Banco López brought the opening forward to 23 July 1923: Medellín gold certificates came by rail, flying boat, and train and were overstamped over a weekend as provisional notes. The first regular issues were engraved by the American Bank Note Company; the paper was called peso oro to signal convertibility. Gold convertibility ended in 1931. After the war with Peru (1932) pesos plata circulated. Thomas De La Rue printed at mid-century. On 23 October 1959 the Imprenta de Billetes opened in Bogotá, with the blue 1-peso (Pick 404). The 1963 Monetary Board and Law 31 of 1992 reordered the bank’s authority; in 1973 the state nationalized nearly all the capital. This case documents the 1953 Treasury ½ peso oro (Pick 345b), serial C5256707, the 1945 1 peso oro (Pick 380d), the 1954 1 peso oro (Pick 380g), the 1959 1 peso oro (Pick 398), serial 60870843, the 1973 1 peso oro (Pick 404e) and the 1974 (Pick 404e), the 1943 10 pesos oro (Pick 389b), the 1944 2 pesos oro (Pick 390b), the 1955 2 pesos oro (Pick 390d), the 1977 2 pesos oro (Pick 413b), the 1977 500 pesos oro (Pick 420a / TBB B962a), serial 038064123, the 1960 5 pesos oro specimen (Pick 405s), by De La Rue, the 1980 5 pesos oro (Pick 406f / TBB B949p), serial 94658896, the 1979 5 pesos oro replacement (Pick 406f; Hernández 156), serial 00141180, the 1976 10 pesos oro replacement (Pick 407f / TBB B950kr), the 1979 10 pesos oro (Pick 407g), serial 98040194, the 1983 20 pesos oro (Pick 409d), serial 056462955, the 1974 50 pesos oro (Pick 414a / TBB B953b), serial 2467354822, the 1984 50 pesos oro (Pick 425a), serial 0001806322, the 1980 100 pesos oro specimen (Pick 418s), SPECIMEN Nº 027, the 1980 100 pesos oro (Pick 418b / TBB B958a), serial 08648220, the 1989 200 pesos oro specimen (Pick 429ds), control 499, the 1979 1,000 pesos oro (Pick 421a / TBB B963a), the 1983 2,000 pesos oro specimen (Pick 430as), printed by Thomas De La Rue, the 1992 5,000 pesos oro (Pick 436A / TBB B974b), serial 46772124, the 1993 5,000 pesos oro (Pick 436A / TBB B974c), serial 82210365, the 1994 Emberá 10,000 pesos (Pick 437A / TBB B980az), one record with star serials 00113227 and 00249902, and the 2008 2,000 pesos (Pick 457) with binary radar serial 10000001.',
@@ -517,6 +542,31 @@ export const seriesCopy = {
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
     bancaLibreEssay: 'Read the free-banking essay',
+    guidesTitle: 'Guides to Colombian banknotes',
+    guidesLead:
+      'Method and history notes for reading the Colombian paper in this case: valuation, imprints, iconography, and free banking.',
+    guides: [
+      {
+        href: '/blog/como-se-valora-un-billete-colombiano/',
+        title: 'How Colombian banknotes are valued',
+      },
+      {
+        href: '/blog/tres-imprentas-misterio-pie-imprenta-billetes-colombianos/',
+        title: 'Three imprints and the Colombian banknote printer',
+      },
+      {
+        href: '/blog/personajes-billetes-colombia/',
+        title: 'Figures on Colombian banknotes',
+      },
+      {
+        href: '/blog/fidel-castro-en-billete-colombiano/',
+        title: 'Fidel Castro on the Gaitán 1,000-peso note',
+      },
+      {
+        href: '/blog/origenes-banca-comercial-colombia-banca-libre/',
+        title: 'Origins of commercial banking: free banking',
+      },
+    ],
     methodTitle: 'Cataloguing, printing, and conservation',
     methodLead:
       'Identifying a Colombian note goes beyond the portrait. This case crosses imprint, replacement, grade, and local catalogues; the Pick number is not enough.',
