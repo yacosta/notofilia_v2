@@ -54,18 +54,28 @@ describe('editorial SEO helpers', () => {
     assert.ok(article);
     assert.equal(article.slugEn, 'fidel-castro-on-colombian-1000-peso-note');
     assert.equal(article.title.es, 'Fidel Castro en el mil pesos de Gaitán');
-    assert.equal(article.image, '/uploads/fidel-castro-billete-1000-pesos.png');
-    assert.equal(article.imageWidth, 348);
-    assert.equal(article.imageHeight, 880);
-    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.image, '/images/hero-engraving-01.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 900);
+    assert.equal(article.imageFit, undefined);
     assert.equal(
-      existsSync(new URL('../../public/uploads/fidel-castro-billete-1000-pesos.png', import.meta.url)),
+      existsSync(new URL('../../public/images/hero-engraving-01.jpg', import.meta.url)),
       true,
     );
-    assert.equal(
-      existsSync(new URL('../../public/uploads/fidel-castro-billete-1000-pesos-card.png', import.meta.url)),
-      true,
+    assert.match(
+      readFileSync(new URL('../pages/index.astro', import.meta.url), 'utf8'),
+      /ogImage="\/images\/hero-engraving-01.jpg"/,
     );
+    assert.equal(
+      article.imageAlt.es,
+      'Grabado a talla dulce de Eva Perón con el brazo en alto ante una multitud, detalle de un billete argentino',
+    );
+    assert.equal(
+      article.imageAlt.en,
+      'Intaglio engraving of Eva Perón with her arm raised before a crowd, detail from an Argentine banknote',
+    );
+    assert.match(article.caption.es, /portada de Notofilia/);
+    assert.doesNotMatch(article.image, /fidel-castro-billete-1000-pesos/);
     assert.ok(article.primarySources?.length >= 8);
     const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
     assert.match(sourceUrls, /banrep\.gov\.co/);
@@ -80,9 +90,16 @@ describe('editorial SEO helpers', () => {
       assert.match(html, /José Antonio Suárez/);
       assert.match(html, /\/coleccion\/colombia\/1000-pesos-error-2000\//);
       assert.match(html, /banrep\.gov\.co/);
+      assert.match(html, /essay-lanes/);
+      assert.match(html, /essay-trio/);
+      assert.doesNotMatch(html, /fidel-castro-billete-1000-pesos/);
       assert.doesNotMatch(html, /wikipedia\.org/i);
       assert.doesNotMatch(html, /US\$0[.,]55|56 centavos|22 céntimos/i);
     }
+    assert.match(article.bodyHtml.es, /31 de marzo/);
+    assert.match(article.bodyHtml.es, /7 de abril/);
+    assert.match(article.bodyHtml.en, /31 March/);
+    assert.match(article.bodyHtml.en, /7 April/);
     assert.match(article.claim.noteEs, /2[.,]300 millones/);
     assert.match(article.claim.noteEs, /ensayo/);
   });
