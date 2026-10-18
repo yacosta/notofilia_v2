@@ -32,8 +32,12 @@ const enRoute = readFileSync(
 
 describe('Popayán Charles IV 1 escudo type page', () => {
   it('pairs the Spanish page with an English route and stays off the blog', () => {
-    assert.equal(popayan1EscudoCarlosIvCopy.es.title, '1 Escudo (Oro) – Carlos IV – Ceca de Popayán (1792–1808)');
-    assert.equal(popayan1EscudoCarlosIvCopy.en.title, '1 Escudo (Gold) – Charles IV – Popayán Mint (1792–1808)');
+    assert.equal(popayan1EscudoCarlosIvCopy.es.nav, 'Casa de Moneda de Popayán');
+    assert.equal(popayan1EscudoCarlosIvCopy.en.nav, 'The Popayán mint');
+    assert.equal(popayan1EscudoCarlosIvCopy.es.metaTitle, 'Casa de Moneda de Popayán');
+    assert.equal(popayan1EscudoCarlosIvCopy.en.metaTitle, 'The Popayán mint');
+    assert.equal(popayan1EscudoCarlosIvCopy.es.title, 'Casa de Moneda de Popayán');
+    assert.equal(popayan1EscudoCarlosIvCopy.en.title, 'The Popayán mint');
     assert.equal(popayan1EscudoCarlosIvPath('es'), POPAYAN_1_ESCUDO_CARLOS_IV_PATH);
     assert.equal(popayan1EscudoCarlosIvPath('en'), `/en${POPAYAN_1_ESCUDO_CARLOS_IV_PATH_EN}`);
     assert.equal(localizePath(POPAYAN_1_ESCUDO_CARLOS_IV_PATH, 'en'), `/en${POPAYAN_1_ESCUDO_CARLOS_IV_PATH_EN}`);

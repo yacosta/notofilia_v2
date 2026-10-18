@@ -436,9 +436,9 @@ export const megaNav: NavNode[] = [
             href: SANTA_FE_MINT_PATH,
           },
           {
-            id: '1-escudo-carlos-iv-popayan',
-            es: '1 escudo de Popayán, Carlos IV',
-            en: 'Popayán 1 escudo, Charles IV',
+            id: 'casa-de-moneda-popayan',
+            es: 'Casa de Moneda de Popayán',
+            en: 'The Popayán mint',
             href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
           },
           {
