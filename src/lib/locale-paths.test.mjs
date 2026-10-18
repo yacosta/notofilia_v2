@@ -772,6 +772,14 @@ describe('locale path mapping', () => {
       '/blog/cacique-calarca-trascendencia-numismatica/',
     );
     assert.equal(
+      localizePath('/blog/fidel-castro-en-billete-colombiano/', 'en'),
+      '/en/blog/fidel-castro-on-colombian-1000-peso-note/',
+    );
+    assert.equal(
+      otherLocalePath('/en/blog/fidel-castro-on-colombian-1000-peso-note/', 'en'),
+      '/blog/fidel-castro-en-billete-colombiano/',
+    );
+    assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),
       '/en/blog/best-coin-and-banknote-grading-companies/',
     );
@@ -891,6 +899,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/blog/cacique-calarca-trascendencia-numismatica/'],
       '/en/blog/cacique-calarca-numismatic-afterlife/',
+    );
+    assert.equal(
+      redirects['/en/blog/fidel-castro-en-billete-colombiano/'],
+      '/en/blog/fidel-castro-on-colombian-1000-peso-note/',
     );
     assert.equal(
       redirects['/en/coleccion/colombia/5000-pesos-error-2010/'],

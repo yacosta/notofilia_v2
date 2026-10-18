@@ -389,6 +389,26 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '5.000 pesos oro · 1993',
     en: '5,000 pesos oro · 1993',
   },
+  '/coleccion/colombia/1000-pesos-error-2000/': {
+    es: '1.000 pesos · error de corte · 2000',
+    en: '1,000 pesos · cutting error · 2000',
+  },
+  '/coleccion/colombia/1000-pesos-error-2011/': {
+    es: '1.000 pesos · error mariposa · 2011',
+    en: '1,000 pesos · butterfly error · 2011',
+  },
+  '/coleccion/colombia/': {
+    es: 'Colección de Colombia',
+    en: 'Colombia collection',
+  },
+  '/glosario/anverso/': {
+    es: 'Anverso',
+    en: 'Obverse',
+  },
+  '/glosario/reverso/': {
+    es: 'Reverso',
+    en: 'Reverse',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -483,6 +503,18 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/colombia/10000-pesos-1994/': {
     es: 'La ficha del tipo en la colección virtual: Pick 437A, seriales 00113227 y 00249902.',
     en: 'The type record in the virtual collection: Pick 437A, serials 00113227 and 00249902.',
+  },
+  '/coleccion/colombia/1000-pesos-error-2000/': {
+    es: 'Un mil de Gaitán en formato grande, con fecha 16 de agosto de 2000 y un corte descentrado.',
+    en: 'A large-format Gaitán one-thousand, dated 16 August 2000, with an off-center cut.',
+  },
+  '/coleccion/colombia/1000-pesos-error-2011/': {
+    es: 'Un mil de Gaitán reducido, fecha 10 de junio de 2011, con error de corte en mariposa.',
+    en: 'A reduced Gaitán one-thousand, dated 10 June 2011, with a butterfly cutting error.',
+  },
+  '/coleccion/colombia/': {
+    es: 'La vitrina de papel colombiano, de la independencia a las familias modernas.',
+    en: 'The Colombian paper case, from independence to the modern families.',
   },
   '/coleccion/colombia-numismatica/': {
     es: 'La vitrina de moneda metálica colombiana, de las macuquinas al peso actual.',
