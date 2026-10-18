@@ -1,6 +1,6 @@
 import type { CatalogSource, LocalizedText } from './catalog.ts';
 import type { ColombiaChapterId } from './colombia.ts';
-import { COLOMBIA_PATH, colombiaChapters, seriesCopy } from './colombia.ts';
+import { COLOMBIA_PATH, seriesCopy } from './colombia.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 
 export type ColombiaNoteId =
@@ -4892,8 +4892,8 @@ export const colombiaNotes: ColombiaNote[] = [
 
 export const notePageCopy = {
   es: {
-    seriesLink: 'Colombia · Banca libre',
-    collectionLink: 'Colombia',
+    seriesLink: 'Billetes de Colombia',
+    collectionLink: 'Billetes de Colombia',
     frontHeading: 'Anverso',
     backHeading: 'Reverso',
     aboutHeading: 'La pieza',
@@ -4915,8 +4915,8 @@ export const notePageCopy = {
     closeLightbox: 'Cerrar',
   },
   en: {
-    seriesLink: 'Colombia · Free banking',
-    collectionLink: 'Colombia',
+    seriesLink: 'Colombian Banknotes',
+    collectionLink: 'Colombian Banknotes',
     frontHeading: 'Face',
     backHeading: 'Back',
     aboutHeading: 'The note',
@@ -5246,13 +5246,8 @@ export function seriesCardGroupsForChapter(chapterId: ColombiaChapterId): Colomb
     });
 }
 
-export function noteSeriesLabel(note: ColombiaNote, locale: 'es' | 'en'): string {
-  if (note.chapterId === 'errores') {
-    return `Colombia · ${seriesCopy[locale].errorsTitle}`;
-  }
-  const chapter = colombiaChapters.find((entry) => entry.id === note.chapterId);
-  const era = chapter?.title[locale] ?? 'Colombia';
-  return `Colombia · ${era}`;
+export function noteSeriesLabel(_note: ColombiaNote, locale: 'es' | 'en'): string {
+  return seriesCopy[locale].title;
 }
 
 export const colombiaNoteSlugs = colombiaNotes.map((note) => note.path.replace(/^\/|\/$/g, ''));

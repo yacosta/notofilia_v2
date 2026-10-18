@@ -81,7 +81,7 @@ const jsonLd = collectionPageJsonLd({
         locale={locale}
         items={[
           { href: localizePath('/', locale), label: copy[locale].home },
-          { label: t.kicker },
+          { label: t.title },
         ]}
       />
 
@@ -381,6 +381,30 @@ const jsonLd = collectionPageJsonLd({
           </p>
           <p class="mb-0 mt-0 text-[17px]/7 text-muted">{t.disclaimer}</p>
         </section>
+      </section>
+
+      <section id="guias" class="mt-16 scroll-mt-28" aria-labelledby="guias-heading">
+        <h2
+          id="guias-heading"
+          class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+        >
+          {t.guidesTitle}
+        </h2>
+        <p class="mb-6 mt-0 text-[17px]/7 text-muted">{t.guidesLead}</p>
+        <ul class="m-0 list-none space-y-3 p-0">
+          {
+            t.guides.map((guide) => (
+              <li>
+                <a
+                  class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                  href={localizePath(guide.href, locale)}
+                >
+                  {guide.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </section>
 
       <FaqBlock heading={copy[locale].faqHeading} items={faqItems} />

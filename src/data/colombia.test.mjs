@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { chapterBySlug, colombiaChapters, eraPath, seriesCopy } from './colombia.ts';
-import { notesForChapter } from './colombia-notes.ts';
+import { noteSeriesLabel, notesForChapter } from './colombia-notes.ts';
 
 const pageSource = readFileSync(
   new URL('../components/catalog/ColombiaSeriesPage.astro', import.meta.url),
@@ -28,8 +28,24 @@ describe('Colombia series overview', () => {
   });
 
   it('keeps a bilingual cataloguing method block on the series page', () => {
-    assert.match(seriesCopy.es.intro[0], /Bienvenido a la vitrina virtual/);
-    assert.match(seriesCopy.en.intro[0], /Welcome to the virtual case/);
+    assert.match(seriesCopy.es.intro[0], /^Los billetes de Colombia nacieron/);
+    assert.match(seriesCopy.en.intro[0], /^Colombian banknotes were born/);
+    assert.equal(
+      seriesCopy.es.metaTitle,
+      'Billetes de Colombia: catálogo histórico 1812–hoy | Notofilia',
+    );
+    assert.equal(
+      seriesCopy.en.metaTitle,
+      'Colombian Banknotes: Historical Catalogue 1812–Present | Notofilia',
+    );
+    assert.equal(seriesCopy.es.title, 'Billetes de Colombia');
+    assert.equal(seriesCopy.en.title, 'Colombian Banknotes');
+    assert.match(seriesCopy.es.metaDescription, /Catálogo de billetes de Colombia/);
+    assert.match(seriesCopy.en.metaDescription, /Catalogue of Colombian banknotes/);
+    assert.equal(seriesCopy.es.guides.length, 5);
+    assert.equal(seriesCopy.en.guides.length, 5);
+    assert.match(pageSource, /label: t\.title/);
+    assert.match(pageSource, /id="guias"/);
     assert.equal(seriesCopy.es.imprintItems.length, 3);
     assert.equal(seriesCopy.en.printersRows.length, 4);
     assert.match(seriesCopy.es.disclaimer, /está a la venta/);
@@ -71,5 +87,16 @@ describe('Colombia series overview', () => {
     assert.match(seriesCopy.en.intro.join(' '), /No\. 2380/);
     assert.match(seriesCopy.es.intro.join(' '), /serial fancy AA40000066/);
     assert.match(seriesCopy.en.intro.join(' '), /fancy serial AA40000066/);
+  });
+
+  it('names the hub Billetes de Colombia on note breadcrumbs', () => {
+    const note = notesForChapter('banco-de-la-republica')[0];
+    assert.ok(note);
+    assert.equal(noteSeriesLabel(note, 'es'), 'Billetes de Colombia');
+    assert.equal(noteSeriesLabel(note, 'en'), 'Colombian Banknotes');
+    assert.equal(
+      colombiaChapters.find((entry) => entry.id === 'banca-libre')?.title.es,
+      'Banca libre: los billetes de bancos regionales',
+    );
   });
 });

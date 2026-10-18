@@ -38,6 +38,10 @@ export const copy = {
     heroTitle: 'Una colección privada de billetes y monedas históricas',
     heroLead:
       'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, Colombia, los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
+    heroLeadBefore:
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, ',
+    heroColombiaAnchor: 'billetes de Colombia',
+    heroLeadAfter: ', los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
     heroSecondary: 'Explorar la colección',
     statsLabel: 'Estadísticas de la colección',
     browseTitle: 'Explorar Colección Virtual',
@@ -140,6 +144,10 @@ export const copy = {
     heroTitle: 'A private collection of historical banknotes and coins',
     heroLead:
       'Detailed images, catalog references, and monetary histories from the Philippines, China, Colombia, the Netherlands, the United States, Puerto Rico, and beyond.',
+    heroLeadBefore:
+      'Detailed images, catalog references, and monetary histories from the Philippines, China, ',
+    heroColombiaAnchor: 'Colombian banknotes',
+    heroLeadAfter: ', the Netherlands, the United States, Puerto Rico, and beyond.',
     heroSecondary: 'Explore the collection',
     statsLabel: 'Collection statistics',
     browseTitle: 'Explore Virtual Collection',

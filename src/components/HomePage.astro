@@ -10,6 +10,7 @@ import {
   NOTAFILIA_NOTES_CATALOG_PATH,
   type Locale,
 } from '../lib/site';
+import { COLOMBIA_PATH } from '../data/colombia';
 import { heroSizes, heroSrc, heroSrcset } from '../lib/hero';
 
 interface Props {
@@ -64,7 +65,14 @@ const featuredNews = news.slice(0, 6);
         {t.heroTitle}
       </h1>
       <p class="mb-0 mt-4 max-w-[42rem] font-sans text-[17px]/7 text-[#d8d2cd]">
-        {t.heroLead}
+        {t.heroLeadBefore}
+        <a
+          class="text-[#e7ddc4] underline decoration-[#e7dec98c] hover:text-cream"
+          href={localizePath(COLOMBIA_PATH, locale)}
+        >
+          {t.heroColombiaAnchor}
+        </a>
+        {t.heroLeadAfter}
       </p>
       <p class="mb-0 mt-4 max-w-[42rem] font-sans text-[17px]/7 text-[#d8d2cd]">
         {t.entityStatement}

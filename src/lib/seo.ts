@@ -158,7 +158,7 @@ const extraHighValuePages = [
 
 /** Country and discipline catalogues for /llms.txt (locale-agnostic endpoint). */
 export const llmsCountryCatalogues = [
-  { href: COLOMBIA_PATH, es: 'Colombia (papel moneda)', en: 'Colombia (paper money)' },
+  { href: COLOMBIA_PATH, es: 'Billetes de Colombia', en: 'Colombian banknotes' },
   { href: COLOMBIA_COINAGE_PATH, es: 'Colombia (numismática)', en: 'Colombia (numismatics)' },
   { href: SPAIN_COINAGE_PATH, es: 'España (numismática)', en: 'Spain (numismatics)' },
   { href: USA_PATH, es: 'Estados Unidos', en: 'United States' },
