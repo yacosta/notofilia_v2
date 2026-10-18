@@ -18,6 +18,7 @@ import {
   popayan1EscudoCarlosIvCopy,
   popayan1EscudoCarlosIvPath,
 } from '../../data/popayan-1-escudo-carlos-iv';
+import { SANTA_FE_MINT_HOLDING_IDS, santaFeMintCopy, santaFeMintPath } from '../../data/santa-fe-mint';
 import PieceSiblings from './PieceSiblings.astro';
 import SourceList from './SourceList.astro';
 import NoteImageLightbox from './NoteImageLightbox.astro';
@@ -156,6 +157,18 @@ const jsonCrumbs = [
           {t.aboutHeading}
         </h2>
         <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(piece.description[locale], locale)} />
+        {
+          (SANTA_FE_MINT_HOLDING_IDS as readonly string[]).includes(piece.id) ? (
+            <p class="mb-0 mt-4 text-[17px]/7">
+              <a
+                href={santaFeMintPath(locale)}
+                class="text-gold-light underline decoration-line-strong hover:text-cream"
+              >
+                {santaFeMintCopy[locale].coinLink}
+              </a>
+            </p>
+          ) : null
+        }
         {
           (POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS as readonly string[]).includes(piece.id) ? (
             <p class="mb-0 mt-4 text-[17px]/7">

@@ -30,6 +30,7 @@ import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
 } from '../data/popayan-1-escudo-carlos-iv';
+import { SANTA_FE_MINT_PATH, santaFeMintCopy } from '../data/santa-fe-mint';
 import { WWII_EMERGENCY_PATH, wwiiEmergencyCopy } from '../data/wwii-emergency-banknotes';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
 import { mpcVietnamNotes } from '../data/mpc-vietnam';
@@ -522,6 +523,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       dek: { es: silverEagleSeriesCopy.es.metaDescription, en: silverEagleSeriesCopy.en.metaDescription },
       extra:
         'American Silver Eagle 1986 2026 Walking Liberty Adolph Weinman John Mercanti Emily Damstra Michael Gaudioso Liberty Coin Act onza troy .999 West Point bullion proof burnished KM 273 KM 746',
+    },
+    {
+      href: SANTA_FE_MINT_PATH,
+      title: { es: santaFeMintCopy.es.nav, en: santaFeMintCopy.en.nav },
+      dek: {
+        es: santaFeMintCopy.es.metaDescription,
+        en: santaFeMintCopy.en.metaDescription,
+      },
+      extra:
+        'Casa de Moneda Santa Fe Nuevo Reino Bogotá NR RN SF BA Turrillo Solís Candelaria macuquina cob 1620 1621 1756 1987 Ibagué',
     },
     {
       href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,

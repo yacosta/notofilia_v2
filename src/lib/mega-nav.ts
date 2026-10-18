@@ -53,6 +53,7 @@ import { EDUCATIONAL_SERIES_PATH, educationalSeriesCopy } from '../data/educatio
 import { LAZARETTOS_NUMISMATICS_PATH } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH } from '../data/coscojas-santander';
 import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from '../data/popayan-1-escudo-carlos-iv';
+import { SANTA_FE_MINT_PATH } from '../data/santa-fe-mint';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
@@ -428,6 +429,12 @@ export const megaNav: NavNode[] = [
         href: COLOMBIA_COINAGE_PATH,
         flag: 'co',
         children: [
+          {
+            id: 'casa-de-moneda-santa-fe',
+            es: 'Casa de Moneda de Santa Fe',
+            en: 'The Santa Fe mint',
+            href: SANTA_FE_MINT_PATH,
+          },
           {
             id: '1-escudo-carlos-iv-popayan',
             es: '1 escudo de Popayán, Carlos IV',
