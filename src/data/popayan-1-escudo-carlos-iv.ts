@@ -86,16 +86,16 @@ export type PopayanEscudoCopy = {
 
 export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
   es: {
-    nav: '1 escudo de Popayán, Carlos IV',
+    nav: 'Casa de Moneda de Popayán',
     home: 'Inicio',
     numismatica: 'Numismática',
     series: 'Colombia-Numismática',
     breadcrumb: 'Migas de pan',
-    metaTitle: '1 escudo de Popayán, Carlos IV, 1792–1808',
+    metaTitle: 'Casa de Moneda de Popayán',
     metaDescription:
       'El 1 escudo de oro de Carlos IV, ceca de Popayán (P), 1792–1808: KM# 56.2, Hernández 688 y Fr# 59. Esta vitrina guarda los discos P–JF de 1795, 1800, 1801, 1806 y 1808. Sin precios.',
     kicker: 'Colombia-Numismática · oro colonial',
-    title: '1 Escudo (Oro) – Carlos IV – Ceca de Popayán (1792–1808)',
+    title: 'Casa de Moneda de Popayán',
     lead:
       'Un escudo de oro de la casa de Popayán, marca P, labrado a nombre de Carlos IV. Sigue a las emisiones de transición que aún llevaban el busto de Carlos III.',
     published: '2026-10-12',
@@ -215,20 +215,20 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     relatedHref: '/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/',
     sourcesTitle: 'Fuentes',
     backSeries: 'Volver a Colombia-Numismática',
-    coinLink: 'El tipo, de 1792 a 1808, está en su propia página.',
-    chapterLink: 'Leer el 1 escudo de Popayán de Carlos IV (1792–1808)',
+    coinLink: 'La Casa de Moneda de Popayán tiene su propia página.',
+    chapterLink: 'Leer la Casa de Moneda de Popayán',
   },
   en: {
-    nav: 'Popayán 1 escudo, Charles IV',
+    nav: 'The Popayán mint',
     home: 'Home',
     numismatica: 'Numismatics',
     series: 'Colombia-Numismatics',
     breadcrumb: 'Breadcrumb',
-    metaTitle: 'Popayán 1 escudo, Charles IV, 1792–1808',
+    metaTitle: 'The Popayán mint',
     metaDescription:
       'Charles IV’s gold 1 escudo, Popayán mint (P), 1792–1808: KM# 56.2, Hernández 688, and Fr# 59. This case holds the 1795, 1800, 1801, 1806, and 1808 P–JF discs. No prices.',
     kicker: 'Colombia-Numismatics · colonial gold',
-    title: '1 Escudo (Gold) – Charles IV – Popayán Mint (1792–1808)',
+    title: 'The Popayán mint',
     lead:
       'A gold escudo of the Popayán mint, mark P, struck in the name of Charles IV. It follows the transitional issues that still bore the bust of Charles III.',
     published: '2026-10-12',
@@ -348,8 +348,8 @@ export const popayan1EscudoCarlosIvCopy: Record<Locale, PopayanEscudoCopy> = {
     relatedHref: '/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/',
     sourcesTitle: 'Sources',
     backSeries: 'Back to Colombia-Numismatics',
-    coinLink: 'The type, from 1792 to 1808, has its own page.',
-    chapterLink: 'Read the Popayán 1 escudo of Charles IV (1792–1808)',
+    coinLink: 'The Popayán mint has its own page.',
+    chapterLink: 'Read the Popayán mint',
   },
 };
 

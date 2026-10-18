@@ -295,7 +295,9 @@ describe('Colombia visual catalogs', () => {
     const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'es-monedas'")[0] ?? '';
     assert.match(colombiaBlock, /id: 'casa-de-moneda-santa-fe'/);
     assert.match(colombiaBlock, /href: SANTA_FE_MINT_PATH/);
-    assert.match(colombiaBlock, /id: '1-escudo-carlos-iv-popayan'/);
+    assert.match(colombiaBlock, /id: 'casa-de-moneda-popayan'/);
+    assert.match(colombiaBlock, /es: 'Casa de Moneda de Popayán'/);
+    assert.match(colombiaBlock, /en: 'The Popayán mint'/);
     assert.match(colombiaBlock, /href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH/);
     assert.match(colombiaBlock, /id: 'coscojas-de-santander'/);
     assert.match(colombiaBlock, /href: COSCOJAS_SANTANDER_PATH/);

@@ -145,8 +145,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -286,8 +286,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -443,8 +443,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -575,8 +575,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -721,8 +721,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -834,8 +834,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
@@ -975,8 +975,8 @@ export const colombiaCoinagePieces: ColombiaCoinagePiece[] = orderSantaFeHolding
       {
         href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
         label: {
-          es: '1 escudo de Popayán, Carlos IV (1792–1808)',
-          en: 'Popayán 1 escudo, Charles IV (1792–1808)',
+          es: 'Casa de Moneda de Popayán',
+          en: 'The Popayán mint',
         },
       },
       {
