@@ -113,6 +113,13 @@ describe('Colombia coinage guide', () => {
     assert.match(pageSource, /t\.escudoLead/);
   });
 
+  it('points the Santa Fe mint page from the series copy', () => {
+    assert.match(coinageCopy.es.santaFeMintLead, /Casa de Moneda de Santa Fe/);
+    assert.match(coinageCopy.en.santaFeMintLead, /Santa Fe de Nuevo Reino/);
+    assert.match(pageSource, /SANTA_FE_MINT_PATH/);
+    assert.match(pageSource, /t\.santaFeMintLead/);
+  });
+
   it('dates the page and says KM opens the coin reference', () => {
     assert.equal(coinageCopy.es.updated, '2026-10-17');
     assert.equal(coinageCopy.es.updatedDate, '17 de octubre de 2026');

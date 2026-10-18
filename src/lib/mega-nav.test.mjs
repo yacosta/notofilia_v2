@@ -293,6 +293,8 @@ describe('Colombia visual catalogs', () => {
     assert.doesNotMatch(numismatica, /Catálogo visual de monedas/);
     assert.doesNotMatch(numismatica, /Visual coin catalog/);
     const colombiaBlock = numismatica.split("id: 'colombia-monedas'")[1]?.split("id: 'es-monedas'")[0] ?? '';
+    assert.match(colombiaBlock, /id: 'casa-de-moneda-santa-fe'/);
+    assert.match(colombiaBlock, /href: SANTA_FE_MINT_PATH/);
     assert.match(colombiaBlock, /id: '1-escudo-carlos-iv-popayan'/);
     assert.match(colombiaBlock, /href: POPAYAN_1_ESCUDO_CARLOS_IV_PATH/);
     assert.match(colombiaBlock, /id: 'coscojas-de-santander'/);

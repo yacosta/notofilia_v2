@@ -62,6 +62,8 @@ The American Silver Eagle series page (`UnitedStatesSilverEagleSeriesPage.astro`
 
 The Popayán Charles IV 1 escudo type page (`PopayanCharlesIvEscudoPage.astro`) uses the same text header until a finished poster exists. Do not invent a coin photograph for that hero.
 
+The Casa de Moneda de Santa Fe de Nuevo Reino page (`SantaFeMintPage.astro`) uses the same text header until a finished poster exists. Do not invent a coin photograph for that hero.
+
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `editorialUploadSrcset` for `/uploads/` files. That is not a hero.
 
 A `wide` editorial article is a documented exception: the article case is `max-w-content` plus `--page-gutter`, and the figure is a full-column in-flow image (`object-contain`, intrinsic size). Editorial `/uploads/` figures use `editorialUploadSrcset` (the `-card` sibling plus the master) so the image still loads when `/cdn-cgi/image/` is unavailable on preview Workers. Do not invent a fifth full-bleed photo hero.
