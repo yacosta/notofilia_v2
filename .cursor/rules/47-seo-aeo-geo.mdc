@@ -1,0 +1,40 @@
+---
+description: >-
+  Notofilia SEO, answer-engine, and generative-engine work. Read
+  .cursor/skills/notofilia-seo/SKILL.md for titles, meta, hreflang, sitemap,
+  robots, IndexNow, cache, and the dist audit. Read
+  .cursor/skills/notofilia-aeo/SKILL.md for direct answers, Speakable,
+  DefinedTerm, citations, and news schema. Read
+  .cursor/skills/notofilia-geo/SKILL.md for llms.txt, catalogue-summary JSON,
+  and Organization/Person sameAs. Copy voice stays in
+  .cursor/skills/notofilia-bilingual-author/SKILL.md.
+globs:
+  - src/lib/seo.ts
+  - src/lib/piece-seo.ts
+  - src/lib/json-ld.ts
+  - src/pages/sitemap.xml.ts
+  - src/pages/llms.txt.ts
+  - src/layouts/Layout.astro
+  - public/_headers
+  - public/robots.txt
+  - public/_redirects
+  - scripts/indexnow.mjs
+  - scripts/seo/**/*
+  - scripts/seo-audit.mjs
+  - scripts/purge-cache.mjs
+  - docs/seo/**/*
+  - .cursor/skills/notofilia-seo/**/*
+  - .cursor/skills/notofilia-aeo/**/*
+  - .cursor/skills/notofilia-geo/**/*
+alwaysApply: false
+---
+
+# SEO, AEO, and GEO
+
+When the task changes discoverability, answers, or machine-readable exports, read the matching skill before editing:
+
+- **SEO** — `.cursor/skills/notofilia-seo/SKILL.md`
+- **AEO** — `.cursor/skills/notofilia-aeo/SKILL.md`
+- **GEO** — `.cursor/skills/notofilia-geo/SKILL.md`
+
+Shared limits: no prices or invented facts; `TODO(owner)` never renders; Spanish URLs are canonical `x-default`; keep JSON-LD `@id` values `#website`, `#organization`, and `#yezid-acosta`. Page-type schema in `.cursor/rules/10-page-types.mdc` wins over a second copy of the same graph.
