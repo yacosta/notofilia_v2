@@ -7,7 +7,7 @@ import { navColumns } from './nav-columns.ts';
 
 register(new URL('./resolve-ts-hook.mjs', import.meta.url));
 
-const { megaNav } = await import('./mega-nav.ts');
+const { megaNav, shellMegaNav } = await import('./mega-nav.ts');
 const { USA_MORGAN_PATH, USA_SILVER_EAGLE_PATH, morganOriginalRunCoins } = await import(
   '../data/estados-unidos-coinage.ts'
 );
@@ -715,5 +715,28 @@ describe('footer links from mega-nav', () => {
       { es: 'Guatemala', en: 'Guatemala', href: '/coleccion/guatemala/' },
     ]);
     assert.equal(links.filter((item) => item.href === '/coleccion/guatemala/').length, 1);
+  });
+});
+
+describe('header shell nav', () => {
+  function hrefs(nodes) {
+    const found = [];
+    for (const node of nodes) {
+      if (node.href) found.push(node.href);
+      if (node.children) found.push(...hrefs(node.children));
+    }
+    return found;
+  }
+
+  it('keeps catalogue indexes and drops individual holdings', () => {
+    const shell = shellMegaNav(megaNav);
+    const links = hrefs(shell);
+    assert.ok(links.includes('/coleccion/notafilia/catalogo/') || links.some((href) => href.endsWith('/catalogo/')));
+    assert.ok(links.includes('/coleccion/colombia/'));
+    assert.ok(links.includes('/coleccion/colombia/banca-libre/'));
+    assert.equal(links.includes('/coleccion/colombia/1-peso-oro-1959-1977/'), false);
+    assert.equal(links.some((href) => href.includes('1-peso-oro-1959-1977')), false);
+    const full = hrefs(megaNav);
+    assert.ok(full.some((href) => href.includes('1-peso-oro-1959-1977')));
   });
 });

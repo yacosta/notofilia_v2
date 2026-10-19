@@ -85,6 +85,8 @@ export type NavNode = {
   column?: 'main' | 'aside' | 'peer';
   /** Lay out this item's child links in a single desktop row (Recursos). */
   layout?: 'horizontal';
+  /** Individual banknote or coin. Omitted from the server-rendered header. */
+  holding?: boolean;
   children?: NavNode[];
 };
 
@@ -220,6 +222,7 @@ export const megaNav: NavNode[] = [
             es: 'Banco de la República - 1 peso (1959 - 1977)',
             en: 'Banco de la República - 1 peso (1959 - 1977)',
             href: colombia1PesoBanRep.path,
+            holding: true,
           },
           {
             id: 'emisiones-extranjero-guatemala',
@@ -248,6 +251,7 @@ export const megaNav: NavNode[] = [
               es: note.title.es,
               en: note.title.en,
               href: note.path,
+              holding: true,
             })),
           },
           {
@@ -261,6 +265,7 @@ export const megaNav: NavNode[] = [
               es: note.title.es,
               en: note.title.en,
               href: note.path,
+              holding: true,
             })),
           },
           {
@@ -281,6 +286,7 @@ export const megaNav: NavNode[] = [
                       es: note.title.es,
                       en: note.title.en,
                       href: note.path,
+                      holding: true,
                     },
                   ]
                 : [],
@@ -467,12 +473,14 @@ export const megaNav: NavNode[] = [
             es: spainTwoEscudos.title.es,
             en: spainTwoEscudos.title.en,
             href: spainTwoEscudos.path,
+            holding: true,
           },
           {
             id: 'es-medio-escudo-madrid-1757-jb',
             es: spainHalfEscudo.title.es,
             en: spainHalfEscudo.title.en,
             href: spainHalfEscudo.path,
+            holding: true,
           },
         ],
       },
@@ -494,24 +502,28 @@ export const megaNav: NavNode[] = [
                 es: usHt34.title.es,
                 en: usHt34.title.en,
                 href: usHt34.path,
+                holding: true,
               },
               {
                 id: 'us-ht-181-c1835-john-j-adams',
                 es: usHt181.title.es,
                 en: usHt181.title.en,
                 href: usHt181.path,
+                holding: true,
               },
               {
                 id: 'us-ht-10a-1834-jabali',
                 es: usHt10a.title.es,
                 en: usHt10a.title.en,
                 href: usHt10a.path,
+                holding: true,
               },
               {
                 id: 'us-ht-16-1841-daniel-webster',
                 es: usHt16.title.es,
                 en: usHt16.title.en,
                 href: usHt16.path,
+                holding: true,
               },
             ],
           },
@@ -520,6 +532,7 @@ export const megaNav: NavNode[] = [
             es: usSteamMedal.title.es,
             en: usSteamMedal.title.en,
             href: usSteamMedal.path,
+            holding: true,
           },
           {
             id: 'us-quarter-eagle-liberty-head-1840-1907',
@@ -531,6 +544,7 @@ export const megaNav: NavNode[] = [
                 es: usQuarterEagle1878.title.es,
                 en: usQuarterEagle1878.title.en,
                 href: usQuarterEagle1878.path,
+                holding: true,
               },
             ],
           },
@@ -545,12 +559,14 @@ export const megaNav: NavNode[] = [
                 es: usQuarterEagle1908.title.es,
                 en: usQuarterEagle1908.title.en,
                 href: usQuarterEagle1908.path,
+                holding: true,
               },
               {
                 id: 'us-2-50-dolares-1912-indian-head',
                 es: usQuarterEagle1912.title.es,
                 en: usQuarterEagle1912.title.en,
                 href: usQuarterEagle1912.path,
+                holding: true,
               },
             ],
           },
@@ -559,6 +575,7 @@ export const megaNav: NavNode[] = [
             es: usGoldDollar1856.title.es,
             en: usGoldDollar1856.title.en,
             href: usGoldDollar1856.path,
+            holding: true,
           },
           {
             id: 'us-dolares-morgan-emision-original',
@@ -570,6 +587,7 @@ export const megaNav: NavNode[] = [
               es: coin.title.es,
               en: coin.title.en,
               href: coin.path,
+              holding: true,
             })),
           },
           {
@@ -582,6 +600,7 @@ export const megaNav: NavNode[] = [
               es: coin.title.es,
               en: coin.title.en,
               href: coin.path,
+              holding: true,
             })),
           },
           {
@@ -589,6 +608,7 @@ export const megaNav: NavNode[] = [
             es: usTrumpDollar.title.es,
             en: usTrumpDollar.title.en,
             href: usTrumpDollar.path,
+            holding: true,
           },
         ],
       },
@@ -613,12 +633,14 @@ export const megaNav: NavNode[] = [
             es: puertoRico20Centavos.title.es,
             en: puertoRico20Centavos.title.en,
             href: puertoRico20Centavos.path,
+            holding: true,
           },
           {
             id: 'pr-10-centavos-alfonso-xiii-pgv',
             es: puertoRico10Centavos.title.es,
             en: puertoRico10Centavos.title.en,
             href: puertoRico10Centavos.path,
+            holding: true,
           },
         ],
       },
@@ -635,6 +657,7 @@ export const megaNav: NavNode[] = [
             es: liberia20Dollars.title.es,
             en: liberia20Dollars.title.en,
             href: liberia20Dollars.path,
+            holding: true,
           },
         ],
       },
@@ -671,6 +694,17 @@ export const megaNav: NavNode[] = [
     href: CONTACT_PATH,
   },
 ];
+
+/** Header nav: hubs and catalogue indexes. Piece-level leaves stay on the hub pages. */
+/** Header nav keeps hubs and catalogue indexes. `holding` leaves stay on their hub pages. */
+export function shellMegaNav(nodes: NavNode[]): NavNode[] {
+  return nodes.flatMap((node) => {
+    if (node.holding) return [];
+    const children = node.children ? shellMegaNav(node.children) : undefined;
+    if (!node.href && (!children || children.length === 0)) return [];
+    return [{ ...node, children: children?.length ? children : undefined }];
+  });
+}
 
 export const primaryNav = megaNav.map(({ href, es, en }) => ({
   href: href ?? '#',
