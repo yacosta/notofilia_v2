@@ -350,9 +350,9 @@ export const seriesSources: CatalogSource[] = [
 
 export const seriesCopy = {
   es: {
-    metaTitle: 'Billetes de Colombia: catálogo histórico 1812–hoy | Notofilia',
+    metaTitle: 'Billetes de Colombia: notafilia, 1812–hoy | Notofilia',
     metaDescription:
-      'Catálogo de billetes de Colombia: banca libre, Banco Nacional y Banco de la República, con pruebas, especímenes y reposiciones documentados.',
+      'Catálogo de notafilia de Colombia: banca libre, Banco Nacional y Banco de la República, con pruebas, especímenes y reposiciones.',
     kicker: 'Billetes de Colombia',
     title: 'Billetes de Colombia',
     eraSubtitle: 'Banca libre y Banco de la República',
@@ -503,9 +503,9 @@ export const seriesCopy = {
       'Todos los billetes expuestos pertenecen a una colección privada, con fines de preservación y estudio. Ninguna de las piezas documentadas en este sitio está a la venta.',
   },
   en: {
-    metaTitle: 'Colombian Banknotes: Historical Catalogue 1812–Present | Notofilia',
+    metaTitle: 'Colombian banknotes: notaphily since 1812 | Notofilia',
     metaDescription:
-      'Catalogue of Colombian banknotes: free banking, Banco Nacional and Banco de la República issues, with proofs, specimens and replacement notes.',
+      'Notaphily catalogue of Colombian banknotes: free banking, Banco Nacional and Banco de la República, with proofs, specimens and replacements.',
     kicker: 'Colombian Banknotes',
     title: 'Colombian Banknotes',
     eraSubtitle: 'Free banking and the Banco de la República',

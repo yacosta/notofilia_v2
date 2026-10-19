@@ -32,16 +32,16 @@ describe('Colombia series overview', () => {
     assert.match(seriesCopy.en.intro[0], /^Colombian banknotes were born/);
     assert.equal(
       seriesCopy.es.metaTitle,
-      'Billetes de Colombia: catálogo histórico 1812–hoy | Notofilia',
+      'Billetes de Colombia: notafilia, 1812–hoy | Notofilia',
     );
     assert.equal(
       seriesCopy.en.metaTitle,
-      'Colombian Banknotes: Historical Catalogue 1812–Present | Notofilia',
+      'Colombian banknotes: notaphily since 1812 | Notofilia',
     );
     assert.equal(seriesCopy.es.title, 'Billetes de Colombia');
     assert.equal(seriesCopy.en.title, 'Colombian Banknotes');
-    assert.match(seriesCopy.es.metaDescription, /Catálogo de billetes de Colombia/);
-    assert.match(seriesCopy.en.metaDescription, /Catalogue of Colombian banknotes/);
+    assert.match(seriesCopy.es.metaDescription, /notafilia/);
+    assert.match(seriesCopy.en.metaDescription, /Notaphily/);
     assert.equal(seriesCopy.es.guides.length, 5);
     assert.equal(seriesCopy.en.guides.length, 5);
     assert.match(pageSource, /label: t\.title/);
