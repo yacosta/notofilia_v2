@@ -149,7 +149,9 @@ function extraAstroPageFiles(): number {
 }
 
 function publicPageCount(): number {
-  return BASELINE.pages + Math.max(0, uniqueContentSlugs().size - SEED_CONTENT_SLUGS) + extraAstroPageFiles();
+  const slugs = new Set(dedicatedEs.filter((slug) => slug !== 'buscar' && slug !== 'search'));
+  // One home URL per language. The footer states this indexable-page count, not a second tally.
+  return slugs.size + 1;
 }
 
 /** Live collection totals derived from holdings baseline + additions. */
@@ -301,7 +303,7 @@ export const stubPages = [
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
   { path: 'coleccion/notafilia', es: '¿Qué es la notafilia?', en: 'What is notaphily?' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
-  { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
+  { path: 'coleccion/lazarettos', es: 'Lazaretos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },

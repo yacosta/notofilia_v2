@@ -55,6 +55,7 @@ const seo = piecePageMeta({
   lead: note.lead[locale],
   locale,
   country: locale === 'en' ? 'United States' : 'Estados Unidos',
+  district: note.reserveDistrict,
 });
 const chapterNotes = unitedStatesNotes.filter((item) => item.chapterId === note.chapterId);
 const siblings = pieceSiblings(chapterNotes, note.path);

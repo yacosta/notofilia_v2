@@ -1477,6 +1477,8 @@ export type UnitedStatesNote = {
   pick: string;
   /** Friedberg number when it must not sit under the Pick label. */
   friedberg?: string;
+  /** Federal Reserve district letter printed on the note (from this record, not inferred). */
+  reserveDistrict?: string;
   /** SCWPM Pick number when `pick` stores Friedberg or another catalog. */
   scwpm?: string;
   /** Extra catalog-fact rows, in table order, terse. */
@@ -2910,6 +2912,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
     pathEn: '/collection/united-states/10-dollars-series-1934a-chicago/',
     pick: 'P#430Da · Fr. 2006-G',
+    reserveDistrict: 'G',
     serial: 'G74025286A',
     signatures: {
       es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
@@ -3021,6 +3024,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/10-dolares-serie-1934a-cleveland/',
     pathEn: '/collection/united-states/10-dollars-series-1934a-cleveland/',
     pick: 'P#430Da · Fr. 2006-D',
+    reserveDistrict: 'D',
     serial: 'D78652996A',
     signatures: {
       es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
@@ -3132,6 +3136,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/10-dolares-serie-1934a-filadelfia/',
     pathEn: '/collection/united-states/10-dollars-series-1934a-philadelphia/',
     pick: 'P#430Da · Fr. 2006-C',
+    reserveDistrict: 'C',
     serial: 'C46924254A',
     signatures: {
       es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
@@ -3279,6 +3284,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/10-dolares-serie-1934a-nueva-york/',
     pathEn: '/collection/united-states/10-dollars-series-1934a-new-york/',
     pick: 'P#430Da · Fr. 2006-B',
+    reserveDistrict: 'B',
     serial: 'B42488184B',
     signatures: {
       es: 'W. A. Julian (tesorero) y Henry Morgenthau Jr. (secretario del Tesoro)',
