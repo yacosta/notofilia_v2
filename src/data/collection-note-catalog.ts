@@ -365,9 +365,9 @@ export const collectionNoteFilters: TypeCatalogFilter[] = [
 
 export const collectionNoteCatalogCopy = {
   es: {
-    metaTitle: 'Catálogo visual de billetes | Notofilia',
+    metaTitle: 'Catálogo de notafilia: billetes | Notofilia',
     metaDescription:
-      'Todos los billetes de la colección Notofilia, con buscador. Cuatro por fila, sin precios. La vitrina se actualiza al documentar cada pieza.',
+      'Catálogo visual de notafilia: todos los billetes de la colección, con buscador. Cuatro por fila, sin precios.',
     kicker: 'Colección virtual · Notafilia',
     title: 'Catálogo visual de billetes',
     dek: 'Cada ficha de papel moneda que ya está en la colección. Cuatro por fila, sin precios. Cuando se documenta un billete nuevo, aparece aquí.',
@@ -419,9 +419,9 @@ export const collectionNoteCatalogCopy = {
     } satisfies Record<(typeof collectionNoteFilters)[number], string>,
   },
   en: {
-    metaTitle: 'Visual banknote catalog | Notofilia',
+    metaTitle: 'Notaphily catalog: banknotes | Notofilia',
     metaDescription:
-      'Every banknote in the Notofilia collection, with search. Four to a row, no prices. The case updates as each piece is documented.',
+      'Visual notaphily catalog: every banknote in the collection, with search. Four to a row, no prices.',
     kicker: 'Virtual collection · Notaphily',
     title: 'Visual banknote catalog',
     dek: 'Every paper-money record already in the collection. Four to a row, no prices. When a new banknote is documented, it appears here.',

@@ -471,6 +471,62 @@ function pieceSeeds(): PieceSeed[] {
   return seeds;
 }
 
+export type CatalogueSummaryItem = {
+  id: string;
+  title: { es: string; en: string };
+  country: string;
+  year: string;
+  issuer: string;
+  printer: string;
+  codes: { pick: string; bg: string; km: string; ht: string };
+  url: { es: string; en: string };
+};
+
+function countryFromPath(path: string): string {
+  if (path.includes('/colombia/')) return 'CO';
+  if (path.includes('/estados-unidos/') || path.includes('/united-states/')) return 'US';
+  if (path.includes('/filipinas/') || path.includes('/philippines/')) return 'PH';
+  if (path.includes('/china/')) return 'CN';
+  if (path.includes('/malasia/') || path.includes('/malaysia/')) return 'MY';
+  if (path.includes('/inglaterra/') || path.includes('/england/')) return 'GB';
+  if (path.includes('/canada/') || path.includes('/canadá/')) return 'CA';
+  if (path.includes('/puerto-rico/')) return 'PR';
+  if (path.includes('/ecuador/')) return 'EC';
+  if (path.includes('/espana/') || path.includes('/spain/')) return 'ES';
+  if (path.includes('/paises-bajos') || path.includes('/netherlands/')) return 'NL';
+  if (path.includes('/liberia/')) return 'LR';
+  return '';
+}
+
+function catalogCodes(pick: string): CatalogueSummaryItem['codes'] {
+  const codes = { pick: '', bg: '', km: '', ht: '' };
+  for (const token of pick.split(/[·;]/).map((part) => part.trim()).filter(Boolean)) {
+    if (/^BG#/i.test(token)) codes.bg = codes.bg ? `${codes.bg}; ${token}` : token;
+    else if (/^KM/i.test(token)) codes.km = codes.km ? `${codes.km}; ${token}` : token;
+    else if (/^HT/i.test(token)) codes.ht = codes.ht ? `${codes.ht}; ${token}` : token;
+    else if (/^(P#|Pick\b)/i.test(token)) codes.pick = codes.pick ? `${codes.pick}; ${token}` : token;
+    else if (!codes.pick) codes.pick = token;
+  }
+  return codes;
+}
+
+/** Non-sensitive catalogue index for /api/catalogue-summary.json. Serials and certs stay off this file. */
+export function catalogueSummary(): CatalogueSummaryItem[] {
+  return pieceSeeds().map((seed) => ({
+    id: seed.id,
+    title: seed.title,
+    country: countryFromPath(seed.path),
+    year: seed.title.es.match(/\b((?:1[789]|20)\d{2})\b/)?.[1] ?? '',
+    issuer: seed.kicker?.es ?? '',
+    printer: '',
+    codes: catalogCodes(seed.pick ?? ''),
+    url: {
+      es: localizePath(seed.path, 'es'),
+      en: localizePath(seed.path, 'en'),
+    },
+  }));
+}
+
 export function searchDocuments(locale: Locale): SearchDocument[] {
   const docs: SearchDocument[] = pieceSeeds().map((seed) => pieceDocument(seed, locale));
 

@@ -30,7 +30,8 @@ describe('piece SEO titles and descriptions', () => {
     });
     assert.equal(pieceH1(parts, 'es'), 'Billete de 2.000 pesos oro, 1983');
     const title = pieceDocumentTitle(parts, 'es');
-    assert.match(title, /^Billete de 2\.000 pesos oro 1983 · Banco de la República \(Colombia\) \| Notofilia$/);
+    assert.match(title, /^Billete de 2\.000 pesos oro 1983 · Banco de la República/);
+    assert.ok(title.length <= 70);
     assert.doesNotMatch(title, /Pick/i);
   });
 
@@ -44,10 +45,8 @@ describe('piece SEO titles and descriptions', () => {
       country: 'Colombia',
     });
     assert.equal(meta.h1, 'Billete de 1 peso, 1959–1977');
-    assert.match(
-      meta.documentTitle,
-      /^Billete de 1 peso 1959–1977 · Banco de la República \(Colombia\) \| Notofilia$/,
-    );
+    assert.match(meta.documentTitle, /^Billete de 1 peso 1959–1977 · Banco de la República/);
+    assert.ok(meta.documentTitle.length <= 70);
     assert.equal(meta.subtitle, '1 peso · Banco de la República · 1959–1977');
   });
 
@@ -61,10 +60,7 @@ describe('piece SEO titles and descriptions', () => {
     });
     assert.equal(parts.issuer, 'Banco de la República');
     assert.equal(parts.year, '1983');
-    assert.equal(
-      pieceDocumentTitle(parts, 'es'),
-      'Billete de 2.000 pesos oro 1983 · Banco de la República (Colombia) | Notofilia',
-    );
+    assert.match(pieceDocumentTitle(parts, 'es'), /^Billete de 2\.000 pesos oro 1983 · Banco de la República/);
   });
 
   it('builds coin titles with Moneda / coin and keeps KM out of the title', () => {
@@ -77,7 +73,8 @@ describe('piece SEO titles and descriptions', () => {
       country: 'Países Bajos',
     });
     assert.equal(es.h1, 'Moneda de Ducado, 1761');
-    assert.match(es.documentTitle, /^Moneda de Ducado 1761 · Utrecht \(Países Bajos\) \| Notofilia$/);
+    assert.match(es.documentTitle, /Moneda de Ducado 1761 · Utrecht/);
+    assert.ok(es.documentTitle.length <= 70);
     assert.doesNotMatch(es.documentTitle, /KM/i);
     assert.match(es.description, /KM# 7\.4/);
     assert.ok(es.description.length <= META_DESCRIPTION_MAX);
@@ -123,7 +120,38 @@ describe('piece SEO titles and descriptions', () => {
       heading: 'Ficha Hard Times de 1837 — HT-34 / Low-20',
     });
     assert.equal(meta.h1, 'Ficha Hard Times de 1837 — HT-34 / Low-20');
-    assert.match(meta.documentTitle, /^Ficha Hard Times de 1837 — HT-34 \/ Low-20 · Estados Unidos \| Notofilia$/);
+    assert.match(meta.documentTitle, /HT-34/);
+    assert.ok(meta.documentTitle.length <= 70);
     assert.doesNotMatch(meta.h1, /Moneda de/);
+  });
+
+  it('keeps Series 1934A district cities out of the n.d. fallback and in the title', () => {
+    const chicago = piecePageMeta({
+      kind: 'note',
+      title: '10 dólares · Serie 1934 A · Chicago',
+      kicker: 'Estados Unidos · Federal Reserve Note',
+      lead: 'Distrito G / 7.',
+      locale: 'es',
+      country: 'Estados Unidos',
+      district: 'G',
+    });
+    assert.equal(chicago.parts.year, '1934');
+    assert.equal(chicago.parts.place, 'Chicago');
+    assert.doesNotMatch(chicago.documentTitle, /s\.f\.|n\.d\./);
+    assert.match(chicago.documentTitle, /Chicago \(G\)/);
+    assert.ok(chicago.documentTitle.length <= 70);
+
+    const cleveland = piecePageMeta({
+      kind: 'note',
+      title: '$10 · Series 1934A · Cleveland',
+      kicker: 'United States · Federal Reserve Note',
+      lead: 'District D / 4.',
+      locale: 'en',
+      country: 'United States',
+      district: 'D',
+    });
+    assert.equal(cleveland.parts.year, '1934');
+    assert.match(cleveland.documentTitle, /Cleveland \(D\)/);
+    assert.notEqual(chicago.documentTitle, cleveland.documentTitle);
   });
 });

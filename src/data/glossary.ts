@@ -1,3 +1,4 @@
+import { limitMetaDescription } from '../lib/piece-seo.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 
 export const GLOSSARY_PATH = '/glosario/';
@@ -20,6 +21,10 @@ export type GlossaryTerm = {
   category: GlossaryCategoryId;
   title: { es: string; en: string };
   definition: { es: string; en: string };
+  /** Search snippet. When absent, the first sentence of the definition is used. */
+  metaDescription?: { es: string; en: string };
+  /** 40–60 word answer under the H1. When absent, the first sentence is reused. */
+  directAnswer?: { es: string; en: string };
   seeAlso: string[];
 };
 
@@ -82,6 +87,21 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   'tinta-ovi': 'ovi-ink',
   'ventana-transparente': 'clear-window',
 };
+
+/** First sentence, then a word-boundary cap. No trailing ellipsis. */
+export function glossarySnippet(text: string, max = 155): string {
+  const compact = text.replace(/\s+/g, ' ').trim();
+  const sentence = compact.match(/^[\s\S]*?[.!?](?=\s|$)/)?.[0]?.trim() ?? compact;
+  return limitMetaDescription(sentence, max);
+}
+
+export function glossaryMetaDescription(term: GlossaryTerm, locale: 'es' | 'en'): string {
+  return glossarySnippet(term.metaDescription?.[locale] || term.definition[locale]);
+}
+
+export function glossaryDirectAnswer(term: GlossaryTerm, locale: 'es' | 'en'): string {
+  return (term.directAnswer?.[locale] || glossarySnippet(term.definition[locale], 600)).trim();
+}
 
 function withEnglishSlugs(records: GlossaryTermRecord[]): GlossaryTerm[] {
   const used = new Set<string>();
@@ -664,6 +684,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "specimen",
     category: "Coleccionismo",
     title: { es: "Espécimen", en: "Specimen" },
+    metaDescription: {
+      es: "Un espécimen es un billete de muestra, a menudo con SPECIMEN y ceros, enviado a bancos y autoridades. No entra en circulación.",
+      en: "A specimen is a sample banknote, often marked SPECIMEN with zero serials, sent to banks and authorities. It does not circulate.",
+    },
     definition: { es: "Ejemplar de muestra enviado a bancos centrales y fuerzas de seguridad para familiarizarlos con un diseño nuevo. Suele llevar la palabra SPECIMEN perforada o estampada y numeración en ceros (p. ej. 0000000); no entra en circulación. En el catálogo de Hernández, los ceros distinguen el espécimen de la prueba.", en: "A sample note distributed to central banks and law enforcement to familiarize them with a new design. It usually bears perforated or stamped SPECIMEN text and all-zero serials (e.g. 0000000), and never enters circulation. In Hernández’s catalog, zeros distinguish a specimen from a proof." },
     seeAlso: ["banco-emisor", "prueba-ensayo", "mariposa", "remainder", "uniface", "moneda-prueba-giori"],
   },
@@ -1046,6 +1070,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "mpc",
     category: "Emisión",
     title: { es: "MPC (certificado de pago militar)", en: "MPC (Military Payment Certificate)" },
+    metaDescription: {
+      es: "El MPC es papel militar de Estados Unidos (1946–1973) para pagar tropas en ultramar. No era curso legal; un C-Day anulaba la serie.",
+      en: "MPC is U.S. military paper (1946–1973) used to pay troops overseas. It was not legal tender; a secret C-Day voided the series.",
+    },
     definition: { es: "Papel en dólares emitido por las fuerzas armadas de Estados Unidos entre 1946 y 1973 para pagar al personal en bases de ultramar. No era curso legal; un C-Day secreto invalidaba la serie vigente. En Vietnam circularon las series 641, 661, 681 y 692.", en: "Dollar-denominated paper issued by the U.S. armed forces from 1946 to 1973 to pay personnel on overseas bases. It was not legal tender; a secret C-Day voided the current series. In Vietnam the circulating series were 641, 661, 681, and 692." },
     seeAlso: ["c-day", "desmonetizado", "schwan", "plancheta", "offset", "dinero-mickey-mouse"],
   },
@@ -1062,6 +1090,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "notafilia",
     category: "Disciplina",
     title: { es: "Notafilia", en: "Notaphily" },
+    metaDescription: {
+      es: "La notafilia estudia y colecciona el papel moneda: billetes, bonos y documentos afines. Es una rama de la numismática, no un sinónimo de ella.",
+      en: "Notaphily is the study and collecting of paper money: banknotes, bonds, and related paper. It is a branch of numismatics, not a synonym for it.",
+    },
     definition: { es: "Rama de la numismática enfocada específicamente en el coleccionismo de billetes de papel moneda.", en: "The branch of numismatics focused specifically on collecting paper banknotes." },
     seeAlso: ["numismatica"],
   },
@@ -1126,6 +1158,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "numeracion-especial",
     category: "Coleccionismo",
     title: { es: "Numeración especial", en: "Fancy serial number" },
+    metaDescription: {
+      es: "La numeración especial es un serial con patrón: capicúa, binario, sólido, bajo, repetidor o escalera. El número identifica la pieza.",
+      en: "A fancy serial is a patterned number: radar, binary, solid, low, repeater, or ladder. The number still identifies one physical note.",
+    },
     definition: { es: "Numeración de serie codiciada por su patrón visual: capicúas, binarios, sólidos, números bajos, repetidores o escaleras.", en: "A highly collectible serial-number pattern: radars (palindromes), binaries, solids, low numbers, repeaters, or ladders." },
     seeAlso: ["numeracion", "numeracion-radar", "numeracion-binaria", "numeracion-solida", "numeracion-escalera", "numeracion-baja", "numeracion-repetidor"],
   },
@@ -1142,6 +1178,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "numismatica",
     category: "Disciplina",
     title: { es: "Numismática", en: "Numismatics" },
+    metaDescription: {
+      es: "La numismática estudia monedas, billetes y medallas: su historia, su arte y su lugar en una colección. Incluye la notafilia.",
+      en: "Numismatics studies coins, banknotes, and medals: their history, art, and place in a collection. Notaphily sits inside it.",
+    },
     definition: { es: "Disciplina que estudia monedas, billetes y medallas desde su historia, arte y valor de colección.", en: "The discipline that studies coins, banknotes, and medals — their history, artistry, and collector value." },
     seeAlso: ["notafilia"],
   },
@@ -1190,6 +1230,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "pick-number",
     category: "Coleccionismo",
     title: { es: "Pick number", en: "Pick number" },
+    metaDescription: {
+      es: "El número Pick identifica un tipo de billete en el Standard Catalog of World Paper Money. No sustituye al serial de una pieza.",
+      en: "A Pick number identifies a banknote type in the Standard Catalog of World Paper Money. It does not replace a piece’s serial.",
+    },
     definition: { es: "Número de referencia estándar asignado a cada billete en el Standard Catalog of World Paper Money, usado universalmente por coleccionistas para identificar variantes.", en: "The standard reference number assigned to each note in the Standard Catalog of World Paper Money, used universally by collectors to identify variants." },
     seeAlso: ["friedberg", "schwan", "banknote-book", "haxby", "criswell", "gonzalez-white", "hernandez"],
   },
@@ -1230,6 +1274,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "pmg-pcgs",
     category: "Conservación",
     title: { es: "PMG / PCGS", en: "PMG / PCGS" },
+    metaDescription: {
+      es: "PMG y PCGS Banknote encapsulan billetes y asignan un grado de 1 a 70, alineado con la escala Sheldon. Para monedas, ver NGC.",
+      en: "PMG and PCGS Banknote slab notes and assign a grade from 1 to 70, aligned with the Sheldon scale. For coins, see NGC.",
+    },
     definition: { es: "Las dos casas de certificación de papel moneda más usadas: Paper Money Guaranty (PMG) y PCGS Banknote. Encapsulan el billete y le asignan un grado numérico de 1 a 70, alineado con la escala Sheldon. Para monedas, ver NGC.", en: "The two leading third-party paper-money grading services: Paper Money Guaranty (PMG) and PCGS Banknote. They encapsulate the note and assign a numerical grade from 1 to 70, aligned with the Sheldon scale. For coins, see NGC." },
     seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "billete-sin-circular", "ngc", "encapsulado"],
   },
@@ -1375,6 +1423,10 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "scrip",
     category: "Emisión",
     title: { es: "Scrip", en: "Scrip" },
+    metaDescription: {
+      es: "El scrip es papel o ficha de un comercio o una comunidad, de uso limitado y por tiempo definido. No es billete de un banco central.",
+      en: "Scrip is paper or a token from a business or community, for limited use and a set time. It is not a central-bank note.",
+    },
     definition: { es: "Papel o ficha sustitutiva de moneda emitida por un comercio, cámara de comercio, empleador o comunidad para un uso limitado y por tiempo definido —por ejemplo un jubileo o una emergencia local— sin ser billete de un banco central. El scrip del Golden Jubilee de Baraboo (1933) es de este tipo.", en: "Substitute paper or token currency issued by a business, chamber of commerce, employer, or community for limited, time-bound use — for example a jubilee or a local emergency — rather than by a central bank. The 1933 Baraboo Golden Jubilee scrip is of this kind." },
     seeAlso: ["billete-de-necesidad", "vale-al-portador", "exonumia"],
   },
@@ -1734,7 +1786,7 @@ export const glossaryCopy = {
     breadcrumb: 'Migas de pan',
     home: 'Inicio',
     glossary: 'Glosario',
-    termTitle: (name: string) => `${name}: glosario de notafilia y numismática | Notofilia`,
+    termTitle: (name: string) => `${name} · Glosario de notafilia`,
   },
   en: {
     metaTitle: 'Glossary of Numismatics and Notaphily · Notofilia',
@@ -1760,7 +1812,7 @@ export const glossaryCopy = {
     breadcrumb: 'Breadcrumb',
     home: 'Home',
     glossary: 'Glossary',
-    termTitle: (name: string) => `${name}: notaphily and numismatics glossary | Notofilia`,
+    termTitle: (name: string) => `${name} · Notaphily glossary`,
   },
 } as const;
 

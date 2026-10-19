@@ -75,7 +75,7 @@ import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
 import { popayan1EscudoCarlosIvDedicatedSlugs } from '../data/popayan-1-escudo-carlos-iv';
 import { santaFeMintDedicatedSlugs } from '../data/santa-fe-mint';
 import { contactDedicatedSlugs } from '../data/contact';
-import { addLocalePair, englishContentSlug, type Locale } from './locale-paths';
+import { addLocalePair, englishContentSlug, localizePath, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
 
 export type { MilestoneItem } from './milestones.ts';
@@ -149,7 +149,18 @@ function extraAstroPageFiles(): number {
 }
 
 function publicPageCount(): number {
-  return BASELINE.pages + Math.max(0, uniqueContentSlugs().size - SEED_CONTENT_SLUGS) + extraAstroPageFiles();
+  // Spanish indexable routes, the same set the sitemap emits once per language.
+  const paths = new Set<string>(['/']);
+  for (const page of stubPages) {
+    if (page.path === 'buscar') continue;
+    paths.add(localizePath(`/${page.path}/`, 'es'));
+  }
+  for (const slug of dedicatedCatalogPaths) {
+    if (slug === 'buscar' || slug === 'search') continue;
+    paths.add(localizePath(`/${slug}/`, 'es'));
+  }
+  paths.delete('/buscar/');
+  return paths.size;
 }
 
 /** Live collection totals derived from holdings baseline + additions. */
@@ -301,7 +312,7 @@ export const stubPages = [
   { path: 'coleccion/numismatica', es: 'Numismática', en: 'Numismatics' },
   { path: 'coleccion/notafilia', es: '¿Qué es la notafilia?', en: 'What is notaphily?' },
   { path: 'coleccion/colombia-numismatica', es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
-  { path: 'coleccion/lazarettos', es: 'Lazarettos', en: 'Lazarettos' },
+  { path: 'coleccion/lazarettos', es: 'Lazaretos', en: 'Lazarettos' },
   { path: 'coleccion/paises-bajos', es: 'Países Bajos', en: 'Netherlands' },
   { path: 'coleccion/estados-unidos', es: 'Estados Unidos', en: 'United States' },
   { path: 'coleccion/estados-unidos/moneda-colonial', es: 'Moneda colonial (1690–1788)', en: 'Colonial paper (1690–1788)' },

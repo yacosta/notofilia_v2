@@ -11,7 +11,7 @@ const t = copy[locale];
 const pathname = locale === 'en' ? '/en/404/' : '/404';
 ---
 
-<Layout title={`${t.notFoundTitle} · Notofilia`} description={t.notFoundBody} locale={locale} pathname={pathname}>
+<Layout title={`${t.notFoundTitle} · Notofilia`} description={t.notFoundBody} locale={locale} pathname={pathname} robots="noindex, follow">
   <main id="main-content" tabindex="-1" class="mx-auto flex min-h-[60vh] max-w-[720px] flex-col justify-center px-[var(--page-gutter)] py-24 outline-none">
     <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">{t.notFoundTitle}</h1>
     <p class="m-0 text-[17px]/7 text-muted">{t.notFoundBody}</p>

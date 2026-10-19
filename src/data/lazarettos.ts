@@ -183,11 +183,11 @@ export const lazarettosSources: CatalogSource[] = [
 
 export const lazarettosCopy = {
   es: {
-    metaTitle: 'Lazarettos | Notofilia',
+    metaTitle: 'Lazaretos | Notofilia',
     metaDescription:
       'Catálogo de lazaretos colombianos: Caño del Oro, Contratación, Agua de Dios y la coscoja, la moneda exclusiva del cordón sanitario.',
     kicker: 'Numismática',
-    title: 'Lazarettos',
+    title: 'Lazaretos',
     heroAlt:
       'Póster ilustrado vintage de Agua de Dios, Cundinamarca, Ciudad de la Esperanza: pueblo colonial isométrico, catedral, río Bogotá, puente, Los Chorros y sello de Colombia Correos',
     intro: [

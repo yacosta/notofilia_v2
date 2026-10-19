@@ -38,6 +38,12 @@ const hero = {
 };
 
 const faqItems = localizeFaq(seriesFaqs.colombia, locale);
+const noteItems = colombiaChapters.flatMap((chapter) =>
+  notesForChapter(chapter.id).map((note) => ({
+    name: note.title[locale],
+    url: notePath(note, locale),
+  })),
+);
 const jsonLd = collectionPageJsonLd({
   locale,
   pathname,
@@ -48,6 +54,7 @@ const jsonLd = collectionPageJsonLd({
     { name: t.title, path: pathname },
   ],
   faq: faqItems,
+  items: noteItems,
 });
 
 ---

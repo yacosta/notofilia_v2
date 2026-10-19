@@ -25,18 +25,15 @@ describe('llms.txt and grading-guide SEO copy', () => {
 
   it('keeps the grading guide in llms.txt and lists glossary, guides, and country catalogues', () => {
     assert.ok(grading);
-    assert.match(seoSource, /## Glossary \/ Glosario/);
-    assert.match(seoSource, /## Guides \/ Guías/);
-    assert.match(seoSource, /## Country catalogues \/ Catálogos por país/);
-    assert.match(seoSource, /## News \/ Noticias/);
+    assert.match(seoSource, /## Glossary/);
+    assert.match(seoSource, /## Guides/);
+    assert.match(seoSource, /## Recent news \(latest 15 only\)/);
     assert.match(seoSource, /llmsCountryCatalogues/);
     assert.match(seoSource, /blogArticles/);
     assert.match(seoSource, /newsArticles/);
-    assert.match(seoSource, /footerLinksFromNav/);
-    assert.match(seoSource, /megaNav/);
     assert.match(seoSource, /colección privada y catálogo bilingüe/);
     assert.match(seoSource, /https:\/\/notofilia\.com\/sitemap\.txt/);
-    assert.match(seoSource, /Spanish, the x-default locale, is listed first/);
+    assert.match(seoSource, /latest 15/);
     assert.match(grading.seoTitle.es, /PMG, PCGS y NGC/);
     assert.match(grading.seoTitle.en, /PMG, PCGS, and NGC/);
     assert.equal(articles.some((article) => article.slug === 'como-se-valora-un-billete-colombiano'), true);

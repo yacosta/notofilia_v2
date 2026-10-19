@@ -6,12 +6,13 @@ import { distinctFigureAlt } from '../../lib/catalog-media';
 import { cardImageSrc, imageSrcset } from '../../lib/images';
 import {
   glossaryArticleBySlug,
-  glossaryArticleLocaleText,
   type GlossaryExample,
 } from '../../data/glossary-articles';
 import {
   glossaryCategories,
   glossaryCopy,
+  glossaryDirectAnswer,
+  glossaryMetaDescription,
   glossaryPath,
   glossaryTermBySlug,
   glossaryTermHref,
@@ -34,8 +35,10 @@ const related = term.seeAlso
 const article = glossaryArticleBySlug(term.slug);
 const paragraphs = article?.paragraphs[locale] ?? [term.definition[locale]];
 const lead = paragraphs[0];
+const metaDescription = glossaryMetaDescription(term, locale);
+const directAnswer = glossaryDirectAnswer(term, locale);
+const showDirectAnswer = directAnswer !== lead && directAnswer !== term.definition[locale];
 const rest = paragraphs.slice(1);
-const jsonDescription = article ? glossaryArticleLocaleText(article, locale) : term.definition[locale];
 const illustrationTitle = article?.illustration?.title[locale] ?? '';
 const illustrationAlt = article?.illustration
   ? distinctFigureAlt(article.illustration.alt?.[locale] ?? illustrationTitle, illustrationTitle)
@@ -46,7 +49,7 @@ function exampleHref(example: GlossaryExample): string {
 }
 ---
 
-<Layout title={t.termTitle(term.title[locale])} description={lead} locale={locale} pathname={pathname}>
+<Layout title={t.termTitle(term.title[locale])} description={metaDescription} locale={locale} pathname={pathname}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
@@ -55,9 +58,10 @@ function exampleHref(example: GlossaryExample): string {
         ...definedTermJsonLd({
           name: term.title[locale],
           alternateName: term.title[otherLang],
-          description: jsonDescription,
+          description: directAnswer,
           url: pathname,
           locale,
+          speakable: true,
         }),
       })}
     />
@@ -84,11 +88,12 @@ function exampleHref(example: GlossaryExample): string {
       <h1 id="term" class="mb-2 mt-0 font-display text-[clamp(28px,4.5vw,42px)] font-normal leading-[1.12] text-cream">
         {term.title[locale]}
       </h1>
+      {showDirectAnswer ? <p class="direct-answer">{directAnswer}</p> : null}
       <p lang={otherLang} class="mb-8 mt-0 text-[clamp(18px,2.2vw,22px)] leading-[1.5] text-cream-dim italic">
         {term.title[otherLang]}
       </p>
 
-      <p class="mb-10 mt-0 max-w-[46rem] text-[19px] leading-[1.7] text-cream-dim">{lead}</p>
+      <p class:list={['mb-10 mt-0 max-w-[46rem] text-[19px] leading-[1.7] text-cream-dim', !showDirectAnswer && 'direct-answer']}>{lead}</p>
 
       {
         article?.illustration?.image ? (

@@ -1,7 +1,7 @@
 ---
 import NavTree from './NavTree.astro';
 import { copy, localizePath, otherLocalePath, type Locale } from '../lib/site';
-import { megaNav, navColumns, type NavNode } from '../lib/mega-nav';
+import { megaNav, navColumns, shellMegaNav, type NavNode } from '../lib/mega-nav';
 
 interface Props {
   locale: Locale;
@@ -10,6 +10,7 @@ interface Props {
 
 const { locale, pathname } = Astro.props;
 const t = copy[locale];
+const headerNav = shellMegaNav(megaNav);
 const home = localizePath('/', locale);
 const enHref = locale === 'en' ? pathname : otherLocalePath(pathname, 'es');
 const esHref = locale === 'es' ? pathname : otherLocalePath(pathname, 'en');
@@ -111,7 +112,7 @@ function nodeIsCurrent(node: NavNode): boolean {
 
     <ul class="mega-list" aria-describedby="mega-nav-help">
       {
-        megaNav.map((item) => {
+        headerNav.map((item) => {
           const panelId = `mega-panel-${item.id}`;
           const label = item[locale];
           const current = nodeIsCurrent(item);

@@ -5,7 +5,6 @@ import { foldedGlossaryTerms, glossaryTermSlugs, STANDALONE_GLOSSARY_SLUGS } fro
 import { localizePath } from './locale-paths.ts';
 
 const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.meta.url), 'utf8');
-const indexSource = readFileSync(new URL('../pages/sitemap-index.xml.ts', import.meta.url), 'utf8');
 const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url), 'utf8');
 const textSitemap = readFileSync(new URL('../pages/sitemap.txt.ts', import.meta.url), 'utf8');
 
@@ -128,8 +127,8 @@ describe('sitemap coverage for the grading guide', () => {
   it('builds lastmod from blog articles and is linked from sitemap-index / robots', () => {
     assert.match(sitemapSource, /blogArticles/);
     assert.match(sitemapSource, /collectSitemapPaths/);
-    assert.match(indexSource, /sitemap\.xml/);
-    assert.match(robots, /sitemap-index\.xml/);
+    assert.match(robots, /Sitemap: https:\/\/notofilia\.com\/sitemap\.xml/);
+    assert.doesNotMatch(robots, /sitemap-index\.xml/);
     assert.match(robots, /Sitemap: https:\/\/notofilia\.com\/sitemap\.txt/);
     assert.equal(
       localizePath('/blog/mejores-empresas-certificacion-monedas-billetes/', 'en'),

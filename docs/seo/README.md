@@ -36,7 +36,24 @@ This Worker uses `run_worker_first: true`. Cloudflare `_redirects` is **not** ap
 
 Rules never target `/` or `/en/`. There is no catch-all to the homepage. www→apex is left to Cloudflare.
 
+After deploy, the production post-build step runs `scripts/purge-cache.mjs` and then `scripts/indexnow.mjs` (main branch only).
+
+## Production build secrets
+
+Set both on the Cloudflare Workers/Pages production environment. If either is missing, the purge script warns and exits 0 so preview builds still succeed.
+
+| Secret | Purpose |
+| --- | --- |
+| `CF_API_TOKEN` | API token with Zone → Cache Purge |
+| `CF_ZONE_ID` | Zone id for `notofilia.com` |
+
+`POST /zones/{zone}/purge_cache` with `{"purge_everything": true}` runs before IndexNow so crawlers do not recrawl a stale edge copy.
+
+HTML responses in `public/_headers` have no explicit edge `Cache-Control` (only `/_astro/*` and `/fonts/*` are immutable). Proposed, not applied: a short `s-maxage` on HTML, for example `Cache-Control: public, max-age=0, must-revalidate, s-maxage=300`, so the edge can refresh within a few minutes even if a purge is missed. Do not weaken the existing hashed-asset headers.
+
 After deploy: IndexNow (existing `scripts/indexnow.mjs` on production) and GSC **Validate fix** on the 404 report.
+
+In the Cloudflare dashboard, Caching → Cache Rules, Tiered Cache, and Crawler Hints are not changed from this repo. Confirm they are not pinning an old HTML copy of `/sitemap.xml`, `/en/`, or `/editorial/` after the purge. Re-check with `curl -sI -A "Googlebot" https://notofilia.com/sitemap.xml` and `curl -sI -A "GPTBot" https://notofilia.com/en/`.
 
 ## Files
 

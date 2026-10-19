@@ -1,0 +1,22 @@
+{
+  "name": "Notofilia",
+  "short_name": "Notofilia",
+  "lang": "es",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a09",
+  "theme_color": "#0a0a09",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/notofilia-logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

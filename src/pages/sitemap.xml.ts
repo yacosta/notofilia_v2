@@ -55,6 +55,7 @@ ${unique
   .map((loc) => {
     const es = localizePath(loc, 'es');
     const en = localizePath(loc, 'en');
+    // lastmod only when the record has a published or updated date. Never the build clock.
     const modified = lastmod.get(loc);
     return `  <url>
     <loc>${SITE_URL}${loc}</loc>${modified ? `\n    <lastmod>${modified}</lastmod>` : ''}

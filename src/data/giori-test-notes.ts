@@ -11,7 +11,7 @@ export const gioriTestNotesCopy = {
     breadcrumb: 'Migas de pan',
     metaTitle: 'Moneda de prueba Giori: mecánica y tipología',
     metaDescription:
-      'Pruebas Giori: intaglio multicolor, linaje Organisation Giori–K&B, ensayos Washington y Jefferson, series europeas y catálogo Rollins. No es un Pick de circulación.',
+      'Pruebas Giori: intaglio multicolor, linaje Giori–K&B, ensayos de Washington y Jefferson y el catálogo Rollins. No es un Pick de circulación.',
     title: 'Mecánica y notafilia de la moneda de prueba Giori: innovación, linaje industrial y tipología de coleccionista',
     kicker: 'Impresión de seguridad',
     lead:
@@ -43,7 +43,7 @@ export const gioriTestNotesCopy = {
     breadcrumb: 'Breadcrumb',
     metaTitle: 'Giori test notes: mechanics and typology',
     metaDescription:
-      'Giori test notes: multi-colour intaglio, the Organisation Giori–K&B line, Washington and Jefferson trials, European specimens, and the Rollins catalogue. Not a circulating Pick.',
+      'Giori test notes: multi-colour intaglio, the Giori–K&B line, Washington and Jefferson trials, and the Rollins catalogue. Not a circulating Pick.',
     title:
       'The Mechanics and Numismatics of Giori Test Currency: Engineering Innovation, Industrial Lineage, and Collector Typology',
     kicker: 'Security printing',

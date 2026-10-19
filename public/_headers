@@ -12,6 +12,21 @@ https://:name.:account.workers.dev/*
 https://:version.:name.:account.workers.dev/*
   X-Robots-Tag: noindex
 
+/feed.xml
+  X-Robots-Tag: noindex
+
+/en/feed.xml
+  X-Robots-Tag: noindex
+
+/llms.txt
+  X-Robots-Tag: noindex
+
+/llms-full.txt
+  X-Robots-Tag: noindex
+
+/api/*
+  X-Robots-Tag: noindex
+
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
 

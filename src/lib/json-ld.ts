@@ -71,12 +71,24 @@ export function collectionPageJsonLd(options: {
   description: string;
   crumbs: BreadcrumbCrumb[];
   faq?: { question: string; answer: string }[];
+  items?: { name: string; url: string }[];
 }) {
+  const itemList = options.items?.length
+    ? {
+        '@type': 'ItemList',
+        itemListElement: options.items.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.name,
+          url: absoluteUrl(item.url),
+        })),
+      }
+    : undefined;
   return {
     '@context': 'https://schema.org',
     '@graph': [
       breadcrumbList(options.crumbs, options.locale),
-      {
+      omitEmpty({
         '@type': 'CollectionPage',
         name: options.name,
         description: options.description,
@@ -84,7 +96,8 @@ export function collectionPageJsonLd(options: {
         inLanguage: options.locale,
         isPartOf: { '@id': WEBSITE_ID },
         author: { '@id': PERSON_ID },
-      },
+        mainEntity: itemList,
+      }),
       ...(options.faq?.length ? [faqPageJsonLd(options.faq)] : []),
     ],
   };
@@ -109,7 +122,7 @@ export function imageObjectJsonLd(options: { image: string; locale: Locale; capt
     url: imageUrl,
     contentUrl: imageUrl,
     caption: options.caption,
-    creditText: `${SITE_AUTHOR} / ${SITE_NAME}`,
+    creditText: 'Notofilia.com / Yezid Acosta',
     creator: {
       '@type': 'Person',
       '@id': PERSON_ID,
@@ -117,7 +130,7 @@ export function imageObjectJsonLd(options: { image: string; locale: Locale; capt
     },
     copyrightNotice: COPYRIGHT_NOTICE,
     license: absoluteUrl(options.locale === 'en' ? '/en/editorial/' : '/editorial/'),
-    acquireLicensePage: absoluteUrl(options.locale === 'en' ? '/en/contact/' : '/contacto/'),
+    acquireLicensePage: absoluteUrl(options.locale === 'en' ? '/en/editorial/' : '/editorial/'),
   });
 }
 
@@ -138,6 +151,7 @@ export function visualArtworkJsonLd(options: {
   collectionName?: string;
 }) {
   const type = options.artform === 'CreativeWork' ? 'CreativeWork' : 'VisualArtwork';
+  const identifier = catalogPropertyValues(options.catalogNumber, options.certNumber, options.serial);
   const additionalProperty = [
     options.catalogNumber
       ? { '@type': 'PropertyValue', name: 'catalogNumber', value: options.catalogNumber }
@@ -156,7 +170,7 @@ export function visualArtworkJsonLd(options: {
     url: absoluteUrl(options.url),
     inLanguage: options.locale,
     artform: type === 'VisualArtwork' ? options.artform : undefined,
-    identifier: options.catalogNumber || options.certNumber || options.serial || undefined,
+    identifier,
     author: { '@id': PERSON_ID },
     creator: { '@id': PERSON_ID },
     publisher: options.issuer ? { '@type': 'Organization', name: options.issuer } : undefined,
@@ -179,6 +193,7 @@ export function definedTermJsonLd(options: {
   description: string;
   url: string;
   locale: Locale;
+  speakable?: boolean;
 }) {
   const setUrl = absoluteUrl(options.locale === 'en' ? '/en/glossary/' : '/glosario/');
   const url = absoluteUrl(options.url);
@@ -190,8 +205,32 @@ export function definedTermJsonLd(options: {
     description: options.description,
     url,
     inLanguage: options.locale,
-    inDefinedTermSet: `${setUrl}#glossary`,
+    inDefinedTermSet: setUrl,
+    ...(options.speakable ? { speakable: speakableDirectAnswer() } : {}),
   };
+}
+
+export function speakableDirectAnswer() {
+  return {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['.direct-answer'],
+  };
+}
+
+function catalogPropertyValues(catalogNumber?: string, certNumber?: string, serial?: string) {
+  const values = [];
+  for (const token of (catalogNumber ?? '').split(/[·;]/).map((part) => part.trim()).filter(Boolean)) {
+    let propertyID = 'catalogNumber';
+    if (/^(P#|Pick\b)/i.test(token)) propertyID = 'Pick';
+    else if (/^BG#/i.test(token)) propertyID = 'BG';
+    else if (/^KM/i.test(token)) propertyID = 'KM';
+    else if (/^HT/i.test(token)) propertyID = 'HT';
+    else if (/^Fr\./i.test(token)) propertyID = 'Friedberg';
+    values.push({ '@type': 'PropertyValue', propertyID, value: token });
+  }
+  if (certNumber) values.push({ '@type': 'PropertyValue', propertyID: 'certificateNumber', value: certNumber });
+  if (serial) values.push({ '@type': 'PropertyValue', propertyID: 'serialNumber', value: serial });
+  return values.length ? values : undefined;
 }
 
 export function faqPageJsonLd(items: { question: string; answer: string }[]) {

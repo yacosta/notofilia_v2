@@ -28,7 +28,8 @@ describe('catalogue VisualArtwork JSON-LD', () => {
       image: '/images/catalog/netherlands/utrecht-ducat.jpg',
     });
     assert.equal(full['@type'], 'VisualArtwork');
-    assert.equal(full.identifier, 'KM# 7.4');
+    assert.equal(full.identifier[0].propertyID, 'KM');
+    assert.equal(full.identifier[0].value, 'KM# 7.4');
     assert.equal(full.publisher.name, 'Utrecht');
     assert.equal(full.producer.name, 'Provincial mint of Utrecht');
     const names = full.additionalProperty.map((item) => item.name);
@@ -64,7 +65,8 @@ describe('catalogue VisualArtwork JSON-LD', () => {
     assert.equal(node.image['@type'], 'ImageObject');
     assert.match(node.image.creditText, /Yezid Acosta/);
     assert.equal(node.image.license, 'https://notofilia.com/editorial/');
-    assert.equal(node.image.acquireLicensePage, 'https://notofilia.com/contacto/');
+    assert.equal(node.image.acquireLicensePage, 'https://notofilia.com/editorial/');
+    assert.equal(node.image.creditText, 'Notofilia.com / Yezid Acosta');
   });
 });
 
@@ -82,7 +84,7 @@ describe('ImageObject JSON-LD', () => {
     assert.equal(image.creator.name, 'Yezid Acosta');
     assert.match(image.copyrightNotice, /^© \d{4} NOTOFILIA$/);
     assert.equal(image.license, 'https://notofilia.com/en/editorial/');
-    assert.equal(image.acquireLicensePage, 'https://notofilia.com/en/contact/');
+    assert.equal(image.acquireLicensePage, 'https://notofilia.com/en/editorial/');
   });
 
   it('is shared by editorial article images', () => {
@@ -102,7 +104,7 @@ describe('glossary and FAQ JSON-LD', () => {
     assert.equal(term['@type'], 'DefinedTerm');
     assert.equal(term['@id'], 'https://notofilia.com/glosario/notafilia/#term');
     assert.equal(term.url, 'https://notofilia.com/glosario/notafilia/');
-    assert.equal(term.inDefinedTermSet, 'https://notofilia.com/glosario/#glossary');
+    assert.equal(term.inDefinedTermSet, 'https://notofilia.com/glosario/');
   });
 
   it('builds FAQPage questions from supplied pairs', () => {

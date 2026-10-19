@@ -4,6 +4,7 @@ import Comments from '../Comments.astro';
 import NewWindowHint from '../NewWindowHint.astro';
 import { localizePath, SITE_URL, type Locale } from '../../lib/site';
 import FaqBlock from '../FaqBlock.astro';
+import { NEWS_SCHEMA_TYPE } from '../../lib/news-schema';
 import { breadcrumbJsonLd, PERSON_ID, SITE_AUTHOR, SITE_NAME } from '../../lib/seo';
 import { faqPageJsonLd, imageObjectJsonLd } from '../../lib/json-ld';
 import { copy } from '../../lib/site';
@@ -36,7 +37,9 @@ const backLabel = kind === 'blog' ? t.backToBlog : t.backToNews;
 const title = article.title[locale];
 const seoTitle = article.seoTitle?.[locale] || title;
 const dek = article.dek[locale];
-const description = article.description[locale];
+const description = article.description[locale] || article.directAnswer?.[locale] || '';
+const directAnswer = article.directAnswer?.[locale];
+const collectorNote = article.collectorNote?.[locale];
 const rawBody = article.bodyHtml[locale] || article.bodyHtml.es;
 const bodyIsFallback = locale === 'en' && rawBody === article.bodyHtml.es;
 const body = enhanceProseHtml(rawBody, locale);
@@ -54,11 +57,23 @@ const figureAlt = distinctFigureAlt(article.imageAlt[locale], article.caption[lo
 const imageUrl = hasImage ? new URL(article.image, SITE_URL).href : '';
 const faqItems = kind === 'blog' ? localizeFaq(guideFaqs[article.slug] ?? [], locale) : [];
 const reviewerName = article.reviewer || SITE_AUTHOR;
+const citations = (article.primarySources ?? []).map((source) => ({
+  '@type': 'CreativeWork',
+  name: source.label[locale],
+  url: source.url,
+}));
+const entityNode = (entity: NonNullable<EditorialArticle['entities']>[number]) => ({
+  '@type': entity.type,
+  name: entity.name,
+  ...(entity.sameAs ? { sameAs: entity.sameAs } : {}),
+});
+const aboutEntities = (article.entities ?? []).filter((entity) => !entity.mention).map(entityNode);
+const mentionEntities = (article.entities ?? []).filter((entity) => entity.mention).map(entityNode);
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': kind === 'blog' ? 'BlogPosting' : 'NewsArticle',
+      '@type': kind === 'blog' ? 'BlogPosting' : NEWS_SCHEMA_TYPE,
       headline: title,
       alternativeHeadline: seoTitle !== title ? seoTitle : undefined,
       description,
@@ -75,6 +90,10 @@ const jsonLd = {
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
       reviewedBy: { '@type': 'Person', name: reviewerName, '@id': PERSON_ID },
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      ...(citations.length ? { citation: citations } : {}),
+      ...(kind === 'blog' && directAnswer ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.direct-answer'] } } : {}),
+      ...(aboutEntities.length ? { about: aboutEntities } : {}),
+      ...(mentionEntities.length ? { mentions: mentionEntities } : {}),
       ...(kind === 'news' && article.sourceName && article.sourceUrl
         ? {
             isBasedOn: {
@@ -156,6 +175,7 @@ const jsonLd = {
         <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4.5vw,2.65rem)] font-normal leading-[1.12] text-cream">
           {title}
         </h1>
+        {directAnswer ? <p class="direct-answer">{directAnswer}</p> : null}
         <p class="mb-5 mt-0 text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{dek}</p>
         <dl class="mb-9 mt-0 grid gap-1 font-sans text-[14px] tracking-[0.02em] text-muted">
           <div class="flex flex-wrap gap-x-2">
@@ -283,6 +303,17 @@ const jsonLd = {
                 </li>
               ))}
             </ul>
+          </section>
+        ) : null
+      }
+
+      {
+        collectorNote ? (
+          <section class="mt-10 border-t border-line pt-6" aria-labelledby="collector-note-heading">
+            <h2 id="collector-note-heading" class="mb-3 mt-0 font-display text-[22px] font-normal text-cream">
+              {t.whyItMatters}
+            </h2>
+            <p class="m-0 text-[17px] leading-[1.6] text-cream-dim">{collectorNote}</p>
           </section>
         ) : null
       }
