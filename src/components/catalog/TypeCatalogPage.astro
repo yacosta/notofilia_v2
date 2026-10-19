@@ -134,6 +134,9 @@ const jsonLd = collectionPageJsonLd({
   name: t.title,
   description: t.metaDescription,
   crumbs,
+  items: documents
+    .filter((doc) => doc.inCollection)
+    .map((doc) => ({ name: doc.title, url: doc.href })),
 });
 
 const ui = {

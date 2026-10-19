@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { copy, localizePath, type Locale } from '../lib/site';
+import { copy, localizePath, SITE_URL, type Locale } from '../lib/site';
+import { WEBSITE_ID, ORG_ID, breadcrumbJsonLd } from '../lib/seo';
 
 interface Props {
   locale: Locale;
@@ -10,9 +11,37 @@ interface Props {
 
 const { locale, pathname, title } = Astro.props;
 const t = copy[locale];
+const isPrivacy = pathname.includes('politica-privacidad') || pathname.includes('privacy-cookies');
+const pageUrl = new URL(pathname, SITE_URL).href;
+const privacyJsonLd = isPrivacy
+  ? {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebPage',
+          url: pageUrl,
+          name: title,
+          description: t.comingSoon,
+          inLanguage: locale,
+          dateModified: '2026-10-01',
+          isPartOf: { '@id': WEBSITE_ID },
+          about: { '@id': ORG_ID },
+        },
+        breadcrumbJsonLd([
+          { name: t.home, item: localizePath('/', locale) },
+          { name: title, item: pathname },
+        ]),
+      ],
+    }
+  : null;
 ---
 
 <Layout title={`${title} · Notofilia`} description={t.comingSoon} locale={locale} pathname={pathname}>
+  {privacyJsonLd ? (
+    <Fragment slot="head">
+      <script type="application/ld+json" set:html={JSON.stringify(privacyJsonLd)} />
+    </Fragment>
+  ) : null}
   <main id="main-content" tabindex="-1" class="mx-auto max-w-[720px] px-[var(--page-gutter)] py-24 outline-none">
     <h1 class="mt-0 mb-4 font-display text-[2rem]/10 font-normal text-cream-dim">{title}</h1>
     <p class="m-0 text-[17px]/7 text-muted">{t.comingSoon}</p>
