@@ -8,9 +8,8 @@ import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
 import { SPAIN_COINAGE_PATH } from '../data/espana-coinage';
 import { PUERTO_RICO_COINAGE_PATH } from '../data/puerto-rico-coinage';
 import { LIBERIA_COINAGE_PATH } from '../data/liberia-coinage';
-import { GLOSSARY_PATH } from '../data/glossary';
+import { GLOSSARY_PATH, glossaryTermPath, glossaryTerms, isStandaloneGlossaryTerm } from '../data/glossary';
 import { GUATEMALA_PATH } from '../data/guatemala';
-import { collectionStats } from '../data/holdings';
 import { LAZARETTOS_PATH } from '../data/lazarettos';
 import { NETHERLANDS_PATH } from '../data/netherlands';
 import { NETHERLANDS_COINAGE_PATH } from '../data/netherlands-coinage';
@@ -30,6 +29,20 @@ export const DEFAULT_OG_IMAGE = '/images/hero-slide.jpg';
 export const PERSON_ID = `${SITE_URL}/#yezid-acosta`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const ORG_ID = `${SITE_URL}/#organization`;
+
+/**
+ * Profile URLs for Yezid Acosta.
+ * TODO(owner): LinkedIn URL — leave this array empty until a real https URL is confirmed.
+ * Empty entries are omitted from JSON-LD.
+ */
+export const AUTHOR_SAME_AS: readonly string[] = [];
+
+export const AUTHOR_KNOWS_ABOUT = {
+  es: ['Billetes colombianos', 'Numismática', 'Notafilia', 'Gradación y conservación de billetes'],
+  en: ['Colombian banknotes', 'Numismatics', 'Notaphily', 'Banknote grading and conservation'],
+} as const;
+
+const ORG_LOGO = '/images/notofilia-logo.png';
 
 export function absoluteUrl(path: string): string {
   if (path.startsWith('http')) return path;
@@ -60,12 +73,23 @@ export function websiteJsonLd(locale: Locale) {
         name: SITE_AUTHOR,
         url: absoluteUrl(locale === 'en' ? '/en/about/' : '/acerca-de/'),
         jobTitle: locale === 'en' ? 'Collector and technologist' : 'Coleccionista y tecnólogo',
+        ...(AUTHOR_SAME_AS.length ? { sameAs: [...AUTHOR_SAME_AS] } : {}),
+        knowsAbout: [...AUTHOR_KNOWS_ABOUT[locale]],
       },
       {
         '@type': 'Organization',
         '@id': ORG_ID,
         name: SITE_NAME,
         url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: absoluteUrl(ORG_LOGO),
+          width: 128,
+          height: 128,
+        },
+        image: absoluteUrl(ORG_LOGO),
+        sameAs: ['https://www.facebook.com/NOTOFILIA', 'https://x.com/Notofilia'],
+        publishingPrinciples: absoluteUrl('/editorial/'),
         founder: { '@id': PERSON_ID },
         description:
           locale === 'en'
@@ -116,20 +140,8 @@ export function artworkJsonLd(input: {
       url: absoluteUrl(input.collectionUrl),
     },
     creator: { '@id': PERSON_ID },
-    creditText: `${SITE_AUTHOR} / ${SITE_NAME}`,
+    creditText: 'Notofilia.com / Yezid Acosta',
   };
-}
-
-function llmsLink(href: string, es: string, en: string): string {
-  const esUrl = `${SITE_URL}${localizePath(href, 'es')}`;
-  const enUrl = `${SITE_URL}${localizePath(href, 'en')}`;
-  return `- [${es} / ${en}](${esUrl}): ${enUrl}`;
-}
-
-function articleLink(kind: 'blog' | 'news', article: (typeof blogArticles)[number]): string {
-  const es = `${SITE_URL}${articlePath(kind, article.slug, 'es')}`;
-  const en = `${SITE_URL}${articlePath(kind, article.slug, 'en')}`;
-  return `- [${article.title.es} / ${article.title.en}](${es}): ${en}`;
 }
 
 /** Published hubs that are not (yet) rows in mega-nav. */
@@ -205,44 +217,77 @@ export function llmsHighValuePages(): { href: string; es: string; en: string }[]
   return pages;
 }
 
+function llmsLine(title: string, url: string, description: string): string {
+  const oneLine = description.replace(/\s+/g, ' ').trim();
+  return `- [${title}](${url}): ${oneLine}`;
+}
+
+function pairLines(esTitle: string, enTitle: string, esPath: string, enPath: string, esDesc: string, enDesc: string): string {
+  return [
+    llmsLine(esTitle, `${SITE_URL}${esPath}`, esDesc),
+    llmsLine(enTitle, `${SITE_URL}${enPath}`, enDesc),
+  ].join('\n');
+}
+
+/** Curated llms.txt. Full URL list stays at /sitemap.txt. */
 export function llmsTxt(): string {
-  const stats = collectionStats();
+  const hubs = [
+    { href: '/coleccion/', es: 'Colección', en: 'Collection', esDesc: 'Índice de la colección virtual.', enDesc: 'Index of the virtual collection.' },
+    { href: COLOMBIA_PATH, es: 'Billetes de Colombia', en: 'Colombian banknotes', esDesc: 'Notafilia colombiana, de la banca libre al Banco de la República.', enDesc: 'Colombian notaphily, from free banking to Banco de la República.' },
+    { href: '/coleccion/notafilia/catalogo/', es: 'Catálogo de notafilia', en: 'Notaphily catalog', esDesc: 'Todos los billetes documentados, sin precios.', enDesc: 'Every documented banknote, with no prices.' },
+    { href: USA_PATH, es: 'Estados Unidos', en: 'United States', esDesc: 'Papel federal, colonial, MPC y obsoletos de la colección.', enDesc: 'Federal, colonial, MPC, and obsolete notes in the collection.' },
+    { href: '/coleccion/numismatica/', es: 'Numismática', en: 'Numismatics', esDesc: 'Monedas de la colección por país.', enDesc: 'Coins in the collection, by country.' },
+  ];
+
+  const editorial = [
+    { href: '/editorial/', es: 'Política editorial', en: 'Editorial policy', esDesc: 'Cómo se documenta cada pieza y cómo se corrige un error.', enDesc: 'How each piece is documented and how an error is corrected.' },
+    { href: '/acerca-de/', es: 'Acerca de Notofilia', en: 'About Notofilia', esDesc: 'La colección y su autor, Yezid Acosta.', enDesc: 'The collection and its author, Yezid Acosta.' },
+    { href: '/contacto/', es: 'Contacto', en: 'Contact', esDesc: 'Escribir a Notofilia.', enDesc: 'Write to Notofilia.' },
+  ];
+
+  const tools = [
+    { href: '/herramientas/numeracion-especial/', es: 'Numeración especial', en: 'Fancy serial checker', esDesc: 'Clasifica patrones de serial sin tasar la pieza.', enDesc: 'Classifies serial patterns without pricing the note.' },
+    { href: '/identificar/billetes-falsos/', es: 'Billetes falsos', en: 'Counterfeit notes', esDesc: 'Lista de comprobación. No autentica a distancia.', enDesc: 'A checklist. It does not authenticate at a distance.' },
+  ];
+
+  const latestNews = [...newsArticles].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 15);
+
+  const sections = [
+    `## Hubs\n\n${hubs.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
+    `## Guides\n\n${pairLines('Guías', 'Guides', '/blog/', '/en/blog/', 'Ensayos para coleccionistas.', 'Essays for collectors.')}\n${blogArticles.map((article) => pairLines(article.title.es, article.title.en, articlePath('blog', article.slug, 'es'), articlePath('blog', article.slug, 'en'), article.dek.es, article.dek.en)).join('\n')}`,
+    `## Glossary\n\n${pairLines('Glosario', 'Glossary', GLOSSARY_PATH, localizePath(GLOSSARY_PATH, 'en'), 'Términos de notafilia y numismática.', 'Notaphily and numismatics terms.')}`,
+    `## Editorial/About\n\n${editorial.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
+    `## Tools\n\n${tools.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
+    `## Machine-Readable Data\n\n${llmsLine('Sitemap', `${SITE_URL}/sitemap.txt`, 'Lista completa de URLs públicas.')}\n${llmsLine('Catalogue summary', `${SITE_URL}/api/catalogue-summary.json`, 'Resumen de fichas: título, país, año y códigos de catálogo. Sin seriales ni precios.')}`,
+    `## Recent news (latest 15 only)\n\n${latestNews.map((article) => pairLines(article.title.es, article.title.en, articlePath('news', article.slug, 'es'), articlePath('news', article.slug, 'en'), article.dek.es, article.dek.en)).join('\n')}`,
+  ];
+
   return `# Notofilia
 
-Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Spanish is the default locale; English lives at /en/. Images, Pick/KM references, grades, and source citations. Nothing is for sale.
+> Colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Nada está a la venta. Spanish is the default locale; English lives under /en/. The full URL list is https://notofilia.com/sitemap.txt.
 
-## Sitemap
-
-Every public HTML page is one absolute URL per line at https://notofilia.com/sitemap.txt (UTF-8, no titles on the line). Spanish, the x-default locale, is listed first; the English URL follows when the path differs. /buscar/ and /en/search/ are omitted. Titles for the same pages are in the sections below. The XML twin is https://notofilia.com/sitemap.xml.
-
-## Glossary / Glosario
-
-${llmsLink(GLOSSARY_PATH, 'Glosario', 'Glossary')}
-
-## Guides / Guías
-
-${llmsLink('/blog/', 'Guías para coleccionistas', 'Guides for collectors')}
-${blogArticles.map((article) => articleLink('blog', article)).join('\n')}
-
-## Country catalogues / Catálogos por país
-
-${llmsCountryCatalogues.map((page) => llmsLink(page.href, page.es, page.en)).join('\n')}
-
-## Stats / Cifras
-
-- ${stats.banknotes} banknotes / billetes
-- ${stats.coins} coins / monedas
-- ${stats.countries} countries / países
-- ${stats.catalog} catalog entries / fichas
-
-## Other high-value pages
-
-${llmsHighValuePages()
-  .map((page) => llmsLink(page.href, page.es, page.en))
-  .join('\n')}
-
-## News / Noticias
-
-${newsArticles.map((article) => articleLink('news', article)).join('\n')}
+${sections.join('\n\n')}
 `;
+}
+
+export function llmsFullTxt(): string {
+  const guideAnswers = blogArticles
+    .map((article) => {
+      const es = article.directAnswer?.es ?? article.dek.es;
+      const en = article.directAnswer?.en ?? article.dek.en;
+      const sources = (article.primarySources ?? [])
+        .map((source) => `${source.label.es} ${source.url}`)
+        .join('; ');
+      const citation = sources ? ` Fuentes: ${sources}` : '';
+      return `${pairLines(article.title.es, article.title.en, articlePath('blog', article.slug, 'es'), articlePath('blog', article.slug, 'en'), `${es}${citation}`, en)}`;
+    })
+    .join('\n');
+  const glossaryLines = glossaryTerms
+    .map((term) => {
+      const esPath = isStandaloneGlossaryTerm(term.slug) ? glossaryTermPath(term.slug, 'es') : GLOSSARY_PATH;
+      const enPath = isStandaloneGlossaryTerm(term.slug) ? glossaryTermPath(term.slug, 'en') : localizePath(GLOSSARY_PATH, 'en');
+      return pairLines(term.title.es, term.title.en, esPath, enPath, term.definition.es, term.definition.en);
+    })
+    .join('\n');
+  return `${llmsTxt()}\n## Guide answers\n\n${guideAnswers}\n\n## Glossary terms\n\n${glossaryLines}\n`;
 }

@@ -26,6 +26,12 @@ export const aboutCopy = {
       'Notofilia es un sitio sobre billetes y monedas —en español y en inglés— con una debilidad especial por Colombia y América Latina, cuya historia del papel moneda no recibe ni de cerca la atención que merece.',
       'Aquí encontrará un catálogo de piezas de mi colección personal, con buenas fotos y las historias detrás de cada una, un glosario bilingüe, y artículos sobre los bancos que imprimieron estos billetes, los artistas que los grabaron y las épocas que les tocó vivir.',
     ],
+    specialtiesHeading: 'Especialidades',
+    specialties:
+      'La colección se concentra en billetes colombianos, incluidos bancos del siglo XIX que ya no existen, y en monedas más antiguas. La gradación se copia de la cápsula cuando la hay; si no, el estado se describe sin inventar un grado.',
+    membershipsHeading: 'Membresías y certificaciones',
+    memberships:
+      'Esta página no lista membresías ni certificaciones. Solo se publicarán cuando consten por escrito en el registro del autor.',
     aboutMe: 'Sobre mí',
     bioLead: 'Alguien me pasó un billete, y ahí impresa estaba la fecha de mi cumpleaños.',
     bio: [
@@ -69,6 +75,12 @@ export const aboutCopy = {
       'Notofilia is a site about banknotes and coins — in Spanish and English — with a soft spot for Colombia and Latin America, whose paper money history doesn’t get nearly the attention it deserves.',
       'You’ll find a catalogue of pieces from my personal collection with good photos and the stories behind each one, a bilingual glossary, and articles about the banks that printed these notes, the artists who engraved them, and the times they lived through.',
     ],
+    specialtiesHeading: 'Specialties',
+    specialties:
+      'The collection concentrates on Colombian banknotes, including 19th-century banks that no longer exist, and on older coins. A grade is copied from the holder when there is one; otherwise condition is described without inventing a number.',
+    membershipsHeading: 'Memberships and certifications',
+    memberships:
+      'This page does not list memberships or certifications. They will be published only when they are on the record in writing.',
     aboutMe: 'About me',
     bioLead: 'Someone handed me a banknote, and printed right there on it was my birthday.',
     bio: [

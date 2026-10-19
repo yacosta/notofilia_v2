@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { collectionStats, copy, localizePath, SITE_URL, type Locale } from '../lib/site';
+import { AUTHOR_KNOWS_ABOUT, AUTHOR_SAME_AS } from '../lib/seo';
 import { ABOUT_PORTRAIT, ABOUT_PORTRAIT_HEIGHT, ABOUT_PORTRAIT_WIDTH, aboutCopy, aboutPath } from '../data/about';
 import { contactPath } from '../data/contact';
 import { cfImage, imageSrcset } from '../lib/images';
@@ -43,6 +44,8 @@ const jsonLd = {
       url: new URL(pathname, SITE_URL).href,
       jobTitle: copy[locale].collectorJobTitle,
       image: new URL(ABOUT_PORTRAIT, SITE_URL).href,
+      knowsAbout: [...AUTHOR_KNOWS_ABOUT[locale]],
+      ...(AUTHOR_SAME_AS.length ? { sameAs: [...AUTHOR_SAME_AS] } : {}),
     },
     {
       '@type': 'Organization',
@@ -104,6 +107,22 @@ const jsonLd = {
                 {paragraph}
               </p>
             ))}
+          </section>
+
+          <hr class="guilloche my-10" />
+
+          <section aria-labelledby="about-specialties-heading">
+            <h2
+              id="about-specialties-heading"
+              class="mb-5 mt-0 font-sans text-[13px] font-semibold uppercase tracking-[0.16em] text-gold-light"
+            >
+              {t.specialtiesHeading}
+            </h2>
+            <p class="mb-0 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty]">{t.specialties}</p>
+            <h3 class="mb-3 mt-8 font-sans text-[13px] font-semibold uppercase tracking-[0.16em] text-gold-light">
+              {t.membershipsHeading}
+            </h3>
+            <p class="mb-0 mt-0 font-sans text-[17px]/7 text-cream-dim [text-wrap:pretty]">{t.memberships}</p>
           </section>
 
           <hr class="guilloche my-10" />
