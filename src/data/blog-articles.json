@@ -187,7 +187,11 @@
         "title": "Billetes de Colombia",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "En los primeros días de abril de 2012 el mil pesos de Jorge Eliécer Gaitán dejó de ser solo menuda. La prensa colombiana e internacional señaló un rostro en la multitud —perfil marcado, sin barba, con un bigote corto— y lo leyó como un Fidel Castro joven. El papel llevaba años en el bolsillo. El.",
+      "en": "In the first days of April 2012 the Jorge Eliécer Gaitán one-thousand stopped being ordinary change. The Colombian and international press pointed to a face in the crowd — a sharp profile, no beard, a short moustache — and read it as a young Fidel Castro. The note had been in pockets for years. The."
+    }
   },
   {
     "slug": "cacique-calarca-trascendencia-numismatica",
@@ -317,7 +321,11 @@
         "title": "Diferencia entre numismática y notafilia",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "En 1952 el diez centavos colombiano cambió de metal y de rostro. Hasta entonces la denominación era plata de ley 0,500, con el busto de Francisco de Paula Santander. Ese mismo año la Casa de Moneda de Bogotá acuñó, además, una pieza de cuproníquel con el perfil del líder pijao Calarcá. La fecha corriente de.",
+      "en": "In 1952 the Colombian ten centavos changed metal and changed face. Until then the denomination was .500 silver, with the bust of Francisco de Paula Santander. That same year the Casa de Moneda de Bogotá also struck a copper-nickel piece with the profile of the Pijao leader Calarcá. The ordinary date of the new type."
+    }
   },
   {
     "slug": "como-se-valora-un-billete-colombiano",
@@ -356,8 +364,8 @@
       "en": "Grade and serial identify the object; a price, if it appears, must have a source."
     },
     "bodyHtml": {
-      "es": "<p>Notofilia no publica listas de precios ni «lo que vale» un serial. Los <a href=\"/coleccion/colombia/\">billetes colombianos</a> se discuten por tipo, rareza relativa, estado documentado, población certificada cuando existe, y el contexto de dónde se vende. Esta guía ordena ese método. Nada de esta colección está a la venta.</p>\n<p>El objeto es único: el <a href=\"/glosario/numeracion/\">número de serie</a> es su identidad. Dos ejemplares del mismo <a href=\"/glosario/pick/\">Pick</a> y la misma fecha siguen siendo dos piezas. Confundir tipo con objeto es el error más caro en notafilia colombiana.</p>\n<h2 id=\"grado\">1. El grado, no una opinión casera</h2>\n<p>Si la pieza está encapsulada, el grado es el de la etiqueta: <a href=\"/glosario/pmg-pcgs/\">PMG o PCGS Banknote</a>, NGC u otra casa nombrada. No se reinterpreta un slab. EPQ, PPQ, Star o Details se copian de la cápsula. La guía de <a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">certificadoras</a> explica esas casas; esta página no las sustituye.</p>\n<p>Si no hay cápsula, el estado se describe en lenguaje de catálogo —sin circular, detalles, pliegues visibles— sin inventar un número Sheldon. Un «slab de sótano» no equivale a PMG.</p>\n<h2 id=\"rareza\">2. Rareza de tipo y rareza de ejemplar</h2>\n<p>La rareza de tipo (cuántos se imprimieron, cuántos sobreviven como clase) no es la rareza del serial. Las tablas de producción del Banco de la República documentan tiradas cuando el dato es de emisión, no un total Pick inventado a partir de un año-denominación. González White (7.ª ed., 2019) ordena tipos BanRep por BG#; Hernández cubre el papel anterior a 1923. Ninguno de esos catálogos se republica aquí en columnas de precio ni en láminas.</p>\n<p>La rareza del ejemplar aparece en el serial: un capicúa binario como el <a href=\"/coleccion/colombia/2000-pesos-2008/\">2.000 pesos de 2008, serial 10000001</a>, una reposición como el <a href=\"/coleccion/colombia/5-pesos-oro-1979/\">5 pesos oro de 1979, serial 00141180</a>, o una estrella como los seriales 00113227 y 00249902 del <a href=\"/coleccion/colombia/10000-pesos-1994/\">10.000 pesos emberá de 1994</a>. El clasificador de <a href=\"/herramientas/numeracion-especial/\">numeración especial</a> solo nombra esos patrones cuando coinciden con un objeto publicado.</p>\n<h2 id=\"poblacion\">3. Población certificada, con fuente</h2>\n<p>Un informe de población se cita solo cuando PMG, PCGS u otra casa lo publica para ese certificado. Si no hay cifra, no se estima. «Poco visto» no es un censo. La ficha del <a href=\"/coleccion/colombia/2000-pesos-oro-1983/\">2.000 pesos oro de 1983</a> ilustra cómo se documenta un tipo BanRep de De La Rue sin inventar una tirada Pick.</p>\n<h2 id=\"donde-se-vende\">4. Dónde se vende (sin precio)</h2>\n<p>El contexto de mercado es el canal, no la cifra: casas de subastas, ferias, trato particular, certificadoras. Un martillo confirmado se distingue de un precio pedido. Si no hay fuente pública, el dato no se publica. Heritage y otros archivos de subasta son comparables, no existencias de esta colección: no se importan como fichas ni se republican precios realizados.</p>\n<p>Para contrastar el papel con un tipo conocido, use <a href=\"/identificar/\">Identificar por foto</a> y la lista de <a href=\"/identificar/billetes-falsos/\">comprobación de billetes falsos</a>. Ninguna de esas herramientas autentica a distancia ni tasa.</p>\n<h2 id=\"politica\">5. Cómo corrige Notofilia</h2>\n<p>La <a href=\"/editorial/\">política editorial</a> fija el mismo criterio: no hay precios inventados, no se fusionan dos objetos porque compartan Pick, y un error de serial se corrige en el registro existente. Si encuentra un desliz, escríbanos desde Contacto.</p>\n<p>Valorar, en este sitio, es describir el objeto con fuentes. El precio, cuando exista, vendrá de un martillo o de un precio pedido citado —nunca de esta guía.</p>",
-      "en": "<p>Notofilia does not publish price lists or “what a serial is worth.” <a href=\"/en/collection/colombia/\">Colombian banknotes</a> are discussed by type, relative rarity, documented condition, certified population when it exists, and the context of where pieces sell. This guide sets out that method. Nothing in this collection is for sale.</p>\n<p>The object is unique: the <a href=\"/glosario/numeracion/\">serial number</a> is its identity. Two examples of the same <a href=\"/glosario/pick/\">Pick</a> and date are still two pieces. Confusing type with object is the costliest error in Colombian notaphily.</p>\n<h2 id=\"grade\">1. The grade, not a kitchen opinion</h2>\n<p>If the piece is slabbed, the grade is the one on the label: <a href=\"/glosario/pmg-pcgs/\">PMG or PCGS Banknote</a>, NGC, or another named service. A slab is not reinterpreted. EPQ, PPQ, Star, or Details are copied from the holder. The <a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">grading-companies guide</a> explains those houses; this page does not replace it.</p>\n<p>If there is no holder, condition is described in catalogue language — uncirculated, details, visible folds — without inventing a Sheldon number. A “basement slab” is not PMG.</p>\n<h2 id=\"rarity\">2. Type rarity and example rarity</h2>\n<p>Type rarity (how many were printed, how many survive as a class) is not serial rarity. Banco de la República production tables document print runs when the figure is an issue total, not a Pick-level tirada invented from a denomination-year. González White (7th ed., 2019) orders BanRep types by BG#; Hernández covers paper before 1923. Neither catalogue is republished here in price columns or plates.</p>\n<p>Example rarity shows in the serial: a binary radar such as the <a href=\"/coleccion/colombia/2000-pesos-2008/\">2008 2,000 pesos, serial 10000001</a>, a replacement such as the <a href=\"/coleccion/colombia/5-pesos-oro-1979/\">1979 5 pesos oro, serial 00141180</a>, or a star such as serials 00113227 and 00249902 on the <a href=\"/coleccion/colombia/10000-pesos-1994/\">1994 Emberá 10,000 pesos</a>. The <a href=\"/herramientas/numeracion-especial/\">fancy-serial checker</a> names those patterns only when they match a published object.</p>\n<h2 id=\"population\">3. Certified population, with a source</h2>\n<p>A population report is cited only when PMG, PCGS, or another service publishes it for that certificate. If there is no figure, none is estimated. “Seldom seen” is not a census. The record for the <a href=\"/coleccion/colombia/2000-pesos-oro-1983/\">1983 2,000 pesos oro</a> shows how a De La Rue BanRep type is documented without inventing a Pick print run.</p>\n<h2 id=\"where-it-sells\">4. Where it sells (no price)</h2>\n<p>Market context is the channel, not the figure: auction houses, fairs, private sale, grading services. A confirmed hammer is distinguished from an asking price. If there is no public source, the figure is not published. Heritage and other auction archives are comparables, not holdings: they are not imported as records and realized prices are not republished.</p>\n<p>To compare the paper with a known type, use <a href=\"/identificar/\">photo Identify</a> and the <a href=\"/identificar/billetes-falsos/\">counterfeit-note checklist</a>. Neither tool authenticates at a distance or prices a piece.</p>\n<h2 id=\"policy\">5. How Notofilia corrects</h2>\n<p>The <a href=\"/editorial/\">editorial policy</a> uses the same test: no invented prices, two objects are not merged because they share Pick, and a serial error is corrected on the existing record. If you find a slip, write through Contact.</p>\n<p>To value, on this site, is to describe the object with sources. A price, when it exists, will come from a cited hammer or asking price — never from this guide.</p>"
+      "es": "<p>Notofilia no publica listas de precios ni «lo que vale» un serial. Los <a href=\"/coleccion/colombia/\">billetes colombianos</a> se discuten por tipo, rareza relativa, estado documentado, población certificada cuando existe, y el contexto de dónde se vende. Esta guía ordena ese método. Nada de esta colección está a la venta.</p>\n<h2 id=\"cuanto-vale\">¿Cuánto vale un billete colombiano?</h2>\n<p>El valor se discute por el tipo (Pick o BG#), el grado documentado, si hay certificación, la población que publica la casa graduadora y el canal de venta. Las tablas de producción del <a href=\"https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion\">Banco de la República</a> miden tiradas por denominación y año, no el precio de un serial. Los informes de población de <a href=\"https://www.pmgnotes.com/population-report/\">PMG</a> se citan solo cuando existen para ese certificado. Los archivos de subasta sirven de comparables; esta guía no publica precios ni estimaciones.</p>\n<table class=\"valuation-factors\">\n<caption>Cinco factores para discutir un billete colombiano, y dónde se verifica cada uno. Esta tabla no contiene precios.</caption>\n<thead>\n<tr><th scope=\"col\">Factor</th><th scope=\"col\">Qué se comprueba</th><th scope=\"col\">Fuente pública</th></tr>\n</thead>\n<tbody>\n<tr><th scope=\"row\">Tipo y rareza</th><td>Pick o BG#, denominación y la tirada publicada por denominación y año.</td><td><a href=\"https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion\">Producción y circulación, Banco de la República</a></td></tr>\n<tr><th scope=\"row\">Grado de conservación</th><td>El grado escrito en la etiqueta de la cápsula, o una descripción de catálogo si no hay certificación.</td><td><a href=\"/glosario/pmg-pcgs/\">PMG y PCGS Banknote, glosario</a></td></tr>\n<tr><th scope=\"row\">Certificación de terceros</th><td>La casa que encapsuló la pieza y el número de certificado, copiados de la etiqueta.</td><td><a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">Guía de certificadoras</a></td></tr>\n<tr><th scope=\"row\">Población conocida</th><td>El informe de población de esa casa, solo cuando existe para el certificado.</td><td><a href=\"https://www.pmgnotes.com/population-report/\">Informe de población PMG</a></td></tr>\n<tr><th scope=\"row\">Canal de venta</th><td>La casa o el archivo que publicó el resultado. El resultado no se copia aquí como precio.</td><td><a href=\"/editorial/\">Política editorial</a></td></tr>\n</tbody>\n</table>\n<p>El objeto es único: el <a href=\"/glosario/numeracion/\">número de serie</a> es su identidad. Dos ejemplares del mismo <a href=\"/glosario/pick/\">Pick</a> y la misma fecha siguen siendo dos piezas. Confundir tipo con objeto es el error más caro en notafilia colombiana.</p>\n<h2 id=\"grado\">1. El grado, no una opinión casera</h2>\n<p>Si la pieza está encapsulada, el grado es el de la etiqueta: <a href=\"/glosario/pmg-pcgs/\">PMG o PCGS Banknote</a>, NGC u otra casa nombrada. No se reinterpreta un slab. EPQ, PPQ, Star o Details se copian de la cápsula. La guía de <a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">certificadoras</a> explica esas casas; esta página no las sustituye.</p>\n<p>Si no hay cápsula, el estado se describe en lenguaje de catálogo —sin circular, detalles, pliegues visibles— sin inventar un número Sheldon. Un «slab de sótano» no equivale a PMG.</p>\n<h2 id=\"rareza\">2. Rareza de tipo y rareza de ejemplar</h2>\n<p>La rareza de tipo (cuántos se imprimieron, cuántos sobreviven como clase) no es la rareza del serial. Las tablas de producción del Banco de la República documentan tiradas cuando el dato es de emisión, no un total Pick inventado a partir de un año-denominación. González White (7.ª ed., 2019) ordena tipos BanRep por BG#; Hernández cubre el papel anterior a 1923. Ninguno de esos catálogos se republica aquí en columnas de precio ni en láminas.</p>\n<p>La rareza del ejemplar aparece en el serial: un capicúa binario como el <a href=\"/coleccion/colombia/2000-pesos-2008/\">2.000 pesos de 2008, serial 10000001</a>, una reposición como el <a href=\"/coleccion/colombia/5-pesos-oro-1979/\">5 pesos oro de 1979, serial 00141180</a>, o una estrella como los seriales 00113227 y 00249902 del <a href=\"/coleccion/colombia/10000-pesos-1994/\">10.000 pesos emberá de 1994</a>. El clasificador de <a href=\"/herramientas/numeracion-especial/\">numeración especial</a> solo nombra esos patrones cuando coinciden con un objeto publicado.</p>\n<h2 id=\"poblacion\">3. Población certificada, con fuente</h2>\n<p>Un informe de población se cita solo cuando PMG, PCGS u otra casa lo publica para ese certificado. Si no hay cifra, no se estima. «Poco visto» no es un censo. La ficha del <a href=\"/coleccion/colombia/2000-pesos-oro-1983/\">2.000 pesos oro de 1983</a> ilustra cómo se documenta un tipo BanRep de De La Rue sin inventar una tirada Pick.</p>\n<h2 id=\"donde-se-vende\">4. Dónde se vende (sin precio)</h2>\n<p>El contexto de mercado es el canal, no la cifra: casas de subastas, ferias, trato particular, certificadoras. Un martillo confirmado se distingue de un precio pedido. Si no hay fuente pública, el dato no se publica. Heritage y otros archivos de subasta son comparables, no existencias de esta colección: no se importan como fichas ni se republican precios realizados.</p>\n<p>Para contrastar el papel con un tipo conocido, use <a href=\"/identificar/\">Identificar por foto</a> y la lista de <a href=\"/identificar/billetes-falsos/\">comprobación de billetes falsos</a>. Ninguna de esas herramientas autentica a distancia ni tasa.</p>\n<h2 id=\"politica\">5. Cómo corrige Notofilia</h2>\n<p>La <a href=\"/editorial/\">política editorial</a> fija el mismo criterio: no hay precios inventados, no se fusionan dos objetos porque compartan Pick, y un error de serial se corrige en el registro existente. Si encuentra un desliz, escríbanos desde Contacto.</p>\n<p>Valorar, en este sitio, es describir el objeto con fuentes. El precio, cuando exista, vendrá de un martillo o de un precio pedido citado —nunca de esta guía.</p>",
+      "en": "<p>Notofilia does not publish price lists or “what a serial is worth.” <a href=\"/en/collection/colombia/\">Colombian banknotes</a> are discussed by type, relative rarity, documented condition, certified population when it exists, and the context of where pieces sell. This guide sets out that method. Nothing in this collection is for sale.</p>\n<h2 id=\"how-much\">How much is a Colombian banknote worth?</h2>\n<p>Worth, here, is a method: the type (Pick or BG#), the documented grade, whether it is certified, the population the grading service publishes, and the sale venue. <a href=\"https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion\">Banco de la República</a> production tables measure print runs by denomination and year, not the price of a serial. <a href=\"https://www.pmgnotes.com/population-report/\">PMG</a> population reports are cited only when they exist for that certificate. Auction archives are comparables; this guide publishes no prices and no estimates.</p>\n<table class=\"valuation-factors\">\n<caption>Five factors used to discuss a Colombian banknote, and where each one is checked. This table contains no prices.</caption>\n<thead>\n<tr><th scope=\"col\">Factor</th><th scope=\"col\">What is checked</th><th scope=\"col\">Public source</th></tr>\n</thead>\n<tbody>\n<tr><th scope=\"row\">Type and rarity</th><td>Pick or BG#, denomination, and the print run published by denomination and year.</td><td><a href=\"https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion\">Production and circulation, Banco de la República</a></td></tr>\n<tr><th scope=\"row\">Conservation grade</th><td>The grade printed on the holder label, or catalogue language when the note is not certified.</td><td><a href=\"/glosario/pmg-pcgs/\">PMG and PCGS Banknote, glossary</a></td></tr>\n<tr><th scope=\"row\">Third-party certification</th><td>The service that encapsulated the piece and the certificate number, copied from the label.</td><td><a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">Grading-companies guide</a></td></tr>\n<tr><th scope=\"row\">Known population</th><td>That service’s population report, only when it exists for the certificate.</td><td><a href=\"https://www.pmgnotes.com/population-report/\">PMG population report</a></td></tr>\n<tr><th scope=\"row\">Auction venue</th><td>The house or archive that published the result. The result is not copied here as a price.</td><td><a href=\"/editorial/\">Editorial policy</a></td></tr>\n</tbody>\n</table>\n<p>The object is unique: the <a href=\"/glosario/numeracion/\">serial number</a> is its identity. Two examples of the same <a href=\"/glosario/pick/\">Pick</a> and date are still two pieces. Confusing type with object is the costliest error in Colombian notaphily.</p>\n<h2 id=\"grade\">1. The grade, not a kitchen opinion</h2>\n<p>If the piece is slabbed, the grade is the one on the label: <a href=\"/glosario/pmg-pcgs/\">PMG or PCGS Banknote</a>, NGC, or another named service. A slab is not reinterpreted. EPQ, PPQ, Star, or Details are copied from the holder. The <a href=\"/blog/mejores-empresas-certificacion-monedas-billetes/\">grading-companies guide</a> explains those houses; this page does not replace it.</p>\n<p>If there is no holder, condition is described in catalogue language — uncirculated, details, visible folds — without inventing a Sheldon number. A “basement slab” is not PMG.</p>\n<h2 id=\"rarity\">2. Type rarity and example rarity</h2>\n<p>Type rarity (how many were printed, how many survive as a class) is not serial rarity. Banco de la República production tables document print runs when the figure is an issue total, not a Pick-level tirada invented from a denomination-year. González White (7th ed., 2019) orders BanRep types by BG#; Hernández covers paper before 1923. Neither catalogue is republished here in price columns or plates.</p>\n<p>Example rarity shows in the serial: a binary radar such as the <a href=\"/coleccion/colombia/2000-pesos-2008/\">2008 2,000 pesos, serial 10000001</a>, a replacement such as the <a href=\"/coleccion/colombia/5-pesos-oro-1979/\">1979 5 pesos oro, serial 00141180</a>, or a star such as serials 00113227 and 00249902 on the <a href=\"/coleccion/colombia/10000-pesos-1994/\">1994 Emberá 10,000 pesos</a>. The <a href=\"/herramientas/numeracion-especial/\">fancy-serial checker</a> names those patterns only when they match a published object.</p>\n<h2 id=\"population\">3. Certified population, with a source</h2>\n<p>A population report is cited only when PMG, PCGS, or another service publishes it for that certificate. If there is no figure, none is estimated. “Seldom seen” is not a census. The record for the <a href=\"/coleccion/colombia/2000-pesos-oro-1983/\">1983 2,000 pesos oro</a> shows how a De La Rue BanRep type is documented without inventing a Pick print run.</p>\n<h2 id=\"where-it-sells\">4. Where it sells (no price)</h2>\n<p>Market context is the channel, not the figure: auction houses, fairs, private sale, grading services. A confirmed hammer is distinguished from an asking price. If there is no public source, the figure is not published. Heritage and other auction archives are comparables, not holdings: they are not imported as records and realized prices are not republished.</p>\n<p>To compare the paper with a known type, use <a href=\"/identificar/\">photo Identify</a> and the <a href=\"/identificar/billetes-falsos/\">counterfeit-note checklist</a>. Neither tool authenticates at a distance or prices a piece.</p>\n<h2 id=\"policy\">5. How Notofilia corrects</h2>\n<p>The <a href=\"/editorial/\">editorial policy</a> uses the same test: no invented prices, two objects are not merged because they share Pick, and a serial error is corrected on the existing record. If you find a slip, write through Contact.</p>\n<p>To value, on this site, is to describe the object with sources. A price, when it exists, will come from a cited hammer or asking price — never from this guide.</p>"
     },
     "related": [
       {
@@ -384,6 +392,21 @@
         "href": "/coleccion/colombia/",
         "title": "Billetes de Colombia",
         "dek": ""
+      }
+    ],
+    "directAnswer": {
+      "es": "Notofilia no publica listas de precios ni «lo que vale» un serial. Los billetes colombianos se discuten por tipo, rareza relativa, estado documentado, población certificada cuando existe, y el contexto de dónde se vende. Esta guía ordena ese método. Nada de esta colección está a la venta. El objeto es único: el número de serie.",
+      "en": "Notofilia does not publish price lists or “what a serial is worth.” Colombian banknotes are discussed by type, relative rarity, documented condition, certified population when it exists, and the context of where pieces sell. This guide sets out that method. Nothing in this collection is for sale. The object is unique: the serial number is."
+    },
+    "entities": [
+      {
+        "name": "Banco de la República",
+        "type": "Organization"
+      },
+      {
+        "name": "González White",
+        "type": "CreativeWork",
+        "mention": true
       }
     ]
   },
@@ -447,7 +470,11 @@
         "title": "Glosario: escala Sheldon",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Bienvenidos, colegas coleccionistas, a otra inmersión en el mundo de la numismática y la notafilia. En Notofilia sabemos que cada billete y cada moneda tiene una historia. El crujido de un billete del siglo XIX sin circular o el peso metálico de un real de a ocho son pedazos físicos de historia. Al cuidar esos.",
+      "en": "Welcome, fellow collectors, to another deep dive into the fascinating world of numismatics and notaphily. Here at Notofilia we understand that every banknote and every coin has a story to tell. Whether it is the crisp rustle of an uncirculated nineteenth-century note or the heavy metallic clink of a silver piece of eight, our collections."
+    }
   },
   {
     "slug": "mylar-si-plastico-no-como-guardar-billetes",
@@ -495,7 +522,11 @@
         "title": "Diferencia entre numismática y notafilia",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Hay una escena que se repite en el mundo del coleccionismo y que duele presenciar. Alguien hereda la colección de billetes de su padre o de su abuelo, guardada con todo el cariño del mundo en un álbum de fundas plásticas comprado hace treinta años. Abre el álbum y encuentra los billetes amarillentos, con las.",
+      "en": "There is a scene that repeats in the collecting world and that hurts to watch. Someone inherits a parent’s or grandparent’s banknote collection, stored with all the love in the world in an album of plastic sleeves bought thirty years ago. They open the album and find the notes yellowed, inks running, stuck to the."
+    }
   },
   {
     "slug": "tres-imprentas-misterio-pie-imprenta-billetes-colombianos",
@@ -560,7 +591,11 @@
         "title": "Billetes de Colombia",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Si usted colecciona billetes de Colombia , seguramente lo ha notado: entre 1983 y 2014, los billetes del Banco de la República llevan tres pies de imprenta diferentes. Algunos dicen «Imprenta de Billetes – Bogotá» , otros «Imprenta de Billetes – Santa Fe de Bogotá» , y los más recientes simplemente «Banco de la República».",
+      "en": "If you collect Colombian banknotes you have surely noticed it: between 1983 and 2014, Banco de la República notes carry three different imprints. Some read “Imprenta de Billetes – Bogotá” , others “Imprenta de Billetes – Santa Fe de Bogotá” , and the most recent simply “Banco de la República” . The Pick catalog even."
+    }
   },
   {
     "slug": "como-empezar-coleccion-billetes",
@@ -620,7 +655,11 @@
         "title": "Numismática y notafilia: diferencias",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Empezar una colección de billetes es más sencillo —y más económico— de lo que muchos imaginan. La notafilia se puede iniciar con lo que ya lleva en la cartera y crecer a su propio ritmo. Estas son las claves para dar los primeros pasos con buen pie. 1. Elija un enfoque Coleccionar “todos los billetes.",
+      "en": "Starting a banknote collection is simpler —and cheaper— than many people think. Notaphily can begin with what you already carry in your wallet and grow at your own pace. These are the keys to taking the first steps well. 1. Choose a focus Collecting “every banknote in the world” is overwhelming. Collectors enjoy it more."
+    }
   },
   {
     "slug": "como-identificar-billetes-falsos",
@@ -680,7 +719,11 @@
         "title": "Cómo empezar una colección de billetes",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Los bancos centrales incorporan a sus billetes numerosos elementos de seguridad difíciles de reproducir. Conocerlos sirve tanto para evitar una falsificación en el día a día como para valorar mejor una pieza de colección. La regla de oro es sencilla: toque, mire y gire . Marca de agua Al mirar el billete al trasluz.",
+      "en": "Central banks build numerous hard-to-copy security features into their notes. Knowing them helps both to avoid a counterfeit in daily life and to judge a collectible piece more fairly. The golden rule is simple: feel, look, and tilt . Watermark When you hold the note to the light , an image appears —often a portrait."
+    }
   },
   {
     "slug": "diferencia-numismatica-notafilia",
@@ -738,7 +781,11 @@
         "title": "Glosario: numismática",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "“Numismática” y “notafilia” suelen usarse como sinónimos, pero designan disciplinas distintas dentro del coleccionismo. Entender la diferencia ayuda a orientar mejor una colección, elegir los catálogos adecuados y conservar cada pieza como merece. Qué es la numismática La numismática es la disciplina que estudia y colecciona monedas, medallas y, en su sentido más amplio, todo.",
+      "en": "“Numismatics” and “notaphily” are often used as synonyms, but they name distinct disciplines within collecting. Understanding the difference helps orient a collection, choose the right catalogs, and conserve each piece as it deserves. What numismatics is Numismatics is the discipline that studies and collects coins, medals and, in its broadest sense, any object that has."
+    }
   },
   {
     "slug": "numeros-serie-especiales-billetes",
@@ -796,7 +843,11 @@
         "title": "Glosario: numeración radar",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Dos billetes idénticos pueden valer muy distinto por un solo detalle: su número de serie . Ciertas combinaciones son tan buscadas que multiplican el precio de una pieza, incluso muy por encima de su valor facial. Estos son los tipos más apreciados. Series bajas Los números más bajos — 00000001, 00000002, 00000003 …— son los.",
+      "en": "Two identical banknotes can be worth very different amounts for a single detail: their serial number . Certain combinations are so sought after that they multiply the price of a piece, often far above face value. These are the most prized types. Low serials The lowest numbers — 00000001, 00000002, 00000003 …— are the first."
+    }
   },
   {
     "slug": "origenes-banca-comercial-colombia-banca-libre",
@@ -849,7 +900,11 @@
         "title": "Glosario: banca libre",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Durante buena parte del siglo XIX, Colombia no tuvo banco central ni una moneda única emitida por el Estado. En su lugar funcionó un sistema poco conocido pero fascinante para el coleccionista: la banca libre , una época en la que los bancos privados imprimían y ponían en circulación sus propios billetes. El contexto: el.",
+      "en": "For much of the nineteenth century Colombia had neither a central bank nor a single currency issued by the state. In its place ran a little-known system that fascinates collectors: free banking , an era when private banks printed and put their own notes into circulation. The context: liberal federalism The starting point was the."
+    }
   },
   {
     "slug": "origenes-banca-comercial-puerto-rico",
@@ -907,7 +962,11 @@
         "title": "Glosario: banco emisor",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "La historia de la banca en Puerto Rico está marcada por su doble herencia colonial: primero española y, desde 1898, estadounidense. Ese tránsito quedó grabado en sus billetes y monedas, lo que convierte a la isla en un terreno especialmente rico para la notafilia. El Puerto Rico español y su moneda Hasta finales del siglo.",
+      "en": "The history of banking in Puerto Rico is marked by its double colonial heritage: first Spanish and, from 1898, American. That transition was stamped on its banknotes and coins, which makes the island especially rich ground for notaphily. Spanish Puerto Rico and its money Until the late nineteenth century Puerto Rico was an overseas province."
+    }
   },
   {
     "slug": "personajes-billetes-colombia",
@@ -965,6 +1024,10 @@
         "title": "Glosario: retrato numismático",
         "dek": ""
       }
-    ]
+    ],
+    "directAnswer": {
+      "es": "Los billetes de un país son una galería de retratos que revela a quién honra su memoria colectiva. En Colombia, el papel moneda ha pasado de los héroes de la independencia a los grandes nombres de la cultura, contando de paso la historia del país. Los héroes de la independencia Durante buena parte del siglo.",
+      "en": "A country’s banknotes are a gallery of portraits that reveals whom its collective memory honors. In Colombia, paper money has moved from the heroes of independence to the great names of culture, telling the country’s story along the way. The heroes of independence For much of the twentieth century the dominant faces were those of."
+    }
   }
 ]

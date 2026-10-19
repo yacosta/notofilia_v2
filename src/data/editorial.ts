@@ -30,6 +30,15 @@ export type ClaimCallout = {
   evidenceLabelEn?: string;
 };
 
+export type EditorialEntity = {
+  name: string;
+  type: string;
+  /** Included in JSON-LD only when this URL is already in the record. */
+  sameAs?: string;
+  /** When true, the entity is a mention rather than the subject. */
+  mention?: boolean;
+};
+
 export type EditorialArticle = {
   slug: string;
   slugEn: string;
@@ -38,6 +47,11 @@ export type EditorialArticle = {
   dek: LocalizedText;
   description: LocalizedText;
   seoTitle?: LocalizedText;
+  /** 40–60 words under the H1. Used as the meta description only when description is empty. */
+  directAnswer?: LocalizedText;
+  /** Optional collector context, rendered above the source line. Not generated automatically. */
+  collectorNote?: LocalizedText;
+  entities?: EditorialEntity[];
   published: string;
   updated?: string | null;
   dateEs: string;
@@ -88,6 +102,7 @@ export const editorialCopy = {
     published: 'Publicado el',
     updated: 'Última actualización',
     reviewedBy: 'Revisado por',
+    whyItMatters: 'Por qué importa para el coleccionista',
     source: 'Fuente',
     primarySources: 'Fuentes primarias',
     aboutFigure: 'Sobre este valor',
@@ -119,6 +134,7 @@ export const editorialCopy = {
     published: 'Published',
     updated: 'Last updated',
     reviewedBy: 'Reviewed by',
+    whyItMatters: 'Why it matters to collectors',
     source: 'Source',
     primarySources: 'Primary sources',
     aboutFigure: 'About this figure',

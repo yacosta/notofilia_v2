@@ -868,6 +868,40 @@ body.mega-drawer-lock {
   pointer-events: none;
 }
 
+.valuation-factors {
+  width: 100%;
+  margin: 0.5rem 0 1.5rem;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.valuation-factors caption {
+  caption-side: bottom;
+  margin-top: 0.6rem;
+  text-align: start;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.valuation-factors th,
+.valuation-factors td {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  text-align: start;
+  vertical-align: top;
+}
+
+.direct-answer {
+  margin: 0.75rem 0 1.25rem;
+  max-width: 46rem;
+  border-left: 2px solid var(--color-gold);
+  padding: 0.15rem 0 0.15rem 0.9rem;
+  color: var(--color-cream-dim);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
 .guilloche {
   height: 1px;
   border: 0;
