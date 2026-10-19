@@ -46,6 +46,9 @@ async function goneResponse(request: Request, env: Env, url: URL): Promise<Respo
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    if (url.pathname === '/sitemap-index.xml' || url.pathname === '/sitemap-index.xml/') {
+      return withSecurity(url, Response.redirect(new URL('/sitemap.xml', url).href, 301));
+    }
     const planned = planSeoResponse(url.pathname);
     if (planned.type === 'gone') {
       return withSecurity(url, await goneResponse(request, env, url));

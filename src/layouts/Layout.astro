@@ -7,6 +7,8 @@ import Footer from '../components/Footer.astro';
 import CookieConsentBanner from '../components/CookieConsentBanner.astro';
 import { DEFAULT_OG_IMAGE, SITE_AUTHOR, otherLocalePath, type Locale } from '../lib/site';
 import { SITE_URL } from '../lib/site-url';
+import { compressDocumentTitle } from '../lib/document-title';
+import { limitMetaDescription } from '../lib/piece-seo';
 import { absoluteUrl, SITE_NAME, websiteJsonLd } from '../lib/seo';
 
 interface Props {
@@ -33,6 +35,10 @@ const {
   robots = 'index, follow, max-image-preview:large',
 } = Astro.props;
 
+const documentTitle = compressDocumentTitle(title);
+const metaDescription = limitMetaDescription(description, 165);
+const feedHref = locale === 'en' ? '/en/feed.xml' : '/feed.xml';
+const feedTitle = locale === 'en' ? 'Notofilia (English)' : 'Notofilia (español)';
 const canonical = new URL(pathname, SITE_URL).href;
 const esPath = locale === 'es' ? pathname : otherLocalePath(pathname, locale);
 const enPath = locale === 'en' ? pathname : otherLocalePath(pathname, locale);
@@ -47,10 +53,13 @@ const siteJsonLd = websiteJsonLd(locale);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <meta name="author" content={SITE_AUTHOR} />
     <meta name="robots" content={robots} />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title={feedTitle} href={feedHref} />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/MontenegrinGothicOne-Regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSans3-Variable-Latin.woff2" crossorigin />
     <link rel="canonical" href={canonical} />
@@ -73,7 +82,7 @@ const siteJsonLd = websiteJsonLd(locale);
     <meta name="twitter:image" content={ogImageAbs} />
     {ogImageAlt ? <meta name="twitter:image:alt" content={ogImageAlt} /> : null}
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{documentTitle}</title>
     <script type="application/ld+json" set:html={JSON.stringify(siteJsonLd)} />
     <slot name="head" />
     <Analytics />
