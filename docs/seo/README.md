@@ -53,6 +53,8 @@ HTML responses in `public/_headers` have no explicit edge `Cache-Control` (only 
 
 After deploy: IndexNow (existing `scripts/indexnow.mjs` on production) and GSC **Validate fix** on the 404 report.
 
+In the Cloudflare dashboard, Caching → Cache Rules, Tiered Cache, and Crawler Hints are not changed from this repo. Confirm they are not pinning an old HTML copy of `/sitemap.xml`, `/en/`, or `/editorial/` after the purge. Re-check with `curl -sI -A "Googlebot" https://notofilia.com/sitemap.xml` and `curl -sI -A "GPTBot" https://notofilia.com/en/`.
+
 ## Files
 
 | File | Role |
