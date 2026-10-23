@@ -111,6 +111,7 @@ describe('Manzano Farming Co. page', () => {
     assert.equal(token.nav.es, '25, 1901');
     assert.match(token.noSerialReason.es, /no trae número de serie/i);
     assert.match(token.about.es, /No es una pieza de Notofilia|no la republica/);
+    assert.notEqual(token.metaTitle.es, token.metaTitle.en);
     for (const locale of ['es', 'en']) {
       assert.equal(limitMetaDescription(token.metaDescription[locale]), token.metaDescription[locale]);
       assert.ok(token.metaDescription[locale].length <= 155);

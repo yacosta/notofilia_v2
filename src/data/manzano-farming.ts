@@ -224,7 +224,7 @@ export const manzanoTokenFichas: ManzanoTokenFicha[] = [
     path: MANZANO_25_1901_PATH,
     pathEn: MANZANO_25_1901_PATH_EN,
     nav: { es: '25, 1901', en: '25, 1901' },
-    metaTitle: { es: '25 · Manzano Farming · 1901', en: '25 · Manzano Farming · 1901' },
+    metaTitle: { es: '25 · Manzano Farming · 1901', en: '25 · Manzano Farming token · 1901' },
     metaDescription: {
       es: 'Ficha del 25 de 1901 de Manzano Farming Co.: bronce, 28,5 mm, resello que Absoluti lee JB. No es una pieza de esta colección.',
       en: 'Record of the 1901 Manzano Farming Co. 25: bronze, 28.5 mm, counterstamp read by Absoluti as JB. It is not a piece in this collection.',
