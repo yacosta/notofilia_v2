@@ -27,6 +27,7 @@ import {
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
 import { HACIENDA_TOKENS_PATH, haciendaTokensCopy } from '../data/hacienda-tokens';
+import { MANZANO_FARMING_PATH, manzanoFarmingCopy } from '../data/manzano-farming';
 import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
@@ -619,7 +620,17 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: haciendaTokensCopy.en.metaDescription,
       },
       extra:
-        'fichas de hacienda exonumia scrip comisariato La Amalia Venecia Zancudo Pick S909 Manuelita United Fruit artículo 136 Código Sustantivo Kemmerer Henao tarro almud arroba',
+        'fichas de hacienda exonumia scrip comisariato La Amalia Venecia Zancudo Pick S909 Manuelita United Fruit artículo 136 Código Sustantivo Kemmerer Henao tarro almud arroba Manzano Farming',
+    },
+    {
+      href: MANZANO_FARMING_PATH,
+      title: { es: manzanoFarmingCopy.es.nav, en: manzanoFarmingCopy.en.nav },
+      dek: {
+        es: manzanoFarmingCopy.es.metaDescription,
+        en: manzanoFarmingCopy.en.metaDescription,
+      },
+      extra:
+        'Manzano Farming Co Sotaquirá Paipa Boyacá Papayo Sativa Satira Carreño Soconsuca seña 1901 resello JB Barriga Credencial Historia',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,

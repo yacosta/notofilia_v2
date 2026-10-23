@@ -55,6 +55,7 @@ import { COSCOJAS_SANTANDER_PATH } from '../data/coscojas-santander';
 import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from '../data/popayan-1-escudo-carlos-iv';
 import { SANTA_FE_MINT_PATH } from '../data/santa-fe-mint';
 import { HACIENDA_TOKENS_PATH } from '../data/hacienda-tokens';
+import { MANZANO_FARMING_PATH } from '../data/manzano-farming';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
@@ -459,6 +460,14 @@ export const megaNav: NavNode[] = [
             es: 'Fichas de hacienda',
             en: 'Hacienda tokens',
             href: HACIENDA_TOKENS_PATH,
+            children: [
+              {
+                id: 'manzano-farming-co',
+                es: 'Manzano Farming Co.',
+                en: 'Manzano Farming Co.',
+                href: MANZANO_FARMING_PATH,
+              },
+            ],
           },
           {
             id: 'numismatica-lazaretos',
