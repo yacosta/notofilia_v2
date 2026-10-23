@@ -71,8 +71,16 @@ describe('Manzano Farming Co. page', () => {
     assert.match(pageSource, /SourceList/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /token-fichas-heading/);
+    assert.match(pageSource, /SeriesHero/);
+    assert.match(pageSource, /size="frame"/);
+    assert.match(pageSource, /HACIENDA_TOKENS_HERO/);
+    assert.doesNotMatch(pageSource, /<h1/);
     assert.match(tokenPageSource, /id="main-content"/);
     assert.match(tokenPageSource, /SourceList/);
+    assert.match(tokenPageSource, /SeriesHero/);
+    assert.match(tokenPageSource, /size="frame"/);
+    assert.match(tokenPageSource, /HACIENDA_TOKENS_HERO/);
+    assert.doesNotMatch(tokenPageSource, /<h1/);
     assert.doesNotMatch(tokenPageSource, /<img/);
     assert.doesNotMatch(MANZANO_FARMING_PATH, /\/blog\//);
   });

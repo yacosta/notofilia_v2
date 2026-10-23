@@ -4,6 +4,20 @@ import type { Locale } from '../lib/locale-paths';
 export const HACIENDA_TOKENS_PATH = '/coleccion/colombia-numismatica/fichas-de-hacienda/';
 export const HACIENDA_TOKENS_PATH_EN = '/collection/colombia-numismatics/hacienda-tokens/';
 
+/** One finished poster for both locales. The English filename was a byte-identical copy. Frame hero: do not crop. Card sibling is 800px wide. */
+export const HACIENDA_TOKENS_HERO = {
+  es: {
+    src: '/uploads/fichas-de-hacienda-hero.jpg',
+    width: 1168,
+    height: 784,
+  },
+  en: {
+    src: '/uploads/fichas-de-hacienda-hero.jpg',
+    width: 1168,
+    height: 784,
+  },
+} as const;
+
 export const haciendaTokensCopy = {
   es: {
     nav: 'Fichas de hacienda',
@@ -21,6 +35,8 @@ export const haciendaTokensCopy = {
     published: '2026-10-22',
     dateLabel: '22 de octubre de 2026',
     authorLabel: 'Yezid Acosta',
+    heroAlt:
+      'Ilustración de un mapa de la República de Colombia con la fecha 1901, la leyenda Hacienda Tokens y Colombian Numismatics, una casa de hacienda, ganado, brújula, lupa y fichas dibujadas, entre ellas una de Manzano Farming Co. con el valor 10. No es el escaneo de piezas de la colección.',
     factsHeading: 'En breve',
     facts: [
       { label: 'Qué son', value: 'Piezas monetiformes privadas, sin curso legal: fichas, vales y señas de hacienda, mina o empresa.' },
@@ -48,6 +64,8 @@ export const haciendaTokensCopy = {
     published: '2026-10-22',
     dateLabel: 'October 22, 2026',
     authorLabel: 'Yezid Acosta',
+    heroAlt:
+      'Illustration of a map of the Republic of Colombia dated 1901, lettered Hacienda Tokens and Colombian Numismatics, with a hacienda house, cattle, a compass, a magnifying glass, and drawn tokens, including a Manzano Farming Co. piece marked 10. It is not a scan of pieces in the collection.',
     factsHeading: 'In brief',
     facts: [
       { label: 'What they are', value: 'Private money-like pieces, without legal tender: tokens, vouchers, and tallies of an estate, a mine, or a company.' },

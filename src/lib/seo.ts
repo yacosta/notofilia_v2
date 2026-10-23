@@ -25,7 +25,7 @@ export { limitMetaDescription, META_DESCRIPTION_MAX } from './piece-seo';
 
 export const SITE_NAME = 'Notofilia';
 export const SITE_AUTHOR = 'Yezid Acosta';
-export const DEFAULT_OG_IMAGE = '/images/hero-slide.jpg';
+export const DEFAULT_OG_IMAGE = '/images/quetzal-billete-cinco-quetzales-guatemala.jpg';
 export const PERSON_ID = `${SITE_URL}/#yezid-acosta`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const ORG_ID = `${SITE_URL}/#organization`;

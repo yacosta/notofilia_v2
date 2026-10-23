@@ -1,7 +1,7 @@
 ---
 title: Fidel Castro en Billete Colombiano (draft supplied 18 Oct 2026)
 role: Research draft for the published blog note
-public_image: /images/hero-engraving-01.jpg
+public_image: /uploads/fidel-castro-billete-mil-pesos-gaitan.jpg
 note: The published article uses the homepage hero engraving. The 1948/2012 plate from this draft is not a collection record; the live page rebuilds that archive as HTML and CSS. The published copy in src/data/blog-articles.json rewrites this draft in Notofilia voice and does not copy Wikipedia, Facebook, YouTube, or price columns.
 ---
 

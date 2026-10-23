@@ -6,14 +6,14 @@ export const COSCOJAS_SANTANDER_PATH_EN = '/collection/colombia-numismatics/sant
 /** Finished posters. Frame hero: do not crop. Card siblings are 800px wide. */
 export const COSCOJAS_SANTANDER_HERO = {
   es: {
-    src: '/uploads/coscojas-de-santander-hero.jpg',
+    src: '/uploads/monedas-coscojas-de-santander.jpg',
     width: 1024,
     height: 438,
   },
   en: {
-    src: '/uploads/santander-coscojas-hero.jpg',
+    src: '/uploads/monedas-coscojas-de-santander.jpg',
     width: 1024,
-    height: 439,
+    height: 438,
   },
 } as const;
 

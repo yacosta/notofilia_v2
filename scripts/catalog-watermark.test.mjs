@@ -50,8 +50,11 @@ describe('catalog watermark helpers', () => {
 
   it('describes the catalog file in copyright copy', () => {
     assert.match(copyrightNotice(2026), /Yezid Acosta \/ Notofilia/);
-    assert.match(imageDescription('china/hero-china.jpg'), /china\/hero-china\.jpg/);
-    assert.match(imageDescription('china/hero-china.jpg'), /https:\/\/notofilia\.com/);
+    assert.match(
+      imageDescription('china/mapa-ilustrado-china-muralla-billetes.jpg'),
+      /china\/mapa-ilustrado-china-muralla-billetes\.jpg/,
+    );
+    assert.match(imageDescription('china/mapa-ilustrado-china-muralla-billetes.jpg'), /https:\/\/notofilia\.com/);
   });
 
   it('collects nested raster files only', async () => {

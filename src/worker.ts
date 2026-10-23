@@ -1,5 +1,6 @@
 import { contactLegacyRedirect } from './data/contact';
 import { catalogImageRedirect } from './lib/catalog-image-renames.ts';
+import { publicImageRedirect } from './lib/public-image-renames.ts';
 import { cfImageFallbackPath } from './lib/cf-image-path.ts';
 import { planSeoResponse } from './lib/gsc-redirects';
 import { applySecurityHeaders } from './lib/security-headers.ts';
@@ -74,7 +75,7 @@ export default {
       }
     }
 
-    const renamedImage = catalogImageRedirect(url.pathname);
+    const renamedImage = catalogImageRedirect(url.pathname) ?? publicImageRedirect(url.pathname);
     if (renamedImage) {
       const target = new URL(renamedImage, url);
       target.search = url.search;

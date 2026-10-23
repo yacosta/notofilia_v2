@@ -54,28 +54,32 @@ describe('editorial SEO helpers', () => {
     assert.ok(article);
     assert.equal(article.slugEn, 'fidel-castro-on-colombian-1000-peso-note');
     assert.equal(article.title.es, 'Fidel Castro en el mil pesos de Gaitán');
-    assert.equal(article.image, '/images/hero-engraving-01.jpg');
+    assert.equal(article.image, '/uploads/fidel-castro-billete-mil-pesos-gaitan.jpg');
     assert.equal(article.imageWidth, 1600);
     assert.equal(article.imageHeight, 900);
     assert.equal(article.imageFit, undefined);
     assert.equal(
-      existsSync(new URL('../../public/images/hero-engraving-01.jpg', import.meta.url)),
+      existsSync(new URL('../../public/uploads/fidel-castro-billete-mil-pesos-gaitan.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/fidel-castro-billete-mil-pesos-gaitan-card.jpg', import.meta.url)),
       true,
     );
     assert.match(
       readFileSync(new URL('../pages/index.astro', import.meta.url), 'utf8'),
-      /ogImage="\/images\/hero-engraving-01.jpg"/,
+      /ogImage="\/images\/grabado-talla-dulce-eva-peron-billete-argentino.jpg"/,
     );
     assert.equal(
       article.imageAlt.es,
-      'Grabado a talla dulce de Eva Perón con el brazo en alto ante una multitud, detalle de un billete argentino',
+      'Anverso del billete de 1.000 pesos del Banco de la República con el retrato de Jorge Eliécer Gaitán, la multitud y el serial 69394998, fecha 16 de agosto de 2000',
     );
     assert.equal(
       article.imageAlt.en,
-      'Intaglio engraving of Eva Perón with her arm raised before a crowd, detail from an Argentine banknote',
+      'Face of the Banco de la República 1,000-peso note with the portrait of Jorge Eliécer Gaitán, the crowd, and serial 69394998, dated 16 August 2000',
     );
-    assert.match(article.caption.es, /portada de Notofilia/);
-    assert.doesNotMatch(article.image, /fidel-castro-billete-1000-pesos/);
+    assert.match(article.caption.es, /serial 69394998/);
+    assert.match(article.image, /fidel-castro-billete-mil-pesos-gaitan/);
     assert.ok(article.primarySources?.length >= 8);
     const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
     assert.match(sourceUrls, /banrep\.gov\.co/);
@@ -113,6 +117,19 @@ describe('editorial SEO helpers', () => {
     assert.match(article.bodyHtml.es, /\/glosario\/pick\//);
     assert.match(article.bodyHtml.es, /\/coleccion\/colombia\/2000-pesos-2008\//);
     assert.equal(article.slugEn, 'how-colombian-banknotes-are-valued');
+    assert.equal(article.image, '/uploads/como-valorar-billete-colombiano.jpg');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/como-valorar-billete-colombiano.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/como-valorar-billete-colombiano-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.match(article.imageAlt.es, /Francisco de Paula Santander/);
+    assert.match(article.imageAlt.en, /Francisco de Paula Santander/);
+    const certification = blogArticles.find((item) => item.slug === 'mejores-empresas-certificacion-monedas-billetes');
+    assert.equal(certification.image, '/uploads/mejores-empresas-certificacion-monedas-billetes.jpg');
   });
 
   it('shows the imprint essay figures from files that exist and links live catalog pages', () => {

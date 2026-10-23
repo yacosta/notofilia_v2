@@ -1,10 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
+import SeriesHero from './SeriesHero.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
-import { haciendaTokensPath } from '../../data/hacienda-tokens';
+import { HACIENDA_TOKENS_HERO, haciendaTokensCopy, haciendaTokensPath } from '../../data/hacienda-tokens';
 import {
   manzanoFarmingPath,
   manzanoTokenById,
@@ -12,8 +13,9 @@ import {
   manzanoTokenPath,
 } from '../../data/manzano-farming';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { imageObjectJsonLd } from '../../lib/json-ld';
 import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
-import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
 
 interface Props {
   locale: Locale;
@@ -32,6 +34,9 @@ const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
 const fichasHref = haciendaTokensPath(locale);
 const firmHref = manzanoFarmingPath(locale);
 const about = enhanceProseHtml(token.about[locale], locale);
+const hero = HACIENDA_TOKENS_HERO[locale];
+const heroAlt = haciendaTokensCopy[locale].heroAlt;
+const imageUrl = new URL(hero.src, SITE_URL).href;
 const citations = token.sources.map((source) => ({
   '@type': 'CreativeWork',
   name: source[locale],
@@ -48,6 +53,7 @@ const jsonLd = {
       datePublished: token.published,
       dateModified: token.published,
       inLanguage: locale,
+      image: imageObjectJsonLd({ image: imageUrl, locale, caption: heroAlt }),
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
@@ -76,6 +82,8 @@ const jsonLd = {
   description={token.metaDescription[locale]}
   locale={locale}
   pathname={pathname}
+  ogImage={hero.src}
+  ogImageAlt={heroAlt}
   ogType="article"
   publishedTime={token.published}
 >
@@ -84,6 +92,17 @@ const jsonLd = {
   </Fragment>
 
   <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <SeriesHero
+      src={hero.src}
+      alt={heroAlt}
+      width={hero.width}
+      height={hero.height}
+      headingId="manzano-token-heading"
+      eyebrow={copy[locale].virtualCollection}
+      title={token.title[locale]}
+      size="frame"
+    />
+
     <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
       <Breadcrumb
         locale={locale}
@@ -98,14 +117,7 @@ const jsonLd = {
         ]}
       />
 
-      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{token.kicker[locale]}</p>
-      <h1
-        id="manzano-token-heading"
-        class="mb-0 mt-3 max-w-[46rem] font-display text-[clamp(1.75rem,4.2vw,2.85rem)] font-normal leading-[1.12] text-cream-dim"
-      >
-        {token.title[locale]}
-      </h1>
-      <p class="mb-5 mt-6 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{token.lead[locale]}</p>
+      <p class="mb-5 mt-0 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{token.lead[locale]}</p>
       <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
         <time datetime={token.published}>{token.dateLabel[locale]}</time>
         <span> · </span>

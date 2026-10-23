@@ -36,18 +36,11 @@ interface Props {
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
 const pathname = seriesPath(locale);
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/united-states.jpg',
-        width: 2128,
-        height: 912,
-      }
-    : {
-        src: '/images/catalog/estados-unidos.jpg',
-        width: 2128,
-        height: 912,
-      };
+const hero = {
+  src: '/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg',
+  width: 2128,
+  height: 912,
+};
 
 const faqItems = localizeFaq(seriesFaqs['united-states'], locale);
 const jsonLd = collectionPageJsonLd({

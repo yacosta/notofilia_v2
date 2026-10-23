@@ -27,18 +27,11 @@ const t = colonialSeriesCopy[locale];
 const pathname = colonialSeriesPath(locale);
 const notes = notesForChapter('us-colonial');
 const sources = colonialSeriesSources;
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/united-states.jpg',
-        width: 2128,
-        height: 912,
-      }
-    : {
-        src: '/images/catalog/estados-unidos.jpg',
-        width: 2128,
-        height: 912,
-      };
+const hero = {
+  src: '/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg',
+  width: 2128,
+  height: 912,
+};
 
 const jsonLd = collectionPageJsonLd({
   locale,

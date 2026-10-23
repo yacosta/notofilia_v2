@@ -1908,7 +1908,7 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     hero: {
       src: {
-        es: '/images/catalog/estados-unidos/hero-new-brunswick.jpg',
+        es: '/images/catalog/estados-unidos/mapa-banco-estatal-new-brunswick.jpg',
         en: '/images/catalog/estados-unidos/hero-new-brunswick-en.jpg',
       },
       width: 2128,
@@ -2272,8 +2272,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     hero: {
       src: {
-        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
-        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        es: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
+        en: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
       },
       width: 2128,
       height: 912,
@@ -2421,8 +2421,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     hero: {
       src: {
-        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
-        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        es: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
+        en: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
       },
       width: 2128,
       height: 912,
@@ -2570,8 +2570,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     hero: {
       src: {
-        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
-        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        es: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
+        en: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
       },
       width: 2128,
       height: 912,
@@ -2706,8 +2706,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     hero: {
       src: {
-        es: '/images/catalog/estados-unidos/hero-richmond.jpg',
-        en: '/images/catalog/estados-unidos/hero-richmond.jpg',
+        es: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
+        en: '/images/catalog/estados-unidos/mapa-richmond-capital-confederada-1861.jpg',
       },
       width: 2128,
       height: 912,
