@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import {
+  HACIENDA_TOKENS_HERO,
   HACIENDA_TOKENS_PATH,
   HACIENDA_TOKENS_PATH_EN,
   haciendaTokensCopy,
@@ -43,6 +44,21 @@ describe('Hacienda tokens page', () => {
     assert.match(esRoute, /HaciendaTokensPage/);
     assert.match(enRoute, /HaciendaTokensPage/);
     assert.match(pageSource, /SourceList/);
+    assert.match(pageSource, /SeriesHero/);
+    assert.match(pageSource, /size="frame"/);
+    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
+    assert.equal(HACIENDA_TOKENS_HERO.es.src, '/uploads/fichas-de-hacienda-hero.jpg');
+    assert.equal(HACIENDA_TOKENS_HERO.en.src, '/uploads/hacienda-tokens-hero.jpg');
+    assert.equal(HACIENDA_TOKENS_HERO.es.width, 1168);
+    assert.equal(HACIENDA_TOKENS_HERO.es.height, 784);
+    assert.match(haciendaTokensCopy.es.heroAlt, /Ilustración/);
+    assert.match(haciendaTokensCopy.en.heroAlt, /Illustration/);
+    assert.match(haciendaTokensCopy.es.heroAlt, /No es el escaneo/);
+    assert.match(haciendaTokensCopy.en.heroAlt, /not a scan/);
+    for (const hero of Object.values(HACIENDA_TOKENS_HERO)) {
+      assert.ok(existsSync(new URL(`../../public${hero.src}`, import.meta.url)));
+      assert.ok(existsSync(new URL(`../../public${hero.src.replace('.jpg', '-card.jpg')}`, import.meta.url)));
+    }
     assert.doesNotMatch(HACIENDA_TOKENS_PATH, /\/blog\//);
   });
 
