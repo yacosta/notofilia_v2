@@ -8,7 +8,7 @@ import {
 } from './estados-unidos-coinage';
 
 export const HARD_TIMES_HERO = {
-  src: '/images/catalog/estados-unidos/hero-hard-times.jpg',
+  src: '/images/catalog/estados-unidos/mapa-fichas-hard-times-1837.jpg',
   width: 1024,
   height: 438,
 } as const;

@@ -12,8 +12,8 @@ import {
 describe('catalogAssetSrc', () => {
   it('appends a version query for catalog hero cache busting', () => {
     assert.equal(
-      catalogAssetSrc('/images/catalog/colombia/hero-colombia.jpg'),
-      `/images/catalog/colombia/hero-colombia.jpg?v=${CATALOG_HERO_VERSION}`,
+      catalogAssetSrc('/images/catalog/colombia/billetes-antiguos-colombia-coleccion.jpg'),
+      `/images/catalog/colombia/billetes-antiguos-colombia-coleccion.jpg?v=${CATALOG_HERO_VERSION}`,
     );
   });
 
@@ -23,8 +23,8 @@ describe('catalogAssetSrc', () => {
 
   it('passes versioned paths through cfImage', () => {
     assert.match(
-      cfImage(catalogAssetSrc('/images/catalog/united-states.jpg'), { width: 1600 }),
-      /united-states\.jpg\?v=20260829$/,
+      cfImage(catalogAssetSrc('/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg'), { width: 1600 }),
+      /mapa-distritos-reserva-federal-estados-unidos\.jpg\?v=20260829$/,
     );
   });
 
@@ -45,8 +45,8 @@ describe('catalogAssetSrc', () => {
 
   it('accepts an explicit format override for LCP heroes', () => {
     assert.equal(
-      cfImage('/images/hero-slide.jpg', { width: 1080, quality: 55, format: 'avif' }),
-      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/hero-slide.jpg',
+      cfImage('/images/quetzal-billete-cinco-quetzales-guatemala.jpg', { width: 1080, quality: 55, format: 'avif' }),
+      '/cdn-cgi/image/width=1080,format=avif,quality=55/images/quetzal-billete-cinco-quetzales-guatemala.jpg',
     );
   });
 });

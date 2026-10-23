@@ -194,7 +194,7 @@ describe('US Hard Times HT-34 1837 token', () => {
     assert.match(esHt34Series, /UnitedStatesHardTimesSeriesPage locale="es"/);
     assert.match(enHt34Series, /UnitedStatesHardTimesSeriesPage locale="en"/);
     assert.match(data, /USA_HARD_TIMES_PATH = '\/coleccion\/estados-unidos-numismatica\/fichas-hard-times\/'/);
-    assert.match(hardTimesEssay, /hero-hard-times\.jpg/);
+    assert.match(hardTimesEssay, /mapa-fichas-hard-times-1837\.jpg/);
     assert.match(hardTimesEssay, /chapterId === 'hard-times'/);
     assert.match(hardTimesEssay, /HT-181/);
     assert.match(hardTimesEssay, /Specie Circular/);
