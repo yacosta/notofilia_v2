@@ -48,7 +48,7 @@ describe('Hacienda tokens page', () => {
     assert.match(pageSource, /size="frame"/);
     assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
     assert.equal(HACIENDA_TOKENS_HERO.es.src, '/uploads/fichas-de-hacienda-hero.jpg');
-    assert.equal(HACIENDA_TOKENS_HERO.en.src, '/uploads/hacienda-tokens-hero.jpg');
+    assert.equal(HACIENDA_TOKENS_HERO.en.src, '/uploads/fichas-de-hacienda-hero.jpg');
     assert.equal(HACIENDA_TOKENS_HERO.es.width, 1168);
     assert.equal(HACIENDA_TOKENS_HERO.es.height, 784);
     assert.match(haciendaTokensCopy.es.heroAlt, /Ilustración/);
