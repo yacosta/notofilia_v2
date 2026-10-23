@@ -4,15 +4,34 @@ import { describe, it } from 'node:test';
 import { localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import {
+  MANZANO_25_1901_PATH,
+  MANZANO_25_1901_PATH_EN,
   MANZANO_FARMING_PATH,
   MANZANO_FARMING_PATH_EN,
   manzanoFarmingCopy,
   manzanoFarmingDedicatedSlugs,
   manzanoFarmingPath,
   manzanoFarmingSources,
+  manzanoTokenById,
+  manzanoTokenPath,
 } from './manzano-farming.ts';
 
 const pageSource = readFileSync(new URL('../components/catalog/ManzanoFarmingPage.astro', import.meta.url), 'utf8');
+const tokenPageSource = readFileSync(new URL('../components/catalog/ManzanoTokenPage.astro', import.meta.url), 'utf8');
+const tokenEsRoute = readFileSync(
+  new URL(
+    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/index.astro',
+    import.meta.url,
+  ),
+  'utf8',
+);
+const tokenEnRoute = readFileSync(
+  new URL(
+    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/index.astro',
+    import.meta.url,
+  ),
+  'utf8',
+);
 const esRoute = readFileSync(
   new URL('../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/index.astro', import.meta.url),
   'utf8',
@@ -41,12 +60,20 @@ describe('Manzano Farming Co. page', () => {
     assert.deepEqual([...manzanoFarmingDedicatedSlugs], [
       'coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co',
       'collection/colombia-numismatics/hacienda-tokens/manzano-farming-co',
+      'coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901',
+      'collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901',
     ]);
     assert.equal(manzanoFarmingCopy.es.published, '2026-10-23');
     assert.match(esRoute, /ManzanoFarmingPage/);
     assert.match(enRoute, /ManzanoFarmingPage/);
+    assert.match(tokenEsRoute, /ManzanoTokenPage/);
+    assert.match(tokenEnRoute, /id="25-1901"/);
     assert.match(pageSource, /SourceList/);
     assert.match(pageSource, /id="main-content"/);
+    assert.match(pageSource, /token-fichas-heading/);
+    assert.match(tokenPageSource, /id="main-content"/);
+    assert.match(tokenPageSource, /SourceList/);
+    assert.doesNotMatch(tokenPageSource, /<img/);
     assert.doesNotMatch(MANZANO_FARMING_PATH, /\/blog\//);
   });
 
@@ -69,6 +96,19 @@ describe('Manzano Farming Co. page', () => {
     assert.doesNotMatch(prose, /\$\s?\d/);
     assert.doesNotMatch(prose, /\bUSD\b|precio|Henao \d/);
     assert.doesNotMatch(prose, /TODO\(owner\)/);
+    const token = manzanoTokenById('25-1901');
+    assert.ok(token);
+    assert.equal(manzanoTokenPath(token, 'es'), MANZANO_25_1901_PATH);
+    assert.equal(manzanoTokenPath(token, 'en'), `/en${MANZANO_25_1901_PATH_EN}`);
+    assert.equal(token.nav.es, '25, 1901');
+    assert.match(token.noSerialReason.es, /no trae número de serie/i);
+    assert.match(token.about.es, /No es una pieza de Notofilia|no la republica/);
+    for (const locale of ['es', 'en']) {
+      assert.equal(limitMetaDescription(token.metaDescription[locale]), token.metaDescription[locale]);
+      assert.ok(token.metaDescription[locale].length <= 155);
+      assert.ok(`${token.metaTitle[locale]} · Notofilia`.length <= 70);
+    }
+    assert.doesNotMatch(`${token.front.es}\n${token.back.en}\n${token.lead.es}`, /\$\s?\d|serial [A-Z0-9]{5,}/);
     assert.equal(manzanoFarmingSources.length >= 5, true);
     for (const source of manzanoFarmingSources) {
       assert.match(source.href, /^https?:\/\//);

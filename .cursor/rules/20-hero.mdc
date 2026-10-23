@@ -66,7 +66,7 @@ The Casa de Moneda de Santa Fe de Nuevo Reino page (`SantaFeMintPage.astro`) use
 
 The hacienda-token essay (`HaciendaTokensPage.astro`) uses the same text header until a finished poster exists. Do not invent a token photograph for that hero.
 
-The Manzano Farming Co. page (`ManzanoFarmingPage.astro`) uses the same text header. Do not invent a token photograph, and do not republish another collection’s scan as a Notofilia piece.
+The Manzano Farming Co. page (`ManzanoFarmingPage.astro`) and its token ficha (`ManzanoTokenPage.astro`, 25 of 1901) use the same text header. Do not invent a token photograph, and do not republish another collection’s scan as a Notofilia piece.
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `editorialUploadSrcset` for `/uploads/` files. That is not a hero.
 

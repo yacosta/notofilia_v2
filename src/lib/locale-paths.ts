@@ -444,6 +444,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
   { es: '/coleccion/colombia-numismatica/1-escudo-carlos-iv-popayan-1792-1808/', en: '/collection/colombia-numismatics/1-escudo-charles-iv-popayan-1792-1808/' },
   { es: '/coleccion/colombia-numismatica/casa-de-moneda-de-santa-fe-de-nuevo-reino/', en: '/collection/colombia-numismatics/santa-fe-de-nuevo-reino-mint/' },
   {
+    es: '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/',
+    en: '/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/',
+  },
+  {
     es: '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/',
     en: '/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
   },
@@ -780,6 +784,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia-numismatica/1-escudo-popayan-1808-p-jf/',
     '/en/coleccion/colombia-numismatica/1-escudo-carlos-iv-popayan-1792-1808/',
     '/en/coleccion/colombia-numismatica/casa-de-moneda-de-santa-fe-de-nuevo-reino/',
+    '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/',
     '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/',
     '/en/coleccion/colombia-numismatica/fichas-de-hacienda/',
     '/en/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/',

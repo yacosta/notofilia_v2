@@ -5,7 +5,13 @@ import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { haciendaTokensPath } from '../../data/hacienda-tokens';
-import { manzanoFarmingCopy, manzanoFarmingPath, manzanoFarmingSources } from '../../data/manzano-farming';
+import {
+  manzanoFarmingCopy,
+  manzanoFarmingPath,
+  manzanoFarmingSources,
+  manzanoTokenFichas,
+  manzanoTokenPath,
+} from '../../data/manzano-farming';
 import bodyEs from '../../data/manzano-farming/es.html?raw';
 import bodyEn from '../../data/manzano-farming/en.html?raw';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
@@ -117,6 +123,27 @@ const jsonLd = {
             ))
           }
         </dl>
+      </section>
+
+      <section class="mb-14" aria-labelledby="token-fichas-heading">
+        <h2 id="token-fichas-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.tokenFichasHeading}
+        </h2>
+        <ul class="m-0 grid list-none gap-4 p-0 lg:grid-cols-3">
+          {
+            manzanoTokenFichas.map((token) => (
+              <li>
+                <a
+                  href={manzanoTokenPath(token, locale)}
+                  class="flex min-h-11 flex-col rounded-[6px] border border-line-strong bg-panel p-5 text-cream hover:border-gold-light"
+                >
+                  <span class="font-display text-[1.35rem]/8 text-cream-dim">{token.nav[locale]}</span>
+                  <span class="mt-2 text-[15px]/6 text-muted">{token.dek[locale]}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </section>
 
       <div class="prose-notofilia" lang={locale} set:html={body} />
