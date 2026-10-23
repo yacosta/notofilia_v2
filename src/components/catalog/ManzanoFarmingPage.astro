@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import SourceList from './SourceList.astro';
+import { enhanceProseHtml } from '../../data/editorial';
+import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import { haciendaTokensPath } from '../../data/hacienda-tokens';
+import { manzanoFarmingCopy, manzanoFarmingPath, manzanoFarmingSources } from '../../data/manzano-farming';
+import bodyEs from '../../data/manzano-farming/es.html?raw';
+import bodyEn from '../../data/manzano-farming/en.html?raw';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { PERSON_ID, SITE_AUTHOR, SITE_NAME, breadcrumbJsonLd } from '../../lib/seo';
+import { localizePath, SITE_URL, type Locale } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = manzanoFarmingCopy[locale];
+const pathname = manzanoFarmingPath(locale);
+const pageUrl = new URL(pathname, SITE_URL).href;
+const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
+const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
+const fichasHref = haciendaTokensPath(locale);
+const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
+const citations = manzanoFarmingSources.map((source) => ({
+  '@type': 'CreativeWork',
+  name: source[locale],
+  url: source.href,
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.published,
+      dateModified: t.published,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      reviewedBy: { '@type': 'Person', name: SITE_AUTHOR, '@id': PERSON_ID },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      citation: citations,
+      about: [
+        { '@type': 'Organization', name: 'Manzano Farming Co.' },
+        { '@type': 'Place', name: 'Sotaquirá, Boyacá' },
+        { '@type': 'Place', name: 'Paipa, Boyacá' },
+      ],
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: localizePath('/', locale) },
+      { name: t.numismatica, item: numismaticaHref },
+      { name: t.series, item: seriesHref },
+      { name: t.fichas, item: fichasHref },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
+---
+
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogType="article"
+  publishedTime={t.published}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] pb-16 pt-14 md:pb-24 md:pt-16">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: numismaticaHref, label: t.numismatica },
+          { href: seriesHref, label: t.series },
+          { href: fichasHref, label: t.fichas },
+          { label: t.nav },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">{t.kicker}</p>
+      <h1
+        id="manzano-farming-heading"
+        class="mb-0 mt-3 max-w-[46rem] font-display text-[clamp(1.75rem,4.2vw,2.85rem)] font-normal leading-[1.12] text-cream-dim"
+      >
+        {t.title}
+      </h1>
+      <p class="mb-5 mt-6 max-w-[46rem] text-[clamp(19px,2.4vw,23px)] italic leading-[1.5] text-cream-dim">{t.lead}</p>
+      <p class="mb-10 mt-0 font-sans text-[14px] text-muted">
+        <time datetime={t.published}>{t.dateLabel}</time>
+        <span> · </span>
+        <span>{t.authorLabel}</span>
+      </p>
+
+      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+        <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {
+            t.facts.map((fact) => (
+              <div class="sm:col-span-2">
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{fact.label}</dt>
+                <dd class="m-0 mt-1 text-cream">{fact.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </section>
+
+      <div class="prose-notofilia" lang={locale} set:html={body} />
+
+      <SourceList locale={locale} sources={[...manzanoFarmingSources]} heading={t.sourcesTitle} />
+
+      <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
+        <a href={fichasHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.fichasCta}
+        </a>
+        <a href={seriesHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.seriesCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

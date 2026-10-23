@@ -303,6 +303,9 @@ describe('Colombia visual catalogs', () => {
     assert.match(colombiaBlock, /href: COSCOJAS_SANTANDER_PATH/);
     assert.match(colombiaBlock, /id: 'fichas-de-hacienda'/);
     assert.match(colombiaBlock, /href: HACIENDA_TOKENS_PATH/);
+    assert.match(colombiaBlock, /id: 'manzano-farming-co'/);
+    assert.match(colombiaBlock, /href: MANZANO_FARMING_PATH/);
+    assert.match(colombiaBlock, /es: 'Manzano Farming Co\.'/);
     assert.match(colombiaBlock, /id: 'numismatica-lazaretos'/);
     assert.match(colombiaBlock, /href: LAZARETTOS_NUMISMATICS_PATH/);
     assert.doesNotMatch(colombiaBlock, /COLOMBIA_COIN_CATALOG_PATH/);

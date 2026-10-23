@@ -75,6 +75,7 @@ import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
 import { popayan1EscudoCarlosIvDedicatedSlugs } from '../data/popayan-1-escudo-carlos-iv';
 import { santaFeMintDedicatedSlugs } from '../data/santa-fe-mint';
 import { haciendaTokensDedicatedSlugs } from '../data/hacienda-tokens';
+import { manzanoFarmingDedicatedSlugs } from '../data/manzano-farming';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, localizePath, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -385,6 +386,7 @@ const dedicatedEs = [
   ...popayan1EscudoCarlosIvDedicatedSlugs,
   ...santaFeMintDedicatedSlugs,
   ...haciendaTokensDedicatedSlugs,
+  ...manzanoFarmingDedicatedSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),
