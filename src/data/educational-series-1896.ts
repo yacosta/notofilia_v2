@@ -4,7 +4,7 @@ import type { Locale } from '../lib/locale-paths';
 export const EDUCATIONAL_SERIES_PATH = '/coleccion/estados-unidos/serie-educativa-1896/';
 export const EDUCATIONAL_SERIES_PATH_EN = '/collection/united-states/educational-series-1896/';
 
-/** Finished posters. Frame hero: do not crop. Card siblings are 800px wide. */
+/** Finished posters. Shown in the shared series hero band. Do not trim the master. Card siblings are 800px wide. */
 export const EDUCATIONAL_SERIES_HERO = {
   es: {
     src: '/uploads/serie-educativa-1896-hero.jpg',

@@ -57,8 +57,8 @@ describe('1896 Educational Series resource page', () => {
     assert.match(pageSource, /isEducationalSeriesNote/);
     assert.ok(pageSource.indexOf('educational-market-heading') < pageSource.indexOf('holdingsAria'));
     assert.match(pageSource, /SeriesHero/);
-    assert.match(pageSource, /size="frame"/);
-    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
+    assert.match(pageSource, /imageClass="object-\[50%_50%\]"/);
+    assert.doesNotMatch(pageSource, /size="frame"|size="compact"/);
     assert.equal(EDUCATIONAL_SERIES_HERO.es.src, '/uploads/serie-educativa-1896-hero.jpg');
     assert.equal(EDUCATIONAL_SERIES_HERO.en.src, '/uploads/educational-series-1896-hero.jpg');
     assert.equal(EDUCATIONAL_SERIES_HERO.es.width, 1024);

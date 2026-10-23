@@ -18,3 +18,9 @@ export const heroSrcset = [
 ].join(', ');
 
 export const heroSizes = '100vw';
+
+/**
+ * Photo-hero band shared by the homepage and every catalogue hero.
+ * Reference page: `/coleccion/colombia/` (`min-h-[86vh]`, `md:min-h-[94vh]`).
+ */
+export const heroBandClass = 'min-h-[86vh] md:min-h-[94vh]';

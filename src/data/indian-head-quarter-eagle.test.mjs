@@ -49,7 +49,7 @@ describe('Indian Head quarter eagle resource page', () => {
     assert.match(enRoute, /locale="en"/);
   });
 
-  it('keeps Article JSON-LD, the uncropped poster, and the two holdings under the market note', () => {
+  it('keeps Article JSON-LD, the series hero band, and the two holdings under the market note', () => {
     assert.match(pageSource, /@type': 'Article'/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /reviewedBy/);
@@ -59,8 +59,8 @@ describe('Indian Head quarter eagle resource page', () => {
     assert.match(pageSource, /INDIAN_HEAD_QUARTER_EAGLE_HOLDING_IDS/);
     assert.ok(pageSource.indexOf('indian-head-market-heading') < pageSource.indexOf('holdingsAria'));
     assert.match(pageSource, /SeriesHero/);
-    assert.match(pageSource, /size="frame"/);
-    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
+    assert.match(pageSource, /imageClass="object-\[50%_50%\]"/);
+    assert.doesNotMatch(pageSource, /size="frame"|size="compact"/);
     assert.equal(
       INDIAN_HEAD_QUARTER_EAGLE_HERO.src,
       '/uploads/indian-head-quarter-eagle-1908-1929-hero.jpg',

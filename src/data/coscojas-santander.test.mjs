@@ -78,7 +78,8 @@ describe('Santander coscojas essay', () => {
     assert.ok(existsSync(new URL('../../public/uploads/monedas-coscojas-de-santander.jpg', import.meta.url)));
     assert.ok(existsSync(new URL('../../public/uploads/monedas-coscojas-de-santander-card.jpg', import.meta.url)));
     assert.equal(pageSource.includes('SeriesHero'), true);
-    assert.equal(pageSource.includes('size="frame"'), true);
+    assert.equal(pageSource.includes('imageClass="object-[50%_50%]"'), true);
+    assert.equal(pageSource.includes('size="frame"'), false);
     assert.equal(pageSource.includes('<h1'), false);
     assert.equal(pageSource.includes('NoteImageLightbox'), false);
     assert.equal(pageSource.includes('CatalogThumb'), true);

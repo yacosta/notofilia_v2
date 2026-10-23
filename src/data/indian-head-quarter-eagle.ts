@@ -6,7 +6,7 @@ export const INDIAN_HEAD_QUARTER_EAGLE_PATH =
 export const INDIAN_HEAD_QUARTER_EAGLE_PATH_EN =
   '/collection/united-states-numismatics/indian-head-quarter-eagle-1908-1929/';
 
-/** Finished poster. Frame hero: do not crop. Card sibling is 800px wide. Same file for both locales. */
+/** Finished poster. Shown in the shared series hero band. Do not trim the master. Card sibling is 800px wide. Same file for both locales. */
 export const INDIAN_HEAD_QUARTER_EAGLE_HERO = {
   src: '/uploads/indian-head-quarter-eagle-1908-1929-hero.jpg',
   width: 1916,
