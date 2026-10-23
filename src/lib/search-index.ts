@@ -29,6 +29,12 @@ import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas
 import { HACIENDA_TOKENS_PATH, haciendaTokensCopy } from '../data/hacienda-tokens';
 import { MANZANO_FARMING_PATH, manzanoFarmingCopy } from '../data/manzano-farming';
 import {
+  MANZANO_FARMING_PIECE_ID,
+  MANZANO_FARMING_PIECE_IMAGES,
+  MANZANO_FARMING_PIECE_PATH,
+  manzanoFarmingPieceCopy,
+} from '../data/manzano-farming-piece';
+import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
 } from '../data/popayan-1-escudo-carlos-iv';
@@ -454,6 +460,25 @@ function pieceSeeds(): PieceSeed[] {
     });
   }
 
+  seeds.push({
+    id: MANZANO_FARMING_PIECE_ID,
+    kind: 'coin',
+    path: MANZANO_FARMING_PIECE_PATH,
+    title: { es: manzanoFarmingPieceCopy.es.title, en: manzanoFarmingPieceCopy.en.title },
+    dek: { es: manzanoFarmingPieceCopy.es.lead, en: manzanoFarmingPieceCopy.en.lead },
+    kicker: { es: manzanoFarmingPieceCopy.es.kicker, en: manzanoFarmingPieceCopy.en.kicker },
+    grade: { es: manzanoFarmingPieceCopy.es.grade, en: manzanoFarmingPieceCopy.en.grade },
+    description: {
+      es: `${manzanoFarmingPieceCopy.es.description} ${manzanoFarmingPieceCopy.es.descriptionRest}`,
+      en: `${manzanoFarmingPieceCopy.en.description} ${manzanoFarmingPieceCopy.en.descriptionRest}`,
+    },
+    image: MANZANO_FARMING_PIECE_IMAGES.composite,
+    imageAlt: {
+      es: manzanoFarmingPieceCopy.es.frontCaption,
+      en: manzanoFarmingPieceCopy.en.frontCaption,
+    },
+  });
+
   for (const coin of colombiaCoinagePieces) {
     seeds.push({
       id: `co-coin-${coin.id}`,
@@ -485,7 +510,7 @@ export type CatalogueSummaryItem = {
 };
 
 function countryFromPath(path: string): string {
-  if (path.includes('/colombia/')) return 'CO';
+  if (path.includes('/colombia/') || path.includes('/colombia-numismatica/')) return 'CO';
   if (path.includes('/estados-unidos/') || path.includes('/united-states/')) return 'US';
   if (path.includes('/filipinas/') || path.includes('/philippines/')) return 'PH';
   if (path.includes('/china/')) return 'CN';
@@ -630,7 +655,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: manzanoFarmingCopy.en.metaDescription,
       },
       extra:
-        'Manzano Farming Co Sotaquirá Paipa Boyacá Papayo Sativa Satira Carreño Soconsuca seña 1901 resello JB Barriga Credencial Historia',
+        'Manzano Farming Co Sotaquirá Paipa Boyacá Papayo Sativa Satira Carreño Soconsuca seña 1901 10 centavos resello JB Barriga Credencial Historia Montaña',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,

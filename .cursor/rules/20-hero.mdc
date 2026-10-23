@@ -64,7 +64,7 @@ The Popayán Charles IV 1 escudo type page (`PopayanCharlesIvEscudoPage.astro`) 
 
 The Casa de Moneda de Santa Fe de Nuevo Reino page (`SantaFeMintPage.astro`) uses the same text header until a finished poster exists. Do not invent a coin photograph for that hero.
 
-The Manzano Farming Co. page (`ManzanoFarmingPage.astro`) uses the same text header. Do not invent a token photograph, and do not republish another collection’s scan as a Notofilia piece.
+The Manzano Farming Co. essay (`ManzanoFarmingPage.astro`) uses the same text header. Do not invent a token photograph for that header, and do not republish another collection’s scan as a Notofilia piece. The collection’s 1901 token of 10 uses its own scans on the piece page.
 
 `editorial-article` uses an in-flow `<figure>` after the header, through `cardImageSrc` + `editorialUploadSrcset` for `/uploads/` files. That is not a hero.
 

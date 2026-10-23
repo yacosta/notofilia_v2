@@ -124,7 +124,7 @@ describe('homepage milestones from catalog holdings', () => {
   it('matches the 1977 500 pesos oro holding by its serial', () => {
     const holding = additions.find((row) => row.id === 'co-1977-500-pesos-oro-038064123');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1820-1-escudo-bogota-nr-jf');
+    assert.equal(additions.at(-1)?.id, 'co-1901-10-manzano-farming');
     const note = noteById('500-pesos-oro-1977');
     assert.ok(note);
     const pieces = notePieces(note).map((piece) => ({
@@ -148,9 +148,9 @@ describe('homepage milestones from catalog holdings', () => {
     assert.match(card.href, /500-pesos-oro-1977/);
   });
 
-  it('puts the 1820 Bogotá NR–JF 1 escudo on the first Logros del Mes page', () => {
-    assert.equal(additions.at(-1)?.id, 'co-1820-1-escudo-bogota-nr-jf');
-    const holding = additions.at(-1);
+  it('still matches the 1820 Bogotá NR–JF 1 escudo after newer holdings', () => {
+    assert.equal(additions.at(-1)?.id, 'co-1901-10-manzano-farming');
+    const holding = additions.find((row) => row.id === 'co-1820-1-escudo-bogota-nr-jf');
     assert.ok(holding);
     const piece = {
       id: 'co-1-escudo-bogota-1820-nr-jf',
@@ -165,7 +165,7 @@ describe('homepage milestones from catalog holdings', () => {
       imageAlt: { es: 'Anverso', en: 'Obverse' },
     };
     const cards = milestonesFromHoldings(additions, [piece], HOME_MILESTONE_LIMIT);
-    assert.equal(cards[0].holdingId, holding.id);
+    assert.equal(cards[0].holdingId, 'co-1820-1-escudo-bogota-nr-jf');
     assert.match(cards[0].href, /1-escudo-bogota-1820-nr-jf/);
     assert.ok(cards.length <= HOME_MILESTONE_LIMIT);
   });
@@ -197,7 +197,7 @@ describe('homepage milestones from catalog holdings', () => {
     assert.ok(note);
     const holding = additions.find((row) => row.id === 'co-2010-5000-pesos-error-09629901');
     assert.ok(holding);
-    assert.equal(additions.at(-1)?.id, 'co-1820-1-escudo-bogota-nr-jf');
+    assert.equal(additions.at(-1)?.id, 'co-1901-10-manzano-farming');
     const pieces = notePieces(note).map((piece) => ({
       id: `co-${piece.id}`,
       country: 'CO',
@@ -219,7 +219,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 43);
+    assert.equal(fromEnd, 44);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -242,7 +242,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 42);
+    assert.equal(fromEnd, 43);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',

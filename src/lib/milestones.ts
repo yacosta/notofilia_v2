@@ -1,5 +1,11 @@
 import { collectionNoteSeeds } from '../data/collection-note-catalog.ts';
 import { colombiaCoinagePieces, coinagePiecePath } from '../data/colombia-coinage-pieces.ts';
+import {
+  MANZANO_FARMING_PIECE_ID,
+  MANZANO_FARMING_PIECE_IMAGES,
+  MANZANO_FARMING_PIECE_PATH,
+  manzanoFarmingPieceCopy,
+} from '../data/manzano-farming-piece.ts';
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
 import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
@@ -32,6 +38,22 @@ function catalogPieces(): CatalogPiece[] {
     image: seed.image,
     imageAlt: seed.imageAlt,
   }));
+
+  pieces.push({
+    id: MANZANO_FARMING_PIECE_ID,
+    country: 'CO',
+    href: MANZANO_FARMING_PIECE_PATH,
+    title: { es: manzanoFarmingPieceCopy.es.title, en: manzanoFarmingPieceCopy.en.title },
+    dek: { es: manzanoFarmingPieceCopy.es.lead, en: manzanoFarmingPieceCopy.en.lead },
+    pick: '',
+    serial: '',
+    cert: '',
+    image: MANZANO_FARMING_PIECE_IMAGES.composite,
+    imageAlt: {
+      es: manzanoFarmingPieceCopy.es.frontCaption,
+      en: manzanoFarmingPieceCopy.en.frontCaption,
+    },
+  });
 
   for (const coin of colombiaCoinagePieces) {
     pieces.push({
