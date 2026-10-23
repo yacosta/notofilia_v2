@@ -52,7 +52,9 @@ describe('Hacienda tokens page', () => {
     assert.equal(HACIENDA_TOKENS_HERO.es.width, 1168);
     assert.equal(HACIENDA_TOKENS_HERO.es.height, 784);
     assert.match(haciendaTokensCopy.es.heroAlt, /Ilustración/);
+    assert.match(haciendaTokensCopy.es.heroAlt, /1901/);
     assert.match(haciendaTokensCopy.en.heroAlt, /Illustration/);
+    assert.match(haciendaTokensCopy.en.heroAlt, /1901/);
     assert.match(haciendaTokensCopy.es.heroAlt, /No es el escaneo/);
     assert.match(haciendaTokensCopy.en.heroAlt, /not a scan/);
     for (const hero of Object.values(HACIENDA_TOKENS_HERO)) {
