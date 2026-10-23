@@ -18,6 +18,7 @@ import { comparisonPath } from '../../data/comparison';
 import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coinage-pieces';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import { COSCOJAS_SANTANDER_PATH } from '../../data/coscojas-santander';
+import { HACIENDA_TOKENS_PATH } from '../../data/hacienda-tokens';
 import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
@@ -156,6 +157,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(COSCOJAS_SANTANDER_PATH, locale)}
         >
           {t.coscojasLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.haciendaTokensLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(HACIENDA_TOKENS_PATH, locale)}
+        >
+          {t.haciendaTokensLink}
         </a>
       </p>
 

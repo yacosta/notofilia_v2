@@ -26,6 +26,7 @@ import {
 } from '../data/indian-head-quarter-eagle';
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
+import { HACIENDA_TOKENS_PATH, haciendaTokensCopy } from '../data/hacienda-tokens';
 import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
@@ -609,6 +610,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       },
       extra:
         'coscojas Santander 1902 Palonegro Bucaramanga latón casquillos González Valencia Penagos decreto 102 monedas sangrientas 10 20 50 centavos unifaz',
+    },
+    {
+      href: HACIENDA_TOKENS_PATH,
+      title: { es: haciendaTokensCopy.es.nav, en: haciendaTokensCopy.en.nav },
+      dek: {
+        es: haciendaTokensCopy.es.metaDescription,
+        en: haciendaTokensCopy.en.metaDescription,
+      },
+      extra:
+        'fichas de hacienda exonumia scrip comisariato La Amalia Venecia Zancudo Pick S909 Manuelita United Fruit artículo 136 Código Sustantivo Kemmerer Henao tarro almud arroba',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,

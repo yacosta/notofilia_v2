@@ -725,6 +725,10 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/santa-fe-de-nuevo-reino-mint/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia-numismatica/fichas-de-hacienda/', 'en'),
+      '/en/collection/colombia-numismatics/hacienda-tokens/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/',
     );
