@@ -11,7 +11,7 @@ import {
   type Locale,
 } from '../lib/site';
 import { COLOMBIA_PATH } from '../data/colombia';
-import { heroSizes, heroSrc, heroSrcset } from '../lib/hero';
+import { heroBandClass, heroSizes, heroSrc, heroSrcset } from '../lib/hero';
 
 interface Props {
   locale: Locale;
@@ -24,7 +24,7 @@ const featuredNews = news.slice(0, 6);
 ---
 
 <main id="main-content" tabindex="-1" class="relative w-full bg-bg outline-none">
-  <section class="relative min-h-[28rem] w-full bg-[#0a0a09] md:min-h-[36rem] lg:min-h-screen" aria-labelledby="hero-heading">
+  <section class:list={['relative w-full bg-[#0a0a09]', heroBandClass]} aria-labelledby="hero-heading">
     <img
       class="absolute inset-0 h-full w-full object-cover object-[50%_40%] [filter:contrast(1.2)_brightness(0.85)_saturate(1.1)]"
       src={heroSrc}
@@ -47,7 +47,7 @@ const featuredNews = news.slice(0, 6);
     >
     </div>
 
-    <div class="relative z-[1] flex min-h-[28rem] flex-col items-center justify-center px-[var(--page-gutter)] py-12 text-center outline-none md:min-h-[36rem] md:py-16 lg:min-h-screen">
+    <div class:list={['relative z-[1] flex flex-col items-center justify-center px-[var(--page-gutter)] py-12 text-center outline-none md:py-16', heroBandClass]}>
       <div class="mb-7 flex items-center gap-4">
         <span class="h-px w-14 bg-[#e7dec98c]"></span>
         <span class="font-sans text-[17px] font-medium italic uppercase tracking-[0.28em] text-[#d8d2cd]">{t.heroKicker}</span>

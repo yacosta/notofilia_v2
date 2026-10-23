@@ -4,7 +4,7 @@ import type { Locale } from '../lib/locale-paths';
 export const HACIENDA_TOKENS_PATH = '/coleccion/colombia-numismatica/fichas-de-hacienda/';
 export const HACIENDA_TOKENS_PATH_EN = '/collection/colombia-numismatics/hacienda-tokens/';
 
-/** One finished poster for both locales. The English filename was a byte-identical copy. Frame hero: do not crop. Card sibling is 800px wide. */
+/** One finished poster for both locales. The English filename was a byte-identical copy. Shown in the shared series hero band. Do not trim the master. Card sibling is 800px wide. */
 export const HACIENDA_TOKENS_HERO = {
   es: {
     src: '/uploads/fichas-de-hacienda-hero.jpg',
