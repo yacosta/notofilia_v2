@@ -143,7 +143,7 @@ export const colombiaNotes: ColombiaNote[] = [
       back: '/images/catalog/colombia/colombia-banco-hipotecario-5-pesos-1881-y00000-back.jpg',
     },
     hero: {
-      src: '/images/catalog/colombia/hero-banco-hipotecario.jpg',
+      src: '/images/catalog/colombia/panoramica-bogota-banco-hipotecario-1910.jpg',
       width: 1024,
       height: 436,
     },
@@ -268,7 +268,7 @@ export const colombiaNotes: ColombiaNote[] = [
       back: '/images/catalog/colombia/colombia-banco-de-rio-hacha-5-pesos-1883-c00000-back.jpg',
     },
     hero: {
-      src: '/images/catalog/colombia/hero-rio-hacha.jpg',
+      src: '/images/catalog/colombia/mapa-riohacha-catedral-mar-caribe.jpg',
       width: 2128,
       height: 912,
     },

@@ -27,18 +27,11 @@ const t = obsoleteSeriesCopy[locale];
 const pathname = obsoleteSeriesPath(locale);
 const notes = notesForChapter('us-obsoleto');
 const sources = obsoleteSeriesSources;
-const hero =
-  locale === 'en'
-    ? {
-        src: '/images/catalog/united-states.jpg',
-        width: 2128,
-        height: 912,
-      }
-    : {
-        src: '/images/catalog/estados-unidos.jpg',
-        width: 2128,
-        height: 912,
-      };
+const hero = {
+  src: '/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg',
+  width: 2128,
+  height: 912,
+};
 
 const jsonLd = collectionPageJsonLd({
   locale,

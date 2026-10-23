@@ -1,7 +1,7 @@
 export type Locale = 'es' | 'en';
 
 export const SITE_AUTHOR = 'Yezid Acosta';
-export const DEFAULT_OG_IMAGE = '/images/hero-slide.jpg';
+export const DEFAULT_OG_IMAGE = '/images/quetzal-billete-cinco-quetzales-guatemala.jpg';
 
 type PathPair = {
   es: string;

@@ -226,6 +226,14 @@ if (static301.length > 2000) {
 for (const row of static301.slice(0, 2000)) {
   staticLines.push(`${row.source} ${row.target} 301`);
 }
+const imageRenamesPath = join(root, 'src/lib/public-image-renames.json');
+if (existsSync(imageRenamesPath)) {
+  const imageRenames = JSON.parse(readFileSync(imageRenamesPath, 'utf8'));
+  staticLines.push('# Retired image filenames. /cdn-cgi/image/ variants are rewritten in the worker.');
+  for (const [from, to] of Object.entries(imageRenames)) {
+    staticLines.push(`${from} ${to} 301`);
+  }
+}
 staticLines.push('/en/glosario/*   /en/glossary/:splat   301');
 staticLines.push('/en/noticias/*   /en/news/:splat       301');
 writeFileSync(publicRedirects, `${staticLines.join('\n')}\n`);

@@ -1,6 +1,6 @@
 import { cfImage } from './images.ts';
 
-const HERO_IMAGE = '/images/hero-engraving-01.jpg';
+const HERO_IMAGE = '/images/grabado-talla-dulce-eva-peron-billete-argentino.jpg';
 
 /** Force AVIF: `format=auto` left a cached JPEG on the LCP URL (~40 KiB). */
 const heroOpts = { format: 'avif' as const };

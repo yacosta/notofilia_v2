@@ -1349,5 +1349,12 @@
 /en/identify /en/search/ 301
 /en/identificar/ /en/search/ 301
 /en/identificar /en/search/ 301
+# Retired image filenames. /cdn-cgi/image/ variants are rewritten in the worker.
+/images/hero-engraving-01.jpg /images/grabado-talla-dulce-eva-peron-billete-argentino.jpg 301
+/images/hero-slide.jpg /images/quetzal-billete-cinco-quetzales-guatemala.jpg 301
+/uploads/coscojas-de-santander-hero-card.jpg /uploads/monedas-coscojas-de-santander-card.jpg 301
+/uploads/coscojas-de-santander-hero.jpg /uploads/monedas-coscojas-de-santander.jpg 301
+/uploads/santander-coscojas-hero-card.jpg /uploads/monedas-coscojas-de-santander-card.jpg 301
+/uploads/santander-coscojas-hero.jpg /uploads/monedas-coscojas-de-santander.jpg 301
 /en/glosario/*   /en/glossary/:splat   301
 /en/noticias/*   /en/news/:splat       301

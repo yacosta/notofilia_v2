@@ -24,14 +24,30 @@ describe('catalog image renames', () => {
     );
   });
 
-  it('leaves the new name and series heroes alone', () => {
+  it('redirects retired series heroes and leaves the new name alone', () => {
     assert.equal(
       catalogImageRedirect(
         '/images/catalog/colombia/colombia-lazareto-2-centavos-1921-front.jpg',
       ),
       null,
     );
-    assert.equal(catalogImageRedirect('/images/catalog/colombia/hero-colombia.jpg'), null);
+    const colombia =
+      '/images/catalog/colombia/billetes-antiguos-colombia-coleccion.jpg';
+    assert.equal(catalogImageRedirect('/images/catalog/colombia/hero-colombia.jpg'), colombia);
+    assert.equal(
+      catalogImageRedirect('/images/catalog-download/colombia/hero-colombia.jpg'),
+      colombia.replace('/images/catalog/', '/images/catalog-download/'),
+    );
+    assert.equal(
+      catalogImageRedirect(
+        '/cdn-cgi/image/width=1600,format=auto/images/catalog/colombia/hero-colombia.jpg',
+      ),
+      `/cdn-cgi/image/width=1600,format=auto${colombia}`,
+    );
+    assert.equal(catalogImageRedirect(colombia), null);
+    const states = '/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg';
+    assert.equal(catalogImageRedirect('/images/catalog/estados-unidos.jpg'), states);
+    assert.equal(catalogImageRedirect('/images/catalog/united-states.jpg'), states);
   });
 
   it('sends the Santa Marta cross and value files to front and back', () => {
