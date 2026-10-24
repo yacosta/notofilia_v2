@@ -4,6 +4,12 @@ import { englandNotes } from '../data/england-polymer.ts';
 import { malaysiaNotes } from '../data/malaysia-polymer.ts';
 import { colombiaNotes, notePieces } from '../data/colombia-notes.ts';
 import { colombiaCoinagePieces } from '../data/colombia-coinage-pieces.ts';
+import {
+  MANZANO_FARMING_PIECE_ID,
+  MANZANO_FARMING_PIECE_IMAGES,
+  MANZANO_FARMING_PIECE_PATH,
+  manzanoFarmingPieceCopy,
+} from '../data/manzano-farming-piece.ts';
 import { unitedStatesNotes } from '../data/estados-unidos.ts';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage.ts';
 import { mpcVietnamNotes } from '../data/mpc-vietnam.ts';
@@ -224,6 +230,17 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
       imageComposite: coin.images.composite,
     });
   }
+
+  pushSeed(seeds, {
+    id: MANZANO_FARMING_PIECE_ID,
+    kind: 'coin',
+    path: MANZANO_FARMING_PIECE_PATH,
+    pick: '',
+    title: { es: manzanoFarmingPieceCopy.es.title, en: manzanoFarmingPieceCopy.en.title },
+    imageFront: MANZANO_FARMING_PIECE_IMAGES.front,
+    imageBack: MANZANO_FARMING_PIECE_IMAGES.composite,
+    imageComposite: MANZANO_FARMING_PIECE_IMAGES.composite,
+  });
 
   for (const coin of colombiaCoinagePieces) {
     pushSeed(seeds, {

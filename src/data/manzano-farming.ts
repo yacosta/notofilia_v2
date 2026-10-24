@@ -16,11 +16,11 @@ export const manzanoFarmingCopy = {
     breadcrumb: 'Migas de pan',
     metaTitle: 'Manzano Farming Co. en Boyacá',
     metaDescription:
-      'Seña de bronce de 1901 de Manzano Farming Co., de Sotaquirá y Paipa. El valor publicado es 25, sin unidad. No es una pieza de esta colección.',
+      'Esta colección guarda la seña de 10, 1901, de Manzano Farming Co. La de 25 que publicó Absoluti no está en Notofilia.',
     kicker: 'Colombia-Numismática',
     title: 'Manzano Farming Co.',
     lead:
-      'Manzano Farming Co. es una firma de Sotaquirá y Paipa que Fernando Barriga del Diestro nombra entre las señas de la Guerra de los Mil Días. Una pieza de 1901, publicada por otra colección, trae en el reverso Papayo, Sativa, Carreño y Soconsuca.',
+      'Manzano Farming Co. es una firma de Sotaquirá y Paipa que Fernando Barriga del Diestro nombra entre las señas de la Guerra de los Mil Días. Esta colección guarda la seña de 10, fechada 1901. Otra colección publicó una de 25, distinta.',
     published: '2026-10-23',
     dateLabel: '23 de octubre de 2026',
     authorLabel: 'Yezid Acosta',
@@ -30,6 +30,11 @@ export const manzanoFarmingCopy = {
         label: 'Emisor',
         value:
           'Manzano Farming Co., de Sotaquirá y Paipa (Boyacá), según Fernando Barriga del Diestro, Credencial Historia n.º 128 (agosto de 2000).',
+      },
+      {
+        label: 'Pieza de esta colección',
+        value:
+          '10, 1901. La unidad no está inscrita. Estas fotografías no muestran un resello de letras. La ficha cuelga de esta página.',
       },
       {
         label: 'Pieza publicada',
@@ -48,6 +53,7 @@ export const manzanoFarmingCopy = {
       },
     ],
     sourcesTitle: 'Fuentes',
+    pieceCta: 'Ver la seña de 10, 1901',
     fichasCta: 'Volver a las fichas de hacienda',
     seriesCta: 'Volver a Colombia-Numismática',
     tokenFichasHeading: 'Fichas',
@@ -61,11 +67,11 @@ export const manzanoFarmingCopy = {
     breadcrumb: 'Breadcrumb',
     metaTitle: 'Manzano Farming Co. in Boyacá',
     metaDescription:
-      'A 1901 bronze token of Manzano Farming Co., of Sotaquirá and Paipa. The published value is 25, with no unit. It is not a piece in this collection.',
+      'This collection holds the 1901 Manzano Farming Co. token of 10. Absoluti’s published 25 is not a Notofilia piece.',
     kicker: 'Colombia-Numismatics',
     title: 'Manzano Farming Co.',
     lead:
-      'Manzano Farming Co. is a firm of Sotaquirá and Paipa that Fernando Barriga del Diestro names among the private tokens of the War of a Thousand Days. A piece of 1901, published by another collection, carries Papayo, Sativa, Carreño, and Soconsuca on the reverse.',
+      'Manzano Farming Co. is a firm of Sotaquirá and Paipa that Fernando Barriga del Diestro names among the private tokens of the War of a Thousand Days. This collection holds the token of 10, dated 1901. Another collection published a different one, valued 25.',
     published: '2026-10-23',
     dateLabel: 'October 23, 2026',
     authorLabel: 'Yezid Acosta',
@@ -75,6 +81,11 @@ export const manzanoFarmingCopy = {
         label: 'Issuer',
         value:
           'Manzano Farming Co., of Sotaquirá and Paipa (Boyacá), according to Fernando Barriga del Diestro, Credencial Historia no. 128 (August 2000).',
+      },
+      {
+        label: 'Piece in this collection',
+        value:
+          '10, 1901. The unit is not inscribed. These photographs show no letter countermark. The record hangs from this page.',
       },
       {
         label: 'Published piece',
@@ -93,6 +104,7 @@ export const manzanoFarmingCopy = {
       },
     ],
     sourcesTitle: 'Sources',
+    pieceCta: 'View the 1901 token of 10',
     fichasCta: 'Back to hacienda tokens',
     seriesCta: 'Back to Colombia-Numismatics',
     tokenFichasHeading: 'Tokens',
@@ -119,6 +131,15 @@ export const manzanoFarmingSources: CatalogSource[] = [
     },
   },
   {
+    href: 'https://www.mascoleccionismo.com/medallas-fichas-y-monedas-de-colombia-06-diciembre-2015/',
+    es: 'Alexander Montaña Rodríguez — Medallas, fichas y monedas de Colombia, n.º 6 (diciembre de 2015)',
+    en: 'Alexander Montaña Rodríguez — Medallas, fichas y monedas de Colombia, no. 6 (December 2015)',
+    note: {
+      es: 'El índice lista «Hacienda Manzano Farming Co. 10 Centavos 1901, Resello BJ». La entrada 47, página 13, mide un ejemplar con resello: 24,3 mm, 4,7 g, latón. Esas cifras no son las de la seña de 10, y esta página no republica la lámina.',
+      en: 'The index lists “Hacienda Manzano Farming Co. 10 Centavos 1901, Resello BJ.” Entry 47, page 13, measures a countermarked example: 24.3 mm, 4.7 g, brass. Those figures are not the token of 10, and this page does not republish the plate.',
+    },
+  },
+  {
     href: 'https://numis.absoluti-ind.com/MonedasColSennas.html',
     es: 'Colección Absoluti (CFMR) — señas de Colombia, Manzano Farming Co., 25, 1901',
     en: 'Absoluti collection (CFMR) — Colombian tokens, Manzano Farming Co., 25, 1901',
@@ -132,8 +153,8 @@ export const manzanoFarmingSources: CatalogSource[] = [
     es: 'Newman Numismatic Portal — The Numismatic Scrapbook Magazine, 24 de diciembre de 1970, p. 38',
     en: 'Newman Numismatic Portal — The Numismatic Scrapbook Magazine, 24 December 1970, p. 38',
     note: {
-      es: 'Lista «Manzano Farming Co Papayo y Satira 1901». Satira no es la lectura Sativa del cuadro de Absoluti.',
-      en: 'It lists “Manzano Farming Co Papayo y Satira 1901.” Satira is not the Sativa reading in the Absoluti table.',
+      es: 'Lista «Manzano Farming Co Papayo y Satira 1901». Satira no es la lectura SATIVA de la seña de 10.',
+      en: 'It lists “Manzano Farming Co Papayo y Satira 1901.” Satira is not the SATIVA reading of the token of 10.',
     },
   },
   {

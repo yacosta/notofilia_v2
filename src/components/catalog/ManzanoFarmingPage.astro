@@ -13,6 +13,7 @@ import {
   manzanoTokenFichas,
   manzanoTokenPath,
 } from '../../data/manzano-farming';
+import { manzanoFarmingPiecePath } from '../../data/manzano-farming-piece';
 import bodyEs from '../../data/manzano-farming/es.html?raw';
 import bodyEn from '../../data/manzano-farming/en.html?raw';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
@@ -31,6 +32,7 @@ const pageUrl = new URL(pathname, SITE_URL).href;
 const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
 const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
 const fichasHref = haciendaTokensPath(locale);
+const pieceHref = manzanoFarmingPiecePath(locale);
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const hero = HACIENDA_TOKENS_HERO[locale];
 const heroAlt = haciendaTokensCopy[locale].heroAlt;
@@ -163,6 +165,9 @@ const jsonLd = {
       <SourceList locale={locale} sources={[...manzanoFarmingSources]} heading={t.sourcesTitle} />
 
       <p class="mt-12 flex flex-col gap-3 font-sans text-[15px]">
+        <a href={pieceHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
+          {t.pieceCta}
+        </a>
         <a href={fichasHref} class="inline-flex min-h-11 items-center text-gold-light hover:text-cream">
           {t.fichasCta}
         </a>

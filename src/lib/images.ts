@@ -61,7 +61,8 @@ export function cardImageSrc(src: string): string {
 /**
  * Srcset for `/uploads/` masters that already ship a `-card` sibling.
  * Preview Workers return Cloudflare error 1042 for `/cdn-cgi/image/…`; a 404
- * srcset hides the working `src`. Catalog heroes still use `imageSrcset`.
+ * srcset hides the working `src`. `public/cf-image-fallback.js` then loads the
+ * uploaded file. Catalog heroes still use `imageSrcset`.
  */
 export function editorialUploadSrcset(src: string, masterWidth = 1200): string {
   if (!src.includes('/uploads/')) return imageSrcset(src);
