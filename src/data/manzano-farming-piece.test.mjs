@@ -50,6 +50,8 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
     assert.match(enRoute, /locale="en"/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /NoteImageLightbox/);
+    assert.match(pageSource, /pairHeading/);
+    assert.doesNotMatch(pageSource, /frontHeading|MANZANO_FARMING_PIECE_IMAGES\.front/);
     assert.equal(manzanoFarmingPieceIndex.id, MANZANO_FARMING_PIECE_ID);
     assert.equal(manzanoFarmingPieceIndex.path, MANZANO_FARMING_PIECE_PATH);
     assert.equal(manzanoFarmingPieceIndex.title.es, manzanoFarmingPieceCopy.es.title);

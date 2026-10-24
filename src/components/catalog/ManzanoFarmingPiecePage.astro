@@ -124,37 +124,21 @@ const jsonCrumbs = [
         </dl>
       </section>
 
-      <div class="grid gap-10 lg:grid-cols-2">
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
-          <NoteImageLightbox
-            src={MANZANO_FARMING_PIECE_IMAGES.front}
-            sideLabel={t.frontHeading}
-            title={t.title}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={MANZANO_FARMING_PIECE_IMAGES.width}
-            height={MANZANO_FARMING_PIECE_IMAGES.height}
-            eager
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{t.frontCaption}</figcaption>
-        </figure>
-        <figure class="m-0">
-          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.pairHeading}</h2>
-          <NoteImageLightbox
-            src={MANZANO_FARMING_PIECE_IMAGES.composite}
-            sideLabel={t.pairHeading}
-            title={t.title}
-            expandLabel={t.expandImage}
-            closeLabel={t.closeLightbox}
-            locale={locale}
-            width={MANZANO_FARMING_PIECE_IMAGES.width}
-            height={MANZANO_FARMING_PIECE_IMAGES.height}
-          />
-          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{t.pairCaption}</figcaption>
-        </figure>
-      </div>
+      <figure class="m-0">
+        <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.pairHeading}</h2>
+        <NoteImageLightbox
+          src={MANZANO_FARMING_PIECE_IMAGES.composite}
+          sideLabel={t.pairHeading}
+          title={t.title}
+          expandLabel={t.expandImage}
+          closeLabel={t.closeLightbox}
+          locale={locale}
+          width={MANZANO_FARMING_PIECE_IMAGES.width}
+          height={MANZANO_FARMING_PIECE_IMAGES.height}
+          eager
+        />
+        <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{t.pairCaption}</figcaption>
+      </figure>
 
       <section class="mt-14" aria-labelledby="about-heading">
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
