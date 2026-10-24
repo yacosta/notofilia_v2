@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
+import CatalogThumb from './CatalogThumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
@@ -13,7 +14,11 @@ import {
   manzanoTokenFichas,
   manzanoTokenPath,
 } from '../../data/manzano-farming';
-import { manzanoFarmingPiecePath } from '../../data/manzano-farming-piece';
+import {
+  MANZANO_FARMING_PIECE_IMAGES,
+  manzanoFarmingPieceCopy,
+  manzanoFarmingPiecePath,
+} from '../../data/manzano-farming-piece';
 import bodyEs from '../../data/manzano-farming/es.html?raw';
 import bodyEn from '../../data/manzano-farming/en.html?raw';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
@@ -33,6 +38,7 @@ const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
 const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
 const fichasHref = haciendaTokensPath(locale);
 const pieceHref = manzanoFarmingPiecePath(locale);
+const piece = manzanoFarmingPieceCopy[locale];
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
 const hero = HACIENDA_TOKENS_HERO[locale];
 const heroAlt = haciendaTokensCopy[locale].heroAlt;
@@ -143,6 +149,23 @@ const jsonLd = {
         <h2 id="token-fichas-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
           {t.tokenFichasHeading}
         </h2>
+        <a
+          href={pieceHref}
+          class="group mb-4 flex min-h-11 flex-col overflow-hidden rounded-[6px] border border-line-strong bg-panel text-inherit no-underline hover:border-gold-light sm:flex-row"
+        >
+          <CatalogThumb
+            src={MANZANO_FARMING_PIECE_IMAGES.composite}
+            alt={piece.pairCaption}
+            width={MANZANO_FARMING_PIECE_IMAGES.width}
+            height={MANZANO_FARMING_PIECE_IMAGES.height}
+            sizes="(min-width: 640px) 50vw, 100vw"
+            class="aspect-[16/9] w-full bg-bg object-contain sm:aspect-auto sm:h-full sm:w-1/2"
+          />
+          <span class="flex flex-1 flex-col justify-center p-5">
+            <span class="font-display text-[1.35rem]/8 text-cream-dim group-hover:text-cream">{piece.title}</span>
+            <span class="mt-2 font-sans text-[15px] text-gold-light">{t.pieceCta}</span>
+          </span>
+        </a>
         <ul class="m-0 grid list-none gap-4 p-0 lg:grid-cols-3">
           {
             manzanoTokenFichas.map((token) => (

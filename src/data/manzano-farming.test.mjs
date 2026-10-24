@@ -71,6 +71,10 @@ describe('Manzano Farming Co. page', () => {
     assert.match(pageSource, /SourceList/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /token-fichas-heading/);
+    assert.match(pageSource, /CatalogThumb/);
+    assert.match(pageSource, /MANZANO_FARMING_PIECE_IMAGES\.composite/);
+    assert.match(pageSource, /pieceHref/);
+    assert.match(pageSource, /pairCaption/);
     assert.match(pageSource, /SeriesHero/);
     assert.match(pageSource, /imageClass="object-\[50%_50%\]"/);
     assert.doesNotMatch(pageSource, /size="frame"|size="compact"/);
