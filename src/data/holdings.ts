@@ -240,6 +240,7 @@ export const additions: Holding[] = [
   { id: 'co-nd-2-escudos-bogota-felipe-v', kind: 'coin', country: 'CO' },
   { id: 'co-1820-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO' },
   { id: 'co-1901-10-manzano-farming', kind: 'coin', country: 'CO' },
+  { id: 'us-ri-298-20s-1786-6229', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -406,6 +407,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-nd-2-escudos-bogota-km17' },
   { id: 'co-1820-1-escudo-bogota-km64-1' },
   { id: 'co-1901-10-manzano-farming' },
+  { id: 'us-ri-298-1786-20s' },
 ];
 
 export type CollectionStats = {

@@ -208,6 +208,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/'],
   },
   {
+    es: '/coleccion/estados-unidos/20-chelines-rhode-island-1786/',
+    en: '/collection/united-states/20-shillings-rhode-island-1786/',
+    aliases: ['/coleccion/united-states/20-shillings-rhode-island-1786/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-dolares-confederados-1864/',
     en: '/collection/united-states/5-dollars-confederate-1864/',
     aliases: ['/coleccion/united-states/5-dollars-confederate-1864/'],

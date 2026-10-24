@@ -190,6 +190,72 @@ describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
   });
 });
 
+describe('US colonial Rhode Island 20 shillings of May 1786', () => {
+  const ri = data.slice(
+    data.indexOf("id: '20-chelines-rhode-island-1786'"),
+    data.indexOf("id: '1-dolar-state-bank-new-brunswick'"),
+  );
+  const esPiece = readFileSync(
+    new URL('../pages/coleccion/estados-unidos/20-chelines-rhode-island-1786/index.astro', import.meta.url),
+    'utf8',
+  );
+  const enPiece = readFileSync(
+    new URL('../pages/en/collection/united-states/20-shillings-rhode-island-1786/index.astro', import.meta.url),
+    'utf8',
+  );
+
+  it('records RI-298 serial 6229 without a cert or an invented printage', () => {
+    assert.match(ri, /chapterId: 'us-colonial'/);
+    assert.match(ri, /pick: 'Fr\. RI-298'/);
+    assert.match(ri, /serial: '6229'/);
+    assert.match(ri, /serial_display: 'No\. 6229'/);
+    assert.match(ri, /N\. Knight/);
+    assert.match(ri, /Jonathan Hazard/);
+    assert.match(ri, /Elijah Cobb/);
+    assert.match(ri, /DOMINE SPERAMUS IN TE/);
+    assert.match(ri, /Southwick and Barber, Newport, 1786/);
+    assert.match(ri, /100\.000 libras/);
+    assert.match(ri, /£100,000/);
+    assert.match(ri, /no inventa una tirada para los 20 chelines/);
+    assert.match(ri, /does not invent a printage for the 20 shillings/);
+    assert.match(ri, /Death to Counterfeit/);
+    assert.match(ri, /does not come under the cognizance/);
+    assert.match(ri, /183 dólares/);
+    assert.match(ri, /183 dollars/);
+    assert.match(ri, /no una valuación del serial 6229/);
+    assert.match(ri, /not a valuation of serial 6229/);
+    assert.doesNotMatch(ri, /cert_number:/);
+    assert.doesNotMatch(ri, /\$\d/);
+    assert.match(holdings, /us-ri-298-20s-1786-6229/);
+    assert.match(holdings, /id: 'us-ri-298-20s-1786-6229', kind: 'banknote', country: 'US'/);
+    assert.match(holdings, /us-ri-298-1786-20s/);
+    assert.match(ri, /united-states-rhode-island-20-shillings-1786-ri-298-6229-front\.jpg/);
+    assert.match(ri, /united-states-rhode-island-20-shillings-1786-ri-298-6229-back\.jpg/);
+    assert.match(ri, /united-states-rhode-island-20-shillings-1786-ri-298-6229-composite\.jpg/);
+  });
+
+  it('keeps thin ES and EN piece routes on the United States note layout', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/20-chelines-rhode-island-1786/', 'en'),
+      '/en/collection/united-states/20-shillings-rhode-island-1786/',
+    );
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(esPiece, /noteById\('20-chelines-rhode-island-1786'\)/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
+  });
+
+  it('names the holding in the colonial chapter and the series inventory', () => {
+    assert.match(data, /Ya tiene ficha el 20 chelines de Rhode Island de mayo de 1786, Friedberg RI-298, serial 6229/);
+    assert.match(data, /The Rhode Island 20 shillings of May 1786, Friedberg RI-298, serial 6229/);
+    assert.match(data, /el 20 chelines de Rhode Island de mayo de 1786 \(Fr\. RI-298\), serial 6229/);
+    assert.match(data, /the Rhode Island 20 shillings of May 1786 \(Fr\. RI-298\), serial 6229/);
+    assert.match(data, /Serie 6229/);
+    assert.match(data, /Serial 6229/);
+  });
+});
+
 describe('US colonial series page 1690–1788', () => {
   const seriesPage = readFileSync(
     new URL('../components/catalog/UnitedStatesSeriesPage.astro', import.meta.url),

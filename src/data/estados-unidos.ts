@@ -85,8 +85,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The first public paper authorized by a British legislature in America: Massachusetts bills of credit (1690) and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Ya tiene ficha el 20 chelines de Rhode Island de mayo de 1786, Friedberg RI-298, serial 6229. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The Rhode Island 20 shillings of May 1786, Friedberg RI-298, serial 6229, also has a note page. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
     },
   },
   {
@@ -402,7 +402,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -429,7 +429,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -892,7 +892,7 @@ export const colonialSeriesCopy = {
   es: {
     metaTitle: '1690–1788 · Moneda colonial | Notofilia',
     metaDescription:
-      'Papel colonial de Estados Unidos: Massachusetts 1690, Pensilvania 1773 y Continental Currency de 1779. Tres fichas; Nueva Jersey 1776 espera serial.',
+      'Papel colonial de Estados Unidos: Massachusetts 1690, Pensilvania 1773, Rhode Island 1786 y Continental Currency de 1779. Cuatro fichas; Nueva Jersey 1776 espera serial.',
     kicker: '1690–1788',
     title: 'Moneda colonial',
     breadcrumbCurrent: 'Moneda colonial',
@@ -917,7 +917,7 @@ export const colonialSeriesCopy = {
     ],
     howToReadTitle: 'Cómo leer un billete colonial',
     howToReadIntro:
-      'Cinco señas que se repiten en las tres fichas y en casi todo el papel del periodo:',
+      'Cinco señas que se repiten en las cuatro fichas y en casi todo el papel del periodo:',
     howToRead: [
       {
         label: 'Indentado.',
@@ -937,7 +937,7 @@ export const colonialSeriesCopy = {
       },
       {
         label: 'Amenaza impresa.',
-        text: '«To Counterfeit is Death» en Pensilvania; en los Continentals, la hoja del nature print cumplía la misma función.',
+        text: '«To Counterfeit is Death» en Pensilvania; «Death to Counterfeit» en el 20 chelines de Rhode Island de 1786; en los Continentals, la hoja del nature print cumplía la misma función.',
       },
     ],
     viewNote: 'Ver la ficha',
@@ -952,23 +952,24 @@ export const colonialSeriesCopy = {
       '5 dólares · Continental Currency · 14 de enero de 1779 · Friedberg CC-91 · Serie — · Emblema SUSTINE VEL ABSTINE · Reverso: hoja de matricaria (feverfew)',
       '5 chelines · Pensilvania · 1 de octubre de 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serie 9733',
       '2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773 · Friedberg PA-165 · Serie 21251',
+      '20 chelines · Rhode Island · mayo de 1786 · Friedberg RI-298 · Serie 6229',
     ],
     holdingsNote:
-      'Tres fichas, 1773–1779. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 13 de septiembre de 2026.',
+      'Cuatro fichas, 1773–1786. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 24 de octubre de 2026.',
     emptyHoldings:
       'Aún no hay fichas coloniales. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado.',
     referencesTitle: 'Referencias y conservación',
     references: [
       'Fr. remite a Paper Money of the United States (Friedberg), que numera las emisiones coloniales por colonia (PA, NJ) y los Continentals como CC. En la ficha de los 5 chelines, P# es el número del Standard Catalog of World Paper Money (Pick), volumen specialized: S-2540. N# es el número de tipo de Numista: N#406969. Esas dos abreviaturas se escriben aquí una sola vez.',
-      'Esta vitrina usa los números de Friedberg en las tres fichas. Newman, The Early Paper Money of America, se cita como fuente en la ficha de los 5 chelines; no se adoptan aquí números de catálogo Newman.',
-      'Las tres piezas se describen como circuladas y sin encapsular; la conservación se anota de forma descriptiva, no numérica.',
+      'Esta vitrina usa los números de Friedberg en las cuatro fichas. Newman, The Early Paper Money of America, se cita como fuente en la ficha de los 5 chelines; no se adoptan aquí números de catálogo Newman.',
+      'Las cuatro piezas se describen como circuladas y sin encapsular; la conservación se anota de forma descriptiva, no numérica.',
     ],
     relatedTitle: 'En la colección',
   },
   en: {
     metaTitle: '1690–1788 · Colonial paper | Notofilia',
     metaDescription:
-      'United States colonial paper: Massachusetts 1690, Pennsylvania 1773, and 1779 Continental Currency. Three notes; New Jersey 1776 waits for a serial.',
+      'United States colonial paper: Massachusetts 1690, Pennsylvania 1773, Rhode Island 1786, and 1779 Continental Currency. Four notes; New Jersey 1776 waits for a serial.',
     kicker: '1690–1788',
     title: 'Colonial paper',
     breadcrumbCurrent: 'Colonial paper',
@@ -992,7 +993,7 @@ export const colonialSeriesCopy = {
       'None of that stopped the fall. In January 1777 it took 1.25 Continental dollars for one in specie; in January 1781, one hundred. The paper ceased to circulate in May of that year and left the phrase: “not worth a Continental.” The Constitution, ratified in 1788, closed the door on the states — Article I, Section 10: no state shall emit bills of credit — and Congress retired the remainder in 1790, exchanging it for bonds at one hundred to one. The discredit was such that there was no federal paper money until the greenbacks of 1861–1862.',
     ],
     howToReadTitle: 'How to read a colonial note',
-    howToReadIntro: 'Five marks that recur on the three records and on almost all paper of the period:',
+    howToReadIntro: 'Five marks that recur on the four records and on almost all paper of the period:',
     howToRead: [
       {
         label: 'Indented.',
@@ -1012,7 +1013,7 @@ export const colonialSeriesCopy = {
       },
       {
         label: 'Printed threat.',
-        text: '“To Counterfeit is Death” on Pennsylvania; on the Continentals, the nature-print leaf served the same function.',
+        text: '“To Counterfeit is Death” on Pennsylvania; “Death to Counterfeit” on the Rhode Island 20 shillings of 1786; on the Continentals, the nature-print leaf served the same function.',
       },
     ],
     viewNote: 'Open the note page',
@@ -1027,16 +1028,17 @@ export const colonialSeriesCopy = {
       '$5 · Continental Currency · 14 January 1779 · Friedberg CC-91 · Serial — · Emblem SUSTINE VEL ABSTINE · Reverse: feverfew leaf',
       '5 shillings · Pennsylvania · 1 October 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serial 9733',
       '2 shillings and 6 pence · Pennsylvania · 1 October 1773 · Friedberg PA-165 · Serial 21251',
+      '20 shillings · Rhode Island · May 1786 · Friedberg RI-298 · Serial 6229',
     ],
     holdingsNote:
-      'Three note pages, 1773–1779. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 13 September 2026.',
+      'Four note pages, 1773–1786. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 24 October 2026.',
     emptyHoldings:
       'There are no colonial note pages yet. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate.',
     referencesTitle: 'References and condition',
     references: [
       'Fr. refers to Paper Money of the United States (Friedberg), which numbers colonial issues by colony (PA, NJ) and Continentals as CC. On the 5-shilling record, P# is the Standard Catalog of World Paper Money (Pick) specialized number: S-2540. N# is the Numista type number: N#406969. Those two abbreviations are written out once, here.',
-      'This case uses Friedberg numbers on the three records. Newman, The Early Paper Money of America, is cited as a source on the 5-shilling page; Newman catalog numbers are not adopted here.',
-      'The three pieces are described as circulated and unencapsulated; condition is noted descriptively, not numerically.',
+      'This case uses Friedberg numbers on the four records. Newman, The Early Paper Money of America, is cited as a source on the 5-shilling page; Newman catalog numbers are not adopted here.',
+      'The four pieces are described as circulated and unencapsulated; condition is noted descriptively, not numerically.',
     ],
     relatedTitle: 'In the collection',
   },
@@ -1410,6 +1412,7 @@ export type UnitedStatesNoteId =
   | '5-dolares-continental-1779'
   | '5-chelines-pensilvania-1773'
   | '2-chelines-6-peniques-pensilvania-1773'
+  | '20-chelines-rhode-island-1786'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
   | '2-dolares-serie-2003-san-luis'
@@ -1880,6 +1883,127 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Conversación de investigación de este ejemplar. No sustituye a Newman ni a Friedberg; no se toman de aquí precios ni un censo. El 28.318 del portal se trata como referencia de lámina, no como tirada.',
           en: 'Research conversation for this piece. It does not replace Newman or Friedberg; prices and census figures are not taken from it. The portal’s 28,318 is treated as a plate reference, not a printage.',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-chelines-rhode-island-1786',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/20-chelines-rhode-island-1786/',
+    pathEn: '/collection/united-states/20-shillings-rhode-island-1786/',
+    pick: 'Fr. RI-298',
+    serial: '6229',
+    serial_display: 'No. 6229',
+    signatures: {
+      es: 'N. Knight (tinta oscura); Jonathan Hazard y Elijah Cobb (tinta más rojiza). Committee va impreso en vertical junto a las firmas.',
+      en: 'N. Knight (dark ink); Jonathan Hazard and Elijah Cobb (a redder ink). Committee is printed vertically beside the signatures.',
+    },
+    printed: {
+      es: 'Southwick and Barber, Newport, 1786. Las actas de mayo, junio y agosto de 1786 autorizaron 100.000 libras en bills of credit de curso legal, al 4 % y a siete años, con garantía inmobiliaria; Greysheet llama a esa emisión Tenth Bank. Esta ficha no inventa una tirada para los 20 chelines ni un rango de seriales para el 6229.',
+      en: 'Southwick and Barber, Newport, 1786. The acts of May, June, and August 1786 authorized £100,000 in legal-tender bills of credit, at 4 percent for seven years, secured by real estate; Greysheet calls that emission the Tenth Bank. This record does not invent a printage for the 20 shillings or a serial range for 6229.',
+    },
+    images: {
+      composite: '/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-composite.jpg',
+      front: '/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-front.jpg',
+      back: '/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-back.jpg',
+      width: 1672,
+      height: 941,
+    },
+    title: {
+      es: '20 chelines · Rhode Island · mayo de 1786',
+      en: '20 shillings · Rhode Island · May 1786',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Estado de Rhode Island',
+      en: 'United States · Colonial paper · State of Rhode Island',
+    },
+    lead: {
+      es: 'Veinte chelines —una libra— de Rhode Island, mayo de 1786, Newport. Ancla y DOMINE SPERAMUS IN TE. Serial manuscrito 6229.',
+      en: 'Twenty shillings — one pound — of Rhode Island, May 1786, Newport. Anchor and DOMINE SPERAMUS IN TE. Manuscript serial 6229.',
+    },
+    description: {
+      es: 'Los 20 chelines de mayo de 1786 (Friedberg RI-298) son un bill of credit del Estado de Rhode Island, equivalente a una libra de plata legal. El anverso, en negro, titula Twenty Shillings y State of Rhode-Island, &c. El texto promete que el billete es igual a TWENTY SHILLINGS in Lawful Silver Money y que se recibirá en todos los pagos dentro del Estado, conforme a un acta de la General Assembly en sus sesiones de mayo, celebradas en la ciudad de Newport, A.D. 1786. A la izquierda, un emblema circular lleva un ancla y el lema DOMINE SPERAMUS IN TE. El recuadro No. lleva el serial manuscrito 6229. Hay tres firmas manuscritas: N. Knight, en tinta oscura, arriba; Jonathan Hazard y Elijah Cobb, en tinta más rojiza, debajo. Junto a ellas, Committee va impreso en vertical. No se lee con certeza una letra de plancha. El reverso, en negro y con orla ornamental, centra One Pound, la leyenda Printed by SOUTHWICK and BARBER y, bajo el marco, Death to Counterfeit. No es el 20 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-169) ni las otras denominaciones de esta emisión de Rhode Island: 6 d RI-290, 9 d RI-291, 1 s RI-292, 2 s 6 d RI-293, 3 s RI-294, 5 s RI-295, 6 s RI-296, 10 s RI-297, 30 s RI-299, 40 s RI-300 y 3 libras RI-301. Greysheet señala que las cuatro denominaciones más bajas salieron con el reverso en blanco; este 20 chelines lleva el reverso impreso. Greysheet lista como firmantes autorizados a Samuel Allen, Elijah Cobb, Job Comstock, Jonathan Hazard y N. Knight, y pide tres firmas en las tres denominaciones más altas y dos en las demás; este ejemplar muestra tres. La pieza, sin encapsular, se presenta sobre fondo neutro.',
+      en: 'The 20 shillings of May 1786 (Friedberg RI-298) is a State of Rhode Island bill of credit, equal to one pound of lawful silver. The face, in black, titles Twenty Shillings and State of Rhode-Island, &c. The text promises that the bill is equal to TWENTY SHILLINGS in Lawful Silver Money and shall be received in all payments within the State, agreeable to an act of the General Assembly at their May sessions, holden at the City of Newport, A.D. 1786. At left a circular emblem carries an anchor and the motto DOMINE SPERAMUS IN TE. The No. field carries manuscript serial 6229. There are three manuscript signatures: N. Knight, in dark ink, above; Jonathan Hazard and Elijah Cobb, in a redder ink, below. Beside them, Committee is printed vertically. No plate letter is confidently readable. The back, black and with an ornamental border, centers One Pound, the legend Printed by SOUTHWICK and BARBER, and, under the frame, Death to Counterfeit. It is not the Pennsylvania 20 shillings of 1 October 1773 (Fr. PA-169), nor the other denominations of this Rhode Island issue: 6d RI-290, 9d RI-291, 1s RI-292, 2s6d RI-293, 3s RI-294, 5s RI-295, 6s RI-296, 10s RI-297, 30s RI-299, 40s RI-300, and £3 RI-301. Greysheet notes that the four lowest denominations were issued with blank backs; this 20 shillings carries the printed back. Greysheet lists Samuel Allen, Elijah Cobb, Job Comstock, Jonathan Hazard, and N. Knight as authorized signers, and calls for three signatures on the three highest denominations and two on the others; this example shows three. The note, unslabbed, is shown on a neutral ground.',
+    },
+    history: [
+      {
+        es: 'Después de la independencia, Rhode Island financió préstamos sobre bienes raíces con papel. En mayo de 1786 la General Assembly, reunida en Newport, autorizó bills of credit. Greysheet describe 100.000 libras de curso legal, conforme a las actas de mayo, junio y agosto de 1786, al 4 % y a siete años, con garantía inmobiliaria, y llama a la emisión Tenth Bank. Southwick and Barber las imprimieron en Newport, en papel azulado o crema. Death to Counterfeit debía ir en los billetes; Greysheet anota que se omitió en las cuatro denominaciones más bajas, de reverso en blanco. Este 20 chelines —una libra— lleva el reverso impreso. La cifra de 100.000 libras es el total monetario de la autorización, no el número de piezas ni la tirada de esta denominación.',
+        en: 'After independence, Rhode Island financed real-estate loans with paper. In May 1786 the General Assembly, meeting at Newport, authorized bills of credit. Greysheet describes £100,000 of legal tender, under the acts of May, June, and August 1786, at 4 percent for seven years, secured by real estate, and calls the emission the Tenth Bank. Southwick and Barber printed them in Newport, on bluish or cream paper. Death to Counterfeit was to appear on the bills; Greysheet notes that it was omitted on the four lowest denominations, which had blank backs. This 20 shillings — one pound — carries the printed back. The £100,000 figure is the monetary total of the authorization, not the number of pieces and not the printage of this denomination.',
+      },
+      {
+        es: 'La ley que obligaba a aceptar el papel, y el juicio sin jurado, llevaron a Trevett v. Weeden (Newport, septiembre de 1786). La sentencia formal del Superior Court of Judicature desestimó la querella: el escrito «does not come under the cognizance of the Justices» y queda dismissed. No es un fallo que aboliera la emisión. Greysheet registra que el acta de diciembre de 1786 derogó los rasgos penales y conservó el curso legal, y que el acta de septiembre de 1789 retiró ese curso cuando el papel había caído a cerca del 10 % de su valor. Greysheet añade que el Estado quemó más del 96 % de la emisión entre 1793 y 1803. Esta ficha describe el objeto físico; no afirma un estado de plancha ni un censo de certificación para el serial 6229.',
+        en: 'The statute that compelled acceptance of the paper, and trial without a jury, led to Trevett v. Weeden (Newport, September 1786). The formal judgment of the Superior Court of Judicature dismissed the complaint: the information “does not come under the cognizance of the Justices” and is dismissed. It is not a ruling that abolished the emission. Greysheet records that the December 1786 act repealed the penal features and kept legal tender, and that the September 1789 act withdrew that tender once the paper had fallen to about 10 percent of face. Greysheet adds that the State burned more than 96 percent of the issue between 1793 and 1803. This record describes the physical object; it does not assert a plate state or a grading census for serial 6229.',
+      },
+    ],
+    historyHeading: {
+      es: 'El Tenth Bank de 1786',
+      en: 'The 1786 Tenth Bank',
+    },
+    frontCaption: {
+      es: 'Anverso de los 20 chelines de Rhode Island, Fr. RI-298, mayo de 1786: ancla con DOMINE SPERAMUS IN TE y serial manuscrito 6229.',
+      en: 'Face of the Rhode Island 20 shillings, Fr. RI-298, May 1786: anchor with DOMINE SPERAMUS IN TE and manuscript serial 6229.',
+    },
+    backCaption: {
+      es: 'Reverso con «One Pound», «Printed by SOUTHWICK and BARBER» y «Death to Counterfeit».',
+      en: 'Back with “One Pound,” “Printed by SOUTHWICK and BARBER,” and “Death to Counterfeit.”',
+    },
+    scarcity: {
+      es: 'Friedberg numera los 20 chelines de mayo de 1786 como RI-298. La cifra de 100.000 libras es la autorización de toda la emisión, no una tirada de esta denominación ni un rango de seriales. No se ha verificado una cantidad impresa por valor ni el intervalo completo de numeración. En el comercio se han ofrecido ejemplares de este tipo con márgenes de pliego; los márgenes anchos del serial 6229, por sí solos, no establecen una rareza excepcional.',
+      en: 'Friedberg numbers the 20 shillings of May 1786 as RI-298. The £100,000 figure is the authorization for the whole issue, not a printage of this denomination and not a serial range. A quantity printed by denomination, and the full numbering interval, have not been verified. Examples of this type with sheet margins have been offered in the trade; the broad margins of serial 6229 do not by themselves establish an exceptional rarity.',
+    },
+    population: {
+      es: 'No se ha verificado un total de certificación para el serial 6229. La pieza se presenta sin encapsular, sin número de certificado. Los censos de las empresas de gradación cuentan billetes certificados y no establecen cuántos sobreviven.',
+      en: 'A certification total for serial 6229 has not been verified. The note is shown unslabbed, with no certificate number. Grading-service populations count certified notes and do not establish how many survive.',
+    },
+    grade: {
+      es: 'Márgenes anchos, papel crema, pliegues leves y manchas oscuras dispersas. La mancha oscura junto a la firma superior no se ha examinado a contraluz. Sin encapsular (colección privada). No se asigna un grado numérico.',
+      en: 'Wide margins, cream paper, light creases, and scattered dark marks. The dark mark beside the upper signature has not been examined in transmitted light. Unslabbed (private collection). No numerical grade is assigned.',
+    },
+    sources: [
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1987101',
+        es: 'Smithsonian — National Museum of American History, 20 Shillings, Rhode Island, 1786',
+        en: 'Smithsonian — National Museum of American History, 20 Shillings, Rhode Island, 1786',
+        note: {
+          es: 'Ejemplar de tipo, fecha en el objeto 1786-05, imprenta Southwick and Barber, NU.69.217.319. No es el serial 6229.',
+          en: 'A type example, date on object 1786-05, printer Southwick and Barber, NU.69.217.319. Not serial 6229.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/sp/issue-of-may-1786/11776',
+        es: 'Greysheet — Issue of May 1786, Rhode Island',
+        en: 'Greysheet — Issue of May 1786, Rhode Island',
+        note: {
+          es: '100.000 libras, Tenth Bank, préstamos al 4 % a siete años; Southwick and Barber; firmantes; Trevett v. Weeden; curso legal hasta septiembre de 1789; depreciación a cerca del 10 %; quema de más del 96 % entre 1793 y 1803; denominaciones RI-290 a RI-301.',
+          en: '£100,000, the Tenth Bank, 4 percent seven-year loans; Southwick and Barber; signers; Trevett v. Weeden; legal tender until September 1789; depreciation to about 10 percent; more than 96 percent burned between 1793 and 1803; denominations RI-290 through RI-301.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/rhode-island-colonial-currency-may-1786-twenty-shillings-friedberg-ri298/gsid/67939',
+        es: 'Greysheet — May 1786 20s Rhode Island (Fr. RI-298)',
+        en: 'Greysheet — May 1786 20s Rhode Island (Fr. RI-298)',
+        note: {
+          es: 'Otro ejemplar del mismo tipo, graduado PMG About Uncirculated 53, figura vendido en 183 dólares el 14 de junio de 2026. Es una venta de comparación, no una valuación del serial 6229.',
+          en: 'A different example of the same type, graded PMG About Uncirculated 53, is listed as sold for 183 dollars on 14 June 2026. That is a comparison sale, not a valuation of serial 6229.',
+        },
+      },
+      {
+        href: 'https://smallstatebighistory.com/the-story-behind-rhode-islands-most-important-legal-case-trevett-v-weeden-in-1786/',
+        es: 'Online Review of Rhode Island History — Trevett v. Weeden, 1786',
+        en: 'Online Review of Rhode Island History — Trevett v. Weeden, 1786',
+        note: {
+          es: 'La corte desestimó la querella por falta de cognizance. El fallo no impidió el programa de papel moneda ni es un precedente técnico de judicial review.',
+          en: 'The court dismissed the complaint for want of cognizance. The judgment did not stop the paper-money program and is not a technical precedent for judicial review.',
+        },
+      },
+      {
+        href: 'https://www.encyclopedia.com/politics/encyclopedias-almanacs-transcripts-and-maps/trevett-v-weeden-rhode-island-1786',
+        es: 'Encyclopedia.com — Trevett v. Weeden (Rhode Island, 1786)',
+        en: 'Encyclopedia.com — Trevett v. Weeden (Rhode Island, 1786)',
+        note: {
+          es: 'Texto de la sentencia: la querella no cae bajo la cognizance de los justices y queda dismissed.',
+          en: 'Text of the judgment: the complaint does not come under the cognizance of the justices and is dismissed.',
         },
       },
     ],

@@ -69,8 +69,9 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
     assert.equal(manzanoFarmingPieceIndex.path, MANZANO_FARMING_PIECE_PATH);
     assert.equal(manzanoFarmingPieceIndex.title.es, manzanoFarmingPieceCopy.es.title);
     assert.equal(manzanoFarmingPieceIndex.title.en, manzanoFarmingPieceCopy.en.title);
-    assert.equal(additions.at(-1)?.id, MANZANO_FARMING_PIECE_ID);
-    assert.equal(additions.at(-1)?.kind, 'coin');
+    assert.equal(additions.find((row) => row.id === MANZANO_FARMING_PIECE_ID)?.kind, 'coin');
+    assert.equal(additions.at(-1)?.id, 'us-ri-298-20s-1786-6229');
+    assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.match(manzanoFarmingPieceNoSerialReason, /No serial is inscribed/);
   });
 
@@ -106,8 +107,8 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
     }
   });
 
-  it('is the newest Logros del Mes card and is not the Absoluti 25', () => {
-    const holding = additions.at(-1);
+  it('still matches its Logros del Mes card and is not the Absoluti 25', () => {
+    const holding = additions.find((row) => row.id === MANZANO_FARMING_PIECE_ID);
     assert.ok(holding);
     const piece = catalogPieceForHolding(holding, [
       {
