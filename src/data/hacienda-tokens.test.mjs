@@ -45,8 +45,8 @@ describe('Hacienda tokens page', () => {
     assert.match(enRoute, /HaciendaTokensPage/);
     assert.match(pageSource, /SourceList/);
     assert.match(pageSource, /SeriesHero/);
-    assert.match(pageSource, /size="frame"/);
-    assert.doesNotMatch(pageSource, /object-cover|size="compact"/);
+    assert.match(pageSource, /imageClass="object-\[50%_50%\]"/);
+    assert.doesNotMatch(pageSource, /size="frame"|size="compact"/);
     assert.equal(HACIENDA_TOKENS_HERO.es.src, '/uploads/fichas-de-hacienda-hero.jpg');
     assert.equal(HACIENDA_TOKENS_HERO.en.src, '/uploads/fichas-de-hacienda-hero.jpg');
     assert.equal(HACIENDA_TOKENS_HERO.es.width, 1168);

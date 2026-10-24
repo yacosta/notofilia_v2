@@ -3,7 +3,7 @@ import type { Locale } from '../lib/locale-paths';
 export const COSCOJAS_SANTANDER_PATH = '/coleccion/colombia-numismatica/coscojas-de-santander/';
 export const COSCOJAS_SANTANDER_PATH_EN = '/collection/colombia-numismatics/santander-coscojas/';
 
-/** Finished posters. Frame hero: do not crop. Card siblings are 800px wide. */
+/** Finished posters. Shown in the shared series hero band. Do not trim the master. Card siblings are 800px wide. */
 export const COSCOJAS_SANTANDER_HERO = {
   es: {
     src: '/uploads/monedas-coscojas-de-santander.jpg',

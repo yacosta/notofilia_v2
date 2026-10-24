@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { heroSizes, heroSrc, heroSrcset } from './hero.ts';
+import { heroBandClass, heroSizes, heroSrc, heroSrcset } from './hero.ts';
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
 const googlePreferred = readFileSync(new URL('../components/GooglePreferredSourceButton.astro', import.meta.url), 'utf8');
@@ -31,6 +31,7 @@ describe('homepage LCP hero strings', () => {
       ].join(', '),
     );
     assert.equal(heroSizes, '100vw');
+    assert.equal(heroBandClass, 'min-h-[86vh] md:min-h-[94vh]');
   });
 
   it('keeps the homepage img and both locale preloads on the shared strings', () => {
@@ -38,6 +39,12 @@ describe('homepage LCP hero strings', () => {
     assert.match(homePage, /src=\{heroSrc\}/);
     assert.match(homePage, /srcset=\{heroSrcset\}/);
     assert.match(homePage, /sizes=\{heroSizes\}/);
+    assert.match(homePage, /heroBandClass/);
+    assert.doesNotMatch(homePage, /min-h-\[28rem\]|min-h-\[36rem\]|lg:min-h-screen/);
+    const seriesHero = readFileSync(new URL('../components/catalog/SeriesHero.astro', import.meta.url), 'utf8');
+    assert.match(seriesHero, /heroBandClass/);
+    assert.match(seriesHero, /object-cover/);
+    assert.doesNotMatch(seriesHero, /size === 'frame'|size === 'compact'|min-h-\[64vh\]|min-h-\[70vh\]/);
     assert.match(indexEs, /from '\.\.\/lib\/hero'/);
     assert.match(indexEn, /from '\.\.\/\.\.\/lib\/hero'/);
     assert.match(indexEs, /imagesrcset=\{heroSrcset\}/);

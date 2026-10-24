@@ -1,4 +1,4 @@
-import type { CatalogSource } from './catalog';
+import type { CatalogSource, LocalizedText } from './catalog';
 import type { Locale } from '../lib/locale-paths';
 
 export const MANZANO_FARMING_PATH =
@@ -56,6 +56,7 @@ export const manzanoFarmingCopy = {
     pieceCta: 'Ver la seña de 10, 1901',
     fichasCta: 'Volver a las fichas de hacienda',
     seriesCta: 'Volver a Colombia-Numismática',
+    tokenFichasHeading: 'Fichas',
   },
   en: {
     nav: 'Manzano Farming Co.',
@@ -106,6 +107,7 @@ export const manzanoFarmingCopy = {
     pieceCta: 'View the 1901 token of 10',
     fichasCta: 'Back to hacienda tokens',
     seriesCta: 'Back to Colombia-Numismatics',
+    tokenFichasHeading: 'Tokens',
   },
 } as const;
 
@@ -179,7 +181,179 @@ export function manzanoFarmingPath(locale: Locale): string {
   return locale === 'en' ? `/en${MANZANO_FARMING_PATH_EN}` : MANZANO_FARMING_PATH;
 }
 
+export const MANZANO_25_1901_PATH = `${MANZANO_FARMING_PATH}25-1901/`;
+export const MANZANO_25_1901_PATH_EN = `${MANZANO_FARMING_PATH_EN}25-1901/`;
+
+export const manzanoTokenLabels = {
+  es: {
+    home: 'Inicio',
+    numismatica: 'Numismática',
+    series: 'Colombia-Numismática',
+    fichas: 'Fichas de hacienda',
+    firm: 'Manzano Farming Co.',
+    breadcrumb: 'Migas de pan',
+    factsHeading: 'Ficha',
+    frontHeading: 'Anverso',
+    backHeading: 'Reverso',
+    aboutHeading: 'La pieza publicada',
+    sourcesTitle: 'Fuentes',
+    firmCta: 'Volver a Manzano Farming Co.',
+    fichasCta: 'Volver a las fichas de hacienda',
+  },
+  en: {
+    home: 'Home',
+    numismatica: 'Numismatics',
+    series: 'Colombia-Numismatics',
+    fichas: 'Hacienda tokens',
+    firm: 'Manzano Farming Co.',
+    breadcrumb: 'Breadcrumb',
+    factsHeading: 'Record',
+    frontHeading: 'Obverse',
+    backHeading: 'Reverse',
+    aboutHeading: 'The published piece',
+    sourcesTitle: 'Sources',
+    firmCta: 'Back to Manzano Farming Co.',
+    fichasCta: 'Back to hacienda tokens',
+  },
+} as const;
+
+export type ManzanoTokenFicha = {
+  id: string;
+  path: string;
+  pathEn: string;
+  nav: LocalizedText;
+  metaTitle: LocalizedText;
+  metaDescription: LocalizedText;
+  kicker: LocalizedText;
+  title: LocalizedText;
+  dek: LocalizedText;
+  lead: LocalizedText;
+  published: string;
+  dateLabel: LocalizedText;
+  authorLabel: string;
+  noSerialReason: LocalizedText;
+  facts: ReadonlyArray<{ label: LocalizedText; value: LocalizedText }>;
+  front: LocalizedText;
+  back: LocalizedText;
+  about: LocalizedText;
+  sources: CatalogSource[];
+};
+
+export const manzanoTokenFichas: ManzanoTokenFicha[] = [
+  {
+    id: '25-1901',
+    path: MANZANO_25_1901_PATH,
+    pathEn: MANZANO_25_1901_PATH_EN,
+    nav: { es: '25, 1901', en: '25, 1901' },
+    metaTitle: { es: '25 · Manzano Farming · 1901', en: '25 · Manzano Farming token · 1901' },
+    metaDescription: {
+      es: 'Ficha del 25 de 1901 de Manzano Farming Co.: bronce, 28,5 mm, resello que Absoluti lee JB. No es una pieza de esta colección.',
+      en: 'Record of the 1901 Manzano Farming Co. 25: bronze, 28.5 mm, counterstamp read by Absoluti as JB. It is not a piece in this collection.',
+    },
+    kicker: { es: 'Colombia-Numismática', en: 'Colombia-Numismatics' },
+    title: { es: '25 · Manzano Farming Co. · 1901', en: '25 · Manzano Farming Co. · 1901' },
+    dek: {
+      es: 'Bronce, 28,5 mm. El ejemplar publicado no está en esta colección.',
+      en: 'Bronze, 28.5 mm. The published specimen is not in this collection.',
+    },
+    lead: {
+      es: 'Seña de 25, fechada 1901, de Manzano Farming Co. La describe la colección Absoluti. El cuadro no dice la unidad del 25, y el disco no está en Notofilia.',
+      en: 'A token of 25, dated 1901, of Manzano Farming Co. The Absoluti collection describes it. The table does not give a unit for the 25, and the disc is not in Notofilia.',
+    },
+    published: '2026-10-23',
+    dateLabel: { es: '23 de octubre de 2026', en: 'October 23, 2026' },
+    authorLabel: 'Yezid Acosta',
+    noSerialReason: {
+      es: 'La pieza publicada no trae número de serie. No se inventa uno.',
+      en: 'The published piece carries no serial number. None is invented here.',
+    },
+    facts: [
+      {
+        label: { es: 'Valor', en: 'Value' },
+        value: {
+          es: '25. El cuadro de Absoluti no dice si son centavos. Esta ficha no les pone unidad.',
+          en: '25. Absoluti’s table does not say whether that is centavos. This record does not supply a unit.',
+        },
+      },
+      {
+        label: { es: 'Fecha', en: 'Date' },
+        value: { es: '1901, en el anverso.', en: '1901, on the obverse.' },
+      },
+      {
+        label: { es: 'Metal y módulo', en: 'Metal and module' },
+        value: {
+          es: 'Bronce, 28,5 mm de diámetro, 1,5 mm de espesor, canto liso. Cifras del cuadro de Absoluti. Este disco no se volvió a medir.',
+          en: 'Bronze, diameter 28.5 mm, thickness 1.5 mm, plain edge. Those are Absoluti’s figures. This disc was not measured again.',
+        },
+      },
+      {
+        label: { es: 'Resello', en: 'Counterstamp' },
+        value: {
+          es: 'Un punzón rectangular cae sobre COLOMBIA. Absoluti lo lee JB. Esta ficha no le da otra lectura.',
+          en: 'A rectangular punch lies on COLOMBIA. Absoluti reads it JB. This record does not give it another reading.',
+        },
+      },
+      {
+        label: { es: 'Serial', en: 'Serial' },
+        value: {
+          es: 'No publicado. La seña no trae numeración en el cuadro ni en la fotografía.',
+          en: 'Unpublished. The token shows no serial in the table or in the photograph.',
+        },
+      },
+      {
+        label: { es: 'Dónde está', en: 'Where it is' },
+        value: {
+          es: 'Colección Absoluti, obsequio de Carolina Martínez. No es una pieza de Notofilia.',
+          en: 'Absoluti collection, a gift of Carolina Martínez. It is not a Notofilia piece.',
+        },
+      },
+    ],
+    front: {
+      es: 'En la fotografía de Absoluti, la leyenda superior lee «MANZANO FARMING CO.». El 25 ocupa el centro. Debajo, «COLOMBIA» va entre dos estrellas, y el resello cae sobre esa palabra. La fecha 1901 cierra el anverso. Hay gráfila de puntos.',
+      en: 'In Absoluti’s photograph the upper legend reads “MANZANO FARMING CO.” The 25 fills the center. Below it, “COLOMBIA” sits between two stars, and the counterstamp falls on that word. The date 1901 closes the obverse. There is a beaded border.',
+    },
+    back: {
+      es: 'El arco superior lee «MANZANO, CARREÑO, SOCONSUCA» y el inferior «SOTAQUIRA Y PAIPA», sin tilde en la transcripción. Al centro está «PAPAYO». La línea de debajo está gastada en esa fotografía. Absoluti la transcribe «SATIVA». El listado de 1970 imprime Satira. Las dos grafías siguen abiertas.',
+      en: 'The upper arc reads “MANZANO, CARREÑO, SOCONSUCA” and the lower one “SOTAQUIRA Y PAIPA,” without an accent in the transcription. “PAPAYO” is in the center. The line beneath it is worn in that photograph. Absoluti transcribes it “SATIVA.” The 1970 listing prints Satira. Both spellings stay open.',
+    },
+    about: {
+      es: 'Es la única seña de esta firma que está publicada con módulo, metal y leyendas. Barriga nombra a la empresa, de Sotaquirá y Paipa, y no describe el cuño. La acuñación figura como no disponible. No hay certificado de calificación ni número de Henao que citar. La fotografía sigue en la ficha de Absoluti: esta página no la republica. El contexto de la firma está en <a href="/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/">Manzano Farming Co.</a>',
+      en: 'This is the only token of the firm published with module, metal, and legends. Barriga names the company, of Sotaquirá and Paipa, and does not describe the die. The mintage is given as unavailable. There is no grading certificate and no Henao number to cite. The photograph stays on Absoluti’s page: this record does not republish it. The firm’s context is on <a href="/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/">Manzano Farming Co.</a>',
+    },
+    sources: [
+      {
+        href: 'https://numis.absoluti-ind.com/MonedasColSennas.html',
+        es: 'Colección Absoluti (CFMR) — 25, Manzano Farming Co., 1901',
+        en: 'Absoluti collection (CFMR) — 25, Manzano Farming Co., 1901',
+        note: {
+          es: 'Bronce, 28,5 mm, 1,5 mm, canto liso, resello JB, leyendas y la fotografía. Obsequio de Carolina Martínez. No es una pieza de Notofilia.',
+          en: 'Bronze, 28.5 mm, 1.5 mm, plain edge, counterstamp JB, legends, and the photograph. A gift of Carolina Martínez. It is not a Notofilia piece.',
+        },
+      },
+      {
+        href: 'https://nnp.wustl.edu/library/advancedsearch?fullsearchterm=Manzano%20Farming',
+        es: 'Newman Numismatic Portal — The Numismatic Scrapbook Magazine, 24 de diciembre de 1970, p. 38',
+        en: 'Newman Numismatic Portal — The Numismatic Scrapbook Magazine, 24 December 1970, p. 38',
+        note: {
+          es: 'Lista «Manzano Farming Co Papayo y Satira 1901». No es la lectura Sativa del cuadro de Absoluti.',
+          en: 'It lists “Manzano Farming Co Papayo y Satira 1901.” That is not Absoluti’s Sativa reading.',
+        },
+      },
+    ],
+  },
+];
+
+export function manzanoTokenPath(token: ManzanoTokenFicha, locale: Locale): string {
+  return locale === 'en' ? `/en${token.pathEn}` : token.path;
+}
+
+export function manzanoTokenById(id: string): ManzanoTokenFicha | undefined {
+  return manzanoTokenFichas.find((token) => token.id === id);
+}
+
 export const manzanoFarmingDedicatedSlugs = [
   MANZANO_FARMING_PATH.replace(/^\/|\/$/g, ''),
   MANZANO_FARMING_PATH_EN.replace(/^\/|\/$/g, ''),
+  MANZANO_25_1901_PATH.replace(/^\/|\/$/g, ''),
+  MANZANO_25_1901_PATH_EN.replace(/^\/|\/$/g, ''),
 ] as const;

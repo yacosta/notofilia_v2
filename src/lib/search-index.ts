@@ -27,7 +27,7 @@ import {
 import { LAZARETTOS_NUMISMATICS_PATH, lazarettosNumismaticsCopy } from '../data/lazarettos-numismatics';
 import { COSCOJAS_SANTANDER_PATH, coscojasSantanderCopy } from '../data/coscojas-santander';
 import { HACIENDA_TOKENS_PATH, haciendaTokensCopy } from '../data/hacienda-tokens';
-import { MANZANO_FARMING_PATH, manzanoFarmingCopy } from '../data/manzano-farming';
+import { MANZANO_25_1901_PATH, MANZANO_FARMING_PATH, manzanoFarmingCopy, manzanoTokenById } from '../data/manzano-farming';
 import {
   MANZANO_FARMING_PIECE_ID,
   MANZANO_FARMING_PIECE_IMAGES,
@@ -656,6 +656,13 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       },
       extra:
         'Manzano Farming Co Sotaquirá Paipa Boyacá Papayo Sativa Satira Carreño Soconsuca seña 1901 10 centavos resello JB Barriga Credencial Historia Montaña',
+    },
+    {
+      href: MANZANO_25_1901_PATH,
+      title: manzanoTokenById('25-1901')!.title,
+      dek: manzanoTokenById('25-1901')!.dek,
+      extra:
+        '25 1901 bronce bronze Manzano Farming Co Papayo Sativa Satira resello JB Sotaquirá Paipa ficha token seña',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,
