@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../../data/estados-unidos';
+
+const note = noteById('20-chelines-rhode-island-1786');
+if (!note) throw new Error('Missing Rhode Island 20 shillings 1786 catalog note');
+---
+
+<UnitedStatesNotePage locale="en" note={note} />

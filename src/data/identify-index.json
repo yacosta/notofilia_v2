@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-17T05:33:12.800Z",
+  "generatedAt": "2026-10-24T17:26:19.620Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4060,6 +4060,45 @@
       }
     },
     {
+      "pieceId": "20-chelines-rhode-island-1786",
+      "face": "front",
+      "hash": "040c0c0c1c0c0c04",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-rhode-island-1786/",
+      "pick": "Fr. RI-298",
+      "image": "/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-composite.jpg",
+      "title": {
+        "es": "20 chelines · Rhode Island · mayo de 1786",
+        "en": "20 shillings · Rhode Island · May 1786"
+      }
+    },
+    {
+      "pieceId": "20-chelines-rhode-island-1786",
+      "face": "front",
+      "hash": "0414140c04040c0c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-rhode-island-1786/",
+      "pick": "Fr. RI-298",
+      "image": "/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-front.jpg",
+      "title": {
+        "es": "20 chelines · Rhode Island · mayo de 1786",
+        "en": "20 shillings · Rhode Island · May 1786"
+      }
+    },
+    {
+      "pieceId": "20-chelines-rhode-island-1786",
+      "face": "back",
+      "hash": "0c0c0404040c0c04",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-rhode-island-1786/",
+      "pick": "Fr. RI-298",
+      "image": "/images/catalog/united-states/united-states-rhode-island-20-shillings-1786-ri-298-6229-back.jpg",
+      "title": {
+        "es": "20 chelines · Rhode Island · mayo de 1786",
+        "en": "20 shillings · Rhode Island · May 1786"
+      }
+    },
+    {
       "pieceId": "1-dolar-state-bank-new-brunswick",
       "face": "front",
       "hash": "00657100002b2b00",
@@ -6124,6 +6163,32 @@
       "title": {
         "es": "5 ringgit · Abdul Rahman · 2012",
         "en": "RM5 · Abdul Rahman · 2012"
+      }
+    },
+    {
+      "pieceId": "co-1901-10-manzano-farming",
+      "face": "front",
+      "hash": "080c0e262a3a1c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/",
+      "pick": "",
+      "image": "/images/catalog/colombia/colombia-manzano-farming-co-10-1901-front.png",
+      "title": {
+        "es": "10 · Manzano Farming Co. · 1901",
+        "en": "10 · Manzano Farming Co. · 1901"
+      }
+    },
+    {
+      "pieceId": "co-1901-10-manzano-farming",
+      "face": "front",
+      "hash": "006173d552376100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/",
+      "pick": "",
+      "image": "/images/catalog/colombia/colombia-manzano-farming-co-10-1901-composite.png",
+      "title": {
+        "es": "10 · Manzano Farming Co. · 1901",
+        "en": "10 · Manzano Farming Co. · 1901"
       }
     },
     {
