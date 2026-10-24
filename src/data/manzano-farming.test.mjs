@@ -100,8 +100,8 @@ describe('Manzano Farming Co. page', () => {
     assert.match(bodyEs, /PAPAYO Y SATIVA/);
     assert.match(bodyEs, /Satira/);
     assert.match(bodyEs, /resolución n\.º 13/);
-    assert.match(bodyEs, /10-1901/);
-    assert.match(bodyEn, /10-1901/);
+    assert.match(bodyEs, /Manzano_10_1901/);
+    assert.match(bodyEn, /Manzano_10_1901/);
     assert.match(pageSource, /pieceCta/);
     assert.match(bodyEn, /Sotaquirá and Paipa/);
     assert.match(bodyEn, /article 136/);

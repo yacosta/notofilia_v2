@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { additions } from './holdings.ts';
-import { localizePath } from '../lib/locale-paths.ts';
+import { lookupGscRedirect } from '../lib/gsc-redirects.ts';
+import { englishRedirects, localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import { catalogPieceForHolding, milestonesFromHoldings } from '../lib/milestone-match.ts';
 import {
@@ -19,14 +20,14 @@ import {
 
 const esRoute = readFileSync(
   new URL(
-    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/index.astro',
+    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/index.astro',
     import.meta.url,
   ),
   'utf8',
 );
 const enRoute = readFileSync(
   new URL(
-    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/index.astro',
+    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/index.astro',
     import.meta.url,
   ),
   'utf8',
@@ -46,6 +47,18 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
       localizePath('/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/', 'en'),
       `/en${MANZANO_FARMING_PIECE_PATH_EN}`,
     );
+    assert.equal(
+      localizePath('/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/', 'es'),
+      MANZANO_FARMING_PIECE_PATH,
+    );
+    assert.match(MANZANO_FARMING_PIECE_PATH, /Manzano_10_1901\/$/);
+    const oldEs = '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/';
+    const oldEn = '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/';
+    const oldLegacy = '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/';
+    assert.equal(lookupGscRedirect(oldEs)?.target, MANZANO_FARMING_PIECE_PATH);
+    assert.equal(lookupGscRedirect(oldEs)?.status, 301);
+    assert.equal(lookupGscRedirect(oldEn)?.target, `/en${MANZANO_FARMING_PIECE_PATH_EN}`);
+    assert.equal(englishRedirects()[oldLegacy], `/en${MANZANO_FARMING_PIECE_PATH_EN}`);
     assert.match(esRoute, /ManzanoFarmingPiecePage/);
     assert.match(enRoute, /locale="en"/);
     assert.match(pageSource, /id="main-content"/);
