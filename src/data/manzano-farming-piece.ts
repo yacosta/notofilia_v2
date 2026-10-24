@@ -11,8 +11,8 @@ import { MANZANO_FARMING_PATH, MANZANO_FARMING_PATH_EN } from './manzano-farming
  */
 export const MANZANO_FARMING_PIECE_ID = 'co-1901-10-manzano-farming';
 
-export const MANZANO_FARMING_PIECE_PATH = `${MANZANO_FARMING_PATH}10-1901/`;
-export const MANZANO_FARMING_PIECE_PATH_EN = `${MANZANO_FARMING_PATH_EN}10-1901/`;
+export const MANZANO_FARMING_PIECE_PATH = `${MANZANO_FARMING_PATH}Manzano_10_1901/`;
+export const MANZANO_FARMING_PIECE_PATH_EN = `${MANZANO_FARMING_PATH_EN}Manzano_10_1901/`;
 
 /**
  * Literal fields for scripts/build-identify-index.mjs. That script reads
@@ -20,7 +20,7 @@ export const MANZANO_FARMING_PIECE_PATH_EN = `${MANZANO_FARMING_PATH_EN}10-1901/
  */
 export const manzanoFarmingPieceIndex = {
   id: 'co-1901-10-manzano-farming',
-  path: '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/',
+  path: '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/',
   title: { es: '10 · Manzano Farming Co. · 1901', en: '10 · Manzano Farming Co. · 1901' },
 };
 
