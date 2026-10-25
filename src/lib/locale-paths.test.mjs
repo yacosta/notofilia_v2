@@ -383,6 +383,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/5-dollars-confederate-1864/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/10-dolares-confederados-1864/', 'en'),
+      '/en/collection/united-states/10-dollars-confederate-1864/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/mpc/5-centavos-serie-481/', 'en'),
       '/en/collection/united-states/mpc/5-cents-series-481/',
     );
@@ -1268,6 +1272,14 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/5-dolares-confederados-1864/'],
       '/en/collection/united-states/5-dollars-confederate-1864/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/10-dolares-confederados-1864/'],
+      '/en/collection/united-states/10-dollars-confederate-1864/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/united-states/10-dollars-confederate-1864/'],
+      '/en/collection/united-states/10-dollars-confederate-1864/',
     );
   });
 });

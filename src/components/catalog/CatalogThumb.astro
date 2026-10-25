@@ -19,8 +19,10 @@ const {
   class: className = 'mb-3 aspect-[3/1] w-full rounded-[2px] bg-bg object-contain sm:mb-4',
   sizes = CATALOG_PIECE_THUMB_SIZES,
 } = Astro.props;
+const hasScan = Boolean(src);
 ---
 
+{hasScan ? (
 <img
   src={cfImage(src, { width: 800 })}
   srcset={imageSrcset(src)}
@@ -32,3 +34,4 @@ const {
   loading="lazy"
   decoding="async"
 />
+) : null}
