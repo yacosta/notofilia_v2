@@ -54,8 +54,8 @@ describe('US Series 1935A blue-seal $1 Fr. 1608', () => {
     assert.doesNotMatch(printed, /6\.1/);
     assert.doesNotMatch(note, /Stuart/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');
+    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

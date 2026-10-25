@@ -10,6 +10,12 @@ import {
   MANZANO_FARMING_PIECE_PATH,
   manzanoFarmingPieceCopy,
 } from '../data/manzano-farming-piece.ts';
+import {
+  CUADRA_UNA_MITAD_ID,
+  CUADRA_UNA_MITAD_IMAGES,
+  CUADRA_UNA_MITAD_PATH,
+  cuadraUnaMitadPieceCopy,
+} from '../data/cuadra-una-mitad-piece.ts';
 import { unitedStatesNotes } from '../data/estados-unidos.ts';
 import { unitedStatesCoins } from '../data/estados-unidos-coinage.ts';
 import { mpcVietnamNotes } from '../data/mpc-vietnam.ts';
@@ -240,6 +246,16 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
     imageFront: MANZANO_FARMING_PIECE_IMAGES.front,
     imageBack: MANZANO_FARMING_PIECE_IMAGES.composite,
     imageComposite: MANZANO_FARMING_PIECE_IMAGES.composite,
+  });
+
+  pushSeed(seeds, {
+    id: CUADRA_UNA_MITAD_ID,
+    kind: 'coin',
+    path: CUADRA_UNA_MITAD_PATH,
+    pick: 'Rulau Mag-5',
+    title: { es: cuadraUnaMitadPieceCopy.es.title, en: cuadraUnaMitadPieceCopy.en.title },
+    imageFront: CUADRA_UNA_MITAD_IMAGES.composite,
+    imageComposite: CUADRA_UNA_MITAD_IMAGES.composite,
   });
 
   for (const coin of colombiaCoinagePieces) {

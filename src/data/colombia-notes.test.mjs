@@ -90,8 +90,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');
+    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -992,8 +992,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');
+    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {

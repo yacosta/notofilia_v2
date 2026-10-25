@@ -77,6 +77,7 @@ import { santaFeMintDedicatedSlugs } from '../data/santa-fe-mint';
 import { haciendaTokensDedicatedSlugs } from '../data/hacienda-tokens';
 import { manzanoFarmingDedicatedSlugs } from '../data/manzano-farming';
 import { manzanoFarmingPieceDedicatedSlugs } from '../data/manzano-farming-piece';
+import { cuadraUnaMitadPieceDedicatedSlugs } from '../data/cuadra-una-mitad-piece';
 import { contactDedicatedSlugs } from '../data/contact';
 import { addLocalePair, englishContentSlug, localizePath, type Locale } from './locale-paths';
 import { milestones } from './milestones.ts';
@@ -389,6 +390,7 @@ const dedicatedEs = [
   ...haciendaTokensDedicatedSlugs,
   ...manzanoFarmingDedicatedSlugs,
   ...manzanoFarmingPieceDedicatedSlugs,
+  ...cuadraUnaMitadPieceDedicatedSlugs,
   LAZARETTOS_PATH.replace(/^\/|\/$/g, ''),
   ...lazarettosNumismaticsDedicatedSlugs,
   NETHERLANDS_PATH.replace(/^\/|\/$/g, ''),

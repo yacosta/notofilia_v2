@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-25T17:54:32.748Z",
+  "generatedAt": "2026-10-25T20:24:45.631Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2848,6 +2848,19 @@
       "title": {
         "es": "500 pesos oro · Banco de la República · 1977",
         "en": "500 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "co-1855-una-mitad-am-de-la-cuadra",
+      "face": "front",
+      "hash": "227593d4d2d53363",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/am-de-la-cuadra-una-mitad-1855/",
+      "pick": "",
+      "image": "/images/catalog/colombia/colombia-am-de-la-cuadra-una-mitad-1855-composite.png",
+      "title": {
+        "es": "Una Mitad · A. M. de la Cuadra · 1855",
+        "en": "Una Mitad · A. M. de la Cuadra · 1855"
       }
     },
     {
