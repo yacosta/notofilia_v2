@@ -4,6 +4,7 @@ import { register } from 'node:module';
 import { describe, it } from 'node:test';
 import { additions, catalogAdditions } from './holdings.ts';
 import { limitMetaDescription, piecePageMeta } from '../lib/piece-seo.ts';
+import { planSeoResponse } from '../lib/gsc-redirects.ts';
 import { englishRedirects, localizePath } from '../lib/locale-paths.ts';
 import { pieceScanAlt } from '../lib/catalog-media.ts';
 
@@ -95,6 +96,19 @@ describe('US Confederate T-68 $10 serial 83148', () => {
       redirects['/en/coleccion/united-states/10-dollars-confederate-1864/'],
       '/en/collection/united-states/10-dollars-confederate-1864/',
     );
+    for (const legacy of [
+      '/en/coleccion/estados-unidos/10-dolares-confederados-1864/',
+      '/en/coleccion/united-states/10-dollars-confederate-1864/',
+    ]) {
+      const planned = planSeoResponse(legacy);
+      assert.equal(planned.type, 'redirect');
+      assert.equal(
+        planned.type === 'redirect' ? planned.target : '',
+        '/en/collection/united-states/10-dollars-confederate-1864/',
+      );
+    }
+    assert.equal(planSeoResponse('/en/collection/united-states/10-dollars-confederate-1864/').type, 'pass');
+    assert.equal(planSeoResponse('/coleccion/estados-unidos/10-dolares-confederados-1864/').type, 'pass');
     assert.match(esPiece, /UnitedStatesNotePage/);
     assert.match(esPiece, /locale="es"/);
     assert.match(esPiece, /noteById\('10-dolares-confederados-1864'\)/);

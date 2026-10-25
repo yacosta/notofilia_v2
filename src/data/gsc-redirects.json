@@ -3,7 +3,7 @@
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "counts": {
     "gone": 16,
-    "existing": 1106,
+    "existing": 1110,
     "legacy-dc": 51,
     "manual": 33,
     "last-slug": 7,
@@ -2391,6 +2391,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/estados-unidos/10-dolares-confederados-1864/": {
+      "target": "/en/collection/united-states/10-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/estados-unidos/10-dolares-confederados-1864": {
+      "target": "/en/collection/united-states/10-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/": {
       "target": "/en/collection/united-states/10-dollars-series-1934-chicago/",
       "status": 301,
@@ -3128,6 +3138,16 @@
     },
     "/en/coleccion/united-states/1-dollar-state-bank-new-brunswick": {
       "target": "/en/collection/united-states/1-dollar-state-bank-new-brunswick/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-confederate-1864/": {
+      "target": "/en/collection/united-states/10-dollars-confederate-1864/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/united-states/10-dollars-confederate-1864": {
+      "target": "/en/collection/united-states/10-dollars-confederate-1864/",
       "status": 301,
       "rule": "existing"
     },
