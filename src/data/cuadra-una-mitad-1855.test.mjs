@@ -66,17 +66,33 @@ describe('1855 A. M. de la Cuadra una mitad', () => {
       cuadraUnaMitadCopy.es.scarcity,
       cuadraUnaMitadCopy.es.place,
       cuadraUnaMitadCopy.es.issuer,
+      cuadraUnaMitadCopy.es.nameNote,
       cuadraUnaMitadCopy.en.description,
       cuadraUnaMitadCopy.en.descriptionRest,
       cuadraUnaMitadCopy.en.scarcity,
       cuadraUnaMitadCopy.en.place,
       cuadraUnaMitadCopy.en.issuer,
+      cuadraUnaMitadCopy.en.nameNote,
+    ].join('\n');
+    const issuerFacts = [
+      cuadraUnaMitadCopy.es.description,
+      cuadraUnaMitadCopy.es.descriptionRest,
+      cuadraUnaMitadCopy.es.issuer,
+      cuadraUnaMitadCopy.en.description,
+      cuadraUnaMitadCopy.en.descriptionRest,
+      cuadraUnaMitadCopy.en.issuer,
     ].join('\n');
     assert.match(prose, /Rulau Mag-5/);
     assert.match(prose, /Fonrobert 8263/);
     assert.match(prose, /5850277-003/);
+    assert.match(prose, /moneda menuda|small change/);
     assert.doesNotMatch(prose, /€|\$\d|USD|euros|hammer price|precio/);
-    assert.doesNotMatch(prose, /Antonio|plantación de|hacienda de café|wage token of the/);
+    assert.doesNotMatch(issuerFacts, /Antonio|plantación de|hacienda de café|wage token of the/);
+    assert.match(cuadraUnaMitadCopy.es.nameNote, /Antonio Martínez de la Cuadra/);
+    assert.match(cuadraUnaMitadCopy.es.nameNote, /no identifica al emisor/);
+    assert.match(cuadraUnaMitadCopy.es.nameNote, /La Cuadra y Gaviria/);
+    assert.match(cuadraUnaMitadCopy.en.nameNote, /does not identify the 1855 issuer/);
+    assert.doesNotMatch(prose, /Disdéri|Vizcaya|Liverpool|albúmina|albumen/);
     assert.match(cuadraUnaMitadCopy.es.issuer, /no se desarrollan/);
     assert.match(cuadraUnaMitadCopy.en.issuer, /unexpanded/);
     assert.match(cuadraUnaMitadCopy.es.place, /Magdalena/);
@@ -88,6 +104,9 @@ describe('1855 A. M. de la Cuadra una mitad', () => {
     assert.ok(hrefs.some((href) => href.includes('numisbids.com/sale/3858/lot/850')));
     assert.ok(hrefs.some((href) => href.includes('archive.org/details/mitadtokensoflat3112toke')));
     assert.ok(hrefs.some((href) => href.includes('banrep.gov.co')));
+    assert.ok(hrefs.some((href) => href.includes('100libroslibres.com')));
+    assert.ok(hrefs.some((href) => href.includes('hdl.handle.net/10495/416')));
+    assert.match(pageSource, /name-heading/);
     for (const role of ['front', 'back', 'composite']) {
       const file = new URL(`../../catalog-src${CUADRA_UNA_MITAD_IMAGES[role].replace('/images', '')}`, import.meta.url);
       const meta = await sharp(file.pathname).metadata();

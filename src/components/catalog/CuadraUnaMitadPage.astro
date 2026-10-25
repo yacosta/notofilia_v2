@@ -165,6 +165,13 @@ const jsonCrumbs = [
         <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(about, locale)} />
       </section>
 
+      <section class="mt-12" aria-labelledby="name-heading">
+        <h2 id="name-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.nameHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{t.nameNote}</p>
+      </section>
+
       <section class="mt-12" aria-labelledby="scarcity-heading">
         <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
           {t.scarcityHeading}

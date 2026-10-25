@@ -496,8 +496,8 @@ function pieceSeeds(): PieceSeed[] {
     kicker: { es: cuadraUnaMitadCopy.es.kicker, en: cuadraUnaMitadCopy.en.kicker },
     grade: { es: cuadraUnaMitadCopy.es.grade, en: cuadraUnaMitadCopy.en.grade },
     description: {
-      es: `${cuadraUnaMitadCopy.es.description} ${cuadraUnaMitadCopy.es.descriptionRest}`,
-      en: `${cuadraUnaMitadCopy.en.description} ${cuadraUnaMitadCopy.en.descriptionRest}`,
+      es: `${cuadraUnaMitadCopy.es.description} ${cuadraUnaMitadCopy.es.descriptionRest} ${cuadraUnaMitadCopy.es.nameNote}`,
+      en: `${cuadraUnaMitadCopy.en.description} ${cuadraUnaMitadCopy.en.descriptionRest} ${cuadraUnaMitadCopy.en.nameNote}`,
     },
     image: CUADRA_UNA_MITAD_IMAGES.composite,
     imageAlt: {
