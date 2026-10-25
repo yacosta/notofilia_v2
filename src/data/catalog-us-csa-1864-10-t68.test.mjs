@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { register } from 'node:module';
 import { describe, it } from 'node:test';
 import { additions, catalogAdditions } from './holdings.ts';
@@ -20,28 +20,55 @@ const enPiece = readFileSync(
 );
 
 describe('US Confederate T-68 $10 serial 83148', () => {
-  it('records P-68 / T-68 as its own object, without a plate, series, or certificate', async () => {
+  it('records P-68 / T-68 serial 83148, 9th series, plate F, without a certificate', async () => {
     const { noteById } = await import('./estados-unidos.ts');
     const note = noteById('10-dolares-confederados-1864');
     assert.ok(note);
     assert.equal(note.chapterId, 'us-confederado');
     assert.equal(note.pick, 'P#68 · T-68 · N#207970');
     assert.equal(note.serial, '83148');
-    assert.equal(note.serial_display, undefined);
+    assert.equal(note.serial_display, '83148 · 9 · F');
     assert.equal(note.cert_number, undefined);
     assert.equal(note.cert_grader, undefined);
-    assert.equal(note.images.front, '');
-    assert.equal(note.images.back, '');
+    assert.equal(
+      note.images.front,
+      '/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-front.jpg',
+    );
+    assert.equal(
+      note.images.back,
+      '/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-back.jpg',
+    );
+    assert.equal(
+      note.images.composite,
+      '/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-composite.jpg',
+    );
+    assert.equal(note.images.width, 1672);
+    assert.equal(note.images.height, 941);
+    for (const side of ['front', 'back', 'composite']) {
+      assert.equal(
+        existsSync(
+          new URL(
+            `../../catalog-src/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-${side}.jpg`,
+            import.meta.url,
+          ),
+        ),
+        true,
+        side,
+      );
+    }
     assert.match(note.printed.es, /9\.071\.000/);
     assert.match(note.printed.en, /9,071,000/);
     assert.match(note.printed.es, /177 × 76 mm/);
     assert.match(note.printed.es, /no de este serial/);
     assert.match(note.printed.en, /not as a measurement of this serial/);
-    assert.match(note.description.es, /no coloca el serial 83148/);
-    assert.match(note.description.en, /does not place serial 83148/);
+    assert.match(note.printed.es, /9 SERIES/);
+    assert.match(note.description.es, /plancha F/);
+    assert.match(note.description.en, /plate F/);
+    assert.match(note.description.es, /IN MEMORIAM/);
+    assert.match(note.description.en, /postwar poem/);
+    assert.doesNotMatch(note.description.es, /Evans & Cogswell; esta ficha no coloca/);
     assert.match(note.grade.es, /no se afirma grado/);
     assert.match(note.grade.en, /no grade is stated/);
-    assert.doesNotMatch(note.description.es, /plancha [A-Z]/);
     assert.doesNotMatch(`${note.serial} ${note.description.es} ${note.description.en}`, /Cr\.\s*542/);
     const publicCopy = [
       note.lead.es,
@@ -54,6 +81,9 @@ describe('US Confederate T-68 $10 serial 83148', () => {
       note.population.en,
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
+    const { milestones } = await import('../lib/milestones.ts');
+    assert.equal(milestones[0]?.holdingId, 'us-csa-1864-10-83148');
+    assert.match(milestones[0]?.image ?? '', /83148-9-f-front\.jpg$/);
     assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');

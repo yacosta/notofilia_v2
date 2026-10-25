@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T17:26:19.620Z",
+  "generatedAt": "2026-10-25T17:54:32.748Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4291,6 +4291,45 @@
       "title": {
         "es": "20 dólares · Estados Confederados · 1864",
         "en": "$20 · Confederate States · 1864"
+      }
+    },
+    {
+      "pieceId": "10-dolares-confederados-1864",
+      "face": "front",
+      "hash": "00ad7c0000716d00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-confederados-1864/",
+      "pick": "P#68 · T-68 · N#207970",
+      "image": "/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-composite.jpg",
+      "title": {
+        "es": "10 dólares T-68 · Estados Confederados · 1864",
+        "en": "$10 T-68 · Confederate States · 1864"
+      }
+    },
+    {
+      "pieceId": "10-dolares-confederados-1864",
+      "face": "front",
+      "hash": "00e9ecede9596800",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-confederados-1864/",
+      "pick": "P#68 · T-68 · N#207970",
+      "image": "/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-front.jpg",
+      "title": {
+        "es": "10 dólares T-68 · Estados Confederados · 1864",
+        "en": "$10 T-68 · Confederate States · 1864"
+      }
+    },
+    {
+      "pieceId": "10-dolares-confederados-1864",
+      "face": "back",
+      "hash": "003159652552cd00",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-dolares-confederados-1864/",
+      "pick": "P#68 · T-68 · N#207970",
+      "image": "/images/catalog/united-states/united-states-confederate-states-10-dollars-1864-83148-9-f-back.jpg",
+      "title": {
+        "es": "10 dólares T-68 · Estados Confederados · 1864",
+        "en": "$10 T-68 · Confederate States · 1864"
       }
     },
     {
