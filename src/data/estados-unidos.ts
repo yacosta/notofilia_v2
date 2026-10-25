@@ -2677,7 +2677,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     path: '/coleccion/estados-unidos/10-dolares-confederados-1864/',
     pathEn: '/collection/united-states/10-dollars-confederate-1864/',
     pick: 'P#68 · T-68 · N#207970',
-    serial: '83148 · 9 · F',
+    serial: '83148',
+    serial_display: '83148 · 9 · F',
     signatures: {
       es: 'C. Purcell («for Register») y Balaguer («for Treasurer»); la inicial de la segunda firma no se lee con certeza',
       en: 'C. Purcell (“for Register”) and Balaguer (“for Treasurer”); the initial of the second signature cannot be read with certainty',

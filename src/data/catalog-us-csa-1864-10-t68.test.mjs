@@ -26,8 +26,8 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     assert.ok(note);
     assert.equal(note.chapterId, 'us-confederado');
     assert.equal(note.pick, 'P#68 · T-68 · N#207970');
-    assert.equal(note.serial, '83148 · 9 · F');
-    assert.equal(note.serial_display, undefined);
+    assert.equal(note.serial, '83148');
+    assert.equal(note.serial_display, '83148 · 9 · F');
     assert.equal(note.cert_number, undefined);
     assert.equal(note.cert_grader, undefined);
     assert.equal(
@@ -81,6 +81,9 @@ describe('US Confederate T-68 $10 serial 83148', () => {
       note.population.en,
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
+    const { milestones } = await import('../lib/milestones.ts');
+    assert.equal(milestones[0]?.holdingId, 'us-csa-1864-10-83148');
+    assert.match(milestones[0]?.image ?? '', /83148-9-f-front\.jpg$/);
     assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');
