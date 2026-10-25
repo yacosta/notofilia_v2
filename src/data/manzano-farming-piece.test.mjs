@@ -70,8 +70,8 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
     assert.equal(manzanoFarmingPieceIndex.title.es, manzanoFarmingPieceCopy.es.title);
     assert.equal(manzanoFarmingPieceIndex.title.en, manzanoFarmingPieceCopy.en.title);
     assert.equal(additions.find((row) => row.id === MANZANO_FARMING_PIECE_ID)?.kind, 'coin');
-    assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
-    assert.equal(additions.at(-1)?.kind, 'banknote');
+    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(additions.at(-1)?.kind, 'coin');
     assert.match(manzanoFarmingPieceNoSerialReason, /No serial is inscribed/);
   });
 

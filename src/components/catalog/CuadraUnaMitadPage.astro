@@ -1,0 +1,189 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import NoteImageLightbox from './NoteImageLightbox.astro';
+import SourceList from './SourceList.astro';
+import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
+import {
+  CUADRA_UNA_MITAD_IMAGES,
+  cuadraUnaMitadCopy,
+  cuadraUnaMitadPath,
+  cuadraUnaMitadSources,
+} from '../../data/cuadra-una-mitad-1855';
+import { NUMISMATICA_PATH } from '../../data/numismatica';
+import { linkFirstGlossaryTerms } from '../../lib/catalog-media';
+import { breadcrumbList, visualArtworkJsonLd } from '../../lib/json-ld';
+import { localizePath, type Locale } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = cuadraUnaMitadCopy[locale];
+const pathname = cuadraUnaMitadPath(locale);
+const numismaticaHref = localizePath(NUMISMATICA_PATH, locale);
+const seriesHref = localizePath(COLOMBIA_COINAGE_PATH, locale);
+const documentTitle = `${t.metaTitle} · Notofilia`;
+const about = `${t.description} ${t.descriptionRest}`;
+const jsonCrumbs = [
+  { name: t.home, path: '/' },
+  { name: t.numismatica, path: NUMISMATICA_PATH },
+  { name: t.series, path: COLOMBIA_COINAGE_PATH },
+  { name: t.h1, path: pathname },
+];
+---
+
+<Layout
+  title={documentTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={CUADRA_UNA_MITAD_IMAGES.composite}
+>
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          breadcrumbList(jsonCrumbs, locale),
+          visualArtworkJsonLd({
+            name: t.h1,
+            description: t.metaDescription,
+            url: pathname,
+            image: CUADRA_UNA_MITAD_IMAGES.composite,
+            locale,
+            artform: 'Coin',
+            catalogNumber: t.reference,
+            issuer: 'A. M. de la Cuadra',
+            collectionUrl: seriesHref,
+            collectionName: t.series,
+          }),
+        ],
+      })}
+    />
+  </Fragment>
+  <main id="main-content" tabindex="-1" class="bg-bg outline-none">
+    <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
+      <Breadcrumb
+        locale={locale}
+        label={t.breadcrumb}
+        items={[
+          { href: localizePath('/', locale), label: t.home },
+          { href: numismaticaHref, label: t.numismatica },
+          { href: seriesHref, label: t.series },
+          { label: t.h1 },
+        ]}
+      />
+
+      <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+        {t.kicker}
+      </p>
+      <h1 class="mb-2 mt-3 font-display text-[clamp(1.85rem,4vw,2.85rem)] font-normal leading-[1.15] text-cream-dim">
+        {t.h1}
+      </h1>
+      <p class="mb-4 mt-0 font-display text-[1.15rem]/7 text-cream">{t.title}</p>
+      <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{t.lead}</p>
+
+      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="facts-heading">
+        <h2 id="facts-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.factsHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.referenceLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.reference}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.yearLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.year}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.valueLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.value}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.issuerLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.issuer}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.metalLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.metal}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.placeLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.place}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.makerLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.maker}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.grade}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <div class="grid gap-10 lg:grid-cols-2">
+        <figure class="m-0">
+          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
+          <NoteImageLightbox
+            src={CUADRA_UNA_MITAD_IMAGES.front}
+            sideLabel={t.frontHeading}
+            title={t.title}
+            expandLabel={t.expandImage}
+            closeLabel={t.closeLightbox}
+            locale={locale}
+            width={CUADRA_UNA_MITAD_IMAGES.width}
+            height={CUADRA_UNA_MITAD_IMAGES.height}
+            eager
+          />
+          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{t.frontCaption}</figcaption>
+        </figure>
+        <figure class="m-0">
+          <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
+          <NoteImageLightbox
+            src={CUADRA_UNA_MITAD_IMAGES.back}
+            sideLabel={t.backHeading}
+            title={t.title}
+            expandLabel={t.expandImage}
+            closeLabel={t.closeLightbox}
+            locale={locale}
+            width={CUADRA_UNA_MITAD_IMAGES.width}
+            height={CUADRA_UNA_MITAD_IMAGES.height}
+          />
+          <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{t.backCaption}</figcaption>
+        </figure>
+      </div>
+
+      <section class="mt-14" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.aboutHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream" set:html={linkFirstGlossaryTerms(about, locale)} />
+      </section>
+
+      <section class="mt-12" aria-labelledby="scarcity-heading">
+        <h2 id="scarcity-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+          {t.scarcityHeading}
+        </h2>
+        <p class="m-0 text-[17px]/7 text-cream">{t.scarcity}</p>
+      </section>
+
+      <div class="mt-16">
+        <SourceList locale={locale} sources={cuadraUnaMitadSources} heading={t.sourcesHeading} />
+      </div>
+
+      <p class="mt-12">
+        <a
+          href={seriesHref}
+          class="inline-flex min-h-11 items-center font-sans text-[15px] text-gold-light hover:text-cream"
+        >
+          ← {t.seriesCta}
+        </a>
+      </p>
+    </article>
+  </main>
+</Layout>

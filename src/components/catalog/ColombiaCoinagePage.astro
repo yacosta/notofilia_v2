@@ -19,6 +19,7 @@ import { colombiaCoinagePieces, coinagePiecePath } from '../../data/colombia-coi
 import { NUMISMATICA_PATH } from '../../data/numismatica';
 import { COSCOJAS_SANTANDER_PATH } from '../../data/coscojas-santander';
 import { HACIENDA_TOKENS_PATH } from '../../data/hacienda-tokens';
+import { CUADRA_UNA_MITAD_PATH } from '../../data/cuadra-una-mitad-1855';
 import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
@@ -167,6 +168,16 @@ const jsonLd = collectionPageJsonLd({
           href={localizePath(HACIENDA_TOKENS_PATH, locale)}
         >
           {t.haciendaTokensLink}
+        </a>
+      </p>
+      <p class="mt-4 mb-0 text-[17px]/7 text-muted">
+        {t.cuadraTokenLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={localizePath(CUADRA_UNA_MITAD_PATH, locale)}
+        >
+          {t.cuadraTokenLink}
         </a>
       </p>
 

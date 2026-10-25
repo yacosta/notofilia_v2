@@ -126,6 +126,8 @@ describe('Colombia coinage guide', () => {
     assert.equal(coinageCopy.en.updatedDate, 'October 22, 2026');
     assert.match(coinageCopy.es.haciendaTokensLead, /artículo 136/);
     assert.match(coinageCopy.en.haciendaTokensLead, /article 136/);
+    assert.match(coinageCopy.es.cuadraTokenLead, /A\. M\. de la Cuadra/);
+    assert.match(coinageCopy.en.cuadraTokenLead, /A\. M\. de la Cuadra/);
     assert.match(pageSource, /HACIENDA_TOKENS_PATH/);
     assert.match(coinageCopy.es.numberingBefore, /el número que abre la referencia es el KM/);
     assert.match(pageSource, /comparisonPath\(locale\)/);

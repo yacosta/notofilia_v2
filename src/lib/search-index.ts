@@ -35,6 +35,13 @@ import {
   manzanoFarmingPieceCopy,
 } from '../data/manzano-farming-piece';
 import {
+  CUADRA_UNA_MITAD_ID,
+  CUADRA_UNA_MITAD_IMAGES,
+  CUADRA_UNA_MITAD_PATH,
+  cuadraUnaMitadCopy,
+  cuadraUnaMitadIndex,
+} from '../data/cuadra-una-mitad-1855';
+import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
 } from '../data/popayan-1-escudo-carlos-iv';
@@ -476,6 +483,26 @@ function pieceSeeds(): PieceSeed[] {
     imageAlt: {
       es: manzanoFarmingPieceCopy.es.frontCaption,
       en: manzanoFarmingPieceCopy.en.frontCaption,
+    },
+  });
+
+  seeds.push({
+    id: CUADRA_UNA_MITAD_ID,
+    kind: 'coin',
+    path: CUADRA_UNA_MITAD_PATH,
+    pick: cuadraUnaMitadIndex.reference,
+    title: { es: cuadraUnaMitadCopy.es.title, en: cuadraUnaMitadCopy.en.title },
+    dek: { es: cuadraUnaMitadCopy.es.lead, en: cuadraUnaMitadCopy.en.lead },
+    kicker: { es: cuadraUnaMitadCopy.es.kicker, en: cuadraUnaMitadCopy.en.kicker },
+    grade: { es: cuadraUnaMitadCopy.es.grade, en: cuadraUnaMitadCopy.en.grade },
+    description: {
+      es: `${cuadraUnaMitadCopy.es.description} ${cuadraUnaMitadCopy.es.descriptionRest}`,
+      en: `${cuadraUnaMitadCopy.en.description} ${cuadraUnaMitadCopy.en.descriptionRest}`,
+    },
+    image: CUADRA_UNA_MITAD_IMAGES.composite,
+    imageAlt: {
+      es: cuadraUnaMitadCopy.es.frontCaption,
+      en: cuadraUnaMitadCopy.en.frontCaption,
     },
   });
 

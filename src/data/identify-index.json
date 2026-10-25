@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T17:26:19.620Z",
+  "generatedAt": "2026-10-25T18:27:33.663Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -2848,6 +2848,45 @@
       "title": {
         "es": "500 pesos oro · Banco de la República · 1977",
         "en": "500 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "co-1855-una-mitad-am-de-la-cuadra",
+      "face": "front",
+      "hash": "080416122a0a0c08",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/una-mitad-am-de-la-cuadra-1855/",
+      "pick": "Rulau Mag-5 · Fonrobert 8263",
+      "image": "/images/catalog/colombia/colombia-am-de-la-cuadra-una-mitad-1855-front.png",
+      "title": {
+        "es": "Una mitad · A. M. de la Cuadra · 1855",
+        "en": "Una mitad · A. M. de la Cuadra · 1855"
+      }
+    },
+    {
+      "pieceId": "co-1855-una-mitad-am-de-la-cuadra",
+      "face": "back",
+      "hash": "081416322a260408",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/una-mitad-am-de-la-cuadra-1855/",
+      "pick": "Rulau Mag-5 · Fonrobert 8263",
+      "image": "/images/catalog/colombia/colombia-am-de-la-cuadra-una-mitad-1855-back.png",
+      "title": {
+        "es": "Una mitad · A. M. de la Cuadra · 1855",
+        "en": "Una mitad · A. M. de la Cuadra · 1855"
+      }
+    },
+    {
+      "pieceId": "co-1855-una-mitad-am-de-la-cuadra",
+      "face": "front",
+      "hash": "0033155414553100",
+      "kind": "coin",
+      "path": "/coleccion/colombia-numismatica/una-mitad-am-de-la-cuadra-1855/",
+      "pick": "Rulau Mag-5 · Fonrobert 8263",
+      "image": "/images/catalog/colombia/colombia-am-de-la-cuadra-una-mitad-1855-composite.png",
+      "title": {
+        "es": "Una mitad · A. M. de la Cuadra · 1855",
+        "en": "Una mitad · A. M. de la Cuadra · 1855"
       }
     },
     {

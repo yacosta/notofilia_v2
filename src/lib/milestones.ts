@@ -6,6 +6,13 @@ import {
   MANZANO_FARMING_PIECE_PATH,
   manzanoFarmingPieceCopy,
 } from '../data/manzano-farming-piece.ts';
+import {
+  CUADRA_UNA_MITAD_ID,
+  CUADRA_UNA_MITAD_IMAGES,
+  CUADRA_UNA_MITAD_PATH,
+  cuadraUnaMitadCopy,
+  cuadraUnaMitadIndex,
+} from '../data/cuadra-una-mitad-1855.ts';
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
 import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
@@ -52,6 +59,22 @@ function catalogPieces(): CatalogPiece[] {
     imageAlt: {
       es: manzanoFarmingPieceCopy.es.frontCaption,
       en: manzanoFarmingPieceCopy.en.frontCaption,
+    },
+  });
+
+  pieces.push({
+    id: CUADRA_UNA_MITAD_ID,
+    country: 'CO',
+    href: CUADRA_UNA_MITAD_PATH,
+    title: cuadraUnaMitadIndex.title,
+    dek: { es: cuadraUnaMitadCopy.es.lead, en: cuadraUnaMitadCopy.en.lead },
+    pick: cuadraUnaMitadIndex.reference,
+    serial: '',
+    cert: '',
+    image: CUADRA_UNA_MITAD_IMAGES.composite,
+    imageAlt: {
+      es: cuadraUnaMitadCopy.es.frontCaption,
+      en: cuadraUnaMitadCopy.en.frontCaption,
     },
   });
 

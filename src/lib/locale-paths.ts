@@ -470,6 +470,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     en: '/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
   },
   { es: '/coleccion/colombia-numismatica/fichas-de-hacienda/', en: '/collection/colombia-numismatics/hacienda-tokens/' },
+  {
+    es: '/coleccion/colombia-numismatica/una-mitad-am-de-la-cuadra-1855/',
+    en: '/collection/colombia-numismatics/una-mitad-am-de-la-cuadra-1855/',
+  },
   { es: '/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', en: '/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/' },
   { es: '/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', en: '/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/' },
   { es: '/coleccion/colombia-numismatica/8-reales-bogota-1821-ba-jf/', en: '/collection/colombia-numismatics/8-reales-bogota-1821-ba-jf/' },
@@ -821,6 +825,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia-numismatica/20-centavos-santander-1902/',
     '/en/coleccion/colombia-numismatica/10-centavos-santander-1902/',
     '/en/coleccion/colombia-numismatica/50-centavos-1916-km193-1/',
+    '/en/coleccion/colombia-numismatica/una-mitad-am-de-la-cuadra-1855/',
     '/en/coleccion/colombia-numismatica/coscojas-de-santander/',
     '/en/coleccion/colombia-numismatica/catalogo/',
     '/en/coleccion/colombia-numismatica/',

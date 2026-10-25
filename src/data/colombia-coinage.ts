@@ -266,6 +266,9 @@ export const coinageCopy = {
     coscojasLink: 'Las coscojas de Santander',
     haciendaTokensLead: 'Las fichas de hacienda, el vale y el comisariato, hasta el artículo 136 del código de 1950, tienen página propia.',
     haciendaTokensLink: 'Las fichas de hacienda',
+    cuadraTokenLead:
+      'La ficha privada de A. M. de la Cuadra, una mitad de 1855, atribuida al Magdalena, tiene página propia.',
+    cuadraTokenLink: 'Una mitad de A. M. de la Cuadra, 1855',
     santaFeMintLead: 'La Casa de Moneda de Santa Fe de Nuevo Reino, de las macuquinas al claustro de La Candelaria, tiene página propia.',
     santaFeMintLink: 'Casa de Moneda de Santa Fe de Nuevo Reino',
     escudoLead: 'La Casa de Moneda de Popayán, en labores desde 1758, tiene página propia. El 1 escudo de oro de Carlos IV se labró ahí entre 1792 y 1808.',
@@ -319,6 +322,9 @@ export const coinageCopy = {
     coscojasLink: 'The coscojas of Santander',
     haciendaTokensLead: 'Hacienda tokens, the voucher, and the commissary, through article 136 of the 1950 code, have their own page.',
     haciendaTokensLink: 'Hacienda tokens',
+    cuadraTokenLead:
+      'The private token of A. M. de la Cuadra, an 1855 una mitad attributed to Magdalena, has its own page.',
+    cuadraTokenLink: 'A. M. de la Cuadra una mitad, 1855',
     santaFeMintLead: 'The mint of Santa Fe de Nuevo Reino, from the cobs to the cloister in La Candelaria, has its own page.',
     santaFeMintLink: 'The mint of Santa Fe de Nuevo Reino',
     escudoLead: 'The Popayán mint, at work since 1758, has its own page. Charles IV’s gold 1 escudo was struck there from 1792 to 1808.',
