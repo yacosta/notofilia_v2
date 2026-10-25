@@ -6,6 +6,12 @@ import {
   MANZANO_FARMING_PIECE_PATH,
   manzanoFarmingPieceCopy,
 } from '../data/manzano-farming-piece.ts';
+import {
+  CUADRA_UNA_MITAD_ID,
+  CUADRA_UNA_MITAD_IMAGES,
+  CUADRA_UNA_MITAD_PATH,
+  cuadraUnaMitadPieceCopy,
+} from '../data/cuadra-una-mitad-piece.ts';
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
 import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
@@ -52,6 +58,22 @@ function catalogPieces(): CatalogPiece[] {
     imageAlt: {
       es: manzanoFarmingPieceCopy.es.frontCaption,
       en: manzanoFarmingPieceCopy.en.frontCaption,
+    },
+  });
+
+  pieces.push({
+    id: CUADRA_UNA_MITAD_ID,
+    country: 'CO',
+    href: CUADRA_UNA_MITAD_PATH,
+    title: { es: cuadraUnaMitadPieceCopy.es.title, en: cuadraUnaMitadPieceCopy.en.title },
+    dek: { es: cuadraUnaMitadPieceCopy.es.lead, en: cuadraUnaMitadPieceCopy.en.lead },
+    pick: 'Rulau Mag-5',
+    serial: '',
+    cert: '',
+    image: CUADRA_UNA_MITAD_IMAGES.composite,
+    imageAlt: {
+      es: cuadraUnaMitadPieceCopy.es.frontCaption,
+      en: cuadraUnaMitadPieceCopy.en.frontCaption,
     },
   });
 

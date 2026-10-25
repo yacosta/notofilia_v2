@@ -82,11 +82,11 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-csa-1864-10-83148');
-    assert.match(milestones[0]?.image ?? '', /83148-9-f-front\.jpg$/);
-    assert.equal(additions.at(-1)?.id, 'us-csa-1864-10-83148');
-    assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-csa-1864-10-t68-p68');
+    assert.equal(milestones[0]?.holdingId, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.match(milestones[0]?.image ?? '', /colombia-am-de-la-cuadra-una-mitad-1855-composite\.png$/);
+    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(additions.at(-1)?.kind, 'coin');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,

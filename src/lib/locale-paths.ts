@@ -469,6 +469,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     es: '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/',
     en: '/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
   },
+  {
+    es: '/coleccion/colombia-numismatica/fichas-de-hacienda/am-de-la-cuadra-una-mitad-1855/',
+    en: '/collection/colombia-numismatics/hacienda-tokens/am-de-la-cuadra-una-mitad-1855/',
+  },
   { es: '/coleccion/colombia-numismatica/fichas-de-hacienda/', en: '/collection/colombia-numismatics/hacienda-tokens/' },
   { es: '/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', en: '/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/' },
   { es: '/coleccion/colombia-numismatica/1-real-bogota-1810-nr-jf/', en: '/collection/colombia-numismatics/1-real-bogota-1810-nr-jf/' },

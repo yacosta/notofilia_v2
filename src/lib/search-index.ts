@@ -35,6 +35,12 @@ import {
   manzanoFarmingPieceCopy,
 } from '../data/manzano-farming-piece';
 import {
+  CUADRA_UNA_MITAD_ID,
+  CUADRA_UNA_MITAD_IMAGES,
+  CUADRA_UNA_MITAD_PATH,
+  cuadraUnaMitadPieceCopy,
+} from '../data/cuadra-una-mitad-piece';
+import {
   POPAYAN_1_ESCUDO_CARLOS_IV_PATH,
   popayan1EscudoCarlosIvCopy,
 } from '../data/popayan-1-escudo-carlos-iv';
@@ -479,6 +485,26 @@ function pieceSeeds(): PieceSeed[] {
     },
   });
 
+  seeds.push({
+    id: CUADRA_UNA_MITAD_ID,
+    kind: 'coin',
+    path: CUADRA_UNA_MITAD_PATH,
+    pick: 'Rulau Mag-5',
+    title: { es: cuadraUnaMitadPieceCopy.es.title, en: cuadraUnaMitadPieceCopy.en.title },
+    dek: { es: cuadraUnaMitadPieceCopy.es.lead, en: cuadraUnaMitadPieceCopy.en.lead },
+    kicker: { es: cuadraUnaMitadPieceCopy.es.kicker, en: cuadraUnaMitadPieceCopy.en.kicker },
+    grade: { es: cuadraUnaMitadPieceCopy.es.grade, en: cuadraUnaMitadPieceCopy.en.grade },
+    description: {
+      es: `${cuadraUnaMitadPieceCopy.es.description} ${cuadraUnaMitadPieceCopy.es.descriptionRest}`,
+      en: `${cuadraUnaMitadPieceCopy.en.description} ${cuadraUnaMitadPieceCopy.en.descriptionRest}`,
+    },
+    image: CUADRA_UNA_MITAD_IMAGES.composite,
+    imageAlt: {
+      es: cuadraUnaMitadPieceCopy.es.frontCaption,
+      en: cuadraUnaMitadPieceCopy.en.frontCaption,
+    },
+  });
+
   for (const coin of colombiaCoinagePieces) {
     seeds.push({
       id: `co-coin-${coin.id}`,
@@ -645,7 +671,7 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
         en: haciendaTokensCopy.en.metaDescription,
       },
       extra:
-        'fichas de hacienda exonumia scrip comisariato La Amalia Venecia Zancudo Pick S909 Manuelita United Fruit artículo 136 Código Sustantivo Kemmerer Henao tarro almud arroba Manzano Farming',
+        'fichas de hacienda exonumia scrip comisariato La Amalia Venecia Zancudo Pick S909 Manuelita United Fruit artículo 136 Código Sustantivo Kemmerer Henao tarro almud arroba Manzano Farming A. M. de la Cuadra Una Mitad 1855 Rulau Mag-5 Fonrobert 8263 Scovill',
     },
     {
       href: MANZANO_FARMING_PATH,
