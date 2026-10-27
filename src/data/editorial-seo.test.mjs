@@ -229,6 +229,46 @@ describe('October 2026 Colombian fair notes', () => {
   });
 });
 
+describe('Málaga numismatics note', () => {
+  it('publishes the Diario Sur portrait without a price or a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'numismatica-malaga-gonzalez-2026');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'numismatics-malaga-gonzalez-2026');
+    assert.equal(article.published, '2026-10-27');
+    assert.equal(article.sourceName, 'Diario Sur');
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/calle-molina-lario-centro-malaga.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 1067);
+    assert.equal(
+      existsSync(new URL('../../public/uploads/calle-molina-lario-centro-malaga.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/calle-molina-lario-centro-malaga-card.jpg', import.meta.url)),
+      true,
+    );
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /Molina Lario/);
+      assert.match(html, /1981/);
+      assert.match(html, /1890/);
+      assert.match(html, /1897/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/coleccion\/espana-numismatica\/2-escudos-sevilla-felipe-ii-s-d\//);
+      assert.match(html, /\/coleccion\/espana-numismatica\/medio-escudo-madrid-1757-jb\//);
+      assert.doesNotMatch(html, /500\s?%|€|\$\s?\d|US\$/);
+    }
+    assert.match(article.bodyHtml.es, /Gonzalo González/);
+    assert.match(article.bodyHtml.es, /Alfonso XIII/);
+    assert.match(article.bodyHtml.en, /Alfonso XIII/);
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
