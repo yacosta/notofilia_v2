@@ -227,6 +227,50 @@ describe('October 2026 Colombian fair notes', () => {
       }
     }
   });
+
+  it('publishes the Cable Plaza follow-up without a price or an invented serial', () => {
+    const article = newsArticles.find((item) => item.slug === 'diez-pesos-1923-feria-manizales');
+    const announcement = newsArticles.find((item) => item.slug === 'feria-numismatica-cable-plaza-manizales-2026');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1923-ten-peso-note-manizales-fair');
+    assert.equal(article.published, '2026-10-27');
+    assert.equal(article.sourceName, 'La Patria');
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/catedral-plaza-bolivar-manizales.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 1200);
+    assert.equal(
+      existsSync(new URL('../../public/uploads/catedral-plaza-bolivar-manizales.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/catedral-plaza-bolivar-manizales-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(announcement.related.some((item) => item.href === '/noticias/diez-pesos-1923-feria-manizales/'));
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /Cable Plaza/);
+      assert.match(html, /1923/);
+      assert.match(html, /González White/);
+      assert.match(html, /Valledupar/);
+      assert.match(html, /47\.050\.001/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/notafilia\//);
+      assert.match(html, /\/coleccion\/colombia\/10000-pesos-1994\//);
+      assert.match(html, /\/noticias\/feria-numismatica-cable-plaza-manizales-2026\//);
+      assert.doesNotMatch(html, /US\$|€\s?\d|\$\s?\d|millones|tasad|1[.,]500|179/);
+      assert.doesNotMatch(html, /BG#\s*160|BG#\s*102/);
+    }
+    assert.match(article.bodyHtml.es, /diez pesos/);
+    assert.match(article.bodyHtml.es, /emberá/);
+    assert.match(article.bodyHtml.en, /ten-peso note of 1923/);
+    assert.match(article.bodyHtml.en, /Emberá/);
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+  });
 });
 
 describe('new bilingual demand pages', () => {
