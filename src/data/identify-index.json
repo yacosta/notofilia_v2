@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-25T20:24:45.631Z",
+  "generatedAt": "2026-10-28T03:48:27.032Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -357,7 +357,7 @@
     {
       "pieceId": "1-escudo-bogota-1811-nr-jf",
       "face": "front",
-      "hash": "0071513217536300",
+      "hash": "0c7951b017536304",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
       "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
@@ -370,7 +370,7 @@
     {
       "pieceId": "1-escudo-bogota-1811-nr-jf",
       "face": "front",
-      "hash": "08141616262a1408",
+      "hash": "0e160e12360a142c",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
       "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
@@ -383,7 +383,7 @@
     {
       "pieceId": "1-escudo-bogota-1811-nr-jf",
       "face": "back",
-      "hash": "081432122a1e1c08",
+      "hash": "2a162a122a1e0e0c",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1811-nr-jf/",
       "pick": "KM# 64.1 · Restrepo 122.7 · Calicó 1548 · Cayón 16137 · Hernández 690 · Fr#65 · Numista N#61388",
