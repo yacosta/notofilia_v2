@@ -50,7 +50,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.match(enRoute, /PopayanCharlesIvEscudoPage/);
   });
 
-  it('records the type facts, the five holdings, and the 1808 caveat', () => {
+  it('records the type facts, the 1791 2 escudos, the five 1 escudo holdings, and the 1808 caveat', () => {
     assert.equal(popayan1EscudoCarlosIvCopy.es.facts.find((fact) => fact.label === 'Metal')?.value, 'Oro .875 (tipo)');
     assert.equal(
       popayan1EscudoCarlosIvCopy.en.facts.find((fact) => fact.label === 'Metal')?.value,
@@ -76,6 +76,7 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.match(archiveEn?.paragraphs[0] ?? '', /does not confirm that year/);
     assert.match(archive?.paragraphs[0] ?? '', /KM# 64\.2/);
     assert.deepEqual([...POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS], [
+      '2-escudos-popayan-1791-p-sf',
       '1-escudo-popayan-1795-p-jf',
       '1-escudo-popayan-1800-p-jf',
       '1-escudo-popayan-1801-p-jf',
@@ -84,6 +85,8 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     ]);
     assert.equal(POPAYAN_1_ESCUDO_CARLOS_IV_COMPOSITE.width, 1536);
     assert.equal(POPAYAN_1_ESCUDO_CARLOS_IV_COMPOSITE.height, 1024);
+    assert.match(popayan1EscudoCarlosIvCardAlt('2-escudos-popayan-1791-p-sf', 'es'), /1791/);
+    assert.match(popayan1EscudoCarlosIvCardAlt('2-escudos-popayan-1791-p-sf', 'en'), /1791/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1795-p-jf', 'es'), /1795/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1800-p-jf', 'es'), /1800/);
     assert.match(popayan1EscudoCarlosIvCardAlt('1-escudo-popayan-1801-p-jf', 'es'), /1801/);
@@ -95,6 +98,14 @@ describe('Popayán Charles IV 1 escudo type page', () => {
     assert.equal(pageSource.includes('CATALOG_PIECE_GRID'), true);
     assert.equal(pageSource.includes('POPAYAN_1_ESCUDO_CARLOS_IV_HOLDING_IDS'), true);
     assert.equal(pageSource.includes('archiveImages'), true);
+    assert.equal(
+      popayan1EscudoCarlosIvCopy.es.holding1791Href,
+      '/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/',
+    );
+    assert.equal(
+      localizePath(popayan1EscudoCarlosIvCopy.es.holding1791Href, 'en'),
+      '/en/collection/colombia-numismatics/2-escudos-popayan-1791-p-sf/',
+    );
     assert.equal(
       popayan1EscudoCarlosIvCopy.es.holding1795Href,
       '/coleccion/colombia-numismatica/1-escudo-popayan-1795-p-jf/',

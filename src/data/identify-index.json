@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T03:48:27.032Z",
+  "generatedAt": "2026-10-28T09:59:56.848Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -435,7 +435,7 @@
     {
       "pieceId": "2-escudos-popayan-1791-p-sf",
       "face": "front",
-      "hash": "00753535b6753500",
+      "hash": "90753136b4553514",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
@@ -448,7 +448,7 @@
     {
       "pieceId": "2-escudos-popayan-1791-p-sf",
       "face": "front",
-      "hash": "0032271f4a353a00",
+      "hash": "89b2651d1a313ab2",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
@@ -461,7 +461,7 @@
     {
       "pieceId": "2-escudos-popayan-1791-p-sf",
       "face": "back",
-      "hash": "00365515d50b1200",
+      "hash": "60965515d50bb743",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
       "pick": "KM# 51.2 · Restrepo 88.6 · Cayón 14168 · Fr#48 · Hernández 734 · Numista N#52841",
