@@ -7,6 +7,7 @@ export type ColombiaNoteId =
   | '5-pesos-banco-hipotecario-1881'
   | '5-pesos-rio-hacha-1883'
   | '1-peso-tolima-1901'
+  | '1-peso-oro-1940'
   | '1-peso-oro-1945'
   | 'medio-peso-oro-1953'
   | '1-peso-oro-1954'
@@ -539,6 +540,109 @@ export const colombiaNotes: ColombiaNote[] = [
     ],
   },
   {
+    id: '1-peso-oro-1940',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1-peso-oro-1940/`,
+    pick: 'P# 380b · TBB B922b',
+    serial: 'R 35555693',
+    signatures: {
+      es: 'Julio Caro (gerente) y Mariano Ospina Vásquez (secretario)',
+      en: 'Julio Caro (gerente) and Mariano Ospina Vásquez (secretario)',
+    },
+    printed: {
+      es: 'American Bank Note Company, Nueva York. Emisión de circulación del Banco de la República; fecha en el billete 20 de julio de 1940. Formato publicado del tipo: 140 × 70 mm. Serie R en rojo, serial de ocho dígitos. González White 2019 numera esta fecha BG# 021 (p. 33): emisión 24.000.000, seriales 22.000.001–46.000.000. Ese intervalo incluye 24.000.000 de números. Numista imprime 22.000.000 para el mismo BG# 021 y el mismo tramo; esta ficha sigue la emisión del libro. El serial 35555693 cae en ese tramo. Numista cita Hernández 18 y TBB B922b. Las tablas BanRep de producción anual de billetes empiezan en 1960; no hay un total de denominación para 1940.',
+      en: 'American Bank Note Company, New York. Banco de la República circulation issue; date on the note 20 July 1940. Published size of the type: 140 × 70 mm. Series R in red, eight-digit serial. González White 2019 numbers this date BG# 021 (p. 33): emisión 24,000,000, serials 22,000,001–46,000,000. That interval contains 24,000,000 numbers. Numista prints 22,000,000 for the same BG# 021 and the same range; this record follows the book’s emisión. Serial 35555693 falls in that range. Numista cites Hernández 18 and TBB B922b. BanRep’s annual banknote production tables begin in 1960; there is no denomination total for 1940.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-back.jpg',
+    },
+    title: {
+      es: '1 peso oro · Banco de la República · 1940',
+      en: '1 peso oro · Banco de la República · 1940',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · ABNC',
+      en: 'Colombia · Banco de la República · ABNC',
+    },
+    lead: {
+      es: 'Un peso oro de circulación, Pick 380b: serie R en rojo, serial de ocho dígitos 35555693, 20 de julio de 1940. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular. No es el 1 peso oro de 1945, serie R en azul (Pick 380d).',
+      en: 'A circulating one-peso oro, Pick 380b: red Series R, eight-digit serial 35555693, 20 July 1940. This record gathers the face and back of the same unslabbed note. It is not the 1945 blue Series R 1 peso oro (Pick 380d).',
+    },
+    description: {
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este un peso oro de la familia Pick 380 (1929–1954). El anverso, en azul sobre fondo policromado, lleva a la izquierda el retrato de Francisco de Paula Santander y una figura alegórica de pie, al centro el 1 con la leyenda «UN PESO ORO», y a la derecha el busto de Simón Bolívar. Los seriales van en rojo: 35555693, una vez arriba a la derecha y otra abajo a la izquierda. La leyenda «SERIE R» aparece dos veces, a ambos flancos del 1 central; los catálogos la describen en rojo, distinta de la serie R en azul de 1944 y 1945. La fecha impresa es «BOGOTÁ, COLOMBIA. / 20 DE JULIO DE 1940». Las firmas son las de Julio Caro (gerente) y Mariano Ospina Vásquez (secretario), el par que Numista asigna a esta fecha (JC, MOV). El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 1 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 380b, según el Bank Note Museum, cubre solo el 20.07.1940. González White 2019 sitúa esta serie R de ocho dígitos en BG# 021. El número 35555693 muestra cuatro cincos seguidos y queda en la clase ordinaria de la emisión. La leyenda «peso oro» sigue en el papel de 1940; el museo de la Casa de Moneda recuerda que en 1931 se eliminó la convertibilidad del peso por oro. No es el 1 peso oro de 1945, serie R en azul, Pick 380d (serial 85688116), ni el de 1954, serie HH, Pick 380g (serial 52170492), ni el 1 peso conmemorativo de Boyacá (Waterlow, Pick 398) ni el 1 peso azul de la Imprenta de Billetes (Pick 404). Esta pieza de la colección se presenta circulada, sin encapsular: se ven un pliegue central, desgaste en las esquinas y un tono de papel desigual.',
+      en: 'The Banco de la República ordered this one-peso oro of the Pick 380 family (1929–1954) from the American Bank Note Company in New York. The face, blue on a multicolour underprint, carries at left the portrait of Francisco de Paula Santander and a standing allegorical figure, at center the figure 1 with the legend “UN PESO ORO,” and at right the bust of Simón Bolívar. The serials are in red: 35555693, once at upper right and once at lower left. The legend “SERIE R” appears twice, flanking the central 1; catalogues describe it in red, distinct from the blue Series R of 1944 and 1945. The printed date is “BOGOTÁ, COLOMBIA. / 20 DE JULIO DE 1940.” The signatures are those of Julio Caro (gerente) and Mariano Ospina Vásquez (secretario), the pair Numista assigns to this date (JC, MOV). The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 1 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 380b, per the Bank Note Museum, covers 20.07.1940 only. González White 2019 places this eight-digit Series R on BG# 021. The number 35555693 shows four 5s in a row and remains an ordinary serial of the emission. The “peso oro” legend is still on this 1940 paper; the Casa de Moneda Museum records that gold convertibility of the peso ended in 1931. It is not the 1945 blue Series R 1 peso oro, Pick 380d (serial 85688116), nor the 1954 Series HH note, Pick 380g (serial 52170492), nor the Boyacá commemorative 1-peso (Waterlow, Pick 398) or the Imprenta de Billetes blue 1-peso (Pick 404). This collection piece is shown circulated and unslabbed: a center fold, corner wear, and uneven paper tone are visible.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1 peso oro, Pick 380b: Santander, Bolívar, serie R, serial 35555693 y fecha 20 de julio de 1940.',
+      en: 'Face of the 1 peso oro, Pick 380b: Santander, Bolívar, Series R, serial 35555693, and the date 20 July 1940.',
+    },
+    backCaption: {
+      es: 'Reverso del 1 peso oro, Pick 380b: Libertad en medallón azul, cifras 1 y pie de la American Bank Note Company.',
+      en: 'Back of the 1 peso oro, Pick 380b: Liberty in a blue medallion, the figures 1, and the American Bank Note Company imprint.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 021, p. 33) publica 24.000.000 de ejemplares para el 20 de julio de 1940, serie R de ocho dígitos, seriales 22.000.001–46.000.000. Ese intervalo cuenta 24.000.000 de números. Numista agrupa el diseño 1929–1954 bajo N# 207727, asigna la fecha a Pick 380b / TBB B922b / Hernández 18 / BG# 021, describe la serie R en rojo y marca su frecuencia en un 14 % entre quienes poseen el tipo; imprime 22.000.000 para el mismo tramo. Esta ficha sigue la emisión de González White. El Bank Note Museum describe el Pick 380b como el 20.07.1940 del 1 peso oro ABNC: Santander y Bolívar al anverso, la Libertad al reverso. No es prueba ni espécimen. Los cuatro cincos seguidos del serial 35555693 no abren otra fila de catálogo. Esta ficha no sustituye esa emisión BG# por un total BanRep de denominación-año. No se publican columnas de precios.',
+      en: 'González White 2019 (BG# 021, p. 33) publishes 24,000,000 notes for 20 July 1940, eight-digit Series R, serials 22,000,001–46,000,000. That interval counts 24,000,000 numbers. Numista groups the 1929–1954 design under N# 207727, assigns the date to Pick 380b / TBB B922b / Hernández 18 / BG# 021, describes Series R in red, and marks its frequency at 14% among owners of the type; it prints 22,000,000 for the same range. This record follows González White’s emisión. The Bank Note Museum describes Pick 380b as the 20.07.1940 date of the ABNC 1 peso oro: Santander and Bolívar on the face, Liberty on the back. It is neither a proof nor a specimen. The four consecutive 5s in serial 35555693 do not open another catalogue row. This record does not replace that BG# emisión with a BanRep denomination-year total. Price columns are not published.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 35555693. La pieza se presenta circulada, sin encapsular.',
+      en: 'A PMG or PCGS census for serial 35555693 has not been independently verified. The note is shown circulated and unslabbed.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0380.htm',
+        es: 'Bank Note Museum — Colombia P-380, 1 peso oro (1929–1954)',
+        en: 'Bank Note Museum — Colombia P-380, 1 peso oro (1929–1954)',
+        note: {
+          es: '380b: 20.07.1940; anverso Santander, figura alegórica y Bolívar; reverso Libertad; ABNC.',
+          en: '380b: 20.07.1940; Santander, an allegorical figure, and Bolívar on the face; Liberty on the back; ABNC.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note207727.html',
+        es: 'Numista — Colombia 1 peso oro, N# 207727',
+        en: 'Numista — Colombia 1 peso oro, N# 207727',
+        note: {
+          es: '20.07.1940: P# 380b / TBB B922b; Hernández 18; BG# 021; serie R en rojo; ocho dígitos, 22.000.001–46.000.000; firmas JC y MOV; 140 × 70 mm; frecuencia 14 % en el tipo. Numista imprime 22.000.000; el intervalo del libro cuenta 24.000.000.',
+          en: '20.07.1940: P# 380b / TBB B922b; Hernández 18; BG# 021; Series R in red; eight digits, 22,000,001–46,000,000; signatures JC and MOV; 140 × 70 mm; 14% frequency within the type. Numista prints 22,000,000; the book’s interval counts 24,000,000.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/2679/lot/43018',
+        es: 'Stack’s Bowers & Ponterio, agosto de 2018, lote 43018',
+        en: 'Stack’s Bowers & Ponterio, August 2018, lot 43018',
+        note: {
+          es: 'Atribuye el 20 de julio de 1940 al Pick 380b, con numeración de ocho dígitos. Comparable de tipo. No es procedencia de esta pieza ni se publica un precio.',
+          en: 'Attributes 20 July 1940 to Pick 380b, with eight-digit numbering. A type comparable. It is not provenance for this piece, and no price is published.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 18 para el 20 de julio de 1940.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 18 for 20 July 1940.',
+        },
+      },
+      {
+        href: 'https://www.banrepcultural.org/bogota/museo-casa-de-moneda',
+        es: 'Banrepcultural — Museo Casa de Moneda',
+        en: 'Banrepcultural — Casa de Moneda Museum',
+        note: {
+          es: 'El cuaderno de la colección numismática del museo recuerda que en 1931 se eliminó la convertibilidad del peso por oro. La leyenda «peso oro» de 1940 no prueba un rescate en metal de esta pieza.',
+          en: 'The museum’s numismatic collection booklet records that gold convertibility of the peso ended in 1931. The 1940 “peso oro” legend is not proof that this note could be redeemed in metal.',
+        },
+      },
+    ],
+  },
+  {
     id: '1-peso-oro-1945',
     chapterId: 'banco-de-la-republica',
     path: `${COLOMBIA_PATH}1-peso-oro-1945/`,
@@ -570,8 +674,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A circulating one-peso oro, Pick 380d: Series R, eight-digit serial 85688116, 19 January 1945. This record gathers the face and back of the same unslabbed note. It is not the 1954 Series HH 1 peso oro (Pick 380g).',
     },
     description: {
-      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este un peso oro de la familia Pick 380 (1929–1954). El anverso, en azul sobre fondo policromado naranja y verde, lleva a la izquierda el retrato de Francisco de Paula Santander y una figura alegórica de pie, al centro el 1 con la leyenda «UN PESO ORO», y a la derecha el busto de Simón Bolívar. Los seriales van en rojo: 85688116, una vez arriba a la derecha y otra abajo a la izquierda. La leyenda «SERIE R» aparece dos veces en azul, a ambos flancos del 1 central. La fecha impresa es «BOGOTÁ COLOMBIA / 19 DE ENERO DE 1945». Las firmas son las de Julio Caro (gerente) y Luis Ángel Arango (secretario), el par que Numista asigna al 1.º de enero de 1945 (JC, LAA₁). El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 1 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 380d, según el Bank Note Museum, cubre 20.07.1944 y 01.01.1945; González White 2019 sitúa esta serie R de ocho dígitos en BG# 027. No es el 1 peso oro de 1954, serie HH, Pick 380g (serial 52170492), otra fecha de la misma familia, ni el 1 peso conmemorativo de Boyacá de 1953 (Waterlow) ni el 1 peso azul de la Imprenta de Billetes (Pick 404). Esta pieza de la colección se presenta en funda, circulada, sin encapsular; el margen del reverso muestra foxing.',
-      en: 'The Banco de la República ordered this one-peso oro of the Pick 380 family (1929–1954) from the American Bank Note Company in New York. The face, blue on an orange and green multicolour underprint, carries at left the portrait of Francisco de Paula Santander and a standing allegorical figure, at center the figure 1 with the legend “UN PESO ORO,” and at right the bust of Simón Bolívar. The serials are in red: 85688116, once at upper right and once at lower left. The legend “SERIE R” appears twice in blue, flanking the central 1. The printed date is “BOGOTÁ COLOMBIA / 19 DE ENERO DE 1945.” The signatures are those of Julio Caro (gerente) and Luis Ángel Arango (secretario), the pair Numista assigns to 1 January 1945 (JC, LAA₁). The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 1 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 380d, per the Bank Note Museum, covers 20.07.1944 and 01.01.1945; González White 2019 places this eight-digit Series R on BG# 027. It is not the 1954 Series HH 1 peso oro, Pick 380g (serial 52170492), another date of the same family, nor the 1953 Boyacá commemorative 1-peso (Waterlow) or the Imprenta de Billetes blue 1-peso (Pick 404). This collection piece is shown in a sleeve, circulated, unslabbed; the back margin shows foxing.',
+      es: 'El Banco de la República encargó a la American Bank Note Company de Nueva York este un peso oro de la familia Pick 380 (1929–1954). El anverso, en azul sobre fondo policromado naranja y verde, lleva a la izquierda el retrato de Francisco de Paula Santander y una figura alegórica de pie, al centro el 1 con la leyenda «UN PESO ORO», y a la derecha el busto de Simón Bolívar. Los seriales van en rojo: 85688116, una vez arriba a la derecha y otra abajo a la izquierda. La leyenda «SERIE R» aparece dos veces en azul, a ambos flancos del 1 central. La fecha impresa es «BOGOTÁ COLOMBIA / 19 DE ENERO DE 1945». Las firmas son las de Julio Caro (gerente) y Luis Ángel Arango (secretario), el par que Numista asigna al 1.º de enero de 1945 (JC, LAA₁). El reverso, en azul, muestra la cabeza de la Libertad en un medallón que lee «BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA», las cifras 1 a ambos flancos y el pie «AMERICAN BANK NOTE COMPANY.». El tipo 380d, según el Bank Note Museum, cubre 20.07.1944 y 01.01.1945; González White 2019 sitúa esta serie R de ocho dígitos en BG# 027. No es el 1 peso oro de 1940, serie R en rojo, Pick 380b (serial 35555693), ni el de 1954, serie HH, Pick 380g (serial 52170492), otras fechas de la misma familia, ni el 1 peso conmemorativo de Boyacá de 1953 (Waterlow) ni el 1 peso azul de la Imprenta de Billetes (Pick 404). Esta pieza de la colección se presenta en funda, circulada, sin encapsular; el margen del reverso muestra foxing.',
+      en: 'The Banco de la República ordered this one-peso oro of the Pick 380 family (1929–1954) from the American Bank Note Company in New York. The face, blue on an orange and green multicolour underprint, carries at left the portrait of Francisco de Paula Santander and a standing allegorical figure, at center the figure 1 with the legend “UN PESO ORO,” and at right the bust of Simón Bolívar. The serials are in red: 85688116, once at upper right and once at lower left. The legend “SERIE R” appears twice in blue, flanking the central 1. The printed date is “BOGOTÁ COLOMBIA / 19 DE ENERO DE 1945.” The signatures are those of Julio Caro (gerente) and Luis Ángel Arango (secretario), the pair Numista assigns to 1 January 1945 (JC, LAA₁). The blue back shows Liberty’s head in a medallion reading “BANCO DE LA REPUBLICA • BOGOTÁ COLOMBIA,” the figures 1 at each flank, and the imprint “AMERICAN BANK NOTE COMPANY.” Type 380d, per the Bank Note Museum, covers 20.07.1944 and 01.01.1945; González White 2019 places this eight-digit Series R on BG# 027. It is not the 1940 red Series R 1 peso oro, Pick 380b (serial 35555693), nor the 1954 Series HH 1 peso oro, Pick 380g (serial 52170492), other dates of the same family, nor the 1953 Boyacá commemorative 1-peso (Waterlow) or the Imprenta de Billetes blue 1-peso (Pick 404). This collection piece is shown in a sleeve, circulated, unslabbed; the back margin shows foxing.',
     },
     frontCaption: {
       es: 'Anverso del 1 peso oro, Pick 380d: Santander, Bolívar, serie R, serial 85688116 y fecha 19 de enero de 1945.',

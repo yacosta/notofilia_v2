@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T10:15:17.010Z",
+  "generatedAt": "2026-10-28T11:34:52.333Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1093,6 +1093,45 @@
       "title": {
         "es": "1 peso · Departamento del Tolima · 1901",
         "en": "1 peso · Departamento del Tolima · 1901"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1940",
+      "face": "front",
+      "hash": "b22719882c1b33c8",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1940/",
+      "pick": "P# 380b · TBB B922b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-composite.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1940",
+        "en": "1 peso oro · Banco de la República · 1940"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1940",
+      "face": "front",
+      "hash": "006d65154d2d4f00",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1940/",
+      "pick": "P# 380b · TBB B922b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-front.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1940",
+        "en": "1 peso oro · Banco de la República · 1940"
+      }
+    },
+    {
+      "pieceId": "1-peso-oro-1940",
+      "face": "back",
+      "hash": "0029496332454800",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1-peso-oro-1940/",
+      "pick": "P# 380b · TBB B922b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-back.jpg",
+      "title": {
+        "es": "1 peso oro · Banco de la República · 1940",
+        "en": "1 peso oro · Banco de la República · 1940"
       }
     },
     {

@@ -518,8 +518,16 @@ describe('locale path mapping', () => {
       '/en/collection/colombia/1-peso-tolima-1901/',
     );
     assert.equal(
+      localizePath('/coleccion/colombia/1-peso-oro-1940/', 'en'),
+      '/en/collection/colombia/1-peso-oro-1940/',
+    );
+    assert.equal(
       localizePath('/coleccion/colombia/1-peso-oro-1945/', 'en'),
       '/en/collection/colombia/1-peso-oro-1945/',
+    );
+    assert.equal(
+      englishRedirects()['/en/coleccion/colombia/1-peso-oro-1940/'],
+      '/en/collection/colombia/1-peso-oro-1940/',
     );
     assert.equal(
       localizePath('/coleccion/colombia/medio-peso-oro-1953/', 'en'),

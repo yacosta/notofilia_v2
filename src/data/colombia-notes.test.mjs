@@ -90,8 +90,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(additions.at(-1)?.id, 'co-1940-1-peso-oro-35555693');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1940-1-peso-oro-p380b');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -992,8 +992,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1855-una-mitad-am-de-la-cuadra');
+    assert.equal(additions.at(-1)?.id, 'co-1940-1-peso-oro-35555693');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1940-1-peso-oro-p380b');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1470,6 +1470,59 @@ describe('Colombia Banco Hipotecario 1881 ABNC proofs', () => {
   });
 });
 
+describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
+  it('records the red Series R note and keeps it distinct from 1945 and 1954', () => {
+    const note = noteById('1-peso-oro-1940');
+    const note1945 = noteById('1-peso-oro-1945');
+    const note1954 = noteById('1-peso-oro-1954');
+    assert.ok(note);
+    assert.ok(note1945);
+    assert.ok(note1954);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 380b · TBB B922b');
+    assert.equal(note.serial, 'R 35555693');
+    assert.notEqual(note.serial, note1945.serial);
+    assert.notEqual(note.serial, note1954.serial);
+    assert.match(note.printed.es, /BG# 021/);
+    assert.match(note.printed.es, /24\.000\.000/);
+    assert.match(note.printed.es, /22\.000\.001–46\.000\.000/);
+    assert.match(note.printed.es, /Numista imprime 22\.000\.000/);
+    assert.match(note.printed.en, /follows the book/);
+    assert.match(note.description.es, /serie R en rojo|describen en rojo/);
+    assert.match(note.description.es, /Julio Caro/);
+    assert.match(note.description.es, /Mariano Ospina Vásquez/);
+    assert.match(note.description.es, /20 DE JULIO DE 1940/);
+    assert.match(note.description.es, /cuatro cincos seguidos/);
+    assert.match(note.description.en, /four 5s in a row/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.match(note.lead.es, /Pick 380b/);
+    assert.match(note.lead.en, /Pick 380b/);
+    assert.equal(note.images.front.includes('r35555693-front'), true);
+    assert.equal(additions.at(-1)?.id, 'co-1940-1-peso-oro-35555693');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1940-1-peso-oro-p380b');
+    const publicCopy = [
+      note.lead.es,
+      note.lead.en,
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.doesNotMatch(publicCopy, /ESTIMADO/);
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /1 peso oro de 1940 \(Pick 380b\), serial 35555693/);
+    assert.match(chapter.body.en, /1940 1 peso oro \(Pick 380b\), serial 35555693/);
+    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1940 \(Pick 380b\), serial 35555693/);
+    assert.match(seriesCopy.en.intro.join(' '), /1940 1 peso oro \(Pick 380b\), serial 35555693/);
+  });
+});
+
 describe('Banco de la República denomination headings', () => {
   const seriesPage = readFileSync(
     new URL('../components/catalog/ColombiaSeriesPage.astro', import.meta.url),
@@ -1502,7 +1555,7 @@ describe('Banco de la República denomination headings', () => {
     assert.equal(one.heading?.en, '1 peso notes (1923 - 1977)');
     assert.deepEqual(
       one.cards.map((card) => card.piece.id),
-      ['1-peso-oro-1945', '1-peso-oro-1954', '1-peso-oro-1959', '1-peso-oro-1973', '1-peso-oro-1974'],
+      ['1-peso-oro-1940', '1-peso-oro-1945', '1-peso-oro-1954', '1-peso-oro-1959', '1-peso-oro-1973', '1-peso-oro-1974'],
     );
 
     const expected = [
