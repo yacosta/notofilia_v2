@@ -5,7 +5,7 @@
     "gone": 16,
     "existing": 1110,
     "legacy-dc": 51,
-    "manual": 33,
+    "manual": 36,
     "last-slug": 7,
     "category-hub": 27,
     "hub-fallback": 114,
@@ -28,6 +28,21 @@
     },
     "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/": {
       "target": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/": {
+      "target": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/": {
+      "target": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/",
+      "status": 301,
+      "rule": "manual"
+    },
+    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/": {
+      "target": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/",
       "status": 301,
       "rule": "manual"
     },
