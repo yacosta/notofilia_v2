@@ -306,6 +306,11 @@ describe('Colombia visual catalogs', () => {
     assert.match(colombiaBlock, /id: 'manzano-farming-co'/);
     assert.match(colombiaBlock, /href: MANZANO_FARMING_PATH/);
     assert.match(colombiaBlock, /es: 'Manzano Farming Co\.'/);
+    assert.match(colombiaBlock, /id: 'am-de-la-cuadra'/);
+    assert.match(colombiaBlock, /es: 'A\. M\. de la Cuadra'/);
+    assert.match(colombiaBlock, /en: 'A\. M\. de la Cuadra'/);
+    assert.match(colombiaBlock, /href: CUADRA_UNA_MITAD_PATH/);
+    assert.match(colombiaBlock, /id: 'manzano-farming-co'[\s\S]*id: 'am-de-la-cuadra'/);
     assert.doesNotMatch(colombiaBlock, /id: 'manzano-25-1901'/);
     assert.doesNotMatch(colombiaBlock, /25, 1901/);
     assert.doesNotMatch(source, /MANZANO_25_1901_PATH/);
