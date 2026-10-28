@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T09:59:56.848Z",
+  "generatedAt": "2026-10-28T10:15:17.010Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -84,7 +84,7 @@
     {
       "pieceId": "1-escudo-bogota-1795-nr-jj",
       "face": "front",
-      "hash": "007153b295336300",
+      "hash": "4c61533295336302",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1795-nr-jj/",
       "pick": "KM# 56.1 · Restrepo 84.8 · Calicó 1201 · Hernández 687 · Fr#58 · Numista N#52837",
@@ -97,7 +97,7 @@
     {
       "pieceId": "1-escudo-bogota-1795-nr-jj",
       "face": "front",
-      "hash": "081426262a1a1408",
+      "hash": "2a1636222a1a0c2a",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1795-nr-jj/",
       "pick": "KM# 56.1 · Restrepo 84.8 · Calicó 1201 · Hernández 687 · Fr#58 · Numista N#52837",
@@ -110,7 +110,7 @@
     {
       "pieceId": "1-escudo-bogota-1795-nr-jj",
       "face": "back",
-      "hash": "080c0e1632160c08",
+      "hash": "0a0e1e16362a162a",
       "kind": "coin",
       "path": "/coleccion/colombia-numismatica/1-escudo-bogota-1795-nr-jj/",
       "pick": "KM# 56.1 · Restrepo 84.8 · Calicó 1201 · Hernández 687 · Fr#58 · Numista N#52837",
