@@ -86,7 +86,12 @@ describe('A. M. de la Cuadra una mitad token, 1855', () => {
     assert.match(prose, /Scovill/);
     assert.match(prose, /5850277-003/);
     assert.match(prose, /A2a/);
-    assert.doesNotMatch(prose, /Antonio Martínez|carte de visite|Fotografía de La Cuadra/i);
+    assert.match(cuadraUnaMitadPieceCopy.es.descriptionRest, /Se archiva entre las fichas de hacienda por agrupación; el giro del emisor no está documentado\./);
+    assert.match(cuadraUnaMitadPieceCopy.en.descriptionRest, /It is filed with the hacienda tokens for grouping; the issuer’s line of business is not documented\./);
+    assert.match(cuadraUnaMitadPieceCopy.es.metal, /este ejemplar no se pesó ni se midió/);
+    assert.match(cuadraUnaMitadPieceCopy.en.metal, /this specimen was not weighed or measured/);
+    assert.doesNotMatch(prose, /Antonio Martínez|carte de visite|Fotografía de La Cuadra|COM 24-1|TC-374859|TokenCatalog|chocolate/i);
+    assert.doesNotMatch(prose, /\b1843\b/);
     assert.doesNotMatch(prose, /\$\s?\d|€|£|USD|precio|hammer|estimate/i);
     assert.doesNotMatch(prose, /TODO\(owner\)/);
     for (const source of cuadraUnaMitadPieceSources) {
