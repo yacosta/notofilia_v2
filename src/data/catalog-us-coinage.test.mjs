@@ -368,7 +368,7 @@ describe('US 1856 Indian Princess gold dollar', () => {
     assert.match(holdings, /co-1820-1-escudo-bogota-nr-jf', kind: 'coin', country: 'CO'/);
     assert.match(
       holdings,
-      /co-1901-10-manzano-farming', kind: 'coin', country: 'CO' },\n  \{ id: 'us-ri-298-20s-1786-6229', kind: 'banknote', country: 'US' \},\n  \{ id: 'us-csa-1864-10-83148', kind: 'banknote', country: 'US' \},\n  \{ id: 'co-1855-una-mitad-am-de-la-cuadra', kind: 'coin', country: 'CO' \},\n];/,
+      /co-1901-10-manzano-farming', kind: 'coin', country: 'CO' },\n  \{ id: 'us-ri-298-20s-1786-6229', kind: 'banknote', country: 'US' \},\n  \{ id: 'us-csa-1864-10-83148', kind: 'banknote', country: 'US' \},\n  \{ id: 'co-1855-una-mitad-am-de-la-cuadra', kind: 'coin', country: 'CO' \},\n  \{ id: 'co-1940-1-peso-oro-35555693', kind: 'banknote', country: 'CO' \},\n];/,
     );
   });
 });

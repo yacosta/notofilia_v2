@@ -50,9 +50,8 @@ describe('A. M. de la Cuadra una mitad token, 1855', () => {
     assert.equal(cuadraUnaMitadPieceIndex.path, CUADRA_UNA_MITAD_PATH);
     assert.equal(cuadraUnaMitadPieceIndex.title.es, cuadraUnaMitadPieceCopy.es.title);
     assert.equal(cuadraUnaMitadPieceIndex.title.en, cuadraUnaMitadPieceCopy.en.title);
-    assert.equal(additions.at(-1)?.id, CUADRA_UNA_MITAD_ID);
-    assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, CUADRA_UNA_MITAD_ID);
+    assert.equal(additions.find((row) => row.id === CUADRA_UNA_MITAD_ID)?.kind, 'coin');
+    assert.equal(catalogAdditions.filter((row) => row.id === CUADRA_UNA_MITAD_ID).length, 1);
     assert.equal(additions.filter((row) => row.id === CUADRA_UNA_MITAD_ID).length, 1);
     assert.match(cuadraUnaMitadNoSerialReason, /No serial is inscribed/);
     assert.equal(CUADRA_UNA_MITAD_IMAGES.width, 1029);
