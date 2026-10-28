@@ -737,10 +737,6 @@ describe('locale path mapping', () => {
       '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
     );
     assert.equal(
-      localizePath('/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/', 'en'),
-      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/',
-    );
-    assert.equal(
       localizePath('/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/', 'en'),
       '/en/collection/colombia-numismatics/8-escudos-popayan-1801-p-jf/',
     );

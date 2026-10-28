@@ -55,7 +55,8 @@ import { COSCOJAS_SANTANDER_PATH } from '../data/coscojas-santander';
 import { POPAYAN_1_ESCUDO_CARLOS_IV_PATH } from '../data/popayan-1-escudo-carlos-iv';
 import { SANTA_FE_MINT_PATH } from '../data/santa-fe-mint';
 import { HACIENDA_TOKENS_PATH } from '../data/hacienda-tokens';
-import { MANZANO_25_1901_PATH, MANZANO_FARMING_PATH } from '../data/manzano-farming';
+import { MANZANO_FARMING_PATH } from '../data/manzano-farming';
+import { CUADRA_UNA_MITAD_PATH } from '../data/cuadra-una-mitad-piece';
 import { WWII_EMERGENCY_PATH } from '../data/wwii-emergency-banknotes';
 import { ABOUT_PATH } from '../data/about';
 import { COMPARISON_PATH } from '../data/comparison';
@@ -466,14 +467,12 @@ export const megaNav: NavNode[] = [
                 es: 'Manzano Farming Co.',
                 en: 'Manzano Farming Co.',
                 href: MANZANO_FARMING_PATH,
-                children: [
-                  {
-                    id: 'manzano-25-1901',
-                    es: '25, 1901',
-                    en: '25, 1901',
-                    href: MANZANO_25_1901_PATH,
-                  },
-                ],
+              },
+              {
+                id: 'am-de-la-cuadra',
+                es: 'A. M. de la Cuadra',
+                en: 'A. M. de la Cuadra',
+                href: CUADRA_UNA_MITAD_PATH,
               },
             ],
           },

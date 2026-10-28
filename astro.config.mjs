@@ -44,6 +44,12 @@ const explicitRedirects = {
       '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/',
     '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/':
       '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/',
+    '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/':
+      '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/',
+    '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/':
+      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
+    '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/':
+      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/',
     '/herramientas/': '/herramientas/numeracion-especial/',
     '/en/tools/': '/en/tools/fancy-serial-checker/',
     '/en/herramientas/': '/en/tools/fancy-serial-checker/',

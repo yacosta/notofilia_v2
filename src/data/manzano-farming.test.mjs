@@ -1,37 +1,19 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
-import { localizePath } from '../lib/locale-paths.ts';
+import { lookupGscRedirect } from '../lib/gsc-redirects.ts';
+import { englishRedirects, localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import {
-  MANZANO_25_1901_PATH,
-  MANZANO_25_1901_PATH_EN,
   MANZANO_FARMING_PATH,
   MANZANO_FARMING_PATH_EN,
   manzanoFarmingCopy,
   manzanoFarmingDedicatedSlugs,
   manzanoFarmingPath,
   manzanoFarmingSources,
-  manzanoTokenById,
-  manzanoTokenPath,
 } from './manzano-farming.ts';
 
 const pageSource = readFileSync(new URL('../components/catalog/ManzanoFarmingPage.astro', import.meta.url), 'utf8');
-const tokenPageSource = readFileSync(new URL('../components/catalog/ManzanoTokenPage.astro', import.meta.url), 'utf8');
-const tokenEsRoute = readFileSync(
-  new URL(
-    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/index.astro',
-    import.meta.url,
-  ),
-  'utf8',
-);
-const tokenEnRoute = readFileSync(
-  new URL(
-    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/index.astro',
-    import.meta.url,
-  ),
-  'utf8',
-);
 const esRoute = readFileSync(
   new URL('../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/index.astro', import.meta.url),
   'utf8',
@@ -60,14 +42,10 @@ describe('Manzano Farming Co. page', () => {
     assert.deepEqual([...manzanoFarmingDedicatedSlugs], [
       'coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co',
       'collection/colombia-numismatics/hacienda-tokens/manzano-farming-co',
-      'coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901',
-      'collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901',
     ]);
     assert.equal(manzanoFarmingCopy.es.published, '2026-10-23');
     assert.match(esRoute, /ManzanoFarmingPage/);
     assert.match(enRoute, /ManzanoFarmingPage/);
-    assert.match(tokenEsRoute, /ManzanoTokenPage/);
-    assert.match(tokenEnRoute, /id="25-1901"/);
     assert.match(pageSource, /SourceList/);
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /token-fichas-heading/);
@@ -80,15 +58,16 @@ describe('Manzano Farming Co. page', () => {
     assert.doesNotMatch(pageSource, /size="frame"|size="compact"/);
     assert.match(pageSource, /HACIENDA_TOKENS_HERO/);
     assert.doesNotMatch(pageSource, /<h1/);
-    assert.match(tokenPageSource, /id="main-content"/);
-    assert.match(tokenPageSource, /SourceList/);
-    assert.match(tokenPageSource, /SeriesHero/);
-    assert.match(tokenPageSource, /imageClass="object-\[50%_50%\]"/);
-    assert.doesNotMatch(tokenPageSource, /size="frame"|size="compact"/);
-    assert.match(tokenPageSource, /HACIENDA_TOKENS_HERO/);
-    assert.doesNotMatch(tokenPageSource, /<h1/);
-    assert.doesNotMatch(tokenPageSource, /<img/);
+    assert.doesNotMatch(pageSource, /manzanoToken|25-1901/);
     assert.doesNotMatch(MANZANO_FARMING_PATH, /\/blog\//);
+    const retiredEs = '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/';
+    const retiredEn = '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/';
+    const retiredLegacy = '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/';
+    assert.equal(lookupGscRedirect(retiredEs)?.target, MANZANO_FARMING_PATH);
+    assert.equal(lookupGscRedirect(retiredEs)?.status, 301);
+    assert.equal(lookupGscRedirect(retiredEn)?.target, `/en${MANZANO_FARMING_PATH_EN}`);
+    assert.equal(lookupGscRedirect(retiredLegacy)?.target, `/en${MANZANO_FARMING_PATH_EN}`);
+    assert.equal(englishRedirects()[retiredLegacy], undefined);
   });
 
   it('keeps titles and descriptions inside the audit limits and publishes no prices', () => {
@@ -113,20 +92,9 @@ describe('Manzano Farming Co. page', () => {
     assert.doesNotMatch(prose, /\$\s?\d/);
     assert.doesNotMatch(prose, /\bUSD\b|precio|Henao \d/);
     assert.doesNotMatch(prose, /TODO\(owner\)/);
-    const token = manzanoTokenById('25-1901');
-    assert.ok(token);
-    assert.equal(manzanoTokenPath(token, 'es'), MANZANO_25_1901_PATH);
-    assert.equal(manzanoTokenPath(token, 'en'), `/en${MANZANO_25_1901_PATH_EN}`);
-    assert.equal(token.nav.es, '25, 1901');
-    assert.match(token.noSerialReason.es, /no trae número de serie/i);
-    assert.match(token.about.es, /No es una pieza de Notofilia|no la republica/);
-    assert.notEqual(token.metaTitle.es, token.metaTitle.en);
-    for (const locale of ['es', 'en']) {
-      assert.equal(limitMetaDescription(token.metaDescription[locale]), token.metaDescription[locale]);
-      assert.ok(token.metaDescription[locale].length <= 155);
-      assert.ok(`${token.metaTitle[locale]} · Notofilia`.length <= 70);
-    }
-    assert.doesNotMatch(`${token.front.es}\n${token.back.en}\n${token.lead.es}`, /\$\s?\d|serial [A-Z0-9]{5,}/);
+    assert.doesNotMatch(prose, /25-1901/);
+    assert.match(bodyEs, /El 25 publicado por Absoluti no está en Notofilia/);
+    assert.match(bodyEn, /The 25 that Absoluti published is not a Notofilia piece/);
     assert.equal(manzanoFarmingSources.length >= 5, true);
     for (const source of manzanoFarmingSources) {
       assert.match(source.href, /^https?:\/\//);
