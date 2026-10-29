@@ -46,6 +46,8 @@ describe('A. M. de la Cuadra una mitad token, 1855', () => {
     assert.match(pageSource, /id="main-content"/);
     assert.match(pageSource, /NoteImageLightbox/);
     assert.match(pageSource, /pairHeading/);
+    assert.match(pageSource, /specimenHeading/);
+    assert.match(pageSource, /diameterLabel/);
     assert.equal(cuadraUnaMitadPieceIndex.id, CUADRA_UNA_MITAD_ID);
     assert.equal(cuadraUnaMitadPieceIndex.path, CUADRA_UNA_MITAD_PATH);
     assert.equal(cuadraUnaMitadPieceIndex.title.es, cuadraUnaMitadPieceCopy.es.title);
@@ -73,6 +75,12 @@ describe('A. M. de la Cuadra una mitad token, 1855', () => {
       cuadraUnaMitadPieceCopy.es.scarcity,
       cuadraUnaMitadPieceCopy.es.reference,
       cuadraUnaMitadPieceCopy.es.metal,
+      cuadraUnaMitadPieceCopy.es.diameter,
+      cuadraUnaMitadPieceCopy.es.referenceDiameter,
+      cuadraUnaMitadPieceCopy.es.method,
+      cuadraUnaMitadPieceCopy.es.weight,
+      cuadraUnaMitadPieceCopy.es.composition,
+      cuadraUnaMitadPieceCopy.es.specimenNote,
       cuadraUnaMitadPieceCopy.en.description,
       cuadraUnaMitadPieceCopy.en.descriptionRest,
       cuadraUnaMitadPieceCopy.en.scarcity,
@@ -85,6 +93,21 @@ describe('A. M. de la Cuadra una mitad token, 1855', () => {
     assert.match(prose, /Scovill/);
     assert.match(prose, /5850277-003/);
     assert.match(prose, /A2a/);
+    assert.match(prose, /27,72 mm/);
+    assert.match(cuadraUnaMitadPieceCopy.en.diameter, /27\.72 mm/);
+    assert.match(cuadraUnaMitadPieceCopy.es.method, /Calibrador digital/);
+    assert.match(cuadraUnaMitadPieceCopy.en.method, /Digital caliper/);
+    assert.match(cuadraUnaMitadPieceCopy.es.weight, /Pendiente de medición/);
+    assert.match(cuadraUnaMitadPieceCopy.en.weight, /Not yet measured/);
+    assert.match(cuadraUnaMitadPieceCopy.es.description, /El peso y el canto no se midieron/);
+    assert.match(cuadraUnaMitadPieceCopy.en.description, /The weight and the edge were not measured/);
+    assert.match(prose, /28,0 mm/);
+    assert.match(cuadraUnaMitadPieceCopy.en.metal, /28\.0 mm/);
+    assert.doesNotMatch(prose, /no se pesó ni se midió|diámetro y el canto de este ejemplar no se midieron/);
+    assert.doesNotMatch(
+      cuadraUnaMitadPieceCopy.en.description,
+      /weight, diameter, and edge were not measured|was not weighed or measured/,
+    );
     assert.doesNotMatch(prose, /Antonio Martínez|carte de visite|Fotografía de La Cuadra/i);
     assert.doesNotMatch(prose, /\$\s?\d|€|£|USD|precio|hammer|estimate/i);
     assert.doesNotMatch(prose, /TODO\(owner\)/);
