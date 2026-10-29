@@ -121,6 +121,35 @@ const jsonCrumbs = [
         </dl>
       </section>
 
+      <section class="mb-14 rounded-[6px] border border-line-strong bg-panel p-6" aria-labelledby="specimen-heading">
+        <h2 id="specimen-heading" class="mb-4 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.specimenHeading}
+        </h2>
+        <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.diameterLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.diameter}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.referenceDiameterLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.referenceDiameter}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.methodLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.method}</dd>
+          </div>
+          <div>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.weightLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.weight}</dd>
+          </div>
+          <div class="sm:col-span-2">
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.compositionLabel}</dt>
+            <dd class="m-0 mt-1 text-cream">{t.composition}</dd>
+          </div>
+        </dl>
+        <p class="mb-0 mt-4 text-[17px]/7 text-cream">{t.specimenNote}</p>
+      </section>
+
       <figure class="m-0">
         <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.pairHeading}</h2>
         <NoteImageLightbox
