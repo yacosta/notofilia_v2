@@ -750,6 +750,14 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB asterisk replacement', () => {
     assert.match(note.description.es, /asterisco en el anverso/);
     assert.match(note.description.en, /asterisk on the face/);
     assert.match(note.description.es, /Cód\. 157/);
+    assert.match(note.description.es, /San Felipe de Barajas/);
+    assert.match(note.description.en, /San Felipe de Barajas/);
+    assert.match(note.description.es, /monedas de cobre/);
+    assert.match(note.description.en, /copper coins/);
+    assert.match(note.description.es, /sin filigrana/);
+    assert.match(note.description.en, /no watermark/);
+    assert.match(note.description.es, /1,2 millones en 1981/);
+    assert.doesNotMatch(note.description.es, /cuproníquel/);
     assert.match(note.scarcity.es, /no inventa una tirada/);
     assert.doesNotMatch(note.description.es, /Decreto 188/);
     assert.doesNotMatch(note.scarcity.es, /US\$|USD|\$2\.50/);
