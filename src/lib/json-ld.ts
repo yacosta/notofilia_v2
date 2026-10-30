@@ -139,6 +139,8 @@ export function visualArtworkJsonLd(options: {
   description: string;
   url: string;
   image?: string;
+  /** Face and back, when both exist. Overrides the single `image`. */
+  images?: { src: string; caption?: string }[];
   locale: Locale;
   artform: 'Banknote' | 'Coin' | 'Medal' | 'CreativeWork';
   catalogNumber?: string;
@@ -176,7 +178,7 @@ export function visualArtworkJsonLd(options: {
     publisher: options.issuer ? { '@type': 'Organization', name: options.issuer } : undefined,
     producer: options.printer ? { '@type': 'Organization', name: options.printer } : undefined,
     additionalProperty: additionalProperty.length ? additionalProperty : undefined,
-    image: options.image ? imageObjectJsonLd({ image: options.image, locale: options.locale }) : undefined,
+    image: artworkImages(options),
     isPartOf: options.collectionUrl
       ? {
           '@type': 'Collection',
@@ -215,6 +217,21 @@ export function speakableDirectAnswer() {
     '@type': 'SpeakableSpecification',
     cssSelector: ['.direct-answer'],
   };
+}
+
+function artworkImages(options: {
+  image?: string;
+  images?: { src: string; caption?: string }[];
+  locale: Locale;
+}) {
+  const images = (options.images ?? []).filter((item) => item.src);
+  if (images.length) {
+    const nodes = images.map((item) =>
+      imageObjectJsonLd({ image: item.src, locale: options.locale, caption: item.caption }),
+    );
+    return nodes.length === 1 ? nodes[0] : nodes;
+  }
+  return options.image ? imageObjectJsonLd({ image: options.image, locale: options.locale }) : undefined;
 }
 
 function catalogPropertyValues(catalogNumber?: string, certNumber?: string, serial?: string) {
