@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T18:10:32.582Z",
+  "generatedAt": "2026-10-30T18:43:34.843Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1483,6 +1483,45 @@
       "title": {
         "es": "2 pesos oro · Banco de la República · 1955",
         "en": "2 pesos oro · Banco de la República · 1955"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1976",
+      "face": "front",
+      "hash": "ad5ade54ab752d0a",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1976/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1976-00194674-composite.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1976",
+        "en": "2 pesos oro · Banco de la República · 1976"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1976",
+      "face": "front",
+      "hash": "d2664456725cd588",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1976/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1976-00194674-front.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1976",
+        "en": "2 pesos oro · Banco de la República · 1976"
+      }
+    },
+    {
+      "pieceId": "2-pesos-oro-1976",
+      "face": "back",
+      "hash": "5757494935352bc5",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2-pesos-oro-1976/",
+      "pick": "P# 413b",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2-pesos-oro-1976-00194674-back.jpg",
+      "title": {
+        "es": "2 pesos oro · Banco de la República · 1976",
+        "en": "2 pesos oro · Banco de la República · 1976"
       }
     },
     {

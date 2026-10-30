@@ -54,8 +54,8 @@ describe('US Series 1935A blue-seal $1 Fr. 1608', () => {
     assert.doesNotMatch(printed, /6\.1/);
     assert.doesNotMatch(note, /Stuart/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'co-1980-5-pesos-oro-00011943');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-5-pesos-oro-p406f-h158');
+    assert.equal(additions.at(-1)?.id, 'co-1976-2-pesos-oro-00194674');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1976-2-pesos-oro-p413b');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {
