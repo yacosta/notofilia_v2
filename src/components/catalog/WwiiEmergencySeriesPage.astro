@@ -12,6 +12,7 @@ import { localizeFaq, seriesFaqs } from '../../data/page-faq';
 import bodyEs from '../../data/wwii-emergency-banknotes/es.html?raw';
 import bodyEn from '../../data/wwii-emergency-banknotes/en.html?raw';
 import SourceList from './SourceList.astro';
+import { catalogCardText } from '../../lib/catalog-reference';
 import { NOTAFILIA_PATH } from '../../data/notafilia';
 import { noteById, notePath, USA_MPC_PATH, USA_MPC_PROGRAM_PATH, USA_PATH } from '../../data/estados-unidos';
 import { SERIES_PATH } from '../../data/philippines-victory-66';
@@ -156,7 +157,7 @@ const jsonLd = collectionPageJsonLd({
                         {holding.title[locale]}
                       </h3>
                       <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                        {holding.friedberg && holding.scwpm ? `${holding.friedberg} · ${holding.scwpm}` : `${t.pickLabel} ${holding.pick}`} · {t.serialLabel} {holding.serial}
+                        {holding.friedberg && holding.scwpm ? `${holding.friedberg} · ${holding.scwpm}` : catalogCardText(holding.pick, t.pickLabel, locale)} · {t.serialLabel} {holding.serial}
                       </p>
                       <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                     </a>

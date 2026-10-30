@@ -10,6 +10,10 @@ import {
 } from './json-ld.ts';
 
 const articlePage = readFileSync(new URL('../components/editorial/EditorialArticlePage.astro', import.meta.url), 'utf8');
+const unitedStatesNotePage = readFileSync(
+  new URL('../components/catalog/UnitedStatesNotePage.astro', import.meta.url),
+  'utf8',
+);
 
 describe('catalogue VisualArtwork JSON-LD', () => {
   it('emits Pick, issuer, printer, grader, and cert only when supplied', () => {
@@ -67,6 +71,34 @@ describe('catalogue VisualArtwork JSON-LD', () => {
     assert.equal(node.image.license, 'https://notofilia.com/editorial/');
     assert.equal(node.image.acquireLicensePage, 'https://notofilia.com/editorial/');
     assert.equal(node.image.creditText, 'Notofilia.com / Yezid Acosta');
+  });
+
+  it('emits one ImageObject for the face and one for the back', () => {
+    const node = visualArtworkJsonLd({
+      name: '20 chelines',
+      description: 'Lead',
+      url: '/coleccion/estados-unidos/20-chelines-connecticut-1780/',
+      images: [
+        { src: '/images/catalog/united-states/front.jpg', caption: 'Anverso' },
+        { src: '/images/catalog/united-states/back.jpg', caption: 'Reverso' },
+      ],
+      locale: 'es',
+      artform: 'Banknote',
+      catalogNumber: 'Fr. CT-231',
+      serial: '8495',
+    });
+    assert.ok(Array.isArray(node.image));
+    assert.equal(node.image.length, 2);
+    assert.equal(node.image[0]['@type'], 'ImageObject');
+    assert.equal(node.image[1]['@type'], 'ImageObject');
+    assert.match(node.image[0].contentUrl, /front\.jpg$/);
+    assert.match(node.image[1].contentUrl, /back\.jpg$/);
+    assert.equal(node.image[0].caption, 'Anverso');
+    assert.equal(node.image[1].caption, 'Reverso');
+    assert.equal(node.identifier[0].propertyID, 'Friedberg');
+    assert.equal(node.identifier[0].value, 'Fr. CT-231');
+    assert.match(unitedStatesNotePage, /breadcrumbList\(jsonCrumbs/);
+    assert.match(unitedStatesNotePage, /images: scanImages/);
   });
 });
 

@@ -1523,6 +1523,22 @@ export type UnitedStatesNote = {
   scarcity: LocalizedText;
   population: LocalizedText;
   grade: LocalizedText;
+  /** Title tag and social titles when the generated line must name a catalogue number. */
+  seoTitle?: LocalizedText;
+  /** Meta, Open Graph, and Twitter description. Kept within the site length limit. */
+  metaDescription?: LocalizedText;
+  /**
+   * Physical specs. A blank `dimensionsMm` is a placeholder and is not rendered.
+   * TODO(owner): supply millimetres before publishing dimensions.
+   */
+  physical?: {
+    dimensionsMm?: string;
+    paper?: LocalizedText;
+    printingMethod?: LocalizedText;
+    inks?: LocalizedText;
+  };
+  /** One list of what the record does not claim, instead of repeating the caveat in every section. */
+  unclaimed?: LocalizedText[];
   sources: CatalogSource[];
 };
 
@@ -1906,8 +1922,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'J. Hamlin and Williams, manuscript in red ink. Newman includes Jabez Hamlin and Elisha Williams on the emission’s signer list; the given name Elisha is not written out on this example. Comittr. is printed vertically beside the brace.',
     },
     printed: {
-      es: 'Timothy Green II, New London, 1780. Newman cifra en 50.000 libras —166.667 dólares españoles— la autorización de toda la emisión del 1 de junio de 1780, al 5 % y pagadera el 1 de marzo de 1784. Esta ficha no inventa una tirada para los 20 chelines ni para el serial 8495.',
-      en: 'Timothy Green II, New London, 1780. Newman puts the authorization for the whole 1 June 1780 emission at £50,000 — 166,667 Spanish milled dollars — at 5 percent, payable 1 March 1784. This record does not invent a printage for the 20 shillings or for serial 8495.',
+      es: 'Timothy Green II, New London, 1780. Newman cifra en 50.000 libras —166.667 dólares españoles— la autorización de toda la emisión del 1 de junio de 1780, al 5 % y pagadera el 1 de marzo de 1784.',
+      en: 'Timothy Green II, New London, 1780. Newman puts the authorization for the whole 1 June 1780 emission at £50,000 — 166,667 Spanish milled dollars — at 5 percent, payable 1 March 1784.',
     },
     images: {
       composite: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-composite.jpg',
@@ -1935,17 +1951,21 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       },
     ],
     description: {
-      es: 'Los 20 chelines del 1 de junio de 1780 (Friedberg CT-231) son un Treasury Note del Estado de Connecticut, equivalente a una libra, pagadero en dólares españoles de cordoncillo. El anverso, en negro y con orla de roleos, titula TWENTY SHILLINGS. El texto promete que el tenedor será pagado por el tesorero del Estado de Connecticut, TWENTY SHILLINGS, in Spanish milled Dollars, a razón de seis chelines por dólar, o en otra moneda de plata u oro equivalente, con interés del cinco por ciento anual, antes del primer día de marzo de 1784. El long s de first (firſt), en «the first Day of June» y en «the first Day of March», se lee a menudo fifth: las fechas impresas son el 1 de junio de 1780 y el 1 de marzo de 1784, no el día 5. Va «By order of Assembly» y fechado en Hartford. A la izquierda, un sello circular pequeño muestra tres vides, el emblema de las armas de Connecticut; el lema no se transcribe desde esta fotografía. El recuadro Nº lleva el serial manuscrito 8495, en tinta roja. Las dos firmas, también en rojo, se leen J. Hamlin y Williams. Junto a la llave, Comittr. va impreso en vertical. Newman da para el 1 de junio los firmantes del 1 de marzo —John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams y George Wyllys— más William Pitkin. El par de este ejemplar coincide con Jabez Hamlin y Elisha Williams; el nombre de pila Elisha no está escrito. El reverso, en negro, centra TWENTY SHILL., JUNE 1st., NEW-LONDON y Printed by TIM. GREEN, dentro de un marco de roleos con figuras aladas en las esquinas. Arriba y abajo se repiten la denominación y la fecha, con June 1st. 1780. No es el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298, serial 6229), ni el 20 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-169), ni el 20 chelines de Connecticut del 1 de marzo de 1780. La pieza está encapsulada. La etiqueta de PMG imprime About Uncirculated 53, certificado 1072657-023, y los comentarios Slash Cancelled y Hinged. No imprime EPQ. En la fotografía no se localiza con certeza el corte ni un agujero: la cancelación y la charnela se registran por la etiqueta.',
-      en: 'The 20 shillings of 1 June 1780 (Friedberg CT-231) is a State of Connecticut treasury note, equal to one pound, payable in Spanish milled dollars. The face, black and framed by scrollwork, titles TWENTY SHILLINGS. The text promises that the possessor shall be paid by the Treasurer of the State of Connecticut TWENTY SHILLINGS in Spanish milled dollars, at six shillings each, or in other silver or gold coin equivalent, with interest at five percent per annum, by the first day of March 1784. The long s in first (firſt), in “the first Day of June” and “the first Day of March,” is often read as fifth: the printed dates are 1 June 1780 and 1 March 1784, not the 5th. It stands “By order of Assembly” and is dated at Hartford. At left a small circular seal shows three grapevines, the device of the Connecticut arms; the motto is not transcribed from this photograph. The Nº field carries manuscript serial 8495, in red ink. The two signatures, also in red, read J. Hamlin and Williams. Beside the brace, Comittr. is printed vertically. Newman gives the 1 June signers as those of 1 March — John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams, and George Wyllys — plus William Pitkin. The pair on this example matches Jabez Hamlin and Elisha Williams; the given name Elisha is not written out. The back, in black, centers TWENTY SHILL., JUNE 1st., NEW-LONDON, and Printed by TIM. GREEN, inside a scrollwork frame with winged figures in the corners. Denomination and date repeat above and below, with June 1st. 1780. It is not the Rhode Island 20 shillings of May 1786 (Fr. RI-298, serial 6229), nor the Pennsylvania 20 shillings of 1 October 1773 (Fr. PA-169), nor the Connecticut 20 shillings of 1 March 1780. The note is slabbed. The PMG label prints About Uncirculated 53, certificate 1072657-023, and the comments Slash Cancelled and Hinged. It does not print EPQ. A cut or a hole is not confidently located on the photograph: the cancellation and the hinge are recorded from the label.',
+      es: 'Los 20 chelines del 1 de junio de 1780 (Friedberg CT-231) son un Treasury Note del Estado de Connecticut, equivalente a una libra, pagadero en dólares españoles de cordoncillo. El anverso, en negro y con orla de roleos, titula TWENTY SHILLINGS. El texto promete que el tenedor será pagado por el tesorero del Estado de Connecticut, TWENTY SHILLINGS, in Spanish milled Dollars, a razón de seis chelines por dólar, o en otra moneda de plata u oro equivalente, con interés del cinco por ciento anual, antes del primer día de marzo de 1784. El long s de first (firſt), en «the first Day of June» y en «the first Day of March», se lee a menudo fifth: las fechas impresas son el 1 de junio de 1780 y el 1 de marzo de 1784, no el día 5. Va «By order of Assembly» y fechado en Hartford. A la izquierda, un sello circular pequeño muestra tres vides, el emblema de las armas de Connecticut; el lema no se transcribe desde esta fotografía. El recuadro Nº lleva el serial manuscrito 8495, en tinta roja. Las dos firmas, también en rojo, se leen J. Hamlin y Williams. Junto a la llave, Comittr. va impreso en vertical. Newman da para el 1 de junio los firmantes del 1 de marzo —John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams y George Wyllys— más William Pitkin. El par de este ejemplar coincide con Jabez Hamlin y Elisha Williams; el nombre de pila Elisha no está escrito. Jabez Hamlin era juez del tribunal de sucesiones del distrito de Middletown y figura en el comité que la Asamblea nombró para preparar y firmar los billetes. Elisha Williams, de ese comité, es el coronel de Wethersfield nacido el 31 de enero de 1717/18 y muerto el 30 de mayo de 1784, hijo del rector de Yale del mismo nombre, que había muerto en 1755. El reverso, en negro, centra TWENTY SHILL., JUNE 1st., NEW-LONDON y Printed by TIM. GREEN, dentro de un marco de roleos con figuras aladas en las esquinas. Arriba y abajo se repiten la denominación y la fecha, con June 1st. 1780. No es el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298, serial 6229), ni el 20 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-169), ni el 20 chelines de Connecticut del 1 de marzo de 1780. La pieza está encapsulada. La etiqueta de PMG imprime About Uncirculated 53, certificado 1072657-023, y los comentarios Slash Cancelled y Hinged. No imprime EPQ. En la fotografía no se localiza con certeza el corte ni un agujero: la cancelación y la charnela se registran por la etiqueta.',
+      en: 'The 20 shillings of 1 June 1780 (Friedberg CT-231) is a State of Connecticut treasury note, equal to one pound, payable in Spanish milled dollars. The face, black and framed by scrollwork, titles TWENTY SHILLINGS. The text promises that the possessor shall be paid by the Treasurer of the State of Connecticut TWENTY SHILLINGS in Spanish milled dollars, at six shillings each, or in other silver or gold coin equivalent, with interest at five percent per annum, by the first day of March 1784. The long s in first (firſt), in “the first Day of June” and “the first Day of March,” is often read as fifth: the printed dates are 1 June 1780 and 1 March 1784, not the 5th. It stands “By order of Assembly” and is dated at Hartford. At left a small circular seal shows three grapevines, the device of the Connecticut arms; the motto is not transcribed from this photograph. The Nº field carries manuscript serial 8495, in red ink. The two signatures, also in red, read J. Hamlin and Williams. Beside the brace, Comittr. is printed vertically. Newman gives the 1 June signers as those of 1 March — John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams, and George Wyllys — plus William Pitkin. The pair on this example matches Jabez Hamlin and Elisha Williams; the given name Elisha is not written out. Jabez Hamlin was judge of the probate court for the Middletown district and is named on the committee the Assembly appointed to prepare and sign the bills. The Elisha Williams of that committee is the Wethersfield colonel born on 31 January 1717/18 who died on 30 May 1784, son of the Yale rector of the same name, who had died in 1755. The back, in black, centers TWENTY SHILL., JUNE 1st., NEW-LONDON, and Printed by TIM. GREEN, inside a scrollwork frame with winged figures in the corners. Denomination and date repeat above and below, with June 1st. 1780. It is not the Rhode Island 20 shillings of May 1786 (Fr. RI-298, serial 6229), nor the Pennsylvania 20 shillings of 1 October 1773 (Fr. PA-169), nor the Connecticut 20 shillings of 1 March 1780. The note is slabbed. The PMG label prints About Uncirculated 53, certificate 1072657-023, and the comments Slash Cancelled and Hinged. It does not print EPQ. A cut or a hole is not confidently located on the photograph: the cancellation and the hinge are recorded from the label.',
     },
     history: [
+      {
+        es: 'El 18 de marzo de 1780 el Congreso Continental resolvió retirar el papel continental depreciado, en general a cuarenta por uno, y garantizar nuevas emisiones estatales pagaderas en dólares españoles; ese papel llegó a Connecticut demasiado tarde, y los Treasury Notes del 1 de junio, al 5 %, se emitieron en su lugar. El lema de las armas es Qui Transtulit Sustinet —no se transcribe desde esta fotografía— y Comittr., impreso en vertical, abrevia Committee. New London, donde Timothy Green II imprimió el billete, fue incendiada el 6 de septiembre de 1781 en la incursión de Benedict Arnold.',
+        en: 'On 18 March 1780 the Continental Congress resolved to draw in depreciated Continental currency, generally at forty to one, and to guarantee new state issues payable in Spanish milled dollars; that paper reached Connecticut too late, and the 1 June treasury notes, at 5 percent, were issued in its place. The motto of the Connecticut arms is Qui Transtulit Sustinet — it is not transcribed from this photograph — and Comittr., printed vertically, abbreviates Committee. New London, where Timothy Green II printed the note, was burned on 6 September 1781 in Benedict Arnold’s raid.',
+      },
       {
         es: 'Newman describe 50.000 libras en Treasury Notes fechados el 1 de junio de 1780, pagaderos en dólares españoles de cordoncillo el 1 de marzo de 1784, con interés del 5 %, conforme al acta de mayo de 1780. La emisión sustituía, y podía canjearse por, el papel garantizado que el Congreso autorizó el 18 de marzo de 1780 y que llegó demasiado tarde para usarse. Timothy Green II las imprimió en New London. Eran semejantes a las del 1 de marzo de 1780, con los mismos firmantes más William Pitkin, y al redimirse solían cancelarse con un corte o un agujero. La cifra de 50.000 libras es la autorización de toda la emisión, no el número de piezas ni la tirada de los 20 chelines.',
         en: 'Newman describes £50,000 in treasury notes dated 1 June 1780, payable in Spanish milled dollars on 1 March 1784, with 5 percent interest, under the act of May 1780. The emission stood in lieu of, and was exchangeable for, the guaranteed paper Congress authorized on 18 March 1780, which arrived too late to be used. Timothy Green II printed them in New London. They were similar to the 1 March 1780 notes, with the same signers plus William Pitkin, and were customarily slash- or hole-cancelled on redemption. The £50,000 figure is the authorization for the whole emission, not the number of pieces and not the printage of the 20 shillings.',
       },
       {
-        es: 'En la lista del portal, las denominaciones son 9 d, 1 s 3 d, 2 s 6 d, 5 s, 10 s, 20 s y 40 s; el 20 s y el 40 s llevan la marca CF. Greysheet cataloga, aparte, un falsificado contemporáneo de este tipo. Esta ficha no identifica el serial 8495 con ese falsificado: el encapsulado lo nombra Fr. CT-231. El registro en línea del certificado 1072657-023 no se ha consultado. No se afirma un estado de plancha ni un censo.',
-        en: 'On the portal’s list the denominations are 9d, 1s3d, 2s6d, 5s, 10s, 20s, and 40s; the 20s and the 40s carry the CF mark. Greysheet catalogues, separately, a contemporary counterfeit of this type. This record does not identify serial 8495 with that counterfeit: the holder names it Fr. CT-231. The online record for certificate 1072657-023 has not been opened. No plate state and no census are asserted.',
+        es: 'En la lista del portal, las denominaciones son 9 d, 1 s 3 d, 2 s 6 d, 5 s, 10 s, 20 s y 40 s; el 20 s y el 40 s llevan la marca CF. Greysheet cataloga, aparte, un falsificado contemporáneo de este tipo. El encapsulado de este ejemplar lo nombra Fr. CT-231.',
+        en: 'On the portal’s list the denominations are 9d, 1s3d, 2s6d, 5s, 10s, 20s, and 40s; the 20s and the 40s carry the CF mark. Greysheet catalogues, separately, a contemporary counterfeit of this type. The holder of this example names it Fr. CT-231.',
       },
     ],
     historyHeading: {
@@ -1961,17 +1981,50 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'Slabbed back, PMG certificate 1072657-023: NEW-LONDON, Printed by TIM. GREEN, and the comments Slash Cancelled and Hinged.',
     },
     scarcity: {
-      es: 'Friedberg numera los 20 chelines del 1 de junio de 1780 como CT-231. Las 50.000 libras de Newman son la autorización de toda la emisión, no una tirada de esta denominación ni un rango de seriales. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para el serial 8495. No se publica un precio.',
-      en: 'Friedberg numbers the 20 shillings of 1 June 1780 as CT-231. Newman’s £50,000 is the authorization for the whole emission, not a printage of this denomination and not a serial range. This record does not invent a census or an auction rarity for the type or for serial 8495. No price is published.',
+      es: 'Friedberg numera los 20 chelines del 1 de junio de 1780 como CT-231. Las 50.000 libras de Newman son la autorización de toda la emisión, no una tirada de esta denominación ni un rango de seriales.',
+      en: 'Friedberg numbers the 20 shillings of 1 June 1780 as CT-231. Newman’s £50,000 is the authorization for the whole emission, not a printage of this denomination and not a serial range.',
     },
     population: {
-      es: 'Se documentan el certificado 1072657-023 y el grado impreso en el encapsulado, About Uncirculated 53, con los comentarios Slash Cancelled y Hinged. No se ha verificado de forma independiente un censo PMG para Fr. CT-231 en 53: el informe en línea no se ha abierto. Un censo de certificación no dice cuántos ejemplares sobreviven.',
-      en: 'Certificate 1072657-023 and the grade printed on the holder, About Uncirculated 53, with the comments Slash Cancelled and Hinged, are recorded. A PMG census for Fr. CT-231 in 53 has not been independently verified: the online report has not been opened. A certification census does not say how many examples survive.',
+      es: 'Se documentan el certificado 1072657-023 y el grado impreso en el encapsulado, About Uncirculated 53, con los comentarios Slash Cancelled y Hinged. Un censo de certificación no dice cuántos ejemplares sobreviven.',
+      en: 'Certificate 1072657-023 and the grade printed on the holder, About Uncirculated 53, with the comments Slash Cancelled and Hinged, are recorded. A certification census does not say how many examples survive.',
     },
     grade: {
       es: 'PMG 53 · certificado 1072657-023',
       en: 'PMG 53 · certificate 1072657-023',
     },
+    seoTitle: {
+      es: 'Billete de 20 chelines 1780 · Connecticut · Fr. CT-231',
+      en: '20 shillings note 1780 · Connecticut · Fr. CT-231',
+    },
+    metaDescription: {
+      es: 'Billete de 20 chelines de Connecticut, 1 de junio de 1780, Fr. CT-231, serial 8495, PMG 53. Impreso por Timothy Green, New London.',
+      en: 'Connecticut treasury note of 20 shillings, 1 June 1780, Fr. CT-231, serial 8495, PMG 53. Printed by Timothy Green, New London.',
+    },
+    physical: {
+      // TODO(owner): millimetre dimensions stay unpublished until measured.
+      inks: {
+        es: 'Impresión en negro; serial y firmas manuscritos en tinta roja.',
+        en: 'Black printing; manuscript serial and signatures in red ink.',
+      },
+    },
+    unclaimed: [
+      {
+        es: 'Esta ficha no inventa una tirada para los 20 chelines ni para el serial 8495.',
+        en: 'This record does not invent a printage for the 20 shillings or for serial 8495.',
+      },
+      {
+        es: 'No se afirma un censo de sobrevivientes ni un estado de plancha.',
+        en: 'No census of survivors and no plate state are claimed.',
+      },
+      {
+        es: 'No se ha verificado en línea la población de PMG para Fr. CT-231 en el grado 53 o superior, ni el certificado 1072657-023.',
+        en: 'The PMG population for Fr. CT-231 at 53 and above, and certificate 1072657-023, have not been checked online.',
+      },
+      {
+        es: 'No se publica un precio.',
+        en: 'No price is published.',
+      },
+    ],
     sources: [
       {
         href: 'https://nnp.washu.edu/images-list/list/image-collection/26607',
@@ -2034,6 +2087,51 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'El encapsulado imprime Fr. CT-231, 1 de junio de 1780, 20 chelines, serial 8495, About Uncirculated 53, Slash Cancelled y Hinged. El registro en línea no se ha abierto.',
           en: 'The holder prints Fr. CT-231, 1 June 1780, 20 shillings, serial 8495, About Uncirculated 53, Slash Cancelled, and Hinged. The online record has not been opened.',
+        },
+      },
+      {
+        href: 'https://coins.nd.edu/ColCurrency/CurrencyIntros/IntroDevaluation.html',
+        es: 'University of Notre Dame — Colonial Currency: The Devaluation',
+        en: 'University of Notre Dame — Colonial Currency: The Devaluation',
+        note: {
+          es: 'Resolución del 18 de marzo de 1780: el Congreso retiró el papel continental, en general a cuarenta por uno, y los estados podían emitir papel nuevo garantizado y pagadero en dólares españoles. Connecticut imprimió una emisión garantizada y no la puso en circulación. El 1 de marzo de 1780 fue una emisión independiente al 5 %. Que los Treasury Notes del 1 de junio ocuparan ese lugar se toma de Newman, no de esta página.',
+          en: 'Resolution of 18 March 1780: Congress drew in Continental currency, generally at forty to one, and the states could issue new paper guaranteed by the United States and payable in Spanish milled dollars. Connecticut printed a guaranteed emission and did not release it. The 1 March 1780 issue was an independent 5 percent emission. That the 1 June treasury notes stood in its place is taken from Newman, not from this page.',
+        },
+      },
+      {
+        href: 'https://archive.org/details/publicrecordsofs03conn_0',
+        es: 'Public Records of the State of Connecticut, vol. 3 (Hoadly)',
+        en: 'Public Records of the State of Connecticut, vol. 3 (Hoadly)',
+        note: {
+          es: 'Nombra a Jabez Hamlin juez del tribunal de sucesiones del distrito de Middletown. El acta de octubre de 1780 —para una emisión posterior, no la del 1 de junio— nombra a Jabez Hamlin, William Pitkin, George Wyllys, Benjamin Payne, Elisha Williams y John Chester como committee para preparar y firmar los billetes. Esa palabra es la que el billete abrevia Comittr. Newman atribuye el 1 de junio al acta de mayo de 1780.',
+          en: 'Names Jabez Hamlin judge of the probate court for the Middletown district. The October 1780 act — for a later emission, not the 1 June issue — names Jabez Hamlin, William Pitkin, George Wyllys, Benjamin Payne, Elisha Williams, and John Chester a committee to prepare and sign the bills. That word is the one the note abbreviates as Comittr. Newman ties 1 June to the act of May 1780.',
+        },
+      },
+      {
+        href: 'https://cga.ct.gov/hco/speakers/bios/Elisha_Williams_Yale.pdf',
+        es: 'Dexter — Biographical Sketches of the Graduates of Yale College (Elisha Williams)',
+        en: 'Dexter — Biographical Sketches of the Graduates of Yale College (Elisha Williams)',
+        note: {
+          es: 'Elisha Williams de Wethersfield, hijo mayor del rector de Yale del mismo nombre (muerto en 1755), nació el 31 de enero de 1717/18, fue coronel de milicia y formó parte del comité de la Asamblea que firmaba los bills of credit. Murió en Wethersfield el 30 de mayo de 1784. No es el rector. Dexter llama a ese papel “Continental currency”; esta ficha no repite esa denominación.',
+          en: 'Elisha Williams of Wethersfield, eldest son of the Yale rector of the same name (died 1755), was born on 31 January 1717/18, was a colonel of militia, and served on the Assembly committee that signed bills of credit. He died in Wethersfield on 30 May 1784. He is not the rector. Dexter calls that paper “Continental currency”; this record does not repeat that name.',
+        },
+      },
+      {
+        href: 'https://portal.ct.gov/about/state-symbols/the-state-motto',
+        es: 'Portal de Connecticut — The State Motto',
+        en: 'Connecticut portal — The State Motto',
+        note: {
+          es: 'El lema de las armas es Qui Transtulit Sustinet. No se afirma que se lea en la fotografía de este ejemplar.',
+          en: 'The motto of the arms is Qui Transtulit Sustinet. It is not claimed to be readable on the photograph of this example.',
+        },
+      },
+      {
+        href: 'https://connecticuthistory.org/benedict-arnold-turns-and-burns-new-london/',
+        es: 'Connecticut History — Benedict Arnold Turns and Burns New London',
+        en: 'Connecticut History — Benedict Arnold Turns and Burns New London',
+        note: {
+          es: 'El 6 de septiembre de 1781 la incursión de Benedict Arnold incendió New London. No se afirma que el taller de Timothy Green II ardiera.',
+          en: 'On 6 September 1781 Benedict Arnold’s raid burned New London. It is not claimed that Timothy Green II’s shop burned.',
         },
       },
     ],
@@ -8830,9 +8928,15 @@ export const notePageCopy = {
     signaturesLabel: 'Firmas',
     serialLabel: 'Número de serie',
     pickLabel: 'Referencia Pick',
-    friedbergLabel: 'Número Friedberg',
+    friedbergLabel: 'Referencia Friedberg',
     pickScwpmLabel: 'Pick / SCWPM',
     gradeLabel: 'Conservación',
+    dimensionsLabel: 'Medidas (mm)',
+    paperLabel: 'Papel',
+    printingMethodLabel: 'Procedimiento de impresión',
+    inksLabel: 'Tintas',
+    unclaimedHeading: 'Qué no se afirma',
+    editorialLink: 'Política editorial',
     expandImage: 'Ampliar imagen',
     closeLightbox: 'Cerrar',
   },
@@ -8857,9 +8961,15 @@ export const notePageCopy = {
     signaturesLabel: 'Signatures',
     serialLabel: 'Serial number',
     pickLabel: 'Pick reference',
-    friedbergLabel: 'Friedberg number',
+    friedbergLabel: 'Friedberg reference',
     pickScwpmLabel: 'Pick / SCWPM',
     gradeLabel: 'Condition',
+    dimensionsLabel: 'Dimensions (mm)',
+    paperLabel: 'Paper',
+    printingMethodLabel: 'Printing method',
+    inksLabel: 'Inks',
+    unclaimedHeading: 'What this entry does not claim',
+    editorialLink: 'Editorial policy',
     expandImage: 'Enlarge image',
     closeLightbox: 'Close',
   },
