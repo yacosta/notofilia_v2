@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T11:34:52.333Z",
+  "generatedAt": "2026-10-30T15:06:05.350Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -4109,6 +4109,45 @@
       "title": {
         "es": "2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773",
         "en": "2 shillings and 6 pence · Pennsylvania · 1 October 1773"
+      }
+    },
+    {
+      "pieceId": "20-chelines-connecticut-1780",
+      "face": "front",
+      "hash": "d506060e69141e0e",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-connecticut-1780/",
+      "pick": "Fr. CT-231",
+      "image": "/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-composite.jpg",
+      "title": {
+        "es": "20 chelines · Connecticut · 1 de junio de 1780",
+        "en": "20 shillings · Connecticut · 1 June 1780"
+      }
+    },
+    {
+      "pieceId": "20-chelines-connecticut-1780",
+      "face": "front",
+      "hash": "aa15161e0e169e0c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-connecticut-1780/",
+      "pick": "Fr. CT-231",
+      "image": "/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-front.jpg",
+      "title": {
+        "es": "20 chelines · Connecticut · 1 de junio de 1780",
+        "en": "20 shillings · Connecticut · 1 June 1780"
+      }
+    },
+    {
+      "pieceId": "20-chelines-connecticut-1780",
+      "face": "back",
+      "hash": "7b41040c0c161e17",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-chelines-connecticut-1780/",
+      "pick": "Fr. CT-231",
+      "image": "/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-back.jpg",
+      "title": {
+        "es": "20 chelines · Connecticut · 1 de junio de 1780",
+        "en": "20 shillings · Connecticut · 1 June 1780"
       }
     },
     {
