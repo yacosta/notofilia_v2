@@ -26,6 +26,7 @@ import {
 } from '../../data/estados-unidos';
 import { EDUCATIONAL_SERIES_PATH } from '../../data/educational-series-1896';
 import { USA_COINAGE_PATH } from '../../data/estados-unidos-coinage';
+import { catalogCardText } from '../../lib/catalog-reference';
 import { catalogAssetSrc } from '../../lib/images';
 import SourceList from './SourceList.astro';
 
@@ -172,7 +173,7 @@ const jsonLd = collectionPageJsonLd({
                               {note.title[locale]}
                             </h4>
                             <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                              {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                              {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : catalogCardText(note.pick, t.pickLabel, locale)} · {t.serialLabel} {note.serial}
                             </p>
                             <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                           </a>
@@ -226,7 +227,7 @@ const jsonLd = collectionPageJsonLd({
                                         {note.title[locale]}
                                       </h4>
                                       <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                                        {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                                        {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : catalogCardText(note.pick, t.pickLabel, locale)} · {t.serialLabel} {note.serial}
                                       </p>
                                       <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                                     </a>
@@ -282,7 +283,7 @@ const jsonLd = collectionPageJsonLd({
                                           {note.title[locale]}
                                         </h5>
                                         <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                                          {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                                          {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : catalogCardText(note.pick, t.pickLabel, locale)} · {t.serialLabel} {note.serial}
                                         </p>
                                         <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                                       </a>
@@ -321,7 +322,7 @@ const jsonLd = collectionPageJsonLd({
                             {note.title[locale]}
                           </h3>
                           <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                            {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : `${t.pickLabel} ${note.pick}`} · {t.serialLabel} {note.serial}
+                            {note.friedberg && note.scwpm ? `${note.friedberg} · ${note.scwpm}` : catalogCardText(note.pick, t.pickLabel, locale)} · {t.serialLabel} {note.serial}
                           </p>
                           <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
                         </a>

@@ -6,6 +6,7 @@ import SeriesHero from './SeriesHero.astro';
 import SourceList from './SourceList.astro';
 import { enhanceProseHtml } from '../../data/editorial';
 import { isEducationalSeriesNote, notePath, unitedStatesNotes } from '../../data/estados-unidos';
+import { catalogCardText } from '../../lib/catalog-reference';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 import { imageObjectJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, SITE_URL, type Locale } from '../../lib/site';
@@ -134,7 +135,7 @@ const jsonLd = {
                   {note.title[locale]}
                 </h2>
                 <p class="mb-3 mt-0 font-sans text-[12px]/5 text-muted sm:text-[14px]">
-                  {t.pickLabel} {note.pick} · {t.serialLabel} {note.serial}
+                  {catalogCardText(note.pick, t.pickLabel, locale)} · {t.serialLabel} {note.serial}
                 </p>
                 <span class="font-sans text-[13px] text-gold-light sm:text-[15px]">{t.viewNote} →</span>
               </a>

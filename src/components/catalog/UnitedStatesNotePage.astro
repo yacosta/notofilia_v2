@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
 import SeriesHero from './SeriesHero.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
+import { catalogReferenceRows } from '../../lib/catalog-reference';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
 import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
@@ -48,6 +49,20 @@ if (hero && !heroAlt) {
   throw new Error(`Missing heroAlt for ${note.id} (${locale})`);
 }
 const historyParagraphs = !note.history ? [] : Array.isArray(note.history) ? note.history : [note.history];
+const catalogRows = note.friedberg
+  ? [{ label: t.friedbergLabel, value: note.friedberg }]
+  : catalogReferenceRows(note.pick, locale);
+const physical = note.physical;
+const scanImages = [note.images.front, note.images.back].flatMap((src, index) =>
+  src
+    ? [
+        {
+          src,
+          caption: index === 0 ? note.frontCaption[locale] : note.backCaption[locale],
+        },
+      ]
+    : [],
+);
 const seo = piecePageMeta({
   kind: 'note',
   title: note.title[locale],
@@ -57,6 +72,8 @@ const seo = piecePageMeta({
   country: locale === 'en' ? 'United States' : 'Estados Unidos',
   district: note.reserveDistrict,
 });
+const documentTitle = note.seoTitle?.[locale] ?? seo.documentTitle;
+const metaDescription = note.metaDescription?.[locale] ?? seo.description;
 const chapterNotes = unitedStatesNotes.filter((item) => item.chapterId === note.chapterId);
 const siblings = pieceSiblings(chapterNotes, note.path);
 const crumbItems = [
@@ -104,8 +121,8 @@ const jsonCrumbs = [
 ---
 
 <Layout
-  title={seo.documentTitle}
-  description={seo.description}
+  title={documentTitle}
+  description={metaDescription}
   locale={locale}
   pathname={pathname}
   ogImage={hero?.src ?? note.images.front}
@@ -119,9 +136,9 @@ const jsonCrumbs = [
           breadcrumbList(jsonCrumbs, locale),
           visualArtworkJsonLd({
           name: seo.h1,
-          description: seo.description,
+          description: metaDescription,
           url: pathname,
-          image: note.images.front,
+          images: scanImages,
           locale,
           artform: 'Banknote',
           catalogNumber: note.scwpm ? `${note.scwpm} · ${note.friedberg ?? note.pick}` : note.pick,
@@ -172,12 +189,16 @@ const jsonCrumbs = [
           {t.factsHeading}
         </h2>
         <dl class="m-0 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-          <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
-              {note.friedberg ? t.friedbergLabel : t.pickLabel}
-            </dt>
-            <dd class="m-0 mt-1 text-cream">{note.friedberg ?? note.pick}</dd>
-          </div>
+          {
+            catalogRows.map((row) => (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+                  {row.label}
+                </dt>
+                <dd class="m-0 mt-1 text-cream">{row.value}</dd>
+              </div>
+            ))
+          }
           {
             note.scwpm ? (
               <div>
@@ -206,6 +227,38 @@ const jsonCrumbs = [
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{note.grade[locale]}</dd>
           </div>
+          {
+            physical?.dimensionsMm ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.dimensionsLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{physical.dimensionsMm}</dd>
+              </div>
+            ) : null
+          }
+          {
+            physical?.paper ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.paperLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{physical.paper[locale]}</dd>
+              </div>
+            ) : null
+          }
+          {
+            physical?.printingMethod ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printingMethodLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{physical.printingMethod[locale]}</dd>
+              </div>
+            ) : null
+          }
+          {
+            physical?.inks ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.inksLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{physical.inks[locale]}</dd>
+              </div>
+            ) : null
+          }
           <div class="sm:col-span-2">
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.printedLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{note.printed[locale]}</dd>
@@ -294,6 +347,29 @@ const jsonCrumbs = [
         </h2>
         <p class="m-0 text-[17px]/7 text-cream">{note.population[locale]}</p>
       </section>
+
+      {
+        note.unclaimed?.length ? (
+          <section class="mt-12" aria-labelledby="unclaimed-heading">
+            <h2 id="unclaimed-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+              {t.unclaimedHeading}
+            </h2>
+            <ul class="mb-4 mt-0 list-disc space-y-2 pl-5 text-[17px]/7 text-cream">
+              {note.unclaimed.map((item) => (
+                <li>{item[locale]}</li>
+              ))}
+            </ul>
+            <p class="m-0 text-[17px]/7 text-cream">
+              <a
+                href={localizePath('/editorial/', locale)}
+                class="text-gold-light underline decoration-gold-light/50 hover:text-cream"
+              >
+                {t.editorialLink}
+              </a>
+            </p>
+          </section>
+        ) : null
+      }
 
       <div class="mt-16">
         <SourceList locale={locale} sources={sources} heading={t.sourcesHeading} />
