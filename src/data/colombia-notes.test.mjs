@@ -90,8 +90,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'us-ct-231-20s-1780-8495');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-ct-231-1780-20s');
+    assert.equal(additions.at(-1)?.id, 'co-1980-5-pesos-oro-00011943');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-5-pesos-oro-p406f-h158');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -728,6 +728,71 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB circulation', () => {
   });
 });
 
+describe('Colombia BanRep 5 pesos oro 1980 IBB asterisk replacement', () => {
+  it('is Hernández 158, serial 00011943, not the ordinary 94658896 note', () => {
+    const note = noteById('5-pesos-oro-1980-00011943');
+    const ordinary = noteById('5-pesos-oro-1980');
+    assert.ok(note);
+    assert.ok(ordinary);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 406f · Hernández 158');
+    assert.equal(note.serial, '00011943');
+    assert.notEqual(note.serial, ordinary.serial);
+    assert.equal(notePieces(note).length, 1);
+    assert.match(note.printed.es, /Cód\. 158/);
+    assert.match(note.printed.en, /Cód\. 158/);
+    assert.match(note.printed.es, /00000004–00021090/);
+    assert.match(note.printed.es, /cae en ese intervalo/);
+    assert.match(note.printed.es, /49,5 millones de piezas de 5 pesos/);
+    assert.match(note.printed.es, /denominación-año/);
+    assert.match(note.description.es, /00011943/);
+    assert.match(note.description.en, /00011943/);
+    assert.match(note.description.es, /asterisco en el anverso/);
+    assert.match(note.description.en, /asterisk on the face/);
+    assert.match(note.description.es, /Cód\. 157/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    assert.doesNotMatch(note.scarcity.es, /US\$|USD|\$2\.50/);
+    assert.equal(additions.some((row) => row.id === 'co-1980-5-pesos-oro-00011943'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-5-pesos-oro-p406f-h158'), true);
+  });
+
+  it('lists the 1980 replacement on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(
+      chapter.body.es,
+      /reposición de 5 pesos oro de 1980 \(Pick 406f; Hernández 158\), serial 00011943/,
+    );
+    assert.match(
+      chapter.body.en,
+      /1980 5 pesos oro replacement \(Pick 406f; Hernández 158\), serial 00011943/,
+    );
+    assert.match(
+      seriesCopy.es.intro.join(' '),
+      /reposición de 5 pesos oro de 1980 \(Pick 406f; Hernández 158\), serial 00011943/,
+    );
+    assert.match(
+      seriesCopy.en.intro.join(' '),
+      /1980 5 pesos oro replacement \(Pick 406f; Hernández 158\), serial 00011943/,
+    );
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5-pesos-oro-1980-00011943');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '00011943');
+    assert.equal(holding[0].denomination, 5);
+    assert.equal(holding[0].year, 1980);
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5-pesos-oro-1980-00011943/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5-pesos-oro-1980-00011943/',
+    );
+  });
+});
+
 describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
   it('is a distinct Pick 407g circulation note, not the 1976 replacement or the 1943 ABNC 10 pesos', () => {
     const note = noteById('10-pesos-oro-1979');
@@ -992,8 +1057,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'us-ct-231-20s-1780-8495');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-ct-231-1780-20s');
+    assert.equal(additions.at(-1)?.id, 'co-1980-5-pesos-oro-00011943');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-5-pesos-oro-p406f-h158');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1498,8 +1563,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.match(note.lead.es, /Pick 380b/);
     assert.match(note.lead.en, /Pick 380b/);
     assert.equal(note.images.front.includes('r35555693-front'), true);
-    assert.equal(additions.at(-1)?.id, 'us-ct-231-20s-1780-8495');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-ct-231-1780-20s');
+    assert.equal(additions.at(-1)?.id, 'co-1980-5-pesos-oro-00011943');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-5-pesos-oro-p406f-h158');
     const publicCopy = [
       note.lead.es,
       note.lead.en,
@@ -1560,7 +1625,7 @@ describe('Banco de la República denomination headings', () => {
 
     const expected = [
       ['banrep-2-pesos', 'Billetes de 2 pesos (1923 - 1983)', '2 peso notes (1923 - 1983)', 3],
-      ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 3],
+      ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 4],
       ['banrep-10-pesos', 'Billetes de 10 pesos (1923 - 1980)', '10 peso notes (1923 - 1980)', 3],
       ['banrep-20-pesos', 'Billetes de 20 pesos (1927 - 1983)', '20 peso notes (1927 - 1983)', 1],
       ['banrep-50-pesos', 'Billetes de 50 pesos (1923 - 1986)', '50 peso notes (1923 - 1986)', 2],

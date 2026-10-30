@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T15:06:05.350Z",
+  "generatedAt": "2026-10-30T18:10:32.582Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1678,6 +1678,45 @@
       "title": {
         "es": "5 pesos oro · 1980",
         "en": "5 pesos oro · 1980"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1980-00011943",
+      "face": "front",
+      "hash": "52d149300b2b50d4",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1980-00011943/",
+      "pick": "P# 406f · Hernández 158",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-composite.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1980",
+        "en": "5 pesos oro · replacement · 1980"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1980-00011943",
+      "face": "front",
+      "hash": "40945150556c36c4",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1980-00011943/",
+      "pick": "P# 406f · Hernández 158",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-front.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1980",
+        "en": "5 pesos oro · replacement · 1980"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1980-00011943",
+      "face": "back",
+      "hash": "503acb55d16d2252",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1980-00011943/",
+      "pick": "P# 406f · Hernández 158",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-back.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1980",
+        "en": "5 pesos oro · replacement · 1980"
       }
     },
     {

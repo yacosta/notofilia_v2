@@ -245,6 +245,7 @@ export const additions: Holding[] = [
   { id: 'co-1855-una-mitad-am-de-la-cuadra', kind: 'coin', country: 'CO' },
   { id: 'co-1940-1-peso-oro-35555693', kind: 'banknote', country: 'CO' },
   { id: 'us-ct-231-20s-1780-8495', kind: 'banknote', country: 'US' },
+  { id: 'co-1980-5-pesos-oro-00011943', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -416,6 +417,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1855-una-mitad-am-de-la-cuadra' },
   { id: 'co-1940-1-peso-oro-p380b' },
   { id: 'us-ct-231-1780-20s' },
+  { id: 'co-1980-5-pesos-oro-p406f-h158' },
 ];
 
 export type CollectionStats = {

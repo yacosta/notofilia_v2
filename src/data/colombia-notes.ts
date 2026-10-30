@@ -20,6 +20,7 @@ export type ColombiaNoteId =
   | '5-pesos-oro-1960'
   | '5-pesos-oro-1979'
   | '5-pesos-oro-1980'
+  | '5-pesos-oro-1980-00011943'
   | '10-pesos-oro-1976'
   | '10-pesos-oro-1979'
   | '20-pesos-oro-1983'
@@ -65,6 +66,9 @@ export type ColombiaNote = {
     composite: string;
     front: string;
     back: string;
+    /** Untrimmed scan size in pixels. The ficha falls back to 1440×960. */
+    width?: number;
+    height?: number;
   };
   hero?: {
     src: string;
@@ -103,6 +107,9 @@ export type ColombiaNotePiece = {
     composite: string;
     front: string;
     back: string;
+    /** Untrimmed scan size in pixels. The ficha falls back to 1440×960. */
+    width?: number;
+    height?: number;
   };
   title: LocalizedText;
   lead: LocalizedText;
@@ -1940,8 +1947,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A replacement five-peso oro dated 1 April 1979: Pick 406f / Hernández 156. Serial 00141180. The asterisk to the left of GERENTE identifies the variety. This record gathers the face and back of the same unslabbed note, in a sleeve.',
     },
     description: {
-      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cinco pesos oro de la familia Pick 406 (1961–1981). El anverso, en verde y pardo sobre policromía, lleva a la izquierda el cóndor andino con las alas abiertas y a la derecha el retrato de José María Córdova —el papel lee «CORDOBA», grafía que González White anota en el tipo—. Al centro, la promesa de pagar al portador cinco pesos oro. Los seriales van en rojo: 00141180, una vez arriba a la izquierda y otra abajo a la derecha. No hay letra de serie. La fecha impresa es «ABRIL 1º DE 1979» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). El diagnóstico de la reposición no está en el serial: es el asterisco a la izquierda del título GERENTE. Hernández (8.ª ed., 2023) numera esa fila Cód. 156, distinta del Cód. 155 de circulación; las reposiciones vecinas de este facial (Cód. 150 del 20 de julio de 1977, Cód. 153 del 1.º de octubre de 1978 y Cód. 160 del 1.º de enero de 1981) las describe como «asterisco en el anverso». Numista etiqueta la fila de 156 como «star on reverse»; en esta pieza el signo está en el anverso. El Pick numera el tipo ordinario como 406f (TBB B949o para la fecha de circulación). El reverso muestra las murallas de Cartagena —rotuladas «CARTAGENA»; el Castillo de San Felipe de Barajas en los catálogos anglófonos— y el sello del banco con la Libertad. El tipo 406f, según el Bank Note Museum, carece de hilo de seguridad. Distinto del ejemplar de circulación de 1980 de esta vitrina (serial 94658896, Hernández 157) y del espécimen de 1960 (Pick 405s). Esta pieza de la colección se presenta en funda, sin encapsular.',
-      en: 'The Banco de la República ordered this five-peso oro of the Pick 406 family (1961–1981) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, green and brown on a multicolour underprint, carries an Andean condor with spread wings at left and José María Córdova’s portrait at right — the paper reads “CORDOBA,” the spelling González White notes on the type. At center is the promise to pay the bearer five gold pesos. The serials are in red: 00141180, once at upper left and once at lower right. There is no series letter. The printed date is “ABRIL 1º DE 1979” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). The replacement diagnostic is not in the serial: it is the asterisk to the left of the title GERENTE. Hernández (8th ed., 2023) numbers that row Cód. 156, distinct from circulating Cód. 155; neighbouring replacements of this face value (Cód. 150 of 20 July 1977, Cód. 153 of 1 October 1978, and Cód. 160 of 1 January 1981) he describes as “asterisco en el anverso.” Numista labels the 156 row “star on reverse”; on this holding the mark is on the face. Pick numbers the ordinary type as 406f (TBB B949o for the circulating date). The back shows the walls of Cartagena — labelled “CARTAGENA”; Castillo San Felipe de Barajas in English-language catalogs — and the bank’s Liberty seal. Type 406f, per the Bank Note Museum, has no security thread. Distinct from this case’s 1980 circulating example (serial 94658896, Hernández 157) and from the 1960 specimen (Pick 405s). This collection piece is shown in a sleeve, unslabbed.',
+      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cinco pesos oro de la familia Pick 406 (1961–1981). El anverso, en verde y pardo sobre policromía, lleva a la izquierda el cóndor andino con las alas abiertas y a la derecha el retrato de José María Córdova —el papel lee «CORDOBA», grafía que González White anota en el tipo—. Al centro, la promesa de pagar al portador cinco pesos oro. Los seriales van en rojo: 00141180, una vez arriba a la izquierda y otra abajo a la derecha. No hay letra de serie. La fecha impresa es «ABRIL 1º DE 1979» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). El diagnóstico de la reposición no está en el serial: es el asterisco a la izquierda del título GERENTE. Hernández (8.ª ed., 2023) numera esa fila Cód. 156, distinta del Cód. 155 de circulación; las reposiciones vecinas de este facial (Cód. 150 del 20 de julio de 1977, Cód. 153 del 1.º de octubre de 1978 y Cód. 160 del 1.º de enero de 1981) las describe como «asterisco en el anverso». Numista etiqueta la fila de 156 como «star on reverse»; en esta pieza el signo está en el anverso. El Pick numera el tipo ordinario como 406f (TBB B949o para la fecha de circulación). El reverso muestra las murallas de Cartagena —rotuladas «CARTAGENA»; el Castillo de San Felipe de Barajas en los catálogos anglófonos— y el sello del banco con la Libertad. El tipo 406f, según el Bank Note Museum, carece de hilo de seguridad. Distinto del ejemplar de circulación de 1980 de esta vitrina (serial 94658896, Hernández 157), de la reposición de 1980 (serial 00011943, Hernández 158) y del espécimen de 1960 (Pick 405s). Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República ordered this five-peso oro of the Pick 406 family (1961–1981) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, green and brown on a multicolour underprint, carries an Andean condor with spread wings at left and José María Córdova’s portrait at right — the paper reads “CORDOBA,” the spelling González White notes on the type. At center is the promise to pay the bearer five gold pesos. The serials are in red: 00141180, once at upper left and once at lower right. There is no series letter. The printed date is “ABRIL 1º DE 1979” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). The replacement diagnostic is not in the serial: it is the asterisk to the left of the title GERENTE. Hernández (8th ed., 2023) numbers that row Cód. 156, distinct from circulating Cód. 155; neighbouring replacements of this face value (Cód. 150 of 20 July 1977, Cód. 153 of 1 October 1978, and Cód. 160 of 1 January 1981) he describes as “asterisco en el anverso.” Numista labels the 156 row “star on reverse”; on this holding the mark is on the face. Pick numbers the ordinary type as 406f (TBB B949o for the circulating date). The back shows the walls of Cartagena — labelled “CARTAGENA”; Castillo San Felipe de Barajas in English-language catalogs — and the bank’s Liberty seal. Type 406f, per the Bank Note Museum, has no security thread. Distinct from this case’s 1980 circulating example (serial 94658896, Hernández 157), from the 1980 replacement (serial 00011943, Hernández 158), and from the 1960 specimen (Pick 405s). This collection piece is shown in a sleeve, unslabbed.',
     },
     frontCaption: {
       es: 'Anverso del 5 pesos oro de reposición, 1.º de abril de 1979: cóndor, José María Córdova, serial 00141180 y asterisco a la izquierda de GERENTE.',
@@ -2034,8 +2041,8 @@ export const colombiaNotes: ColombiaNote[] = [
       en: 'A five-peso oro, Pick 406f: date 1 January 1980, serial 94658896. This record gathers the face and back of the same unslabbed note, in a sleeve.',
     },
     description: {
-      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cinco pesos oro de la familia Pick 406 (1961–1981). El anverso, en verde y pardo sobre policromía, lleva a la izquierda el cóndor andino con las alas abiertas y a la derecha el retrato de José María Córdova —el papel lee «CORDOBA», grafía que González White anota en el tipo—. Al centro, la promesa de pagar al portador cinco pesos oro. Los seriales van en rojo: 94658896, dos veces. La fecha impresa es «ENERO 1º DE 1980» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). No hay asterisco entre GERENTE y SECRETARIO: no es la reposición de esa fecha. El reverso muestra las murallas de Cartagena —rotuladas «CARTAGENA»; el Castillo de San Felipe de Barajas en los catálogos anglófonos— y el sello del banco con la Libertad. El pie del reverso lee «IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA». El tipo 406f, según el Bank Note Museum, carece de hilo de seguridad. González White sitúa en 1981 la última emisión de este facial en papel, sustituido por moneda metálica. Distinto del Pick 405 de 1960 —mismo prócer, edificio del banco al reverso; en esta vitrina el espécimen serial 00000000—. Esta pieza de la colección se presenta en funda, sin encapsular.',
-      en: 'The Banco de la República ordered this five-peso oro of the Pick 406 family (1961–1981) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, green and brown on a multicolour underprint, carries an Andean condor with spread wings at left and José María Córdova’s portrait at right — the paper reads “CORDOBA,” the spelling González White notes on the type. At center is the promise to pay the bearer five gold pesos. The serials are in red: 94658896, twice. The printed date is “ENERO 1º DE 1980” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). There is no asterisk between GERENTE and SECRETARIO: it is not the replacement of that date. The back shows the walls of Cartagena — labelled “CARTAGENA”; Castillo San Felipe de Barajas in English-language catalogs — and the bank’s Liberty seal. The back imprint reads “IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA.” Type 406f, per the Bank Note Museum, has no security thread. González White places the last paper issue of this face value in 1981, replaced by coin. Distinct from Pick 405 of 1960 — the same patriot, the bank building on the back; in this case the specimen serial 00000000. This collection piece is shown in a sleeve, unslabbed.',
+      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cinco pesos oro de la familia Pick 406 (1961–1981). El anverso, en verde y pardo sobre policromía, lleva a la izquierda el cóndor andino con las alas abiertas y a la derecha el retrato de José María Córdova —el papel lee «CORDOBA», grafía que González White anota en el tipo—. Al centro, la promesa de pagar al portador cinco pesos oro. Los seriales van en rojo: 94658896, dos veces. La fecha impresa es «ENERO 1º DE 1980» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). No hay asterisco entre GERENTE y SECRETARIO: no es la reposición de esa fecha. La reposición, serial 00011943 y Hernández 158, es otra pieza de esta vitrina. El reverso muestra las murallas de Cartagena —rotuladas «CARTAGENA»; el Castillo de San Felipe de Barajas en los catálogos anglófonos— y el sello del banco con la Libertad. El pie del reverso lee «IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA». El tipo 406f, según el Bank Note Museum, carece de hilo de seguridad. González White sitúa en 1981 la última emisión de este facial en papel, sustituido por moneda metálica. Distinto del Pick 405 de 1960 —mismo prócer, edificio del banco al reverso; en esta vitrina el espécimen serial 00000000—. Esta pieza de la colección se presenta en funda, sin encapsular.',
+      en: 'The Banco de la República ordered this five-peso oro of the Pick 406 family (1961–1981) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, green and brown on a multicolour underprint, carries an Andean condor with spread wings at left and José María Córdova’s portrait at right — the paper reads “CORDOBA,” the spelling González White notes on the type. At center is the promise to pay the bearer five gold pesos. The serials are in red: 94658896, twice. The printed date is “ENERO 1º DE 1980” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). There is no asterisk between GERENTE and SECRETARIO: it is not the replacement of that date. The replacement, serial 00011943 and Hernández 158, is another piece in this case. The back shows the walls of Cartagena — labelled “CARTAGENA”; Castillo San Felipe de Barajas in English-language catalogs — and the bank’s Liberty seal. The back imprint reads “IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA.” Type 406f, per the Bank Note Museum, has no security thread. González White places the last paper issue of this face value in 1981, replaced by coin. Distinct from Pick 405 of 1960 — the same patriot, the bank building on the back; in this case the specimen serial 00000000. This collection piece is shown in a sleeve, unslabbed.',
     },
     frontCaption: {
       es: 'Anverso del 5 pesos oro, Pick 406f: cóndor, José María Córdova, serial 94658896 y fecha 1.º de enero de 1980.',
@@ -2101,6 +2108,102 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 157 para el ejemplar de circulación del 1.º de enero de 1980; ese H# no se sustituye por el Cód. de 2023.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 157 for the 1 January 1980 circulating note; that H# is not replaced by a 2023 Cód.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-pesos-oro-1980-00011943',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}5-pesos-oro-1980-00011943/`,
+    pick: 'P# 406f · Hernández 158',
+    serial: '00011943',
+    signatures: {
+      es: 'Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario)',
+      en: 'Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 1.º de enero de 1980. Ocho dígitos, sin letra de serie. Esta pieza es la variedad de reposición: Hernández (8.ª ed., 2023) la numera Cód. 158 —Numista concuerda Hernández 158, distinto del Cód. 157 de circulación de la misma fecha (P# 406f / TBB B949p)—. El diagnóstico en esta pieza es el asterisco en el anverso, entre las firmas, junto al título GERENTE. El anexo 2 da el intervalo de asterisco del 1.º de enero de 1980 como 00000004–00021090; el serial 00011943 cae en ese intervalo. González White 2019 (p. 60) lista una banda Reposición asterisco 00.000.001–00.021.090, el mismo extremo 21090; 00.011.943 cae en ella. El OCR del pliego mezcla BG# y fechas: no se publica aquí un BG# adivinado. La emisión ordinaria de esa fecha, 50.000.000 de ejemplares y seriales 50.000.001–100.000.000, no incluye este número. Formato publicado: 140 × 70 mm. El Bank Note Museum agrupa el tipo 406f en las fechas 01.10.1978, 01.04.1979, 01.01.1980 y 01.01.1981, sin hilo de seguridad, y no separa la reposición. La tabla BanRep de 1980 registra 49,5 millones de piezas de 5 pesos —total de denominación-año, no la tirada de esta reposición—. Esta ficha no inventa una tirada ni sustituye el intervalo de Hernández por ese total.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 1 January 1980. Eight digits, no series letter. This piece is the replacement variety: Hernández (8th ed., 2023) numbers it Cód. 158 — Numista concurs Hernández 158, distinct from Cód. 157 of the circulating note of the same date (P# 406f / TBB B949p). The diagnostic on this holding is the asterisk on the face, between the signatures, beside the title GERENTE. Annex 2 gives the 1 January 1980 asterisk interval as 00000004–00021090; serial 00011943 sits in that interval. González White 2019 (p. 60) lists a Reposición asterisco band 00.000.001–00.021.090, the same 21090 endpoint; 00.011.943 sits in it. The spread’s OCR jumbles BG# against dates: no guessed BG# is published here. The ordinary emisión of that date, 50,000,000 notes and serials 50,000,001–100,000,000, does not include this number. Published size: 140 × 70 mm. The Bank Note Museum groups type 406f under 01.10.1978, 01.04.1979, 01.01.1980, and 01.01.1981, without a security thread, and does not split the replacement. BanRep’s 1980 table records 49.5 million 5-peso notes — a denomination-year total, not this replacement’s printage. This record does not invent a printage or replace Hernández’s interval with that total.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1980-00011943-back.jpg',
+      width: 1774,
+      height: 887,
+    },
+    title: {
+      es: '5 pesos oro · reposición · 1980',
+      en: '5 pesos oro · replacement · 1980',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Reposición',
+      en: 'Colombia · Banco de la República · Replacement',
+    },
+    lead: {
+      es: 'Cinco pesos oro de reposición, fecha 1.º de enero de 1980: Pick 406f / Hernández 158. Serial 00011943. El asterisco en el anverso, entre GERENTE y SECRETARIO, identifica la variedad. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular.',
+      en: 'A replacement five-peso oro dated 1 January 1980: Pick 406f / Hernández 158. Serial 00011943. The asterisk on the face, between GERENTE and SECRETARIO, identifies the variety. This record gathers the face and back of the same unslabbed note.',
+    },
+    description: {
+      es: 'El Banco de la República encargó a su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959, este cinco pesos oro de la familia Pick 406 (1961–1981). El anverso, en verde y pardo sobre policromía, lleva a la izquierda el cóndor andino con las alas abiertas y a la derecha el retrato de José María Córdova —el papel lee «CORDOBA», grafía que González White anota en el tipo—. Al centro, la promesa de pagar al portador cinco pesos oro. Los seriales van en rojo: 00011943, una vez arriba a la izquierda y otra abajo a la derecha. No hay letra de serie. La fecha impresa es «ENERO 1º DE 1980» sobre «BOGOTA, COLOMBIA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a la reposición de esta fecha (RGQ, FJO). El diagnóstico de la reposición no está en el serial: es el asterisco en el anverso, entre las firmas, junto al título GERENTE. Hernández (8.ª ed., 2023) numera esa fila Cód. 158, distinta del Cód. 157 de circulación de la misma fecha. Numista etiqueta la fila 158 como «star on reverse»; en esta pieza el signo está en el anverso. El anexo 2 da el intervalo de asterisco del 1.º de enero de 1980 como 00000004–00021090, y 00011943 cae dentro. El Pick numera el tipo ordinario como 406f (TBB B949p para la fecha de circulación) y no separa la reposición. El reverso muestra las murallas de Cartagena —rotuladas «CARTAGENA»; el Castillo de San Felipe de Barajas en los catálogos anglófonos— y el sello del banco con la Libertad. El pie del reverso lee «IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA». El tipo 406f, según el Bank Note Museum, carece de hilo de seguridad. Distinto del ejemplar de circulación de 1980 de esta vitrina (serial 94658896, Hernández 157), de la reposición del 1.º de abril de 1979 (serial 00141180, Hernández 156) y del espécimen de 1960 (Pick 405s). Esta pieza de la colección se presenta sin encapsular.',
+      en: 'The Banco de la República ordered this five-peso oro of the Pick 406 family (1961–1981) from its own Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, green and brown on a multicolour underprint, carries an Andean condor with spread wings at left and José María Córdova’s portrait at right — the paper reads “CORDOBA,” the spelling González White notes on the type. At center is the promise to pay the bearer five gold pesos. The serials are in red: 00011943, once at upper left and once at lower right. There is no series letter. The printed date is “ENERO 1º DE 1980” over “BOGOTA, COLOMBIA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to the replacement of this date (RGQ, FJO). The replacement diagnostic is not in the serial: it is the asterisk on the face, between the signatures, beside the title GERENTE. Hernández (8th ed., 2023) numbers that row Cód. 158, distinct from circulating Cód. 157 of the same date. Numista labels row 158 “star on reverse”; on this holding the mark is on the face. Annex 2 gives the 1 January 1980 asterisk interval as 00000004–00021090, and 00011943 sits inside it. Pick numbers the ordinary type as 406f (TBB B949p for the circulating date) and does not split the replacement. The back shows the walls of Cartagena — labelled “CARTAGENA”; Castillo San Felipe de Barajas in English-language catalogs — and the bank’s Liberty seal. The back imprint reads “IMPRENTA DE BILLETES - BANCO DE LA REPUBLICA.” Type 406f, per the Bank Note Museum, has no security thread. Distinct from this case’s 1980 circulating example (serial 94658896, Hernández 157), from the 1 April 1979 replacement (serial 00141180, Hernández 156), and from the 1960 specimen (Pick 405s). This collection piece is shown unslabbed.',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 pesos oro de reposición, 1.º de enero de 1980: cóndor, José María Córdova, serial 00011943 y asterisco entre las firmas.',
+      en: 'Face of the 1 January 1980 replacement 5 pesos oro: condor, José María Córdova, serial 00011943, and the asterisk between the signatures.',
+    },
+    backCaption: {
+      es: 'Reverso del 5 pesos oro de reposición, 1.º de enero de 1980: murallas de Cartagena, sello del Banco de la República y cifras 5.',
+      en: 'Back of the 1 January 1980 replacement 5 pesos oro: the walls of Cartagena, the Banco de la República seal, and the figures 5.',
+    },
+    scarcity: {
+      es: 'La reposición del 1.º de enero de 1980 es una variedad reconocida y sustancialmente más escasa que la emisión ordinaria de esa fecha (Hernández Cód. 157 / TBB B949p). Numista marca la frecuencia de la fila Hernández 158 en un 0 % entre quienes poseen el tipo N# 206002; esa cifra es una estimación de población de catálogo, no una tirada oficial. La misma tabla tiene una fila del 1.º de enero de 1980 sin número Hernández en las referencias, descrita como asterisco en el centro izquierda (frecuencia 0,3 %). El anexo 2 de Hernández da el intervalo 00000004–00021090 para el asterisco de esta fecha; 00011943 cae dentro, y por eso esta ficha usa el Cód. 158. González White 2019 (p. 60) publica una banda Reposición asterisco 00.000.001–00.021.090, con el mismo extremo 21090; 00.011.943 cae en ella. Esa fila no trae emisión numérica. El Pick no lista las reposiciones por separado. La emisión ordinaria de la fecha, seriales 50.000.001–100.000.000, no incluye este número. La tabla BanRep de 1980 registra 49,5 millones de piezas de 5 pesos: es el total de esa denominación ese año, no la tirada de esta reposición. Esta ficha no inventa una tirada ni republica columnas de precios de Hernández ni de Numista.',
+      en: 'The 1 January 1980 replacement is a recognized variety and substantially scarcer than the ordinary issue of that date (Hernández Cód. 157 / TBB B949p). Numista marks the Hernández 158 row’s frequency at 0% among owners of type N# 206002; that figure is a catalog-population estimate, not an official printage. The same table has a 1 January 1980 row with no Hernández number in the references, described as an asterisk at center left (0.3% frequency). Hernández’s annex 2 gives the asterisk interval 00000004–00021090 for this date; 00011943 sits inside it, which is why this record uses Cód. 158. González White 2019 (p. 60) publishes a Reposición asterisco band 00.000.001–00.021.090, with the same 21090 endpoint; 00.011.943 sits in it. That row gives no numeric emisión. Pick does not list replacements separately. The ordinary emisión of the date, serials 50,000,001–100,000,000, does not include this number. BanRep’s 1980 table records 49.5 million 5-peso notes: that is the year’s total for the face value, not this replacement’s printage. This record does not invent a printage or republish Hernández or Numista price columns.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00011943. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial 00011943 has not been independently verified. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular',
+      en: 'Unslabbed',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/catalogue/note206002.html',
+        es: 'Numista — Colombia 5 pesos oro, N# 206002',
+        en: 'Numista — Colombia 5 pesos oro, N# 206002',
+        note: {
+          es: '01.01.1980, reposición: Hernández 158; firmas RGQ y FJO; Numista etiqueta la fila «star on reverse» (frecuencia 0 %). En esta pieza el asterisco está en el anverso. Hay otra fila de la misma fecha, sin Hernández en las referencias, descrita como asterisco en el centro izquierda (frecuencia 0,3 %). La circulación es P# 406f / TBB B949p / Hernández 157, sin hilo. Impresora: Imprenta de Billetes, Bogotá. 140 × 70 mm.',
+          en: '01.01.1980 replacement: Hernández 158; signatures RGQ and FJO; Numista labels the row “star on reverse” (0% frequency). On this holding the asterisk is on the face. Another row of the same date, with no Hernández number in the references, is described as an asterisk at center left (0.3% frequency). The circulating date is P# 406f / TBB B949p / Hernández 157, without a thread. Printer: Imprenta de Billetes, Bogotá. 140 × 70 mm.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0406.htm',
+        es: 'Bank Note Museum — Colombia P-406, 5 pesos oro (1961–1981)',
+        en: 'Bank Note Museum — Colombia P-406, 5 pesos oro (1961–1981)',
+        note: {
+          es: '406f: 01.10.1978, 01.04.1979, 01.01.1980 y 01.01.1981; anverso cóndor y José María Córdoba; reverso Cartagena; sin hilo de seguridad. Distinto del Pick 405 (edificio del banco, 1960). No separa la reposición.',
+          en: '406f: 01.10.1978, 01.04.1979, 01.01.1980, and 01.01.1981; condor and José María Córdoba on the face; Cartagena on the back; no security thread. Distinct from Pick 405 (bank building, 1960). Does not split the replacement.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1980: 49,5 millones de piezas de 5 pesos. Es el total de esa denominación ese año, no la tirada del 1.º de enero de 1980 ni de esta reposición.',
+          en: '1980 production: 49.5 million 5-peso notes. That is the year’s total for the face value, not the printage of 1 January 1980 or of this replacement.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Cód. 157: 1.º de enero de 1980 de circulación; Cód. 158: reposición de la misma fecha. El anexo 2 da el intervalo de asterisco 00000004–00021090, que incluye 00011943. Numista cita Hernández 158 para esa fila. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Cód. 157: circulating 1 January 1980; Cód. 158: replacement of the same date. Annex 2 gives the asterisk interval 00000004–00021090, which includes 00011943. Numista cites Hernández 158 for that row. Price columns and plates are not republished.',
         },
       },
     ],
