@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T18:43:34.843Z",
+  "generatedAt": "2026-10-30T19:23:56.587Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1639,6 +1639,45 @@
       "title": {
         "es": "5 pesos oro · espécimen · 1960",
         "en": "5 pesos oro · specimen · 1960"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1977",
+      "face": "front",
+      "hash": "2a99c6452dd562aa",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1977/",
+      "pick": "P# 406e · Hernández 150",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-composite.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1977",
+        "en": "5 pesos oro · replacement · 1977"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1977",
+      "face": "front",
+      "hash": "cbf849d6a6586c4d",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1977/",
+      "pick": "P# 406e · Hernández 150",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-front.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1977",
+        "en": "5 pesos oro · replacement · 1977"
+      }
+    },
+    {
+      "pieceId": "5-pesos-oro-1977",
+      "face": "back",
+      "hash": "8aea64555324cc86",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/5-pesos-oro-1977/",
+      "pick": "P# 406e · Hernández 150",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-back.jpg",
+      "title": {
+        "es": "5 pesos oro · reposición · 1977",
+        "en": "5 pesos oro · replacement · 1977"
       }
     },
     {

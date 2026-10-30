@@ -90,8 +90,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'co-1976-2-pesos-oro-00194674');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1976-2-pesos-oro-p413b');
+    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -456,8 +456,8 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1976-2-pesos-oro-00194674'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1976-2-pesos-oro-p413b'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1976-2-pesos-oro-00194674');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1976-2-pesos-oro-p413b');
+    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
   });
 
   it('lists the 1976 2 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -878,6 +878,98 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB asterisk replacement', () => {
   });
 });
 
+describe('Colombia BanRep 5 pesos oro 1977 asterisk replacement', () => {
+  it('is Hernández 150, serial 00120856, not ordinary B949m', () => {
+    const note = noteById('5-pesos-oro-1977');
+    const later = noteById('5-pesos-oro-1979');
+    const ordinary1980 = noteById('5-pesos-oro-1980');
+    const replacement1980 = noteById('5-pesos-oro-1980-00011943');
+    const specimen = noteById('5-pesos-oro-1960');
+    assert.ok(note);
+    assert.ok(later);
+    assert.ok(ordinary1980);
+    assert.ok(replacement1980);
+    assert.ok(specimen);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 406e · Hernández 150');
+    assert.equal(note.serial, '00120856');
+    assert.notEqual(note.serial, later.serial);
+    assert.notEqual(note.serial, ordinary1980.serial);
+    assert.notEqual(note.serial, replacement1980.serial);
+    assert.notEqual(note.serial, specimen.serial);
+    assert.equal(notePieces(note).length, 1);
+    assert.ok(note.lead.es.length <= 155);
+    assert.ok(note.lead.en.length <= 155);
+    assert.equal(note.images.width, 1916);
+    assert.equal(note.images.height, 821);
+    assert.match(note.printed.es, /Cód\. 150/);
+    assert.match(note.printed.en, /Cód\. 150/);
+    assert.match(note.printed.es, /THOMAS DE LA RUE & COMPANY LIMITED/);
+    assert.match(note.printed.en, /THOMAS DE LA RUE & COMPANY LIMITED/);
+    assert.match(note.printed.es, /Impresos por IBB/);
+    assert.match(note.printed.es, /00104171–00194009/);
+    assert.match(note.printed.es, /bajo dos pesos/);
+    assert.match(note.printed.es, /50 millones de piezas de 5 pesos/);
+    assert.match(note.printed.es, /denominación-año/);
+    assert.match(note.printed.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.description.es, /00120856/);
+    assert.match(note.description.en, /00120856/);
+    assert.match(note.description.es, /asterisco negro dentro de un círculo/);
+    assert.match(note.description.en, /asterisk inside a circle/);
+    assert.match(note.description.es, /Cód\. 149/);
+    assert.match(note.description.es, /Cód\. 151/);
+    assert.match(note.description.es, /Hernández 153/);
+    assert.match(note.description.es, /BOGOTA COLOMBIA/);
+    assert.match(note.description.es, /no se leyó un pie de nombre/);
+    assert.match(note.description.es, /Las rúbricas de esta pieza no se leyeron aparte/);
+    assert.match(note.description.en, /handwriting on this piece was not read separately/);
+    assert.match(note.description.es, /San Felipe de Barajas/);
+    assert.match(note.scarcity.es, /0,09 %/);
+    assert.match(note.scarcity.es, /no inventa una tirada/);
+    assert.doesNotMatch(note.description.es, /Decreto 188/);
+    assert.doesNotMatch(note.scarcity.es, /US\$|USD|\$2\.50|£2/);
+    assert.doesNotMatch(note.printed.es, /\$2\.50/);
+    assert.equal(additions.some((row) => row.id === 'co-1977-5-pesos-oro-00120856'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1977-5-pesos-oro-p406e-h150'), true);
+  });
+
+  it('lists the 1977 replacement on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(
+      chapter.body.es,
+      /reposición de 5 pesos oro de 1977 \(Pick 406e; Hernández 150\), serial 00120856/,
+    );
+    assert.match(
+      chapter.body.en,
+      /1977 5 pesos oro replacement \(Pick 406e; Hernández 150\), serial 00120856/,
+    );
+    assert.match(
+      seriesCopy.es.intro.join(' '),
+      /reposición de 5 pesos oro de 1977 \(Pick 406e; Hernández 150\), serial 00120856/,
+    );
+    assert.match(
+      seriesCopy.en.intro.join(' '),
+      /1977 5 pesos oro replacement \(Pick 406e; Hernández 150\), serial 00120856/,
+    );
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '5-pesos-oro-1977');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '00120856');
+    assert.equal(holding[0].denomination, 5);
+    assert.equal(holding[0].year, 1977);
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/5-pesos-oro-1977/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/5-pesos-oro-1977/',
+    );
+  });
+});
+
 describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
   it('is a distinct Pick 407g circulation note, not the 1976 replacement or the 1943 ABNC 10 pesos', () => {
     const note = noteById('10-pesos-oro-1979');
@@ -1142,8 +1234,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1976-2-pesos-oro-00194674');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1976-2-pesos-oro-p413b');
+    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1648,8 +1740,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.match(note.lead.es, /Pick 380b/);
     assert.match(note.lead.en, /Pick 380b/);
     assert.equal(note.images.front.includes('r35555693-front'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1976-2-pesos-oro-00194674');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1976-2-pesos-oro-p413b');
+    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
     const publicCopy = [
       note.lead.es,
       note.lead.en,
@@ -1710,7 +1802,7 @@ describe('Banco de la República denomination headings', () => {
 
     const expected = [
       ['banrep-2-pesos', 'Billetes de 2 pesos (1923 - 1983)', '2 peso notes (1923 - 1983)', 4],
-      ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 4],
+      ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 5],
       ['banrep-10-pesos', 'Billetes de 10 pesos (1923 - 1980)', '10 peso notes (1923 - 1980)', 3],
       ['banrep-20-pesos', 'Billetes de 20 pesos (1927 - 1983)', '20 peso notes (1927 - 1983)', 1],
       ['banrep-50-pesos', 'Billetes de 50 pesos (1923 - 1986)', '50 peso notes (1923 - 1986)', 2],
