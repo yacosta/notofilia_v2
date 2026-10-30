@@ -236,6 +236,17 @@ describe('sitemap coverage for Pennsylvania 2s6d 1773', () => {
   });
 });
 
+describe('sitemap coverage for Connecticut 20 shillings 1780', () => {
+  it('maps the colonial piece pair used in dedicated catalog paths', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/20-chelines-connecticut-1780/', 'en'),
+      '/en/collection/united-states/20-shillings-connecticut-1780/',
+    );
+    assert.match(sitemapSource, /dedicatedCatalogPaths/);
+    assert.match(sitemapSource, /unitedStatesNoteDedicatedSlugs/);
+  });
+});
+
 describe('sitemap coverage for United States numismatics', () => {
   it('maps the coinage series, Hard Times case, and piece pairs used in dedicated catalog paths', () => {
     assert.equal(

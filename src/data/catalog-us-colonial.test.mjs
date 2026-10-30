@@ -142,7 +142,7 @@ describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
   );
   const pa = data.slice(
     data.indexOf("id: '2-chelines-6-peniques-pensilvania-1773'"),
-    data.indexOf("id: '1-dolar-state-bank-new-brunswick'"),
+    data.indexOf("id: '20-chelines-connecticut-1780'"),
   );
 
   it('records PA-165 with serial 21251 and no invented cert', () => {
@@ -187,6 +187,71 @@ describe('US colonial Pennsylvania 2s6d of 1 October 1773', () => {
     assert.match(data, /the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251/);
     assert.match(data, /el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 \(Fr\. PA-165\), serial 21251/);
     assert.match(data, /the Pennsylvania 2 shillings and 6 pence of 1 October 1773 \(Fr\. PA-165\), serial 21251/);
+  });
+});
+
+describe('US colonial Connecticut 20 shillings of 1 June 1780', () => {
+  const ct = data.slice(
+    data.indexOf("id: '20-chelines-connecticut-1780'"),
+    data.indexOf("id: '20-chelines-rhode-island-1786'"),
+  );
+  const esPiece = readFileSync(
+    new URL('../pages/coleccion/estados-unidos/20-chelines-connecticut-1780/index.astro', import.meta.url),
+    'utf8',
+  );
+  const enPiece = readFileSync(
+    new URL('../pages/en/collection/united-states/20-shillings-connecticut-1780/index.astro', import.meta.url),
+    'utf8',
+  );
+
+  it('records CT-231 serial 8495 and PMG 1072657-023 without a price', () => {
+    assert.match(ct, /chapterId: 'us-colonial'/);
+    assert.match(ct, /pick: 'Fr\. CT-231'/);
+    assert.match(ct, /serial: '8495'/);
+    assert.match(ct, /serial_display: 'Nº 8495'/);
+    assert.match(ct, /cert_number: '1072657-023'/);
+    assert.match(ct, /cert_grader: 'PMG'/);
+    assert.match(ct, /J\. Hamlin/);
+    assert.match(ct, /Elisha Williams/);
+    assert.match(ct, /Timothy Green II, New London, 1780/);
+    assert.match(ct, /50\.000 libras/);
+    assert.match(ct, /£50,000/);
+    assert.match(ct, /no inventa una tirada para los 20 chelines/);
+    assert.match(ct, /does not invent a printage for the 20 shillings/);
+    assert.match(ct, /Slash Cancelled/);
+    assert.match(ct, /Hinged/);
+    assert.match(ct, /No imprime EPQ/);
+    assert.match(ct, /does not print EPQ/);
+    assert.match(ct, /No se publica un precio/);
+    assert.match(ct, /No price is published/);
+    assert.doesNotMatch(ct, /\$\d/);
+    assert.match(holdings, /us-ct-231-20s-1780-8495/);
+    assert.match(holdings, /id: 'us-ct-231-20s-1780-8495', kind: 'banknote', country: 'US'/);
+    assert.match(holdings, /us-ct-231-1780-20s/);
+    assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-front\.jpg/);
+    assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-back\.jpg/);
+    assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-composite\.jpg/);
+  });
+
+  it('keeps thin ES and EN piece routes on the United States note layout', () => {
+    assert.equal(
+      localizePath('/coleccion/estados-unidos/20-chelines-connecticut-1780/', 'en'),
+      '/en/collection/united-states/20-shillings-connecticut-1780/',
+    );
+    assert.match(esPiece, /UnitedStatesNotePage/);
+    assert.match(esPiece, /locale="es"/);
+    assert.match(esPiece, /noteById\('20-chelines-connecticut-1780'\)/);
+    assert.match(enPiece, /UnitedStatesNotePage/);
+    assert.match(enPiece, /locale="en"/);
+  });
+
+  it('names the holding in the colonial chapter and the series inventory', () => {
+    assert.match(data, /Ya tiene ficha el 20 chelines de Connecticut del 1 de junio de 1780, Friedberg CT-231, serial 8495/);
+    assert.match(data, /The Connecticut 20 shillings of 1 June 1780, Friedberg CT-231, serial 8495/);
+    assert.match(data, /el 20 chelines de Connecticut del 1 de junio de 1780 \(Fr\. CT-231\), serial 8495/);
+    assert.match(data, /the Connecticut 20 shillings of 1 June 1780 \(Fr\. CT-231\), serial 8495/);
+    assert.match(data, /Serie 8495/);
+    assert.match(data, /Serial 8495/);
   });
 });
 

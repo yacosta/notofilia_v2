@@ -85,8 +85,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'The first public paper authorized by a British legislature in America: Massachusetts bills of credit (1690) and Continental Currency.',
     },
     body: {
-      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Ya tiene ficha el 20 chelines de Rhode Island de mayo de 1786, Friedberg RI-298, serial 6229. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
-      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The Rhode Island 20 shillings of May 1786, Friedberg RI-298, serial 6229, also has a note page. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
+      es: 'El 10 de diciembre de 1690, la General Court de la bahía de Massachusetts autorizó 7.000 libras en «bills of credit» para pagar una expedición contra el Canadá. El Newman Numismatic Portal y el U.S. Currency Education Program coinciden en que fue el primer papel moneda público autorizado por una legislatura en las colonias británicas de América; la monnaie de carte de 1685, en la Nueva Francia, es el antecedente en el hemisferio. Las demás colonias copiaron el expediente. En 1775 el Congreso Continental emitió Continentals para financiar la independencia; la inflación y la falsificación británica los dejaron «not worth a Continental». Ya tiene ficha el 5 dólares del 14 de enero de 1779, Friedberg CC-91, con el emblema SUSTINE VEL ABSTINE; el serial manuscrito no se lee en esta fotografía. Ya tiene ficha también el 5 chelines de la provincia de Pensilvania del 1 de octubre de 1773, Friedberg PA-166, serial 9733, y el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773, Friedberg PA-165, serial 21251. Ya tiene ficha el 20 chelines de Rhode Island de mayo de 1786, Friedberg RI-298, serial 6229. Ya tiene ficha el 20 chelines de Connecticut del 1 de junio de 1780, Friedberg CT-231, serial 8495, PMG 53, certificado 1072657-023. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha.',
+      en: 'On 10 December 1690 the Massachusetts Bay General Court authorized £7,000 in bills of credit to pay for an expedition against Canada. The Newman Numismatic Portal and the U.S. Currency Education Program agree that it was the first public paper money authorized by a legislature in the British American colonies; the 1685 monnaie de carte of New France is the hemispheric antecedent. The other colonies copied the expedient. In 1775 the Continental Congress issued Continentals to finance independence; inflation and British counterfeiting left them “not worth a Continental.” The $5 of 14 January 1779, Friedberg CC-91, with the SUSTINE VEL ABSTINE emblem, already has a note page; the manuscript serial is not readable on this photograph. The Province of Pennsylvania 5 shillings of 1 October 1773, Friedberg PA-166, serial 9733, and the Pennsylvania 2 shillings and 6 pence of 1 October 1773, Friedberg PA-165, serial 21251, also have note pages. The Rhode Island 20 shillings of May 1786, Friedberg RI-298, serial 6229, also has a note page. The Connecticut 20 shillings of 1 June 1780, Friedberg CT-231, serial 8495, PMG 53, certificate 1072657-023, also has a note page. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened.',
     },
   },
   {
@@ -402,7 +402,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), serial L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -429,7 +429,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serial L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -892,7 +892,7 @@ export const colonialSeriesCopy = {
   es: {
     metaTitle: '1690–1788 · Moneda colonial | Notofilia',
     metaDescription:
-      'Papel colonial de Estados Unidos: Massachusetts 1690, Pensilvania 1773, Rhode Island 1786 y Continental Currency de 1779. Cuatro fichas; Nueva Jersey 1776 espera serial.',
+      'Papel colonial: Massachusetts 1690, Pensilvania 1773, Connecticut 1780, Rhode Island 1786 y Continental 1779. Cinco fichas; Nueva Jersey espera serial.',
     kicker: '1690–1788',
     title: 'Moneda colonial',
     breadcrumbCurrent: 'Moneda colonial',
@@ -917,7 +917,7 @@ export const colonialSeriesCopy = {
     ],
     howToReadTitle: 'Cómo leer un billete colonial',
     howToReadIntro:
-      'Cinco señas que se repiten en las cuatro fichas y en casi todo el papel del periodo:',
+      'Cinco señas del papel del periodo. No todas están en cada ficha:',
     howToRead: [
       {
         label: 'Indentado.',
@@ -925,7 +925,7 @@ export const colonialSeriesCopy = {
       },
       {
         label: 'Firmas manuscritas.',
-        text: 'Dos o tres comisionados firmaban cada billete con tinta; en la serie de 1779 la numeración y algunas firmas van en rojo.',
+        text: 'Dos o tres comisionados firmaban cada billete; en el Continental de 1779 y en el 20 chelines de Connecticut de 1780 la numeración y las firmas van en rojo.',
       },
       {
         label: 'Serial manuscrito.',
@@ -952,24 +952,25 @@ export const colonialSeriesCopy = {
       '5 dólares · Continental Currency · 14 de enero de 1779 · Friedberg CC-91 · Serie — · Emblema SUSTINE VEL ABSTINE · Reverso: hoja de matricaria (feverfew)',
       '5 chelines · Pensilvania · 1 de octubre de 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serie 9733',
       '2 chelines y 6 peniques · Pensilvania · 1 de octubre de 1773 · Friedberg PA-165 · Serie 21251',
+      '20 chelines · Connecticut · 1 de junio de 1780 · Friedberg CT-231 · Serie 8495 · PMG 53',
       '20 chelines · Rhode Island · mayo de 1786 · Friedberg RI-298 · Serie 6229',
     ],
     holdingsNote:
-      'Cuatro fichas, 1773–1786. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 24 de octubre de 2026.',
+      'Cinco fichas, 1773–1786. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado antes de abrir ficha. Última actualización: 30 de octubre de 2026.',
     emptyHoldings:
       'Aún no hay fichas coloniales. Los seis chelines de Nueva Jersey de 1776 esperan un serial legible o un certificado.',
     referencesTitle: 'Referencias y conservación',
     references: [
-      'Fr. remite a Paper Money of the United States (Friedberg), que numera las emisiones coloniales por colonia (PA, NJ) y los Continentals como CC. En la ficha de los 5 chelines, P# es el número del Standard Catalog of World Paper Money (Pick), volumen specialized: S-2540. N# es el número de tipo de Numista: N#406969. Esas dos abreviaturas se escriben aquí una sola vez.',
-      'Esta vitrina usa los números de Friedberg en las cuatro fichas. Newman, The Early Paper Money of America, se cita como fuente en la ficha de los 5 chelines; no se adoptan aquí números de catálogo Newman.',
-      'Las cuatro piezas se describen como circuladas y sin encapsular; la conservación se anota de forma descriptiva, no numérica.',
+      'Fr. remite a Paper Money of the United States (Friedberg), que numera las emisiones coloniales por colonia (CT, PA, RI) y los Continentals como CC. En la ficha de los 5 chelines, P# es el número del Standard Catalog of World Paper Money (Pick), volumen specialized: S-2540. N# es el número de tipo de Numista: N#406969. Esas dos abreviaturas se escriben aquí una sola vez.',
+      'Esta vitrina usa los números de Friedberg en las cinco fichas. Newman, The Early Paper Money of America, se cita como fuente en las fichas de los 5 chelines y del 20 chelines de Connecticut; no se adoptan aquí números de catálogo Newman.',
+      'Las fichas de 1773, 1779 y 1786 se describen sin encapsular. El 20 chelines de Connecticut del 1 de junio de 1780 está en cápsula PMG 53. La conservación se anota a partir de cada pieza; no se publica un precio.',
     ],
     relatedTitle: 'En la colección',
   },
   en: {
     metaTitle: '1690–1788 · Colonial paper | Notofilia',
     metaDescription:
-      'United States colonial paper: Massachusetts 1690, Pennsylvania 1773, Rhode Island 1786, and 1779 Continental Currency. Four notes; New Jersey 1776 waits for a serial.',
+      'Colonial notes: Massachusetts 1690, Pennsylvania 1773, Connecticut 1780, Rhode Island 1786, and 1779 Continentals. Five pages; New Jersey awaits a serial.',
     kicker: '1690–1788',
     title: 'Colonial paper',
     breadcrumbCurrent: 'Colonial paper',
@@ -993,7 +994,7 @@ export const colonialSeriesCopy = {
       'None of that stopped the fall. In January 1777 it took 1.25 Continental dollars for one in specie; in January 1781, one hundred. The paper ceased to circulate in May of that year and left the phrase: “not worth a Continental.” The Constitution, ratified in 1788, closed the door on the states — Article I, Section 10: no state shall emit bills of credit — and Congress retired the remainder in 1790, exchanging it for bonds at one hundred to one. The discredit was such that there was no federal paper money until the greenbacks of 1861–1862.',
     ],
     howToReadTitle: 'How to read a colonial note',
-    howToReadIntro: 'Five marks that recur on the four records and on almost all paper of the period:',
+    howToReadIntro: 'Five marks of the period’s paper. Not every one is on every record:',
     howToRead: [
       {
         label: 'Indented.',
@@ -1001,7 +1002,7 @@ export const colonialSeriesCopy = {
       },
       {
         label: 'Manuscript signatures.',
-        text: 'Two or three commissioners signed each note in ink; on the 1779 series the numbering and some signatures are in red.',
+        text: 'Two or three commissioners signed each note; on the 1779 Continental and on the Connecticut 20 shillings of 1780 the numbering and the signatures are in red.',
       },
       {
         label: 'Manuscript serial.',
@@ -1028,17 +1029,18 @@ export const colonialSeriesCopy = {
       '$5 · Continental Currency · 14 January 1779 · Friedberg CC-91 · Serial — · Emblem SUSTINE VEL ABSTINE · Reverse: feverfew leaf',
       '5 shillings · Pennsylvania · 1 October 1773 · Friedberg PA-166 · P# S-2540 · N#406969 · Serial 9733',
       '2 shillings and 6 pence · Pennsylvania · 1 October 1773 · Friedberg PA-165 · Serial 21251',
+      '20 shillings · Connecticut · 1 June 1780 · Friedberg CT-231 · Serial 8495 · PMG 53',
       '20 shillings · Rhode Island · May 1786 · Friedberg RI-298 · Serial 6229',
     ],
     holdingsNote:
-      'Four note pages, 1773–1786. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 24 October 2026.',
+      'Five note pages, 1773–1786. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate before a note page is opened. Last updated: 30 October 2026.',
     emptyHoldings:
       'There are no colonial note pages yet. The New Jersey six-shillings of 1776 wait for a readable serial or a certificate.',
     referencesTitle: 'References and condition',
     references: [
-      'Fr. refers to Paper Money of the United States (Friedberg), which numbers colonial issues by colony (PA, NJ) and Continentals as CC. On the 5-shilling record, P# is the Standard Catalog of World Paper Money (Pick) specialized number: S-2540. N# is the Numista type number: N#406969. Those two abbreviations are written out once, here.',
-      'This case uses Friedberg numbers on the four records. Newman, The Early Paper Money of America, is cited as a source on the 5-shilling page; Newman catalog numbers are not adopted here.',
-      'The four pieces are described as circulated and unencapsulated; condition is noted descriptively, not numerically.',
+      'Fr. refers to Paper Money of the United States (Friedberg), which numbers colonial issues by colony (CT, PA, RI) and Continentals as CC. On the 5-shilling record, P# is the Standard Catalog of World Paper Money (Pick) specialized number: S-2540. N# is the Numista type number: N#406969. Those two abbreviations are written out once, here.',
+      'This case uses Friedberg numbers on the five records. Newman, The Early Paper Money of America, is cited on the 5-shilling page and on the Connecticut 20-shilling page; Newman catalog numbers are not adopted here.',
+      'The 1773, 1779, and 1786 notes are described unencapsulated. The Connecticut 20 shillings of 1 June 1780 is in a PMG 53 holder. Condition is taken from each piece; no price is published.',
     ],
     relatedTitle: 'In the collection',
   },
@@ -1412,6 +1414,7 @@ export type UnitedStatesNoteId =
   | '5-dolares-continental-1779'
   | '5-chelines-pensilvania-1773'
   | '2-chelines-6-peniques-pensilvania-1773'
+  | '20-chelines-connecticut-1780'
   | '20-chelines-rhode-island-1786'
   | '1-dolar-state-bank-new-brunswick'
   | '1-dolar-serie-2003-atlanta'
@@ -1884,6 +1887,153 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Conversación de investigación de este ejemplar. No sustituye a Newman ni a Friedberg; no se toman de aquí precios ni un censo. El 28.318 del portal se trata como referencia de lámina, no como tirada.',
           en: 'Research conversation for this piece. It does not replace Newman or Friedberg; prices and census figures are not taken from it. The portal’s 28,318 is treated as a plate reference, not a printage.',
+        },
+      },
+    ],
+  },
+  {
+    id: '20-chelines-connecticut-1780',
+    chapterId: 'us-colonial',
+    path: '/coleccion/estados-unidos/20-chelines-connecticut-1780/',
+    pathEn: '/collection/united-states/20-shillings-connecticut-1780/',
+    pick: 'Fr. CT-231',
+    serial: '8495',
+    serial_display: 'Nº 8495',
+    cert_number: '1072657-023',
+    cert_grader: 'PMG',
+    signatures: {
+      es: 'J. Hamlin y Williams, manuscritas en tinta roja. Newman incluye a Jabez Hamlin y a Elisha Williams en el elenco de la emisión; el nombre de pila Elisha no está escrito en este ejemplar. Comittr. va impreso en vertical junto a la llave.',
+      en: 'J. Hamlin and Williams, manuscript in red ink. Newman includes Jabez Hamlin and Elisha Williams on the emission’s signer list; the given name Elisha is not written out on this example. Comittr. is printed vertically beside the brace.',
+    },
+    printed: {
+      es: 'Timothy Green II, New London, 1780. Newman cifra en 50.000 libras —166.667 dólares españoles— la autorización de toda la emisión del 1 de junio de 1780, al 5 % y pagadera el 1 de marzo de 1784. Esta ficha no inventa una tirada para los 20 chelines ni para el serial 8495.',
+      en: 'Timothy Green II, New London, 1780. Newman puts the authorization for the whole 1 June 1780 emission at £50,000 — 166,667 Spanish milled dollars — at 5 percent, payable 1 March 1784. This record does not invent a printage for the 20 shillings or for serial 8495.',
+    },
+    images: {
+      composite: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-composite.jpg',
+      front: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-front.jpg',
+      back: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-back.jpg',
+      width: 1388,
+      height: 1133,
+    },
+    title: {
+      es: '20 chelines · Connecticut · 1 de junio de 1780',
+      en: '20 shillings · Connecticut · 1 June 1780',
+    },
+    kicker: {
+      es: 'Estados Unidos · Moneda colonial · Estado de Connecticut',
+      en: 'United States · Colonial paper · State of Connecticut',
+    },
+    lead: {
+      es: 'Veinte chelines —una libra— de Connecticut, 1 de junio de 1780, New London. Serial manuscrito 8495. PMG 53, certificado 1072657-023.',
+      en: 'Twenty shillings — one pound — of Connecticut, 1 June 1780, New London. Manuscript serial 8495. PMG 53, certificate 1072657-023.',
+    },
+    facts: [
+      {
+        label: { es: 'Comentarios PMG', en: 'PMG comments' },
+        value: { es: 'Slash Cancelled; Hinged', en: 'Slash Cancelled; Hinged' },
+      },
+    ],
+    description: {
+      es: 'Los 20 chelines del 1 de junio de 1780 (Friedberg CT-231) son un Treasury Note del Estado de Connecticut, equivalente a una libra, pagadero en dólares españoles de cordoncillo. El anverso, en negro y con orla de roleos, titula TWENTY SHILLINGS. El texto promete que el tenedor será pagado por el tesorero del Estado de Connecticut, TWENTY SHILLINGS, in Spanish milled Dollars, a razón de seis chelines por dólar, o en otra moneda de plata u oro equivalente, con interés del cinco por ciento anual, antes del primer día de marzo de 1784. El long s de first (firſt), en «the first Day of June» y en «the first Day of March», se lee a menudo fifth: las fechas impresas son el 1 de junio de 1780 y el 1 de marzo de 1784, no el día 5. Va «By order of Assembly» y fechado en Hartford. A la izquierda, un sello circular pequeño muestra tres vides, el emblema de las armas de Connecticut; el lema no se transcribe desde esta fotografía. El recuadro Nº lleva el serial manuscrito 8495, en tinta roja. Las dos firmas, también en rojo, se leen J. Hamlin y Williams. Junto a la llave, Comittr. va impreso en vertical. Newman da para el 1 de junio los firmantes del 1 de marzo —John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams y George Wyllys— más William Pitkin. El par de este ejemplar coincide con Jabez Hamlin y Elisha Williams; el nombre de pila Elisha no está escrito. El reverso, en negro, centra TWENTY SHILL., JUNE 1st., NEW-LONDON y Printed by TIM. GREEN, dentro de un marco de roleos con figuras aladas en las esquinas. Arriba y abajo se repiten la denominación y la fecha, con June 1st. 1780. No es el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298, serial 6229), ni el 20 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-169), ni el 20 chelines de Connecticut del 1 de marzo de 1780. La pieza está encapsulada. La etiqueta de PMG imprime About Uncirculated 53, certificado 1072657-023, y los comentarios Slash Cancelled y Hinged. No imprime EPQ. En la fotografía no se localiza con certeza el corte ni un agujero: la cancelación y la charnela se registran por la etiqueta.',
+      en: 'The 20 shillings of 1 June 1780 (Friedberg CT-231) is a State of Connecticut treasury note, equal to one pound, payable in Spanish milled dollars. The face, black and framed by scrollwork, titles TWENTY SHILLINGS. The text promises that the possessor shall be paid by the Treasurer of the State of Connecticut TWENTY SHILLINGS in Spanish milled dollars, at six shillings each, or in other silver or gold coin equivalent, with interest at five percent per annum, by the first day of March 1784. The long s in first (firſt), in “the first Day of June” and “the first Day of March,” is often read as fifth: the printed dates are 1 June 1780 and 1 March 1784, not the 5th. It stands “By order of Assembly” and is dated at Hartford. At left a small circular seal shows three grapevines, the device of the Connecticut arms; the motto is not transcribed from this photograph. The Nº field carries manuscript serial 8495, in red ink. The two signatures, also in red, read J. Hamlin and Williams. Beside the brace, Comittr. is printed vertically. Newman gives the 1 June signers as those of 1 March — John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams, and George Wyllys — plus William Pitkin. The pair on this example matches Jabez Hamlin and Elisha Williams; the given name Elisha is not written out. The back, in black, centers TWENTY SHILL., JUNE 1st., NEW-LONDON, and Printed by TIM. GREEN, inside a scrollwork frame with winged figures in the corners. Denomination and date repeat above and below, with June 1st. 1780. It is not the Rhode Island 20 shillings of May 1786 (Fr. RI-298, serial 6229), nor the Pennsylvania 20 shillings of 1 October 1773 (Fr. PA-169), nor the Connecticut 20 shillings of 1 March 1780. The note is slabbed. The PMG label prints About Uncirculated 53, certificate 1072657-023, and the comments Slash Cancelled and Hinged. It does not print EPQ. A cut or a hole is not confidently located on the photograph: the cancellation and the hinge are recorded from the label.',
+    },
+    history: [
+      {
+        es: 'Newman describe 50.000 libras en Treasury Notes fechados el 1 de junio de 1780, pagaderos en dólares españoles de cordoncillo el 1 de marzo de 1784, con interés del 5 %, conforme al acta de mayo de 1780. La emisión sustituía, y podía canjearse por, el papel garantizado que el Congreso autorizó el 18 de marzo de 1780 y que llegó demasiado tarde para usarse. Timothy Green II las imprimió en New London. Eran semejantes a las del 1 de marzo de 1780, con los mismos firmantes más William Pitkin, y al redimirse solían cancelarse con un corte o un agujero. La cifra de 50.000 libras es la autorización de toda la emisión, no el número de piezas ni la tirada de los 20 chelines.',
+        en: 'Newman describes £50,000 in treasury notes dated 1 June 1780, payable in Spanish milled dollars on 1 March 1784, with 5 percent interest, under the act of May 1780. The emission stood in lieu of, and was exchangeable for, the guaranteed paper Congress authorized on 18 March 1780, which arrived too late to be used. Timothy Green II printed them in New London. They were similar to the 1 March 1780 notes, with the same signers plus William Pitkin, and were customarily slash- or hole-cancelled on redemption. The £50,000 figure is the authorization for the whole emission, not the number of pieces and not the printage of the 20 shillings.',
+      },
+      {
+        es: 'En la lista del portal, las denominaciones son 9 d, 1 s 3 d, 2 s 6 d, 5 s, 10 s, 20 s y 40 s; el 20 s y el 40 s llevan la marca CF. Greysheet cataloga, aparte, un falsificado contemporáneo de este tipo. Esta ficha no identifica el serial 8495 con ese falsificado: el encapsulado lo nombra Fr. CT-231. El registro en línea del certificado 1072657-023 no se ha consultado. No se afirma un estado de plancha ni un censo.',
+        en: 'On the portal’s list the denominations are 9d, 1s3d, 2s6d, 5s, 10s, 20s, and 40s; the 20s and the 40s carry the CF mark. Greysheet catalogues, separately, a contemporary counterfeit of this type. This record does not identify serial 8495 with that counterfeit: the holder names it Fr. CT-231. The online record for certificate 1072657-023 has not been opened. No plate state and no census are asserted.',
+      },
+    ],
+    historyHeading: {
+      es: 'La emisión del 1 de junio de 1780',
+      en: 'The 1 June 1780 emission',
+    },
+    frontCaption: {
+      es: 'Anverso encapsulado de los 20 chelines de Connecticut, Fr. CT-231, 1 de junio de 1780: tres vides, serial manuscrito 8495 y etiqueta PMG 53.',
+      en: 'Slabbed face of the Connecticut 20 shillings, Fr. CT-231, 1 June 1780: three grapevines, manuscript serial 8495, and the PMG 53 label.',
+    },
+    backCaption: {
+      es: 'Reverso encapsulado, certificado PMG 1072657-023: NEW-LONDON, Printed by TIM. GREEN, y comentarios Slash Cancelled y Hinged.',
+      en: 'Slabbed back, PMG certificate 1072657-023: NEW-LONDON, Printed by TIM. GREEN, and the comments Slash Cancelled and Hinged.',
+    },
+    scarcity: {
+      es: 'Friedberg numera los 20 chelines del 1 de junio de 1780 como CT-231. Las 50.000 libras de Newman son la autorización de toda la emisión, no una tirada de esta denominación ni un rango de seriales. Esta ficha no inventa un censo ni una rareza de subasta para el tipo ni para el serial 8495. No se publica un precio.',
+      en: 'Friedberg numbers the 20 shillings of 1 June 1780 as CT-231. Newman’s £50,000 is the authorization for the whole emission, not a printage of this denomination and not a serial range. This record does not invent a census or an auction rarity for the type or for serial 8495. No price is published.',
+    },
+    population: {
+      es: 'Se documentan el certificado 1072657-023 y el grado impreso en el encapsulado, About Uncirculated 53, con los comentarios Slash Cancelled y Hinged. No se ha verificado de forma independiente un censo PMG para Fr. CT-231 en 53: el informe en línea no se ha abierto. Un censo de certificación no dice cuántos ejemplares sobreviven.',
+      en: 'Certificate 1072657-023 and the grade printed on the holder, About Uncirculated 53, with the comments Slash Cancelled and Hinged, are recorded. A PMG census for Fr. CT-231 in 53 has not been independently verified: the online report has not been opened. A certification census does not say how many examples survive.',
+    },
+    grade: {
+      es: 'PMG 53 · certificado 1072657-023',
+      en: 'PMG 53 · certificate 1072657-023',
+    },
+    sources: [
+      {
+        href: 'https://nnp.washu.edu/images-list/list/image-collection/26607',
+        es: 'Newman Numismatic Portal — Early Paper Money of America / Connecticut / 1780 June 1',
+        en: 'Newman Numismatic Portal — Early Paper Money of America / Connecticut / 1780 June 1',
+        note: {
+          es: '50.000 libras; acta de mayo de 1780; pago el 1 de marzo de 1784 al 5 % en dólares españoles; en lugar del papel garantizado del 18 de marzo de 1780; Timothy Green II; firmantes del 1 de marzo más William Pitkin; cancelación habitual por corte o agujero; denominaciones, con marca CF en el 20 s y el 40 s.',
+          en: '£50,000; act of May 1780; payable 1 March 1784 at 5 percent in Spanish milled dollars; in lieu of the guaranteed paper of 18 March 1780; Timothy Green II; the 1 March signers plus William Pitkin; customarily slash- or hole-cancelled; denominations, with a CF mark on the 20s and the 40s.',
+        },
+      },
+      {
+        href: 'https://nnp.washu.edu/images-list/list/image-collection/26602',
+        es: 'Newman Numismatic Portal — Connecticut / 1780 March 1',
+        en: 'Newman Numismatic Portal — Connecticut / 1780 March 1',
+        note: {
+          es: 'Elenco de firmantes del 1 de marzo, que la ficha de junio reutiliza: John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams y George Wyllys. No es la emisión de este ejemplar.',
+          en: 'Signer list for 1 March, which the June record reuses: John Chester, Jabez Hamlin, Benjamin Payne, Elisha Williams, and George Wyllys. Not this example’s emission.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_988286',
+        es: 'Smithsonian — 10 Shillings, Connecticut, 1780 (nmah_988286)',
+        en: 'Smithsonian — 10 Shillings, Connecticut, 1780 (nmah_988286)',
+        note: {
+          es: 'Misma fecha en el objeto, 1780-06-01, imprenta Timothy Green II, New London. Es un 10 chelines, no el 20 chelines ni el serial 8495.',
+          en: 'Same date on the object, 1780-06-01, printer Timothy Green II, New London. A 10 shillings, not the 20 shillings and not serial 8495.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_988281',
+        es: 'Smithsonian — 20 Shillings, Connecticut, 1780 (nmah_988281)',
+        en: 'Smithsonian — 20 Shillings, Connecticut, 1780 (nmah_988281)',
+        note: {
+          es: 'Veinte chelines de la misma colonia e imprenta, con fecha en el objeto 1780-03-01. No es el 1 de junio ni el serial 8495.',
+          en: 'Twenty shillings of the same colony and printer, date on object 1780-03-01. Not 1 June and not serial 8495.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/item/connecticut-colonial-currency-june-1-1780-twenty-shillings-friedberg-ct231/gsid/65738',
+        es: 'Greysheet — Jun 1, 1780 20s Connecticut (Fr. CT-231)',
+        en: 'Greysheet — Jun 1, 1780 20s Connecticut (Fr. CT-231)',
+        note: {
+          es: 'Confirma Friedberg CT-231 para los 20 chelines del 1 de junio de 1780 y cataloga, aparte, un falsificado contemporáneo del tipo. No se republica ninguna columna de precio.',
+          en: 'Confirms Friedberg CT-231 for the 20 shillings of 1 June 1780 and catalogues, separately, a contemporary counterfeit of the type. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'https://www.masshist.org/collection-guides/view/fao0006',
+        es: 'Massachusetts Historical Society — Paper Currency of the Revolution, 1775–1781',
+        en: 'Massachusetts Historical Society — Paper Currency of the Revolution, 1775–1781',
+        note: {
+          es: 'La emisión del 1 de junio de 1780, impresa por Timothy Green en New London; los billetes que lista bajo ese encabezado vencen el 1 de marzo de 1784. Ninguno es el serial 8495. El encabezado siguiente fecha algunos billetes el 1 de junio de 1780 y los da por vencidos el 1 de marzo de 1785: esa fecha no es la impresa en este ejemplar y no se usa aquí.',
+          en: 'The 1 June 1780 issue, printed by Timothy Green of New London; the notes it lists under that heading are payable 1 March 1784. None is serial 8495. The next heading dates some bills 1 June 1780 and due 1 March 1785: that date is not the one printed on this example and is not used here.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/verify',
+        es: 'PMG — Verificación de certificado 1072657-023',
+        en: 'PMG — Certificate verification 1072657-023',
+        note: {
+          es: 'El encapsulado imprime Fr. CT-231, 1 de junio de 1780, 20 chelines, serial 8495, About Uncirculated 53, Slash Cancelled y Hinged. El registro en línea no se ha abierto.',
+          en: 'The holder prints Fr. CT-231, 1 June 1780, 20 shillings, serial 8495, About Uncirculated 53, Slash Cancelled, and Hinged. The online record has not been opened.',
         },
       },
     ],

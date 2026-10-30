@@ -208,6 +208,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/'],
   },
   {
+    es: '/coleccion/estados-unidos/20-chelines-connecticut-1780/',
+    en: '/collection/united-states/20-shillings-connecticut-1780/',
+    aliases: ['/coleccion/united-states/20-shillings-connecticut-1780/'],
+  },
+  {
     es: '/coleccion/estados-unidos/20-chelines-rhode-island-1786/',
     en: '/collection/united-states/20-shillings-rhode-island-1786/',
     aliases: ['/coleccion/united-states/20-shillings-rhode-island-1786/'],
@@ -713,6 +718,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/5-dolares-continental-1779/',
     '/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
     '/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
+    '/en/coleccion/estados-unidos/20-chelines-connecticut-1780/',
     '/en/coleccion/estados-unidos/5-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/10-dolares-confederados-1864/',
     '/en/coleccion/united-states/1-dollar-series-2003-atlanta/',
@@ -735,6 +741,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/5-dollars-continental-1779/',
     '/en/coleccion/united-states/5-shillings-pennsylvania-1773/',
     '/en/coleccion/united-states/2-shillings-6-pence-pennsylvania-1773/',
+    '/en/coleccion/united-states/20-shillings-connecticut-1780/',
     '/en/coleccion/united-states/5-dollars-confederate-1864/',
     '/en/coleccion/united-states/10-dollars-confederate-1864/',
     '/en/coleccion/estados-unidos/mpc-vietnam/10-dolares-serie-641/',
