@@ -268,8 +268,8 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
-                    width={1440}
-                    height={960}
+                    width={piece.images.width ?? 1440}
+                    height={piece.images.height ?? 960}
                     eager={piece.id === pieces[0]?.id}
                   />
                   <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.frontCaption[locale]}</figcaption>
@@ -284,8 +284,8 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
-                    width={1440}
-                    height={960}
+                    width={piece.images.width ?? 1440}
+                    height={piece.images.height ?? 960}
                   />
                   <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{piece.backCaption[locale]}</figcaption>
                 </figure>
