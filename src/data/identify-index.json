@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T18:43:34.843Z",
+  "generatedAt": "2026-10-30T18:59:25.520Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1098,7 +1098,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "front",
-      "hash": "b22719882c1b33c8",
+      "hash": "0bb6aceaa2d09aae",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
@@ -1111,7 +1111,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "front",
-      "hash": "006d65154d2d4f00",
+      "hash": "5291eca825d9b315",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
@@ -1124,7 +1124,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "back",
-      "hash": "0029496332454800",
+      "hash": "149ada54aacd55ac",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
