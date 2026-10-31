@@ -883,6 +883,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/colombia/5000-pesos-oro-1993/',
     '/en/coleccion/colombia/10000-pesos-1994/',
     '/en/coleccion/colombia/2000-pesos-2008/',
+    '/en/coleccion/colombia/2000-pesos-2009/',
     '/en/coleccion/colombia/20000-pesos-2017/',
     '/en/coleccion/colombia/2000-pesos-2015/',
     '/en/coleccion/colombia/1000-pesos-error-2000/',

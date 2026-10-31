@@ -2126,6 +2126,16 @@
       "status": 301,
       "rule": "existing"
     },
+    "/en/coleccion/colombia/2000-pesos-2009/": {
+      "target": "/en/collection/colombia/2000-pesos-2009/",
+      "status": 301,
+      "rule": "existing"
+    },
+    "/en/coleccion/colombia/2000-pesos-2009": {
+      "target": "/en/collection/colombia/2000-pesos-2009/",
+      "status": 301,
+      "rule": "existing"
+    },
     "/en/coleccion/colombia/2000-pesos-2015/": {
       "target": "/en/collection/colombia/2000-pesos-2015/",
       "status": 301,

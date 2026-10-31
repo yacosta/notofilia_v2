@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T23:42:45.692Z",
+  "generatedAt": "2026-10-31T04:50:25.168Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1098,7 +1098,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "front",
-      "hash": "b22719882c1b33c8",
+      "hash": "aaa8a59d5496aa42",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
@@ -1111,7 +1111,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "front",
-      "hash": "006d65154d2d4f00",
+      "hash": "040be2d58df46195",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
@@ -1124,7 +1124,7 @@
     {
       "pieceId": "1-peso-oro-1940",
       "face": "back",
-      "hash": "0029496332454800",
+      "hash": "066adee8f4cccc93",
       "kind": "banknote",
       "path": "/coleccion/colombia/1-peso-oro-1940/",
       "pick": "P# 380b · TBB B922b",
@@ -1644,7 +1644,7 @@
     {
       "pieceId": "5-pesos-oro-1977",
       "face": "front",
-      "hash": "2a99c6452dd562aa",
+      "hash": "485345454c6a7225",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1977/",
       "pick": "P# 406e · Hernández 150",
@@ -1657,7 +1657,7 @@
     {
       "pieceId": "5-pesos-oro-1977",
       "face": "front",
-      "hash": "cbf849d6a6586c4d",
+      "hash": "201c1549512a35a9",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1977/",
       "pick": "P# 406e · Hernández 150",
@@ -1670,7 +1670,7 @@
     {
       "pieceId": "5-pesos-oro-1977",
       "face": "back",
-      "hash": "8aea64555324cc86",
+      "hash": "126d2b54285c4c08",
       "kind": "banknote",
       "path": "/coleccion/colombia/5-pesos-oro-1977/",
       "pick": "P# 406e · Hernández 150",
@@ -2419,6 +2419,45 @@
       "title": {
         "es": "2.000 pesos · 2008",
         "en": "2,000 pesos · 2008"
+      }
+    },
+    {
+      "pieceId": "2000-pesos-2009",
+      "face": "front",
+      "hash": "0a4aa82192264b11",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2000-pesos-2009/",
+      "pick": "P# 457k / TBB B988j",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2009-70200207-composite.jpg",
+      "title": {
+        "es": "2.000 pesos · 2009",
+        "en": "2,000 pesos · 2009"
+      }
+    },
+    {
+      "pieceId": "2000-pesos-2009",
+      "face": "front",
+      "hash": "487490560729d921",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2000-pesos-2009/",
+      "pick": "P# 457k / TBB B988j",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2009-70200207-front.jpg",
+      "title": {
+        "es": "2.000 pesos · 2009",
+        "en": "2,000 pesos · 2009"
+      }
+    },
+    {
+      "pieceId": "2000-pesos-2009",
+      "face": "back",
+      "hash": "4ab95cac35dd72a0",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/2000-pesos-2009/",
+      "pick": "P# 457k / TBB B988j",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2009-70200207-back.jpg",
+      "title": {
+        "es": "2.000 pesos · 2009",
+        "en": "2,000 pesos · 2009"
       }
     },
     {

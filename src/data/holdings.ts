@@ -249,6 +249,7 @@ export const additions: Holding[] = [
   { id: 'co-1976-2-pesos-oro-00194674', kind: 'banknote', country: 'CO' },
   { id: 'co-1977-5-pesos-oro-00120856', kind: 'banknote', country: 'CO' },
   { id: 'co-2010-1000-pesos-42222224', kind: 'banknote', country: 'CO' },
+  { id: 'co-2009-2000-pesos-70200207', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -424,6 +425,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-1976-2-pesos-oro-p413b' },
   { id: 'co-1977-5-pesos-oro-p406e-h150' },
   { id: 'co-2010-1000-pesos-p456m' },
+  { id: 'co-2009-2000-pesos-p457k' },
 ];
 
 export type CollectionStats = {

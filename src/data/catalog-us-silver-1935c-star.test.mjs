@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
+    assert.equal(additions.at(-1)?.id, 'co-2009-2000-pesos-70200207');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2009-2000-pesos-p457k');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {
