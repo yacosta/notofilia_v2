@@ -143,6 +143,16 @@ const serial10000001: GlossaryExample = {
   },
 };
 
+const serial70200207: GlossaryExample = {
+  path: '/coleccion/colombia/2000-pesos-2009/',
+  image: '/images/catalog/colombia/colombia-banco-de-la-republica-2000-pesos-2009-70200207-front.jpg',
+  title: { es: '2.000 pesos · serial 70200207 · 2009', en: '2,000 pesos · serial 70200207 · 2009' },
+  alt: {
+    es: 'Anverso del 2.000 pesos de 2009 con serial capicúa 70200207',
+    en: 'Face of the 2009 2,000-peso note with radar serial 70200207',
+  },
+};
+
 const victory20: GlossaryExample = {
   path: '/coleccion/filipinas/20-pesos/',
   image: '/images/catalog/philippines/philippines-treasury-20-pesos-series-66-f04661756-front.jpg',
@@ -630,12 +640,12 @@ export const glossaryArticles: GlossaryArticle[] = [
     {
       es: [
         'La numeración es el identificador impreso de cada billete: dígitos, a menudo con prefijo de letras, estampados una o dos veces. Es la identidad del objeto en Notofilia. Dos papeles con el mismo Pick y distinta numeración son dos piezas. No se despojan los ceros a la izquierda al comparar: 00113227 no es 113227. Si hay dos seriales (izquierda y derecha, o anverso y reverso) se registran ambos; un desajuste puede ser error de fábrica, como en el 50.000 pesos de 2008 (72461316 / 72411316).',
-        'Un serial de ceros en un espécimen (00000000) no es un bajo de emisión. Un 10000001 puede ser a la vez binario y capicúa, como el 2.000 pesos de 2008 de esta colección. Una estrella junto al número marca reposición, no un fancy. Los remainders del City Bank of New Haven y del Canal Bank no llevan serial relleno: el recuadro No. está en blanco, y esa ausencia se documenta como no_serial_reason, no se inventa un número.',
+        'Un serial de ceros en un espécimen (00000000) no es un bajo de emisión. Un 10000001 puede ser a la vez binario y capicúa, como el 2.000 pesos de 2008 de esta colección. El 70200207 del 2.000 pesos de 2009 es capicúa y no es binario. Una estrella junto al número marca reposición, no un fancy. Los remainders del City Bank of New Haven y del Canal Bank no llevan serial relleno: el recuadro No. está en blanco, y esa ausencia se documenta como no_serial_reason, no se inventa un número.',
         'La herramienta de numeración especial del sitio clasifica patrones —bajo, radar, binario, sólida, escalera, repetidor— sobre el serial ya publicado. No crea piezas. El término del glosario cubre la numeración ordinaria y apunta al artículo de numeración especial y a las fichas cuyo serial es la clave: R 85688116, F04661756, AA 1955984, J04445744. Cada uno es un objeto; ninguno está a la venta.',
       ],
       en: [
         'Serial numbering is each note’s printed identifier: digits, often with a letter prefix, stamped once or twice. It is the object’s identity in Notofilia. Two papers with the same Pick and different numbering are two pieces. Leading zeros are not stripped when comparing: 00113227 is not 113227. If there are two serials (left and right, or face and back) both are recorded; a mismatch may be a factory error, as on the 2008 50,000-peso note (72461316 / 72411316).',
-        'A zero serial on a specimen (00000000) is not a first-of-issue low. A 10000001 may be both binary and a palindrome, as on this collection’s 2008 2,000-peso note. A star beside the number marks a replacement, not a fancy. The City Bank of New Haven and Canal Bank remainders have no filled serial: the No. box is blank, and that absence is documented as no_serial_reason, not invented.',
+        'A zero serial on a specimen (00000000) is not a first-of-issue low. A 10000001 may be both binary and a palindrome, as on this collection’s 2008 2,000-peso note. 70200207 on the 2009 2,000-peso note is a radar and is not binary. A star beside the number marks a replacement, not a fancy. The City Bank of New Haven and Canal Bank remainders have no filled serial: the No. box is blank, and that absence is documented as no_serial_reason, not invented.',
         'The site’s fancy-serial tool classifies patterns — low, radar, binary, solid, ladder, repeater — on a serial already published. It does not create pieces. The glossary term covers ordinary numbering and points to the fancy-serial article and to records whose serial is the key: R 85688116, F04661756, AA 1955984, J04445744. Each is an object; none is for sale.',
       ],
     },
@@ -647,17 +657,17 @@ export const glossaryArticles: GlossaryArticle[] = [
     {
       es: [
         'La numeración especial —fancy serial— es un patrón buscado en los dígitos: bajo (1–100), radar o capicúa, binario (solo ceros y unos), sólida, escalera, repetidor o millón. Un mismo serial puede cumplir más de una clase: 10000001 es binario y capicúa. Eso no duplica la pieza. El patrón se lee sobre el ancho impreso, sin borrar ceros. Un 00000001 de primer pliego es un bajo de emisión; un 10000001 de ocho cifras es un fancy de colección, no el primero de la serie.',
-        'Esta colección publica el 2.000 pesos de 20 de agosto de 2008, Pick 457, serial 10000001, impreso dos veces en el reverso, en funda, sin encapsular. No es el 2.000 pesos oro de Bolívar ni el 2.000 grande de 1996–2005. La producción BanRep de 2.000 pesos en 2008 (280,4 millones) es el total de la denominación ese año, no la tirada de este serial. La herramienta /herramientas/numeracion-especial/ clasifica patrones sobre seriales que el usuario escribe; no inventa holdings.',
-        'Una estrella o un asterisco de reposición no es, por sí sola, un fancy. Un espécimen de ceros tampoco. El glosario mantiene términos aparte para radar, binario, sólida, escalera y repetidor, anclados en el índice cuando no tienen artículo propio. Aquí se explica el conjunto y se apunta al ejemplar 10000001, que es el que esta vitrina puede mostrar sin inventar otro número.',
+        'Esta colección publica el 2.000 pesos de 20 de agosto de 2008, Pick 457, serial 10000001, impreso dos veces en el reverso, en funda, sin encapsular, y el 2.000 pesos de 19 de agosto de 2009, Pick 457k, serial capicúa 70200207, también en el reverso, sin encapsular. 70200207 no es binario. Ninguno es el 2.000 pesos oro de Bolívar ni el 2.000 grande de 1996–2005. La producción BanRep de 2.000 pesos en 2008 (280,4 millones) y en 2009 (235,4 millones) es el total de la denominación en cada año, no la tirada de estos seriales. La herramienta /herramientas/numeracion-especial/ clasifica patrones sobre seriales que el usuario escribe; no inventa holdings.',
+        'Una estrella o un asterisco de reposición no es, por sí sola, un fancy. Un espécimen de ceros tampoco. El glosario mantiene términos aparte para radar, binario, sólida, escalera y repetidor, anclados en el índice cuando no tienen artículo propio. Aquí se explica el conjunto y se apunta a 10000001 y a 70200207, los dos capicúas que esta vitrina puede mostrar sin inventar otro número.',
       ],
       en: [
         'A fancy serial is a sought pattern in the digits: low (1–100), radar or palindrome, binary (only zeros and ones), solid, ladder, repeater, or million. One serial may meet more than one class: 10000001 is binary and a palindrome. That does not duplicate the piece. The pattern is read on the printed width, without stripping zeros. A first-sheet 00000001 is a first-of-issue low; an eight-digit 10000001 is a collector fancy, not the first of the series.',
-        'This collection publishes the 2,000-peso note of 20 August 2008, Pick 457, serial 10000001, printed twice on the back, in a sleeve, unslabbed. It is not the Bolívar 2,000 pesos oro or the large 1996–2005 2,000. BanRep’s 2008 production of 2,000-peso notes (280.4 million) is the denomination total for that year, not the printage of this serial. The /en/tools/fancy-serial-checker/ tool classifies patterns on serials the user types; it does not invent holdings.',
-        'A replacement star or asterisk is not, by itself, a fancy. A specimen of zeros is not either. The glossary keeps separate terms for radar, binary, solid, ladder, and repeater, anchored on the index when they have no article of their own. Here the set is explained and the example 10000001 is pointed to, which is the one this case can show without inventing another number.',
+        'This collection publishes the 2,000-peso note of 20 August 2008, Pick 457, serial 10000001, printed twice on the back, in a sleeve, unslabbed, and the 2,000-peso note of 19 August 2009, Pick 457k, radar serial 70200207, also on the back, unslabbed. 70200207 is not binary. Neither is the Bolívar 2,000 pesos oro or the large 1996–2005 2,000. BanRep’s production of 2,000-peso notes in 2008 (280.4 million) and in 2009 (235.4 million) is the denomination total for each year, not the printage of these serials. The /en/tools/fancy-serial-checker/ tool classifies patterns on serials the user types; it does not invent holdings.',
+        'A replacement star or asterisk is not, by itself, a fancy. A specimen of zeros is not either. The glossary keeps separate terms for radar, binary, solid, ladder, and repeater, anchored on the index when they have no article of their own. Here the set is explained and 10000001 and 70200207 are pointed to, the two radars this case can show without inventing another number.',
       ],
     },
     serial10000001,
-    [serial10000001],
+    [serial10000001, serial70200207],
   ),
   article(
     'numismatica',
@@ -953,8 +963,8 @@ const extras: Partial<Record<StandaloneGlossarySlug, { es: string; en: string }>
     en: 'Numbering also distinguishes replacements, specimens, and remainders: a star, zeros, a blank box. Treating those three as the same number erases the object’s identity. The linked records — 10000001, Emberá 00113227, New Haven with no serial — cover fancy, replacement, and documented absence. Search indexes the normalised serial; zeros are not stripped when comparing.',
   },
   'numeracion-especial': {
-    es: 'Radar, binario, sólida, escalera y repetidor siguen en el índice como anclas, porque su definición corta basta cuando el artículo largo cubre el conjunto. La herramienta de numeración especial no crea un holding al clasificar un número que el usuario escribe. Solo 10000001, ya publicado, ilustra aquí un patrón real de la vitrina colombiana.',
-    en: 'Radar, binary, solid, ladder, and repeater stay on the index as anchors, because their short definitions suffice when the long article covers the set. The fancy-serial tool does not create a holding by classifying a number the user types. Only 10000001, already published, illustrates here a real pattern from the Colombian case.',
+    es: 'Radar, binario, sólida, escalera y repetidor siguen en el índice como anclas, porque su definición corta basta cuando el artículo largo cubre el conjunto. La herramienta de numeración especial no crea un holding al clasificar un número que el usuario escribe. 10000001 y 70200207, ya publicados, ilustran aquí un binario capicúa y un capicúa que no es binario.',
+    en: 'Radar, binary, solid, ladder, and repeater stay on the index as anchors, because their short definitions suffice when the long article covers the set. The fancy-serial tool does not create a holding by classifying a number the user types. 10000001 and 70200207, already published, illustrate here a binary radar and a radar that is not binary.',
   },
   numismatica: {
     es: 'La numismática de Notofilia no mezcla un ducado de comercio con un peso oro impreso. Uno es disco de ceca; el otro, leyenda de billete. Las puertas de numismática y de notafilia existen para no cruzar esas vitrinas. Cuando haya un columnario de Santafé, tendrá ficha de moneda, no de papel. Hasta entonces el cobre de 1820 y el oro de 1761 bastan para mostrar ceca, metal y certificado sin inventar un 8 reales.',
