@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { additions, catalogAdditions } from './holdings.ts';
 import { seriesCopy, colombiaChapters } from './colombia.ts';
+import { localizePath } from '../lib/locale-paths.ts';
 import { errorNoteCards } from './colombia-errors.ts';
 import {
   noteById,
@@ -90,8 +91,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -456,8 +457,8 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1976-2-pesos-oro-00194674'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1976-2-pesos-oro-p413b'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
   });
 
   it('lists the 1976 2 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1234,8 +1235,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1740,8 +1741,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.match(note.lead.es, /Pick 380b/);
     assert.match(note.lead.en, /Pick 380b/);
     assert.equal(note.images.front.includes('r35555693-front'), true);
-    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
     const publicCopy = [
       note.lead.es,
       note.lead.en,
@@ -1808,7 +1809,7 @@ describe('Banco de la República denomination headings', () => {
       ['banrep-50-pesos', 'Billetes de 50 pesos (1923 - 1986)', '50 peso notes (1923 - 1986)', 2],
       ['banrep-100-pesos', 'Billetes de 100 pesos (1923 - 1991)', '100 peso notes (1923 - 1991)', 2],
       ['banrep-200-pesos', 'Billetes de 200 pesos (1974 - 1992)', '200 peso notes (1974 - 1992)', 1],
-      ['banrep-1000-pesos', 'Billetes de 1.000 pesos (finales de los años 1990 - 2012)', '1,000 peso notes (late 1990s - 2012)', 1],
+      ['banrep-1000-pesos', 'Billetes de 1.000 pesos (finales de los años 1990 - 2012)', '1,000 peso notes (late 1990s - 2012)', 2],
       ['banrep-2000-pesos', 'Billetes de 2.000 pesos (desde los años 1990)', '2,000 peso notes (from the 1990s)', 2],
       ['banrep-5000-pesos', 'Billetes de 5.000 pesos (desde 1995)', '5,000 peso notes (from 1995)', 2],
       ['banrep-10000-pesos', 'Billetes de 10.000 pesos (desde 1995)', '10,000 peso notes (from 1995)', 1],
@@ -1849,5 +1850,48 @@ describe('Banco de la República denomination headings', () => {
     assert.match(seriesPage, /ColombiaHoldingGrid/);
     assert.match(eraPage, /seriesCardGroupsForChapter\(chapter\.id\)/);
     assert.match(eraPage, /ColombiaHoldingGrid/);
+  });
+});
+
+describe('Colombia Gaitán 1,000 pesos, 23 November 2010 (Pick 456m)', () => {
+  it('records radar serial 42222224 once, with the Uribe–Tolosa date', () => {
+    const note = noteById('1000-pesos-2010');
+    assert.ok(note);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 456m / TBB B986m');
+    assert.equal(note.serial, '42222224');
+    assert.equal(note.images.width, 1448);
+    assert.equal(note.images.height, 1086);
+    assert.match(note.printed.es, /BG# 439-r\/13/);
+    assert.match(note.printed.es, /246,7 millones/);
+    assert.match(note.printed.es, /196,1 millones/);
+    assert.match(note.printed.en, /246\.7 million/);
+    assert.match(note.description.es, /capicúa/);
+    assert.match(note.description.en, /radar/i);
+    assert.match(note.description.es, /José Tolosa Buitrago/);
+    assert.match(note.lead.es, /23 de noviembre de 2010/);
+    assert.match(note.lead.en, /23 November 2010/);
+    assert.doesNotMatch(note.lead.es, /\$\s*\d/);
+    assert.doesNotMatch(note.scarcity.es, /US\s*\$/);
+    assert.equal(
+      localizePath('/coleccion/colombia/1000-pesos-2010/', 'en'),
+      '/en/collection/colombia/1000-pesos-2010/',
+    );
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
+    const thousand = seriesCardGroupsForChapter('banco-de-la-republica').find(
+      (group) => group.id === 'banrep-1000-pesos',
+    );
+    assert.ok(thousand);
+    assert.deepEqual(
+      thousand.cards.map((card) => card.note.id),
+      ['1000-pesos-oro-1979', '1000-pesos-2010'],
+    );
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /1\.000 pesos de Gaitán de 2010 \(Pick 456m \/ TBB B986m\), serial capicúa 42222224/);
+    assert.match(chapter.body.en, /2010 Gaitán 1,000 pesos \(Pick 456m \/ TBB B986m\) with radar serial 42222224/);
+    assert.match(seriesCopy.es.intro.join(' '), /serial capicúa 42222224/);
+    assert.match(seriesCopy.en.intro.join(' '), /radar serial 42222224/);
   });
 });

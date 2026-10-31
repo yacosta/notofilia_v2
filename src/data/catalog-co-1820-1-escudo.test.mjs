@@ -27,8 +27,8 @@ describe('Bogotá 1820 NR–JF 1 escudo', () => {
     assert.doesNotMatch(piece, /tirada de \d/);
     assert.doesNotMatch(piece, /\$\s*\d/);
     assert.doesNotMatch(piece, /US\s*\$/);
-    assert.equal(additions.at(-1)?.id, 'co-1977-5-pesos-oro-00120856');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1977-5-pesos-oro-p406e-h150');
+    assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
     for (const side of ['composite', 'front', 'back']) {
       readFileSync(
         new URL(

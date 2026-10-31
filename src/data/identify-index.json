@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T19:23:56.587Z",
+  "generatedAt": "2026-10-30T23:42:45.692Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3004,6 +3004,45 @@
       "title": {
         "es": "500 pesos oro · Banco de la República · 1977",
         "en": "500 pesos oro · Banco de la República · 1977"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2010",
+      "face": "front",
+      "hash": "118eda2111578721",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2010/",
+      "pick": "P# 456m / TBB B986m",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · 2010",
+        "en": "1,000 pesos · 2010"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2010",
+      "face": "front",
+      "hash": "08c09182938eb205",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2010/",
+      "pick": "P# 456m / TBB B986m",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-front.jpg",
+      "title": {
+        "es": "1.000 pesos · 2010",
+        "en": "1,000 pesos · 2010"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2010",
+      "face": "back",
+      "hash": "084b75a60f0d4e02",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2010/",
+      "pick": "P# 456m / TBB B986m",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-back.jpg",
+      "title": {
+        "es": "1.000 pesos · 2010",
+        "en": "1,000 pesos · 2010"
       }
     },
     {
