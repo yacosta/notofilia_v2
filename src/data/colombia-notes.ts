@@ -46,7 +46,8 @@ export type ColombiaNoteId =
   | '1000-pesos-error-2011'
   | '5000-pesos-error-2010'
   | '50000-pesos-error-2008'
-  | '50000-pesos-error-2015';
+  | '50000-pesos-error-2015'
+  | '1000-pesos-2010';
 
 export type ColombiaNote = {
   id: ColombiaNoteId;
@@ -5330,6 +5331,115 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 386 para el 20 de julio de 1977 (Pick 420a). Cód. 387 es el 1.º de abril de 1979 y Cód. 388 la misma fecha con película transparente. No se publican columnas de precios ni láminas.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 386 for 20 July 1977 (Pick 420a). Cód. 387 is 1 April 1979 and Cód. 388 is that date with a transparent film. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '1000-pesos-2010',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}1000-pesos-2010/`,
+    pick: 'P# 456m / TBB B986m',
+    serial: '42222224',
+    signatures: {
+      es: 'José Darío Uribe Escobar (gerente general) y José Tolosa Buitrago (gerente ejecutivo)',
+      en: 'José Darío Uribe Escobar (gerente general) and José Tolosa Buitrago (gerente ejecutivo)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Banco de la República, Bogotá. Fecha impresa en el anverso, bajo las firmas: 23 de noviembre de 2010. Formato publicado 130 × 65 mm; ocho dígitos, sin letra de serie; ambas numeraciones en el anverso. González White 2019 numera la fecha BG# 439-r/13 (p. 112) y no publica cifra de emisión. El Bank Note Museum lista 23.11.2010 como Pick 456m. Numista asigna TBB B986m y Hernández# 452, con firmas JDUE y JTB, y sitúa la puesta en circulación el 9 de septiembre de 2011. La producción BanRep de 1.000 pesos en 2010 es 246,7 millones de piezas, y la de 2011 es 196,1 millones; las entregas a Tesorería coinciden en ambos años. Son totales de la denominación en cada año, no la tirada de esta fecha ni de este serial. No se publica aquí una tirada.',
+      en: 'Imprenta de Billetes, Banco de la República, Bogotá. Date printed on the face, under the signatures: 23 November 2010. Published size 130 × 65 mm; eight digits, no series letter; both serials on the face. González White 2019 numbers the date BG# 439-r/13 (p. 112) and publishes no emisión figure. The Bank Note Museum lists 23.11.2010 as Pick 456m. Numista assigns TBB B986m and Hernández# 452, with signatures JDUE and JTB, and places the note into circulation on 9 September 2011. BanRep’s 2010 production of 1,000-peso notes is 246.7 million pieces, and 2011 production is 196.1 million; Tesorería deliveries match in both years. Those are denomination totals for each year, not the printage of this date or this serial. No printage is published here.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2010-42222224-back.jpg',
+      width: 1448,
+      height: 1086,
+    },
+    title: {
+      es: '1.000 pesos · 2010',
+      en: '1,000 pesos · 2010',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Serial capicúa',
+      en: 'Colombia · Banco de la República · Radar serial',
+    },
+    lead: {
+      es: 'Mil pesos de Jorge Eliécer Gaitán, Pick 456m: 23 de noviembre de 2010 y serial capicúa 42222224, dos veces en el anverso, sin encapsular.',
+      en: 'Jorge Eliécer Gaitán 1,000 pesos, Pick 456m: 23 November 2010 and radar serial 42222224, twice on the face, unslabbed.',
+    },
+    description: {
+      es: 'El mil pesos de Jorge Eliécer Gaitán, en formato reducido de 130 × 65 mm, es el Pick 456 (2005–2016) / TBB B986, impreso por la Imprenta de Billetes. González White numera las fechas reducidas BG# 439-r; esta pieza lleva «23 DE NOVIEMBRE DE 2010», BG# 439-r/13 (p. 112), que el Bank Note Museum marca 456m. Las firmas son las de José Darío Uribe Escobar, gerente general, y José Tolosa Buitrago, gerente ejecutivo: el par que Numista asigna a esa fecha (TBB B986m; Hernández# 452). Banknote News registró el 28 de octubre de 2011 la fecha nueva y el cambio de firmas respecto de B986l, de Uribe y Hernández a Uribe y Tolosa. El serial 42222224 aparece dos veces en el anverso, en negro, arriba a la derecha y abajo a la izquierda; ocho cifras, sin prefijo. No es un serial bajo (1–100). Es un capicúa: 42222224 se lee igual al derecho y al revés. No es binario, sólido, escalera ni repetidor, y no lleva marca de reposición (asterisco, estrella, R o rombo). El cuadrado de la izquierda es la marca táctil, no un rombo de reposición. El anverso, en naranja y ocre, muestra a Gaitán a la derecha —con el nombre bajo el retrato— y, al centro, la multitud vista desde el Hotel Nutibara de Medellín; a la izquierda, el dispositivo de registro en forma de balanza y el 1000. El reverso lo muestra saludando con el sombrero, con las citas «Yo no soy un hombre, soy un pueblo.» y «El pueblo es superior a sus dirigentes.», la firma manuscrita, el sello de la Libertad y el 1000. No debe confundirse con el mil pesos oro de Galán (Pick 421), ni con el formato grande de 140 × 70 mm (Pick 450), ni con las maculaturas de 2000, 2008 y 2011 de esta vitrina, ni con el 10 de junio de 2011 (Pick 456n). Esta ficha reúne las dos caras de la misma pieza, sin encapsular.',
+      en: 'The Jorge Eliécer Gaitán one-thousand in the reduced 130 × 65 mm format is Pick 456 (2005–2016) / TBB B986, printed by the Imprenta de Billetes. González White numbers the reduced dates BG# 439-r; this piece carries “23 DE NOVIEMBRE DE 2010,” BG# 439-r/13 (p. 112), which the Bank Note Museum marks 456m. The signatures are those of José Darío Uribe Escobar, general manager, and José Tolosa Buitrago, executive manager: the pair Numista assigns to that date (TBB B986m; Hernández# 452). On 28 October 2011 Banknote News recorded the new date and the signature change from B986l, Uribe and Hernández, to Uribe and Tolosa. Serial 42222224 appears twice on the face, in black, at upper right and lower left; eight digits, no prefix. It is not a low serial (1–100). It is a radar: 42222224 reads the same forwards and backwards. It is not binary, solid, a ladder, or a repeater, and it carries no replacement marker (asterisk, star, R, or diamond). The square at left is the tactile mark, not a replacement diamond. The face, in orange and ochre, shows Gaitán at right — named under the portrait — and, at centre, the crowd as seen from Medellín’s Hotel Nutibara; at left, the scales registration device and the 1000. The back shows him waving his hat, with the quotations “Yo no soy un hombre, soy un pueblo.” and “El pueblo es superior a sus dirigentes.”, the manuscript signature, the Liberty seal, and the 1000. It should not be confused with the Galán one-thousand pesos oro (Pick 421), the large 140 × 70 mm format (Pick 450), the 2000, 2008, and 2011 maculatures in this case, or 10 June 2011 (Pick 456n). This record gathers both sides of the same unslabbed note.',
+    },
+    history: {
+      es: 'Jorge Eliécer Gaitán (1903–1948) preside el mil pesos del Banco de la República desde la primera fecha catalogada, 7 de agosto de 2001, puesta en circulación en 2002 en 140 × 70 mm. En 2005–2006 el banco redujo el formato a 130 × 65 mm, renovó la filigrana —el retrato de Gaitán— y siguió imprimiendo en la Imprenta de Billetes. El anverso toma la multitud desde un balcón del Hotel Nutibara; González White sitúa el dibujo del retrato en una fotografía de Sady González tomada en ese balcón. El reverso es el saludo de candidato del 23 de septiembre de 1945. El tipo reducido circuló desde el 17 de noviembre de 2006. Numista data la circulación de esta fecha, 23 de noviembre de 2010, el 9 de septiembre de 2011: es la primera del formato reducido con José Tolosa como gerente ejecutivo. El tipo siguió hasta 2016; González White anota que no se conocen reposiciones.',
+      en: 'Jorge Eliécer Gaitán (1903–1948) has occupied the Banco de la República one-thousand since the first catalogued date, 7 August 2001, put into circulation in 2002 at 140 × 70 mm. In 2005–2006 the bank cut the format to 130 × 65 mm, renewed the watermark — Gaitán’s portrait — and kept printing at the Imprenta de Billetes. The face takes the crowd from a balcony of the Hotel Nutibara; González White places the portrait drawing on a photograph by Sady González taken from that balcony. The back is the candidate’s greeting of 23 September 1945. The reduced type circulated from 17 November 2006. Numista dates this printed date, 23 November 2010, into circulation on 9 September 2011: it is the first of the reduced format with José Tolosa as executive manager. The type ran through 2016; González White notes that no replacements are recorded.',
+    },
+    frontCaption: {
+      es: 'Anverso del 1.000 pesos, Pick 456m: Gaitán, la fecha 23 de noviembre de 2010 y el serial capicúa 42222224.',
+      en: 'Face of the 1,000 pesos, Pick 456m: Gaitán, the date 23 November 2010, and radar serial 42222224.',
+    },
+    backCaption: {
+      es: 'Reverso del 1.000 pesos, Pick 456m: Gaitán saludando, las dos citas, la firma manuscrita y el sello del Banco de la República.',
+      en: 'Back of the 1,000 pesos, Pick 456m: Gaitán waving, the two quotations, the manuscript signature, and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (BG# 439-r/13, p. 112) no publica cifra de emisión para el 23 de noviembre de 2010. El Bank Note Museum describe Pick 456 como el tipo 2005–2016 de 130 × 65 mm y marca 456m esa fecha. Numista agrupa el diseño bajo N# 205282 y marca la frecuencia de 23.11.2010 en 5 % entre quienes poseen el tipo; esa cifra es de la fecha, no de los capicúas. La tabla BanRep de producción anual atribuye 246,7 millones de piezas a todos los 1.000 pesos de 2010 y 196,1 millones a los de 2011; las entregas a Tesorería coinciden. La fecha impresa es 2010 y la circulación que Numista anota es el 9 de septiembre de 2011: ninguno de esos totales es la tirada de esta fecha, de este par de firmas ni de este serial. Un capicúa de ocho dígitos es un patrón de colección; esta ficha no inventa una población de ese patrón.',
+      en: 'González White 2019 (BG# 439-r/13, p. 112) publishes no emisión figure for 23 November 2010. The Bank Note Museum describes Pick 456 as the 2005–2016 130 × 65 mm type and marks 456m for that date. Numista groups the design under N# 205282 and marks the 23.11.2010 date’s frequency at 5% among owners of the type; that figure is for the date, not for radars. BanRep’s annual production table assigns 246.7 million pieces to every 1,000-peso note of 2010 and 196.1 million to those of 2011; Tesorería deliveries match. The printed date is 2010 and the circulation Numista records is 9 September 2011: neither total is the printage of this date, signature pair, or serial. An eight-digit radar is a collector pattern; this record does not invent a population for that pattern.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 42222224. La pieza se presenta sin encapsular. Las fotografías no bastan para asignar un grado numérico.',
+      en: 'A PMG or PCGS census for serial 42222224 has not been independently verified. The note is shown unslabbed. The photographs are not enough to assign a numeric grade.',
+    },
+    grade: {
+      es: 'Sin encapsular · aparentemente sin circular',
+      en: 'Unslabbed · apparently uncirculated',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0456.htm',
+        es: 'Bank Note Museum — Colombia P-456, 1.000 pesos (2005–2016)',
+        en: 'Bank Note Museum — Colombia P-456, 1,000 pesos (2005–2016)',
+        note: {
+          es: 'Tipo reducido, Imprenta de Billetes; anverso y reverso Gaitán. Esta pieza es 23.11.2010 (456m). El catálogo marca 456l como 18.08.2009 y 456n como 10.06.2011.',
+          en: 'Reduced type, Imprenta de Billetes; Gaitán on face and back. This piece is 23.11.2010 (456m). The catalogue marks 456l as 18.08.2009 and 456n as 10.06.2011.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/205282',
+        es: 'Numista — Colombia 1.000 pesos, formato reducido, N# 205282',
+        en: 'Numista — Colombia 1,000 pesos, small size, N# 205282',
+        note: {
+          es: 'Fecha 23.11.2010: P# 456m, TBB B986m, Hernández# 452; firmas JDUE y JTB; circulación 9 de septiembre de 2011; frecuencia 5 % en el tipo. No se publican columnas de precio.',
+          en: '23.11.2010 date: P# 456m, TBB B986m, Hernández# 452; signatures JDUE and JTB; issued 9 September 2011; 5% frequency within the type. Price columns are not published here.',
+        },
+      },
+      {
+        href: 'https://banknotenews.com/?p=12919',
+        es: 'Banknote News — Colombia, fecha y firmas nuevas del 23.11.2010 (B986m)',
+        en: 'Banknote News — Colombia, new 23.11.2010 date and signatures (B986m)',
+        note: {
+          es: 'Owen Linzmayer, 28 de octubre de 2011: como B986l, con fecha 23 de noviembre de 2010 y firmas Uribe / Tolosa. No nombra este serial.',
+          en: 'Owen Linzmayer, 28 October 2011: like B986l, with the date 23 November 2010 and signatures Uribe / Tolosa. It does not name this serial.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 2010 de 1.000 pesos: 246,7 millones de piezas. Producción 2011: 196,1 millones. Entregas a Tesorería: los mismos totales (de la denominación en cada año, no de una fecha Pick ni de un serial).',
+          en: '2010 production of 1,000-peso notes: 246.7 million pieces. 2011 production: 196.1 million. Tesorería deliveries: the same totals (the denomination in each year, not one Pick date or serial).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández# 452 para el 23 de noviembre de 2010 (Pick 456m). No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández# 452 for 23 November 2010 (Pick 456m). Price columns and plates are not republished.',
         },
       },
     ],
