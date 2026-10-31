@@ -2052,8 +2052,8 @@ export const colombiaNotes: ColombiaNote[] = [
       composite: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-composite.jpg',
       front: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-front.jpg',
       back: '/images/catalog/colombia/colombia-banco-de-la-republica-5-pesos-oro-1977-00120856-back.jpg',
-      width: 1916,
-      height: 821,
+      width: 3000,
+      height: 1600,
     },
     title: {
       es: '5 pesos oro · reposición · 1977',
