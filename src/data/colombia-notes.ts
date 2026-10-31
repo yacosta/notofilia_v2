@@ -567,6 +567,8 @@ export const colombiaNotes: ColombiaNote[] = [
       composite: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-composite.jpg',
       front: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-front.jpg',
       back: '/images/catalog/colombia/colombia-banco-de-la-republica-1-peso-oro-1940-r35555693-back.jpg',
+      width: 1672,
+      height: 941,
     },
     title: {
       es: '1 peso oro · Banco de la República · 1940',

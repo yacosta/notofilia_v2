@@ -1741,6 +1741,10 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.match(note.lead.es, /Pick 380b/);
     assert.match(note.lead.en, /Pick 380b/);
     assert.equal(note.images.front.includes('r35555693-front'), true);
+    assert.equal(note.images.back.includes('r35555693-back'), true);
+    assert.equal(note.images.composite.includes('r35555693-composite'), true);
+    assert.equal(note.images.width, 1672);
+    assert.equal(note.images.height, 941);
     assert.equal(additions.at(-1)?.id, 'co-2010-1000-pesos-42222224');
     assert.equal(catalogAdditions.at(-1)?.id, 'co-2010-1000-pesos-p456m');
     const publicCopy = [
