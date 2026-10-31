@@ -901,8 +901,8 @@ describe('Colombia BanRep 5 pesos oro 1977 asterisk replacement', () => {
     assert.equal(notePieces(note).length, 1);
     assert.ok(note.lead.es.length <= 155);
     assert.ok(note.lead.en.length <= 155);
-    assert.equal(note.images.width, 1916);
-    assert.equal(note.images.height, 821);
+    assert.equal(note.images.width, 3000);
+    assert.equal(note.images.height, 1600);
     assert.match(note.printed.es, /Cód\. 150/);
     assert.match(note.printed.en, /Cód\. 150/);
     assert.match(note.printed.es, /THOMAS DE LA RUE & COMPANY LIMITED/);
