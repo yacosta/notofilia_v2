@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-31T04:50:25.168Z",
+  "generatedAt": "2026-11-03T18:01:35.112Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -3082,6 +3082,45 @@
       "title": {
         "es": "1.000 pesos · 2010",
         "en": "1,000 pesos · 2010"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2009",
+      "face": "front",
+      "hash": "a2d1cdd78ed6ccc7",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2009/",
+      "pick": "P# 456l / TBB B986l",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2009-78400487-composite.jpg",
+      "title": {
+        "es": "1.000 pesos · 2009",
+        "en": "1,000 pesos · 2009"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2009",
+      "face": "front",
+      "hash": "009159deb589d500",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2009/",
+      "pick": "P# 456l / TBB B986l",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2009-78400487-front.jpg",
+      "title": {
+        "es": "1.000 pesos · 2009",
+        "en": "1,000 pesos · 2009"
+      }
+    },
+    {
+      "pieceId": "1000-pesos-2009",
+      "face": "back",
+      "hash": "0052ddd65446cd00",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/1000-pesos-2009/",
+      "pick": "P# 456l / TBB B986l",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-1000-pesos-2009-78400487-back.jpg",
+      "title": {
+        "es": "1.000 pesos · 2009",
+        "en": "1,000 pesos · 2009"
       }
     },
     {
