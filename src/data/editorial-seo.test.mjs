@@ -322,6 +322,55 @@ describe('November 2026 news notes', () => {
   });
 });
 
+describe('Mørstad hoard note', () => {
+  it('publishes the 5,550-coin count and the Olaf penny from the museum and the county, without a price or a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'tesoro-morstad-5550-penique-olaf');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'morstad-hoard-5550-saint-olaf-penny');
+    assert.equal(article.published, '2026-11-03');
+    assert.equal(article.sourceName, 'Kulturhistorisk museum');
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/grabado-penique-olaf-casco-puntiagudo.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 900);
+    assert.equal(
+      existsSync(new URL('../../public/uploads/grabado-penique-olaf-casco-puntiagudo.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/grabado-penique-olaf-casco-puntiagudo-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /innlandetfylke\.no/);
+    assert.match(urls, /sensational-discovery-first-in-norway-since-1924/);
+    assert.match(urls, /exhibitions\/morstad-hoard/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /5[.,]550/);
+      assert.match(html, /5[.,]500/);
+      assert.match(html, /ONLAF R\+ NORMANORV/);
+      assert.match(html, /Anne Skogsfjord/);
+      assert.match(html, /M152600\/763/);
+      assert.match(html, /1024/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /1885/);
+      assert.doesNotMatch(html, /US\$|€\s?\d|millones de pesos/i);
+      assert.match(html, /no están en la colección virtual de Notofilia|not in Notofilia’s virtual collection/);
+    }
+    assert.match(article.bodyHtml.es, /8 de octubre de 2026/);
+    assert.match(article.bodyHtml.es, /29 de julio de 1030/);
+    assert.match(article.bodyHtml.en, /8 October 2026/);
+    assert.match(article.bodyHtml.en, /29 July 1030/);
+    assert.match(article.caption.es, /No es la moneda de Mørstad/);
+    assert.match(article.caption.en, /Not the Mørstad coin/);
+  });
+});
+
 describe('1932-S Washington quarter note', () => {
   it('publishes the Heritage MS66+ realization from CoinWeek and PCGS, without a new holding', () => {
     const article = newsArticles.find((item) => item.slug === 'cuarto-washington-1932-s-heritage-76250');
