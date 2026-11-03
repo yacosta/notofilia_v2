@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { describe, it } from 'node:test';
+import sharp from 'sharp';
 import { localizePath } from '../lib/locale-paths.ts';
 
 const data = readFileSync(new URL('./estados-unidos.ts', import.meta.url), 'utf8');
@@ -204,7 +206,7 @@ describe('US colonial Connecticut 20 shillings of 1 June 1780', () => {
     'utf8',
   );
 
-  it('records CT-231 serial 8495 and PMG 1072657-023 without a price', () => {
+  it('records CT-231 serial 8495 and PMG 1072657-023 without a price', async () => {
     assert.match(ct, /chapterId: 'us-colonial'/);
     assert.match(ct, /pick: 'Fr\. CT-231'/);
     assert.match(ct, /serial: '8495'/);
@@ -247,6 +249,21 @@ describe('US colonial Connecticut 20 shillings of 1 June 1780', () => {
     assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-front\.jpg/);
     assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-back\.jpg/);
     assert.match(ct, /united-states-connecticut-20-shillings-1780-ct-231-8495-composite\.jpg/);
+    assert.match(ct, /width: 1536/);
+    assert.match(ct, /height: 1157/);
+    const root = new URL('../../catalog-src/catalog/united-states/', import.meta.url);
+    for (const side of ['front', 'back']) {
+      const meta = await sharp(
+        fileURLToPath(new URL(`united-states-connecticut-20-shillings-1780-ct-231-8495-${side}.jpg`, root)),
+      ).metadata();
+      assert.equal(meta.width, 1536, side);
+      assert.equal(meta.height, 1157, side);
+    }
+    const composite = await sharp(
+      fileURLToPath(new URL('united-states-connecticut-20-shillings-1780-ct-231-8495-composite.jpg', root)),
+    ).metadata();
+    assert.equal(composite.width, 1536);
+    assert.equal(composite.height, 2314);
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

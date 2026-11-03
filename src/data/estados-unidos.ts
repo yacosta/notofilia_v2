@@ -1929,8 +1929,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       composite: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-composite.jpg',
       front: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-front.jpg',
       back: '/images/catalog/united-states/united-states-connecticut-20-shillings-1780-ct-231-8495-back.jpg',
-      width: 1388,
-      height: 1133,
+      width: 1536,
+      height: 1157,
     },
     title: {
       es: '20 chelines · Connecticut · 1 de junio de 1780',
