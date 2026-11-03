@@ -269,6 +269,59 @@ describe('Málaga numismatics note', () => {
   });
 });
 
+describe('November 2026 news notes', () => {
+  it('publishes Mexicali, Aranda, Palau, and Guadalajara without a price or a new holding', () => {
+    const mexicali = newsArticles.find((item) => item.slug === 'convencion-numismatica-mexicali-2026');
+    const aranda = newsArticles.find((item) => item.slug === 'relevo-coleccionismo-aranda-2026');
+    const palau = newsArticles.find((item) => item.slug === 'moneda-fantasmagorica-palau-2022');
+    const guadalajara = newsArticles.find((item) => item.slug === 'convencion-numismatica-guadalajara-2026');
+    assert.ok(mexicali && aranda && palau && guadalajara);
+    assert.equal(mexicali.slugEn, 'mexicali-numismatic-convention-2026');
+    assert.equal(aranda.slugEn, 'collecting-handoff-aranda-2026');
+    assert.equal(palau.slugEn, 'palau-ghost-silver-coin-2022');
+    assert.equal(guadalajara.slugEn, 'guadalajara-numismatic-convention-2026');
+    assert.equal(mexicali.published, '2026-11-03');
+    assert.equal(mexicali.sourceName, 'La Voz de la Frontera');
+    assert.equal(aranda.sourceName, 'Diario de la Ribera');
+    assert.equal(palau.sourceName, 'El Nuevo Día');
+    assert.equal(guadalajara.sourceName, 'El Occidental');
+    for (const article of [mexicali, aranda, palau, guadalajara]) {
+      assert.equal(article.claim, null);
+      assert.ok(article.seoTitle.es.length <= 48);
+      assert.ok(article.seoTitle.en.length <= 48);
+      assert.ok(article.description.es.length <= 155);
+      assert.ok(article.description.en.length <= 155);
+      assert.equal(existsSync(new URL(`../../public${article.image}`, import.meta.url)), true);
+      assert.equal(
+        existsSync(new URL(`../../public${article.image.replace('.jpg', '-card.jpg')}`, import.meta.url)),
+        true,
+      );
+      for (const locale of ['es', 'en']) {
+        const html = article.bodyHtml[locale];
+        assert.match(html, /\/glosario\/(numismatica|notafilia)\//);
+        assert.doesNotMatch(html, /US\$|€\s?\d|millones de pesos/i);
+      }
+    }
+    assert.match(mexicali.bodyHtml.es, /13, el 14 y el 15 de noviembre de 2026/);
+    assert.match(mexicali.bodyHtml.es, /10:00 a 19:00/);
+    assert.match(mexicali.bodyHtml.es, /Ricardo de León Tallavas/);
+    assert.match(mexicali.bodyHtml.en, /13, 14, and 15 November 2026/);
+    assert.match(aranda.bodyHtml.es, /David Cuesta Carrasco/);
+    assert.match(aranda.bodyHtml.es, /6 de noviembre/);
+    assert.match(aranda.bodyHtml.es, /48\.ª/);
+    assert.match(aranda.bodyHtml.en, /6 November/);
+    assert.match(palau.bodyHtml.es, /2\.500/);
+    assert.match(palau.bodyHtml.es, /\.999/);
+    assert.match(palau.bodyHtml.es, /1-dolar-aguila-plata-1988/);
+    assert.match(palau.bodyHtml.en, /2,500/);
+    assert.doesNotMatch(palau.bodyHtml.es, /139/);
+    assert.match(guadalajara.bodyHtml.es, /38\.ª/);
+    assert.match(guadalajara.bodyHtml.es, /Hotel Baruk/);
+    assert.match(guadalajara.bodyHtml.es, /no consta quién/);
+    assert.match(guadalajara.bodyHtml.en, /38th/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
