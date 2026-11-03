@@ -1134,7 +1134,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     id: "numeracion-radar",
     category: "Coleccionismo",
     title: { es: "Numeración capicúa (radar)", en: "Radar / palindrome note" },
-    definition: { es: "Billete cuyo número de serie se lee igual de izquierda a derecha que de derecha a izquierda —un capicúa—, por ejemplo A4567654A. El 2.000 pesos de 19 de agosto de 2009 de esta colección lleva el serial 70200207: capicúa, no binario.", en: "A banknote whose serial number reads the same forwards and backwards — a palindrome — for example A4567654A. This collection’s 19 August 2009 2,000-peso note is serial 70200207: a radar, not a binary." },
+    definition: { es: "Billete cuyo número de serie se lee igual de izquierda a derecha que de derecha a izquierda —un capicúa—, por ejemplo A4567654A. El 2.000 pesos de 19 de agosto de 2009 de esta colección lleva el serial 70200207: capicúa, no binario. El 1.000 pesos de 18 de agosto de 2009 lleva el 78400487, también capicúa y no binario.", en: "A banknote whose serial number reads the same forwards and backwards — a palindrome — for example A4567654A. This collection’s 19 August 2009 2,000-peso note is serial 70200207: a radar, not a binary. The 18 August 2009 1,000-peso note is 78400487, also a radar and not binary." },
     seeAlso: ["numeracion-especial"],
   },
   {
