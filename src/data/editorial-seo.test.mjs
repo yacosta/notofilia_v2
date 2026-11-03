@@ -322,6 +322,50 @@ describe('November 2026 news notes', () => {
   });
 });
 
+describe('1932-S Washington quarter note', () => {
+  it('publishes the Heritage MS66+ realization from CoinWeek and PCGS, without a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'cuarto-washington-1932-s-heritage-76250');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1932-s-washington-quarter-heritage-76250');
+    assert.equal(article.published, '2026-11-03');
+    assert.equal(article.sourceName, 'CoinWeek');
+    assert.equal(article.image, '/uploads/cuarto-washington-1932-tipo-flanagan.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 800);
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cuarto-washington-1932-tipo-flanagan.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cuarto-washington-1932-tipo-flanagan-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /76\.250/);
+    assert.match(article.claim.noteEs, /prima/);
+    assert.match(article.claim.noteEn, /76,250/);
+    assert.match(article.claim.noteEn, /premium/);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /coinweek\.com\/1932-s-washington-quarter/);
+    assert.match(urls, /pcgs\.com\/coinfacts\/coin\/1932-s-25c\/5792/);
+    assert.match(urls, /sixbid\.com/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /408[,.]000/);
+      assert.match(html, /5792/);
+      assert.match(html, /lote 3069|lot 3069/);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /\/glosario\/escala-sheldon\//);
+      assert.match(html, /1-dolar-morgan-1887-s/);
+      assert.match(html, /Filadelfia|Philadelphia/);
+      assert.match(html, /no está en la colección virtual de Notofilia|not in Notofilia’s virtual collection/);
+    }
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
