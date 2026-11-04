@@ -425,6 +425,14 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Reverso',
     en: 'Reverse',
   },
+  '/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/': {
+    es: '8 escudos · Popayán P–JF · 1801',
+    en: '8 escudos · Popayán P–JF · 1801',
+  },
+  '/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/': {
+    es: '2 escudos · Felipe II · Sevilla',
+    en: '2 escudos · Philip II · Seville',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -547,6 +555,14 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/glosario/pick/': {
     es: 'El número de catálogo Standard Catalog of World Paper Money.',
     en: 'The Standard Catalog of World Paper Money catalogue number.',
+  },
+  '/coleccion/colombia-numismatica/8-escudos-popayan-1801-p-jf/': {
+    es: 'Un ocho escudos de Carlos IV que sí está en la colección: Popayán, 1801.',
+    en: 'A Charles IV eight escudos that is in the collection: Popayán, 1801.',
+  },
+  '/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/': {
+    es: 'Oro peninsular de Felipe II, ceca de Sevilla, sin fecha.',
+    en: 'Peninsular gold of Philip II, Seville mint, undated.',
   },
 };
 

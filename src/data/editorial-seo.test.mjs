@@ -366,6 +366,61 @@ describe('1932-S Washington quarter note', () => {
   });
 });
 
+describe('Ogando León shop note', () => {
+  it('publishes the Leonoticias video and Pérez report without a price or a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'ogando-filatelia-numismatica-leon');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'ogando-philately-numismatics-leon');
+    assert.equal(article.published, '2026-11-03');
+    assert.equal(article.sourceName, 'Leonoticias');
+    assert.equal(
+      article.sourceUrl,
+      'https://www.leonoticias.com/leon/vende-filatelia-numismatica-ogando-20261028080517-nt.html',
+    );
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/letrero-calle-renueva-leon.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 1200);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/letrero-calle-renueva-leon.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/letrero-calle-renueva-leon-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /vende-filatelia-numismatica-ogando-20261028080517-nt\.html/);
+    assert.match(urls, /ogando-numismatica-leon-vive-mejor-momentono-damos-20261103133029-nt\.html/);
+    assert.match(urls, /filateliaynumismaticaogando\.com/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /Enrique Alonso Cadenas/);
+      assert.match(html, /1978/);
+      assert.match(html, /Renueva/);
+      assert.match(html, /Sandra Santos/);
+      assert.match(html, /Álvaro Pérez/);
+      assert.match(html, /no damos a abasto a trabajar/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/notafilia\//);
+      assert.match(html, /\/glosario\/escudo\//);
+      assert.match(html, /8-escudos-popayan-1801-p-jf/);
+      assert.match(html, /2-escudos-sevilla-felipe-ii-s-d/);
+      assert.doesNotMatch(html, /€|US\$|\$\s?\d/);
+    }
+    assert.match(article.bodyHtml.es, /4 minutos y 7 segundos/);
+    assert.match(article.bodyHtml.es, /10:00 a 13:30/);
+    assert.match(article.bodyHtml.en, /4 minutes and 7 seconds/);
+    assert.match(article.bodyHtml.en, /10:00 to 13:30/);
+    assert.match(article.bodyHtml.en, /three people/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
