@@ -366,6 +366,65 @@ describe('1932-S Washington quarter note', () => {
   });
 });
 
+describe('1945-S Micro S Mercury dime note', () => {
+  it('publishes the CoinWeek and PCGS figures without treating US$25,875 as the PCGS record', () => {
+    const article = newsArticles.find((item) => item.slug === 'dime-mercury-1945-s-micro-s-25875');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1945-s-micro-s-mercury-dime-25875');
+    assert.equal(article.published, '2026-11-04');
+    assert.equal(article.sourceName, 'CoinWeek');
+    assert.equal(article.image, '/uploads/dime-mercury-1938-san-francisco.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 800);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dime-mercury-1938-san-francisco.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dime-mercury-1938-san-francisco-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /25\.875/);
+    assert.match(article.claim.noteEs, /25\.850/);
+    assert.match(article.claim.noteEs, /prima/);
+    assert.match(article.claim.noteEn, /25,875/);
+    assert.match(article.claim.noteEn, /25,850/);
+    assert.match(article.claim.noteEn, /premium/);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /coinweek\.com\/the-1945-s-micro-s-mercury-dime/);
+    assert.match(urls, /pcgs\.com\/coinfacts\/coin\/1945-s-10c-micro-fb\/5063/);
+    assert.match(urls, /pcgs\.com\/coinfacts\/coin\/1945-s-10c-micro-s\/5062/);
+    assert.match(urls, /pcgs\.com\/news\/the-lowdown-on-the-1945-s-micro-s-mercury-dime/);
+    assert.match(urls, /greatcollections\.com\/Coin\/669971/);
+    assert.match(article.bodyHtml.es, /41\.920\.000/);
+    assert.match(article.bodyHtml.en, /41,920,000/);
+    assert.match(article.bodyHtml.es, /30\.000/);
+    assert.match(article.bodyHtml.es, /1\.500/);
+    assert.match(article.bodyHtml.en, /30,000/);
+    assert.match(article.bodyHtml.en, /1,500/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /5063/);
+      assert.match(html, /5062/);
+      assert.match(html, /36776596/);
+      assert.match(html, /31080493/);
+      assert.match(html, /FS-512/);
+      assert.match(html, /Bernard J\. Maier/);
+      assert.match(html, /David W\. Lange/);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /\/glosario\/escala-sheldon\//);
+      assert.match(html, /1-dolar-morgan-1887-s/);
+      assert.match(html, /1938-S/);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+    }
+  });
+});
+
 describe('Ogando León shop note', () => {
   it('publishes the Leonoticias video and Pérez report without a price or a new holding', () => {
     const article = newsArticles.find((item) => item.slug === 'ogando-filatelia-numismatica-leon');
