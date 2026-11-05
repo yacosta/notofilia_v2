@@ -480,6 +480,68 @@ describe('Ogando León shop note', () => {
   });
 });
 
+describe('Cayman E-series banknote note', () => {
+  it('publishes the Cabinet concept and the Compass report without a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'serie-e-billetes-caiman-carlos-iii');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'cayman-e-series-banknotes-charles-iii');
+    assert.equal(article.published, '2026-11-04');
+    assert.equal(article.sourceName, 'Cayman Compass');
+    assert.equal(
+      article.sourceUrl,
+      'https://www.caymancompass.com/2026/11/04/design-for-new-banknotes-with-kings-image-under-way/',
+    );
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/entrada-asamblea-legislativa-caiman.jpg');
+    assert.equal(article.imageWidth, 1200);
+    assert.equal(article.imageHeight, 1600);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/entrada-asamblea-legislativa-caiman.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/entrada-asamblea-legislativa-caiman-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /caymancompass\.com\/2026\/11\/04\/design-for-new-banknotes/);
+    assert.match(urls, /gov\.ky\/documents\/35692/);
+    assert.match(urls, /cima\.ky\/circulating-banknotes/);
+    assert.match(urls, /cima\.ky\/currency-statistics/);
+    assert.match(urls, /bankofengland\.co\.uk\/news\/2024\/june/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /Norma Connolly/);
+      assert.match(html, /Carlos III|Charles III/);
+      assert.match(html, /De La Rue/);
+      assert.match(html, /Monnaie de Paris/);
+      assert.match(html, /156/);
+      assert.match(html, /2011/);
+      assert.match(html, /158[.,]210[.,]295/);
+      assert.match(html, /320[.,]110/);
+      assert.match(html, /700[.,]000/);
+      assert.match(html, /on the back/);
+      assert.match(html, /for the foreseeable future/);
+      assert.match(html, /\/glosario\/notafilia\//);
+      assert.match(html, /\/glosario\/serie\//);
+      assert.match(html, /\/glosario\/anverso\//);
+      assert.match(html, /\/glosario\/filigrana\//);
+      assert.match(html, /no nombra al rey|does not name the king/);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.doesNotMatch(html, /US\$|€/);
+    }
+    assert.match(article.bodyHtml.es, /21 de octubre de 2026/);
+    assert.match(article.bodyHtml.es, /no hay fecha oficial de lanzamiento/);
+    assert.match(article.bodyHtml.en, /21 October 2026/);
+    assert.match(article.bodyHtml.en, /no official launch date/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
