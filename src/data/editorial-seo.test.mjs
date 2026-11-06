@@ -480,6 +480,73 @@ describe('Ogando León shop note', () => {
   });
 });
 
+describe('2026 Morgan and Peace Diamond Field note', () => {
+  it('publishes the Mint list price and keeps the 2026 coins out of the case', () => {
+    const article = newsArticles.find((item) => item.slug === 'dolares-morgan-peace-2026-campo-diamante');
+    assert.ok(article);
+    assert.equal(article.slugEn, '2026-morgan-peace-dollars-diamond-field');
+    assert.equal(article.published, '2026-11-06');
+    assert.equal(article.sourceName, 'CoinWeek');
+    assert.equal(
+      article.sourceUrl,
+      'https://coinweek.com/2026-morgan-and-peace-dollars-debut-the-mints-first-diamond-field-finish/',
+    );
+    assert.equal(article.claim.kindEs, 'Precio de lista de la Mint');
+    assert.match(article.claim.noteEs, /US\$375/);
+    assert.match(article.claim.noteEs, /262\.500/);
+    assert.equal(article.image, '/uploads/dolar-morgan-1879-san-francisco.jpg');
+    assert.equal(article.imageWidth, 1500);
+    assert.equal(article.imageHeight, 1500);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dolar-morgan-1879-san-francisco.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dolar-morgan-1879-san-francisco-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /coinweek\.com\/2026-morgan-and-peace-dollars/);
+    assert.match(urls, /globenewswire\.com\/news-release\/2026\/11\/05\/3396857/);
+    assert.match(urls, /ngccoin\.com\/news\/article\/15694/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /26XS/);
+      assert.match(html, /Sharon McPike/);
+      assert.match(html, /Diamond Field/);
+      assert.match(html, /1776 ~ 2026/);
+      assert.match(html, /privy mark|marca privy/);
+      assert.match(html, /Liberty Bell mintmark/);
+      assert.match(html, /0[.,]859/);
+      assert.match(html, /38[.,]10/);
+      assert.match(html, /1[.,]718/);
+      assert.match(html, /26[.,]73/);
+      assert.match(html, /Anthony de Francisci/);
+      assert.match(html, /TRVST/);
+      assert.match(html, /usmint\.gov/);
+      assert.match(html, /\/glosario\/marca-privy\//);
+      assert.match(html, /\/glosario\/dolar-morgan\//);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /\/glosario\/anverso\//);
+      assert.match(html, /\/coleccion\/estados-unidos-numismatica\/dolar-morgan-emision-original-1878-1904\//);
+      assert.match(html, /\/coleccion\/estados-unidos-numismatica\/1-dolar-morgan-1883\//);
+      assert.match(html, /\/noticias\/marcas-privilegio-mint-2026\//);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /No abrimos esa ficha|We did not open that page/);
+      assert.match(html, /no abre el texto de la ley|does not open the text of the act/);
+    }
+    assert.match(article.bodyHtml.es, /12 de noviembre de 2026/);
+    assert.match(article.bodyHtml.es, /262\.500/);
+    assert.match(article.bodyHtml.en, /12 November 2026/);
+    assert.match(article.bodyHtml.en, /262,500/);
+  });
+});
+
 describe('Cayman E-series banknote note', () => {
   it('publishes the Cabinet concept and the Compass report without a new holding', () => {
     const article = newsArticles.find((item) => item.slug === 'serie-e-billetes-caiman-carlos-iii');
