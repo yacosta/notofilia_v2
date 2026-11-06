@@ -542,6 +542,83 @@ describe('Cayman E-series banknote note', () => {
   });
 });
 
+describe('1971-S Eisenhower prototype note', () => {
+  it('publishes the GreatCollections total with the fee, and keeps the 2022 PCGS record apart', () => {
+    const article = newsArticles.find((item) => item.slug === 'dolar-eisenhower-1971-s-prototipo-189000');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1971-s-eisenhower-prototype-189000');
+    assert.equal(article.published, '2026-11-06');
+    assert.equal(article.sourceName, 'AL.com');
+    assert.equal(article.image, '/uploads/anverso-reverso-dolar-eisenhower-plata-1974.jpg');
+    assert.equal(article.imageWidth, 1627);
+    assert.equal(article.imageHeight, 824);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/anverso-reverso-dolar-eisenhower-plata-1974.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/anverso-reverso-dolar-eisenhower-plata-1974-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /189\.000/);
+    assert.match(article.claim.noteEs, /prima/);
+    assert.match(article.claim.noteEs, /264\.000/);
+    assert.match(article.claim.noteEn, /189,000/);
+    assert.match(article.claim.noteEn, /fee/);
+    assert.match(article.claim.noteEn, /264,000/);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /al\.com\/news\/2026\/11\/rare-eisenhower-coin/);
+    assert.match(urls, /greatcollections\.com\/Coin\/2233773/);
+    assert.match(urls, /greatcollections\.com\/kb\/This-Weeks-GC-Top-Ten-List/);
+    assert.match(urls, /pcgs\.com\/coinfacts\/coin\/1971-s-1-j-2147\/509322/);
+    assert.match(urls, /usmint\.gov\/news\/inside-the-mint\/one-hundred-years-of-silver-dollar-coinage/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /2233773/);
+      assert.match(html, /55926571/);
+      assert.match(html, /509322/);
+      assert.match(html, /2147/);
+      assert.match(html, /106/);
+      assert.match(html, /4650/);
+      assert.match(html, /37150154/);
+      assert.match(html, /20634827/);
+      assert.match(html, /Jill Westeyn/);
+      assert.match(html, /800 parts of silver/);
+      assert.match(html, /2[.,]8/);
+      assert.match(html, /Business Strike/);
+      assert.match(html, /Special Strike/);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /\/glosario\/reverso\//);
+      assert.match(html, /\/glosario\/anverso\//);
+      assert.match(html, /\/glosario\/escala-sheldon\//);
+      assert.match(html, /\/glosario\/pmg-pcgs\//);
+      assert.match(html, /1-dolar-morgan-1887-s/);
+      assert.match(html, /dolar-eisenhower-1976-no-s-coinweek/);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /1974/);
+      assert.doesNotMatch(html, /171[.,]818/);
+    }
+    assert.match(article.bodyHtml.es, /15 de febrero de 2008/);
+    assert.match(article.bodyHtml.es, /18 de octubre de 2026/);
+    assert.match(article.bodyHtml.es, /31 de diciembre de 1970/);
+    assert.match(article.bodyHtml.es, /US\$10/);
+    assert.match(article.bodyHtml.es, /US\$5/);
+    assert.match(article.bodyHtml.es, /US\$22/);
+    assert.match(article.bodyHtml.es, /24,59 g/);
+    assert.match(article.bodyHtml.en, /15 February 2008/);
+    assert.match(article.bodyHtml.en, /18 October 2026/);
+    assert.match(article.bodyHtml.en, /31 December 1970/);
+    assert.match(article.bodyHtml.en, /US\$10/);
+    assert.match(article.bodyHtml.en, /24\.59 g/);
+    assert.match(article.bodyHtml.en, /buyer’s fee|buyer's fee/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
