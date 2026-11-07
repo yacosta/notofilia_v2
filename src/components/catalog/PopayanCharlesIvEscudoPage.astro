@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../Breadcrumb.astro';
+import NewWindowHint from '../NewWindowHint.astro';
 import CatalogThumb from './CatalogThumb.astro';
 import SourceList from './SourceList.astro';
 import { coinagePieceById, coinagePiecePath } from '../../data/colombia-coinage-pieces';
@@ -210,18 +211,31 @@ const jsonLd = {
           {
             archiveImages.map((image) => (
               <figure class:list={['m-0 rounded-[6px] border border-line-strong bg-panel p-3', image.wide && 'lg:col-span-2']}>
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  loading="lazy"
-                  decoding="async"
-                  class:list={[
-                    'w-full rounded-[2px] bg-bg object-contain',
-                    image.wide ? 'aspect-[16/7]' : 'aspect-[4/3]',
-                  ]}
-                />
+                <a
+                  href={image.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group relative block cursor-zoom-in text-inherit no-underline"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    loading="lazy"
+                    decoding="async"
+                    class:list={[
+                      'w-full rounded-[2px] bg-bg object-contain',
+                      image.wide ? 'aspect-[16/7]' : 'aspect-[4/3]',
+                    ]}
+                  />
+                  <span
+                    class="pointer-events-none absolute bottom-3 right-3 rounded-[6px] border border-line-strong bg-panel/92 px-3 py-1.5 font-sans text-[13px] font-semibold tracking-[0.06em] text-gold-light opacity-90 group-hover:text-cream group-hover:opacity-100"
+                  >
+                    {t.expandImage}
+                    <NewWindowHint locale={locale} visuallyHidden />
+                  </span>
+                </a>
                 <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{image.caption}</figcaption>
               </figure>
             ))
