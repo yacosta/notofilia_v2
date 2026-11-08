@@ -8,6 +8,7 @@ import { enhanceProseHtml } from '../../data/editorial';
 import { collectionPageJsonLd } from '../../lib/json-ld';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import {
+  COLONIAL_SERIES_HERO,
   colonialSeriesCopy,
   colonialSeriesPath,
   colonialSeriesRelated,
@@ -17,7 +18,6 @@ import {
   USA_PATH,
 } from '../../data/estados-unidos';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
-import { catalogAssetSrc } from '../../lib/images';
 import bodyEs from '../../data/colonial-paper-history/es.html?raw';
 import bodyEn from '../../data/colonial-paper-history/en.html?raw';
 
@@ -31,11 +31,7 @@ const pathname = colonialSeriesPath(locale);
 const notes = notesForChapter('us-colonial');
 const sources = colonialSeriesSources;
 const body = enhanceProseHtml(locale === 'en' ? bodyEn : bodyEs, locale);
-const hero = {
-  src: '/images/catalog/mapa-distritos-reserva-federal-estados-unidos.jpg',
-  width: 2128,
-  height: 912,
-};
+const hero = COLONIAL_SERIES_HERO;
 
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -55,7 +51,7 @@ const jsonLd = collectionPageJsonLd({
   description={t.metaDescription}
   locale={locale}
   pathname={pathname}
-  ogImage={catalogAssetSrc(hero.src)}
+  ogImage={hero.src}
   ogImageAlt={t.heroAlt}
 >
   <Fragment slot="head">
@@ -71,7 +67,7 @@ const jsonLd = collectionPageJsonLd({
       eyebrow={copy[locale].virtualCollection}
       title={t.kicker}
       subtitle={t.title}
-      imageClass="object-[50%_28%]"
+      imageClass="object-[42%_55%]"
     />
 
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">

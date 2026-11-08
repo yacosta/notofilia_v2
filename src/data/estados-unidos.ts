@@ -36,6 +36,13 @@ export const USA_RENCY_PATH = '/coleccion/estados-unidos/rency/';
 export const USA_RENCY_PATH_EN = '/collection/united-states/rency/';
 export const USA_COLONIAL_PATH = '/coleccion/estados-unidos/moneda-colonial/';
 export const USA_COLONIAL_PATH_EN = '/collection/united-states/colonial-paper/';
+
+/** Finished poster for the colonial paper series. Shared ES/EN; do not trim the master. Card sibling is 800px wide. */
+export const COLONIAL_SERIES_HERO = {
+  src: '/uploads/papel-moneda-colonial-estados-unidos-hero.jpg',
+  width: 1024,
+  height: 438,
+} as const;
 export const USA_OBSOLETE_PATH = '/coleccion/estados-unidos/billetes-obsoletos/';
 export const USA_OBSOLETE_PATH_EN = '/collection/united-states/obsolete-notes/';
 export const USA_BARABOO_SCRIP_PATH = '/coleccion/estados-unidos/miscelaneos/scrip-baraboo-jubileo-1933/';
@@ -898,7 +905,7 @@ export const colonialSeriesCopy = {
     breadcrumbCurrent: 'Moneda colonial',
     parentLink: 'Estados Unidos',
     heroAlt:
-      'Mapa vintage de Estados Unidos sobre pergamino con los doce distritos de la Reserva Federal, un billete de 10 dólares de 1914, un pasaporte y un sello de 1913',
+      'Cartel de papel moneda colonial de Estados Unidos: billetes de Massachusetts Bay, Continental Currency, New Hampshire y Pensilvania; monedas de 1776; bandera de Betsy Ross, tambor, mosquete, cuerno de pólvora y pluma sobre pergamino. Es una ilustración, no el escaneo de las piezas de la colección.',
     lead:
       'De las letras de crédito de Massachusetts en 1690 —con el matiz de la monnaie de carte que Jacques de Meulles emitió en Nueva Francia en 1685— al Continental de 1779: escasez de especie, loan offices, Currency Acts y cinco fichas de esta vitrina unidas al relato.',
     viewNote: 'Ver la ficha',
@@ -937,7 +944,7 @@ export const colonialSeriesCopy = {
     breadcrumbCurrent: 'Colonial paper',
     parentLink: 'United States',
     heroAlt:
-      'Vintage map of the United States on parchment showing the twelve Federal Reserve districts, a 1914 ten-dollar note, a passport, and a 1913 postage stamp',
+      'Poster of United States colonial paper money: Massachusetts Bay, Continental Currency, New Hampshire, and Pennsylvania notes; 1776 coins; Betsy Ross flag, drum, musket, powder horn, and quill on parchment. It is an illustration, not a scan of the notes in the collection.',
     lead:
       'From Massachusetts bills of credit in 1690 —with the nuance of the monnaie de carte Jacques de Meulles issued in New France in 1685— to the Continental of 1779: specie shortage, loan offices, Currency Acts, and five notes in this case tied into one account.',
     viewNote: 'Open the note page',
