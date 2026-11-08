@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T18:01:35.112Z",
+  "generatedAt": "2026-11-08T21:41:59.623Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -7034,6 +7034,45 @@
       "title": {
         "es": "10 centavos · Alfonso XIII · fecha aparente 1895",
         "en": "10 Centavos · Alfonso XIII · apparent date 1895"
+      }
+    },
+    {
+      "pieceId": "tesoreria-nacional-25-pesos-1813",
+      "face": "front",
+      "hash": "b6da94ca62aa9428",
+      "kind": "banknote",
+      "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
+      "pick": "B113a · Pick PNL · Edifil 2021: 4",
+      "image": "/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-composite.jpg",
+      "title": {
+        "es": "25 pesos · Tesorería Nacional · 1813",
+        "en": "25 pesos · National Treasury · 1813"
+      }
+    },
+    {
+      "pieceId": "tesoreria-nacional-25-pesos-1813",
+      "face": "front",
+      "hash": "cccaeaaeccead290",
+      "kind": "banknote",
+      "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
+      "pick": "B113a · Pick PNL · Edifil 2021: 4",
+      "image": "/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-front.jpg",
+      "title": {
+        "es": "25 pesos · Tesorería Nacional · 1813",
+        "en": "25 pesos · National Treasury · 1813"
+      }
+    },
+    {
+      "pieceId": "tesoreria-nacional-25-pesos-1813",
+      "face": "back",
+      "hash": "57d5eb9485a9a850",
+      "kind": "banknote",
+      "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
+      "pick": "B113a · Pick PNL · Edifil 2021: 4",
+      "image": "/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-back.jpg",
+      "title": {
+        "es": "25 pesos · Tesorería Nacional · 1813",
+        "en": "25 pesos · National Treasury · 1813"
       }
     },
     {

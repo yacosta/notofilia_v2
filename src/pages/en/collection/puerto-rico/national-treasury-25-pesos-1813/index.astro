@@ -1,0 +1,9 @@
+---
+import PuertoRicoNotePage from '../../../../../components/catalog/PuertoRicoNotePage.astro';
+import { noteById } from '../../../../../data/puerto-rico';
+
+const note = noteById('tesoreria-nacional-25-pesos-1813');
+if (!note) throw new Error('Missing Puerto Rico 1813 National Treasury obligation');
+---
+
+<PuertoRicoNotePage locale="en" note={note} />

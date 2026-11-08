@@ -412,6 +412,10 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     en: '/collection/puerto-rico/1-peso-exchange-note-1895/',
   },
   {
+    es: '/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/',
+    en: '/collection/puerto-rico/national-treasury-25-pesos-1813/',
+  },
+  {
     es: '/coleccion/ecuador/1-sucre-1901/',
     en: '/collection/ecuador/1-sucre-1901/',
   },
@@ -919,6 +923,7 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/puerto-rico/junta-central-cuba-1869/',
     '/en/coleccion/puerto-rico/junta-central-1-peso-1869/',
     '/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
+    '/en/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/',
     '/en/coleccion/puerto-rico/',
     '/en/coleccion/',
     '/en/glosario/',
