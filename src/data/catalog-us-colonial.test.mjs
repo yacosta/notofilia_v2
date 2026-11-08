@@ -386,6 +386,8 @@ describe('US colonial series page 1690–1788', () => {
     assert.match(colonialPage, /enhanceProseHtml/);
     assert.match(colonialPage, /colonial-paper-history\/es\.html/);
     assert.match(colonialPage, /colonial-paper-history\/en\.html/);
+    assert.match(colonialPage, /COLONIAL_SERIES_HERO/);
+    assert.match(data, /papel-moneda-colonial-estados-unidos-hero\.jpg/);
     assert.match(colonialPage, /colonial-holdings-heading/);
     assert.match(colonialPage, /t\.holdingsNote/);
     assert.match(seriesPage, /viewColonialCase/);
