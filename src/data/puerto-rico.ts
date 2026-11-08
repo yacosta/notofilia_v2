@@ -75,19 +75,19 @@ export const seriesCopy = {
     heroAlt:
       'Mapa vintage panorámico en relieve 3D de Puerto Rico sobre pergamino, con El Morro, Viejo San Juan, un coquí, una rosa de los vientos y el título Puerto Rico',
     intro: [
-      'Puerto Rico fue, en 1766, la primera provincia de ultramar española que imprimió papeletas de 8 reales. Durante siglos el situado mexicano sostuvo las arcas de la isla; cuando las independencias americanas cortaron ese subsidio, el gobernador Salvador Meléndez Bruna autorizó, el 31 de agosto de 1812, una moneda provincial de papel. En 1813 la emisión de papeletas llegó a 500.000 pesos. El intendente Alejandro Ramírez, llegado el 11 de febrero de 1813, las amortizó hacia 1816.',
+      'Puerto Rico fue, en 1766, la primera provincia de ultramar española que imprimió papeletas de 8 reales. Durante siglos el situado mexicano sostuvo las arcas de la isla; cuando las independencias americanas cortaron ese subsidio, el gobernador Salvador Meléndez Bruna autorizó, el 31 de agosto de 1812, una moneda provincial de papel. En 1813 la emisión de papeletas llegó a 500.000 pesos. El intendente Alejandro Ramírez, llegado el 11 de febrero de 1813, las amortizó hacia 1816. La obligación de 25 pesos del 4 de mayo de 1813, N.º 24, es deuda de la Tesorería endosable, distinta de aquellas papeletas.',
       'El descrédito de aquel papel detuvo nuevas emisiones durante décadas. El papel volvió con la Guerra de los Diez Años. Desde Nueva York, la Junta Central Republicana de Cuba y Puerto Rico —presidida por José Morales Lemus, con el secretario puertorriqueño Dr. José Francisco Basora— sirvió como apoyo gubernamental en el exilio: recaudar fondos, administrar las finanzas exteriores de la República de Cuba en armas y enlazar la política anticolonial cubana y puertorriqueña entre donantes, imprentas y comunidades de exiliados. El 1 de junio de 1869, la República autorizó un empréstito de veinte millones de pesos; semanas después, Morales Lemus y Basora fueron detenidos bajo las leyes de neutralidad estadounidenses.',
       'A finales de siglo la isla seguía sin moneda propia: macuquinas desgastadas, pesos mexicanos, dólares Morgan y otras piezas de plata extranjera —muchas contramarcadas con flor de lis desde 1884— saturaban el comercio. La escasez de moneda oficial y fraccionaria empujó a haciendas azucareras y cafetaleras, a comerciantes y a algunos municipios a emitir su propio papel —vales o billetes rústicos— y, a menudo, fichas de latón. Ese scrip privado pagaba jornales y sostenía el trato diario mientras el circulante de la metrópoli no alcanzaba.',
       'En esa misma crisis de circulante, el hito bancario de la isla fue el Banco Español de Puerto Rico. Autorizada por real decreto el 5 de mayo de 1888 e inaugurada el 1 de febrero de 1890, fue la única institución con monopolio de la emisión de billetes. La American Bank Note Company de Nueva York imprimió las series de 5, 10, 20, 50, 100 y 200 pesos (Pick 8–31). El peso suelto de Ultramar —el Billete de Canje— no forma parte de esas series.',
       'El Real Decreto del 17 de agosto de 1895 creó el Billete de Canje de 1 peso (Pick 7): instrumento efímero, equivalente a 25 g de plata .900, para recoger esa plata y acuñar en Madrid la moneda provincial. Tres años después del decreto, el Tratado de París cerró el capítulo colonial español.',
       'El papel no se detuvo con el tratado. El Congreso de Estados Unidos respetó la carta española; el banco se reorganizó como Banco de Puerto Rico (Bank of Porto Rico), perdió el monopolio exclusivo y siguió emitiendo papel transicional —sellado y adaptado al dólar—, el llamado dólar puertorriqueño (Pick 32 y 41–48). En 1902, el First National Bank of Porto Rico, en San Juan, empezó a emitir billetes nacionales estadounidenses (Pick 33–41).',
-      'La carta española venció en 1913 y el banco se liquidó. Entre el 16 y el 24 de enero de 1916, una comisión de liquidación recogió el papel insular que aún circulaba; en enero de 1925, los ejemplares recuperados se incineraron. Por eso, los billetes del Banco Español y del Banco de Puerto Rico son hoy escasos: solo sobrevive una fracción de lo emitido. Esta vitrina no inventa existencias de esas series: documenta el contexto y las tres piezas de la colección.',
+      'La carta española venció en 1913 y el banco se liquidó. Entre el 16 y el 24 de enero de 1916, una comisión de liquidación recogió el papel insular que aún circulaba; en enero de 1925, los ejemplares recuperados se incineraron. Por eso, los billetes del Banco Español y del Banco de Puerto Rico son hoy escasos: solo sobrevive una fracción de lo emitido. Esta vitrina no inventa existencias de esas series: documenta el contexto y las cuatro piezas de la colección.',
     ],
     coinageLead: 'La moneda provincial de 1895, acuñada en Madrid, se documenta en la vitrina de numismática.',
     coinageLink: 'Puerto Rico · Numismática',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Billete circulante de 1 peso de la Junta Central de 1869 (P#61, N.º 13085), recibo de contribución provisional (N.º 32, abajo) y billete de Canje de 1895 (P#7b, serial radar 4548454).',
+      'Obligación de 25 pesos de la Tesorería Nacional, 4 de mayo de 1813 (N.º 24), billete circulante de 1 peso de la Junta Central de 1869 (P#61, N.º 13085), recibo de contribución provisional (N.º 32) y billete de Canje de 1895 (P#7b, serial radar 4548454).',
     holdingsAria: 'Billetes de Puerto Rico en la colección',
     viewNote: 'Ver la ficha',
     pickLabel: 'Pick',
@@ -103,19 +103,19 @@ export const seriesCopy = {
     heroAlt:
       'Vintage panoramic 3D relief map of Puerto Rico on parchment, with El Morro, Old San Juan, a coquí, a compass rose, and the title Puerto Rico',
     intro: [
-      'In 1766 Puerto Rico became the first Spanish overseas province to print 8-real papeletas. For centuries the Mexican situado propped up the island treasury; when Spanish American independence cut that subsidy, Governor Salvador Meléndez Bruna authorized provincial paper on 31 August 1812. By 1813 the papeleta issue reached 500,000 pesos. Intendant Alejandro Ramírez, who arrived on 11 February 1813, amortized it by 1816.',
+      'In 1766 Puerto Rico became the first Spanish overseas province to print 8-real papeletas. For centuries the Mexican situado propped up the island treasury; when Spanish American independence cut that subsidy, Governor Salvador Meléndez Bruna authorized provincial paper on 31 August 1812. By 1813 the papeleta issue reached 500,000 pesos. Intendant Alejandro Ramírez, who arrived on 11 February 1813, amortized it by 1816. The 25-peso obligation of 4 May 1813, No. 24, is endorsable Treasury debt, distinct from those papeletas.',
       'The disgrace of that paper stopped new issues for decades. Paper returned with the Ten Years’ War. From New York, the Central Republican Board of Cuba and Puerto Rico — chaired by José Morales Lemus, with Puerto Rican secretary Dr. José Francisco Basora — served as a government-in-exile support body: fundraising, managing the external finances of the Republic of Cuba in arms, and linking Cuban and Puerto Rican anti-colonial politics among donors, printers, and exile communities. On 1 June 1869, the Republic authorized a twenty-million-peso loan; weeks later Morales Lemus and Basora were arrested under U.S. neutrality laws.',
       'At century’s end the island still lacked its own coin: worn macuquinas, Mexican pesos, Morgan dollars, and other foreign silver — much of it fleur-de-lis countermarked from 1884 — flooded commerce. The shortage of official and fractional coin pushed sugar and coffee haciendas, merchants, and some municipalities to issue their own paper — vales or rustic notes — often with brass tokens. That private scrip paid day wages and kept daily trade moving while metropolitan currency fell short.',
       'In that same shortage of circulating money, the island’s banking landmark was the Banco Español de Puerto Rico. Authorized by royal decree on 5 May 1888 and opened on 1 February 1890, it was the only institution with a monopoly of banknote issue. The American Bank Note Company of New York printed the 5, 10, 20, 50, 100, and 200 peso series (Pick 8–31). The Overseas Ministry’s single-peso exchange note is not part of those series.',
       'The royal decree of 17 August 1895 created the 1-peso exchange note (Pick 7): a short-lived instrument, equivalent to 25 g of .900 silver, to gather that silver and strike provincial coin in Madrid. Three years after the decree, the Treaty of Paris closed the Spanish colonial chapter.',
       'Paper did not stop with the treaty. The United States Congress respected the Spanish charter; the bank was reorganized as Banco de Puerto Rico (Bank of Porto Rico), lost its exclusive monopoly, and kept issuing transitional notes — stamped and adapted to the dollar — the so-called Puerto Rican dollar (Pick 32 and 41–48). In 1902, the First National Bank of Porto Rico, in San Juan, began issuing United States National Bank Notes (Pick 33–41).',
-      'The Spanish charter expired in 1913 and the bank was liquidated. Between 16 and 24 January 1916, a liquidation commission gathered the island notes still in circulation; in January 1925, the recovered pieces were incinerated. That is why Banco Español and Banco de Puerto Rico notes are scarce today: only a fraction of what was issued survives. This case does not invent holdings of those series: it documents the context and the three pieces in the collection.',
+      'The Spanish charter expired in 1913 and the bank was liquidated. Between 16 and 24 January 1916, a liquidation commission gathered the island notes still in circulation; in January 1925, the recovered pieces were incinerated. That is why Banco Español and Banco de Puerto Rico notes are scarce today: only a fraction of what was issued survives. This case does not invent holdings of those series: it documents the context and the four pieces in the collection.',
     ],
     coinageLead: 'The 1895 provincial coinage, struck in Madrid, is documented in the numismatics case.',
     coinageLink: 'Puerto Rico · Numismatics',
     holdingsTitle: 'Notes in the collection',
     holdingsIntro:
-      '1869 Central Board circulating 1-peso note (P#61, No. 13085), provisional fundraising receipt (No. 32, below), and 1895 exchange note (P#7b, radar serial 4548454).',
+      'National Treasury 25-peso obligation of 4 May 1813 (No. 24), 1869 Central Board circulating 1-peso note (P#61, No. 13085), provisional fundraising receipt (No. 32), and 1895 exchange note (P#7b, radar serial 4548454).',
     holdingsAria: 'Puerto Rico banknotes in the collection',
     viewNote: 'Open the note page',
     pickLabel: 'Pick',
@@ -125,6 +125,7 @@ export const seriesCopy = {
 } as const;
 
 export type PuertoRicoNoteId =
+  | 'tesoreria-nacional-25-pesos-1813'
   | 'junta-central-1-peso-1869'
   | 'junta-central-cuba-1869'
   | 'billete-de-canje-1-peso-1895';
@@ -160,6 +161,135 @@ export type PuertoRicoNote = {
 };
 
 export const puertoRicoNotes: PuertoRicoNote[] = [
+  {
+    id: 'tesoreria-nacional-25-pesos-1813',
+    path: '/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/',
+    pick: 'B113a · Pick PNL · Edifil 2021: 4',
+    serial: '24',
+    serial_display: 'N.º 24',
+    serial_kind: 'low',
+    signatures: {
+      es: 'Alejandro Ramírez (V.º B.º, visto bueno); Juan Patiño (Tesorero); José Bacener (Contador)',
+      en: 'Alejandro Ramírez (V.º B.º, approval); Juan Patiño (Treasurer); José Bacener (Accountant)',
+    },
+    printed: {
+      es: '4 de mayo de 1813, Puerto Rico. Obligación parcialmente impresa y completada a mano, endosable como vale. Plazo manuscrito de un año. Capital en moneda provisional de papeletas. Interés impreso del 6 % anual en plata efectiva; la nota al pie lo pasa a papel. Acta de la Junta Provincial de Hacienda del 22 de marzo de 1813. Imprenta, filigrana y medidas de la hoja no constan en esta ficha.',
+      en: '4 May 1813, Puerto Rico. Partly printed obligation completed by hand, transferable by endorsement. Handwritten term of one year. Principal in provisional papeleta currency. Printed interest of 6% a year in silver; the foot note moves it to paper. Resolution of the Provincial Finance Board of 22 March 1813. Printer, watermark, and sheet dimensions are not recorded on this page.',
+    },
+    images: {
+      composite:
+        '/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-composite.jpg',
+      front:
+        '/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-front.jpg',
+      back:
+        '/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-back.jpg',
+      frontWidth: 1088,
+      frontHeight: 1445,
+      backWidth: 1024,
+      backHeight: 1536,
+    },
+    title: {
+      es: '25 pesos · Tesorería Nacional · 1813',
+      en: '25 pesos · National Treasury · 1813',
+    },
+    kicker: {
+      es: 'Puerto Rico · Tesorería Nacional',
+      en: 'Puerto Rico · National Treasury',
+    },
+    lead: {
+      es: 'Obligación de 25 pesos de la Tesorería Nacional, 4 de mayo de 1813, N.º 24. El 6 % impreso en plata queda, por nota manuscrita, pagadero en papel.',
+      en: 'National Treasury obligation for 25 pesos, 4 May 1813, No. 24. A handwritten note makes the printed 6% interest payable in paper.',
+    },
+    description: {
+      es: 'La Tesorería Nacional de Puerto Rico expidió esta obligación el 4 de mayo de 1813, en la crisis del situado mexicano y del papel provincial. No es la primera papeleta de la isla: hay emisiones documentadas desde 1766, y Salvador Meléndez Bruna autorizó moneda provincial de papel el 31 de agosto de 1812. El impreso promete devolver, a un año de la fecha, veinticinco pesos en moneda provisional de papeletas, con arreglo al acta de la Junta Provincial de Hacienda del 22 de marzo de ese año, y abonar los premios al seis por ciento anual en plata efectiva. El plazo «Un año» va manuscrito. El beneficiario se lee como don Francisco Puig y Gibert, el mismo nombre que publican otros ejemplares del tipo; eso no aporta una biografía ni convierte un rasgo de pluma en su firma. Al pie, una nota manuscrita cambia la condición de pago: «Nota: Los premios de esta cantidad se pagarán en papel.» Aquí «premios» es el interés. Al 6 % anual, el interés nominal de 25 pesos es 1,50 pesos; la cuenta no prueba que se cobrara. El número impreso es 24, un número bajo. El anverso lleva orla, el ancla coronada con banderola entre follaje, sello y firmas. Bajo «V.º B.º / Ramírez» se atribuye el visto bueno a Alejandro Ramírez, intendente de Hacienda llegado el 11 de febrero de 1813; Juan Patiño firma como tesorero y José Bacener como contador. La combinación coincide con ejemplares publicados e identifica a los firmantes esperados; no autentica por sí sola la mano de esta hoja. «Sentada á foxas» y «Anotada» son asientos de registro; el folio manuscrito que sigue no se ha leído con seguridad. Nota manuscrita continuada al reverso, relativa al pago de intereses en papel, con dos rúbricas atribuibles a Juan Patiño y José Bacener. El reverso no tiene diseño impreso propio; la transparencia del anverso no se cataloga como reverso impreso. Las fotografías de origen son la evidencia de esta ficha. No hay grado ni número de certificación a la vista. Medidas, filigrana, imprenta y procedencia quedan pendientes de examen directo. En el margen izquierdo se ven orificios; los bordes son irregulares y hay zonas de tinta oscura.',
+      en: 'The National Treasury of Puerto Rico issued this obligation on 4 May 1813, during the Mexican situado crisis and the provincial paper issues. It is not the island’s first paper: issues are documented from 1766, and Salvador Meléndez Bruna authorized provincial paper currency on 31 August 1812. The printed text promises to repay, one year from the date, twenty-five pesos in provisional papeleta currency, under the Provincial Finance Board resolution of 22 March that year, and to pay the premios at six percent a year in silver. The term “Un año” is handwritten. The payee reads as Don Francisco Puig y Gibert, the name published on other examples of the type; that does not supply a biography, and it does not make any flourish his signature. A handwritten note at the foot changes the payment term: “Nota: Los premios de esta cantidad se pagarán en papel.” Here premios means the interest. At 6% a year, the nominal interest on 25 pesos is 1.50 pesos; the arithmetic does not show that it was paid. The printed number is 24, a low number. The face has an ornamental border, a crowned anchor and banner within foliage, a seal, and signatures. Beneath “V.º B.º / Ramírez” the approval is attributed to Alejandro Ramírez, intendant of the Treasury, who arrived on 11 February 1813; Juan Patiño signs as treasurer and José Bacener as accountant. The combination matches published examples and names the expected signers; it does not by itself authenticate the hand on this sheet. “Sentada á foxas” and “Anotada” are register entries; the handwritten folio that follows has not been read with certainty. A manuscript note continues on the back, about the payment of interest in paper, with two flourishes attributable to Juan Patiño and José Bacener. The back has no printed design of its own; show-through from the face is not catalogued as a printed back. The original photographs are the evidence for this record. No grade or certification number is in view. Dimensions, watermark, printer, and provenance wait on direct examination. The left margin shows holes; the edges are irregular and some ink is dark.',
+    },
+    frontCaption: {
+      es: 'Anverso de la obligación de 25 pesos, N.º 24, 4 de mayo de 1813: Tesorería Nacional, ancla coronada, firmas de Ramírez, Patiño y Bacener, y la nota de premios en papel.',
+      en: 'Face of the 25-peso obligation, No. 24, 4 May 1813: National Treasury, crowned anchor, signatures of Ramírez, Patiño, and Bacener, and the note that interest is paid in paper.',
+    },
+    backCaption: {
+      es: 'Nota manuscrita continuada al reverso, relativa al pago de intereses en papel, con dos rúbricas atribuibles a Juan Patiño y José Bacener. Sin impresión propia: la transparencia del anverso no es un reverso impreso.',
+      en: 'Manuscript note continued on the back, about interest paid in paper, with two flourishes attributable to Juan Patiño and José Bacener. No printing of its own: show-through from the face is not a printed back.',
+    },
+    scarcity: {
+      es: 'El tipo es una obligación de la Tesorería Nacional, transferible por endoso, no una papeleta de curso. Pick no lo lista (PNL). Edifil 2021 lo numera 4; las correspondencias de editor también lo citan como PR2, Filabo 2PR y The Banknote Book B113a. Esta ficha no reimprime columnas de precio. Ejemplares publicados llevan otros números, entre ellos 33 y 34, y no son esta hoja. El N.º 24 es un número bajo. No se inventa una tirada.',
+      en: 'The type is a National Treasury obligation, transferable by endorsement, not a circulating papeleta. Pick leaves it unlisted (PNL). Edifil 2021 numbers it 4; publisher cross-references also cite it as PR2, Filabo 2PR, and Banknote Book B113a. This record does not reprint price columns. Published examples carry other numbers, including 33 and 34, and they are not this sheet. No. 24 is a low number. No printage is invented.',
+    },
+    population: {
+      es: 'No hay un censo verificado para el N.º 24. Las fotografías no muestran cápsula ni número de certificación. Los catálogos de subasta describen el tipo como escaso; eso no fija una población ni un grado numérico de rareza.',
+      en: 'There is no verified census for No. 24. The photographs show no holder and no certification number. Auction catalogues describe the type as scarce; that does not fix a population or a numerical rarity grade.',
+    },
+    grade: {
+      es: 'Sin encapsular; orificios en el margen izquierdo, bordes irregulares y tinta oscura (colección privada)',
+      en: 'Unslabbed; holes along the left margin, irregular edges, and dark ink (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://enciclopediapr.org/content/historia-de-la-moneda-en-puerto-rico/',
+        es: 'EnciclopediaPR — Historia de la moneda en Puerto Rico',
+        en: 'EnciclopediaPR — History of money in Puerto Rico',
+        note: {
+          es: 'Papeletas desde 1766, autorización de 1812, llegada de Ramírez el 11 de febrero de 1813 y amortización del papel.',
+          en: 'Papeletas from 1766, the 1812 authorization, Ramírez’s arrival on 11 February 1813, and the amortization of the paper.',
+        },
+      },
+      {
+        href: 'https://revistas.ucm.es/index.php/DOCU/article/view/109519',
+        es: 'Documenta & Instrumenta — Papel moneda fraccionario de Puerto Rico (s. XIX)',
+        en: 'Documenta & Instrumenta — Fractional paper money in Puerto Rico (19th century)',
+        note: {
+          es: 'Papeletas de 1813–1814 autorizadas por Salvador Meléndez Bruna.',
+          en: '1813–1814 papeletas authorized by Salvador Meléndez Bruna.',
+        },
+      },
+      {
+        href: 'https://www.numisbids.com/sale/10611/lot/1530',
+        es: 'NumisBids — Sedwick, Tesorería Nacional, 25 pesos, 4-5-1813',
+        en: 'NumisBids — Sedwick, National Treasury, 25 pesos, 4-5-1813',
+        note: {
+          es: 'Otro ejemplar, con otro número. Nombra a Puig y Gibert, Patiño, Bacener y Ramírez, y marca el tipo como Pick no listado. No es esta hoja, y esta ficha no adopta el juicio de que sea la primera moneda de la isla.',
+          en: 'Another example, with another number. It names Puig y Gibert, Patiño, Bacener, and Ramírez, and marks the type Pick-unlisted. It is not this sheet, and this record does not adopt the claim that the type was the island’s first currency.',
+        },
+      },
+      {
+        href: 'https://ibercoin.bidinside.com/en/lot/53233/puerto-rico-25-pesos-4-de-mayo-de-1813-/',
+        es: 'Ibercoin — 25 pesos, 4 de mayo de 1813, Real Tesorería (Edifil 2021: 4)',
+        en: 'Ibercoin — 25 pesos, 4 May 1813, Royal Treasury (Edifil 2021: 4)',
+        note: {
+          es: 'Cita la edición 2021 de Edifil, número 4, para otro ejemplar del tipo.',
+          en: 'Cites the 2021 Edifil edition, number 4, for another example of the type.',
+        },
+      },
+      {
+        href: 'https://www.greysheet.com/prices/sp/puerto-rico-tesorer%C3%ADa-nacional/12210',
+        es: 'Greysheet — The Banknote Book, serie Tesorería Nacional',
+        en: 'Greysheet — The Banknote Book, Tesorería Nacional series',
+        note: {
+          es: 'La serie figura en The Banknote Book. El cruce B113a se registra aquí; esta ficha no reimprime la guía de precios.',
+          en: 'The series is listed in The Banknote Book. The B113a cross-reference is recorded here; this page does not reprint the price guide.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/v29/esylum_v29n07a27.html',
+        es: 'The E-Sylum — Papel moneda puertorriqueño',
+        en: 'The E-Sylum — Puerto Rican paper money',
+        note: {
+          es: 'Crisis del situado, papeletas de 1812–1813 y amortización de Ramírez hacia 1816.',
+          en: 'The situado crisis, the 1812–1813 papeletas, and Ramírez’s amortization by 1816.',
+        },
+      },
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/PRI/PRI.htm',
+        es: 'Bank Note Museum — Puerto Rico',
+        en: 'Bank Note Museum — Puerto Rico',
+        note: {
+          es: 'Contexto de la Tesorería Nacional junto a las emisiones posteriores de la isla.',
+          en: 'National Treasury context beside the island’s later issues.',
+        },
+      },
+    ],
+  },
   {
     id: 'junta-central-cuba-1869',
     path: '/coleccion/puerto-rico/junta-central-cuba-1869/',

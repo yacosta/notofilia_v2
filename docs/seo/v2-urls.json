@@ -1,6 +1,6 @@
 {
   "generatedFrom": "dist",
-  "count": 952,
+  "count": 954,
   "urls": [
     {
       "path": "/",
@@ -1251,6 +1251,15 @@
       "lastSlug": "billete-de-canje-1-peso-1895",
       "title": "1 peso · Billete de Canje · 1895",
       "alternate": "/en/collection/puerto-rico/1-peso-exchange-note-1895/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
+      "lang": "es",
+      "type": "catalogue",
+      "lastSlug": "tesoreria-nacional-25-pesos-1813",
+      "title": "25 pesos · Tesorería Nacional · 1813",
+      "alternate": "/en/collection/puerto-rico/national-treasury-25-pesos-1813/",
       "redirectTo": ""
     },
     {
@@ -3537,6 +3546,15 @@
       "lastSlug": "1-peso-exchange-note-1895",
       "title": "1 Peso · Exchange Note · 1895",
       "alternate": "/coleccion/puerto-rico/billete-de-canje-1-peso-1895/",
+      "redirectTo": ""
+    },
+    {
+      "path": "/en/collection/puerto-rico/national-treasury-25-pesos-1813/",
+      "lang": "en",
+      "type": "catalogue",
+      "lastSlug": "national-treasury-25-pesos-1813",
+      "title": "25 pesos · National Treasury · 1813",
+      "alternate": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
       "redirectTo": ""
     },
     {

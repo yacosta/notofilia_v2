@@ -38,6 +38,14 @@ describe('locale path mapping', () => {
       localizePath('/en/collection/puerto-rico/1-peso-exchange-note-1895/', 'es'),
       '/coleccion/puerto-rico/billete-de-canje-1-peso-1895/',
     );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/', 'en'),
+      '/en/collection/puerto-rico/national-treasury-25-pesos-1813/',
+    );
+    assert.equal(
+      localizePath('/en/collection/puerto-rico/national-treasury-25-pesos-1813/', 'es'),
+      '/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/',
+    );
     assert.equal(localizePath('/glosario/notafilia/', 'en'), '/en/glossary/notaphily/');
     assert.equal(localizePath('/glosario/polimero/', 'en'), '/en/glossary/polymer/');
     assert.equal(localizePath('/glosario/#libra', 'en'), '/en/glossary/#libra');
@@ -907,6 +915,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/puerto-rico/billete-de-canje-1-peso-1895/'],
       '/en/collection/puerto-rico/1-peso-exchange-note-1895/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/'],
+      '/en/collection/puerto-rico/national-treasury-25-pesos-1813/',
     );
     assert.equal(redirects['/en/coleccion/notafilia/catalogo/'], '/en/collection/notaphily/catalog/');
     assert.equal(

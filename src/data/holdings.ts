@@ -251,6 +251,7 @@ export const additions: Holding[] = [
   { id: 'co-2010-1000-pesos-42222224', kind: 'banknote', country: 'CO' },
   { id: 'co-2009-2000-pesos-70200207', kind: 'banknote', country: 'CO' },
   { id: 'co-2009-1000-pesos-78400487', kind: 'banknote', country: 'CO' },
+  { id: 'pr-tesoreria-nacional-25-pesos-1813', kind: 'banknote', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -428,6 +429,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2010-1000-pesos-p456m' },
   { id: 'co-2009-2000-pesos-p457k' },
   { id: 'co-2009-1000-pesos-p456l' },
+  { id: 'pr-1813-25-pesos-b113a' },
 ];
 
 export type CollectionStats = {

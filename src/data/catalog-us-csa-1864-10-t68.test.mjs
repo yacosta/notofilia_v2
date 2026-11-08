@@ -82,14 +82,14 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'co-2009-1000-pesos-78400487');
+    assert.equal(milestones[0]?.holdingId, 'pr-tesoreria-nacional-25-pesos-1813');
     assert.match(
       milestones[0]?.image ?? '',
-      /colombia-banco-de-la-republica-1000-pesos-2009-78400487-front\.jpg$/,
+      /puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-front\.jpg$/,
     );
-    assert.equal(additions.at(-1)?.id, 'co-2009-1000-pesos-78400487');
+    assert.equal(additions.at(-1)?.id, 'pr-tesoreria-nacional-25-pesos-1813');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-2009-1000-pesos-p456l');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-1813-25-pesos-b113a');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,
