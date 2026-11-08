@@ -82,12 +82,12 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'pr-tesoreria-nacional-25-pesos-1813');
+    assert.equal(milestones[0]?.holdingId, 'us-frn-1934a-hawaii-20-l85934593a');
     assert.match(
       milestones[0]?.image ?? '',
-      /puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-front\.jpg$/,
+      /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-front\.jpg$/,
     );
-    assert.equal(additions.at(-1)?.id, 'pr-tesoreria-nacional-25-pesos-1813');
+    assert.equal(additions.at(-1)?.id, 'us-frn-1934a-hawaii-20-l85934593a');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.equal(catalogAdditions.at(-1)?.id, 'pr-1813-25-pesos-b113a');
     assert.equal(

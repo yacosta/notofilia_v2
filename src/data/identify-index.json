@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T22:54:06.768Z",
+  "generatedAt": "2026-11-09T00:46:25.846Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5167,11 +5167,11 @@
     {
       "pieceId": "20-dolares-serie-1934a-hawaii",
       "face": "front",
-      "hash": "000092b630050000",
+      "hash": "10b3b3b3b1b33310",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
       "pick": "Fr. 2305",
-      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-composite.jpg",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-composite.jpg",
       "title": {
         "es": "20 dólares · HAWAII · Serie 1934 A",
         "en": "$20 · HAWAII · Series 1934 A"
@@ -5180,11 +5180,11 @@
     {
       "pieceId": "20-dolares-serie-1934a-hawaii",
       "face": "front",
-      "hash": "c89769292b6dd441",
+      "hash": "484749aa2b4d6522",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
       "pick": "Fr. 2305",
-      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-front.jpg",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-front.jpg",
       "title": {
         "es": "20 dólares · HAWAII · Serie 1934 A",
         "en": "$20 · HAWAII · Series 1934 A"
@@ -5193,14 +5193,53 @@
     {
       "pieceId": "20-dolares-serie-1934a-hawaii",
       "face": "back",
+      "hash": "54a713250b55770f",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-back.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A",
+        "en": "$20 · HAWAII · Series 1934 A"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii-l86654132a",
+      "face": "front",
+      "hash": "000092b630050000",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-composite.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A · L86654132A",
+        "en": "$20 · HAWAII · Series 1934 A · L86654132A"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii-l86654132a",
+      "face": "front",
+      "hash": "c89769292b6dd441",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
+      "pick": "Fr. 2305",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-front.jpg",
+      "title": {
+        "es": "20 dólares · HAWAII · Serie 1934 A · L86654132A",
+        "en": "$20 · HAWAII · Series 1934 A · L86654132A"
+      }
+    },
+    {
+      "pieceId": "20-dolares-serie-1934a-hawaii-l86654132a",
+      "face": "back",
       "hash": "4a64564d15558440",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
       "pick": "Fr. 2305",
       "image": "/images/catalog/united-states/united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-back.jpg",
       "title": {
-        "es": "20 dólares · HAWAII · Serie 1934 A",
-        "en": "$20 · HAWAII · Series 1934 A"
+        "es": "20 dólares · HAWAII · Serie 1934 A · L86654132A",
+        "en": "$20 · HAWAII · Series 1934 A · L86654132A"
       }
     },
     {

@@ -116,6 +116,23 @@ function collectionSeeds(): CollectionSeed[] {
       image: note.images.front,
       imageAlt: note.frontCaption,
     });
+    for (const example of note.examples ?? []) {
+      seeds.push({
+        id: `us-${example.id}`,
+        country: 'US',
+        href: `${usaNotePath(note, 'es')}#${example.id}`,
+        title: example.title,
+        dek: example.note,
+        pick: note.pick,
+        serial: example.serial,
+        issuer: note.kicker,
+        year: yearFromText(note.printed.es, example.title.es, note.kicker.es),
+        era: 'other',
+        flags: flagsFrom(example.title.es, note.kicker.es, note.pick, example.note.es),
+        image: example.images.front,
+        imageAlt: example.frontCaption,
+      });
+    }
   }
 
   for (const note of mpcVietnamNotes) {

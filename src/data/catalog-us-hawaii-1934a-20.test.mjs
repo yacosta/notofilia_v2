@@ -24,6 +24,7 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(data, /id: '20-dolares-serie-1934a-hawaii'/);
     assert.match(note, /chapterId: 'us-frb'/);
     assert.match(note, /pick: 'Fr\. 2305'/);
+    assert.match(note, /serial: 'L85934593A'/);
     assert.match(note, /serial: 'L86654132A'/);
     assert.doesNotMatch(note, /cert_number:/);
     assert.match(note, /William Alexander Julian/);
@@ -38,13 +39,17 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(note, /numerado en 1944/);
     assert.match(note, /numbered in 1944/);
     assert.match(note, /Fr\. 2304/);
+    assert.match(note, /plancha de reverso 380/);
+    assert.match(note, /back plate 380/);
     assert.match(note, /plancha de reverso 382/);
     assert.match(note, /back plate 382/);
+    assert.match(note, /plancha de anverso 42/);
+    assert.match(note, /face plate 42/);
     assert.match(note, /no mula/);
     assert.match(note, /non-mule/);
     assert.match(note, /N#202426/);
     assert.match(note, /Huntoon/);
-    assert.match(note, /no es un reemplazo con estrella/i);
+    assert.match(note, /reemplazo con estrella/i);
     assert.match(note, /not a star replacement/i);
     assert.match(note, /Sin encapsular/);
     assert.match(note, /Ungraded/);
@@ -52,6 +57,7 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(note, /es: '20 dólares · HAWAII · Serie 1934 A'/);
     assert.match(holdings, /us-frn-1934a-hawaii-20-l86654132a/);
     assert.match(holdings, /id: 'us-frn-1934a-hawaii-20-l86654132a', kind: 'banknote', country: 'US'/);
+    assert.match(holdings, /id: 'us-frn-1934a-hawaii-20-l85934593a', kind: 'banknote', country: 'US'/);
     assert.match(holdings, /us-frn-1934a-hawaii-fr2305/);
   });
 
@@ -65,14 +71,17 @@ describe('US Series 1934A HAWAII $20 Fr. 2305', () => {
     assert.match(esPiece, /noteById\('20-dolares-serie-1934a-hawaii'\)/);
     assert.match(enPiece, /UnitedStatesNotePage/);
     assert.match(enPiece, /locale="en"/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-composite\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-front\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-back\.jpg/);
     assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-composite\.jpg/);
     assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-front\.jpg/);
     assert.match(note, /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l86654132a-back\.jpg/);
   });
 
   it('names the holding in the Federal Reserve chapter, series inventory, and FAQ', () => {
-    assert.match(data, /20 dólares HAWAII serie 1934 A \(Fr\. 2305\), serial L86654132A/);
-    assert.match(data, /Series 1934A HAWAII \$20 \(Fr\. 2305\), serial L86654132A/);
+    assert.match(data, /20 dólares HAWAII serie 1934 A \(Fr\. 2305\), seriales L85934593A y L86654132A/);
+    assert.match(data, /Series 1934A HAWAII \$20 \(Fr\. 2305\), serials L85934593A and L86654132A/);
     assert.match(faq, /¿Qué es el 20 dólares HAWAII serie 1934 A\?/);
     assert.match(faq, /What is the Series 1934A HAWAII \$20\?/);
     assert.match(faq, /serial L86654132A/);

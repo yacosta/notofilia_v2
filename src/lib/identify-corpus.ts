@@ -183,6 +183,18 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
       imageBack: note.images.back,
       imageComposite: note.images.composite,
     });
+    for (const example of note.examples ?? []) {
+      pushSeed(seeds, {
+        id: `us-${example.id}`,
+        kind: 'banknote',
+        path: `${note.path}#${example.id}`,
+        pick: note.pick,
+        title: example.title,
+        imageFront: example.images.front,
+        imageBack: example.images.back,
+        imageComposite: example.images.composite,
+      });
+    }
   }
 
   for (const note of mpcVietnamNotes) {
