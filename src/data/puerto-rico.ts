@@ -183,9 +183,9 @@ export const puertoRicoNotes: PuertoRicoNote[] = [
         '/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-front.jpg',
       back:
         '/images/catalog/puerto-rico/puerto-rico-tesoreria-nacional-obligacion-25-pesos-1813-24-back.jpg',
-      frontWidth: 1088,
-      frontHeight: 1445,
-      backWidth: 1024,
+      frontWidth: 1106,
+      frontHeight: 1536,
+      backWidth: 1106,
       backHeight: 1536,
     },
     title: {
