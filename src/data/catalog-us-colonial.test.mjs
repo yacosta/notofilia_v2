@@ -383,6 +383,11 @@ describe('US colonial series page 1690–1788', () => {
     assert.match(data, /kicker: '1690–1788'/);
     assert.match(data, /notesForChapter\('us-colonial'\)|chapterId === 'us-colonial'/);
     assert.match(colonialPage, /notesForChapter\('us-colonial'\)/);
+    assert.match(colonialPage, /enhanceProseHtml/);
+    assert.match(colonialPage, /colonial-paper-history\/es\.html/);
+    assert.match(colonialPage, /colonial-paper-history\/en\.html/);
+    assert.match(colonialPage, /colonial-holdings-heading/);
+    assert.match(colonialPage, /t\.holdingsNote/);
     assert.match(seriesPage, /viewColonialCase/);
     assert.match(seriesPage, /USA_COLONIAL_PATH/);
     assert.match(esRoute, /UnitedStatesColonialSeriesPage/);
@@ -390,19 +395,30 @@ describe('US colonial series page 1690–1788', () => {
     assert.match(enRoute, /UnitedStatesColonialSeriesPage/);
     assert.match(enRoute, /locale="en"/);
     assert.doesNotMatch(colonialPage, /seriesSources/);
-    assert.match(colonialPage, /colonial-provincial-heading/);
-    assert.match(colonialPage, /colonial-how-to-read-heading/);
-    assert.match(colonialPage, /colonial-references-heading/);
-    assert.match(colonialPage, /t\.holdingsNote/);
-    assert.match(data, /provincialTitle: 'Ochenta y cinco años de papel provincial'/);
-    assert.match(data, /howToReadTitle: 'Cómo leer un billete colonial'/);
-    assert.match(data, /referencesTitle: 'Referencias y conservación'/);
-    assert.match(data, /Serie 9733/);
-    assert.match(data, /Serial 21251/);
     assert.match(data, /esperan un serial legible o un certificado/);
     assert.match(data, /wait for a readable serial or a certificate/);
-    assert.match(data, /no se adoptan aquí números de catálogo Newman/);
-    assert.match(data, /Newman catalog numbers are not adopted here/);
     assert.match(data, /holdingsCardsLabel: 'Fichas con imagen'/);
+  });
+
+  it('ships bilingual history essay HTML that links every colonial holding', () => {
+    const essayEs = readFileSync(
+      new URL('./colonial-paper-history/es.html', import.meta.url),
+      'utf8',
+    );
+    const essayEn = readFileSync(
+      new URL('./colonial-paper-history/en.html', import.meta.url),
+      'utf8',
+    );
+    for (const body of [essayEs, essayEn]) {
+      assert.match(body, /5-dolares-continental-1779/);
+      assert.match(body, /5-chelines-pensilvania-1773/);
+      assert.match(body, /2-chelines-6-peniques-pensilvania-1773/);
+      assert.match(body, /20-chelines-connecticut-1780/);
+      assert.match(body, /20-chelines-rhode-island-1786/);
+      assert.match(body, /Jacques de Meulles|jacques de meulles/i);
+      assert.match(body, /monnaie de carte/);
+      assert.match(body, /Newman catalog numbers are not adopted here|no se adoptan aquí números de catálogo Newman/);
+      assert.doesNotMatch(body, /\$100|few thousand|greysheet|precio de guía/i);
+    }
   });
 });
