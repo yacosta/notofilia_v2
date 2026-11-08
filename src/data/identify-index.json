@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T21:41:59.623Z",
+  "generatedAt": "2026-11-08T21:57:30.440Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -7039,7 +7039,7 @@
     {
       "pieceId": "tesoreria-nacional-25-pesos-1813",
       "face": "front",
-      "hash": "b6da94ca62aa9428",
+      "hash": "d2bac59290a2cec4",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
       "pick": "B113a · Pick PNL · Edifil 2021: 4",
@@ -7052,7 +7052,7 @@
     {
       "pieceId": "tesoreria-nacional-25-pesos-1813",
       "face": "front",
-      "hash": "cccaeaaeccead290",
+      "hash": "d98c8c92edd4cae0",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
       "pick": "B113a · Pick PNL · Edifil 2021: 4",
@@ -7065,7 +7065,7 @@
     {
       "pieceId": "tesoreria-nacional-25-pesos-1813",
       "face": "back",
-      "hash": "57d5eb9485a9a850",
+      "hash": "84a4ca9a86c6ccd0",
       "kind": "banknote",
       "path": "/coleccion/puerto-rico/tesoreria-nacional-25-pesos-1813/",
       "pick": "B113a · Pick PNL · Edifil 2021: 4",
