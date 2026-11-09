@@ -389,6 +389,7 @@ export const seriesCopy = {
     coinageLead: 'La moneda metálica de estas mismas épocas se documenta en la vitrina de numismática.',
     coinageLink: 'Colombia-Numismática',
     bancaLibreEssay: 'Leer el ensayo de la banca libre',
+    issue1923Essay: 'Leer la emisión de 1923',
     guidesTitle: 'Guías sobre billetes colombianos',
     guidesLead:
       'Notas de método y de historia para leer el papel colombiano de esta vitrina: valoración, pies de imprenta, iconografía y la banca libre.',
@@ -542,6 +543,7 @@ export const seriesCopy = {
     coinageLead: 'Coinage from the same periods is documented in the numismatics case.',
     coinageLink: 'Colombia-Numismatics',
     bancaLibreEssay: 'Read the free-banking essay',
+    issue1923Essay: 'Read the 1923 issue',
     guidesTitle: 'Guides to Colombian banknotes',
     guidesLead:
       'Method and history notes for reading the Colombian paper in this case: valuation, imprints, iconography, and free banking.',

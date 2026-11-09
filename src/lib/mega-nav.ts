@@ -1,6 +1,7 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { BANCA_LIBRE_PATH } from '../data/colombia-banca-libre';
+import { ISSUE_1923_PATH } from '../data/colombia-1923-issue';
 import { noteById as colombiaNoteById } from '../data/colombia-notes';
 import { NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
@@ -219,6 +220,13 @@ export const megaNav: NavNode[] = [
             en: 'Free banking (1870–1887)',
             href: BANCA_LIBRE_PATH,
             flag: 'co-1889',
+          },
+          {
+            id: 'emision-1923',
+            es: 'Emisión de 1923',
+            en: '1923 issue',
+            href: ISSUE_1923_PATH,
+            flag: 'co',
           },
           {
             id: 'colombia-1-peso-oro-1959-1977',

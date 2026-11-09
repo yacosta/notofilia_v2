@@ -25,6 +25,10 @@ describe('Colombia series overview', () => {
     assert.equal(seriesCopy.en.bancaLibreEssay, 'Read the free-banking essay');
     assert.match(pageSource, /BANCA_LIBRE_PATH/);
     assert.match(pageSource, /chapter\.id === 'banca-libre'/);
+    assert.equal(seriesCopy.es.issue1923Essay, 'Leer la emisión de 1923');
+    assert.equal(seriesCopy.en.issue1923Essay, 'Read the 1923 issue');
+    assert.match(pageSource, /ISSUE_1923_PATH/);
+    assert.match(pageSource, /chapter\.id === 'banco-de-la-republica'/);
   });
 
   it('keeps a bilingual cataloguing method block on the series page', () => {

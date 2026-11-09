@@ -15,6 +15,7 @@ import {
   seriesSources,
 } from '../../data/colombia';
 import { BANCA_LIBRE_PATH } from '../../data/colombia-banca-libre';
+import { ISSUE_1923_PATH } from '../../data/colombia-1923-issue';
 import { COLOMBIA_COINAGE_PATH } from '../../data/colombia-coinage';
 import { errorNoteCards, hasErrorNotes } from '../../data/colombia-errors';
 import { notePath, notesForChapter, seriesCardGroupsForChapter, seriesCardHref } from '../../data/colombia-notes';
@@ -138,6 +139,18 @@ const jsonLd = collectionPageJsonLd({
                       href={localizePath(BANCA_LIBRE_PATH, locale)}
                     >
                       {t.bancaLibreEssay}
+                    </a>
+                  </p>
+                ) : null
+              }
+              {
+                chapter.id === 'banco-de-la-republica' ? (
+                  <p class="mb-0 mt-4">
+                    <a
+                      class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(ISSUE_1923_PATH, locale)}
+                    >
+                      {t.issue1923Essay}
                     </a>
                   </p>
                 ) : null

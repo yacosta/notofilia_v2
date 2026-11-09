@@ -1,5 +1,6 @@
 import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
+import { ISSUE_1923_PATH } from '../data/colombia-1923-issue';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { ECUADOR_PATH } from '../data/ecuador';
 import { articlePath, blogArticles, newsArticles } from '../data/editorial';
@@ -159,6 +160,11 @@ const extraHighValuePages = [
     es: 'Banca libre',
     en: 'Free banking',
   },
+  {
+    href: ISSUE_1923_PATH,
+    es: 'Emisión de 1923',
+    en: 'The 1923 issue',
+  },
   { href: LAZARETTOS_PATH, es: 'Lazarettos', en: 'Lazarettos' },
   {
     href: '/coleccion/numismatica/numismatica-de-los-lazaretos/',
@@ -234,6 +240,7 @@ export function llmsTxt(): string {
   const hubs = [
     { href: '/coleccion/', es: 'Colección', en: 'Collection', esDesc: 'Índice de la colección virtual.', enDesc: 'Index of the virtual collection.' },
     { href: COLOMBIA_PATH, es: 'Billetes de Colombia', en: 'Colombian banknotes', esDesc: 'Notafilia colombiana, de la banca libre al Banco de la República.', enDesc: 'Colombian notaphily, from free banking to Banco de la República.' },
+    { href: ISSUE_1923_PATH, es: 'Emisión de 1923', en: 'The 1923 issue', esDesc: 'Ley 25, resellados de Medellín y la primera serie en pesos oro. Sin precios.', enDesc: 'Law 25, the Medellín overprints, and the first gold-peso series. No prices.' },
     { href: '/coleccion/notafilia/catalogo/', es: 'Catálogo de notafilia', en: 'Notaphily catalog', esDesc: 'Todos los billetes documentados, sin precios.', enDesc: 'Every documented banknote, with no prices.' },
     { href: USA_PATH, es: 'Estados Unidos', en: 'United States', esDesc: 'Papel federal, colonial, MPC y obsoletos de la colección.', enDesc: 'Federal, colonial, MPC, and obsolete notes in the collection.' },
     { href: '/coleccion/numismatica/', es: 'Numismática', en: 'Numismatics', esDesc: 'Monedas de la colección por país.', enDesc: 'Coins in the collection, by country.' },
