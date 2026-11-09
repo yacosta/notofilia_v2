@@ -71,6 +71,7 @@ import { educationalSeriesDedicatedSlugs } from '../data/educational-series-1896
 import { indianHeadQuarterEagleDedicatedSlugs } from '../data/indian-head-quarter-eagle';
 import { wwiiEmergencyDedicatedSlugs } from '../data/wwii-emergency-banknotes';
 import { BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN, bancaLibreDedicatedSlugs } from '../data/colombia-banca-libre';
+import { ISSUE_1923_PATH, ISSUE_1923_PATH_EN, issue1923DedicatedSlugs } from '../data/colombia-1923-issue';
 import { coscojasSantanderDedicatedSlugs } from '../data/coscojas-santander';
 import { popayan1EscudoCarlosIvDedicatedSlugs } from '../data/popayan-1-escudo-carlos-iv';
 import { santaFeMintDedicatedSlugs } from '../data/santa-fe-mint';
@@ -190,6 +191,7 @@ addLocalePair(USA_OBSOLETE_PATH, USA_OBSOLETE_PATH_EN);
 addLocalePair(ABOUT_PATH, ABOUT_PATH_EN);
 addLocalePair(COMPARISON_PATH, COMPARISON_PATH_EN);
 addLocalePair(BANCA_LIBRE_PATH, BANCA_LIBRE_PATH_EN);
+addLocalePair(ISSUE_1923_PATH, ISSUE_1923_PATH_EN);
 addLocalePair(NETHERLANDS_COINAGE_PATH, NETHERLANDS_COINAGE_PATH_EN);
 
 export { copy } from '../i18n/copy';
@@ -375,6 +377,7 @@ const dedicatedEs = [
   ...puertoRicoPaths,
   COLOMBIA_PATH.replace(/^\/|\/$/g, ''),
   ...bancaLibreDedicatedSlugs,
+  ...issue1923DedicatedSlugs,
   ...colombiaEraSlugs(),
   COLOMBIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),
   NOTAFILIA_NOTES_CATALOG_PATH.replace(/^\/|\/$/g, ''),

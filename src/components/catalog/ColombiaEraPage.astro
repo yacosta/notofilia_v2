@@ -12,6 +12,7 @@ import {
   type ColombiaChapter,
 } from '../../data/colombia';
 import { notesForChapter, seriesCardGroupsForChapter } from '../../data/colombia-notes';
+import { ISSUE_1923_PATH } from '../../data/colombia-1923-issue';
 import SourceList from './SourceList.astro';
 
 interface Props {
@@ -60,6 +61,18 @@ const jsonLd = collectionPageJsonLd({
       </h1>
       <p class="mb-6 mt-0 max-w-[46rem] text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
       <p class="mb-10 mt-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+      {
+        chapter.id === 'banco-de-la-republica' ? (
+          <p class="mb-10 mt-0">
+            <a
+              class="inline-flex min-h-11 items-center text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(ISSUE_1923_PATH, locale)}
+            >
+              {t.issue1923Essay}
+            </a>
+          </p>
+        ) : null
+      }
 
       {
         hasHoldings ? (
