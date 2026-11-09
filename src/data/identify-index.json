@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T00:46:25.846Z",
+  "generatedAt": "2026-11-09T01:03:24.360Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5167,7 +5167,7 @@
     {
       "pieceId": "20-dolares-serie-1934a-hawaii",
       "face": "front",
-      "hash": "10b3b3b3b1b33310",
+      "hash": "20b3b3b3b1f33390",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
       "pick": "Fr. 2305",
@@ -5180,7 +5180,7 @@
     {
       "pieceId": "20-dolares-serie-1934a-hawaii",
       "face": "front",
-      "hash": "484749aa2b4d6522",
+      "hash": "4a414d8a2bcd558a",
       "kind": "banknote",
       "path": "/coleccion/estados-unidos/20-dolares-hawaii-1934a/",
       "pick": "Fr. 2305",
