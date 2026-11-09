@@ -252,6 +252,7 @@ export const additions: Holding[] = [
   { id: 'co-2009-2000-pesos-70200207', kind: 'banknote', country: 'CO' },
   { id: 'co-2009-1000-pesos-78400487', kind: 'banknote', country: 'CO' },
   { id: 'pr-tesoreria-nacional-25-pesos-1813', kind: 'banknote', country: 'PR' },
+  { id: 'us-frn-1934a-hawaii-20-l85934593a', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */

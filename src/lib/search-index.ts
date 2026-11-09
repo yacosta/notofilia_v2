@@ -346,6 +346,23 @@ function pieceSeeds(): PieceSeed[] {
       image: note.images.composite,
       imageAlt: note.frontCaption,
     });
+    for (const example of note.examples ?? []) {
+      seeds.push({
+        id: `us-${example.id}`,
+        kind: 'banknote',
+        path: `${note.path}#${example.id}`,
+        pick: note.pick,
+        serial: example.serial,
+        title: example.title,
+        dek: example.note,
+        kicker: note.kicker,
+        signatures: note.signatures,
+        grade: example.grade,
+        description: example.note,
+        image: example.images.composite,
+        imageAlt: example.frontCaption,
+      });
+    }
   }
 
   for (const note of mpcVietnamNotes) {

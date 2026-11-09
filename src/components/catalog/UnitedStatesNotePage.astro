@@ -14,6 +14,7 @@ import {
   isEducationalSeriesNote,
   notePageCopy,
   notePath,
+  noteSerialLine,
   noteSeriesHref,
   seriesPath,
   unitedStatesNotes,
@@ -41,6 +42,8 @@ const pathname = notePath(note, locale);
 const sources = note.sources;
 const imageWidth = note.images.width ?? 1800;
 const imageHeight = note.images.height ?? 600;
+const examples = note.examples ?? [];
+const serialLine = noteSerialLine(note);
 const hero = note.hero
   ? { src: note.hero.src[locale], width: note.hero.width, height: note.hero.height }
   : undefined;
@@ -53,16 +56,14 @@ const catalogRows = note.friedberg
   ? [{ label: t.friedbergLabel, value: note.friedberg }]
   : catalogReferenceRows(note.pick, locale);
 const physical = note.physical;
-const scanImages = [note.images.front, note.images.back].flatMap((src, index) =>
-  src
-    ? [
-        {
-          src,
-          caption: index === 0 ? note.frontCaption[locale] : note.backCaption[locale],
-        },
-      ]
-    : [],
-);
+const scanImages = [
+  { src: note.images.front, caption: note.frontCaption[locale] },
+  { src: note.images.back, caption: note.backCaption[locale] },
+  ...examples.flatMap((example) => [
+    { src: example.images.front, caption: example.frontCaption[locale] },
+    { src: example.images.back, caption: example.backCaption[locale] },
+  ]),
+].filter((image) => image.src);
 const seo = piecePageMeta({
   kind: 'note',
   title: note.title[locale],
@@ -142,7 +143,7 @@ const jsonCrumbs = [
           locale,
           artform: 'Banknote',
           catalogNumber: note.scwpm ? `${note.scwpm} · ${note.friedberg ?? note.pick}` : note.pick,
-          serial: note.serial,
+          serial: serialLine,
           gradingService: inferGradingService(note.grade[locale]),
         }),
         ],
@@ -208,8 +209,10 @@ const jsonCrumbs = [
             ) : null
           }
           <div>
-            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.serialLabel}</dt>
-            <dd class="m-0 mt-1 text-cream">{note.serial_display ?? note.serial}</dd>
+            <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
+              {examples.length ? t.serialsLabel : t.serialLabel}
+            </dt>
+            <dd class="m-0 mt-1 text-cream">{examples.length ? serialLine : (note.serial_display ?? note.serial)}</dd>
           </div>
           {
             (note.facts ?? []).map((fact) => (
@@ -305,6 +308,53 @@ const jsonCrumbs = [
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
         </figure>
       </div>
+
+      {
+        examples.map((example) => (
+          <div id={example.id} class="mt-14 scroll-mt-28 border-t border-line-strong pt-14">
+            <h2 class="mb-2 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
+              {t.exampleHeading} {example.serial}
+            </h2>
+            <p class="mb-8 mt-0 text-[17px]/7 text-muted">{example.note[locale]}</p>
+            <p class="mb-8 mt-0 font-sans text-[15px]/6 text-cream">
+              <span class="font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}: </span>
+              {example.grade[locale]}
+            </p>
+            <div class="grid gap-10 lg:grid-cols-2">
+              <figure class="m-0">
+                <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h3>
+                <NoteImageLightbox
+                  src={example.images.front}
+                  sideLabel={t.frontHeading}
+                  title={example.title[locale]}
+                  serial={example.serial}
+                  expandLabel={t.expandImage}
+                  closeLabel={t.closeLightbox}
+                  locale={locale}
+                  width={example.images.width ?? imageWidth}
+                  height={example.images.height ?? imageHeight}
+                />
+                <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{example.frontCaption[locale]}</figcaption>
+              </figure>
+              <figure class="m-0">
+                <h3 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h3>
+                <NoteImageLightbox
+                  src={example.images.back}
+                  sideLabel={t.backHeading}
+                  title={example.title[locale]}
+                  serial={example.serial}
+                  expandLabel={t.expandImage}
+                  closeLabel={t.closeLightbox}
+                  locale={locale}
+                  width={example.images.width ?? imageWidth}
+                  height={example.images.height ?? imageHeight}
+                />
+                <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{example.backCaption[locale]}</figcaption>
+              </figure>
+            </div>
+          </div>
+        ))
+      }
 
       <section class="mt-14" aria-labelledby="about-heading">
         <h2 id="about-heading" class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim">
