@@ -47,7 +47,7 @@ export const fancySerialCopy = {
       'La clasificación en esta página necesita JavaScript. Mientras tanto puede leer el término de numeración especial en el glosario.',
     explainerTitle: 'Qué cuenta como numeración especial',
     explainer: [
-      'Un serial «especial» es un patrón en los dígitos impresos: bajo (1–100 en el ancho), capicúa, binario, sólido, escalera o repetidor. El clasificador no inventa un ejemplar: solo nombra una ficha cuando el serial coincide con un objeto publicado.',
+      'Un serial «especial» es un patrón en los dígitos impresos: bajo (1–100 en el ancho), capicúa, binario, sólido, escalera o repetidor. Si hay ocho dígitos, el clasificador también usa la lista de esta página. No inventa un ejemplar: solo nombra una ficha cuando el serial coincide con un objeto publicado.',
       'Pick, fecha y tipo no bastan para identificar el objeto. Dos billetes del mismo Pick son dos piezas si los seriales difieren. Un serial capicúa no prueba autenticidad.',
     ],
     needsJsLink: 'Numeración especial',
@@ -91,7 +91,7 @@ export const fancySerialCopy = {
       'Classification on this page needs JavaScript. Meanwhile you can read the fancy serial term in the glossary.',
     explainerTitle: 'What counts as a fancy serial',
     explainer: [
-      'A “fancy” serial is a pattern in the printed digits: low (1–100 on the width), radar, binary, solid, ladder, or repeater. The checker does not invent a holding: it names a record only when the serial matches a published object.',
+      'A “fancy” serial is a pattern in the printed digits: low (1–100 on the width), radar, binary, solid, ladder, or repeater. With eight digits, the checker also uses the list on this page. It does not invent a holding: it names a record only when the serial matches a published object.',
       'Pick, date, and type do not identify the object. Two notes of the same Pick are two pieces if the serials differ. A radar serial does not prove authenticity.',
     ],
     needsJsLink: 'Fancy serial number',
