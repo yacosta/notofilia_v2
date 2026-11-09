@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
 import { localizePath, SITE_URL, type Locale } from '../lib/site';
 import { glossaryTermHref, glossaryTerms } from '../data/glossary';
+import { fancyCatalogCopy, fancyCatalogRows } from '../data/fancy-serial-catalog';
 import {
   fancySerialClassLabels,
   fancySerialCopy,
@@ -18,6 +19,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = fancySerialCopy[locale];
+const catalog = fancyCatalogCopy[locale];
 const pathname = fancySerialPath(locale);
 const glossaryEspecial = glossaryTermHref('numeracion-especial', locale);
 const classLabels = fancySerialClassLabels[locale];
@@ -79,6 +81,14 @@ const ui = {
   holdingLead: t.holdingLead,
   holdingLink: t.holdingLink,
   noHolding: t.noHolding,
+  catalogHeading: catalog.inList,
+  datePattern: catalog.datePattern,
+  months: catalog.months,
+  catalogLabels: Object.fromEntries(
+    fancyCatalogRows
+      .filter((row) => row.id !== 'name-day' && row.id !== 'historical-date')
+      .map((row) => [row.id, row.name[locale]]),
+  ),
   glossaryPaths: Object.fromEntries(
     [
       'numeracion',
@@ -139,6 +149,56 @@ const ui = {
         {t.explainer.map((paragraph) => (
           <p class="mb-4 mt-0 text-[17px]/7 text-cream last:mb-0">{paragraph}</p>
         ))}
+      </section>
+
+      <section class="mb-10" aria-labelledby="fancy-catalog">
+        <h2 id="fancy-catalog" class="mb-3 mt-0 font-display text-[1.35rem] font-normal text-cream">
+          {catalog.title}
+        </h2>
+        <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{catalog.intro}</p>
+        <div class="overflow-x-auto border border-line-strong">
+          <table class="w-full min-w-[52rem] border-collapse font-sans text-[15px] text-cream-dim">
+            <caption class="sr-only">{catalog.title}</caption>
+            <thead>
+              <tr class="border-b border-line-strong bg-panel text-left">
+                <th class="px-3 py-2.5 font-semibold text-cream" scope="col">{catalog.pattern}</th>
+                <th class="px-3 py-2.5 font-semibold text-cream" scope="col">{catalog.meaning}</th>
+                <th class="px-3 py-2.5 font-semibold text-cream" scope="col">{catalog.examples}</th>
+                <th class="px-3 py-2.5 font-semibold text-cream" scope="col">{catalog.count}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                fancyCatalogRows.map((row) => (
+                  <tr class="border-b border-line-strong align-top last:border-b-0">
+                    <th class="px-3 py-2.5 text-left font-semibold text-cream" scope="row">{row.name[locale]}</th>
+                    <td class="px-3 py-2.5">{row.definition[locale]}</td>
+                    <td class="px-3 py-2.5">
+                      <div class="flex flex-wrap gap-2">
+                        {
+                          row.examples.map((example) => (
+                            <button
+                              type="button"
+                              class="min-h-11 rounded-full border border-line-strong bg-panel px-3.5 py-[7px] font-mono text-[13px] text-cream-dim hover:border-cream hover:text-cream"
+                              data-fancy-example={example}
+                            >
+                              {example}
+                            </button>
+                          ))
+                        }
+                      </div>
+                    </td>
+                    <td class="px-3 py-2.5 font-mono text-[14px] text-cream">
+                      {row.count == null
+                        ? catalog.openCount
+                        : row.count.toLocaleString(locale === 'es' ? 'es-CO' : 'en-US')}
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <form class="mb-8 max-w-[46rem]" data-fancy-form>
@@ -219,6 +279,7 @@ const ui = {
     type FancySerialClass,
     type PublishedSerialHit,
   } from '../lib/fancy-serial';
+  import { matchFancyCatalog, readSerialDate } from '../lib/fancy-serial-catalog';
 
   type FancyUi = {
     labels: Record<FancySerialClass, string>;
@@ -237,6 +298,10 @@ const ui = {
     holdingLead: string;
     holdingLink: string;
     noHolding: string;
+    catalogHeading: string;
+    datePattern: string;
+    months: string[];
+    catalogLabels: Record<string, string>;
     glossaryPaths: Record<string, string>;
     glossaryTitles: Record<string, string>;
     holdings: PublishedSerialHit[];
@@ -305,17 +370,23 @@ const ui = {
         results.append(note);
       }
 
-      const classesTitle = document.createElement('h3');
-      classesTitle.className = 'mb-3 mt-2 font-display text-[1.15rem] font-normal text-cream';
-      classesTitle.textContent = ui.classesLabel;
-      results.append(classesTitle);
+      const catalogHits = matchFancyCatalog(parsed.digits);
+      const serialDate = readSerialDate(parsed.digits);
+      const showOrdinary = parsed.ordinary && !catalogHits.length && !serialDate;
 
-      if (parsed.ordinary) {
+      if (!parsed.ordinary || showOrdinary) {
+        const classesTitle = document.createElement('h3');
+        classesTitle.className = 'mb-3 mt-2 font-display text-[1.15rem] font-normal text-cream';
+        classesTitle.textContent = ui.classesLabel;
+        results.append(classesTitle);
+      }
+
+      if (showOrdinary) {
         const p = document.createElement('p');
         p.className = 'mb-4 mt-0 text-[15px]/6 text-cream-dim';
         p.textContent = ui.ordinary;
         results.append(p);
-      } else {
+      } else if (!parsed.ordinary) {
         const list = document.createElement('ul');
         list.className = 'mb-4 mt-0 list-none p-0';
         for (const name of parsed.classes) {
@@ -331,6 +402,34 @@ const ui = {
           list.append(li);
         }
         results.append(list);
+      }
+
+      if (catalogHits.length || serialDate) {
+        const catalogTitle = document.createElement('h3');
+        catalogTitle.className = 'mb-3 mt-2 font-display text-[1.15rem] font-normal text-cream';
+        catalogTitle.textContent = ui.catalogHeading;
+        results.append(catalogTitle);
+        if (catalogHits.length) {
+          const catalogList = document.createElement('ul');
+          catalogList.className = 'mb-4 mt-0 list-none p-0';
+          for (const id of catalogHits) {
+            const li = document.createElement('li');
+            li.className = 'mb-2 font-sans text-[15px]/6 text-cream';
+            li.textContent = ui.catalogLabels[id] ?? id;
+            catalogList.append(li);
+          }
+          results.append(catalogList);
+        }
+        if (serialDate) {
+          const dateLine = document.createElement('p');
+          dateLine.className = 'mb-4 mt-0 text-[15px]/6 text-cream-dim';
+          const month = ui.months[serialDate.month - 1] ?? '';
+          dateLine.textContent = ui.datePattern
+            .replace('{day}', String(serialDate.day))
+            .replace('{month}', month)
+            .replace('{year}', String(serialDate.year));
+          results.append(dateLine);
+        }
       }
 
       const glossaryTitle = document.createElement('h3');
@@ -381,7 +480,11 @@ const ui = {
         p.className = 'm-0 text-[15px]/6 text-cream-dim';
         p.textContent = ui.noHolding;
         results.append(p);
-        setStatus(parsed.ordinary ? ui.ordinary : parsed.classes.map((name) => ui.labels[name]).join(', '));
+        const summary = [
+          ...parsed.classes.map((name) => ui.labels[name]),
+          ...catalogHits.map((id) => ui.catalogLabels[id] ?? id),
+        ];
+        setStatus(summary.length ? summary.join(', ') : ui.ordinary);
       }
     }
 
