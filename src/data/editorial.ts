@@ -433,6 +433,22 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '2 escudos · Felipe II · Sevilla',
     en: '2 escudos · Philip II · Seville',
   },
+  '/glosario/ceca/': {
+    es: 'Ceca / marca de ceca',
+    en: 'Mint / mint mark',
+  },
+  '/glosario/curso-legal/': {
+    es: 'Curso legal',
+    en: 'Legal tender',
+  },
+  '/coleccion/china/': {
+    es: 'China',
+    en: 'China',
+  },
+  '/coleccion/china/100-yuan/': {
+    es: '100 yuan · Milenio 2000',
+    en: '100 yuan · Millennium 2000',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -563,6 +579,22 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/espana-numismatica/2-escudos-sevilla-felipe-ii-s-d/': {
     es: 'Oro peninsular de Felipe II, ceca de Sevilla, sin fecha.',
     en: 'Peninsular gold of Philip II, Seville mint, undated.',
+  },
+  '/glosario/ceca/': {
+    es: 'Filadelfia no marca. Denver es D y San Francisco es S.',
+    en: 'Philadelphia uses no mark. Denver is D and San Francisco is S.',
+  },
+  '/glosario/curso-legal/': {
+    es: 'El facial que obliga a aceptar la pieza como pago.',
+    en: 'The face value that makes the piece acceptable as payment.',
+  },
+  '/coleccion/china/': {
+    es: 'Del jiaozi al renminbi. No hay un Panda de oro en la vitrina.',
+    en: 'From the jiaozi to the renminbi. There is no gold Panda in the case.',
+  },
+  '/coleccion/china/100-yuan/': {
+    es: 'El polímero de la colección, con el Templo del Cielo en la ventana. No es un Panda.',
+    en: 'The collection’s polymer note, with the Temple of Heaven in the window. Not a Panda.',
   },
 };
 
