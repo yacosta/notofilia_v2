@@ -82,14 +82,14 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-frn-1934a-hawaii-20-l85934593a');
+    assert.equal(milestones[0]?.holdingId, 'pr-nd-un-almud-vega-redonda');
     assert.match(
       milestones[0]?.image ?? '',
-      /united-states-federal-reserve-note-20-dollars-series-1934a-hawaii-l85934593a-front\.jpg$/,
+      /puerto-rico-hacienda-vega-redonda-un-almud\.webp$/,
     );
-    assert.equal(additions.at(-1)?.id, 'us-frn-1934a-hawaii-20-l85934593a');
-    assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-1813-25-pesos-b113a');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.kind, 'coin');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,

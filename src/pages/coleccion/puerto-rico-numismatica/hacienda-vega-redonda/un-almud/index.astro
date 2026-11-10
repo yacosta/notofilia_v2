@@ -1,0 +1,8 @@
+---
+import PuertoRicoVegaRedondaTokenPage from '../../../../../components/catalog/PuertoRicoVegaRedondaTokenPage.astro';
+import { vegaRedondaTokenById } from '../../../../../data/vega-redonda';
+
+const token = vegaRedondaTokenById('pr-nd-un-almud-vega-redonda');
+---
+
+<PuertoRicoVegaRedondaTokenPage locale="es" token={token} />

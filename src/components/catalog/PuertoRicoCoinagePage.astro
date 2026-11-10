@@ -16,6 +16,7 @@ import {
   puertoRicoCoinageChapters,
   puertoRicoCoins,
 } from '../../data/puerto-rico-coinage';
+import { vegaRedondaPath } from '../../data/vega-redonda';
 import SourceList from './SourceList.astro';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 
@@ -84,6 +85,16 @@ const jsonLd = collectionPageJsonLd({
           href={notesPath(locale)}
         >
           {t.notesLink}
+        </a>
+      </p>
+      <p class="mb-0 mt-4 text-[17px]/7 text-muted">
+        {t.tokensLead}
+        {' '}
+        <a
+          class="text-gold-light underline decoration-line-strong hover:text-cream"
+          href={vegaRedondaPath(locale)}
+        >
+          {t.tokensLink}
         </a>
       </p>
 

@@ -52,6 +52,7 @@ import { mpcProgramNotes } from '../data/mpc';
 import { netherlandsCoins } from '../data/netherlands-coinage';
 import { spainCoins } from '../data/espana-coinage';
 import { puertoRicoCoins } from '../data/puerto-rico-coinage';
+import { VEGA_REDONDA_PATH, vegaRedondaCopy, vegaRedondaTokens } from '../data/vega-redonda';
 import { liberiaCoins } from '../data/liberia-coinage';
 import { unitedStatesCoins, USA_MORGAN_PATH, USA_SILVER_EAGLE_PATH } from '../data/estados-unidos-coinage';
 import { morganSeriesCopy } from '../data/estados-unidos-morgan-dollars';
@@ -451,6 +452,22 @@ function pieceSeeds(): PieceSeed[] {
     });
   }
 
+  for (const token of vegaRedondaTokens) {
+    seeds.push({
+      id: token.id,
+      kind: 'coin',
+      path: token.path,
+      pick: token.references,
+      title: token.title,
+      dek: token.lead,
+      kicker: token.kicker,
+      grade: token.grade,
+      description: token.description,
+      image: token.images.front,
+      imageAlt: token.caption,
+    });
+  }
+
   for (const coin of liberiaCoins) {
     seeds.push({
       id: `lr-coin-${coin.id}`,
@@ -699,6 +716,16 @@ export function searchDocuments(locale: Locale): SearchDocument[] {
       },
       extra:
         'Manzano Farming Co Sotaquirá Paipa Boyacá Papayo Sativa Satira Carreño Soconsuca seña 1901 10 25 centavos resello JB Barriga Credencial Historia Montaña Absoluti',
+    },
+    {
+      href: VEGA_REDONDA_PATH,
+      title: { es: vegaRedondaCopy.es.nav, en: vegaRedondaCopy.en.nav },
+      dek: {
+        es: vegaRedondaCopy.es.metaDescription,
+        en: vegaRedondaCopy.en.metaDescription,
+      },
+      extra:
+        'Hacienda Vega Redonda Las Marías Bucarabones almud ril ficha café Rulau Lsm 15 Lsm 16 Lsm 17 Lsm 18 Numista 163262 524158 570378 ND 1890 latón Francisco Bacó',
     },
     {
       href: LAZARETTOS_NUMISMATICS_PATH,

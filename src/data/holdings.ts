@@ -253,6 +253,9 @@ export const additions: Holding[] = [
   { id: 'co-2009-1000-pesos-78400487', kind: 'banknote', country: 'CO' },
   { id: 'pr-tesoreria-nacional-25-pesos-1813', kind: 'banknote', country: 'PR' },
   { id: 'us-frn-1934a-hawaii-20-l85934593a', kind: 'banknote', country: 'US' },
+  { id: 'pr-nd-cuarto-almud-vega-redonda', kind: 'coin', country: 'PR' },
+  { id: 'pr-nd-medio-almud-vega-redonda', kind: 'coin', country: 'PR' },
+  { id: 'pr-nd-un-almud-vega-redonda', kind: 'coin', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -431,6 +434,9 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'co-2009-2000-pesos-p457k' },
   { id: 'co-2009-1000-pesos-p456l' },
   { id: 'pr-1813-25-pesos-b113a' },
+  { id: 'pr-nd-cuarto-almud-vega-redonda' },
+  { id: 'pr-nd-medio-almud-vega-redonda' },
+  { id: 'pr-nd-un-almud-vega-redonda' },
 ];
 
 export type CollectionStats = {

@@ -50,6 +50,7 @@ import {
 } from '../data/estados-unidos-coinage';
 import { spainCoinageDedicatedSlugs, spainCoinSlugs } from '../data/espana-coinage';
 import { puertoRicoCoinageDedicatedSlugs, puertoRicoCoinSlugs } from '../data/puerto-rico-coinage';
+import { vegaRedondaDedicatedSlugs } from '../data/vega-redonda';
 import { liberiaCoinageDedicatedSlugs, liberiaCoinSlugs } from '../data/liberia-coinage';
 import { catalogNoteSlugs as philippinesNoteSlugs, dedicatedCatalogPaths as catalogPaths, SERIES_PATH } from '../data/philippines-victory-66';
 import { catalogNoteSlugs as philippinesPnbNoteSlugs, dedicatedCatalogPaths as philippinesPnbPaths } from '../data/philippines-pnb-1916';
@@ -399,6 +400,7 @@ const dedicatedEs = [
   ...unitedStatesCoinageDedicatedSlugs,
   ...spainCoinageDedicatedSlugs,
   ...puertoRicoCoinageDedicatedSlugs,
+  ...vegaRedondaDedicatedSlugs,
   ...liberiaCoinageDedicatedSlugs,
   USA_PATH.replace(/^\/|\/$/g, ''),
   USA_PATH_EN.replace(/^\/|\/$/g, ''),

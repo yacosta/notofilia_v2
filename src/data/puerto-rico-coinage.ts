@@ -115,6 +115,8 @@ export const seriesCopy = {
     parentLink: 'Numismática',
     notesLead: 'El papel moneda de Puerto Rico, incluido el Billete de Canje de 1895, se documenta en la vitrina de notafilia.',
     notesLink: 'Puerto Rico · Emisiones coloniales y de transición',
+    tokensLead: 'Las fichas de almud de la Hacienda Vega Redonda, en Las Marías, están en otra vitrina de esta numismática.',
+    tokensLink: 'Hacienda Vega Redonda',
   },
   en: {
     metaTitle: 'Puerto Rico · Numismatics | Notofilia',
@@ -132,6 +134,8 @@ export const seriesCopy = {
     parentLink: 'Numismatics',
     notesLead: 'Puerto Rico’s paper money, including the 1895 exchange note, is documented in the notaphily case.',
     notesLink: 'Puerto Rico · Colonial and transition issues',
+    tokensLead: 'The almud tokens of Hacienda Vega Redonda, in Las Marías, are in another case of this numismatics section.',
+    tokensLink: 'Hacienda Vega Redonda',
   },
 } as const;
 

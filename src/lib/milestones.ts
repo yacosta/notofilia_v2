@@ -15,6 +15,7 @@ import {
 import { netherlandsCoins, coinPath as netherlandsCoinPath } from '../data/netherlands-coinage.ts';
 import { spainCoins, coinPath as spainCoinPath } from '../data/espana-coinage.ts';
 import { puertoRicoCoins, coinPath as puertoRicoCoinPath } from '../data/puerto-rico-coinage.ts';
+import { vegaRedondaTokens } from '../data/vega-redonda.ts';
 import { liberiaCoins, coinPath as liberiaCoinPath } from '../data/liberia-coinage.ts';
 import { unitedStatesCoins, coinPath as unitedStatesCoinPath } from '../data/estados-unidos-coinage.ts';
 import { additions } from '../data/holdings.ts';
@@ -134,6 +135,21 @@ function catalogPieces(): CatalogPiece[] {
       cert: '',
       image: coin.images?.composite ?? '',
       imageAlt: coin.frontCaption,
+    });
+  }
+
+  for (const token of vegaRedondaTokens) {
+    pieces.push({
+      id: token.id,
+      country: 'PR',
+      href: token.path,
+      title: token.title,
+      dek: token.lead,
+      pick: token.references,
+      serial: '',
+      cert: '',
+      image: token.images.front,
+      imageAlt: token.caption,
     });
   }
 
