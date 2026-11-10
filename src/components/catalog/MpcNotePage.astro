@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import {
   mpcVietnamNotes,
   notePageCopy as vietnamNotePageCopy,
@@ -60,7 +60,7 @@ const jsonCrumbs = [
   description={seo.description}
   locale={locale}
   pathname={pathname}
-  ogImage={note.images.front}
+  ogImage={note.images.front} ogImageAlt={pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
     <script
@@ -74,6 +74,8 @@ const jsonCrumbs = [
           description: seo.description,
           url: pathname,
           image: note.images.front,
+          imageWidth: note.images.width,
+          imageHeight: note.images.height,
           locale,
           artform: 'Banknote',
           catalogNumber: note.pick,
@@ -141,6 +143,7 @@ const jsonCrumbs = [
             sideLabel={t.frontHeading}
             title={note.title[locale]}
             serial={note.serial}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -157,6 +160,7 @@ const jsonCrumbs = [
             sideLabel={t.backHeading}
             title={note.title[locale]}
             serial={note.serial}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

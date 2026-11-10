@@ -13,7 +13,7 @@ import {
   manzanoFarmingPieceSources,
 } from '../../data/manzano-farming-piece';
 import { NUMISMATICA_PATH } from '../../data/numismatica';
-import { linkFirstGlossaryTerms } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt } from '../../lib/catalog-media';
 import { breadcrumbList, visualArtworkJsonLd } from '../../lib/json-ld';
 import { localizePath, type Locale } from '../../lib/site';
 
@@ -41,7 +41,7 @@ const jsonCrumbs = [
 ];
 ---
 
-<Layout title={documentTitle} description={t.metaDescription} locale={locale} pathname={pathname} ogImage={MANZANO_FARMING_PIECE_IMAGES.composite}>
+<Layout title={documentTitle} description={t.metaDescription} locale={locale} pathname={pathname} ogImage={MANZANO_FARMING_PIECE_IMAGES.composite} ogImageAlt={pieceScanAlt({ sideLabel: t.pairHeading, title: t.title, catalogNumber: t.reference })}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
@@ -54,6 +54,8 @@ const jsonCrumbs = [
             description: t.metaDescription,
             url: pathname,
             image: MANZANO_FARMING_PIECE_IMAGES.composite,
+            imageWidth: MANZANO_FARMING_PIECE_IMAGES.width,
+            imageHeight: MANZANO_FARMING_PIECE_IMAGES.height,
             locale,
             artform: 'Coin',
             issuer: 'Manzano Farming Co.',
@@ -130,6 +132,7 @@ const jsonCrumbs = [
           src={MANZANO_FARMING_PIECE_IMAGES.composite}
           sideLabel={t.pairHeading}
           title={t.title}
+          catalogNumber={t.reference}
           expandLabel={t.expandImage}
           closeLabel={t.closeLightbox}
           locale={locale}

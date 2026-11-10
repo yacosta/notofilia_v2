@@ -48,7 +48,7 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname} ogImage={hero?.src} ogImageAlt={hero ? t.heroAlt : undefined}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>

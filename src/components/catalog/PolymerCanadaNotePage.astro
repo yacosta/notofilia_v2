@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import { POLIMERO_CANADA_PATH, POLIMERO_MUNDIAL_PATH } from '../../data/polimero-mundial';
 import { notePageCopy, canadaNotes, type CanadaNote } from '../../data/canada-polymer';
 import PieceSiblings from './PieceSiblings.astro';
@@ -42,7 +42,7 @@ const jsonCrumbs = [
   description={seo.description}
   locale={locale}
   pathname={pathname}
-  ogImage={note.images.front}
+  ogImage={note.images.front} ogImageAlt={pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
     <script
@@ -124,6 +124,7 @@ const jsonCrumbs = [
             title={note.title[locale]}
             serial={note.serial}
             serialDisplay={note.serial_display}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -141,6 +142,7 @@ const jsonCrumbs = [
             title={note.title[locale]}
             serial={note.serial}
             serialDisplay={note.serial_display}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

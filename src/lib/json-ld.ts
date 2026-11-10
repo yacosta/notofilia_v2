@@ -1,5 +1,6 @@
 import { SITE_AUTHOR, localizePath, type Locale } from './locale-paths.ts';
 import { SITE_URL } from './site-url.ts';
+import { cfImage } from './images.ts';
 
 const PERSON_ID = `${SITE_URL}/#yezid-acosta`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -115,12 +116,34 @@ export function breadcrumbList(crumbs: BreadcrumbCrumb[], locale: Locale) {
   };
 }
 
-export function imageObjectJsonLd(options: { image: string; locale: Locale; caption?: string }) {
+function sitePath(image: string): string | undefined {
+  if (image.startsWith('/') && !image.startsWith('//')) return image;
+  try {
+    const url = new URL(image);
+    if (url.origin === new URL(SITE_URL).origin) return `${url.pathname}${url.search}`;
+  } catch {
+    return undefined;
+  }
+  return undefined;
+}
+
+export function imageObjectJsonLd(options: {
+  image: string;
+  locale: Locale;
+  caption?: string;
+  width?: number;
+  height?: number;
+}) {
   const imageUrl = absoluteUrl(options.image);
+  const path = sitePath(options.image);
+  const thumbnailUrl = path ? absoluteUrl(cfImage(path, { width: 800 })) : undefined;
   return omitEmpty({
     '@type': 'ImageObject',
     url: imageUrl,
     contentUrl: imageUrl,
+    width: options.width,
+    height: options.height,
+    thumbnailUrl,
     caption: options.caption,
     creditText: 'Notofilia.com / Yezid Acosta',
     creator: {
@@ -139,8 +162,10 @@ export function visualArtworkJsonLd(options: {
   description: string;
   url: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   /** Face and back, when both exist. Overrides the single `image`. */
-  images?: { src: string; caption?: string }[];
+  images?: { src: string; caption?: string; width?: number; height?: number }[];
   locale: Locale;
   artform: 'Banknote' | 'Coin' | 'Medal' | 'CreativeWork';
   catalogNumber?: string;
@@ -221,17 +246,32 @@ export function speakableDirectAnswer() {
 
 function artworkImages(options: {
   image?: string;
-  images?: { src: string; caption?: string }[];
+  imageWidth?: number;
+  imageHeight?: number;
+  images?: { src: string; caption?: string; width?: number; height?: number }[];
   locale: Locale;
 }) {
   const images = (options.images ?? []).filter((item) => item.src);
   if (images.length) {
     const nodes = images.map((item) =>
-      imageObjectJsonLd({ image: item.src, locale: options.locale, caption: item.caption }),
+      imageObjectJsonLd({
+        image: item.src,
+        locale: options.locale,
+        caption: item.caption,
+        width: item.width,
+        height: item.height,
+      }),
     );
     return nodes.length === 1 ? nodes[0] : nodes;
   }
-  return options.image ? imageObjectJsonLd({ image: options.image, locale: options.locale }) : undefined;
+  return options.image
+    ? imageObjectJsonLd({
+        image: options.image,
+        locale: options.locale,
+        width: options.imageWidth,
+        height: options.imageHeight,
+      })
+    : undefined;
 }
 
 function catalogPropertyValues(catalogNumber?: string, certNumber?: string, serial?: string) {

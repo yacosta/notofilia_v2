@@ -4,6 +4,7 @@ import {
   similarityFromHamming,
 } from './identify-hash.ts';
 import { localizePath, type Locale } from './locale-paths.ts';
+import { pieceScanAlt } from './scan-alt.ts';
 
 export type IdentifyIndexFace = {
   pieceId: string;
@@ -34,6 +35,31 @@ export type IdentifyMatch = {
   score: number;
   distance: number;
 };
+
+/** Short alt for a match thumbnail: side, title, and the Pick or KM already on the hit. */
+export function identifyMatchAlt(
+  match: Pick<IdentifyMatch, 'title' | 'pick' | 'face' | 'kind'>,
+  locale: Locale,
+): string {
+  const back = match.face === 'back';
+  const side =
+    locale === 'en'
+      ? match.kind === 'coin'
+        ? back
+          ? 'Reverse'
+          : 'Obverse'
+        : back
+          ? 'Back'
+          : 'Face'
+      : back
+        ? 'Reverso'
+        : 'Anverso';
+  return pieceScanAlt({
+    sideLabel: side,
+    title: match.title,
+    catalogNumber: match.pick,
+  });
+}
 
 export const IDENTIFY_TOP_K = 5;
 /** Drop weak matches (Hamming distance > 22 ≈ score < 0.656). */

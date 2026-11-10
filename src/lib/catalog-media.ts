@@ -1,5 +1,8 @@
 import { glossaryTermHref, glossaryTerms, isStandaloneGlossaryTerm } from '../data/glossary.ts';
 import type { Locale } from './locale-paths.ts';
+import { catalogSerialToken, scanSubject } from './scan-alt.ts';
+
+export { catalogIdToken, catalogSerialToken, pieceScanAlt, scanSubject } from './scan-alt.ts';
 
 export const CATALOG_DISPLAY_PREFIX = '/images/catalog/';
 export const CATALOG_DOWNLOAD_PREFIX = '/images/catalog-download/';
@@ -25,77 +28,6 @@ export function catalogDownloadFormat(src: string): 'JPEG' | 'PNG' | 'WebP' | 'i
   return 'image';
 }
 
-const MAX_SCAN_ALT = 80;
-const DASH_SERIAL = /^[\s—–-]+$/;
-
-/** Printed serial for alts and download names. Omit blanks and documented absences. */
-export function catalogSerialToken(serial?: string, serialDisplay?: string): string | undefined {
-  const normalized = serial?.trim() ?? '';
-  const display = serialDisplay?.trim() ?? '';
-  const printed =
-    display && display.length <= 36 && !display.includes('·') && !DASH_SERIAL.test(display) ? display : normalized;
-  if (!printed || DASH_SERIAL.test(printed)) return undefined;
-  return printed;
-}
-
-const YEAR_TOKEN = /\b(?:1[5-9]\d{2}|20\d{2})\b/;
-
-function identityKeys(serial?: string, serialDisplay?: string): string[] {
-  return [serial, serialDisplay]
-    .map((value) => value?.trim() ?? '')
-    .filter((value) => value && !DASH_SERIAL.test(value))
-    .map((value) => value.replace(/[\s.★*]/g, '').toUpperCase());
-}
-
-/**
- * Short subject from a catalogue title.
- * "10.000 pesos · reposición estrella · 1994 · 00113227" → "10.000 pesos 1994".
- * A trailing serial is left to the separate serial clause.
- */
-export function scanSubject(title: string, serial?: string, serialDisplay?: string): string {
-  let parts = title
-    .split('·')
-    .map((part) => part.trim())
-    .filter(Boolean);
-  const keys = identityKeys(serial, serialDisplay);
-  if (keys.length) {
-    const filtered = parts.filter((part) => !keys.includes(part.replace(/[\s.★*]/g, '').toUpperCase()));
-    if (filtered.length) parts = filtered;
-  }
-  const last = parts[parts.length - 1] ?? '';
-  if (parts.length >= 3 && YEAR_TOKEN.test(last)) {
-    return `${parts[0]} ${last}`;
-  }
-  return parts.join(' ');
-}
-
-/**
- * Short object description for a catalog scan (≤ 80 characters).
- * The visible figcaption keeps the long sentence.
- * Example: "Anverso, 10.000 pesos 1994, serial 00113227".
- */
-export function pieceScanAlt(input: {
-  sideLabel: string;
-  title: string;
-  serial?: string;
-  serialDisplay?: string;
-}): string {
-  const side = input.sideLabel.trim();
-  const serial = catalogSerialToken(input.serial, input.serialDisplay);
-  const serialBit = serial ? `, serial ${serial}` : '';
-  const prefix = `${side}, `;
-  let subject = scanSubject(input.title, input.serial, input.serialDisplay);
-  const budget = MAX_SCAN_ALT - prefix.length - serialBit.length;
-  if (budget < 8) {
-    const bare = serial ? `${side}${serialBit}` : side;
-    return bare.length <= MAX_SCAN_ALT ? bare : `${bare.slice(0, MAX_SCAN_ALT - 1).trimEnd()}…`;
-  }
-  if (subject.length > budget) {
-    const cut = Math.max(1, budget - 1);
-    subject = `${subject.slice(0, cut).trimEnd()}…`;
-  }
-  return `${prefix}${subject}${serialBit}`;
-}
 
 export type CatalogDownloadDetail = {
   side?: string;

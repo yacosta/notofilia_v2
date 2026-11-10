@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { register } from 'node:module';
+import { specimenAltFailure } from '../../scripts/image-seo.mjs';
 import {
   catalogDownloadFilename,
   catalogDownloadFormat,
@@ -91,9 +92,45 @@ describe('piece scan alt', () => {
       }),
       'Anverso, 5 dólares 14 de enero de 1779',
     );
+    assert.equal(
+      pieceScanAlt({
+        sideLabel: 'Anverso',
+        title: '8 reales 1820',
+        serial: '—',
+        catalogNumber: 'KM# 75',
+      }),
+      'Anverso, 8 reales 1820, KM# 75',
+    );
+    assert.equal(
+      pieceScanAlt({
+        sideLabel: 'Anverso y reverso',
+        title: '10 · Manzano Farming Co. · 1901',
+        catalogNumber: 'Sin Henao, Restrepo o KM verificado.',
+      }),
+      'Anverso y reverso, 10 1901',
+    );
+    assert.equal(
+      pieceScanAlt({
+        sideLabel: 'Face',
+        title: '5 dólares · City Bank of New Haven',
+        serial: '—',
+        catalogNumber: 'Haxby CT-265 G52b',
+      }),
+      'Face, 5 dólares City Bank of New Haven, Haxby CT-265 G52b',
+    );
+    assert.equal(
+      pieceScanAlt({
+        sideLabel: 'Anverso',
+        title: '15 centavos · tiquete estudiantil · verde',
+        serial: '—',
+        catalogNumber: 'MEN · 15¢ verde',
+      }),
+      'Anverso, 15 centavos tiquete estudiantil verde, MEN · 15¢ verde',
+    );
 
     const noteSides = { es: ['Anverso', 'Reverso'], en: ['Face', 'Back'] };
     const coinSides = { es: ['Anverso', 'Reverso'], en: ['Obverse', 'Reverse'] };
+    const catalogOf = (piece) => piece.pick || piece.reference || piece.references || '';
     const { colombiaNotes, notePieces: colombiaNotePieces } = await import('../data/colombia-notes.ts');
     const { ecuadorNotes, notePieces: ecuadorNotePieces } = await import('../data/ecuador.ts');
     const { unitedStatesNotes } = await import('../data/estados-unidos.ts');
@@ -113,7 +150,10 @@ describe('piece scan alt', () => {
     const notes = [
       ...colombiaNotes.flatMap((note) => colombiaNotePieces(note)),
       ...ecuadorNotes.flatMap((note) => ecuadorNotePieces(note)),
-      ...unitedStatesNotes,
+      ...unitedStatesNotes.flatMap((note) => [
+        note,
+        ...(note.examples ?? []).map((example) => ({ ...example, pick: note.pick })),
+      ]),
       ...chinaNotes,
       ...victoryNotes,
       ...mpcVietnamNotes,
@@ -139,8 +179,10 @@ describe('piece scan alt', () => {
             title: piece.title[locale],
             serial: piece.serial,
             serialDisplay: 'serial_display' in piece ? piece.serial_display : undefined,
+            catalogNumber: catalogOf(piece),
           });
           assert.ok(alt.length <= 80, `${piece.id} ${locale} ${side}: ${alt}`);
+          assert.equal(specimenAltFailure(alt), '', `${piece.id} ${locale} ${side}: ${alt}`);
           assert.notEqual(alt, piece.frontCaption[locale], piece.id);
           assert.notEqual(alt, piece.backCaption[locale], piece.id);
         }
@@ -150,16 +192,20 @@ describe('piece scan alt', () => {
           const alt = pieceScanAlt({
             sideLabel: side,
             title: piece.title[locale],
+            catalogNumber: catalogOf(piece),
           });
           assert.ok(alt.length <= 80, `${piece.id} ${locale} ${side}: ${alt}`);
+          assert.equal(specimenAltFailure(alt), '', `${piece.id} ${locale} ${side}: ${alt}`);
           assert.notEqual(alt, piece.frontCaption[locale], piece.id);
           assert.notEqual(alt, piece.backCaption[locale], piece.id);
         }
         const pair = pieceScanAlt({
           sideLabel: locale === 'es' ? 'Anverso y reverso' : 'Obverse and reverse',
           title: piece.title[locale],
+          catalogNumber: catalogOf(piece),
         });
         assert.ok(pair.length <= 80, `${piece.id} pair: ${pair}`);
+        assert.equal(specimenAltFailure(pair), '', `${piece.id} pair: ${pair}`);
         assert.notEqual(pair, `${piece.frontCaption[locale]} ${piece.backCaption[locale]}`);
       }
     }

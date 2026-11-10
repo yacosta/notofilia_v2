@@ -1,0 +1,38 @@
+---
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { cfImage, editorialUploadSrcset, imageSrcset } from '../../lib/images';
+
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+}
+
+const { src, alt, width, height, class: className, loading = 'lazy' } = Astro.props;
+const local = src.startsWith('/') && !src.startsWith('//');
+const upload = local && src.includes('/uploads/');
+const card = upload ? src.replace(/(\.[a-z0-9]+)$/i, '-card$1') : '';
+const hasCard = Boolean(card) && existsSync(join(process.cwd(), 'public', card.slice(1)));
+const imgSrc = !local ? src : hasCard ? src : cfImage(src, { width: Math.min(width, 1600) });
+const srcset = !local
+  ? undefined
+  : hasCard
+    ? editorialUploadSrcset(src, width)
+    : imageSrcset(src, [640, 1200, 1600]);
+---
+
+<img
+  src={imgSrc}
+  srcset={srcset}
+  sizes={srcset ? '(max-width: 1024px) 100vw, 72rem' : undefined}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding="async"
+  class={className}
+/>

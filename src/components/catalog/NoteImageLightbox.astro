@@ -5,7 +5,7 @@ import {
   catalogDownloadSrc,
   pieceScanAlt,
 } from '../../lib/catalog-media';
-import { pieceSrcset, PIECE_IMAGE_SIZES, versionCatalogScan } from '../../lib/images';
+import { cfImage, pieceSrcset, PIECE_IMAGE_SIZES, versionCatalogScan } from '../../lib/images';
 import type { Locale } from '../../lib/site';
 
 interface Props {
@@ -16,6 +16,8 @@ interface Props {
   title: string;
   serial?: string;
   serialDisplay?: string;
+  /** Pick, BG#, KM, HT, or Friedberg already on the record. Used when there is no serial. */
+  catalogNumber?: string;
   expandLabel: string;
   closeLabel: string;
   locale: Locale;
@@ -30,6 +32,7 @@ const {
   title,
   serial,
   serialDisplay,
+  catalogNumber,
   expandLabel,
   closeLabel,
   locale,
@@ -37,8 +40,9 @@ const {
   height = 900,
   eager = false,
 } = Astro.props;
-const alt = pieceScanAlt({ sideLabel, title, serial, serialDisplay });
+const alt = pieceScanAlt({ sideLabel, title, serial, serialDisplay, catalogNumber });
 const displaySrc = versionCatalogScan(src);
+const thumbSrc = cfImage(src, { width: 1200, format: 'avif' });
 const dialogId = `note-lightbox-${src.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 const downloadHref = catalogDownloadSrc(src);
 const downloadName = catalogDownloadFilename(src);
@@ -55,7 +59,7 @@ const srcset = pieceSrcset(displaySrc);
     data-note-lightbox-open
   >
     <img
-      src={displaySrc}
+      src={thumbSrc}
       srcset={srcset}
       sizes={PIECE_IMAGE_SIZES}
       alt={alt}

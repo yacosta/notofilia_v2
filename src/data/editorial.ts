@@ -1,7 +1,10 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import blogArticlesJson from './blog-articles.json';
 import newsArticlesJson from './news-articles.json';
 import { barabooScripSeriesCopy, miscSeriesCopy } from './estados-unidos';
 import { localizePath, type Locale } from '../lib/locale-paths';
+import { cfImage, editorialUploadSrcset, imageSrcset } from '../lib/images';
 
 export type LocalizedText = { es: string; en: string };
 
@@ -192,9 +195,37 @@ function localizeInternalHref(href: string, locale: Locale): string {
   return href;
 }
 
+function uploadHasCard(src: string): boolean {
+  if (!src.startsWith('/uploads/') || src.includes('-card.')) return false;
+  const card = src.replace(/(\.[a-z0-9]+)$/i, '-card$1');
+  return existsSync(join(process.cwd(), 'public', card.slice(1)));
+}
+
+/** Resize inline article images. Uploads with a `-card` sibling avoid `/cdn-cgi/image/`. */
+export function optimizeInlineImages(html: string): string {
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    const src = tag.match(/\bsrc="([^"]+)"/)?.[1];
+    if (!src || !src.startsWith('/') || src.startsWith('//') || /\bsrcset=/.test(tag)) return tag;
+    const width = Number(tag.match(/\bwidth="(\d+)"/)?.[1] ?? 1200);
+    let nextSrc = src;
+    let srcset: string;
+    if (src.includes('/uploads/') && uploadHasCard(src)) {
+      srcset = editorialUploadSrcset(src, width);
+    } else {
+      const displayWidth = Math.min(width, 1600);
+      nextSrc = cfImage(src, { width: displayWidth });
+      srcset = imageSrcset(src, [640, 1200, 1600]);
+    }
+    const sizes = '(max-width: 768px) 100vw, 46rem';
+    return tag
+      .replace(`src="${src}"`, `src="${nextSrc}"`)
+      .replace(/<img\b/, `<img srcset="${srcset}" sizes="${sizes}"`);
+  });
+}
+
 export function enhanceProseHtml(html: string, locale: Locale): string {
   const hint = newWindowHint[locale];
-  return html.replace(/<a\s+([^>]*?)href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g, (full, pre, href, post, label) => {
+  const withLinks = html.replace(/<a\s+([^>]*?)href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g, (full, pre, href, post, label) => {
     const localized = localizeInternalHref(href, locale);
     const attrs = `${pre}href="${localized}"${post}`.replace(/\s+/g, ' ').trim();
     if (localized.startsWith('http') && !localized.includes('notofilia.com')) {
@@ -208,6 +239,7 @@ export function enhanceProseHtml(html: string, locale: Locale): string {
     }
     return `<a ${attrs}>${label}</a>`;
   });
+  return optimizeInlineImages(withLinks);
 }
 
 export function featuredArticles(kind: 'blog' | 'news', limit = 4): EditorialArticle[] {

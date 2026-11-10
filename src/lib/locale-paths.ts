@@ -3,6 +3,12 @@ export type Locale = 'es' | 'en';
 export const SITE_AUTHOR = 'Yezid Acosta';
 export const DEFAULT_OG_IMAGE = '/images/quetzal-billete-cinco-quetzales-guatemala.jpg';
 
+/** Describes DEFAULT_OG_IMAGE. Used when a page does not pass its own og:image. */
+export const DEFAULT_OG_IMAGE_ALT = {
+  es: 'Quetzal en el billete de 5 quetzales del Banco de Guatemala, serial C41963255D',
+  en: 'Quetzal on the Banco de Guatemala 5 quetzales note, serial C41963255D',
+} as const;
+
 type PathPair = {
   es: string;
   en: string;

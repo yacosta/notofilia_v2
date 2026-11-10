@@ -38,7 +38,7 @@ When adding or changing the build-time crawl (`scripts/seo-audit.mjs`, npm scrip
   - hreflang pairs missing or not reciprocal, or `x-default` that is not the Spanish URL
   - `lang` that does not match the URL locale
   - JSON-LD that fails to parse, or a `BlogPosting` without `citation` when the page has a sources list
-  - `<img>` without `alt`, or specimen images whose `alt` lacks side (`Anverso`/`Reverso` or `Obverse`/`Reverse`) and the catalog ID
+  - `<img>` without `alt`; an `og:image` without `og:image:alt`; or a catalog lightbox trigger whose `alt` lacks a side the site already uses (`Anverso`/`Reverso`, `Face`/`Back`, `Obverse`/`Reverse`, or the pair phrase) and an identifier already on the record (serial, Pick, BG#, KM, HT, Friedberg, Haxby, Rulau, Fonrobert, a short reference printed on the record, or a series year when the piece has no catalog number)
   - sitemap URLs absent from `dist/`, or indexable `dist/` pages absent from the sitemap
   - `llms.txt` or `llms-full.txt` links that do not resolve to built pages
   - placeholder text in rendered HTML (`{{`, `[object`, `undefined`, `TODO(owner)`)

@@ -153,7 +153,7 @@ const ui = {
         <div class="mt-6 hidden overflow-hidden rounded-[6px] border border-line-strong bg-panel" data-identify-preview-wrap>
           <img
             src=""
-            alt=""
+            alt={t.previewAlt}
             width="1200"
             height="675"
             class="max-h-[28rem] w-full object-contain"
@@ -191,7 +191,7 @@ const ui = {
 <script>
   import { cardImageSrc } from '../lib/images';
   import { dhashFromRgba } from '../lib/identify-hash';
-  import { rankIdentifyMatches, type IdentifyIndex, type IdentifyMatch } from '../lib/identify';
+  import { identifyMatchAlt, rankIdentifyMatches, type IdentifyIndex, type IdentifyMatch } from '../lib/identify';
 
   type IdentifyUi = {
     locale: 'es' | 'en';
@@ -252,7 +252,7 @@ const ui = {
         link.className = 'block overflow-hidden no-underline';
         const img = document.createElement('img');
         img.src = cardImageSrc(hit.image);
-        img.alt = '';
+        img.alt = identifyMatchAlt(hit, ui.locale);
         img.width = 1200;
         img.height = 675;
         img.loading = 'lazy';

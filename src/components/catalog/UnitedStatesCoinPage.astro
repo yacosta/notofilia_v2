@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import {
   coinPageCopy,
   coinagePath,
@@ -69,6 +69,7 @@ const jsonCrumbs = [
   locale={locale}
   pathname={pathname}
   ogImage={coin.images.composite}
+  ogImageAlt={pieceScanAlt({ sideLabel: copy[locale].obverseReverse, title: coin.title[locale], catalogNumber: coin.references })}
 >
   <Fragment slot="head">
     <script
@@ -82,6 +83,8 @@ const jsonCrumbs = [
           description: seo.description,
           url: pathname,
           image: coin.images.composite,
+          imageWidth: coin.images.width,
+          imageHeight: coin.images.height,
           locale,
           artform: coin.artform ?? 'Coin',
           catalogNumber: coin.references,
@@ -177,6 +180,7 @@ const jsonCrumbs = [
             src={coin.images.front}
             sideLabel={t.frontHeading}
             title={coin.title[locale]}
+            catalogNumber={coin.references}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -190,6 +194,7 @@ const jsonCrumbs = [
             src={coin.images.back}
             sideLabel={t.backHeading}
             title={coin.title[locale]}
+            catalogNumber={coin.references}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

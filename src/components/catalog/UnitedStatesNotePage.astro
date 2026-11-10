@@ -6,7 +6,7 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { catalogReferenceRows } from '../../lib/catalog-reference';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
@@ -57,11 +57,21 @@ const catalogRows = note.friedberg
   : catalogReferenceRows(note.pick, locale);
 const physical = note.physical;
 const scanImages = [
-  { src: note.images.front, caption: note.frontCaption[locale] },
-  { src: note.images.back, caption: note.backCaption[locale] },
+  { src: note.images.front, caption: note.frontCaption[locale], width: imageWidth, height: imageHeight },
+  { src: note.images.back, caption: note.backCaption[locale], width: imageWidth, height: imageHeight },
   ...examples.flatMap((example) => [
-    { src: example.images.front, caption: example.frontCaption[locale] },
-    { src: example.images.back, caption: example.backCaption[locale] },
+    {
+      src: example.images.front,
+      caption: example.frontCaption[locale],
+      width: example.images.width ?? imageWidth,
+      height: example.images.height ?? imageHeight,
+    },
+    {
+      src: example.images.back,
+      caption: example.backCaption[locale],
+      width: example.images.width ?? imageWidth,
+      height: example.images.height ?? imageHeight,
+    },
   ]),
 ].filter((image) => image.src);
 const seo = piecePageMeta({
@@ -127,6 +137,7 @@ const jsonCrumbs = [
   locale={locale}
   pathname={pathname}
   ogImage={hero?.src ?? note.images.front}
+  ogImageAlt={hero ? heroAlt : pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, serialDisplay: note.serial_display, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
     <script
@@ -279,6 +290,7 @@ const jsonCrumbs = [
             title={note.title[locale]}
             serial={note.serial}
             serialDisplay={note.serial_display}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -298,6 +310,7 @@ const jsonCrumbs = [
             title={note.title[locale]}
             serial={note.serial}
             serialDisplay={note.serial_display}
+            catalogNumber={note.pick}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -328,6 +341,7 @@ const jsonCrumbs = [
                   sideLabel={t.frontHeading}
                   title={example.title[locale]}
                   serial={example.serial}
+                  catalogNumber={note.pick}
                   expandLabel={t.expandImage}
                   closeLabel={t.closeLightbox}
                   locale={locale}
@@ -343,6 +357,7 @@ const jsonCrumbs = [
                   sideLabel={t.backHeading}
                   title={example.title[locale]}
                   serial={example.serial}
+                  catalogNumber={note.pick}
                   expandLabel={t.expandImage}
                   closeLabel={t.closeLightbox}
                   locale={locale}
