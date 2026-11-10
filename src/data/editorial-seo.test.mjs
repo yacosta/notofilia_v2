@@ -609,6 +609,89 @@ describe('Cayman E-series banknote note', () => {
   });
 });
 
+describe('November 9 2026 Numismatic News notes', () => {
+  it('publishes the 1982 cents, China gold demand, and Nepal and South Ossetia notes without a coin price', () => {
+    const cents = newsArticles.find((item) => item.slug === 'centavos-lincoln-1982-siete-variedades');
+    const gold = newsArticles.find((item) => item.slug === 'oro-china-monedas-suben-joyeria-baja');
+    const notes = newsArticles.find((item) => item.slug === 'billetes-nepal-osetia-sur-noviembre-2026');
+    assert.ok(cents && gold && notes);
+    assert.equal(cents.slugEn, 'seven-1982-lincoln-cent-varieties');
+    assert.equal(gold.slugEn, 'china-gold-coins-up-jewelry-down');
+    assert.equal(notes.slugEn, 'new-notes-nepal-south-ossetia-november-2026');
+    assert.equal(cents.published, '2026-11-09');
+    assert.equal(gold.published, '2026-11-09');
+    assert.equal(notes.published, '2026-11-09');
+    assert.equal(cents.sourceName, 'Numismatic News');
+    assert.equal(gold.sourceName, 'Numismatic News');
+    assert.equal(notes.sourceName, 'Numismatic News');
+    assert.equal(cents.claim, null);
+    assert.equal(gold.claim, null);
+    assert.equal(notes.claim, null);
+    for (const article of [cents, gold, notes]) {
+      assert.ok(article.seoTitle.es.length <= 48);
+      assert.ok(article.seoTitle.en.length <= 48);
+      assert.ok(article.description.es.length <= 155);
+      assert.ok(article.description.en.length <= 155);
+      assert.equal(
+        existsSync(new URL(`../../public${article.image}`, import.meta.url)),
+        true,
+      );
+      assert.equal(
+        existsSync(new URL(`../../public${article.image.replace('.jpg', '-card.jpg')}`, import.meta.url)),
+        true,
+      );
+    }
+    for (const locale of ['es', 'en']) {
+      const centHtml = cents.bodyHtml[locale];
+      assert.match(centHtml, /97[,.]5/);
+      assert.match(centHtml, /3[,.]11/);
+      assert.match(centHtml, /2[,.]5 g/);
+      assert.match(centHtml, /1943/);
+      assert.match(centHtml, /1974/);
+      assert.match(centHtml, /Research Triangle Institute/);
+      assert.match(centHtml, /noy-nac/);
+      assert.match(centHtml, /\/glosario\/ceca\//);
+      assert.match(centHtml, /\/glosario\/numismatica\//);
+      assert.match(centHtml, /colección virtual de Notofilia|virtual collection/);
+      assert.match(centHtml, /no convierte ese silencio|does not turn that silence/);
+      assert.doesNotMatch(centHtml, /US\$|€|\$\s?\d/);
+      const goldHtml = gold.bodyHtml[locale];
+      assert.match(goldHtml, /511[,.]412/);
+      assert.match(goldHtml, /132[,.]133/);
+      assert.match(goldHtml, /339[,.]336/);
+      assert.match(goldHtml, /33[,.]88/);
+      assert.match(goldHtml, /28[,.]42/);
+      assert.match(goldHtml, /50[,.]0/);
+      assert.match(goldHtml, /Yu Qian/);
+      assert.match(goldHtml, /J04445744/);
+      assert.match(goldHtml, /\/coleccion\/china\/100-yuan\//);
+      assert.match(goldHtml, /\/coleccion\/china\//);
+      assert.match(goldHtml, /no lo copia|does not copy/);
+      assert.match(goldHtml, /consumo, no el precio|consumption, not the price/);
+      assert.doesNotMatch(goldHtml, /US\$|€|\$\s?\d|4026|879[,.]03/);
+      const noteHtml = notes.bodyHtml[locale];
+      assert.match(noteHtml, /Bishwanath Poudel/);
+      assert.match(noteHtml, /Lachhoka/);
+      assert.match(noteHtml, /Lhonchok/);
+      assert.match(noteHtml, /Vasso/);
+      assert.match(noteHtml, /Vaso/);
+      assert.match(noteHtml, /Goznak/);
+      assert.match(noteHtml, /20 de septiembre de 2026|20 September 2026/);
+      assert.match(noteHtml, /no elige una grafía|does not pick a spelling/);
+      assert.match(noteHtml, /no la inventa|does not invent one/);
+      assert.match(noteHtml, /\/glosario\/notafilia\//);
+      assert.match(noteHtml, /\/glosario\/filigrana\//);
+      assert.doesNotMatch(noteHtml, /US\$|€|\$\s?\d|20[,.]?000|157 x 69|157 × 69/);
+    }
+    assert.match(cents.bodyHtml.es, /fecha pequeña/);
+    assert.match(cents.bodyHtml.en, /small date/);
+    assert.match(gold.bodyHtml.es, /6 de agosto de 2026/);
+    assert.match(gold.bodyHtml.en, /6 August 2026/);
+    assert.match(notes.bodyHtml.es, /11 de noviembre de 2026/);
+    assert.match(notes.bodyHtml.en, /11 November 2026/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
