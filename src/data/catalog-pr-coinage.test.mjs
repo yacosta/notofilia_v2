@@ -33,7 +33,17 @@ const en10 = readFileSync(
   'utf8',
 );
 const coinPage = readFileSync(new URL('../components/catalog/PuertoRicoCoinPage.astro', import.meta.url), 'utf8');
-const record10 = data.split("id: '10-centavos-alfonso-xiii-pgv'")[1]?.split('\n  },\n];')[0] ?? '';
+const record10 = data.split("id: '10-centavos-alfonso-xiii-pgv'")[1]?.split('\n  },')[0] ?? '';
+
+describe('Puerto Rico provincial coinage order', () => {
+  it('lists the 10 centavos before the 20 centavos in the case', async () => {
+    const { puertoRicoCoins } = await import('./puerto-rico-coinage.ts');
+    assert.deepEqual(
+      puertoRicoCoins.map((coin) => coin.id),
+      ['10-centavos-alfonso-xiii-pgv', '20-centavos-1895-pgv'],
+    );
+  });
+});
 
 describe('Puerto Rico 1895 20 centavos PGV', () => {
   it('registers one bilingual coinage series and one no-serial holding', () => {
