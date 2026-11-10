@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T01:03:24.360Z",
+  "generatedAt": "2026-11-10T21:16:29.101Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -6998,45 +6998,6 @@
       }
     },
     {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "front",
-      "hash": "00337512d4535500",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-composite.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
-      }
-    },
-    {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "front",
-      "hash": "002a1322611d1600",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-front.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
-      }
-    },
-    {
-      "pieceId": "20-centavos-1895-pgv",
-      "face": "back",
-      "hash": "00325badb9331200",
-      "kind": "coin",
-      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
-      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
-      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-back.jpg",
-      "title": {
-        "es": "20 centavos · Alfonso XIII · 1895 PGV",
-        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
-      }
-    },
-    {
       "pieceId": "10-centavos-alfonso-xiii-pgv",
       "face": "front",
       "hash": "0031353472771100",
@@ -7073,6 +7034,45 @@
       "title": {
         "es": "10 centavos · Alfonso XIII · fecha aparente 1895",
         "en": "10 Centavos · Alfonso XIII · apparent date 1895"
+      }
+    },
+    {
+      "pieceId": "20-centavos-1895-pgv",
+      "face": "front",
+      "hash": "00337512d4535500",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
+      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-composite.jpg",
+      "title": {
+        "es": "20 centavos · Alfonso XIII · 1895 PGV",
+        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
+      }
+    },
+    {
+      "pieceId": "20-centavos-1895-pgv",
+      "face": "front",
+      "hash": "002a1322611d1600",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
+      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-front.jpg",
+      "title": {
+        "es": "20 centavos · Alfonso XIII · 1895 PGV",
+        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
+      }
+    },
+    {
+      "pieceId": "20-centavos-1895-pgv",
+      "face": "back",
+      "hash": "00325badb9331200",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/20-centavos-1895-pgv/",
+      "pick": "KM#22 · Numista N#17451 · PCGS#976911",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-20-centavos-1895-alfonso-xiii-pgv-back.jpg",
+      "title": {
+        "es": "20 centavos · Alfonso XIII · 1895 PGV",
+        "en": "20 Centavos · Alfonso XIII · 1895 PGV"
       }
     },
     {
@@ -7229,6 +7229,45 @@
       "title": {
         "es": "1 peso · Billete de Canje · 1895",
         "en": "1 Peso · Exchange Note · 1895"
+      }
+    },
+    {
+      "pieceId": "pr-nd-cuarto-almud-vega-redonda",
+      "face": "front",
+      "hash": "002a6d33336b2a8c",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/cuarto-almud/",
+      "pick": "Rulau Lsm 18 · Numista N#163262 · TC#272359",
+      "image": "/images/catalog/puerto-rico/puerto-rico-hacienda-vega-redonda-cuarto-almud.webp",
+      "title": {
+        "es": "¼ almud · Hacienda Vega Redonda",
+        "en": "¼ almud · Hacienda Vega Redonda"
+      }
+    },
+    {
+      "pieceId": "pr-nd-medio-almud-vega-redonda",
+      "face": "front",
+      "hash": "08366d553537378c",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/medio-almud/",
+      "pick": "Rulau Lsm 17 · Numista N#524158 · TC#344505",
+      "image": "/images/catalog/puerto-rico/puerto-rico-hacienda-vega-redonda-medio-almud.webp",
+      "title": {
+        "es": "½ almud · Hacienda Vega Redonda",
+        "en": "½ almud · Hacienda Vega Redonda"
+      }
+    },
+    {
+      "pieceId": "pr-nd-un-almud-vega-redonda",
+      "face": "front",
+      "hash": "0c1a7577536b170c",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/un-almud/",
+      "pick": "Rulau Lsm 16 · Numista N#570378",
+      "image": "/images/catalog/puerto-rico/puerto-rico-hacienda-vega-redonda-un-almud.webp",
+      "title": {
+        "es": "1 almud · Hacienda Vega Redonda",
+        "en": "1 almud · Hacienda Vega Redonda"
       }
     }
   ]

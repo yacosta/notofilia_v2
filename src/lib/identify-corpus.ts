@@ -24,6 +24,7 @@ import { netherlandsCoins } from '../data/netherlands-coinage.ts';
 import { victoryNotes } from '../data/philippines-victory-66.ts';
 import { pnbNotes } from '../data/philippines-pnb-1916.ts';
 import { puertoRicoNotes } from '../data/puerto-rico.ts';
+import { vegaRedondaTokens } from '../data/vega-redonda.ts';
 import { ecuadorNotes, notePieces as ecuadorNotePieces } from '../data/ecuador.ts';
 
 export type IdentifyKind = 'banknote' | 'coin';
@@ -140,6 +141,17 @@ export function identifyPieceSeeds(): IdentifyPieceSeed[] {
       imageFront: note.images.front,
       imageBack: note.images.back,
       imageComposite: note.images.composite,
+    });
+  }
+
+  for (const token of vegaRedondaTokens) {
+    pushSeed(seeds, {
+      id: token.id,
+      kind: 'coin',
+      path: token.path,
+      pick: token.references,
+      title: token.title,
+      imageFront: token.images.front,
     });
   }
 

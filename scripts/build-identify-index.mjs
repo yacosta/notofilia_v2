@@ -113,6 +113,7 @@ const PATH_CONSTANTS = {
   USA_COINAGE_PATH: '/coleccion/estados-unidos-numismatica/',
   SPAIN_COINAGE_PATH: '/coleccion/espana-numismatica/',
   PUERTO_RICO_COINAGE_PATH: '/coleccion/puerto-rico-numismatica/',
+  VEGA_REDONDA_PATH: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/',
   NETHERLANDS_COINAGE_PATH: '/coleccion/paises-bajos-numismatica/',
   NETHERLANDS_PATH: '/coleccion/paises-bajos/',
   CHINA_PATH: '/coleccion/china/',

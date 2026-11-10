@@ -22,6 +22,7 @@ import {
 import { NETHERLANDS_COINAGE_PATH, NUMISMATICS_PATH } from '../data/netherlands-coinage';
 import { SPAIN_COINAGE_PATH, coinById as spainCoinById } from '../data/espana-coinage';
 import { PUERTO_RICO_COINAGE_PATH, coinById as puertoRicoCoinById } from '../data/puerto-rico-coinage';
+import { VEGA_REDONDA_PATH, vegaRedondaCopy, vegaRedondaTokens } from '../data/vega-redonda';
 import { LIBERIA_COINAGE_PATH, coinById as liberiaCoinById } from '../data/liberia-coinage';
 import {
   USA_COINAGE_PATH,
@@ -664,6 +665,19 @@ export const megaNav: NavNode[] = [
             en: puertoRico20Centavos.title.en,
             href: puertoRico20Centavos.path,
             holding: true,
+          },
+          {
+            id: 'pr-hacienda-vega-redonda',
+            es: vegaRedondaCopy.es.nav,
+            en: vegaRedondaCopy.en.nav,
+            href: VEGA_REDONDA_PATH,
+            children: vegaRedondaTokens.map((token) => ({
+              id: token.id,
+              es: token.title.es,
+              en: token.title.en,
+              href: token.path,
+              holding: true,
+            })),
           },
         ],
       },

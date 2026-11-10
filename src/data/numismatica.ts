@@ -96,11 +96,11 @@ const netherlandsNumismatics: NumismaticaCountry = {
 
 const puertoRicoNumismatics: NumismaticaCountry = {
   href: PUERTO_RICO_COINAGE_PATH,
-  years: { es: '1895–1896', en: '1895–1896' },
+  years: { es: '1890–1896', en: '1890–1896' },
   title: { es: 'Puerto Rico', en: 'Puerto Rico' },
   lead: {
-    es: 'El peso provincial labrado en Madrid: el 20 centavos de plata de Alfonso XIII, 1895, y un 10 centavos P·G·V con fecha por verificar.',
-    en: 'The provincial peso struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895, and a 10 centavos P·G·V whose date awaits verification.',
+    es: 'El peso provincial de 1895, labrado en Madrid, y las fichas de almud de la Hacienda Vega Redonda, en Las Marías.',
+    en: 'The 1895 provincial peso, struck in Madrid, and the almud tokens of Hacienda Vega Redonda, in Las Marías.',
   },
 };
 

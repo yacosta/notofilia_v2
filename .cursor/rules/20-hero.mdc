@@ -60,6 +60,8 @@ Used only by `AboutPage.astro` (`/acerca-de/`, `/en/about/`).
 
 The American Silver Eagle series page (`UnitedStatesSilverEagleSeriesPage.astro`) uses a text header — kicker, display `h1`, lead — until a finished poster exists. Do not invent a coin photograph for that hero.
 
+Hacienda Vega Redonda (`PuertoRicoVegaRedondaPage.astro`) uses the same text header. Do not crop the token scans into a hero.
+
 The Popayán Charles IV 1 escudo type page (`PopayanCharlesIvEscudoPage.astro`) uses the same text header until a finished poster exists. Do not invent a coin photograph for that hero.
 
 The Casa de Moneda de Santa Fe de Nuevo Reino page (`SantaFeMintPage.astro`) uses the same text header until a finished poster exists. Do not invent a coin photograph for that hero.
