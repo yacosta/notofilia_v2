@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import { uniqueCatalogSources } from '../../data/catalog';
 import {
   ECUADOR_PATH,
@@ -63,7 +63,7 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
   description={seo.description}
   locale={locale}
   pathname={pathname}
-  ogImage={note.images.front}
+  ogImage={note.images.front} ogImageAlt={pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
     <script
@@ -77,6 +77,8 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
             description: seo.description,
             url: pathname,
             image: note.images.front,
+            imageWidth: note.images.frontWidth,
+            imageHeight: note.images.frontHeight,
             locale,
             artform: 'Banknote',
             catalogNumber: note.pick,
@@ -208,6 +210,7 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
                     title={piece.title[locale]}
                     serial={piece.serial}
                     serialDisplay={piece.serial_display}
+                    catalogNumber={piece.pick}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
@@ -225,6 +228,7 @@ function pieceHeadingId(piece: EcuadorNotePiece, slot: string) {
                     title={piece.title[locale]}
                     serial={piece.serial}
                     serialDisplay={piece.serial_display}
+                    catalogNumber={piece.pick}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}

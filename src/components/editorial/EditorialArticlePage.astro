@@ -81,7 +81,15 @@ const jsonLd = {
       dateModified: article.updated || article.published,
       inLanguage: locale,
       ...(hasImage
-        ? { image: imageObjectJsonLd({ image: imageUrl, locale, caption: article.caption[locale] }) }
+        ? {
+            image: imageObjectJsonLd({
+              image: imageUrl,
+              locale,
+              caption: article.caption[locale],
+              width: imageWidth,
+              height: imageHeight,
+            }),
+          }
         : {}),
       url: pageUrl,
       mainEntityOfPage: pageUrl,

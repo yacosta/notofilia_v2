@@ -92,6 +92,7 @@ describe('catalogue VisualArtwork JSON-LD', () => {
     assert.equal(node.image[0]['@type'], 'ImageObject');
     assert.equal(node.image[1]['@type'], 'ImageObject');
     assert.match(node.image[0].contentUrl, /front\.jpg$/);
+    assert.match(node.image[0].thumbnailUrl, /width=800/);
     assert.match(node.image[1].contentUrl, /back\.jpg$/);
     assert.equal(node.image[0].caption, 'Anverso');
     assert.equal(node.image[1].caption, 'Reverso');
@@ -117,10 +118,30 @@ describe('ImageObject JSON-LD', () => {
     assert.match(image.copyrightNotice, /^© \d{4} NOTOFILIA$/);
     assert.equal(image.license, 'https://notofilia.com/en/editorial/');
     assert.equal(image.acquireLicensePage, 'https://notofilia.com/en/editorial/');
+    assert.match(image.thumbnailUrl, /\/cdn-cgi\/image\/width=800,format=auto,quality=75\/uploads\/example-banknote\.jpg$/);
+  });
+
+  it('records pixel size and skips a thumbnail for an external file', () => {
+    const sized = imageObjectJsonLd({
+      image: 'https://notofilia.com/uploads/example-banknote.jpg',
+      locale: 'es',
+      width: 1200,
+      height: 675,
+    });
+    assert.equal(sized.width, 1200);
+    assert.equal(sized.height, 675);
+    assert.match(sized.thumbnailUrl, /width=800/);
+
+    const external = imageObjectJsonLd({
+      image: 'https://upload.wikimedia.org/wikipedia/commons/example.jpg',
+      locale: 'es',
+    });
+    assert.equal(external.thumbnailUrl, undefined);
+    assert.equal(external.width, undefined);
   });
 
   it('is shared by editorial article images', () => {
-    assert.match(articlePage, /image: imageObjectJsonLd\(\{ image: imageUrl, locale,/);
+    assert.match(articlePage, /image: imageObjectJsonLd\(\{[\s\S]*image: imageUrl,[\s\S]*width: imageWidth,/);
   });
 });
 

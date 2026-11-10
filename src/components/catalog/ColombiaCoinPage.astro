@@ -4,7 +4,7 @@ import Breadcrumb from '../Breadcrumb.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import { COLOMBIA_COINAGE_PATH, coinageCopy, coinagePath } from '../../data/colombia-coinage';
 import {
   coinagePieceChapter,
@@ -52,7 +52,7 @@ const jsonCrumbs = [
 ];
 ---
 
-<Layout title={seo.documentTitle} description={seo.description} locale={locale} pathname={pathname} ogImage={piece.images.composite}>
+<Layout title={seo.documentTitle} description={seo.description} locale={locale} pathname={pathname} ogImage={piece.images.composite} ogImageAlt={pieceScanAlt({ sideLabel: copy[locale].obverseReverse, title: piece.title[locale], catalogNumber: piece.reference })}>
   <Fragment slot="head">
     <script
       type="application/ld+json"
@@ -131,6 +131,7 @@ const jsonCrumbs = [
             src={piece.images.front}
             sideLabel={t.frontHeading}
             title={piece.title[locale]}
+            catalogNumber={piece.reference}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}
@@ -144,6 +145,7 @@ const jsonCrumbs = [
             src={piece.images.back}
             sideLabel={t.backHeading}
             title={piece.title[locale]}
+            catalogNumber={piece.reference}
             expandLabel={t.expandImage}
             closeLabel={t.closeLightbox}
             locale={locale}

@@ -9,7 +9,7 @@ import {
   parseDhash,
   similarityFromHamming,
 } from './identify-hash.ts';
-import { IDENTIFY_MIN_SCORE, rankIdentifyMatches } from './identify.ts';
+import { IDENTIFY_MIN_SCORE, identifyMatchAlt, rankIdentifyMatches } from './identify.ts';
 
 describe('identify dHash', () => {
   it('hashes a 9×8 greyscale grid to 16 hex chars', () => {
@@ -76,5 +76,15 @@ describe('identify index ranking', () => {
     assert.ok(sample);
     const matches = rankIdentifyMatches(identifyIndex, sample.hash, 'en');
     assert.ok(matches[0]?.href.startsWith('/en/'));
+  });
+
+  it('describes a match with the side the site already uses and the catalog token', () => {
+    const match = { title: '100 yuan 2000', pick: 'P#902', face: 'front', kind: 'banknote' };
+    assert.equal(identifyMatchAlt(match, 'es'), 'Anverso, 100 yuan 2000, P#902');
+    assert.equal(identifyMatchAlt(match, 'en'), 'Face, 100 yuan 2000, P#902');
+    assert.equal(
+      identifyMatchAlt({ ...match, face: 'back', kind: 'coin', pick: 'KM# 75' }, 'en'),
+      'Reverse, 100 yuan 2000, KM# 75',
+    );
   });
 });

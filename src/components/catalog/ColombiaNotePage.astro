@@ -6,7 +6,7 @@ import PieceSiblings from './PieceSiblings.astro';
 import { copy, localizePath, type Locale } from '../../lib/site';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
 import { seriesPath } from '../../data/colombia';
 import {
   notePageCopy,
@@ -75,6 +75,8 @@ const jsonLd = {
       description: seo.description,
       url: pathname,
       image: note.images.front,
+      imageWidth: note.images.width,
+      imageHeight: note.images.height,
       locale,
       artform: 'Banknote',
       catalogNumber: note.pick,
@@ -94,7 +96,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
   description={seo.description}
   locale={locale}
   pathname={pathname}
-  ogImage={note.images.front}
+  ogImage={note.images.front} ogImageAlt={pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -265,6 +267,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     sideLabel={t.frontHeading}
                     title={piece.title[locale]}
                     serial={piece.serial}
+                    catalogNumber={piece.pick}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}
@@ -281,6 +284,7 @@ function pieceHeadingId(piece: ColombiaNotePiece, slot: string) {
                     sideLabel={t.backHeading}
                     title={piece.title[locale]}
                     serial={piece.serial}
+                    catalogNumber={piece.pick}
                     expandLabel={t.expandImage}
                     closeLabel={t.closeLightbox}
                     locale={locale}

@@ -86,7 +86,7 @@ export type { MilestoneItem } from './milestones.ts';
 export { milestones } from './milestones.ts';
 
 export type { Locale } from './locale-paths';
-export { localizePath, otherLocalePath, SITE_AUTHOR, DEFAULT_OG_IMAGE } from './locale-paths';
+export { localizePath, otherLocalePath, SITE_AUTHOR, DEFAULT_OG_IMAGE, DEFAULT_OG_IMAGE_ALT } from './locale-paths';
 export { SITE_URL } from './site-url';
 
 /** Empty-site content slugs already listed in stubPages/collections. New routes increment pages from 0. */

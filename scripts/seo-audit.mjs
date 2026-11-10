@@ -1,6 +1,7 @@
 // Crawl dist/ and fail the build on the SEO regressions listed in the Oct 2026 audit.
 import { readdir, readFile } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
+import { lightboxTriggerAlts, specimenAltFailure } from './image-seo.mjs';
 
 const reportOnly = process.argv.includes('--report-only');
 const DIST = 'dist';
@@ -176,6 +177,13 @@ for (const file of pages) {
 
   for (const img of html.matchAll(/<img\b[^>]*>/gi)) {
     if (!/\balt\s*=/.test(img[0])) fail(`${pathname} has <img> without alt`);
+  }
+  const hasOgImage = /property=["']og:image["']/i.test(html);
+  const hasOgAlt = /property=["']og:image:alt["']/i.test(html);
+  if (hasOgImage && !hasOgAlt) fail(`${pathname} has og:image without og:image:alt`);
+  for (const alt of lightboxTriggerAlts(html, decodeEntities)) {
+    const problem = specimenAltFailure(alt);
+    if (problem) fail(`${pathname} catalog scan alt: ${problem} (${alt.slice(0, 80)})`);
   }
 }
 
