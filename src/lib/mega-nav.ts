@@ -652,17 +652,17 @@ export const megaNav: NavNode[] = [
         column: 'peer',
         children: [
           {
-            id: 'pr-20-centavos-1895-pgv',
-            es: puertoRico20Centavos.title.es,
-            en: puertoRico20Centavos.title.en,
-            href: puertoRico20Centavos.path,
-            holding: true,
-          },
-          {
             id: 'pr-10-centavos-alfonso-xiii-pgv',
             es: puertoRico10Centavos.title.es,
             en: puertoRico10Centavos.title.en,
             href: puertoRico10Centavos.path,
+            holding: true,
+          },
+          {
+            id: 'pr-20-centavos-1895-pgv',
+            es: puertoRico20Centavos.title.es,
+            en: puertoRico20Centavos.title.en,
+            href: puertoRico20Centavos.path,
             holding: true,
           },
         ],
