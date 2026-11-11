@@ -102,7 +102,7 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Numismática | Notofilia',
     metaDescription:
-      'Moneda provincial de Puerto Rico, acuñada en Madrid: el 20 centavos de plata de Alfonso XIII, 1895 (KM#22), y un 10 centavos P·G·V con fecha por verificar.',
+      'Moneda provincial de Puerto Rico acuñada en Madrid (1895) y fichas de almud de la Hacienda Vega Redonda: el 20 centavos de plata KM#22 y un 10 centavos P·G·V.',
     kicker: 'Puerto Rico · Numismática',
     title: 'El peso provincial de 1895',
     heroAlt:
@@ -117,11 +117,27 @@ export const seriesCopy = {
     notesLink: 'Puerto Rico · Emisiones coloniales y de transición',
     tokensLead: 'Las fichas de almud de la Hacienda Vega Redonda, en Las Marías, están en otra vitrina de esta numismática.',
     tokensLink: 'Hacienda Vega Redonda',
+    hubTokens: {
+      id: 'fichas-vega-redonda',
+      title: 'Fichas de hacienda: Vega Redonda',
+      body: 'Junto a la moneda provincial circularon fichas privadas. En la zona cafetalera del oeste, los hacendados pagaban jornales con fichas propias —los riles— porque el menudo oficial llegaba mal al interior. La Hacienda Vega Redonda, en el barrio Bucarabones de Las Marías, emitió fichas de latón (según Numista), sin fecha y catalogadas como ND (1890), con valores en almudes de café y no en pesos. La colección conserva las de ¼, ½ y 1 almud.',
+      seriesCta: 'Ver las fichas de la Hacienda Vega Redonda →',
+      tokensLabel: 'Fichas:',
+      tokenLinks: [
+        { label: '¼ almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/cuarto-almud/' },
+        { label: '½ almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/medio-almud/' },
+        { label: '1 almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/un-almud/' },
+      ],
+      compareLead: 'Para comparar:',
+      compareLink: 'fichas de hacienda de Colombia',
+      compareHref: '/coleccion/colombia-numismatica/fichas-de-hacienda/',
+      thumbsAria: 'Fichas de la Hacienda Vega Redonda en la colección',
+    },
   },
   en: {
     metaTitle: 'Puerto Rico · Numismatics | Notofilia',
     metaDescription:
-      'Puerto Rico’s provincial coinage, struck in Madrid: Alfonso XIII’s silver 20 centavos, 1895 (KM#22), and a 10 centavos P·G·V whose date awaits verification.',
+      'Puerto Rico’s provincial coinage, struck in Madrid in 1895, and Hacienda Vega Redonda’s almud tokens: the silver 20 centavos KM#22 and a 10 centavos P·G·V.',
     kicker: 'Puerto Rico · Numismatics',
     title: 'The 1895 provincial peso',
     heroAlt:
@@ -136,6 +152,22 @@ export const seriesCopy = {
     notesLink: 'Puerto Rico · Colonial and transition issues',
     tokensLead: 'The almud tokens of Hacienda Vega Redonda, in Las Marías, are in another case of this numismatics section.',
     tokensLink: 'Hacienda Vega Redonda',
+    hubTokens: {
+      id: 'fichas-vega-redonda',
+      title: 'Hacienda tokens: Vega Redonda',
+      body: 'Private tokens circulated alongside the provincial coinage. In the western coffee highlands, planters paid wages in their own tokens, called riles, because official small change reached the interior poorly. Hacienda Vega Redonda, in barrio Bucarabones, Las Marías, issued brass tokens (per Numista). They are undated, catalogued as ND (1890), and valued in almudes of coffee, not pesos. The collection holds the ¼, ½ and 1 almud.',
+      seriesCta: 'See the Hacienda Vega Redonda tokens →',
+      tokensLabel: 'Tokens:',
+      tokenLinks: [
+        { label: '¼ almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/cuarto-almud/' },
+        { label: '½ almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/medio-almud/' },
+        { label: '1 almud', path: '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/un-almud/' },
+      ],
+      compareLead: 'Compare:',
+      compareLink: 'Colombian hacienda tokens',
+      compareHref: '/coleccion/colombia-numismatica/fichas-de-hacienda/',
+      thumbsAria: 'Hacienda Vega Redonda tokens in the collection',
+    },
   },
 } as const;
 
