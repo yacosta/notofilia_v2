@@ -76,6 +76,14 @@ describe('Hacienda tokens page', () => {
     assert.match(bodyEs, /12,5 kg/);
     assert.match(bodyEn, /12\.5 kg/);
     assert.match(bodyEs, /poder liberatorio ilimitado/);
+    assert.match(
+      bodyEs,
+      /Para una serie paralela en Puerto Rico, ver las <a href="\/coleccion\/puerto-rico-numismatica\/hacienda-vega-redonda\/">fichas de la Hacienda Vega Redonda<\/a>\./,
+    );
+    assert.match(
+      bodyEn,
+      /For a parallel series from Puerto Rico, see the <a href="\/en\/collection\/puerto-rico-numismatics\/hacienda-vega-redonda\/">Hacienda Vega Redonda tokens<\/a>\./,
+    );
     assert.match(prose, /P# S909|P# S909/);
     assert.doesNotMatch(prose, /\$\s?\d/);
     assert.doesNotMatch(prose, /USD|precio|32\.?000|300 trabajadores/);

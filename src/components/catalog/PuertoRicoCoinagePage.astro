@@ -16,7 +16,11 @@ import {
   puertoRicoCoinageChapters,
   puertoRicoCoins,
 } from '../../data/puerto-rico-coinage';
-import { vegaRedondaPath } from '../../data/vega-redonda';
+import {
+  vegaRedondaPath,
+  vegaRedondaTokenPath,
+  vegaRedondaTokens,
+} from '../../data/vega-redonda';
 import SourceList from './SourceList.astro';
 import { CATALOG_PIECE_GRID } from '../../lib/catalog-grid';
 
@@ -143,19 +147,94 @@ const jsonLd = collectionPageJsonLd({
       <div class="mt-16 space-y-12">
         {
           puertoRicoCoinageChapters.map((chapter) => (
-            <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
-              <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
-                {chapter.years[locale]}
-              </p>
-              <h2
-                id={`${chapter.id}-heading`}
-                class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
-              >
-                {chapter.title[locale]}
-              </h2>
-              <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
-              <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
-            </section>
+            <>
+              <section id={chapter.id} class="scroll-mt-28" aria-labelledby={`${chapter.id}-heading`}>
+                <p class="m-0 font-sans text-[14px] font-semibold uppercase tracking-[0.2em] text-gold-light">
+                  {chapter.years[locale]}
+                </p>
+                <h2
+                  id={`${chapter.id}-heading`}
+                  class="mb-3 mt-2 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+                >
+                  {chapter.title[locale]}
+                </h2>
+                <p class="mb-4 mt-0 text-[17px]/7 text-muted">{chapter.lead[locale]}</p>
+                <p class="m-0 text-[17px]/7 text-cream">{chapter.body[locale]}</p>
+              </section>
+              {chapter.id === 'peso-provincial' && (
+                <section
+                  id={t.hubTokens.id}
+                  class="scroll-mt-28"
+                  aria-labelledby={`${t.hubTokens.id}-heading`}
+                >
+                  <h2
+                    id={`${t.hubTokens.id}-heading`}
+                    class="mb-3 mt-0 font-display text-[1.75rem]/9 font-normal text-cream-dim"
+                  >
+                    {t.hubTokens.title}
+                  </h2>
+                  <p class="mb-5 mt-0 text-[17px]/7 text-cream">{t.hubTokens.body}</p>
+                  <p class="mb-4 mt-0">
+                    <a
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={vegaRedondaPath(locale)}
+                    >
+                      {t.hubTokens.seriesCta}
+                    </a>
+                  </p>
+                  <ul
+                    class="mb-5 mt-0 grid list-none grid-cols-3 gap-3 p-0 sm:gap-4"
+                    aria-label={t.hubTokens.thumbsAria}
+                  >
+                    {vegaRedondaTokens.map((token) => (
+                      <li class="min-w-0">
+                        <a
+                          href={vegaRedondaTokenPath(token, locale)}
+                          class="group flex flex-col no-underline"
+                        >
+                          <CatalogThumb
+                            src={token.images.front}
+                            alt={token.caption[locale]}
+                            width={token.images.width}
+                            height={token.images.height}
+                            class="aspect-square w-full rounded-[2px] bg-bg object-contain"
+                          />
+                          <span class="mt-2 font-sans text-[13px] text-gold-light group-hover:text-cream sm:text-[14px]">
+                            {token.denomination[locale]}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <p class="mb-4 mt-0 text-[17px]/7 text-cream">
+                    {t.hubTokens.tokensLabel}
+                    {' '}
+                    {t.hubTokens.tokenLinks.map((link, index) => (
+                      <>
+                        {index > 0 && ' · '}
+                        <a
+                          class="text-gold-light underline decoration-line-strong hover:text-cream"
+                          href={localizePath(link.path, locale)}
+                        >
+                          {link.label}
+                        </a>
+                      </>
+                    ))}
+                  </p>
+                  <p class="m-0 text-[17px]/7 text-cream">
+                    {t.hubTokens.compareLead}
+                    {' '}
+                    <a
+                      class="text-gold-light underline decoration-line-strong hover:text-cream"
+                      href={localizePath(t.hubTokens.compareHref, locale)}
+                    >
+                      {t.hubTokens.compareLink}
+                    </a>
+                    .
+                  </p>
+                </section>
+              )}
+            </>
           ))
         }
       </div>
