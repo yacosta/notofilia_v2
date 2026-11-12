@@ -89,6 +89,14 @@ const added = [
   'poliester-mylar',
   'lupa',
   'procedencia',
+  'canto',
+  'error-de-corte',
+  'holograma',
+  'imagen-latente',
+  'numero-de-plancha',
+  'pinchazos-de-fajo',
+  'ppq',
+  'tirada',
 ];
 
 const astroConfig = readFileSync(new URL('../../astro.config.mjs', import.meta.url), 'utf8');
@@ -115,7 +123,7 @@ describe('glossary catalogue terms', () => {
     for (const slug of added) {
       assert.ok(glossaryTermBySlug(slug), slug);
     }
-    assert.equal(glossaryTerms.length, 180);
+    assert.equal(glossaryTerms.length, 188);
   });
 });
 
@@ -123,7 +131,7 @@ describe('two-tier glossary', () => {
   it('keeps 25–40 standalone articles and folds the rest', () => {
     assert.equal(STANDALONE_GLOSSARY_SLUGS.length, 34);
     assert.equal(standaloneGlossaryTerms().length, 34);
-    assert.equal(foldedGlossaryTerms().length, 146);
+    assert.equal(foldedGlossaryTerms().length, 154);
     assert.equal(standaloneGlossaryTerms().length + foldedGlossaryTerms().length, glossaryTerms.length);
     assert.ok(!isStandaloneGlossaryTerm('libra'));
     assert.ok(isStandaloneGlossaryTerm('pmg-pcgs'));

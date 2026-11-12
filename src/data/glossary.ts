@@ -50,6 +50,7 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   'billete-de-reemplazo-estrella': 'replacement-star-note',
   'billete-provisional': 'provisional-note',
   'billete-reserva-federal': 'federal-reserve-note',
+  canto: 'edge',
   ceca: 'mint',
   'certificado-de-plata': 'silver-certificate',
   'columnario-de-dos-mundos': 'pillar-dollar',
@@ -57,12 +58,15 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   'dolar-morgan': 'morgan-dollar',
   'dispositivo-opticamente-variable-ovd': 'optically-variable-device-ovd',
   encapsulado: 'slab',
+  'error-de-corte': 'cutting-error',
   'error-de-impresion': 'printing-error',
   escudo: 'gold-escudo',
   'fichas-hard-times': 'hard-times-tokens',
   filigrana: 'watermark',
   funnyback: 'funnyback',
   'hilo-de-seguridad': 'security-thread',
+  holograma: 'hologram',
+  'imagen-latente': 'latent-image',
   incuso: 'incuse',
   'marca-privy': 'privy-mark',
   mariposa: 'butterfly',
@@ -71,9 +75,12 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   notafilia: 'notaphily',
   numeracion: 'serial-number',
   'numeracion-especial': 'fancy-serial-number',
+  'numero-de-plancha': 'plate-number',
   numismatica: 'numismatics',
   'peso-oro': 'gold-peso',
   pick: 'pick',
+  'pinchazos-de-fajo': 'pinholes',
+  ppq: 'ppq',
   pvc: 'pvc',
   'pmg-pcgs': 'pmg-pcgs',
   polimero: 'polymer',
@@ -84,6 +91,7 @@ const GLOSSARY_SLUG_EN: Record<string, string> = {
   'experimental-r-s': 'r-s-experimental',
   'sello-amarillo': 'yellow-seal',
   'sobreimpresion-hawaii': 'hawaii-overprint',
+  tirada: 'mintage',
   'tinta-ovi': 'ovi-ink',
   'ventana-transparente': 'clear-window',
 };
@@ -277,7 +285,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Billete mula", en: "Mule Notes" },
     definition: { es: "Billete que presenta por error una combinación incompatible de planchas de impresión; en billetes de tamaño pequeño ocurre cuando una plancha frontal con numeración de placa micro se combina con una plancha posterior de numeración macro.", en: "A banknote that accidentally displays mismatched printing-plate features; in small-size notes, produced when a face plate with a micro plate number is paired with a back plate showing a macro plate number." },
-    seeAlso: ["error-de-impresion"],
+    seeAlso: ["error-de-impresion", "numero-de-plancha"],
   },
   {
     slug: "billete-provisional",
@@ -342,6 +350,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Calcografía", en: "Intaglio / chalcography" },
     definition: { es: "Proceso de impresión en hueco —también llamado intaglio— que deposita tinta espesa en surcos grabados y deja el relieve táctil de retratos y denominaciones, pensado para dificultar la falsificación.", en: "The recessed printing process — also called intaglio — that lays thick ink into engraved grooves and leaves the tactile relief of portraits and denominations, intended to deter counterfeiting." },
     seeAlso: ["intaglio", "talla-dulce", "offset"],
+  },
+  {
+    slug: "canto",
+    id: "canto",
+    category: "Diseño",
+    title: { es: "Canto", en: "Edge" },
+    definition: {
+      es: "El borde perimetral de una moneda, distinto del anverso y del reverso. Puede ser liso, con cordoncillo, con leyenda o con otro labrado; el limado del canto es un daño que NGC o PCGS marcan como Details.",
+      en: "The perimeter of a coin, distinct from the obverse and reverse. It may be plain, reeded, lettered, or otherwise worked; edge filing is damage that NGC or PCGS mark as Details.",
+    },
+    seeAlso: ["cordoncillo", "anverso", "reverso", "details-ngc", "incuso", "leyenda"],
   },
   {
     slug: "casi-sin-circular-au",
@@ -445,7 +464,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Cordoncillo", en: "Reeded edge" },
     definition: { es: "Diseño acanalado o labrado en el canto de una moneda para impedir el recorte. En Santafé las prensas de volante de 1756 produjeron las primeras piezas circulares de cordoncillo, frente a las macuquinas de martillo.", en: "A ridged or lettered edge on a coin, applied to prevent clipping. At Santafé the 1756 screw presses made the first round reeded pieces, against the hammered cobs." },
-    seeAlso: ["macuquina-cob", "cospel"],
+    seeAlso: ["macuquina-cob", "cospel", "canto"],
   },
   {
     slug: "cocobola",
@@ -525,7 +544,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Conservación",
     title: { es: "Grado Details", en: "Details grade" },
     definition: { es: "Calificación de NGC o PCGS cuando autentican la pieza y describen el desgaste —por ejemplo About Uncirculated— pero un daño (limado de canto, limpieza, rayado) impide asignar un número Sheldon. El ducado de Utrecht de 1761 de esta colección es NGC AU Details (Edge Filing).", en: "An NGC or PCGS grade that authenticates the piece and describes the wear — for example About Uncirculated — but withholds a Sheldon number because of damage (edge filing, cleaning, scratches). This collection’s 1761 Utrecht ducat is NGC AU Details (Edge Filing)." },
-    seeAlso: ["ngc", "casi-sin-circular-au", "escala-sheldon", "pmg-pcgs"],
+    seeAlso: ["ngc", "casi-sin-circular-au", "escala-sheldon", "pmg-pcgs", "canto"],
   },
   {
     slug: "deuda-flotante",
@@ -557,7 +576,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Dispositivo ópticamente variable (OVD)", en: "Optically variable device (OVD)" },
     definition: { es: "Elemento de seguridad impreso con tintas o láminas reflectantes que cambian de color o apariencia según el ángulo de luz.", en: "A security feature printed with reflective inks or foils that shifts color or appearance depending on the viewing angle." },
-    seeAlso: ["tinta-iridiscente", "tinta-ovi", "spark", "foil"],
+    seeAlso: ["tinta-iridiscente", "tinta-ovi", "spark", "foil", "holograma", "imagen-latente"],
   },
   {
     slug: "dolar",
@@ -637,7 +656,18 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Conservación",
     title: { es: "EPQ (Calidad de Papel Excepcional)", en: "EPQ (Exceptional Paper Quality)" },
     definition: { es: "Designación de grado usada por PMG para señalar que un billete es completamente original y no ha sufrido modificaciones químicas, físicas ni cosméticas.", en: "A grading designation used by PMG to denote a banknote that is entirely original and has not undergone chemical, physical, or cosmetic modification." },
-    seeAlso: ["billete-alterado", "billete-sin-circular", "pmg-pcgs", "encapsulado"],
+    seeAlso: ["billete-alterado", "billete-sin-circular", "pmg-pcgs", "encapsulado", "ppq"],
+  },
+  {
+    slug: "error-de-corte",
+    id: "error-de-corte",
+    category: "Producción",
+    title: { es: "Error de corte", en: "Cutting error" },
+    definition: {
+      es: "Fallo de guillotina o de corte del pliego: el billete queda descentrado, con márgenes desiguales o con un fragmento de papel sobrante. La mariposa de Hernández es una variedad de error de corte; un corte apretado sin solapa también lo es.",
+      en: "A guillotine or sheet-cutting fault: the note is off-center, with uneven margins, or with a scrap of surplus paper. Hernández’s butterfly (mariposa) is one cutting-error variety; a tight cut without a flap is another.",
+    },
+    seeAlso: ["mariposa", "maculatura", "error-de-impresion", "hernandez"],
   },
   {
     slug: "error-de-impresion",
@@ -645,7 +675,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Error de impresión", en: "Printing error" },
     definition: { es: "Billete que salió de la imprenta con un defecto no intencional —corte descentrado, doblez de papel, color faltante— y que suele valorarse más que un ejemplar normal. En taller se llama también maculatura.", en: "A note that left the printer with an unintentional defect — off-center cut, paper fold, missing color — usually valued above a normal example. In the print shop it is also called a maculature or error note." },
-    seeAlso: ["maculatura", "billete-de-reemplazo-estrella", "mariposa"],
+    seeAlso: ["maculatura", "billete-de-reemplazo-estrella", "mariposa", "error-de-corte"],
   },
   {
     slug: "escala-sheldon",
@@ -753,7 +783,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Filigrana", en: "Watermark" },
     definition: { es: "Imagen o patrón integrado en el papel o sustrato, visible principalmente al trasluz, usado como medida de seguridad.", en: "An image or pattern embedded in the paper or substrate, visible mainly when held up to light, used as a security measure." },
-    seeAlso: ["registro-perfecto"],
+    seeAlso: ["registro-perfecto", "imagen-latente"],
   },
   {
     slug: "foil",
@@ -761,7 +791,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Parche de foil", en: "Foil patch" },
     definition: { es: "Lámina metálica estampada en caliente sobre el billete, a menudo holográfica, distinta de una tinta ópticamente variable. En el 5 libras Churchill de polímero el parche del reverso lee BLENHEIM.", en: "A metallic foil stamped onto the note, often holographic, distinct from optically variable ink. On the polymer Churchill £5 the reverse patch reads BLENHEIM." },
-    seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-ovi", "polimero"],
+    seeAlso: ["dispositivo-opticamente-variable-ovd", "tinta-ovi", "polimero", "holograma"],
   },
   {
     slug: "firma",
@@ -844,12 +874,34 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["sustrato"],
   },
   {
+    slug: "holograma",
+    id: "holograma",
+    category: "Diseño",
+    title: { es: "Holograma", en: "Hologram" },
+    definition: {
+      es: "Imagen de seguridad grabada en lámina o en un dispositivo óptico, que cambia de apariencia al inclinarse. Forma parte de la familia de OVD; no es lo mismo que una tinta OVI ni que un SPARK.",
+      en: "A security image recorded in foil or in an optical device, shifting appearance when tilted. It belongs to the OVD family; it is not the same as OVI ink or SPARK.",
+    },
+    seeAlso: ["dispositivo-opticamente-variable-ovd", "foil", "tinta-ovi", "spark"],
+  },
+  {
+    slug: "imagen-latente",
+    id: "imagen-latente",
+    category: "Diseño",
+    title: { es: "Imagen latente", en: "Latent image" },
+    definition: {
+      es: "Motivo grabado en el intaglio que solo se lee con luz rasante o al inclinar el billete, invisible de frente. Es una medida anti-falsificación distinta de la filigrana y de la microimpresión.",
+      en: "An intaglio motif readable only in raking light or when the note is tilted, invisible head-on. It is an anti-counterfeiting device distinct from the watermark and from microprinting.",
+    },
+    seeAlso: ["intaglio", "filigrana", "microimpresion", "dispositivo-opticamente-variable-ovd"],
+  },
+  {
     slug: "intaglio",
     id: "intaglio",
     category: "Producción",
     title: { es: "Intaglio", en: "Intaglio printing" },
     definition: { es: "Técnica de impresión en relieve —calcografía— donde la tinta se deposita en surcos grabados en una plancha, dejando una textura táctil perceptible en el billete.", en: "A relief printing technique — chalcography / intaglio — where ink sits in grooves engraved into a plate, leaving a tactile texture on the finished note." },
-    seeAlso: ["talla-dulce", "calcografia", "offset"],
+    seeAlso: ["talla-dulce", "calcografia", "offset", "imagen-latente"],
   },
   {
     slug: "incuso",
@@ -857,7 +909,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Incuso", en: "Incuse" },
     definition: { es: "Diseño hundido por debajo del campo, en lugar de un relieve que sobresale. En los cuartos de águila Indian Head de 1908 y 1912 de esta colección, obra de Bela Lyon Pratt, el retrato y el águila van incusos. El Liberty Head de 1878, del mismo módulo, lleva el relieve en alto. También se llama incusa la leyenda hundida en el canto.", en: "A design sunk below the field, rather than a relief that stands above it. On this collection’s 1908 and 1912 Indian Head quarter eagles, by Bela Lyon Pratt, the portrait and the eagle are incuse. The 1878 Liberty Head, of the same module, is in high relief. A legend sunk into the edge is also called incuse." },
-    seeAlso: ["cuarto-de-aguila", "leyenda", "cordoncillo"],
+    seeAlso: ["cuarto-de-aguila", "leyenda", "cordoncillo", "canto"],
   },
   {
     slug: "jiaozi",
@@ -975,7 +1027,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Maculatura", en: "Error note" },
     definition: { es: "Billete que escapó del control de calidad con un error de impresión, corte, pliegue o entintado. En notafilia se colecciona como error de producción, no como desgaste de circulación.", en: "A banknote that escaped quality control with a printing, cutting, folding, or inking error. In notaphily it is collected as a production error, not as wear from circulation." },
-    seeAlso: ["error-de-impresion", "billete-de-reemplazo-estrella", "pliegue-de-fabrica"],
+    seeAlso: ["error-de-impresion", "billete-de-reemplazo-estrella", "pliegue-de-fabrica", "error-de-corte"],
   },
   {
     slug: "marca-privy",
@@ -1031,7 +1083,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Producción",
     title: { es: "Mariposa", en: "Butterfly cut" },
     definition: { es: "Error de corte: al contorno del billete le sobra un fragmento de papel en forma de ala. En la notafilia colombiana Hernández llama a esa pieza billete mariposa; no es un espécimen ni una prueba.", en: "A cutting error: a wing-shaped scrap of paper remains attached to the note’s edge. In Colombian notaphily Hernández calls that piece a butterfly note (mariposa); it is neither a specimen nor a proof." },
-    seeAlso: ["error-de-impresion", "specimen", "prueba-ensayo", "hernandez"],
+    seeAlso: ["error-de-impresion", "error-de-corte", "specimen", "prueba-ensayo", "hernandez"],
   },
   {
     slug: "foxing",
@@ -1047,7 +1099,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Diseño",
     title: { es: "Microimpresión", en: "Microprinting" },
     definition: { es: "Texto impreso a tamaño extremadamente pequeño, legible solo con lupa, usado como medida anti-falsificación.", en: "Text printed at extremely small scale, legible only under magnification, used as an anti-counterfeiting measure." },
-    seeAlso: ["lupa"],
+    seeAlso: ["lupa", "imagen-latente"],
   },
   {
     slug: "moneda-prueba-giori",
@@ -1106,12 +1158,23 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["pmg-pcgs", "encapsulado", "details-ngc", "escala-sheldon"],
   },
   {
+    slug: "numero-de-plancha",
+    id: "numero-de-plancha",
+    category: "Producción",
+    title: { es: "Número de plancha", en: "Plate number" },
+    definition: {
+      es: "Número —y, en el papel federal estadounidense, a menudo una letra de control— que identifica la plancha de impresión del anverso o del reverso. Sirve para distinguir variedades y, en las mulas, combina planchas que no debían ir juntas.",
+      en: "A number — and, on United States federal paper, often a check letter — that identifies the face or back printing plate. It distinguishes varieties and, on mules, pairs plates that were not meant to run together.",
+    },
+    seeAlso: ["billete-mula", "numeracion", "bep", "firma"],
+  },
+  {
     slug: "numeracion",
     id: "numeracion",
     category: "Diseño",
     title: { es: "Numeración", en: "Serial numbering" },
     definition: { es: "Los dígitos únicos —a veces con prefijo de letras— estampados en un billete para su control e identificación individual.", en: "The unique digits — sometimes with a letter prefix — stamped on a note for individual tracking and identification." },
-    seeAlso: ["serie", "numeracion-especial"],
+    seeAlso: ["serie", "numeracion-especial", "numero-de-plancha"],
   },
   {
     slug: "numeracion-baja",
@@ -1270,6 +1333,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     seeAlso: ["billete-sin-circular", "pliegue-de-fabrica"],
   },
   {
+    slug: "pinchazos-de-fajo",
+    id: "pinchazos-de-fajo",
+    category: "Conservación",
+    title: { es: "Pinchazos de fajo", en: "Pinholes" },
+    definition: {
+      es: "Agujeros diminutos dejados por alfileres o grapas al reunir billetes en fajos en caja o en banco. Son daño de manipulación, no un error de imprenta; en grados altos suelen bajar la nota o impedir el EPQ o el PPQ.",
+      en: "Tiny holes left by pins or staples when notes were bundled in a teller’s strap. They are handling damage, not a printing error; on high grades they usually lower the mark or cost EPQ or PPQ.",
+    },
+    seeAlso: ["faja", "epq-calidad-de-papel-excepcional", "ppq", "billete-sin-circular", "abrasiones"],
+  },
+  {
     slug: "pmg-pcgs",
     id: "pmg-pcgs",
     category: "Conservación",
@@ -1279,7 +1353,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
       en: "PMG and PCGS Banknote slab notes and assign a grade from 1 to 70, aligned with the Sheldon scale. For coins, see NGC.",
     },
     definition: { es: "Las dos casas de certificación de papel moneda más usadas: Paper Money Guaranty (PMG) y PCGS Banknote. Encapsulan el billete y le asignan un grado numérico de 1 a 70, alineado con la escala Sheldon. Para monedas, ver NGC.", en: "The two leading third-party paper-money grading services: Paper Money Guaranty (PMG) and PCGS Banknote. They encapsulate the note and assign a numerical grade from 1 to 70, aligned with the Sheldon scale. For coins, see NGC." },
-    seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "billete-sin-circular", "ngc", "encapsulado"],
+    seeAlso: ["escala-sheldon", "epq-calidad-de-papel-excepcional", "ppq", "billete-sin-circular", "ngc", "encapsulado"],
   },
   {
     slug: "poliester-mylar",
@@ -1317,7 +1391,18 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Producción",
     title: { es: "Prueba / ensayo", en: "Proof / essay" },
     definition: { es: "Impresión preliminar, sin curso legal, usada para evaluar un diseño, tinta o papel antes de aprobar la tirada definitiva. El ensayo suele ser una propuesta de diseño; la prueba, un test de plancha o color. Hernández anota que las pruebas no llevan ceros y a menudo son unifaces, a diferencia del espécimen.", en: "A preliminary, non-legal-tender print used to evaluate a design, ink, or paper before the final run is approved. An essay is typically a design proposal; a proof tests a plate or color. Hernández notes that proofs do not carry zeros and are often uniface, unlike a specimen." },
-    seeAlso: ["specimen", "intaglio", "mariposa", "uniface", "moneda-prueba-giori", "reacunacion"],
+    seeAlso: ["specimen", "intaglio", "mariposa", "uniface", "moneda-prueba-giori", "reacunacion", "tirada"],
+  },
+  {
+    slug: "ppq",
+    id: "ppq",
+    category: "Conservación",
+    title: { es: "PPQ (Premium Paper Quality)", en: "PPQ (Premium Paper Quality)" },
+    definition: {
+      es: "Designación de PCGS Banknote para papel original que no ha sido lavado, planchado ni alterado cosméticamente. Es el análogo del EPQ de PMG; no sube el número Sheldon por sí sola.",
+      en: "A PCGS Banknote designation for original paper that has not been washed, pressed, or cosmetically altered. It is the counterpart of PMG’s EPQ; it does not raise the Sheldon number by itself.",
+    },
+    seeAlso: ["epq-calidad-de-papel-excepcional", "pmg-pcgs", "billete-alterado", "billete-sin-circular", "pinchazos-de-fajo"],
   },
   {
     slug: "pvc",
@@ -1452,7 +1537,7 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     category: "Coleccionismo",
     title: { es: "Serie", en: "Series" },
     definition: { es: "En notafilia, puede referirse tanto a la tirada de impresión de una fecha de emisión como al prefijo de letras de la numeración; el sentido exacto depende del contexto.", en: "In notaphily this can mean either the print run tied to an issue date or the letter prefix of the serial number; the exact sense depends on context." },
-    seeAlso: ["numeracion"],
+    seeAlso: ["numeracion", "tirada"],
   },
   {
     slug: "billete-sin-circular",
@@ -1573,6 +1658,17 @@ const glossaryTermRecords: GlossaryTermRecord[] = [
     title: { es: "Tenge", en: "Tenge" },
     definition: { es: "Unidad monetaria de Kazajistán desde 1993.", en: "The monetary unit of Kazakhstan since 1993." },
     seeAlso: [],
+  },
+  {
+    slug: "tirada",
+    id: "tirada",
+    category: "Emisión",
+    title: { es: "Tirada / tiraje", en: "Mintage / print run" },
+    definition: {
+      es: "Cantidad de ejemplares acuñados o impresos de un tipo, una fecha o una ceca, según la cifra publicada por el emisor o el catálogo. No es el serial de un ejemplar ni la supervivencia; las tablas BanRep de producción anual miden denominación-año, no la tirada de un Pick concreto.",
+      en: "The published number of pieces struck or printed for a type, date, or mint. It is neither a serial nor survival; BanRep’s annual production tables measure denomination-year totals, not the printage of a single Pick.",
+    },
+    seeAlso: ["serie", "ceca", "pick", "banco-emisor", "numeracion"],
   },
   {
     slug: "tinta-fluorescente-uv",
