@@ -692,6 +692,158 @@ describe('November 9 2026 Numismatic News notes', () => {
   });
 });
 
+describe('12 November 2026 Frisian gold half Philipsdaalder', () => {
+  it('keeps the IJsselstein hammer and the premium on separate figures', () => {
+    const article = newsArticles.find((item) => item.slug === 'medio-philipsdaalder-oro-1580');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'gold-half-philipsdaalder-1580');
+    assert.equal(article.published, '2026-11-12');
+    assert.equal(article.sourceName, 'DutchNews');
+    assert.equal(article.sourceUrl, 'https://www.dutchnews.nl/2026/11/frisian-gold-coin-from-16th-century-breaks-record-at-auction/');
+    assert.equal(article.image, '/uploads/philipsdaalder-plata-nijmegen-1557.jpg');
+    assert.equal(article.imageWidth, 2201);
+    assert.equal(article.imageHeight, 1087);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'EUR');
+    assert.equal(article.claim.valueIso, '2026-11-11');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/philipsdaalder-plata-nijmegen-1557.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/philipsdaalder-plata-nijmegen-1557-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /300\.000/);
+    assert.match(article.claim.noteEs, /369\.002/);
+    assert.match(article.claim.noteEs, /369\.000/);
+    assert.match(article.claim.noteEn, /300,000/);
+    assert.match(article.claim.noteEn, /369,002/);
+    assert.match(article.claim.noteEn, /369,000/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(sourceUrls, /ha-europe\.com\/en\/browse/);
+    assert.match(sourceUrls, /dutchnews\.nl/);
+    assert.match(sourceUrls, /nos\.nl/);
+    assert.match(sourceUrls, /ad\.nl/);
+    assert.match(sourceUrls, /ikmk\.smb\.museum/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /5574/);
+      assert.match(html, /13[,.]27/);
+      assert.match(html, /Rengers/);
+      assert.match(html, /Delmonte/);
+      assert.match(html, /29a/);
+      assert.match(html, /18203563/);
+      assert.match(html, /Reinhard Saczewski/);
+      assert.match(html, /\/coleccion\/paises-bajos-numismatica\/ducado-utrecht-1761\//);
+      assert.match(html, /\/coleccion\/paises-bajos-numismatica\//);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /no publica|do not publish|No publicamos|do not publish the auction/i);
+    }
+    assert.match(article.bodyHtml.es, /300\.000 euros/);
+    assert.match(article.bodyHtml.es, /369\.002 euros/);
+    assert.match(article.bodyHtml.es, /Kampen/);
+    assert.match(article.bodyHtml.es, /no elige entre las dos frases/);
+    assert.match(article.bodyHtml.en, /€300,000/);
+    assert.match(article.bodyHtml.en, /€369,002/);
+    assert.match(article.bodyHtml.en, /does not choose between the two sentences/);
+    const dekBlock = editorialSource.slice(
+      editorialSource.indexOf('const catalogRelatedDeks'),
+      editorialSource.indexOf('export function resolveRelated'),
+    );
+    const titleBlock = editorialSource.slice(
+      editorialSource.indexOf('const catalogRelatedTitles'),
+      editorialSource.indexOf('const catalogRelatedDeks'),
+    );
+    assert.doesNotMatch(dekBlock, /\/glosario\/numismatica\//);
+    assert.doesNotMatch(titleBlock, /\/glosario\/numismatica\//);
+    const cents = newsArticles.find((item) => item.slug === 'centavos-lincoln-1982-siete-variedades');
+    const china = newsArticles.find((item) => item.slug === 'oro-china-monedas-suben-joyeria-baja');
+    assert.equal(
+      cents.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'La disciplina donde cabe un centavo de bolsillo.',
+    );
+    assert.equal(
+      china.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'La disciplina del Panda, distinta del billete de la colección.',
+    );
+  });
+});
+
+describe('12 November 2026 Springhead Hoard, first part', () => {
+  it('keeps the BBC total apart from the catalogue hammers and from the premium', () => {
+    const article = newsArticles.find((item) => item.slug === 'tesoro-springhead-primera-parte');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'springhead-hoard-first-part');
+    assert.equal(article.published, '2026-11-12');
+    assert.equal(article.sourceName, 'BBC');
+    assert.equal(article.sourceUrl, 'https://www.bbc.co.uk/news/articles/ckd7q75p2q39o');
+    assert.equal(article.image, '/uploads/siliqua-plata-valentiniano-siscia.jpg');
+    assert.equal(article.imageWidth, 2266);
+    assert.equal(article.imageHeight, 2349);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'GBP');
+    assert.equal(article.claim.valueIso, '2026-11-10');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/siliqua-plata-valentiniano-siscia.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/siliqua-plata-valentiniano-siscia-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /23\.240/);
+    assert.match(article.claim.noteEs, /15\.000/);
+    assert.match(article.claim.noteEn, /23,240/);
+    assert.match(article.claim.noteEn, /15,000/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join('\n');
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const url of sourceUrls.split('\n')) {
+      assert.ok(body.includes(url), url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /114/);
+      assert.match(html, /447/);
+      assert.match(html, /420/);
+      assert.match(html, /1948\.19\.801/);
+      assert.match(html, /19C/);
+      assert.match(html, /Emma Pratte/);
+      assert.match(html, /Hammer Price/);
+      assert.match(html, /Siscia/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /No publicamos|do not publish/i);
+      assert.doesNotMatch(html, /media\.noonans\.co\.uk|ichef\.bbci\.co\.uk/);
+    }
+    assert.match(article.bodyHtml.es, /23\.240 libras/);
+    assert.match(article.bodyHtml.es, /no elige el año/);
+    assert.match(article.bodyHtml.es, /no inventa una prima/);
+    assert.match(article.bodyHtml.en, /£23,240/);
+    assert.match(article.bodyHtml.en, /does not choose the year/);
+    assert.match(article.bodyHtml.en, /does not invent a premium/);
+    assert.equal(
+      article.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'Monedas, billetes y medallas. Este tesoro de Springhead no tiene ficha.',
+    );
+    const cents = newsArticles.find((item) => item.slug === 'centavos-lincoln-1982-siete-variedades');
+    assert.equal(
+      cents.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'La disciplina donde cabe un centavo de bolsillo.',
+    );
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);

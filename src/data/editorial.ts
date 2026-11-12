@@ -469,6 +469,14 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Ceca / marca de ceca',
     en: 'Mint / mint mark',
   },
+  '/coleccion/paises-bajos-numismatica/': {
+    es: 'Países Bajos · Historia de la acuñación',
+    en: 'Netherlands · History of the coinage',
+  },
+  '/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/': {
+    es: 'Ducado de oro · Utrecht 1761',
+    en: 'Gold ducat · Utrecht 1761',
+  },
   '/glosario/curso-legal/': {
     es: 'Curso legal',
     en: 'Legal tender',
@@ -615,6 +623,14 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/glosario/ceca/': {
     es: 'Filadelfia no marca. Denver es D y San Francisco es S.',
     en: 'Philadelphia uses no mark. Denver is D and San Francisco is S.',
+  },
+  '/coleccion/paises-bajos-numismatica/': {
+    es: 'Del gulden de 1434 al ducado de Utrecht. No ficha el medio Philipsdaalder de 1580.',
+    en: 'From the 1434 gulden to the Utrecht ducat. It does not record the 1580 half Philipsdaalder.',
+  },
+  '/coleccion/paises-bajos-numismatica/ducado-utrecht-1761/': {
+    es: 'Un ducado de comercio posterior, 3,47 g, oro .986. No es el peso de cuatro ducados del lote 5574.',
+    en: 'A later trade ducat, 3.47 g, .986 gold. Not the four-ducat weight of lot 5574.',
   },
   '/glosario/curso-legal/': {
     es: 'El facial que obliga a aceptar la pieza como pago.',
