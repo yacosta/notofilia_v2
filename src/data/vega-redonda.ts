@@ -4,19 +4,20 @@ import { NUMISMATICS_PATH, notesPath } from './puerto-rico-coinage.ts';
 
 /**
  * Fingerprint, no serial: Hacienda Vega Redonda + almud value + undated
- * (Numista ND 1890) + Rulau Lsm 18 / Lsm 17 / Lsm 16. No cert.
- * The 2 almudes (grouped with these as Rulau 15–18) is not a holding.
+ * (Numista ND 1890 where listed) + Rulau Lsm 18 / Lsm 17 / Lsm 16 / Lsm 15. No cert.
  * Each master is the full supplied frame. One face only. Do not invent a reverse.
  */
 export const VEGA_REDONDA_PATH = '/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/';
 export const VEGA_REDONDA_PATH_EN = '/collection/puerto-rico-numismatics/hacienda-vega-redonda/';
 
 const IMAGE = { width: 1254, height: 1254 } as const;
+const IMAGE_DOS = { width: 1024, height: 1024 } as const;
 
 export type VegaRedondaTokenId =
   | 'pr-nd-cuarto-almud-vega-redonda'
   | 'pr-nd-medio-almud-vega-redonda'
-  | 'pr-nd-un-almud-vega-redonda';
+  | 'pr-nd-un-almud-vega-redonda'
+  | 'pr-nd-dos-almudes-vega-redonda';
 
 export type VegaRedondaToken = {
   id: VegaRedondaTokenId;
@@ -320,6 +321,90 @@ export const vegaRedondaTokens: VegaRedondaToken[] = [
       biographySource,
     ],
   },
+  {
+    id: 'pr-nd-dos-almudes-vega-redonda',
+    path: `${VEGA_REDONDA_PATH}dos-almudes/`,
+    pathEn: `${VEGA_REDONDA_PATH_EN}dos-almudes/`,
+    altCatalog: 'Rulau Lsm 15',
+    references: 'Rulau Lsm 15',
+    year: {
+      es: 'Sin fecha en la pieza. El resto de la serie se lista en Numista como ND (1890); este valor no tiene ficha ahí.',
+      en: 'No date on the piece. The rest of the series is listed on Numista as ND (1890); this value has no page there.',
+    },
+    denomination: { es: '2 almudes', en: '2 almudes' },
+    composition: {
+      es: 'Latón, como el resto de la serie en Numista (¼, ½ y 1 almud). No es un ensayo de este disco.',
+      en: 'Brass, like the rest of the series on Numista (¼, ½, and 1 almud). Not an assay of this disc.',
+    },
+    weight: {
+      es: 'No pesado. No hay un peso de tipo publicado aquí para este valor.',
+      en: 'Not weighed. No published type weight is cited here for this value.',
+    },
+    diameter: {
+      es: 'No medido. No hay un diámetro de tipo publicado aquí para este valor.',
+      en: 'Not measured. No published type diameter is cited here for this value.',
+    },
+    edge: {
+      es: 'No fotografiado. Sin dato de canto de tipo para este valor.',
+      en: 'Not photographed. No type edge is published here for this value.',
+    },
+    place,
+    alignment: {
+      es: 'No comprobada. Con una sola cara no se fija la alineación.',
+      en: 'Not checked. A single face does not fix the alignment.',
+    },
+    grade: {
+      es: 'Sin encapsular y sin grado numérico. Latón dorado, leyendas firmes, estrellas y círculo de puntos completos. El 2 lleva punteado en el cuerpo. Marcas leves en los campos. No se ve un resello.',
+      en: 'Unslabbed, and no numerical grade. Golden brass, firm legends, stars and beaded circle complete. The 2 is stippled in the body. Light marks in the fields. No countermark shows.',
+    },
+    no_serial_reason:
+      'Hacienda Vega Redonda two-almud token: the type carries no serial, and this example is unslabbed with no certification number.',
+    images: {
+      front: '/images/catalog/puerto-rico/puerto-rico-hacienda-vega-redonda-dos-almudes.webp',
+      ...IMAGE_DOS,
+    },
+    title: { es: '2 almudes · Hacienda Vega Redonda', en: '2 almudes · Hacienda Vega Redonda' },
+    h1: { es: 'Ficha de 2 almudes', en: '2 almudes token' },
+    metaTitle: { es: 'Ficha de 2 almudes · Vega Redonda', en: '2 almudes token · Vega Redonda' },
+    metaDescription: {
+      es: 'Ficha de 2 almudes de la Hacienda Vega Redonda, Las Marías. Latón, sin fecha, Rulau Lsm 15. Completa la serie 15–18. Una sola cara.',
+      en: 'Two-almud token of Hacienda Vega Redonda, Las Marías. Brass, undated, Rulau Lsm 15. Completes the 15–18 series. One face only.',
+    },
+    kicker: { es: 'Puerto Rico · Ficha de hacienda', en: 'Puerto Rico · Hacienda token' },
+    lead: {
+      es: 'Ficha de 2 almudes de la Hacienda Vega Redonda, en Bucarabones, Las Marías. Latón, sin fecha y sin serial. Rulau Lsm 15. Numista aún no publica este valor. Esta fotografía es una sola cara.',
+      en: 'A two-almud token of Hacienda Vega Redonda, in Bucarabones, Las Marías. Brass, undated, and with no serial. Rulau Lsm 15. Numista does not yet list this value. This photograph is a single face.',
+    },
+    legend: {
+      es: 'HACIENDA arriba, VEGA·REDONDA abajo, un 2 al centro y ALMUD debajo. Una estrella a cada lado, círculo de puntos y orla de dentículos.',
+      en: 'HACIENDA above, VEGA·REDONDA below, a 2 in the center and ALMUD beneath. A star on each side, a beaded circle, and a denticled border.',
+    },
+    caption: {
+      es: 'Cara fotografiada del 2 almudes: HACIENDA, el 2 punteado, ALMUD y VEGA·REDONDA. El reverso de este ejemplar no se fotografió.',
+      en: 'Photographed face of the two almudes: HACIENDA, the stippled 2, ALMUD, and VEGA·REDONDA. This specimen’s reverse was not photographed.',
+    },
+    description: {
+      es: 'Ficha de plantación de la Hacienda Vega Redonda. El valor está en almudes, medida de volumen del café en cereza, no en pesos. AB Philea, subasta 30, lote 1118, agrupa el ¼, el ½, el 1 y el 2 como Rulau 15–18; este disco es el Lsm 15. Numista publica el ¼, el ½ y el 1 (N#163262, N#524158, N#570378) y no este valor. El metal se toma del resto de la serie: latón. Este disco no se pesó ni se midió. Aquí solo hay una cara, y no se ve un resello. La ceca sigue abierta: Numista dice Alemania en otras fichas, sin documento, y una biografía cita Barcelona. Esta pieza no elige. No es moneda del peso provincial de 1895.',
+      en: 'A plantation token of Hacienda Vega Redonda. The value is in almudes, a volume measure of coffee in the cherry, not in pesos. AB Philea, auction 30, lot 1118, groups the quarter, half, one, and two as Rulau 15–18; this disc is Lsm 15. Numista publishes the quarter, half, and one (N#163262, N#524158, N#570378) and not this value. The metal is taken from the rest of the series: brass. This disc was not weighed or measured. Only one face is here, and no countermark shows. The mint is still open: Numista says Germany on other tokens, with no document, and a biography cites Barcelona. This piece does not choose. It is not a coin of the 1895 provincial peso.',
+    },
+    scarcity: {
+      es: 'No hay un tiraje que esta ficha pueda citar. La falta de cifra no deja sentada una rareza. Con este disco la vitrina reúne los cuatro valores del juego Rulau 15–18.',
+      en: 'This record can cite no mintage. A missing figure does not establish rarity. With this disc the case holds all four values of the Rulau 15–18 set.',
+    },
+    sources: [
+      {
+        href: 'https://www.philea.se/en/product/155220',
+        es: 'AB Philea, subasta 30, lote 1118 — juego Rulau 15–18',
+        en: 'AB Philea, auction 30, lot 1118 — Rulau 15–18 set',
+        note: {
+          es: 'Describe un juego de ¼, ½, 1 y 2 almudes como Rulau 15–18. Fija el 2 como Lsm 15. Esta ficha no republica el precio.',
+          en: 'Describes a set of quarter, half, one, and two almudes as Rulau 15–18. It places the two as Lsm 15. This record does not republish the price.',
+        },
+      },
+      haciendaSource,
+      biographySource,
+    ],
+  },
 ];
 
 export type VegaRedondaChapter = {
@@ -358,12 +443,12 @@ export const vegaRedondaChapters: VegaRedondaChapter[] = [
     id: 'emision',
     title: { es: 'La serie acuñada', en: 'The struck series' },
     lead: {
-      es: 'Estas tres fichas llevan HACIENDA arriba y VEGA·REDONDA abajo.',
-      en: 'These three tokens read HACIENDA above and VEGA·REDONDA below.',
+      es: 'Estas cuatro fichas llevan HACIENDA arriba y VEGA·REDONDA abajo.',
+      en: 'These four tokens read HACIENDA above and VEGA·REDONDA below.',
     },
     body: {
-      es: 'Se ha descrito una emisión anterior, incusa, con las letras VR y un valor en almudes. Aquí no hay un ejemplar ni un número de catálogo que la fije. La serie de esta vitrina lleva el valor al centro, la palabra ALMUD, el círculo de puntos y las dos estrellas. Numista lista el ¼, el ½ y el 1 como ND (1890), latón, Rulau Lsm 18, Lsm 17 y Lsm 16. AB Philea, subasta 30, lote 1118, describe un juego de ¼, ½, 1 y 2 almudes como Rulau 15–18. El 2 almudes no está en la colección. Esta página no republica el remate de ese lote.',
-      en: 'An earlier incuse issue has been described, with the letters VR and a value in almudes. There is no example here, and no catalogue number that fixes it. The series in this case carries the value in the center, the word ALMUD, the beaded circle, and the two stars. Numista lists the quarter, the half, and the one as ND (1890), brass, Rulau Lsm 18, Lsm 17, and Lsm 16. AB Philea, auction 30, lot 1118, describes a set of quarter, half, one, and two almudes as Rulau 15–18. The two almudes is not in the collection. This page does not republish that lot’s hammer.',
+      es: 'Se ha descrito una emisión anterior, incusa, con las letras VR y un valor en almudes. Aquí no hay un ejemplar ni un número de catálogo que la fije. La serie de esta vitrina lleva el valor al centro, la palabra ALMUD, el círculo de puntos y las dos estrellas. Numista lista el ¼, el ½ y el 1 como ND (1890), latón, Rulau Lsm 18, Lsm 17 y Lsm 16. AB Philea, subasta 30, lote 1118, describe un juego de ¼, ½, 1 y 2 almudes como Rulau 15–18. El 2 almudes de esta vitrina es el Lsm 15; Numista aún no publica ese valor. Esta página no republica el remate de ese lote.',
+      en: 'An earlier incuse issue has been described, with the letters VR and a value in almudes. There is no example here, and no catalogue number that fixes it. The series in this case carries the value in the center, the word ALMUD, the beaded circle, and the two stars. Numista lists the quarter, the half, and the one as ND (1890), brass, Rulau Lsm 18, Lsm 17, and Lsm 16. AB Philea, auction 30, lot 1118, describes a set of quarter, half, one, and two almudes as Rulau 15–18. The two almudes in this case is Lsm 15; Numista does not yet list that value. This page does not republish that lot’s hammer.',
     },
   },
   {
@@ -374,8 +459,8 @@ export const vegaRedondaChapters: VegaRedondaChapter[] = [
       en: 'Germany and Barcelona both remain. The disc carries no workshop mark.',
     },
     body: {
-      es: 'Numista dice, en el ½ y en el 1 almud, que se acuñaron en Alemania, y no adjunta documento. La biografía citada recoge el testimonio atribuido a la Revista NumiExpo (1983, págs. 10–11): un taller de la calle Canuda 37, en Barcelona, para Vega Redonda y para la Hacienda Engracia. El 1 de esta vitrina es un 1 de gancho. Eso se ve en la foto y no nombra la ceca. El ¼ y el ½, en Numista, van en alineación medalla; el 1, a las 9. Con una sola cara no se comprueba.',
-      en: 'Numista says, on the half and the one almud, that they were struck in Germany, and attaches no document. The biography cited above reports the account attributed to Revista NumiExpo (1983, pp. 10–11): a workshop at Carrer de la Canuda 37, in Barcelona, for Vega Redonda and for Hacienda Engracia. The one in this case is a hooked 1. That shows in the photograph and does not name the mint. On Numista the quarter and the half are medal-aligned; the one is at 9 o’clock. A single face cannot check it.',
+      es: 'Numista dice, en el ½ y en el 1 almud, que se acuñaron en Alemania, y no adjunta documento. La biografía citada recoge el testimonio atribuido a la Revista NumiExpo (1983, págs. 10–11): un taller de la calle Canuda 37, en Barcelona, para Vega Redonda y para la Hacienda Engracia. El 1 de esta vitrina es un 1 de gancho. Eso se ve en la foto y no nombra la ceca. El ¼ y el ½, en Numista, van en alineación medalla; el 1, a las 9. El 2 no tiene ficha en Numista. Con una sola cara no se comprueba.',
+      en: 'Numista says, on the half and the one almud, that they were struck in Germany, and attaches no document. The biography cited above reports the account attributed to Revista NumiExpo (1983, pp. 10–11): a workshop at Carrer de la Canuda 37, in Barcelona, for Vega Redonda and for Hacienda Engracia. The one in this case is a hooked 1. That shows in the photograph and does not name the mint. On Numista the quarter and the half are medal-aligned; the one is at 9 o’clock. The two has no Numista page. A single face cannot check it.',
     },
   },
   {
@@ -440,7 +525,7 @@ export const vegaRedondaCopy = {
   es: {
     metaTitle: 'Fichas de la Hacienda Vega Redonda',
     metaDescription:
-      'Tres fichas de latón de la Hacienda Vega Redonda, Las Marías: ¼, ½ y 1 almud, sin fecha, listadas como ND (1890). El 2 almudes no está en esta vitrina.',
+      'Cuatro fichas de latón de la Hacienda Vega Redonda, Las Marías: ¼, ½, 1 y 2 almudes, sin fecha. Completan Rulau Lsm 15–18.',
     kicker: 'Puerto Rico · Numismática',
     title: 'Fichas de la Hacienda Vega Redonda',
     nav: 'Hacienda Vega Redonda',
@@ -449,7 +534,7 @@ export const vegaRedondaCopy = {
     series: 'Puerto Rico · Numismática',
     breadcrumb: 'Migas de pan',
     lead:
-      'Tres fichas de latón de la Hacienda Vega Redonda, en el barrio Bucarabones de Las Marías. Valen ¼, ½ y 1 almud. No traen fecha. Numista las lista como ND (1890). El 2 almudes de la misma serie no está en esta vitrina.',
+      'Cuatro fichas de latón de la Hacienda Vega Redonda, en el barrio Bucarabones de Las Marías. Valen ¼, ½, 1 y 2 almudes. No traen fecha. Numista lista el ¼, el ½ y el 1 como ND (1890); el 2 es Rulau Lsm 15.',
     factsHeading: 'Datos de la serie',
     placeLabel: 'Lugar',
     place: 'Barrio Bucarabones, Las Marías, Puerto Rico',
@@ -458,14 +543,14 @@ export const vegaRedondaCopy = {
     unitLabel: 'Unidad',
     unit: 'Almud, medida de volumen del café en cereza. El disco no la convierte a pesos.',
     metalLabel: 'Metal de tipo',
-    metal: 'Latón, según Numista. No es un ensayo de estos discos.',
+    metal: 'Latón, según Numista en el ¼, el ½ y el 1. No es un ensayo de estos discos.',
     dateLabel: 'Fecha',
-    date: 'Sin fecha en la pieza. Catálogo: ND (1890).',
+    date: 'Sin fecha en la pieza. Catálogo: ND (1890) donde Numista lo lista.',
     heldLabel: 'En la vitrina',
-    held: '¼, ½ y 1 almud. Falta el 2 almudes. No hay ejemplar de la emisión incusa con letras VR.',
+    held: '¼, ½, 1 y 2 almudes. Completan el juego Rulau 15–18. No hay ejemplar de la emisión incusa con letras VR.',
     holdingsTitle: 'Fichas en la colección',
     holdingsIntro:
-      'Tres discos de la serie con leyenda HACIENDA / VEGA·REDONDA. Sin serial y sin cápsula. De cada uno se fotografió una cara.',
+      'Cuatro discos de la serie con leyenda HACIENDA / VEGA·REDONDA. Sin serial y sin cápsula. De cada uno se fotografió una cara.',
     holdingsAria: 'Fichas de la Hacienda Vega Redonda',
     viewToken: 'Abrir la ficha',
     tableHeading: 'Valores catalogados',
@@ -503,11 +588,12 @@ export const vegaRedondaCopy = {
         held: true,
       },
       {
+        href: `${VEGA_REDONDA_PATH}dos-almudes/`,
         value: '2 almudes',
-        rulau: 'Lsm 15, en el juego 15–18',
+        rulau: 'Lsm 15',
         numista: 'No citado aquí',
-        type: 'No medido en esta vitrina',
-        held: false,
+        type: 'Latón por la serie; sin medida publicada',
+        held: true,
       },
     ],
     sourcesTitle: 'Fuentes',
@@ -520,7 +606,7 @@ export const vegaRedondaCopy = {
   en: {
     metaTitle: 'Hacienda Vega Redonda almud tokens',
     metaDescription:
-      'Three brass tokens of Hacienda Vega Redonda, Las Marías: ¼, ½, and 1 almud, undated, listed as ND (1890). The 2 almudes token is not in this case.',
+      'Four brass tokens of Hacienda Vega Redonda, Las Marías: ¼, ½, 1, and 2 almudes, undated. They complete Rulau Lsm 15–18.',
     kicker: 'Puerto Rico · Numismatics',
     title: 'Hacienda Vega Redonda tokens',
     nav: 'Hacienda Vega Redonda',
@@ -529,7 +615,7 @@ export const vegaRedondaCopy = {
     series: 'Puerto Rico · Numismatics',
     breadcrumb: 'Breadcrumb',
     lead:
-      'Three brass tokens of Hacienda Vega Redonda, in barrio Bucarabones, Las Marías. They are valued at ¼, ½, and 1 almud. They carry no date. Numista lists them as ND (1890). The two-almud piece of the same series is not in this case.',
+      'Four brass tokens of Hacienda Vega Redonda, in barrio Bucarabones, Las Marías. They are valued at ¼, ½, 1, and 2 almudes. They carry no date. Numista lists the quarter, half, and one as ND (1890); the two is Rulau Lsm 15.',
     factsHeading: 'Series facts',
     placeLabel: 'Place',
     place: 'Barrio Bucarabones, Las Marías, Puerto Rico',
@@ -538,14 +624,14 @@ export const vegaRedondaCopy = {
     unitLabel: 'Unit',
     unit: 'The almud, a volume measure of coffee in the cherry. The disc does not convert it into pesos.',
     metalLabel: 'Type metal',
-    metal: 'Brass, per Numista. Not an assay of these discs.',
+    metal: 'Brass, per Numista for the quarter, half, and one. Not an assay of these discs.',
     dateLabel: 'Date',
-    date: 'No date on the piece. Catalogue: ND (1890).',
+    date: 'No date on the piece. Catalogue: ND (1890) where Numista lists it.',
     heldLabel: 'In the case',
-    held: 'Quarter, half, and one almud. The two almudes is absent. There is no example of the incuse issue lettered VR.',
+    held: 'Quarter, half, one, and two almudes. They complete the Rulau 15–18 set. There is no example of the incuse issue lettered VR.',
     holdingsTitle: 'Tokens in the collection',
     holdingsIntro:
-      'Three discs of the series lettered HACIENDA / VEGA·REDONDA. No serial and no slab. One face of each was photographed.',
+      'Four discs of the series lettered HACIENDA / VEGA·REDONDA. No serial and no slab. One face of each was photographed.',
     holdingsAria: 'Hacienda Vega Redonda tokens',
     viewToken: 'Open the record',
     tableHeading: 'Catalogued values',
@@ -583,11 +669,12 @@ export const vegaRedondaCopy = {
         held: true,
       },
       {
+        href: `${VEGA_REDONDA_PATH}dos-almudes/`,
         value: '2 almudes',
-        rulau: 'Lsm 15, within the 15–18 set',
+        rulau: 'Lsm 15',
         numista: 'Not cited here',
-        type: 'Not measured in this case',
-        held: false,
+        type: 'Brass by series; no published measure',
+        held: true,
       },
     ],
     sourcesTitle: 'Sources',

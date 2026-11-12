@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

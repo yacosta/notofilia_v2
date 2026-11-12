@@ -256,6 +256,7 @@ export const additions: Holding[] = [
   { id: 'pr-nd-cuarto-almud-vega-redonda', kind: 'coin', country: 'PR' },
   { id: 'pr-nd-medio-almud-vega-redonda', kind: 'coin', country: 'PR' },
   { id: 'pr-nd-un-almud-vega-redonda', kind: 'coin', country: 'PR' },
+  { id: 'pr-nd-dos-almudes-vega-redonda', kind: 'coin', country: 'PR' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -437,6 +438,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-nd-cuarto-almud-vega-redonda' },
   { id: 'pr-nd-medio-almud-vega-redonda' },
   { id: 'pr-nd-un-almud-vega-redonda' },
+  { id: 'pr-nd-dos-almudes-vega-redonda' },
 ];
 
 export type CollectionStats = {

@@ -91,8 +91,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -457,8 +457,8 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1976-2-pesos-oro-00194674'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1976-2-pesos-oro-p413b'), true);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
   });
 
   it('lists the 1976 2 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1235,8 +1235,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1745,8 +1745,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.equal(note.images.composite.includes('r35555693-composite'), true);
     assert.equal(note.images.width, 1672);
     assert.equal(note.images.height, 941);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     const publicCopy = [
       note.lead.es,
       note.lead.en,
@@ -1881,8 +1881,8 @@ describe('Colombia Gaitán 1,000 pesos, 23 November 2010 (Pick 456m)', () => {
       localizePath('/coleccion/colombia/1000-pesos-2010/', 'en'),
       '/en/collection/colombia/1000-pesos-2010/',
     );
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     const thousand = seriesCardGroupsForChapter('banco-de-la-republica').find(
       (group) => group.id === 'banrep-1000-pesos',
     );
@@ -1925,8 +1925,8 @@ describe('Colombia Gaitán 1,000 pesos, 18 August 2009 (Pick 456l)', () => {
       localizePath('/coleccion/colombia/1000-pesos-2009/', 'en'),
       '/en/collection/colombia/1000-pesos-2009/',
     );
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     const prior = noteById('1000-pesos-2010');
     assert.ok(prior);
     assert.notEqual(prior.serial, note.serial);
@@ -1964,8 +1964,8 @@ describe('Colombia Santander 2,000 pesos, 19 August 2009 (Pick 457k)', () => {
       localizePath('/coleccion/colombia/2000-pesos-2009/', 'en'),
       '/en/collection/colombia/2000-pesos-2009/',
     );
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     const twoThousand = seriesCardGroupsForChapter('banco-de-la-republica').find(
       (group) => group.id === 'banrep-2000-pesos',
     );

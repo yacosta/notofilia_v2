@@ -25,7 +25,7 @@ const tokenPage = readFileSync(
 );
 
 describe('Hacienda Vega Redonda tokens', () => {
-  it('registers one bilingual series and three no-serial holdings', () => {
+  it('registers one bilingual series and four no-serial holdings', () => {
     assert.equal(
       localizePath(VEGA_REDONDA_PATH, 'en'),
       '/en/collection/puerto-rico-numismatics/hacienda-vega-redonda/',
@@ -36,20 +36,23 @@ describe('Hacienda Vega Redonda tokens', () => {
         'pr-nd-cuarto-almud-vega-redonda',
         'pr-nd-medio-almud-vega-redonda',
         'pr-nd-un-almud-vega-redonda',
+        'pr-nd-dos-almudes-vega-redonda',
       ],
     );
     for (const token of vegaRedondaTokens) {
       assert.equal(localizePath(token.path, 'en'), `/en${token.pathEn}`);
       assert.match(token.no_serial_reason, /no serial/);
-      assert.equal(token.images.width, 1254);
-      assert.equal(token.images.height, 1254);
+      const expectedSize = token.id === 'pr-nd-dos-almudes-vega-redonda' ? 1024 : 1254;
+      assert.equal(token.images.width, expectedSize);
+      assert.equal(token.images.height, expectedSize);
       assert.match(token.images.front, /puerto-rico-hacienda-vega-redonda-/);
     }
-    assert.equal(additions.at(-3)?.id, 'pr-nd-cuarto-almud-vega-redonda');
-    assert.equal(additions.at(-2)?.id, 'pr-nd-medio-almud-vega-redonda');
-    assert.equal(additions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-4)?.id, 'pr-nd-cuarto-almud-vega-redonda');
+    assert.equal(additions.at(-3)?.id, 'pr-nd-medio-almud-vega-redonda');
+    assert.equal(additions.at(-2)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
     assert.match(esPage, /PuertoRicoVegaRedondaPage locale="es"/);
     assert.match(enPage, /PuertoRicoVegaRedondaPage locale="en"/);
     assert.match(tokenPage, /id="main-content"/);
@@ -80,6 +83,7 @@ describe('Hacienda Vega Redonda tokens', () => {
     assert.match(prose, /Lsm 18/);
     assert.match(prose, /Lsm 17/);
     assert.match(prose, /Lsm 16/);
+    assert.match(prose, /Lsm 15/);
     for (const copy of [vegaRedondaCopy.es, vegaRedondaCopy.en]) {
       const title = `${copy.metaTitle} · Notofilia`;
       assert.ok(title.length <= 70, `${title.length} ${title}`);
