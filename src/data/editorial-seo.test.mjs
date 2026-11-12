@@ -753,6 +753,26 @@ describe('12 November 2026 Frisian gold half Philipsdaalder', () => {
     assert.match(article.bodyHtml.en, /€300,000/);
     assert.match(article.bodyHtml.en, /€369,002/);
     assert.match(article.bodyHtml.en, /does not choose between the two sentences/);
+    const dekBlock = editorialSource.slice(
+      editorialSource.indexOf('const catalogRelatedDeks'),
+      editorialSource.indexOf('export function resolveRelated'),
+    );
+    const titleBlock = editorialSource.slice(
+      editorialSource.indexOf('const catalogRelatedTitles'),
+      editorialSource.indexOf('const catalogRelatedDeks'),
+    );
+    assert.doesNotMatch(dekBlock, /\/glosario\/numismatica\//);
+    assert.doesNotMatch(titleBlock, /\/glosario\/numismatica\//);
+    const cents = newsArticles.find((item) => item.slug === 'centavos-lincoln-1982-siete-variedades');
+    const china = newsArticles.find((item) => item.slug === 'oro-china-monedas-suben-joyeria-baja');
+    assert.equal(
+      cents.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'La disciplina donde cabe un centavo de bolsillo.',
+    );
+    assert.equal(
+      china.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'La disciplina del Panda, distinta del billete de la colección.',
+    );
   });
 });
 

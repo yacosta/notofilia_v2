@@ -469,10 +469,6 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: 'Ceca / marca de ceca',
     en: 'Mint / mint mark',
   },
-  '/glosario/numismatica/': {
-    es: 'Numismática',
-    en: 'Numismatics',
-  },
   '/coleccion/paises-bajos-numismatica/': {
     es: 'Países Bajos · Historia de la acuñación',
     en: 'Netherlands · History of the coinage',
@@ -627,10 +623,6 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/glosario/ceca/': {
     es: 'Filadelfia no marca. Denver es D y San Francisco es S.',
     en: 'Philadelphia uses no mark. Denver is D and San Francisco is S.',
-  },
-  '/glosario/numismatica/': {
-    es: 'La disciplina de la moneda acuñada.',
-    en: 'The discipline of struck coin.',
   },
   '/coleccion/paises-bajos-numismatica/': {
     es: 'Del gulden de 1434 al ducado de Utrecht. No ficha el medio Philipsdaalder de 1580.',
