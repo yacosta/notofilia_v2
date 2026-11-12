@@ -692,6 +692,70 @@ describe('November 9 2026 Numismatic News notes', () => {
   });
 });
 
+describe('12 November 2026 Frisian gold half Philipsdaalder', () => {
+  it('keeps the IJsselstein hammer and the premium on separate figures', () => {
+    const article = newsArticles.find((item) => item.slug === 'medio-philipsdaalder-oro-1580');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'gold-half-philipsdaalder-1580');
+    assert.equal(article.published, '2026-11-12');
+    assert.equal(article.sourceName, 'DutchNews');
+    assert.equal(article.sourceUrl, 'https://www.dutchnews.nl/2026/11/frisian-gold-coin-from-16th-century-breaks-record-at-auction/');
+    assert.equal(article.image, '/uploads/philipsdaalder-plata-nijmegen-1557.jpg');
+    assert.equal(article.imageWidth, 2201);
+    assert.equal(article.imageHeight, 1087);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'EUR');
+    assert.equal(article.claim.valueIso, '2026-11-11');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/philipsdaalder-plata-nijmegen-1557.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/philipsdaalder-plata-nijmegen-1557-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length <= 155);
+    assert.ok(article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /300\.000/);
+    assert.match(article.claim.noteEs, /369\.002/);
+    assert.match(article.claim.noteEs, /369\.000/);
+    assert.match(article.claim.noteEn, /300,000/);
+    assert.match(article.claim.noteEn, /369,002/);
+    assert.match(article.claim.noteEn, /369,000/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(sourceUrls, /ha-europe\.com\/en\/browse/);
+    assert.match(sourceUrls, /dutchnews\.nl/);
+    assert.match(sourceUrls, /nos\.nl/);
+    assert.match(sourceUrls, /ad\.nl/);
+    assert.match(sourceUrls, /ikmk\.smb\.museum/);
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /5574/);
+      assert.match(html, /13[,.]27/);
+      assert.match(html, /Rengers/);
+      assert.match(html, /Delmonte/);
+      assert.match(html, /29a/);
+      assert.match(html, /18203563/);
+      assert.match(html, /Reinhard Saczewski/);
+      assert.match(html, /\/coleccion\/paises-bajos-numismatica\/ducado-utrecht-1761\//);
+      assert.match(html, /\/coleccion\/paises-bajos-numismatica\//);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /no publica|do not publish|No publicamos|do not publish the auction/i);
+    }
+    assert.match(article.bodyHtml.es, /300\.000 euros/);
+    assert.match(article.bodyHtml.es, /369\.002 euros/);
+    assert.match(article.bodyHtml.es, /Kampen/);
+    assert.match(article.bodyHtml.es, /no elige entre las dos frases/);
+    assert.match(article.bodyHtml.en, /€300,000/);
+    assert.match(article.bodyHtml.en, /€369,002/);
+    assert.match(article.bodyHtml.en, /does not choose between the two sentences/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
