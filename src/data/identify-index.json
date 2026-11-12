@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T21:16:29.101Z",
+  "generatedAt": "2026-11-12T10:50:51.649Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -7268,6 +7268,19 @@
       "title": {
         "es": "1 almud · Hacienda Vega Redonda",
         "en": "1 almud · Hacienda Vega Redonda"
+      }
+    },
+    {
+      "pieceId": "pr-nd-dos-almudes-vega-redonda",
+      "face": "front",
+      "hash": "141a4d31551d120c",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/hacienda-vega-redonda/dos-almudes/",
+      "pick": "Rulau Lsm 15",
+      "image": "/images/catalog/puerto-rico/puerto-rico-hacienda-vega-redonda-dos-almudes.webp",
+      "title": {
+        "es": "2 almudes · Hacienda Vega Redonda",
+        "en": "2 almudes · Hacienda Vega Redonda"
       }
     }
   ]
