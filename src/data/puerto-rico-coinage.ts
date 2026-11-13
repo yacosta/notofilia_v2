@@ -537,11 +537,20 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
       en: 'CoinVarieties cites the type as KM-23.2. Numista and NGC use KM#23.',
     },
     grade: {
-      es: 'Sin encapsular. El desgaste no se describe: el archivo todavía no tiene las fotografías de este ejemplar. No es un grado numérico.',
-      en: 'Unslabbed. Wear is not described: the archive does not yet have photographs of this specimen. Not a numerical grade.',
+      es: 'Sin encapsular. Desgaste de circulación en el cabello y en las armas; una raya en el cuello. Leyendas y fecha legibles. No es un grado numérico.',
+      en: 'Unslabbed. Circulation wear to the hair and arms; a scratch on the neck. Legends and date readable. Not a numerical grade.',
     },
     no_serial_reason:
       'Milled Puerto Rican provincial silver 40 centavos: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    images: {
+      composite: '/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-composite.jpg',
+      front: '/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-front.jpg',
+      back: '/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-back.jpg',
+      width: 2048,
+      height: 1024,
+      faceWidth: 1024,
+      faceHeight: 1024,
+    },
     title: {
       es: '40 centavos · Alfonso XIII · 1896 PGV',
       en: '40 Centavos · Alfonso XIII · 1896 PGV',
@@ -555,8 +564,8 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
       en: 'Silver 40 centavos of Puerto Rico, 1896: the boy Alfonso XIII, struck in Madrid, with officials P·G·V. No serial and unslabbed.',
     },
     description: {
-      es: 'Esta pieza es un 40 centavos de plata de la moneda provincial de Puerto Rico, fechado en 1896, el único año de la denominación. El anverso del tipo muestra el busto de Alfonso XIII niño a la izquierda, con la leyenda ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA —«Alfonso XIII, por la gracia de Dios, rey constitucional de España»— y, bajo el corte del cuello, las iniciales B·M del grabador Bartolomé Maura y Montaner y la fecha 1896 entre estrellas. El reverso lleva las armas de España coronadas entre las columnas de Hércules, con la cinta PLUS ULTRA, la orla ISLA DE PUERTO RICO arriba y 40 CENTAVOS abajo, flanqueado por P·G· a la izquierda y ·V· a la derecha. Esas letras nombran a los oficiales de la ceca de Madrid: Félix Miguel Peiró Rodrigo y Antonio García González, ensayadores, y Remigio Vega Vega, fiel de balanza. No indican una acuñación en Puerto Rico. Krause lo cataloga como KM#23; Calicó, como 127; Numista, como N#17452. Numista da plata .835, 10 g, 27 mm, canto estriado y alineación de moneda (180°) como cifras de tipo; no se midieron en este ejemplar. El archivo todavía no conserva las fotografías de la pieza, así que las leyendas son las del tipo catalogado.',
-      en: 'This piece is a silver 40 centavos of Puerto Rico’s provincial coinage, dated 1896, the only year of the denomination. The type obverse shows the bust of the boy Alfonso XIII facing left, with the legend ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA — “Alfonso XIII, by the grace of God, constitutional king of Spain” — and, below the neck truncation, the initials B·M of engraver Bartolomé Maura y Montaner and the date 1896 between stars. The reverse carries the crowned arms of Spain between the Pillars of Hercules, with the PLUS ULTRA ribbon, the legend ISLA DE PUERTO RICO above and 40 CENTAVOS below, flanked by P·G· at left and ·V· at right. Those letters name Madrid Mint officials: Félix Miguel Peiró Rodrigo and Antonio García González, assayers, and Remigio Vega Vega, weigh master. They do not mark a striking in Puerto Rico. Krause catalogs it as KM#23; Calicó as 127; Numista as N#17452. Numista gives .835 silver, 10 g, 27 mm, a reeded edge, and coin alignment (180°) as type figures; they were not measured on this specimen. The archive does not yet hold photographs of the piece, so the legends are those of the catalogued type.',
+      es: 'Esta pieza es un 40 centavos de plata de la moneda provincial de Puerto Rico, fechado en 1896, el único año de la denominación. El anverso muestra el busto de Alfonso XIII niño a la izquierda, con la leyenda ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA —«Alfonso XIII, por la gracia de Dios, rey constitucional de España»— y, bajo el corte del cuello, las iniciales B·M del grabador Bartolomé Maura y Montaner y la fecha 1896 entre estrellas. El reverso lleva las armas de España coronadas entre las columnas de Hércules, con la cinta PLUS ULTRA, la orla ISLA DE PUERTO RICO arriba y 40 CENTAVOS abajo, flanqueado por P·G· a la izquierda y ·V· a la derecha. Esas letras nombran a los oficiales de la ceca de Madrid: Félix Miguel Peiró Rodrigo y Antonio García González, ensayadores, y Remigio Vega Vega, fiel de balanza. No indican una acuñación en Puerto Rico. Krause lo cataloga como KM#23; Calicó, como 127; Numista, como N#17452. Numista da plata .835, 10 g, 27 mm, canto estriado y alineación de moneda (180°) como cifras de tipo; no se midieron en este ejemplar. Las fotografías son del objeto, en posición de lectura y sin recorte; no establecen el eje de cuños.',
+      en: 'This piece is a silver 40 centavos of Puerto Rico’s provincial coinage, dated 1896, the only year of the denomination. The obverse shows the bust of the boy Alfonso XIII facing left, with the legend ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA — “Alfonso XIII, by the grace of God, constitutional king of Spain” — and, below the neck truncation, the initials B·M of engraver Bartolomé Maura y Montaner and the date 1896 between stars. The reverse carries the crowned arms of Spain between the Pillars of Hercules, with the PLUS ULTRA ribbon, the legend ISLA DE PUERTO RICO above and 40 CENTAVOS below, flanked by P·G· at left and ·V· at right. Those letters name Madrid Mint officials: Félix Miguel Peiró Rodrigo and Antonio García González, assayers, and Remigio Vega Vega, weigh master. They do not mark a striking in Puerto Rico. Krause catalogs it as KM#23; Calicó as 127; Numista as N#17452. Numista gives .835 silver, 10 g, 27 mm, a reeded edge, and coin alignment (180°) as type figures; they were not measured on this specimen. The photographs are of the object, upright and uncropped; they do not establish die axis.',
     },
     history: {
       es: 'El Real Decreto de 17 de agosto de 1895 cambió la plata mexicana de la isla por el Billete de Canje de 1 peso, y ese papel, por moneda provincial labrada en Madrid. El 40 centavos se acuñó solo en 1896. EnciclopediaPR y Numista registran 725.002 piezas; la tabla de Wikipedia en español y la guía de NGC, 725.000. La ficha conserva las dos cifras y no atribuye la diferencia de dos piezas a pruebas. La ley adoptada es .835, la de Numista. NGC publica .900, que en un disco de 10 g daría 9 g de plata fina, frente a los 8,35 g del cálculo a .835. La sección 11 de la Ley Foraker, de 12 de abril de 1900, autorizó el retiro de la moneda puertorriqueña a 60 centavos estadounidenses por peso, y el mismo tipo para las fracciones. A ese tipo, un 40 centavos equivalía a 24 centavos de dólar. Esa equivalencia es la del canje, no un valor numismático. El texto dispone además que, tres meses después de entrar en vigor la ley, solo la moneda estadounidense sea de curso legal para las deudas contraídas después; las anteriores seguían pagaderas en moneda puertorriqueña o al tipo del canje. Numista fecha la desmonetización el 12 de abril de 1900.',
@@ -571,12 +580,12 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
       en: 'ISLA DE PUERTO RICO · PLUS ULTRA · P·G· 40 CENTAVOS ·V· (officials Peiró, García, and Vega).',
     },
     frontCaption: {
-      es: 'Anverso del tipo: busto de Alfonso XIII niño a la izquierda; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 entre estrellas.',
-      en: 'Type obverse: bust of the boy Alfonso XIII facing left; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 between stars.',
+      es: 'Anverso: busto de Alfonso XIII niño a la izquierda; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 entre estrellas.',
+      en: 'Obverse: bust of the boy Alfonso XIII facing left; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 between stars.',
     },
     backCaption: {
-      es: 'Reverso del tipo: armas de España coronadas entre las columnas de Hércules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
-      en: 'Type reverse: crowned arms of Spain between the Pillars of Hercules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
+      es: 'Reverso: armas de España coronadas entre las columnas de Hércules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
+      en: 'Reverse: crowned arms of Spain between the Pillars of Hercules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
     },
     scarcity: {
       es: 'Tipo de un solo año: 1896 P·G·V, KM#23. Forma parte de la serie provincial de cinco denominaciones —5, 10, 20 y 40 centavos, y 1 peso— emitida en 1895–1896. La tirada, sea 725.002 o 725.000, no dice cuántos ejemplares sobreviven. Los que conservan detalle y superficie original interesan más. Esta ficha no publica un censo ni precios de subasta. Para comparar piezas del tipo se miran el desgaste, los golpes, las rayas, una posible limpieza y la certificación, junto con la fecha y la referencia.',
@@ -691,7 +700,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Un 10 centavos cuya fecha aparente, 1895, está por verificar; un 20 centavos de plata de 1895, y un 40 centavos de plata de 1896. Los tres llevan oficiales P·G·V y están sin encapsular. El 40 centavos todavía no tiene fotografías en el archivo. Las demás fichas se publicarán a medida que se documenten.',
+      'Un 10 centavos cuya fecha aparente, 1895, está por verificar; un 20 centavos de plata de 1895, y un 40 centavos de plata de 1896. Los tres llevan oficiales P·G·V y están sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead: 'Otra pieza de la colección de Puerto Rico.',
   },
   en: {
@@ -721,7 +730,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'A 10 centavos whose apparent date, 1895, awaits verification; a silver 20 centavos of 1895; and a silver 40 centavos of 1896. All three carry officials P·G·V and are unslabbed. Photographs of the 40 centavos are not yet in the archive. Further coin pages will be published as they are documented.',
+      'A 10 centavos whose apparent date, 1895, awaits verification; a silver 20 centavos of 1895; and a silver 40 centavos of 1896. All three carry officials P·G·V and are unslabbed. Further coin pages will be published as they are documented.',
     relatedLead: 'Another piece in the Puerto Rico collection.',
   },
 } as const;

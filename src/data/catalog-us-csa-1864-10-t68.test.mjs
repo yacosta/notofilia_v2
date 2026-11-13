@@ -84,7 +84,7 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     const { milestones } = await import('../lib/milestones.ts');
     assert.equal(milestones[0]?.holdingId, 'pr-40-centavos-1896-pgv');
     assert.match(milestones[0]?.href ?? '', /40-centavos-1896-pgv/);
-    assert.equal(milestones[0]?.image ?? '', '');
+    assert.match(milestones[0]?.image ?? '', /puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-composite\.jpg/);
     assert.equal(additions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
     assert.equal(additions.at(-1)?.kind, 'coin');
     assert.equal(catalogAdditions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
