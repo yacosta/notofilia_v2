@@ -188,7 +188,13 @@ describe('Puerto Rico 1896 40 centavos PGV', () => {
     assert.match(es40, /PuertoRicoCoinPage locale="es"/);
     assert.match(en40, /PuertoRicoCoinPage locale="en"/);
     assert.match(coinPage, /coin\.alignment/);
-    assert.match(data, /El archivo todavía no conserva las fotografías/);
-    assert.match(data, /The archive does not yet hold photographs/);
+    assert.match(data, /puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-front\.jpg/);
+    assert.match(data, /puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-back\.jpg/);
+    assert.match(data, /puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-composite\.jpg/);
+    assert.match(data, /width: 2048,\n      height: 1024,\n      faceWidth: 1024,\n      faceHeight: 1024/);
+    assert.match(data, /Las fotografías son del objeto/);
+    assert.match(data, /The photographs are of the object/);
+    assert.doesNotMatch(data, /El archivo todavía no conserva las fotografías/);
+    assert.doesNotMatch(data, /The archive does not yet hold photographs/);
   });
 });
