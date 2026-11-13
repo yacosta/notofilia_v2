@@ -40,7 +40,7 @@ describe('Puerto Rico provincial coinage order', () => {
     const { puertoRicoCoins } = await import('./puerto-rico-coinage.ts');
     assert.deepEqual(
       puertoRicoCoins.map((coin) => coin.id),
-      ['10-centavos-alfonso-xiii-pgv', '20-centavos-1895-pgv'],
+      ['10-centavos-alfonso-xiii-pgv', '20-centavos-1895-pgv', '40-centavos-1896-pgv'],
     );
   });
 });
@@ -149,5 +149,46 @@ describe('Puerto Rico 10 centavos PGV with apparent date 1895', () => {
       assert.match(record10, new RegExp(`puerto-rico-madrid-10-centavos-alfonso-xiii-pgv-${face}\\.jpg`));
     }
     assert.match(record10, /width: 1672,\n      height: 941,\n      faceWidth: 836,\n      faceHeight: 941/);
+  });
+});
+
+describe('Puerto Rico 1896 40 centavos PGV', () => {
+  it('registers one bilingual no-serial holding', () => {
+    const es40 = readFileSync(
+      new URL('../pages/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/index.astro', import.meta.url),
+      'utf8',
+    );
+    const en40 = readFileSync(
+      new URL('../pages/en/collection/puerto-rico-numismatics/40-centavos-1896-pgv/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/40-centavos-1896-pgv/',
+    );
+    assert.match(data, /id: '40-centavos-1896-pgv'/);
+    assert.match(data, /no_serial_reason:\n      'Milled Puerto Rican provincial silver 40 centavos/);
+    assert.match(data, /KM#23 · Calicó 127 · Numista N#17452/);
+    assert.match(data, /725\.002/);
+    assert.match(data, /725,002/);
+    assert.match(data, /725\.000/);
+    assert.match(data, /725,000/);
+    assert.match(data, /\.835/);
+    assert.match(data, /8,35 g/);
+    assert.match(data, /8\.35 g/);
+    assert.match(data, /0,2685 oz troy/);
+    assert.match(data, /0\.2685 troy oz/);
+    assert.match(data, /24 centavos de dólar/);
+    assert.match(data, /came to 24 cents/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+/);
+    assert.doesNotMatch(data, /378|915/);
+    assert.match(holdings, /id: 'pr-40-centavos-1896-pgv', kind: 'coin', country: 'PR'/);
+    assert.match(es40, /PuertoRicoCoinPage locale="es"/);
+    assert.match(en40, /PuertoRicoCoinPage locale="en"/);
+    assert.match(coinPage, /coin\.alignment/);
+    assert.match(data, /El archivo todavía no conserva las fotografías/);
+    assert.match(data, /The archive does not yet hold photographs/);
   });
 });

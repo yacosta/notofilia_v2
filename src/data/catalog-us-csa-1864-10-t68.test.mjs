@@ -82,14 +82,12 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'pr-nd-dos-almudes-vega-redonda');
-    assert.match(
-      milestones[0]?.image ?? '',
-      /puerto-rico-hacienda-vega-redonda-dos-almudes\.webp$/,
-    );
-    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(milestones[0]?.holdingId, 'pr-40-centavos-1896-pgv');
+    assert.match(milestones[0]?.href ?? '', /40-centavos-1896-pgv/);
+    assert.equal(milestones[0]?.image ?? '', '');
+    assert.equal(additions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
     assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,

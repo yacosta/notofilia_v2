@@ -99,8 +99,8 @@ const puertoRicoNumismatics: NumismaticaCountry = {
   years: { es: '1890–1896', en: '1890–1896' },
   title: { es: 'Puerto Rico', en: 'Puerto Rico' },
   lead: {
-    es: 'El peso provincial de 1895, labrado en Madrid, y las fichas de almud de la Hacienda Vega Redonda, en Las Marías.',
-    en: 'The 1895 provincial peso, struck in Madrid, and the almud tokens of Hacienda Vega Redonda, in Las Marías.',
+    es: 'El peso provincial de 1895–1896, labrado en Madrid, y las fichas de almud de la Hacienda Vega Redonda, en Las Marías.',
+    en: 'The 1895–1896 provincial peso, struck in Madrid, and the almud tokens of Hacienda Vega Redonda, in Las Marías.',
   },
 };
 

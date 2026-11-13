@@ -137,6 +137,14 @@ const jsonCrumbs = [
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.edgeLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{coin.edge[locale]}</dd>
           </div>
+          {
+            coin.alignment ? (
+              <div>
+                <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.alignmentLabel}</dt>
+                <dd class="m-0 mt-1 text-cream">{coin.alignment[locale]}</dd>
+              </div>
+            ) : null
+          }
           <div>
             <dt class="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">{t.gradeLabel}</dt>
             <dd class="m-0 mt-1 text-cream">{coin.grade[locale]}</dd>

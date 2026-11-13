@@ -54,8 +54,8 @@ describe('US Series 1935A blue-seal $1 Fr. 1608', () => {
     assert.doesNotMatch(printed, /6\.1/);
     assert.doesNotMatch(note, /Stuart/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(additions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {
