@@ -30,8 +30,8 @@ export const puertoRicoCoinageChapters: PuertoRicoCoinageChapter[] = [
       en: 'The only coinage struck for Puerto Rico’s exclusive use: five silver denominations, dated 1895 and 1896, to replace the Mexican peso.',
     },
     body: {
-      es: 'A finales del siglo XIX la isla vivía de plata ajena: pesos mexicanos, macuquinas y monedas contramarcadas. El Real Decreto de 17 de agosto de 1895 ordenó recogerla a cambio del Billete de Canje de 1 peso y acuñar en Madrid una moneda provincial. Salieron cinco valores: 1 peso de 1895 (8.500.000 piezas), 40 centavos de 1896 (725.000), 20 centavos de 1895 (3.350.000), 10 centavos de 1896 (700.000) y 5 centavos de 1896 (600.000), según la tabla de Wikipedia en español. El peso se labró en plata .900. Para los divisores, la tabla de Wikipedia en inglés da .835; Greysheet coincide en el 20 centavos, pero Numista y Greysheet dan .900 para el 10 centavos. El 20 centavos es el único divisor fechado en 1895 y el de mayor tirada después del peso.',
-      en: 'By the late nineteenth century the island ran on foreign silver: Mexican pesos, macuquinas, and countermarked coin. The royal decree of 17 August 1895 ordered it gathered in exchange for the 1-peso exchange note and a provincial coinage struck in Madrid. Five denominations followed: the 1 peso of 1895 (8,500,000 pieces), 40 centavos of 1896 (725,000), 20 centavos of 1895 (3,350,000), 10 centavos of 1896 (700,000), and 5 centavos of 1896 (600,000), per the table in Spanish Wikipedia. The peso was struck in .900 silver. For the fractions, the English Wikipedia table gives .835; Greysheet agrees for the 20 centavos, but Numista and Greysheet give .900 for the 10 centavos. The 20 centavos is the only fraction dated 1895 and, after the peso, the largest mintage.',
+      es: 'A finales del siglo XIX la isla vivía de plata ajena: pesos mexicanos, macuquinas y monedas contramarcadas. El Real Decreto de 17 de agosto de 1895 ordenó recogerla a cambio del Billete de Canje de 1 peso y acuñar en Madrid una moneda provincial. Salieron cinco valores: 1 peso de 1895 (8.500.000 piezas), 40 centavos de 1896 (725.000 en esa tabla; EnciclopediaPR y Numista dan 725.002), 20 centavos de 1895 (3.350.000), 10 centavos de 1896 (700.000) y 5 centavos de 1896 (600.000), según la tabla de Wikipedia en español. El peso se labró en plata .900. Para los divisores, la tabla de Wikipedia en inglés da .835; Greysheet coincide en el 20 centavos, pero Numista y Greysheet dan .900 para el 10 centavos. Numista da .835 para el 40 centavos y NGC, .900. El 20 centavos es el único divisor fechado en 1895 y el de mayor tirada después del peso.',
+      en: 'By the late nineteenth century the island ran on foreign silver: Mexican pesos, macuquinas, and countermarked coin. The royal decree of 17 August 1895 ordered it gathered in exchange for the 1-peso exchange note and a provincial coinage struck in Madrid. Five denominations followed: the 1 peso of 1895 (8,500,000 pieces), 40 centavos of 1896 (725,000 in that table; EnciclopediaPR and Numista give 725,002), 20 centavos of 1895 (3,350,000), 10 centavos of 1896 (700,000), and 5 centavos of 1896 (600,000), per the table in Spanish Wikipedia. The peso was struck in .900 silver. For the fractions, the English Wikipedia table gives .835; Greysheet agrees for the 20 centavos, but Numista and Greysheet give .900 for the 10 centavos. Numista gives .835 for the 40 centavos and NGC gives .900. The 20 centavos is the only fraction dated 1895 and, after the peso, the largest mintage.',
     },
   },
   {
@@ -102,14 +102,14 @@ export const seriesCopy = {
   es: {
     metaTitle: 'Puerto Rico · Numismática | Notofilia',
     metaDescription:
-      'Moneda provincial de Puerto Rico acuñada en Madrid (1895) y fichas de almud de la Hacienda Vega Redonda: el 20 centavos de plata KM#22 y un 10 centavos P·G·V.',
+      'Moneda provincial de Puerto Rico acuñada en Madrid (1895–1896) y fichas de almud de la Hacienda Vega Redonda: 10, 20 y 40 centavos P·G·V.',
     kicker: 'Puerto Rico · Numismática',
     title: 'El peso provincial de 1895',
     heroAlt:
       'Mapa vintage panorámico en relieve 3D de Puerto Rico sobre pergamino, con El Morro, Viejo San Juan, un coquí, una rosa de los vientos y el título Puerto Rico',
     intro: [
       'La Colección Virtual separa la numismática —moneda acuñada— de la notafilia. En Puerto Rico las dos historias se cruzan en 1895: el Billete de Canje recogió la plata mexicana y la moneda provincial, labrada en Madrid, ocupó su lugar.',
-      'Esta vitrina abre con un 10 centavos de esa serie, con el busto niño de Alfonso XIII y las iniciales P·G·V. La fotografía muestra 1895, una fecha que los catálogos no registran para ese valor. A su lado va el 20 centavos de plata de 1895. Es la única serie de moneda hecha para uso exclusivo de la isla.',
+      'Esta vitrina abre con un 10 centavos de esa serie, con el busto niño de Alfonso XIII y las iniciales P·G·V. La fotografía muestra 1895, una fecha que los catálogos no registran para ese valor. A su lado van el 20 centavos de plata de 1895 y el 40 centavos de 1896, único año de esa denominación. Es la única serie de moneda hecha para uso exclusivo de la isla.',
     ],
     sourcesTitle: 'Fuentes',
     parentLink: 'Numismática',
@@ -138,14 +138,14 @@ export const seriesCopy = {
   en: {
     metaTitle: 'Puerto Rico · Numismatics | Notofilia',
     metaDescription:
-      'Puerto Rico’s provincial coinage, struck in Madrid in 1895, and Hacienda Vega Redonda’s almud tokens: the silver 20 centavos KM#22 and a 10 centavos P·G·V.',
+      'Puerto Rico’s provincial coinage, struck in Madrid in 1895–1896, and Hacienda Vega Redonda’s almud tokens: the 10, 20, and 40 centavos P·G·V.',
     kicker: 'Puerto Rico · Numismatics',
     title: 'The 1895 provincial peso',
     heroAlt:
       'Vintage panoramic 3D relief map of Puerto Rico on parchment, with El Morro, Old San Juan, a coquí, a compass rose, and the title Puerto Rico',
     intro: [
       'The Virtual Collection separates numismatics — struck coin — from notaphily. In Puerto Rico the two stories meet in 1895: the exchange note gathered the Mexican silver, and the provincial coinage, struck in Madrid, took its place.',
-      'This case opens with a 10 centavos of that series, with the boy Alfonso XIII’s bust and the initials P·G·V. The photograph shows 1895, a date the catalogues do not record for that value. Beside it sits the silver 20 centavos of 1895. It is the only coinage series made for the island’s exclusive use.',
+      'This case opens with a 10 centavos of that series, with the boy Alfonso XIII’s bust and the initials P·G·V. The photograph shows 1895, a date the catalogues do not record for that value. Beside it sit the silver 20 centavos of 1895 and the 40 centavos of 1896, the only year of that denomination. It is the only coinage series made for the island’s exclusive use.',
     ],
     sourcesTitle: 'Sources',
     parentLink: 'Numismatics',
@@ -173,7 +173,7 @@ export const seriesCopy = {
   },
 } as const;
 
-export type PuertoRicoCoinId = '20-centavos-1895-pgv' | '10-centavos-alfonso-xiii-pgv';
+export type PuertoRicoCoinId = '20-centavos-1895-pgv' | '10-centavos-alfonso-xiii-pgv' | '40-centavos-1896-pgv';
 
 export type PuertoRicoCoin = {
   id: PuertoRicoCoinId;
@@ -188,6 +188,7 @@ export type PuertoRicoCoin = {
   weight: LocalizedText;
   diameter: LocalizedText;
   edge: LocalizedText;
+  alignment?: LocalizedText;
   references: string;
   referencesNote?: LocalizedText;
   grade: LocalizedText;
@@ -495,6 +496,170 @@ export const puertoRicoCoins: PuertoRicoCoin[] = [
         },
       },
     ],
+  },
+  {
+    id: '40-centavos-1896-pgv',
+    path: '/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/',
+    pathEn: '/en/collection/puerto-rico-numismatics/40-centavos-1896-pgv/',
+    chapterId: 'peso-provincial',
+    year: '1896',
+    mint: {
+      es: 'Madrid; sin marca de ceca. Oficiales P·G·V',
+      en: 'Madrid; no mint mark. Officials P·G·V',
+    },
+    denomination: {
+      es: '40 centavos de peso provincial (0,40 peso)',
+      en: '40 centavos of the provincial peso (0.40 peso)',
+    },
+    composition: {
+      es: 'Plata .835 (Numista; cifra de tipo, no un ensayo). NGC da .900. A .835 y 10 g, la plata fina calculada es 8,35 g, unos 0,2685 oz troy.',
+      en: 'Silver .835 (Numista; a type figure, not an assay). NGC gives .900. At .835 and 10 g, the calculated fine silver is 8.35 g, about 0.2685 troy oz.',
+    },
+    weight: {
+      es: 'No pesado. Tipo: 10 g (Numista).',
+      en: 'Not weighed. Type: 10 g (Numista).',
+    },
+    diameter: {
+      es: 'No medido. Tipo: 27 mm (Numista).',
+      en: 'Not measured. Type: 27 mm (Numista).',
+    },
+    edge: {
+      es: 'Estriado (Numista). El canto de este ejemplar no se fotografió.',
+      en: 'Reeded (Numista). This specimen’s edge was not photographed.',
+    },
+    alignment: {
+      es: 'Moneda, 180° (Numista). No se comprobó en este ejemplar.',
+      en: 'Coin alignment, 180° (Numista). Not checked on this specimen.',
+    },
+    references: 'KM#23 · Calicó 127 · Numista N#17452',
+    referencesNote: {
+      es: 'CoinVarieties cita el tipo como KM-23.2. Numista y NGC usan KM#23.',
+      en: 'CoinVarieties cites the type as KM-23.2. Numista and NGC use KM#23.',
+    },
+    grade: {
+      es: 'Sin encapsular. El desgaste no se describe: el archivo todavía no tiene las fotografías de este ejemplar. No es un grado numérico.',
+      en: 'Unslabbed. Wear is not described: the archive does not yet have photographs of this specimen. Not a numerical grade.',
+    },
+    no_serial_reason:
+      'Milled Puerto Rican provincial silver 40 centavos: the type does not carry a serial number, and this example is unslabbed with no certification number.',
+    title: {
+      es: '40 centavos · Alfonso XIII · 1896 PGV',
+      en: '40 Centavos · Alfonso XIII · 1896 PGV',
+    },
+    kicker: {
+      es: 'Puerto Rico · Moneda provincial',
+      en: 'Puerto Rico · Provincial coinage',
+    },
+    lead: {
+      es: '40 centavos de plata de Puerto Rico, 1896: busto niño de Alfonso XIII, ceca de Madrid y oficiales P·G·V. Sin serial y sin encapsular.',
+      en: 'Silver 40 centavos of Puerto Rico, 1896: the boy Alfonso XIII, struck in Madrid, with officials P·G·V. No serial and unslabbed.',
+    },
+    description: {
+      es: 'Esta pieza es un 40 centavos de plata de la moneda provincial de Puerto Rico, fechado en 1896, el único año de la denominación. El anverso del tipo muestra el busto de Alfonso XIII niño a la izquierda, con la leyenda ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA —«Alfonso XIII, por la gracia de Dios, rey constitucional de España»— y, bajo el corte del cuello, las iniciales B·M del grabador Bartolomé Maura y Montaner y la fecha 1896 entre estrellas. El reverso lleva las armas de España coronadas entre las columnas de Hércules, con la cinta PLUS ULTRA, la orla ISLA DE PUERTO RICO arriba y 40 CENTAVOS abajo, flanqueado por P·G· a la izquierda y ·V· a la derecha. Esas letras nombran a los oficiales de la ceca de Madrid: Félix Miguel Peiró Rodrigo y Antonio García González, ensayadores, y Remigio Vega Vega, fiel de balanza. No indican una acuñación en Puerto Rico. Krause lo cataloga como KM#23; Calicó, como 127; Numista, como N#17452. Numista da plata .835, 10 g, 27 mm, canto estriado y alineación de moneda (180°) como cifras de tipo; no se midieron en este ejemplar. El archivo todavía no conserva las fotografías de la pieza, así que las leyendas son las del tipo catalogado.',
+      en: 'This piece is a silver 40 centavos of Puerto Rico’s provincial coinage, dated 1896, the only year of the denomination. The type obverse shows the bust of the boy Alfonso XIII facing left, with the legend ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA — “Alfonso XIII, by the grace of God, constitutional king of Spain” — and, below the neck truncation, the initials B·M of engraver Bartolomé Maura y Montaner and the date 1896 between stars. The reverse carries the crowned arms of Spain between the Pillars of Hercules, with the PLUS ULTRA ribbon, the legend ISLA DE PUERTO RICO above and 40 CENTAVOS below, flanked by P·G· at left and ·V· at right. Those letters name Madrid Mint officials: Félix Miguel Peiró Rodrigo and Antonio García González, assayers, and Remigio Vega Vega, weigh master. They do not mark a striking in Puerto Rico. Krause catalogs it as KM#23; Calicó as 127; Numista as N#17452. Numista gives .835 silver, 10 g, 27 mm, a reeded edge, and coin alignment (180°) as type figures; they were not measured on this specimen. The archive does not yet hold photographs of the piece, so the legends are those of the catalogued type.',
+    },
+    history: {
+      es: 'El Real Decreto de 17 de agosto de 1895 cambió la plata mexicana de la isla por el Billete de Canje de 1 peso, y ese papel, por moneda provincial labrada en Madrid. El 40 centavos se acuñó solo en 1896. EnciclopediaPR y Numista registran 725.002 piezas; la tabla de Wikipedia en español y la guía de NGC, 725.000. La ficha conserva las dos cifras y no atribuye la diferencia de dos piezas a pruebas. La ley adoptada es .835, la de Numista. NGC publica .900, que en un disco de 10 g daría 9 g de plata fina, frente a los 8,35 g del cálculo a .835. La sección 11 de la Ley Foraker, de 12 de abril de 1900, autorizó el retiro de la moneda puertorriqueña a 60 centavos estadounidenses por peso, y el mismo tipo para las fracciones. A ese tipo, un 40 centavos equivalía a 24 centavos de dólar. Esa equivalencia es la del canje, no un valor numismático. El texto dispone además que, tres meses después de entrar en vigor la ley, solo la moneda estadounidense sea de curso legal para las deudas contraídas después; las anteriores seguían pagaderas en moneda puertorriqueña o al tipo del canje. Numista fecha la desmonetización el 12 de abril de 1900.',
+      en: 'The royal decree of 17 August 1895 exchanged the island’s Mexican silver for the 1-peso exchange note, and that paper for provincial coin struck in Madrid. The 40 centavos was struck only in 1896. EnciclopediaPR and Numista record 725,002 pieces; the Spanish Wikipedia table and the NGC guide, 725,000. This record keeps both figures and does not assign the two-piece difference to proofs. The fineness adopted here is .835, Numista’s figure. NGC publishes .900, which on a 10 g disc would be 9 g of fine silver, against 8.35 g at .835. Section 11 of the Foraker Act of 12 April 1900 authorized withdrawal of Puerto Rican coin at 60 United States cents per peso, and the same rate for the fractions. At that rate a 40 centavos piece came to 24 cents. That equivalence is the exchange rate, not a numismatic value. The text also provides that, three months after the act took effect, only United States coin was legal tender for debts contracted afterward; earlier debts remained payable in Puerto Rican coin or at the exchange rate. Numista dates demonetization to 12 April 1900.',
+    },
+    obverseLegend: {
+      es: 'ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA · ★ 1896 ★ — «Alfonso XIII, por la gracia de Dios, rey constitucional de España». Bajo el busto: B·M.',
+      en: 'ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA · ★ 1896 ★ — “Alfonso XIII, by the grace of God, constitutional king of Spain.” Below the bust: B·M.',
+    },
+    reverseLegend: {
+      es: 'ISLA DE PUERTO RICO · PLUS ULTRA · P·G· 40 CENTAVOS ·V· (oficiales Peiró, García y Vega).',
+      en: 'ISLA DE PUERTO RICO · PLUS ULTRA · P·G· 40 CENTAVOS ·V· (officials Peiró, García, and Vega).',
+    },
+    frontCaption: {
+      es: 'Anverso del tipo: busto de Alfonso XIII niño a la izquierda; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 entre estrellas.',
+      en: 'Type obverse: bust of the boy Alfonso XIII facing left; ALFONSO XIII P.L.G.D.D. REY C. DE ESPAÑA; 1896 between stars.',
+    },
+    backCaption: {
+      es: 'Reverso del tipo: armas de España coronadas entre las columnas de Hércules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
+      en: 'Type reverse: crowned arms of Spain between the Pillars of Hercules; ISLA DE PUERTO RICO; P·G· 40 CENTAVOS ·V·.',
+    },
+    scarcity: {
+      es: 'Tipo de un solo año: 1896 P·G·V, KM#23. Forma parte de la serie provincial de cinco denominaciones —5, 10, 20 y 40 centavos, y 1 peso— emitida en 1895–1896. La tirada, sea 725.002 o 725.000, no dice cuántos ejemplares sobreviven. Los que conservan detalle y superficie original interesan más. Esta ficha no publica un censo ni precios de subasta. Para comparar piezas del tipo se miran el desgaste, los golpes, las rayas, una posible limpieza y la certificación, junto con la fecha y la referencia.',
+      en: 'A single-year type: 1896 P·G·V, KM#23. It belongs to the provincial series of five denominations — 5, 10, 20, and 40 centavos, and 1 peso — issued in 1895–1896. The mintage, whether 725,002 or 725,000, does not say how many pieces survive. Those that keep detail and original surface matter more. This record publishes no census and no auction prices. Comparing pieces of the type means looking at wear, nicks, hairlines, possible cleaning, and certification, along with the date and the catalogue reference.',
+    },
+    certification: {
+      es: 'El ejemplar está suelto, sin cápsula de NGC, PCGS ni otra casa, y el tipo no lleva número de serie. No hay número de certificado. La identidad de la ficha es este objeto —40 centavos de 1896, busto de Alfonso XIII niño, P·G·V—, no un lote de subasta. Las ventas de otros ejemplares no se transcriben aquí. Si más adelante se encapsula, el número de cert sustituirá a esta nota.',
+      en: 'The example is raw, with no NGC, PCGS, or other holder, and the type carries no serial number. There is no certification number. The identity of this record is this object — 40 centavos of 1896, boy Alfonso XIII bust, P·G·V — not an auction lot. Sales of other examples are not transcribed here. If it is later slabbed, the cert number will replace this note.',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/17452',
+        es: 'Numista — 40 centavos, Alfonso XIII, Puerto Rico 1896 (N#17452)',
+        en: 'Numista — 40 Centavos, Alfonso XIII, Puerto Rico 1896 (N#17452)',
+        note: {
+          es: 'KM#23; plata .835, 10 g, 27 mm, canto estriado, alineación de moneda; una sola fecha, 1896 PGV (725.002); ceca de Madrid; desmonetizada el 12 de abril de 1900. No se republica la tabla de precios.',
+          en: 'KM#23; .835 silver, 10 g, 27 mm, reeded edge, coin alignment; a single date, 1896 PGV (725,002); Madrid mint; demonetized 12 April 1900. The price table is not republished.',
+        },
+      },
+      {
+        href: 'https://enciclopediapr.org/content/historia-de-la-moneda-en-puerto-rico/',
+        es: 'EnciclopediaPR — Historia de la moneda en Puerto Rico',
+        en: 'EnciclopediaPR — History of money in Puerto Rico (Spanish)',
+        note: {
+          es: 'El 40 centavos lleva fecha de 1896 y la cifra 725.002. El peso y el 20 centavos son de 1895; el resto, de 1896. Relaciona la serie con los billetes de canje.',
+          en: 'The 40 centavos is dated 1896, with the figure 725,002. The peso and the 20 centavos are of 1895; the rest, of 1896. It ties the series to the exchange notes.',
+        },
+      },
+      {
+        href: 'https://es.wikipedia.org/wiki/Peso_provincial_de_Puerto_Rico',
+        es: 'Wikipedia — Peso provincial de Puerto Rico',
+        en: 'Wikipedia (Spanish) — Puerto Rican provincial peso',
+        note: {
+          es: 'Tabla de cantidades: 725.000 piezas de 40 centavos en 1896.',
+          en: 'Mintage table: 725,000 pieces of 40 centavos in 1896.',
+        },
+      },
+      {
+        href: 'https://www.ngccoin.com/price-guide/world/puerto-rico-40-centavos-km-23-1896-cuid-1081191-duid-1514143',
+        es: 'NGC — Puerto Rico 40 centavos KM#23, 1896 PGV',
+        en: 'NGC — Puerto Rico 40 Centavos KM#23, 1896 PGV',
+        note: {
+          es: 'Tirada 725.000 y ley .900. No se republican precios ni el valor de fundición.',
+          en: 'Mintage 725,000 and fineness .900. Prices and melt value are not republished.',
+        },
+      },
+      {
+        href: 'http://www.coinvarieties.com/index.php/Puerto_Rico_1896-PG_V_40_centavos',
+        es: 'CoinVarieties — Puerto Rico 1896-PG V 40 centavos',
+        en: 'CoinVarieties — Puerto Rico 1896-PG V 40 centavos',
+        note: {
+          es: 'Calicó 127 y KM-23.2. Publica 752.002 y plata .900; esas dos cifras no se adoptan. No se republica el martillo citado.',
+          en: 'Calicó 127 and KM-23.2. It prints 752,002 and .900 silver; those two figures are not adopted. The hammer it cites is not republished.',
+        },
+      },
+      {
+        href: 'https://www.lexjuris.com/lexlex/lexotras/lexleyforaker.htm',
+        es: 'LexJuris — Ley Foraker, artículo 11 (texto en español)',
+        en: 'LexJuris — Foraker Act, article 11 (Spanish text)',
+        note: {
+          es: 'Canje a 60 centavos estadounidenses por peso, el mismo tipo para las fracciones. Los 24 centavos del 40 centavos son el cálculo de ese tipo, no una cifra del articulado.',
+          en: 'Exchange at 60 United States cents per peso, the same rate for the fractions. The 24 cents for the 40 centavos is that rate applied, not a figure printed in the section.',
+        },
+      },
+      {
+        href: 'https://uscode.house.gov/us/usc/119-138/t48/s755/',
+        es: 'United States Code — 48 U.S.C. § 755 (sección 11, ley de 12 de abril de 1900)',
+        en: 'United States Code — 48 U.S.C. § 755 (section 11, act of 12 April 1900)',
+        note: {
+          es: 'Resumen oficial del canje a 60 centavos por peso y de la reacuñación en moneda estadounidense.',
+          en: 'Official summary of the redemption at 60 cents per peso and of the recoinage into United States coin.',
+        },
+      },
+      {
+        href: 'https://web.archive.org/web/20100203023106/http:/ruyman.eu/serieprovincial.htm',
+        es: 'Ruymán (archivo) — Serie, Peso Provincial de P.R., Alfonso XIII (1895–1896)',
+        en: 'Ruymán (archive) — Provincial Peso series of P.R., Alfonso XIII (1895–1896)',
+        note: {
+          es: 'P y G, ensayadores; V, fiel de balanza; B·M, Bartolomé Maura y Montaner. El archivo da a Peiró el nombre Félix Miguel Peiró Rodrigo.',
+          en: 'P and G, assayers; V, weigh master; B·M, Bartolomé Maura y Montaner. The archive gives Peiró the name Félix Miguel Peiró Rodrigo.',
+        },
+      },
+    ],
   }
 ];
 
@@ -518,6 +683,7 @@ export const coinPageCopy = {
     weightLabel: 'Peso',
     diameterLabel: 'Diámetro',
     edgeLabel: 'Canto',
+    alignmentLabel: 'Alineación',
     referencesLabel: 'Referencias',
     gradeLabel: 'Conservación',
     expandImage: 'Ampliar imagen',
@@ -525,7 +691,7 @@ export const coinPageCopy = {
     viewCoin: 'Ver la ficha',
     holdingsTitle: 'Piezas de la colección',
     holdingsIntro:
-      'Un 10 centavos cuya fecha aparente, 1895, está por verificar, y un 20 centavos de plata de 1895; los dos con oficiales P·G·V y sin encapsular. Las demás fichas se publicarán a medida que se documenten.',
+      'Un 10 centavos cuya fecha aparente, 1895, está por verificar; un 20 centavos de plata de 1895, y un 40 centavos de plata de 1896. Los tres llevan oficiales P·G·V y están sin encapsular. El 40 centavos todavía no tiene fotografías en el archivo. Las demás fichas se publicarán a medida que se documenten.',
     relatedLead: 'Otra pieza de la colección de Puerto Rico.',
   },
   en: {
@@ -547,6 +713,7 @@ export const coinPageCopy = {
     weightLabel: 'Weight',
     diameterLabel: 'Diameter',
     edgeLabel: 'Edge',
+    alignmentLabel: 'Alignment',
     referencesLabel: 'References',
     gradeLabel: 'Condition',
     expandImage: 'Enlarge image',
@@ -554,7 +721,7 @@ export const coinPageCopy = {
     viewCoin: 'Open the coin page',
     holdingsTitle: 'Coins in the collection',
     holdingsIntro:
-      'A 10 centavos whose apparent date, 1895, awaits verification, and a silver 20 centavos of 1895; both with officials P·G·V and unslabbed. Further coin pages will be published as they are documented.',
+      'A 10 centavos whose apparent date, 1895, awaits verification; a silver 20 centavos of 1895; and a silver 40 centavos of 1896. All three carry officials P·G·V and are unslabbed. Photographs of the 40 centavos are not yet in the archive. Further coin pages will be published as they are documented.',
     relatedLead: 'Another piece in the Puerto Rico collection.',
   },
 } as const;

@@ -181,6 +181,11 @@ if (!puertoRico10Centavos) {
   throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
 }
 
+const puertoRico40Centavos = puertoRicoCoinById('40-centavos-1896-pgv');
+if (!puertoRico40Centavos) {
+  throw new Error('Missing Puerto Rico 1896 40 centavos for mega-nav');
+}
+
 const liberia20Dollars = liberiaCoinById('20-dolares-1997-dragon-hong-kong');
 if (!liberia20Dollars) {
   throw new Error('Missing Liberia 1997 20 dollars for mega-nav');
@@ -664,6 +669,13 @@ export const megaNav: NavNode[] = [
             es: puertoRico20Centavos.title.es,
             en: puertoRico20Centavos.title.en,
             href: puertoRico20Centavos.path,
+            holding: true,
+          },
+          {
+            id: 'pr-40-centavos-1896-pgv',
+            es: puertoRico40Centavos.title.es,
+            en: puertoRico40Centavos.title.en,
+            href: puertoRico40Centavos.path,
             holding: true,
           },
           {

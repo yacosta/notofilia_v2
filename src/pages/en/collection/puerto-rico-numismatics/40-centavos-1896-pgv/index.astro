@@ -1,0 +1,9 @@
+---
+import PuertoRicoCoinPage from '../../../../../components/catalog/PuertoRicoCoinPage.astro';
+import { coinById } from '../../../../../data/puerto-rico-coinage';
+
+const coin = coinById('40-centavos-1896-pgv');
+if (!coin) throw new Error('Missing Puerto Rico 1896 40 centavos catalog coin');
+---
+
+<PuertoRicoCoinPage locale="en" coin={coin} />

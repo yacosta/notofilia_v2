@@ -354,7 +354,7 @@ describe('Puerto Rico numismatics menu', () => {
     const numismatica = source.split("id: 'numismatica-mundial'")[1]?.split("id: 'recursos'")[0] ?? '';
     const prBlock = numismatica.split("id: 'pr-monedas'")[1] ?? '';
     assert.match(source, /puertoRicoCoinById\('10-centavos-alfonso-xiii-pgv'\)/);
-    assert.match(prBlock, /id: 'pr-10-centavos-alfonso-xiii-pgv'[\s\S]*id: 'pr-20-centavos-1895-pgv'/);
+    assert.match(prBlock, /id: 'pr-10-centavos-alfonso-xiii-pgv'[\s\S]*id: 'pr-20-centavos-1895-pgv'[\s\S]*id: 'pr-40-centavos-1896-pgv'/);
     assert.match(prBlock, /href: puertoRico10Centavos\.path/);
   });
 });
