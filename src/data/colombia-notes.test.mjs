@@ -1450,11 +1450,33 @@ describe('Colombia BanRep 200 pesos oro 1989 IBB specimen', () => {
     assert.match(note.description.es, /Mutis/);
     assert.match(note.description.en, /Mutis/);
     assert.match(note.description.es, /LA BORDADITA/);
+    assert.match(note.description.es, /techo corto/);
+    assert.match(note.description.en, /techo corto/);
+    assert.match(note.description.es, /techo largo/);
+    assert.match(note.description.en, /techo largo/);
+    assert.match(note.description.es, /Pick 428/);
+    assert.match(note.description.en, /Pick 428/);
+    assert.match(note.description.es, /348/);
+    assert.match(note.description.en, /349/);
+    assert.match(note.backCaption.es, /tejado corto del ala izquierda/);
+    assert.match(note.backCaption.en, /short left-wing roof/);
+    assert.match(note.scarcity.es, /tejado corto/);
+    assert.match(note.scarcity.en, /short roof/);
     assert.match(note.description.es, /IMPRENTA DE BILLETES/);
     assert.match(note.description.es, /Pick 405s/);
     assert.match(note.description.es, /418s Nº 027/);
     assert.match(note.description.es, /430as Nº 030/);
     assert.match(note.scarcity.es, /no inventa una tirada de especímenes/);
+    assert.equal(
+      note.sources.some(
+        (source) => source.href === 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0428.htm',
+      ),
+      true,
+    );
+    const hernandezRoof = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandezRoof?.note);
+    assert.match(hernandezRoof.note.es, /348/);
+    assert.match(hernandezRoof.note.en, /349/);
     assert.doesNotMatch(note.description.es, /Decreto 188/);
     const publicCopy = [
       note.printed.es,
