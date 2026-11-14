@@ -805,6 +805,9 @@ describe('14 November 2026 Gettysburg Address quarter rolls', () => {
     assert.ok(article.seoTitle.en.length <= 48);
     assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
     assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.equal(article.dek.es, article.description.es);
+    assert.match(article.description.es, /cuenta que la Mint abrió/);
+    assert.doesNotMatch(article.description.es, /abre la venta/);
     assert.match(article.claim.noteEs, /US\$56/);
     assert.match(article.claim.noteEs, /US\$63/);
     assert.match(article.claim.noteEs, /26SQRJ/);
