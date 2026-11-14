@@ -844,6 +844,81 @@ describe('12 November 2026 Springhead Hoard, first part', () => {
   });
 });
 
+describe('12 November 2026 Lincoln cent Makes Perfect Cents sale', () => {
+  it('keeps the AL.com price apart from the grade, the mint marks, and the premium', () => {
+    const article = newsArticles.find((item) => item.slug === 'centavo-lincoln-1914-d-11895');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1914-d-lincoln-cent-11895');
+    assert.equal(article.published, '2026-11-12');
+    assert.equal(article.sourceName, 'AL.com');
+    assert.equal(
+      article.sourceUrl,
+      'https://www.al.com/news/2026/11/lincoln-cent-fetches-11895-at-auction.html',
+    );
+    assert.equal(article.image, '/uploads/centavo-lincoln-espigas-1913.jpg');
+    assert.equal(article.imageWidth, 2132);
+    assert.equal(article.imageHeight, 2132);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'USD');
+    assert.equal(article.claim.valueIso, '2026-10-26');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/centavo-lincoln-espigas-1913.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/centavo-lincoln-espigas-1913-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /11\.895/);
+    assert.match(article.claim.noteEs, /MS64 Red/);
+    assert.match(article.claim.noteEs, /158\.625/);
+    assert.match(article.claim.noteEn, /11,895/);
+    assert.match(article.claim.noteEn, /158,625/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join('\n');
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const url of sourceUrls.split('\n')) {
+      assert.ok(body.includes(url), url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /140/);
+      assert.match(html, /309[.,]303/);
+      assert.match(html, /MS64 Red/);
+      assert.match(html, /2473/);
+      assert.match(html, /1[.,]193[.,]000/);
+      assert.match(html, /24[.,]286[.,]000/);
+      assert.match(html, /40[.,]100[.,]000/);
+      assert.match(html, /9[.,]223[.,]20/);
+      assert.match(html, /1930-S/);
+      assert.match(html, /1930-D/);
+      assert.match(html, /five others/);
+      assert.match(html, /btv1b11336670w/);
+      assert.match(html, /AA\.ETR\.1106/);
+      assert.match(html, /IFN-11336670/);
+      assert.match(html, /1913/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/ceca\//);
+      assert.match(html, /\/glosario\/escala-sheldon\//);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /No publicamos|do not publish/i);
+      assert.match(html, /no inventa|does not invent/i);
+      assert.doesNotMatch(html, /coins\.ha\.com|images\.pcgs\.com|coinnews\.net\/wp-content/);
+    }
+    assert.match(article.bodyHtml.es, /US\$11\.895/);
+    assert.match(article.bodyHtml.es, /no le pone una ceca/);
+    assert.match(article.bodyHtml.en, /US\$11,895/);
+    assert.match(article.bodyHtml.en, /does not supply a mint mark/);
+    assert.equal(
+      article.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'El 1914-D de esta venta no tiene ficha en la colección.',
+    );
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
