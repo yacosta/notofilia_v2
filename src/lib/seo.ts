@@ -2,7 +2,8 @@ import { CHINA_PATH } from '../data/china';
 import { COLOMBIA_PATH } from '../data/colombia';
 import { COLOMBIA_COINAGE_PATH } from '../data/colombia-coinage';
 import { ECUADOR_PATH } from '../data/ecuador';
-import { articlePath, blogArticles, newsArticles } from '../data/editorial';
+import { articlePath, blogArticles } from '../data/editorial';
+import { llmsTxt } from './publish-manifest';
 import { USA_PATH } from '../data/estados-unidos';
 import { USA_COINAGE_PATH } from '../data/estados-unidos-coinage';
 import { SPAIN_COINAGE_PATH } from '../data/espana-coinage';
@@ -229,46 +230,7 @@ function pairLines(esTitle: string, enTitle: string, esPath: string, enPath: str
   ].join('\n');
 }
 
-/** Curated llms.txt. Full URL list stays at /sitemap.txt. */
-export function llmsTxt(): string {
-  const hubs = [
-    { href: '/coleccion/', es: 'Colección', en: 'Collection', esDesc: 'Índice de la colección virtual.', enDesc: 'Index of the virtual collection.' },
-    { href: COLOMBIA_PATH, es: 'Billetes de Colombia', en: 'Colombian banknotes', esDesc: 'Notafilia colombiana, de la banca libre al Banco de la República.', enDesc: 'Colombian notaphily, from free banking to Banco de la República.' },
-    { href: '/coleccion/notafilia/catalogo/', es: 'Catálogo de notafilia', en: 'Notaphily catalog', esDesc: 'Todos los billetes documentados, sin precios.', enDesc: 'Every documented banknote, with no prices.' },
-    { href: USA_PATH, es: 'Estados Unidos', en: 'United States', esDesc: 'Papel federal, colonial, MPC y obsoletos de la colección.', enDesc: 'Federal, colonial, MPC, and obsolete notes in the collection.' },
-    { href: '/coleccion/numismatica/', es: 'Numismática', en: 'Numismatics', esDesc: 'Monedas de la colección por país.', enDesc: 'Coins in the collection, by country.' },
-  ];
-
-  const editorial = [
-    { href: '/editorial/', es: 'Política editorial', en: 'Editorial policy', esDesc: 'Cómo se documenta cada pieza y cómo se corrige un error.', enDesc: 'How each piece is documented and how an error is corrected.' },
-    { href: '/acerca-de/', es: 'Acerca de Notofilia', en: 'About Notofilia', esDesc: 'La colección y su autor, Yezid Acosta.', enDesc: 'The collection and its author, Yezid Acosta.' },
-    { href: '/contacto/', es: 'Contacto', en: 'Contact', esDesc: 'Escribir a Notofilia.', enDesc: 'Write to Notofilia.' },
-  ];
-
-  const tools = [
-    { href: '/herramientas/numeracion-especial/', es: 'Numeración especial', en: 'Fancy serial checker', esDesc: 'Clasifica patrones de serial sin tasar la pieza.', enDesc: 'Classifies serial patterns without pricing the note.' },
-    { href: '/identificar/billetes-falsos/', es: 'Billetes falsos', en: 'Counterfeit notes', esDesc: 'Lista de comprobación. No autentica a distancia.', enDesc: 'A checklist. It does not authenticate at a distance.' },
-  ];
-
-  const latestNews = [...newsArticles].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 15);
-
-  const sections = [
-    `## Hubs\n\n${hubs.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
-    `## Guides\n\n${pairLines('Guías', 'Guides', '/blog/', '/en/blog/', 'Ensayos para coleccionistas.', 'Essays for collectors.')}\n${blogArticles.map((article) => pairLines(article.title.es, article.title.en, articlePath('blog', article.slug, 'es'), articlePath('blog', article.slug, 'en'), article.dek.es, article.dek.en)).join('\n')}`,
-    `## Glossary\n\n${pairLines('Glosario', 'Glossary', GLOSSARY_PATH, localizePath(GLOSSARY_PATH, 'en'), 'Términos de notafilia y numismática.', 'Notaphily and numismatics terms.')}`,
-    `## Editorial/About\n\n${editorial.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
-    `## Tools\n\n${tools.map((page) => pairLines(page.es, page.en, localizePath(page.href, 'es'), localizePath(page.href, 'en'), page.esDesc, page.enDesc)).join('\n')}`,
-    `## Machine-Readable Data\n\n${llmsLine('Sitemap', `${SITE_URL}/sitemap.txt`, 'Lista completa de URLs públicas.')}\n${llmsLine('Catalogue summary', `${SITE_URL}/api/catalogue-summary.json`, 'Resumen de fichas: título, país, año y códigos de catálogo. Sin seriales ni precios.')}`,
-    `## Recent news (latest 15 only)\n\n${latestNews.map((article) => pairLines(article.title.es, article.title.en, articlePath('news', article.slug, 'es'), articlePath('news', article.slug, 'en'), article.dek.es, article.dek.en)).join('\n')}`,
-  ];
-
-  return `# Notofilia
-
-> Colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Nada está a la venta. Spanish is the default locale; English lives under /en/. The full URL list is https://notofilia.com/sitemap.txt.
-
-${sections.join('\n\n')}
-`;
-}
+export { llmsTxt };
 
 export function llmsFullTxt(): string {
   const guideAnswers = blogArticles

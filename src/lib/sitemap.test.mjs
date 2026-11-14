@@ -4,7 +4,8 @@ import { describe, it } from 'node:test';
 import { foldedGlossaryTerms, glossaryTermSlugs, STANDALONE_GLOSSARY_SLUGS } from '../data/glossary.ts';
 import { localizePath } from './locale-paths.ts';
 
-const sitemapSource = readFileSync(new URL('../pages/sitemap.xml.ts', import.meta.url), 'utf8');
+const sitemapSource = readFileSync(new URL('./publish-manifest.ts', import.meta.url), 'utf8');
+const sitemapRoute = readFileSync(new URL('../pages/sitemap.xml.ts', import.meta.url), 'utf8');
 const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url), 'utf8');
 const textSitemap = readFileSync(new URL('../pages/sitemap.txt.ts', import.meta.url), 'utf8');
 
@@ -12,6 +13,7 @@ describe('plain-text sitemap', () => {
   it('publishes the XML path list as one absolute URL per line', () => {
     assert.match(sitemapSource, /export function sitemapTxt/);
     assert.match(sitemapSource, /collectSitemapPaths\(\)\.map\(\(path\) => `\$\{SITE_URL\}\$\{path\}`\)/);
+    assert.match(sitemapRoute, /export \{ collectSitemapPaths, sitemapTxt, sitemapXml \}/);
     assert.match(textSitemap, /sitemapTxt/);
     assert.match(textSitemap, /text\/plain; charset=utf-8/);
     assert.match(robots, /Sitemap: https:\/\/notofilia\.com\/sitemap\.txt/);
@@ -243,7 +245,8 @@ describe('sitemap coverage for Connecticut 20 shillings 1780', () => {
       '/en/collection/united-states/20-shillings-connecticut-1780/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
-    assert.match(sitemapSource, /unitedStatesNoteDedicatedSlugs/);
+    const siteSource = readFileSync(new URL('./site.ts', import.meta.url), 'utf8');
+    assert.match(siteSource, /unitedStatesNoteDedicatedSlugs/);
   });
 });
 

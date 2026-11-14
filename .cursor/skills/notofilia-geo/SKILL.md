@@ -14,17 +14,19 @@ Machine-readable files describe the same catalogue the HTML describes. They do n
 
 Spanish and English pairs stay together. Endpoints are locale-aware in their bodies even when the route is unprefixed. Site standards: `.cursor/rules/00-site-standards.mdc`. Answer blocks and citations: `.cursor/skills/notofilia-aeo/SKILL.md`. Link checks against `dist/`: `.cursor/skills/notofilia-seo/SKILL.md`.
 
-Current generator: `llmsTxt()` in `src/lib/seo.ts`, served by `src/pages/llms.txt.ts`. Extend that pipeline. Do not hand-maintain a second copy of the URL list.
+Current generator: `llmsTxt()` in `src/lib/publish-manifest.ts`, served by `src/pages/llms.txt.ts` and rewritten into `dist/` by `scripts/build-llms.mjs` at the end of `npm run build`. The sitemap XML and text files use that same page list. Do not hand-maintain a second copy.
 
 ## `llms.txt`
 
-Curated file, about 40–70 links:
+Curated file generated from the page list. It is not a hand-edited URL dump.
 
-1. H1 and a blockquote summary.
-2. Sections: Hubs, Guides, Glossary, Editorial/About, Tools, Machine-Readable Data, and “Recent news (latest 15 only)”.
-3. Each line: `[Title](url): one-line description`.
+1. H1, a Spanish blockquote, and the same summary in English. Spanish URLs are canonical.
+2. Both collection stats lines, computed from catalogue data.
+3. Sections: About, Collection hubs, Guides, Glossary, Tools, Editorial/About/Contact, Machine-readable data, and Recent news.
+4. Each page line has the Spanish title and URL, the English title and URL, and a one-line description taken from that page's description, dek, or meta description.
+5. Recent news is the newest 15 articles from `src/data/news-articles.json` (newest first), with the published date `YYYY-MM-DD` and the article `description`. Do not type those lines by hand.
 
-Keep ES and EN pairs. Do not list every news item or every catalogue item. Point to `/sitemap.xml` and `/api/catalogue-summary.json` for the full list.
+Keep ES and EN pairs. Do not list individual catalogue items, search, or 404. Point to `/sitemap.xml`, `/sitemap.txt`, and `/api/catalogue-summary.json` for the full list.
 
 ## `llms-full.txt`
 

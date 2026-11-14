@@ -9,6 +9,7 @@ const errorPage = readFileSync(new URL('../pages/404.astro', import.meta.url), '
 const enErrorPage = readFileSync(new URL('../pages/en/404.astro', import.meta.url), 'utf8');
 const wrangler = readFileSync(new URL('../../wrangler.jsonc', import.meta.url), 'utf8');
 const seoSource = readFileSync(new URL('./seo.ts', import.meta.url), 'utf8');
+const manifestSource = readFileSync(new URL('./publish-manifest.ts', import.meta.url), 'utf8');
 const robots = readFileSync(new URL('../../public/robots.txt', import.meta.url), 'utf8');
 
 describe('robots.txt AI and search crawlers', () => {
@@ -25,15 +26,15 @@ describe('llms.txt and grading-guide SEO copy', () => {
 
   it('keeps the grading guide in llms.txt and lists glossary, guides, and country catalogues', () => {
     assert.ok(grading);
-    assert.match(seoSource, /## Glossary/);
-    assert.match(seoSource, /## Guides/);
-    assert.match(seoSource, /## Recent news \(latest 15 only\)/);
+    assert.match(manifestSource, /sectionBlock\('Glossary'/);
+    assert.match(manifestSource, /sectionBlock\('Guides'/);
+    assert.match(manifestSource, /'Recent news'/);
+    assert.match(manifestSource, /RECENT_NEWS_LIMIT = 15/);
+    assert.match(manifestSource, /newsArticles/);
+    assert.match(manifestSource, /colección privada y catálogo bilingüe/i);
+    assert.match(manifestSource, /https:\/\/notofilia\.com\/sitemap\.txt/);
     assert.match(seoSource, /llmsCountryCatalogues/);
-    assert.match(seoSource, /blogArticles/);
-    assert.match(seoSource, /newsArticles/);
-    assert.match(seoSource, /colección privada y catálogo bilingüe/);
-    assert.match(seoSource, /https:\/\/notofilia\.com\/sitemap\.txt/);
-    assert.match(seoSource, /latest 15/);
+    assert.match(seoSource, /export \{ llmsTxt \}/);
     assert.match(grading.seoTitle.es, /PMG, PCGS y NGC/);
     assert.match(grading.seoTitle.en, /PMG, PCGS, and NGC/);
     assert.equal(articles.some((article) => article.slug === 'como-se-valora-un-billete-colombiano'), true);
