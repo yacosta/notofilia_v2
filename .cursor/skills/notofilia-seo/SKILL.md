@@ -40,10 +40,12 @@ When adding or changing the build-time crawl (`scripts/seo-audit.mjs`, npm scrip
   - JSON-LD that fails to parse, or a `BlogPosting` without `citation` when the page has a sources list
   - `<img>` without `alt`; an `og:image` without `og:image:alt`; or a catalog lightbox trigger whose `alt` lacks a side the site already uses (`Anverso`/`Reverso`, `Face`/`Back`, `Obverse`/`Reverse`, or the pair phrase) and an identifier already on the record (serial, Pick, BG#, KM, HT, Friedberg, Haxby, Rulau, Fonrobert, a short reference printed on the record, or a series year when the piece has no catalog number)
   - sitemap URLs absent from `dist/`, or indexable `dist/` pages absent from the sitemap
-  - `llms.txt` or `llms-full.txt` links that do not resolve to built pages
+  - a hub, guide, glossary term, tool, or static page missing from `llms.txt`, or Recent news that is not the newest 15 rows in `news-articles.json`
+  - `llms.txt` or `llms-full.txt` links that 404, redirect, are noindex, or do not resolve to built pages
+  - `robots.txt` that disallows a crawler, or that names a sitemap or IndexNow key file missing from `dist/`
   - placeholder text in rendered HTML (`{{`, `[object`, `undefined`, `TODO(owner)`)
 - Print a summary table by section: collection, blog, news, glossary, other.
-- Wire `seo:audit` into CI on pull requests. Existing unit checks stay: `src/lib/seo.test.mjs`, `src/lib/piece-seo.test.mjs`, `src/lib/sitemap.test.mjs`, `src/lib/json-ld.test.mjs`.
+- Wire `seo:audit` into CI on pull requests. Existing unit checks stay: `src/lib/seo.test.mjs`, `src/lib/piece-seo.test.mjs`, `src/lib/sitemap.test.mjs`, `src/lib/publish-manifest.test.mjs`, `scripts/check-robots.test.mjs`, `src/lib/json-ld.test.mjs`.
 
 ## Titles and descriptions
 

@@ -1,0 +1,6 @@
+---
+description: Keep llms.txt, the sitemap, and robots.txt in sync whenever a page is published
+alwaysApply: true
+---
+
+Whenever you add, edit or remove a news article or any page: (a) update the source data and front-matter only, never llms.txt or the sitemap directly; (b) run `npm run build && npm run seo:audit` and fix any sync failure; (c) confirm the new URL appears in dist/llms.txt (news: in Recent news; other page types: in their section) and in dist/sitemap.xml with both hreflang alternates; (d) confirm robots.txt checks pass; (e) list all three in the PR description. Never trigger IndexNow by hand; scripts/indexnow.mjs handles it on main.

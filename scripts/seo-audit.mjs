@@ -1,6 +1,8 @@
 // Crawl dist/ and fail the build on the SEO regressions listed in the Oct 2026 audit.
+import { readFileSync } from 'node:fs';
 import { readdir, readFile } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
+import { createServer } from 'vite';
 import { lightboxTriggerAlts, specimenAltFailure } from './image-seo.mjs';
 
 const reportOnly = process.argv.includes('--report-only');
@@ -62,6 +64,7 @@ function stripScripts(html) {
   return html.replace(/<script\b[\s\S]*?<\/script>/gi, '').replace(/<style\b[\s\S]*?<\/style>/gi, '');
 }
 
+const noindexPaths = new Set();
 const pages = [];
 for await (const file of walk(DIST)) {
   if (file.endsWith('.html')) pages.push(file);
@@ -83,6 +86,7 @@ for (const file of pages) {
   const pathname = toPath(file);
   const section = sectionOf(pathname);
   const noindex = /<meta\s+name=["']robots["'][^>]*noindex/i.test(html);
+  if (noindex) noindexPaths.add(pathname.endsWith('/') || pathname === '/' ? pathname : `${pathname}/`);
   const is404 = pathname === '/404' || pathname === '/404.html' || pathname === '/en/404' || pathname === '/en/404.html';
   const indexable = !noindex && !is404;
   if (indexable) counts[section].pages += 1;
@@ -239,15 +243,47 @@ for (const file of pages) {
   if (!sitemapPaths.has(key) && !sitemapPaths.has(pathname)) fail(`indexable page missing from sitemap: ${key}`);
 }
 
+function hasLinkedUrl(text, url) {
+  return text.includes(`(${url})`);
+}
+
+function loadRedirectSources() {
+  const sources = new Set();
+  try {
+    const data = JSON.parse(readFileSync(join('src/data/gsc-redirects.json'), 'utf8'));
+    for (const source of Object.keys(data.redirects ?? {})) sources.add(source);
+  } catch {
+    fail('src/data/gsc-redirects.json is missing');
+  }
+  return sources;
+}
+
+const vite = await createServer({
+  root: process.cwd(),
+  server: { middlewareMode: true },
+  appType: 'custom',
+  logLevel: 'error',
+});
+let manifest;
+try {
+  manifest = await vite.ssrLoadModule('/src/lib/publish-manifest.ts');
+} finally {
+  await vite.close();
+}
+
+const redirects = loadRedirectSources();
+const siteUrl = 'https://notofilia.com';
+
 for (const name of ['llms.txt', 'llms-full.txt']) {
   const text = await readFile(join(DIST, name), 'utf8');
   const links = [...text.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((match) => match[1]);
-  if (name === 'llms.txt' && (links.length < 40 || links.length > 90)) {
-    warn(`${name} has ${links.length} links (target 40–70)`);
+  if (name === 'llms.txt' && links.length < 40) {
+    fail(`${name} has ${links.length} links`);
   }
   for (const url of links) {
     const path = new URL(url).pathname;
-    if (path.endsWith('.xml') || path.endsWith('.txt') || path.endsWith('.json')) {
+    if (redirects.has(path)) fail(`${name} links to a redirect: ${path}`);
+    if (path.endsWith('.xml') || path.endsWith('.txt') || path.endsWith('.json') || path.startsWith('/api/')) {
       const staticFile = join(DIST, path.replace(/^\//, ''));
       try {
         await readFile(staticFile);
@@ -256,6 +292,8 @@ for (const name of ['llms.txt', 'llms-full.txt']) {
       }
       continue;
     }
+    const normalized = path.endsWith('/') ? path : `${path}/`;
+    if (noindexPaths.has(normalized) || noindexPaths.has(path)) fail(`${name} links to a noindex URL: ${path}`);
     const file = path === '/' ? join(DIST, 'index.html') : join(DIST, path.replace(/^\//, ''), 'index.html');
     try {
       await readFile(file);
@@ -263,6 +301,45 @@ for (const name of ['llms.txt', 'llms-full.txt']) {
       fail(`${name} link missing from dist: ${path}`);
     }
   }
+}
+
+const llms = await readFile(join(DIST, 'llms.txt'), 'utf8');
+const newsHeading = llms.split('## Recent news')[1] ?? '';
+if (!newsHeading) fail('llms.txt is missing the Recent news section');
+for (const path of manifest.llmsRequiredPaths()) {
+  if (!hasLinkedUrl(llms, `${siteUrl}${path}`)) fail(`llms.txt missing ${path}`);
+}
+for (const path of manifest.cataloguePiecePaths()) {
+  if (hasLinkedUrl(llms, `${siteUrl}${path}`)) fail(`llms.txt includes catalogue item ${path}`);
+}
+const newest = manifest.recentNewsArticles();
+const ranked = manifest.newsByPublished();
+const newsEntries = manifest.llmsEntries().filter((entry) => entry.section === 'news');
+if (newest.length !== 15) fail(`recent news count is ${newest.length}, expected 15`);
+if (newsEntries.length !== newest.length) fail(`llms Recent news lists ${newsEntries.length} articles`);
+const articleLines = newsHeading
+  .split('\n')
+  .filter((line) => line.startsWith('- ['))
+  .filter((line) => !line.includes(`(${siteUrl}/noticias/)`) && !line.includes(`(${siteUrl}/en/news/)`));
+newsEntries.forEach((entry, index) => {
+  const article = newest[index];
+  const line = articleLines[index] ?? '';
+  if (entry.published !== article.published || entry.esPath !== `/noticias/${article.slug}/`) {
+    fail(`Recent news item ${index + 1} is not ${article.slug}`);
+  }
+  if (!line.includes(`(${siteUrl}${entry.esPath})`) || !line.includes(`(${siteUrl}${entry.enPath})`)) {
+    fail(`Recent news item ${article.slug} is missing an ES or EN URL`);
+  }
+  if (!line.includes(article.published)) fail(`Recent news item ${article.slug} is missing ${article.published}`);
+});
+const dropped = ranked[15];
+if (dropped && newsHeading.includes(`(${siteUrl}/noticias/${dropped.slug}/)`)) {
+  fail(`Recent news still lists ${dropped.slug}, which is older than the newest 15`);
+}
+for (const path of sitemapPaths) {
+  if (redirects.has(path)) fail(`sitemap links to a redirect: ${path}`);
+  const normalized = path.endsWith('/') ? path : `${path}/`;
+  if (noindexPaths.has(normalized) || noindexPaths.has(path)) fail(`sitemap links to a noindex URL: ${path}`);
 }
 
 console.log('\nSEO audit summary');

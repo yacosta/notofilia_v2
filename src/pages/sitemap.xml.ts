@@ -1,73 +1,16 @@
 import type { APIRoute } from 'astro';
-import { articlePath, blogArticles, newsArticles } from '../data/editorial';
-import { localizePath } from '../lib/locale-paths';
-import { SITE_URL } from '../lib/site-url';
-import { dedicatedCatalogPaths, stubPages } from '../lib/site';
+import { sitemapXml } from '../lib/publish-manifest';
 
-/** Home is the only public HTML route not already in stubPages or dedicatedCatalogPaths. */
-const extra = ['/'];
-
-function lastmodByPath(): Map<string, string> {
-  const dates = new Map<string, string>();
-  for (const article of blogArticles) {
-    const date = article.updated || article.published;
-    dates.set(articlePath('blog', article.slug, 'es'), date);
-    dates.set(articlePath('blog', article.slug, 'en'), date);
-  }
-  for (const article of newsArticles) {
-    const date = article.updated || article.published;
-    dates.set(articlePath('news', article.slug, 'es'), date);
-    dates.set(articlePath('news', article.slug, 'en'), date);
-  }
-  return dates;
-}
-
-export function collectSitemapPaths(): string[] {
-  const paths = new Set<string>(extra);
-  for (const page of stubPages) {
-    if (page.path === 'buscar') continue;
-    paths.add(`/${page.path}/`);
-  }
-  for (const slug of dedicatedCatalogPaths) {
-    if (slug === 'buscar' || slug === 'search') continue;
-    paths.add(`/${slug}/`);
-  }
-
-  const urls = [...paths].flatMap((path) => [localizePath(path, 'es'), localizePath(path, 'en')]);
-  return [...new Set(urls)].filter((path) => path !== '/buscar/' && path !== '/en/search/');
-}
+export { collectSitemapPaths, sitemapTxt, sitemapXml } from '../lib/publish-manifest';
 
 /**
  * Text sitemap (one absolute URL per line). Google’s text-sitemap rules
  * allow nothing but URLs, so the reading guide lives in llms.txt and robots.txt.
  * Spanish (x-default) is emitted first; the English URL follows when it differs.
+ * There is no @astrojs/sitemap integration. This route and scripts/build-llms.mjs
+ * both call publish-manifest so the XML and text lists cannot drift.
  */
-export function sitemapTxt(): string {
-  return `${collectSitemapPaths().map((path) => `${SITE_URL}${path}`).join('\n')}\n`;
-}
-
-export const GET: APIRoute = () => {
-  const unique = collectSitemapPaths();
-  const lastmod = lastmodByPath();
-  const body = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${unique
-  .map((loc) => {
-    const es = localizePath(loc, 'es');
-    const en = localizePath(loc, 'en');
-    // lastmod only when the record has a published or updated date. Never the build clock.
-    const modified = lastmod.get(loc);
-    return `  <url>
-    <loc>${SITE_URL}${loc}</loc>${modified ? `\n    <lastmod>${modified}</lastmod>` : ''}
-    <xhtml:link rel="alternate" hreflang="es" href="${SITE_URL}${es}"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}${en}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${es}"/>
-  </url>`;
-  })
-  .join('\n')}
-</urlset>
-`;
-  return new Response(body, {
+export const GET: APIRoute = () =>
+  new Response(sitemapXml(), {
     headers: { 'Content-Type': 'application/xml; charset=utf-8' },
   });
-};

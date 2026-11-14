@@ -12,8 +12,13 @@ globs:
   - src/lib/seo.ts
   - src/lib/piece-seo.ts
   - src/lib/json-ld.ts
+  - src/lib/publish-manifest.ts
   - src/pages/sitemap.xml.ts
+  - src/pages/sitemap.txt.ts
   - src/pages/llms.txt.ts
+  - src/pages/llms-full.txt.ts
+  - scripts/build-llms.mjs
+  - scripts/check-robots.mjs
   - src/layouts/Layout.astro
   - public/_headers
   - public/robots.txt
