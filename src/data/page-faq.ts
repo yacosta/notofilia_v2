@@ -415,6 +415,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'Yes. The numismatics case records the 1856 gold dollar, James Barton Longacre’s Type 3, and two unslabbed Philadelphia .900 gold quarter eagles: the 1878 Liberty Head, by Christian Gobrecht, and the 1912 Indian Head, by Bela Lyon Pratt. Also the 1878-CC, 1883, 1884-S, 1883-CC, 1885-CC, 1887-S, 1891-CC, 1893-CC, 1893-S, and 1893 Morgan dollars, .900 silver; the 1878 piece is in a holder labeled PCGS MS60, 7495.60/72833930 — that certification was not independently verified — and the other nine are raw; the 1885 piece has no documented GSA provenance, the 1887-S is a better San Francisco date, the 1893-CC is Carson City’s final year of coinage, the 1893-S, from San Francisco, is recorded by date and mint mark — the photographs do not confirm authenticity — and the 1883 and 1893 pieces, from Philadelphia, carry no mint mark. And the Semiquincentennial 1776–2026 $1, with Trump’s portrait, manganese brass — not gold — and unslabbed. The First Steam Coinage medal, dated 1836, Julian MT-21, has no face value and no holder; the yellow-bronze restrike (PCGS 783671) remains a provisional attribution. This country’s paper remains in the notaphily case, including Rency’s Trump / Never Surrender pop collage, a different object.',
       },
     },
+    {
+      question: {
+        es: '¿Quién fue Tim Prusmack?',
+        en: 'Who was Tim Prusmack?',
+      },
+      answer: {
+        es: 'Tim Prusmack (1962–2004, según DesignObserver) dibujaba a tinta reproducciones de papel antiguo y dinero artístico de diseño propio, y las publicaba en estampas de edición de 250. Murió el 26 de enero de 2004. Fue presidente del Treasure Coast Coin Club durante seis años. Numismatic News, citado por The E-Sylum en 2002, lo llama «artmatist», el nombre que él mismo usaba. No es J. S. G. Boggs. Esta colección guarda la estampa número 12 de 250 del anverso del 1 dólar Educational de 1896; no es el certificado de plata Fr. 224, serial B3207078.',
+        en: 'Tim Prusmack (1962–2004, according to DesignObserver) drew ink reproductions of old paper money and money of his own design, and issued them as prints in editions of 250. He died on 26 January 2004. He was president of the Treasure Coast Coin Club for six years. Numismatic News, quoted by The E-Sylum in 2002, calls him an “artmatist,” the name he used for himself. He is not J. S. G. Boggs. This collection holds print number 12 of 250 of the 1896 Educational $1 face; it is not the Fr. 224 silver certificate, serial B3207078.',
+      },
+    },
   ],
   philippines: [
     {

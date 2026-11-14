@@ -167,7 +167,7 @@ export function visualArtworkJsonLd(options: {
   /** Face and back, when both exist. Overrides the single `image`. */
   images?: { src: string; caption?: string; width?: number; height?: number }[];
   locale: Locale;
-  artform: 'Banknote' | 'Coin' | 'Medal' | 'CreativeWork';
+  artform: 'Banknote' | 'Coin' | 'Medal' | 'Print' | 'CreativeWork';
   catalogNumber?: string;
   issuer?: string;
   printer?: string;

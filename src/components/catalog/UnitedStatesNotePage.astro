@@ -82,6 +82,7 @@ const seo = piecePageMeta({
   locale,
   country: locale === 'en' ? 'United States' : 'Estados Unidos',
   district: note.reserveDistrict,
+  heading: note.heading?.[locale],
 });
 const documentTitle = note.seoTitle?.[locale] ?? seo.documentTitle;
 const metaDescription = note.metaDescription?.[locale] ?? seo.description;
@@ -152,7 +153,7 @@ const jsonCrumbs = [
           url: pathname,
           images: scanImages,
           locale,
-          artform: 'Banknote',
+          artform: note.artform ?? 'Banknote',
           catalogNumber: note.scwpm ? `${note.scwpm} · ${note.friedberg ?? note.pick}` : note.pick,
           serial: serialLine,
           gradingService: inferGradingService(note.grade[locale]),
@@ -280,7 +281,7 @@ const jsonCrumbs = [
         </dl>
       </section>
 
-      <div class="grid gap-10 lg:grid-cols-2">
+      <div class:list={['grid gap-10', note.images.back && 'lg:grid-cols-2']}>
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           {note.images.front ? (
@@ -301,6 +302,7 @@ const jsonCrumbs = [
           ) : null}
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
+        {note.images.back ? (
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           {note.images.back ? (
@@ -320,6 +322,7 @@ const jsonCrumbs = [
           ) : null}
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.backCaption[locale]}</figcaption>
         </figure>
+        ) : null}
       </div>
 
       {
