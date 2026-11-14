@@ -776,6 +776,75 @@ describe('12 November 2026 Frisian gold half Philipsdaalder', () => {
   });
 });
 
+describe('14 November 2026 Gettysburg Address quarter rolls', () => {
+  it('publishes the Mint list prices from the 6 November release and does not treat them as a loose-quarter value', () => {
+    const article = newsArticles.find((item) => item.slug === 'rollos-cuarto-gettysburg-13-noviembre');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'gettysburg-address-quarter-rolls-november-13');
+    assert.equal(article.published, '2026-11-14');
+    assert.equal(article.sourceName, 'CoinNews');
+    assert.equal(
+      article.sourceUrl,
+      'https://www.coinnews.net/2026/11/13/mint-launches-gettysburg-address-quarter-rolls-and-bags/',
+    );
+    assert.equal(article.image, '/uploads/copia-bliss-discurso-gettysburg.jpg');
+    assert.equal(article.imageWidth, 1800);
+    assert.equal(article.imageHeight, 747);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'USD');
+    assert.equal(article.claim.valueIso, '2026-11-06');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/copia-bliss-discurso-gettysburg.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/copia-bliss-discurso-gettysburg-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.equal(article.dek.es, article.description.es);
+    assert.match(article.description.es, /cuenta que la Mint abrió/);
+    assert.doesNotMatch(article.description.es, /abre la venta/);
+    assert.match(article.claim.noteEs, /US\$56/);
+    assert.match(article.claim.noteEs, /US\$63/);
+    assert.match(article.claim.noteEs, /26SQRJ/);
+    assert.match(article.claim.noteEs, /cuarto suelto/);
+    assert.match(article.claim.noteEn, /US\$56/);
+    assert.match(article.claim.noteEn, /loose quarter/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join('\n');
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const url of sourceUrls.split('\n')) {
+      assert.ok(body.includes(url), url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /26SQBJ/);
+      assert.match(html, /26SQBK/);
+      assert.match(html, /26SQRJ/);
+      assert.match(html, /116-330/);
+      assert.match(html, /Justin Kunz/);
+      assert.match(html, /10[.,]337/);
+      assert.match(html, /9[.,]194/);
+      assert.match(html, /375[.,]549/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /1-dolar-trump-1776-2026/);
+      assert.match(html, /cuarto-gettysburg-ceremonia-21-octubre/);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /no abre esas fichas|did not open those pages/);
+      assert.doesNotMatch(html, /sold out|agotaron el mismo día|trackthemint/i);
+    }
+    assert.match(article.bodyHtml.es, /no dice si las tres opciones seguían/);
+    assert.match(article.bodyHtml.en, /does not say whether the three options were still on sale/);
+    assert.equal(
+      article.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'Monedas, billetes y medallas. Este cuarto de Gettysburg no tiene ficha.',
+    );
+  });
+});
+
 describe('12 November 2026 Springhead Hoard, first part', () => {
   it('keeps the BBC total apart from the catalogue hammers and from the premium', () => {
     const article = newsArticles.find((item) => item.slug === 'tesoro-springhead-primera-parte');
