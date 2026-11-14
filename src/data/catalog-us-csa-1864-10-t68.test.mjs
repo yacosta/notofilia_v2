@@ -82,12 +82,12 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'pr-40-centavos-1896-pgv');
-    assert.match(milestones[0]?.href ?? '', /40-centavos-1896-pgv/);
-    assert.match(milestones[0]?.image ?? '', /puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-composite\.jpg/);
-    assert.equal(additions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(milestones[0]?.holdingId, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.match(milestones[0]?.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
+    assert.match(milestones[0]?.image ?? '', /prusmack-1-dollar-1896-history-instructing-youth-print-12-250/);
+    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.kind, 'banknote');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,

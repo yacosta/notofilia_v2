@@ -18,8 +18,8 @@ const miscChapterBodyParts: CatalogProsePart[] = [
   },
   {
     text: {
-      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; el 25¢ de Otto Ringling (WI100-.25a) espera el número de serie o el certificado del vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
-      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ Otto Ringling note (WI100-.25a) still waits for a serial or a certificate. Further note pages will be published here as they are photographed.',
+      es: ', billetes de prueba Giori del BEP, scrip conmemorativo y emisiones promocionales. Ya tienen ficha el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C —sigue siendo curso legal, pero los sellos rojos lo documentan como objeto de un seguimiento de circulación, no como un FRN de tipo—, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. También tiene ficha la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250: no es un certificado de plata. El scrip del Golden Jubilee —Cámara de Comercio, Shafer WI100, 5¢ a 1 dólar— tiene ficha de tipo; el 25¢ de Otto Ringling (WI100-.25a) espera el número de serie o el certificado del vale. Las demás fichas se publicarán aquí a medida que se fotografíen.',
+      en: ', BEP Giori test notes, commemorative scrip, and promotional issues. The Series 2006 Dallas $1, serial K46602688C — still legal tender, but documented by the red stamps as a circulation-tracking object, not as a type FRN — the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. The Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, also has a note page; it is not a silver certificate. The Golden Jubilee scrip — Chamber of Commerce, Shafer WI100, 5¢ to $1 — has a type page; the 25¢ Otto Ringling note (WI100-.25a) still waits for a serial or a certificate. Further note pages will be published here as they are photographed.',
     },
   },
 ];
@@ -409,7 +409,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), serial L68013147A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002, y la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -436,7 +436,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serial L68013147A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, and the Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -481,8 +481,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, un billete de prueba Giori, y el scrip conmemorativo del Golden Jubilee de Baraboo de 1933.',
-        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, and the 1933 Baraboo Golden Jubilee commemorative scrip.',
+        es: 'Esta vitrina reúne papel estadounidense que no cabe en las series federales ni en el pop art sobre el 1 dólar: un Federal Reserve Note marcado para un seguimiento de circulación, un billete de prueba Giori, el scrip conmemorativo del Golden Jubilee de Baraboo de 1933, y una estampa de Tim Prusmack del 1 dólar Educational de 1896.',
+        en: 'This case holds United States paper that does not belong in the federal series or in pop art on the $1: a Federal Reserve Note marked for circulation tracking, a Giori test note, the 1933 Baraboo Golden Jubilee commemorative scrip, and a Tim Prusmack print of the 1896 Educational $1.',
       },
     },
   ],
@@ -501,8 +501,8 @@ export const miscSeriesIntro: CatalogProsePart[][] = [
   [
     {
       text: {
-        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002. El 25¢ de Otto Ringling (WI100-.25a) espera un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
-        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002. The 25¢ Otto Ringling note (WI100-.25a) waits for a serial or a certificate. Further pieces will be published as they are photographed.',
+        es: 'Abre la vitrina el 1 dólar serie 2006 del distrito de Dallas, serial K46602688C, con sellos rojos de Where’s George? y de un «Currency Circulation Study». Sigue siendo curso legal; los sellos lo documentan como objeto de ese seguimiento, no como un FRN de tipo. Lo acompaña el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970: verde, sin seriales ni sellos, con el reverso en blanco. No es curso legal. El scrip de Baraboo —seis denominaciones, Shafer WI100, diseño de E. B. Trimpey— tiene ficha de tipo, el 5¢ de John Ringling, serial A4895, el 10¢ de Chas. Ringling, serial A2844, el 15¢ de Al. T. Ringling, serial A2819, el 50¢ de A. C. Ringling, serial A1054, y el 1 dólar de los Ringling Bros., serial A2002. La estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250, también está en esta vitrina; no es un certificado de plata. El 25¢ de Otto Ringling (WI100-.25a) espera un serial o un certificado. Las demás piezas se publicarán a medida que se fotografíen.',
+        en: 'The case opens with the Series 2006 Dallas $1, serial K46602688C, with red Where’s George? stamps and a “Currency Circulation Study” mark. It remains legal tender; the stamps document it as a tracking object, not as a type FRN. Beside it is the uniface Giori Lincoln Memorial test note, ca. 1970s: green, with no serials or seals and a blank back. It is not legal tender. The Baraboo scrip — six denominations, Shafer WI100, designed by E. B. Trimpey — has a type page, the 5¢ John Ringling note, serial A4895, the 10¢ Chas. Ringling note, serial A2844, the 15¢ Al. T. Ringling note, serial A2819, the 50¢ A. C. Ringling note, serial A1054, and the $1 Ringling Bros. note, serial A2002. The Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, is in this case as well; it is not a silver certificate. The 25¢ Otto Ringling note (WI100-.25a) waits for a serial or a certificate. Further pieces will be published as they are photographed.',
       },
     },
   ],
@@ -1442,7 +1442,8 @@ export type UnitedStatesNoteId =
   | 'renci-messi-you-have-to-fight-to-reach-your-dream'
   | 'renci-warhol-basquiat-life-is-beautiful'
   | 'renci-trump-never-surrender'
-  | 'renci-life-is-beautiful-life-spray';
+  | 'renci-life-is-beautiful-life-spray'
+  | 'prusmack-educational-1-dolar-1896-12-250';
 
 export type UnitedStatesNoteFact = {
   label: LocalizedText;
@@ -1507,6 +1508,10 @@ export type UnitedStatesNote = {
   };
   heroAlt?: LocalizedText;
   title: LocalizedText;
+  /** Visible h1 when the generated “Billete de …” line would misname the object. */
+  heading?: LocalizedText;
+  /** Schema.org artform. A numbered art print is not a banknote. */
+  artform?: 'Banknote' | 'Print';
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
@@ -8929,6 +8934,189 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'Primeros Gold Certificates en 1865. Recorte al tamaño pequeño en 1929. Esta pieza queda del lado grande de esa línea.',
           en: 'First Gold Certificates in 1865. Reduction to small size in 1929. This piece sits on the large-size side of that line.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'prusmack-educational-1-dolar-1896-12-250',
+    chapterId: 'us-miscelaneos',
+    path: '/coleccion/estados-unidos/tim-prusmack/1-dolar-educational-1896-12-250/',
+    pathEn: '/collection/united-states/tim-prusmack/educational-1-dollar-1896-print-12-250/',
+    pick: 'Tim Prusmack · 12/250',
+    serial: '12/250',
+    serial_display: '#12/250',
+    signatures: {
+      es: 'Tim Prusmack, manuscrito en el paspartú (© Tim Prusmack) y otra vez en el dibujo, sobre el cargo de tesorero. La firma de la izquierda, sobre el cargo de registrador, no se identifica en la fotografía.',
+      en: 'Tim Prusmack, handwritten on the mat (© Tim Prusmack) and again on the drawing, over the office of Treasurer. The signature at left, over the office of Register, is not identified in the photograph.',
+    },
+    printed: {
+      es: 'Edición declarada de 250. Esta hoja está numerada 12, en el margen de la estampa y otra vez bajo la firma del paspartú. No es una tirada del Bureau of Engraving and Printing, y esta ficha no afirma el año en que se imprimió la hoja. Numista da al tipo de 1896 un tamaño de 187 × 79 mm; no es una medición de esta estampa ni del paspartú.',
+      en: 'A stated edition of 250. This sheet is numbered 12, on the print margin and again under the signature on the mat. It is not a Bureau of Engraving and Printing printage, and this record does not state the year the sheet was printed. Numista gives the 1896 type as 187 × 79 mm. That is not a measurement of this print or of the mat.',
+    },
+    images: {
+      composite: '/images/catalog/united-states/united-states-tim-prusmack-1-dollar-1896-history-instructing-youth-print-12-250.jpg',
+      front: '/images/catalog/united-states/united-states-tim-prusmack-1-dollar-1896-history-instructing-youth-print-12-250.jpg',
+      back: '',
+      width: 1024,
+      height: 771,
+    },
+    artform: 'Print',
+    title: {
+      es: 'Estampa · Tim Prusmack · 1 dólar Educational · 1896',
+      en: 'Print · Tim Prusmack · Educational $1 · 1896',
+    },
+    heading: {
+      es: 'Estampa de Tim Prusmack del 1 dólar de 1896',
+      en: 'Tim Prusmack print of the 1896 $1',
+    },
+    kicker: {
+      es: 'Estados Unidos · Misceláneos · Estampa',
+      en: 'United States · Miscellaneous · Art print',
+    },
+    lead: {
+      es: 'Estampa firmada de Tim Prusmack, número 12 de 250, que reproduce el anverso History Instructing Youth del certificado de plata de 1 dólar de 1896. No es un billete del Tesoro.',
+      en: 'A signed Tim Prusmack print, number 12 of 250, reproducing the History Instructing Youth face of the 1896 $1 Silver Certificate. It is not a Treasury note.',
+    },
+    seoTitle: {
+      es: 'Estampa Tim Prusmack · 1 dólar 1896 · 12/250',
+      en: 'Prusmack print · Educational $1 1896 · 12/250',
+    },
+    metaDescription: {
+      es: 'Estampa firmada de Tim Prusmack, número 12 de 250, del anverso History Instructing Youth del 1 dólar de 1896. No es un billete del Tesoro.',
+      en: 'Signed Tim Prusmack print, number 12 of 250, of the 1896 $1 Silver Certificate face, History Instructing Youth. It is not a Treasury note.',
+    },
+    description: {
+      es: 'La hoja es la estampa número 12 de 250 del anverso History Instructing Youth del certificado de plata de 1 dólar de 1896, el valor bajo de la Educational Series. Una figura señala el Monumento a Washington y el Capitolio. En las coronas del marco se leen, entre otros, los apellidos Washington, Franklin, Jefferson y Lincoln. Will Hicok Low diseñó ese anverso del tipo y Charles Schlecht lo grabó; esta estampa no es esa plancha del Bureau of Engraving and Printing. Abajo a la derecha, sobre el cargo de tesorero, la firma del dibujo lee Tim Prusmack. La firma de la izquierda, sobre el cargo de registrador, no se identifica en esta fotografía. El sello rojo del Tesoro también está dibujado. En el margen crema de la estampa, y otra vez bajo el paspartú azul, se lee #12/250. En el paspartú, la firma manuscrita lee © Tim Prusmack. Los seriales azules del dibujo no coinciden entre sí: ▷P29A1197◁ arriba a la derecha y ▷P29A012◁ abajo a la izquierda. El cartucho lee SERIES OF 1897 y P 29; el tipo del BEP imprime SERIES OF 1896. No es curso legal. No es el Fr. 224 de esta colección, serial B3207078.',
+      en: 'The sheet is print number 12 of 250 of the History Instructing Youth face of the 1896 $1 Silver Certificate, the low denomination of the Educational Series. A figure points toward the Washington Monument and the Capitol. The border wreaths include, among others, the surnames Washington, Franklin, Jefferson, and Lincoln. Will Hicok Low designed that type face and Charles Schlecht engraved it; this print is not that Bureau of Engraving and Printing plate. At lower right, over the office of Treasurer, the drawn signature reads Tim Prusmack. The signature at left, over the office of Register, is not identified from this photograph. The red Treasury seal is drawn as well. On the cream margin of the print, and again below the blue mat, the sheet reads #12/250. On the mat, the handwritten signature reads © Tim Prusmack. The blue serials on the drawing do not match each other: ▷P29A1197◁ at upper right and ▷P29A012◁ at lower left. The cartouche reads SERIES OF 1897 and P 29; the BEP type prints SERIES OF 1896. It is not legal tender. It is not this collection’s Fr. 224, serial B3207078.',
+    },
+    facts: [
+      {
+        label: { es: 'Seriales del dibujo', en: 'Serials on the drawing' },
+        value: {
+          es: '▷P29A1197◁ arriba a la derecha; ▷P29A012◁ abajo a la izquierda. No coinciden.',
+          en: '▷P29A1197◁ at upper right; ▷P29A012◁ at lower left. They do not match.',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Cartucho', en: 'Cartouche' },
+        value: {
+          es: 'La fotografía lee SERIES OF 1897 y P 29. El tipo del BEP imprime SERIES OF 1896.',
+          en: 'The photograph reads SERIES OF 1897 and P 29. The BEP type prints SERIES OF 1896.',
+        },
+        wide: true,
+      },
+    ],
+    historyHeading: {
+      es: 'El artista',
+      en: 'The artist',
+    },
+    history: [
+      {
+        es: 'Tim Prusmack (1962–2004, según DesignObserver) murió el 26 de enero de 2004. La nota que John y Nancy Wilson enviaron a The E-Sylum, y el obituario de Fort Pierce que ese boletín reproduce, dicen que destacó por reproducir a mano papel antiguo complicado, billetes de bancos de otra época y dinero artístico de diseño propio. Fue presidente del Treasure Coast Coin Club durante seis años. En noviembre de 2002, Numismatic News —citado por The E-Sylum— lo presenta como «artmatist», el nombre que él mismo se daba, y menciona un conjunto Hi-Five Prestige Edition de cinco de sus Money Masterpieces. DesignObserver describe dibujos a tinta que luego se imprimían en ediciones de 250 y se mostraban en ferias de moneda, y añade que en el Bureau of Engraving and Printing llegó a tener lectores, entre ellos Mary Ellen Withrow, entonces tesorera de los Estados Unidos. Esta ficha no documenta un encargo del BEP.',
+        en: 'Tim Prusmack (1962–2004, according to DesignObserver) died on 26 January 2004. The note John and Nancy Wilson sent to The E-Sylum, and the Fort Pierce obituary that bulletin reprints, say he excelled at hand-reproducing complicated antique paper, notes of banks from another era, and artistic money of his own design. He was president of the Treasure Coast Coin Club for six years. In November 2002, Numismatic News — quoted by The E-Sylum — introduces him as an “artmatist,” the name he used for himself, and mentions a Hi-Five Prestige Edition set of five of his Money Masterpieces. DesignObserver describes ink drawings later printed in editions of 250 and shown at coin shows, and adds that he found readers at the Bureau of Engraving and Printing, among them Mary Ellen Withrow, then Treasurer of the United States. This record does not document a BEP commission.',
+      },
+      {
+        es: 'El obituario dice que, el día antes de morir, hablaba de una mesa en la convención de la ANA en Pittsburgh y de una serie de notas de 25 centavos con los motivos de los State Quarters. El homenaje de febrero de 2004, también en The E-Sylum, llama Lazy Deuce a su última serie terminada —sobre un billete de un banco nacional de Wisconsin— y dice que el diseño de su quarter de Florida había sido finalista; esa serie fraccionaria no llegó a hacerse. El texto no confirma un encargo del United States Mint: solo dice que su médico le había autorizado viajar a la ceca si lo seleccionaban. John y Nancy Wilson lo llamaron «the Mozart of Money Artists»; esta ficha no convierte ese apodo en un título oficial. No es J. S. G. Boggs: The E-Sylum de 2025 separa a los dos cuando una casa de subastas los confundió. Otra estampa suya, el Deuce de 2001 con retrato de Robert E. Lee, está numerada 178 de 250. El 12/250 de esta hoja es la misma clase de numeración de edición, no un censo del certificado de plata de 1896.',
+        en: 'The obituary says that, the day before he died, he was talking about a table at the ANA convention in Pittsburgh and about a series of 25-cent notes using the state-quarter motifs. The February 2004 tribute, also in The E-Sylum, calls the Lazy Deuce his last finished series — based on a Wisconsin national-bank note — and says his Florida quarter design had been a finalist; the fractional series was never made. The text does not confirm a United States Mint commission: it only says his doctor had cleared him to travel to the Mint if he were selected. John and Nancy Wilson called him “the Mozart of Money Artists”; this record does not turn that nickname into an official title. He is not J. S. G. Boggs: a 2025 issue of The E-Sylum separates the two money artists after an auction house confused them. Another of his prints, the 2001 Deuce with a portrait of Robert E. Lee, is numbered 178 of 250. The 12/250 on this sheet is the same kind of edition number, not a census of the 1896 silver certificate.',
+      },
+    ],
+    frontCaption: {
+      es: 'Estampa 12/250 de Tim Prusmack: anverso dibujado del 1 dólar Educational de 1896, con paspartú azul y firma.',
+      en: 'Tim Prusmack print 12/250: drawn face of the 1896 Educational $1, with a blue mat and signature.',
+    },
+    backCaption: {
+      es: 'El reverso de la hoja no está fotografiado.',
+      en: 'The back of the sheet was not photographed.',
+    },
+    scarcity: {
+      es: 'El número 12 queda en la franja baja de una edición de 250. Esa fracción es una declaración del artista sobre la hoja, no una rareza de tipo del certificado de 1896. Otra estampa de Prusmack, el Deuce de 2001, está numerada 178 de 250 (The E-Sylum, 2025). Esta ficha no publica cuántas de las 250 sobreviven.',
+      en: 'Number 12 sits in the low band of an edition of 250. That fraction is the artist’s statement about the sheet, not a type rarity of the 1896 certificate. Another Prusmack print, the 2001 Deuce, is numbered 178 of 250 (The E-Sylum, 2025). This record does not publish how many of the 250 survive.',
+    },
+    population: {
+      es: 'No hay certificado PMG o PCGS en esta hoja. No se ha verificado un censo de la edición.',
+      en: 'There is no PMG or PCGS certificate on this sheet. A census of the edition has not been verified.',
+    },
+    grade: {
+      es: 'Sin encapsular, en paspartú azul (colección privada)',
+      en: 'Unslabbed, on a blue mat (private collection)',
+    },
+    unclaimed: [
+      {
+        es: 'No es el certificado de plata Fr. 224, serial B3207078, de esta colección.',
+        en: 'It is not this collection’s Fr. 224 silver certificate, serial B3207078.',
+      },
+      {
+        es: 'El 12/250 es la numeración de la estampa, no un censo PMG o PCGS ni una tirada del BEP.',
+        en: 'The 12/250 is the print’s edition number, not a PMG or PCGS census and not a BEP printage.',
+      },
+      {
+        es: 'Los seriales azules P29A1197 y P29A012 pertenecen al dibujo; no son un serial del Tesoro, y no se afirma que cada hoja de la edición los lleve.',
+        en: 'The blue serials P29A1197 and P29A012 belong to the drawing; they are not a Treasury serial, and this record does not claim that every sheet in the edition carries them.',
+      },
+      {
+        es: 'No se midieron el papel ni el paspartú, y no se afirma el procedimiento de impresión.',
+        en: 'The paper and the mat were not measured, and the printing process is not stated.',
+      },
+      {
+        es: 'El reverso de la hoja no está fotografiado.',
+        en: 'The back of the sheet was not photographed.',
+      },
+    ],
+    sources: [
+      {
+        href: 'https://www.coinbooks.org/esylum_v07n05a01.html',
+        es: 'The E-Sylum — vol. 7, n.º 5, 1 de febrero de 2004',
+        en: 'The E-Sylum — vol. 7, no. 5, 1 February 2004',
+        note: {
+          es: 'Nota de John y Nancy Wilson y obituario de Fort Pierce: muerte el 26 de enero de 2004; reproducciones a mano; presidente del Treasure Coast Coin Club seis años; mesa prevista en la ANA de Pittsburgh; fractionals de state quarters no hechos; el médico autorizó un viaje a la ceca solo si lo seleccionaban.',
+          en: 'Note from John and Nancy Wilson and the Fort Pierce obituary: death on 26 January 2004; hand reproductions; six years as president of the Treasure Coast Coin Club; a planned ANA Pittsburgh table; state-quarter fractionals not made; his doctor cleared a Mint trip only if he were selected.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v07n06a01.html',
+        es: 'The E-Sylum — vol. 7, n.º 6, 8 de febrero de 2004',
+        en: 'The E-Sylum — vol. 7, no. 6, 8 February 2004',
+        note: {
+          es: 'Homenaje de los Wilson: Lazy Deuce, última serie terminada, sobre una nota de banco nacional de Wisconsin; el diseño del quarter de Florida había sido finalista.',
+          en: 'Tribute from the Wilsons: the Lazy Deuce, his last finished series, based on a Wisconsin national-bank note; his Florida quarter design had been a finalist.',
+        },
+      },
+      {
+        href: 'https://www.coinbooks.org/esylum_v05n46a20.html',
+        es: 'The E-Sylum — vol. 5, n.º 46, 17 de noviembre de 2002',
+        en: 'The E-Sylum — vol. 5, no. 46, 17 November 2002',
+        note: {
+          es: 'Numismatic News del 19 de noviembre de 2002: se llamaba «artmatist» y reunió cinco Money Masterpieces en el Hi-Five Prestige Edition. Esta ficha no describe esas cinco piezas.',
+          en: 'Numismatic News of 19 November 2002: he called himself an “artmatist” and gathered five Money Masterpieces into the Hi-Five Prestige Edition. This record does not describe those five pieces.',
+        },
+      },
+      {
+        href: 'https://designobserver.com/drawn-to-currency/',
+        es: 'DesignObserver — Drawn to Currency',
+        en: 'DesignObserver — Drawn to Currency',
+        note: {
+          es: 'Años 1962–2004; dibujo a tinta; ediciones impresas de 250; ferias de moneda; lectores en el BEP, entre ellos Mary Ellen Withrow.',
+          en: 'Years 1962–2004; ink drawing; printed editions of 250; coin shows; readers at the BEP, among them Mary Ellen Withrow.',
+        },
+      },
+      {
+        href: 'https://coinbooks.org/v28/esylum_v28n15a26.html',
+        es: 'The E-Sylum — vol. 28, n.º 15, 13 de abril de 2025',
+        en: 'The E-Sylum — vol. 28, no. 15, 13 April 2025',
+        note: {
+          es: 'Deuce de 2001, número 178 de 250, con retrato de Robert E. Lee, a partir del 2 dólares de 1886. Separa a Prusmack de J. S. G. Boggs. No fecha esta hoja Educational.',
+          en: 'The 2001 Deuce, number 178 of 250, with a portrait of Robert E. Lee, after the 1886 $2. It separates Prusmack from J. S. G. Boggs. It does not date this Educational sheet.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/207329',
+        es: 'Numista — N#207329, 1 dólar certificado de plata, Educational Series',
+        en: 'Numista — N#207329, $1 Silver Certificate, Educational Series',
+        note: {
+          es: 'El tipo reproducido: P#335, Fr. 224, anverso de Will Hicok Low grabado por Charles Schlecht, SERIES OF 1896. El tamaño publicado no mide esta estampa.',
+          en: 'The type being reproduced: P#335, Fr. 224, face by Will Hicok Low engraved by Charles Schlecht, SERIES OF 1896. The published size does not measure this print.',
         },
       },
     ],

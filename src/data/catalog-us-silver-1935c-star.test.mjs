@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

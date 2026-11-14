@@ -258,6 +258,7 @@ export const additions: Holding[] = [
   { id: 'pr-nd-un-almud-vega-redonda', kind: 'coin', country: 'PR' },
   { id: 'pr-nd-dos-almudes-vega-redonda', kind: 'coin', country: 'PR' },
   { id: 'pr-40-centavos-1896-pgv', kind: 'coin', country: 'PR' },
+  { id: 'us-prusmack-educational-1-dolar-1896-12-250', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -441,6 +442,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-nd-un-almud-vega-redonda' },
   { id: 'pr-nd-dos-almudes-vega-redonda' },
   { id: 'pr-40-centavos-1896-pgv' },
+  { id: 'us-prusmack-educational-1-dolar-1896-12-250' },
 ];
 
 export type CollectionStats = {

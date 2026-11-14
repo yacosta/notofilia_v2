@@ -64,6 +64,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/1-dollar-silver-certificate-1896/'],
   },
   {
+    es: '/coleccion/estados-unidos/tim-prusmack/1-dolar-educational-1896-12-250/',
+    en: '/collection/united-states/tim-prusmack/educational-1-dollar-1896-print-12-250/',
+    aliases: ['/coleccion/united-states/tim-prusmack/educational-1-dollar-1896-print-12-250/'],
+  },
+  {
     es: '/coleccion/estados-unidos/2-dolares-certificado-plata-1896/',
     en: '/collection/united-states/2-dollars-silver-certificate-1896/',
     aliases: ['/coleccion/united-states/2-dollars-silver-certificate-1896/'],
