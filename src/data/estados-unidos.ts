@@ -9047,12 +9047,20 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
     },
     history: [
       {
-        es: 'Tim Prusmack (1962–2004, según DesignObserver) murió el 26 de enero de 2004. La nota que John y Nancy Wilson enviaron a The E-Sylum, y el obituario de Fort Pierce que ese boletín reproduce, dicen que destacó por reproducir a mano papel antiguo complicado, billetes de bancos de otra época y dinero artístico de diseño propio. Fue presidente del Treasure Coast Coin Club durante seis años. En noviembre de 2002, Numismatic News —citado por The E-Sylum— lo presenta como «artmatist», el nombre que él mismo se daba, y menciona un conjunto Hi-Five Prestige Edition de cinco de sus Money Masterpieces. DesignObserver describe dibujos a tinta que luego se imprimían en ediciones de 250 y se mostraban en ferias de moneda, y añade que en el Bureau of Engraving and Printing llegó a tener lectores, entre ellos Mary Ellen Withrow, entonces tesorera de los Estados Unidos. Esta ficha no documenta un encargo del BEP.',
-        en: 'Tim Prusmack (1962–2004, according to DesignObserver) died on 26 January 2004. The note John and Nancy Wilson sent to The E-Sylum, and the Fort Pierce obituary that bulletin reprints, say he excelled at hand-reproducing complicated antique paper, notes of banks from another era, and artistic money of his own design. He was president of the Treasure Coast Coin Club for six years. In November 2002, Numismatic News — quoted by The E-Sylum — introduces him as an “artmatist,” the name he used for himself, and mentions a Hi-Five Prestige Edition set of five of his Money Masterpieces. DesignObserver describes ink drawings later printed in editions of 250 and shown at coin shows, and adds that he found readers at the Bureau of Engraving and Printing, among them Mary Ellen Withrow, then Treasurer of the United States. This record does not document a BEP commission.',
+        es: 'Tim Prusmack nació en 1962 en Nueva York, según NNDB, y murió el 26 de enero de 2004 en Fort Pierce, Florida. Ni NNDB ni el obituario dan la causa. El Palm Beach Post del 29 de enero de 2004 lo da de 41 años. El obituario que John y Nancy Wilson enviaron a The E-Sylum nombra a los padres, el doctor Armand J. Prusmack y Florence Syrewicz, al hermano Ajon y a la hermana Nancy; fue campeón júnior de golf de Nueva York y presidente del Treasure Coast Coin Club durante seis años, y los donativos se pedían para la Cleary School for the Deaf, en Nesconset. Los Wilson habían hablado con él el día anterior: se encontraba bien.',
+        en: 'Tim Prusmack was born in 1962 in New York, according to NNDB, and died on 26 January 2004 in Fort Pierce, Florida. Neither NNDB nor the obituary gives a cause. The Palm Beach Post of 29 January 2004 gives his age as 41. The obituary John and Nancy Wilson sent to The E-Sylum names his parents, Dr. Armand J. Prusmack and Florence Syrewicz, his brother Ajon, and his sister Nancy; he was a one-time New York junior golf champion and president of the Treasure Coast Coin Club for six years, and memorial gifts were asked for the Cleary School for the Deaf in Nesconset. The Wilsons had spoken with him the day before: he was doing well.',
       },
       {
-        es: 'El obituario dice que, el día antes de morir, hablaba de una mesa en la convención de la ANA en Pittsburgh y de una serie de notas de 25 centavos con los motivos de los State Quarters. El homenaje de febrero de 2004, también en The E-Sylum, llama Lazy Deuce a su última serie terminada —sobre un billete de un banco nacional de Wisconsin— y dice que el diseño de su quarter de Florida había sido finalista; esa serie fraccionaria no llegó a hacerse. El texto no confirma un encargo del United States Mint: solo dice que su médico le había autorizado viajar a la ceca si lo seleccionaban. John y Nancy Wilson lo llamaron «the Mozart of Money Artists»; esta ficha no convierte ese apodo en un título oficial. No es J. S. G. Boggs: The E-Sylum de 2025 separa a los dos cuando una casa de subastas los confundió. Otra estampa suya, el Deuce de 2001 con retrato de Robert E. Lee, está numerada 178 de 250. El 12/250 de esta hoja es la misma clase de numeración de edición, no un censo del certificado de plata de 1896.',
-        en: 'The obituary says that, the day before he died, he was talking about a table at the ANA convention in Pittsburgh and about a series of 25-cent notes using the state-quarter motifs. The February 2004 tribute, also in The E-Sylum, calls the Lazy Deuce his last finished series — based on a Wisconsin national-bank note — and says his Florida quarter design had been a finalist; the fractional series was never made. The text does not confirm a United States Mint commission: it only says his doctor had cleared him to travel to the Mint if he were selected. John and Nancy Wilson called him “the Mozart of Money Artists”; this record does not turn that nickname into an official title. He is not J. S. G. Boggs: a 2025 issue of The E-Sylum separates the two money artists after an auction house confused them. Another of his prints, the 2001 Deuce with a portrait of Robert E. Lee, is numbered 178 of 250. The 12/250 on this sheet is the same kind of edition number, not a census of the 1896 silver certificate.',
+        es: 'El homenaje del 8 de febrero de 2004 fue un almuerzo en el Gator Trace Country Club. Nancy Tenure Prusmack llevó el acto, con fotografías y objetos que él había hecho, y los padres hablaron. Estuvieron el Treasure Coast Coin Club, la ANA, FUN, el Ocala Coin Club, el Fractional Currency Collectors Board y la Society of Paper Money. En la tienda de cómics de Fort Pierce lo llamaban Monster Man. En la conversación del día anterior hablaba de una mesa en la ANA de Pittsburgh, con Brenda Bishop, de la feria del 50.º aniversario de FUN y de otra tanda de notas de 25 centavos con los state quarters. La de Florida usaría un diseño suyo que había sido finalista y no salió elegido. Mencionó un posible trabajo para la United States Mint; el médico solo le había autorizado viajar si lo seleccionaban.',
+        en: 'The tribute of 8 February 2004 was a lunch at the Gator Trace Country Club. Nancy Tenure Prusmack led it, with photographs and objects he had made, and his parents spoke. The Treasure Coast Coin Club, the ANA, FUN, the Ocala Coin Club, the Fractional Currency Collectors Board, and the Society of Paper Money were there. At a Fort Pierce comic shop he was called the Monster Man. In the conversation the day before, he was talking about a table at the ANA in Pittsburgh, with Brenda Bishop, about the FUN 50th-anniversary show, and about another run of 25-cent notes with the state-quarter motifs. The Florida note would use a design of his that had been a finalist and was not chosen. He mentioned possible work for the United States Mint; his doctor had cleared him to travel only if he were selected.',
+      },
+      {
+        es: 'En money-art.com, captura del 6 de diciembre de 2004, hacía «Money Art» desde 1997: pluma y tinta, luego impreso y firmado, a veces hasta 300 horas en una nota. Mandaba un ejemplar de cada nota terminada a la U.S. Copyright Office. Nombra como clientes a Mary Ellen Withrow y a Philip Diehl, director de la United States Mint, y describe las notas como de una sola cara y, por lo general, más grandes, con su firma en el cargo de secretario del Tesoro, un signo de copyright, el teléfono como serial o la frase «Bureau of Engraving and Prusmack». DesignObserver sitúa a Withrow entre los lectores del Bureau of Engraving and Printing y las estampas en ediciones de 250. Esas frases no miden esta hoja.',
+        en: 'On money-art.com, in the capture of 6 December 2004, he had been making “Money Art” since 1997: pen and ink, then printed and signed, sometimes as many as 300 hours on one note. He sent a sample of each finished note to the U.S. Copyright Office. The site names Mary Ellen Withrow and Philip Diehl, Director of the United States Mint, as customers, and describes the notes as one-sided and usually larger, with his signature in the office of Secretary of the Treasury, a copyright mark, his phone number as the serial, or the phrase “Bureau of Engraving and Prusmack.” DesignObserver places Withrow among his readers at the Bureau of Engraving and Printing and the prints in editions of 250. Those sentences do not measure this sheet.',
+      },
+      {
+        es: 'El obituario separa reproducciones de papel antiguo, billetes de bancos de otra época y dinero de diseño propio. Numismatic News, en noviembre de 2002, lo llama «artmatist» y menciona cinco Money Masterpieces en el Hi-Five Prestige Edition. La misma captura anuncia los Statehood Fractionals de 2003 y un Frontier Series, y dice que la serie de state quarters se completaría. Los Wilson llaman Lazy Deuce a la última serie que él terminó, sobre un 2 dólares de un banco nacional de Wisconsin de su colección; en junio de 2025 citan la nota del La Crosse, serial 22, usada en varias ciudades que no nombran, y esa carta no es la procedencia de esta estampa. El Deuce de 2001, número 178 de 250, con Robert E. Lee, recuerda la convención de la ANA en Atlanta. The E-Sylum cita una cápsula PCGS Superb Gem New 67PPQ que no es esta hoja, y separa a Prusmack de J. S. G. Boggs. John y Nancy Wilson lo llamaron «the Mozart of Money Artists»; DesignObserver escribe «Mozart of Money Art». No es un título oficial. Esas otras estampas no están en esta colección.',
+        en: 'The obituary separates reproductions of antique paper, notes of banks from another era, and money of his own design. Numismatic News, in November 2002, calls him an “artmatist” and mentions five Money Masterpieces in the Hi-Five Prestige Edition. The same capture advertises the 2003 Statehood Fractionals and a Frontier Series, and says the state-quarter series would be completed. The Wilsons call the Lazy Deuce the last series he finished, after a $2 national-bank note from Wisconsin in their collection; in June 2025 they cite their La Crosse note, serial 22, used for several cities they do not name, and that letter is not the source of this print. The 2001 Deuce, number 178 of 250, with Robert E. Lee, marks the ANA convention in Atlanta. The E-Sylum cites a PCGS holder labeled Superb Gem New 67PPQ that is not this sheet, and separates Prusmack from J. S. G. Boggs. John and Nancy Wilson called him “the Mozart of Money Artists”; DesignObserver writes “Mozart of Money Art.” It is not an official title. Those other prints are not in this collection.',
       },
     ],
     frontCaption: {
@@ -9064,8 +9072,8 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
       en: 'The back of the sheet was not photographed.',
     },
     scarcity: {
-      es: 'El número 12 queda en la franja baja de una edición de 250. Esa fracción es una declaración del artista sobre la hoja, no una rareza de tipo del certificado de 1896. Otra estampa de Prusmack, el Deuce de 2001, está numerada 178 de 250 (The E-Sylum, 2025). Esta ficha no publica cuántas de las 250 sobreviven.',
-      en: 'Number 12 sits in the low band of an edition of 250. That fraction is the artist’s statement about the sheet, not a type rarity of the 1896 certificate. Another Prusmack print, the 2001 Deuce, is numbered 178 of 250 (The E-Sylum, 2025). This record does not publish how many of the 250 survive.',
+      es: 'El número 12 queda en la franja baja de una edición de 250. Esa fracción es una declaración del artista sobre la hoja, no una rareza de tipo del certificado de 1896. Esta ficha no publica cuántas de las 250 sobreviven.',
+      en: 'Number 12 sits in the low band of an edition of 250. That fraction is the artist’s statement about the sheet, not a type rarity of the 1896 certificate. This record does not publish how many of the 250 survive.',
     },
     population: {
       es: 'No hay certificado PMG o PCGS en esta hoja. No se ha verificado un censo de la edición.',
@@ -9102,27 +9110,19 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         href: 'https://www.coinbooks.org/esylum_v07n05a01.html',
         es: 'The E-Sylum — vol. 7, n.º 5, 1 de febrero de 2004',
         en: 'The E-Sylum — vol. 7, no. 5, 1 February 2004',
-        note: {
-          es: 'Nota de John y Nancy Wilson y obituario de Fort Pierce: muerte el 26 de enero de 2004; reproducciones a mano; presidente del Treasure Coast Coin Club seis años; mesa prevista en la ANA de Pittsburgh; fractionals de state quarters no hechos; el médico autorizó un viaje a la ceca solo si lo seleccionaban.',
-          en: 'Note from John and Nancy Wilson and the Fort Pierce obituary: death on 26 January 2004; hand reproductions; six years as president of the Treasure Coast Coin Club; a planned ANA Pittsburgh table; state-quarter fractionals not made; his doctor cleared a Mint trip only if he were selected.',
-        },
       },
       {
         href: 'https://www.coinbooks.org/esylum_v07n06a01.html',
         es: 'The E-Sylum — vol. 7, n.º 6, 8 de febrero de 2004',
         en: 'The E-Sylum — vol. 7, no. 6, 8 February 2004',
-        note: {
-          es: 'Homenaje de los Wilson: Lazy Deuce, última serie terminada, sobre una nota de banco nacional de Wisconsin; el diseño del quarter de Florida había sido finalista.',
-          en: 'Tribute from the Wilsons: the Lazy Deuce, his last finished series, based on a Wisconsin national-bank note; his Florida quarter design had been a finalist.',
-        },
       },
       {
         href: 'https://www.coinbooks.org/esylum_v05n46a20.html',
         es: 'The E-Sylum — vol. 5, n.º 46, 17 de noviembre de 2002',
         en: 'The E-Sylum — vol. 5, no. 46, 17 November 2002',
         note: {
-          es: 'Numismatic News del 19 de noviembre de 2002: se llamaba «artmatist» y reunió cinco Money Masterpieces en el Hi-Five Prestige Edition. Esta ficha no describe esas cinco piezas.',
-          en: 'Numismatic News of 19 November 2002: he called himself an “artmatist” and gathered five Money Masterpieces into the Hi-Five Prestige Edition. This record does not describe those five pieces.',
+          es: 'Esta ficha no describe esas cinco piezas.',
+          en: 'This record does not describe those five pieces.',
         },
       },
       {
@@ -9130,18 +9130,38 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         es: 'DesignObserver — Drawn to Currency',
         en: 'DesignObserver — Drawn to Currency',
         note: {
-          es: 'Años 1962–2004; dibujo a tinta; ediciones impresas de 250; ferias de moneda; lectores en el BEP, entre ellos Mary Ellen Withrow.',
-          en: 'Years 1962–2004; ink drawing; printed editions of 250; coin shows; readers at the BEP, among them Mary Ellen Withrow.',
+          es: 'No se republican los precios de esa página.',
+          en: 'Prices on that page are not republished.',
         },
       },
       {
         href: 'https://coinbooks.org/v28/esylum_v28n15a26.html',
         es: 'The E-Sylum — vol. 28, n.º 15, 13 de abril de 2025',
         en: 'The E-Sylum — vol. 28, no. 15, 13 April 2025',
+      },
+      {
+        href: 'https://www.legacy.com/us/obituaries/palmbeachpost/name/tim-prusmack-obituary?id=51235146',
+        es: 'The Palm Beach Post — aviso, 29 de enero de 2004',
+        en: 'The Palm Beach Post — notice, 29 January 2004',
         note: {
-          es: 'Deuce de 2001, número 178 de 250, con retrato de Robert E. Lee, a partir del 2 dólares de 1886. Separa a Prusmack de J. S. G. Boggs. No fecha esta hoja Educational.',
-          en: 'The 2001 Deuce, number 178 of 250, with a portrait of Robert E. Lee, after the 1886 $2. It separates Prusmack from J. S. G. Boggs. It does not date this Educational sheet.',
+          es: 'Funeraria Yates, Port St. Lucie.',
+          en: 'Yates Funeral Home, Port St. Lucie.',
         },
+      },
+      {
+        href: 'https://www.nndb.com/people/250/000030160/',
+        es: 'NNDB — Tim Prusmack',
+        en: 'NNDB — Tim Prusmack',
+      },
+      {
+        href: 'https://web.archive.org/web/20041206053142/http://money-art.com:80/',
+        es: 'money-art.com — captura del Internet Archive, 6 de diciembre de 2004',
+        en: 'money-art.com — Internet Archive capture, 6 December 2004',
+      },
+      {
+        href: 'https://www.coinbooks.org/v28/esylum_v28n22.html',
+        es: 'The E-Sylum — vol. 28, n.º 22, 1 de junio de 2025',
+        en: 'The E-Sylum — vol. 28, no. 22, 1 June 2025',
       },
       {
         href: 'https://en.numista.com/207329',

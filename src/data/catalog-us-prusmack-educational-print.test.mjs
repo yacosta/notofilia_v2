@@ -65,7 +65,29 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
     assert.match(bio, /Mary Ellen Withrow/);
     assert.match(bio, /Lazy Deuce/);
     assert.match(bio, /178 de 250/);
-    assert.doesNotMatch(bio, /USD|euros?|precio|hammer|realized|estimate/i);
+    assert.match(bio, /Florence Syrewicz/);
+    assert.match(bio, /Ajon/);
+    assert.match(bio, /Cleary School for the Deaf/);
+    assert.match(bio, /campeón júnior de golf/);
+    assert.match(bio, /junior golf champion/);
+    assert.match(bio, /Gator Trace/);
+    assert.match(bio, /Monster Man/);
+    assert.match(bio, /300 horas/);
+    assert.match(bio, /300 hours/);
+    assert.match(bio, /Copyright Office/);
+    assert.match(bio, /Philip Diehl/);
+    assert.match(bio, /La Crosse/);
+    assert.match(bio, /serial 22/);
+    assert.match(bio, /Brenda Bishop/);
+    assert.match(bio, /Frontier Series/);
+    assert.match(bio, /67PPQ/);
+    assert.doesNotMatch(bio, /USD|euros?|precio|hammer|realized|estimate|\$10|\$2,?500/i);
+    assert.doesNotMatch(bio, /1 de septiembre|September 1|C\. ?W\. Post|gástrico|gastric bypass|Fr\. 379/i);
+    const unclaimed = (note.unclaimed ?? []).map((item) => `${item.es}\n${item.en}`).join('\n');
+    assert.match(bio, /no están en esta colección/);
+    assert.match(bio, /are not in this collection/);
+    assert.doesNotMatch(unclaimed, /300 horas/);
+    assert.doesNotMatch(bio, /SERIES OF 1897/);
     assert.equal(
       localizePath(note.path, 'en'),
       '/en/collection/united-states/tim-prusmack/educational-1-dollar-1896-print-12-250/',
@@ -94,15 +116,15 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(additions.at(-1)?.id, 'us-frn-1934a-hawaii-5-l69086875a');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
     assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'co-1980-10-pesos-oro-00000100');
-    assert.match(milestones[0]?.href ?? '', /10-pesos-oro-1980-00000100/);
-    assert.match(milestones[0]?.image ?? '', /10-pesos-oro-1980-00000100/);
+    assert.equal(milestones[0]?.holdingId, 'us-frn-1934a-hawaii-5-l69086875a');
+    assert.match(milestones[0]?.href ?? '', /5-dolares-hawaii-1934a/);
+    assert.match(milestones[0]?.image ?? '', /5-dollars-series-1934a-hawaii-l69086875a/);
     const prusmackCard = milestones.find((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250');
     assert.ok(prusmackCard);
     assert.match(prusmackCard.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
