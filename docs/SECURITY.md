@@ -25,6 +25,8 @@ Hosts in the policy:
 | `script-src`, `frame-src`, `connect-src` | `challenges.cloudflare.com` | Turnstile on contact and comments |
 | `script-src`, `frame-src` | `news.google.com` | Preferred-source button, loaded on click |
 | `connect-src`, `form-action` | `api.web3forms.com` | Contact form |
+| `script-src` | `web-vitals-script.leaderint.workers.dev` | Web Vitals library loaded by `/web-vitals-rum.js` |
+| `connect-src` | `rum-collector.leaderint.workers.dev` | Web Vitals beacons (path, user agent, metric, pageview id). No cookies. |
 | `font-src` | `'self'` | Fonts are self-hosted |
 
 `Permissions-Policy` disables camera, microphone, geolocation, payment, and USB. Identify uses a file input with `capture`, which this policy does not block.
