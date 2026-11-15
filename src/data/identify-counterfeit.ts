@@ -11,12 +11,6 @@ export function identifyCounterfeitPath(locale: Locale): string {
   return localizePath(IDENTIFY_COUNTERFEIT_PATH, locale);
 }
 
-// TODO(owner): On 2026-11-15 the Banco de la República pages still did not open.
-// Curl of the billetes hubs returned a Radware captcha, and
-// https://www.banrep.gov.co/es/video-conozca-elementos-seguridad-nuevos-billetes-colombianos
-// returned HTTP 403. Cite the genuine-note page only after the article itself is opened.
-// Do not invent a Colombia procedure for a suspected fake.
-
 export const identifyCounterfeitCopy = {
   es: {
     metaTitle: 'Cómo identificar un billete falso: guía paso a paso | Notofilia',
@@ -59,6 +53,11 @@ export const identifyCounterfeitCopy = {
     sourcesLead:
       'Estas páginas oficiales describen las mismas comprobaciones —filigrana a contraluz, hilo, tinta que cambia de color, tocar e inclinar—. No sustituyen la ficha del ejemplar.',
     sources: [
+      {
+        name: 'Banco de la República — Elementos de seguridad de los nuevos billetes',
+        href: 'https://www.banrep.gov.co/es/video-conozca-elementos-seguridad-nuevos-billetes-colombianos',
+        note: 'El Banco presenta ahí los elementos de seguridad de los billetes de la nueva familia.',
+      },
       {
         name: 'U.S. Currency Education Program — Security features',
         href: 'https://www.uscurrency.gov/educational-materials/training-course/security',
@@ -124,6 +123,11 @@ export const identifyCounterfeitCopy = {
     sourcesLead:
       'These official pages describe the same checks — a watermark held to the light, a security thread, colour-shifting ink, and feel, look, and tilt. They do not replace the record of a specific note.',
     sources: [
+      {
+        name: 'Banco de la República — Security elements of the new banknotes',
+        href: 'https://www.banrep.gov.co/es/video-conozca-elementos-seguridad-nuevos-billetes-colombianos',
+        note: 'The Bank presents the security elements of the new family of notes.',
+      },
       {
         name: 'U.S. Currency Education Program — Security features',
         href: 'https://www.uscurrency.gov/educational-materials/training-course/security',
