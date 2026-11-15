@@ -49,7 +49,14 @@ function exampleHref(example: GlossaryExample): string {
 }
 ---
 
-<Layout title={t.termTitle(term.title[locale])} description={metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.termTitle(term.title[locale])}
+  description={metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={article?.illustration?.image}
+  ogImageAlt={article?.illustration?.image ? illustrationAlt : undefined}
+>
   <Fragment slot="head">
     <script
       type="application/ld+json"

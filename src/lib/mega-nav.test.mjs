@@ -133,22 +133,22 @@ describe('mega-nav columns', () => {
 });
 
 describe('polymer submenu', () => {
-  it('nests China under Asia and does not keep a sibling China link', () => {
+  it('lists China and Malaysia directly because Asia has no hub', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
-    assert.match(polymer, /id: 'polimero-asia'/);
-    assert.match(polymer, /es: 'Asia'/);
+    assert.doesNotMatch(polymer, /id: 'polimero-asia'/);
+    assert.doesNotMatch(polymer, /es: 'Asia'/);
     assert.match(polymer, /id: 'polimero-china'/);
+    assert.match(polymer, /href: CHINA_PATH/);
     const chinaBlocks = polymer.split("id: 'polimero-china'");
     assert.equal(chinaBlocks.length, 2);
-    assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-china'/);
+    assert.match(polymer, /id: 'polimero-china'[\s\S]*?flag: 'cn'/);
     assert.match(polymer, /id: 'polimero-malasia'/);
     assert.match(polymer, /es: 'Malasia'/);
     assert.match(polymer, /en: 'Malaysia'/);
     assert.match(polymer, /href: POLIMERO_MALASIA_PATH/);
     const malaysiaBlocks = polymer.split("id: 'polimero-malasia'");
     assert.equal(malaysiaBlocks.length, 2);
-    assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-malasia'/);
     assert.match(polymer, /id: 'polimero-malasia'[\s\S]*?flag: 'my'/);
   });
 
@@ -195,20 +195,19 @@ describe('polymer submenu', () => {
     }
   });
 
-  it('keeps the Asia label visible and drops empty Europe and North America headings', () => {
+  it('drops unlinked Asia, Europe, and North America labels', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
-    assert.match(polymer, /id: 'polimero-asia',[\s\S]*?icon: 'asia'/);
-    assert.match(polymer, /expanded: true/);
+    assert.doesNotMatch(polymer, /id: 'polimero-asia'/);
+    assert.doesNotMatch(polymer, /es: 'Asia'/);
+    assert.doesNotMatch(polymer, /expanded: true/);
+    assert.doesNotMatch(polymer, /icon: 'asia'/);
     assert.doesNotMatch(polymer, /icon: 'europe'/);
     assert.doesNotMatch(polymer, /icon: 'north-america'/);
-    const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
-    assert.match(icons, /'asia'/);
-    assert.match(icons, /'europe'/);
-    assert.match(icons, /'north-america'/);
-    assert.match(icons, /icon === 'asia'/);
-    assert.match(icons, /icon === 'europe'/);
-    assert.match(icons, /icon === 'north-america'/);
+    for (const id of ['polimero-china', 'polimero-malasia', 'polimero-inglaterra', 'polimero-canada']) {
+      const block = polymer.split(`id: '${id}'`)[1]?.split(/id: '/)[0] ?? '';
+      assert.match(block, /href:/, `${id} must be a link, not an unlinked label`);
+    }
   });
 });
 

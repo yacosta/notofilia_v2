@@ -13,6 +13,8 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = seriesCopy[locale];
+const cover = polymerCountries[0];
+if (!cover) throw new Error('World polymer index has no country image to use as og:image');
 const pathname = polymerWorldPath(locale);
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -26,7 +28,14 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={cover.image}
+  ogImageAlt={cover.imageAlt[locale]}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
