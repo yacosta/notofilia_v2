@@ -259,6 +259,7 @@ export const additions: Holding[] = [
   { id: 'pr-nd-dos-almudes-vega-redonda', kind: 'coin', country: 'PR' },
   { id: 'pr-40-centavos-1896-pgv', kind: 'coin', country: 'PR' },
   { id: 'us-prusmack-educational-1-dolar-1896-12-250', kind: 'banknote', country: 'US' },
+  { id: 'co-1980-10-pesos-oro-00000100', kind: 'banknote', country: 'CO' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -443,6 +444,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'pr-nd-dos-almudes-vega-redonda' },
   { id: 'pr-40-centavos-1896-pgv' },
   { id: 'us-prusmack-educational-1-dolar-1896-12-250' },
+  { id: 'co-1980-10-pesos-oro-p407h' },
 ];
 
 export type CollectionStats = {

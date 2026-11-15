@@ -53,11 +53,11 @@ describe('Hacienda Vega Redonda tokens', () => {
     assert.equal(additions.at(-3)?.id, 'pr-nd-dos-almudes-vega-redonda');
     assert.equal(additions.at(-2)?.id, 'pr-40-centavos-1896-pgv');
     assert.equal(additions.at(-2)?.kind, 'coin');
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.equal(catalogAdditions.at(-3)?.id, 'pr-nd-dos-almudes-vega-redonda');
     assert.equal(catalogAdditions.at(-2)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     assert.match(esPage, /PuertoRicoVegaRedondaPage locale="es"/);
     assert.match(enPage, /PuertoRicoVegaRedondaPage locale="en"/);
     assert.match(tokenPage, /id="main-content"/);

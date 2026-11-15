@@ -94,14 +94,19 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
+    assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.match(milestones[0]?.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
-    assert.match(milestones[0]?.image ?? '', /prusmack-1-dollar-1896-history-instructing-youth-print-12-250/);
+    assert.equal(milestones[0]?.holdingId, 'co-1980-10-pesos-oro-00000100');
+    assert.match(milestones[0]?.href ?? '', /10-pesos-oro-1980-00000100/);
+    assert.match(milestones[0]?.image ?? '', /10-pesos-oro-1980-00000100/);
+    const prusmackCard = milestones.find((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.ok(prusmackCard);
+    assert.match(prusmackCard.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
+    assert.match(prusmackCard.image ?? '', /prusmack-1-dollar-1896-history-instructing-youth-print-12-250/);
     const faq = seriesFaqs['united-states'].map((item) => `${item.question.es} ${item.answer.es}`).join('\n');
     assert.match(faq, /¿Quién fue Tim Prusmack\?/);
     assert.match(faq, /26 de enero de 2004/);

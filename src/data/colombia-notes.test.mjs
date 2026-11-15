@@ -91,8 +91,8 @@ describe('Colombia Dirección Liberal Nacional reconquest bond', () => {
     assert.match(note.description.en, /counterfoil/);
     assert.doesNotMatch(note.pick, /P#|Pick/);
     assert.doesNotMatch(note.scarcity.es, /R\d/);
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     const chapter = colombiaChapters.find((entry) => entry.id === 'bonos-politicos');
     assert.ok(chapter);
     assert.match(chapter.body.es, /N\.º 2380/);
@@ -457,8 +457,8 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1976-2-pesos-oro-00194674'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1976-2-pesos-oro-p413b'), true);
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
   });
 
   it('lists the 1976 2 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1058,6 +1058,83 @@ describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
   });
 });
 
+describe('Colombia BanRep 10 pesos oro 1980 Serie AZ Imprenta de Billetes', () => {
+  it('is a distinct Pick 407h Serie AZ note with low serial 00000100, not the 1979 407g or asterisk replacement', () => {
+    const note = noteById('10-pesos-oro-1980-00000100');
+    const ordinary1979 = noteById('10-pesos-oro-1979');
+    const replacement1976 = noteById('10-pesos-oro-1976');
+    assert.ok(note);
+    assert.ok(ordinary1979);
+    assert.ok(replacement1976);
+    assert.equal(note.chapterId, 'banco-de-la-republica');
+    assert.equal(note.pick, 'P# 407h · TBB B950o');
+    assert.equal(note.serial, '00000100');
+    assert.notEqual(note.serial, ordinary1979.serial);
+    assert.notEqual(note.serial, replacement1976.serial);
+    assert.notEqual(note.pick, ordinary1979.pick);
+    assert.notEqual(note.path, ordinary1979.path);
+    assert.equal(notePieces(note).length, 1);
+    assert.doesNotMatch(note.printed.es, /BG#\s*\d+/);
+    assert.match(note.printed.es, /no publica un BG# adivinado/);
+    assert.match(note.printed.es, /65,45 millones/);
+    assert.match(note.printed.es, /Serie AZ/);
+    assert.match(note.printed.es, /Cód\. 208/);
+    assert.match(note.printed.en, /Cód\. 208/);
+    assert.match(note.printed.es, /Hernández 207/);
+    assert.match(note.printed.es, /Hernández 209/);
+    assert.match(note.description.es, /No hay asterisco/);
+    assert.match(note.description.es, /sin atribuir reposición/);
+    assert.match(note.description.en, /without calling it a replacement/);
+    assert.match(note.description.es, /00000100/);
+    assert.match(note.description.es, /serial 00000100 es bajo/);
+    assert.match(note.scarcity.es, /23 %/);
+    assert.match(note.scarcity.es, /No se publican columnas de precios/);
+    assert.equal(
+      note.sources.some((source) => source.href === 'https://en.numista.com/L100183'),
+      true,
+    );
+    const hernandez = note.sources.find((source) => source.href === 'https://en.numista.com/L100183');
+    assert.ok(hernandez);
+    assert.ok(hernandez.note);
+    assert.match(hernandez.note.es, /Hernández 208/);
+    assert.match(hernandez.note.en, /Hernández 208/);
+    const publicCopy = [
+      note.printed.es,
+      note.printed.en,
+      note.description.es,
+      note.description.en,
+      note.scarcity.es,
+      note.scarcity.en,
+      ...note.sources.flatMap((source) => [source.es, source.en, source.note?.es, source.note?.en]),
+    ].join('\n');
+    assert.doesNotMatch(publicCopy, /US\s*\$/);
+    assert.doesNotMatch(publicCopy, /\$\s*\d/);
+    assert.equal(additions.some((row) => row.id === 'co-1980-10-pesos-oro-00000100'), true);
+    assert.equal(catalogAdditions.some((row) => row.id === 'co-1980-10-pesos-oro-p407h'), true);
+  });
+
+  it('lists the 1980 Serie AZ 10 pesos oro on the BanRep series page and in chapter copy', () => {
+    const chapter = colombiaChapters.find((entry) => entry.id === 'banco-de-la-republica');
+    assert.ok(chapter);
+    assert.match(chapter.body.es, /10 pesos oro Serie AZ de 1980 \(Pick 407h\), serial bajo 00000100/);
+    assert.match(chapter.body.en, /1980 Series AZ 10 pesos oro \(Pick 407h\), low serial 00000100/);
+    assert.match(seriesCopy.es.intro.join(' '), /10 pesos oro Serie AZ de 1980 \(Pick 407h\), serial bajo 00000100/);
+    assert.match(seriesCopy.en.intro.join(' '), /1980 Series AZ 10 pesos oro \(Pick 407h\), low serial 00000100/);
+    const cards = seriesCardsForChapter('banco-de-la-republica');
+    const holding = cards.filter((card) => card.note.id === '10-pesos-oro-1980-00000100');
+    assert.equal(holding.length, 1);
+    assert.equal(holding[0].piece.serial, '00000100');
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'es'),
+      '/coleccion/colombia/10-pesos-oro-1980-00000100/',
+    );
+    assert.equal(
+      seriesCardHref(holding[0].note, holding[0].piece, 'en'),
+      '/en/collection/colombia/10-pesos-oro-1980-00000100/',
+    );
+  });
+});
+
 describe('Colombia BanRep 50 pesos oro 1974 Thomas de la Rue', () => {
   it('is a distinct Pick 414a circulation note with serial 2467354822, not the 1984 IBB type', () => {
     const note = noteById('50-pesos-oro-1974');
@@ -1235,8 +1312,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.doesNotMatch(publicCopy, /\$\s*\d/);
     assert.equal(additions.some((row) => row.id === 'co-1992-5000-pesos-oro-46772124'), true);
     assert.equal(catalogAdditions.some((row) => row.id === 'co-1992-5000-pesos-oro-p436a-b974b'), true);
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
   });
 
   it('lists the 1992 5.000 pesos oro on the BanRep series page and in chapter copy', () => {
@@ -1745,8 +1822,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.equal(note.images.composite.includes('r35555693-composite'), true);
     assert.equal(note.images.width, 1672);
     assert.equal(note.images.height, 941);
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     const publicCopy = [
       note.lead.es,
       note.lead.en,
@@ -1808,7 +1885,7 @@ describe('Banco de la República denomination headings', () => {
     const expected = [
       ['banrep-2-pesos', 'Billetes de 2 pesos (1923 - 1983)', '2 peso notes (1923 - 1983)', 4],
       ['banrep-5-pesos', 'Billetes de 5 pesos (1923 - 1981)', '5 peso notes (1923 - 1981)', 5],
-      ['banrep-10-pesos', 'Billetes de 10 pesos (1923 - 1980)', '10 peso notes (1923 - 1980)', 3],
+      ['banrep-10-pesos', 'Billetes de 10 pesos (1923 - 1980)', '10 peso notes (1923 - 1980)', 4],
       ['banrep-20-pesos', 'Billetes de 20 pesos (1927 - 1983)', '20 peso notes (1927 - 1983)', 1],
       ['banrep-50-pesos', 'Billetes de 50 pesos (1923 - 1986)', '50 peso notes (1923 - 1986)', 2],
       ['banrep-100-pesos', 'Billetes de 100 pesos (1923 - 1991)', '100 peso notes (1923 - 1991)', 2],
@@ -1881,8 +1958,8 @@ describe('Colombia Gaitán 1,000 pesos, 23 November 2010 (Pick 456m)', () => {
       localizePath('/coleccion/colombia/1000-pesos-2010/', 'en'),
       '/en/collection/colombia/1000-pesos-2010/',
     );
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     const thousand = seriesCardGroupsForChapter('banco-de-la-republica').find(
       (group) => group.id === 'banrep-1000-pesos',
     );
@@ -1925,8 +2002,8 @@ describe('Colombia Gaitán 1,000 pesos, 18 August 2009 (Pick 456l)', () => {
       localizePath('/coleccion/colombia/1000-pesos-2009/', 'en'),
       '/en/collection/colombia/1000-pesos-2009/',
     );
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     const prior = noteById('1000-pesos-2010');
     assert.ok(prior);
     assert.notEqual(prior.serial, note.serial);
@@ -1964,8 +2041,8 @@ describe('Colombia Santander 2,000 pesos, 19 August 2009 (Pick 457k)', () => {
       localizePath('/coleccion/colombia/2000-pesos-2009/', 'en'),
       '/en/collection/colombia/2000-pesos-2009/',
     );
-    assert.equal(additions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
     const twoThousand = seriesCardGroupsForChapter('banco-de-la-republica').find(
       (group) => group.id === 'banrep-2000-pesos',
     );
