@@ -133,15 +133,16 @@
       }
     ],
     "image": "/uploads/fidel-castro-billete-mil-pesos-gaitan.jpg",
-    "imageWidth": 1600,
+    "imageWidth": 1200,
     "imageHeight": 900,
+    "imageFit": "contain",
     "imageAlt": {
-      "es": "Anverso del billete de 1.000 pesos del Banco de la República con el retrato de Jorge Eliécer Gaitán, la multitud y el serial 69394998, fecha 16 de agosto de 2000",
-      "en": "Face of the Banco de la República 1,000-peso note with the portrait of Jorge Eliécer Gaitán, the crowd, and serial 69394998, dated 16 August 2000"
+      "es": "Detalle del grabado del billete de 1.000 pesos: Jorge Eliécer Gaitán con el brazo en alto ante la multitud y la firma Gaitán",
+      "en": "Detail from the 1,000-peso note engraving: Jorge Eliécer Gaitán with raised arm before the crowd and the Gaitán signature"
     },
     "caption": {
-      "es": "El mil pesos de Gaitán de la colección, serial 69394998. El encuentro de 1948 está documentado. El retrato no es Fidel Castro.",
-      "en": "The collection’s Gaitán one-thousand, serial 69394998. The 1948 meeting is documented. The portrait is not Fidel Castro."
+      "es": "Detalle del mil pesos de Gaitán. El encuentro de 1948 está documentado. El retrato no es Fidel Castro.",
+      "en": "Detail from the Gaitán one-thousand. The 1948 meeting is documented. The portrait is not Fidel Castro."
     },
     "claim": {
       "kindEs": "Emisión de catálogo",
