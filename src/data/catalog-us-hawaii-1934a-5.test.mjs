@@ -20,11 +20,12 @@ const noteEnd = data.indexOf("id: '10-dolares-serie-1934a-hawaii'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1934A HAWAII $5 Fr. 2302', () => {
-  it('records Fr. 2302 / P#38 with serial L68013147A in the L–A block', () => {
+  it('records Fr. 2302 / P#38 with serials L68013147A and L69086875A in the L–A block', () => {
     assert.match(data, /id: '5-dolares-serie-1934a-hawaii'/);
     assert.match(note, /chapterId: 'us-frb'/);
     assert.match(note, /pick: 'P#38 · Fr\. 2302'/);
     assert.match(note, /serial: 'L68013147A'/);
+    assert.match(note, /serial: 'L69086875A'/);
     assert.doesNotMatch(note, /cert_number:/);
     assert.match(note, /William Alexander Julian/);
     assert.match(note, /Henry Morgenthau Jr\./);
@@ -44,15 +45,22 @@ describe('US Series 1934A HAWAII $5 Fr. 2302', () => {
     assert.match(note, /face plate C79/);
     assert.match(note, /plancha de reverso 1467/);
     assert.match(note, /back plate 1467/);
+    assert.match(note, /plancha de anverso 91/);
+    assert.match(note, /face plate 91/);
+    assert.match(note, /plancha de reverso 1519/);
+    assert.match(note, /back plate 1519/);
     assert.match(note, /N#202416/);
-    assert.match(note, /no es un reemplazo con estrella/i);
+    assert.match(note, /reemplazo con estrella/i);
     assert.match(note, /not a star replacement/i);
+    assert.match(note, /ninguno con estrella/);
+    assert.match(note, /neither a star/);
     assert.match(note, /Sin encapsular/);
-    assert.match(note, /Ungraded/);
+    assert.match(note, /Ungraded|Unslabbed/);
     assert.match(note, /en: '\$5 · HAWAII · Series 1934 A'/);
     assert.match(note, /es: '5 dólares · HAWAII · Serie 1934 A'/);
     assert.match(holdings, /us-frn-1934a-hawaii-5-l68013147a/);
     assert.match(holdings, /id: 'us-frn-1934a-hawaii-5-l68013147a', kind: 'banknote', country: 'US'/);
+    assert.match(holdings, /id: 'us-frn-1934a-hawaii-5-l69086875a', kind: 'banknote', country: 'US'/);
     assert.match(holdings, /us-frn-1934a-hawaii-fr2302/);
   });
 
@@ -69,14 +77,17 @@ describe('US Series 1934A HAWAII $5 Fr. 2302', () => {
     assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l68013147a-composite\.jpg/);
     assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l68013147a-front\.jpg/);
     assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l68013147a-back\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-composite\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-front\.jpg/);
+    assert.match(note, /united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-back\.jpg/);
   });
 
   it('names the holding in the Federal Reserve chapter, series inventory, and FAQ', () => {
-    assert.match(data, /5 dólares HAWAII serie 1934 A \(P#38; Fr\. 2302\), serial L68013147A/);
-    assert.match(data, /Series 1934A HAWAII \$5 \(P#38; Fr\. 2302\), serial L68013147A/);
+    assert.match(data, /5 dólares HAWAII serie 1934 A \(P#38; Fr\. 2302\), seriales L68013147A y L69086875A/);
+    assert.match(data, /Series 1934A HAWAII \$5 \(P#38; Fr\. 2302\), serials L68013147A and L69086875A/);
     assert.match(faq, /¿Qué es el 5 dólares HAWAII serie 1934 A\?/);
     assert.match(faq, /What is the Series 1934A HAWAII \$5\?/);
-    assert.match(faq, /serial L68013147A/);
+    assert.match(faq, /L69086875A/);
     assert.match(note, /ni el 10 dólares HAWAII serie 1934 A, serial L45104670B/);
     assert.match(note, /nor the Series 1934A HAWAII \$20, serial L86654132A/);
     assert.match(note, /No es el 1 dólar HAWAII serie 1935 A, serial S40499058C/);

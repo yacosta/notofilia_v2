@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T04:01:58.317Z",
+  "generatedAt": "2026-11-15T05:02:31.507Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5162,6 +5162,45 @@
       "title": {
         "es": "5 dólares · HAWAII · Serie 1934 A",
         "en": "$5 · HAWAII · Series 1934 A"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1934a-hawaii-l69086875a",
+      "face": "front",
+      "hash": "68cacaad298eda92",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-hawaii-1934a/",
+      "pick": "P#38 · Fr. 2302",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-composite.jpg",
+      "title": {
+        "es": "5 dólares · HAWAII · Serie 1934 A · L69086875A",
+        "en": "$5 · HAWAII · Series 1934 A · L69086875A"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1934a-hawaii-l69086875a",
+      "face": "front",
+      "hash": "55b66eaaaa8ad52b",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-hawaii-1934a/",
+      "pick": "P#38 · Fr. 2302",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-front.jpg",
+      "title": {
+        "es": "5 dólares · HAWAII · Serie 1934 A · L69086875A",
+        "en": "$5 · HAWAII · Series 1934 A · L69086875A"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1934a-hawaii-l69086875a",
+      "face": "back",
+      "hash": "56a9d48e8a3ab08e",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-hawaii-1934a/",
+      "pick": "P#38 · Fr. 2302",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-5-dollars-series-1934a-hawaii-l69086875a-back.jpg",
+      "title": {
+        "es": "5 dólares · HAWAII · Serie 1934 A · L69086875A",
+        "en": "$5 · HAWAII · Series 1934 A · L69086875A"
       }
     },
     {
