@@ -55,9 +55,9 @@ describe('editorial SEO helpers', () => {
     assert.equal(article.slugEn, 'fidel-castro-on-colombian-1000-peso-note');
     assert.equal(article.title.es, 'Fidel Castro en el mil pesos de Gaitán');
     assert.equal(article.image, '/uploads/fidel-castro-billete-mil-pesos-gaitan.jpg');
-    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageWidth, 1200);
     assert.equal(article.imageHeight, 900);
-    assert.equal(article.imageFit, undefined);
+    assert.equal(article.imageFit, 'contain');
     assert.equal(
       existsSync(new URL('../../public/uploads/fidel-castro-billete-mil-pesos-gaitan.jpg', import.meta.url)),
       true,
@@ -72,13 +72,14 @@ describe('editorial SEO helpers', () => {
     );
     assert.equal(
       article.imageAlt.es,
-      'Anverso del billete de 1.000 pesos del Banco de la República con el retrato de Jorge Eliécer Gaitán, la multitud y el serial 69394998, fecha 16 de agosto de 2000',
+      'Detalle del grabado del billete de 1.000 pesos: Jorge Eliécer Gaitán con el brazo en alto ante la multitud y la firma Gaitán',
     );
     assert.equal(
       article.imageAlt.en,
-      'Face of the Banco de la República 1,000-peso note with the portrait of Jorge Eliécer Gaitán, the crowd, and serial 69394998, dated 16 August 2000',
+      'Detail from the 1,000-peso note engraving: Jorge Eliécer Gaitán with raised arm before the crowd and the Gaitán signature',
     );
-    assert.match(article.caption.es, /serial 69394998/);
+    assert.match(article.caption.es, /Detalle del mil pesos de Gaitán/);
+    assert.doesNotMatch(article.caption.es, /serial 69394998/);
     assert.match(article.image, /fidel-castro-billete-mil-pesos-gaitan/);
     assert.ok(article.primarySources?.length >= 8);
     const sourceUrls = article.primarySources.map((source) => source.url).join(' ');
