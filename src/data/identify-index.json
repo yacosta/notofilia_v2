@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T05:02:31.507Z",
+  "generatedAt": "2026-11-15T14:37:08.412Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -8,7 +8,7 @@
       "face": "front",
       "hash": "006f3b00001d1700",
       "kind": "banknote",
-      "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
+      "path": "/coleccion/polimero-mundial/canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
       "image": "/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-composite.jpg",
       "title": {
@@ -21,7 +21,7 @@
       "face": "front",
       "hash": "009e1b2b291b5200",
       "kind": "banknote",
-      "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
+      "path": "/coleccion/polimero-mundial/canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
       "image": "/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-front.jpg",
       "title": {
@@ -34,7 +34,7 @@
       "face": "back",
       "hash": "002d4b3733312f00",
       "kind": "banknote",
-      "path": "/coleccion/polimero-mundial/Canada/5-dolares-laurier/",
+      "path": "/coleccion/polimero-mundial/canada/5-dolares-laurier/",
       "pick": "P#106b · Charlton BC-69",
       "image": "/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-back.jpg",
       "title": {
@@ -6664,7 +6664,7 @@
       "face": "front",
       "hash": "080c0e262a3a1c08",
       "kind": "coin",
-      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/",
+      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/",
       "pick": "",
       "image": "/images/catalog/colombia/colombia-manzano-farming-co-10-1901-front.png",
       "title": {
@@ -6677,7 +6677,7 @@
       "face": "front",
       "hash": "006173d552376100",
       "kind": "coin",
-      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/",
+      "path": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/",
       "pick": "",
       "image": "/images/catalog/colombia/colombia-manzano-farming-co-10-1901-composite.png",
       "title": {

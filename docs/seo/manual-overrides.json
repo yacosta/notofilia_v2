@@ -37,11 +37,20 @@
     "/en/identificar/": "/en/search/",
     "/coleccion/moneda-colonial-espanola/1-escudo-carlos-iv-1802/": "/coleccion/colombia-numismatica/1-escudo-bogota-1802-nr-jj/",
     "/coleccion/moneda-colonial-espanola/2-escudos-carlos-iv-1791/": "/coleccion/colombia-numismatica/2-escudos-popayan-1791-p-sf/",
-    "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/",
-    "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/",
-    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/",
+    "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/",
+    "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/",
+    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/",
     "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/",
     "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/",
-    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/"
+    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/",
+    "/coleccion/polimero-mundial/Canada/": "/coleccion/polimero-mundial/canada/",
+    "/coleccion/polimero-mundial/Canada/5-dolares-laurier/": "/coleccion/polimero-mundial/canada/5-dolares-laurier/",
+    "/en/collection/world-polymer/Canada/": "/en/collection/world-polymer/canada/",
+    "/en/collection/world-polymer/Canada/5-dollars-laurier/": "/en/collection/world-polymer/canada/5-dollars-laurier/",
+    "/en/coleccion/polimero-mundial/Canada/": "/en/collection/world-polymer/canada/",
+    "/en/coleccion/polimero-mundial/Canada/5-dolares-laurier/": "/en/collection/world-polymer/canada/5-dollars-laurier/",
+    "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/": "/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/",
+    "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/",
+    "/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/": "/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/"
   }
 }

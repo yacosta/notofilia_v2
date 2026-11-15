@@ -26,9 +26,13 @@ function hrefFor(node: NavNode) {
       const label = node[locale];
       const href = hrefFor(node);
       const panelId = `mega-branch-${node.id}`;
-      const nested = node.children && node.children.length > 0;
+      const nested = Boolean(node.children && node.children.length > 0);
+      const alwaysOpen = nested && Boolean(node.expanded);
       return (
-        <li class:list={['mega-tree-item', nested && 'has-branch']} data-mega-branch={nested ? '' : undefined}>
+        <li
+          class:list={['mega-tree-item', nested && 'has-branch', alwaysOpen && 'is-open']}
+          data-mega-branch={nested && !alwaysOpen ? '' : undefined}
+        >
           <div class="mega-tree-row">
             {href ? (
               <a class="mega-tree-label mega-tree-label--link" href={href}>
@@ -43,7 +47,7 @@ function hrefFor(node: NavNode) {
                 <span class="mega-tree-label-text">{label}</span>
               </span>
             )}
-            {nested && (
+            {nested && !alwaysOpen && (
               <button
                 type="button"
                 class="mega-item-toggle mega-tree-toggle"
@@ -58,7 +62,7 @@ function hrefFor(node: NavNode) {
             )}
           </div>
           {nested && (
-            <div class="mega-branch-panel" id={panelId} data-mega-panel hidden>
+            <div class="mega-branch-panel" id={panelId} data-mega-panel hidden={!alwaysOpen || undefined}>
               <Astro.self nodes={node.children!} locale={locale} openSubmenu={openSubmenu} depth={depth + 1} />
             </div>
           )}

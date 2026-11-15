@@ -151,14 +151,18 @@ export function piecePageMeta(input: {
   locale: Locale;
   country?: string;
   heading?: string;
+  /** Full document title when the heading is already the search title. */
+  documentTitle?: string;
   /** Federal Reserve district letter already stored on the record. */
   district?: string;
 }) {
   const parts = parsePieceTitleParts(input);
   const h1 = input.heading?.trim() || pieceH1(parts, input.locale);
-  const documentTitle = input.heading?.trim()
-    ? compressDocumentTitle(`${input.heading.trim()} · ${parts.country} | Notofilia`)
-    : pieceDocumentTitle(parts, input.locale, input.district);
+  const documentTitle = input.documentTitle?.trim()
+    ? compressDocumentTitle(input.documentTitle.trim())
+    : input.heading?.trim()
+      ? compressDocumentTitle(`${input.heading.trim()} · ${parts.country} | Notofilia`)
+      : pieceDocumentTitle(parts, input.locale, input.district);
   return {
     documentTitle,
     h1,

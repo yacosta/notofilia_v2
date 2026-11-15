@@ -174,7 +174,7 @@ const malaysiaRm5: GlossaryExample = {
 };
 
 const canada5: GlossaryExample = {
-  path: '/coleccion/polimero-mundial/Canada/5-dolares-laurier/',
+  path: '/coleccion/polimero-mundial/canada/5-dolares-laurier/',
   image: '/images/catalog/canada/canada-bank-of-canada-5-dollars-2013-laurier-hbm0828003-front.jpg',
   title: { es: '5 dólares · Laurier · 2013', en: '$5 · Laurier · 2013' },
   alt: {

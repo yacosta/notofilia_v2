@@ -91,6 +91,8 @@ export type NavNode = {
   layout?: 'horizontal';
   /** Individual banknote or coin. Omitted from the server-rendered header. */
   holding?: boolean;
+  /** Show children without a collapsed disclosure. Use when the label has no hub URL. */
+  expanded?: boolean;
   children?: NavNode[];
 };
 
@@ -386,6 +388,7 @@ export const megaNav: NavNode[] = [
             es: 'Asia',
             en: 'Asia',
             icon: 'asia',
+            expanded: true,
             children: [
               { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
               {
@@ -398,34 +401,18 @@ export const megaNav: NavNode[] = [
             ],
           },
           {
-            id: 'polimero-europa',
-            es: 'Europa',
-            en: 'Europe',
-            icon: 'europe',
-            children: [
-              {
-                id: 'polimero-inglaterra',
-                es: 'Inglaterra',
-                en: 'England',
-                href: POLIMERO_INGLATERRA_PATH,
-                flag: 'gb',
-              },
-            ],
+            id: 'polimero-inglaterra',
+            es: 'Inglaterra',
+            en: 'England',
+            href: POLIMERO_INGLATERRA_PATH,
+            flag: 'gb',
           },
           {
-            id: 'polimero-norteamerica',
-            es: 'América del Norte',
-            en: 'North America',
-            icon: 'north-america',
-            children: [
-              {
-                id: 'polimero-canada',
-                es: 'Canadá',
-                en: 'Canada',
-                href: POLIMERO_CANADA_PATH,
-                flag: 'ca',
-              },
-            ],
+            id: 'polimero-canada',
+            es: 'Canadá',
+            en: 'Canada',
+            href: POLIMERO_CANADA_PATH,
+            flag: 'ca',
           },
         ],
       },

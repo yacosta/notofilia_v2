@@ -120,7 +120,7 @@ const PATH_CONSTANTS = {
   POLIMERO_MUNDIAL_PATH: '/coleccion/polimero-mundial/',
   POLIMERO_MALASIA_PATH: '/coleccion/polimero-mundial/asia/malasia/',
   POLIMERO_INGLATERRA_PATH: '/coleccion/polimero-mundial/europa/inglaterra/',
-  POLIMERO_CANADA_PATH: '/coleccion/polimero-mundial/Canada/',
+  POLIMERO_CANADA_PATH: '/coleccion/polimero-mundial/canada/',
 };
 
 function resolvePathExpression(expr) {

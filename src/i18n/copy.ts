@@ -39,7 +39,9 @@ export const copy = {
     heroLead:
       'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, Colombia, los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
     heroLeadBefore:
-      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, China, ',
+      'Imágenes detalladas, referencias de catálogo e historias monetarias de Filipinas, ',
+    heroChinaAnchor: 'China',
+    heroLeadMiddle: ', ',
     heroColombiaAnchor: 'billetes de Colombia',
     heroLeadAfter: ', los Países Bajos, Estados Unidos, Puerto Rico y el mundo.',
     heroSecondary: 'Explorar la colección',
@@ -145,7 +147,9 @@ export const copy = {
     heroLead:
       'Detailed images, catalog references, and monetary histories from the Philippines, China, Colombia, the Netherlands, the United States, Puerto Rico, and beyond.',
     heroLeadBefore:
-      'Detailed images, catalog references, and monetary histories from the Philippines, China, ',
+      'Detailed images, catalog references, and monetary histories from the Philippines, ',
+    heroChinaAnchor: 'China',
+    heroLeadMiddle: ', ',
     heroColombiaAnchor: 'Colombian banknotes',
     heroLeadAfter: ', the Netherlands, the United States, Puerto Rico, and beyond.',
     heroSecondary: 'Explore the collection',

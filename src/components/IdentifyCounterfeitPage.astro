@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from './Breadcrumb.astro';
+import NewWindowHint from './NewWindowHint.astro';
 import { localizePath, type Locale } from '../lib/site';
 import { identifyCounterfeitCopy, identifyCounterfeitPath } from '../data/identify-counterfeit';
 import { identifyPath } from '../data/identify';
 import { glossaryTermHref } from '../data/glossary';
+import { ORG_ID, PERSON_ID, breadcrumbJsonLd } from '../lib/seo';
+import { absoluteUrl, speakableDirectAnswer } from '../lib/json-ld';
 
 interface Props {
   locale: Locale;
@@ -13,6 +16,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = identifyCounterfeitCopy[locale];
 const pathname = identifyCounterfeitPath(locale);
+const pageUrl = absoluteUrl(pathname);
 const terms = [
   { slug: 'filigrana', es: 'Filigrana', en: 'Watermark' },
   { slug: 'hilo-de-seguridad', es: 'Hilo de seguridad', en: 'Security thread' },
@@ -20,23 +24,76 @@ const terms = [
   { slug: 'tinta-ovi', es: 'Tinta OVI', en: 'OVI ink' },
   { slug: 'pmg-pcgs', es: 'PMG y PCGS', en: 'PMG and PCGS' },
 ];
+const crumbs = [
+  { href: localizePath('/', locale), label: t.home },
+  { href: identifyPath(locale), label: t.identifyNav },
+  { label: t.nav },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BlogPosting',
+      headline: t.title,
+      description: t.metaDescription,
+      datePublished: t.datePublished,
+      dateModified: t.dateModified,
+      inLanguage: locale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      author: { '@id': PERSON_ID },
+      reviewedBy: { '@id': PERSON_ID },
+      publisher: { '@id': ORG_ID },
+      citation: t.sources.map((source) => ({
+        '@type': 'CreativeWork',
+        name: source.name,
+        url: source.href,
+      })),
+      speakable: speakableDirectAnswer(),
+    },
+    breadcrumbJsonLd([
+      { name: t.home, item: '/' },
+      { name: t.identifyNav, item: identifyPath(locale) },
+      { name: t.nav, item: pathname },
+    ]),
+  ],
+};
 ---
 
 <Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
   <main id="main-content" tabindex="-1" class="bg-bg outline-none">
     <article class="mx-auto max-w-content px-[var(--page-gutter)] py-16 md:py-24">
-      <Breadcrumb
-        locale={locale}
-        items={[
-          { href: localizePath('/', locale), label: t.home },
-          { href: identifyPath(locale), label: t.identifyNav },
-          { label: t.nav },
-        ]}
-      />
+      <Breadcrumb locale={locale} items={crumbs} />
       <header class="mb-10 max-w-[46rem]">
         <h1 class="mb-4 mt-0 font-display text-[clamp(1.75rem,4vw,2.65rem)] font-normal leading-[1.12] text-cream">
           {t.title}
         </h1>
+        <p class="direct-answer">{t.directAnswer}</p>
+        <dl class="mb-4 mt-0 grid gap-1 font-sans text-[14px] text-muted">
+          <div class="flex flex-wrap gap-x-2">
+            <dt class="m-0">{t.publishedLabel}</dt>
+            <dd class="m-0">
+              <time datetime={t.datePublished}>{t.datePublishedDisplay}</time>
+            </dd>
+          </div>
+          <div class="flex flex-wrap gap-x-2">
+            <dt class="m-0">{t.modifiedLabel}</dt>
+            <dd class="m-0">
+              <time datetime={t.dateModified}>{t.dateModifiedDisplay}</time>
+            </dd>
+          </div>
+          <div class="flex flex-wrap gap-x-2">
+            <dt class="m-0">{t.reviewedBy}</dt>
+            <dd class="m-0">
+              <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={localizePath('/editorial/', locale)}>
+                {t.reviewer}
+              </a>
+            </dd>
+          </div>
+        </dl>
         <p class="m-0 text-[17px]/7 text-muted">{t.dek}</p>
       </header>
       <p class="mb-10 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{t.intro}</p>
@@ -58,18 +115,61 @@ const terms = [
         </ol>
       </section>
 
-      <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{t.toolLead}</p>
-      <p class="mb-8 mt-0 flex flex-wrap gap-x-6 gap-y-3 font-sans text-[16px]">
-        <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={identifyPath(locale)}>
-          {t.toolCta}
-        </a>
-        <a
-          class="text-gold-light underline decoration-line-strong hover:text-cream"
-          href={localizePath('/blog/como-identificar-billetes-falsos/', locale)}
-        >
-          {t.blogCta}
-        </a>
-      </p>
+      <section class="mb-12 max-w-[46rem]" aria-labelledby="counterfeit-sources">
+        <h2 id="counterfeit-sources" class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.sourcesTitle}
+        </h2>
+        <p class="mb-4 mt-0 text-[17px]/7 text-cream">{t.sourcesLead}</p>
+        <ul class="m-0 list-none p-0">
+          {
+            t.sources.map((source) => (
+              <li class="mb-3">
+                <a
+                  class="text-gold-light underline decoration-line-strong hover:text-cream"
+                  href={source.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {source.name}
+                  <NewWindowHint locale={locale} />
+                </a>
+                <p class="m-0 text-[15px]/6 text-cream-dim">{source.note}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="mb-12" aria-labelledby="counterfeit-explore">
+        <h2 id="counterfeit-explore" class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
+          {t.exploreTitle}
+        </h2>
+        <p class="mb-4 mt-0 max-w-[46rem] text-[17px]/7 text-cream">{t.toolLead}</p>
+        <ul class="m-0 list-none p-0 font-sans text-[16px]">
+          <li class="mb-2">
+            <a class="text-gold-light underline decoration-line-strong hover:text-cream" href={identifyPath(locale)}>
+              {t.toolCta}
+            </a>
+          </li>
+          <li class="mb-2">
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath('/blog/como-identificar-billetes-falsos/', locale)}
+            >
+              {t.blogCta}
+            </a>
+          </li>
+          <li class="mb-2">
+            <a
+              class="text-gold-light underline decoration-line-strong hover:text-cream"
+              href={localizePath(t.cataloguePath, locale)}
+            >
+              {t.catalogueCta}
+            </a>
+            <p class="m-0 text-[15px]/6 text-cream-dim">{t.catalogueNote}</p>
+          </li>
+        </ul>
+      </section>
 
       <p class="mb-3 mt-0 font-sans text-[14px] text-muted">{t.glossaryLead}</p>
       <ul class="mb-12 mt-0 flex list-none flex-wrap gap-x-4 gap-y-2 p-0 font-sans text-[15px]">
@@ -86,9 +186,9 @@ const terms = [
 
       <section class="max-w-[46rem]" aria-labelledby="counterfeit-limits">
         <h2 id="counterfeit-limits" class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">
-          {t.sourcesTitle}
+          {t.limitsTitle}
         </h2>
-        <p class="m-0 text-[17px]/7 text-cream">{t.sources}</p>
+        <p class="m-0 text-[17px]/7 text-cream">{t.limits}</p>
       </section>
     </article>
   </main>

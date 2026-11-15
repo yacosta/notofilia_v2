@@ -20,14 +20,14 @@ import {
 
 const esRoute = readFileSync(
   new URL(
-    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/index.astro',
+    '../pages/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/index.astro',
     import.meta.url,
   ),
   'utf8',
 );
 const enRoute = readFileSync(
   new URL(
-    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/index.astro',
+    '../pages/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/index.astro',
     import.meta.url,
   ),
   'utf8',
@@ -51,7 +51,7 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
       localizePath('/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/', 'es'),
       MANZANO_FARMING_PIECE_PATH,
     );
-    assert.match(MANZANO_FARMING_PIECE_PATH, /Manzano_10_1901\/$/);
+    assert.match(MANZANO_FARMING_PIECE_PATH, /manzano_10_1901\/$/);
     const oldEs = '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/';
     const oldEn = '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/';
     const oldLegacy = '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/';
@@ -70,7 +70,7 @@ describe('Manzano Farming Co. token of 10, 1901', () => {
     assert.equal(manzanoFarmingPieceIndex.title.es, manzanoFarmingPieceCopy.es.title);
     assert.equal(manzanoFarmingPieceIndex.title.en, manzanoFarmingPieceCopy.en.title);
     assert.equal(additions.find((row) => row.id === MANZANO_FARMING_PIECE_ID)?.kind, 'coin');
-    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
+    assert.equal(additions.at(-1)?.id, 'us-frn-1934a-hawaii-5-l69086875a');
     assert.equal(additions.at(-1)?.kind, 'banknote');
     assert.match(manzanoFarmingPieceNoSerialReason, /No serial is inscribed/);
   });

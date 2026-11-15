@@ -16,6 +16,7 @@
     "seo:audit:report": "node scripts/seo-audit.mjs --report-only",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
+    "sitemap:lastmod": "node scripts/build-sitemap-lastmod.mjs",
     "seo:index": "node --experimental-strip-types scripts/seo/build-url-index.mjs",
     "seo:redirects": "node --experimental-strip-types scripts/seo/build-redirects.mjs",
     "seo:verify": "node --experimental-strip-types scripts/seo/verify-redirects.mjs --simulate",
