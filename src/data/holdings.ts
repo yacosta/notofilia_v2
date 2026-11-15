@@ -260,6 +260,7 @@ export const additions: Holding[] = [
   { id: 'pr-40-centavos-1896-pgv', kind: 'coin', country: 'PR' },
   { id: 'us-prusmack-educational-1-dolar-1896-12-250', kind: 'banknote', country: 'US' },
   { id: 'co-1980-10-pesos-oro-00000100', kind: 'banknote', country: 'CO' },
+  { id: 'us-frn-1934a-hawaii-5-l69086875a', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
