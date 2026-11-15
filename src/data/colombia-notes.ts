@@ -83,6 +83,12 @@ export type ColombiaNote = {
   };
   heroAlt?: LocalizedText;
   title: LocalizedText;
+  /** Visible H1 and document title when the default “Billete de” wording is wrong. */
+  seoTitle?: LocalizedText;
+  /** YYYY-MM-DD content revision. Sitemap lastmod prefers this over the file date. */
+  modified?: string;
+  /** Extra catalogue records, each with a one-line description already on that record. */
+  related?: { id: ColombiaNoteId; description: LocalizedText }[];
   kicker: LocalizedText;
   lead: LocalizedText;
   description: LocalizedText;
@@ -169,13 +175,34 @@ export const colombiaNotes: ColombiaNote[] = [
       es: '5 pesos · Banco Hipotecario · 1881',
       en: '5 pesos · Banco Hipotecario · 1881',
     },
+    seoTitle: {
+      es: 'Pruebas de 5 pesos 1881 · Banco Hipotecario (Colombia)',
+      en: '5 pesos proofs 1881 · Banco Hipotecario (Colombia)',
+    },
+    modified: '2026-11-15',
+    related: [
+      {
+        id: '5-pesos-rio-hacha-1883',
+        description: {
+          es: 'Par de pruebas ABNC de 1883, serie C, serial C 00000, anverso S819p1 y reverso S819p2.',
+          en: 'An 1883 ABNC proof pair, Series C, serial C 00000, face S819p1 and back S819p2.',
+        },
+      },
+      {
+        id: '1-peso-tolima-1901',
+        description: {
+          es: 'Cédula de un peso del Tolima, Ibagué, septiembre de 1901, Serie D, serial N.º 060.416.',
+          en: 'A one-peso cédula of Tolima, Ibagué, September 1901, Series D, serial N.º 060.416.',
+        },
+      },
+    ],
     kicker: {
       es: 'Colombia · Banca libre · Pruebas ABNC',
       en: 'Colombia · Free banking · ABNC proofs',
     },
     lead: {
-      es: 'Par de pruebas unifaces sobre cartulina (card proofs) de la American Bank Note Company: anverso S511p1 y reverso S511p2, ambos encapsulados PMG 61 Uncirculated. Serie Y, serial 00000.',
-      en: 'A pair of uniface card proofs by the American Bank Note Company: face S511p1 and back S511p2, both slabbed PMG 61 Uncirculated. Series Y, serial 00000.',
+      es: 'Estas son dos pruebas unifaces sobre cartulina del Banco Hipotecario de Colombia, impresas por la American Bank Note Company. El anverso es S511p1 y el reverso S511p2. La fecha impresa es el 1.º de octubre de 1881. El serial es Y 00000. Ambas están encapsuladas PMG 61 Uncirculated.',
+      en: 'These are two uniface card proofs of the Banco Hipotecario of Colombia, printed by the American Bank Note Company. The face is S511p1 and the back is S511p2. The printed date is 1 October 1881. The serial is Y 00000. Both are slabbed PMG 61 Uncirculated.',
     },
     description: {
       es: 'El Banco Hipotecario se estableció en Bogotá el 1.º de octubre de 1881 —la misma fecha que lleva el anverso—. EL TIEMPO sitúa ahí la fundación y una vigencia de diez años desde el registro de las escrituras. Hernández (8.ª ed., 2023) sitúa la fundación en los años 1880 y la liquidación antes de 1914, y numera este cinco pesos ABNC —mujer sentada a la izquierda, caballos a la derecha— como Cód. 1134. En junio de 1882 el Poder Ejecutivo del Estado aprobó los estatutos y lo declaró en posesión de las concesiones de las leyes de 14 de enero de 1873 y 17 de noviembre de 1875 a los bancos hipotecarios; el texto se publicó en julio de 1882. El Standard Catalog of World Paper Money — Specialized Issues, vía el índice de Numismondo, numera la serie S511–S515: cinco a cien pesos de 1881. Esta ficha es el cinco pesos. El anverso, en negro sobre fondo ocre, promete pagar al portador a la vista cinco pesos; a la izquierda, una alegoría agrícola sentada junto a gavillas; a la derecha, un labrador con arado y caballos; arriba, un óvalo con campo y caserío; abajo, un 5 en medallón. El serial rojo es 00000; tres perforaciones de cancelación cortan el margen inferior. El montaje de Nueva York lleva «February 1883» y, en vertical, «Serie Y». Las casillas del gerente y del presidente del consejo están en blanco. El reverso, en sepia, es un marco de guilloches con «EL BANCO» y «HIPOTECARIO» y las cifras 5 a ambos flancos; al pie, en tipografía diminuta, se lee el crédito «AMERICAN BANK NOTE COMPANY, NEW YORK». Al tratarse de planchas de archivo de la American Bank Note Company, estas pruebas unifaces se estamparon sobre cartulina rígida de presentación —práctica habitual de los talleres de Nueva York para el control de planchas—, distinta del papel delgado de los billetes de circulación. Tanto el anverso como el reverso conservan los márgenes de imprenta. No hay firmas: son pruebas de plancha, no un ejemplar puesto en circulación. No debe confundirse con el Banco Hipotecario de la Mutualidad (S516 y siguientes) ni con el del Pacífico. Esta ficha reúne las dos cápsulas PMG de la colección —anverso y reverso por separado—.',

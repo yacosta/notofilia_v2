@@ -39,11 +39,11 @@ function normalizeRedirects(map) {
 /** Hand-written 301s. Applied after generated maps so a specific target wins the slash collision. */
 const explicitRedirects = {
     '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/':
-      '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901/',
+      '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/',
     '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/10-1901/':
-      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/',
+      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/',
     '/en/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/10-1901/':
-      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901/',
+      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/',
     '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/25-1901/':
       '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/',
     '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/25-1901/':
@@ -99,13 +99,20 @@ const explicitRedirects = {
     '/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen': '/coleccion/colombia/5000-pesos-oro-1993/',
     '/en/collection/colombia/banco-de-la-republica-5000-pesos-oro-specimen': '/en/collection/colombia/5000-pesos-oro-1993/',
     '/en/coleccion/colombia/banco-de-la-republica-5000-pesos-oro-specimen': '/en/collection/colombia/5000-pesos-oro-1993/',
-    '/coleccion/polimero-mundial/canada': '/coleccion/polimero-mundial/Canada/',
-    '/coleccion/polimero-mundial/america-del-norte/canada': '/coleccion/polimero-mundial/Canada/',
-    '/en/collection/world-polymer/canada': '/en/collection/world-polymer/Canada/',
-    '/en/collection/world-polymer/north-america/canada': '/en/collection/world-polymer/Canada/',
-    '/en/coleccion/polimero-mundial/canada': '/en/collection/world-polymer/Canada/',
-    '/en/coleccion/polimero-mundial/Canada': '/en/collection/world-polymer/Canada/',
-    '/en/coleccion/polimero-mundial/america-del-norte/canada': '/en/collection/world-polymer/Canada/',
+    '/coleccion/polimero-mundial/Canada': '/coleccion/polimero-mundial/canada/',
+    '/coleccion/polimero-mundial/Canada/5-dolares-laurier': '/coleccion/polimero-mundial/canada/5-dolares-laurier/',
+    '/coleccion/polimero-mundial/america-del-norte/canada': '/coleccion/polimero-mundial/canada/',
+    '/en/collection/world-polymer/Canada': '/en/collection/world-polymer/canada/',
+    '/en/collection/world-polymer/Canada/5-dollars-laurier': '/en/collection/world-polymer/canada/5-dollars-laurier/',
+    '/en/collection/world-polymer/north-america/canada': '/en/collection/world-polymer/canada/',
+    '/en/coleccion/polimero-mundial/canada': '/en/collection/world-polymer/canada/',
+    '/en/coleccion/polimero-mundial/Canada': '/en/collection/world-polymer/canada/',
+    '/en/coleccion/polimero-mundial/Canada/5-dolares-laurier': '/en/collection/world-polymer/canada/5-dollars-laurier/',
+    '/en/coleccion/polimero-mundial/america-del-norte/canada': '/en/collection/world-polymer/canada/',
+    '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/Manzano_10_1901':
+      '/coleccion/colombia-numismatica/fichas-de-hacienda/manzano-farming-co/manzano_10_1901/',
+    '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/Manzano_10_1901':
+      '/en/collection/colombia-numismatics/hacienda-tokens/manzano-farming-co/manzano_10_1901/',
     '/coleccion/estados-unidos/renci': '/coleccion/estados-unidos/rency/',
     '/coleccion/estados-unidos/renci/pele-the-beautiful-game':
       '/coleccion/estados-unidos/rency/pele-the-beautiful-game/',

@@ -1,20 +1,19 @@
 {
   "csv": "docs/seo/gsc-404-2026-09.csv",
   "usedSeed": false,
-  "total": 1356,
+  "total": 1908,
   "counts": {
     "gone": 16,
-    "existing": 1100,
-    "legacy-dc": 51,
-    "manual": 24,
-    "last-slug": 7,
-    "category-hub": 27,
-    "hub-fallback": 116,
-    "fuzzy": 3,
-    "last-slug-hreflang": 2,
-    "exists": 8,
-    "glossary-hub": 2
+    "existing": 1611,
+    "legacy-dc": 66,
+    "manual": 53,
+    "last-slug": 8,
+    "category-hub": 26,
+    "hub-fallback": 111,
+    "fuzzy": 4,
+    "exists": 11,
+    "last-slug-hreflang": 2
   },
-  "fuzzyOrHubPercent": 8.83,
+  "fuzzyOrHubPercent": 6.06,
   "reviewRequired": false
 }

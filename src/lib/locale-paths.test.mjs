@@ -107,20 +107,20 @@ describe('locale path mapping', () => {
       '/en/collection/world-polymer/north-america/',
     );
     assert.equal(
-      localizePath('/coleccion/polimero-mundial/Canada/', 'en'),
-      '/en/collection/world-polymer/Canada/',
+      localizePath('/coleccion/polimero-mundial/canada/', 'en'),
+      '/en/collection/world-polymer/canada/',
     );
     assert.equal(
-      localizePath('/en/collection/world-polymer/Canada/', 'es'),
-      '/coleccion/polimero-mundial/Canada/',
+      localizePath('/en/collection/world-polymer/canada/', 'es'),
+      '/coleccion/polimero-mundial/canada/',
     );
     assert.equal(
-      localizePath('/coleccion/polimero-mundial/Canada/5-dolares-laurier/', 'en'),
-      '/en/collection/world-polymer/Canada/5-dollars-laurier/',
+      localizePath('/coleccion/polimero-mundial/canada/5-dolares-laurier/', 'en'),
+      '/en/collection/world-polymer/canada/5-dollars-laurier/',
     );
     assert.equal(
-      localizePath('/en/collection/world-polymer/Canada/5-dollars-laurier/', 'es'),
-      '/coleccion/polimero-mundial/Canada/5-dolares-laurier/',
+      localizePath('/en/collection/world-polymer/canada/5-dollars-laurier/', 'es'),
+      '/coleccion/polimero-mundial/canada/5-dolares-laurier/',
     );
     assert.equal(localizePath('/coleccion/notafilia/', 'en'), '/en/collection/notaphily/');
     assert.equal(localizePath('/coleccion/espana/', 'en'), '/en/collection/spain/');
@@ -859,8 +859,8 @@ describe('locale path mapping', () => {
       'collection/world-polymer/europe/england',
     );
     assert.equal(
-      englishContentSlug('coleccion/polimero-mundial/Canada'),
-      'collection/world-polymer/Canada',
+      englishContentSlug('coleccion/polimero-mundial/canada'),
+      'collection/world-polymer/canada',
     );
     assert.equal(englishContentSlug('noticias'), 'news');
     assert.equal(
@@ -899,12 +899,12 @@ describe('locale path mapping', () => {
       '/en/collection/world-polymer/europe/england/5-pounds-churchill/',
     );
     assert.equal(
-      redirects['/en/coleccion/polimero-mundial/Canada/'],
-      '/en/collection/world-polymer/Canada/',
+      redirects['/en/coleccion/polimero-mundial/canada/'],
+      '/en/collection/world-polymer/canada/',
     );
     assert.equal(
-      redirects['/en/coleccion/polimero-mundial/Canada/5-dolares-laurier/'],
-      '/en/collection/world-polymer/Canada/5-dollars-laurier/',
+      redirects['/en/coleccion/polimero-mundial/canada/5-dolares-laurier/'],
+      '/en/collection/world-polymer/canada/5-dollars-laurier/',
     );
     assert.equal(
       redirects['/en/coleccion/numismatica/numismatica-de-los-lazaretos/'],

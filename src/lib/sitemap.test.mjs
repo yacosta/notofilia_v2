@@ -54,12 +54,12 @@ describe('sitemap coverage for polymer Malaysia', () => {
 describe('sitemap coverage for polymer Canada', () => {
   it('maps the Canada stub through the polymer locale pair', () => {
     assert.equal(
-      localizePath('/coleccion/polimero-mundial/Canada/', 'en'),
-      '/en/collection/world-polymer/Canada/',
+      localizePath('/coleccion/polimero-mundial/canada/', 'en'),
+      '/en/collection/world-polymer/canada/',
     );
     assert.equal(
-      localizePath('/coleccion/polimero-mundial/Canada/5-dolares-laurier/', 'en'),
-      '/en/collection/world-polymer/Canada/5-dollars-laurier/',
+      localizePath('/coleccion/polimero-mundial/canada/5-dolares-laurier/', 'en'),
+      '/en/collection/world-polymer/canada/5-dollars-laurier/',
     );
     assert.match(sitemapSource, /dedicatedCatalogPaths/);
     assert.match(sitemapSource, /stubPages/);

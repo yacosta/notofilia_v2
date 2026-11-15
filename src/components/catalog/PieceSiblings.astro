@@ -8,6 +8,7 @@ type Sibling = {
   href: string;
   title: string;
   image?: string;
+  description?: string;
 };
 
 interface Props {
@@ -66,7 +67,10 @@ const relatedIntro = relatedLead ?? t.relatedLead;
                   class="aspect-[2/1] w-full object-cover"
                 />
               ) : null}
-              <span class="block p-4 font-display text-[1.05rem] text-cream">{item.title}</span>
+              <span class="block p-4 font-display text-[1.05rem] text-cream">
+                {item.title}
+                {item.description ? <span class="mt-1 block font-sans text-[14px]/5 text-muted">{item.description}</span> : null}
+              </span>
             </a>
           </li>
         ))}

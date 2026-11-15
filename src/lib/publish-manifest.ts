@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { chinaNoteSlugs } from '../data/china';
 import { colombiaChapters, eraPath } from '../data/colombia';
-import { colombiaNoteSlugs } from '../data/colombia-notes';
+import { colombiaNoteSlugs, colombiaNotes } from '../data/colombia-notes';
 import { COLOMBIA_COIN_CATALOG_PATH, coinCatalogCopy } from '../data/colombia-coin-type-catalog';
 import { COLOMBIA_NOTES_CATALOG_PATH, noteCatalogCopy } from '../data/colombia-type-catalog';
 import { collectionNoteCatalogCopy, NOTAFILIA_NOTES_CATALOG_PATH } from '../data/collection-note-catalog';
@@ -21,7 +21,12 @@ import {
   glossaryTerms,
   isStandaloneGlossaryTerm,
 } from '../data/glossary';
-import { identifyCounterfeitCopy } from '../data/identify-counterfeit';
+import {
+  IDENTIFY_COUNTERFEIT_MODIFIED,
+  IDENTIFY_COUNTERFEIT_PATH,
+  identifyCounterfeitCopy,
+} from '../data/identify-counterfeit';
+import { fallbackLastmod, sourceLastmod } from './sitemap-dates';
 import { liberiaCoinSlugs } from '../data/liberia-coinage';
 import { cuadraUnaMitadPieceDedicatedSlugs } from '../data/cuadra-una-mitad-piece';
 import { manzanoFarmingPieceDedicatedSlugs } from '../data/manzano-farming-piece';
@@ -210,6 +215,13 @@ function buildIndexes(): Indexes {
     dates.set(esPath, date);
     dates.set(articlePath('blog', article.slug, 'en'), date);
   }
+  dates.set(IDENTIFY_COUNTERFEIT_PATH, IDENTIFY_COUNTERFEIT_MODIFIED);
+  dates.set(localizePath(IDENTIFY_COUNTERFEIT_PATH, 'en'), IDENTIFY_COUNTERFEIT_MODIFIED);
+  for (const note of colombiaNotes) {
+    if (!note.modified) continue;
+    dates.set(note.path, note.modified);
+    dates.set(localizePath(note.path, 'en'), note.modified);
+  }
   for (const article of newsArticles) {
     const esPath = articlePath('news', article.slug, 'es');
     putTitle(esPath, article.title.es, article.title.en);
@@ -355,8 +367,9 @@ export function llmsEntries(): LlmsEntry[] {
   grouped.tools.sort((a, b) => a.esPath.localeCompare(b.esPath));
   grouped.editorial.sort((a, b) => a.esPath.localeCompare(b.esPath));
   grouped.news = recentNewsArticles().map((article) =>
-    entryFor(articlePath('news', article.slug, 'es'), 'news', article.published),
+    entryFor(articlePath('news', article.slug, 'es'), 'news', contentDate(article)),
   );
+  grouped.news.sort((a, b) => (b.published ?? '').localeCompare(a.published ?? '') || a.esPath.localeCompare(b.esPath));
   return [
     ...grouped.about,
     ...grouped.hubs,
@@ -442,9 +455,11 @@ export function sitemapXml(): string {
     .map((loc) => {
       const es = localizePath(loc, 'es');
       const en = localizePath(loc, 'en');
-      const modified = indexes.dates.get(loc);
+      const content = indexes.dates.get(loc) || indexes.dates.get(es) || indexes.dates.get(en);
+      const modified = (content || sourceLastmod(loc, loc === es ? en : es) || fallbackLastmod()).slice(0, 10);
       return `  <url>
-    <loc>${xmlEscape(`${SITE_URL}${loc}`)}</loc>${modified ? `\n    <lastmod>${xmlEscape(modified)}</lastmod>` : ''}
+    <loc>${xmlEscape(`${SITE_URL}${loc}`)}</loc>
+    <lastmod>${xmlEscape(modified)}</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="${xmlEscape(`${SITE_URL}${es}`)}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${xmlEscape(`${SITE_URL}${en}`)}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${xmlEscape(`${SITE_URL}${es}`)}"/>

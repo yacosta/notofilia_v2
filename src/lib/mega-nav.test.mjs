@@ -48,18 +48,16 @@ describe('mega-nav columns', () => {
             ],
           },
           {
-            id: 'polimero-europa',
-            es: 'Europa',
-            en: 'Europe',
-            icon: 'europe',
-            children: [{ id: 'polimero-inglaterra', es: 'Inglaterra', en: 'England', flag: 'gb' }],
+            id: 'polimero-inglaterra',
+            es: 'Inglaterra',
+            en: 'England',
+            flag: 'gb',
           },
           {
-            id: 'polimero-norteamerica',
-            es: 'América del Norte',
-            en: 'North America',
-            icon: 'north-america',
-            children: [{ id: 'polimero-canada', es: 'Canadá', en: 'Canada', flag: 'ca' }],
+            id: 'polimero-canada',
+            es: 'Canadá',
+            en: 'Canada',
+            flag: 'ca',
           },
         ],
       },
@@ -88,12 +86,8 @@ describe('mega-nav columns', () => {
             { id: 'polimero-malasia', flag: 'my' },
           ],
         },
-        { id: 'polimero-europa', icon: 'europe', children: [{ id: 'polimero-inglaterra', flag: 'gb' }] },
-        {
-          id: 'polimero-norteamerica',
-          icon: 'north-america',
-          children: [{ id: 'polimero-canada', flag: 'ca' }],
-        },
+        { id: 'polimero-inglaterra', children: undefined, icon: undefined },
+        { id: 'polimero-canada', children: undefined, icon: undefined },
       ],
     );
   });
@@ -158,37 +152,31 @@ describe('polymer submenu', () => {
     assert.match(polymer, /id: 'polimero-malasia'[\s\S]*?flag: 'my'/);
   });
 
-  it('nests England under Europe in both locales and does not keep a sibling England link', () => {
+  it('lists England directly because Europe has no hub and only one child', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
-    assert.match(polymer, /id: 'polimero-europa'/);
-    assert.match(polymer, /es: 'Europa'/);
-    assert.match(polymer, /en: 'Europe'/);
+    assert.doesNotMatch(polymer, /id: 'polimero-europa'/);
+    assert.doesNotMatch(polymer, /es: 'Europa'/);
     assert.match(polymer, /id: 'polimero-inglaterra'/);
     assert.match(polymer, /es: 'Inglaterra'/);
     assert.match(polymer, /en: 'England'/);
     assert.match(polymer, /href: POLIMERO_INGLATERRA_PATH/);
     const englandBlocks = polymer.split("id: 'polimero-inglaterra'");
     assert.equal(englandBlocks.length, 2);
-    assert.match(polymer, /id: 'polimero-europa'[\s\S]*id: 'polimero-inglaterra'/);
-    assert.match(polymer, /id: 'polimero-asia'[\s\S]*id: 'polimero-europa'/);
     assert.match(polymer, /id: 'polimero-inglaterra'[\s\S]*?flag: 'gb'/);
   });
 
-  it('nests Canada under North America in both locales and does not keep a sibling Canada link', () => {
+  it('lists Canada directly because North America has no hub and only one child', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
-    assert.match(polymer, /id: 'polimero-norteamerica'/);
-    assert.match(polymer, /es: 'América del Norte'/);
-    assert.match(polymer, /en: 'North America'/);
+    assert.doesNotMatch(polymer, /id: 'polimero-norteamerica'/);
+    assert.doesNotMatch(polymer, /es: 'América del Norte'/);
     assert.match(polymer, /id: 'polimero-canada'/);
     assert.match(polymer, /es: 'Canadá'/);
     assert.match(polymer, /en: 'Canada'/);
     assert.match(polymer, /href: POLIMERO_CANADA_PATH/);
     const canadaBlocks = polymer.split("id: 'polimero-canada'");
     assert.equal(canadaBlocks.length, 2);
-    assert.match(polymer, /id: 'polimero-norteamerica'[\s\S]*id: 'polimero-canada'/);
-    assert.match(polymer, /id: 'polimero-europa'[\s\S]*id: 'polimero-norteamerica'/);
     assert.match(polymer, /id: 'polimero-canada'[\s\S]*?flag: 'ca'/);
   });
 
@@ -207,12 +195,13 @@ describe('polymer submenu', () => {
     }
   });
 
-  it('marks each polymer continent heading with a continent silhouette', () => {
+  it('keeps the Asia label visible and drops empty Europe and North America headings', () => {
     const source = readFileSync(new URL('./mega-nav.ts', import.meta.url), 'utf8');
     const polymer = source.split("id: 'polimero'")[1]?.split("id: 'numismatica-mundial'")[0] ?? '';
     assert.match(polymer, /id: 'polimero-asia',[\s\S]*?icon: 'asia'/);
-    assert.match(polymer, /id: 'polimero-europa',[\s\S]*?icon: 'europe'/);
-    assert.match(polymer, /id: 'polimero-norteamerica',[\s\S]*?icon: 'north-america'/);
+    assert.match(polymer, /expanded: true/);
+    assert.doesNotMatch(polymer, /icon: 'europe'/);
+    assert.doesNotMatch(polymer, /icon: 'north-america'/);
     const icons = readFileSync(new URL('../components/NavIcon.astro', import.meta.url), 'utf8');
     assert.match(icons, /'asia'/);
     assert.match(icons, /'europe'/);

@@ -357,7 +357,7 @@ export const stubPages = [
   { path: 'coleccion/polimero-mundial', es: 'Billetes de polímero', en: 'Polymer banknotes' },
   { path: 'coleccion/polimero-mundial/europa/inglaterra', es: 'Inglaterra', en: 'England' },
   { path: 'coleccion/polimero-mundial/asia/malasia', es: 'Malasia', en: 'Malaysia' },
-  { path: 'coleccion/polimero-mundial/Canada', es: 'Canadá', en: 'Canada' },
+  { path: 'coleccion/polimero-mundial/canada', es: 'Canadá', en: 'Canada' },
   { path: 'blog', es: 'Guías para coleccionistas', en: 'Guides for collectors' },
   { path: 'noticias', es: 'Noticias numismáticas', en: 'Numismatic news' },
   { path: 'glosario', es: 'Glosario', en: 'Glossary' },

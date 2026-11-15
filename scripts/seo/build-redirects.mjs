@@ -46,7 +46,12 @@ if (!existsSync(indexFile)) {
 const index = JSON.parse(readFileSync(indexFile, 'utf8'));
 const urls = index.urls ?? index;
 const categoryMap = JSON.parse(readFileSync(categoryFile, 'utf8'));
-const liveByNorm = new Map(urls.map((u) => [normalizePath(u.path), u]));
+const liveByNorm = new Map();
+for (const url of urls) {
+  const key = normalizePath(url.path);
+  const prev = liveByNorm.get(key);
+  if (!prev || (isStub(prev) && !isStub(url))) liveByNorm.set(key, url);
+}
 
 /** Hand-reviewed source → target pairs. Targets must be live, non-stub v2 pages. */
 const overrides = new Map();
@@ -131,12 +136,12 @@ for (const [from, to] of Object.entries(CONTACT_LEGACY_REDIRECTS)) {
 const parsed = loadCsvUrls(csvPath);
 const byNorm = new Map();
 for (const item of parsed) {
-  const key = normalizePath(item.originalPath);
+  const key = identityPath(item.originalPath);
   if (!byNorm.has(key)) byNorm.set(key, item);
 }
 
 for (const from of existing.keys()) {
-  const key = normalizePath(from);
+  const key = identityPath(from);
   if (!byNorm.has(key)) {
     byNorm.set(key, { original: from, originalPath: from, host: 'notofilia.com' });
   }
@@ -151,7 +156,7 @@ for (const item of byNorm.values()) {
   const manual = overrides.get(normalizePath(source));
   // Live non-stub pages (English glossary keepers, news slugEn, etc.) must not 301 away,
   // even when GSC still lists them as 404s or an old override inverts the slug.
-  if (liveHit && !isStub(liveHit)) {
+  if (liveHit && !isStub(liveHit) && identityPath(source) === identityPath(liveHit.path)) {
     result = { status: 200, target: withSlash(liveHit.path), rule: 'exists', confidence: 'high' };
   } else if (manual) {
     result = { status: 301, target: withSlash(manual), rule: 'manual', confidence: 'high' };
@@ -167,6 +172,9 @@ for (const item of byNorm.values()) {
   }
   if (result.status === 301 && isHomePath(result.target)) {
     result = { status: 410, target: '', rule: 'gone', confidence: 'high' };
+  }
+  if (result.status === 301 && identityPath(source) === identityPath(String(result.target).split('?')[0])) {
+    result = { status: 200, target: withSlash(source), rule: 'exists', confidence: 'high' };
   }
   rows.push({
     source,

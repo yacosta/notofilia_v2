@@ -6,7 +6,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { classifyType, languageOf, lastSlug, normalizePath } from './match.mjs';
+import { classifyType, identityPath, languageOf, lastSlug } from './match.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
 const dist = join(root, 'dist');
@@ -134,7 +134,7 @@ async function fromSrcPages() {
 }
 
 function upsertRow(rows, byNorm, path, fields) {
-  const key = normalizePath(path);
+  const key = identityPath(path);
   const existing = byNorm.get(key);
   const row = {
     path,
@@ -160,7 +160,7 @@ async function applyEnglishContentSlugs(rows) {
   const news = JSON.parse(readFileSync(join(root, 'src/data/news-articles.json'), 'utf8'));
   const { colombiaChapters, eraPath } = await import(pathToFileURL(join(root, 'src/data/colombia.ts')).href);
 
-  const byNorm = new Map(rows.map((row) => [normalizePath(row.path), row]));
+  const byNorm = new Map(rows.map((row) => [identityPath(row.path), row]));
   const live = (path, fields = {}) => upsertRow(rows, byNorm, path, { ...fields, redirectTo: '' });
   const stub = (from, to) => {
     if (from === to) return;
@@ -233,7 +233,7 @@ await applyEnglishContentSlugs(rows);
 const seen = new Set();
 const unique = [];
 for (const row of rows) {
-  const key = `${row.lang}:${normalizePath(row.path)}`;
+  const key = `${row.lang}:${identityPath(row.path)}`;
   if (seen.has(key)) continue;
   seen.add(key);
   unique.push(row);

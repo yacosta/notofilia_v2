@@ -74,8 +74,8 @@ describe('Colombia Emberá 1994 series card grouping', () => {
     assert.match(chapter.body.en, /one record with star serials 00113227 and 00249902/);
     assert.doesNotMatch(chapter.body.es, /dos reposiciones estrella/);
     assert.doesNotMatch(chapter.body.en, /star replacements 00113227 and 00249902/);
-    assert.match(seriesCopy.es.intro.join(' '), /una ficha con seriales estrella 00113227 y 00249902/);
-    assert.match(seriesCopy.en.intro.join(' '), /one record with star serials 00113227 and 00249902/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /una ficha con seriales estrella 00113227 y 00249902/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /one record with star serials 00113227 and 00249902/);
   });
 });
 
@@ -213,8 +213,8 @@ describe('Colombia BanRep 1 peso oro 1959 Boyacá type', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /1 peso oro de 1959 \(Pick 398\), serial 60870843/);
     assert.match(chapter.body.en, /1959 1 peso oro \(Pick 398\), serial 60870843/);
-    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1959 \(Pick 398\), serial 60870843/);
-    assert.match(seriesCopy.en.intro.join(' '), /1959 1 peso oro \(Pick 398\), serial 60870843/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /1 peso oro de 1959 \(Pick 398\), serial 60870843/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1959 1 peso oro \(Pick 398\), serial 60870843/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const peso1959 = cards.filter((card) => card.note.id === '1-peso-oro-1959');
     assert.equal(peso1959.length, 1);
@@ -322,8 +322,8 @@ describe('Colombia BanRep 1 peso Imprenta 1959–1977 (Pick 404e)', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
     assert.match(chapter.body.en, /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
-    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
-    assert.match(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /1 peso oro de 1973 \(Pick 404e\) y el de 1974 \(Pick 404e\)/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1973 1 peso oro \(Pick 404e\) and the 1974 \(Pick 404e\)/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const peso = cards.filter((card) => card.note.id === '1-peso-oro-1959-1977');
     assert.equal(peso.length, 2);
@@ -389,8 +389,8 @@ describe('Colombia BanRep 500 pesos oro 1977 ABNC Santander', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /500 pesos oro de 1977 \(Pick 420a \/ TBB B962a\), serial 038064123/);
     assert.match(chapter.body.en, /1977 500 pesos oro \(Pick 420a \/ TBB B962a\), serial 038064123/);
-    assert.match(seriesCopy.es.intro.join(' '), /500 pesos oro de 1977 \(Pick 420a \/ TBB B962a\), serial 038064123/);
-    assert.match(seriesCopy.en.intro.join(' '), /1977 500 pesos oro \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /500 pesos oro de 1977 \(Pick 420a \/ TBB B962a\), serial 038064123/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1977 500 pesos oro \(Pick 420a \/ TBB B962a\), serial 038064123/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const noteCards = cards.filter((card) => card.note.id === '500-pesos-oro-1977');
     assert.equal(noteCards.length, 1);
@@ -466,8 +466,8 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /2 pesos oro de 1976 \(Pick 413b\), serial 00194674/);
     assert.match(chapter.body.en, /1976 2 pesos oro \(Pick 413b\), serial 00194674/);
-    assert.match(seriesCopy.es.intro.join(' '), /2 pesos oro de 1976 \(Pick 413b\), serial 00194674/);
-    assert.match(seriesCopy.en.intro.join(' '), /1976 2 pesos oro \(Pick 413b\), serial 00194674/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /2 pesos oro de 1976 \(Pick 413b\), serial 00194674/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1976 2 pesos oro \(Pick 413b\), serial 00194674/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const twoPesos1976 = cards.filter((card) => card.note.id === '2-pesos-oro-1976');
     assert.equal(twoPesos1976.length, 1);
@@ -546,8 +546,8 @@ describe('Colombia BanRep 2 pesos oro 1977 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /2 pesos oro de 1977 \(Pick 413b\)/);
     assert.match(chapter.body.en, /1977 2 pesos oro \(Pick 413b\)/);
-    assert.match(seriesCopy.es.intro.join(' '), /2 pesos oro de 1977 \(Pick 413b\)/);
-    assert.match(seriesCopy.en.intro.join(' '), /1977 2 pesos oro \(Pick 413b\)/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /2 pesos oro de 1977 \(Pick 413b\)/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1977 2 pesos oro \(Pick 413b\)/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const twoPesos1977 = cards.filter((card) => card.note.id === '2-pesos-oro-1977');
     assert.equal(twoPesos1977.length, 1);
@@ -622,8 +622,8 @@ describe('Colombia Tesorería medio peso oro 1953 Lleritas', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /medio peso oro de 1953 de la Tesorería \(Pick 345b\), serial C5256707/);
     assert.match(chapter.body.en, /1953 Treasury ½ peso oro \(Pick 345b\), serial C5256707/);
-    assert.match(seriesCopy.es.intro.join(' '), /medio peso oro de 1953 de la Tesorería \(Pick 345b\), serial C5256707/);
-    assert.match(seriesCopy.en.intro.join(' '), /1953 Treasury ½ peso oro \(Pick 345b\), serial C5256707/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /serial C5256707/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /serial C5256707/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === 'medio-peso-oro-1953');
     assert.equal(holding.length, 1);
@@ -674,8 +674,8 @@ describe('Colombia BanRep 5 pesos oro 1960 TDLR specimen', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /espécimen de 5 pesos oro de 1960 \(Pick 405s\)/);
     assert.match(chapter.body.en, /1960 5 pesos oro specimen \(Pick 405s\)/);
-    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 5 pesos oro de 1960 \(Pick 405s\)/);
-    assert.match(seriesCopy.en.intro.join(' '), /1960 5 pesos oro specimen \(Pick 405s\)/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /espécimen de 5 pesos oro de 1960 \(Pick 405s\)/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1960 5 pesos oro specimen \(Pick 405s\)/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const specimen = cards.filter((card) => card.note.id === '5-pesos-oro-1960');
     assert.equal(specimen.length, 1);
@@ -730,11 +730,11 @@ describe('Colombia BanRep 5 pesos oro 1979 IBB asterisk replacement', () => {
       chapter.body.en,
       /1979 5 pesos oro replacement \(Pick 406f; Hernández 156\), serial 00141180/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.es.intro.join(' '),
       /reposición de 5 pesos oro de 1979 \(Pick 406f; Hernández 156\), serial 00141180/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.en.intro.join(' '),
       /1979 5 pesos oro replacement \(Pick 406f; Hernández 156\), serial 00141180/,
     );
@@ -789,8 +789,8 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB circulation', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /5 pesos oro de 1980 \(Pick 406f \/ TBB B949p\), serial 94658896/);
     assert.match(chapter.body.en, /1980 5 pesos oro \(Pick 406f \/ TBB B949p\), serial 94658896/);
-    assert.match(seriesCopy.es.intro.join(' '), /5 pesos oro de 1980 \(Pick 406f \/ TBB B949p\), serial 94658896/);
-    assert.match(seriesCopy.en.intro.join(' '), /1980 5 pesos oro \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /5 pesos oro de 1980 \(Pick 406f \/ TBB B949p\), serial 94658896/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1980 5 pesos oro \(Pick 406f \/ TBB B949p\), serial 94658896/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '5-pesos-oro-1980');
     assert.equal(holding.length, 1);
@@ -854,11 +854,11 @@ describe('Colombia BanRep 5 pesos oro 1980 IBB asterisk replacement', () => {
       chapter.body.en,
       /1980 5 pesos oro replacement \(Pick 406f; Hernández 158\), serial 00011943/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.es.intro.join(' '),
       /reposición de 5 pesos oro de 1980 \(Pick 406f; Hernández 158\), serial 00011943/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.en.intro.join(' '),
       /1980 5 pesos oro replacement \(Pick 406f; Hernández 158\), serial 00011943/,
     );
@@ -946,11 +946,11 @@ describe('Colombia BanRep 5 pesos oro 1977 asterisk replacement', () => {
       chapter.body.en,
       /1977 5 pesos oro replacement \(Pick 406e; Hernández 150\), serial 00120856/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.es.intro.join(' '),
       /reposición de 5 pesos oro de 1977 \(Pick 406e; Hernández 150\), serial 00120856/,
     );
-    assert.match(
+    assert.doesNotMatch(
       seriesCopy.en.intro.join(' '),
       /1977 5 pesos oro replacement \(Pick 406e; Hernández 150\), serial 00120856/,
     );
@@ -1041,8 +1041,8 @@ describe('Colombia BanRep 10 pesos oro 1979 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /10 pesos oro de 1979 \(Pick 407g\), serial 98040194/);
     assert.match(chapter.body.en, /1979 10 pesos oro \(Pick 407g\), serial 98040194/);
-    assert.match(seriesCopy.es.intro.join(' '), /10 pesos oro de 1979 \(Pick 407g\), serial 98040194/);
-    assert.match(seriesCopy.en.intro.join(' '), /1979 10 pesos oro \(Pick 407g\), serial 98040194/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /10 pesos oro de 1979 \(Pick 407g\), serial 98040194/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1979 10 pesos oro \(Pick 407g\), serial 98040194/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '10-pesos-oro-1979');
     assert.equal(holding.length, 1);
@@ -1118,8 +1118,8 @@ describe('Colombia BanRep 10 pesos oro 1980 Serie AZ Imprenta de Billetes', () =
     assert.ok(chapter);
     assert.match(chapter.body.es, /10 pesos oro Serie AZ de 1980 \(Pick 407h\), serial bajo 00000100/);
     assert.match(chapter.body.en, /1980 Series AZ 10 pesos oro \(Pick 407h\), low serial 00000100/);
-    assert.match(seriesCopy.es.intro.join(' '), /10 pesos oro Serie AZ de 1980 \(Pick 407h\), serial bajo 00000100/);
-    assert.match(seriesCopy.en.intro.join(' '), /1980 Series AZ 10 pesos oro \(Pick 407h\), low serial 00000100/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /10 pesos oro Serie AZ de 1980 \(Pick 407h\), serial bajo 00000100/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1980 Series AZ 10 pesos oro \(Pick 407h\), low serial 00000100/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '10-pesos-oro-1980-00000100');
     assert.equal(holding.length, 1);
@@ -1181,8 +1181,8 @@ describe('Colombia BanRep 50 pesos oro 1974 Thomas de la Rue', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /50 pesos oro de 1974 \(Pick 414a \/ TBB B953b\), serial 2467354822/);
     assert.match(chapter.body.en, /1974 50 pesos oro \(Pick 414a \/ TBB B953b\), serial 2467354822/);
-    assert.match(seriesCopy.es.intro.join(' '), /50 pesos oro de 1974 \(Pick 414a \/ TBB B953b\), serial 2467354822/);
-    assert.match(seriesCopy.en.intro.join(' '), /1974 50 pesos oro \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /50 pesos oro de 1974 \(Pick 414a \/ TBB B953b\), serial 2467354822/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1974 50 pesos oro \(Pick 414a \/ TBB B953b\), serial 2467354822/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '50-pesos-oro-1974');
     assert.equal(holding.length, 1);
@@ -1248,8 +1248,8 @@ describe('Colombia BanRep 50 pesos oro 1984 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /50 pesos oro de 1984 \(Pick 425a\), serial 0001806322/);
     assert.match(chapter.body.en, /1984 50 pesos oro \(Pick 425a\), serial 0001806322/);
-    assert.match(seriesCopy.es.intro.join(' '), /50 pesos oro de 1984 \(Pick 425a\), serial 0001806322/);
-    assert.match(seriesCopy.en.intro.join(' '), /1984 50 pesos oro \(Pick 425a\), serial 0001806322/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /50 pesos oro de 1984 \(Pick 425a\), serial 0001806322/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1984 50 pesos oro \(Pick 425a\), serial 0001806322/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '50-pesos-oro-1984');
     assert.equal(holding.length, 1);
@@ -1321,8 +1321,8 @@ describe('Colombia BanRep 5.000 pesos oro 1992 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /5\.000 pesos oro de 1992 \(Pick 436A \/ TBB B974b\), serial 46772124/);
     assert.match(chapter.body.en, /1992 5,000 pesos oro \(Pick 436A \/ TBB B974b\), serial 46772124/);
-    assert.match(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1992 \(Pick 436A \/ TBB B974b\), serial 46772124/);
-    assert.match(seriesCopy.en.intro.join(' '), /1992 5,000 pesos oro \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1992 \(Pick 436A \/ TBB B974b\), serial 46772124/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1992 5,000 pesos oro \(Pick 436A \/ TBB B974b\), serial 46772124/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '5000-pesos-oro-1992');
     assert.equal(holding.length, 1);
@@ -1392,8 +1392,8 @@ describe('Colombia BanRep 5.000 pesos oro 1993 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /5\.000 pesos oro de 1993 \(Pick 436A \/ TBB B974c\), serial 82210365/);
     assert.match(chapter.body.en, /1993 5,000 pesos oro \(Pick 436A \/ TBB B974c\), serial 82210365/);
-    assert.match(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1993 \(Pick 436A \/ TBB B974c\), serial 82210365/);
-    assert.match(seriesCopy.en.intro.join(' '), /1993 5,000 pesos oro \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /5\.000 pesos oro de 1993 \(Pick 436A \/ TBB B974c\), serial 82210365/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1993 5,000 pesos oro \(Pick 436A \/ TBB B974c\), serial 82210365/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '5000-pesos-oro-1993');
     assert.equal(holding.length, 1);
@@ -1461,8 +1461,8 @@ describe('Colombia BanRep 100 pesos oro 1980 TDLR specimen', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /espécimen de 100 pesos oro de 1980 \(Pick 418s\), SPECIMEN Nº 027/);
     assert.match(chapter.body.en, /1980 100 pesos oro specimen \(Pick 418s\), SPECIMEN Nº 027/);
-    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 100 pesos oro de 1980 \(Pick 418s\), SPECIMEN Nº 027/);
-    assert.match(seriesCopy.en.intro.join(' '), /1980 100 pesos oro specimen \(Pick 418s\), SPECIMEN Nº 027/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /espécimen de 100 pesos oro de 1980 \(Pick 418s\), SPECIMEN Nº 027/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1980 100 pesos oro specimen \(Pick 418s\), SPECIMEN Nº 027/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const specimen = cards.filter((card) => card.note.id === '100-pesos-oro-1980');
     assert.equal(specimen.length, 1);
@@ -1553,8 +1553,8 @@ describe('Colombia BanRep 200 pesos oro 1989 IBB specimen', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
     assert.match(chapter.body.en, /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
-    assert.match(seriesCopy.es.intro.join(' '), /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
-    assert.match(seriesCopy.en.intro.join(' '), /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /espécimen de 200 pesos oro de 1989 \(Pick 429ds\), control 499/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1989 200 pesos oro specimen \(Pick 429ds\), control 499/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const specimen = cards.filter((card) => card.note.id === '200-pesos-oro-1989');
     assert.equal(specimen.length, 1);
@@ -1630,8 +1630,8 @@ describe('Colombia BanRep 20 pesos oro 1983 Imprenta de Billetes', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /20 pesos oro de 1983 \(Pick 409d\), serial 056462955/);
     assert.match(chapter.body.en, /1983 20 pesos oro \(Pick 409d\), serial 056462955/);
-    assert.match(seriesCopy.es.intro.join(' '), /20 pesos oro de 1983 \(Pick 409d\), serial 056462955/);
-    assert.match(seriesCopy.en.intro.join(' '), /1983 20 pesos oro \(Pick 409d\), serial 056462955/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /20 pesos oro de 1983 \(Pick 409d\), serial 056462955/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1983 20 pesos oro \(Pick 409d\), serial 056462955/);
     const cards = seriesCardsForChapter('banco-de-la-republica');
     const holding = cards.filter((card) => card.note.id === '20-pesos-oro-1983');
     assert.equal(holding.length, 1);
@@ -1842,8 +1842,8 @@ describe('Colombia BanRep 1 peso oro 1940 (Pick 380b)', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /1 peso oro de 1940 \(Pick 380b\), serial 35555693/);
     assert.match(chapter.body.en, /1940 1 peso oro \(Pick 380b\), serial 35555693/);
-    assert.match(seriesCopy.es.intro.join(' '), /1 peso oro de 1940 \(Pick 380b\), serial 35555693/);
-    assert.match(seriesCopy.en.intro.join(' '), /1940 1 peso oro \(Pick 380b\), serial 35555693/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /1 peso oro de 1940 \(Pick 380b\), serial 35555693/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /1940 1 peso oro \(Pick 380b\), serial 35555693/);
   });
 });
 
@@ -1972,8 +1972,8 @@ describe('Colombia Gaitán 1,000 pesos, 23 November 2010 (Pick 456m)', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /1\.000 pesos de Gaitán de 2010 \(Pick 456m \/ TBB B986m\), serial capicúa 42222224/);
     assert.match(chapter.body.en, /2010 Gaitán 1,000 pesos \(Pick 456m \/ TBB B986m\) with radar serial 42222224/);
-    assert.match(seriesCopy.es.intro.join(' '), /serial capicúa 42222224/);
-    assert.match(seriesCopy.en.intro.join(' '), /radar serial 42222224/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /serial capicúa 42222224/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /radar serial 42222224/);
   });
 });
 
@@ -2055,8 +2055,8 @@ describe('Colombia Santander 2,000 pesos, 19 August 2009 (Pick 457k)', () => {
     assert.ok(chapter);
     assert.match(chapter.body.es, /serial capicúa 70200207/);
     assert.match(chapter.body.en, /radar serial 70200207/);
-    assert.match(seriesCopy.es.intro.join(' '), /serial capicúa 70200207/);
-    assert.match(seriesCopy.en.intro.join(' '), /radar serial 70200207/);
+    assert.doesNotMatch(seriesCopy.es.intro.join(' '), /serial capicúa 70200207/);
+    assert.doesNotMatch(seriesCopy.en.intro.join(' '), /radar serial 70200207/);
     const prior = noteById('2000-pesos-2008');
     assert.ok(prior);
     assert.notEqual(prior.serial, note.serial);

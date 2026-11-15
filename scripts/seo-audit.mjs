@@ -118,6 +118,15 @@ for (const file of pages) {
     counts[section].descFail += 1;
   }
 
+  if (indexable && section === 'collection' && html.includes('direct-answer')) {
+    const answer = html.match(/<p[^>]*class="[^"]*direct-answer[^"]*"[^>]*>([\s\S]*?)<\/p>/i)?.[1] ?? '';
+    const words = answer.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+    if (words.length < 40) warn(`${pathname} direct answer has ${words.length} words`);
+    const related = html.split('id="related-pieces-heading"')[1]?.split('</section>')[0] ?? '';
+    const links = related ? (related.match(/<a\b/gi) ?? []).length : 0;
+    if (links < 2) warn(`${pathname} has ${links} related catalogue links`);
+  }
+
   const canonicalTag = html.match(/<link\s+rel=["']canonical["'][^>]*>/i)?.[0] ?? '';
   const canonical = attr(canonicalTag, 'href') ?? '';
   if (indexable && !canonical) fail(`${pathname} missing canonical`);
@@ -215,6 +224,11 @@ const sitemap = await readFile(sitemapFile, 'utf8');
 const sitemapPaths = new Set(
   [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]).pathname),
 );
+const sitemapUrlCount = sitemap.match(/<url>/g)?.length ?? 0;
+const sitemapLastmodCount = sitemap.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g)?.length ?? 0;
+if (sitemapUrlCount !== sitemapLastmodCount) {
+  fail(`sitemap lastmod ${sitemapLastmodCount} of ${sitemapUrlCount} urls`);
+}
 for (const pathname of sitemapPaths) {
   const file = pathname === '/' ? join(DIST, 'index.html') : join(DIST, pathname.replace(/^\//, ''), 'index.html');
   const direct = pathname === '/' ? join(DIST, 'index.html') : join(DIST, `${pathname.replace(/^\//, '').replace(/\/$/, '')}.html`);
@@ -331,6 +345,9 @@ newsEntries.forEach((entry, index) => {
     fail(`Recent news item ${article.slug} is missing an ES or EN URL`);
   }
   if (!line.includes(article.published)) fail(`Recent news item ${article.slug} is missing ${article.published}`);
+  if (index > 0 && article.published.localeCompare(newest[index - 1].published) > 0) {
+    fail(`Recent news item ${article.slug} is newer than the item above it`);
+  }
 });
 const dropped = ranked[15];
 if (dropped && newsHeading.includes(`(${siteUrl}/noticias/${dropped.slug}/)`)) {
