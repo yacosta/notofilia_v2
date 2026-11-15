@@ -913,6 +913,61 @@ describe('12 November 2026 Springhead Hoard, first part', () => {
   });
 });
 
+describe('15 November 2026 Cuenca notaphily expo', () => {
+  it('keeps the Wissen hours and does not invent a street or a ticket price', () => {
+    const article = newsArticles.find((item) => item.slug === 'expo-notafilia-cuenca-2026');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'cuenca-notaphily-expo-2026');
+    assert.equal(article.published, '2026-11-15');
+    assert.equal(article.sourceName, 'El Mercurio');
+    assert.equal(article.sourceUrl, 'https://elmercurio.com.ec/cuenca/2026/11/13/expo-notafilia-cuenca-2026-exposicion-billetes/');
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/billete-cinco-sucres-banco-azuay.jpg');
+    assert.equal(article.imageWidth, 720);
+    assert.equal(article.imageHeight, 681);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/billete-cinco-sucres-banco-azuay.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/billete-cinco-sucres-banco-azuay-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const source of article.primarySources) {
+      assert.ok(body.includes(source.url), source.url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /08:00/);
+      assert.match(html, /19:00/);
+      assert.match(html, /13:00/);
+      assert.match(html, /Wissen/);
+      assert.match(html, /Azuay/);
+      assert.match(html, /Pablo Jarrín/);
+      assert.match(html, /\/glosario\/notafilia\//);
+      assert.match(html, /\/coleccion\/ecuador\//);
+      assert.match(html, /colección virtual|virtual collection/);
+      assert.match(html, /No publicamos|do not publish/i);
+      assert.doesNotMatch(html, /elmercurio\.com\.ec\/wp-content/);
+      assert.doesNotMatch(html, /US\$|€\s?\d|entrada libre|free admission/i);
+    }
+    assert.match(article.bodyHtml.es, /no las toma por la sede/);
+    assert.match(article.bodyHtml.es, /no pone la expo de 2026 en ese auditorio/);
+    assert.match(article.bodyHtml.en, /does not take them for the venue/);
+    assert.match(article.bodyHtml.en, /does not place the 2026 expo in that auditorium/);
+    assert.equal(
+      article.related.find((item) => item.href === '/coleccion/ecuador/').dek,
+      'Un sucre de 1901 y dos 100 sucres de 1993. Esta expo de Cuenca no tiene ficha.',
+    );
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
