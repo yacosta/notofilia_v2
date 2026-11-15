@@ -20,6 +20,8 @@ interface Props {
 }
 
 const { locale } = Astro.props;
+const cover = malaysiaNotes[0];
+if (!cover) throw new Error('Malaysia polymer series has no note to use as og:image');
 const t = malaysiaCopy[locale];
 const polymer = seriesCopy[locale];
 const pathname = polymerMalaysiaPath(locale);
@@ -38,7 +40,14 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={cover.images.front}
+  ogImageAlt={cover.frontCaption[locale]}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>

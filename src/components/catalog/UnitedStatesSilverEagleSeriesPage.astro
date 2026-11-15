@@ -35,6 +35,7 @@ const { locale } = Astro.props;
 const t = silverEagleSeriesCopy[locale];
 const pathname = silverEaglePath(locale);
 const holdings = silverEagleHoldings();
+const cover = holdings[0];
 
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -50,7 +51,14 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={t.metaTitle} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={t.metaTitle}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={cover?.images.composite}
+  ogImageAlt={cover?.frontCaption[locale]}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>

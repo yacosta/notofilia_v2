@@ -63,7 +63,16 @@ const jsonLd = {
 };
 ---
 
-<Layout title={`${t.metaTitle} · Notofilia`} description={t.metaDescription} locale={locale} pathname={pathname} ogType="article" publishedTime={t.published}>
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogType="article"
+  publishedTime={t.published}
+  ogImage={leadImage?.src}
+  ogImageAlt={leadImage?.alt}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>

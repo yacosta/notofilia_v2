@@ -21,6 +21,82 @@ function warn(message) {
   warnings.push(message);
 }
 
+const GLOBAL_OG_IMAGE = '/images/quetzal-billete-cinco-quetzales-guatemala.jpg';
+const ogImageWarnings = [];
+const COUNTRY_ALIAS = {
+  espana: 'spain',
+  spain: 'spain',
+  'estados-unidos': 'united-states',
+  'united-states': 'united-states',
+  malasia: 'malaysia',
+  malaysia: 'malaysia',
+  inglaterra: 'england',
+  england: 'england',
+  'paises-bajos': 'netherlands',
+  netherlands: 'netherlands',
+  filipinas: 'philippines',
+  philippines: 'philippines',
+};
+const PAGE_COUNTRY_RULES = [
+  [/\/(?:polimero-mundial|world-polymer)\/canada\//, 'canada'],
+  [/\/asia\/(?:malasia|malaysia)\//, 'malaysia'],
+  [/\/(?:europa\/inglaterra|europe\/england)\//, 'england'],
+  [/\/(?:coleccion|collection)\/colombia(?:\/|-)/, 'colombia'],
+  [/\/(?:coleccion|collection)\/china\//, 'china'],
+  [/\/(?:coleccion|collection)\/ecuador\//, 'ecuador'],
+  [/\/(?:coleccion|collection)\/(?:estados-unidos|united-states)(?:\/|-)/, 'united-states'],
+  [/\/(?:coleccion|collection)\/puerto-rico/, 'puerto-rico'],
+  [/\/(?:coleccion|collection)\/(?:paises-bajos|netherlands)\//, 'netherlands'],
+  [/\/(?:coleccion|collection)\/(?:espana|spain)\//, 'spain'],
+  [/\/(?:coleccion|collection)\/liberia\//, 'liberia'],
+  [/\/(?:coleccion|collection)\/guatemala\//, 'guatemala'],
+  [/\/(?:coleccion|collection)\/(?:filipinas|philippines)\//, 'philippines'],
+];
+
+function pageCountry(pathname) {
+  const path = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  for (const [rule, country] of PAGE_COUNTRY_RULES) {
+    if (rule.test(path)) return country;
+  }
+  return '';
+}
+
+function imageCountry(urlPath) {
+  const folder = urlPath.match(/\/images\/catalog\/([a-z0-9-]+)\//);
+  if (!folder) {
+    if (urlPath.includes('quetzal-billete-cinco-quetzales-guatemala')) return 'guatemala';
+    return '';
+  }
+  if (folder[1] === 'lazarettos' || folder[1] === 'numismatica') return '';
+  return COUNTRY_ALIAS[folder[1]] ?? folder[1];
+}
+
+function flagOgImage(pathname, html, indexable) {
+  if (!indexable) return;
+  const tag = html.match(/<meta\b[^>]*property=["']og:image["'][^>]*>/i);
+  const content = tag?.[0].match(/\bcontent=["']([^"']+)["']/i);
+  if (!content) return;
+  let urlPath = content[1];
+  try {
+    urlPath = new URL(content[1], 'https://notofilia.com').pathname;
+  } catch {
+    return;
+  }
+  const page = pageCountry(pathname);
+  const image = imageCountry(urlPath);
+  if (urlPath.endsWith(GLOBAL_OG_IMAGE) && page !== 'guatemala') {
+    const message = `${pathname} og:image uses the global fallback`;
+    ogImageWarnings.push(message);
+    warn(message);
+    return;
+  }
+  if (page && image && page !== image) {
+    const message = `${pathname} og:image is ${image} on a ${page} page`;
+    ogImageWarnings.push(message);
+    warn(message);
+  }
+}
+
 async function* walk(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = join(dir, entry.name);
@@ -194,6 +270,7 @@ for (const file of pages) {
   const hasOgImage = /property=["']og:image["']/i.test(html);
   const hasOgAlt = /property=["']og:image:alt["']/i.test(html);
   if (hasOgImage && !hasOgAlt) fail(`${pathname} has og:image without og:image:alt`);
+  flagOgImage(pathname, html, indexable);
   for (const alt of lightboxTriggerAlts(html, decodeEntities)) {
     const problem = specimenAltFailure(alt);
     if (problem) fail(`${pathname} catalog scan alt: ${problem} (${alt.slice(0, 80)})`);
@@ -367,6 +444,8 @@ for (const name of ['collection', 'blog', 'news', 'glossary', 'other']) {
     `${name.padEnd(12)} ${String(row.pages).padStart(5)}  ${String(row.titleWarn).padStart(9)}  ${String(row.titleFail).padStart(9)}  ${String(row.descFail).padStart(16)}`,
   );
 }
+console.log(`og-image flags ${ogImageWarnings.length}`);
+for (const message of ogImageWarnings) console.log(`  og ${message}`);
 console.log(`warnings ${warnings.length}`);
 for (const message of warnings.slice(0, 30)) console.log(`  warn ${message}`);
 if (warnings.length > 30) console.log(`  … ${warnings.length - 30} more warnings`);

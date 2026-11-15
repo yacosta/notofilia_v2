@@ -381,24 +381,15 @@ export const megaNav: NavNode[] = [
         en: 'World polymer banknotes',
         href: POLIMERO_MUNDIAL_PATH,
         column: 'aside',
-        // Country children set `flag` (China `cn`, Malaysia `my`, England `gb`, Canada `ca`). Continents use a silhouette `icon` (asia, europe, north-america).
+        // Each country is a direct link. Asia, Europe, and North America have no hub page, so the menu does not keep an unlinked region label.
         children: [
+          { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
           {
-            id: 'polimero-asia',
-            es: 'Asia',
-            en: 'Asia',
-            icon: 'asia',
-            expanded: true,
-            children: [
-              { id: 'polimero-china', es: 'China', en: 'China', href: CHINA_PATH, flag: 'cn' },
-              {
-                id: 'polimero-malasia',
-                es: 'Malasia',
-                en: 'Malaysia',
-                href: POLIMERO_MALASIA_PATH,
-                flag: 'my',
-              },
-            ],
+            id: 'polimero-malasia',
+            es: 'Malasia',
+            en: 'Malaysia',
+            href: POLIMERO_MALASIA_PATH,
+            flag: 'my',
           },
           {
             id: 'polimero-inglaterra',

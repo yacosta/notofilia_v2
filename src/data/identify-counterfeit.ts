@@ -11,11 +11,15 @@ export function identifyCounterfeitPath(locale: Locale): string {
   return localizePath(IDENTIFY_COUNTERFEIT_PATH, locale);
 }
 
-// TODO(owner): The Banco de la República “billetes auténticos” page sat behind a bot wall on 2026-11-15. Cite it only after the real article is opened. Do not invent a Colombia procedure for a suspected fake.
+// TODO(owner): On 2026-11-15 the Banco de la República pages still did not open.
+// Curl of the billetes hubs returned a Radware captcha, and
+// https://www.banrep.gov.co/es/video-conozca-elementos-seguridad-nuevos-billetes-colombianos
+// returned HTTP 403. Cite the genuine-note page only after the article itself is opened.
+// Do not invent a Colombia procedure for a suspected fake.
 
 export const identifyCounterfeitCopy = {
   es: {
-    metaTitle: 'Cómo identificar un billete falso | Notofilia',
+    metaTitle: 'Cómo identificar un billete falso: guía paso a paso | Notofilia',
     metaDescription:
       'Lista de comprobación para contrastar un billete: papel, filigrana, hilo, intaglio, tinta OVI y serial. Esta página no autentica ni tasa.',
     title: 'Cómo identificar un billete falso',
@@ -56,9 +60,9 @@ export const identifyCounterfeitCopy = {
       'Estas páginas oficiales describen las mismas comprobaciones —filigrana a contraluz, hilo, tinta que cambia de color, tocar e inclinar—. No sustituyen la ficha del ejemplar.',
     sources: [
       {
-        name: 'U.S. Currency Education Program — The Seven Denominations',
-        href: 'https://www.uscurrency.gov/denominations',
-        note: 'Filigrana visible a contraluz, hilo de seguridad y numeral que cambia de color.',
+        name: 'U.S. Currency Education Program — Security features',
+        href: 'https://www.uscurrency.gov/educational-materials/training-course/security',
+        note: 'Tocar el papel, inclinar el billete para la tinta que cambia de color, y mirar a contraluz la filigrana y el hilo.',
       },
       {
         name: 'European Central Bank — Security features',
@@ -80,7 +84,7 @@ export const identifyCounterfeitCopy = {
       'No hay precios, ni un veredicto de autenticidad a distancia, ni un número de población inventado. Un slab de sótano no equivale a PMG o PCGS. Si duda de una pieza de alto valor, el camino es una casa de primer nivel, no una captura de pantalla.',
   },
   en: {
-    metaTitle: 'How to spot a counterfeit note · Checklist | Notofilia',
+    metaTitle: 'How to spot a counterfeit note: a step-by-step guide | Notofilia',
     metaDescription:
       'A checklist for comparing a note: paper, watermark, thread, intaglio, OVI ink, and serial. This page does not authenticate or price a note.',
     title: 'How to spot a counterfeit note',
@@ -121,9 +125,9 @@ export const identifyCounterfeitCopy = {
       'These official pages describe the same checks — a watermark held to the light, a security thread, colour-shifting ink, and feel, look, and tilt. They do not replace the record of a specific note.',
     sources: [
       {
-        name: 'U.S. Currency Education Program — The Seven Denominations',
-        href: 'https://www.uscurrency.gov/denominations',
-        note: 'A watermark visible against the light, a security thread, and a numeral that shifts colour.',
+        name: 'U.S. Currency Education Program — Security features',
+        href: 'https://www.uscurrency.gov/educational-materials/training-course/security',
+        note: 'Feel the paper, tilt the note for the colour-shifting ink, and check the watermark and thread against the light.',
       },
       {
         name: 'European Central Bank — Security features',
