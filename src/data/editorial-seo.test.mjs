@@ -913,6 +913,81 @@ describe('12 November 2026 Springhead Hoard, first part', () => {
   });
 });
 
+describe('15 November 2026 PCGS prototype quarter', () => {
+  it('keeps CoinWeek’s realized price apart from the item page and from the type record', () => {
+    const article = newsArticles.find((item) => item.slug === 'cuarto-1982-prototipo-pcgs-46125');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1982-quarter-pcgs-prototype-46125');
+    assert.equal(article.published, '2026-11-15');
+    assert.equal(article.sourceName, 'CoinWeek');
+    assert.equal(
+      article.sourceUrl,
+      'https://coinweek.com/the-25-cent-quarter-that-launched-pcgs-and-sold-for-46125/',
+    );
+    assert.equal(article.image, '/uploads/cuarto-washington-plata-1963.jpg');
+    assert.equal(article.imageWidth, 2481);
+    assert.equal(article.imageHeight, 1898);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(article.claim.currency, 'USD');
+    assert.equal(article.claim.valueIso, '2023-07-30');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cuarto-washington-plata-1963.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/cuarto-washington-plata-1963-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.equal(article.dek.es, article.description.es);
+    assert.equal(article.dek.en, article.description.en);
+    assert.match(article.claim.noteEs, /US\$46\.125/);
+    assert.match(article.claim.noteEs, /12,5 %/);
+    assert.match(article.claim.noteEs, /US\$4\.320/);
+    assert.match(article.claim.noteEn, /US\$46,125/);
+    assert.match(article.claim.noteEn, /12\.5%/);
+    assert.match(article.claim.noteEn, /another coin/);
+    const sourceUrls = article.primarySources.map((source) => source.url).join('\n');
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const url of sourceUrls.split('\n')) {
+      assert.ok(body.includes(url), url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /1400020/);
+      assert.match(html, /5913/);
+      assert.match(html, /1080286/);
+      assert.match(html, /480[.,]042[.,]788/);
+      assert.match(html, /184[.,]500/);
+      assert.match(html, /50 millones|50 million/);
+      assert.match(html, /40 millones|40 million/);
+      assert.match(html, /Proof-67/);
+      assert.match(html, /Lawrence Blasi/);
+      assert.match(html, /eight-day trip/);
+      assert.match(html, /eight trip/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /\/glosario\/encapsulado\//);
+      assert.match(html, /cuarto-washington-1932-s-heritage-76250/);
+      assert.match(html, /colección virtual de Notofilia|virtual collection/);
+      assert.match(html, /no las copia|does not copy them/);
+      assert.doesNotMatch(html, /photos\.greatcollections\.com|coinweek\.com\/wp-content|168[.,]014[.,]975/);
+    }
+    assert.match(article.bodyHtml.es, /no imprime los US\$46\.125/);
+    assert.match(article.bodyHtml.es, /no descuenta la prima/);
+    assert.match(article.bodyHtml.es, /no elige la/);
+    assert.match(article.bodyHtml.en, /does not print US\$46,125/);
+    assert.match(article.bodyHtml.en, /does not back out the premium/);
+    assert.match(article.bodyHtml.en, /does not choose the/);
+    assert.equal(
+      article.related.find((item) => item.href === '/glosario/numismatica/').dek,
+      'Monedas, billetes y medallas. Este prototipo de 1982 no tiene ficha.',
+    );
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
