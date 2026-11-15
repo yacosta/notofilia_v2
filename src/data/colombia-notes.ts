@@ -25,6 +25,7 @@ export type ColombiaNoteId =
   | '5-pesos-oro-1980-00011943'
   | '10-pesos-oro-1976'
   | '10-pesos-oro-1979'
+  | '10-pesos-oro-1980-00000100'
   | '20-pesos-oro-1983'
   | '50-pesos-oro-1974'
   | '50-pesos-oro-1984'
@@ -2654,6 +2655,129 @@ export const colombiaNotes: ColombiaNote[] = [
         note: {
           es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 205 para el 7 de agosto de 1979 ordinario (Pick 407g); la reposición de la misma fecha es Hernández 206, con asterisco en el anverso entre los títulos. No se publican columnas de precios ni láminas.',
           en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 205 for the ordinary 7 August 1979 (Pick 407g); the replacement of the same date is a separate row, Hernández 206, with an asterisk on the face between the titles. Price columns and plates are not republished.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-pesos-oro-1980-00000100',
+    chapterId: 'banco-de-la-republica',
+    path: `${COLOMBIA_PATH}10-pesos-oro-1980-00000100/`,
+    pick: 'P# 407h · TBB B950o',
+    serial: '00000100',
+    signatures: {
+      es: 'Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario)',
+      en: 'Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario)',
+    },
+    printed: {
+      es: 'Imprenta de Billetes, Bogotá. Emisión de circulación del Banco de la República; fecha en el billete 7 de agosto de 1980. Ocho dígitos con la leyenda «SERIE AZ» impresa dos veces en el anverso —a media altura a la izquierda y arriba a la derecha—, encima de cada serial rojo. González White 2019 (pp. 67–68) titula el pliego DIEZ PESOS 1975 a 1980 AZ y anota que, entre los #179 y #209, solo el #209 lleva serie; el OCR mezcla BG# y fechas, y esta ficha no publica un BG# adivinado. Hernández (8.ª ed., 2023) numera la fila «1980, Serie AZ» como Cód. 208 —Numista concuerda Hernández 208, P# 407h y TBB B950o—. Distinto del 7 de agosto de 1980 ordinario sin serie (Pick 407g / TBB B950n / Hernández 207) y de la reposición con asterisco de la misma fecha (TBB B950nr / Hernández 209). El serial 00000100 es bajo: valor 100 en ocho dígitos, con cinco ceros a la izquierda; no prueba que fuera el centésimo billete físico de la tirada. Formato publicado: 140 × 70 mm. Sin hilo de seguridad ni marca de agua. La tabla BanRep de 1980 registra 65,45 millones de piezas de 10 pesos: toda la producción de esa denominación ese año, no la tirada de la Serie AZ ni de esta fecha.',
+      en: 'Imprenta de Billetes, Bogotá. Banco de la República circulation issue; date on the note 7 August 1980. Eight digits with the legend “SERIE AZ” printed twice on the face — at mid-left and at upper right — above each red serial. González White 2019 (pp. 67–68) titles the DIEZ PESOS 1975 a 1980 AZ spread and notes that, among #179–#209, only #209 carries a series; the OCR jumbles BG# against dates, and this record does not publish a guessed BG#. Hernández (8th ed., 2023) numbers the “1980, Serie AZ” row as Cód. 208 — Numista concurs Hernández 208, P# 407h, and TBB B950o. Distinct from the ordinary 7 August 1980 without a series letter (Pick 407g / TBB B950n / Hernández 207) and from the asterisk replacement of the same date (TBB B950nr / Hernández 209). Serial 00000100 is low: value 100 on eight digits, with five leading zeros; it does not prove this was the hundredth note physically printed. Published size: 140 × 70 mm. No security thread and no watermark. BanRep’s 1980 table records 65.45 million 10-peso notes: all production of that face value that year, not the Series AZ printage or this date’s printage.',
+    },
+    images: {
+      composite: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-composite.jpg',
+      front: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-front.jpg',
+      back: '/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-back.jpg',
+      width: 1024,
+      height: 512,
+    },
+    title: {
+      es: '10 pesos oro · Serie AZ · 1980',
+      en: '10 pesos oro · Series AZ · 1980',
+    },
+    kicker: {
+      es: 'Colombia · Banco de la República · Imprenta de Billetes',
+      en: 'Colombia · Banco de la República · Imprenta de Billetes',
+    },
+    lead: {
+      es: 'Diez pesos oro Serie AZ, Pick 407h: serial bajo 00000100, 7 de agosto de 1980. Esta ficha reúne anverso y reverso de la misma pieza, sin encapsular. No es el 407g ordinario de 1980 sin serie, ni la reposición con asterisco de la misma fecha (Hernández 209), ni el 407g de 1979 de esta vitrina.',
+      en: 'A Series AZ ten-peso oro, Pick 407h: low serial 00000100, 7 August 1980. This record gathers the face and back of the same unslabbed note. It is not the ordinary 1980 407g without a series letter, nor the asterisk replacement of the same date (Hernández 209), nor this case’s 1979 407g.',
+    },
+    description: {
+      es: 'El Banco de la República imprimió este diez pesos oro en su Imprenta de Billetes, abierta en Bogotá el 23 de octubre de 1959. El anverso, en lila, verde, azul y pardo sobre policromía, lleva a la izquierda el retrato de Antonio Nariño en uniforme —rotulado «NARIÑO» bajo el busto— y a la derecha un cóndor andino posado sobre la cifra 10. Al centro, la promesa de pagar al portador diez pesos oro. Los seriales van en rojo: 00000100, una vez a media altura a la izquierda y otra arriba a la derecha; encima de cada uno se lee «SERIE AZ» en negro. La fecha impresa es «AGOSTO 7 DE 1980» sobre «BOGOTA, COLOMBIA». El pie del anverso lee «IMPRENTA DE BILLETES - BOGOTA». Las firmas son las de Rafael Gama Quijano (gerente) y Francisco José Ortega (secretario), el par que Numista asigna a esta fecha (RGQ, FJO). No hay asterisco entre GERENTE y SECRETARIO: no es la reposición Hernández 209 / TBB B950nr. El reverso, en azul pizarra sobre marco policromado, muestra las estatuas precolombinas del Parque Arqueológico de San Agustín —rotuladas «MONUMENTOS ARQUEOLOGICOS DE SAN AGUSTIN»—, el sello del banco con la Libertad («BANCO DE LA REPUBLICA · COLOMBIA») y las cifras 10. El Pick separa esta variedad como 407h; The Banknote Book la numera B950o; Hernández Cód. 208. Distinto del 407g de 07.08.1979 y 07.08.1980 sin serie (en esta vitrina el serial 98040194 de 1979), de la reposición de julio de 1976 (serial 00142533) y del 10 pesos oro ABNC de 1943 (Pick 389b). Nariño se asocia a la impresión de la Declaración de los Derechos del Hombre y del Ciudadano en la Nueva Granada en 1793; el reverso remite al patrimonio arqueológico de San Agustín. El serial 00000100 es bajo (valor 100); no establece el orden físico de impresión. CGB ha descrito ejemplares AZ como reposición; Numista separa la Serie AZ del 1980 con asterisco. Esta ficha usa «Serie AZ» sin atribuir reposición hasta que esa lectura quede resuelta. Esta pieza de la colección se presenta sin encapsular; las fotografías muestran toning y puntos de foxing, sobre todo en los márgenes.',
+      en: 'The Banco de la República printed this ten-peso oro at its Imprenta de Billetes, opened in Bogotá on 23 October 1959. The face, lilac, green, blue, and brown on a multicolour underprint, carries Antonio Nariño’s portrait in uniform at left — labelled “NARIÑO” under the bust — and an Andean condor perched on the figure 10 at right. At center is the promise to pay the bearer ten gold pesos. The serials are in red: 00000100, once at mid-left and once at upper right; above each sits “SERIE AZ” in black. The printed date is “AGOSTO 7 DE 1980” over “BOGOTA, COLOMBIA.” The face imprint reads “IMPRENTA DE BILLETES - BOGOTA.” The signatures are those of Rafael Gama Quijano (gerente) and Francisco José Ortega (secretario), the pair Numista assigns to this date (RGQ, FJO). There is no asterisk between GERENTE and SECRETARIO: it is not the Hernández 209 / TBB B950nr replacement. The back, slate blue in a multicolour frame, shows the pre-Columbian statues of the San Agustín Archaeological Park — labelled “MONUMENTOS ARQUEOLOGICOS DE SAN AGUSTIN” — the bank’s Liberty seal (“BANCO DE LA REPUBLICA · COLOMBIA”), and the figures 10. Pick separates this variety as 407h; The Banknote Book numbers it B950o; Hernández Cód. 208. Distinct from 407g of 07.08.1979 and 07.08.1980 without a series letter (in this case the 1979 serial 98040194), from the July 1976 replacement (serial 00142533), and from the 1943 ABNC 10 pesos oro (Pick 389b). Nariño is associated with printing the Declaration of the Rights of Man and of the Citizen in New Granada in 1793; the reverse points to San Agustín’s archaeological heritage. Serial 00000100 is low (value 100); it does not establish physical print order. CGB has described AZ examples as replacements; Numista separates Series AZ from the 1980 asterisk replacement. This record uses “Series AZ” without calling it a replacement until that reading is resolved. This collection piece is shown unslabbed; the photographs show toning and foxing spots, especially at the margins.',
+    },
+    frontCaption: {
+      es: 'Anverso del 10 pesos oro Serie AZ, Pick 407h: Nariño, cóndor, «SERIE AZ», serial bajo 00000100 y fecha 7 de agosto de 1980.',
+      en: 'Face of the Series AZ 10 pesos oro, Pick 407h: Nariño, the condor, “SERIE AZ,” low serial 00000100, and the date 7 August 1980.',
+    },
+    backCaption: {
+      es: 'Reverso del 10 pesos oro Serie AZ, Pick 407h: monumentos arqueológicos de San Agustín y sello del Banco de la República.',
+      en: 'Back of the Series AZ 10 pesos oro, Pick 407h: archaeological monuments of San Agustín and the Banco de la República seal.',
+    },
+    scarcity: {
+      es: 'González White 2019 (pp. 67–68) titula el pliego 1975 a 1980 AZ y reserva la serie al #209; esta ficha no publica un BG# ni una emisión adivinados a partir del OCR. Hernández (8.ª ed., 2023) numera «1980, Serie AZ» como Cód. 208. Numista agrupa el diseño bajo N# 203973 y marca la frecuencia de la fila P# 407h / TBB B950o / Hernández 208 en un 23 % entre quienes poseen el tipo, frente al 47 % del 07.08.1980 ordinario sin serie (407g / B950n / Hernández 207) y al 0,7 % de la reposición con asterisco (B950nr / Hernández 209). Esas cifras son estimaciones de población de catálogo, no tiradas oficiales. El serial 00000100 es bajo (1–100 en el ancho impreso); no se inventa aquí una tirada de la Serie AZ. No es prueba ni espécimen, ni el 407g de 1979, ni la reposición de 1976. No se publican columnas de precios de Hernández ni de Numista. La tabla BanRep de 1980 (65,45 millones de piezas de 10 pesos) es un total de denominación-año, no la tirada de esta variedad.',
+      en: 'González White 2019 (pp. 67–68) titles the 1975–1980 AZ spread and reserves the series letter to #209; this record does not publish a guessed BG# or emisión from the OCR. Hernández (8th ed., 2023) numbers “1980, Serie AZ” as Cód. 208. Numista groups the design under N# 203973 and marks the P# 407h / TBB B950o / Hernández 208 row’s frequency at 23% among owners of the type, against 47% for the ordinary 07.08.1980 without a series letter (407g / B950n / Hernández 207) and 0.7% for the asterisk replacement (B950nr / Hernández 209). Those figures are catalog-population estimates, not official printages. Serial 00000100 is low (1–100 on the printed width); no Series AZ printage is invented here. It is neither a proof nor a specimen, nor the 1979 407g, nor the 1976 replacement. Hernández and Numista price columns are not republished. BanRep’s 1980 table (65.45 million 10-peso notes) is a denomination-year total, not this variety’s printage.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial 00000100. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial 00000100 has not been independently verified. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular · toning y foxing visibles en las fotografías',
+      en: 'Unslabbed · toning and foxing visible in the photographs',
+    },
+    sources: [
+      {
+        href: 'http://www.banknote.ws/COLLECTION/countries/AME/COL/COL0407.htm',
+        es: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        en: 'Bank Note Museum — Colombia P-407, 10 pesos oro (1963–1980)',
+        note: {
+          es: '407h: 07.08.1980, serie AZ; anverso Nariño y cóndor, reverso San Agustín. Distinto del 407g (07.08.1979 y 07.08.1980, sin serie) y del 407f (1974–1978).',
+          en: '407h: 07.08.1980, series AZ; Nariño and condor on the face, San Agustín on the back. Distinct from 407g (07.08.1979 and 07.08.1980, without a series letter) and from 407f (1974–1978).',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note203973.html',
+        es: 'Numista — Colombia 10 pesos oro, N# 203973',
+        en: 'Numista — Colombia 10 pesos oro, N# 203973',
+        note: {
+          es: '07.08.1980 Serie AZ: P# 407h / TBB B950o; Hernández 208; firmas RGQ y FJO; «Serie AZ» a media altura izquierda y arriba a la derecha; 140 × 70 mm; sin hilo; frecuencia 23 % en el tipo. El ordinario de la misma fecha es P# 407g / TBB B950n / Hernández 207; la reposición con asterisco es TBB B950nr / Hernández 209.',
+          en: '07.08.1980 Series AZ: P# 407h / TBB B950o; Hernández 208; signatures RGQ and FJO; “Serie AZ” at mid-left and upper right; 140 × 70 mm; no thread; 23% frequency within the type. The ordinary note of the same date is P# 407g / TBB B950n / Hernández 207; the asterisk replacement is TBB B950nr / Hernández 209.',
+        },
+      },
+      {
+        href: 'https://www.pmgnotes.com/priceguide/world-note-prices.aspx?deid=1781677&subcat=1961-1964-issue',
+        es: 'PMG — Colombia 10 pesos oro, guía de precios (variedad AZ)',
+        en: 'PMG — Colombia 10 pesos oro price guide (AZ variety)',
+        note: {
+          es: 'PMG distingue la variedad AZ como P-407h, separada del 1980 ordinario P-407g. Esta ficha no republica columnas de precios.',
+          en: 'PMG distinguishes the AZ variety as P-407h, separate from the ordinary 1980 P-407g. Price columns are not republished here.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/billetes-monedas/produccion-circulacion',
+        es: 'Banco de la República — Producción y circulación de billetes y monedas',
+        en: 'Banco de la República — Banknote and coin production and circulation',
+        note: {
+          es: 'Producción 1980: 65,45 millones de piezas de 10 pesos. La tabla no separa fecha, Serie AZ, firmas ni reposición; no es la tirada de este 7 de agosto de 1980 ni de la variedad AZ.',
+          en: '1980 production: 65.45 million 10-peso notes. The table does not split date, Series AZ, signatures, or replacement; it is not the printage of this 7 August 1980 or of the AZ variety.',
+        },
+      },
+      {
+        href: 'https://www.banrep.gov.co/es/node/51381',
+        es: 'Banco de la República — 60 años de la Imprenta de Billetes',
+        en: 'Banco de la República — 60 years of the Imprenta de Billetes',
+        note: {
+          es: '23 de octubre de 1959; primer trabajo: el 1 peso azul impreso en Bogotá (Pick 404). González White asigna a esa planta las fechas de 1975–1980 de este 10 pesos.',
+          en: '23 October 1959; first job: the blue 1-peso printed in Bogotá (Pick 404). González White assigns the 1975–1980 dates of this 10-peso to that plant.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/L100183',
+        es: 'Pedro Pablo Hernández — Monedas y billetes de Colombia (Numista L100183)',
+        en: 'Pedro Pablo Hernández — Coins and Banknotes of Colombia (Numista L100183)',
+        note: {
+          es: '8.ª ed. 2023 (Numista L100183). Numista cita Hernández 208 para el 7 de agosto de 1980 Serie AZ (Pick 407h / TBB B950o); el ordinario de la misma fecha es Hernández 207 y la reposición con asterisco Hernández 209. No se publican columnas de precios ni láminas.',
+          en: '8th ed. 2023 (Numista L100183). Numista cites Hernández 208 for the 7 August 1980 Series AZ (Pick 407h / TBB B950o); the ordinary note of the same date is Hernández 207 and the asterisk replacement is Hernández 209. Price columns and plates are not republished.',
+        },
+      },
+      {
+        href: 'https://www.bibliotecanacional.gov.co/content/antonio-narino-la-impresion-de-los-derechos-del-hombre',
+        es: 'Biblioteca Nacional de Colombia — Antonio Nariño y la impresión de los Derechos del Hombre',
+        en: 'Biblioteca Nacional de Colombia — Antonio Nariño and the printing of the Rights of Man',
+        note: {
+          es: 'Contexto histórico del retrato: Nariño y la impresión de la Declaración de los Derechos del Hombre y del Ciudadano en la Nueva Granada (1793).',
+          en: 'Historical context for the portrait: Nariño and the printing of the Declaration of the Rights of Man and of the Citizen in New Granada (1793).',
         },
       },
     ],

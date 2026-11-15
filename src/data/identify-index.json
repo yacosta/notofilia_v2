@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T10:50:51.649Z",
+  "generatedAt": "2026-11-15T04:01:58.317Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -1873,6 +1873,45 @@
       "title": {
         "es": "10 pesos oro · Banco de la República · 1979",
         "en": "10 pesos oro · Banco de la República · 1979"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1980-00000100",
+      "face": "front",
+      "hash": "d1d9a94e44536be8",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1980-00000100/",
+      "pick": "P# 407h · TBB B950o",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-composite.jpg",
+      "title": {
+        "es": "10 pesos oro · Serie AZ · 1980",
+        "en": "10 pesos oro · Series AZ · 1980"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1980-00000100",
+      "face": "front",
+      "hash": "49ca8a34aea57bb8",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1980-00000100/",
+      "pick": "P# 407h · TBB B950o",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-front.jpg",
+      "title": {
+        "es": "10 pesos oro · Serie AZ · 1980",
+        "en": "10 pesos oro · Series AZ · 1980"
+      }
+    },
+    {
+      "pieceId": "10-pesos-oro-1980-00000100",
+      "face": "back",
+      "hash": "41535553c02d2a84",
+      "kind": "banknote",
+      "path": "/coleccion/colombia/10-pesos-oro-1980-00000100/",
+      "pick": "P# 407h · TBB B950o",
+      "image": "/images/catalog/colombia/colombia-banco-de-la-republica-10-pesos-oro-1980-00000100-back.jpg",
+      "title": {
+        "es": "10 pesos oro · Serie AZ · 1980",
+        "en": "10 pesos oro · Series AZ · 1980"
       }
     },
     {
@@ -6491,6 +6530,19 @@
       }
     },
     {
+      "pieceId": "prusmack-educational-1-dolar-1896-12-250",
+      "face": "front",
+      "hash": "884bcd97d3d30913",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/tim-prusmack/1-dolar-educational-1896-12-250/",
+      "pick": "Tim Prusmack · 12/250",
+      "image": "/images/catalog/united-states/united-states-tim-prusmack-1-dollar-1896-history-instructing-youth-print-12-250.jpg",
+      "title": {
+        "es": "Estampa · Tim Prusmack · 1 dólar Educational · 1896",
+        "en": "Print · Tim Prusmack · Educational $1 · 1896"
+      }
+    },
+    {
       "pieceId": "20-dolares-1997-dragon-hong-kong",
       "face": "front",
       "hash": "00713355b3756100",
@@ -7073,6 +7125,45 @@
       "title": {
         "es": "20 centavos · Alfonso XIII · 1895 PGV",
         "en": "20 Centavos · Alfonso XIII · 1895 PGV"
+      }
+    },
+    {
+      "pieceId": "40-centavos-1896-pgv",
+      "face": "front",
+      "hash": "927515b294555142",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/",
+      "pick": "KM#23 · Calicó 127 · Numista N#17452",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-composite.jpg",
+      "title": {
+        "es": "40 centavos · Alfonso XIII · 1896 PGV",
+        "en": "40 Centavos · Alfonso XIII · 1896 PGV"
+      }
+    },
+    {
+      "pieceId": "40-centavos-1896-pgv",
+      "face": "front",
+      "hash": "221649552f3b1a80",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/",
+      "pick": "KM#23 · Calicó 127 · Numista N#17452",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-front.jpg",
+      "title": {
+        "es": "40 centavos · Alfonso XIII · 1896 PGV",
+        "en": "40 Centavos · Alfonso XIII · 1896 PGV"
+      }
+    },
+    {
+      "pieceId": "40-centavos-1896-pgv",
+      "face": "back",
+      "hash": "4c0a4969c97b228d",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/40-centavos-1896-pgv/",
+      "pick": "KM#23 · Calicó 127 · Numista N#17452",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-40-centavos-1896-alfonso-xiii-pgv-back.jpg",
+      "title": {
+        "es": "40 centavos · Alfonso XIII · 1896 PGV",
+        "en": "40 Centavos · Alfonso XIII · 1896 PGV"
       }
     },
     {
