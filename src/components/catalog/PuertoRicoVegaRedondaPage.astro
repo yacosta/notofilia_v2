@@ -24,6 +24,8 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = vegaRedondaCopy[locale];
+const cover = vegaRedondaTokens[0];
+if (!cover) throw new Error('Vega Redonda series has no token to use as og:image');
 const pathname = vegaRedondaPath(locale);
 const jsonLd = collectionPageJsonLd({
   locale,
@@ -43,7 +45,14 @@ const jsonLd = collectionPageJsonLd({
 });
 ---
 
-<Layout title={`${t.metaTitle} · Notofilia`} description={t.metaDescription} locale={locale} pathname={pathname}>
+<Layout
+  title={`${t.metaTitle} · Notofilia`}
+  description={t.metaDescription}
+  locale={locale}
+  pathname={pathname}
+  ogImage={cover.images.front}
+  ogImageAlt={cover.caption[locale]}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
