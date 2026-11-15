@@ -40,6 +40,29 @@ describe('image resize fallback', () => {
   });
 });
 
+describe('web vitals rum', () => {
+  it('loads a same-origin deferred head script and allows the collector hosts', () => {
+    const layout = readFileSync(new URL('../layouts/Layout.astro', import.meta.url), 'utf8');
+    const script = readFileSync(new URL('../../public/web-vitals-rum.js', import.meta.url), 'utf8');
+    const policy = SECURITY_HEADERS['Content-Security-Policy-Report-Only'];
+    assert.match(layout, /<script is:inline defer src="\/web-vitals-rum.js"><\/script>/);
+    assert.match(script, /https:\/\/rum-collector\.leaderint\.workers\.dev/);
+    assert.match(script, /https:\/\/web-vitals-script\.leaderint\.workers\.dev/);
+    assert.match(script, /site_id: SITE_ID/);
+    assert.match(script, /const SITE_ID = 19828/);
+    assert.match(script, /back-forward-cache/);
+    assert.match(script, /onCLS\(sendToAnalytics\)/);
+    assert.match(script, /onINP\(sendToAnalytics\)/);
+    assert.match(script, /onLCP\(sendToAnalytics\)/);
+    assert.match(script, /onTTFB\(sendToAnalytics\)/);
+    assert.match(policy, /script-src[^;]*https:\/\/web-vitals-script\.leaderint\.workers\.dev/);
+    assert.match(policy, /connect-src[^;]*https:\/\/rum-collector\.leaderint\.workers\.dev/);
+    const scriptSrc = policy.split('; ').find((part) => part.startsWith('script-src '));
+    assert.ok(scriptSrc);
+    assert.doesNotMatch(scriptSrc, /unsafe-inline|unsafe-eval/);
+  });
+});
+
 describe('preview image fallback script', () => {
   it('is a same-origin head script, not an inline handler', () => {
     const layout = readFileSync(new URL('../layouts/Layout.astro', import.meta.url), 'utf8');

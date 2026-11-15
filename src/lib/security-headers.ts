@@ -6,11 +6,11 @@
  */
 export const CONTENT_SECURITY_POLICY_REPORT_ONLY = [
   "default-src 'self'",
-  "script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com https://news.google.com",
+  "script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com https://news.google.com https://web-vitals-script.leaderint.workers.dev",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.google-analytics.com",
   "font-src 'self'",
-  "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://challenges.cloudflare.com https://api.web3forms.com",
+  "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://challenges.cloudflare.com https://api.web3forms.com https://rum-collector.leaderint.workers.dev",
   "frame-src https://challenges.cloudflare.com https://news.google.com",
   "form-action 'self' https://api.web3forms.com",
   "frame-ancestors 'none'",
