@@ -1,0 +1,9 @@
+---
+import PuertoRicoCoinPage from '../../../../../components/catalog/PuertoRicoCoinPage.astro';
+import { coinById } from '../../../../../data/puerto-rico-coinage';
+
+const coin = coinById('1-peso-1895-pgv');
+if (!coin) throw new Error('Missing Puerto Rico 1895 1 peso catalog coin');
+---
+
+<PuertoRicoCoinPage locale="en" coin={coin} />

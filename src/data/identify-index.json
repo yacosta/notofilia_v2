@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T14:37:08.412Z",
+  "generatedAt": "2026-11-16T01:40:10.479Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -7086,6 +7086,45 @@
       "title": {
         "es": "20 pesos · Serie Victory n.º 66",
         "en": "20 Pesos · Victory Series No. 66"
+      }
+    },
+    {
+      "pieceId": "1-peso-1895-pgv",
+      "face": "front",
+      "hash": "2a53b4b6d3553323",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/1-peso-1895-pgv/",
+      "pick": "KM#24 · Numista N#17449",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24-composite.jpg",
+      "title": {
+        "es": "1 peso · Alfonso XIII · 1895 PGV",
+        "en": "1 Peso · Alfonso XIII · 1895 PGV"
+      }
+    },
+    {
+      "pieceId": "1-peso-1895-pgv",
+      "face": "front",
+      "hash": "9c4909daa059534c",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/1-peso-1895-pgv/",
+      "pick": "KM#24 · Numista N#17449",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24-front.jpg",
+      "title": {
+        "es": "1 peso · Alfonso XIII · 1895 PGV",
+        "en": "1 Peso · Alfonso XIII · 1895 PGV"
+      }
+    },
+    {
+      "pieceId": "1-peso-1895-pgv",
+      "face": "back",
+      "hash": "1c794dea5c35430f",
+      "kind": "coin",
+      "path": "/coleccion/puerto-rico-numismatica/1-peso-1895-pgv/",
+      "pick": "KM#24 · Numista N#17449",
+      "image": "/images/catalog/puerto-rico/puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24-back.jpg",
+      "title": {
+        "es": "1 peso · Alfonso XIII · 1895 PGV",
+        "en": "1 Peso · Alfonso XIII · 1895 PGV"
       }
     },
     {

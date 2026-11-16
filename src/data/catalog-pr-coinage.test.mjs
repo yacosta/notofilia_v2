@@ -40,7 +40,7 @@ describe('Puerto Rico provincial coinage order', () => {
     const { puertoRicoCoins } = await import('./puerto-rico-coinage.ts');
     assert.deepEqual(
       puertoRicoCoins.map((coin) => coin.id),
-      ['10-centavos-alfonso-xiii-pgv', '20-centavos-1895-pgv', '40-centavos-1896-pgv'],
+      ['1-peso-1895-pgv', '10-centavos-alfonso-xiii-pgv', '20-centavos-1895-pgv', '40-centavos-1896-pgv'],
     );
   });
 });
@@ -196,5 +196,52 @@ describe('Puerto Rico 1896 40 centavos PGV', () => {
     assert.match(data, /The photographs are of the object/);
     assert.doesNotMatch(data, /El archivo todavía no conserva las fotografías/);
     assert.doesNotMatch(data, /The archive does not yet hold photographs/);
+  });
+});
+
+describe('Puerto Rico 1895 1 peso PGV', () => {
+  it('registers one bilingual no-serial holding for KM#24', () => {
+    const esPeso = readFileSync(
+      new URL('../pages/coleccion/puerto-rico-numismatica/1-peso-1895-pgv/index.astro', import.meta.url),
+      'utf8',
+    );
+    const enPeso = readFileSync(
+      new URL('../pages/en/collection/puerto-rico-numismatics/1-peso-1895-pgv/index.astro', import.meta.url),
+      'utf8',
+    );
+    assert.equal(
+      localizePath('/coleccion/puerto-rico-numismatica/1-peso-1895-pgv/', 'en'),
+      '/en/collection/puerto-rico-numismatics/1-peso-1895-pgv/',
+    );
+    assert.match(data, /id: '1-peso-1895-pgv'/);
+    assert.match(data, /no_serial_reason:\n      'Milled Puerto Rican provincial silver 1 peso/);
+    assert.match(data, /KM#24 · Numista N#17449/);
+    assert.match(data, /8\.500\.000/);
+    assert.match(data, /8,500,000/);
+    assert.match(data, /8\.500\.021/);
+    assert.match(data, /8,500,021/);
+    assert.match(data, /22,5 g/);
+    assert.match(data, /22\.5 g/);
+    assert.match(data, /0,7234 oz troy/);
+    assert.match(data, /0\.7234 troy oz/);
+    assert.match(data, /27 flores de lis/);
+    assert.match(data, /27 fleurs-de-lis/);
+    assert.match(data, /1 PESO = 5 P\.TAS/);
+    assert.match(data, /presentación limpiada y editada/);
+    assert.match(data, /cleaned, edited presentation/);
+    assert.doesNotMatch(data, /serial: '/);
+    assert.doesNotMatch(data, /cert_number:/);
+    assert.doesNotMatch(data, /\$\d+/);
+    assert.match(holdings, /id: 'pr-1-peso-1895-pgv', kind: 'coin', country: 'PR'/);
+    assert.match(holdings, /pr-1895-1-peso-km24/);
+    assert.match(esPeso, /PuertoRicoCoinPage locale="es"/);
+    assert.match(enPeso, /PuertoRicoCoinPage locale="en"/);
+    for (const face of ['front', 'back', 'composite']) {
+      assert.match(
+        data,
+        new RegExp(`puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24-${face}\\.jpg`),
+      );
+    }
+    assert.match(data, /width: 1024,\n      height: 512,\n      faceWidth: 512,\n      faceHeight: 512/);
   });
 });

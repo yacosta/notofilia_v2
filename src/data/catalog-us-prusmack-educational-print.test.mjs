@@ -94,15 +94,15 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'co-1980-10-pesos-oro-00000100');
-    assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'co-1980-10-pesos-oro-p407h');
+    assert.equal(additions.at(-1)?.id, 'pr-1-peso-1895-pgv');
+    assert.equal(additions.at(-1)?.kind, 'coin');
+    assert.equal(catalogAdditions.at(-1)?.id, 'pr-1895-1-peso-km24');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
     assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'co-1980-10-pesos-oro-00000100');
-    assert.match(milestones[0]?.href ?? '', /10-pesos-oro-1980-00000100/);
-    assert.match(milestones[0]?.image ?? '', /10-pesos-oro-1980-00000100/);
+    assert.equal(milestones[0]?.holdingId, 'pr-1-peso-1895-pgv');
+    assert.match(milestones[0]?.href ?? '', /puerto-rico-numismatica\/1-peso-1895-pgv/);
+    assert.match(milestones[0]?.image ?? '', /puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24/);
     const prusmackCard = milestones.find((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250');
     assert.ok(prusmackCard);
     assert.match(prusmackCard.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);

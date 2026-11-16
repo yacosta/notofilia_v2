@@ -183,6 +183,11 @@ if (!puertoRico10Centavos) {
   throw new Error('Missing Puerto Rico 10 centavos for mega-nav');
 }
 
+const puertoRico1Peso = puertoRicoCoinById('1-peso-1895-pgv');
+if (!puertoRico1Peso) {
+  throw new Error('Missing Puerto Rico 1895 1 peso for mega-nav');
+}
+
 const puertoRico40Centavos = puertoRicoCoinById('40-centavos-1896-pgv');
 if (!puertoRico40Centavos) {
   throw new Error('Missing Puerto Rico 1896 40 centavos for mega-nav');
@@ -635,6 +640,13 @@ export const megaNav: NavNode[] = [
         flag: 'pr',
         column: 'peer',
         children: [
+          {
+            id: 'pr-1-peso-1895-pgv',
+            es: puertoRico1Peso.title.es,
+            en: puertoRico1Peso.title.en,
+            href: puertoRico1Peso.path,
+            holding: true,
+          },
           {
             id: 'pr-10-centavos-alfonso-xiii-pgv',
             es: puertoRico10Centavos.title.es,
