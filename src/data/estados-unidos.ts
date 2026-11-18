@@ -156,8 +156,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Legal Tender Notes, or greenbacks: the legal-tender federal paper that replaced Demand Notes, with a red seal.',
     },
     body: {
-      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Ya tiene ficha el 2 dólares de la serie 1917, Fr. 60, serial B50400302A, de tamaño grande. Ya tiene ficha el 5 dólares de la serie 1907, Fr. 91, serial M12980830, el Woodchopper, de tamaño grande. Ya tiene ficha el 1 dólar de la serie 1917, Fr. 39, serial T55297699A, reverso Sawhorse, también de tamaño grande. Ya tiene ficha el 1 dólar de la serie 1928, Fr. 1500, serial A01772521A, reverso Funnyback, de tamaño pequeño. Esta vitrina reunirá también el 100 dólares de 1966, de tamaño pequeño.',
-      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. The Series 1917 $2, Fr. 60, serial B50400302A, a large-size note, already has a note page. The Series 1907 $5, Fr. 91, serial M12980830, the Woodchopper, a large-size note, already has a note page. The Series 1917 $1, Fr. 39, serial T55297699A, Sawhorse reverse, a large-size note, already has a note page. The Series 1928 $1, Fr. 1500, serial A01772521A, Funnyback reverse, a small-size note, already has a note page. This case will also gather the 1966 $100, small-size.',
+      es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes —también Legal Tender Notes o greenbacks— como moneda de curso legal para deudas públicas y privadas. El U.S. Currency Education Program los sitúa después de los Demand Notes, a los que sustituyeron; el apodo greenback vino de aquellos reversos verdes. Al principio las grabaron compañías privadas y el Tesoro solo selló y cortó. El BEP empezó a grabar anversos y sellos de la serie 1869. El sello y los seriales rojos distinguen el tipo. La última entrega del BEP al Tesoro fue en 1971; desde el 21 de enero de 1971 no se ponen en circulación. Los ejemplares pendientes siguen siendo redimibles a la par. Ya tiene ficha el 2 dólares de la serie 1917, Fr. 60, serial B50400302A, de tamaño grande. Ya tiene ficha el 5 dólares de la serie 1907, Fr. 91, serial M12980830, el Woodchopper, de tamaño grande. Ya tiene ficha el 1 dólar de la serie 1917, Fr. 39, serial T55297699A, reverso Sawhorse, también de tamaño grande. Ya tiene ficha el 1 dólar de la serie 1928, Fr. 1500, serial A01772521A, reverso Funnyback, de tamaño pequeño. Ya tiene ficha el 5 dólares de la serie 1963 con estrella, Fr. 1536★, serial ★02955091A, sello rojo y lema IN GOD WE TRUST, de tamaño pequeño. Esta vitrina reunirá también el 100 dólares de 1966, de tamaño pequeño.',
+      en: 'The act of 25 February 1862 authorized United States Notes — also Legal Tender Notes or greenbacks — as legal tender for public and private debts. The U.S. Currency Education Program places them after Demand Notes, which they replaced; the nickname “greenback” came from those green backs. At first private banknote companies engraved them and the Treasury only sealed and cut. The BEP began engraving faces and seals with Series 1869. A red seal and red serials mark the type. The last BEP delivery to the Treasury was in 1971; none have been placed in circulation since 21 January 1971. Outstanding notes remain redeemable at face value. The Series 1917 $2, Fr. 60, serial B50400302A, a large-size note, already has a note page. The Series 1907 $5, Fr. 91, serial M12980830, the Woodchopper, a large-size note, already has a note page. The Series 1917 $1, Fr. 39, serial T55297699A, Sawhorse reverse, a large-size note, already has a note page. The Series 1928 $1, Fr. 1500, serial A01772521A, Funnyback reverse, a small-size note, already has a note page. The Series 1963 $5 star, Fr. 1536★, serial ★02955091A, red seal and the motto IN GOD WE TRUST, a small-size note, already has a note page. This case will also gather the 1966 $100, small-size.',
     },
   },
   {
@@ -409,7 +409,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), seriales L68013147A y L69086875A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002, y la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 5 dólares United States Note de la serie 1963 con estrella (P#383; Fr. 1536★), serial ★02955091A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), seriales L68013147A y L69086875A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002, y la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -436,7 +436,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serials L68013147A and L69086875A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, and the Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1963 United States Note $5 star (P#383; Fr. 1536★), serial ★02955091A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serials L68013147A and L69086875A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, and the Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -1399,6 +1399,7 @@ export type UnitedStatesNoteId =
   | '1-dolar-serie-1917'
   | '2-dolares-serie-1917'
   | '1-dolar-serie-1928'
+  | '5-dolares-serie-1963-estrella'
   | '5-dolares-city-bank-new-haven'
   | '50-dolares-canal-bank-nueva-orleans'
   | '5-dolares-confederados-1864'
@@ -5495,6 +5496,185 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'United States Notes: última puesta en circulación el 21 de enero de 1971. Los ejemplares pendientes siguen siendo redimibles a la par.',
           en: 'United States Notes: last placed in circulation 21 January 1971. Outstanding notes remain redeemable at face.',
+        },
+      },
+    ],
+  },
+  {
+    id: '5-dolares-serie-1963-estrella',
+    chapterId: 'us-notes',
+    path: '/coleccion/estados-unidos/5-dolares-serie-1963-estrella/',
+    pathEn: '/collection/united-states/5-dollars-series-1963-star/',
+    pick: 'Fr. 1536★',
+    friedberg: 'Fr. 1536★',
+    scwpm: 'P#383',
+    serial: '★02955091A',
+    serial_display: '★02955091A',
+    signatures: {
+      es: 'Kathryn O’Hay Granahan (tesorera de los Estados Unidos) y C. Douglas Dillon (secretario del Tesoro)',
+      en: 'Kathryn O’Hay Granahan (Treasurer of the United States) and C. Douglas Dillon (Secretary of the Treasury)',
+    },
+    printed: {
+      es: 'Bureau of Engraving and Printing, Washington, D.C. Serie impresa 1963, como SERIES 1963. La designación de serie no prueba que este ejemplar se imprimiera en el año calendario 1963. USPaperMoney.Info sitúa las entregas de esta serie al Tesoro entre marzo de 1964 y noviembre de 1967, y no publica un desglose por fecha de producción. El tramo ordinario es A00000001A–A63360000A (63.360.000). El tramo de estrella es ★00000001A–★03840000A (3.840.000), en seis corridas. El serial ★02955091A cae en ese intervalo de reposición. Posición de hoja D3, plancha de anverso D8 y plancha de reverso 2. Las firmas impresas son Granahan–Dillon (Fr. 1536★; P#383). El contador 02955091 es ordinario: no es bajo (1–100) y no es fancy; la estrella identifica la reposición. Numista da al tipo 156 × 67 mm; no es una medición de esta pieza.',
+      en: 'Bureau of Engraving and Printing, Washington, D.C. Printed Series 1963, as SERIES 1963. The series designation does not prove that this specimen was printed in calendar year 1963. USPaperMoney.Info places deliveries of this series to the Treasury between March 1964 and November 1967, and does not publish a production-date breakdown. The regular range is A00000001A–A63360000A (63,360,000). The star range is ★00000001A–★03840000A (3,840,000), in six print runs. Serial ★02955091A falls in that replacement span. Sheet position D3, face plate D8, and back plate 2. The printed signatures are Granahan–Dillon (Fr. 1536★; P#383). Counter 02955091 is ordinary: it is not low (1–100) and it is not fancy; the star identifies the replacement. Numista gives the type as 156 × 67 mm. That is not a measurement of this piece.',
+    },
+    facts: [
+      {
+        label: { es: 'Posición de hoja', en: 'Sheet position' },
+        value: { es: 'D3', en: 'D3' },
+      },
+      {
+        label: { es: 'Plancha de anverso', en: 'Face plate' },
+        value: { es: 'D8', en: 'D8' },
+      },
+      {
+        label: { es: 'Plancha de reverso', en: 'Back plate' },
+        value: { es: '2', en: '2' },
+      },
+      {
+        label: { es: 'Impresor', en: 'Printer' },
+        value: {
+          es: 'Bureau of Engraving and Printing',
+          en: 'Bureau of Engraving and Printing',
+        },
+      },
+      {
+        label: { es: 'Formato', en: 'Format' },
+        wide: true,
+        value: {
+          es: 'Tamaño pequeño (estándar de 1928). Numista N#201830 da el tipo en 156 × 67 mm; no es una medición de esta pieza',
+          en: 'Small size (1928 standard). Numista N#201830 gives the type as 156 × 67 mm; that is not a measurement of this piece',
+        },
+      },
+      {
+        label: { es: 'Sello / seriales', en: 'Seal / serials' },
+        wide: true,
+        value: {
+          es: 'Sello rojo del Tesoro, seriales rojos, estrella de reposición en el bloque ★–A, sin sobreimpresión',
+          en: 'Red Treasury seal, red serial numbers, replacement star in the ★–A block, no overprint',
+        },
+      },
+      {
+        label: { es: 'Bloque / corrida', en: 'Block / run' },
+        wide: true,
+        value: {
+          es: 'Bloque ★–A. USPaperMoney da a las estrellas de 1963 el tramo ★00000001A–★03840000A',
+          en: '★–A block. USPaperMoney gives 1963 stars the range ★00000001A–★03840000A',
+        },
+      },
+      {
+        label: { es: 'Fecha de serie', en: 'Series date' },
+        wide: true,
+        value: {
+          es: '1963 (impresa «SERIES 1963»). Entregas al Tesoro documentadas entre marzo de 1964 y noviembre de 1967. La designación de serie no es el año.',
+          en: '1963 (printed "SERIES 1963"). Documented deliveries to the Treasury between March 1964 and November 1967. The series designation is not the year.',
+        },
+      },
+    ],
+    images: {
+      composite:
+        '/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-composite.jpg',
+      front:
+        '/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-front.jpg',
+      back:
+        '/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-back.jpg',
+      width: 1376,
+      height: 612,
+    },
+    title: {
+      es: '5 dólares · United States Note · Serie 1963 ★',
+      en: '$5 · United States Note · Series 1963 ★',
+    },
+    kicker: {
+      es: 'Estados Unidos · United States Note',
+      en: 'United States · United States Note',
+    },
+    lead: {
+      es: 'Lincoln, sello rojo y serial de reposición ★02955091A; reverso del Lincoln Memorial con IN GOD WE TRUST. Serie 1963, Fr. 1536★, bloque ★–A. Sin encapsular.',
+      en: 'Lincoln, red seal, replacement serial ★02955091A; Lincoln Memorial reverse with IN GOD WE TRUST. Series 1963, Fr. 1536★, ★–A block. Unslabbed.',
+    },
+    description: {
+      es: 'El 5 dólares United States Note serie 1963 con estrella (P#383; Friedberg 1536★; Numista N#201830) es papel del Tesoro de los Estados Unidos —también Legal Tender Note—, no un Federal Reserve Note ni un certificado de plata. No es el 5 dólares United States Note de tamaño grande serie 1907 de esta colección, Fr. 91, serial M12980830, ni el 1 dólar United States Note serie 1928, Fr. 1500, serial A01772521A. Las firmas son las de Kathryn O’Hay Granahan, tesorera, y C. Douglas Dillon, secretario del Tesoro: esa pareja es la de Fr. 1536 y de su estrella Fr. 1536★. El anverso, en negro con sello y seriales rojos, lleva el retrato de Abraham Lincoln en óvalo. El arco superior dice UNITED STATES NOTE; bajo él, THE UNITED STATES OF AMERICA. A la izquierda, la cláusula THIS NOTE IS LEGAL TENDER FOR ALL DEBTS, PUBLIC AND PRIVATE. A la derecha, el sello rojo del Tesoro se superpone a la palabra FIVE, con WASHINGTON, D.C. encima. Los seriales rojos ★02955091A se repiten arriba a la derecha y abajo a la izquierda (bloque ★–A). La estrella de reposición ocupa el lugar de la letra de prefijo; la A final es la letra de bloque, no un distrito de la Reserva Federal. La serie impresa, SERIES 1963, queda junto al secretario. La posición de hoja D3 se lee a la izquierda del retrato; la marca de plancha de anverso D8, en el margen inferior derecho. El reverso, en verde, muestra la vista frontal del Lincoln Memorial. Sobre el monumento se lee IN GOD WE TRUST; abajo, LINCOLN MEMORIAL y FIVE DOLLARS. La plancha de reverso 2 queda a la derecha de la base del monumento. Numista separa la emisión ordinaria (63.360.000) de la reposición con estrella (3.840.000); esta pieza es la reposición, no la emisión ordinaria. Las fotografías muestran un papel fresco, bordes nítidos y tinta firme. No se asigna un grado numérico a partir de las fotografías: el cuerpo del papel, los lavados y las reparaciones no se leen con certeza en la imagen. Esta pieza de la colección, sin encapsular, se documenta con esas fotografías.',
+      en: 'The Series 1963 United States Note $5 with a star (P#383; Friedberg 1536★; Numista N#201830) is United States Treasury paper — also a Legal Tender Note — not a Federal Reserve Note and not a Silver Certificate. It is not this collection’s large-size Series 1907 United States Note $5, Fr. 91, serial M12980830, or the Series 1928 United States Note $1, Fr. 1500, serial A01772521A. The signatures are Kathryn O’Hay Granahan, Treasurer, and C. Douglas Dillon, Secretary of the Treasury: that pairing is Fr. 1536 and its star, Fr. 1536★. The black face with a red seal and serials carries Abraham Lincoln in an oval. The upper arc reads UNITED STATES NOTE; below it, THE UNITED STATES OF AMERICA. At left is the clause THIS NOTE IS LEGAL TENDER FOR ALL DEBTS, PUBLIC AND PRIVATE. At right the red Treasury seal overlies the word FIVE, with WASHINGTON, D.C. above. Red serials ★02955091A repeat at upper right and lower left (★–A block). The replacement star stands where a prefix letter would; the final A is the block letter, not a Federal Reserve district. The printed series, SERIES 1963, sits beside the Secretary. Sheet position D3 is read left of the portrait; the face-plate marking D8 sits in the lower-right margin. The green back shows a frontal view of the Lincoln Memorial. Above the monument is IN GOD WE TRUST; below, LINCOLN MEMORIAL and FIVE DOLLARS. Back plate 2 sits to the right of the monument’s base. Numista separates the ordinary issue (63,360,000) from the star replacement (3,840,000); this piece is the replacement, not the ordinary issue. The photographs show fresh paper, sharp edges, and firm ink. No numerical grade is assigned from the photographs: paper body, washing, and repairs cannot be read with certainty from the image. This collection piece, unslabbed, is documented by those photographs.',
+    },
+    history: [
+      {
+        es: 'La ley del 25 de febrero de 1862 autorizó los United States Notes como curso legal. El sello y los seriales rojos distinguen el tipo. La serie 1963 es la última de 5 dólares de esa clase. Un detalle la separa de la serie 1953 incluso mirando solo el reverso: incorporó el lema IN GOD WE TRUST sobre el Lincoln Memorial. El BEP entregó billetes de esta serie al Tesoro entre marzo de 1964 y noviembre de 1967; la serie impresa nombra el tipo, no el año de numeración de ★02955091A.',
+        en: 'The act of 25 February 1862 authorized United States Notes as legal tender. A red seal and red serials mark the type. Series 1963 is the last $5 of that class. One detail separates it from Series 1953 even on the back alone: it added the motto IN GOD WE TRUST above the Lincoln Memorial. The BEP delivered notes of this series to the Treasury between March 1964 and November 1967; the printed series names the type, not the year ★02955091A was numbered.',
+      },
+      {
+        es: 'La estrella marca un billete de reposición, usado para sustituir una pieza defectuosa en la fabricación; no es por sí misma un error de impresión. En el United States Note de tamaño pequeño la estrella abre el número y la letra final nombra el bloque. USPaperMoney cifra 3.840.000 estrellas en el tramo ★00000001A–★03840000A, repartidas en seis corridas, frente a 63.360.000 billetes ordinarios. Esta ficha no convierte esas cifras en un censo de sobrevivientes. El BEP dejó de poner United States Notes en circulación el 21 de enero de 1971; los ejemplares pendientes siguen siendo redimibles a la par. Esta ficha es el ejemplar documentado de Fr. 1536★: serial ★02955091A, no una ilustración de tipo.',
+        en: 'The star marks a replacement note, used to stand in for a faulty piece pulled in manufacture; it is not itself a printing error. On the small-size United States Note the star opens the number and the final letter names the block. USPaperMoney puts 3,840,000 stars in the range ★00000001A–★03840000A, across six print runs, against 63,360,000 regular notes. This record does not turn those figures into a survivor census. The BEP stopped placing United States Notes in circulation on 21 January 1971; outstanding notes remain redeemable at face. This page is the documented Fr. 1536★ example: serial ★02955091A, not a type illustration.',
+      },
+    ],
+    historyHeading: {
+      es: 'Última serie de 5 dólares con estrella',
+      en: 'Last $5 series with a star',
+    },
+    frontCaption: {
+      es: 'Anverso del 5 dólares United States Note, serie 1963, serial de reposición ★02955091A: Lincoln, sello rojo, posición D3 y plancha D8.',
+      en: 'Face of the Series 1963 United States Note $5, replacement serial ★02955091A: Lincoln, the red seal, position D3, and plate D8.',
+    },
+    backCaption: {
+      es: 'Reverso del 5 dólares, serie 1963, serial ★02955091A: Lincoln Memorial e IN GOD WE TRUST. Plancha de reverso 2.',
+      en: 'Back of the Series 1963 $5, serial ★02955091A: the Lincoln Memorial and IN GOD WE TRUST. Back plate 2.',
+    },
+    scarcity: {
+      es: 'Fr. 1536★ es la estrella del 5 dólares serie 1963 de sello rojo, firmas Granahan–Dillon, con el lema IN GOD WE TRUST en el reverso. Numista la registra como P#383, reposición, distinta de la emisión ordinaria. El contador 02955091 es ordinario: no es un serial bajo, ni un radar, ni un binario. La estrella identifica la reposición; no convierte el número en una numeración especial. USPaperMoney da 3.840.000 estrellas en seis corridas y 63.360.000 ordinarios. Esa cifra no es un censo actual. Esta ficha no republica precios y no publica un censo certificado.',
+      en: 'Fr. 1536★ is the star of the red-seal Series 1963 $5, Granahan–Dillon signatures, with the motto IN GOD WE TRUST on the back. Numista records it as P#383, a replacement, apart from the ordinary issue. Counter 02955091 is ordinary: not a low serial, not a radar, and not binary. The star identifies the replacement; it does not make the number a fancy serial. USPaperMoney gives 3,840,000 stars in six print runs and 63,360,000 regular notes. That figure is not a current census. This record does not republish prices and does not publish a certified census.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para el serial ★02955091A, ni una aparición previa en subasta de este serial. Un censo de casa de certificación contaría envíos encapsulados, no todos los ejemplares que sobreviven. La pieza se presenta sin encapsular.',
+      en: 'A PMG or PCGS census for serial ★02955091A has not been independently verified, nor has an earlier auction appearance of this serial. A grading-service census would count certified submissions, not every surviving example. The note is shown unslabbed.',
+    },
+    grade: {
+      es: 'Sin encapsular; aspecto fresco en las fotografías; sin grado numérico a partir de las imágenes (colección privada)',
+      en: 'Unslabbed; fresh appearance in the photographs; no numerical grade from the images (private collection)',
+    },
+    sources: [
+      {
+        href: 'https://en.numista.com/201830',
+        es: 'Numista N#201830 — 5 dólares, United States Note, sello rojo, con lema',
+        en: 'Numista N#201830 — $5 United States Note, red seal, with motto',
+        note: {
+          es: 'P#383 y Fr. 1536: serie 1963, firmas Granahan–Dillon. La fila de reposición ★ es la de este ejemplar (3.840.000). El tipo mide 156 × 67 mm en esa ficha. No se republican las columnas de precio.',
+          en: 'P#383 and Fr. 1536: Series 1963, Granahan–Dillon signatures. The ★ replacement row is this example (3,840,000). That page gives the type as 156 × 67 mm. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'https://www.uspapermoney.info/serials/u1963_q.html',
+        es: 'USPaperMoney.Info — Series 1963 $5 USN',
+        en: 'USPaperMoney.Info — Series 1963 $5 USN',
+        note: {
+          es: 'Firmas Granahan–Dillon. Tramo ordinario A00000001A–A63360000A. Estrellas ★00000001A–★03840000A. Entregas al Tesoro entre marzo de 1964 y noviembre de 1967. Seis corridas de estrella.',
+          en: 'Granahan–Dillon signatures. Regular range A00000001A–A63360000A. Stars ★00000001A–★03840000A. Deliveries to the Treasury between March 1964 and November 1967. Six star print runs.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/faqs',
+        es: 'Bureau of Engraving and Printing — FAQs',
+        en: 'Bureau of Engraving and Printing — FAQs',
+        note: {
+          es: 'United States Notes: última puesta en circulación el 21 de enero de 1971. Los ejemplares pendientes siguen siendo redimibles a la par.',
+          en: 'United States Notes: last placed in circulation 21 January 1971. Outstanding notes remain redeemable at face.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'Recorte al tamaño pequeño en 1929. Esta pieza queda del lado pequeño de esa línea.',
+          en: 'Reduction to small size in 1929. This piece sits on the small-size side of that line.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — History of U.S. Currency',
+        en: 'U.S. Currency Education Program — History of U.S. Currency',
+        note: {
+          es: 'United States Notes desde 1862; sello y seriales rojos. Siguen siendo curso legal a la par.',
+          en: 'United States Notes from 1862; red seal and serials. They remain legal tender at face value.',
         },
       },
     ],

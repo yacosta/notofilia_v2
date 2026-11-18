@@ -357,6 +357,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 5 dólares United States Note de 1963 con estrella?',
+        en: 'What is the Series 1963 United States Note $5 star note?',
+      },
+      answer: {
+        es: 'Es un Legal Tender Note de tamaño pequeño, Fr. 1536★ (P#383), firmas Granahan–Dillon, sello y seriales rojos, reverso del Lincoln Memorial con IN GOD WE TRUST. Fue la última serie de 5 dólares de esa clase. Esta pieza es el serial de reposición ★02955091A, bloque ★–A, posición D3, plancha de anverso D8 y reverso 2. Sin encapsular. No es el 5 dólares serie 1907, Fr. 91, serial M12980830.',
+        en: 'It is a small-size Legal Tender Note, Fr. 1536★ (P#383), Granahan–Dillon signatures, red seal and serials, and a Lincoln Memorial reverse with IN GOD WE TRUST. It was the last $5 series of that class. This piece is replacement serial ★02955091A, ★–A block, position D3, face plate D8 and back plate 2. Unslabbed. It is not the Series 1907 $5, Fr. 91, serial M12980830.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué son los National Bank Notes, la Fractional Currency y los Coin Notes?',
         en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
       },
