@@ -262,6 +262,7 @@ export const additions: Holding[] = [
   { id: 'co-1980-10-pesos-oro-00000100', kind: 'banknote', country: 'CO' },
   { id: 'us-frn-1934a-hawaii-5-l69086875a', kind: 'banknote', country: 'US' },
   { id: 'pr-1-peso-1895-pgv', kind: 'coin', country: 'PR' },
+  { id: 'us-usn-1963-5-a26583630a', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -448,6 +449,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-prusmack-educational-1-dolar-1896-12-250' },
   { id: 'co-1980-10-pesos-oro-p407h' },
   { id: 'pr-1895-1-peso-km24' },
+  { id: 'us-usn-1963-5-p383-fr1536' },
 ];
 
 export type CollectionStats = {

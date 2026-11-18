@@ -357,6 +357,16 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
     },
     {
       question: {
+        es: '¿Qué es el 5 dólares United States Note de 1963?',
+        en: 'What is the Series 1963 United States Note $5?',
+      },
+      answer: {
+        es: 'Es el último Legal Tender Note de 5 dólares, Fr. 1536 (P#383), firmas Granahan–Dillon, sello y seriales rojos, y la primera serie de esa denominación con In God We Trust en el reverso. Esta pieza es el serial A26583630A, bloque A–A ordinario, posición B3, plancha de anverso B5 y reverso 1. Circulada, sin encapsular. Se distingue de la serie 1953C, mismas firmas pero sin el lema y en pliegos de 18 sujetos.',
+        en: 'It is the last Legal Tender $5, Fr. 1536 (P#383), Granahan–Dillon signatures, red seal and serials, and the first series of that denomination with In God We Trust on the reverse. This piece is serial A26583630A, ordinary A–A block, position B3, face plate B5 and back plate 1. Circulated, unslabbed. It is distinct from Series 1953C, same signatures but without the motto and on 18-subject sheets.',
+      },
+    },
+    {
+      question: {
         es: '¿Qué son los National Bank Notes, la Fractional Currency y los Coin Notes?',
         en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
       },

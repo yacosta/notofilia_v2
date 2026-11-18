@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T01:40:10.479Z",
+  "generatedAt": "2026-11-18T20:01:37.497Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5552,6 +5552,45 @@
       "title": {
         "es": "1 dólar · United States Note · Serie 1928",
         "en": "$1 · United States Note · Series 1928"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1963",
+      "face": "front",
+      "hash": "94b4b2b4b2b05235",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963/",
+      "pick": "P#383 · Fr. 1536",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-a26583630a-composite.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963",
+        "en": "$5 · United States Note · Series 1963"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1963",
+      "face": "front",
+      "hash": "4a5deccaaaeaaa4c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963/",
+      "pick": "P#383 · Fr. 1536",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-a26583630a-front.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963",
+        "en": "$5 · United States Note · Series 1963"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1963",
+      "face": "back",
+      "hash": "a90ba9aaceaa92ca",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963/",
+      "pick": "P#383 · Fr. 1536",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-a26583630a-back.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963",
+        "en": "$5 · United States Note · Series 1963"
       }
     },
     {
