@@ -16,7 +16,7 @@ const enPiece = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '1-dolar-serie-1928'");
-const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1896'");
+const noteEnd = data.indexOf("id: '5-dolares-serie-1963'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1928 United States Note $1 Fr. 1500', () => {

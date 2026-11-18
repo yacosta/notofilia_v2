@@ -47,16 +47,16 @@ describe('Hacienda Vega Redonda tokens', () => {
       assert.equal(token.images.height, expectedSize);
       assert.match(token.images.front, /puerto-rico-hacienda-vega-redonda-/);
     }
-    assert.equal(additions.at(-10)?.id, 'pr-nd-cuarto-almud-vega-redonda');
-    assert.equal(additions.at(-9)?.id, 'pr-nd-medio-almud-vega-redonda');
-    assert.equal(additions.at(-8)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(additions.at(-7)?.id, 'pr-nd-dos-almudes-vega-redonda');
-    assert.equal(additions.at(-6)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(additions.at(-6)?.kind, 'coin');
+    assert.equal(additions.at(-11)?.id, 'pr-nd-cuarto-almud-vega-redonda');
+    assert.equal(additions.at(-10)?.id, 'pr-nd-medio-almud-vega-redonda');
+    assert.equal(additions.at(-9)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-8)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(additions.at(-7)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(additions.at(-7)?.kind, 'coin');
     assert.equal(additions.at(-1)?.id, 'us-usn-1963-5-star-02955091a');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-6)?.id, 'pr-nd-dos-almudes-vega-redonda');
-    assert.equal(catalogAdditions.at(-5)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(catalogAdditions.at(-7)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-6)?.id, 'pr-40-centavos-1896-pgv');
     assert.equal(catalogAdditions.at(-1)?.id, 'us-usn-1963-5-fr1536-star');
     assert.match(esPage, /PuertoRicoVegaRedondaPage locale="es"/);
     assert.match(enPage, /PuertoRicoVegaRedondaPage locale="en"/);
