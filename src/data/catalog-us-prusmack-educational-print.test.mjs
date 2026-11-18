@@ -94,15 +94,18 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'pr-1-peso-1895-pgv');
-    assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-1895-1-peso-km24');
+    assert.equal(additions.at(-1)?.id, 'us-usn-1963-5-star-02955091a');
+    assert.equal(additions.at(-1)?.kind, 'banknote');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-usn-1963-5-fr1536-star');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
     assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'pr-1-peso-1895-pgv');
-    assert.match(milestones[0]?.href ?? '', /puerto-rico-numismatica\/1-peso-1895-pgv/);
-    assert.match(milestones[0]?.image ?? '', /puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24/);
+    assert.equal(milestones[0]?.holdingId, 'us-usn-1963-5-star-02955091a');
+    assert.match(milestones[0]?.href ?? '', /5-dolares-serie-1963-estrella/);
+    assert.match(
+      milestones[0]?.image ?? '',
+      /united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a/,
+    );
     const prusmackCard = milestones.find((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250');
     assert.ok(prusmackCard);
     assert.match(prusmackCard.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
