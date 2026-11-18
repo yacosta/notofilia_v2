@@ -361,8 +361,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1963 United States Note $5?',
       },
       answer: {
-        es: 'Es el último Legal Tender Note de 5 dólares, Fr. 1536 (P#383), firmas Granahan–Dillon, sello y seriales rojos, y la primera serie de esa denominación con In God We Trust en el reverso. Esta pieza es el serial A26583630A, bloque A–A ordinario, posición B3, plancha de anverso B5 y reverso 1. Circulada, sin encapsular. Se distingue de la serie 1953C, mismas firmas pero sin el lema y en pliegos de 18 sujetos.',
-        en: 'It is the last Legal Tender $5, Fr. 1536 (P#383), Granahan–Dillon signatures, red seal and serials, and the first series of that denomination with In God We Trust on the reverse. This piece is serial A26583630A, ordinary A–A block, position B3, face plate B5 and back plate 1. Circulated, unslabbed. It is distinct from Series 1953C, same signatures but without the motto and on 18-subject sheets.',
+        es: 'Es el último Legal Tender Note de 5 dólares, Fr. 1536 (P#383), firmas Granahan–Dillon, sello y seriales rojos, y la primera serie de esa denominación con In God We Trust en el reverso. Esta pieza es el serial A26583630A, bloque A–A ordinario, posición B3, plancha de anverso B5 y reverso 1. Circulada, sin encapsular. Se distingue de la serie 1953C, mismas firmas pero sin el lema y en pliegos de 18 sujetos. No es la estrella Fr. 1536★, serial ★02955091A.',
+        en: 'It is the last Legal Tender $5, Fr. 1536 (P#383), Granahan–Dillon signatures, red seal and serials, and the first series of that denomination with In God We Trust on the reverse. This piece is serial A26583630A, ordinary A–A block, position B3, face plate B5 and back plate 1. Circulated, unslabbed. It is distinct from Series 1953C, same signatures but without the motto and on 18-subject sheets. It is not the Series 1963 star, Fr. 1536★, serial ★02955091A.',
       },
     },
     {
@@ -371,8 +371,8 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What is the Series 1963 United States Note $5 star note?',
       },
       answer: {
-        es: 'Es un Legal Tender Note de tamaño pequeño, Fr. 1536★ (P#383), firmas Granahan–Dillon, sello y seriales rojos, reverso del Lincoln Memorial con IN GOD WE TRUST. Fue la última serie de 5 dólares de esa clase. Esta pieza es el serial de reposición ★02955091A, bloque ★–A, posición D3, plancha de anverso D8 y reverso 2. Sin encapsular. No es el 5 dólares serie 1907, Fr. 91, serial M12980830.',
-        en: 'It is a small-size Legal Tender Note, Fr. 1536★ (P#383), Granahan–Dillon signatures, red seal and serials, and a Lincoln Memorial reverse with IN GOD WE TRUST. It was the last $5 series of that class. This piece is replacement serial ★02955091A, ★–A block, position D3, face plate D8 and back plate 2. Unslabbed. It is not the Series 1907 $5, Fr. 91, serial M12980830.',
+        es: 'Es un Legal Tender Note de tamaño pequeño, Fr. 1536★ (P#383), firmas Granahan–Dillon, sello y seriales rojos, reverso del Lincoln Memorial con IN GOD WE TRUST. Fue la última serie de 5 dólares de esa clase. Esta pieza es el serial de reposición ★02955091A, bloque ★–A, posición D3, plancha de anverso D8 y reverso 2. Sin encapsular. No es el ejemplar ordinario A26583630A ni el 5 dólares serie 1907, Fr. 91, serial M12980830.',
+        en: 'It is a small-size Legal Tender Note, Fr. 1536★ (P#383), Granahan–Dillon signatures, red seal and serials, and a Lincoln Memorial reverse with IN GOD WE TRUST. It was the last $5 series of that class. This piece is replacement serial ★02955091A, ★–A block, position D3, face plate D8 and back plate 2. Unslabbed. It is not the ordinary serial A26583630A or the Series 1907 $5, Fr. 91, serial M12980830.',
       },
     },
     {

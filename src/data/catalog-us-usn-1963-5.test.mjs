@@ -16,7 +16,7 @@ const enPiece = readFileSync(
 );
 
 const noteStart = data.indexOf("id: '5-dolares-serie-1963'");
-const noteEnd = data.indexOf("id: '1-dolar-certificado-plata-1896'");
+const noteEnd = data.indexOf("id: '5-dolares-serie-1963-estrella'");
 const note = data.slice(noteStart, noteEnd);
 
 describe('US Series 1963 United States Note $5 Fr. 1536', () => {
