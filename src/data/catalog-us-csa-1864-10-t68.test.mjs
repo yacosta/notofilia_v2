@@ -82,12 +82,15 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'pr-1-peso-1895-pgv');
-    assert.match(milestones[0]?.href ?? '', /puerto-rico-numismatica\/1-peso-1895-pgv/);
-    assert.match(milestones[0]?.image ?? '', /puerto-rico-madrid-1-peso-5-pesetas-1895-alfonso-xiii-km24/);
-    assert.equal(additions.at(-1)?.id, 'pr-1-peso-1895-pgv');
-    assert.equal(additions.at(-1)?.kind, 'coin');
-    assert.equal(catalogAdditions.at(-1)?.id, 'pr-1895-1-peso-km24');
+    assert.equal(milestones[0]?.holdingId, 'us-usn-1963-5-a26583630a');
+    assert.match(milestones[0]?.href ?? '', /5-dolares-serie-1963/);
+    assert.match(
+      milestones[0]?.image ?? '',
+      /united-states-treasury-5-dollars-series-1963-united-states-note-a26583630a/,
+    );
+    assert.equal(additions.at(-1)?.id, 'us-usn-1963-5-a26583630a');
+    assert.equal(additions.at(-1)?.kind, 'banknote');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-usn-1963-5-fr1536');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,
