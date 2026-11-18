@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T20:07:11.612Z",
+  "generatedAt": "2026-11-18T20:17:19.106Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5594,6 +5594,45 @@
       }
     },
     {
+      "pieceId": "5-dolares-serie-1963-estrella",
+      "face": "front",
+      "hash": "69ec9273454c6e66",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963-estrella/",
+      "pick": "Fr. 1536★",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-composite.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963 ★",
+        "en": "$5 · United States Note · Series 1963 ★"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1963-estrella",
+      "face": "front",
+      "hash": "6964ccacaaa8aecc",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963-estrella/",
+      "pick": "Fr. 1536★",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-front.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963 ★",
+        "en": "$5 · United States Note · Series 1963 ★"
+      }
+    },
+    {
+      "pieceId": "5-dolares-serie-1963-estrella",
+      "face": "back",
+      "hash": "d4a654c68e5becc8",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/5-dolares-serie-1963-estrella/",
+      "pick": "Fr. 1536★",
+      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-back.jpg",
+      "title": {
+        "es": "5 dólares · United States Note · Serie 1963 ★",
+        "en": "$5 · United States Note · Series 1963 ★"
+      }
+    },
+    {
       "pieceId": "1-dolar-certificado-plata-1896",
       "face": "front",
       "hash": "9334d572f0b7d130",
@@ -7489,32 +7528,6 @@
       "title": {
         "es": "2 almudes · Hacienda Vega Redonda",
         "en": "2 almudes · Hacienda Vega Redonda"
-      }
-    },
-    {
-      "pieceId": "5-dolares-serie-1963-estrella",
-      "face": "front",
-      "hash": "69ec9273454c6e66",
-      "kind": "banknote",
-      "path": "/coleccion/estados-unidos/5-dolares-serie-1963-estrella/",
-      "pick": "Fr. 1536★",
-      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-composite.jpg",
-      "title": {
-        "es": "5 dólares · United States Note · Serie 1963 ★",
-        "en": "$5 · United States Note · Series 1963 ★"
-      }
-    },
-    {
-      "pieceId": "5-dolares-serie-1963-estrella",
-      "face": "back",
-      "hash": "d4a654c68e5becc8",
-      "kind": "banknote",
-      "path": "/coleccion/estados-unidos/5-dolares-serie-1963-estrella/",
-      "pick": "Fr. 1536★",
-      "image": "/images/catalog/united-states/united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a-back.jpg",
-      "title": {
-        "es": "5 dólares · United States Note · Serie 1963 ★",
-        "en": "$5 · United States Note · Series 1963 ★"
       }
     }
   ]
