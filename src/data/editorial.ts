@@ -489,6 +489,14 @@ const catalogRelatedTitles: Record<string, LocalizedText> = {
     es: '100 yuan · Milenio 2000',
     en: '100 yuan · Millennium 2000',
   },
+  '/coleccion/polimero-mundial/': {
+    es: 'Billetes de polímero mundial',
+    en: 'World polymer banknotes',
+  },
+  '/glosario/polimero/': {
+    es: 'Polímero',
+    en: 'Polymer',
+  },
 };
 
 const catalogRelatedDeks: Record<string, LocalizedText> = {
@@ -643,6 +651,14 @@ const catalogRelatedDeks: Record<string, LocalizedText> = {
   '/coleccion/china/100-yuan/': {
     es: 'El polímero de la colección, con el Templo del Cielo en la ventana. No es un Panda.',
     en: 'The collection’s polymer note, with the Temple of Heaven in the window. Not a Panda.',
+  },
+  '/coleccion/polimero-mundial/': {
+    es: 'Otras emisiones en polímero. No ficha el 100 tala de Samoa.',
+    en: 'Other polymer issues. It does not record Samoa’s 100-tala.',
+  },
+  '/glosario/polimero/': {
+    es: 'El sustrato de plástico de muchos billetes modernos.',
+    en: 'The plastic substrate of many modern banknotes.',
   },
 };
 
