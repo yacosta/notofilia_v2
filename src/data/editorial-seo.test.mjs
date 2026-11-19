@@ -969,6 +969,67 @@ describe('15 November 2026 Cuenca notaphily expo', () => {
   });
 });
 
+describe('19 November 2026 1885 Trade Dollar', () => {
+  it('keeps the AL.com body figure and the headline discrepancy without a new holding', () => {
+    const article = newsArticles.find((item) => item.slug === 'trade-dollar-1885-1952000');
+    assert.ok(article);
+    assert.equal(article.slugEn, '1885-trade-dollar-1952000');
+    assert.equal(article.published, '2026-11-19');
+    assert.equal(article.sourceName, 'AL.com');
+    assert.equal(
+      article.sourceUrl,
+      'https://www.al.com/news/2026/11/rare-coin-sold-for-1925-million-at-auction.html',
+    );
+    assert.equal(article.image, '/uploads/dolar-comercio-estados-unidos-1873.jpg');
+    assert.equal(article.imageWidth, 1600);
+    assert.equal(article.imageHeight, 812);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dolar-comercio-estados-unidos-1873.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/dolar-comercio-estados-unidos-1873-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.match(article.claim.noteEs, /1\.952\.000/);
+    assert.match(article.claim.noteEs, /1,925/);
+    assert.match(article.claim.noteEs, /prima/);
+    assert.match(article.claim.noteEn, /1,952,000/);
+    assert.match(article.claim.noteEn, /1\.925/);
+    assert.match(article.claim.noteEn, /premium/);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /rare-coin-sold-for-1925-million-at-auction/);
+    assert.match(urls, /auctions\.stacksbowers\.com\/lots\/view\/3-1XFL9M/);
+    assert.match(urls, /alabama-family-collection/);
+    assert.match(urls, /landmark-1885-trade-dollar/);
+    assert.match(urls, /popsci\.com\/technology\/1885-silver-trade-dollar-auction/);
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const source of article.primarySources) {
+      assert.ok(body.includes(source.url), source.url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /1[,.]952[,.]000/);
+      assert.match(html, /Proof-63\+/);
+      assert.match(html, /JD-1/);
+      assert.match(html, /Snowden/);
+      assert.match(html, /Olsen-French/);
+      assert.match(html, /2113/);
+      assert.match(html, /\/glosario\/escala-sheldon\//);
+      assert.match(html, /\/coleccion\/estados-unidos-numismatica\//);
+      assert.match(html, /1-dolar-morgan-1885-cc/);
+      assert.match(html, /colección virtual de Notofilia|not in Notofilia’s virtual collection/);
+      assert.match(html, /No publicamos|do not publish/i);
+      assert.doesNotMatch(html, /stacksbowers\.com\/.*\.(jpg|png|webp)/i);
+    }
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
