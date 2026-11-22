@@ -1030,6 +1030,59 @@ describe('19 November 2026 1885 Trade Dollar', () => {
   });
 });
 
+describe('22 November 2026 Szombathely Celtic hoard', () => {
+  it('publishes the Szombathely Celtic silver hoard from the reports it opened, without a price', () => {
+    const article = newsArticles.find((item) => item.slug === 'tesoro-tetradracmas-celtas-szombathely');
+    assert.ok(article);
+    assert.equal(article.slugEn, 'szombathely-celtic-tetradrachm-hoard');
+    assert.equal(article.published, '2026-11-22');
+    assert.equal(article.claim, null);
+    assert.equal(article.image, '/uploads/moneda-plata-norico-cabeza-caballo.jpg');
+    assert.equal(article.imageWidth, 2432);
+    assert.equal(article.imageHeight, 1200);
+    assert.equal(article.imageFit, 'contain');
+    assert.equal(
+      existsSync(new URL('../../public/uploads/moneda-plata-norico-cabeza-caballo.jpg', import.meta.url)),
+      true,
+    );
+    assert.equal(
+      existsSync(new URL('../../public/uploads/moneda-plata-norico-cabeza-caballo-card.jpg', import.meta.url)),
+      true,
+    );
+    assert.ok(article.seoTitle.es.length <= 48);
+    assert.ok(article.seoTitle.en.length <= 48);
+    assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+    assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+    assert.equal(article.dek.es, article.description.es);
+    assert.equal(article.dek.en, article.description.en);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /livescience\.com\/archaeology\/2-200-year-old-celtic-silver-coin-hoard/);
+    assert.match(urls, /vaol\.hu\/helyi-kozelet\/2026\/11\/ezustkincs-a-foldben/);
+    assert.match(urls, /catalogue\.bnf\.fr\/ark:\/12148\/cb44808821h/);
+    assert.match(urls, /gallica\.bnf\.fr\/ark:\/12148\/btv1b112922461/);
+    const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+    for (const source of article.primarySources) {
+      assert.ok(body.includes(source.url), source.url);
+    }
+    for (const locale of ['es', 'en']) {
+      const html = article.bodyHtml[locale];
+      assert.match(html, /Velem/);
+      assert.match(html, /Szombathely/);
+      assert.match(html, /9916A/);
+      assert.match(html, /11[,.]71/);
+      assert.match(html, /Kreiter/);
+      assert.match(html, /Savaria/);
+      assert.match(html, /\/glosario\/numismatica\//);
+      assert.match(html, /colección virtual de Notofilia|Notofilia’s virtual collection/);
+      assert.match(html, /No publicamos|do not publish/i);
+      assert.doesNotMatch(html, /\$/);
+      assert.doesNotMatch(html, /\b208\b/);
+      assert.doesNotMatch(html, /7[,.]5/);
+      assert.doesNotMatch(html, /livescience\.com\/.*\.(jpg|png|webp)/i);
+    }
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
