@@ -141,6 +141,20 @@ export function linkFirstGlossaryTerms(text: string, locale: Locale): string {
   return html;
 }
 
+/**
+ * A back scan opens the reverse column.
+ * A record with no face scan still shows its reverse caption.
+ * A face-only scan stays one column, even when `backCaption` is filled.
+ */
+export function showCatalogBackColumn(
+  images: { front?: string; back?: string },
+  backCaption: string,
+): boolean {
+  if (images.back) return true;
+  if (images.front) return false;
+  return Boolean(backCaption.trim());
+}
+
 export function pieceSiblings<T extends { path: string }>(
   items: T[],
   currentPath: string,

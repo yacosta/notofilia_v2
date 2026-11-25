@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { register } from 'node:module';
 import { describe, it } from 'node:test';
+import { showCatalogBackColumn } from '../lib/catalog-media.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import { additions, catalogAdditions } from './holdings.ts';
@@ -48,6 +49,8 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
     assert.doesNotMatch(note.signatures.en, /Tillman|Morgan/);
     assert.equal(note.images.back, '');
     assert.equal(note.images.front, IMAGE);
+    assert.equal(showCatalogBackColumn(note.images, note.backCaption.es), false);
+    assert.equal(showCatalogBackColumn(note.images, note.backCaption.en), false);
     assert.equal(note.images.composite, IMAGE);
     assert.equal(note.images.width, 1024);
     assert.equal(note.images.height, 771);
