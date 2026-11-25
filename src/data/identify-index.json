@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-25T01:15:49.142Z",
+  "generatedAt": "2026-11-25T16:59:22.107Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -6696,6 +6696,45 @@
       "title": {
         "es": "Estampa · Tim Prusmack · 1 dólar Educational · 1896",
         "en": "Print · Tim Prusmack · Educational $1 · 1896"
+      }
+    },
+    {
+      "pieceId": "10-centavos-fraccional-1874",
+      "face": "front",
+      "hash": "b49955bacfd919a5",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-centavos-fraccional-1874/",
+      "pick": "P#122 · N#203351",
+      "image": "/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-composite.jpg",
+      "title": {
+        "es": "10 centavos · Fractional Currency · serie de 1874",
+        "en": "10 cents · Fractional Currency · Series of 1874"
+      }
+    },
+    {
+      "pieceId": "10-centavos-fraccional-1874",
+      "face": "front",
+      "hash": "c1b693d5edadf552",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-centavos-fraccional-1874/",
+      "pick": "P#122 · N#203351",
+      "image": "/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-front.jpg",
+      "title": {
+        "es": "10 centavos · Fractional Currency · serie de 1874",
+        "en": "10 cents · Fractional Currency · Series of 1874"
+      }
+    },
+    {
+      "pieceId": "10-centavos-fraccional-1874",
+      "face": "back",
+      "hash": "09ab0993198fa9b9",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/10-centavos-fraccional-1874/",
+      "pick": "P#122 · N#203351",
+      "image": "/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-back.jpg",
+      "title": {
+        "es": "10 centavos · Fractional Currency · serie de 1874",
+        "en": "10 cents · Fractional Currency · Series of 1874"
       }
     },
     {

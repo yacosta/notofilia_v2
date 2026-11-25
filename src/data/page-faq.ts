@@ -381,8 +381,18 @@ export const seriesFaqs: Record<string, FaqItem[]> = {
         en: 'What are National Bank Notes, Fractional Currency, and Coin Notes?',
       },
       answer: {
-        es: 'Tres clases federales que esta vitrina cuenta y aún no ficha. Los National Bank Notes (1863–1935) los emitieron bancos con carta, respaldados por bonos del Tesoro, con el nombre de la plaza y el número de charter. La Fractional Currency (1862–1876) fue papel de 3 a 50 centavos cuando desapareció la moneda. Los Treasury Notes o Coin Notes (1890–1891) vienen de la Sherman Silver Purchase Act; la Educational Series de 1896 es un certificado de plata, no esa clase.',
-        en: 'Three federal classes this case narrates and does not yet record as holdings. National Bank Notes (1863–1935) were issued by chartered banks, secured by Treasury bonds, with the town name and charter number. Fractional Currency (1862–1876) was 3¢-to-50¢ paper when coin disappeared. Treasury or Coin Notes (1890–1891) come from the Sherman Silver Purchase Act; the 1896 Educational Series is a Silver Certificate issue, not that class.',
+        es: 'Tres clases federales. Los National Bank Notes (1863–1935) los emitieron bancos con carta, respaldados por bonos del Tesoro, con el nombre de la plaza y el número de charter; en esta colección aún no hay uno documentado. La Fractional Currency (1862–1876) fue papel de 3 a 50 centavos cuando desapareció la moneda; ya tiene ficha el 10 centavos de la Quinta Emisión, serie de 1874, P#122, sello rojo, Allison–Spinner, sin serial. Los Treasury Notes o Coin Notes (1890–1891) vienen de la Sherman Silver Purchase Act y aún no tienen ficha; la Educational Series de 1896 es un certificado de plata, no esa clase.',
+        en: 'Three federal classes. National Bank Notes (1863–1935) were issued by chartered banks, secured by Treasury bonds, with the town name and charter number; this collection does not yet hold a documented example. Fractional Currency (1862–1876) was 3¢-to-50¢ paper when coin disappeared; the Fifth Issue 10¢, Series of 1874, P#122, red seal, Allison–Spinner, with no serial, already has a note page. Treasury or Coin Notes (1890–1891) come from the Sherman Silver Purchase Act and still have no note page; the 1896 Educational Series is a Silver Certificate issue, not that class.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué es el 10 centavos Fractional Currency de 1874?',
+        en: 'What is the 1874 Fractional Currency 10-cent note?',
+      },
+      answer: {
+        es: 'Es un billete fraccionario de la Quinta Emisión (serie de 1874), P#122 · N#203351, con retrato de William M. Meredith, sello rojo del Tesoro y firmas Allison–Spinner. El anverso lo grabó e imprimió el Bureau of Engraving and Printing; el reverso lleva la imprenta Columbian Bank Note Co., Washington, D.C. No lleva serial impreso. El sello rojo descarta el Fr. 1264 de sello verde; entre Fr. 1265 (llave larga y delgada) y Fr. 1266 (llave corta y gruesa) esta fotografía no confirma la variedad. Circuló entre el 26 de febrero de 1874 y el 15 de febrero de 1876.',
+        en: 'It is a Fifth Issue fractional note (Series of 1874), P#122 · N#203351, with a portrait of William M. Meredith, a red Treasury seal, and Allison–Spinner signatures. The Bureau of Engraving and Printing engraved and printed the face; the back carries the Columbian Bank Note Co., Washington, D.C. imprint. No serial was printed. The red seal rules out green-seal Fr. 1264; between Fr. 1265 (long, thin key) and Fr. 1266 (short, thick key) this photograph does not confirm the variety. It circulated from 26 February 1874 through 15 February 1876.',
       },
     },
     {

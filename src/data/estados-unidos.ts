@@ -172,8 +172,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Paper from 3¢ to 50¢ for everyday change when coin vanished from circulation.',
     },
     body: {
-      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. En esta vitrina no hay aún un ejemplar con foto; cuando lo haya, llevará ficha propia. Un Pick o un año no identifican el objeto: lo identifica el serial, si lo lleva.',
-      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. This case does not yet hold a photographed example; when one is documented it will have its own note page. A Pick number or a year does not identify the object: the serial does, when one was printed.',
+      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. Ya tiene ficha el 10 centavos de la Quinta Emisión, serie de 1874, P#122 · N#203351, retrato de William M. Meredith, sello rojo, firmas Allison–Spinner, sin serial impreso. Un Pick o un año no identifican el objeto: lo identifica el ejemplar fotografiado —y el serial, si lo lleva.',
+      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. The Fifth Issue 10¢, Series of 1874, P#122 · N#203351, portrait of William M. Meredith, red seal, Allison–Spinner signatures, with no printed serial, already has a note page. A Pick number or a year does not identify the object: the photographed piece does — and the serial, when one was printed.',
     },
   },
   {
@@ -1446,7 +1446,8 @@ export type UnitedStatesNoteId =
   | 'renci-warhol-basquiat-life-is-beautiful'
   | 'renci-trump-never-surrender'
   | 'renci-life-is-beautiful-life-spray'
-  | 'prusmack-educational-1-dolar-1896-12-250';
+  | 'prusmack-educational-1-dolar-1896-12-250'
+  | '10-centavos-fraccional-1874';
 
 export type UnitedStatesNoteFact = {
   label: LocalizedText;
@@ -9573,6 +9574,237 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'El tipo reproducido: P#335, Fr. 224, anverso de Will Hicok Low grabado por Charles Schlecht, SERIES OF 1896. El tamaño publicado no mide esta estampa.',
           en: 'The type being reproduced: P#335, Fr. 224, face by Will Hicok Low engraved by Charles Schlecht, SERIES OF 1896. The published size does not measure this print.',
+        },
+      },
+    ],
+  },
+  {
+    id: '10-centavos-fraccional-1874',
+    chapterId: 'us-fractional',
+    path: '/coleccion/estados-unidos/10-centavos-fraccional-1874/',
+    pathEn: '/collection/united-states/10-cents-fractional-currency-1874/',
+    pick: 'P#122 · N#203351',
+    friedberg: 'Fr. 1265 o Fr. 1266',
+    serial: '—',
+    no_serial_reason:
+      'Fifth Issue Fractional Currency of this type was not printed with a serial number. The face has no serial field.',
+    signatures: {
+      es: 'John Allison (Register of the Treasury) y Francis E. Spinner (Treasurer of the United States)',
+      en: 'John Allison (Register of the Treasury) and Francis E. Spinner (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Quinta Emisión, serie de 1874: circulación del 26 de febrero de 1874 al 15 de febrero de 1876 (BEP, Currency Notes; fact sheet de Fractional Currency). El BEP estima el valor facial de toda la Fractional Currency en 368.720.079,51 dólares y el de la Quinta Emisión en 62.661.900,00 dólares; son totales de valor facial, no un conteo de billetes. Esta ficha no inventa una tirada para el Fr. 1265, el Fr. 1266 ni para este ejemplar.',
+      en: 'Fifth Issue, Series of 1874: circulated from 26 February 1874 through 15 February 1876 (BEP, Currency Notes; Fractional Currency fact sheet). The BEP estimates the face value of all Fractional Currency at $368,720,079.51 and of the Fifth Issue at $62,661,900.00; those are face-value totals, not a note count. This record does not invent a printage for Fr. 1265, Fr. 1266, or for this piece.',
+    },
+    facts: [
+      {
+        label: { es: 'Emisión', en: 'Issue' },
+        value: {
+          es: 'Quinta y última emisión de Fractional Currency',
+          en: 'Fifth and final Fractional Currency issue',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Retrato', en: 'Portrait' },
+        value: {
+          es: 'William M. Meredith, secretario del Tesoro (1849–1850)',
+          en: 'William M. Meredith, Secretary of the Treasury (1849–1850)',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Sello del Tesoro', en: 'Treasury seal' },
+        value: {
+          es: 'Rojo (descarta el Fr. 1264 de sello verde)',
+          en: 'Red (rules out green-seal Fr. 1264)',
+        },
+      },
+      {
+        label: { es: 'Variedad Friedberg', en: 'Friedberg variety' },
+        value: {
+          es: 'Fr. 1265 (llave larga y delgada) o Fr. 1266 (llave corta y gruesa); no confirmada en esta fotografía',
+          en: 'Fr. 1265 (long, thin key) or Fr. 1266 (short, thick key); not confirmed from this photograph',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Impresor del anverso', en: 'Face printer' },
+        value: {
+          es: 'Bureau of Engraving and Printing',
+          en: 'Bureau of Engraving and Printing',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Imprenta del reverso', en: 'Reverse imprint' },
+        value: {
+          es: 'Columbian Bank Note Co., Washington, D.C.',
+          en: 'Columbian Bank Note Co., Washington, D.C.',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Autoridad legal', en: 'Legal authority' },
+        value: {
+          es: 'Actas del 3 de marzo de 1863 y del 30 de junio de 1864',
+          en: 'Acts of 3 March 1863 and 30 June 1864',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Colores', en: 'Colors' },
+        value: {
+          es: 'Anverso negro y rojo; reverso verde',
+          en: 'Black and red face; green reverse',
+        },
+      },
+    ],
+    images: {
+      composite:
+        '/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-composite.jpg',
+      front:
+        '/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-front.jpg',
+      back:
+        '/images/catalog/united-states/united-states-fractional-currency-10-cents-1874-p122-back.jpg',
+      width: 991,
+      height: 629,
+    },
+    title: {
+      es: '10 centavos · Fractional Currency · serie de 1874',
+      en: '10 cents · Fractional Currency · Series of 1874',
+    },
+    kicker: {
+      es: 'Estados Unidos · Fractional Currency · Quinta Emisión',
+      en: 'United States · Fractional Currency · Fifth Issue',
+    },
+    lead: {
+      es: '10 centavos de la Quinta Emisión, serie de 1874: retrato de William M. Meredith, sello rojo, firmas Allison–Spinner y reverso de la Columbian Bank Note Co. Sin serial impreso.',
+      en: 'A Fifth Issue 10¢, Series of 1874: portrait of William M. Meredith, red seal, Allison–Spinner signatures, and a Columbian Bank Note Co. reverse. No printed serial.',
+    },
+    description: {
+      es: 'El 10 centavos P#122 (Numista N#203351) es el valor bajo de la Quinta Emisión de Fractional Currency de Estados Unidos, la última de las cinco emisiones federales de papel inferior a un dólar. El anverso, en negro y rojo sobre papel con fibras de seguridad visibles, lleva a la izquierda el retrato de William M. Meredith —secretario del Tesoro en 1849–1850—, con la leyenda WILLIAM M. MEREDITH y SEC’Y TREAS’Y 1849. A la derecha, UNITED STATES corona un medallón con la X romana y CENTS; a lo largo del borde izquierdo se lee FRACTIONAL CURRENCY en vertical, y a la derecha SERIES OF 1874. El pie de imprenta del anverso dice ENGRAVED AND PRINTED AT THE Bureau, Engraving & Printing. Abajo firman John Allison (REGISTER) y F. E. Spinner (TREASURER), este último sobre el sello rojo del Tesoro (THESAUR. AMER. SEPTENT. SIGIL.). El reverso, en verde, lleva el texto de canje por United States Notes en sumas no menores de tres dólares y de recepción por deudas al gobierno menores de cinco dólares, excepto aduanas; en los bordes, las actas del 3 de marzo de 1863 y del 30 de junio de 1864; abajo, COLUMBIAN BANK NOTE CO. WASHINGTON, D.C. No hay campo de serial: el tipo no lo imprime. El sello rojo descarta el Fr. 1264 de sello verde; entre Fr. 1265 (llave larga y delgada en el sello) y Fr. 1266 (llave corta y gruesa) esta fotografía no confirma la variedad. No es el 25 centavos de Robert J. Walker ni el 50 centavos de William H. Crawford de la misma emisión. La pieza, circulada y sin encapsular, se presenta en funda.',
+      en: 'The 10¢ P#122 (Numista N#203351) is the low denomination of the United States Fifth Issue of Fractional Currency, the last of the five federal issues of paper under one dollar. The face, black and red on paper with visible security fibers, carries at left the portrait of William M. Meredith — Secretary of the Treasury in 1849–1850 — with the legend WILLIAM M. MEREDITH and SEC’Y TREAS’Y 1849. At right, UNITED STATES crowns a medallion with the Roman X and CENTS; FRACTIONAL CURRENCY runs vertically on the left border, and SERIES OF 1874 on the right. The face imprint reads ENGRAVED AND PRINTED AT THE Bureau, Engraving & Printing. Below, John Allison (REGISTER) and F. E. Spinner (TREASURER) sign, the latter over the red Treasury seal (THESAUR. AMER. SEPTENT. SIGIL.). The green reverse carries the exchange text for United States Notes in sums not less than three dollars and for dues to the United States less than five dollars, except customs; the borders cite the acts of 3 March 1863 and 30 June 1864; at bottom, COLUMBIAN BANK NOTE CO. WASHINGTON, D.C. There is no serial field: the type does not print one. The red seal rules out green-seal Fr. 1264; between Fr. 1265 (long, thin key in the seal) and Fr. 1266 (short, thick key) this photograph does not confirm the variety. It is not the Robert J. Walker 25¢ or the William H. Crawford 50¢ of the same issue. The collection note, circulated and unslabbed, is shown in a sleeve.',
+    },
+    historyHeading: {
+      es: 'El papel del cambio cuando faltó la moneda',
+      en: 'Paper change when coin vanished',
+    },
+    history: [
+      {
+        es: 'Al empezar la Guerra Civil, el público atesoró plata y oro y el comercio cotidiano se quedó sin cambio. El Congreso autorizó, el 17 de julio de 1862, el uso de sellos de correo para pagar deudas al gobierno; eso agotó los sellos. Salieron entonces notas de menos de un dólar —Postage Currency— con diseños tomados de los sellos; más tarde, con aspecto de billete, se llamaron Fractional Currency, autorizadas el 3 de marzo de 1863. Entre 1862 y 1876 hubo cinco emisiones, de 3 a 50 centavos. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro.',
+        en: 'At the start of the Civil War the public hoarded silver and gold, and everyday trade lost its change. Congress, on 17 July 1862, authorized postage and other stamps for debts to the government; that emptied the stamps. Notes under one dollar followed — Postage Currency — with designs taken from the stamps; later issues, looking more like banknotes, were called Fractional Currency, authorized on 3 March 1863. Between 1862 and 1876 there were five issues, from 3¢ to 50¢. The BEP dates to 1863 the first currency produced entirely at the Treasury.',
+      },
+      {
+        es: 'La Quinta Emisión, introducida el 26 de febrero de 1874, redujo el abanico a tres valores: 10 centavos (Meredith), 25 centavos (Robert J. Walker) y 50 centavos (William H. Crawford). La producción terminó el 15 de febrero de 1876, cuando la moneda metálica volvió a la circulación; el Congreso autorizó después el canje de ese papel en moneda de plata. El BEP estima el valor facial de las cinco emisiones en 368.720.079,51 dólares y el de la Quinta en 62.661.900,00 dólares. La National Numismatic Collection del Smithsonian confirma el retrato, el periodo, el diseño y las improntas de imprenta; las medidas de sus ejemplares rondan 83–85 × 53–54 mm.',
+        en: 'The Fifth Issue, introduced on 26 February 1874, narrowed the set to three values: 10¢ (Meredith), 25¢ (Robert J. Walker), and 50¢ (William H. Crawford). Production ended on 15 February 1876, as metallic coin returned to circulation; Congress later authorized redemption of that paper in silver coin. The BEP estimates the face value of all five issues at $368,720,079.51 and of the Fifth at $62,661,900.00. The Smithsonian National Numismatic Collection confirms the portrait, issue period, design, and printer inscriptions; its specimens measure about 83–85 × 53–54 mm.',
+      },
+    ],
+    frontCaption: {
+      es: 'Anverso del 10 centavos Fractional Currency, serie de 1874, P#122: Meredith a la izquierda, X CENTS, sello rojo y firmas Allison–Spinner. Sin serial.',
+      en: 'Face of the Fractional Currency 10¢, Series of 1874, P#122: Meredith at left, X CENTS, red seal, and Allison–Spinner signatures. No serial.',
+    },
+    backCaption: {
+      es: 'Reverso verde: texto de canje, actas de 1863 y 1864, e imprenta Columbian Bank Note Co., Washington, D.C.',
+      en: 'Green reverse: exchange text, acts of 1863 and 1864, and the Columbian Bank Note Co., Washington, D.C. imprint.',
+    },
+    scarcity: {
+      es: 'Numista agrupa Fr. 1264–1266 bajo N#203351 y, entre sus socios, sitúa el Fr. 1265 (sello rojo, llave larga) en torno al 83 % de las tenencias del tipo frente a un 13 % del Fr. 1266 (llave corta) y un 4 % del Fr. 1264 (sello verde). Esa frecuencia mide colecciones de socios, no existencias de subasta. Esta ficha no inventa un censo ni una rareza de subasta para este ejemplar, ni una tirada por variedad Friedberg.',
+      en: 'Numista groups Fr. 1264–1266 under N#203351 and, among its members, places Fr. 1265 (red seal, long key) at about 83 percent of holdings of the type against 13 percent for Fr. 1266 (short key) and 4 percent for Fr. 1264 (green seal). That frequency measures members’ collections, not auction supply. This record does not invent a census or an auction rarity for this piece, nor a printage by Friedberg variety.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para este ejemplar sin serial. La pieza se presenta en funda, sin encapsular, sin número de certificado.',
+      en: 'A PMG or PCGS census for this unserialed example has not been independently verified. The note is shown in a sleeve, unslabbed, with no certificate number.',
+    },
+    grade: {
+      es: 'Circulado, sin encapsular (colección privada)',
+      en: 'Circulated, unslabbed (private collection)',
+    },
+    seoTitle: {
+      es: '10 centavos Fractional Currency 1874 · P#122',
+      en: '10¢ Fractional Currency 1874 · P#122',
+    },
+    metaDescription: {
+      es: '10 centavos Fractional Currency, Quinta Emisión, serie de 1874, P#122: Meredith, sello rojo, Allison–Spinner, sin serial. Colección Notofilia.',
+      en: 'Fractional Currency 10¢, Fifth Issue, Series of 1874, P#122: Meredith, red seal, Allison–Spinner, no serial. Notofilia collection.',
+    },
+    physical: {
+      dimensionsMm: '≈ 83 × 54',
+      paper: {
+        es: 'Papel con fibras de seguridad visibles (azul y rojo).',
+        en: 'Paper with visible security fibers (blue and red).',
+      },
+      printingMethod: {
+        es: 'Calcografía: anverso BEP; reverso Columbian Bank Note Co.',
+        en: 'Intaglio: BEP face; Columbian Bank Note Co. reverse.',
+      },
+      inks: {
+        es: 'Anverso negro y rojo; reverso verde.',
+        en: 'Black and red face; green reverse.',
+      },
+    },
+    unclaimed: [
+      {
+        es: 'No se confirma si este ejemplar es Fr. 1265 (llave larga) o Fr. 1266 (llave corta); solo se afirma el sello rojo.',
+        en: 'This record does not confirm whether this piece is Fr. 1265 (long key) or Fr. 1266 (short key); only the red seal is asserted.',
+      },
+      {
+        es: 'No se inventa una tirada para el Fr. 1265, el Fr. 1266 ni para este ejemplar; los totales del BEP son valor facial de toda la emisión.',
+        en: 'No printage is invented for Fr. 1265, Fr. 1266, or for this piece; the BEP totals are face value for the whole issue.',
+      },
+      {
+        es: 'No se publica un precio ni un censo de certificación.',
+        en: 'No price and no grading census are published.',
+      },
+      {
+        es: 'Las dimensiones ≈ 83 × 54 mm son aproximadas; el Smithsonian registra variaciones leves entre ejemplares.',
+        en: 'The ≈ 83 × 54 mm dimensions are approximate; the Smithsonian records slight variation among specimens.',
+      },
+    ],
+    sources: [
+      {
+        href: 'https://www.bep.gov/system/files/2022-02/factsheet-fractionalcurrency-20130430.pdf',
+        es: 'BEP — History Fact Sheet: Fractional Currency (abril de 2013)',
+        en: 'BEP — History Fact Sheet: Fractional Currency (April 2013)',
+        note: {
+          es: 'Cinco emisiones, 1862–1876; Quinta Emisión 10, 25 y 50 centavos; totales de valor facial estimados (Quinta 62.661.900,00 dólares; total 368.720.079,51 dólares).',
+          en: 'Five issues, 1862–1876; Fifth Issue 10¢, 25¢, and 50¢; estimated face-value totals (Fifth $62,661,900.00; overall $368,720,079.51).',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/system/files/2022-02/currency-notes-508.pdf',
+        es: 'BEP — Currency Notes (PDF)',
+        en: 'BEP — Currency Notes (PDF)',
+        note: {
+          es: 'Fechas de la Quinta Emisión: 26 de febrero de 1874 – 15 de febrero de 1876; actas de 1862 y 1863.',
+          en: 'Fifth Issue dates: 26 February 1874 – 15 February 1876; acts of 1862 and 1863.',
+        },
+      },
+      {
+        href: 'https://americanhistory.si.edu/collections/object/nmah_1671430',
+        es: 'Smithsonian NNC — 10 Cents, Fractional Currency, 1874–1876 (nmah_1671430)',
+        en: 'Smithsonian NNC — 10 Cents, Fractional Currency, 1874–1876 (nmah_1671430)',
+        note: {
+          es: 'Retrato de Meredith; Quinta Emisión; improntas BEP y Columbian Bank Note Co.; medidas ~5,4 × 8,4 cm. No es este ejemplar.',
+          en: 'Meredith portrait; Fifth Issue; BEP and Columbian Bank Note Co. imprints; measurements ~5.4 × 8.4 cm. Not this piece.',
+        },
+      },
+      {
+        href: 'https://en.numista.com/catalogue/note203351.html',
+        es: 'Numista — N#203351, 10 Cents Fractional Currency, 5th series',
+        en: 'Numista — N#203351, 10 Cents Fractional Currency, 5th series',
+        note: {
+          es: 'P#122; Fr. 1264–1266; firmas Allison–Spinner; frecuencias por variedad de sello y llave entre socios.',
+          en: 'P#122; Fr. 1264–1266; Allison–Spinner signatures; member frequencies by seal and key variety.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Fractional_currency',
+        es: 'Wikipedia — Fractional currency',
+        en: 'Wikipedia — Fractional currency',
+        note: {
+          es: 'Tabla de variedades: Fr. 1264 sello verde; Fr. 1265 sello rojo, llave larga y delgada; Fr. 1266 sello rojo, llave corta y gruesa.',
+          en: 'Variety table: Fr. 1264 green seal; Fr. 1265 red seal, long thin key; Fr. 1266 red seal, short thick key.',
         },
       },
     ],
