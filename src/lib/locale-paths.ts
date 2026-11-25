@@ -224,6 +224,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/5-dollars-continental-1779/'],
   },
   {
+    es: '/coleccion/estados-unidos/50-centavos-1875-william-h-crawford/',
+    en: '/collection/united-states/50-cents-1875-william-h-crawford/',
+    aliases: ['/coleccion/united-states/50-cents-1875-william-h-crawford/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
     en: '/collection/united-states/5-shillings-pennsylvania-1773/',
     aliases: ['/coleccion/united-states/5-shillings-pennsylvania-1773/'],
@@ -757,6 +762,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
     '/en/coleccion/estados-unidos/5-dolares-continental-1779/',
+    '/en/coleccion/estados-unidos/50-centavos-1875-william-h-crawford/',
+    '/en/coleccion/united-states/50-cents-1875-william-h-crawford/',
     '/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
     '/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
     '/en/coleccion/estados-unidos/20-chelines-connecticut-1780/',

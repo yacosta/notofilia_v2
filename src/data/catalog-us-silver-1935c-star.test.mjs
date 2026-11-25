@@ -51,8 +51,8 @@ describe('US Series 1935C star $1 Fr. 1612★', () => {
     assert.doesNotMatch(printed, /36[,.]8/);
     assert.doesNotMatch(note, /12802025/);
     assert.doesNotMatch(note, /\$\d{2,}/);
-    assert.equal(additions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {

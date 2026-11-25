@@ -47,17 +47,17 @@ describe('Hacienda Vega Redonda tokens', () => {
       assert.equal(token.images.height, expectedSize);
       assert.match(token.images.front, /puerto-rico-hacienda-vega-redonda-/);
     }
-    assert.equal(additions.at(-12)?.id, 'pr-nd-cuarto-almud-vega-redonda');
-    assert.equal(additions.at(-11)?.id, 'pr-nd-medio-almud-vega-redonda');
-    assert.equal(additions.at(-10)?.id, 'pr-nd-un-almud-vega-redonda');
-    assert.equal(additions.at(-9)?.id, 'pr-nd-dos-almudes-vega-redonda');
-    assert.equal(additions.at(-8)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(additions.at(-8)?.kind, 'coin');
-    assert.equal(additions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(additions.at(-13)?.id, 'pr-nd-cuarto-almud-vega-redonda');
+    assert.equal(additions.at(-12)?.id, 'pr-nd-medio-almud-vega-redonda');
+    assert.equal(additions.at(-11)?.id, 'pr-nd-un-almud-vega-redonda');
+    assert.equal(additions.at(-10)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(additions.at(-9)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(additions.at(-9)?.kind, 'coin');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-8)?.id, 'pr-nd-dos-almudes-vega-redonda');
-    assert.equal(catalogAdditions.at(-7)?.id, 'pr-40-centavos-1896-pgv');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(catalogAdditions.at(-9)?.id, 'pr-nd-dos-almudes-vega-redonda');
+    assert.equal(catalogAdditions.at(-8)?.id, 'pr-40-centavos-1896-pgv');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
     assert.match(esPage, /PuertoRicoVegaRedondaPage locale="es"/);
     assert.match(enPage, /PuertoRicoVegaRedondaPage locale="en"/);
     assert.match(tokenPage, /id="main-content"/);

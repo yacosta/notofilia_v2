@@ -137,7 +137,7 @@ const jsonCrumbs = [
   description={metaDescription}
   locale={locale}
   pathname={pathname}
-  ogImage={hero?.src ?? note.images.front}
+  ogImage={hero?.src || note.images.front || undefined}
   ogImageAlt={hero ? heroAlt : pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, serialDisplay: note.serial_display, catalogNumber: note.pick })}
 >
   <Fragment slot="head">
@@ -281,7 +281,7 @@ const jsonCrumbs = [
         </dl>
       </section>
 
-      <div class:list={['grid gap-10', note.images.back && 'lg:grid-cols-2']}>
+      <div class:list={['grid gap-10', (note.images.back || note.backCaption[locale]) && 'lg:grid-cols-2']}>
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           {note.images.front ? (
@@ -302,7 +302,7 @@ const jsonCrumbs = [
           ) : null}
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
-        {note.images.back ? (
+        {(note.images.back || note.backCaption[locale]) ? (
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           {note.images.back ? (
