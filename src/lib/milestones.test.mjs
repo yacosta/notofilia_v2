@@ -114,13 +114,15 @@ describe('homepage milestones from catalog holdings', () => {
   it('keeps later catalogued holdings after earlier ones in additions', () => {
     const stLouis = additions.findIndex((row) => row.id === 'us-frn-2003-2-st-louis-h00010418');
     const minneapolis = additions.findIndex((row) => row.id === 'us-frn-2003-2-minneapolis-i00011690');
+    const fractional = additions.findIndex((row) => row.id === 'us-10-centavos-fraccional-1874');
     const peso1959 = additions.findIndex((row) => row.id === 'co-1959-1-peso-oro-60870843');
-    assert.ok(stLouis >= 0 && peso1959 >= 0 && minneapolis >= 0);
+    assert.ok(stLouis >= 0 && peso1959 >= 0 && minneapolis >= 0 && fractional >= 0);
     assert.ok(
       stLouis > peso1959,
       'append when catalogued; do not insert beside other FRNs',
     );
     assert.ok(minneapolis > stLouis, 'append the Minneapolis star after earlier holdings');
+    assert.ok(fractional > minneapolis, 'append the Fractional Currency 10¢ after earlier holdings');
   });
 
   it('matches the 1977 500 pesos oro holding by its serial', () => {
@@ -221,7 +223,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1821-8-reales-bogota-ba-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 70);
+    assert.equal(fromEnd, 71);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-reales-bogota-1821-ba-jf',
@@ -244,7 +246,7 @@ describe('homepage milestones from catalog holdings', () => {
     const holding = additions.find((row) => row.id === 'co-1801-8-escudos-popayan-p-jf');
     assert.ok(holding);
     const fromEnd = additions.length - 1 - additions.findIndex((row) => row.id === holding.id);
-    assert.equal(fromEnd, 69);
+    assert.equal(fromEnd, 70);
     assert.ok(fromEnd >= HOME_MILESTONE_LIMIT);
     const piece = {
       id: 'co-8-escudos-popayan-1801-p-jf',
