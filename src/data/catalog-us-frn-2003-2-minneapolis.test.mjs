@@ -56,9 +56,9 @@ describe('Series 2003 Minneapolis $2 collector star', () => {
     assert.doesNotMatch(prose, /precio|hammer|realized|estimate|9,95|9\.95/i);
     assert.equal(note.metaDescription.es.length <= META_DESCRIPTION_MAX, true);
     assert.equal(note.metaDescription.en.length <= META_DESCRIPTION_MAX, true);
-    assert.equal(additions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
   });
 
   it('names the scans for search and keeps the supplied frame', () => {

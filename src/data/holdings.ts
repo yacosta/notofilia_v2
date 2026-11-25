@@ -266,6 +266,7 @@ export const additions: Holding[] = [
   { id: 'us-usn-1963-5-star-02955091a', kind: 'banknote', country: 'US' },
   { id: 'us-frn-2003-2-minneapolis-i00011690', kind: 'banknote', country: 'US' },
   { id: 'us-10-centavos-fraccional-1874', kind: 'banknote', country: 'US' },
+  { id: 'us-50-centavos-fraccionarios-1875', kind: 'banknote', country: 'US' },
 ];
 
 /** Newly added catalog records (fichas), independent of piece counts. */
@@ -456,6 +457,7 @@ export const catalogAdditions: CatalogEntry[] = [
   { id: 'us-usn-1963-5-fr1536-star' },
   { id: 'us-frn-2003-2-minneapolis-i00011690' },
   { id: 'us-10-centavos-fraccional-1874' },
+  { id: 'us-50-centavos-fraccionarios-1875' },
 ];
 
 export type CollectionStats = {

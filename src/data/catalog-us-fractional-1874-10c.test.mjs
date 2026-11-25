@@ -56,9 +56,11 @@ describe('Fractional Currency 10¢ Series of 1874 (P#122)', () => {
     assert.match(note.unclaimed.map((item) => item.en).join('\n'), /No price/);
     assert.equal(note.metaDescription.es.length <= META_DESCRIPTION_MAX, true);
     assert.equal(note.metaDescription.en.length <= META_DESCRIPTION_MAX, true);
-    assert.equal(additions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(additions.filter((row) => row.id === 'us-10-centavos-fraccional-1874').length, 1);
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(catalogAdditions.filter((row) => row.id === 'us-10-centavos-fraccional-1874').length, 1);
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
   });
 
   it('names the scans for search and keeps the supplied frame', () => {

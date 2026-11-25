@@ -226,7 +226,11 @@ describe('Collection-wide banknote catalog', () => {
 
   it('keeps Colombia, US, and polymer holdings aligned with the data modules', () => {
     const colombiaPieces = colombiaNotes.flatMap((note) => notePieces(note));
-    const usaNotes = countTopLevelSerials(extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes'));
+    const usaNotesBlock = extractExportArrayBlock(usaNotesSource, 'unitedStatesNotes');
+    const usaNotes = countTopLevelSerials(usaNotesBlock);
+    // Hawaii $5 / $20 (and any other multi-example pages) expand via note.examples in the catalog.
+    const usaExamples = (usaNotesBlock.match(/^        serial: '/gm) || []).length;
+    const usaHoldings = usaNotes + usaExamples;
     const mpcNotes = countTopLevelSerials(extractExportArrayBlock(mpcNotesSource, 'mpcVietnamNotes'));
     const mpcProgramNotes = countTopLevelSerials(extractExportArrayBlock(mpcProgramNotesSource, 'mpcProgramNotes'));
     const polymerNotes = polymerChinaNotes(chinaNotesSource);
@@ -236,8 +240,9 @@ describe('Collection-wide banknote catalog', () => {
     const puertoRicoNotes = (extractExportArrayBlock(puertoRicoNotesSource, 'puertoRicoNotes').match(/^    serial: '/gm) || []).length;
     const ecuadorNotes = (extractExportArrayBlock(ecuadorNotesSource, 'ecuadorNotes').match(/^    serial: '/gm) || []).length;
 
-    assert.equal(colombiaPieces.length, 45);
-    assert.equal(usaNotes, 61);
+    assert.equal(colombiaPieces.length, 52);
+    assert.equal(usaNotes, 63);
+    assert.equal(usaExamples, 2);
     assert.equal(mpcNotes, 4);
     assert.equal(mpcProgramNotes, 1);
     assert.equal(polymerNotes.length, 1);
@@ -271,7 +276,7 @@ describe('Collection-wide banknote catalog', () => {
     }, {});
 
     assert.equal(byCountry.CO, colombiaPieces.length);
-    assert.equal(byCountry.US, usaNotes + mpcNotes + mpcProgramNotes);
+    assert.equal(byCountry.US, usaHoldings + mpcNotes + mpcProgramNotes);
     assert.equal(byCountry.CN, polymerNotes.length);
     if (byCountry.GB) {
       assert.equal(byCountry.GB, englandNotes);
@@ -291,7 +296,7 @@ describe('Collection-wide banknote catalog', () => {
     assert.equal(
       documents.length,
       colombiaPieces.length +
-        usaNotes +
+        usaHoldings +
         mpcNotes +
         mpcProgramNotes +
         polymerNotes.length +

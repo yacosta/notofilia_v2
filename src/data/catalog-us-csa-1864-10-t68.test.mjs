@@ -82,15 +82,15 @@ describe('US Confederate T-68 $10 serial 83148', () => {
     ].join('\n');
     assert.doesNotMatch(publicCopy, /precio|hammer|realized|estimate/i);
     const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-10-centavos-fraccional-1874');
-    assert.match(milestones[0]?.href ?? '', /2-dolares-serie-2003-minneapolis/);
+    assert.equal(milestones[0]?.holdingId, 'us-50-centavos-fraccionarios-1875');
+    assert.match(milestones[0]?.href ?? '', /50-centavos-fraccionarios-1875/);
     assert.match(
       milestones[0]?.image ?? '',
-      /united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star/,
+      /united-states-fractional-50-cents-series-1875-crawford-fr1381/,
     );
-    assert.equal(additions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-10-centavos-fraccional-1874');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
     assert.equal(
       additions.filter((row) => row.id === 'us-csa-1864-10-83148').length,
       1,
