@@ -6,13 +6,19 @@ const data = readFileSync(new URL('./estados-unidos.ts', import.meta.url), 'utf8
 const faq = readFileSync(new URL('./page-faq.ts', import.meta.url), 'utf8');
 
 const NEW_CHAPTERS = ['us-demand', 'us-fractional', 'us-national', 'us-treasury', 'us-size'];
+const WITHOUT_HOLDINGS = ['us-demand', 'us-national', 'us-treasury', 'us-size'];
 
 describe('US series history chapters', () => {
-  it('adds Demand Notes, Fractional, Nationals, Coin Notes, and the 1928 size line without holdings', () => {
+  it('adds Demand Notes, Fractional, Nationals, Coin Notes, and the 1928 size line', () => {
     for (const id of NEW_CHAPTERS) {
       assert.match(data, new RegExp(`id: '${id}'`));
+    }
+    for (const id of WITHOUT_HOLDINGS) {
       assert.doesNotMatch(data, new RegExp(`chapterId: '${id}'`));
     }
+    assert.match(data, /chapterId: 'us-fractional'/);
+    assert.match(data, /50-centavos-1875-william-h-crawford/);
+    assert.match(data, /Fr\. 1381/);
 
     assert.match(data, /id: 'us-demand'/);
     assert.match(data, /no hay aún un Demand Note/);

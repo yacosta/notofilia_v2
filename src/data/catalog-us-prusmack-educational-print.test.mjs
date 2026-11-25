@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { register } from 'node:module';
 import { describe, it } from 'node:test';
+import { showCatalogBackColumn } from '../lib/catalog-media.ts';
 import { localizePath } from '../lib/locale-paths.ts';
 import { limitMetaDescription } from '../lib/piece-seo.ts';
 import { additions, catalogAdditions } from './holdings.ts';
@@ -48,6 +49,8 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
     assert.doesNotMatch(note.signatures.en, /Tillman|Morgan/);
     assert.equal(note.images.back, '');
     assert.equal(note.images.front, IMAGE);
+    assert.equal(showCatalogBackColumn(note.images, note.backCaption.es), false);
+    assert.equal(showCatalogBackColumn(note.images, note.backCaption.en), false);
     assert.equal(note.images.composite, IMAGE);
     assert.equal(note.images.width, 1024);
     assert.equal(note.images.height, 771);
@@ -94,17 +97,17 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-1875-william-h-crawford');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
     assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
     const { milestones, catalogPieceForHolding } = await import('../lib/milestones.ts');
     const { collectionNoteSeeds } = await import('./collection-note-catalog.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-frn-2003-2-minneapolis-i00011690');
-    assert.match(milestones[0]?.href ?? '', /2-dolares-serie-2003-minneapolis/);
+    assert.equal(milestones[1]?.holdingId, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.match(milestones[1]?.href ?? '', /2-dolares-serie-2003-minneapolis/);
     assert.match(
-      milestones[0]?.image ?? '',
+      milestones[1]?.image ?? '',
       /united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star/,
     );
     assert.equal(

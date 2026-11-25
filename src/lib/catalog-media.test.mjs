@@ -11,6 +11,7 @@ import {
   linkFirstGlossaryTerms,
   distinctFigureAlt,
   pieceScanAlt,
+  showCatalogBackColumn,
 } from './catalog-media.ts';
 
 register(new URL('./resolve-ts-hook.mjs', import.meta.url));
@@ -209,6 +210,15 @@ describe('piece scan alt', () => {
         assert.notEqual(pair, `${piece.frontCaption[locale]} ${piece.backCaption[locale]}`);
       }
     }
+  });
+});
+
+describe('showCatalogBackColumn', () => {
+  it('keeps a face-only scan in one column and still describes a photoless note', () => {
+    assert.equal(showCatalogBackColumn({ front: '/face.jpg', back: '' }, 'The back was not photographed.'), false);
+    assert.equal(showCatalogBackColumn({ front: '/face.jpg', back: '/back.jpg' }, 'Back.'), true);
+    assert.equal(showCatalogBackColumn({ front: '', back: '' }, 'Reverse of the 1875 50-cent note.'), true);
+    assert.equal(showCatalogBackColumn({ front: '', back: '' }, '   '), false);
   });
 });
 

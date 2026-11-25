@@ -6,7 +6,7 @@ import { copy, localizePath, type Locale } from '../../lib/site';
 import { catalogReferenceRows } from '../../lib/catalog-reference';
 import { breadcrumbList, inferGradingService, visualArtworkJsonLd } from '../../lib/json-ld';
 import { piecePageMeta } from '../../lib/piece-seo';
-import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings } from '../../lib/catalog-media';
+import { linkFirstGlossaryTerms, pieceScanAlt, pieceSiblings, showCatalogBackColumn } from '../../lib/catalog-media';
 import {
   barabooScripSeriesCopy,
   barabooScripSeriesPath,
@@ -56,6 +56,20 @@ const catalogRows = note.friedberg
   ? [{ label: t.friedbergLabel, value: note.friedberg }]
   : catalogReferenceRows(note.pick, locale);
 const physical = note.physical;
+const hasFrontScan = Boolean(note.images.front);
+const showBackColumn = showCatalogBackColumn(note.images, note.backCaption[locale]);
+const ogImage = hero?.src || (hasFrontScan ? note.images.front : undefined);
+const ogImageAlt = hero
+  ? heroAlt
+  : hasFrontScan
+    ? pieceScanAlt({
+        sideLabel: t.frontHeading,
+        title: note.title[locale],
+        serial: note.serial,
+        serialDisplay: note.serial_display,
+        catalogNumber: note.pick,
+      })
+    : undefined;
 const scanImages = [
   { src: note.images.front, caption: note.frontCaption[locale], width: imageWidth, height: imageHeight },
   { src: note.images.back, caption: note.backCaption[locale], width: imageWidth, height: imageHeight },
@@ -137,8 +151,8 @@ const jsonCrumbs = [
   description={metaDescription}
   locale={locale}
   pathname={pathname}
-  ogImage={hero?.src ?? note.images.front}
-  ogImageAlt={hero ? heroAlt : pieceScanAlt({ sideLabel: t.frontHeading, title: note.title[locale], serial: note.serial, serialDisplay: note.serial_display, catalogNumber: note.pick })}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Fragment slot="head">
     <script
@@ -281,7 +295,7 @@ const jsonCrumbs = [
         </dl>
       </section>
 
-      <div class:list={['grid gap-10', note.images.back && 'lg:grid-cols-2']}>
+      <div class:list={['grid gap-10', showBackColumn && 'lg:grid-cols-2']}>
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.frontHeading}</h2>
           {note.images.front ? (
@@ -302,7 +316,7 @@ const jsonCrumbs = [
           ) : null}
           <figcaption class="mt-3 font-sans text-[14px]/6 text-muted">{note.frontCaption[locale]}</figcaption>
         </figure>
-        {note.images.back ? (
+        {showBackColumn ? (
         <figure class="m-0">
           <h2 class="mb-3 mt-0 font-display text-[1.5rem]/8 font-normal text-cream-dim">{t.backHeading}</h2>
           {note.images.back ? (
