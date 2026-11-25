@@ -209,6 +209,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/20-dollars-confederate-1864/'],
   },
   {
+    es: '/coleccion/estados-unidos/10-centavos-fraccional-1874/',
+    en: '/collection/united-states/10-cents-fractional-currency-1874/',
+    aliases: ['/coleccion/united-states/10-cents-fractional-currency-1874/'],
+  },
+  {
     es: '/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
     en: '/collection/united-states/5-dollars-city-bank-new-haven/',
     aliases: ['/coleccion/united-states/5-dollars-city-bank-new-haven/'],
@@ -756,6 +761,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/estados-unidos/500-dolares-serie-1934a-nueva-york/',
     '/en/coleccion/estados-unidos/20-dolares-confederados-1864/',
     '/en/coleccion/estados-unidos/5-dolares-city-bank-new-haven/',
+    '/en/coleccion/estados-unidos/10-centavos-fraccional-1874/',
+    '/en/coleccion/united-states/10-cents-fractional-currency-1874/',
     '/en/coleccion/estados-unidos/5-dolares-continental-1779/',
     '/en/coleccion/estados-unidos/5-chelines-pensilvania-1773/',
     '/en/coleccion/estados-unidos/2-chelines-6-peniques-pensilvania-1773/',
