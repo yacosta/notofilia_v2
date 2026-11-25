@@ -176,8 +176,8 @@ export function collectionStats() {
 export function statsLine(locale: Locale): string {
   const stats = collectionStats();
   return locale === 'en'
-    ? `${stats.banknotes} banknotes · ${stats.coins} coins · ${stats.countries} countries · ${stats.catalog} catalog entries · ${stats.pages} pages`
-    : `${stats.banknotes} billetes · ${stats.coins} monedas · ${stats.countries} países · ${stats.catalog} fichas · ${stats.pages} páginas`;
+    ? `${stats.banknotes} banknotes · ${stats.coins} coins · ${stats.countries} countries · ${stats.catalog} catalog entries`
+    : `${stats.banknotes} billetes · ${stats.coins} monedas · ${stats.countries} países · ${stats.catalog} fichas`;
 }
 
 addLocalePair(USA_PATH, USA_PATH_EN);
