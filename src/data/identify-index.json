@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T20:17:19.106Z",
+  "generatedAt": "2026-11-25T01:15:49.142Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -5396,6 +5396,45 @@
       "title": {
         "es": "2 dólares · Serie 2003 · San Luis ★",
         "en": "$2 · Series 2003 · St. Louis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-minneapolis",
+      "face": "front",
+      "hash": "1caca8aa4253237c",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/",
+      "pick": "P#516 · Fr. 1937-I*",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star-composite.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · Minneapolis ★",
+        "en": "$2 · Series 2003 · Minneapolis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-minneapolis",
+      "face": "front",
+      "hash": "4229caaaccacb140",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/",
+      "pick": "P#516 · Fr. 1937-I*",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star-front.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · Minneapolis ★",
+        "en": "$2 · Series 2003 · Minneapolis ★"
+      }
+    },
+    {
+      "pieceId": "2-dolares-serie-2003-minneapolis",
+      "face": "back",
+      "hash": "014a2f2b0d3355a3",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/",
+      "pick": "P#516 · Fr. 1937-I*",
+      "image": "/images/catalog/united-states/united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star-back.jpg",
+      "title": {
+        "es": "2 dólares · Serie 2003 · Minneapolis ★",
+        "en": "$2 · Series 2003 · Minneapolis ★"
       }
     },
     {
