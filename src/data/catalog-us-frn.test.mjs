@@ -49,6 +49,7 @@ describe('US Federal Reserve Note series list', () => {
       '20-dolares-serie-1934a-hawaii',
       '1-dolar-serie-2003-atlanta',
       '2-dolares-serie-2003-san-luis',
+      '2-dolares-serie-2003-minneapolis',
     ]);
 
     const sorted = [...fileOrder].sort((a, b) => {
@@ -63,6 +64,7 @@ describe('US Federal Reserve Note series list', () => {
     });
     assert.deepEqual(sorted, [
       '1-dolar-serie-2003-atlanta',
+      '2-dolares-serie-2003-minneapolis',
       '2-dolares-serie-2003-san-luis',
       '5-dolares-serie-1934a-hawaii',
       '10-dolares-serie-1934-chicago',

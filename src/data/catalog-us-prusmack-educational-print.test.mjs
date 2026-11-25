@@ -94,19 +94,40 @@ describe('Tim Prusmack Educational $1 print, 12/250', () => {
       note.printed.en,
     ].join('\n');
     assert.doesNotMatch(prose, /USD|euros?|precio|hammer|realized|estimate/i);
-    assert.equal(additions.at(-1)?.id, 'us-usn-1963-5-star-02955091a');
+    assert.equal(additions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-usn-1963-5-fr1536-star');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
     assert.equal(additions.filter((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250').length, 1);
     assert.equal(additions.filter((row) => row.id === 'co-1980-10-pesos-oro-00000100').length, 1);
-    const { milestones } = await import('../lib/milestones.ts');
-    assert.equal(milestones[0]?.holdingId, 'us-usn-1963-5-star-02955091a');
-    assert.match(milestones[0]?.href ?? '', /5-dolares-serie-1963-estrella/);
+    const { milestones, catalogPieceForHolding } = await import('../lib/milestones.ts');
+    const { collectionNoteSeeds } = await import('./collection-note-catalog.ts');
+    assert.equal(milestones[0]?.holdingId, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.match(milestones[0]?.href ?? '', /2-dolares-serie-2003-minneapolis/);
     assert.match(
       milestones[0]?.image ?? '',
-      /united-states-treasury-5-dollars-series-1963-united-states-note-star-02955091a/,
+      /united-states-federal-reserve-note-2-dollars-series-2003-minneapolis-i00011690-star/,
     );
-    const prusmackCard = milestones.find((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.equal(
+      milestones.some((row) => row.holdingId === 'us-prusmack-educational-1-dolar-1896-12-250'),
+      false,
+    );
+    const prusmackHolding = additions.find((row) => row.id === 'us-prusmack-educational-1-dolar-1896-12-250');
+    assert.ok(prusmackHolding);
+    const prusmackCard = catalogPieceForHolding(
+      prusmackHolding,
+      collectionNoteSeeds().map((seed) => ({
+        id: seed.id,
+        country: seed.country,
+        href: seed.href,
+        title: seed.title,
+        dek: seed.dek,
+        pick: seed.pick,
+        serial: seed.serial,
+        cert: '',
+        image: seed.image,
+        imageAlt: seed.imageAlt,
+      })),
+    );
     assert.ok(prusmackCard);
     assert.match(prusmackCard.href ?? '', /tim-prusmack\/1-dolar-educational-1896-12-250/);
     assert.match(prusmackCard.image ?? '', /prusmack-1-dollar-1896-history-instructing-youth-print-12-250/);

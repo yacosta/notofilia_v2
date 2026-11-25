@@ -283,6 +283,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/2-dollars-series-2003-st-louis/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/', 'en'),
+      '/en/collection/united-states/2-dollars-series-2003-minneapolis/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/2-dolares-serie-1917/', 'en'),
       '/en/collection/united-states/2-dollars-series-1917/',
     );
@@ -1264,6 +1268,10 @@ describe('locale path mapping', () => {
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/'],
       '/en/collection/united-states/1-dollar-series-2003-atlanta/',
+    );
+    assert.equal(
+      redirects['/en/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/'],
+      '/en/collection/united-states/2-dollars-series-2003-minneapolis/',
     );
     assert.equal(
       redirects['/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/'],

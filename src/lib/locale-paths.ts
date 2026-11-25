@@ -114,6 +114,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/2-dollars-series-2003-st-louis/'],
   },
   {
+    es: '/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/',
+    en: '/collection/united-states/2-dollars-series-2003-minneapolis/',
+    aliases: ['/coleccion/united-states/2-dollars-series-2003-minneapolis/'],
+  },
+  {
     es: '/coleccion/estados-unidos/2-dolares-serie-1917/',
     en: '/collection/united-states/2-dollars-series-1917/',
     aliases: ['/coleccion/united-states/2-dollars-series-1917/'],
@@ -737,6 +742,8 @@ export function englishRedirects(): Record<string, string> {
     '/en/coleccion/united-states/1-dollar-silver-certificate-1935c-star/',
     '/en/coleccion/estados-unidos/1-dolar-serie-2003-atlanta/',
     '/en/coleccion/estados-unidos/2-dolares-serie-2003-san-luis/',
+    '/en/coleccion/estados-unidos/2-dolares-serie-2003-minneapolis/',
+    '/en/coleccion/united-states/2-dollars-series-2003-minneapolis/',
     '/en/coleccion/estados-unidos/1-dolar-state-bank-new-brunswick/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934-chicago/',
     '/en/coleccion/estados-unidos/10-dolares-serie-1934a-chicago/',
