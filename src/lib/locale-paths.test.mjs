@@ -311,6 +311,10 @@ describe('locale path mapping', () => {
       '/en/collection/united-states/10-dollars-gold-certificate-1922/',
     );
     assert.equal(
+      localizePath('/coleccion/estados-unidos/50-centavos-fraccionarios-1875/', 'en'),
+      '/en/collection/united-states/50-cents-fractional-1875/',
+    );
+    assert.equal(
       localizePath('/coleccion/estados-unidos/10-dolares-hawaii-1934a/', 'en'),
       '/en/collection/united-states/10-dollars-hawaii-1934a/',
     );

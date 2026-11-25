@@ -172,8 +172,8 @@ export const unitedStatesChapters: UnitedStatesChapter[] = [
       en: 'Paper from 3¢ to 50¢ for everyday change when coin vanished from circulation.',
     },
     body: {
-      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. En esta vitrina no hay aún un ejemplar con foto; cuando lo haya, llevará ficha propia. Un Pick o un año no identifican el objeto: lo identifica el serial, si lo lleva.',
-      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. This case does not yet hold a photographed example; when one is documented it will have its own note page. A Pick number or a year does not identify the object: the serial does, when one was printed.',
+      es: 'Durante la Guerra Civil el atesoramiento de plata y oro dejó el comercio sin cambio. El Tesoro respondió con papel fraccionario: primero Postage Currency, en 1862, y luego cinco emisiones de Fractional Currency hasta 1876. El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en 5, 10, 25 y 50 centavos; emisiones posteriores añadieron 3 y 15 centavos. No es el scrip conmemorativo de Baraboo ni los fraccionarios de los certificados de pago militar. Friedberg les dedica su propio apartado. Ya tiene ficha el 50 centavos de la quinta emisión, serie de 1875, Fr. 1381, retrato de William H. Crawford, sello rojo y extremo derecho teñido de azul; el serial no se lee en las fotografías. Un Pick o un año no identifican el objeto: lo identifica el serial, si se lee, o la huella combinada cuando no.',
+      en: 'During the Civil War, hoarding of silver and gold left everyday trade without change. The Treasury answered with fractional paper: first Postage Currency, in 1862, then five issues of Fractional Currency through 1876. The BEP dates to 1863 the first currency produced entirely at the Treasury, in 5¢, 10¢, 25¢, and 50¢; later issues added 3¢ and 15¢. This is not Baraboo commemorative scrip, nor the fractionals of Military Payment Certificates. Friedberg gives the class its own section. The Fifth Issue 50¢, Series of 1875, Fr. 1381, with William H. Crawford’s portrait, a red seal, and a blue-tinted right end, already has a note page; the serial is not readable on the photographs. A Pick number or a year does not identify the object: the serial does, when one can be read, or the combined fingerprint when it cannot.',
     },
   },
   {
@@ -409,7 +409,7 @@ export const seriesCopy = {
       'El papel moneda público nació en América, no en Europa. El 10 de diciembre de 1690, Massachusetts autorizó las «bills of credit» para financiar una guerra; el U.S. Currency Education Program y el Newman Numismatic Portal lo registran como el primer papel moneda público de Occidente. Las trece colonias siguieron el modelo. En 1775, el Congreso Continental emitió los Continentals: sin respaldo metálico y falsificados por el enemigo, su desplome de valor acuñó la expresión «not worth a Continental».',
       'En el siglo XIX el comercio cotidiano corrió sobre billetes de bancos estatales —obsolete notes o broken banknotes en la jerga, catalogadas por Haxby—. La American Numismatic Society sitúa el fin de esa pluralidad en la Guerra Civil: un impuesto del 10 % sobre el papel privado y la National Banking Act de 1863, que introdujo los National Bank Notes (1863–1935). El primer papel federal de circulación general fueron los Demand Notes de 1861 —el origen del apodo «greenback»—; los United States Notes de 1862 los sustituyeron como medio de curso legal. El atesoramiento de metal trajo la Fractional Currency (1862–1876). En el Sur circuló el grayback confederado, sin respaldo metálico, hasta la ley del 17 de febrero de 1864.',
       'Siguieron los Gold Certificates (1865), los Silver Certificates (1878) y los Treasury Notes o Coin Notes de 1890–1891, autorizados por la Sherman Silver Purchase Act. La Educational Series de 1896 —History Instructing Youth— es un certificado de plata, no un Coin Note. La Federal Reserve Act de 1913 creó el banco central y dos tipos de papel: Federal Reserve Notes y, como moneda de emergencia, Federal Reserve Bank Notes. En 1929 el BEP recortó el formato cerca de un 30 % —serie impresa 1928, de ocho a doce billetes por pliego—: esa línea divide el tamaño grande del pequeño. El BEP dejó de entregar United States Notes en 1971; hoy solo se emiten FRN. La Segunda Guerra Mundial marcó certificados de plata y FRN con sobrecarga HAWAII y el 1 dólar 1935-A de sello amarillo para África del Norte.',
-      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 5 dólares United States Note de la serie 1963 (P#383; Fr. 1536), serial A26583630A, el 5 dólares United States Note de la serie 1963 con estrella (P#383; Fr. 1536★), serial ★02955091A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 2 dólares de 2003 del distrito de Minneapolis, estrella de coleccionista I00011690★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), seriales L68013147A y L69086875A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002, y la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
+      'Esta vitrina no es un catálogo completo de la notafilia estadounidense: es el inventario de los ejemplares que se documentarán aquí, con referencias a Friedberg, Haxby, Schwan, Criswell o Pick cuando existan. Ya tienen ficha el 5 dólares continental del 14 de enero de 1779 (Fr. CC-91; el serial manuscrito no se lee), el 5 chelines de Pensilvania del 1 de octubre de 1773 (Fr. PA-166, serial 9733), el 2 chelines y 6 peniques de Pensilvania del 1 de octubre de 1773 (Fr. PA-165), serial 21251, el 20 chelines de Rhode Island de mayo de 1786 (Fr. RI-298), serial 6229, el 20 chelines de Connecticut del 1 de junio de 1780 (Fr. CT-231), serial 8495, el 1 dólar remainder del State Bank at New Brunswick (Haxby NJ-350 G16a), el 5 dólares remainder del City Bank of New Haven (Haxby CT-265 G52b, plancha A, sin serial), el 50 dólares remainder del Canal Bank de Nueva Orleans (Haxby LA-105 G46a, plancha D, sin serial), el 100 dólares confederado T-40 de agosto de 1862, serial 36830, el 100 dólares confederado T-41 del 8 de septiembre de 1862, serial 11657, plancha L, el 5 dólares confederado T-69 de 1864, serial 6164, el 10 dólares confederado T-68 de 1864, serial 83148, 9.ª serie, plancha F, el 20 dólares T-67, serial 74523, el 2 dólares United States Note de la serie 1917 (P#188(4); Fr. 60), serial B50400302A, el 5 dólares United States Note de la serie 1907 (P#186(9); Fr. 91), serial M12980830, el 1 dólar United States Note de la serie 1917 (P#187(5); Fr. 39), serial T55297699A, plancha G, el 1 dólar United States Note de la serie 1928 (P#377; Fr. 1500), serial A01772521A, reverso Funnyback, el 5 dólares United States Note de la serie 1963 (P#383; Fr. 1536), serial A26583630A, el 5 dólares United States Note de la serie 1963 con estrella (P#383; Fr. 1536★), serial ★02955091A, el 10 dólares Federal Reserve Note de 1934 del distrito de Chicago, serial G30986728A, el 10 dólares de 1934 A del mismo distrito, serial G74025286A, el 10 dólares de 1934 A del distrito de Cleveland, serial D78652996A, el 10 dólares de 1934 A del distrito de Filadelfia, serial C46924254A, el 10 dólares de 1934 A del distrito de Nueva York, serial B42488184B, el 10 dólares de 1934 C del distrito de Kansas City, serial J55894000A, cara ancha, Fr. 2008-J, el 10 dólares de 1934 D del distrito de Richmond, serial E60822246B, el 500 dólares de 1934 A del distrito de Nueva York, serial B00286799A, el 1.000 dólares de 1934 A del mismo distrito, serial B00411221A, el 1 dólar de 2003 del distrito de Atlanta, reemplazo F05033622★, el 2 dólares de 2003 del distrito de San Luis, reemplazo H00010418★, el 2 dólares de 2003 del distrito de Minneapolis, estrella de coleccionista I00011690★, el 1 dólar certificado de plata Educational Series de 1896 (Fr. 224), serial B3207078, el 2 dólares certificado de plata Educational Series de 1896 (P#336(1); Fr. 247), serial 1712091, plancha C, el 5 dólares certificado de plata Educational Series de 1896 (P#337(3); Fr. 270), serial 31528195, plancha C, el 1 dólar certificado de plata serie 1928 (Funnyback; Fr. 1600), serial H86110669A, el 1 dólar certificado de plata serie 1928 A (Funnyback; Fr. 1601), serial D00508932B, el 1 dólar HAWAII serie 1935 A (Fr. 2300), serial S40499058C, el 1 dólar de sello amarillo serie 1935 A (Fr. 2306), serial B52497547C, el mismo tipo, serial C78095129C, bloque C–C, el 1 dólar certificado de plata serie 1935 A de sello azul (P#416a; Fr. 1608), serial V94411136B, el 1 dólar experimental S serie 1935 A (P#416AS; Fr. 1610), serial S74796042C, el 1 dólar experimental R serie 1935 A (P#416AR; Fr. 1609), serial S71208111C, el 1 dólar certificado de plata serie 1935 C con estrella (P#416c; Fr. 1612★), serial ★25885207B, el 5 dólares HAWAII serie 1934 A (P#38; Fr. 2302), seriales L68013147A y L69086875A, el 10 dólares HAWAII serie 1934 A (P#40; Fr. 2303), serial L45104670B, el 20 dólares HAWAII serie 1934 A (Fr. 2305), seriales L85934593A y L86654132A, el 1 dólar certificado de plata serie 1957 B, serial S35513454A, y, en Misceláneos, el 1 dólar serie 2006 del distrito de Dallas estampado para Where’s George?, serial K46602688C, el billete de prueba Giori uniface del Lincoln Memorial, hacia los años 1970, sin serial, el 5¢ del scrip de Baraboo de 1933, John Ringling, serial A4895, el 10¢ del mismo scrip, Chas. Ringling, serial A2844, el 15¢, Al. T. Ringling, serial A2819, el 50¢, A. C. Ringling, serial A1054, y el 1 dólar, Ringling Bros., serial A2002, y la estampa de Tim Prusmack del anverso del 1 dólar Educational de 1896, número 12 de 250, y el 50 centavos Fractional Currency de la quinta emisión, serie de 1875 (P#124; Fr. 1381), extremo azul, serial ilegible en las fotografías. Las demás se publicarán como en Filipinas, a medida que se vayan fotografiando. Caben también el pop art de Rency, certificados de pago militar (MPC), cupones USDA y otros billetes de prueba.',    ],
     viewNote: 'Ver la ficha',
     viewRencyCase: 'Abrir la vitrina de Rency',
     viewMiscCase: 'Abrir la vitrina de Misceláneos',
@@ -436,7 +436,7 @@ export const seriesCopy = {
       'Public paper money was born in America, not in Europe. On 10 December 1690 Massachusetts authorized “bills of credit” to finance a war; the U.S. Currency Education Program and the Newman Numismatic Portal record it as the first public paper money in the Western world. The thirteen colonies followed the model. In 1775 the Continental Congress issued the Continentals: unbacked and counterfeited by the enemy, their collapse in value coined the expression “not worth a Continental.”',
       'In the nineteenth century everyday trade ran on state-bank notes — obsolete or broken banknotes in the jargon, catalogued by Haxby. The American Numismatic Society places the end of that plurality in the Civil War: a 10 percent tax on private paper and the National Banking Act of 1863, which introduced National Bank Notes (1863–1935). The first federal paper of general circulation was the Demand Notes of 1861 — the origin of the nickname “greenback”; United States Notes of 1862 replaced them as legal tender. Coin hoarding brought Fractional Currency (1862–1876). In the South the unbacked Confederate grayback circulated through the act of 17 February 1864.',
       'Gold Certificates (1865), Silver Certificates (1878), and Treasury or Coin Notes of 1890–1891, authorized by the Sherman Silver Purchase Act, followed. The 1896 Educational Series — History Instructing Youth — is a Silver Certificate issue, not a Coin Note. The Federal Reserve Act of 1913 created the central bank and two kinds of paper: Federal Reserve Notes and, as emergency currency, Federal Reserve Bank Notes. In 1929 the BEP cut the format by about 30 percent — printed Series 1928, eight notes per sheet to twelve — the line that divides large size from small size. The BEP stopped delivering United States Notes in 1971; today only FRNs are issued. The Second World War marked silver certificates and FRNs with the HAWAII overprint and the 1935-A yellow-seal $1 for North Africa.',
-      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1963 United States Note $5 (P#383; Fr. 1536), serial A26583630A, the Series 1963 United States Note $5 star (P#383; Fr. 1536★), serial ★02955091A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 2003 Minneapolis $2 collector star I00011690★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serials L68013147A and L69086875A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, and the Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
+      'This case is not a complete catalog of United States notaphily: it is the inventory of the pieces that will be documented here, with Friedberg, Haxby, Schwan, Criswell, or Pick references when they exist. The Continental $5 of 14 January 1779 (Fr. CC-91; the manuscript serial is unreadable), the Pennsylvania 5 shillings of 1 October 1773 (Fr. PA-166, serial 9733), the Pennsylvania 2 shillings and 6 pence of 1 October 1773 (Fr. PA-165), serial 21251, the Rhode Island 20 shillings of May 1786 (Fr. RI-298), serial 6229, the Connecticut 20 shillings of 1 June 1780 (Fr. CT-231), serial 8495, the State Bank at New Brunswick $1 remainder (Haxby NJ-350 G16a), the City Bank of New Haven $5 remainder (Haxby CT-265 G52b, plate A, no serial), the Canal Bank of New Orleans $50 remainder (Haxby LA-105 G46a, plate D, no serial), the Confederate T-40 $100 of August 1862, serial 36830, the Confederate T-41 $100 of 8 September 1862, serial 11657, plate L, the 1864 Confederate T-69 $5, serial 6164, the 1864 Confederate T-68 $10, serial 83148, 9th series, plate F, the T-67 $20, serial 74523, the Series 1917 United States Note $2 (P#188(4); Fr. 60), serial B50400302A, the Series 1907 United States Note $5 (P#186(9); Fr. 91), serial M12980830, the Series 1917 United States Note $1 (P#187(5); Fr. 39), serial T55297699A, plate G, the Series 1928 United States Note $1 (P#377; Fr. 1500), serial A01772521A, Funnyback reverse, the Series 1963 United States Note $5 (P#383; Fr. 1536), serial A26583630A, the Series 1963 United States Note $5 star (P#383; Fr. 1536★), serial ★02955091A, the Series 1934 Chicago Federal Reserve Note $10, serial G30986728A, the Series 1934A $10 of the same district, serial G74025286A, the Series 1934A Cleveland $10, serial D78652996A, the Series 1934A Philadelphia $10, serial C46924254A, the Series 1934A New York $10, serial B42488184B, the Series 1934C Kansas City $10, serial J55894000A, wide face, Fr. 2008-J, the Series 1934D Richmond $10, serial E60822246B, the Series 1934A New York $500, serial B00286799A, the Series 1934A New York $1,000, serial B00411221A, the Series 2003 Atlanta $1 star replacement F05033622★, the Series 2003 St. Louis $2 star replacement H00010418★, the Series 2003 Minneapolis $2 collector star I00011690★, the 1896 Educational Series $1 Silver Certificate (Fr. 224), serial B3207078, the 1896 Educational Series $2 Silver Certificate (P#336(1); Fr. 247), serial 1712091, plate C, the 1896 Educational Series $5 Silver Certificate (P#337(3); Fr. 270), serial 31528195, plate C, the Series 1928 $1 Silver Certificate (Funnyback; Fr. 1600), serial H86110669A, the Series 1928A $1 Silver Certificate (Funnyback; Fr. 1601), serial D00508932B, the Series 1935A HAWAII $1 (Fr. 2300), serial S40499058C, the Series 1935A yellow-seal $1 (Fr. 2306), serial B52497547C, the same type, serial C78095129C, C–C block, the ordinary blue-seal Series 1935A $1 (P#416a; Fr. 1608), serial V94411136B, the Series 1935A S-experimental $1 (P#416AS; Fr. 1610), serial S74796042C, the Series 1935A R-experimental $1 (P#416AR; Fr. 1609), serial S71208111C, the blue-seal Series 1935C $1 star replacement (P#416c; Fr. 1612★), serial ★25885207B, the Series 1934A HAWAII $5 (P#38; Fr. 2302), serials L68013147A and L69086875A, the Series 1934A HAWAII $10 (P#40; Fr. 2303), serial L45104670B, the Series 1934A HAWAII $20 (Fr. 2305), serials L85934593A and L86654132A, the Series 1957-B $1 Silver Certificate, serial S35513454A, and, under Miscellaneous, the Series 2006 Dallas $1 stamped for Where’s George?, serial K46602688C, the uniface Giori Lincoln Memorial test note, ca. 1970s, with no serial, the 1933 Baraboo 5¢ scrip, John Ringling, serial A4895, the 10¢ of the same scrip, Chas. Ringling, serial A2844, the 15¢, Al. T. Ringling, serial A2819, the 50¢, A. C. Ringling, serial A1054, and the $1, Ringling Bros., serial A2002, the Tim Prusmack print of the 1896 Educational $1 face, number 12 of 250, and the Fifth Issue Fractional Currency 50¢, Series of 1875 (P#124; Fr. 1381), blue end, serial unreadable on the photographs, already have note pages. Further pieces will be published as they are photographed, as in the Philippines case. Rency pop art, Military Payment Certificates, USDA food coupons, and other test notes belong here as well.',    ],
     viewNote: 'Open the note page',
     viewRencyCase: 'Open the Rency case',
     viewMiscCase: 'Open the Miscellaneous case',
@@ -1446,7 +1446,8 @@ export type UnitedStatesNoteId =
   | 'renci-warhol-basquiat-life-is-beautiful'
   | 'renci-trump-never-surrender'
   | 'renci-life-is-beautiful-life-spray'
-  | 'prusmack-educational-1-dolar-1896-12-250';
+  | 'prusmack-educational-1-dolar-1896-12-250'
+  | '50-centavos-fraccionarios-1875';
 
 export type UnitedStatesNoteFact = {
   label: LocalizedText;
@@ -9573,6 +9574,175 @@ export const unitedStatesNotes: UnitedStatesNote[] = [
         note: {
           es: 'El tipo reproducido: P#335, Fr. 224, anverso de Will Hicok Low grabado por Charles Schlecht, SERIES OF 1896. El tamaño publicado no mide esta estampa.',
           en: 'The type being reproduced: P#335, Fr. 224, face by Will Hicok Low engraved by Charles Schlecht, SERIES OF 1896. The published size does not measure this print.',
+        },
+      },
+    ],
+  },
+  {
+    id: '50-centavos-fraccionarios-1875',
+    chapterId: 'us-fractional',
+    path: '/coleccion/estados-unidos/50-centavos-fraccionarios-1875/',
+    pathEn: '/collection/united-states/50-cents-fractional-1875/',
+    pick: 'P#124 · Fr. 1381',
+    serial: '—',
+    no_serial_reason:
+      'Fifth Issue Crawford 50¢ notes of this type carry a printed serial; none is readable on these photographs, and none is invented here. Fingerprint: Fr. 1381, Allison–New, Series of 1875, blue-tinted right end, face plate marks 0 and 13.',
+    signatures: {
+      es: 'John Allison (registrador del Tesoro) y John C. New (tesorero de los Estados Unidos)',
+      en: 'John Allison (Register of the Treasury) and John C. New (Treasurer of the United States)',
+    },
+    printed: {
+      es: 'Bureau of Engraving and Printing, Washington, D.C., anverso; Jos. R. Carpenter, Filadelfia, reverso. Serie impresa de 1875. Quinta emisión de Fractional Currency. El registro de coleccionistas de PMG cita una producción reportada de 13.160.000 billetes del tipo Crawford, con emisión de julio de 1875 a febrero de 1876; esa cifra no se ha confirmado de forma independiente contra los libros de producción del Tesoro, y esta ficha no la convierte en tirada oficial. Numista da al tipo 110,5 × 54,5 mm; no es una medición de esta pieza.',
+      en: 'Bureau of Engraving and Printing, Washington, D.C., face; Jos. R. Carpenter, Philadelphia, back. Printed Series of 1875. Fifth Issue of Fractional Currency. The PMG collectors’ registry cites a reported production of 13,160,000 Crawford-type notes, with an issue period from July 1875 through February 1876; that figure has not been independently confirmed against Treasury production books, and this record does not treat it as an official printage. Numista gives the type as 110.5 × 54.5 mm. That is not a measurement of this piece.',
+    },
+    images: {
+      composite:
+        '/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-composite.jpg',
+      front:
+        '/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-front.jpg',
+      back:
+        '/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-back.jpg',
+      width: 1280,
+      height: 614,
+    },
+    title: {
+      es: '50 centavos · Fractional Currency · 1875',
+      en: '50¢ · Fractional Currency · 1875',
+    },
+    kicker: {
+      es: 'Estados Unidos · Fractional Currency',
+      en: 'United States · Fractional Currency',
+    },
+    lead: {
+      es: 'Quinta emisión, serie de 1875: Crawford, sello rojo y extremo derecho teñido de azul. Fr. 1381; el serial no se lee en las fotografías.',
+      en: 'Fifth Issue, Series of 1875: Crawford, a red seal, and a blue-tinted right end. Fr. 1381; the serial is not readable on the photographs.',
+    },
+    seoTitle: {
+      es: '50¢ Fractional · Fr. 1381 · Serie 1875',
+      en: '50¢ Fractional · Fr. 1381 · Series 1875',
+    },
+    metaDescription: {
+      es: '50 centavos Fractional Currency, quinta emisión, Fr. 1381: Crawford, sello rojo, extremo azul. Serial ilegible en las fotos.',
+      en: 'Fifth Issue Fractional Currency 50¢, Fr. 1381: Crawford, red seal, blue end. Serial unreadable on the photographs.',
+    },
+    description: {
+      es: 'El 50 centavos de la quinta emisión (Pick 124, Friedberg 1381; Numista N#228866) es papel fraccionario federal de la serie de 1875. El anverso, en negro con sello del Tesoro en rojo, lleva a la izquierda el retrato de William H. Crawford en ventana octogonal, rotulado debajo. El título United States va en gótico; FIFTY CENTS se arquea sobre el sello; Fractional Currency cierra el centro inferior. SERIES OF 1875 se lee junto al sello. Las firmas son las de John Allison (Register) y John C. New (Treasurer). En el campo, junto al arco, se leen las marcas de plancha 0 a la izquierda y 13 a la derecha. El extremo derecho del anverso —y el izquierdo del reverso— muestra el tinte azul y las fibras de seda que distinguen Fr. 1381 de Fr. 1380, de papel rosado claro. El reverso, en verde, centra un 50 en medallón festoneado, cita las leyes del 3 de marzo de 1863 y del 30 de junio de 1864, y lleva el pie JOS. R. CARPENTER, PHILADELPHIA. El serial impreso del tipo no se lee en estas fotografías y no se inventa. No es el scrip de Baraboo ni un fraccionario de certificado de pago militar.',
+      en: 'The Fifth Issue 50¢ (Pick 124, Friedberg 1381; Numista N#228866) is federal fractional paper of the Series of 1875. The black face with a red Treasury seal carries William H. Crawford’s portrait at left in an octagonal window, lettered below. United States is in gothic lettering; FIFTY CENTS arches over the seal; Fractional Currency closes the lower center. SERIES OF 1875 sits beside the seal. The signatures are John Allison’s (Register) and John C. New’s (Treasurer). In the field beside the arch, plate marks read 0 at left and 13 at right. The right end of the face — and the left end of the back — shows the blue tint and silk fibers that distinguish Fr. 1381 from Fr. 1380, which has light pink paper. The green back centers a 50 in a scalloped medallion, cites the acts of 3 March 1863 and 30 June 1864, and carries the imprint JOS. R. CARPENTER, PHILADELPHIA. The type’s printed serial is not readable on these photographs and is not invented. It is not Baraboo scrip, and it is not an MPC fractional.',
+    },
+    facts: [
+      {
+        label: { es: 'Variedad Friedberg', en: 'Friedberg variety' },
+        value: {
+          es: 'Fr. 1381: sello rojo, fibras de seda, extremo derecho teñido de azul. Fr. 1380 es el mismo diseño sobre papel rosado claro.',
+          en: 'Fr. 1381: red seal, silk fibers, blue-tinted right end. Fr. 1380 is the same design on light pink paper.',
+        },
+        wide: true,
+      },
+      {
+        label: { es: 'Marcas de plancha', en: 'Plate marks' },
+        value: {
+          es: 'Anverso: 0 a la izquierda del arco FIFTY; 13 a la derecha de CENTS.',
+          en: 'Face: 0 left of the FIFTY arch; 13 right of CENTS.',
+        },
+        wide: true,
+      },
+    ],
+    historyHeading: {
+      es: 'El cambio de papel',
+      en: 'Paper change',
+    },
+    history: [
+      {
+        es: 'La Fractional Currency nació en la Guerra Civil, cuando el atesoramiento de moneda metálica dejó el comercio sin cambio. El Tesoro emitió papel por debajo del dólar en cinco emisiones, de 1862 a 1876. La quinta —10, 25 y 50 centavos— se imprimió del 26 de febrero de 1874 al 15 de febrero de 1876. En abril de 1876 el Congreso autorizó canjear ese papel por moneda de plata. El 50 centavos de Crawford es uno de los últimos diseños de esa historia.',
+        en: 'Fractional Currency was born in the Civil War, when coin hoarding left everyday trade without change. The Treasury issued paper below one dollar across five issues, from 1862 to 1876. The Fifth — 10¢, 25¢, and 50¢ — was printed from 26 February 1874 through 15 February 1876. In April 1876 Congress authorized redeeming that paper in silver coin. The Crawford 50¢ is one of the last designs in that history.',
+      },
+      {
+        es: 'William Harris Crawford (1772–1834) fue secretario de Guerra y del Tesoro, y candidato presidencial en 1824. El grabado del anverso lo muestra de perfil en la ventana octogonal. Esta ficha no inventa un censo de supervivencia ni un premio de mercado entre Fr. 1380 y Fr. 1381; Numista reporta frecuencias de propiedad entre miembros, no un censo de producción.',
+        en: 'William Harris Crawford (1772–1834) was Secretary of War and of the Treasury, and a presidential candidate in 1824. The face engraving shows him in profile in the octagonal window. This record does not invent a survival census or a market premium between Fr. 1380 and Fr. 1381; Numista reports ownership frequencies among members, not a production census.',
+      },
+    ],
+    frontCaption: {
+      es: 'Anverso del 50 centavos Fractional Currency, serie de 1875, Fr. 1381: Crawford, sello rojo, extremo derecho azul y marcas de plancha 0 y 13.',
+      en: 'Face of the Series of 1875 Fractional Currency 50¢, Fr. 1381: Crawford, red seal, blue right end, and plate marks 0 and 13.',
+    },
+    backCaption: {
+      es: 'Reverso verde del 50 centavos, Fr. 1381: medallón 50, actos de 1863 y 1864, Carpenter de Filadelfia; tinte azul a la izquierda.',
+      en: 'Green back of the Fr. 1381 50¢: 50 medallion, acts of 1863 and 1864, Carpenter of Philadelphia; blue tint at left.',
+    },
+    scarcity: {
+      es: 'Fr. 1381 es la variedad de extremo azul del 50 centavos Crawford; Fr. 1380, de papel rosado, se reporta menos frecuente entre coleccionistas en Numista (cerca del 10 % frente a cerca del 85 %), sin que eso sea un censo de supervivencia. La rareza Notofilia de esta ficha es 2/5: relativamente común como tipo. No se inventa un premio de subasta.',
+      en: 'Fr. 1381 is the blue-end variety of the Crawford 50¢; Fr. 1380, on pink paper, is reported less often among Numista members (about 10% versus about 85%), which is not a survival census. The Notofilia rarity on this record is 2/5: relatively common as a type. No auction premium is invented.',
+    },
+    population: {
+      es: 'No se ha verificado de forma independiente un censo PMG o PCGS para esta pieza. Se presenta sin encapsular, sin número de certificado. No se republica aquí la tabla de población del tipo.',
+      en: 'A PMG or PCGS census for this piece has not been independently verified. It is shown unslabbed, with no certificate number. The type population table is not republished here.',
+    },
+    grade: {
+      es: 'Circulada, sin encapsular; Fine a Very Fine estimado en fotografía (pliegues de circulación, márgenes irregulares, mancha oscura en el reverso); sin grado numérico ni EPQ a partir de las fotos (colección privada)',
+      en: 'Circulated, unslabbed; Fine to Very Fine estimated from photographs (circulation folds, uneven margins, dark spot on the reverse); no numerical grade or EPQ from the photographs (private collection)',
+    },
+    unclaimed: [
+      {
+        es: 'El serial impreso del tipo no se lee en estas fotografías y no se inventa.',
+        en: 'The type’s printed serial is not readable on these photographs and is not invented.',
+      },
+      {
+        es: 'La cifra de 13.160.000 billetes es un reporte de registro de coleccionistas, no una tirada confirmada en libros del Tesoro.',
+        en: 'The 13,160,000-note figure is a collectors’-registry report, not a printage confirmed in Treasury books.',
+      },
+      {
+        es: 'Las frecuencias Numista de Fr. 1380 y Fr. 1381 no son un censo de supervivencia.',
+        en: 'Numista ownership frequencies for Fr. 1380 and Fr. 1381 are not a survival census.',
+      },
+      {
+        es: 'No se midió esta pieza; el tamaño publicado es del tipo.',
+        en: 'This piece was not measured; the published size belongs to the type.',
+      },
+    ],
+    sources: [
+      {
+        href: 'https://en.numista.com/228866',
+        es: 'Numista — 50 centavos, Fractional Currency, quinta emisión (N#228866)',
+        en: 'Numista — 50 Cents, Fractional Currency, 5th series (N#228866)',
+        note: {
+          es: 'P#124; Fr. 1380 (papel rosado) y Fr. 1381 (extremo azul); Allison; 110,5 × 54,5 mm. Frecuencias de propiedad entre miembros. No se republican columnas de precio.',
+          en: 'P#124; Fr. 1380 (pink paper) and Fr. 1381 (blue end); Allison; 110.5 × 54.5 mm. Ownership frequencies among members. Price columns are not republished.',
+        },
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Fractional_currency',
+        es: 'Wikipedia — Fractional currency',
+        en: 'Wikipedia — Fractional currency',
+        note: {
+          es: 'Quinta emisión, 26 de febrero de 1874–15 de febrero de 1876; Fr. 1380 papel rosado; Fr. 1381 extremo azul. Tamaños de tipo del National Numismatic Collection.',
+          en: 'Fifth Issue, 26 February 1874–15 February 1876; Fr. 1380 pink paper; Fr. 1381 blue end. Type sizes from the National Numismatic Collection.',
+        },
+      },
+      {
+        href: 'https://www.bep.gov/currency/history',
+        es: 'Bureau of Engraving and Printing — History',
+        en: 'Bureau of Engraving and Printing — History',
+        note: {
+          es: 'El BEP sitúa en 1863 la primera moneda producida enteramente en el Tesoro, en denominaciones fraccionarias.',
+          en: 'The BEP dates to 1863 the first currency produced entirely at the Treasury, in fractional denominations.',
+        },
+      },
+      {
+        href: 'https://www.uscurrency.gov/history',
+        es: 'U.S. Currency Education Program — historia',
+        en: 'U.S. Currency Education Program — history',
+        note: {
+          es: 'Contexto del papel federal y del cambio cotidiano cuando desapareció la moneda metálica.',
+          en: 'Context for federal paper and everyday change when coin vanished.',
+        },
+      },
+      {
+        href: 'https://notes.www.collectors-society.com/registry/Notes/NoteDetail.aspx?PeopleNoteID=127059&PeopleSetID=31723',
+        es: 'PMG Registry — nota Fr. 1381 (colección Los Gatos)',
+        en: 'PMG Registry — Fr. 1381 note (Los Gatos Collection)',
+        note: {
+          es: 'Descripción de coleccionista: Allison–New, extremo azul, producción reportada de 13.160.000, julio de 1875–febrero de 1876. No es un libro de producción del Tesoro.',
+          en: 'Collector description: Allison–New, blue end, reported production 13,160,000, July 1875–February 1876. It is not a Treasury production book.',
         },
       },
     ],

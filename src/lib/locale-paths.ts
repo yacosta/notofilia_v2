@@ -134,6 +134,11 @@ export const PATH_PREFIX_PAIRS: PathPair[] = [
     aliases: ['/coleccion/united-states/10-dollars-gold-certificate-1922/'],
   },
   {
+    es: '/coleccion/estados-unidos/50-centavos-fraccionarios-1875/',
+    en: '/collection/united-states/50-cents-fractional-1875/',
+    aliases: ['/coleccion/united-states/50-cents-fractional-1875/'],
+  },
+  {
     es: '/coleccion/estados-unidos/1-dolar-serie-1917/',
     en: '/collection/united-states/1-dollar-series-1917/',
     aliases: ['/coleccion/united-states/1-dollar-series-1917/'],

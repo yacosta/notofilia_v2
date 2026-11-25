@@ -1,0 +1,9 @@
+---
+import UnitedStatesNotePage from '../../../../components/catalog/UnitedStatesNotePage.astro';
+import { noteById } from '../../../../data/estados-unidos';
+
+const note = noteById('50-centavos-fraccionarios-1875');
+if (!note) throw new Error('Missing Fifth Issue Fractional Currency 50¢ catalog note');
+---
+
+<UnitedStatesNotePage locale="es" note={note} />

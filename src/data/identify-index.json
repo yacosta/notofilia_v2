@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-25T01:15:49.142Z",
+  "generatedAt": "2026-11-25T17:05:35.990Z",
   "algorithm": "dhash-9x8",
   "faces": [
     {
@@ -6696,6 +6696,45 @@
       "title": {
         "es": "Estampa · Tim Prusmack · 1 dólar Educational · 1896",
         "en": "Print · Tim Prusmack · Educational $1 · 1896"
+      }
+    },
+    {
+      "pieceId": "50-centavos-fraccionarios-1875",
+      "face": "front",
+      "hash": "292d725479cd945d",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/50-centavos-fraccionarios-1875/",
+      "pick": "P#124 · Fr. 1381",
+      "image": "/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-composite.jpg",
+      "title": {
+        "es": "50 centavos · Fractional Currency · 1875",
+        "en": "50¢ · Fractional Currency · 1875"
+      }
+    },
+    {
+      "pieceId": "50-centavos-fraccionarios-1875",
+      "face": "front",
+      "hash": "9e65652c616aee45",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/50-centavos-fraccionarios-1875/",
+      "pick": "P#124 · Fr. 1381",
+      "image": "/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-front.jpg",
+      "title": {
+        "es": "50 centavos · Fractional Currency · 1875",
+        "en": "50¢ · Fractional Currency · 1875"
+      }
+    },
+    {
+      "pieceId": "50-centavos-fraccionarios-1875",
+      "face": "back",
+      "hash": "54550d8a4a8a595d",
+      "kind": "banknote",
+      "path": "/coleccion/estados-unidos/50-centavos-fraccionarios-1875/",
+      "pick": "P#124 · Fr. 1381",
+      "image": "/images/catalog/united-states/united-states-fractional-50-cents-series-1875-crawford-fr1381-back.jpg",
+      "title": {
+        "es": "50 centavos · Fractional Currency · 1875",
+        "en": "50¢ · Fractional Currency · 1875"
       }
     },
     {

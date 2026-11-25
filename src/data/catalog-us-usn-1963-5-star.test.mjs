@@ -54,9 +54,9 @@ describe('US Series 1963 star $5 Fr. 1536★', () => {
     assert.match(printed, /March 1964 and November 1967/);
     assert.doesNotMatch(note, /\$\d{2,}/);
     assert.doesNotMatch(note, /Decreto 188/);
-    assert.equal(additions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(additions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
     assert.equal(additions.at(-1)?.kind, 'banknote');
-    assert.equal(catalogAdditions.at(-1)?.id, 'us-frn-2003-2-minneapolis-i00011690');
+    assert.equal(catalogAdditions.at(-1)?.id, 'us-50-centavos-fraccionarios-1875');
   });
 
   it('keeps thin ES and EN piece routes on the United States note layout', () => {
