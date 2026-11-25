@@ -22,8 +22,8 @@ export const comparisonCopy = {
         id: 'notofilia',
         title: 'Qué es Notofilia',
         paragraphs: [
-          'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. El español vive en la raíz del sitio; el inglés, en /en/. Nada de lo que se muestra está a la venta.',
-          'Cada ficha describe un ejemplar concreto: fotos de anverso y reverso, serial cuando se lee, referencias Pick, TBB, González White (BG#) o Hernández (Cód.) cuando existen, y las fuentes usadas. No se inventan tiradas de un tipo a partir del total anual del BanRep, ni se republican columnas de precios.',
+          'Notofilia es una colección privada y catálogo bilingüe de billetes y monedas históricos, fundado por Yezid Acosta. Nada de lo que se muestra está a la venta.',
+          'Cada ficha describe un ejemplar concreto: fotos de anverso y reverso, serial cuando se lee, referencias Pick, TBB, González White (BG#) o Hernández (Cód.) cuando existen, y las fuentes usadas.',
         ],
       },
       {
@@ -39,7 +39,7 @@ export const comparisonCopy = {
         title: 'El catálogo Pick (Standard Catalog of World Paper Money)',
         paragraphs: [
           'El Standard Catalog of World Paper Money —el «Pick»— es un catálogo de tipos: asigna un número a un diseño, una fecha o una variedad, no a un serial. En Colombia convive con el The Banknote Book (TBB), con González White para el BanRep de 1923–2019 y con Hernández para el papel anterior a 1923.',
-          'Dos billetes con el mismo Pick pueden ser objetos distintos. Notofilia usa el Pick como etiqueta de tipo y luego identifica el ejemplar por serial o, si está encapsulado, por certificado. Un match de Pick y fecha sin serial no es un duplicado de esta colección.',
+          'Dos billetes con el mismo Pick pueden ser objetos distintos. Notofilia usa el Pick como etiqueta de tipo y luego identifica el ejemplar por serial o, si está encapsulado, por certificado.',
         ],
       },
       {
@@ -47,7 +47,7 @@ export const comparisonCopy = {
         title: 'Los anuncios de MercadoLibre',
         paragraphs: [
           'MercadoLibre es un mercado de anuncios. Un lote publicado allí es una oferta de venta, con foto y precio del vendedor, no una ficha de catálogo. Los anuncios aparecen y desaparecen; el grado suele ser una opinión del vendedor, no un slab de PMG o PCGS.',
-          'Notofilia no lista piezas a la venta ni copia precios de ese mercado. Si un serial de un anuncio coincide con una ficha publicada aquí, es una coincidencia que hay que verificar: el serial es la identidad del objeto, no el Pick.',
+          'Si un serial de un anuncio coincide con una ficha publicada aquí, es una coincidencia que hay que verificar.',
         ],
       },
     ],
@@ -94,8 +94,8 @@ export const comparisonCopy = {
         id: 'notofilia',
         title: 'What Notofilia is',
         paragraphs: [
-          'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta. Spanish is the default locale; English lives at /en/. Nothing shown is for sale.',
-          'Each record describes one physical example: face and back photos, a serial when it can be read, Pick, TBB, González White (BG#), or Hernández (Cód.) references when those numbers exist, and the sources used. BanRep annual denomination totals are not treated as the printage of one type, and price columns are not republished.',
+          'Notofilia is a private collection and bilingual catalogue of historical banknotes and coins, founded by Yezid Acosta. Nothing shown is for sale.',
+          'Each record describes one physical example: face and back photos, a serial when it can be read, Pick, TBB, González White (BG#), or Hernández (Cód.) references when those numbers exist, and the sources used.',
         ],
       },
       {
@@ -111,7 +111,7 @@ export const comparisonCopy = {
         title: 'The Pick catalog (Standard Catalog of World Paper Money)',
         paragraphs: [
           'The Standard Catalog of World Paper Money — “Pick” — is a type catalog: it assigns a number to a design, date, or variety, not to a serial. For Colombia it sits beside The Banknote Book (TBB), González White for BanRep issues of 1923–2019, and Hernández for paper before 1923.',
-          'Two notes with the same Pick can be different objects. Notofilia uses Pick as a type label and then identifies the example by serial or, if it is slabbed, by certificate. A Pick-and-date match without a serial is not a duplicate in this collection.',
+          'Two notes with the same Pick can be different objects. Notofilia uses Pick as a type label and then identifies the example by serial or, if it is slabbed, by certificate.',
         ],
       },
       {
@@ -119,7 +119,7 @@ export const comparisonCopy = {
         title: 'MercadoLibre listings',
         paragraphs: [
           'MercadoLibre is a classifieds market. A lot posted there is a sale offer, with the seller’s photo and price, not a catalog record. Listings appear and vanish; the grade is usually the seller’s opinion, not a PMG or PCGS slab.',
-          'Notofilia does not list pieces for sale or copy prices from that market. If a listing serial matches a published record here, that coincidence has to be checked: the serial is the object’s identity, not the Pick number.',
+          'If a listing serial matches a published record here, that coincidence has to be checked.',
         ],
       },
     ],
