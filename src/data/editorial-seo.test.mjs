@@ -1083,6 +1083,72 @@ describe('22 November 2026 Szombathely Celtic hoard', () => {
   });
 });
 
+describe('27 November 2026 news', () => {
+  it('publishes the Stockholm hoard, the 1917-D quarter, and the 2027 Birth Set without a price', () => {
+    const slugs = [
+      ['tesoro-plata-estocolmo-siglo-xii', 'stockholm-twelfth-century-silver-hoard', '/uploads/moneda-plata-knut-eriksson.jpg', 1800, 1742],
+      ['cuarto-1917-d-tipo-2-cac', '1917-d-type-2-quarter-cac', '/uploads/cuarto-libertad-de-pie-1917.jpg', 1760, 860],
+      ['birth-set-2027-huellas-silver-eagle', '2027-birth-set-footprints-silver-eagle', '/uploads/anverso-dolar-plata-libertad-caminante.jpg', 1800, 1800],
+    ];
+    for (const [slug, slugEn, image, width, height] of slugs) {
+      const article = newsArticles.find((item) => item.slug === slug);
+      assert.ok(article, slug);
+      assert.equal(article.slugEn, slugEn);
+      assert.equal(article.published, '2026-11-27');
+      assert.equal(article.claim, null);
+      assert.equal(article.image, image);
+      assert.equal(article.imageWidth, width);
+      assert.equal(article.imageHeight, height);
+      assert.equal(article.imageFit, 'contain');
+      assert.equal(article.dek.es, article.description.es);
+      assert.equal(article.dek.en, article.description.en);
+      assert.ok(article.seoTitle.es.length <= 48);
+      assert.ok(article.seoTitle.en.length <= 48);
+      assert.ok(article.description.es.length >= 120 && article.description.es.length <= 155);
+      assert.ok(article.description.en.length >= 120 && article.description.en.length <= 155);
+      assert.equal(existsSync(new URL(`../../public${image}`, import.meta.url)), true);
+      assert.equal(existsSync(new URL(`../../public${image.replace('.jpg', '-card.jpg')}`, import.meta.url)), true);
+      const body = `${article.bodyHtml.es}\n${article.bodyHtml.en}`;
+      for (const source of article.primarySources) {
+        assert.ok(body.includes(source.url), source.url);
+      }
+      for (const locale of ['es', 'en']) {
+        const html = article.bodyHtml[locale];
+        assert.match(html, /colección virtual de Notofilia|Notofilia’s virtual collection/);
+        assert.match(html, /No publicamos|do not publish/i);
+        assert.doesNotMatch(html, /\$/);
+      }
+    }
+    const stockholm = newsArticles.find((item) => item.slug === 'tesoro-plata-estocolmo-siglo-xii');
+    assert.match(stockholm.bodyHtml.es, /veinte mil/);
+    assert.match(stockholm.bodyHtml.es, /KANUTUS/);
+    assert.match(stockholm.bodyHtml.en, /twenty thousand/);
+    const quarter = newsArticles.find((item) => item.slug === 'cuarto-1917-d-tipo-2-cac');
+    assert.match(quarter.bodyHtml.es, /25668621/);
+    assert.match(quarter.bodyHtml.es, /2321492/);
+    const quarterProse = `${quarter.bodyHtml.es} ${quarter.bodyHtml.en}`.replace(/https?:\/\/[^"<\s]+/g, '');
+    assert.doesNotMatch(quarterProse, /134[,.]?200|43[,.]200|26[,.]840/);
+    const birth = newsArticles.find((item) => item.slug === 'birth-set-2027-huellas-silver-eagle');
+    assert.match(birth.bodyHtml.es, /27RD/);
+    assert.match(birth.bodyHtml.es, /1-dolar-aguila-plata-1988/);
+    assert.match(birth.bodyHtml.en, /aguila-de-plata-1986-2026/);
+  });
+
+  it('updates the Mørstad note with Fox News and does not adopt a 6,000 count', () => {
+    const article = newsArticles.find((item) => item.slug === 'tesoro-morstad-monedas-vikingas-noruega');
+    assert.equal(article.published, '2026-11-24');
+    assert.equal(article.updated, null);
+    const urls = article.primarySources.map((source) => source.url).join(' ');
+    assert.match(urls, /foxnews\.com\/travel\/treasure-hunters-searching-field/);
+    assert.match(urls, /vikingtidsmuseet\.no\/english\/viking-age\/society-and-daily-life\/olav-the-holys-coin/);
+    assert.match(article.bodyHtml.es, /no imprime 6\.000/);
+    assert.match(article.bodyHtml.en, /does not print 6,000/);
+    assert.match(article.bodyHtml.es, /Gullbekk/);
+    assert.match(article.bodyHtml.en, /10 April 2026/);
+    assert.doesNotMatch(`${article.bodyHtml.es}\n${article.bodyHtml.en}`, /\$/);
+  });
+});
+
 describe('new bilingual demand pages', () => {
   it('keeps editorial policy and counterfeit how-to files', () => {
     assert.equal(existsSync(new URL('./editorial-policy.ts', import.meta.url)), true);
