@@ -432,6 +432,10 @@ describe('Colombia BanRep 2 pesos oro 1976 Imprenta de Billetes', () => {
     assert.match(note.description.es, /No hay asterisco/);
     assert.match(note.description.es, /no la reposición/);
     assert.match(note.description.es, /00194674/);
+    assert.match(note.description.es, /las dos veces en horizontal/);
+    assert.match(note.description.en, /both horizontal/);
+    assert.doesNotMatch(note.description.es, /en vertical/);
+    assert.doesNotMatch(note.description.en, /vertically/);
     assert.match(note.description.es, /Policarpa/);
     assert.match(note.description.en, /Policarpa/);
     assert.match(note.description.es, /22214695/);
@@ -509,6 +513,10 @@ describe('Colombia BanRep 2 pesos oro 1977 Imprenta de Billetes', () => {
     assert.match(note.description.es, /No hay asterisco/);
     assert.match(note.description.es, /no es reposición/);
     assert.match(note.description.es, /22214695/);
+    assert.match(note.description.es, /las dos veces en horizontal/);
+    assert.match(note.description.en, /both horizontal/);
+    assert.doesNotMatch(note.description.es, /en vertical/);
+    assert.doesNotMatch(note.description.en, /vertically/);
     assert.match(note.description.es, /Policarpa/);
     assert.match(note.description.en, /Policarpa/);
     assert.match(note.description.es, /Pick 390b/);
